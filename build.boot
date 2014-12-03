@@ -10,7 +10,7 @@
 (useful! +version+)
 
 (task-options!
-  pom  [:project     'cljsjs-reactjs
+  pom  [:project     'cljsjs/reactjs
         :version     +version+
         :description "React.js packaged up with Google Closure externs"
         :url         "https://github.com/cljsjs/reactjs"
