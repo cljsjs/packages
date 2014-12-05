@@ -1,5 +1,5 @@
 (set-env!
-  :source-paths    #{"hoplon"}
+  :source-paths #{"js"}
   :dependencies '[[org.clojure/clojure       "1.6.0"       :scope "provided"]
                   [cljsjs/boot-cljsjs        "0.1.0"]
                   [boot/core                 "2.0.0-pre27" :scope "provided"]
