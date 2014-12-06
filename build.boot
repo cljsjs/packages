@@ -39,8 +39,9 @@
                 :ext-js ["react-externs.js"]]})
 
 (c/deftask package ""
-  [v variant V kw "the variant to package"]
-  (if (= variant :none)
-    (apply js/cljsjs-jar (variant variants))
+  [v variant kw "the variant to package"]
+  (println variant)
+  (if (= variant nil)
+    (apply js/cljsjs-jar (:none variants))
     (apply js/cljsjs-jar (concat [:classifier (name variant)]
                                  (variant variants)))))
