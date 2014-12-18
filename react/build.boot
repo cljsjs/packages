@@ -25,7 +25,16 @@
   js/cljsjs-jar {:project project})
 
 (def variants
-  {"0.11.2" {:none       [:inc-js ["react-0.11.2.js"]
+  {"0.12.1" {:none       [:inc-js ["react-0.12.1.js"]
+                          :ext-js ["react-externs.js"]]
+             :min        [:inc-js ["react-0.12.1.min.js"]
+                          :ext-js ["react-externs.js"]]
+             :addons     [:inc-js ["react-with-addons-0.12.1.js"]
+                          :ext-js ["react-externs.js"]]
+             :addons-min [:inc-js ["react-with-addons-0.12.1.min.js"]
+                          :ext-js ["react-externs.js"]]}
+
+   "0.11.2" {:none       [:inc-js ["react-0.11.2.js"]
                           :ext-js ["react-externs.js"]]
              :min        [:inc-js ["react-0.11.2.min.js"]
                           :ext-js ["react-externs.js"]]
