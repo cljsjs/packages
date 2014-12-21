@@ -55,11 +55,12 @@
 (c/deftask package ""
   [v version VERSION str "The version to package"
    t variant VARIANT kw  "The variant to package"]
-  (bootlaces! version)
   (if (= variant nil)
-    (apply js/cljsjs-jar (concat [:version version]
-                                 (get-in variants [version :none])))
+    (do (bootlaces! version)
+        (apply js/cljsjs-jar (concat [:version version]
+                                     (get-in variants [version :none]))))
 
-    (apply js/cljsjs-jar (concat [:classifier (name variant)
-                                  :version version]
-                                 (get-in variants [version variant])))))
+    (do (bootlaces! (str version "-" variant))
+        (apply js/cljsjs-jar (concat [:classifier (name variant)
+                                      :version version]
+                                     (get-in variants [version variant]))))))
