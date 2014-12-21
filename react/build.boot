@@ -52,7 +52,13 @@
              :addons-min [:inc-js ["react-with-addons-0.11.2.min.js"]
                           :ext-js ["react-externs.js"]]}})
 
-(c/deftask package ""
+(c/deftask package
+  "Jars can be built with commands like:
+   - boot package --version 0.12.2
+   - boot package --version 0.12.2 --variant addons
+
+   To deploy a jar to Clojars just compose the commands above like so:
+   - boot package --version 0.12.2 --variant min push-release"
   [v version VERSION str "The version to package"
    t variant VARIANT kw  "The variant to package"]
   (if (= variant nil)
