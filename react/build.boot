@@ -60,7 +60,7 @@
         (apply js/cljsjs-jar (concat [:version version]
                                      (get-in variants [version :none]))))
 
-    (do (bootlaces! (str version "-" variant))
+    (do (bootlaces! (str version "-" (name variant)))
         (apply js/cljsjs-jar (concat [:classifier (name variant)
                                       :version version]
                                      (get-in variants [version variant]))))))
