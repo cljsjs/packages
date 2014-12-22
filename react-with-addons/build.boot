@@ -4,13 +4,14 @@
 
 (require '[adzerk.bootlaces   :refer :all])
 
-(def +version+ "2.0.4")
+(def +version+ "0.12.2")
+(bootlaces! +version+)
 
 (task-options!
- pom  {:project     'cljsjs/hammer
+ pom  {:project     'cljsjs/react-with-addons
        :version     +version+
-       :description "Hammer.js packaged up with Google Closure externs"
-       :url         "https://github.com/cljsjs/packages/tree/master/hammer"
-       :scm         {:url "https://github.com/cljsjs/packages"}
+       :description "React.js packaged up with Google Closure externs"
+       :url         "https://github.com/cljsjs/reactjs"
+       :scm         {:url "https://github.com/cljsjs/react"}
        :license     {:name "Eclipse Public License"
                      :url  "http://www.eclipse.org/legal/epl-v10.html"}})
