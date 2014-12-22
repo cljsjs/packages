@@ -11,7 +11,7 @@
  pom  {:project     'cljsjs/react
        :version     +version+
        :description "React.js packaged up with Google Closure externs"
-       :url         "https://github.com/cljsjs/packages"
+       :url         "https://github.com/cljsjs/packages/tree/master/react"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {:name "Eclipse Public License"
                      :url  "http://www.eclipse.org/legal/epl-v10.html"}})
