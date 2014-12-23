@@ -1,5 +1,8 @@
 # CLJSJS Packages
 
+<img src="https://dl.dropboxusercontent.com/u/453692/cljsjs-logo.png"
+  alt="CLJSJS logo" align="right" />
+
 This repository contains CLJSJS packages. You can use them using the
 `from-cljsjs` task that is part of [boot-cljsjs][boot-cljsjs].
 If you want to use these jars from Leiningen: the files in the `resources`
