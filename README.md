@@ -33,15 +33,23 @@ Files that should be included as a preamble, like minified or
 unminified libraries, should end in `.inc.js`. Extern files for
 the Google Closure compiler should always end in `.ext.js`.
 
+## Using a package
+
 When using the `from-cljsjs` boot task there is an option to determine
-which directory will be loaded:
+which directory's files will be added to the [fileset][fileset-doc]:
 
 ```clj
 (require '[cljsjs.app :refer [from-cljsjs]])
 
 (from-cljsjs :profile :development)
-; or (from-cljsjs :profile :production)
+; This will add files in cljsjs/common and files
+; in cljsjs/developmet to the fileset
+
+(from-cljsjs :profile :production)
+; This will add files in cljsjs/common and files
+; in cljsjs/production to the fileset
 ```
 
+[fileset-doc]: https://github.com/boot-clj/boot/wiki/Filesets
 [boot-cljsjs]: https://github.com/cljsjs/boot-cljsjs
 [build.boot]: https://github.com/cljsjs/packages/blob/877c048b50d98bdccb072bde588617b90734c1a8/react/build.boot
