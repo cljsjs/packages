@@ -10,7 +10,7 @@
 (task-options!
  pom  {:project     'cljsjs/react-with-addons
        :version     +version+
-       :description "React.js packaged up with Google Closure externs"
+       :description "React.js with addons packaged up with Google Closure externs"
        :url         "https://github.com/cljsjs/packages/tree/master/react-with-addons"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {:name "Eclipse Public License"
