@@ -7,7 +7,7 @@
 (def +version+ "2.6.0-0")
 
 (task-options!
-  pom  {:project     'cljsjs/momentjs
+  pom  {:project     'cljsjs/moment
         :version     +version+
         :description "A javascript date library for parsing, validating, manipulating, and formatting dates."
         :url         "http://momentjs.com/"
