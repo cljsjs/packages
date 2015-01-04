@@ -15,7 +15,7 @@
 (task-options!
   pom {:project 'cljsjs/pikaday
        :version +version+
-       :description "A refreshing JavaScript Datepicker — lightweight, no dependencies, modular CSS"
+       :description "A refreshing JavaScript Datepicker - lightweight, no dependencies, modular CSS"
        :url         "https://github.com/cljsjs/packages/tree/master/react"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {:name "Eclipse Public License"
