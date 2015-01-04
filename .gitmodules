@@ -1,0 +1,3 @@
+[submodule "pikaday/pikaday"]
+	path = pikaday/pikaday
+	url = git@github.com:dbushell/Pikaday.git
