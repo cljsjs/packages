@@ -33,6 +33,9 @@ Files that should be included as a preamble, like minified or
 unminified libraries, should end in `.inc.js`. Extern files for
 the Google Closure compiler should always end in `.ext.js`.
 
+The jar version should always reflect the version of the packaged library,
+for updated builds `-0`, `-1` etc. can be appended to the version string.
+
 ## Using a package
 
 When using the `from-cljsjs` boot task there is an option to determine
