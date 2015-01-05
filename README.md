@@ -42,15 +42,24 @@ When using the `from-cljsjs` boot task there is an option to determine
 which directory's files will be added to the [fileset][fileset-doc]:
 
 ```clj
-(require '[cljsjs.app :refer [from-cljsjs]])
+;; in your build.boot file:
+(set-env!
+ :dependencies '[[adzerk/boot-cljs "0.0-2629-1" :scope "test"]
+                 [cljsjs/react     "0.12.2-2"]
+                 [reagent          "0.4.3"]]
 
-(from-cljsjs :profile :development)
-; This will add files in cljsjs/common and files
-; in cljsjs/developmet to the fileset
+(require '[adzerk.boot-cljs :refer [cljs]]
+         '[cljsjs.app :refer [from-cljsjs]])
 
-(from-cljsjs :profile :production)
-; This will add files in cljsjs/common and files
-; in cljsjs/production to the fileset
+(deftask build-dev []
+  (comp
+    (from-cljsjs :profile :development)
+    (cljsjs :optimizations :none)))
+
+(deftask build-prod []
+  (comp
+    (from-cljsjs :profile :production)
+    (cljsjs :optimizations :advanced)))
 ```
 
 [fileset-doc]: https://github.com/boot-clj/boot/wiki/Filesets
