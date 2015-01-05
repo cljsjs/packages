@@ -44,22 +44,24 @@ which directory's files will be added to the [fileset][fileset-doc]:
 ```clj
 ;; in your build.boot file:
 (set-env!
- :dependencies '[[adzerk/boot-cljs "0.0-2629-1" :scope "test"]
-                 [cljsjs/react     "0.12.2-2"]
-                 [reagent          "0.4.3"]]
+  :source-paths #{"src"}
+  :dependencies '[[adzerk/boot-cljs   "0.0-2629-1" :scope "test"]
+                  [cljsjs/boot-cljsjs "0.3.1"      :scope "test"]
+                  [cljsjs/react       "0.12.2-2"]
+                  [reagent            "0.4.3"]]
 
 (require '[adzerk.boot-cljs :refer [cljs]]
-         '[cljsjs.app :refer [from-cljsjs]])
+         '[cljsjs.boot-cljsjs :refer [from-cljsjs]])
 
 (deftask build-dev []
   (comp
     (from-cljsjs :profile :development)
-    (cljsjs :optimizations :none)))
+    (cljs :optimizations :none)))
 
 (deftask build-prod []
   (comp
     (from-cljsjs :profile :production)
-    (cljsjs :optimizations :advanced)))
+    (cljs :optimizations :advanced)))
 ```
 
 [fileset-doc]: https://github.com/boot-clj/boot/wiki/Filesets
