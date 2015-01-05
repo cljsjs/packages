@@ -38,8 +38,8 @@ for updated builds `-0`, `-1` etc. can be appended to the version string.
 
 ## Using a package
 
-When using the `from-cljsjs` boot task there is an option to determine
-which directory's files will be added to the [fileset][fileset-doc]:
+Using the `from-cljsjs` task from [boot-cljsjs][boot-cljsjs] using a
+package will look somewhat like this:
 
 ```clj
 ;; in your build.boot file:
