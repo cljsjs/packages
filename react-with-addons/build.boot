@@ -24,5 +24,5 @@
               :checksum "6a242238790b21729a88c26145eca6b9"
               :unzip true)
     (sift :move {#"^react-.*/build/react-with-addons.js" "cljsjs/development/react-with-addons.inc.js"
-                 #"^react-1.*/build/react-with-addons.min.js" "cljsjs/production/react-with-addons.min.inc.js"})
+                 #"^react-.*/build/react-with-addons.min.js" "cljsjs/production/react-with-addons.min.inc.js"})
     (sift :include #{#"^cljsjs"})))
