@@ -22,6 +22,6 @@
     (download :url "https://github.com/hammerjs/hammer.js/archive/2.0.4.zip"
               :checksum "11fe50c17ced2808cffec81f80833d54"
               :unzip true)
-    (sift :move {#"^hammer-(.*)/hammer.js"     "cljsjs/development/hammer.inc.js"
-                 #"^hammer-(.*)/hammer.min.js" "cljsjs/production/hammer.min.inc.js"})
+    (sift :move {#"^hammer.js-(.*)/hammer.js"     "cljsjs/development/hammer.inc.js"
+                 #"^hammer.js-(.*)/hammer.min.js" "cljsjs/production/hammer.min.inc.js"})
     (sift :include #{#"^cljsjs"})))
