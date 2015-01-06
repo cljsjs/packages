@@ -4,7 +4,7 @@
 "use strict";
 
 /**
- * @fileoverview Externs for moment.js 2.0.0
+ * @fileoverview Externs for moment.js 2.6.0
  * @externs
  */
 
@@ -433,3 +433,13 @@ Moment.Duration.prototype.years = function() {};
  * @type {function():!number}
  */
 Moment.Duration.prototype.asYears = function() {};
+
+/**
+ * @since 2.1.0
+ */
+Moment.prototype.min = function() {};
+
+/**
+ * @since 2.1.0
+ */
+Moment.prototype.max = function() {};
