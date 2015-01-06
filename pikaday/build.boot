@@ -29,5 +29,4 @@
     (sift :move {#"^Pikaday.*/pikaday\.js" "cljsjs/common/pikaday.inc.js"
                  #"^Pikaday.*/css/pikaday\.css" "cljsjs/common/pikaday.css"})
     (sift :include #{#"^cljsjs/"})
-    (sift :to-resource #{#"^cljsjs/"})
     (build-jar)))

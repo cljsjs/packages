@@ -1,10 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces "0.1.8" :scope "test"]])
+  :dependencies '[[adzerk/bootlaces   "0.1.8" :scope "test"]
+                  [cljsjs/boot-cljsjs "0.4.0" :scope "test"]])
 
-(require '[adzerk.bootlaces   :refer :all])
+(require '[adzerk.bootlaces :refer :all]
+         '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "2.0.4")
+(def +version+ "2.0.4-1")
 
 (task-options!
  pom  {:project     'cljsjs/hammer
@@ -14,3 +16,12 @@
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {:name "MIT"
                      :url  "http://opensource.org/licenses/MIT"}})
+
+(deftask package []
+  (comp
+    (download :url "https://github.com/hammerjs/hammer.js/archive/2.0.4.zip"
+              :checksum "11fe50c17ced2808cffec81f80833d54"
+              :unzip true)
+    (sift :move {#"^hammer-(.*)/hammer.js"     "cljsjs/development/hammer.inc.js"
+                 #"^hammer-(.*)/hammer.min.js" "cljsjs/production/hammer.min.inc.js"})
+    (sift :include #{#"^cljsjs"})))

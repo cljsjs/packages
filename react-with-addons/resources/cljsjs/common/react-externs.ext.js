@@ -31,6 +31,11 @@ React.initializeTouchEvents = function(shouldUseTouch) {};
 React.createClass = function(specification) {};
 
 /**
+ * @param {Object} specification
+ */
+React.createFactory = function(specification) {};
+
+/**
  * @param {*} componentClass
  * @return {boolean}
  */
@@ -45,6 +50,14 @@ React.isValidClass = function(componentClass) {};
 React.renderComponent = function(container, mountPoint, callback) {};
 
 /**
+ * @param {React.ReactComponent} container
+ * @param {Element} mountPoint
+ * @param {Function=} callback
+ * @return {React.ReactComponent}
+ */
+React.render = function(container, mountPoint, callback) {};
+
+/**
  * @param {Element} container
  */
 React.unmountComponentAtNode = function(container) {};
@@ -56,9 +69,20 @@ React.renderComponentToString = function(component) {};
 
 /**
  * @param {React.ReactComponent} component
+ */
+React.renderToString = function(component) {};
+
+/**
+ * @param {React.ReactComponent} component
  * @return {string}
  */
 React.renderComponentToStaticMarkup = function(component) {};
+
+/**
+ * @param {React.ReactComponent} component
+ * @return {string}
+ */
+React.renderToStaticMarkup = function(component) {};
 
 /**
  * @param {Function} constructor React component constructor.
