@@ -66,4 +66,4 @@ package will look somewhat like this:
 
 [fileset-doc]: https://github.com/boot-clj/boot/wiki/Filesets
 [boot-cljsjs]: https://github.com/cljsjs/boot-cljsjs
-[build.boot]: https://github.com/cljsjs/packages/blob/877c048b50d98bdccb072bde588617b90734c1a8/react/build.boot
+[build.boot]: react/build.boot
