@@ -11,7 +11,7 @@
  pom  {:project     'cljsjs/react-with-addons
        :version     +version+
        :description "React.js with addons packaged up with Google Closure externs"
-       :url         "https://github.com/cljsjs/packages/tree/master/react-with-addons"
+       :url         "http://facebook.github.io/react/"
        :scm         {:url "https://github.com/cljsjs/packages"}
-       :license     {:name "Eclipse Public License"
-                     :url  "http://www.eclipse.org/legal/epl-v10.html"}})
+       :license     {:name "BSD"
+                     :url  "http://opensource.org/licenses/BSD-3-Clause"}})

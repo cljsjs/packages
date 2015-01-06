@@ -16,10 +16,9 @@
   pom {:project 'cljsjs/pikaday
        :version +version+
        :description "A refreshing JavaScript Datepicker - lightweight, no dependencies, modular CSS"
-       :url         "https://github.com/cljsjs/packages/tree/master/react"
+       :url         "https://github.com/dbushell/Pikaday"
        :scm         {:url "https://github.com/cljsjs/packages"}
-       :license     {:name "Eclipse Public License"
-                     :url  "http://www.eclipse.org/legal/epl-v10.html"}})
+       :license     {:name "MIT & BSD" :url "https://raw.githubusercontent.com/dbushell/Pikaday/master/LICENSE"}})
 
 (deftask package []
   (comp

@@ -10,7 +10,7 @@
  pom  {:project     'cljsjs/hammer
        :version     +version+
        :description "Hammer.js packaged up with Google Closure externs"
-       :url         "https://github.com/cljsjs/packages/tree/master/hammer"
+       :url         "http://hammerjs.github.io/"
        :scm         {:url "https://github.com/cljsjs/packages"}
-       :license     {:name "Eclipse Public License"
-                     :url  "http://www.eclipse.org/legal/epl-v10.html"}})
+       :license     {:name "MIT"
+                     :url  "http://opensource.org/licenses/MIT"}})
