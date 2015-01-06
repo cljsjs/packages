@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Externs for Pikaday version 1.2.0
+ */
+
 /*
  * @constructor
  */
