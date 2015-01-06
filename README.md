@@ -38,19 +38,30 @@ for updated builds `-0`, `-1` etc. can be appended to the version string.
 
 ## Using a package
 
-When using the `from-cljsjs` boot task there is an option to determine
-which directory's files will be added to the [fileset][fileset-doc]:
+Using the `from-cljsjs` task from [boot-cljsjs][boot-cljsjs] using a
+package will look somewhat like this:
 
 ```clj
-(require '[cljsjs.app :refer [from-cljsjs]])
+;; in your build.boot file:
+(set-env!
+  :source-paths #{"src"}
+  :dependencies '[[adzerk/boot-cljs   "0.0-2629-1" :scope "test"]
+                  [cljsjs/boot-cljsjs "0.3.1"      :scope "test"]
+                  [cljsjs/react       "0.12.2-2"]
+                  [reagent            "0.4.3"]]
 
-(from-cljsjs :profile :development)
-; This will add files in cljsjs/common and files
-; in cljsjs/developmet to the fileset
+(require '[adzerk.boot-cljs :refer [cljs]]
+         '[cljsjs.boot-cljsjs :refer [from-cljsjs]])
 
-(from-cljsjs :profile :production)
-; This will add files in cljsjs/common and files
-; in cljsjs/production to the fileset
+(deftask build-dev []
+  (comp
+    (from-cljsjs :profile :development)
+    (cljs :optimizations :none)))
+
+(deftask build-prod []
+  (comp
+    (from-cljsjs :profile :production)
+    (cljs :optimizations :advanced)))
 ```
 
 [fileset-doc]: https://github.com/boot-clj/boot/wiki/Filesets
