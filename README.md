@@ -19,9 +19,9 @@ resources/
     ├──  common/
     │   └──  react-externs.ext.js
     ├──  development/
-    │   └──  react-0.12.2.inc.js
+    │   └──  react.inc.js
     └──  production/
-        └──  react-0.12.2.min.inc.js
+        └──  react.min.inc.js
 ```
 
 1. The `build.boot` file specifies general information about the package (an [example][build.boot])
