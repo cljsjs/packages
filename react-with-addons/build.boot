@@ -1,12 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.8" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.4.0" :scope "test"]])
+  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
+                  [cljsjs/boot-cljsjs "0.4.1" :scope "test"]])
 
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.12.2-1")
+(def +version+ "0.12.2-2")
 (bootlaces! +version+)
 
 (task-options!
@@ -15,8 +15,7 @@
        :description "React.js with addons packaged up with Google Closure externs"
        :url         "http://facebook.github.io/react/"
        :scm         {:url "https://github.com/cljsjs/packages"}
-       :license     {:name "BSD"
-                     :url  "http://opensource.org/licenses/BSD-3-Clause"}})
+       :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
 
 (deftask package []
   (comp
@@ -25,4 +24,5 @@
               :unzip true)
     (sift :move {#"^react-.*/build/react-with-addons.js" "cljsjs/development/react-with-addons.inc.js"
                  #"^react-.*/build/react-with-addons.min.js" "cljsjs/production/react-with-addons.min.inc.js"})
-    (sift :include #{#"^cljsjs"})))
+    (sift :include #{#"^cljsjs"})
+    (deps-cljs :name "cljsjs.react")))
