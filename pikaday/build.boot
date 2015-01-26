@@ -1,16 +1,13 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[adzerk/bootlaces   "0.1.8" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.4.0" :scope "test"]])
-; Moment.js is optional dependency, if user has depended it directly or from other library
-; it should be loaded before this.
-; FIXME: How maven optional dependencies work?
-; :dependencies '[[cljsjs/moment "2.8.4" :optional true]]
+                  [cljsjs/boot-cljsjs "0.4.0" :scope "test"]
+                  [cljsjs/moment "2.6.0-3"]])
 
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "1.2.0-1")
+(def +version+ "1.2.0-2")
 (bootlaces! +version+)
 
 (task-options!
@@ -19,7 +16,8 @@
        :description "A refreshing JavaScript Datepicker - lightweight, no dependencies, modular CSS"
        :url         "https://github.com/dbushell/Pikaday"
        :scm         {:url "https://github.com/cljsjs/packages"}
-       :license     {:name "MIT & BSD" :url "https://raw.githubusercontent.com/dbushell/Pikaday/master/LICENSE"}})
+       :license     {"MIT" "http://opensource.org/licenses/MIT"
+                     "BSD" "http://opensource.org/licenses/BSD-2-Clause"}})
 
 (deftask package []
   (comp
@@ -28,5 +26,5 @@
               :unzip true)
     (sift :move {#"^Pikaday.*/pikaday\.js" "cljsjs/common/pikaday.inc.js"
                  #"^Pikaday.*/css/pikaday\.css" "cljsjs/common/pikaday.css"})
-    (sift :include #{#"^cljsjs/"})
+    (sift :include #{#"^cljsjs/" #"^deps.cljs$"})
     (build-jar)))
