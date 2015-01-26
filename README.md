@@ -16,8 +16,8 @@ files that will be automtically picked up by the Clojurescript
 compiler as of [0.0-2727][2727]. Versions of the Jar reflect the
 version of the packaged JS lib.
 
-You can find the specific coordinates for those packages in their
-respective `README` files.
+**You can find the specific coordinates for those packages in their
+respective `README` files.**
 
 ## Contributing a package
 
