@@ -1,6 +1,6 @@
 {:foreign-libs [{:file "cljsjs/common/pikaday.inc.js"
-                 :provides ["org.pikaday"]}
+                 :provides ["cljsjs.pikaday"]}
                 {:file "cljsjs/common/pikaday.inc.js"
-                 :requires ["org.moment"]
-                 :provides ["org.pikaday.with-moment"]}]
+                 :requires ["cljsjs.moment"]
+                 :provides ["cljsjs.pikaday.with-moment"]}]
  :externs ["cljsjs/common/pikaday.ext.js"]}
