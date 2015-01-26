@@ -1,12 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.8" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.4.0" :scope "test"]])
+  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
+                  [cljsjs/boot-cljsjs "0.4.1" :scope "test"]])
 
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "2.0.4-1")
+(def +version+ "2.0.4-2")
 
 (task-options!
  pom  {:project     'cljsjs/hammer
@@ -14,8 +14,7 @@
        :description "Hammer.js packaged up with Google Closure externs"
        :url         "http://hammerjs.github.io/"
        :scm         {:url "https://github.com/cljsjs/packages"}
-       :license     {:name "MIT"
-                     :url  "http://opensource.org/licenses/MIT"}})
+       :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (deftask package []
   (comp
@@ -24,4 +23,5 @@
               :unzip true)
     (sift :move {#"^hammer.js-(.*)/hammer.js"     "cljsjs/development/hammer.inc.js"
                  #"^hammer.js-(.*)/hammer.min.js" "cljsjs/production/hammer.min.inc.js"})
-    (sift :include #{#"^cljsjs"})))
+    (sift :include #{#"^cljsjs"})
+    (deps-cljs :name "cljsjs.hammer")))

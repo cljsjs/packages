@@ -3,67 +3,37 @@
 <img src="https://dl.dropboxusercontent.com/u/453692/cljsjs-logo.png"
   alt="CLJSJS logo" align="right" />
 
-This repository contains CLJSJS packages. You can use them using the
-`from-cljsjs` task that is part of [boot-cljsjs][boot-cljsjs].
-If you want to use these jars from Leiningen: the files in the `resources`
-directory will be directly available on the classpath.
+**Transitioning to :foreign-libs right now.**
+
+> These packages originally only worked out of the box with Boot.
+> Existing versions will continue to work, future versions will
+> work through the `:foreign-libs` mechanism supplied by Clojurescript.
+
+# Using these packages
+
+All packages provided by [cljsjs][clojars-cljsjs] provide `deps.cljs`
+files that will be automtically picked up by the Clojurescript
+compiler as of [0.0-2727][2727]. Versions of the Jar reflect the
+version of the packaged JS lib.
+
+**You can find the specific coordinates for those packages in their
+respective `README` files.**
 
 ## Contributing a package
 
-The directory structure for individual packages needs to look similar to this:
+There are a bunch of tasks for Boot in [boot-cljsjs][boot-cljsjs] that help with
+packaging these jars. If you are curious how they work, I recommend checking out
+the individual `build.boot` files in the subdirectories of this repository.
 
-```
-build.boot
-resources/
-└──  cljsjs/
-    ├──  common/
-    │   └──  react-externs.ext.js
-    ├──  development/
-    │   └──  react.inc.js
-    └──  production/
-        └──  react.min.inc.js
-```
+**If you just want a JS library to be packaged up, feel free to open
+an issue, chances are someone might just do it for you.**
 
-1. The `build.boot` file specifies general information about the package (an [example][build.boot])
-1. The `cljsjs/common` directory is usually used for externs.
-1. The `cljsjs/development` directory should contain an unminified version of the packaged Javascript library.
-1. The `cljsjs/production` directory should contain a minified version of the packaged Javascript library.
-
-Files that should be included as a preamble, like minified or
-unminified libraries, should end in `.inc.js`. Extern files for
-the Google Closure compiler should always end in `.ext.js`.
-
-The jar version should always reflect the version of the packaged library,
-for updated builds `-0`, `-1` etc. can be appended to the version string.
-
-## Using a package
-
-Using the `from-cljsjs` task from [boot-cljsjs][boot-cljsjs] using a
-package will look somewhat like this:
-
-```clj
-;; in your build.boot file:
-(set-env!
-  :source-paths #{"src"}
-  :dependencies '[[adzerk/boot-cljs   "0.0-2629-1" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.3.1"      :scope "test"]
-                  [cljsjs/react       "0.12.2-2"]
-                  [reagent            "0.4.3"]]
-
-(require '[adzerk.boot-cljs :refer [cljs]]
-         '[cljsjs.boot-cljsjs :refer [from-cljsjs]])
-
-(deftask build-dev []
-  (comp
-    (from-cljsjs :profile :development)
-    (cljs :optimizations :none)))
-
-(deftask build-prod []
-  (comp
-    (from-cljsjs :profile :production)
-    (cljs :optimizations :advanced)))
-```
+Please note that packaging other things besides plain JS libraries is
+a bit more complex and is currently out of scope for this project. If you
+have suggestions or ideas to change this, open an issue :)
 
 [fileset-doc]: https://github.com/boot-clj/boot/wiki/Filesets
 [boot-cljsjs]: https://github.com/cljsjs/boot-cljsjs
 [build.boot]: react/build.boot
+[clojars-cljsjs]: https://clojars.org/groups/cljsjs
+[2727]: https://groups.google.com/d/msg/clojurescript/pJ_EYHkYAUs/mLi8XfiQxZsJ
