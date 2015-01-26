@@ -1,20 +1,21 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.8" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.4.0" :scope "test"]])
+  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
+                  [cljsjs/boot-cljsjs "0.4.1" :scope "test"]])
 
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "2.6.0-2")
+(def +version+ "2.6.0-3")
 (bootlaces! +version+)
 
 (task-options!
+  push {:ensure-clean false}
   pom  {:project     'cljsjs/moment
         :version     +version+
         :description "A javascript date library for parsing, validating, manipulating, and formatting dates."
         :url         "http://momentjs.com/"
-        :license     {:name "MIT" :url "http://opensource.org/licenses/MIT"}
+        :license     {"MIT" "http://opensource.org/licenses/MIT"}
         :scm         {:url "https://github.com/cljsjs/packages"}})
 
 (deftask package []
@@ -24,4 +25,5 @@
               :unzip true)
     (sift :move {#"^moment-.*/moment.js"         "cljsjs/development/moment.inc.js"
                  #"^moment-.*/min/moment.min.js" "cljsjs/production/moment.min.inc.js"})
-    (sift :include #{#"^cljsjs"})))
+    (sift :include #{#"^cljsjs"})
+    (deps-cljs :name "cljsjs.moment")))
