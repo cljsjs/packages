@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "2.6.0-3")
+(def +version+ "2.9.0-0")
 (bootlaces! +version+)
 
 (task-options!
@@ -20,8 +20,8 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/moment/moment/archive/2.6.0.zip"
-              :checksum "0f9b226ff824066a2040056a4abfa0f6"
+    (download :url "https://github.com/moment/moment/archive/2.9.0.zip"
+              :checksum "ee7c9584c71459c2c701645a7164a890"
               :unzip true)
     (sift :move {#"^moment-.*/moment.js"         "cljsjs/development/moment.inc.js"
                  #"^moment-.*/min/moment.min.js" "cljsjs/production/moment.min.inc.js"})

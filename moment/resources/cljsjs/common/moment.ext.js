@@ -443,3 +443,8 @@ Moment.prototype.min = function() {};
  * @since 2.1.0
  */
 Moment.prototype.max = function() {};
+
+/**
+ * @since 2.8.1
+ */
+Moment.prototype.locale = function() {};
