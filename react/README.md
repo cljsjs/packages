@@ -1,4 +1,4 @@
-# cljsjs/hammer
+# cljsjs/react
 
 [](dependency)
 ```clojure
