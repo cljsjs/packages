@@ -25,12 +25,14 @@ There are a bunch of tasks for Boot in [boot-cljsjs][boot-cljsjs] that help with
 packaging these jars. If you are curious how they work, I recommend checking out
 the individual `build.boot` files in the subdirectories of this repository.
 
-**If you just want a JS library to be packaged up, feel free to open
-an issue, chances are someone might just do it for you.**
+**If you want a JS library to be packaged up, feel free to open an
+issue, if you can provide links to source & extern files chances are
+someone might just do it for you.**
 
-Please note that packaging other things besides plain JS libraries is
-a bit more complex and is currently out of scope for this project. If you
-have suggestions or ideas to change this, open an issue :)
+Please note that packaging other things besides plain JS libraries
+(i.e. Bootstrap or similar frameworks) is a bit more complex and is
+currently out of scope for this project. If you have suggestions or
+ideas to change this, open an issue :)
 
 [fileset-doc]: https://github.com/boot-clj/boot/wiki/Filesets
 [boot-cljsjs]: https://github.com/cljsjs/boot-cljsjs
