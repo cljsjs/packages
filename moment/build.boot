@@ -47,9 +47,9 @@
               :checksum "ee7c9584c71459c2c701645a7164a890"
               :unzip true)
     ; Locale files are not immediately named .inc.js as we don't want deps-cljs to find them
-    (sift :move {#"^moment-.*/moment\.js"          "cljsjs/development/moment.inc.js"
-                 #"^moment-.*/min/moment\.min\.js" "cljsjs/production/moment.min.inc.js"
-                 #"^moment-.*/locale/(.*)\.js"     "cljsjs/common/locale/$1.js"})
+    (sift :move {#"^moment-[^\/]*/moment\.js"          "cljsjs/development/moment.inc.js"
+                 #"^moment-[^\/]*/min/moment\.min\.js" "cljsjs/production/moment.min.inc.js"
+                 #"^moment-[^\/]*/locale/(.*)\.js"     "cljsjs/common/locale/$1.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.moment")
     (sift :move {#"^cljsjs/common/locale/(.*)\.js" "cljsjs/common/locale/$1.inc.js"})
