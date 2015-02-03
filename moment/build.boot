@@ -26,18 +26,16 @@
 (deftask generate-locale-deps []
   (let [tmp (c/temp-dir!)
         new-deps-file (io/file tmp "deps.cljs")
-        path->lang-ns (fn [path]
-                        (if-let [[_ lang] (re-matches #"cljsjs/common/lang/(.*)\.inc\.js" path)]
-                          (string/replace lang #"_" "-")))
+        path->locale-ns (fn [path] (second (re-matches #"cljsjs/common/locale/(.*)\.inc\.js" path)))
         path->foreign-lib (fn [path]
                             {:file path
                              :requires ["cljsjs.moment"]
-                             :provides [(format "cljsjs.moment.lang.%s" (path->lang-ns path))]})]
+                             :provides [(format "cljsjs.moment.locale.%s" (path->locale-ns path))]})]
     (with-pre-wrap
       fileset
       (let [existing-deps-file (->> fileset c/input-files (c/by-name ["deps.cljs"]) first)
             existing-deps      (-> existing-deps-file tmpd/file slurp read-string)
-            locale-files       (->> fileset c/input-files (c/by-re [#"^cljsjs/common/lang/.*"]) (c/by-ext [".inc.js"]))
+            locale-files       (->> fileset c/input-files (c/by-re [#"^cljsjs/common/locale/.*"]) (c/by-ext [".inc.js"]))
             locales            (map (comp path->foreign-lib tmpd/path) locale-files)
             new-deps           (update-in existing-deps [:foreign-libs] concat locales)]
         (spit new-deps-file (pr-str new-deps))
@@ -48,13 +46,11 @@
     (download :url "https://github.com/moment/moment/archive/2.9.0.zip"
               :checksum "ee7c9584c71459c2c701645a7164a890"
               :unzip true)
-    ; Lang files are not immediately named .inc.js as we don't want deps-cljs to find them
+    ; Locale files are not immediately named .inc.js as we don't want deps-cljs to find them
     (sift :move {#"^moment-.*/moment\.js"          "cljsjs/development/moment.inc.js"
                  #"^moment-.*/min/moment\.min\.js" "cljsjs/production/moment.min.inc.js"
-                 #"^moment-.*/lang/(.*)\.js"       "cljsjs/common/lang/$1.js"})
-    ; I guess the foreign lib files should be named like clojure namespaces
-    (sift :move {#"-" "_"})
+                 #"^moment-.*/locale/(.*)\.js"     "cljsjs/common/locale/$1.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.moment")
-    (sift :move {#"^cljsjs/common/lang/(.*)\.js" "cljsjs/common/lang/$1.inc.js"})
+    (sift :move {#"^cljsjs/common/locale/(.*)\.js" "cljsjs/common/locale/$1.inc.js"})
     (generate-locale-deps)))
