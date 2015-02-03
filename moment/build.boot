@@ -35,8 +35,8 @@
     (with-pre-wrap
       fileset
       (let [existing-deps-file (first (->> fileset c/input-files (c/by-name ["deps.cljs"])))
-            existing-deps      (read-string (slurp (tmpd/file existing-deps-file)))
-            locale-files       (->> fileset c/input-files (c/by-re [#"^cljsjs/common/lang/.*"]) #_(c/by-ext [".inc.js"]))
+            existing-deps      (-> existing-deps-file tmpd/file slurp read-string)
+            locale-files       (->> fileset c/input-files (c/by-re [#"^cljsjs/common/lang/.*"]) (c/by-ext [".inc.js"]))
             locales            (->> locale-files
                                     (map (comp path->foreign-lib tmpd/path)))
             new-deps (update-in existing-deps [:foreign-libs] concat locales)]
