@@ -26,20 +26,20 @@
 (deftask generate-locale-deps []
   (let [tmp (c/temp-dir!)
         new-deps-file (io/file tmp "deps.cljs")
-        fname->ns #(string/replace % #"_" "-")
+        path->lang-ns (fn [path]
+                        (if-let [[_ lang] (re-matches #"cljsjs/common/lang/(.*)\.inc\.js" path)]
+                          (string/replace lang #"_" "-")))
         path->foreign-lib (fn [path]
-                            (let [[_ lang] (re-matches #"cljsjs/common/lang/(.*)\.inc\.js" path)]
-                              {:file path
-                               :requires ["cljsjs.moment"]
-                               :provides [(format "cljsjs.moment.lang.%s" (fname->ns lang))]}))]
+                            {:file path
+                             :requires ["cljsjs.moment"]
+                             :provides [(format "cljsjs.moment.lang.%s" (path->lang-ns path))]})]
     (with-pre-wrap
       fileset
-      (let [existing-deps-file (first (->> fileset c/input-files (c/by-name ["deps.cljs"])))
+      (let [existing-deps-file (->> fileset c/input-files (c/by-name ["deps.cljs"]) first)
             existing-deps      (-> existing-deps-file tmpd/file slurp read-string)
             locale-files       (->> fileset c/input-files (c/by-re [#"^cljsjs/common/lang/.*"]) (c/by-ext [".inc.js"]))
-            locales            (->> locale-files
-                                    (map (comp path->foreign-lib tmpd/path)))
-            new-deps (update-in existing-deps [:foreign-libs] concat locales)]
+            locales            (map (comp path->foreign-lib tmpd/path) locale-files)
+            new-deps           (update-in existing-deps [:foreign-libs] concat locales)]
         (spit new-deps-file (pr-str new-deps))
         (-> fileset (c/add-resource tmp) c/commit!)))))
 
