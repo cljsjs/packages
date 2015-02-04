@@ -16,6 +16,10 @@
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"BSD" "http://opensource.org/licenses/BSD-2-Clause"}})
 
+; NOTE: The externs was generated manually using a script in the upstream repo.  
+; We hope this file may be included in future upstream releases.  A ticket has been
+; raised in relation to this: https://github.com/openlayers/ol3/issues/3202
+
 (deftask package []
   (comp
     (download :url "https://github.com/openlayers/ol3/releases/download/v3.1.1/v3.1.1.zip"
