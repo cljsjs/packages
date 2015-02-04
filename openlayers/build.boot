@@ -9,9 +9,9 @@
 (def +version+ "3.1.1-0")
 
 (task-options!
- pom  {:project     'cljsjs/ol3
+ pom  {:project     'cljsjs/openlayers
        :version     +version+
-       :description "Openlayers v3 packaged up with Google Closure externs"
+       :description "Openlayers packaged up with Google Closure externs"
        :url         "http://openlayers.org/"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"BSD" "http://opensource.org/licenses/BSD-2-Clause"}})
@@ -25,6 +25,6 @@
     (download :url "https://github.com/openlayers/ol3/releases/download/v3.1.1/v3.1.1.zip"
               :checksum "B0C8AEFACA19505A71C8E5002A2E5E26"
               :unzip true)
-    (sift :move {#"v([\d\.]*)/build/ol.js" "cljsjs/development/ol3.inc.js"})
+    (sift :move {#"v([\d\.]*)/build/ol.js" "cljsjs/development/openlayers.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.ol3")))
+    (deps-cljs :name "cljsjs.openlayers")))

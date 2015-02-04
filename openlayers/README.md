@@ -1,8 +1,8 @@
-# cljsjs/ol3
+# cljsjs/openlayers
 
 [](dependency)
 ```clojure
-[cljsjs/ol3 "3.1.1-0"] ;; latest release
+[cljsjs/openlayers "3.1.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,7 @@ to can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.ol3))
+  (:require cljsjs.openlayers))
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
