@@ -19,8 +19,11 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/victorquinn/chancejs/archive/0.7.3.zip"
-              :checksum "fc430e44258756648d27355ce36180a8"
-              :unzip true)
-    (sift :move {#"^chancejs-\d+\.\d+\.\d+/chance\.js" "cljsjs/common/chance.inc.js"})
-    (sift :include #{#"^cljsjs/" #"^deps.cljs$"})))
+    (download :url "http://chancejs.com/chance-0.7.3.js"
+              :checksum "1ba2c414dabb25fdd5a078622748935d")
+    (download :url "http://chancejs.com/chance-0.7.3.min.js"
+              :checksum "6626802c618649c394f817e5142bb4b1")
+    (sift :move {#"chance-([\d\.]*).js" "cljsjs/development/chance.inc.js"
+                 #"chance-([\d\.]*).min.js" "cljsjs/production/chance.min.inc.js"})
+    (sift :include #{#"^cljsjs"})
+    (deps-cljs :name "cljsjs.chance")))
