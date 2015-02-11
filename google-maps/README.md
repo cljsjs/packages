@@ -9,8 +9,7 @@
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
 of the Clojurescript compiler.
 
-This library provides an extern file required for compilation in advanced
-mode.
-
+The jar only provides an extern file required for advanced compilation.
+The Google Maps js API will still need to provided through some other mechanism.
 [flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
 

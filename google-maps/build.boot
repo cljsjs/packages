@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "3.18")
+(def +version+ "3.18-0")
 
 (task-options!
  pom  {:project     'cljsjs/google-maps
