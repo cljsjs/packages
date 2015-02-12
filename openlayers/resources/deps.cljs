@@ -1,0 +1,1 @@
+{:libs ["cljsjs/development/openlayers/"]}
