@@ -18,11 +18,6 @@
 
 (require '[clojure.java.io :as io])
 
-(deftask sift-images []
-  (with-pre-wrap fileset
-    (file-seq (io/file "/q"))
-    fileset))
-
 (deftask package []
   (comp
     (download :url      "https://github.com/Leaflet/Leaflet/archive/v0.7.3.zip"
