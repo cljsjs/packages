@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.0.1-1")
+(def +version+ "0.0.1-2")
 (bootlaces! +version+)
 
 (task-options!
@@ -20,8 +20,8 @@
 (deftask package []
   (comp
    (download  :url      (str "https://github.com/facebook/css-layout/archive/"
-                             "ce81ef793a77fcc629f741d3323b01ef36b8628b.zip")
-              :checksum "e131b71a5b9160c691e3557f2592c62c"
+                             "b99ce3736fae487873f6bdd8bde4ff34ed2747fc.zip")
+              :checksum "7dd61f07c0c267327069e8b0749d5b2d"
               :unzip    true)
    (sift      :move     {#"^css-layout-.*/src/Layout.js"
                          "cljsjs/css_layout/development/css-layout.inc.js"})
