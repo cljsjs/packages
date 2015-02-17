@@ -1631,6 +1631,11 @@ React.addons.classSet;
 React.addons.CSSTransitionGroup;
 
 /**
+ * @type {React.ReactComponent}
+ */
+React.addons.TransitionGroup;
+
+/**
  * @type {Object}
  */
 React.addons.Perf;
