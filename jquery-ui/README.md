@@ -1,4 +1,4 @@
-# cljsjs/leaflet
+# cljsjs/jquery-ui
 
 [](dependency)
 ```clojure
