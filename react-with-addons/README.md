@@ -21,3 +21,12 @@ React in transitive dependencies with React with addons.
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
 
+## TestUtils
+
+The externs file includes definitions for TestUtils but to use those with `:advanced`
+optimizations you'll need to override `:file-min` to use non-minified version:
+
+src/cljs/deps.cljs:
+```clj
+{:foreign-libs [{:provides ["cljs.react"] :file-min "cljsjs/development/react-with-addons.inc.js"}}
+```
