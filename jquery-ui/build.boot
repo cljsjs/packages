@@ -27,12 +27,9 @@
     (sift :include #{#"^jquery-ui-(.*)/external/(.*).js"} :invert true)
     (sift :move {#"^jquery-ui-(.*)/([a-zA-Z-]+).js"                 "cljsjs/development/$2.inc.js"
                  #"^jquery-ui-(.*)/([a-zA-Z-]+).min.js"             "cljsjs/production/$2.min.inc.js"
-                 #"^jquery-ui-(.*)/([a-zA-Z-]+).min.css"             "cljsjs/production/$2.min.inc.css"
-                 #"^jquery-ui-(.*)/([a-zA-Z-]+).theme.min.css"       "cljsjs/production/$2.theme.min.inc.css"
-                 #"^jquery-ui-(.*)/([a-zA-Z-]+).structure.min.css"   "cljsjs/production/$2.structure.min.inc.css"
-                 #"^jquery-ui-(.*)/([a-zA-Z-]+).css"                "cljsjs/development/$2.inc.css"
-                 #"^jquery-ui-(.*)/([a-zA-Z-]+).theme.css"           "cljsjs/development/$2.theme.inc.css"
-                 #"^jquery-ui-(.*)/([a-zA-Z-]+).structure.css"       "cljsjs/development/$2.structure.inc.css"
+                 #"^jquery-ui-(.*)/([a-zA-Z-]+).min.css"            "cljsjs/common/css/$2.min.inc.css"
+                 #"^jquery-ui-(.*)/([a-zA-Z-]+).theme.min.css"      "cljsjs/common/css/$2.theme.min.inc.css"
+                 #"^jquery-ui-(.*)/([a-zA-Z-]+).structure.min.css"  "cljsjs/common/css/$2.structure.min.inc.css"
                  #"^jquery-ui-(.*)/images/(.*\.png)$"               "cljsjs/common/images/$2"
                  })
     (sift :include #{#"^cljsjs"})
