@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "1.8.2-2")
+(def +version+ "1.9.0-0")
 
 (task-options!
   pom  {:project     'cljsjs/jquery
@@ -18,10 +18,10 @@
 
 (deftask package []
   (comp
-    (download :url "http://code.jquery.com/jquery-1.8.2.js"
-              :checksum "3a316818411b5a80ef878dc5c8483950")
-    (download :url "http://code.jquery.com/jquery-1.8.2.min.js"
-              :checksum "0b6ecf17e30037994d3ffee51b525914")
+    (download :url "http://code.jquery.com/jquery-1.9.0.js"
+              :checksum "f3346149a7173e70d39e6f36bfb178a4")
+    (download :url "http://code.jquery.com/jquery-1.9.0.min.js"
+              :checksum "0652da382b6fceb033dfe2b6c06d4d11")
     (sift :move {#"jquery-([\d\.]*).js" "cljsjs/development/jquery.inc.js"
                  #"jquery-([\d\.]*).min.js" "cljsjs/production/jquery.min.inc.js"})
     (sift :include #{#"^cljsjs"})
