@@ -1,0 +1,220 @@
+/* This externs file was created from PouchDB 3.2.0 using
+ * http://www.dotnetwise.com/Code/Externs/
+ */
+var PouchDB = {
+    "super_": function () {},
+    "debug": function () {},
+    "adapters": {
+        "http": function () {},
+        "https": function () {},
+        "idb": function () {},
+        "websql": function () {}
+    },
+    "preferredAdapters": {
+        "0": {},
+        "1": {}
+    },
+    "prefix": {},
+    "on": function () {},
+    "addListener": function () {},
+    "emit": function () {},
+    "listeners": function () {},
+    "once": function () {},
+    "removeAllListeners": function () {},
+    "removeListener": function () {},
+    "setMaxListeners": function () {},
+    "parseAdapter": function () {},
+    "destroy": function () {},
+    "allDbs": function () {},
+    "adapter": function () {},
+    "plugin": function () {},
+    "defaults": function () {},
+    "ajax": function () {},
+    "extend": function () {},
+    "utils": {
+        "extend": function () {},
+        "ajax": function () {},
+        "createBlob": function () {},
+        "uuid": function () {},
+        "getArguments": function () {},
+        "Map": function () {},
+        "Set": function () {},
+        "Promise": function () {},
+        "lastIndexOf": function () {},
+        "clone": function () {},
+        "pick": function () {},
+        "inherits": function () {},
+        "invalidIdError": function () {},
+        "call": function () {},
+        "isLocalId": function () {},
+        "isDeleted": function () {},
+        "revExists": function () {},
+        "filterChange": function () {},
+        "parseDoc": function () {},
+        "isCordova": function () {},
+        "hasLocalStorage": function () {},
+        "Changes": function () {},
+        "atob": function () {},
+        "btoa": function () {},
+        "fixBinary": function () {},
+        "readAsBinaryString": function () {},
+        "once": function () {},
+        "toPromise": function () {},
+        "adapterFun": function () {},
+        "arrayBufferToBinaryString": function () {},
+        "cancellableFun": function () {},
+        "MD5": function () {},
+        "explain404": function () {},
+        "parseUri": function () {},
+        "compare": function () {},
+        "updateDoc": function () {},
+        "processDocs": function () {},
+        "preprocessAttachments": function () {}
+    },
+    "Errors": {
+        "UNAUTHORIZED": {
+            "status": {},
+            "name": {},
+            "message": {},
+            "error": {},
+            "toString": function () {}
+        },
+        "MISSING_BULK_DOCS": {
+            "status": {},
+            "name": {},
+            "message": {},
+            "error": {},
+            "toString": function () {}
+        },
+        "MISSING_DOC": {
+            "status": {},
+            "name": {},
+            "message": {},
+            "error": {},
+            "toString": function () {}
+        },
+        "REV_CONFLICT": {
+            "status": {},
+            "name": {},
+            "message": {},
+            "error": {},
+            "toString": function () {}
+        },
+        "INVALID_ID": {
+            "status": {},
+            "name": {},
+            "message": {},
+            "error": {},
+            "toString": function () {}
+        },
+        "MISSING_ID": {
+            "status": {},
+            "name": {},
+            "message": {},
+            "error": {},
+            "toString": function () {}
+        },
+        "RESERVED_ID": {
+            "status": {},
+            "name": {},
+            "message": {},
+            "error": {},
+            "toString": function () {}
+        },
+        "NOT_OPEN": {
+            "status": {},
+            "name": {},
+            "message": {},
+            "error": {},
+            "toString": function () {}
+        },
+        "UNKNOWN_ERROR": {
+            "status": {},
+            "name": {},
+            "message": {},
+            "error": {},
+            "toString": function () {}
+        },
+        "BAD_ARG": {
+            "status": {},
+            "name": {},
+            "message": {},
+            "error": {},
+            "toString": function () {}
+        },
+        "INVALID_REQUEST": {
+            "status": {},
+            "name": {},
+            "message": {},
+            "error": {},
+            "toString": function () {}
+        },
+        "QUERY_PARSE_ERROR": {
+            "status": {},
+            "name": {},
+            "message": {},
+            "error": {},
+            "toString": function () {}
+        },
+        "DOC_VALIDATION": {
+            "status": {},
+            "name": {},
+            "message": {},
+            "error": {},
+            "toString": function () {}
+        },
+        "BAD_REQUEST": {
+            "status": {},
+            "name": {},
+            "message": {},
+            "error": {},
+            "toString": function () {}
+        },
+        "NOT_AN_OBJECT": {
+            "status": {},
+            "name": {},
+            "message": {},
+            "error": {},
+            "toString": function () {}
+        },
+        "DB_MISSING": {
+            "status": {},
+            "name": {},
+            "message": {},
+            "error": {},
+            "toString": function () {}
+        },
+        "IDB_ERROR": {
+            "status": {},
+            "name": {},
+            "message": {},
+            "error": {},
+            "toString": function () {}
+        },
+        "WSQ_ERROR": {
+            "status": {},
+            "name": {},
+            "message": {},
+            "error": {},
+            "toString": function () {}
+        },
+        "LDB_ERROR": {
+            "status": {},
+            "name": {},
+            "message": {},
+            "error": {},
+            "toString": function () {}
+        },
+        "FORBIDDEN": {
+            "status": {},
+            "name": {},
+            "message": {},
+            "error": {},
+            "toString": function () {}
+        },
+        "error": function () {}
+    },
+    "replicate": function () {},
+    "sync": function () {},
+    "version": {}
+}
