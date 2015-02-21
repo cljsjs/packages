@@ -54,7 +54,7 @@
           :padding "8px 0"}
          flex))
 
-(def search-input {:margin     "2em 0"
+(def search-input {:margin     "0 0 2em"
                    :padding    "0.25em"
                    :font-size  "1.1em"
                    :font-style "italic"})
