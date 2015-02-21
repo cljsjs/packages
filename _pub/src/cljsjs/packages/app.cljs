@@ -13,7 +13,7 @@
     (sort-by :artifact)))
 
 (def contributing-package-link
-  "https://github.com/cljsjs/packages/wiki/creating-a-package")
+  "https://github.com/cljsjs/packages/wiki/Creating-a-CLJSJS-package")
 
 ;; Helpers
 
