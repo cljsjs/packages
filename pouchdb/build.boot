@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "3.2.0-0")
+(def +version+ "3.3.1-0")
 (bootlaces! +version+)
 
 (task-options!
@@ -19,10 +19,10 @@
 
 (deftask package []
   (comp
-   (download :url "https://github.com/pouchdb/pouchdb/releases/download/3.3.0/pouchdb-3.3.0.js"
-             :checksum "8A5C0C70FDDA68A41B2906D962A93784")
-   (download :url "https://github.com/pouchdb/pouchdb/releases/download/3.3.0/pouchdb-3.3.0.min.js"
-             :checksum "E04B63EEE45A0C93C6E5C116D21B268D")
+   (download :url "https://github.com/pouchdb/pouchdb/releases/download/3.3.1/pouchdb-3.3.1.js"
+             :checksum "4545ABBA4693EE0A6F1B6FAC4A57B04F")
+   (download :url "https://github.com/pouchdb/pouchdb/releases/download/3.3.1/pouchdb-3.3.1.min.js"
+             :checksum "E32627C37898C7995B8BD2FEE93DF952")
    (sift :move {#"pouchdb-([\d+\.]*).js" "cljsjs/development/pouchdb.inc.js"
                 #"pouchdb-([\d+\.]*).min.js" "cljsjs/production/pouchdb.min.inc.js"})
    (sift :include #{#"^cljsjs"})
