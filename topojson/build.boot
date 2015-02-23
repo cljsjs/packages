@@ -25,4 +25,5 @@
     (sift :move {#"^topojson.js" "cljsjs/development/topojson.inc.js"
                  #"^topojson.min.js" "cljsjs/production/topojson.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.topojson")))
+    (deps-cljs :name "cljsjs.topojson"
+               :requires ["cljsjs.d3"])))
