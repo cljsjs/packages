@@ -26,4 +26,4 @@
                  #"^topojson.min.js" "cljsjs/production/topojson.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.topojson"
-               :requires ["cljsjs.d3"])))
+               :requires ["cljsjs/d3"])))
