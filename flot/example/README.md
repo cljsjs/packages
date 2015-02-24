@@ -1,4 +1,4 @@
-# cljs/flot example
+# cljsjs/flot example
 
 1. build
 
