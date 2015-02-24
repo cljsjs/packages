@@ -12,7 +12,7 @@
 (task-options!
  pom  {:project     'cljsjs/react-router
        :version     +version+
-       :description "React-Routers packaged up with Google Closure externs"
+       :description "A complete routing solution for React.js"
        :url         "https://github.com/rackt/react-router"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
