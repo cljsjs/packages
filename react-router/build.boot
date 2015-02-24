@@ -30,4 +30,5 @@
                  #"^react-.*/dist/react-router.min.js"
                  "cljsjs/production/react-router.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.react-router")))
+    (deps-cljs :name "cljsjs.react-router"
+               :requires ["cljsjs.react"])))
