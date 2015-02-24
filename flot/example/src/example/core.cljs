@@ -1,6 +1,5 @@
 (ns example.core
   (:require
-    [clojure.browser.repl :as repl]
     cljsjs.jquery
     cljsjs.flot
     cljsjs.flot.plugins.crosshair))
@@ -25,8 +24,6 @@
     (.log js/console (.getAxes plot))
     (.log js/console (.getData plot))
     (-> ($ "#footer") (.prepend version-str))))
-
-;; (repl/connect "http://localhost:9000/repl")
 
 (enable-console-print!)
 
