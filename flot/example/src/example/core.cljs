@@ -1,6 +1,5 @@
 (ns example.core
   (:require
-    cljsjs.jquery
     cljsjs.flot
     cljsjs.flot.plugins.crosshair))
 

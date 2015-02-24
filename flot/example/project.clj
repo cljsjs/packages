@@ -4,7 +4,6 @@
 
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [org.clojure/clojurescript "0.0-2755"]
-                 [cljsjs/jquery "1.9.0-0"]
                  [cljsjs/flot "0.8.3-0"]]
 
   :node-dependencies [[source-map-support "0.2.8"]]

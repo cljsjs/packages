@@ -1,7 +1,8 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.4.6" :scope "test"]])
+                  [cljsjs/boot-cljsjs "0.4.6" :scope "test"]
+                  [cljsjs/jquery "1.9.0-0"]])
 
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
@@ -56,7 +57,8 @@
     (sift :move {#"flot/jquery\.flot\.(.*)\.js" "cljsjs/plugins/$1.js"})
 
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.flot")
+    (deps-cljs :name "cljsjs.flot"
+               :requires ["cljsjs.jquery"])
 
     (sift :move {#"^cljsjs/plugins/(.*)\.js" "cljsjs/plugins/$1.inc.js"})
 
