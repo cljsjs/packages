@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.12.0-1")
+(def +version+ "0.12.2-0")
 (bootlaces! +version+)
 
 (task-options!
@@ -18,16 +18,16 @@
        :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
 
 (deftask download-react-router []
-  (download :url "https://github.com/rackt/react-router/archive/v0.12.0.zip"
-            :checksum "88780b2cb979715febaa762320943def"
+  (download :url "https://github.com/rackt/react-router/archive/v0.12.2.zip"
+            :checksum "4c819e3f8f2af724906c966bc5a8de7a"
             :unzip true))
 
 (deftask package []
   (comp
     (download-react-router)
-    (sift :move {#"^react-.*/dist/react-router.js"
+    (sift :move {#"^react-.*/build/global/ReactRouter.js"
                  "cljsjs/development/react-router.inc.js"
-                 #"^react-.*/dist/react-router.min.js"
+                 #"^react-.*/build/global/ReactRouter.min.js"
                  "cljsjs/production/react-router.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-router"
