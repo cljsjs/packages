@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "3.5.5-0")
+(def +version+ "3.5.5-1")
 (bootlaces! +version+)
 
 (task-options!
@@ -22,7 +22,7 @@
     (download :url "https://github.com/mbostock/d3/archive/v3.5.5.zip"
               :checksum "1fa239dd27ac7527756efa4d3b73a266"
               :unzip true)
-    (sift :move {#"^d3.*/d3\.js"      "cljsjs/d3/development/d3.inc.js"
-                 #"^d3.*/d3\.min\.js" "cljsjs/d3/production/d3.min.inc.js"})
+    (sift :move {#"^d3-([\d\.]*)/d3\.js"      "cljsjs/d3/development/d3.inc.js"
+                 #"^d3-([\d\.]*)/d3\.min\.js" "cljsjs/d3/production/d3.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.d3")))
