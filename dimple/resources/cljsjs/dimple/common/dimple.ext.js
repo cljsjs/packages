@@ -1,0 +1,20 @@
+/* @const */
+var dimple = {}
+/* @const */
+dimple.aggregateMethod = {}
+/* @const */
+dimple.axis = {}
+/* @const */
+dimple.chart = {}
+/* @const */
+dimple.color = {}
+/* @const */
+dimple.eventArgs = {}
+/* @const */
+dimple.legend = {}
+/* @const */
+dimple.plot = {}
+/* @const */
+dimple.series = {}
+/* @const */
+dimple.storyboard = {}
