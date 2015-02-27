@@ -2,12 +2,12 @@
   :resource-paths #{"resources"}
   :dependencies '[[adzerk/bootlaces   "0.1.10" :scope "test"]
                   [cljsjs/boot-cljsjs "0.4.6"  :scope "test"]
-                  [cljsjs/d3 "3.5.5-0"]])
+                  [cljsjs/d3 "3.5.5-1"]])
 
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "2.1.3-0")
+(def +version+ "2.1.3-1")
 (bootlaces! +version+)
 
 (task-options!
