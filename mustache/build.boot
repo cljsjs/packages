@@ -23,7 +23,7 @@
     (download :url      "https://github.com/janl/mustache.js/archive/v1.1.0.zip"
               :checksum "fe10b20e3a4cea190725ebbbbe5a5890"
               :unzip    true)
-    (sift :move {#"^mustache.js"     "cljsjs/development/mustache.inc.js"
-                 #"^mustache.min.js" "cljsjs/production/mustache.min.inc.js"})
+    (sift :move {#"^mustache.js-\d.\d.\d/mustache.js$"     "cljsjs/mustache/development/mustache.inc.js"
+                 #"^mustache.js-\d.\d.\d/mustache.min.js$" "cljsjs/mustache/production/mustache.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.mustache")))
