@@ -7,7 +7,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.12.2-0")
+(def +version+ "0.12.4-0")
 (bootlaces! +version+)
 
 (task-options!
@@ -19,9 +19,9 @@
        :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
 
 (deftask download-react-router []
-  (download :url "https://github.com/rackt/react-router/archive/v0.12.2.zip"
-            :checksum "4c819e3f8f2af724906c966bc5a8de7a"
-            :unzip true))
+  (download :url      "https://github.com/rackt/react-router/archive/v0.12.4.zip"
+            :checksum "c93ff572d9fa2eb7d0e61e42a52bc951"
+            :unzip    true))
 
 (deftask package []
   (comp
