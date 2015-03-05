@@ -7,7 +7,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "2.1.3-1")
+(def +version+ "2.1.2-0")
 (bootlaces! +version+)
 
 (task-options!
@@ -20,10 +20,10 @@
 
 (deftask package []
   (comp
-   (download :url "https://raw.githubusercontent.com/PMSI-AlignAlytics/dimple/master/dist/dimple.v2.1.3.js"
-             :checksum "F1189BD5961E043161930B5D2F38EA2A")
-   (download :url "https://raw.githubusercontent.com/PMSI-AlignAlytics/dimple/master/dist/dimple.v2.1.3.min.js"
-             :checksum "762301BED07A60A0A87A3D6128A6B5C6")
+   (download :url "https://raw.githubusercontent.com/PMSI-AlignAlytics/dimple/2.1.2/dist/dimple.v2.1.2.js"
+             :checksum "FD30B182DBF07FF8EF314CB1C734DC82")
+   (download :url "https://raw.githubusercontent.com/PMSI-AlignAlytics/dimple/2.1.2/dist/dimple.v2.1.2.min.js"
+             :checksum "C5D7EF47BA2445A130A00F3A9ABC1B78")
    (sift :move {#"^dimple\.v([\d+\.]*).js" "cljsjs/development/dimple.inc.js"
                 #"^dimple\.v([\d+\.]*).min.js" "cljsjs/production/dimple.min.inc.js"})
    (sift :include #{#"^cljsjs"})
