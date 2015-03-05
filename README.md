@@ -19,20 +19,17 @@ version of the packaged JS lib.
 **You can find the specific coordinates for those packages in their
 respective `README` files.**
 
-## Contributing a package
+## Documentation
 
-There are a bunch of tasks for Boot in [boot-cljsjs][boot-cljsjs] that help with
-packaging these jars. If you are curious how they work, I recommend checking out
-the individual `build.boot` files in the subdirectories of this repository.
+The wiki of this repo is used for community maintained documentation:
 
-**If you want a JS library to be packaged up, feel free to open an
-issue, if you can provide links to source & extern files chances are
-someone might just do it for you.**
+- [Why CLJSJS exists](https://github.com/cljsjs/packages/wiki)
+- [Creating Packages](https://github.com/cljsjs/packages/wiki/Creating-Packages)
+- [Creating Externs](https://github.com/cljsjs/packages/wiki/Creating-Externs)
 
-Please note that packaging other things besides plain JS libraries
-(i.e. Bootstrap or similar frameworks) is a bit more complex and is
-currently out of scope for this project. If you have suggestions or
-ideas to change this, open an issue :)
+If you'd like to contribute there's a
+[small section on that](https://github.com/cljsjs/packages/wiki#contribute)
+as well.
 
 [fileset-doc]: https://github.com/boot-clj/boot/wiki/Filesets
 [boot-cljsjs]: https://github.com/cljsjs/boot-cljsjs
