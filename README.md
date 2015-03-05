@@ -9,7 +9,7 @@
 > Existing versions will continue to work, future versions will
 > work through the `:foreign-libs` mechanism supplied by Clojurescript.
 
-# Using these packages
+## Using these packages
 
 All packages provided by [cljsjs][clojars-cljsjs] provide `deps.cljs`
 files that will be automtically picked up by the Clojurescript
