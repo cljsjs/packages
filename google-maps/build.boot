@@ -1,12 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
+  :dependencies '[[adzerk/bootlaces   "0.1.11" :scope "test"]
                   [cljsjs/boot-cljsjs "0.4.6" :scope "test"]])
 
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "3.18-0")
+(def +version+ "3.18-1")
 
 (task-options!
  pom  {:project     'cljsjs/google-maps
