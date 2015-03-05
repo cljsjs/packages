@@ -1,8 +1,8 @@
-# cljsjs/d3
+# cljsjs/dimple
 
 [](dependency)
 ```clojure
-[cljsjs/dimple "2.1.3-1"] ;; latest release
+[cljsjs/dimple "2.1.2-0"] ;; latest release
 ```
 [](/dependency)
 
