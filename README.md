@@ -3,11 +3,8 @@
 <img src="https://dl.dropboxusercontent.com/u/453692/cljsjs-logo.png"
   alt="CLJSJS logo" align="right" />
 
-**Transitioning to :foreign-libs right now.**
-
-> These packages originally only worked out of the box with Boot.
-> Existing versions will continue to work, future versions will
-> work through the `:foreign-libs` mechanism supplied by Clojurescript.
+CLJSJS is an effort to package Javascript libraries to be able to use
+them from within Clojurescript.
 
 ## Using these packages
 
