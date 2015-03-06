@@ -492,6 +492,31 @@ React.ReactAtrribute.onScroll;
 React.ReactAtrribute.onWheel;
 
 /**
+ * @interface
+ */
+React.SyntheticEvent = function() {};
+
+/**
+ * @return {boolean}
+ */
+React.SyntheticEvent.prototype.persist = function() {};
+
+/**
+ * @type {Function}
+ */
+React.SyntheticEvent.prototype.persist;
+
+/**
+ * @type {Function}
+ */
+React.SyntheticEvent.prototype.preventDefault;
+
+/**
+ * @type {Function}
+ */
+React.SyntheticEvent.prototype.stopPropagation;
+
+/**
  * @type {Object}
  * @const
  */
