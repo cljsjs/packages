@@ -269,27 +269,27 @@ React.ReactComponent.prototype.render = function() {};
  * Interface to preserve React attributes for advanced compilation.
  * @interface
  */
-React.ReactAtrribute = function() {};
+React.ReactAttribute = function() {};
 
 /**
  * @type {Object}
  */
-React.ReactAtrribute.dangerouslySetInnerHTML;
+React.ReactAttribute.dangerouslySetInnerHTML;
 
 /**
  * @type {string}
  */
-React.ReactAtrribute.__html;
+React.ReactAttribute.__html;
 
 /**
  * @type {string}
  */
-React.ReactAtrribute.key;
+React.ReactAttribute.key;
 
 /**
  * @type {string}
  */
-React.ReactAtrribute.ref;
+React.ReactAttribute.ref;
 
 // Attributes not defined in default Closure Compiler DOM externs.
 // http://facebook.github.io/react/docs/tags-and-attributes.html#html-attributes
@@ -301,32 +301,32 @@ React.ReactAtrribute.ref;
 /**
  * @type {boolean}
  */
-React.ReactAtrribute.allowFullScreen;
+React.ReactAttribute.allowFullScreen;
 
 /**
  * @type {boolean}
  */
-React.ReactAtrribute.autoComplete;
+React.ReactAttribute.autoComplete;
 
 /**
  * @type {boolean}
  */
-React.ReactAtrribute.autoFocus;
+React.ReactAttribute.autoFocus;
 
 /**
  * @type {boolean}
  */
-React.ReactAtrribute.autoPlay;
+React.ReactAttribute.autoPlay;
 
 /**
  * @type {boolean}
  */
-React.ReactAtrribute.noValidate;
+React.ReactAttribute.noValidate;
 
 /**
  * @type {boolean}
  */
-React.ReactAtrribute.spellCheck;
+React.ReactAttribute.spellCheck;
 
 
 // http://facebook.github.io/react/docs/events.html
@@ -334,162 +334,162 @@ React.ReactAtrribute.spellCheck;
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onCopy;
+React.ReactAttribute.onCopy;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onCut;
+React.ReactAttribute.onCut;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onPaste;
+React.ReactAttribute.onPaste;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onKeyDown;
+React.ReactAttribute.onKeyDown;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onKeyPress;
+React.ReactAttribute.onKeyPress;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onKeyUp;
+React.ReactAttribute.onKeyUp;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onFocus;
+React.ReactAttribute.onFocus;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onBlur;
+React.ReactAttribute.onBlur;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onChange;
+React.ReactAttribute.onChange;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onInput;
+React.ReactAttribute.onInput;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onSubmit;
+React.ReactAttribute.onSubmit;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onClick;
+React.ReactAttribute.onClick;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onDoubleClick;
+React.ReactAttribute.onDoubleClick;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onDrag;
+React.ReactAttribute.onDrag;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onDragEnd;
+React.ReactAttribute.onDragEnd;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onDragEnter;
+React.ReactAttribute.onDragEnter;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onDragExit;
+React.ReactAttribute.onDragExit;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onDragLeave;
+React.ReactAttribute.onDragLeave;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onDragOver;
+React.ReactAttribute.onDragOver;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onDragStart;
+React.ReactAttribute.onDragStart;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onDrop;
+React.ReactAttribute.onDrop;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onMouseDown;
+React.ReactAttribute.onMouseDown;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onMouseEnter;
+React.ReactAttribute.onMouseEnter;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onMouseLeave;
+React.ReactAttribute.onMouseLeave;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onMouseMove;
+React.ReactAttribute.onMouseMove;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onMouseUp;
+React.ReactAttribute.onMouseUp;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onTouchCancel;
+React.ReactAttribute.onTouchCancel;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onTouchEnd;
+React.ReactAttribute.onTouchEnd;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onTouchMove;
+React.ReactAttribute.onTouchMove;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onTouchStart;
+React.ReactAttribute.onTouchStart;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onScroll;
+React.ReactAttribute.onScroll;
 
 /**
  * @type {Function}
  */
-React.ReactAtrribute.onWheel;
+React.ReactAttribute.onWheel;
 
 /**
  * @interface
