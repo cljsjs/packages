@@ -6,8 +6,19 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.12.2-8")
+(def react-version "0.13.0-rc2")
+(def +version+ (str react-version "-0"))
 (bootlaces! +version+)
+
+(def urls
+  {:normal {:dev (str "http://fb.me/react-" react-version ".js")
+            :dev-checksum "C2BA8FB02812FC484CFCEC9A5A0A2459"
+            :min (str "http://fb.me/react-" react-version ".min.js")
+            :min-checksum "4D67F5CEF570C3E37B82100669595227"}
+   :with-addons {:dev (str "http://fb.me/react-with-addons-" react-version ".js")
+                 :dev-checksum "49EC8154989238B567CF32B99B7CB494"
+                 :min (str "http://fb.me/react-with-addons-" react-version ".min.js")
+                 :min-checksum "3F38EE6D0BAD46BD68F998CD45CAC2E6"}})
 
 (task-options!
  pom  {:project     'cljsjs/react
@@ -17,16 +28,12 @@
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
 
-(deftask download-react []
-  (download :url "https://github.com/facebook/react/releases/download/v0.12.2/react-0.12.2.zip"
-            :checksum "6a242238790b21729a88c26145eca6b9"
-            :unzip true))
-
 (deftask package []
   (comp
-    (download-react)
-    (sift :move {#"^react-.*/build/react.js" "cljsjs/development/react.inc.js"
-                 #"^react-.*/build/react.min.js" "cljsjs/production/react.min.inc.js"})
+    (download :url (-> urls :normal :dev) :checksum (-> urls :normal :dev-checksum))
+    (download :url (-> urls :normal :min) :checksum (-> urls :normal :min-checksum))
+    (sift :move {(re-pattern (str "^react-" react-version ".js$"))     "cljsjs/development/react.inc.js"
+                 (re-pattern (str "^react-" react-version ".min.js$")) "cljsjs/production/react.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react")))
 
@@ -34,8 +41,9 @@
   (task-options! pom {:project 'cljsjs/react-with-addons
                       :description "React.js with addons packaged up with Google Closure externs"})
   (comp
-    (download-react)
-    (sift :move {#"^react-.*/build/react-with-addons.js" "cljsjs/development/react-with-addons.inc.js"
-                 #"^react-.*/build/react-with-addons.min.js" "cljsjs/production/react-with-addons.min.inc.js"})
+    (download :url (-> urls :with-addons :dev) :checksum (-> urls :with-addons :dev-checksum))
+    (download :url (-> urls :with-addons :min) :checksum (-> urls :with-addons :min-checksum))
+    (sift :move {(re-pattern (str "^react-with-addons-" react-version ".js$"))     "cljsjs/development/react-with-addons.inc.js"
+                 (re-pattern (str "^react-with-addons-" react-version ".min.js$")) "cljsjs/production/react-with-addons.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react")))

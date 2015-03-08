@@ -1,5 +1,5 @@
 /**
- * @fileoverview Closure Compiler externs for Facebook React.js 0.12.0.
+ * @fileoverview Closure Compiler externs for Facebook React.js 0.13.0.
  * @see http://reactjs.org
  * @externs
  */
@@ -107,6 +107,10 @@ React.constructAndRenderComponent = function(constructor, props, container) {};
  */
 React.constructAndRenderComponentByID = function(componentConstructor, props,
   id) {};
+
+React.findDOMNode = function(component) {};
+
+React.cloneElement = function(element, props) {};
 
 /**
  * @interface
