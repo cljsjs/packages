@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.12.2-7")
+(def +version+ "0.12.2-8")
 (bootlaces! +version+)
 
 (task-options!
@@ -19,8 +19,8 @@
 
 (deftask download-react []
   (download :url "https://github.com/facebook/react/releases/download/v0.12.2/react-0.12.2.zip"
-              :checksum "6a242238790b21729a88c26145eca6b9"
-              :unzip true))
+            :checksum "6a242238790b21729a88c26145eca6b9"
+            :unzip true))
 
 (deftask package []
   (comp

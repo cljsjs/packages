@@ -1,8 +1,8 @@
-# cljsjs/d3
+# cljsjs/dimple
 
 [](dependency)
 ```clojure
-[cljsjs/d3 "3.5.5-1"] ;; latest release
+[cljsjs/dimple "2.1.2-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,10 +12,10 @@ to can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.d3))
+  (:require cljsjs.dimple))
 ```
 
-Uses externs provided by `federico-b/d3-externs`, many thanks!
+No proper externs yet - just figuring things out at the moment....
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+
 
