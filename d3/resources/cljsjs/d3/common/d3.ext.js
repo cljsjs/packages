@@ -52,7 +52,6 @@ var d3 = {
     "median": function () {},
     "min": function () {},
     "max": function () {},
-    "enter": function () {},
     "extent": function () {},
     "random": {
         "normal": function () {},
