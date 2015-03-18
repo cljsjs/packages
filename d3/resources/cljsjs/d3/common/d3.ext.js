@@ -52,7 +52,6 @@ var d3 = {
     "median": function () {},
     "min": function () {},
     "max": function () {},
-    "enter": function () {},
     "extent": function () {},
     "random": {
         "normal": function () {},
@@ -366,6 +365,7 @@ d3.select.prototype = function () {};
 d3.selectAll.prototype = function () {};
 d3.selection.prototype = {
     "enter": function () {},
+    "exit": function () {},
     "select": function () {},
     "selectAll": function () {},
     "attr": function () {},
