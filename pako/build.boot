@@ -22,7 +22,7 @@
     (download :url "https://github.com/nodeca/pako/archive/0.2.5.zip"
               :checksum "8392ad105d913c3a83a7787c8f148055"
               :unzip true)
-    (sift :move {#"^pako-.*/dist/pako.js"    "cljsjs/development/pako.inc.js"
-                #"^pako-.*/dist/pako.min.js" "cljsjs/production/pako.min.inc.js"})
+    (sift :move {#"^pako-.*/dist/pako.js"    "cljsjs/pako/development/pako.inc.js"
+                #"^pako-.*/dist/pako.min.js" "cljsjs/pako/production/pako.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.pako")))
