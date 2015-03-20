@@ -1,13 +1,13 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.8" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.4.6" :scope "test"]
+  :dependencies '[[adzerk/bootlaces   "0.1.11" :scope "test"]
+                  [cljsjs/boot-cljsjs "0.4.7"  :scope "test"]
                   [cljsjs/moment "2.6.0-3"]])
 
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "1.2.0-3")
+(def +version+ "1.3.2-0")
 (bootlaces! +version+)
 
 (task-options!
@@ -21,9 +21,10 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/dbushell/Pikaday/archive/1.2.0.zip"
-              :checksum "ee076ed672c366bcc96f899c1c0e499b"
+    (download :url "https://github.com/dbushell/Pikaday/archive/1.3.2.zip"
+              :checksum "5D69BD5584F32291608D9E6EB739CD2D"
               :unzip true)
     (sift :move {#"^Pikaday.*/pikaday\.js" "cljsjs/common/pikaday.inc.js"
+                 #"^Pikaday.*/scss/pikaday\.scss" "cljsjs/common/pikaday.scss"
                  #"^Pikaday.*/css/pikaday\.css" "cljsjs/common/pikaday.css"})
     (sift :include #{#"^cljsjs/" #"^deps.cljs$"})))
