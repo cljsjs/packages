@@ -1,8 +1,8 @@
-# cljsjs/fixed-data-table
+# cljsjs/object-assign-shim
 
 [](dependency)
 ```clojure
-[cljsjs/fixed-data-table "0.1.2-0"] ;; latest release
+[cljsjs/object-assign-shim "0.1.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,5 +12,5 @@ to can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.fixed-data-table))
+  (:require cljsjs.object-assign-shim))
 ```
