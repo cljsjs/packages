@@ -6,7 +6,8 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "8.4-0")
+(def highlightjs-version "8.4")
+(def +version+ (str highlightjs-version "-0"))
 
 (task-options!
   pom  {:project     'cljsjs/highlight
@@ -40,13 +41,34 @@
         (spit new-deps-file (pr-str new-deps))
         (-> fileset (c/add-resource tmp) c/commit!)))))
 
+(require '[boot.util :refer [sh]]
+         '[boot.tmpdir :as tmpd])
+
+(deftask build-highlightjs []
+  (let [tmp (c/temp-dir!)]
+    (with-pre-wrap
+      fileset
+      ; Copy all files in fileset to temp directory
+      (doseq [f (->> fileset c/input-files)
+              :let [target  (io/file tmp (tmpd/path f))]]
+        (io/make-parents target)
+        (io/copy (tmpd/file f) target))
+      (binding [boot.util/*sh-dir* (str tmp)]
+        ((sh "npm" "install"))
+        ((sh "node" "tools/build.js" "-t" "cdn" ":none")))
+      (-> fileset (c/add-resource tmp) c/commit!))))
+
 (deftask package []
   (comp
-
-    (sift :move {#"cljsjs/common/highlight\.min\.js" "cljsjs/common/highlight.inc.js"})
+    (download :url (format "https://github.com/isagalaev/highlight.js/archive/%s.zip" highlightjs-version)
+              :unzip true
+              :checksum "2CAC2669F0D1AD1E384543059F10F8F8")
+    (sift :move {#"^highlight\.js-\d?\.\d?/" ""})
+    (build-highlightjs)
+    (sift :move {#"build/highlight\.min\.js" "cljsjs/common/highlight.inc.js"})
     (deps-cljs :name "cljsjs.highlight")
-
-    (sift :move {#"cljsjs/common/languages/(.*)\.min\.js" "cljsjs/common/languages/$1.inc.js"})
-
+    (sift :move {#"build/languages/(.*)\.min\.js" "cljsjs/common/languages/$1.inc.js"
+                 #"build/styles/(.*)\.min\.css" "cljsjs/common/styles/$1.css"})
+    (sift :include #{#"^cljsjs" #"deps\.cljs"})
     (generate-lang-deps)))
 
