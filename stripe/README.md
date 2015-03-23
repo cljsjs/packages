@@ -1,7 +1,7 @@
 # cljsjs/stripe
 [](dependency)
 ```clojure
-[cljsjs/stripe "2.0-2"] ;; latest release
+[cljsjs/stripe "2.0-0"] ;; latest release
 ```
 [](/dependency)
 
