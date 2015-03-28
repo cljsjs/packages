@@ -236,7 +236,12 @@ Firebase.prototype.orderByKey = function() {};
 /**
    @return {Firebase} Actually it returns Query
 */
-Firebase.prototype.orderByKey = function() {};
+Firebase.prototype.orderByPriority = function() {};
+
+/**
+   @return {Firebase} Actually it returns Query
+*/
+Firebase.prototype.orderByValue = function() {};
 
 /**
    @param {string|number|null} value
