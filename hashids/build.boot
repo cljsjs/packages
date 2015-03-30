@@ -21,7 +21,7 @@
     (download :url "https://github.com/ivanakimov/hashids.js/archive/1.0.2.zip"
               :checksum "cafc7be2c2f901cc8fe2cc96292d35dc"
               :unzip true)
-    (sift :move {#"^hashids.js-.*/lib/hashids.js" "cljsjs/development/hashids.inc.js"})
-    (sift :move {#"^hashids.js-.*/lib/hashids.min.js" "cljsjs/production/hashids.min.inc.js"})
+    (sift :move {#"^hashids.js-.*/lib/hashids.js" "cljsjs/hashids/development/hashids.inc.js"})
+    (sift :move {#"^hashids.js-.*/lib/hashids.min.js" "cljsjs/hashids/production/hashids.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.hashids")))
