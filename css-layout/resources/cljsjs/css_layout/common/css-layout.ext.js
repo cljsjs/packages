@@ -1,2 +1,5 @@
 var returnExports = {};
-var computeLayout = function () {};
+var computeLayout = {};
+computeLayout.computeLayout = function(){};
+computeLayout.fillNodes     = function(){};
+computeLayout.extractNodes  = function(){};
