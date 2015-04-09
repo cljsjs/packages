@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/pako "0.2.5-0"] ;; latest release
+[cljsjs/pako "0.2.6-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,5 +12,24 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.pako))
+  (:require cljsjs.pako :as pako))
 ```
+# Usage
+
+```clojure
+; to deflate and return a Uint8Array:
+(.gzip js/pako source-str (clj->js {:name "loerun ipsum"}))
+```
+
+```clojure
+; to deflate and return a string:
+(.gzip js/pako source-str (clj->js {:name "loerun ipsum" :text true}))
+```
+
+```clojure
+; to inflate and return a string:
+(.ungzip js/pako deflated-unint8array (clj->js {:text true}))
+```
+
+
+[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
