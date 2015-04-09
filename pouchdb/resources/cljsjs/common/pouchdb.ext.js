@@ -1,4 +1,4 @@
-/* This externs file was created from PouchDB 3.2.0 using
+/* This externs file was created from PouchDB 3.4.0 using
  * http://www.dotnetwise.com/Code/Externs/
  */
 var PouchDB = {
@@ -25,12 +25,10 @@ var PouchDB = {
     "setMaxListeners": function () {},
     "parseAdapter": function () {},
     "destroy": function () {},
-    "allDbs": function () {},
     "adapter": function () {},
     "plugin": function () {},
     "defaults": function () {},
     "ajax": function () {},
-    "extend": function () {},
     "utils": {
         "extend": function () {},
         "ajax": function () {},
@@ -44,13 +42,13 @@ var PouchDB = {
         "clone": function () {},
         "pick": function () {},
         "inherits": function () {},
-        "invalidIdError": function () {},
         "call": function () {},
         "isLocalId": function () {},
         "isDeleted": function () {},
         "revExists": function () {},
         "filterChange": function () {},
         "parseDoc": function () {},
+        "invalidIdError": function () {},
         "isCordova": function () {},
         "hasLocalStorage": function () {},
         "Changes": function () {},
@@ -58,6 +56,7 @@ var PouchDB = {
         "btoa": function () {},
         "fixBinary": function () {},
         "readAsBinaryString": function () {},
+        "readAsArrayBuffer": function () {},
         "once": function () {},
         "toPromise": function () {},
         "adapterFun": function () {},
@@ -65,11 +64,15 @@ var PouchDB = {
         "cancellableFun": function () {},
         "MD5": function () {},
         "explain404": function () {},
+        "info": function () {},
         "parseUri": function () {},
         "compare": function () {},
         "updateDoc": function () {},
         "processDocs": function () {},
-        "preprocessAttachments": function () {}
+        "preprocessAttachments": function () {},
+        "compactTree": function () {},
+        "safeJsonParse": function () {},
+        "safeJsonStringify": function () {}
     },
     "Errors": {
         "UNAUTHORIZED": {
@@ -212,7 +215,30 @@ var PouchDB = {
             "error": {},
             "toString": function () {}
         },
-        "error": function () {}
+        "INVALID_REV": {
+            "status": {},
+            "name": {},
+            "message": {},
+            "error": {},
+            "toString": function () {}
+        },
+        "FILE_EXISTS": {
+            "status": {},
+            "name": {},
+            "message": {},
+            "error": {},
+            "toString": function () {}
+        },
+        "MISSING_STUB": {
+            "status": {},
+            "name": {},
+            "message": {},
+            "error": {},
+            "toString": function () {}
+        },
+        "error": function () {},
+        "getErrorTypeByProp": function () {},
+        "generateErrorFromResponse": function () {}
     },
     "replicate": function () {},
     "sync": function () {},
