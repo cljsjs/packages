@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.2.5-0")
+(def +version+ "0.2.6-0")
 (bootlaces! +version+)
 
 (task-options!
@@ -19,8 +19,8 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/nodeca/pako/archive/0.2.5.zip"
-              :checksum "8392ad105d913c3a83a7787c8f148055"
+    (download :url "https://github.com/nodeca/pako/archive/0.2.6.zip"
+              :checksum "dba1e8029dc001e640a4f1dc034ca7c2"
               :unzip true)
     (sift :move {#"^pako-.*/dist/pako.js"    "cljsjs/pako/development/pako.inc.js"
                 #"^pako-.*/dist/pako.min.js" "cljsjs/pako/production/pako.min.inc.js"})
