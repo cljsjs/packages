@@ -10,7 +10,7 @@
 (bootlaces! +version+)
 
 (task-options!
- pom  {:project     'cljsjs/oauth-js
+ pom  {:project     'cljsjs/oauthio
        :version     +version+
        :description "This is the JavaScript SDK for OAuth.io"
        :url         "https://oauth.io"
@@ -22,7 +22,7 @@
     (download :url "https://github.com/oauth-io/oauth-js/archive/0.4.0.zip"
               :checksum "aa8812d0a90d337fdfd8079d7d58b874"
               :unzip true)
-    (sift :move {#"^oauth-js-([\d\.]*)/dist/oauth\.js"      "cljsjs/oauth-js/development/oauth-js.inc.js"
-                 #"^oauth-js-([\d\.]*)/dist/oauth\.min\.js" "cljsjs/oauth-js/production/oauth-js.min.inc.js"})
+    (sift :move {#"^oauth-js-([\d\.]*)/dist/oauth\.js"      "cljsjs/oauthio/development/oauthio.inc.js"
+                 #"^oauth-js-([\d\.]*)/dist/oauth\.min\.js" "cljsjs/oauthio/production/oauthio.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.oauth-js")))
+    (deps-cljs :name "cljsjs.oauthio")))
