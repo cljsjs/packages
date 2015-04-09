@@ -1,8 +1,8 @@
-# cljsjs/oauth-js
+# cljsjs/oauthio
 
 [](dependency)
 ```clojure
-[cljsjs/oauth-js "0.4.0-0"] ;; latest release
+[cljsjs/oauthio "0.4.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -13,7 +13,7 @@ your project, you can require the packaged library like so:
 
 ```clojure
 (ns application.core
- (:require cljsjs.oauth-js))
+ (:require cljsjs.oauthio))
 ```
 
 [flibs]:
