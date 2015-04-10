@@ -12,7 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.pako))
+  (:require cljsjs.pako :as pako))
 ```
 # Usage
 
