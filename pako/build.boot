@@ -19,10 +19,11 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/nodeca/pako/archive/0.2.6.zip"
-              :checksum "dba1e8029dc001e640a4f1dc034ca7c2"
-              :unzip true)
-    (sift :move {#"^pako-.*/dist/pako.js"    "cljsjs/pako/development/pako.inc.js"
-                #"^pako-.*/dist/pako.min.js" "cljsjs/pako/production/pako.min.inc.js"})
+    (download :url "https://raw.githubusercontent.com/nodeca/pako/0.2.6/dist/pako.min.js"
+              :checksum "960cb8305a01413a3c59459578be1a94")
+    (download :url "https://raw.githubusercontent.com/nodeca/pako/0.2.6/dist/pako.js"
+              :checksum "393c0e574e439c37025d56141d6e8bff")
+    (sift :move {#"pako\.js"      "cljsjs/pako/development/pako.inc.js"
+                 #"pako\.min\.js" "cljsjs/pako/production/pako.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.pako")))
