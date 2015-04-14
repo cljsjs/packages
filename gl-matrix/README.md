@@ -9,6 +9,7 @@ to date as of 2015-04-09.
 
 * Original library: https://github.com/toji/gl-matrix
 * Fork, purely to release latest version: https://github.com/jenanwise/gl-matrix
+* Issue requesting fresh release: https://github.com/toji/gl-matrix/issues/156
 
 ## Installation
 
