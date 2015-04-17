@@ -1,7 +1,5 @@
 var Showdown = {
     "extensions": function () {},
     "forEach": function () {},
-    "converter": function () {}
+    "converter": { makeHtml: function () {} }
 };
-
-Showdown.converter.prototype.makeHtml = function () {};
