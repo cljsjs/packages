@@ -2,7 +2,8 @@
   :resource-paths #{"resources"}
   :dependencies '[[adzerk/bootlaces "0.1.11" :scope "test"]
                   [cljsjs/boot-cljsjs "0.4.7" :scope "test"]
-                  [cljsjs/react-with-addons "0.13.1-0"]])
+                  [cljsjs/react-with-addons "0.13.1-0"]
+                  [org.webjars.bower/bootstrap "3.3.4"]])
 
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
