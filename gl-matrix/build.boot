@@ -21,10 +21,10 @@
 (deftask package []
   (comp
    (download
-    :url "https://raw.githubusercontent.com/jenanwise/gl-matrix/master/dist/gl-matrix.js"
+    :url "https://raw.githubusercontent.com/jenanwise/gl-matrix/v2.3.0-jenanwise/dist/gl-matrix.js"
     :checksum "6082aba84ad522cd32b653c815491568")
    (download
-    :url "https://raw.githubusercontent.com/jenanwise/gl-matrix/master/dist/gl-matrix-min.js"
+    :url "https://raw.githubusercontent.com/jenanwise/gl-matrix/v2.3.0-jenanwise/dist/gl-matrix-min.js"
     :checksum "eb7bc1a30db399a714a957b59cf4da92")
    (sift :move {#"^gl-matrix.js"
                 "cljsjs/gl-matrix/development/gl-matrix.inc.js"
