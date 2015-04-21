@@ -34,4 +34,4 @@
                  })
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.jquery-ui"
-               :requires ["cljsjs.jquery" "cljsjs.jquery-ui"])))
+               :requires ["cljsjs.jquery"])))
