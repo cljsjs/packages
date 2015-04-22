@@ -8,4 +8,4 @@
 
 var PEG = {};
 
-PEG.buildParser = function(grammar) {};
+PEG.buildParser = function(grammar) { return { parse: function(input){} }; };
