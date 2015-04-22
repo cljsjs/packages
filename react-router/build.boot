@@ -19,8 +19,8 @@
        :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
 
 (deftask download-react-router []
-  (download :url      "https://github.com/rackt/react-router/archive/v0.12.4.zip"
-            :checksum "c93ff572d9fa2eb7d0e61e42a52bc951"
+  (download :url      "https://github.com/rackt/react-router/archive/v0.13.2.zip"
+            :checksum "e157777e2d854994aac43448b278b245"
             :unzip    true))
 
 (deftask package []
