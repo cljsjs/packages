@@ -7,7 +7,7 @@
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def auth0-version "6.3.0")
-(def +version+ (str auth0-version "-1-SNAPSHOT"))
+(def +version+ (str auth0-version "-0"))
 (bootlaces! +version+)
 
 (task-options!
