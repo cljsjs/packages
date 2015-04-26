@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.2.1-0")
+(def +version+ "0.3.0-0")
 
 (task-options!
  pom  {:project     'cljsjs/document-register-element
@@ -18,8 +18,8 @@
 
 (deftask package []
   (comp
-    (download :url "https://cdnjs.cloudflare.com/ajax/libs/document-register-element/0.2.1/document-register-element.js")
-    (download :url "https://cdnjs.cloudflare.com/ajax/libs/document-register-element/0.2.1/document-register-element.max.js")
+    (download :url "https://cdnjs.cloudflare.com/ajax/libs/document-register-element/0.3.0/document-register-element.js")
+    (download :url "https://cdnjs.cloudflare.com/ajax/libs/document-register-element/0.3.0/document-register-element.max.js")
     (sift :move {#"document-register-element.max.js" "cljsjs/development/document-register-element.inc.js"
                  #"document-register-element.js" "cljsjs/production/document-register-element.min.inc.js"})
     (sift :include #{#"^cljsjs"})
