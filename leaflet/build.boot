@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.7.3-0")
+(def +version+ "0.7.3-1")
 
 (task-options!
  pom  {:project     'cljsjs/leaflet

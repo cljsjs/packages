@@ -607,7 +607,10 @@ var L = {
     }
   },
   "Map": function () {},
-  "map": function () {},
+  "map": {
+    "setView": function () {},
+    "removeLayer": function () {}
+  },
   "TileLayer": function () {},
   "tileLayer": function () {},
   "ImageOverlay": function () {},
@@ -615,7 +618,9 @@ var L = {
   "Icon": function () {},
   "icon": function () {},
   "Marker": function () {},
-  "marker": function () {},
+  "marker": {
+    "addTo": function () {}
+  },
   "DivIcon": function () {},
   "divIcon": function () {},
   "Popup": function () {},
