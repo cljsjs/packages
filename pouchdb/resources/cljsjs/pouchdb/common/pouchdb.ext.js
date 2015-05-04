@@ -1,4 +1,27 @@
-/* This externs file was created from PouchDB 3.4.0 using
+/** @constructor */
+function PouchDB() {}
+
+/* In order of appearance on http://pouchdb.com/api.html */
+PouchDB.prototype.destroy = function () {};
+PouchDB.prototype.put = function () {};
+PouchDB.prototype.get = function () {};
+PouchDB.prototype.post = function () {};
+PouchDB.prototype.remove = function () {};
+PouchDB.prototype.bulkDocs = function () {};
+PouchDB.prototype.allDocs = function () {};
+PouchDB.prototype.changes = function () {};
+PouchDB.prototype.replicate = function () {};
+PouchDB.prototype.sync = function () {};
+PouchDB.prototype.putAttachment = function () {};
+PouchDB.prototype.getAttachment = function () {};
+PouchDB.prototype.removeAttachment = function () {};
+PouchDB.prototype.query = function () {};
+PouchDB.prototype.viewCleanup = function () {};
+PouchDB.prototype.info = function () {};
+PouchDB.prototype.compact = function () {};
+PouchDB.prototype.revsDiff = function () {};
+
+/* This part of the externs file was created from PouchDB 3.4.0 using
  * http://www.dotnetwise.com/Code/Externs/
  */
 var PouchDB = {
