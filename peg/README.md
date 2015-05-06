@@ -1,8 +1,8 @@
-# cljsjs/jquery
+# cljsjs/peg
 
 [](dependency)
 ```clojure
-[cljsjs/jquery "1.9.1-0"] ;; latest release
+[cljsjs/peg "0.8.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,9 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.jquery))
+  (:require cljsjs.peg))
 ```
+
+Usage documentation [for PEG.js](http://pegjs.org/).
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies

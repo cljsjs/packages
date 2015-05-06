@@ -13,8 +13,8 @@
  pom {:project     'cljsjs/three
       :version     +version+
       :description "JavaScript 3D library"
-      :url         "http://d3js.org/"
-      :scm         {:url "http://threejs.org/"}
+      :url         "http://threejs.org/"
+      :scm         {:url "https://github.com/mrdoob/three.js"}
       :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (deftask package []

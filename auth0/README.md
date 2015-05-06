@@ -1,8 +1,8 @@
-# cljsjs/jquery
+# cljsjs/auth0
 
 [](dependency)
 ```clojure
-[cljsjs/jquery "1.9.1-0"] ;; latest release
+[cljsjs/auth0 "6.3.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,9 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.jquery))
+  (:require cljsjs.auth0))
 ```
+
+Documentation for the auth0 lib can be found [on its github page](https://github.com/auth0/auth0.js)
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies

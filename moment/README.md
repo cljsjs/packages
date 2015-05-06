@@ -17,7 +17,7 @@ you can require the packaged library like so:
 
 ## Locales
 
-Each locale from Moment.js is provided as separate foreign dependancy namespace.
+Each locale from Moment.js is provided as separate foreign dependency namespace.
 You should be able to set Moment to use locales if you first require them.
 
 ```clojure

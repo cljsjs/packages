@@ -28,9 +28,9 @@
   (comp
     (download-react-bootstrap)
     (sift :move {#"^react-bootstrap-bower-.*/react-bootstrap.js"
-                 "cljsjs/development/react-bootstrap.inc.js"
+                 "cljsjs/react-bootstrap/development/react-bootstrap.inc.js"
                  #"^react-bootstrap-bower-.*/react-bootstrap.min.js"
-                 "cljsjs/production/react-bootstrap.min.inc.js"})
+                 "cljsjs/react-bootstrap/production/react-bootstrap.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-bootstrap"
                :requires ["cljsjs.react"])))
