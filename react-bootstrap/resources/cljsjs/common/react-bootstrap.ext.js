@@ -1,7 +1,7 @@
 // generated with http://www.dotnetwise.com/Code/Externs/
 // to regenerate from the tool:
 // first include http://fb.me/react-0.13.1.js
-// then https://raw.githubusercontent.com/react-bootstrap/react-bootstrap-bower/v0.20.3/react-bootstrap.js
+// then https://raw.githubusercontent.com/react-bootstrap/react-bootstrap-bower/v0.21.2/react-bootstrap.js
 
 var ReactBootstrap = {
     "Accordion": function () {},
@@ -35,6 +35,7 @@ var ReactBootstrap = {
     "ButtonGroup": function () {},
     "ButtonToolbar": function () {},
     "CollapsableNav": function () {},
+    "CollapsibleNav": function () {},
     "Carousel": function () {},
     "CarouselItem": function () {},
     "Col": function () {},
@@ -55,7 +56,30 @@ var ReactBootstrap = {
         "_removeEndEventListener": function () {},
         "dimension": function () {},
         "isExpanded": function () {},
-        "getCollapsableClassSet": function () {}
+        "getCollapsibleClassSet": function () {},
+        "getCollapsableClassSet": function () {},
+        "getCollapsibleDOMNode": function () {},
+        "getCollapsibleDimensionValue": function () {},
+        "componentDidMount": function () {}
+    },
+    "CollapsibleMixin": {
+        "propTypes": {
+            "defaultExpanded": function () {},
+            "expanded": function () {}
+        },
+        "getInitialState": function () {},
+        "componentWillUpdate": function () {},
+        "componentDidUpdate": function () {},
+        "_afterWillUpdate": function () {},
+        "_checkStartAnimation": function () {},
+        "_checkToggleCollapsing": function () {},
+        "_handleExpand": function () {},
+        "_handleCollapse": function () {},
+        "_addEndEventListener": function () {},
+        "_removeEndEventListener": function () {},
+        "dimension": function () {},
+        "isExpanded": function () {},
+        "getCollapsibleClassSet": function () {}
     },
     "DropdownButton": function () {},
     "DropdownMenu": function () {},
@@ -118,7 +142,7 @@ var ReactBootstrap = {
     "TabPane": function () {},
     "Tooltip": function () {},
     "Well": function () {},
-    "constants": {
+    "styleMaps": {
         "CLASSES": {
             "alert": {},
             "button": {},
@@ -151,6 +175,7 @@ var ReactBootstrap = {
             "tabs": {},
             "pills": {}
         },
+        "addStyle": function () {},
         "SIZES": {
             "large": {},
             "medium": {},
