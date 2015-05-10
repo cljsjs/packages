@@ -11,7 +11,7 @@
 (task-options!
  pom  {:project     'cljsjs/openlayers
        :version     +version+
-       :description "Openlayers packaged up with Google Closure externs"
+       :description "A high-performance, feature-packed library for all your mapping needs"
        :url         "http://openlayers.org/"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"BSD" "http://opensource.org/licenses/BSD-2-Clause"}})

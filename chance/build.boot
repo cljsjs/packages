@@ -12,7 +12,7 @@
 (task-options!
  pom  {:project     'cljsjs/chance
        :version     +version+
-       :description "Chance.js packaged up with Google Closure externs"
+       :description "Chance is a minimalist generator of random strings, numbers, etc"
        :url         "http://chancejs.com/"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})

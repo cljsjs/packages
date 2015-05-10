@@ -13,7 +13,7 @@
   pom  {:project     'cljsjs/flot
         :version     +version+
         :scm         {:url "https://github.com/cljsjs/packages"}
-        :description "flot packaged up with Google Closure externs"
+        :description "Attractive JavaScript plotting for jQuery"
         :url         "http://www.flotcharts.org/"
         :license     {"MIT" "http://opensource.org/licenses/MIT"}
         })

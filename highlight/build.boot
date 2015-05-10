@@ -13,7 +13,7 @@
   pom  {:project     'cljsjs/highlight
         :version     +version+
         :scm         {:url "https://github.com/cljsjs/packages"}
-        :description "Javascript syntax highlighter https://highlightjs.org/"
+        :description "Javascript syntax highlighter"
         :url         "https://highlightjs.org/"
         :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
 

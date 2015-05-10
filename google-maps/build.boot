@@ -11,7 +11,7 @@
 (task-options!
  pom  {:project     'cljsjs/google-maps
        :version     +version+
-       :description "Google Maps ext lib"
+       :description "Google Maps Javascript API"
        :url         "https://developers.google.com/maps/documentation/javascript/"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"Google Maps ToS" "https://www.google.com/intl/en_us/help/terms_maps.html"}})

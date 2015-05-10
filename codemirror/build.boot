@@ -13,7 +13,7 @@
   pom  {:project     'cljsjs/codemirror
         :version     +version+
         :scm         {:url "https://github.com/cljsjs/packages"}
-        :description "Javascript syntax highlighter https://codemirror.net/"
+        :description "CodeMirror is a versatile text editor implemented in JavaScript for the browser"
         :url         "https://codemirror.net/"
         :license     {"MIT" "https://github.com/codemirror/CodeMirror/blob/master/LICENSE"}})
 

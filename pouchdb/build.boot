@@ -12,7 +12,7 @@
 (task-options!
  pom {:project 'cljsjs/pouchdb
       :version +version+
-      :description "PouchDB packaged up with Google Closure externs"
+      :description "PouchDB is an open-source JavaScript database inspired by Apache CouchDB that is designed to run well within the browser"
       :url "http://pouchdb.com/"
       :scm {:url "https://github.com/cljsjs/packages"}
       :license {"Apache" "https://github.com/pouchdb/pouchdb/raw/master/LICENSE"}})

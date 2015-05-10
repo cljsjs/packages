@@ -12,7 +12,7 @@
 (task-options!
  pom  {:project     'cljsjs/jquery-ui
        :version     +version+
-       :description "jQuery-ui packaged with google closure externs"
+       :description "jQuery UI is a curated set of user interface interactions, effects, widgets, and themes"
        :url         "http://jqueryui.com"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})

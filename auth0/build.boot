@@ -13,7 +13,7 @@
 (task-options!
  pom { :project     'cljsjs/auth0
        :version     +version+
-       :description "Auth0 JS Lib"
+       :description "auth0.js is a UI-less client-side library for Auth0"
        :url         "https://auth0.com/docs/auth0js"
        :scm         { :url "https://github.com/auth0/auth0.js" }
        :license     { "MIT" "https://github.com/auth0/auth0.js/blob/master/LICENSE.txt" }})

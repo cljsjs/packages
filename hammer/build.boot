@@ -11,7 +11,7 @@
 (task-options!
  pom  {:project     'cljsjs/hammer
        :version     +version+
-       :description "Hammer.js packaged up with Google Closure externs"
+       :description "A javascript library for multi-touch gestures"
        :url         "http://hammerjs.github.io/"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})

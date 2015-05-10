@@ -23,7 +23,7 @@
 (task-options!
  pom  {:project     'cljsjs/react
        :version     +version+
-       :description "React.js packaged up with Google Closure externs"
+       :description "A Javascript library for building user interfaces"
        :url         "http://facebook.github.io/react/"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})

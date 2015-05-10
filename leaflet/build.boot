@@ -11,7 +11,7 @@
 (task-options!
  pom  {:project     'cljsjs/leaflet
        :version     +version+
-       :description "Leaflet.js packaged up with Google Closure externs"
+       :description "JavaScript Library for Mobile-Friendly Interactive Maps"
        :url         "http://leafletjs.com/"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})

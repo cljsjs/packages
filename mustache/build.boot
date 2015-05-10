@@ -11,7 +11,7 @@
 (task-options!
  pom  {:project     'cljsjs/mustache
        :version     +version+
-       :description "Mustache.js packaged up with Google Closure externs"
+       :description "Minimal templating with {{mustaches}} in JavaScript"
        :url         "https://github.com/janl/mustache.js/"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})

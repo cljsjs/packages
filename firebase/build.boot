@@ -11,7 +11,7 @@
 (task-options!
  pom  {:project     'cljsjs/firebase
        :version     +version+
-       :description "Firebase.js packaged up with Google Closure externs"
+       :description "Javascript client for Firebase.com"
        :url         "https://www.firebase.com/docs/web/api/"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"Firebase ToS" "https://www.firebase.com/terms/terms-of-service.html"}})

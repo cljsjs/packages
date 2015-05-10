@@ -21,7 +21,7 @@
 (task-options!
   pom {:project     'cljsjs/mui
        :version     +version+
-       :description "mui"
+       :description "MUI is a lightweight HTML, CSS and JS framework for sites that follow Google's Material Design guidelines."
        :url         "https://www.muicss.com"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})

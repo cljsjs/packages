@@ -11,7 +11,7 @@
 (task-options!
  pom  {:project     'cljsjs/stripe
        :version     +version+
-       :description "Stripe js ext lib"
+       :description "Stripe.com Javascript SDK"
        :url         "https://stripe.com/docs/stripe.js"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"Stripe  ToS" "https://stripe.com/us/terms"}})

@@ -11,7 +11,7 @@
 (task-options!
  pom  {:project     'cljsjs/heap
        :version     +version+
-       :description "Heap  js ext lib"
+       :description "Javascript API for Heap analytics"
        :url         "https://heapanalytics.com/docs/custom-api"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"Heap  ToS" "https://heapanalytics.com/terms"}})

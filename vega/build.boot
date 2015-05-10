@@ -28,7 +28,7 @@
 (task-options!
   pom {:project     'cljsjs/vega
        :version     +version+
-       :description "vega"
+       :description "Vega is a declarative format for creating, saving, and sharing visualization designs"
        :url         "https://vega.github.io/"
        :scm         {:url "https://github.com/cljsjs/packages"}})
 
