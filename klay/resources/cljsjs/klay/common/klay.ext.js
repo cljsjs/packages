@@ -4,13 +4,8 @@
  * @externs
  */
 
-// var klayregister;
-// var klaycallback;
-
 var $klay = {};
 
-//var $klay = {
-//   layout: function (obj) {}
-//};
-
-var $klay.layout = function (obj) {};
+var $klay = {
+  layout: function(obj) {}
+};
