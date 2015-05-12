@@ -610,20 +610,20 @@ var L = {
   "map": {
     "setView": function () {},
     "setZoom": function () {},
-    "setZoomIn": function () {}
-    "setZoomOut": function () {}
-    "setZoomAround": function () {}
-    "fitBounds": function () {}
-    "fitWorld": function () {}
-    "panTo": function () {}
-    "panInsideBounds": function () {}
-    "panBy": function () {}
-    "invalidateSize": function () {}
-    "setMaxBounds": function () {}
-    "locate": function () {}
-    "stopLocate": function () {}
-    "remove": function () {}
-    "removeLayer": function () {}
+    "setZoomIn": function () {},
+    "setZoomOut": function () {},
+    "setZoomAround": function () {},
+    "fitBounds": function () {},
+    "fitWorld": function () {},
+    "panTo": function () {},
+    "panInsideBounds": function () {},
+    "panBy": function () {},
+    "invalidateSize": function () {},
+    "setMaxBounds": function () {},
+    "locate": function () {},
+    "stopLocate": function () {},
+    "remove": function () {},
+    "removeLayer": function () {},
   },
   "TileLayer": function () {},
   "tileLayer": function () {},
@@ -633,33 +633,33 @@ var L = {
   "icon": function () {},
   "Marker": function () {},
   "marker": {
-    "addTo": function () {}
-    "getLatLng": function () {}
-    "setLatLng": function () {}
-    "setIcon": function () {}
-    "setZIndexOffset": function () {}
-    "setOpacity": function () {}
-    "update": function () {}
-    "bindPopup": function () {}
-    "unbindPopup": function () {}
-    "openPopup": function () {}
-    "getPopup": function () {}
-    "closePopup": function () {}
-    "togglePopup": function () {}
-    "setPopupContent": function () {}
-    "toGeoJSON": function () {}
+    "addTo": function () {},
+    "getLatLng": function () {},
+    "setLatLng": function () {},
+    "setIcon": function () {},
+    "setZIndexOffset": function () {},
+    "setOpacity": function () {},
+    "update": function () {},
+    "bindPopup": function () {},
+    "unbindPopup": function () {},
+    "openPopup": function () {},
+    "getPopup": function () {},
+    "closePopup": function () {},
+    "togglePopup": function () {},
+    "setPopupContent": function () {},
+    "toGeoJSON": function () {},
   },
   "DivIcon": function () {},
   "divIcon": function () {},
   "Popup": function () {},
   "popup": function () {},
-    "addTo": function () {}
-    "openOn": function () {}
-    "setLatLng": function () {}
-    "getLatLng": function () {}
-    "setContent": function () {}
-    "getContent": function () {}
-    "update": function () {}
+    "addTo": function () {},
+    "openOn": function () {},
+    "setLatLng": function () {},
+    "getLatLng": function () {},
+    "setContent": function () {},
+    "getContent": function () {},
+    "update": function () {},
 },
   "DivIcon"
   "LayerGroup": function () {},
