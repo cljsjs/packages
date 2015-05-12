@@ -652,7 +652,7 @@ var L = {
   "DivIcon": function () {},
   "divIcon": function () {},
   "Popup": function () {},
-  "popup": function () {},
+  "popup": {
     "addTo": function () {},
     "openOn": function () {},
     "setLatLng": function () {},
@@ -660,8 +660,7 @@ var L = {
     "setContent": function () {},
     "getContent": function () {},
     "update": function () {},
-},
-  "DivIcon"
+   },
   "LayerGroup": function () {},
   "layerGroup": function () {},
   "FeatureGroup": function () {},
