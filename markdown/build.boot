@@ -1,7 +1,7 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.4.6" :scope "test"]])
+                  [cljsjs/boot-cljsjs "0.4.8" :scope "test"]])
 
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
@@ -19,5 +19,13 @@
 
 (deftask package []
   (comp
-    (deps-cljs :name "cljsjs.markdown")
-    (sift :include #{#"^cljsjs" #"^deps\.cljs$"})))
+    (download
+      :url (str "https://github.com/evilstreak/markdown-js/releases/download/v"
+             markdown-version "/markdown-browser-" markdown-version ".tgz")
+      :decompress true
+      :compression-format "gz"
+      :archive-format "tar")
+    (sift :move {#"^markdown-browser-.*/markdown\.js" "cljsjs/development/markdown.inc.js"
+                 #"^markdown-browser-.*/markdown\.min\.js" "cljsjs/production/markdown.min.inc.js"})
+    (sift :include #{#"^cljsjs"})
+    (deps-cljs :name "cljsjs.markdown")))
