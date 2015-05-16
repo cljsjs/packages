@@ -19,7 +19,7 @@ you can require the packaged library like so:
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
 
-Note: This extern pulls directly from the github master branch as there are no released downloads. If you know of one please submit a PR. 
+Note: This extern pulls directly from a commit for 0.0.1 as there are no released downloads. If you know of one please submit a PR. 
 
 ## Example usage
 
