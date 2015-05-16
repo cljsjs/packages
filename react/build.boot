@@ -39,8 +39,7 @@
     (deps-cljs :name "cljsjs.react")))
 
 (deftask package-with-addons []
-  (task-options! pom {:project 'cljsjs/react-with-addons
-                      :description "React.js with addons packaged up with Google Closure externs"}
+  (task-options! pom {:project 'cljsjs/react-with-addons}
                  push {:ensure-branch nil})
   (comp
     (download :url (-> urls :with-addons :dev) :checksum (-> urls :with-addons :dev-checksum))
