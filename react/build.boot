@@ -6,19 +6,19 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def react-version "0.13.2")
+(def react-version "0.13.3")
 (def +version+ (str react-version "-0"))
 (bootlaces! +version+)
 
 (def urls
   {:normal {:dev (str "http://fb.me/react-" react-version ".js")
-            :dev-checksum "2B9F43ABEFBD9DB91C3A0EBD4EBEE821"
+            :dev-checksum "EA609A7373B6EF48B3FC3F403C7ED870"
             :min (str "http://fb.me/react-" react-version ".min.js")
-            :min-checksum "994CA2135869A3925DF50D71BBDE4C3D"}
+            :min-checksum "C3B6B1BDF51C9EF4BA3473A2E1DCB83A"}
    :with-addons {:dev (str "http://fb.me/react-with-addons-" react-version ".js")
-                 :dev-checksum "0B20E0F0EA8465713B22B7BB7D620048"
+                 :dev-checksum "634ECBF4118F756CDED92ACD2EFEC834"
                  :min (str "http://fb.me/react-with-addons-" react-version ".min.js")
-                 :min-checksum "ABBFA39284749DBBAC827B9EA9A84B78"}})
+                 :min-checksum "7FE3B6790A5DB124191DC3D6669AFE38"}})
 
 (task-options!
  pom  {:project     'cljsjs/react
