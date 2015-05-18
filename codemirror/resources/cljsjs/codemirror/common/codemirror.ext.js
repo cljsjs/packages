@@ -16,6 +16,18 @@ CodeMirrorObj.prototype.getValue = function(){};
  */
 CodeMirrorObj.prototype.setValue = function(value){};
 /**
+ * Register an event handler.
+ * @param {string} event
+ * @param {function()} handler
+ */
+CodeMirrorObj.prototype.on = function (event, handler) {};
+/**
+ * Deregister an event handler.
+ * @param {string} event
+ * @param {function()} handler
+ */
+CodeMirrorObj.prototype.off = function (event, handler) {};
+/**
  * Get the currently selected code.
  * @return {string}
  */
