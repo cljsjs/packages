@@ -1,14 +1,14 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[adzerk/bootlaces          "0.1.11" :scope "test"]
-                  [cljsjs/boot-cljsjs        "0.4.6"  :scope "test"]
-                  [cljsjs/react              "0.13.0-0"]
-                  [cljsjs/object-assign-shim "0.1.0-0"]])
+                  [cljsjs/boot-cljsjs        "0.4.8"  :scope "test"]
+                  [cljsjs/react              "0.13.3-0"]
+                  [cljsjs/object-assign-shim "0.1.0-1"]])
 
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.1.2-2")
+(def +version+ "0.2.0-0")
 (bootlaces! +version+)
 
 (task-options!
@@ -20,8 +20,8 @@
        :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
 
 (deftask download-fixed-data-table []
-  (download :url      "https://github.com/facebook/fixed-data-table/archive/v0.1.2.zip"
-            :checksum "36d76016a61911b838c74470c84e6d27"
+  (download :url      "https://github.com/facebook/fixed-data-table/archive/v0.2.0.zip"
+            :checksum "d0b0368f02018333d366271535a5d8bf"
             :unzip    true))
 
 (deftask package []
