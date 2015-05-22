@@ -7,7 +7,7 @@
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def codemirror-version "5.1.0")
-(def +version+ (str codemirror-version "-0"))
+(def +version+ (str codemirror-version "-1"))
 
 (task-options!
   pom  {:project     'cljsjs/codemirror
@@ -46,7 +46,7 @@
   (comp
     (download :url (format "https://github.com/codemirror/CodeMirror/archive/%s.zip" codemirror-version)
               :unzip true
-              :checksum "5471f9d6dca57a60721e2913ca6a3d96")
+              :checksum "6eb686a8475ed0f0eec5129256028c5b")
     (sift :move {#"^CodeMirror-([\d\.]*)/lib/codemirror\.js"      "cljsjs/codemirror/development/codemirror.inc.js"
                  #"^CodeMirror-([\d\.]*)/lib/codemirror\.css"     "cljsjs/codemirror/development/codemirror.css"
                  #"^CodeMirror-([\d\.]*)/mode/(.*)/(.*).js"       "cljsjs/codemirror/common/mode/$2.js"})
