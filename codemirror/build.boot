@@ -7,7 +7,7 @@
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def codemirror-version "5.1.0")
-(def +version+ (str codemirror-version "-1"))
+(def +version+ (str codemirror-version "-2"))
 
 (task-options!
   pom  {:project     'cljsjs/codemirror
