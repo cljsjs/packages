@@ -16,5 +16,5 @@ requiring parts of the Closure library itself:
             [kemia.model.Atom :as Atom]))   ; Kemia
 ```
 
-
+Kemia homepage can be found [here](http://kemia.github.io/)
 

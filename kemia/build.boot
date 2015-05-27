@@ -21,7 +21,7 @@
     (download :url "https://github.com/kemia/kemia/archive/v0.2.zip"
               :checksum "DED3B45E53C56188758F964EDAB08344"
               :unzip true)
-    (sift :move {#"^kemia-([\d\.]*)/kemia/" "cljsjs/development/kemia/"
-                 #"^kemia-([\d\.]*)/css/kemia.css" "cljsjs/common/kemia.inc.css"})
+    (sift :move {#"^kemia-([\d\.]*)/kemia/" "cljsjs/kemia/development/"
+                 #"^kemia-([\d\.]*)/css/kemia.css" "cljsjs/kemia/common/kemia.inc.css"})
     (sift :include #{#"^cljsjs/" #"deps.cljs"})))
 
