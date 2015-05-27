@@ -4,7 +4,7 @@ A cljs interface to [juration](https://github.com/domchristie/juration) - A simp
 
 [](dependency)
 ```clojure
-[cljsjs/juration "0.0.1"] ;; latest release
+[cljsjs/juration "0.0.1-0"] ;; latest release
 ```
 [](/dependency)
 
