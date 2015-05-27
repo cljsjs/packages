@@ -23,10 +23,10 @@
 (deftask package []
   (comp
     (download :url      "https://raw.githubusercontent.com/domchristie/juration/531b9d35a1e7af5a946f3da920b9d562bdca3fd2/juration.js"
-              :name 	  "juration.js"
-	            :unzip    false)
+              :name     "juration.js"
+              :unzip    false)
     (minify :in "juration.js"     :out "juration.min.js")
     (sift   :move {#"juration.js" "cljsjs/juration/development/juration.inc.js"
-		               #"juration.min.js" "cljsjs/juration/production/juration.min.inc.js"})
+                   #"juration.min.js" "cljsjs/juration/production/juration.min.inc.js"})
     (sift   :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.juration")))
