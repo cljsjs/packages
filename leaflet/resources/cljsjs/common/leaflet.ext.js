@@ -608,6 +608,7 @@ var L = {
   },
   "Map": function () {},
   "map": {
+    "addControl": function () {},
     "setView": function () {},
     "setZoom": function () {},
     "setZoomIn": function () {},
@@ -638,7 +639,9 @@ var L = {
   "tileLayer": function () {},
   "ImageOverlay": function () {},
   "imageOverlay": function () {},
-  "Icon": function () {},
+  "Icon": {
+    "Default": function () {},
+  },
   "icon": function () {},
   "Marker": function () {},
   "marker": {
@@ -671,7 +674,9 @@ var L = {
     "update": function () {},
    },
   "LayerGroup": function () {},
-  "layerGroup": function () {},
+  "layerGroup": {
+    "addLayer": function () {},
+   },
   "FeatureGroup": function () {},
   "featureGroup": function () {},
   "Path": function () {},
@@ -744,6 +749,8 @@ var L = {
   "Draggable": function () {},
   "Handler": function () {},
   "Control": function () {},
-  "control": function () {},
+  "control": {
+      "layers": {},
+  },
   "PosAnimation": function () {}
 }
