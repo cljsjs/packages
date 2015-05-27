@@ -28,6 +28,6 @@
              :compression-format "gz"
              :archive-format "tar")
    (sift :move {#"^PapaParse-.*/papaparse.js" "cljsjs/development/papaparse.inc.js"
-                #"^PapaParse-.*/papaparse.min.js" "cljsjs/development/papaparse.min.inc.js"})
+                #"^PapaParse-.*/papaparse.min.js" "cljsjs/production/papaparse.min.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.papaparse")))
