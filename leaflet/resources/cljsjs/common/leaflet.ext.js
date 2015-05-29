@@ -750,7 +750,11 @@ var L = {
   "Handler": function () {},
   "Control": function () {},
   "control": {
-      "layers": {},
+    "layers": {
+      "addOverlay": function () {},
+      "addBaseLayer": function () {},
+      "removeLayer": function () {},
+      },
   },
   "PosAnimation": function () {}
 }
