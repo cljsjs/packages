@@ -24,9 +24,8 @@
     (download :url "https://github.com/openlayers/ol3/archive/v3.5.0.zip"
               :checksum "02CB2E53BF9E29A78A3FE0F008B05563"
               :unzip true)
-    (sift :move {#"^v([\d\.]*)/ol/ol/" "cljsjs/development/openlayers/ol/"
-                 #"^v([\d\.]*)/ol.ext/" "cljsjs/development/openlayers/ol.ext/"
-                 #"^v([\d\.]*)/css/ol.css" "cljsjs/common/openlayers.inc.css"
-                 #"^ol3-([\d\.]*)/externs/oli.js" "cljsjs/common/openlayersi.ext.js"
-                 #"^ol3-([\d\.]*)/externs/olx.js" "cljsjs/common/openlayersx.ext.js"})
+    (sift :move {#"^v([\d\.]*)/ol/ol/" "cljsjs/openlayers/development/ol/"
+                 #"^v([\d\.]*)/ol\.ext/" "cljsjs/openlayers/development/ol.ext/"
+                 #"^v([\d\.]*)/css/ol\.css" "cljsjs/openlayers/common/openlayers.inc.css"
+                 #"^ol3-([\d\.]*)/externs/(.*)\.js" "cljsjs/openlayers/common/$2.ext.js"})
     (sift :include #{#"^cljsjs/" #"deps.cljs"})))
