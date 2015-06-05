@@ -19,7 +19,7 @@
 (deftask package []
   (comp
     (download :url "https://github.com/gkindel/CSV-JS/archive/v1.1.1.zip"
-              :checksum "caac853bc54bd82121ebc0bc06b13514"
+              :checksum "3524058521147def3fddcc6c93d63249"
               :unzip true)
     (sift :move {#"^CSV-JS-.*/csv.js" "cljsjs/development/csv.inc.js"})
     (minify :in "cljsjs/development/csv.inc.js" :out "cljsjs/production/csv.min.inc.js")
