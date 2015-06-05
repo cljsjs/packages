@@ -1,12 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.4.6" :scope "test"]])
+                  [cljsjs/boot-cljsjs "0.4.8" :scope "test"]])
 
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "3.3.0-0")
+(def +version+ "3.5.0-0")
 
 (task-options!
  pom  {:project     'cljsjs/openlayers
@@ -18,11 +18,11 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/openlayers/ol3/releases/download/v3.3.0/v3.3.0.zip"
-              :checksum "0d12356abb8e4ac6d3d3d955e1abbd47"
+    (download :url "https://github.com/openlayers/ol3/releases/download/v3.5.0/v3.5.0.zip"
+              :checksum "7A2A23F1ACFCBE9E5CC9EF0F710FE937"
               :unzip true)
-    (download :url "https://github.com/openlayers/ol3/archive/v3.3.0.zip"
-              :checksum "cc552d354453d0ac7e1ae6fb849d9766"
+    (download :url "https://github.com/openlayers/ol3/archive/v3.5.0.zip"
+              :checksum "02CB2E53BF9E29A78A3FE0F008B05563"
               :unzip true)
     (sift :move {#"^v([\d\.]*)/ol/ol/" "cljsjs/development/openlayers/ol/"
                  #"^v([\d\.]*)/ol.ext/" "cljsjs/development/openlayers/ol.ext/"
