@@ -1,1 +1,1 @@
-{:libs ["cljsjs/development/kemia/"]}
+{:libs ["cljsjs/kemia/development/"]}
