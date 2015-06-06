@@ -6,17 +6,17 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def mui-version "0.0.5")
+(def mui-version "0.1.8")
 (def +version+ (str mui-version "-0"))
 (bootlaces! +version+)
 
 (def urls
-  {:normal {:min (str "http://cdn.muicss.com/mui-" mui-version "/js/mui.min.js")
-            :min-checksum "e486937f427f8eb71a930345d1987670"
-            :dev (str "http://cdn.muicss.com/mui-" mui-version "/js/mui.js")
-            :dev-checksum "5a003cb1cd33dc96515450fe79ce84e4"
+  {:normal {:dev (str "http://cdn.muicss.com/mui-" mui-version "/js/mui.js")
+            :dev-checksum "5FF973BFB4FD4C9318738EFADD890895"
+            :min (str "http://cdn.muicss.com/mui-" mui-version "/js/mui.min.js")
+            :min-checksum "455A8EC05A55093D00FD604122DC92B0"
             :css (str "http://cdn.muicss.com/mui-" mui-version "/css/mui.min.css")
-            :css-checksum "35df6c80008b7f810a7abb0b78be42d1"}})
+            :css-checksum "A858727D4F7EE0A3F4B357C65A8FBBA6"}})
 
 (task-options!
   pom {:project     'cljsjs/mui
