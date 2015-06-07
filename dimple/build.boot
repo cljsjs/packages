@@ -24,8 +24,8 @@
              :checksum "FD30B182DBF07FF8EF314CB1C734DC82")
    (download :url "https://raw.githubusercontent.com/PMSI-AlignAlytics/dimple/2.1.2/dist/dimple.v2.1.2.min.js"
              :checksum "C5D7EF47BA2445A130A00F3A9ABC1B78")
-   (sift :move {#"^dimple\.v([\d+\.]*).js" "cljsjs/development/dimple.inc.js"
-                #"^dimple\.v([\d+\.]*).min.js" "cljsjs/production/dimple.min.inc.js"})
+   (sift :move {#"^dimple\.v([\d+\.]*).js" "cljsjs/dimple/development/dimple.inc.js"
+                #"^dimple\.v([\d+\.]*).min.js" "cljsjs/dimple/production/dimple.min.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.dimple"
               :requires ["cljsjs.d3"])))
