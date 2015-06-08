@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "3.5.0-0")
+(def +version+ "3.5.0-1")
 
 (task-options!
  pom  {:project     'cljsjs/openlayers
