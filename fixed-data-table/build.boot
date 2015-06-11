@@ -8,7 +8,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.2.0-0")
+(def +version+ "0.3.0-0")
 (bootlaces! +version+)
 
 (task-options!
@@ -20,8 +20,8 @@
        :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
 
 (deftask download-fixed-data-table []
-  (download :url      "https://github.com/facebook/fixed-data-table/archive/v0.2.0.zip"
-            :checksum "d0b0368f02018333d366271535a5d8bf"
+  (download :url      "https://github.com/facebook/fixed-data-table/archive/v0.3.0.zip"
+            :checksum "3C74FDCC7D87E2AFFE836889B351281C"
             :unzip    true))
 
 (deftask package []
