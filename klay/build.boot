@@ -15,7 +15,7 @@
        :description "A layer-based layout algorithm, particularly suited for node-link diagrams with an inherent direction and ports."
        :url         "https://github.com/OpenKieler/klayjs"
        :scm         {:url "https://github.com/OpenKieler/klayjs"}
-       :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
+       :license     {"EPL" "http://www.eclipse.org/legal/epl-v10.html"}})
 
 (deftask package []
          (comp

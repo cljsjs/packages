@@ -4,8 +4,6 @@
  * @externs
  */
 
-var $klay = {};
-
 var $klay = {
   layout: function(obj) {}
 };
