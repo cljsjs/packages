@@ -18,11 +18,11 @@
        :license     {"EPL" "http://www.eclipse.org/legal/epl-v10.html"}})
 
 (deftask package []
-         (comp
-           (download :url "https://github.com/OpenKieler/klayjs/archive/0.3.2.zip"
-                     :unzip true)
-           (sift :move {#"^klayjs-.*/klay.js" "cljsjs/development/klay.inc.js"})
-           (minify :in "cljsjs/development/klay.inc.js"
-                   :out "cljsjs/production/klay.min.inc.js")
-           (sift :include #{#"^cljsjs"})
-           (deps-cljs :name "cljsjs.klay")))
+  (comp
+    (download :url "https://github.com/OpenKieler/klayjs/archive/0.3.2.zip"
+              :unzip true)
+    (sift :move {#"^klayjs-.*/klay.js" "cljsjs/development/klay.inc.js"})
+    (minify :in "cljsjs/development/klay.inc.js"
+            :out "cljsjs/production/klay.min.inc.js")
+    (sift :include #{#"^cljsjs"})
+    (deps-cljs :name "cljsjs.klay")))
