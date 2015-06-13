@@ -1,7 +1,7 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[adzerk/bootlaces   "0.1.10" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.4.6"  :scope "test"]])
+                  [cljsjs/boot-cljsjs "0.5.0"  :scope "test"]])
 
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
@@ -24,11 +24,11 @@
               :unzip true)
     (sift :move {#"^ChemDoodleWeb-([\d\.]*)/src/ChemDoodleWeb-unpacked.js"
                  "cljsjs/chemdoodle/development/chemdoodle.inc.js"
-                 
-                 #"^ChemDoodleWeb-([\d\.]*)/install/ChemDoodleWeb.css" 
+
+                 #"^ChemDoodleWeb-([\d\.]*)/install/ChemDoodleWeb.css"
                  "cljsjs/chemdoodle/common/ChemDoodleWeb.css"
-                 
-                 #"^ChemDoodleWeb-([\d\.]*)/install/ChemDoodleWeb.js" 
+
+                 #"^ChemDoodleWeb-([\d\.]*)/install/ChemDoodleWeb.js"
                  "cljsjs/chemdoodle/production/chemdoodle.min.inc.js"
                  })
     (sift :include #{#"^cljsjs"})
