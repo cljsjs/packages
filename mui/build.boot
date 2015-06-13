@@ -24,8 +24,8 @@
     (download :url (str "https://github.com/muicss/mui/archive/" mui-version ".zip")
               :checksum "F90B4BC1D38EA19B51A691E49F46EFBE"
               :unzip true)
-    (sift :move {#"^mui-[\d.]+/dist/js/mui.js$" "cljsjs/development/mui.inc.js"
-                 #"^mui-[\d.]+/dist/js/mui.min.js$" "cljsjs/production/mui.min.inc.js"
-                 #"^mui-[\d.]+/dist/css/mui.min.css$" "cljsjs/common/mui.min.inc.css"})
+    (sift :move {#"^mui-[\d.]+/dist/js/mui\.js$"        "cljsjs/development/mui.inc.js"
+                 #"^mui-[\d.]+/dist/js/mui\.min\.js$"   "cljsjs/production/mui.min.inc.js"
+                 #"^mui-[\d.]+/dist/css/mui\.min\.css$" "cljsjs/common/mui.min.inc.css"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.mui" :no-externs true)))
