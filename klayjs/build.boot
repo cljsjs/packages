@@ -10,7 +10,7 @@
 (bootlaces! +version+)
 
 (task-options!
-  pom {:project     'cljsjs/klay
+  pom {:project     'cljsjs/klayjs
        :version     +version+
        :description "A layer-based layout algorithm, particularly suited for node-link diagrams with an inherent direction and ports."
        :url         "https://github.com/OpenKieler/klayjs"
@@ -25,4 +25,4 @@
     (minify :in "cljsjs/development/klay.inc.js"
             :out "cljsjs/production/klay.min.inc.js")
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.klay")))
+    (deps-cljs :name "cljsjs.klayjs")))

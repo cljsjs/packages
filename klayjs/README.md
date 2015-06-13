@@ -1,8 +1,8 @@
-# cljsjs/klay
+# cljsjs/klayjs
 
 [](dependency)
 ```clojure
-[cljsjs/klay "0.3.2-0"] ;; latest release
+[cljsjs/klayjs "0.3.2-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,14 +12,14 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.klay))
+  (:require cljsjs.klayjs))
 ```
 
 # Sample usage
 
 ```clojure
 (ns my.namespace
-  (:require [cljsjs.klay]))
+  (:require [cljsjs.klayjs]))
 
 (enable-console-print!)
 
