@@ -23,6 +23,6 @@
               :checksum "C0B4DE6D1BCF1FD51C34E29ADB556D2B"
               :unzip true)
     (sift :move {#"^device\.[^\/]*/lib/device.js"      "cljsjs/device/development/device.inc.js"
-                 #"^device\.[^\/]*/device.min.js" "cljsjs/device/production/device.min.inc.js"})
+                 #"^device\.[^\/]*/lib/device.min.js" "cljsjs/device/production/device.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.device")))
