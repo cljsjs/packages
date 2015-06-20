@@ -46,3 +46,68 @@ JSZip.prototype.remove = function(predicate) {};
  * @return {string|Uint8Array|ArrayBuffer|Blob|Buffer}
  */
 JSZip.prototype.generate = function(options) {};
+
+/**
+ * @type {string}
+ */
+ZipObject.prototype.name;
+
+/**
+ * @type {boolean}
+ */
+ZipObject.prototype.dir;
+
+/**
+ * @type {boolean}
+ */
+ZipObject.prototype.dir;
+
+/**
+ * @type {Date}
+ */
+ZipObject.prototype.date;
+
+/**
+ * @type {string}
+ */
+ZipObject.prototype.comment;
+
+/**
+ * @type {number}
+ */
+ZipObject.prototype.unixPermissions;
+
+/**
+ * @type {number}
+ */
+ZipObject.prototype.dosPermissions;
+
+/**
+ * @type {Object}
+ */
+ZipObject.prototype.options;
+
+/**
+ * @return {string}
+ */
+ZipObject.prototype.asText = function() {};
+
+/**
+ * @return {string}
+ */
+ZipObject.prototype.asBinary = function() {};
+
+/**
+ * @return {ArrayBuffer}
+ */
+ZipObject.prototype.asArrayBuffer = function() {};
+
+/**
+ * @return {Uint8Array}
+ */
+ZipObject.prototype.asUint8Array = function() {};
+
+/**
+ * @return {Buffeer}
+ */
+ZipObject.prototype.asNodeBuffer = function() {};
