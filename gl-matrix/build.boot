@@ -7,7 +7,7 @@
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def gl-matrix-version "2.3.0-jenanwise")
-(def +version+ (str gl-matrix-version "-0"))
+(def +version+ (str gl-matrix-version "-1"))
 (bootlaces! +version+)
 
 (task-options!
@@ -30,5 +30,9 @@
                 "cljsjs/gl-matrix/development/gl-matrix.inc.js"
                 #"^gl-matrix-min.js"
                 "cljsjs/gl-matrix/production/gl-matrix.min.inc.js"})
+   (replace-content :in "cljsjs/gl-matrix/development/gl-matrix.inc.js"
+                    :match #"exports" :value "global")
+   (replace-content :in "cljsjs/gl-matrix/production/gl-matrix.min.inc.js"
+                    :match #"exports" :value "global")
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.gl-matrix")))
