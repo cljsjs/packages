@@ -7,7 +7,8 @@
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def jszip-version "2.5.0")
-(def +version+ (str jszip-version))
+(def jszip-release "0")
+(def +version+ (str jszip-version "-" jszip-release))
 (bootlaces! +version+)
 
 (task-options!
@@ -22,13 +23,16 @@
 (def no-exports
   "if(typeof exports !== 'undefined')exports=undefined;")
 
+(def github
+  "https://raw.githubusercontent.com/")
+
 (deftask package []
   (comp
    (download
-    :url "https://raw.githubusercontent.com/Stuk/jszip/v2.5.0/dist/jszip.js"
+    :url (str github "Stuk/jszip/v" jszip-version "/dist/jszip.js")
     :checksum "b2b9eb4084c03189e0c32bac39f9f44b")
    (download
-    :url "https://raw.githubusercontent.com/Stuk/jszip/v2.5.0/dist/jszip.min.js"
+    :url (str github "Stuk/jszip/v" jszip-version "/dist/jszip.min.js")
     :checksum "88731e24340ce38647f6d595f0e464cb")
    (sift :move {#"^jszip.js"
                 "cljsjs/jszip/development/jszip.inc.js"
