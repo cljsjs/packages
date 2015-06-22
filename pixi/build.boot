@@ -13,7 +13,7 @@
  pom  {:project     'cljsjs/pixi
        :version     +version+
        :description "2D webGL renderer with canvas fallback"
-       :url         "http://www.pixijs.org"
+       :url         "http://www.pixijs.com"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
