@@ -19,6 +19,9 @@
       :license {"MIT" "http://opensource.org/licenses/MIT"
                 "GPLv3" "http://www.gnu.org/licenses/gpl-3.0.en.html"}})
 
+(def no-exports
+  "if(typeof exports !== 'undefined')exports=undefined;")
+
 (deftask package []
   (comp
    (download
@@ -30,6 +33,10 @@
    (sift :move {#"^jszip.js"
                 "cljsjs/jszip/development/jszip.inc.js"
                 #"^jszip.min.js"
-                "cljsjs/gl-matrix/production/jszip.min.inc.js"})
+                "cljsjs/jszip/production/jszip.min.inc.js"})
+   (replace-content :in "cljsjs/jszip/development/jszip.inc.js"
+                    :match #"^\/\*" :value (str no-exports "\n/*"))
+   (replace-content :in "cljsjs/jszip/production/jszip.min.inc.js"
+                    :match #"^\/\*" :value (str no-exports "\n/*"))
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.jszip")))
