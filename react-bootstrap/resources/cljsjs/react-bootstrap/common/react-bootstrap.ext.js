@@ -1,7 +1,8 @@
 // generated with http://www.dotnetwise.com/Code/Externs/
 // to regenerate from the tool:
 // first include http://fb.me/react-0.13.1.js
-// then https://raw.githubusercontent.com/react-bootstrap/react-bootstrap-bower/v0.21.2/react-bootstrap.js
+// then https://raw.githubusercontent.com/react-bootstrap/react-bootstrap-bower/v0.23.5/react-bootstrap.js
+// and enter ReactBootstrap as the javascript object to extern
 
 var ReactBootstrap = {
     "Accordion": function () {},
@@ -33,35 +34,12 @@ var ReactBootstrap = {
     "Badge": function () {},
     "Button": function () {},
     "ButtonGroup": function () {},
+    "ButtonInput": function () {},
     "ButtonToolbar": function () {},
-    "CollapsableNav": function () {},
     "CollapsibleNav": function () {},
     "Carousel": function () {},
     "CarouselItem": function () {},
     "Col": function () {},
-    "CollapsableMixin": {
-        "propTypes": {
-            "defaultExpanded": function () {},
-            "expanded": function () {}
-        },
-        "getInitialState": function () {},
-        "componentWillUpdate": function () {},
-        "componentDidUpdate": function () {},
-        "_afterWillUpdate": function () {},
-        "_checkStartAnimation": function () {},
-        "_checkToggleCollapsing": function () {},
-        "_handleExpand": function () {},
-        "_handleCollapse": function () {},
-        "_addEndEventListener": function () {},
-        "_removeEndEventListener": function () {},
-        "dimension": function () {},
-        "isExpanded": function () {},
-        "getCollapsibleClassSet": function () {},
-        "getCollapsableClassSet": function () {},
-        "getCollapsibleDOMNode": function () {},
-        "getCollapsibleDimensionValue": function () {},
-        "componentDidMount": function () {}
-    },
     "CollapsibleMixin": {
         "propTypes": {
             "defaultExpanded": function () {},
@@ -99,6 +77,9 @@ var ReactBootstrap = {
         "componentDidMount": function () {},
         "componentWillUnmount": function () {}
     },
+    "FormControls": {
+        "Static": function () {}
+    },
     "Glyphicon": function () {},
     "Grid": function () {},
     "Input": function () {},
@@ -132,6 +113,7 @@ var ReactBootstrap = {
     "PanelGroup": function () {},
     "PageItem": function () {},
     "Pager": function () {},
+    "Pagination": function () {},
     "Popover": function () {},
     "ProgressBar": function () {},
     "Row": function () {},
@@ -140,7 +122,35 @@ var ReactBootstrap = {
     "TabbedArea": function () {},
     "Table": function () {},
     "TabPane": function () {},
+    "Thumbnail": function () {},
     "Tooltip": function () {},
+    "utils": {
+        "childrenValueInputValidation": function () {},
+        "createChainedFunction": function () {},
+        "CustomPropTypes": {
+            "mountable": function () {},
+            "keyOf": function () {},
+            "singlePropFrom": function () {},
+            "all": function () {}
+        },
+        "domUtils": {
+            "canUseDom": {},
+            "contains": function () {},
+            "ownerWindow": function () {},
+            "ownerDocument": function () {},
+            "getComputedStyles": function () {},
+            "getOffset": function () {},
+            "getPosition": function () {},
+            "activeElement": function () {},
+            "offsetParent": function () {}
+        },
+        "ValidComponentChildren": {
+            "map": function () {},
+            "forEach": function () {},
+            "numberOf": function () {},
+            "hasValidComponent": function () {}
+        }
+    },
     "Well": function () {},
     "styleMaps": {
         "CLASSES": {
@@ -153,9 +163,11 @@ var ReactBootstrap = {
             "form": {},
             "glyphicon": {},
             "label": {},
+            "thumbnail": {},
             "list-group-item": {},
             "panel": {},
             "panel-group": {},
+            "pagination": {},
             "progress-bar": {},
             "nav": {},
             "navbar": {},
