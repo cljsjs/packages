@@ -17,6 +17,6 @@ you can require and use the packaged library like so:
 (def asset-loader js/PIXI.loader)
 ```
 
-Externs were generated using http://www.dotnetwise.com/Code/Externs/
+Externs were generated using https://github.com/jmmk/javascript-externs-generator
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
