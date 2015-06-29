@@ -98,6 +98,8 @@ var Hammer = {
     "Pinch": function () {},
     "Rotate": function () {},
     "Press": function () {},
+    "set": function () {},
+    "get": function () {},
     "on": function () {},
     "off": function () {},
     "each": function () {},
