@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "3.0.6-0")
+(def +version+ "3.0.7-0")
 (bootlaces! +version+)
 
 (task-options!
@@ -19,8 +19,8 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/GoodBoyDigital/pixi.js/archive/v3.0.6.zip"
-              :checksum "dc195e04be140dc88a3cf05bde66a78e"
+    (download :url "https://github.com/GoodBoyDigital/pixi.js/archive/v3.0.7.zip"
+              :checksum "6ba647faaa66d7190ba68486b1f23c77"
               :unzip true)
     (sift :move {#"^pixi\.js-([\d\.]*)/bin/pixi\.js$" "cljsjs/pixi/development/pixi.inc.js"
                  #"^pixi\.js-([\d\.]*)/bin/pixi\.min\.js$" "cljsjs/pixi/production/pixi.min.inc.js"})
