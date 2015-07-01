@@ -1,5 +1,5 @@
 /**
- * @fileoverview Closure Compiler externs for Facebook React.js 0.13.0.
+ * @fileoverview Closure Compiler externs for Facebook React.js 0.13.3.
  * @see http://reactjs.org
  * @externs
  */
@@ -1577,7 +1577,14 @@ React.PropTypes = {
   /** @type {React.ChainableTypeChecker} */
   component: function() {},
   /** @type {React.ChainableTypeChecker} */
+  element: function() {},
+  /** @type {React.ChainableTypeChecker} */
   func: function() {},
+  /**
+   * @param {function (new:Object, ...*): ?} expectedClass
+   * @return {React.ChainableTypeChecker}
+   */
+  instanceOf: function(expectedClass) {},
   /** @type {React.ChainableTypeChecker} */
   node: function() {},
   /** @type {React.ChainableTypeChecker} */
@@ -1589,8 +1596,6 @@ React.PropTypes = {
    * @return {React.ChainableTypeChecker}
    */
   objectOf: function(typeChecker) {},
-  /** @type {React.ChainableTypeChecker} */
-  string: function() {},
   /**
    * @param {Array.<*>} expectedValues
    * @return {React.ChainableTypeChecker}
@@ -1601,11 +1606,6 @@ React.PropTypes = {
    * @return {React.ChainableTypeChecker}
    */
   oneOfType: function(typeCheckers) {},
-  /**
-   * @param {function (new:Object, ...*): ?} expectedClass
-   * @return {React.ChainableTypeChecker}
-   */
-  instanceOf: function(expectedClass) {},
   /** @type {React.ChainableTypeChecker} */
   renderable: function() {},
   /** @type {React.ChainableTypeChecker} */
@@ -1613,7 +1613,9 @@ React.PropTypes = {
    * @param {Object.<React.ChainableTypeChecker>} shapeTypes
    * @return {React.ChainableTypeChecker}
    */
-  shape: function(shapeTypes) {}
+  shape: function(shapeTypes) {},
+  /** @type {React.ChainableTypeChecker} */
+  string: function() {}
 };
 
 /**
