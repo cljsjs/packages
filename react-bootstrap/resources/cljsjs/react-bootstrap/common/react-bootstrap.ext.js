@@ -1,7 +1,7 @@
 // generated with http://www.dotnetwise.com/Code/Externs/
 // to regenerate from the tool:
 // first include http://fb.me/react-0.13.1.js
-// then https://raw.githubusercontent.com/react-bootstrap/react-bootstrap-bower/v0.23.5/react-bootstrap.js
+// then https://raw.githubusercontent.com/react-bootstrap/react-bootstrap-bower/v0.23.7/react-bootstrap.js
 // and enter ReactBootstrap as the javascript object to extern
 
 var ReactBootstrap = {
@@ -90,23 +90,30 @@ var ReactBootstrap = {
     "ListGroupItem": function () {},
     "MenuItem": function () {},
     "Modal": function () {},
+    "ModalHeader": function () {},
+    "ModalTitle": function () {},
+    "ModalBody": function () {},
+    "ModalFooter": function () {},
     "Nav": function () {},
     "Navbar": function () {},
     "NavItem": function () {},
     "ModalTrigger": function () {},
+    "Overlay": function () {},
     "OverlayTrigger": function () {},
     "OverlayMixin": {
         "propTypes": {
             "container": function () {}
         },
-        "componentWillUnmount": function () {},
-        "componentDidUpdate": function () {},
         "componentDidMount": function () {},
+        "componentDidUpdate": function () {},
+        "componentWillUnmount": function () {},
         "_mountOverlayTarget": function () {},
+        "_unmountOverlayTarget": function () {},
         "_renderOverlay": function () {},
         "_unrenderOverlay": function () {},
         "getOverlayDOMNode": function () {},
-        "getContainerDOMNode": function () {}
+        "getContainerDOMNode": function () {},
+        "componentWillMount": function () {}
     },
     "PageHeader": function () {},
     "Panel": function () {},
@@ -115,6 +122,8 @@ var ReactBootstrap = {
     "Pager": function () {},
     "Pagination": function () {},
     "Popover": function () {},
+    "Portal": function () {},
+    "Position": function () {},
     "ProgressBar": function () {},
     "Row": function () {},
     "SplitButton": function () {},
@@ -128,7 +137,9 @@ var ReactBootstrap = {
         "childrenValueInputValidation": function () {},
         "createChainedFunction": function () {},
         "CustomPropTypes": {
+            "isRequiredForA11y": function () {},
             "mountable": function () {},
+            "elementType": function () {},
             "keyOf": function () {},
             "singlePropFrom": function () {},
             "all": function () {}
