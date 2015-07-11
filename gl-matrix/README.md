@@ -15,7 +15,7 @@ to date as of 2015-04-09.
 
 [](dependency)
 ```clojure
-[cljsjs/gl-matrix "2.3.0-jenanwise-0"] ;; latest release
+[cljsjs/gl-matrix "2.3.0-jenanwise-1"] ;; latest release
 ```
 [](/dependency)
 
