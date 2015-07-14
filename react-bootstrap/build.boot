@@ -2,13 +2,13 @@
   :resource-paths #{"resources"}
   :dependencies '[[adzerk/bootlaces "0.1.11" :scope "test"]
                   [cljsjs/boot-cljsjs "0.5.0" :scope "test"]
-                  [cljsjs/react-with-addons "0.13.1-0"]
-                  [org.webjars.bower/bootstrap "3.3.4"]])
+                  [cljsjs/react-with-addons "0.13.3-0"]
+                  [org.webjars.bower/bootstrap "3.3.5"]])
 
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.21.2-0")
+(def +version+ "0.23.7-0")
 (bootlaces! +version+)
 
 (task-options!
@@ -20,8 +20,8 @@
        :license     {"MIT" "https://raw.githubusercontent.com/react-bootstrap/react-bootstrap/master/LICENSE"}})
 
 (deftask download-react-bootstrap []
-  (download :url      "https://github.com/react-bootstrap/react-bootstrap-bower/archive/v0.21.2.zip"
-            :checksum "EA5C03EA7C00ED36CD3D26673F441090"
+  (download :url      "https://github.com/react-bootstrap/react-bootstrap-bower/archive/v0.23.7.zip"
+            :checksum "07aae53ac20f9beafddd71bbc13e1fad"
             :unzip    true))
 
 (deftask package []

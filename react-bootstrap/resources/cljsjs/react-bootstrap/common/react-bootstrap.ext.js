@@ -113,6 +113,7 @@ var ReactBootstrap = {
     "Navbar": function () {},
     "NavItem": function () {},
     "ModalTrigger": function () {},
+    "Overlay": function () {},
     "OverlayTrigger": function () {},
     "OverlayMixin": {
         "propTypes": {
@@ -132,6 +133,7 @@ var ReactBootstrap = {
     "PanelGroup": function () {},
     "PageItem": function () {},
     "Pager": function () {},
+    "Pagination": function () {},
     "Popover": function () {},
     "ProgressBar": function () {},
     "Row": function () {},
