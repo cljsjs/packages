@@ -19,13 +19,11 @@
 (deftask package []
   (comp
     (download :url "https://raw.githubusercontent.com/kangax/fabric.js/v1.5.0/dist/fabric.js"
-              :checksum "55D8FAC6D57FA1E1C9C2E2900D37AF07"
-              )
+              :checksum "55D8FAC6D57FA1E1C9C2E2900D37AF07")
     (download :url "https://raw.githubusercontent.com/kangax/fabric.js/v1.5.0/dist/fabric.min.js"
-              :checksum "729F6076F0C6D3C33D9059A45C59216D"
-              )
-    (sift :move {#"fabric.js"     "cljsjs\\development\\fabric.inc.js"
-                 #"fabric.min.js" "cljsjs\\production\\fabric.min.inc.js"})
-    (replace-content :in "cljsjs/production/fabric.min.inc.js" :match #"(?m)^//# sourceMappingURL=.*$" :value "")
+              :checksum "729F6076F0C6D3C33D9059A45C59216D")
+    (replace-content :in "fabric.min.js" :match #"(?m)^//# sourceMappingURL=.*$" :value "")
+    (sift :move {#"^fabric.js"     "cljsjs/fabric/development/fabric.inc.js"
+                 #"^fabric.min.js" "cljsjs/fabric/production/fabric.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.fabric")))
