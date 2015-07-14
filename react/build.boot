@@ -33,8 +33,8 @@
   (comp
     (download :url (-> urls :normal :dev) :checksum (-> urls :normal :dev-checksum))
     (download :url (-> urls :normal :min) :checksum (-> urls :normal :min-checksum))
-    (sift :move {(re-pattern (str "^react-" react-version ".js$"))     "cljsjs/development/react.inc.js"
-                 (re-pattern (str "^react-" react-version ".min.js$")) "cljsjs/production/react.min.inc.js"})
+    (sift :move {(re-pattern (str "^react-" react-version ".js$"))     "cljsjs/react/development/react.inc.js"
+                 (re-pattern (str "^react-" react-version ".min.js$")) "cljsjs/react/production/react.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react")))
 
