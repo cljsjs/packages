@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "2.2.7-0")
+(def +version+ "2.2.7-1")
 
 (task-options!
  pom  {:project     'cljsjs/firebase
