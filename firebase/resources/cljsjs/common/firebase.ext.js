@@ -4,8 +4,6 @@
    Updated with new functions from v2.1.2
 */
 
-var Firebase, FirebaseDataSnapshot, FirebaseSimpleLogin;
-
 /**
    @param {string} firebaseURL
    @constructor
