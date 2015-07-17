@@ -7,7 +7,7 @@
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def papaparse-version "4.1.1")
-(def +version+ (str papaparse-version "-0"))
+(def +version+ (str papaparse-version "-1"))
 
 (def download-url
   (str "https://github.com/mholt/PapaParse/archive/" papaparse-version ".tar.gz"))
