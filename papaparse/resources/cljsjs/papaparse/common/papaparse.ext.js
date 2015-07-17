@@ -1,4 +1,4 @@
 
 var Papa = {};
-papa.parse = function (csvData, config) {};
-papa.unparse = function (csvData, config) {};
+Papa.parse = function (csvData, config) {};
+Papa.unparse = function (csvData, config) {};
