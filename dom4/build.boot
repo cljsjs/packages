@@ -24,4 +24,4 @@
     (sift :move {#"dom4.max.js" "cljsjs/development/dom4.inc.js"
                  #"dom4.js" "cljsjs/production/dom4.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :no-externs true :name "cljsjs.dom4")))
+    (deps-cljs :name "cljsjs.dom4")))
