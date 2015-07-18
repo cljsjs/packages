@@ -21,6 +21,7 @@
   (comp
    (download :url "https://github.com/streamproc/MediaStreamRecorder/archive/master.zip"
              :unzip true)
-    ;; (sift :move {#"firebase-bower-([\d\.]*)/firebase.js" "cljsjs/development/firebase.inc.js"})
-    ;; (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.media-stream-recorder")))
+   (sift :move {#"MediaStreamRecorder-master/MediaStreamRecorder-standalone.js"
+                "cljsjs/development/MediaStreamRecorder-standalone.inc.js"})
+   (sift :include #{#"^cljsjs"})
+   (deps-cljs :name "cljsjs.media-stream-recorder")))
