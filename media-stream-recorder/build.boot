@@ -6,12 +6,12 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "1.6.2-0")
+(def +version+ "1.2.6-0")
 
 (task-options!
  pom  {:project     'cljsjs/media-stream-recorder
        :version     +version+
-       :description "Record from your webcam to a File in Chrome and Firefox."
+       :description "Record from your webcam to a File (Blob) in Chrome and Firefox."
        :url         "https://github.com/streamproc/MediaStreamRecorder"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT LICENSE"

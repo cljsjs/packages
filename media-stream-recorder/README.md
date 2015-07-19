@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/media-stream-recorder "1.6.2-0"] ;; latest release
+[cljsjs/media-stream-recorder "1.2.6-0"] ;; latest release
 ```
 [](/dependency)
 
