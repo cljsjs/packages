@@ -12,16 +12,16 @@
 (task-options!
  pom  {:project     'cljsjs/virtual-dom
        :version     +version+
-       :description "A build of Matt-Esch/virtual-dom"
-       :url         "http://github.com/exupero/virtual-dom"
+       :description "Latest build of Matt-Esch/virtual-dom"
+       :url         "http://github.com/Matt-Esch/virtual-dom"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (deftask package []
   (comp
-    (download :url "https://raw.githubusercontent.com/exupero/virtual-dom/master/virtual-dom.js")
-    (download :url "https://raw.githubusercontent.com/exupero/virtual-dom/master/virtual-dom.min.js")
-    (sift :move {#"^virtual-dom\.js"      "cljsjs/virtual-dom/development/virtual-dom.inc.js"
-                 #"^virtual-dom\.min\.js" "cljsjs/virtual-dom/production/virtual-dom.min.inc.js"})
+    (download :url "https://raw.githubusercontent.com/Matt-Esch/virtual-dom/master/dist/virtual-dom.js")
+    (sift :move {#"^virtual-dom\.js"      "cljsjs/virtual-dom/development/virtual-dom.inc.js"})
+    (minify :in  "cljsjs/virtual-dom/development/virtual-dom.inc.js"
+            :out "cljsjs/virtual-dom/production/virtual-dom.min.inc.js")
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.virtual-dom")))
