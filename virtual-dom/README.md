@@ -1,8 +1,8 @@
-# cljsjs/vdom
+# cljsjs/virtual-dom
 
 [](dependency)
 ```clojure
-[cljsjs/vdom "0.1.0-0"]
+[cljsjs/virtual-dom "0.1.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -10,5 +10,5 @@ After adding the above dependency to your project you can require the packaged l
 
 ```clojure
 (ns application.core
-  (:require cljsjs.vdom))
+  (:require cljsjs.virtual-dom))
 ```
