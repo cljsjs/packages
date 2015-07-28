@@ -21,6 +21,50 @@ function Moment() {};
 function moment() {};
 
 /**
+ * @typedef {{ordinalParse:?RegExp, _abbr:?string, _ordinalParseLenient:?RegExp}}
+ */
+Moment.LocaleData;
+
+/**
+ * @nosideeffects
+ * @typedef {(function(number):!string)}
+*/
+Moment.LocaleData.ordinal = function () {};
+
+Moment.LocaleData.months = function() {};
+Moment.LocaleData.monthsShort = function() {};
+Moment.LocaleData.monthsParse = function() {};
+Moment.LocaleData.weekdays = function() {};
+Moment.LocaleData.weekdaysShort = function() {};
+Moment.LocaleData.weekdaysMin = function() {};
+Moment.LocaleData.weekdaysParse = function() {};
+Moment.LocaleData.longDateFormat = function() {};
+Moment.LocaleData.isPM = function() {};
+Moment.LocaleData.meridiem = function() {};
+Moment.LocaleData.calendar = function() {};
+Moment.LocaleData.relativeTime = function() {};
+Moment.LocaleData.pastFuture = function() {};
+Moment.LocaleData.ordinal = function() {};
+Moment.LocaleData.preparse = function() {};
+Moment.LocaleData.postformat = function() {};
+Moment.LocaleData.weeks = function() {};
+Moment.LocaleData.invalidDate = function() {};
+Moment.LocaleData.firstDayOfWeek = function() {};
+
+/**
+ * @nosideeffects
+ * @type {(function():!number)}
+ */
+Moment.LocaleData.prototype.firstDayOfWeek = function() {};
+
+Moment.LocaleData.firstDayOfYear = function() {};
+
+/**
+ * @type {(function():!Moment.LocaleData|function(string):!Moment.LocaleData}
+ */
+moment.localeData = function() {};
+
+/**
  * @typedef {{seconds:?number, minutes:?number, hours:?number, weeks:?number, months:?number, years:?number}}
  */
 Moment.DateRecord;
@@ -133,6 +177,12 @@ Moment.prototype.dayOfYear = function() {};
  * @type {(function():!number|function(!number):!Moment)}
  */
 Moment.prototype.week = function() {};
+
+/**
+ * @since 2.1.0
+ * @type {(function():!number|function(!number):!Moment)}
+ */
+Moment.prototype.weekday = function() {};
 
 /**
  * @since 2.0.0
