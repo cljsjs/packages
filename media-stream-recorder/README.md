@@ -29,13 +29,34 @@ Use MediaStreamRecorder for firefox and MultiStreamRecorder for chrome. Construc
 these given a stream `stream is as simple as.
 
 ```clojure
-(let [msr (js/MediaStreamRecorder stream)]
-  ...)
+(def media-constraints #js {:audio false :video true})
+```
+
+```clojure
+;; use MediaStreamRecorder to record .webm files on Firefox and Firefox Mobile (best)
+(defn record! [stream]
+  (let [msr (js/MediaStreamRecorder. stream)]
+    (aset msr "mimeType" "video/webm") ;; necessary
+    (aset msr "width" 320) ;; necessary
+    (aset msr "height" 240) ;; necessary
+    (set! (.-ondataavailable msr)  #(js/console.log %))
+    (.start msr 0)))
+
+(def media-constraints #js {:audio true :video true})
+
+(js/navigator.getUserMedia media-constraints record! js/console.warn)
 ```
 or
 ```clojure
-(let [msr (js/MultiStreamRecorder stream)]
-  ...)
+;; use MultiStreamRecorder only if you need video + audio on Chrome
+(defn record! [stream]
+  (let [msr (js/MultiStreamRecorder. stream)]
+    (set! (.-ondataavailable msr)  #(js/console.log %))
+    (.start msr 0)))
+
+(def media-constraints #js {:audio true :video true})
+
+(js/navigator.webkitGetUserMedia media-constraints record! js/console.warn)
 ```
 
 available methods for msr are:
@@ -43,13 +64,4 @@ available methods for msr are:
 ```clojure
   (.start msr) ;; starts recording from stream
   (.stop msr) ;; segments and stops recording from stream
-```
-
-Finally, you will probably want to do something with that segment, use
-ondataavailable to get the value of the generated blob
-
-```clojure
-  (set!
-     (.-ondataavailable msr)
-     #(put! c {:action :new-stream-segment :data %}))
 ```
