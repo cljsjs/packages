@@ -1,4 +1,4 @@
-// plexus_form_externs.js ---
+// plexus-form_externs.js ---
 //
 // The MIT License (MIT)
 //
@@ -30,7 +30,7 @@
  * @param {object} props
  * @return {object}
  */
-var Form = function(props) {};
+var PlexusForm = function(props) {};
 
 //
-// plexus_form_externs.js ends here
+// plexus-form_externs.js ends here

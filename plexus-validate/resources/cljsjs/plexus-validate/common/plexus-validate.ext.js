@@ -32,7 +32,7 @@
  * @param {object} context
  * @return {array}
  */
-var validate = function(schema, data, context) {};
+var PlexusValidate = function(schema, data, context) {};
 
 //
 // plexus_validate_externs.js ends here
