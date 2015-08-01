@@ -6,7 +6,6 @@
  * @constructor
  */
 var MultiStreamRecorder = function(stream) {};
-var MultiStreamRecorder = function(stream) {};
 MultiStreamRecorder.prototype.start = function(/** number **/ ms) {};
 MultiStreamRecorder.prototype.onStartedDrawingNonBlankFrames = function() {};
 MultiStreamRecorder.prototype.clearOldRecordedFrames = function() {};
