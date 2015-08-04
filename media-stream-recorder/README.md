@@ -16,7 +16,7 @@ you can require the packaged library like so:
 ```
 
 From there
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
 
 Media Stream Recorder
 

@@ -14,3 +14,5 @@ you can require the packaged library like so:
 (ns application.core
   (:require cljsjs.fixed-data-table))
 ```
+
+[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies

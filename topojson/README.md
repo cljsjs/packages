@@ -16,4 +16,4 @@ you can require the packaged library like so:
             cljsjs.topojson))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies

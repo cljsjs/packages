@@ -11,5 +11,4 @@ of the Clojurescript compiler.
 
 The jar only provides an extern file required for advanced compilation.
 The Google Maps js API will still need to provided through some other mechanism.
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
-
+[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies

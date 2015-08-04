@@ -33,5 +33,4 @@ To rely on the default (canvas based) renderer use:
 
 Dig the [source code](https://github.com/openlayers/ol3/blob/master/src/ol/ol.js) for more defines.
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
-
+[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies

@@ -14,3 +14,5 @@ you can require the packaged library like so:
 (ns application.core
   (:require cljsjs.react-router))
 ```
+
+[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies

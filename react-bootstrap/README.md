@@ -31,3 +31,5 @@ then compile your cljs project e.g:
 ```sh
 boot cljs less
 ```
+
+[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies

@@ -15,5 +15,4 @@ to can require the packaged library like so:
   (:require cljsjs.showdown))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
-
+[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies

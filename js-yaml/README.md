@@ -14,5 +14,4 @@ you can require the packaged library like so:
 (ns application.core
   (:require cljsjs.js-yaml))
 ```
-
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
