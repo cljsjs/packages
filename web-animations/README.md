@@ -1,8 +1,8 @@
-# cljsjs/web-animations-js
+# cljsjs/web-animations
 
 [](dependency)
 ```clojure
-[cljsjs/web-animations-js "2.1.2-0"] ;; latest release
+[cljsjs/web-animations "2.1.2-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,9 +12,9 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.web-animations-js))
+  (:require cljsjs.web-animations))
 ```
 
-`web-animations-js` polyfills Web Animations [W3C spec](http://w3c.github.io/web-animations/).
+`web-animations` polyfills Web Animations [W3C spec](http://w3c.github.io/web-animations/).
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
