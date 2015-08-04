@@ -21,6 +21,7 @@ respective `README` files.**
 The wiki of this repo is used for community maintained documentation:
 
 - [Why CLJSJS exists](https://github.com/cljsjs/packages/wiki)
+- [Using Packages](https://github.com/cljsjs/packages/wiki/Using-Packages)
 - [Creating Packages](https://github.com/cljsjs/packages/wiki/Creating-Packages)
 - [Creating Externs](https://github.com/cljsjs/packages/wiki/Creating-Externs)
 
