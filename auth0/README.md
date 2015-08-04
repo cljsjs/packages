@@ -17,4 +17,4 @@ you can require the packaged library like so:
 
 Documentation for the auth0 lib can be found [on its github page](https://github.com/auth0/auth0.js)
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies

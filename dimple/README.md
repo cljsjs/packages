@@ -16,3 +16,5 @@ you can require the packaged library like so:
 ```
 
 No proper externs yet - just figuring things out at the moment....
+
+[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies

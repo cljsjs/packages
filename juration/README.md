@@ -17,9 +17,9 @@ you can require the packaged library like so:
   (:require cljsjs.juration))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
 
-Note: This extern pulls directly from a commit for 0.0.1 as there are no released downloads. If you know of one please submit a PR. 
+Note: This extern pulls directly from a commit for 0.0.1 as there are no released downloads. If you know of one please submit a PR.
 
 ## Example usage
 

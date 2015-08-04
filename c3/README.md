@@ -15,4 +15,4 @@ you can require the packaged library like so:
   (:require cljsjs.c3))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
