@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/typeahead-bundle "0.11.1-0"] ;; latest release
+[cljsjs/typeahead-bundle "0.11.1-1"] ;; latest release
 ```
 [](/dependency)
 

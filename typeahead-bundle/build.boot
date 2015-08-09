@@ -7,7 +7,7 @@
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +version+ "0.11.1")
-(def cljsjs-version "0")
+(def cljsjs-version "1")
 
 (task-options!
  pom  {:project     'cljsjs/typeahead-bundle
@@ -16,11 +16,6 @@
        :url         "https://github.com/twitter/typeahead.js"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
-
-(deftask files []
-  (with-pre-wrap fileset
-    (println fileset)
-    fileset))
 
 (deftask package []
   (comp
