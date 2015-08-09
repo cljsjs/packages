@@ -1,6 +1,7 @@
 (set-env!
  :resource-paths #{"resources"}
  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
+                 [cljsjs/jquery      "2.1.4-0"]
                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
 (require '[adzerk.bootlaces :refer :all]
@@ -29,4 +30,5 @@
    (sift :move {#".*?typeahead.bundle.js"     "cljsjs/typeahead-bundle/development/typeahead.inc.js"
                 #".*?typeahead.bundle.min.js" "cljsjs/typeahead-bundle/production/typeahead.bundle.min.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.typeahead-bundle")))
+   (deps-cljs :name     "cljsjs.typeahead-bundle"
+              :requires ["cljsjs.jquery"])))
