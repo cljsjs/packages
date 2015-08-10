@@ -15,4 +15,4 @@ you can require the packaged library like:
   (:require cljsjs.vis))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
