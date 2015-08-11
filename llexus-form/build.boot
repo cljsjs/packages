@@ -8,24 +8,24 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.1.3-1")
+(def +version+ "0.7.0-1")
 (bootlaces! +version+)
 
 (task-options!
- pom  {:project     'cljsjs/plexus-form
+ pom  {:project     'cljsjs/llexus-form
        :version     +version+
        :description "A dynamic form component for React using a specification format based on JSON-Schema."
-       :url         "https://github.com/AppliedMathematicsANU/plexus-form"
+       :url         "https://github.com/little-arhat/llexus-form"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (deftask package []
   (comp
-   (download :url "https://github.com/little-arhat/plexus-form/archive/v0.1.3-1.zip"
-              :checksum "e163bf04497a1c0eae176d3cd98fa0da"
+   (download :url "https://github.com/little-arhat/llexus-form/archive/0.7.0.zip"
+              :checksum "1ea6558e6e30444e6956c9434addf24d"
               :unzip true)
-   (sift :move {#"^plexus-form-([\d\.-]*)/dist/plexus-form\.js"      "cljsjs/plexus-form/development/plexus-form.inc.js"
-                #"^plexus-form-([\d\.-]*)/dist/plexus-form\.min\.js" "cljsjs/plexus-form/production/plexus-form.min.inc.js"})
+   (sift :move {#"^llexus-form-([\d\.-]*)/dist/llexus-form\.js"      "cljsjs/llexus-form/development/llexus-form.inc.js"
+                #"^llexus-form-([\d\.-]*)/dist/llexus-form\.min\.js" "cljsjs/llexus-form/production/llexus-form.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.plexus-form"
+    (deps-cljs :name "cljsjs.llexus-form"
                :requires ["cljsjs.react"])))

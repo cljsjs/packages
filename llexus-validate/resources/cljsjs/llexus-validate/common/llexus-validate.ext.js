@@ -1,4 +1,4 @@
-// plexus-form_externs.js ---
+// llexus_validate_externs.js ---
 //
 // The MIT License (MIT)
 //
@@ -26,11 +26,13 @@
 // Code:
 
 /**
- * @constructor
- * @param {object} props
- * @return {object}
+ *
+ * @param {object} schema
+ * @param {object} data
+ * @param {object} context
+ * @return {array}
  */
-var PlexusForm = function(props) {};
+var LlexusValidate = function(schema, data, context) {};
 
 //
-// plexus-form_externs.js ends here
+// llexus_validate_externs.js ends here
