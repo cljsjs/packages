@@ -16,7 +16,7 @@ After adding the above dependency to your project you can require the packaged l
 You can add the following boot tasks to add the css to your project.
 
 ```
-    (sift :add-jar {'cljsjs/codemirror #"cljsjs/codemirror/common/codemirror.css"})
+    (sift :add-jar {'cljsjs/codemirror #"cljsjs/codemirror/development/codemirror.css"})
     (sift :move {#"cljsjs/codemirror/development/codemirror.css" "vendor/codemirror/codemirror.css"})))
 ```
 
