@@ -6,22 +6,24 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.1.0-0")
+(def +version+ "2.1.1-0")
 (bootlaces! +version+)
 
 (task-options!
+ push {:ensure-clean false}
  pom  {:project     'cljsjs/virtual-dom
        :version     +version+
-       :description "Latest build of Matt-Esch/virtual-dom"
-       :url         "http://github.com/Matt-Esch/virtual-dom"
-       :scm         {:url "https://github.com/cljsjs/packages"}
-       :license     {"MIT" "http://opensource.org/licenses/MIT"}})
+       :description "A JavaScript DOM model supporting element creation, diff computation and patch operations for efficient re-rendering"
+       :url         "https://github.com/Matt-Esch/virtual-dom"
+       :license     {"License" "https://raw.githubusercontent.com/Matt-Esch/virtual-dom/master/LICENSE"}
+       :scm         {:url "https://github.com/cljsjs/packages"}})
 
 (deftask package []
   (comp
-    (download :url "https://raw.githubusercontent.com/Matt-Esch/virtual-dom/master/dist/virtual-dom.js")
-    (sift :move {#"^virtual-dom\.js"      "cljsjs/virtual-dom/development/virtual-dom.inc.js"})
-    (minify :in  "cljsjs/virtual-dom/development/virtual-dom.inc.js"
-            :out "cljsjs/virtual-dom/production/virtual-dom.min.inc.js")
-    (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.virtual-dom")))
+   (download :url "https://github.com/Matt-Esch/virtual-dom/archive/v2.1.1.zip"
+             :checksum "afed7bc77deb53f2d8d1cbb26b094fa7"
+             :unzip true)
+   (sift :move {#"^virtual-dom-.*/dist/virtual-dom.js$" "cljsjs/development/virtual-dom.inc.js"})
+   (minify :in "cljsjs/development/virtual-dom.inc.js" :out "cljsjs/production/virtual-dom.min.inc.js")
+   (sift :include #{#"^cljsjs"})
+   (deps-cljs :name "cljsjs.virtual-dom")))
