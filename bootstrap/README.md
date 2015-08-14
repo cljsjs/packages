@@ -1,7 +1,7 @@
 # cljsjs/bootstrap
 [](dependency)
 ```clojure
-[cljsjs/jquery "1.9.1-0"] ;; latest release
+[cljsjs/bootstrap "3.3.5-0"] ;; latest release
 ```
 [](/dependency)
 
