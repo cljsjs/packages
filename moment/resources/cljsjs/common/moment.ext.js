@@ -60,7 +60,7 @@ Moment.LocaleData.prototype.firstDayOfWeek = function() {};
 Moment.LocaleData.firstDayOfYear = function() {};
 
 /**
- * @type {(function():!Moment.LocaleData|function(string):!Moment.LocaleData}
+ * @type {(function():!Moment.LocaleData|function(string):!Moment.LocaleData)}
  */
 moment.localeData = function() {};
 
