@@ -25,11 +25,6 @@ function moment() {};
  */
 Moment.LocaleData;
 
-/**
- * @nosideeffects
- * @typedef {(function(number):!string)}
-*/
-Moment.LocaleData.ordinal = function () {};
 
 Moment.LocaleData.months = function() {};
 Moment.LocaleData.monthsShort = function() {};
