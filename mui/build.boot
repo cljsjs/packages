@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def mui-version "0.1.11")
+(def mui-version "0.1.21")
 (def +version+ (str mui-version "-0"))
 (bootlaces! +version+)
 
@@ -22,7 +22,7 @@
   (task-options! push {:ensure-branch nil})
   (comp
     (download :url (str "https://github.com/muicss/mui/archive/" mui-version ".zip")
-              :checksum "9D0B885B64B075554EBB052ECD9A067C"
+              :checksum "7CF1BE714B674C3A86796DAB9B8AD42B"
               :unzip true)
     (sift :move {#"^mui-[\d.]+/dist/js/mui\.js$"        "cljsjs/development/mui.inc.js"
                  #"^mui-[\d.]+/dist/js/mui\.min\.js$"   "cljsjs/production/mui.min.inc.js"
