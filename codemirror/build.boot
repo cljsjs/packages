@@ -6,8 +6,10 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def codemirror-version "5.1.0")
-(def +version+ (str codemirror-version "-2"))
+(def codemirror-version "5.6.0")
+(def codemirror-checksum "BAEF3E7F7750A306AE539E305C0E0222")
+
+(def +version+ (str codemirror-version "-0"))
 
 (task-options!
   pom  {:project     'cljsjs/codemirror
@@ -24,21 +26,24 @@
          '[boot.util :refer [sh]]
          '[boot.tmpdir :as tmpd])
 
-(deftask generate-mode-deps []
-  (let [tmp (c/temp-dir!)
-        new-deps-file (io/file tmp "deps.cljs")
-        path->lang (fn [path] (second (re-matches #"cljsjs/codemirror/common/mode/(.*)\.inc\.js" path)))
-        lang->foreign-lib (fn [lang]
-                              {:file     (str "cljsjs/codemirror/common/mode/" lang ".inc.js")
-                               :requires ["cljsjs.codemirror"]
-                               :provides [(str "cljsjs.codemirror.mode." lang)]})]
+(defn path->foreign-lib [path]
+  {:file     path
+   :requires ["cljsjs.codemirror"]
+   :provides [(-> path
+                  (string/replace #"\.inc\.js$" "")
+                  (string/replace #"/common/" "/")
+                  (string/replace #"/" "."))]})
+
+(deftask generate-extra-deps []
+  (let [tmp (c/tmp-dir!)
+        new-deps-file (io/file tmp "deps.cljs")]
     (with-pre-wrap
       fileset
       (let [existing-deps-file (->> fileset c/input-files (c/by-name ["deps.cljs"]) first)
             existing-deps      (-> existing-deps-file tmpd/file slurp read-string)
-            mode-files         (->> fileset c/input-files (c/by-re [#"^cljsjs/codemirror/common/mode/.*\.inc\.js"]))
-            modes              (map (comp lang->foreign-lib path->lang tmpd/path) mode-files)
-            new-deps           (update-in existing-deps [:foreign-libs] concat modes)]
+            extra-files        (->> fileset c/input-files (c/by-re [ #"cljsjs/codemirror/common/(mode|addon)/.*\.inc\.js"]))
+            foreign-libs       (map (comp path->foreign-lib tmpd/path) extra-files)
+            new-deps           (update-in existing-deps [:foreign-libs] concat foreign-libs)]
         (spit new-deps-file (pr-str new-deps))
         (-> fileset (c/add-resource tmp) c/commit!)))))
 
@@ -46,16 +51,19 @@
   (comp
     (download :url (format "https://github.com/codemirror/CodeMirror/archive/%s.zip" codemirror-version)
               :unzip true
-              :checksum "6eb686a8475ed0f0eec5129256028c5b")
-    (sift :move {#"^CodeMirror-([\d\.]*)/lib/codemirror\.js"      "cljsjs/codemirror/development/codemirror.inc.js"
-                 #"^CodeMirror-([\d\.]*)/lib/codemirror\.css"     "cljsjs/codemirror/development/codemirror.css"
-                 #"^CodeMirror-([\d\.]*)/mode/(.*)/(.*).js"       "cljsjs/codemirror/common/mode/$2.js"})
+              :checksum codemirror-checksum)
+    (sift :move {#"^CodeMirror-([\d\.]*)/lib/codemirror\.js"    "cljsjs/codemirror/development/codemirror.inc.js"
+                 #"^CodeMirror-([\d\.]*)/lib/codemirror\.css"   "cljsjs/codemirror/development/codemirror.css"
+                 #"^CodeMirror-([\d\.]*)/mode/(.*)/(.*).js"     "cljsjs/codemirror/common/mode/$2.js"
+                 #"^CodeMirror-([\d\.]*)/addon/(.*)/(.*).css"   "cljsjs/codemirror/common/addon/$2/$3.css"
+                 #"^CodeMirror-([\d\.]*)/addon/(.*)/(.*).js"    "cljsjs/codemirror/common/addon/$2/$3.js"})
     (minify    :in       "cljsjs/codemirror/development/codemirror.inc.js"
                :out      "cljsjs/codemirror/production/codemirror.min.inc.js")
     (minify    :in       "cljsjs/codemirror/development/codemirror.css"
                :out      "cljsjs/codemirror/production/codemirror.min.css")
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.codemirror")
-    (sift :move {#"^cljsjs/codemirror/common/mode/(.*)\.js" "cljsjs/codemirror/common/mode/$1.inc.js"})
-    (generate-mode-deps)))
+    (sift :move {#"^cljsjs/codemirror/common/mode/(.*)\.js" "cljsjs/codemirror/common/mode/$1.inc.js"
+                 #"^cljsjs/codemirror/common/addon/(.*)/(.*)\.js" "cljsjs/codemirror/common/addon/$1/$2.inc.js"})
+    (generate-extra-deps)))
 
