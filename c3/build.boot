@@ -21,7 +21,7 @@
 (deftask package []
   (comp
    (download :url      "https://github.com/masayuki0812/c3/archive/0.4.10.zip"
-             :checksum "5d9d5f126b14c55ad4603edd30f2c998"
+             :checksum "86E26485D03248E7D989B4FBD8A63ECD"
              :unzip    true)
    (sift :move {#"^c3-([\d\.]*)/c3\.js"      "cljsjs/c3/development/c3.inc.js" 
                 #"^c3-([\d\.]*)/c3\.min\.js" "cljsjs/c3/production/c3.min.inc.js"
