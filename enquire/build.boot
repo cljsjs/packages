@@ -6,14 +6,13 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "2.1.2")
+(def +version+ "2.1.2-0")
 (bootlaces! +version+)
 
 (task-options!
  pom  {:project     'cljsjs/enquire
        :version     +version+
-       :description " enquire.js is a lightweight, pure JavaScript
-       library for responding to CSS media queries."
+       :description " enquire.js is a lightweight, pure JavaScript library for responding to CSS media queries."
        :url         "http://wicky.nillia.ms/enquire.js"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
