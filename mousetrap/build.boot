@@ -20,7 +20,7 @@
 (deftask package []
   (comp
     (download :url "https://github.com/ccampbell/mousetrap/archive/1.5.3.zip"
-              :checksum "adf961e5d4aa2f330fb18876804271d7"                        
+              :checksum "adf961e5d4aa2f330fb18876804271d7"
               :unzip true)
     (sift :move {#"^mousetrap-([\d\.]*)/mousetrap\.js"      "cljsjs/mousetrap/development/mousetrap.inc.js"
                  #"^mousetrap-([\d\.]*)/mousetrap\.min\.js" "cljsjs/mousetrap/production/mousetrap.min.inc.js"})
