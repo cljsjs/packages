@@ -1,5 +1,4 @@
-
-# cljsjs/d3
+# cljsjs/llexus-validate
 
 [](dependency)
 ```clojure
@@ -18,4 +17,4 @@ you can require the packaged library like so:
   (:require cljsjs.llexus-validate))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
