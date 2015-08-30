@@ -1,8 +1,8 @@
-# cljsjs/mdl
+# cljsjs/material
 
 [](dependency)
 ```clojure
-[cljsjs/material "1.0.2-0"] ;; latest release
+[cljsjs/material "1.0.4-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,7 @@ you can require the packaged library like:
 
 ```clojure
 (ns application.core
-  (:require [cljsjs.mdl]))
+  (:require [cljsjs.material]))
 ```
 
 You will want to include the material-icons from Google.  In Reacts, it would be done

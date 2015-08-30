@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def material-version "1.0.2")
+(def material-version "1.0.4")
 (def +version+ (str material-version "-0"))
 (bootlaces! +version+)
 
@@ -22,7 +22,7 @@
   (task-options! push {:ensure-branch nil})
   (comp
     (download :url (str "https://storage.googleapis.com/code.getmdl.io/" material-version "/mdl.zip")
-              :checksum "9b3e670598b01d76e5d3a5e886cd898f"
+              :checksum "e6883041f5cf44642b1539ecf5a25f9c"
               :unzip true)
     (sift :move {#"^material\.js$"        "cljsjs/material/development/material.inc.js"
                  #"^material\.css$"        "cljsjs/material/development/material.inc.css"
