@@ -7,7 +7,7 @@
          '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "1.0.4")
+(def +version+ "1.0.4-0")
 
 (task-options!
  pom {:project     'cljsjs/nodejs-externs
