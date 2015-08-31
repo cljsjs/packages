@@ -7,7 +7,7 @@
          '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "1.0.4-0")
+(def +version+ "1.0.4-1")
 
 (task-options!
  pom {:project     'cljsjs/nodejs-externs
@@ -34,7 +34,7 @@
 (deftask package []
   (comp
    (download-nodejs-externs)
-   (sift :move {#"^node.js-closure-compiler-externs-.*/([^/]*).js$"
+   (sift :move {#"^node.js-closure-compiler-externs-[^/]*/([^/]*).js$"
                 "cljsjs/nodejs-externs/common/$1.js"})
    (sift :include #{#"^cljsjs"})
    (generate-local-deps)))
