@@ -20,8 +20,8 @@
        :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
 
 (deftask download-fixed-data-table []
-  (download :url      "https://github.com/facebook/fixed-data-table/archive/v0.4.1.zip"
-            :checksum "D1410284346FF11EA91ADCE543D73CCE"
+  (download :url      "https://github.com/facebook/fixed-data-table/archive/v0.4.6.zip"
+            :checksum "4C8ED4C7140A7AB64291997515EC1F02"
             :unzip    true))
 
 (deftask package []
