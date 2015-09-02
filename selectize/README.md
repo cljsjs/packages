@@ -1,4 +1,4 @@
-# cljsjs/typeahead-bundle
+# cljsjs/selectize
 
 [](dependency)
 ```clojure
@@ -12,7 +12,10 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.typeahead-bundle))
+  (:require [cljsjs.selectize]
+            [cljsjs.jquery]))
+
+(.selectize (js/jQuery (.getElementById js/document "#dropdown")))
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
