@@ -1,7 +1,8 @@
 (set-env!
  :resource-paths #{"resources"}
  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                 [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+                 [cljsjs/boot-cljsjs "0.5.0" :scope "test"]
+                 [cljsjs/jquery "1.9.1-0"]])
 
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
@@ -25,4 +26,5 @@
    (sift :move {#".*/dist/js/standalone/selectize.js"     "cljsjs/selectize/development/selectize.inc.js"
                 #".*/dist/js/standalone/selectize.min.js" "cljsjs/selectize/production/selectize.min.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.selectize")))
+   (deps-cljs :name "cljsjs.selectize"
+              :requires ["cljsjs.jquery"])))

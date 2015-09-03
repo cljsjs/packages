@@ -12,8 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require [cljsjs.selectize]
-            [cljsjs.jquery]))
+  (:require [cljsjs.selectize]))
 
 (.selectize (js/jQuery (.getElementById js/document "#dropdown")))
 ```
