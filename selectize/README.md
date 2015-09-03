@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/selectize "0.12.1-0"] ;; latest release
+[cljsjs/selectize "0.12.1-1"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,8 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require [cljsjs.selectize]
-            [cljsjs.jquery]))
+  (:require [cljsjs.selectize]))
 
 (.selectize (js/jQuery (.getElementById js/document "#dropdown")))
 ```
