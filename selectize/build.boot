@@ -7,7 +7,7 @@
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +version+ "0.12.1")
-(def cljsjs-version "1")
+(def cljsjs-version "0")
 
 (task-options!
  pom  {:project     'cljsjs/selectize
@@ -20,6 +20,7 @@
 (deftask package []
   (comp
    (download :url (str "https://github.com/brianreavis/selectize.js/archive/v" +version+ ".zip")
+             :checksum "FED9044122798910DCB637E90E96E462"
              :unzip true)
    (sift :move {#".*/dist/js/standalone/selectize.js"     "cljsjs/selectize/development/selectize.inc.js"
                 #".*/dist/js/standalone/selectize.min.js" "cljsjs/selectize/production/selectize.min.inc.js"})
