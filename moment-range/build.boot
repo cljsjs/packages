@@ -8,7 +8,7 @@
          '[boot.task-helpers]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "2.0.3")
+(def +version+ "2.0.3-0")
 (bootlaces! +version+)
 
 (task-options!
@@ -31,8 +31,8 @@
               :checksum "705f4467371c7c3a442d0dbc573fe073"
               :unzip true)
 
-    (sift :move {#"^moment-range.*/dist/moment-range\.js"          "cljsjs/development/moment-range.inc.js"
-                 #"^moment-range.*/dist/moment-range\.min\.js"     "cljsjs/production/moment-range.min.inc.js"})
+    (sift :move {#"^moment-range.*/dist/moment-range\.js"          "cljsjs/moment-range/development/moment-range.inc.js"
+                 #"^moment-range.*/dist/moment-range\.min\.js"     "cljsjs/moment-range/production/moment-range.min.inc.js"})
 
     (sift :include #{#"^cljsjs"})
 

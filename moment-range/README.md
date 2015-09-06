@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/moment-range "2.0.3"] ;; latest release
+[cljsjs/moment-range "2.0.3-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -13,7 +13,7 @@ you can require the packaged library like so:
 ```clojure
 (ns application.core
   (:require cljsjs.moment-range))
-  
+
 ;;Create a date range for the current month
 (.range (js/moment) "month")
 
