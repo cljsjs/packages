@@ -12,19 +12,18 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.moment))
+  (:require cljsjs.moment-range))
+  
+;;Create a date range for the current month
+(.range (js/moment) "month")
+
+;;Create a range for an ISO 8601 time interval string
+(.range js/moment "2015-09-01T00:00:00+10:00/2015-09-30T23:59:59+10:00")
+
+
+;;Create a range for two arbitrary moments
+(.range js/moment (.startOf (js/moment) "month") (.endOf (js/moment) "month"))
 ```
 
-## Locales
-
-Each locale from Moment.js is provided as separate foreign dependency namespace.
-You should be able to set Moment to use locales if you first require them.
-
-```clojure
-(ns application.core
-  (:require cljsjs.moment cljsjs.moment.locale.fi))
-
-(.locale js/moment "fi")
-```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
