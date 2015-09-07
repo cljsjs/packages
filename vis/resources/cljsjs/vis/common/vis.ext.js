@@ -26,6 +26,7 @@ var vis = {
     "forEach": function () {},
     "toArray": function () {},
     "updateProperty": function () {},
+    "throttle": function () {},
     "addEventListener": function () {},
     "removeEventListener": function () {},
     "preventDefault": function () {},
@@ -753,6 +754,9 @@ var vis = {
             "undefined": {},
             "number": {}
           },
+          "improvedLayout": {
+            "boolean": {}
+          },
           "hierarchical": {
             "enabled": {
               "boolean": {}
@@ -1385,6 +1389,9 @@ var vis = {
           "timestep": {
             "number": {}
           },
+          "adaptiveTimestep": {
+            "boolean": {}
+          },
           "__type__": {
             "object": {},
             "boolean": {}
@@ -1616,7 +1623,6 @@ var vis = {
     "convertDot": function () {},
     "convertGephi": function () {}
   },
-  "Graph": function () {},
   "moment": {
     "momentProperties": {},
     "suppressDeprecationWarnings": {},
@@ -1651,68 +1657,6 @@ var vis = {
     "weekdaysShort": function () {},
     "normalizeUnits": function () {},
     "relativeTimeThreshold": function () {}
-  },
-  "hammer": {
-    "VERSION": {},
-    "defaults": {
-      "domEvents": {},
-      "touchAction": {},
-      "enable": {},
-      "inputTarget": {},
-      "inputClass": {},
-      "preset": {},
-      "cssProps": {
-        "userSelect": {},
-        "touchSelect": {},
-        "touchCallout": {},
-        "contentZooming": {},
-        "userDrag": {},
-        "tapHighlightColor": {}
-      }
-    },
-    "INPUT_START": {},
-    "INPUT_MOVE": {},
-    "INPUT_END": {},
-    "INPUT_CANCEL": {},
-    "STATE_POSSIBLE": {},
-    "STATE_BEGAN": {},
-    "STATE_CHANGED": {},
-    "STATE_ENDED": {},
-    "STATE_RECOGNIZED": {},
-    "STATE_CANCELLED": {},
-    "STATE_FAILED": {},
-    "DIRECTION_NONE": {},
-    "DIRECTION_LEFT": {},
-    "DIRECTION_RIGHT": {},
-    "DIRECTION_UP": {},
-    "DIRECTION_DOWN": {},
-    "DIRECTION_HORIZONTAL": {},
-    "DIRECTION_VERTICAL": {},
-    "DIRECTION_ALL": {},
-    "Manager": function () {},
-    "Input": function () {},
-    "TouchAction": function () {},
-    "TouchInput": function () {},
-    "MouseInput": function () {},
-    "PointerEventInput": function () {},
-    "TouchMouseInput": function () {},
-    "SingleTouchInput": function () {},
-    "Recognizer": function () {},
-    "AttrRecognizer": function () {},
-    "Tap": function () {},
-    "Pan": function () {},
-    "Swipe": function () {},
-    "Pinch": function () {},
-    "Rotate": function () {},
-    "Press": function () {},
-    "on": function () {},
-    "off": function () {},
-    "each": function () {},
-    "merge": function () {},
-    "extend": function () {},
-    "inherit": function () {},
-    "bindFn": function () {},
-    "prefixed": function () {}
   },
   "Hammer": {
     "VERSION": {},
@@ -2415,6 +2359,9 @@ vis.timeline.components.ItemSet.prototype = {
   "_onDrag": function () {},
   "_moveToGroup": function () {},
   "_onDragEnd": function () {},
+  "_onGroupDragStart": function () {},
+  "_onGroupDrag": function () {},
+  "_onGroupDragEnd": function () {},
   "_onSelectItem": function () {},
   "_onAddItem": function () {},
   "_onMultiSelectItem": function () {},
@@ -2690,210 +2637,6 @@ vis.Network.prototype = {
   "focus": function () {},
   "releaseNode": function () {},
   "getOptionsFromConfigurator": function () {}
-};
-vis.hammer.Input.prototype = {
-  "handler": function () {},
-  "init": function () {},
-  "destroy": function () {}
-};
-vis.hammer.TouchAction.prototype = {
-  "set": function () {},
-  "update": function () {},
-  "compute": function () {},
-  "preventDefaults": function () {},
-  "preventSrc": function () {}
-};
-vis.hammer.TouchInput.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "handler": function () {},
-  "init": function () {},
-  "destroy": function () {}
-};
-vis.hammer.MouseInput.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "handler": function () {},
-  "init": function () {},
-  "destroy": function () {}
-};
-vis.hammer.PointerEventInput.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "handler": function () {},
-  "init": function () {},
-  "destroy": function () {}
-};
-vis.hammer.TouchMouseInput.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "handler": function () {},
-  "destroy": function () {},
-  "init": function () {}
-};
-vis.hammer.SingleTouchInput.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "handler": function () {},
-  "init": function () {},
-  "destroy": function () {}
-};
-vis.hammer.Recognizer.prototype = {
-  "defaults": function () {},
-  "set": function () {},
-  "recognizeWith": function () {},
-  "dropRecognizeWith": function () {},
-  "requireFailure": function () {},
-  "dropRequireFailure": function () {},
-  "hasRequireFailures": function () {},
-  "canRecognizeWith": function () {},
-  "emit": function () {},
-  "tryEmit": function () {},
-  "canEmit": function () {},
-  "recognize": function () {},
-  "process": function () {},
-  "getTouchAction": function () {},
-  "reset": function () {}
-};
-vis.hammer.AttrRecognizer.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "defaults": function () {},
-  "attrTest": function () {},
-  "process": function () {},
-  "set": function () {},
-  "recognizeWith": function () {},
-  "dropRecognizeWith": function () {},
-  "requireFailure": function () {},
-  "dropRequireFailure": function () {},
-  "hasRequireFailures": function () {},
-  "canRecognizeWith": function () {},
-  "emit": function () {},
-  "tryEmit": function () {},
-  "canEmit": function () {},
-  "recognize": function () {},
-  "getTouchAction": function () {},
-  "reset": function () {}
-};
-vis.hammer.Tap.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "defaults": function () {},
-  "getTouchAction": function () {},
-  "process": function () {},
-  "failTimeout": function () {},
-  "reset": function () {},
-  "emit": function () {},
-  "set": function () {},
-  "recognizeWith": function () {},
-  "dropRecognizeWith": function () {},
-  "requireFailure": function () {},
-  "dropRequireFailure": function () {},
-  "hasRequireFailures": function () {},
-  "canRecognizeWith": function () {},
-  "tryEmit": function () {},
-  "canEmit": function () {},
-  "recognize": function () {}
-};
-vis.hammer.Pan.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "defaults": function () {},
-  "getTouchAction": function () {},
-  "directionTest": function () {},
-  "attrTest": function () {},
-  "emit": function () {},
-  "process": function () {},
-  "set": function () {},
-  "recognizeWith": function () {},
-  "dropRecognizeWith": function () {},
-  "requireFailure": function () {},
-  "dropRequireFailure": function () {},
-  "hasRequireFailures": function () {},
-  "canRecognizeWith": function () {},
-  "tryEmit": function () {},
-  "canEmit": function () {},
-  "recognize": function () {},
-  "reset": function () {}
-};
-vis.hammer.Swipe.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "defaults": function () {},
-  "getTouchAction": function () {},
-  "attrTest": function () {},
-  "emit": function () {},
-  "process": function () {},
-  "set": function () {},
-  "recognizeWith": function () {},
-  "dropRecognizeWith": function () {},
-  "requireFailure": function () {},
-  "dropRequireFailure": function () {},
-  "hasRequireFailures": function () {},
-  "canRecognizeWith": function () {},
-  "tryEmit": function () {},
-  "canEmit": function () {},
-  "recognize": function () {},
-  "reset": function () {}
-};
-vis.hammer.Pinch.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "defaults": function () {},
-  "getTouchAction": function () {},
-  "attrTest": function () {},
-  "emit": function () {},
-  "process": function () {},
-  "set": function () {},
-  "recognizeWith": function () {},
-  "dropRecognizeWith": function () {},
-  "requireFailure": function () {},
-  "dropRequireFailure": function () {},
-  "hasRequireFailures": function () {},
-  "canRecognizeWith": function () {},
-  "tryEmit": function () {},
-  "canEmit": function () {},
-  "recognize": function () {},
-  "reset": function () {}
-};
-vis.hammer.Rotate.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "defaults": function () {},
-  "getTouchAction": function () {},
-  "attrTest": function () {},
-  "process": function () {},
-  "set": function () {},
-  "recognizeWith": function () {},
-  "dropRecognizeWith": function () {},
-  "requireFailure": function () {},
-  "dropRequireFailure": function () {},
-  "hasRequireFailures": function () {},
-  "canRecognizeWith": function () {},
-  "emit": function () {},
-  "tryEmit": function () {},
-  "canEmit": function () {},
-  "recognize": function () {},
-  "reset": function () {}
-};
-vis.hammer.Press.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "defaults": function () {},
-  "getTouchAction": function () {},
-  "process": function () {},
-  "reset": function () {},
-  "emit": function () {},
-  "set": function () {},
-  "recognizeWith": function () {},
-  "dropRecognizeWith": function () {},
-  "requireFailure": function () {},
-  "dropRequireFailure": function () {},
-  "hasRequireFailures": function () {},
-  "canRecognizeWith": function () {},
-  "tryEmit": function () {},
-  "canEmit": function () {},
-  "recognize": function () {}
 };
 vis.Hammer.Input.prototype = {
   "handler": function () {},
