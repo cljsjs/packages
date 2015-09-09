@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.1.0-1")
+(def +version+ "0.1.0-2")
 
 (task-options!
  pom  {:project     'cljsjs/bankersbox
@@ -18,4 +18,13 @@
 
 
 (deftask package []
-  (deps-cljs :name "cljsjs.bankersbox"))
+  (comp
+    (download :url "https://github.com/twilio/BankersBox/archive/v0.1.0.zip"
+              :checksum "79D356CEC64AA3369854FB19560BA81F"
+              :unzip true)
+    (sift :move {#"^BankersBox-([\d\.]*)/bankersbox\.js"
+                 "cljsjs/bankersbox/development/bankersbox.inc.js"})
+    (minify    :in       "cljsjs/bankersbox/development/bankersbox.inc.js"
+               :out      "cljsjs/bankersbox/production/bankersbox.min.inc.js")
+    (sift :include #{#"^cljsjs"})
+    (deps-cljs :name "cljsjs.bankersbox")))

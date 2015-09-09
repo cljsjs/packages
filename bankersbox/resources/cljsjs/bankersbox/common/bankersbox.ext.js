@@ -39,3 +39,27 @@ BankersBox.prototype.keys = function () {};
 BankersBox.prototype.flushdb = function () {};
 BankersBox.prototype.select = function () {}
 
+
+var BankersBoxNullAdapter = function(){};
+BankersBoxNullAdapter.prototype.getItem = function(k) {};
+BankersBoxNullAdapter.prototype.storeItem = function(k, v) {};
+BankersBoxNullAdapter.prototype.removeItem = function(k) {};
+BankersBoxNullAdapter.prototype.clear = function() {};
+
+var BankersBoxLocalStorageAdapter = function(){};
+BankersBoxLocalStorageAdapter.prototype.getItem = function(k) {};
+BankersBoxLocalStorageAdapter.prototype.storeItem = function(k, v) {};
+BankersBoxLocalStorageAdapter.prototype.removeItem = function(k) {};
+BankersBoxLocalStorageAdapter.prototype.clear = function() {};
+
+var BankersBoxFileSystemAdapter = function(){};
+BankersBoxFileSystemAdapter.prototype.getItem = function(k) {};
+BankersBoxFileSystemAdapter.prototype.storeItem = function(k, v) {};
+BankersBoxFileSystemAdapter.prototype.removeItem = function(k) {};
+BankersBoxFileSystemAdapter.prototype.clear = function() {};
+
+var BankersBoxException = function(){};
+BankersBoxException.prototype.toString = function() {};
+
+var BankersBoxKeyException = function(){};
+BankersBoxKeyException.prototype.toString = function() {};
