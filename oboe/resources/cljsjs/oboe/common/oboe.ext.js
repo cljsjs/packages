@@ -1,0 +1,1 @@
+var oboe = function(obj);
