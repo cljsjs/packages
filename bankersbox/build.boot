@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.1.0-2")
+(def +version+ "0.1.0-0")
 
 (task-options!
  pom  {:project     'cljsjs/bankersbox
