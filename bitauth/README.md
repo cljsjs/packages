@@ -3,7 +3,7 @@
 ClojureScript wrapper around BitPay's [BitAuth](https://github.com/bitpay/bitauth) protocol.
 [](dependency)
 ```clojure
-[cljsjs/bitauth "0.2.1"] ;; latest release
+[cljsjs/bitauth "0.2.1-0"] ;; latest release
 ```
 [](/dependency)
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature

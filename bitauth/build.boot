@@ -11,11 +11,12 @@
          '[boot.util :refer [sh]])
 
 (def +version+ "0.2.1")
-(bootlaces! +version+)
+(def +cljsjs-version+ (str +version+ "-0"))
+(bootlaces! +cljsjs-version+)
 
 (task-options!
  pom  {:project     'cljsjs/bitauth
-       :version     +version+
+       :version     +cljsjs-version+
        :description "Authenticate with web services utilizing the same strategy as Bitcoin"
        :url         "https://github.com/bitpay/bitauth"
        :scm         {:url "https://github.com/cljsjs/packages"}
