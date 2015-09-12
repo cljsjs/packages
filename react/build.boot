@@ -29,7 +29,7 @@
        :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
 
 (deftask package []
-  (task-options! push {:ensure-branch nil})
+  (task-options! push {:ensure-branch nil :tag false})
   (comp
     (download :url (-> urls :normal :dev) :checksum (-> urls :normal :dev-checksum))
     (download :url (-> urls :normal :min) :checksum (-> urls :normal :min-checksum))
@@ -40,7 +40,7 @@
 
 (deftask package-with-addons []
   (task-options! pom {:project 'cljsjs/react-with-addons}
-                 push {:ensure-branch nil})
+                 push {:ensure-branch nil :tag false})
   (comp
     (download :url (-> urls :with-addons :dev) :checksum (-> urls :with-addons :dev-checksum))
     (download :url (-> urls :with-addons :min) :checksum (-> urls :with-addons :min-checksum))
