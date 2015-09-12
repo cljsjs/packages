@@ -29,11 +29,11 @@
 // 
 // Code:
 
-var BitAuth = {
-    "getPublicKeyFromPrivateKey": function () {},
-    "getSinFromPublicKey": function () {},
+var bitauth = {
+    "getPublicKeyFromPrivateKey": function (privateKey) {},
+    "getSinFromPublicKey": function (publicKey) {},
     "generateSin": function () {},
-    "sign": function () {},
-    "verifySignature": function () {},
-    "validateSin": function () {}
+    "sign": function (data, privateKey) {},
+    "verifySignature": function (data, publicKey, hexSignature, callBack) {},
+    "validateSin": function (sin, callBack) {}
 };
