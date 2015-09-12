@@ -6,19 +6,19 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def react-version "0.13.3")
-(def +version+ (str react-version "-1"))
+(def react-version "0.14.0-rc1")
+(def +version+ (str react-version "-0"))
 (bootlaces! +version+)
 
 (def urls
   {:normal {:dev (str "http://fb.me/react-" react-version ".js")
-            :dev-checksum "EA609A7373B6EF48B3FC3F403C7ED870"
+            :dev-checksum "EE9F8DC8B2EEE80ABE447BF169FAD159"
             :min (str "http://fb.me/react-" react-version ".min.js")
-            :min-checksum "C3B6B1BDF51C9EF4BA3473A2E1DCB83A"}
+            :min-checksum "AE74CFE9EB24BD2CAC27DAA9623F56A3"}
    :with-addons {:dev (str "http://fb.me/react-with-addons-" react-version ".js")
-                 :dev-checksum "634ECBF4118F756CDED92ACD2EFEC834"
+                 :dev-checksum "A1AECC16EAB452603345F286A0878C22"
                  :min (str "http://fb.me/react-with-addons-" react-version ".min.js")
-                 :min-checksum "7FE3B6790A5DB124191DC3D6669AFE38"}})
+                 :min-checksum "BA74D0B18AB36851830163946177FF88"}})
 
 (task-options!
  pom  {:project     'cljsjs/react
@@ -44,7 +44,7 @@
   (comp
     (download :url (-> urls :with-addons :dev) :checksum (-> urls :with-addons :dev-checksum))
     (download :url (-> urls :with-addons :min) :checksum (-> urls :with-addons :min-checksum))
-    (sift :move {(re-pattern (str "^react-with-addons-" react-version ".js$"))     "cljsjs/development/react-with-addons.inc.js"
-                 (re-pattern (str "^react-with-addons-" react-version ".min.js$")) "cljsjs/production/react-with-addons.min.inc.js"})
+    (sift :move {(re-pattern (str "^react-with-addons-" react-version ".js$"))     "cljsjs/react/development/react-with-addons.inc.js"
+                 (re-pattern (str "^react-with-addons-" react-version ".min.js$")) "cljsjs/react/production/react-with-addons.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react")))

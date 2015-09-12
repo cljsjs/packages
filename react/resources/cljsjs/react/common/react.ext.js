@@ -1,5 +1,5 @@
 /**
- * @fileoverview Closure Compiler externs for Facebook React.js 0.13.3.
+ * @fileoverview Closure Compiler externs for Facebook React.js 0.14.0-rc1
  * @see http://reactjs.org
  * @externs
  */
@@ -157,6 +157,7 @@ React.ReactComponent.prototype.mixins;
 /**
  * @param {Object} nextProps
  * @param {Function=} callback
+ * @deprecated
  */
 React.ReactComponent.prototype.setProps = function(nextProps, callback) {};
 
@@ -177,12 +178,14 @@ React.ReactComponent.prototype.getChildContext = function() {};
 
 /**
  * @return {Element}
+ * @deprecated
  */
 React.ReactComponent.prototype.getDOMNode = function() {};
 
 /**
  * @param {Object} nextProps
  * @param {Function=} callback
+ * @deprecated
  */
 React.ReactComponent.prototype.replaceProps = function(nextProps, callback) {};
 
