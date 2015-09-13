@@ -7,11 +7,12 @@
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +version+ "0.9.24")
-(bootlaces! +version+)
+(def +cljsjs-version+ (str +version+ "-0"))
+(bootlaces! +cljsjs-version+)
 
 (task-options!
  pom  {:project     'cljsjs/paperjs
-       :version     +version+
+       :version     +cljsjs-version+
        :description "The Swiss Army Knife of Vector Graphics Scripting"
        :url         "http://paperjs.org"
        :scm         {:url "https://github.com/cljsjs/packages"}
@@ -19,7 +20,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/paperjs/paper.js/archive/v0.9.24.zip"
+    (download :url (str "https://github.com/paperjs/paper.js/archive/v" +version+ ".zip")
               :checksum "36FC91B3438A8967D1231876F731E918"
               :unzip true)
     (sift :move {#"^paper.js-.*/dist/paper-full.js" "cljsjs/development/paper-full.inc.js"
