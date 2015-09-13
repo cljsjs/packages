@@ -12,3 +12,5 @@ you can require the packaged library like so:
 (ns application.core
   (:require cljsjs.oboe))
 ```
+
+[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
