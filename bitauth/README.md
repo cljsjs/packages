@@ -6,8 +6,7 @@ To include in your `project.clj`:
 
 [](dependency)
 ```clojure
-[cljsjs/bitauth "0.2.1-0"] ;; Official release
-[cljsjs/bitauth "0.2.2-xcthulhu"] ;; Fork with Unicode Support
+[cljsjs/bitauth "0.2.3-xcthulhu"] ;; latest release
 ```
 [](/dependency)
 

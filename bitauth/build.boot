@@ -10,7 +10,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +version+ "0.2.2")
+(def +version+ "0.2.3")
 ;; TODO: Stop using xcthulhu's branch when BitPay merges unicode support
 ;;(def +cljsjs-version+ (str +version+ "-0"))
 (def +cljsjs-version+ (str +version+ "-xcthulhu"))
@@ -30,7 +30,7 @@
     ;; TODO: Stop using xcthulhu's branch when BitPay merges unicode support
     ;;:url (format "https://github.com/bitpay/bitauth/archive/v%s.zip" +version+)
     :url (format "https://github.com/xcthulhu/bitauth/archive/v%s.zip" +version+)
-    :checksum "fefa3d6bc17c84190ae3b51463f44cc4"
+    :checksum "793ECDC5B87FC237F5E7B38B271379D9"
     :unzip true)
    (sift :move {#".*dist/bitauth\.bundle\.js"       "cljsjs/bitauth/development/bitauth.inc.js"
                 #".*dist/bitauth\.browser\.min\.js" "cljsjs/bitauth/production/bitauth.min.inc.js"})
