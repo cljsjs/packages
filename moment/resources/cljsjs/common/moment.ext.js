@@ -278,6 +278,20 @@ Moment.prototype.from = function() {};
 
 /**
  * @nosideeffects
+ * @since 1.0.0
+ * @type {function(!boolean=):!Moment}
+ */
+Moment.prototype.toNow = function() {};
+
+/**
+ * @nosideeffects
+ * @since 1.0.0
+ * @type {function(!(Moment|string|number|Date|Array.<!number>), !boolean=):!Moment}
+ */
+Moment.prototype.to = function() {};
+
+/**
+ * @nosideeffects
  * @since 1.3.0
  * @type {function():!Moment}
  */
