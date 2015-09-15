@@ -147,10 +147,20 @@ var PDFJS = {
     "maxCanvasPixels": {},
     "openExternalLinksInNewWindow": {},
     "getDocument": function () {},
+    "getPage": function () {},
+    "getViewport": function () {},
+    "then": function () {},
+    "cancel": function () {},
     "PDFDataRangeTransport": function () {},
     "Metadata": function () {},
     "AnnotationUtils": {
         "getHtmlElement": function () {}
     },
-    "SVGGraphics": function () {}
+    "SVGGraphics": function () {},
+    "PDFPageView": {
+        "setPdfPage": function () {},
+        "update": function () {},
+        "draw": function () {}
+    },
+    "DefaultTextLayerFactory": {}
 };
