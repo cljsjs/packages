@@ -1,0 +1,17 @@
+3,6d2
+< Object.defineProperty(exports, "__esModule", {
+<   value: true
+< });
+< 
+9c5
+< var _react = require('react');
+---
+> var _react = React;
+13c9
+< var _reactDom = require('react-dom');
+---
+> var _reactDom = ReactDOM;
+259d254
+< exports.default = Waypoint;
+271d265
+< module.exports = exports['default'];
