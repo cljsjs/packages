@@ -266,4 +266,6 @@ var PouchDB = {
     "replicate": function () {},
     "sync": function () {},
     "version": {}
-}
+};
+PouchDB.replicate.to = function() {};
+PouchDB.replicate.from = function() {};
