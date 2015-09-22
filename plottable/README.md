@@ -4,13 +4,9 @@
 ## Description
 This is a CLJSJS package for using [Plottable](http://plottablejs.org/) within your ClojureScript projects.
 
-
 ## Usage
 
 ### Step One
-`D3.js` is a pre-requisite for using Plottable, so [ensure you include the CLJSJS D3 package in your project](https://github.com/cljsjs/packages/tree/master/d3#cljsjsd3).
-
-### Step Two
 Add the dependency to your `build.boot` or `project.clj` file:
 
 [](dependency)
@@ -19,7 +15,7 @@ Add the dependency to your `build.boot` or `project.clj` file:
 ```
 [](/dependency)
 
-### Step Three
+### Step Two
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
 of the Clojurescript compiler. After adding the above dependency to your project
 you can require the packaged library like so:

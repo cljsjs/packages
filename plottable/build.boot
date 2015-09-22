@@ -30,4 +30,5 @@
                         #"plottable.min.js" "cljsjs/plottable/production/plottable.min.inc.js"
                         #"plottable.css"    "cljsjs/plottable/common/plottable.css"})
            (sift :include #{#"^cljsjs"})
-           (deps-cljs :name "cljsjs.plottable")))
+           (deps-cljs :name "cljsjs.plottable"
+                      :requires ["cljsjs.d3"])))
