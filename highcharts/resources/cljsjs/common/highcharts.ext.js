@@ -671,7 +671,8 @@ Highcharts.Chart.prototype = {
   "addSeries": function () {},
   "addAxis": function () {},
   "showLoading": function () {},
-  "hideLoading": function () {}
+  "hideLoading": function () {},
+  "series": []
 };
 Highcharts.Series.prototype = {
   "isCartesian": function () {},
