@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/codemirror "5.6.0-0"] ;; latest release
+[cljsjs/codemirror "5.7.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -22,7 +22,13 @@ You can add the following boot tasks to add the css to your project.
 
 You can know use ```js/CodeMirror```. See [this project](https://github.com/Jonovono/CodeMirror-cljs/blob/master/src/cljs/codemirror_cljs/core.cljs) for examples of wrapping the ```js/CodeMirror``` javascript object with ClojureScript functions.
 
-And also add require the modes you wish to include:
+And also add require the keymaps and modes you wish to include:
+
+```
+cljsjs.codemirror.keymap.emacs
+cljsjs.codemirror.keymap.sublime
+cljsjs.codemirror.keymap.vim
+```
 
 ```
 cljsjs.codemirror.mode.apl
