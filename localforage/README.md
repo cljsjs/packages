@@ -1,8 +1,8 @@
-# cljsjs/localForage
+# cljsjs/localforage
 
 [](dependency)
 ```clojure
-[cljsjs/localForage "1.2.10-0"] ;; latest release
+[cljsjs/localforage "1.2.10-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -10,5 +10,5 @@ After adding the above dependency to your project you can require the packaged l
 
 ```clojure
 (ns application.core
-  (:require cljsjs.localForage))
+  (:require cljsjs.localforage))
 ```
