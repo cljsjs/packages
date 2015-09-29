@@ -8,7 +8,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.25.1-0")
+(def +version+ "0.25.2-0")
 (bootlaces! +version+)
 
 (task-options!
@@ -20,8 +20,8 @@
        :license     {"MIT" "https://raw.githubusercontent.com/react-bootstrap/react-bootstrap/master/LICENSE"}})
 
 (deftask download-react-bootstrap []
-  (download :url      "https://github.com/react-bootstrap/react-bootstrap-bower/archive/v0.25.1.zip"
-            :checksum "EA9A7FD2E427DC4185782130A25555A3"
+  (download :url      "https://github.com/react-bootstrap/react-bootstrap-bower/archive/v0.25.2.zip"
+            :checksum "F8B60FA1D9E489748E81F63BE4EE8DBB"
             :unzip    true))
 
 (deftask package []
