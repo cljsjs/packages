@@ -1,7 +1,7 @@
 // generated with http://www.dotnetwise.com/Code/Externs/
 // to regenerate from the tool:
 // first include http://fb.me/react-0.13.1.js
-// then https://raw.githubusercontent.com/react-bootstrap/react-bootstrap-bower/v0.23.7/react-bootstrap.js
+// then https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.25.2/react-bootstrap.js
 // and enter ReactBootstrap as the javascript object to extern
 
 var ReactBootstrap = {
@@ -174,6 +174,7 @@ var ReactBootstrap = {
             "map": function () {},
             "forEach": function () {},
             "numberOf": function () {},
+            "find": function () {},
             "hasValidComponent": function () {}
         },
         "CustomPropTypes": {
@@ -189,4 +190,4 @@ var ReactBootstrap = {
         },
         "domUtils": function () {}
     }
-}
+};
