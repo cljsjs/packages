@@ -6,10 +6,10 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "2.1.3-0")
+(def library-version "2.1.3")
+(def cljsjs-version "0")
+(def +version+ (str library-version "-" cljsjs-version))
 (bootlaces! +version+)
-
-(def js-version (clojure.string/replace +version+ #"-\d+$" ""))
 
 (task-options!
  pom  {:project     'cljsjs/classnames
@@ -21,10 +21,10 @@
 
 (deftask package []
   (comp
-    (download :url (str "https://github.com/JedWatson/classnames/archive/v" js-version ".zip")
+    (download :url (str "https://github.com/JedWatson/classnames/archive/v" library-version ".zip")
               :checksum "f0643b8b2571a110aa2c8767fbba2b16"
               :unzip    true)
-    (sift     :move     {(re-pattern (str "^classnames-" js-version "/index.js"))
+    (sift     :move     {(re-pattern (str "^classnames-" library-version "/index.js"))
                          "cljsjs/development/classnames.inc.js"})
     (minify   :in       "cljsjs/development/classnames.inc.js"
               :out      "cljsjs/production/classnames.min.inc.js")
