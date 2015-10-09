@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def pubnub-version "3.7.14")
+(def pubnub-version "3.7.15")
 (def +version+ (str pubnub-version "-0"))
 
 (task-options!
