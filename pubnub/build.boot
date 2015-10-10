@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def pubnub-version "3.7.14")
+(def pubnub-version "3.7.15")
 (def +version+ (str pubnub-version "-0"))
 
 (task-options!
@@ -19,8 +19,10 @@
 
 (deftask package []
   (comp
-   (download :url (str "https://cdn.pubnub.com/pubnub-" pubnub-version ".js"))
-   (download :url (str "https://cdn.pubnub.com/pubnub-" pubnub-version ".min.js"))
+   (download :url (str "https://cdn.pubnub.com/pubnub-" pubnub-version ".js")
+             :checksum "3AECB671E6E8BC8D4590EE58976D5981")
+   (download :url (str "https://cdn.pubnub.com/pubnub-" pubnub-version ".min.js")
+             :checksum "15626328946E5EDD08D55C07A1971E6D")
    (sift :move {(re-pattern (str "^pubnub-" pubnub-version ".js$"))
                 "cljsjs/pubnub/development/pubnub.inc.js"
                 (re-pattern (str "^pubnub-" pubnub-version ".min.js$"))
