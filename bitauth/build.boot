@@ -10,8 +10,10 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +version+ "0.2.1")
-(def +cljsjs-version+ (str +version+ "-0"))
+(def +version+ "0.2.3")
+;; TODO: Stop using xcthulhu's branch when BitPay merges unicode support
+;;(def +cljsjs-version+ (str +version+ "-0"))
+(def +cljsjs-version+ (str +version+ "-xcthulhu"))
 (bootlaces! +cljsjs-version+)
 
 (task-options!
@@ -22,25 +24,14 @@
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "https://opensource.org/licenses/MIT"}})
 
-(deftask build-bitauth []
-  (let [tmp (boot/tmp-dir!)]
-    (with-pre-wrap
-      fileset
-      ;; Copy all files in fileset to temp directory
-      (doseq [f (->> fileset boot/input-files)
-              :let [target (io/file tmp (tmpd/path f))]]
-        (io/make-parents target)
-        (io/copy (tmpd/file f) target))
-      (binding [boot.util/*sh-dir* (str (io/file tmp (format "bitauth-%s" +version+)))]
-        ((sh "npm" "install")))
-      (-> fileset (boot/add-resource tmp) boot/commit!))))
-
 (deftask package []
   (comp
-   (download :url (format "https://github.com/bitpay/bitauth/archive/v%s.zip" +version+)
-             :checksum "019e001be682f4ca39b6924b91555765"
-             :unzip true)
-   (build-bitauth)
+   (download
+    ;; TODO: Stop using xcthulhu's branch when BitPay merges unicode support
+    ;;:url (format "https://github.com/bitpay/bitauth/archive/v%s.zip" +version+)
+    :url (format "https://github.com/xcthulhu/bitauth/archive/v%s.zip" +version+)
+    :checksum "793ECDC5B87FC237F5E7B38B271379D9"
+    :unzip true)
    (sift :move {#".*dist/bitauth\.bundle\.js"       "cljsjs/bitauth/development/bitauth.inc.js"
                 #".*dist/bitauth\.browser\.min\.js" "cljsjs/bitauth/production/bitauth.min.inc.js"})
    (sift :include #{#"^cljsjs"})
