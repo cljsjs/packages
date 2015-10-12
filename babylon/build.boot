@@ -19,8 +19,8 @@
 (deftask package []
   (comp
     (download :url "http://cdn.babylonjs.com/2-2/babylon.js")
-    (sift :move {#"babylon.js" "cljsjs/development/babylon.inc.js"})
+    (sift :move {#"babylon.js" "cljsjs/babylon/development/babylon.inc.js"})
     (download :url "http://cdn.babylonjs.com/2-2/babylon.js")
-    (sift :move {#"babylon.js" "cljsjs/production/babylon.min.inc.js"})
+    (sift :move {#"babylon.js" "cljsjs/babylon/production/babylon.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.babylon")))
