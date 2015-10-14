@@ -757,4 +757,10 @@ var L = {
       },
   },
   "PosAnimation": function () {}
-}
+};
+
+L.circleMarker.prototype = function () {};
+L.circleMarker.prototype = {
+    "setRadius": function () {},
+    "addTo": function () {}
+};
