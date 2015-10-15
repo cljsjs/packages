@@ -10,7 +10,7 @@
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
- pom  {:project     'cljsjs/document-register-element
+ pom  {:project     'cljsjs/webcomponents
        :version     +version+
        :description "A suite of polyfills supporting the HTML Web Components specs"
        :url         "https://github.com/webcomponents/webcomponentsjs"
