@@ -1,24 +1,20 @@
 /**
- * @fileoverview Closure Compiler externs for Facebook React.js 0.14.0-rc1
+ * @fileoverview Closure Compiler externs for Facebook React.js 0.14.0
  * @see http://reactjs.org
  * @externs
  */
 
 /**
- * @type {Object}
+ * @type {!Object}
  * @const
  */
 var React = {};
 
 /**
  * @type {string}
+ * @const
  */
 React.version;
-
-/**
- * @param {boolean} shouldUseTouch
- */
-React.initializeTouchEvents = function(shouldUseTouch) {};
 
 React.createClass = function(specification) {};
 React.createFactory = function(reactClass) {};
@@ -50,12 +46,15 @@ React.renderComponent = function(container, mountPoint, callback) {};
  * @param {Element} mountPoint
  * @param {Function=} callback
  * @return {React.ReactComponent}
+ * @deprecated
  */
 React.render = function(container, mountPoint, callback) {};
 
 
 /**
  * @param {Element} container
+ * @return {boolean}
+ * @deprecated
  */
 React.unmountComponentAtNode = function(container) {};
 
@@ -64,24 +63,12 @@ React.unmountComponentAtNode = function(container) {};
  * @return {string}
  * @deprecated
  */
-React.renderComponentToString = function(component) {};
-
-/**
- * @param {React.ReactComponent} component
- * @return {string}
- */
 React.renderToString = function(component) {};
 
 /**
  * @param {React.ReactComponent} component
  * @return {string}
  * @deprecated
- */
-React.renderComponentToStaticMarkup = function(component) {};
-
-/**
- * @param {React.ReactComponent} component
- * @return {string}
  */
 React.renderToStaticMarkup = function(component) {};
 
@@ -108,6 +95,7 @@ React.constructAndRenderComponent = function(constructor, props, container) {};
 React.constructAndRenderComponentByID = function(componentConstructor, props,
   id) {};
 
+/** @deprecated */
 React.findDOMNode = function(component) {};
 
 React.cloneElement = function(element, props) {};
