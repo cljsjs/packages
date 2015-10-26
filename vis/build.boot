@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "4.8.1-0")
+(def +version+ "4.9.0-0")
 (bootlaces! +version+)
 
 (task-options!
@@ -20,8 +20,8 @@
 
 (deftask package []
   (comp
-   (download  :url      "https://github.com/almende/vis/archive/v4.8.1.zip"
-              :checksum "9408EF6D143496AB82960EBB222D5B6D"
+   (download  :url      "https://github.com/almende/vis/archive/v4.9.0.zip"
+              :checksum "C94CE9A86F0DADE358BDDFB19700ABA3"
               :unzip    true)
    (sift      :move     {#"^vis(.*)/dist/vis.js"
                          "cljsjs/vis/development/vis.inc.js"
