@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.0.70-0")
+(def +version+ "r72-include-css3d")
 (bootlaces! +version+)
 
 (task-options!
@@ -19,8 +19,8 @@
 
 (deftask package []
   (comp
-   (download  :url      "https://github.com/mrdoob/three.js/archive/r70.zip"
-              :checksum "c7c41bb170d86e74bfa58556f2e207a8"
+   (download  :url      "https://github.com/sonwh98/three.js/archive/r72-include-css3d.zip"
+              :checksum "301b6b1b26910cfd9dda26e3d983d94d"
               :unzip    true)
    (sift      :move     {#"^three\.js(.*)/build/three.js"
                          "cljsjs/three/development/three.inc.js"
