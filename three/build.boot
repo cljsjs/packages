@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.0.72-0")
+(def +version+ "0.0.73-0")
 (bootlaces! +version+)
 
 (task-options!
@@ -19,12 +19,14 @@
 
 (deftask package []
   (comp
-   (download  :url      "https://github.com/mrdoob/three.js/archive/r72.zip"
-              :checksum "61B5D234234DA34D2AD27CC6A268FD18"
-              :unzip    true)
-   (sift      :move     {#"^three\.js(.*)/build/three.js"
+   (download  :url      "https://raw.githubusercontent.com/mrdoob/three.js/r73/build/three.js"
+              :checksum "288e32f1c54b8b5f9fcc45f3340dff6c")
+   (download  :url      "https://raw.githubusercontent.com/mrdoob/three.js/r73/build/three.min.js"
+              :checksum "1cbf0b3bafbd5d7f6fbdbe8da8cc98c4")
+   
+   (sift      :move     {#"^three\.js"
                          "cljsjs/three/development/three.inc.js"
-                         #"^three\.js(.*)/build/three.min.js"
+                         #"^three.min.js"
                          "cljsjs/three/production/three.min.inc.js"})
    (sift      :include  #{#"^cljsjs"})
    (deps-cljs :name     "cljsjs.three")))
