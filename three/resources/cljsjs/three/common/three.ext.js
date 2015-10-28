@@ -297,7 +297,7 @@ var THREE = {
   "BufferGeometry": function () {},
   "Geometry": function () {},
   "GeometryIdCount": {},
-  "Camera": function () {},
+  "Camera": {"lookAt": function (){}},
   "CubeCamera": function () {},
   "OrthographicCamera": function () {},
   "PerspectiveCamera": function () {},
