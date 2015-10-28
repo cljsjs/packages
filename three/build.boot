@@ -21,9 +21,11 @@
   (comp
    (download  :url      "https://raw.githubusercontent.com/mrdoob/three.js/r72/build/three.js"
               :checksum "e2bbc9da473919716d11964b1a3813d8")
+   (download  :url      "https://raw.githubusercontent.com/mrdoob/three.js/r72/build/three.min.js"
+              :checksum "130f3f943b1dffc0c682ecea913c92ba")
    (sift      :move     {#"^three.js"
-                         "cljsjs/three/development/three.inc.js"})
-   (minify :in "cljsjs/three/development/three.inc.js"
-           :out "cljsjs/three/production/three.min.inc.js")
+                         "cljsjs/three/development/three.inc.js"
+                         #"^three.min.js"
+                         "cljsjs/three/production/three.min.inc.js"})
    (sift      :include  #{#"^cljsjs"})
    (deps-cljs :name     "cljsjs.three")))
