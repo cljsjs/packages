@@ -19,12 +19,11 @@
 
 (deftask package []
   (comp
-   (download  :url      "https://github.com/mrdoob/three.js/archive/r72.zip"
-              :checksum "61B5D234234DA34D2AD27CC6A268FD18"
-              :unzip    true)
-   (sift      :move     {#"^three\.js(.*)/build/three.js"
-                         "cljsjs/three/development/three.inc.js"
-                         #"^three\.js(.*)/build/three.min.js"
-                         "cljsjs/three/production/three.min.inc.js"})
+   (download  :url      "https://raw.githubusercontent.com/mrdoob/three.js/r72/build/three.js"
+              :checksum "e2bbc9da473919716d11964b1a3813d8")
+   (sift      :move     {#"^three.js"
+                         "cljsjs/three/development/three.inc.js"})
+   (minify :in "cljsjs/three/development/three.inc.js"
+           :out "cljsjs/three/production/three.min.inc.js")
    (sift      :include  #{#"^cljsjs"})
    (deps-cljs :name     "cljsjs.three")))
