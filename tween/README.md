@@ -1,8 +1,8 @@
-# cljsjs/pubnub
+# cljsjs/three
 
 [](dependency)
 ```clojure
-[cljsjs/pubnub "3.7.15-0"] ;; latest release
+[cljsjs/tween "16.3.1"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,5 +12,9 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.pubnub))
+  (:require cljsjs.tween))
 ```
+
+See example project https://github.com/sonwh98/four
+
+[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies

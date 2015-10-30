@@ -1,8 +1,8 @@
-# cljsjs/pubnub
+# cljsjs/react-router
 
 [](dependency)
 ```clojure
-[cljsjs/pubnub "3.7.15-0"] ;; latest release
+[cljsjs/react-motion "0.3.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,5 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.pubnub))
+  (:require cljsjs.react-motion))
 ```
+
+[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
