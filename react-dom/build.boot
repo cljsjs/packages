@@ -1,5 +1,5 @@
-(def react-version "0.14.0-rc1")
-(def +version+ (str react-version "-0"))
+(def react-version "0.14.0")
+(def +version+ (str react-version "-1"))
 
 (set-env!
   :resource-paths #{"resources"}
@@ -14,9 +14,9 @@
 
 (def urls
   {:dom {:dev (str "http://fb.me/react-dom-" react-version ".js")
-         :dev-checksum "83D85CDB39C2163E2B2B8E0039C85A72"
+         :dev-checksum "5F65D8A76B0C66B5A2FA7E6C931FDE26"
          :min (str "http://fb.me/react-dom-" react-version ".min.js")
-         :min-checksum "26C070AFD400BFCDD7D7A90582C07E3B"}})
+         :min-checksum "4863AACB9D45FB636C6F9C7E8A98457A"}})
 
 (task-options!
  pom  {:project     'cljsjs/react-dom

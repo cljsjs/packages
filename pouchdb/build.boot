@@ -7,7 +7,7 @@
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +upstream+ "3.5.0")
-(def +revision+ "0")
+(def +revision+ "1")
 (def +version+ (str +upstream+ "-" +revision+))
 (bootlaces! +version+)
 
@@ -22,9 +22,9 @@
 (deftask package []
   (comp
    (download :url (str "https://github.com/pouchdb/pouchdb/releases/download/" +upstream+ "/pouchdb-" +upstream+ ".js")
-             :checksum "893386BACBC08648E9F7DBA35CC7797F")
+             :checksum "BA1E518E08D71EDA0FF21C5E8F924406")
    (download :url (str "https://github.com/pouchdb/pouchdb/releases/download/" +upstream+ "/pouchdb-" +upstream+ ".min.js")
-             :checksum "B102D1867A877F0791D27A79EFC1A65F")
+             :checksum "04598A4B41C584F04720B4E8BDB27B9D")
    (sift :move {#"pouchdb-([\d+\.]*).js" "cljsjs/pouchdb/development/pouchdb.inc.js"
                 #"pouchdb-([\d+\.]*).min.js" "cljsjs/pouchdb/production/pouchdb.min.inc.js"})
    (sift :include #{#"^cljsjs"})

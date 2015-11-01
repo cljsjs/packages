@@ -6,11 +6,12 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "2.2.7-1")
+(def +version+ "2.3.1")
+(def +cljs-version+ (str +version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/firebase
-       :version     +version+
+       :version     +cljs-version+
        :description "Javascript client for Firebase.com"
        :url         "https://www.firebase.com/docs/web/api/"
        :scm         {:url "https://github.com/cljsjs/packages"}
@@ -18,8 +19,8 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/firebase/firebase-bower/archive/v2.2.7.zip"
-              :checksum "4BA3685E136567A0BA1F63AE446914A2"
+    (download :url (str "https://github.com/firebase/firebase-bower/archive/v" +version+ ".zip")
+              :checksum "4497ADAF3F5846885A1F429230BB54CB"
               :unzip true)
     (sift :move {#"firebase-bower-([\d\.]*)/firebase.js" "cljsjs/development/firebase.inc.js"})
     (sift :include #{#"^cljsjs"})

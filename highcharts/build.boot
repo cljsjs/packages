@@ -7,7 +7,7 @@
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def highcharts-version "4.1.8")
-(def cljsjs-version "-0")
+(def cljsjs-version "-1")
 (def +version+ (str highcharts-version cljsjs-version))
 (bootlaces! +version+)
 

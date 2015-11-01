@@ -7,7 +7,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def vega-version "2.2.4")
+(def vega-version "2.2.5")
 
 (def +version+ (str vega-version "-0"))
 (bootlaces! +version+)
@@ -25,7 +25,7 @@
     (download
       :url (str "https://github.com/vega/vega/archive/v" vega-version ".zip")
       :unzip true
-      :checksum "3C22ABAD710653848980BAF444DD12DF")
+      :checksum "72A040B2FE6F62328DB02C7C0E0DA68D")
     (sift :move {(re-pattern (str "^vega-" vega-version "/vega.js$")) "cljsjs/development/vega.inc.js"
                  (re-pattern (str "^vega-" vega-version "/vega.min.js$")) "cljsjs/production/vega.min.inc.js"})
     (sift :include #{#"^cljsjs"})
