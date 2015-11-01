@@ -7,25 +7,33 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "1.7.1-0")
+(def nvd3-version "1.8.1")
+(def +version+ (str nvd3-version "-0"))
 (bootlaces! +version+)
 
 (task-options!
  pom  {:project     'cljsjs/nvd3
        :version     +version+
        :description "A reusable chart library for d3.js"
-       :url         "http://nvd3-community.github.io/nvd3/"
+       :url         "http://nvd3.org"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
 
+(defn cdn-url
+  [file]
+  (str "https://cdnjs.cloudflare.com/ajax/libs/nvd3/"
+       nvd3-version "/" file))
+
 (deftask package []
   (comp
-    (download :url "https://github.com/nvd3-community/nvd3/zipball/master"
-              :unzip true)
-    (sift :move {#"^nvd3-community-nvd3-([\w\.]*)/build/nv\.d3\.js"      "cljsjs/nvd3/development/nvd3.inc.js"
-                 #"^nvd3-community-nvd3-([\w\.]*)/build/nv\.d3\.min\.js" "cljsjs/nvd3/production/nvd3.min.inc.js"
-                 #"^nvd3-community-nvd3-([\w\.]*)/build/nv\.d3\.css"      "cljsjs/nvd3/development/nvd3.inc.css"
-                 #"^nvd3-community-nvd3-([\w\.]*)/build/nv\.d3\.min\.css" "cljsjs/nvd3/production/nvd3.min.inc.css"})
+    (download :url (cdn-url "nv.d3.js"))
+    (download :url (cdn-url "nv.d3.min.js"))
+    (download :url (cdn-url "nv.d3.css"))
+    (download :url (cdn-url "nv.d3.min.css"))
+    (sift :move {#"nv.d3.js"       "cljsjs/nvd3/development/nvd3.inc.js"
+                 #"nv.d3.min.js"   "cljsjs/nvd3/production/nvd3.min.inc.js"
+                 #"nv.d3.css"      "cljsjs/nvd3/common/nvd3.css"
+                 #"nv.d3.min.css"  "cljsjs/nvd3/common/nvd3.min.css"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.nvd3"
                :requires ["cljsjs.d3"])))
