@@ -20,7 +20,8 @@ You can add the following boot tasks to add the css to your project.
     (sift :move {#"cljsjs/codemirror/development/codemirror.css" "vendor/codemirror/codemirror.css"})))
 ```
 
-You can know use ```js/CodeMirror```. See [this project](https://github.com/Jonovono/CodeMirror-cljs/blob/master/src/cljs/codemirror_cljs/core.cljs) for examples of wrapping the ```js/CodeMirror``` javascript object with ClojureScript functions.
+You can now use ```js/CodeMirror```. See [this project](https://github.com/Jonovono/CodeMirror-cljs/blob/master/src/cljs/codemirror_cljs/core.cljs)
+for examples of wrapping the ```js/CodeMirror``` javascript object with ClojureScript functions.
 
 Require any of the additional features you wish to include:
 
