@@ -8,7 +8,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "5.0.1-0")
+(def +version+ "5.0.1-1")
 
 (task-options!
   pom  {:project     'cljsjs/jqgrid

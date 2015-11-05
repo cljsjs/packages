@@ -1,7 +1,7 @@
 # cljsjs/jqgrid
 [](dependency)
 ```clojure
-[cljsjs/jqgrid "5.0.0-0"] ;; latest release
+[cljsjs/jqgrid "5.0.1-1"] ;; latest release
 ```
 [](/dependency)
 

@@ -39,6 +39,9 @@ jQuery.prototype.jqGrid.updateColumns  = function(){};
 // addon Grid Methods
 jQuery.prototype.jqGrid.filterGrid  = function(){};
 jQuery.prototype.jqGrid.filterToolbar  = function(){};
+jQuery.prototype.jqGrid[0].clearToolbar  = function(){};
+jQuery.prototype.jqGrid[0].toggleToolbar  = function(){};
+jQuery.prototype.jqGrid[0].triggerToolbar  = function(){};
 jQuery.prototype.jqGrid.getColProp  = function(){};
 jQuery.prototype.jqGrid.GridDestroy  = function(){};
 jQuery.prototype.jqGrid.setGridState  = function(){};
