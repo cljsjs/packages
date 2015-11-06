@@ -5,12 +5,17 @@ var CodeMirrorObj = function() {
 
 };
 
+/**
+ * Get the document object.
+ * @return {CodeMirrorDoc}
+ */
+CodeMirrorObj.prototype.getDoc = function(){};
 
 /**
- * Calculates and returns a {line, ch} object for a zero-based index who's value is relative to the start 
- * of the editor's text. If the index is out of range of the text then thereturned object is clipped to 
+ * Calculates and returns a {line, ch} object for a zero-based index who's value is relative to the start
+ * of the editor's text. If the index is out of range of the text then thereturned object is clipped to
  * start or end of the text respectively.
- */ 
+ */
 CodeMirrorObj.prototype.posFromIndex = function(off){};
 
 /**
@@ -238,21 +243,6 @@ CodeMirrorObj.prototype.setLine = function(n, text){};
  */
 CodeMirrorObj.prototype.removeLine = function(n){};
 /**
- * Get the text between the given points in the editor, which should be <code>{line, ch}</code> objects.
- * @param {{line:number, ch:number}} from
- * @param {{line:number, ch:number}} to
- */
-CodeMirrorObj.prototype.getRange = function(from, to){};
-/**
- * Replace the part of the document between <code>from</code> and <code>to</code> with the given string.
- * <code>from</code> and <code>to</code> must be <code>{line, ch}</code> objects. to can be left off to simply
- * insert the string at position from.
- * @param {string} str
- * @param {{line:number, ch:number}} from
- * @param {{line:number, ch:number}} to
- */
-CodeMirrorObj.prototype.replaceRange = function(str, from, to){};
-/**
  * Calculates and returns a <code>{line, ch}</code> object for a zero-based <code>index</code> who's value is relative
  * to the start of the editor's text. If the <code>index</code> is out of range of the text then the returned object is
  * clipped to start or end of the text respectively.
@@ -380,3 +370,24 @@ CodeMirror.fromTextArea = function(textAreaElement) {};
  * @param {*} value
  */
 CodeMirror.defineExtension = function(name, value){};
+
+/**
+ * @constructor
+ */
+var CodeMirrorDoc = function(){};
+
+/**
+ * Get the text between the given points in the editor, which should be <code>{line, ch}</code> objects.
+ * @param {{line:number, ch:number}} from
+ * @param {{line:number, ch:number}} to
+ */
+CodeMirrorDoc.prototype.getRange = function(from, to){};
+/**
+ * Replace the part of the document between <code>from</code> and <code>to</code> with the given string.
+ * <code>from</code> and <code>to</code> must be <code>{line, ch}</code> objects. to can be left off to simply
+ * insert the string at position from.
+ * @param {string} str
+ * @param {{line:number, ch:number}} from
+ * @param {{line:number, ch:number}} to
+ */
+CodeMirrorDoc.prototype.replaceRange = function(str, from, to){};

@@ -9,7 +9,7 @@
 (def codemirror-version "5.7.0")
 (def codemirror-checksum "0E203131B66E77DE9DCE32E13D56B812")
 
-(def +version+ (str codemirror-version "-1"))
+(def +version+ (str codemirror-version "-2"))
 
 (task-options!
   pom  {:project     'cljsjs/codemirror
@@ -67,4 +67,3 @@
                  #"^cljsjs/codemirror/common/keymap/(.*)\.js" "cljsjs/codemirror/common/keymap/$1.inc.js"
                  #"^cljsjs/codemirror/common/addon/(.*)/(.*)\.js" "cljsjs/codemirror/common/addon/$1/$2.inc.js"})
     (generate-extra-deps)))
-
