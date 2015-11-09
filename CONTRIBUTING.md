@@ -15,16 +15,18 @@ where and how their contribution could be improved:
 
 1. The directory structure in the `target/` after running `boot
    package` looks like the following
-    target/
-    ├── cljsjs
-    │   └── <library-name>
-    │       ├── common
-    │       │   └── <library-name>.ext.js
-    │       ├── development
-    │       │   └── <library-name>.inc.js
-    │       └── production
-    │            └── <library-name>.min.inc.js
-    └── deps.cljs
+
+        target/
+        ├── cljsjs
+        │   └── <library-name>
+        │       ├── common
+        │       │   └── <library-name>.ext.js
+        │       ├── development
+        │       │   └── <library-name>.inc.js
+        │       └── production
+        │            └── <library-name>.min.inc.js
+        └── deps.cljs
+
 2. The externs are reasonably complete. Externs are an inexact science
    and it can't easily be verified if externs are complete but PRs
    should generally aim to provide externs as complete as possible.
