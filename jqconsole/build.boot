@@ -8,6 +8,15 @@
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +version+ "2.13.1-0")
+
+(defn ->site-version
+  [boot-version]
+  (str "v" (clojure.string/join "." (drop 1 (re-find #"(\d+)\.(\d+)\.(\d+)\-.*" boot-version)))))
+
+(defn build-url
+  [boot-version]
+  (str "https://github.com/replit/jq-console/archive/" (->site-version boot-version) ".zip"))
+
 (bootlaces! +version+)
 
 (task-options!
@@ -20,13 +29,13 @@
 
 (deftask package []
   (comp
-   (download  :url      "https://github.com/replit/jq-console/zipball/master"
+   (download  :url      (build-url +version+)
               :unzip    true)
-   (sift      :move     {#"^replit-jq-console-(.*)/lib/jqconsole.js"
+   (sift      :move     {#"^jq-console-(.*)/lib/jqconsole.js"
                          "cljsjs/jqconsole/development/jqconsole.inc.js"
-                         #"^replit-jq-console-(.*)/jqconsole.min.js"
+                         #"^jq-console-(.*)/jqconsole.min.js"
                          "cljsjs/jqconsole/production/jqconsole.min.inc.js"
-                         #"^replit-jq-console-(.*)/css/ansi.css"
+                         #"^jq-console-(.*)/css/ansi.css"
                          "cljsjs/jqconsole/common/css/ansi.css"})
    (sift      :include  #{#"^cljsjs"})
    (deps-cljs :name     "cljsjs.jqconsole"
