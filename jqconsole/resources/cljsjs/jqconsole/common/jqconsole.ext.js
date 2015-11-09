@@ -85,5 +85,7 @@ JQConsole.prototype.IsDisabled = function() {};
 JQConsole.prototype.MoveToStart = function(all_lines) {};
 JQConsole.prototype.MoveToEnd = function(all_lines) {};
 JQConsole.prototype.Clear = function() {};
+JQConsole.prototype.SetKeyPressHandler = function(handler) {};
+JQConsole.prototype.SetControlKeyHandler = function(handler) {};
 
 /*---------------------- END Public Methods --------------------------- */

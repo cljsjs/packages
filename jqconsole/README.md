@@ -1,6 +1,6 @@
 # cljsjs/jqconsole
 ```clojure
-[cljsjs/jqconsole "2.12.0-0"] ;; latest release
+[cljsjs/jqconsole "2.13.1-0"] ;; latest release
 ```
 Packages up [jq-console](https://github.com/replit/jq-console).
 
