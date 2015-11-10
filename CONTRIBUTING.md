@@ -36,6 +36,8 @@ where and how their contribution could be improved:
    version of the packages original version. This allows improving
    packages while clearly indicating that the original source version
    is unchanged.
+5. The PR's commits start with `[<library-name>]` followed by a description
+   of the change. Commits are squashed where appropriate.
 
 After you've reviewed a pull request or two we will happily add you to
 the cljsjs group on Clojars allowing you to deploy updates on your
