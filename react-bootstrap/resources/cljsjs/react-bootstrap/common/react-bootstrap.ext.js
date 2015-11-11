@@ -1,7 +1,7 @@
 // generated with http://www.dotnetwise.com/Code/Externs/
 // to regenerate from the tool:
 // first include https://fb.me/react-0.14.0.js
-// then https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.27.1/react-bootstrap.js
+// then https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.27.3/react-bootstrap.js
 // and enter ReactBootstrap as the javascript object to extern
 
 // see end for manual additions
