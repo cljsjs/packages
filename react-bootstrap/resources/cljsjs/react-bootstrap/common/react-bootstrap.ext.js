@@ -1,7 +1,7 @@
 // generated with http://www.dotnetwise.com/Code/Externs/
 // to regenerate from the tool:
-// first include http://fb.me/react-0.13.1.js
-// then https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.25.2/react-bootstrap.js
+// first include http://fb.me/react-0.14.0.js
+// then https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.27.3/react-bootstrap.js
 // and enter ReactBootstrap as the javascript object to extern
 
 var ReactBootstrap = {
@@ -33,6 +33,8 @@ var ReactBootstrap = {
         "getBsClassSet": function () {},
         "prefixClass": function () {}
     },
+    "Breadcrumb": function () {},
+    "BreadcrumbItem": function () {},
     "Button": function () {},
     "ButtonGroup": function () {},
     "ButtonInput": function () {},
@@ -40,41 +42,12 @@ var ReactBootstrap = {
     "Carousel": function () {},
     "CarouselItem": function () {},
     "Col": function () {},
-    "CollapsibleMixin": {
-        "propTypes": {
-            "defaultExpanded": function () {},
-            "expanded": function () {}
-        },
-        "getInitialState": function () {},
-        "componentWillMount": function () {},
-        "componentWillUpdate": function () {},
-        "componentDidUpdate": function () {},
-        "_afterWillUpdate": function () {},
-        "_checkStartAnimation": function () {},
-        "_checkToggleCollapsing": function () {},
-        "_handleExpand": function () {},
-        "_handleCollapse": function () {},
-        "_addEndEventListener": function () {},
-        "_removeEndEventListener": function () {},
-        "dimension": function () {},
-        "isExpanded": function () {},
-        "getCollapsibleClassSet": function () {}
-    },
     "CollapsibleNav": function () {},
     "Dropdown": function () {},
     "DropdownButton": function () {},
-    "NavDropdown": function () {},
-    "SplitButton": function () {},
-    "FadeMixin": {
-        "componentWillMount": function () {},
-        "_fadeIn": function () {},
-        "_fadeOut": function () {},
-        "_handleFadeOutEnd": function () {},
-        "componentDidMount": function () {},
-        "componentWillUnmount": function () {}
-    },
     "Glyphicon": function () {},
     "Grid": function () {},
+    "Image": function () {},
     "Input": function () {},
     "Interpolate": function () {},
     "Jumbotron": function () {},
@@ -83,12 +56,14 @@ var ReactBootstrap = {
     "ListGroupItem": function () {},
     "MenuItem": function () {},
     "Modal": function () {},
-    "ModalHeader": function () {},
-    "ModalTitle": function () {},
     "ModalBody": function () {},
     "ModalFooter": function () {},
+    "ModalHeader": function () {},
+    "ModalTitle": function () {},
     "Nav": function () {},
     "Navbar": function () {},
+    "NavBrand": function () {},
+    "NavDropdown": function () {},
     "NavItem": function () {},
     "Overlay": function () {},
     "OverlayTrigger": function () {},
@@ -100,8 +75,10 @@ var ReactBootstrap = {
     "PanelGroup": function () {},
     "Popover": function () {},
     "ProgressBar": function () {},
+    "ResponsiveEmbed": function () {},
     "Row": function () {},
     "SafeAnchor": function () {},
+    "SplitButton": function () {},
     "styleMaps": {
         "CLASSES": {
             "alert": {},
@@ -152,15 +129,11 @@ var ReactBootstrap = {
     },
     "SubNav": function () {},
     "Tab": function () {},
-    "TabbedArea": function () {},
     "Table": function () {},
-    "TabPane": function () {},
     "Tabs": function () {},
     "Thumbnail": function () {},
     "Tooltip": function () {},
     "Well": function () {},
-    "Portal": function () {},
-    "Position": function () {},
     "Collapse": function () {},
     "Fade": function () {},
     "FormControls": {
@@ -175,19 +148,8 @@ var ReactBootstrap = {
             "forEach": function () {},
             "numberOf": function () {},
             "find": function () {},
+            "findValidComponents": function () {},
             "hasValidComponent": function () {}
-        },
-        "CustomPropTypes": {
-            "deprecated": function () {},
-            "isRequiredForA11y": function () {},
-            "requiredRoles": function () {},
-            "exclusiveRoles": function () {},
-            "mountable": function () {},
-            "elementType": function () {},
-            "keyOf": function () {},
-            "singlePropFrom": function () {},
-            "all": function () {}
-        },
-        "domUtils": function () {}
+        }
     }
 };
