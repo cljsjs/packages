@@ -47,4 +47,29 @@ Parts of this process could also be automated more, contributions in
 that direction are welcome in the [boot-cljsjs](https://github.com/cljsjs/boot-cljsjs)
 project.
 
+## Releases
+
+#### Building locally
+
+To test that your additions or changes to a library were successful,
+run the `package` and `build-jar` tasks like so **from within the
+library-specific directory**:
+
+```
+$ boot package build-jar
+```
+
+This will run your package instructions and create a jar for the given
+library in your local maven repository. From there, it can be included
+in projects and tested locally.
+
+#### Deploying to Clojars
+
+Once a package has been built and tested, it may be ready for release.
+Simply add the `push-release` task to the previous invocation:
+
+```
+$ boot package build-jar push-release
+```
+
 [prs]: https://github.com/cljsjs/packages/pulls
