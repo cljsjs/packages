@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 # Retrieve current versions from Clojars
 
 declare -A versions
