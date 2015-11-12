@@ -42,7 +42,7 @@ for x in *; do
 
             (
             cd $x
-            echo $GPG_PASSPHRASE | boot package build-jar push-release
+            boot package -- build-jar -- push --gpg-sign --gpg-passphrase $GPG_PASSPHRASE --repo "deploy-clojars"
             )
         fi
     fi
