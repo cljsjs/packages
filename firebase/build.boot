@@ -6,12 +6,12 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "2.3.1")
-(def +cljs-version+ (str +version+ "-0"))
+(def +lib-version+ "2.3.1")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/firebase
-       :version     +cljs-version+
+       :version     +version+
        :description "Javascript client for Firebase.com"
        :url         "https://www.firebase.com/docs/web/api/"
        :scm         {:url "https://github.com/cljsjs/packages"}

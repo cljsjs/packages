@@ -9,8 +9,8 @@
   '[adzerk.bootlaces :refer :all]
   '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def chartist-version "0.9.4")
-(def +version+ (str chartist-version "-0"))
+(def +lib-version+ "0.9.4")
+(def +version+ (str +lib-version+ "-0"))
 (bootlaces! +version+)
 
 (task-options!

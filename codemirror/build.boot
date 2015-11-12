@@ -6,10 +6,10 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def codemirror-version "5.7.0")
+(def +lib-version+ "5.7.0")
 (def codemirror-checksum "0E203131B66E77DE9DCE32E13D56B812")
 
-(def +version+ (str codemirror-version "-3"))
+(def +version+ (str +lib-version+ "-3"))
 
 (task-options!
   pom  {:project     'cljsjs/codemirror
@@ -49,7 +49,7 @@
 
 (deftask package []
   (comp
-    (download :url (format "https://github.com/codemirror/CodeMirror/archive/%s.zip" codemirror-version)
+    (download :url (format "https://github.com/codemirror/CodeMirror/archive/%s.zip" +lib-version+)
               :unzip true
               :checksum codemirror-checksum)
     (sift :move {#"^CodeMirror-([\d\.]*)/lib/codemirror\.js"    "cljsjs/codemirror/development/codemirror.inc.js"

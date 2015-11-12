@@ -6,9 +6,8 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def highcharts-version "4.1.8")
-(def cljsjs-version "-1")
-(def +version+ (str highcharts-version cljsjs-version))
+(def +lib-version+ "4.1.8")
+(def +version+ (str +lib-version+ "-1"))
 (bootlaces! +version+)
 
 (task-options!
@@ -21,9 +20,9 @@
 
 (deftask package []
   (comp
-   (download :url      (str "http://code.highcharts.com/" highcharts-version "/highcharts.js")
+   (download :url      (str "http://code.highcharts.com/" +lib-version+ "/highcharts.js")
              :checksum "236BEAA96DBC1413D5D467E418CBFEA8")
-   (download :url      (str "http://code.highcharts.com/" highcharts-version "/highcharts.src.js")
+   (download :url      (str "http://code.highcharts.com/" +lib-version+ "/highcharts.src.js")
              :checksum "41195C3B6190A9344C5E1EF9F21BDF2F")
    (sift :move {#"highcharts.js"     "cljsjs/production/highcharts.min.inc.js"})
    (sift :move {#"highcharts.src.js"     "cljsjs/development/highcharts.inc.js"})

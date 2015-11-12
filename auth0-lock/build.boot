@@ -6,8 +6,8 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def auth0-lock-version "7.7.1")
-(def +version+ (str auth0-lock-version "-0"))
+(def +lib-version+ "7.7.1")
+(def +version+ (str +lib-version+ "-0"))
 (bootlaces! +version+)
 
 (task-options!

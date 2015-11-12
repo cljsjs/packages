@@ -8,8 +8,8 @@
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 
-(def airbrake-version "0.5.3")
-(def +version+ (str airbrake-version "-0"))
+(def +lib-version+ "0.5.3")
+(def +version+ (str +lib-version+ "-0"))
 
 (bootlaces! +version+)
 
