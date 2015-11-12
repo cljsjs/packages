@@ -1,0 +1,20 @@
+machine:
+  java:
+    version: oraclejdk8
+dependencies:
+  pre:
+    - curl -L https://github.com/boot-clj/boot-bin/releases/download/2.4.2/boot.sh -o ~/bin/boot
+    - chmod +x ~/bin/boot
+  override:
+    # Fixme, because first boot invocation after install is no-op
+    - boot
+    # Download bootlaces and boot-cljsjs
+    - cd airbrake; boot show -d
+test:
+  override:
+    - echo 1
+deployment:
+  master:
+    branch: master
+    commands:
+      - ./build-updates.sh
