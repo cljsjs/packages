@@ -9,6 +9,10 @@ dependencies:
     - curl -L https://github.com/boot-clj/boot-bin/releases/download/2.4.2/boot.sh -o ~/bin/boot
     - chmod +x ~/bin/boot
   override:
+    - echo -e "use-agent\ndefault-key cljsjs.robot@gmail.com\npassphrase $GPG_PASSPHRASE" >> ~/.gnupg/gpg.conf
+    - echo -e $GPG_KEY > gpg.key
+    - gpg --allow-secret-key-import --import gpg.key
+    - rm gpg.key
     # Fixme, because first boot invocation after install is no-op
     - boot
     # Download bootlaces and boot-cljsjs
