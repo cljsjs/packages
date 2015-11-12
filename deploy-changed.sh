@@ -42,7 +42,7 @@ for x in *; do
 
             (
             cd $x
-            boot package build-jar push-release
+            echo $GPG_PASSPHRASE | boot package build-jar push-release
             )
         fi
     fi
