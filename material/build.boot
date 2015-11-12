@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def material-version "1.0.5")
+(def material-version "1.0.6")
 (def +version+ (str material-version "-0"))
 (bootlaces! +version+)
 
@@ -22,7 +22,7 @@
   (task-options! push {:ensure-branch nil})
   (comp
     (download :url (str "https://github.com/google/material-design-lite/archive/v" material-version ".zip")
-              :checksum "f2016824b8dad95d015cf8dd5356187f"
+              :checksum "4869bf87ec07690f884dceeb51403c98"
               :unzip true)
     (sift :move {(re-pattern (str "^material-design-lite-" material-version "/material.js$"))        "cljsjs/material/development/material.inc.js"
                  (re-pattern (str "^material-design-lite-" material-version "/material.css$"))        "cljsjs/material/development/material.inc.css"
