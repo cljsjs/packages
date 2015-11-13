@@ -10,7 +10,7 @@
   '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def chartist-version "0.9.4")
-(def +version+ (str chartist-version "-0"))
+(def +version+ (str chartist-version "-1"))
 (bootlaces! +version+)
 
 (task-options!
