@@ -7,7 +7,7 @@
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def react-version "0.14.0")
-(def +version+ (str react-version "-1"))
+(def +version+ (str react-version "-2"))
 (bootlaces! +version+)
 
 (def urls
