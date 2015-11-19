@@ -1,11 +1,11 @@
 (def react-version "0.14.3")
-(def +version+ (str react-version "-0"))
+(def +version+ (str react-version "-1"))
 
 (set-env!
   :resource-paths #{"resources"}
   :dependencies [['adzerk/bootlaces   "0.1.9" :scope "test"]
                  ['cljsjs/boot-cljsjs "0.5.0" :scope "test"]
-                 ['cljsjs/react       +version+]])
+                 ['cljsjs/react       (str react-version "-0")]])
 
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])

@@ -1,8 +1,8 @@
-# cljsjs/react
+# cljsjs/react-dom
 
 [](dependency)
 ```clojure
-[cljsjs/react-dom "0.14.3-0"] ;; latest release
+[cljsjs/react-dom "0.14.3-1"] ;; latest release
 ```
 [](/dependency)
 
