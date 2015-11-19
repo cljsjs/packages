@@ -1,4 +1,4 @@
-(def react-version "0.14.1")
+(def react-version "0.14.2")
 (def +version+ (str react-version "-0"))
 
 (set-env!
@@ -14,9 +14,9 @@
 
 (def urls
   {:dom {:dev (str "http://fb.me/react-dom-" react-version ".js")
-         :dev-checksum "156326931FCEC1E23CFB186DEC5D8A50"
+         :dev-checksum "86A09B3B55DECD24162EF0B6C71F0C9B"
          :min (str "http://fb.me/react-dom-" react-version ".min.js")
-         :min-checksum "6459F70B83B53CDBAB99F9DCD633475A"}})
+         :min-checksum "BF825B716978C13C4EE9FEF4C6AFBCED"}})
 
 (task-options!
  pom  {:project     'cljsjs/react-dom
