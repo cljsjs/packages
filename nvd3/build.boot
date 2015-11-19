@@ -7,8 +7,8 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def nvd3-version "1.8.1")
-(def +version+ (str nvd3-version "-0"))
+(def +lib-version+ "1.8.1")
+(def +version+ (str +lib-version+ "-0"))
 (bootlaces! +version+)
 
 (task-options!
@@ -22,7 +22,7 @@
 (defn cdn-url
   [file]
   (str "https://cdnjs.cloudflare.com/ajax/libs/nvd3/"
-       nvd3-version "/" file))
+       +lib-version+ "/" file))
 
 (deftask package []
   (comp
