@@ -8,7 +8,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.7.0-1")
+(def +version+ "0.7.1-1")
 (bootlaces! +version+)
 
 (task-options!
@@ -21,8 +21,8 @@
 
 (deftask package []
   (comp
-   (download :url "https://github.com/little-arhat/llexus-form/archive/0.7.0.zip"
-              :checksum "1ea6558e6e30444e6956c9434addf24d"
+   (download :url "https://github.com/little-arhat/llexus-form/archive/0.7.1.zip"
+              :checksum "21e684a951ac800cca1ff67d443f466f"
               :unzip true)
    (sift :move {#"^llexus-form-([\d\.-]*)/dist/llexus-form\.js"      "cljsjs/llexus-form/development/llexus-form.inc.js"
                 #"^llexus-form-([\d\.-]*)/dist/llexus-form\.min\.js" "cljsjs/llexus-form/production/llexus-form.min.inc.js"})
