@@ -1,4 +1,4 @@
-# cljsjs/react-router
+# cljsjs/react-select
 
 [](dependency)
 ```clojure
