@@ -23,7 +23,7 @@ for x in *; do
 
         y=$(curl -s https://clojars.org/api/artifacts/cljsjs/$x | jq -r ".recent_versions | map(select(.version == \"$version\")) | length")
 
-        if [[ $y == 0 ]]; then
+        if [[ "$y" == "" ]] || [[ $y == 0 ]]; then
             echo "$x version $version is not deployed"
 
             (
