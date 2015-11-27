@@ -6,8 +6,8 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def resposive-nav-version "1.0.39")
-(def +version+ (str resposive-nav-version "-0"))
+(def +lib-version+ "1.0.39")
+(def +version+ (str +lib-version+ "-0"))
 (bootlaces! +version+)
 
 (task-options!

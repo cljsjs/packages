@@ -6,8 +6,8 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def markdown-version "0.6.0-beta1")
-(def +version+ (str markdown-version "-0"))
+(def +lib-version+ "0.6.0-beta1")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom  {:project     'cljsjs/markdown
@@ -21,7 +21,7 @@
   (comp
     (download
       :url (str "https://github.com/evilstreak/markdown-js/releases/download/v"
-             markdown-version "/markdown-browser-" markdown-version ".tgz")
+             +lib-version+ "/markdown-browser-" +lib-version+ ".tgz")
       :decompress true
       :compression-format "gz"
       :archive-format "tar")

@@ -1,11 +1,11 @@
-(def react-version "0.14.3")
-(def +version+ (str react-version "-0"))
+(def +lib-version+ "0.14.3")
+(def +version+ (str +lib-version+ "-0"))
 
 (set-env!
   :resource-paths #{"resources"}
   :dependencies [['adzerk/bootlaces   "0.1.9" :scope "test"]
                  ['cljsjs/boot-cljsjs "0.5.0" :scope "test"]
-                 ['cljsjs/react       (str react-version "-0")]])
+                 ['cljsjs/react       (str +lib-version+ "-0")]])
 
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
@@ -13,9 +13,9 @@
 (bootlaces! +version+)
 
 (def urls
-  {:dom {:dev (str "http://fb.me/react-dom-server-" react-version ".js")
+  {:dom {:dev (str "http://fb.me/react-dom-server-" +lib-version+ ".js")
          :dev-checksum "A80477045BF235F1482E39D2CDAD3E73"
-         :min (str "http://fb.me/react-dom-server-" react-version ".min.js")
+         :min (str "http://fb.me/react-dom-server-" +lib-version+ ".min.js")
          :min-checksum "B407F77B24784A3804E19E84685C27AE"}})
 
 (task-options!
@@ -31,7 +31,7 @@
   (comp
     (download :url (-> urls :dom :dev) :checksum (-> urls :dom :dev-checksum))
     (download :url (-> urls :dom :min) :checksum (-> urls :dom :min-checksum))
-    (sift :move {(re-pattern (str "^react-dom-server-" react-version ".js$"))     "cljsjs/react-dom-server/development/react-dom-server.inc.js"
-                 (re-pattern (str "^react-dom-server-" react-version ".min.js$")) "cljsjs/react-dom-server/production/react-dom-server.min.inc.js"})
+    (sift :move {(re-pattern (str "^react-dom-server-" +lib-version+ ".js$"))     "cljsjs/react-dom-server/development/react-dom-server.inc.js"
+                 (re-pattern (str "^react-dom-server-" +lib-version+ ".min.js$")) "cljsjs/react-dom-server/production/react-dom-server.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react.dom.server" :requires ["cljsjs.react"])))

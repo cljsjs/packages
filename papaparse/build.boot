@@ -6,11 +6,11 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def papaparse-version "4.1.1")
-(def +version+ (str papaparse-version "-1"))
+(def +lib-version+ "4.1.1")
+(def +version+ (str +lib-version+ "-1"))
 
 (def download-url
-  (str "https://github.com/mholt/PapaParse/archive/" papaparse-version ".tar.gz"))
+  (str "https://github.com/mholt/PapaParse/archive/" +lib-version+ ".tar.gz"))
 
 (task-options!
   pom  {:project     'cljsjs/papaparse

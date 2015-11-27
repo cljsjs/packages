@@ -6,9 +6,8 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def jszip-version "2.5.0")
-(def jszip-release "0")
-(def +version+ (str jszip-version "-" jszip-release))
+(def +lib-version+ "2.5.0")
+(def +version+ (str +lib-version+ "-0"))
 (bootlaces! +version+)
 
 (task-options!
@@ -29,10 +28,10 @@
 (deftask package []
   (comp
    (download
-    :url (str github "Stuk/jszip/v" jszip-version "/dist/jszip.js")
+    :url (str github "Stuk/jszip/v" +lib-version+ "/dist/jszip.js")
     :checksum "b2b9eb4084c03189e0c32bac39f9f44b")
    (download
-    :url (str github "Stuk/jszip/v" jszip-version "/dist/jszip.min.js")
+    :url (str github "Stuk/jszip/v" +lib-version+ "/dist/jszip.min.js")
     :checksum "88731e24340ce38647f6d595f0e464cb")
    (sift :move {#"^jszip.js"
                 "cljsjs/jszip/development/jszip.inc.js"

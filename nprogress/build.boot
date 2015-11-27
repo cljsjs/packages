@@ -6,8 +6,8 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def nprogress-version "0.2.0")
-(def +version+ (str nprogress-version "-1"))
+(def +lib-version+ "0.2.0")
+(def +version+ (str +lib-version+ "-1"))
 (bootlaces! +version+)
 
 (task-options!

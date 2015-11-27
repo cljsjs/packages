@@ -6,13 +6,13 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def oboe-version "2.1.2")
-(def +version+ (str oboe-version "-1"))
+(def +lib-version+ "2.1.2")
+(def +version+ (str +lib-version+ "-1"))
 (bootlaces! +version+)
 
 (defn url [ext]
  (str "https://raw.githubusercontent.com/jimhigson/oboe.js/v"
-      oboe-version
+      +lib-version+
       "/dist/oboe-browser"
       ext))
 
