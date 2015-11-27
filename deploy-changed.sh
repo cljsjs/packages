@@ -19,9 +19,9 @@ for x in *; do
         version=$(grep "def +lib-version+" $x/build.boot | grep -o "\".*\"" | head -n1 | cut -d \" -f 2)
         version=$version$(grep "def +version+" $x/build.boot | grep -o "\".*\"" | head -n1 | cut -d \" -f 2)
 
-        y=$(curl -s https://clojars.org/api/artifacts/cljsjs/$x | jq -r ".recent_versions | map(select(.version == \"$version\")) | length")
+        y=$(curl -s -o /dev/null --write-out %{http_code} https://clojars.org/repo/cljsjs/$x/$version/$x-$version.pom)
 
-        if [[ "$y" == "" ]] || [[ $y == 0 ]]; then
+        if [[ $y != "200" ]]; then
             echo "$x version $version is not deployed"
 
             (
