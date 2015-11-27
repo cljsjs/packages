@@ -609,7 +609,9 @@ d3.svg.axis.prototype = {
     "tickSubdivide": function () {},
     "tickSize": function () {},
     "tickPadding": function () {},
-    "tickFormat": function () {}
+    "tickFormat": function () {},
+    "innerTickSize": function () {},
+    "outerTickSize": function () {}
 };
 d3.svg.brush.prototype = function () {};
 d3.svg.brush.prototype = {
