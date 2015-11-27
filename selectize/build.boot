@@ -8,7 +8,7 @@
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "0.12.1")
-(def +version+ "1")
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/selectize
