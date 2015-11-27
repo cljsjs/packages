@@ -76,6 +76,7 @@ vec3.rotateX = function(out, a, b, c){};
 vec3.rotateY = function(out, a, b, c){};
 vec3.rotateZ = function(out, a, b, c){};
 vec3.forEach = function(a, stride, offset, count, fn, arg){};
+vec3.angle = function(a, b){};
 vec3.str = function (a){};
 var vec4 = {};
 vec4.create = function(){};
