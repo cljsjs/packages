@@ -6,8 +6,8 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def lib-version "3.0.1")
-(def +version+ (str lib-version "-0"))
+(def +lib-version+ "3.0.1")
+(def +version+ (str +lib-version+ "-0"))
 (bootlaces! +version+)
 
 (task-options!
@@ -29,5 +29,3 @@
                 #"^long\.min\.js" "cljsjs/long/development/long.min.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.long")))
-
-
