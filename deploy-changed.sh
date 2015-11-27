@@ -1,19 +1,17 @@
 #!/bin/bash
 
-set -e
-
 IFS=$OFS
 
 for x in *; do
     if [[ -d $x ]]; then
         if [[ $x = "jquery" ]]; then
             echo "WARNING: jquery not supported"
-            break;
+            continue
         fi
 
         if [[ ! -f $x/build.boot ]]; then
             echo "WARNING: $x skipped"
-            break;
+            continue
         fi
 
         id=$(grep :project $x/build.boot | grep -o "'.*" | head -n1 | cut -c 2-)
