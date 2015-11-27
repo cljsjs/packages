@@ -1,4 +1,4 @@
-# cljsjs/react-router
+# cljsjs/react-motion
 
 [](dependency)
 ```clojure
