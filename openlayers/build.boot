@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "3.5.0-1")
+(def +version+ "3.10.1")
 
 (task-options!
  pom  {:project     'cljsjs/openlayers
@@ -18,11 +18,11 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/openlayers/ol3/releases/download/v3.5.0/v3.5.0.zip"
-              :checksum "7A2A23F1ACFCBE9E5CC9EF0F710FE937"
+    (download :url "https://github.com/openlayers/ol3/releases/download/v3.10.1/v3.10.1.zip"
+              :checksum "C050655A3526492C206A9F0ED71851AB"
               :unzip true)
-    (download :url "https://github.com/openlayers/ol3/archive/v3.5.0.zip"
-              :checksum "02CB2E53BF9E29A78A3FE0F008B05563"
+    (download :url "https://github.com/openlayers/ol3/archive/v3.10.1.zip"
+              :checksum "BF5D94BF54307468FE329B45A0A44665"
               :unzip true)
     (sift :move {#"^v([\d\.]*)/ol/ol/" "cljsjs/openlayers/development/ol/"
                  #"^v([\d\.]*)/ol\.ext/" "cljsjs/openlayers/development/ol.ext/"
