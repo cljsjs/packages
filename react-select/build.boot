@@ -9,7 +9,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.0.0-beta5")
+(def +lib-version+ "1.0.0-beta6")
 (def +version+ (str +lib-version+ "-0"))
 (bootlaces! +version+)
 
@@ -28,18 +28,16 @@
 
 (deftask package []
   (comp
-    (download :url "https://raw.githubusercontent.com/JedWatson/react-select/master/dist/react-select.js")
-    (download :url "https://raw.githubusercontent.com/JedWatson/react-select/master/dist/react-select.css")
-    (sift :move {#"^react-select.js$" "cljsjs/react-select/development/react-select.inc.js"
-                 #"^react-select.css$" "cljsjs/react-select/development/react-select.inc.css"})
+    (download :url (str "https://github.com/JedWatson/react-select/archive/v" +lib-version+ ".zip")
+	      :checksum "7DBDA8770F221E881ADE123C72F05279"	
+              :unzip true)
 
-    (download :url "https://raw.githubusercontent.com/JedWatson/react-select/master/dist/react-select.min.js")
-    (download :url "https://raw.githubusercontent.com/JedWatson/react-select/master/dist/react-select.min.css")
-    (sift :move {#"^react-select.min.js$" "cljsjs/react-select/production/react-select.min.inc.js"
-                 #"^react-select.min.css$" "cljsjs/react-select/production/react-select.min.inc.css"})
+    (sift :move {#"^react-select.*[/ \\]dist[/ \\]react-select.js$" "cljsjs/react-select/development/react-select.inc.js"
+	         #"^react-select.*[/ \\]dist[/ \\]react-select.min\.js$" "cljsjs/react-select/production/react-select.min.inc.js"
+	         #"^react-select.*[/ \\]dist[/ \\]react-select.css$" "cljsjs/react-select/common/react-select.inc.css"})
 
-    (sift :to-resource #{#".*.inc.css"})
     (sift :include #{#"^cljsjs"})
+
     (deps-cljs :name "cljsjs.react-select"
                :requires ["cljsjs.react"
                           "cljsjs.classnames"
