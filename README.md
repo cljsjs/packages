@@ -29,6 +29,12 @@ If you'd like to contribute there's a
 [small section on that](https://github.com/cljsjs/packages/wiki#contribute)
 as well.
 
+# to build an extern
+
+- remove the existing folder if it exists: `rm -r  ~/.m2/repository/cljsjs/<lib name>`
+- cd into the root of the lib eg: `cd packages/<lib name>`
+- run `boot package build-jar`
+
 [fileset-doc]: https://github.com/boot-clj/boot/wiki/Filesets
 [boot-cljsjs]: https://github.com/cljsjs/boot-cljsjs
 [build.boot]: react/build.boot
