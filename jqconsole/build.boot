@@ -7,15 +7,8 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "2.13.2-0")
-
-(defn ->site-version
-  [boot-version]
-  (str "v" (clojure.string/join "." (drop 1 (re-find #"(\d+)\.(\d+)\.(\d+)\-.*" boot-version)))))
-
-(defn build-url
-  [boot-version]
-  (str "https://github.com/replit/jq-console/archive/" (->site-version boot-version) ".zip"))
+(def +lib-version+ "2.13.2")
+(def +version+ (str +lib-version+ "-0"))
 
 (bootlaces! +version+)
 
@@ -29,7 +22,7 @@
 
 (deftask package []
   (comp
-   (download  :url      (build-url +version+)
+   (download  :url      (str "https://github.com/replit/jq-console/archive/v" +lib-version+ ".zip")
               :unzip    true)
    (sift      :move     {#"^jq-console-(.*)/lib/jqconsole.js"
                          "cljsjs/jqconsole/development/jqconsole.inc.js"
