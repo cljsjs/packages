@@ -14,8 +14,8 @@
 (task-options!
  pom  {:project     'cljsjs/react-input-mask
        :version     +version+
-       :description "Auto-resizing input field for React"
-       :url         "http://jedwatson.github.io/react-input-mask/"
+       :description "Yet another react component for input masking"
+       :url         "http://https://github.com/sanniassin/react-input-mask"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
