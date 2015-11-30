@@ -1,7 +1,5 @@
-(def version-number "1.1.5")
-(def npm-version (str "v" version-number))
-(def revision 0)
-(def +version+ (str version-number "-" revision))
+(def +lib-version+ "1.1.5")
+(def +version+ (str +lib-version+ "-0"))
 
 (set-env!
   :resource-paths #{"resources"}
@@ -25,9 +23,9 @@
 (deftask package  []
   (task-options! push {:ensure-branch nil :tag false})
   (comp
-    (download :url (str "https://raw.githubusercontent.com/gpbl/react-day-picker/" npm-version "/dist/DayPicker.js")
+    (download :url (str "https://raw.githubusercontent.com/gpbl/react-day-picker/v" +lib-version+ "/dist/DayPicker.js")
               :checksum "A7F8F2251ACF74D2D8129C755F28AB42")
-    (download :url (str "https://raw.githubusercontent.com/gpbl/react-day-picker/" npm-version "/src/style.css")
+    (download :url (str "https://raw.githubusercontent.com/gpbl/react-day-picker/v" +lib-version+ "/src/style.css")
               :checksum "61DBCCFA489CDD52090BCE7900800F28")
     (sift :move {#"^DayPicker.js$"
                  "cljsjs/react-day-picker/development/react-day-picker.inc.js"
