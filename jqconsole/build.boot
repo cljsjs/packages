@@ -7,7 +7,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "2.13.1-0")
+(def +version+ "2.13.2-0")
 
 (defn ->site-version
   [boot-version]
