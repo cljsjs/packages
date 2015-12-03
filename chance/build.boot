@@ -6,7 +6,8 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.7.3-0")
+(def +lib-version+ "0.7.3")
+(def +version+ (str +lib-version+ "-0"))
 (bootlaces! +version+)
 
 (task-options!
@@ -19,9 +20,9 @@
 
 (deftask package []
   (comp
-    (download :url "http://chancejs.com/chance-0.7.3.js"
+    (download :url (str "http://chancejs.com/chance-" +lib-version+ ".js")
               :checksum "1ba2c414dabb25fdd5a078622748935d")
-    (download :url "http://chancejs.com/chance-0.7.3.min.js"
+    (download :url (str "http://chancejs.com/chance-" +lib-version+ ".min.js")
               :checksum "6626802c618649c394f817e5142bb4b1")
     (sift :move {#"chance-([\d\.]*).js" "cljsjs/development/chance.inc.js"
                  #"chance-([\d\.]*).min.js" "cljsjs/production/chance.min.inc.js"})

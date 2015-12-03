@@ -6,7 +6,8 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "2.2.0-0")
+(def +lib-version+ "2.2.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/babylon
@@ -15,7 +16,7 @@
        :url         "http://www.babylonjs.com/"
        :license     {"Apache" "http://www.apache.org/licenses/LICENSE-2.0"}
        :scm         {:url "https://github.com/cljsjs/packages"}})
-			 
+
 (deftask package []
   (comp
     (download :url "http://cdn.babylonjs.com/2-2/babylon.js")
