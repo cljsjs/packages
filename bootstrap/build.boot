@@ -7,7 +7,8 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "3.3.6-0")
+(def +lib-version+ "3.3.6")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom  {:project     'cljsjs/bootstrap
@@ -19,7 +20,7 @@
 
 (deftask package []
   (comp
-   (download :url "https://github.com/twbs/bootstrap/releases/download/v3.3.6/bootstrap-3.3.6-dist.zip"
+   (download :url (str "https://github.com/twbs/bootstrap/releases/download/v" +lib-version+ "/bootstrap-" +lib-version+ "-dist.zip")
              :checksum "229936b042baadfc9f167244575ffe12"
              :unzip true)
    (sift :move {#"^bootstrap-([\d\.]*)-dist/js/bootstrap.js" "cljsjs/bootstrap/development/bootstrap.inc.js"
