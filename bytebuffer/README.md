@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/bytebuffer "5.0.0-0"] ;; latest release
+[cljsjs/bytebuffer "5.0.0-1"] ;; latest release
 ```
 [](/dependency)
 
