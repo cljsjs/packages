@@ -5,7 +5,8 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.0.1-0") ; MathBox 1, *not* MathBox 2
+(def +lib-version+ "0.0.1") ; MathBox 1, *not* MathBox 2
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom {:project 'cljsjs/mathbox
