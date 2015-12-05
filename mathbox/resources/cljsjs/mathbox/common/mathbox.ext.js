@@ -1,13 +1,9 @@
-
-// definitely global:
-// getElementById
-
 var ThreeBox = {};
 ThreeBox.preload = function(element, options) {};
 
-var MathBox = {};
-// var mathBox = function(element, options);
 var window.mathBox = function(element, options);
+
+var MathBox = {};
 MathBox.start = function() {};
 MathBox.platonic = function(options) {};
 MathBox.curve = function(options) {};
@@ -22,6 +18,5 @@ MathBox.animate = function(object, attributes, options) {};
 MathBox.clone = function(selector, options, animate) {};
 MathBox.vector = function(options) {};
 MathBox.remove = function() {};
-
 MathBox.get = function(selector) {};
 MathBox.set = function(selector, options) {};
