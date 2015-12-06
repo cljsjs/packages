@@ -6,7 +6,8 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "3.5.7-1")
+(def +lib-version+ "3.5.7")
+(def +version+ (str +lib-version+ "-1"))
 (bootlaces! +version+)
 
 (task-options!
@@ -19,7 +20,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/mbostock/d3/archive/v3.5.7.zip"
+    (download :url (str "https://github.com/mbostock/d3/archive/v" +lib-version+ ".zip")
               :checksum "8FBD9872D28CCFE1F266A6EE4B5D4205"
               :unzip true)
     (sift :move {#"^d3-([\d\.]*)/d3\.js"      "cljsjs/d3/development/d3.inc.js"

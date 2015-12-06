@@ -7,7 +7,8 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "1.3.2-0")
+(def +lib-version+ "1.4.0")
+(def +version+ (str +lib-version+ "-0"))
 (bootlaces! +version+)
 
 (task-options!
@@ -21,8 +22,8 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/dbushell/Pikaday/archive/1.3.2.zip"
-              :checksum "5D69BD5584F32291608D9E6EB739CD2D"
+    (download :url (str "https://github.com/dbushell/Pikaday/archive/" +lib-version+ ".zip")
+              :checksum "12766879AC4E23CE71768FE8A706C4A7"
               :unzip true)
     (sift :move {#"^Pikaday.*/pikaday\.js" "cljsjs/common/pikaday.inc.js"
                  #"^Pikaday.*/scss/pikaday\.scss" "cljsjs/common/pikaday.scss"

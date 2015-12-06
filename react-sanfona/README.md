@@ -1,8 +1,8 @@
-# cljsjs/bytebuffer
+# cljsjs/react-sanfona
 
 [](dependency)
 ```clojure
-[cljsjs/bytebuffer "5.0.0-1"] ;; latest release
+[cljsjs/react-sanfona "0.0.4-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.bytebuffer))
+  (:require cljsjs.react-sanfona))
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies

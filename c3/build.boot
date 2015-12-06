@@ -7,7 +7,8 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.4.10-0")
+(def +lib-version+ "0.4.10")
+(def +version+ (str +lib-version+ "-0"))
 (bootlaces! +version+)
 
 (task-options!
@@ -20,10 +21,10 @@
 
 (deftask package []
   (comp
-   (download :url      "https://github.com/masayuki0812/c3/archive/0.4.10.zip"
+   (download :url      (str "https://github.com/masayuki0812/c3/archive/" +lib-version+ ".zip")
              :checksum "86E26485D03248E7D989B4FBD8A63ECD"
              :unzip    true)
-   (sift :move {#"^c3-([\d\.]*)/c3\.js"      "cljsjs/c3/development/c3.inc.js" 
+   (sift :move {#"^c3-([\d\.]*)/c3\.js"      "cljsjs/c3/development/c3.inc.js"
                 #"^c3-([\d\.]*)/c3\.min\.js" "cljsjs/c3/production/c3.min.inc.js"
                 #"^c3-([\d\.]*)/c3\.css"      "cljsjs/c3/common/c3.css"
                 #"^c3-([\d\.]*)/c3\.min\.css" "cljsjs/c3/common/c3.min.css"})
