@@ -23,7 +23,7 @@
 
 (defn github [file]
   (str "https://raw.githubusercontent.com/gionkunz/chartist-js/v"
-       chartist-version "/dist/" file))
+       +lib-version+ "/dist/" file))
 
 (deftask package []
   (comp
