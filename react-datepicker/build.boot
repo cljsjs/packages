@@ -2,7 +2,8 @@
   :resource-paths #{"resources"}
   :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
                   [cljsjs/boot-cljsjs "0.5.0"  :scope "test"]
-		  [cljsjs/react "0.14.3-0"]])
+		  [cljsjs/react "0.14.3-0"]
+                  [cljsjs/moment "2.10.6-0"]])
 
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
@@ -37,4 +38,5 @@
     (sift :include #{#"^cljsjs"})
 
     (deps-cljs :name "cljsjs.react-datepicker"
-               :requires ["cljsjs.react"])))
+               :requires ["cljsjs.react"
+                          "cljsjs.moment"])))
