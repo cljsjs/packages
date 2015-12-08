@@ -8,7 +8,7 @@
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "1.4.0")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 (bootlaces! +version+)
 
 (task-options!
@@ -25,7 +25,11 @@
     (download :url (str "https://github.com/dbushell/Pikaday/archive/" +lib-version+ ".zip")
               :checksum "12766879AC4E23CE71768FE8A706C4A7"
               :unzip true)
-    (sift :move {#"^Pikaday.*/pikaday\.js" "cljsjs/common/pikaday.inc.js"
-                 #"^Pikaday.*/scss/pikaday\.scss" "cljsjs/common/pikaday.scss"
-                 #"^Pikaday.*/css/pikaday\.css" "cljsjs/common/pikaday.css"})
+    (sift :move {#"^Pikaday.*/pikaday\.js"        "cljsjs/pikaday/development/pikaday.inc.js"
+                 #"^Pikaday.*/scss/pikaday\.scss" "cljsjs/pikaday/development/pikaday.scss"
+                 #"^Pikaday.*/css/pikaday\.css"   "cljsjs/pikaday/development/pikaday.css"})
+    (minify :in  "cljsjs/pikaday/development/pikaday.inc.js"
+            :out "cljsjs/pikaday/production/pikaday.min.inc.js")
+    (minify :in  "cljsjs/pikaday/development/pikaday.css"
+            :out "cljsjs/pikaday/production/pikaday.min.css")
     (sift :include #{#"^cljsjs/" #"^deps.cljs$"})))
