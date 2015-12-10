@@ -1,5 +1,7 @@
 # cljsjs/ocean
 
+Wraps https://github.com/jbouny/ocean which provides a THREE.js water material
+
 [](dependency)
 ```clojure
 [cljsjs/ocean "1.0.0"] ;; latest release
