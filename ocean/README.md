@@ -1,4 +1,4 @@
-# cljsjs/three-water-material
+# cljsjs/ocean
 
 [](dependency)
 ```clojure
@@ -12,7 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.three-water-material))
+  (:require cljsjs.ocean))
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
