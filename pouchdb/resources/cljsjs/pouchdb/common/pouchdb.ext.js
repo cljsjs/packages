@@ -47,7 +47,6 @@ var PouchDB = {
     "removeListener": function () {},
     "setMaxListeners": function () {},
     "parseAdapter": function () {},
-    "destroy": function () {},
     "adapter": function () {},
     "plugin": function () {},
     "defaults": function () {},
