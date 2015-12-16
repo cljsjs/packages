@@ -1,15 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]
                   [cljsjs/moment "2.9.0-3"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[boot.task-helpers]
+(require '[boot.task-helpers]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +version+ "2.0.3-0")
-(bootlaces! +version+)
 
 (task-options!
   push {:ensure-clean false}

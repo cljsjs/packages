@@ -1,10 +1,8 @@
 (set-env!
- :dependencies '[[adzerk/bootlaces   "0.1.11" :scope "test"]
-                 [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
 (require '[boot.core :as core]
          '[boot.tmpdir :as tmpd]
-         '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +version+ "1.0.4-1")

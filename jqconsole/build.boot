@@ -1,16 +1,13 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[adzerk/bootlaces "0.1.12" :scope "test"]
-                 [cljsjs/boot-cljsjs "0.5.0"  :scope "test"]
+ :dependencies '[[cljsjs/boot-cljsjs "0.5.0"  :scope "test"]
                  [cljsjs/jquery "2.1.4-0"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "2.13.2")
 (def +version+ (str +lib-version+ "-0"))
 
-(bootlaces! +version+)
 
 (task-options!
  pom {:project     'cljsjs/jqconsole

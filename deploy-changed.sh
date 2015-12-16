@@ -1,5 +1,7 @@
 #!/bin/bash
 
+BOOT_VERSION=2.5.0
+
 IFS=$OFS
 
 for x in *; do
@@ -26,7 +28,7 @@ for x in *; do
 
             (
             cd $x
-            BOOT_VERSION=2.5.0-SNAPSHOT boot package -- build-jar -- push --gpg-sign --repo clojars --repo-map "{:username :gpg :password :gpg}"
+            boot package -- build-jar -- push --gpg-sign --repo clojars --repo-map "{:username :gpg :password :gpg}"
             )
         fi
     fi

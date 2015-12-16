@@ -1,13 +1,10 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.11" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.4.8"  :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.4.8"  :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +version+ "3.0.7-0")
-(bootlaces! +version+)
 
 (task-options!
  pom  {:project     'cljsjs/pixi

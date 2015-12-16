@@ -1,13 +1,10 @@
 (set-env!
- :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                 [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "3.0.1")
 (def +version+ (str +lib-version+ "-1"))
-(bootlaces! +version+)
 
 (task-options!
  pom  {:project     'cljsjs/long

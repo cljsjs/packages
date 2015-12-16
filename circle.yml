@@ -14,7 +14,7 @@ dependencies:
     - echo -e $GPG_KEY | tr "|" "\n" > gpg.key
     - gpg --allow-secret-key-import --import gpg.key
     - rm gpg.key
-    # Download bootlaces and boot-cljsjs
+    # Download boot-cljsjs
     # Also, run nearly no-op tasks to download pod deps
     - cd airbrake; boot show -d -- download -u http://circleci.com -- decompress -p x
 test:

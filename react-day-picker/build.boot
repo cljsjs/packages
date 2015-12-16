@@ -3,14 +3,11 @@
 
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies [['adzerk/bootlaces   "0.1.9" :scope "test"]
-                 ['cljsjs/boot-cljsjs "0.5.0" :scope "test"]
-                 ['cljsjs/react       "0.14.3-0" :scope "provided"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]
+                  [cljsjs/react       "0.14.3-0" :scope "provided"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(bootlaces! +version+)
 
 (task-options!
  pom  {:project     'cljsjs/react-day-picker
