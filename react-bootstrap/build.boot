@@ -1,12 +1,13 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]
-                  [cljsjs/react-dom "0.14.0-1"]
-                  [org.webjars.bower/bootstrap "3.3.5"]])
+                  [cljsjs/react-dom "0.14.3-1"]
+                  [org.webjars.bower/bootstrap "3.3.6"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.27.3-0")
+(def +lib-version+ "0.28.1")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/react-bootstrap
@@ -17,8 +18,8 @@
        :license     {"MIT" "https://raw.githubusercontent.com/react-bootstrap/react-bootstrap/master/LICENSE"}})
 
 (deftask download-react-bootstrap []
-  (download :url      "https://github.com/react-bootstrap/react-bootstrap-bower/archive/v0.27.3.zip"
-            :checksum "fe32b73aa12bd5d2cd920652933c873c"
+  (download :url      "https://github.com/react-bootstrap/react-bootstrap-bower/archive/v0.28.1.zip"
+            :checksum "a9df3496eee7df123e22cb409509551a"
             :unzip    true))
 
 (deftask package []
