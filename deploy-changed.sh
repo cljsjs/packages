@@ -1,7 +1,5 @@
 #!/bin/bash
 
-export BOOT_VERSION=2.5.1
-
 IFS=$OFS
 
 for x in *; do

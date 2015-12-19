@@ -1,6 +1,8 @@
 machine:
   java:
     version: oraclejdk8
+  envinronment:
+    BOOT_VERSION: 2.5.1
 dependencies:
   cache_directories:
     - "~/.boot/cache/lib"
