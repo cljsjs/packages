@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BOOT_VERSION=2.5.0
+export BOOT_VERSION=2.5.1
 
 IFS=$OFS
 
@@ -28,7 +28,7 @@ for x in *; do
 
             (
             cd $x
-            boot package -- build-jar -- push --gpg-sign --repo clojars --repo-map "{:username :gpg :password :gpg}"
+            boot package -- pom -- jar -- push --ensure-release --gpg-sign --repo clojars --repo-map "{:username \"$CLOJARS_USER\" :password \"$CLOJARS_PASS\"}"
             )
         fi
     fi
