@@ -1,4 +1,4 @@
-# cljsjs/three
+# cljsjs/spin
 
 [](dependency)
 ```clojure
