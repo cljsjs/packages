@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "5.8.0")
-(def codemirror-checksum "a0378a6bd7131f04246a40bb3ce00c19")
+(def +lib-version+ "5.10.0")
+(def codemirror-checksum "7F7B5E11436B8C66AB1B4287E800D08C")
 
 (def +version+ (str +lib-version+ "-0"))
 
