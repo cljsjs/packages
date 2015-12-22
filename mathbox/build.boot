@@ -1,9 +1,7 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                 [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+ :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "0.0.1") ; MathBox 1, *not* MathBox 2
 (def +version+ (str +lib-version+ "-0"))

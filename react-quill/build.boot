@@ -1,16 +1,13 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces "0.1.11" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]
                   [cljsjs/quill "0.20.0-0"]
                   [cljsjs/react "0.13.3-1"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "0.3.0")
 (def +version+ (str +lib-version+ "-0"))
-(bootlaces! +version+)
 
 (task-options!
  pom  {:project     'cljsjs/react-quill

@@ -1,10 +1,8 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[adzerk/bootlaces   "0.1.10" :scope "test"]
-                 [cljsjs/boot-cljsjs "0.5.0"  :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.5.0"  :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all]
+(require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
          '[boot.tmpdir :as tmpd]
          '[clojure.java.io :as io]
@@ -12,7 +10,6 @@
 
 (def +lib-version+ "0.2.1")
 (def +version+ (str +lib-version+ "-0"))
-(bootlaces! +cljsjs-version+)
 
 (task-options!
  pom  {:project     'cljsjs/bitauth

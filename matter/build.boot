@@ -1,13 +1,10 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]
-                 [adzerk/bootlaces "0.1.11" :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require '[cljsjs.boot-cljsjs.packaging :refer :all]
-         '[adzerk.bootlaces :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +version+ "0.8.0-0")
-(bootlaces! +version+)
 
 (task-options!
  pom {:project 'cljsjs/matter

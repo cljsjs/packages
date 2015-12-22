@@ -1,15 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.10" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0"  :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0"  :scope "test"]
                   [cljsjs/react       "0.13.0-0"]
                   ])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +version+ "0.7.1-1")
-(bootlaces! +version+)
 
 (task-options!
  pom  {:project     'cljsjs/llexus-form

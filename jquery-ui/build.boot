@@ -1,11 +1,9 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]
                   [cljsjs/jquery "1.9.0-0"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +version+ "1.11.3-1")
 

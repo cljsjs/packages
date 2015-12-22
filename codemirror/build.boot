@@ -1,10 +1,8 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "5.8.0")
 (def codemirror-checksum "a0378a6bd7131f04246a40bb3ce00c19")
