@@ -2,13 +2,14 @@
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.0"  :scope "test"]
                   [cljsjs/react "0.14.3-0"]
+                  [cljsjs/react-dom "0.14.3-1"]
                   [cljsjs/classnames "2.1.3-0"]
                   [cljsjs/react-input-autosize "0.6.5-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "1.0.0-beta6")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
   pom  {:project     'cljsjs/react-select
@@ -37,5 +38,6 @@
 
     (deps-cljs :name "cljsjs.react-select"
                :requires ["cljsjs.react"
+                          "cljsjs.react.dom"
                           "cljsjs.classnames"
                           "cljsjs.react-input-autosize"])))
