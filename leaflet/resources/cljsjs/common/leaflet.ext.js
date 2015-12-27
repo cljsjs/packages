@@ -676,6 +676,7 @@ var L = {
   "LayerGroup": function () {},
   "layerGroup": {
     "addLayer": function () {},
+    "clearLayers": function () {},
    },
   "FeatureGroup": function () {},
   "featureGroup": function () {},
@@ -711,7 +712,9 @@ var L = {
   "CircleMarker": function () {},
   "circleMarker": function () {},
   "GeoJSON": function () {},
-  "geoJson": function () {},
+  "geoJson": {
+    "addData": function () {}
+  },
   "DomEvent": {
     "addListener": function () {},
     "removeListener": function () {},
