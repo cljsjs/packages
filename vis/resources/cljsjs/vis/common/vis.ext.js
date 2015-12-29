@@ -58,6 +58,7 @@ var vis = {
     "isValidRGBA": function () {},
     "selectiveBridgeObject": function () {},
     "bridgeObject": function () {},
+    "insertSort": function () {},
     "mergeOptions": function () {},
     "binarySearchCustom": function () {},
     "binarySearchValue": function () {},
@@ -80,6 +81,7 @@ var vis = {
   "DOMutil": {
     "prepareElements": function () {},
     "cleanupElements": function () {},
+    "resetElements": function () {},
     "getSVGElement": function () {},
     "getDOMElement": function () {},
     "drawPoint": function () {},
@@ -122,6 +124,8 @@ var vis = {
   "Timeline": function () {},
   "Graph2d": function () {},
   "timeline": {
+    "Core": function () {},
+    "DataStep": function () {},
     "DateUtil": {
       "convertHiddenOptions": function () {},
       "updateHiddenDates": function () {},
@@ -137,7 +141,6 @@ var vis = {
       "snapAwayFromHidden": function () {},
       "isHidden": function () {}
     },
-    "DataStep": function () {},
     "Range": {
       "conversion": function () {}
     },
@@ -181,6 +184,7 @@ var vis = {
         "PointItem": function () {},
         "RangeItem": function () {}
       },
+      "BackgroundGroup": function () {},
       "Component": function () {},
       "CurrentTime": function () {},
       "CustomTime": {
@@ -189,7 +193,6 @@ var vis = {
       "DataAxis": function () {},
       "GraphGroup": function () {},
       "Group": function () {},
-      "BackgroundGroup": function () {},
       "ItemSet": {
         "types": {
           "background": function () {},
@@ -1766,6 +1769,7 @@ vis.DataView.prototype = {
   "refresh": function () {},
   "get": function () {},
   "getIds": function () {},
+  "map": function () {},
   "getDataSet": function () {},
   "_onEvent": function () {},
   "on": function () {},
@@ -2006,6 +2010,53 @@ vis.Graph2d.prototype = {
   "_updateScrollTop": function () {},
   "_getScrollTop": function () {}
 };
+vis.timeline.Core.prototype = {
+  "addEventListener": function () {},
+  "on": function () {},
+  "once": function () {},
+  "removeEventListener": function () {},
+  "removeAllListeners": function () {},
+  "removeListener": function () {},
+  "off": function () {},
+  "emit": function () {},
+  "listeners": function () {},
+  "hasListeners": function () {},
+  "_create": function () {},
+  "setOptions": function () {},
+  "isActive": function () {},
+  "destroy": function () {},
+  "setCustomTime": function () {},
+  "getCustomTime": function () {},
+  "setCustomTimeTitle": function () {},
+  "getEventProperties": function () {},
+  "addCustomTime": function () {},
+  "removeCustomTime": function () {},
+  "getVisibleItems": function () {},
+  "fit": function () {},
+  "getDataRange": function () {},
+  "setWindow": function () {},
+  "moveTo": function () {},
+  "getWindow": function () {},
+  "redraw": function () {},
+  "_redraw": function () {},
+  "repaint": function () {},
+  "setCurrentTime": function () {},
+  "getCurrentTime": function () {},
+  "_toTime": function () {},
+  "_toGlobalTime": function () {},
+  "_toScreen": function () {},
+  "_toGlobalScreen": function () {},
+  "_initAutoResize": function () {},
+  "_startAutoResize": function () {},
+  "_stopAutoResize": function () {},
+  "_onTouch": function () {},
+  "_onPinch": function () {},
+  "_onDrag": function () {},
+  "_setScrollTop": function () {},
+  "_updateScrollTop": function () {},
+  "_getScrollTop": function () {},
+  "_createConfigurator": function () {}
+};
 vis.timeline.DataStep.prototype = {
   "setRange": function () {},
   "setMinimumStep": function () {},
@@ -2224,6 +2275,26 @@ vis.timeline.components.items.RangeItem.prototype = {
   "getWidthLeft": function () {},
   "getWidthRight": function () {}
 };
+vis.timeline.components.BackgroundGroup.prototype = {
+  "redraw": function () {},
+  "show": function () {},
+  "_create": function () {},
+  "setData": function () {},
+  "getLabelWidth": function () {},
+  "_calculateSubGroupHeights": function () {},
+  "_calculateHeight": function () {},
+  "hide": function () {},
+  "add": function () {},
+  "orderSubgroups": function () {},
+  "resetSubgroups": function () {},
+  "remove": function () {},
+  "removeFromDataSet": function () {},
+  "order": function () {},
+  "_updateVisibleItems": function () {},
+  "_traceVisible": function () {},
+  "_checkIfVisible": function () {},
+  "_checkIfVisibleWithReference": function () {}
+};
 vis.timeline.components.Component.prototype = {
   "setOptions": function () {},
   "redraw": function () {},
@@ -2285,41 +2356,21 @@ vis.timeline.components.DataAxis.prototype = {
 };
 vis.timeline.components.GraphGroup.prototype = {
   "setItems": function () {},
+  "getItems": function () {},
   "setZeroPosition": function () {},
   "setOptions": function () {},
   "update": function () {},
-  "drawIcon": function () {},
   "getLegend": function () {},
-  "getYRange": function () {},
-  "getData": function () {},
-  "draw": function () {}
+  "getYRange": function () {}
 };
 vis.timeline.components.Group.prototype = {
   "_create": function () {},
   "setData": function () {},
   "getLabelWidth": function () {},
   "redraw": function () {},
+  "_calculateSubGroupHeights": function () {},
   "_calculateHeight": function () {},
   "show": function () {},
-  "hide": function () {},
-  "add": function () {},
-  "orderSubgroups": function () {},
-  "resetSubgroups": function () {},
-  "remove": function () {},
-  "removeFromDataSet": function () {},
-  "order": function () {},
-  "_updateVisibleItems": function () {},
-  "_traceVisible": function () {},
-  "_checkIfVisible": function () {},
-  "_checkIfVisibleWithReference": function () {}
-};
-vis.timeline.components.BackgroundGroup.prototype = {
-  "redraw": function () {},
-  "show": function () {},
-  "_create": function () {},
-  "setData": function () {},
-  "getLabelWidth": function () {},
-  "_calculateHeight": function () {},
   "hide": function () {},
   "add": function () {},
   "orderSubgroups": function () {},
@@ -2561,11 +2612,13 @@ vis.timeline.components.LineGraph.prototype = {
   "_onUpdateGroups": function () {},
   "_onAddGroups": function () {},
   "_onRemoveGroups": function () {},
+  "_removeGroup": function () {},
   "_updateGroup": function () {},
   "_updateAllGroupData": function () {},
-  "_updateUngrouped": function () {},
   "redraw": function () {},
+  "_getSortedGroupIds": function () {},
   "_updateGraph": function () {},
+  "_stack": function () {},
   "_getRelevantData": function () {},
   "_applySampling": function () {},
   "_getYRanges": function () {},
@@ -2639,6 +2692,7 @@ vis.Network.prototype = {
   "stopSimulation": function () {},
   "stabilize": function () {},
   "getSelection": function () {},
+  "setSelection": function () {},
   "getSelectedNodes": function () {},
   "getSelectedEdges": function () {},
   "getNodeAt": function () {},
