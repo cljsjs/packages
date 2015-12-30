@@ -6,7 +6,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.4.6-0")
+(def +version+ "0.6.0-0")
 
 (task-options!
  pom  {:project     'cljsjs/fixed-data-table
@@ -17,8 +17,8 @@
        :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
 
 (deftask download-fixed-data-table []
-  (download :url      "https://github.com/facebook/fixed-data-table/archive/v0.4.6.zip"
-            :checksum "4C8ED4C7140A7AB64291997515EC1F02"
+  (download :url      "https://github.com/facebook/fixed-data-table/archive/v0.6.0.zip"
+            :checksum "0903f335f5285f2371f43e29161ecfd9"
             :unzip    true))
 
 (deftask package []
