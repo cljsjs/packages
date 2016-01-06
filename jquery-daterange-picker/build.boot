@@ -1,12 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]
-                  [cljsjs/jquery    "1.8.2-2"]
-                  [cljsjs/moment    "2.6.0-3"]])
+                  [cljsjs/jquery    "1.11.3-0"]
+                  [cljsjs/moment    "2.10.6-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.0.5-2")
+(def +version+ "0.0.9-0")
 
 (task-options!
   pom  {:project     'cljsjs/jquery-daterange-picker
