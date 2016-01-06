@@ -18,7 +18,7 @@
 (deftask package []
   (comp
     (download :url (str "https://github.com/nodebox/opentype.js/archive/" +lib-version+ ".zip")
-              :checksum "8FBD9872D28CCFE1F266A6EE4B5D4205"
+              :checksum "CA2C9DC109BF1AB20F17B1E6F012C0E4"
               :unzip true)
     (sift :move {#"^opentype.js-([\d\.]*)/dist/opentype\.js"      "cljsjs/opentype/development/opentype.inc.js"
                  #"^opentype.js-([\d\.]*)/dist/opentype\.min\.js" "cljsjs/opentype/production/opentype.min.inc.js"})
