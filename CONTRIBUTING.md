@@ -42,7 +42,7 @@ where and how their contribution could be improved:
         │       ├── development
         │       │   └── <library-name>.inc.js
         │       └── production
-        │            └── <library-name>.min.inc.js
+        │           └── <library-name>.min.inc.js
         └── deps.cljs
 
 2. The externs are reasonably complete. Externs are an inexact science
