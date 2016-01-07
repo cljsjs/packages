@@ -1,8 +1,8 @@
-# cljsjs/opentype
+# cljsjs/d3kit
 
 [](dependency)
 ```clojure
-[cljsjs/opentype "0.6.0-0"] ;; latest release
+[cljsjs/d3kit "1.0.9"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.opentype))
+  (:require cljsjs.d3kit))
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
