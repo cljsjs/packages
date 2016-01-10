@@ -1,8 +1,8 @@
-# cljsjs/lodash
+# cljsjs/rx
 
 [](dependency)
 ```clojure
-[cljsjs/lodash "3.10.1-0"] ;; latest release
+[cljsjs/rx "4.0.7"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.lodash))
+  (:require cljsjs.rx))
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
