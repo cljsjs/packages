@@ -28,9 +28,9 @@ for x in *; do
 
             (
             cd $x
-            boot package -- pom -- jar -- push --ensure-release --gpg-sign --repo clojars --repo-map "{:username \"$CLOJARS_USER\" :password \"$CLOJARS_PASS\"}"
-            [[ $? != "0" ]] && EXIT=$?
+            boot package -- pom -- jar -- push --ensure-release --gpg-sign --repo clojars
             )
+            [[ $? != "0" ]] && EXIT=1
         fi
     fi
 done
