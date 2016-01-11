@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "0.5.3")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/document-register-element
@@ -19,7 +19,7 @@
   (comp
     (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/document-register-element/" +lib-version+ "/document-register-element.js"))
     (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/document-register-element/" +lib-version+ "/document-register-element.max.js"))
-    (sift :move {#"document-register-element.max.js" "cljsjs/development/document-register-element.inc.js"
-                 #"document-register-element.js" "cljsjs/production/document-register-element.min.inc.js"})
+    (sift :move {#"document-register-element.max.js" "cljsjs/document-register-element/development/document-register-element.inc.js"
+                 #"document-register-element.js" "cljsjs/document-register-element/production/document-register-element.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :no-externs true :name "cljsjs.document-register-element")))
