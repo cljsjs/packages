@@ -30,7 +30,7 @@
         (io/copy (tmpd/file f) target))
       (binding [boot.util/*sh-dir* (str (io/file tmp (format "blockapps-js-%s" +lib-version+)))]
         ((sh "npm" "install"))
-        ((sh "browserify" "-r" ".:blockapps-js" "-d" "-s" "BlockApps" "-o" "blockapps.js"))
+        ((sh "npm" "run" "browserify"))
         ((sh "npm" "run" "minify")))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
 
