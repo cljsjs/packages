@@ -79,6 +79,6 @@ in projects and tested locally.
 
 ### Deploying to Clojars
 
-Deployment to Clojars is automated using [a bash script](./deploy-changed.sh) and [CircleCI](https://circleci.com/gh/cljsjs).
+Deployment to Clojars is automated using [a bash script](./deploy-changed.sh) and [CircleCI](https://circleci.com/gh/cljsjs/packages).
 
 [prs]: https://github.com/cljsjs/packages/pulls
