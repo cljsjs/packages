@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "2.10.6-0")
+(def +version+ "2.10.6-1")
 
 (task-options!
   push {:ensure-clean false}
