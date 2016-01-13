@@ -2,9 +2,12 @@
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require '[boot.core :as c]
+(require
          '[cljsjs.boot-cljsjs.packaging :refer :all]
-         '[clojure.java.io :as io])
+         '[boot.core :as boot]
+         '[boot.tmpdir :as tmpd]
+         '[clojure.java.io :as io]
+         '[boot.util :refer [sh]])
 
 (def +version+ "0.3")
 
@@ -16,13 +19,29 @@
       :scm {:url "https://github.com/cljsjs/packages"}
       :license {"Apache 2.0" "http://opensource.org/licenses/Apache-2.0"}})
 
+(deftask build-incremental-dom []
+  (let [tmp (boot/tmp-dir!)]
+    (with-pre-wrap
+      fileset
+      ;; Copy all files in fileset to temp directory
+      (doseq [f (->> fileset boot/input-files)
+              :let [target (io/file tmp (tmpd/path f))]]
+        (io/make-parents target)
+        (io/copy (tmpd/file f) target))
+
+      (binding [boot.util/*sh-dir* (str (io/file tmp (format "incremental-dom-%s" +version+)))]
+        ((sh "npm" "install"))
+        ((sh "patch" "gulpfile.js" "../gulpfile.js.patch" "-o" "patched-gulpfile.js"))
+        ((sh "./node_modules/.bin/gulp" "--gulpfile=patched-gulpfile.js" "js-closure-provides")))
+      (-> fileset (boot/add-resource tmp) boot/commit!))))
+
+
 (deftask package []
   (comp
-   (c/with-pass-thru fileset (dosh "make" "work/incremental-dom/dist/incremental-dom-closure-provides.js"
-                                   (str "TAG=" +version+)))
-   (c/with-pre-wrap fileset
-     (c/add-resource fileset (io/file "work")))
-   (sift :move {#"incremental-dom/dist/incremental-dom-closure-provides.js"
+   (download :url (format "https://github.com/google/incremental-dom/archive/%s.zip" +version+)
+             :checksum "170A1C354379FF2AF3A08455BFB0AD9D"
+             :unzip true)
+   (build-incremental-dom)
+   (sift :move {#"^incremental-dom-(.*)/dist/incremental-dom-closure-provides.js"
                 "cljsjs/incremental-dom/development/incremental-dom.js"})
-   (sift :include #{#"^cljsjs/" #"deps.cljs"})
-   (c/with-pass-thru fileset (dosh "make" "clean"))))
+   (sift :include #{#"^cljsjs/" #"deps.cljs"})))
