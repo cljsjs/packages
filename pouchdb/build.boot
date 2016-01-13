@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "5.1.0")
+(def +lib-version+ "5.2.0")
 (def +version+ (str +lib-version+ "-1"))
 
 (task-options!
@@ -18,9 +18,9 @@
 (deftask package []
   (comp
    (download :url (str "https://github.com/pouchdb/pouchdb/releases/download/" +lib-version+ "/pouchdb-" +lib-version+ ".js")
-             :checksum "BD846BA7A52586C38DD02D05E856484D")
+             :checksum "62A94E813C4922247BA69E22ACE95D32")
    (download :url (str "https://github.com/pouchdb/pouchdb/releases/download/" +lib-version+ "/pouchdb-" +lib-version+ ".min.js")
-             :checksum "C0DF548D28C76A070DA598D1F206F783")
+             :checksum "9F9DEBD0C45AEC539744FE5925BEF713")
    (sift :move {#"pouchdb-([\d+\.]*).js" "cljsjs/pouchdb/development/pouchdb.inc.js"
                 #"pouchdb-([\d+\.]*).min.js" "cljsjs/pouchdb/production/pouchdb.min.inc.js"})
    (sift :include #{#"^cljsjs"})
