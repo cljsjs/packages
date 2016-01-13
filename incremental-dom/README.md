@@ -1,4 +1,4 @@
-# cljsjs/openlayers
+# cljsjs/incremental-dom
 
 [](dependency)
 ```clojure
