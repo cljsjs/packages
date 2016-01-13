@@ -2,14 +2,14 @@
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require
-         '[cljsjs.boot-cljsjs.packaging :refer :all]
+(require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
          '[boot.tmpdir :as tmpd]
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +version+ "0.3")
+(def +lib-version+ "0.3")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom {:project 'cljsjs/incremental-dom
@@ -29,7 +29,7 @@
         (io/make-parents target)
         (io/copy (tmpd/file f) target))
 
-      (binding [boot.util/*sh-dir* (str (io/file tmp (format "incremental-dom-%s" +version+)))]
+      (binding [boot.util/*sh-dir* (str (io/file tmp (format "incremental-dom-%s" +lib-version+)))]
         ((sh "npm" "install"))
         ((sh "patch" "gulpfile.js" "../gulpfile.js.patch" "-o" "patched-gulpfile.js"))
         ((sh "./node_modules/.bin/gulp" "--gulpfile=patched-gulpfile.js" "js-closure-provides")))
@@ -38,7 +38,7 @@
 
 (deftask package []
   (comp
-   (download :url (format "https://github.com/google/incremental-dom/archive/%s.zip" +version+)
+   (download :url (format "https://github.com/google/incremental-dom/archive/%s.zip" +lib-version+)
              :checksum "170A1C354379FF2AF3A08455BFB0AD9D"
              :unzip true)
    (build-incremental-dom)
