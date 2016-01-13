@@ -14,8 +14,5 @@ work/incremental-dom: work
 work/incremental-dom/node_modules: work/incremental-dom
 	cd work/incremental-dom; npm install
 
-work/incremental-dom/patched-gulpfile.js: work/incremental-dom
-	patch work/incremental-dom/gulpfile.js gulpfile.js.patch -o work/incremental-dom/patched-gulpfile.js
-
-work/incremental-dom/dist/incremental-dom-closure-provides.js: work/incremental-dom/node_modules work/incremental-dom/patched-gulpfile.js
-	cd work/incremental-dom; ./node_modules/.bin/gulp --gulpfile=patched-gulpfile.js js-closure-provides
+work/incremental-dom/dist/incremental-dom-closure-provides.js: work/incremental-dom/node_modules
+	cd work/incremental-dom; ./node_modules/.bin/gulp js-closure

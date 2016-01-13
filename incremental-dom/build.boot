@@ -22,7 +22,7 @@
                                    (str "TAG=" +version+)))
    (c/with-pre-wrap fileset
      (c/add-resource fileset (io/file "work")))
-   (sift :move {#"incremental-dom/dist/incremental-dom-closure-provides.js"
+   (sift :move {#"incremental-dom/dist/incremental-dom-closure.js"
                 "cljsjs/incremental-dom/development/incremental-dom.js"})
    (sift :include #{#"^cljsjs/" #"deps.cljs"})
    (c/with-pass-thru fileset (dosh "make" "clean"))))
