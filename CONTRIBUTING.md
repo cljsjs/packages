@@ -21,6 +21,7 @@ See [the wiki](https://github.com/cljsjs/packages/wiki/Creating-Packages).
 ## Creating Pull Requests
 
 - Please increment the build number (version part after the dash). This way maintainers only need to merge the PR and don't need to make any changes themselves.
+- If you are asked to implement changes, please comment on PR after implementing the changes. This way maintainers will more easily notice your updates.
 
 ## Reviewing Pull Requests
 
