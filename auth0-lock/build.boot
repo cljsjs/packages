@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "7.7.1")
+(def +lib-version+ "8.1.5")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -17,7 +17,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/auth0/lock/archive/v7.7.1.zip"
+    (download :url "https://github.com/auth0/lock/archive/v8.1.5.zip"
               :unzip true)
     (sift :move { #"^lock.*/build/auth0-lock\.js$"      "cljsjs/auth0-lock/development/auth0-lock.inc.js"
                   #"^lock.*/build/auth0-lock\.min\.js$" "cljsjs/auth0-lock/production/auth0-lock.min.inc.js" })
