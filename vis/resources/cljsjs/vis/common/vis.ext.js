@@ -407,6 +407,9 @@ var vis = {
             "enabled": {
               "boolean": {}
             },
+            "color": {
+              "string": {}
+            },
             "size": {
               "number": {}
             },
@@ -631,6 +634,9 @@ var vis = {
             "shadow": {
               "enabled": {
                 "boolean": {}
+              },
+              "color": {
+                "string": {}
               },
               "size": {
                 "number": {}
@@ -992,6 +998,9 @@ var vis = {
               "enabled": {
                 "boolean": {}
               },
+              "color": {
+                "string": {}
+              },
               "size": {
                 "number": {}
               },
@@ -1225,6 +1234,9 @@ var vis = {
           "shadow": {
             "enabled": {
               "boolean": {}
+            },
+            "color": {
+              "string": {}
             },
             "size": {
               "number": {}
@@ -1653,6 +1665,7 @@ var vis = {
     "fn": {},
     "min": function () {},
     "max": function () {},
+    "now": function () {},
     "utc": function () {},
     "unix": function () {},
     "months": function () {},
@@ -1732,6 +1745,7 @@ var vis = {
     "each": function () {},
     "merge": function () {},
     "extend": function () {},
+    "assign": function () {},
     "inherit": function () {},
     "bindFn": function () {},
     "prefixed": function () {}
@@ -2708,6 +2722,90 @@ vis.Network.prototype = {
   "focus": function () {},
   "releaseNode": function () {},
   "getOptionsFromConfigurator": function () {}
+};
+vis.moment.prototype = {
+  "add": function () {},
+  "calendar": function () {},
+  "clone": function () {},
+  "diff": function () {},
+  "endOf": function () {},
+  "format": function () {},
+  "from": function () {},
+  "fromNow": function () {},
+  "to": function () {},
+  "toNow": function () {},
+  "get": function () {},
+  "invalidAt": function () {},
+  "isAfter": function () {},
+  "isBefore": function () {},
+  "isBetween": function () {},
+  "isSame": function () {},
+  "isSameOrAfter": function () {},
+  "isSameOrBefore": function () {},
+  "isValid": function () {},
+  "lang": function () {},
+  "locale": function () {},
+  "localeData": function () {},
+  "max": function () {},
+  "min": function () {},
+  "parsingFlags": function () {},
+  "set": function () {},
+  "startOf": function () {},
+  "subtract": function () {},
+  "toArray": function () {},
+  "toObject": function () {},
+  "toDate": function () {},
+  "toISOString": function () {},
+  "toJSON": function () {},
+  "toString": function () {},
+  "unix": function () {},
+  "valueOf": function () {},
+  "creationData": function () {},
+  "year": function () {},
+  "isLeapYear": function () {},
+  "weekYear": function () {},
+  "isoWeekYear": function () {},
+  "quarters": function () {},
+  "quarter": function () {},
+  "month": function () {},
+  "daysInMonth": function () {},
+  "weeks": function () {},
+  "week": function () {},
+  "isoWeeks": function () {},
+  "isoWeek": function () {},
+  "weeksInYear": function () {},
+  "isoWeeksInYear": function () {},
+  "date": function () {},
+  "days": function () {},
+  "day": function () {},
+  "weekday": function () {},
+  "isoWeekday": function () {},
+  "dayOfYear": function () {},
+  "hours": function () {},
+  "hour": function () {},
+  "minutes": function () {},
+  "minute": function () {},
+  "seconds": function () {},
+  "second": function () {},
+  "milliseconds": function () {},
+  "millisecond": function () {},
+  "utcOffset": function () {},
+  "utc": function () {},
+  "local": function () {},
+  "parseZone": function () {},
+  "hasAlignedHourOffset": function () {},
+  "isDST": function () {},
+  "isDSTShifted": function () {},
+  "isLocal": function () {},
+  "isUtcOffset": function () {},
+  "isUtc": function () {},
+  "isUTC": function () {},
+  "zoneAbbr": function () {},
+  "zoneName": function () {},
+  "dates": function () {},
+  "months": function () {},
+  "years": function () {},
+  "zone": function () {}
 };
 vis.Hammer.Input.prototype = {
   "handler": function () {},
