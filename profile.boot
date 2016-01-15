@@ -3,7 +3,7 @@
   (fn [{:keys [url] :as repo-map}]
     (->> (condp re-find url
            #"^https://clojars\.org/repo"
-           {:username (get-sys-env "CLOJARS_USER" :required)
-            :password (get-sys-env "CLOJARS_PASS" :required)}
+           {:username (get-sys-env "CLOJARS_USER")
+            :password (get-sys-env "CLOJARS_PASS")}
            #".*" nil)
          (merge repo-map))))
