@@ -4,7 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.8.0-alpha")
+; FIXME: Next version should use real version number
+(def +lib-version+ "0.8.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -17,8 +18,9 @@
 
 (deftask package []
   (comp
-   (download :url (format "https://github.com/liabru/matter-js/archive/%s.zip" +lib-version+)
-             :checksum "839AE18144E391943F995D1FC579A8ED"
+   ; FIXME: Next version should use +lib-version+
+   (download :url (format "https://github.com/liabru/matter-js/archive/%s.zip" (str +lib-version+ "-alpha"))
+             :checksum "731D6C790A8CBF3EA55B1F1131C5A761"
              :unzip true)
    (sift :move {#"^.*/build/matter.js$" "cljsjs/matter/development/matter.inc.js"
                 #"^.*/build/matter.min.js$" "cljsjs/matter/production/matter.min.inc.js"})

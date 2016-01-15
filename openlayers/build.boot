@@ -5,7 +5,8 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "3.10.1")
-(def +version+ (str +lib-version+ "-0"))
+; FIXME: Next release should have build identier
+(def +version+ (str +lib-version+ ""))
 
 (task-options!
  pom  {:project     'cljsjs/openlayers
@@ -17,7 +18,7 @@
 
 (deftask package []
   (comp
-    (download :url (format "https://github.com/openlayers/ol3/releases/download/v%s/v%s.zip" +lib-version+)
+    (download :url (format "https://github.com/openlayers/ol3/releases/download/v%s/v%s.zip" +lib-version+ +lib-version+)
               :checksum "C050655A3526492C206A9F0ED71851AB"
               :unzip true)
     (download :url (format "https://github.com/openlayers/ol3/archive/v%s.zip" +lib-version+)

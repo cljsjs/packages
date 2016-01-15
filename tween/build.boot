@@ -5,7 +5,8 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "16.3.1")
-(def +version+ (str +lib-version+ "-0"))
+; FIXME: Next release should have build identier
+(def +version+ (str +lib-version+ ""))
 
 (task-options!
  pom {:project     'cljsjs/tween
