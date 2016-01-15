@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.1.1")
+(def +lib-version+ "4.0.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -19,7 +19,7 @@
 (deftask package []
   (comp
    (download :url (format "https://github.com/imakewebthings/waypoints/archive/%s.zip" +lib-version+)
-             :checksum "eca8f3548bdedf8444e7ef3af676bbad"
+             :checksum "88c1d53f9c0ac0eacc8487223558b317"
              :unzip true)
    (sift :move {#"^waypoints-\d+\.\d+\.\d+/lib/noframework\.waypoints\.js$"
                 "cljsjs/waypoints/development/waypoints.inc.js"
