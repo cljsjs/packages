@@ -17,9 +17,9 @@
 
 (deftask package []
   (comp
-    (download :url "https://raw.githubusercontent.com/nodeca/pako/0.2.7/dist/pako.min.js"
+    (download :url (format "https://raw.githubusercontent.com/nodeca/pako/%s/dist/pako.min.js" +lib-version+)
               :checksum "880935149cdc811080cf815e175af12a")
-    (download :url "https://raw.githubusercontent.com/nodeca/pako/0.2.7/dist/pako.js"
+    (download :url (format "https://raw.githubusercontent.com/nodeca/pako/%s/dist/pako.js" +lib-version+)
               :checksum "4bfb3a0fa3ac7831b02cc296666ca4e9")
     (sift :move {#"pako\.js"      "cljsjs/pako/development/pako.inc.js"
                  #"pako\.min\.js" "cljsjs/pako/production/pako.min.inc.js"})

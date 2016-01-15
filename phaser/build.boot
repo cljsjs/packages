@@ -18,7 +18,7 @@
 
 (deftask package []
   (comp
-   (download :url "http://cdn.jsdelivr.net/phaser/2.4.2/phaser.zip"
+   (download :url (format "http://cdn.jsdelivr.net/phaser/%s/phaser.zip" +lib-version+)
              :checksum "f74d415e21fd6b26819c7f2fe2de9a8d"
              :unzip true)
    (sift :move {#"^phaser\.js$"

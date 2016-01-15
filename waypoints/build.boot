@@ -18,7 +18,7 @@
 
 (deftask package []
   (comp
-   (download :url "https://github.com/imakewebthings/waypoints/archive/3.1.1.zip"
+   (download :url (format "https://github.com/imakewebthings/waypoints/archive/%s.zip" +lib-version+)
              :checksum "eca8f3548bdedf8444e7ef3af676bbad"
              :unzip true)
    (sift :move {#"^waypoints-\d+\.\d+\.\d+/lib/noframework\.waypoints\.js$"

@@ -17,7 +17,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/ftlabs/fastclick/archive/v1.0.6.zip"
+    (download :url (format "https://github.com/ftlabs/fastclick/archive/v%s.zip" +lib-version+)
               :checksum "E607A3ADC8C45423F16B912C94789C84"
               :unzip true)
     (sift :move {#"^fastclick-.*/lib/fastclick\.js" "cljsjs/fastclick/development/fastclick.inc.js"})

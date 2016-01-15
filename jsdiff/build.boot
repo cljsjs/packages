@@ -17,7 +17,7 @@
 
 (deftask package []
   (comp
-    (download :url      "https://github.com/kpdecker/jsdiff/archive/v1.2.2.zip"
+    (download :url      (format "https://github.com/kpdecker/jsdiff/archive/v%s.zip" +lib-version+)
               :checksum "24f2e5bb35383a1bacbea3db0340c465"
               :unzip    true)
     (sift     :move     {#"^jsdiff-.*/diff.js"

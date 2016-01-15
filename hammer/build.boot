@@ -17,7 +17,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/hammerjs/hammer.js/archive/2.0.4.zip"
+    (download :url (format "https://github.com/hammerjs/hammer.js/archive/%s.zip" +lib-version+)
               :checksum "F2A06997B5D731E86A114302D7838AA9"
               :unzip true)
     (sift :move {#"^hammer.js-\d\.\d\.\d/hammer.js"     "cljsjs/development/hammer.inc.js"

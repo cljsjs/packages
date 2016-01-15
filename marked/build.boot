@@ -23,7 +23,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/chjj/marked/archive/v0.3.5.zip"
+    (download :url (format "https://github.com/chjj/marked/archive/v%s.zip" +lib-version+)
               :checksum "989c318bc90eddad1182dd7268d2ab72"
               :unzip true)
     (sift :move {#"^marked-(.*)/lib/marked\.js"  "cljsjs/development/marked.inc.js"

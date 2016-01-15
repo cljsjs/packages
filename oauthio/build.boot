@@ -17,7 +17,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/oauth-io/oauth-js/archive/0.4.0.zip"
+    (download :url (format "https://github.com/oauth-io/oauth-js/archive/%s.zip" +lib-version+)
               :checksum "aa8812d0a90d337fdfd8079d7d58b874"
               :unzip true)
     (sift :move {#"^oauth-js-([\d\.]*)/dist/oauth\.js"      "cljsjs/oauthio/development/oauthio.inc.js"

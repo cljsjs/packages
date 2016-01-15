@@ -18,7 +18,7 @@
 
 (deftask package []
   (comp
-   (download  :url      "https://github.com/almende/vis/archive/v4.12.0.zip"
+   (download  :url      (format "https://github.com/almende/vis/archive/v%s.zip" +lib-version+)
               :checksum "3FAC0C61CD1CB9EC683FA213DBBBFF25"
               :unzip    true)
    (sift      :move     {#"^vis(.*)/dist/vis.js"

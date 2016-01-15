@@ -16,7 +16,7 @@
 
 (deftask package []
          (comp
-           (download :url "https://github.com/quilljs/quill/archive/v0.20.0.zip"
+           (download :url (format "https://github.com/quilljs/quill/archive/v%s.zip" +lib-version+)
                      :unzip true)
            (sift :move {#".*dist/quill\.js"        "cljsjs/quill/development/quill.inc.js"
                         #".*dist/quill\.min\.js"   "cljsjs/quill/production/quill.min.inc.js"

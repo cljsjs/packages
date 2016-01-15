@@ -17,7 +17,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/ivanakimov/hashids.js/archive/1.0.2.zip"
+    (download :url (format "https://github.com/ivanakimov/hashids.js/archive/%s.zip" +lib-version+)
               :checksum "cafc7be2c2f901cc8fe2cc96292d35dc"
               :unzip true)
     (sift :move {#"^hashids.js-.*/lib/hashids.js" "cljsjs/hashids/development/hashids.inc.js"})

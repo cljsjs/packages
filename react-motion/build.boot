@@ -17,7 +17,7 @@
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (deftask download-react-motion []
-  (download :url      "https://github.com/chenglou/react-motion/archive/v0.3.0.zip"
+  (download :url      (format "https://github.com/chenglou/react-motion/archive/v%s.zip" +lib-version+)
             :checksum "C9C059E8BFEC88E7ABE321401011CA9B"
             :unzip    true))
 

@@ -17,7 +17,7 @@
 
 (deftask package []
   (comp
-   (download  :url      "https://github.com/showdownjs/showdown/archive/0.4.0.zip"
+   (download  :url      (format "https://github.com/showdownjs/showdown/archive/%s.zip" +lib-version+)
               :checksum "0fe8b927314a3e072ccb12d5e9de0319"
               :unzip    true)
    (sift      :move     {#"^showdown-(.*)/compressed/Showdown.js"

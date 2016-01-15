@@ -17,9 +17,9 @@
 
 (deftask package []
   (comp
-    (download :url "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.0.7/rx.all.js"
+    (download :url (format "https://cdnjs.cloudflare.com/ajax/libs/rxjs/%s/rx.all.js" +lib-version+)
               :checksum "C2154D3CBA24F7011644C83C37FA7A4C")
-    (download :url "https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.0.7/rx.all.min.js"
+    (download :url (format "https://cdnjs.cloudflare.com/ajax/libs/rxjs/%s/rx.all.min.js" +lib-version+)
               :checksum "EAB75742492CEAB96FE87C884642D9AF")
     (sift :move {#"rx\.all\.js" "cljsjs/rx/development/rx.inc.js"
                  #"rx\.all\.min\.js" "cljsjs/rx/production/rx.min.inc.js"})

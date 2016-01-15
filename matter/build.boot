@@ -17,7 +17,7 @@
 
 (deftask package []
   (comp
-   (download :url "https://github.com/liabru/matter-js/archive/0.8.0-alpha.zip"
+   (download :url (format "https://github.com/liabru/matter-js/archive/%s.zip" +lib-version+)
              :checksum "839AE18144E391943F995D1FC579A8ED"
              :unzip true)
    (sift :move {#"^.*/build/matter.js$" "cljsjs/matter/development/matter.inc.js"

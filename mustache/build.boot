@@ -19,7 +19,7 @@
 
 (deftask package []
   (comp
-    (download :url      "https://github.com/janl/mustache.js/archive/v1.1.0.zip"
+    (download :url      (format "https://github.com/janl/mustache.js/archive/v%s.zip" +lib-version+)
               :checksum "fe10b20e3a4cea190725ebbbbe5a5890"
               :unzip    true)
     (sift :move {#"^mustache.js-\d.\d.\d/mustache.js$"     "cljsjs/mustache/development/mustache.inc.js"

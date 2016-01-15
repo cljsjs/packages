@@ -18,7 +18,7 @@
 
 (deftask package []
   (comp
-   (download :url "https://github.com/Matt-Esch/virtual-dom/archive/v2.1.1.zip"
+   (download :url (format "https://github.com/Matt-Esch/virtual-dom/archive/v%s.zip" +lib-version+)
              :checksum "afed7bc77deb53f2d8d1cbb26b094fa7"
              :unzip true)
    (sift :move {#"^virtual-dom-.*/dist/virtual-dom.js$" "cljsjs/development/virtual-dom.inc.js"})

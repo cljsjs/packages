@@ -17,7 +17,7 @@
 
 (deftask package []
   (comp
-   (download :url      "https://github.com/daviferreira/medium-editor/archive/4.8.0.zip"
+   (download :url      (format "https://github.com/daviferreira/medium-editor/archive/%s.zip" +lib-version+)
              :checksum "6ac7f17b9829a5968771b41636884e61"
              :unzip    true)
    (sift :move {#"^medium-editor-([\d\.]*)/dist/js/medium-editor\.js"

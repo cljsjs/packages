@@ -25,7 +25,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/gf3/moment-range/archive/2.0.3.zip"
+    (download :url (format "https://github.com/gf3/moment-range/archive/%s.zip" +lib-version+)
               :checksum "705f4467371c7c3a442d0dbc573fe073"
               :unzip true)
 

@@ -17,7 +17,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/OpenKieler/klayjs/archive/0.3.2.zip"
+    (download :url (format "https://github.com/OpenKieler/klayjs/archive/%s.zip" +lib-version+)
               :unzip true)
     (sift :move {#"^klayjs-.*/klay.js" "cljsjs/development/klay.inc.js"})
     (minify :in "cljsjs/development/klay.inc.js"

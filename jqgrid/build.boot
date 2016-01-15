@@ -44,7 +44,7 @@
 
 (deftask package []
   (comp
-   (download :url "https://github.com/tonytomov/jqGrid/archive/v5.0.1.zip"
+   (download :url (format "https://github.com/tonytomov/jqGrid/archive/v%s.zip" +lib-version+)
              :checksum "05e55300839c6df60360b68ea75fccf2"
              :unzip true)
    (sift :move {#"^jqGrid-([\d\.]*)/js/jquery\.jqGrid\.js" "cljsjs/jqgrid/development/jqgrid.inc.js"

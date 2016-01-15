@@ -17,7 +17,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/auth0/lock/archive/v8.1.5.zip"
+    (download :url (format "https://github.com/auth0/lock/archive/v%s.zip" +lib-version+)
               :unzip true)
     (sift :move { #"^lock.*/build/auth0-lock\.js$"      "cljsjs/auth0-lock/development/auth0-lock.inc.js"
                   #"^lock.*/build/auth0-lock\.min\.js$" "cljsjs/auth0-lock/production/auth0-lock.min.inc.js" })

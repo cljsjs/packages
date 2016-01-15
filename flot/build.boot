@@ -44,7 +44,7 @@
 
 (deftask package []
   (comp
-    (download :url "http://www.flotcharts.org/downloads/flot-0.8.3.zip"
+    (download :url (format "http://www.flotcharts.org/downloads/flot-%s.zip" +lib-version+)
               :checksum "a134a869d2b3d476a67a86abbe881676"
               :unzip true)
 

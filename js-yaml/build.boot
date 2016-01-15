@@ -17,7 +17,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/nodeca/js-yaml/archive/3.3.1.zip"
+    (download :url (format "https://github.com/nodeca/js-yaml/archive/%s.zip" +lib-version+)
               :checksum "812fa1a884c5a633d88b10634ca91ba9"
               :unzip true)
     (sift :move {#"^js-yaml-.*/dist/js-yaml.js" "cljsjs/development/js-yaml.inc.js"})

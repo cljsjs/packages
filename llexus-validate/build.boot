@@ -18,7 +18,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/little-arhat/llexus-validate/archive/0.1.0.zip"
+    (download :url (format "https://github.com/little-arhat/llexus-validate/archive/%s.zip" +lib-version+)
               :checksum "5d16a0e3a75bb552c498d67c6a40213d"
               :unzip true)
     (sift :move {#"^llexus-validate-([\d\.-]*)/dist/llexus-validate\.js"      "cljsjs/llexus-validate/development/llexus-validate.inc.js"

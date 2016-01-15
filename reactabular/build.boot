@@ -19,9 +19,9 @@
 
 (deftask package []
   (comp
-   (download :url "https://raw.githubusercontent.com/bebraw/reactabular/v0.7.0/dist/reactabular.min.js"
+   (download :url (format "https://raw.githubusercontent.com/bebraw/reactabular/v%s/dist/reactabular.min.js" +lib-version+)
              :checksum "e742794e7601268baa770063856c49f5")
-   (download :url "https://raw.githubusercontent.com/bebraw/reactabular/v0.7.0/dist/reactabular.js"
+   (download :url (format "https://raw.githubusercontent.com/bebraw/reactabular/v%s/dist/reactabular.js" +lib-version+)
              :checksum "711aa722262a045d2266110817213ddc")
    (sift :move {#"reactabular\.js" "cljsjs/reactabular/development/reactabular.inc.js"
                 #"reactabular\.min\.js" "cljsjs/reactabular/production/reactabular.min.inc.js"})

@@ -17,7 +17,7 @@
       :license     {"Apache License" "http://www.apache.org/licenses/LICENSE-2.0.html"}})
 
 (deftask download-nodejs-externs []
-  (download :url "https://github.com/dcodeIO/node.js-closure-compiler-externs/archive/1.0.4.zip"
+  (download :url (format "https://github.com/dcodeIO/node.js-closure-compiler-externs/archive/%s.zip" +lib-version+)
             :checksum "857bf4b4600c87a553293e7cc2dc7cea"
             :unzip true))
 

@@ -17,7 +17,7 @@
 
 (deftask package []
   (comp
-   (download  :url      "https://raw.githubusercontent.com/tweenjs/tween.js/v16.3.1/src/Tween.js"
+   (download  :url      (format "https://raw.githubusercontent.com/tweenjs/tween.js/v%s/src/Tween.js" +lib-version+)
               :checksum "a8a1b8f1cf9d40aca36bb51e7039b59a")
    (sift      :move     {#"^Tween.js"
                          "cljsjs/tween/development/tween.inc.js" })

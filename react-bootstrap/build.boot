@@ -18,7 +18,7 @@
        :license     {"MIT" "https://raw.githubusercontent.com/react-bootstrap/react-bootstrap/master/LICENSE"}})
 
 (deftask download-react-bootstrap []
-  (download :url      "https://github.com/react-bootstrap/react-bootstrap-bower/archive/v0.28.1.zip"
+  (download :url      (format "https://github.com/react-bootstrap/react-bootstrap-bower/archive/v%s.zip" +lib-version+)
             :checksum "a9df3496eee7df123e22cb409509551a"
             :unzip    true))
 

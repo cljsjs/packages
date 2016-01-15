@@ -17,7 +17,7 @@
 
 (deftask package []
   (comp
-   (download :url "https://github.com/WickyNilliams/enquire.js/archive/v2.1.2.zip"
+   (download :url (format "https://github.com/WickyNilliams/enquire.js/archive/v%s.zip" +lib-version+)
              :checksum "d4817abff3cff26befb35736cb2e49f6"
              :unzip true)
    (sift :move {#"^enquire\.[^\/]*/dist/enquire.js" "cljsjs/enquire/development/enquire.inc.js"

@@ -17,7 +17,7 @@
 
 (deftask package []
   (comp
-   (download  :url      "https://github.com/mbostock/topojson/archive/v1.6.18.zip"
+   (download  :url      (format "https://github.com/mbostock/topojson/archive/v%s.zip" +lib-version+)
               :checksum "036a19607242e00de0222d103febd161"
               :unzip    true)
    (sift      :move     {#"^topojson-.*/topojson.js"
