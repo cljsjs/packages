@@ -6,7 +6,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "5.0.1-1")
+(def +lib-version+ "5.0.1")
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
   pom  {:project     'cljsjs/jqgrid

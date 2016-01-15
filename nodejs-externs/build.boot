@@ -5,7 +5,8 @@
          '[boot.tmpdir :as tmpd]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "1.0.4-1")
+(def +lib-version+ "1.0.4")
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom {:project     'cljsjs/nodejs-externs

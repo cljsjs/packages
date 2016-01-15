@@ -4,7 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.20.0-1")
+(def +lib-version+ "0.20.0")
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
   pom {:project     'cljsjs/quill
