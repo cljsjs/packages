@@ -4,7 +4,9 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.2.0")
+(def +lib-version+ "0.2")
+; FIXME: Next release should have proper build identier
+(def +version+ (str +lib-version+ ".0"))
 
 (task-options!
  pom  {:project     'cljsjs/kemia
@@ -16,7 +18,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/kemia/kemia/archive/v0.2.zip"
+    (download :url (format "https://github.com/kemia/kemia/archive/v%s.zip" +lib-version+)
               :checksum "DED3B45E53C56188758F964EDAB08344"
               :unzip true)
     (sift :move {#"^kemia-([\d\.]*)/kemia/" "cljsjs/kemia/development/"

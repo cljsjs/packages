@@ -5,7 +5,8 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 ; The version is from closure-compiler where the extern is from
-(def +version+ "v20150729-0")
+(def +lib-version+ "v20150729")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/facebook

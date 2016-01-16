@@ -4,7 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.4.0-0")
+(def +lib-version+ "0.4.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/oauthio
@@ -16,7 +17,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/oauth-io/oauth-js/archive/0.4.0.zip"
+    (download :url (format "https://github.com/oauth-io/oauth-js/archive/%s.zip" +lib-version+)
               :checksum "aa8812d0a90d337fdfd8079d7d58b874"
               :unzip true)
     (sift :move {#"^oauth-js-([\d\.]*)/dist/oauth\.js"      "cljsjs/oauthio/development/oauthio.inc.js"

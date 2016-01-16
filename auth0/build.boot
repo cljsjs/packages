@@ -17,7 +17,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/auth0/auth0.js/archive/v6.3.0.zip"
+    (download :url (format "https://github.com/auth0/auth0.js/archive/v%s.zip" +lib-version+)
               :checksum "70f3282eea62686fdda6afff713e2a9d"
               :unzip true)
     (sift :move { #"^auth0\.js.*/build/auth0\.js$"      "cljsjs/auth0/development/auth0.inc.js"

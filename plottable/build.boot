@@ -19,7 +19,7 @@
 
 (deftask package []
          (comp
-           (download :url "https://github.com/palantir/plottable/releases/download/v1.12.0/plottable.zip"
+           (download :url (format "https://github.com/palantir/plottable/releases/download/v%s/plottable.zip" +lib-version+)
                      :checksum "f2c0ea46a93116b4d16393a703a286c5"
                      :unzip true)
            (sift :move {

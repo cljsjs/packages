@@ -4,7 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "1.6.0-0")
+(def +lib-version+ "1.6.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/parse
@@ -16,9 +17,9 @@
 
 (deftask package []
   (comp
-    (download :url "https://www.parsecdn.com/js/parse-1.6.0.js"
+    (download :url (format "https://www.parsecdn.com/js/parse-%s.js" +lib-version+)
               :checksum "71741b67b627347c10f08e3993ad971b")
-    (download :url "https://www.parsecdn.com/js/parse-1.6.0.min.js"
+    (download :url (format "https://www.parsecdn.com/js/parse-%s.min.js" +lib-version+)
               :checksum "ed555be064f8828e16147fb1b3dd7676")
     (sift :move {#"parse-([\d\.]*).js" "cljsjs/parse/development/parse.inc.js"
                  #"parse-([\d\.]*).min.js" "cljsjs/parse/production/parse.min.inc.js"})

@@ -362,6 +362,13 @@ Moment.prototype.isAfter = function() {};
 
 /**
  * @nosideeffects
+ * @since 2.9.0
+ * @type {function(!(Moment|string|number|Date|Array.<!number>), !(Moment|string|number|Date|Array.<!number>), !string=):!boolean}
+ */
+Moment.prototype.isBetween = function() {};
+
+/**
+ * @nosideeffects
  * @since 1.0.0
  * @type {function():!boolean}
  */

@@ -17,7 +17,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/matthewhudson/device.js/archive/v0.2.7.zip"
+    (download :url (format "https://github.com/matthewhudson/device.js/archive/v%s.zip" +lib-version+)
               :checksum "e629dc748e18443cec0153104d90f8d2"
               :unzip true)
     (sift :move {#"^device\.[^\/]*/lib/device.js"      "cljsjs/device/development/device.inc.js"

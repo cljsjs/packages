@@ -6,7 +6,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "5.0.1-1")
+(def +lib-version+ "5.0.1")
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
   pom  {:project     'cljsjs/jqgrid
@@ -43,7 +44,7 @@
 
 (deftask package []
   (comp
-   (download :url "https://github.com/tonytomov/jqGrid/archive/v5.0.1.zip"
+   (download :url (format "https://github.com/tonytomov/jqGrid/archive/v%s.zip" +lib-version+)
              :checksum "05e55300839c6df60360b68ea75fccf2"
              :unzip true)
    (sift :move {#"^jqGrid-([\d\.]*)/js/jquery\.jqGrid\.js" "cljsjs/jqgrid/development/jqgrid.inc.js"

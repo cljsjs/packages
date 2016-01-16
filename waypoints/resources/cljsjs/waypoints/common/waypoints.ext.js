@@ -1,46 +1,100 @@
-/**
- * @license Geoff Shannon, All Rights Reserved.
- */
-"use strict";
+var Waypoint = {
+  "invokeAll": function () {},
+  "refreshAll": function () {},
 
-/**
- * @fileoverview Externs for Waypoints 3.1.1
- * @externs
- */
+  "enableAll": function () {},
+  "disableAll": function () {},
+  "destroyAll": function () {},
 
-function Waypoint(options) {}
+  "requestAnimationFrame": function () {},
 
+  "viewportHeight": function () {},
+  "viewportWidth": function () {},
 
-/**
- * Instance Properties
- */
+  "adapters": {},
+  "defaults": {
+    "context": {},
+    "continuous": {},
+    "enabled": {},
+    "group": {},
+    "horizontal": {},
+    "offset": {}
+  },
+  "offsetAliases": {
+    "bottom-in-view": function () {},
+    "right-in-view": function () {}
+  },
+  "Context": {
+    "findByElement": function () {},
+    "findOrCreateByElement": function () {},
+    "refreshAll": function () {}
+  },
+  "Group": {
+    "findOrCreate": function () {}
+  },
+  "Adapter": {
+    "extend": function () {},
+    "inArray": function () {},
+    "isEmptyObject": function () {}
+  }
+};
 
-Waypoint.prototype.adapter      = {};
-Waypoint.prototype.context      = {};
-Waypoint.prototype.element      = {};
-Waypoint.prototype.group        = {};
-Waypoint.prototype.options      = {};
-Waypoint.prototype.triggerPoint = {};
+Waypoint.prototype = {
+  "enable": function () {},
+  "disable": function () {},
 
+  "next": function () {},
+  "previous": function () {},
 
-/**
- * Instance Methods
- */
+  "destroy": function () {},
 
-Waypoint.prototype.destroy  = function() {}
-Waypoint.prototype.disable  = function() {}
-Waypoint.prototype.enable   = function() {}
-Waypoint.prototype.next     = function() {}
-Waypoint.prototype.previous = function() {}
+  "trigger": function () {},
+  "queueTrigger": function () {}
+};
 
+Waypoint.Context.prototype = {
+  "add": function () {},
+  "remove": function () {},
+  "destroy": function () {},
+  "refresh": function () {},
 
-/**
- * Class Methods
- */
+  "checkEmpty": function () {},
 
-Waypoint.destroyAll      = function() {}
-Waypoint.disableAll      = function() {}
-Waypoint.enableAll       = function() {}
-Waypoint.refreshAll      = function() {}
-Waypoint.viewportHeight  = function() {}
-Waypoint.viewportWidth   = function() {}
+  "innerHeight": function () {},
+  "innerWidth": function () {},
+
+  "handleResize": function () {},
+  "handleScroll": function () {},
+
+  "createThrottledResizeHandler": function () {},
+  "createThrottledScrollHandler": function () {}
+};
+
+Waypoint.Group.prototype = {
+  "add": function () {},
+  "remove": function () {},
+
+  "first": function () {},
+  "last": function () {},
+  "next": function () {},
+  "previous": function () {},
+
+  "queueTrigger": function () {},
+  "flushTriggers": function () {},
+  "clearTriggerQueues": function () {}
+};
+
+Waypoint.Adapter.prototype = {
+  "offset": function () {},
+
+  "off": function () {},
+  "on": function () {},
+
+  "scrollLeft": function () {},
+  "scrollTop": function () {},
+
+  "innerHeight": function () {},
+  "innerWidth": function () {},
+  "outerHeight": function () {},
+  "outerWidth": function () {}
+};

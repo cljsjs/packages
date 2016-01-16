@@ -19,7 +19,7 @@
 
 (deftask package []
          (comp
-           (download :url "https://github.com/viljamis/responsive-nav.js/archive/1.0.39.zip"
+           (download :url (format "https://github.com/viljamis/responsive-nav.js/archive/%s.zip" +lib-version+)
                      :checksum "091a5afbdaa5c3c3f00c99427a33e888"
                      :unzip true)
            (sift :move {
