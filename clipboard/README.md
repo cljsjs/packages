@@ -1,4 +1,4 @@
-# cljsjs/forge
+# cljsjs/clipboard
 
 [](dependency)
 ```clojure
@@ -12,7 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.forge))
+  (:require cljsjs.clipboard))
 
 ...
 
