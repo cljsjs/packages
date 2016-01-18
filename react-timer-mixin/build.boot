@@ -29,8 +29,9 @@
         (io/make-parents target)
         (io/copy (tmpd/file f) target))
       (binding [boot.util/*sh-dir* (str (io/file tmp (format "react-timer-mixin-%s" +lib-version+)))]
-        ((sh "npm" "install" "browserify"))
-        ((sh "node" "node_modules/browserify/bin/cmd.js" "TimerMixin.js" "-s" "TimerMixin" "-o" "timerbundled.js")))
+        ((sh "npm" "install" "browserify" "uglify-js"))
+        ((sh "node" "node_modules/browserify/bin/cmd.js" "TimerMixin.js" "-s" "TimerMixin" "-o" "timerbundled.js"))
+        ((sh "node" "node_modules//uglify-js/bin/uglifyjs" "timerbundled.js" "-o" "timerbundled.min.js")))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 (deftask package []
@@ -40,7 +41,6 @@
              :unzip true)
    (build-timer-mixin)
    (sift :move {#"^react(.*)/timerbundled.js"       "cljsjs/react-timer-mixin/development/TimerMixin.inc.js"})
-   (minify :in "cljsjs/react-timer-mixin/development/TimerMixin.inc.js"
-           :out "cljsjs/react-timer-mixin/production/TimerMixin.min.inc.js")
+   (sift :move {#"^react(.*)/timerbundled.min.js"   "cljsjs/react-timer-mixin/production/TimerMixin.min.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.react-timer-mixin")))
