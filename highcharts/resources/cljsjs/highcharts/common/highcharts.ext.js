@@ -1,3 +1,5 @@
+var $ = function(){};
+$.highcharts = function(){};
 var Highcharts = {
   "seriesTypes": {
     "line": function () {},
