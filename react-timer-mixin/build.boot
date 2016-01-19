@@ -1,6 +1,6 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/boot-cljsjs "0.5.0"  :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.5.1"  :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -9,7 +9,7 @@
          '[boot.util :refer [sh]])
 
 (def +lib-version+ "0.13.2")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/react-timer-mixin
@@ -41,6 +41,7 @@
    (build-timer-mixin)
    (sift :move {#"^react(.*)/timerbundled.js"       "cljsjs/react-timer-mixin/development/TimerMixin.inc.js"})
    (minify :in "cljsjs/react-timer-mixin/development/TimerMixin.inc.js"
-           :out "cljsjs/react-timer-mixin/production/TimerMixin.min.inc.js")
+           :out "cljsjs/react-timer-mixin/production/TimerMixin.min.inc.js"
+           :lang :ecmascript5)
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.react-timer-mixin")))
