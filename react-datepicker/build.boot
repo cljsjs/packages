@@ -7,7 +7,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.18.0")
+(def +lib-version+ "0.15.2")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -26,7 +26,7 @@
 (deftask package []
   (comp
     (download :url (str "https://github.com/Hacker0x01/react-datepicker/archive/v" +lib-version+ ".zip")
-	      :checksum "B03E6131484483293983195222860285"	
+	      :checksum "B5BCCD5BB8A0C01A93FD31C32BBF1BE2"	
               :unzip true)
 
     (sift :move {#"^react-datepicker.*[/ \\]dist[/ \\]react-datepicker.js$" "cljsjs/react-datepicker/development/react-datepicker.inc.js"
