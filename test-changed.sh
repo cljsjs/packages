@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if [[ $CIRCLE_BRANCH == master ]]; then
+    exit 0
+fi
+
 EXIT=0
 
 for x in $(./changed-packages.sh); do
