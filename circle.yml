@@ -15,7 +15,7 @@ dependencies:
   override:
     # Run tests
     # Run in dependency step to cache the deps
-    - /test-changed.sh
+    - ./test-changed.sh
 test:
   override:
     - echo 1
