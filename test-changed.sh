@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [[ $CIRCLE_BRANCH == master ]]; then
-    exit 0
+if [[ $CIRCLE_BRANCH == "master" ]]; then
+    exit
 fi
 
 EXIT=0
