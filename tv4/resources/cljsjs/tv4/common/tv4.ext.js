@@ -17,9 +17,18 @@ tv4.dropSchemas = function() {};
 tv4.defineKeyword = function() {};
 tv4.defineError = function() {};
 tv4.reset = function() {};
-tv4.missing = function() {};
-tv4.error = function() {};
-tv4.valid = function() {};
+tv4.missing = [];
+
+/**
+ * @type {?Object}
+ */
+tv4.error = null;
+
+/**
+ * @type {?boolean}
+ */
+tv4.valid = true;
+
 tv4.normSchema = function() {};
 tv4.resolveUrl = function() {};
 tv4.getDocumentUri = function() {};
@@ -27,7 +36,6 @@ tv4.getDocumentUri = function() {};
 /**
  * @enum {number}
  */
-
 tv4.errorCodes = {
     INVALID_TYPE: 0,
     ENUM_MISMATCH: 1,
