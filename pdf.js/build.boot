@@ -1,13 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.11" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0"  :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer [download minify]])
+(require '[cljsjs.boot-cljsjs.packaging :refer [download]])
 
-(def +version+ "1.1.3-0")
-(bootlaces! +version+)
+(def +lib-version+ "1.1.3")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom {:project 'cljsjs/pdfjs
@@ -19,7 +17,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/mozilla/pdf.js/releases/download/v1.1.3/pdfjs-1.1.3-dist.zip"
+    (download :url (format "https://github.com/mozilla/pdf.js/releases/download/v%s/pdfjs-%s-dist.zip" +lib-version+ +lib-version+)
               :checksum "E25EE439EDC685D83C2D093CEC964A32"
               :unzip true)
     (sift :move {#"^build/pdf\.js$"         "cljsjs/pdfjs/common/pdf.inc.js"
