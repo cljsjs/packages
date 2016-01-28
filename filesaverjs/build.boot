@@ -20,7 +20,7 @@
 (deftask package []
   (comp
    (download :url (str "https://github.com/eligrey/FileSaver.js/archive/" +lib-checkout+ ".zip")
-             :checksum "02220c6a058b03a8270c1e481b440a23"
+             :checksum "45a874d19c911acdcdafea9a0246ea3c"
              :unzip true)
    (sift :move {#"^FileSaver.js-[^/]+/FileSaver.js" "cljsjs/filesaverjs/development/filesaverjs.inc.js"})
    (sift :move {#"^FileSaver.js-[^/]+/FileSaver.min.js" "cljsjs/filesaverjs/development/filesaverjs.min.js"})
