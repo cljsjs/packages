@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot])
 
-(def +lib-checkout+ "230de7d1426d0d04abe782e0aed5800838892dd7")
+(def +lib-checkout+ "f23c4a66dc9fa1af818322f08eb29a371ccb4ccf")
 (def +lib-version+ "1.1.20151003")
 (def +version+ (str +lib-version+ "-0"))
 
