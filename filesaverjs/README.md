@@ -16,6 +16,13 @@ you can require the packaged library like so:
 
 ...
 
+(defn download [filename content & [mime-type]]
+  (let [mime-type (or mime-type (str "text/plain;charset=" (.-characterSet js/document)))
+        blob (new js/Blob
+                  (clj->js [content])
+                  {:type mime-type})]
+    (js/saveAs blob filename)))
+
 (defn download-button []
   [:button
    {:on-click #(download "test.txt" "Hello world!\n")}
