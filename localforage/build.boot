@@ -6,7 +6,6 @@
 
 (def +lib-version+ "1.3.1")
 (def +version+ (str +lib-version+ "-0"))
-(bootlaces! +version+)
 
 (task-options!
  push {:ensure-clean false}
