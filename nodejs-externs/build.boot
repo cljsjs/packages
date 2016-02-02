@@ -5,7 +5,8 @@
          '[boot.tmpdir :as tmpd]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "1.0.4-1")
+(def +lib-version+ "1.0.4")
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom {:project     'cljsjs/nodejs-externs
@@ -16,7 +17,7 @@
       :license     {"Apache License" "http://www.apache.org/licenses/LICENSE-2.0.html"}})
 
 (deftask download-nodejs-externs []
-  (download :url "https://github.com/dcodeIO/node.js-closure-compiler-externs/archive/1.0.4.zip"
+  (download :url (format "https://github.com/dcodeIO/node.js-closure-compiler-externs/archive/%s.zip" +lib-version+)
             :checksum "857bf4b4600c87a553293e7cc2dc7cea"
             :unzip true))
 

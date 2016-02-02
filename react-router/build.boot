@@ -5,7 +5,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.13.2-0")
+(def +lib-version+ "0.13.2")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/react-router
@@ -16,7 +17,7 @@
        :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
 
 (deftask download-react-router []
-  (download :url      "https://github.com/rackt/react-router/archive/v0.13.2.zip"
+  (download :url      (format "https://github.com/rackt/react-router/archive/v%s.zip" +lib-version+)
             :checksum "e157777e2d854994aac43448b278b245"
             :unzip    true))
 

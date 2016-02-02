@@ -1,11 +1,11 @@
 (set-env!
  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]
-                 [cljsjs/long "3.0.1-0"]])
+                 [cljsjs/long "3.0.3-1"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "5.0.0")
-(def +version+ (str +lib-version+ "-1"))
+(def +version+ (str +lib-version+ "-2"))
 
 (task-options!
  push {:ensure-clean false}

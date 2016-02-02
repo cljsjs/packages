@@ -4,7 +4,9 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "1.0.0")
+(def +lib-version+ "1.0.0")
+; FIXME: Next release should have build identier
+(def +version+ (str +lib-version+ ""))
 
 (task-options!
  pom {:project     'cljsjs/ocean

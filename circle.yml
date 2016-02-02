@@ -2,7 +2,8 @@ machine:
   java:
     version: oraclejdk8
   environment:
-    BOOT_VERSION: 2.5.1
+    BOOT_VERSION: 2.5.5
+    _JAVA_OPTIONS: "-Xms512m -Xmx1024m"
 dependencies:
   cache_directories:
     - "~/.boot/cache/lib"
@@ -10,10 +11,12 @@ dependencies:
   pre:
     - curl -L https://github.com/boot-clj/boot-bin/releases/download/latest/boot.sh -o ~/bin/boot
     - chmod +x ~/bin/boot
+    - mkdir -p ~/.boot
+    - cp profile.boot ~/.boot/profile.boot
   override:
-    # Download boot-cljsjs
-    # Also, run nearly no-op tasks to download pod deps
-    - cd airbrake; boot show -d -- download -u http://circleci.com -- decompress -p x
+    # Run tests
+    # Run in dependency step to cache the deps
+    - ./test-changed.sh
 test:
   override:
     - echo 1

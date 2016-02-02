@@ -5,7 +5,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.8.3-0")
+(def +lib-version+ "0.8.3")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom  {:project     'cljsjs/flot
@@ -43,7 +44,7 @@
 
 (deftask package []
   (comp
-    (download :url "http://www.flotcharts.org/downloads/flot-0.8.3.zip"
+    (download :url (format "http://www.flotcharts.org/downloads/flot-%s.zip" +lib-version+)
               :checksum "a134a869d2b3d476a67a86abbe881676"
               :unzip true)
 

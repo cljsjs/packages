@@ -4,7 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "4.11.0-1")
+(def +lib-version+ "4.13.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom {:project     'cljsjs/vis
@@ -17,8 +18,8 @@
 
 (deftask package []
   (comp
-   (download  :url      "https://github.com/almende/vis/archive/v4.11.0.zip"
-              :checksum "28E85C1C8E8B18C289D1780438F90AE6"
+   (download  :url      (format "https://github.com/almende/vis/archive/v%s.zip" +lib-version+)
+              :checksum "a5165c5467e680276db328a167bc8eba"
               :unzip    true)
    (sift      :move     {#"^vis(.*)/dist/vis.js"
                          "cljsjs/vis/development/vis.inc.js"

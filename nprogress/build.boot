@@ -19,7 +19,7 @@
 
 (deftask package []
          (comp
-           (download :url "https://github.com/rstacruz/nprogress/archive/v0.2.0.zip"
+           (download :url (format "https://github.com/rstacruz/nprogress/archive/v%s.zip" +lib-version+)
                      :checksum "274ebe53662ec0a9ba76d44c89d010cb"
                      :unzip true)
            (sift :move {

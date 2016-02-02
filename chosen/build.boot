@@ -18,7 +18,7 @@
 
 (deftask package []
   (comp
-   (download :url      (str "https://github.com/harvesthq/chosen/releases/download/" +lib-version+ "/chosen_v1.4.2.zip")
+   (download :url      (format "https://github.com/harvesthq/chosen/releases/download/%s/chosen_v%s.zip" +lib-version+ +lib-version+)
              :checksum "dda575a545dc97924bebfa2a070bf993"
              :unzip    true)
    (sift :move {#"^chosen\.jquery\.js"      "cljsjs/chosen/development/chosen.inc.js"

@@ -25,7 +25,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/airbrake/airbrake-js/archive/v0.5.3.zip"
+    (download :url (format "https://github.com/airbrake/airbrake-js/archive/v%s.zip" +lib-version+)
               :checksum "0ea51136131c1feca422822883ecf4c8"
               :unzip true)
 

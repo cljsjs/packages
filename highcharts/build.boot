@@ -1,11 +1,12 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/boot-cljsjs "0.5.0"  :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.5.0"  :scope "test"]
+                 [cljsjs/jquery "1.11.3-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "4.1.10")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-2"))
 
 (task-options!
  pom  {:project     'cljsjs/highcharts
@@ -21,8 +22,8 @@
              :checksum "d7c3fbca69de8db03d011f471aeaac19")
    (download :url      (str "http://code.highcharts.com/" +lib-version+ "/highcharts.src.js")
              :checksum "ba0df0dcf757b702387bb859d9a951bc")
-   (sift :move {#"highcharts.js"     "cljsjs/production/highcharts.min.inc.js"})
-   (sift :move {#"highcharts.src.js"     "cljsjs/development/highcharts.inc.js"})
+   (sift :move {#"highcharts.js"     "cljsjs/highcharts/production/highcharts.min.inc.js"})
+   (sift :move {#"highcharts.src.js"     "cljsjs/highcharts/development/highcharts.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name     "cljsjs.highcharts"
               :requires ["cljsjs.jquery"])))
