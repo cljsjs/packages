@@ -5,7 +5,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.1.0")
+(def +lib-version+ "1.2.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,10 +18,13 @@
 
 (deftask package []
   (comp
-   (download :url "https://cdn.rawgit.com/jasondavies/d3-cloud/master/build/d3.layout.cloud.js")
-   (sift :move {#"d3.layout.cloud.js" "cljsjs/d3-cloud/development/cloud.inc.js"})
-   (download :url "https://cdn.rawgit.com/jasondavies/d3-cloud/master/build/d3.layout.cloud.js")
-   (sift :move {#"d3.layout.cloud.js" "cljsjs/d3-cloud/production/cloud.min.inc.js"})
+   (download :url (str "https://github.com/jasondavies/d3-cloud/archive/v" +lib-version+ ".zip")
+             :unzip true)
+   (sift :move {#"^d3-cloud-([\d\.]*)/build/d3\.layout\.cloud\.js" "cljsjs/d3-cloud/development/cloud.inc.js"})
+
+   (minify :in "cljsjs/d3-cloud/development/cloud.inc.js"
+               :out "cljsjs/d3-cloud/production/cloud.min.inc.js")
+
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.d3-cloud"
               :requires ["cljsjs.d3"])))
