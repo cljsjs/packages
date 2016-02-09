@@ -104,4 +104,9 @@ ReactBootstrap.Modal.Footer = function() {};
 ReactBootstrap.Modal.Header = function() {};
 ReactBootstrap.Modal.Title = function() {};
 
+ReactBootstrap.Navbar.Header = function() {};
+ReactBootstrap.Navbar.Toggle = function() {};
+ReactBootstrap.Navbar.Collapse = function() {};
+ReactBootstrap.Navbar.Brand = function() {};
+
 ReactBootstrap.SplitButton.Toggle = function() {};
