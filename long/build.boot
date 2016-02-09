@@ -3,7 +3,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.0.1")
+(def +lib-version+ "3.0.3")
 (def +version+ (str +lib-version+ "-1"))
 
 (task-options!
@@ -21,12 +21,12 @@
       (download :url (format "https://raw.githubusercontent.com/dcodeIO/long.js/%s/dist/long.js"
                        +lib-version+)
         :name src
-        :checksum "6B58D0CBB24769F0CE7A7C0CCF240EA0"
+        :checksum "3FE95D95DCDB8F3A79F745469EB28467"
         :unzip false)
       (download :url (format "https://raw.githubusercontent.com/dcodeIO/long.js/%s/externs/long.js"
                        +lib-version+)
         :name "cljsjs/common/long.ext.js"
-        :checksum "7472385A218BA78CCCF07166F2AF76D5"
+        :checksum "744BDD8DFEA63C3B132B24F9CC720B4B"
         :unzip false)
       ; here b/c dcodeio uses UMD / module declarations that GClosure doesn't know how
       ; to rewrite (uses `modules["exports"] = ...`, among other things)

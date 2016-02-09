@@ -4,6 +4,11 @@
 
 See [the wiki](https://github.com/cljsjs/packages/wiki/Creating-Packages).
 
+## For information and help
+
+[Clojurians slack](https://clojurians.slack.com/) ([join](http://clojurians.net/))
+has a channel [#cljsjs](https://clojurians.slack.com/messages/cljsjs/) for talk about Cljsjs.
+
 ## Commit messages
 
 1. Start commit message with `[<library-name>]`

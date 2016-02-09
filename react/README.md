@@ -21,7 +21,10 @@ you can require the packaged library like so:
 
 **Note that this JAR provides the same `cljsjs/react` module as
 cljsjs/react.** This decision has been made to allow swapping regular
-React in transitive dependencies with React with addons.
+React in transitive dependencies with React with addons. If you do have transitive
+dependencies on cljsjs/react, such as with om/reagent/etc, you will need to
+declare an exclusion for cljsjs/react. An example for leiningen can be found
+[here][lein-excl].
 
 ## TestUtils
 
@@ -34,3 +37,4 @@ src/cljs/deps.cljs:
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[lein-excl]: https://github.com/technomancy/leiningen/blob/master/sample.project.clj#L65

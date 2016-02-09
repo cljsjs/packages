@@ -28,6 +28,11 @@ If you'd like to contribute there's a
 [small section on that](https://github.com/cljsjs/packages/wiki#contribute)
 as well.
 
+## For information and help
+
+[Clojurians slack](https://clojurians.slack.com/) ([join](http://clojurians.net/))
+has a channel [#cljsjs](https://clojurians.slack.com/messages/cljsjs/) for talk about Cljsjs.
+
 [fileset-doc]: https://github.com/boot-clj/boot/wiki/Filesets
 [boot-cljsjs]: https://github.com/cljsjs/boot-cljsjs
 [build.boot]: react/build.boot

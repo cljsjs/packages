@@ -514,3 +514,8 @@ Moment.prototype.max = function() {};
  * @since 2.8.1
  */
 Moment.prototype.locale = function() {};
+
+/**
+ * @since 2.7.0
+ */
+Moment.prototype.relativeTimeThreshold = function() {};
