@@ -1,14 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.10" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0"  :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0"  :scope "test"]
                   [cljsjs/d3 "3.5.5-1"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "2.1.2-0")
-(bootlaces! +version+)
+(def +lib-version+ "2.1.2")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/dimple
@@ -20,9 +18,9 @@
 
 (deftask package []
   (comp
-   (download :url "https://raw.githubusercontent.com/PMSI-AlignAlytics/dimple/2.1.2/dist/dimple.v2.1.2.js"
+   (download :url (str "https://raw.githubusercontent.com/PMSI-AlignAlytics/dimple/" +lib-version+ "/dist/dimple.v" +lib-version+ ".js")
              :checksum "FD30B182DBF07FF8EF314CB1C734DC82")
-   (download :url "https://raw.githubusercontent.com/PMSI-AlignAlytics/dimple/2.1.2/dist/dimple.v2.1.2.min.js"
+   (download :url "https://raw.githubusercontent.com/PMSI-AlignAlytics/dimple/" +lib-version+ "/dist/dimple.v" +lib-version+ ".min.js"
              :checksum "C5D7EF47BA2445A130A00F3A9ABC1B78")
    (sift :move {#"^dimple\.v([\d+\.]*).js" "cljsjs/dimple/development/dimple.inc.js"
                 #"^dimple\.v([\d+\.]*).min.js" "cljsjs/dimple/production/dimple.min.inc.js"})

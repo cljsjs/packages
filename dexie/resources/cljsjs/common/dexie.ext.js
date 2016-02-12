@@ -1,0 +1,42 @@
+var Dexie = {
+  "delete": function () {},
+  "exists": function () {},
+  "getDatabaseNames": function () {},
+  "defineClass": function () {},
+  "ignoreTransaction": function () {},
+  "spawn": function () {},
+  "vip": function () {},
+  "Promise": function () {},
+  "derive": function () {},
+  "extend": function () {},
+  "override": function () {},
+  "events": function () {},
+  "getByKeyPath": function () {},
+  "setByKeyPath": function () {},
+  "delByKeyPath": function () {},
+  "shallowClone": function () {},
+  "deepClone": function () {},
+  "addons": function () {},
+  "fakeAutoComplete": function () {},
+  "asap": function () {},
+  "ModifyError": function () {},
+  "MultiModifyError": function () {},
+  "IndexSpec": function () {},
+  "TableSchema": function () {},
+  "dependencies": {
+    "indexedDB": {
+      "webkitGetDatabaseNames": function () {},
+      "open": function () {},
+      "deleteDatabase": function () {},
+      "cmp": function () {}
+    },
+    "IDBKeyRange": function () {},
+    "IDBTransaction": function () {},
+    "Error": function () {},
+    "SyntaxError": function () {},
+    "TypeError": function () {},
+    "DOMError": function () {},
+    "localStorage": function () {}
+  },
+  "version": {}
+}

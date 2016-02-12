@@ -1,0 +1,24 @@
+34a35
+> var googNamespace = 'incremental_dom';
+146a148,166
+> function jsClosureProvides(done) {
+>   return bundle('cjs').then(function(gen) {
+>       var moduleDeclaration = 'goog.provide(\'' + googNamespace + '\');';
+>       var code = moduleDeclaration + '\n'
+>               + 'goog.scope(function(){\n'
+>               + 'var exports = ' + googNamespace + ';'
+>               + gen.code.replace(/'use strict';/, '')
+>               + '\n});';
+> 
+>     return file(artifactName + '-closure-provides.js', code, {src: true})
+>       .pipe(sourcemaps.init({loadMaps: true}))
+>       .pipe(replace('process.env.NODE_ENV !== \'production\'', 'goog.DEBUG'))
+>       .pipe(babel())
+>       .pipe(sourcemaps.write('./'))
+>       .pipe(gulp.dest('dist'));
+>   });
+> }
+> 
+> 
+177a198
+> gulp.task('js-closure-provides', jsClosureProvides);

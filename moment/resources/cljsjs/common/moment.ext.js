@@ -362,6 +362,13 @@ Moment.prototype.isAfter = function() {};
 
 /**
  * @nosideeffects
+ * @since 2.9.0
+ * @type {function(!(Moment|string|number|Date|Array.<!number>), !(Moment|string|number|Date|Array.<!number>), !string=):!boolean}
+ */
+Moment.prototype.isBetween = function() {};
+
+/**
+ * @nosideeffects
  * @since 1.0.0
  * @type {function():!boolean}
  */
@@ -507,3 +514,8 @@ Moment.prototype.max = function() {};
  * @since 2.8.1
  */
 Moment.prototype.locale = function() {};
+
+/**
+ * @since 2.7.0
+ */
+Moment.prototype.relativeTimeThreshold = function() {};

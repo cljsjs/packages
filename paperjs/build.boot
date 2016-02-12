@@ -1,18 +1,15 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces "0.1.11" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.9.24")
-(def +cljsjs-version+ (str +version+ "-0"))
-(bootlaces! +cljsjs-version+)
+(def +lib-version+ "0.9.24")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/paperjs
-       :version     +cljsjs-version+
+       :version     +version+
        :description "The Swiss Army Knife of Vector Graphics Scripting"
        :url         "http://paperjs.org"
        :scm         {:url "https://github.com/cljsjs/packages"}
@@ -20,7 +17,7 @@
 
 (deftask package []
   (comp
-    (download :url (str "https://github.com/paperjs/paper.js/archive/v" +version+ ".zip")
+    (download :url (str "https://github.com/paperjs/paper.js/archive/v" +lib-version+ ".zip")
               :checksum "36FC91B3438A8967D1231876F731E918"
               :unzip true)
     (sift :move {#"^paper.js-.*/dist/paper-full.js" "cljsjs/development/paper-full.inc.js"

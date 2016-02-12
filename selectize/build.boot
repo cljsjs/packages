@@ -1,18 +1,16 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                 [cljsjs/boot-cljsjs "0.5.0" :scope "test"]
+ :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]
                  [cljsjs/jquery "1.9.1-0"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.12.1")
-(def cljsjs-version "1")
+(def +lib-version+ "0.12.1")
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/selectize
-       :version     (str +version+ "-" cljsjs-version)
+       :version     +version+
        :description "Selectize is the hybrid of a textbox and <select> box."
        :url         "http://brianreavis.github.io/selectize.js/"
        :scm         {:url "https://github.com/brianreavis/selectize.js/"}
@@ -20,7 +18,7 @@
 
 (deftask package []
   (comp
-   (download :url (str "https://github.com/brianreavis/selectize.js/archive/v" +version+ ".zip")
+   (download :url (str "https://github.com/brianreavis/selectize.js/archive/v" +lib-version+ ".zip")
              :checksum "FED9044122798910DCB637E90E96E462"
              :unzip true)
    (sift :move {#".*/dist/js/standalone/selectize.js"     "cljsjs/selectize/development/selectize.inc.js"

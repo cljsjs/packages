@@ -1,13 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "2.4.2-0")
-(bootlaces! +version+)
+(def +lib-version+ "2.4.2")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  push {:ensure-clean false}
@@ -20,7 +18,7 @@
 
 (deftask package []
   (comp
-   (download :url "http://cdn.jsdelivr.net/phaser/2.4.2/phaser.zip"
+   (download :url (format "http://cdn.jsdelivr.net/phaser/%s/phaser.zip" +lib-version+)
              :checksum "f74d415e21fd6b26819c7f2fe2de9a8d"
              :unzip true)
    (sift :move {#"^phaser\.js$"

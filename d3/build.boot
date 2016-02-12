@@ -1,13 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.10" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0"  :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0"  :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "3.5.5-3")
-(bootlaces! +version+)
+(def +lib-version+ "3.5.7")
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/d3
@@ -19,8 +17,8 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/mbostock/d3/archive/v3.5.5.zip"
-              :checksum "1fa239dd27ac7527756efa4d3b73a266"
+    (download :url (str "https://github.com/mbostock/d3/archive/v" +lib-version+ ".zip")
+              :checksum "8FBD9872D28CCFE1F266A6EE4B5D4205"
               :unzip true)
     (sift :move {#"^d3-([\d\.]*)/d3\.js"      "cljsjs/d3/development/d3.inc.js"
                  #"^d3-([\d\.]*)/d3\.min\.js" "cljsjs/d3/production/d3.min.inc.js"})

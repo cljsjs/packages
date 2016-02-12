@@ -1,13 +1,11 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[adzerk/bootlaces   "0.1.10" :scope "test"]
-                 [cljsjs/boot-cljsjs "0.5.0"  :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.5.0"  :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "1.2.10-0")
-(bootlaces! +version+)
+(def +lib-version+ "1.3.1")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  push {:ensure-clean false}
@@ -20,8 +18,8 @@
 
 (deftask package []
   (comp
-   (download :url "https://github.com/mozilla/localForage/archive/1.2.10.zip"
-             :checksum "7f219bc138eee32fba80e79d6179872a"
+   (download :url (format "https://github.com/mozilla/localForage/archive/%s.zip" +lib-version+)
+             :checksum "448FC6ABC00AA894F8B1437DB03EA0AA"
              :unzip true)
    (sift :move {#"^localForage-.*/dist/localforage.js$" "cljsjs/localforage/development/localforage.inc.js"})
    (minify :in "cljsjs/localforage/development/localforage.inc.js"

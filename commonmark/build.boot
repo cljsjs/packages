@@ -1,17 +1,15 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.22.0")
-(def +cljsjs-version+ (str +version+ "-0"))
+(def +lib-version+ "0.22.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom  {:project     'cljsjs/commonmark
-        :version     +cljsjs-version+
+        :version     +version+
         :description "CommonMark is a rationalized version of Markdown syntax.
                       It provides a library with functions for parsing
                       CommonMark documents to an abstract syntax tree (AST),
@@ -23,7 +21,7 @@
 
 (deftask package []
   (comp
-   (download  :url (str "https://codeload.github.com/jgm/commonmark.js/zip/" +version+)
+   (download  :url (str "https://codeload.github.com/jgm/commonmark.js/zip/" +lib-version+)
               :checksum "F1570544C2A967891BB9AE2314FE6648"
               :unzip true)
    (sift :move {#"^commonmark.js.*/dist/commonmark.js" "cljsjs/development/commonmark.inc.js"})

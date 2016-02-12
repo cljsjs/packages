@@ -1,13 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.10" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0"  :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0"  :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "2.2.7-0")
-(bootlaces! +version+)
+(def +lib-version+ "2.2.7")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/echarts
@@ -19,7 +17,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/ecomfe/echarts/archive/2.2.7.zip"
+    (download :url (str "https://github.com/ecomfe/echarts/archive/" +lib-version+ ".zip")
               :checksum "5910dbce125fe826f495c9715f4eab4c"
               :unzip true)
     (sift :move {#"^echarts-([\d\.]*)/build/source/echarts-all\.js$" "cljsjs/echarts/development/echarts.inc.js"

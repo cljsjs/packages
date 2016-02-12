@@ -1,15 +1,12 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[adzerk/bootlaces   "0.1.11" :scope "test"]
-                 [cljsjs/boot-cljsjs "0.5.0"  :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.5.0"  :scope "test"]
+                 [cljsjs/jquery "1.11.3-0"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def highcharts-version "4.1.8")
-(def cljsjs-version "-1")
-(def +version+ (str highcharts-version cljsjs-version))
-(bootlaces! +version+)
+(def +lib-version+ "4.2.2")
+(def +version+ (str +lib-version+ "-2"))
 
 (task-options!
  pom  {:project     'cljsjs/highcharts
@@ -21,12 +18,12 @@
 
 (deftask package []
   (comp
-   (download :url      (str "http://code.highcharts.com/" highcharts-version "/highcharts.js")
-             :checksum "236BEAA96DBC1413D5D467E418CBFEA8")
-   (download :url      (str "http://code.highcharts.com/" highcharts-version "/highcharts.src.js")
-             :checksum "41195C3B6190A9344C5E1EF9F21BDF2F")
-   (sift :move {#"highcharts.js"     "cljsjs/production/highcharts.min.inc.js"})
-   (sift :move {#"highcharts.src.js"     "cljsjs/development/highcharts.inc.js"})
+   (download :url      (str "http://code.highcharts.com/" +lib-version+ "/highcharts.js")
+             :checksum "59CCC9D7FB4D417D55124EB7C40975D9")
+   (download :url      (str "http://code.highcharts.com/" +lib-version+ "/highcharts.src.js")
+             :checksum "FA3D4219B24F80A75170E8B3E5A564E1")
+   (sift :move {#"highcharts.js"     "cljsjs/highcharts/production/highcharts.min.inc.js"})
+   (sift :move {#"highcharts.src.js"     "cljsjs/highcharts/development/highcharts.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name     "cljsjs.highcharts"
               :requires ["cljsjs.jquery"])))

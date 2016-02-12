@@ -1,14 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.11" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def mui-version "0.1.21")
-(def +version+ (str mui-version "-0"))
-(bootlaces! +version+)
+(def +lib-version+ "0.1.21")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom {:project     'cljsjs/mui
@@ -21,7 +18,7 @@
 (deftask package []
   (task-options! push {:ensure-branch nil})
   (comp
-    (download :url (str "https://github.com/muicss/mui/archive/" mui-version ".zip")
+    (download :url (str "https://github.com/muicss/mui/archive/" +lib-version+ ".zip")
               :checksum "7CF1BE714B674C3A86796DAB9B8AD42B"
               :unzip true)
     (sift :move {#"^mui-[\d.]+/dist/js/mui\.js$"        "cljsjs/development/mui.inc.js"

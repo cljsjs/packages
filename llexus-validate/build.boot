@@ -1,14 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.10" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0"  :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0"  :scope "test"]
                   ])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.1.0-1")
-(bootlaces! +version+)
+(def +lib-version+ "0.1.0")
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/llexus-validate
@@ -20,7 +18,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/little-arhat/llexus-validate/archive/0.1.0.zip"
+    (download :url (format "https://github.com/little-arhat/llexus-validate/archive/%s.zip" +lib-version+)
               :checksum "5d16a0e3a75bb552c498d67c6a40213d"
               :unzip true)
     (sift :move {#"^llexus-validate-([\d\.-]*)/dist/llexus-validate\.js"      "cljsjs/llexus-validate/development/llexus-validate.inc.js"
