@@ -1,10 +1,10 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.1" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.7.15")
+(def +lib-version+ "3.8.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,9 +18,9 @@
 (deftask package []
   (comp
    (download :url (str "https://cdn.pubnub.com/pubnub-" +lib-version+ ".js")
-             :checksum "3AECB671E6E8BC8D4590EE58976D5981")
+             :checksum "A1B5629A42900593DD93067878A595E9")
    (download :url (str "https://cdn.pubnub.com/pubnub-" +lib-version+ ".min.js")
-             :checksum "15626328946E5EDD08D55C07A1971E6D")
+             :checksum "FB4F9B1B2AF2415741072CD0BAFC4E78")
    (sift :move {(re-pattern (str "^pubnub-" +lib-version+ ".js$"))
                 "cljsjs/pubnub/development/pubnub.inc.js"
                 (re-pattern (str "^pubnub-" +lib-version+ ".min.js$"))
