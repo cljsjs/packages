@@ -1,12 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "1.1.1-0")
+(def +lib-version+ "1.1.1")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom  {:project     'cljsjs/csv
@@ -18,7 +17,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/gkindel/CSV-JS/archive/v1.1.1.zip"
+    (download :url (str "https://github.com/gkindel/CSV-JS/archive/v" +lib-version+ ".zip")
               :checksum "3524058521147def3fddcc6c93d63249"
               :unzip true)
     (sift :move {#"^CSV-JS-.*/csv.js" "cljsjs/development/csv.inc.js"})

@@ -1,13 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]
                   [cljsjs/jquery "1.9.0-0"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "1.11.3-1")
+(def +lib-version+ "1.11.3")
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/jquery-ui
@@ -21,8 +20,9 @@
 
 (deftask package []
   (comp
-    (download :url      "https://github.com/rwillig/jquery-ui/blob/master/resources/download/jquery-ui-1.11.3.zip?raw="
-              :name     "jquery-ui-1.11.3.zip"
+    ; FIXME: Should use upstream source
+    (download :url      (format "https://github.com/rwillig/jquery-ui/blob/master/resources/download/jquery-ui-%s.zip?raw=" +lib-version+)
+              :name     (format "jquery-ui-%s.zip" +lib-version+)
               :checksum "cb943ac26be9ee755e8741ea232389e2"
               :unzip    true)
     (sift :include #{#"^jquery-ui-(.*)/external/(.*).js"} :invert true)

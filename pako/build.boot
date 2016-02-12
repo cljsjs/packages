@@ -1,13 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.11" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.2.7-0")
-(bootlaces! +version+)
+(def +lib-version+ "0.2.7")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom  {:project     'cljsjs/pako
@@ -19,9 +17,9 @@
 
 (deftask package []
   (comp
-    (download :url "https://raw.githubusercontent.com/nodeca/pako/0.2.7/dist/pako.min.js"
+    (download :url (format "https://raw.githubusercontent.com/nodeca/pako/%s/dist/pako.min.js" +lib-version+)
               :checksum "880935149cdc811080cf815e175af12a")
-    (download :url "https://raw.githubusercontent.com/nodeca/pako/0.2.7/dist/pako.js"
+    (download :url (format "https://raw.githubusercontent.com/nodeca/pako/%s/dist/pako.js" +lib-version+)
               :checksum "4bfb3a0fa3ac7831b02cc296666ca4e9")
     (sift :move {#"pako\.js"      "cljsjs/pako/development/pako.inc.js"
                  #"pako\.min\.js" "cljsjs/pako/production/pako.min.inc.js"})

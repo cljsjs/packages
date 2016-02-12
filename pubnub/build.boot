@@ -1,13 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.1" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def pubnub-version "3.7.14")
-(def +version+ (str pubnub-version "-0"))
+(def +lib-version+ "3.8.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/pubnub
@@ -19,11 +17,13 @@
 
 (deftask package []
   (comp
-   (download :url (str "https://cdn.pubnub.com/pubnub-" pubnub-version ".js"))
-   (download :url (str "https://cdn.pubnub.com/pubnub-" pubnub-version ".min.js"))
-   (sift :move {(re-pattern (str "^pubnub-" pubnub-version ".js$"))
+   (download :url (str "https://cdn.pubnub.com/pubnub-" +lib-version+ ".js")
+             :checksum "A1B5629A42900593DD93067878A595E9")
+   (download :url (str "https://cdn.pubnub.com/pubnub-" +lib-version+ ".min.js")
+             :checksum "FB4F9B1B2AF2415741072CD0BAFC4E78")
+   (sift :move {(re-pattern (str "^pubnub-" +lib-version+ ".js$"))
                 "cljsjs/pubnub/development/pubnub.inc.js"
-                (re-pattern (str "^pubnub-" pubnub-version ".min.js$"))
+                (re-pattern (str "^pubnub-" +lib-version+ ".min.js$"))
                 "cljsjs/pubnub/production/pubub.min.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.pubnub")))

@@ -1,14 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def plottable-version "1.12.0")
-(def +version+ (str plottable-version "-0"))
-(bootlaces! +version+)
+(def +lib-version+ "1.12.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom {:project     'cljsjs/plottable
@@ -22,7 +19,7 @@
 
 (deftask package []
          (comp
-           (download :url "https://github.com/palantir/plottable/releases/download/v1.12.0/plottable.zip"
+           (download :url (format "https://github.com/palantir/plottable/releases/download/v%s/plottable.zip" +lib-version+)
                      :checksum "f2c0ea46a93116b4d16393a703a286c5"
                      :unzip true)
            (sift :move {

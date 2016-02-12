@@ -1,15 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def package-version "1.0.0")
-(def cljsjs-version "0")
-(def +version+ (str package-version "-" cljsjs-version))
-(bootlaces! (str +version+))
+(def +lib-version+ "1.0.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/css-layout
@@ -21,7 +17,7 @@
 
 (deftask package []
   (comp
-   (download  :url      (str "https://github.com/facebook/css-layout/archive/v1.0.0.zip")
+   (download  :url      (str "https://github.com/facebook/css-layout/archive/v" +lib-version+ ".zip")
               :checksum "6D4B4D24A36920052B4CCB52EE7DFBB0"
               :unzip    true)
    (sift      :move     {#"^css-layout-.*/src/Layout.js"

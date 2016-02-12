@@ -1,13 +1,11 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[adzerk/bootlaces   "0.1.10" :scope "test"]
-                 [cljsjs/boot-cljsjs "0.5.0"  :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.5.0"  :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "4.8.1-0")
-(bootlaces! +version+)
+(def +lib-version+ "4.13.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom {:project     'cljsjs/vis
@@ -20,8 +18,8 @@
 
 (deftask package []
   (comp
-   (download  :url      "https://github.com/almende/vis/archive/v4.8.1.zip"
-              :checksum "9408EF6D143496AB82960EBB222D5B6D"
+   (download  :url      (format "https://github.com/almende/vis/archive/v%s.zip" +lib-version+)
+              :checksum "a5165c5467e680276db328a167bc8eba"
               :unzip    true)
    (sift      :move     {#"^vis(.*)/dist/vis.js"
                          "cljsjs/vis/development/vis.inc.js"

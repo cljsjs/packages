@@ -1,13 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.3.5-0")
-(bootlaces! +version+)
+(def +lib-version+ "0.3.5")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   push {:ensure-clean false}
@@ -25,7 +23,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/chjj/marked/archive/v0.3.5.zip"
+    (download :url (format "https://github.com/chjj/marked/archive/v%s.zip" +lib-version+)
               :checksum "989c318bc90eddad1182dd7268d2ab72"
               :unzip true)
     (sift :move {#"^marked-(.*)/lib/marked\.js"  "cljsjs/development/marked.inc.js"

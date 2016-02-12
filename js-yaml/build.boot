@@ -1,12 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "3.3.1-0")
+(def +lib-version+ "3.3.1")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom  {:project     'cljsjs/js-yaml
@@ -18,7 +17,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/nodeca/js-yaml/archive/3.3.1.zip"
+    (download :url (format "https://github.com/nodeca/js-yaml/archive/%s.zip" +lib-version+)
               :checksum "812fa1a884c5a633d88b10634ca91ba9"
               :unzip true)
     (sift :move {#"^js-yaml-.*/dist/js-yaml.js" "cljsjs/development/js-yaml.inc.js"})

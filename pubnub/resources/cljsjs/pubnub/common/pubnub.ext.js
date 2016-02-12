@@ -43,7 +43,7 @@ var PUBNUB = {
     "set_uuid": function () {},
     "get_uuid": function () {},
     "isArray": function () {},
-    "get_subscibed_channels": function () {},
+    "get_subscribed_channels": function () {},
     "presence_heartbeat": function () {},
     "stop_timers": function () {},
     "shutdown": function () {},

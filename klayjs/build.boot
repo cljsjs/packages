@@ -1,13 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces "0.1.11" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.3.2-0")
-(bootlaces! +version+)
+(def +lib-version+ "0.3.2")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom {:project     'cljsjs/klayjs
@@ -19,7 +17,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/OpenKieler/klayjs/archive/0.3.2.zip"
+    (download :url (format "https://github.com/OpenKieler/klayjs/archive/%s.zip" +lib-version+)
               :unzip true)
     (sift :move {#"^klayjs-.*/klay.js" "cljsjs/development/klay.inc.js"})
     (minify :in "cljsjs/development/klay.inc.js"

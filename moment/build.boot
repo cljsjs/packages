@@ -1,13 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "2.10.6-0")
-(bootlaces! +version+)
+(def +lib-version+ "2.10.6")
+(def +version+ (str +lib-version+ "-2"))
 
 (task-options!
   push {:ensure-clean false}
@@ -43,7 +41,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/moment/moment/archive/2.10.6.zip"
+    (download :url (format "https://github.com/moment/moment/archive/%s.zip" +lib-version+)
               :checksum "104b02737546e79505172590f4ebc523"
               :unzip true)
     ; Locale files are not immediately named .inc.js as we don't want deps-cljs to find them

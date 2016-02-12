@@ -1,13 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.10" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0"  :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0"  :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "7.0.1")
-(bootlaces! +version+)
+(def +lib-version+ "7.0.1")
+(def +version+ (str +lib-version+ ""))
 
 (task-options!
  pom  {:project     'cljsjs/chemdoodle
@@ -19,7 +17,7 @@
 
 (deftask package []
   (comp
-    (download :url "http://web.chemdoodle.com/downloads/ChemDoodleWeb-7.0.1.zip"
+    (download :url (str "http://web.chemdoodle.com/downloads/ChemDoodleWeb-" +lib-version+ ".zip")
               :checksum "a080e2b2a701321b35ceaa5655d2c876"
               :unzip true)
     (sift :move {#"^ChemDoodleWeb-([\d\.]*)/src/ChemDoodleWeb-unpacked.js"

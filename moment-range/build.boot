@@ -1,15 +1,13 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]
                   [cljsjs/moment "2.9.0-3"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[boot.task-helpers]
+(require '[boot.task-helpers]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "2.0.3-0")
-(bootlaces! +version+)
+(def +lib-version+ "2.0.3")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   push {:ensure-clean false}
@@ -27,7 +25,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/gf3/moment-range/archive/2.0.3.zip"
+    (download :url (format "https://github.com/gf3/moment-range/archive/%s.zip" +lib-version+)
               :checksum "705f4467371c7c3a442d0dbc573fe073"
               :unzip true)
 

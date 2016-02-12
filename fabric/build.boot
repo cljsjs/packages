@@ -1,12 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "1.5.0-0")
+(def +lib-version+ "1.5.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/fabric
@@ -18,9 +17,9 @@
 
 (deftask package []
   (comp
-    (download :url "https://raw.githubusercontent.com/kangax/fabric.js/v1.5.0/dist/fabric.js"
+    (download :url (format "https://raw.githubusercontent.com/kangax/fabric.js/v%s/dist/fabric.js" +lib-version+)
               :checksum "55D8FAC6D57FA1E1C9C2E2900D37AF07")
-    (download :url "https://raw.githubusercontent.com/kangax/fabric.js/v1.5.0/dist/fabric.min.js"
+    (download :url (format "https://raw.githubusercontent.com/kangax/fabric.js/v%s/dist/fabric.min.js" +lib-version+)
               :checksum "729F6076F0C6D3C33D9059A45C59216D")
     (replace-content :in "fabric.min.js" :match #"(?m)^//# sourceMappingURL=.*$" :value "")
     (sift :move {#"^fabric.js"     "cljsjs/fabric/development/fabric.inc.js"

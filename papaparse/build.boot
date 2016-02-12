@@ -1,16 +1,14 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.11" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def papaparse-version "4.1.1")
-(def +version+ (str papaparse-version "-1"))
+(def +lib-version+ "4.1.1")
+(def +version+ (str +lib-version+ "-1"))
 
 (def download-url
-  (str "https://github.com/mholt/PapaParse/archive/" papaparse-version ".tar.gz"))
+  (str "https://github.com/mholt/PapaParse/archive/" +lib-version+ ".tar.gz"))
 
 (task-options!
   pom  {:project     'cljsjs/papaparse
