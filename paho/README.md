@@ -6,7 +6,9 @@
 ```
 [](/dependency)
 
-NB!!! At the moment optimization is NOT supported!!!
+Please note that the minimised version of the Paho client is not used when
+enabling compile optimizations as there is a weird interaction between the
+Google Closure compiler and the Eclipse Paho Javascript minimised file.
 
 ```clojure
 (ns mtest.core
@@ -25,7 +27,7 @@ NB!!! At the moment optimization is NOT supported!!!
   (.subscribe client topic #js {:qos 0})
   (println "Subscribed")
   (send-message "Hello MQTT!" topic 0)
-  (println "Sent message.")) 
+  (println "Sent message."))
 
 (defn send-message [payload destination qos]
   (let [msg (Paho.MQTT.Message. payload)]
@@ -40,7 +42,7 @@ NB!!! At the moment optimization is NOT supported!!!
                                             (println reasonCode reasonMessage)))
         (set! (.-onMessageArrived mqtt) (fn [msg]
                                          (println
-                                            (str  "Topic: " (.-destinationName msg) 
+                                            (str  "Topic: " (.-destinationName msg)
                                                   " Payload: " (.-payloadString msg)))))
         (set! (.-onSuccess connectOptions) (fn [] (on-connect)))
         (set! (.-onFailure connectOptions ) (fn [_ _ msg] (println "Failure Connect: " msg)))
@@ -49,6 +51,6 @@ NB!!! At the moment optimization is NOT supported!!!
 
 (def client (connect))
 
-  
+
 
 ```
