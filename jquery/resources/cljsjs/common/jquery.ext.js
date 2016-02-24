@@ -252,6 +252,12 @@ jQuery.prototype.appendTo = function(target) {};
 jQuery.prototype.attr = function(arg1, arg2) {};
 
 /**
+ * @param {string} arg1
+ * @return {!jQuery}
+ */
+jQuery.prototype.modal = function(arg1) {};
+
+/**
  * @param {(string|Element|jQuery|function())} arg1
  * @param {(string|Element|Array.<Element>|jQuery)=} content
  * @return {!jQuery}
