@@ -11,7 +11,7 @@ var ReactMotion = {
     "TransitionMotion": function () {},
     "spring": function () {},
     "presets": {
-        "noWobble": {7
+        "noWobble": {
             "stiffness": {},
             "damping": {}
         },
