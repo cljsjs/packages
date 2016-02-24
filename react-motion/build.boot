@@ -10,7 +10,7 @@
          '[boot.util :refer [sh]])
 
 (def +lib-version+ "0.4.1")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/react-motion
