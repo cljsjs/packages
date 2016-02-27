@@ -7,7 +7,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.0.0-beta6")
+(def +lib-version+ "1.0.0-beta10")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -25,17 +25,17 @@
 
 (deftask package []
   (comp
-    (download :url (str "https://github.com/JedWatson/react-select/archive/v" +lib-version+ ".zip")
-	      :checksum "7DBDA8770F221E881ADE123C72F05279"	
-              :unzip true)
+   (download :url (str "https://github.com/JedWatson/react-select/archive/v" +lib-version+ ".zip")
+             :checksum "06daddedb3f28f4cbd63afb83762e7ae"
+             :unzip true)
 
-    (sift :move {#"^react-select.*[/ \\]dist[/ \\]react-select.js$" "cljsjs/react-select/development/react-select.inc.js"
-	         #"^react-select.*[/ \\]dist[/ \\]react-select.min\.js$" "cljsjs/react-select/production/react-select.min.inc.js"
-	         #"^react-select.*[/ \\]dist[/ \\]react-select.css$" "cljsjs/react-select/common/react-select.inc.css"})
+   (sift :move {#"^react-select.*[/ \\]dist[/ \\]react-select.js$" "cljsjs/react-select/development/react-select.inc.js"
+                #"^react-select.*[/ \\]dist[/ \\]react-select.min\.js$" "cljsjs/react-select/production/react-select.min.inc.js"
+                #"^react-select.*[/ \\]dist[/ \\]react-select.css$" "cljsjs/react-select/common/react-select.inc.css"})
 
-    (sift :include #{#"^cljsjs"})
+   (sift :include #{#"^cljsjs"})
 
-    (deps-cljs :name "cljsjs.react-select"
-               :requires ["cljsjs.react"
-                          "cljsjs.classnames"
-                          "cljsjs.react-input-autosize"])))
+   (deps-cljs :name "cljsjs.react-select"
+              :requires ["cljsjs.react"
+                         "cljsjs.classnames"
+                         "cljsjs.react-input-autosize"])))
