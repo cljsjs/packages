@@ -25,6 +25,7 @@ has a channel [#cljsjs](https://clojurians.slack.com/messages/cljsjs/) for talk 
 
 ## Creating Pull Requests
 
+- Base your changes on the latest master commit. This will ensure that the build scripts are up-to-date.
 - Please increment the build number (version part after the dash). This way maintainers only need to merge the PR and don't need to make any changes themselves.
 - If you are asked to implement changes, please comment on PR after implementing the changes. This way maintainers will more easily notice your updates.
 
