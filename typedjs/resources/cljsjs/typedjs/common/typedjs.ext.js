@@ -1,0 +1,1 @@
+$.prototype.typed = function(arg) {};
