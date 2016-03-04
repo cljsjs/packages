@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "0.7.3")
-(def +version+ (str +lib-version+ "-6"))
+(def +version+ (str +lib-version+ "-7"))
 
 (task-options!
  pom  {:project     'cljsjs/leaflet
