@@ -9,7 +9,7 @@
          '[boot.util :refer [sh info]]
          '[boot.task-helpers :as helpers])
 
-(def +lib-version+ "1.3.0")
+(def +lib-version+ "1.4.3")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -29,25 +29,21 @@
         (io/copy (tmpd/file f) target))
       (binding [boot.util/*sh-dir* (str (io/file tmp (format "react-mdl-%s" +lib-version+)))]
         (do ((sh "npm" "install"))
-            ((sh "npm" "run" "prebuild-all"))
-            ((sh "npm" "run" "build-all"))))
+            ((sh "npm" "run" "build-umd"))
+            ((sh "npm" "run" "build-min"))))
       (-> fileset (boot/add-resource tmp) boot/commit!)))  )
 
 (deftask package []
   (comp
    (download :url (str "https://github.com/tleunen/react-mdl/archive/v" +lib-version+ ".zip")
-             :checksum "d79400004f7042194caffeb1065af6e9"
              :unzip true)
+   (build-react-mdl)
+   (sift :move {
+                #"^react-mdl[^/]*/out/ReactMDL.js"         "cljsjs/react-mdl/development/ReactMDL.inc.js"
 
-   (sift :move {#"^react-mdl[^/]*/extra/material.js"       "cljsjs/react-mdl/development/material.inc.js"
-                #"^react-mdl[^/]*/extra/material.css"      "cljsjs/react-mdl/development/material.css"
+                #"^react-mdl[^/]*/out/ReactMDL.min.js"     "cljsjs/react-mdl/production/ReactMDL.min.inc.js"})
 
-                #"^react-mdl[^/]*/extra/material.min.js"   "cljsjs/react-mdl/production/material.min.inc.js"
-                #"^react-mdl[^/]*/extra/material.min.css"  "cljsjs/react-mdl/production/material.min.css"})
-
-   (minify :in "cljsjs/react-mdl/production/material.min.inc.js"
-           :out "cljsjs/react-mdl/production/material.min.inc.js")
    (sift :include #{#"^cljsjs"})
 
    (deps-cljs :name     "cljsjs.react-mdl"
-              :requires ["cljsjs.react"])))
+              :requires ["cljsjs.react" "cljsjs.react-mdl-extra"])))
