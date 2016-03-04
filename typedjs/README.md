@@ -1,8 +1,10 @@
-# cljsjs/react-select
+# cljsjs/typedjs
+
+This is a cljsjs package for https://github.com/mattboldt/typed.js/
 
 [](dependency)
 ```clojure
-[cljsjs/react-select "1.0.0-beta10-1"] ;; latest release
+[cljsjs/typedjs "1.1.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +14,6 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.react-select))
+  (:require cljsjs.typedjs))
 ```
-
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies

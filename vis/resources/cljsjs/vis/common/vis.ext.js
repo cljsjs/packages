@@ -666,6 +666,9 @@ var vis = {
               "borderRadius": {
                 "number": {}
               },
+              "interpolation": {
+                "boolean": {}
+              },
               "useImageSize": {
                 "boolean": {}
               },
@@ -793,6 +796,9 @@ var vis = {
               "boolean": {}
             },
             "edgeMinimization": {
+              "boolean": {}
+            },
+            "parentCentralization": {
               "boolean": {}
             },
             "direction": {
@@ -1041,6 +1047,9 @@ var vis = {
               "borderRadius": {
                 "number": {}
               },
+              "interpolation": {
+                "boolean": {}
+              },
               "useImageSize": {
                 "boolean": {}
               },
@@ -1277,6 +1286,9 @@ var vis = {
             },
             "borderRadius": {
               "number": {}
+            },
+            "interpolation": {
+              "boolean": {}
             },
             "useImageSize": {
               "boolean": {}
@@ -1520,6 +1532,7 @@ var vis = {
           "shapeProperties": {
             "borderDashes": {},
             "borderRadius": {},
+            "interpolation": {},
             "useImageSize": {}
           },
           "size": {}
@@ -1597,6 +1610,7 @@ var vis = {
             "treeSpacing": {},
             "blockShifting": {},
             "edgeMinimization": {},
+            "parentCentralization": {},
             "direction": {},
             "sortMethod": {}
           }

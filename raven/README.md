@@ -1,8 +1,8 @@
-# cljsjs/react-select
+# cljsjs/raven
 
 [](dependency)
 ```clojure
-[cljsjs/react-select "1.0.0-beta10-1"] ;; latest release
+[cljsjs/raven "2.1.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,9 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.react-select))
+  (:require cljsjs.raven))
 ```
+
+Documentation for the raven-js lib can be found [on its github page](https://github.com/getsentry/raven-js)
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies

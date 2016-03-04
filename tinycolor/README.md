@@ -1,8 +1,8 @@
-# cljsjs/react-select
+# cljsjs/tinycolor
 
 [](dependency)
 ```clojure
-[cljsjs/react-select "1.0.0-beta10-1"] ;; latest release
+[cljsjs/tinycolor "1.3.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.react-select))
+  (:require cljsjs.tinycolor))
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
