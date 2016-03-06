@@ -38,12 +38,12 @@
    (download :url (str "https://github.com/tleunen/react-mdl/archive/v" +lib-version+ ".zip")
              :unzip true)
    (build-react-mdl)
-   (sift :move {#"^react-mdl[^/]*/extra/material.css"      "cljsjs/react-mdl/development/material.css"
+   (sift :move {#"^react-mdl[^/]*/extra/material.css"      "public/assets/css/material.css"
                 #"^react-mdl[^/]*/out/ReactMDL.js"         "cljsjs/react-mdl/development/ReactMDL.inc.js"
                 #"^react-mdl[^/]*/extra/material.js"       "cljsjs/react-mdl/development/material.inc.js"
 
-                #"^react-mdl[^/]*/extra/material.min.css"  "cljsjs/react-mdl/production/material.min.css"
+                #"^react-mdl[^/]*/extra/material.min.css"  "public/assets/css/material.min.css"
                 #"^react-mdl[^/]*/extra/material.min.js"   "cljsjs/react-mdl/production/material.min.inc.js"
                 #"^react-mdl[^/]*/out/ReactMDL.min.js"     "cljsjs/react-mdl/production/ReactMDL.min.inc.js"})
 
-   (sift :include #{#"^cljsjs" #"^deps.cljs"})))
+   (sift :include #{#"^cljsjs" #"^deps.cljs" #"^public"})))
