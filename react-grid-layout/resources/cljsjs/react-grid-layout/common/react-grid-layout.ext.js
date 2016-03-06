@@ -1,37 +1,35 @@
 var ReactGridLayout = {
     "propTypes": {
-        "initialWidth": function () {},
-        "listenToWindowResize": function () {},
+        "width": function () {},
         "autoSize": function () {},
         "cols": function () {},
-        "draggableCancel": function () {},
-        "draggableHandle": function () {},
-        "verticalCompact": function () {},
-        "layout": function () {},
-        "layouts": function () {},
-        "margin": function () {},
-        "rowHeight": function () {},
-        "isDraggable": function () {},
-        "isResizable": function () {},
-        "useCSSTransforms": function () {},
-        "onLayoutChange": function () {},
-        "onDragStart": function () {},
-        "onDrag": function () {},
-        "onDragStop": function () {},
-        "onResizeStart": function () {},
-        "onResize": function () {},
-        "onResizeStop": function () {},
-        "children": function () {}
+        "draggableCancel": function() {},
+        "draggableHandle": function() {},
+        "verticalCompact": function() {},
+        "layout": function() {},
+        "margin": function() {},
+        "rowHeight": function() {},
+        "maxRows": function() {},
+        "isDraggable": function() {},
+        "isResizable": function() {},
+        "useCSSTransforms": function() {},
+        "onLayoutChange": function() {},
+        "onDragStart": function() {},
+        "onDrag": function() {},
+        "onDragStop": function() {},
+        "onResizeStart": function() {},
+        "onResize": function() {},
+        "onResizeStop": function() {},
+        "children": function() {}
     },
     "getDefaultProps": function () {},
     "displayName": {},
     "defaultProps": {
-        "initialWidth": {},
-        "listenToWindowResize": {},
         "autoSize": {},
         "cols": {},
         "rowHeight": {},
-        "layout": function () {},
+        "maxRows": {},
+        "layout": function() {},
         "margin": {
             "0": {},
             "1": {}
@@ -40,14 +38,68 @@ var ReactGridLayout = {
         "isResizable": {},
         "useCSSTransforms": {},
         "verticalCompact": {},
-        "onLayoutChange": function () {},
-        "onDragStart": function () {},
-        "onDrag": function () {},
-        "onDragStop": function () {},
-        "onResizeStart": function () {},
-        "onResize": function () {},
-        "onResizeStop": function () {}
+        "onLayoutChange": function() {},
+        "onDragStart": function() {},
+        "onDrag": function() {},
+        "onDragStop": function() {},
+        "onResizeStart": function() {},
+        "onResize": function() {},
+        "onResizeStop": function() {}
     },
-    "Responsive": function () {}
-}
+    "Responsive": {
+        "propTypes": {
+            "breakpoint": {},
+            "breakpoints": {},
+            "cols": {},
+            "layouts": function() {},
+            "width": {},
+            "onBreakpointChange": function() {},
+            "onLayoutChange": function() {},
+            "onWidthChange": function() {}
+        },
+        "defaultProps": {
+            "breakpoints": {},
+            "cols": {},
+            "layouts": {},
+            "onBreakpointChange": function() {},
+            "onLayoutChange": function() {},
+            "onWidthChange": function() {}
+        }
+    },
+    "WidthProvider": function () {}
+};
 
+var React = {};
+
+React.ReactAttribute = function() {};
+
+React.ReactAttribute._grid = {
+    "children": {},
+    "cols": {},
+    "containerWidth": {},
+    "rowHeight": {},
+    "margin": {},
+    "maxRows": {},
+    "x": {},
+    "y": {},
+    "w": {},
+    "h": {},
+    "minW": function() {},
+    "maxW": function() {},
+    "minH": function() {},
+    "maxH": function() {},
+    "i": {},
+    "onDragStop": function() {},
+    "onDragStart": function() {},
+    "onDrag": function() {},
+    "onResizeStop": function() {},
+    "onResizeStart": function() {},
+    "onResize": function() {},
+    "isDraggable": {},
+    "isResizable": {},
+    "useCSSTransforms": {},
+    "isPlaceholder": {},
+    "className": {},
+    "handle": {},
+    "cancel": {}
+};
