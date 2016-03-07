@@ -95,7 +95,10 @@ var L = {
     "disableImageDrag": function () {},
     "enableImageDrag": function () {}
   },
-  "LatLng": function () {},
+  "LatLng": {
+    "lat": {},
+    "lng": {}
+  },
   "latLng": function () {},
   "LatLngBounds": function () {},
   "latLngBounds": function () {},

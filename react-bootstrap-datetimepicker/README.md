@@ -1,8 +1,7 @@
-# cljsjs/react-grid-layout
-
+# cljsjs/react-bootstrap-datetimepicker
 [](dependency)
 ```clojure
-[cljsjs/react-grid-layout "0.10.8-0"] ;; latest release
+[cljsjs/react-bootstrap-datetimepicker "0.0.22-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +11,6 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.react-grid-layout))
+  (:require cljsjs.react-bootstrap-datetimepicker))
 ```
-
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies

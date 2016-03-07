@@ -1,8 +1,10 @@
-# cljsjs/react-grid-layout
+# cljsjs/webcomponents
+
+This is a cljsjs package for https://github.com/webcomponents/webcomponentsjs
 
 [](dependency)
 ```clojure
-[cljsjs/react-grid-layout "0.10.8-0"] ;; latest release
+[cljsjs/webcomponents "0.7.21-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +14,6 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.react-grid-layout))
+  (:require cljsjs.webcomponents))
 ```
-
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies

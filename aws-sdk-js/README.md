@@ -1,8 +1,8 @@
-# cljsjs/react-grid-layout
+# cljsjs/aws-sdk-js
 
 [](dependency)
 ```clojure
-[cljsjs/react-grid-layout "0.10.8-0"] ;; latest release
+[cljsjs/aws-sdk-js "2.2.41-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,9 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.react-grid-layout))
+  (:require cljsjs.aws-sdk-js))
 ```
+
+Documentation for the aws-sdk-js lib can be found [on its github page](https://github.com/aws/aws-sdk-js)
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
