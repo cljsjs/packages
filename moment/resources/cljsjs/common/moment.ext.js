@@ -372,7 +372,7 @@ Moment.prototype.isBetween = function() {};
  * @since 1.0.0
  * @type {function():!boolean}
  */
-Moment.prototype.isLearYear = function() {};
+Moment.prototype.isLeapYear = function() {};
 
 /**
  * @nosideeffects
