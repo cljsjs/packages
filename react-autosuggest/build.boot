@@ -1,3 +1,4 @@
+
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.0"  :scope "test"]
@@ -10,7 +11,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "3.4.0")
+(def +lib-version+ "3.5.1") 
 (def +version+ (str +lib-version+ "-1"))
 
 (task-options!
@@ -39,7 +40,7 @@
 (deftask package []
   (comp
     (download :url (str "https://github.com/moroshko/react-autosuggest/archive/v" +lib-version+ ".zip")
-              :checksum "663313B44D783CC431674C1EC80368CC"
+              ;;:checksum "663313B44D783CC431674C1EC80368CC"
               :unzip true)
     (build-autosuggest)
 
