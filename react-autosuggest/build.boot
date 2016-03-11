@@ -11,8 +11,8 @@
          '[boot.util :refer [sh]]
          '[clojure.string :as str])
 
-(def +lib-version+ "3.4.0")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "3.5.1")
+(def +version+ (str +lib-version+ "-3"))
 
 (task-options!
   pom  {:project     'cljsjs/react-autosuggest
@@ -26,12 +26,20 @@
   "The redux enabled AutosuggestContainer is the default export, 
   for clojure we want the raw control"
   [dir]
-  (let [index-file (io/file dir "src/index.js")]
+  (let [index-file (io/file dir "src/index.js")
+        autosugg-file (io/file dir "src/Autosuggest.js")]
+
     (-> index-file
         slurp
         (str/replace  #"require\(.*'./AutosuggestContainer'.*\)\.default"
                       "require('./Autosuggest').default")
-        ((partial spit index-file)))))
+        ((partial spit index-file)))
+
+    (-> autosugg-file
+        slurp
+        (str/replace #"export default.*" "")
+        (str/replace #"class\s+Autosuggest.*" (partial str "export default "))
+        ((partial spit autosugg-file)))))
 
 (deftask build-autosuggest  []
   (let [tmp (boot/tmp-dir!)]
@@ -52,7 +60,7 @@
 (deftask package []
   (comp
     (download :url (str "https://github.com/moroshko/react-autosuggest/archive/v" +lib-version+ ".zip")
-              :checksum "663313B44D783CC431674C1EC80368CC"
+              ;; :checksum "663313B44D783CC431674C1EC80368CC"
               :unzip true)
     (build-autosuggest)
 
