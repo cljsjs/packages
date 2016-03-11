@@ -27,12 +27,20 @@
   "The redux enabled AutosuggestContainer is the default export, 
   for clojure we want the raw control"
   [dir]
-  (let [index-file (io/file dir "src/index.js")]
+  (let [index-file (io/file dir "src/index.js")
+        autosugg-file (io/file dir "src/Autosuggest.js")]
+
     (-> index-file
         slurp
         (str/replace  #"require\(.*'./AutosuggestContainer'.*\)\.default"
                       "require('./Autosuggest').default")
-        ((partial spit index-file)))))
+        ((partial spit index-file)))
+
+    (-> autosugg-file
+        slurp
+        (str/replace #"export default.*" "")
+        (str/replace #"class\s+Autosuggest.*" (partial str "export default "))
+        ((partial spit autosugg-file)))))
 
 (deftask build-autosuggest  []
   (let [tmp (boot/tmp-dir!)]
