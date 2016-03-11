@@ -38,7 +38,7 @@
 
     (-> autosugg-file
         slurp
-        (str/replace #"export default.*" "")
+        (str/replace #"export default" "")
         (str/replace #"class\s+Autosuggest.*" (partial str "export default "))
         ((partial spit autosugg-file)))))
 
