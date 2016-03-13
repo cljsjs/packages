@@ -77,7 +77,7 @@ run following command **from within the
 library-specific directory**:
 
 ```
-$ boot package pom jar install
+$ boot package install target
 ```
 
 This will run your package instructions and create a jar for the given
