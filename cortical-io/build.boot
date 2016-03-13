@@ -28,4 +28,6 @@
                 (re-pattern (str "^retina-sdk-" +lib-version+ ".min.js$"))
                 "cljsjs/cortical-io/production/cortical-io.min.inc.js"})
    (sift :include #{#"^cljsjs"})
-      (deps-cljs :name "cljsjs.cortical-io")))
+   (deps-cljs :name "cljsjs.cortical-io")
+   (pom)
+   (jar)))

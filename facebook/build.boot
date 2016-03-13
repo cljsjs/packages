@@ -16,3 +16,7 @@
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"Apache v2" "http://www.apache.org/licenses/LICENSE-2.0"}})
 
+(deftask package []
+  (comp
+    (pom)
+    (jar)))

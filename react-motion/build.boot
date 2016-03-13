@@ -53,4 +53,6 @@
             :out "cljsjs/react-motion/production/react-motion.min.inc.js")
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-motion"
-               :requires ["cljsjs.react"])))
+               :requires ["cljsjs.react"])
+    (pom)
+    (jar)))

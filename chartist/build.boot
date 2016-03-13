@@ -35,4 +35,6 @@
            #"chartist.min.js.map" "cljsjs/production/chartist.min.inc.js.map"
            #"chartist.min.css" "cljsjs/common/chartist.min.css"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.chartist")))
+    (deps-cljs :name "cljsjs.chartist")
+    (pom)
+    (jar)))

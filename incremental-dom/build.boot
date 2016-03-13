@@ -44,4 +44,6 @@
    (build-incremental-dom)
    (sift :move {#"^incremental-dom-(.*)/dist/incremental-dom-closure-provides.js"
                 "cljsjs/incremental-dom/development/incremental-dom.js"})
-   (sift :include #{#"^cljsjs/" #"deps.cljs"})))
+   (sift :include #{#"^cljsjs/" #"deps.cljs"})
+   (pom)
+   (jar)))

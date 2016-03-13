@@ -27,4 +27,6 @@
     ;; doesn't play ball with the Google Closure compiler for some reason
     (sift :move {#"^paho.javascript-\d.\d.\d/mqttws31.js$"     "cljsjs/paho/development/mqttws31.inc.js" })
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.paho")))
+    (deps-cljs :name "cljsjs.paho")
+    (pom)
+    (jar)))

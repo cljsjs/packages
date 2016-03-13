@@ -33,4 +33,6 @@
 
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-input-mask"
-               :requires ["cljsjs.react"])))
+               :requires ["cljsjs.react"])
+    (pom)
+    (jar)))

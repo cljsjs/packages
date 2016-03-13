@@ -24,4 +24,6 @@
                  #"^hammer.js-\d\.\d\.\d/hammer.min.js" "cljsjs/production/hammer.min.inc.js"})
     (replace-content :in "cljsjs/production/hammer.min.inc.js" :match #"(?m)^//# sourceMappingURL=.*$" :value "")
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.hammer")))
+    (deps-cljs :name "cljsjs.hammer")
+    (pom)
+    (jar)))

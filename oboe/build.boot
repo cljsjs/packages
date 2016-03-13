@@ -36,5 +36,7 @@
     (sift :move {#"^oboe-browser.js"     "cljsjs/oboe/development/oboe.inc.js"
                  #"^oboe-browser.min.js" "cljsjs/oboe/production/oboe.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.oboe")))
+    (deps-cljs :name "cljsjs.oboe")
+    (pom)
+    (jar)))
 

@@ -15,3 +15,7 @@
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"Heap  ToS" "https://heapanalytics.com/terms"}})
 
+(deftask package []
+  (comp
+    (pom)
+    (jar)))

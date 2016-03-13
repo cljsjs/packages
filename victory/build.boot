@@ -23,4 +23,6 @@
     (sift :move { #"^victory-.*/dist/victory\.js$"      "cljsjs/victory/development/victory.inc.js"
                   #"^victory-.*/dist/victory\.min\.js$" "cljsjs/victory/production/victory.min.inc.js" })
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.victory")))
+    (deps-cljs :name "cljsjs.victory")
+    (pom)
+    (jar)))

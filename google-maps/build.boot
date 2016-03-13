@@ -15,3 +15,7 @@
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"Google Maps ToS" "https://www.google.com/intl/en_us/help/terms_maps.html"}})
 
+(deftask package []
+  (comp
+    (pom)
+    (jar)))

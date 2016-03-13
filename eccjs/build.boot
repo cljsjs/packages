@@ -22,4 +22,6 @@
     (sift :move {#".*/dist/0.3/ecc.js" "cljsjs/development/eccjs.inc.js"
                  #".*/dist/0.3/ecc.min.js" "cljsjs/production/eccjs.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.eccjs")))
+    (deps-cljs :name "cljsjs.eccjs")
+    (pom)
+    (jar)))

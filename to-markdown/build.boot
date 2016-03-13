@@ -31,4 +31,6 @@
     (minify :in "cljsjs/to-markdown/development/to-markdown.inc.js"
             :out "cljsjs/to-markdown/production/to-markdown.min.inc.js")
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.to-markdown")))
+    (deps-cljs :name "cljsjs.to-markdown")
+    (pom)
+    (jar)))

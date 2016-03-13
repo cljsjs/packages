@@ -23,5 +23,7 @@
               :unzip true)
     (sift :move {#"^kemia-([\d\.]*)/kemia/" "cljsjs/kemia/development/"
                  #"^kemia-([\d\.]*)/css/kemia.css" "cljsjs/kemia/common/kemia.inc.css"})
-    (sift :include #{#"^cljsjs/" #"deps.cljs"})))
+    (sift :include #{#"^cljsjs/" #"deps.cljs"})
+    (pom)
+    (jar)))
 

@@ -23,4 +23,6 @@
     (minify :in "cljsjs/development/klay.inc.js"
             :out "cljsjs/production/klay.min.inc.js")
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.klayjs")))
+    (deps-cljs :name "cljsjs.klayjs")
+    (pom)
+    (jar)))

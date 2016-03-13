@@ -26,4 +26,6 @@
     (minify    :in       "cljsjs/bankersbox/development/bankersbox.inc.js"
                :out      "cljsjs/bankersbox/production/bankersbox.min.inc.js")
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.bankersbox")))
+    (deps-cljs :name "cljsjs.bankersbox")
+    (pom)
+    (jar)))

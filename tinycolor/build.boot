@@ -23,4 +23,6 @@
     (sift :move {#"^TinyColor.*/tinycolor\.js" "cljsjs/tinycolor/development/tinycolor.inc.js"
                  #"^TinyColor.*/dist/tinycolor\.min\.js" "cljsjs/tinycolor/production/tinycolor.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.tinycolor")))
+    (deps-cljs :name "cljsjs.tinycolor")
+    (pom)
+    (jar)))

@@ -35,4 +35,6 @@
     (sift :include #{#"^cljsjs"})
 
     (deps-cljs :name "cljsjs.moment-range"
-               :requires #{"cljsjs.moment"})))
+               :requires #{"cljsjs.moment"})
+    (pom)
+    (jar)))

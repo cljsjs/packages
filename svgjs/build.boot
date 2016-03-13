@@ -28,4 +28,6 @@
     (sift :move {#"svg.js" "cljsjs/svgjs/development/svg.inc.js"
                  #"svg.min.js" "cljsjs/svgjs/production/svg.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.svgjs")))
+    (deps-cljs :name "cljsjs.svgjs")
+    (pom)
+    (jar)))

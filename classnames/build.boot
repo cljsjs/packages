@@ -25,4 +25,6 @@
     (minify   :in       "cljsjs/development/classnames.inc.js"
               :out      "cljsjs/production/classnames.min.inc.js")
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.classnames")))
+    (deps-cljs :name "cljsjs.classnames")
+    (pom)
+    (jar)))

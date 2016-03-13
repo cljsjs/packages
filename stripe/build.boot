@@ -15,3 +15,7 @@
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"Stripe  ToS" "https://stripe.com/us/terms"}})
 
+(deftask package []
+  (comp
+    (pom)
+    (jar)))

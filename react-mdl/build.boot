@@ -46,4 +46,6 @@
                 #"^react-mdl[^/]*/extra/material.min.js"   "cljsjs/react-mdl/production/material.min.inc.js"
                 #"^react-mdl[^/]*/out/ReactMDL.min.js"     "cljsjs/react-mdl/production/ReactMDL.min.inc.js"})
 
-   (sift :include #{#"^cljsjs" #"^deps.cljs"})))
+   (sift :include #{#"^cljsjs" #"^deps.cljs"})
+   (pom)
+   (jar)))

@@ -26,4 +26,6 @@
                 (re-pattern (str "^pubnub-" +lib-version+ ".min.js$"))
                 "cljsjs/pubnub/production/pubub.min.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.pubnub")))
+   (deps-cljs :name "cljsjs.pubnub")
+   (pom)
+   (jar)))

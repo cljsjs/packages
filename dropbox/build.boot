@@ -22,4 +22,6 @@
    (sift :move {#"^dropbox\.js" "cljsjs/dropbox/development/dropbox.inc.js"
                 #"^dropbox\.min\.js" "cljsjs/dropbox/production/dropbox.min.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.dropbox")))
+   (deps-cljs :name "cljsjs.dropbox")
+   (pom)
+   (jar)))

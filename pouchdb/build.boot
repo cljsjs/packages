@@ -24,5 +24,7 @@
    (sift :move {#"pouchdb-([\d+\.]*).js" "cljsjs/pouchdb/development/pouchdb.inc.js"
                 #"pouchdb-([\d+\.]*).min.js" "cljsjs/pouchdb/production/pouchdb.min.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.pouchdb")))
+   (deps-cljs :name "cljsjs.pouchdb")
+   (pom)
+   (jar)))
 

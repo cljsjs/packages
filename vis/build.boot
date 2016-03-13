@@ -26,4 +26,6 @@
                          #"^vis(.*)/dist/vis.min.js"
                          "cljsjs/vis/production/vis.min.inc.js"})
    (sift      :include  #{#"^cljsjs"})
-   (deps-cljs :name     "cljsjs.vis")))
+   (deps-cljs :name     "cljsjs.vis")
+   (pom)
+   (jar)))

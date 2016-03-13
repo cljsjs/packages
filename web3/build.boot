@@ -22,4 +22,6 @@
     (sift :move {#"web3.js-0.15.3/dist/web3.js" "cljsjs/development/web3.inc.js"
                  #"web3.js-0.15.3/dist/web3.min.js" "cljsjs/production/web3.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.web3")))
+    (deps-cljs :name "cljsjs.web3")
+    (pom)
+    (jar)))

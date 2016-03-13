@@ -38,4 +38,6 @@
     (deps-cljs :name "cljsjs.react-datepicker"
                :requires ["cljsjs.react"
                           "cljsjs.moment"
-			  "cljsjs.tether"])))
+			  "cljsjs.tether"])
+    (pom)
+    (jar)))

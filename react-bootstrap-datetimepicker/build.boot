@@ -36,4 +36,6 @@
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-bootstrap-datetimepicker"
                :requires ["cljsjs.react-bootstrap"
-                          "cljsjs.moment"])))
+                          "cljsjs.moment"])
+    (pom)
+    (jar)))

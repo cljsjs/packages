@@ -27,4 +27,6 @@
                  #"^Leaflet-(.*)/dist/leaflet.css"       "cljsjs/common/leaflet.inc.css"
                  #"^Leaflet-(.*)/dist/images/(.*\.png)$" "cljsjs/common/images/$2"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.leaflet")))
+    (deps-cljs :name "cljsjs.leaflet")
+    (pom)
+    (jar)))

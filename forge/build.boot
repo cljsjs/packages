@@ -43,4 +43,6 @@
    (minify :in "cljsjs/forge/development/forge.inc.js"
            :out "cljsjs/forge/production/forge.min.inc.js")
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.forge")))
+   (deps-cljs :name "cljsjs.forge")
+   (pom)
+   (jar)))

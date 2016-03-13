@@ -24,7 +24,7 @@ for x in $(./changed-packages.sh); do
 
     (
     cd $x
-    boot package -- pom -- jar
+    boot package
     )
     [[ $? != "0" ]] && EXIT=1
 done

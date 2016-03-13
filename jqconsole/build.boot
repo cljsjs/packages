@@ -29,4 +29,6 @@
                          "cljsjs/jqconsole/common/css/ansi.css"})
    (sift      :include  #{#"^cljsjs"})
    (deps-cljs :name     "cljsjs.jqconsole"
-              :requires ["cljsjs.jquery"])))
+              :requires ["cljsjs.jquery"])
+   (pom)
+   (jar)))

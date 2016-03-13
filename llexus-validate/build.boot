@@ -24,4 +24,6 @@
     (sift :move {#"^llexus-validate-([\d\.-]*)/dist/llexus-validate\.js"      "cljsjs/llexus-validate/development/llexus-validate.inc.js"
                  #"^llexus-validate-([\d\.-]*)/dist/llexus-validate\.min\.js" "cljsjs/llexus-validate/production/llexus-validate.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.llexus-validate")))
+    (deps-cljs :name "cljsjs.llexus-validate")
+    (pom)
+    (jar)))

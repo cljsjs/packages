@@ -36,4 +36,6 @@
 
     (sift :include #{#"^cljsjs"})
 
-    (deps-cljs :name "cljsjs.airbrake")))
+    (deps-cljs :name "cljsjs.airbrake")
+    (pom)
+    (jar)))

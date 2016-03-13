@@ -56,4 +56,6 @@
                 "cljsjs/medium_editor/common/themes/roman.min.css"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name     "cljsjs.medium-editor"
-              :requires [])))
+              :requires [])
+   (pom)
+   (jar)))

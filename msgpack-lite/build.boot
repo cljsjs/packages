@@ -42,4 +42,6 @@
    (sift :move {#"^msgpack-lite-.*/dist/msgpack\.browserify\.js" "cljsjs/msgpack-lite/development/msgpack-lite.inc.js"
                 #"^msgpack-lite-.*/dist/msgpack\.min\.js"        "cljsjs/msgpack-lite/production/msgpack-lite.min.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.msgpack-lite")))
+   (deps-cljs :name "cljsjs.msgpack-lite")
+   (pom)
+   (jar)))

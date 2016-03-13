@@ -24,4 +24,6 @@
    (sift :move {#"^clipboard.js-[^/]+/dist/clipboard.js" "cljsjs/clipboard/development/clipboard.inc.js"})
    (sift :move {#"^clipboard.js-[^/]+/dist/clipboard.min.js" "cljsjs/clipboard/development/clipboard.min.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.clipboard")))
+   (deps-cljs :name "cljsjs.clipboard")
+   (pom)
+   (jar)))

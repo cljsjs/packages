@@ -25,4 +25,6 @@
    (minify :in "cljsjs/tween/development/tween.inc.js"
            :out "cljsjs/tween/production/tween.min.inc.js")
    (sift      :include  #{#"^cljsjs"})
-   (deps-cljs :name     "cljsjs.tween")))
+   (deps-cljs :name     "cljsjs.tween")
+   (pom)
+   (jar)))
