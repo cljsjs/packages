@@ -91,3 +91,29 @@
     (package-dom)
     (package-dom-server)
     (package-with-addons)))
+
+
+(defn md5sum [fileset name]
+  (with-open [is  (clojure.java.io/input-stream (tmp-file (tmp-get fileset name)))
+              dis (java.security.DigestInputStream. is (java.security.MessageDigest/getInstance "MD5"))]
+    (#'cljsjs.boot-cljsjs.packaging/realize-input-stream! dis)
+    (#'cljsjs.boot-cljsjs.packaging/message-digest->str (.getMessageDigest dis))))
+
+(deftask load-checksums
+  "Task to create checksums map for new version"
+  []
+  (comp
+    (reduce
+      (fn [handler project]
+        (comp handler
+              (download :url (format "http://fb.me/%s-%s.js" (name project) +lib-version+))
+              (download :url (format "http://fb.me/%s-%s.min.js" (name project) +lib-version+))))
+      identity
+      (keys checksums))
+    (fn [handler]
+      (fn [fileset]
+        (clojure.pprint/pprint (into {} (map (juxt identity (fn [project]
+                                                              {:dev (md5sum fileset (format "%s-%s.js" (name project) +lib-version+))
+                                                               :min (md5sum fileset (format "%s-%s.min.js" (name project) +lib-version+))}))
+                                             (keys checksums))))
+        fileset))))
