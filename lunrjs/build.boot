@@ -26,4 +26,6 @@
    (sift :move {#"lunr\.js-\d+\.\d+\.\d+/lunr\.js$"      "cljsjs/lunrjs/development/lunrjs.inc.js"
                 #"lunr\.js-\d+\.\d+\.\d+/lunr\.min\.js$" "cljsjs/lunrjs/production/lunrjs.min.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.lunrjs")))
+   (deps-cljs :name "cljsjs.lunrjs")
+   (pom)
+   (jar)))

@@ -24,4 +24,6 @@
     (minify :in "cljsjs/fastclick/development/fastclick.inc.js"
             :out "cljsjs/fastclick/production/fastclick.min.inc.js")
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.fastclick")))
+    (deps-cljs :name "cljsjs.fastclick")
+    (pom)
+    (jar)))

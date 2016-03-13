@@ -31,4 +31,6 @@
                  "cljsjs/react-quill/production/react-quill.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-quill"
-               :requires ["cljsjs.quill" "cljsjs.react"])))
+               :requires ["cljsjs.quill" "cljsjs.react"])
+    (pom)
+    (jar)))

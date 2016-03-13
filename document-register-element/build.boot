@@ -22,4 +22,6 @@
     (sift :move {#"document-register-element.max.js" "cljsjs/document-register-element/development/document-register-element.inc.js"
                  #"document-register-element.js" "cljsjs/document-register-element/production/document-register-element.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :no-externs true :name "cljsjs.document-register-element")))
+    (deps-cljs :no-externs true :name "cljsjs.document-register-element")
+    (pom)
+    (jar)))

@@ -27,4 +27,6 @@
    (sift :move {#"^commonmark.js.*/dist/commonmark.js" "cljsjs/development/commonmark.inc.js"})
    (sift :move {#"^commonmark.js.*/dist/commonmark.min.js" "cljsjs/production/commonmark.min.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.commonmark")))
+   (deps-cljs :name "cljsjs.commonmark")
+   (pom)
+   (jar)))

@@ -29,4 +29,6 @@
    ;         :out "cljsjs/production/jquery-daterange-picker.min.inc.js")
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.jquery-daterange-picker"
-              :requires ["cljsjs.moment" "cljsjs.jquery"])))
+              :requires ["cljsjs.moment" "cljsjs.jquery"])
+   (pom)
+   (jar)))

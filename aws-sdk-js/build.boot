@@ -34,4 +34,6 @@
 
    (sift :include #{#"^cljsjs"})
 
-   (deps-cljs :name "cljsjs.aws-sdk-js")))
+   (deps-cljs :name "cljsjs.aws-sdk-js")
+   (pom)
+   (jar)))

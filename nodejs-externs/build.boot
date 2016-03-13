@@ -36,4 +36,6 @@
    (sift :move {#"^node.js-closure-compiler-externs-[^/]*/([^/]*).js$"
                 "cljsjs/nodejs-externs/common/$1.js"})
    (sift :include #{#"^cljsjs"})
-   (generate-local-deps)))
+   (generate-local-deps)
+   (pom)
+   (jar)))

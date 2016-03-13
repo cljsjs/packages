@@ -25,4 +25,6 @@
    (sift :move {#"highstock.src.js"     "cljsjs/development/highstock.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name     "cljsjs.highstock"
-              :requires ["cljsjs.jquery"])))
+              :requires ["cljsjs.jquery"])
+   (pom)
+   (jar)))

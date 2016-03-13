@@ -23,4 +23,6 @@
     (sift :move {#"^sizzle-.*/dist/sizzle.js" "cljsjs/development/sizzle.inc.js"})
     (sift :move {#"^sizzle-.*/dist/sizzle.min.js" "cljsjs/production/sizzle.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.sizzle"))) 
+    (deps-cljs :name "cljsjs.sizzle")
+    (pom)
+    (jar))) 

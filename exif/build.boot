@@ -27,4 +27,6 @@
     (minify :in "cljsjs/exif/development/exif.inc.js" 
             :out "cljsjs/exif/production/exif.min.inc.js")
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.exif")))
+    (deps-cljs :name "cljsjs.exif")
+    (pom)
+    (jar)))

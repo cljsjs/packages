@@ -24,4 +24,6 @@
    (download :url "https://raw.githubusercontent.com/unconed/MathBox.js/dd802725b51260dcb361c65387afbb2a1e99b3ea/build/MathBox-bundle.min.js"
              :name "cljsjs/mathbox/production/MathBox-bundle.min.inc.js"
              :checksum "9BEA602B731DEF836963EDB1D35F4D4C")
-   (deps-cljs :name "cljsjs.mathbox")))
+   (deps-cljs :name "cljsjs.mathbox")
+   (pom)
+   (jar)))

@@ -25,4 +25,6 @@
                 (re-pattern (str "^typed.js-" +lib-version+ "/dist/typed.min.js$"))  "cljsjs/typedjs/production/typed.min.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.typedjs"
-              :requires ["cljsjs.jquery"])))
+              :requires ["cljsjs.jquery"])
+   (pom)
+   (jar)))

@@ -31,4 +31,6 @@
                  "cljsjs/react-bootstrap/production/react-bootstrap.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-bootstrap"
-               :requires ["cljsjs.react.dom"])))
+               :requires ["cljsjs.react.dom"])
+    (pom)
+    (jar)))

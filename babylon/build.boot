@@ -22,4 +22,6 @@
     (download :url "http://cdn.babylonjs.com/2-2/babylon.js")
     (sift :move {#"babylon.js" "cljsjs/babylon/production/babylon.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.babylon")))
+    (deps-cljs :name "cljsjs.babylon")
+    (pom)
+    (jar)))

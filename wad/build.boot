@@ -23,4 +23,6 @@
     (sift :move {#"^wad-.*/build/wad.js" "cljsjs/development/wad.inc.js"
                  #"^wad-.*/build/wad.min.js" "cljsjs/production/wad.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.wad")))
+    (deps-cljs :name "cljsjs.wad")
+    (pom)
+    (jar)))

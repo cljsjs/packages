@@ -26,4 +26,6 @@
                 #"^llexus-form-([\d\.-]*)/dist/llexus-form\.min\.js" "cljsjs/llexus-form/production/llexus-form.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.llexus-form"
-               :requires ["cljsjs.react"])))
+               :requires ["cljsjs.react"])
+    (pom)
+    (jar)))

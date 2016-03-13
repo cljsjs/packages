@@ -28,4 +28,6 @@
                  #"^Snap.svg-.*/dist/snap.svg-min.js"
                  "cljsjs/snapsvg/production/snapsvg.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.snapsvg")))
+    (deps-cljs :name "cljsjs.snapsvg")
+    (pom)
+    (jar)))

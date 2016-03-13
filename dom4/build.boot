@@ -22,4 +22,6 @@
     (sift :move {#"dom4.max.js" "cljsjs/dom4/development/dom4.inc.js"
                  #"dom4.js" "cljsjs/dom4/production/dom4.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.dom4")))
+    (deps-cljs :name "cljsjs.dom4")
+    (pom)
+    (jar)))

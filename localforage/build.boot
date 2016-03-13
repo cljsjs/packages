@@ -25,4 +25,6 @@
    (minify :in "cljsjs/localforage/development/localforage.inc.js"
            :out "cljsjs/localforage/production/localforage.min.inc.js")
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.localforage")))
+   (deps-cljs :name "cljsjs.localforage")
+   (pom)
+   (jar)))

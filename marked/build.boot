@@ -29,4 +29,6 @@
     (sift :move {#"^marked-(.*)/lib/marked\.js"  "cljsjs/development/marked.inc.js"
                  #"^marked-(.*)/marked\.min\.js" "cljsjs/production/marked.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.marked")))
+    (deps-cljs :name "cljsjs.marked")
+    (pom)
+    (jar)))

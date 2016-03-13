@@ -24,4 +24,6 @@
     (sift :move {#"chance-([\d\.]*).js" "cljsjs/development/chance.inc.js"
                  #"chance-([\d\.]*).min.js" "cljsjs/production/chance.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.chance")))
+    (deps-cljs :name "cljsjs.chance")
+    (pom)
+    (jar)))

@@ -38,4 +38,6 @@
 
     (sift :include #{#"^cljsjs"})
 
-    (deps-cljs :name "cljsjs.parinfer")))
+    (deps-cljs :name "cljsjs.parinfer")
+    (pom)
+    (jar)))

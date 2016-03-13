@@ -25,4 +25,6 @@
     (minify   :in       "cljsjs/development/jsdiff.inc.js"
               :out      "cljsjs/production/jsdiff.min.inc.js")
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.jsdiff")))
+    (deps-cljs :name "cljsjs.jsdiff")
+    (pom)
+    (jar)))

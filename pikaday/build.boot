@@ -29,4 +29,6 @@
             :out "cljsjs/pikaday/production/pikaday.min.inc.js")
     (minify :in  "cljsjs/pikaday/development/pikaday.css"
             :out "cljsjs/pikaday/production/pikaday.min.css")
-    (sift :include #{#"^cljsjs/" #"^deps.cljs$"})))
+    (sift :include #{#"^cljsjs/" #"^deps.cljs$"})
+    (pom)
+    (jar)))

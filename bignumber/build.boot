@@ -24,4 +24,6 @@
     (sift :move {#"^bignumber.js-[^\/]*/bignumber\.js"      "cljsjs/bignumber/development/bignumber.inc.js"
                  #"^bignumber.js-[^\/]*/bignumber\.min\.js" "cljsjs/bignumber/production/bignumber.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.bignumber")))
+    (deps-cljs :name "cljsjs.bignumber")
+    (pom)
+    (jar)))

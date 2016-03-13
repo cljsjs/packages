@@ -32,4 +32,6 @@
 
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-input-autosize"
-               :requires ["cljsjs.react"])))
+               :requires ["cljsjs.react"])
+    (pom)
+    (jar)))

@@ -25,4 +25,6 @@
     (sift :move {#"^mustache.js-\d.\d.\d/mustache.js$"     "cljsjs/mustache/development/mustache.inc.js"
                  #"^mustache.js-\d.\d.\d/mustache.min.js$" "cljsjs/mustache/production/mustache.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.mustache")))
+    (deps-cljs :name "cljsjs.mustache")
+    (pom)
+    (jar)))

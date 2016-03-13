@@ -26,4 +26,6 @@
 
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-grid-layout"
-               :requires ["cljsjs.react"])))
+               :requires ["cljsjs.react"])
+    (pom)
+    (jar)))

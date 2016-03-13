@@ -19,7 +19,9 @@
     (sift :move {#"jquery-([\d\.]*).js" "cljsjs/development/jquery.inc.js"
                  #"jquery-([\d\.]*).min.js" "cljsjs/production/jquery.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.jquery")))
+    (deps-cljs :name "cljsjs.jquery")
+    (pom)
+    (jar)))
 
 (defn- jquery-url [suffix]
   (str "http://code.jquery.com/jquery-" suffix ".js"))

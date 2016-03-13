@@ -20,7 +20,7 @@ for x in $(./changed-packages.sh); do
 
     (
     cd $x
-    boot package -- pom -- jar -- push --ensure-release --gpg-sign --repo clojars
+    boot package -- push --ensure-release --gpg-sign --repo clojars
     )
     [[ $? != "0" ]] && EXIT=1
 done

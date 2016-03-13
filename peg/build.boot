@@ -24,4 +24,6 @@
     (sift :move {#"^peg-0\.8\.0\.js"      "cljsjs/peg/development/peg.inc.js"
                  #"^peg-0\.8\.0\.min\.js" "cljsjs/peg/production/peg.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.peg")))
+    (deps-cljs :name "cljsjs.peg")
+    (pom)
+    (jar)))

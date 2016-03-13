@@ -25,4 +25,6 @@
                          #"^showdown-(.*)/compressed/Showdown.min.js"
                          "cljsjs/showdown/production/showdown.min.inc.js"})
    (sift      :include  #{#"^cljsjs"})
-   (deps-cljs :name     "cljsjs.showdown")))
+   (deps-cljs :name     "cljsjs.showdown")
+   (pom)
+   (jar)))

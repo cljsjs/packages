@@ -25,4 +25,6 @@
                 (re-pattern (str "^Scrollify-" +lib-version+ "/jquery.scrollify.min.js$"))  "cljsjs/scrollify/production/scrollify.min.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.scrollify"
-              :requires ["cljsjs.jquery"])))
+              :requires ["cljsjs.jquery"])
+   (pom)
+   (jar)))
