@@ -4,18 +4,18 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.14.3")
+(def +lib-version+ "0.14.5")
 (def +version+ (str +lib-version+ "-0"))
 
 (def urls
   {:normal {:dev (str "http://fb.me/react-" +lib-version+ ".js")
-            :dev-checksum "9927B8234985DB453299EB5A4591DD33"
+            :dev-checksum "1BA29FABF647B9C8DF0E3F25492D751D"
             :min (str "http://fb.me/react-" +lib-version+ ".min.js")
-            :min-checksum "C3207F7BF39699D4279BA404EA55F163"}
+            :min-checksum "77DF40EBC8C9EE08A4CC758B84767EDA"}
    :with-addons {:dev (str "http://fb.me/react-with-addons-" +lib-version+ ".js")
-                 :dev-checksum "CFF72F35360E3433F6805F8C4F3305B3"
+                 :dev-checksum "113AA7BFC0204BB80E0CAF7D1322EC9F"
                  :min (str "http://fb.me/react-with-addons-" +lib-version+ ".min.js")
-                 :min-checksum "CE4377AE601A9EC6A0870C5C9EF4B7BF"}})
+                 :min-checksum "5A6346F9C420AAF5E2E6167C1EB8D35A"}})
 
 (task-options!
  pom  {:project     'cljsjs/react
