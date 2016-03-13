@@ -1,5 +1,5 @@
 /**
- * @fileoverview Closure Compiler externs for Facebook React.js 0.14.0
+ * @fileoverview Closure Compiler externs for Facebook React.js 15.0.0
  * @see http://reactjs.org
  * @externs
  */
@@ -42,37 +42,6 @@ React.isValidElement = function(object) {};
 React.renderComponent = function(container, mountPoint, callback) {};
 
 /**
- * @param {React.Component} container
- * @param {Element} mountPoint
- * @param {Function=} callback
- * @return {React.Component}
- * @deprecated
- */
-React.render = function(container, mountPoint, callback) {};
-
-
-/**
- * @param {Element} container
- * @return {boolean}
- * @deprecated
- */
-React.unmountComponentAtNode = function(container) {};
-
-/**
- * @param {React.Component} component
- * @return {string}
- * @deprecated
- */
-React.renderToString = function(component) {};
-
-/**
- * @param {React.Component} component
- * @return {string}
- * @deprecated
- */
-React.renderToStaticMarkup = function(component) {};
-
-/**
  * Constructs a component instance of `constructor` with `initialProps` and
  * renders it into the supplied `container`.
  *
@@ -94,9 +63,6 @@ React.constructAndRenderComponent = function(constructor, props, container) {};
  */
 React.constructAndRenderComponentByID = function(componentConstructor, props,
   id) {};
-
-/** @deprecated */
-React.findDOMNode = function(component) {};
 
 React.cloneElement = function(element, props) {};
 
@@ -143,13 +109,6 @@ React.Component.prototype.contextTypes;
 React.Component.prototype.mixins;
 
 /**
- * @param {Object} nextProps
- * @param {Function=} callback
- * @deprecated
- */
-React.Component.prototype.setProps = function(nextProps, callback) {};
-
-/**
  * @return {Object}
  */
 React.Component.prototype.getInitialState = function() {};
@@ -163,19 +122,6 @@ React.Component.prototype.getDefaultProps = function() {};
  * @return {Object}
  */
 React.Component.prototype.getChildContext = function() {};
-
-/**
- * @return {Element}
- * @deprecated
- */
-React.Component.prototype.getDOMNode = function() {};
-
-/**
- * @param {Object} nextProps
- * @param {Function=} callback
- * @deprecated
- */
-React.Component.prototype.replaceProps = function(nextProps, callback) {};
 
 /**
  * @param {React.Component} targetComponent
