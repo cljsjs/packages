@@ -50,5 +50,7 @@
 
     (deps-cljs :name "cljsjs.react-autosuggest"
                :requires ["cljsjs.react"
-                          "cljsjs.react.dom"])))
+                          "cljsjs.react.dom"])
+    (pom)
+    (jar)))
 
