@@ -26,4 +26,6 @@
                 #"^dimple\.v([\d+\.]*).min.js" "cljsjs/dimple/production/dimple.min.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.dimple"
-              :requires ["cljsjs.d3"])))
+              :requires ["cljsjs.d3"])
+   (pom)
+   (jar)))

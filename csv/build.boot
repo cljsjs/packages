@@ -23,4 +23,6 @@
     (sift :move {#"^CSV-JS-.*/csv.js" "cljsjs/development/csv.inc.js"})
     (minify :in "cljsjs/development/csv.inc.js" :out "cljsjs/production/csv.min.inc.js")
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.csv")))
+    (deps-cljs :name "cljsjs.csv")
+    (pom)
+    (jar)))

@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.10.1")
+(def +lib-version+ "3.13.0")
 ; FIXME: Next release should have build identier
 (def +version+ (str +lib-version+ ""))
 
@@ -19,13 +19,15 @@
 (deftask package []
   (comp
     (download :url (format "https://github.com/openlayers/ol3/releases/download/v%s/v%s.zip" +lib-version+ +lib-version+)
-              :checksum "C050655A3526492C206A9F0ED71851AB"
+              :checksum "2722BE441FEC381871C907DB51D87319"
               :unzip true)
     (download :url (format "https://github.com/openlayers/ol3/archive/v%s.zip" +lib-version+)
-              :checksum "BF5D94BF54307468FE329B45A0A44665"
+              :checksum "E8D1AAEFA03C7D5EA693EBA3213711FF"
               :unzip true)
     (sift :move {#"^v([\d\.]*)/ol/ol/" "cljsjs/openlayers/development/ol/"
                  #"^v([\d\.]*)/ol\.ext/" "cljsjs/openlayers/development/ol.ext/"
                  #"^v([\d\.]*)/css/ol\.css" "cljsjs/openlayers/common/openlayers.inc.css"
                  #"^ol3-([\d\.]*)/externs/(.*)\.js" "cljsjs/openlayers/common/$2.ext.js"})
-    (sift :include #{#"^cljsjs/" #"deps.cljs"})))
+    (sift :include #{#"^cljsjs/" #"deps.cljs"})
+    (pom)
+    (jar)))

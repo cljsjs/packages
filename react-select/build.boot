@@ -8,16 +8,16 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.0.0-beta6")
+(def +lib-version+ "1.0.0-beta10")
 (def +version+ (str +lib-version+ "-1"))
 
 (task-options!
-  pom  {:project     'cljsjs/react-select
-        :version     +version+
-        :description "A flexible and beautiful Select Input control for ReactJS with multiselect, autocomplete and ajax support."
-        :url         "http://jedwatson.github.io/react-select/"
-        :scm         {:url "https://github.com/cljsjs/packages"}
-        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
+ pom  {:project     'cljsjs/react-select
+       :version     +version+
+       :description "A flexible and beautiful Select Input control for ReactJS with multiselect, autocomplete and ajax support."
+       :url         "http://jedwatson.github.io/react-select/"
+       :scm         {:url "https://github.com/cljsjs/packages"}
+       :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (require '[boot.core :as c]
          '[boot.tmpdir :as tmpd]
@@ -26,18 +26,20 @@
 
 (deftask package []
   (comp
-    (download :url (str "https://github.com/JedWatson/react-select/archive/v" +lib-version+ ".zip")
-              :checksum "7DBDA8770F221E881ADE123C72F05279"
-              :unzip true)
+   (download :url (str "https://github.com/JedWatson/react-select/archive/v" +lib-version+ ".zip")
+             :checksum "06daddedb3f28f4cbd63afb83762e7ae"
+             :unzip true)
 
-    (sift :move {#"^react-select.*[/ \\]dist[/ \\]react-select.js$" "cljsjs/react-select/development/react-select.inc.js"
-                 #"^react-select.*[/ \\]dist[/ \\]react-select.min\.js$" "cljsjs/react-select/production/react-select.min.inc.js"
-                 #"^react-select.*[/ \\]dist[/ \\]react-select.css$" "cljsjs/react-select/common/react-select.inc.css"})
+   (sift :move {#"^react-select.*[/ \\]dist[/ \\]react-select.js$" "cljsjs/react-select/development/react-select.inc.js"
+                #"^react-select.*[/ \\]dist[/ \\]react-select.min\.js$" "cljsjs/react-select/production/react-select.min.inc.js"
+                #"^react-select.*[/ \\]dist[/ \\]react-select.css$" "cljsjs/react-select/common/react-select.inc.css"})
 
-    (sift :include #{#"^cljsjs"})
+   (sift :include #{#"^cljsjs"})
 
-    (deps-cljs :name "cljsjs.react-select"
-               :requires ["cljsjs.react"
-                          "cljsjs.react.dom"
-                          "cljsjs.classnames"
-                          "cljsjs.react-input-autosize"])))
+   (deps-cljs :name "cljsjs.react-select"
+              :requires ["cljsjs.react"
+                         "cljsjs.react.dom"
+                         "cljsjs.classnames"
+                         "cljsjs.react-input-autosize"])
+   (pom)
+   (jar)))

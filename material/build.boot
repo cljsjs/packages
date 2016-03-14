@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.0.6")
+(def +lib-version+ "1.1.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -19,11 +19,13 @@
   (task-options! push {:ensure-branch nil})
   (comp
     (download :url (str "https://github.com/google/material-design-lite/archive/v" +lib-version+ ".zip")
-              :checksum "4869bf87ec07690f884dceeb51403c98"
+              :checksum "594EEF0EA44AA7F2B2F51185460743A2"
               :unzip true)
     (sift :move {(re-pattern (str "^material-design-lite-" +lib-version+ "/material.js$"))        "cljsjs/material/development/material.inc.js"
                  (re-pattern (str "^material-design-lite-" +lib-version+ "/material.css$"))        "cljsjs/material/development/material.inc.css"
                  (re-pattern (str "^material-design-lite-" +lib-version+ "/material.min.js$"))   "cljsjs/material/production/material.min.inc.js"
                  (re-pattern (str "^material-design-lite-" +lib-version+ "/material.min.css$")) "cljsjs/material/production/material.min.inc.css"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.material")))
+    (deps-cljs :name "cljsjs.material")
+    (pom)
+    (jar)))

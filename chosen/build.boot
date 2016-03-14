@@ -29,4 +29,6 @@
                 #"^chosen-sprite@2x.png"    "public/chosen/css/chosen-sprite@2x.png"})
    (sift :include #{#"^cljsjs" #"^public"})
    (deps-cljs :name "cljsjs.chosen"
-              :requires ["cljsjs.jquery"])))
+              :requires ["cljsjs.jquery"])
+   (pom)
+   (jar)))

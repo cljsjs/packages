@@ -24,4 +24,6 @@
                          "cljsjs/ocean/development/water-material.inc.js"})
    (sift      :include  #{#"^cljsjs"})
    (deps-cljs :name     "cljsjs.ocean"
-              :requires ["cljsjs.three"])))
+              :requires ["cljsjs.three"])
+   (pom)
+   (jar)))

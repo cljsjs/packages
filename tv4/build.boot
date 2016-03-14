@@ -24,4 +24,6 @@
     (sift :move {#"^tv4-([\d\.]*)/tv4\.js"      "cljsjs/tv4/development/tv4.inc.js"
                  #"^tv4-([\d\.]*)/tv4\.min\.js" "cljsjs/tv4/production/tv4.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.tv4")))
+    (deps-cljs :name "cljsjs.tv4")
+    (pom)
+    (jar)))

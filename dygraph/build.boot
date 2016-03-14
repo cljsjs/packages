@@ -26,5 +26,7 @@
                          #"^dygraph-combined.js"
                          "cljsjs/dygraph/production/dygraph.min.inc.js"})
    (sift      :include  #{#"^cljsjs"})
-   (deps-cljs :name     "cljsjs.dygraph")))
+   (deps-cljs :name     "cljsjs.dygraph")
+   (pom)
+   (jar)))
 

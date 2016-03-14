@@ -23,4 +23,6 @@
    (sift :move {#"^Dexie\.js-([\d\.]*)/dist/latest/Dexie\.js"     "cljsjs/production/dexie.min.inc.js"})
    (sift :move {#"^Dexie\.js-([\d\.]*)/dist/latest/Dexie\.min\.js"     "cljsjs/development/dexie.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.dexie")))
+   (deps-cljs :name "cljsjs.dexie")
+   (pom)
+   (jar)))

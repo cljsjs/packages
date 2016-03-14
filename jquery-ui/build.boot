@@ -5,8 +5,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.11.3")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "1.11.4")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/jquery-ui
@@ -20,10 +20,9 @@
 
 (deftask package []
   (comp
-    ; FIXME: Should use upstream source
-    (download :url      (format "https://github.com/rwillig/jquery-ui/blob/master/resources/download/jquery-ui-%s.zip?raw=" +lib-version+)
+    (download :url      (format "https://jqueryui.com/resources/download/jquery-ui-%s.zip" +lib-version+)
               :name     (format "jquery-ui-%s.zip" +lib-version+)
-              :checksum "cb943ac26be9ee755e8741ea232389e2"
+              :checksum "C578DE5FEAECA4190EF89E00519E91DC"
               :unzip    true)
     (sift :include #{#"^jquery-ui-(.*)/external/(.*).js"} :invert true)
     (sift :move {#"^jquery-ui-(.*)/([a-zA-Z-]+).js"                 "cljsjs/development/$2.inc.js"
@@ -35,4 +34,6 @@
                  })
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.jquery-ui"
-               :requires ["cljsjs.jquery"])))
+               :requires ["cljsjs.jquery"])
+    (pom)
+    (jar)))

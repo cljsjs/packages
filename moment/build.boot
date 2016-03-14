@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "2.10.6")
-(def +version+ (str +lib-version+ "-1"))
+(def +version+ (str +lib-version+ "-3"))
 
 (task-options!
   push {:ensure-clean false}
@@ -51,4 +51,6 @@
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.moment")
     (sift :move {#"^cljsjs/common/locale/(.*)\.js" "cljsjs/common/locale/$1.inc.js"})
-    (generate-locale-deps)))
+    (generate-locale-deps)
+    (pom)
+    (jar)))

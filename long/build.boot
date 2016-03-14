@@ -35,4 +35,6 @@
       (replace-content :in src :out src
         :match #"(?s)function\(global.+?\}\)\(this"
         :value "function(global, factory) { Long = factory(); })(this")
-      (deps-cljs :name "cljsjs.long"))))
+      (deps-cljs :name "cljsjs.long"))
+      (pom)
+      (jar)))

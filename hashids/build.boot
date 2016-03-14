@@ -23,4 +23,6 @@
     (sift :move {#"^hashids.js-.*/lib/hashids.js" "cljsjs/hashids/development/hashids.inc.js"})
     (sift :move {#"^hashids.js-.*/lib/hashids.min.js" "cljsjs/hashids/production/hashids.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.hashids")))
+    (deps-cljs :name "cljsjs.hashids")
+    (pom)
+    (jar)))

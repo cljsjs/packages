@@ -24,4 +24,6 @@
     (sift :move {#"rx\.all\.js" "cljsjs/rx/development/rx.inc.js"
                  #"rx\.all\.min\.js" "cljsjs/rx/production/rx.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.rx")))
+    (deps-cljs :name "cljsjs.rx")
+    (pom)
+    (jar)))

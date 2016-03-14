@@ -25,4 +25,6 @@
    (sift :move {#"^FileSaver.js-[^/]+/FileSaver.js" "cljsjs/filesaverjs/development/filesaverjs.inc.js"})
    (sift :move {#"^FileSaver.js-[^/]+/FileSaver.min.js" "cljsjs/filesaverjs/development/filesaverjs.min.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.filesaverjs")))
+   (deps-cljs :name "cljsjs.filesaverjs")
+   (pom)
+   (jar)))

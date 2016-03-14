@@ -43,4 +43,6 @@
                  "cljsjs/production/fixed-data-table-style.min.inc.css"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.fixed-data-table"
-               :requires ["cljsjs.react" "cljsjs.object-assign-shim"])))
+               :requires ["cljsjs.react" "cljsjs.object-assign-shim"])
+    (pom)
+    (jar)))

@@ -63,4 +63,6 @@
     (replace-content :in "cljsjs/echarts/production/echarts.min.inc.js" :match #"暂无数据" :value "No data yet")
     (replace-content :in "cljsjs/echarts/development/echarts.inc.js" :match #"暂无数据":value "No data yet")
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.echarts")))
+    (deps-cljs :name "cljsjs.echarts")
+    (pom)
+    (jar)))

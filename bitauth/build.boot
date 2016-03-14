@@ -41,4 +41,6 @@
    (sift :move {#".*dist/bitauth\.bundle\.js"       "cljsjs/bitauth/development/bitauth.inc.js"
                 #".*dist/bitauth\.browser\.min\.js" "cljsjs/bitauth/production/bitauth.min.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.bitauth")))
+   (deps-cljs :name "cljsjs.bitauth")
+   (pom)
+   (jar)))

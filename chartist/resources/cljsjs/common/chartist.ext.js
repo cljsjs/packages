@@ -48,7 +48,7 @@ var Chartist = {
   AutoScaleAxis: function(){},
   FixedScaleAxis: function(){},
   StepAxis: function(){},
-  Linex: function(){},
+  Line: function(){},
   Bar: function(){},
   Pie: function(){}
 }

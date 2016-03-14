@@ -23,4 +23,6 @@
            (sift :move {#"^autobahn\.js"      "cljsjs/autobahnjs/development/autobahn.inc.js"
                         #"^autobahn\.min\.js" "cljsjs/autobahnjs/production/autobahn.min.inc.js"})
            (sift :include #{#"^cljsjs"})
-           (deps-cljs :name "cljsjs.autobahn")))
+           (deps-cljs :name "cljsjs.autobahn")
+           (pom)
+           (jar)))

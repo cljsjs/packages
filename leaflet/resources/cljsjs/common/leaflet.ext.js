@@ -95,9 +95,29 @@ var L = {
     "disableImageDrag": function () {},
     "enableImageDrag": function () {}
   },
-  "LatLng": function () {},
+  "LatLng": {
+    "lat": {},
+    "lng": {}
+  },
   "latLng": function () {},
-  "LatLngBounds": function () {},
+  "LatLngBounds": {
+    "extend": function() {},
+    "getSouthWest": function() {},
+    "getNorthEast": function() {},
+    "getNorthWest": function() {},
+    "getSouthEast": function() {},
+    "getWest": function() {},
+    "getSouth": function() {},
+    "getEast": function() {},
+    "getNorth": function() {},
+    "getCenter": function() {},
+    "contains": function() {},
+    "intersects": function() {},
+    "equals": function() {},
+    "toBBoxString": function() {},
+    "pad": function() {},
+    "isValid": function() {}
+  },
   "latLngBounds": function () {},
   "Projection": {
     "SphericalMercator": {

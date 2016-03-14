@@ -35,4 +35,6 @@
 
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-reorderable"
-               :requires ["cljsjs.react" "cljsjs.react.dom" "cljsjs.react-drag"])))
+               :requires ["cljsjs.react" "cljsjs.react.dom" "cljsjs.react-drag"])
+    (pom)
+    (jar)))

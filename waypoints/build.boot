@@ -26,4 +26,6 @@
                 #"^waypoints-\d+\.\d+\.\d+/lib/noframework\.waypoints\.min.js$"
                 "cljsjs/waypoints/production/waypoints.min.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.waypoints")))
+   (deps-cljs :name "cljsjs.waypoints")
+   (pom)
+   (jar)))

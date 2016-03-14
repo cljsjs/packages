@@ -24,4 +24,6 @@
     (sift :move {#"pako\.js"      "cljsjs/pako/development/pako.inc.js"
                  #"pako\.min\.js" "cljsjs/pako/production/pako.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.pako")))
+    (deps-cljs :name "cljsjs.pako")
+    (pom)
+    (jar)))

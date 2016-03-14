@@ -31,8 +31,7 @@ var forge = {
         "pkcs1": {},
         "prime": {},
         "pkcs12": {},
-        "pkcs7asn1": {},npm install node-forge
-
+        "pkcs7asn1": {},
         "x509": {},
         "mgf": {},
         "mgf1": {},

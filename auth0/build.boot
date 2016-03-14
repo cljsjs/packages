@@ -23,4 +23,6 @@
     (sift :move { #"^auth0\.js.*/build/auth0\.js$"      "cljsjs/auth0/development/auth0.inc.js"
                   #"^auth0\.js.*/build/auth0\.min\.js$" "cljsjs/auth0/production/auth0.min.inc.js" })
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.auth0")))
+    (deps-cljs :name "cljsjs.auth0")
+    (pom)
+    (jar)))

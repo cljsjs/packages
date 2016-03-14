@@ -28,4 +28,6 @@
    (sift :move {#"^PapaParse-.*/papaparse.js" "cljsjs/papaparse/development/papaparse.inc.js"
                 #"^PapaParse-.*/papaparse.min.js" "cljsjs/papaparse/production/papaparse.min.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.papaparse")))
+   (deps-cljs :name "cljsjs.papaparse")
+   (pom)
+   (jar)))
