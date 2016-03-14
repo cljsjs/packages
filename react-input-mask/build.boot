@@ -6,7 +6,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "0.5.10")
-(def +version+ (str +lib-version+ "-1"))
+(def +version+ (str +lib-version+ "-2"))
 
 (task-options!
  pom  {:project     'cljsjs/react-input-mask
@@ -25,6 +25,13 @@
   (comp
     (download :url "https://raw.githubusercontent.com/sanniassin/react-input-mask/05c101e4937d54966f673113a1432afb53fb9541/build/InputElement.js"
               :checksum "43D89151C1CF4F37100CFA50DCA54B42")
+
+    (replace-content :in "InputElement.js" :out "InputElement.js"
+      :match #"var React = require.*;"
+      :value "")
+    (replace-content :in "InputElement.js" :out "InputElement.js"
+      :match #"module.exports = .*;"
+      :value "")
 
     (sift :move {#"^InputElement.js$" "cljsjs/react-input-mask/development/react-input-mask.inc.js"})
 
