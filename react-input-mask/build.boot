@@ -6,7 +6,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "0.5.10")
-(def +version+ (str +lib-version+ "-2"))
+(def +version+ (str +lib-version+ "-3"))
 
 (task-options!
  pom  {:project     'cljsjs/react-input-mask
@@ -36,7 +36,7 @@
     (sift :move {#"^InputElement.js$" "cljsjs/react-input-mask/development/react-input-mask.inc.js"})
 
     (minify :in "cljsjs/react-input-mask/development/react-input-mask.inc.js"
-            :out "cljsjs/react-input-mask/production/react-input-mask.min.js")
+            :out "cljsjs/react-input-mask/production/react-input-mask.min.inc.js")
 
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-input-mask"
