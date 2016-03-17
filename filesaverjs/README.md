@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/filesaverjs "1.20150507.2-0"] ;; latest release
+[cljsjs/filesaverjs "1.1.20151003-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -20,7 +20,7 @@ you can require the packaged library like so:
   (let [mime-type (or mime-type (str "text/plain;charset=" (.-characterSet js/document)))
         blob (new js/Blob
                   (clj->js [content])
-                  {:type mime-type})]
+                  (clj->js {:type mime-type}))]
     (js/saveAs blob filename)))
 
 (defn download-button []
