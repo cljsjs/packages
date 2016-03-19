@@ -22,4 +22,6 @@
    (minify :in "cljsjs/rrule/development/rrule.inc.js"
            :out "cljsjs/rrule/production/rrule.min.inc.js")
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.rrule")))
+   (deps-cljs :name "cljsjs.rrule")
+   (pom)
+   (jar)))

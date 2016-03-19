@@ -32,4 +32,6 @@
 
     (sift :include #{#"^cljsjs"})
 
-    (deps-cljs :name "cljsjs.tether")))
+    (deps-cljs :name "cljsjs.tether")
+    (pom)
+    (jar)))

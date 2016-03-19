@@ -23,4 +23,6 @@
     (sift :move {#"^mousetrap-([\d\.]*)/mousetrap\.js"      "cljsjs/mousetrap/development/mousetrap.inc.js"
                  #"^mousetrap-([\d\.]*)/mousetrap\.min\.js" "cljsjs/mousetrap/production/mousetrap.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.mousetrap")))
+    (deps-cljs :name "cljsjs.mousetrap")
+    (pom)
+    (jar)))

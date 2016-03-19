@@ -30,5 +30,7 @@
                  "cljsjs/chemdoodle/production/chemdoodle.min.inc.js"
                  })
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.chemdoodle")))
+    (deps-cljs :name "cljsjs.chemdoodle")
+    (pom)
+    (jar)))
 

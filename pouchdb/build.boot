@@ -1,11 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.1" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "5.2.0")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "5.2.1")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom {:project 'cljsjs/pouchdb
@@ -18,11 +18,13 @@
 (deftask package []
   (comp
    (download :url (str "https://github.com/pouchdb/pouchdb/releases/download/" +lib-version+ "/pouchdb-" +lib-version+ ".js")
-             :checksum "62A94E813C4922247BA69E22ACE95D32")
+             :checksum "0F631C4E964D59E6B2EDA9EE62A94E3B")
    (download :url (str "https://github.com/pouchdb/pouchdb/releases/download/" +lib-version+ "/pouchdb-" +lib-version+ ".min.js")
-             :checksum "9F9DEBD0C45AEC539744FE5925BEF713")
+             :checksum "658231A38A1F11B88BB97F9D6D306483")
    (sift :move {#"pouchdb-([\d+\.]*).js" "cljsjs/pouchdb/development/pouchdb.inc.js"
                 #"pouchdb-([\d+\.]*).min.js" "cljsjs/pouchdb/production/pouchdb.min.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.pouchdb")))
+   (deps-cljs :name "cljsjs.pouchdb")
+   (pom)
+   (jar)))
 

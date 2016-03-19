@@ -24,4 +24,6 @@
    (sift :move {#"^bootstrap-([\d\.]*)-dist/js/bootstrap.js" "cljsjs/bootstrap/development/bootstrap.inc.js"
                 #"^bootstrap-([\d\.]*)-dist/js/bootstrap.min.js" "cljsjs/bootstrap/production/bootstrap.min.inc.js"})
    (deps-cljs :name "cljsjs.bootstrap" :requires ["cljsjs.jquery"])
-   (sift :include #{#"^cljsjs" #"^deps\.cljs$"})))
+   (sift :include #{#"^cljsjs" #"^deps\.cljs$"})
+   (pom)
+   (jar)))

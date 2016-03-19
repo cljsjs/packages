@@ -39,4 +39,6 @@
    (replace-content :in "cljsjs/jszip/production/jszip.min.inc.js"
                     :match #"^\/\*" :value (str no-exports "\n/*"))
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.jszip")))
+   (deps-cljs :name "cljsjs.jszip")
+   (pom)
+   (jar)))

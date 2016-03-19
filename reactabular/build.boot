@@ -27,4 +27,6 @@
                 #"reactabular\.min\.js" "cljsjs/reactabular/production/reactabular.min.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.reactabular"
-              :requires ["cljsjs.lodash" "cljsjs.react"])))
+              :requires ["cljsjs.lodash" "cljsjs.react"])
+   (pom)
+   (jar)))

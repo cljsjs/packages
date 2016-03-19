@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "5.0.0")
-(def +version+ (str +lib-version+ "-2"))
+(def +lib-version+ "5.0.1")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  push {:ensure-clean false}
@@ -23,12 +23,12 @@
       (download :url (format "https://raw.githubusercontent.com/dcodeIO/bytebuffer.js/%s/dist/bytebuffer.js"
                        +lib-version+)
         :name src
-        :checksum "573DA758E9575206A29C42EE361A0B5F"
+        :checksum "C30EFAA953BC38BE0A354020B1CA0E34"
         :unzip false)
       (download :url (format "https://raw.githubusercontent.com/dcodeIO/bytebuffer.js/%s/externs/bytebuffer.js"
                        +lib-version+)
         :name "cljsjs/common/bytebuffer.ext.js"
-        :checksum "6D7D1776B5D2DEB8B0ACDC8127EE3F3C"
+        :checksum "A020921D11C1CAD4B271DDA840ADD584"
         :unzip false)
       ; here b/c dcodeio uses UMD / module declarations that GClosure doesn't know how
       ; to rewrite (uses `modules["exports"] = ...`, `require`, among other things)
@@ -38,4 +38,6 @@
         :match #"(?s)function\(global.+?\}\)\(this"
         :value "function(global, factory) { ByteBuffer = factory(Long); })(this")
       (deps-cljs :name "cljsjs.bytebuffer"
-        :requires ["cljsjs.long"]))))
+        :requires ["cljsjs.long"])
+      (pom)
+      (jar))))

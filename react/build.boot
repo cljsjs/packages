@@ -4,18 +4,22 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.14.3")
+(def +lib-version+ "15.0.0-rc.2")
 (def +version+ (str +lib-version+ "-0"))
 
-(def urls
-  {:normal {:dev (str "http://fb.me/react-" +lib-version+ ".js")
-            :dev-checksum "9927B8234985DB453299EB5A4591DD33"
-            :min (str "http://fb.me/react-" +lib-version+ ".min.js")
-            :min-checksum "C3207F7BF39699D4279BA404EA55F163"}
-   :with-addons {:dev (str "http://fb.me/react-with-addons-" +lib-version+ ".js")
-                 :dev-checksum "CFF72F35360E3433F6805F8C4F3305B3"
-                 :min (str "http://fb.me/react-with-addons-" +lib-version+ ".min.js")
-                 :min-checksum "CE4377AE601A9EC6A0870C5C9EF4B7BF"}})
+(def checksums
+  {'cljsjs/react
+   {:dev "E27DF5366FF3BD0CA9171BC90435DE29",
+    :min "230584C8225DCE15B129BFF4C0104639"},
+   'cljsjs/react-with-addons
+   {:dev "FD024118DF52CA0D8C0FB9F4506E6031",
+    :min "28B717A552841A9E1A8D71C82E79FEEE"},
+   'cljsjs/react-dom
+   {:dev "CD6BA1BF18C41F6BFEF0E267760115EB",
+    :min "C4F4BD8C0179AE240155B7935ECF375D"},
+   'cljsjs/react-dom-server
+   {:dev "EF7FF8CF0EF62D837B32B3FDC2A3CAA6",
+    :min "473229B24D118FF1CE24B0663AD08681"}})
 
 (task-options!
  pom  {:project     'cljsjs/react
@@ -25,23 +29,95 @@
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
 
-(deftask package []
-  (task-options! push {:ensure-branch nil :tag false})
-  (comp
-    (download :url (-> urls :normal :dev) :checksum (-> urls :normal :dev-checksum))
-    (download :url (-> urls :normal :min) :checksum (-> urls :normal :min-checksum))
-    (sift :move {(re-pattern (str "^react-" +lib-version+ ".js$"))     "cljsjs/react/development/react.inc.js"
-                 (re-pattern (str "^react-" +lib-version+ ".min.js$")) "cljsjs/react/production/react.min.inc.js"})
-    (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.react")))
+;; TODO: Should eventually be included in boot.core
+(defn with-files
+  "Runs middleware with filtered fileset and merges the result back into complete fileset."
+  [p middleware]
+  (fn [next-handler]
+    (fn [fileset]
+      (let [merge-fileset-handler (fn [fileset']
+                                    (next-handler (commit! (assoc fileset :tree (merge (:tree fileset) (:tree fileset'))))))
+            handler (middleware merge-fileset-handler)
+            fileset (assoc fileset :tree (reduce-kv
+                                          (fn [tree path x]
+                                            (if (p x)
+                                              (assoc tree path x)
+                                              tree))
+                                          (empty (:tree fileset))
+                                          (:tree fileset)))]
+        (handler fileset)))))
+
+(defn package-part [{:keys [extern-name namespace project dependencies requires]}]
+  (with-files (fn [x] (= extern-name (.getName (tmp-file x))))
+    (comp
+      (download :url (format "http://fb.me/%s-%s.js" (name project) +lib-version+)
+                :checksum (:dev (get checksums project)))
+      (download :url (format "http://fb.me/%s-%s.min.js" (name project) +lib-version+)
+                :checksum (:min (get checksums project)))
+      (sift :move {(re-pattern (format "^%s-%s.js$" (name project) +lib-version+))     (format "cljsjs/%1$s/development/%1$s.inc.js" (name project))
+                   (re-pattern (format "^%s-%s.min.js$" (name project) +lib-version+)) (format "cljsjs/%1$s/production/%1$s.min.inc.js" (name project))})
+      (sift :include #{#"^cljsjs"})
+      (deps-cljs :name namespace :requires requires)
+      (pom :project project :dependencies (or dependencies []))
+      (jar))))
+
+(deftask package-react []
+  (package-part
+    {:extern-name "react.ext.js"
+     :namespace "cljsjs.react"
+     :project 'cljsjs/react}))
+
+(deftask package-dom []
+  (package-part
+    {:extern-name "react-dom.ext.js"
+     :namespace "cljsjs.react.dom"
+     :requires ["cljsjs.react"]
+     :project 'cljsjs/react-dom
+     :dependencies [['cljsjs/react +version+]]}))
+
+(deftask package-dom-server []
+  (package-part
+    {:extern-name "react-dom-server.ext.js"
+     :namespace "cljsjs.react.dom.server"
+     :requires ["cljsjs.react"]
+     :project 'cljsjs/react-dom-server
+     :dependencies [['cljsjs/react +version+]]}))
 
 (deftask package-with-addons []
-  (task-options! pom {:project 'cljsjs/react-with-addons}
-                 push {:ensure-branch nil :tag false})
+  (package-part
+    {:extern-name "react.ext.js"
+     :namespace "cljsjs.react"
+     :project 'cljsjs/react-with-addons}))
+
+(deftask package []
   (comp
-    (download :url (-> urls :with-addons :dev) :checksum (-> urls :with-addons :dev-checksum))
-    (download :url (-> urls :with-addons :min) :checksum (-> urls :with-addons :min-checksum))
-    (sift :move {(re-pattern (str "^react-with-addons-" +lib-version+ ".js$"))     "cljsjs/react/development/react-with-addons.inc.js"
-                 (re-pattern (str "^react-with-addons-" +lib-version+ ".min.js$")) "cljsjs/react/production/react-with-addons.min.inc.js"})
-    (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.react")))
+    (package-react)
+    (package-dom)
+    (package-dom-server)
+    (package-with-addons)))
+
+
+(defn md5sum [fileset name]
+  (with-open [is  (clojure.java.io/input-stream (tmp-file (tmp-get fileset name)))
+              dis (java.security.DigestInputStream. is (java.security.MessageDigest/getInstance "MD5"))]
+    (#'cljsjs.boot-cljsjs.packaging/realize-input-stream! dis)
+    (#'cljsjs.boot-cljsjs.packaging/message-digest->str (.getMessageDigest dis))))
+
+(deftask load-checksums
+  "Task to create checksums map for new version"
+  []
+  (comp
+    (reduce
+      (fn [handler project]
+        (comp handler
+              (download :url (format "http://fb.me/%s-%s.js" (name project) +lib-version+))
+              (download :url (format "http://fb.me/%s-%s.min.js" (name project) +lib-version+))))
+      identity
+      (keys checksums))
+    (fn [handler]
+      (fn [fileset]
+        (clojure.pprint/pprint (into {} (map (juxt identity (fn [project]
+                                                              {:dev (md5sum fileset (format "%s-%s.js" (name project) +lib-version+))
+                                                               :min (md5sum fileset (format "%s-%s.min.js" (name project) +lib-version+))}))
+                                             (keys checksums))))
+        fileset))))

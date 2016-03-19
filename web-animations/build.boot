@@ -21,4 +21,6 @@
     (sift :move {#"^web-animations-js-([\d\.]*)/web-animations.min.js$"
                  "cljsjs/web-animations/development/web-animations-js.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.web-animations")))
+    (deps-cljs :name "cljsjs.web-animations")
+    (pom)
+    (jar)))

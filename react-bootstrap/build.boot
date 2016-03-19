@@ -7,7 +7,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "0.28.1")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/react-bootstrap
@@ -31,4 +31,6 @@
                  "cljsjs/react-bootstrap/production/react-bootstrap.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-bootstrap"
-               :requires ["cljsjs.react.dom"])))
+               :requires ["cljsjs.react.dom"])
+    (pom)
+    (jar)))

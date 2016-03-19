@@ -27,4 +27,6 @@
     (sift   :move {#"juration.js" "cljsjs/juration/development/juration.inc.js"
                    #"juration.min.js" "cljsjs/juration/production/juration.min.inc.js"})
     (sift   :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.juration")))
+    (deps-cljs :name "cljsjs.juration")
+    (pom)
+    (jar)))

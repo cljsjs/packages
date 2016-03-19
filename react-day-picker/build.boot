@@ -30,4 +30,6 @@
                  #"^style.css$"
                  "cljsjs/react-day-picker/common/react-day-picker.inc.css"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.react-day-picker" :requires ["cljsjs.react"])))
+    (deps-cljs :name "cljsjs.react-day-picker" :requires ["cljsjs.react"])
+    (pom)
+    (jar)))

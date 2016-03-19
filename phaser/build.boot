@@ -28,4 +28,6 @@
                 #"^phaser\.min\.js$"
                 "cljsjs/phaser/production/phaser.min.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.phaser")))
+   (deps-cljs :name "cljsjs.phaser")
+   (pom)
+   (jar)))

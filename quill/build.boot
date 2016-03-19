@@ -23,4 +23,6 @@
                         #".*dist/quill\.base\.css" "cljsjs/quill/common/quill.base.css"
                         #".*dist/quill\.snow\.css" "cljsjs/quill/common/quill.snow.css"})
            (sift :include #{#"^cljsjs"})
-           (deps-cljs :name "cljsjs.quill")))
+           (deps-cljs :name "cljsjs.quill")
+           (pom)
+           (jar)))

@@ -14,6 +14,16 @@ var Auth0 = function (options) {};
 Auth0.version;
 
 /**
+ * @param {function} callback
+ */
+Auth0.prototype.getSSOData = function (callback) {};
+
+/**
+ * @param {Object} options
+ */
+Auth0.prototype.signin = function (options) {};
+
+/**
  * @param {string} id_token
  * @param {function} callback
  * @return {undefined}

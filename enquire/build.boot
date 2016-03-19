@@ -23,4 +23,6 @@
    (sift :move {#"^enquire\.[^\/]*/dist/enquire.js" "cljsjs/enquire/development/enquire.inc.js"
                 #"^enquire\.[^\/]*/dist/enquire.min.js" "cljsjs/enquire/production/enquire.min.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.enquire")))
+   (deps-cljs :name "cljsjs.enquire")
+   (pom)
+   (jar)))

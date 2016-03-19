@@ -26,4 +26,6 @@
                          #"^three.min.js"
                          "cljsjs/three/production/three.min.inc.js"})
    (sift      :include  #{#"^cljsjs"})
-   (deps-cljs :name     "cljsjs.three")))
+   (deps-cljs :name     "cljsjs.three")
+   (pom)
+   (jar)))

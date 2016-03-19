@@ -25,4 +25,6 @@
                  #"^d3-geo-projection-([\d\.]*)/d3\.geo\.projection\.min\.js" "cljsjs/d3geo/production/d3geo.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.d3geo"
-               :requires ["cljsjs.d3"])))
+               :requires ["cljsjs.d3"])
+    (pom)
+    (jar)))

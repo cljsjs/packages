@@ -16,4 +16,6 @@
        :license     {"Public Domain" "http://creativecommons.org/publicdomain/zero/1.0/"}})
 
 (deftask package []
-  (deps-cljs :name "cljsjs.object-assign-shim"))
+  (deps-cljs :name "cljsjs.object-assign-shim")
+  (pom)
+  (jar))

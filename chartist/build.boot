@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "0.9.4")
-(def +version+ (str +lib-version+ "-1"))
+(def +version+ (str +lib-version+ "-2"))
 
 (task-options!
   pom {:project 'cljsjs/chartist
@@ -35,4 +35,6 @@
            #"chartist.min.js.map" "cljsjs/production/chartist.min.inc.js.map"
            #"chartist.min.css" "cljsjs/common/chartist.min.css"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.chartist")))
+    (deps-cljs :name "cljsjs.chartist")
+    (pom)
+    (jar)))

@@ -31,4 +31,6 @@
                  "cljsjs/react-burger-menu/production/react-burger-menu.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-burger-menu"
-               :requires ["cljsjs.react" "cljsjs.snapsvg"])))
+               :requires ["cljsjs.react" "cljsjs.snapsvg"])
+    (pom)
+    (jar)))

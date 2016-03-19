@@ -32,4 +32,6 @@
                  "cljsjs/react-sanfona/production/react-sanfona.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-sanfona"
-               :requires ["cljsjs.react"])))
+               :requires ["cljsjs.react"])
+    (pom)
+    (jar)))

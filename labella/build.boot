@@ -25,4 +25,6 @@
                  #"^labella.js-([\d\.]*)/dist/labella\.min\.js" "cljsjs/labella/production/labella.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.labella"
-			         :requires ["cljsjs.d3"])))
+			         :requires ["cljsjs.d3"])
+    (pom)
+    (jar)))

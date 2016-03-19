@@ -25,4 +25,6 @@
    (minify    :in       "cljsjs/css_layout/development/css-layout.inc.js"
               :out      "cljsjs/css_layout/production/css-layout.min.inc.js")
    (sift      :include  #{#"^cljsjs"})
-   (deps-cljs :name     "cljsjs.css-layout")))
+   (deps-cljs :name     "cljsjs.css-layout")
+   (pom)
+   (jar)))
