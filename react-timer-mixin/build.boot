@@ -44,4 +44,6 @@
            :out "cljsjs/react-timer-mixin/production/TimerMixin.min.inc.js"
            :lang :ecmascript5)
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.react-timer-mixin")))
+   (deps-cljs :name "cljsjs.react-timer-mixin")
+   (pom)
+   (jar)))

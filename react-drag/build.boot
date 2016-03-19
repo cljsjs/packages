@@ -35,4 +35,6 @@
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-drag"
                :requires ["cljsjs.react" 
-			  "cljsjs.react.dom"])))
+			  "cljsjs.react.dom"])
+    (pom)
+    (jar)))

@@ -25,4 +25,6 @@
                 #".*/dist/js/standalone/selectize.min.js" "cljsjs/selectize/production/selectize.min.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.selectize"
-              :requires ["cljsjs.jquery"])))
+              :requires ["cljsjs.jquery"])
+   (pom)
+   (jar)))

@@ -23,4 +23,6 @@
     (sift :move {#"^paper.js-.*/dist/paper-full.js" "cljsjs/development/paper-full.inc.js"
                  #"^paper.js-.*/dist/paper-full.min.js" "cljsjs/production/paper-full.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.paperjs")))
+    (deps-cljs :name "cljsjs.paperjs")
+    (pom)
+    (jar)))

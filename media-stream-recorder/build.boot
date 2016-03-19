@@ -23,4 +23,6 @@
    (sift :move {#"MediaStreamRecorder-master/MediaStreamRecorder-standalone.js"
                 "cljsjs/development/MediaStreamRecorder-standalone.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.media-stream-recorder")))
+   (deps-cljs :name "cljsjs.media-stream-recorder")
+   (pom)
+   (jar)))

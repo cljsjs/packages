@@ -27,4 +27,6 @@
                  (re-pattern (str "^vega-" +lib-version+ "/vega.min.js$")) "cljsjs/production/vega.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.vega"
-               :requires ["cljsjs.d3"])))
+               :requires ["cljsjs.d3"])
+    (pom)
+    (jar)))

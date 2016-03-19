@@ -33,4 +33,6 @@
                  #"nv.d3.min.css"  "cljsjs/nvd3/common/nvd3.min.css"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.nvd3"
-               :requires ["cljsjs.d3"])))
+               :requires ["cljsjs.d3"])
+    (pom)
+    (jar)))

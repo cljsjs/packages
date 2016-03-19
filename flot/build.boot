@@ -61,4 +61,6 @@
 
     (sift :move {#"^cljsjs/plugins/(.*)\.js" "cljsjs/plugins/$1.inc.js"})
 
-    (generate-plugin-deps)))
+    (generate-plugin-deps)
+    (pom)
+    (jar)))

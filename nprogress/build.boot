@@ -27,4 +27,6 @@
                         #"^nprogress-\d.\d.\d/nprogress.css$" "cljsjs/nprogress/common/nprogress.css"})
            (minify :in "cljsjs/nprogress/development/nprogress.inc.js" :out "cljsjs/nprogress/production/nprogress.min.inc.js")
            (sift :include #{#"^cljsjs"})
-           (deps-cljs :name "cljsjs.nprogress")))
+           (deps-cljs :name "cljsjs.nprogress")
+           (pom)
+           (jar)))

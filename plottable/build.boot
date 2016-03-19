@@ -28,4 +28,6 @@
                         #"plottable.css"    "cljsjs/plottable/common/plottable.css"})
            (sift :include #{#"^cljsjs"})
            (deps-cljs :name "cljsjs.plottable"
-                      :requires ["cljsjs.d3"])))
+                      :requires ["cljsjs.d3"])
+           (pom)
+           (jar)))

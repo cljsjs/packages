@@ -43,4 +43,6 @@
    (sift :move {#".*blockapps\.js$"       "cljsjs/blockapps/development/blockapps.inc.js"
                 #".*blockapps-min\.js$"   "cljsjs/blockapps/production/blockapps.min.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.blockapps")))
+   (deps-cljs :name "cljsjs.blockapps")
+   (pom)
+   (jar)))

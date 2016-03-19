@@ -28,4 +28,6 @@
                 #"^gl-matrix-min.js"
                 "cljsjs/gl-matrix/production/gl-matrix.min.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.gl-matrix")))
+   (deps-cljs :name "cljsjs.gl-matrix")
+   (pom)
+   (jar)))

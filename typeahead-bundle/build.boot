@@ -22,4 +22,6 @@
    (sift :move {#".*?typeahead.bundle.js"     "cljsjs/typeahead-bundle/development/typeahead.inc.js"
                 #".*?typeahead.bundle.min.js" "cljsjs/typeahead-bundle/production/typeahead.bundle.min.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.typeahead-bundle")))
+   (deps-cljs :name "cljsjs.typeahead-bundle")
+   (pom)
+   (jar)))

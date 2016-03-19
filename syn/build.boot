@@ -23,4 +23,6 @@
     (sift :move {#"^syn-.*/dist/syn.js" "cljsjs/development/syn.inc.js"})
     (sift :move {#"^syn-.*/dist/syn.js" "cljsjs/production/syn.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.syn"))) 
+    (deps-cljs :name "cljsjs.syn")
+    (pom)
+    (jar))) 

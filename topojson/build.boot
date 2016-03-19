@@ -25,4 +25,6 @@
    (minify    :in       "cljsjs/topojson/development/topojson.inc.js"
               :out      "cljsjs/topojson/production/topojson.min.inc.js")
    (sift      :include  #{#"^cljsjs"})
-   (deps-cljs :name     "cljsjs.topojson")))
+   (deps-cljs :name     "cljsjs.topojson")
+   (pom)
+   (jar)))

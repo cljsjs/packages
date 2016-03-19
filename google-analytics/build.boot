@@ -21,4 +21,6 @@
               :checksum "eed8ec65a6dd9b05eed6d4a02e1439e4")
     (sift :move {#"analytics.js" "cljsjs/google-analytics/production/google-analytics.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.google-analytics")))
+    (deps-cljs :name "cljsjs.google-analytics")
+    (pom)
+    (jar)))

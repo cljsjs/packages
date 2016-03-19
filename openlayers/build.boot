@@ -28,4 +28,6 @@
                  #"^v([\d\.]*)/ol\.ext/" "cljsjs/openlayers/development/ol.ext/"
                  #"^v([\d\.]*)/css/ol\.css" "cljsjs/openlayers/common/openlayers.inc.css"
                  #"^ol3-([\d\.]*)/externs/(.*)\.js" "cljsjs/openlayers/common/$2.ext.js"})
-    (sift :include #{#"^cljsjs/" #"deps.cljs"})))
+    (sift :include #{#"^cljsjs/" #"deps.cljs"})
+    (pom)
+    (jar)))

@@ -23,4 +23,6 @@
     (sift :move {#"^spin\.js-([\d.]*)/spin\.js" "cljsjs/spin/development/spin.inc.js"
                  #"^spin\.js-([\d.]*)/spin\.min\.js" "cljsjs/spin/production/spin.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.spin")))
+    (deps-cljs :name "cljsjs.spin")
+    (pom)
+    (jar)))

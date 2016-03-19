@@ -26,4 +26,6 @@
                  #"^web/(.*)\.js"           "cljsjs/pdfjs/common/$1.inc.js"
                  #"^web/locale/"            "cljsjs/pdfjs/common/locale/"
                  #"^web/images/"            "cljsjs/pdfjs/common/images/"})
-    (sift :include #{#"^cljsjs/" #"^deps\.cljs$"})))
+    (sift :include #{#"^cljsjs/" #"^deps\.cljs$"})
+    (pom)
+    (jar)))

@@ -40,4 +40,6 @@
               :requires ["cljsjs.react"
                          "cljsjs.react.dom"
                          "cljsjs.classnames"
-                         "cljsjs.react-input-autosize"])))
+                         "cljsjs.react-input-autosize"])
+   (pom)
+   (jar)))

@@ -27,4 +27,6 @@
                 #"^c3-([\d\.]*)/c3\.min\.css" "cljsjs/c3/common/c3.min.css"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name     "cljsjs.c3"
-              :requires ["cljsjs.d3"])))
+              :requires ["cljsjs.d3"])
+   (pom)
+   (jar)))

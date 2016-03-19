@@ -23,4 +23,6 @@
     (sift :move {#"^pusher\.js" "cljsjs/pusher/development/pusher.inc.js"
                  #"^pusher\.min\.js" "cljsjs/pusher/production/pusher.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.pusher")))
+    (deps-cljs :name "cljsjs.pusher")
+    (pom)
+    (jar)))

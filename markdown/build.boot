@@ -26,4 +26,6 @@
     (sift :move {#"^markdown-browser-.*/markdown\.js" "cljsjs/development/markdown.inc.js"
                  #"^markdown-browser-.*/markdown\.min\.js" "cljsjs/production/markdown.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.markdown")))
+    (deps-cljs :name "cljsjs.markdown")
+    (pom)
+    (jar)))

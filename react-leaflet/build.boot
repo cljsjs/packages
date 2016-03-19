@@ -27,4 +27,6 @@
                  #"^react-leaflet-(.*)/dist/react-leaflet.min.js"  "cljsjs/production/react-leaflet.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-leaflet"
-               :requires ["cljsjs.react" "cljsjs.leaflet"])))
+               :requires ["cljsjs.react" "cljsjs.leaflet"])
+    (pom)
+    (jar)))

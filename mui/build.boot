@@ -25,4 +25,6 @@
                  #"^mui-[\d.]+/dist/js/mui\.min\.js$"   "cljsjs/production/mui.min.inc.js"
                  #"^mui-[\d.]+/dist/css/mui\.min\.css$" "cljsjs/common/mui.min.inc.css"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.mui" :no-externs true)))
+    (deps-cljs :name "cljsjs.mui" :no-externs true)
+    (pom)
+    (jar)))

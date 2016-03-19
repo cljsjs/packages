@@ -26,4 +26,6 @@
                  #"^d3kit-([\d\.]*)/dist/d3kit\.min\.js" "cljsjs/d3kit/production/d3kit.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.d3kit"
-               :requires ["cljsjs.d3"])))
+               :requires ["cljsjs.d3"])
+    (pom)
+    (jar)))

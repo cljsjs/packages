@@ -26,4 +26,6 @@
    (sift :move {#"highcharts.src.js"     "cljsjs/highcharts/development/highcharts.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name     "cljsjs.highcharts"
-              :requires ["cljsjs.jquery"])))
+              :requires ["cljsjs.jquery"])
+   (pom)
+   (jar)))

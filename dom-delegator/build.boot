@@ -45,4 +45,6 @@
    (minify :in "cljsjs/dom-delegator/development/dom-delegator.inc.js"
            :out "cljsjs/dom-delegator/production/dom-delegator.min.inc.js")
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.dom-delegator")))
+   (deps-cljs :name "cljsjs.dom-delegator")
+   (pom)
+   (jar)))

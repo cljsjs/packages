@@ -1,8 +1,8 @@
-# cljsjs/react-dom
+# cljsjs/victory
 
 [](dependency)
 ```clojure
-[cljsjs/react-dom "0.14.3-1"] ;; latest release
+[cljsjs/victory "0.4.2"]
 ```
 [](/dependency)
 
@@ -12,7 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.react.dom))
+  (:require cljsjs.victory))
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies

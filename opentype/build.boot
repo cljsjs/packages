@@ -23,4 +23,6 @@
     (sift :move {#"^opentype.js-([\d\.]*)/dist/opentype\.js"      "cljsjs/opentype/development/opentype.inc.js"
                  #"^opentype.js-([\d\.]*)/dist/opentype\.min\.js" "cljsjs/opentype/production/opentype.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.opentype")))
+    (deps-cljs :name "cljsjs.opentype")
+    (pom)
+    (jar)))

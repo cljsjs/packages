@@ -1,8 +1,8 @@
-# cljsjs/react-dom-server
+# cljsjs/react-autosuggest
 
 [](dependency)
 ```clojure
-[cljsjs/react-dom-server "0.14.3-0"] ;; latest release
+[cljsjs/react-autosuggest "1.0.0-beta6-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,9 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.react.dom.server))
+  (:require cljsjs.react-autosuggest))
 ```
+
+A sample reagent project that uses the library is available at [https://github.com/cdorrat/autosuggest-sample](https://github.com/cdorrat/autosuggest-sample)
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies

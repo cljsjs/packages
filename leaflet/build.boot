@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "0.7.7")
-(def +version+ (str +lib-version+ "-1"))
+(def +version+ (str +lib-version+ "-2"))
 
 (task-options!
  pom  {:project     'cljsjs/leaflet
@@ -27,4 +27,6 @@
                  #"^Leaflet-(.*)/dist/leaflet.css"       "cljsjs/common/leaflet.inc.css"
                  #"^Leaflet-(.*)/dist/images/(.*\.png)$" "cljsjs/common/images/$2"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.leaflet")))
+    (deps-cljs :name "cljsjs.leaflet")
+    (pom)
+    (jar)))

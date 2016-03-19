@@ -22,4 +22,6 @@
               :unzip true)
     (sift :move {#"firebase-bower-([\d\.]*)/firebase.js" "cljsjs/development/firebase.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.firebase")))
+    (deps-cljs :name "cljsjs.firebase")
+    (pom)
+    (jar)))

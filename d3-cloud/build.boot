@@ -27,4 +27,6 @@
 
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.d3-cloud"
-              :requires ["cljsjs.d3"])))
+              :requires ["cljsjs.d3"])
+   (pom)
+   (jar)))

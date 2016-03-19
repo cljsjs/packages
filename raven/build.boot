@@ -23,4 +23,6 @@
     (sift :move { #"^raven-js.*/dist/raven\.js$"      "cljsjs/raven/development/raven.inc.js"
                   #"^raven-js.*/dist/raven\.min\.js$" "cljsjs/raven/production/raven.min.inc.js" })
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.raven")))
+    (deps-cljs :name "cljsjs.raven")
+    (pom)
+    (jar)))

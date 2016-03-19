@@ -38,4 +38,6 @@
         :match #"(?s)function\(global.+?\}\)\(this"
         :value "function(global, factory) { ByteBuffer = factory(Long); })(this")
       (deps-cljs :name "cljsjs.bytebuffer"
-        :requires ["cljsjs.long"]))))
+        :requires ["cljsjs.long"])
+      (pom)
+      (jar))))

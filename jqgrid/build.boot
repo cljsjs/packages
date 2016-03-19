@@ -52,4 +52,6 @@
    (deps-cljs :name "cljsjs.jqgrid" :requires ["cljsjs.jquery" "cljsjs.jquery-ui"])
    (sift :move {#"^jqGrid-([\d\.]*)/js/i18n/(.*).js" "cljsjs/jqgrid/common/$2.inc.js"})
    (sift :include #{#"^cljsjs" #"^deps\.cljs$"})
-   (generate-lang-deps)))
+   (generate-lang-deps)
+   (pom)
+   (jar)))

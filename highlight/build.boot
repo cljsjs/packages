@@ -66,5 +66,7 @@
     (sift :move {#"build/languages/(.*)\.min\.js" "cljsjs/common/highlight/$1.inc.js"
                  #"build/styles/(.*)\.css" "cljsjs/common/highlight/$1.css"})
     (sift :include #{#"^cljsjs" #"^deps\.cljs$"})
-    (generate-lang-deps)))
+    (generate-lang-deps)
+    (pom)
+    (jar)))
 

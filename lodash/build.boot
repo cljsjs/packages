@@ -24,4 +24,6 @@
     (sift :move {#"lodash\.js" "cljsjs/lodash/development/lodash.inc.js"
                  #"lodash\.min\.js" "cljsjs/lodash/production/lodash.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.lodash")))
+    (deps-cljs :name "cljsjs.lodash")
+    (pom)
+    (jar)))

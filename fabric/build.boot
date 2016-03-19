@@ -25,4 +25,6 @@
     (sift :move {#"^fabric.js"     "cljsjs/fabric/development/fabric.inc.js"
                  #"^fabric.min.js" "cljsjs/fabric/production/fabric.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.fabric")))
+    (deps-cljs :name "cljsjs.fabric")
+    (pom)
+    (jar)))

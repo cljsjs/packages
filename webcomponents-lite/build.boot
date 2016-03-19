@@ -24,4 +24,6 @@
    (sift :move {(re-pattern (str "^webcomponentsjs-" +lib-version+ "/webcomponents-lite.js$"))  "cljsjs/webcomponents/development/webcomponents-lite.inc.js"
                 (re-pattern (str "^webcomponentsjs-" +lib-version+ "/webcomponents-lite.min.js$"))  "cljsjs/webcomponents/development/webcomponents-lite.min.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.webcomponents-lite")))
+   (deps-cljs :name "cljsjs.webcomponents-lite")
+   (pom)
+   (jar)))

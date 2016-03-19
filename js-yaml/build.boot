@@ -23,4 +23,6 @@
     (sift :move {#"^js-yaml-.*/dist/js-yaml.js" "cljsjs/development/js-yaml.inc.js"})
     (sift :move {#"^js-yaml-.*/dist/js-yaml.min.js" "cljsjs/production/js-yaml.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.js-yaml"))) 
+    (deps-cljs :name "cljsjs.js-yaml")
+    (pom)
+    (jar)))

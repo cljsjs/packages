@@ -26,4 +26,6 @@
                  (re-pattern (str "^material-design-lite-" +lib-version+ "/material.min.js$"))   "cljsjs/material/production/material.min.inc.js"
                  (re-pattern (str "^material-design-lite-" +lib-version+ "/material.min.css$")) "cljsjs/material/production/material.min.inc.css"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.material")))
+    (deps-cljs :name "cljsjs.material")
+    (pom)
+    (jar)))
