@@ -1,10 +1,12 @@
-# cljsjs/airbrake
+# cljsjs/airbrake [![Clojars Project](https://img.shields.io/clojars/v/cljsjs/airbrake.svg)](https://clojars.org/cljsjs/airbrake)
 
 [](dependency)
 ```clojure
 [cljsjs/airbrake "0.5.3-0"] ;; latest release
 ```
 [](/dependency)
+
+<img src="http://clojars.org/cljsjs/airbrake/latest-version.svg">
 
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
 of the Clojurescript compiler. After adding the above dependency to your project
