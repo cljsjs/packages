@@ -3,7 +3,7 @@
   :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
 (def +lib-version+ "2.1.4")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
