@@ -2,8 +2,8 @@
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(def +lib-version+ "1.11.3")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "1.12.2")
+(def +version+ (str +lib-version+ "-0"))
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -18,9 +18,9 @@
 (deftask package []
   (comp
     (download :url (format "http://code.jquery.com/jquery-%s.js" +lib-version+)
-              :checksum "7F38DCBFB11AFF050652FF3B754ADB63")
+              :checksum "65A68381F99AD9484045173059524809")
     (download :url (format "http://code.jquery.com/jquery-%s.min.js" +lib-version+)
-              :checksum "895323ED2F7258AF4FAE2C738C8AEA49")
+              :checksum "BDC2B7EFB1FAF219D65EDFE253A103E9")
     (sift :move {#"jquery-([\d\.]*).js" "cljsjs/development/jquery.inc.js"
                  #"jquery-([\d\.]*).min.js" "cljsjs/production/jquery.min.inc.js"})
     (sift :include #{#"^cljsjs"})
