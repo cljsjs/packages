@@ -12,7 +12,6 @@ for x in *; do
 
         # run in parallel
         (
-        echo curl -s -o /dev/null --write-out %{http_code} https://clojars.org/repo/cljsjs/$artifact/$version/$artifact-$version.pom
         y=$(curl -s -o /dev/null --write-out %{http_code} https://clojars.org/repo/cljsjs/$artifact/$version/$artifact-$version.pom)
 
         if [[ $y != "200" ]]; then
