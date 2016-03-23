@@ -22,13 +22,12 @@
     (download :url      (str "https://github.com/Leaflet/Leaflet.draw/archive/master.zip")
               :checksum "C2316EBEDD093B67F5F7083F75097444"
               :unzip    true)
-    (sift :move {#"^Leaflet.draw-master/dist/leaflet.draw-src.js"    "cljsjs/development/leaflet-draw.inc.js"
-                 #"^Leaflet.draw-master/dist/leaflet.draw.js"        "cljsjs/production/leaflet-draw.min.inc.js"
-                 #"^Leaflet.draw-master/dist/leaflet.draw.css"       "cljsjs/common/leaflet-draw.inc.css"
-                 ;;#"^Leaflet.draw-master/dist/images/(.*\.png)$" 	 "cljsjs/common/images/$2"
-                 #"^Leaflet.draw-master/dist/images/spritesheet.png" 	 "cljsjs/common/images/spritesheet.png"
-                 #"^Leaflet.draw-master/dist/images/spritesheet-2x.png" 	 "cljsjs/common/images/spritesheet-2x.png"
-                 })
+    (sift :move {#"^Leaflet.draw-master/dist/leaflet.draw-src.js"    	"cljsjs/development/leaflet-draw.inc.js"
+                 #"^Leaflet.draw-master/dist/leaflet.draw.js"        	"cljsjs/production/leaflet-draw.min.inc.js"
+                 #"^Leaflet.draw-master/dist/leaflet.draw.css"       	"cljsjs/common/leaflet-draw.inc.css"
+                 #"^Leaflet.draw-master/dist/images/spritesheet.png" 	"cljsjs/common/images/spritesheet.png"
+                 #"^Leaflet.draw-master/dist/images/spritesheet-2x.png" "cljsjs/common/images/spritesheet-2x.png"
+                 }) ;; TODO Provide one-liner for images
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.leaflet-draw")
     (pom)
