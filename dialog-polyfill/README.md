@@ -14,6 +14,8 @@ you can require the packaged library like so:
 (ns application.core
   (:require cljsjs.dialog-polyfill))
 
+...
+
 (defn get-dialog [name]
   (.querySelector js/document (str "#" name)))
 
@@ -41,10 +43,6 @@ you can require the packaged library like so:
   [:div [:h2 "Welcome to clipboard-test"]
    [my-dialog]
    [dialog-button]])
-
-...
-
-
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
