@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/google-diff-match-patch "20121119-0"] ;; latest release
+[cljsjs/google-diff-match-patch "20121119-1"] ;; latest release
 ```
 [](/dependency)
 
