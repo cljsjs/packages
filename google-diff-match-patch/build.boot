@@ -21,8 +21,7 @@
    (download :url (format "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/google-diff-match-patch/diff_match_patch_%s.zip" +lib-version+)
              :checksum "c0d22f0c04da5760ecb2c2040daa6703"
              :unzip true)
-   (sift :move {#"^diff_match_patch_\d*/javascript/diff_match_patch_uncompressed\.js$" "cljsjs/google-diff-match-patch/development/google-diff-match-patch.inc.js"
-                #"^diff_match_patch_\d*/javascript/diff_match_patch_uncompressed\.js$" "cljsjs/google-diff-match-patch/production/google-diff-match-patch.min.inc.js"})
+   (sift :move {#"^diff_match_patch_\d*/javascript/diff_match_patch_uncompressed\.js$" "cljsjs/google-diff-match-patch/development/google-diff-match-patch.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.google-diff-match-patch")
    (pom)
