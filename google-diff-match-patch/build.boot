@@ -6,7 +6,7 @@
 
 
 (def +lib-version+ "20121119")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/google-diff-match-patch
@@ -22,7 +22,7 @@
              :checksum "c0d22f0c04da5760ecb2c2040daa6703"
              :unzip true)
    (sift :move {#"^diff_match_patch_\d*/javascript/diff_match_patch_uncompressed\.js$" "cljsjs/google-diff-match-patch/development/google-diff-match-patch.inc.js"
-                #"^diff_match_patch_\d*/javascript/diff_match_patch\.js$"              "cljsjs/google-diff-match-patch/production/google-diff-match-patch.min.inc.js"})
+                #"^diff_match_patch_\d*/javascript/diff_match_patch_uncompressed\.js$" "cljsjs/google-diff-match-patch/production/google-diff-match-patch.min.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.google-diff-match-patch")
    (pom)
