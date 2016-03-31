@@ -1,4 +1,4 @@
-# cljsjs/textures
+# cljsjs/colorbrewer
 
 [](dependency)
 ```clojure
