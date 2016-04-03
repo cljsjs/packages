@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-input-autosize "0.6.5-0"] ;; latest release
+[cljsjs/react-input-autosize "0.6.10-0"] ;; latest release
 ```
 [](/dependency)
 
