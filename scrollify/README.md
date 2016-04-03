@@ -4,7 +4,7 @@ This is a cljsjs package for https://github.com/mattboldt/typed.js/
 
 [](dependency)
 ```clojure
-[cljsjs/typedjs "1.1.1-0"] ;; latest release
+[cljsjs/scrollify "0.1.12-0"] ;; latest release
 ```
 [](/dependency)
 

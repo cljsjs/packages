@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-input-mask "0.5.6-0"] ;; latest release
+[cljsjs/react-input-mask "0.6.2-0"] ;; latest release
 ```
 [](/dependency)
 

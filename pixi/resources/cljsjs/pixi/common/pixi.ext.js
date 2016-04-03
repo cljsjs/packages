@@ -28,6 +28,15 @@ var PIXI = {
     "COLOR": {},
     "LUMINOSITY": {}
   },
+  "DRAW_MODES": {
+    "POINTS": {},
+    "LINES": {},
+    "LINE_LOOP": {},
+    "LINE_STRIP": {},
+    "TRIANGLES": {},
+    "TRIANGLE_STRIP": {},
+    "TRIANGLE_FAN": {}
+  },
   "SCALE_MODES": {
     "DEFAULT": {},
     "LINEAR": {},
@@ -45,7 +54,8 @@ var PIXI = {
     "transparent": {},
     "backgroundColor": {},
     "clearBeforeRender": {},
-    "preserveDrawingBuffer": {}
+    "preserveDrawingBuffer": {},
+    "roundPixels": {}
   },
   "SHAPES": {
     "POLY": {},
@@ -60,6 +70,29 @@ var PIXI = {
     "IDENTITY": {},
     "TEMP_MATRIX": {}
   },
+  "GroupD8": {
+    "E": {},
+    "SE": {},
+    "S": {},
+    "SW": {},
+    "W": {},
+    "NW": {},
+    "N": {},
+    "NE": {},
+    "MIRROR_VERTICAL": {},
+    "MIRROR_HORIZONTAL": {},
+    "uX": function () {},
+    "uY": function () {},
+    "vX": function () {},
+    "vY": function () {},
+    "inv": function () {},
+    "add": function () {},
+    "sub": function () {},
+    "rotate180": function () {},
+    "isSwapWidthHeight": function () {},
+    "byDirection": function () {},
+    "matrixAppendRotationInv": function () {}
+  },
   "Circle": function () {},
   "Ellipse": function () {},
   "Polygon": function () {},
@@ -70,6 +103,9 @@ var PIXI = {
   "utils": {
     "_uid": {},
     "_saidHello": {},
+    "EventEmitter": {
+      "prefixed": {}
+    },
     "pluginTarget": {
       "mixin": function () {}
     },
@@ -83,26 +119,39 @@ var PIXI = {
       "forEachSeries": function () {},
       "eachLimit": function () {},
       "forEachLimit": function () {},
+      "eachOf": function () {},
+      "forEachOf": function () {},
+      "eachOfSeries": function () {},
+      "forEachOfSeries": function () {},
+      "eachOfLimit": function () {},
+      "forEachOfLimit": function () {},
       "map": function () {},
       "mapSeries": function () {},
       "mapLimit": function () {},
       "reduce": function () {},
-      "inject": function () {},
       "foldl": function () {},
+      "inject": function () {},
       "reduceRight": function () {},
       "foldr": function () {},
+      "transform": function () {},
       "filter": function () {},
-      "filterSeries": function () {},
       "select": function () {},
+      "filterLimit": function () {},
+      "selectLimit": function () {},
+      "filterSeries": function () {},
       "selectSeries": function () {},
       "reject": function () {},
+      "rejectLimit": function () {},
       "rejectSeries": function () {},
-      "detect": function () {},
-      "detectSeries": function () {},
       "some": function () {},
       "any": function () {},
+      "someLimit": function () {},
       "every": function () {},
       "all": function () {},
+      "everyLimit": function () {},
+      "detect": function () {},
+      "detectSeries": function () {},
+      "detectLimit": function () {},
       "sortBy": function () {},
       "auto": function () {},
       "retry": function () {},
@@ -118,6 +167,8 @@ var PIXI = {
       "doWhilst": function () {},
       "until": function () {},
       "doUntil": function () {},
+      "during": function () {},
+      "doDuring": function () {},
       "queue": function () {},
       "priorityQueue": function () {},
       "cargo": function () {},
@@ -127,13 +178,18 @@ var PIXI = {
       "unmemoize": function () {},
       "times": function () {},
       "timesSeries": function () {},
+      "timesLimit": function () {},
       "seq": function () {},
       "compose": function () {},
       "applyEach": function () {},
       "applyEachSeries": function () {},
-      "forever": function () {}
+      "forever": function () {},
+      "ensureAsync": function () {},
+      "constant": function () {},
+      "asyncify": function () {},
+      "wrapSync": function () {}
     },
-    "uuid": function () {},
+    "uid": function () {},
     "hex2rgb": function () {},
     "hex2string": function () {},
     "rgb2hex": function () {},
@@ -143,22 +199,11 @@ var PIXI = {
     "getResolutionOfUrl": function () {},
     "sayHello": function () {},
     "isWebGLSupported": function () {},
+    "sign": function () {},
+    "removeItems": function () {},
     "TextureCache": {},
-    "BaseTextureCache": {}
-  },
-  "math": {
-    "Point": function () {},
-    "Matrix": {
-      "IDENTITY": {},
-      "TEMP_MATRIX": {}
-    },
-    "Circle": function () {},
-    "Ellipse": function () {},
-    "Polygon": function () {},
-    "Rectangle": {
-      "EMPTY": {}
-    },
-    "RoundedRectangle": function () {}
+    "BaseTextureCache": {},
+    "uuid": function () {}
   },
   "ticker": {
     "shared": {},
@@ -204,7 +249,8 @@ var PIXI = {
   "TextureUvs": function () {},
   "CanvasRenderer": {
     "__plugins": {
-      "interaction": function () {}
+      "interaction": function () {},
+      "accessibility": function () {}
     },
     "registerPlugin": function () {}
   },
@@ -220,11 +266,13 @@ var PIXI = {
       "particle": function () {},
       "graphics": function () {},
       "interaction": function () {},
-      "mesh": function () {}
+      "mesh": function () {},
+      "accessibility": function () {}
     },
     "registerPlugin": function () {},
     "glContextId": {}
   },
+  "WebGLManager": function () {},
   "ShaderManager": {
     "__plugins": {
       "meshShader": function () {}
@@ -232,9 +280,17 @@ var PIXI = {
     "registerPlugin": function () {}
   },
   "Shader": function () {},
+  "TextureShader": {
+    "defaultVertexSrc": {},
+    "defaultFragmentSrc": {}
+  },
+  "PrimitiveShader": function () {},
+  "ComplexPrimitiveShader": function () {},
   "ObjectRenderer": function () {},
   "RenderTarget": function () {},
   "AbstractFilter": function () {},
+  "FXAAFilter": function () {},
+  "SpriteMaskFilter": function () {},
   "autoDetectRenderer": function () {},
   "extras": {
     "MovieClip": {
@@ -250,9 +306,6 @@ var PIXI = {
     }
   },
   "filters": {
-    "AbstractFilter": function () {},
-    "FXAAFilter": function () {},
-    "SpriteMaskFilter": function () {},
     "AsciiFilter": function () {},
     "BloomFilter": function () {},
     "BlurFilter": function () {},
@@ -269,7 +322,6 @@ var PIXI = {
     "DropShadowFilter": function () {},
     "InvertFilter": function () {},
     "NoiseFilter": function () {},
-    "NormalMapFilter": function () {},
     "PixelateFilter": function () {},
     "RGBSplitFilter": function () {},
     "ShockwaveFilter": function () {},
@@ -366,9 +418,20 @@ var PIXI = {
         "TRIANGLES": {}
       }
     },
+    "Plane": function () {},
     "Rope": function () {},
     "MeshRenderer": function () {},
     "MeshShader": function () {}
+  },
+  "accessibility": {
+    "accessibleTarget": {
+      "accessible": {},
+      "accessibleTitle": {},
+      "tabIndex": {},
+      "_accessibleActive": {},
+      "_accessibleDiv": {}
+    },
+    "AccessibilityManager": function () {}
   },
   "loader": {},
   "SpriteBatch": function () {},
@@ -382,6 +445,7 @@ PIXI.Point.prototype = {
 };
 PIXI.Matrix.prototype = {
   "fromArray": function () {},
+  "set": function () {},
   "toArray": function () {},
   "apply": function () {},
   "applyInverse": function () {},
@@ -389,6 +453,7 @@ PIXI.Matrix.prototype = {
   "scale": function () {},
   "rotate": function () {},
   "append": function () {},
+  "setTransform": function () {},
   "prepend": function () {},
   "invert": function () {},
   "identity": function () {},
@@ -417,48 +482,17 @@ PIXI.RoundedRectangle.prototype = {
   "clone": function () {},
   "contains": function () {}
 };
-PIXI.math.Point.prototype = {
-  "clone": function () {},
-  "copy": function () {},
-  "equals": function () {},
-  "set": function () {}
-};
-PIXI.math.Matrix.prototype = {
-  "fromArray": function () {},
-  "toArray": function () {},
-  "apply": function () {},
-  "applyInverse": function () {},
-  "translate": function () {},
-  "scale": function () {},
-  "rotate": function () {},
-  "append": function () {},
-  "prepend": function () {},
-  "invert": function () {},
-  "identity": function () {},
-  "clone": function () {},
-  "copy": function () {}
-};
-PIXI.math.Circle.prototype = {
-  "clone": function () {},
-  "contains": function () {},
-  "getBounds": function () {}
-};
-PIXI.math.Ellipse.prototype = {
-  "clone": function () {},
-  "contains": function () {},
-  "getBounds": function () {}
-};
-PIXI.math.Polygon.prototype = {
-  "clone": function () {},
-  "contains": function () {}
-};
-PIXI.math.Rectangle.prototype = {
-  "clone": function () {},
-  "contains": function () {}
-};
-PIXI.math.RoundedRectangle.prototype = {
-  "clone": function () {},
-  "contains": function () {}
+PIXI.utils.EventEmitter.prototype = {
+  "_events": function () {},
+  "listeners": function () {},
+  "emit": function () {},
+  "on": function () {},
+  "once": function () {},
+  "removeListener": function () {},
+  "removeAllListeners": function () {},
+  "off": function () {},
+  "addListener": function () {},
+  "setMaxListeners": function () {}
 };
 PIXI.ticker.Ticker.prototype = {
   "_requestIfNeeded": function () {},
@@ -482,6 +516,8 @@ PIXI.DisplayObject.prototype = {
   "renderWebGL": function () {},
   "renderCanvas": function () {},
   "generateTexture": function () {},
+  "setParent": function () {},
+  "setTransform": function () {},
   "destroy": function () {},
   "_cacheAsBitmap": function () {},
   "_originalRenderWebGL": function () {},
@@ -505,6 +541,11 @@ PIXI.DisplayObject.prototype = {
   "defaultCursor": function () {},
   "_over": function () {},
   "_touchDown": function () {},
+  "accessible": function () {},
+  "accessibleTitle": function () {},
+  "tabIndex": function () {},
+  "_accessibleActive": function () {},
+  "_accessibleDiv": function () {},
   "_events": function () {},
   "listeners": function () {},
   "emit": function () {},
@@ -518,6 +559,7 @@ PIXI.DisplayObject.prototype = {
 };
 PIXI.Container.prototype = {
   "constructor": function () {},
+  "onChildrenChange": function () {},
   "addChild": function () {},
   "addChildAt": function () {},
   "swapChildren": function () {},
@@ -542,6 +584,8 @@ PIXI.Container.prototype = {
   "displayObjectUpdateTransform": function () {},
   "toGlobal": function () {},
   "toLocal": function () {},
+  "setParent": function () {},
+  "setTransform": function () {},
   "_cacheAsBitmap": function () {},
   "_originalRenderWebGL": function () {},
   "_originalRenderCanvas": function () {},
@@ -564,6 +608,11 @@ PIXI.Container.prototype = {
   "defaultCursor": function () {},
   "_over": function () {},
   "_touchDown": function () {},
+  "accessible": function () {},
+  "accessibleTitle": function () {},
+  "tabIndex": function () {},
+  "_accessibleActive": function () {},
+  "_accessibleDiv": function () {},
   "_events": function () {},
   "listeners": function () {},
   "emit": function () {},
@@ -585,6 +634,7 @@ PIXI.Sprite.prototype = {
   "_renderCanvas": function () {},
   "destroy": function () {},
   "setTexture": function () {},
+  "onChildrenChange": function () {},
   "addChild": function () {},
   "addChildAt": function () {},
   "swapChildren": function () {},
@@ -604,6 +654,8 @@ PIXI.Sprite.prototype = {
   "displayObjectUpdateTransform": function () {},
   "toGlobal": function () {},
   "toLocal": function () {},
+  "setParent": function () {},
+  "setTransform": function () {},
   "_cacheAsBitmap": function () {},
   "_originalRenderWebGL": function () {},
   "_originalRenderCanvas": function () {},
@@ -626,6 +678,11 @@ PIXI.Sprite.prototype = {
   "defaultCursor": function () {},
   "_over": function () {},
   "_touchDown": function () {},
+  "accessible": function () {},
+  "accessibleTitle": function () {},
+  "tabIndex": function () {},
+  "_accessibleActive": function () {},
+  "_accessibleDiv": function () {},
   "_events": function () {},
   "listeners": function () {},
   "emit": function () {},
@@ -642,16 +699,17 @@ PIXI.ParticleContainer.prototype = {
   "setProperties": function () {},
   "updateTransform": function () {},
   "renderWebGL": function () {},
-  "addChildAt": function () {},
-  "removeChildAt": function () {},
+  "onChildrenChange": function () {},
   "renderCanvas": function () {},
   "destroy": function () {},
   "addChild": function () {},
+  "addChildAt": function () {},
   "swapChildren": function () {},
   "getChildIndex": function () {},
   "setChildIndex": function () {},
   "getChildAt": function () {},
   "removeChild": function () {},
+  "removeChildAt": function () {},
   "removeChildren": function () {},
   "generateTexture": function () {},
   "containerUpdateTransform": function () {},
@@ -664,6 +722,8 @@ PIXI.ParticleContainer.prototype = {
   "displayObjectUpdateTransform": function () {},
   "toGlobal": function () {},
   "toLocal": function () {},
+  "setParent": function () {},
+  "setTransform": function () {},
   "_cacheAsBitmap": function () {},
   "_originalRenderWebGL": function () {},
   "_originalRenderCanvas": function () {},
@@ -686,6 +746,11 @@ PIXI.ParticleContainer.prototype = {
   "defaultCursor": function () {},
   "_over": function () {},
   "_touchDown": function () {},
+  "accessible": function () {},
+  "accessibleTitle": function () {},
+  "tabIndex": function () {},
+  "_accessibleActive": function () {},
+  "_accessibleDiv": function () {},
   "_events": function () {},
   "listeners": function () {},
   "emit": function () {},
@@ -739,6 +804,7 @@ PIXI.Text.prototype = {
   "getLocalBounds": function () {},
   "containsPoint": function () {},
   "setTexture": function () {},
+  "onChildrenChange": function () {},
   "addChild": function () {},
   "addChildAt": function () {},
   "swapChildren": function () {},
@@ -757,6 +823,8 @@ PIXI.Text.prototype = {
   "displayObjectUpdateTransform": function () {},
   "toGlobal": function () {},
   "toLocal": function () {},
+  "setParent": function () {},
+  "setTransform": function () {},
   "_cacheAsBitmap": function () {},
   "_originalRenderWebGL": function () {},
   "_originalRenderCanvas": function () {},
@@ -779,6 +847,11 @@ PIXI.Text.prototype = {
   "defaultCursor": function () {},
   "_over": function () {},
   "_touchDown": function () {},
+  "accessible": function () {},
+  "accessibleTitle": function () {},
+  "tabIndex": function () {},
+  "_accessibleActive": function () {},
+  "_accessibleDiv": function () {},
   "_events": function () {},
   "listeners": function () {},
   "emit": function () {},
@@ -816,6 +889,7 @@ PIXI.Graphics.prototype = {
   "updateLocalBounds": function () {},
   "drawShape": function () {},
   "destroy": function () {},
+  "onChildrenChange": function () {},
   "addChild": function () {},
   "addChildAt": function () {},
   "swapChildren": function () {},
@@ -835,6 +909,8 @@ PIXI.Graphics.prototype = {
   "displayObjectUpdateTransform": function () {},
   "toGlobal": function () {},
   "toLocal": function () {},
+  "setParent": function () {},
+  "setTransform": function () {},
   "_cacheAsBitmap": function () {},
   "_originalRenderWebGL": function () {},
   "_originalRenderCanvas": function () {},
@@ -857,6 +933,11 @@ PIXI.Graphics.prototype = {
   "defaultCursor": function () {},
   "_over": function () {},
   "_touchDown": function () {},
+  "accessible": function () {},
+  "accessibleTitle": function () {},
+  "tabIndex": function () {},
+  "_accessibleActive": function () {},
+  "_accessibleDiv": function () {},
   "_events": function () {},
   "listeners": function () {},
   "emit": function () {},
@@ -991,8 +1072,8 @@ PIXI.CanvasRenderer.prototype = {
   "render": function () {},
   "destroy": function () {},
   "renderDisplayObject": function () {},
-  "_mapBlendModes": function () {},
   "resize": function () {},
+  "_mapBlendModes": function () {},
   "_events": function () {},
   "listeners": function () {},
   "emit": function () {},
@@ -1030,6 +1111,20 @@ PIXI.CanvasRenderer.__plugins.interaction.prototype = {
   "returnTouchData": function () {},
   "destroy": function () {}
 };
+PIXI.CanvasRenderer.__plugins.accessibility.prototype = {
+  "activate": function () {},
+  "deactivate": function () {},
+  "updateAccessibleObjects": function () {},
+  "update": function () {},
+  "capHitArea": function () {},
+  "addChild": function () {},
+  "_onClick": function () {},
+  "_onFocus": function () {},
+  "_onFocusOut": function () {},
+  "_onKeyDown": function () {},
+  "_onMouseMove": function () {},
+  "destroy": function () {}
+};
 PIXI.CanvasBuffer.prototype = {
   "clear": function () {},
   "resize": function () {},
@@ -1051,7 +1146,7 @@ PIXI.WebGLRenderer.prototype = {
   "handleContextLost": function () {},
   "handleContextRestored": function () {},
   "destroy": function () {},
-  "_mapBlendModes": function () {},
+  "_mapGlModes": function () {},
   "_events": function () {},
   "listeners": function () {},
   "emit": function () {},
@@ -1142,6 +1237,24 @@ PIXI.WebGLRenderer.__plugins.mesh.prototype = {
   "destroy": function () {},
   "stop": function () {}
 };
+PIXI.WebGLRenderer.__plugins.accessibility.prototype = {
+  "activate": function () {},
+  "deactivate": function () {},
+  "updateAccessibleObjects": function () {},
+  "update": function () {},
+  "capHitArea": function () {},
+  "addChild": function () {},
+  "_onClick": function () {},
+  "_onFocus": function () {},
+  "_onFocusOut": function () {},
+  "_onKeyDown": function () {},
+  "_onMouseMove": function () {},
+  "destroy": function () {}
+};
+PIXI.WebGLManager.prototype = {
+  "onContextChange": function () {},
+  "destroy": function () {}
+};
 PIXI.ShaderManager.prototype = {
   "constructor": function () {},
   "initPlugins": function () {},
@@ -1174,6 +1287,42 @@ PIXI.Shader.prototype = {
   "destroy": function () {},
   "_glCompile": function () {}
 };
+PIXI.TextureShader.prototype = {
+  "constructor": function () {},
+  "init": function () {},
+  "cacheUniformLocations": function () {},
+  "cacheAttributeLocations": function () {},
+  "compile": function () {},
+  "syncUniform": function () {},
+  "syncUniforms": function () {},
+  "initSampler2D": function () {},
+  "destroy": function () {},
+  "_glCompile": function () {}
+};
+PIXI.PrimitiveShader.prototype = {
+  "constructor": function () {},
+  "init": function () {},
+  "cacheUniformLocations": function () {},
+  "cacheAttributeLocations": function () {},
+  "compile": function () {},
+  "syncUniform": function () {},
+  "syncUniforms": function () {},
+  "initSampler2D": function () {},
+  "destroy": function () {},
+  "_glCompile": function () {}
+};
+PIXI.ComplexPrimitiveShader.prototype = {
+  "constructor": function () {},
+  "init": function () {},
+  "cacheUniformLocations": function () {},
+  "cacheAttributeLocations": function () {},
+  "compile": function () {},
+  "syncUniform": function () {},
+  "syncUniforms": function () {},
+  "initSampler2D": function () {},
+  "destroy": function () {},
+  "_glCompile": function () {}
+};
 PIXI.ObjectRenderer.prototype = {
   "constructor": function () {},
   "start": function () {},
@@ -1196,6 +1345,18 @@ PIXI.AbstractFilter.prototype = {
   "applyFilter": function () {},
   "syncUniform": function () {}
 };
+PIXI.FXAAFilter.prototype = {
+  "constructor": function () {},
+  "applyFilter": function () {},
+  "getShader": function () {},
+  "syncUniform": function () {}
+};
+PIXI.SpriteMaskFilter.prototype = {
+  "constructor": function () {},
+  "applyFilter": function () {},
+  "getShader": function () {},
+  "syncUniform": function () {}
+};
 PIXI.extras.MovieClip.prototype = {
   "constructor": function () {},
   "stop": function () {},
@@ -1211,6 +1372,7 @@ PIXI.extras.MovieClip.prototype = {
   "containsPoint": function () {},
   "_renderCanvas": function () {},
   "setTexture": function () {},
+  "onChildrenChange": function () {},
   "addChild": function () {},
   "addChildAt": function () {},
   "swapChildren": function () {},
@@ -1230,6 +1392,8 @@ PIXI.extras.MovieClip.prototype = {
   "displayObjectUpdateTransform": function () {},
   "toGlobal": function () {},
   "toLocal": function () {},
+  "setParent": function () {},
+  "setTransform": function () {},
   "_cacheAsBitmap": function () {},
   "_originalRenderWebGL": function () {},
   "_originalRenderCanvas": function () {},
@@ -1252,6 +1416,11 @@ PIXI.extras.MovieClip.prototype = {
   "defaultCursor": function () {},
   "_over": function () {},
   "_touchDown": function () {},
+  "accessible": function () {},
+  "accessibleTitle": function () {},
+  "tabIndex": function () {},
+  "_accessibleActive": function () {},
+  "_accessibleDiv": function () {},
   "_events": function () {},
   "listeners": function () {},
   "emit": function () {},
@@ -1273,6 +1442,7 @@ PIXI.extras.TilingSprite.prototype = {
   "destroy": function () {},
   "getLocalBounds": function () {},
   "setTexture": function () {},
+  "onChildrenChange": function () {},
   "addChild": function () {},
   "addChildAt": function () {},
   "swapChildren": function () {},
@@ -1292,6 +1462,8 @@ PIXI.extras.TilingSprite.prototype = {
   "displayObjectUpdateTransform": function () {},
   "toGlobal": function () {},
   "toLocal": function () {},
+  "setParent": function () {},
+  "setTransform": function () {},
   "_cacheAsBitmap": function () {},
   "_originalRenderWebGL": function () {},
   "_originalRenderCanvas": function () {},
@@ -1314,6 +1486,11 @@ PIXI.extras.TilingSprite.prototype = {
   "defaultCursor": function () {},
   "_over": function () {},
   "_touchDown": function () {},
+  "accessible": function () {},
+  "accessibleTitle": function () {},
+  "tabIndex": function () {},
+  "_accessibleActive": function () {},
+  "_accessibleDiv": function () {},
   "_events": function () {},
   "listeners": function () {},
   "emit": function () {},
@@ -1332,6 +1509,7 @@ PIXI.extras.BitmapText.prototype = {
   "getLocalBounds": function () {},
   "validate": function () {},
   "setText": function () {},
+  "onChildrenChange": function () {},
   "addChild": function () {},
   "addChildAt": function () {},
   "swapChildren": function () {},
@@ -1354,6 +1532,8 @@ PIXI.extras.BitmapText.prototype = {
   "displayObjectUpdateTransform": function () {},
   "toGlobal": function () {},
   "toLocal": function () {},
+  "setParent": function () {},
+  "setTransform": function () {},
   "_cacheAsBitmap": function () {},
   "_originalRenderWebGL": function () {},
   "_originalRenderCanvas": function () {},
@@ -1376,6 +1556,11 @@ PIXI.extras.BitmapText.prototype = {
   "defaultCursor": function () {},
   "_over": function () {},
   "_touchDown": function () {},
+  "accessible": function () {},
+  "accessibleTitle": function () {},
+  "tabIndex": function () {},
+  "_accessibleActive": function () {},
+  "_accessibleDiv": function () {},
   "_events": function () {},
   "listeners": function () {},
   "emit": function () {},
@@ -1386,23 +1571,6 @@ PIXI.extras.BitmapText.prototype = {
   "off": function () {},
   "addListener": function () {},
   "setMaxListeners": function () {}
-};
-PIXI.filters.AbstractFilter.prototype = {
-  "getShader": function () {},
-  "applyFilter": function () {},
-  "syncUniform": function () {}
-};
-PIXI.filters.FXAAFilter.prototype = {
-  "constructor": function () {},
-  "applyFilter": function () {},
-  "getShader": function () {},
-  "syncUniform": function () {}
-};
-PIXI.filters.SpriteMaskFilter.prototype = {
-  "constructor": function () {},
-  "applyFilter": function () {},
-  "getShader": function () {},
-  "syncUniform": function () {}
 };
 PIXI.filters.AsciiFilter.prototype = {
   "constructor": function () {},
@@ -1520,13 +1688,6 @@ PIXI.filters.InvertFilter.prototype = {
 };
 PIXI.filters.NoiseFilter.prototype = {
   "constructor": function () {},
-  "getShader": function () {},
-  "applyFilter": function () {},
-  "syncUniform": function () {}
-};
-PIXI.filters.NormalMapFilter.prototype = {
-  "constructor": function () {},
-  "onTextureLoaded": function () {},
   "getShader": function () {},
   "applyFilter": function () {},
   "syncUniform": function () {}
@@ -1683,6 +1844,8 @@ PIXI.mesh.Mesh.prototype = {
   "renderMeshFlat": function () {},
   "_onTextureUpdate": function () {},
   "getBounds": function () {},
+  "containsPoint": function () {},
+  "onChildrenChange": function () {},
   "addChild": function () {},
   "addChildAt": function () {},
   "swapChildren": function () {},
@@ -1704,6 +1867,8 @@ PIXI.mesh.Mesh.prototype = {
   "displayObjectUpdateTransform": function () {},
   "toGlobal": function () {},
   "toLocal": function () {},
+  "setParent": function () {},
+  "setTransform": function () {},
   "_cacheAsBitmap": function () {},
   "_originalRenderWebGL": function () {},
   "_originalRenderCanvas": function () {},
@@ -1726,6 +1891,85 @@ PIXI.mesh.Mesh.prototype = {
   "defaultCursor": function () {},
   "_over": function () {},
   "_touchDown": function () {},
+  "accessible": function () {},
+  "accessibleTitle": function () {},
+  "tabIndex": function () {},
+  "_accessibleActive": function () {},
+  "_accessibleDiv": function () {},
+  "_events": function () {},
+  "listeners": function () {},
+  "emit": function () {},
+  "on": function () {},
+  "once": function () {},
+  "removeListener": function () {},
+  "removeAllListeners": function () {},
+  "off": function () {},
+  "addListener": function () {},
+  "setMaxListeners": function () {}
+};
+PIXI.mesh.Plane.prototype = {
+  "constructor": function () {},
+  "refresh": function () {},
+  "_onTextureUpdate": function () {},
+  "_renderWebGL": function () {},
+  "_renderCanvas": function () {},
+  "_renderCanvasTriangleMesh": function () {},
+  "_renderCanvasTriangles": function () {},
+  "_renderCanvasDrawTriangle": function () {},
+  "renderMeshFlat": function () {},
+  "getBounds": function () {},
+  "containsPoint": function () {},
+  "onChildrenChange": function () {},
+  "addChild": function () {},
+  "addChildAt": function () {},
+  "swapChildren": function () {},
+  "getChildIndex": function () {},
+  "setChildIndex": function () {},
+  "getChildAt": function () {},
+  "removeChild": function () {},
+  "removeChildAt": function () {},
+  "removeChildren": function () {},
+  "generateTexture": function () {},
+  "updateTransform": function () {},
+  "containerUpdateTransform": function () {},
+  "containerGetBounds": function () {},
+  "getLocalBounds": function () {},
+  "renderWebGL": function () {},
+  "renderCanvas": function () {},
+  "destroy": function () {},
+  "getChildByName": function () {},
+  "displayObjectUpdateTransform": function () {},
+  "toGlobal": function () {},
+  "toLocal": function () {},
+  "setParent": function () {},
+  "setTransform": function () {},
+  "_cacheAsBitmap": function () {},
+  "_originalRenderWebGL": function () {},
+  "_originalRenderCanvas": function () {},
+  "_originalUpdateTransform": function () {},
+  "_originalHitTest": function () {},
+  "_originalDestroy": function () {},
+  "_cachedSprite": function () {},
+  "_renderCachedWebGL": function () {},
+  "_initCachedDisplayObject": function () {},
+  "_renderCachedCanvas": function () {},
+  "_initCachedDisplayObjectCanvas": function () {},
+  "_getCachedBounds": function () {},
+  "_destroyCachedDisplayObject": function () {},
+  "_cacheAsBitmapDestroy": function () {},
+  "name": function () {},
+  "getGlobalPosition": function () {},
+  "interactive": function () {},
+  "buttonMode": function () {},
+  "interactiveChildren": function () {},
+  "defaultCursor": function () {},
+  "_over": function () {},
+  "_touchDown": function () {},
+  "accessible": function () {},
+  "accessibleTitle": function () {},
+  "tabIndex": function () {},
+  "_accessibleActive": function () {},
+  "_accessibleDiv": function () {},
   "_events": function () {},
   "listeners": function () {},
   "emit": function () {},
@@ -1749,6 +1993,8 @@ PIXI.mesh.Rope.prototype = {
   "_renderCanvasDrawTriangle": function () {},
   "renderMeshFlat": function () {},
   "getBounds": function () {},
+  "containsPoint": function () {},
+  "onChildrenChange": function () {},
   "addChild": function () {},
   "addChildAt": function () {},
   "swapChildren": function () {},
@@ -1769,6 +2015,8 @@ PIXI.mesh.Rope.prototype = {
   "displayObjectUpdateTransform": function () {},
   "toGlobal": function () {},
   "toLocal": function () {},
+  "setParent": function () {},
+  "setTransform": function () {},
   "_cacheAsBitmap": function () {},
   "_originalRenderWebGL": function () {},
   "_originalRenderCanvas": function () {},
@@ -1791,6 +2039,11 @@ PIXI.mesh.Rope.prototype = {
   "defaultCursor": function () {},
   "_over": function () {},
   "_touchDown": function () {},
+  "accessible": function () {},
+  "accessibleTitle": function () {},
+  "tabIndex": function () {},
+  "_accessibleActive": function () {},
+  "_accessibleDiv": function () {},
   "_events": function () {},
   "listeners": function () {},
   "emit": function () {},
@@ -1823,4 +2076,18 @@ PIXI.mesh.MeshShader.prototype = {
   "initSampler2D": function () {},
   "destroy": function () {},
   "_glCompile": function () {}
+};
+PIXI.accessibility.AccessibilityManager.prototype = {
+  "activate": function () {},
+  "deactivate": function () {},
+  "updateAccessibleObjects": function () {},
+  "update": function () {},
+  "capHitArea": function () {},
+  "addChild": function () {},
+  "_onClick": function () {},
+  "_onFocus": function () {},
+  "_onFocusOut": function () {},
+  "_onKeyDown": function () {},
+  "_onMouseMove": function () {},
+  "destroy": function () {}
 };

@@ -1,7 +1,7 @@
 # cljsjs/sizzle
 [](dependency)
 ```clojure
-[cljsjs/sizzle "2.3.0"] ;; latest release
+[cljsjs/sizzle "2.3.0-0"] ;; latest release
 ```
 [](/dependency)
 
