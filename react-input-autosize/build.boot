@@ -5,7 +5,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.6.5")
+(def +lib-version+ "0.6.10")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -24,7 +24,7 @@
 (deftask package []
   (comp
     (download :url (str "https://github.com/JedWatson/react-input-autosize/archive/v" +lib-version+ ".zip")
-	      :checksum "C4CEE37EB3F83923578893CD567F17F2"	
+	      :checksum "20BEC1DAB403CEF4828777334AE7BFB0"	
   	      :unzip true)
 
     (sift :move {#"^react-input-autosize.*[/ \\]dist[/ \\]react-input-autosize.js$" "cljsjs/react-input-autosize/development/react-input-autosize.inc.js"
