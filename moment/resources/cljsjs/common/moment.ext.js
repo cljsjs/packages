@@ -519,3 +519,8 @@ Moment.prototype.locale = function() {};
  * @since 2.7.0
  */
 Moment.prototype.relativeTimeThreshold = function() {};
+
+/**
+ * @since 2.9.0
+ */
+Moment.prototype.utcOffset = function() {};
