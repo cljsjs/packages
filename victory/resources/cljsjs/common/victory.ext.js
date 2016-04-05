@@ -1,5 +1,6 @@
 var Victory = {
   "VictoryAnimation": function() {},
+  "VictoryArea": function() {},
   "VictoryAxis": function() {},
   "VictoryBar": function() {},
   "VictoryChart": function() {},
