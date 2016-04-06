@@ -1,12 +1,10 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.11" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.1.2")
+(def +lib-version+ "2.1.4")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -23,4 +21,6 @@
     (sift :move {#"^web-animations-js-([\d\.]*)/web-animations.min.js$"
                  "cljsjs/web-animations/development/web-animations-js.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.web-animations")))
+    (deps-cljs :name "cljsjs.web-animations")
+    (pom)
+    (jar)))

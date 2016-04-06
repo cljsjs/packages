@@ -11,6 +11,7 @@ vg.View.prototype.render = function () {}
 vg.View.prototype.update = function () {}
 vg.View.prototype.on = function () {}
 vg.View.prototype.off = function () {}
+vg.View.prototype.toImageUrl = function () {}
 
 /**
  * @param {(string|Object)} spec

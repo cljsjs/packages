@@ -1,12 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "1.1.0-0")
+(def +lib-version+ "1.1.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/mustache
@@ -20,10 +19,12 @@
 
 (deftask package []
   (comp
-    (download :url      "https://github.com/janl/mustache.js/archive/v1.1.0.zip"
+    (download :url      (format "https://github.com/janl/mustache.js/archive/v%s.zip" +lib-version+)
               :checksum "fe10b20e3a4cea190725ebbbbe5a5890"
               :unzip    true)
     (sift :move {#"^mustache.js-\d.\d.\d/mustache.js$"     "cljsjs/mustache/development/mustache.inc.js"
                  #"^mustache.js-\d.\d.\d/mustache.min.js$" "cljsjs/mustache/production/mustache.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.mustache")))
+    (deps-cljs :name "cljsjs.mustache")
+    (pom)
+    (jar)))

@@ -25,11 +25,6 @@ function moment() {};
  */
 Moment.LocaleData;
 
-/**
- * @nosideeffects
- * @typedef {(function(number):!string)}
-*/
-Moment.LocaleData.ordinal = function () {};
 
 Moment.LocaleData.months = function() {};
 Moment.LocaleData.monthsShort = function() {};
@@ -60,7 +55,7 @@ Moment.LocaleData.prototype.firstDayOfWeek = function() {};
 Moment.LocaleData.firstDayOfYear = function() {};
 
 /**
- * @type {(function():!Moment.LocaleData|function(string):!Moment.LocaleData}
+ * @type {(function():!Moment.LocaleData|function(string):!Moment.LocaleData)}
  */
 moment.localeData = function() {};
 
@@ -283,6 +278,20 @@ Moment.prototype.from = function() {};
 
 /**
  * @nosideeffects
+ * @since 1.0.0
+ * @type {function(!boolean=):!Moment}
+ */
+Moment.prototype.toNow = function() {};
+
+/**
+ * @nosideeffects
+ * @since 1.0.0
+ * @type {function(!(Moment|string|number|Date|Array.<!number>), !boolean=):!Moment}
+ */
+Moment.prototype.to = function() {};
+
+/**
+ * @nosideeffects
  * @since 1.3.0
  * @type {function():!Moment}
  */
@@ -353,10 +362,17 @@ Moment.prototype.isAfter = function() {};
 
 /**
  * @nosideeffects
+ * @since 2.9.0
+ * @type {function(!(Moment|string|number|Date|Array.<!number>), !(Moment|string|number|Date|Array.<!number>), !string=):!boolean}
+ */
+Moment.prototype.isBetween = function() {};
+
+/**
+ * @nosideeffects
  * @since 1.0.0
  * @type {function():!boolean}
  */
-Moment.prototype.isLearYear = function() {};
+Moment.prototype.isLeapYear = function() {};
 
 /**
  * @nosideeffects
@@ -498,3 +514,13 @@ Moment.prototype.max = function() {};
  * @since 2.8.1
  */
 Moment.prototype.locale = function() {};
+
+/**
+ * @since 2.7.0
+ */
+Moment.prototype.relativeTimeThreshold = function() {};
+
+/**
+ * @since 2.9.0
+ */
+Moment.prototype.utcOffset = function() {};

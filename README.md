@@ -1,7 +1,6 @@
 # CLJSJS Packages
 
-<img src="https://dl.dropboxusercontent.com/u/453692/cljsjs-logo.png"
-  alt="CLJSJS logo" align="right" />
+<img src="http://cljsjs.github.io/cljsjs.png" alt="CLJSJS logo" align="right" />
 
 CLJSJS is an effort to package Javascript libraries to be able to use
 them from within Clojurescript.
@@ -21,12 +20,18 @@ respective `README` files.**
 The wiki of this repo is used for community maintained documentation:
 
 - [Why CLJSJS exists](https://github.com/cljsjs/packages/wiki)
+- [Using Packages](https://github.com/cljsjs/packages/wiki/Using-Packages)
 - [Creating Packages](https://github.com/cljsjs/packages/wiki/Creating-Packages)
 - [Creating Externs](https://github.com/cljsjs/packages/wiki/Creating-Externs)
 
 If you'd like to contribute there's a
 [small section on that](https://github.com/cljsjs/packages/wiki#contribute)
 as well.
+
+## For information and help
+
+[Clojurians slack](https://clojurians.slack.com/) ([join](http://clojurians.net/))
+has a channel [#cljsjs](https://clojurians.slack.com/messages/cljsjs/) for talk about Cljsjs.
 
 [fileset-doc]: https://github.com/boot-clj/boot/wiki/Filesets
 [boot-cljsjs]: https://github.com/cljsjs/boot-cljsjs

@@ -1,0 +1,32 @@
+machine:
+  java:
+    version: oraclejdk8
+  environment:
+    BOOT_VERSION: 2.5.5
+    _JAVA_OPTIONS: "-Xms512m -Xmx1024m"
+dependencies:
+  cache_directories:
+    - "~/.boot/cache/lib"
+    - "~/.boot/cache/bin"
+  pre:
+    - curl -L https://github.com/boot-clj/boot-bin/releases/download/latest/boot.sh -o ~/bin/boot
+    - chmod +x ~/bin/boot
+    - mkdir -p ~/.boot
+    - cp profile.boot ~/.boot/profile.boot
+  override:
+    # Run tests
+    # Run in dependency step to cache the deps
+    - ./test-changed.sh
+test:
+  override:
+    - echo 1
+deployment:
+  master:
+    branch: master
+    commands:
+      - echo -e "use-agent\ndefault-key cljsjs.robot@gmail.com\npassphrase $GPG_PASSPHRASE" >> ~/.gnupg/gpg.conf
+        # CircleCI doesn't support newlines in vars so newlines are coded as "|"
+      - echo -e $GPG_KEY | tr "|" "\n" > gpg.key
+      - gpg --allow-secret-key-import --import gpg.key
+      - rm gpg.key
+      - ./deploy-changed.sh

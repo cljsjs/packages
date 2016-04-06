@@ -1,13 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "2.9.0-1")
-(bootlaces! +version+)
+(def +lib-version+ "2.10.6")
+(def +version+ (str +lib-version+ "-4"))
 
 (task-options!
   push {:ensure-clean false}
@@ -43,8 +41,8 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/moment/moment/archive/2.9.0.zip"
-              :checksum "a83fa34d023f019dcab6ff3de2ae28e0"
+    (download :url (format "https://github.com/moment/moment/archive/%s.zip" +lib-version+)
+              :checksum "104b02737546e79505172590f4ebc523"
               :unzip true)
     ; Locale files are not immediately named .inc.js as we don't want deps-cljs to find them
     (sift :move {#"^moment-[^\/]*/moment\.js"          "cljsjs/development/moment.inc.js"
@@ -53,4 +51,6 @@
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.moment")
     (sift :move {#"^cljsjs/common/locale/(.*)\.js" "cljsjs/common/locale/$1.inc.js"})
-    (generate-locale-deps)))
+    (generate-locale-deps)
+    (pom)
+    (jar)))

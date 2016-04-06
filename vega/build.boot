@@ -1,16 +1,13 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.11" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]
-                  [cljsjs/d3 "3.5.5-3"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]
+                  [cljsjs/d3 "3.5.7-0"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def vega-version "2.0.0")
+(def +lib-version+ "2.5.0")
 
-(def +version+ (str vega-version "-0"))
-(bootlaces! +version+)
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom {:project     'cljsjs/vega
@@ -23,11 +20,13 @@
   (task-options! push {:ensure-branch nil})
   (comp
     (download
-      :url (str "https://github.com/vega/vega/archive/v" vega-version ".zip")
+      :url (str "https://github.com/vega/vega/archive/v" +lib-version+ ".zip")
       :unzip true
-      :checksum "27AE192913D71C7BFCABA7ECAB80D0B1")
-    (sift :move {(re-pattern (str "^vega-" vega-version "/vega.js$")) "cljsjs/development/vega.inc.js"
-                 (re-pattern (str "^vega-" vega-version "/vega.min.js$")) "cljsjs/production/vega.min.inc.js"})
+      :checksum "5AFB54BE6EBACB09A8EC84432F28E791")
+    (sift :move {(re-pattern (str "^vega-" +lib-version+ "/vega.js$")) "cljsjs/development/vega.inc.js"
+                 (re-pattern (str "^vega-" +lib-version+ "/vega.min.js$")) "cljsjs/production/vega.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.vega"
-               :requires ["cljsjs.d3"])))
+               :requires ["cljsjs.d3"])
+    (pom)
+    (jar)))

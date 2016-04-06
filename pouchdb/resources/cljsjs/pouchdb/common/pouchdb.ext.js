@@ -47,7 +47,6 @@ var PouchDB = {
     "removeListener": function () {},
     "setMaxListeners": function () {},
     "parseAdapter": function () {},
-    "destroy": function () {},
     "adapter": function () {},
     "plugin": function () {},
     "defaults": function () {},
@@ -266,4 +265,6 @@ var PouchDB = {
     "replicate": function () {},
     "sync": function () {},
     "version": {}
-}
+};
+PouchDB.replicate.to = function() {};
+PouchDB.replicate.from = function() {};

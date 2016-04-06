@@ -1,14 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.10" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0"  :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0"  :scope "test"]
                   [cljsjs/react       "0.13.0-0"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.13.2-0")
-(bootlaces! +version+)
+(def +lib-version+ "0.13.2")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/react-router
@@ -19,7 +17,7 @@
        :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
 
 (deftask download-react-router []
-  (download :url      "https://github.com/rackt/react-router/archive/v0.13.2.zip"
+  (download :url      (format "https://github.com/rackt/react-router/archive/v%s.zip" +lib-version+)
             :checksum "e157777e2d854994aac43448b278b245"
             :unzip    true))
 
@@ -32,4 +30,6 @@
                  "cljsjs/react-router/production/react-router.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-router"
-               :requires ["cljsjs.react"])))
+               :requires ["cljsjs.react"])
+    (pom)
+    (jar)))

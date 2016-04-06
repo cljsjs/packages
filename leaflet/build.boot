@@ -1,12 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.7.3-4")
+(def +lib-version+ "0.7.7")
+(def +version+ (str +lib-version+ "-2"))
 
 (task-options!
  pom  {:project     'cljsjs/leaflet
@@ -20,12 +19,14 @@
 
 (deftask package []
   (comp
-    (download :url      "https://github.com/Leaflet/Leaflet/archive/v0.7.3.zip"
-              :checksum "8C9DFA841C49E96D0AF830713F945510"
+    (download :url      (str "https://github.com/Leaflet/Leaflet/archive/v" +lib-version+ ".zip")
+              :checksum "4FF0060F12AEC757C6DAA1D7AD1BD88E"
               :unzip    true)
     (sift :move {#"^Leaflet-(.*)/dist/leaflet-src.js"    "cljsjs/development/leaflet.inc.js"
                  #"^Leaflet-(.*)/dist/leaflet.js"        "cljsjs/production/leaflet.min.inc.js"
                  #"^Leaflet-(.*)/dist/leaflet.css"       "cljsjs/common/leaflet.inc.css"
                  #"^Leaflet-(.*)/dist/images/(.*\.png)$" "cljsjs/common/images/$2"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.leaflet")))
+    (deps-cljs :name "cljsjs.leaflet")
+    (pom)
+    (jar)))

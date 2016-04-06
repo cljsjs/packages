@@ -1,14 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.10" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def auth0-version "6.3.0")
-(def +version+ (str auth0-version "-0"))
-(bootlaces! +version+)
+(def +lib-version+ "6.3.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom { :project     'cljsjs/auth0
@@ -20,10 +17,12 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/auth0/auth0.js/archive/v6.3.0.zip"
+    (download :url (format "https://github.com/auth0/auth0.js/archive/v%s.zip" +lib-version+)
               :checksum "70f3282eea62686fdda6afff713e2a9d"
               :unzip true)
     (sift :move { #"^auth0\.js.*/build/auth0\.js$"      "cljsjs/auth0/development/auth0.inc.js"
                   #"^auth0\.js.*/build/auth0\.min\.js$" "cljsjs/auth0/production/auth0.min.inc.js" })
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.auth0")))
+    (deps-cljs :name "cljsjs.auth0")
+    (pom)
+    (jar)))

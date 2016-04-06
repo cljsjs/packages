@@ -1,13 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.10" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.0"  :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.0"  :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.8.0-0")
-(bootlaces! +version+)
+(def +lib-version+ "0.8.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/peg
@@ -19,11 +17,13 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/pegjs/pegjs/releases/download/v0.8.0/peg-0.8.0.js"
+    (download :url (format "https://github.com/pegjs/pegjs/releases/download/v%s/peg-%s.js" +lib-version+)
               :checksum "992f208961e69128046411f881776c5f")
-    (download :url "https://github.com/pegjs/pegjs/releases/download/v0.8.0/peg-0.8.0.min.js"
+    (download :url (format "https://github.com/pegjs/pegjs/releases/download/v%s/peg-%s.min.js" +lib-version+)
               :checksum "abd4f4b562bcc818b5ef842c756f386e")
     (sift :move {#"^peg-0\.8\.0\.js"      "cljsjs/peg/development/peg.inc.js"
                  #"^peg-0\.8\.0\.min\.js" "cljsjs/peg/production/peg.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.peg")))
+    (deps-cljs :name "cljsjs.peg")
+    (pom)
+    (jar)))

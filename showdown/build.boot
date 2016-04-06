@@ -1,13 +1,11 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[adzerk/bootlaces   "0.1.10" :scope "test"]
-                 [cljsjs/boot-cljsjs "0.5.0"  :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.5.0"  :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.4.0-1")
-(bootlaces! +version+)
+(def +lib-version+ "0.4.0")
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom {:project     'cljsjs/showdown
@@ -19,7 +17,7 @@
 
 (deftask package []
   (comp
-   (download  :url      "https://github.com/showdownjs/showdown/archive/0.4.0.zip"
+   (download  :url      (format "https://github.com/showdownjs/showdown/archive/%s.zip" +lib-version+)
               :checksum "0fe8b927314a3e072ccb12d5e9de0319"
               :unzip    true)
    (sift      :move     {#"^showdown-(.*)/compressed/Showdown.js"
@@ -27,4 +25,6 @@
                          #"^showdown-(.*)/compressed/Showdown.min.js"
                          "cljsjs/showdown/production/showdown.min.inc.js"})
    (sift      :include  #{#"^cljsjs"})
-   (deps-cljs :name     "cljsjs.showdown")))
+   (deps-cljs :name     "cljsjs.showdown")
+   (pom)
+   (jar)))

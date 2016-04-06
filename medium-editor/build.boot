@@ -1,13 +1,11 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[adzerk/bootlaces   "0.1.11" :scope "test"]
-                 [cljsjs/boot-cljsjs "0.5.0"  :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.5.0"  :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "4.8.0-0")
-(bootlaces! +version+)
+(def +lib-version+ "5.15.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/medium-editor
@@ -19,8 +17,8 @@
 
 (deftask package []
   (comp
-   (download :url      "https://github.com/daviferreira/medium-editor/archive/4.8.0.zip"
-             :checksum "6ac7f17b9829a5968771b41636884e61"
+   (download :url      (format "https://github.com/daviferreira/medium-editor/archive/%s.zip" +lib-version+)
+             :checksum "AD7A8649C431775AF3EC193B7492909A"
              :unzip    true)
    (sift :move {#"^medium-editor-([\d\.]*)/dist/js/medium-editor\.js"
                 "cljsjs/medium_editor/development/medium-editor.inc.js" 
@@ -58,4 +56,6 @@
                 "cljsjs/medium_editor/common/themes/roman.min.css"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name     "cljsjs.medium-editor"
-              :requires [])))
+              :requires [])
+   (pom)
+   (jar)))
