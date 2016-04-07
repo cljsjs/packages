@@ -1,4 +1,4 @@
-# cljsjs/stripe
+# cljsjs/tabletop
 [](dependency)
 ```clojure
 [cljsjs/tabletop "1.4.3"] ;; latest release
