@@ -61,7 +61,7 @@ var MaterialIconToggle = {
 }
 
 var MaterialLayout = {
-    "toogleDrawer": function(){}
+    "toggleDrawer": function(){}
 }
 
 var MaterialMenu = {
