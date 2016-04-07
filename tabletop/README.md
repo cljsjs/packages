@@ -1,7 +1,7 @@
 # cljsjs/tabletop
 [](dependency)
 ```clojure
-[cljsjs/tabletop "1.4.3"] ;; latest release
+[cljsjs/tabletop "1.4.3-0"] ;; latest release
 ```
 [](/dependency)
 
