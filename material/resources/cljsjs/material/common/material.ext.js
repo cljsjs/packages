@@ -36,3 +36,87 @@ var componentHandler = {
     "register": function () {},
     "downgradeElements": function () {}
 }
+
+var MaterialButton = {
+    "disable": function(){},
+    "enable": function(){}
+}
+
+var MaterialCheckbox = {
+    "checkToggleState": function(){},
+    "checkDisabled": function(){},
+    "disable": function(){},
+    "enable": function(){},
+    "check": function(){},
+    "uncheck": function(){}
+}
+
+var MaterialIconToggle = {
+    "checkToggleState": function(){},
+    "checkDisabled": function(){},
+    "disable": function(){},
+    "enable": function(){},
+    "check": function(){},
+    "uncheck": function(){}
+}
+
+var MaterialLayout = {
+    "toggleDrawer": function(){}
+}
+
+var MaterialMenu = {
+    "show": function(){},
+    "hide": function(){},
+    "toggle": function(){}
+}
+
+var MaterialProgress = {
+    "setProgress": function(){},
+    "setBuffer": function(){}
+}
+
+var MaterialRadio = {
+    "checkDisabled": function(){},
+    "checkToggleState": function(){},
+    "disable": function(){},
+    "enable": function(){},
+    "check": function(){},
+    "uncheck": function(){}
+}
+
+var MaterialSlider = {
+    "disable": function(){},
+    "enable": function(){},
+    "change": function(){}
+}
+
+var MaterialSnackbar = {
+    "showSnackbar": function(){}
+}
+
+var MaterialSpinner = {
+    "createLayer": function(){},
+    "stop": function(){},
+    "start": function(){}
+}
+
+var MaterialSwitch = {
+    "checkDisabled": function(){},
+    "checkToggleState": function(){},
+    "disable": function(){},
+    "enable": function(){},
+    "on": function(){},
+    "off": function(){}
+}
+
+var MaterialTextfield = {
+    "checkDisabled": function(){},
+    "checkFocus": function(){},
+    "checkValidity": function(){},
+    "checkDirty": function(){},
+    "disable": function(){},
+    "enable": function(){},
+    "change": function(){},
+    "focus": function(){},
+    "blur": function(){}
+}
