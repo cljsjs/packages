@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "6.1.8")
-(def +version+ (str +lib-version+ "-2"))
+(def +lib-version+ "7.0.1")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom  {:project     'cljsjs/bootstrap-slider
@@ -19,19 +19,25 @@
   (comp
     (download
       :url (str "https://github.com/seiyria/bootstrap-slider/archive/v" +lib-version+ ".zip")
-      :checksum "A4BE202DC6F33EAF926FC14C7867F032"
+      :checksum "BE79D8D2795A250252EE44BCD525ED99"
       :unzip true)
-    (sift :move {#"^bootstrap-slider-(.*)/dist/bootstrap-slider.js"
+    (sift :move {#"^bootstrap-slider-.*/dist/bootstrap-slider.js"
                  "cljsjs/bootstrap-slider/development/bootstrap-slider.inc.js"
 
-                 #"^bootstrap-slider-(.*)/dist/bootstrap-slider.min.js"
+                 #"^bootstrap-slider-.*/dist/bootstrap-slider.min.js"
                  "cljsjs/bootstrap-slider/production/bootstrap-slider.min.inc.js"
 
-                 #"^bootstrap-slider-(.*)/dist/css/bootstrap-slider.css"
+                 #"^bootstrap-slider-.*/dist/css/bootstrap-slider.css"
                  "cljsjs/bootstrap-slider/common/bootstrap-slider.css"
 
-                 #"^bootstrap-slider-(.*)/dist/css/bootstrap-slider.min.css"
-                 "cljsjs/bootstrap-slider/common/bootstrap-slider.min.css"})
+                 #"^bootstrap-slider-.*/dist/css/bootstrap-slider.min.css"
+                 "cljsjs/bootstrap-slider/common/bootstrap-slider.min.css"
+
+                 #"^bootstrap-slider-.*/src/less/(.*)\.less$"
+                 "cljsjs/bootstrap-slider/common/$1.less"
+
+                 #"^bootstrap-slider-.*/src/sass/(.*)\.scss$"
+                 "cljsjs/bootstrap-slider/common/$1.scss"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.bootstrap-slider")
     (pom)
