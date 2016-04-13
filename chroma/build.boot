@@ -18,7 +18,8 @@
 (deftask package []
   (comp
    (download :url (str "https://github.com/gka/chroma.js/archive/v" +lib-version+ ".zip")
-             :checksum "d19a64f11d845700c5e5c4a647882404")
+             :checksum "d19a64f11d845700c5e5c4a647882404"
+             :unzip true)
    (sift :move {#"chroma.js" "cljsjs/chroma/development/chroma.inc.js"
                 #"chroma.min.js" "cljsjs/chroma/production/chroma.min.inc.js"})
    (sift :include #{#"^cljsjs"})
