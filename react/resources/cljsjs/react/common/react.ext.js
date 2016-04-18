@@ -443,6 +443,11 @@ React.SyntheticEvent = function() {};
 React.SyntheticEvent.prototype.persist = function() {};
 
 /**
+ * @type {Object}
+ */
+React.SyntheticEvent.prototype.nativeEvent;
+
+/**
  * @type {Function}
  */
 React.SyntheticEvent.prototype.preventDefault;
