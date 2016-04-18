@@ -18,8 +18,7 @@ so:
 
 Here's a simple example of how to parse the contents of an `.ics` file:
 
-```
-
+```clojure
 (def ical-data
   (clojure.string/join 
    "\r\n"
