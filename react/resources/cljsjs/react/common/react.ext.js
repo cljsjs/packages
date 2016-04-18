@@ -445,11 +445,6 @@ React.SyntheticEvent.prototype.persist = function() {};
 /**
  * @type {Function}
  */
-React.SyntheticEvent.prototype.persist;
-
-/**
- * @type {Function}
- */
 React.SyntheticEvent.prototype.preventDefault;
 
 /**
