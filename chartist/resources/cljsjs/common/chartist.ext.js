@@ -38,7 +38,12 @@ var Chartist = {
   "createLabel": function () {},
   "getSeriesOption": function () {},
   "optionsProvider": function () {},
-  "Interpolation": {},
+  "Interpolation": {
+    "none": function () {},
+    "simple": function () {},
+    "cardinal": function () {},
+    "step": function () {},
+  }
   "EventEmitter": function () {},
   "Class": {},
   "Base": {
