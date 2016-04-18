@@ -43,7 +43,7 @@ var Chartist = {
     "simple": function () {},
     "cardinal": function () {},
     "step": function () {},
-  }
+  },
   "EventEmitter": function () {},
   "Class": {},
   "Base": {
