@@ -208,7 +208,7 @@ Chart.Tooltip.prototype = {
   "tooltipPosition": function () {},
   "hasValue": function () {}
 };
-"Color": function () {}
+var Color = {};
 Color.prototype = {
   "rgb": function () {},
   "hsl": function () {},
