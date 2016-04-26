@@ -1,7 +1,6 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.1" :scope "test"]]
-  :NODE_ENV "production")
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.1" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
