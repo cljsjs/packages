@@ -8,7 +8,7 @@
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
-  pom {:project 'cljsjs/chart
+  pom {:project 'cljsjs/chartjs
        :version +version+
        :description "Chart.js - Simple yet flexible JavaScript charting for designers & developers
 "
@@ -25,9 +25,9 @@
     (download :url (cdn-ver "Chart.js"))
     (download :url (cdn-ver "Chart.min.js"))
     (sift :move
-          {#"Chart.js" "cljsjs/chart/development/Chart.inc.js"
-           #"Chart.min.js" "cljsjs/chart/production/Chart.min.inc.js"})
+          {#"Chart.js" "cljsjs/chartjs/development/Chart.inc.js"
+           #"Chart.min.js" "cljsjs/chartjs/production/Chart.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.chart")
+    (deps-cljs :name "cljsjs.chartjs")
     (pom)
     (jar)))
