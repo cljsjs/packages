@@ -6,3 +6,4 @@
 ```
 [](/dependency)
 
+CLJSJS package for [Chart.js](http://www.chartjs.org/). See http://www.chartjs.org/docs/ for documentation.
