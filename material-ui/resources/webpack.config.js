@@ -1,33 +1,34 @@
 var webpack = require("webpack");
 var svgIcons = process.argv.indexOf('--svg-icons') !== -1;
-var entryPath = "./lib/index.js";
+var isProduction = process.argv.indexOf('--production') !== -1;
+var entryPath = "./main.js";
 var entryName = "material-ui";
-var library = "MaterialUI";
+var output = {
+  filename: '[name].inc.js'
+};
 
 if (svgIcons) {
-    entryPath =  "./lib/svg-icons/index.js";
+    output['libraryTarget'] = 'var';
+    output['library'] = 'MaterialUISvgIcons';
+    entryPath =  "./build/svg-icons/index.js";
     entryName = "material-ui-svg-icons";
-    library = "MaterialUISvgIcons";
 }
 
-var entryNameMin = entryName + ".min";
 var entry = {};
+if (isProduction) {
+  entryName = entryName + ".min";
+}
 entry[entryName] = entryPath;
-entry[entryNameMin] = entryPath;
 
 module.exports = {
   entry : entry,
-  output: {
-    filename: '[name].inc.js',
-    libraryTarget: "var",
-    library: library
-  },
-  externals: {
-              "react": "React",
-              "react-dom": "ReactDOM",
-              "./React": "React"
-  },
+  output: output,
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': isProduction ? '"production"' : '"development"'
+      }
+    }),
     new webpack.optimize.UglifyJsPlugin({
       include: /\.min\.inc\.js$/,
       minimize: true
