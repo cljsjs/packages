@@ -13,4 +13,6 @@ of the Clojurescript compiler.
 
 Documentation for the platform lib can be found [on this page](https://developers.google.com/+/web/api/javascript)
 
+[Extern only packages](https://github.com/cljsjs/packages/wiki/Extern-only-packages)
+
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
