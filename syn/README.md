@@ -1,7 +1,7 @@
 # cljsjs/syn
 [](dependency)
 ```clojure
-[cljsjs/syn "0.1.2"] ;; latest release
+[cljsjs/syn "0.1.2-0"] ;; latest release
 ```
 [](/dependency)
 

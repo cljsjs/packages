@@ -24,6 +24,7 @@ var vis = {
     "copyAndExtendArray": function () {},
     "copyArray": function () {},
     "getAbsoluteLeft": function () {},
+    "getAbsoluteRight": function () {},
     "getAbsoluteTop": function () {},
     "addClassName": function () {},
     "removeClassName": function () {},
@@ -121,6 +122,110 @@ var vis = {
       "calculatePrettyStep": function () {}
     }
   },
+  "moment": {
+    "momentProperties": {},
+    "suppressDeprecationWarnings": {},
+    "deprecationHandler": {},
+    "createFromInputFallback": function () {},
+    "parseTwoDigitYear": function () {},
+    "ISO_8601": function () {},
+    "updateOffset": function () {},
+    "defaultFormat": {},
+    "defaultFormatUtc": {},
+    "lang": function () {},
+    "langData": function () {},
+    "version": {},
+    "fn": {},
+    "min": function () {},
+    "max": function () {},
+    "now": function () {},
+    "utc": function () {},
+    "unix": function () {},
+    "months": function () {},
+    "isDate": function () {},
+    "locale": function () {},
+    "invalid": function () {},
+    "duration": {
+      "fn": {}
+    },
+    "isMoment": function () {},
+    "weekdays": function () {},
+    "parseZone": function () {},
+    "localeData": function () {},
+    "isDuration": function () {},
+    "monthsShort": function () {},
+    "weekdaysMin": function () {},
+    "defineLocale": function () {},
+    "updateLocale": function () {},
+    "locales": function () {},
+    "weekdaysShort": function () {},
+    "normalizeUnits": function () {},
+    "relativeTimeThreshold": function () {}
+  },
+  "Hammer": {
+    "VERSION": {},
+    "defaults": {
+      "domEvents": {},
+      "touchAction": {},
+      "enable": {},
+      "inputTarget": {},
+      "inputClass": {},
+      "preset": {},
+      "cssProps": {
+        "userSelect": {},
+        "touchSelect": {},
+        "touchCallout": {},
+        "contentZooming": {},
+        "userDrag": {},
+        "tapHighlightColor": {}
+      }
+    },
+    "INPUT_START": {},
+    "INPUT_MOVE": {},
+    "INPUT_END": {},
+    "INPUT_CANCEL": {},
+    "STATE_POSSIBLE": {},
+    "STATE_BEGAN": {},
+    "STATE_CHANGED": {},
+    "STATE_ENDED": {},
+    "STATE_RECOGNIZED": {},
+    "STATE_CANCELLED": {},
+    "STATE_FAILED": {},
+    "DIRECTION_NONE": {},
+    "DIRECTION_LEFT": {},
+    "DIRECTION_RIGHT": {},
+    "DIRECTION_UP": {},
+    "DIRECTION_DOWN": {},
+    "DIRECTION_HORIZONTAL": {},
+    "DIRECTION_VERTICAL": {},
+    "DIRECTION_ALL": {},
+    "Manager": function () {},
+    "Input": function () {},
+    "TouchAction": function () {},
+    "TouchInput": function () {},
+    "MouseInput": function () {},
+    "PointerEventInput": function () {},
+    "TouchMouseInput": function () {},
+    "SingleTouchInput": function () {},
+    "Recognizer": function () {},
+    "AttrRecognizer": function () {},
+    "Tap": function () {},
+    "Pan": function () {},
+    "Swipe": function () {},
+    "Pinch": function () {},
+    "Rotate": function () {},
+    "Press": function () {},
+    "on": function () {},
+    "off": function () {},
+    "each": function () {},
+    "merge": function () {},
+    "extend": function () {},
+    "assign": function () {},
+    "inherit": function () {},
+    "bindFn": function () {},
+    "prefixed": function () {}
+  },
+  "keycharm": function () {},
   "Timeline": function () {},
   "Graph2d": function () {},
   "timeline": {
@@ -210,7 +315,9 @@ var vis = {
   },
   "Network": function () {},
   "network": {
-    "Images": function () {},
+    "Images": {
+      "default": function () {}
+    },
     "dotparser": {
       "parseDOT": function () {},
       "DOTToGraph": function () {}
@@ -526,6 +633,9 @@ var vis = {
               }
             },
             "font": {
+              "align": {
+                "string": {}
+              },
               "color": {
                 "string": {}
               },
@@ -907,6 +1017,9 @@ var vis = {
               }
             },
             "font": {
+              "align": {
+                "string": {}
+              },
               "color": {
                 "string": {}
               },
@@ -1147,6 +1260,9 @@ var vis = {
             }
           },
           "font": {
+            "align": {
+              "string": {}
+            },
             "color": {
               "string": {}
             },
@@ -1686,107 +1802,7 @@ var vis = {
     },
     "convertDot": function () {},
     "convertGephi": function () {}
-  },
-  "moment": {
-    "momentProperties": {},
-    "suppressDeprecationWarnings": {},
-    "createFromInputFallback": function () {},
-    "parseTwoDigitYear": function () {},
-    "ISO_8601": function () {},
-    "updateOffset": function () {},
-    "defaultFormat": {},
-    "lang": function () {},
-    "langData": function () {},
-    "version": {},
-    "fn": {},
-    "min": function () {},
-    "max": function () {},
-    "now": function () {},
-    "utc": function () {},
-    "unix": function () {},
-    "months": function () {},
-    "isDate": function () {},
-    "locale": function () {},
-    "invalid": function () {},
-    "duration": {
-      "fn": {}
-    },
-    "isMoment": function () {},
-    "weekdays": function () {},
-    "parseZone": function () {},
-    "localeData": function () {},
-    "isDuration": function () {},
-    "monthsShort": function () {},
-    "weekdaysMin": function () {},
-    "defineLocale": function () {},
-    "weekdaysShort": function () {},
-    "normalizeUnits": function () {},
-    "relativeTimeThreshold": function () {}
-  },
-  "Hammer": {
-    "on": function () {},
-    "TouchMouseInput": function () {},
-    "STATE_RECOGNIZED": {},
-    "Manager": function () {},
-    "INPUT_START": {},
-    "TouchAction": function () {},
-    "PointerEventInput": function () {},
-    "extend": function () {},
-    "STATE_ENDED": {},
-    "STATE_CANCELLED": {},
-    "merge": function () {},
-    "INPUT_END": {},
-    "SingleTouchInput": function () {},
-    "defaults": {
-      "domEvents": {},
-      "touchAction": {},
-      "enable": {},
-      "inputTarget": {},
-      "inputClass": {},
-      "preset": {},
-      "cssProps": {
-        "userSelect": {},
-        "touchSelect": {},
-        "touchCallout": {},
-        "contentZooming": {},
-        "userDrag": {},
-        "tapHighlightColor": {}
-      }
-    },
-    "AttrRecognizer": function () {},
-    "Swipe": function () {},
-    "Pinch": function () {},
-    "each": function () {},
-    "DIRECTION_UP": {},
-    "DIRECTION_DOWN": {},
-    "INPUT_MOVE": {},
-    "Pan": function () {},
-    "STATE_BEGAN": {},
-    "Recognizer": function () {},
-    "STATE_FAILED": {},
-    "off": function () {},
-    "DIRECTION_VERTICAL": {},
-    "TouchInput": function () {},
-    "DIRECTION_ALL": {},
-    "DIRECTION_LEFT": {},
-    "STATE_POSSIBLE": {},
-    "DIRECTION_HORIZONTAL": {},
-    "Tap": function () {},
-    "STATE_CHANGED": {},
-    "INPUT_CANCEL": {},
-    "prefixed": function () {},
-    "Input": function () {},
-    "bindFn": function () {},
-    "Press": function () {},
-    "VERSION": {},
-    "DIRECTION_RIGHT": {},
-    "DIRECTION_NONE": {},
-    "MouseInput": function () {},
-    "Rotate": function () {},
-    "inherit": function () {},
-    "assign": function () {}
-  },
-  "keycharm": function () {}
+  }
 };
 vis.DataSet.prototype = {
   "setOptions": function () {},
@@ -1955,6 +1971,203 @@ vis.graph3d.StepNumber.prototype = {
   "next": function () {},
   "end": function () {}
 };
+vis.moment.prototype = {
+  "add": function () {},
+  "calendar": function () {},
+  "clone": function () {},
+  "diff": function () {},
+  "endOf": function () {},
+  "format": function () {},
+  "from": function () {},
+  "fromNow": function () {},
+  "to": function () {},
+  "toNow": function () {},
+  "get": function () {},
+  "invalidAt": function () {},
+  "isAfter": function () {},
+  "isBefore": function () {},
+  "isBetween": function () {},
+  "isSame": function () {},
+  "isSameOrAfter": function () {},
+  "isSameOrBefore": function () {},
+  "isValid": function () {},
+  "lang": function () {},
+  "locale": function () {},
+  "localeData": function () {},
+  "max": function () {},
+  "min": function () {},
+  "parsingFlags": function () {},
+  "set": function () {},
+  "startOf": function () {},
+  "subtract": function () {},
+  "toArray": function () {},
+  "toObject": function () {},
+  "toDate": function () {},
+  "toISOString": function () {},
+  "toJSON": function () {},
+  "toString": function () {},
+  "unix": function () {},
+  "valueOf": function () {},
+  "creationData": function () {},
+  "year": function () {},
+  "isLeapYear": function () {},
+  "weekYear": function () {},
+  "isoWeekYear": function () {},
+  "quarters": function () {},
+  "quarter": function () {},
+  "month": function () {},
+  "daysInMonth": function () {},
+  "weeks": function () {},
+  "week": function () {},
+  "isoWeeks": function () {},
+  "isoWeek": function () {},
+  "weeksInYear": function () {},
+  "isoWeeksInYear": function () {},
+  "date": function () {},
+  "days": function () {},
+  "day": function () {},
+  "weekday": function () {},
+  "isoWeekday": function () {},
+  "dayOfYear": function () {},
+  "hours": function () {},
+  "hour": function () {},
+  "minutes": function () {},
+  "minute": function () {},
+  "seconds": function () {},
+  "second": function () {},
+  "milliseconds": function () {},
+  "millisecond": function () {},
+  "utcOffset": function () {},
+  "utc": function () {},
+  "local": function () {},
+  "parseZone": function () {},
+  "hasAlignedHourOffset": function () {},
+  "isDST": function () {},
+  "isDSTShifted": function () {},
+  "isLocal": function () {},
+  "isUtcOffset": function () {},
+  "isUtc": function () {},
+  "isUTC": function () {},
+  "zoneAbbr": function () {},
+  "zoneName": function () {},
+  "dates": function () {},
+  "months": function () {},
+  "years": function () {},
+  "zone": function () {}
+};
+vis.Hammer.Input.prototype = {
+  "handler": function () {},
+  "init": function () {},
+  "destroy": function () {}
+};
+vis.Hammer.TouchAction.prototype = {
+  "set": function () {},
+  "update": function () {},
+  "compute": function () {},
+  "preventDefaults": function () {},
+  "preventSrc": function () {}
+};
+vis.Hammer.TouchInput.prototype = {
+  "constructor": function () {},
+  "_super": function () {},
+  "handler": function () {}
+};
+vis.Hammer.MouseInput.prototype = {
+  "constructor": function () {},
+  "_super": function () {},
+  "handler": function () {}
+};
+vis.Hammer.PointerEventInput.prototype = {
+  "constructor": function () {},
+  "_super": function () {},
+  "handler": function () {}
+};
+vis.Hammer.TouchMouseInput.prototype = {
+  "constructor": function () {},
+  "_super": function () {},
+  "handler": function () {},
+  "destroy": function () {}
+};
+vis.Hammer.SingleTouchInput.prototype = {
+  "constructor": function () {},
+  "_super": function () {},
+  "handler": function () {}
+};
+vis.Hammer.Recognizer.prototype = {
+  "defaults": function () {},
+  "set": function () {},
+  "recognizeWith": function () {},
+  "dropRecognizeWith": function () {},
+  "requireFailure": function () {},
+  "dropRequireFailure": function () {},
+  "hasRequireFailures": function () {},
+  "canRecognizeWith": function () {},
+  "emit": function () {},
+  "tryEmit": function () {},
+  "canEmit": function () {},
+  "recognize": function () {},
+  "process": function () {},
+  "getTouchAction": function () {},
+  "reset": function () {}
+};
+vis.Hammer.AttrRecognizer.prototype = {
+  "constructor": function () {},
+  "_super": function () {},
+  "defaults": function () {},
+  "attrTest": function () {},
+  "process": function () {}
+};
+vis.Hammer.Tap.prototype = {
+  "constructor": function () {},
+  "_super": function () {},
+  "defaults": function () {},
+  "getTouchAction": function () {},
+  "process": function () {},
+  "failTimeout": function () {},
+  "reset": function () {},
+  "emit": function () {}
+};
+vis.Hammer.Pan.prototype = {
+  "constructor": function () {},
+  "_super": function () {},
+  "defaults": function () {},
+  "getTouchAction": function () {},
+  "directionTest": function () {},
+  "attrTest": function () {},
+  "emit": function () {}
+};
+vis.Hammer.Swipe.prototype = {
+  "constructor": function () {},
+  "_super": function () {},
+  "defaults": function () {},
+  "getTouchAction": function () {},
+  "attrTest": function () {},
+  "emit": function () {}
+};
+vis.Hammer.Pinch.prototype = {
+  "constructor": function () {},
+  "_super": function () {},
+  "defaults": function () {},
+  "getTouchAction": function () {},
+  "attrTest": function () {},
+  "emit": function () {}
+};
+vis.Hammer.Rotate.prototype = {
+  "constructor": function () {},
+  "_super": function () {},
+  "defaults": function () {},
+  "getTouchAction": function () {},
+  "attrTest": function () {}
+};
+vis.Hammer.Press.prototype = {
+  "constructor": function () {},
+  "_super": function () {},
+  "defaults": function () {},
+  "getTouchAction": function () {},
+  "process": function () {},
+  "reset": function () {},
+  "emit": function () {}
+};
 vis.Timeline.prototype = {
   "_createConfigurator": function () {},
   "redraw": function () {},
@@ -2044,6 +2257,7 @@ vis.timeline.Range.prototype = {
   "_onPinch": function () {},
   "_isInsideRange": function () {},
   "_pointerToDate": function () {},
+  "getPointer": function () {},
   "zoom": function () {},
   "move": function () {},
   "moveTo": function () {}
@@ -2097,6 +2311,7 @@ vis.timeline.components.items.BackgroundItem.prototype = {
   "displayed": function () {},
   "dirty": function () {},
   "top": function () {},
+  "right": function () {},
   "left": function () {},
   "width": function () {},
   "height": function () {},
@@ -2121,6 +2336,7 @@ vis.timeline.components.items.BoxItem.prototype = {
   "displayed": function () {},
   "dirty": function () {},
   "top": function () {},
+  "right": function () {},
   "left": function () {},
   "width": function () {},
   "height": function () {},
@@ -2145,6 +2361,7 @@ vis.timeline.components.items.PointItem.prototype = {
   "displayed": function () {},
   "dirty": function () {},
   "top": function () {},
+  "right": function () {},
   "left": function () {},
   "width": function () {},
   "height": function () {},
@@ -2169,6 +2386,7 @@ vis.timeline.components.items.RangeItem.prototype = {
   "displayed": function () {},
   "dirty": function () {},
   "top": function () {},
+  "right": function () {},
   "left": function () {},
   "width": function () {},
   "height": function () {},
@@ -2348,6 +2566,7 @@ vis.timeline.components.ItemSet.types.background.prototype = {
   "displayed": function () {},
   "dirty": function () {},
   "top": function () {},
+  "right": function () {},
   "left": function () {},
   "width": function () {},
   "height": function () {},
@@ -2372,6 +2591,7 @@ vis.timeline.components.ItemSet.types.box.prototype = {
   "displayed": function () {},
   "dirty": function () {},
   "top": function () {},
+  "right": function () {},
   "left": function () {},
   "width": function () {},
   "height": function () {},
@@ -2396,6 +2616,7 @@ vis.timeline.components.ItemSet.types.range.prototype = {
   "displayed": function () {},
   "dirty": function () {},
   "top": function () {},
+  "right": function () {},
   "left": function () {},
   "width": function () {},
   "height": function () {},
@@ -2421,6 +2642,7 @@ vis.timeline.components.ItemSet.types.point.prototype = {
   "displayed": function () {},
   "dirty": function () {},
   "top": function () {},
+  "right": function () {},
   "left": function () {},
   "width": function () {},
   "height": function () {},
@@ -2556,201 +2778,4 @@ vis.Network.prototype = {
   "focus": function () {},
   "releaseNode": function () {},
   "getOptionsFromConfigurator": function () {}
-};
-vis.moment.prototype = {
-  "add": function () {},
-  "calendar": function () {},
-  "clone": function () {},
-  "diff": function () {},
-  "endOf": function () {},
-  "format": function () {},
-  "from": function () {},
-  "fromNow": function () {},
-  "to": function () {},
-  "toNow": function () {},
-  "get": function () {},
-  "invalidAt": function () {},
-  "isAfter": function () {},
-  "isBefore": function () {},
-  "isBetween": function () {},
-  "isSame": function () {},
-  "isSameOrAfter": function () {},
-  "isSameOrBefore": function () {},
-  "isValid": function () {},
-  "lang": function () {},
-  "locale": function () {},
-  "localeData": function () {},
-  "max": function () {},
-  "min": function () {},
-  "parsingFlags": function () {},
-  "set": function () {},
-  "startOf": function () {},
-  "subtract": function () {},
-  "toArray": function () {},
-  "toObject": function () {},
-  "toDate": function () {},
-  "toISOString": function () {},
-  "toJSON": function () {},
-  "toString": function () {},
-  "unix": function () {},
-  "valueOf": function () {},
-  "creationData": function () {},
-  "year": function () {},
-  "isLeapYear": function () {},
-  "weekYear": function () {},
-  "isoWeekYear": function () {},
-  "quarters": function () {},
-  "quarter": function () {},
-  "month": function () {},
-  "daysInMonth": function () {},
-  "weeks": function () {},
-  "week": function () {},
-  "isoWeeks": function () {},
-  "isoWeek": function () {},
-  "weeksInYear": function () {},
-  "isoWeeksInYear": function () {},
-  "date": function () {},
-  "days": function () {},
-  "day": function () {},
-  "weekday": function () {},
-  "isoWeekday": function () {},
-  "dayOfYear": function () {},
-  "hours": function () {},
-  "hour": function () {},
-  "minutes": function () {},
-  "minute": function () {},
-  "seconds": function () {},
-  "second": function () {},
-  "milliseconds": function () {},
-  "millisecond": function () {},
-  "utcOffset": function () {},
-  "utc": function () {},
-  "local": function () {},
-  "parseZone": function () {},
-  "hasAlignedHourOffset": function () {},
-  "isDST": function () {},
-  "isDSTShifted": function () {},
-  "isLocal": function () {},
-  "isUtcOffset": function () {},
-  "isUtc": function () {},
-  "isUTC": function () {},
-  "zoneAbbr": function () {},
-  "zoneName": function () {},
-  "dates": function () {},
-  "months": function () {},
-  "years": function () {},
-  "zone": function () {}
-};
-vis.Hammer.TouchMouseInput.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "handler": function () {},
-  "destroy": function () {}
-};
-vis.Hammer.TouchAction.prototype = {
-  "set": function () {},
-  "update": function () {},
-  "compute": function () {},
-  "preventDefaults": function () {},
-  "preventSrc": function () {}
-};
-vis.Hammer.PointerEventInput.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "handler": function () {}
-};
-vis.Hammer.SingleTouchInput.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "handler": function () {}
-};
-vis.Hammer.AttrRecognizer.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "defaults": function () {},
-  "attrTest": function () {},
-  "process": function () {}
-};
-vis.Hammer.Swipe.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "defaults": function () {},
-  "getTouchAction": function () {},
-  "attrTest": function () {},
-  "emit": function () {}
-};
-vis.Hammer.Pinch.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "defaults": function () {},
-  "getTouchAction": function () {},
-  "attrTest": function () {},
-  "emit": function () {}
-};
-vis.Hammer.Pan.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "defaults": function () {},
-  "getTouchAction": function () {},
-  "directionTest": function () {},
-  "attrTest": function () {},
-  "emit": function () {}
-};
-vis.Hammer.Recognizer.prototype = {
-  "defaults": function () {},
-  "set": function () {},
-  "recognizeWith": function () {},
-  "dropRecognizeWith": function () {},
-  "requireFailure": function () {},
-  "dropRequireFailure": function () {},
-  "hasRequireFailures": function () {},
-  "canRecognizeWith": function () {},
-  "emit": function () {},
-  "tryEmit": function () {},
-  "canEmit": function () {},
-  "recognize": function () {},
-  "process": function () {},
-  "getTouchAction": function () {},
-  "reset": function () {}
-};
-vis.Hammer.TouchInput.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "handler": function () {}
-};
-vis.Hammer.Tap.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "defaults": function () {},
-  "getTouchAction": function () {},
-  "process": function () {},
-  "failTimeout": function () {},
-  "reset": function () {},
-  "emit": function () {}
-};
-vis.Hammer.Input.prototype = {
-  "handler": function () {},
-  "init": function () {},
-  "destroy": function () {}
-};
-vis.Hammer.Press.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "defaults": function () {},
-  "getTouchAction": function () {},
-  "process": function () {},
-  "reset": function () {},
-  "emit": function () {}
-};
-vis.Hammer.MouseInput.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "handler": function () {}
-};
-vis.Hammer.Rotate.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "defaults": function () {},
-  "getTouchAction": function () {},
-  "attrTest": function () {}
 };

@@ -1,13 +1,13 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs        "0.5.0"  :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs        "0.5.1"  :scope "test"]
                   [cljsjs/react              "0.13.3-0"]
                   [cljsjs/object-assign-shim "0.1.0-1"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "0.6.0")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/fixed-data-table

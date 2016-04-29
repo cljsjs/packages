@@ -4,7 +4,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-timer-mixin "0.13.2-0"] ;; latest release
+[cljsjs/react-timer-mixin "0.13.2-1"] ;; latest release
 ```
 [](/dependency)
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature

@@ -1,10 +1,10 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.1" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.13.0")
+(def +lib-version+ "3.15.1")
 ; FIXME: Next release should have build identier
 (def +version+ (str +lib-version+ ""))
 
@@ -19,10 +19,10 @@
 (deftask package []
   (comp
     (download :url (format "https://github.com/openlayers/ol3/releases/download/v%s/v%s.zip" +lib-version+ +lib-version+)
-              :checksum "2722BE441FEC381871C907DB51D87319"
+              :checksum "2E9391BAEC848D6EED731DC785756BF7"
               :unzip true)
     (download :url (format "https://github.com/openlayers/ol3/archive/v%s.zip" +lib-version+)
-              :checksum "E8D1AAEFA03C7D5EA693EBA3213711FF"
+              :checksum "DC122AB35E6114CC1CCAC2FD82C1A5BD"
               :unzip true)
     (sift :move {#"^v([\d\.]*)/ol/ol/" "cljsjs/openlayers/development/ol/"
                  #"^v([\d\.]*)/ol\.ext/" "cljsjs/openlayers/development/ol.ext/"

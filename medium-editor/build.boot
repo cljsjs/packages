@@ -1,10 +1,10 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/boot-cljsjs "0.5.0"  :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.5.1"  :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "4.8.0")
+(def +lib-version+ "5.15.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,7 +18,7 @@
 (deftask package []
   (comp
    (download :url      (format "https://github.com/daviferreira/medium-editor/archive/%s.zip" +lib-version+)
-             :checksum "6ac7f17b9829a5968771b41636884e61"
+             :checksum "AD7A8649C431775AF3EC193B7492909A"
              :unzip    true)
    (sift :move {#"^medium-editor-([\d\.]*)/dist/js/medium-editor\.js"
                 "cljsjs/medium_editor/development/medium-editor.inc.js" 

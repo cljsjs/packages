@@ -1,25 +1,25 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.1" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "15.0.0-rc.2")
-(def +version+ (str +lib-version+ "-0"))
+(def +lib-version+ "15.0.1")
+(def +version+ (str +lib-version+ "-1"))
 
 (def checksums
   {'cljsjs/react
-   {:dev "E27DF5366FF3BD0CA9171BC90435DE29",
-    :min "230584C8225DCE15B129BFF4C0104639"},
+   {:dev "E4752B6AF074C6D4D204E930E092A6BC",
+    :min "075A24757DDF994EE088AE96F4D5682E"},
    'cljsjs/react-with-addons
-   {:dev "FD024118DF52CA0D8C0FB9F4506E6031",
-    :min "28B717A552841A9E1A8D71C82E79FEEE"},
+   {:dev "777EB46EDC785C0D6F250CF7E511F205",
+    :min "8BD6C5D25FE70E1296C4141483F5F845"},
    'cljsjs/react-dom
-   {:dev "CD6BA1BF18C41F6BFEF0E267760115EB",
-    :min "C4F4BD8C0179AE240155B7935ECF375D"},
+   {:dev "380D8646723F8FC01288E74C683D8E64",
+    :min "E714DF9295D8FF0C1B4D6D84EAF0B2B7"},
    'cljsjs/react-dom-server
-   {:dev "EF7FF8CF0EF62D837B32B3FDC2A3CAA6",
-    :min "473229B24D118FF1CE24B0663AD08681"}})
+   {:dev "D7B9CFCE04DE4391927B33875B8EB0B3",
+    :min "EEF359E6F0D740FE3C3E908365FFDCAC"}})
 
 (task-options!
  pom  {:project     'cljsjs/react
