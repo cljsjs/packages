@@ -6,7 +6,7 @@
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 
-(def +lib-version+ "0.5.3")
+(def +lib-version+ "0.5.8")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -26,10 +26,10 @@
 (deftask package []
   (comp
     (download :url (format "https://github.com/airbrake/airbrake-js/archive/v%s.zip" +lib-version+)
-              :checksum "0ea51136131c1feca422822883ecf4c8"
+              :checksum "9B020A21C9359DC5B8F06712CAEA9289"
               :unzip true)
 
-    (sift :move {#"^airbrake-.*/dist/client\.js"          "cljsjs/airbrake/development/airbrake.inc.js"})
+    (sift :move {#"^airbrake-.*/dist/client\.js" "cljsjs/airbrake/development/airbrake.inc.js"})
 
     (minify :in "cljsjs/airbrake/development/airbrake.inc.js"
             :out "cljsjs/airbrake/production/airbrake.min.inc.js")

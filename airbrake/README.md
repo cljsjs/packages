@@ -14,13 +14,13 @@ you can require the packaged library like so:
 ```clojure
 (ns your-ns
   (:require [cljsjs.airbrake]))
-  
-(def client (->
-             (js.airbrakeJs.Client. js/airbrakeJs {})
-             (.setProject your-project-number "your-api-key")))
+
+(def client
+  (js/airbrakeJs.Client. #js{:projectId your-project-number
+                             :projectKey "your-api-key"}))
 
 (.notify client (js/Error. "An error message"))
- 
+
 ```
 
 
