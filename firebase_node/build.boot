@@ -21,6 +21,6 @@
               :checksum "604D4138A35710D01CD10E9482C80E08")
     (sift :move {#"firebase-node.js" "cljsjs/development/firebase-node.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.firebase-node")
+    (deps-cljs :name "cljsjs.firebase")
     (pom)
     (jar)))
