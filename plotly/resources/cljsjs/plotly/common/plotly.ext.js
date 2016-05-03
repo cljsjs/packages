@@ -2947,11 +2947,11 @@ var Plotly = {
                   "valType": {},
                   "dflt": {}
                 },
-                "highlightColor": {
+                "highlightcolor": {
                   "valType": {},
                   "dflt": {}
                 },
-                "highlightWidth": {
+                "highlightwidth": {
                   "valType": {},
                   "min": {},
                   "max": {},
@@ -2995,11 +2995,11 @@ var Plotly = {
                   "valType": {},
                   "dflt": {}
                 },
-                "highlightColor": {
+                "highlightcolor": {
                   "valType": {},
                   "dflt": {}
                 },
-                "highlightWidth": {
+                "highlightwidth": {
                   "valType": {},
                   "min": {},
                   "max": {},
@@ -3043,11 +3043,11 @@ var Plotly = {
                   "valType": {},
                   "dflt": {}
                 },
-                "highlightColor": {
+                "highlightcolor": {
                   "valType": {},
                   "dflt": {}
                 },
-                "highlightWidth": {
+                "highlightwidth": {
                   "valType": {},
                   "min": {},
                   "max": {},
