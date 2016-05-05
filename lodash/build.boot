@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.10.1")
+(def +lib-version+ "4.11.2")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -17,13 +17,14 @@
 
 (deftask package []
   (comp
-    (download :url (format "https://raw.github.com/lodash/lodash/%s/lodash.js" +lib-version+)
-              :checksum "a418b0a0b840542a0f47af6af7b7a025")
-    (download :url (format "https://raw.github.com/lodash/lodash/%s/lodash.min.js" +lib-version+)
-              :checksum "7629cac4f079926ef505e2271bb5135f")
-    (sift :move {#"lodash\.js" "cljsjs/lodash/development/lodash.inc.js"
-                 #"lodash\.min\.js" "cljsjs/lodash/production/lodash.min.inc.js"})
-    (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.lodash")
-    (pom)
-    (jar)))
+   (download  :url      (format "https://github.com/lodash/lodash/archive/%s.zip" +lib-version+)
+              :checksum "98bb28466361694122ff65384b4f1f08"
+              :unzip    true)
+   (sift      :move     {#"^lodash(.*)/dist/lodash.js"
+                         "cljsjs/lodash/development/lodash.inc.js"
+                         #"^lodash(.*)/dist/lodash.min.js"
+                         "cljsjs/lodash/production/lodash.min.inc.js"})
+   (sift      :include  #{#"^cljsjs"})
+   (deps-cljs :name     "cljsjs.lodash")
+   (pom)
+   (jar)))
