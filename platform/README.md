@@ -12,7 +12,7 @@ you can require the packaged library like:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.vis))
+  (:require cljsjs.platform))
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
