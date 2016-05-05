@@ -659,10 +659,32 @@ var L = {
     "getBoundsZoom": function () {},
     "getSize": function () {},
     "getPixelBounds": function () {},
-    "getPixelOrigin": function () {},
+      "getPixelOrigin": function () {},
+      "attributionControl": {
+          "setPrefix": function () {},
+      },
+      "dragging": {
+          "disable": function () {},
+      },
+      "scrollWheelZoom": {
+          "disable": function () {},
+      },
+      "touchZoom": {
+          "disable": function () {},
+      },
+      "doubleClickZoom": {
+          "disable": function () {},
+      },
   },
   "TileLayer": function () {},
-  "tileLayer": function () {},
+  "tileLayer": {
+    "bringToFront": function () {},
+    "bringToBack": function () {},
+    "setOpacity": function () {},
+    "setZIndex": function () {},
+    "redraw": function () {},
+    "setUrl": function () {},
+  },
   "ImageOverlay": function () {},
   "imageOverlay": function () {},
   "Icon": {
@@ -790,8 +812,13 @@ var L = {
     "layers": {
       "addOverlay": function () {},
       "addBaseLayer": function () {},
-      "removeLayer": function () {},
-      },
+      "removeLayer": function () {}
+    },
+    "attribution": {
+      "setPrefix": function () {},
+      "addAttribution": function () {},
+      "removeAttribution": function () {}
+    }
   },
   "PosAnimation": function () {}
 };
