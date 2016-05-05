@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-infinite "0.9.0-0"]
+[cljsjs/react-infinite "0.9.0-0"] ;; latest release
 ```
 [](/dependency)
 
