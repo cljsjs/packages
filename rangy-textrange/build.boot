@@ -1,14 +1,14 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.1" :scope "test"]
-                  [cljsjs/rangy-core "1.3.0-0"]])
+                  [cljsjs/rangy-core "1.3.0-1"]])
 
 (require '[boot.task-helpers]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 
 (def +lib-version+ "1.3.0")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
   push {:ensure-clean false}
