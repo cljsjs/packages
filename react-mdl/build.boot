@@ -9,7 +9,7 @@
          '[boot.util :refer [sh info]]
          '[boot.task-helpers :as helpers])
 
-(def +lib-version+ "1.4.3")
+(def +lib-version+ "1.5.4")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
