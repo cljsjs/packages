@@ -7,7 +7,7 @@
 // http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js
 // https://npmcdn.com/react-leaflet@0.11.4/dist/react-leaflet.min.js
 
-ReactLeaflet = {
+var ReactLeaflet = {
   "PropTypes": {},
   "AttributionControl": {
     "propTypes": {}
