@@ -2,11 +2,9 @@
 
 [](dependency)
 ```clojure
-[cljsjs/filestack "0.0.1-0"] ;; latest release
+[cljsjs/filestack "2.4.10-0"] ;; latest release
 ```
 [](/dependency)
-
-**Note:** Filestack does not publish versioned artifacts, for that reason `0.0.1` is used as placeholder.
 
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
 of the Clojurescript compiler. After adding the above dependency to your project
