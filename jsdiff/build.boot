@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.2.2")
+(def +lib-version+ "2.2.2")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -17,13 +17,12 @@
 
 (deftask package []
   (comp
-    (download :url      (format "https://github.com/kpdecker/jsdiff/archive/v%s.zip" +lib-version+)
-              :checksum "24f2e5bb35383a1bacbea3db0340c465"
-              :unzip    true)
-    (sift     :move     {#"^jsdiff-.*/diff.js"
-                         "cljsjs/development/jsdiff.inc.js"})
-    (minify   :in       "cljsjs/development/jsdiff.inc.js"
-              :out      "cljsjs/production/jsdiff.min.inc.js")
+    (download :url (format "https://raw.githubusercontent.com/components/jsdiff/v%s/diff.js" +lib-version+)
+              :checksum "791A9A054D1EC2A2C2906B469DDD3501")
+    (download :url (format "https://raw.githubusercontent.com/components/jsdiff/v%s/diff.min.js" +lib-version+)
+              :checksum "CB44DC0C341E04CA6623B296E7BC4C63")
+    (sift :move {#"^diff.js$" "cljsjs/development/jsdiff.inc.js"
+                 #"^diff.min.js$" "cljsjs/production/jsdiff.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.jsdiff")
     (pom)
