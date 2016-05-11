@@ -29,11 +29,13 @@ declare an exclusion for cljsjs/react. An example for leiningen can be found
 ## TestUtils
 
 The externs file includes definitions for TestUtils but to use those with `:advanced`
-optimizations you'll need to override `:file-min` to use non-minified version:
+optimizations you'll need to override `:file-min` to use non-minified version. In your
+ClojureScript compiler options, add:
 
-src/cljs/deps.cljs:
 ```clj
-{:foreign-libs [{:provides ["cljs.react"] :file-min "cljsjs/development/react-with-addons.inc.js"}}
+:foreign-libs [{:provides ["cljs.react"]
+               :file "cljsjs/development/react-with-addons.inc.js"
+               :file-min "cljsjs/development/react-with-addons.inc.js"}]
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
