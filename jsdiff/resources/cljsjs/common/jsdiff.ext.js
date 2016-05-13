@@ -28,7 +28,7 @@ JsDiff.Diff.prototype = {
   "equals": function () {},
   "removeEmpty": function () {},
   "castInput": function () {},
-  "tokenize": function () {}
+  "tokenize": function () {},
   "buildValues": function () {},
-  "clonePath": function () {},
+  "clonePath": function () {}
 };
