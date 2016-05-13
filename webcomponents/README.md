@@ -4,7 +4,7 @@ This is a cljsjs package for https://github.com/webcomponents/webcomponentsjs
 
 [](dependency)
 ```clojure
-[cljsjs/webcomponents "0.7.21-0"] ;; latest release
+[cljsjs/webcomponents "0.7.21-2"] ;; latest release
 ```
 [](/dependency)
 

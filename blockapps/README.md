@@ -4,7 +4,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/blockapps "2.2.5-0"] ;; latest release
+[cljsjs/blockapps "2.2.5-1"] ;; latest release
 ```
 [](/dependency)
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
