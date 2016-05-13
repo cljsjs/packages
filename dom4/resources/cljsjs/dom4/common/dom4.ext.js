@@ -28,7 +28,7 @@ Element.prototype.replaceWith = function(elements) {};
 Element.prototype.remove = function() {};
 
 /**
- * @param {string}
+ * @param {string} selectors
  * @return Element
  */
 Element.prototype.closest = function(selectors) {};

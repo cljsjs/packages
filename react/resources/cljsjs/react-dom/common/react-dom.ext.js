@@ -26,7 +26,7 @@ ReactDOM.version;
 /**
  * @param {React.ReactComponent} container
  * @param {Element} mountPoint
- * @param {function=} callback
+ * @param {Function=} callback
  * @return {React.ReactComponent}
  */
 ReactDOM.render = function(container, mountPoint, opt_callback) {};
@@ -50,7 +50,7 @@ ReactDOM.findDOMNode = function(component) {};
  * Call the provided function in a context within which calls to `setState`
  * and friends are batched such that components aren't updated unnecessarily.
  *
- * @param {function} callback Function which calls `setState`, `forceUpdate`, etc.
+ * @param {Function} callback Function which calls `setState`, `forceUpdate`, etc.
  * @param {*=} opt_a Optional argument to pass to the callback.
  * @param {*=} opt_b Optional argument to pass to the callback.
  * @param {*=} opt_c Optional argument to pass to the callback.
@@ -70,7 +70,7 @@ ReactDOM.unstable_batchedUpdates = function(callback, opt_a, opt_b, opt_c, opt_d
  * @param {React.ReactComponent} parentComponent The conceptual parent of this render tree.
  * @param {React.ReactElement} nextElement Component element to render.
  * @param {Element} container DOM element to render into.
- * @param {function=} callback function triggered on completion
+ * @param {Function=} callback function triggered on completion
  * @return {React.ReactComponent} Component instance rendered in `container`.
  */
 ReactDOM.unstable_renderSubtreeIntoContainer = function(parentComponent, nextElement, container, opt_callback) {};

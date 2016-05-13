@@ -1,1 +1,1 @@
-"WeakMap": function () {}
+var WeakMap = function () {};

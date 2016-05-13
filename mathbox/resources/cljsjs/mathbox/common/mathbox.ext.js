@@ -1,7 +1,7 @@
 var ThreeBox = {};
 ThreeBox.preload = function(element, options) {};
 
-var window.mathBox = function(element, options);
+window.mathBox = function(element, options) {};
 
 var MathBox = {};
 MathBox.start = function() {};

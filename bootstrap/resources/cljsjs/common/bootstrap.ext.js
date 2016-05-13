@@ -26,7 +26,7 @@ jQuery.modal.options.prototype.keyboard;
 jQuery.modal.options.prototype.show;
 
 /**
- * @param {=(string|jQuery.modal.options)} opt_eventOrOptions
+ * @param {(string|jQuery.modal.options)=} opt_eventOrOptions
  * @return {jQuery}
  */
 jQuery.prototype.modal = function(opt_eventOrOptions) {};
@@ -55,7 +55,7 @@ jQuery.scrollspy.options = function() {};
 jQuery.scrollspy.options.prototype.offset;
 
 /**
- * @param {=jQuery.scrollspy.options} opt_options
+ * @param {jQuery.scrollspy.options=} opt_options
  * @return {jQuery}
  */
 jQuery.prototype.scrollspy = function(opt_options) {};
@@ -67,7 +67,7 @@ jQuery.prototype.scrollspy = function(opt_options) {};
 
 
 /**
- * @param {=string} opt_event
+ * @param {string=} opt_event
  * @return {jQuery}
  */
 jQuery.prototype.tab = function(opt_event) {};
@@ -84,13 +84,13 @@ jQuery.tooltip.options = function() {};
 /** @type {boolean} */
 jQuery.tooltip.prototype.animation;
 
-/** @type {string|function} */
+/** @type {string|Function} */
 jQuery.tooltip.prototype.placement;
 
 /** @type {string} */
 jQuery.tooltip.prototype.selector;
 
-/** @type {string|function} */
+/** @type {string|Function} */
 jQuery.tooltip.prototype.title;
 
 /** @type {string} */
@@ -100,7 +100,7 @@ jQuery.tooltip.prototype.trigger;
 jQuery.tooltip.prototype.delay;
 
 /**
- * @param {=(string|jQuery.tooltip.options)} opt_eventOrOptions
+ * @param {(string|jQuery.tooltip.options)=} opt_eventOrOptions
  * @return {jQuery}
  */
 jQuery.prototype.tooltip = function(opt_eventOrOptions) {};
@@ -117,7 +117,7 @@ jQuery.popover.options = function() {};
 /** @type {boolean} */
 jQuery.popover.prototype.animation;
 
-/** @type {string|function} */
+/** @type {string|Function} */
 jQuery.popover.prototype.placement;
 
 /** @type {string} */
@@ -126,17 +126,17 @@ jQuery.popover.prototype.selector;
 /** @type {string} */
 jQuery.popover.prototype.trigger;
 
-/** @type {string|function} */
+/** @type {string|Function} */
 jQuery.popover.prototype.title;
 
-/** @type {string|function} */
+/** @type {string|Function} */
 jQuery.popover.prototype.content;
 
 /** @type {number|{show: number, hide: number}} */
 jQuery.popover.prototype.delay;
 
 /**
- * @param {=(string|jQuery.tooltip.options)} opt_eventOrOptions
+ * @param {(string|jQuery.tooltip.options)=} opt_eventOrOptions
  * @return {jQuery}
  */
 jQuery.prototype.popover = function(opt_eventOrOptions) {};
@@ -148,7 +148,7 @@ jQuery.prototype.popover = function(opt_eventOrOptions) {};
 
 
 /**
- * @param {=string} opt_event
+ * @param {string=} opt_event
  * @return {jQuery}
  */
 jQuery.prototype.alert = function(opt_event) {};
@@ -160,7 +160,7 @@ jQuery.prototype.alert = function(opt_event) {};
 
 
 /**
- * @param {=string} opt_state
+ * @param {string=} opt_state
  * @return {jQuery}
  */
 jQuery.prototype.button = function(opt_state) {};
@@ -181,7 +181,7 @@ jQuery.collapse.options.prototype.parent;
 jQuery.collapse.options.prototype.toggle;
 
 /**
- * @param {=(string|jQuery.collapse.options)} opt_eventOrOptions
+ * @param {(string|jQuery.collapse.options)=} opt_eventOrOptions
  */
 jQuery.prototype.collapse = function(opt_eventOrOptions) {};
 
@@ -201,7 +201,7 @@ jQuery.carousel.options.prototype.interval;
 jQuery.carousel.options.prototype.pause;
 
 /**
- * @param {=(string|jQuery.carousel.options})} opt_eventOrOptions
+ * @param {(string|jQuery.carousel.options)=} opt_eventOrOptions
  */
 jQuery.prototype.carousel = function(opt_eventOrOptions) {};
 
@@ -220,24 +220,24 @@ jQuery.typeahead.options.prototype.source;
 /** @type {number} */
 jQuery.typeahead.options.prototype.items;
 
-/** @type {function} */
+/** @type {Function} */
 jQuery.typeahead.options.prototype.matcher;
 
-/** @type {function} */
+/** @type {Function} */
 jQuery.typeahead.options.prototype.sorter;
 
-/** @type {function} */
+/** @type {Function} */
 jQuery.typeahead.options.prototype.highlighter;
 
 /**
- * @param {=(string|jQuery.typeahead.options)} opt_options
+ * @param {(string|jQuery.typeahead.options)=} opt_options
  * @return {jQuery}
  */
 jQuery.prototype.typeahead = function(opt_options) {};
 
 /**
- * @param {Element|jQuery|jQuerySelector}
- * @param {=jQuery.typeahead.options} opt_options
+ * @param {Element|jQuery|jQuerySelector} element
+ * @param {jQuery.typeahead.options=} opt_options
  * @return {jQuery}
  */
 jQuery.prototype.typeahead.Constructor = function(element, opt_options) {};

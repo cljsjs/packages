@@ -4,7 +4,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "0.0.1") ; MathBox 1, *not* MathBox 2
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom {:project 'cljsjs/mathbox
