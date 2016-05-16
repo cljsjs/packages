@@ -2,11 +2,11 @@
 
 [](dependency)
 ```clojure
-[cljsjs/highcharts "4.2.2-2"] ;; latest release
+[cljsjs/highcharts "4.2.5-1"] ;; latest release
 ```
 [](/dependency)
 
-Note that this packages jQuery `1.11.3` by default.
+Note that this no longer includes a dependency on jQuery.
 
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
 of the Clojurescript compiler. After adding the above dependency to your project
