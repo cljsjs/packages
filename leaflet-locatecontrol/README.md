@@ -1,8 +1,8 @@
-# cljsjs/leaflet-draw
+# cljsjs/leaflet-locatecontrol
 
 [](dependency)
 ```clojure
-[cljsjs/leaflet-locate "0.43.0-1"] ;; latest release
+[cljsjs/leaflet-locatecontrol "0.43.0-1"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.leaflet-locate))
+  (:require cljsjs.leaflet-locatecontrol))
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
