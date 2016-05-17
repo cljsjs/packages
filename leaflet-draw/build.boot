@@ -20,7 +20,7 @@
 
 (deftask package []
   (comp
-    (download :url      (str "https://github.com/Leaflet/Leaflet.draw/archive/0.2.3.zip")
+    (download :url      (format "https://github.com/Leaflet/Leaflet.draw/archive/%s.zip" +lib-version+)
               :checksum "BE611BFB85008C3C964ABE46C3C751D2"
               :unzip    true)
     (sift :move {#"^Leaflet.draw-(.*)/dist/leaflet.draw-src.js"    	"cljsjs/development/leaflet-draw.inc.js"
