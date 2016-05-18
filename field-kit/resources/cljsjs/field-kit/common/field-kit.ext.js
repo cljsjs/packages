@@ -1,0 +1,47 @@
+var FieldKit = {
+  "AdaptiveCardFormatter": function () {},
+  "AmexCardFormatter": function () {},
+  "CardTextField": function () {},
+  "CardUtils": {},
+  "DefaultCardFormatter": function () {},
+  "DelimitedTextFormatter": function () {},
+  "EmployerIdentificationNumberFormatter": function () {},
+  "ExpiryDateField": function () {},
+  "ExpiryDateFormatter": function () {},
+  "Formatter": function () {},
+  "NumberFormatter": {
+    "Rounding": {},
+    "Style": {}
+  },
+  "NumberFormatterSettingsFormatter": function () {},
+  "PhoneFormatter": function () {},
+  "SocialSecurityNumberFormatter": function () {},
+  "TextField": function () {},
+  "UndoManager": function () {}
+};
+FieldKit.NumberFormatter.prototype = {
+  "_allowsFloats": function () {},
+  "_alwaysShowsDecimalSeparator": function () {},
+  "_countryCode": function () {},
+  "_currencyCode": function () {},
+  "_exponent": function () {},
+  "_groupingSeparator": function () {},
+  "_groupingSize": function () {},
+  "_lenient": function () {},
+  "_locale": function () {},
+  "_internationalCurrencySymbol": function () {},
+  "_maximumFractionDigits": function () {},
+  "_minimumFractionDigits": function () {},
+  "_maximumIntegerDigits": function () {},
+  "_minimumIntegerDigits": function () {},
+  "_maximum": function () {},
+  "_minimum": function () {},
+  "_notANumberSymbol": function () {},
+  "_nullSymbol": function () {},
+  "_numberStyle": function () {},
+  "_roundingMode": function () {},
+  "_usesGroupingSeparator": function () {},
+  "_zeroSymbol": function () {},
+  "stringFromNumber": function () {},
+  "numberFromString": function () {}
+};
