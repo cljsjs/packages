@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "2.1.4")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom {:project     'cljsjs/emojione
@@ -22,6 +22,7 @@
    (sift :move {#"^emojione-\d\.\d\.\d/lib/js/emojione\.min\.js$" "cljsjs/emojione/production/emojione.min.inc.js"
                 #"^emojione-\d\.\d\.\d/lib/js/emojione\.js$" "cljsjs/emojione/development/emojione.inc.js"
                 #"^emojione-\d\.\d\.\d/assets/(.+)$" "cljsjs/emojione/common/$1"})
+   (sift :include #{#"^cljsjs/emojione/common/(fonts|png_512x512)"} :invert true)
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.emojione")
    (pom)

@@ -3,7 +3,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/emojione "2.1.4-0"] ;; latest release
+[cljsjs/emojione "2.1.4-1"] ;; latest release
 ```
 [](/dependency)
 
@@ -20,9 +20,8 @@ Documentation for Emojione can be found [in their GitHub repo](https://github.co
 
 #### Assets
 
-All contents of the `assets/` folder in the EmojiOne release zip are
-provided under `cljsjs/emojione/common/`. Because these assets are big
-(50mb) make sure this jar is cached in CI to avoid re-downloading it
-all the time.
+All contents except `fonts` and `png_512x512` of the `assets/` folder
+in the EmojiOne release zip are provided under
+`cljsjs/emojione/common/`.
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
