@@ -4,7 +4,7 @@ http://www.material-ui.com/#/
 
 [](dependency)
 ```clojure
-[cljsjs/material-ui "0.15.0-0"] ;; latest release
+[cljsjs/material-ui "0.15.0-3"] ;; latest release
 ```
 [](/dependency)
 
@@ -17,6 +17,8 @@ http://www.material-ui.com/#/
  ```
     [org.omcljs/om "1.0.0-alpha34" :exclusions [cljsjs/react]]
  ```
+ I suggest using
+
 
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
 of the Clojurescript compiler. After adding the above dependency to your project

@@ -5,7 +5,7 @@
 externs=$(for ext in $(find . \
     -name '*.ext.js' \
     -not -path '*/target/*' \
-    -not -wholename './material-ui/resources/cljsjs/react/common/react.ext.js'); do
+    -not -wholename './material-ui/*/react.ext.js'); do
 echo -en "--externs $ext "
 done)
 
