@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.4.1")
+(def +lib-version+ "3.0.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,7 +18,7 @@
 (deftask package []
   (comp
     (download :url (str "https://github.com/firebase/firebase-bower/archive/v" +lib-version+ ".zip")
-              :checksum "7DE959B3DB78714FE3C4F1DB57912974"
+              :checksum "C4C9A86B60FAC6FE3620390F9F4F812A"
               :unzip true)
     (sift :move {#"firebase-bower-([\d\.]*)/firebase.js" "cljsjs/development/firebase.inc.js"})
     (sift :include #{#"^cljsjs"})
