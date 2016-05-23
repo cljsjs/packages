@@ -14,7 +14,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns your-ns
-  (:require [cljsjs.autobahnjs]))
+  (:require [cljsjs.autobahn]))
              
 (def ^:private ab js/autobahn)
 
