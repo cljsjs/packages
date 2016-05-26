@@ -1,4 +1,4 @@
-(def +lib-version+ "0.12.3")
+(def +lib-version+ "0.12.4")
 (def +version+ (str +lib-version+ "-0"))
 
 (set-env!
@@ -19,7 +19,7 @@
 (deftask package []
   (comp
     (download :url (str "https://github.com/STRML/react-grid-layout/archive/" +lib-version+ ".zip")
-              :checksum "832a36551e97eb466652cbfddd99500d"
+              :checksum "03f2bf66bba71a38011752e8ac027bdc"
               :unzip true)
 
     (sift :move {#"^react-grid-layout-(.*)/dist/react-grid-layout.min.js$" "cljsjs/react-grid-layout/development/react-grid-layout.inc.js"
