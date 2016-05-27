@@ -1,7 +1,7 @@
 # cljsjs/mithril
 
 ```clojure
-[cljsjs/mithril "0.2.4"] ;; latest release
+[cljsjs/mithril "0.2.4-0"] ;; latest release
 ```
 
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
