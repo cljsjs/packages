@@ -36,7 +36,7 @@
           (io/make-parents target)
           (io/copy (tmpd/file f) target)))
       (io/copy
-       (io/file tmp "cljsjs/react-pixi/build/webpack.config.js")
+       (io/file tmp "build/webpack.config.js")
        (io/file tmp +lib-folder+ "webpack-cljsjs.config.js"))
       (binding [*sh-dir* (str (io/file tmp +lib-folder+))]
         ((sh "npm" "install"))
