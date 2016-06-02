@@ -9,7 +9,7 @@
          '[boot.util :refer [sh]])
 
 (def +lib-version+ "0.15.0")
-(def +version+ (str +lib-version+ "-3"))
+(def +version+ (str +lib-version+ "-4"))
 (def +lib-folder+ (format "material-ui-%s" +lib-version+))
 
 (task-options!
