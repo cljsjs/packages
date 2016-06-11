@@ -1,3 +1,5 @@
+// List manually adapted from https://github.com/FormidableLabs/victory/blob/master/src/index.js
+
 var Victory = {
   "VictoryAnimation": function() {},
   "VictoryArea": function() {},
