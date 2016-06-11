@@ -4,8 +4,12 @@ var Victory = {
   "VictoryAxis": function() {},
   "VictoryBar": function() {},
   "VictoryChart": function() {},
+  "VictoryGroup": function() {},
   "VictoryLabel": function() {},
   "VictoryLine": function() {},
   "VictoryPie": function() {},
-  "VictoryScatter": function() {}
+  "VictoryScatter": function() {},
+  "VictorySharedEvents": function() {},
+  "VictoryStack": function() {},
+  "VictoryTransition": function() {}
 }
