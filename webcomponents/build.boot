@@ -11,7 +11,7 @@
 (task-options!
  pom  {:project     'cljsjs/webcomponents
        :version     +version+
-       :description "jQuery plugin that types."
+       :description "A set of polyfills."
        :url         "https://github.com/webcomponents/webcomponentsjs"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
