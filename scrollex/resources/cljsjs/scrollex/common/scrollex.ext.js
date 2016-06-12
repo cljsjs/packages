@@ -1,1 +1,1 @@
-jQuery.prototype.scrollex = function() {};
+$.prototype.scrollex = function() {};
