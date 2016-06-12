@@ -5,7 +5,7 @@
 /**
    Firebase Global Namespace
 */
-firebase = {};
+var firebase = {};
 
 /**
    @param {Object}  options
