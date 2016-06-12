@@ -1,0 +1,14 @@
+{
+  "name": "packages",
+  "version": "1.0.0",
+  "description": "<img src=\"http://cljsjs.github.io/cljsjs.png\" alt=\"CLJSJS logo\" align=\"right\" />",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cljsjs/packages.git"
+  },
+  "homepage": "https://github.com/cljsjs/packages#readme",
+  "private": true,
+  "dependencies": {
+    "google-closure-compiler": "^20160315.2.0"
+  }
+}

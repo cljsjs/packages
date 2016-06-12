@@ -112,8 +112,6 @@ DateRange.prototype.by = function() {};
 /**
  * Callback executed for each sub-range.
  *
- * @callback DateRange~by
- *
  * @param {!Moment} current Current moment object for iteration
  */
 

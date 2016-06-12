@@ -1,7 +1,7 @@
 # cljsjs/react
 
 ```clojure
-[cljsjs/react "0.14.3-0"] ;; latest release
+[cljsjs/react "15.1.0-0"] ;; latest release
 ```
 
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
@@ -16,7 +16,7 @@ you can require the packaged library like so:
 # cljsjs/react-with-addons
 
 ```clojure
-[cljsjs/react-with-addons "15.0.1-0"] ;; latest release
+[cljsjs/react-with-addons "15.1.0-0"] ;; latest release
 ```
 
 **Note that this JAR provides the same `cljsjs/react` module as
@@ -29,11 +29,13 @@ declare an exclusion for cljsjs/react. An example for leiningen can be found
 ## TestUtils
 
 The externs file includes definitions for TestUtils but to use those with `:advanced`
-optimizations you'll need to override `:file-min` to use non-minified version:
+optimizations you'll need to override `:file-min` to use non-minified version. In your
+ClojureScript compiler options, add:
 
-src/cljs/deps.cljs:
 ```clj
-{:foreign-libs [{:provides ["cljs.react"] :file-min "cljsjs/development/react-with-addons.inc.js"}}
+:foreign-libs [{:provides ["cljs.react"]
+               :file "cljsjs/development/react-with-addons.inc.js"
+               :file-min "cljsjs/development/react-with-addons.inc.js"}]
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies

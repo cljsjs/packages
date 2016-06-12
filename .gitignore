@@ -1,3 +1,4 @@
 .boot
 */target
 .nrepl-*
+node_modules

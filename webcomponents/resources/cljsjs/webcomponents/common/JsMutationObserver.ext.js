@@ -1,4 +1,5 @@
-"JsMutationObserver": function () {}
+var JsMutationObserver = function () {};
+
 JsMutationObserver.prototype = {
   "observe": function () {},
   "disconnect": function () {},

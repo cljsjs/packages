@@ -73,8 +73,8 @@ var BlockApps = {
     polling: {},
     setProfile: function(profName, version){},
     Solidity: function(code) {},
-    MultiTX: function(txArray) {}:
-  }
+    MultiTX: function(txArray) {}
+  };
 
 BlockApps.ethbase.Transaction.send = function(privKeyFrom, addressTo) {};
 

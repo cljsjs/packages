@@ -8,8 +8,8 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "0.15.0-beta.2")
-(def +version+ (str +lib-version+ "-10"))
+(def +lib-version+ "0.15.0")
+(def +version+ (str +lib-version+ "-3"))
 (def +lib-folder+ (format "material-ui-%s" +lib-version+))
 
 (task-options!
@@ -24,7 +24,7 @@
 
 (deftask download-material-ui []
          (download :url url
-                   :checksum "9de011d18fc6ea1352698cdb76c46167"
+                   :checksum "0453463bdd1f55f52938a500b59ed073"
                    :unzip true))
 
 (def main-file-name "main.js")
@@ -50,7 +50,11 @@
                 (binding [boot.util/*sh-dir* (str (io/file tmp +lib-folder+))]
                          (do ((sh "npm" "install"))
                              ((sh "npm" "install" "webpack"))
-                             ((sh "npm" "run" "build"))
+                             ((sh "npm" "install" "babel-cli"))
+                             ((sh "npm" "run" "build:icon-index"))
+                             ((sh "node" "--stack-size=1500" "./node_modules/.bin/babel"
+                                  "./src" "--ignore" "*.spec.js" "--out-dir" "./build"))
+                             ((sh "npm" "run" "build:copy-files"))
                              ((sh "./node_modules/.bin/webpack"))
                              ((sh "./node_modules/.bin/webpack" "--production"))
                              ((sh "./node_modules/.bin/webpack" "--svg-icons"))

@@ -1,6 +1,8 @@
 var MediumEditor = {
   "extensions": {},
-  "util": {},
+  "util": {
+    "insertHTMLCommand": function () {},
+  },
   "Extension": {
     "extend": function () {}
   },

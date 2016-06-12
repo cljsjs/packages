@@ -1,11 +1,11 @@
-// d3geo_externs.js --- 
-// 
+// d3geo_externs.js ---
+//
 // Filename: d3geo_externs.js
 // Description: Using D3geo  in ClojureScript under Google Closure's advanced optimization
 // Author: Zach Charlop-Powers
 // Maintainer: Zach Charlop-Powers
 // Created: Mon Dec 28 15:28:15 2013 (+0100)
-// 
+//
 //
 // The MIT License (MIT)
 //
@@ -29,15 +29,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 //
-// 
+//
 // Code:
 
 var projection = {};
 var projectionMutator = {};
 var d3_geo_projectLine = {};
 var d3_geo_projectLines = {};
-var d3_geo_projectFeature = {};
-var d3_geo_projectGeometry = {};
 var d3_geo_projectGeometryType = {};
 var d3_geo_projectObjectType = {};
 var d3_geo_projectPoint = {};
@@ -53,8 +51,8 @@ var pointEqual = {};
 projection.prototype = function () {};
 projectionMutator.prototype = function () {};
 
-d3_geo_projectFeature = function () {};
-d3_geo_projectGeometry = function () {};
+var d3_geo_projectFeature = function () {};
+var d3_geo_projectGeometry = function () {};
 d3_geo_projectObjectType.prototype = function () {};
 d3_geo_projectObjectType.prototype = {
   "Feature":  function () {},
@@ -103,23 +101,23 @@ d3_geo_projectClockwise.prototype = function () {};
 d3.geo.interrupt.prototype = function () {};
 d3.geo.interrupt.prototype = {
   "forward": function () {},
-  "reset": function () {}  
+  "reset": function () {}
 };
 
 sphere.prototype = function () {};
 resample.prototype = function () {};
 pointEqual.protoype = function () {};
 
-airy.prototype = function () {};
+var airy = function () {};
 airy.prototype = {
   "forward": function () {},
-  "forward.invert": function () {} 
+  "forward.invert": function () {}
 };
 
-airyProjection.prototype = function () {};
-aitoff.prototype = function () {};
+var airyProjection = function () {};
+var aitoff = function () {};
 aitoff.invert.prototype = function () {};
-armadillo.prototype = function () {};
+var armadillo = function () {};
 
 
 d3.geo.airy.prototype = function () {};

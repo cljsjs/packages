@@ -13,9 +13,11 @@ dependencies:
     - chmod +x ~/bin/boot
     - mkdir -p ~/.boot
     - cp profile.boot ~/.boot/profile.boot
+    - npm install
   override:
     # Run tests
     # Run in dependency step to cache the deps
+    - ./test-extern-files.sh
     - ./test-changed.sh
 test:
   override:

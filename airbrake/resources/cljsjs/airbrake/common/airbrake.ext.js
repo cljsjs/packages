@@ -28,7 +28,6 @@ var Client = {
 
 var base = {};
 var jsonifyNotice = {};
-var truncate = {};
 var truncateObj = {};
 var cbCount = {};
 var merge = {};

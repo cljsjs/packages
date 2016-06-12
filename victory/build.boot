@@ -1,10 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.1" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.1" :scope "test"]
+                  [cljsjs/react "15.1.0-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.6.0")
+(def +lib-version+ "0.8.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,11 +19,12 @@
 (deftask package []
   (comp
     (download :url (format "https://github.com/FormidableLabs/victory/archive/v%s.zip" +lib-version+)
-              :checksum "EDE1D4CED3A156E51E6C762DAA5F5815"
+              :checksum "E773BC66CF093065773D1120E5B4777A"
               :unzip true)
     (sift :move { #"^victory-.*/dist/victory\.js$"      "cljsjs/victory/development/victory.inc.js"
                   #"^victory-.*/dist/victory\.min\.js$" "cljsjs/victory/production/victory.min.inc.js" })
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.victory")
+    (deps-cljs :name "cljsjs.victory"
+               :requires ["cljsjs.react"])
     (pom)
     (jar)))

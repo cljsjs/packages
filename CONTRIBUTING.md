@@ -4,6 +4,10 @@
 
 See [the wiki](https://github.com/cljsjs/packages/wiki/Creating-Packages).
 
+## Updating Packages
+
+See [the wiki](https://github.com/cljsjs/packages/wiki/Updating-packages).
+
 ## For information and help
 
 [Clojurians slack](https://clojurians.slack.com/) ([join](http://clojurians.net/))
