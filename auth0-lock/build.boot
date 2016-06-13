@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "8.3.2")
-(def +version+ (str +lib-version+ "-2"))
+(def +lib-version+ "9.2.1")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom { :project     'cljsjs/auth0-lock
