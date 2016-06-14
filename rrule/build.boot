@@ -4,7 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.1.0")
+(def +commit+ "838226d")
+(def +lib-version+ (str "2.1.0-" +commit+))
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -17,7 +18,7 @@
 
 (deftask package []
   (comp
-   (download :url (str "https://raw.githubusercontent.com/jakubroztocil/rrule/v" +lib-version+ "/lib/rrule.js"))
+   (download :url (str "https://raw.githubusercontent.com/jakubroztocil/rrule/" +commit+ "/lib/rrule.js"))
    (sift :move {#"^rrule\.js" "cljsjs/rrule/development/rrule.inc.js"})
    (minify :in "cljsjs/rrule/development/rrule.inc.js"
            :out "cljsjs/rrule/production/rrule.min.inc.js")
