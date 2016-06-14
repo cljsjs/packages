@@ -4,9 +4,9 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +commit+ "838226d")
-(def +lib-version+ (str "2.1.0-" +commit+))
+(def +lib-version+ "2.1.0-838226d")
 (def +version+ (str +lib-version+ "-0"))
+(def +commit+ (second (re-matches #".*-(.*)" +lib-version+)))
 
 (task-options!
  pom  {:project     'cljsjs/rrule
