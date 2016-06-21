@@ -30,7 +30,7 @@
              :unzip true)
 
    (sift :move {#"^aws-sdk-js-.*/dist/aws-sdk.js"  "cljsjs/aws-sdk-js/development/aws-sdk-js.inc.js"
-                #"^aws-sdk-js-.*/dist/aws-sdk-min.js"  "cljsjs/aws-sdk-js/production/aws-sdk-js-min.inc.js"})
+                #"^aws-sdk-js-.*/dist/aws-sdk.min.js"  "cljsjs/aws-sdk-js/production/aws-sdk-js.min.inc.js"})
 
    (sift :include #{#"^cljsjs"})
 
