@@ -54,6 +54,8 @@ module.exports = {
                 , commonjs: 'react-dom'
                 , commonjs2: 'react-dom'
             }
+            // https://webpack.github.io/docs/configuration.html#externals
+            , 'react-addons-css-transition-group': 'var React.addons.CSSTransitionGroup'
         }
         , postcss: [autoprefixer]
         , plugins: [

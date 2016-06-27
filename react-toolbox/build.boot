@@ -73,8 +73,12 @@
                  #".*index.min.inc.js"
                  "cljsjs/react-toolbox/production/react-toolbox.min.inc.js"
                  })
-    (sift :include #{#"^cljsjs/" #"^deps.cljs$"})
-    (deps-cljs :name "cljsjs.react-toolbox")
+    (sift :include #{#"^cljsjs/"})
+    (deps-cljs :name "cljsjs.react-toolbox"
+               :requires [
+                          "cljsjs.react"
+                          "cljsjs.react.dom"
+                          ])
     (pom)
     (jar)))
 
