@@ -26,7 +26,7 @@ Phoenix.Channel.prototype = {
   push: function () {},
   pushBuffer: {},
   rejoin: function () {},
-  rejoinTime: {},
+  rejoinTimer: {},
   rejoinUntilConnected: function () {},
   replyEventName: function () {},
   socket: {},
@@ -98,8 +98,7 @@ Phoenix.LongPoll.prototype = {
   poll: function () {},
   send: function () {},
   close: function () {}
-}
-
+};
 
 Phoenix.Ajax.prototype = function () {};
 Phoenix.Ajax.prototype = {
@@ -110,4 +109,12 @@ Phoenix.Ajax.prototype = {
   serialize: function () {},
   appendParams: function () {},
   states: {}
-}
+};
+
+Phoenix.Presence.prototype = function () {};
+Phoenix.Presence.prototype = {
+  syncState: function () {},
+  syncDiff: function () {},
+  list: function () {}
+};
+
