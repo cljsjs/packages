@@ -4,6 +4,8 @@ machine:
   environment:
     BOOT_VERSION: 2.5.5
     _JAVA_OPTIONS: "-Xms512m -Xmx1024m"
+  node:
+    version: v4.4.5
 dependencies:
   cache_directories:
     - "~/.boot/cache/lib"

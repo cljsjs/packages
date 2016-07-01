@@ -1,13 +1,13 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[adzerk/bootlaces "0.1.11" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.1" :scope "test"]
+                  [cljsjs/boot-cljsjs "0.5.2" :scope "test"]
                   [cljsjs/react "15.0.1-1"]
                   [cljsjs/bootstrap "3.3.6-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.29.2")
+(def +lib-version+ "0.29.5")
 (def +version+ (str +lib-version+ "-0"))
 
 
@@ -21,7 +21,7 @@
 
 (deftask download-react-bootstrap []
   (download :url      (format "https://github.com/react-bootstrap/react-bootstrap-bower/archive/v%s.zip" +lib-version+)
-            :checksum "66b7bd2a234271357d1a8e090edc424b" ;;MD5
+            :checksum "914c2a4885947440ffbabbad4965b321" ;;MD5
             :unzip    true))
 
 (deftask package []

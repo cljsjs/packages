@@ -28,7 +28,7 @@ To rely on the default (canvas based) renderer use:
                   :ol.ENABLE_DOM false
                   :ol.ENABLE_VECTOR false
                   :ol.ENABLE_PROJ4JS false
-                  :ol.ENABLE_WEBGL false}}
+                  :ol.ENABLE_WEBGL false}
 ```
 
 Dig the [source code](https://github.com/openlayers/ol3/blob/master/src/ol/ol.js) for more defines.

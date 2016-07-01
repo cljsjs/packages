@@ -1,13 +1,13 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.1" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
 
 (require '[boot.task-helpers]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 
 (def +lib-version+ "2.2.41")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
   push {:ensure-clean false}
@@ -30,7 +30,7 @@
              :unzip true)
 
    (sift :move {#"^aws-sdk-js-.*/dist/aws-sdk.js"  "cljsjs/aws-sdk-js/development/aws-sdk-js.inc.js"
-                #"^aws-sdk-js-.*/dist/aws-sdk-min.js"  "cljsjs/aws-sdk-js/production/aws-sdk-js-min.inc.js"})
+                #"^aws-sdk-js-.*/dist/aws-sdk.min.js"  "cljsjs/aws-sdk-js/production/aws-sdk-js.min.inc.js"})
 
    (sift :include #{#"^cljsjs"})
 

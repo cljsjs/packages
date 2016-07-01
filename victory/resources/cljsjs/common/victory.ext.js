@@ -6,6 +6,7 @@ var Victory = {
   "VictoryAxis": function() {},
   "VictoryBar": function() {},
   "VictoryChart": function() {},
+  "VictoryContainer": function() {},
   "VictoryGroup": function() {},
   "VictoryLabel": function() {},
   "VictoryLine": function() {},

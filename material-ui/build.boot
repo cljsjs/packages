@@ -1,6 +1,6 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.1" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -8,8 +8,8 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "0.15.0")
-(def +version+ (str +lib-version+ "-3"))
+(def +lib-version+ "0.15.1")
+(def +version+ (str +lib-version+ "-1"))
 (def +lib-folder+ (format "material-ui-%s" +lib-version+))
 
 (task-options!
@@ -24,7 +24,7 @@
 
 (deftask download-material-ui []
          (download :url url
-                   :checksum "0453463bdd1f55f52938a500b59ed073"
+                   :checksum "f88d5468e13ad1d7f06fbf62591624b2"
                    :unzip true))
 
 (def main-file-name "main.js")
