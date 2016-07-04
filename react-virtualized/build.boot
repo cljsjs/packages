@@ -10,7 +10,7 @@
          '[boot.util :refer [sh]])
 
 (def +lib-version+ "7.8.3")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/react-virtualized
@@ -44,7 +44,7 @@
    (sift :move {#"^react-virtualized-(.*)/dist/umd/react-virtualized.js$" "cljsjs/react-virtualized/development/react-virtualized.inc.js"
                 #"^react-virtualized-(.*)/styles.css$" "cljsjs/react-virtualized/common/react-virtualized.inc.css"})
    (minify :in "cljsjs/react-virtualized/development/react-virtualized.inc.js"
-            :out "cljsjs/react-virtualized/development/react-virtualized.min.inc.js")
+            :out "cljsjs/react-virtualized/production/react-virtualized.min.inc.js")
    (sift :include #{#"^cljsjs"})
 
    (deps-cljs :name "cljsjs.react-virtualized"
