@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.15.3")
+(def +lib-version+ "0.16.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -19,8 +19,8 @@
   (comp
     (download :url (str "https://github.com/ethereum/web3.js/archive/" +lib-version+ ".zip")
               :unzip true)    
-    (sift :move {#"web3.js-0.15.3/dist/web3.js" "cljsjs/development/web3.inc.js"
-                 #"web3.js-0.15.3/dist/web3.min.js" "cljsjs/production/web3.min.inc.js"})
+    (sift :move {#"web3.js-0.16.0/dist/web3.js" "cljsjs/development/web3.inc.js"
+                 #"web3.js-0.16.0/dist/web3.min.js" "cljsjs/production/web3.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.web3")
     (pom)
