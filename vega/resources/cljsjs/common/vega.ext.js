@@ -1,3 +1,5 @@
+// Hand-crafted from <https://github.com/vega/vega/wiki/Runtime>
+
 var vg = {};
 vg.View.prototype = {}
 vg.View.prototype.width = function () {};
@@ -6,11 +8,14 @@ vg.View.prototype.padding = function () {};
 vg.View.prototype.viewport = function () {};
 vg.View.prototype.renderer = function () {};
 vg.View.prototype.data = function () {};
+vg.View.prototype.signal = function () {};
 vg.View.prototype.initialize = function () {};
 vg.View.prototype.render = function () {};
 vg.View.prototype.update = function () {};
 vg.View.prototype.on = function () {};
 vg.View.prototype.off = function () {};
+vg.View.prototype.onSignal = function () {};
+vg.View.prototype.offSignal = function () {};
 vg.View.prototype.toImageUrl = function () {};
 
 /**
