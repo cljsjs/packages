@@ -1,3 +1,11 @@
+// Generated via http://www.dotnetwise.com/Code/Externs/
+// One difference - the auto-generator marks workerSrc as a function, but it appears to be confused
+// Explicitly defined in pdf.js as @var {string}
+
+// Loaded JavaScripts:
+// pdf.js from https://github.com/mozilla/pdf.js/releases/tag/v1.5.188
+
+
 var PDFJS = {
     "version": {},
     "build": {},
@@ -128,6 +136,7 @@ var PDFJS = {
     "createPromiseCapability": function () {},
     "createBlob": function () {},
     "createObjectURL": function () {},
+    "removeNullCharacters": function () {},
     "maxImageSize": {},
     "cMapUrl": function () {},
     "cMapPacked": {},
@@ -145,22 +154,33 @@ var PDFJS = {
     "useOnlyCssZoom": {},
     "verbosity": {},
     "maxCanvasPixels": {},
+    "externalLinkTarget": {},
+    "externalLinkRel": {},
+    "isEvalSupported": {},
     "openExternalLinksInNewWindow": {},
     "getDocument": function () {},
-    "getPage": function () {},
-    "getViewport": function () {},
-    "then": function () {},
-    "cancel": function () {},
     "PDFDataRangeTransport": function () {},
+    "PDFWorker": function () {},
+    "CustomStyle": function () {},
+    "LinkTarget": {
+        "NONE": {},
+        "SELF": {},
+        "BLANK": {},
+        "PARENT": {},
+        "TOP": {}
+    },
+    "addLinkAttributes": function () {},
+    "getFilenameFromUrl": function () {},
+    "isExternalLinkTargetSet": function () {},
+    "AnnotationLayer": {
+        "render": function () {},
+        "update": function () {}
+    },
+    "renderTextLayer": function () {},
     "Metadata": function () {},
-    "AnnotationUtils": {
-        "getHtmlElement": function () {}
-    },
     "SVGGraphics": function () {},
-    "PDFPageView": {
-        "setPdfPage": function () {},
-        "update": function () {},
-        "draw": function () {}
-    },
-    "DefaultTextLayerFactory": {}
+    "disableHistory": {},
+    "disableTextLayer": {},
+    "ignoreCurrentPositionOnZoom": {},
+    "locale": {}
 };
