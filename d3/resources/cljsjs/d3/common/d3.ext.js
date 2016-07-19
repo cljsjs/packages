@@ -1,4 +1,5 @@
 // D3 Extern generated using: https://github.com/jmmk/javascript-externs-generator
+// With some externs added by hand: Every d3-force objects and the d3.zoom
 
 var d3 = {
   "format": function () {},
@@ -667,18 +668,73 @@ var d3 = {
   "treemapResquarify": {
     "ratio": function () {}
   },
-  "forceCenter": function () {},
-  "forceCollide": function () {},
-  "forceLink": function () {},
-  "forceManyBody": function () {},
-  "forceSimulation": function () {},
-  "forceX": function () {},
-  "forceY": function () {},
+  "forceCenter": {
+    "initialize": function () {},
+    "x": function () {},
+    "y": function () {}
+  },
+  "forceCollide": {
+    "initialize": function () {},
+    "radius": function () {},
+    "strength": function () {},
+    "iterations": function () {}
+  },
+  "forceLink": {
+    "initialize": function () {},
+    "links": function () {},
+    "id": function () {},
+    "distance": function () {},
+    "strength": function () {},
+    "iteractions": function () {}
+  },
+  "forceManyBody": {
+    "initialize": function () {},
+    "strength": function () {},
+    "theta": function () {},
+    "distanceMin": function () {},
+    "distanceMax": function () {}
+  },
+  "forceSimulation": {
+    "restart": function () {},
+    "stop": function () {},
+    "tick": function () {},
+    "nodes": function () {},
+    "alpha": function () {},
+    "alphaMin": function () {},
+    "alphaDecay": function () {},
+    "alphaTarget": function () {},
+    "velocityDecay": function () {},
+    "velocityAlpha": function () {},
+    "force": function () {},
+    "find": function () {},
+    "on": function () {}
+  },
+  "forceX": {
+    "initialize": function () {},
+    "strength": function () {},
+    "x": function () {}
+  },
+  "forceY": {
+    "initialize": function () {},
+    "strength": function () {},
+    "y": function () {}
+  },
   "drag": function () {},
   "dragDisable": function () {},
   "dragEnable": function () {},
   "voronoi": function () {},
-  "zoom": function () {},
+  "zoom": {
+    "transform": function () {},
+    "translateBy": function () {},
+    "scaleBy": function () {},
+    "scaleTo": function () {},
+    "filter": function () {},
+    "extent": function () {},
+    "scaleExtent": function () {},
+    "translateExtent": function () {},
+    "duration": function () {},
+    "on": function () {},
+  },
   "zoomIdentity": {
     "k": {},
     "x": {},
