@@ -1,11 +1,10 @@
 (set-env!
-  :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.0.5")
-(def +version+ (str +lib-version+ "-rc2-0"))
+(def +lib-version+ "3.2.0")
+(def +version+ +lib-version+)
 
 (task-options!
  pom  {:project     'cljsjs/firebase
@@ -17,11 +16,13 @@
 
 (deftask package []
   (comp
-    (download :url (str "https://github.com/firebase/firebase-bower/archive/v" +lib-version+ ".zip")
-              :checksum "559003EA8EF0375A16140BBB8AB87905"
-              :unzip true)
-    (sift :move {#"firebase-bower-([\d\.]*)/firebase.js" "cljsjs/development/firebase.inc.js"})
-    (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.firebase")
-    (pom)
-    (jar)))
+   (download :url (str "http://registry.npmjs.org/firebase/-/firebase-" +lib-version+ ".tgz")
+             ;;:checksum "29ab75208d45f96e312121d1f546fceec77653de"
+             :decompress true
+             :compression-format "gz"
+             :archive-format "tar")
+   (sift :move {#"firebase_npm/firebase.js" "cljsjs/development/firebase.inc.js"
+                #"firebase_npm/externs/(.*)\.js" "cljsjs/common/$1.ext.js"})
+   (deps-cljs :name "cljsjs.firebase")
+   (pom)
+   (jar)))

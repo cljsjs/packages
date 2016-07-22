@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/firebase "3.0.5-rc2-0"] ;; latest release
+[cljsjs/firebase "3.2.0"] ;; latest release
 ```
 [](/dependency)
 
@@ -16,3 +16,8 @@ you can require the packaged library like so:
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+
+## Maintenance
+
+Bump the version number in build.boot,
+the source and externs are downloaded from npm.
