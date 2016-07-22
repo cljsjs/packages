@@ -17,7 +17,6 @@
 (deftask package []
   (comp
    (download :url (str "http://registry.npmjs.org/firebase/-/firebase-" +lib-version+ ".tgz")
-             ;;:checksum "29ab75208d45f96e312121d1f546fceec77653de"
              :decompress true
              :compression-format "gz"
              :archive-format "tar")
