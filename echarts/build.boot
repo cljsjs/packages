@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.2.7")
+(def +lib-version+ "3.2.2")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,10 +18,10 @@
 (deftask package []
   (comp
     (download :url (str "https://github.com/ecomfe/echarts/archive/" +lib-version+ ".zip")
-              :checksum "5910dbce125fe826f495c9715f4eab4c"
+              :checksum "71C1BBEB07C36A1F4BF563DE77E76406"
               :unzip true)
-    (sift :move {#"^echarts-([\d\.]*)/build/source/echarts-all\.js$" "cljsjs/echarts/development/echarts.inc.js"
-                 #"^echarts-([\d\.]*)/build/dist/echarts-all\.js$" "cljsjs/echarts/production/echarts.min.inc.js"})
+    (sift :move {#"^echarts-([\d\.]*)/dist/echarts\.js$" "cljsjs/echarts/development/echarts.inc.js"
+                 #"^echarts-([\d\.]*)/dist/echarts.min\.js$" "cljsjs/echarts/production/echarts.min.inc.js"})
     (replace-content :in "cljsjs/echarts/production/echarts.min.inc.js" :match #"辅助线开关" :value "Line mark")
     (replace-content :in "cljsjs/echarts/development/echarts.inc.js" :match #"辅助线开关" :value "Line mark")
     (replace-content :in "cljsjs/echarts/production/echarts.min.inc.js" :match #"删除辅助线" :value "Delete line mark")
