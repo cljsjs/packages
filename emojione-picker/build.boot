@@ -35,22 +35,20 @@
         (io/copy (tmpd/file f) target))
       (binding [boot.util/*sh-dir* (str (io/file tmp (format "emojione-picker-%s" +sha-version+)))]
         ((sh "mkdir" "dist"))
-        ; ((sh "touch" "dist/foo"))
-        ((sh "npm" "install" "babel-cli"))
         ((sh "npm" "install"))
-        ((sh "npm" "run" "build"))
-        ((sh "node" "node_modules/browserify/bin/cmd.js" "lib/emoji.js" "-o" "dist/emojione-picker")))
+        ((sh "node" "node_modules/browserify/bin/cmd.js" "--debug" "-u" "react" "lib/picker.js" "-s" "EmojionePicker" "-o" "dist/emojione-picker.js"))
+        ((sh "sed" "-i.bak" "/var React = /d" "dist/emojione-picker.js")))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
-
 
 (deftask package []
   (comp
    (download-emojione-picker)
    (build-emojione-picker)
    (sift :move {#"^emojione-picker-3ba40710d942cce3375cbd4131aa5af8842e3354/dist/emojione-picker\.js$" "cljsjs/emojione-picker/development/emojione-picker.inc.js"
-                #"^emojione-picker-3ba40710d942cce3375cbd4131aa5af8842e3354/css/(.+)$" "cljsjs/emojione-picker/common/$1"})
+                #"^emojione-picker-3ba40710d942cce3375cbd4131aa5af8842e3354/css/picker\.css$" "cljsjs/emojione-picker/common/emojione-picker.css"})
+   (minify :in  "cljsjs/emojione-picker/development/emojione-picker.inc.js"
+           :out "cljsjs/emojione-picker/production/emojione-picker.min.inc.js")
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.emojione-picker"
-              :requires ["cljsjs.react"])
+   (deps-cljs :name "cljsjs.emojione-picker")
    (pom)
    (jar)))
