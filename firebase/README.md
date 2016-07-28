@@ -1,8 +1,10 @@
 # cljsjs/firebase
 
+Provides firebase and firebase-node
+
 [](dependency)
 ```clojure
-[cljsjs/firebase "3.2.0-0"] ;; latest release
+[cljsjs/firebase "3.2.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +14,14 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.firebase))
+  (:require [cljsjs.firebase]))
+```
+
+or for firebase-node:
+
+```clojure
+(ns application.core
+  (:require [cljsjs.firebase-node]))
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
