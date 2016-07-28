@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "8.4")
+(def +lib-version+ "9.5.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -58,8 +58,8 @@
   (comp
     (download :url (format "https://github.com/isagalaev/highlight.js/archive/%s.zip" +lib-version+)
               :unzip true
-              :checksum "2CAC2669F0D1AD1E384543059F10F8F8")
-    (sift :move {#"^highlight\.js-\d?\.\d?/" ""})
+              :checksum "735F105DC2B7B61FE9BC7DC811C0D7A6")
+    (sift :move {#"^highlight\.js-\d?\.\d?.\d?/" ""})
     (build-highlightjs)
     (sift :move {#"build/highlight\.min\.js" "cljsjs/common/highlight.inc.js"})
     (deps-cljs :name "cljsjs.highlight")
@@ -69,4 +69,3 @@
     (generate-lang-deps)
     (pom)
     (jar)))
-
