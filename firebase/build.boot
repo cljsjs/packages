@@ -1,9 +1,10 @@
 (set-env!
+  :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.2.0")
+(def +lib-version+ "3.2.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -21,7 +22,9 @@
              :compression-format "gz"
              :archive-format "tar")
    (sift :move {#"firebase_npm/firebase.js" "cljsjs/development/firebase.inc.js"
-                #"firebase_npm/externs/(.*)\.js" "cljsjs/common/$1.ext.js"})
-   (deps-cljs :name "cljsjs.firebase")
+                #"firebase_npm/firebase-node.js" "cljsjs/development/firebase-node.inc.js"
+                #"firebase_npm/externs/(.*)\.js" "cljsjs/common/$1.ext.js"}
+         :include #{#"^cljsjs"
+                    #"^deps.cljs"})
    (pom)
    (jar)))
