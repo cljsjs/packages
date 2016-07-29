@@ -15,6 +15,10 @@ you can require the packaged library like so:
   (:require cljsjs.highlight))
 ```
 
+Refer to [this](https://github.com/cljsjs/packages/wiki/Non-JS-Assets) wiki page
+for instructions on how to add CSS theme files to your project.
+
+
 And also include the languages you wish to highlight:
 
 ```
