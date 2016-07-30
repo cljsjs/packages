@@ -207,6 +207,16 @@ React.Component.prototype.componentWillUnmount = function() {};
 React.Component.prototype.render = function() {};
 
 /**
+ * @extends {React.Component}
+ */
+React.PureComponent = function() {};
+
+/**
+ * @type {Object}
+ */
+React.PureComponent.prototype.boolean;
+
+/**
  * Interface to preserve React attributes for advanced compilation.
  * @interface
  */
