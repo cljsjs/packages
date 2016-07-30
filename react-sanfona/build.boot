@@ -1,11 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]
-                  [cljsjs/react       "0.13.3-0"]])
+                  [cljsjs/react       "15.3.0-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.0.4")
+(def +lib-version+ "0.0.13")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -17,8 +17,8 @@
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (deftask download-react-sanfona []
-  (download :url      (str "https://github.com/daviferreira/react-sanfona/archive/" +lib-version+ ".zip")
-            :checksum "081d202e2e21a2cb555267bd86b40d3e"
+  (download :url      (str "https://github.com/daviferreira/react-sanfona/archive/v" +lib-version+ ".zip")
+            :checksum "9987038196d6be00c0743e58bdc9e2b4"
             :unzip    true))
 
 (deftask package []
