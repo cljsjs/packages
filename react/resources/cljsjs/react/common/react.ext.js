@@ -212,9 +212,9 @@ React.Component.prototype.render = function() {};
 React.PureComponent = function() {};
 
 /**
- * @type {Object}
+ * @type {boolean}
  */
-React.PureComponent.prototype.boolean;
+React.PureComponent.prototype.isPureReactComponent;
 
 /**
  * Interface to preserve React attributes for advanced compilation.
