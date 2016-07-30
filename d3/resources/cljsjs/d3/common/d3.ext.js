@@ -203,6 +203,7 @@ var d3 = {
   "cubehelix": function () {},
   "interpolate": function () {},
   "interpolateArray": function () {},
+  "interpolateDate": function () {},
   "interpolateNumber": function () {},
   "interpolateObject": function () {},
   "interpolateRound": function () {},
@@ -757,34 +758,63 @@ var d3 = {
   "brushX": function () {},
   "brushY": function () {},
   "brushSelection": function () {},
+  "chord": function () {},
+  "ribbon": function () {},
+  "geoAlbers": function () {},
+  "geoAlbersUsa": function () {},
   "geoArea": function () {},
+  "geoAzimuthalEqualArea": function () {},
+  "geoAzimuthalEqualAreaRaw": {
+    "invert": function () {}
+  },
+  "geoAzimuthalEquidistant": function () {},
+  "geoAzimuthalEquidistantRaw": {
+    "invert": function () {}
+  },
   "geoBounds": function () {},
   "geoCentroid": function () {},
   "geoCircle": function () {},
   "geoClipExtent": function () {},
+  "geoConicConformal": function () {},
+  "geoConicConformalRaw": function () {},
+  "geoConicEqualArea": function () {},
+  "geoConicEqualAreaRaw": function () {},
+  "geoConicEquidistant": function () {},
+  "geoConicEquidistantRaw": function () {},
   "geoDistance": function () {},
+  "geoEquirectangular": function () {},
+  "geoEquirectangularRaw": {
+    "invert": function () {}
+  },
+  "geoGnomonic": function () {},
+  "geoGnomonicRaw": {
+    "invert": function () {}
+  },
   "geoGraticule": function () {},
   "geoInterpolate": function () {},
   "geoLength": function () {},
+  "geoMercator": function () {},
+  "geoMercatorRaw": {
+    "invert": function () {}
+  },
+  "geoOrthographic": function () {},
+  "geoOrthographicRaw": {
+    "invert": function () {}
+  },
   "geoPath": function () {},
-  "geoAlbers": function () {},
-  "geoAlbersUsa": function () {},
-  "geoAzimuthalEqualArea": function () {},
-  "geoAzimuthalEquidistant": function () {},
-  "geoConicConformal": function () {},
-  "geoConicEqualArea": function () {},
-  "geoConicEquidistant": function () {},
-  "geoEquirectangular": function () {},
-  "geoGnomonic": function () {},
   "geoProjection": function () {},
   "geoProjectionMutator": function () {},
-  "geoMercator": function () {},
-  "geoOrthographic": function () {},
-  "geoStereographic": function () {},
-  "geoTransverseMercator": function () {},
   "geoRotation": function () {},
+  "geoStereographic": function () {},
+  "geoStereographicRaw": {
+    "invert": function () {}
+  },
   "geoStream": function () {},
-  "geoTransform": function () {}
+  "geoTransform": function () {},
+  "geoTransverseMercator": function () {},
+  "geoTransverseMercatorRaw": {
+    "invert": function () {}
+  }
 };
 d3.map.prototype = {
   "constructor": function () {},
