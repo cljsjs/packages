@@ -6,7 +6,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "0.0.13")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/react-sanfona
@@ -17,8 +17,8 @@
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (deftask download-react-sanfona []
-  (download :url      (str "https://github.com/daviferreira/react-sanfona/archive/v" +lib-version+ ".zip")
-            :checksum "9987038196d6be00c0743e58bdc9e2b4"
+  (download :url      (str "https://github.com/akiroz/react-sanfona/archive/" +lib-version+ ".zip")
+            :checksum "d976f6b2c4f4918df0259739737c4b5e"
             :unzip    true))
 
 (deftask package []
