@@ -6,8 +6,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.6.0")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "0.6.3")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/fixed-data-table
@@ -19,7 +19,7 @@
 
 (deftask download-fixed-data-table []
   (download :url      (format "https://github.com/facebook/fixed-data-table/archive/v%s.zip" +lib-version+)
-            :checksum "0903f335f5285f2371f43e29161ecfd9"
+            :checksum "85931e28b24230b442f9ea1ef16bf328"
             :unzip    true))
 
 (deftask package []
