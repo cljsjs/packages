@@ -1,4 +1,4 @@
-# cljsjs/showdown
+# cljsjs/simplemde
 
 [](dependency)
 ```clojure
@@ -21,8 +21,8 @@ to can require the packaged library like so:
 This package contains two CSS files, 
 
 ```css
-/cljsjs/simplmde/development/simplemde.css      ;non-minified
-/cljsjs/simplmde/production/simplemde.min.css   ;minified
+/cljsjs/simplemde/development/simplemde.css      ;non-minified
+/cljsjs/simplemde/production/simplemde.min.css   ;minified
 ```
 
      
