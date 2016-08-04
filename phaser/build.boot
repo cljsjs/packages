@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.4.2")
+(def +lib-version+ "2.6.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,8 +18,8 @@
 
 (deftask package []
   (comp
-   (download :url (format "http://cdn.jsdelivr.net/phaser/%s/phaser.zip" +lib-version+)
-             :checksum "f74d415e21fd6b26819c7f2fe2de9a8d"
+   (download :url (format "https://cdn.jsdelivr.net/phaser/%s/phaser.zip" +lib-version+)
+             :checksum "82319568fc64f2f2d3a6d75eeb9f72d5"
              :unzip true)
    (sift :move {#"^phaser\.js$"
                 "cljsjs/phaser/development/phaser.inc.js"
