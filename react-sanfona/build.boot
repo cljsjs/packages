@@ -5,7 +5,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.0.13")
+(def +lib-version+ "0.0.14")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,7 +18,7 @@
 
 (deftask download-react-sanfona []
   (download :url      (str "https://github.com/daviferreira/react-sanfona/archive/v" +lib-version+ ".zip")
-            :checksum "9987038196d6be00c0743e58bdc9e2b4"
+            :checksum "536bf3f4a7d504c99fd14f74e77122a1"
             :unzip    true))
 
 (deftask package []
