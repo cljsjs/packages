@@ -1,5 +1,5 @@
 (def +lib-version+ "0.1.4")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (set-env!
  :resource-paths #{"resources"}
