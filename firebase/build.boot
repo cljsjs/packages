@@ -23,7 +23,7 @@
              :archive-format "tar")
    (sift :move {#"firebase_npm/firebase.js" "cljsjs/development/firebase.inc.js"
                 #"firebase_npm/firebase-node.js" "cljsjs/development/firebase-node.inc.js"
-                #"firebase_npm/externs/(.*)-externs\.js" "cljsjs/common/$1.ext.js"}
+                #"firebase_npm/externs/" "cljsjs/common/"}
          :include #{#"^cljsjs"
                     #"^deps.cljs"})
    (pom)
