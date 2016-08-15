@@ -20,8 +20,7 @@ dependencies:
     # Run tests
     # Run in dependency step to cache the deps
     - ./test-extern-files.sh
-    - ./circle-test.sh
-    - ./circle-deploy.sh
+    - ./circle.sh
 test:
   override:
     - echo 1

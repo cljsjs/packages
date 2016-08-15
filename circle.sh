@@ -7,4 +7,6 @@ if [[ $CIRCLE_BRANCH == "master" ]]; then
     gpg --allow-secret-key-import --import gpg.key
     rm gpg.key
     ./deploy-changed.sh
+else
+    ./test-changed.sh
 fi
