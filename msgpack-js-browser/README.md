@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/msgpack-js-browser "0.1.4-0"] ;; latest release
+[cljsjs/msgpack-js-browser "0.1.4-1"] ;; latest release
 ```
 [](/dependency)
 
