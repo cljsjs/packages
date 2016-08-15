@@ -6,929 +6,2818 @@
 
 var ReactBootstrap = {
   "__esModule": {},
-  "Accordion": {
-    "displayName": {}
-  },
+  "Accordion": function () {},
   "Alert": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {},
+    "propTypes": {
+      "onDismiss": {
+        "isRequired": function () {}
+      },
+      "closeLabel": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      },
+      "bsStyle": {
+        "isRequired": function () {},
+        "_values": {}
+      }
+    },
+    "defaultProps": {
+      "closeLabel": {},
+      "bsClass": {},
+      "bsStyle": {}
+    },
     "STYLES": {}
   },
   "Badge": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {}
+    "propTypes": {
+      "pullRight": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "pullRight": {},
+      "bsClass": {}
+    }
   },
   "Breadcrumb": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {},
     "Item": {
-      "displayName": {},
-      "propTypes": {},
-      "getDefaultProps": function () {},
-      "defaultProps": {}
+      "propTypes": {
+        "active": {
+          "isRequired": function () {}
+        },
+        "href": {
+          "isRequired": function () {}
+        },
+        "title": {
+          "isRequired": function () {}
+        },
+        "target": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "active": {}
+      }
+    },
+    "propTypes": {
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "bsClass": {}
     }
   },
   "BreadcrumbItem": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {}
+    "propTypes": {
+      "active": {
+        "isRequired": function () {}
+      },
+      "href": {
+        "isRequired": function () {}
+      },
+      "title": {
+        "isRequired": function () {}
+      },
+      "target": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "active": {}
+    }
   },
   "Button": {
-    "propTypes": {},
-    "defaultProps": {},
-    "types": {},
-    "SIZES": {},
-    "STYLES": {}
+    "propTypes": {
+      "active": {
+        "isRequired": function () {}
+      },
+      "disabled": {
+        "isRequired": function () {}
+      },
+      "block": {
+        "isRequired": function () {}
+      },
+      "onClick": {
+        "isRequired": function () {}
+      },
+      "componentClass": {
+        "isRequired": function () {}
+      },
+      "href": {
+        "isRequired": function () {}
+      },
+      "type": {
+        "isRequired": function () {}
+      },
+      "bsStyle": {
+        "isRequired": function () {},
+        "_values": {}
+      },
+      "bsSize": {
+        "isRequired": function () {},
+        "_values": {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "active": {},
+      "block": {},
+      "disabled": {},
+      "bsStyle": {},
+      "bsClass": {}
+    },
+    "STYLES": {},
+    "SIZES": {}
   },
   "ButtonGroup": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {}
-  },
-  "ButtonInput": {
-    "types": {},
-    "defaultProps": {},
-    "propTypes": {}
+    "propTypes": {
+      "vertical": {
+        "isRequired": function () {}
+      },
+      "justified": {
+        "isRequired": function () {}
+      },
+      "block": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "block": {},
+      "justified": {},
+      "vertical": {},
+      "bsClass": {}
+    }
   },
   "ButtonToolbar": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {}
+    "SIZES": {},
+    "propTypes": {
+      "bsSize": {
+        "isRequired": function () {},
+        "_values": {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "bsClass": {}
+    }
   },
   "Carousel": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {},
+    "propTypes": {
+      "slide": {
+        "isRequired": function () {}
+      },
+      "indicators": {
+        "isRequired": function () {}
+      },
+      "interval": {
+        "isRequired": function () {}
+      },
+      "controls": {
+        "isRequired": function () {}
+      },
+      "pauseOnHover": {
+        "isRequired": function () {}
+      },
+      "wrap": {
+        "isRequired": function () {}
+      },
+      "onSelect": {
+        "isRequired": function () {}
+      },
+      "onSlideEnd": {
+        "isRequired": function () {}
+      },
+      "activeIndex": {
+        "isRequired": function () {}
+      },
+      "defaultActiveIndex": {
+        "isRequired": function () {}
+      },
+      "direction": {
+        "isRequired": function () {}
+      },
+      "prevIcon": {
+        "isRequired": function () {}
+      },
+      "nextIcon": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "slide": {},
+      "interval": {},
+      "pauseOnHover": {},
+      "wrap": {},
+      "indicators": {},
+      "controls": {},
+      "prevIcon": {
+        "$$typeof": {},
+        "type": {
+          "propTypes": {
+            "glyph": function () {},
+            "bsClass": {
+              "isRequired": function () {}
+            }
+          },
+          "defaultProps": {
+            "bsClass": {}
+          }
+        },
+        "key": {},
+        "ref": {},
+        "props": {
+          "glyph": {},
+          "bsClass": {}
+        },
+        "_owner": {}
+      },
+      "nextIcon": {
+        "$$typeof": {},
+        "type": {
+          "propTypes": {
+            "glyph": function () {},
+            "bsClass": {
+              "isRequired": function () {}
+            }
+          },
+          "defaultProps": {
+            "bsClass": {}
+          }
+        },
+        "key": {},
+        "ref": {},
+        "props": {
+          "glyph": {},
+          "bsClass": {}
+        },
+        "_owner": {}
+      },
+      "bsClass": {}
+    },
     "Caption": {
-      "displayName": {},
-      "propTypes": {},
-      "getDefaultProps": function () {},
-      "defaultProps": {}
+      "propTypes": {
+        "componentClass": {
+          "isRequired": function () {}
+        },
+        "bsClass": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "componentClass": {},
+        "bsClass": {}
+      }
     },
     "Item": {
-      "displayName": {},
-      "propTypes": {},
-      "getDefaultProps": function () {},
-      "defaultProps": {}
+      "propTypes": {
+        "direction": {
+          "isRequired": function () {}
+        },
+        "onAnimateOutEnd": {
+          "isRequired": function () {}
+        },
+        "active": {
+          "isRequired": function () {}
+        },
+        "animateIn": {
+          "isRequired": function () {}
+        },
+        "animateOut": {
+          "isRequired": function () {}
+        },
+        "index": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "active": {},
+        "animateIn": {},
+        "animateOut": {}
+      }
     }
   },
   "CarouselItem": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {}
+    "propTypes": {
+      "direction": {
+        "isRequired": function () {}
+      },
+      "onAnimateOutEnd": {
+        "isRequired": function () {}
+      },
+      "active": {
+        "isRequired": function () {}
+      },
+      "animateIn": {
+        "isRequired": function () {}
+      },
+      "animateOut": {
+        "isRequired": function () {}
+      },
+      "index": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "active": {},
+      "animateIn": {},
+      "animateOut": {}
+    }
   },
   "Checkbox": {
-    "propTypes": {},
-    "defaultProps": {}
+    "propTypes": {
+      "inline": {
+        "isRequired": function () {}
+      },
+      "disabled": {
+        "isRequired": function () {}
+      },
+      "validationState": {
+        "isRequired": function () {}
+      },
+      "inputRef": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "inline": {},
+      "disabled": {},
+      "bsClass": {}
+    }
   },
   "Clearfix": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {}
+    "propTypes": {
+      "componentClass": {
+        "isRequired": function () {}
+      },
+      "visibleXsBlock": {
+        "isRequired": function () {}
+      },
+      "visibleSmBlock": {
+        "isRequired": function () {}
+      },
+      "visibleMdBlock": {
+        "isRequired": function () {}
+      },
+      "visibleLgBlock": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "componentClass": {},
+      "bsClass": {}
+    }
   },
   "ControlLabel": {
-    "propTypes": {},
-    "defaultProps": {},
-    "contextTypes": {}
+    "propTypes": {
+      "htmlFor": {
+        "isRequired": function () {}
+      },
+      "srOnly": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "srOnly": {},
+      "bsClass": {}
+    },
+    "contextTypes": {
+      "$bs_formGroup": {
+        "isRequired": function () {}
+      }
+    }
   },
   "Col": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {}
+    "propTypes": {
+      "componentClass": {
+        "isRequired": function () {}
+      },
+      "xs": {
+        "isRequired": function () {}
+      },
+      "sm": {
+        "isRequired": function () {}
+      },
+      "md": {
+        "isRequired": function () {}
+      },
+      "lg": {
+        "isRequired": function () {}
+      },
+      "xsHidden": {
+        "isRequired": function () {}
+      },
+      "smHidden": {
+        "isRequired": function () {}
+      },
+      "mdHidden": {
+        "isRequired": function () {}
+      },
+      "lgHidden": {
+        "isRequired": function () {}
+      },
+      "xsOffset": {
+        "isRequired": function () {}
+      },
+      "smOffset": {
+        "isRequired": function () {}
+      },
+      "mdOffset": {
+        "isRequired": function () {}
+      },
+      "lgOffset": {
+        "isRequired": function () {}
+      },
+      "xsPush": {
+        "isRequired": function () {}
+      },
+      "smPush": {
+        "isRequired": function () {}
+      },
+      "mdPush": {
+        "isRequired": function () {}
+      },
+      "lgPush": {
+        "isRequired": function () {}
+      },
+      "xsPull": {
+        "isRequired": function () {}
+      },
+      "smPull": {
+        "isRequired": function () {}
+      },
+      "mdPull": {
+        "isRequired": function () {}
+      },
+      "lgPull": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "componentClass": {},
+      "bsClass": {}
+    }
   },
   "Collapse": {
-    "propTypes": {},
-    "defaultProps": {}
+    "propTypes": {
+      "in": {
+        "isRequired": function () {}
+      },
+      "unmountOnExit": {
+        "isRequired": function () {}
+      },
+      "transitionAppear": {
+        "isRequired": function () {}
+      },
+      "timeout": {
+        "isRequired": function () {}
+      },
+      "onEnter": {
+        "isRequired": function () {}
+      },
+      "onEntering": {
+        "isRequired": function () {}
+      },
+      "onEntered": {
+        "isRequired": function () {}
+      },
+      "onExit": {
+        "isRequired": function () {}
+      },
+      "onExiting": {
+        "isRequired": function () {}
+      },
+      "onExited": {
+        "isRequired": function () {}
+      },
+      "dimension": {
+        "isRequired": function () {}
+      },
+      "getDimensionValue": {
+        "isRequired": function () {}
+      },
+      "role": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "in": {},
+      "timeout": {},
+      "unmountOnExit": {},
+      "transitionAppear": {},
+      "dimension": {},
+      "getDimensionValue": function () {}
+    }
   },
   "Dropdown": {
     "displayName": {},
-    "propTypes": {},
+    "propTypes": {
+      "open": function () {},
+      "defaultOpen": {
+        "isRequired": function () {}
+      }
+    },
     "ControlledComponent": {
-      "Toggle": {
-        "defaultProps": {},
-        "propTypes": {},
-        "isToggle": {},
-        "titleProp": {},
-        "onClickProp": {}
+      "propTypes": {
+        "dropup": {
+          "isRequired": function () {}
+        },
+        "id": function () {},
+        "componentClass": {
+          "isRequired": function () {}
+        },
+        "children": {
+          "isRequired": function () {}
+        },
+        "disabled": {
+          "isRequired": function () {}
+        },
+        "pullRight": {
+          "isRequired": function () {}
+        },
+        "open": {
+          "isRequired": function () {}
+        },
+        "onClose": {
+          "isRequired": function () {}
+        },
+        "onToggle": {
+          "isRequired": function () {}
+        },
+        "onSelect": {
+          "isRequired": function () {}
+        },
+        "role": {
+          "isRequired": function () {}
+        },
+        "bsClass": {
+          "isRequired": function () {}
+        }
       },
-      "TOGGLE_REF": {},
-      "TOGGLE_ROLE": {},
-      "MENU_ROLE": {},
-      "defaultProps": {},
-      "propTypes": {}
+      "defaultProps": {
+        "componentClass": {
+          "propTypes": {
+            "vertical": {
+              "isRequired": function () {}
+            },
+            "justified": {
+              "isRequired": function () {}
+            },
+            "block": {
+              "isRequired": function () {}
+            },
+            "bsClass": {
+              "isRequired": function () {}
+            }
+          },
+          "defaultProps": {
+            "block": {},
+            "justified": {},
+            "vertical": {},
+            "bsClass": {}
+          }
+        },
+        "bsClass": {}
+      }
     },
     "deferControlTo": function () {},
     "Toggle": {
-      "defaultProps": {},
-      "propTypes": {},
-      "isToggle": {},
-      "titleProp": {},
-      "onClickProp": {}
+      "propTypes": {
+        "noCaret": {
+          "isRequired": function () {}
+        },
+        "open": {
+          "isRequired": function () {}
+        },
+        "title": {
+          "isRequired": function () {}
+        },
+        "useAnchor": {
+          "isRequired": function () {}
+        },
+        "bsClass": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "open": {},
+        "useAnchor": {},
+        "bsRole": {},
+        "bsClass": {}
+      }
     },
     "Menu": {
-      "defaultProps": {},
-      "propTypes": {}
+      "propTypes": {
+        "open": {
+          "isRequired": function () {}
+        },
+        "pullRight": {
+          "isRequired": function () {}
+        },
+        "onClose": {
+          "isRequired": function () {}
+        },
+        "labelledBy": {
+          "isRequired": function () {}
+        },
+        "onSelect": {
+          "isRequired": function () {}
+        },
+        "bsClass": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "bsRole": {},
+        "pullRight": {},
+        "bsClass": {}
+      }
     }
   },
   "DropdownButton": {
-    "propTypes": {},
-    "defaultProps": {}
+    "propTypes": {
+      "open": function () {},
+      "defaultOpen": {
+        "isRequired": function () {}
+      },
+      "bsStyle": {
+        "isRequired": function () {}
+      },
+      "bsSize": {
+        "isRequired": function () {}
+      },
+      "title": function () {},
+      "noCaret": {
+        "isRequired": function () {}
+      },
+      "children": {
+        "isRequired": function () {}
+      }
+    }
   },
   "Fade": {
-    "propTypes": {},
-    "defaultProps": {}
+    "propTypes": {
+      "in": {
+        "isRequired": function () {}
+      },
+      "unmountOnExit": {
+        "isRequired": function () {}
+      },
+      "transitionAppear": {
+        "isRequired": function () {}
+      },
+      "timeout": {
+        "isRequired": function () {}
+      },
+      "onEnter": {
+        "isRequired": function () {}
+      },
+      "onEntering": {
+        "isRequired": function () {}
+      },
+      "onEntered": {
+        "isRequired": function () {}
+      },
+      "onExit": {
+        "isRequired": function () {}
+      },
+      "onExiting": {
+        "isRequired": function () {}
+      },
+      "onExited": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "in": {},
+      "timeout": {},
+      "unmountOnExit": {},
+      "transitionAppear": {}
+    }
   },
   "Form": {
-    "propTypes": {},
-    "defaultProps": {}
+    "propTypes": {
+      "horizontal": {
+        "isRequired": function () {}
+      },
+      "inline": {
+        "isRequired": function () {}
+      },
+      "componentClass": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "horizontal": {},
+      "inline": {},
+      "componentClass": {},
+      "bsClass": {}
+    }
   },
   "FormControl": {
-    "propTypes": {},
-    "defaultProps": {},
-    "contextTypes": {},
+    "propTypes": {
+      "componentClass": {
+        "isRequired": function () {}
+      },
+      "type": {
+        "isRequired": function () {}
+      },
+      "id": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "componentClass": {},
+      "bsClass": {}
+    },
+    "contextTypes": {
+      "$bs_formGroup": {
+        "isRequired": function () {}
+      }
+    },
     "Feedback": {
-      "defaultProps": {},
-      "contextTypes": {},
-      "propTypes": {}
+      "defaultProps": {
+        "bsRole": {},
+        "bsClass": {}
+      },
+      "contextTypes": {
+        "$bs_formGroup": {
+          "isRequired": function () {}
+        }
+      },
+      "propTypes": {
+        "bsClass": {
+          "isRequired": function () {}
+        }
+      }
     },
     "Static": {
-      "propTypes": {},
-      "defaultProps": {}
+      "propTypes": {
+        "componentClass": {
+          "isRequired": function () {}
+        },
+        "bsClass": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "componentClass": {},
+        "bsClass": {}
+      }
     }
   },
   "FormGroup": {
-    "propTypes": {},
-    "childContextTypes": {},
+    "propTypes": {
+      "controlId": {
+        "isRequired": function () {}
+      },
+      "validationState": {
+        "isRequired": function () {}
+      },
+      "bsSize": {
+        "isRequired": function () {},
+        "_values": {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "childContextTypes": {
+      "$bs_formGroup": function () {}
+    },
     "SIZES": {},
-    "defaultProps": {}
+    "defaultProps": {
+      "bsClass": {}
+    }
   },
   "Glyphicon": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {}
+    "propTypes": {
+      "glyph": function () {},
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "bsClass": {}
+    }
   },
   "Grid": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {}
+    "propTypes": {
+      "fluid": {
+        "isRequired": function () {}
+      },
+      "componentClass": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "componentClass": {},
+      "fluid": {},
+      "bsClass": {}
+    }
   },
   "HelpBlock": {
-    "propTypes": {},
-    "defaultProps": {}
+    "propTypes": {
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "bsClass": {}
+    }
   },
   "Image": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {}
-  },
-  "Input": {
-    "propTypes": {},
-    "defaultProps": {}
+    "propTypes": {
+      "responsive": {
+        "isRequired": function () {}
+      },
+      "rounded": {
+        "isRequired": function () {}
+      },
+      "circle": {
+        "isRequired": function () {}
+      },
+      "thumbnail": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "responsive": {},
+      "rounded": {},
+      "circle": {},
+      "thumbnail": {},
+      "bsClass": {}
+    }
   },
   "InputGroup": {
     "Addon": {
-      "propTypes": {},
-      "defaultProps": {}
+      "propTypes": {
+        "bsClass": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "bsClass": {}
+      }
     },
     "Button": {
-      "propTypes": {},
-      "defaultProps": {}
+      "propTypes": {
+        "bsClass": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "bsClass": {}
+      }
     },
     "SIZES": {},
-    "propTypes": {},
-    "defaultProps": {}
-  },
-  "Interpolate": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {},
-    "REGEXP": {}
+    "propTypes": {
+      "bsSize": {
+        "isRequired": function () {},
+        "_values": {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "bsClass": {}
+    }
   },
   "Jumbotron": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {}
+    "propTypes": {
+      "componentClass": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "componentClass": {},
+      "bsClass": {}
+    }
   },
   "Label": {
     "STYLES": {},
-    "propTypes": {},
-    "defaultProps": {}
+    "propTypes": {
+      "bsStyle": {
+        "isRequired": function () {},
+        "_values": {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "bsStyle": {},
+      "bsClass": {}
+    }
   },
   "ListGroup": {
-    "defaultProps": {},
-    "propTypes": {}
+    "propTypes": {
+      "componentClass": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "bsClass": {}
+    }
   },
   "ListGroupItem": {
-    "propTypes": {},
-    "defaultTypes": {},
-    "defaultProps": {},
+    "propTypes": {
+      "active": {
+        "isRequired": function () {}
+      },
+      "disabled": {
+        "isRequired": function () {}
+      },
+      "header": {
+        "isRequired": function () {}
+      },
+      "listItem": {
+        "isRequired": function () {}
+      },
+      "onClick": {
+        "isRequired": function () {}
+      },
+      "href": {
+        "isRequired": function () {}
+      },
+      "type": {
+        "isRequired": function () {}
+      },
+      "bsStyle": {
+        "isRequired": function () {},
+        "_values": {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "listItem": {},
+      "bsClass": {}
+    },
     "STYLES": {}
   },
   "Media": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {},
+    "propTypes": {
+      "componentClass": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "componentClass": {},
+      "bsClass": {}
+    },
     "Heading": {
-      "displayName": {},
-      "propTypes": {},
-      "getDefaultProps": function () {},
-      "defaultProps": {}
+      "propTypes": {
+        "componentClass": {
+          "isRequired": function () {}
+        },
+        "bsClass": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "componentClass": {},
+        "bsClass": {}
+      }
     },
     "Body": {
-      "displayName": {},
-      "propTypes": {},
-      "getDefaultProps": function () {},
-      "defaultProps": {}
+      "propTypes": {
+        "componentClass": {
+          "isRequired": function () {}
+        },
+        "bsClass": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "componentClass": {},
+        "bsClass": {}
+      }
     },
     "Left": {
-      "displayName": {},
-      "propTypes": {}
+      "propTypes": {
+        "align": {
+          "isRequired": function () {}
+        },
+        "bsClass": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "bsClass": {}
+      }
     },
     "Right": {
-      "displayName": {},
-      "propTypes": {}
+      "propTypes": {
+        "align": {
+          "isRequired": function () {}
+        },
+        "bsClass": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "bsClass": {}
+      }
     },
     "List": {
-      "displayName": {}
+      "propTypes": {
+        "bsClass": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "bsClass": {}
+      }
     },
     "ListItem": {
-      "displayName": {}
+      "propTypes": {
+        "bsClass": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "bsClass": {}
+      }
     }
   },
   "MenuItem": {
-    "propTypes": {},
-    "defaultProps": {}
+    "propTypes": {
+      "active": {
+        "isRequired": function () {}
+      },
+      "disabled": {
+        "isRequired": function () {}
+      },
+      "divider": {
+        "isRequired": function () {}
+      },
+      "eventKey": {
+        "isRequired": function () {}
+      },
+      "header": {
+        "isRequired": function () {}
+      },
+      "href": {
+        "isRequired": function () {}
+      },
+      "onClick": {
+        "isRequired": function () {}
+      },
+      "onSelect": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "divider": {},
+      "disabled": {},
+      "header": {},
+      "bsClass": {}
+    }
   },
   "Modal": {
-    "displayName": {},
-    "propTypes": {},
-    "childContextTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {},
+    "propTypes": {
+      "container": {
+        "isRequired": function () {}
+      },
+      "show": {
+        "isRequired": function () {}
+      },
+      "onShow": {
+        "isRequired": function () {}
+      },
+      "onHide": {
+        "isRequired": function () {}
+      },
+      "backdrop": {
+        "isRequired": function () {}
+      },
+      "onEscapeKeyUp": {
+        "isRequired": function () {}
+      },
+      "onBackdropClick": {
+        "isRequired": function () {}
+      },
+      "backdropStyle": {
+        "isRequired": function () {}
+      },
+      "backdropClassName": {
+        "isRequired": function () {}
+      },
+      "containerClassName": {
+        "isRequired": function () {}
+      },
+      "keyboard": {
+        "isRequired": function () {}
+      },
+      "transition": {
+        "isRequired": function () {}
+      },
+      "dialogTransitionTimeout": {
+        "isRequired": function () {}
+      },
+      "backdropTransitionTimeout": {
+        "isRequired": function () {}
+      },
+      "autoFocus": {
+        "isRequired": function () {}
+      },
+      "enforceFocus": {
+        "isRequired": function () {}
+      },
+      "onEnter": {
+        "isRequired": function () {}
+      },
+      "onEntering": {
+        "isRequired": function () {}
+      },
+      "onEntered": {
+        "isRequired": function () {}
+      },
+      "onExit": {
+        "isRequired": function () {}
+      },
+      "onExiting": {
+        "isRequired": function () {}
+      },
+      "onExited": {
+        "isRequired": function () {}
+      },
+      "dialogClassName": {
+        "isRequired": function () {}
+      },
+      "bsSize": {
+        "isRequired": function () {},
+        "_values": {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      },
+      "animation": {
+        "isRequired": function () {}
+      },
+      "dialogComponentClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "show": {},
+      "backdrop": {},
+      "keyboard": {},
+      "autoFocus": {},
+      "enforceFocus": {},
+      "onHide": function () {},
+      "animation": {},
+      "dialogComponentClass": {
+        "propTypes": {
+          "dialogClassName": {
+            "isRequired": function () {}
+          },
+          "bsSize": {
+            "isRequired": function () {},
+            "_values": {}
+          },
+          "bsClass": {
+            "isRequired": function () {}
+          }
+        },
+        "SIZES": {},
+        "defaultProps": {
+          "bsClass": {}
+        }
+      },
+      "bsClass": {}
+    },
+    "childContextTypes": {
+      "$bs_modal": {
+        "isRequired": function () {}
+      }
+    },
     "Body": {
-      "propTypes": {},
-      "defaultProps": {}
+      "propTypes": {
+        "bsClass": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "bsClass": {}
+      }
     },
     "Header": {
-      "propTypes": {},
-      "contextTypes": {},
-      "defaultProps": {}
+      "propTypes": {
+        "aria-label": {
+          "isRequired": function () {}
+        },
+        "closeButton": {
+          "isRequired": function () {}
+        },
+        "onHide": {
+          "isRequired": function () {}
+        },
+        "bsClass": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "aria-label": {},
+        "closeButton": {},
+        "bsClass": {}
+      },
+      "contextTypes": {
+        "$bs_modal": {
+          "isRequired": function () {}
+        }
+      }
     },
     "Title": {
-      "propTypes": {},
-      "defaultProps": {}
+      "propTypes": {
+        "bsClass": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "bsClass": {}
+      }
     },
     "Footer": {
-      "propTypes": {},
-      "defaultProps": {}
+      "propTypes": {
+        "bsClass": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "bsClass": {}
+      }
     },
     "Dialog": {
-      "displayName": {},
-      "propTypes": {},
-      "defaultProps": {},
-      "SIZES": {}
+      "propTypes": {
+        "dialogClassName": {
+          "isRequired": function () {}
+        },
+        "bsSize": {
+          "isRequired": function () {},
+          "_values": {}
+        },
+        "bsClass": {
+          "isRequired": function () {}
+        }
+      },
+      "SIZES": {},
+      "defaultProps": {
+        "bsClass": {}
+      }
     },
     "TRANSITION_DURATION": {},
     "BACKDROP_TRANSITION_DURATION": {},
     "SIZES": {}
   },
   "ModalBody": {
-    "propTypes": {},
-    "defaultProps": {}
+    "propTypes": {
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "bsClass": {}
+    }
   },
   "ModalFooter": {
-    "propTypes": {},
-    "defaultProps": {}
+    "propTypes": {
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "bsClass": {}
+    }
   },
   "ModalHeader": {
-    "propTypes": {},
-    "contextTypes": {},
-    "defaultProps": {}
+    "propTypes": {
+      "aria-label": {
+        "isRequired": function () {}
+      },
+      "closeButton": {
+        "isRequired": function () {}
+      },
+      "onHide": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "aria-label": {},
+      "closeButton": {},
+      "bsClass": {}
+    },
+    "contextTypes": {
+      "$bs_modal": {
+        "isRequired": function () {}
+      }
+    }
   },
   "ModalTitle": {
-    "propTypes": {},
-    "defaultProps": {}
+    "propTypes": {
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "bsClass": {}
+    }
   },
   "Nav": {
-    "propTypes": {},
-    "contextTypes": {},
-    "defaultProps": {},
+    "propTypes": {
+      "activeKey": {
+        "isRequired": function () {}
+      },
+      "activeHref": {
+        "isRequired": function () {}
+      },
+      "stacked": {
+        "isRequired": function () {}
+      },
+      "justified": {
+        "isRequired": function () {}
+      },
+      "onSelect": {
+        "isRequired": function () {}
+      },
+      "role": {
+        "isRequired": function () {}
+      },
+      "navbar": {
+        "isRequired": function () {}
+      },
+      "pullRight": {
+        "isRequired": function () {}
+      },
+      "pullLeft": {
+        "isRequired": function () {}
+      },
+      "bsStyle": {
+        "isRequired": function () {},
+        "_values": {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "justified": {},
+      "pullRight": {},
+      "pullLeft": {},
+      "stacked": {},
+      "bsClass": {}
+    },
+    "contextTypes": {
+      "$bs_navbar": {
+        "isRequired": function () {}
+      },
+      "$bs_tabContainer": {
+        "isRequired": function () {}
+      }
+    },
     "STYLES": {}
   },
   "Navbar": {
     "displayName": {},
-    "propTypes": {},
+    "propTypes": {
+      "expanded": function () {},
+      "defaultExpanded": {
+        "isRequired": function () {}
+      },
+      "bsStyle": {
+        "isRequired": function () {},
+        "_values": {}
+      }
+    },
     "ControlledComponent": {
-      "displayName": {},
-      "propTypes": {},
-      "childContextTypes": {},
-      "getDefaultProps": function () {},
-      "defaultProps": {}
+      "propTypes": {
+        "fixedTop": {
+          "isRequired": function () {}
+        },
+        "fixedBottom": {
+          "isRequired": function () {}
+        },
+        "staticTop": {
+          "isRequired": function () {}
+        },
+        "inverse": {
+          "isRequired": function () {}
+        },
+        "fluid": {
+          "isRequired": function () {}
+        },
+        "componentClass": {
+          "isRequired": function () {}
+        },
+        "onToggle": {
+          "isRequired": function () {}
+        },
+        "expanded": {
+          "isRequired": function () {}
+        },
+        "role": {
+          "isRequired": function () {}
+        },
+        "bsClass": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "componentClass": {},
+        "fixedTop": {},
+        "fixedBottom": {},
+        "staticTop": {},
+        "inverse": {},
+        "fluid": {},
+        "bsClass": {}
+      },
+      "childContextTypes": {
+        "$bs_navbar": {
+          "isRequired": function () {}
+        }
+      }
     },
     "deferControlTo": function () {},
-    "defaultProps": {},
-    "STYLES": {},
     "Brand": {
-      "contextTypes": {}
+      "contextTypes": {
+        "$bs_navbar": {
+          "isRequired": function () {}
+        }
+      }
     },
     "Header": {
-      "displayName": {},
-      "contextTypes": {}
+      "contextTypes": {
+        "$bs_navbar": {
+          "isRequired": function () {}
+        }
+      }
     },
     "Toggle": {
-      "displayName": {},
-      "propTypes": {},
-      "contextTypes": {}
+      "propTypes": {
+        "onClick": {
+          "isRequired": function () {}
+        },
+        "children": {
+          "isRequired": function () {}
+        }
+      },
+      "contextTypes": {
+        "$bs_navbar": {
+          "isRequired": function () {}
+        }
+      }
     },
     "Collapse": {
-      "displayName": {},
-      "contextTypes": {}
+      "contextTypes": {
+        "$bs_navbar": {
+          "isRequired": function () {}
+        }
+      }
     },
     "Form": {
       "displayName": {},
-      "propTypes": {},
-      "defaultProps": {},
-      "contextTypes": {}
+      "propTypes": {
+        "componentClass": {
+          "isRequired": function () {}
+        },
+        "pullRight": {
+          "isRequired": function () {}
+        },
+        "pullLeft": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "componentClass": {},
+        "pullRight": {},
+        "pullLeft": {}
+      },
+      "contextTypes": {
+        "$bs_navbar": {
+          "isRequired": function () {}
+        }
+      }
     },
     "Text": {
       "displayName": {},
-      "propTypes": {},
-      "defaultProps": {},
-      "contextTypes": {}
+      "propTypes": {
+        "componentClass": {
+          "isRequired": function () {}
+        },
+        "pullRight": {
+          "isRequired": function () {}
+        },
+        "pullLeft": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "componentClass": {},
+        "pullRight": {},
+        "pullLeft": {}
+      },
+      "contextTypes": {
+        "$bs_navbar": {
+          "isRequired": function () {}
+        }
+      }
     },
     "Link": {
       "displayName": {},
-      "propTypes": {},
-      "defaultProps": {},
-      "contextTypes": {}
+      "propTypes": {
+        "componentClass": {
+          "isRequired": function () {}
+        },
+        "pullRight": {
+          "isRequired": function () {}
+        },
+        "pullLeft": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "componentClass": {},
+        "pullRight": {},
+        "pullLeft": {}
+      },
+      "contextTypes": {
+        "$bs_navbar": {
+          "isRequired": function () {}
+        }
+      }
+    },
+    "STYLES": {},
+    "defaultProps": {
+      "bsStyle": {}
     }
   },
   "NavbarBrand": {
-    "contextTypes": {}
+    "contextTypes": {
+      "$bs_navbar": {
+        "isRequired": function () {}
+      }
+    }
   },
   "NavDropdown": {
-    "propTypes": {}
+    "propTypes": {
+      "open": function () {},
+      "defaultOpen": {
+        "isRequired": function () {}
+      },
+      "title": function () {},
+      "noCaret": {
+        "isRequired": function () {}
+      },
+      "active": {
+        "isRequired": function () {}
+      },
+      "children": {
+        "isRequired": function () {}
+      }
+    }
   },
   "NavItem": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {}
+    "propTypes": {
+      "active": {
+        "isRequired": function () {}
+      },
+      "disabled": {
+        "isRequired": function () {}
+      },
+      "role": {
+        "isRequired": function () {}
+      },
+      "href": {
+        "isRequired": function () {}
+      },
+      "onClick": {
+        "isRequired": function () {}
+      },
+      "onSelect": {
+        "isRequired": function () {}
+      },
+      "eventKey": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "active": {},
+      "disabled": {}
+    }
   },
   "Overlay": {
-    "propTypes": {},
-    "defaultProps": {}
+    "propTypes": {
+      "container": {
+        "isRequired": function () {}
+      },
+      "target": {
+        "isRequired": function () {}
+      },
+      "containerPadding": {
+        "isRequired": function () {}
+      },
+      "placement": {
+        "isRequired": function () {}
+      },
+      "shouldUpdatePosition": {
+        "isRequired": function () {}
+      },
+      "show": {
+        "isRequired": function () {}
+      },
+      "rootClose": {
+        "isRequired": function () {}
+      },
+      "onHide": {
+        "isRequired": function () {}
+      },
+      "transition": {
+        "isRequired": function () {}
+      },
+      "onEnter": {
+        "isRequired": function () {}
+      },
+      "onEntering": {
+        "isRequired": function () {}
+      },
+      "onEntered": {
+        "isRequired": function () {}
+      },
+      "onExit": {
+        "isRequired": function () {}
+      },
+      "onExiting": {
+        "isRequired": function () {}
+      },
+      "onExited": {
+        "isRequired": function () {}
+      },
+      "animation": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "animation": {
+        "propTypes": {
+          "in": {
+            "isRequired": function () {}
+          },
+          "unmountOnExit": {
+            "isRequired": function () {}
+          },
+          "transitionAppear": {
+            "isRequired": function () {}
+          },
+          "timeout": {
+            "isRequired": function () {}
+          },
+          "onEnter": {
+            "isRequired": function () {}
+          },
+          "onEntering": {
+            "isRequired": function () {}
+          },
+          "onEntered": {
+            "isRequired": function () {}
+          },
+          "onExit": {
+            "isRequired": function () {}
+          },
+          "onExiting": {
+            "isRequired": function () {}
+          },
+          "onExited": {
+            "isRequired": function () {}
+          }
+        },
+        "defaultProps": {
+          "in": {},
+          "timeout": {},
+          "unmountOnExit": {},
+          "transitionAppear": {}
+        }
+      },
+      "rootClose": {},
+      "show": {}
+    }
   },
   "OverlayTrigger": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {}
+    "propTypes": {
+      "container": {
+        "isRequired": function () {}
+      },
+      "target": {
+        "isRequired": function () {}
+      },
+      "containerPadding": {
+        "isRequired": function () {}
+      },
+      "placement": {
+        "isRequired": function () {}
+      },
+      "shouldUpdatePosition": {
+        "isRequired": function () {}
+      },
+      "show": {
+        "isRequired": function () {}
+      },
+      "rootClose": {
+        "isRequired": function () {}
+      },
+      "onHide": {
+        "isRequired": function () {}
+      },
+      "transition": {
+        "isRequired": function () {}
+      },
+      "onEnter": {
+        "isRequired": function () {}
+      },
+      "onEntering": {
+        "isRequired": function () {}
+      },
+      "onEntered": {
+        "isRequired": function () {}
+      },
+      "onExit": {
+        "isRequired": function () {}
+      },
+      "onExiting": {
+        "isRequired": function () {}
+      },
+      "onExited": {
+        "isRequired": function () {}
+      },
+      "animation": {
+        "isRequired": function () {}
+      },
+      "trigger": {
+        "isRequired": function () {}
+      },
+      "delay": {
+        "isRequired": function () {}
+      },
+      "delayShow": {
+        "isRequired": function () {}
+      },
+      "delayHide": {
+        "isRequired": function () {}
+      },
+      "defaultOverlayShown": {
+        "isRequired": function () {}
+      },
+      "overlay": function () {},
+      "onBlur": {
+        "isRequired": function () {}
+      },
+      "onClick": {
+        "isRequired": function () {}
+      },
+      "onFocus": {
+        "isRequired": function () {}
+      },
+      "onMouseOut": {
+        "isRequired": function () {}
+      },
+      "onMouseOver": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "defaultOverlayShown": {},
+      "trigger": {}
+    }
   },
   "PageHeader": {
-    "displayName": {}
+    "propTypes": {
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "bsClass": {}
+    }
   },
   "PageItem": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {}
+    "propTypes": {
+      "disabled": {
+        "isRequired": function () {}
+      },
+      "previous": {
+        "isRequired": function () {}
+      },
+      "next": {
+        "isRequired": function () {}
+      },
+      "onClick": {
+        "isRequired": function () {}
+      },
+      "onSelect": {
+        "isRequired": function () {}
+      },
+      "eventKey": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "disabled": {},
+      "previous": {},
+      "next": {}
+    }
   },
   "Pager": {
-    "displayName": {},
-    "propTypes": {}
+    "propTypes": {
+      "onSelect": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "Item": {
+      "propTypes": {
+        "disabled": {
+          "isRequired": function () {}
+        },
+        "previous": {
+          "isRequired": function () {}
+        },
+        "next": {
+          "isRequired": function () {}
+        },
+        "onClick": {
+          "isRequired": function () {}
+        },
+        "onSelect": {
+          "isRequired": function () {}
+        },
+        "eventKey": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "disabled": {},
+        "previous": {},
+        "next": {}
+      }
+    },
+    "defaultProps": {
+      "bsClass": {}
+    }
   },
   "Pagination": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {}
+    "propTypes": {
+      "activePage": {
+        "isRequired": function () {}
+      },
+      "items": {
+        "isRequired": function () {}
+      },
+      "maxButtons": {
+        "isRequired": function () {}
+      },
+      "boundaryLinks": {
+        "isRequired": function () {}
+      },
+      "ellipsis": {
+        "isRequired": function () {}
+      },
+      "first": {
+        "isRequired": function () {}
+      },
+      "last": {
+        "isRequired": function () {}
+      },
+      "prev": {
+        "isRequired": function () {}
+      },
+      "next": {
+        "isRequired": function () {}
+      },
+      "onSelect": {
+        "isRequired": function () {}
+      },
+      "buttonComponentClass": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "activePage": {},
+      "items": {},
+      "maxButtons": {},
+      "first": {},
+      "last": {},
+      "prev": {},
+      "next": {},
+      "ellipsis": {},
+      "boundaryLinks": {},
+      "bsClass": {}
+    }
   },
   "Panel": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {},
+    "propTypes": {
+      "collapsible": {
+        "isRequired": function () {}
+      },
+      "onSelect": {
+        "isRequired": function () {}
+      },
+      "header": {
+        "isRequired": function () {}
+      },
+      "id": {
+        "isRequired": function () {}
+      },
+      "footer": {
+        "isRequired": function () {}
+      },
+      "defaultExpanded": {
+        "isRequired": function () {}
+      },
+      "expanded": {
+        "isRequired": function () {}
+      },
+      "eventKey": {
+        "isRequired": function () {}
+      },
+      "headerRole": {
+        "isRequired": function () {}
+      },
+      "panelRole": {
+        "isRequired": function () {}
+      },
+      "onEnter": {
+        "isRequired": function () {}
+      },
+      "onEntering": {
+        "isRequired": function () {}
+      },
+      "onEntered": {
+        "isRequired": function () {}
+      },
+      "onExit": {
+        "isRequired": function () {}
+      },
+      "onExiting": {
+        "isRequired": function () {}
+      },
+      "onExited": {
+        "isRequired": function () {}
+      },
+      "bsStyle": {
+        "isRequired": function () {},
+        "_values": {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "defaultExpanded": {},
+      "bsStyle": {},
+      "bsClass": {}
+    },
     "STYLES": {}
   },
   "PanelGroup": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {}
+    "propTypes": {
+      "accordion": {
+        "isRequired": function () {}
+      },
+      "activeKey": {
+        "isRequired": function () {}
+      },
+      "defaultActiveKey": {
+        "isRequired": function () {}
+      },
+      "onSelect": {
+        "isRequired": function () {}
+      },
+      "role": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "accordion": {},
+      "bsClass": {}
+    }
   },
   "Popover": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {}
+    "propTypes": {
+      "id": function () {},
+      "placement": {
+        "isRequired": function () {}
+      },
+      "positionTop": {
+        "isRequired": function () {}
+      },
+      "positionLeft": {
+        "isRequired": function () {}
+      },
+      "arrowOffsetTop": {
+        "isRequired": function () {}
+      },
+      "arrowOffsetLeft": {
+        "isRequired": function () {}
+      },
+      "title": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "placement": {},
+      "bsClass": {}
+    }
   },
   "ProgressBar": {
-    "propTypes": {},
-    "defaultProps": {},
+    "propTypes": {
+      "min": {
+        "isRequired": function () {}
+      },
+      "now": {
+        "isRequired": function () {}
+      },
+      "max": {
+        "isRequired": function () {}
+      },
+      "label": {
+        "isRequired": function () {}
+      },
+      "srOnly": {
+        "isRequired": function () {}
+      },
+      "striped": {
+        "isRequired": function () {}
+      },
+      "active": {
+        "isRequired": function () {}
+      },
+      "children": function () {},
+      "isChild": {
+        "isRequired": function () {}
+      },
+      "bsStyle": {
+        "isRequired": function () {},
+        "_values": {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "min": {},
+      "max": {},
+      "active": {},
+      "isChild": {},
+      "srOnly": {},
+      "striped": {},
+      "bsClass": {}
+    },
     "STYLES": {}
   },
   "Radio": {
-    "propTypes": {},
-    "defaultProps": {}
+    "propTypes": {
+      "inline": {
+        "isRequired": function () {}
+      },
+      "disabled": {
+        "isRequired": function () {}
+      },
+      "validationState": {
+        "isRequired": function () {}
+      },
+      "inputRef": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "inline": {},
+      "disabled": {},
+      "bsClass": {}
+    }
   },
   "ResponsiveEmbed": {
-    "defaultProps": {},
-    "propTypes": {}
+    "propTypes": {
+      "children": function () {},
+      "a16by9": {
+        "isRequired": function () {}
+      },
+      "a4by3": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "a16by9": {},
+      "a4by3": {},
+      "bsClass": {}
+    }
   },
   "Row": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {}
+    "propTypes": {
+      "componentClass": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "componentClass": {},
+      "bsClass": {}
+    }
   },
   "SafeAnchor": {
-    "propTypes": {}
+    "propTypes": {
+      "href": {
+        "isRequired": function () {}
+      },
+      "onClick": {
+        "isRequired": function () {}
+      },
+      "disabled": {
+        "isRequired": function () {}
+      },
+      "role": {
+        "isRequired": function () {}
+      },
+      "tabIndex": {
+        "isRequired": function () {}
+      },
+      "componentClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "componentClass": {}
+    }
   },
   "SplitButton": {
-    "propTypes": {},
-    "defaultProps": {},
+    "propTypes": {
+      "open": function () {},
+      "defaultOpen": {
+        "isRequired": function () {}
+      },
+      "bsStyle": {
+        "isRequired": function () {}
+      },
+      "bsSize": {
+        "isRequired": function () {}
+      },
+      "href": {
+        "isRequired": function () {}
+      },
+      "onClick": {
+        "isRequired": function () {}
+      },
+      "title": function () {},
+      "toggleLabel": {
+        "isRequired": function () {}
+      },
+      "children": {
+        "isRequired": function () {}
+      }
+    },
     "Toggle": {
-      "defaultProps": {}
+      "defaultProps": {
+        "open": {},
+        "useAnchor": {},
+        "bsRole": {},
+        "bsClass": {}
+      }
     }
   },
   "Tab": {
-    "propTypes": {},
+    "propTypes": {
+      "eventKey": {
+        "isRequired": function () {}
+      },
+      "animation": {
+        "isRequired": function () {}
+      },
+      "id": {
+        "isRequired": function () {}
+      },
+      "aria-labelledby": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      },
+      "onEnter": {
+        "isRequired": function () {}
+      },
+      "onEntering": {
+        "isRequired": function () {}
+      },
+      "onEntered": {
+        "isRequired": function () {}
+      },
+      "onExit": {
+        "isRequired": function () {}
+      },
+      "onExiting": {
+        "isRequired": function () {}
+      },
+      "onExited": {
+        "isRequired": function () {}
+      },
+      "unmountOnExit": {
+        "isRequired": function () {}
+      },
+      "disabled": {
+        "isRequired": function () {}
+      },
+      "title": {
+        "isRequired": function () {}
+      },
+      "tabClassName": {
+        "isRequired": function () {}
+      }
+    },
     "Container": {
       "displayName": {},
-      "propTypes": {},
+      "propTypes": {
+        "activeKey": function () {},
+        "defaultActiveKey": {
+          "isRequired": function () {}
+        }
+      },
       "ControlledComponent": {
-        "displayName": {},
-        "propTypes": {},
-        "childContextTypes": {}
+        "propTypes": {
+          "id": function () {},
+          "generateChildId": {
+            "isRequired": function () {}
+          },
+          "onSelect": {
+            "isRequired": function () {}
+          },
+          "activeKey": {
+            "isRequired": function () {}
+          }
+        },
+        "childContextTypes": {
+          "$bs_tabContainer": {
+            "isRequired": function () {}
+          }
+        }
       },
       "deferControlTo": function () {}
     },
     "Content": {
-      "displayName": {},
-      "propTypes": {},
-      "contextTypes": {},
-      "childContextTypes": {},
-      "getDefaultProps": function () {},
-      "defaultProps": {}
+      "propTypes": {
+        "componentClass": {
+          "isRequired": function () {}
+        },
+        "animation": {
+          "isRequired": function () {}
+        },
+        "unmountOnExit": {
+          "isRequired": function () {}
+        },
+        "bsClass": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "componentClass": {},
+        "animation": {},
+        "unmountOnExit": {},
+        "bsClass": {}
+      },
+      "contextTypes": {
+        "$bs_tabContainer": {
+          "isRequired": function () {}
+        }
+      },
+      "childContextTypes": {
+        "$bs_tabContent": {
+          "isRequired": function () {}
+        }
+      }
     },
     "Pane": {
-      "displayName": {},
-      "propTypes": {},
-      "contextTypes": {},
-      "childContextTypes": {},
-      "defaultProps": {}
+      "propTypes": {
+        "eventKey": {
+          "isRequired": function () {}
+        },
+        "animation": {
+          "isRequired": function () {}
+        },
+        "id": {
+          "isRequired": function () {}
+        },
+        "aria-labelledby": {
+          "isRequired": function () {}
+        },
+        "bsClass": {
+          "isRequired": function () {}
+        },
+        "onEnter": {
+          "isRequired": function () {}
+        },
+        "onEntering": {
+          "isRequired": function () {}
+        },
+        "onEntered": {
+          "isRequired": function () {}
+        },
+        "onExit": {
+          "isRequired": function () {}
+        },
+        "onExiting": {
+          "isRequired": function () {}
+        },
+        "onExited": {
+          "isRequired": function () {}
+        },
+        "unmountOnExit": {
+          "isRequired": function () {}
+        }
+      },
+      "contextTypes": {
+        "$bs_tabContainer": {
+          "isRequired": function () {}
+        },
+        "$bs_tabContent": {
+          "isRequired": function () {}
+        }
+      },
+      "childContextTypes": {
+        "$bs_tabContainer": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "bsClass": {}
+      }
     }
   },
   "TabContainer": {
     "displayName": {},
-    "propTypes": {},
+    "propTypes": {
+      "activeKey": function () {},
+      "defaultActiveKey": {
+        "isRequired": function () {}
+      }
+    },
     "ControlledComponent": {
-      "displayName": {},
-      "propTypes": {},
-      "childContextTypes": {}
+      "propTypes": {
+        "id": function () {},
+        "generateChildId": {
+          "isRequired": function () {}
+        },
+        "onSelect": {
+          "isRequired": function () {}
+        },
+        "activeKey": {
+          "isRequired": function () {}
+        }
+      },
+      "childContextTypes": {
+        "$bs_tabContainer": {
+          "isRequired": function () {}
+        }
+      }
     },
     "deferControlTo": function () {}
   },
   "TabContent": {
-    "displayName": {},
-    "propTypes": {},
-    "contextTypes": {},
-    "childContextTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {}
+    "propTypes": {
+      "componentClass": {
+        "isRequired": function () {}
+      },
+      "animation": {
+        "isRequired": function () {}
+      },
+      "unmountOnExit": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "componentClass": {},
+      "animation": {},
+      "unmountOnExit": {},
+      "bsClass": {}
+    },
+    "contextTypes": {
+      "$bs_tabContainer": {
+        "isRequired": function () {}
+      }
+    },
+    "childContextTypes": {
+      "$bs_tabContent": {
+        "isRequired": function () {}
+      }
+    }
   },
   "Table": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {}
+    "propTypes": {
+      "striped": {
+        "isRequired": function () {}
+      },
+      "bordered": {
+        "isRequired": function () {}
+      },
+      "condensed": {
+        "isRequired": function () {}
+      },
+      "hover": {
+        "isRequired": function () {}
+      },
+      "responsive": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "bordered": {},
+      "condensed": {},
+      "hover": {},
+      "responsive": {},
+      "striped": {},
+      "bsClass": {}
+    }
   },
   "TabPane": {
-    "displayName": {},
-    "propTypes": {},
-    "contextTypes": {},
-    "childContextTypes": {},
-    "defaultProps": {}
+    "propTypes": {
+      "eventKey": {
+        "isRequired": function () {}
+      },
+      "animation": {
+        "isRequired": function () {}
+      },
+      "id": {
+        "isRequired": function () {}
+      },
+      "aria-labelledby": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      },
+      "onEnter": {
+        "isRequired": function () {}
+      },
+      "onEntering": {
+        "isRequired": function () {}
+      },
+      "onEntered": {
+        "isRequired": function () {}
+      },
+      "onExit": {
+        "isRequired": function () {}
+      },
+      "onExiting": {
+        "isRequired": function () {}
+      },
+      "onExited": {
+        "isRequired": function () {}
+      },
+      "unmountOnExit": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "$bs_tabContainer": {
+        "isRequired": function () {}
+      },
+      "$bs_tabContent": {
+        "isRequired": function () {}
+      }
+    },
+    "childContextTypes": {
+      "$bs_tabContainer": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "bsClass": {}
+    }
   },
   "Tabs": {
     "displayName": {},
-    "propTypes": {},
+    "propTypes": {
+      "activeKey": function () {},
+      "defaultActiveKey": {
+        "isRequired": function () {}
+      }
+    },
     "ControlledComponent": {
-      "displayName": {},
-      "propTypes": {},
-      "getDefaultProps": function () {},
-      "defaultProps": {}
+      "propTypes": {
+        "activeKey": {
+          "isRequired": function () {}
+        },
+        "bsStyle": {
+          "isRequired": function () {}
+        },
+        "animation": {
+          "isRequired": function () {}
+        },
+        "id": function () {},
+        "onSelect": {
+          "isRequired": function () {}
+        },
+        "unmountOnExit": {
+          "isRequired": function () {}
+        },
+        "bsClass": {
+          "isRequired": function () {}
+        }
+      },
+      "defaultProps": {
+        "bsStyle": {},
+        "animation": {},
+        "unmountOnExit": {},
+        "bsClass": {}
+      }
     },
     "deferControlTo": function () {}
   },
   "Thumbnail": {
-    "displayName": {},
-    "propTypes": {},
-    "defaultProps": {}
+    "propTypes": {
+      "src": {
+        "isRequired": function () {}
+      },
+      "alt": {
+        "isRequired": function () {}
+      },
+      "href": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "bsClass": {}
+    }
   },
   "Tooltip": {
-    "displayName": {},
-    "propTypes": {},
-    "getDefaultProps": function () {},
-    "defaultProps": {}
+    "propTypes": {
+      "id": function () {},
+      "placement": {
+        "isRequired": function () {}
+      },
+      "positionTop": {
+        "isRequired": function () {}
+      },
+      "positionLeft": {
+        "isRequired": function () {}
+      },
+      "arrowOffsetTop": {
+        "isRequired": function () {}
+      },
+      "arrowOffsetLeft": {
+        "isRequired": function () {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "placement": {},
+      "bsClass": {}
+    }
   },
   "Well": {
     "SIZES": {},
-    "propTypes": {},
-    "defaultProps": {}
+    "propTypes": {
+      "bsSize": {
+        "isRequired": function () {},
+        "_values": {}
+      },
+      "bsClass": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "bsClass": {}
+    }
   },
-  "FormControls": {},
-  "utils": {}
+  "utils": {
+    "__esModule": {},
+    "bootstrapUtils": {
+      "__esModule": {},
+      "bsClass": function () {},
+      "bsStyles": function () {},
+      "bsSizes": function () {},
+      "_curry": function () {},
+      "prefix": function () {},
+      "getClassSet": function () {},
+      "splitBsProps": function () {},
+      "splitBsPropsAndOmit": function () {},
+      "addStyle": function () {}
+    },
+    "createChainedFunction": function () {},
+    "ValidComponentChildren": {
+      "map": function () {},
+      "forEach": function () {},
+      "count": function () {},
+      "find": function () {},
+      "filter": function () {},
+      "every": function () {},
+      "some": function () {},
+      "toArray": function () {}
+    }
+  }
 };
 ReactBootstrap.Accordion.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Alert.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "renderDismissButton": function () {},
   "renderSrOnlyDismissButton": function () {},
   "render": function () {},
-  "componentDidMount": function () {},
-  "componentWillUnmount": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Badge.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "hasContent": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Breadcrumb.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "renderBreadcrumbItem": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Breadcrumb.Item.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.BreadcrumbItem.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Button.prototype = {
-  "render": function () {},
   "renderAnchor": function () {},
   "renderButton": function () {},
-  "renderNavItem": function () {},
+  "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
   "forceUpdate": function () {}
 };
 ReactBootstrap.ButtonGroup.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
-  "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
-};
-ReactBootstrap.ButtonInput.prototype = {
-  "componentWillMount": function () {},
-  "renderFormGroup": function () {},
-  "renderInput": function () {},
-  "getInputDOMNode": function () {},
-  "getValue": function () {},
-  "getChecked": function () {},
-  "getSelectedOptions": function () {},
-  "isCheckboxOrRadio": function () {},
-  "isFile": function () {},
-  "renderInputGroup": function () {},
-  "renderIcon": function () {},
-  "renderHelp": function () {},
-  "renderCheckboxAndRadioWrapper": function () {},
-  "renderWrapper": function () {},
-  "renderLabel": function () {},
-  "renderChildren": function () {},
   "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
   "forceUpdate": function () {}
 };
 ReactBootstrap.ButtonToolbar.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Carousel.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
-  "getInitialState": function () {},
-  "getDirection": function () {},
   "componentWillReceiveProps": function () {},
   "componentDidMount": function () {},
   "componentWillUnmount": function () {},
-  "next": function () {},
-  "prev": function () {},
-  "pause": function () {},
-  "play": function () {},
-  "waitForNext": function () {},
   "handleMouseOver": function () {},
   "handleMouseOut": function () {},
-  "render": function () {},
-  "renderPrev": function () {},
-  "renderNext": function () {},
-  "renderControls": function () {},
-  "renderIndicator": function () {},
-  "renderIndicators": function () {},
-  "getActiveIndex": function () {},
+  "handlePrev": function () {},
+  "handleNext": function () {},
   "handleItemAnimateOutEnd": function () {},
-  "renderItem": function () {},
-  "handleSelect": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "updateComponent": function () {},
+  "getActiveIndex": function () {},
+  "getDirection": function () {},
+  "select": function () {},
+  "waitForNext": function () {},
+  "pause": function () {},
+  "play": function () {},
+  "renderIndicators": function () {},
+  "renderControls": function () {},
+  "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
+};
+ReactBootstrap.Carousel.defaultProps.prevIcon.type.prototype = {
+  "render": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {},
+  "forceUpdate": function () {}
+};
+ReactBootstrap.Carousel.defaultProps.nextIcon.type.prototype = {
+  "render": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {},
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Carousel.Caption.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Carousel.Item.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
-  "getInitialState": function () {},
-  "handleAnimateOutEnd": function () {},
   "componentWillReceiveProps": function () {},
   "componentDidUpdate": function () {},
+  "componentWillUnmount": function () {},
+  "handleAnimateOutEnd": function () {},
   "startAnimation": function () {},
   "render": function () {},
-  "renderCaption": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.CarouselItem.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
-  "getInitialState": function () {},
-  "handleAnimateOutEnd": function () {},
   "componentWillReceiveProps": function () {},
   "componentDidUpdate": function () {},
+  "componentWillUnmount": function () {},
+  "handleAnimateOutEnd": function () {},
   "startAnimation": function () {},
   "render": function () {},
-  "renderCaption": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Checkbox.prototype = {
   "render": function () {},
@@ -937,30 +2826,10 @@ ReactBootstrap.Checkbox.prototype = {
   "forceUpdate": function () {}
 };
 ReactBootstrap.Clearfix.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.ControlLabel.prototype = {
   "render": function () {},
@@ -969,41 +2838,20 @@ ReactBootstrap.ControlLabel.prototype = {
   "forceUpdate": function () {}
 };
 ReactBootstrap.Col.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Collapse.prototype = {
-  "render": function () {},
   "handleEnter": function () {},
   "handleEntering": function () {},
   "handleEntered": function () {},
   "handleExit": function () {},
   "handleExiting": function () {},
   "_dimension": function () {},
-  "_getTransitionInstance": function () {},
   "_getScrollDimensionValue": function () {},
+  "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
   "forceUpdate": function () {}
@@ -1038,21 +2886,20 @@ ReactBootstrap.Dropdown.ControlledComponent.prototype = {
   "componentDidMount": function () {},
   "componentWillUpdate": function () {},
   "componentDidUpdate": function () {},
-  "render": function () {},
-  "toggleOpen": function () {},
   "handleClick": function () {},
   "handleKeyDown": function () {},
+  "toggleOpen": function () {},
   "handleClose": function () {},
   "focusNextOnOpen": function () {},
   "focus": function () {},
-  "extractChildren": function () {},
-  "refineMenu": function () {},
-  "refineToggle": function () {},
+  "renderToggle": function () {},
+  "renderMenu": function () {},
+  "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
   "forceUpdate": function () {}
 };
-ReactBootstrap.Dropdown.ControlledComponent.Toggle.prototype = {
+ReactBootstrap.Dropdown.ControlledComponent.defaultProps.componentClass.prototype = {
   "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
@@ -1066,10 +2913,10 @@ ReactBootstrap.Dropdown.Toggle.prototype = {
 };
 ReactBootstrap.Dropdown.Menu.prototype = {
   "handleKeyDown": function () {},
-  "focusNext": function () {},
-  "focusPrevious": function () {},
   "getItemsAndActiveIndex": function () {},
   "getFocusableMenuItems": function () {},
+  "focusNext": function () {},
+  "focusPrevious": function () {},
   "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
@@ -1122,56 +2969,16 @@ ReactBootstrap.FormGroup.prototype = {
   "forceUpdate": function () {}
 };
 ReactBootstrap.Glyphicon.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Grid.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.HelpBlock.prototype = {
   "render": function () {},
@@ -1180,49 +2987,7 @@ ReactBootstrap.HelpBlock.prototype = {
   "forceUpdate": function () {}
 };
 ReactBootstrap.Image.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
-};
-ReactBootstrap.Input.prototype = {
-  "componentWillMount": function () {},
-  "render": function () {},
-  "getInputDOMNode": function () {},
-  "getValue": function () {},
-  "getChecked": function () {},
-  "getSelectedOptions": function () {},
-  "isCheckboxOrRadio": function () {},
-  "isFile": function () {},
-  "renderInputGroup": function () {},
-  "renderIcon": function () {},
-  "renderHelp": function () {},
-  "renderCheckboxAndRadioWrapper": function () {},
-  "renderWrapper": function () {},
-  "renderLabel": function () {},
-  "renderInput": function () {},
-  "renderFormGroup": function () {},
-  "renderChildren": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
   "forceUpdate": function () {}
@@ -1245,59 +3010,14 @@ ReactBootstrap.InputGroup.Button.prototype = {
   "setState": function () {},
   "forceUpdate": function () {}
 };
-ReactBootstrap.Interpolate.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
-  "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
-};
 ReactBootstrap.Jumbotron.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Label.prototype = {
+  "hasContent": function () {},
   "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
@@ -1305,206 +3025,58 @@ ReactBootstrap.Label.prototype = {
 };
 ReactBootstrap.ListGroup.prototype = {
   "render": function () {},
-  "isAnchorOrButton": function () {},
-  "areCustomChildren": function () {},
-  "renderUL": function () {},
-  "renderDiv": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
   "forceUpdate": function () {}
 };
 ReactBootstrap.ListGroupItem.prototype = {
+  "renderHeader": function () {},
   "render": function () {},
-  "renderLi": function () {},
-  "renderAnchor": function () {},
-  "renderButton": function () {},
-  "renderSpan": function () {},
-  "renderStructuredContent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
   "forceUpdate": function () {}
 };
 ReactBootstrap.Media.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Media.Heading.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Media.Body.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Media.Left.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Media.Right.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Media.List.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Media.ListItem.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.MenuItem.prototype = {
   "handleClick": function () {},
@@ -1514,35 +3086,23 @@ ReactBootstrap.MenuItem.prototype = {
   "forceUpdate": function () {}
 };
 ReactBootstrap.Modal.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
-  "getInitialState": function () {},
   "getChildContext": function () {},
   "componentWillUnmount": function () {},
-  "render": function () {},
-  "_onShow": function () {},
-  "_onHide": function () {},
-  "handleDialogClick": function () {},
+  "handleEntering": function () {},
+  "handleExited": function () {},
   "handleWindowResize": function () {},
-  "_getStyles": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "updateComponent": function () {},
+  "handleDialogClick": function () {},
+  "updateStyle": function () {},
+  "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
+};
+ReactBootstrap.Modal.defaultProps.dialogComponentClass.prototype = {
+  "render": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {},
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Modal.Body.prototype = {
   "render": function () {},
@@ -1569,30 +3129,10 @@ ReactBootstrap.Modal.Footer.prototype = {
   "forceUpdate": function () {}
 };
 ReactBootstrap.Modal.Dialog.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.ModalBody.prototype = {
   "render": function () {},
@@ -1620,14 +3160,11 @@ ReactBootstrap.ModalTitle.prototype = {
 };
 ReactBootstrap.Nav.prototype = {
   "componentDidUpdate": function () {},
-  "render": function () {},
-  "renderNavItem": function () {},
-  "getActiveKey": function () {},
+  "handleTabKeyDown": function () {},
+  "getNextActiveChild": function () {},
   "isChildActive": function () {},
   "getTabProps": function () {},
-  "handleTabKeyDown": function () {},
-  "eventKeys": function () {},
-  "getNavRole": function () {},
+  "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
   "forceUpdate": function () {}
@@ -1659,32 +3196,12 @@ ReactBootstrap.Navbar.prototype = {
   "isMounted": function () {}
 };
 ReactBootstrap.Navbar.ControlledComponent.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "getChildContext": function () {},
   "handleToggle": function () {},
-  "isNavExpanded": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Navbar.Brand.prototype = {
   "render": function () {},
@@ -1693,82 +3210,22 @@ ReactBootstrap.Navbar.Brand.prototype = {
   "forceUpdate": function () {}
 };
 ReactBootstrap.Navbar.Header.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Navbar.Toggle.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Navbar.Collapse.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.NavbarBrand.prototype = {
   "render": function () {},
@@ -1783,31 +3240,11 @@ ReactBootstrap.NavDropdown.prototype = {
   "forceUpdate": function () {}
 };
 ReactBootstrap.NavItem.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
-  "render": function () {},
   "handleClick": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
+  "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Overlay.prototype = {
   "render": function () {},
@@ -1815,249 +3252,92 @@ ReactBootstrap.Overlay.prototype = {
   "setState": function () {},
   "forceUpdate": function () {}
 };
-ReactBootstrap.OverlayTrigger.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
-  "getInitialState": function () {},
-  "show": function () {},
-  "hide": function () {},
-  "toggle": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "renderOverlay": function () {},
-  "componentWillUnmount": function () {},
-  "componentDidUpdate": function () {},
-  "getOverlayTarget": function () {},
-  "getOverlay": function () {},
+ReactBootstrap.Overlay.defaultProps.animation.prototype = {
   "render": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {},
+  "forceUpdate": function () {}
+};
+ReactBootstrap.OverlayTrigger.prototype = {
+  "componentDidMount": function () {},
+  "componentDidUpdate": function () {},
+  "componentWillUnmount": function () {},
+  "handleToggle": function () {},
   "handleDelayedShow": function () {},
   "handleDelayedHide": function () {},
   "handleMouseOverOut": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getChildContext": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "updateComponent": function () {},
+  "handleHide": function () {},
+  "show": function () {},
+  "hide": function () {},
+  "makeOverlay": function () {},
+  "renderOverlay": function () {},
+  "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.PageHeader.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.PageItem.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
-  "render": function () {},
-  "handleSelect": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
   "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
+  "handleSelect": function () {},
+  "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Pager.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "renderPageItem": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
+};
+ReactBootstrap.Pager.Item.prototype = {
+  "handleSelect": function () {},
+  "render": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {},
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Pagination.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "renderPageButtons": function () {},
-  "renderPrev": function () {},
-  "renderNext": function () {},
-  "renderFirst": function () {},
-  "renderLast": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Panel.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
-  "getInitialState": function () {},
-  "handleSelect": function () {},
-  "handleToggle": function () {},
-  "isExpanded": function () {},
-  "render": function () {},
+  "handleClickTitle": function () {},
+  "shouldRenderFill": function () {},
+  "renderHeader": function () {},
+  "renderAnchor": function () {},
   "renderCollapsibleBody": function () {},
   "renderBody": function () {},
-  "shouldRenderFill": function () {},
-  "renderHeading": function () {},
-  "renderAnchor": function () {},
-  "renderCollapsibleTitle": function () {},
-  "renderFooter": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
+  "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.PanelGroup.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
-  "getInitialState": function () {},
-  "render": function () {},
-  "renderPanel": function () {},
-  "shouldComponentUpdate": function () {},
   "handleSelect": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
+  "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Popover.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "renderTitle": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.ProgressBar.prototype = {
-  "getPercentage": function () {},
-  "render": function () {},
-  "renderChildBar": function () {},
   "renderProgressBar": function () {},
-  "renderLabel": function () {},
+  "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
   "forceUpdate": function () {}
@@ -2075,34 +3355,14 @@ ReactBootstrap.ResponsiveEmbed.prototype = {
   "forceUpdate": function () {}
 };
 ReactBootstrap.Row.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.SafeAnchor.prototype = {
-  "render": function () {},
   "handleClick": function () {},
+  "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
   "forceUpdate": function () {}
@@ -2152,94 +3412,38 @@ ReactBootstrap.Tab.Container.prototype = {
   "isMounted": function () {}
 };
 ReactBootstrap.Tab.Container.ControlledComponent.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "getChildContext": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Tab.Content.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
-  "getInitialState": function () {},
   "getChildContext": function () {},
-  "componentWillUpdate": function () {},
-  "render": function () {},
-  "handlePaneExited": function () {},
-  "registerPane": function () {},
-  "getActiveKey": function () {},
-  "getContext": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
   "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentDidUpdate": function () {},
   "componentWillUnmount": function () {},
-  "updateComponent": function () {},
+  "handlePaneEnter": function () {},
+  "handlePaneExited": function () {},
+  "getContainerActiveKey": function () {},
+  "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Tab.Pane.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "componentWillUpdate": function () {},
+  "getChildContext": function () {},
+  "componentDidMount": function () {},
   "componentDidUpdate": function () {},
   "componentWillUnmount": function () {},
-  "getChildContext": function () {},
-  "getTransition": function () {},
-  "isActive": function () {},
-  "render": function () {},
-  "onExited": function () {},
   "handleEnter": function () {},
   "handleExited": function () {},
-  "registerWithParent": function () {},
-  "unregisterWithParent": function () {},
-  "getContext": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "componentDidMount": function () {},
-  "shouldComponentUpdate": function () {},
-  "updateComponent": function () {},
+  "getAnimation": function () {},
+  "isActive": function () {},
+  "shouldBeIn": function () {},
+  "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.TabContainer.prototype = {
   "constructor": function () {},
@@ -2268,120 +3472,44 @@ ReactBootstrap.TabContainer.prototype = {
   "isMounted": function () {}
 };
 ReactBootstrap.TabContainer.ControlledComponent.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "getChildContext": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.TabContent.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
-  "getInitialState": function () {},
   "getChildContext": function () {},
-  "componentWillUpdate": function () {},
-  "render": function () {},
-  "handlePaneExited": function () {},
-  "registerPane": function () {},
-  "getActiveKey": function () {},
-  "getContext": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
   "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentDidUpdate": function () {},
   "componentWillUnmount": function () {},
-  "updateComponent": function () {},
+  "handlePaneEnter": function () {},
+  "handlePaneExited": function () {},
+  "getContainerActiveKey": function () {},
+  "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Table.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.TabPane.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "componentWillUpdate": function () {},
+  "getChildContext": function () {},
+  "componentDidMount": function () {},
   "componentDidUpdate": function () {},
   "componentWillUnmount": function () {},
-  "getChildContext": function () {},
-  "getTransition": function () {},
-  "isActive": function () {},
-  "render": function () {},
-  "onExited": function () {},
   "handleEnter": function () {},
   "handleExited": function () {},
-  "registerWithParent": function () {},
-  "unregisterWithParent": function () {},
-  "getContext": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "componentDidMount": function () {},
-  "shouldComponentUpdate": function () {},
-  "updateComponent": function () {},
+  "getAnimation": function () {},
+  "isActive": function () {},
+  "shouldBeIn": function () {},
+  "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Tabs.prototype = {
   "constructor": function () {},
@@ -2410,86 +3538,23 @@ ReactBootstrap.Tabs.prototype = {
   "isMounted": function () {}
 };
 ReactBootstrap.Tabs.ControlledComponent.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
-  "render": function () {},
-  "getActiveKey": function () {},
-  "renderPane": function () {},
   "renderTab": function () {},
-  "getColProps": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
+  "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Thumbnail.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Tooltip.prototype = {
-  "constructor": function () {},
-  "__reactAutoBindPairs": function () {},
   "render": function () {},
-  "mixins": function () {},
-  "statics": function () {},
-  "propTypes": function () {},
-  "contextTypes": function () {},
-  "childContextTypes": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "getChildContext": function () {},
-  "componentWillMount": function () {},
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "shouldComponentUpdate": function () {},
-  "componentWillUpdate": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {},
-  "replaceState": function () {},
-  "isMounted": function () {}
+  "forceUpdate": function () {}
 };
 ReactBootstrap.Well.prototype = {
   "render": function () {},
