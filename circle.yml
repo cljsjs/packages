@@ -2,10 +2,10 @@ machine:
   java:
     version: oraclejdk8
   environment:
-    BOOT_VERSION: 2.5.5
+    BOOT_VERSION: 2.6.0
     _JAVA_OPTIONS: "-Xms512m -Xmx1024m"
   node:
-    version: v4.4.5
+    version: v6.1.0
 dependencies:
   cache_directories:
     - "~/.boot/cache/lib"
