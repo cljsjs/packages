@@ -1,8 +1,8 @@
-# cljsjs/react-onclickoutside
+# cljsjs/d3pie
 
 [](dependency)
 ```clojure
-[cljsjs/react-onclickoutside "4.9.0-1"] ;; latest release
+[cljsjs/d3pie "0.1.9-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,11 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.react-onclickoutside))
+  (:require cljsjs.d3pie))
 ```
 
-Then you can add this as a mixin to your react components, or use as a Higher
-Order Component, see the [repo][repo] for details.
-
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
-[repo]: https://github.com/Pomax/react-onclickoutside
