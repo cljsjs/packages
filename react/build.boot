@@ -4,22 +4,27 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "15.3.0")
+(def +lib-version+ "15.3.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (def checksums
   {'cljsjs/react
-   {:dev "4c7be83b0cd843232ab57aea0e5f9378",
-    :min "8d7194c5afc8581bd892ccfa038e8da7"},
+   {:dev "b941048c2c0025f56c5ecb0e4ecdc2c5",
+    :min "025fc2741f801b13c3a27c7feef9fb54"},
    'cljsjs/react-with-addons
-   {:dev "2a5a6edcf6d0ac31eb458b0713cdb591",
-    :min "ed4244bcc7e85a4464ed76ec45e1e3ef"},
+   {:dev "8e9c52f9430d7744af4b3b3cd1fe6220",
+    :min "1b38446ab54250714cf4ef4eac1da143"},
    'cljsjs/react-dom
-   {:dev "1cfba68b1ad1d4e2ad0d540081e0807c",
-    :min "fdd3ef70d4b3a901455a964e68240999"},
+   {:dev "ee7a0372099ba328275eedc45c8d34b6",
+    :min "cfb23701384a2fee46ae46b3705dc82b"},
    'cljsjs/react-dom-server
-   {:dev "cb9a9cdaf861b8da12fbcb71a7c7e59d",
-    :min "8f29e2418e0a7f81d7e7ac4c28091925"}})
+   {:dev "fae92320f9bd697278d8658128378342",
+    :min "90306281f41df09c949116a5f401ba08"}})
+
+(def npm-project {'cljsjs/react "react"
+                  'cljsjs/react-with-addons "react"
+                  'cljsjs/react-dom "react-dom"
+                  'cljsjs/react-dom-server "react-dom"})
 
 (task-options!
  pom  {:project     'cljsjs/react
@@ -50,12 +55,12 @@
 (defn package-part [{:keys [extern-name namespace project dependencies requires]}]
   (with-files (fn [x] (= extern-name (.getName (tmp-file x))))
     (comp
-      (download :url (format "http://fb.me/%s-%s.js" (name project) +lib-version+)
+      (download :url (format "https://npmcdn.com/%s@%s/dist/%s.js" (npm-project project) +lib-version+ (name project))
                 :checksum (:dev (get checksums project)))
-      (download :url (format "http://fb.me/%s-%s.min.js" (name project) +lib-version+)
+      (download :url (format "https://npmcdn.com/%s@%s/dist/%s.min.js" (npm-project project) +lib-version+ (name project))
                 :checksum (:min (get checksums project)))
-      (sift :move {(re-pattern (format "^%s-%s.js$" (name project) +lib-version+))     (format "cljsjs/%1$s/development/%1$s.inc.js" (name project))
-                   (re-pattern (format "^%s-%s.min.js$" (name project) +lib-version+)) (format "cljsjs/%1$s/production/%1$s.min.inc.js" (name project))})
+      (sift :move {(re-pattern (format "^%s.js$" (name project)))     (format "cljsjs/%1$s/development/%1$s.inc.js" (name project))
+                   (re-pattern (format "^%s.min.js$" (name project))) (format "cljsjs/%1$s/production/%1$s.min.inc.js" (name project))})
       (sift :include #{#"^cljsjs"})
       (deps-cljs :name namespace :requires requires)
       (pom :project project :dependencies (or dependencies []))
@@ -110,8 +115,8 @@
     (reduce
       (fn [handler project]
         (comp handler
-              (download :url (format "http://fb.me/%s-%s.js" (name project) +lib-version+))
-              (download :url (format "http://fb.me/%s-%s.min.js" (name project) +lib-version+))))
+              (download :url (format "https://npmcdn.com/%s@%s/dist/%s.js" (npm-project project) +lib-version+ (name project)))
+              (download :url (format "https://npmcdn.com/%s@%s/dist/%s.min.js" (npm-project project) +lib-version+ (name project)))))
       identity
       (keys checksums))
     (fn [handler]
