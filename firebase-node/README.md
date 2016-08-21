@@ -5,7 +5,7 @@ firebase-node is now distributed in the cljs/firebase pacakge, use that instead.
 
 [](dependency)
 ```clojure
-SEE cljsjs/firebase
+[cljsjs/firebase-node "2.4.2-0"] ;; latest release
 ```
 [](/dependency)
 
