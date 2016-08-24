@@ -125,7 +125,12 @@ var d3 = {
   "quadtree": function () {},
   "queue": function () {},
   "arc": function () {},
-  "area": function () {},
+  "area": {
+    "y0": function(){},
+    "y1": function(){},
+    "x0": function(){},
+    "x1": function(){}
+  },
   "line": function () {},
   "pie": function () {},
   "radialArea": function () {},
