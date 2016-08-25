@@ -1,7 +1,8 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]
-                  [cljsjs/react "15.3.1-0"]])
+                  [cljsjs/react "15.3.1-0"]
+                  [cljsjs/react-dom "15.3.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -29,11 +30,19 @@
 (deftask package []
   (comp
     
-    (download-react-sticky)     
+    (download-react-sticky)
 
     (sift :move {#"^react-sticky-.*/dist/react-sticky.js" "cljsjs/react-sticky/development/react-sticky.inc.js"})
 
-    (sift :move {#"^react-sticky-.*/dist/react-sticky.min.js" "cljsjs/react-sticky/production/react-sticky.min.inc.js"})
+    (replace-content :in "cljsjs/react-sticky/development/react-sticky.inc.js" 
+                     :out "cljsjs/react-sticky/development/react-sticky.inc.js"
+      :match #"_reactDom2.default.findDOMNode"
+      :value "ReactDOM.findDOMNode")
+
+    (minify :in "cljsjs/react-sticky/development/react-sticky.inc.js"
+            :out "cljsjs/react-sticky/production/react-sticky.min.inc.js")
+
+    ;;(sift :move {#"^react-sticky-.*/dist/react-sticky.min.js" "cljsjs/react-sticky/production/react-sticky.min.inc.js"})
 
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-sticky"
