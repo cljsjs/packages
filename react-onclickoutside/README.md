@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-onclickoutside "4.9.0-0"] ;; latest release
+[cljsjs/react-onclickoutside "4.9.0-1"] ;; latest release
 ```
 [](/dependency)
 

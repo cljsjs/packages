@@ -1,5 +1,8 @@
 # cljsjs/firebase-node
 
+DEPRECATED:
+firebase-node is now distributed in the cljs/firebase pacakge, use that instead.
+
 [](dependency)
 ```clojure
 [cljsjs/firebase-node "2.4.2-0"] ;; latest release

@@ -1,9 +1,10 @@
 (def +lib-version+ "4.9.0")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]
+                  [cljsjs/object-assign-shim "0.1.0-0"]
                   [cljsjs/react "15.3.0-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
