@@ -34,15 +34,7 @@
 
     (sift :move {#"^react-sticky-.*/dist/react-sticky.js" "cljsjs/react-sticky/development/react-sticky.inc.js"})
 
-    (replace-content :in "cljsjs/react-sticky/development/react-sticky.inc.js" 
-                     :out "cljsjs/react-sticky/development/react-sticky.inc.js"
-      :match #"_reactDom2.default.findDOMNode"
-      :value "ReactDOM.findDOMNode")
-
-    (minify :in "cljsjs/react-sticky/development/react-sticky.inc.js"
-            :out "cljsjs/react-sticky/production/react-sticky.min.inc.js")
-
-    ;;(sift :move {#"^react-sticky-.*/dist/react-sticky.min.js" "cljsjs/react-sticky/production/react-sticky.min.inc.js"})
+    (sift :move {#"^react-sticky-.*/dist/react-sticky.min.js" "cljsjs/react-sticky/production/react-sticky.min.inc.js"})
 
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-sticky"
