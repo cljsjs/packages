@@ -10,16 +10,9 @@ dependencies:
   cache_directories:
     - "~/.boot/cache/lib"
     - "~/.boot/cache/bin"
-  pre:
-    - curl -L https://github.com/boot-clj/boot-bin/releases/download/latest/boot.sh -o ~/bin/boot
-    - chmod +x ~/bin/boot
-    - mkdir -p ~/.boot
-    - cp profile.boot ~/.boot/profile.boot
-    - npm install
   override:
-    # Run tests
+    # Run tests & everything
     # Run in dependency step to cache the deps
-    - ./test-extern-files.sh
     - ./circle.sh
 test:
   override:
