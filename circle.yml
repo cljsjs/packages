@@ -11,9 +11,11 @@ dependencies:
     - "~/.boot/cache/lib"
     - "~/.boot/cache/bin"
   override:
+    - ./setup_gpg.sh
     # Run tests & everything
     # Run in dependency step to cache the deps
     - ./circle.sh
 test:
   override:
-    - echo 1
+    - echo 1:
+      parallel: true
