@@ -15,7 +15,7 @@ for x in *; do
         y=$(curl -s -o /dev/null --write-out %{http_code} https://clojars.org/repo/cljsjs/$artifact/$version/$artifact-$version.pom)
 
         if [[ $y != "200" ]]; then
-            echo $x
+            echo $x$'\t'$version
         fi
         ) &
     fi

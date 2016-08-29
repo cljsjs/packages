@@ -3,7 +3,7 @@
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]
                   [cljsjs/react "15.3.0-0"]
                   [cljsjs/moment "2.10.6-4"]
-                  [cljsjs/react-onclickoutside "4.9.0-0"]
+                  [cljsjs/react-onclickoutside "4.9.0-1"]
                   [cljsjs/tether "1.1.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
@@ -13,7 +13,7 @@
          '[boot.util :refer [sh]])
 
 (def +lib-version+ "0.28.2")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/react-datepicker

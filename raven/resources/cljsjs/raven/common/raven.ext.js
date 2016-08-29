@@ -16,7 +16,11 @@ var Raven = {
     "crossOrigin": {},
     "collectWindowErrors": {},
     "maxMessageLength": {},
-    "stackTraceLimit": {}
+    "stackTraceLimit": {},
+    "transport": {},
+    "allowSecretKey": {},
+    "enviroment": {},
+    "release": {}
   },
   "_ignoreOnError": {},
   "_isRavenInstalled": {},
@@ -84,6 +88,7 @@ var Raven = {
   "setTagsContext": function () {},
   "clearContext": function () {},
   "getContext": function () {},
+  "setEnvironment": function() {},
   "setRelease": function () {},
   "setDataCallback": function () {},
   "setShouldSendCallback": function () {},
