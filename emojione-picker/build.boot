@@ -45,8 +45,8 @@
   (comp
    (download-emojione-picker)
    (build-emojione-picker)
-   (sift :move {#"^emojione-picker-b92eff3d68a9af14b8ee4c11e98fde02686e184a/dist/emojione-picker\.js$" "cljsjs/emojione-picker/development/emojione-picker.inc.js"
-                #"^emojione-picker-b92eff3d68a9af14b8ee4c11e98fde02686e184a/css/picker\.css$" "cljsjs/emojione-picker/common/emojione-picker.css"})
+   (sift :move {(re-pattern (str "^emojione-picker-" +sha-version+ "/dist/emojione-picker\\.js$")) "cljsjs/emojione-picker/development/emojione-picker.inc.js"
+                (re-pattern (str "^emojione-picker-" +sha-version+ "/css/picker\\.css$")) "cljsjs/emojione-picker/common/emojione-picker.css"})
    (minify :in  "cljsjs/emojione-picker/development/emojione-picker.inc.js"
            :out "cljsjs/emojione-picker/production/emojione-picker.min.inc.js")
    (sift :include #{#"^cljsjs"})
