@@ -8,10 +8,10 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +sha-short-version+ "3ba4071")
-(def +sha-version+ "3ba40710d942cce3375cbd4131aa5af8842e3354")
+(def +sha-short-version+ "b92eff3")
+(def +sha-version+ "b92eff3d68a9af14b8ee4c11e98fde02686e184a")
 (def +lib-version+ "0.3.6")
-(def +version+ (str +lib-version+ "-1"))
+(def +version+ (str +lib-version+ "-2"))
 
 (task-options!
  pom {:project     'cljsjs/emojione-picker
@@ -37,15 +37,16 @@
         ((sh "mkdir" "dist"))
         ((sh "npm" "install"))
         ((sh "node" "node_modules/browserify/bin/cmd.js" "--debug" "-u" "react" "lib/picker.js" "-s" "EmojionePicker" "-o" "dist/emojione-picker.js"))
-        ((sh "sed" "-i.bak" "/var React = /d" "dist/emojione-picker.js")))
+        ((sh "sed" "-i.bak" "/var React = /d" "dist/emojione-picker.js"))
+        ((sh "sed" "-i.bak" "s/var _react = .*/var _react = React;/" "dist/emojione-picker.js")))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 (deftask package []
   (comp
    (download-emojione-picker)
    (build-emojione-picker)
-   (sift :move {#"^emojione-picker-3ba40710d942cce3375cbd4131aa5af8842e3354/dist/emojione-picker\.js$" "cljsjs/emojione-picker/development/emojione-picker.inc.js"
-                #"^emojione-picker-3ba40710d942cce3375cbd4131aa5af8842e3354/css/picker\.css$" "cljsjs/emojione-picker/common/emojione-picker.css"})
+   (sift :move {#"^emojione-picker-b92eff3d68a9af14b8ee4c11e98fde02686e184a/dist/emojione-picker\.js$" "cljsjs/emojione-picker/development/emojione-picker.inc.js"
+                #"^emojione-picker-b92eff3d68a9af14b8ee4c11e98fde02686e184a/css/picker\.css$" "cljsjs/emojione-picker/common/emojione-picker.css"})
    (minify :in  "cljsjs/emojione-picker/development/emojione-picker.inc.js"
            :out "cljsjs/emojione-picker/production/emojione-picker.min.inc.js")
    (sift :include #{#"^cljsjs"})
