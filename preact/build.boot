@@ -23,8 +23,8 @@
               :checksum "03d2993b692643a21b0fc25cae936533")
     (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/preact/" +lib-version+ "/preact.min.js")
               :checksum "23d3be42e4b4c25b76f7ac88f976eccb")
-    (sift :move {#"ˆpreact\.js" "./cljsjs/preact/development/preact.inc.js"
-                 #"ˆpreact\.min\.js" "./cljsjs/preact/development/preact.min.inc.js"})
+    (sift :move {#"preact\.js" "cljsjs/preact/development/preact.inc.js"
+                 #"preact\.min\.js" "cljsjs/preact/development/preact.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.preact")
     (pom)
