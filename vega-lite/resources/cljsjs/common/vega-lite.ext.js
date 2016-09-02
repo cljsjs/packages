@@ -409,30 +409,11 @@ var vl = {
   },
   "facet": {},
   "fieldDef": {
-    "aggregate": {
-      "type": {},
-      "enum": {},
-      "supportedEnums": {
-        "quantitative": {},
-        "ordinal": {},
-        "nominal": {},
-        "temporal": {},
-        "": {}
-      },
-      "supportedTypes": {
-        "quantitative": {},
-        "nominal": {},
-        "ordinal": {},
-        "temporal": {},
-        "": {}
-      }
-    },
     "field": function () {},
     "isDimension": function () {},
     "isMeasure": function () {},
     "count": function () {},
     "isCount": function () {},
-    "cardinality": function () {},
     "title": function () {}
   },
   "legend": {
@@ -513,6 +494,11 @@ var vl = {
       "YEAR": {},
       "year": {}
     },
+    "BandSize": {
+      "FIT": {},
+      "fit": {}
+    },
+    "BANDSIZE_FIT": {},
     "defaultScaleConfig": {
       "round": {},
       "textBandWidth": {},
@@ -568,11 +554,8 @@ var vl = {
     "normalizeRangedUnitSpec": function () {},
     "normalizeErrorBarUnitSpec": function () {},
     "normalizeOverlay": function () {},
-    "alwaysNoOcclusion": function () {},
     "fieldDefs": function () {},
-    "getCleanSpec": function () {},
-    "isStacked": function () {},
-    "transpose": function () {}
+    "isStacked": function () {}
   },
   "stack": {
     "StackOffset": {
@@ -634,6 +617,7 @@ var vl = {
     },
     "SINGLE_TIMEUNITS": {},
     "isSingleTimeUnit": function () {},
+    "convert": function () {},
     "MULTI_TIMEUNITS": {},
     "isMultiTimeUnit": function () {},
     "TIMEUNITS": {},
@@ -686,8 +670,8 @@ var vl = {
     "isString": function () {},
     "isNumber": function () {},
     "isBoolean": function () {},
-    "range": function () {},
     "pick": function () {},
+    "range": function () {},
     "omit": function () {},
     "hash": function () {},
     "contains": function () {},
@@ -700,7 +684,6 @@ var vl = {
     "every": function () {},
     "flatten": function () {},
     "mergeDeep": function () {},
-    "getbins": function () {},
     "unique": function () {},
     "warning": function () {},
     "error": function () {},
