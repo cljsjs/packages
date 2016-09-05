@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "4.2.0")
+(def +lib-version+ "4.2.2")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,7 +18,7 @@
 (deftask package []
   (comp
     (download :url (str "https://github.com/d3/d3/releases/download/v" +lib-version+ "/d3.zip")
-              :checksum "339d2df6ce76a5f293ce5be62507dcb8"
+              :checksum "05b53fab6a8fdf56da10fa0ae2331340"
               :unzip true)
     (sift :move {#"^d3\.js"      "cljsjs/d3/development/d3.inc.js"
                  #"^d3\.min\.js" "cljsjs/d3/production/d3.min.inc.js"})
