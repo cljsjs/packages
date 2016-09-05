@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/flatpickr "2.0.0-rc.7"] ;; latest release
+[cljsjs/flatpickr "2.0.0-rc.7-0"] ;; latest release
 ```
 [](/dependency)
 
