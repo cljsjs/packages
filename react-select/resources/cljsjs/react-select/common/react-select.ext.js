@@ -1,5 +1,6 @@
 var Select = {
     "Async": function () {},
+    "Creatable": function () {},
     "displayName": {},
     "propTypes": {
         "addLabelText": function () {},
