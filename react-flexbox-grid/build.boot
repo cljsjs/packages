@@ -57,13 +57,13 @@
    (comp
      (download-react-flexbox-grid)
      (build)
-     (sift :move {#".*react-flexbox-grid.inc.js"
-                  "cljsjs/react-flexbox-grid/development/react-flexbox-grid.inc.js"})
+     (sift :move {#".*react-flexbox-grid.inc.js" "cljsjs/react-flexbox-grid/development/react-flexbox-grid.inc.js"
+                  #".*react-flexbox-grid.inc.css" "cljsjs/react-flexbox-grid/development/react-flexbox-grid.inc.css"})
+     (sift :include #{#"^cljsjs"})
+
      (minify :in  "cljsjs/react-flexbox-grid/development/react-flexbox-grid.inc.js"
              :out "cljsjs/react-flexbox-grid/production/react-flexbox-grid.min.inc.js")
 
-     (sift :move {#".*react-flexbox-grid.inc.css"
-                  "cljsjs/react-flexbox-grid/development/react-flexbox-grid.inc.css"})
      (minify :in  "cljsjs/react-flexbox-grid/development/react-flexbox-grid.inc.css"
              :out "cljsjs/react-flexbox-grid/production/react-flexbox-grid.min.inc.css")
 
