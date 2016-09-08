@@ -5,7 +5,7 @@
 // https://fb.me/react-15.0.2.js
 // https://fb.me/react-dom-15.0.2.js
 // http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js
-// https://npmcdn.com/react-leaflet@0.11.4/dist/react-leaflet.min.js
+// https://unpkg.com/react-leaflet@0.11.4/dist/react-leaflet.min.js
 
 var ReactLeaflet = {
   "PropTypes": {},
