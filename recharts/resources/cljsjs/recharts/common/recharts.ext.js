@@ -1,7 +1,7 @@
 // generated with http://jmmk.github.io/javascript-externs-generator/
 // to regenerate from the tool:
 // first include https://fb.me/react-15.3.0.min.js
-// then https://npmcdn.com/recharts/umd/Recharts.min.js
+// then https://unpkg.com/recharts/umd/Recharts.min.js
 // and enter Recharts as the javascript object to extern
 
 var Recharts = {
