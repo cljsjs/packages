@@ -9,7 +9,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh *sh-dir*]])
 
-(def +lib-version+ "0.8.1")
+(def +lib-version+ "0.8.2")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (str "react-pixi-" +lib-version+))
 
@@ -24,7 +24,7 @@
 (deftask download-zip []
   (download
    :url (str "https://github.com/Izzimach/react-pixi/archive/v" +lib-version+ ".zip")
-   :checksum "8059d49204486b7688930b9f71f3b1b2"
+   :checksum "1c03ba0e439567ebb343a669a8166997"
    :unzip true))
 
 (deftask build []
