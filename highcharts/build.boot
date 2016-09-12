@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "4.2.5")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "4.2.6")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/highcharts
@@ -18,9 +18,9 @@
 (deftask package []
   (comp
    (download :url      (str "http://code.highcharts.com/" +lib-version+ "/highcharts.js")
-             :checksum "A799EDB0B6147299905DC81F6B9A84F0")
+             :checksum "c0fdddca1e1a865f0ffa20d76e45c1bb")
    (download :url      (str "http://code.highcharts.com/" +lib-version+ "/highcharts.src.js")
-             :checksum "ABED63DF565BA70CD6E35B7160B69ECD")
+             :checksum "65105e88fee7c23eb411e6460285e79f")
    (sift :move {#"highcharts.js"     "cljsjs/highcharts/production/highcharts.min.inc.js"})
    (sift :move {#"highcharts.src.js"     "cljsjs/highcharts/development/highcharts.inc.js"})
    (sift :include #{#"^cljsjs"})
