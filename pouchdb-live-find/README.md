@@ -1,8 +1,8 @@
 # cljsjs/pouchdb-live-find
  +
- +[](dependency)
- +```clojure
- +[cljsjs/pouchdb-live-find "0.2.0"] ;; latest release
+[](dependency)
+```clojure
+[cljsjs/pouchdb-live-find "0.2.0-0"] ;; latest release
  +```
  +[](/dependency)
  +
