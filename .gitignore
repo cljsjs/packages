@@ -2,3 +2,4 @@
 */target
 .nrepl-*
 node_modules
+.idea
