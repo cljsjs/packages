@@ -13,7 +13,7 @@
          '[boot.util :refer [sh]])
 
 (def +lib-version+ "0.28.2")
-(def +version+ (str +lib-version+ "-1"))
+(def +version+ (str +lib-version+ "-2"))
 
 (task-options!
  pom  {:project     'cljsjs/react-datepicker
@@ -43,7 +43,7 @@
         (io/make-parents target)
         (io/copy (tmpd/file f) target))
       (binding [boot.util/*sh-dir* (str (io/file tmp (format "react-datepicker-%s" +lib-version+)))]
-        ((sh "npm" "install" "--ignore-scripts"))
+        ((sh "npm" "install"))
         ((sh "gem" "install" "scss_lint"))
         ((sh "npm" "run" "build")))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
