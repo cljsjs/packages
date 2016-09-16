@@ -1220,6 +1220,7 @@ Highcharts.Point.prototype = {
     "init": function () {},
     "applyOptions": function () {},
     "optionsToObject": function () {},
+    "dataGroup": function () {},
     "destroy": function () {},
     "destroyElements": function () {},
     "getLabelConfig": function () {},
