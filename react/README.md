@@ -33,7 +33,7 @@ optimizations you'll need to override `:file-min` to use non-minified version. I
 ClojureScript compiler options, add:
 
 ```clj
-:foreign-libs [{:provides ["cljs.react"]
+:foreign-libs [{:provides ["cljsjs.react"]
                :file "cljsjs/development/react-with-addons.inc.js"
                :file-min "cljsjs/development/react-with-addons.inc.js"}]
 ```
