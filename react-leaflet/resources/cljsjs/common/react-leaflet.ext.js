@@ -8,89 +8,579 @@
 // https://unpkg.com/react-leaflet@0.11.4/dist/react-leaflet.min.js
 
 var ReactLeaflet = {
-  "PropTypes": {},
+  "PropTypes": {
+    "bounds": {
+      "isRequired": function () {}
+    },
+    "children": {
+      "isRequired": function () {}
+    },
+    "controlPosition": {
+      "isRequired": function () {}
+    },
+    "latlng": {
+      "isRequired": function () {}
+    },
+    "latlngList": {
+      "isRequired": function () {}
+    },
+    "layerContainer": {
+      "isRequired": function () {}
+    },
+    "map": {
+      "isRequired": function () {}
+    }
+  },
   "AttributionControl": {
-    "propTypes": {}
+    "propTypes": {
+      "prefix": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "map": {
+        "isRequired": function () {}
+      }
+    }
   },
   "BaseTileLayer": {
-    "propTypes": {}
+    "propTypes": {
+      "opacity": {
+        "isRequired": function () {}
+      },
+      "zIndex": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "layerContainer": {
+        "isRequired": function () {}
+      },
+      "map": {
+        "isRequired": function () {}
+      }
+    }
   },
   "CanvasTileLayer": {
-    "propTypes": {}
+    "propTypes": {
+      "opacity": {
+        "isRequired": function () {}
+      },
+      "zIndex": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "layerContainer": {
+        "isRequired": function () {}
+      },
+      "map": {
+        "isRequired": function () {}
+      }
+    }
   },
   "Circle": {
-    "propTypes": {}
+    "propTypes": {
+      "center": function () {},
+      "radius": function () {}
+    },
+    "childContextTypes": {
+      "popupContainer": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "layerContainer": {
+        "isRequired": function () {}
+      },
+      "map": {
+        "isRequired": function () {}
+      }
+    }
   },
   "CircleMarker": {
-    "propTypes": {}
+    "propTypes": {
+      "center": function () {},
+      "radius": {
+        "isRequired": function () {}
+      }
+    },
+    "childContextTypes": {
+      "popupContainer": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "layerContainer": {
+        "isRequired": function () {}
+      },
+      "map": {
+        "isRequired": function () {}
+      }
+    }
   },
   "FeatureGroup": {
-    "propTypes": {}
+    "childContextTypes": {
+      "layerContainer": {
+        "isRequired": function () {}
+      },
+      "popupContainer": {
+        "isRequired": function () {}
+      }
+    },
+    "propTypes": {
+      "children": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "layerContainer": {
+        "isRequired": function () {}
+      },
+      "map": {
+        "isRequired": function () {}
+      }
+    }
   },
   "GeoJson": {
-    "propTypes": {}
+    "propTypes": {
+      "data": function () {}
+    },
+    "childContextTypes": {
+      "popupContainer": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "layerContainer": {
+        "isRequired": function () {}
+      },
+      "map": {
+        "isRequired": function () {}
+      }
+    }
   },
   "ImageOverlay": {
-    "propTypes": {}
+    "propTypes": {
+      "attribution": {
+        "isRequired": function () {}
+      },
+      "bounds": function () {},
+      "opacity": {
+        "isRequired": function () {}
+      },
+      "url": function () {}
+    },
+    "contextTypes": {
+      "layerContainer": {
+        "isRequired": function () {}
+      },
+      "map": {
+        "isRequired": function () {}
+      }
+    }
   },
   "LayerGroup": {
-    "propTypes": {}
+    "childContextTypes": {
+      "layerContainer": {
+        "isRequired": function () {}
+      }
+    },
+    "propTypes": {
+      "children": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "layerContainer": {
+        "isRequired": function () {}
+      },
+      "map": {
+        "isRequired": function () {}
+      }
+    }
   },
   "LayersControl": {
-    "propTypes": {},
+    "propTypes": {
+      "baseLayers": {
+        "isRequired": function () {}
+      },
+      "children": {
+        "isRequired": function () {}
+      },
+      "overlays": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "layerContainer": {
+        "isRequired": function () {}
+      },
+      "map": {
+        "isRequired": function () {}
+      }
+    },
     "BaseLayer": {
-      "propTypes": {}
+      "propTypes": {
+        "addBaseLayer": {
+          "isRequired": function () {}
+        },
+        "addOverlay": {
+          "isRequired": function () {}
+        },
+        "checked": {
+          "isRequired": function () {}
+        },
+        "children": function () {},
+        "name": function () {},
+        "removeLayer": {
+          "isRequired": function () {}
+        },
+        "removeLayerControl": {
+          "isRequired": function () {}
+        }
+      },
+      "contextTypes": {
+        "map": {
+          "isRequired": function () {}
+        }
+      },
+      "childContextTypes": {
+        "layerContainer": {
+          "isRequired": function () {}
+        }
+      }
     },
     "Overlay": {
-      "propTypes": {}
+      "propTypes": {
+        "addBaseLayer": {
+          "isRequired": function () {}
+        },
+        "addOverlay": {
+          "isRequired": function () {}
+        },
+        "checked": {
+          "isRequired": function () {}
+        },
+        "children": function () {},
+        "name": function () {},
+        "removeLayer": {
+          "isRequired": function () {}
+        },
+        "removeLayerControl": {
+          "isRequired": function () {}
+        }
+      },
+      "contextTypes": {
+        "map": {
+          "isRequired": function () {}
+        }
+      },
+      "childContextTypes": {
+        "layerContainer": {
+          "isRequired": function () {}
+        }
+      }
     }
   },
   "Map": {
-    "propTypes": {},
-    "defaultProps": {}
+    "propTypes": {
+      "animate": {
+        "isRequired": function () {}
+      },
+      "bounds": {
+        "isRequired": function () {}
+      },
+      "boundsOptions": {
+        "isRequired": function () {}
+      },
+      "center": {
+        "isRequired": function () {}
+      },
+      "children": {
+        "isRequired": function () {}
+      },
+      "className": {
+        "isRequired": function () {}
+      },
+      "id": {
+        "isRequired": function () {}
+      },
+      "maxBounds": {
+        "isRequired": function () {}
+      },
+      "maxZoom": {
+        "isRequired": function () {}
+      },
+      "minZoom": {
+        "isRequired": function () {}
+      },
+      "style": {
+        "isRequired": function () {}
+      },
+      "zoom": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "animate": {}
+    },
+    "childContextTypes": {
+      "map": {
+        "isRequired": function () {}
+      }
+    }
   },
   "MapComponent": function () {},
   "MapControl": {
-    "propTypes": {}
+    "propTypes": {
+      "position": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "map": {
+        "isRequired": function () {}
+      }
+    }
   },
   "MapLayer": {
-    "propTypes": {}
+    "propTypes": {
+      "children": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "layerContainer": {
+        "isRequired": function () {}
+      },
+      "map": {
+        "isRequired": function () {}
+      }
+    }
   },
   "Marker": {
-    "propTypes": {}
+    "propTypes": {
+      "icon": {
+        "isRequired": function () {}
+      },
+      "opacity": {
+        "isRequired": function () {}
+      },
+      "position": function () {},
+      "zIndexOffset": {
+        "isRequired": function () {}
+      }
+    },
+    "childContextTypes": {
+      "popupContainer": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "layerContainer": {
+        "isRequired": function () {}
+      },
+      "map": {
+        "isRequired": function () {}
+      }
+    }
   },
   "MultiPolygon": {
-    "propTypes": {}
+    "propTypes": {
+      "polygons": function () {}
+    },
+    "childContextTypes": {
+      "popupContainer": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "layerContainer": {
+        "isRequired": function () {}
+      },
+      "map": {
+        "isRequired": function () {}
+      }
+    }
   },
   "MultiPolyline": {
-    "propTypes": {}
+    "propTypes": {
+      "polylines": function () {}
+    },
+    "childContextTypes": {
+      "popupContainer": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "layerContainer": {
+        "isRequired": function () {}
+      },
+      "map": {
+        "isRequired": function () {}
+      }
+    }
   },
   "Path": {
-    "propTypes": {}
+    "childContextTypes": {
+      "popupContainer": {
+        "isRequired": function () {}
+      }
+    },
+    "propTypes": {
+      "children": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "layerContainer": {
+        "isRequired": function () {}
+      },
+      "map": {
+        "isRequired": function () {}
+      }
+    }
   },
   "Polygon": {
-    "propTypes": {}
+    "propTypes": {
+      "positions": function () {}
+    },
+    "childContextTypes": {
+      "popupContainer": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "layerContainer": {
+        "isRequired": function () {}
+      },
+      "map": {
+        "isRequired": function () {}
+      }
+    }
   },
   "Polyline": {
-    "propTypes": {}
+    "propTypes": {
+      "positions": function () {}
+    },
+    "childContextTypes": {
+      "popupContainer": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "layerContainer": {
+        "isRequired": function () {}
+      },
+      "map": {
+        "isRequired": function () {}
+      }
+    }
   },
   "Popup": {
-    "propTypes": {}
+    "propTypes": {
+      "children": {
+        "isRequired": function () {}
+      },
+      "position": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "map": {
+        "isRequired": function () {}
+      },
+      "popupContainer": {
+        "isRequired": function () {}
+      }
+    }
   },
   "Rectangle": {
-    "propTypes": {}
+    "propTypes": {
+      "bounds": function () {}
+    },
+    "childContextTypes": {
+      "popupContainer": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "layerContainer": {
+        "isRequired": function () {}
+      },
+      "map": {
+        "isRequired": function () {}
+      }
+    }
   },
   "ScaleControl": {
-    "propTypes": {}
+    "propTypes": {
+      "imperial": {
+        "isRequired": function () {}
+      },
+      "maxWidth": {
+        "isRequired": function () {}
+      },
+      "metric": {
+        "isRequired": function () {}
+      },
+      "updateWhenIdle": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "map": {
+        "isRequired": function () {}
+      }
+    }
   },
   "TileLayer": {
-    "propTypes": {}
+    "propTypes": {
+      "url": function () {}
+    },
+    "contextTypes": {
+      "layerContainer": {
+        "isRequired": function () {}
+      },
+      "map": {
+        "isRequired": function () {}
+      }
+    }
   },
   "WMSTileLayer": {
-    "propTypes": {}
+    "propTypes": {
+      "url": function () {}
+    },
+    "contextTypes": {
+      "layerContainer": {
+        "isRequired": function () {}
+      },
+      "map": {
+        "isRequired": function () {}
+      }
+    }
   },
   "ZoomControl": {
-    "propTypes": {}
+    "propTypes": {
+      "zoomInText": {
+        "isRequired": function () {}
+      },
+      "zoomInTitle": {
+        "isRequired": function () {}
+      },
+      "zoomOutText": {
+        "isRequired": function () {}
+      },
+      "zoomOutTitle": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "map": {
+        "isRequired": function () {}
+      }
+    }
   },
   "setIconDefaultImagePath": function () {}
 };
