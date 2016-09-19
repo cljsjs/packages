@@ -1,11 +1,11 @@
-// Generated for version 0.11.4
+// Generated for version 0.12.2
 //
 // Generated via http://jmmk.github.io/javascript-externs-generator/
 // Loaded JavaScripts:
 // https://fb.me/react-15.0.2.js
 // https://fb.me/react-dom-15.0.2.js
 // http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js
-// https://unpkg.com/react-leaflet@0.11.4/dist/react-leaflet.min.js
+// https://unpkg.com/react-leaflet@0.12.2/dist/react-leaflet.min.js
 
 var ReactLeaflet = {
   "PropTypes": {
