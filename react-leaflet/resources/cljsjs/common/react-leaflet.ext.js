@@ -6,6 +6,7 @@
 // https://fb.me/react-dom-15.0.2.js
 // http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js
 // https://unpkg.com/react-leaflet@0.12.2/dist/react-leaflet.min.js
+// End of file contains manual additions
 
 var ReactLeaflet = {
   "PropTypes": {
@@ -724,3 +725,5 @@ ReactLeaflet.ZoomControl.prototype = {
   "setState": function () {},
   "forceUpdate": function () {}
 };
+
+ReactLeaflet.leafletElement = {};
