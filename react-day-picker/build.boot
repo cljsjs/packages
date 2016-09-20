@@ -1,10 +1,10 @@
-(def +lib-version+ "1.1.5")
+(def +lib-version+ "2.4.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]
-                  [cljsjs/react       "0.14.3-0" :scope "provided"]])
+                  [cljsjs/react       "15.3.1-0" :scope "provided"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -12,8 +12,8 @@
 (task-options!
  pom  {:project     'cljsjs/react-day-picker
        :version     +version+
-       :description "A Select control built with and for React JS"
-       :url         "http://jedwatson.github.io/react-day-picker"
+       :description "A date picker component"
+       :url         "https://github.com/gpbl/react-day-picker"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
@@ -21,9 +21,9 @@
   (task-options! push {:ensure-branch nil :tag false})
   (comp
     (download :url (str "https://raw.githubusercontent.com/gpbl/react-day-picker/v" +lib-version+ "/dist/DayPicker.js")
-              :checksum "A7F8F2251ACF74D2D8129C755F28AB42")
+              :checksum "0F90D0E05603015BE9C41153A986F38D")
     (download :url (str "https://raw.githubusercontent.com/gpbl/react-day-picker/v" +lib-version+ "/src/style.css")
-              :checksum "61DBCCFA489CDD52090BCE7900800F28")
+              :checksum "4CEDAFC0F76D42F8574B6240374CE7DA")
     (sift :move {#"^DayPicker.js$"
                  "cljsjs/react-day-picker/development/react-day-picker.inc.js"
 
