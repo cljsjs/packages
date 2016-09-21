@@ -7,7 +7,7 @@
 
 
 (def +lib-version+ "2.2.41")
-(def +version+ (str +lib-version+ "-1"))
+(def +version+ (str +lib-version+ "-2"))
 
 (task-options!
   push {:ensure-clean false}
