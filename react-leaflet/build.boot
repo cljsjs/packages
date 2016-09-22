@@ -5,7 +5,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.11.5")
+(def +lib-version+ "0.12.3")
 (def +version+ (str +lib-version+ "-1"))
 
 (task-options!
@@ -21,7 +21,7 @@
 (deftask package []
   (comp
     (download :url      (str "https://github.com/PaulLeCam/react-leaflet/archive/v" +lib-version+ ".zip")
-              :checksum "21DBC10376DBD41C02C9D165DD2A2F52"
+              :checksum "0783AB13D2FD32C8566F0FF4B0AD101A"
               :unzip    true)
     (sift :move {#"^react-leaflet-(.*)/dist/react-leaflet.js"      "cljsjs/development/react-leaflet.inc.js"
                  #"^react-leaflet-(.*)/dist/react-leaflet.min.js"  "cljsjs/production/react-leaflet.min.inc.js"})
