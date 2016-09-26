@@ -781,6 +781,37 @@ var L = {
     "stop": function () {},
     "getMousePosition": function () {},
     "getWheelDelta": function () {},
+    // Mouse Event
+    "originalEvent": {},
+    "containerPoint": {},
+    "layerPoint": {},
+    "latlng": {},
+    // LocationEvent
+    "bounds": {},
+    "accuracy": {},
+    "altitude": {},
+    "altitudeAccuracy": {},
+    "heading": {},
+    "speed": {},
+    "timestamp": {},
+    // ErrorEvent
+    "message": {},
+    "code": {},
+    // LayerEvent
+    "layer": {},
+    // LayersControlEvent
+    "name": {},
+    // TileEvent
+    "tile": {},
+    "url": {},
+    // ResizeEvent
+    "oldSize": {},
+    "newSize": {},
+    // GeoJSONEvent
+    "properties": {},
+    "geometryType": {},
+    "id": {},
+    // ?
     "_skipEvents": function () {},
     "_fakeStop": function () {},
     "_skipped": function () {},
