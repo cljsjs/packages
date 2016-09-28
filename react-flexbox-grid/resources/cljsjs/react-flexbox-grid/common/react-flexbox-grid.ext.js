@@ -1,5 +1,5 @@
 var ReactFlexboxGrid = {
-    "Grid": function () {},
+    "Row": function () {},
     "Col": function () {},
     "Grid": function () {},
 }
