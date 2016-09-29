@@ -3,7 +3,7 @@
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]])
 
 (def +lib-version+ "0.10.2")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 (def +lib-folder+ (format "react-flexbox-grid-%s" +lib-version+))
 
 (task-options!
