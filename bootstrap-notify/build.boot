@@ -1,6 +1,10 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]
+                  [cljsjs/jquery "2.2.4-0"]
+                  ;; exclude jquery from bootstrap dep b/c notify can use
+                  ;; jquery 2+
+                  [cljsjs/bootstrap "3.3.6-1" :exclusions [cljsjs/jquery]]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -27,6 +31,8 @@
                         #"^bootstrap-notify-.*/dist/bootstrap-notify.min.js"
                         "cljsjs/bootstrap-notify/production/bootstrap-notify.min.inc.js"})
            (sift :include #{#"^cljsjs"})
-           (deps-cljs :name "cljsjs.bootstrap-notify")
+           (deps-cljs :name "cljsjs.bootstrap-notify"
+                      :requires ["cljsjs.jquery"
+                                 "cljsjs.bootstrap"])
            (pom)
            (jar)))
