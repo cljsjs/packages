@@ -4,10 +4,10 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "5.11.0")
-(def codemirror-checksum "a8d5b27ae5ab0d898930aef314afba1c")
+(def +lib-version+ "5.19.0")
+(def codemirror-checksum "d046c9bba67e91ed241f58c3c9786141")
 
-(def +version+ (str +lib-version+ "-2"))
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom  {:project     'cljsjs/codemirror
