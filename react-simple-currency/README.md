@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-simple-currency "1.0.8"] ;; latest release
+[cljsjs/react-simple-currency "1.0.8-0"] ;; latest release
 ```
 [](/dependency)
 
