@@ -48,5 +48,7 @@
     (sift :include #{#"^cljsjs"})
 
     (deps-cljs :name "cljsjs.rebass"
-               :requires ["cljsjs.react"])))
+               :requires ["cljsjs.react"])
+    (pom)
+    (jar)))
 
