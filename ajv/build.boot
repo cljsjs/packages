@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "4.7.2")
+(def +lib-version+ "4.7.7")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -20,8 +20,10 @@
 
 (deftask package []
   (comp
-    (download :url (cdn-ver "ajv.bundle.js"))
-    (download :url (cdn-ver "ajv.min.js"))
+    (download :url (cdn-ver "ajv.bundle.js")
+              :checksum "F453B6BC9BAB6BDD07968CD767F6EDF1")
+    (download :url (cdn-ver "ajv.min.js")
+              :checksum "C4E86C8C3CCE66F24E2CA04256D26B8A")
     (sift :move {#"ajv.bundle.js"  "cljsjs/ajv/development/ajv.inc.js"
                  #"ajv.min.js"     "cljsjs/ajv/production/ajv.min.inc.js"})
     (sift :include #{#"^cljsjs"})
