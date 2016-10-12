@@ -24,6 +24,6 @@
                 #"^pouchdb-authentication-([\d\.]*)/dist/pouchdb.authentication.min.js" "cljsjs/pouchdb-authentication/production/pouchdb-authentication.min.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.pouchdb-authentication"
-              :requires "cljsjs.pouchdb")
+              :requires ["cljsjs.pouchdb"])
    (pom)
    (jar)))
