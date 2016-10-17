@@ -1,8 +1,9 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]
+                  [cljsjs/bootstrap "3.3.6-1"]
                   [cljsjs/jquery "1.9.1-0"]
-                  [cljsjs/typeahead-bundle "0.11.1-2"]])
+                  [cljsjs/typeahead-bundle "0.11.1-1"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -26,6 +27,7 @@
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.bootstrap-typeahead"
                :requires ["cljsjs.jquery"
-                          "cljsjs.typeahead-bundle"])
+                          "cljsjs.typeahead-bundle"
+                          "cljsjs.bootstrap"])
     (pom)
     (jar)))
