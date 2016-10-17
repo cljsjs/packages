@@ -1,4 +1,4 @@
-# cljsjs/bootstra-typeahead
+# cljsjs/bootstrap-typeahead
 
 [](dependency)
 ```clojure
@@ -16,3 +16,15 @@ you can require the packaged library like so:
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+
+## Example:
+
+```clojure
+(fn [this]
+ (doto
+  (js/$ (r/dom-node this)) ; <-- being used in a Reagent component
+  (.typeahead (clj->js {:name ""
+               :source data
+               :updater (fn [obj] (println "updater:" obj))
+               :displayText (fn [obj] (.-email obj))}))))
+```
