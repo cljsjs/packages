@@ -736,50 +736,8 @@ var Quill = {
         }
       }
     },
-    "themes/bubble": {
-      "DEFAULTS": {
-        "modules": {
-          "toolbar": {
-            "handlers": {
-              "formula": function () {},
-              "image": function () {},
-              "video": function () {},
-              "link": function () {}
-            }
-          }
-        }
-      },
-      "themes": {
-        "default": {
-          "DEFAULTS": {
-            "modules": {}
-          },
-          "themes": {}
-        }
-      }
-    },
-    "themes/snow": {
-      "DEFAULTS": {
-        "modules": {
-          "toolbar": {
-            "handlers": {
-              "formula": function () {},
-              "image": function () {},
-              "video": function () {},
-              "link": function () {}
-            }
-          }
-        }
-      },
-      "themes": {
-        "default": {
-          "DEFAULTS": {
-            "modules": {}
-          },
-          "themes": {}
-        }
-      }
-    },
+    "themes/bubble": function() {},
+    "themes/snow": function() {},
     "ui/icons": {
       "align": {
         "": {},
