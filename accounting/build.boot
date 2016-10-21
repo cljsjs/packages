@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot])
 
-(def +lib-version+ "0.4.2")
+(def +lib-version+ "0.4.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,12 +18,12 @@
 
 (deftask package []
   (comp
-   (download :url "https://raw.githubusercontent.com/openexchangerates/accounting.js/master/accounting.js"
-             :checksum "56982C70B6A0114ADCE46ECAAC5B3B1B")
-   (download :url "https://raw.githubusercontent.com/openexchangerates/accounting.js/master/accounting.min.js"
-             :checksum "B34EE54ABCDDA3F94566EA5E7312FDBC")
-   (sift :move {#"^accounting.js" "cljsjs/accounting/development/accounting.inc.js"
-                #"^accounting.min.js" "cljsjs/accounting/production/accounting.min.inc.js"})
+   (download :url (str "https://github.com/openexchangerates/accounting.js/archive/v" +lib-version+ ".zip")
+             :checksum "F430D852899F31651137D615DFFB8706"
+             :unzip true)
+             (show :fileset true) 
+   (sift :move {#"^accounting\.js-.*/accounting.js" "cljsjs/accounting/development/accounting.inc.js"
+                #"^accounting\.js.*/accounting.min.js" "cljsjs/accounting/production/accounting.min.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.accounting")
    (pom)
