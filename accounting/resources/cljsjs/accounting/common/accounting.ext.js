@@ -1,3 +1,5 @@
+var accounting = {}
+
 accounting.formatMoney = function (number, symbol, precision, thousand, decimal, format) {}
 
 accounting.formatColumn = function(list, symbol, precision, thousand, decimal, format) {}
