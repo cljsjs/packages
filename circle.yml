@@ -10,6 +10,9 @@ dependencies:
   cache_directories:
     - "~/.boot/cache/lib"
     - "~/.boot/cache/bin"
+  pre:
+    - sudo apt-get update
+    - sudo apt-get install jq
   override:
     - ./setup_gpg.sh
     # Run tests & everything

@@ -12,6 +12,17 @@ if [[ $CIRCLE_NODE_TOTAL < 2 ]] || [[ $CIRCLE_NODE_INDEX == 0 ]]; then
     cp profile.boot ~/.boot/profile.boot
 
     if [[ $CIRCLE_BRANCH == "master" ]]; then
+        echo "Wait for previous builds to finish"
+        while true; do
+            # Check if any running or queued builds with smaller build number than current
+            waiting=$(curl --silent https://circleci.com/api/v1.1/project/github/cljsjs/packages/tree/master | jq -e "map(select((.status == \"running\" or .status == \"queued\") and .build_num < $CIRCLE_BUILD_NUM)) | .[0].build_num")
+            if [[ -z $waiting ]]; then
+                break
+            else
+                echo "Waiting for build $waiting"
+            fi
+            sleep 5
+        done
         echo "Deploy changed packages"
         ./deploy-changed.sh
     else
