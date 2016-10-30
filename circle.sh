@@ -15,8 +15,8 @@ if [[ $CIRCLE_NODE_TOTAL < 2 ]] || [[ $CIRCLE_NODE_INDEX == 0 ]]; then
         echo "Wait for previous builds to finish"
         while true; do
             # Check if any running or queued builds with smaller build number than current
-            waiting=$(curl --silent https://circleci.com/api/v1.1/project/github/cljsjs/packages/tree/master | jq -e "map(select((.status == \"running\" or .status == \"queued\") and .build_num < $CIRCLE_BUILD_NUM)) | .[0].build_num")
-            if [[ -z $waiting ]]; then
+            waiting=$(curl --silent https://circleci.com/api/v1.1/project/github/cljsjs/packages/tree/master | jq "map(select((.status == \"running\" or .status == \"queued\") and .build_num < $CIRCLE_BUILD_NUM)) | .[0].build_num")
+            if [[ "null" == $waiting ]]; then
                 break
             else
                 echo "Waiting for build $waiting"
