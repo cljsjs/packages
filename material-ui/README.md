@@ -9,11 +9,11 @@ http://www.material-ui.com/#/
 [](/dependency)
 
 #### Important note
-`cljsjs/material-ui` comes with its own `cljsjs/react`. This is because it currently has to 
+`cljsjs/material-ui` comes with its own `cljsjs/react`. This is because it currently has to
  be built with . Read more [here](http://www.material-ui.com/#/get-started/installation). This won't be needed in a future.
  Important is to put `react` into `exclusions` in `project.clj` for libraries, which include it.
  For example:
-  
+
  ```
     [org.omcljs/om "1.0.0-alpha34" :exclusions [cljsjs/react]]
  ```
