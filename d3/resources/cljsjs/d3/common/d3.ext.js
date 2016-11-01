@@ -139,7 +139,11 @@ var d3 = {
   "line": function () {},
   "pie": function () {},
   "radialArea": function () {},
-  "radialLine": function () {},
+  "radialLine": {
+    "curve": function () {},
+    "angle": function () {},
+    "radius": function () {}
+  },
   "symbol": function () {},
   "symbols": {},
   "symbolCircle": {
