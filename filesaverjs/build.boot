@@ -5,8 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot])
 
-(def +lib-checkout+ "f23c4a66dc9fa1af818322f08eb29a371ccb4ccf")
-(def +lib-version+ "1.1.20151003")
+(def +lib-version+ "1.3.3")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -19,8 +18,8 @@
 
 (deftask package []
   (comp
-   (download :url (str "https://github.com/eligrey/FileSaver.js/archive/" +lib-checkout+ ".zip")
-             :checksum "45a874d19c911acdcdafea9a0246ea3c"
+   (download :url (str "https://github.com/eligrey/FileSaver.js/archive/" +lib-version+ ".zip")
+             :checksum "4c272da9dd9658cdea7101efb942db81"
              :unzip true)
    (sift :move {#"^FileSaver.js-[^/]+/FileSaver.js" "cljsjs/filesaverjs/development/filesaverjs.inc.js"})
    (sift :move {#"^FileSaver.js-[^/]+/FileSaver.min.js" "cljsjs/filesaverjs/development/filesaverjs.min.js"})
