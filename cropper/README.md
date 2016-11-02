@@ -1,7 +1,7 @@
 # cljsjs/cropper
 [](dependency)
 ```clojure
-[cljsjs/cropper "0.7.0-0"] ;; latest release
+[cljsjs/cropper "0.8.1-0"] ;; latest release
 ```
 [](/dependency)
 
