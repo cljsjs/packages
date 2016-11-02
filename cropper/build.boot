@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.7.0")
+(def +lib-version+ "0.8.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -19,7 +19,7 @@
   (comp
     (download
       :url (str "https://github.com/fengyuanchen/cropperjs/archive/v" +lib-version+ ".zip")
-      :checksum "3B28C753B5D7BDBED49B6B8CD4F6249D"
+      :checksum "6BCCED34555B2C92B92BA5F44D16AC91"
       :unzip true)
     (sift :move {#"^cropperjs-(.*)/dist/cropper.js"      "cljsjs/development/cropper.inc.js"
                  #"^cropperjs-(.*)/dist/cropper.min.js"  "cljsjs/production/cropper.min.inc.js"
