@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.2.1")
+(def +lib-version+ "3.5.3")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,6 +18,7 @@
 (deftask package []
   (comp
    (download :url (str "http://registry.npmjs.org/firebase/-/firebase-" +lib-version+ ".tgz")
+             :checksum "9CC47991C5E481594EA360738FD709B4"
              :decompress true
              :compression-format "gz"
              :archive-format "tar")
