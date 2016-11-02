@@ -212,7 +212,13 @@ var ReactBootstrap = {
       "prevIcon": {
         "isRequired": function () {}
       },
+      "prevLabel": {
+        "isRequired": function () {}
+      },
       "nextIcon": {
+        "isRequired": function () {}
+      },
+      "nextLabel": {
         "isRequired": function () {}
       },
       "bsClass": {
@@ -247,6 +253,7 @@ var ReactBootstrap = {
         },
         "_owner": {}
       },
+      "prevLabel": {},
       "nextIcon": {
         "$$typeof": {},
         "type": {
@@ -268,6 +275,7 @@ var ReactBootstrap = {
         },
         "_owner": {}
       },
+      "nextLabel": {},
       "bsClass": {}
     },
     "Caption": {
@@ -546,6 +554,9 @@ var ReactBootstrap = {
     },
     "ControlledComponent": {
       "propTypes": {
+        "rootCloseEvent": {
+          "isRequired": function() {}
+        },
         "dropup": {
           "isRequired": function () {}
         },
@@ -601,7 +612,8 @@ var ReactBootstrap = {
             "block": {},
             "justified": {},
             "vertical": {},
-            "bsClass": {}
+            "bsClass": {},
+            "rootCloseEvent": {},
           }
         },
         "bsClass": {}
@@ -1477,6 +1489,9 @@ var ReactBootstrap = {
         },
         "bsClass": {
           "isRequired": function () {}
+        },
+        "collapseOnSelect": {
+          "isRequired": function() {}
         }
       },
       "defaultProps": {
@@ -1486,7 +1501,8 @@ var ReactBootstrap = {
         "staticTop": {},
         "inverse": {},
         "fluid": {},
-        "bsClass": {}
+        "bsClass": {},
+        "collapseOnSelect": {}
       },
       "childContextTypes": {
         "$bs_navbar": {
