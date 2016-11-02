@@ -793,6 +793,15 @@ var d3 = {
     "distanceMin": function () {},
     "distanceMax": function () {}
   },
+  "ForceNode": {
+    "index": {},
+    "x": {},
+    "y": {},
+    "vx": {},
+    "vy": {},
+    "fx": {},
+    "fy": {}
+  },
   "forceSimulation": {
     "restart": function () {},
     "stop": function () {},
