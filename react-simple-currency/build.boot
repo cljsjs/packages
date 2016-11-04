@@ -6,9 +6,9 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.0.8")
+(def +lib-version+ "1.0.10")
 (def +version+ (str +lib-version+ "-0"))
-(def +checksum+ "0deb426843e651996fc8f40c0ab83d24")
+(def +checksum+ "9051b4eed11cffd5e52c74e8b24d69f6")
 
 (task-options!
  pom  {:project     'cljsjs/react-simple-currency
