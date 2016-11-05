@@ -647,6 +647,14 @@ React.DOM.cite = function(props, children) {};
  * @return {React.Component}
  * @protected
  */
+React.DOM.clipPath = function(props, children) {};
+
+/**
+ * @param {Object=} props
+ * @param {...React.ChildrenArgument} children
+ * @return {React.Component}
+ * @protected
+ */
 React.DOM.code = function(props, children) {};
 
 /**
@@ -720,6 +728,14 @@ React.DOM.details = function(props, children) {};
  * @protected
  */
 React.DOM.dfn = function(props, children) {};
+
+/**
+ * @param {Object=} props
+ * @param {...React.ChildrenArgument} children
+ * @return {React.Component}
+ * @protected
+ */
+React.DOM.dialog = function(props, children) {};
 
 /**
  * @param {Object=} props
@@ -1159,6 +1175,14 @@ React.DOM.pattern = function(props, children) {};
  * @return {React.Component}
  * @protected
  */
+React.DOM.picture = function(props, children) {};
+
+/**
+ * @param {Object=} props
+ * @param {...React.ChildrenArgument} children
+ * @return {React.Component}
+ * @protected
+ */
 React.DOM.polygon = function(props, children) {};
 
 /**
@@ -1328,6 +1352,22 @@ React.DOM.style = function(props, children) {};
  * @protected
  */
 React.DOM.sub = function(props, children) {};
+
+/**
+ * @param {Object=} props
+ * @param {...React.ChildrenArgument} children
+ * @return {React.Component}
+ * @protected
+ */
+React.DOM.summary = function(props, children) {};
+
+/**
+ * @param {Object=} props
+ * @param {...React.ChildrenArgument} children
+ * @return {React.Component}
+ * @protected
+ */
+React.DOM.sup = function(props, children) {};
 
 /**
  * @param {Object=} props
