@@ -935,6 +935,14 @@ React.DOM.iframe = function(props, children) {};
  * @return {React.Component}
  * @protected
  */
+React.DOM.image = function(props, children) {};
+
+/**
+ * @param {Object=} props
+ * @param {...React.ChildrenArgument} children
+ * @return {React.Component}
+ * @protected
+ */
 React.DOM.img = function(props, children) {};
 
 /**
