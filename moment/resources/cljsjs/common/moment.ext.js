@@ -534,3 +534,9 @@ Moment.prototype.locales = function() {};
 * @since 2.8.0
 */
 Moment.prototype.defineLocale = function() {};
+
+/**
+ * @since 2.1.0
+ * @type {(function():!number|function(!number):!Moment|function(!string):!Moment)}
+ */
+Moment.prototype.isoWeekday = function() {};
