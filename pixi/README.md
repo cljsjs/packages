@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/pixi "3.0.10-0"] ;; latest release
+[cljsjs/pixi "4.1.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -17,6 +17,6 @@ you can require and use the packaged library like so:
 (def asset-loader js/PIXI.loader)
 ```
 
-Externs were generated using https://github.com/jmmk/javascript-externs-generator
+Externs were generated using http://jmmk.github.io/javascript-externs-generator
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
