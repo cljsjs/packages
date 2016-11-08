@@ -6,7 +6,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "6.0.0")
-(def +version+ (str +lib-version+ "-beta"))
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/preact
@@ -24,7 +24,7 @@
     (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/preact/" +lib-version+ "/preact.min.js")
               :checksum "23d3be42e4b4c25b76f7ac88f976eccb")
     (sift :move {#"preact\.js" "cljsjs/preact/development/preact.inc.js"
-                 #"preact\.min\.js" "cljsjs/preact/development/preact.min.inc.js"})
+                 #"preact\.min\.js" "cljsjs/preact/production/preact.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.preact")
     (pom)
