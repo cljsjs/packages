@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.0.10")
+(def +lib-version+ "4.1.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -17,11 +17,12 @@
 
 (deftask package []
   (comp
-    (download :url (format "https://github.com/GoodBoyDigital/pixi.js/archive/v%s.zip" +lib-version+)
-              :checksum "df4c6cb1b0830f9106db9c94a0ea8f5d"
-              :unzip true)
-    (sift :move {#"^pixi\.js-([\d\.]*)/bin/pixi\.js$" "cljsjs/pixi/development/pixi.inc.js"
-                 #"^pixi\.js-([\d\.]*)/bin/pixi\.min\.js$" "cljsjs/pixi/production/pixi.min.inc.js"})
+    (download :url "http://pixijs.download/release/pixi.js"
+              :checksum "697f41d0b43b77a7cddfbcf3aefefa50")
+    (download :url "http://pixijs.download/release/pixi.min.js"
+              :checksum "7ad2d0cb8e15ea532bbd3dbca77c55fe")
+    (sift :move {#"^pixi.js$" "cljsjs/pixi/development/pixi.inc.js"
+                 #"^pixi.min.js$" "cljsjs/pixi/production/pixi.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.pixi")
     (pom)
