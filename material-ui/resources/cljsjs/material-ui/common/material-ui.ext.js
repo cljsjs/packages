@@ -22,3 +22,12 @@ var MaterialUIStyles = {
         easeOut  : function() {}
     }
 };
+
+var MaterialUIUtils = {
+    withWidth : {
+        SMALL : {},
+        MEDIUM : {},
+        LARGE : {},
+        "default" : function() {}
+    }
+};
