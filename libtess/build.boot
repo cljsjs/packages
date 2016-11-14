@@ -1,0 +1,36 @@
+(set-env!
+ :resource-paths #{"resources"}
+ :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]])
+
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
+
+(def +lib-version+ "1.2.2")
+(def +version+ (str +lib-version+ "-0"))
+
+(task-options!
+ pom {:project 'cljsjs/libtess
+      :version +version+
+      :description "Polygon tesselation library"
+      :url "https://github.com/brendankenny/libtess.js"
+      :scm {:url "https://github.com/brendankenny/libtess.js"}
+      :license {"SGI" "https://raw.githubusercontent.com/brendankenny/libtess.js/gh-pages/LICENSE"}})
+
+(def github
+  "https://raw.githubusercontent.com/")
+
+(deftask package []
+  (comp
+   (download
+    :url (str github "brendankenny/libtess.js/" +lib-version+ "/libtess.cat.js")
+    :checksum "753831251e6cdb9ace1b4305d0120256")
+   (download
+    :url (str github "brendankenny/libtess.js/" +lib-version+ "/libtess.min.js")
+    :checksum "2b28522dc90fc23a9f73387db028005e")
+   (sift :move {#"^libtess.cat.js"
+                "cljsjs/libtess/development/libtess.inc.js"
+                #"^libtess.min.js"
+                "cljsjs/libtess/production/libtess.min.inc.js"})
+   (sift :include #{#"^cljsjs"})
+   (deps-cljs :name "cljsjs.libtess")
+   (pom)
+   (jar)))
