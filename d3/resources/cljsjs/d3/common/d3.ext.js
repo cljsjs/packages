@@ -137,7 +137,14 @@ var d3 = {
     "x1": function(){}
   },
   "line": function () {},
-  "pie": function () {},
+  "pie": {
+    "value": function () {},
+    "sortValues": function () {},
+    "sort": function () {},
+    "startAngle": function () {},
+    "endAngle": function () {},
+    "padAngle": function () {}
+  },
   "radialArea": function () {},
   "radialLine": {
     "curve": function () {},
