@@ -18,6 +18,9 @@
 (def github
   "https://raw.githubusercontent.com/")
 
+(def export
+  "(window||global)")
+
 (deftask package []
   (comp
    (download
@@ -30,6 +33,13 @@
                 "cljsjs/libtess/development/libtess.inc.js"
                 #"^libtess.min.js"
                 "cljsjs/libtess/production/libtess.min.inc.js"})
+   ;; remove CommonJS exports, export to window or global
+   (replace-content :in "cljsjs/libtess/development/libtess.inc.js"
+                    :match #"(.|\n){147}$" :value (str "\n" export ".libtess=libtess;"))
+   (replace-content :in "cljsjs/libtess/production/libtess.min.inc.js"
+                    :match #"(.|\n){70}$" :value "")
+   (replace-content :in "cljsjs/libtess/production/libtess.min.inc.js"
+                    :match #"this\.libtess=" :value (str export ".libtess="))
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.libtess")
    (pom)
