@@ -13,7 +13,7 @@
        :description "A practical functional library for Javascript programmers."
        :url         "http://ramdajs.com/"
        :scm         {:url "https://github.com/ramda/ramda"}
-       :license     {"CC BY-NC-SA 3.0" "https://creativecommons.org/licenses/by-nc-sa/3.0"}})
+       :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (deftask package []
   (comp
