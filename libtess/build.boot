@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "1.2.2")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom {:project 'cljsjs/libtess
@@ -19,7 +19,7 @@
   "https://raw.githubusercontent.com/")
 
 (def export
-  "(window||global)")
+  "(((typeof window != 'undefined') && window) || global)")
 
 (deftask package []
   (comp
