@@ -1,3 +1,3 @@
-var Victory = require('Victory');
+var Victory = require('victory');
 
 module.exports = Victory;
