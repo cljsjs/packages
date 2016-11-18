@@ -17,7 +17,7 @@
 
 (deftask package []
   (comp
-    (download :url "https://raw.githubusercontent.com/hongru/canvas2image/master/canvas2image.js")
+    (download :url "https://raw.githubusercontent.com/hongru/canvas2image/8a5394679fe8078e823a2347edf581d3cb26fab2/canvas2image.js")
     (sift :move
           {#"canvas2image.js" "cljsjs/canvas2image/development/canvas2image.inc.js"
            #"canvas2image.js" "cljsjs/canvas2image/production/canvas2image.inc.js"})
