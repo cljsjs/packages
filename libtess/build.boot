@@ -4,6 +4,10 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
+;; WARNING - when updating libtess version here, make sure the replace-content
+;; in the package task still works as expected, ie. removes CommonJS exports,
+;; and exports to either window (browser, browserify) or global (node.js)
+
 (def +lib-version+ "1.2.2")
 (def +version+ (str +lib-version+ "-1"))
 
