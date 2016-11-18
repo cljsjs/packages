@@ -172,6 +172,7 @@ var jsPDF = {
         "createSmallArc": function () {}
       }
     },
+    "addPage": function () {},
     "fromHTML": function () {},
     "addJS": function () {},
     "processPNG": function () {},
