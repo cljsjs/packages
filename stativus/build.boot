@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.1.0")
+(def +lib-version+ "0.10.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -17,7 +17,7 @@
 
 (deftask package []
   (comp
-   (download :url "https://github.com/etgryphon/stativus/archive/master.zip"
+   (download :url "https://github.com/etgryphon/stativus/archive/0.10.0.zip"
              :checksum "B9F9343113D1DB540EAA2F162377A26B"
              :unzip true)
    (sift :move {#"^stativus\-master\/stativus\.js"      "cljsjs/stativus/development/stativus.inc.js"
