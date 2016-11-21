@@ -17,11 +17,11 @@
 
 (deftask package []
   (comp
-   (download :url "https://github.com/etgryphon/stativus/archive/0.10.0.zip"
-             :checksum "B9F9343113D1DB540EAA2F162377A26B"
+   (download :url (str "https://github.com/etgryphon/stativus/archive/" +lib-version+ ".zip")
+             :checksum "2D75A9C686CDCFF6F2D43F98D4E898DD"
              :unzip true)
-   (sift :move {#"^stativus\-master\/stativus\.js"      "cljsjs/stativus/development/stativus.inc.js"
-                #"^stativus\-master\/libs\/stativus\-min\.js" "cljsjs/stativus/production/stativus.min.inc.js"})
+   (sift :move {#"^stativus-.*/stativus\.js"      "cljsjs/stativus/development/stativus.inc.js"
+                #"^stativus-.*/libs/stativus-min\.js" "cljsjs/stativus/production/stativus.min.inc.js"})
    (show :fileset true )
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.stativus")
