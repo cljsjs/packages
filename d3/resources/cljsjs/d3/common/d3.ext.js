@@ -1068,7 +1068,9 @@ d3.selection.prototype = {
   "sort": function () {},
   "call": function () {},
   "nodes": function () {},
-  "node": function () {},
+  "node": {
+    "getComputedTextLength": function () {}
+  },
   "size": function () {},
   "empty": function () {},
   "each": function () {},
