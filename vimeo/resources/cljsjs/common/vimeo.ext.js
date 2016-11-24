@@ -1,0 +1,38 @@
+var Vimeo = {
+    "Player": function () {}
+};
+Vimeo.Player.prototype = {
+    "then": function () {},
+    "callMethod": function () {},
+    "get": function () {},
+    "set": function () {},
+    "on": function () {},
+    "off": function () {},
+    "loadVideo": function () {},
+    "ready": function () {},
+    "enableTextTrack": function () {},
+    "disableTextTrack": function () {},
+    "pause": function () {},
+    "play": function () {},
+    "unload": function () {},
+    "getAutopause": function () {},
+    "setAutopause": function () {},
+    "getColor": function () {},
+    "setColor": function () {},
+    "getCurrentTime": function () {},
+    "setCurrentTime": function () {},
+    "getDuration": function () {},
+    "getEnded": function () {},
+    "getLoop": function () {},
+    "setLoop": function () {},
+    "getPaused": function () {},
+    "getTextTracks": function () {},
+    "getVideoEmbedCode": function () {},
+    "getVideoId": function () {},
+    "getVideoTitle": function () {},
+    "getVideoWidth": function () {},
+    "getVideoHeight": function () {},
+    "getVideoUrl": function () {},
+    "getVolume": function () {},
+    "setVolume": function () {}
+};
