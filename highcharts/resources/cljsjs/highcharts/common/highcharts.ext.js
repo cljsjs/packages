@@ -809,7 +809,8 @@ Highcharts.Chart.prototype = {
   "showResetZoom": function () {},
   "zoomOut": function () {},
   "zoom": function () {},
-  "pan": function () {}
+  "pan": function () {},
+  "series": []
 };
 Highcharts.Series.prototype = {
   "isCartesian": function () {},

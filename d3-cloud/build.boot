@@ -11,8 +11,8 @@
 (task-options!
  pom  {:project     'cljsjs/d3-cloud
        :version     +version+
-       :description "nil"
-       :url         "nil"
+       :description "A Wordle-inspired word cloud layout written in JavaScript. It uses HTML5 canvas and sprite masks to achieve near-interactive speeds."
+       :url         "https://github.com/jasondavies/d3-cloud"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://www.opensource.org/licenses/mit-license.php"}})
 

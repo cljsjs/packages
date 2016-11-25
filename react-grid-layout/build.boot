@@ -1,10 +1,10 @@
-(def +lib-version+ "0.12.7")
+(def +lib-version+ "0.13.7")
 (def +version+ (str +lib-version+ "-0"))
 
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]
-                  [cljsjs/react "15.2.1-1"]])
+                  [cljsjs/react "15.3.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -19,7 +19,7 @@
 (deftask package []
   (comp
     (download :url (str "https://github.com/STRML/react-grid-layout/archive/" +lib-version+ ".zip")
-              :checksum "ce062f0c8059e6515a41dad49777d1d4"
+              :checksum "756c274e867560dfc46d470b0eec6ff9"
               :unzip true)
 
     (sift :move {#"^react-grid-layout-(.*)/dist/react-grid-layout.min.js$" "cljsjs/react-grid-layout/development/react-grid-layout.inc.js"

@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/object-assign-shim "0.1.0-0"] ;; latest release
+[cljsjs/object-assign-shim "0.1.0-1"] ;; latest release
 ```
 [](/dependency)
 

@@ -2,24 +2,44 @@
 
 [](dependency)
 ```clojure
-[cljsjs/highlight "9.5.0-0"] ;; latest release
+[cljsjs/highlight "9.6.0-0"] ;; latest release
 ```
 [](/dependency)
 
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
-of the Clojurescript compiler. After adding the above dependency to your project
+of the ClojureScript compiler.
+
+After adding the above dependency to your project
 you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.highlight))
+  (:require
+    [cljsjs.highlight]
+    [cljsjs.highlight.langs.clojure]))
+```
+
+The `cljsjs.highlight.langs.clojure` is optional, you can include any of the
+language packages listed below to enable higlight support for them.
+
+Now you can reference the highlight global object:
+
+```clojure
+(.highlightBlock js/hljs (-> js/document (.querySelector "code")))
 ```
 
 Refer to [this](https://github.com/cljsjs/packages/wiki/Non-JS-Assets) wiki page
 for instructions on how to add CSS theme files to your project.
 
+TLDR - You'll have to include the highlight CSS theme code on your page in
+whatever way you prefer. The easiest is to just include the theme CSS in your
+HTML file:
 
-And also include the languages you wish to highlight:
+```html
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/zenburn.min.css" rel="stylesheet" type="text/css">
+```
+
+List of highlight language packages:
 
 ```
 cljsjs.highlight.langs.1c

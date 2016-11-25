@@ -1,6 +1,7 @@
 var Chart = {
   "defaults": {},
   "helpers": {},
+  "canvasHelpers": {},
   "elements": {},
   "Element": {
     "extend": function () {}
@@ -27,6 +28,9 @@ var Chart = {
     "__super__": {}
   },
   "scaleService": {},
+  "plugins": {},
+  "pluginBase": function () {},
+  "pluginService": {},
   "Title": {
     "extend": function () {},
     "__super__": {}
@@ -35,6 +39,7 @@ var Chart = {
     "extend": function () {},
     "__super__": {}
   },
+  "LinearScaleBase": function () {},
   "Bar": function () {},
   "Bubble": function () {},
   "Doughnut": function () {},

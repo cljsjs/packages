@@ -4,9 +4,9 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "15.3.1")
+(def +lib-version+ "15.4.0")
 (def +version+ (str +lib-version+ "-0"))
-(def +checksum+ "609BE41974089150F840D84DC677CAA3")
+(def +checksum+ "7D4C98A7BE18163E6ED1F8E2375E7A72")
 
 (task-options!
  pom  {:project     'cljsjs/react

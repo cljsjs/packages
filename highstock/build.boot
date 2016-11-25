@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "4.2.2")
+(def +lib-version+ "4.2.6")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -17,14 +17,13 @@
 
 (deftask package []
   (comp
-   (download :url      (str "http://code.highcharts.com/stock/" +lib-version+ "/highstock.js")
-             :checksum "D3E8F95E1D92704E5B160C1759F1D662")
-   (download :url      (str "http://code.highcharts.com/stock/" +lib-version+ "/highstock.src.js")
-             :checksum "D955A1BA26D7D9B9204B10D4F72C2D23")
+   (download :url (str "https://code.highcharts.com/stock/" +lib-version+ "/highstock.js")
+             :checksum "DCEDC903E6956F8766A9543524816331")
+   (download :url (str "https://code.highcharts.com/stock/" +lib-version+ "/highstock.src.js")
+             :checksum "0AFAC63726D0E216BEF5FA56E3F98717")
    (sift :move {#"highstock.js"     "cljsjs/production/highstock.min.inc.js"})
-   (sift :move {#"highstock.src.js"     "cljsjs/development/highstock.inc.js"})
+   (sift :move {#"highstock.src.js" "cljsjs/development/highstock.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name     "cljsjs.highstock"
-              :requires ["cljsjs.jquery"])
+   (deps-cljs :name "cljsjs.highstock")
    (pom)
    (jar)))

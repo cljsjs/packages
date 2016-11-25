@@ -2,6 +2,7 @@ var CodeMirror = {
   "scrollbarModel": {},
   "Pos": function () {},
   "cmpPos": function () {},
+  "colorize": function () {},
   "inputStyles": {},
   "wheelEventPixels": function () {},
   "changeEnd": function () {},

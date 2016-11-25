@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.8.0")
+(def +lib-version+ "4.1.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -17,13 +17,13 @@
 
 (deftask package []
   (comp
-   (download :url (str "https://cdn.pubnub.com/pubnub-" +lib-version+ ".js")
-             :checksum "A1B5629A42900593DD93067878A595E9")
-   (download :url (str "https://cdn.pubnub.com/pubnub-" +lib-version+ ".min.js")
-             :checksum "FB4F9B1B2AF2415741072CD0BAFC4E78")
-   (sift :move {(re-pattern (str "^pubnub-" +lib-version+ ".js$"))
+   (download :url (str "https://cdn.pubnub.com/sdk/javascript/pubnub." +lib-version+ ".js")
+             :checksum "FB4AA4C47D72F0ABA9FE3B6751562461")
+   (download :url (str "https://cdn.pubnub.com/sdk/javascript/pubnub." +lib-version+ ".min.js")
+             :checksum "2BFA093ED20BA285CCBD4026D941CE23")
+   (sift :move {(re-pattern (str "^pubnub." +lib-version+ ".js$"))
                 "cljsjs/pubnub/development/pubnub.inc.js"
-                (re-pattern (str "^pubnub-" +lib-version+ ".min.js$"))
+                (re-pattern (str "^pubnub." +lib-version+ ".min.js$"))
                 "cljsjs/pubnub/production/pubub.min.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.pubnub")

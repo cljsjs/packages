@@ -1,0 +1,1 @@
+PouchDB.prototype.liveFind = function () {};

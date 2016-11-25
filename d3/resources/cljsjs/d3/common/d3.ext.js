@@ -124,7 +124,12 @@ var d3 = {
   "path": function () {},
   "quadtree": function () {},
   "queue": function () {},
-  "arc": function () {},
+  "arc": {
+    "innerRadius": function () {},
+    "outerRadius": function () {},
+    "startAngle": function () {},
+    "endAngle": function () {},
+  },
   "area": {
     "y0": function(){},
     "y1": function(){},
@@ -132,9 +137,20 @@ var d3 = {
     "x1": function(){}
   },
   "line": function () {},
-  "pie": function () {},
+  "pie": {
+    "value": function () {},
+    "sortValues": function () {},
+    "sort": function () {},
+    "startAngle": function () {},
+    "endAngle": function () {},
+    "padAngle": function () {}
+  },
   "radialArea": function () {},
-  "radialLine": function () {},
+  "radialLine": {
+    "curve": function () {},
+    "angle": function () {},
+    "radius": function () {}
+  },
   "symbol": function () {},
   "symbols": {},
   "symbolCircle": {
@@ -598,16 +614,60 @@ var d3 = {
   "isoParse": function () {},
   "timeFormatLocale": function () {},
   "timeFormatDefaultLocale": function () {},
-  "scaleBand": function () {},
+  "scaleBand": {
+      "domain": function () {},
+      "range": function () {},
+      "rangeRound": function () {},
+      "bandwidth": function () {},
+      "step": function () {},
+      "round": function () {},
+      "padding": function () {},
+      "paddingInner": function () {},
+      "paddingOuter": function () {},
+      "align": function () {},
+      "copy": function () {}
+  },
   "scalePoint": function () {},
-  "scaleIdentity": function () {},
-  "scaleLinear": function () {},
-  "scaleLog": function () {},
-  "scaleOrdinal": function () {},
+  "scaleIdentity": {
+      "invert": function () {},
+      "domain": function () {},
+      "copy": function () {},
+      "ticks": function () {},
+      "tickFormat": function () {},
+      "nice": function () {}
+  },
+  "scaleLinear": {
+      "ticks": function () {},
+      "tickFormat": function () {},
+      "nice": function () {}
+  },
+  "scaleLog": {
+      "base": function () {},
+      "domain": function () {},
+      "ticks": function () {},
+      "tickFormat": function () {},
+      "nice": function () {},
+      "copy": function () {}
+  },
+  "scaleOrdinal": {
+      "domain": function () {},
+      "range": function () {},
+      "unknown": function () {},
+      "copy": function () {},
+  },
   "scaleImplicit": {
     "name": {}
   },
   "scalePow": function () {},
+  "scaleSequential": {
+      "domain": function () {},
+      "clamp": function () {},
+      "interpolator": function () {},
+      "copy": function () {},
+      "ticks": function () {},
+      "tickFormat": function () {},
+      "nice": function () {}
+  },
   "scaleSqrt": function () {},
   "scaleQuantile": function () {},
   "scaleQuantize": function () {},
@@ -651,10 +711,50 @@ var d3 = {
   "active": function () {},
   "interrupt": function () {},
   "transition": function () {},
-  "axisTop": function () {},
-  "axisRight": function () {},
-  "axisBottom": function () {},
-  "axisLeft": function () {},
+  "axisTop": {
+    "scale": function () {},
+    "ticks": function () {},
+    "tickArguments": function () {},
+    "tickValues": function () {},
+    "tickFormat": function () {},
+    "tickSize": function () {},
+    "tickSizeInner": function () {},
+    "tickSizeOuter": function () {},
+    "tickPadding": function () {}
+  },
+  "axisRight": {
+    "scale": function () {},
+    "ticks": function () {},
+    "tickArguments": function () {},
+    "tickValues": function () {},
+    "tickFormat": function () {},
+    "tickSize": function () {},
+    "tickSizeInner": function () {},
+    "tickSizeOuter": function () {},
+    "tickPadding": function () {}
+  },
+  "axisBottom": {
+    "scale": function () {},
+    "ticks": function () {},
+    "tickArguments": function () {},
+    "tickValues": function () {},
+    "tickFormat": function () {},
+    "tickSize": function () {},
+    "tickSizeInner": function () {},
+    "tickSizeOuter": function () {},
+    "tickPadding": function () {}
+  },
+  "axisLeft": {
+    "scale": function () {},
+    "ticks": function () {},
+    "tickArguments": function () {},
+    "tickValues": function () {},
+    "tickFormat": function () {},
+    "tickSize": function () {},
+    "tickSizeInner": function () {},
+    "tickSizeOuter": function () {},
+    "tickPadding": function () {}
+  },
   "cluster": function () {},
   "hierarchy": function () {},
   "pack": function () {},
@@ -699,6 +799,15 @@ var d3 = {
     "theta": function () {},
     "distanceMin": function () {},
     "distanceMax": function () {}
+  },
+  "ForceNode": {
+    "index": {},
+    "x": {},
+    "y": {},
+    "vx": {},
+    "vy": {},
+    "fx": {},
+    "fy": {}
   },
   "forceSimulation": {
     "restart": function () {},
@@ -959,7 +1068,9 @@ d3.selection.prototype = {
   "sort": function () {},
   "call": function () {},
   "nodes": function () {},
-  "node": function () {},
+  "node": {
+    "getComputedTextLength": function () {}
+  },
   "size": function () {},
   "empty": function () {},
   "each": function () {},

@@ -1,3 +1,8 @@
+/**
+ * Handwritten externs for commonmark. Externs generators can't deal with this library so please don't try.
+ * Commonmark's README.md documents public API functions and variables that should be exposed in this file.
+ **/
+
 /** @const */
 var commonmark = {};
 
@@ -31,6 +36,12 @@ commonmark.Node.prototype.isContainer;
 commonmark.Node.prototype.literal;
 
 /** @type {string|null} */
+commonmark.Node.prototype.destination;
+
+/** @type {string|null} */
+commonmark.Node.prototype.title;
+
+/** @type {string|null} */
 commonmark.Node.prototype.info;
 
 /** @type {number|null} */
@@ -48,17 +59,25 @@ commonmark.Node.prototype.listStart;
 /** @type {string|null} */
 commonmark.Node.prototype.listDelimiter;
 
-/** @param {commonmark.Node} node */
-commonmark.Node.prototype.appendChild = function(node) {};
+/** @type {string|null} */
+commonmark.Node.prototype.onEnter;
 
-/** @param {commonmark.Node} node */
-commonmark.Node.prototype.prependChild = function(node) {};
+/** @type {string|null} */
+commonmark.Node.prototype.onExit;
+
+/** @param {commonmark.Node} child */
+commonmark.Node.prototype.appendChild = function(child) {};
+
+/** @param {commonmark.Node} child */
+commonmark.Node.prototype.prependChild = function(child) {};
 
 commonmark.Node.prototype.unlink = function() {};
 
-commonmark.Node.prototype.insertAfter = function() {};
+/** @param {commonmark.Node} sibling */
+commonmark.Node.prototype.insertAfter = function(sibling) {};
 
-commonmark.Node.prototype.insertBefore = function() {};
+/** @param {commonmark.Node} sibling */
+commonmark.Node.prototype.insertBefore = function(sibling) {};
 
 /** @return {commonmark.NodeWalker} */
 commonmark.Node.prototype.walker = function() {};

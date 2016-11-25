@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.1.4")
+(def +lib-version+ "2.2.6")
 (def +version+ (str +lib-version+ "-1"))
 
 (task-options!
@@ -17,7 +17,7 @@
 (deftask package []
   (comp
    (download :url (str "https://github.com/Ranks/emojione/archive/v" +lib-version+ ".zip")
-             :checksum "4F4CF16BFF8AA815B776E239F17CC758"
+             :checksum "c7520355d26f2aea28b83ec8d6101fbb"
              :unzip true)
    (sift :move {#"^emojione-\d\.\d\.\d/lib/js/emojione\.min\.js$" "cljsjs/emojione/production/emojione.min.inc.js"
                 #"^emojione-\d\.\d\.\d/lib/js/emojione\.js$" "cljsjs/emojione/development/emojione.inc.js"
