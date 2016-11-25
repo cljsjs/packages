@@ -19,4 +19,13 @@
 
 (deftask package []
   (comp
+    (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/socket.io/" +lib-version+ "/socket.io.js")
+              :checksum "25C4C6610F9CC7AB58B9EB2E5E9EC8E1")
+    (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/socket.io/" +lib-version+ "/socket.io.min.js")
+              :checksum "8C95B98A636A39DF32C396D665EF6908")
+    (sift :move {#"socket.io.js" "cljsjs/development/socket.io.inc.js"
+                 #"socket.io.min.js" "cljsjs/production/socket.io.min.inc.js"}
+          :include #{#"^cljsjs"})
+    (pom)
+    (jar)
     (deps-cljs :name "cljsjs.socket-io")))
