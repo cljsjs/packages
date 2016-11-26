@@ -26,6 +26,6 @@
     (sift :move {#"socket.io.js" "cljsjs/development/socket.io.inc.js"
                  #"socket.io.min.js" "cljsjs/production/socket.io.min.inc.js"}
           :include #{#"^cljsjs"})
+    (deps-cljs :name "cljsjs.socket-io")
     (pom)
-    (jar)
-    (deps-cljs :name "cljsjs.socket-io")))
+    (jar)))
