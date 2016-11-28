@@ -902,7 +902,8 @@ Highcharts.Point.prototype = {
   "onMouseOut": function () {},
   "importEvents": function () {},
   "setState": function () {},
-  "haloPath": function () {}
+  "haloPath": function () {},
+  "percentage": {}
 };
 Highcharts.Tick.prototype = {
   "addLabel": function () {},
