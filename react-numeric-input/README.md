@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-numeric-input "2.0.6"] ;; latest release
+[cljsjs/react-numeric-input "2.0.6-0"] ;; latest release
 ```
 [](/dependency)
 
