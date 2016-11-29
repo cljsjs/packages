@@ -10,7 +10,7 @@
 
 (task-options!
  pom  {:project     'cljsjs/tonejs
-       :version     +version+
+       :version     +lib-version+
        :description "A Web Audio framework for making interactive music in the browser."
        :url         "http://www.tonejs.org/"
        :license     {"MIT" "https://github.com/Tonejs/Tone.js/blob/master/LICENSE.md"}
