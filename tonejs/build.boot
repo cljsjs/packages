@@ -1,5 +1,6 @@
 (def +lib-release+ "8")
-(def +lib-version+ (str "0." +lib-version+ ".0"))
+(def +lib-version+ (str "0." +lib-release+ ".0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (set-env!
   :resource-paths #{"resources"}
@@ -10,7 +11,7 @@
 
 (task-options!
  pom  {:project     'cljsjs/tonejs
-       :version     +lib-version+
+       :version     +version+
        :description "A Web Audio framework for making interactive music in the browser."
        :url         "http://www.tonejs.org/"
        :license     {"MIT" "https://github.com/Tonejs/Tone.js/blob/master/LICENSE.md"}
