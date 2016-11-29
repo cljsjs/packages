@@ -1,5 +1,5 @@
-(def +lib-version+ "0.8.0")
-(def +version+ (str +lib-version+ ""))
+(def +lib-release+ "8")
+(def +lib-version+ (str "0." +lib-version+ ".0"))
 
 (set-env!
   :resource-paths #{"resources"}
@@ -19,7 +19,7 @@
 (deftask package []
   (comp
    (download :url
-             "https://raw.githubusercontent.com/Tonejs/Tone.js/master/build/Tone.min.js"
+             (format "https://raw.githubusercontent.com/Tonejs/Tone.js/r%s/build/Tone.min.js" +lib-release+)
              :checksum
              "4FFBDF59A08A54FF624BCD17D0FF27D4")
 
