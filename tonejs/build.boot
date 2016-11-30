@@ -13,7 +13,7 @@
  pom  {:project     'cljsjs/tonejs
        :version     +version+
        :description "A Web Audio framework for making interactive music in the browser."
-       :url         "http://www.tonejs.org/"
+       :url         "http://tonejs.org/"
        :license     {"MIT" "https://github.com/Tonejs/Tone.js/blob/master/LICENSE.md"}
        :scm         {:url "https://github.com/cljsjs/packages"}})
 
