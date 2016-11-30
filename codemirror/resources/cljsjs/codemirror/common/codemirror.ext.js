@@ -25,6 +25,7 @@ var CodeMirror = {
   "registerHelper": function () {},
   "registerGlobalHelper": function () {},
   "copyState": function () {},
+  "showHint": function () {},
   "startState": function () {},
   "innerMode": function () {},
   "commands": {},
