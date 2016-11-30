@@ -1,6 +1,6 @@
-(def +lib-release+ "8")
-(def +lib-version+ (str "0." +lib-release+ ".0"))
+(def +lib-version+ "0.8.0")
 (def +version+ (str +lib-version+ "-1"))
+(def +lib-release+ (second (clojure.string/split +lib-version+ #"\.")))
 
 (set-env!
   :resource-paths #{"resources"}
