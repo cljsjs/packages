@@ -21,16 +21,16 @@
 (deftask package []
   (comp
 
-    (download :url (str "https://unpkg.com/google-map-react@" +lib-version+ "/dist/google-map-react.js")
+    (download :url (str "https://unpkg.com/google-map-react@" +lib-version+ "/dist/GoogleMapReact.js")
       :checksum "DAC56A1D41B6A557855F6C11E93E4FE5"
       :unzip false)
 
-    (download :url (str "https://unpkg.com/google-map-react@" +lib-version+ "/dist/google-map-react.min.js")
+    (download :url (str "https://unpkg.com/google-map-react@" +lib-version+ "/dist/GoogleMapReact.min.js")
       :checksum "D19AAD87922C7CEBF2DF60E703324E9C"
       :unzip false)
 
-    (sift :move {#"^google-map-react.js$"     "cljsjs/google-map-react/development/google-map-react.inc.js"
-                  #"^google-map-react.min.js$" "cljsjs/google-map-react/production/google-map-react.min.inc.js"})
+    (sift :move {#"^GoogleMapReact.js$"     "cljsjs/google-map-react/development/google-map-react.inc.js"
+                  #"^GoogleMapReact.min.js$" "cljsjs/google-map-react/production/google-map-react.min.inc.js"})
 
     (sift :include #{#"cljsjs"})
 
