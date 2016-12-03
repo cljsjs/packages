@@ -14,6 +14,11 @@ you can require the packaged library like so:
 (ns application.core
   (:require [cljsjs.inferno]))
 
+(defn init []
+  (let [container (. js/document (getElementById "container"))
+        v-node (.createVNode  js/Inferno 2 "div" #js {} "Inferno is working")]
+    (.render js/Inferno v-node container)))
+
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
