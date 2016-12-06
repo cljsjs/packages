@@ -28,32 +28,25 @@
 
 (deftask package []
   (comp
-   (download :url (format "https://raw.githubusercontent.com/TriumphLLC/Blend4Web/%s/deploy/apps/common/b4w.min.js" +lib-version+)
-             :checksum "316e4cb2748cb72bc5a563d1f7fe354c")
-   (download :url (format "https://raw.githubusercontent.com/TriumphLLC/Blend4Web/%s/tools/closure-compiler/extern_fullscreen.js" +lib-version+)
-             :checksum "fe0a688b40a2f0c672e779f0aaced2a8")
-   (download :url (format "https://raw.githubusercontent.com/TriumphLLC/Blend4Web/%s/tools/closure-compiler/extern_modules.js" +lib-version+)
-             :checksum "9cd667bcb91b219429d604c938f7796c")
-   (download :url (format "https://raw.githubusercontent.com/TriumphLLC/Blend4Web/%s/tools/closure-compiler/extern_gl-matrix.js" +lib-version+)
-             :checksum "6a59beeb17a53e793ffe982d5be20ab0")
-   (download :url (format "https://raw.githubusercontent.com/TriumphLLC/Blend4Web/%s/tools/closure-compiler/extern_pointerlock.js" +lib-version+)
-             :checksum "960a195b4ff3739ddc9047b42ce98a93")
-   (download :url (format "https://raw.githubusercontent.com/TriumphLLC/Blend4Web/%s/src/b4w.js" +lib-version+)
-             :checksum "729b695260472aecd87472150a698045")
-   (download :url (format "https://raw.githubusercontent.com/TriumphLLC/Blend4Web/%s/deploy/apps/common/uranium.js" +lib-version+)
-             :checksum "9B298C15DAE3D526F9652D896A088CC1")
-   (download :url (format "https://raw.githubusercontent.com/TriumphLLC/Blend4Web/%s/deploy/apps/common/uranium.js.mem" +lib-version+)
-             :checksum "3FF638D920819952240A1FDC28E6FD16")
+   (download :url (format "https://raw.githubusercontent.com/TriumphLLC/Blend4Web/%s/deploy/apps/common/b4w.min.js" +lib-version+))
+   (download :url (format "https://raw.githubusercontent.com/TriumphLLC/Blend4Web/%s/deploy/apps/common/b4w.simple.min.js" +lib-version+))
+
+   (download :url (format "https://raw.githubusercontent.com/TriumphLLC/Blend4Web/%s/tools/closure-compiler/extern_fullscreen.js" +lib-version+))
+   (download :url (format "https://raw.githubusercontent.com/TriumphLLC/Blend4Web/%s/tools/closure-compiler/extern_modules.js" +lib-version+))
+   (download :url (format "https://raw.githubusercontent.com/TriumphLLC/Blend4Web/%s/tools/closure-compiler/extern_gl-matrix.js" +lib-version+))
+   (download :url (format "https://raw.githubusercontent.com/TriumphLLC/Blend4Web/%s/tools/closure-compiler/extern_pointerlock.js" +lib-version+))
+
+   (download :url (format "https://raw.githubusercontent.com/TriumphLLC/Blend4Web/%s/deploy/apps/common/uranium.js" +lib-version+))
+   (download :url (format "https://raw.githubusercontent.com/TriumphLLC/Blend4Web/%s/deploy/apps/common/uranium.js.mem" +lib-version+))
 
    (sift :move {;;These are all the externs
-                #"^b4w.js"               "cljsjs/blend4web/common/b4w.ext.js"
                 #"^extern_fullscreen.js" "cljsjs/blend4web/common/extern_fullscreen.ext.js"
                 #"^extern_gl-matrix.js"  "cljsjs/blend4web/common/extern_gl-matrix.ext.js"
                 #"^extern_jquery-1.9.js" "cljsjs/blend4web/common/extern_pointerlock.ext.js"
                 #"^extern_modules.js"    "cljsjs/blend4web/common/extern_modules.ext.js"
 
-                ;;Now for the compiled js
-                #"^b4w.min.js" "cljsjs/blend4web/production/b4w.inc.js"
+                #"^b4w.simple.min.js" "cljsjs/blend4web/development/b4w.inc.js"
+                #"^b4w.min.js"        "cljsjs/blend4web/production/b4w.inc.min.js"
 
                 ;You need uranium these last two in the same file as your html
                 ;entry point.
@@ -62,6 +55,5 @@
 
    (sift      :include   #{#"^cljsjs"})
    (deps-cljs :name     "blend4web")
-   (show)
    (pom)
    (jar)))
