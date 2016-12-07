@@ -15,3 +15,11 @@ If you're looking for a place to start, try downloading the [monkey project](htt
 [Here's a workflow video](https://vimeo.com/191821775)
 
 *Note: Probably runs best on Chrome, FF*
+
+### Externs
+
+Download the full blend4web archive (1.4GB).
+
+Modify `script/compile_b4w.py` script so that it doesn't delete `externs_gen_file` (around line 248).
+
+Run the script and copy created extern file from temp folder (`/tmp` or such) to `resources` folder here.
