@@ -35,15 +35,17 @@
    (download :url (format "https://raw.githubusercontent.com/TriumphLLC/Blend4Web/%s/tools/closure-compiler/extern_modules.js" +lib-version+))
    (download :url (format "https://raw.githubusercontent.com/TriumphLLC/Blend4Web/%s/tools/closure-compiler/extern_gl-matrix.js" +lib-version+))
    (download :url (format "https://raw.githubusercontent.com/TriumphLLC/Blend4Web/%s/tools/closure-compiler/extern_pointerlock.js" +lib-version+))
+   (download :url (format "https://raw.githubusercontent.com/TriumphLLC/Blend4Web/%s/tools/closure-compiler/w3c_audio.js" +lib-version+))
 
    (download :url (format "https://raw.githubusercontent.com/TriumphLLC/Blend4Web/%s/deploy/apps/common/uranium.js" +lib-version+))
    (download :url (format "https://raw.githubusercontent.com/TriumphLLC/Blend4Web/%s/deploy/apps/common/uranium.js.mem" +lib-version+))
 
    (sift :move {;;These are all the externs
-                #"^extern_fullscreen.js" "cljsjs/blend4web/common/extern_fullscreen.ext.js"
-                #"^extern_gl-matrix.js"  "cljsjs/blend4web/common/extern_gl-matrix.ext.js"
-                #"^extern_jquery-1.9.js" "cljsjs/blend4web/common/extern_pointerlock.ext.js"
-                #"^extern_modules.js"    "cljsjs/blend4web/common/extern_modules.ext.js"
+                #"^extern_fullscreen.js"  "cljsjs/blend4web/common/extern_fullscreen.ext.js"
+                #"^extern_modules.js"     "cljsjs/blend4web/common/extern_modules.ext.js"
+                #"^extern_gl-matrix.js"   "cljsjs/blend4web/common/extern_gl-matrix.ext.js"
+                #"^extern_pointerlock.js" "cljsjs/blend4web/common/extern_pointerlock.ext.js"
+                #"^w3c_audio.js"          "cljsjs/blend4web/common/w3c_audio.ext.js"
 
                 #"^b4w.simple.min.js" "cljsjs/blend4web/development/b4w.inc.js"
                 #"^b4w.min.js"        "cljsjs/blend4web/production/b4w.inc.min.js"
