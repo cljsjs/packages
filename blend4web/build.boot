@@ -16,15 +16,15 @@
        :license     {"GPL3" "https://github.com/TriumphLLC/Blend4Web/blob/master/license/GPL-license.txt"}
        :scm {:url   "https://github.com/cljsjs/packages"}})
 
-; (deftask uranium
-;   "Ensure uranium.js and uranium.js.mem are in target directory.  This is not
-;   needed to build the package, rather its for any projects using the package."
-;   []
-;   ;;uranium.js and uranium.js.mem need to both be in the same subdir as b4w's target html.
-;   (sift :add-jar {'cljsjs/blend4web #"^*/uranium.js*"}
-;         :move {#"^*cljsjs/blend4web/common/uranium.js"
-;                "uranium.js"}
-;         :to-resource #{#"uranium.js*"}))
+(deftask uranium
+  "For Cljsjs package consumers. Adds uranium.js and uranium.js.mem to fileset.
+
+  These files need to be accessible by browser at the same directory as the HTML file.
+  If needed, you can use additional sift task to move the files to the correct path."
+  []
+  ;; Open ended regex - matches both .js and .js.mem
+  (sift :add-jar {'cljsjs/blend4web #"^*/uranium.js*"}
+        :move {#"^*cljsjs/blend4web/common/uranium.js" "uranium.js"}))
 
 (deftask package []
   (comp
