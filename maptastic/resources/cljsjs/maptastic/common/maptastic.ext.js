@@ -1,7 +1,6 @@
 var Maptastic = function() {
 
-  var getProp = function(){
-  }
+  var getProp = function() {}
 
   var showLayerNames       = getProp(config, 'labels', true);
   var showCrosshairs       = getProp(config, 'crosshairs', false);
@@ -34,64 +33,40 @@ var Maptastic = function() {
   var mouseDelta;
   var mouseDownPoint;
 
-	// Compute linear distance.
-	var distanceTo = function(x1, y1, x2, y2) {
-	}
+	var distanceTo = function(x1, y1, x2, y2) {}
+  var pointInTriangle = function(point, a, b, c) {}
+	var pointInLayer = function(point, layer) {};
 
-  var pointInTriangle = function(point, a, b, c) {
-	}
-	// determine if a point is inside a layer quad.
-	var pointInLayer = function(point, layer) {
-	};
+  var notifyChangeListener = function() {};
+	var draw = function() {}
 
-  var notifyChangeListener = function() {
-  };
+	var swapLayerPoints = function(){}
 
-	var draw = function() {
-	}
+	var init = function(){};
 
-	var swapLayerPoints = function(){
-	}
+	var rotateLayer = function() {}
 
-	var init = function(){
-	};
+	var mouseMove = function() {};
 
-	var rotateLayer = function() {
-  }
+	var mouseUp = function() {};
 
-	var mouseMove = function() {
-  };
+	var mouseDown = function() {};
 
-	var mouseUp = function() {
-	};
+	var addLayer = function() {};
 
-	var mouseDown = function() {
-	};
+  var saveSettings = function() {};
 
-	var addLayer = function() {
-  };
+  var loadSettings = function() {}
 
-  var saveSettings = function() {
-  };
+	var updateTransform = function() {}
 
-  var loadSettings = function() {
-  }
+	var setConfigEnabled = function(){};
 
-	var updateTransform = function() {
-	}
+	var clonePoints = function(){};
 
-	var setConfigEnabled = function(){
-	};
+	var resize = function() {};
 
-	var clonePoints = function(){
-	};
+  var getLayout = function() {}
 
-	var resize = function() {
-	};
-
-  var getLayout = function() {
-  }
-
-  var setLayout = function(){
-  }
+  var setLayout = function(){}
 }
