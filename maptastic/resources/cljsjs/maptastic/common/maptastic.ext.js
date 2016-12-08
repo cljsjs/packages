@@ -1,72 +1,76 @@
-var Maptastic = function() {
+var config;
+var cfg;
+var key;
+var defaultVal;
 
-  var getProp = function() {}
+var Maptastic = function() {};
 
-  var showLayerNames       = getProp(config, 'labels', true);
-  var showCrosshairs       = getProp(config, 'crosshairs', false);
-  var showScreenBounds     = getProp(config, 'screenbounds', false);
-  var autoSave             = getProp(config, 'autoSave', true);
-  var autoLoad             = getProp(config, 'autoLoad', true);
-  var layerList            = getProp(config, 'layers', []);
-  var layoutChangeListener = getProp(config, 'onchange', function(){} );
-  var localStorageKey      = 'maptastic.layers';
+var getProp = function() {};
 
-  var canvas;
-  var context;
+var showLayerNames;
+var showCrosshairs;
+var showScreenBounds;
+var autoSave;
+var autoLoad;
+var layerList;
+var layoutChangeListener;
+var localStorageKey;
 
-  var layers;
+var canvas;
+var context;
 
-  var configActive;
+var layers;
 
-  var dragging;
-  var dragOffset;
+var configActive;
 
-  var selectedLayer;
-  var selectedPoint;
-  var selectionRadius;
-  var hoveringPoint;
-  var hoveringLayer;
-  var dragOperation;
-  var isLayerSoloed;
+var dragging;
+var dragOffset;
 
-  var mousePosition;
-  var mouseDelta;
-  var mouseDownPoint;
+var selectedLayer;
+var selectedPoint;
+var selectionRadius;
+var hoveringPoint;
+var hoveringLayer;
+var dragOperation;
+var isLayerSoloed;
 
-	var distanceTo = function(x1, y1, x2, y2) {}
-  var pointInTriangle = function(point, a, b, c) {}
-	var pointInLayer = function(point, layer) {};
+var mousePosition;
+var mouseDelta;
+var mouseDownPoint;
 
-  var notifyChangeListener = function() {};
-	var draw = function() {}
+var distanceTo = function() {}
+var pointInTriangle = function() {}
+var pointInLayer = function() {};
 
-	var swapLayerPoints = function(){}
+var notifyChangeListener = function() {};
+var draw = function() {}
 
-	var init = function(){};
+var swapLayerPoints = function(){}
 
-	var rotateLayer = function() {}
+var init = function(){};
 
-	var mouseMove = function() {};
+var rotateLayer = function() {}
 
-	var mouseUp = function() {};
+var mouseMove = function() {};
 
-	var mouseDown = function() {};
+var mouseUp = function() {};
 
-	var addLayer = function() {};
+var mouseDown = function() {};
 
-  var saveSettings = function() {};
+var addLayer = function() {};
 
-  var loadSettings = function() {}
+var saveSettings = function() {};
 
-	var updateTransform = function() {}
+var loadSettings = function() {}
 
-	var setConfigEnabled = function(){};
+var updateTransform = function() {}
 
-	var clonePoints = function(){};
+var setConfigEnabled = function(){};
 
-	var resize = function() {};
+var clonePoints = function(){};
 
-  var getLayout = function() {}
+var resize = function() {};
 
-  var setLayout = function(){}
-}
+var getLayout = function() {};
+
+var setLayout = function(){};
