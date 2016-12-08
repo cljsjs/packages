@@ -24,7 +24,13 @@
              :checksum
              "8600104d8e1006e83f4a4e602a409c33")
 
-    (sift :move {#"^maptastic.min.js" "cljsjs/maptastic/development/maptastic.inc.js"})
+   (download :url
+             "https://raw.githubusercontent.com/glowbox/maptasticjs/master/src/maptastic.js"
+             :checksum
+             "48b15feacf71aaa073cd486e463d96ff")
+
+    (sift :move {#"^maptastic.min.js" "cljsjs/maptastic/production/maptastic.min.inc.js"})
+    (sift :move {#"^maptastic.js" "cljsjs/maptastic/development/maptastic.inc.js"})
 
   	(sift :include #{#"^cljsjs"})
   	(deps-cljs :name "maptastic")
