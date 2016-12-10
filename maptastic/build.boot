@@ -25,9 +25,9 @@
              "8600104d8e1006e83f4a4e602a409c33")
 
    (download :url
-             "https://raw.githubusercontent.com/glowbox/maptasticjs/master/src/maptastic.js"
+             "https://raw.githubusercontent.com/glowbox/maptasticjs/master/build/maptastic.js"
              :checksum
-             "48b15feacf71aaa073cd486e463d96ff")
+             "826710c954ef1fbd989d040dace76e61")
 
     (sift :move {#"^maptastic.min.js" "cljsjs/maptastic/production/maptastic.min.inc.js"})
     (sift :move {#"^maptastic.js" "cljsjs/maptastic/development/maptastic.inc.js"})
