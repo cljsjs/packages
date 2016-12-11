@@ -1,0 +1,2 @@
+{:foreign-libs [{:provides ["cljsjs.proptypes"]
+                 :file "cljsjs/proptypes/development/proptypes.inc.js"}]}
