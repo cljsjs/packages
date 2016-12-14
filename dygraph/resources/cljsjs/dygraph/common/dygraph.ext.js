@@ -2487,3 +2487,245 @@ var Dygraph = {
         "FractionsBarsHandler": function () {}
     }
 }
+Dygraph.prototype = {
+    "__old_init__": function () {},
+    "__init__": function () {},
+    "cascadeEvents_": function () {},
+    "getPluginInstance_": function () {},
+    "isZoomed": function () {},
+    "toString": function () {},
+    "attr_": function () {},
+    "getOption": function () {},
+    "getNumericOption": function () {},
+    "getStringOption": function () {},
+    "getBooleanOption": function () {},
+    "getFunctionOption": function () {},
+    "getOptionForAxis": function () {},
+    "optionsViewForAxis_": function () {},
+    "rollPeriod": function () {},
+    "xAxisRange": function () {},
+    "xAxisExtremes": function () {},
+    "yAxisRange": function () {},
+    "yAxisRanges": function () {},
+    "toDomCoords": function () {},
+    "toDomXCoord": function () {},
+    "toDomYCoord": function () {},
+    "toDataCoords": function () {},
+    "toDataXCoord": function () {},
+    "toDataYCoord": function () {},
+    "toPercentYCoord": function () {},
+    "toPercentXCoord": function () {},
+    "numColumns": function () {},
+    "numRows": function () {},
+    "getValue": function () {},
+    "createInterface_": function () {},
+    "resizeElements_": function () {},
+    "destroy": function () {},
+    "createPlotKitCanvas_": function () {},
+    "createMouseEventElement_": function () {},
+    "setColors_": function () {},
+    "getColors": function () {},
+    "getPropertiesForSeries": function () {},
+    "createRollInterface_": function () {},
+    "createDragInterface_": function () {},
+    "drawZoomRect_": function () {},
+    "clearZoomRect_": function () {},
+    "doZoomX_": function () {},
+    "doZoomXDates_": function () {},
+    "doZoomY_": function () {},
+    "resetZoom": function () {},
+    "doAnimatedZoom": function () {},
+    "getArea": function () {},
+    "eventToDomCoords": function () {},
+    "findClosestRow": function () {},
+    "findClosestPoint": function () {},
+    "findStackedPoint": function () {},
+    "mouseMove_": function () {},
+    "getLeftBoundary_": function () {},
+    "animateSelection_": function () {},
+    "updateSelection_": function () {},
+    "setSelection": function () {},
+    "mouseOut_": function () {},
+    "clearSelection": function () {},
+    "getSelection": function () {},
+    "getHighlightSeries": function () {},
+    "isSeriesLocked": function () {},
+    "loadedEvent_": function () {},
+    "addXTicks_": function () {},
+    "getHandlerClass_": function () {},
+    "predraw_": function () {},
+    "gatherDatasets_": function () {},
+    "drawGraph_": function () {},
+    "renderGraph_": function () {},
+    "computeYAxes_": function () {},
+    "numAxes": function () {},
+    "axisPropertiesForSeries": function () {},
+    "computeYAxisRanges_": function () {},
+    "detectTypeFromString_": function () {},
+    "setXAxisOptions_": function () {},
+    "parseCSV_": function () {},
+    "parseArray_": function () {},
+    "parseDataTable_": function () {},
+    "cascadeDataDidUpdateEvent_": function () {},
+    "start_": function () {},
+    "updateOptions": function () {},
+    "resize": function () {},
+    "adjustRoll": function () {},
+    "visibility": function () {},
+    "setVisibility": function () {},
+    "size": function () {},
+    "setAnnotations": function () {},
+    "annotations": function () {},
+    "getLabels": function () {},
+    "indexFromSetName": function () {},
+    "ready": function () {},
+    "addAndTrackEvent": function () {},
+    "removeTrackedEvents_": function () {}
+};
+Dygraph.Iterator.prototype = {
+    "next": function () {}
+};
+Dygraph.IFrameTarp.prototype = {
+    "cover": function () {},
+    "uncover": function () {}
+};
+Dygraph.GVizChart.prototype = {
+    "draw": function () {},
+    "setSelection": function () {},
+    "getSelection": function () {}
+};
+Dygraph.Plugins.Annotations.prototype = {
+    "toString": function () {},
+    "activate": function () {},
+    "detachLabels": function () {},
+    "clearChart": function () {},
+    "didDrawChart": function () {},
+    "destroy": function () {}
+};
+Dygraph.Plugins.Axes.prototype = {
+    "toString": function () {},
+    "activate": function () {},
+    "layout": function () {},
+    "detachLabels": function () {},
+    "clearChart": function () {},
+    "willDrawChart": function () {}
+};
+Dygraph.Plugins.ChartLabels.prototype = {
+    "toString": function () {},
+    "activate": function () {},
+    "detachLabels_": function () {},
+    "layout": function () {},
+    "didDrawChart": function () {},
+    "clearChart": function () {},
+    "destroy": function () {}
+};
+Dygraph.Plugins.Grid.prototype = {
+    "toString": function () {},
+    "activate": function () {},
+    "willDrawChart": function () {},
+    "destroy": function () {}
+};
+Dygraph.Plugins.Legend.prototype = {
+    "toString": function () {},
+    "activate": function () {},
+    "select": function () {},
+    "deselect": function () {},
+    "didDrawChart": function () {},
+    "predraw": function () {},
+    "destroy": function () {}
+};
+Dygraph.Plugins.RangeSelector.prototype = {
+    "toString": function () {},
+    "activate": function () {},
+    "destroy": function () {},
+    "getOption_": function () {},
+    "setDefaultOption_": function () {},
+    "createInterface_": function () {},
+    "addToGraph_": function () {},
+    "removeFromGraph_": function () {},
+    "reserveSpace_": function () {},
+    "renderStaticLayer_": function () {},
+    "renderInteractiveLayer_": function () {},
+    "updateVisibility_": function () {},
+    "resize_": function () {},
+    "createCanvases_": function () {},
+    "createIEPanOverlay_": function () {},
+    "createZoomHandles_": function () {},
+    "initInteraction_": function () {},
+    "drawStaticLayer_": function () {},
+    "drawMiniPlot_": function () {},
+    "computeCombinedSeriesAndLimits_": function () {},
+    "placeZoomHandles_": function () {},
+    "drawInteractiveLayer_": function () {},
+    "getZoomHandleStatus_": function () {}
+};
+Dygraph.DataHandler.prototype = {
+    "extractSeries": function () {},
+    "seriesToPoints": function () {},
+    "onPointsCreated_": function () {},
+    "rollingAverage": function () {},
+    "getExtremeYValues": function () {},
+    "onLineEvaluated": function () {},
+    "computeYInterpolation_": function () {},
+    "getIndexesInWindow_": function () {}
+};
+Dygraph.DataHandlers.DefaultHandler.prototype = {
+    "extractSeries": function () {},
+    "rollingAverage": function () {},
+    "getExtremeYValues": function () {},
+    "seriesToPoints": function () {},
+    "onPointsCreated_": function () {},
+    "onLineEvaluated": function () {},
+    "computeYInterpolation_": function () {},
+    "getIndexesInWindow_": function () {}
+};
+Dygraph.DataHandlers.DefaultFractionHandler.prototype = {
+    "extractSeries": function () {},
+    "rollingAverage": function () {},
+    "getExtremeYValues": function () {},
+    "seriesToPoints": function () {},
+    "onPointsCreated_": function () {},
+    "onLineEvaluated": function () {},
+    "computeYInterpolation_": function () {},
+    "getIndexesInWindow_": function () {}
+};
+Dygraph.DataHandlers.BarsHandler.prototype = {
+    "extractSeries": function () {},
+    "rollingAverage": function () {},
+    "onPointsCreated_": function () {},
+    "getExtremeYValues": function () {},
+    "onLineEvaluated": function () {},
+    "seriesToPoints": function () {},
+    "computeYInterpolation_": function () {},
+    "getIndexesInWindow_": function () {}
+};
+Dygraph.DataHandlers.CustomBarsHandler.prototype = {
+    "extractSeries": function () {},
+    "rollingAverage": function () {},
+    "onPointsCreated_": function () {},
+    "getExtremeYValues": function () {},
+    "onLineEvaluated": function () {},
+    "seriesToPoints": function () {},
+    "computeYInterpolation_": function () {},
+    "getIndexesInWindow_": function () {}
+};
+Dygraph.DataHandlers.ErrorBarsHandler.prototype = {
+    "extractSeries": function () {},
+    "rollingAverage": function () {},
+    "onPointsCreated_": function () {},
+    "getExtremeYValues": function () {},
+    "onLineEvaluated": function () {},
+    "seriesToPoints": function () {},
+    "computeYInterpolation_": function () {},
+    "getIndexesInWindow_": function () {}
+};
+Dygraph.DataHandlers.FractionsBarsHandler.prototype = {
+    "extractSeries": function () {},
+    "rollingAverage": function () {},
+    "onPointsCreated_": function () {},
+    "getExtremeYValues": function () {},
+    "onLineEvaluated": function () {},
+    "seriesToPoints": function () {},
+    "computeYInterpolation_": function () {},
+    "getIndexesInWindow_": function () {}
+};
