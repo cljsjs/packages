@@ -688,7 +688,9 @@ var L = {
   "ImageOverlay": function () {},
   "imageOverlay": function () {},
   "Icon": {
-    "Default": function () {},
+    "Default": {
+      "imagePath": {},
+    },
   },
   "icon": function () {},
   "Marker": function () {},
