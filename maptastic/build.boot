@@ -1,5 +1,6 @@
 (def +lib-release+ "0")
 (def +lib-version+ (str "0." +lib-release+ ".0"))
+(def +sha-version+ "641e4708707780a5cffba6902ab09445ab431374")
 
 (set-env!
   :resource-paths #{"resources"}
