@@ -1,5 +1,5 @@
 {:foreign-libs [{:file     "cljsjs/material-ui/development/material-ui.inc.js",
-                 :provides ["cljsjs.react" "cljsjs.material-ui"],
+                 :provides ["cljsjs.react" "cljsjs.react.dom" "cljsjs.material-ui"],
                  :file-min "cljsjs/material-ui/production/material-ui.min.inc.js"}
                 {:file     "cljsjs/material-ui/development/material-ui-svg-icons.inc.js",
                  :provides ["cljsjs.material-ui-svg-icons"],
