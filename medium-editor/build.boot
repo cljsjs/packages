@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "5.15.0")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "5.22.1")
+(def +version+ (str +lib-version+ "-2"))
 
 (task-options!
  pom  {:project     'cljsjs/medium-editor
@@ -13,12 +13,12 @@
        :description "Medium.com WYSIWYG editor clone"
        :url         "https://daviferreira.github.io/medium-editor/"
        :scm         {:url "https://github.com/cljsjs/packages"}
-       :license     {"MIT" "http://opensource.org/licenses/MIT"}})
+       :license     {"Custom" "https://raw.githubusercontent.com/yabwe/medium-editor/master/LICENSE"}})
 
 (deftask package []
   (comp
    (download :url      (format "https://github.com/daviferreira/medium-editor/archive/%s.zip" +lib-version+)
-             :checksum "AD7A8649C431775AF3EC193B7492909A"
+             :checksum "3FF0230E2FB079D0114EA604B3F9D4F5"
              :unzip    true)
    (sift :move {#"^medium-editor-([\d\.]*)/dist/js/medium-editor\.js"
                 "cljsjs/medium_editor/development/medium-editor.inc.js" 

@@ -29,5 +29,16 @@ var MaterialUIUtils = {
         MEDIUM : {},
         LARGE : {},
         "default" : function() {}
+    },
+    colorManipulator : {
+        convertColorToString : function() {},
+        convertHexToRGB : function() {},
+        darken : function() {},
+        decomposeColor : function() {},
+        emphasize : function() {},
+        fade : function() {},
+        getContrastRatio : function() {},
+        getLuminance : function() {},
+        lighten : function() {}
     }
 };

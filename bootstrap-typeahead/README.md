@@ -19,12 +19,42 @@ you can require the packaged library like so:
 
 ## Example:
 
+### index.html
+```html
+<html>
+    <head>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body>
+      <div class="container">
+        <form>
+          <div class="form-group">
+            <label for="example">Animals</label>
+            <input id="example" class="typeahead form-control" type="text" data-provide="typeahead" autocomplete="off" placeholder="Animals">
+          </div>
+        </form>
+      </div>
+      <script src="out/typeahead_example.js" type="text/javascript"></script>
+    </body>
+</html>
+```
+
+### core.cljs
 ```clojure
-(fn [this]
- (doto
-  (js/$ (r/dom-node this)) ; <-- being used in a Reagent component
+(ns typeahead-example.core
+  (:require [clojure.browser.repl :as repl]
+            [cljsjs.bootstrap-typeahead]))
+
+(def animals
+  ["dog"
+   "dolphin"
+   "cat"
+   "crow"
+   "mouse"
+   "marmoset"])
+
+(doto
+  (js/$ ".typeahead")
   (.typeahead (clj->js {:name ""
-               :source data
-               :updater (fn [obj] (println "updater:" obj))
-               :displayText (fn [obj] (.-email obj))}))))
+                        :source animals})))
 ```
