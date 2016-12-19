@@ -9,11 +9,11 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "5.0.0")
+(def +lib-version+ "6.0.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
- pom  {:project     'cljsjs/react-google-maps
+  pom {:project     'cljsjs/react-google-maps
        :version     +version+
        :description "React.js Google Maps integration component"
        :url         "https://github.com/tomchentw/react-google-maps/"
@@ -36,22 +36,24 @@
       (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 (deftask package []
-  (comp                                                             
-    (download :url (str "https://github.com/tomchentw/react-google-maps/archive/v" +lib-version+ ".zip")
-              :checksum "DDD493D8F3166851A780216CA64F469D"
-              :unzip true)
+  (comp
+    (download
+      :url (str "https://github.com/tomchentw/react-google-maps/archive/v" +lib-version+ ".zip")
+      :checksum "318986D58BFD408C7ED1C530334EBF63"
+      :unzip true)
 
     (build-react-google-maps)
 
-    (sift :move {#"^react-google-maps.*[/ \\]react-google-maps.js$" 
-                  "cljsjs/react-google-maps/development/react-google-maps.inc.js"})
+    (sift :move {#"^react-google-maps.*[/ \\]react-google-maps.js$"
+                 "cljsjs/react-google-maps/development/react-google-maps.inc.js"})
 
     #_(minify :in "cljsjs/react-google-maps/development/react-google-maps.inc.js"
-            :out "cljsjs/react-google-maps/production/react-google-maps.min.inc.js")
+        :out "cljsjs/react-google-maps/production/react-google-maps.min.inc.js")
 
     (sift :include #{#"^cljsjs"})
 
-    (deps-cljs :name "cljsjs.react-google-maps"
-	       :requires ["cljsjs.react" "cljsjs.react.dom"])
+    (deps-cljs
+      :name "cljsjs.react-google-maps"
+      :requires ["cljsjs.react" "cljsjs.react.dom"])
     (pom)
     (jar)))
