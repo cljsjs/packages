@@ -37296,7 +37296,24 @@ AWS.SQS.prototype = {
   "throttledError": function () {},
   "endpointFromTemplate": function () {},
   "setEndpoint": function () {},
-  "paginationConfig": function () {}
+  "paginationConfig": function () {},
+  "addPermission": function () {},
+  "changeMessageVisibility": function () {},
+  "changeMessageVisibilityBatch": function () {},
+  "createQueue": function () {},
+  "deleteMessage": function () {},
+  "deleteMessageBatch": function () {},
+  "deleteQueue": function () {},
+  "getQueueAttributes": function () {},
+  "getQueueUrl": function () {},
+  "listQueues": function () {},
+  "listDeadLetterSourceQueues": function () {},
+  "purgeQueue": function () {},
+  "receiveMessage": function () {},
+  "removePermission": function () {},
+  "sendMessage": function () {},
+  "sendMessageBatch": function () {},
+  "setQueueAttributes": function () {}
 };
 AWS.SQS.__super__.prototype = {
   "constructor": function () {},
