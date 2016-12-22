@@ -1,5 +1,5 @@
-(def +lib-version+ "1.0.0")
-(def +version+ (str +lib-version+ "-beta22"))
+(def +lib-version+ "1.0.0-beta37")
+(def +version+ (str +lib-version+ "-1"))
 
 (set-env!
   :resource-paths #{"resources"}
@@ -16,15 +16,12 @@
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (defn download-cdn []
-  (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/inferno/" +version+ "/inferno.js")
-            :checksum "4A7D0481D3A8A09365D5342F698A0A5D"))
+  (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/inferno/" +lib-version+ "/inferno.js")))
 
 (defn download-min-cdn []
-  (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/inferno/" +version+ "/inferno.min.js")
-            :checksum "43F965E1DE8E181F0EC6877AA189E59E"))
+  (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/inferno/" +lib-version+ "/inferno.min.js")))
 
 (deftask package  []
-  (task-options! push {:ensure-branch nil :tag false})
   (comp
     (download-cdn)
     (download-min-cdn)
@@ -33,6 +30,6 @@
                  #"^inferno\.js$"
                  "cljsjs/inferno/development/inferno.inc.js"})
     (sift :include #{#"^cljs"})
-    (deps-cljs :name "cljs.inferno")
+    (deps-cljs :name "cljsjs.inferno")
     (pom)
     (jar)))
