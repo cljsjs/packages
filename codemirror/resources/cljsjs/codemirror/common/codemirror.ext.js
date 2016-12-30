@@ -290,3 +290,11 @@ CodeMirror.Doc.prototype = {
   "maybeSpill": function () {},
   "iterN": function () {}
 };
+var FromToObj = {
+    "from": {},
+    "to": {}
+};
+var PosObj = {
+    "line": {},
+    "ch": {}
+};

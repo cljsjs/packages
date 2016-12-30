@@ -1,3 +1,4 @@
+
 (def +lib-version+ "1.0.3")
 (def +version+ (str +lib-version+ "-0"))
 
@@ -24,7 +25,6 @@
             :checksum "7954BCC2C41866066B82DF325BEC929F"))
 
 (deftask package  []
-  (task-options! push {:ensure-branch nil :tag false})
   (comp
     (download-cdn)
     (download-min-cdn)
@@ -33,6 +33,6 @@
                  #"^inferno\.js$"
                  "cljsjs/inferno/development/inferno.inc.js"})
     (sift :include #{#"^cljs"})
-    (deps-cljs :name "cljs.inferno")
+    (deps-cljs :name "cljsjs.inferno")
     (pom)
     (jar)))
