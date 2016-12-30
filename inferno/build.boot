@@ -1,5 +1,5 @@
-(def +lib-version+ "1.0.0")
-(def +version+ (str +lib-version+ "-beta22"))
+(def +lib-version+ "1.0.2")
+(def +version+ (str +lib-version+ "-0"))
 
 (set-env!
   :resource-paths #{"resources"}
@@ -16,11 +16,11 @@
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (defn download-cdn []
-  (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/inferno/" +version+ "/inferno.js")
-            :checksum "4A7D0481D3A8A09365D5342F698A0A5D"))
+  (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/inferno/" +lib-version+ "/inferno.js")
+            :checksum "239D904DA1D858DE4A529539A3E83339"))
 
 (defn download-min-cdn []
-  (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/inferno/" +version+ "/inferno.min.js")
+  (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/inferno/" +lib-version+ "/inferno.min.js")
             :checksum "43F965E1DE8E181F0EC6877AA189E59E"))
 
 (deftask package  []
