@@ -1,4 +1,4 @@
-(def +lib-version+ "1.0.2")
+(def +lib-version+ "1.0.3")
 (def +version+ (str +lib-version+ "-0"))
 
 (set-env!
@@ -16,12 +16,12 @@
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (defn download-cdn []
-  (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/inferno/" +lib-version+ "/inferno.js")
-            :checksum "239D904DA1D858DE4A529539A3E83339"))
+  (download :url (str "https://unpkg.com/inferno@" +lib-version+ "/dist/inferno.js")
+            :checksum "2D195D41970A936CAA30A1A686602E45"))
 
 (defn download-min-cdn []
-  (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/inferno/" +lib-version+ "/inferno.min.js")
-            :checksum "43F965E1DE8E181F0EC6877AA189E59E"))
+  (download :url (str "https://unpkg.com/inferno@" +lib-version+ "/dist/inferno.min.js")
+            :checksum "7954BCC2C41866066B82DF325BEC929F"))
 
 (deftask package  []
   (task-options! push {:ensure-branch nil :tag false})
