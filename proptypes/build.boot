@@ -21,7 +21,7 @@
   (comp
     (download :url (str "https://github.com/developit/proptypes/archive/" +lib-version+ ".zip")
               :unzip true)
-    (sift :move {#"proptypes-.*/index\.js"      "cljsjs/proptypes/development/proptypes.inc.js"})
+    (sift :move {#"proptypes-[^/]*/index\.js"      "cljsjs/proptypes/development/proptypes.inc.js"})
     (sift :include #{#"^cljsjs" #"^deps\.cljs"})
     (pom)
     (jar)))

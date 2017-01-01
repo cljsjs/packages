@@ -4,4 +4,5 @@
                 {:provides ["cljsjs.preact-compat"]
                  :requires ["cljsjs.preact" "cljsjs.proptypes"]
                  :file "cljsjs/preact-compat/development/preact-compat.inc.js"
-                 :file-min "cljsjs/preact-compat/production/preact-compat.min.inc.js"}]}
+                 :file-min "cljsjs/preact-compat/production/preact-compat.min.inc.js"}]
+ :externs ["cljsjs/preact-compat/common/preact-compat.ext.js"]}
