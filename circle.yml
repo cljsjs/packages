@@ -2,7 +2,7 @@ machine:
   java:
     version: oraclejdk8
   environment:
-    BOOT_VERSION: 2.6.0
+    BOOT_VERSION: 2.7.1
     _JAVA_OPTIONS: "-Xms512m -Xmx1024m"
   node:
     version: v7.3.0
