@@ -1,7 +1,7 @@
 # cljsjs/react-bootstrap-datetimepicker
 [](dependency)
 ```clojure
-[cljsjs/d3-tip "0.6.7-0"] ;; latest release
+[cljsjs/d3-tip "0.6.7-1"] ;; latest release
 ```
 [](/dependency)
 
