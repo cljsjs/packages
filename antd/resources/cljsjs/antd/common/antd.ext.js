@@ -4,7 +4,7 @@
  * To regenerate, include in the following order:
  * https://unpkg.com/react@15/dist/react.js
  * https://unpkg.com/react-dom@15/dist/react-dom.js
- * https://unpkg.com/antd@2.5.0/dist/antd.js
+ * https://unpkg.com/antd@x/dist/antd.js
  * and extern the `antd` object
  **********************************************************************/
 var antd = {
@@ -232,6 +232,9 @@ var antd = {
         "header": {
           "isRequired": function () {}
         },
+        "showArrow": {
+          "isRequired": function () {}
+        },
         "isActive": {
           "isRequired": function () {}
         },
@@ -243,6 +246,7 @@ var antd = {
         "isReactClassApproved": {}
       },
       "defaultProps": {
+        "showArrow": {},
         "isActive": {},
         "onItemClick": function () {}
       }
@@ -269,7 +273,6 @@ var antd = {
       "options": {},
       "disabled": {},
       "allowClear": {},
-      "showSearch": {},
       "notFoundContent": {}
     }
   },
@@ -336,13 +339,13 @@ var antd = {
   },
   "DatePicker": {
     "displayName": {},
-    "getDefaultProps": {
-      "isReactClassApproved": {}
-    },
     "contextTypes": {
       "antLocale": {
         "isRequired": function () {}
       }
+    },
+    "getDefaultProps": {
+      "isReactClassApproved": {}
     },
     "defaultProps": {
       "format": {},
@@ -360,13 +363,13 @@ var antd = {
     },
     "RangePicker": {
       "displayName": {},
-      "getDefaultProps": {
-        "isReactClassApproved": {}
-      },
       "contextTypes": {
         "antLocale": {
           "isRequired": function () {}
         }
+      },
+      "getDefaultProps": {
+        "isReactClassApproved": {}
       },
       "defaultProps": {
         "format": {},
@@ -417,13 +420,13 @@ var antd = {
     },
     "MonthPicker": {
       "displayName": {},
-      "getDefaultProps": {
-        "isReactClassApproved": {}
-      },
       "contextTypes": {
         "antLocale": {
           "isRequired": function () {}
         }
+      },
+      "getDefaultProps": {
+        "isReactClassApproved": {}
       },
       "defaultProps": {
         "format": {},
@@ -585,6 +588,18 @@ var antd = {
       },
       "onKeyDown": {
         "isRequired": function () {}
+      },
+      "onFocus": {
+        "isRequired": function () {}
+      },
+      "onBlur": {
+        "isRequired": function () {}
+      },
+      "prefix": {
+        "isRequired": function () {}
+      },
+      "suffix": {
+        "isRequired": function () {}
       }
     },
     "Group": function () {},
@@ -599,6 +614,21 @@ var antd = {
     "defaultProps": {
       "prefixCls": {},
       "step": {}
+    }
+  },
+  "Layout": {
+    "Header": function () {},
+    "Footer": function () {},
+    "Content": function () {},
+    "Sider": {
+      "defaultProps": {
+        "prefixCls": {},
+        "collapsible": {},
+        "defaultCollapsed": {},
+        "width": {},
+        "collapsedWidth": {},
+        "style": {}
+      }
     }
   },
   "LocaleProvider": {
@@ -993,8 +1023,7 @@ var antd = {
   },
   "Row": {
     "defaultProps": {
-      "gutter": {},
-      "prefixCls": {}
+      "gutter": {}
     },
     "propTypes": {
       "type": {
@@ -1278,7 +1307,8 @@ var antd = {
         "dataSource": {},
         "titleText": {},
         "showSearch": {},
-        "render": function () {}
+        "render": function () {},
+        "lazy": {}
       },
       "contextTypes": {
         "antLocale": {
@@ -1852,7 +1882,10 @@ antd.Form.Item.prototype = {
 antd.Input.prototype = {
   "componentDidMount": function () {},
   "componentWillReceiveProps": function () {},
-  "renderLabledInput": function () {},
+  "componentDidUpdate": function () {},
+  "focus": function () {},
+  "renderLabeledInput": function () {},
+  "renderLabeledIcon": function () {},
   "renderInput": function () {},
   "render": function () {},
   "isReactComponent": function () {},
@@ -1866,6 +1899,37 @@ antd.Input.Search.prototype = {
   "forceUpdate": function () {}
 };
 antd.InputNumber.prototype = {
+  "render": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {},
+  "forceUpdate": function () {}
+};
+antd.Layout.prototype = {
+  "render": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {},
+  "forceUpdate": function () {}
+};
+antd.Layout.Header.prototype = {
+  "render": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {},
+  "forceUpdate": function () {}
+};
+antd.Layout.Footer.prototype = {
+  "render": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {},
+  "forceUpdate": function () {}
+};
+antd.Layout.Content.prototype = {
+  "render": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {},
+  "forceUpdate": function () {}
+};
+antd.Layout.Sider.prototype = {
+  "componentWillReceiveProps": function () {},
   "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
@@ -2055,9 +2119,9 @@ antd.Popconfirm.prototype = {
   "forceUpdate": function () {}
 };
 antd.Popover.prototype = {
-  "render": function () {},
   "getPopupDomNode": function () {},
   "getOverlay": function () {},
+  "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
   "forceUpdate": function () {}
@@ -2139,6 +2203,12 @@ antd.Steps.prototype = {
   "setState": function () {},
   "forceUpdate": function () {}
 };
+antd.Steps.Step.prototype = {
+  "render": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {},
+  "forceUpdate": function () {}
+};
 antd.Switch.prototype = {
   "render": function () {},
   "isReactComponent": function () {},
@@ -2202,7 +2272,6 @@ antd.Transfer.List.prototype = {
   "componentWillUnmount": function () {},
   "shouldComponentUpdate": function () {},
   "getCheckStatus": function () {},
-  "renderCheckbox": function () {},
   "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
@@ -2325,6 +2394,7 @@ antd.Timeline.Item.prototype = {
   "forceUpdate": function () {}
 };
 antd.Tooltip.prototype = {
+  "componentWillReceiveProps": function () {},
   "getPopupDomNode": function () {},
   "getPlacements": function () {},
   "render": function () {},
