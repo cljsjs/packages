@@ -21,7 +21,7 @@
 
 (deftask download-react-bootstrap []
   (download :url      (format "https://github.com/react-bootstrap/react-bootstrap-bower/archive/v%s.zip" +lib-version+)
-            :checksum "f2105275aa4c1926b807415ad28dd132" ;;MD5
+            :checksum "5aa6815d722a25046f5ef2a2f9412098" ;;MD5
             :unzip    true))
 
 (deftask package []
