@@ -1,8 +1,8 @@
-# cljsjs/formsy-react
+# cljsjs/formsy-material-ui
 
 [](dependency)
 ```clojure
-[cljsjs/formsy-react "0.19.0-0"] ;; latest release
+[cljsjs/formsy-material-ui "0.5.3-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.formsy-react))
+  (:require cljsjs.formsy-material-ui))
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
