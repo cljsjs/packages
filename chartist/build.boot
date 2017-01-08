@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.9.4")
-(def +version+ (str +lib-version+ "-4"))
+(def +lib-version+ "0.10.1")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom {:project 'cljsjs/chartist
@@ -22,13 +22,13 @@
 (deftask package []
   (comp
     (download :url (github "chartist.js")
-              :checksum "01FE7D257F4397EB1F216622797F951D")
+              :checksum "F4FCB05E839A197B60793890784B9E86")
     (download :url (github "chartist.min.js")
-              :checksum "D7870B3EE02F8528E183E5492B1456BE")
+              :checksum "72C8771E35D8C249684DC12AF34204CE")
     (download :url (github "chartist.min.js.map")
-              :checksum "A61ACCBD9AADDBE40D27AF7563D4E576")
+              :checksum "598B9192CE5FC96F37B25C1E8AFBEE92")
     (download :url (github "chartist.min.css")
-              :checksum "0DD8D6C6DCA261528D9BE38904D656D3")
+              :checksum "B81B591D12C8A8E72AF2E05F1E62A9EB")
     (sift :move
           {#"chartist.js" "cljsjs/development/chartist.inc.js"
            #"chartist.min.js" "cljsjs/production/chartist.min.inc.js"
