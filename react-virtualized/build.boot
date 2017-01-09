@@ -1,7 +1,8 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]
-                  [cljsjs/react "15.2.0-0"]])
+                  [cljsjs/react "15.2.0-0"]
+                  [cljsjs/react-dom "15.2.0-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -10,7 +11,7 @@
          '[boot.util :refer [sh]])
 
 (def +lib-version+ "7.11.8")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/react-virtualized
@@ -48,7 +49,8 @@
    (sift :include #{#"^cljsjs"})
 
    (deps-cljs :name "cljsjs.react-virtualized"
-              :requires ["cljsjs.react"])
+              :requires ["cljsjs.react"
+                         "cljsjs.react.dom"])
    (pom)
 
    (jar)))
