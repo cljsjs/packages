@@ -12,7 +12,9 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.pdfmake))
+  (:require cljsjs.pdfmake
+            cljsjs.pdfmakefonts ;; default fonts
+            ))
 ```
 Documentation for the pdfmake lib can be found [here](http://pdfmake.org)
 
