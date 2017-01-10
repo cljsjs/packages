@@ -58,7 +58,9 @@
     (minify :in  "cljsjs/react-dates/development/react-dates.inc.css"
             :out "cljsjs/react-dates/production/react-dates.min.inc.css")
 
-    (deps-cljs :name "cljsjs.react-dates" :requires ["cljsjs.react" "cljsjs.moment"])
+    (deps-cljs :name "cljsjs.react-dates" :requires ["cljsjs.react"
+                                                     "cljsjs.moment"
+                                                     "cljsjs.react.dom"])
 
     (pom)
     (jar)))
