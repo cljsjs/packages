@@ -1,7 +1,8 @@
 (set-env!
-  :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]
-                  [cljsjs/react "15.4.0-0"]])
+ :resource-paths #{"resources"}
+ :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]
+                 [cljsjs/react "15.4.0-0"]
+                 [cljsjs/react-dom "15.4.0-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -23,20 +24,21 @@
 
 (deftask download-react-modal []
   (download :url (format "https://github.com/reactjs/react-modal/archive/v%s.zip" +lib-version+)
-              :checksum "6e1d66c3bb5bb349d58eef673b7da825"
-              :unzip true))
+            :checksum "6e1d66c3bb5bb349d58eef673b7da825"
+            :unzip true))
 
 (deftask package []
   (comp
-    
-    (download-react-modal)
-
-    (sift :move {#"^react-modal-.*/dist/react-modal.js" "cljsjs/react-modal/development/react-modal.inc.js"})
-
-    (sift :move {#"^react-modal-.*/dist/react-modal.min.js" "cljsjs/react-modal/production/react-modal.min.inc.js"})
-
-    (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.react-modal"
-               :requires ["cljsjs.react"])
-    (pom)
-    (jar)))
+   
+   (download-react-modal)
+   
+   (sift :move {#"^react-modal-.*/dist/react-modal.js" "cljsjs/react-modal/development/react-modal.inc.js"})
+   
+   (sift :move {#"^react-modal-.*/dist/react-modal.min.js" "cljsjs/react-modal/production/react-modal.min.inc.js"})
+   
+   (sift :include #{#"^cljsjs"})
+   (deps-cljs :name "cljsjs.react-modal"
+              :requires ["cljsjs.react"
+                         "cljsjs.react.dom"])
+   (pom)
+   (jar)))
