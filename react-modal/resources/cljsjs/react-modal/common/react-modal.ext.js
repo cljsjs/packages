@@ -30,8 +30,7 @@ var ReactModal = {
 	    "onRequestClose": function () {},
 	    "closeTimeoutMS": {},
 	    "shouldCloseOnOverlayClick": {},
-	    "contentLabel": {},
-	    "onStickyStateChange": function () {}
+	    "contentLabel": {}, 
 	},
     }
 };
