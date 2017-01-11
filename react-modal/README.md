@@ -1,8 +1,8 @@
-# cljsjs/react-sticky
+# cljsjs/react-modal
 
 [](dependency)
 ```clojure
-[cljsjs/react-sticky "5.0.4-0"] ;; latest release
+[cljsjs/react-modal "1.6.5-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,15 +12,15 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.react-sticky))
+  (:require cljsjs.react-modal))
 ```
 
-Calling react sticky example
+Calling react modal example
 ```clojure
-(js/React.createElement js/ReactSticky.StickyContainer
-   ..props.. (js/React.createElement js/ReactSticky.Sticky
-        #js {:onStickyStateChange #(println "Im so sticky!")}
-        ...dom element to stick...))
+(js/React.createElement
+    js/ReactModal #js {:contentLabel "myLabel"
+                       :isOpen true}
+              ...react/react-dom components here...)
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
