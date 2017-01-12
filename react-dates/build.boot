@@ -9,7 +9,7 @@
          '[clojure.java.io :as io])
 
 (def +lib-version+ "3.4.0")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 (def +lib-folder+ (format "react-dates-%s" +lib-version+))
 
 (task-options!
@@ -58,7 +58,9 @@
     (minify :in  "cljsjs/react-dates/development/react-dates.inc.css"
             :out "cljsjs/react-dates/production/react-dates.min.inc.css")
 
-    (deps-cljs :name "cljsjs.react-dates" :requires ["cljsjs.react" "cljsjs.moment"])
+    (deps-cljs :name "cljsjs.react-dates" :requires ["cljsjs.react"
+                                                     "cljsjs.moment"
+                                                     "cljsjs.react.dom"])
 
     (pom)
     (jar)))
