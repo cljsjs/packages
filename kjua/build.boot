@@ -22,8 +22,7 @@
    (download :url (format "https://github.com/lrsjng/kjua/archive/v%s.zip" +lib-version+)
              :checksum "79855f89e17867bb7795a61ca9326c46"
              :unzip true)
-   (sift :move {#"^kjua-[^\/]*/dist/kjua\.min\.js" "cljsjs/development/kjua.inc.js"
-                #"^kjua-[^\/]*/dist/kjua\.min\.js" "cljsjs/production/kjua.inc.js"})
+   (sift :move {#"^kjua-[^\/]*/dist/kjua\.min\.js" "cljsjs/common/kjua.inc.js"})
 
    (sift :include #{#"^cljsjs" #"^deps\.cljs"})
    (pom)
