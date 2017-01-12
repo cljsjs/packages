@@ -3,7 +3,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/element-resize-detector "1.1.9-0"] ;; latest release
+[cljsjs/element-resize-detector "1.1.9-1"] ;; latest release
 ```
 [](/dependency)
 

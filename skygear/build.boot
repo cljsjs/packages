@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.17.0")
+(def +lib-version+ "0.20.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,7 +18,7 @@
 (deftask package []
   (comp
     (download :url (str "http://registry.npmjs.org/skygear/-/skygear-" +lib-version+ ".tgz")
-              :checksum "f9e7a1116aeaa83a0de5d246b10fc739"
+              :checksum "cff793031b829e18452dcb6ec13cb183"
               :decompress true
               :archive-format "tar"
               :compression-format "gz")

@@ -25,6 +25,7 @@ var CodeMirror = {
   "registerHelper": function () {},
   "registerGlobalHelper": function () {},
   "copyState": function () {},
+  "showHint": function () {},
   "startState": function () {},
   "innerMode": function () {},
   "commands": {},
@@ -288,4 +289,12 @@ CodeMirror.Doc.prototype = {
   "insertInner": function () {},
   "maybeSpill": function () {},
   "iterN": function () {}
+};
+var FromToObj = {
+    "from": {},
+    "to": {}
+};
+var PosObj = {
+    "line": {},
+    "ch": {}
 };

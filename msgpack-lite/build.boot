@@ -8,7 +8,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "0.1.16")
+(def +lib-version+ "0.1.26")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -36,7 +36,7 @@
 (deftask package []
   (comp
    (download :url (str "https://github.com/kawanet/msgpack-lite/archive/" +lib-version+ ".zip")
-             :checksum "AECD02AABF1ADD8ED7771CD541980E84"
+             :checksum "9a4005f8e6024b81c675cdf5c611dd98"
              :unzip true)
    (build-msgpack-lite)
    (sift :move {#"^msgpack-lite-.*/dist/msgpack\.browserify\.js" "cljsjs/msgpack-lite/development/msgpack-lite.inc.js"

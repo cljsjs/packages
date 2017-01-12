@@ -7,7 +7,7 @@
 (def +lib-version+ "5.21.0")
 (def codemirror-checksum "13bd19be6b28ea0a0f76d3d75d1b64bf")
 
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-2"))
 
 (task-options!
   pom  {:project     'cljsjs/codemirror
