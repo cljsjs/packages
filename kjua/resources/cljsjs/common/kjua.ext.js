@@ -1,0 +1,1 @@
+var kjua = function () {};
