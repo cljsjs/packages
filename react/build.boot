@@ -4,22 +4,22 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "15.4.0")
+(def +lib-version+ "15.4.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (def checksums
   {'cljsjs/react
-   {:dev "0F912566783AA1D49C9A3316EB47E086",
-    :min "9A42408E46402432FA6A1C2771D35665"},
+   {:dev "BA32FB06B83DF83CAECDAA5994BE50FB",
+    :min "C729DAECB8C864A0108D0AF778BB24A1"},
    'cljsjs/react-with-addons
-   {:dev "808241E4C6C7E8577E67D70EFAE7A109",
-    :min "44C28C5A95CC543CCA2816FA3B497AC6"},
+   {:dev "8C0DDCA1FBE7F5EBA4435A76CD1783E1",
+    :min "04B1B7A697FCA3A515133F30A8C57AA1"},
    'cljsjs/react-dom
-   {:dev "B4FF6AAB79B4C66DD549C566940FC06D",
-    :min "A410393D94F024379CBEBE2B667CB3A8"},
+   {:dev "FBB7637277D9C8DEE2F66E18ED37489C",
+    :min "26C85B89A466EAB1C48B998293176F11"},
    'cljsjs/react-dom-server
-   {:dev "93F69DF7864ED9FF4909ED5F75844AC6",
-    :min "208AB2445B8BAFD36369487EC9688EAB"}})
+   {:dev "46EDF1C4D7A2DB1466198527E5B0B4E6",
+    :min "2776D538E14347F0734F3BE962AE3FAF"}})
 
 (def npm-project {'cljsjs/react "react"
                   'cljsjs/react-with-addons "react"
@@ -121,8 +121,12 @@
       (keys checksums))
     (fn [handler]
       (fn [fileset]
-        (clojure.pprint/pprint (into {} (map (juxt identity (fn [project]
-                                                              {:dev (md5sum fileset (format "%s.js" (name project)))
-                                                               :min (md5sum fileset (format "%s.min.js" (name project)))}))
-                                             (keys checksums))))
+        (println
+          (clojure.string/replace
+            (with-out-str
+              (clojure.pprint/pprint (into {} (map (juxt identity (fn [project]
+                                                                    {:dev (md5sum fileset (format "%s.js" (name project)))
+                                                                     :min (md5sum fileset (format "%s.min.js" (name project)))}))
+                                                   (keys checksums)))))
+            #"cljsjs" "'cljsjs"))
         fileset))))
