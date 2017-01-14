@@ -6,5 +6,6 @@
                  :requires ["cljsjs.material-ui"],
                  :file-min "cljsjs/material-ui/production/material-ui-svg-icons.min.inc.js"}],
  :externs      ["cljsjs/material-ui/common/react.ext.js"
+                "cljsjs/material-ui/common/react-dom.ext.js"
                 "cljsjs/material-ui/common/material-ui.ext.js"
                 "cljsjs/material-ui/common/material-ui-svg-icons.ext.js"]}
