@@ -17,4 +17,30 @@ you can require the packaged library like so:
   (:require cljsjs.semantic-ui-react))
 ```
 
+Currently the only extern declared is `semanticUIReact`. All
+components are available via properties of `js/semanticUIReact` and
+can be accessed via `goog.object/get` and
+`goog.object/getValueByKeys`.
+
+Example:
+
+```clojure
+(ns application.core
+  (:require cljsjs.semantic-ui-react
+            goog.object
+            [reagent.core :as r))
+
+(def semantic-ui js/semanticUIReact)
+
+;; Top-level component:
+(def button (goog.object/get semantic-ui "Button"))
+
+;; Nested component:
+(def menu-item (goog.object/getValuebykeys semantic-ui "Menu" "Item"))
+
+;; Reagent usage:
+(defn view []
+  [:> button {:onClick #(println "Hello world")} "Press Me"])
+```
+
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
