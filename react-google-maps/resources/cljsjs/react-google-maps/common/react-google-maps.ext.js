@@ -4,26 +4,29 @@
  * generate-extern -f react-google-maps.inc.js -n ReactGoogleMaps -o react-google-maps.ext.js
  **********************************************************************/
 var ReactGoogleMaps = {
-  "GoogleMapLoader": {
-    "propTypes": {
-      "containerElement": function () {},
-      "googleMapElement": function () {}
-    },
-    "defaultProps": {
-      "containerElement": {
-        "$$typeof": {},
-        "type": {},
-        "key": {},
-        "ref": {},
-        "props": {},
-        "_owner": {},
-        "_store": {}
-      }
-    }
-  },
+  "withGoogleMap": function () {},
   "GoogleMap": {
+    "displayName": {},
     "propTypes": {
-      "map": {
+      "center": {
+        "isRequired": function () {}
+      },
+      "heading": {
+        "isRequired": function () {}
+      },
+      "mapTypeId": {
+        "isRequired": function () {}
+      },
+      "options": {
+        "isRequired": function () {}
+      },
+      "streetView": {
+        "isRequired": function () {}
+      },
+      "tilt": {
+        "isRequired": function () {}
+      },
+      "zoom": {
         "isRequired": function () {}
       },
       "defaultCenter": {
@@ -46,389 +49,17 @@ var ReactGoogleMaps = {
       },
       "defaultZoom": {
         "isRequired": function () {}
-      },
-      "center": {
-        "isRequired": function () {}
-      },
-      "heading": {
-        "isRequired": function () {}
-      },
-      "mapTypeId": {
-        "isRequired": function () {}
-      },
-      "options": {
-        "isRequired": function () {}
-      },
-      "streetView": {
-        "isRequired": function () {}
-      },
-      "tilt": {
-        "isRequired": function () {}
-      },
-      "zoom": {
-        "isRequired": function () {}
-      },
-      "onBoundsChanged": {
-        "isRequired": function () {}
-      },
-      "onCenterChanged": {
-        "isRequired": function () {}
-      },
-      "onClick": {
-        "isRequired": function () {}
-      },
-      "onDblclick": {
-        "isRequired": function () {}
-      },
-      "onDrag": {
-        "isRequired": function () {}
-      },
-      "onDragend": {
-        "isRequired": function () {}
-      },
-      "onDragstart": {
-        "isRequired": function () {}
-      },
-      "onHeadingChanged": {
-        "isRequired": function () {}
-      },
-      "onIdle": {
-        "isRequired": function () {}
-      },
-      "onMaptypeidChanged": {
-        "isRequired": function () {}
-      },
-      "onMousemove": {
-        "isRequired": function () {}
-      },
-      "onMouseout": {
-        "isRequired": function () {}
-      },
-      "onMouseover": {
-        "isRequired": function () {}
-      },
-      "onProjectionChanged": {
-        "isRequired": function () {}
-      },
-      "onResize": {
-        "isRequired": function () {}
-      },
-      "onRightclick": {
-        "isRequired": function () {}
-      },
-      "onTilesloaded": {
-        "isRequired": function () {}
-      },
-      "onTiltChanged": {
-        "isRequired": function () {}
-      },
-      "onZoomChanged": {
-        "isRequired": function () {}
-      }
-    }
-  },
-  "Circle": {
-    "propTypes": {
-      "defaultCenter": {
-        "isRequired": function () {}
-      },
-      "defaultDraggable": {
-        "isRequired": function () {}
-      },
-      "defaultEditable": {
-        "isRequired": function () {}
-      },
-      "defaultOptions": {
-        "isRequired": function () {}
-      },
-      "defaultRadius": {
-        "isRequired": function () {}
-      },
-      "defaultVisible": {
-        "isRequired": function () {}
-      },
-      "center": {
-        "isRequired": function () {}
-      },
-      "draggable": {
-        "isRequired": function () {}
-      },
-      "editable": {
-        "isRequired": function () {}
-      },
-      "options": {
-        "isRequired": function () {}
-      },
-      "radius": {
-        "isRequired": function () {}
-      },
-      "visible": {
-        "isRequired": function () {}
-      },
-      "onCenterChanged": {
-        "isRequired": function () {}
-      },
-      "onClick": {
-        "isRequired": function () {}
-      },
-      "onDblclick": {
-        "isRequired": function () {}
-      },
-      "onDrag": {
-        "isRequired": function () {}
-      },
-      "onDragend": {
-        "isRequired": function () {}
-      },
-      "onDragstart": {
-        "isRequired": function () {}
-      },
-      "onMousedown": {
-        "isRequired": function () {}
-      },
-      "onMousemove": {
-        "isRequired": function () {}
-      },
-      "onMouseout": {
-        "isRequired": function () {}
-      },
-      "onMouseover": {
-        "isRequired": function () {}
-      },
-      "onMouseup": {
-        "isRequired": function () {}
-      },
-      "onRadiusChanged": {
-        "isRequired": function () {}
-      },
-      "onRightclick": {
-        "isRequired": function () {}
       }
     },
     "contextTypes": {
-      "mapHolderRef": {
-        "isRequired": function () {}
-      }
-    }
-  },
-  "DirectionsRenderer": {
-    "propTypes": {
-      "defaultDirections": {
-        "isRequired": function () {}
-      },
-      "defaultOptions": {
-        "isRequired": function () {}
-      },
-      "defaultPanel": {
-        "isRequired": function () {}
-      },
-      "defaultRouteIndex": {
-        "isRequired": function () {}
-      },
-      "directions": {
-        "isRequired": function () {}
-      },
-      "options": {
-        "isRequired": function () {}
-      },
-      "panel": {
-        "isRequired": function () {}
-      },
-      "routeIndex": {
-        "isRequired": function () {}
-      },
-      "onDirectionsChanged": {
-        "isRequired": function () {}
-      }
-    },
-    "contextTypes": {
-      "mapHolderRef": {
-        "isRequired": function () {}
-      }
-    }
-  },
-  "DrawingManager": {
-    "propTypes": {
-      "defaultDrawingMode": {
-        "isRequired": function () {}
-      },
-      "defaultOptions": {
-        "isRequired": function () {}
-      },
-      "drawingMode": {
-        "isRequired": function () {}
-      },
-      "options": {
-        "isRequired": function () {}
-      },
-      "onCirclecomplete": {
-        "isRequired": function () {}
-      },
-      "onMarkercomplete": {
-        "isRequired": function () {}
-      },
-      "onOverlaycomplete": {
-        "isRequired": function () {}
-      },
-      "onPolygoncomplete": {
-        "isRequired": function () {}
-      },
-      "onPolylinecomplete": {
-        "isRequired": function () {}
-      },
-      "onRectanglecomplete": {
-        "isRequired": function () {}
-      }
-    },
-    "contextTypes": {
-      "mapHolderRef": {
-        "isRequired": function () {}
-      }
-    }
-  },
-  "InfoWindow": {
-    "propTypes": {
-      "defaultContent": {
-        "isRequired": function () {}
-      },
-      "defaultOptions": {
-        "isRequired": function () {}
-      },
-      "defaultPosition": {
-        "isRequired": function () {}
-      },
-      "defaultZIndex": {
-        "isRequired": function () {}
-      },
-      "content": {
-        "isRequired": function () {}
-      },
-      "options": {
-        "isRequired": function () {}
-      },
-      "position": {
-        "isRequired": function () {}
-      },
-      "zIndex": {
-        "isRequired": function () {}
-      },
-      "onCloseclick": {
-        "isRequired": function () {}
-      },
-      "onContentChanged": {
-        "isRequired": function () {}
-      },
-      "onDomready": {
-        "isRequired": function () {}
-      },
-      "onPositionChanged": {
-        "isRequired": function () {}
-      },
-      "onZindexChanged": {
-        "isRequired": function () {}
-      }
-    },
-    "contextTypes": {
-      "mapHolderRef": {
-        "isRequired": function () {}
-      }
-    }
-  },
-  "KmlLayer": {
-    "propTypes": {
-      "defaultDefaultViewport": {
-        "isRequired": function () {}
-      },
-      "defaultMetadata": {
-        "isRequired": function () {}
-      },
-      "defaultStatus": {
-        "isRequired": function () {}
-      },
-      "defaultUrl": {
-        "isRequired": function () {}
-      },
-      "defaultZIndex": {
-        "isRequired": function () {}
-      },
-      "defaultViewport": {
-        "isRequired": function () {}
-      },
-      "metadata": {
-        "isRequired": function () {}
-      },
-      "status": {
-        "isRequired": function () {}
-      },
-      "url": {
-        "isRequired": function () {}
-      },
-      "zIndex": {
-        "isRequired": function () {}
-      },
-      "onClick": {
-        "isRequired": function () {}
-      },
-      "onDefaultviewportChanged": {
-        "isRequired": function () {}
-      },
-      "onStatusChanged": {
-        "isRequired": function () {}
-      }
-    },
-    "contextTypes": {
-      "mapHolderRef": {
+      "__SECRET_MAP_DO_NOT_USE_OR_YOU_WILL_BE_FIRED": {
         "isRequired": function () {}
       }
     }
   },
   "Marker": {
+    "displayName": {},
     "propTypes": {
-      "defaultAnimation": {
-        "isRequired": function () {}
-      },
-      "defaultAttribution": {
-        "isRequired": function () {}
-      },
-      "defaultClickable": {
-        "isRequired": function () {}
-      },
-      "defaultCursor": {
-        "isRequired": function () {}
-      },
-      "defaultDraggable": {
-        "isRequired": function () {}
-      },
-      "defaultIcon": {
-        "isRequired": function () {}
-      },
-      "defaultLabel": {
-        "isRequired": function () {}
-      },
-      "defaultOpacity": {
-        "isRequired": function () {}
-      },
-      "defaultOptions": {
-        "isRequired": function () {}
-      },
-      "defaultPlace": {
-        "isRequired": function () {}
-      },
-      "defaultPosition": {
-        "isRequired": function () {}
-      },
-      "defaultShape": {
-        "isRequired": function () {}
-      },
-      "defaultTitle": {
-        "isRequired": function () {}
-      },
-      "defaultVisible": {
-        "isRequired": function () {}
-      },
-      "defaultZIndex": {
-        "isRequired": function () {}
-      },
       "animation": {
         "isRequired": function () {}
       },
@@ -474,125 +105,124 @@ var ReactGoogleMaps = {
       "zIndex": {
         "isRequired": function () {}
       },
-      "onAnimationChanged": {
+      "defaultAnimation": {
         "isRequired": function () {}
       },
-      "onClick": {
+      "defaultAttribution": {
         "isRequired": function () {}
       },
-      "onClickableChanged": {
+      "defaultClickable": {
         "isRequired": function () {}
       },
-      "onCursorChanged": {
+      "defaultCursor": {
         "isRequired": function () {}
       },
-      "onDblclick": {
+      "defaultDraggable": {
         "isRequired": function () {}
       },
-      "onDrag": {
+      "defaultIcon": {
         "isRequired": function () {}
       },
-      "onDragend": {
+      "defaultLabel": {
         "isRequired": function () {}
       },
-      "onDraggableChanged": {
+      "defaultOpacity": {
         "isRequired": function () {}
       },
-      "onDragstart": {
+      "defaultOptions": {
         "isRequired": function () {}
       },
-      "onFlatChanged": {
-        "isRequired": function () {}
-      },
-      "onIconChanged": {
-        "isRequired": function () {}
-      },
-      "onMousedown": {
-        "isRequired": function () {}
-      },
-      "onMouseout": {
-        "isRequired": function () {}
-      },
-      "onMouseover": {
-        "isRequired": function () {}
-      },
-      "onMouseup": {
-        "isRequired": function () {}
-      },
-      "onPositionChanged": {
-        "isRequired": function () {}
-      },
-      "onRightclick": {
-        "isRequired": function () {}
-      },
-      "onShapeChanged": {
-        "isRequired": function () {}
-      },
-      "onTitleChanged": {
-        "isRequired": function () {}
-      },
-      "onVisibleChanged": {
-        "isRequired": function () {}
-      },
-      "onZindexChanged": {
-        "isRequired": function () {}
-      }
-    },
-    "contextTypes": {
-      "mapHolderRef": {
-        "isRequired": function () {}
-      }
-    }
-  },
-  "OverlayView": {
-    "FLOAT_PANE": {},
-    "MAP_PANE": {},
-    "MARKER_LAYER": {},
-    "OVERLAY_LAYER": {},
-    "OVERLAY_MOUSE_TARGET": {},
-    "propTypes": {
-      "defaultMapPaneName": {
-        "isRequired": function () {}
-      },
-      "defaultGetPixelPositionOffset": {
+      "defaultPlace": {
         "isRequired": function () {}
       },
       "defaultPosition": {
         "isRequired": function () {}
       },
-      "defaultChildren": {
+      "defaultShape": {
+        "isRequired": function () {}
+      },
+      "defaultTitle": {
+        "isRequired": function () {}
+      },
+      "defaultVisible": {
+        "isRequired": function () {}
+      },
+      "defaultZIndex": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "__SECRET_MAP_DO_NOT_USE_OR_YOU_WILL_BE_FIRED": {
+        "isRequired": function () {}
+      },
+      "__SECRET_MARKER_CLUSTERER_DO_NOT_USE_OR_YOU_WILL_BE_FIRED": {
+        "isRequired": function () {}
+      }
+    },
+    "childContextTypes": {
+      "__SECRET_ANCHOR_DO_NOT_USE_OR_YOU_WILL_BE_FIRED": {
+        "isRequired": function () {}
+      }
+    }
+  },
+  "Rectangle": {
+    "displayName": {},
+    "propTypes": {
+      "bounds": {
+        "isRequired": function () {}
+      },
+      "draggable": {
+        "isRequired": function () {}
+      },
+      "editable": {
+        "isRequired": function () {}
+      },
+      "options": {
+        "isRequired": function () {}
+      },
+      "visible": {
         "isRequired": function () {}
       },
       "defaultBounds": {
         "isRequired": function () {}
       },
-      "mapPaneName": {
+      "defaultDraggable": {
         "isRequired": function () {}
       },
-      "getPixelPositionOffset": {
+      "defaultEditable": {
         "isRequired": function () {}
       },
-      "position": {
+      "defaultOptions": {
         "isRequired": function () {}
       },
-      "children": {
-        "isRequired": function () {}
-      },
-      "bounds": {
+      "defaultVisible": {
         "isRequired": function () {}
       }
     },
     "contextTypes": {
-      "mapHolderRef": {
+      "__SECRET_MAP_DO_NOT_USE_OR_YOU_WILL_BE_FIRED": {
         "isRequired": function () {}
       }
-    },
-    "defaultProps": {
-      "mapPaneName": {}
     }
   },
-  "Polygon": {
+  "Polyline": {
+    "displayName": {},
     "propTypes": {
+      "draggable": {
+        "isRequired": function () {}
+      },
+      "editable": {
+        "isRequired": function () {}
+      },
+      "options": {
+        "isRequired": function () {}
+      },
+      "path": {
+        "isRequired": function () {}
+      },
+      "visible": {
+        "isRequired": function () {}
+      },
       "defaultDraggable": {
         "isRequired": function () {}
       },
@@ -605,12 +235,19 @@ var ReactGoogleMaps = {
       "defaultPath": {
         "isRequired": function () {}
       },
-      "defaultPaths": {
-        "isRequired": function () {}
-      },
       "defaultVisible": {
         "isRequired": function () {}
-      },
+      }
+    },
+    "contextTypes": {
+      "__SECRET_MAP_DO_NOT_USE_OR_YOU_WILL_BE_FIRED": {
+        "isRequired": function () {}
+      }
+    }
+  },
+  "Polygon": {
+    "displayName": {},
+    "propTypes": {
       "draggable": {
         "isRequired": function () {}
       },
@@ -629,48 +266,6 @@ var ReactGoogleMaps = {
       "visible": {
         "isRequired": function () {}
       },
-      "onClick": {
-        "isRequired": function () {}
-      },
-      "onDblclick": {
-        "isRequired": function () {}
-      },
-      "onDrag": {
-        "isRequired": function () {}
-      },
-      "onDragend": {
-        "isRequired": function () {}
-      },
-      "onDragstart": {
-        "isRequired": function () {}
-      },
-      "onMousedown": {
-        "isRequired": function () {}
-      },
-      "onMousemove": {
-        "isRequired": function () {}
-      },
-      "onMouseout": {
-        "isRequired": function () {}
-      },
-      "onMouseover": {
-        "isRequired": function () {}
-      },
-      "onMouseup": {
-        "isRequired": function () {}
-      },
-      "onRightclick": {
-        "isRequired": function () {}
-      }
-    },
-    "contextTypes": {
-      "mapHolderRef": {
-        "isRequired": function () {}
-      }
-    }
-  },
-  "Polyline": {
-    "propTypes": {
       "defaultDraggable": {
         "isRequired": function () {}
       },
@@ -683,7 +278,23 @@ var ReactGoogleMaps = {
       "defaultPath": {
         "isRequired": function () {}
       },
+      "defaultPaths": {
+        "isRequired": function () {}
+      },
       "defaultVisible": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "__SECRET_MAP_DO_NOT_USE_OR_YOU_WILL_BE_FIRED": {
+        "isRequired": function () {}
+      }
+    }
+  },
+  "Circle": {
+    "displayName": {},
+    "propTypes": {
+      "center": {
         "isRequired": function () {}
       },
       "draggable": {
@@ -695,55 +306,13 @@ var ReactGoogleMaps = {
       "options": {
         "isRequired": function () {}
       },
-      "path": {
+      "radius": {
         "isRequired": function () {}
       },
       "visible": {
         "isRequired": function () {}
       },
-      "onClick": {
-        "isRequired": function () {}
-      },
-      "onDblclick": {
-        "isRequired": function () {}
-      },
-      "onDrag": {
-        "isRequired": function () {}
-      },
-      "onDragend": {
-        "isRequired": function () {}
-      },
-      "onDragstart": {
-        "isRequired": function () {}
-      },
-      "onMousedown": {
-        "isRequired": function () {}
-      },
-      "onMousemove": {
-        "isRequired": function () {}
-      },
-      "onMouseout": {
-        "isRequired": function () {}
-      },
-      "onMouseover": {
-        "isRequired": function () {}
-      },
-      "onMouseup": {
-        "isRequired": function () {}
-      },
-      "onRightclick": {
-        "isRequired": function () {}
-      }
-    },
-    "contextTypes": {
-      "mapHolderRef": {
-        "isRequired": function () {}
-      }
-    }
-  },
-  "Rectangle": {
-    "propTypes": {
-      "defaultBounds": {
+      "defaultCenter": {
         "isRequired": function () {}
       },
       "defaultDraggable": {
@@ -755,150 +324,548 @@ var ReactGoogleMaps = {
       "defaultOptions": {
         "isRequired": function () {}
       },
+      "defaultRadius": {
+        "isRequired": function () {}
+      },
       "defaultVisible": {
         "isRequired": function () {}
-      },
-      "bounds": {
+      }
+    },
+    "contextTypes": {
+      "__SECRET_MAP_DO_NOT_USE_OR_YOU_WILL_BE_FIRED": {
+        "isRequired": function () {}
+      }
+    }
+  },
+  "KmlLayer": {
+    "displayName": {},
+    "propTypes": {
+      "defaultViewport": {
         "isRequired": function () {}
       },
-      "draggable": {
+      "metadata": {
         "isRequired": function () {}
       },
-      "editable": {
+      "status": {
+        "isRequired": function () {}
+      },
+      "url": {
+        "isRequired": function () {}
+      },
+      "zIndex": {
+        "isRequired": function () {}
+      },
+      "defaultDefaultViewport": {
+        "isRequired": function () {}
+      },
+      "defaultMetadata": {
+        "isRequired": function () {}
+      },
+      "defaultStatus": {
+        "isRequired": function () {}
+      },
+      "defaultUrl": {
+        "isRequired": function () {}
+      },
+      "defaultZIndex": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "__SECRET_MAP_DO_NOT_USE_OR_YOU_WILL_BE_FIRED": {
+        "isRequired": function () {}
+      }
+    }
+  },
+  "DirectionsRenderer": {
+    "displayName": {},
+    "propTypes": {
+      "directions": {
         "isRequired": function () {}
       },
       "options": {
         "isRequired": function () {}
       },
-      "visible": {
+      "panel": {
         "isRequired": function () {}
       },
-      "onBoundsChanged": {
+      "routeIndex": {
         "isRequired": function () {}
       },
-      "onClick": {
+      "defaultDirections": {
         "isRequired": function () {}
       },
-      "onDblclick": {
+      "defaultOptions": {
         "isRequired": function () {}
       },
-      "onDrag": {
+      "defaultPanel": {
         "isRequired": function () {}
       },
-      "onDragend": {
-        "isRequired": function () {}
-      },
-      "onDragstart": {
-        "isRequired": function () {}
-      },
-      "onMousedown": {
-        "isRequired": function () {}
-      },
-      "onMousemove": {
-        "isRequired": function () {}
-      },
-      "onMouseout": {
-        "isRequired": function () {}
-      },
-      "onMouseover": {
-        "isRequired": function () {}
-      },
-      "onMouseup": {
-        "isRequired": function () {}
-      },
-      "onRightclick": {
+      "defaultRouteIndex": {
         "isRequired": function () {}
       }
     },
     "contextTypes": {
-      "mapHolderRef": {
+      "__SECRET_MAP_DO_NOT_USE_OR_YOU_WILL_BE_FIRED": {
         "isRequired": function () {}
       }
     }
   },
-  "SearchBox": {
+  "HeatmapLayer": {
+    "displayName": {},
     "propTypes": {
-      "defaultBounds": {
+      "data": {
+        "isRequired": function () {}
+      },
+      "options": {
+        "isRequired": function () {}
+      },
+      "defaultData": {
+        "isRequired": function () {}
+      },
+      "defaultOptions": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "__SECRET_MAP_DO_NOT_USE_OR_YOU_WILL_BE_FIRED": {
+        "isRequired": function () {}
+      }
+    }
+  },
+  "InfoWindow": {
+    "displayName": {},
+    "propTypes": {
+      "children": {
+        "isRequired": function () {}
+      },
+      "options": {
+        "isRequired": function () {}
+      },
+      "position": {
+        "isRequired": function () {}
+      },
+      "zIndex": {
+        "isRequired": function () {}
+      },
+      "defaultChildren": {
+        "isRequired": function () {}
+      },
+      "defaultOptions": {
+        "isRequired": function () {}
+      },
+      "defaultPosition": {
+        "isRequired": function () {}
+      },
+      "defaultZIndex": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "__SECRET_MAP_DO_NOT_USE_OR_YOU_WILL_BE_FIRED": {
+        "isRequired": function () {}
+      },
+      "__SECRET_ANCHOR_DO_NOT_USE_OR_YOU_WILL_BE_FIRED": {
+        "isRequired": function () {}
+      }
+    }
+  },
+  "OverlayView": {
+    "displayName": {},
+    "FLOAT_PANE": {},
+    "MAP_PANE": {},
+    "MARKER_LAYER": {},
+    "OVERLAY_LAYER": {},
+    "OVERLAY_MOUSE_TARGET": {},
+    "propTypes": {
+      "mapPaneName": {
+        "isRequired": function () {}
+      },
+      "position": {
         "isRequired": function () {}
       },
       "bounds": {
         "isRequired": function () {}
       },
-      "onPlacesChanged": {
+      "defaultMapPaneName": {
+        "isRequired": function () {}
+      },
+      "defaultPosition": {
+        "isRequired": function () {}
+      },
+      "defaultBounds": {
+        "isRequired": function () {}
+      },
+      "children": function () {},
+      "getPixelPositionOffset": {
         "isRequired": function () {}
       }
     },
     "contextTypes": {
-      "mapHolderRef": {
+      "__SECRET_MAP_DO_NOT_USE_OR_YOU_WILL_BE_FIRED": {
         "isRequired": function () {}
       }
     }
   }
 };
-ReactGoogleMaps.GoogleMapLoader.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
-};
 ReactGoogleMaps.GoogleMap.prototype = {
+  "constructor": function () {},
+  "__reactAutoBindPairs": function () {},
+  "getInitialState": function () {},
+  "render": function () {},
+  "componentDidUpdate": function () {},
+  "_unregisterEvents": function () {},
+  "componentDidMount": function () {},
+  "componentWillUnmount": function () {},
+  "getBounds": function () {},
+  "getCenter": function () {},
+  "getDiv": function () {},
+  "getHeading": function () {},
+  "getMapTypeId": function () {},
+  "getProjection": function () {},
+  "getStreetView": function () {},
+  "getTilt": function () {},
+  "getZoom": function () {},
+  "fitBounds": function () {},
+  "panBy": function () {},
+  "panTo": function () {},
+  "panToBounds": function () {},
+  "mixins": function () {},
+  "statics": function () {},
+  "propTypes": function () {},
+  "contextTypes": function () {},
+  "childContextTypes": function () {},
+  "getDefaultProps": function () {},
+  "getChildContext": function () {},
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
+  "shouldComponentUpdate": function () {},
+  "componentWillUpdate": function () {},
+  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {}
-};
-ReactGoogleMaps.Circle.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
-};
-ReactGoogleMaps.DirectionsRenderer.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
-};
-ReactGoogleMaps.DrawingManager.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
-};
-ReactGoogleMaps.InfoWindow.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
-};
-ReactGoogleMaps.KmlLayer.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
+  "forceUpdate": function () {},
+  "replaceState": function () {},
+  "isMounted": function () {}
 };
 ReactGoogleMaps.Marker.prototype = {
+  "constructor": function () {},
+  "__reactAutoBindPairs": function () {},
+  "getInitialState": function () {},
+  "getChildContext": function () {},
+  "componentWillUnmount": function () {},
+  "render": function () {},
+  "componentDidUpdate": function () {},
+  "_unregisterEvents": function () {},
+  "componentDidMount": function () {},
+  "getAnimation": function () {},
+  "getAttribution": function () {},
+  "getClickable": function () {},
+  "getCursor": function () {},
+  "getDraggable": function () {},
+  "getIcon": function () {},
+  "getLabel": function () {},
+  "getOpacity": function () {},
+  "getPlace": function () {},
+  "getPosition": function () {},
+  "getShape": function () {},
+  "getTitle": function () {},
+  "getVisible": function () {},
+  "getZIndex": function () {},
+  "mixins": function () {},
+  "statics": function () {},
+  "propTypes": function () {},
+  "contextTypes": function () {},
+  "childContextTypes": function () {},
+  "getDefaultProps": function () {},
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
+  "shouldComponentUpdate": function () {},
+  "componentWillUpdate": function () {},
+  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {}
-};
-ReactGoogleMaps.OverlayView.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
-};
-ReactGoogleMaps.Polygon.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
-};
-ReactGoogleMaps.Polyline.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
+  "forceUpdate": function () {},
+  "replaceState": function () {},
+  "isMounted": function () {}
 };
 ReactGoogleMaps.Rectangle.prototype = {
+  "constructor": function () {},
+  "__reactAutoBindPairs": function () {},
+  "getInitialState": function () {},
+  "componentWillUnmount": function () {},
+  "render": function () {},
+  "componentDidUpdate": function () {},
+  "_unregisterEvents": function () {},
+  "componentDidMount": function () {},
+  "getBounds": function () {},
+  "getDraggable": function () {},
+  "getEditable": function () {},
+  "getVisible": function () {},
+  "mixins": function () {},
+  "statics": function () {},
+  "propTypes": function () {},
+  "contextTypes": function () {},
+  "childContextTypes": function () {},
+  "getDefaultProps": function () {},
+  "getChildContext": function () {},
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
+  "shouldComponentUpdate": function () {},
+  "componentWillUpdate": function () {},
+  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {}
+  "forceUpdate": function () {},
+  "replaceState": function () {},
+  "isMounted": function () {}
 };
-ReactGoogleMaps.SearchBox.prototype = {
+ReactGoogleMaps.Polyline.prototype = {
+  "constructor": function () {},
+  "__reactAutoBindPairs": function () {},
+  "getInitialState": function () {},
+  "componentWillUnmount": function () {},
+  "render": function () {},
+  "componentDidUpdate": function () {},
+  "_unregisterEvents": function () {},
+  "componentDidMount": function () {},
+  "getDraggable": function () {},
+  "getEditable": function () {},
+  "getPath": function () {},
+  "getVisible": function () {},
+  "mixins": function () {},
+  "statics": function () {},
+  "propTypes": function () {},
+  "contextTypes": function () {},
+  "childContextTypes": function () {},
+  "getDefaultProps": function () {},
+  "getChildContext": function () {},
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
+  "shouldComponentUpdate": function () {},
+  "componentWillUpdate": function () {},
+  "updateComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
-  "forceUpdate": function () {}
+  "forceUpdate": function () {},
+  "replaceState": function () {},
+  "isMounted": function () {}
+};
+ReactGoogleMaps.Polygon.prototype = {
+  "constructor": function () {},
+  "__reactAutoBindPairs": function () {},
+  "getInitialState": function () {},
+  "componentWillUnmount": function () {},
+  "render": function () {},
+  "componentDidUpdate": function () {},
+  "_unregisterEvents": function () {},
+  "componentDidMount": function () {},
+  "getDraggable": function () {},
+  "getEditable": function () {},
+  "getPath": function () {},
+  "getPaths": function () {},
+  "getVisible": function () {},
+  "mixins": function () {},
+  "statics": function () {},
+  "propTypes": function () {},
+  "contextTypes": function () {},
+  "childContextTypes": function () {},
+  "getDefaultProps": function () {},
+  "getChildContext": function () {},
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
+  "shouldComponentUpdate": function () {},
+  "componentWillUpdate": function () {},
+  "updateComponent": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {},
+  "forceUpdate": function () {},
+  "replaceState": function () {},
+  "isMounted": function () {}
+};
+ReactGoogleMaps.Circle.prototype = {
+  "constructor": function () {},
+  "__reactAutoBindPairs": function () {},
+  "getInitialState": function () {},
+  "componentWillUnmount": function () {},
+  "render": function () {},
+  "componentDidUpdate": function () {},
+  "_unregisterEvents": function () {},
+  "componentDidMount": function () {},
+  "getBounds": function () {},
+  "getCenter": function () {},
+  "getDraggable": function () {},
+  "getEditable": function () {},
+  "getMap": function () {},
+  "getRadius": function () {},
+  "getVisible": function () {},
+  "mixins": function () {},
+  "statics": function () {},
+  "propTypes": function () {},
+  "contextTypes": function () {},
+  "childContextTypes": function () {},
+  "getDefaultProps": function () {},
+  "getChildContext": function () {},
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
+  "shouldComponentUpdate": function () {},
+  "componentWillUpdate": function () {},
+  "updateComponent": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {},
+  "forceUpdate": function () {},
+  "replaceState": function () {},
+  "isMounted": function () {}
+};
+ReactGoogleMaps.KmlLayer.prototype = {
+  "constructor": function () {},
+  "__reactAutoBindPairs": function () {},
+  "getInitialState": function () {},
+  "componentWillUnmount": function () {},
+  "render": function () {},
+  "componentDidUpdate": function () {},
+  "_unregisterEvents": function () {},
+  "componentDidMount": function () {},
+  "getDefaultViewport": function () {},
+  "getMetadata": function () {},
+  "getStatus": function () {},
+  "getUrl": function () {},
+  "getZIndex": function () {},
+  "mixins": function () {},
+  "statics": function () {},
+  "propTypes": function () {},
+  "contextTypes": function () {},
+  "childContextTypes": function () {},
+  "getDefaultProps": function () {},
+  "getChildContext": function () {},
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
+  "shouldComponentUpdate": function () {},
+  "componentWillUpdate": function () {},
+  "updateComponent": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {},
+  "forceUpdate": function () {},
+  "replaceState": function () {},
+  "isMounted": function () {}
+};
+ReactGoogleMaps.DirectionsRenderer.prototype = {
+  "constructor": function () {},
+  "__reactAutoBindPairs": function () {},
+  "getInitialState": function () {},
+  "componentWillUnmount": function () {},
+  "render": function () {},
+  "componentDidUpdate": function () {},
+  "_unregisterEvents": function () {},
+  "componentDidMount": function () {},
+  "getDirections": function () {},
+  "getPanel": function () {},
+  "getRouteIndex": function () {},
+  "mixins": function () {},
+  "statics": function () {},
+  "propTypes": function () {},
+  "contextTypes": function () {},
+  "childContextTypes": function () {},
+  "getDefaultProps": function () {},
+  "getChildContext": function () {},
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
+  "shouldComponentUpdate": function () {},
+  "componentWillUpdate": function () {},
+  "updateComponent": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {},
+  "forceUpdate": function () {},
+  "replaceState": function () {},
+  "isMounted": function () {}
+};
+ReactGoogleMaps.HeatmapLayer.prototype = {
+  "constructor": function () {},
+  "__reactAutoBindPairs": function () {},
+  "getInitialState": function () {},
+  "componentWillUnmount": function () {},
+  "render": function () {},
+  "componentDidUpdate": function () {},
+  "_unregisterEvents": function () {},
+  "componentDidMount": function () {},
+  "mixins": function () {},
+  "statics": function () {},
+  "propTypes": function () {},
+  "contextTypes": function () {},
+  "childContextTypes": function () {},
+  "getDefaultProps": function () {},
+  "getChildContext": function () {},
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
+  "shouldComponentUpdate": function () {},
+  "componentWillUpdate": function () {},
+  "updateComponent": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {},
+  "forceUpdate": function () {},
+  "replaceState": function () {},
+  "isMounted": function () {}
+};
+ReactGoogleMaps.InfoWindow.prototype = {
+  "constructor": function () {},
+  "__reactAutoBindPairs": function () {},
+  "getInitialState": function () {},
+  "componentDidMount": function () {},
+  "componentWillReceiveProps": function () {},
+  "componentWillUnmount": function () {},
+  "render": function () {},
+  "componentDidUpdate": function () {},
+  "_unregisterEvents": function () {},
+  "getPosition": function () {},
+  "getZIndex": function () {},
+  "mixins": function () {},
+  "statics": function () {},
+  "propTypes": function () {},
+  "contextTypes": function () {},
+  "childContextTypes": function () {},
+  "getDefaultProps": function () {},
+  "getChildContext": function () {},
+  "componentWillMount": function () {},
+  "shouldComponentUpdate": function () {},
+  "componentWillUpdate": function () {},
+  "updateComponent": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {},
+  "forceUpdate": function () {},
+  "replaceState": function () {},
+  "isMounted": function () {}
+};
+ReactGoogleMaps.OverlayView.prototype = {
+  "constructor": function () {},
+  "__reactAutoBindPairs": function () {},
+  "getInitialState": function () {},
+  "onAdd": function () {},
+  "draw": function () {},
+  "onRemove": function () {},
+  "componentDidUpdate": function () {},
+  "componentWillUnmount": function () {},
+  "render": function () {},
+  "_unregisterEvents": function () {},
+  "componentDidMount": function () {},
+  "getPanes": function () {},
+  "getProjection": function () {},
+  "mixins": function () {},
+  "statics": function () {},
+  "propTypes": function () {},
+  "contextTypes": function () {},
+  "childContextTypes": function () {},
+  "getDefaultProps": function () {},
+  "getChildContext": function () {},
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
+  "shouldComponentUpdate": function () {},
+  "componentWillUpdate": function () {},
+  "updateComponent": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {},
+  "forceUpdate": function () {},
+  "replaceState": function () {},
+  "isMounted": function () {}
 };
 /**********************************************************************
  * End Generated Extern for ReactGoogleMaps

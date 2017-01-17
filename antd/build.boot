@@ -6,7 +6,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.5.0")
+(def +lib-version+ "2.6.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -22,11 +22,11 @@
   (comp
 
    (download :url (str "https://unpkg.com/antd@" +lib-version+ "/dist/antd.js")
-             :checksum "CD24357C010D1F13D6A9A37F060DD0DB"
+             :checksum "0F0AA6FE0E81F39886E6E11CC6542A90"
              :unzip false)
 
    (download :url (str "https://unpkg.com/antd@" +lib-version+ "/dist/antd.min.js")
-             :checksum "87D030B4EF87E5C2ABC16DD294FEB550"
+             :checksum "9B2D7AAB88B1262FE32B85E645331297"
              :unzip false)
 
    (sift :move {#"^antd.js$"     "cljsjs/antd/development/antd.inc.js"

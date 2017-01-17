@@ -11,7 +11,7 @@ for x in $(./changed-packages.sh); do
 
     (
     cd ${x[0]}
-    boot package -- push --ensure-release --gpg-sign --repo clojars
+    boot package -- push --ensure-release --gpg-sign --repo clojars --repo-map "{:url \"https://clojars.org/repo/\"}"
     )
     [[ $? != "0" ]] && EXIT=1
 done
