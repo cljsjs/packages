@@ -1,0 +1,2 @@
+var Linkify = {}
+var LinkifyReact = {}
