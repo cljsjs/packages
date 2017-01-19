@@ -1,5 +1,4 @@
-
-(def +lib-version+ "1.0.3")
+(def +lib-version+ "1.2.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (set-env!
@@ -18,11 +17,11 @@
 
 (defn download-cdn []
   (download :url (str "https://unpkg.com/inferno@" +lib-version+ "/dist/inferno.js")
-            :checksum "2D195D41970A936CAA30A1A686602E45"))
+            :checksum "a584b6e19369e13845ad49ee4153ea9a"))
 
 (defn download-min-cdn []
   (download :url (str "https://unpkg.com/inferno@" +lib-version+ "/dist/inferno.min.js")
-            :checksum "7954BCC2C41866066B82DF325BEC929F"))
+            :checksum "e483e2f41e51f1067b9762eb9fbd9882"))
 
 (deftask package  []
   (comp
