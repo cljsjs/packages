@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/inferno "1.0.3-0"] ;; latest release
+[cljsjs/inferno "1.2.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -20,5 +20,20 @@ you can require the packaged library like so:
     (.render js/Inferno v-node container)))
 
 ```
+
+Several optional Inferno modules can also be required in your project as
+follows
+
+
+```clojure
+(ns application.core
+  (:require [cljsjs.inferno.create-element]
+            [cljsjs.inferno.create-class]
+            [cljsjs.inferno.component]))
+```
+
+Consult Inferno's [documentation](https://github.com/infernojs/inferno "Inferno") for more information about these modules.
+
+
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
