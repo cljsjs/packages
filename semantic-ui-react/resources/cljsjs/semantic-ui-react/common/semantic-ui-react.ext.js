@@ -1,0 +1,3 @@
+var TopLevel = {
+"semanticUIReact" : function () {}
+}
