@@ -19,10 +19,10 @@
   (comp
    (download :url (str "https://github.com/usablica/intro.js/archive/v" +lib-version+ ".zip")
              :unzip true)
-   (sift :move {#"intro.js-2.4.0/intro.js"                 "cljsjs/introjs/development/introjs.inc.js"
-                #"intro.js-2.4.0/introjs.css"              "cljsjs/introjs/development/introjs.inc.css"
-                #"intro.js-2.4.0/minified/intro.min.js"    "cljsjs/introjs/production/introjs.min.inc.js"
-                #"intro.js-2.4.0/minified/introjs.min.css" "cljsjs/introjs/production/introjs.min.inc.css"})
+   (sift :move {#"intro.js-[^/]*/intro.js"                 "cljsjs/introjs/development/introjs.inc.js"
+                #"intro.js-[^/]*/introjs.css"              "cljsjs/introjs/development/introjs.inc.css"
+                #"intro.js-[^/]*/minified/intro.min.js"    "cljsjs/introjs/production/introjs.min.inc.js"
+                #"intro.js-[^/]*/minified/introjs.min.css" "cljsjs/introjs/production/introjs.min.inc.css"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.introjs")
    (pom)
