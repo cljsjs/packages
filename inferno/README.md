@@ -3,9 +3,9 @@
 [](dependency)
 ```clojure
 [cljsjs/inferno "1.2.1-0"] ;; latest release
-[cljsjs/inferno-component "1.2.1-0"] ;; latest release
-[cljsjs/inferno-create-element "1.2.1-0"] ;; latest release
-[cljsjs/inferno-create-class "1.2.1-0"] ;; latest release
+[cljsjs/inferno.component "1.2.1-0"] ;; latest release
+[cljsjs/inferno.create-element "1.2.1-0"] ;; latest release
+[cljsjs/inferno.create-class "1.2.1-0"] ;; latest release
 ```
 [](/dependency)
 
