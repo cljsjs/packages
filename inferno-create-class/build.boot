@@ -33,6 +33,6 @@
                  #"^inferno-create-class\.js$"
                  "cljsjs/inferno/development/inferno-create-class.inc.js"})
     (sift :include #{#"^cljs"})
-    (deps-cljs :name "cljsjs.inferno.create-class")
+    (deps-cljs :name "cljsjs.inferno.create-class" :requires ["cljsjs.inferno" "cljsjs.inferno.component"])
     (pom)
     (jar)))

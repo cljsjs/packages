@@ -32,6 +32,6 @@
                  #"^inferno-create-element\.js$"
                  "cljsjs/inferno/development/inferno-create-element.inc.js"})
     (sift :include #{#"^cljs"})
-    (deps-cljs :name "cljsjs.inferno.create-element")
+    (deps-cljs :name "cljsjs.inferno.create-element" :requires ["cljsjs.inferno"])
     (pom)
     (jar)))
