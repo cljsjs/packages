@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/inferno-create-class "1.0.3-0"] ;; latest release
+[cljsjs/inferno-create-class "1.2.1-0"] ;; latest release
 ```
 [](/dependency)
 
