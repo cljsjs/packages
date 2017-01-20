@@ -1,8 +1,8 @@
-# cljsjs/kjua
+# cljsjs/introjs
 
 [](dependency)
 ```clojure
-[cljsjs/kjua "0.1.1-1"] ;; latest release
+[cljsjs/introjs "2.4.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,9 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.kjua))
+  (:require cljsjs.introjs))
 ```
-Documentation for the kjua lib can be found [here](https://larsjung.de/kjua)
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
-
