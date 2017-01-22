@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/web3 "0.16.0-0"] ;; latest release
+[cljsjs/web3 "0.18.2-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,6 +15,11 @@ you can require the packaged library like so:
 ```clojure
 (ns application.core
   (:require cljsjs.web3))
+```
+or
+```clojure
+(ns application.core
+  (:require cljsjs.web3-light))
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
