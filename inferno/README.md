@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/inferno "1.0.3-0"] ;; latest release
+[cljsjs/inferno "1.2.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,10 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require [cljsjs.inferno]))
+  (:require [cljsjs.inferno]
+            [cljsjs.inferno.create-element]
+            [cljsjs.inferno.create-class]
+            [cljsjs.inferno.component]))
 
 (defn init []
   (let [container (. js/document (getElementById "container"))
@@ -20,5 +23,7 @@ you can require the packaged library like so:
     (.render js/Inferno v-node container)))
 
 ```
+
+
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
