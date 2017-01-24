@@ -2,34 +2,44 @@ var Autosuggest = {
     "displayName": {},
     "propTypes": {
 	"suggestions": {},
-	"onSuggestionsUpdateRequested": {},
+	"onSuggestionsFetchRequested": {},
+	"onSuggestionsClearRequested": {},
 	"getSuggestionValue": {},
 	"renderSuggestion": {},
 	"inputProps": {},
+	"onSuggestionSelected": {},
 	"shouldRenderSuggestions": {},
+	"alwaysRenderSuggestions": {},
+	"focusFirstSuggestion": {},
+	"focusInputOnSuggestionClick": {},
 	"multiSection": {},
 	"renderSectionTitle": {},
 	"getSectionSuggestions": {},
-	"onSuggestionSelected": {},
-	"focusInputOnSuggestionClick": {},
+	"renderInputComponent": {},
+	"renderSuggestionsContainer": {},
 	"theme": {},
-	"id": {}	
+	"id": {}
     },
     "getDefaultProps": function () {},
     "defaultProps": {
 	"suggestions": {},
-	"onSuggestionsUpdateRequested": {},
+	"onSuggestionsFetchRequested": {},
+	"onSuggestionsClearRequested": {},
 	"getSuggestionValue": {},
 	"renderSuggestion": {},
 	"inputProps": {},
+	"onSuggestionSelected": {},
 	"shouldRenderSuggestions": {},
+	"alwaysRenderSuggestions": {},
+	"focusFirstSuggestion": {},
+	"focusInputOnSuggestionClick": {},
 	"multiSection": {},
 	"renderSectionTitle": {},
 	"getSectionSuggestions": {},
-	"onSuggestionSelected": {},
-	"focusInputOnSuggestionClick": {},
+	"renderInputComponent": {},
+	"renderSuggestionsContainer": {},
 	"theme": {},
 	"id": {}
-    }    
+    }
 }
 
