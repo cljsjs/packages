@@ -1,20 +1,23 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]
+                  [adzerk/bootlaces "0.1.13" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
          '[boot.tmpdir :as tmpd]
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]]
-         '[clojure.string :as str])
+         '[clojure.string :as str]
+         '[adzerk.bootlaces :refer :all])
 
-(def +lib-version+ "3.5.1")
+(def +lib-version+ "8.0.0")
 (def +version+ (str +lib-version+ "-0"))
-(def +expected-checksum+ "785C6BD4D021C6469006FE2993A43F20")
+(def +expected-checksum+ "F6925AE51929D8422CCD3F36D6586006")
+(bootlaces! +version+)
 
 (task-options!
-  pom  {:project     'cljsjs/react-autosuggest
+  pom  {:project     'gigasquid/react-autosuggest
         :version     +version+
         :description "WAI-ARIA compliant React autosuggest component "
         :url         "https://github.com/moroshko/react-autosuggest.git"
@@ -40,7 +43,7 @@
   (comp
     (download :url (str "https://github.com/moroshko/react-autosuggest/archive/v" +lib-version+ ".zip")
               :checksum +expected-checksum+
-              :unzip true) 
+              :unzip true)
     (build-autosuggest)
 
     (sift :move {#"^react-autosuggest.*[/ \\]dist[/ \\]standalone[/ \\]autosuggest.js$" "cljsjs/react-autosuggest/development/react-autosuggest.inc.js"
