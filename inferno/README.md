@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/inferno "1.2.1-0"] ;; latest release
+[cljsjs/inferno "1.2.2-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -29,7 +29,8 @@ follows
 (ns application.core
   (:require [cljsjs.inferno.create-element]
             [cljsjs.inferno.create-class]
-            [cljsjs.inferno.component]))
+            [cljsjs.inferno.component]
+            [cljsjs.inferno.hyperscript]))
 ```
 
 Consult Inferno's [documentation](https://github.com/infernojs/inferno "Inferno") for more information about these modules.

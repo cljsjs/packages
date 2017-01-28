@@ -47,7 +47,8 @@ var Inferno = {
   "version": {},
   "Component": function () {},
   "createElement": function () {},
-  "createClass": function () {}
+  "createClass": function () {},
+  "h": function () {}
 };
 Inferno.Component.prototype = {
   "render": function () {},
