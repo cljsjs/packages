@@ -20,8 +20,8 @@
            (download :url (format "https://github.com/paldepind/flyd/archive/v%s.zip" +lib-version+)
                      :checksum "eb3e952c894093d0380e629c95cb1e2e"
                      :unzip true)
-           (sift :move {#"^flyd-0\.2\.3/flyd\.js$" "cljsjs/flyd/development/flyd.inc.js"
-                        #"^flyd-0\.2\.3/flyd\.js$" "cljsjs/flyd/production/flyd.min.inc.js"})
+           (sift :move {#"^flyd-[^/]*/flyd\.js$" "cljsjs/flyd/development/flyd.inc.js"
+                        #"^flyd-[^/]*/flyd\.js$" "cljsjs/flyd/production/flyd.min.inc.js"})
            (sift :include #{#"^cljsjs"})
            (deps-cljs :name "cljsjs.flyd")
            (pom)
