@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "15.4.2")
-(def +version+ (str +lib-version+ "-1"))
+(def +version+ (str +lib-version+ "-2"))
 
 (def checksums
   {'cljsjs/react
