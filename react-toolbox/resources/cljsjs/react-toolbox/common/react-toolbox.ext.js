@@ -15,7 +15,6 @@ var ReactToolbox = {
     "Drawer": function () {},
     "Dropdown": function () {},
     "FontIcon": function () {},
-    "Form": function () {},
     "IconButton": function () {},
     "IconMenu": function () {},
     "Input": function () {},
@@ -42,7 +41,6 @@ var ReactToolbox = {
     "Tab": function () {},
     "Table": function () {},
     "Tabs": function () {},
-    "theme": function () {},
     "TimePicker": function () {},
     "Tooltip": function () {}
 };
