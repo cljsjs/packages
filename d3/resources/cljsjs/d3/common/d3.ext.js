@@ -678,7 +678,6 @@ var d3 = {
   "schemeCategory20b": {},
   "schemeCategory20c": {},
   "schemeCategory20": {},
-  "scaleSequential": function () {},
   "interpolateCubehelixDefault": function () {},
   "interpolateRainbow": function () {},
   "interpolateWarm": function () {},
