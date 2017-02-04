@@ -11,7 +11,6 @@ module.exports = {
 
     externals: {
         "react": "React",
-        "react-addons-css-transition-group": "React.addons.CSSTransitionGroup",
         "react-dom": "ReactDOM"
     },
 

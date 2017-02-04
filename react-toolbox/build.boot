@@ -1,8 +1,8 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]
-                  [cljsjs/react-with-addons "15.4.2-1"]
-                  [cljsjs/react-dom "15.4.2-1"]])
+                  [cljsjs/react-with-addons "15.2.1-0" :scope "provided"]
+                  [cljsjs/react-dom "15.2.1-0" :scope "provided"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
