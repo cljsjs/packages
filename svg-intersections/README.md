@@ -1,8 +1,8 @@
-# cljsjs/kld-intersections
+# cljsjs/svg-intersections
 
 [](dependency)
 ```clojure
-[cljsjs/kld-intersections "0.1.1-0"] ;; latest release
+[cljsjs/svg-intersections "0.1.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -17,7 +17,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.kld-intersections))
+  (:require cljsjs.svg-intersections))
 
   ;; intersection with a segment to the center
   (js/Intersection.intersectShapes
