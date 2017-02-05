@@ -19,10 +19,10 @@ you can require the packaged library like so:
 (ns application.core
   (:require cljsjs.svg-intersections))
 
-  ;; intersection with a segment to the center
-  (js/Intersection.intersectShapes
-    (js.IntersectionParams.newCircle (js/Point2D. 5 1) 1)
-    (js/IntersectionParams.newLine (js/Point2D. 1 4) (js/Point2D. 5 1)))
+;; intersection with a segment to the center
+(js/SvgIntersection.intersect
+  (js/SvgIntersection.shape "circle" #js {:cx 5 :cy 1 :r 1})
+  (js/SvgIntersection.shape "line" #js {:x1 1 :y1 4 :x2 5 :y2 1}))
 ```
 
 [reference]: http://www.quazistax.com/testIntersection.html

@@ -31,7 +31,7 @@
       (binding [boot.util/*sh-dir* (str (io/file tmp (format "svg-intersections-%s" +lib-version+)))]
         ((sh "npm" "install" "--production"))
         ((sh "npm" "install" "browserify"))
-        ((sh "node" "node_modules/browserify/bin/cmd.js" "index.js" "-o" "svg-intersections.inc.js")))
+        ((sh "node" "node_modules/browserify/bin/cmd.js" "index.js" "--standalone" "SvgIntersections" "-o" "svg-intersections.inc.js")))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 (deftask package []
