@@ -1,12 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]
-                  [cljsjs/leaflet "0.7.7-4"]])
+                  [cljsjs/leaflet "0.7.7-8"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "0.12.3")
-(def +version+ (str +lib-version+ "-2"))
+(def +version+ (str +lib-version+ "-4"))
 
 (task-options!
  pom  {:project     'cljsjs/react-leaflet

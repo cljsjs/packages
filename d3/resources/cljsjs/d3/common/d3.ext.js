@@ -137,7 +137,14 @@ var d3 = {
     "x1": function(){}
   },
   "line": function () {},
-  "pie": function () {},
+  "pie": {
+    "value": function () {},
+    "sortValues": function () {},
+    "sort": function () {},
+    "startAngle": function () {},
+    "endAngle": function () {},
+    "padAngle": function () {}
+  },
   "radialArea": function () {},
   "radialLine": {
     "curve": function () {},
@@ -671,7 +678,6 @@ var d3 = {
   "schemeCategory20b": {},
   "schemeCategory20c": {},
   "schemeCategory20": {},
-  "scaleSequential": function () {},
   "interpolateCubehelixDefault": function () {},
   "interpolateRainbow": function () {},
   "interpolateWarm": function () {},
@@ -1061,7 +1067,9 @@ d3.selection.prototype = {
   "sort": function () {},
   "call": function () {},
   "nodes": function () {},
-  "node": function () {},
+  "node": {
+    "getComputedTextLength": function () {}
+  },
   "size": function () {},
   "empty": function () {},
   "each": function () {},

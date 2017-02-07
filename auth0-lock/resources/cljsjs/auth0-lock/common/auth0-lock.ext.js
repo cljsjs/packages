@@ -4,6 +4,7 @@
  **********************************************************************/
 var Auth0Lock = {
   "version": {},
+  "css": {},
   "EventEmitter": {
     "EventEmitter": function () {},
     "defaultMaxListeners": {},
@@ -17,6 +18,7 @@ Auth0Lock.prototype = {
   "hide": function () {},
   "destroy": function () {},
   "getProfile": function () {},
+  "getUserInfo": function () {},
   "logout": function () {},
   "update": function () {},
   "setModel": function () {},
@@ -30,7 +32,8 @@ Auth0Lock.prototype = {
   "once": function () {},
   "removeListener": function () {},
   "removeAllListeners": function () {},
-  "listeners": function () {}
+  "listeners": function () {},
+  "listenerCount": function () {}
 };
 Auth0Lock.EventEmitter.prototype = {
   "_events": function () {},
@@ -42,7 +45,8 @@ Auth0Lock.EventEmitter.prototype = {
   "once": function () {},
   "removeListener": function () {},
   "removeAllListeners": function () {},
-  "listeners": function () {}
+  "listeners": function () {},
+  "listenerCount": function () {}
 };
 /**********************************************************************
  * End Generated Extern for Auth0Lock

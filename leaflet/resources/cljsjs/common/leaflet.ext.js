@@ -1,3 +1,7 @@
+// Externs for Leaflet
+// <http://leafletjs.com>
+// This extern is written by hand, do not replace with a generated file!
+
 var eventsKey = {};
 
 var L = {
@@ -688,7 +692,9 @@ var L = {
   "ImageOverlay": function () {},
   "imageOverlay": function () {},
   "Icon": {
-    "Default": function () {},
+    "Default": {
+      "imagePath": {},
+    },
   },
   "icon": function () {},
   "Marker": function () {},
@@ -731,7 +737,6 @@ var L = {
     "getLayers": function () {},
     "eachLayer": function () {},
     "clearLayers": function () {},
-    "hasLayer": function () {},
     "toGeoJSON": function () {},
    },
   "FeatureGroup": function () {},
@@ -751,12 +756,44 @@ var L = {
     "_sqClosestPointOnSegment": function () {}
   },
   "Polyline": function () {},
-  "polyline": function () {},
+  "polyline": {
+    "addTo": function () {},       
+    "bindPopup": function () {},   
+    "unbindPopup": function () {}, 
+    "openPopup": function () {},   
+    "closePopup": function () {},  
+    "setStyle": function () {},    
+    "getBounds": function () {},   
+    "bringToFront": function () {},
+    "bringToBack": function () {}, 
+    "redraw": function () {}, 
+    "addLatLng": function () {}, 
+    "setLatLngs": function () {}, 
+    "getLatLngs": function () {}, 
+    "spliceLatLngs": function () {},
+    "toGeoJSON": function () {} 
+  },
   "PolyUtil": {
     "clipPolygon": function () {}
   },
   "Polygon": function () {},
-  "polygon": function () {},
+  "polygon": {
+    "addTo": function () {},       
+    "bindPopup": function () {},   
+    "unbindPopup": function () {}, 
+    "openPopup": function () {},   
+    "closePopup": function () {},  
+    "setStyle": function () {},    
+    "getBounds": function () {},   
+    "bringToFront": function () {},
+    "bringToBack": function () {}, 
+    "redraw": function () {}, 
+    "addLatLng": function () {}, 
+    "setLatLngs": function () {}, 
+    "getLatLngs": function () {}, 
+    "spliceLatLngs": function () {},
+    "toGeoJSON": function () {}
+  },
   "MultiPolyline": function () {},
   "MultiPolygon": function () {},
   "multiPolyline": function () {},
@@ -769,7 +806,9 @@ var L = {
   "circleMarker": function () {},
   "GeoJSON": function () {},
   "geoJson": {
-    "addData": function () {}
+    "addData": function () {},
+    "setStyle": function () {},
+    "resetStyle": function () {}
   },
   "DomEvent": {
     "addListener": function () {},
@@ -840,6 +879,13 @@ var L = {
   "Handler": function () {},
   "Control": function () {},
   "control": {
+    "setPosition": function () {},
+    "getPosition": function () {},
+    "addTo": function () {},
+    "removeFrom": function () {},
+    "getContainer": function () {},
+    "onAdd": function () {},
+    "onRemove": function () {},
     "layers": {
       "addOverlay": function () {},
       "addBaseLayer": function () {},

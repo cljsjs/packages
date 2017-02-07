@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-google-maps "5.0.0-0"] ;; latest release
+[cljsjs/react-google-maps "6.0.1-0"] ;; latest release
 ```
 [](/dependency)
 

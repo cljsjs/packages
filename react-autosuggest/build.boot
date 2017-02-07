@@ -9,9 +9,9 @@
          '[boot.util :refer [sh]]
          '[clojure.string :as str])
 
-(def +lib-version+ "3.5.1")
+(def +lib-version+ "8.0.0")
 (def +version+ (str +lib-version+ "-0"))
-(def +expected-checksum+ "785C6BD4D021C6469006FE2993A43F20")
+(def +expected-checksum+ "F6925AE51929D8422CCD3F36D6586006")
 
 (task-options!
   pom  {:project     'cljsjs/react-autosuggest

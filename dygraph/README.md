@@ -1,7 +1,7 @@
 # cljsjs/dygraph
 [](dependency)
 ```clojure
-[cljsjs/dygraph "1.1.1-0"] ;; latest release
+[cljsjs/dygraph "1.1.1-1"] ;; latest release
 ```
 [](/dependency)
 

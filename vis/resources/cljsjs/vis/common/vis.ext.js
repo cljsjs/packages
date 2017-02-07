@@ -1,7 +1,6 @@
 // Please use https://github.com/jmmk/javascript-externs-generator
 // to generate the externs
 
-
 var vis = {
   "util": {
     "isNumber": function () {},
@@ -77,7 +76,8 @@ var vis = {
       "easeInQuint": function () {},
       "easeOutQuint": function () {},
       "easeInOutQuint": function () {}
-    }
+    },
+    "getScrollBarWidth": function () {}
   },
   "DOMutil": {
     "prepareElements": function () {},
@@ -126,8 +126,8 @@ var vis = {
     "momentProperties": {},
     "suppressDeprecationWarnings": {},
     "deprecationHandler": {},
-    "createFromInputFallback": function () {},
     "parseTwoDigitYear": function () {},
+    "createFromInputFallback": function () {},
     "ISO_8601": function () {},
     "updateOffset": function () {},
     "defaultFormat": {},
@@ -135,7 +135,90 @@ var vis = {
     "lang": function () {},
     "langData": function () {},
     "version": {},
-    "fn": {},
+    "fn": {
+      "add": function () {},
+      "calendar": function () {},
+      "clone": function () {},
+      "diff": function () {},
+      "endOf": function () {},
+      "format": function () {},
+      "from": function () {},
+      "fromNow": function () {},
+      "to": function () {},
+      "toNow": function () {},
+      "get": function () {},
+      "invalidAt": function () {},
+      "isAfter": function () {},
+      "isBefore": function () {},
+      "isBetween": function () {},
+      "isSame": function () {},
+      "isSameOrAfter": function () {},
+      "isSameOrBefore": function () {},
+      "isValid": function () {},
+      "lang": function () {},
+      "locale": function () {},
+      "localeData": function () {},
+      "max": function () {},
+      "min": function () {},
+      "parsingFlags": function () {},
+      "set": function () {},
+      "startOf": function () {},
+      "subtract": function () {},
+      "toArray": function () {},
+      "toObject": function () {},
+      "toDate": function () {},
+      "toISOString": function () {},
+      "toJSON": function () {},
+      "toString": function () {},
+      "unix": function () {},
+      "valueOf": function () {},
+      "creationData": function () {},
+      "year": function () {},
+      "isLeapYear": function () {},
+      "weekYear": function () {},
+      "isoWeekYear": function () {},
+      "quarters": function () {},
+      "quarter": function () {},
+      "month": function () {},
+      "daysInMonth": function () {},
+      "weeks": function () {},
+      "week": function () {},
+      "isoWeeks": function () {},
+      "isoWeek": function () {},
+      "weeksInYear": function () {},
+      "isoWeeksInYear": function () {},
+      "date": function () {},
+      "days": function () {},
+      "day": function () {},
+      "weekday": function () {},
+      "isoWeekday": function () {},
+      "dayOfYear": function () {},
+      "hours": function () {},
+      "hour": function () {},
+      "minutes": function () {},
+      "minute": function () {},
+      "seconds": function () {},
+      "second": function () {},
+      "milliseconds": function () {},
+      "millisecond": function () {},
+      "utcOffset": function () {},
+      "utc": function () {},
+      "local": function () {},
+      "parseZone": function () {},
+      "hasAlignedHourOffset": function () {},
+      "isDST": function () {},
+      "isLocal": function () {},
+      "isUtcOffset": function () {},
+      "isUtc": function () {},
+      "isUTC": function () {},
+      "zoneAbbr": function () {},
+      "zoneName": function () {},
+      "dates": function () {},
+      "months": function () {},
+      "years": function () {},
+      "zone": function () {},
+      "isDSTShifted": function () {}
+    },
     "min": function () {},
     "max": function () {},
     "now": function () {},
@@ -146,7 +229,39 @@ var vis = {
     "locale": function () {},
     "invalid": function () {},
     "duration": {
-      "fn": {}
+      "fn": {
+        "abs": function () {},
+        "add": function () {},
+        "subtract": function () {},
+        "as": function () {},
+        "asMilliseconds": function () {},
+        "asSeconds": function () {},
+        "asMinutes": function () {},
+        "asHours": function () {},
+        "asDays": function () {},
+        "asWeeks": function () {},
+        "asMonths": function () {},
+        "asYears": function () {},
+        "valueOf": function () {},
+        "_bubble": function () {},
+        "get": function () {},
+        "milliseconds": function () {},
+        "seconds": function () {},
+        "minutes": function () {},
+        "hours": function () {},
+        "days": function () {},
+        "weeks": function () {},
+        "months": function () {},
+        "years": function () {},
+        "humanize": function () {},
+        "toISOString": function () {},
+        "toString": function () {},
+        "toJSON": function () {},
+        "locale": function () {},
+        "localeData": function () {},
+        "toIsoString": function () {},
+        "lang": function () {}
+      }
     },
     "isMoment": function () {},
     "weekdays": function () {},
@@ -160,7 +275,9 @@ var vis = {
     "locales": function () {},
     "weekdaysShort": function () {},
     "normalizeUnits": function () {},
-    "relativeTimeThreshold": function () {}
+    "relativeTimeRounding": function () {},
+    "relativeTimeThreshold": function () {},
+    "calendarFormat": function () {}
   },
   "Hammer": {
     "VERSION": {},
@@ -239,6 +356,7 @@ var vis = {
       "toScreen": function () {},
       "toTime": function () {},
       "getHiddenDurationBetween": function () {},
+      "getHiddenDurationBeforeStart": function () {},
       "correctTimeForHidden": function () {},
       "getHiddenDurationBefore": function () {},
       "getAccumulatedHiddenDuration": function () {},
@@ -360,6 +478,9 @@ var vis = {
               "scaleFactor": {
                 "number": {}
               },
+              "type": {
+                "string": {}
+              },
               "__type__": {
                 "object": {},
                 "boolean": {}
@@ -372,6 +493,9 @@ var vis = {
               "scaleFactor": {
                 "number": {}
               },
+              "type": {
+                "string": {}
+              },
               "__type__": {
                 "object": {},
                 "boolean": {}
@@ -383,6 +507,9 @@ var vis = {
               },
               "scaleFactor": {
                 "number": {}
+              },
+              "type": {
+                "string": {}
               },
               "__type__": {
                 "object": {},
@@ -1657,15 +1784,18 @@ var vis = {
           "arrows": {
             "to": {
               "enabled": {},
-              "scaleFactor": {}
+              "scaleFactor": {},
+              "type": {}
             },
             "middle": {
               "enabled": {},
-              "scaleFactor": {}
+              "scaleFactor": {},
+              "type": {}
             },
             "from": {
               "enabled": {},
-              "scaleFactor": {}
+              "scaleFactor": {},
+              "type": {}
             }
           },
           "arrowStrikethrough": {},
@@ -1794,9 +1924,6 @@ var vis = {
           "minVelocity": {},
           "solver": {},
           "timestep": {}
-        },
-        "global": {
-          "locale": {}
         }
       }
     },
@@ -1867,13 +1994,13 @@ vis.Graph3d.prototype = {
   "_convert3Dto2D": function () {},
   "_convertPointToTranslation": function () {},
   "_convertTranslationToScreen": function () {},
-  "_setBackgroundColor": function () {},
-  "_getStyleNumber": function () {},
-  "_determineColumnIndexes": function () {},
+  "_calcTranslations": function () {},
   "getNumberOfRows": function () {},
   "getNumberOfColumns": function () {},
   "getDistinctValues": function () {},
   "getColumnRange": function () {},
+  "_checkValueField": function () {},
+  "_setRangeDefaults": function () {},
   "_dataInitialize": function () {},
   "_getDataPoints": function () {},
   "create": function () {},
@@ -1882,24 +2009,47 @@ vis.Graph3d.prototype = {
   "animationStart": function () {},
   "animationStop": function () {},
   "_resizeCenter": function () {},
-  "setCameraPosition": function () {},
   "getCameraPosition": function () {},
   "_readData": function () {},
   "setData": function () {},
   "setOptions": function () {},
+  "setPointDrawingMethod": function () {},
   "redraw": function () {},
+  "_getContext": function () {},
   "_redrawClear": function () {},
+  "_dotSize": function () {},
+  "_getLegendWidth": function () {},
   "_redrawLegend": function () {},
   "_redrawFilter": function () {},
   "_redrawSlider": function () {},
   "_redrawInfo": function () {},
+  "_line": function () {},
+  "drawAxisLabelX": function () {},
+  "drawAxisLabelY": function () {},
+  "drawAxisLabelZ": function () {},
+  "_line3d": function () {},
   "_redrawAxis": function () {},
   "_hsv2rgb": function () {},
-  "_redrawDataGrid": function () {},
   "_getStrokeWidth": function () {},
-  "_redrawDataDot": function () {},
-  "_redrawDataBar": function () {},
-  "_redrawDataLine": function () {},
+  "_redrawBar": function () {},
+  "_polygon": function () {},
+  "_drawCircle": function () {},
+  "_getColorsRegular": function () {},
+  "_getColorsColor": function () {},
+  "_getColorsSize": function () {},
+  "_calcRadius": function () {},
+  "_redrawBarGraphPoint": function () {},
+  "_redrawBarColorGraphPoint": function () {},
+  "_redrawBarSizeGraphPoint": function () {},
+  "_redrawDotGraphPoint": function () {},
+  "_redrawDotLineGraphPoint": function () {},
+  "_redrawDotColorGraphPoint": function () {},
+  "_redrawDotSizeGraphPoint": function () {},
+  "_redrawSurfaceGraphPoint": function () {},
+  "_drawGridLine": function () {},
+  "_redrawGridGraphPoint": function () {},
+  "_redrawLineGraphPoint": function () {},
+  "_redrawDataGraph": function () {},
   "_onMouseDown": function () {},
   "_onMouseMove": function () {},
   "_onMouseUp": function () {},
@@ -1911,7 +2061,8 @@ vis.Graph3d.prototype = {
   "_insideTriangle": function () {},
   "_dataPointFromXY": function () {},
   "_showTooltip": function () {},
-  "_hideTooltip": function () {}
+  "_hideTooltip": function () {},
+  "setCameraPosition": function () {}
 };
 vis.graph3d.Camera.prototype = {
   "setArmLocation": function () {},
@@ -1963,6 +2114,7 @@ vis.graph3d.Slider.prototype = {
   "_onMouseUp": function () {}
 };
 vis.graph3d.StepNumber.prototype = {
+  "isNumeric": function () {},
   "setRange": function () {},
   "setStep": function () {},
   "getCurrent": function () {},
@@ -2043,7 +2195,6 @@ vis.moment.prototype = {
   "parseZone": function () {},
   "hasAlignedHourOffset": function () {},
   "isDST": function () {},
-  "isDSTShifted": function () {},
   "isLocal": function () {},
   "isUtcOffset": function () {},
   "isUtc": function () {},
@@ -2053,7 +2204,8 @@ vis.moment.prototype = {
   "dates": function () {},
   "months": function () {},
   "years": function () {},
-  "zone": function () {}
+  "zone": function () {},
+  "isDSTShifted": function () {}
 };
 vis.Hammer.Input.prototype = {
   "handler": function () {},
@@ -2070,28 +2222,37 @@ vis.Hammer.TouchAction.prototype = {
 vis.Hammer.TouchInput.prototype = {
   "constructor": function () {},
   "_super": function () {},
-  "handler": function () {}
+  "handler": function () {},
+  "init": function () {},
+  "destroy": function () {}
 };
 vis.Hammer.MouseInput.prototype = {
   "constructor": function () {},
   "_super": function () {},
-  "handler": function () {}
+  "handler": function () {},
+  "init": function () {},
+  "destroy": function () {}
 };
 vis.Hammer.PointerEventInput.prototype = {
   "constructor": function () {},
   "_super": function () {},
-  "handler": function () {}
+  "handler": function () {},
+  "init": function () {},
+  "destroy": function () {}
 };
 vis.Hammer.TouchMouseInput.prototype = {
   "constructor": function () {},
   "_super": function () {},
   "handler": function () {},
-  "destroy": function () {}
+  "destroy": function () {},
+  "init": function () {}
 };
 vis.Hammer.SingleTouchInput.prototype = {
   "constructor": function () {},
   "_super": function () {},
-  "handler": function () {}
+  "handler": function () {},
+  "init": function () {},
+  "destroy": function () {}
 };
 vis.Hammer.Recognizer.prototype = {
   "defaults": function () {},
@@ -2115,7 +2276,20 @@ vis.Hammer.AttrRecognizer.prototype = {
   "_super": function () {},
   "defaults": function () {},
   "attrTest": function () {},
-  "process": function () {}
+  "process": function () {},
+  "set": function () {},
+  "recognizeWith": function () {},
+  "dropRecognizeWith": function () {},
+  "requireFailure": function () {},
+  "dropRequireFailure": function () {},
+  "hasRequireFailures": function () {},
+  "canRecognizeWith": function () {},
+  "emit": function () {},
+  "tryEmit": function () {},
+  "canEmit": function () {},
+  "recognize": function () {},
+  "getTouchAction": function () {},
+  "reset": function () {}
 };
 vis.Hammer.Tap.prototype = {
   "constructor": function () {},
@@ -2125,7 +2299,17 @@ vis.Hammer.Tap.prototype = {
   "process": function () {},
   "failTimeout": function () {},
   "reset": function () {},
-  "emit": function () {}
+  "emit": function () {},
+  "set": function () {},
+  "recognizeWith": function () {},
+  "dropRecognizeWith": function () {},
+  "requireFailure": function () {},
+  "dropRequireFailure": function () {},
+  "hasRequireFailures": function () {},
+  "canRecognizeWith": function () {},
+  "tryEmit": function () {},
+  "canEmit": function () {},
+  "recognize": function () {}
 };
 vis.Hammer.Pan.prototype = {
   "constructor": function () {},
@@ -2134,7 +2318,19 @@ vis.Hammer.Pan.prototype = {
   "getTouchAction": function () {},
   "directionTest": function () {},
   "attrTest": function () {},
-  "emit": function () {}
+  "emit": function () {},
+  "process": function () {},
+  "set": function () {},
+  "recognizeWith": function () {},
+  "dropRecognizeWith": function () {},
+  "requireFailure": function () {},
+  "dropRequireFailure": function () {},
+  "hasRequireFailures": function () {},
+  "canRecognizeWith": function () {},
+  "tryEmit": function () {},
+  "canEmit": function () {},
+  "recognize": function () {},
+  "reset": function () {}
 };
 vis.Hammer.Swipe.prototype = {
   "constructor": function () {},
@@ -2142,7 +2338,19 @@ vis.Hammer.Swipe.prototype = {
   "defaults": function () {},
   "getTouchAction": function () {},
   "attrTest": function () {},
-  "emit": function () {}
+  "emit": function () {},
+  "process": function () {},
+  "set": function () {},
+  "recognizeWith": function () {},
+  "dropRecognizeWith": function () {},
+  "requireFailure": function () {},
+  "dropRequireFailure": function () {},
+  "hasRequireFailures": function () {},
+  "canRecognizeWith": function () {},
+  "tryEmit": function () {},
+  "canEmit": function () {},
+  "recognize": function () {},
+  "reset": function () {}
 };
 vis.Hammer.Pinch.prototype = {
   "constructor": function () {},
@@ -2150,14 +2358,39 @@ vis.Hammer.Pinch.prototype = {
   "defaults": function () {},
   "getTouchAction": function () {},
   "attrTest": function () {},
-  "emit": function () {}
+  "emit": function () {},
+  "process": function () {},
+  "set": function () {},
+  "recognizeWith": function () {},
+  "dropRecognizeWith": function () {},
+  "requireFailure": function () {},
+  "dropRequireFailure": function () {},
+  "hasRequireFailures": function () {},
+  "canRecognizeWith": function () {},
+  "tryEmit": function () {},
+  "canEmit": function () {},
+  "recognize": function () {},
+  "reset": function () {}
 };
 vis.Hammer.Rotate.prototype = {
   "constructor": function () {},
   "_super": function () {},
   "defaults": function () {},
   "getTouchAction": function () {},
-  "attrTest": function () {}
+  "attrTest": function () {},
+  "process": function () {},
+  "set": function () {},
+  "recognizeWith": function () {},
+  "dropRecognizeWith": function () {},
+  "requireFailure": function () {},
+  "dropRequireFailure": function () {},
+  "hasRequireFailures": function () {},
+  "canRecognizeWith": function () {},
+  "emit": function () {},
+  "tryEmit": function () {},
+  "canEmit": function () {},
+  "recognize": function () {},
+  "reset": function () {}
 };
 vis.Hammer.Press.prototype = {
   "constructor": function () {},
@@ -2166,7 +2399,17 @@ vis.Hammer.Press.prototype = {
   "getTouchAction": function () {},
   "process": function () {},
   "reset": function () {},
-  "emit": function () {}
+  "emit": function () {},
+  "set": function () {},
+  "recognizeWith": function () {},
+  "dropRecognizeWith": function () {},
+  "requireFailure": function () {},
+  "dropRequireFailure": function () {},
+  "hasRequireFailures": function () {},
+  "canRecognizeWith": function () {},
+  "tryEmit": function () {},
+  "canEmit": function () {},
+  "recognize": function () {}
 };
 vis.Timeline.prototype = {
   "_createConfigurator": function () {},
@@ -2181,7 +2424,48 @@ vis.Timeline.prototype = {
   "fit": function () {},
   "getItemRange": function () {},
   "getDataRange": function () {},
-  "getEventProperties": function () {}
+  "getEventProperties": function () {},
+  "addEventListener": function () {},
+  "on": function () {},
+  "once": function () {},
+  "removeEventListener": function () {},
+  "removeAllListeners": function () {},
+  "removeListener": function () {},
+  "off": function () {},
+  "emit": function () {},
+  "listeners": function () {},
+  "hasListeners": function () {},
+  "_create": function () {},
+  "isActive": function () {},
+  "destroy": function () {},
+  "setCustomTime": function () {},
+  "getCustomTime": function () {},
+  "setCustomTimeTitle": function () {},
+  "addCustomTime": function () {},
+  "removeCustomTime": function () {},
+  "getVisibleItems": function () {},
+  "setWindow": function () {},
+  "moveTo": function () {},
+  "getWindow": function () {},
+  "zoomIn": function () {},
+  "zoomOut": function () {},
+  "_redraw": function () {},
+  "repaint": function () {},
+  "setCurrentTime": function () {},
+  "getCurrentTime": function () {},
+  "_toTime": function () {},
+  "_toGlobalTime": function () {},
+  "_toScreen": function () {},
+  "_toGlobalScreen": function () {},
+  "_initAutoResize": function () {},
+  "_startAutoResize": function () {},
+  "_stopAutoResize": function () {},
+  "_onTouch": function () {},
+  "_onPinch": function () {},
+  "_onDrag": function () {},
+  "_setScrollTop": function () {},
+  "_updateScrollTop": function () {},
+  "_getScrollTop": function () {}
 };
 vis.Graph2d.prototype = {
   "setOptions": function () {},
@@ -2191,7 +2475,50 @@ vis.Graph2d.prototype = {
   "isGroupVisible": function () {},
   "getDataRange": function () {},
   "getEventProperties": function () {},
-  "_createConfigurator": function () {}
+  "_createConfigurator": function () {},
+  "addEventListener": function () {},
+  "on": function () {},
+  "once": function () {},
+  "removeEventListener": function () {},
+  "removeAllListeners": function () {},
+  "removeListener": function () {},
+  "off": function () {},
+  "emit": function () {},
+  "listeners": function () {},
+  "hasListeners": function () {},
+  "_create": function () {},
+  "isActive": function () {},
+  "destroy": function () {},
+  "setCustomTime": function () {},
+  "getCustomTime": function () {},
+  "setCustomTimeTitle": function () {},
+  "addCustomTime": function () {},
+  "removeCustomTime": function () {},
+  "getVisibleItems": function () {},
+  "fit": function () {},
+  "setWindow": function () {},
+  "moveTo": function () {},
+  "getWindow": function () {},
+  "zoomIn": function () {},
+  "zoomOut": function () {},
+  "redraw": function () {},
+  "_redraw": function () {},
+  "repaint": function () {},
+  "setCurrentTime": function () {},
+  "getCurrentTime": function () {},
+  "_toTime": function () {},
+  "_toGlobalTime": function () {},
+  "_toScreen": function () {},
+  "_toGlobalScreen": function () {},
+  "_initAutoResize": function () {},
+  "_startAutoResize": function () {},
+  "_stopAutoResize": function () {},
+  "_onTouch": function () {},
+  "_onPinch": function () {},
+  "_onDrag": function () {},
+  "_setScrollTop": function () {},
+  "_updateScrollTop": function () {},
+  "_getScrollTop": function () {}
 };
 vis.timeline.Core.prototype = {
   "addEventListener": function () {},
@@ -2220,6 +2547,8 @@ vis.timeline.Core.prototype = {
   "setWindow": function () {},
   "moveTo": function () {},
   "getWindow": function () {},
+  "zoomIn": function () {},
+  "zoomOut": function () {},
   "redraw": function () {},
   "_redraw": function () {},
   "repaint": function () {},
@@ -2260,7 +2589,10 @@ vis.timeline.Range.prototype = {
   "getPointer": function () {},
   "zoom": function () {},
   "move": function () {},
-  "moveTo": function () {}
+  "moveTo": function () {},
+  "redraw": function () {},
+  "destroy": function () {},
+  "_isResized": function () {}
 };
 vis.timeline.TimeStep.prototype = {
   "setMoment": function () {},
@@ -2292,13 +2624,15 @@ vis.timeline.components.items.Item.prototype = {
   "repositionX": function () {},
   "repositionY": function () {},
   "_repaintDeleteButton": function () {},
+  "_repaintOnItemUpdateTimeTooltip": function () {},
   "_updateContents": function () {},
   "_updateTitle": function () {},
   "_updateDataAttributes": function () {},
   "_updateStyle": function () {},
   "_contentToString": function () {},
   "getWidthLeft": function () {},
-  "getWidthRight": function () {}
+  "getWidthRight": function () {},
+  "_repaintDragCenter": function () {}
 };
 vis.timeline.components.items.BackgroundItem.prototype = {
   "id": function () {},
@@ -2323,7 +2657,21 @@ vis.timeline.components.items.BackgroundItem.prototype = {
   "show": function () {},
   "hide": function () {},
   "repositionX": function () {},
-  "repositionY": function () {}
+  "repositionY": function () {},
+  "select": function () {},
+  "unselect": function () {},
+  "setData": function () {},
+  "setParent": function () {},
+  "_repaintDeleteButton": function () {},
+  "_repaintOnItemUpdateTimeTooltip": function () {},
+  "_updateContents": function () {},
+  "_updateTitle": function () {},
+  "_updateDataAttributes": function () {},
+  "_updateStyle": function () {},
+  "_contentToString": function () {},
+  "getWidthLeft": function () {},
+  "getWidthRight": function () {},
+  "_repaintDragCenter": function () {}
 };
 vis.timeline.components.items.BoxItem.prototype = {
   "id": function () {},
@@ -2348,7 +2696,20 @@ vis.timeline.components.items.BoxItem.prototype = {
   "repositionX": function () {},
   "repositionY": function () {},
   "getWidthLeft": function () {},
-  "getWidthRight": function () {}
+  "getWidthRight": function () {},
+  "stack": function () {},
+  "select": function () {},
+  "unselect": function () {},
+  "setData": function () {},
+  "setParent": function () {},
+  "_repaintDeleteButton": function () {},
+  "_repaintOnItemUpdateTimeTooltip": function () {},
+  "_updateContents": function () {},
+  "_updateTitle": function () {},
+  "_updateDataAttributes": function () {},
+  "_updateStyle": function () {},
+  "_contentToString": function () {},
+  "_repaintDragCenter": function () {}
 };
 vis.timeline.components.items.PointItem.prototype = {
   "id": function () {},
@@ -2373,7 +2734,20 @@ vis.timeline.components.items.PointItem.prototype = {
   "repositionX": function () {},
   "repositionY": function () {},
   "getWidthLeft": function () {},
-  "getWidthRight": function () {}
+  "getWidthRight": function () {},
+  "stack": function () {},
+  "select": function () {},
+  "unselect": function () {},
+  "setData": function () {},
+  "setParent": function () {},
+  "_repaintDeleteButton": function () {},
+  "_repaintOnItemUpdateTimeTooltip": function () {},
+  "_updateContents": function () {},
+  "_updateTitle": function () {},
+  "_updateDataAttributes": function () {},
+  "_updateStyle": function () {},
+  "_contentToString": function () {},
+  "_repaintDragCenter": function () {}
 };
 vis.timeline.components.items.RangeItem.prototype = {
   "id": function () {},
@@ -2399,11 +2773,43 @@ vis.timeline.components.items.RangeItem.prototype = {
   "repositionX": function () {},
   "repositionY": function () {},
   "_repaintDragLeft": function () {},
-  "_repaintDragRight": function () {}
+  "_repaintDragRight": function () {},
+  "stack": function () {},
+  "select": function () {},
+  "unselect": function () {},
+  "setData": function () {},
+  "setParent": function () {},
+  "_repaintDeleteButton": function () {},
+  "_repaintOnItemUpdateTimeTooltip": function () {},
+  "_updateContents": function () {},
+  "_updateTitle": function () {},
+  "_updateDataAttributes": function () {},
+  "_updateStyle": function () {},
+  "_contentToString": function () {},
+  "getWidthLeft": function () {},
+  "getWidthRight": function () {},
+  "_repaintDragCenter": function () {}
 };
 vis.timeline.components.BackgroundGroup.prototype = {
   "redraw": function () {},
-  "show": function () {}
+  "show": function () {},
+  "_create": function () {},
+  "setData": function () {},
+  "getLabelWidth": function () {},
+  "_calculateSubGroupHeights": function () {},
+  "_isGroupVisible": function () {},
+  "_calculateHeight": function () {},
+  "hide": function () {},
+  "add": function () {},
+  "orderSubgroups": function () {},
+  "resetSubgroups": function () {},
+  "remove": function () {},
+  "removeFromDataSet": function () {},
+  "order": function () {},
+  "_updateVisibleItems": function () {},
+  "_traceVisible": function () {},
+  "_checkIfVisible": function () {},
+  "_checkIfVisibleWithReference": function () {}
 };
 vis.timeline.components.Component.prototype = {
   "setOptions": function () {},
@@ -2421,7 +2827,8 @@ vis.timeline.components.CurrentTime.prototype = {
   "start": function () {},
   "stop": function () {},
   "setCurrentTime": function () {},
-  "getCurrentTime": function () {}
+  "getCurrentTime": function () {},
+  "_isResized": function () {}
 };
 vis.timeline.components.CustomTime.prototype = {
   "options": function () {},
@@ -2436,7 +2843,8 @@ vis.timeline.components.CustomTime.prototype = {
   "setCustomTitle": function () {},
   "_onDragStart": function () {},
   "_onDrag": function () {},
-  "_onDragEnd": function () {}
+  "_onDragEnd": function () {},
+  "_isResized": function () {}
 };
 vis.timeline.components.DataAxis.prototype = {
   "options": function () {},
@@ -2458,7 +2866,9 @@ vis.timeline.components.DataAxis.prototype = {
   "_redrawLabel": function () {},
   "_redrawLine": function () {},
   "_redrawTitle": function () {},
-  "_calculateCharSize": function () {}
+  "_calculateCharSize": function () {},
+  "destroy": function () {},
+  "_isResized": function () {}
 };
 vis.timeline.components.DataScale.prototype = {
   "setCharHeight": function () {},
@@ -2488,6 +2898,7 @@ vis.timeline.components.Group.prototype = {
   "getLabelWidth": function () {},
   "redraw": function () {},
   "_calculateSubGroupHeights": function () {},
+  "_isGroupVisible": function () {},
   "_calculateHeight": function () {},
   "show": function () {},
   "hide": function () {},
@@ -2549,11 +2960,14 @@ vis.timeline.components.ItemSet.prototype = {
   "_onGroupDrag": function () {},
   "_onGroupDragEnd": function () {},
   "_onSelectItem": function () {},
+  "_onMouseOver": function () {},
+  "_onMouseOut": function () {},
   "_onAddItem": function () {},
   "_onMultiSelectItem": function () {},
   "itemFromTarget": function () {},
   "groupFromTarget": function () {},
-  "_cloneItemData": function () {}
+  "_cloneItemData": function () {},
+  "_isResized": function () {}
 };
 vis.timeline.components.ItemSet.types.background.prototype = {
   "id": function () {},
@@ -2578,7 +2992,21 @@ vis.timeline.components.ItemSet.types.background.prototype = {
   "show": function () {},
   "hide": function () {},
   "repositionX": function () {},
-  "repositionY": function () {}
+  "repositionY": function () {},
+  "select": function () {},
+  "unselect": function () {},
+  "setData": function () {},
+  "setParent": function () {},
+  "_repaintDeleteButton": function () {},
+  "_repaintOnItemUpdateTimeTooltip": function () {},
+  "_updateContents": function () {},
+  "_updateTitle": function () {},
+  "_updateDataAttributes": function () {},
+  "_updateStyle": function () {},
+  "_contentToString": function () {},
+  "getWidthLeft": function () {},
+  "getWidthRight": function () {},
+  "_repaintDragCenter": function () {}
 };
 vis.timeline.components.ItemSet.types.box.prototype = {
   "id": function () {},
@@ -2603,7 +3031,20 @@ vis.timeline.components.ItemSet.types.box.prototype = {
   "repositionX": function () {},
   "repositionY": function () {},
   "getWidthLeft": function () {},
-  "getWidthRight": function () {}
+  "getWidthRight": function () {},
+  "stack": function () {},
+  "select": function () {},
+  "unselect": function () {},
+  "setData": function () {},
+  "setParent": function () {},
+  "_repaintDeleteButton": function () {},
+  "_repaintOnItemUpdateTimeTooltip": function () {},
+  "_updateContents": function () {},
+  "_updateTitle": function () {},
+  "_updateDataAttributes": function () {},
+  "_updateStyle": function () {},
+  "_contentToString": function () {},
+  "_repaintDragCenter": function () {}
 };
 vis.timeline.components.ItemSet.types.range.prototype = {
   "id": function () {},
@@ -2629,7 +3070,22 @@ vis.timeline.components.ItemSet.types.range.prototype = {
   "repositionX": function () {},
   "repositionY": function () {},
   "_repaintDragLeft": function () {},
-  "_repaintDragRight": function () {}
+  "_repaintDragRight": function () {},
+  "stack": function () {},
+  "select": function () {},
+  "unselect": function () {},
+  "setData": function () {},
+  "setParent": function () {},
+  "_repaintDeleteButton": function () {},
+  "_repaintOnItemUpdateTimeTooltip": function () {},
+  "_updateContents": function () {},
+  "_updateTitle": function () {},
+  "_updateDataAttributes": function () {},
+  "_updateStyle": function () {},
+  "_contentToString": function () {},
+  "getWidthLeft": function () {},
+  "getWidthRight": function () {},
+  "_repaintDragCenter": function () {}
 };
 vis.timeline.components.ItemSet.types.point.prototype = {
   "id": function () {},
@@ -2654,7 +3110,20 @@ vis.timeline.components.ItemSet.types.point.prototype = {
   "repositionX": function () {},
   "repositionY": function () {},
   "getWidthLeft": function () {},
-  "getWidthRight": function () {}
+  "getWidthRight": function () {},
+  "stack": function () {},
+  "select": function () {},
+  "unselect": function () {},
+  "setData": function () {},
+  "setParent": function () {},
+  "_repaintDeleteButton": function () {},
+  "_repaintOnItemUpdateTimeTooltip": function () {},
+  "_updateContents": function () {},
+  "_updateTitle": function () {},
+  "_updateDataAttributes": function () {},
+  "_updateStyle": function () {},
+  "_contentToString": function () {},
+  "_repaintDragCenter": function () {}
 };
 vis.timeline.components.Legend.prototype = {
   "options": function () {},
@@ -2668,7 +3137,9 @@ vis.timeline.components.Legend.prototype = {
   "show": function () {},
   "setOptions": function () {},
   "redraw": function () {},
-  "drawLegendIcons": function () {}
+  "drawLegendIcons": function () {},
+  "destroy": function () {},
+  "_isResized": function () {}
 };
 vis.timeline.components.LineGraph.prototype = {
   "options": function () {},
@@ -2698,7 +3169,9 @@ vis.timeline.components.LineGraph.prototype = {
   "_updateYAxis": function () {},
   "_toggleAxisVisiblity": function () {},
   "_convertXcoordinates": function () {},
-  "_convertYcoordinates": function () {}
+  "_convertYcoordinates": function () {},
+  "destroy": function () {},
+  "_isResized": function () {}
 };
 vis.timeline.components.TimeAxis.prototype = {
   "options": function () {},
@@ -2712,7 +3185,8 @@ vis.timeline.components.TimeAxis.prototype = {
   "_repaintMajorText": function () {},
   "_repaintMinorLine": function () {},
   "_repaintMajorLine": function () {},
-  "_calculateCharSize": function () {}
+  "_calculateCharSize": function () {},
+  "_isResized": function () {}
 };
 vis.Network.prototype = {
   "addEventListener": function () {},
@@ -2779,3 +3253,6 @@ vis.Network.prototype = {
   "releaseNode": function () {},
   "getOptionsFromConfigurator": function () {}
 };
+/**********************************************************************
+ * End Generated Extern for vis
+/**********************************************************************/

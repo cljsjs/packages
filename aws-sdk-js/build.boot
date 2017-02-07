@@ -2,26 +2,18 @@
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
 
-(require '[boot.task-helpers]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
-
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "2.2.41")
-(def +version+ (str +lib-version+ "-2"))
+(def +version+ (str +lib-version+ "-4"))
 
 (task-options!
-  push {:ensure-clean false}
   pom  {:project     'cljsjs/aws-sdk-js
         :version     +version+
         :description "AWS Browser SDK"
-        :url         "https://github.com/aws/aws-sdk-js/blob/master/dist/aws-sdk.js"
+        :url         "https://github.com/aws/aws-sdk-js"
         :license     {"MIT" "https://opensource.org/licenses/MIT"}
         :scm         {:url "https://github.com/cljsjs/packages"}})
-
-(require '[boot.core :as c]
-         '[boot.tmpdir :as tmpd]
-         '[clojure.java.io :as io]
-         '[clojure.string :as string])
 
 (deftask package []
   (comp

@@ -37039,7 +37039,6 @@ AWS.S3.prototype = {
   "abortMultipartUpload": function() {},
   "completeMultipartUpload": function() {},
   "copyObject": function() {},
-  "createBucket": function() {},
   "createMultipartUpload": function() {},
   "deleteBucket": function() {},
   "deleteBucketCors": function() {},
@@ -37068,7 +37067,6 @@ AWS.S3.prototype = {
   "getObject": function() {},
   "getObjectAcl": function() {},
   "getObjectTorrent": function() {},
-  "getSignedUrl": function() {},
   "headBucket": function() {},
   "headObject": function() {},
   "listBuckets": function() {},
@@ -37094,10 +37092,8 @@ AWS.S3.prototype = {
   "putObject": function() {},
   "putObjectAcl": function() {},
   "restoreObject": function() {},
-  "upload": function() {},
   "uploadPart": function() {},
-  "uploadPartCopy": function() {},
-  "waitFor": function() {}
+  "uploadPartCopy": function() {}
 };
 AWS.S3.__super__.prototype = {
   "constructor": function () {},
@@ -37296,7 +37292,24 @@ AWS.SQS.prototype = {
   "throttledError": function () {},
   "endpointFromTemplate": function () {},
   "setEndpoint": function () {},
-  "paginationConfig": function () {}
+  "paginationConfig": function () {},
+  "addPermission": function () {},
+  "changeMessageVisibility": function () {},
+  "changeMessageVisibilityBatch": function () {},
+  "createQueue": function () {},
+  "deleteMessage": function () {},
+  "deleteMessageBatch": function () {},
+  "deleteQueue": function () {},
+  "getQueueAttributes": function () {},
+  "getQueueUrl": function () {},
+  "listQueues": function () {},
+  "listDeadLetterSourceQueues": function () {},
+  "purgeQueue": function () {},
+  "receiveMessage": function () {},
+  "removePermission": function () {},
+  "sendMessage": function () {},
+  "sendMessageBatch": function () {},
+  "setQueueAttributes": function () {}
 };
 AWS.SQS.__super__.prototype = {
   "constructor": function () {},
