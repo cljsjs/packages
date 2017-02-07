@@ -12,6 +12,9 @@ var JSJoda = {
   },
   "DateTimeException": function () {},
   "DateTimeParseException": function () {},
+  "IllegalArgumentException": function () {},
+  "IllegalStateException": function () {},
+  "NullPointerException": function () {},
   "DayOfWeek": {
     "values": function () {},
     "valueOf": function () {},
@@ -1853,6 +1856,12 @@ var JSJoda = {
       "toString": function () {},
       "normalized": function () {}
     }
+  },
+  "ZoneOffsetTransition": {
+    "of": function () {}
+  },
+  "ZoneRules": {
+    "of": function () {}
   },
   "ZoneRulesProvider": {
     "getRules": function () {},
@@ -7349,11 +7358,11 @@ var JSJoda = {
       "rangeRefinedBy": function () {},
       "getFrom": function () {},
       "adjustInto": function () {},
-      "resolve": function () {},
       "isDateBased": function () {},
       "isTimeBased": function () {},
       "_isIso": function () {},
       "getDisplayName": function () {},
+      "resolve": function () {},
       "name": function () {}
     },
     "WEEK_OF_WEEK_BASED_YEAR": {
@@ -7381,11 +7390,11 @@ var JSJoda = {
       "rangeRefinedBy": function () {},
       "getFrom": function () {},
       "adjustInto": function () {},
-      "resolve": function () {},
       "isDateBased": function () {},
       "isTimeBased": function () {},
       "_isIso": function () {},
       "getDisplayName": function () {},
+      "resolve": function () {},
       "name": function () {}
     },
     "WEEK_BASED_YEARS": {
@@ -8092,6 +8101,18 @@ JSJoda.DateTimeParseException.prototype = {
   "name": function () {},
   "constructor": function () {}
 };
+JSJoda.IllegalArgumentException.prototype = {
+  "name": function () {},
+  "constructor": function () {}
+};
+JSJoda.IllegalStateException.prototype = {
+  "name": function () {},
+  "constructor": function () {}
+};
+JSJoda.NullPointerException.prototype = {
+  "name": function () {},
+  "constructor": function () {}
+};
 JSJoda.DayOfWeek.prototype = {
   "ordinal": function () {},
   "name": function () {},
@@ -8626,6 +8647,41 @@ JSJoda.ZoneRegion.prototype = {
   "equals": function () {},
   "hashCode": function () {},
   "toString": function () {}
+};
+JSJoda.ZoneOffsetTransition.prototype = {
+  "instant": function () {},
+  "toEpochSecond": function () {},
+  "dateTimeBefore": function () {},
+  "dateTimeAfter": function () {},
+  "offsetBefore": function () {},
+  "offsetAfter": function () {},
+  "duration": function () {},
+  "durationSeconds": function () {},
+  "isGap": function () {},
+  "isOverlap": function () {},
+  "isValidOffset": function () {},
+  "validOffsets": function () {},
+  "compareTo": function () {},
+  "equals": function () {},
+  "hashCode": function () {},
+  "toString": function () {}
+};
+JSJoda.ZoneRules.prototype = {
+  "isFixedOffset": function () {},
+  "offset": function () {},
+  "offsetOfInstant": function () {},
+  "offsetOfEpochMilli": function () {},
+  "offsetOfLocalDateTime": function () {},
+  "validOffsets": function () {},
+  "transition": function () {},
+  "standardOffset": function () {},
+  "daylightSavings": function () {},
+  "isDaylightSavings": function () {},
+  "isValidOffset": function () {},
+  "nextTransition": function () {},
+  "previousTransition": function () {},
+  "transitions": function () {},
+  "transitionRules": function () {}
 };
 JSJoda.ChronoField.prototype = {
   "name": function () {},
