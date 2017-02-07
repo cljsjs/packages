@@ -24,6 +24,5 @@
     (minify :in  "cljsjs/js-joda/development/js-joda.inc.js"
             :out "cljsjs/js-joda/production/js-joda.min.inc.js")
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.js-joda")
     (pom)
     (jar)))
