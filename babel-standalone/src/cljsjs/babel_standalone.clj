@@ -34,9 +34,9 @@
 
 (defonce ^:private default-engine (delay (create-engine)))
 
-(defmethod closure/js-transforms :cljsjs/babel [ijs opts]
+(defmethod closure/js-transforms :cljsjs.babel-standalone/babel [ijs opts]
   (let [babel-opts (merge {:presets ["react" "es2016"]}
-                          (:cljsjs/babel-opts ijs))]
+                          (:cljsjs.babel-standalone/babel-opts ijs))]
     (assoc ijs :source (process @default-engine (:source ijs) babel-opts))))
 
 ;;
