@@ -8,7 +8,7 @@
 
 If you're looking for a place to start, try downloading the [monkey project](https://github.com/mikebelanger/monkey-project)
 
-### Clojurescript -> Blend4Web Web-player functions
+### ClojureScript -> Blend4Web Web-player functions
 
 [Here's an example of its output](https://mikebelanger.github.io/blend4web_test/target/)
 

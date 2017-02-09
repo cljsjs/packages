@@ -9,7 +9,7 @@
 Statecharts are a control mechanism; they augment or replace traditional controllers in the MVC architecture. The notation was originally devised by Harel. See [Stativus](http://stativ.us/) for more.
 
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
-of the Clojurescript compiler. After adding the above dependency to your project
+of the ClojureScript compiler. After adding the above dependency to your project
 you can require the packaged library like so:
 
 ```clojure
