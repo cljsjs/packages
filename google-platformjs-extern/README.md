@@ -9,7 +9,7 @@
 This package only contains the externs file. You need to provide the read code yourself.
 
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
-of the Clojurescript compiler.
+of the ClojureScript compiler.
 
 Documentation for the platform lib can be found [on this page](https://developers.google.com/+/web/api/javascript)
 
