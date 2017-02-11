@@ -5,8 +5,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.13.7")
-(def +version+ (str +lib-version+ "-2"))
+(def +lib-version+ "0.17.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom {:project     'cljsjs/victory
@@ -19,10 +19,10 @@
 (deftask package []
   (comp
 
-    (download :url "https://cdnjs.cloudflare.com/ajax/libs/victory/0.13.7/victory.js"
-              :checksum "42d199f9641564d90624d6659c994afc")
-    (download :url "https://cdnjs.cloudflare.com/ajax/libs/victory/0.13.7/victory.min.js"
-              :checksum "cde5e0f2dfb02507123dbb0615f77c49")
+    (download :url "https://cdnjs.cloudflare.com/ajax/libs/victory/0.17.0/victory.js"
+              :checksum "881DCF0A61962A75FBE635D36BC68D58")
+    (download :url "https://cdnjs.cloudflare.com/ajax/libs/victory/0.17.0/victory.min.js"
+              :checksum "3AFC1F085AD962748A84B42001F4D19D")
 
     (sift :move {#"^victory\.js"       "cljsjs/victory/development/victory.inc.js"
                  #"^victory\.min.\.js" "cljsjs/victory/production/victory.min.inc.js"})
