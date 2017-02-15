@@ -272,6 +272,209 @@ var Plotly = {
                 "valType": {},
                 "dflt": {}
               },
+              "colorbar": {
+                "thicknessmode": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "thickness": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "lenmode": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "len": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "x": {
+                  "valType": {},
+                  "dflt": {},
+                  "min": {},
+                  "max": {}
+                },
+                "xanchor": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "xpad": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "y": {
+                  "valType": {},
+                  "dflt": {},
+                  "min": {},
+                  "max": {}
+                },
+                "yanchor": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ypad": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "outlinecolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "outlinewidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "bordercolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "borderwidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "bgcolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickmode": {
+                  "valType": {},
+                  "values": {}
+                },
+                "nticks": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tick0": {
+                  "valType": {}
+                },
+                "dtick": {
+                  "valType": {}
+                },
+                "tickvals": {
+                  "valType": {}
+                },
+                "ticktext": {
+                  "valType": {}
+                },
+                "ticks": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ticklen": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tickwidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tickcolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showticklabels": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickfont": {
+                  "family": {
+                    "valType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "size": {
+                    "valType": {},
+                    "min": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "color": {
+                    "valType": {},
+                    "closure_uid_275815739": {}
+                  }
+                },
+                "tickangle": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickformat": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickprefix": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showtickprefix": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ticksuffix": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showticksuffix": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "separatethousands": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "exponentformat": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "showexponent": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "title": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "titlefont": {
+                  "family": {
+                    "valType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "size": {
+                    "valType": {},
+                    "min": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "color": {
+                    "valType": {},
+                    "closure_uid_275815739": {}
+                  }
+                },
+                "titleside": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                }
+              },
               "line": {
                 "width": {
                   "valType": {},
@@ -363,10 +566,127 @@ var Plotly = {
             "t": {
               "valType": {}
             },
-            "_nestedModules": {
-              "error_y": {},
-              "error_x": {},
-              "marker.colorbar": {}
+            "error_y": {
+              "visible": {
+                "valType": {}
+              },
+              "type": {
+                "valType": {},
+                "values": {}
+              },
+              "symmetric": {
+                "valType": {}
+              },
+              "array": {
+                "valType": {}
+              },
+              "arrayminus": {
+                "valType": {}
+              },
+              "value": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "valueminus": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "traceref": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tracerefminus": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "copy_ystyle": {
+                "valType": {}
+              },
+              "copy_zstyle": {
+                "valType": {}
+              },
+              "color": {
+                "valType": {}
+              },
+              "thickness": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "width": {
+                "valType": {},
+                "min": {}
+              },
+              "_deprecated": {
+                "opacity": {
+                  "valType": {}
+                }
+              }
+            },
+            "error_x": {
+              "visible": {
+                "valType": {}
+              },
+              "type": {
+                "valType": {},
+                "values": {}
+              },
+              "symmetric": {
+                "valType": {}
+              },
+              "array": {
+                "valType": {}
+              },
+              "arrayminus": {
+                "valType": {}
+              },
+              "value": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "valueminus": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "traceref": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tracerefminus": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "copy_ystyle": {
+                "valType": {}
+              },
+              "copy_zstyle": {
+                "valType": {}
+              },
+              "color": {
+                "valType": {}
+              },
+              "thickness": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "width": {
+                "valType": {},
+                "min": {}
+              },
+              "_deprecated": {
+                "opacity": {
+                  "valType": {}
+                }
+              }
             }
           },
           "supplyDefaults": function () {},
@@ -403,9 +723,242 @@ var Plotly = {
                 "dflt": {}
               }
             },
+            "layoutAttributes": {
+              "color": {
+                "valType": {},
+                "dflt": {}
+              },
+              "title": {
+                "valType": {}
+              },
+              "titlefont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                }
+              },
+              "type": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "autorange": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "rangemode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "range": {
+                "valType": {},
+                "items": {}
+              },
+              "fixedrange": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickmode": {
+                "valType": {},
+                "values": {}
+              },
+              "nticks": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tick0": {
+                "valType": {}
+              },
+              "dtick": {
+                "valType": {}
+              },
+              "tickvals": {
+                "valType": {}
+              },
+              "ticktext": {
+                "valType": {}
+              },
+              "ticks": {
+                "valType": {},
+                "values": {}
+              },
+              "mirror": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticklen": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticklabels": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickfont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "tickangle": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickprefix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showtickprefix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticksuffix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticksuffix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "showexponent": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "exponentformat": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "separatethousands": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "hoverformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showline": {
+                "valType": {},
+                "dflt": {}
+              },
+              "linecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "linewidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "showgrid": {
+                "valType": {}
+              },
+              "gridcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "gridwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "zeroline": {
+                "valType": {}
+              },
+              "zerolinecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "zerolinewidth": {
+                "valType": {},
+                "dflt": {}
+              },
+              "anchor": {
+                "valType": {},
+                "values": {}
+              },
+              "side": {
+                "valType": {},
+                "values": {}
+              },
+              "overlaying": {
+                "valType": {},
+                "values": {}
+              },
+              "domain": {
+                "valType": {},
+                "items": {},
+                "dflt": {}
+              },
+              "position": {
+                "valType": {},
+                "min": {},
+                "max": {},
+                "dflt": {}
+              },
+              "categoryorder": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "categoryarray": {
+                "valType": {}
+              },
+              "_deprecated": {
+                "autotick": {
+                  "valType": {}
+                }
+              }
+            },
             "transitionAxes": function () {},
             "plot": function () {},
-            "clean": function () {}
+            "clean": function () {},
+            "drawFramework": function () {},
+            "rangePlot": function () {}
           },
           "categories": {},
           "meta": {}
@@ -413,198 +966,6 @@ var Plotly = {
         "categories": {
           "cartesian": {},
           "symbols": {},
-          "markerColorscale": {},
-          "errorBarsOK": {},
-          "showLegend": {}
-        }
-      },
-      "bar": {
-        "_module": {
-          "attributes": {
-            "x": {
-              "valType": {}
-            },
-            "x0": {
-              "valType": {},
-              "dflt": {}
-            },
-            "dx": {
-              "valType": {},
-              "dflt": {}
-            },
-            "y": {
-              "valType": {}
-            },
-            "y0": {
-              "valType": {},
-              "dflt": {}
-            },
-            "dy": {
-              "valType": {},
-              "dflt": {}
-            },
-            "text": {
-              "valType": {},
-              "dflt": {},
-              "arrayOk": {}
-            },
-            "orientation": {
-              "valType": {},
-              "values": {}
-            },
-            "marker": {
-              "showscale": {
-                "valType": {},
-                "dflt": {}
-              },
-              "line": {
-                "width": {
-                  "valType": {},
-                  "min": {},
-                  "arrayOk": {},
-                  "dflt": {}
-                },
-                "color": {
-                  "valType": {},
-                  "arrayOk": {}
-                },
-                "colorscale": {
-                  "valType": {}
-                },
-                "cauto": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "cmax": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "cmin": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "autocolorscale": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "reversescale": {
-                  "valType": {},
-                  "dflt": {}
-                }
-              },
-              "color": {
-                "valType": {},
-                "arrayOk": {}
-              },
-              "colorscale": {
-                "valType": {}
-              },
-              "cauto": {
-                "valType": {},
-                "dflt": {}
-              },
-              "cmax": {
-                "valType": {},
-                "dflt": {}
-              },
-              "cmin": {
-                "valType": {},
-                "dflt": {}
-              },
-              "autocolorscale": {
-                "valType": {},
-                "dflt": {}
-              },
-              "reversescale": {
-                "valType": {},
-                "dflt": {}
-              }
-            },
-            "r": {
-              "valType": {}
-            },
-            "t": {
-              "valType": {}
-            },
-            "_nestedModules": {
-              "error_y": {},
-              "error_x": {},
-              "marker.colorbar": {}
-            },
-            "_deprecated": {
-              "bardir": {
-                "valType": {},
-                "values": {}
-              }
-            }
-          },
-          "layoutAttributes": {
-            "barmode": {
-              "valType": {},
-              "values": {},
-              "dflt": {}
-            },
-            "barnorm": {
-              "valType": {},
-              "values": {},
-              "dflt": {}
-            },
-            "bargap": {
-              "valType": {},
-              "min": {},
-              "max": {}
-            },
-            "bargroupgap": {
-              "valType": {},
-              "min": {},
-              "max": {},
-              "dflt": {}
-            }
-          },
-          "supplyDefaults": function () {},
-          "supplyLayoutDefaults": function () {},
-          "calc": function () {},
-          "setPositions": function () {},
-          "colorbar": function () {},
-          "arraysToCalcdata": function () {},
-          "plot": function () {},
-          "style": function () {},
-          "hoverPoints": function () {},
-          "moduleType": {},
-          "name": {},
-          "basePlotModule": {
-            "name": {},
-            "attr": {},
-            "idRoot": {},
-            "idRegex": {
-              "x": {},
-              "y": {}
-            },
-            "attrRegex": {
-              "x": {},
-              "y": {}
-            },
-            "attributes": {
-              "xaxis": {
-                "valType": {},
-                "dflt": {}
-              },
-              "yaxis": {
-                "valType": {},
-                "dflt": {}
-              }
-            },
-            "transitionAxes": function () {},
-            "plot": function () {},
-            "clean": function () {}
-          },
-          "categories": {},
-          "meta": {}
-        },
-        "categories": {
-          "cartesian": {},
-          "bar": {},
-          "oriented": {},
           "markerColorscale": {},
           "errorBarsOK": {},
           "showLegend": {}
@@ -625,6 +986,8 @@ var Plotly = {
             "y0": {
               "valType": {}
             },
+            "xcalendar": {},
+            "ycalendar": {},
             "whiskerwidth": {
               "valType": {},
               "min": {},
@@ -769,9 +1132,242 @@ var Plotly = {
                 "dflt": {}
               }
             },
+            "layoutAttributes": {
+              "color": {
+                "valType": {},
+                "dflt": {}
+              },
+              "title": {
+                "valType": {}
+              },
+              "titlefont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                }
+              },
+              "type": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "autorange": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "rangemode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "range": {
+                "valType": {},
+                "items": {}
+              },
+              "fixedrange": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickmode": {
+                "valType": {},
+                "values": {}
+              },
+              "nticks": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tick0": {
+                "valType": {}
+              },
+              "dtick": {
+                "valType": {}
+              },
+              "tickvals": {
+                "valType": {}
+              },
+              "ticktext": {
+                "valType": {}
+              },
+              "ticks": {
+                "valType": {},
+                "values": {}
+              },
+              "mirror": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticklen": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticklabels": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickfont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "tickangle": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickprefix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showtickprefix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticksuffix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticksuffix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "showexponent": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "exponentformat": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "separatethousands": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "hoverformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showline": {
+                "valType": {},
+                "dflt": {}
+              },
+              "linecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "linewidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "showgrid": {
+                "valType": {}
+              },
+              "gridcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "gridwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "zeroline": {
+                "valType": {}
+              },
+              "zerolinecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "zerolinewidth": {
+                "valType": {},
+                "dflt": {}
+              },
+              "anchor": {
+                "valType": {},
+                "values": {}
+              },
+              "side": {
+                "valType": {},
+                "values": {}
+              },
+              "overlaying": {
+                "valType": {},
+                "values": {}
+              },
+              "domain": {
+                "valType": {},
+                "items": {},
+                "dflt": {}
+              },
+              "position": {
+                "valType": {},
+                "min": {},
+                "max": {},
+                "dflt": {}
+              },
+              "categoryorder": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "categoryarray": {
+                "valType": {}
+              },
+              "_deprecated": {
+                "autotick": {
+                  "valType": {}
+                }
+              }
+            },
             "transitionAxes": function () {},
             "plot": function () {},
-            "clean": function () {}
+            "clean": function () {},
+            "drawFramework": function () {},
+            "rangePlot": function () {}
           },
           "categories": {},
           "meta": {}
@@ -781,6 +1377,827 @@ var Plotly = {
           "symbols": {},
           "oriented": {},
           "box": {},
+          "showLegend": {}
+        }
+      },
+      "bar": {
+        "_module": {
+          "attributes": {
+            "x": {
+              "valType": {}
+            },
+            "x0": {
+              "valType": {},
+              "dflt": {}
+            },
+            "dx": {
+              "valType": {},
+              "dflt": {}
+            },
+            "y": {
+              "valType": {}
+            },
+            "y0": {
+              "valType": {},
+              "dflt": {}
+            },
+            "dy": {
+              "valType": {},
+              "dflt": {}
+            },
+            "text": {
+              "valType": {},
+              "dflt": {},
+              "arrayOk": {}
+            },
+            "textposition": {
+              "valType": {},
+              "values": {},
+              "dflt": {},
+              "arrayOk": {}
+            },
+            "textfont": {
+              "family": {
+                "valType": {},
+                "noBlank": {},
+                "strict": {},
+                "arrayOk": {}
+              },
+              "size": {
+                "valType": {},
+                "min": {},
+                "arrayOk": {}
+              },
+              "color": {
+                "valType": {},
+                "arrayOk": {}
+              }
+            },
+            "insidetextfont": {
+              "family": {
+                "valType": {},
+                "noBlank": {},
+                "strict": {},
+                "arrayOk": {}
+              },
+              "size": {
+                "valType": {},
+                "min": {},
+                "arrayOk": {}
+              },
+              "color": {
+                "valType": {},
+                "arrayOk": {}
+              }
+            },
+            "outsidetextfont": {
+              "family": {
+                "valType": {},
+                "noBlank": {},
+                "strict": {},
+                "arrayOk": {}
+              },
+              "size": {
+                "valType": {},
+                "min": {},
+                "arrayOk": {}
+              },
+              "color": {
+                "valType": {},
+                "arrayOk": {}
+              }
+            },
+            "orientation": {
+              "valType": {},
+              "values": {}
+            },
+            "base": {
+              "valType": {},
+              "dflt": {},
+              "arrayOk": {}
+            },
+            "offset": {
+              "valType": {},
+              "dflt": {},
+              "arrayOk": {}
+            },
+            "width": {
+              "valType": {},
+              "dflt": {},
+              "min": {},
+              "arrayOk": {}
+            },
+            "marker": {
+              "line": {
+                "width": {
+                  "valType": {},
+                  "min": {},
+                  "arrayOk": {},
+                  "dflt": {}
+                },
+                "color": {
+                  "valType": {},
+                  "arrayOk": {}
+                },
+                "colorscale": {
+                  "valType": {}
+                },
+                "cauto": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "cmax": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "cmin": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "autocolorscale": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "reversescale": {
+                  "valType": {},
+                  "dflt": {}
+                }
+              },
+              "color": {
+                "valType": {},
+                "arrayOk": {}
+              },
+              "colorscale": {
+                "valType": {}
+              },
+              "cauto": {
+                "valType": {},
+                "dflt": {}
+              },
+              "cmax": {
+                "valType": {},
+                "dflt": {}
+              },
+              "cmin": {
+                "valType": {},
+                "dflt": {}
+              },
+              "autocolorscale": {
+                "valType": {},
+                "dflt": {}
+              },
+              "reversescale": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showscale": {
+                "valType": {},
+                "dflt": {}
+              },
+              "colorbar": {
+                "thicknessmode": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "thickness": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "lenmode": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "len": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "x": {
+                  "valType": {},
+                  "dflt": {},
+                  "min": {},
+                  "max": {}
+                },
+                "xanchor": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "xpad": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "y": {
+                  "valType": {},
+                  "dflt": {},
+                  "min": {},
+                  "max": {}
+                },
+                "yanchor": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ypad": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "outlinecolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "outlinewidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "bordercolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "borderwidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "bgcolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickmode": {
+                  "valType": {},
+                  "values": {}
+                },
+                "nticks": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tick0": {
+                  "valType": {}
+                },
+                "dtick": {
+                  "valType": {}
+                },
+                "tickvals": {
+                  "valType": {}
+                },
+                "ticktext": {
+                  "valType": {}
+                },
+                "ticks": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ticklen": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tickwidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tickcolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showticklabels": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickfont": {
+                  "family": {
+                    "valType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "size": {
+                    "valType": {},
+                    "min": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "color": {
+                    "valType": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "closure_uid_275815739": {}
+                },
+                "tickangle": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickformat": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickprefix": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showtickprefix": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ticksuffix": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showticksuffix": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "separatethousands": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "exponentformat": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "showexponent": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "title": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "titlefont": {
+                  "family": {
+                    "valType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "size": {
+                    "valType": {},
+                    "min": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "color": {
+                    "valType": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "closure_uid_275815739": {}
+                },
+                "titleside": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "closure_uid_275815739": {}
+              }
+            },
+            "r": {
+              "valType": {}
+            },
+            "t": {
+              "valType": {}
+            },
+            "error_y": {
+              "visible": {
+                "valType": {}
+              },
+              "type": {
+                "valType": {},
+                "values": {}
+              },
+              "symmetric": {
+                "valType": {}
+              },
+              "array": {
+                "valType": {}
+              },
+              "arrayminus": {
+                "valType": {}
+              },
+              "value": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "valueminus": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "traceref": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tracerefminus": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "copy_ystyle": {
+                "valType": {}
+              },
+              "copy_zstyle": {
+                "valType": {}
+              },
+              "color": {
+                "valType": {}
+              },
+              "thickness": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "width": {
+                "valType": {},
+                "min": {}
+              },
+              "_deprecated": {
+                "opacity": {
+                  "valType": {}
+                }
+              }
+            },
+            "error_x": {
+              "visible": {
+                "valType": {}
+              },
+              "type": {
+                "valType": {},
+                "values": {}
+              },
+              "symmetric": {
+                "valType": {}
+              },
+              "array": {
+                "valType": {}
+              },
+              "arrayminus": {
+                "valType": {}
+              },
+              "value": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "valueminus": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "traceref": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tracerefminus": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "copy_ystyle": {
+                "valType": {}
+              },
+              "copy_zstyle": {
+                "valType": {}
+              },
+              "color": {
+                "valType": {}
+              },
+              "thickness": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "width": {
+                "valType": {},
+                "min": {}
+              },
+              "_deprecated": {
+                "opacity": {
+                  "valType": {}
+                }
+              }
+            },
+            "_deprecated": {
+              "bardir": {
+                "valType": {},
+                "values": {}
+              }
+            }
+          },
+          "layoutAttributes": {
+            "barmode": {
+              "valType": {},
+              "values": {},
+              "dflt": {}
+            },
+            "barnorm": {
+              "valType": {},
+              "values": {},
+              "dflt": {}
+            },
+            "bargap": {
+              "valType": {},
+              "min": {},
+              "max": {}
+            },
+            "bargroupgap": {
+              "valType": {},
+              "min": {},
+              "max": {},
+              "dflt": {}
+            }
+          },
+          "supplyDefaults": function () {},
+          "supplyLayoutDefaults": function () {},
+          "calc": function () {},
+          "setPositions": function () {},
+          "colorbar": function () {},
+          "arraysToCalcdata": function () {},
+          "plot": function () {},
+          "style": function () {},
+          "hoverPoints": function () {},
+          "moduleType": {},
+          "name": {},
+          "basePlotModule": {
+            "name": {},
+            "attr": {},
+            "idRoot": {},
+            "idRegex": {
+              "x": {},
+              "y": {}
+            },
+            "attrRegex": {
+              "x": {},
+              "y": {}
+            },
+            "attributes": {
+              "xaxis": {
+                "valType": {},
+                "dflt": {}
+              },
+              "yaxis": {
+                "valType": {},
+                "dflt": {}
+              }
+            },
+            "layoutAttributes": {
+              "color": {
+                "valType": {},
+                "dflt": {}
+              },
+              "title": {
+                "valType": {}
+              },
+              "titlefont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                }
+              },
+              "type": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "autorange": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "rangemode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "range": {
+                "valType": {},
+                "items": {}
+              },
+              "fixedrange": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickmode": {
+                "valType": {},
+                "values": {}
+              },
+              "nticks": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tick0": {
+                "valType": {}
+              },
+              "dtick": {
+                "valType": {}
+              },
+              "tickvals": {
+                "valType": {}
+              },
+              "ticktext": {
+                "valType": {}
+              },
+              "ticks": {
+                "valType": {},
+                "values": {}
+              },
+              "mirror": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticklen": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticklabels": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickfont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "tickangle": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickprefix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showtickprefix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticksuffix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticksuffix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "showexponent": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "exponentformat": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "separatethousands": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "hoverformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showline": {
+                "valType": {},
+                "dflt": {}
+              },
+              "linecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "linewidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "showgrid": {
+                "valType": {}
+              },
+              "gridcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "gridwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "zeroline": {
+                "valType": {}
+              },
+              "zerolinecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "zerolinewidth": {
+                "valType": {},
+                "dflt": {}
+              },
+              "anchor": {
+                "valType": {},
+                "values": {}
+              },
+              "side": {
+                "valType": {},
+                "values": {}
+              },
+              "overlaying": {
+                "valType": {},
+                "values": {}
+              },
+              "domain": {
+                "valType": {},
+                "items": {},
+                "dflt": {}
+              },
+              "position": {
+                "valType": {},
+                "min": {},
+                "max": {},
+                "dflt": {}
+              },
+              "categoryorder": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "categoryarray": {
+                "valType": {}
+              },
+              "_deprecated": {
+                "autotick": {
+                  "valType": {}
+                }
+              }
+            },
+            "transitionAxes": function () {},
+            "plot": function () {},
+            "clean": function () {},
+            "drawFramework": function () {},
+            "rangePlot": function () {}
+          },
+          "categories": {},
+          "meta": {}
+        },
+        "categories": {
+          "cartesian": {},
+          "bar": {},
+          "oriented": {},
+          "markerColorscale": {},
+          "errorBarsOK": {},
           "showLegend": {}
         }
       },
@@ -846,9 +2263,6 @@ var Plotly = {
               "dflt": {},
               "min": {}
             },
-            "_nestedModules": {
-              "colorbar": {}
-            },
             "zauto": {
               "valType": {},
               "dflt": {}
@@ -875,6 +2289,212 @@ var Plotly = {
             "showscale": {
               "valType": {},
               "dflt": {}
+            },
+            "colorbar": {
+              "thicknessmode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "thickness": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "lenmode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "len": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "x": {
+                "valType": {},
+                "dflt": {},
+                "min": {},
+                "max": {}
+              },
+              "xanchor": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "xpad": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "y": {
+                "valType": {},
+                "dflt": {},
+                "min": {},
+                "max": {}
+              },
+              "yanchor": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ypad": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "outlinecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "outlinewidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "bordercolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "borderwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "bgcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickmode": {
+                "valType": {},
+                "values": {}
+              },
+              "nticks": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tick0": {
+                "valType": {}
+              },
+              "dtick": {
+                "valType": {}
+              },
+              "tickvals": {
+                "valType": {}
+              },
+              "ticktext": {
+                "valType": {}
+              },
+              "ticks": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticklen": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticklabels": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickfont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "tickangle": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickprefix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showtickprefix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticksuffix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticksuffix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "separatethousands": {
+                "valType": {},
+                "dflt": {}
+              },
+              "exponentformat": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "showexponent": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "title": {
+                "valType": {},
+                "dflt": {}
+              },
+              "titlefont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "titleside": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "closure_uid_275815739": {}
             }
           },
           "supplyDefaults": function () {},
@@ -907,9 +2527,242 @@ var Plotly = {
                 "dflt": {}
               }
             },
+            "layoutAttributes": {
+              "color": {
+                "valType": {},
+                "dflt": {}
+              },
+              "title": {
+                "valType": {}
+              },
+              "titlefont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                }
+              },
+              "type": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "autorange": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "rangemode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "range": {
+                "valType": {},
+                "items": {}
+              },
+              "fixedrange": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickmode": {
+                "valType": {},
+                "values": {}
+              },
+              "nticks": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tick0": {
+                "valType": {}
+              },
+              "dtick": {
+                "valType": {}
+              },
+              "tickvals": {
+                "valType": {}
+              },
+              "ticktext": {
+                "valType": {}
+              },
+              "ticks": {
+                "valType": {},
+                "values": {}
+              },
+              "mirror": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticklen": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticklabels": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickfont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "tickangle": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickprefix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showtickprefix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticksuffix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticksuffix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "showexponent": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "exponentformat": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "separatethousands": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "hoverformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showline": {
+                "valType": {},
+                "dflt": {}
+              },
+              "linecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "linewidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "showgrid": {
+                "valType": {}
+              },
+              "gridcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "gridwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "zeroline": {
+                "valType": {}
+              },
+              "zerolinecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "zerolinewidth": {
+                "valType": {},
+                "dflt": {}
+              },
+              "anchor": {
+                "valType": {},
+                "values": {}
+              },
+              "side": {
+                "valType": {},
+                "values": {}
+              },
+              "overlaying": {
+                "valType": {},
+                "values": {}
+              },
+              "domain": {
+                "valType": {},
+                "items": {},
+                "dflt": {}
+              },
+              "position": {
+                "valType": {},
+                "min": {},
+                "max": {},
+                "dflt": {}
+              },
+              "categoryorder": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "categoryarray": {
+                "valType": {}
+              },
+              "_deprecated": {
+                "autotick": {
+                  "valType": {}
+                }
+              }
+            },
             "transitionAxes": function () {},
             "plot": function () {},
-            "clean": function () {}
+            "clean": function () {},
+            "drawFramework": function () {},
+            "rangePlot": function () {}
           },
           "categories": {},
           "meta": {}
@@ -946,6 +2799,22 @@ var Plotly = {
               "valType": {},
               "values": {},
               "dflt": {}
+            },
+            "cumulative": {
+              "enabled": {
+                "valType": {},
+                "dflt": {}
+              },
+              "direction": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "currentbin": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              }
             },
             "autobinx": {
               "valType": {},
@@ -994,10 +2863,6 @@ var Plotly = {
               }
             },
             "marker": {
-              "showscale": {
-                "valType": {},
-                "dflt": {}
-              },
               "line": {
                 "width": {
                   "valType": {},
@@ -1059,12 +2924,340 @@ var Plotly = {
               "reversescale": {
                 "valType": {},
                 "dflt": {}
+              },
+              "showscale": {
+                "valType": {},
+                "dflt": {}
+              },
+              "colorbar": {
+                "thicknessmode": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "thickness": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "lenmode": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "len": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "x": {
+                  "valType": {},
+                  "dflt": {},
+                  "min": {},
+                  "max": {}
+                },
+                "xanchor": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "xpad": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "y": {
+                  "valType": {},
+                  "dflt": {},
+                  "min": {},
+                  "max": {}
+                },
+                "yanchor": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ypad": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "outlinecolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "outlinewidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "bordercolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "borderwidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "bgcolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickmode": {
+                  "valType": {},
+                  "values": {}
+                },
+                "nticks": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tick0": {
+                  "valType": {}
+                },
+                "dtick": {
+                  "valType": {}
+                },
+                "tickvals": {
+                  "valType": {}
+                },
+                "ticktext": {
+                  "valType": {}
+                },
+                "ticks": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ticklen": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tickwidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tickcolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showticklabels": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickfont": {
+                  "family": {
+                    "valType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "size": {
+                    "valType": {},
+                    "min": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "color": {
+                    "valType": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "closure_uid_275815739": {}
+                },
+                "tickangle": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickformat": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickprefix": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showtickprefix": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ticksuffix": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showticksuffix": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "separatethousands": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "exponentformat": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "showexponent": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "title": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "titlefont": {
+                  "family": {
+                    "valType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "size": {
+                    "valType": {},
+                    "min": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "color": {
+                    "valType": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "closure_uid_275815739": {}
+                },
+                "titleside": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "closure_uid_275815739": {}
+            },
+            "error_y": {
+              "visible": {
+                "valType": {}
+              },
+              "type": {
+                "valType": {},
+                "values": {}
+              },
+              "symmetric": {
+                "valType": {}
+              },
+              "array": {
+                "valType": {}
+              },
+              "arrayminus": {
+                "valType": {}
+              },
+              "value": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "valueminus": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "traceref": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tracerefminus": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "copy_ystyle": {
+                "valType": {}
+              },
+              "copy_zstyle": {
+                "valType": {}
+              },
+              "color": {
+                "valType": {}
+              },
+              "thickness": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "width": {
+                "valType": {},
+                "min": {}
+              },
+              "_deprecated": {
+                "opacity": {
+                  "valType": {}
+                }
               }
             },
-            "_nestedModules": {
-              "error_y": {},
-              "error_x": {},
-              "marker.colorbar": {}
+            "error_x": {
+              "visible": {
+                "valType": {}
+              },
+              "type": {
+                "valType": {},
+                "values": {}
+              },
+              "symmetric": {
+                "valType": {}
+              },
+              "array": {
+                "valType": {}
+              },
+              "arrayminus": {
+                "valType": {}
+              },
+              "value": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "valueminus": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "traceref": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tracerefminus": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "copy_ystyle": {
+                "valType": {}
+              },
+              "copy_zstyle": {
+                "valType": {}
+              },
+              "color": {
+                "valType": {}
+              },
+              "thickness": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "width": {
+                "valType": {},
+                "min": {}
+              },
+              "_deprecated": {
+                "opacity": {
+                  "valType": {}
+                }
+              }
             },
             "_deprecated": {
               "bardir": {
@@ -1128,9 +3321,242 @@ var Plotly = {
                 "dflt": {}
               }
             },
+            "layoutAttributes": {
+              "color": {
+                "valType": {},
+                "dflt": {}
+              },
+              "title": {
+                "valType": {}
+              },
+              "titlefont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                }
+              },
+              "type": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "autorange": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "rangemode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "range": {
+                "valType": {},
+                "items": {}
+              },
+              "fixedrange": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickmode": {
+                "valType": {},
+                "values": {}
+              },
+              "nticks": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tick0": {
+                "valType": {}
+              },
+              "dtick": {
+                "valType": {}
+              },
+              "tickvals": {
+                "valType": {}
+              },
+              "ticktext": {
+                "valType": {}
+              },
+              "ticks": {
+                "valType": {},
+                "values": {}
+              },
+              "mirror": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticklen": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticklabels": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickfont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "tickangle": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickprefix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showtickprefix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticksuffix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticksuffix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "showexponent": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "exponentformat": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "separatethousands": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "hoverformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showline": {
+                "valType": {},
+                "dflt": {}
+              },
+              "linecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "linewidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "showgrid": {
+                "valType": {}
+              },
+              "gridcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "gridwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "zeroline": {
+                "valType": {}
+              },
+              "zerolinecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "zerolinewidth": {
+                "valType": {},
+                "dflt": {}
+              },
+              "anchor": {
+                "valType": {},
+                "values": {}
+              },
+              "side": {
+                "valType": {},
+                "values": {}
+              },
+              "overlaying": {
+                "valType": {},
+                "values": {}
+              },
+              "domain": {
+                "valType": {},
+                "items": {},
+                "dflt": {}
+              },
+              "position": {
+                "valType": {},
+                "min": {},
+                "max": {},
+                "dflt": {}
+              },
+              "categoryorder": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "categoryarray": {
+                "valType": {}
+              },
+              "_deprecated": {
+                "autotick": {
+                  "valType": {}
+                }
+              }
+            },
             "transitionAxes": function () {},
             "plot": function () {},
-            "clean": function () {}
+            "clean": function () {},
+            "drawFramework": function () {},
+            "rangePlot": function () {}
           },
           "categories": {},
           "meta": {}
@@ -1232,9 +3658,6 @@ var Plotly = {
               "values": {},
               "dflt": {}
             },
-            "_nestedModules": {
-              "colorbar": {}
-            },
             "zauto": {
               "valType": {},
               "dflt": {}
@@ -1261,6 +3684,212 @@ var Plotly = {
             "showscale": {
               "valType": {},
               "dflt": {}
+            },
+            "colorbar": {
+              "thicknessmode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "thickness": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "lenmode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "len": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "x": {
+                "valType": {},
+                "dflt": {},
+                "min": {},
+                "max": {}
+              },
+              "xanchor": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "xpad": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "y": {
+                "valType": {},
+                "dflt": {},
+                "min": {},
+                "max": {}
+              },
+              "yanchor": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ypad": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "outlinecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "outlinewidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "bordercolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "borderwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "bgcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickmode": {
+                "valType": {},
+                "values": {}
+              },
+              "nticks": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tick0": {
+                "valType": {}
+              },
+              "dtick": {
+                "valType": {}
+              },
+              "tickvals": {
+                "valType": {}
+              },
+              "ticktext": {
+                "valType": {}
+              },
+              "ticks": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticklen": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticklabels": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickfont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "tickangle": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickprefix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showtickprefix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticksuffix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticksuffix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "separatethousands": {
+                "valType": {},
+                "dflt": {}
+              },
+              "exponentformat": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "showexponent": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "title": {
+                "valType": {},
+                "dflt": {}
+              },
+              "titlefont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "titleside": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "closure_uid_275815739": {}
             }
           },
           "supplyDefaults": function () {},
@@ -1293,9 +3922,242 @@ var Plotly = {
                 "dflt": {}
               }
             },
+            "layoutAttributes": {
+              "color": {
+                "valType": {},
+                "dflt": {}
+              },
+              "title": {
+                "valType": {}
+              },
+              "titlefont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                }
+              },
+              "type": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "autorange": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "rangemode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "range": {
+                "valType": {},
+                "items": {}
+              },
+              "fixedrange": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickmode": {
+                "valType": {},
+                "values": {}
+              },
+              "nticks": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tick0": {
+                "valType": {}
+              },
+              "dtick": {
+                "valType": {}
+              },
+              "tickvals": {
+                "valType": {}
+              },
+              "ticktext": {
+                "valType": {}
+              },
+              "ticks": {
+                "valType": {},
+                "values": {}
+              },
+              "mirror": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticklen": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticklabels": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickfont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "tickangle": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickprefix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showtickprefix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticksuffix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticksuffix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "showexponent": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "exponentformat": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "separatethousands": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "hoverformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showline": {
+                "valType": {},
+                "dflt": {}
+              },
+              "linecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "linewidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "showgrid": {
+                "valType": {}
+              },
+              "gridcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "gridwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "zeroline": {
+                "valType": {}
+              },
+              "zerolinecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "zerolinewidth": {
+                "valType": {},
+                "dflt": {}
+              },
+              "anchor": {
+                "valType": {},
+                "values": {}
+              },
+              "side": {
+                "valType": {},
+                "values": {}
+              },
+              "overlaying": {
+                "valType": {},
+                "values": {}
+              },
+              "domain": {
+                "valType": {},
+                "items": {},
+                "dflt": {}
+              },
+              "position": {
+                "valType": {},
+                "min": {},
+                "max": {},
+                "dflt": {}
+              },
+              "categoryorder": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "categoryarray": {
+                "valType": {}
+              },
+              "_deprecated": {
+                "autotick": {
+                  "valType": {}
+                }
+              }
+            },
             "transitionAxes": function () {},
             "plot": function () {},
-            "clean": function () {}
+            "clean": function () {},
+            "drawFramework": function () {},
+            "rangePlot": function () {}
           },
           "categories": {},
           "meta": {}
@@ -1385,7 +4247,8 @@ var Plotly = {
             },
             "ncontours": {
               "valType": {},
-              "dflt": {}
+              "dflt": {},
+              "min": {}
             },
             "contours": {
               "start": {
@@ -1398,7 +4261,8 @@ var Plotly = {
               },
               "size": {
                 "valType": {},
-                "dflt": {}
+                "dflt": {},
+                "min": {}
               },
               "coloring": {
                 "valType": {},
@@ -1431,9 +4295,6 @@ var Plotly = {
                 "dflt": {}
               }
             },
-            "_nestedModules": {
-              "colorbar": {}
-            },
             "zauto": {
               "valType": {},
               "dflt": {}
@@ -1460,6 +4321,212 @@ var Plotly = {
             "showscale": {
               "valType": {},
               "dflt": {}
+            },
+            "colorbar": {
+              "thicknessmode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "thickness": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "lenmode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "len": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "x": {
+                "valType": {},
+                "dflt": {},
+                "min": {},
+                "max": {}
+              },
+              "xanchor": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "xpad": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "y": {
+                "valType": {},
+                "dflt": {},
+                "min": {},
+                "max": {}
+              },
+              "yanchor": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ypad": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "outlinecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "outlinewidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "bordercolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "borderwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "bgcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickmode": {
+                "valType": {},
+                "values": {}
+              },
+              "nticks": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tick0": {
+                "valType": {}
+              },
+              "dtick": {
+                "valType": {}
+              },
+              "tickvals": {
+                "valType": {}
+              },
+              "ticktext": {
+                "valType": {}
+              },
+              "ticks": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticklen": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticklabels": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickfont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "tickangle": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickprefix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showtickprefix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticksuffix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticksuffix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "separatethousands": {
+                "valType": {},
+                "dflt": {}
+              },
+              "exponentformat": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "showexponent": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "title": {
+                "valType": {},
+                "dflt": {}
+              },
+              "titlefont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "titleside": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "closure_uid_275815739": {}
             }
           },
           "supplyDefaults": function () {},
@@ -1492,9 +4559,242 @@ var Plotly = {
                 "dflt": {}
               }
             },
+            "layoutAttributes": {
+              "color": {
+                "valType": {},
+                "dflt": {}
+              },
+              "title": {
+                "valType": {}
+              },
+              "titlefont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                }
+              },
+              "type": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "autorange": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "rangemode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "range": {
+                "valType": {},
+                "items": {}
+              },
+              "fixedrange": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickmode": {
+                "valType": {},
+                "values": {}
+              },
+              "nticks": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tick0": {
+                "valType": {}
+              },
+              "dtick": {
+                "valType": {}
+              },
+              "tickvals": {
+                "valType": {}
+              },
+              "ticktext": {
+                "valType": {}
+              },
+              "ticks": {
+                "valType": {},
+                "values": {}
+              },
+              "mirror": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticklen": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticklabels": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickfont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "tickangle": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickprefix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showtickprefix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticksuffix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticksuffix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "showexponent": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "exponentformat": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "separatethousands": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "hoverformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showline": {
+                "valType": {},
+                "dflt": {}
+              },
+              "linecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "linewidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "showgrid": {
+                "valType": {}
+              },
+              "gridcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "gridwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "zeroline": {
+                "valType": {}
+              },
+              "zerolinecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "zerolinewidth": {
+                "valType": {},
+                "dflt": {}
+              },
+              "anchor": {
+                "valType": {},
+                "values": {}
+              },
+              "side": {
+                "valType": {},
+                "values": {}
+              },
+              "overlaying": {
+                "valType": {},
+                "values": {}
+              },
+              "domain": {
+                "valType": {},
+                "items": {},
+                "dflt": {}
+              },
+              "position": {
+                "valType": {},
+                "min": {},
+                "max": {},
+                "dflt": {}
+              },
+              "categoryorder": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "categoryarray": {
+                "valType": {}
+              },
+              "_deprecated": {
+                "autotick": {
+                  "valType": {}
+                }
+              }
+            },
             "transitionAxes": function () {},
             "plot": function () {},
-            "clean": function () {}
+            "clean": function () {},
+            "drawFramework": function () {},
+            "rangePlot": function () {}
           },
           "categories": {},
           "meta": {}
@@ -1569,42 +4869,51 @@ var Plotly = {
               "family": {
                 "valType": {},
                 "noBlank": {},
-                "strict": {}
+                "strict": {},
+                "closure_uid_275815739": {}
               },
               "size": {
                 "valType": {},
-                "min": {}
+                "min": {},
+                "closure_uid_275815739": {}
               },
               "color": {
-                "valType": {}
+                "valType": {},
+                "closure_uid_275815739": {}
               }
             },
             "insidetextfont": {
               "family": {
                 "valType": {},
                 "noBlank": {},
-                "strict": {}
+                "strict": {},
+                "closure_uid_275815739": {}
               },
               "size": {
                 "valType": {},
-                "min": {}
+                "min": {},
+                "closure_uid_275815739": {}
               },
               "color": {
-                "valType": {}
+                "valType": {},
+                "closure_uid_275815739": {}
               }
             },
             "outsidetextfont": {
               "family": {
                 "valType": {},
                 "noBlank": {},
-                "strict": {}
+                "strict": {},
+                "closure_uid_275815739": {}
               },
               "size": {
                 "valType": {},
-                "min": {}
+                "min": {},
+                "closure_uid_275815739": {}
               },
               "color": {
-                "valType": {}
+                "valType": {},
+                "closure_uid_275815739": {}
               }
             },
             "domain": {
@@ -1727,7 +5036,8 @@ var Plotly = {
             },
             "ncontours": {
               "valType": {},
-              "dflt": {}
+              "dflt": {},
+              "min": {}
             },
             "contours": {
               "start": {
@@ -1740,7 +5050,8 @@ var Plotly = {
               },
               "size": {
                 "valType": {},
-                "dflt": {}
+                "dflt": {},
+                "min": {}
               },
               "coloring": {
                 "valType": {},
@@ -1773,9 +5084,6 @@ var Plotly = {
                 "dflt": {}
               }
             },
-            "_nestedModules": {
-              "colorbar": {}
-            },
             "zauto": {
               "valType": {},
               "dflt": {}
@@ -1802,6 +5110,212 @@ var Plotly = {
             "showscale": {
               "valType": {},
               "dflt": {}
+            },
+            "colorbar": {
+              "thicknessmode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "thickness": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "lenmode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "len": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "x": {
+                "valType": {},
+                "dflt": {},
+                "min": {},
+                "max": {}
+              },
+              "xanchor": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "xpad": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "y": {
+                "valType": {},
+                "dflt": {},
+                "min": {},
+                "max": {}
+              },
+              "yanchor": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ypad": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "outlinecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "outlinewidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "bordercolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "borderwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "bgcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickmode": {
+                "valType": {},
+                "values": {}
+              },
+              "nticks": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tick0": {
+                "valType": {}
+              },
+              "dtick": {
+                "valType": {}
+              },
+              "tickvals": {
+                "valType": {}
+              },
+              "ticktext": {
+                "valType": {}
+              },
+              "ticks": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticklen": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticklabels": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickfont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "tickangle": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickprefix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showtickprefix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticksuffix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticksuffix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "separatethousands": {
+                "valType": {},
+                "dflt": {}
+              },
+              "exponentformat": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "showexponent": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "title": {
+                "valType": {},
+                "dflt": {}
+              },
+              "titlefont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "titleside": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "closure_uid_275815739": {}
             }
           },
           "supplyDefaults": function () {},
@@ -1834,9 +5348,242 @@ var Plotly = {
                 "dflt": {}
               }
             },
+            "layoutAttributes": {
+              "color": {
+                "valType": {},
+                "dflt": {}
+              },
+              "title": {
+                "valType": {}
+              },
+              "titlefont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                }
+              },
+              "type": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "autorange": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "rangemode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "range": {
+                "valType": {},
+                "items": {}
+              },
+              "fixedrange": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickmode": {
+                "valType": {},
+                "values": {}
+              },
+              "nticks": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tick0": {
+                "valType": {}
+              },
+              "dtick": {
+                "valType": {}
+              },
+              "tickvals": {
+                "valType": {}
+              },
+              "ticktext": {
+                "valType": {}
+              },
+              "ticks": {
+                "valType": {},
+                "values": {}
+              },
+              "mirror": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticklen": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticklabels": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickfont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "tickangle": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickprefix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showtickprefix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticksuffix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticksuffix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "showexponent": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "exponentformat": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "separatethousands": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "hoverformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showline": {
+                "valType": {},
+                "dflt": {}
+              },
+              "linecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "linewidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "showgrid": {
+                "valType": {}
+              },
+              "gridcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "gridwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "zeroline": {
+                "valType": {}
+              },
+              "zerolinecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "zerolinewidth": {
+                "valType": {},
+                "dflt": {}
+              },
+              "anchor": {
+                "valType": {},
+                "values": {}
+              },
+              "side": {
+                "valType": {},
+                "values": {}
+              },
+              "overlaying": {
+                "valType": {},
+                "values": {}
+              },
+              "domain": {
+                "valType": {},
+                "items": {},
+                "dflt": {}
+              },
+              "position": {
+                "valType": {},
+                "min": {},
+                "max": {},
+                "dflt": {}
+              },
+              "categoryorder": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "categoryarray": {
+                "valType": {}
+              },
+              "_deprecated": {
+                "autotick": {
+                  "valType": {}
+                }
+              }
+            },
             "transitionAxes": function () {},
             "plot": function () {},
-            "clean": function () {}
+            "clean": function () {},
+            "drawFramework": function () {},
+            "rangePlot": function () {}
           },
           "categories": {},
           "meta": {}
@@ -1845,6 +5592,964 @@ var Plotly = {
           "cartesian": {},
           "2dMap": {},
           "contour": {}
+        }
+      },
+      "scatterternary": {
+        "_module": {
+          "attributes": {
+            "a": {
+              "valType": {}
+            },
+            "b": {
+              "valType": {}
+            },
+            "c": {
+              "valType": {}
+            },
+            "sum": {
+              "valType": {},
+              "dflt": {},
+              "min": {}
+            },
+            "mode": {
+              "valType": {},
+              "flags": {},
+              "extras": {},
+              "dflt": {}
+            },
+            "text": {
+              "valType": {},
+              "dflt": {},
+              "arrayOk": {}
+            },
+            "line": {
+              "color": {
+                "valType": {}
+              },
+              "width": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "dash": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "shape": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "smoothing": {
+                "valType": {},
+                "min": {},
+                "max": {},
+                "dflt": {}
+              }
+            },
+            "connectgaps": {
+              "valType": {},
+              "dflt": {}
+            },
+            "fill": {
+              "valType": {},
+              "values": {},
+              "dflt": {}
+            },
+            "fillcolor": {
+              "valType": {}
+            },
+            "marker": {
+              "symbol": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "arrayOk": {}
+              },
+              "opacity": {
+                "valType": {},
+                "min": {},
+                "max": {},
+                "arrayOk": {}
+              },
+              "maxdisplayed": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "size": {
+                "valType": {},
+                "min": {},
+                "dflt": {},
+                "arrayOk": {}
+              },
+              "sizeref": {
+                "valType": {},
+                "dflt": {}
+              },
+              "sizemin": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "sizemode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "line": {
+                "width": {
+                  "valType": {},
+                  "min": {},
+                  "arrayOk": {}
+                },
+                "color": {
+                  "valType": {},
+                  "arrayOk": {}
+                },
+                "colorscale": {
+                  "valType": {}
+                },
+                "cauto": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "cmax": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "cmin": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "autocolorscale": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "reversescale": {
+                  "valType": {},
+                  "dflt": {}
+                }
+              },
+              "color": {
+                "valType": {},
+                "arrayOk": {}
+              },
+              "colorscale": {
+                "valType": {}
+              },
+              "cauto": {
+                "valType": {},
+                "dflt": {}
+              },
+              "cmax": {
+                "valType": {},
+                "dflt": {}
+              },
+              "cmin": {
+                "valType": {},
+                "dflt": {}
+              },
+              "autocolorscale": {
+                "valType": {},
+                "dflt": {}
+              },
+              "reversescale": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showscale": {
+                "valType": {},
+                "dflt": {}
+              },
+              "colorbar": {
+                "thicknessmode": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "thickness": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "lenmode": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "len": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "x": {
+                  "valType": {},
+                  "dflt": {},
+                  "min": {},
+                  "max": {}
+                },
+                "xanchor": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "xpad": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "y": {
+                  "valType": {},
+                  "dflt": {},
+                  "min": {},
+                  "max": {}
+                },
+                "yanchor": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ypad": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "outlinecolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "outlinewidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "bordercolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "borderwidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "bgcolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickmode": {
+                  "valType": {},
+                  "values": {}
+                },
+                "nticks": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tick0": {
+                  "valType": {}
+                },
+                "dtick": {
+                  "valType": {}
+                },
+                "tickvals": {
+                  "valType": {}
+                },
+                "ticktext": {
+                  "valType": {}
+                },
+                "ticks": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ticklen": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tickwidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tickcolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showticklabels": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickfont": {
+                  "family": {
+                    "valType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "size": {
+                    "valType": {},
+                    "min": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "color": {
+                    "valType": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "closure_uid_275815739": {}
+                },
+                "tickangle": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickformat": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickprefix": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showtickprefix": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ticksuffix": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showticksuffix": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "separatethousands": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "exponentformat": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "showexponent": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "title": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "titlefont": {
+                  "family": {
+                    "valType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "size": {
+                    "valType": {},
+                    "min": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "color": {
+                    "valType": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "closure_uid_275815739": {}
+                },
+                "titleside": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "closure_uid_275815739": {}
+              }
+            },
+            "textfont": {
+              "family": {
+                "valType": {},
+                "noBlank": {},
+                "strict": {},
+                "arrayOk": {}
+              },
+              "size": {
+                "valType": {},
+                "min": {},
+                "arrayOk": {}
+              },
+              "color": {
+                "valType": {},
+                "arrayOk": {}
+              }
+            },
+            "textposition": {
+              "valType": {},
+              "values": {},
+              "dflt": {},
+              "arrayOk": {}
+            },
+            "hoverinfo": {
+              "valType": {},
+              "flags": {},
+              "extras": {},
+              "dflt": {}
+            },
+            "hoveron": {
+              "valType": {},
+              "flags": {}
+            }
+          },
+          "supplyDefaults": function () {},
+          "colorbar": function () {},
+          "calc": function () {},
+          "plot": function () {},
+          "style": function () {},
+          "hoverPoints": function () {},
+          "selectPoints": function () {},
+          "moduleType": {},
+          "name": {},
+          "basePlotModule": {
+            "name": {},
+            "attr": {},
+            "idRoot": {},
+            "idRegex": {},
+            "attrRegex": {},
+            "attributes": {
+              "subplot": {
+                "valType": {},
+                "dflt": {}
+              }
+            },
+            "layoutAttributes": {
+              "domain": {
+                "x": {
+                  "valType": {},
+                  "items": {},
+                  "dflt": {}
+                },
+                "y": {
+                  "valType": {},
+                  "items": {},
+                  "dflt": {}
+                }
+              },
+              "bgcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "sum": {
+                "valType": {},
+                "dflt": {},
+                "min": {}
+              },
+              "aaxis": {
+                "title": {
+                  "valType": {}
+                },
+                "titlefont": {
+                  "family": {
+                    "valType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "size": {
+                    "valType": {},
+                    "min": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "color": {
+                    "valType": {},
+                    "closure_uid_275815739": {}
+                  }
+                },
+                "color": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickmode": {
+                  "valType": {},
+                  "values": {}
+                },
+                "nticks": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tick0": {
+                  "valType": {}
+                },
+                "dtick": {
+                  "valType": {}
+                },
+                "tickvals": {
+                  "valType": {}
+                },
+                "ticktext": {
+                  "valType": {}
+                },
+                "ticks": {
+                  "valType": {},
+                  "values": {}
+                },
+                "ticklen": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tickwidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tickcolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showticklabels": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showtickprefix": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "tickprefix": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showticksuffix": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ticksuffix": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showexponent": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "exponentformat": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "separatethousands": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickfont": {
+                  "family": {
+                    "valType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "size": {
+                    "valType": {},
+                    "min": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "color": {
+                    "valType": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "closure_uid_275815739": {}
+                },
+                "tickangle": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickformat": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "hoverformat": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showline": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "linecolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "linewidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "showgrid": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "gridcolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "gridwidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "min": {
+                  "valType": {},
+                  "dflt": {},
+                  "min": {}
+                }
+              },
+              "baxis": {
+                "title": {
+                  "valType": {}
+                },
+                "titlefont": {
+                  "family": {
+                    "valType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "size": {
+                    "valType": {},
+                    "min": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "color": {
+                    "valType": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickmode": {
+                  "valType": {},
+                  "values": {}
+                },
+                "nticks": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tick0": {
+                  "valType": {}
+                },
+                "dtick": {
+                  "valType": {}
+                },
+                "tickvals": {
+                  "valType": {}
+                },
+                "ticktext": {
+                  "valType": {}
+                },
+                "ticks": {
+                  "valType": {},
+                  "values": {}
+                },
+                "ticklen": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tickwidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tickcolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showticklabels": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showtickprefix": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "tickprefix": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showticksuffix": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ticksuffix": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showexponent": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "exponentformat": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "separatethousands": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickfont": {
+                  "family": {
+                    "valType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "size": {
+                    "valType": {},
+                    "min": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "color": {
+                    "valType": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "closure_uid_275815739": {}
+                },
+                "tickangle": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickformat": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "hoverformat": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showline": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "linecolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "linewidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "showgrid": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "gridcolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "gridwidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "min": {
+                  "valType": {},
+                  "dflt": {},
+                  "min": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "caxis": {
+                "title": {
+                  "valType": {}
+                },
+                "titlefont": {
+                  "family": {
+                    "valType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "size": {
+                    "valType": {},
+                    "min": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "color": {
+                    "valType": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickmode": {
+                  "valType": {},
+                  "values": {}
+                },
+                "nticks": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tick0": {
+                  "valType": {}
+                },
+                "dtick": {
+                  "valType": {}
+                },
+                "tickvals": {
+                  "valType": {}
+                },
+                "ticktext": {
+                  "valType": {}
+                },
+                "ticks": {
+                  "valType": {},
+                  "values": {}
+                },
+                "ticklen": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tickwidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tickcolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showticklabels": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showtickprefix": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "tickprefix": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showticksuffix": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ticksuffix": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showexponent": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "exponentformat": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "separatethousands": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickfont": {
+                  "family": {
+                    "valType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "size": {
+                    "valType": {},
+                    "min": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "color": {
+                    "valType": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "closure_uid_275815739": {}
+                },
+                "tickangle": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickformat": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "hoverformat": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showline": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "linecolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "linewidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "showgrid": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "gridcolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "gridwidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "min": {
+                  "valType": {},
+                  "dflt": {},
+                  "min": {}
+                },
+                "closure_uid_275815739": {}
+              }
+            },
+            "supplyLayoutDefaults": function () {},
+            "plot": function () {},
+            "clean": function () {}
+          },
+          "categories": {},
+          "meta": {}
+        },
+        "categories": {
+          "ternary": {},
+          "symbols": {},
+          "markerColorscale": {},
+          "showLegend": {}
         }
       },
       "scatter3d": {
@@ -2019,6 +6724,212 @@ var Plotly = {
                 "valType": {},
                 "dflt": {}
               },
+              "colorbar": {
+                "thicknessmode": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "thickness": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "lenmode": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "len": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "x": {
+                  "valType": {},
+                  "dflt": {},
+                  "min": {},
+                  "max": {}
+                },
+                "xanchor": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "xpad": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "y": {
+                  "valType": {},
+                  "dflt": {},
+                  "min": {},
+                  "max": {}
+                },
+                "yanchor": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ypad": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "outlinecolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "outlinewidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "bordercolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "borderwidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "bgcolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickmode": {
+                  "valType": {},
+                  "values": {}
+                },
+                "nticks": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tick0": {
+                  "valType": {}
+                },
+                "dtick": {
+                  "valType": {}
+                },
+                "tickvals": {
+                  "valType": {}
+                },
+                "ticktext": {
+                  "valType": {}
+                },
+                "ticks": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ticklen": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tickwidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tickcolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showticklabels": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickfont": {
+                  "family": {
+                    "valType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "size": {
+                    "valType": {},
+                    "min": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "color": {
+                    "valType": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "closure_uid_275815739": {}
+                },
+                "tickangle": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickformat": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickprefix": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showtickprefix": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ticksuffix": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showticksuffix": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "separatethousands": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "exponentformat": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "showexponent": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "title": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "titlefont": {
+                  "family": {
+                    "valType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "size": {
+                    "valType": {},
+                    "min": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "color": {
+                    "valType": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "closure_uid_275815739": {}
+                },
+                "titleside": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "closure_uid_275815739": {}
+              },
               "line": {
                 "width": {
                   "valType": {},
@@ -2104,11 +7015,188 @@ var Plotly = {
                 "arrayOk": {}
               }
             },
-            "_nestedModules": {
-              "error_x": {},
-              "error_y": {},
-              "error_z": {},
-              "marker.colorbar": {}
+            "error_x": {
+              "visible": {
+                "valType": {}
+              },
+              "type": {
+                "valType": {},
+                "values": {}
+              },
+              "symmetric": {
+                "valType": {}
+              },
+              "array": {
+                "valType": {}
+              },
+              "arrayminus": {
+                "valType": {}
+              },
+              "value": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "valueminus": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "traceref": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tracerefminus": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "copy_ystyle": {
+                "valType": {}
+              },
+              "copy_zstyle": {
+                "valType": {}
+              },
+              "color": {
+                "valType": {}
+              },
+              "thickness": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "width": {
+                "valType": {},
+                "min": {}
+              },
+              "_deprecated": {
+                "opacity": {
+                  "valType": {}
+                }
+              }
+            },
+            "error_y": {
+              "visible": {
+                "valType": {}
+              },
+              "type": {
+                "valType": {},
+                "values": {}
+              },
+              "symmetric": {
+                "valType": {}
+              },
+              "array": {
+                "valType": {}
+              },
+              "arrayminus": {
+                "valType": {}
+              },
+              "value": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "valueminus": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "traceref": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tracerefminus": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "copy_ystyle": {
+                "valType": {}
+              },
+              "copy_zstyle": {
+                "valType": {}
+              },
+              "color": {
+                "valType": {}
+              },
+              "thickness": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "width": {
+                "valType": {},
+                "min": {}
+              },
+              "_deprecated": {
+                "opacity": {
+                  "valType": {}
+                }
+              }
+            },
+            "error_z": {
+              "visible": {
+                "valType": {}
+              },
+              "type": {
+                "valType": {},
+                "values": {}
+              },
+              "symmetric": {
+                "valType": {}
+              },
+              "array": {
+                "valType": {}
+              },
+              "arrayminus": {
+                "valType": {}
+              },
+              "value": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "valueminus": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "traceref": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tracerefminus": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "copy_ystyle": {
+                "valType": {}
+              },
+              "copy_zstyle": {
+                "valType": {}
+              },
+              "color": {
+                "valType": {}
+              },
+              "thickness": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "width": {
+                "valType": {},
+                "min": {}
+              },
+              "_deprecated": {
+                "opacity": {
+                  "valType": {}
+                }
+              }
             }
           },
           "markerSymbols": {
@@ -2148,51 +7236,51 @@ var Plotly = {
                   "x": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "y": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "z": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   }
                 },
                 "center": {
                   "x": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "y": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "z": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   }
                 },
                 "eye": {
                   "x": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "y": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "z": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   }
                 }
               },
@@ -2277,17 +7365,18 @@ var Plotly = {
                     "valType": {},
                     "noBlank": {},
                     "strict": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "size": {
                     "valType": {},
                     "min": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "color": {
                     "valType": {},
-                    "closure_uid_563121905": {}
-                  }
+                    "closure_uid_275815739": {}
+                  },
+                  "closure_uid_275815739": {}
                 },
                 "type": {
                   "valType": {},
@@ -2308,10 +7397,6 @@ var Plotly = {
                   "valType": {},
                   "items": {}
                 },
-                "fixedrange": {
-                  "valType": {},
-                  "dflt": {}
-                },
                 "tickmode": {
                   "valType": {},
                   "values": {}
@@ -2322,12 +7407,10 @@ var Plotly = {
                   "dflt": {}
                 },
                 "tick0": {
-                  "valType": {},
-                  "dflt": {}
+                  "valType": {}
                 },
                 "dtick": {
-                  "valType": {},
-                  "dflt": {}
+                  "valType": {}
                 },
                 "tickvals": {
                   "valType": {}
@@ -2367,17 +7450,18 @@ var Plotly = {
                     "valType": {},
                     "noBlank": {},
                     "strict": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "size": {
                     "valType": {},
                     "min": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "color": {
                     "valType": {},
-                    "closure_uid_563121905": {}
-                  }
+                    "closure_uid_275815739": {}
+                  },
+                  "closure_uid_275815739": {}
                 },
                 "tickangle": {
                   "valType": {},
@@ -2510,18 +7594,18 @@ var Plotly = {
                     "valType": {},
                     "noBlank": {},
                     "strict": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "size": {
                     "valType": {},
                     "min": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "color": {
                     "valType": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
                 "type": {
                   "valType": {},
@@ -2542,10 +7626,6 @@ var Plotly = {
                   "valType": {},
                   "items": {}
                 },
-                "fixedrange": {
-                  "valType": {},
-                  "dflt": {}
-                },
                 "tickmode": {
                   "valType": {},
                   "values": {}
@@ -2556,12 +7636,10 @@ var Plotly = {
                   "dflt": {}
                 },
                 "tick0": {
-                  "valType": {},
-                  "dflt": {}
+                  "valType": {}
                 },
                 "dtick": {
-                  "valType": {},
-                  "dflt": {}
+                  "valType": {}
                 },
                 "tickvals": {
                   "valType": {}
@@ -2601,18 +7679,18 @@ var Plotly = {
                     "valType": {},
                     "noBlank": {},
                     "strict": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "size": {
                     "valType": {},
                     "min": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "color": {
                     "valType": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
                 "tickangle": {
                   "valType": {},
@@ -2694,7 +7772,7 @@ var Plotly = {
                   "valType": {},
                   "dflt": {}
                 },
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "zaxis": {
                 "showspikes": {
@@ -2746,18 +7824,18 @@ var Plotly = {
                     "valType": {},
                     "noBlank": {},
                     "strict": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "size": {
                     "valType": {},
                     "min": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "color": {
                     "valType": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
                 "type": {
                   "valType": {},
@@ -2778,10 +7856,6 @@ var Plotly = {
                   "valType": {},
                   "items": {}
                 },
-                "fixedrange": {
-                  "valType": {},
-                  "dflt": {}
-                },
                 "tickmode": {
                   "valType": {},
                   "values": {}
@@ -2792,12 +7866,10 @@ var Plotly = {
                   "dflt": {}
                 },
                 "tick0": {
-                  "valType": {},
-                  "dflt": {}
+                  "valType": {}
                 },
                 "dtick": {
-                  "valType": {},
-                  "dflt": {}
+                  "valType": {}
                 },
                 "tickvals": {
                   "valType": {}
@@ -2837,18 +7909,18 @@ var Plotly = {
                     "valType": {},
                     "noBlank": {},
                     "strict": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "size": {
                     "valType": {},
                     "min": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "color": {
                     "valType": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
                 "tickangle": {
                   "valType": {},
@@ -2930,7 +8002,7 @@ var Plotly = {
                   "valType": {},
                   "dflt": {}
                 },
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "dragmode": {
                 "valType": {},
@@ -3010,6 +8082,212 @@ var Plotly = {
               "valType": {},
               "dflt": {}
             },
+            "colorbar": {
+              "thicknessmode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "thickness": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "lenmode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "len": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "x": {
+                "valType": {},
+                "dflt": {},
+                "min": {},
+                "max": {}
+              },
+              "xanchor": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "xpad": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "y": {
+                "valType": {},
+                "dflt": {},
+                "min": {},
+                "max": {}
+              },
+              "yanchor": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ypad": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "outlinecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "outlinewidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "bordercolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "borderwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "bgcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickmode": {
+                "valType": {},
+                "values": {}
+              },
+              "nticks": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tick0": {
+                "valType": {}
+              },
+              "dtick": {
+                "valType": {}
+              },
+              "tickvals": {
+                "valType": {}
+              },
+              "ticktext": {
+                "valType": {}
+              },
+              "ticks": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticklen": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticklabels": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickfont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "tickangle": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickprefix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showtickprefix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticksuffix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticksuffix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "separatethousands": {
+                "valType": {},
+                "dflt": {}
+              },
+              "exponentformat": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "showexponent": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "title": {
+                "valType": {},
+                "dflt": {}
+              },
+              "titlefont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "titleside": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "closure_uid_275815739": {}
+            },
             "contours": {
               "x": {
                 "show": {
@@ -3020,17 +8298,17 @@ var Plotly = {
                   "x": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "y": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "z": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   }
                 },
                 "color": {
@@ -3071,17 +8349,17 @@ var Plotly = {
                   "x": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "y": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "z": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   }
                 },
                 "color": {
@@ -3122,17 +8400,17 @@ var Plotly = {
                   "x": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "y": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "z": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   }
                 },
                 "color": {
@@ -3227,9 +8505,6 @@ var Plotly = {
               "max": {},
               "dflt": {}
             },
-            "_nestedModules": {
-              "colorbar": {}
-            },
             "_deprecated": {
               "zauto": {
                 "valType": {},
@@ -3273,57 +8548,57 @@ var Plotly = {
                   "x": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "y": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "z": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
                 "center": {
                   "x": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "y": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "z": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
                 "eye": {
                   "x": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "y": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "z": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "domain": {
                 "x": {
@@ -3406,18 +8681,18 @@ var Plotly = {
                     "valType": {},
                     "noBlank": {},
                     "strict": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "size": {
                     "valType": {},
                     "min": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "color": {
                     "valType": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
                 "type": {
                   "valType": {},
@@ -3438,10 +8713,6 @@ var Plotly = {
                   "valType": {},
                   "items": {}
                 },
-                "fixedrange": {
-                  "valType": {},
-                  "dflt": {}
-                },
                 "tickmode": {
                   "valType": {},
                   "values": {}
@@ -3452,12 +8723,10 @@ var Plotly = {
                   "dflt": {}
                 },
                 "tick0": {
-                  "valType": {},
-                  "dflt": {}
+                  "valType": {}
                 },
                 "dtick": {
-                  "valType": {},
-                  "dflt": {}
+                  "valType": {}
                 },
                 "tickvals": {
                   "valType": {}
@@ -3497,18 +8766,18 @@ var Plotly = {
                     "valType": {},
                     "noBlank": {},
                     "strict": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "size": {
                     "valType": {},
                     "min": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "color": {
                     "valType": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
                 "tickangle": {
                   "valType": {},
@@ -3590,7 +8859,7 @@ var Plotly = {
                   "valType": {},
                   "dflt": {}
                 },
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "yaxis": {
                 "showspikes": {
@@ -3642,18 +8911,18 @@ var Plotly = {
                     "valType": {},
                     "noBlank": {},
                     "strict": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "size": {
                     "valType": {},
                     "min": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "color": {
                     "valType": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
                 "type": {
                   "valType": {},
@@ -3674,10 +8943,6 @@ var Plotly = {
                   "valType": {},
                   "items": {}
                 },
-                "fixedrange": {
-                  "valType": {},
-                  "dflt": {}
-                },
                 "tickmode": {
                   "valType": {},
                   "values": {}
@@ -3688,12 +8953,10 @@ var Plotly = {
                   "dflt": {}
                 },
                 "tick0": {
-                  "valType": {},
-                  "dflt": {}
+                  "valType": {}
                 },
                 "dtick": {
-                  "valType": {},
-                  "dflt": {}
+                  "valType": {}
                 },
                 "tickvals": {
                   "valType": {}
@@ -3733,18 +8996,18 @@ var Plotly = {
                     "valType": {},
                     "noBlank": {},
                     "strict": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "size": {
                     "valType": {},
                     "min": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "color": {
                     "valType": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
                 "tickangle": {
                   "valType": {},
@@ -3826,7 +9089,7 @@ var Plotly = {
                   "valType": {},
                   "dflt": {}
                 },
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "zaxis": {
                 "showspikes": {
@@ -3878,18 +9141,18 @@ var Plotly = {
                     "valType": {},
                     "noBlank": {},
                     "strict": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "size": {
                     "valType": {},
                     "min": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "color": {
                     "valType": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
                 "type": {
                   "valType": {},
@@ -3910,10 +9173,6 @@ var Plotly = {
                   "valType": {},
                   "items": {}
                 },
-                "fixedrange": {
-                  "valType": {},
-                  "dflt": {}
-                },
                 "tickmode": {
                   "valType": {},
                   "values": {}
@@ -3924,12 +9183,10 @@ var Plotly = {
                   "dflt": {}
                 },
                 "tick0": {
-                  "valType": {},
-                  "dflt": {}
+                  "valType": {}
                 },
                 "dtick": {
-                  "valType": {},
-                  "dflt": {}
+                  "valType": {}
                 },
                 "tickvals": {
                   "valType": {}
@@ -3969,18 +9226,18 @@ var Plotly = {
                     "valType": {},
                     "noBlank": {},
                     "strict": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "size": {
                     "valType": {},
                     "min": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "color": {
                     "valType": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
                 "tickangle": {
                   "valType": {},
@@ -4062,7 +9319,7 @@ var Plotly = {
                   "valType": {},
                   "dflt": {}
                 },
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "dragmode": {
                 "valType": {},
@@ -4079,7 +9336,7 @@ var Plotly = {
                   "valType": {}
                 }
               },
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
             "supplyLayoutDefaults": function () {},
             "plot": function () {},
@@ -4087,7 +9344,7 @@ var Plotly = {
             "toSVG": function () {},
             "cleanId": function () {},
             "setConvert": function () {},
-            "closure_uid_563121905": {}
+            "closure_uid_275815739": {}
           },
           "categories": {},
           "meta": {}
@@ -4176,6 +9433,212 @@ var Plotly = {
               "valType": {},
               "dflt": {}
             },
+            "colorbar": {
+              "thicknessmode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "thickness": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "lenmode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "len": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "x": {
+                "valType": {},
+                "dflt": {},
+                "min": {},
+                "max": {}
+              },
+              "xanchor": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "xpad": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "y": {
+                "valType": {},
+                "dflt": {},
+                "min": {},
+                "max": {}
+              },
+              "yanchor": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ypad": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "outlinecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "outlinewidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "bordercolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "borderwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "bgcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickmode": {
+                "valType": {},
+                "values": {}
+              },
+              "nticks": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tick0": {
+                "valType": {}
+              },
+              "dtick": {
+                "valType": {}
+              },
+              "tickvals": {
+                "valType": {}
+              },
+              "ticktext": {
+                "valType": {}
+              },
+              "ticks": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticklen": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticklabels": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickfont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "tickangle": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickprefix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showtickprefix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticksuffix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticksuffix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "separatethousands": {
+                "valType": {},
+                "dflt": {}
+              },
+              "exponentformat": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "showexponent": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "title": {
+                "valType": {},
+                "dflt": {}
+              },
+              "titlefont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "titleside": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "closure_uid_275815739": {}
+            },
             "lightposition": {
               "x": {
                 "valType": {},
@@ -4239,9 +9702,6 @@ var Plotly = {
                 "max": {},
                 "dflt": {}
               }
-            },
-            "_nestedModules": {
-              "colorbar": {}
             }
           },
           "supplyDefaults": function () {},
@@ -4271,57 +9731,57 @@ var Plotly = {
                   "x": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "y": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "z": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
                 "center": {
                   "x": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "y": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "z": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
                 "eye": {
                   "x": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "y": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "z": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "domain": {
                 "x": {
@@ -4404,18 +9864,18 @@ var Plotly = {
                     "valType": {},
                     "noBlank": {},
                     "strict": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "size": {
                     "valType": {},
                     "min": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "color": {
                     "valType": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
                 "type": {
                   "valType": {},
@@ -4436,10 +9896,6 @@ var Plotly = {
                   "valType": {},
                   "items": {}
                 },
-                "fixedrange": {
-                  "valType": {},
-                  "dflt": {}
-                },
                 "tickmode": {
                   "valType": {},
                   "values": {}
@@ -4450,12 +9906,10 @@ var Plotly = {
                   "dflt": {}
                 },
                 "tick0": {
-                  "valType": {},
-                  "dflt": {}
+                  "valType": {}
                 },
                 "dtick": {
-                  "valType": {},
-                  "dflt": {}
+                  "valType": {}
                 },
                 "tickvals": {
                   "valType": {}
@@ -4495,18 +9949,18 @@ var Plotly = {
                     "valType": {},
                     "noBlank": {},
                     "strict": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "size": {
                     "valType": {},
                     "min": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "color": {
                     "valType": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
                 "tickangle": {
                   "valType": {},
@@ -4588,7 +10042,7 @@ var Plotly = {
                   "valType": {},
                   "dflt": {}
                 },
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "yaxis": {
                 "showspikes": {
@@ -4640,18 +10094,18 @@ var Plotly = {
                     "valType": {},
                     "noBlank": {},
                     "strict": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "size": {
                     "valType": {},
                     "min": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "color": {
                     "valType": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
                 "type": {
                   "valType": {},
@@ -4672,10 +10126,6 @@ var Plotly = {
                   "valType": {},
                   "items": {}
                 },
-                "fixedrange": {
-                  "valType": {},
-                  "dflt": {}
-                },
                 "tickmode": {
                   "valType": {},
                   "values": {}
@@ -4686,12 +10136,10 @@ var Plotly = {
                   "dflt": {}
                 },
                 "tick0": {
-                  "valType": {},
-                  "dflt": {}
+                  "valType": {}
                 },
                 "dtick": {
-                  "valType": {},
-                  "dflt": {}
+                  "valType": {}
                 },
                 "tickvals": {
                   "valType": {}
@@ -4731,18 +10179,18 @@ var Plotly = {
                     "valType": {},
                     "noBlank": {},
                     "strict": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "size": {
                     "valType": {},
                     "min": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "color": {
                     "valType": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
                 "tickangle": {
                   "valType": {},
@@ -4824,7 +10272,7 @@ var Plotly = {
                   "valType": {},
                   "dflt": {}
                 },
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "zaxis": {
                 "showspikes": {
@@ -4876,18 +10324,18 @@ var Plotly = {
                     "valType": {},
                     "noBlank": {},
                     "strict": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "size": {
                     "valType": {},
                     "min": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "color": {
                     "valType": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
                 "type": {
                   "valType": {},
@@ -4908,10 +10356,6 @@ var Plotly = {
                   "valType": {},
                   "items": {}
                 },
-                "fixedrange": {
-                  "valType": {},
-                  "dflt": {}
-                },
                 "tickmode": {
                   "valType": {},
                   "values": {}
@@ -4922,12 +10366,10 @@ var Plotly = {
                   "dflt": {}
                 },
                 "tick0": {
-                  "valType": {},
-                  "dflt": {}
+                  "valType": {}
                 },
                 "dtick": {
-                  "valType": {},
-                  "dflt": {}
+                  "valType": {}
                 },
                 "tickvals": {
                   "valType": {}
@@ -4967,18 +10409,18 @@ var Plotly = {
                     "valType": {},
                     "noBlank": {},
                     "strict": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "size": {
                     "valType": {},
                     "min": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "color": {
                     "valType": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
                 "tickangle": {
                   "valType": {},
@@ -5060,7 +10502,7 @@ var Plotly = {
                   "valType": {},
                   "dflt": {}
                 },
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "dragmode": {
                 "valType": {},
@@ -5077,7 +10519,7 @@ var Plotly = {
                   "valType": {}
                 }
               },
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
             "supplyLayoutDefaults": function () {},
             "plot": function () {},
@@ -5085,7 +10527,7 @@ var Plotly = {
             "toSVG": function () {},
             "cleanId": function () {},
             "setConvert": function () {},
-            "closure_uid_563121905": {}
+            "closure_uid_275815739": {}
           },
           "categories": {},
           "meta": {}
@@ -5122,6 +10564,29 @@ var Plotly = {
               "dflt": {},
               "arrayOk": {}
             },
+            "textfont": {
+              "family": {
+                "valType": {},
+                "noBlank": {},
+                "strict": {},
+                "arrayOk": {}
+              },
+              "size": {
+                "valType": {},
+                "min": {},
+                "arrayOk": {}
+              },
+              "color": {
+                "valType": {},
+                "arrayOk": {}
+              }
+            },
+            "textposition": {
+              "valType": {},
+              "values": {},
+              "dflt": {},
+              "arrayOk": {}
+            },
             "line": {
               "color": {
                 "valType": {}
@@ -5136,6 +10601,10 @@ var Plotly = {
                 "values": {},
                 "dflt": {}
               }
+            },
+            "connectgaps": {
+              "valType": {},
+              "dflt": {}
             },
             "marker": {
               "symbol": {
@@ -5173,6 +10642,212 @@ var Plotly = {
               "showscale": {
                 "valType": {},
                 "dflt": {}
+              },
+              "colorbar": {
+                "thicknessmode": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "thickness": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "lenmode": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "len": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "x": {
+                  "valType": {},
+                  "dflt": {},
+                  "min": {},
+                  "max": {}
+                },
+                "xanchor": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "xpad": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "y": {
+                  "valType": {},
+                  "dflt": {},
+                  "min": {},
+                  "max": {}
+                },
+                "yanchor": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ypad": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "outlinecolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "outlinewidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "bordercolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "borderwidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "bgcolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickmode": {
+                  "valType": {},
+                  "values": {}
+                },
+                "nticks": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tick0": {
+                  "valType": {}
+                },
+                "dtick": {
+                  "valType": {}
+                },
+                "tickvals": {
+                  "valType": {}
+                },
+                "ticktext": {
+                  "valType": {}
+                },
+                "ticks": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ticklen": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tickwidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tickcolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showticklabels": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickfont": {
+                  "family": {
+                    "valType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "size": {
+                    "valType": {},
+                    "min": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "color": {
+                    "valType": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "closure_uid_275815739": {}
+                },
+                "tickangle": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickformat": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickprefix": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showtickprefix": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ticksuffix": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showticksuffix": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "separatethousands": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "exponentformat": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "showexponent": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "title": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "titlefont": {
+                  "family": {
+                    "valType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "size": {
+                    "valType": {},
+                    "min": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "color": {
+                    "valType": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "closure_uid_275815739": {}
+                },
+                "titleside": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "closure_uid_275815739": {}
               },
               "line": {
                 "width": {
@@ -5236,43 +10911,27 @@ var Plotly = {
                 "dflt": {}
               }
             },
-            "textfont": {
-              "family": {
-                "valType": {},
-                "noBlank": {},
-                "strict": {},
-                "arrayOk": {}
-              },
-              "size": {
-                "valType": {},
-                "min": {},
-                "arrayOk": {}
-              },
-              "color": {
-                "valType": {},
-                "arrayOk": {}
-              }
-            },
-            "textposition": {
+            "fill": {
               "valType": {},
               "values": {},
-              "dflt": {},
-              "arrayOk": {}
+              "dflt": {}
+            },
+            "fillcolor": {
+              "valType": {}
             },
             "hoverinfo": {
               "valType": {},
               "flags": {},
               "extras": {},
               "dflt": {}
-            },
-            "_nestedModules": {
-              "marker.colorbar": {}
             }
           },
           "supplyDefaults": function () {},
           "colorbar": function () {},
           "calc": function () {},
           "plot": function () {},
+          "hoverPoints": function () {},
+          "eventData": function () {},
           "moduleType": {},
           "name": {},
           "basePlotModule": {
@@ -5319,15 +10978,15 @@ var Plotly = {
                 "rotation": {
                   "lon": {
                     "valType": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "lat": {
                     "valType": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "roll": {
                     "valType": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   }
                 },
                 "parallels": {
@@ -5522,7 +11181,8 @@ var Plotly = {
                 "width": {
                   "valType": {},
                   "min": {},
-                  "arrayOk": {}
+                  "arrayOk": {},
+                  "dflt": {}
                 }
               }
             },
@@ -5531,9 +11191,6 @@ var Plotly = {
               "flags": {},
               "extras": {},
               "dflt": {}
-            },
-            "_nestedModules": {
-              "colorbar": {}
             },
             "zauto": {
               "valType": {},
@@ -5561,12 +11218,219 @@ var Plotly = {
             "showscale": {
               "valType": {},
               "dflt": {}
+            },
+            "colorbar": {
+              "thicknessmode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "thickness": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "lenmode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "len": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "x": {
+                "valType": {},
+                "dflt": {},
+                "min": {},
+                "max": {}
+              },
+              "xanchor": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "xpad": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "y": {
+                "valType": {},
+                "dflt": {},
+                "min": {},
+                "max": {}
+              },
+              "yanchor": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ypad": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "outlinecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "outlinewidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "bordercolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "borderwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "bgcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickmode": {
+                "valType": {},
+                "values": {}
+              },
+              "nticks": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tick0": {
+                "valType": {}
+              },
+              "dtick": {
+                "valType": {}
+              },
+              "tickvals": {
+                "valType": {}
+              },
+              "ticktext": {
+                "valType": {}
+              },
+              "ticks": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticklen": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticklabels": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickfont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "tickangle": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickprefix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showtickprefix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticksuffix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticksuffix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "separatethousands": {
+                "valType": {},
+                "dflt": {}
+              },
+              "exponentformat": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "showexponent": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "title": {
+                "valType": {},
+                "dflt": {}
+              },
+              "titlefont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "titleside": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "closure_uid_275815739": {}
             }
           },
           "supplyDefaults": function () {},
           "colorbar": function () {},
           "calc": function () {},
           "plot": function () {},
+          "hoverPoints": function () {},
           "moduleType": {},
           "name": {},
           "basePlotModule": {
@@ -5613,17 +11477,17 @@ var Plotly = {
                 "rotation": {
                   "lon": {
                     "valType": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "lat": {
                     "valType": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "roll": {
                     "valType": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
                 "parallels": {
                   "valType": {},
@@ -5635,7 +11499,7 @@ var Plotly = {
                   "max": {},
                   "dflt": {}
                 },
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "showcoastlines": {
                 "valType": {}
@@ -5776,13 +11640,13 @@ var Plotly = {
                   "dflt": {}
                 }
               },
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
             "supplyLayoutDefaults": function () {},
             "plot": function () {},
             "clean": function () {},
             "toSVG": function () {},
-            "closure_uid_563121905": {}
+            "closure_uid_275815739": {}
           },
           "categories": {},
           "meta": {}
@@ -5906,6 +11770,209 @@ var Plotly = {
                 "valType": {},
                 "dflt": {}
               },
+              "colorbar": {
+                "thicknessmode": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "thickness": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "lenmode": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "len": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "x": {
+                  "valType": {},
+                  "dflt": {},
+                  "min": {},
+                  "max": {}
+                },
+                "xanchor": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "xpad": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "y": {
+                  "valType": {},
+                  "dflt": {},
+                  "min": {},
+                  "max": {}
+                },
+                "yanchor": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ypad": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "outlinecolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "outlinewidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "bordercolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "borderwidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "bgcolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickmode": {
+                  "valType": {},
+                  "values": {}
+                },
+                "nticks": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tick0": {
+                  "valType": {}
+                },
+                "dtick": {
+                  "valType": {}
+                },
+                "tickvals": {
+                  "valType": {}
+                },
+                "ticktext": {
+                  "valType": {}
+                },
+                "ticks": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ticklen": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tickwidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tickcolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showticklabels": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickfont": {
+                  "family": {
+                    "valType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "size": {
+                    "valType": {},
+                    "min": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "color": {
+                    "valType": {},
+                    "closure_uid_275815739": {}
+                  }
+                },
+                "tickangle": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickformat": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickprefix": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showtickprefix": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ticksuffix": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showticksuffix": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "separatethousands": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "exponentformat": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "showexponent": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "title": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "titlefont": {
+                  "family": {
+                    "valType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "size": {
+                    "valType": {},
+                    "min": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "color": {
+                    "valType": {},
+                    "closure_uid_275815739": {}
+                  }
+                },
+                "titleside": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                }
+              },
               "line": {
                 "color": {
                   "valType": {},
@@ -5953,10 +12020,127 @@ var Plotly = {
             "fillcolor": {
               "valType": {}
             },
-            "_nestedModules": {
-              "error_x": {},
-              "error_y": {},
-              "marker.colorbar": {}
+            "error_y": {
+              "visible": {
+                "valType": {}
+              },
+              "type": {
+                "valType": {},
+                "values": {}
+              },
+              "symmetric": {
+                "valType": {}
+              },
+              "array": {
+                "valType": {}
+              },
+              "arrayminus": {
+                "valType": {}
+              },
+              "value": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "valueminus": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "traceref": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tracerefminus": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "copy_ystyle": {
+                "valType": {}
+              },
+              "copy_zstyle": {
+                "valType": {}
+              },
+              "color": {
+                "valType": {}
+              },
+              "thickness": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "width": {
+                "valType": {},
+                "min": {}
+              },
+              "_deprecated": {
+                "opacity": {
+                  "valType": {}
+                }
+              }
+            },
+            "error_x": {
+              "visible": {
+                "valType": {}
+              },
+              "type": {
+                "valType": {},
+                "values": {}
+              },
+              "symmetric": {
+                "valType": {}
+              },
+              "array": {
+                "valType": {}
+              },
+              "arrayminus": {
+                "valType": {}
+              },
+              "value": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "valueminus": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "traceref": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tracerefminus": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "copy_ystyle": {
+                "valType": {}
+              },
+              "copy_zstyle": {
+                "valType": {}
+              },
+              "color": {
+                "valType": {}
+              },
+              "thickness": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "width": {
+                "valType": {},
+                "min": {}
+              },
+              "_deprecated": {
+                "opacity": {
+                  "valType": {}
+                }
+              }
             }
           },
           "supplyDefaults": function () {},
@@ -6108,766 +12292,321 @@ var Plotly = {
           "showLegend": {}
         }
       },
-      "scatterternary": {
+      "heatmapgl": {
         "_module": {
           "attributes": {
-            "a": {
+            "z": {
               "valType": {}
             },
-            "b": {
+            "x": {
               "valType": {}
             },
-            "c": {
-              "valType": {}
-            },
-            "sum": {
+            "x0": {
               "valType": {},
-              "dflt": {},
-              "min": {}
+              "dflt": {}
             },
-            "mode": {
+            "dx": {
               "valType": {},
-              "flags": {},
-              "extras": {},
+              "dflt": {}
+            },
+            "y": {
+              "valType": {}
+            },
+            "y0": {
+              "valType": {},
+              "dflt": {}
+            },
+            "dy": {
+              "valType": {},
               "dflt": {}
             },
             "text": {
-              "valType": {},
-              "dflt": {},
-              "arrayOk": {}
-            },
-            "line": {
-              "color": {
-                "valType": {}
-              },
-              "width": {
-                "valType": {},
-                "min": {},
-                "dflt": {}
-              },
-              "dash": {
-                "valType": {},
-                "values": {},
-                "dflt": {}
-              },
-              "shape": {
-                "valType": {},
-                "values": {},
-                "dflt": {}
-              },
-              "smoothing": {
-                "valType": {},
-                "min": {},
-                "max": {},
-                "dflt": {}
-              }
-            },
-            "connectgaps": {
-              "valType": {},
-              "dflt": {}
-            },
-            "fill": {
-              "valType": {},
-              "values": {},
-              "dflt": {}
-            },
-            "fillcolor": {
               "valType": {}
             },
-            "marker": {
-              "symbol": {
+            "transpose": {
+              "valType": {},
+              "dflt": {}
+            },
+            "xtype": {
+              "valType": {},
+              "values": {}
+            },
+            "ytype": {
+              "valType": {},
+              "values": {}
+            },
+            "zauto": {
+              "valType": {},
+              "dflt": {}
+            },
+            "zmin": {
+              "valType": {},
+              "dflt": {}
+            },
+            "zmax": {
+              "valType": {},
+              "dflt": {}
+            },
+            "colorscale": {
+              "valType": {}
+            },
+            "autocolorscale": {
+              "valType": {},
+              "dflt": {}
+            },
+            "reversescale": {
+              "valType": {},
+              "dflt": {}
+            },
+            "showscale": {
+              "valType": {},
+              "dflt": {}
+            },
+            "colorbar": {
+              "thicknessmode": {
                 "valType": {},
                 "values": {},
-                "dflt": {},
-                "arrayOk": {}
+                "dflt": {}
               },
-              "opacity": {
-                "valType": {},
-                "min": {},
-                "max": {},
-                "arrayOk": {}
-              },
-              "maxdisplayed": {
+              "thickness": {
                 "valType": {},
                 "min": {},
                 "dflt": {}
               },
-              "size": {
-                "valType": {},
-                "min": {},
-                "dflt": {},
-                "arrayOk": {}
-              },
-              "sizeref": {
-                "valType": {},
-                "dflt": {}
-              },
-              "sizemin": {
-                "valType": {},
-                "min": {},
-                "dflt": {}
-              },
-              "sizemode": {
+              "lenmode": {
                 "valType": {},
                 "values": {},
                 "dflt": {}
               },
-              "showscale": {
+              "len": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "x": {
+                "valType": {},
+                "dflt": {},
+                "min": {},
+                "max": {}
+              },
+              "xanchor": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "xpad": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "y": {
+                "valType": {},
+                "dflt": {},
+                "min": {},
+                "max": {}
+              },
+              "yanchor": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ypad": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "outlinecolor": {
                 "valType": {},
                 "dflt": {}
               },
-              "line": {
-                "width": {
+              "outlinewidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "bordercolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "borderwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "bgcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickmode": {
+                "valType": {},
+                "values": {}
+              },
+              "nticks": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tick0": {
+                "valType": {}
+              },
+              "dtick": {
+                "valType": {}
+              },
+              "tickvals": {
+                "valType": {}
+              },
+              "ticktext": {
+                "valType": {}
+              },
+              "ticks": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticklen": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticklabels": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickfont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
                   "valType": {},
                   "min": {},
-                  "arrayOk": {}
+                  "closure_uid_275815739": {}
                 },
                 "color": {
                   "valType": {},
-                  "arrayOk": {}
+                  "closure_uid_275815739": {}
                 },
-                "colorscale": {
-                  "valType": {}
-                },
-                "cauto": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "cmax": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "cmin": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "autocolorscale": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "reversescale": {
-                  "valType": {},
-                  "dflt": {}
-                }
+                "closure_uid_275815739": {}
               },
-              "color": {
-                "valType": {},
-                "arrayOk": {}
-              },
-              "colorscale": {
-                "valType": {}
-              },
-              "cauto": {
+              "tickangle": {
                 "valType": {},
                 "dflt": {}
               },
-              "cmax": {
+              "tickformat": {
                 "valType": {},
                 "dflt": {}
               },
-              "cmin": {
+              "tickprefix": {
                 "valType": {},
                 "dflt": {}
               },
-              "autocolorscale": {
+              "showtickprefix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticksuffix": {
                 "valType": {},
                 "dflt": {}
               },
-              "reversescale": {
+              "showticksuffix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "separatethousands": {
                 "valType": {},
                 "dflt": {}
-              }
-            },
-            "textfont": {
-              "family": {
-                "valType": {},
-                "noBlank": {},
-                "strict": {},
-                "arrayOk": {}
               },
-              "size": {
+              "exponentformat": {
                 "valType": {},
-                "min": {},
-                "arrayOk": {}
+                "values": {},
+                "dflt": {}
               },
-              "color": {
+              "showexponent": {
                 "valType": {},
-                "arrayOk": {}
-              }
-            },
-            "textposition": {
-              "valType": {},
-              "values": {},
-              "dflt": {},
-              "arrayOk": {}
-            },
-            "hoverinfo": {
-              "valType": {},
-              "flags": {},
-              "extras": {},
-              "dflt": {}
-            },
-            "hoveron": {
-              "valType": {},
-              "flags": {}
-            },
-            "_nestedModules": {
-              "marker.colorbar": {}
+                "values": {},
+                "dflt": {}
+              },
+              "title": {
+                "valType": {},
+                "dflt": {}
+              },
+              "titlefont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "titleside": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "closure_uid_275815739": {}
             }
           },
           "supplyDefaults": function () {},
           "colorbar": function () {},
           "calc": function () {},
           "plot": function () {},
-          "style": function () {},
-          "hoverPoints": function () {},
-          "selectPoints": function () {},
           "moduleType": {},
           "name": {},
           "basePlotModule": {
             "name": {},
             "attr": {},
             "idRoot": {},
-            "idRegex": {},
-            "attrRegex": {},
+            "idRegex": {
+              "x": {},
+              "y": {}
+            },
+            "attrRegex": {
+              "x": {},
+              "y": {}
+            },
             "attributes": {
-              "subplot": {
+              "xaxis": {
+                "valType": {},
+                "dflt": {}
+              },
+              "yaxis": {
                 "valType": {},
                 "dflt": {}
               }
             },
-            "layoutAttributes": {
-              "domain": {
-                "x": {
-                  "valType": {},
-                  "items": {},
-                  "dflt": {}
-                },
-                "y": {
-                  "valType": {},
-                  "items": {},
-                  "dflt": {}
-                }
-              },
-              "bgcolor": {
-                "valType": {},
-                "dflt": {}
-              },
-              "sum": {
-                "valType": {},
-                "dflt": {},
-                "min": {}
-              },
-              "aaxis": {
-                "title": {
-                  "valType": {}
-                },
-                "titlefont": {
-                  "family": {
-                    "valType": {},
-                    "noBlank": {},
-                    "strict": {},
-                    "closure_uid_563121905": {}
-                  },
-                  "size": {
-                    "valType": {},
-                    "min": {},
-                    "closure_uid_563121905": {}
-                  },
-                  "color": {
-                    "valType": {},
-                    "closure_uid_563121905": {}
-                  },
-                  "closure_uid_563121905": {}
-                },
-                "color": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "tickmode": {
-                  "valType": {},
-                  "values": {}
-                },
-                "nticks": {
-                  "valType": {},
-                  "min": {},
-                  "dflt": {}
-                },
-                "tick0": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "dtick": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "tickvals": {
-                  "valType": {}
-                },
-                "ticktext": {
-                  "valType": {}
-                },
-                "ticks": {
-                  "valType": {},
-                  "values": {}
-                },
-                "ticklen": {
-                  "valType": {},
-                  "min": {},
-                  "dflt": {}
-                },
-                "tickwidth": {
-                  "valType": {},
-                  "min": {},
-                  "dflt": {}
-                },
-                "tickcolor": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "showticklabels": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "showtickprefix": {
-                  "valType": {},
-                  "values": {},
-                  "dflt": {}
-                },
-                "tickprefix": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "showticksuffix": {
-                  "valType": {},
-                  "values": {},
-                  "dflt": {}
-                },
-                "ticksuffix": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "showexponent": {
-                  "valType": {},
-                  "values": {},
-                  "dflt": {}
-                },
-                "exponentformat": {
-                  "valType": {},
-                  "values": {},
-                  "dflt": {}
-                },
-                "separatethousands": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "tickfont": {
-                  "family": {
-                    "valType": {},
-                    "noBlank": {},
-                    "strict": {},
-                    "closure_uid_563121905": {}
-                  },
-                  "size": {
-                    "valType": {},
-                    "min": {},
-                    "closure_uid_563121905": {}
-                  },
-                  "color": {
-                    "valType": {},
-                    "closure_uid_563121905": {}
-                  },
-                  "closure_uid_563121905": {}
-                },
-                "tickangle": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "tickformat": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "hoverformat": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "showline": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "linecolor": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "linewidth": {
-                  "valType": {},
-                  "min": {},
-                  "dflt": {}
-                },
-                "showgrid": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "gridcolor": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "gridwidth": {
-                  "valType": {},
-                  "min": {},
-                  "dflt": {}
-                },
-                "min": {
-                  "valType": {},
-                  "dflt": {},
-                  "min": {}
-                }
-              },
-              "baxis": {
-                "title": {
-                  "valType": {}
-                },
-                "titlefont": {
-                  "family": {
-                    "valType": {},
-                    "noBlank": {},
-                    "strict": {},
-                    "closure_uid_563121905": {}
-                  },
-                  "size": {
-                    "valType": {},
-                    "min": {},
-                    "closure_uid_563121905": {}
-                  },
-                  "color": {
-                    "valType": {},
-                    "closure_uid_563121905": {}
-                  },
-                  "closure_uid_563121905": {}
-                },
-                "color": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "tickmode": {
-                  "valType": {},
-                  "values": {}
-                },
-                "nticks": {
-                  "valType": {},
-                  "min": {},
-                  "dflt": {}
-                },
-                "tick0": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "dtick": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "tickvals": {
-                  "valType": {}
-                },
-                "ticktext": {
-                  "valType": {}
-                },
-                "ticks": {
-                  "valType": {},
-                  "values": {}
-                },
-                "ticklen": {
-                  "valType": {},
-                  "min": {},
-                  "dflt": {}
-                },
-                "tickwidth": {
-                  "valType": {},
-                  "min": {},
-                  "dflt": {}
-                },
-                "tickcolor": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "showticklabels": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "showtickprefix": {
-                  "valType": {},
-                  "values": {},
-                  "dflt": {}
-                },
-                "tickprefix": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "showticksuffix": {
-                  "valType": {},
-                  "values": {},
-                  "dflt": {}
-                },
-                "ticksuffix": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "showexponent": {
-                  "valType": {},
-                  "values": {},
-                  "dflt": {}
-                },
-                "exponentformat": {
-                  "valType": {},
-                  "values": {},
-                  "dflt": {}
-                },
-                "separatethousands": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "tickfont": {
-                  "family": {
-                    "valType": {},
-                    "noBlank": {},
-                    "strict": {},
-                    "closure_uid_563121905": {}
-                  },
-                  "size": {
-                    "valType": {},
-                    "min": {},
-                    "closure_uid_563121905": {}
-                  },
-                  "color": {
-                    "valType": {},
-                    "closure_uid_563121905": {}
-                  },
-                  "closure_uid_563121905": {}
-                },
-                "tickangle": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "tickformat": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "hoverformat": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "showline": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "linecolor": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "linewidth": {
-                  "valType": {},
-                  "min": {},
-                  "dflt": {}
-                },
-                "showgrid": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "gridcolor": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "gridwidth": {
-                  "valType": {},
-                  "min": {},
-                  "dflt": {}
-                },
-                "min": {
-                  "valType": {},
-                  "dflt": {},
-                  "min": {}
-                },
-                "closure_uid_563121905": {}
-              },
-              "caxis": {
-                "title": {
-                  "valType": {}
-                },
-                "titlefont": {
-                  "family": {
-                    "valType": {},
-                    "noBlank": {},
-                    "strict": {},
-                    "closure_uid_563121905": {}
-                  },
-                  "size": {
-                    "valType": {},
-                    "min": {},
-                    "closure_uid_563121905": {}
-                  },
-                  "color": {
-                    "valType": {},
-                    "closure_uid_563121905": {}
-                  },
-                  "closure_uid_563121905": {}
-                },
-                "color": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "tickmode": {
-                  "valType": {},
-                  "values": {}
-                },
-                "nticks": {
-                  "valType": {},
-                  "min": {},
-                  "dflt": {}
-                },
-                "tick0": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "dtick": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "tickvals": {
-                  "valType": {}
-                },
-                "ticktext": {
-                  "valType": {}
-                },
-                "ticks": {
-                  "valType": {},
-                  "values": {}
-                },
-                "ticklen": {
-                  "valType": {},
-                  "min": {},
-                  "dflt": {}
-                },
-                "tickwidth": {
-                  "valType": {},
-                  "min": {},
-                  "dflt": {}
-                },
-                "tickcolor": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "showticklabels": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "showtickprefix": {
-                  "valType": {},
-                  "values": {},
-                  "dflt": {}
-                },
-                "tickprefix": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "showticksuffix": {
-                  "valType": {},
-                  "values": {},
-                  "dflt": {}
-                },
-                "ticksuffix": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "showexponent": {
-                  "valType": {},
-                  "values": {},
-                  "dflt": {}
-                },
-                "exponentformat": {
-                  "valType": {},
-                  "values": {},
-                  "dflt": {}
-                },
-                "separatethousands": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "tickfont": {
-                  "family": {
-                    "valType": {},
-                    "noBlank": {},
-                    "strict": {},
-                    "closure_uid_563121905": {}
-                  },
-                  "size": {
-                    "valType": {},
-                    "min": {},
-                    "closure_uid_563121905": {}
-                  },
-                  "color": {
-                    "valType": {},
-                    "closure_uid_563121905": {}
-                  },
-                  "closure_uid_563121905": {}
-                },
-                "tickangle": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "tickformat": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "hoverformat": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "showline": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "linecolor": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "linewidth": {
-                  "valType": {},
-                  "min": {},
-                  "dflt": {}
-                },
-                "showgrid": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "gridcolor": {
-                  "valType": {},
-                  "dflt": {}
-                },
-                "gridwidth": {
-                  "valType": {},
-                  "min": {},
-                  "dflt": {}
-                },
-                "min": {
-                  "valType": {},
-                  "dflt": {},
-                  "min": {}
-                },
-                "closure_uid_563121905": {}
-              }
-            },
-            "supplyLayoutDefaults": function () {},
             "plot": function () {},
-            "clean": function () {}
+            "clean": function () {},
+            "toSVG": function () {}
           },
           "categories": {},
           "meta": {}
         },
         "categories": {
-          "ternary": {},
-          "symbols": {},
-          "markerColorscale": {},
-          "showLegend": {}
+          "gl2d": {},
+          "2dMap": {}
         }
       },
       "scattermapbox": {
@@ -6971,6 +12710,212 @@ var Plotly = {
               "showscale": {
                 "valType": {},
                 "dflt": {}
+              },
+              "colorbar": {
+                "thicknessmode": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "thickness": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "lenmode": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "len": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "x": {
+                  "valType": {},
+                  "dflt": {},
+                  "min": {},
+                  "max": {}
+                },
+                "xanchor": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "xpad": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "y": {
+                  "valType": {},
+                  "dflt": {},
+                  "min": {},
+                  "max": {}
+                },
+                "yanchor": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ypad": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "outlinecolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "outlinewidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "bordercolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "borderwidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "bgcolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickmode": {
+                  "valType": {},
+                  "values": {}
+                },
+                "nticks": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tick0": {
+                  "valType": {}
+                },
+                "dtick": {
+                  "valType": {}
+                },
+                "tickvals": {
+                  "valType": {}
+                },
+                "ticktext": {
+                  "valType": {}
+                },
+                "ticks": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ticklen": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tickwidth": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "tickcolor": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showticklabels": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickfont": {
+                  "family": {
+                    "valType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "size": {
+                    "valType": {},
+                    "min": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "color": {
+                    "valType": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "closure_uid_275815739": {}
+                },
+                "tickangle": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickformat": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "tickprefix": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showtickprefix": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "ticksuffix": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "showticksuffix": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "separatethousands": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "exponentformat": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "showexponent": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "title": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "titlefont": {
+                  "family": {
+                    "valType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "size": {
+                    "valType": {},
+                    "min": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "color": {
+                    "valType": {},
+                    "closure_uid_275815739": {}
+                  },
+                  "closure_uid_275815739": {}
+                },
+                "titleside": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "closure_uid_275815739": {}
               }
             },
             "fill": {
@@ -7007,15 +12952,13 @@ var Plotly = {
               "flags": {},
               "extras": {},
               "dflt": {}
-            },
-            "_nestedModules": {
-              "marker.colorbar": {}
             }
           },
           "supplyDefaults": function () {},
           "colorbar": function () {},
           "calc": function () {},
           "hoverPoints": function () {},
+          "eventData": function () {},
           "plot": function () {},
           "moduleType": {},
           "name": {},
@@ -7113,38 +13056,38 @@ var Plotly = {
                   "radius": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   }
                 },
                 "line": {
                   "width": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   }
                 },
                 "fill": {
                   "outlinecolor": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   }
                 },
                 "symbol": {
                   "icon": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "iconsize": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "text": {
                     "valType": {},
                     "dflt": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "textfont": {
                     "family": {
@@ -7152,25 +13095,25 @@ var Plotly = {
                       "noBlank": {},
                       "strict": {},
                       "dflt": {},
-                      "closure_uid_563121905": {}
+                      "closure_uid_275815739": {}
                     },
                     "size": {
                       "valType": {},
                       "min": {},
-                      "closure_uid_563121905": {}
+                      "closure_uid_275815739": {}
                     },
                     "color": {
                       "valType": {},
-                      "closure_uid_563121905": {}
+                      "closure_uid_275815739": {}
                     },
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   },
                   "textposition": {
                     "valType": {},
                     "values": {},
                     "dflt": {},
                     "arrayOk": {},
-                    "closure_uid_563121905": {}
+                    "closure_uid_275815739": {}
                   }
                 }
               }
@@ -7190,30 +13133,757 @@ var Plotly = {
           "markerColorscale": {},
           "showLegend": {}
         }
+      },
+      "ohlc": {
+        "_module": {
+          "moduleType": {},
+          "name": {},
+          "basePlotModule": {
+            "name": {},
+            "attr": {},
+            "idRoot": {},
+            "idRegex": {
+              "x": {},
+              "y": {}
+            },
+            "attrRegex": {
+              "x": {},
+              "y": {}
+            },
+            "attributes": {
+              "xaxis": {
+                "valType": {},
+                "dflt": {}
+              },
+              "yaxis": {
+                "valType": {},
+                "dflt": {}
+              }
+            },
+            "layoutAttributes": {
+              "color": {
+                "valType": {},
+                "dflt": {}
+              },
+              "title": {
+                "valType": {}
+              },
+              "titlefont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "type": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "autorange": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "rangemode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "range": {
+                "valType": {},
+                "items": {}
+              },
+              "fixedrange": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickmode": {
+                "valType": {},
+                "values": {}
+              },
+              "nticks": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tick0": {
+                "valType": {}
+              },
+              "dtick": {
+                "valType": {}
+              },
+              "tickvals": {
+                "valType": {}
+              },
+              "ticktext": {
+                "valType": {}
+              },
+              "ticks": {
+                "valType": {},
+                "values": {}
+              },
+              "mirror": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticklen": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticklabels": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickfont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "tickangle": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickprefix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showtickprefix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticksuffix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticksuffix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "showexponent": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "exponentformat": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "separatethousands": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "hoverformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showline": {
+                "valType": {},
+                "dflt": {}
+              },
+              "linecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "linewidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "showgrid": {
+                "valType": {}
+              },
+              "gridcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "gridwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "zeroline": {
+                "valType": {}
+              },
+              "zerolinecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "zerolinewidth": {
+                "valType": {},
+                "dflt": {}
+              },
+              "anchor": {
+                "valType": {},
+                "values": {}
+              },
+              "side": {
+                "valType": {},
+                "values": {}
+              },
+              "overlaying": {
+                "valType": {},
+                "values": {}
+              },
+              "domain": {
+                "valType": {},
+                "items": {},
+                "dflt": {}
+              },
+              "position": {
+                "valType": {},
+                "min": {},
+                "max": {},
+                "dflt": {}
+              },
+              "categoryorder": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "categoryarray": {
+                "valType": {}
+              },
+              "_deprecated": {
+                "autotick": {
+                  "valType": {}
+                }
+              }
+            },
+            "transitionAxes": function () {},
+            "plot": function () {},
+            "clean": function () {},
+            "drawFramework": function () {},
+            "rangePlot": function () {}
+          },
+          "categories": {},
+          "meta": {},
+          "attributes": {
+            "x": {
+              "valType": {}
+            },
+            "open": {
+              "valType": {},
+              "dflt": {}
+            },
+            "high": {
+              "valType": {},
+              "dflt": {}
+            },
+            "low": {
+              "valType": {},
+              "dflt": {}
+            },
+            "close": {
+              "valType": {},
+              "dflt": {}
+            },
+            "line": {
+              "width": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "dash": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              }
+            },
+            "increasing": {
+              "name": {
+                "valType": {}
+              },
+              "showlegend": {
+                "valType": {},
+                "dflt": {}
+              },
+              "line": {
+                "color": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "width": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "dash": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                }
+              }
+            },
+            "decreasing": {
+              "name": {
+                "valType": {}
+              },
+              "showlegend": {
+                "valType": {},
+                "dflt": {}
+              },
+              "line": {
+                "color": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "width": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "dash": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                }
+              }
+            },
+            "text": {
+              "valType": {},
+              "dflt": {},
+              "arrayOk": {}
+            },
+            "tickwidth": {
+              "valType": {},
+              "min": {},
+              "max": {},
+              "dflt": {}
+            }
+          },
+          "supplyDefaults": function () {}
+        },
+        "categories": {
+          "cartesian": {},
+          "showLegend": {}
+        }
+      },
+      "candlestick": {
+        "_module": {
+          "moduleType": {},
+          "name": {},
+          "basePlotModule": {
+            "name": {},
+            "attr": {},
+            "idRoot": {},
+            "idRegex": {
+              "x": {},
+              "y": {}
+            },
+            "attrRegex": {
+              "x": {},
+              "y": {}
+            },
+            "attributes": {
+              "xaxis": {
+                "valType": {},
+                "dflt": {}
+              },
+              "yaxis": {
+                "valType": {},
+                "dflt": {}
+              }
+            },
+            "layoutAttributes": {
+              "color": {
+                "valType": {},
+                "dflt": {}
+              },
+              "title": {
+                "valType": {}
+              },
+              "titlefont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "type": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "autorange": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "rangemode": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "range": {
+                "valType": {},
+                "items": {}
+              },
+              "fixedrange": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickmode": {
+                "valType": {},
+                "values": {}
+              },
+              "nticks": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tick0": {
+                "valType": {}
+              },
+              "dtick": {
+                "valType": {}
+              },
+              "tickvals": {
+                "valType": {}
+              },
+              "ticktext": {
+                "valType": {}
+              },
+              "ticks": {
+                "valType": {},
+                "values": {}
+              },
+              "mirror": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticklen": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "tickcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticklabels": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickfont": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                },
+                "closure_uid_275815739": {}
+              },
+              "tickangle": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickprefix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showtickprefix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "ticksuffix": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showticksuffix": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "showexponent": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "exponentformat": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "separatethousands": {
+                "valType": {},
+                "dflt": {}
+              },
+              "tickformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "hoverformat": {
+                "valType": {},
+                "dflt": {}
+              },
+              "showline": {
+                "valType": {},
+                "dflt": {}
+              },
+              "linecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "linewidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "showgrid": {
+                "valType": {}
+              },
+              "gridcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "gridwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              },
+              "zeroline": {
+                "valType": {}
+              },
+              "zerolinecolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "zerolinewidth": {
+                "valType": {},
+                "dflt": {}
+              },
+              "anchor": {
+                "valType": {},
+                "values": {}
+              },
+              "side": {
+                "valType": {},
+                "values": {}
+              },
+              "overlaying": {
+                "valType": {},
+                "values": {}
+              },
+              "domain": {
+                "valType": {},
+                "items": {},
+                "dflt": {}
+              },
+              "position": {
+                "valType": {},
+                "min": {},
+                "max": {},
+                "dflt": {}
+              },
+              "categoryorder": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "categoryarray": {
+                "valType": {}
+              },
+              "_deprecated": {
+                "autotick": {
+                  "valType": {}
+                }
+              }
+            },
+            "transitionAxes": function () {},
+            "plot": function () {},
+            "clean": function () {},
+            "drawFramework": function () {},
+            "rangePlot": function () {}
+          },
+          "categories": {},
+          "meta": {},
+          "attributes": {
+            "x": {
+              "valType": {}
+            },
+            "open": {
+              "valType": {},
+              "dflt": {}
+            },
+            "high": {
+              "valType": {},
+              "dflt": {}
+            },
+            "low": {
+              "valType": {},
+              "dflt": {}
+            },
+            "close": {
+              "valType": {},
+              "dflt": {}
+            },
+            "line": {
+              "width": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              }
+            },
+            "increasing": {
+              "name": {
+                "valType": {}
+              },
+              "showlegend": {
+                "valType": {},
+                "dflt": {}
+              },
+              "line": {
+                "color": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "width": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                }
+              },
+              "fillcolor": {
+                "valType": {}
+              }
+            },
+            "decreasing": {
+              "name": {
+                "valType": {}
+              },
+              "showlegend": {
+                "valType": {},
+                "dflt": {}
+              },
+              "line": {
+                "color": {
+                  "valType": {},
+                  "dflt": {}
+                },
+                "width": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                }
+              },
+              "fillcolor": {
+                "valType": {}
+              }
+            },
+            "text": {
+              "valType": {},
+              "dflt": {},
+              "arrayOk": {}
+            },
+            "whiskerwidth": {
+              "valType": {},
+              "min": {},
+              "max": {},
+              "dflt": {}
+            }
+          },
+          "supplyDefaults": function () {}
+        },
+        "categories": {
+          "cartesian": {},
+          "showLegend": {},
+          "candlestick": {}
+        }
       }
     },
-    "allTypes": {},
     "allCategories": {
       "cartesian": {},
       "symbols": {},
       "markerColorscale": {},
       "errorBarsOK": {},
       "showLegend": {},
-      "bar": {},
       "oriented": {},
       "box": {},
+      "bar": {},
       "2dMap": {},
       "histogram": {},
       "contour": {},
       "pie": {},
+      "ternary": {},
       "gl3d": {},
       "noOpacity": {},
       "geo": {},
       "gl2d": {},
-      "ternary": {},
       "mapbox": {},
-      "gl": {}
+      "gl": {},
+      "candlestick": {}
     },
+    "allTypes": {},
     "subplotsRegistry": {
       "cartesian": {
         "name": {},
@@ -7237,14 +13907,781 @@ var Plotly = {
             "dflt": {}
           }
         },
+        "layoutAttributes": {
+          "color": {
+            "valType": {},
+            "dflt": {}
+          },
+          "title": {
+            "valType": {}
+          },
+          "titlefont": {
+            "family": {
+              "valType": {},
+              "noBlank": {},
+              "strict": {},
+              "closure_uid_275815739": {}
+            },
+            "size": {
+              "valType": {},
+              "min": {},
+              "closure_uid_275815739": {}
+            },
+            "color": {
+              "valType": {},
+              "closure_uid_275815739": {}
+            },
+            "closure_uid_275815739": {}
+          },
+          "type": {
+            "valType": {},
+            "values": {},
+            "dflt": {}
+          },
+          "autorange": {
+            "valType": {},
+            "values": {},
+            "dflt": {}
+          },
+          "rangemode": {
+            "valType": {},
+            "values": {},
+            "dflt": {}
+          },
+          "range": {
+            "valType": {},
+            "items": {}
+          },
+          "fixedrange": {
+            "valType": {},
+            "dflt": {}
+          },
+          "tickmode": {
+            "valType": {},
+            "values": {}
+          },
+          "nticks": {
+            "valType": {},
+            "min": {},
+            "dflt": {}
+          },
+          "tick0": {
+            "valType": {}
+          },
+          "dtick": {
+            "valType": {}
+          },
+          "tickvals": {
+            "valType": {}
+          },
+          "ticktext": {
+            "valType": {}
+          },
+          "ticks": {
+            "valType": {},
+            "values": {}
+          },
+          "mirror": {
+            "valType": {},
+            "values": {},
+            "dflt": {}
+          },
+          "ticklen": {
+            "valType": {},
+            "min": {},
+            "dflt": {}
+          },
+          "tickwidth": {
+            "valType": {},
+            "min": {},
+            "dflt": {}
+          },
+          "tickcolor": {
+            "valType": {},
+            "dflt": {}
+          },
+          "showticklabels": {
+            "valType": {},
+            "dflt": {}
+          },
+          "tickfont": {
+            "family": {
+              "valType": {},
+              "noBlank": {},
+              "strict": {},
+              "closure_uid_275815739": {}
+            },
+            "size": {
+              "valType": {},
+              "min": {},
+              "closure_uid_275815739": {}
+            },
+            "color": {
+              "valType": {},
+              "closure_uid_275815739": {}
+            },
+            "closure_uid_275815739": {}
+          },
+          "tickangle": {
+            "valType": {},
+            "dflt": {}
+          },
+          "tickprefix": {
+            "valType": {},
+            "dflt": {}
+          },
+          "showtickprefix": {
+            "valType": {},
+            "values": {},
+            "dflt": {}
+          },
+          "ticksuffix": {
+            "valType": {},
+            "dflt": {}
+          },
+          "showticksuffix": {
+            "valType": {},
+            "values": {},
+            "dflt": {}
+          },
+          "showexponent": {
+            "valType": {},
+            "values": {},
+            "dflt": {}
+          },
+          "exponentformat": {
+            "valType": {},
+            "values": {},
+            "dflt": {}
+          },
+          "separatethousands": {
+            "valType": {},
+            "dflt": {}
+          },
+          "tickformat": {
+            "valType": {},
+            "dflt": {}
+          },
+          "hoverformat": {
+            "valType": {},
+            "dflt": {}
+          },
+          "showline": {
+            "valType": {},
+            "dflt": {}
+          },
+          "linecolor": {
+            "valType": {},
+            "dflt": {}
+          },
+          "linewidth": {
+            "valType": {},
+            "min": {},
+            "dflt": {}
+          },
+          "showgrid": {
+            "valType": {}
+          },
+          "gridcolor": {
+            "valType": {},
+            "dflt": {}
+          },
+          "gridwidth": {
+            "valType": {},
+            "min": {},
+            "dflt": {}
+          },
+          "zeroline": {
+            "valType": {}
+          },
+          "zerolinecolor": {
+            "valType": {},
+            "dflt": {}
+          },
+          "zerolinewidth": {
+            "valType": {},
+            "dflt": {}
+          },
+          "anchor": {
+            "valType": {},
+            "values": {}
+          },
+          "side": {
+            "valType": {},
+            "values": {}
+          },
+          "overlaying": {
+            "valType": {},
+            "values": {}
+          },
+          "domain": {
+            "valType": {},
+            "items": {},
+            "dflt": {}
+          },
+          "position": {
+            "valType": {},
+            "min": {},
+            "max": {},
+            "dflt": {}
+          },
+          "categoryorder": {
+            "valType": {},
+            "values": {},
+            "dflt": {}
+          },
+          "categoryarray": {
+            "valType": {}
+          },
+          "_deprecated": {
+            "autotick": {
+              "valType": {}
+            }
+          }
+        },
         "transitionAxes": function () {},
         "plot": function () {},
-        "clean": function () {}
+        "clean": function () {},
+        "drawFramework": function () {},
+        "rangePlot": function () {}
       },
       "pie": {
         "name": {},
         "plot": function () {},
         "clean": function () {}
+      },
+      "ternary": {
+        "name": {},
+        "attr": {},
+        "idRoot": {},
+        "idRegex": {},
+        "attrRegex": {},
+        "attributes": {
+          "subplot": {
+            "valType": {},
+            "dflt": {}
+          }
+        },
+        "layoutAttributes": {
+          "domain": {
+            "x": {
+              "valType": {},
+              "items": {},
+              "dflt": {}
+            },
+            "y": {
+              "valType": {},
+              "items": {},
+              "dflt": {}
+            }
+          },
+          "bgcolor": {
+            "valType": {},
+            "dflt": {}
+          },
+          "sum": {
+            "valType": {},
+            "dflt": {},
+            "min": {}
+          },
+          "aaxis": {
+            "title": {
+              "valType": {}
+            },
+            "titlefont": {
+              "family": {
+                "valType": {},
+                "noBlank": {},
+                "strict": {},
+                "closure_uid_275815739": {}
+              },
+              "size": {
+                "valType": {},
+                "min": {},
+                "closure_uid_275815739": {}
+              },
+              "color": {
+                "valType": {},
+                "closure_uid_275815739": {}
+              },
+              "closure_uid_275815739": {}
+            },
+            "color": {
+              "valType": {},
+              "dflt": {}
+            },
+            "tickmode": {
+              "valType": {},
+              "values": {}
+            },
+            "nticks": {
+              "valType": {},
+              "min": {},
+              "dflt": {}
+            },
+            "tick0": {
+              "valType": {}
+            },
+            "dtick": {
+              "valType": {}
+            },
+            "tickvals": {
+              "valType": {}
+            },
+            "ticktext": {
+              "valType": {}
+            },
+            "ticks": {
+              "valType": {},
+              "values": {}
+            },
+            "ticklen": {
+              "valType": {},
+              "min": {},
+              "dflt": {}
+            },
+            "tickwidth": {
+              "valType": {},
+              "min": {},
+              "dflt": {}
+            },
+            "tickcolor": {
+              "valType": {},
+              "dflt": {}
+            },
+            "showticklabels": {
+              "valType": {},
+              "dflt": {}
+            },
+            "showtickprefix": {
+              "valType": {},
+              "values": {},
+              "dflt": {}
+            },
+            "tickprefix": {
+              "valType": {},
+              "dflt": {}
+            },
+            "showticksuffix": {
+              "valType": {},
+              "values": {},
+              "dflt": {}
+            },
+            "ticksuffix": {
+              "valType": {},
+              "dflt": {}
+            },
+            "showexponent": {
+              "valType": {},
+              "values": {},
+              "dflt": {}
+            },
+            "exponentformat": {
+              "valType": {},
+              "values": {},
+              "dflt": {}
+            },
+            "separatethousands": {
+              "valType": {},
+              "dflt": {}
+            },
+            "tickfont": {
+              "family": {
+                "valType": {},
+                "noBlank": {},
+                "strict": {},
+                "closure_uid_275815739": {}
+              },
+              "size": {
+                "valType": {},
+                "min": {},
+                "closure_uid_275815739": {}
+              },
+              "color": {
+                "valType": {},
+                "closure_uid_275815739": {}
+              },
+              "closure_uid_275815739": {}
+            },
+            "tickangle": {
+              "valType": {},
+              "dflt": {}
+            },
+            "tickformat": {
+              "valType": {},
+              "dflt": {}
+            },
+            "hoverformat": {
+              "valType": {},
+              "dflt": {}
+            },
+            "showline": {
+              "valType": {},
+              "dflt": {}
+            },
+            "linecolor": {
+              "valType": {},
+              "dflt": {}
+            },
+            "linewidth": {
+              "valType": {},
+              "min": {},
+              "dflt": {}
+            },
+            "showgrid": {
+              "valType": {},
+              "dflt": {}
+            },
+            "gridcolor": {
+              "valType": {},
+              "dflt": {}
+            },
+            "gridwidth": {
+              "valType": {},
+              "min": {},
+              "dflt": {}
+            },
+            "min": {
+              "valType": {},
+              "dflt": {},
+              "min": {}
+            },
+            "closure_uid_275815739": {}
+          },
+          "baxis": {
+            "title": {
+              "valType": {}
+            },
+            "titlefont": {
+              "family": {
+                "valType": {},
+                "noBlank": {},
+                "strict": {},
+                "closure_uid_275815739": {}
+              },
+              "size": {
+                "valType": {},
+                "min": {},
+                "closure_uid_275815739": {}
+              },
+              "color": {
+                "valType": {},
+                "closure_uid_275815739": {}
+              },
+              "closure_uid_275815739": {}
+            },
+            "color": {
+              "valType": {},
+              "dflt": {}
+            },
+            "tickmode": {
+              "valType": {},
+              "values": {}
+            },
+            "nticks": {
+              "valType": {},
+              "min": {},
+              "dflt": {}
+            },
+            "tick0": {
+              "valType": {}
+            },
+            "dtick": {
+              "valType": {}
+            },
+            "tickvals": {
+              "valType": {}
+            },
+            "ticktext": {
+              "valType": {}
+            },
+            "ticks": {
+              "valType": {},
+              "values": {}
+            },
+            "ticklen": {
+              "valType": {},
+              "min": {},
+              "dflt": {}
+            },
+            "tickwidth": {
+              "valType": {},
+              "min": {},
+              "dflt": {}
+            },
+            "tickcolor": {
+              "valType": {},
+              "dflt": {}
+            },
+            "showticklabels": {
+              "valType": {},
+              "dflt": {}
+            },
+            "showtickprefix": {
+              "valType": {},
+              "values": {},
+              "dflt": {}
+            },
+            "tickprefix": {
+              "valType": {},
+              "dflt": {}
+            },
+            "showticksuffix": {
+              "valType": {},
+              "values": {},
+              "dflt": {}
+            },
+            "ticksuffix": {
+              "valType": {},
+              "dflt": {}
+            },
+            "showexponent": {
+              "valType": {},
+              "values": {},
+              "dflt": {}
+            },
+            "exponentformat": {
+              "valType": {},
+              "values": {},
+              "dflt": {}
+            },
+            "separatethousands": {
+              "valType": {},
+              "dflt": {}
+            },
+            "tickfont": {
+              "family": {
+                "valType": {},
+                "noBlank": {},
+                "strict": {},
+                "closure_uid_275815739": {}
+              },
+              "size": {
+                "valType": {},
+                "min": {},
+                "closure_uid_275815739": {}
+              },
+              "color": {
+                "valType": {},
+                "closure_uid_275815739": {}
+              },
+              "closure_uid_275815739": {}
+            },
+            "tickangle": {
+              "valType": {},
+              "dflt": {}
+            },
+            "tickformat": {
+              "valType": {},
+              "dflt": {}
+            },
+            "hoverformat": {
+              "valType": {},
+              "dflt": {}
+            },
+            "showline": {
+              "valType": {},
+              "dflt": {}
+            },
+            "linecolor": {
+              "valType": {},
+              "dflt": {}
+            },
+            "linewidth": {
+              "valType": {},
+              "min": {},
+              "dflt": {}
+            },
+            "showgrid": {
+              "valType": {},
+              "dflt": {}
+            },
+            "gridcolor": {
+              "valType": {},
+              "dflt": {}
+            },
+            "gridwidth": {
+              "valType": {},
+              "min": {},
+              "dflt": {}
+            },
+            "min": {
+              "valType": {},
+              "dflt": {},
+              "min": {}
+            },
+            "closure_uid_275815739": {}
+          },
+          "caxis": {
+            "title": {
+              "valType": {}
+            },
+            "titlefont": {
+              "family": {
+                "valType": {},
+                "noBlank": {},
+                "strict": {},
+                "closure_uid_275815739": {}
+              },
+              "size": {
+                "valType": {},
+                "min": {},
+                "closure_uid_275815739": {}
+              },
+              "color": {
+                "valType": {},
+                "closure_uid_275815739": {}
+              },
+              "closure_uid_275815739": {}
+            },
+            "color": {
+              "valType": {},
+              "dflt": {}
+            },
+            "tickmode": {
+              "valType": {},
+              "values": {}
+            },
+            "nticks": {
+              "valType": {},
+              "min": {},
+              "dflt": {}
+            },
+            "tick0": {
+              "valType": {}
+            },
+            "dtick": {
+              "valType": {}
+            },
+            "tickvals": {
+              "valType": {}
+            },
+            "ticktext": {
+              "valType": {}
+            },
+            "ticks": {
+              "valType": {},
+              "values": {}
+            },
+            "ticklen": {
+              "valType": {},
+              "min": {},
+              "dflt": {}
+            },
+            "tickwidth": {
+              "valType": {},
+              "min": {},
+              "dflt": {}
+            },
+            "tickcolor": {
+              "valType": {},
+              "dflt": {}
+            },
+            "showticklabels": {
+              "valType": {},
+              "dflt": {}
+            },
+            "showtickprefix": {
+              "valType": {},
+              "values": {},
+              "dflt": {}
+            },
+            "tickprefix": {
+              "valType": {},
+              "dflt": {}
+            },
+            "showticksuffix": {
+              "valType": {},
+              "values": {},
+              "dflt": {}
+            },
+            "ticksuffix": {
+              "valType": {},
+              "dflt": {}
+            },
+            "showexponent": {
+              "valType": {},
+              "values": {},
+              "dflt": {}
+            },
+            "exponentformat": {
+              "valType": {},
+              "values": {},
+              "dflt": {}
+            },
+            "separatethousands": {
+              "valType": {},
+              "dflt": {}
+            },
+            "tickfont": {
+              "family": {
+                "valType": {},
+                "noBlank": {},
+                "strict": {},
+                "closure_uid_275815739": {}
+              },
+              "size": {
+                "valType": {},
+                "min": {},
+                "closure_uid_275815739": {}
+              },
+              "color": {
+                "valType": {},
+                "closure_uid_275815739": {}
+              },
+              "closure_uid_275815739": {}
+            },
+            "tickangle": {
+              "valType": {},
+              "dflt": {}
+            },
+            "tickformat": {
+              "valType": {},
+              "dflt": {}
+            },
+            "hoverformat": {
+              "valType": {},
+              "dflt": {}
+            },
+            "showline": {
+              "valType": {},
+              "dflt": {}
+            },
+            "linecolor": {
+              "valType": {},
+              "dflt": {}
+            },
+            "linewidth": {
+              "valType": {},
+              "min": {},
+              "dflt": {}
+            },
+            "showgrid": {
+              "valType": {},
+              "dflt": {}
+            },
+            "gridcolor": {
+              "valType": {},
+              "dflt": {}
+            },
+            "gridwidth": {
+              "valType": {},
+              "min": {},
+              "dflt": {}
+            },
+            "min": {
+              "valType": {},
+              "dflt": {},
+              "min": {}
+            },
+            "closure_uid_275815739": {}
+          },
+          "closure_uid_275815739": {}
+        },
+        "supplyLayoutDefaults": function () {},
+        "plot": function () {},
+        "clean": function () {},
+        "closure_uid_275815739": {}
       },
       "gl3d": {
         "name": {},
@@ -7268,57 +14705,57 @@ var Plotly = {
               "x": {
                 "valType": {},
                 "dflt": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "y": {
                 "valType": {},
                 "dflt": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "z": {
                 "valType": {},
                 "dflt": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
             "center": {
               "x": {
                 "valType": {},
                 "dflt": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "y": {
                 "valType": {},
                 "dflt": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "z": {
                 "valType": {},
                 "dflt": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
             "eye": {
               "x": {
                 "valType": {},
                 "dflt": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "y": {
                 "valType": {},
                 "dflt": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "z": {
                 "valType": {},
                 "dflt": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
-            "closure_uid_563121905": {}
+            "closure_uid_275815739": {}
           },
           "domain": {
             "x": {
@@ -7401,18 +14838,18 @@ var Plotly = {
                 "valType": {},
                 "noBlank": {},
                 "strict": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "size": {
                 "valType": {},
                 "min": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "color": {
                 "valType": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
             "type": {
               "valType": {},
@@ -7433,10 +14870,6 @@ var Plotly = {
               "valType": {},
               "items": {}
             },
-            "fixedrange": {
-              "valType": {},
-              "dflt": {}
-            },
             "tickmode": {
               "valType": {},
               "values": {}
@@ -7447,12 +14880,10 @@ var Plotly = {
               "dflt": {}
             },
             "tick0": {
-              "valType": {},
-              "dflt": {}
+              "valType": {}
             },
             "dtick": {
-              "valType": {},
-              "dflt": {}
+              "valType": {}
             },
             "tickvals": {
               "valType": {}
@@ -7492,18 +14923,18 @@ var Plotly = {
                 "valType": {},
                 "noBlank": {},
                 "strict": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "size": {
                 "valType": {},
                 "min": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "color": {
                 "valType": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
             "tickangle": {
               "valType": {},
@@ -7585,7 +15016,7 @@ var Plotly = {
               "valType": {},
               "dflt": {}
             },
-            "closure_uid_563121905": {}
+            "closure_uid_275815739": {}
           },
           "yaxis": {
             "showspikes": {
@@ -7637,18 +15068,18 @@ var Plotly = {
                 "valType": {},
                 "noBlank": {},
                 "strict": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "size": {
                 "valType": {},
                 "min": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "color": {
                 "valType": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
             "type": {
               "valType": {},
@@ -7669,10 +15100,6 @@ var Plotly = {
               "valType": {},
               "items": {}
             },
-            "fixedrange": {
-              "valType": {},
-              "dflt": {}
-            },
             "tickmode": {
               "valType": {},
               "values": {}
@@ -7683,12 +15110,10 @@ var Plotly = {
               "dflt": {}
             },
             "tick0": {
-              "valType": {},
-              "dflt": {}
+              "valType": {}
             },
             "dtick": {
-              "valType": {},
-              "dflt": {}
+              "valType": {}
             },
             "tickvals": {
               "valType": {}
@@ -7728,18 +15153,18 @@ var Plotly = {
                 "valType": {},
                 "noBlank": {},
                 "strict": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "size": {
                 "valType": {},
                 "min": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "color": {
                 "valType": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
             "tickangle": {
               "valType": {},
@@ -7821,7 +15246,7 @@ var Plotly = {
               "valType": {},
               "dflt": {}
             },
-            "closure_uid_563121905": {}
+            "closure_uid_275815739": {}
           },
           "zaxis": {
             "showspikes": {
@@ -7873,18 +15298,18 @@ var Plotly = {
                 "valType": {},
                 "noBlank": {},
                 "strict": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "size": {
                 "valType": {},
                 "min": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "color": {
                 "valType": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
             "type": {
               "valType": {},
@@ -7905,10 +15330,6 @@ var Plotly = {
               "valType": {},
               "items": {}
             },
-            "fixedrange": {
-              "valType": {},
-              "dflt": {}
-            },
             "tickmode": {
               "valType": {},
               "values": {}
@@ -7919,12 +15340,10 @@ var Plotly = {
               "dflt": {}
             },
             "tick0": {
-              "valType": {},
-              "dflt": {}
+              "valType": {}
             },
             "dtick": {
-              "valType": {},
-              "dflt": {}
+              "valType": {}
             },
             "tickvals": {
               "valType": {}
@@ -7964,18 +15383,18 @@ var Plotly = {
                 "valType": {},
                 "noBlank": {},
                 "strict": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "size": {
                 "valType": {},
                 "min": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "color": {
                 "valType": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
             "tickangle": {
               "valType": {},
@@ -8057,7 +15476,7 @@ var Plotly = {
               "valType": {},
               "dflt": {}
             },
-            "closure_uid_563121905": {}
+            "closure_uid_275815739": {}
           },
           "dragmode": {
             "valType": {},
@@ -8074,7 +15493,7 @@ var Plotly = {
               "valType": {}
             }
           },
-          "closure_uid_563121905": {}
+          "closure_uid_275815739": {}
         },
         "supplyLayoutDefaults": function () {},
         "plot": function () {},
@@ -8082,7 +15501,7 @@ var Plotly = {
         "toSVG": function () {},
         "cleanId": function () {},
         "setConvert": function () {},
-        "closure_uid_563121905": {}
+        "closure_uid_275815739": {}
       },
       "geo": {
         "name": {},
@@ -8128,17 +15547,17 @@ var Plotly = {
             "rotation": {
               "lon": {
                 "valType": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "lat": {
                 "valType": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "roll": {
                 "valType": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
             "parallels": {
               "valType": {},
@@ -8150,7 +15569,7 @@ var Plotly = {
               "max": {},
               "dflt": {}
             },
-            "closure_uid_563121905": {}
+            "closure_uid_275815739": {}
           },
           "showcoastlines": {
             "valType": {}
@@ -8291,13 +15710,13 @@ var Plotly = {
               "dflt": {}
             }
           },
-          "closure_uid_563121905": {}
+          "closure_uid_275815739": {}
         },
         "supplyLayoutDefaults": function () {},
         "plot": function () {},
         "clean": function () {},
         "toSVG": function () {},
-        "closure_uid_563121905": {}
+        "closure_uid_275815739": {}
       },
       "gl2d": {
         "name": {},
@@ -8324,545 +15743,6 @@ var Plotly = {
         "plot": function () {},
         "clean": function () {},
         "toSVG": function () {}
-      },
-      "ternary": {
-        "name": {},
-        "attr": {},
-        "idRoot": {},
-        "idRegex": {},
-        "attrRegex": {},
-        "attributes": {
-          "subplot": {
-            "valType": {},
-            "dflt": {}
-          }
-        },
-        "layoutAttributes": {
-          "domain": {
-            "x": {
-              "valType": {},
-              "items": {},
-              "dflt": {}
-            },
-            "y": {
-              "valType": {},
-              "items": {},
-              "dflt": {}
-            }
-          },
-          "bgcolor": {
-            "valType": {},
-            "dflt": {}
-          },
-          "sum": {
-            "valType": {},
-            "dflt": {},
-            "min": {}
-          },
-          "aaxis": {
-            "title": {
-              "valType": {}
-            },
-            "titlefont": {
-              "family": {
-                "valType": {},
-                "noBlank": {},
-                "strict": {},
-                "closure_uid_563121905": {}
-              },
-              "size": {
-                "valType": {},
-                "min": {},
-                "closure_uid_563121905": {}
-              },
-              "color": {
-                "valType": {},
-                "closure_uid_563121905": {}
-              },
-              "closure_uid_563121905": {}
-            },
-            "color": {
-              "valType": {},
-              "dflt": {}
-            },
-            "tickmode": {
-              "valType": {},
-              "values": {}
-            },
-            "nticks": {
-              "valType": {},
-              "min": {},
-              "dflt": {}
-            },
-            "tick0": {
-              "valType": {},
-              "dflt": {}
-            },
-            "dtick": {
-              "valType": {},
-              "dflt": {}
-            },
-            "tickvals": {
-              "valType": {}
-            },
-            "ticktext": {
-              "valType": {}
-            },
-            "ticks": {
-              "valType": {},
-              "values": {}
-            },
-            "ticklen": {
-              "valType": {},
-              "min": {},
-              "dflt": {}
-            },
-            "tickwidth": {
-              "valType": {},
-              "min": {},
-              "dflt": {}
-            },
-            "tickcolor": {
-              "valType": {},
-              "dflt": {}
-            },
-            "showticklabels": {
-              "valType": {},
-              "dflt": {}
-            },
-            "showtickprefix": {
-              "valType": {},
-              "values": {},
-              "dflt": {}
-            },
-            "tickprefix": {
-              "valType": {},
-              "dflt": {}
-            },
-            "showticksuffix": {
-              "valType": {},
-              "values": {},
-              "dflt": {}
-            },
-            "ticksuffix": {
-              "valType": {},
-              "dflt": {}
-            },
-            "showexponent": {
-              "valType": {},
-              "values": {},
-              "dflt": {}
-            },
-            "exponentformat": {
-              "valType": {},
-              "values": {},
-              "dflt": {}
-            },
-            "separatethousands": {
-              "valType": {},
-              "dflt": {}
-            },
-            "tickfont": {
-              "family": {
-                "valType": {},
-                "noBlank": {},
-                "strict": {},
-                "closure_uid_563121905": {}
-              },
-              "size": {
-                "valType": {},
-                "min": {},
-                "closure_uid_563121905": {}
-              },
-              "color": {
-                "valType": {},
-                "closure_uid_563121905": {}
-              },
-              "closure_uid_563121905": {}
-            },
-            "tickangle": {
-              "valType": {},
-              "dflt": {}
-            },
-            "tickformat": {
-              "valType": {},
-              "dflt": {}
-            },
-            "hoverformat": {
-              "valType": {},
-              "dflt": {}
-            },
-            "showline": {
-              "valType": {},
-              "dflt": {}
-            },
-            "linecolor": {
-              "valType": {},
-              "dflt": {}
-            },
-            "linewidth": {
-              "valType": {},
-              "min": {},
-              "dflt": {}
-            },
-            "showgrid": {
-              "valType": {},
-              "dflt": {}
-            },
-            "gridcolor": {
-              "valType": {},
-              "dflt": {}
-            },
-            "gridwidth": {
-              "valType": {},
-              "min": {},
-              "dflt": {}
-            },
-            "min": {
-              "valType": {},
-              "dflt": {},
-              "min": {}
-            },
-            "closure_uid_563121905": {}
-          },
-          "baxis": {
-            "title": {
-              "valType": {}
-            },
-            "titlefont": {
-              "family": {
-                "valType": {},
-                "noBlank": {},
-                "strict": {},
-                "closure_uid_563121905": {}
-              },
-              "size": {
-                "valType": {},
-                "min": {},
-                "closure_uid_563121905": {}
-              },
-              "color": {
-                "valType": {},
-                "closure_uid_563121905": {}
-              },
-              "closure_uid_563121905": {}
-            },
-            "color": {
-              "valType": {},
-              "dflt": {}
-            },
-            "tickmode": {
-              "valType": {},
-              "values": {}
-            },
-            "nticks": {
-              "valType": {},
-              "min": {},
-              "dflt": {}
-            },
-            "tick0": {
-              "valType": {},
-              "dflt": {}
-            },
-            "dtick": {
-              "valType": {},
-              "dflt": {}
-            },
-            "tickvals": {
-              "valType": {}
-            },
-            "ticktext": {
-              "valType": {}
-            },
-            "ticks": {
-              "valType": {},
-              "values": {}
-            },
-            "ticklen": {
-              "valType": {},
-              "min": {},
-              "dflt": {}
-            },
-            "tickwidth": {
-              "valType": {},
-              "min": {},
-              "dflt": {}
-            },
-            "tickcolor": {
-              "valType": {},
-              "dflt": {}
-            },
-            "showticklabels": {
-              "valType": {},
-              "dflt": {}
-            },
-            "showtickprefix": {
-              "valType": {},
-              "values": {},
-              "dflt": {}
-            },
-            "tickprefix": {
-              "valType": {},
-              "dflt": {}
-            },
-            "showticksuffix": {
-              "valType": {},
-              "values": {},
-              "dflt": {}
-            },
-            "ticksuffix": {
-              "valType": {},
-              "dflt": {}
-            },
-            "showexponent": {
-              "valType": {},
-              "values": {},
-              "dflt": {}
-            },
-            "exponentformat": {
-              "valType": {},
-              "values": {},
-              "dflt": {}
-            },
-            "separatethousands": {
-              "valType": {},
-              "dflt": {}
-            },
-            "tickfont": {
-              "family": {
-                "valType": {},
-                "noBlank": {},
-                "strict": {},
-                "closure_uid_563121905": {}
-              },
-              "size": {
-                "valType": {},
-                "min": {},
-                "closure_uid_563121905": {}
-              },
-              "color": {
-                "valType": {},
-                "closure_uid_563121905": {}
-              },
-              "closure_uid_563121905": {}
-            },
-            "tickangle": {
-              "valType": {},
-              "dflt": {}
-            },
-            "tickformat": {
-              "valType": {},
-              "dflt": {}
-            },
-            "hoverformat": {
-              "valType": {},
-              "dflt": {}
-            },
-            "showline": {
-              "valType": {},
-              "dflt": {}
-            },
-            "linecolor": {
-              "valType": {},
-              "dflt": {}
-            },
-            "linewidth": {
-              "valType": {},
-              "min": {},
-              "dflt": {}
-            },
-            "showgrid": {
-              "valType": {},
-              "dflt": {}
-            },
-            "gridcolor": {
-              "valType": {},
-              "dflt": {}
-            },
-            "gridwidth": {
-              "valType": {},
-              "min": {},
-              "dflt": {}
-            },
-            "min": {
-              "valType": {},
-              "dflt": {},
-              "min": {}
-            },
-            "closure_uid_563121905": {}
-          },
-          "caxis": {
-            "title": {
-              "valType": {}
-            },
-            "titlefont": {
-              "family": {
-                "valType": {},
-                "noBlank": {},
-                "strict": {},
-                "closure_uid_563121905": {}
-              },
-              "size": {
-                "valType": {},
-                "min": {},
-                "closure_uid_563121905": {}
-              },
-              "color": {
-                "valType": {},
-                "closure_uid_563121905": {}
-              },
-              "closure_uid_563121905": {}
-            },
-            "color": {
-              "valType": {},
-              "dflt": {}
-            },
-            "tickmode": {
-              "valType": {},
-              "values": {}
-            },
-            "nticks": {
-              "valType": {},
-              "min": {},
-              "dflt": {}
-            },
-            "tick0": {
-              "valType": {},
-              "dflt": {}
-            },
-            "dtick": {
-              "valType": {},
-              "dflt": {}
-            },
-            "tickvals": {
-              "valType": {}
-            },
-            "ticktext": {
-              "valType": {}
-            },
-            "ticks": {
-              "valType": {},
-              "values": {}
-            },
-            "ticklen": {
-              "valType": {},
-              "min": {},
-              "dflt": {}
-            },
-            "tickwidth": {
-              "valType": {},
-              "min": {},
-              "dflt": {}
-            },
-            "tickcolor": {
-              "valType": {},
-              "dflt": {}
-            },
-            "showticklabels": {
-              "valType": {},
-              "dflt": {}
-            },
-            "showtickprefix": {
-              "valType": {},
-              "values": {},
-              "dflt": {}
-            },
-            "tickprefix": {
-              "valType": {},
-              "dflt": {}
-            },
-            "showticksuffix": {
-              "valType": {},
-              "values": {},
-              "dflt": {}
-            },
-            "ticksuffix": {
-              "valType": {},
-              "dflt": {}
-            },
-            "showexponent": {
-              "valType": {},
-              "values": {},
-              "dflt": {}
-            },
-            "exponentformat": {
-              "valType": {},
-              "values": {},
-              "dflt": {}
-            },
-            "separatethousands": {
-              "valType": {},
-              "dflt": {}
-            },
-            "tickfont": {
-              "family": {
-                "valType": {},
-                "noBlank": {},
-                "strict": {},
-                "closure_uid_563121905": {}
-              },
-              "size": {
-                "valType": {},
-                "min": {},
-                "closure_uid_563121905": {}
-              },
-              "color": {
-                "valType": {},
-                "closure_uid_563121905": {}
-              },
-              "closure_uid_563121905": {}
-            },
-            "tickangle": {
-              "valType": {},
-              "dflt": {}
-            },
-            "tickformat": {
-              "valType": {},
-              "dflt": {}
-            },
-            "hoverformat": {
-              "valType": {},
-              "dflt": {}
-            },
-            "showline": {
-              "valType": {},
-              "dflt": {}
-            },
-            "linecolor": {
-              "valType": {},
-              "dflt": {}
-            },
-            "linewidth": {
-              "valType": {},
-              "min": {},
-              "dflt": {}
-            },
-            "showgrid": {
-              "valType": {},
-              "dflt": {}
-            },
-            "gridcolor": {
-              "valType": {},
-              "dflt": {}
-            },
-            "gridwidth": {
-              "valType": {},
-              "min": {},
-              "dflt": {}
-            },
-            "min": {
-              "valType": {},
-              "dflt": {},
-              "min": {}
-            },
-            "closure_uid_563121905": {}
-          },
-          "closure_uid_563121905": {}
-        },
-        "supplyLayoutDefaults": function () {},
-        "plot": function () {},
-        "clean": function () {},
-        "closure_uid_563121905": {}
       },
       "mapbox": {
         "name": {},
@@ -8958,41 +15838,41 @@ var Plotly = {
               "radius": {
                 "valType": {},
                 "dflt": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
             "line": {
               "width": {
                 "valType": {},
                 "dflt": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
             "fill": {
               "outlinecolor": {
                 "valType": {},
                 "dflt": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
             "symbol": {
               "icon": {
                 "valType": {},
                 "dflt": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "iconsize": {
                 "valType": {},
                 "dflt": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "text": {
                 "valType": {},
                 "dflt": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "textfont": {
                 "family": {
@@ -9000,40 +15880,105 @@ var Plotly = {
                   "noBlank": {},
                   "strict": {},
                   "dflt": {},
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
                 "size": {
                   "valType": {},
                   "min": {},
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
                 "color": {
                   "valType": {},
-                  "closure_uid_563121905": {}
+                  "closure_uid_275815739": {}
                 },
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
               "textposition": {
                 "valType": {},
                 "values": {},
                 "dflt": {},
                 "arrayOk": {},
-                "closure_uid_563121905": {}
+                "closure_uid_275815739": {}
               },
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
-            "closure_uid_563121905": {}
+            "closure_uid_275815739": {}
           },
-          "closure_uid_563121905": {}
+          "closure_uid_275815739": {}
         },
         "supplyLayoutDefaults": function () {},
         "plot": function () {},
         "clean": function () {},
         "toSVG": function () {},
-        "closure_uid_563121905": {}
+        "closure_uid_275815739": {}
       }
     },
-    "transformsRegistry": {},
+    "transformsRegistry": {
+      "ohlc": {
+        "moduleType": {},
+        "name": {},
+        "attributes": {},
+        "supplyDefaults": function () {},
+        "transform": function () {},
+        "calcTransform": function () {}
+      },
+      "candlestick": {
+        "moduleType": {},
+        "name": {},
+        "attributes": {},
+        "supplyDefaults": function () {},
+        "transform": function () {},
+        "calcTransform": function () {}
+      },
+      "filter": {
+        "moduleType": {},
+        "name": {},
+        "attributes": {
+          "enabled": {
+            "valType": {},
+            "dflt": {}
+          },
+          "target": {
+            "valType": {},
+            "strict": {},
+            "noBlank": {},
+            "arrayOk": {},
+            "dflt": {}
+          },
+          "operation": {
+            "valType": {},
+            "values": {},
+            "dflt": {}
+          },
+          "value": {
+            "valType": {},
+            "dflt": {}
+          }
+        },
+        "supplyDefaults": function () {},
+        "calcTransform": function () {}
+      },
+      "groupby": {
+        "moduleType": {},
+        "name": {},
+        "attributes": {
+          "enabled": {
+            "valType": {},
+            "dflt": {}
+          },
+          "groups": {
+            "valType": {},
+            "dflt": {}
+          },
+          "style": {
+            "valType": {},
+            "dflt": {}
+          }
+        },
+        "supplyDefaults": function () {},
+        "transform": function () {}
+      }
+    },
     "componentsRegistry": {
       "legend": {
         "moduleType": {},
@@ -9056,16 +16001,16 @@ var Plotly = {
               "valType": {},
               "noBlank": {},
               "strict": {},
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
             "size": {
               "valType": {},
               "min": {},
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
             "color": {
               "valType": {},
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             }
           },
           "orientation": {
@@ -9113,9 +16058,12 @@ var Plotly = {
       "annotations": {
         "moduleType": {},
         "name": {},
-        "ARROWPATHS": {},
         "layoutAttributes": {
           "_isLinkedToArray": {},
+          "visible": {
+            "valType": {},
+            "dflt": {}
+          },
           "text": {
             "valType": {}
           },
@@ -9128,16 +16076,16 @@ var Plotly = {
               "valType": {},
               "noBlank": {},
               "strict": {},
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
             "size": {
               "valType": {},
               "min": {},
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
             "color": {
               "valType": {},
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             }
           },
           "opacity": {
@@ -9191,13 +16139,16 @@ var Plotly = {
             "valType": {},
             "min": {}
           },
-          "ax": {
+          "standoff": {
             "valType": {},
+            "min": {},
             "dflt": {}
           },
+          "ax": {
+            "valType": {}
+          },
           "ay": {
-            "valType": {},
-            "dflt": {}
+            "valType": {}
           },
           "axref": {
             "valType": {},
@@ -9233,6 +16184,17 @@ var Plotly = {
             "values": {},
             "dflt": {}
           },
+          "clicktoshow": {
+            "valType": {},
+            "values": {},
+            "dflt": {}
+          },
+          "xclick": {
+            "valType": {}
+          },
+          "yclick": {
+            "valType": {}
+          },
           "_deprecated": {
             "ref": {
               "valType": {}
@@ -9241,16 +16203,20 @@ var Plotly = {
         },
         "supplyLayoutDefaults": function () {},
         "calcAutorange": function () {},
-        "arrowhead": function () {},
         "draw": function () {},
         "drawOne": function () {},
-        "add": function () {}
+        "hasClickToShow": function () {},
+        "onClick": function () {}
       },
       "shapes": {
         "moduleType": {},
         "name": {},
         "layoutAttributes": {
           "_isLinkedToArray": {},
+          "visible": {
+            "valType": {},
+            "dflt": {}
+          },
           "type": {
             "valType": {},
             "values": {}
@@ -9317,9 +16283,12 @@ var Plotly = {
       "images": {
         "moduleType": {},
         "name": {},
-        "draw": function () {},
         "layoutAttributes": {
           "_isLinkedToArray": {},
+          "visible": {
+            "valType": {},
+            "dflt": {}
+          },
           "source": {
             "valType": {}
           },
@@ -9376,7 +16345,8 @@ var Plotly = {
             "dflt": {}
           }
         },
-        "supplyLayoutDefaults": function () {}
+        "supplyLayoutDefaults": function () {},
+        "draw": function () {}
       },
       "updatemenus": {
         "moduleType": {},
@@ -9386,9 +16356,23 @@ var Plotly = {
           "visible": {
             "valType": {}
           },
+          "type": {
+            "valType": {},
+            "values": {},
+            "dflt": {}
+          },
+          "direction": {
+            "valType": {},
+            "values": {},
+            "dflt": {}
+          },
           "active": {
             "valType": {},
             "min": {},
+            "dflt": {}
+          },
+          "showactive": {
+            "valType": {},
             "dflt": {}
           },
           "buttons": {
@@ -9430,21 +16414,39 @@ var Plotly = {
             "values": {},
             "dflt": {}
           },
+          "pad": {
+            "t": {
+              "valType": {},
+              "dflt": {}
+            },
+            "r": {
+              "valType": {},
+              "dflt": {}
+            },
+            "b": {
+              "valType": {},
+              "dflt": {}
+            },
+            "l": {
+              "valType": {},
+              "dflt": {}
+            }
+          },
           "font": {
             "family": {
               "valType": {},
               "noBlank": {},
               "strict": {},
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
             "size": {
               "valType": {},
               "min": {},
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
             "color": {
               "valType": {},
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             }
           },
           "bgcolor": {
@@ -9463,9 +16465,232 @@ var Plotly = {
         "supplyLayoutDefaults": function () {},
         "draw": function () {}
       },
+      "sliders": {
+        "moduleType": {},
+        "name": {},
+        "layoutAttributes": {
+          "_isLinkedToArray": {},
+          "visible": {
+            "valType": {},
+            "dflt": {}
+          },
+          "active": {
+            "valType": {},
+            "min": {},
+            "dflt": {}
+          },
+          "steps": {
+            "_isLinkedToArray": {},
+            "method": {
+              "valType": {},
+              "values": {},
+              "dflt": {}
+            },
+            "args": {
+              "valType": {},
+              "freeLength": {},
+              "items": {}
+            },
+            "label": {
+              "valType": {}
+            },
+            "value": {
+              "valType": {}
+            }
+          },
+          "lenmode": {
+            "valType": {},
+            "values": {},
+            "dflt": {}
+          },
+          "len": {
+            "valType": {},
+            "min": {},
+            "dflt": {}
+          },
+          "x": {
+            "valType": {},
+            "min": {},
+            "max": {},
+            "dflt": {}
+          },
+          "pad": {
+            "t": {
+              "valType": {},
+              "dflt": {}
+            },
+            "r": {
+              "valType": {},
+              "dflt": {}
+            },
+            "b": {
+              "valType": {},
+              "dflt": {}
+            },
+            "l": {
+              "valType": {},
+              "dflt": {}
+            }
+          },
+          "xanchor": {
+            "valType": {},
+            "values": {},
+            "dflt": {}
+          },
+          "y": {
+            "valType": {},
+            "min": {},
+            "max": {},
+            "dflt": {}
+          },
+          "yanchor": {
+            "valType": {},
+            "values": {},
+            "dflt": {}
+          },
+          "transition": {
+            "duration": {
+              "valType": {},
+              "min": {},
+              "dflt": {}
+            },
+            "easing": {
+              "valType": {},
+              "values": {},
+              "dflt": {}
+            }
+          },
+          "currentvalue": {
+            "visible": {
+              "valType": {},
+              "dflt": {}
+            },
+            "xanchor": {
+              "valType": {},
+              "values": {},
+              "dflt": {}
+            },
+            "offset": {
+              "valType": {},
+              "dflt": {}
+            },
+            "prefix": {
+              "valType": {}
+            },
+            "suffix": {
+              "valType": {}
+            },
+            "font": {
+              "family": {
+                "valType": {},
+                "noBlank": {},
+                "strict": {},
+                "closure_uid_275815739": {}
+              },
+              "size": {
+                "valType": {},
+                "min": {},
+                "closure_uid_275815739": {}
+              },
+              "color": {
+                "valType": {},
+                "closure_uid_275815739": {}
+              }
+            }
+          },
+          "font": {
+            "family": {
+              "valType": {},
+              "noBlank": {},
+              "strict": {},
+              "closure_uid_275815739": {}
+            },
+            "size": {
+              "valType": {},
+              "min": {},
+              "closure_uid_275815739": {}
+            },
+            "color": {
+              "valType": {},
+              "closure_uid_275815739": {}
+            }
+          },
+          "activebgcolor": {
+            "valType": {},
+            "dflt": {}
+          },
+          "bgcolor": {
+            "valType": {},
+            "dflt": {}
+          },
+          "bordercolor": {
+            "valType": {},
+            "dflt": {}
+          },
+          "borderwidth": {
+            "valType": {},
+            "min": {},
+            "dflt": {}
+          },
+          "ticklen": {
+            "valType": {},
+            "min": {},
+            "dflt": {}
+          },
+          "tickcolor": {
+            "valType": {},
+            "dflt": {}
+          },
+          "tickwidth": {
+            "valType": {},
+            "min": {},
+            "dflt": {}
+          },
+          "minorticklen": {
+            "valType": {},
+            "min": {},
+            "dflt": {}
+          }
+        },
+        "supplyLayoutDefaults": function () {},
+        "draw": function () {}
+      },
       "rangeslider": {
         "moduleType": {},
         "name": {},
+        "schema": {
+          "layout": {
+            "xaxis.rangeslider": {
+              "bgcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "bordercolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "borderwidth": {
+                "valType": {},
+                "dflt": {},
+                "min": {}
+              },
+              "range": {
+                "valType": {},
+                "items": {}
+              },
+              "thickness": {
+                "valType": {},
+                "dflt": {},
+                "min": {},
+                "max": {}
+              },
+              "visible": {
+                "valType": {},
+                "dflt": {}
+              }
+            }
+          }
+        },
         "layoutAttributes": {
           "bgcolor": {
             "valType": {},
@@ -9501,6 +16726,89 @@ var Plotly = {
       "rangeselector": {
         "moduleType": {},
         "name": {},
+        "schema": {
+          "layout": {
+            "xaxis.rangeselector": {
+              "visible": {
+                "valType": {}
+              },
+              "buttons": {
+                "step": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "stepmode": {
+                  "valType": {},
+                  "values": {},
+                  "dflt": {}
+                },
+                "count": {
+                  "valType": {},
+                  "min": {},
+                  "dflt": {}
+                },
+                "label": {
+                  "valType": {}
+                },
+                "_isLinkedToArray": {}
+              },
+              "x": {
+                "valType": {},
+                "min": {},
+                "max": {}
+              },
+              "xanchor": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "y": {
+                "valType": {},
+                "min": {},
+                "max": {}
+              },
+              "yanchor": {
+                "valType": {},
+                "values": {},
+                "dflt": {}
+              },
+              "font": {
+                "family": {
+                  "valType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "closure_uid_275815739": {}
+                },
+                "size": {
+                  "valType": {},
+                  "min": {},
+                  "closure_uid_275815739": {}
+                },
+                "color": {
+                  "valType": {},
+                  "closure_uid_275815739": {}
+                }
+              },
+              "bgcolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "activecolor": {
+                "valType": {}
+              },
+              "bordercolor": {
+                "valType": {},
+                "dflt": {}
+              },
+              "borderwidth": {
+                "valType": {},
+                "min": {},
+                "dflt": {}
+              }
+            }
+          }
+        },
         "layoutAttributes": {
           "visible": {
             "valType": {}
@@ -9551,16 +16859,16 @@ var Plotly = {
               "valType": {},
               "noBlank": {},
               "strict": {},
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
             "size": {
               "valType": {},
               "min": {},
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             },
             "color": {
               "valType": {},
-              "closure_uid_563121905": {}
+              "closure_uid_275815739": {}
             }
           },
           "bgcolor": {
@@ -9582,10 +16890,322 @@ var Plotly = {
         },
         "handleDefaults": function () {},
         "draw": function () {}
+      },
+      "calendars": {
+        "moduleType": {},
+        "name": {},
+        "schema": {
+          "traces": {
+            "scatter": {
+              "xcalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              },
+              "ycalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              }
+            },
+            "bar": {
+              "xcalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              },
+              "ycalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              }
+            },
+            "heatmap": {
+              "xcalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              },
+              "ycalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              }
+            },
+            "contour": {
+              "xcalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              },
+              "ycalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              }
+            },
+            "histogram": {
+              "xcalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              },
+              "ycalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              }
+            },
+            "histogram2d": {
+              "xcalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              },
+              "ycalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              }
+            },
+            "histogram2dcontour": {
+              "xcalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              },
+              "ycalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              }
+            },
+            "scatter3d": {
+              "xcalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              },
+              "ycalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              },
+              "zcalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              }
+            },
+            "surface": {
+              "xcalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              },
+              "ycalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              },
+              "zcalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              }
+            },
+            "mesh3d": {
+              "xcalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              },
+              "ycalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              },
+              "zcalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              }
+            },
+            "scattergl": {
+              "xcalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              },
+              "ycalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              }
+            },
+            "ohlc": {
+              "xcalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              }
+            },
+            "candlestick": {
+              "xcalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              }
+            }
+          },
+          "layout": {
+            "calendar": {
+              "valType": {},
+              "values": {},
+              "dflt": {},
+              "description": {}
+            },
+            "xaxis.calendar": {
+              "valType": {},
+              "values": {},
+              "dflt": {},
+              "description": {}
+            },
+            "yaxis.calendar": {
+              "valType": {},
+              "values": {},
+              "dflt": {},
+              "description": {}
+            },
+            "scene.xaxis.calendar": {
+              "valType": {},
+              "values": {},
+              "dflt": {},
+              "description": {}
+            },
+            "scene.yaxis.calendar": {
+              "valType": {},
+              "values": {},
+              "dflt": {},
+              "description": {}
+            },
+            "scene.zaxis.calendar": {
+              "valType": {},
+              "values": {},
+              "dflt": {},
+              "description": {}
+            }
+          },
+          "transforms": {
+            "filter": {
+              "valuecalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              },
+              "targetcalendar": {
+                "valType": {},
+                "values": {},
+                "dflt": {},
+                "description": {}
+              }
+            }
+          }
+        },
+        "layoutAttributes": {
+          "valType": {},
+          "values": {},
+          "dflt": {}
+        },
+        "handleDefaults": function () {},
+        "handleTraceDefaults": function () {},
+        "CANONICAL_SUNDAY": {
+          "chinese": {},
+          "coptic": {},
+          "discworld": {},
+          "ethiopian": {},
+          "hebrew": {},
+          "islamic": {},
+          "julian": {},
+          "mayan": {},
+          "nanakshahi": {},
+          "nepali": {},
+          "persian": {},
+          "jalali": {},
+          "taiwan": {},
+          "thai": {},
+          "ummalqura": {}
+        },
+        "CANONICAL_TICK": {
+          "chinese": {},
+          "coptic": {},
+          "discworld": {},
+          "ethiopian": {},
+          "hebrew": {},
+          "islamic": {},
+          "julian": {},
+          "mayan": {},
+          "nanakshahi": {},
+          "nepali": {},
+          "persian": {},
+          "jalali": {},
+          "taiwan": {},
+          "thai": {},
+          "ummalqura": {}
+        },
+        "DFLTRANGE": {
+          "chinese": {},
+          "coptic": {},
+          "discworld": {},
+          "ethiopian": {},
+          "hebrew": {},
+          "islamic": {},
+          "julian": {},
+          "mayan": {},
+          "nanakshahi": {},
+          "nepali": {},
+          "persian": {},
+          "jalali": {},
+          "taiwan": {},
+          "thai": {},
+          "ummalqura": {}
+        },
+        "getCal": function () {},
+        "worldCalFmt": function () {}
       }
     },
+    "layoutArrayContainers": {},
     "register": function () {},
     "registerSubplot": function () {},
+    "registerComponent": function () {},
     "getModule": function () {},
     "traceIs": function () {},
     "getComponentMethod": function () {},
@@ -9635,7 +17255,9 @@ var Plotly = {
         },
         "maxpoints": {
           "valType": {},
-          "min": {}
+          "min": {},
+          "max": {},
+          "dflt": {}
         }
       }
     },
@@ -9644,16 +17266,16 @@ var Plotly = {
         "valType": {},
         "noBlank": {},
         "strict": {},
-        "closure_uid_563121905": {}
+        "closure_uid_275815739": {}
       },
       "size": {
         "valType": {},
         "min": {},
-        "closure_uid_563121905": {}
+        "closure_uid_275815739": {}
       },
       "color": {
         "valType": {},
-        "closure_uid_563121905": {}
+        "closure_uid_275815739": {}
       }
     },
     "layoutAttributes": {
@@ -9683,21 +17305,21 @@ var Plotly = {
           "valType": {},
           "noBlank": {},
           "strict": {},
-          "closure_uid_563121905": {}
+          "closure_uid_275815739": {}
         },
         "size": {
           "valType": {},
           "min": {},
-          "closure_uid_563121905": {}
+          "closure_uid_275815739": {}
         },
         "color": {
           "valType": {},
-          "closure_uid_563121905": {}
+          "closure_uid_275815739": {}
         }
       },
       "autosize": {
         "valType": {},
-        "values": {}
+        "dflt": {}
       },
       "width": {
         "valType": {},
@@ -9764,58 +17386,6 @@ var Plotly = {
       "showlegend": {
         "valType": {}
       },
-      "_composedModules": {
-        "*": {}
-      },
-      "_nestedModules": {
-        "xaxis": {},
-        "yaxis": {},
-        "scene": {},
-        "geo": {},
-        "ternary": {},
-        "mapbox": {},
-        "legend": {},
-        "annotations": {},
-        "shapes": {},
-        "images": {},
-        "updatemenus": {}
-      }
-    },
-    "fontWeight": {},
-    "findSubplotIds": function () {},
-    "getSubplotIds": function () {},
-    "getSubplotData": function () {},
-    "redrawText": function () {},
-    "resize": function () {},
-    "previousPromises": function () {},
-    "addLinks": function () {},
-    "sendDataToCloud": function () {},
-    "supplyDefaults": function () {},
-    "createTransitionData": function () {},
-    "_hasPlotType": function () {},
-    "cleanPlot": function () {},
-    "supplyDataDefaults": function () {},
-    "supplyAnimationDefaults": function () {},
-    "supplyAnimationFrameDefaults": function () {},
-    "supplyAnimationTransitionDefaults": function () {},
-    "supplyFrameDefaults": function () {},
-    "supplyTraceDefaults": function () {},
-    "supplyLayoutGlobalDefaults": function () {},
-    "supplyLayoutModuleDefaults": function () {},
-    "purge": function () {},
-    "style": function () {},
-    "sanitizeMargins": function () {},
-    "autoMargin": function () {},
-    "doAutoMargin": function () {},
-    "graphJson": function () {},
-    "modifyFrames": function () {},
-    "computeFrame": function () {},
-    "transition": function () {},
-    "doCalcdata": function () {}
-  },
-  "Fx": {
-    "unhover": function () {},
-    "layoutAttributes": {
       "dragmode": {
         "valType": {},
         "values": {},
@@ -9826,6 +17396,53 @@ var Plotly = {
         "values": {}
       }
     },
+    "fontWeight": {},
+    "executeAPICommand": function () {},
+    "computeAPICommandBindings": function () {},
+    "manageCommandObserver": function () {},
+    "hasSimpleAPICommandBindings": function () {},
+    "findSubplotIds": function () {},
+    "getSubplotIds": function () {},
+    "getSubplotData": function () {},
+    "getSubplotCalcData": function () {},
+    "redrawText": function () {},
+    "resize": function () {},
+    "previousPromises": function () {},
+    "addLinks": function () {},
+    "sendDataToCloud": function () {},
+    "supplyDefaults": function () {},
+    "createTransitionData": function () {},
+    "_hasPlotType": function () {},
+    "cleanPlot": function () {},
+    "linkSubplots": function () {},
+    "supplyDataDefaults": function () {},
+    "supplyAnimationDefaults": function () {},
+    "supplyAnimationFrameDefaults": function () {},
+    "supplyAnimationTransitionDefaults": function () {},
+    "supplyFrameDefaults": function () {},
+    "supplyTraceDefaults": function () {},
+    "supplyLayoutGlobalDefaults": function () {},
+    "plotAutoSize": function () {},
+    "supplyLayoutModuleDefaults": function () {},
+    "purge": function () {},
+    "style": function () {},
+    "sanitizeMargins": function () {},
+    "autoMargin": function () {},
+    "doAutoMargin": function () {},
+    "graphJson": function () {},
+    "modifyFrames": function () {},
+    "computeFrame": function () {},
+    "recomputeFrameHash": function () {},
+    "extendObjectWithContainers": function () {},
+    "dataArrayContainers": {},
+    "extendTrace": function () {},
+    "extendLayout": function () {},
+    "transition": function () {},
+    "doCalcdata": function () {},
+    "generalUpdatePerTraceModule": function () {}
+  },
+  "Fx": {
+    "unhover": function () {},
     "supplyLayoutDefaults": function () {},
     "isHoriz": function () {},
     "init": function () {},
@@ -9847,9 +17464,14 @@ var Plotly = {
     "downloadImage": function () {}
   },
   "PlotSchema": {
+    "IS_SUBPLOT_OBJ": {},
+    "IS_LINKED_TO_ARRAY": {},
+    "DEPRECATED": {},
+    "UNDERSCORE_ATTRS": {},
     "get": function () {},
     "crawl": function () {},
-    "isValObject": function () {}
+    "isValObject": function () {},
+    "findArrayAttributes": function () {}
   },
   "Queue": {
     "add": function () {},
@@ -10297,6 +17919,56 @@ var Plotly = {
         }
       },
       "transverseMercator": {
+        "raw": {
+          "invert": function () {}
+        }
+      },
+      "project": function () {},
+      "interrupt": function () {},
+      "eckert4": {
+        "raw": {
+          "invert": function () {}
+        }
+      },
+      "hammer": {
+        "raw": function () {}
+      },
+      "kavrayskiy7": {
+        "raw": {
+          "invert": function () {}
+        }
+      },
+      "miller": {
+        "raw": {
+          "invert": function () {}
+        }
+      },
+      "mollweide": {
+        "raw": {
+          "invert": function () {}
+        }
+      },
+      "naturalEarth": {
+        "raw": {
+          "invert": function () {}
+        }
+      },
+      "robinson": {
+        "raw": {
+          "invert": function () {}
+        }
+      },
+      "sinusoidal": {
+        "raw": {
+          "invert": function () {}
+        }
+      },
+      "aitoff": {
+        "raw": {
+          "invert": function () {}
+        }
+      },
+      "winkel3": {
         "raw": {
           "invert": function () {}
         }
