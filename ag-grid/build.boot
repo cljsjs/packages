@@ -41,9 +41,9 @@
                                     (io/copy (tmpdir/file f) target))
                              (binding [boot.util/*sh-dir* (str (io/file tmp +lib-folder+))]
                                       ((sh (cmd "npm") "install"))
-                                      ((sh (cmd "npm") "install" "gulp"))
-                                      ((sh (cmd "bower") "install"))
-                                      ((sh (cmd "./node_modules/.bin/gulp") "webpack-dev")))
+                                      ((sh (cmd "npm") "install" "gulp" "bower"))
+                                      ((sh (cmd (path (str (io/file tmp +lib-folder+) "/node_modules/.bin/bower"))) "install"))
+                                      ((sh (cmd (path (str (io/file tmp +lib-folder+) "/node_modules/.bin/gulp"))) "webpack-dev")))
                              (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 (deftask package []
