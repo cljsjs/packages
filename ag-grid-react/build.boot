@@ -2,7 +2,8 @@
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]
                   [cljsjs/react "15.2.1-0" :scope "provided"]
-                  [cljsjs/react-dom "15.2.1-0" :scope "provided"]])
+                  [cljsjs/react-dom "15.2.1-0" :scope "provided"]
+                  [cljsjs/ag-grid "8.0.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -62,6 +63,7 @@
                    :lang :ecmascript5)
            (deps-cljs :name "cljsjs.ag-grid-react"
                       :requires ["cljsjs.react"
-                                 "cljsjs.react.dom"])
+                                 "cljsjs.react.dom"
+                                 "cljsjs.ag-grid"])
            (pom)
            (jar)))
