@@ -2,7 +2,7 @@
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]])
 
-(def +lib-version+ "0.12.2")
+(def +lib-version+ "0.13.0")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "material-ui-chip-input-%s" +lib-version+))
 
@@ -24,7 +24,7 @@
 
 (deftask download-material-ui-chip-input []
          (download :url url
-                   :checksum "5dafd3bbc1c343b8df212ccf2f5f69d2"
+                   :checksum "e74e5829c2a01ebd243c692d1e888d18"
                    :unzip true))
 
 (def webpack-file-name "webpack.config.js")
