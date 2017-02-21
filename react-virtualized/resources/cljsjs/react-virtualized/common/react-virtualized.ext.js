@@ -82,7 +82,6 @@ var ReactVirtualized = {
       "onScroll": function () {},
       "onSectionRendered": function () {},
       "overscanColumnCount": {},
-      "overscanIndicesGetter": function () {},
       "overscanRowCount": {},
       "scrollingResetTimeInterval": {},
       "scrollToAlignment": {},
