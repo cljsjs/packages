@@ -290,6 +290,11 @@ CodeMirror.Doc.prototype = {
   "maybeSpill": function () {},
   "iterN": function () {}
 };
+CodeMirror.emacs.prototype = {
+  "kill": function () {},
+  "killRegion": function () {},
+  "repeated": function () {}
+};
 var FromToObj = {
     "from": {},
     "to": {}
