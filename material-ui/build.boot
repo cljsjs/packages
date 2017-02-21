@@ -8,7 +8,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "0.16.7")
+(def +lib-version+ "0.17.0")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "material-ui-%s" +lib-version+))
 
@@ -24,7 +24,7 @@
 
 (deftask download-material-ui []
   (download :url url
-            :checksum "bd2d6d1187f7af7bf571186699e184f2"
+            :checksum "a2d1815c8a97b1b7189f5ce9887c271d"
             :unzip true))
 
 (def main-file-name "main.js")
