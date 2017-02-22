@@ -20,6 +20,7 @@ var CodeMirror = {
   "defineExtension": function () {},
   "defineDocExtension": function () {},
   "defineOption": function () {},
+  "defineSimpleMode": function () {},
   "defineInitHook": function () {},
   "helpers": {},
   "registerHelper": function () {},
