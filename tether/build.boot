@@ -1,29 +1,24 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.6.0"  :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.1.1")
+(def +lib-version+ "1.4.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/tether
        :version     +version+
        :description "A positioning engine to make overlays, tooltips and dropdowns better #hubspot-open-source"
-       :url         "http://github.hubspot.com/tether"
+       :url         "http://tether.io"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
-
-(require '[boot.core :as c]
-         '[boot.tmpdir :as tmpd]
-         '[clojure.java.io :as io]
-         '[clojure.string :as string])
 
 (deftask package []
   (comp
     (download :url (str "https://github.com/HubSpot/tether/archive/v" +lib-version+ ".zip")
-	      :checksum "87C8DEC00FD6D9690449EA3A08DC1FA7"	
+              :checksum "A1A53FDD74FD4D8D1B41C10E85E9B456"
               :unzip true)
 
     (sift :move {#"^tether.*[/ \\]dist[/ \\]js[/ \\]tether.js$" "cljsjs/tether/development/tether.inc.js"
