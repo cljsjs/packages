@@ -8,7 +8,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "0.3.0")
+(def +lib-version+ "0.5.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -28,7 +28,7 @@
               :let [target (io/file tmp (tmpd/path f))]]
         (io/make-parents target)
         (io/copy (tmpd/file f) target))
-      (binding [boot.util/*sh-dir* (str (io/file tmp (format "material-components-web-material-components-web-%s" +lib-version+)))]
+      (binding [boot.util/*sh-dir* (str (io/file tmp (format "material-components-web-%s" +lib-version+)))]
         ((sh "npm" "install"))
         ((sh "npm" "run" "dist")))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
@@ -36,18 +36,16 @@
 (deftask package []
   (task-options! push {:ensure-branch nil})
   (comp
-   (download :url (str "https://github.com/material-components/material-components-web/archive/material-components-web@" +lib-version+ ".zip")
-             :checksum "b3dbee1a4ac41751af22538bc48a2de3"
+   (download :url (str "https://github.com/material-components/material-components-web/archive/v" +lib-version+ ".zip")
+             :checksum "c316910bc09ad8e35d5cd9af488b469a"
              :unzip true)
-
-
 
    (build-material-components)
 
-   (sift :move {(re-pattern (str "^material-components-web-material-components-web-" +lib-version+ "/build/material-components-web.js$")) "cljsjs/material-components/development/material-components.inc.js"})
-   (sift :move {(re-pattern (str "^material-components-web-material-components-web-" +lib-version+ "/build/material-components-web.css$")) "cljsjs/material-components/development/material-components.inc.css"})
-   (sift :move {(re-pattern (str "^material-components-web-material-components-web-" +lib-version+ "/build/material-components-web.min.js$")) "cljsjs/material-components/production/material-components.min.inc.js"})
-   (sift :move {(re-pattern (str "^material-components-web-material-components-web-" +lib-version+ "/build/material-components-web.min.css$")) "cljsjs/material-components/production/material-components.min.inc.css"})
+   (sift :move {(re-pattern (str "^material-components-web-" +lib-version+ "/build/material-components-web.js$")) "cljsjs/material-components/development/material-components.inc.js"})
+   (sift :move {(re-pattern (str "^material-components-web-" +lib-version+ "/build/material-components-web.css$")) "cljsjs/material-components/development/material-components.inc.css"})
+   (sift :move {(re-pattern (str "^material-components-web-" +lib-version+ "/build/material-components-web.min.js$")) "cljsjs/material-components/production/material-components.min.inc.js"})
+   (sift :move {(re-pattern (str "^material-components-web-" +lib-version+ "/build/material-components-web.min.css$")) "cljsjs/material-components/production/material-components.min.inc.css"})
 
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.material-components")
