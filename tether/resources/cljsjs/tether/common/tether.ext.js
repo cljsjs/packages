@@ -26,4 +26,4 @@ var Tether = {
         "getScrollBarSize": function () {}
     },
     "position": function () {}
-}
+};
