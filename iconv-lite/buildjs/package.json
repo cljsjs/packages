@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "iconv-lite": "^0.4.15"
+  },
+  "devDependencies": {
+    "browserify": "^14.1.0",
+    "uglifyify": "^3.0.4"
+  }
+}
