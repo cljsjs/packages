@@ -37039,7 +37039,6 @@ AWS.S3.prototype = {
   "abortMultipartUpload": function() {},
   "completeMultipartUpload": function() {},
   "copyObject": function() {},
-  "createBucket": function() {},
   "createMultipartUpload": function() {},
   "deleteBucket": function() {},
   "deleteBucketCors": function() {},
@@ -37068,7 +37067,6 @@ AWS.S3.prototype = {
   "getObject": function() {},
   "getObjectAcl": function() {},
   "getObjectTorrent": function() {},
-  "getSignedUrl": function() {},
   "headBucket": function() {},
   "headObject": function() {},
   "listBuckets": function() {},
@@ -37094,10 +37092,8 @@ AWS.S3.prototype = {
   "putObject": function() {},
   "putObjectAcl": function() {},
   "restoreObject": function() {},
-  "upload": function() {},
   "uploadPart": function() {},
-  "uploadPartCopy": function() {},
-  "waitFor": function() {}
+  "uploadPartCopy": function() {}
 };
 AWS.S3.__super__.prototype = {
   "constructor": function () {},

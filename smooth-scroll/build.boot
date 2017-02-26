@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "9.1.4")
+(def +lib-version+ "10.2.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,7 +18,7 @@
 (deftask package []
   (comp
     (download :url      (str "https://github.com/cferdinandi/smooth-scroll/archive/v" +lib-version+ ".zip")
-              :checksum "05BB3E3C87D76E7249A23AE2D0DEE09A"
+              :checksum "F36BEBA95B7F1089CF1E0E0844BB8AAD"
               :unzip    true)
     (sift :move {#"^smooth-scroll-(.*)/dist/js/smooth-scroll.js"     "cljsjs/development/smooth-scroll.inc.js"
                  #"^smooth-scroll-(.*)/dist/js/smooth-scroll.min.js" "cljsjs/production/smooth-scroll.min.inc.js"})
