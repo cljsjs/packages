@@ -11,9 +11,8 @@
 
 (def +lib-version+ "0.0.3")
 (def +version+ (str +lib-version+ "-0"))
-(def +commit-id+ "8e55b56d499dc7d64ac22a5051f2eeb4a22a2534")
 (def +src-url+ "https://github.com/SamDuvall/simplex-solver")
-(def +lib-folder+ (format "simplex-solver-%s" +commit-id+))
+(def +lib-folder+ (format "simplex-solver-%s" +lib-version+))
 
 (task-options!
  pom  {:project     'cljsjs/simplex-solver
@@ -24,8 +23,8 @@
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (deftask download-solver []
-  (let [url (str +src-url+ "/archive/" +commit-id+ ".zip")
-        checksum "7f208d870705db50014fefb8f9b48731"]
+  (let [url (str +src-url+ "/archive/v" +lib-version+ ".zip")
+        checksum "1D34581657C9F5D62CCF8D518E9A6208"]
     (download :url url
               :checksum checksum
               :unzip true)))
