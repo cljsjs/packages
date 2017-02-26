@@ -25,9 +25,9 @@ global `js/simplex`.
 
 
 ```clojure
-(.maximize js/simplex "x + y + 2z" (clj->js ["2x + y + z <= 50"
-                                             "2x + y >= 36"
-                                             "x + z >= 11"]))
+(.maximize js/simplex "x + y + 2z"  #js["2x + y + z <= 50"
+                                        "2x + y >= 36"
+                                        "x + z >= 11"])
 ```
 
 For more information, see [github.com/SamDuvall/simplex-solver](https://github.com/SamDuvall/simplex-solver).
