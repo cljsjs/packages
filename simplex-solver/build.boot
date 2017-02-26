@@ -46,7 +46,7 @@
         (str "\n" (slurp "resources/simplex-lib-gulp-task.js")) :append true)
       (binding [*sh-dir* (str (io/file tmp-lib))]
         ((sh "npm" "install"))
-        ((sh "gulp" "js-lib")))
+        ((sh "./node_modules/.bin/gulp" "js-lib")))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 (deftask package []
