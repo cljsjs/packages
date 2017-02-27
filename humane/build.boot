@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "3.2.2")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom {:project     'cljsjs/humane
@@ -21,7 +21,8 @@
               :checksum "27FDB5B728D55060A1D6007D935C0664"
               :unzip true)
     (sift :move {#"^humane-js-([\d.]*)/humane\.js" "cljsjs/humane/development/humane.inc.js"
-                 #"^humane-js-([\d.]*)/humane\.min\.js" "cljsjs/humane/production/humane.min.inc.js"})
+                 #"^humane-js-([\d.]*)/humane\.min\.js" "cljsjs/humane/production/humane.min.inc.js"
+                 #"^humane-js-([\d.]*)/themes" "cljsjs/humane/common/themes"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.humane")
     (pom)
