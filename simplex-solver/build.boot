@@ -1,6 +1,6 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -53,7 +53,9 @@
    (download-solver)
    (build)
    (sift :move {#"^simplex-solver.*[/ \\]dist[/ \\]lib[/ \\]simplex-solver.inc.js$"
-     "cljsjs/simplex-solver/common/simplex-solver.inc.js"})
+     "cljsjs/simplex-solver/development/simplex-solver.inc.js"})
+   (sift :move {#"^simplex-solver.*[/ \\]dist[/ \\]lib[/ \\]min[/ \\]simplex-solver.inc.js$"
+     "cljsjs/simplex-solver/production/simplex-solver.inc.min.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.simplex-solver")
    (pom)

@@ -2,10 +2,9 @@
 gulp.task('js-lib', function() {
   var appConfig = _.pick(config, 'env');
   return combineWatch([
-    //gulp.src(['src/index.js', 'src/equation.js']),
     gulp.src(['simplex-solver.inc.js']),
     browserify({
-      debug: config.env.development,
+      debug: false,
       insertGlobals: true,
       insertGlobalVars: {
         config: function () {
@@ -13,7 +12,8 @@ gulp.task('js-lib', function() {
         }
       }
     }),
+    gulp.dest('dist/lib'),
     uglify(),
-    gulp.dest('dist/lib')
+    gulp.dest('dist/lib/min')
   ]);
 });
