@@ -5,8 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "4.0.1")
-; FIXME: Next release should have build identier
-(def +version+ (str +lib-version+ ""))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/openlayers
@@ -18,16 +17,16 @@
 
 (deftask package []
   (comp
-    (download :url (format "https://github.com/openlayers/ol3/releases/download/v%s/v%s.zip" +lib-version+ +lib-version+)
+    (download :url (format "https://github.com/openlayers/openlayers/releases/download/v%s/v%s.zip" +lib-version+ +lib-version+)
               :checksum "6EE377B4D8CC1E1BB6098F494547F8F8"
               :unzip true)
-    (download :url (format "https://github.com/openlayers/ol3/archive/v%s.zip" +lib-version+)
+    (download :url (format "https://github.com/openlayers/openlayers/archive/v%s.zip" +lib-version+)
               :checksum "EF954EEF15EBF2E0AEDDE462951D3286"
               :unzip true)
     (sift :move {#"^v([\d\.]*)/ol/ol/" "cljsjs/openlayers/development/ol/"
                  #"^v([\d\.]*)/ol\.ext/" "cljsjs/openlayers/development/ol.ext/"
                  #"^v([\d\.]*)/css/ol\.css" "cljsjs/openlayers/common/openlayers.inc.css"
-                 #"^ol3-([\d\.]*)/externs/(.*)\.js" "cljsjs/openlayers/common/$2.ext.js"})
+                 #"^openlayers-([\d\.]*)/externs/(.*)\.js" "cljsjs/openlayers/common/$2.ext.js"})
     (sift :include #{#"^cljsjs/" #"deps.cljs"})
     (pom)
     (jar)))
