@@ -18,11 +18,6 @@
         :license     {"MIT" ""}
         :scm         {:url "https://github.com/cljsjs/packages"}})
 
-(require '[boot.core :as c]
-         '[boot.tmpdir :as tmpd]
-         '[clojure.java.io :as io]
-         '[clojure.string :as string])
-
 (deftask package []
   (comp
     (download :url (format "https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/%s/moment-timezone-with-data.js" +lib-version+))
