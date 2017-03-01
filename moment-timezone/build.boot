@@ -1,12 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]
-                  [cljsjs/moment "2.15.2-3"]])
+                  [cljsjs/moment "2.17.1-0"]])
 
 (require '[boot.task-helpers]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.5.10")
+(def +lib-version+ "0.5.11")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
