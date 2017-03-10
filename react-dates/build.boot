@@ -41,7 +41,7 @@
       (binding [boot.util/*sh-dir* (str (io/file tmp +lib-folder+))]
         ((sh "npm" "install"))
         ((sh "npm" "install" "webpack"))
-        ((sh "npm" "install" "extract-text-webpack-plugin"))
+        ((sh "npm" "install" "extract-text-webpack-plugin@1.0.1"))
         ((sh "npm" "run" "build"))
         ((sh "./node_modules/.bin/webpack" "--config" "webpack-cljsjs.config.js")))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
