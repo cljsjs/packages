@@ -36,7 +36,7 @@ Example:
 (def button (goog.object/get semantic-ui "Button"))
 
 ;; Nested component:
-(def menu-item (goog.object/getValuebykeys semantic-ui "Menu" "Item"))
+(def menu-item (goog.object/getValueByKeys semantic-ui "Menu" "Item"))
 
 ;; Reagent usage:
 (defn view []
