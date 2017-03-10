@@ -17,10 +17,10 @@
 
 (deftask package []
   (comp
-   (download  :url      "https://raw.githubusercontent.com/mrdoob/three.js/r76/build/three.js"
-              :checksum "459F2DC4E851FC67204AE0A8315BCFD5")
-   (download  :url      "https://raw.githubusercontent.com/mrdoob/three.js/r76/build/three.min.js"
-              :checksum "F2EBEFE8CFC5D30EC6D01BDFDE67DE44")
+   (download  :url      "https://raw.githubusercontent.com/mrdoob/three.js/r84/build/three.js"
+              :checksum "4F91E79951C54F6C3A8F5B56075A71F9")
+   (download  :url      "https://raw.githubusercontent.com/mrdoob/three.js/r84/build/three.min.js"
+              :checksum "3298078BCE82BDB1AFADF5B1A280915E")
    (sift      :move     {#"^three.js"
                          "cljsjs/three/development/three.inc.js"
                          #"^three.min.js"
