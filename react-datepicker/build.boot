@@ -3,7 +3,7 @@
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]
                   [cljsjs/react "15.3.1-0"]
                   [cljsjs/moment "2.10.6-4"]
-                  [cljsjs/react-onclickoutside "4.9.0-2"]
+                  [cljsjs/react-onclickoutside "5.9.0-0"]
                   [cljsjs/tether "1.1.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
@@ -12,7 +12,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "0.29.0")
+(def +lib-version+ "0.41.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -29,9 +29,10 @@
          '[clojure.string :as string])
 
 (deftask download-datepicker []
-  (download :url (str "https://github.com/Hacker0x01/react-datepicker/archive/v" +lib-version+ ".zip")
-            :checksum "b2e536c347d4589e32615e9f2eee6bbd"
-            :unzip true))
+  (download
+    :url (str "https://github.com/Hacker0x01/react-datepicker/archive/v" +lib-version+ ".zip")
+    :checksum "238f166b47f2cbb8af708e0ac046cb98"
+    :unzip true))
 
 (deftask build-datepicker []
   (let [tmp (boot/tmp-dir!)]
