@@ -36,7 +36,7 @@ Benchmark.prototype = {
   "running": function () {},
   "setup": function () {},
   "teardown": function () {},
-  "stats": function () {},
+  "stats": {},
   "times": function () {},
   "abort": function () {},
   "clone": function () {},
@@ -48,6 +48,15 @@ Benchmark.prototype = {
   "reset": function () {},
   "run": function () {},
   "toString": function () {}
+};
+Benchmark.prototype.stats = {
+  "deviation": {},
+  "mean": {},
+  "moe": {},
+  "rme": {},
+  "sample": [],
+  "sem": {},
+  "variance": {}
 };
 Benchmark.Deferred.prototype = {
   "benchmark": function () {},
