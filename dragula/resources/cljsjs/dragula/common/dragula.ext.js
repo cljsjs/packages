@@ -6,5 +6,6 @@ var drake = {
   "end": function () {},
   "cancel": function () {},
   "remove": function () {},
-  "destroy": function () {}
+  "destroy": function () {},
+  "on": function () {}
 };
