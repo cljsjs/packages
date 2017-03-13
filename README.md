@@ -3,12 +3,12 @@
 <img src="http://cljsjs.github.io/cljsjs.png" alt="CLJSJS logo" align="right" />
 
 CLJSJS is an effort to package Javascript libraries to be able to use
-them from within Clojurescript.
+them from within ClojureScript.
 
 ## Using these packages
 
 All packages provided by [cljsjs][clojars-cljsjs] provide `deps.cljs`
-files that will be automatically picked up by the Clojurescript
+files that will be automatically picked up by the ClojureScript
 compiler as of [0.0-2727][2727]. Versions of the Jar reflect the
 version of the packaged JS lib.
 

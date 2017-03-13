@@ -48,7 +48,9 @@ var Slate = {
   },
   "Schema": function() {},
   "Selection": function() {},
+  "Stack": function() {},
   "State": function() {},
   "Text": function() {},
+  "Transforms": function() {},
   "findDOMNode": function() {}
 };

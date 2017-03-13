@@ -8,7 +8,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "0.3")
+(def +lib-version+ "0.5.2")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -32,17 +32,17 @@
       (binding [boot.util/*sh-dir* (str (io/file tmp (format "incremental-dom-%s" +lib-version+)))]
         ((sh "npm" "install"))
         ((sh "patch" "gulpfile.js" "../gulpfile.js.patch" "-o" "patched-gulpfile.js"))
-        ((sh "./node_modules/.bin/gulp" "--gulpfile=patched-gulpfile.js" "js-closure-provides")))
+        ((sh "./node_modules/.bin/gulp" "--gulpfile=patched-gulpfile.js" "js-closure")))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 
 (deftask package []
   (comp
    (download :url (format "https://github.com/google/incremental-dom/archive/%s.zip" +lib-version+)
-             :checksum "170A1C354379FF2AF3A08455BFB0AD9D"
+             :checksum "A4F0C190BDF97DEEEF43530B0F787828"
              :unzip true)
    (build-incremental-dom)
-   (sift :move {#"^incremental-dom-(.*)/dist/incremental-dom-closure-provides.js"
+   (sift :move {#"^incremental-dom-(.*)/dist/incremental-dom-closure.js"
                 "cljsjs/incremental-dom/development/incremental-dom.js"})
    (sift :include #{#"^cljsjs/" #"deps.cljs"})
    (pom)

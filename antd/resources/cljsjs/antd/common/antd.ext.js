@@ -4,7 +4,7 @@
  * To regenerate, include in the following order:
  * https://unpkg.com/react@15/dist/react.js
  * https://unpkg.com/react-dom@15/dist/react-dom.js
- * https://unpkg.com/antd@x/dist/antd.js
+ * https://cdnjs.cloudflare.com/ajax/libs/antd/VERSION/antd-with-locales.js
  * and extern the `antd` object
  **********************************************************************/
 var antd = {
@@ -23,6 +23,7 @@ var antd = {
   },
   "Anchor": {
     "Link": {
+      "__ANT_ANCHOR_LINK": {},
       "contextTypes": {
         "anchorHelper": {
           "isRequired": function () {}
@@ -35,7 +36,8 @@ var antd = {
     },
     "defaultProps": {
       "prefixCls": {},
-      "affix": {}
+      "affix": {},
+      "showInkInFixed": {}
     },
     "childContextTypes": {
       "anchorHelper": {
@@ -49,9 +51,12 @@ var antd = {
         "value": {
           "isRequired": function () {}
         }
-      }
+      },
+      "isSelectOption": {}
     },
-    "OptGroup": function () {},
+    "OptGroup": {
+      "isSelectOptGroup": {}
+    },
     "defaultProps": {
       "prefixCls": {},
       "transitionName": {},
@@ -79,11 +84,15 @@ var antd = {
     "defaultProps": {
       "prefixCls": {},
       "count": {},
+      "showZero": {},
       "dot": {},
       "overflowCount": {}
     },
     "propTypes": {
       "count": {
+        "isRequired": function () {}
+      },
+      "showZero": {
         "isRequired": function () {}
       },
       "dot": {
@@ -120,6 +129,7 @@ var antd = {
       }
     },
     "Item": {
+      "__ANT_BREADCRUMB_ITEM": {},
       "defaultProps": {
         "prefixCls": {},
         "separator": {}
@@ -138,9 +148,12 @@ var antd = {
     }
   },
   "Button": {
+    "__ANT_BUTTON": {},
     "defaultProps": {
       "prefixCls": {},
-      "loading": {}
+      "loading": {},
+      "clicked": {},
+      "ghost": {}
     },
     "propTypes": {
       "type": {
@@ -175,13 +188,21 @@ var antd = {
       "locale": {},
       "fullscreen": {},
       "prefixCls": {},
-      "mode": {}
+      "mode": {},
+      "onSelect": function () {},
+      "onPanelChange": function () {}
     },
     "propTypes": {
       "monthCellRender": {
         "isRequired": function () {}
       },
       "dateCellRender": {
+        "isRequired": function () {}
+      },
+      "monthFullCellRender": {
+        "isRequired": function () {}
+      },
+      "dateFullCellRender": {
         "isRequired": function () {}
       },
       "fullscreen": {
@@ -203,6 +224,9 @@ var antd = {
         "isRequired": function () {}
       },
       "value": {
+        "isRequired": function () {}
+      },
+      "onSelect": {
         "isRequired": function () {}
       }
     },
@@ -240,6 +264,9 @@ var antd = {
         },
         "onItemClick": {
           "isRequired": function () {}
+        },
+        "style": {
+          "isRequired": function () {}
         }
       },
       "getDefaultProps": {
@@ -253,14 +280,20 @@ var antd = {
     },
     "defaultProps": {
       "prefixCls": {},
-      "bordered": {}
+      "bordered": {},
+      "openAnimation": {
+        "enter": function () {},
+        "leave": function () {},
+        "appear": function () {}
+      }
     }
   },
   "Carousel": {
     "defaultProps": {
       "dots": {},
       "arrows": {},
-      "prefixCls": {}
+      "prefixCls": {},
+      "draggable": {}
     }
   },
   "Cascader": {
@@ -333,6 +366,9 @@ var antd = {
         "isRequired": function () {}
       },
       "lg": {
+        "isRequired": function () {}
+      },
+      "xl": {
         "isRequired": function () {}
       }
     }
@@ -446,10 +482,10 @@ var antd = {
   },
   "Dropdown": {
     "defaultProps": {
-      "transitionName": {},
       "prefixCls": {},
       "mouseEnterDelay": {},
-      "mouseLeaveDelay": {}
+      "mouseLeaveDelay": {},
+      "placement": {}
     },
     "Button": {
       "defaultProps": {
@@ -470,25 +506,29 @@ var antd = {
   "Form": {
     "defaultProps": {
       "prefixCls": {},
+      "layout": {},
+      "hideRequiredMark": {},
       "onSubmit": function () {}
     },
     "propTypes": {
       "prefixCls": {
         "isRequired": function () {}
       },
-      "vertical": {
-        "isRequired": function () {}
-      },
-      "horizontal": {
-        "isRequired": function () {}
-      },
-      "inline": {
+      "layout": {
         "isRequired": function () {}
       },
       "children": {
         "isRequired": function () {}
       },
       "onSubmit": {
+        "isRequired": function () {}
+      },
+      "hideRequiredMark": {
+        "isRequired": function () {}
+      }
+    },
+    "childContextTypes": {
+      "vertical": {
         "isRequired": function () {}
       }
     },
@@ -535,6 +575,9 @@ var antd = {
       },
       "contextTypes": {
         "form": {
+          "isRequired": function () {}
+        },
+        "vertical": {
           "isRequired": function () {}
         }
       }
@@ -621,10 +664,12 @@ var antd = {
     "Footer": function () {},
     "Content": function () {},
     "Sider": {
+      "__ANT_LAYOUT_SIDER": {},
       "defaultProps": {
         "prefixCls": {},
         "collapsible": {},
         "defaultCollapsed": {},
+        "reverseArrow": {},
         "width": {},
         "collapsedWidth": {},
         "style": {}
@@ -925,7 +970,9 @@ var antd = {
         "prev_page": {},
         "next_page": {},
         "prev_5": {},
-        "next_5": {}
+        "next_5": {},
+        "prev_3": {},
+        "next_3": {}
       },
       "className": {},
       "prefixCls": {},
@@ -1015,10 +1062,24 @@ var antd = {
     "propTypes": {
       "prefixCls": {
         "isRequired": function () {}
+      },
+      "character": {
+        "isRequired": function () {}
       }
     },
     "defaultProps": {
-      "prefixCls": {}
+      "prefixCls": {},
+      "character": {
+        "$$typeof": {},
+        "type": function () {},
+        "key": {},
+        "ref": {},
+        "props": {
+          "type": {}
+        },
+        "_owner": {},
+        "_store": {}
+      }
     }
   },
   "Row": {
@@ -1055,9 +1116,12 @@ var antd = {
         "value": {
           "isRequired": function () {}
         }
-      }
+      },
+      "isSelectOption": {}
     },
-    "OptGroup": function () {},
+    "OptGroup": {
+      "isSelectOptGroup": {}
+    },
     "defaultProps": {
       "prefixCls": {},
       "showSearch": {},
@@ -1098,15 +1162,7 @@ var antd = {
     "defaultProps": {
       "prefixCls": {},
       "tooltipPrefixCls": {},
-      "tipTransitionName": {}
-    },
-    "propTypes": {
-      "prefixCls": {
-        "isRequired": function () {}
-      },
-      "tipTransitionName": {
-        "isRequired": function () {}
-      }
+      "tipFormatter": function () {}
     }
   },
   "Spin": {
@@ -1145,7 +1201,7 @@ var antd = {
         "wrapperStyle": {
           "isRequired": function () {}
         },
-        "tailWidth": {
+        "itemWidth": {
           "isRequired": function () {}
         },
         "status": {
@@ -1170,6 +1226,9 @@ var antd = {
           "isRequired": function () {}
         },
         "title": {
+          "isRequired": function () {}
+        },
+        "progressDot": {
           "isRequired": function () {}
         }
       }
@@ -1242,7 +1301,8 @@ var antd = {
         "title": {
           "isRequired": function () {}
         }
-      }
+      },
+      "isTableColumnGroup": {}
     },
     "propTypes": {
       "dataSource": {
@@ -1293,7 +1353,8 @@ var antd = {
       "bordered": {},
       "indentSize": {},
       "locale": {},
-      "rowKey": {}
+      "rowKey": {},
+      "showHeader": {}
     },
     "contextTypes": {
       "antLocale": {
@@ -1581,11 +1642,1214 @@ var antd = {
       "disabled": {},
       "supportServerRender": {}
     }
+  },
+  "version": {},
+  "locales": {
+    "ca_ES": {
+      "locale": {},
+      "Pagination": {
+        "items_per_page": {},
+        "jump_to": {},
+        "page": {},
+        "prev_page": {},
+        "next_page": {},
+        "prev_5": {},
+        "next_5": {},
+        "prev_3": {},
+        "next_3": {}
+      },
+      "DatePicker": {
+        "lang": {
+          "placeholder": {},
+          "rangePlaceholder": {},
+          "today": {},
+          "now": {},
+          "backToToday": {},
+          "ok": {},
+          "clear": {},
+          "month": {},
+          "year": {},
+          "timeSelect": {},
+          "dateSelect": {},
+          "monthSelect": {},
+          "yearSelect": {},
+          "decadeSelect": {},
+          "yearFormat": {},
+          "dateFormat": {},
+          "dayFormat": {},
+          "dateTimeFormat": {},
+          "monthFormat": {},
+          "monthBeforeYear": {},
+          "previousMonth": {},
+          "nextMonth": {},
+          "previousYear": {},
+          "nextYear": {},
+          "previousDecade": {},
+          "nextDecade": {},
+          "previousCentury": {},
+          "nextCentury": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "TimePicker": {
+        "placeholder": {}
+      },
+      "Calendar": {
+        "lang": {
+          "placeholder": {},
+          "rangePlaceholder": {},
+          "today": {},
+          "now": {},
+          "backToToday": {},
+          "ok": {},
+          "clear": {},
+          "month": {},
+          "year": {},
+          "timeSelect": {},
+          "dateSelect": {},
+          "monthSelect": {},
+          "yearSelect": {},
+          "decadeSelect": {},
+          "yearFormat": {},
+          "dateFormat": {},
+          "dayFormat": {},
+          "dateTimeFormat": {},
+          "monthFormat": {},
+          "monthBeforeYear": {},
+          "previousMonth": {},
+          "nextMonth": {},
+          "previousYear": {},
+          "nextYear": {},
+          "previousDecade": {},
+          "nextDecade": {},
+          "previousCentury": {},
+          "nextCentury": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "Table": {
+        "filterTitle": {},
+        "filterConfirm": {},
+        "filterReset": {},
+        "emptyText": {}
+      },
+      "Modal": {
+        "okText": {},
+        "cancelText": {},
+        "justOkText": {}
+      },
+      "Popconfirm": {
+        "okText": {},
+        "cancelText": {}
+      },
+      "Transfer": {
+        "notFoundContent": {},
+        "searchPlaceholder": {},
+        "itemUnit": {},
+        "itemsUnit": {}
+      },
+      "Select": {
+        "notFoundContent": {}
+      }
+    },
+    "cs_CZ": {
+      "locale": {},
+      "Pagination": {
+        "items_per_page": {},
+        "jump_to": {},
+        "page": {},
+        "prev_page": {},
+        "next_page": {},
+        "prev_5": {},
+        "next_5": {},
+        "prev_3": {},
+        "next_3": {}
+      },
+      "DatePicker": {
+        "lang": {
+          "placeholder": {},
+          "rangePlaceholder": {},
+          "today": {},
+          "now": {},
+          "backToToday": {},
+          "ok": {},
+          "clear": {},
+          "month": {},
+          "year": {},
+          "timeSelect": {},
+          "dateSelect": {},
+          "monthSelect": {},
+          "yearSelect": {},
+          "decadeSelect": {},
+          "yearFormat": {},
+          "dateFormat": {},
+          "dayFormat": {},
+          "dateTimeFormat": {},
+          "monthFormat": {},
+          "monthBeforeYear": {},
+          "previousMonth": {},
+          "nextMonth": {},
+          "previousYear": {},
+          "nextYear": {},
+          "previousDecade": {},
+          "nextDecade": {},
+          "previousCentury": {},
+          "nextCentury": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "TimePicker": {
+        "placeholder": {}
+      },
+      "Calendar": {
+        "lang": {
+          "placeholder": {},
+          "rangePlaceholder": {},
+          "today": {},
+          "now": {},
+          "backToToday": {},
+          "ok": {},
+          "clear": {},
+          "month": {},
+          "year": {},
+          "timeSelect": {},
+          "dateSelect": {},
+          "monthSelect": {},
+          "yearSelect": {},
+          "decadeSelect": {},
+          "yearFormat": {},
+          "dateFormat": {},
+          "dayFormat": {},
+          "dateTimeFormat": {},
+          "monthFormat": {},
+          "monthBeforeYear": {},
+          "previousMonth": {},
+          "nextMonth": {},
+          "previousYear": {},
+          "nextYear": {},
+          "previousDecade": {},
+          "nextDecade": {},
+          "previousCentury": {},
+          "nextCentury": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "Table": {
+        "filterTitle": {},
+        "filterConfirm": {},
+        "filterReset": {},
+        "emptyText": {}
+      },
+      "Modal": {
+        "okText": {},
+        "cancelText": {},
+        "justOkText": {}
+      },
+      "Popconfirm": {
+        "okText": {},
+        "cancelText": {}
+      },
+      "Transfer": {
+        "notFoundContent": {},
+        "searchPlaceholder": {},
+        "itemUnit": {},
+        "itemsUnit": {}
+      },
+      "Select": {
+        "notFoundContent": {}
+      },
+      "Upload": {
+        "uploading": {},
+        "removeFile": {},
+        "uploadError": {},
+        "previewFile": {}
+      }
+    },
+    "de_DE": {
+      "locale": {},
+      "Pagination": {
+        "items_per_page": {},
+        "jump_to": {},
+        "page": {},
+        "prev_page": {},
+        "next_page": {},
+        "prev_5": {},
+        "next_5": {},
+        "prev_3": {},
+        "next_3": {}
+      },
+      "DatePicker": {
+        "lang": {
+          "placeholder": {},
+          "rangePlaceholder": {},
+          "today": {},
+          "now": {},
+          "backToToday": {},
+          "ok": {},
+          "clear": {},
+          "month": {},
+          "year": {},
+          "timeSelect": {},
+          "dateSelect": {},
+          "monthSelect": {},
+          "yearSelect": {},
+          "decadeSelect": {},
+          "yearFormat": {},
+          "dateFormat": {},
+          "dayFormat": {},
+          "dateTimeFormat": {},
+          "monthFormat": {},
+          "monthBeforeYear": {},
+          "previousMonth": {},
+          "nextMonth": {},
+          "previousYear": {},
+          "nextYear": {},
+          "previousDecade": {},
+          "nextDecade": {},
+          "previousCentury": {},
+          "nextCentury": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "TimePicker": {
+        "placeholder": {}
+      },
+      "Calendar": {
+        "lang": {
+          "placeholder": {},
+          "rangePlaceholder": {},
+          "today": {},
+          "now": {},
+          "backToToday": {},
+          "ok": {},
+          "clear": {},
+          "month": {},
+          "year": {},
+          "timeSelect": {},
+          "dateSelect": {},
+          "monthSelect": {},
+          "yearSelect": {},
+          "decadeSelect": {},
+          "yearFormat": {},
+          "dateFormat": {},
+          "dayFormat": {},
+          "dateTimeFormat": {},
+          "monthFormat": {},
+          "monthBeforeYear": {},
+          "previousMonth": {},
+          "nextMonth": {},
+          "previousYear": {},
+          "nextYear": {},
+          "previousDecade": {},
+          "nextDecade": {},
+          "previousCentury": {},
+          "nextCentury": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "Table": {
+        "filterTitle": {},
+        "filterConfirm": {},
+        "filterReset": {},
+        "emptyText": {}
+      },
+      "Modal": {
+        "okText": {},
+        "cancelText": {},
+        "justOkText": {}
+      },
+      "Popconfirm": {
+        "okText": {},
+        "cancelText": {}
+      },
+      "Transfer": {
+        "notFoundContent": {},
+        "searchPlaceholder": {},
+        "itemUnit": {},
+        "itemsUnit": {}
+      },
+      "Select": {
+        "notFoundContent": {}
+      }
+    },
+    "en_US": {
+      "locale": {},
+      "Pagination": {
+        "items_per_page": {},
+        "jump_to": {},
+        "page": {},
+        "prev_page": {},
+        "next_page": {},
+        "prev_5": {},
+        "next_5": {},
+        "prev_3": {},
+        "next_3": {}
+      },
+      "DatePicker": {
+        "lang": {
+          "placeholder": {},
+          "rangePlaceholder": {},
+          "today": {},
+          "now": {},
+          "backToToday": {},
+          "ok": {},
+          "clear": {},
+          "month": {},
+          "year": {},
+          "timeSelect": {},
+          "dateSelect": {},
+          "monthSelect": {},
+          "yearSelect": {},
+          "decadeSelect": {},
+          "yearFormat": {},
+          "dateFormat": {},
+          "dayFormat": {},
+          "dateTimeFormat": {},
+          "monthFormat": {},
+          "monthBeforeYear": {},
+          "previousMonth": {},
+          "nextMonth": {},
+          "previousYear": {},
+          "nextYear": {},
+          "previousDecade": {},
+          "nextDecade": {},
+          "previousCentury": {},
+          "nextCentury": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "TimePicker": {
+        "placeholder": {}
+      },
+      "Calendar": {
+        "lang": {
+          "placeholder": {},
+          "rangePlaceholder": {},
+          "today": {},
+          "now": {},
+          "backToToday": {},
+          "ok": {},
+          "clear": {},
+          "month": {},
+          "year": {},
+          "timeSelect": {},
+          "dateSelect": {},
+          "monthSelect": {},
+          "yearSelect": {},
+          "decadeSelect": {},
+          "yearFormat": {},
+          "dateFormat": {},
+          "dayFormat": {},
+          "dateTimeFormat": {},
+          "monthFormat": {},
+          "monthBeforeYear": {},
+          "previousMonth": {},
+          "nextMonth": {},
+          "previousYear": {},
+          "nextYear": {},
+          "previousDecade": {},
+          "nextDecade": {},
+          "previousCentury": {},
+          "nextCentury": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "Table": {
+        "filterTitle": {},
+        "filterConfirm": {},
+        "filterReset": {},
+        "emptyText": {},
+        "selectAll": {},
+        "selectInvert": {}
+      },
+      "Modal": {
+        "okText": {},
+        "cancelText": {},
+        "justOkText": {}
+      },
+      "Popconfirm": {
+        "okText": {},
+        "cancelText": {}
+      },
+      "Transfer": {
+        "notFoundContent": {},
+        "searchPlaceholder": {},
+        "itemUnit": {},
+        "itemsUnit": {}
+      },
+      "Select": {
+        "notFoundContent": {}
+      },
+      "Upload": {
+        "uploading": {},
+        "removeFile": {},
+        "uploadError": {},
+        "previewFile": {}
+      }
+    },
+    "es_ES": {
+      "locale": {},
+      "Pagination": {
+        "items_per_page": {},
+        "jump_to": {},
+        "page": {},
+        "prev_page": {},
+        "next_page": {},
+        "prev_5": {},
+        "next_5": {},
+        "prev_3": {},
+        "next_3": {}
+      },
+      "DatePicker": {
+        "lang": {
+          "placeholder": {},
+          "rangePlaceholder": {},
+          "today": {},
+          "now": {},
+          "backToToday": {},
+          "ok": {},
+          "clear": {},
+          "month": {},
+          "year": {},
+          "timeSelect": {},
+          "dateSelect": {},
+          "monthSelect": {},
+          "yearSelect": {},
+          "decadeSelect": {},
+          "yearFormat": {},
+          "dateFormat": {},
+          "dayFormat": {},
+          "dateTimeFormat": {},
+          "monthFormat": {},
+          "monthBeforeYear": {},
+          "previousMonth": {},
+          "nextMonth": {},
+          "previousYear": {},
+          "nextYear": {},
+          "previousDecade": {},
+          "nextDecade": {},
+          "previousCentury": {},
+          "nextCentury": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "TimePicker": {
+        "placeholder": {}
+      },
+      "Table": {
+        "filterTitle": {},
+        "filterConfirm": {},
+        "filterReset": {},
+        "emptyText": {}
+      },
+      "Modal": {
+        "okText": {},
+        "cancelText": {},
+        "justOkText": {}
+      },
+      "Popconfirm": {
+        "okText": {},
+        "cancelText": {}
+      },
+      "Transfer": {
+        "notFoundContent": {},
+        "searchPlaceholder": {},
+        "itemUnit": {},
+        "itemsUnit": {}
+      }
+    },
+    "fr_BE": {
+      "locale": {},
+      "Pagination": {
+        "items_per_page": {},
+        "jump_to": {},
+        "page": {},
+        "prev_page": {},
+        "next_page": {},
+        "prev_5": {},
+        "next_5": {},
+        "prev_3": {},
+        "next_3": {}
+      },
+      "DatePicker": {
+        "lang": {
+          "placeholder": {},
+          "rangePlaceholder": {},
+          "today": {},
+          "now": {},
+          "backToToday": {},
+          "ok": {},
+          "clear": {},
+          "month": {},
+          "year": {},
+          "timeSelect": {},
+          "dateSelect": {},
+          "monthSelect": {},
+          "yearSelect": {},
+          "decadeSelect": {},
+          "yearFormat": {},
+          "dateFormat": {},
+          "dayFormat": {},
+          "dateTimeFormat": {},
+          "monthFormat": {},
+          "monthBeforeYear": {},
+          "previousMonth": {},
+          "nextMonth": {},
+          "previousYear": {},
+          "nextYear": {},
+          "previousDecade": {},
+          "nextDecade": {},
+          "previousCentury": {},
+          "nextCentury": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "TimePicker": {
+        "placeholder": {}
+      },
+      "Calendar": {
+        "lang": {
+          "placeholder": {},
+          "rangePlaceholder": {},
+          "today": {},
+          "now": {},
+          "backToToday": {},
+          "ok": {},
+          "clear": {},
+          "month": {},
+          "year": {},
+          "timeSelect": {},
+          "dateSelect": {},
+          "monthSelect": {},
+          "yearSelect": {},
+          "decadeSelect": {},
+          "yearFormat": {},
+          "dateFormat": {},
+          "dayFormat": {},
+          "dateTimeFormat": {},
+          "monthFormat": {},
+          "monthBeforeYear": {},
+          "previousMonth": {},
+          "nextMonth": {},
+          "previousYear": {},
+          "nextYear": {},
+          "previousDecade": {},
+          "nextDecade": {},
+          "previousCentury": {},
+          "nextCentury": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "Table": {
+        "filterTitle": {},
+        "filterConfirm": {},
+        "filterReset": {},
+        "emptyText": {}
+      },
+      "Modal": {
+        "okText": {},
+        "cancelText": {},
+        "justOkText": {}
+      },
+      "Popconfirm": {
+        "okText": {},
+        "cancelText": {}
+      },
+      "Transfer": {
+        "notFoundContent": {},
+        "searchPlaceholder": {},
+        "itemUnit": {},
+        "itemsUnit": {}
+      },
+      "Select": {
+        "notFoundContent": {}
+      }
+    },
+    "ko_KR": {
+      "locale": {},
+      "Pagination": {
+        "items_per_page": {},
+        "jump_to": {},
+        "page": {},
+        "prev_page": {},
+        "next_page": {},
+        "prev_5": {},
+        "next_5": {},
+        "prev_3": {},
+        "next_3": {}
+      },
+      "DatePicker": {
+        "lang": {
+          "placeholder": {},
+          "rangePlaceholder": {},
+          "today": {},
+          "now": {},
+          "backToToday": {},
+          "ok": {},
+          "clear": {},
+          "month": {},
+          "year": {},
+          "timeSelect": {},
+          "dateSelect": {},
+          "monthSelect": {},
+          "yearSelect": {},
+          "decadeSelect": {},
+          "yearFormat": {},
+          "dateFormat": {},
+          "dayFormat": {},
+          "dateTimeFormat": {},
+          "monthFormat": {},
+          "monthBeforeYear": {},
+          "previousMonth": {},
+          "nextMonth": {},
+          "previousYear": {},
+          "nextYear": {},
+          "previousDecade": {},
+          "nextDecade": {},
+          "previousCentury": {},
+          "nextCentury": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "TimePicker": {
+        "placeholder": {}
+      },
+      "Calendar": {
+        "lang": {
+          "placeholder": {},
+          "rangePlaceholder": {},
+          "today": {},
+          "now": {},
+          "backToToday": {},
+          "ok": {},
+          "clear": {},
+          "month": {},
+          "year": {},
+          "timeSelect": {},
+          "dateSelect": {},
+          "monthSelect": {},
+          "yearSelect": {},
+          "decadeSelect": {},
+          "yearFormat": {},
+          "dateFormat": {},
+          "dayFormat": {},
+          "dateTimeFormat": {},
+          "monthFormat": {},
+          "monthBeforeYear": {},
+          "previousMonth": {},
+          "nextMonth": {},
+          "previousYear": {},
+          "nextYear": {},
+          "previousDecade": {},
+          "nextDecade": {},
+          "previousCentury": {},
+          "nextCentury": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "Table": {
+        "filterTitle": {},
+        "filterConfirm": {},
+        "filterReset": {},
+        "emptyText": {}
+      },
+      "Modal": {
+        "okText": {},
+        "cancelText": {},
+        "justOkText": {}
+      },
+      "Popconfirm": {
+        "okText": {},
+        "cancelText": {}
+      },
+      "Transfer": {
+        "notFoundContent": {},
+        "searchPlaceholder": {},
+        "itemUnit": {},
+        "itemsUnit": {}
+      },
+      "Select": {
+        "notFoundContent": {}
+      },
+      "Upload": {
+        "uploading": {},
+        "removeFile": {},
+        "uploadError": {},
+        "previewFile": {}
+      }
+    },
+    "nl_NL": {
+      "locale": {},
+      "Pagination": {
+        "items_per_page": {},
+        "jump_to": {},
+        "page": {},
+        "prev_page": {},
+        "next_page": {},
+        "prev_5": {},
+        "next_5": {},
+        "prev_3": {},
+        "next_3": {}
+      },
+      "DatePicker": {
+        "lang": {
+          "placeholder": {},
+          "rangePlaceholder": {},
+          "today": {},
+          "now": {},
+          "backToToday": {},
+          "ok": {},
+          "clear": {},
+          "month": {},
+          "year": {},
+          "timeSelect": {},
+          "dateSelect": {},
+          "monthSelect": {},
+          "yearSelect": {},
+          "decadeSelect": {},
+          "yearFormat": {},
+          "dateFormat": {},
+          "dayFormat": {},
+          "dateTimeFormat": {},
+          "monthFormat": {},
+          "monthBeforeYear": {},
+          "previousMonth": {},
+          "nextMonth": {},
+          "previousYear": {},
+          "nextYear": {},
+          "previousDecade": {},
+          "nextDecade": {},
+          "previousCentury": {},
+          "nextCentury": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "TimePicker": {
+        "placeholder": {}
+      },
+      "Calendar": {
+        "lang": {
+          "placeholder": {},
+          "rangePlaceholder": {},
+          "today": {},
+          "now": {},
+          "backToToday": {},
+          "ok": {},
+          "clear": {},
+          "month": {},
+          "year": {},
+          "timeSelect": {},
+          "dateSelect": {},
+          "monthSelect": {},
+          "yearSelect": {},
+          "decadeSelect": {},
+          "yearFormat": {},
+          "dateFormat": {},
+          "dayFormat": {},
+          "dateTimeFormat": {},
+          "monthFormat": {},
+          "monthBeforeYear": {},
+          "previousMonth": {},
+          "nextMonth": {},
+          "previousYear": {},
+          "nextYear": {},
+          "previousDecade": {},
+          "nextDecade": {},
+          "previousCentury": {},
+          "nextCentury": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "Table": {
+        "filterTitle": {},
+        "filterConfirm": {},
+        "filterReset": {},
+        "emptyText": {}
+      },
+      "Modal": {
+        "okText": {},
+        "cancelText": {},
+        "justOkText": {}
+      },
+      "Popconfirm": {
+        "okText": {},
+        "cancelText": {}
+      },
+      "Transfer": {
+        "notFoundContent": {},
+        "searchPlaceholder": {},
+        "itemUnit": {},
+        "itemsUnit": {}
+      },
+      "Select": {
+        "notFoundContent": {}
+      }
+    },
+    "pt_BR": {
+      "locale": {},
+      "Pagination": {
+        "items_per_page": {},
+        "jump_to": {},
+        "page": {},
+        "prev_page": {},
+        "next_page": {},
+        "prev_5": {},
+        "next_5": {},
+        "prev_3": {},
+        "next_3": {}
+      },
+      "DatePicker": {
+        "lang": {
+          "placeholder": {},
+          "rangePlaceholder": {},
+          "today": {},
+          "now": {},
+          "backToToday": {},
+          "ok": {},
+          "clear": {},
+          "month": {},
+          "year": {},
+          "timeSelect": {},
+          "dateSelect": {},
+          "monthSelect": {},
+          "yearSelect": {},
+          "decadeSelect": {},
+          "yearFormat": {},
+          "dateFormat": {},
+          "dayFormat": {},
+          "dateTimeFormat": {},
+          "monthFormat": {},
+          "monthBeforeYear": {},
+          "previousMonth": {},
+          "nextMonth": {},
+          "previousYear": {},
+          "nextYear": {},
+          "previousDecade": {},
+          "nextDecade": {},
+          "previousCentury": {},
+          "nextCentury": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "TimePicker": {
+        "placeholder": {}
+      },
+      "Calendar": {
+        "lang": {
+          "placeholder": {},
+          "rangePlaceholder": {},
+          "today": {},
+          "now": {},
+          "backToToday": {},
+          "ok": {},
+          "clear": {},
+          "month": {},
+          "year": {},
+          "timeSelect": {},
+          "dateSelect": {},
+          "monthSelect": {},
+          "yearSelect": {},
+          "decadeSelect": {},
+          "yearFormat": {},
+          "dateFormat": {},
+          "dayFormat": {},
+          "dateTimeFormat": {},
+          "monthFormat": {},
+          "monthBeforeYear": {},
+          "previousMonth": {},
+          "nextMonth": {},
+          "previousYear": {},
+          "nextYear": {},
+          "previousDecade": {},
+          "nextDecade": {},
+          "previousCentury": {},
+          "nextCentury": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "Table": {
+        "filterTitle": {},
+        "filterConfirm": {},
+        "filterReset": {},
+        "emptyText": {}
+      },
+      "Modal": {
+        "okText": {},
+        "cancelText": {},
+        "justOkText": {}
+      },
+      "Popconfirm": {
+        "okText": {},
+        "cancelText": {}
+      },
+      "Transfer": {
+        "notFoundContent": {},
+        "searchPlaceholder": {},
+        "itemUnit": {},
+        "itemsUnit": {}
+      },
+      "Select": {
+        "notFoundContent": {}
+      }
+    },
+    "ru_RU": {
+      "locale": {},
+      "Pagination": {
+        "items_per_page": {},
+        "jump_to": {},
+        "page": {},
+        "prev_page": {},
+        "next_page": {},
+        "prev_5": {},
+        "next_5": {},
+        "prev_3": {},
+        "next_3": {}
+      },
+      "DatePicker": {
+        "lang": {
+          "placeholder": {},
+          "rangePlaceholder": {},
+          "today": {},
+          "now": {},
+          "backToToday": {},
+          "ok": {},
+          "clear": {},
+          "month": {},
+          "year": {},
+          "monthSelect": {},
+          "yearSelect": {},
+          "decadeSelect": {},
+          "yearFormat": {},
+          "dateFormat": {},
+          "dayFormat": {},
+          "dateTimeFormat": {},
+          "monthFormat": {},
+          "monthBeforeYear": {},
+          "previousMonth": {},
+          "nextMonth": {},
+          "previousYear": {},
+          "nextYear": {},
+          "previousDecade": {},
+          "nextDecade": {},
+          "previousCentury": {},
+          "nextCentury": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "TimePicker": {
+        "placeholder": {}
+      },
+      "Calendar": {
+        "lang": {
+          "placeholder": {},
+          "rangePlaceholder": {},
+          "today": {},
+          "now": {},
+          "backToToday": {},
+          "ok": {},
+          "clear": {},
+          "month": {},
+          "year": {},
+          "monthSelect": {},
+          "yearSelect": {},
+          "decadeSelect": {},
+          "yearFormat": {},
+          "dateFormat": {},
+          "dayFormat": {},
+          "dateTimeFormat": {},
+          "monthFormat": {},
+          "monthBeforeYear": {},
+          "previousMonth": {},
+          "nextMonth": {},
+          "previousYear": {},
+          "nextYear": {},
+          "previousDecade": {},
+          "nextDecade": {},
+          "previousCentury": {},
+          "nextCentury": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "Table": {
+        "filterTitle": {},
+        "filterConfirm": {},
+        "filterReset": {},
+        "emptyText": {}
+      },
+      "Modal": {
+        "okText": {},
+        "cancelText": {},
+        "justOkText": {}
+      },
+      "Popconfirm": {
+        "okText": {},
+        "cancelText": {}
+      },
+      "Transfer": {
+        "notFoundContent": {},
+        "searchPlaceholder": {},
+        "itemUnit": {},
+        "itemsUnit": {}
+      },
+      "Select": {
+        "notFoundContent": {}
+      }
+    },
+    "sv_SE": {
+      "locale": {},
+      "Pagination": {
+        "items_per_page": {},
+        "jump_to": {},
+        "page": {},
+        "prev_page": {},
+        "next_page": {},
+        "prev_5": {},
+        "next_5": {},
+        "prev_3": {},
+        "next_3": {}
+      },
+      "DatePicker": {
+        "lang": {
+          "placeholder": {},
+          "rangePlaceholder": {},
+          "today": {},
+          "now": {},
+          "backToToday": {},
+          "ok": {},
+          "clear": {},
+          "month": {},
+          "year": {},
+          "timeSelect": {},
+          "dateSelect": {},
+          "monthSelect": {},
+          "yearSelect": {},
+          "decadeSelect": {},
+          "yearFormat": {},
+          "dateFormat": {},
+          "dayFormat": {},
+          "dateTimeFormat": {},
+          "monthFormat": {},
+          "monthBeforeYear": {},
+          "previousMonth": {},
+          "nextMonth": {},
+          "previousYear": {},
+          "nextYear": {},
+          "previousDecade": {},
+          "nextDecade": {},
+          "previousCentury": {},
+          "nextCentury": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "TimePicker": {
+        "placeholder": {}
+      },
+      "Calendar": {
+        "lang": {
+          "placeholder": {},
+          "rangePlaceholder": {},
+          "today": {},
+          "now": {},
+          "backToToday": {},
+          "ok": {},
+          "clear": {},
+          "month": {},
+          "year": {},
+          "timeSelect": {},
+          "dateSelect": {},
+          "monthSelect": {},
+          "yearSelect": {},
+          "decadeSelect": {},
+          "yearFormat": {},
+          "dateFormat": {},
+          "dayFormat": {},
+          "dateTimeFormat": {},
+          "monthFormat": {},
+          "monthBeforeYear": {},
+          "previousMonth": {},
+          "nextMonth": {},
+          "previousYear": {},
+          "nextYear": {},
+          "previousDecade": {},
+          "nextDecade": {},
+          "previousCentury": {},
+          "nextCentury": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "Table": {
+        "filterTitle": {},
+        "filterConfirm": {},
+        "filterReset": {},
+        "emptyText": {}
+      },
+      "Modal": {
+        "okText": {},
+        "cancelText": {},
+        "justOkText": {}
+      },
+      "Popconfirm": {
+        "okText": {},
+        "cancelText": {}
+      },
+      "Transfer": {
+        "notFoundContent": {},
+        "searchPlaceholder": {},
+        "itemUnit": {},
+        "itemsUnit": {}
+      },
+      "Select": {
+        "notFoundContent": {}
+      }
+    }
   }
 };
 antd.Affix.prototype = {
   "setAffixStyle": function () {},
   "setPlaceholderStyle": function () {},
+  "updatePosition": function () {},
   "componentDidMount": function () {},
   "componentWillReceiveProps": function () {},
   "componentWillUnmount": function () {},
@@ -1666,6 +2930,7 @@ antd.Breadcrumb.Item.prototype = {
   "forceUpdate": function () {}
 };
 antd.Button.prototype = {
+  "componentWillReceiveProps": function () {},
   "componentWillUnmount": function () {},
   "render": function () {},
   "isReactComponent": function () {},
@@ -1674,6 +2939,7 @@ antd.Button.prototype = {
 };
 antd.Calendar.prototype = {
   "componentWillReceiveProps": function () {},
+  "onPanelChange": function () {},
   "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
@@ -1713,6 +2979,8 @@ antd.Collapse.Panel.prototype = {
   "isMounted": function () {}
 };
 antd.Carousel.prototype = {
+  "componentDidMount": function () {},
+  "componentWillUnmount": function () {},
   "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
@@ -1838,6 +3106,7 @@ antd.DatePicker.MonthPicker.prototype = {
   "isMounted": function () {}
 };
 antd.Dropdown.prototype = {
+  "getTransitionName": function () {},
   "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
@@ -1851,6 +3120,7 @@ antd.Dropdown.Button.prototype = {
 };
 antd.Form.prototype = {
   "shouldComponentUpdate": function () {},
+  "getChildContext": function () {},
   "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
@@ -1930,6 +3200,8 @@ antd.Layout.Content.prototype = {
 };
 antd.Layout.Sider.prototype = {
   "componentWillReceiveProps": function () {},
+  "componentDidMount": function () {},
+  "componentWillUnmount": function () {},
   "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
@@ -2217,6 +3489,7 @@ antd.Switch.prototype = {
 };
 antd.Table.prototype = {
   "getDefaultSelection": function () {},
+  "getDefaultPagination": function () {},
   "getLocale": function () {},
   "componentWillReceiveProps": function () {},
   "setSelectedRowKeys": function () {},
@@ -2330,6 +3603,7 @@ antd.TreeSelect.TreeNode.prototype = {
   "forceUpdate": function () {}
 };
 antd.Tabs.prototype = {
+  "componentDidMount": function () {},
   "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
@@ -2362,6 +3636,7 @@ antd.Tabs.TabPane.prototype = {
   "isMounted": function () {}
 };
 antd.Tag.prototype = {
+  "isPresetColor": function () {},
   "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
@@ -2376,6 +3651,7 @@ antd.Tag.CheckableTag.prototype = {
 antd.TimePicker.prototype = {
   "componentWillReceiveProps": function () {},
   "getLocale": function () {},
+  "focus": function () {},
   "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
@@ -2397,6 +3673,8 @@ antd.Tooltip.prototype = {
   "componentWillReceiveProps": function () {},
   "getPopupDomNode": function () {},
   "getPlacements": function () {},
+  "getDisabledCompatibleChildren": function () {},
+  "isNoTitle": function () {},
   "render": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
@@ -2417,6 +3695,8 @@ antd.Mention.Nav.prototype = {
   "forceUpdate": function () {}
 };
 antd.Upload.prototype = {
+  "componentWillUnmount": function () {},
+  "getLocale": function () {},
   "autoUpdateProgress": function () {},
   "removeFile": function () {},
   "handleRemove": function () {},

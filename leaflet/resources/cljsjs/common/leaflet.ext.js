@@ -737,7 +737,6 @@ var L = {
     "getLayers": function () {},
     "eachLayer": function () {},
     "clearLayers": function () {},
-    "hasLayer": function () {},
     "toGeoJSON": function () {},
    },
   "FeatureGroup": function () {},
@@ -760,7 +759,6 @@ var L = {
   "polyline": {
     "addTo": function () {},       
     "bindPopup": function () {},   
-    "bindPopup": function () {},   
     "unbindPopup": function () {}, 
     "openPopup": function () {},   
     "closePopup": function () {},  
@@ -773,7 +771,6 @@ var L = {
     "setLatLngs": function () {}, 
     "getLatLngs": function () {}, 
     "spliceLatLngs": function () {},
-    "getBounds": function () {}, 
     "toGeoJSON": function () {} 
   },
   "PolyUtil": {
@@ -783,7 +780,6 @@ var L = {
   "polygon": {
     "addTo": function () {},       
     "bindPopup": function () {},   
-    "bindPopup": function () {},   
     "unbindPopup": function () {}, 
     "openPopup": function () {},   
     "closePopup": function () {},  
@@ -796,7 +792,6 @@ var L = {
     "setLatLngs": function () {}, 
     "getLatLngs": function () {}, 
     "spliceLatLngs": function () {},
-    "getBounds": function () {}, 
     "toGeoJSON": function () {}
   },
   "MultiPolyline": function () {},

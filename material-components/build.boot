@@ -8,7 +8,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "0.1.1")
+(def +lib-version+ "0.6.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -37,7 +37,7 @@
   (task-options! push {:ensure-branch nil})
   (comp
    (download :url (str "https://github.com/material-components/material-components-web/archive/v" +lib-version+ ".zip")
-             :checksum "758a02ddaf204ec4247d3b8298f2b7be"
+             :checksum "bc9450d49e8243a8272d12c4d9746d2b"
              :unzip true)
 
    (build-material-components)

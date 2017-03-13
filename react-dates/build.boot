@@ -1,6 +1,9 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]
+                  [cljsjs/moment "2.17.1-0"]
+                  [cljsjs/react "15.4.2-2"]
+                  [cljsjs/react-dom "15.4.2-2"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -9,7 +12,7 @@
          '[clojure.java.io :as io])
 
 (def +lib-version+ "3.4.0")
-(def +version+ (str +lib-version+ "-1"))
+(def +version+ (str +lib-version+ "-2"))
 (def +lib-folder+ (format "react-dates-%s" +lib-version+))
 
 (task-options!
@@ -38,7 +41,7 @@
       (binding [boot.util/*sh-dir* (str (io/file tmp +lib-folder+))]
         ((sh "npm" "install"))
         ((sh "npm" "install" "webpack"))
-        ((sh "npm" "install" "extract-text-webpack-plugin"))
+        ((sh "npm" "install" "extract-text-webpack-plugin@1.0.1"))
         ((sh "npm" "run" "build"))
         ((sh "./node_modules/.bin/webpack" "--config" "webpack-cljsjs.config.js")))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
