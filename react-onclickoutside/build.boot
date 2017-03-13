@@ -1,5 +1,5 @@
-(def +lib-version+ "4.9.0")
-(def +version+ (str +lib-version+ "-2"))
+(def +lib-version+ "5.9.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (set-env!
   :resource-paths #{"resources"}
@@ -20,8 +20,9 @@
 
 (deftask package  []
   (comp
-    (download :url (str "https://raw.githubusercontent.com/Pomax/react-onclickoutside/v" +lib-version+ "/index.js")
-              :checksum "d5d4b34e43de6ac24e850ab8a027a726")
+    (download
+      :url (str "https://raw.githubusercontent.com/Pomax/react-onclickoutside/v" +lib-version+ "/index.js")
+      :checksum "8ee878d9923febf3d48902831363edbe")
     (sift :move {#"^index.js$"
                  "cljsjs/react-onclickoutside/development/react-onclickoutside.inc.js"})
     (sift :include #{#"^cljsjs"})
