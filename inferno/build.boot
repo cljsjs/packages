@@ -1,4 +1,4 @@
-(def +lib-version+ "1.2.2")
+(def +lib-version+ "1.4.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (set-env!
@@ -16,20 +16,24 @@
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (def modules
-  {"inferno" "268efc1f01aa64ddaf9cb7a6b14ca077"
-   "inferno.min" "0289d2f7280c95e181870a604669a2f5"
-   "inferno-component" "0ab0fa08c6fb2906270ffa3b255a4101"
-   "inferno-component.min" "d0397e5e61c841a0205df8ba28d75194"
-   "inferno-create-element" "8f259567b6e15aac06f88ec4ced2bdf5"
-   "inferno-create-element.min" "ec50b62e28fdfa1a7f393e41944fd18d"
-   "inferno-create-class" "7c62dbb5dc5ae54679c319d647a2935f"
-   "inferno-create-class.min" "1086e16638d2507bc2049efa4c725b77"
-   "inferno-hyperscript" "58b79bfc87d9597b90f189d1a97ae2bd"
-   "inferno-hyperscript.min" "0597fcba1208547d11d4e0f4f9220517"})
+  {"inferno" "C2C68465392D881AC7DB67C5A0D7FA87",
+   "inferno-hyperscript.min" "2BEA21DC67F757878691022611751DB6",
+   "inferno.min" "981F6FEE84BE9F1871AE05652CB159B4",
+   "inferno-create-element" "BC30F0C0122174802637FD44BB08F6F3",
+   "inferno-hyperscript" "E3CA6E01A36FC721102BB3B251095183",
+   "inferno-component" "389D120DFCBD30CA21F97911471E5DEA",
+   "inferno-create-element.min" "148C35C3E8D16079058BE80522F2DE5C",
+   "inferno-component.min" "3A1262EDDA690688B7FCDE4E4697162C",
+   "inferno-create-class.min" "AEDD207F06226B29B92443C0B3B2242C",
+   "inferno-create-class" "CC2A1687AA339BD39CC62244101544E6"})
+
+(defn get-module-url [module]
+  (str "https://unpkg.com/"
+       (-> module (clojure.string/split #"\.") first)
+       "@" +lib-version+ "/dist/" module ".js"))
 
 (defn download-module [[module checksum]]
-  (download :url (str "https://unpkg.com/inferno@" +lib-version+ "/dist/" module ".js")
-            :checksum checksum))
+  (download :url (get-module-url module) :checksum checksum))
 
 (defn download-modules []
   (reduce #(comp %1 (download-module %2)) identity modules))
@@ -50,3 +54,22 @@
     (sift :include #{#"^cljsjs" #"^deps.cljs"})
     (pom)
     (jar)))
+
+(defn md5sum [fileset name]
+  (with-open [is  (clojure.java.io/input-stream (tmp-file (tmp-get fileset name)))
+              dis (java.security.DigestInputStream. is (java.security.MessageDigest/getInstance "MD5"))]
+    (#'cljsjs.boot-cljsjs.packaging/realize-input-stream! dis)
+    (#'cljsjs.boot-cljsjs.packaging/message-digest->str (.getMessageDigest dis))))
+
+(deftask load-checksums
+  "Task to create checksums map for new version"
+  []
+  (comp
+   (reduce #(comp %1 (download :url (get-module-url %2))) identity (keys modules))
+    (fn [handler]
+      (fn [fileset]
+        (clojure.pprint/pprint
+         (into {}
+               (map (juxt identity #(md5sum fileset (str % ".js")))
+                    (keys modules))))
+        fileset))))
