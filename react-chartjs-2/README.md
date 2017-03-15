@@ -1,4 +1,4 @@
-# cljsjs/reactstrap
+# cljsjs/react-chartjs-2
 
 [](dependency)
 ```clojure
