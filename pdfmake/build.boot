@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.1.24")
+(def +lib-version+ "0.1.26")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -19,14 +19,14 @@
 (deftask package []
   ;;(task-options! push {:ensure-branch nil})
   (comp
-    (download :url (format "https://github.com/bpampuch/pdfmake/archive/%s.zip" +lib-version+)
-              :checksum "cf7ab63563c0cfb0e1555af884d8ad23"
-              :unzip true)
-    (sift :move {#"^pdfmake-[^\/]*/build/pdfmake\.min\.js" "cljsjs/production/pdfmake.inc.js"
-                 #"^pdfmake-[^\/]*/build/pdfmake\.js" "cljsjs/development/pdfmake.inc.js"
-                 #"^pdfmake-[^\/]*/build/vfs_fonts\.js" "cljsjs/development/vfsfonts.inc.js"
-                 #"^pdfmake-[^\/]*/build/vfs_fonts\.js" "cljsjs/production/vfsfonts.inc.js"})
+   (download :url (format "https://github.com/bpampuch/pdfmake/archive/%s.zip" +lib-version+)
+             :checksum "0fe4abd2db0927d05235665406c8b5a0"
+             :unzip true)
+   (sift :move {#"^pdfmake-[^\/]*/build/pdfmake\.min\.js" "cljsjs/production/pdfmake.inc.js"
+                #"^pdfmake-[^\/]*/build/pdfmake\.js" "cljsjs/development/pdfmake.inc.js"
+                #"^pdfmake-[^\/]*/build/vfs_fonts\.js" "cljsjs/development/vfsfonts.inc.js"
+                #"^pdfmake-[^\/]*/build/vfs_fonts\.js" "cljsjs/production/vfsfonts.inc.js"})
 
-    (sift :include #{#"^cljsjs" #"^deps\.cljs"})
-    (pom)
-    (jar)))
+   (sift :include #{#"^cljsjs" #"^deps\.cljs"})
+   (pom)
+   (jar)))
