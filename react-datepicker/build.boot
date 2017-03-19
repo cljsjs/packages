@@ -3,7 +3,7 @@
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]
                   [cljsjs/react "15.3.1-0"]
                   [cljsjs/moment "2.10.6-4"]
-                  [cljsjs/react-onclickoutside "4.9.0-2"]
+                  [cljsjs/react-onclickoutside "5.9.0-0"]
                   [cljsjs/tether "1.1.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
