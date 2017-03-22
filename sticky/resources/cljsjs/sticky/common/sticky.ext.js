@@ -1,0 +1,2 @@
+/** @interface */
+function Sticky(element) {}
