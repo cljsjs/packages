@@ -5,7 +5,7 @@ cljsjs/react-toolbox:
 
 [](dependency)
 ```clojure
-[cljsjs/react-toolbox "2.0.0-beta.6-0"] ;; latest release
+[cljsjs/react-toolbox "2.0.0-beta.7-0"] ;; latest release
 ```
 [](/dependency)
 
