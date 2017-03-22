@@ -10,7 +10,7 @@
          '[boot.util :refer [sh]]
          '[clojure.java.io :as io])
 
-(def +lib-version+ "2.0.0-beta.6")
+(def +lib-version+ "2.0.0-beta.7")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "react-toolbox-%s" +lib-version+))
 
@@ -31,7 +31,7 @@
 
 (deftask download-lib []
          (download :url (format "https://github.com/react-toolbox/react-toolbox/archive/%s.zip" +lib-version+)
-                   :checksum "4992342FB643970C5B76B2B362FDFA13"
+                   :checksum "279AFADA1FCAB344DDC67BD7D0C20F49"
                    :unzip true))
 
 (deftask build []
@@ -46,8 +46,6 @@
                             (io/file tmp +lib-folder+ "webpack-cljsjs.config.js"))
                           (binding [boot.util/*sh-dir* (str (io/file tmp +lib-folder+))]
                             ((sh (cmd "npm") "install"))
-                            ((sh (cmd "npm") "install" "babel-plugin-add-module-exports"))
-                            ((sh (cmd "npm") "run" "build"))
                             ((sh (cmd (path (str (io/file tmp +lib-folder+) "/node_modules/.bin/webpack"))) "--config" "webpack-cljsjs.config.js")))
                           (-> fileset (boot/add-resource tmp) boot/commit!))))
 
