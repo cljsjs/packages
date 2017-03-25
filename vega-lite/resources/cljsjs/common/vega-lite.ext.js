@@ -271,7 +271,6 @@ var vl = {
       "fontSize": {},
       "baseline": {},
       "text": {},
-      "shortTimeLabels": {},
       "applyColorToBackground": {}
     },
     "defaultConfig": {
@@ -293,7 +292,6 @@ var vl = {
         "fontSize": {},
         "baseline": {},
         "text": {},
-        "shortTimeLabels": {},
         "applyColorToBackground": {}
       },
       "overlay": {
@@ -326,8 +324,7 @@ var vl = {
         "characterWidth": {}
       },
       "legend": {
-        "orient": {},
-        "shortTimeLabels": {}
+        "orient": {}
       },
       "facet": {
         "scale": {
@@ -391,6 +388,7 @@ var vl = {
     "SHORT_MONTHS": {},
     "DAYS": {},
     "SHORT_DAYS": {},
+    "timestamp": function () {},
     "dateTimeExpr": function () {}
   },
   "encoding": {
@@ -418,8 +416,7 @@ var vl = {
   },
   "legend": {
     "defaultLegendConfig": {
-      "orient": {},
-      "shortTimeLabels": {}
+      "orient": {}
     }
   },
   "mark": {
@@ -543,7 +540,7 @@ var vl = {
     "isSortField": function () {}
   },
   "spec": {
-    "isFacetSpec": function () {},
+    "isSomeFacetSpec": function () {},
     "isExtendedUnitSpec": function () {},
     "isUnitSpec": function () {},
     "isSomeUnitSpec": function () {},
@@ -598,6 +595,8 @@ var vl = {
       "yearmonthdatehoursminutes": {},
       "YEARMONTHDATEHOURSMINUTESSECONDS": {},
       "yearmonthdatehoursminutesseconds": {},
+      "MONTHDATE": {},
+      "monthdate": {},
       "HOURSMINUTES": {},
       "hoursminutes": {},
       "HOURSMINUTESSECONDS": {},
@@ -624,7 +623,7 @@ var vl = {
     "containsTimeUnit": function () {},
     "defaultScaleType": function () {},
     "fieldExpr": function () {},
-    "rawDomain": function () {},
+    "imputedDomain": function () {},
     "smallestUnit": function () {},
     "template": function () {}
   },
