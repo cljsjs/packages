@@ -4,8 +4,9 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.5.3")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "3.7.3")
+(def +version+ (str +lib-version+ "-0"))
+(def +checksum+ "BE95C5C6C0C17A9E0E6B58837A5BE8C6")
 
 (task-options!
  pom  {:project     'cljsjs/firebase
@@ -18,7 +19,7 @@
 (deftask package []
   (comp
    (download :url (str "http://registry.npmjs.org/firebase/-/firebase-" +lib-version+ ".tgz")
-             :checksum "9CC47991C5E481594EA360738FD709B4"
+             :checksum +checksum+
              :decompress true
              :compression-format "gz"
              :archive-format "tar")
