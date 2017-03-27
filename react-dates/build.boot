@@ -11,7 +11,7 @@
          '[boot.util :refer [sh]]
          '[clojure.java.io :as io])
 
-(def +lib-version+ "3.4.0")
+(def +lib-version+ "8.2.1")
 (def +version+ (str +lib-version+ "-2"))
 (def +lib-folder+ (format "react-dates-%s" +lib-version+))
 
@@ -25,7 +25,7 @@
 
 (deftask download-react-dates []
   (download :url      (format "https://github.com/airbnb/react-dates/archive/v%s.zip" +lib-version+)
-            :checksum "14ae97e62a89f81168521d87189f0b79"
+            :checksum "FD00E40E58EBB68F01A034F17B72200B"
             :unzip    true))
 
 (deftask build-react-dates []
