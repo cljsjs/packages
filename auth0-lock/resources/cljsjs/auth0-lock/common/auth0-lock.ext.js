@@ -14,6 +14,7 @@ var Auth0Lock = {
   "listenerCount": function () {}
 };
 Auth0Lock.prototype = {
+  "resumeAuth": function () {},
   "show": function () {},
   "hide": function () {},
   "destroy": function () {},
