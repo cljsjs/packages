@@ -1,8 +1,12 @@
 # cljsjs/react-dates
 
+This wraps up [Airbnb's react-dates widget](https://github.com/airbnb/react-dates) in a tasty CLJSJS wrapper.
+
+An example of this being used with Reagent can be found [here](https://github.com/ddellacosta/react-dates-reagent-example).
+
 [](dependency)
 ```clojure
-[cljsjs/react-dates "3.4.0-2"] ;; latest release
+[cljsjs/react-dates "8.2.1-2"] ;; latest release
 ```
 [](/dependency)
 
