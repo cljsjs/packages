@@ -1,4 +1,4 @@
-(def +lib-version+ "1.4.2")
+(def +lib-version+ "1.5.3")
 (def +version+ (str +lib-version+ "-0"))
 
 (set-env!
@@ -16,16 +16,16 @@
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (def modules
-  {"inferno" "BAF3B17FE7F9FCB0229C5AA8D382F63A",
-   "inferno-hyperscript.min" "80D2A71EB0E06D6484FC068983A90336",
-   "inferno.min" "AB425CAAA67B37B29538C68448822879",
-   "inferno-create-element" "B8D56AF3E7579B6F79F66EC683B91A26",
-   "inferno-hyperscript" "8F9BE4B52F2A4C93ADBDE034BF7398A3",
-   "inferno-component" "F945FAA28C6E9CFF3F48DA4600D814A2",
-   "inferno-create-element.min" "C5A3551520498F8490FE74E55FAFE909",
-   "inferno-component.min" "74FCB657EDCDD1037CE95D3B0F1A01BE",
+  {"inferno" "D16E79F1F9B191A89FAF60C908E49E88",
+   "inferno-hyperscript.min" "C9694DB078CB5AC4AB021E08982E1D9A",
+   "inferno.min" "33E370660BA02FD01D35AF222E008B0D",
+   "inferno-create-element" "3CEFD8632C501AE2A3670D7B92E3D217",
+   "inferno-hyperscript" "88F06ECE7D71560CFC558038DF7B9C72",
+   "inferno-component" "079E6269C32A15BBC621812A2FE8878B",
+   "inferno-create-element.min" "DAF1EAA27D642C8D0C7950C9BB49C588",
+   "inferno-component.min" "5EF5BDA974294733980B1321F3E4047C",
    "inferno-create-class.min" "FCC7CF7E97325FFEA1C9CEF3E956E83F",
-   "inferno-create-class" "B1C52EE22988BE1D5CE11A3C8B2B0FB9"})
+   "inferno-create-class" "C1EE63BFA62DD99B253ECB7771091B72"})
 
 (defn get-module-url [module]
   (str "https://unpkg.com/"
