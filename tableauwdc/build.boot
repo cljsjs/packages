@@ -6,7 +6,7 @@
          '[boot.core :as boot])
 
 (def +lib-version+ "2.2.0")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/tableauwdc
