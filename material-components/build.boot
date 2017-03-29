@@ -8,8 +8,8 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "0.6.0")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "0.7.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom {:project     'cljsjs/material-components
@@ -37,7 +37,7 @@
   (task-options! push {:ensure-branch nil})
   (comp
    (download :url (str "https://github.com/material-components/material-components-web/archive/v" +lib-version+ ".zip")
-             :checksum "bc9450d49e8243a8272d12c4d9746d2b"
+             :checksum "02d0870d024be6114b9bd1e098c1f396"
              :unzip true)
 
    (build-material-components)

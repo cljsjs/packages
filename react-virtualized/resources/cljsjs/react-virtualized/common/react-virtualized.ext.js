@@ -2,7 +2,7 @@
 
 // Loaded JavaScripts:
 // https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-with-addons.js
-// https://cdnjs.cloudflare.com/ajax/libs/react-virtualized/9.0.0-rc.0/react-virtualized.js
+// https://cdnjs.cloudflare.com/ajax/libs/react-virtualized/9.0.3/react-virtualized.js
 
 // Reference JavaScript object: ReactVirtualized
 /**********************************************************************
@@ -78,10 +78,12 @@ var ReactVirtualized = {
       "cellRangeRenderer": function () {},
       "estimatedColumnSize": {},
       "estimatedRowSize": {},
+      "getScrollbarSize": function () {},
       "noContentRenderer": function () {},
       "onScroll": function () {},
       "onSectionRendered": function () {},
       "overscanColumnCount": {},
+      "overscanIndicesGetter": function () {},
       "overscanRowCount": {},
       "scrollingResetTimeInterval": {},
       "scrollToAlignment": {},
