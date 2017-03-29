@@ -6,33 +6,24 @@ var ReactDates = {
   "DateRangePicker": {
     "propTypes": {
       "startDate": {
-        "isRequired": function () {}
+        "isRequired": function () {},
+        "withPredicate": function () {}
       },
       "endDate": {
-        "isRequired": function () {}
+        "isRequired": function () {},
+        "withPredicate": function () {}
       },
+      "onDatesChange": function () {},
       "focusedInput": {
         "isRequired": function () {}
       },
-      "minimumNights": {
+      "onFocusChange": function () {},
+      "startDateId": function () {},
+      "startDatePlaceholderText": {
         "isRequired": function () {}
       },
-      "isDayBlocked": {
-        "isRequired": function () {}
-      },
-      "isOutsideRange": {
-        "isRequired": function () {}
-      },
-      "enableOutsideDays": {
-        "isRequired": function () {}
-      },
-      "reopenPickerOnClearDates": {
-        "isRequired": function () {}
-      },
-      "numberOfMonths": {
-        "isRequired": function () {}
-      },
-      "showClearDates": {
+      "endDateId": function () {},
+      "endDatePlaceholderText": {
         "isRequired": function () {}
       },
       "disabled": {
@@ -41,10 +32,31 @@ var ReactDates = {
       "required": {
         "isRequired": function () {}
       },
+      "screenReaderInputMessage": {
+        "isRequired": function () {}
+      },
+      "showClearDates": {
+        "isRequired": function () {}
+      },
+      "showDefaultInputIcon": {
+        "isRequired": function () {}
+      },
+      "customInputIcon": {
+        "isRequired": function () {}
+      },
+      "customArrowIcon": {
+        "isRequired": function () {}
+      },
+      "customCloseIcon": {
+        "isRequired": function () {}
+      },
       "orientation": {
         "isRequired": function () {}
       },
       "anchorDirection": {
+        "isRequired": function () {}
+      },
+      "horizontalMargin": {
         "isRequired": function () {}
       },
       "withPortal": {
@@ -52,6 +64,256 @@ var ReactDates = {
       },
       "withFullScreenPortal": {
         "isRequired": function () {}
+      },
+      "initialVisibleMonth": {
+        "isRequired": function () {}
+      },
+      "numberOfMonths": {
+        "isRequired": function () {}
+      },
+      "keepOpenOnDateSelect": {
+        "isRequired": function () {}
+      },
+      "reopenPickerOnClearDates": {
+        "isRequired": function () {}
+      },
+      "renderCalendarInfo": {
+        "isRequired": function () {}
+      },
+      "navPrev": {
+        "isRequired": function () {}
+      },
+      "navNext": {
+        "isRequired": function () {}
+      },
+      "onPrevMonthClick": {
+        "isRequired": function () {}
+      },
+      "onNextMonthClick": {
+        "isRequired": function () {}
+      },
+      "renderDay": {
+        "isRequired": function () {}
+      },
+      "minimumNights": {
+        "isRequired": function () {}
+      },
+      "enableOutsideDays": {
+        "isRequired": function () {}
+      },
+      "isDayBlocked": {
+        "isRequired": function () {}
+      },
+      "isOutsideRange": {
+        "isRequired": function () {}
+      },
+      "isDayHighlighted": {
+        "isRequired": function () {}
+      },
+      "displayFormat": {
+        "isRequired": function () {}
+      },
+      "monthFormat": {
+        "isRequired": function () {}
+      },
+      "phrases": {
+        "isRequired": function () {}
+      },
+      "​": {
+        "​": {}
+      }
+    },
+    "defaultProps": {
+      "startDate": {},
+      "endDate": {},
+      "focusedInput": {},
+      "startDateId": {},
+      "startDatePlaceholderText": {},
+      "endDateId": {},
+      "endDatePlaceholderText": {},
+      "disabled": {},
+      "required": {},
+      "screenReaderInputMessage": {},
+      "showClearDates": {},
+      "showDefaultInputIcon": {},
+      "customInputIcon": {},
+      "customArrowIcon": {},
+      "customCloseIcon": {},
+      "orientation": {},
+      "anchorDirection": {},
+      "horizontalMargin": {},
+      "withPortal": {},
+      "withFullScreenPortal": {},
+      "initialVisibleMonth": {},
+      "numberOfMonths": {},
+      "keepOpenOnDateSelect": {},
+      "reopenPickerOnClearDates": {},
+      "renderCalendarInfo": {},
+      "navPrev": {},
+      "navNext": {},
+      "onPrevMonthClick": function () {},
+      "onNextMonthClick": function () {},
+      "renderDay": {},
+      "minimumNights": {},
+      "enableOutsideDays": {},
+      "isDayBlocked": function () {},
+      "isOutsideRange": function () {},
+      "isDayHighlighted": function () {},
+      "displayFormat": function () {},
+      "monthFormat": {},
+      "phrases": {
+        "closeDatePicker": {},
+        "clearDates": {},
+        "focusStartDate": {},
+        "jumpToPrevMonth": {},
+        "jumpToNextMonth": {}
+      }
+    }
+  },
+  "SingleDatePicker": {
+    "propTypes": {
+      "date": {
+        "isRequired": function () {},
+        "withPredicate": function () {}
+      },
+      "onDateChange": function () {},
+      "focused": {
+        "isRequired": function () {}
+      },
+      "onFocusChange": function () {},
+      "id": function () {},
+      "placeholder": {
+        "isRequired": function () {}
+      },
+      "disabled": {
+        "isRequired": function () {}
+      },
+      "required": {
+        "isRequired": function () {}
+      },
+      "screenReaderInputMessage": {
+        "isRequired": function () {}
+      },
+      "showClearDate": {
+        "isRequired": function () {}
+      },
+      "customCloseIcon": {
+        "isRequired": function () {}
+      },
+      "orientation": {
+        "isRequired": function () {}
+      },
+      "anchorDirection": {
+        "isRequired": function () {}
+      },
+      "horizontalMargin": {
+        "isRequired": function () {}
+      },
+      "withPortal": {
+        "isRequired": function () {}
+      },
+      "withFullScreenPortal": {
+        "isRequired": function () {}
+      },
+      "initialVisibleMonth": {
+        "isRequired": function () {}
+      },
+      "numberOfMonths": {
+        "isRequired": function () {}
+      },
+      "keepOpenOnDateSelect": {
+        "isRequired": function () {}
+      },
+      "reopenPickerOnClearDate": {
+        "isRequired": function () {}
+      },
+      "renderCalendarInfo": {
+        "isRequired": function () {}
+      },
+      "navPrev": {
+        "isRequired": function () {}
+      },
+      "navNext": {
+        "isRequired": function () {}
+      },
+      "onPrevMonthClick": {
+        "isRequired": function () {}
+      },
+      "onNextMonthClick": {
+        "isRequired": function () {}
+      },
+      "renderDay": {
+        "isRequired": function () {}
+      },
+      "enableOutsideDays": {
+        "isRequired": function () {}
+      },
+      "isDayBlocked": {
+        "isRequired": function () {}
+      },
+      "isOutsideRange": {
+        "isRequired": function () {}
+      },
+      "isDayHighlighted": {
+        "isRequired": function () {}
+      },
+      "displayFormat": {
+        "isRequired": function () {}
+      },
+      "monthFormat": {
+        "isRequired": function () {}
+      },
+      "phrases": {
+        "isRequired": function () {}
+      },
+      "​": {
+        "​": {}
+      }
+    },
+    "defaultProps": {
+      "date": {},
+      "focused": {},
+      "id": {},
+      "placeholder": {},
+      "disabled": {},
+      "required": {},
+      "screenReaderInputMessage": {},
+      "showClearDate": {},
+      "customCloseIcon": {},
+      "orientation": {},
+      "anchorDirection": {},
+      "horizontalMargin": {},
+      "withPortal": {},
+      "withFullScreenPortal": {},
+      "initialVisibleMonth": {},
+      "numberOfMonths": {},
+      "keepOpenOnDateSelect": {},
+      "reopenPickerOnClearDate": {},
+      "renderCalendarInfo": {},
+      "navPrev": {},
+      "navNext": {},
+      "onPrevMonthClick": function () {},
+      "onNextMonthClick": function () {},
+      "renderDay": {},
+      "enableOutsideDays": {},
+      "isDayBlocked": function () {},
+      "isOutsideRange": function () {},
+      "isDayHighlighted": function () {},
+      "displayFormat": function () {},
+      "monthFormat": {},
+      "phrases": {
+        "closeDatePicker": {},
+        "clearDate": {},
+        "jumpToPrevMonth": {},
+        "jumpToNextMonth": {}
+      }
+    }
+  },
+  "DateRangePickerInputController": {
+    "propTypes": {
+      "startDate": {
+        "isRequired": function () {},
+        "withPredicate": function () {}
       },
       "startDateId": {
         "isRequired": function () {}
@@ -59,78 +321,32 @@ var ReactDates = {
       "startDatePlaceholderText": {
         "isRequired": function () {}
       },
+      "isStartDateFocused": {
+        "isRequired": function () {}
+      },
+      "endDate": {
+        "isRequired": function () {},
+        "withPredicate": function () {}
+      },
       "endDateId": {
         "isRequired": function () {}
       },
       "endDatePlaceholderText": {
         "isRequired": function () {}
       },
-      "initialVisibleMonth": {
+      "isEndDateFocused": {
         "isRequired": function () {}
       },
-      "onDatesChange": {
+      "screenReaderMessage": {
         "isRequired": function () {}
       },
-      "onFocusChange": {
+      "showClearDates": {
         "isRequired": function () {}
       },
-      "onPrevMonthClick": {
+      "showCaret": {
         "isRequired": function () {}
       },
-      "onNextMonthClick": {
-        "isRequired": function () {}
-      },
-      "displayFormat": {
-        "isRequired": function () {}
-      },
-      "monthFormat": {
-        "isRequired": function () {}
-      },
-      "phrases": {
-        "isRequired": function () {}
-      }
-    },
-    "defaultProps": {
-      "startDateId": {},
-      "endDateId": {},
-      "focusedInput": {},
-      "minimumNights": {},
-      "isDayBlocked": function () {},
-      "disabledDays": {},
-      "isOutsideRange": function () {},
-      "enableOutsideDays": {},
-      "numberOfMonths": {},
-      "showClearDates": {},
-      "disabled": {},
-      "required": {},
-      "reopenPickerOnClearDates": {},
-      "initialVisibleMonth": function () {},
-      "orientation": {},
-      "anchorDirection": {},
-      "withPortal": {},
-      "withFullScreenPortal": {},
-      "onDatesChange": function () {},
-      "onFocusChange": function () {},
-      "onPrevMonthClick": function () {},
-      "onNextMonthClick": function () {},
-      "displayFormat": function () {},
-      "monthFormat": {},
-      "phrases": {
-        "closeDatePicker": {},
-        "clearDates": {}
-      }
-    }
-  },
-  "SingleDatePicker": {
-    "propTypes": {
-      "id": function () {},
-      "placeholder": {
-        "isRequired": function () {}
-      },
-      "date": {
-        "isRequired": function () {}
-      },
-      "focused": {
+      "showDefaultInputIcon": {
         "isRequired": function () {}
       },
       "disabled": {
@@ -139,78 +355,71 @@ var ReactDates = {
       "required": {
         "isRequired": function () {}
       },
-      "onDateChange": {
+      "keepOpenOnDateSelect": {
         "isRequired": function () {}
       },
-      "onFocusChange": {
-        "isRequired": function () {}
-      },
-      "isDayBlocked": {
-        "isRequired": function () {}
-      },
-      "isOutsideRange": {
-        "isRequired": function () {}
-      },
-      "enableOutsideDays": {
-        "isRequired": function () {}
-      },
-      "numberOfMonths": {
-        "isRequired": function () {}
-      },
-      "orientation": {
-        "isRequired": function () {}
-      },
-      "initialVisibleMonth": {
-        "isRequired": function () {}
-      },
-      "anchorDirection": {
-        "isRequired": function () {}
-      },
-      "withPortal": {
+      "reopenPickerOnClearDates": {
         "isRequired": function () {}
       },
       "withFullScreenPortal": {
         "isRequired": function () {}
       },
-      "onPrevMonthClick": {
-        "isRequired": function () {}
-      },
-      "onNextMonthClick": {
+      "isOutsideRange": {
         "isRequired": function () {}
       },
       "displayFormat": {
         "isRequired": function () {}
       },
-      "monthFormat": {
+      "onFocusChange": {
+        "isRequired": function () {}
+      },
+      "onDatesChange": {
+        "isRequired": function () {}
+      },
+      "customInputIcon": {
+        "isRequired": function () {}
+      },
+      "customArrowIcon": {
+        "isRequired": function () {}
+      },
+      "customCloseIcon": {
         "isRequired": function () {}
       },
       "phrases": {
         "isRequired": function () {}
+      },
+      "​": {
+        "​": {}
       }
     },
     "defaultProps": {
-      "date": {},
-      "focused": {},
+      "startDate": {},
+      "startDateId": {},
+      "startDatePlaceholderText": {},
+      "isStartDateFocused": {},
+      "endDate": {},
+      "endDateId": {},
+      "endDatePlaceholderText": {},
+      "isEndDateFocused": {},
+      "screenReaderMessage": {},
+      "showClearDates": {},
+      "showCaret": {},
+      "showDefaultInputIcon": {},
       "disabled": {},
       "required": {},
-      "onDateChange": function () {},
-      "onFocusChange": function () {},
-      "isDayBlocked": function () {},
-      "disabledDays": {},
-      "isOutsideRange": function () {},
-      "enableOutsideDays": {},
-      "numberOfMonths": {},
-      "orientation": {},
-      "anchorDirection": {},
-      "withPortal": {},
+      "keepOpenOnDateSelect": {},
+      "reopenPickerOnClearDates": {},
       "withFullScreenPortal": {},
-      "initialVisibleMonth": function () {},
-      "onPrevMonthClick": function () {},
-      "onNextMonthClick": function () {},
+      "isOutsideRange": function () {},
       "displayFormat": function () {},
-      "monthFormat": {},
+      "onFocusChange": function () {},
+      "onDatesChange": function () {},
+      "customInputIcon": {},
+      "customArrowIcon": {},
+      "customCloseIcon": {},
       "phrases": {
-        "closeDatePicker": {}
+        "focusStartDate": {},
+        "clearDates": {}
       }
     }
   },
@@ -220,6 +429,9 @@ var ReactDates = {
         "isRequired": function () {}
       },
       "startDatePlaceholderText": {
+        "isRequired": function () {}
+      },
+      "screenReaderMessage": {
         "isRequired": function () {}
       },
       "endDateId": {
@@ -252,7 +464,13 @@ var ReactDates = {
       "startDate": {
         "isRequired": function () {}
       },
+      "startDateValue": {
+        "isRequired": function () {}
+      },
       "endDate": {
+        "isRequired": function () {}
+      },
+      "endDateValue": {
         "isRequired": function () {}
       },
       "isStartDateFocused": {
@@ -273,8 +491,23 @@ var ReactDates = {
       "showCaret": {
         "isRequired": function () {}
       },
+      "showDefaultInputIcon": {
+        "isRequired": function () {}
+      },
+      "customInputIcon": {
+        "isRequired": function () {}
+      },
+      "customArrowIcon": {
+        "isRequired": function () {}
+      },
+      "customCloseIcon": {
+        "isRequired": function () {}
+      },
       "phrases": {
         "isRequired": function () {}
+      },
+      "​": {
+        "​": {}
       }
     },
     "defaultProps": {
@@ -282,6 +515,7 @@ var ReactDates = {
       "endDateId": {},
       "startDatePlaceholderText": {},
       "endDatePlaceholderText": {},
+      "screenReaderMessage": {},
       "onStartDateFocus": function () {},
       "onEndDateFocus": function () {},
       "onStartDateChange": function () {},
@@ -289,12 +523,22 @@ var ReactDates = {
       "onStartDateShiftTab": function () {},
       "onEndDateTab": function () {},
       "onClearDates": function () {},
+      "startDate": {},
+      "startDateValue": {},
+      "endDate": {},
+      "endDateValue": {},
       "isStartDateFocused": {},
       "isEndDateFocused": {},
       "showClearDates": {},
       "disabled": {},
+      "required": {},
       "showCaret": {},
+      "showDefaultInputIcon": {},
+      "customInputIcon": {},
+      "customArrowIcon": {},
+      "customCloseIcon": {},
       "phrases": {
+        "focusStartDate": {},
         "clearDates": {}
       }
     }
@@ -305,10 +549,13 @@ var ReactDates = {
       "placeholder": {
         "isRequired": function () {}
       },
-      "dateValue": {
+      "displayValue": {
         "isRequired": function () {}
       },
-      "border": {
+      "inputValue": {
+        "isRequired": function () {}
+      },
+      "screenReaderMessage": {
         "isRequired": function () {}
       },
       "focused": {
@@ -323,7 +570,16 @@ var ReactDates = {
       "showCaret": {
         "isRequired": function () {}
       },
+      "showClearDate": {
+        "isRequired": function () {}
+      },
+      "customCloseIcon": {
+        "isRequired": function () {}
+      },
       "onChange": {
+        "isRequired": function () {}
+      },
+      "onClearDate": {
         "isRequired": function () {}
       },
       "onFocus": {
@@ -334,20 +590,33 @@ var ReactDates = {
       },
       "onKeyDownTab": {
         "isRequired": function () {}
+      },
+      "phrases": {
+        "isRequired": function () {}
+      },
+      "​": {
+        "​": {}
       }
     },
     "defaultProps": {
       "placeholder": {},
-      "dateValue": {},
-      "border": {},
+      "displayValue": {},
+      "inputValue": {},
+      "screenReaderMessage": {},
       "focused": {},
       "disabled": {},
       "required": {},
       "showCaret": {},
+      "showClearDate": {},
+      "customCloseIcon": {},
       "onChange": function () {},
+      "onClearDate": function () {},
       "onFocus": function () {},
       "onKeyDownShiftTab": function () {},
-      "onKeyDownTab": function () {}
+      "onKeyDownTab": function () {},
+      "phrases": {
+        "clearDate": {}
+      }
     }
   },
   "DayPicker": {
@@ -358,13 +627,13 @@ var ReactDates = {
       "numberOfMonths": {
         "isRequired": function () {}
       },
-      "modifiers": {
-        "isRequired": function () {}
-      },
       "orientation": {
         "isRequired": function () {}
       },
       "withPortal": {
+        "isRequired": function () {}
+      },
+      "onOutsideClick": {
         "isRequired": function () {}
       },
       "hidden": {
@@ -373,13 +642,28 @@ var ReactDates = {
       "initialVisibleMonth": {
         "isRequired": function () {}
       },
+      "renderCalendarInfo": {
+        "isRequired": function () {}
+      },
+      "navPrev": {
+        "isRequired": function () {}
+      },
+      "navNext": {
+        "isRequired": function () {}
+      },
+      "onPrevMonthClick": {
+        "isRequired": function () {}
+      },
+      "onNextMonthClick": {
+        "isRequired": function () {}
+      },
+      "modifiers": {
+        "isRequired": function () {}
+      },
+      "renderDay": {
+        "isRequired": function () {}
+      },
       "onDayClick": {
-        "isRequired": function () {}
-      },
-      "onDayMouseDown": {
-        "isRequired": function () {}
-      },
-      "onDayMouseUp": {
         "isRequired": function () {}
       },
       "onDayMouseEnter": {
@@ -388,13 +672,94 @@ var ReactDates = {
       "onDayMouseLeave": {
         "isRequired": function () {}
       },
-      "onDayTouchStart": {
+      "monthFormat": {
         "isRequired": function () {}
       },
-      "onDayTouchEnd": {
+      "phrases": {
         "isRequired": function () {}
       },
-      "onDayTouchTap": {
+      "​": {
+        "​": {}
+      }
+    },
+    "defaultProps": {
+      "enableOutsideDays": {},
+      "numberOfMonths": {},
+      "orientation": {},
+      "withPortal": {},
+      "onOutsideClick": function () {},
+      "hidden": {},
+      "initialVisibleMonth": function () {},
+      "renderCalendarInfo": {},
+      "navPrev": {},
+      "navNext": {},
+      "onPrevMonthClick": function () {},
+      "onNextMonthClick": function () {},
+      "modifiers": {},
+      "renderDay": {},
+      "onDayClick": function () {},
+      "onDayMouseEnter": function () {},
+      "onDayMouseLeave": function () {},
+      "monthFormat": {},
+      "phrases": {
+        "jumpToPrevMonth": {},
+        "jumpToNextMonth": {}
+      }
+    }
+  },
+  "DayPickerRangeController": {
+    "propTypes": {
+      "startDate": {
+        "isRequired": function () {},
+        "withPredicate": function () {}
+      },
+      "endDate": {
+        "isRequired": function () {},
+        "withPredicate": function () {}
+      },
+      "onDatesChange": {
+        "isRequired": function () {}
+      },
+      "focusedInput": {
+        "isRequired": function () {}
+      },
+      "onFocusChange": {
+        "isRequired": function () {}
+      },
+      "keepOpenOnDateSelect": {
+        "isRequired": function () {}
+      },
+      "minimumNights": {
+        "isRequired": function () {}
+      },
+      "isOutsideRange": {
+        "isRequired": function () {}
+      },
+      "isDayBlocked": {
+        "isRequired": function () {}
+      },
+      "isDayHighlighted": {
+        "isRequired": function () {}
+      },
+      "enableOutsideDays": {
+        "isRequired": function () {}
+      },
+      "numberOfMonths": {
+        "isRequired": function () {}
+      },
+      "orientation": {
+        "isRequired": function () {}
+      },
+      "withPortal": {
+        "isRequired": function () {}
+      },
+      "initialVisibleMonth": {
+        "isRequired": function () {}
+      },
+      "navPrev": {
+        "isRequired": function () {}
+      },
+      "navNext": {
         "isRequired": function () {}
       },
       "onPrevMonthClick": {
@@ -406,30 +771,50 @@ var ReactDates = {
       "onOutsideClick": {
         "isRequired": function () {}
       },
+      "renderDay": {
+        "isRequired": function () {}
+      },
+      "renderCalendarInfo": {
+        "isRequired": function () {}
+      },
       "monthFormat": {
         "isRequired": function () {}
+      },
+      "phrases": {
+        "isRequired": function () {}
+      },
+      "​": {
+        "​": {}
       }
     },
     "defaultProps": {
+      "startDate": {},
+      "endDate": {},
+      "onDatesChange": function () {},
+      "focusedInput": {},
+      "onFocusChange": function () {},
+      "keepOpenOnDateSelect": {},
+      "minimumNights": {},
+      "isOutsideRange": function () {},
+      "isDayBlocked": function () {},
+      "isDayHighlighted": function () {},
       "enableOutsideDays": {},
       "numberOfMonths": {},
-      "modifiers": {},
       "orientation": {},
       "withPortal": {},
-      "hidden": {},
       "initialVisibleMonth": function () {},
-      "onDayClick": function () {},
-      "onDayMouseDown": function () {},
-      "onDayMouseUp": function () {},
-      "onDayMouseEnter": function () {},
-      "onDayMouseLeave": function () {},
-      "onDayTouchStart": function () {},
-      "onDayTouchTap": function () {},
-      "onDayTouchEnd": function () {},
+      "navPrev": {},
+      "navNext": {},
       "onPrevMonthClick": function () {},
       "onNextMonthClick": function () {},
       "onOutsideClick": function () {},
-      "monthFormat": {}
+      "renderDay": {},
+      "renderCalendarInfo": {},
+      "monthFormat": {},
+      "phrases": {
+        "jumpToPrevMonth": {},
+        "jumpToNextMonth": {}
+      }
     }
   },
   "CalendarMonthGrid": {
@@ -441,7 +826,8 @@ var ReactDates = {
         "isRequired": function () {}
       },
       "initialMonth": {
-        "isRequired": function () {}
+        "isRequired": function () {},
+        "withPredicate": function () {}
       },
       "isAnimating": {
         "isRequired": function () {}
@@ -458,28 +844,16 @@ var ReactDates = {
       "onDayClick": {
         "isRequired": function () {}
       },
-      "onDayMouseDown": {
-        "isRequired": function () {}
-      },
-      "onDayMouseUp": {
-        "isRequired": function () {}
-      },
       "onDayMouseEnter": {
         "isRequired": function () {}
       },
       "onDayMouseLeave": {
         "isRequired": function () {}
       },
-      "onDayTouchStart": {
-        "isRequired": function () {}
-      },
-      "onDayTouchEnd": {
-        "isRequired": function () {}
-      },
-      "onDayTouchTap": {
-        "isRequired": function () {}
-      },
       "onMonthTransitionEnd": {
+        "isRequired": function () {}
+      },
+      "renderDay": {
         "isRequired": function () {}
       },
       "transformValue": {
@@ -487,6 +861,9 @@ var ReactDates = {
       },
       "monthFormat": {
         "isRequired": function () {}
+      },
+      "​": {
+        "​": {}
       }
     },
     "defaultProps": {
@@ -718,22 +1095,19 @@ var ReactDates = {
       "modifiers": {},
       "orientation": {},
       "onDayClick": function () {},
-      "onDayMouseDown": function () {},
-      "onDayMouseUp": function () {},
       "onDayMouseEnter": function () {},
       "onDayMouseLeave": function () {},
-      "onDayTouchStart": function () {},
-      "onDayTouchEnd": function () {},
-      "onDayTouchTap": function () {},
       "onMonthTransitionEnd": function () {},
-      "transform": {},
+      "renderDay": {},
+      "transformValue": {},
       "monthFormat": {}
     }
   },
   "CalendarMonth": {
     "propTypes": {
       "month": {
-        "isRequired": function () {}
+        "isRequired": function () {},
+        "withPredicate": function () {}
       },
       "isVisible": {
         "isRequired": function () {}
@@ -750,29 +1124,20 @@ var ReactDates = {
       "onDayClick": {
         "isRequired": function () {}
       },
-      "onDayMouseDown": {
-        "isRequired": function () {}
-      },
-      "onDayMouseUp": {
-        "isRequired": function () {}
-      },
       "onDayMouseEnter": {
         "isRequired": function () {}
       },
       "onDayMouseLeave": {
         "isRequired": function () {}
       },
-      "onDayTouchStart": {
-        "isRequired": function () {}
-      },
-      "onDayTouchEnd": {
-        "isRequired": function () {}
-      },
-      "onDayTouchTap": {
+      "renderDay": {
         "isRequired": function () {}
       },
       "monthFormat": {
         "isRequired": function () {}
+      },
+      "​": {
+        "​": {}
       }
     },
     "defaultProps": {
@@ -1002,19 +1367,19 @@ var ReactDates = {
       "modifiers": {},
       "orientation": {},
       "onDayClick": function () {},
-      "onDayMouseDown": function () {},
-      "onDayMouseUp": function () {},
       "onDayMouseEnter": function () {},
       "onDayMouseLeave": function () {},
-      "onDayTouchStart": function () {},
-      "onDayTouchEnd": function () {},
-      "onDayTouchTap": function () {},
+      "renderDay": {},
       "monthFormat": {}
     }
   },
   "CalendarDay": {
     "propTypes": {
       "day": {
+        "isRequired": function () {},
+        "withPredicate": function () {}
+      },
+      "isOutsideDay": {
         "isRequired": function () {}
       },
       "modifiers": {
@@ -1023,26 +1388,17 @@ var ReactDates = {
       "onDayClick": {
         "isRequired": function () {}
       },
-      "onDayMouseDown": {
-        "isRequired": function () {}
-      },
-      "onDayMouseUp": {
-        "isRequired": function () {}
-      },
       "onDayMouseEnter": {
         "isRequired": function () {}
       },
       "onDayMouseLeave": {
         "isRequired": function () {}
       },
-      "onDayTouchStart": {
+      "renderDay": {
         "isRequired": function () {}
       },
-      "onDayTouchEnd": {
-        "isRequired": function () {}
-      },
-      "onDayTouchTap": {
-        "isRequired": function () {}
+      "​": {
+        "​": {}
       }
     },
     "defaultProps": {
@@ -1267,46 +1623,34 @@ var ReactDates = {
         "zone": function () {},
         "isDSTShifted": function () {}
       },
+      "isOutsideDay": {},
       "modifiers": {},
       "onDayClick": function () {},
-      "onDayMouseDown": function () {},
-      "onDayMouseUp": function () {},
       "onDayMouseEnter": function () {},
       "onDayMouseLeave": function () {},
-      "onDayTouchStart": function () {},
-      "onDayTouchEnd": function () {},
-      "onDayTouchTap": function () {}
+      "renderDay": {}
     }
   },
   "DateRangePickerShape": {
     "startDate": {
-      "isRequired": function () {}
+      "isRequired": function () {},
+      "withPredicate": function () {}
     },
     "endDate": {
-      "isRequired": function () {}
+      "isRequired": function () {},
+      "withPredicate": function () {}
     },
+    "onDatesChange": function () {},
     "focusedInput": {
       "isRequired": function () {}
     },
-    "minimumNights": {
+    "onFocusChange": function () {},
+    "startDateId": function () {},
+    "startDatePlaceholderText": {
       "isRequired": function () {}
     },
-    "isDayBlocked": {
-      "isRequired": function () {}
-    },
-    "isOutsideRange": {
-      "isRequired": function () {}
-    },
-    "enableOutsideDays": {
-      "isRequired": function () {}
-    },
-    "reopenPickerOnClearDates": {
-      "isRequired": function () {}
-    },
-    "numberOfMonths": {
-      "isRequired": function () {}
-    },
-    "showClearDates": {
+    "endDateId": function () {},
+    "endDatePlaceholderText": {
       "isRequired": function () {}
     },
     "disabled": {
@@ -1315,10 +1659,31 @@ var ReactDates = {
     "required": {
       "isRequired": function () {}
     },
+    "screenReaderInputMessage": {
+      "isRequired": function () {}
+    },
+    "showClearDates": {
+      "isRequired": function () {}
+    },
+    "showDefaultInputIcon": {
+      "isRequired": function () {}
+    },
+    "customInputIcon": {
+      "isRequired": function () {}
+    },
+    "customArrowIcon": {
+      "isRequired": function () {}
+    },
+    "customCloseIcon": {
+      "isRequired": function () {}
+    },
     "orientation": {
       "isRequired": function () {}
     },
     "anchorDirection": {
+      "isRequired": function () {}
+    },
+    "horizontalMargin": {
       "isRequired": function () {}
     },
     "withPortal": {
@@ -1327,31 +1692,49 @@ var ReactDates = {
     "withFullScreenPortal": {
       "isRequired": function () {}
     },
-    "startDateId": {
-      "isRequired": function () {}
-    },
-    "startDatePlaceholderText": {
-      "isRequired": function () {}
-    },
-    "endDateId": {
-      "isRequired": function () {}
-    },
-    "endDatePlaceholderText": {
-      "isRequired": function () {}
-    },
     "initialVisibleMonth": {
       "isRequired": function () {}
     },
-    "onDatesChange": {
+    "numberOfMonths": {
       "isRequired": function () {}
     },
-    "onFocusChange": {
+    "keepOpenOnDateSelect": {
+      "isRequired": function () {}
+    },
+    "reopenPickerOnClearDates": {
+      "isRequired": function () {}
+    },
+    "renderCalendarInfo": {
+      "isRequired": function () {}
+    },
+    "navPrev": {
+      "isRequired": function () {}
+    },
+    "navNext": {
       "isRequired": function () {}
     },
     "onPrevMonthClick": {
       "isRequired": function () {}
     },
     "onNextMonthClick": {
+      "isRequired": function () {}
+    },
+    "renderDay": {
+      "isRequired": function () {}
+    },
+    "minimumNights": {
+      "isRequired": function () {}
+    },
+    "enableOutsideDays": {
+      "isRequired": function () {}
+    },
+    "isDayBlocked": {
+      "isRequired": function () {}
+    },
+    "isOutsideRange": {
+      "isRequired": function () {}
+    },
+    "isDayHighlighted": {
       "isRequired": function () {}
     },
     "displayFormat": {
@@ -1365,14 +1748,17 @@ var ReactDates = {
     }
   },
   "SingleDatePickerShape": {
+    "date": {
+      "isRequired": function () {},
+      "withPredicate": function () {}
+    },
+    "onDateChange": function () {},
+    "focused": {
+      "isRequired": function () {}
+    },
+    "onFocusChange": function () {},
     "id": function () {},
     "placeholder": {
-      "isRequired": function () {}
-    },
-    "date": {
-      "isRequired": function () {}
-    },
-    "focused": {
       "isRequired": function () {}
     },
     "disabled": {
@@ -1381,31 +1767,22 @@ var ReactDates = {
     "required": {
       "isRequired": function () {}
     },
-    "onDateChange": {
+    "screenReaderInputMessage": {
       "isRequired": function () {}
     },
-    "onFocusChange": {
+    "showClearDate": {
       "isRequired": function () {}
     },
-    "isDayBlocked": {
-      "isRequired": function () {}
-    },
-    "isOutsideRange": {
-      "isRequired": function () {}
-    },
-    "enableOutsideDays": {
-      "isRequired": function () {}
-    },
-    "numberOfMonths": {
+    "customCloseIcon": {
       "isRequired": function () {}
     },
     "orientation": {
       "isRequired": function () {}
     },
-    "initialVisibleMonth": {
+    "anchorDirection": {
       "isRequired": function () {}
     },
-    "anchorDirection": {
+    "horizontalMargin": {
       "isRequired": function () {}
     },
     "withPortal": {
@@ -1414,10 +1791,46 @@ var ReactDates = {
     "withFullScreenPortal": {
       "isRequired": function () {}
     },
+    "initialVisibleMonth": {
+      "isRequired": function () {}
+    },
+    "numberOfMonths": {
+      "isRequired": function () {}
+    },
+    "keepOpenOnDateSelect": {
+      "isRequired": function () {}
+    },
+    "reopenPickerOnClearDate": {
+      "isRequired": function () {}
+    },
+    "renderCalendarInfo": {
+      "isRequired": function () {}
+    },
+    "navPrev": {
+      "isRequired": function () {}
+    },
+    "navNext": {
+      "isRequired": function () {}
+    },
     "onPrevMonthClick": {
       "isRequired": function () {}
     },
     "onNextMonthClick": {
+      "isRequired": function () {}
+    },
+    "renderDay": {
+      "isRequired": function () {}
+    },
+    "enableOutsideDays": {
+      "isRequired": function () {}
+    },
+    "isDayBlocked": {
+      "isRequired": function () {}
+    },
+    "isOutsideRange": {
+      "isRequired": function () {}
+    },
+    "isDayHighlighted": {
       "isRequired": function () {}
     },
     "displayFormat": {
@@ -1448,7 +1861,17 @@ ReactDates.SingleDatePicker.prototype = {
   "setState": function () {},
   "forceUpdate": function () {}
 };
+ReactDates.DateRangePickerInputController.prototype = {
+  "isReactComponent": function () {},
+  "setState": function () {},
+  "forceUpdate": function () {}
+};
 ReactDates.DateRangePickerInput.prototype = {
+  "isReactComponent": function () {},
+  "setState": function () {},
+  "forceUpdate": function () {}
+};
+ReactDates.SingleDatePickerInput.prototype = {
   "isReactComponent": function () {},
   "setState": function () {},
   "forceUpdate": function () {}
@@ -1458,7 +1881,17 @@ ReactDates.DayPicker.prototype = {
   "setState": function () {},
   "forceUpdate": function () {}
 };
+ReactDates.DayPickerRangeController.prototype = {
+  "isReactComponent": function () {},
+  "setState": function () {},
+  "forceUpdate": function () {}
+};
 ReactDates.CalendarMonthGrid.prototype = {
+  "isReactComponent": function () {},
+  "setState": function () {},
+  "forceUpdate": function () {}
+};
+ReactDates.CalendarMonth.prototype = {
   "isReactComponent": function () {},
   "setState": function () {},
   "forceUpdate": function () {}
