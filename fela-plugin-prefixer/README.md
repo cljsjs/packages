@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/fela-plugin-prefixer "4.3.2-0"]
+[cljsjs/fela-plugin-prefixer "4.3.2-0"] ;; latest release
 ```
 [](/dependency)
 
