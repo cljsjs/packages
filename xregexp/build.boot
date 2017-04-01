@@ -18,7 +18,8 @@
 
 (deftask package []
   (comp
-   (download :url "https://raw.githubusercontent.com/slevithan/xregexp/37413619ea9f03638bfa92e038e4b4c15645d446/src/xregexp.js"
+   (download :url (format "https://raw.githubusercontent.com/slevithan/xregexp/v%s/src/xregexp.js"
+                          +lib-version+)
              :checksum "1df474f383fedf216d99743f6d304d17")
 
    (replace-content :in "xregexp.js" :out "xregexp.inc.js"
