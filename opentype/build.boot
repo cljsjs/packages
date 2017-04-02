@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.6.0")
+(def +lib-version+ "0.6.9")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,7 +18,7 @@
 (deftask package []
   (comp
     (download :url (str "https://github.com/nodebox/opentype.js/archive/" +lib-version+ ".zip")
-              :checksum "CA2C9DC109BF1AB20F17B1E6F012C0E4"
+              :checksum "DD19D03E38F76675B43596EA923AA1F9"
               :unzip true)
     (sift :move {#"^opentype.js-([\d\.]*)/dist/opentype\.js"      "cljsjs/opentype/development/opentype.inc.js"
                  #"^opentype.js-([\d\.]*)/dist/opentype\.min\.js" "cljsjs/opentype/production/opentype.min.inc.js"})
