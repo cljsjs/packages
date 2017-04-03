@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.9.1")
+(def +lib-version+ "0.10.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,7 +18,7 @@
 (deftask package []
   (comp
    (download :url (format "https://github.com/liabru/matter-js/archive/%s.zip" +lib-version+)
-             :checksum "ab7cb444120723d1e5ce35bf52a15124"
+             :checksum "97f4bd2ffbb132c14505a8577665db09"
              :unzip true)
    (sift :move {#"^.*/build/matter.js$" "cljsjs/matter/development/matter.inc.js"
                 #"^.*/build/matter.min.js$" "cljsjs/matter/production/matter.min.inc.js"})
