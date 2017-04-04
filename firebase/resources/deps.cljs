@@ -6,4 +6,5 @@
            "cljsjs/common/firebase-storage-externs.js"
            "cljsjs/common/firebase-auth-externs.js"
            "cljsjs/common/firebase-server-auth-externs.js"
+           "cljsjs/common/firebase-client-auth-externs.js"
            "cljsjs/common/firebase-app-externs.js"]}
