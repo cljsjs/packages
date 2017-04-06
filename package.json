@@ -9,6 +9,7 @@
   "homepage": "https://github.com/cljsjs/packages#readme",
   "private": true,
   "dependencies": {
-    "google-closure-compiler": "^20160315.2.0"
+    "google-closure-compiler": "^20160315.2.0",
+    "react-stack-grid": "^0.2.0"
   }
 }
