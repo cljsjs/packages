@@ -3,7 +3,7 @@
 ClojureScript wrapper for [Autobahn|JS](http://autobahn.ws/js/) 
 [](dependency)
 ```clojure
-[cljsjs/autobahnjs "0.9.9-0"] ;; latest release
+[cljsjs/autobahnjs "0.12.0-0"] ;; latest release
 ```
 [](/dependency)
 
