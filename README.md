@@ -1,6 +1,6 @@
 # CLJSJS Packages
 
-<img src="http://cljsjs.github.io/cljsjs.png" alt="CLJSJS logo" align="right" />
+<img src="http://cljsjs.github.io/cljsjs.svg" alt="CLJSJS logo" align="right" />
 
 CLJSJS is an effort to package Javascript libraries to be able to use
 them from within ClojureScript.
