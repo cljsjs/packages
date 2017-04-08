@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/svg-intersections "0.1.1-0"] ;; latest release
+[cljsjs/svg-intersections "0.3.0-0"] ;; latest release
 ```
 [](/dependency)
 
