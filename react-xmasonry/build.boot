@@ -1,5 +1,5 @@
 (set-env!
-l  :resource-paths #{"resources"}
+  :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]
                   [cljsjs/react "15.4.2-2"]])
 
@@ -21,11 +21,8 @@ l  :resource-paths #{"resources"}
    (download :url (format "https://github.com/ZitRos/react-xmasonry/archive/master.zip")
              :checksum "E6B128183607A37A561E58E5D913CF4C"
              :unzip true)
-
    (sift :move {#"^react-xmasonry-.*/dist/index.js"  "cljsjs/react-xmasonry/common/react-xmasonry.inc.js"})
-
    (sift :include #{#"^cljsjs"})
-
-   (deps-cljs :name "cljsjs.react-xmasonry")
+   (deps-cljs :name "cljsjs.react-xmasonry" :requires ["cljsjs.react"])
    (pom)
    (jar)))
