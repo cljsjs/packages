@@ -1,6 +1,7 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]
+                  [cljsjs/react "15.3.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -10,7 +11,7 @@
 (task-options!
   pom  {:project     'cljsjs/react-xmasonry
         :version     +version+
-        :description "React Stack Grid"
+        :description "React Masonry"
         :url         "https://github.com/tsuyoshiwada/react-xmasonry"
         :license     {"MIT" "https://opensource.org/licenses/MIT"}
         :scm         {:url "https://github.com/cljsjs/packages"}})
