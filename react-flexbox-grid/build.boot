@@ -1,9 +1,10 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]
+                  [cljsjs/react "15.4.2-2"]])
 
-(def +lib-version+ "0.10.2")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "1.0.0")
+(def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "react-flexbox-grid-%s" +lib-version+))
 
 (task-options!
@@ -24,7 +25,7 @@
 
 (deftask download-react-flexbox-grid []
          (download :url url
-                   :checksum "66ddf2eb1ed771e58063fa511730f451"
+                   :checksum "0d5cca6ee8c7c79dbfdd95e063b8ce01"
                    :unzip true))
 
 (def webpack-file-name "webpack.config.js")
