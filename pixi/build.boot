@@ -19,7 +19,10 @@
   (comp
     (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/pixi.js/" +lib-version+ "/pixi.min.js")
               :checksum "E826B10D7BF110BBE21EE740899DF9DD")
-    (sift :move {#"pixi\.min\.js$" "cljsjs/pixi/development/pixi.inc.js"})
+    (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/pixi.js/" +lib-version+ "/pixi.js")
+              :checksum "DD8A2E362C58CA9DCABA1DFDA57C297F")
+    (sift :move {#"pixi\.js$" "cljsjs/pixi/development/pixi.inc.js"
+                 #"pixi\.min\.js$" "cljsjs/pixi/development/pixi.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.pixi")
     (pom)
