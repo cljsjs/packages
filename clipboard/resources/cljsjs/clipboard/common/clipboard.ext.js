@@ -23,5 +23,6 @@ var Clipboard = {
     "on": function () {},
     "once": function () {},
     "emit": function () {},
-    "off": function () {}
+    "off": function () {},
+    "isSupported": function () {}
 }
