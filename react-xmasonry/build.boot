@@ -6,7 +6,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "1.0.2")
-(def +version+ (str +lib-version+ "-1"))
+(def +version+ (str +lib-version+ "-2"))
 
 (task-options!
   pom  {:project     'cljsjs/react-xmasonry
@@ -19,7 +19,7 @@
 (deftask package []
   (comp
    (download :url (format "https://github.com/ZitRos/react-xmasonry/archive/master.zip")
-             :checksum "E6B128183607A37A561E58E5D913CF4C"
+             :checksum "D9F26537EB811BC06717D08A93E58235"
              :unzip true)
    (sift :move {#"^react-xmasonry-.*/dist/index.js"  "cljsjs/react-xmasonry/common/react-xmasonry.inc.js"})
    (sift :include #{#"^cljsjs"})
