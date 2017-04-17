@@ -3,7 +3,6 @@ var XMasonry = {
     "center": {},
     "maxColumns": {},
     "responsive": {},
-    "responsive": {},
     "targetBlockWidth": {},
     "updateOnAnimateEnd": {},
     "updateOnImagesLoad": {}
@@ -14,9 +13,6 @@ var XMasonry = {
         "isRequired": function () {}
       },
       "maxColumns": {
-        "isRequired": function () {}
-      },
-      "responsive": {
         "isRequired": function () {}
       },
       "responsive": {
