@@ -5,8 +5,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.0.2")
-(def +version+ (str +lib-version+ "-2"))
+(def +lib-version+ "2.0.1")
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
   pom  {:project     'cljsjs/react-xmasonry
