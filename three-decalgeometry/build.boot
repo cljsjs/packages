@@ -4,8 +4,11 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
+;; The library doesn't use any kind of versioning scheme, so a sha is used to
+;; guarantee a specific version.
 (def +lib-version+ "0.1.0")
 (def +version+ (str +lib-version+ "-0"))
+(def sha "546cebafebd34b4b10cc47c2d6412310e6372159")
 
 (task-options!
  pom {:project     'cljsjs/three-decalgeometry
@@ -17,7 +20,7 @@
 
 (deftask package []
   (comp
-   (download  :url      "https://raw.githubusercontent.com/spite/THREE.DecalGeometry/546cebafebd34b4b10cc47c2d6412310e6372159/src/THREE.DecalGeometry.js"
+   (download  :url      (str "https://raw.githubusercontent.com/spite/THREE.DecalGeometry/" sha "/src/THREE.DecalGeometry.js")
               :checksum "508d58a0ab13c95d040a32a13581d0ce")
    (sift      :move     {#"^THREE.DecalGeometry.js"
                          "cljsjs/three-decalgeometry/development/THREE.DecalGeometry.inc.js"})
