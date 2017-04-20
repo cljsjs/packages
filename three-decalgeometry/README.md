@@ -4,7 +4,7 @@ three-decalgeometry depends on three so you'll need to add both to your project:
 
 [](dependency)
 ```clojure
-[cljsjs/three "..."]
+[cljsjs/three-decalgeometry "0.1.0-0"] ;; latest release
 [cljsjs/three-decalgeometry "0.1.0-0"]
 ```
 [](/dependency)
