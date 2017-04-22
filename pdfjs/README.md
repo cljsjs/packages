@@ -1,4 +1,4 @@
-# cljsjs/pdjjs
+# cljsjs/pdfjs
 
 [](dependency)
 ```clojure
