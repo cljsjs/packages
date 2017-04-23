@@ -1,8 +1,11 @@
-# cljsjs/pikaday
+# cljsjs/three-decalgeometry
+
+three-decalgeometry depends on three so you'll need to add both to your project:
 
 [](dependency)
 ```clojure
-[cljsjs/pikaday "1.5.1-2"] ;; latest release
+[cljsjs/three-decalgeometry "0.1.0-0"] ;; latest release
+[cljsjs/three-decalgeometry "0.1.0-0"]
 ```
 [](/dependency)
 
@@ -12,14 +15,13 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.pikaday))
+  (:require cljsjs.three-decalgeometry))
 ```
 
-or if you want to use pikadays optional Moment.js integration:
+And then reference the class like:
 
 ```clojure
-(ns application.core
-  (:require cljsjs.pikaday.with-moment))
+(def decal (js/THREE.DecalGeometry.))
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies

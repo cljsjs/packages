@@ -1,8 +1,8 @@
-# cljsjs/pikaday
+# cljsjs/numeral
 
 [](dependency)
 ```clojure
-[cljsjs/pikaday "1.5.1-2"] ;; latest release
+[cljsjs/numeral "2.0.6-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,14 +12,21 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.pikaday))
+  (:require cljsjs.numeral))
+
+(-> .256 js/numeral (.format "$0.00")) ;; $0.26
 ```
 
-or if you want to use pikadays optional Moment.js integration:
+## Locales
+
+Each locale from Numeral.js is provided as separate foreign dependency namespace.
+You should be able to set Numeral to use locales if you first require them.
 
 ```clojure
 (ns application.core
-  (:require cljsjs.pikaday.with-moment))
+  (:require cljsjs.numeral cljsjs.numeral.locales.fi))
+
+(.locale js/numeral "fi")
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies

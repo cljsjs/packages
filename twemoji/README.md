@@ -1,8 +1,8 @@
-# cljsjs/pikaday
+# cljsjs/twemoji
 
 [](dependency)
 ```clojure
-[cljsjs/pikaday "1.5.1-2"] ;; latest release
+[cljsjs/twemoji "2.2.5-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,14 +12,9 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.pikaday))
+  (:require cljsjs.twemoji))
 ```
 
-or if you want to use pikadays optional Moment.js integration:
-
-```clojure
-(ns application.core
-  (:require cljsjs.pikaday.with-moment))
-```
+After requiring `cljsjs.twemoji`, you will be able to reference a global Twemoji object at `js/twemoji`.
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
