@@ -1135,6 +1135,9 @@ d3.hierarchy.prototype = {
   "links": function () {},
   "copy": function () {}
 };
+d3.histogram.prototype = {
+  "thresholds": function () {},
+};
 d3.zoomIdentity.constructor.prototype = {
   "constructor": function () {},
   "scale": function () {},
