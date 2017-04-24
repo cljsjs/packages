@@ -1,8 +1,8 @@
-# cljsjs/pdfjs
+# cljsjs/epubjs
 
 [](dependency)
 ```clojure
-[cljsjs/pdfjs "1.5.188-0"] ;; latest release
+[cljsjs/epubjs "0.2.15"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.pdfjs))
+  (:require cljsjs.epubjs))
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
