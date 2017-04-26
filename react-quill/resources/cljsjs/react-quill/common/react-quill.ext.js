@@ -9,23 +9,26 @@
 var ReactQuill = {
     "displayName": {},
     "propTypes": {
-        "id": function () {},
-        "className": function () {},
-        "style": function () {},
-        "value": function () {},
-        "defaultValue": function () {},
-        "readOnly": function () {},
-        "modules": function () {},
-        "toolbar": function () {},
-        "formats": function () {},
-        "styles": function () {},
-        "theme": function () {},
-        "pollInterval": function () {},
-        "onKeyPress": function () {},
-        "onKeyDown": function () {},
-        "onKeyUp": function () {},
-        "onChange": function () {},
-        "onChangeSelection": function () {}
+      "bounds": function () {},
+      "children": function () {},
+      "className": function () {},
+      "defaultValue": function () {},
+      "formats": function () {},
+      "id": function () {},
+      "modules": function () {},
+      "onChange": function () {},
+      "onChangeSelection": function () {},
+      "onKeyDown": function () {},
+      "onKeyPress": function () {},
+      "onKeyUp": function () {},
+      "placeholder": function () {},
+      "pollInterval": function () {},
+      "readOnly": function () {},
+      "style": function () {},
+      "styles": function () {},
+      "theme": function () {},
+      "toolbar": function () {},
+      "value": function () {}
     },
     "getDefaultProps": function () {},
     "defaultProps": {
@@ -38,10 +41,15 @@ var ReactQuill = {
     "Mixin": {
         "createEditor": function () {},
         "hookEditor": function () {},
-        "destroyEditor": function () {},
-        "setEditorReadOnly": function () {},
+        "makeUnprivilegedEditor": function() {},
         "setEditorContents": function () {},
-        "setEditorSelection": function () {}
+        "setEditorReadOnly": function () {},
+        "setEditorSelection": function() {},
+        "destroyEditor": function () {}
     },
-    "Toolbar": function () {}
+    "focus": function () {},
+    "blur": function () {},
+    "getEditor": function () {},
+    "Toolbar": function () {},
+    "Quill": function() {}
 }
