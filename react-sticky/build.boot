@@ -7,7 +7,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "5.0.7")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/react-sticky
@@ -34,6 +34,6 @@
     (sift :move {#"^react-sticky-.*/dist/react-sticky.min.js" "cljsjs/react-sticky/production/react-sticky.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-sticky"
-               :requires ["cljsjs.react"])
+               :requires ["cljsjs.react" "cljsjs.react.dom"])
     (pom)
     (jar)))
