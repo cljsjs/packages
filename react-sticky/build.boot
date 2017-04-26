@@ -34,6 +34,6 @@
     (sift :move {#"^react-sticky-.*/dist/react-sticky.min.js" "cljsjs/react-sticky/production/react-sticky.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-sticky"
-               :requires ["cljsjs.react"])
+               :requires ["cljsjs.react" "cljsjs.react.dom"])
     (pom)
     (jar)))
