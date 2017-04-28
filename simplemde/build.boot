@@ -11,7 +11,7 @@
  pom {:project     'cljsjs/simplemde
       :version     +version+
       :description "A drop-in JavaScript textarea replacement for writing beautiful and understandable Markdown"
-      :url         "https://github.com/showdownjs/showdown"
+      :url         "https://simplemde.com/"
       :scm         {:url "https://github.com/NextStepWebs/simplemde-markdown-editor"}
       :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
