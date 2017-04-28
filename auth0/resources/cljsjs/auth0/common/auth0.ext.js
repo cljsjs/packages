@@ -25,6 +25,8 @@ auth0.Management.prototype = {
   "patchUserMetadata": function () {},
   "linkUser": function () {}
 };
+
+auth0.WebAuth.client = {};
 auth0.WebAuth.prototype = {
   "parseHash": function () {},
   "validateToken": function () {},
