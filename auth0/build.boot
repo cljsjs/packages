@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "8.1.2")
+(def +lib-version+ "8.6.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -19,7 +19,7 @@
   (comp
     (download
       :url (format "https://github.com/auth0/auth0.js/archive/v%s.zip" +lib-version+)
-      :checksum "E939DC6A239746283A33A51B394AAF95"
+      :checksum "1D5799534400F0B90918D85A2995470D"
       :unzip true)
     (sift :move {#"^auth0\.js.*/build/auth0\.js$"      "cljsjs/auth0/development/auth0.inc.js"
                  #"^auth0\.js.*/build/auth0\.min\.js$" "cljsjs/auth0/production/auth0.min.inc.js"})
