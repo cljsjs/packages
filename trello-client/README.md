@@ -7,12 +7,10 @@
 [](/dependency)
 
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
-of the ClojureScript compiler. After adding the above dependency to your project
-to can require the packaged library like so:
+of the ClojureScript compiler.
 
-```clojure
-(ns application.core
-  (:require cljsjs.trello-client))
-```
+It does not ship the Trello Client source, so this wil need to be provided through some other means (like a `<script>` include tag)
+
+[Extern only packages](https://github.com/cljsjs/packages/wiki/Extern-only-packages)
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
