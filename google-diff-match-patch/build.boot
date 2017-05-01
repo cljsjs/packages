@@ -6,7 +6,7 @@
 
 
 (def +lib-version+ "20121119")
-(def +version+ (str +lib-version+ "-1"))
+(def +version+ (str +lib-version+ "-2"))
 
 (task-options!
  pom  {:project     'cljsjs/google-diff-match-patch
