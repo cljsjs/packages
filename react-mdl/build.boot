@@ -9,15 +9,15 @@
          '[boot.util :refer [sh info]]
          '[boot.task-helpers :as helpers])
 
-(def +lib-version+ "1.5.4")
+(def +lib-version+ "1.10.1")
 (def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/react-mdl
        :version     +version+
        :description "React Components wrapper for Material Design Lite UI http://tleunen.github.io/react-mdl/"
-       :url         "http://tleunen.github.io/react-mdl/"
-       :scm         {:url "https://github.com/tleunen/react-mdl"}})
+       :url         "https://react-mdl.github.io/react-mdl/"
+       :scm         {:url "https://github.com/react-mdl/react-mdl"}})
 
 (deftask build-react-mdl []
   (let [tmp (boot/tmp-dir!)]
@@ -35,7 +35,7 @@
 
 (deftask package []
   (comp
-   (download :url (str "https://github.com/tleunen/react-mdl/archive/v" +lib-version+ ".zip")
+   (download :url (str "https://github.com/react-mdl/react-mdl/archive/v" +lib-version+ ".zip")
              :unzip true)
    (build-react-mdl)
    (sift :move {#"^react-mdl[^/]*/extra/material.css"      "cljsjs/react-mdl/development/material.css"
