@@ -8,7 +8,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "0.1.1")
+(def +lib-version+ "0.7.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -37,7 +37,7 @@
   (task-options! push {:ensure-branch nil})
   (comp
    (download :url (str "https://github.com/material-components/material-components-web/archive/v" +lib-version+ ".zip")
-             :checksum "758a02ddaf204ec4247d3b8298f2b7be"
+             :checksum "02d0870d024be6114b9bd1e098c1f396"
              :unzip true)
 
    (build-material-components)
@@ -46,6 +46,8 @@
    (sift :move {(re-pattern (str "^material-components-web-" +lib-version+ "/build/material-components-web.css$")) "cljsjs/material-components/development/material-components.inc.css"})
    (sift :move {(re-pattern (str "^material-components-web-" +lib-version+ "/build/material-components-web.min.js$")) "cljsjs/material-components/production/material-components.min.inc.js"})
    (sift :move {(re-pattern (str "^material-components-web-" +lib-version+ "/build/material-components-web.min.css$")) "cljsjs/material-components/production/material-components.min.inc.css"})
+   (sift :move {(re-pattern (str "^material-components-web-" +lib-version+ "/packages/([^/]*)/([^/]*).scss$"))
+                "cljsjs/material-components/development/packages/$1/$2.scss"})
 
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.material-components")

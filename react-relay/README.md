@@ -2,12 +2,12 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-relay "0.7.3-0"] ;; latest release
+[cljsjs/react-relay "0.10.0-0"] ;; latest release
 ```
 [](/dependency)
 
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
-of the Clojurescript compiler. After adding the above dependency to your project
+of the ClojureScript compiler. After adding the above dependency to your project
 you can require the packaged library like so:
 
 ```clojure
@@ -24,13 +24,14 @@ Because ClojureScript has macros, we can use them to shell out to Node, like thi
 (ns my.project.relay ; .clj macro file
   (:require
    [clojure.java.io :as io]
+   [clojure.string :as str]
    [me.raynes.conch :as conch]))
 
 (defn ^:private ql* [env query]
   (let [filename (-> env :ns :name)
         {:keys [line column]} env
         code (str  "/* " filename " " line " " column "*/" ; unique key for every query
-                   "Relay.QL`" query "`")
+                   "Relay.QL`" (str/replace query #"\r\n|\n|\r" " ") "`;")
         schema (-> "relay/schema.json" io/resource slurp) ; GraphQL schema from introspection query
         script (str "var schema = " schema ";"
                     "var schemaData = schema.data;"

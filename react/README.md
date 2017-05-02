@@ -1,11 +1,11 @@
 # cljsjs/react
 
 ```clojure
-[cljsjs/react "15.4.0-0"] ;; latest release
+[cljsjs/react "15.4.2-2"] ;; latest release
 ```
 
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
-of the Clojurescript compiler. After adding the above dependency to your project
+of the ClojureScript compiler. After adding the above dependency to your project
 you can require the packaged library like so:
 
 ```clojure
@@ -16,7 +16,7 @@ you can require the packaged library like so:
 # cljsjs/react-with-addons
 
 ```clojure
-[cljsjs/react-with-addons "15.4.0-0"] ;; latest release
+[cljsjs/react-with-addons "15.4.2-2"] ;; latest release
 ```
 
 **Note that this JAR provides the same `cljsjs/react` module as

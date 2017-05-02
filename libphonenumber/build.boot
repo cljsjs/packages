@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "7.6.0")
-(def +version+ (str +lib-version+ "-0"))
+(def +lib-version+ "8.4.1")
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/libphonenumber
@@ -17,11 +17,14 @@
 
 (deftask package []
   (comp
-    (download :url (format "https://github.com/googlei18n/libphonenumber/archive/libphonenumber-%s.zip" +lib-version+)
-              :checksum "58FEFB66351AB6EB4AC749E80879CD49"
+    (download :url (format "https://github.com/googlei18n/libphonenumber/archive/v%s.zip" +lib-version+)
+              :checksum "450DD8CE0823BCE4B00673808CD8468D"
               :unzip true)
     (show :fileset true)
-    (sift :move {#"^libphonenumber-libphonenumber-[\d\.]*/javascript/i18n/phonenumbers/" "cljsjs/libphonenumber/development/i18n/"})
+    (sift :move {#"^libphonenumber-[\d\.]*/javascript/i18n/phonenumbers/" "cljsjs/libphonenumber/development/i18n/"})
+    (sift :include #{#"cljsjs/libphonenumber/.*test"
+                     #"cljsjs/libphonenumber/.*demo"}
+          :invert true)
     (sift :include #{#"^cljsjs/" #"deps.cljs"})
     (pom)
     (jar)))

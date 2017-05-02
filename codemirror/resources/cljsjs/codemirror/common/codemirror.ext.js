@@ -20,6 +20,7 @@ var CodeMirror = {
   "defineExtension": function () {},
   "defineDocExtension": function () {},
   "defineOption": function () {},
+  "defineSimpleMode": function () {},
   "defineInitHook": function () {},
   "helpers": {},
   "registerHelper": function () {},
@@ -289,6 +290,11 @@ CodeMirror.Doc.prototype = {
   "insertInner": function () {},
   "maybeSpill": function () {},
   "iterN": function () {}
+};
+CodeMirror.emacs.prototype = {
+  "kill": function () {},
+  "killRegion": function () {},
+  "repeated": function () {}
 };
 var FromToObj = {
     "from": {},

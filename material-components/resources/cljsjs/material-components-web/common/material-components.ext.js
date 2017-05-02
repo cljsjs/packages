@@ -7,6 +7,10 @@ var mdc = {
     "MDCCheckboxFoundation": function () {},
     "MDCCheckbox": function () {}
   },
+  "gridList": {
+    "MDCGridListFoundation": function () {},
+    "MDCGridList": function () {}
+  },
   "iconToggle": {
     "MDCIconToggleFoundation": function () {},
     "MDCIconToggle": function () {}
@@ -132,6 +136,19 @@ mdc.drawer.MDCTemporaryDrawerFoundation.prototype = {
   "init": function () {},
   "isOpen": function () {},
   "open": function () {}
+};
+
+/* Grid List */
+
+mdc.gridList.MDCGridList.attachTo = function(root) {};
+
+mdc.gridList.MDCGridListFoundation.defaultAdapter = {};
+mdc.gridList.MDCGridListFoundation.strings = {};
+
+mdc.gridList.MDCGridListFoundation.prototype = {
+  "alignCenter": function() {},
+  "destroy": function() {},
+  "init": function() {},
 };
 
 /* Textfield */

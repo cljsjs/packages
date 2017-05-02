@@ -1,0 +1,20 @@
+diff --git a/gulpfile.js b/gulpfile.js
+index 4d64b54..5651c9f 100644
+--- a/gulpfile.js
++++ b/gulpfile.js
+@@ -30,6 +30,15 @@ gulp.task('prod', function() {
+     .pipe(gulp.dest(destination));
+ });
+ 
++gulp.task('dev-noblock', function() {
++  return browserify('./src/main.js', {
++    standalone: standalone
++  }).bundle()
++    .on('error', onError)
++    .pipe(source('chessground.js'))
++    .pipe(gulp.dest(destination));
++});
++
+ gulp.task('dev', function() {
+   var opts = watchify.args;
+   opts.debug = true;

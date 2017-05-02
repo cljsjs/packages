@@ -1,12 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]
-                  [cljsjs/moment "2.6.0-3"]])
+                  [cljsjs/moment "2.17.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.4.0")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "1.5.1")
+(def +version+ (str +lib-version+ "-2"))
 
 (task-options!
   pom {:project 'cljsjs/pikaday
@@ -20,7 +20,7 @@
 (deftask package []
   (comp
     (download :url (str "https://github.com/dbushell/Pikaday/archive/" +lib-version+ ".zip")
-              :checksum "12766879AC4E23CE71768FE8A706C4A7"
+              :checksum "0443E86E8F443610703CC90F087DE903"
               :unzip true)
     (sift :move {#"^Pikaday.*/pikaday\.js"        "cljsjs/pikaday/development/pikaday.inc.js"
                  #"^Pikaday.*/scss/pikaday\.scss" "cljsjs/pikaday/development/pikaday.scss"

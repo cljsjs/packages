@@ -1,4 +1,3298 @@
+// Generated via http://www.dotnetwise.com/code/externs/
 var THREE = {
+    "WebGLRenderTargetCube": function () {},
+    "WebGLRenderTarget": function () {},
+    "WebGLRenderer": function () {},
+    "ShaderLib": {
+        "basic": {
+            "uniforms": {
+                "diffuse": {
+                    "value": {
+                        "r": {},
+                        "g": {},
+                        "b": {},
+                        "constructor": function () {},
+                        "isColor": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setHex": function () {},
+                        "setRGB": function () {},
+                        "setHSL": function () {},
+                        "setStyle": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "copyGammaToLinear": function () {},
+                        "copyLinearToGamma": function () {},
+                        "convertGammaToLinear": function () {},
+                        "convertLinearToGamma": function () {},
+                        "getHex": function () {},
+                        "getHexString": function () {},
+                        "getHSL": function () {},
+                        "getStyle": function () {},
+                        "offsetHSL": function () {},
+                        "add": function () {},
+                        "addColors": function () {},
+                        "addScalar": function () {},
+                        "sub": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "lerp": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "toJSON": function () {}
+                    }
+                },
+                "opacity": {
+                    "value": {}
+                },
+                "map": {
+                    "value": function () {}
+                },
+                "offsetRepeat": {
+                    "value": {
+                        "x": {},
+                        "y": {},
+                        "z": {},
+                        "w": {},
+                        "constructor": function () {},
+                        "isVector4": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setX": function () {},
+                        "setY": function () {},
+                        "setZ": function () {},
+                        "setW": function () {},
+                        "setComponent": function () {},
+                        "getComponent": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "add": function () {},
+                        "addScalar": function () {},
+                        "addVectors": function () {},
+                        "addScaledVector": function () {},
+                        "sub": function () {},
+                        "subScalar": function () {},
+                        "subVectors": function () {},
+                        "multiplyScalar": function () {},
+                        "applyMatrix4": function () {},
+                        "divideScalar": function () {},
+                        "setAxisAngleFromQuaternion": function () {},
+                        "setAxisAngleFromRotationMatrix": function () {},
+                        "min": function () {},
+                        "max": function () {},
+                        "clamp": function () {},
+                        "clampScalar": function () {},
+                        "floor": function () {},
+                        "ceil": function () {},
+                        "round": function () {},
+                        "roundToZero": function () {},
+                        "negate": function () {},
+                        "dot": function () {},
+                        "lengthSq": function () {},
+                        "length": function () {},
+                        "lengthManhattan": function () {},
+                        "normalize": function () {},
+                        "setLength": function () {},
+                        "lerp": function () {},
+                        "lerpVectors": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "fromBufferAttribute": function () {},
+                        "fromAttribute": function () {}
+                    }
+                },
+                "specularMap": {
+                    "value": function () {}
+                },
+                "alphaMap": {
+                    "value": function () {}
+                },
+                "envMap": {
+                    "value": function () {}
+                },
+                "flipEnvMap": {
+                    "value": {}
+                },
+                "reflectivity": {
+                    "value": {}
+                },
+                "refractionRatio": {
+                    "value": {}
+                },
+                "aoMap": {
+                    "value": function () {}
+                },
+                "aoMapIntensity": {
+                    "value": {}
+                },
+                "lightMap": {
+                    "value": function () {}
+                },
+                "lightMapIntensity": {
+                    "value": {}
+                },
+                "fogDensity": {
+                    "value": {}
+                },
+                "fogNear": {
+                    "value": {}
+                },
+                "fogFar": {
+                    "value": {}
+                },
+                "fogColor": {
+                    "value": {
+                        "r": {},
+                        "g": {},
+                        "b": {},
+                        "constructor": function () {},
+                        "isColor": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setHex": function () {},
+                        "setRGB": function () {},
+                        "setHSL": function () {},
+                        "setStyle": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "copyGammaToLinear": function () {},
+                        "copyLinearToGamma": function () {},
+                        "convertGammaToLinear": function () {},
+                        "convertLinearToGamma": function () {},
+                        "getHex": function () {},
+                        "getHexString": function () {},
+                        "getHSL": function () {},
+                        "getStyle": function () {},
+                        "offsetHSL": function () {},
+                        "add": function () {},
+                        "addColors": function () {},
+                        "addScalar": function () {},
+                        "sub": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "lerp": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "toJSON": function () {}
+                    }
+                }
+            },
+            "vertexShader": {},
+            "fragmentShader": {}
+        },
+        "lambert": {
+            "uniforms": {
+                "diffuse": {
+                    "value": {
+                        "r": {},
+                        "g": {},
+                        "b": {},
+                        "constructor": function () {},
+                        "isColor": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setHex": function () {},
+                        "setRGB": function () {},
+                        "setHSL": function () {},
+                        "setStyle": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "copyGammaToLinear": function () {},
+                        "copyLinearToGamma": function () {},
+                        "convertGammaToLinear": function () {},
+                        "convertLinearToGamma": function () {},
+                        "getHex": function () {},
+                        "getHexString": function () {},
+                        "getHSL": function () {},
+                        "getStyle": function () {},
+                        "offsetHSL": function () {},
+                        "add": function () {},
+                        "addColors": function () {},
+                        "addScalar": function () {},
+                        "sub": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "lerp": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "toJSON": function () {}
+                    }
+                },
+                "opacity": {
+                    "value": {}
+                },
+                "map": {
+                    "value": function () {}
+                },
+                "offsetRepeat": {
+                    "value": {
+                        "x": {},
+                        "y": {},
+                        "z": {},
+                        "w": {},
+                        "constructor": function () {},
+                        "isVector4": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setX": function () {},
+                        "setY": function () {},
+                        "setZ": function () {},
+                        "setW": function () {},
+                        "setComponent": function () {},
+                        "getComponent": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "add": function () {},
+                        "addScalar": function () {},
+                        "addVectors": function () {},
+                        "addScaledVector": function () {},
+                        "sub": function () {},
+                        "subScalar": function () {},
+                        "subVectors": function () {},
+                        "multiplyScalar": function () {},
+                        "applyMatrix4": function () {},
+                        "divideScalar": function () {},
+                        "setAxisAngleFromQuaternion": function () {},
+                        "setAxisAngleFromRotationMatrix": function () {},
+                        "min": function () {},
+                        "max": function () {},
+                        "clamp": function () {},
+                        "clampScalar": function () {},
+                        "floor": function () {},
+                        "ceil": function () {},
+                        "round": function () {},
+                        "roundToZero": function () {},
+                        "negate": function () {},
+                        "dot": function () {},
+                        "lengthSq": function () {},
+                        "length": function () {},
+                        "lengthManhattan": function () {},
+                        "normalize": function () {},
+                        "setLength": function () {},
+                        "lerp": function () {},
+                        "lerpVectors": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "fromBufferAttribute": function () {},
+                        "fromAttribute": function () {}
+                    }
+                },
+                "specularMap": {
+                    "value": function () {}
+                },
+                "alphaMap": {
+                    "value": function () {}
+                },
+                "envMap": {
+                    "value": function () {}
+                },
+                "flipEnvMap": {
+                    "value": {}
+                },
+                "reflectivity": {
+                    "value": {}
+                },
+                "refractionRatio": {
+                    "value": {}
+                },
+                "aoMap": {
+                    "value": function () {}
+                },
+                "aoMapIntensity": {
+                    "value": {}
+                },
+                "lightMap": {
+                    "value": function () {}
+                },
+                "lightMapIntensity": {
+                    "value": {}
+                },
+                "emissiveMap": {
+                    "value": function () {}
+                },
+                "fogDensity": {
+                    "value": {}
+                },
+                "fogNear": {
+                    "value": {}
+                },
+                "fogFar": {
+                    "value": {}
+                },
+                "fogColor": {
+                    "value": {
+                        "r": {},
+                        "g": {},
+                        "b": {},
+                        "constructor": function () {},
+                        "isColor": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setHex": function () {},
+                        "setRGB": function () {},
+                        "setHSL": function () {},
+                        "setStyle": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "copyGammaToLinear": function () {},
+                        "copyLinearToGamma": function () {},
+                        "convertGammaToLinear": function () {},
+                        "convertLinearToGamma": function () {},
+                        "getHex": function () {},
+                        "getHexString": function () {},
+                        "getHSL": function () {},
+                        "getStyle": function () {},
+                        "offsetHSL": function () {},
+                        "add": function () {},
+                        "addColors": function () {},
+                        "addScalar": function () {},
+                        "sub": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "lerp": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "toJSON": function () {}
+                    }
+                },
+                "ambientLightColor": {
+                    "value": function () {}
+                },
+                "directionalLights": {
+                    "value": function () {},
+                    "properties": {
+                        "direction": function () {},
+                        "color": function () {},
+                        "shadow": function () {},
+                        "shadowBias": function () {},
+                        "shadowRadius": function () {},
+                        "shadowMapSize": function () {}
+                    }
+                },
+                "directionalShadowMap": {
+                    "value": function () {}
+                },
+                "directionalShadowMatrix": {
+                    "value": function () {}
+                },
+                "spotLights": {
+                    "value": function () {},
+                    "properties": {
+                        "color": function () {},
+                        "position": function () {},
+                        "direction": function () {},
+                        "distance": function () {},
+                        "coneCos": function () {},
+                        "penumbraCos": function () {},
+                        "decay": function () {},
+                        "shadow": function () {},
+                        "shadowBias": function () {},
+                        "shadowRadius": function () {},
+                        "shadowMapSize": function () {}
+                    }
+                },
+                "spotShadowMap": {
+                    "value": function () {}
+                },
+                "spotShadowMatrix": {
+                    "value": function () {}
+                },
+                "pointLights": {
+                    "value": function () {},
+                    "properties": {
+                        "color": function () {},
+                        "position": function () {},
+                        "decay": function () {},
+                        "distance": function () {},
+                        "shadow": function () {},
+                        "shadowBias": function () {},
+                        "shadowRadius": function () {},
+                        "shadowMapSize": function () {}
+                    }
+                },
+                "pointShadowMap": {
+                    "value": function () {}
+                },
+                "pointShadowMatrix": {
+                    "value": function () {}
+                },
+                "hemisphereLights": {
+                    "value": function () {},
+                    "properties": {
+                        "direction": function () {},
+                        "skyColor": function () {},
+                        "groundColor": function () {}
+                    }
+                },
+                "rectAreaLights": {
+                    "value": function () {},
+                    "properties": {
+                        "color": function () {},
+                        "position": function () {},
+                        "width": function () {},
+                        "height": function () {}
+                    }
+                },
+                "emissive": {
+                    "value": {
+                        "r": {},
+                        "g": {},
+                        "b": {},
+                        "constructor": function () {},
+                        "isColor": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setHex": function () {},
+                        "setRGB": function () {},
+                        "setHSL": function () {},
+                        "setStyle": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "copyGammaToLinear": function () {},
+                        "copyLinearToGamma": function () {},
+                        "convertGammaToLinear": function () {},
+                        "convertLinearToGamma": function () {},
+                        "getHex": function () {},
+                        "getHexString": function () {},
+                        "getHSL": function () {},
+                        "getStyle": function () {},
+                        "offsetHSL": function () {},
+                        "add": function () {},
+                        "addColors": function () {},
+                        "addScalar": function () {},
+                        "sub": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "lerp": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "toJSON": function () {}
+                    }
+                }
+            },
+            "vertexShader": {},
+            "fragmentShader": {}
+        },
+        "phong": {
+            "uniforms": {
+                "diffuse": {
+                    "value": {
+                        "r": {},
+                        "g": {},
+                        "b": {},
+                        "constructor": function () {},
+                        "isColor": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setHex": function () {},
+                        "setRGB": function () {},
+                        "setHSL": function () {},
+                        "setStyle": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "copyGammaToLinear": function () {},
+                        "copyLinearToGamma": function () {},
+                        "convertGammaToLinear": function () {},
+                        "convertLinearToGamma": function () {},
+                        "getHex": function () {},
+                        "getHexString": function () {},
+                        "getHSL": function () {},
+                        "getStyle": function () {},
+                        "offsetHSL": function () {},
+                        "add": function () {},
+                        "addColors": function () {},
+                        "addScalar": function () {},
+                        "sub": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "lerp": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "toJSON": function () {}
+                    }
+                },
+                "opacity": {
+                    "value": {}
+                },
+                "map": {
+                    "value": function () {}
+                },
+                "offsetRepeat": {
+                    "value": {
+                        "x": {},
+                        "y": {},
+                        "z": {},
+                        "w": {},
+                        "constructor": function () {},
+                        "isVector4": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setX": function () {},
+                        "setY": function () {},
+                        "setZ": function () {},
+                        "setW": function () {},
+                        "setComponent": function () {},
+                        "getComponent": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "add": function () {},
+                        "addScalar": function () {},
+                        "addVectors": function () {},
+                        "addScaledVector": function () {},
+                        "sub": function () {},
+                        "subScalar": function () {},
+                        "subVectors": function () {},
+                        "multiplyScalar": function () {},
+                        "applyMatrix4": function () {},
+                        "divideScalar": function () {},
+                        "setAxisAngleFromQuaternion": function () {},
+                        "setAxisAngleFromRotationMatrix": function () {},
+                        "min": function () {},
+                        "max": function () {},
+                        "clamp": function () {},
+                        "clampScalar": function () {},
+                        "floor": function () {},
+                        "ceil": function () {},
+                        "round": function () {},
+                        "roundToZero": function () {},
+                        "negate": function () {},
+                        "dot": function () {},
+                        "lengthSq": function () {},
+                        "length": function () {},
+                        "lengthManhattan": function () {},
+                        "normalize": function () {},
+                        "setLength": function () {},
+                        "lerp": function () {},
+                        "lerpVectors": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "fromBufferAttribute": function () {},
+                        "fromAttribute": function () {}
+                    }
+                },
+                "specularMap": {
+                    "value": function () {}
+                },
+                "alphaMap": {
+                    "value": function () {}
+                },
+                "envMap": {
+                    "value": function () {}
+                },
+                "flipEnvMap": {
+                    "value": {}
+                },
+                "reflectivity": {
+                    "value": {}
+                },
+                "refractionRatio": {
+                    "value": {}
+                },
+                "aoMap": {
+                    "value": function () {}
+                },
+                "aoMapIntensity": {
+                    "value": {}
+                },
+                "lightMap": {
+                    "value": function () {}
+                },
+                "lightMapIntensity": {
+                    "value": {}
+                },
+                "emissiveMap": {
+                    "value": function () {}
+                },
+                "bumpMap": {
+                    "value": function () {}
+                },
+                "bumpScale": {
+                    "value": {}
+                },
+                "normalMap": {
+                    "value": function () {}
+                },
+                "normalScale": {
+                    "value": {
+                        "x": {},
+                        "y": {},
+                        "constructor": function () {},
+                        "isVector2": {},
+                        "width": {},
+                        "height": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setX": function () {},
+                        "setY": function () {},
+                        "setComponent": function () {},
+                        "getComponent": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "add": function () {},
+                        "addScalar": function () {},
+                        "addVectors": function () {},
+                        "addScaledVector": function () {},
+                        "sub": function () {},
+                        "subScalar": function () {},
+                        "subVectors": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "divide": function () {},
+                        "divideScalar": function () {},
+                        "min": function () {},
+                        "max": function () {},
+                        "clamp": function () {},
+                        "clampScalar": function () {},
+                        "clampLength": function () {},
+                        "floor": function () {},
+                        "ceil": function () {},
+                        "round": function () {},
+                        "roundToZero": function () {},
+                        "negate": function () {},
+                        "dot": function () {},
+                        "lengthSq": function () {},
+                        "length": function () {},
+                        "lengthManhattan": function () {},
+                        "normalize": function () {},
+                        "angle": function () {},
+                        "distanceTo": function () {},
+                        "distanceToSquared": function () {},
+                        "distanceToManhattan": function () {},
+                        "setLength": function () {},
+                        "lerp": function () {},
+                        "lerpVectors": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "fromBufferAttribute": function () {},
+                        "rotateAround": function () {},
+                        "fromAttribute": function () {}
+                    }
+                },
+                "displacementMap": {
+                    "value": function () {}
+                },
+                "displacementScale": {
+                    "value": {}
+                },
+                "displacementBias": {
+                    "value": {}
+                },
+                "gradientMap": {
+                    "value": function () {}
+                },
+                "fogDensity": {
+                    "value": {}
+                },
+                "fogNear": {
+                    "value": {}
+                },
+                "fogFar": {
+                    "value": {}
+                },
+                "fogColor": {
+                    "value": {
+                        "r": {},
+                        "g": {},
+                        "b": {},
+                        "constructor": function () {},
+                        "isColor": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setHex": function () {},
+                        "setRGB": function () {},
+                        "setHSL": function () {},
+                        "setStyle": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "copyGammaToLinear": function () {},
+                        "copyLinearToGamma": function () {},
+                        "convertGammaToLinear": function () {},
+                        "convertLinearToGamma": function () {},
+                        "getHex": function () {},
+                        "getHexString": function () {},
+                        "getHSL": function () {},
+                        "getStyle": function () {},
+                        "offsetHSL": function () {},
+                        "add": function () {},
+                        "addColors": function () {},
+                        "addScalar": function () {},
+                        "sub": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "lerp": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "toJSON": function () {}
+                    }
+                },
+                "ambientLightColor": {
+                    "value": function () {}
+                },
+                "directionalLights": {
+                    "value": function () {},
+                    "properties": {
+                        "direction": function () {},
+                        "color": function () {},
+                        "shadow": function () {},
+                        "shadowBias": function () {},
+                        "shadowRadius": function () {},
+                        "shadowMapSize": function () {}
+                    }
+                },
+                "directionalShadowMap": {
+                    "value": function () {}
+                },
+                "directionalShadowMatrix": {
+                    "value": function () {}
+                },
+                "spotLights": {
+                    "value": function () {},
+                    "properties": {
+                        "color": function () {},
+                        "position": function () {},
+                        "direction": function () {},
+                        "distance": function () {},
+                        "coneCos": function () {},
+                        "penumbraCos": function () {},
+                        "decay": function () {},
+                        "shadow": function () {},
+                        "shadowBias": function () {},
+                        "shadowRadius": function () {},
+                        "shadowMapSize": function () {}
+                    }
+                },
+                "spotShadowMap": {
+                    "value": function () {}
+                },
+                "spotShadowMatrix": {
+                    "value": function () {}
+                },
+                "pointLights": {
+                    "value": function () {},
+                    "properties": {
+                        "color": function () {},
+                        "position": function () {},
+                        "decay": function () {},
+                        "distance": function () {},
+                        "shadow": function () {},
+                        "shadowBias": function () {},
+                        "shadowRadius": function () {},
+                        "shadowMapSize": function () {}
+                    }
+                },
+                "pointShadowMap": {
+                    "value": function () {}
+                },
+                "pointShadowMatrix": {
+                    "value": function () {}
+                },
+                "hemisphereLights": {
+                    "value": function () {},
+                    "properties": {
+                        "direction": function () {},
+                        "skyColor": function () {},
+                        "groundColor": function () {}
+                    }
+                },
+                "rectAreaLights": {
+                    "value": function () {},
+                    "properties": {
+                        "color": function () {},
+                        "position": function () {},
+                        "width": function () {},
+                        "height": function () {}
+                    }
+                },
+                "emissive": {
+                    "value": {
+                        "r": {},
+                        "g": {},
+                        "b": {},
+                        "constructor": function () {},
+                        "isColor": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setHex": function () {},
+                        "setRGB": function () {},
+                        "setHSL": function () {},
+                        "setStyle": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "copyGammaToLinear": function () {},
+                        "copyLinearToGamma": function () {},
+                        "convertGammaToLinear": function () {},
+                        "convertLinearToGamma": function () {},
+                        "getHex": function () {},
+                        "getHexString": function () {},
+                        "getHSL": function () {},
+                        "getStyle": function () {},
+                        "offsetHSL": function () {},
+                        "add": function () {},
+                        "addColors": function () {},
+                        "addScalar": function () {},
+                        "sub": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "lerp": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "toJSON": function () {}
+                    }
+                },
+                "specular": {
+                    "value": {
+                        "r": {},
+                        "g": {},
+                        "b": {},
+                        "constructor": function () {},
+                        "isColor": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setHex": function () {},
+                        "setRGB": function () {},
+                        "setHSL": function () {},
+                        "setStyle": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "copyGammaToLinear": function () {},
+                        "copyLinearToGamma": function () {},
+                        "convertGammaToLinear": function () {},
+                        "convertLinearToGamma": function () {},
+                        "getHex": function () {},
+                        "getHexString": function () {},
+                        "getHSL": function () {},
+                        "getStyle": function () {},
+                        "offsetHSL": function () {},
+                        "add": function () {},
+                        "addColors": function () {},
+                        "addScalar": function () {},
+                        "sub": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "lerp": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "toJSON": function () {}
+                    }
+                },
+                "shininess": {
+                    "value": {}
+                }
+            },
+            "vertexShader": {},
+            "fragmentShader": {}
+        },
+        "standard": {
+            "uniforms": {
+                "diffuse": {
+                    "value": {
+                        "r": {},
+                        "g": {},
+                        "b": {},
+                        "constructor": function () {},
+                        "isColor": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setHex": function () {},
+                        "setRGB": function () {},
+                        "setHSL": function () {},
+                        "setStyle": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "copyGammaToLinear": function () {},
+                        "copyLinearToGamma": function () {},
+                        "convertGammaToLinear": function () {},
+                        "convertLinearToGamma": function () {},
+                        "getHex": function () {},
+                        "getHexString": function () {},
+                        "getHSL": function () {},
+                        "getStyle": function () {},
+                        "offsetHSL": function () {},
+                        "add": function () {},
+                        "addColors": function () {},
+                        "addScalar": function () {},
+                        "sub": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "lerp": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "toJSON": function () {}
+                    }
+                },
+                "opacity": {
+                    "value": {}
+                },
+                "map": {
+                    "value": function () {}
+                },
+                "offsetRepeat": {
+                    "value": {
+                        "x": {},
+                        "y": {},
+                        "z": {},
+                        "w": {},
+                        "constructor": function () {},
+                        "isVector4": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setX": function () {},
+                        "setY": function () {},
+                        "setZ": function () {},
+                        "setW": function () {},
+                        "setComponent": function () {},
+                        "getComponent": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "add": function () {},
+                        "addScalar": function () {},
+                        "addVectors": function () {},
+                        "addScaledVector": function () {},
+                        "sub": function () {},
+                        "subScalar": function () {},
+                        "subVectors": function () {},
+                        "multiplyScalar": function () {},
+                        "applyMatrix4": function () {},
+                        "divideScalar": function () {},
+                        "setAxisAngleFromQuaternion": function () {},
+                        "setAxisAngleFromRotationMatrix": function () {},
+                        "min": function () {},
+                        "max": function () {},
+                        "clamp": function () {},
+                        "clampScalar": function () {},
+                        "floor": function () {},
+                        "ceil": function () {},
+                        "round": function () {},
+                        "roundToZero": function () {},
+                        "negate": function () {},
+                        "dot": function () {},
+                        "lengthSq": function () {},
+                        "length": function () {},
+                        "lengthManhattan": function () {},
+                        "normalize": function () {},
+                        "setLength": function () {},
+                        "lerp": function () {},
+                        "lerpVectors": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "fromBufferAttribute": function () {},
+                        "fromAttribute": function () {}
+                    }
+                },
+                "specularMap": {
+                    "value": function () {}
+                },
+                "alphaMap": {
+                    "value": function () {}
+                },
+                "envMap": {
+                    "value": function () {}
+                },
+                "flipEnvMap": {
+                    "value": {}
+                },
+                "reflectivity": {
+                    "value": {}
+                },
+                "refractionRatio": {
+                    "value": {}
+                },
+                "aoMap": {
+                    "value": function () {}
+                },
+                "aoMapIntensity": {
+                    "value": {}
+                },
+                "lightMap": {
+                    "value": function () {}
+                },
+                "lightMapIntensity": {
+                    "value": {}
+                },
+                "emissiveMap": {
+                    "value": function () {}
+                },
+                "bumpMap": {
+                    "value": function () {}
+                },
+                "bumpScale": {
+                    "value": {}
+                },
+                "normalMap": {
+                    "value": function () {}
+                },
+                "normalScale": {
+                    "value": {
+                        "x": {},
+                        "y": {},
+                        "constructor": function () {},
+                        "isVector2": {},
+                        "width": {},
+                        "height": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setX": function () {},
+                        "setY": function () {},
+                        "setComponent": function () {},
+                        "getComponent": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "add": function () {},
+                        "addScalar": function () {},
+                        "addVectors": function () {},
+                        "addScaledVector": function () {},
+                        "sub": function () {},
+                        "subScalar": function () {},
+                        "subVectors": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "divide": function () {},
+                        "divideScalar": function () {},
+                        "min": function () {},
+                        "max": function () {},
+                        "clamp": function () {},
+                        "clampScalar": function () {},
+                        "clampLength": function () {},
+                        "floor": function () {},
+                        "ceil": function () {},
+                        "round": function () {},
+                        "roundToZero": function () {},
+                        "negate": function () {},
+                        "dot": function () {},
+                        "lengthSq": function () {},
+                        "length": function () {},
+                        "lengthManhattan": function () {},
+                        "normalize": function () {},
+                        "angle": function () {},
+                        "distanceTo": function () {},
+                        "distanceToSquared": function () {},
+                        "distanceToManhattan": function () {},
+                        "setLength": function () {},
+                        "lerp": function () {},
+                        "lerpVectors": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "fromBufferAttribute": function () {},
+                        "rotateAround": function () {},
+                        "fromAttribute": function () {}
+                    }
+                },
+                "displacementMap": {
+                    "value": function () {}
+                },
+                "displacementScale": {
+                    "value": {}
+                },
+                "displacementBias": {
+                    "value": {}
+                },
+                "roughnessMap": {
+                    "value": function () {}
+                },
+                "metalnessMap": {
+                    "value": function () {}
+                },
+                "fogDensity": {
+                    "value": {}
+                },
+                "fogNear": {
+                    "value": {}
+                },
+                "fogFar": {
+                    "value": {}
+                },
+                "fogColor": {
+                    "value": {
+                        "r": {},
+                        "g": {},
+                        "b": {},
+                        "constructor": function () {},
+                        "isColor": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setHex": function () {},
+                        "setRGB": function () {},
+                        "setHSL": function () {},
+                        "setStyle": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "copyGammaToLinear": function () {},
+                        "copyLinearToGamma": function () {},
+                        "convertGammaToLinear": function () {},
+                        "convertLinearToGamma": function () {},
+                        "getHex": function () {},
+                        "getHexString": function () {},
+                        "getHSL": function () {},
+                        "getStyle": function () {},
+                        "offsetHSL": function () {},
+                        "add": function () {},
+                        "addColors": function () {},
+                        "addScalar": function () {},
+                        "sub": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "lerp": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "toJSON": function () {}
+                    }
+                },
+                "ambientLightColor": {
+                    "value": function () {}
+                },
+                "directionalLights": {
+                    "value": function () {},
+                    "properties": {
+                        "direction": function () {},
+                        "color": function () {},
+                        "shadow": function () {},
+                        "shadowBias": function () {},
+                        "shadowRadius": function () {},
+                        "shadowMapSize": function () {}
+                    }
+                },
+                "directionalShadowMap": {
+                    "value": function () {}
+                },
+                "directionalShadowMatrix": {
+                    "value": function () {}
+                },
+                "spotLights": {
+                    "value": function () {},
+                    "properties": {
+                        "color": function () {},
+                        "position": function () {},
+                        "direction": function () {},
+                        "distance": function () {},
+                        "coneCos": function () {},
+                        "penumbraCos": function () {},
+                        "decay": function () {},
+                        "shadow": function () {},
+                        "shadowBias": function () {},
+                        "shadowRadius": function () {},
+                        "shadowMapSize": function () {}
+                    }
+                },
+                "spotShadowMap": {
+                    "value": function () {}
+                },
+                "spotShadowMatrix": {
+                    "value": function () {}
+                },
+                "pointLights": {
+                    "value": function () {},
+                    "properties": {
+                        "color": function () {},
+                        "position": function () {},
+                        "decay": function () {},
+                        "distance": function () {},
+                        "shadow": function () {},
+                        "shadowBias": function () {},
+                        "shadowRadius": function () {},
+                        "shadowMapSize": function () {}
+                    }
+                },
+                "pointShadowMap": {
+                    "value": function () {}
+                },
+                "pointShadowMatrix": {
+                    "value": function () {}
+                },
+                "hemisphereLights": {
+                    "value": function () {},
+                    "properties": {
+                        "direction": function () {},
+                        "skyColor": function () {},
+                        "groundColor": function () {}
+                    }
+                },
+                "rectAreaLights": {
+                    "value": function () {},
+                    "properties": {
+                        "color": function () {},
+                        "position": function () {},
+                        "width": function () {},
+                        "height": function () {}
+                    }
+                },
+                "emissive": {
+                    "value": {
+                        "r": {},
+                        "g": {},
+                        "b": {},
+                        "constructor": function () {},
+                        "isColor": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setHex": function () {},
+                        "setRGB": function () {},
+                        "setHSL": function () {},
+                        "setStyle": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "copyGammaToLinear": function () {},
+                        "copyLinearToGamma": function () {},
+                        "convertGammaToLinear": function () {},
+                        "convertLinearToGamma": function () {},
+                        "getHex": function () {},
+                        "getHexString": function () {},
+                        "getHSL": function () {},
+                        "getStyle": function () {},
+                        "offsetHSL": function () {},
+                        "add": function () {},
+                        "addColors": function () {},
+                        "addScalar": function () {},
+                        "sub": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "lerp": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "toJSON": function () {}
+                    }
+                },
+                "roughness": {
+                    "value": {}
+                },
+                "metalness": {
+                    "value": {}
+                },
+                "envMapIntensity": {
+                    "value": {}
+                }
+            },
+            "vertexShader": {},
+            "fragmentShader": {}
+        },
+        "points": {
+            "uniforms": {
+                "diffuse": {
+                    "value": {
+                        "r": {},
+                        "g": {},
+                        "b": {},
+                        "constructor": function () {},
+                        "isColor": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setHex": function () {},
+                        "setRGB": function () {},
+                        "setHSL": function () {},
+                        "setStyle": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "copyGammaToLinear": function () {},
+                        "copyLinearToGamma": function () {},
+                        "convertGammaToLinear": function () {},
+                        "convertLinearToGamma": function () {},
+                        "getHex": function () {},
+                        "getHexString": function () {},
+                        "getHSL": function () {},
+                        "getStyle": function () {},
+                        "offsetHSL": function () {},
+                        "add": function () {},
+                        "addColors": function () {},
+                        "addScalar": function () {},
+                        "sub": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "lerp": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "toJSON": function () {}
+                    }
+                },
+                "opacity": {
+                    "value": {}
+                },
+                "size": {
+                    "value": {}
+                },
+                "scale": {
+                    "value": {}
+                },
+                "map": {
+                    "value": function () {}
+                },
+                "offsetRepeat": {
+                    "value": {
+                        "x": {},
+                        "y": {},
+                        "z": {},
+                        "w": {},
+                        "constructor": function () {},
+                        "isVector4": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setX": function () {},
+                        "setY": function () {},
+                        "setZ": function () {},
+                        "setW": function () {},
+                        "setComponent": function () {},
+                        "getComponent": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "add": function () {},
+                        "addScalar": function () {},
+                        "addVectors": function () {},
+                        "addScaledVector": function () {},
+                        "sub": function () {},
+                        "subScalar": function () {},
+                        "subVectors": function () {},
+                        "multiplyScalar": function () {},
+                        "applyMatrix4": function () {},
+                        "divideScalar": function () {},
+                        "setAxisAngleFromQuaternion": function () {},
+                        "setAxisAngleFromRotationMatrix": function () {},
+                        "min": function () {},
+                        "max": function () {},
+                        "clamp": function () {},
+                        "clampScalar": function () {},
+                        "floor": function () {},
+                        "ceil": function () {},
+                        "round": function () {},
+                        "roundToZero": function () {},
+                        "negate": function () {},
+                        "dot": function () {},
+                        "lengthSq": function () {},
+                        "length": function () {},
+                        "lengthManhattan": function () {},
+                        "normalize": function () {},
+                        "setLength": function () {},
+                        "lerp": function () {},
+                        "lerpVectors": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "fromBufferAttribute": function () {},
+                        "fromAttribute": function () {}
+                    }
+                },
+                "fogDensity": {
+                    "value": {}
+                },
+                "fogNear": {
+                    "value": {}
+                },
+                "fogFar": {
+                    "value": {}
+                },
+                "fogColor": {
+                    "value": {
+                        "r": {},
+                        "g": {},
+                        "b": {},
+                        "constructor": function () {},
+                        "isColor": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setHex": function () {},
+                        "setRGB": function () {},
+                        "setHSL": function () {},
+                        "setStyle": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "copyGammaToLinear": function () {},
+                        "copyLinearToGamma": function () {},
+                        "convertGammaToLinear": function () {},
+                        "convertLinearToGamma": function () {},
+                        "getHex": function () {},
+                        "getHexString": function () {},
+                        "getHSL": function () {},
+                        "getStyle": function () {},
+                        "offsetHSL": function () {},
+                        "add": function () {},
+                        "addColors": function () {},
+                        "addScalar": function () {},
+                        "sub": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "lerp": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "toJSON": function () {}
+                    }
+                }
+            },
+            "vertexShader": {},
+            "fragmentShader": {}
+        },
+        "dashed": {
+            "uniforms": {
+                "diffuse": {
+                    "value": {
+                        "r": {},
+                        "g": {},
+                        "b": {},
+                        "constructor": function () {},
+                        "isColor": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setHex": function () {},
+                        "setRGB": function () {},
+                        "setHSL": function () {},
+                        "setStyle": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "copyGammaToLinear": function () {},
+                        "copyLinearToGamma": function () {},
+                        "convertGammaToLinear": function () {},
+                        "convertLinearToGamma": function () {},
+                        "getHex": function () {},
+                        "getHexString": function () {},
+                        "getHSL": function () {},
+                        "getStyle": function () {},
+                        "offsetHSL": function () {},
+                        "add": function () {},
+                        "addColors": function () {},
+                        "addScalar": function () {},
+                        "sub": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "lerp": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "toJSON": function () {}
+                    }
+                },
+                "opacity": {
+                    "value": {}
+                },
+                "map": {
+                    "value": function () {}
+                },
+                "offsetRepeat": {
+                    "value": {
+                        "x": {},
+                        "y": {},
+                        "z": {},
+                        "w": {},
+                        "constructor": function () {},
+                        "isVector4": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setX": function () {},
+                        "setY": function () {},
+                        "setZ": function () {},
+                        "setW": function () {},
+                        "setComponent": function () {},
+                        "getComponent": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "add": function () {},
+                        "addScalar": function () {},
+                        "addVectors": function () {},
+                        "addScaledVector": function () {},
+                        "sub": function () {},
+                        "subScalar": function () {},
+                        "subVectors": function () {},
+                        "multiplyScalar": function () {},
+                        "applyMatrix4": function () {},
+                        "divideScalar": function () {},
+                        "setAxisAngleFromQuaternion": function () {},
+                        "setAxisAngleFromRotationMatrix": function () {},
+                        "min": function () {},
+                        "max": function () {},
+                        "clamp": function () {},
+                        "clampScalar": function () {},
+                        "floor": function () {},
+                        "ceil": function () {},
+                        "round": function () {},
+                        "roundToZero": function () {},
+                        "negate": function () {},
+                        "dot": function () {},
+                        "lengthSq": function () {},
+                        "length": function () {},
+                        "lengthManhattan": function () {},
+                        "normalize": function () {},
+                        "setLength": function () {},
+                        "lerp": function () {},
+                        "lerpVectors": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "fromBufferAttribute": function () {},
+                        "fromAttribute": function () {}
+                    }
+                },
+                "specularMap": {
+                    "value": function () {}
+                },
+                "alphaMap": {
+                    "value": function () {}
+                },
+                "envMap": {
+                    "value": function () {}
+                },
+                "flipEnvMap": {
+                    "value": {}
+                },
+                "reflectivity": {
+                    "value": {}
+                },
+                "refractionRatio": {
+                    "value": {}
+                },
+                "fogDensity": {
+                    "value": {}
+                },
+                "fogNear": {
+                    "value": {}
+                },
+                "fogFar": {
+                    "value": {}
+                },
+                "fogColor": {
+                    "value": {
+                        "r": {},
+                        "g": {},
+                        "b": {},
+                        "constructor": function () {},
+                        "isColor": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setHex": function () {},
+                        "setRGB": function () {},
+                        "setHSL": function () {},
+                        "setStyle": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "copyGammaToLinear": function () {},
+                        "copyLinearToGamma": function () {},
+                        "convertGammaToLinear": function () {},
+                        "convertLinearToGamma": function () {},
+                        "getHex": function () {},
+                        "getHexString": function () {},
+                        "getHSL": function () {},
+                        "getStyle": function () {},
+                        "offsetHSL": function () {},
+                        "add": function () {},
+                        "addColors": function () {},
+                        "addScalar": function () {},
+                        "sub": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "lerp": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "toJSON": function () {}
+                    }
+                },
+                "scale": {
+                    "value": {}
+                },
+                "dashSize": {
+                    "value": {}
+                },
+                "totalSize": {
+                    "value": {}
+                }
+            },
+            "vertexShader": {},
+            "fragmentShader": {}
+        },
+        "depth": {
+            "uniforms": {
+                "diffuse": {
+                    "value": {
+                        "r": {},
+                        "g": {},
+                        "b": {},
+                        "constructor": function () {},
+                        "isColor": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setHex": function () {},
+                        "setRGB": function () {},
+                        "setHSL": function () {},
+                        "setStyle": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "copyGammaToLinear": function () {},
+                        "copyLinearToGamma": function () {},
+                        "convertGammaToLinear": function () {},
+                        "convertLinearToGamma": function () {},
+                        "getHex": function () {},
+                        "getHexString": function () {},
+                        "getHSL": function () {},
+                        "getStyle": function () {},
+                        "offsetHSL": function () {},
+                        "add": function () {},
+                        "addColors": function () {},
+                        "addScalar": function () {},
+                        "sub": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "lerp": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "toJSON": function () {}
+                    }
+                },
+                "opacity": {
+                    "value": {}
+                },
+                "map": {
+                    "value": function () {}
+                },
+                "offsetRepeat": {
+                    "value": {
+                        "x": {},
+                        "y": {},
+                        "z": {},
+                        "w": {},
+                        "constructor": function () {},
+                        "isVector4": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setX": function () {},
+                        "setY": function () {},
+                        "setZ": function () {},
+                        "setW": function () {},
+                        "setComponent": function () {},
+                        "getComponent": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "add": function () {},
+                        "addScalar": function () {},
+                        "addVectors": function () {},
+                        "addScaledVector": function () {},
+                        "sub": function () {},
+                        "subScalar": function () {},
+                        "subVectors": function () {},
+                        "multiplyScalar": function () {},
+                        "applyMatrix4": function () {},
+                        "divideScalar": function () {},
+                        "setAxisAngleFromQuaternion": function () {},
+                        "setAxisAngleFromRotationMatrix": function () {},
+                        "min": function () {},
+                        "max": function () {},
+                        "clamp": function () {},
+                        "clampScalar": function () {},
+                        "floor": function () {},
+                        "ceil": function () {},
+                        "round": function () {},
+                        "roundToZero": function () {},
+                        "negate": function () {},
+                        "dot": function () {},
+                        "lengthSq": function () {},
+                        "length": function () {},
+                        "lengthManhattan": function () {},
+                        "normalize": function () {},
+                        "setLength": function () {},
+                        "lerp": function () {},
+                        "lerpVectors": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "fromBufferAttribute": function () {},
+                        "fromAttribute": function () {}
+                    }
+                },
+                "specularMap": {
+                    "value": function () {}
+                },
+                "alphaMap": {
+                    "value": function () {}
+                },
+                "envMap": {
+                    "value": function () {}
+                },
+                "flipEnvMap": {
+                    "value": {}
+                },
+                "reflectivity": {
+                    "value": {}
+                },
+                "refractionRatio": {
+                    "value": {}
+                },
+                "displacementMap": {
+                    "value": function () {}
+                },
+                "displacementScale": {
+                    "value": {}
+                },
+                "displacementBias": {
+                    "value": {}
+                }
+            },
+            "vertexShader": {},
+            "fragmentShader": {}
+        },
+        "normal": {
+            "uniforms": {
+                "diffuse": {
+                    "value": {
+                        "r": {},
+                        "g": {},
+                        "b": {},
+                        "constructor": function () {},
+                        "isColor": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setHex": function () {},
+                        "setRGB": function () {},
+                        "setHSL": function () {},
+                        "setStyle": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "copyGammaToLinear": function () {},
+                        "copyLinearToGamma": function () {},
+                        "convertGammaToLinear": function () {},
+                        "convertLinearToGamma": function () {},
+                        "getHex": function () {},
+                        "getHexString": function () {},
+                        "getHSL": function () {},
+                        "getStyle": function () {},
+                        "offsetHSL": function () {},
+                        "add": function () {},
+                        "addColors": function () {},
+                        "addScalar": function () {},
+                        "sub": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "lerp": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "toJSON": function () {}
+                    }
+                },
+                "opacity": {
+                    "value": {}
+                },
+                "map": {
+                    "value": function () {}
+                },
+                "offsetRepeat": {
+                    "value": {
+                        "x": {},
+                        "y": {},
+                        "z": {},
+                        "w": {},
+                        "constructor": function () {},
+                        "isVector4": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setX": function () {},
+                        "setY": function () {},
+                        "setZ": function () {},
+                        "setW": function () {},
+                        "setComponent": function () {},
+                        "getComponent": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "add": function () {},
+                        "addScalar": function () {},
+                        "addVectors": function () {},
+                        "addScaledVector": function () {},
+                        "sub": function () {},
+                        "subScalar": function () {},
+                        "subVectors": function () {},
+                        "multiplyScalar": function () {},
+                        "applyMatrix4": function () {},
+                        "divideScalar": function () {},
+                        "setAxisAngleFromQuaternion": function () {},
+                        "setAxisAngleFromRotationMatrix": function () {},
+                        "min": function () {},
+                        "max": function () {},
+                        "clamp": function () {},
+                        "clampScalar": function () {},
+                        "floor": function () {},
+                        "ceil": function () {},
+                        "round": function () {},
+                        "roundToZero": function () {},
+                        "negate": function () {},
+                        "dot": function () {},
+                        "lengthSq": function () {},
+                        "length": function () {},
+                        "lengthManhattan": function () {},
+                        "normalize": function () {},
+                        "setLength": function () {},
+                        "lerp": function () {},
+                        "lerpVectors": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "fromBufferAttribute": function () {},
+                        "fromAttribute": function () {}
+                    }
+                },
+                "specularMap": {
+                    "value": function () {}
+                },
+                "alphaMap": {
+                    "value": function () {}
+                },
+                "envMap": {
+                    "value": function () {}
+                },
+                "flipEnvMap": {
+                    "value": {}
+                },
+                "reflectivity": {
+                    "value": {}
+                },
+                "refractionRatio": {
+                    "value": {}
+                },
+                "bumpMap": {
+                    "value": function () {}
+                },
+                "bumpScale": {
+                    "value": {}
+                },
+                "normalMap": {
+                    "value": function () {}
+                },
+                "normalScale": {
+                    "value": {
+                        "x": {},
+                        "y": {},
+                        "constructor": function () {},
+                        "isVector2": {},
+                        "width": {},
+                        "height": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setX": function () {},
+                        "setY": function () {},
+                        "setComponent": function () {},
+                        "getComponent": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "add": function () {},
+                        "addScalar": function () {},
+                        "addVectors": function () {},
+                        "addScaledVector": function () {},
+                        "sub": function () {},
+                        "subScalar": function () {},
+                        "subVectors": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "divide": function () {},
+                        "divideScalar": function () {},
+                        "min": function () {},
+                        "max": function () {},
+                        "clamp": function () {},
+                        "clampScalar": function () {},
+                        "clampLength": function () {},
+                        "floor": function () {},
+                        "ceil": function () {},
+                        "round": function () {},
+                        "roundToZero": function () {},
+                        "negate": function () {},
+                        "dot": function () {},
+                        "lengthSq": function () {},
+                        "length": function () {},
+                        "lengthManhattan": function () {},
+                        "normalize": function () {},
+                        "angle": function () {},
+                        "distanceTo": function () {},
+                        "distanceToSquared": function () {},
+                        "distanceToManhattan": function () {},
+                        "setLength": function () {},
+                        "lerp": function () {},
+                        "lerpVectors": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "fromBufferAttribute": function () {},
+                        "rotateAround": function () {},
+                        "fromAttribute": function () {}
+                    }
+                },
+                "displacementMap": {
+                    "value": function () {}
+                },
+                "displacementScale": {
+                    "value": {}
+                },
+                "displacementBias": {
+                    "value": {}
+                }
+            },
+            "vertexShader": {},
+            "fragmentShader": {}
+        },
+        "cube": {
+            "uniforms": {
+                "tCube": {
+                    "value": function () {}
+                },
+                "tFlip": {
+                    "value": {}
+                },
+                "opacity": {
+                    "value": {}
+                }
+            },
+            "vertexShader": {},
+            "fragmentShader": {}
+        },
+        "equirect": {
+            "uniforms": {
+                "tEquirect": {
+                    "value": function () {}
+                },
+                "tFlip": {
+                    "value": {}
+                }
+            },
+            "vertexShader": {},
+            "fragmentShader": {}
+        },
+        "distanceRGBA": {
+            "uniforms": {
+                "lightPos": {
+                    "value": {
+                        "x": {},
+                        "y": {},
+                        "z": {},
+                        "constructor": function () {},
+                        "isVector3": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setX": function () {},
+                        "setY": function () {},
+                        "setZ": function () {},
+                        "setComponent": function () {},
+                        "getComponent": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "add": function () {},
+                        "addScalar": function () {},
+                        "addVectors": function () {},
+                        "addScaledVector": function () {},
+                        "sub": function () {},
+                        "subScalar": function () {},
+                        "subVectors": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "multiplyVectors": function () {},
+                        "applyEuler": function () {},
+                        "applyAxisAngle": function () {},
+                        "applyMatrix3": function () {},
+                        "applyMatrix4": function () {},
+                        "applyQuaternion": function () {},
+                        "project": function () {},
+                        "unproject": function () {},
+                        "transformDirection": function () {},
+                        "divide": function () {},
+                        "divideScalar": function () {},
+                        "min": function () {},
+                        "max": function () {},
+                        "clamp": function () {},
+                        "clampScalar": function () {},
+                        "clampLength": function () {},
+                        "floor": function () {},
+                        "ceil": function () {},
+                        "round": function () {},
+                        "roundToZero": function () {},
+                        "negate": function () {},
+                        "dot": function () {},
+                        "lengthSq": function () {},
+                        "length": function () {},
+                        "lengthManhattan": function () {},
+                        "normalize": function () {},
+                        "setLength": function () {},
+                        "lerp": function () {},
+                        "lerpVectors": function () {},
+                        "cross": function () {},
+                        "crossVectors": function () {},
+                        "projectOnVector": function () {},
+                        "projectOnPlane": function () {},
+                        "reflect": function () {},
+                        "angleTo": function () {},
+                        "distanceTo": function () {},
+                        "distanceToSquared": function () {},
+                        "distanceToManhattan": function () {},
+                        "setFromSpherical": function () {},
+                        "setFromCylindrical": function () {},
+                        "setFromMatrixPosition": function () {},
+                        "setFromMatrixScale": function () {},
+                        "setFromMatrixColumn": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "fromBufferAttribute": function () {},
+                        "setEulerFromRotationMatrix": function () {},
+                        "setEulerFromQuaternion": function () {},
+                        "getPositionFromMatrix": function () {},
+                        "getScaleFromMatrix": function () {},
+                        "getColumnFromMatrix": function () {},
+                        "applyProjection": function () {},
+                        "fromAttribute": function () {}
+                    }
+                }
+            },
+            "vertexShader": {},
+            "fragmentShader": {}
+        },
+        "physical": {
+            "uniforms": {
+                "diffuse": {
+                    "value": {
+                        "r": {},
+                        "g": {},
+                        "b": {},
+                        "constructor": function () {},
+                        "isColor": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setHex": function () {},
+                        "setRGB": function () {},
+                        "setHSL": function () {},
+                        "setStyle": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "copyGammaToLinear": function () {},
+                        "copyLinearToGamma": function () {},
+                        "convertGammaToLinear": function () {},
+                        "convertLinearToGamma": function () {},
+                        "getHex": function () {},
+                        "getHexString": function () {},
+                        "getHSL": function () {},
+                        "getStyle": function () {},
+                        "offsetHSL": function () {},
+                        "add": function () {},
+                        "addColors": function () {},
+                        "addScalar": function () {},
+                        "sub": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "lerp": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "toJSON": function () {}
+                    }
+                },
+                "opacity": {
+                    "value": {}
+                },
+                "map": {
+                    "value": function () {}
+                },
+                "offsetRepeat": {
+                    "value": {
+                        "x": {},
+                        "y": {},
+                        "z": {},
+                        "w": {},
+                        "constructor": function () {},
+                        "isVector4": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setX": function () {},
+                        "setY": function () {},
+                        "setZ": function () {},
+                        "setW": function () {},
+                        "setComponent": function () {},
+                        "getComponent": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "add": function () {},
+                        "addScalar": function () {},
+                        "addVectors": function () {},
+                        "addScaledVector": function () {},
+                        "sub": function () {},
+                        "subScalar": function () {},
+                        "subVectors": function () {},
+                        "multiplyScalar": function () {},
+                        "applyMatrix4": function () {},
+                        "divideScalar": function () {},
+                        "setAxisAngleFromQuaternion": function () {},
+                        "setAxisAngleFromRotationMatrix": function () {},
+                        "min": function () {},
+                        "max": function () {},
+                        "clamp": function () {},
+                        "clampScalar": function () {},
+                        "floor": function () {},
+                        "ceil": function () {},
+                        "round": function () {},
+                        "roundToZero": function () {},
+                        "negate": function () {},
+                        "dot": function () {},
+                        "lengthSq": function () {},
+                        "length": function () {},
+                        "lengthManhattan": function () {},
+                        "normalize": function () {},
+                        "setLength": function () {},
+                        "lerp": function () {},
+                        "lerpVectors": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "fromBufferAttribute": function () {},
+                        "fromAttribute": function () {}
+                    }
+                },
+                "specularMap": {
+                    "value": function () {}
+                },
+                "alphaMap": {
+                    "value": function () {}
+                },
+                "envMap": {
+                    "value": function () {}
+                },
+                "flipEnvMap": {
+                    "value": {}
+                },
+                "reflectivity": {
+                    "value": {}
+                },
+                "refractionRatio": {
+                    "value": {}
+                },
+                "aoMap": {
+                    "value": function () {}
+                },
+                "aoMapIntensity": {
+                    "value": {}
+                },
+                "lightMap": {
+                    "value": function () {}
+                },
+                "lightMapIntensity": {
+                    "value": {}
+                },
+                "emissiveMap": {
+                    "value": function () {}
+                },
+                "bumpMap": {
+                    "value": function () {}
+                },
+                "bumpScale": {
+                    "value": {}
+                },
+                "normalMap": {
+                    "value": function () {}
+                },
+                "normalScale": {
+                    "value": {
+                        "x": {},
+                        "y": {},
+                        "constructor": function () {},
+                        "isVector2": {},
+                        "width": {},
+                        "height": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setX": function () {},
+                        "setY": function () {},
+                        "setComponent": function () {},
+                        "getComponent": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "add": function () {},
+                        "addScalar": function () {},
+                        "addVectors": function () {},
+                        "addScaledVector": function () {},
+                        "sub": function () {},
+                        "subScalar": function () {},
+                        "subVectors": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "divide": function () {},
+                        "divideScalar": function () {},
+                        "min": function () {},
+                        "max": function () {},
+                        "clamp": function () {},
+                        "clampScalar": function () {},
+                        "clampLength": function () {},
+                        "floor": function () {},
+                        "ceil": function () {},
+                        "round": function () {},
+                        "roundToZero": function () {},
+                        "negate": function () {},
+                        "dot": function () {},
+                        "lengthSq": function () {},
+                        "length": function () {},
+                        "lengthManhattan": function () {},
+                        "normalize": function () {},
+                        "angle": function () {},
+                        "distanceTo": function () {},
+                        "distanceToSquared": function () {},
+                        "distanceToManhattan": function () {},
+                        "setLength": function () {},
+                        "lerp": function () {},
+                        "lerpVectors": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "fromBufferAttribute": function () {},
+                        "rotateAround": function () {},
+                        "fromAttribute": function () {}
+                    }
+                },
+                "displacementMap": {
+                    "value": function () {}
+                },
+                "displacementScale": {
+                    "value": {}
+                },
+                "displacementBias": {
+                    "value": {}
+                },
+                "roughnessMap": {
+                    "value": function () {}
+                },
+                "metalnessMap": {
+                    "value": function () {}
+                },
+                "fogDensity": {
+                    "value": {}
+                },
+                "fogNear": {
+                    "value": {}
+                },
+                "fogFar": {
+                    "value": {}
+                },
+                "fogColor": {
+                    "value": {
+                        "r": {},
+                        "g": {},
+                        "b": {},
+                        "constructor": function () {},
+                        "isColor": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setHex": function () {},
+                        "setRGB": function () {},
+                        "setHSL": function () {},
+                        "setStyle": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "copyGammaToLinear": function () {},
+                        "copyLinearToGamma": function () {},
+                        "convertGammaToLinear": function () {},
+                        "convertLinearToGamma": function () {},
+                        "getHex": function () {},
+                        "getHexString": function () {},
+                        "getHSL": function () {},
+                        "getStyle": function () {},
+                        "offsetHSL": function () {},
+                        "add": function () {},
+                        "addColors": function () {},
+                        "addScalar": function () {},
+                        "sub": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "lerp": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "toJSON": function () {}
+                    }
+                },
+                "ambientLightColor": {
+                    "value": function () {}
+                },
+                "directionalLights": {
+                    "value": function () {},
+                    "properties": {
+                        "direction": function () {},
+                        "color": function () {},
+                        "shadow": function () {},
+                        "shadowBias": function () {},
+                        "shadowRadius": function () {},
+                        "shadowMapSize": function () {}
+                    }
+                },
+                "directionalShadowMap": {
+                    "value": function () {}
+                },
+                "directionalShadowMatrix": {
+                    "value": function () {}
+                },
+                "spotLights": {
+                    "value": function () {},
+                    "properties": {
+                        "color": function () {},
+                        "position": function () {},
+                        "direction": function () {},
+                        "distance": function () {},
+                        "coneCos": function () {},
+                        "penumbraCos": function () {},
+                        "decay": function () {},
+                        "shadow": function () {},
+                        "shadowBias": function () {},
+                        "shadowRadius": function () {},
+                        "shadowMapSize": function () {}
+                    }
+                },
+                "spotShadowMap": {
+                    "value": function () {}
+                },
+                "spotShadowMatrix": {
+                    "value": function () {}
+                },
+                "pointLights": {
+                    "value": function () {},
+                    "properties": {
+                        "color": function () {},
+                        "position": function () {},
+                        "decay": function () {},
+                        "distance": function () {},
+                        "shadow": function () {},
+                        "shadowBias": function () {},
+                        "shadowRadius": function () {},
+                        "shadowMapSize": function () {}
+                    }
+                },
+                "pointShadowMap": {
+                    "value": function () {}
+                },
+                "pointShadowMatrix": {
+                    "value": function () {}
+                },
+                "hemisphereLights": {
+                    "value": function () {},
+                    "properties": {
+                        "direction": function () {},
+                        "skyColor": function () {},
+                        "groundColor": function () {}
+                    }
+                },
+                "rectAreaLights": {
+                    "value": function () {},
+                    "properties": {
+                        "color": function () {},
+                        "position": function () {},
+                        "width": function () {},
+                        "height": function () {}
+                    }
+                },
+                "emissive": {
+                    "value": {
+                        "r": {},
+                        "g": {},
+                        "b": {},
+                        "constructor": function () {},
+                        "isColor": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setHex": function () {},
+                        "setRGB": function () {},
+                        "setHSL": function () {},
+                        "setStyle": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "copyGammaToLinear": function () {},
+                        "copyLinearToGamma": function () {},
+                        "convertGammaToLinear": function () {},
+                        "convertLinearToGamma": function () {},
+                        "getHex": function () {},
+                        "getHexString": function () {},
+                        "getHSL": function () {},
+                        "getStyle": function () {},
+                        "offsetHSL": function () {},
+                        "add": function () {},
+                        "addColors": function () {},
+                        "addScalar": function () {},
+                        "sub": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "lerp": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "toJSON": function () {}
+                    }
+                },
+                "roughness": {
+                    "value": {}
+                },
+                "metalness": {
+                    "value": {}
+                },
+                "envMapIntensity": {
+                    "value": {}
+                },
+                "clearCoat": {
+                    "value": {}
+                },
+                "clearCoatRoughness": {
+                    "value": {}
+                }
+            },
+            "vertexShader": {},
+            "fragmentShader": {}
+        }
+    },
+    "UniformsLib": {
+        "common": {
+            "diffuse": {
+                "value": {
+                    "r": {},
+                    "g": {},
+                    "b": {},
+                    "constructor": function () {},
+                    "isColor": {},
+                    "set": function () {},
+                    "setScalar": function () {},
+                    "setHex": function () {},
+                    "setRGB": function () {},
+                    "setHSL": function () {},
+                    "setStyle": function () {},
+                    "clone": function () {},
+                    "copy": function () {},
+                    "copyGammaToLinear": function () {},
+                    "copyLinearToGamma": function () {},
+                    "convertGammaToLinear": function () {},
+                    "convertLinearToGamma": function () {},
+                    "getHex": function () {},
+                    "getHexString": function () {},
+                    "getHSL": function () {},
+                    "getStyle": function () {},
+                    "offsetHSL": function () {},
+                    "add": function () {},
+                    "addColors": function () {},
+                    "addScalar": function () {},
+                    "sub": function () {},
+                    "multiply": function () {},
+                    "multiplyScalar": function () {},
+                    "lerp": function () {},
+                    "equals": function () {},
+                    "fromArray": function () {},
+                    "toArray": function () {},
+                    "toJSON": function () {}
+                }
+            },
+            "opacity": {
+                "value": {}
+            },
+            "map": {
+                "value": function () {}
+            },
+            "offsetRepeat": {
+                "value": {
+                    "x": {},
+                    "y": {},
+                    "z": {},
+                    "w": {},
+                    "constructor": function () {},
+                    "isVector4": {},
+                    "set": function () {},
+                    "setScalar": function () {},
+                    "setX": function () {},
+                    "setY": function () {},
+                    "setZ": function () {},
+                    "setW": function () {},
+                    "setComponent": function () {},
+                    "getComponent": function () {},
+                    "clone": function () {},
+                    "copy": function () {},
+                    "add": function () {},
+                    "addScalar": function () {},
+                    "addVectors": function () {},
+                    "addScaledVector": function () {},
+                    "sub": function () {},
+                    "subScalar": function () {},
+                    "subVectors": function () {},
+                    "multiplyScalar": function () {},
+                    "applyMatrix4": function () {},
+                    "divideScalar": function () {},
+                    "setAxisAngleFromQuaternion": function () {},
+                    "setAxisAngleFromRotationMatrix": function () {},
+                    "min": function () {},
+                    "max": function () {},
+                    "clamp": function () {},
+                    "clampScalar": function () {},
+                    "floor": function () {},
+                    "ceil": function () {},
+                    "round": function () {},
+                    "roundToZero": function () {},
+                    "negate": function () {},
+                    "dot": function () {},
+                    "lengthSq": function () {},
+                    "length": function () {},
+                    "lengthManhattan": function () {},
+                    "normalize": function () {},
+                    "setLength": function () {},
+                    "lerp": function () {},
+                    "lerpVectors": function () {},
+                    "equals": function () {},
+                    "fromArray": function () {},
+                    "toArray": function () {},
+                    "fromBufferAttribute": function () {},
+                    "fromAttribute": function () {}
+                }
+            },
+            "specularMap": {
+                "value": function () {}
+            },
+            "alphaMap": {
+                "value": function () {}
+            },
+            "envMap": {
+                "value": function () {}
+            },
+            "flipEnvMap": {
+                "value": {}
+            },
+            "reflectivity": {
+                "value": {}
+            },
+            "refractionRatio": {
+                "value": {}
+            }
+        },
+        "aomap": {
+            "aoMap": {
+                "value": function () {}
+            },
+            "aoMapIntensity": {
+                "value": {}
+            }
+        },
+        "lightmap": {
+            "lightMap": {
+                "value": function () {}
+            },
+            "lightMapIntensity": {
+                "value": {}
+            }
+        },
+        "emissivemap": {
+            "emissiveMap": {
+                "value": function () {}
+            }
+        },
+        "bumpmap": {
+            "bumpMap": {
+                "value": function () {}
+            },
+            "bumpScale": {
+                "value": {}
+            }
+        },
+        "normalmap": {
+            "normalMap": {
+                "value": function () {}
+            },
+            "normalScale": {
+                "value": {
+                    "x": {},
+                    "y": {},
+                    "constructor": function () {},
+                    "isVector2": {},
+                    "width": {},
+                    "height": {},
+                    "set": function () {},
+                    "setScalar": function () {},
+                    "setX": function () {},
+                    "setY": function () {},
+                    "setComponent": function () {},
+                    "getComponent": function () {},
+                    "clone": function () {},
+                    "copy": function () {},
+                    "add": function () {},
+                    "addScalar": function () {},
+                    "addVectors": function () {},
+                    "addScaledVector": function () {},
+                    "sub": function () {},
+                    "subScalar": function () {},
+                    "subVectors": function () {},
+                    "multiply": function () {},
+                    "multiplyScalar": function () {},
+                    "divide": function () {},
+                    "divideScalar": function () {},
+                    "min": function () {},
+                    "max": function () {},
+                    "clamp": function () {},
+                    "clampScalar": function () {},
+                    "clampLength": function () {},
+                    "floor": function () {},
+                    "ceil": function () {},
+                    "round": function () {},
+                    "roundToZero": function () {},
+                    "negate": function () {},
+                    "dot": function () {},
+                    "lengthSq": function () {},
+                    "length": function () {},
+                    "lengthManhattan": function () {},
+                    "normalize": function () {},
+                    "angle": function () {},
+                    "distanceTo": function () {},
+                    "distanceToSquared": function () {},
+                    "distanceToManhattan": function () {},
+                    "setLength": function () {},
+                    "lerp": function () {},
+                    "lerpVectors": function () {},
+                    "equals": function () {},
+                    "fromArray": function () {},
+                    "toArray": function () {},
+                    "fromBufferAttribute": function () {},
+                    "rotateAround": function () {},
+                    "fromAttribute": function () {}
+                }
+            }
+        },
+        "displacementmap": {
+            "displacementMap": {
+                "value": function () {}
+            },
+            "displacementScale": {
+                "value": {}
+            },
+            "displacementBias": {
+                "value": {}
+            }
+        },
+        "roughnessmap": {
+            "roughnessMap": {
+                "value": function () {}
+            }
+        },
+        "metalnessmap": {
+            "metalnessMap": {
+                "value": function () {}
+            }
+        },
+        "gradientmap": {
+            "gradientMap": {
+                "value": function () {}
+            }
+        },
+        "fog": {
+            "fogDensity": {
+                "value": {}
+            },
+            "fogNear": {
+                "value": {}
+            },
+            "fogFar": {
+                "value": {}
+            },
+            "fogColor": {
+                "value": {
+                    "r": {},
+                    "g": {},
+                    "b": {},
+                    "constructor": function () {},
+                    "isColor": {},
+                    "set": function () {},
+                    "setScalar": function () {},
+                    "setHex": function () {},
+                    "setRGB": function () {},
+                    "setHSL": function () {},
+                    "setStyle": function () {},
+                    "clone": function () {},
+                    "copy": function () {},
+                    "copyGammaToLinear": function () {},
+                    "copyLinearToGamma": function () {},
+                    "convertGammaToLinear": function () {},
+                    "convertLinearToGamma": function () {},
+                    "getHex": function () {},
+                    "getHexString": function () {},
+                    "getHSL": function () {},
+                    "getStyle": function () {},
+                    "offsetHSL": function () {},
+                    "add": function () {},
+                    "addColors": function () {},
+                    "addScalar": function () {},
+                    "sub": function () {},
+                    "multiply": function () {},
+                    "multiplyScalar": function () {},
+                    "lerp": function () {},
+                    "equals": function () {},
+                    "fromArray": function () {},
+                    "toArray": function () {},
+                    "toJSON": function () {}
+                }
+            }
+        },
+        "lights": {
+            "ambientLightColor": {
+                "value": function () {}
+            },
+            "directionalLights": {
+                "value": function () {},
+                "properties": {
+                    "direction": function () {},
+                    "color": function () {},
+                    "shadow": function () {},
+                    "shadowBias": function () {},
+                    "shadowRadius": function () {},
+                    "shadowMapSize": function () {}
+                }
+            },
+            "directionalShadowMap": {
+                "value": function () {}
+            },
+            "directionalShadowMatrix": {
+                "value": function () {}
+            },
+            "spotLights": {
+                "value": function () {},
+                "properties": {
+                    "color": function () {},
+                    "position": function () {},
+                    "direction": function () {},
+                    "distance": function () {},
+                    "coneCos": function () {},
+                    "penumbraCos": function () {},
+                    "decay": function () {},
+                    "shadow": function () {},
+                    "shadowBias": function () {},
+                    "shadowRadius": function () {},
+                    "shadowMapSize": function () {}
+                }
+            },
+            "spotShadowMap": {
+                "value": function () {}
+            },
+            "spotShadowMatrix": {
+                "value": function () {}
+            },
+            "pointLights": {
+                "value": function () {},
+                "properties": {
+                    "color": function () {},
+                    "position": function () {},
+                    "decay": function () {},
+                    "distance": function () {},
+                    "shadow": function () {},
+                    "shadowBias": function () {},
+                    "shadowRadius": function () {},
+                    "shadowMapSize": function () {}
+                }
+            },
+            "pointShadowMap": {
+                "value": function () {}
+            },
+            "pointShadowMatrix": {
+                "value": function () {}
+            },
+            "hemisphereLights": {
+                "value": function () {},
+                "properties": {
+                    "direction": function () {},
+                    "skyColor": function () {},
+                    "groundColor": function () {}
+                }
+            },
+            "rectAreaLights": {
+                "value": function () {},
+                "properties": {
+                    "color": function () {},
+                    "position": function () {},
+                    "width": function () {},
+                    "height": function () {}
+                }
+            }
+        },
+        "points": {
+            "diffuse": {
+                "value": {
+                    "r": {},
+                    "g": {},
+                    "b": {},
+                    "constructor": function () {},
+                    "isColor": {},
+                    "set": function () {},
+                    "setScalar": function () {},
+                    "setHex": function () {},
+                    "setRGB": function () {},
+                    "setHSL": function () {},
+                    "setStyle": function () {},
+                    "clone": function () {},
+                    "copy": function () {},
+                    "copyGammaToLinear": function () {},
+                    "copyLinearToGamma": function () {},
+                    "convertGammaToLinear": function () {},
+                    "convertLinearToGamma": function () {},
+                    "getHex": function () {},
+                    "getHexString": function () {},
+                    "getHSL": function () {},
+                    "getStyle": function () {},
+                    "offsetHSL": function () {},
+                    "add": function () {},
+                    "addColors": function () {},
+                    "addScalar": function () {},
+                    "sub": function () {},
+                    "multiply": function () {},
+                    "multiplyScalar": function () {},
+                    "lerp": function () {},
+                    "equals": function () {},
+                    "fromArray": function () {},
+                    "toArray": function () {},
+                    "toJSON": function () {}
+                }
+            },
+            "opacity": {
+                "value": {}
+            },
+            "size": {
+                "value": {}
+            },
+            "scale": {
+                "value": {}
+            },
+            "map": {
+                "value": function () {}
+            },
+            "offsetRepeat": {
+                "value": {
+                    "x": {},
+                    "y": {},
+                    "z": {},
+                    "w": {},
+                    "constructor": function () {},
+                    "isVector4": {},
+                    "set": function () {},
+                    "setScalar": function () {},
+                    "setX": function () {},
+                    "setY": function () {},
+                    "setZ": function () {},
+                    "setW": function () {},
+                    "setComponent": function () {},
+                    "getComponent": function () {},
+                    "clone": function () {},
+                    "copy": function () {},
+                    "add": function () {},
+                    "addScalar": function () {},
+                    "addVectors": function () {},
+                    "addScaledVector": function () {},
+                    "sub": function () {},
+                    "subScalar": function () {},
+                    "subVectors": function () {},
+                    "multiplyScalar": function () {},
+                    "applyMatrix4": function () {},
+                    "divideScalar": function () {},
+                    "setAxisAngleFromQuaternion": function () {},
+                    "setAxisAngleFromRotationMatrix": function () {},
+                    "min": function () {},
+                    "max": function () {},
+                    "clamp": function () {},
+                    "clampScalar": function () {},
+                    "floor": function () {},
+                    "ceil": function () {},
+                    "round": function () {},
+                    "roundToZero": function () {},
+                    "negate": function () {},
+                    "dot": function () {},
+                    "lengthSq": function () {},
+                    "length": function () {},
+                    "lengthManhattan": function () {},
+                    "normalize": function () {},
+                    "setLength": function () {},
+                    "lerp": function () {},
+                    "lerpVectors": function () {},
+                    "equals": function () {},
+                    "fromArray": function () {},
+                    "toArray": function () {},
+                    "fromBufferAttribute": function () {},
+                    "fromAttribute": function () {}
+                }
+            }
+        }
+    },
+    "UniformsUtils": {
+        "merge": function () {},
+        "clone": function () {}
+    },
+    "ShaderChunk": {
+        "alphamap_fragment": {},
+        "alphamap_pars_fragment": {},
+        "alphatest_fragment": {},
+        "aomap_fragment": {},
+        "aomap_pars_fragment": {},
+        "begin_vertex": {},
+        "beginnormal_vertex": {},
+        "bsdfs": {},
+        "bumpmap_pars_fragment": {},
+        "clipping_planes_fragment": {},
+        "clipping_planes_pars_fragment": {},
+        "clipping_planes_pars_vertex": {},
+        "clipping_planes_vertex": {},
+        "color_fragment": {},
+        "color_pars_fragment": {},
+        "color_pars_vertex": {},
+        "color_vertex": {},
+        "common": {},
+        "cube_uv_reflection_fragment": {},
+        "defaultnormal_vertex": {},
+        "displacementmap_pars_vertex": {},
+        "displacementmap_vertex": {},
+        "emissivemap_fragment": {},
+        "emissivemap_pars_fragment": {},
+        "encodings_fragment": {},
+        "encodings_pars_fragment": {},
+        "envmap_fragment": {},
+        "envmap_pars_fragment": {},
+        "envmap_pars_vertex": {},
+        "envmap_vertex": {},
+        "fog_vertex": {},
+        "fog_pars_vertex": {},
+        "fog_fragment": {},
+        "fog_pars_fragment": {},
+        "gradientmap_pars_fragment": {},
+        "lightmap_fragment": {},
+        "lightmap_pars_fragment": {},
+        "lights_lambert_vertex": {},
+        "lights_pars": {},
+        "lights_phong_fragment": {},
+        "lights_phong_pars_fragment": {},
+        "lights_physical_fragment": {},
+        "lights_physical_pars_fragment": {},
+        "lights_template": {},
+        "logdepthbuf_fragment": {},
+        "logdepthbuf_pars_fragment": {},
+        "logdepthbuf_pars_vertex": {},
+        "logdepthbuf_vertex": {},
+        "map_fragment": {},
+        "map_pars_fragment": {},
+        "map_particle_fragment": {},
+        "map_particle_pars_fragment": {},
+        "metalnessmap_fragment": {},
+        "metalnessmap_pars_fragment": {},
+        "morphnormal_vertex": {},
+        "morphtarget_pars_vertex": {},
+        "morphtarget_vertex": {},
+        "normal_flip": {},
+        "normal_fragment": {},
+        "normalmap_pars_fragment": {},
+        "packing": {},
+        "premultiplied_alpha_fragment": {},
+        "project_vertex": {},
+        "roughnessmap_fragment": {},
+        "roughnessmap_pars_fragment": {},
+        "shadowmap_pars_fragment": {},
+        "shadowmap_pars_vertex": {},
+        "shadowmap_vertex": {},
+        "shadowmask_pars_fragment": {},
+        "skinbase_vertex": {},
+        "skinning_pars_vertex": {},
+        "skinning_vertex": {},
+        "skinnormal_vertex": {},
+        "specularmap_fragment": {},
+        "specularmap_pars_fragment": {},
+        "tonemapping_fragment": {},
+        "tonemapping_pars_fragment": {},
+        "uv_pars_fragment": {},
+        "uv_pars_vertex": {},
+        "uv_vertex": {},
+        "uv2_pars_fragment": {},
+        "uv2_pars_vertex": {},
+        "uv2_vertex": {},
+        "worldpos_vertex": {},
+        "cube_frag": {},
+        "cube_vert": {},
+        "depth_frag": {},
+        "depth_vert": {},
+        "distanceRGBA_frag": {},
+        "distanceRGBA_vert": {},
+        "equirect_frag": {},
+        "equirect_vert": {},
+        "linedashed_frag": {},
+        "linedashed_vert": {},
+        "meshbasic_frag": {},
+        "meshbasic_vert": {},
+        "meshlambert_frag": {},
+        "meshlambert_vert": {},
+        "meshphong_frag": {},
+        "meshphong_vert": {},
+        "meshphysical_frag": {},
+        "meshphysical_vert": {},
+        "normal_frag": {},
+        "normal_vert": {},
+        "points_frag": {},
+        "points_vert": {},
+        "shadow_frag": {},
+        "shadow_vert": {}
+    },
+    "FogExp2": function () {},
+    "Fog": function () {},
+    "Scene": function () {},
+    "LensFlare": function () {},
+    "Sprite": function () {},
+    "LOD": function () {},
+    "SkinnedMesh": function () {},
+    "Skeleton": function () {},
+    "Bone": function () {},
+    "Mesh": function () {},
+    "LineSegments": function () {},
+    "Line": function () {},
+    "Points": function () {},
+    "Group": function () {},
+    "VideoTexture": function () {},
+    "DataTexture": function () {},
+    "CompressedTexture": function () {},
+    "CubeTexture": function () {},
+    "CanvasTexture": function () {},
+    "DepthTexture": function () {},
+    "Texture": function () {},
+    "CompressedTextureLoader": function () {},
+    "DataTextureLoader": function () {},
+    "CubeTextureLoader": function () {},
+    "TextureLoader": function () {},
+    "ObjectLoader": function () {},
+    "MaterialLoader": function () {},
+    "BufferGeometryLoader": function () {},
+    "DefaultLoadingManager": {
+        "onStart": {},
+        "onLoad": {},
+        "onProgress": {},
+        "onError": {},
+        "itemStart": function () {},
+        "itemEnd": function () {},
+        "itemError": function () {}
+    },
+    "LoadingManager": function () {},
+    "JSONLoader": function () {},
+    "ImageLoader": function () {},
+    "FontLoader": function () {},
+    "FileLoader": function () {},
+    "Loader": function () {},
+    "Cache": {
+        "enabled": {},
+        "files": function () {},
+        "add": function () {},
+        "get": function () {},
+        "remove": function () {},
+        "clear": function () {}
+    },
+    "AudioLoader": function () {},
+    "SpotLightShadow": function () {},
+    "SpotLight": function () {},
+    "PointLight": function () {},
+    "RectAreaLight": function () {},
+    "HemisphereLight": function () {},
+    "DirectionalLightShadow": function () {},
+    "DirectionalLight": function () {},
+    "AmbientLight": function () {},
+    "LightShadow": function () {},
+    "Light": function () {},
+    "StereoCamera": function () {},
+    "PerspectiveCamera": function () {},
+    "OrthographicCamera": function () {},
+    "CubeCamera": function () {},
+    "Camera": function () {},
+    "AudioListener": function () {},
+    "PositionalAudio": function () {},
+    "AudioContext": {
+        "getContext": function () {},
+        "setContext": function () {}
+    },
+    "AudioAnalyser": function () {},
+    "Audio": function () {},
+    "VectorKeyframeTrack": function () {},
+    "StringKeyframeTrack": function () {},
+    "QuaternionKeyframeTrack": function () {},
+    "NumberKeyframeTrack": function () {},
+    "ColorKeyframeTrack": function () {},
+    "BooleanKeyframeTrack": function () {},
+    "PropertyMixer": function () {},
+    "PropertyBinding": function () {},
+    "KeyframeTrack": function () {},
+    "AnimationUtils": {
+        "arraySlice": function () {},
+        "convertArray": function () {},
+        "isTypedArray": function () {},
+        "getKeyframeOrder": function () {},
+        "sortedArray": function () {},
+        "flattenJSON": function () {}
+    },
+    "AnimationObjectGroup": function () {},
+    "AnimationMixer": function () {},
+    "AnimationClip": function () {},
+    "Uniform": function () {},
+    "InstancedBufferGeometry": function () {},
+    "BufferGeometry": function () {},
+    "GeometryIdCount": function () {},
+    "Geometry": function () {},
+    "InterleavedBufferAttribute": function () {},
+    "InstancedInterleavedBuffer": function () {},
+    "InterleavedBuffer": function () {},
+    "InstancedBufferAttribute": function () {},
+    "Face3": function () {},
+    "Object3D": function () {},
+    "Raycaster": function () {},
+    "Layers": function () {},
+    "EventDispatcher": function () {},
+    "Clock": function () {},
+    "QuaternionLinearInterpolant": function () {},
+    "LinearInterpolant": function () {},
+    "DiscreteInterpolant": function () {},
+    "CubicInterpolant": function () {},
+    "Interpolant": function () {},
+    "Triangle": function () {},
+    "Math": {
+        "DEG2RAD": {},
+        "RAD2DEG": {},
+        "generateUUID": function () {},
+        "clamp": function () {},
+        "euclideanModulo": function () {},
+        "mapLinear": function () {},
+        "lerp": function () {},
+        "smoothstep": function () {},
+        "smootherstep": function () {},
+        "randInt": function () {},
+        "randFloat": function () {},
+        "randFloatSpread": function () {},
+        "degToRad": function () {},
+        "radToDeg": function () {},
+        "isPowerOfTwo": function () {},
+        "nearestPowerOfTwo": function () {},
+        "nextPowerOfTwo": function () {},
+        "random16": function () {}
+    },
+    "Spherical": function () {},
+    "Cylindrical": function () {},
+    "Plane": function () {},
+    "Frustum": function () {},
+    "Sphere": function () {},
+    "Ray": function () {},
+    "Matrix4": function () {},
+    "Matrix3": function () {},
+    "Box3": function () {},
+    "Box2": function () {},
+    "Line3": function () {},
+    "Euler": function () {},
+    "Vector4": function () {},
+    "Vector3": function () {},
+    "Vector2": function () {},
+    "Quaternion": function () {},
+    "Color": function () {},
+    "MorphBlendMesh": function () {},
+    "ImmediateRenderObject": function () {},
+    "VertexNormalsHelper": function () {},
+    "SpotLightHelper": function () {},
+    "SkeletonHelper": function () {},
+    "PointLightHelper": function () {},
+    "RectAreaLightHelper": function () {},
+    "HemisphereLightHelper": function () {},
+    "GridHelper": function () {},
+    "PolarGridHelper": function () {},
+    "FaceNormalsHelper": function () {},
+    "DirectionalLightHelper": function () {},
+    "CameraHelper": function () {},
+    "BoxHelper": function () {},
+    "ArrowHelper": function () {},
+    "AxisHelper": function () {},
+    "CatmullRomCurve3": function () {},
+    "CubicBezierCurve3": function () {},
+    "QuadraticBezierCurve3": function () {},
+    "LineCurve3": function () {},
+    "ArcCurve": function () {},
+    "EllipseCurve": function () {},
+    "SplineCurve": function () {},
+    "CubicBezierCurve": function () {},
+    "QuadraticBezierCurve": function () {},
+    "LineCurve": function () {},
+    "Shape": function () {},
+    "Path": function () {},
+    "ShapePath": function () {},
+    "Font": function () {},
+    "CurvePath": function () {},
+    "Curve": function () {},
+    "ShapeUtils": {
+        "area": function () {},
+        "triangulate": function () {},
+        "triangulateShape": function () {},
+        "isClockWise": function () {}
+    },
+    "SceneUtils": {
+        "createMultiMaterialObject": function () {},
+        "detach": function () {},
+        "attach": function () {}
+    },
+    "WireframeGeometry": function () {},
+    "ParametricGeometry": function () {},
+    "ParametricBufferGeometry": function () {},
+    "TetrahedronGeometry": function () {},
+    "TetrahedronBufferGeometry": function () {},
+    "OctahedronGeometry": function () {},
+    "OctahedronBufferGeometry": function () {},
+    "IcosahedronGeometry": function () {},
+    "IcosahedronBufferGeometry": function () {},
+    "DodecahedronGeometry": function () {},
+    "DodecahedronBufferGeometry": function () {},
+    "PolyhedronGeometry": function () {},
+    "PolyhedronBufferGeometry": function () {},
+    "TubeGeometry": function () {},
+    "TubeBufferGeometry": function () {},
+    "TorusKnotGeometry": function () {},
+    "TorusKnotBufferGeometry": function () {},
+    "TorusGeometry": function () {},
+    "TorusBufferGeometry": function () {},
+    "TextGeometry": function () {},
+    "SphereGeometry": function () {},
+    "SphereBufferGeometry": function () {},
+    "RingGeometry": function () {},
+    "RingBufferGeometry": function () {},
+    "PlaneGeometry": function () {},
+    "PlaneBufferGeometry": function () {},
+    "LatheGeometry": function () {},
+    "LatheBufferGeometry": function () {},
+    "ShapeGeometry": function () {},
+    "ShapeBufferGeometry": function () {},
+    "ExtrudeGeometry": function () {},
+    "EdgesGeometry": function () {},
+    "ConeGeometry": function () {},
+    "ConeBufferGeometry": function () {},
+    "CylinderGeometry": function () {},
+    "CylinderBufferGeometry": function () {},
+    "CircleGeometry": function () {},
+    "CircleBufferGeometry": function () {},
+    "BoxGeometry": function () {},
+    "BoxBufferGeometry": function () {},
+    "ShadowMaterial": function () {},
+    "SpriteMaterial": function () {},
+    "RawShaderMaterial": function () {},
+    "ShaderMaterial": function () {},
+    "PointsMaterial": function () {},
+    "MultiMaterial": function () {},
+    "MeshPhysicalMaterial": function () {},
+    "MeshStandardMaterial": function () {},
+    "MeshPhongMaterial": function () {},
+    "MeshToonMaterial": function () {},
+    "MeshNormalMaterial": function () {},
+    "MeshLambertMaterial": function () {},
+    "MeshDepthMaterial": function () {},
+    "MeshBasicMaterial": function () {},
+    "LineDashedMaterial": function () {},
+    "LineBasicMaterial": function () {},
+    "Material": function () {},
+    "Float64BufferAttribute": function () {},
+    "Float32BufferAttribute": function () {},
+    "Uint32BufferAttribute": function () {},
+    "Int32BufferAttribute": function () {},
+    "Uint16BufferAttribute": function () {},
+    "Int16BufferAttribute": function () {},
+    "Uint8ClampedBufferAttribute": function () {},
+    "Uint8BufferAttribute": function () {},
+    "Int8BufferAttribute": function () {},
+    "BufferAttribute": function () {},
     "REVISION": {},
     "MOUSE": {
         "LEFT": {},
@@ -88,6 +3382,7 @@ var THREE = {
     "UnsignedShort4444Type": {},
     "UnsignedShort5551Type": {},
     "UnsignedShort565Type": {},
+    "UnsignedInt248Type": {},
     "AlphaFormat": {},
     "RGBFormat": {},
     "RGBAFormat": {},
@@ -95,6 +3390,7 @@ var THREE = {
     "LuminanceAlphaFormat": {},
     "RGBEFormat": {},
     "DepthFormat": {},
+    "DepthStencilFormat": {},
     "RGB_S3TC_DXT1_Format": {},
     "RGBA_S3TC_DXT1_Format": {},
     "RGBA_S3TC_DXT3_Format": {},
@@ -126,205 +3422,19 @@ var THREE = {
     "RGBDEncoding": {},
     "BasicDepthPacking": {},
     "RGBADepthPacking": {},
-    "Color": function () {},
-    "ColorKeywords": {
-        "aliceblue": {},
-        "antiquewhite": {},
-        "aqua": {},
-        "aquamarine": {},
-        "azure": {},
-        "beige": {},
-        "bisque": {},
-        "black": {},
-        "blanchedalmond": {},
-        "blue": {},
-        "blueviolet": {},
-        "brown": {},
-        "burlywood": {},
-        "cadetblue": {},
-        "chartreuse": {},
-        "chocolate": {},
-        "coral": {},
-        "cornflowerblue": {},
-        "cornsilk": {},
-        "crimson": {},
-        "cyan": {},
-        "darkblue": {},
-        "darkcyan": {},
-        "darkgoldenrod": {},
-        "darkgray": {},
-        "darkgreen": {},
-        "darkgrey": {},
-        "darkkhaki": {},
-        "darkmagenta": {},
-        "darkolivegreen": {},
-        "darkorange": {},
-        "darkorchid": {},
-        "darkred": {},
-        "darksalmon": {},
-        "darkseagreen": {},
-        "darkslateblue": {},
-        "darkslategray": {},
-        "darkslategrey": {},
-        "darkturquoise": {},
-        "darkviolet": {},
-        "deeppink": {},
-        "deepskyblue": {},
-        "dimgray": {},
-        "dimgrey": {},
-        "dodgerblue": {},
-        "firebrick": {},
-        "floralwhite": {},
-        "forestgreen": {},
-        "fuchsia": {},
-        "gainsboro": {},
-        "ghostwhite": {},
-        "gold": {},
-        "goldenrod": {},
-        "gray": {},
-        "green": {},
-        "greenyellow": {},
-        "grey": {},
-        "honeydew": {},
-        "hotpink": {},
-        "indianred": {},
-        "indigo": {},
-        "ivory": {},
-        "khaki": {},
-        "lavender": {},
-        "lavenderblush": {},
-        "lawngreen": {},
-        "lemonchiffon": {},
-        "lightblue": {},
-        "lightcoral": {},
-        "lightcyan": {},
-        "lightgoldenrodyellow": {},
-        "lightgray": {},
-        "lightgreen": {},
-        "lightgrey": {},
-        "lightpink": {},
-        "lightsalmon": {},
-        "lightseagreen": {},
-        "lightskyblue": {},
-        "lightslategray": {},
-        "lightslategrey": {},
-        "lightsteelblue": {},
-        "lightyellow": {},
-        "lime": {},
-        "limegreen": {},
-        "linen": {},
-        "magenta": {},
-        "maroon": {},
-        "mediumaquamarine": {},
-        "mediumblue": {},
-        "mediumorchid": {},
-        "mediumpurple": {},
-        "mediumseagreen": {},
-        "mediumslateblue": {},
-        "mediumspringgreen": {},
-        "mediumturquoise": {},
-        "mediumvioletred": {},
-        "midnightblue": {},
-        "mintcream": {},
-        "mistyrose": {},
-        "moccasin": {},
-        "navajowhite": {},
-        "navy": {},
-        "oldlace": {},
-        "olive": {},
-        "olivedrab": {},
-        "orange": {},
-        "orangered": {},
-        "orchid": {},
-        "palegoldenrod": {},
-        "palegreen": {},
-        "paleturquoise": {},
-        "palevioletred": {},
-        "papayawhip": {},
-        "peachpuff": {},
-        "peru": {},
-        "pink": {},
-        "plum": {},
-        "powderblue": {},
-        "purple": {},
-        "red": {},
-        "rosybrown": {},
-        "royalblue": {},
-        "saddlebrown": {},
-        "salmon": {},
-        "sandybrown": {},
-        "seagreen": {},
-        "seashell": {},
-        "sienna": {},
-        "silver": {},
-        "skyblue": {},
-        "slateblue": {},
-        "slategray": {},
-        "slategrey": {},
-        "snow": {},
-        "springgreen": {},
-        "steelblue": {},
-        "tan": {},
-        "teal": {},
-        "thistle": {},
-        "tomato": {},
-        "turquoise": {},
-        "violet": {},
-        "wheat": {},
-        "white": {},
-        "whitesmoke": {},
-        "yellow": {},
-        "yellowgreen": {}
-    },
-    "Quaternion": function () {},
-    "Vector2": function () {},
-    "Vector3": function () {},
-    "Vector4": function () {},
-    "Euler": function () {},
-    "Line3": function () {},
-    "Box2": function () {},
-    "Box3": function () {},
-    "Matrix3": function () {},
-    "Matrix4": function () {},
-    "Ray": function () {},
-    "Sphere": function () {},
-    "Frustum": function () {},
-    "Plane": function () {},
-    "Spherical": function () {},
-    "Math": {
-        "DEG2RAD": {},
-        "RAD2DEG": {},
-        "generateUUID": function () {},
-        "clamp": function () {},
-        "euclideanModulo": function () {},
-        "mapLinear": function () {},
-        "smoothstep": function () {},
-        "smootherstep": function () {},
-        "random16": function () {},
-        "randInt": function () {},
-        "randFloat": function () {},
-        "randFloatSpread": function () {},
-        "degToRad": function () {},
-        "radToDeg": function () {},
-        "isPowerOfTwo": function () {},
-        "nearestPowerOfTwo": function () {},
-        "nextPowerOfTwo": function () {}
-    },
-    "Spline": function () {},
-    "Triangle": function () {},
-    "Interpolant": function () {},
-    "CubicInterpolant": function () {},
-    "DiscreteInterpolant": function () {},
-    "LinearInterpolant": function () {},
-    "QuaternionLinearInterpolant": function () {},
-    "Clock": function () {},
-    "EventDispatcher": function () {},
-    "Layers": function () {},
-    "Raycaster": function () {},
-    "Object3D": function () {},
-    "Object3DIdCount": {},
-    "Face3": function () {},
-    "BufferAttribute": function () {},
+    "CubeGeometry": function () {},
+    "Face4": function () {},
+    "LineStrip": {},
+    "LinePieces": {},
+    "MeshFaceMaterial": function () {},
+    "PointCloud": function () {},
+    "Particle": function () {},
+    "ParticleSystem": function () {},
+    "PointCloudMaterial": function () {},
+    "ParticleBasicMaterial": function () {},
+    "ParticleSystemMaterial": function () {},
+    "Vertex": function () {},
+    "DynamicBufferAttribute": function () {},
     "Int8Attribute": function () {},
     "Uint8Attribute": function () {},
     "Uint8ClampedAttribute": function () {},
@@ -334,3349 +3444,14 @@ var THREE = {
     "Uint32Attribute": function () {},
     "Float32Attribute": function () {},
     "Float64Attribute": function () {},
-    "DynamicBufferAttribute": function () {},
-    "InstancedBufferAttribute": function () {},
-    "InterleavedBuffer": function () {},
-    "InstancedInterleavedBuffer": function () {},
-    "InterleavedBufferAttribute": function () {},
-    "Geometry": function () {},
-    "GeometryIdCount": {},
-    "DirectGeometry": function () {},
-    "BufferGeometry": function () {},
-    "InstancedBufferGeometry": function () {},
-    "Uniform": function () {},
-    "AnimationClip": function () {},
-    "AnimationMixer": function () {},
-    "AnimationObjectGroup": function () {},
-    "AnimationUtils": {
-        "arraySlice": function () {},
-        "convertArray": function () {},
-        "isTypedArray": function () {},
-        "getKeyframeOrder": function () {},
-        "sortedArray": function () {},
-        "flattenJSON": function () {}
-    },
-    "KeyframeTrack": function () {},
-    "PropertyBinding": function () {},
-    "PropertyMixer": function () {},
-    "BooleanKeyframeTrack": function () {},
-    "ColorKeyframeTrack": function () {},
-    "NumberKeyframeTrack": function () {},
-    "QuaternionKeyframeTrack": function () {},
-    "StringKeyframeTrack": function () {},
-    "VectorKeyframeTrack": function () {},
-    "Audio": function () {},
-    "AudioAnalyser": function () {},
-    "PositionalAudio": function () {},
-    "AudioListener": function () {},
-    "Camera": function () {},
-    "CubeCamera": function () {},
-    "OrthographicCamera": function () {},
-    "PerspectiveCamera": function () {},
-    "StereoCamera": function () {},
-    "Light": function () {},
-    "LightShadow": function () {},
-    "AmbientLight": function () {},
-    "DirectionalLight": function () {},
-    "DirectionalLightShadow": function () {},
-    "HemisphereLight": function () {},
-    "PointLight": function () {},
-    "SpotLight": function () {},
-    "SpotLightShadow": function () {},
-    "AudioLoader": function () {},
-    "Cache": {
-        "enabled": {},
-        "files": function () {},
-        "add": function () {},
-        "get": function () {},
-        "remove": function () {},
-        "clear": function () {}
-    },
-    "Loader": function () {},
+    "ClosedSplineCurve3": function () {},
+    "SplineCurve3": function () {},
+    "Spline": function () {},
+    "BoundingBoxHelper": function () {},
+    "EdgesHelper": function () {},
+    "WireframeHelper": function () {},
     "XHRLoader": function () {},
-    "FontLoader": function () {},
-    "ImageLoader": function () {},
-    "JSONLoader": function () {},
-    "LoadingManager": function () {},
-    "DefaultLoadingManager": {
-        "onStart": {},
-        "onLoad": {},
-        "onProgress": {},
-        "onError": {},
-        "itemStart": function () {},
-        "itemEnd": function () {},
-        "itemError": function () {}
-    },
-    "BufferGeometryLoader": function () {},
-    "MaterialLoader": function () {},
-    "ObjectLoader": function () {},
-    "TextureLoader": function () {},
-    "CubeTextureLoader": function () {},
     "BinaryTextureLoader": function () {},
-    "DataTextureLoader": function () {},
-    "CompressedTextureLoader": function () {},
-    "Material": function () {},
-    "MaterialIdCount": {},
-    "LineBasicMaterial": function () {},
-    "LineDashedMaterial": function () {},
-    "MeshBasicMaterial": function () {},
-    "MeshDepthMaterial": function () {},
-    "MeshLambertMaterial": function () {},
-    "MeshNormalMaterial": function () {},
-    "MeshPhongMaterial": function () {},
-    "MeshStandardMaterial": function () {},
-    "MeshPhysicalMaterial": function () {},
-    "MultiMaterial": function () {},
-    "PointsMaterial": function () {},
-    "ShaderMaterial": function () {},
-    "RawShaderMaterial": function () {},
-    "SpriteMaterial": function () {},
-    "Texture": function () {},
-    "TextureIdCount": {},
-    "DepthTexture": function () {},
-    "CanvasTexture": function () {},
-    "CubeTexture": function () {},
-    "CompressedTexture": function () {},
-    "DataTexture": function () {},
-    "VideoTexture": function () {},
-    "Group": function () {},
-    "Points": function () {},
-    "Line": function () {},
-    "LineStrip": {},
-    "LinePieces": {},
-    "LineSegments": function () {},
-    "Mesh": function () {},
-    "Bone": function () {},
-    "Skeleton": function () {},
-    "SkinnedMesh": function () {},
-    "LOD": function () {},
-    "Sprite": function () {},
-    "Particle": function () {},
-    "LensFlare": function () {},
-    "Scene": function () {},
-    "Fog": function () {},
-    "FogExp2": function () {},
-    "ShaderChunk": {
-        "alphamap_fragment": {},
-        "alphamap_pars_fragment": {},
-        "alphatest_fragment": {},
-        "aomap_fragment": {},
-        "aomap_pars_fragment": {},
-        "begin_vertex": {},
-        "beginnormal_vertex": {},
-        "bsdfs": {},
-        "bumpmap_pars_fragment": {},
-        "clipping_planes_fragment": {},
-        "clipping_planes_pars_fragment": {},
-        "clipping_planes_pars_vertex": {},
-        "clipping_planes_vertex": {},
-        "color_fragment": {},
-        "color_pars_fragment": {},
-        "color_pars_vertex": {},
-        "color_vertex": {},
-        "common": {},
-        "cube_uv_reflection_fragment": {},
-        "defaultnormal_vertex": {},
-        "displacementmap_vertex": {},
-        "displacementmap_pars_vertex": {},
-        "emissivemap_fragment": {},
-        "emissivemap_pars_fragment": {},
-        "encodings_pars_fragment": {},
-        "encodings_fragment": {},
-        "envmap_fragment": {},
-        "envmap_pars_fragment": {},
-        "envmap_pars_vertex": {},
-        "envmap_vertex": {},
-        "fog_fragment": {},
-        "fog_pars_fragment": {},
-        "lightmap_fragment": {},
-        "lightmap_pars_fragment": {},
-        "lights_lambert_vertex": {},
-        "lights_pars": {},
-        "lights_phong_fragment": {},
-        "lights_phong_pars_fragment": {},
-        "lights_physical_fragment": {},
-        "lights_physical_pars_fragment": {},
-        "lights_template": {},
-        "logdepthbuf_fragment": {},
-        "logdepthbuf_pars_fragment": {},
-        "logdepthbuf_pars_vertex": {},
-        "logdepthbuf_vertex": {},
-        "map_fragment": {},
-        "map_pars_fragment": {},
-        "map_particle_fragment": {},
-        "map_particle_pars_fragment": {},
-        "metalnessmap_fragment": {},
-        "metalnessmap_pars_fragment": {},
-        "morphnormal_vertex": {},
-        "morphtarget_pars_vertex": {},
-        "morphtarget_vertex": {},
-        "normal_fragment": {},
-        "normalmap_pars_fragment": {},
-        "packing": {},
-        "premultiplied_alpha_fragment": {},
-        "project_vertex": {},
-        "roughnessmap_fragment": {},
-        "roughnessmap_pars_fragment": {},
-        "shadowmap_pars_fragment": {},
-        "shadowmap_pars_vertex": {},
-        "shadowmap_vertex": {},
-        "shadowmask_pars_fragment": {},
-        "skinbase_vertex": {},
-        "skinning_pars_vertex": {},
-        "skinning_vertex": {},
-        "skinnormal_vertex": {},
-        "specularmap_fragment": {},
-        "specularmap_pars_fragment": {},
-        "tonemapping_fragment": {},
-        "tonemapping_pars_fragment": {},
-        "uv2_pars_fragment": {},
-        "uv2_pars_vertex": {},
-        "uv2_vertex": {},
-        "uv_pars_fragment": {},
-        "uv_pars_vertex": {},
-        "uv_vertex": {},
-        "worldpos_vertex": {},
-        "cube_frag": {},
-        "cube_vert": {},
-        "depth_frag": {},
-        "depth_vert": {},
-        "distanceRGBA_frag": {},
-        "distanceRGBA_vert": {},
-        "equirect_frag": {},
-        "equirect_vert": {},
-        "linedashed_frag": {},
-        "linedashed_vert": {},
-        "meshbasic_frag": {},
-        "meshbasic_vert": {},
-        "meshlambert_frag": {},
-        "meshlambert_vert": {},
-        "meshphong_frag": {},
-        "meshphong_vert": {},
-        "meshphysical_frag": {},
-        "meshphysical_vert": {},
-        "normal_frag": {},
-        "normal_vert": {},
-        "points_frag": {},
-        "points_vert": {}
-    },
-    "UniformsUtils": {
-        "merge": function () {},
-        "clone": function () {}
-    },
-    "UniformsLib": {
-        "common": {
-            "diffuse": {
-                "type": {},
-                "value": {
-                    "r": {},
-                    "g": {},
-                    "b": {},
-                    "constructor": function () {},
-                    "set": function () {},
-                    "setScalar": function () {},
-                    "setHex": function () {},
-                    "setRGB": function () {},
-                    "setHSL": function () {},
-                    "setStyle": function () {},
-                    "clone": function () {},
-                    "copy": function () {},
-                    "copyGammaToLinear": function () {},
-                    "copyLinearToGamma": function () {},
-                    "convertGammaToLinear": function () {},
-                    "convertLinearToGamma": function () {},
-                    "getHex": function () {},
-                    "getHexString": function () {},
-                    "getHSL": function () {},
-                    "getStyle": function () {},
-                    "offsetHSL": function () {},
-                    "add": function () {},
-                    "addColors": function () {},
-                    "addScalar": function () {},
-                    "multiply": function () {},
-                    "multiplyScalar": function () {},
-                    "lerp": function () {},
-                    "equals": function () {},
-                    "fromArray": function () {},
-                    "toArray": function () {}
-                }
-            },
-            "opacity": {
-                "type": {},
-                "value": {}
-            },
-            "map": {
-                "type": {},
-                "value": function () {}
-            },
-            "offsetRepeat": {
-                "type": {},
-                "value": {
-                    "x": {},
-                    "y": {},
-                    "z": {},
-                    "w": {},
-                    "constructor": function () {},
-                    "set": function () {},
-                    "setScalar": function () {},
-                    "setX": function () {},
-                    "setY": function () {},
-                    "setZ": function () {},
-                    "setW": function () {},
-                    "setComponent": function () {},
-                    "getComponent": function () {},
-                    "clone": function () {},
-                    "copy": function () {},
-                    "add": function () {},
-                    "addScalar": function () {},
-                    "addVectors": function () {},
-                    "addScaledVector": function () {},
-                    "sub": function () {},
-                    "subScalar": function () {},
-                    "subVectors": function () {},
-                    "multiplyScalar": function () {},
-                    "applyMatrix4": function () {},
-                    "divideScalar": function () {},
-                    "setAxisAngleFromQuaternion": function () {},
-                    "setAxisAngleFromRotationMatrix": function () {},
-                    "min": function () {},
-                    "max": function () {},
-                    "clamp": function () {},
-                    "clampScalar": function () {},
-                    "floor": function () {},
-                    "ceil": function () {},
-                    "round": function () {},
-                    "roundToZero": function () {},
-                    "negate": function () {},
-                    "dot": function () {},
-                    "lengthSq": function () {},
-                    "length": function () {},
-                    "lengthManhattan": function () {},
-                    "normalize": function () {},
-                    "setLength": function () {},
-                    "lerp": function () {},
-                    "lerpVectors": function () {},
-                    "equals": function () {},
-                    "fromArray": function () {},
-                    "toArray": function () {},
-                    "fromAttribute": function () {}
-                }
-            },
-            "specularMap": {
-                "type": {},
-                "value": function () {}
-            },
-            "alphaMap": {
-                "type": {},
-                "value": function () {}
-            },
-            "envMap": {
-                "type": {},
-                "value": function () {}
-            },
-            "flipEnvMap": {
-                "type": {},
-                "value": {}
-            },
-            "reflectivity": {
-                "type": {},
-                "value": {}
-            },
-            "refractionRatio": {
-                "type": {},
-                "value": {}
-            }
-        },
-        "aomap": {
-            "aoMap": {
-                "type": {},
-                "value": function () {}
-            },
-            "aoMapIntensity": {
-                "type": {},
-                "value": {}
-            }
-        },
-        "lightmap": {
-            "lightMap": {
-                "type": {},
-                "value": function () {}
-            },
-            "lightMapIntensity": {
-                "type": {},
-                "value": {}
-            }
-        },
-        "emissivemap": {
-            "emissiveMap": {
-                "type": {},
-                "value": function () {}
-            }
-        },
-        "bumpmap": {
-            "bumpMap": {
-                "type": {},
-                "value": function () {}
-            },
-            "bumpScale": {
-                "type": {},
-                "value": {}
-            }
-        },
-        "normalmap": {
-            "normalMap": {
-                "type": {},
-                "value": function () {}
-            },
-            "normalScale": {
-                "type": {},
-                "value": {
-                    "x": {},
-                    "y": {},
-                    "constructor": function () {},
-                    "width": {},
-                    "height": {},
-                    "set": function () {},
-                    "setScalar": function () {},
-                    "setX": function () {},
-                    "setY": function () {},
-                    "setComponent": function () {},
-                    "getComponent": function () {},
-                    "clone": function () {},
-                    "copy": function () {},
-                    "add": function () {},
-                    "addScalar": function () {},
-                    "addVectors": function () {},
-                    "addScaledVector": function () {},
-                    "sub": function () {},
-                    "subScalar": function () {},
-                    "subVectors": function () {},
-                    "multiply": function () {},
-                    "multiplyScalar": function () {},
-                    "divide": function () {},
-                    "divideScalar": function () {},
-                    "min": function () {},
-                    "max": function () {},
-                    "clamp": function () {},
-                    "clampScalar": function () {},
-                    "clampLength": function () {},
-                    "floor": function () {},
-                    "ceil": function () {},
-                    "round": function () {},
-                    "roundToZero": function () {},
-                    "negate": function () {},
-                    "dot": function () {},
-                    "lengthSq": function () {},
-                    "length": function () {},
-                    "lengthManhattan": function () {},
-                    "normalize": function () {},
-                    "angle": function () {},
-                    "distanceTo": function () {},
-                    "distanceToSquared": function () {},
-                    "setLength": function () {},
-                    "lerp": function () {},
-                    "lerpVectors": function () {},
-                    "equals": function () {},
-                    "fromArray": function () {},
-                    "toArray": function () {},
-                    "fromAttribute": function () {},
-                    "rotateAround": function () {}
-                }
-            }
-        },
-        "displacementmap": {
-            "displacementMap": {
-                "type": {},
-                "value": function () {}
-            },
-            "displacementScale": {
-                "type": {},
-                "value": {}
-            },
-            "displacementBias": {
-                "type": {},
-                "value": {}
-            }
-        },
-        "roughnessmap": {
-            "roughnessMap": {
-                "type": {},
-                "value": function () {}
-            }
-        },
-        "metalnessmap": {
-            "metalnessMap": {
-                "type": {},
-                "value": function () {}
-            }
-        },
-        "fog": {
-            "fogDensity": {
-                "type": {},
-                "value": {}
-            },
-            "fogNear": {
-                "type": {},
-                "value": {}
-            },
-            "fogFar": {
-                "type": {},
-                "value": {}
-            },
-            "fogColor": {
-                "type": {},
-                "value": {
-                    "r": {},
-                    "g": {},
-                    "b": {},
-                    "constructor": function () {},
-                    "set": function () {},
-                    "setScalar": function () {},
-                    "setHex": function () {},
-                    "setRGB": function () {},
-                    "setHSL": function () {},
-                    "setStyle": function () {},
-                    "clone": function () {},
-                    "copy": function () {},
-                    "copyGammaToLinear": function () {},
-                    "copyLinearToGamma": function () {},
-                    "convertGammaToLinear": function () {},
-                    "convertLinearToGamma": function () {},
-                    "getHex": function () {},
-                    "getHexString": function () {},
-                    "getHSL": function () {},
-                    "getStyle": function () {},
-                    "offsetHSL": function () {},
-                    "add": function () {},
-                    "addColors": function () {},
-                    "addScalar": function () {},
-                    "multiply": function () {},
-                    "multiplyScalar": function () {},
-                    "lerp": function () {},
-                    "equals": function () {},
-                    "fromArray": function () {},
-                    "toArray": function () {}
-                }
-            }
-        },
-        "lights": {
-            "ambientLightColor": {
-                "type": {},
-                "value": function () {}
-            },
-            "directionalLights": {
-                "type": {},
-                "value": function () {},
-                "properties": {
-                    "direction": {
-                        "type": {}
-                    },
-                    "color": {
-                        "type": {}
-                    },
-                    "shadow": {
-                        "type": {}
-                    },
-                    "shadowBias": {
-                        "type": {}
-                    },
-                    "shadowRadius": {
-                        "type": {}
-                    },
-                    "shadowMapSize": {
-                        "type": {}
-                    }
-                }
-            },
-            "directionalShadowMap": {
-                "type": {},
-                "value": function () {}
-            },
-            "directionalShadowMatrix": {
-                "type": {},
-                "value": function () {}
-            },
-            "spotLights": {
-                "type": {},
-                "value": function () {},
-                "properties": {
-                    "color": {
-                        "type": {}
-                    },
-                    "position": {
-                        "type": {}
-                    },
-                    "direction": {
-                        "type": {}
-                    },
-                    "distance": {
-                        "type": {}
-                    },
-                    "coneCos": {
-                        "type": {}
-                    },
-                    "penumbraCos": {
-                        "type": {}
-                    },
-                    "decay": {
-                        "type": {}
-                    },
-                    "shadow": {
-                        "type": {}
-                    },
-                    "shadowBias": {
-                        "type": {}
-                    },
-                    "shadowRadius": {
-                        "type": {}
-                    },
-                    "shadowMapSize": {
-                        "type": {}
-                    }
-                }
-            },
-            "spotShadowMap": {
-                "type": {},
-                "value": function () {}
-            },
-            "spotShadowMatrix": {
-                "type": {},
-                "value": function () {}
-            },
-            "pointLights": {
-                "type": {},
-                "value": function () {},
-                "properties": {
-                    "color": {
-                        "type": {}
-                    },
-                    "position": {
-                        "type": {}
-                    },
-                    "decay": {
-                        "type": {}
-                    },
-                    "distance": {
-                        "type": {}
-                    },
-                    "shadow": {
-                        "type": {}
-                    },
-                    "shadowBias": {
-                        "type": {}
-                    },
-                    "shadowRadius": {
-                        "type": {}
-                    },
-                    "shadowMapSize": {
-                        "type": {}
-                    }
-                }
-            },
-            "pointShadowMap": {
-                "type": {},
-                "value": function () {}
-            },
-            "pointShadowMatrix": {
-                "type": {},
-                "value": function () {}
-            },
-            "hemisphereLights": {
-                "type": {},
-                "value": function () {},
-                "properties": {
-                    "direction": {
-                        "type": {}
-                    },
-                    "skyColor": {
-                        "type": {}
-                    },
-                    "groundColor": {
-                        "type": {}
-                    }
-                }
-            }
-        },
-        "points": {
-            "diffuse": {
-                "type": {},
-                "value": {
-                    "r": {},
-                    "g": {},
-                    "b": {},
-                    "constructor": function () {},
-                    "set": function () {},
-                    "setScalar": function () {},
-                    "setHex": function () {},
-                    "setRGB": function () {},
-                    "setHSL": function () {},
-                    "setStyle": function () {},
-                    "clone": function () {},
-                    "copy": function () {},
-                    "copyGammaToLinear": function () {},
-                    "copyLinearToGamma": function () {},
-                    "convertGammaToLinear": function () {},
-                    "convertLinearToGamma": function () {},
-                    "getHex": function () {},
-                    "getHexString": function () {},
-                    "getHSL": function () {},
-                    "getStyle": function () {},
-                    "offsetHSL": function () {},
-                    "add": function () {},
-                    "addColors": function () {},
-                    "addScalar": function () {},
-                    "multiply": function () {},
-                    "multiplyScalar": function () {},
-                    "lerp": function () {},
-                    "equals": function () {},
-                    "fromArray": function () {},
-                    "toArray": function () {}
-                }
-            },
-            "opacity": {
-                "type": {},
-                "value": {}
-            },
-            "size": {
-                "type": {},
-                "value": {}
-            },
-            "scale": {
-                "type": {},
-                "value": {}
-            },
-            "map": {
-                "type": {},
-                "value": function () {}
-            },
-            "offsetRepeat": {
-                "type": {},
-                "value": {
-                    "x": {},
-                    "y": {},
-                    "z": {},
-                    "w": {},
-                    "constructor": function () {},
-                    "set": function () {},
-                    "setScalar": function () {},
-                    "setX": function () {},
-                    "setY": function () {},
-                    "setZ": function () {},
-                    "setW": function () {},
-                    "setComponent": function () {},
-                    "getComponent": function () {},
-                    "clone": function () {},
-                    "copy": function () {},
-                    "add": function () {},
-                    "addScalar": function () {},
-                    "addVectors": function () {},
-                    "addScaledVector": function () {},
-                    "sub": function () {},
-                    "subScalar": function () {},
-                    "subVectors": function () {},
-                    "multiplyScalar": function () {},
-                    "applyMatrix4": function () {},
-                    "divideScalar": function () {},
-                    "setAxisAngleFromQuaternion": function () {},
-                    "setAxisAngleFromRotationMatrix": function () {},
-                    "min": function () {},
-                    "max": function () {},
-                    "clamp": function () {},
-                    "clampScalar": function () {},
-                    "floor": function () {},
-                    "ceil": function () {},
-                    "round": function () {},
-                    "roundToZero": function () {},
-                    "negate": function () {},
-                    "dot": function () {},
-                    "lengthSq": function () {},
-                    "length": function () {},
-                    "lengthManhattan": function () {},
-                    "normalize": function () {},
-                    "setLength": function () {},
-                    "lerp": function () {},
-                    "lerpVectors": function () {},
-                    "equals": function () {},
-                    "fromArray": function () {},
-                    "toArray": function () {},
-                    "fromAttribute": function () {}
-                }
-            }
-        }
-    },
-    "ShaderLib": {
-        "basic": {
-            "uniforms": {
-                "diffuse": {
-                    "type": {},
-                    "value": {
-                        "r": {},
-                        "g": {},
-                        "b": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setHex": function () {},
-                        "setRGB": function () {},
-                        "setHSL": function () {},
-                        "setStyle": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "copyGammaToLinear": function () {},
-                        "copyLinearToGamma": function () {},
-                        "convertGammaToLinear": function () {},
-                        "convertLinearToGamma": function () {},
-                        "getHex": function () {},
-                        "getHexString": function () {},
-                        "getHSL": function () {},
-                        "getStyle": function () {},
-                        "offsetHSL": function () {},
-                        "add": function () {},
-                        "addColors": function () {},
-                        "addScalar": function () {},
-                        "multiply": function () {},
-                        "multiplyScalar": function () {},
-                        "lerp": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {}
-                    }
-                },
-                "opacity": {
-                    "type": {},
-                    "value": {}
-                },
-                "map": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "offsetRepeat": {
-                    "type": {},
-                    "value": {
-                        "x": {},
-                        "y": {},
-                        "z": {},
-                        "w": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setX": function () {},
-                        "setY": function () {},
-                        "setZ": function () {},
-                        "setW": function () {},
-                        "setComponent": function () {},
-                        "getComponent": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "add": function () {},
-                        "addScalar": function () {},
-                        "addVectors": function () {},
-                        "addScaledVector": function () {},
-                        "sub": function () {},
-                        "subScalar": function () {},
-                        "subVectors": function () {},
-                        "multiplyScalar": function () {},
-                        "applyMatrix4": function () {},
-                        "divideScalar": function () {},
-                        "setAxisAngleFromQuaternion": function () {},
-                        "setAxisAngleFromRotationMatrix": function () {},
-                        "min": function () {},
-                        "max": function () {},
-                        "clamp": function () {},
-                        "clampScalar": function () {},
-                        "floor": function () {},
-                        "ceil": function () {},
-                        "round": function () {},
-                        "roundToZero": function () {},
-                        "negate": function () {},
-                        "dot": function () {},
-                        "lengthSq": function () {},
-                        "length": function () {},
-                        "lengthManhattan": function () {},
-                        "normalize": function () {},
-                        "setLength": function () {},
-                        "lerp": function () {},
-                        "lerpVectors": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {},
-                        "fromAttribute": function () {}
-                    }
-                },
-                "specularMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "alphaMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "envMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "flipEnvMap": {
-                    "type": {},
-                    "value": {}
-                },
-                "reflectivity": {
-                    "type": {},
-                    "value": {}
-                },
-                "refractionRatio": {
-                    "type": {},
-                    "value": {}
-                },
-                "aoMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "aoMapIntensity": {
-                    "type": {},
-                    "value": {}
-                },
-                "fogDensity": {
-                    "type": {},
-                    "value": {}
-                },
-                "fogNear": {
-                    "type": {},
-                    "value": {}
-                },
-                "fogFar": {
-                    "type": {},
-                    "value": {}
-                },
-                "fogColor": {
-                    "type": {},
-                    "value": {
-                        "r": {},
-                        "g": {},
-                        "b": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setHex": function () {},
-                        "setRGB": function () {},
-                        "setHSL": function () {},
-                        "setStyle": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "copyGammaToLinear": function () {},
-                        "copyLinearToGamma": function () {},
-                        "convertGammaToLinear": function () {},
-                        "convertLinearToGamma": function () {},
-                        "getHex": function () {},
-                        "getHexString": function () {},
-                        "getHSL": function () {},
-                        "getStyle": function () {},
-                        "offsetHSL": function () {},
-                        "add": function () {},
-                        "addColors": function () {},
-                        "addScalar": function () {},
-                        "multiply": function () {},
-                        "multiplyScalar": function () {},
-                        "lerp": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {}
-                    }
-                }
-            },
-            "vertexShader": {},
-            "fragmentShader": {}
-        },
-        "lambert": {
-            "uniforms": {
-                "diffuse": {
-                    "type": {},
-                    "value": {
-                        "r": {},
-                        "g": {},
-                        "b": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setHex": function () {},
-                        "setRGB": function () {},
-                        "setHSL": function () {},
-                        "setStyle": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "copyGammaToLinear": function () {},
-                        "copyLinearToGamma": function () {},
-                        "convertGammaToLinear": function () {},
-                        "convertLinearToGamma": function () {},
-                        "getHex": function () {},
-                        "getHexString": function () {},
-                        "getHSL": function () {},
-                        "getStyle": function () {},
-                        "offsetHSL": function () {},
-                        "add": function () {},
-                        "addColors": function () {},
-                        "addScalar": function () {},
-                        "multiply": function () {},
-                        "multiplyScalar": function () {},
-                        "lerp": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {}
-                    }
-                },
-                "opacity": {
-                    "type": {},
-                    "value": {}
-                },
-                "map": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "offsetRepeat": {
-                    "type": {},
-                    "value": {
-                        "x": {},
-                        "y": {},
-                        "z": {},
-                        "w": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setX": function () {},
-                        "setY": function () {},
-                        "setZ": function () {},
-                        "setW": function () {},
-                        "setComponent": function () {},
-                        "getComponent": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "add": function () {},
-                        "addScalar": function () {},
-                        "addVectors": function () {},
-                        "addScaledVector": function () {},
-                        "sub": function () {},
-                        "subScalar": function () {},
-                        "subVectors": function () {},
-                        "multiplyScalar": function () {},
-                        "applyMatrix4": function () {},
-                        "divideScalar": function () {},
-                        "setAxisAngleFromQuaternion": function () {},
-                        "setAxisAngleFromRotationMatrix": function () {},
-                        "min": function () {},
-                        "max": function () {},
-                        "clamp": function () {},
-                        "clampScalar": function () {},
-                        "floor": function () {},
-                        "ceil": function () {},
-                        "round": function () {},
-                        "roundToZero": function () {},
-                        "negate": function () {},
-                        "dot": function () {},
-                        "lengthSq": function () {},
-                        "length": function () {},
-                        "lengthManhattan": function () {},
-                        "normalize": function () {},
-                        "setLength": function () {},
-                        "lerp": function () {},
-                        "lerpVectors": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {},
-                        "fromAttribute": function () {}
-                    }
-                },
-                "specularMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "alphaMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "envMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "flipEnvMap": {
-                    "type": {},
-                    "value": {}
-                },
-                "reflectivity": {
-                    "type": {},
-                    "value": {}
-                },
-                "refractionRatio": {
-                    "type": {},
-                    "value": {}
-                },
-                "aoMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "aoMapIntensity": {
-                    "type": {},
-                    "value": {}
-                },
-                "lightMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "lightMapIntensity": {
-                    "type": {},
-                    "value": {}
-                },
-                "emissiveMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "fogDensity": {
-                    "type": {},
-                    "value": {}
-                },
-                "fogNear": {
-                    "type": {},
-                    "value": {}
-                },
-                "fogFar": {
-                    "type": {},
-                    "value": {}
-                },
-                "fogColor": {
-                    "type": {},
-                    "value": {
-                        "r": {},
-                        "g": {},
-                        "b": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setHex": function () {},
-                        "setRGB": function () {},
-                        "setHSL": function () {},
-                        "setStyle": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "copyGammaToLinear": function () {},
-                        "copyLinearToGamma": function () {},
-                        "convertGammaToLinear": function () {},
-                        "convertLinearToGamma": function () {},
-                        "getHex": function () {},
-                        "getHexString": function () {},
-                        "getHSL": function () {},
-                        "getStyle": function () {},
-                        "offsetHSL": function () {},
-                        "add": function () {},
-                        "addColors": function () {},
-                        "addScalar": function () {},
-                        "multiply": function () {},
-                        "multiplyScalar": function () {},
-                        "lerp": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {}
-                    }
-                },
-                "ambientLightColor": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "directionalLights": {
-                    "type": {},
-                    "value": function () {},
-                    "properties": {
-                        "direction": {
-                            "type": {}
-                        },
-                        "color": {
-                            "type": {}
-                        },
-                        "shadow": {
-                            "type": {}
-                        },
-                        "shadowBias": {
-                            "type": {}
-                        },
-                        "shadowRadius": {
-                            "type": {}
-                        },
-                        "shadowMapSize": {
-                            "type": {}
-                        }
-                    }
-                },
-                "directionalShadowMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "directionalShadowMatrix": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "spotLights": {
-                    "type": {},
-                    "value": function () {},
-                    "properties": {
-                        "color": {
-                            "type": {}
-                        },
-                        "position": {
-                            "type": {}
-                        },
-                        "direction": {
-                            "type": {}
-                        },
-                        "distance": {
-                            "type": {}
-                        },
-                        "coneCos": {
-                            "type": {}
-                        },
-                        "penumbraCos": {
-                            "type": {}
-                        },
-                        "decay": {
-                            "type": {}
-                        },
-                        "shadow": {
-                            "type": {}
-                        },
-                        "shadowBias": {
-                            "type": {}
-                        },
-                        "shadowRadius": {
-                            "type": {}
-                        },
-                        "shadowMapSize": {
-                            "type": {}
-                        }
-                    }
-                },
-                "spotShadowMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "spotShadowMatrix": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "pointLights": {
-                    "type": {},
-                    "value": function () {},
-                    "properties": {
-                        "color": {
-                            "type": {}
-                        },
-                        "position": {
-                            "type": {}
-                        },
-                        "decay": {
-                            "type": {}
-                        },
-                        "distance": {
-                            "type": {}
-                        },
-                        "shadow": {
-                            "type": {}
-                        },
-                        "shadowBias": {
-                            "type": {}
-                        },
-                        "shadowRadius": {
-                            "type": {}
-                        },
-                        "shadowMapSize": {
-                            "type": {}
-                        }
-                    }
-                },
-                "pointShadowMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "pointShadowMatrix": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "hemisphereLights": {
-                    "type": {},
-                    "value": function () {},
-                    "properties": {
-                        "direction": {
-                            "type": {}
-                        },
-                        "skyColor": {
-                            "type": {}
-                        },
-                        "groundColor": {
-                            "type": {}
-                        }
-                    }
-                },
-                "emissive": {
-                    "type": {},
-                    "value": {
-                        "r": {},
-                        "g": {},
-                        "b": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setHex": function () {},
-                        "setRGB": function () {},
-                        "setHSL": function () {},
-                        "setStyle": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "copyGammaToLinear": function () {},
-                        "copyLinearToGamma": function () {},
-                        "convertGammaToLinear": function () {},
-                        "convertLinearToGamma": function () {},
-                        "getHex": function () {},
-                        "getHexString": function () {},
-                        "getHSL": function () {},
-                        "getStyle": function () {},
-                        "offsetHSL": function () {},
-                        "add": function () {},
-                        "addColors": function () {},
-                        "addScalar": function () {},
-                        "multiply": function () {},
-                        "multiplyScalar": function () {},
-                        "lerp": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {}
-                    }
-                }
-            },
-            "vertexShader": {},
-            "fragmentShader": {}
-        },
-        "phong": {
-            "uniforms": {
-                "diffuse": {
-                    "type": {},
-                    "value": {
-                        "r": {},
-                        "g": {},
-                        "b": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setHex": function () {},
-                        "setRGB": function () {},
-                        "setHSL": function () {},
-                        "setStyle": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "copyGammaToLinear": function () {},
-                        "copyLinearToGamma": function () {},
-                        "convertGammaToLinear": function () {},
-                        "convertLinearToGamma": function () {},
-                        "getHex": function () {},
-                        "getHexString": function () {},
-                        "getHSL": function () {},
-                        "getStyle": function () {},
-                        "offsetHSL": function () {},
-                        "add": function () {},
-                        "addColors": function () {},
-                        "addScalar": function () {},
-                        "multiply": function () {},
-                        "multiplyScalar": function () {},
-                        "lerp": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {}
-                    }
-                },
-                "opacity": {
-                    "type": {},
-                    "value": {}
-                },
-                "map": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "offsetRepeat": {
-                    "type": {},
-                    "value": {
-                        "x": {},
-                        "y": {},
-                        "z": {},
-                        "w": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setX": function () {},
-                        "setY": function () {},
-                        "setZ": function () {},
-                        "setW": function () {},
-                        "setComponent": function () {},
-                        "getComponent": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "add": function () {},
-                        "addScalar": function () {},
-                        "addVectors": function () {},
-                        "addScaledVector": function () {},
-                        "sub": function () {},
-                        "subScalar": function () {},
-                        "subVectors": function () {},
-                        "multiplyScalar": function () {},
-                        "applyMatrix4": function () {},
-                        "divideScalar": function () {},
-                        "setAxisAngleFromQuaternion": function () {},
-                        "setAxisAngleFromRotationMatrix": function () {},
-                        "min": function () {},
-                        "max": function () {},
-                        "clamp": function () {},
-                        "clampScalar": function () {},
-                        "floor": function () {},
-                        "ceil": function () {},
-                        "round": function () {},
-                        "roundToZero": function () {},
-                        "negate": function () {},
-                        "dot": function () {},
-                        "lengthSq": function () {},
-                        "length": function () {},
-                        "lengthManhattan": function () {},
-                        "normalize": function () {},
-                        "setLength": function () {},
-                        "lerp": function () {},
-                        "lerpVectors": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {},
-                        "fromAttribute": function () {}
-                    }
-                },
-                "specularMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "alphaMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "envMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "flipEnvMap": {
-                    "type": {},
-                    "value": {}
-                },
-                "reflectivity": {
-                    "type": {},
-                    "value": {}
-                },
-                "refractionRatio": {
-                    "type": {},
-                    "value": {}
-                },
-                "aoMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "aoMapIntensity": {
-                    "type": {},
-                    "value": {}
-                },
-                "lightMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "lightMapIntensity": {
-                    "type": {},
-                    "value": {}
-                },
-                "emissiveMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "bumpMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "bumpScale": {
-                    "type": {},
-                    "value": {}
-                },
-                "normalMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "normalScale": {
-                    "type": {},
-                    "value": {
-                        "x": {},
-                        "y": {},
-                        "constructor": function () {},
-                        "width": {},
-                        "height": {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setX": function () {},
-                        "setY": function () {},
-                        "setComponent": function () {},
-                        "getComponent": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "add": function () {},
-                        "addScalar": function () {},
-                        "addVectors": function () {},
-                        "addScaledVector": function () {},
-                        "sub": function () {},
-                        "subScalar": function () {},
-                        "subVectors": function () {},
-                        "multiply": function () {},
-                        "multiplyScalar": function () {},
-                        "divide": function () {},
-                        "divideScalar": function () {},
-                        "min": function () {},
-                        "max": function () {},
-                        "clamp": function () {},
-                        "clampScalar": function () {},
-                        "clampLength": function () {},
-                        "floor": function () {},
-                        "ceil": function () {},
-                        "round": function () {},
-                        "roundToZero": function () {},
-                        "negate": function () {},
-                        "dot": function () {},
-                        "lengthSq": function () {},
-                        "length": function () {},
-                        "lengthManhattan": function () {},
-                        "normalize": function () {},
-                        "angle": function () {},
-                        "distanceTo": function () {},
-                        "distanceToSquared": function () {},
-                        "setLength": function () {},
-                        "lerp": function () {},
-                        "lerpVectors": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {},
-                        "fromAttribute": function () {},
-                        "rotateAround": function () {}
-                    }
-                },
-                "displacementMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "displacementScale": {
-                    "type": {},
-                    "value": {}
-                },
-                "displacementBias": {
-                    "type": {},
-                    "value": {}
-                },
-                "fogDensity": {
-                    "type": {},
-                    "value": {}
-                },
-                "fogNear": {
-                    "type": {},
-                    "value": {}
-                },
-                "fogFar": {
-                    "type": {},
-                    "value": {}
-                },
-                "fogColor": {
-                    "type": {},
-                    "value": {
-                        "r": {},
-                        "g": {},
-                        "b": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setHex": function () {},
-                        "setRGB": function () {},
-                        "setHSL": function () {},
-                        "setStyle": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "copyGammaToLinear": function () {},
-                        "copyLinearToGamma": function () {},
-                        "convertGammaToLinear": function () {},
-                        "convertLinearToGamma": function () {},
-                        "getHex": function () {},
-                        "getHexString": function () {},
-                        "getHSL": function () {},
-                        "getStyle": function () {},
-                        "offsetHSL": function () {},
-                        "add": function () {},
-                        "addColors": function () {},
-                        "addScalar": function () {},
-                        "multiply": function () {},
-                        "multiplyScalar": function () {},
-                        "lerp": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {}
-                    }
-                },
-                "ambientLightColor": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "directionalLights": {
-                    "type": {},
-                    "value": function () {},
-                    "properties": {
-                        "direction": {
-                            "type": {}
-                        },
-                        "color": {
-                            "type": {}
-                        },
-                        "shadow": {
-                            "type": {}
-                        },
-                        "shadowBias": {
-                            "type": {}
-                        },
-                        "shadowRadius": {
-                            "type": {}
-                        },
-                        "shadowMapSize": {
-                            "type": {}
-                        }
-                    }
-                },
-                "directionalShadowMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "directionalShadowMatrix": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "spotLights": {
-                    "type": {},
-                    "value": function () {},
-                    "properties": {
-                        "color": {
-                            "type": {}
-                        },
-                        "position": {
-                            "type": {}
-                        },
-                        "direction": {
-                            "type": {}
-                        },
-                        "distance": {
-                            "type": {}
-                        },
-                        "coneCos": {
-                            "type": {}
-                        },
-                        "penumbraCos": {
-                            "type": {}
-                        },
-                        "decay": {
-                            "type": {}
-                        },
-                        "shadow": {
-                            "type": {}
-                        },
-                        "shadowBias": {
-                            "type": {}
-                        },
-                        "shadowRadius": {
-                            "type": {}
-                        },
-                        "shadowMapSize": {
-                            "type": {}
-                        }
-                    }
-                },
-                "spotShadowMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "spotShadowMatrix": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "pointLights": {
-                    "type": {},
-                    "value": function () {},
-                    "properties": {
-                        "color": {
-                            "type": {}
-                        },
-                        "position": {
-                            "type": {}
-                        },
-                        "decay": {
-                            "type": {}
-                        },
-                        "distance": {
-                            "type": {}
-                        },
-                        "shadow": {
-                            "type": {}
-                        },
-                        "shadowBias": {
-                            "type": {}
-                        },
-                        "shadowRadius": {
-                            "type": {}
-                        },
-                        "shadowMapSize": {
-                            "type": {}
-                        }
-                    }
-                },
-                "pointShadowMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "pointShadowMatrix": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "hemisphereLights": {
-                    "type": {},
-                    "value": function () {},
-                    "properties": {
-                        "direction": {
-                            "type": {}
-                        },
-                        "skyColor": {
-                            "type": {}
-                        },
-                        "groundColor": {
-                            "type": {}
-                        }
-                    }
-                },
-                "emissive": {
-                    "type": {},
-                    "value": {
-                        "r": {},
-                        "g": {},
-                        "b": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setHex": function () {},
-                        "setRGB": function () {},
-                        "setHSL": function () {},
-                        "setStyle": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "copyGammaToLinear": function () {},
-                        "copyLinearToGamma": function () {},
-                        "convertGammaToLinear": function () {},
-                        "convertLinearToGamma": function () {},
-                        "getHex": function () {},
-                        "getHexString": function () {},
-                        "getHSL": function () {},
-                        "getStyle": function () {},
-                        "offsetHSL": function () {},
-                        "add": function () {},
-                        "addColors": function () {},
-                        "addScalar": function () {},
-                        "multiply": function () {},
-                        "multiplyScalar": function () {},
-                        "lerp": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {}
-                    }
-                },
-                "specular": {
-                    "type": {},
-                    "value": {
-                        "r": {},
-                        "g": {},
-                        "b": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setHex": function () {},
-                        "setRGB": function () {},
-                        "setHSL": function () {},
-                        "setStyle": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "copyGammaToLinear": function () {},
-                        "copyLinearToGamma": function () {},
-                        "convertGammaToLinear": function () {},
-                        "convertLinearToGamma": function () {},
-                        "getHex": function () {},
-                        "getHexString": function () {},
-                        "getHSL": function () {},
-                        "getStyle": function () {},
-                        "offsetHSL": function () {},
-                        "add": function () {},
-                        "addColors": function () {},
-                        "addScalar": function () {},
-                        "multiply": function () {},
-                        "multiplyScalar": function () {},
-                        "lerp": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {}
-                    }
-                },
-                "shininess": {
-                    "type": {},
-                    "value": {}
-                }
-            },
-            "vertexShader": {},
-            "fragmentShader": {}
-        },
-        "standard": {
-            "uniforms": {
-                "diffuse": {
-                    "type": {},
-                    "value": {
-                        "r": {},
-                        "g": {},
-                        "b": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setHex": function () {},
-                        "setRGB": function () {},
-                        "setHSL": function () {},
-                        "setStyle": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "copyGammaToLinear": function () {},
-                        "copyLinearToGamma": function () {},
-                        "convertGammaToLinear": function () {},
-                        "convertLinearToGamma": function () {},
-                        "getHex": function () {},
-                        "getHexString": function () {},
-                        "getHSL": function () {},
-                        "getStyle": function () {},
-                        "offsetHSL": function () {},
-                        "add": function () {},
-                        "addColors": function () {},
-                        "addScalar": function () {},
-                        "multiply": function () {},
-                        "multiplyScalar": function () {},
-                        "lerp": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {}
-                    }
-                },
-                "opacity": {
-                    "type": {},
-                    "value": {}
-                },
-                "map": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "offsetRepeat": {
-                    "type": {},
-                    "value": {
-                        "x": {},
-                        "y": {},
-                        "z": {},
-                        "w": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setX": function () {},
-                        "setY": function () {},
-                        "setZ": function () {},
-                        "setW": function () {},
-                        "setComponent": function () {},
-                        "getComponent": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "add": function () {},
-                        "addScalar": function () {},
-                        "addVectors": function () {},
-                        "addScaledVector": function () {},
-                        "sub": function () {},
-                        "subScalar": function () {},
-                        "subVectors": function () {},
-                        "multiplyScalar": function () {},
-                        "applyMatrix4": function () {},
-                        "divideScalar": function () {},
-                        "setAxisAngleFromQuaternion": function () {},
-                        "setAxisAngleFromRotationMatrix": function () {},
-                        "min": function () {},
-                        "max": function () {},
-                        "clamp": function () {},
-                        "clampScalar": function () {},
-                        "floor": function () {},
-                        "ceil": function () {},
-                        "round": function () {},
-                        "roundToZero": function () {},
-                        "negate": function () {},
-                        "dot": function () {},
-                        "lengthSq": function () {},
-                        "length": function () {},
-                        "lengthManhattan": function () {},
-                        "normalize": function () {},
-                        "setLength": function () {},
-                        "lerp": function () {},
-                        "lerpVectors": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {},
-                        "fromAttribute": function () {}
-                    }
-                },
-                "specularMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "alphaMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "envMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "flipEnvMap": {
-                    "type": {},
-                    "value": {}
-                },
-                "reflectivity": {
-                    "type": {},
-                    "value": {}
-                },
-                "refractionRatio": {
-                    "type": {},
-                    "value": {}
-                },
-                "aoMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "aoMapIntensity": {
-                    "type": {},
-                    "value": {}
-                },
-                "lightMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "lightMapIntensity": {
-                    "type": {},
-                    "value": {}
-                },
-                "emissiveMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "bumpMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "bumpScale": {
-                    "type": {},
-                    "value": {}
-                },
-                "normalMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "normalScale": {
-                    "type": {},
-                    "value": {
-                        "x": {},
-                        "y": {},
-                        "constructor": function () {},
-                        "width": {},
-                        "height": {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setX": function () {},
-                        "setY": function () {},
-                        "setComponent": function () {},
-                        "getComponent": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "add": function () {},
-                        "addScalar": function () {},
-                        "addVectors": function () {},
-                        "addScaledVector": function () {},
-                        "sub": function () {},
-                        "subScalar": function () {},
-                        "subVectors": function () {},
-                        "multiply": function () {},
-                        "multiplyScalar": function () {},
-                        "divide": function () {},
-                        "divideScalar": function () {},
-                        "min": function () {},
-                        "max": function () {},
-                        "clamp": function () {},
-                        "clampScalar": function () {},
-                        "clampLength": function () {},
-                        "floor": function () {},
-                        "ceil": function () {},
-                        "round": function () {},
-                        "roundToZero": function () {},
-                        "negate": function () {},
-                        "dot": function () {},
-                        "lengthSq": function () {},
-                        "length": function () {},
-                        "lengthManhattan": function () {},
-                        "normalize": function () {},
-                        "angle": function () {},
-                        "distanceTo": function () {},
-                        "distanceToSquared": function () {},
-                        "setLength": function () {},
-                        "lerp": function () {},
-                        "lerpVectors": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {},
-                        "fromAttribute": function () {},
-                        "rotateAround": function () {}
-                    }
-                },
-                "displacementMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "displacementScale": {
-                    "type": {},
-                    "value": {}
-                },
-                "displacementBias": {
-                    "type": {},
-                    "value": {}
-                },
-                "roughnessMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "metalnessMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "fogDensity": {
-                    "type": {},
-                    "value": {}
-                },
-                "fogNear": {
-                    "type": {},
-                    "value": {}
-                },
-                "fogFar": {
-                    "type": {},
-                    "value": {}
-                },
-                "fogColor": {
-                    "type": {},
-                    "value": {
-                        "r": {},
-                        "g": {},
-                        "b": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setHex": function () {},
-                        "setRGB": function () {},
-                        "setHSL": function () {},
-                        "setStyle": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "copyGammaToLinear": function () {},
-                        "copyLinearToGamma": function () {},
-                        "convertGammaToLinear": function () {},
-                        "convertLinearToGamma": function () {},
-                        "getHex": function () {},
-                        "getHexString": function () {},
-                        "getHSL": function () {},
-                        "getStyle": function () {},
-                        "offsetHSL": function () {},
-                        "add": function () {},
-                        "addColors": function () {},
-                        "addScalar": function () {},
-                        "multiply": function () {},
-                        "multiplyScalar": function () {},
-                        "lerp": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {}
-                    }
-                },
-                "ambientLightColor": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "directionalLights": {
-                    "type": {},
-                    "value": function () {},
-                    "properties": {
-                        "direction": {
-                            "type": {}
-                        },
-                        "color": {
-                            "type": {}
-                        },
-                        "shadow": {
-                            "type": {}
-                        },
-                        "shadowBias": {
-                            "type": {}
-                        },
-                        "shadowRadius": {
-                            "type": {}
-                        },
-                        "shadowMapSize": {
-                            "type": {}
-                        }
-                    }
-                },
-                "directionalShadowMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "directionalShadowMatrix": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "spotLights": {
-                    "type": {},
-                    "value": function () {},
-                    "properties": {
-                        "color": {
-                            "type": {}
-                        },
-                        "position": {
-                            "type": {}
-                        },
-                        "direction": {
-                            "type": {}
-                        },
-                        "distance": {
-                            "type": {}
-                        },
-                        "coneCos": {
-                            "type": {}
-                        },
-                        "penumbraCos": {
-                            "type": {}
-                        },
-                        "decay": {
-                            "type": {}
-                        },
-                        "shadow": {
-                            "type": {}
-                        },
-                        "shadowBias": {
-                            "type": {}
-                        },
-                        "shadowRadius": {
-                            "type": {}
-                        },
-                        "shadowMapSize": {
-                            "type": {}
-                        }
-                    }
-                },
-                "spotShadowMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "spotShadowMatrix": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "pointLights": {
-                    "type": {},
-                    "value": function () {},
-                    "properties": {
-                        "color": {
-                            "type": {}
-                        },
-                        "position": {
-                            "type": {}
-                        },
-                        "decay": {
-                            "type": {}
-                        },
-                        "distance": {
-                            "type": {}
-                        },
-                        "shadow": {
-                            "type": {}
-                        },
-                        "shadowBias": {
-                            "type": {}
-                        },
-                        "shadowRadius": {
-                            "type": {}
-                        },
-                        "shadowMapSize": {
-                            "type": {}
-                        }
-                    }
-                },
-                "pointShadowMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "pointShadowMatrix": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "hemisphereLights": {
-                    "type": {},
-                    "value": function () {},
-                    "properties": {
-                        "direction": {
-                            "type": {}
-                        },
-                        "skyColor": {
-                            "type": {}
-                        },
-                        "groundColor": {
-                            "type": {}
-                        }
-                    }
-                },
-                "emissive": {
-                    "type": {},
-                    "value": {
-                        "r": {},
-                        "g": {},
-                        "b": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setHex": function () {},
-                        "setRGB": function () {},
-                        "setHSL": function () {},
-                        "setStyle": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "copyGammaToLinear": function () {},
-                        "copyLinearToGamma": function () {},
-                        "convertGammaToLinear": function () {},
-                        "convertLinearToGamma": function () {},
-                        "getHex": function () {},
-                        "getHexString": function () {},
-                        "getHSL": function () {},
-                        "getStyle": function () {},
-                        "offsetHSL": function () {},
-                        "add": function () {},
-                        "addColors": function () {},
-                        "addScalar": function () {},
-                        "multiply": function () {},
-                        "multiplyScalar": function () {},
-                        "lerp": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {}
-                    }
-                },
-                "roughness": {
-                    "type": {},
-                    "value": {}
-                },
-                "metalness": {
-                    "type": {},
-                    "value": {}
-                },
-                "envMapIntensity": {
-                    "type": {},
-                    "value": {}
-                }
-            },
-            "vertexShader": {},
-            "fragmentShader": {}
-        },
-        "points": {
-            "uniforms": {
-                "diffuse": {
-                    "type": {},
-                    "value": {
-                        "r": {},
-                        "g": {},
-                        "b": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setHex": function () {},
-                        "setRGB": function () {},
-                        "setHSL": function () {},
-                        "setStyle": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "copyGammaToLinear": function () {},
-                        "copyLinearToGamma": function () {},
-                        "convertGammaToLinear": function () {},
-                        "convertLinearToGamma": function () {},
-                        "getHex": function () {},
-                        "getHexString": function () {},
-                        "getHSL": function () {},
-                        "getStyle": function () {},
-                        "offsetHSL": function () {},
-                        "add": function () {},
-                        "addColors": function () {},
-                        "addScalar": function () {},
-                        "multiply": function () {},
-                        "multiplyScalar": function () {},
-                        "lerp": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {}
-                    }
-                },
-                "opacity": {
-                    "type": {},
-                    "value": {}
-                },
-                "size": {
-                    "type": {},
-                    "value": {}
-                },
-                "scale": {
-                    "type": {},
-                    "value": {}
-                },
-                "map": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "offsetRepeat": {
-                    "type": {},
-                    "value": {
-                        "x": {},
-                        "y": {},
-                        "z": {},
-                        "w": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setX": function () {},
-                        "setY": function () {},
-                        "setZ": function () {},
-                        "setW": function () {},
-                        "setComponent": function () {},
-                        "getComponent": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "add": function () {},
-                        "addScalar": function () {},
-                        "addVectors": function () {},
-                        "addScaledVector": function () {},
-                        "sub": function () {},
-                        "subScalar": function () {},
-                        "subVectors": function () {},
-                        "multiplyScalar": function () {},
-                        "applyMatrix4": function () {},
-                        "divideScalar": function () {},
-                        "setAxisAngleFromQuaternion": function () {},
-                        "setAxisAngleFromRotationMatrix": function () {},
-                        "min": function () {},
-                        "max": function () {},
-                        "clamp": function () {},
-                        "clampScalar": function () {},
-                        "floor": function () {},
-                        "ceil": function () {},
-                        "round": function () {},
-                        "roundToZero": function () {},
-                        "negate": function () {},
-                        "dot": function () {},
-                        "lengthSq": function () {},
-                        "length": function () {},
-                        "lengthManhattan": function () {},
-                        "normalize": function () {},
-                        "setLength": function () {},
-                        "lerp": function () {},
-                        "lerpVectors": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {},
-                        "fromAttribute": function () {}
-                    }
-                },
-                "fogDensity": {
-                    "type": {},
-                    "value": {}
-                },
-                "fogNear": {
-                    "type": {},
-                    "value": {}
-                },
-                "fogFar": {
-                    "type": {},
-                    "value": {}
-                },
-                "fogColor": {
-                    "type": {},
-                    "value": {
-                        "r": {},
-                        "g": {},
-                        "b": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setHex": function () {},
-                        "setRGB": function () {},
-                        "setHSL": function () {},
-                        "setStyle": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "copyGammaToLinear": function () {},
-                        "copyLinearToGamma": function () {},
-                        "convertGammaToLinear": function () {},
-                        "convertLinearToGamma": function () {},
-                        "getHex": function () {},
-                        "getHexString": function () {},
-                        "getHSL": function () {},
-                        "getStyle": function () {},
-                        "offsetHSL": function () {},
-                        "add": function () {},
-                        "addColors": function () {},
-                        "addScalar": function () {},
-                        "multiply": function () {},
-                        "multiplyScalar": function () {},
-                        "lerp": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {}
-                    }
-                }
-            },
-            "vertexShader": {},
-            "fragmentShader": {}
-        },
-        "dashed": {
-            "uniforms": {
-                "diffuse": {
-                    "type": {},
-                    "value": {
-                        "r": {},
-                        "g": {},
-                        "b": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setHex": function () {},
-                        "setRGB": function () {},
-                        "setHSL": function () {},
-                        "setStyle": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "copyGammaToLinear": function () {},
-                        "copyLinearToGamma": function () {},
-                        "convertGammaToLinear": function () {},
-                        "convertLinearToGamma": function () {},
-                        "getHex": function () {},
-                        "getHexString": function () {},
-                        "getHSL": function () {},
-                        "getStyle": function () {},
-                        "offsetHSL": function () {},
-                        "add": function () {},
-                        "addColors": function () {},
-                        "addScalar": function () {},
-                        "multiply": function () {},
-                        "multiplyScalar": function () {},
-                        "lerp": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {}
-                    }
-                },
-                "opacity": {
-                    "type": {},
-                    "value": {}
-                },
-                "map": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "offsetRepeat": {
-                    "type": {},
-                    "value": {
-                        "x": {},
-                        "y": {},
-                        "z": {},
-                        "w": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setX": function () {},
-                        "setY": function () {},
-                        "setZ": function () {},
-                        "setW": function () {},
-                        "setComponent": function () {},
-                        "getComponent": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "add": function () {},
-                        "addScalar": function () {},
-                        "addVectors": function () {},
-                        "addScaledVector": function () {},
-                        "sub": function () {},
-                        "subScalar": function () {},
-                        "subVectors": function () {},
-                        "multiplyScalar": function () {},
-                        "applyMatrix4": function () {},
-                        "divideScalar": function () {},
-                        "setAxisAngleFromQuaternion": function () {},
-                        "setAxisAngleFromRotationMatrix": function () {},
-                        "min": function () {},
-                        "max": function () {},
-                        "clamp": function () {},
-                        "clampScalar": function () {},
-                        "floor": function () {},
-                        "ceil": function () {},
-                        "round": function () {},
-                        "roundToZero": function () {},
-                        "negate": function () {},
-                        "dot": function () {},
-                        "lengthSq": function () {},
-                        "length": function () {},
-                        "lengthManhattan": function () {},
-                        "normalize": function () {},
-                        "setLength": function () {},
-                        "lerp": function () {},
-                        "lerpVectors": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {},
-                        "fromAttribute": function () {}
-                    }
-                },
-                "specularMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "alphaMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "envMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "flipEnvMap": {
-                    "type": {},
-                    "value": {}
-                },
-                "reflectivity": {
-                    "type": {},
-                    "value": {}
-                },
-                "refractionRatio": {
-                    "type": {},
-                    "value": {}
-                },
-                "fogDensity": {
-                    "type": {},
-                    "value": {}
-                },
-                "fogNear": {
-                    "type": {},
-                    "value": {}
-                },
-                "fogFar": {
-                    "type": {},
-                    "value": {}
-                },
-                "fogColor": {
-                    "type": {},
-                    "value": {
-                        "r": {},
-                        "g": {},
-                        "b": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setHex": function () {},
-                        "setRGB": function () {},
-                        "setHSL": function () {},
-                        "setStyle": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "copyGammaToLinear": function () {},
-                        "copyLinearToGamma": function () {},
-                        "convertGammaToLinear": function () {},
-                        "convertLinearToGamma": function () {},
-                        "getHex": function () {},
-                        "getHexString": function () {},
-                        "getHSL": function () {},
-                        "getStyle": function () {},
-                        "offsetHSL": function () {},
-                        "add": function () {},
-                        "addColors": function () {},
-                        "addScalar": function () {},
-                        "multiply": function () {},
-                        "multiplyScalar": function () {},
-                        "lerp": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {}
-                    }
-                },
-                "scale": {
-                    "type": {},
-                    "value": {}
-                },
-                "dashSize": {
-                    "type": {},
-                    "value": {}
-                },
-                "totalSize": {
-                    "type": {},
-                    "value": {}
-                }
-            },
-            "vertexShader": {},
-            "fragmentShader": {}
-        },
-        "depth": {
-            "uniforms": {
-                "diffuse": {
-                    "type": {},
-                    "value": {
-                        "r": {},
-                        "g": {},
-                        "b": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setHex": function () {},
-                        "setRGB": function () {},
-                        "setHSL": function () {},
-                        "setStyle": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "copyGammaToLinear": function () {},
-                        "copyLinearToGamma": function () {},
-                        "convertGammaToLinear": function () {},
-                        "convertLinearToGamma": function () {},
-                        "getHex": function () {},
-                        "getHexString": function () {},
-                        "getHSL": function () {},
-                        "getStyle": function () {},
-                        "offsetHSL": function () {},
-                        "add": function () {},
-                        "addColors": function () {},
-                        "addScalar": function () {},
-                        "multiply": function () {},
-                        "multiplyScalar": function () {},
-                        "lerp": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {}
-                    }
-                },
-                "opacity": {
-                    "type": {},
-                    "value": {}
-                },
-                "map": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "offsetRepeat": {
-                    "type": {},
-                    "value": {
-                        "x": {},
-                        "y": {},
-                        "z": {},
-                        "w": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setX": function () {},
-                        "setY": function () {},
-                        "setZ": function () {},
-                        "setW": function () {},
-                        "setComponent": function () {},
-                        "getComponent": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "add": function () {},
-                        "addScalar": function () {},
-                        "addVectors": function () {},
-                        "addScaledVector": function () {},
-                        "sub": function () {},
-                        "subScalar": function () {},
-                        "subVectors": function () {},
-                        "multiplyScalar": function () {},
-                        "applyMatrix4": function () {},
-                        "divideScalar": function () {},
-                        "setAxisAngleFromQuaternion": function () {},
-                        "setAxisAngleFromRotationMatrix": function () {},
-                        "min": function () {},
-                        "max": function () {},
-                        "clamp": function () {},
-                        "clampScalar": function () {},
-                        "floor": function () {},
-                        "ceil": function () {},
-                        "round": function () {},
-                        "roundToZero": function () {},
-                        "negate": function () {},
-                        "dot": function () {},
-                        "lengthSq": function () {},
-                        "length": function () {},
-                        "lengthManhattan": function () {},
-                        "normalize": function () {},
-                        "setLength": function () {},
-                        "lerp": function () {},
-                        "lerpVectors": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {},
-                        "fromAttribute": function () {}
-                    }
-                },
-                "specularMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "alphaMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "envMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "flipEnvMap": {
-                    "type": {},
-                    "value": {}
-                },
-                "reflectivity": {
-                    "type": {},
-                    "value": {}
-                },
-                "refractionRatio": {
-                    "type": {},
-                    "value": {}
-                },
-                "displacementMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "displacementScale": {
-                    "type": {},
-                    "value": {}
-                },
-                "displacementBias": {
-                    "type": {},
-                    "value": {}
-                }
-            },
-            "vertexShader": {},
-            "fragmentShader": {}
-        },
-        "normal": {
-            "uniforms": {
-                "opacity": {
-                    "type": {},
-                    "value": {}
-                }
-            },
-            "vertexShader": {},
-            "fragmentShader": {}
-        },
-        "cube": {
-            "uniforms": {
-                "tCube": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "tFlip": {
-                    "type": {},
-                    "value": {}
-                }
-            },
-            "vertexShader": {},
-            "fragmentShader": {}
-        },
-        "equirect": {
-            "uniforms": {
-                "tEquirect": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "tFlip": {
-                    "type": {},
-                    "value": {}
-                }
-            },
-            "vertexShader": {},
-            "fragmentShader": {}
-        },
-        "distanceRGBA": {
-            "uniforms": {
-                "lightPos": {
-                    "type": {},
-                    "value": {
-                        "x": {},
-                        "y": {},
-                        "z": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setX": function () {},
-                        "setY": function () {},
-                        "setZ": function () {},
-                        "setComponent": function () {},
-                        "getComponent": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "add": function () {},
-                        "addScalar": function () {},
-                        "addVectors": function () {},
-                        "addScaledVector": function () {},
-                        "sub": function () {},
-                        "subScalar": function () {},
-                        "subVectors": function () {},
-                        "multiply": function () {},
-                        "multiplyScalar": function () {},
-                        "multiplyVectors": function () {},
-                        "applyEuler": function () {},
-                        "applyAxisAngle": function () {},
-                        "applyMatrix3": function () {},
-                        "applyMatrix4": function () {},
-                        "applyProjection": function () {},
-                        "applyQuaternion": function () {},
-                        "project": function () {},
-                        "unproject": function () {},
-                        "transformDirection": function () {},
-                        "divide": function () {},
-                        "divideScalar": function () {},
-                        "min": function () {},
-                        "max": function () {},
-                        "clamp": function () {},
-                        "clampScalar": function () {},
-                        "clampLength": function () {},
-                        "floor": function () {},
-                        "ceil": function () {},
-                        "round": function () {},
-                        "roundToZero": function () {},
-                        "negate": function () {},
-                        "dot": function () {},
-                        "lengthSq": function () {},
-                        "length": function () {},
-                        "lengthManhattan": function () {},
-                        "normalize": function () {},
-                        "setLength": function () {},
-                        "lerp": function () {},
-                        "lerpVectors": function () {},
-                        "cross": function () {},
-                        "crossVectors": function () {},
-                        "projectOnVector": function () {},
-                        "projectOnPlane": function () {},
-                        "reflect": function () {},
-                        "angleTo": function () {},
-                        "distanceTo": function () {},
-                        "distanceToSquared": function () {},
-                        "setFromSpherical": function () {},
-                        "setFromMatrixPosition": function () {},
-                        "setFromMatrixScale": function () {},
-                        "setFromMatrixColumn": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {},
-                        "fromAttribute": function () {}
-                    }
-                }
-            },
-            "vertexShader": {},
-            "fragmentShader": {}
-        },
-        "physical": {
-            "uniforms": {
-                "diffuse": {
-                    "type": {},
-                    "value": {
-                        "r": {},
-                        "g": {},
-                        "b": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setHex": function () {},
-                        "setRGB": function () {},
-                        "setHSL": function () {},
-                        "setStyle": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "copyGammaToLinear": function () {},
-                        "copyLinearToGamma": function () {},
-                        "convertGammaToLinear": function () {},
-                        "convertLinearToGamma": function () {},
-                        "getHex": function () {},
-                        "getHexString": function () {},
-                        "getHSL": function () {},
-                        "getStyle": function () {},
-                        "offsetHSL": function () {},
-                        "add": function () {},
-                        "addColors": function () {},
-                        "addScalar": function () {},
-                        "multiply": function () {},
-                        "multiplyScalar": function () {},
-                        "lerp": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {}
-                    }
-                },
-                "opacity": {
-                    "type": {},
-                    "value": {}
-                },
-                "map": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "offsetRepeat": {
-                    "type": {},
-                    "value": {
-                        "x": {},
-                        "y": {},
-                        "z": {},
-                        "w": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setX": function () {},
-                        "setY": function () {},
-                        "setZ": function () {},
-                        "setW": function () {},
-                        "setComponent": function () {},
-                        "getComponent": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "add": function () {},
-                        "addScalar": function () {},
-                        "addVectors": function () {},
-                        "addScaledVector": function () {},
-                        "sub": function () {},
-                        "subScalar": function () {},
-                        "subVectors": function () {},
-                        "multiplyScalar": function () {},
-                        "applyMatrix4": function () {},
-                        "divideScalar": function () {},
-                        "setAxisAngleFromQuaternion": function () {},
-                        "setAxisAngleFromRotationMatrix": function () {},
-                        "min": function () {},
-                        "max": function () {},
-                        "clamp": function () {},
-                        "clampScalar": function () {},
-                        "floor": function () {},
-                        "ceil": function () {},
-                        "round": function () {},
-                        "roundToZero": function () {},
-                        "negate": function () {},
-                        "dot": function () {},
-                        "lengthSq": function () {},
-                        "length": function () {},
-                        "lengthManhattan": function () {},
-                        "normalize": function () {},
-                        "setLength": function () {},
-                        "lerp": function () {},
-                        "lerpVectors": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {},
-                        "fromAttribute": function () {}
-                    }
-                },
-                "specularMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "alphaMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "envMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "flipEnvMap": {
-                    "type": {},
-                    "value": {}
-                },
-                "reflectivity": {
-                    "type": {},
-                    "value": {}
-                },
-                "refractionRatio": {
-                    "type": {},
-                    "value": {}
-                },
-                "aoMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "aoMapIntensity": {
-                    "type": {},
-                    "value": {}
-                },
-                "lightMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "lightMapIntensity": {
-                    "type": {},
-                    "value": {}
-                },
-                "emissiveMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "bumpMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "bumpScale": {
-                    "type": {},
-                    "value": {}
-                },
-                "normalMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "normalScale": {
-                    "type": {},
-                    "value": {
-                        "x": {},
-                        "y": {},
-                        "constructor": function () {},
-                        "width": {},
-                        "height": {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setX": function () {},
-                        "setY": function () {},
-                        "setComponent": function () {},
-                        "getComponent": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "add": function () {},
-                        "addScalar": function () {},
-                        "addVectors": function () {},
-                        "addScaledVector": function () {},
-                        "sub": function () {},
-                        "subScalar": function () {},
-                        "subVectors": function () {},
-                        "multiply": function () {},
-                        "multiplyScalar": function () {},
-                        "divide": function () {},
-                        "divideScalar": function () {},
-                        "min": function () {},
-                        "max": function () {},
-                        "clamp": function () {},
-                        "clampScalar": function () {},
-                        "clampLength": function () {},
-                        "floor": function () {},
-                        "ceil": function () {},
-                        "round": function () {},
-                        "roundToZero": function () {},
-                        "negate": function () {},
-                        "dot": function () {},
-                        "lengthSq": function () {},
-                        "length": function () {},
-                        "lengthManhattan": function () {},
-                        "normalize": function () {},
-                        "angle": function () {},
-                        "distanceTo": function () {},
-                        "distanceToSquared": function () {},
-                        "setLength": function () {},
-                        "lerp": function () {},
-                        "lerpVectors": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {},
-                        "fromAttribute": function () {},
-                        "rotateAround": function () {}
-                    }
-                },
-                "displacementMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "displacementScale": {
-                    "type": {},
-                    "value": {}
-                },
-                "displacementBias": {
-                    "type": {},
-                    "value": {}
-                },
-                "roughnessMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "metalnessMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "fogDensity": {
-                    "type": {},
-                    "value": {}
-                },
-                "fogNear": {
-                    "type": {},
-                    "value": {}
-                },
-                "fogFar": {
-                    "type": {},
-                    "value": {}
-                },
-                "fogColor": {
-                    "type": {},
-                    "value": {
-                        "r": {},
-                        "g": {},
-                        "b": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setHex": function () {},
-                        "setRGB": function () {},
-                        "setHSL": function () {},
-                        "setStyle": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "copyGammaToLinear": function () {},
-                        "copyLinearToGamma": function () {},
-                        "convertGammaToLinear": function () {},
-                        "convertLinearToGamma": function () {},
-                        "getHex": function () {},
-                        "getHexString": function () {},
-                        "getHSL": function () {},
-                        "getStyle": function () {},
-                        "offsetHSL": function () {},
-                        "add": function () {},
-                        "addColors": function () {},
-                        "addScalar": function () {},
-                        "multiply": function () {},
-                        "multiplyScalar": function () {},
-                        "lerp": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {}
-                    }
-                },
-                "ambientLightColor": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "directionalLights": {
-                    "type": {},
-                    "value": function () {},
-                    "properties": {
-                        "direction": {
-                            "type": {}
-                        },
-                        "color": {
-                            "type": {}
-                        },
-                        "shadow": {
-                            "type": {}
-                        },
-                        "shadowBias": {
-                            "type": {}
-                        },
-                        "shadowRadius": {
-                            "type": {}
-                        },
-                        "shadowMapSize": {
-                            "type": {}
-                        }
-                    }
-                },
-                "directionalShadowMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "directionalShadowMatrix": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "spotLights": {
-                    "type": {},
-                    "value": function () {},
-                    "properties": {
-                        "color": {
-                            "type": {}
-                        },
-                        "position": {
-                            "type": {}
-                        },
-                        "direction": {
-                            "type": {}
-                        },
-                        "distance": {
-                            "type": {}
-                        },
-                        "coneCos": {
-                            "type": {}
-                        },
-                        "penumbraCos": {
-                            "type": {}
-                        },
-                        "decay": {
-                            "type": {}
-                        },
-                        "shadow": {
-                            "type": {}
-                        },
-                        "shadowBias": {
-                            "type": {}
-                        },
-                        "shadowRadius": {
-                            "type": {}
-                        },
-                        "shadowMapSize": {
-                            "type": {}
-                        }
-                    }
-                },
-                "spotShadowMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "spotShadowMatrix": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "pointLights": {
-                    "type": {},
-                    "value": function () {},
-                    "properties": {
-                        "color": {
-                            "type": {}
-                        },
-                        "position": {
-                            "type": {}
-                        },
-                        "decay": {
-                            "type": {}
-                        },
-                        "distance": {
-                            "type": {}
-                        },
-                        "shadow": {
-                            "type": {}
-                        },
-                        "shadowBias": {
-                            "type": {}
-                        },
-                        "shadowRadius": {
-                            "type": {}
-                        },
-                        "shadowMapSize": {
-                            "type": {}
-                        }
-                    }
-                },
-                "pointShadowMap": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "pointShadowMatrix": {
-                    "type": {},
-                    "value": function () {}
-                },
-                "hemisphereLights": {
-                    "type": {},
-                    "value": function () {},
-                    "properties": {
-                        "direction": {
-                            "type": {}
-                        },
-                        "skyColor": {
-                            "type": {}
-                        },
-                        "groundColor": {
-                            "type": {}
-                        }
-                    }
-                },
-                "emissive": {
-                    "type": {},
-                    "value": {
-                        "r": {},
-                        "g": {},
-                        "b": {},
-                        "constructor": function () {},
-                        "set": function () {},
-                        "setScalar": function () {},
-                        "setHex": function () {},
-                        "setRGB": function () {},
-                        "setHSL": function () {},
-                        "setStyle": function () {},
-                        "clone": function () {},
-                        "copy": function () {},
-                        "copyGammaToLinear": function () {},
-                        "copyLinearToGamma": function () {},
-                        "convertGammaToLinear": function () {},
-                        "convertLinearToGamma": function () {},
-                        "getHex": function () {},
-                        "getHexString": function () {},
-                        "getHSL": function () {},
-                        "getStyle": function () {},
-                        "offsetHSL": function () {},
-                        "add": function () {},
-                        "addColors": function () {},
-                        "addScalar": function () {},
-                        "multiply": function () {},
-                        "multiplyScalar": function () {},
-                        "lerp": function () {},
-                        "equals": function () {},
-                        "fromArray": function () {},
-                        "toArray": function () {}
-                    }
-                },
-                "roughness": {
-                    "type": {},
-                    "value": {}
-                },
-                "metalness": {
-                    "type": {},
-                    "value": {}
-                },
-                "envMapIntensity": {
-                    "type": {},
-                    "value": {}
-                }
-            },
-            "vertexShader": {},
-            "fragmentShader": {}
-        }
-    },
-    "WebGLRenderer": function () {},
-    "WebGLRenderTarget": function () {},
-    "WebGLRenderTargetCube": function () {},
-    "WebGLBufferRenderer": function () {},
-    "WebGLIndexedBufferRenderer": function () {},
-    "WebGLExtensions": function () {},
-    "WebGLCapabilities": function () {},
-    "WebGLGeometries": function () {},
-    "WebGLLights": function () {},
-    "WebGLObjects": function () {},
-    "WebGLProgram": function () {},
-    "WebGLPrograms": function () {},
-    "WebGLProperties": function () {},
-    "WebGLShader": function () {},
-    "WebGLShadowMap": function () {},
-    "WebGLState": function () {},
-    "WebGLUniforms": function () {},
-    "LensFlarePlugin": function () {},
-    "SpritePlugin": function () {},
-    "Face4": function () {},
-    "Vertex": function () {},
     "GeometryUtils": {
         "merge": function () {},
         "center": function () {}
@@ -3689,90 +3464,5 @@ var THREE = {
         "loadCompressedTextureCube": function () {}
     },
     "Projector": function () {},
-    "CanvasRenderer": function () {},
-    "MeshFaceMaterial": function () {},
-    "CurveUtils": {
-        "tangentQuadraticBezier": function () {},
-        "tangentCubicBezier": function () {},
-        "tangentSpline": function () {},
-        "interpolate": function () {}
-    },
-    "SceneUtils": {
-        "createMultiMaterialObject": function () {},
-        "detach": function () {},
-        "attach": function () {}
-    },
-    "ShapeUtils": {
-        "area": function () {},
-        "triangulate": function () {},
-        "triangulateShape": function () {},
-        "isClockWise": function () {},
-        "b2": function () {},
-        "b3": function () {}
-    },
-    "Curve": function () {},
-    "CurvePath": function () {},
-    "Font": function () {},
-    "Path": function () {},
-    "Shape": function () {},
-    "LineCurve": function () {},
-    "QuadraticBezierCurve": function () {},
-    "CubicBezierCurve": function () {},
-    "SplineCurve": function () {},
-    "EllipseCurve": function () {},
-    "ArcCurve": function () {},
-    "LineCurve3": function () {},
-    "QuadraticBezierCurve3": function () {},
-    "CubicBezierCurve3": function () {},
-    "SplineCurve3": function () {},
-    "CatmullRomCurve3": function () {},
-    "ClosedSplineCurve3": function () {},
-    "BoxGeometry": function () {},
-    "CubeGeometry": function () {},
-    "BoxBufferGeometry": function () {},
-    "CircleGeometry": function () {},
-    "CircleBufferGeometry": function () {},
-    "CylinderBufferGeometry": function () {},
-    "CylinderGeometry": function () {},
-    "EdgesGeometry": function () {},
-    "ExtrudeGeometry": function () {},
-    "ShapeGeometry": function () {},
-    "LatheBufferGeometry": function () {},
-    "LatheGeometry": function () {},
-    "PlaneGeometry": function () {},
-    "PlaneBufferGeometry": function () {},
-    "RingBufferGeometry": function () {},
-    "RingGeometry": function () {},
-    "SphereGeometry": function () {},
-    "SphereBufferGeometry": function () {},
-    "TextGeometry": function () {},
-    "TorusBufferGeometry": function () {},
-    "TorusGeometry": function () {},
-    "TorusKnotBufferGeometry": function () {},
-    "TorusKnotGeometry": function () {},
-    "TubeGeometry": function () {},
-    "PolyhedronGeometry": function () {},
-    "DodecahedronGeometry": function () {},
-    "IcosahedronGeometry": function () {},
-    "OctahedronGeometry": function () {},
-    "TetrahedronGeometry": function () {},
-    "ParametricGeometry": function () {},
-    "WireframeGeometry": function () {},
-    "AxisHelper": function () {},
-    "ArrowHelper": function () {},
-    "BoxHelper": function () {},
-    "BoundingBoxHelper": function () {},
-    "CameraHelper": function () {},
-    "DirectionalLightHelper": function () {},
-    "EdgesHelper": function () {},
-    "FaceNormalsHelper": function () {},
-    "GridHelper": function () {},
-    "HemisphereLightHelper": function () {},
-    "PointLightHelper": function () {},
-    "SkeletonHelper": function () {},
-    "SpotLightHelper": function () {},
-    "VertexNormalsHelper": function () {},
-    "WireframeHelper": function () {},
-    "ImmediateRenderObject": function () {},
-    "MorphBlendMesh": function () {}
+    "CanvasRenderer": function () {}
 }

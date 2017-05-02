@@ -4,7 +4,7 @@ http://www.material-ui.com/#/
 
 [](dependency)
 ```clojure
-[cljsjs/material-ui "0.16.7-0"] ;; latest release
+[cljsjs/material-ui "0.17.4-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -21,7 +21,7 @@ http://www.material-ui.com/#/
 
 
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
-of the Clojurescript compiler. After adding the above dependency to your project
+of the ClojureScript compiler. After adding the above dependency to your project
 you can require the packaged library like so:
 
 ```clojure

@@ -1,0 +1,22 @@
+var tableau = {
+  "authPurpose": {},
+  "authType": {},
+  "connectionData": {},
+  "connectionName": {},
+  "locale": {},
+  "password": {},
+  "phase": {},
+  "platformBuildNumber": {},
+  "platformEdition": {},
+  "platformOs": {},
+  "platformVersion": {},
+  "username": {},
+  "version": {},
+  "abortForAuth": function() {},
+  "abortWithError": function() {},
+  "log": function() {},
+  "makeConnector": function() {},
+  "registerConnector": function() {},
+  "reportProgress": function() {},
+  "submit": function() {}
+};

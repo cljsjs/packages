@@ -1,5 +1,5 @@
 // D3 Extern generated using: https://github.com/jmmk/javascript-externs-generator
-// With some externs added by hand: Every d3-force objects and the d3.zoom
+// With some externs added by hand: Every d3-force objects, d3.zoom and d3.line
 
 var d3 = {
   "format": function () {},
@@ -136,7 +136,12 @@ var d3 = {
     "x0": function(){},
     "x1": function(){}
   },
-  "line": function () {},
+  "line": {
+    "defined": function() {},
+    "x": function() {},
+    "y": function() {},
+    "curve": function() {}
+  },
   "pie": {
     "value": function () {},
     "sortValues": function () {},
@@ -678,7 +683,6 @@ var d3 = {
   "schemeCategory20b": {},
   "schemeCategory20c": {},
   "schemeCategory20": {},
-  "scaleSequential": function () {},
   "interpolateCubehelixDefault": function () {},
   "interpolateRainbow": function () {},
   "interpolateWarm": function () {},
@@ -1130,6 +1134,9 @@ d3.hierarchy.prototype = {
   "leaves": function () {},
   "links": function () {},
   "copy": function () {}
+};
+d3.histogram.prototype = {
+  "thresholds": function () {},
 };
 d3.zoomIdentity.constructor.prototype = {
   "constructor": function () {},
