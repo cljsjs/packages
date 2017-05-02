@@ -15,7 +15,7 @@
 (task-options!
  pom  {:project     'cljsjs/react-mdl
        :version     +version+
-       :description "React Components wrapper for Material Design Lite UI http://tleunen.github.io/react-mdl/"
+       :description "React Components wrapper for Material Design Lite UI https://react-mdl.github.io/react-mdl/"
        :url         "https://react-mdl.github.io/react-mdl/"
        :scm         {:url "https://github.com/react-mdl/react-mdl"}})
 
