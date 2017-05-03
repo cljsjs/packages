@@ -1,6 +1,8 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]
+                  [cljsjs/react "15.0.0-0"]
+                  [cljsjs/react-dom "15.0.0-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -31,6 +33,8 @@
     (download-semantic-ui-react)
     (sift :move {#"semantic-ui-react.min.js"
                  "cljsjs/semantic-ui-react/common/semantic-ui-react.inc.js"})
-    (deps-cljs :name "cljsjs.semantic-ui-react")
+    (deps-cljs :name "cljsjs.semantic-ui-react"
+               :requires ["cljsjs.react"
+                          "cljsjs.react.dom"])
     (pom)
     (jar)))
