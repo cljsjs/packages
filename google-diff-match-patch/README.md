@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/google-diff-match-patch "20121119-1"] ;; latest release
+[cljsjs/google-diff-match-patch "20121119-2"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,4 +15,4 @@ you can require the packaged library like so:
   (:require cljsjs.google-diff-match-patch))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

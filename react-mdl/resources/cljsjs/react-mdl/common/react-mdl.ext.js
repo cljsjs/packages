@@ -5,7 +5,15 @@ var ReactMDL = {
     },
     Checkbox: function () {
     },
+    Chip: function() {
+    },
+    ChipContact: function() {
+    },
     DataTable: function () {
+    },
+    Table: function() {
+    },
+    TableHeader: function() {
     },
     FABButton: function () {
     },
@@ -29,6 +37,8 @@ var ReactMDL = {
     },
     DialogActions: function () {
     },
+    DialogContent: function () {
+    },
     DialogTitle: function () {
     },
     Footer: function () {
@@ -36,12 +46,6 @@ var ReactMDL = {
     FooterLinkList: function() {
     },
     FooterSection: function() {},
-    LinkList: function () {
-    },
-    Section: function () {
-    },
-    Index: function () {
-    },
     Content: function () {
     },
     Drawer: function () {
@@ -57,6 +61,8 @@ var ReactMDL = {
     Navigation: function () {
     },
     Spacer: function () {
+    },
+    List: function() {
     },
     ListItem: function () {
     },
@@ -77,6 +83,8 @@ var ReactMDL = {
     IconToggle: function () {
     },
     Menu: function () {
+    },
+    MenuItem: function () {
     },
     ProgressBar: function () {
     },
@@ -99,5 +107,9 @@ var ReactMDL = {
     MDLComponent: function() {
     },
     mdlUpgrade: function() {
+    },
+    getColorClass: function() {
+    },
+    getTextColorClass: function() {
     }
 };

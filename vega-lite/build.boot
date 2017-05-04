@@ -5,7 +5,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.0.0-beta.1")
+(def +lib-version+ "2.0.0-beta.2")
 
 (def +version+ (str +lib-version+ "-0"))
 
@@ -22,7 +22,7 @@
     (download
       :url (str "https://github.com/vega/vega-lite/archive/v" +lib-version+ ".zip")
       :unzip true
-      :checksum "b22a18763beb32438382a7a19a9aa090")
+      :checksum "bbaeaa6829adbfd6ea4d26bb0066c9bd")
     (sift :move {(re-pattern (str "^vega-lite-" +lib-version+ "/build/vega-lite.js$")) "cljsjs/development/vega-lite.inc.js"
                  (re-pattern (str "^vega-lite-" +lib-version+ "/build/vega-lite.min.js$")) "cljsjs/production/vega-lite.min.inc.js"})
     (sift :include #{#"^cljsjs"})
