@@ -25,7 +25,7 @@
     (sift :move {#"babel\.js" "cljsjs/babel-standalone/development/babel.inc.js"
                  #"babel\.min\.js" "cljsjs/babel-standalone/production/babel.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.babel-standalone")
+    (deps-cljs :name "cljsjs.babel-standalone" :no-externs true)
     (pom)
     (jar)))
 
