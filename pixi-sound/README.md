@@ -17,6 +17,6 @@ you can require and use the packaged library like so:
 (def pixi-sound js/PIXI.sound)
 ```
 
-Externs were generated using https://github.com/jmmk/javascript-externs-generator
+Externs were generated manually, so it does not include all the api.
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
