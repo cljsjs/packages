@@ -21,9 +21,12 @@
              :checksum "5528DF77753114ADD3EF9E1BAC2962EE")
    (download :url      (str "http://code.highcharts.com/" +lib-version+ "/js/highcharts.src.js")
              :checksum "DAA1C5BA8E7DEC5AED35E7606CF63A34")
-   (sift :move {#"highcharts.js"     "cljsjs/highcharts/production/highcharts.min.inc.js"})
-   (sift :move {#"highcharts.src.js"     "cljsjs/highcharts/development/highcharts.inc.js"})
+   (download :url      (str "http://code.highcharts.com/" +lib-version+ "/css/highcharts.css")
+             :checksum "018F28C9EDD947DD3211B01FD5D5C91C")
+   (sift :move {#"highcharts.js"     "cljsjs/highcharts/production/highcharts.min.inc.js"
+                #"highcharts.src.js" "cljsjs/highcharts/development/highcharts.inc.js"
+                #"highcharts.css"    "cljsjs/highcharts/development/highcharts.css"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name     "cljsjs.highcharts-css")
+   (deps-cljs :name "cljsjs.highcharts-css")
    (pom)
    (jar)))
