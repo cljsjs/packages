@@ -57,4 +57,6 @@ ENV CLOSURE_COMPILER_VERSION 20170423
 RUN curl -SLO "http://dl.google.com/closure-compiler/compiler-$CLOSURE_COMPILER_VERSION.tar.gz" \
   && tar -xf "compiler-$CLOSURE_COMPILER_VERSION.tar.gz" closure-compiler-v$CLOSURE_COMPILER_VERSION.jar \
   && mv closure-compiler-v$CLOSURE_COMPILER_VERSION.jar /usr/local/bin/closure-compiler.jar \
+  && chown root:root /usr/local/bin/closure-compiler.jar \
+  && chmod ugo+r /usr/local/bin/closure-compiler.jar \
   && rm "compiler-$CLOSURE_COMPILER_VERSION.tar.gz"
