@@ -9,8 +9,8 @@ jobs:
       # No easy way to create checksum for cljsjs
       - restore_cache:
           key: cljsjs-v1
-      - ./setup_gpg.sh
-      - ./circle.sh
+      - run: ./setup_gpg.sh
+      - run: ./circle.sh
       - save_cache:
           paths:
             - ~/.m2
