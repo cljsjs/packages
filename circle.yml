@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: /tmp
+    working_directory: ~/cljsjs
     docker:
       - image: cljsjs/build-image:0.0.2
     steps:
