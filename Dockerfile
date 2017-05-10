@@ -8,9 +8,6 @@ FROM clojure:boot-2.7.1
 # - node & npm
 # - Closure compiler jar file /usr/local/bin/closure-compiler.jar
 
-ENV NODE_VERSION 7.10.0
-ENV CLOSURE_COMPILER_VERSION 20170423
-
 # Jq, for json manipulation
 # used by cicle.sh to check for running Circle builds
 
@@ -40,6 +37,7 @@ RUN set -ex \
     gpg --keyserver keyserver.pgp.com --recv-keys "$key" ; \
   done
 
+ENV NODE_VERSION 7.10.0
 ENV NPM_CONFIG_LOGLEVEL info
 
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz" \
@@ -53,6 +51,8 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 # Yarn part skipped for now
 
 # Closure compiler
+
+ENV CLOSURE_COMPILER_VERSION 20170423
 
 RUN curl -SLO "http://dl.google.com/closure-compiler/compiler-$CLOSURE_COMPILER_VERSION.tar.gz" \
   && tar -xf "compiler-$CLOSURE_COMPILER_VERSION.tar.gz" closure-compiler-v$CLOSURE_COMPILER_VERSION.jar \
