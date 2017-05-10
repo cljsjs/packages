@@ -17,7 +17,7 @@
   "Returns a nashorn engine with Babel-standalone loaded."
   []
   (doto (.getEngineByName (ScriptEngineManager.) "nashorn")
-    (.eval (io/reader (io/resource "cljsjs/babel-standalone/production/babel.min.js")))))
+    (.eval (io/reader (io/resource "cljsjs/babel-standalone/production/babel.min.inc.js")))))
 
 (defn process
   "Given JavaScript source and babel options, return the processed source."
