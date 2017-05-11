@@ -197,6 +197,14 @@ var vega = {
       "params": {},
       "type": {}
     },
+    "contour": {
+      "metadata": {
+        "generates": {},
+        "source": {}
+      },
+      "params": {},
+      "type": {}
+    },
     "countpattern": {
       "metadata": {
         "changes": {},
@@ -528,6 +536,7 @@ var vega = {
     "Bound": function () {},
     "Collect": function () {},
     "Compare": function () {},
+    "Contour": function () {},
     "CountPattern": function () {},
     "Cross": function () {},
     "CrossFilter": function () {},
@@ -1016,6 +1025,18 @@ vega.transforms.Compare.prototype = {
   "set": function () {},
   "skip": function () {},
   "targets": function () {}
+};
+vega.transforms.Contour.prototype = {
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
 };
 vega.transforms.CountPattern.prototype = {
   "_finish": function () {},
