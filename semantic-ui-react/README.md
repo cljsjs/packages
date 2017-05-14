@@ -4,7 +4,7 @@ http://react.semantic-ui.com
 
 [](dependency)
 ```clojure
-[cljsjs/semantic-ui-react "0.67.1-0"] ;; latest release
+[cljsjs/semantic-ui-react "0.68.2-0"] ;; latest release
 ```
 [](/dependency)
 
