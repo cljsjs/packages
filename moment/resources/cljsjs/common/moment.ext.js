@@ -283,3 +283,41 @@ moment.Locale.prototype = {
   "isPM": function() {},
   "meridiem": function() {}
 };
+
+// Duration constructor added by hand based on
+// <https://github.com/moment/moment/blob/2.17.1/moment.js#L4210-L4244>
+
+moment.Duration = {};
+moment.Duration.prototype = {
+  "abs": function () {},
+  "add": function () {},
+  "subtract": function () {},
+  "as": function () {},
+  "asMilliseconds": function () {},
+  "asSeconds": function () {},
+  "asMinutes": function () {},
+  "asHours": function () {},
+  "asDays": function () {},
+  "asWeeks": function () {},
+  "asMonths": function () {},
+  "asYears": function () {},
+  "valueOf": function () {},
+  "_bubble": function () {},
+  "get": function () {},
+  "milliseconds": function () {},
+  "seconds": function () {},
+  "minutes": function () {},
+  "hours": function () {},
+  "days": function () {},
+  "weeks": function () {},
+  "months": function () {},
+  "years": function () {},
+  "humanize": function () {},
+  "toISOString": function () {},
+  "toString": function () {},
+  "toJSON": function () {},
+  "locale": function () {},
+  "localeData": function () {},
+  "toIsoString": function () {},
+  "lang": function () {}
+};
