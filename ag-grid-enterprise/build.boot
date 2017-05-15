@@ -6,16 +6,17 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
          '[boot.tmpdir :as tmpdir]
-         '[boot.util :refer [sh]]
+         '[boot.util :refer [dosh]]
          '[clojure.java.io :as io])
 
 (def +lib-version+ "8.0.1")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "ag-grid-enterprise-%s" +lib-version+))
 
-(defn- cmd [x]
-       (cond-> x
-               (re-find #"^Windows" (.get (System/getProperties) "os.name")) (str ".cmd")))
+(defn- dosh-cmd [& args]
+       (apply dosh (if (re-find #"^Windows" (.get (System/getProperties) "os.name"))
+                     (into ["cmd.exe" "/c"] args)
+                     args)))
 
 (defn- path [x]
        (.toString (java.nio.file.Paths/get x (into-array String nil))))
@@ -41,10 +42,10 @@
                                     (io/make-parents target)
                                     (io/copy (tmpdir/file f) target))
                              (binding [boot.util/*sh-dir* (str (io/file tmp +lib-folder+))]
-                                      ((sh (cmd "npm") "install"))
-                                      ((sh (cmd "npm") "install" "gulp" "ag-grid" "bower"))
-                                      ((sh (cmd (path (str (io/file tmp +lib-folder+) "/node_modules/.bin/bower"))) "install"))
-                                      ((sh (cmd (path (str (io/file tmp +lib-folder+) "/node_modules/.bin/gulp"))) "webpack-dev")))
+                                      (dosh-cmd "npm" "install")
+                                      (dosh-cmd "npm" "install" "gulp" "bower")
+                                      (dosh-cmd (path (str (io/file tmp +lib-folder+) "/node_modules/.bin/bower")) "install")
+                                      (dosh-cmd (path (str (io/file tmp +lib-folder+) "/node_modules/.bin/gulp")) "webpack-dev"))
                              (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 (deftask package []
