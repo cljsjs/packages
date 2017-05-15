@@ -9,7 +9,8 @@
          '[boot.util :refer [dosh]]
          '[clojure.java.io :as io])
 
-(def +lib-version+ "8.0.1")
+(def +lib-version+ "8.2.0")
+(def +lib-checksum+ "51918236DA21578D394E099841CAFD60")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "ag-grid-enterprise-%s" +lib-version+))
 
@@ -31,7 +32,7 @@
 
 (deftask download-lib []
          (download :url (format "https://github.com/ceolter/ag-grid-enterprise/archive/%s.zip" +lib-version+)
-                   :checksum "214DE44FBA872B13788E36BC10E4FFF1"
+                   :checksum +lib-checksum+
                    :unzip true))
 
 (deftask build []
@@ -43,9 +44,9 @@
                                     (io/copy (tmpdir/file f) target))
                              (binding [boot.util/*sh-dir* (str (io/file tmp +lib-folder+))]
                                       (dosh-cmd "npm" "install")
-                                      (dosh-cmd "npm" "install" "gulp" "bower")
+                                      (dosh-cmd "npm" "install" "gulp" "bower" "ag-grid")
                                       (dosh-cmd (path (str (io/file tmp +lib-folder+) "/node_modules/.bin/bower")) "install")
-                                      (dosh-cmd (path (str (io/file tmp +lib-folder+) "/node_modules/.bin/gulp")) "webpack-dev"))
+                                      (dosh-cmd (path (str (io/file tmp +lib-folder+) "/node_modules/.bin/gulp")) "webpack-all"))
                              (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 (deftask package []
