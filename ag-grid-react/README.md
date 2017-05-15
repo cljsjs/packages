@@ -19,6 +19,3 @@ you can require the packaged library like:
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
-
-If you are using Reagent, a wrapper for this cljsjs library is being developed that will provide ready to use well
-documented Reagent components: [Reagent Toolbox](https://github.com/dashmantech/reagent-toolbox).

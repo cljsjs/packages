@@ -8,16 +8,19 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
          '[boot.tmpdir :as tmpdir]
-         '[boot.util :refer [sh]]
+         '[boot.util :refer [dosh]]
          '[clojure.java.io :as io])
 
-(def +lib-version+ "8.0.0")
-(def +version+ (str +lib-version+ "-0"))
+(def +lib-version+ "8.2.0")
+(def +cljsjs-revision+ "0")
+(def +lib-checksum+ "4184F345D50DC5F1984223139677D593")
+(def +version+ (str +lib-version+ "-" +cljsjs-revision+))
 (def +lib-folder+ (format "ag-grid-react-%s" +lib-version+))
 
-(defn- cmd [x]
-  (cond-> x
-          (re-find #"^Windows" (.get (System/getProperties) "os.name")) (str ".cmd")))
+(defn- dosh-cmd [& args]
+       (apply dosh (if (re-find #"^Windows" (.get (System/getProperties) "os.name"))
+                     (into ["cmd.exe" "/c"] args)
+                     args)))
 
 (defn- path [x]
   (.toString (java.nio.file.Paths/get x (into-array String nil))))
@@ -32,7 +35,7 @@
 
 (deftask download-lib []
          (download :url (format "https://github.com/ceolter/ag-grid-react/archive/%s.zip" +lib-version+)
-                   :checksum "C49E2D16E2998039DC5ACA718966C3F6"
+                   :checksum +lib-checksum+
                    :unzip true))
 
 (deftask build []
@@ -46,10 +49,10 @@
                             (io/file tmp "webpack.config.js")
                             (io/file tmp +lib-folder+ "webpack-cljsjs.config.js"))
                           (binding [boot.util/*sh-dir* (str (io/file tmp +lib-folder+))]
-                            ((sh (cmd "npm") "install"))
-                            ((sh (cmd "npm") "install" "ag-grid" "gulp" "webpack@^1.9.11"))
-                            ((sh (cmd (path (str (io/file tmp +lib-folder+) "/node_modules/.bin/gulp")))))
-                            ((sh (cmd (path (str (io/file tmp +lib-folder+) "/node_modules/.bin/webpack"))) "--config" "webpack-cljsjs.config.js")))
+                                   (dosh-cmd "npm" "install")
+                                   (dosh-cmd "npm" "install" "ag-grid" "gulp" "webpack@^1.9.11")
+                                   (dosh-cmd (path (str (io/file tmp +lib-folder+) "/node_modules/.bin/gulp")))
+                                   (dosh-cmd (path (str (io/file tmp +lib-folder+) "/node_modules/.bin/webpack")) "--config" "webpack-cljsjs.config.js"))
                           (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 (deftask package []
