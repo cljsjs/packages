@@ -9,6 +9,7 @@ echo "Validate extern files"
 ./test-extern-files.sh
 
 cp profile.boot ~/.boot/profile.boot
+echo '{"allow_root": true}' > ~/.bowerrc
 
 if [[ $CIRCLE_BRANCH == "master" ]]; then
     echo "Wait for previous builds to finish"
