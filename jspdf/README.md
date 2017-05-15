@@ -6,4 +6,4 @@
 ```
 [](/dependency)
 
-CLJSJS package for [jsPDF](https://parall.ax/products/jspdf). See hhttp://mrrio.github.io/doc/symbols/jsPDF.html for documentation.
+CLJSJS package for [jsPDF](https://parall.ax/products/jspdf). See http://mrrio.github.io/doc/symbols/jsPDF.html for documentation.
