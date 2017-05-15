@@ -19,4 +19,4 @@ jobs:
           key: cljsjs-v1
     environment:
       BOOT_JVM_OPTIONS: "-Xms512m -Xmx1024m"
-      NPM_LOG_LEVEL: warn
+      NPM_CONFIG_LOGLEVEL: warn
