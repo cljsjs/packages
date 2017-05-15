@@ -10,8 +10,9 @@
          '[clojure.java.io :as io])
 
 (def +lib-version+ "8.2.0")
+(def +cljsjs-revision+ "0")
 (def +lib-checksum+ "51918236DA21578D394E099841CAFD60")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-" +cljsjs-revision+))
 (def +lib-folder+ (format "ag-grid-enterprise-%s" +lib-version+))
 
 (defn- dosh-cmd [& args]
