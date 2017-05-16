@@ -12,9 +12,8 @@
          '[clojure.java.io :as io])
 
 (def +lib-version+ "9.1.0")
-(def +cljsjs-revision+ "0")
 (def +lib-checksum+ "48004C25BAE43B182B2B5E96D88F0974")
-(def +version+ (str +lib-version+ "-" +cljsjs-revision+))
+(def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "ag-grid-react-%s" +lib-version+))
 
 (defn- dosh-cmd [& args]
