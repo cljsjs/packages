@@ -1,8 +1,9 @@
 // Generated via http://jmmk.github.io/javascript-externs-generator/
 
 // Loaded JavaScripts:
-// https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-with-addons.js
-// https://cdnjs.cloudflare.com/ajax/libs/react-virtualized/9.0.3/react-virtualized.js
+// https://cdnjs.cloudflare.com/ajax/libs/react/15.5.4/react-dom.js
+// https://cdnjs.cloudflare.com/ajax/libs/react/15.5.4/react-with-addons.js
+// https://cdnjs.cloudflare.com/ajax/libs/react-virtualized/9.7.5/react-virtualized.js
 
 // Reference JavaScript object: ReactVirtualized
 /**********************************************************************
@@ -24,36 +25,13 @@ var ReactVirtualized = {
     }
   },
   "CellMeasurer": {
-    "defaultProps": {
-      "style": {}
-    }
+    "__internalCellMeasurerFlag": {}
   },
   "CellMeasurerCache": function () {},
   "Collection": {
     "defaultProps": {
       "aria-label": {},
       "cellGroupRenderer": function () {}
-    }
-  },
-  "ColumnSizer": function () {},
-  "defaultTableCellDataGetter": function () {},
-  "defaultTableCellRenderer": function () {},
-  "defaultTableHeaderRenderer": function () {},
-  "defaultTableRowRenderer": function () {},
-  "Table": {
-    "defaultProps": {
-      "disableHeader": {},
-      "estimatedRowSize": {},
-      "headerHeight": {},
-      "headerStyle": {},
-      "noRowsRenderer": function () {},
-      "onRowsRendered": function () {},
-      "onScroll": function () {},
-      "overscanRowCount": {},
-      "rowRenderer": function () {},
-      "rowStyle": {},
-      "scrollToAlignment": {},
-      "style": {}
     }
   },
   "Column": {
@@ -66,12 +44,7 @@ var ReactVirtualized = {
       "style": {}
     }
   },
-  "SortDirection": {
-    "ASC": {},
-    "DESC": {}
-  },
-  "SortIndicator": function () {},
-  "defaultCellRangeRenderer": function () {},
+  "ColumnSizer": function () {},
   "Grid": {
     "defaultProps": {
       "aria-label": {},
@@ -85,8 +58,11 @@ var ReactVirtualized = {
       "overscanColumnCount": {},
       "overscanIndicesGetter": function () {},
       "overscanRowCount": {},
-      "scrollingResetTimeInterval": {},
+      "role": {},
       "scrollToAlignment": {},
+      "scrollToColumn": {},
+      "scrollToRow": {},
+      "scrollingResetTimeInterval": {},
       "style": {},
       "tabIndex": {}
     }
@@ -104,9 +80,24 @@ var ReactVirtualized = {
       "noRowsRenderer": function () {},
       "onRowsRendered": function () {},
       "onScroll": function () {},
+      "overscanIndicesGetter": function () {},
       "overscanRowCount": {},
       "scrollToAlignment": {},
+      "scrollToIndex": {},
       "style": {}
+    }
+  },
+  "Masonry": {
+    "defaultProps": {
+      "autoHeight": {},
+      "keyMapper": function () {},
+      "onCellsRendered": function () {},
+      "onScroll": function () {},
+      "overscanByPixels": {},
+      "role": {},
+      "scrollingResetTimeInterval": {},
+      "style": {},
+      "tabIndex": {}
     }
   },
   "MultiGrid": {
@@ -121,88 +112,127 @@ var ReactVirtualized = {
     }
   },
   "ScrollSync": function () {},
+  "SortDirection": {
+    "ASC": {},
+    "DESC": {}
+  },
+  "SortIndicator": function () {},
+  "Table": {
+    "defaultProps": {
+      "disableHeader": {},
+      "estimatedRowSize": {},
+      "headerHeight": {},
+      "headerRowRenderer": function () {},
+      "headerStyle": {},
+      "noRowsRenderer": function () {},
+      "onRowsRendered": function () {},
+      "onScroll": function () {},
+      "overscanIndicesGetter": function () {},
+      "overscanRowCount": {},
+      "rowRenderer": function () {},
+      "rowStyle": {},
+      "scrollToAlignment": {},
+      "scrollToIndex": {},
+      "style": {}
+    }
+  },
   "WindowScroller": {
     "defaultProps": {
       "onResize": function () {},
       "onScroll": function () {}
     }
-  }
+  },
+  "accessibilityOverscanIndicesGetter": function () {},
+  "createMasonryCellPositioner": function () {},
+  "defaultCellRangeRenderer": function () {},
+  "defaultOverscanIndicesGetter": function () {},
+  "defaultTableCellDataGetter": function () {},
+  "defaultTableCellRenderer": function () {},
+  "defaultTableHeaderRenderer": function () {},
+  "defaultTableHeaderRowRenderer": function () {},
+  "defaultTableRowRenderer": function () {}
 };
 ReactVirtualized.ArrowKeyStepper.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
   "forceUpdate": function () {},
-  "isPureReactComponent": function () {}
+  "isPureReactComponent": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
 };
 ReactVirtualized.AutoSizer.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
   "forceUpdate": function () {},
-  "isPureReactComponent": function () {}
+  "isPureReactComponent": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
 };
 ReactVirtualized.CellMeasurer.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
   "forceUpdate": function () {},
-  "isPureReactComponent": function () {}
+  "isPureReactComponent": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
 };
 ReactVirtualized.Collection.prototype = {
+  "isPureReactComponent": function () {},
   "isReactComponent": function () {},
-  "setState": function () {},
-  "isPureReactComponent": function () {}
-};
-ReactVirtualized.ColumnSizer.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {},
-  "isPureReactComponent": function () {}
-};
-ReactVirtualized.Table.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {},
-  "isPureReactComponent": function () {}
+  "setState": function () {}
 };
 ReactVirtualized.Column.prototype = {
+  "forceUpdate": function () {},
   "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
+  "setState": function () {}
+};
+ReactVirtualized.ColumnSizer.prototype = {
+  "forceUpdate": function () {},
+  "isPureReactComponent": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
 };
 ReactVirtualized.Grid.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
   "forceUpdate": function () {},
-  "isPureReactComponent": function () {}
+  "isPureReactComponent": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
 };
 ReactVirtualized.InfiniteLoader.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
   "forceUpdate": function () {},
-  "isPureReactComponent": function () {}
+  "isPureReactComponent": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
 };
 ReactVirtualized.List.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
   "forceUpdate": function () {},
-  "isPureReactComponent": function () {}
+  "isPureReactComponent": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
+ReactVirtualized.Masonry.prototype = {
+  "forceUpdate": function () {},
+  "isPureReactComponent": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
 };
 ReactVirtualized.MultiGrid.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
   "forceUpdate": function () {},
-  "isPureReactComponent": function () {}
+  "isPureReactComponent": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
 };
 ReactVirtualized.ScrollSync.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
   "forceUpdate": function () {},
-  "isPureReactComponent": function () {}
+  "isPureReactComponent": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
+ReactVirtualized.Table.prototype = {
+  "forceUpdate": function () {},
+  "isPureReactComponent": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
 };
 ReactVirtualized.WindowScroller.prototype = {
-  "isReactComponent": function () {},
-  "setState": function () {},
   "forceUpdate": function () {},
-  "isPureReactComponent": function () {}
+  "isPureReactComponent": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
 };
 /**********************************************************************
  * End Generated Extern for ReactVirtualized
