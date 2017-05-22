@@ -1,0 +1,34 @@
+--- waypoint.js	2016-02-05 20:02:05.899085759 +0000
++++ waypoint.cljs.js	2016-02-05 20:03:18.194477617 +0000
+@@ -2,15 +2,12 @@
+ 
+ var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+ 
+-Object.defineProperty(exports, "__esModule", {
+-  value: true
+-});
+ 
+-var _react = require('react');
++var _react = React;
+ 
+ var _react2 = _interopRequireDefault(_react);
+ 
+-var _reactDom = require('react-dom');
++var _reactDom = ReactDOM;
+ 
+ var _reactDom2 = _interopRequireDefault(_reactDom);
+ 
+@@ -256,8 +253,6 @@
+   return Waypoint;
+ }(_react2.default.Component);
+ 
+-exports.default = Waypoint;
+-
+ Waypoint.propTypes = propTypes;
+ Waypoint.above = POSITIONS.above;
+ Waypoint.below = POSITIONS.below;
+@@ -267,4 +262,3 @@
+   }
+ };
+ Waypoint.defaultProps = defaultProps;
+-module.exports = exports['default'];
