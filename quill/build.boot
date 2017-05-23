@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.1.0")
+(def +lib-version+ "1.2.4") ;; released at Apr 18, 2017
 (def +version+ (str +lib-version+ "-3"))
 
 (task-options!
@@ -18,6 +18,7 @@
          (comp
            (download :url
                      (format "https://github.com/quilljs/quill/releases/download/v%s/quill.tar.gz" +lib-version+)
+                     :checksum "F7FF6CC85F0E0D9150F72082568015D1"
                      :decompress true
                      :archive-format "tar"
                      :compression-format "gz")
