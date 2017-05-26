@@ -6,8 +6,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "5.0.7")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "5.0.8")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/react-sticky
@@ -24,7 +24,7 @@
 
 (deftask download-react-sticky []
   (download :url (format "https://github.com/captivationsoftware/react-sticky/archive/%s.zip" +lib-version+)
-            :checksum "DBF6CC0D5557792D42E779B2166D6D77"
+            :checksum "6CDE2E9759A06E01380A98AF902DB0D2"
             :unzip true))
 
 (deftask package []
