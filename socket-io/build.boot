@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.6.0")
+(def +lib-version+ "2.0.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -20,11 +20,11 @@
 (deftask package []
   (comp
     (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/socket.io/" +lib-version+ "/socket.io.js")
-              :checksum "25C4C6610F9CC7AB58B9EB2E5E9EC8E1")
-    (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/socket.io/" +lib-version+ "/socket.io.min.js")
-              :checksum "8C95B98A636A39DF32C396D665EF6908")
+              :checksum "B72B90D6087DB2C4D9A2A5810C93108B")
+    (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/socket.io/" +lib-version+ "/socket.io.slim.js")
+              :checksum "B662B0A146686B726716C16F62EB5EFE")
     (sift :move {#"socket.io.js" "cljsjs/development/socket.io.inc.js"
-                 #"socket.io.min.js" "cljsjs/production/socket.io.min.inc.js"}
+                 #"socket.io.slim.js" "cljsjs/production/socket.io.min.inc.js"}
           :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.socket-io")
     (pom)
