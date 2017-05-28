@@ -18,9 +18,9 @@
 (deftask package []
   (comp
     (download :url (format "https://unpkg.com/styled-classnames@%s/build/styled-classnames.umd.js" +lib-version+)
-              :checksum "B778C3087CAB7AF907165B3B9AF841E2")
+              :checksum "B3E9270B9E0D14AE445E1E8036B4CB6D")
     (download :url (format "https://unpkg.com/styled-classnames@%s/build/styled-classnames.umd.min.js" +lib-version+)
-              :checksum "74C910BF094F1838C273EF121CD034F3")
+              :checksum "22FD4FDDF57843395D578C70342F47E5")
     (sift :move {#"styled-classnames\.umd\.js" "cljsjs/styled-classnames/development/styled-classnames.inc.js"
                  #"styled-classnames\.umd\.min\.js" "cljsjs/styled-classnames/production/styled-classnames.min.inc.js"})
     (sift :include #{#"^cljsjs"})
