@@ -4,9 +4,9 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.7.3")
+(def +lib-version+ "4.0.0")
 (def +version+ (str +lib-version+ "-0"))
-(def +checksum+ "BE95C5C6C0C17A9E0E6B58837A5BE8C6")
+(def +checksum+ "C34E607575903A7BA219D083B346A7CB")
 
 (task-options!
  pom  {:project     'cljsjs/firebase
@@ -23,9 +23,9 @@
              :decompress true
              :compression-format "gz"
              :archive-format "tar")
-   (sift :move {#"firebase_npm/firebase.js" "cljsjs/development/firebase.inc.js"
-                #"firebase_npm/firebase-node.js" "cljsjs/development/firebase-node.inc.js"
-                #"firebase_npm/externs/" "cljsjs/common/"}
+   (sift :move {#"package/firebase.js" "cljsjs/development/firebase.inc.js"
+                #"package/firebase-node.js" "cljsjs/development/firebase-node.inc.js"
+                #"package/externs/" "cljsjs/common/"}
          :include #{#"^cljsjs"
                     #"^deps.cljs"})
    (pom)
