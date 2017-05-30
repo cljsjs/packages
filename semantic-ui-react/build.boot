@@ -10,7 +10,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "0.68.2")
+(def +lib-version+ "0.68.4")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "semantic-ui-react-%s" +lib-version+))
 
@@ -26,7 +26,7 @@
 
 (deftask download-semantic-ui-react []
   (download :url      url
-            :checksum "AAEA389692EEAD8B8A086E96CE7040BC"))
+            :checksum "DD086E3613DC203CC9F727073AC00B7E"))
 
 (deftask package []
   (comp
