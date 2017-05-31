@@ -4,7 +4,7 @@ Provides firebase and firebase-node
 
 [](dependency)
 ```clojure
-[cljsjs/firebase "3.7.3-0"] ;; latest release
+[cljsjs/firebase "4.0.0-0"] ;; latest release
 ```
 [](/dependency)
 
