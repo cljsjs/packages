@@ -5,8 +5,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.0.0")
-(def +version+ (str +lib-version+ "-alpha2"))
+(def +lib-version+ "v2.0.0-alpha2")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/react-number-format
@@ -23,7 +23,7 @@
 
 (deftask package []
   (comp
-   (download :url (str "https://github.com/s-yadav/react-number-format/archive/v2.0.0-alpha2.zip")
+   (download :url (format "https://github.com/s-yadav/react-number-format/archive/%s.zip" +lib-version+)
 
      :unzip true)
 
