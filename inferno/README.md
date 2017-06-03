@@ -12,7 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require [cljsjs.inferno]))
+  (:require [cljs.inferno]))
 
 (defn init []
   (let [container (. js/document (getElementById "container"))
