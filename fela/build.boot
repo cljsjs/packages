@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "4.3.2")
+(def +lib-version+ "4.3.5")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,9 +18,9 @@
 (deftask package []
   (comp
     (download :url (str "https://unpkg.com/fela@" +lib-version+ "/dist/fela.js")
-              :checksum "8688043808b236f112b8018276b3cf8e")
+              :checksum "AE993D823C849809F85946BD46ACCC9A")
     (download :url (str "https://unpkg.com/fela@" +lib-version+ "/dist/fela.min.js")
-              :checksum "6281299ee693325e5be537cf2763e7d8")
+              :checksum "454EF3B6EC848B5AF9465ACB1E24706C")
   (sift :move {#"^fela\.js" "cljsjs/fela/development/fela.inc.js"
                #"^fela\.min\.js" "cljsjs/fela/production/fela.min.inc.js"})
   (sift :include #{#"^cljsjs"})
