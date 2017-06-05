@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.2.4") ;; released at Apr 18, 2017
-(def +version+ (str +lib-version+ "-3"))
+(def +lib-version+ "1.2.5") ;; released at May 28, 2017
+(def +version+ (str +lib-version+ "-4"))
 
 (task-options!
   pom {:project     'cljsjs/quill
@@ -18,13 +18,12 @@
          (comp
            (download :url
                      (format "https://github.com/quilljs/quill/releases/download/v%s/quill.tar.gz" +lib-version+)
-                     :checksum "F7FF6CC85F0E0D9150F72082568015D1"
+                     :checksum "CC0A9A7A866B40A63E0D3418B57A8F70"
                      :decompress true
                      :archive-format "tar"
                      :compression-format "gz")
            (sift :move {#".*quill\.js"        "cljsjs/quill/quill.inc.js"
                         #".*quill\.min\.js"   "cljsjs/quill/quill.min.inc.js"
-                        #".*quill\.core\.js"   "cljsjs/quill/quill.core.inc.js"
                         #".*quill\.core\.css" "cljsjs/quill/quill.core.css"
                         #".*dist/quill\.snow\.css" "cljsjs/quill/quill.snow.css"})
            (sift :include #{#"^cljsjs"})
