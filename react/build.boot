@@ -2,7 +2,9 @@
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
 
-(require '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all]
+         '[clojure.java.io     :as io]
+         '[clojure.string :as str])
 
 (def +lib-version+ "15.5.4")
 (def +version+ (str +lib-version+ "-0"))
@@ -52,15 +54,36 @@
                                           (:tree fileset)))]
         (handler fileset)))))
 
-(defn package-part [{:keys [extern-name namespace project dependencies requires]}]
+(deftask surrogate
+  "Creates an empty surrogate js fies"
+  [f filename FILENAME str "File name"
+   p project  PROJECT  sym "Project"]
+  (let [tmp    (tmp-dir!)
+        target (io/file tmp filename)]
+    (with-pre-wrap fileset
+      (io/make-parents target)
+      (spit target (str "// Surrogate package for "
+                        (str/replace (name project) #"-surrogate$" "")))
+      (-> fileset
+          (add-resource tmp)
+          commit!))))
+
+(defn package-part [{:keys [extern-name namespace project dependencies requires surrogate?]}]
   (with-files (fn [x] (= extern-name (.getName (tmp-file x))))
     (comp
-      (download :url (format "https://unpkg.com/%s@%s/dist/%s.js" (npm-project project) +lib-version+ (name project))
-                :checksum (:dev (get checksums project)))
-      (download :url (format "https://unpkg.com/%s@%s/dist/%s.min.js" (npm-project project) +lib-version+ (name project))
-                :checksum (:min (get checksums project)))
-      (sift :move {(re-pattern (format "^%s.js$" (name project)))     (format "cljsjs/%1$s/development/%1$s.inc.js" (name project))
-                   (re-pattern (format "^%s.min.js$" (name project))) (format "cljsjs/%1$s/production/%1$s.min.inc.js" (name project))})
+     (if surrogate?
+       (comp
+        (surrogate :filename (format "cljsjs/%1$s/development/%1$s.inc.js" (name project))
+                   :project project)
+        (surrogate :filename (format "cljsjs/%1$s/production/%1$s.min.inc.js" (name project))
+                   :project project))
+       (comp
+        (download :url (format "https://unpkg.com/%s@%s/dist/%s.js" (npm-project project) +lib-version+ (name project))
+                  :checksum (:dev (get checksums project)))
+        (download :url (format "https://unpkg.com/%s@%s/dist/%s.min.js" (npm-project project) +lib-version+ (name project))
+                  :checksum (:min (get checksums project)))
+        (sift :move {(re-pattern (format "^%s.js$" (name project)))     (format "cljsjs/%1$s/development/%1$s.inc.js" (name project))
+                     (re-pattern (format "^%s.min.js$" (name project))) (format "cljsjs/%1$s/production/%1$s.min.inc.js" (name project))})))
       (sift :include #{#"^cljsjs"})
       (deps-cljs :name namespace :requires requires)
       (pom :project project :dependencies (or dependencies []))
@@ -95,11 +118,35 @@
      :namespace "cljsjs.react"
      :project 'cljsjs/react-with-addons}))
 
+(deftask package-react-surrogate []
+  (package-part
+   {:extern-name "react.ext.js"
+    :namespace "cljsjs.react"
+    :project 'cljsjs/react-surrogate
+    :surrogate? true}))
+
+(deftask package-dom-surrogate []
+  (package-part
+   {:extern-name "react-dom.ext.js"
+    :namespace "cljsjs.react.dom"
+    :project 'cljsjs/react-dom-surrogate
+    :surrogate? true}))
+
+(deftask package-dom-server-surrogate []
+  (package-part
+   {:extern-name "react-dom-server.ext.js"
+    :namespace "cljsjs.react.dom.server"
+    :project 'cljsjs/react-dom-server-surrogate
+    :surrogate? true}))
+
 (deftask package []
   (comp
     (package-react)
+    (package-react-surrogate)
     (package-dom)
+    (package-dom-surrogate)
     (package-dom-server)
+    (package-dom-server-surrogate)
     (package-with-addons)))
 
 (defn md5sum [fileset name]
