@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "4.2.6")
+(def +lib-version+ "5.0.12")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,9 +18,9 @@
 (deftask package []
   (comp
    (download :url (str "https://code.highcharts.com/stock/" +lib-version+ "/highstock.js")
-             :checksum "DCEDC903E6956F8766A9543524816331")
+             :checksum "5B251590C79F9B9887440FDE061E4444")
    (download :url (str "https://code.highcharts.com/stock/" +lib-version+ "/highstock.src.js")
-             :checksum "0AFAC63726D0E216BEF5FA56E3F98717")
+             :checksum "57A40290D795AF0B8B88130F068AE623")
    (sift :move {#"highstock.js"     "cljsjs/production/highstock.min.inc.js"})
    (sift :move {#"highstock.src.js" "cljsjs/development/highstock.inc.js"})
    (sift :include #{#"^cljsjs"})
