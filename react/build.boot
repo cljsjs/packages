@@ -72,11 +72,8 @@
   (with-files (fn [x] (= extern-name (.getName (tmp-file x))))
     (comp
      (if surrogate?
-       (comp
-        (surrogate :filename (format "cljsjs/%1$s/development/%1$s.inc.js" (name project))
-                   :project project)
-        (surrogate :filename (format "cljsjs/%1$s/production/%1$s.min.inc.js" (name project))
-                   :project project))
+       (surrogate :filename (format "cljsjs/%1$s/development/%1$s.inc.js" (name project))
+                  :project project)
        (comp
         (download :url (format "https://unpkg.com/%s@%s/dist/%s.js" (npm-project project) +lib-version+ (name project))
                   :checksum (:dev (get checksums project)))
