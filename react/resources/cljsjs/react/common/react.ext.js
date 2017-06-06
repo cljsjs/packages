@@ -482,6 +482,14 @@ React.DOM = {};
 React.ChildrenArgument;
 
 /**
+ * @param {*} componentClass
+ * @param {Object=} props
+ * @param {...React.ChildrenArgument} children
+ * @return {React.Component}
+ */
+React.createElement = function(componentClass, props, children) {};
+
+/**
  * @param {Object=} props
  * @param {...React.ChildrenArgument} children
  * @return {React.Component}
