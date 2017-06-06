@@ -1,11 +1,13 @@
-(set-env!
-  :resource-paths #{"resources"}
-  :dependencies   '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
-
-(require '[cljsjs.boot-cljsjs.packaging :refer :all])
-
 (def +lib-version+ "4.3.5")
 (def +version+ (str +lib-version+ "-0"))
+
+(set-env!
+  :resource-paths #{"resources"}
+  :dependencies   [['cljsjs/boot-cljsjs "0.5.2" :scope "test"]
+                   ['cljsjs/react "15.5.4-0"]
+                   ['cljsjs/fela +version+]])
+
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (task-options!
   pom {:project 'cljsjs/react-fela
@@ -24,6 +26,8 @@
   (sift :move {#"^react-fela\.js" "cljsjs/react-fela/development/react-fela.inc.js"
                #"^react-fela\.min\.js" "cljsjs/react-fela/production/react-fela.min.inc.js"})
   (sift :include #{#"^cljsjs"})
-  (deps-cljs :name "cljsjs.react-fela")
+  (deps-cljs :name "cljsjs.react-fela"
+             :requires ["cljsjs.react"
+                        "cljsjs.fela"])
   (pom)
   (jar)))
