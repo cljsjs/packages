@@ -543,7 +543,30 @@ var DayPicker = {
 DayPicker.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
-  "setState": function () {}
+  "setState": function () {},
+  "getDayNodes": function () {},
+  "getNextNavigableMonth": function () {},
+  "getPreviousNavigableMonth": function () {},
+  "allowPreviousMonth": function () {},
+  "allowNextMonth": function () {},
+  "allowMonth": function (d) {},
+  "allowYearChange": function () {},
+  "showNextMonth": function (callback) {},
+  "showPreviousMonth": function (callback) {},
+  "showNextYear": function () {},
+  "showPreviousYear": function () {},
+  "focusFirstDayOfMonth": function () {},
+  "focusLastDayOfMonth": function () {},
+  "focusPreviousDay": function (dayNode) {},
+  "focusNextDay": function (dayNode) {},
+  "focusNextWeek": function (dayNode) {},
+  "focusPreviousWeek": function (dayNode) {},
+  "handleKeyDown": function (e) {},
+  "handleDayKeyDown": function (e) {},
+  "handleDayClick": function (e) {},
+  "handleOutsideDayClick": function (e) {},
+  "renderNavbar": function () {},
+  "renderDayInMonth": function (day, month) {}
 };
 /**********************************************************************
  * End Generated Extern for DayPicker
