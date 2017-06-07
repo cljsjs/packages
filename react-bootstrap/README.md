@@ -15,10 +15,10 @@ you can require the packaged library like so:
   (:require cljsjs.react-bootstrap))
 ```
 
-To use this with Boot require "boot-less" like so:
+To use this with Boot, require [boot-less][less4clj] like so:
 ```clojure
 (set-env!
-  :dependencies '[[deraen/boot-less "0.3.0" :scope "test"]
+  :dependencies '[[deraen/boot-less "0.6.2" :scope "test"]
                   [cljsjs/react-bootstrap "0.30.7-0"]])
 
 ```
@@ -32,4 +32,5 @@ then compile your cljs project e.g:
 boot cljs less
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
+[less4clj]: https://github.com/Deraen/less4clj
