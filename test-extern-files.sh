@@ -5,5 +5,5 @@
 externs=$(find . -name '*.ext.js' -not -path '*/target/*' -exec echo -en ' --externs {}' \;)
 
 # --warning_level VERBOSE \
-java -jar node_modules/google-closure-compiler/compiler.jar --js extern-test.js \
-    $externs
+
+java -jar /usr/local/bin/closure-compiler.jar --js extern-test.js $externs
