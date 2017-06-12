@@ -1,4 +1,4 @@
-# cljsjs/d3
+# cljsjs/d3-scale-chromatic
 
 [](dependency)
 ```clojure
