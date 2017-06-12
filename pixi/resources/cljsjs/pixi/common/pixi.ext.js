@@ -6,6 +6,7 @@ var PIXI = {
   "Application": function () {},
   "BLEND_MODES": {
     "ADD": {},
+    "ADD_NPM": {},
     "COLOR": {},
     "COLOR_BURN": {},
     "COLOR_DODGE": {},
@@ -18,9 +19,11 @@ var PIXI = {
     "LUMINOSITY": {},
     "MULTIPLY": {},
     "NORMAL": {},
+    "NORMAL_NPM": {},
     "OVERLAY": {},
     "SATURATION": {},
     "SCREEN": {},
+    "SCREEN_NPM": {},
     "SOFT_LIGHT": {}
   },
   "BaseRenderTexture": {
@@ -1386,6 +1389,94 @@ var PIXI = {
       "base64": {
         "__esModule": {},
         "encodeBinary": function () {}
+      },
+      "default": {
+        "Resource": {
+          "EMPTY_GIF": {},
+          "LOAD_TYPE": {
+            "AUDIO": {},
+            "IMAGE": {},
+            "VIDEO": {},
+            "XHR": {}
+          },
+          "STATUS_FLAGS": {
+            "COMPLETE": {},
+            "DATA_URL": {},
+            "LOADING": {},
+            "NONE": {}
+          },
+          "TYPE": {
+            "AUDIO": {},
+            "IMAGE": {},
+            "JSON": {},
+            "TEXT": {},
+            "UNKNOWN": {},
+            "VIDEO": {},
+            "XML": {}
+          },
+          "XHR_RESPONSE_TYPE": {
+            "BLOB": {},
+            "BUFFER": {},
+            "DEFAULT": {},
+            "DOCUMENT": {},
+            "JSON": {},
+            "TEXT": {}
+          },
+          "_loadTypeMap": {
+            "bmp": {},
+            "gif": {},
+            "jpeg": {},
+            "jpg": {},
+            "mp3": {},
+            "mp4": {},
+            "ogg": {},
+            "png": {},
+            "svg": {},
+            "svg+xml": {},
+            "tga": {},
+            "tif": {},
+            "tiff": {},
+            "wav": {},
+            "webm": {},
+            "webp": {}
+          },
+          "_xhrTypeMap": {
+            "bmp": {},
+            "fnt": {},
+            "gif": {},
+            "htm": {},
+            "html": {},
+            "jpeg": {},
+            "jpg": {},
+            "json": {},
+            "otf": {},
+            "png": {},
+            "svg": {},
+            "text": {},
+            "tga": {},
+            "tif": {},
+            "tiff": {},
+            "tmx": {},
+            "tsx": {},
+            "ttf": {},
+            "txt": {},
+            "webp": {},
+            "xhtml": {},
+            "xml": {}
+          },
+          "setExtensionLoadType": function () {},
+          "setExtensionXhrType": function () {}
+        },
+        "async": {
+          "__esModule": {},
+          "eachSeries": function () {},
+          "queue": function () {}
+        },
+        "base64": {
+          "__esModule": {},
+          "encodeBinary": function () {}
+        },
+        "default": function () {}
       }
     },
     "Resource": {
@@ -1765,6 +1856,7 @@ var PIXI = {
     "__esModule": {},
     "canUseNewCanvasBlendModes": function () {},
     "clearTextureCache": function () {},
+    "correctBlendMode": function () {},
     "decomposeDataUri": function () {},
     "destroyTextureCache": function () {},
     "getResolutionOfUrl": function () {},
@@ -1854,6 +1946,10 @@ var PIXI = {
     "pluginTarget": {
       "mixin": function () {}
     },
+    "premultiplyBlendMode": {},
+    "premultiplyRgba": function () {},
+    "premultiplyTint": function () {},
+    "premultiplyTintToRgba": function () {},
     "removeItems": function () {},
     "rgb2hex": function () {},
     "sayHello": function () {},
@@ -3433,6 +3529,40 @@ PIXI.loaders.Loader.prototype = {
   "use": function () {}
 };
 PIXI.loaders.Loader.Resource.prototype = {
+  "_createSource": function () {},
+  "_determineCrossOrigin": function () {},
+  "_determineLoadType": function () {},
+  "_determineXhrType": function () {},
+  "_getExtension": function () {},
+  "_getMimeFromXhrType": function () {},
+  "_hasFlag": function () {},
+  "_loadElement": function () {},
+  "_loadSourceElement": function () {},
+  "_loadXdr": function () {},
+  "_loadXhr": function () {},
+  "_onError": function () {},
+  "_onProgress": function () {},
+  "_setFlag": function () {},
+  "_xdrOnTimeout": function () {},
+  "_xhrOnAbort": function () {},
+  "_xhrOnError": function () {},
+  "_xhrOnLoad": function () {},
+  "abort": function () {},
+  "complete": function () {},
+  "load": function () {}
+};
+PIXI.loaders.Loader.default.prototype = {
+  "_loadResource": function () {},
+  "_onComplete": function () {},
+  "_onLoad": function () {},
+  "_prepareUrl": function () {},
+  "add": function () {},
+  "load": function () {},
+  "pre": function () {},
+  "reset": function () {},
+  "use": function () {}
+};
+PIXI.loaders.Loader.default.Resource.prototype = {
   "_createSource": function () {},
   "_determineCrossOrigin": function () {},
   "_determineLoadType": function () {},
