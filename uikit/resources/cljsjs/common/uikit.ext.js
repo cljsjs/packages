@@ -1,0 +1,1 @@
+UIkit.prototype = function() {};
