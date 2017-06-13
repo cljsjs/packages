@@ -37,7 +37,7 @@ RUN set -ex \
     gpg --keyserver keyserver.pgp.com --recv-keys "$key" ; \
   done
 
-ENV NODE_VERSION 7.10.0
+ENV NODE_VERSION 8.1.0
 ENV NPM_CONFIG_LOGLEVEL info
 
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz" \
