@@ -5,7 +5,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.7.5")
+(def +lib-version+ "0.8.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -23,8 +23,8 @@
 
 (deftask package []
   (comp
-    (download :url "https://raw.githubusercontent.com/sanniassin/react-input-mask/0.7.5/build/InputElement.js"
-              :checksum "3560A3f3Af3f3DE5BB3C9D936EF9DAD9")
+    (download :url "https://raw.githubusercontent.com/sanniassin/react-input-mask/0.8.0/build/InputElement.js"
+              :checksum "26788EF9DE9FE430E67F4F0B9B48E40A")
 
     (replace-content :in "InputElement.js" :out "InputElement.js"
       :match #"var React = require.*;"

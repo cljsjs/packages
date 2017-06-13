@@ -3,6 +3,7 @@ var Select = {
     "Creatable": function () {},
     "displayName": {},
     "propTypes": {
+        "arrowRenderer": function() {},
         "addLabelText": function () {},
         "allowCreate": function () {},
         "autofocus": function () {},
@@ -35,6 +36,7 @@ var Select = {
         "onInputChange": function () {},
         "onValueClick": function () {},
         "onMenuScrollToBottom": function () {},
+        "onNewOptionClick": function () {},
         "optionComponent": function () {},
         "optionRenderer": function () {},
         "options": function () {},

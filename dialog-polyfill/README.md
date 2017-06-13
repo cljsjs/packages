@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/dialog-polyfill "0.4.3-0"] ;; latest release
+[cljsjs/dialog-polyfill "0.4.7-0"] ;; latest release
 ```
 [](/dependency)
 

@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.0.0-beta.30")
+(def +lib-version+ "3.0.0-beta.31")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -20,7 +20,7 @@
     (download
       :url (str "https://github.com/vega/vega/releases/download/v" +lib-version+ "/vega.zip")
       :unzip true
-      :checksum "288805712a24d191429f567325134766")
+      :checksum "bb4bcf44a93de8bbaffe8f991a652963")
     (sift :move {(re-pattern "^vega.js$") "cljsjs/development/vega.inc.js"
                  (re-pattern "^vega.min.js$") "cljsjs/production/vega.min.inc.js"})
     (sift :include #{#"^cljsjs"})

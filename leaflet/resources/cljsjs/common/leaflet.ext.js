@@ -652,6 +652,8 @@ var L = {
     "invalidateSize": function () {},
     "setMaxBounds": function () {},
     "locate": function () {},
+    "latLngToContainerPoint": function(){},
+    "containerPointToLatLng": function(){},
     "stopLocate": function () {},
     "remove": function () {},
     "removeLayer": function () {},

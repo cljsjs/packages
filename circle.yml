@@ -1,24 +1,22 @@
-machine:
-  java:
-    version: oraclejdk8
-  environment:
-    BOOT_VERSION: 2.7.1
-    _JAVA_OPTIONS: "-Xms512m -Xmx1024m"
-  node:
-    version: v7.3.0
-dependencies:
-  cache_directories:
-    - "~/.boot/cache/lib"
-    - "~/.boot/cache/bin"
-  pre:
-    - sudo apt-get update
-    - sudo apt-get install jq
-  override:
-    - ./setup_gpg.sh
-    # Run tests & everything
-    # Run in dependency step to cache the deps
-    - ./circle.sh
-test:
-  override:
-    - echo 1:
-        parallel: true
+version: 2
+jobs:
+  build:
+    working_directory: ~/cljsjs
+    docker:
+      - image: cljsjs/build-image:0.0.2
+    steps:
+      - checkout
+      # No easy way to create checksum for cljsjs
+      - restore_cache:
+          key: cljsjs-v1
+      - run: ./setup_gpg.sh
+      - run: ./circle.sh
+      - save_cache:
+          paths:
+            - ~/.m2
+            - ~/.boot/cache/lib
+            - ~/.boot/cache/bin
+          key: cljsjs-v1
+    environment:
+      BOOT_JVM_OPTIONS: "-Xms512m -Xmx1024m"
+      NPM_CONFIG_LOGLEVEL: warn

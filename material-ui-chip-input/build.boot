@@ -1,8 +1,9 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]
+                  [cljsjs/material-ui "0.18.0-0"]])
 
-(def +lib-version+ "0.13.0")
+(def +lib-version+ "0.13.5")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "material-ui-chip-input-%s" +lib-version+))
 
@@ -24,7 +25,7 @@
 
 (deftask download-material-ui-chip-input []
          (download :url url
-                   :checksum "e74e5829c2a01ebd243c692d1e888d18"
+                   :checksum "b13899d60abeb648390fe2eac75a7484"
                    :unzip true))
 
 (def webpack-file-name "webpack.config.js")

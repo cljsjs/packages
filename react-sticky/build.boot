@@ -6,8 +6,9 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "5.0.7")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "6.0.1")
+(def +version+ (str +lib-version+ "-0"))
+(def +lib-folder+ (format "react-sticky-%s" +lib-version+))
 
 (task-options!
  pom  {:project     'cljsjs/react-sticky
@@ -17,23 +18,53 @@
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
-(require '[boot.core :as c]
+(require '[cljsjs.boot-cljsjs.packaging :refer :all]
+         '[boot.core :as boot]
          '[boot.tmpdir :as tmpd]
          '[clojure.java.io :as io]
-         '[clojure.string :as string])
+         '[clojure.string :as string]
+         '[boot.util :refer [sh]])
+
+(def url (format "https://github.com/captivationsoftware/react-sticky/archive/%s.zip" +lib-version+))
 
 (deftask download-react-sticky []
-  (download :url (format "https://github.com/captivationsoftware/react-sticky/archive/%s.zip" +lib-version+)
-            :checksum "DBF6CC0D5557792D42E779B2166D6D77"
+  (download :url url
+            :checksum "371FACEE629677CE015B5AF3AE72651E"
             :unzip true))
+
+(def webpack-file-name "webpack.config.js")
+
+(deftask build []
+  (let [tmp (boot/tmp-dir!)]
+    (with-pre-wrap
+      fileset
+      (doseq [f (boot/input-files fileset)]
+        (let [target (io/file tmp (tmpd/path f))]
+          (io/make-parents target)
+          (io/copy (tmpd/file f) target)))
+      (io/copy
+       (io/file tmp "webpack.config.js")
+       (io/file tmp +lib-folder+ "webpack-cljsjs.config.js"))
+      (binding [*sh-dir* (str (io/file tmp +lib-folder+))]
+        ((sh "npm" "install" "--ignore-scripts"))
+        ((sh "npm" "run" "clean"))
+        ((sh "npm" "run" "compile"))
+        ((sh "npm" "install" "webpack"))
+        ((sh "./node_modules/.bin/webpack" "--config" "webpack-cljsjs.config.js")))
+      (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 (deftask package []
   (comp
     (download-react-sticky)
-    (sift :move {#"^react-sticky-.*/dist/react-sticky.js" "cljsjs/react-sticky/development/react-sticky.inc.js"})
-    (sift :move {#"^react-sticky-.*/dist/react-sticky.min.js" "cljsjs/react-sticky/production/react-sticky.min.inc.js"})
+    (build)
+    (sift :move {#".*/react-sticky.inc.js" "cljsjs/react-sticky/development/react-sticky.inc.js"})
     (sift :include #{#"^cljsjs"})
+
+    (minify :in  "cljsjs/react-sticky/development/react-sticky.inc.js"
+            :out "cljsjs/react-sticky/production/react-sticky.min.inc.js")
+
     (deps-cljs :name "cljsjs.react-sticky"
                :requires ["cljsjs.react" "cljsjs.react.dom"])
     (pom)
     (jar)))
+

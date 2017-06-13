@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "4.4.3")
+(def +lib-version+ "4.5.3")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,9 +18,9 @@
 (deftask package []
   (comp
     (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/pixi.js/" +lib-version+ "/pixi.min.js")
-              :checksum "E826B10D7BF110BBE21EE740899DF9DD")
+              :checksum "163259F437D26155E9317BF250D3A5D1")
     (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/pixi.js/" +lib-version+ "/pixi.js")
-              :checksum "DD8A2E362C58CA9DCABA1DFDA57C297F")
+              :checksum "01A601AFA35063E363BD6A4D75251E1E")
     (sift :move {#"pixi\.js$" "cljsjs/pixi/development/pixi.inc.js"
                  #"pixi\.min\.js$" "cljsjs/pixi/development/pixi.min.inc.js"})
     (sift :include #{#"^cljsjs"})

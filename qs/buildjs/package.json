@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "qs": "^6.4.0"
+  },
+  "devDependencies": {
+    "browserify": "^14.1.0"
+  }
+}
