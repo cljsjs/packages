@@ -6,7 +6,7 @@
          '[boot.core :as boot]
          '[boot.tmpdir :as tmpd]
          '[clojure.java.io :as io]
-         '[boot.util :refer [dosh]])
+         '[boot.util :refer [sh]])
 
 (def +lib-version+ "0.13.0")
 (def +version+ (str +lib-version+ "-0"))
@@ -29,8 +29,8 @@
         (io/make-parents target)
         (io/copy (tmpd/file f) target))
       (binding [boot.util/*sh-dir* (str (io/file tmp (format "material-components-web-%s" +lib-version+)))]
-        (dosh "npm" "install")
-        (dosh "npm" "run" "dist"))
+        ((sh "npm" "install"))
+        ((sh "npm" "run" "dist")))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 (deftask package []
