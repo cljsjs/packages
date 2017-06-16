@@ -4,22 +4,22 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "15.6.0")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "15.6.1")
+(def +version+ (str +lib-version+ "-0"))
 
 (def checksums
   {'cljsjs/react
-   {:dev "D4F4B594AE9FC2F5B36486D074AF010F",
-    :min "14B9CCA6F002450560022FAFB3677F9B"},
+   {:dev "9D6C35A307DB61A32D0D831187622ABE",
+    :min "6EDAD0B09347612195C91E053C8AA038"},
    'cljsjs/react-with-addons
-   {:dev "C111586A68CBD27553E4003FD18A6679",
-    :min "CCD8D962C5C8BD6C53105EAF52F38F87"},
+   {:dev "BA4A1AF5E39A95B1D44827EED5F3258F",
+    :min "0800F9FC2EA2688A0F31B89C5B5D68D0"},
    'cljsjs/react-dom
-   {:dev "BD644C4776F95EF5C392D1844F90F187",
-    :min "1448D1597AF127FD228272ED2782F6EE"},
+   {:dev "8838F58E46DF136892903541A90DFD18",
+    :min "86FCB75992CFC47204ED9A2DAC56860E"},
    'cljsjs/react-dom-server
-   {:dev "994AFCA31107DF179482C2EEAE345F73",
-    :min "0DF148A737022B3F2BCE4DBFEB4A8111"}})
+   {:dev "68A97E8D961E6C203528B5A0B20E7B78",
+    :min "EBFA1A1C8670FE63BF839F51CEF61473"}})
 
 (def npm-project {'cljsjs/react "react"
                   'cljsjs/react-with-addons "react"
