@@ -6,9 +6,9 @@
          '[boot.core :as boot]
          '[boot.tmpdir :as tmpd]
          '[clojure.java.io :as io]
-         '[boot.util :refer [sh]])
+         '[boot.util :refer [dosh]])
 
-(def +lib-version+ "0.12.1")
+(def +lib-version+ "0.13.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -29,15 +29,16 @@
         (io/make-parents target)
         (io/copy (tmpd/file f) target))
       (binding [boot.util/*sh-dir* (str (io/file tmp (format "material-components-web-%s" +lib-version+)))]
-        ((sh "npm" "install"))
-        ((sh "npm" "run" "dist")))
+        (dosh "npm" "install")
+        (dosh "npm" "run" "postinstall")
+        (dosh "npm" "run" "dist"))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 (deftask package []
   (task-options! push {:ensure-branch nil})
   (comp
    (download :url (str "https://github.com/material-components/material-components-web/archive/v" +lib-version+ ".zip")
-             :checksum "036cae2737b5635211b7a763f2fc8c1c"
+             :checksum "b0a844d7b19a5e936a1628c43c9fb1a4"
              :unzip true)
 
    (build-material-components)
