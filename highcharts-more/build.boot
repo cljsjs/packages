@@ -10,7 +10,10 @@
 (set-env!
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]
-                 [cljsjs/highcharts  "5.0.12-0" :scope "provided"]])
+                 [cljsjs/highcharts  "5.0.12-0"]])
+
+(deps-cljs :name "cljsjs.highcharts-more"
+           :requires ["cljsjs.highcharts"])
 
 (task-options!
  pom  {:project     'cljsjs/highcharts-more
