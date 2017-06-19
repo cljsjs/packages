@@ -37,6 +37,8 @@ This package also provides following namespaces:
 
 Notes:
 
+- The extern is generated without 3d, more or modules, so probably it is missing something
+    - Send fixes as PR!
 - Style by CSS version is packaged separately: https://github.com/cljsjs/packages/tree/master/highcharts-css
     - That package doesn't currently package the modules
 
