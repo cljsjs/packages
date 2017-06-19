@@ -8,7 +8,7 @@ jobs:
       - checkout
       # No easy way to create checksum for cljsjs
       - restore_cache:
-          key: cljsjs-v1
+          key: cljsjs-v2
       - run: ./setup_gpg.sh
       - run: ./circle.sh
       - save_cache:
@@ -16,7 +16,7 @@ jobs:
             - ~/.m2
             - ~/.boot/cache/lib
             - ~/.boot/cache/bin
-          key: cljsjs-v1
+          key: cljsjs-v2
     environment:
       BOOT_JVM_OPTIONS: "-Xms512m -Xmx1024m"
       NPM_CONFIG_LOGLEVEL: warn
