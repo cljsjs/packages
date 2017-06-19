@@ -31,27 +31,29 @@
          '[clojure.string :as string])
 
 (defn path->foreign-lib [path]
-  (if (not= "cljsjs/highcharts/development/highcharts.js" path)
+  (if (= "cljsjs/highcharts/development/highcharts.inc.js" path)
+    {:file-min "cljsjs/highcharts/production/highcharts.min.inc.js"
+     :file path
+     :provides ["cljsjs.highcharts"]}
     {:file-min path
      :file (-> path
-               (string/replace #"\.js$" ".min.js")
+               (string/replace #"\.inc\.js$" ".min.inc.js")
                (string/replace #"/development/" "/production/"))
      :requires ["cljsjs.highcharts"]
      :provides [(-> path
-                    (string/replace #"\.js$" "")
+                    (string/replace #"\.inc\.js$" "")
                     (string/replace #"/development/" "/")
                     (string/replace #"/" "."))]}))
 
-(deftask generate-extra-deps []
+(deftask generate-deps []
   (let [tmp (c/tmp-dir!)
         new-deps-file (io/file tmp "deps.cljs")]
     (with-pre-wrap
       fileset
-      (let [existing-deps-file (->> fileset c/input-files (c/by-name ["deps.cljs"]) first)
-            existing-deps      (-> existing-deps-file c/tmp-file slurp read-string)
-            extra-files        (->> fileset c/input-files (c/by-re [#"^cljsjs/highcharts/development/(.*/)?.*\.js$"]))
-            foreign-libs       (keep identity (map (comp path->foreign-lib c/tmp-path) extra-files))
-            new-deps           (update-in existing-deps [:foreign-libs] concat foreign-libs)]
+      (let [extra-files        (->> fileset c/input-files (c/by-re [#"^cljsjs/highcharts/development/(.*/)?.*\.inc\.js$"]))
+            foreign-libs       (map (comp path->foreign-lib c/tmp-path) extra-files)
+            new-deps           {:foreign-libs foreign-libs
+                                :externs ["cljsjs/highcharts/common/highcharts.ext.js"]}]
         (spit new-deps-file (pr-str new-deps))
         (-> fileset (c/add-resource tmp) c/commit!)))))
 
@@ -61,16 +63,12 @@
               :checksum "0402F6D3ADD60DAAA8D8B87643784C2A"
               :unzip true)
     (target)
-    (sift :move {
-                 #"^code/highcharts\.js$"      "cljsjs/highcharts/production/highcharts.min.inc.js"
-                 #"^code/highcharts\.src\.js$" "cljsjs/highcharts/development/highcharts.inc.js"
-                 #"^code/([^/\.]*)\.js$"      "cljsjs/highcharts/production/$1.min.js"
-                 #"^code/([^/\.]*)\.src\.js$" "cljsjs/highcharts/development/$1.js"
-                 #"^code/modules/([^/\.]*)\.js$"      "cljsjs/highcharts/production/modules/$1.min.js"
-                 #"^code/modules/([^/\.]*)\.src\.js$" "cljsjs/highcharts/development/modules/$1.js"})
+    (sift :move {#"^code/([^/\.]*)\.js$"      "cljsjs/highcharts/production/$1.min.inc.js"
+                 #"^code/([^/\.]*)\.src\.js$" "cljsjs/highcharts/development/$1.inc.js"
+                 #"^code/modules/([^/\.]*)\.js$"      "cljsjs/highcharts/production/modules/$1.min.inc.js"
+                 #"^code/modules/([^/\.]*)\.src\.js$" "cljsjs/highcharts/development/modules/$1.inc.js"})
     (target)
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.highcharts")
-    (generate-extra-deps)
+    (generate-deps)
     (pom)
     (jar)))
