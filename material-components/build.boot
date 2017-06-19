@@ -30,7 +30,7 @@
         (io/copy (tmpd/file f) target))
       (binding [boot.util/*sh-dir* (str (io/file tmp (format "material-components-web-%s" +lib-version+)))]
         (dosh "npm" "install")
-        (dosh "npm" "run" "postinstall")
+        ; (dosh "npm" "run" "postinstall")
         (dosh "npm" "run" "dist"))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
 

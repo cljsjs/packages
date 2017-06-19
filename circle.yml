@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/cljsjs
     docker:
-      - image: cljsjs/build-image:0.0.3
+      - image: cljsjs/build-image:0.0.4
     steps:
       - checkout
       # No easy way to create checksum for cljsjs
