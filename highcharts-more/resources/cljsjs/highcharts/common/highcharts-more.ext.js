@@ -1,0 +1,1 @@
+// This simply extends the highcharts options while maintaining api
