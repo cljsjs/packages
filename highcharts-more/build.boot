@@ -12,9 +12,6 @@
  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]
                  [cljsjs/highcharts  "5.0.12-0"]])
 
-(deps-cljs :name "cljsjs.highcharts-more"
-           :requires ["cljsjs.highcharts"])
-
 (task-options!
  pom  {:project     'cljsjs/highcharts-more
        :version     +version+
@@ -32,6 +29,7 @@
    (sift :move {#"highcharts-more.js"     "cljsjs/highcharts/production/highcharts-more.min.inc.js"})
    (sift :move {#"highcharts-more.src.js"     "cljsjs/highcharts/development/highcharts-more.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.highcharts-more")
+   (deps-cljs :name "cljsjs.highcharts-more"
+	            :requires ["cljsjs.highcharts"])
    (pom)
    (jar)))
