@@ -1,3 +1,4 @@
+var UIkit = {};
 
 UIkit.prototype = function() {};
 
