@@ -29,8 +29,10 @@
         (io/make-parents target)
         (io/copy (tmpd/file f) target))
       (binding [boot.util/*sh-dir* (str (io/file tmp (format "material-components-web-%s" +lib-version+)))]
+        ;; Material-components uses Lerna which is quite stupid and presumes
+        ;; that the project being built MUST BE a git repository: https://github.com/lerna/lerna/issues/555
+        (dosh "git" "init")
         (dosh "npm" "install")
-        ; (dosh "npm" "run" "postinstall")
         (dosh "npm" "run" "dist"))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
 
@@ -43,12 +45,11 @@
 
    (build-material-components)
 
-   (sift :move {(re-pattern (str "^material-components-web-" +lib-version+ "/build/material-components-web.js$")) "cljsjs/material-components/development/material-components.inc.js"})
-   (sift :move {(re-pattern (str "^material-components-web-" +lib-version+ "/build/material-components-web.css$")) "cljsjs/material-components/development/material-components.inc.css"})
-   (sift :move {(re-pattern (str "^material-components-web-" +lib-version+ "/build/material-components-web.min.js$")) "cljsjs/material-components/production/material-components.min.inc.js"})
-   (sift :move {(re-pattern (str "^material-components-web-" +lib-version+ "/build/material-components-web.min.css$")) "cljsjs/material-components/production/material-components.min.inc.css"})
-   (sift :move {(re-pattern (str "^material-components-web-" +lib-version+ "/packages/([^/]*)/([^/]*).scss$"))
-                "cljsjs/material-components/development/packages/$1/$2.scss"})
+   (sift :move {"^material-components-web-[^/]*/build/material-components-web.js$"      "cljsjs/material-components/development/material-components.inc.js"
+                "^material-components-web-[^/]*/build/material-components-web.css$"     "cljsjs/material-components/development/material-components.inc.css"
+                "^material-components-web-[^/]*/build/material-components-web.min.js$"  "cljsjs/material-components/production/material-components.min.inc.js"
+                "^material-components-web-[^/]*/build/material-components-web.min.css$" "cljsjs/material-components/production/material-components.min.inc.css"
+                "^material-components-web-[^/]*/packages/([^/]*)/([^/]*).scss$"         "cljsjs/material-components/development/packages/$1/$2.scss"})
 
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.material-components")

@@ -16,11 +16,8 @@
         :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
 
 (require '[boot.core :as c]
-         '[boot.tmpdir :as tmpd]
          '[clojure.java.io :as io]
-         '[clojure.string :as string]
-         '[boot.util :refer [sh]]
-         '[boot.tmpdir :as tmpd])
+         '[boot.util :refer [sh]])
 
 (deftask generate-lang-deps []
   (let [tmp (c/temp-dir!)
@@ -33,9 +30,9 @@
     (with-pre-wrap
       fileset
       (let [existing-deps-file (->> fileset c/input-files (c/by-name ["deps.cljs"]) first)
-            existing-deps      (-> existing-deps-file tmpd/file slurp read-string)
+            existing-deps      (-> existing-deps-file c/tmp-file slurp read-string)
             lang-files         (->> fileset c/input-files (c/by-re [#"^cljsjs/common/highlight/.*\.inc\.js"]))
-            langs              (map (comp lang->foreign-lib path->lang tmpd/path) lang-files)
+            langs              (map (comp lang->foreign-lib path->lang c/tmp-path) lang-files)
             new-deps           (update-in existing-deps [:foreign-libs] concat langs)]
         (spit new-deps-file (pr-str new-deps))
         (-> fileset (c/add-resource tmp) c/commit!)))))
@@ -46,9 +43,9 @@
       fileset
       ; Copy all files in fileset to temp directory
       (doseq [f (->> fileset c/input-files)
-              :let [target  (io/file tmp (tmpd/path f))]]
+              :let [target  (io/file tmp (c/tmp-path f))]]
         (io/make-parents target)
-        (io/copy (tmpd/file f) target))
+        (io/copy (c/tmp-file f) target))
       (binding [boot.util/*sh-dir* (str tmp)]
         ((sh "npm" "install"))
         ((sh "node" "tools/build.js" "-t" "cdn" ":none")))
