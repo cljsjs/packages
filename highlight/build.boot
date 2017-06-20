@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "9.6.0")
+(def +lib-version+ "9.12.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -20,7 +20,7 @@
          '[boot.util :refer [sh]])
 
 (deftask generate-lang-deps []
-  (let [tmp (c/temp-dir!)
+  (let [tmp (c/tmp-dir!)
         new-deps-file (io/file tmp "deps.cljs")
         path->lang (fn [path] (second (re-matches #"cljsjs/common/highlight/(.*)\.inc\.js" path)))
         lang->foreign-lib (fn [lang]
@@ -38,7 +38,7 @@
         (-> fileset (c/add-resource tmp) c/commit!)))))
 
 (deftask build-highlightjs []
-  (let [tmp (c/temp-dir!)]
+  (let [tmp (c/tmp-dir!)]
     (with-pre-wrap
       fileset
       ; Copy all files in fileset to temp directory
@@ -55,8 +55,8 @@
   (comp
     (download :url (format "https://github.com/isagalaev/highlight.js/archive/%s.zip" +lib-version+)
               :unzip true
-              :checksum "ABC1787BDD25C96C29802321D75C8935")
-    (sift :move {#"^highlight\.js-\d?\.\d?.\d?/" ""})
+              :checksum "BDFA4E9FE609772C4589058D30A08894")
+    (sift :move {#"^highlight\.js-\d*\.\d*.\d*/" ""})
     (build-highlightjs)
     (sift :move {#"build/highlight\.min\.js" "cljsjs/common/highlight.inc.js"})
     (deps-cljs :name "cljsjs.highlight")
