@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-TAG="cljsjs/build-image:0.0.4"
+TAG="cljsjs/build-image:0.0.5"
 
 docker build -t "$TAG" .
 docker push "$TAG"
