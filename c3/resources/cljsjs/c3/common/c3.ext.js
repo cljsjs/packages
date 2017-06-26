@@ -26,6 +26,7 @@ var c3 = {
       "category": function () {},
       "categories": function () {},
       "color": function () {},
+      "colors": function () {},
       "x": function () {},
       "xs": function () {},
       "axis": function () {},
