@@ -1649,6 +1649,12 @@ React.Children.forEach;
 React.Children.only;
 
 /**
+ * @param {Object} children Children tree container.
+ * @return {Array.<Object>} Flat array of children.
+ */
+React.Children.toArray;
+
+/**
  * @type {Object}
  */
 React.addons;
