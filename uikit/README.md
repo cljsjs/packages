@@ -1,4 +1,4 @@
-# cljsjs/jquery-timepicker
+# cljsjs/uikit
 
 [](dependency)
 ```clojure
