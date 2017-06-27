@@ -39,6 +39,12 @@ var ReactSanfona = {
       "title": {
         "isRequired": function () {}
       },
+      "disabled": {
+        "isRequired": function () {}
+      },
+      "disabledClassName": {
+        "isRequired": function () {}
+      },
       "expandedClassName": {
         "isRequired": function () {}
       },
@@ -46,6 +52,44 @@ var ReactSanfona = {
         "isRequired": function () {}
       },
       "titleClassName": {
+        "isRequired": function () {}
+      },
+      "uuid": {
+        "isRequired": function () {}
+      }
+    }
+  },
+  "AccordionItemTitle": {
+    "propTypes": {
+      "className": {
+        "isRequired": function () {}
+      },
+      "onClick": {
+        "isRequired": function () {}
+      },
+      "title": {
+        "isRequired": function () {}
+      },
+      "uuid": {
+        "isRequired": function () {}
+      }
+    }
+  },
+  "AccordionItemBody": {
+    "propTypes": {
+      "className": {
+        "isRequired": function () {}
+      },
+      "maxHeight": {
+        "isRequired": function () {}
+      },
+      "duration": {
+        "isRequired": function () {}
+      },
+      "overflow": {
+        "isRequired": function () {}
+      },
+      "uuid": {
         "isRequired": function () {}
       }
     }
