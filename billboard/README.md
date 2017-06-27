@@ -1,8 +1,8 @@
-# cljsjs/c3
+# cljsjs/billboard
 
 [](dependency)
 ```clojure
-[cljsjs/c3 "0.4.14-0"] ;; latest release
+[cljsjs/billboard "1.0.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.c3))
+  (:require cljsjs.billboard))
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
