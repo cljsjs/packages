@@ -6,7 +6,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.10.0")
+(def +lib-version+ "2.11.2")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -22,11 +22,11 @@
   (comp
 
    (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/antd/" +lib-version+ "/antd-with-locales.js")
-             :checksum "335D5349D7E46A894876CD0647BB1B41"
+             :checksum "9EAE67CC4C6E04F7AFCFF310EFC108EE"
              :unzip false)
 
    (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/antd/" +lib-version+ "/antd-with-locales.min.js")
-             :checksum "E558194F4D54EF9075030E42B1EBBF78"
+             :checksum "C74A69A15AD5D1F445F95CBB97505F4D"
              :unzip false)
 
    (sift :move {#"^antd-with-locales.js$"     "cljsjs/antd/development/antd.inc.js"
