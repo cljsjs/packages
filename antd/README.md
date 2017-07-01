@@ -19,7 +19,7 @@ you can require the packaged library like so:
 This package **does not include antd's CSS!** You can include a precompiled
 version of the CSS via [CDN](https://cdnjs.com/libraries/antd), or you can
 follow instructions for customization with
-LESS [here](https://ant.design/docs/react/customize-theme).
+LESS [here](https://ant.design/docs/react/customize-theme). Note that the version number of the CSS stylesheet used should match the version of cljsjs/antd used to prevent any styling issues.
 
 As of `[cljsjs/antd "2.8.0-0"]`, the precompiled `antd` includes locales.
 Locales are present under the global `antd` object, *e.g.*:
