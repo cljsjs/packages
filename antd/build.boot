@@ -39,8 +39,8 @@
 
    (sift :move {#"^antd-with-locales.js$"     "cljsjs/antd/development/antd.inc.js"
                 #"^antd-with-locales.min.js$" "cljsjs/antd/production/antd.min.inc.js"
-                #"^antd.css$"                 "cljsjs/antd/development/antd.css"
-                #"^antd.min.css$"             "cljsjs/antd/production/antd.min.css"})
+                #"^antd.css$"                 "cljsjs/antd/development/antd.inc.css"
+                #"^antd.min.css$"             "cljsjs/antd/production/antd.min.inc.css"})
 
    (sift :include #{#"cljsjs"})
 
