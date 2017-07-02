@@ -29,8 +29,18 @@
              :checksum "C74A69A15AD5D1F445F95CBB97505F4D"
              :unzip false)
 
+   (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/antd/" +lib-version+ "/antd.css")
+             :checksum "B2B09E4D5144ADA3EAF2956EF7639B57"
+             :unzip false)
+
+   (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/antd/" +lib-version+ "/antd.min.css")
+             :checksum "0BDED055B5186C84E0F21C8FEF40BA42"
+             :unzip false)
+
    (sift :move {#"^antd-with-locales.js$"     "cljsjs/antd/development/antd.inc.js"
-                #"^antd-with-locales.min.js$" "cljsjs/antd/production/antd.min.inc.js"})
+                #"^antd-with-locales.min.js$" "cljsjs/antd/production/antd.min.inc.js"
+                #"^antd.css$"                 "cljsjs/antd/development/antd.css"
+                #"^antd.min.css$"             "cljsjs/antd/production/antd.min.css"})
 
    (sift :include #{#"cljsjs"})
 
