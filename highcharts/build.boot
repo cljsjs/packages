@@ -15,17 +15,6 @@
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"CC BY-NC" "http://creativecommons.org/licenses/by-nc/3.0/"}})
 
-(def files
-  ["highcharts" "highcharts-more" "highcharts-3d" "modules/accessibility"
-   "modules/annotations" "modules/boost" "modules/broken-axis"
-   ;; canvas-tools is not part of latest release
-   ;; looks like it was last included in v4.2.7 so maybe it is deprecated?
-   ; "modules/canvas-tools"
-   "modules/data" "modules/exporting"
-   "modules/drilldown" "modules/funnel" "modules/heatmap"
-   "modules/no-data-to-display" "modules/offline-exporting"
-   "modules/solid-gauge" "modules/treemap"])
-
 (require '[boot.core :as c]
          '[clojure.java.io :as io]
          '[clojure.string :as string])

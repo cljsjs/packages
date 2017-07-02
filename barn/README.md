@@ -1,8 +1,8 @@
-# cljsjs/uikit
+# cljsjs/barn
 
 [](dependency)
 ```clojure
-[cljsjs/uikit "3.0.0-beta.25-1"] ;; latest release
+[cljsjs/barn "0.2.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.uikit))
+  (:require cljsjs.barn))
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
