@@ -1,13 +1,9 @@
-(ns cljsjs.babel-standalone
-  "Provides cljs.closure/js-transforms :cljsjs/babel preprocess implementation.
+(require '[clojure.java.io :as io]
+         '[cljs.build.api :as b]
+         '[cljs.closure :as closure]
+         '[clojure.data.json :as json])
 
-  Babel options (http://babeljs.io/docs/usage/api/#options) can be configured
-  using :cljsjs/babel-opts property on the foreign lib maps."
-  (:require [clojure.java.io :as io]
-            [cljs.build.api :as b]
-            [cljs.closure :as closure]
-            [clojure.data.json :as json])
-  (:import javax.script.ScriptEngineManager))
+(import 'javax.script.ScriptEngineManager)
 
 ;;
 ;; Low level API
