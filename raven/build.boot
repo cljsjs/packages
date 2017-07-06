@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.14.2")
+(def +lib-version+ "3.16.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,7 +18,7 @@
 (deftask package []
   (comp
     (download :url (format "https://github.com/getsentry/raven-js/archive/%s.zip" +lib-version+)
-              :checksum "E464F8F3FF67ED24FFF1E04B1E02B20A"
+              :checksum "8D8093CBEE7D35C3E175FBB6ACF06E68"
               :unzip true)
     (sift :move { #"^raven-js.*/dist/raven\.js$"      "cljsjs/raven/development/raven.inc.js"
                   #"^raven-js.*/dist/raven\.min\.js$" "cljsjs/raven/production/raven.min.inc.js" })
