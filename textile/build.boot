@@ -21,7 +21,7 @@
   (comp
     (download :url (format "https://cdnjs.cloudflare.com/ajax/libs/textile-js/%s/textile.min.js" +lib-version+)
               :checksum "7db6c0f13884c1bf743854ecba413cc2")
-    (download :url (format "https://cdnjs.cloudflare.com/ajax/libs/textile-js/%s/textile.js")
+    (download :url (format "https://cdnjs.cloudflare.com/ajax/libs/textile-js/%s/textile.js" +lib-version+)
               :checksum "255188e022581421b31deaeb24677b17")
     (sift :move {#"^textile.js-\d.\d.\d/textile.js$"     "cljsjs/textile/development/textile.inc.js"
                  #"^textile.js-\d.\d.\d/textile.min.js$" "cljsjs/textile/production/textile.min.inc.js"})
