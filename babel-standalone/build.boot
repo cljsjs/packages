@@ -7,7 +7,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "6.18.1")
-(def +version+ (str +lib-version+ "-2"))
+(def +version+ (str +lib-version+ "-3-SNAPSHOT"))
 
 (task-options!
  pom  {:project     'cljsjs/babel-standalone
