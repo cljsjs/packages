@@ -26,7 +26,7 @@
 
 (deftask download-semantic-ui-react []
   (download :url      url
-            :checksum "6BFB3DF711F622F457504ACA949C0F57"))
+            :checksum "8462E312FE38B411A90FC766536C10B1"))
 
 (deftask package []
   (comp
