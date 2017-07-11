@@ -1,7 +1,7 @@
 {:foreign-libs [{:file "cljsjs/create-react-class/development/create-react-class.inc.js"
                  :provides ["create-react-class"]
                  :requires ["react"]
-                 :js-global "createReactClass"
+                 :global-exports '{create-react-class createReactClass}
                  :file-min "cljsjs/create-react-class/production/create-react-class.min.inc.js"}
                 {:file "cljsjs/create-react-class/development/create-react-class.inc.js"
                  :provides ["cljsjs.create-react-class"]

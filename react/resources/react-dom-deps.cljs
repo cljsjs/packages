@@ -1,7 +1,7 @@
 {:foreign-libs [{:file "cljsjs/react-dom/development/react-dom.inc.js"
                  :provides ["react-dom"]
                  :requires ["react"]
-                 :js-global "ReactDOM"
+                 :global-exports '{react-dom/server ReactDOM}
                  :file-min "cljsjs/react-dom/production/react-dom.min.inc.js"}
                 {:file "cljsjs/react-dom/development/react-dom.inc.js"
                  :provides ["cljsjs.react.dom"]
