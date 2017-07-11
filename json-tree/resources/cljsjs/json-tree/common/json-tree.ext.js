@@ -1,9 +1,10 @@
 /******************************
  * Manually generated
  ******************************/
-var JsonTree = {
+var jsonTree = {
     "jsonTree": {
-        create: function () {},
+        "create": function () {},
+        "loadData": function () {}
     }
 };
 jsonTree.Tree.prototype = {

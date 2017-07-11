@@ -16,10 +16,6 @@
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
-;; may use later if pixi-sound provied versioned download url
-(deftask url-download []
-  (download :url "https://pixijs.github.io/pixi-sound/dist/pixi-sound.js"))
-
 (deftask package []
   (comp
    (download :url (str "https://github.com/summerstyle/jsonTreeViewer/archive/" +lib-version+ ".zip")

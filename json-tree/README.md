@@ -14,9 +14,11 @@ you can require and use the packaged library like so:
 (ns application.core
   (:require cljsjs.json-tree))
 
-(def pixi-sound js/JsonTree)
+(def tree (.create js/JsonTree #js {} dom-element))
+
+(.loadData tree (clj->js {...}))
 ```
 
-Externs were generated manually, so it does not include all the api.
+Externs were generated manually, so it does not include all the api and only create & loadData are fully tested.
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
