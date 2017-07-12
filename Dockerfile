@@ -8,10 +8,10 @@ FROM clojure:boot-2.7.1
 # - node & npm
 # - Closure compiler jar file /usr/local/bin/closure-compiler.jar
 
-# Jq, for json manipulation
-# used by cicle.sh to check for running Circle builds
+# - Jq, for json manipulation, used by cicle.sh to check for running Circle builds
+# - patch
 
-RUN apt-get update && apt-get install -y --no-install-recommends jq \
+RUN apt-get update && apt-get install -y --no-install-recommends jq patch \
             && rm -rf /var/lib/apt/lists/*
 
 # Node
