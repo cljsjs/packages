@@ -8,7 +8,7 @@
          '[clojure.java.io :as io]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.21.2")
+(def +lib-version+ "0.22.4")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -37,7 +37,7 @@
   (comp
    (download :url (format "https://github.com/recharts/recharts/archive/v%s.zip" +lib-version+)
              :unzip true
-             :checksum "CD48B2810D6C26614F6A42009D632F02")
+             :checksum "F4C6026BE9EC65693A14935FCA67132E")
    (sift :move {#"^recharts-\d?\.\d*?\.\d?/" ""})
    (build-recharts)
    (sift :move {#"umd/Recharts\.js" "cljsjs/recharts/development/Recharts.inc.js"
