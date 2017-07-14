@@ -32,7 +32,7 @@ Or in next ClojureScript version:
   [{:file "src"
     :module-type :es6
     ;; changed
-    ;; notice that the symbol doesn't need to be quoted in project.clj or .cljs.edn
+    ;; notice that the symbol should not be quoted in project.clj or .cljs.edn
     :preprocess 'cljsjs.babel-standalone/transform
     :cljsjs.babel-standalone/babel-opts {:presets ["react" "es2016"]}}]
 ```
