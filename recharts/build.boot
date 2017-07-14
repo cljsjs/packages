@@ -20,7 +20,7 @@
        :license     {"MIT" "https://raw.githubusercontent.com/react-bootstrap/react-bootstrap/master/LICENSE"}})
 
 (deftask build-recharts []
-  (let [tmp (c/temp-dir!)]
+  (let [tmp (c/tmp-dir!)]
     (with-pre-wrap
       fileset
                                         ; Copy all files in fileset to temp directory
