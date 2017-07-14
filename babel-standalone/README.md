@@ -28,11 +28,13 @@ foreign library map using property `:cljsjs.babel-standalone/babel-opts`:
 Or in next ClojureScript version:
 
 ```clojure
-:foreign-libs [{:file "src"
-                :module-type :es6
-                 ;; changed, notice that the symbol doesn't need to be quoted in project.clj or .cljs.edn
-                :preprocess 'cljsjs.babel-standalone/transform
-                :cljsjs.babel-standalone/babel-opts {:presets ["react" "es2016"]}}]
+:foreign-libs
+  [{:file "src"
+    :module-type :es6
+    ;; changed
+    ;; notice that the symbol doesn't need to be quoted in project.clj or .cljs.edn
+    :preprocess 'cljsjs.babel-standalone/transform
+    :cljsjs.babel-standalone/babel-opts {:presets ["react" "es2016"]}}]
 ```
 
 ## Use in browsers
