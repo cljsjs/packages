@@ -1,12 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]
-                  [cljsjs/jquery    "3.2.1-0"]])
+                  [cljsjs/jquery      "3.2.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "3.0.0-beta.25")
-(def +version+ (str +lib-version+ "-2"))
+(def +version+ (str +lib-version+ "-3"))
 
 (task-options!
   pom  {:project     'cljsjs/uikit
@@ -29,6 +29,6 @@
                  (re-pattern (str "uikit-" +lib-version+ "/dist/js/uikit-icons.min.js")) "cljsjs/uikit/production/uikit-icons.min.inc.js"
                  (re-pattern (str "uikit-" +lib-version+ "/dist/css/uikit.min.css"))     "cljsjs/uikit/production/uikit.min.inc.css"
                  (re-pattern (str "uikit-" +lib-version+ "/dist/css/uikit-rtl.min.css")) "cljsjs/uikit/production/uikit-rtl.min.inc.css"})
-   (sift :include #{#"^cljsjs"})
+   (sift :include #{#"^cljsjs" #"^deps.cljs$"})
    (pom)
    (jar)))
