@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/material-ui-chip-input "0.13.5-0"] ;; latest release
+[cljsjs/material-ui-chip-input "0.15.0-0"] ;; latest release
 ```
 [](/dependency)
 
