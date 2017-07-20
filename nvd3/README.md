@@ -6,7 +6,7 @@ Add the following dependency to the `:dependencies` in your `project.clj` file:
 
 [](dependency)
 ```clojure
-[cljsjs/nvd3 "1.8.2-1"] ;; latest release
+[cljsjs/nvd3 "1.8.5-0"] ;; latest release
 ```
 [](/dependency)
 
