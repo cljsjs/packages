@@ -1,0 +1,1 @@
+{:foreign-libs [{:file "cljsjs/development/skel.inc.js", :provides ["cljsjs.skel"]}], :externs ["cljsjs/common/skel.ext.js"]}
