@@ -7,7 +7,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.5.0")
+(def +lib-version+ "1.6.0")
 (def +version+ (str +lib-version+ "-0"))
 
 
@@ -21,7 +21,7 @@
 
 (deftask download-grommet []
   (download :url      (format "https://github.com/grommet/grommet-bower/archive/v%s.zip" +lib-version+)
-            :checksum "771F916A3359811AF8AE75AB3FCF133B" ;;MD5
+            :checksum "D5541BCEE647E26E1802EC10DB5BDC58" ;;MD5
             :unzip    true))
 
 (deftask package []
