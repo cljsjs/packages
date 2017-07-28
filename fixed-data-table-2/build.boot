@@ -8,7 +8,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "0.7.17")
-(def +version+ (str +lib-version+ "-1"))
+(def +version+ (str +lib-version+ "-2"))
 
 (task-options!
  pom  {:project     'cljsjs/fixed-data-table-2
@@ -44,7 +44,7 @@
                  "cljsjs/production/fixed-data-table-style.min.inc.css"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.fixed-data-table-2"
-               :requires ["cljsjs.react" "cljsjs.object-assign-shim"])
+               :requires ["cljsjs.react" "cljsjs.react.dom" "cljsjs.object-assign-shim"])
     (pom)
     (jar)))
 

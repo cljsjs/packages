@@ -23,7 +23,7 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['', '.js', '.scss', '.json']
+    extensions: ['.js', '.scss', '.json']
   },
 
   module: {
@@ -31,23 +31,26 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /(node_modules)/,
-        loader: 'babel'
+        loader: 'babel-loader'
       },
       {
         test: /(\.scss|\.css)$/,
-        loader: ExtractTextPlugin.extract('style-loader', 'css?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!sass?sourceMap')
+        loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!sass?sourceMap' })
       }
     ]
   },
-
-  postcss: [autoprefixer],
 
   node: {
     fs: 'empty'
   },
 
   plugins: [
-    new ExtractTextPlugin( entryName + '.css', {allChunks: true})
+    new ExtractTextPlugin({allChunks: true, filename: entryName + '.css'}),
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        postcss: [autoprefixer]
+      }
+    })
   ]
 }
 

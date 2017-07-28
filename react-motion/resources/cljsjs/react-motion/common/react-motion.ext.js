@@ -28,5 +28,6 @@ var ReactMotion = {
             "damping": {}
         }
     },
+    "stripStyle": function () {},
     "reorderKeys": function () {}
 }

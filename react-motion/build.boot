@@ -9,7 +9,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "0.4.5")
+(def +lib-version+ "0.5.0")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "react-motion-%s" +lib-version+))
 
@@ -23,7 +23,7 @@
 
 (deftask download-react-motion []
   (download :url      (format "https://github.com/chenglou/react-motion/archive/v%s.zip" +lib-version+)
-            :checksum "21de9c575b35f67a083a43a2987c3c91"
+            :checksum "75e1c454fedc2ff19bf79817d57bdc48"
             :unzip    true))
 
 (deftask build-react-motion []
@@ -37,7 +37,7 @@
                (io/copy (tmpd/file f) target))
              (binding [boot.util/*sh-dir* (str (io/file tmp +lib-folder+))]
                ((sh "npm" "install"))
-               ((sh "npm" "run" "prerelease")))
+               ((sh "npm" "run" "prepublish")))
              (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 (deftask package []

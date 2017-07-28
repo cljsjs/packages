@@ -1139,12 +1139,21 @@ var PIXI = {
   },
   "interaction": {
     "InteractionData": function () {},
+    "InteractionEvent": function () {},
     "InteractionManager": {
       "EventEmitter": {
         "EventEmitter": function () {},
         "prefixed": {}
       },
       "prefixed": {}
+    },
+    "InteractionTrackingData": {
+      "FLAGS": {
+        "LEFT_DOWN": {},
+        "NONE": {},
+        "OVER": {},
+        "RIGHT_DOWN": {}
+      }
     },
     "__esModule": {},
     "interactiveTarget": {
@@ -3456,6 +3465,10 @@ PIXI.interaction.InteractionData.prototype = {
   "_reset": function () {},
   "getLocalPosition": function () {}
 };
+PIXI.interaction.InteractionEvent.prototype = {
+  "_reset": function () {},
+  "stopPropagation": function () {}
+};
 PIXI.interaction.InteractionManager.prototype = {
   "addEvents": function () {},
   "addListener": function () {},
@@ -3505,6 +3518,9 @@ PIXI.interaction.InteractionManager.EventEmitter.prototype = {
   "removeAllListeners": function () {},
   "removeListener": function () {},
   "setMaxListeners": function () {}
+};
+PIXI.interaction.InteractionTrackingData.prototype = {
+  "_doSet": function () {}
 };
 PIXI.loaders.Loader.prototype = {
   "_loadResource": function () {},
@@ -4123,4 +4139,5 @@ PIXI.utils.EventEmitter.prototype = {
 };
 /**********************************************************************
  * End Generated Extern for PIXI
- /**********************************************************************/
+/**********************************************************************/
+

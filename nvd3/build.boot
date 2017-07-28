@@ -5,8 +5,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.8.2")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "1.8.5")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/nvd3
