@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.1.3")
+(def +lib-version+ "2.2.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,9 +18,9 @@
 (deftask package []
   (comp
     (download :url (format "https://unpkg.com/styled-classnames@%s/build/styled-classnames.umd.js" +lib-version+)
-              :checksum "B3E9270B9E0D14AE445E1E8036B4CB6D")
+              :checksum "1E4D7718F538F48495DE91349E68F2DC")
     (download :url (format "https://unpkg.com/styled-classnames@%s/build/styled-classnames.umd.min.js" +lib-version+)
-              :checksum "22FD4FDDF57843395D578C70342F47E5")
+              :checksum "E7BAAC0D744C1CFAB281C9E4E48EF7C5")
     (sift :move {#"styled-classnames\.umd\.js" "cljsjs/styled-classnames/development/styled-classnames.inc.js"
                  #"styled-classnames\.umd\.min\.js" "cljsjs/styled-classnames/production/styled-classnames.min.inc.js"})
     (sift :include #{#"^cljsjs"})
