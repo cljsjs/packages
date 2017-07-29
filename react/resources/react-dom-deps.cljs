@@ -8,4 +8,3 @@
                  :requires ["cljsjs.react"]
                  :file-min "cljsjs/react-dom/production/react-dom.min.inc.js"}]
  :externs ["cljsjs/react-dom/common/react-dom.ext.js"]}
-
