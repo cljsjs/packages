@@ -698,6 +698,7 @@ var L = {
       "imagePath": {},
     },
   },
+  "VideoOverlay": function () {},
   "icon": function () {},
   "Marker": function () {},
   "marker": {

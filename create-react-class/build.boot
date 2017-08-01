@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "15.6.0")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-2"))
 
 (task-options!
  pom  {:project     'cljsjs/create-react-class
@@ -22,8 +22,6 @@
     (download :url (format "https://unpkg.com/create-react-class@%s/create-react-class.min.js" +lib-version+)
               :checksum "220EE670C19A1C2CDD96E4AE13C7B4F1")
     (sift :move {#"^create-react-class\.js$"      "cljsjs/create-react-class/development/create-react-class.inc.js"
-                 #"^create-react-class\.min\.js$" "cljsjs/create-react-class/development/create-react-class.min.inc.js"})
-    (deps-cljs :name "cljsjs.create-react-class"
-               :requires ["cljsjs.react"])
+                 #"^create-react-class\.min\.js$" "cljsjs/create-react-class/production/create-react-class.min.inc.js"})
     (pom)
     (jar)))

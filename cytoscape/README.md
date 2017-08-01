@@ -1,8 +1,8 @@
-# cljsjs/skel
+# cljsjs/cytoscape
 
 [](dependency)
 ```clojure
-[cljsjs/skel "3.0.1-1"] ;; latest release
+[cljsjs/cytoscape "3.1.4-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,8 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.skel))
+  (:require cljsjs.cytoscape))
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+
