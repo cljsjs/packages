@@ -24,9 +24,8 @@ var antd = {
   "Alert": function () {},
   "Anchor": {
     "Link": {
-      "__ANT_ANCHOR_LINK": {},
       "contextTypes": {
-        "anchorHelper": {
+        "antAnchor": {
           "isRequired": function () {}
         }
       },
@@ -36,7 +35,7 @@ var antd = {
       }
     },
     "childContextTypes": {
-      "anchorHelper": {
+      "antAnchor": {
         "isRequired": function () {}
       }
     },
@@ -235,7 +234,9 @@ var antd = {
       }
     }
   },
-  "Card": function () {},
+  "Card": {
+    "Grid": function () {}
+  },
   "Carousel": {
     "defaultProps": {
       "arrows": {},
@@ -486,6 +487,7 @@ var antd = {
       }
     },
     "defaultProps": {
+      "minOverlayWidthMatchTrigger": {},
       "mouseEnterDelay": {},
       "mouseLeaveDelay": {},
       "placement": {},
@@ -578,12 +580,15 @@ var antd = {
     "Group": function () {},
     "Search": {
       "defaultProps": {
-        "onSearch": function () {},
+        "prefixCls": {}
+      }
+    },
+    "TextArea": {
+      "defaultProps": {
         "prefixCls": {}
       }
     },
     "defaultProps": {
-      "autosize": {},
       "disabled": {},
       "prefixCls": {},
       "type": {}
@@ -654,6 +659,11 @@ var antd = {
     "Header": function () {},
     "Sider": {
       "__ANT_LAYOUT_SIDER": {},
+      "childContextTypes": {
+        "siderCollapsed": {
+          "isRequired": function () {}
+        }
+      },
       "defaultProps": {
         "collapsedWidth": {},
         "collapsible": {},
@@ -718,60 +728,8 @@ var antd = {
       }
     },
     "Item": {
-      "defaultProps": {
-        "onMouseEnter": function () {},
-        "onMouseLeave": function () {},
-        "onSelect": function () {}
-      },
-      "displayName": {},
-      "getDefaultProps": {
-        "isReactClassApproved": {}
-      },
-      "isMenuItem": {},
-      "propTypes": {
-        "active": {
-          "isRequired": function () {}
-        },
-        "children": {
-          "isRequired": function () {}
-        },
-        "disabled": {
-          "isRequired": function () {}
-        },
-        "eventKey": {
-          "isRequired": function () {}
-        },
-        "onClick": {
-          "isRequired": function () {}
-        },
-        "onDeselect": {
-          "isRequired": function () {}
-        },
-        "onDestroy": {
-          "isRequired": function () {}
-        },
-        "onItemHover": {
-          "isRequired": function () {}
-        },
-        "onMouseEnter": {
-          "isRequired": function () {}
-        },
-        "onMouseLeave": {
-          "isRequired": function () {}
-        },
-        "onSelect": {
-          "isRequired": function () {}
-        },
-        "parentMenu": {
-          "isRequired": function () {}
-        },
-        "rootPrefixCls": {
-          "isRequired": function () {}
-        },
-        "selectedKeys": {
-          "isRequired": function () {}
-        },
-        "title": {
+      "contextTypes": {
+        "inlineCollapsed": {
           "isRequired": function () {}
         }
       }
@@ -881,6 +839,16 @@ var antd = {
         "title": {
           "isRequired": function () {}
         }
+      }
+    },
+    "childContextTypes": {
+      "inlineCollapsed": {
+        "isRequired": function () {}
+      }
+    },
+    "contextTypes": {
+      "siderCollapsed": {
+        "isRequired": function () {}
       }
     },
     "defaultProps": {
@@ -1410,6 +1378,7 @@ var antd = {
   "Tooltip": {
     "defaultProps": {
       "arrowPointAtCenter": {},
+      "autoAdjustOverflow": {},
       "mouseEnterDelay": {},
       "mouseLeaveDelay": {},
       "placement": {},
@@ -1509,6 +1478,11 @@ var antd = {
   },
   "Tree": {
     "TreeNode": {
+      "contextTypes": {
+        "rcTree": {
+          "isRequired": function () {}
+        }
+      },
       "defaultProps": {
         "title": {}
       },
@@ -4001,6 +3975,123 @@ var antd = {
       },
       "locale": {}
     },
+    "th_TH": {
+      "Calendar": {
+        "lang": {
+          "backToToday": {},
+          "clear": {},
+          "dateFormat": {},
+          "dateSelect": {},
+          "dateTimeFormat": {},
+          "dayFormat": {},
+          "decadeSelect": {},
+          "month": {},
+          "monthBeforeYear": {},
+          "monthSelect": {},
+          "nextCentury": {},
+          "nextDecade": {},
+          "nextMonth": {},
+          "nextYear": {},
+          "now": {},
+          "ok": {},
+          "placeholder": {},
+          "previousCentury": {},
+          "previousDecade": {},
+          "previousMonth": {},
+          "previousYear": {},
+          "rangePlaceholder": {},
+          "timeSelect": {},
+          "today": {},
+          "year": {},
+          "yearFormat": {},
+          "yearSelect": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "DatePicker": {
+        "lang": {
+          "backToToday": {},
+          "clear": {},
+          "dateFormat": {},
+          "dateSelect": {},
+          "dateTimeFormat": {},
+          "dayFormat": {},
+          "decadeSelect": {},
+          "month": {},
+          "monthBeforeYear": {},
+          "monthSelect": {},
+          "nextCentury": {},
+          "nextDecade": {},
+          "nextMonth": {},
+          "nextYear": {},
+          "now": {},
+          "ok": {},
+          "placeholder": {},
+          "previousCentury": {},
+          "previousDecade": {},
+          "previousMonth": {},
+          "previousYear": {},
+          "rangePlaceholder": {},
+          "timeSelect": {},
+          "today": {},
+          "year": {},
+          "yearFormat": {},
+          "yearSelect": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "Modal": {
+        "cancelText": {},
+        "justOkText": {},
+        "okText": {}
+      },
+      "Pagination": {
+        "items_per_page": {},
+        "jump_to": {},
+        "next_3": {},
+        "next_5": {},
+        "next_page": {},
+        "page": {},
+        "prev_3": {},
+        "prev_5": {},
+        "prev_page": {}
+      },
+      "Popconfirm": {
+        "cancelText": {},
+        "okText": {}
+      },
+      "Select": {
+        "notFoundContent": {}
+      },
+      "Table": {
+        "emptyText": {},
+        "filterConfirm": {},
+        "filterReset": {},
+        "filterTitle": {},
+        "selectAll": {},
+        "selectInvert": {}
+      },
+      "TimePicker": {
+        "placeholder": {}
+      },
+      "Transfer": {
+        "itemUnit": {},
+        "itemsUnit": {},
+        "notFoundContent": {},
+        "searchPlaceholder": {}
+      },
+      "Upload": {
+        "previewFile": {},
+        "removeFile": {},
+        "uploadError": {},
+        "uploading": {}
+      },
+      "locale": {}
+    },
     "tr_TR": {
       "Calendar": {
         "lang": {
@@ -4444,6 +4535,11 @@ antd.Calendar.prototype = {
   "isReactComponent": function () {},
   "setState": function () {}
 };
+antd.Card.prototype = {
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
 antd.Carousel.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
@@ -4529,6 +4625,11 @@ antd.Input.Search.prototype = {
   "isReactComponent": function () {},
   "setState": function () {}
 };
+antd.Input.TextArea.prototype = {
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
 antd.InputNumber.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
@@ -4598,42 +4699,6 @@ antd.Menu.Divider.prototype = {
   "isMounted": function () {},
   "isReactComponent": function () {},
   "mixins": function () {},
-  "propTypes": function () {},
-  "render": function () {},
-  "replaceState": function () {},
-  "setState": function () {},
-  "shouldComponentUpdate": function () {},
-  "statics": function () {},
-  "updateComponent": function () {}
-};
-antd.Menu.Item.prototype = {
-  "__reactAutoBindPairs": function () {},
-  "childContextTypes": function () {},
-  "clearMenuItemMouseLeaveTimer": function () {},
-  "componentDidMount": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "componentWillUnmount": function () {},
-  "componentWillUpdate": function () {},
-  "constructor": function () {},
-  "contextTypes": function () {},
-  "forceUpdate": function () {},
-  "getActiveClassName": function () {},
-  "getChildContext": function () {},
-  "getDefaultProps": function () {},
-  "getDisabledClassName": function () {},
-  "getInitialState": function () {},
-  "getPrefixCls": function () {},
-  "getSelectedClassName": function () {},
-  "isMounted": function () {},
-  "isReactComponent": function () {},
-  "isSelected": function () {},
-  "mixins": function () {},
-  "onClick": function () {},
-  "onKeyDown": function () {},
-  "onMouseEnter": function () {},
-  "onMouseLeave": function () {},
   "propTypes": function () {},
   "render": function () {},
   "replaceState": function () {},
@@ -4917,26 +4982,8 @@ antd.Tree.prototype = {
   "setState": function () {}
 };
 antd.Tree.TreeNode.prototype = {
-  "componentDidMount": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
-  "onCheck": function () {},
-  "onContextMenu": function () {},
-  "onDragEnd": function () {},
-  "onDragEnter": function () {},
-  "onDragLeave": function () {},
-  "onDragOver": function () {},
-  "onDragStart": function () {},
-  "onDrop": function () {},
-  "onExpand": function () {},
-  "onKeyDown": function () {},
-  "onMouseEnter": function () {},
-  "onMouseLeave": function () {},
-  "onSelect": function () {},
-  "render": function () {},
-  "renderCheckbox": function () {},
-  "renderChildren": function () {},
-  "renderSwitcher": function () {},
   "setState": function () {}
 };
 antd.TreeSelect.prototype = {
@@ -4962,3 +5009,4 @@ antd.Upload.Dragger.prototype = {
 /**********************************************************************
  * End Generated Extern for antd
 /**********************************************************************/
+
