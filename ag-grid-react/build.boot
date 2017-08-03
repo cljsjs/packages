@@ -11,8 +11,8 @@
          '[boot.util :refer [dosh]]
          '[clojure.java.io :as io])
 
-(def +lib-version+ "11.0.0")
-(def +lib-checksum+ "E937820294B482E611677641A65257BB")
+(def +lib-version+ "12.0.0")
+(def +lib-checksum+ "0C4882FD31E8C375FFDD029D2A2EB3CA")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "ag-grid-react-%s" +lib-version+))
 
