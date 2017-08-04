@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.25.0")
+(def +lib-version+ "1.29.3")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,7 +18,7 @@
 (deftask package []
   (comp
    (download  :url      (format "https://github.com/plotly/plotly.js/archive/v%s.zip" +lib-version+)
-              :checksum "60D8CAB903FAF439B7273FD682172350"
+              :checksum "1F67B03B5DEF6AAD1693EC0F03A1CA1C"
               :unzip    true)
    (sift      :move     {#"^plotly(.*)/dist/plotly.js"
                          "cljsjs/plotly/development/plotly.inc.js"
