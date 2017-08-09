@@ -15,9 +15,11 @@
         :license     {"ASL" "https://aws.amazon.com/asl/"}
         :scm         {:url "https://github.com/cljsjs/packages"}})
 
-(defn- dist-file
-  [file]
-  (re-pattern (str "^amazon-cognito-identity-js-" +lib-version+ "/dist/" file "$")))
+;; These help to generate the file locations for sift
+(defn dist-file [file] (re-pattern (str "^amazon-cognito-identity-js-" +lib-version+ "/dist/" file "$")))
+(def out-folder "cljsjs/amazon-cognito-identity-js/")
+(defn dev-file [file] (str out-folder "development/" file))
+(defn prod-file [file] (str out-folder "production/" file))
 
 (deftask package []
   (comp
@@ -26,16 +28,16 @@
              :unzip true)
 
    (sift :move {(dist-file "aws-cognito-sdk.js")
-                "cljsjs/amazon-cognito-identity-js/development/aws-cognito-sdk.inc.js"
+                (dev-file "aws-cognito-sdk.inc.js")
 
                 (dist-file "amazon-cognito-identity.js")
-                "cljsjs/amazon-cognito-identity-js/development/amazon-cognito-identity-js.inc.js"
+                (dev-file "amazon-cognito-identity-js.inc.js")
 
                 (dist-file "aws-cognito-sdk.min.js")
-                "cljsjs/amazon-cognito-identity-js/production/aws-cognito-sdk.inc.js"
+                (prod-file "aws-cognito-sdk.inc.js")
 
                 (dist-file "amazon-cognito-identity.min.js")
-                "cljsjs/amazon-cognito-identity-js/production/amazon-cognito-identity-js.inc.js"})
+                (prod-file "amazon-cognito-identity-js.inc.js")})
 
    (sift :include #{#"^cljsjs" #"^deps\.cljs"})
 
