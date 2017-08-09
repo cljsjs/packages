@@ -12,8 +12,12 @@
         :version     +version+
         :description "Amazon Cognito Identity SDK"
         :url         "https://github.com/aws/amazon-cognito-identity-js"
-        :license     {"MIT" "https://opensource.org/licenses/MIT"}
+        :license     {"ASL" "https://aws.amazon.com/asl/"}
         :scm         {:url "https://github.com/cljsjs/packages"}})
+
+(defn- dist-file
+  [file]
+  (re-pattern (str "^amazon-cognito-identity-js-" +lib-version+ "/dist/" file "$")))
 
 (deftask package []
   (comp
@@ -21,14 +25,19 @@
              :checksum "8515F5E1CEB6AEF8B3674675DFE4BF42"
              :unzip true)
 
-   (sift :move {#"^amazon-cognito-identity-js-.*/dist/aws-cognito-sdk.js"         "cljsjs/amazon-cognito-identity-js/development/aws-cognito-sdk.inc.js"
-                #"^amazon-cognito-identity-js-.*/dist/amazon-cognito-identity.js" "cljsjs/amazon-cognito-identity-js/development/amazon-cognito-identity-js.inc.js"
+   (sift :move {(dist-file "aws-cognito-sdk.js")
+                "cljsjs/amazon-cognito-identity-js/development/aws-cognito-sdk.inc.js"
 
-                #"^amazon-cognito-identity-js-.*/dist/aws-cognito-sdk.min.js"         "cljsjs/amazon-cognito-identity-js/production/aws-cognito-sdk.min.inc.js"
-                #"^amazon-cognito-identity-js-.*/dist/amazon-cognito-identity.min.js" "cljsjs/amazon-cognito-identity-js/production/amazon-cognito-identity-js.min.inc.js"})
+                (dist-file "amazon-cognito-identity.js")
+                "cljsjs/amazon-cognito-identity-js/development/amazon-cognito-identity-js.inc.js"
 
-   (sift :include #{#"^cljsjs"})
+                (dist-file "aws-cognito-sdk.min.js")
+                "cljsjs/amazon-cognito-identity-js/production/aws-cognito-sdk.inc.js"
 
-   (deps-cljs :name "cljsjs.amazon-cognito-identity-js")
+                (dist-file "amazon-cognito-identity.min.js")
+                "cljsjs/amazon-cognito-identity-js/production/amazon-cognito-identity-js.inc.js"})
+
+   (sift :include #{#"^cljsjs" #"^deps\.cljs"})
+
    (pom)
    (jar)))
