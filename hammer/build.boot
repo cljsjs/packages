@@ -20,8 +20,8 @@
     (download :url (format "https://github.com/hammerjs/hammer.js/archive/v%s.zip" +lib-version+)
               :checksum "43A872327E6BB626902D5C9554A7C2A0"
               :unzip true)
-    (sift :move {#"^hammer.js-\d\.\d\.\d/hammer.js"     "cljsjs/development/hammer.inc.js"
-                 #"^hammer.js-\d\.\d\.\d/hammer.min.js" "cljsjs/production/hammer.min.inc.js"})
+    (sift :move {#"^hammer.js-\d\.\d\.\d/hammer.js$"     "cljsjs/development/hammer.inc.js"
+                 #"^hammer.js-\d\.\d\.\d/hammer.min.js$" "cljsjs/production/hammer.min.inc.js"})
     (replace-content :in "cljsjs/production/hammer.min.inc.js" :match #"(?m)^//# sourceMappingURL=.*$" :value "")
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.hammer")
