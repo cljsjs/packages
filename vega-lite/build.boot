@@ -1,11 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]
-                  [cljsjs/vega "3.0.0-beta.30-0"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.6.0" :scope "test"]
+                  [cljsjs/vega "3.0.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.0.0-beta.2")
+(def +lib-version+ "2.0.0-beta.14")
 
 (def +version+ (str +lib-version+ "-0"))
 
