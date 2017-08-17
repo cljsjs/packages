@@ -22,7 +22,7 @@
     (download
       :url (str "https://github.com/vega/vega-lite/archive/v" +lib-version+ ".zip")
       :unzip true
-      :checksum "bbaeaa6829adbfd6ea4d26bb0066c9bd")
+      :checksum "DFE4210455F668C20F60AE93903223A7")
     (sift :move {(re-pattern (str "^vega-lite-" +lib-version+ "/build/vega-lite.js$")) "cljsjs/development/vega-lite.inc.js"
                  (re-pattern (str "^vega-lite-" +lib-version+ "/build/vega-lite.min.js$")) "cljsjs/production/vega-lite.min.inc.js"})
     (sift :include #{#"^cljsjs"})
