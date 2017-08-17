@@ -267,6 +267,7 @@ var vega = {
     "width": function () {}
   },
   "timeFormatLocale": function () {},
+  "timeInterval": function () {},
   "toBoolean": function () {},
   "toDate": function () {},
   "toNumber": function () {},
@@ -500,6 +501,9 @@ var vega = {
     "nest": {
       "Definition": {
         "metadata": {
+          "changes": {},
+          "generates": {},
+          "source": {},
           "treesource": {}
         },
         "params": {},
@@ -667,6 +671,7 @@ var vega = {
     "number": function () {},
     "string": function () {}
   },
+  "utcInterval": function () {},
   "version": {},
   "visitArray": function () {},
   "zero": {
