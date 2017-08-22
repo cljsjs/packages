@@ -4,19 +4,19 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "15.6.1")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "16.0.0-beta.2")
+(def +version+ (str +lib-version+ "-0"))
 
 (def checksums
   {'cljsjs/react
-   {:dev "9D6C35A307DB61A32D0D831187622ABE",
-    :min "6EDAD0B09347612195C91E053C8AA038"},
+   {:dev "F24B8661C004F2585B3E561AAD7248E5",
+    :min "CCF7DFFF26B6121B05E79C7D263D7C1E"},
    'cljsjs/react-dom
-   {:dev "8838F58E46DF136892903541A90DFD18",
-    :min "86FCB75992CFC47204ED9A2DAC56860E"},
+   {:dev "8F6AAFE10488C7F77FD02C3B05ADA280",
+    :min "D61FA26AB6487F46BD6C583B4C9AE08E"},
    'cljsjs/react-dom-server
-   {:dev "68A97E8D961E6C203528B5A0B20E7B78",
-    :min "EBFA1A1C8670FE63BF839F51CEF61473"}})
+   {:dev "06D46BD6B351B2D48B159938F140ACE8",
+    :min "70E9D9FC5609846A137E07A21CA240EF"}})
 
 (def npm-project {'cljsjs/react "react"
                   'cljsjs/react-dom "react-dom"
@@ -53,12 +53,12 @@
                 (or (= extern-name (.getName (tmp-file x)))
                     (= (str (name project) "-deps.cljs") (.getName (tmp-file x)))))
     (comp
-      (download :url (format "https://unpkg.com/%s@%s/dist/%s.js" (npm-project project) +lib-version+ (name project))
+      (download :url (format "https://unpkg.com/%s@%s/umd/%s.development.js" (npm-project project) +lib-version+ (name project))
                 :checksum (:dev (get checksums project)))
-      (download :url (format "https://unpkg.com/%s@%s/dist/%s.min.js" (npm-project project) +lib-version+ (name project))
+      (download :url (format "https://unpkg.com/%s@%s/umd/%s.production.min.js" (npm-project project) +lib-version+ (name project))
                 :checksum (:min (get checksums project)))
-      (sift :move {(re-pattern (format "^%s.js$" (name project)))     (format "cljsjs/%1$s/development/%1$s.inc.js" (name project))
-                   (re-pattern (format "^%s.min.js$" (name project))) (format "cljsjs/%1$s/production/%1$s.min.inc.js" (name project))
+      (sift :move {(re-pattern (format "^%s.development.js$" (name project)))     (format "cljsjs/%1$s/development/%1$s.inc.js" (name project))
+                   (re-pattern (format "^%s.production.min.js$" (name project))) (format "cljsjs/%1$s/production/%1$s.min.inc.js" (name project))
                    (re-pattern (format "^%s-deps.cljs" (name project))) "deps.cljs"})
       (sift :include #{#"^cljsjs" #"deps\.cljs"})
       (pom :project project :dependencies (or dependencies []))
@@ -106,8 +106,8 @@
     (reduce
       (fn [handler project]
         (comp handler
-              (download :url (format "https://unpkg.com/%s@%s/dist/%s.js" (npm-project project) +lib-version+ (name project)))
-              (download :url (format "https://unpkg.com/%s@%s/dist/%s.min.js" (npm-project project) +lib-version+ (name project)))))
+              (download :url (format "https://unpkg.com/%s@%s/umd/%s.development.js" (npm-project project) +lib-version+ (name project)))
+              (download :url (format "https://unpkg.com/%s@%s/umd/%s.production.min.js" (npm-project project) +lib-version+ (name project)))))
       identity
       (keys checksums))
     (fn [handler]
@@ -116,8 +116,8 @@
           (clojure.string/replace
             (with-out-str
               (clojure.pprint/pprint (into {} (map (juxt identity (fn [project]
-                                                                    {:dev (md5sum fileset (format "%s.js" (name project)))
-                                                                     :min (md5sum fileset (format "%s.min.js" (name project)))}))
+                                                                    {:dev (md5sum fileset (format "%s.development.js" (name project)))
+                                                                     :min (md5sum fileset (format "%s.production.min.js" (name project)))}))
                                                    (keys checksums)))))
             #"cljsjs" "'cljsjs"))
         fileset))))
