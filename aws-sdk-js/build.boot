@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.2.41")
-(def +version+ (str +lib-version+ "-4"))
+(def +lib-version+ "2.94.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom  {:project     'cljsjs/aws-sdk-js
@@ -18,7 +18,7 @@
 (deftask package []
   (comp
    (download :url (format "https://github.com/aws/aws-sdk-js/archive/v%s.zip" +lib-version+)
-             :checksum "AD1C2413CC5DAE821DC5844936C54C4E"
+             :checksum "36614E16579D05E9031FA691A20E5FA3"
              :unzip true)
 
    (sift :move {#"^aws-sdk-js-.*/dist/aws-sdk.js"  "cljsjs/aws-sdk-js/development/aws-sdk-js.inc.js"

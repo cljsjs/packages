@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.0.4")
-(def +version+ (str +lib-version+ "-5"))
+(def +lib-version+ "2.0.8")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/hammer
@@ -17,11 +17,11 @@
 
 (deftask package []
   (comp
-    (download :url (format "https://github.com/hammerjs/hammer.js/archive/%s.zip" +lib-version+)
-              :checksum "F2A06997B5D731E86A114302D7838AA9"
+    (download :url (format "https://github.com/hammerjs/hammer.js/archive/v%s.zip" +lib-version+)
+              :checksum "43A872327E6BB626902D5C9554A7C2A0"
               :unzip true)
-    (sift :move {#"^hammer.js-\d\.\d\.\d/hammer.js"     "cljsjs/development/hammer.inc.js"
-                 #"^hammer.js-\d\.\d\.\d/hammer.min.js" "cljsjs/production/hammer.min.inc.js"})
+    (sift :move {#"^hammer.js-\d\.\d\.\d/hammer.js$"     "cljsjs/development/hammer.inc.js"
+                 #"^hammer.js-\d\.\d\.\d/hammer.min.js$" "cljsjs/production/hammer.min.inc.js"})
     (replace-content :in "cljsjs/production/hammer.min.inc.js" :match #"(?m)^//# sourceMappingURL=.*$" :value "")
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.hammer")

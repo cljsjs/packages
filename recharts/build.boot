@@ -11,7 +11,7 @@
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "0.22.4")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/recharts

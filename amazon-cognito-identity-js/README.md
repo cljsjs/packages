@@ -1,8 +1,8 @@
-# cljsjs/raven
+# cljsjs/amazon-cognito-identity-js
 
 [](dependency)
 ```clojure
-[cljsjs/raven "3.17.0-0"] ;; latest release
+[cljsjs/amazon-cognito-identity-js "1.19.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,9 +12,9 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.raven))
+  (:require cljsjs.amazon-cognito-identity-js))
 ```
 
-Documentation for the raven-js lib can be found [on its github page](https://github.com/getsentry/raven-js)
+Documentation for the amazon-cognito-identity-js lib can be found [on its github page](https://github.com/aws/amazon-cognito-identity-js)
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
