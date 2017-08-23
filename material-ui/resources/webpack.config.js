@@ -6,16 +6,16 @@ var entryName = "material-ui";
 var output = {
   filename: '[name].inc.js'
 };
-var externals = {};
+var externals = {
+    "react": "React",
+    "react-dom": "ReactDOM"
+};
 
 if (svgIcons) {
     output['libraryTarget'] = 'var';
     output['library'] = 'MaterialUISvgIcons';
     entryPath =  "./build/svg-icons/index.js";
     entryName = "material-ui-svg-icons";
-    externals = {
-        "react": "React"
-    };
 }
 
 var entry = {};
