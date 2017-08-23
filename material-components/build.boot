@@ -33,6 +33,8 @@
         ;; that the project being built MUST BE a git repository: https://github.com/lerna/lerna/issues/555
         (dosh "git" "init")
         (dosh "npm" "install")
+        ;; postinstall should run this, but doesn't
+        (dosh "./node_modules/.bin/lerna" "bootstrap")
         (dosh "npm" "run" "dist"))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
 
