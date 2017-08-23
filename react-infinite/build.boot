@@ -1,13 +1,14 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]
-                  [cljsjs/react "15.0.2-0"]
-                  [cljsjs/react-dom-server "15.0.2-0"]
-                  [cljsjs/react-dom "15.0.2-0"]])
+                  [cljsjs/react "15.6.1-1"]
+                  [cljsjs/react-dom-server "15.6.1-1"]
+                  [cljsjs/react-dom "15.6.1-1"]
+                  [cljsjs/prop-types "15.5.10-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.9.0")
+(def +lib-version+ "0.12.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -21,7 +22,7 @@
 (deftask package []
   (comp
    (download :url (str "https://github.com/seatgeek/react-infinite/archive/v" +lib-version+ ".zip")
-             :checksum "4bcbf84214c497459e673c4ef6b28040"
+             :checksum "3c9e2b831e996b59a19b560be5e9f77a"
              :unzip true)
 
    (sift :move {#"^react-infinite-(.*)/dist/react-infinite.js$" "cljsjs/react-infinite/development/react-infinite.inc.js"
@@ -29,8 +30,8 @@
 
    (sift :include #{#"^cljsjs"})
 
-   (deps-cljs :name "cljsjs.react-infinite"
-              :requires ["cljsjs.react"])
+   (deps-cljs :name "react-infinite"
+              :requires ["react" "react-dom" "prop-types"])
    (pom)
 
    (jar)))
