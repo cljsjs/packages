@@ -6,9 +6,24 @@ var agGrid = {
   "AgCheckbox": {
     "EVENT_CHANGED": {},
     "EVENT_VISIBLE_CHANGED": {},
-    "TEMPLATE": {}
+    "TEMPLATE": {},
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "postConstructMethods": {}
+    }
   },
-  "AlignedGridsService": function () {},
+  "AlignedGridsService": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "autowireMethods": {
+        "setBeans": {
+          "0": {}
+        }
+      },
+      "beanName": {},
+      "postConstructMethods": {}
+    }
+  },
   "AnimateShowChangeCellRenderer": {
     "EVENT_VISIBLE_CHANGED": {},
     "TEMPLATE": {}
@@ -17,11 +32,30 @@ var agGrid = {
     "EVENT_VISIBLE_CHANGED": {},
     "TEMPLATE": {}
   },
-  "AutoWidthCalculator": function () {},
+  "AutoWidthCalculator": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {}
+    }
+  },
   "Autowired": function () {},
-  "BalancedColumnTreeBuilder": function () {},
+  "BalancedColumnTreeBuilder": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "autowireMethods": {
+        "setBeans": {
+          "0": {}
+        }
+      },
+      "beanName": {}
+    }
+  },
   "BaseComponentWrapper": function () {},
-  "BaseCreator": function () {},
+  "BaseCreator": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {}
+    }
+  },
   "BaseFilter": {
     "CONTAINS": {},
     "ENDS_WITH": {},
@@ -34,14 +68,26 @@ var agGrid = {
     "LESS_THAN_OR_EQUAL": {},
     "NOT_CONTAINS": {},
     "NOT_EQUAL": {},
-    "STARTS_WITH": {}
+    "STARTS_WITH": {},
+    "__agBeanMetaData": {
+      "agClassAttributes": {}
+    }
   },
   "BaseFrameworkFactory": function () {},
   "BaseGridSerializingSession": function () {},
   "Bean": function () {},
   "BeanStub": function () {},
-  "BodyDropPivotTarget": function () {},
-  "BodyDropTarget": function () {},
+  "BodyDropPivotTarget": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {}
+    }
+  },
+  "BodyDropTarget": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "postConstructMethods": {}
+    }
+  },
   "BorderLayout": {
     "TEMPLATE_DONT_FILL": {},
     "TEMPLATE_FULL_HEIGHT": {},
@@ -56,18 +102,41 @@ var agGrid = {
     "POPUP_SELECT": {},
     "POPUP_TEXT": {},
     "SELECT": {},
-    "TEXT": {}
+    "TEXT": {},
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {},
+      "postConstructMethods": {}
+    }
   },
-  "CellNavigationService": function () {},
+  "CellNavigationService": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {}
+    }
+  },
   "CellRendererFactory": {
     "ANIMATE_SHOW_CHANGE": {},
     "ANIMATE_SLIDE": {},
-    "GROUP": {}
+    "GROUP": {},
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {},
+      "postConstructMethods": {}
+    }
   },
-  "CellRendererService": function () {},
+  "CellRendererService": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {}
+    }
+  },
   "ChangedPath": function () {},
   "CheckboxSelectionComponent": {
-    "EVENT_VISIBLE_CHANGED": {}
+    "EVENT_VISIBLE_CHANGED": {},
+    "__agBeanMetaData": {
+      "agClassAttributes": {}
+    }
   },
   "Column": {
     "EVENT_FILTER_ACTIVE_CHANGED": {},
@@ -86,20 +155,47 @@ var agGrid = {
     "PINNED_LEFT": {},
     "PINNED_RIGHT": {},
     "SORT_ASC": {},
-    "SORT_DESC": {}
+    "SORT_DESC": {},
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "postConstructMethods": {}
+    }
   },
-  "ColumnApi": function () {},
-  "ColumnChangeEvent": function () {},
-  "ColumnController": function () {},
+  "ColumnApi": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {}
+    }
+  },
+  "ColumnController": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "autowireMethods": {
+        "setBeans": {
+          "0": {}
+        }
+      },
+      "beanName": {},
+      "postConstructMethods": {}
+    }
+  },
   "ColumnGroup": {
     "EVENT_DISPLAYED_CHILDREN_CHANGED": {},
     "EVENT_LEFT_CHANGED": {},
     "HEADER_GROUP_SHOW_CLOSED": {},
     "HEADER_GROUP_SHOW_OPEN": {},
+    "__agBeanMetaData": {
+      "agClassAttributes": {}
+    },
     "createUniqueId": function () {}
   },
   "ColumnKeyCreator": function () {},
-  "ColumnUtils": function () {},
+  "ColumnUtils": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {}
+    }
+  },
   "Component": {
     "EVENT_VISIBLE_CHANGED": {}
   },
@@ -121,6 +217,7 @@ var agGrid = {
   },
   "Constants": {
     "ALWAYS": {},
+    "DEPRECATED_ROW_MODEL_TYPE_NORMAL": {},
     "DIAGONAL_SCROLL_KEYS": {
       "bindings": {},
       "id": {}
@@ -190,9 +287,19 @@ var agGrid = {
     "addHeaderClassesFromColDef": function () {},
     "addToolPanelClassesFromColDef": function () {}
   },
-  "CsvCreator": function () {},
+  "CsvCreator": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {}
+    }
+  },
   "DateFilter": {
     "CONTAINS": {},
+    "DEFAULT_NULL_COMPARATOR": {
+      "equals": {},
+      "greaterThan": {},
+      "lessThan": {}
+    },
     "ENDS_WITH": {},
     "EQUALS": {},
     "EVENT_VISIBLE_CHANGED": {},
@@ -204,10 +311,22 @@ var agGrid = {
     "NOT_CONTAINS": {},
     "NOT_EQUAL": {},
     "STARTS_WITH": {},
+    "__agBeanMetaData": {
+      "agClassAttributes": {}
+    },
     "removeTimezone": function () {}
   },
-  "DisplayedGroupCreator": function () {},
-  "Downloader": function () {},
+  "DisplayedGroupCreator": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {}
+    }
+  },
+  "Downloader": {
+    "__agBeanMetaData": {
+      "beanName": {}
+    }
+  },
   "DragAndDropService": {
     "GHOST_TEMPLATE": {},
     "ICON_ADD": {},
@@ -218,17 +337,51 @@ var agGrid = {
     "ICON_NOT_ALLOWED": {},
     "ICON_PINNED": {},
     "ICON_PIVOT": {},
-    "ICON_RIGHT": {}
+    "ICON_RIGHT": {},
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "autowireMethods": {
+        "setBeans": {
+          "0": {}
+        }
+      },
+      "beanName": {},
+      "postConstructMethods": {},
+      "preDestroyMethods": {}
+    }
   },
-  "DragService": function () {},
+  "DragService": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {},
+      "postConstructMethods": {},
+      "preDestroyMethods": {}
+    }
+  },
   "DragSourceType": {
     "0": {},
     "1": {},
     "HeaderCell": {},
     "ToolPanel": {}
   },
+  "Environment": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {}
+    }
+  },
   "EventService": {
-    "PRIORITY": {}
+    "PRIORITY": {},
+    "__agBeanMetaData": {
+      "autowireMethods": {
+        "setBeans": {
+          "0": {},
+          "1": {},
+          "2": {}
+        }
+      },
+      "beanName": {}
+    }
   },
   "Events": {
     "EVENT_BODY_HEIGHT_CHANGED": {},
@@ -268,8 +421,6 @@ var agGrid = {
     "EVENT_GRID_COLUMNS_CHANGED": {},
     "EVENT_GRID_READY": {},
     "EVENT_GRID_SIZE_CHANGED": {},
-    "EVENT_ITEMS_ADDED": {},
-    "EVENT_ITEMS_REMOVED": {},
     "EVENT_MODEL_UPDATED": {},
     "EVENT_NEW_COLUMNS_LOADED": {},
     "EVENT_PAGINATION_CHANGED": {},
@@ -291,25 +442,86 @@ var agGrid = {
     "EVENT_VIRTUAL_COLUMNS_CHANGED": {},
     "EVENT_VIRTUAL_ROW_REMOVED": {}
   },
-  "ExpressionService": function () {},
-  "FilterManager": {
-    "QUICK_FILTER_SEPARATOR": {}
+  "ExpressionService": {
+    "__agBeanMetaData": {
+      "autowireMethods": {
+        "setBeans": {
+          "0": {}
+        }
+      },
+      "beanName": {}
+    }
   },
-  "FilterStage": function () {},
-  "FlattenStage": function () {},
-  "FocusService": function () {},
-  "FocusedCellController": function () {},
+  "FilterManager": {
+    "QUICK_FILTER_SEPARATOR": {},
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {},
+      "postConstructMethods": {},
+      "preDestroyMethods": {}
+    }
+  },
+  "FilterStage": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {}
+    }
+  },
+  "FlattenStage": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {}
+    }
+  },
+  "FocusedCellController": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {},
+      "postConstructMethods": {}
+    }
+  },
   "Grid": {
     "RowModelClasses": {
-      "infinite": function () {},
-      "normal": function () {}
+      "inMemory": {
+        "__agBeanMetaData": {
+          "agClassAttributes": {},
+          "beanName": {},
+          "postConstructMethods": {}
+        }
+      },
+      "infinite": {
+        "__agBeanMetaData": {
+          "agClassAttributes": {},
+          "beanName": {},
+          "postConstructMethods": {},
+          "preDestroyMethods": {}
+        }
+      }
     },
     "setEnterpriseBeans": function () {},
     "setFrameworkBeans": function () {}
   },
-  "GridApi": function () {},
+  "GridApi": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {},
+      "postConstructMethods": {}
+    }
+  },
   "GridCell": function () {},
-  "GridCore": function () {},
+  "GridCore": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "autowireMethods": {
+        "agConstructor": {
+          "0": {}
+        }
+      },
+      "beanName": {},
+      "postConstructMethods": {},
+      "preDestroyMethods": {}
+    }
+  },
   "GridOptionsWrapper": {
     "MIN_COL_WIDTH": {},
     "PROP_FLOATING_FILTERS_HEIGHT": {},
@@ -317,14 +529,46 @@ var agGrid = {
     "PROP_GROUP_REMOVE_SINGLE_CHILDREN": {},
     "PROP_HEADER_HEIGHT": {},
     "PROP_PIVOT_GROUP_HEADER_HEIGHT": {},
-    "PROP_PIVOT_HEADER_HEIGHT": {}
+    "PROP_PIVOT_HEADER_HEIGHT": {},
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "autowireMethods": {
+        "agWire": {
+          "0": {},
+          "1": {}
+        }
+      },
+      "beanName": {},
+      "postConstructMethods": {},
+      "preDestroyMethods": {}
+    }
   },
-  "GridPanel": function () {},
+  "GridPanel": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "autowireMethods": {
+        "agWire": {
+          "0": {}
+        }
+      },
+      "beanName": {},
+      "postConstructMethods": {},
+      "preDestroyMethods": {}
+    }
+  },
   "GridRow": function () {},
-  "GridSerializer": function () {},
+  "GridSerializer": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {}
+    }
+  },
   "GroupCellRenderer": {
     "EVENT_VISIBLE_CHANGED": {},
-    "TEMPLATE": {}
+    "TEMPLATE": {},
+    "__agBeanMetaData": {
+      "agClassAttributes": {}
+    }
   },
   "GroupInstanceIdCreator": function () {},
   "HDirection": {
@@ -333,32 +577,94 @@ var agGrid = {
     "Left": {},
     "Right": {}
   },
-  "HeaderContainer": function () {},
-  "HeaderRenderer": function () {},
+  "HeaderContainer": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "postConstructMethods": {}
+    }
+  },
+  "HeaderRenderer": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {},
+      "postConstructMethods": {},
+      "preDestroyMethods": {}
+    }
+  },
   "HeaderRowComp": {
-    "EVENT_VISIBLE_CHANGED": {}
+    "EVENT_VISIBLE_CHANGED": {},
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "postConstructMethods": {}
+    }
   },
   "HeaderTemplateLoader": {
-    "HEADER_CELL_TEMPLATE": {}
+    "HEADER_CELL_TEMPLATE": {},
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {}
+    }
   },
-  "HorizontalDragService": function () {},
+  "HorizontalDragService": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {}
+    }
+  },
   "InMemoryNodeManager": {
     "ROOT_NODE_ID": {},
     "TOP_LEVEL": {}
   },
-  "InMemoryRowModel": function () {},
-  "InfiniteRowModel": function () {},
+  "InMemoryRowModel": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {},
+      "postConstructMethods": {}
+    }
+  },
+  "InfiniteRowModel": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {},
+      "postConstructMethods": {},
+      "preDestroyMethods": {}
+    }
+  },
   "LargeTextCellEditor": {
     "EVENT_VISIBLE_CHANGED": {},
     "TEMPLATE": {}
   },
   "Listener": function () {},
   "Logger": function () {},
-  "LoggerFactory": function () {},
-  "MouseEventService": function () {},
-  "MoveColumnController": function () {},
+  "LoggerFactory": {
+    "__agBeanMetaData": {
+      "autowireMethods": {
+        "setBeans": {
+          "0": {}
+        }
+      },
+      "beanName": {}
+    }
+  },
+  "MouseEventService": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {}
+    }
+  },
+  "MoveColumnController": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "postConstructMethods": {}
+    }
+  },
   "NumberFilter": {
     "CONTAINS": {},
+    "DEFAULT_NULL_COMPARATOR": {
+      "equals": {},
+      "greaterThan": {},
+      "lessThan": {}
+    },
     "ENDS_WITH": {},
     "EQUALS": {},
     "EVENT_VISIBLE_CHANGED": {},
@@ -369,22 +675,46 @@ var agGrid = {
     "LESS_THAN_OR_EQUAL": {},
     "NOT_CONTAINS": {},
     "NOT_EQUAL": {},
-    "STARTS_WITH": {}
+    "STARTS_WITH": {},
+    "__agBeanMetaData": {
+      "agClassAttributes": {}
+    }
   },
   "NumberSequence": function () {},
   "Optional": function () {},
   "OriginalColumnGroup": {
-    "EVENT_EXPANDED_CHANGED": {}
+    "EVENT_EXPANDABLE_CHANGED": {},
+    "EVENT_EXPANDED_CHANGED": {},
+    "__agBeanMetaData": {
+      "agClassAttributes": {}
+    }
   },
-  "PinnedRowModel": function () {},
+  "PinnedRowModel": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {},
+      "postConstructMethods": {}
+    }
+  },
   "PopupEditorWrapper": {
     "DOM_KEY_POPUP_EDITOR_WRAPPER": {},
-    "EVENT_VISIBLE_CHANGED": {}
+    "EVENT_VISIBLE_CHANGED": {},
+    "__agBeanMetaData": {
+      "agClassAttributes": {}
+    }
   },
   "PopupSelectCellEditor": {
-    "EVENT_VISIBLE_CHANGED": {}
+    "EVENT_VISIBLE_CHANGED": {},
+    "__agBeanMetaData": {
+      "agClassAttributes": {}
+    }
   },
-  "PopupService": function () {},
+  "PopupService": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {}
+    }
+  },
   "PopupTextCellEditor": {
     "EVENT_VISIBLE_CHANGED": {},
     "TEMPLATE": {}
@@ -396,11 +726,19 @@ var agGrid = {
   "QuerySelector": function () {},
   "RefSelector": function () {},
   "RenderedHeaderCell": {
-    "EVENT_VISIBLE_CHANGED": {}
+    "EVENT_VISIBLE_CHANGED": {},
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "postConstructMethods": {}
+    }
   },
   "RowComp": {
     "DOM_DATA_KEY_RENDERED_ROW": {},
-    "EVENT_ROW_REMOVED": {}
+    "EVENT_ROW_REMOVED": {},
+    "EVENT_VISIBLE_CHANGED": {},
+    "FULL_WIDTH_CELL_RENDERER": {},
+    "GROUP_ROW_RENDERER": {},
+    "LOADING_CELL_RENDERER": {}
   },
   "RowNode": {
     "EVENT_ALL_CHILDREN_COUNT_CELL_CHANGED": {},
@@ -416,7 +754,10 @@ var agGrid = {
     "EVENT_ROW_INDEX_CHANGED": {},
     "EVENT_ROW_SELECTED": {},
     "EVENT_TOP_CHANGED": {},
-    "EVENT_UI_LEVEL_CHANGED": {}
+    "EVENT_UI_LEVEL_CHANGED": {},
+    "__agBeanMetaData": {
+      "agClassAttributes": {}
+    }
   },
   "RowNodeBlock": {
     "EVENT_LOAD_COMPLETE": {},
@@ -425,11 +766,31 @@ var agGrid = {
     "STATE_LOADED": {},
     "STATE_LOADING": {}
   },
-  "RowNodeBlockLoader": function () {},
+  "RowNodeBlockLoader": {
+    "__agBeanMetaData": {
+      "autowireMethods": {
+        "setBeans": {
+          "0": {}
+        }
+      }
+    }
+  },
   "RowNodeCache": {
     "EVENT_CACHE_UPDATED": {}
   },
-  "RowRenderer": function () {},
+  "RowRenderer": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "autowireMethods": {
+        "agWire": {
+          "0": {}
+        }
+      },
+      "beanName": {},
+      "postConstructMethods": {},
+      "preDestroyMethods": {}
+    }
+  },
   "RowType": {
     "0": {},
     "1": {},
@@ -438,72 +799,65 @@ var agGrid = {
     "HEADER": {},
     "HEADER_GROUPING": {}
   },
-  "ScrollVisibleService": function () {},
-  "SelectCellEditor": {
-    "EVENT_VISIBLE_CHANGED": {}
+  "ScrollVisibleService": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {}
+    }
   },
-  "SelectionController": function () {},
+  "SelectCellEditor": {
+    "EVENT_VISIBLE_CHANGED": {},
+    "__agBeanMetaData": {
+      "agClassAttributes": {}
+    }
+  },
+  "SelectionController": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "autowireMethods": {
+        "setBeans": {
+          "0": {}
+        }
+      },
+      "beanName": {},
+      "postConstructMethods": {}
+    }
+  },
   "SetLeftFeature": function () {},
   "SortController": {
-    "DEFAULT_SORTING_ORDER": {}
+    "DEFAULT_SORTING_ORDER": {},
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {}
+    }
   },
-  "SortStage": function () {},
-  "StandardMenuFactory": function () {},
-  "StylingService": function () {},
-  "SvgFactory": {
-    "getFromCacheOrCreate": function () {},
-    "getInstance": function () {},
-    "imageCache": {},
-    "theInstance": {
-      "createAggregationIcon": function () {},
-      "createArrowDownSvg": function () {},
-      "createArrowLeftSvg": function () {},
-      "createArrowRightSvg": function () {},
-      "createArrowUpDownSvg": function () {},
-      "createArrowUpSvg": function () {},
-      "createCheckboxCheckedIcon": function () {},
-      "createCheckboxCheckedReadOnlyIcon": function () {},
-      "createCheckboxIndeterminateIcon": function () {},
-      "createCheckboxIndeterminateReadOnlyIcon": function () {},
-      "createCheckboxUncheckedIcon": function () {},
-      "createCheckboxUncheckedReadOnlyIcon": function () {},
-      "createColumnHiddenIcon": function () {},
-      "createColumnIcon": function () {},
-      "createColumnIndeterminateIcon": function () {},
-      "createColumnVisibleIcon": function () {},
-      "createColumnsIcon": function () {},
-      "createColumnsSvg12": function () {},
-      "createCopyIcon": function () {},
-      "createCutIcon": function () {},
-      "createDropNotAllowedIcon": function () {},
-      "createFilterSvg": function () {},
-      "createFilterSvg12": function () {},
-      "createFolderClosed": function () {},
-      "createFolderOpen": function () {},
-      "createGroupContractedIcon": function () {},
-      "createGroupExpandedIcon": function () {},
-      "createGroupIcon": function () {},
-      "createGroupIcon12": function () {},
-      "createGroupLoadingIcon": function () {},
-      "createLeftIcon": function () {},
-      "createMenuIcon": function () {},
-      "createMenuSvg": function () {},
-      "createMinusIcon": function () {},
-      "createMoveIcon": function () {},
-      "createPasteIcon": function () {},
-      "createPinIcon": function () {},
-      "createPivotIcon": function () {},
-      "createPlusIcon": function () {},
-      "createRightIcon": function () {},
-      "createSmallArrowDownSvg": function () {},
-      "createSmallArrowLeftSvg": function () {},
-      "createSmallArrowRightSvg": function () {}
+  "SortStage": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {}
+    }
+  },
+  "StandardMenuFactory": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {}
+    }
+  },
+  "StylingService": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {}
     }
   },
   "TabbedLayout": {
     "TEMPLATE": {}
   },
-  "TemplateService": function () {},
+  "TemplateService": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {}
+    }
+  },
   "TextCellEditor": {
     "EVENT_VISIBLE_CHANGED": {},
     "TEMPLATE": {}
@@ -512,6 +866,7 @@ var agGrid = {
     "CONTAINS": {},
     "DEFAULT_COMPARATOR": function () {},
     "DEFAULT_FORMATTER": function () {},
+    "DEFAULT_LOWERCASE_FORMATTER": function () {},
     "ENDS_WITH": {},
     "EQUALS": {},
     "EVENT_VISIBLE_CHANGED": {},
@@ -522,7 +877,10 @@ var agGrid = {
     "LESS_THAN_OR_EQUAL": {},
     "NOT_CONTAINS": {},
     "NOT_EQUAL": {},
-    "STARTS_WITH": {}
+    "STARTS_WITH": {},
+    "__agBeanMetaData": {
+      "agClassAttributes": {}
+    }
   },
   "TouchListener": {
     "EVENT_LONG_TAP": {},
@@ -536,9 +894,12 @@ var agGrid = {
     "addSafePassiveEventListener": function () {},
     "addStylesToElement": function () {},
     "anyExists": function () {},
+    "appendHtml": function () {},
     "areEventsNear": function () {},
+    "assertHtmlElement": function () {},
     "assign": function () {},
     "callIfPresent": function () {},
+    "camelCaseToHyphen": function () {},
     "cleanNumber": function () {},
     "cloneObject": function () {},
     "compareArrays": function () {},
@@ -546,9 +907,11 @@ var agGrid = {
     "createArrayOfNumbers": function () {},
     "createIcon": function () {},
     "createIconNoSpan": function () {},
+    "cssStyleObjectToMarkup": function () {},
     "debounce": function () {},
     "defaultComparator": function () {},
     "ensureDomOrder": function () {},
+    "ensureElement": function () {},
     "escape": function () {},
     "executeAfter": function () {},
     "executeInAWhile": function () {},
@@ -572,8 +935,51 @@ var agGrid = {
     "getScrollbarWidth": function () {},
     "getTarget": function () {},
     "getValueUsingField": function () {},
+    "hyphenToCamelCase": function () {},
+    "iconNameClassMap": {
+      "checkboxChecked": {},
+      "checkboxCheckedReadOnly": {},
+      "checkboxIndeterminate": {},
+      "checkboxIndeterminateReadOnly": {},
+      "checkboxUnchecked": {},
+      "checkboxUncheckedReadOnly": {},
+      "clipboardCopy": {},
+      "clipboardCut": {},
+      "clipboardPaste": {},
+      "columnGroupClosed": {},
+      "columnGroupOpened": {},
+      "columnMoveAdd": {},
+      "columnMoveGroup": {},
+      "columnMoveHide": {},
+      "columnMoveLeft": {},
+      "columnMoveMove": {},
+      "columnMovePin": {},
+      "columnMovePivot": {},
+      "columnMoveRight": {},
+      "columnMoveValue": {},
+      "columnSelectClosed": {},
+      "columnSelectOpen": {},
+      "columns": {},
+      "dropNotAllowed": {},
+      "filter": {},
+      "groupContracted": {},
+      "groupExpanded": {},
+      "groupLoading": {},
+      "menu": {},
+      "menuAddRowGroup": {},
+      "menuPin": {},
+      "menuRemoveRowGroup": {},
+      "menuValue": {},
+      "pivotPanel": {},
+      "rowGroupPanel": {},
+      "sortAscending": {},
+      "sortDescending": {},
+      "sortUnSort": {},
+      "valuePanel": {}
+    },
     "insertArrayIntoArray": function () {},
     "insertIntoArray": function () {},
+    "insertTemplateWithDomOrder": function () {},
     "insertWithDomOrder": function () {},
     "isBrowserChrome": function () {},
     "isBrowserEdge": function () {},
@@ -622,6 +1028,7 @@ var agGrid = {
     "setScrollLeft": function () {},
     "setVisible": function () {},
     "shallowCompare": function () {},
+    "sortNumberArray": function () {},
     "toStringOrNull": function () {},
     "toStrings": function () {},
     "traverseNodesWithKey": function () {},
@@ -633,10 +1040,25 @@ var agGrid = {
     "Down": {},
     "Up": {}
   },
-  "ValueFormatterService": function () {},
-  "ValueService": function () {},
+  "ValueFormatterService": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {}
+    }
+  },
+  "ValueService": {
+    "__agBeanMetaData": {
+      "agClassAttributes": {},
+      "beanName": {},
+      "postConstructMethods": {}
+    }
+  },
   "VerticalStack": function () {},
-  "XmlFactory": function () {},
+  "XmlFactory": {
+    "__agBeanMetaData": {
+      "beanName": {}
+    }
+  },
   "_": {
     "PRINTABLE_CHARACTERS": {},
     "addChangeListener": function () {},
@@ -645,9 +1067,12 @@ var agGrid = {
     "addSafePassiveEventListener": function () {},
     "addStylesToElement": function () {},
     "anyExists": function () {},
+    "appendHtml": function () {},
     "areEventsNear": function () {},
+    "assertHtmlElement": function () {},
     "assign": function () {},
     "callIfPresent": function () {},
+    "camelCaseToHyphen": function () {},
     "cleanNumber": function () {},
     "cloneObject": function () {},
     "compareArrays": function () {},
@@ -655,9 +1080,11 @@ var agGrid = {
     "createArrayOfNumbers": function () {},
     "createIcon": function () {},
     "createIconNoSpan": function () {},
+    "cssStyleObjectToMarkup": function () {},
     "debounce": function () {},
     "defaultComparator": function () {},
     "ensureDomOrder": function () {},
+    "ensureElement": function () {},
     "escape": function () {},
     "executeAfter": function () {},
     "executeInAWhile": function () {},
@@ -681,8 +1108,51 @@ var agGrid = {
     "getScrollbarWidth": function () {},
     "getTarget": function () {},
     "getValueUsingField": function () {},
+    "hyphenToCamelCase": function () {},
+    "iconNameClassMap": {
+      "checkboxChecked": {},
+      "checkboxCheckedReadOnly": {},
+      "checkboxIndeterminate": {},
+      "checkboxIndeterminateReadOnly": {},
+      "checkboxUnchecked": {},
+      "checkboxUncheckedReadOnly": {},
+      "clipboardCopy": {},
+      "clipboardCut": {},
+      "clipboardPaste": {},
+      "columnGroupClosed": {},
+      "columnGroupOpened": {},
+      "columnMoveAdd": {},
+      "columnMoveGroup": {},
+      "columnMoveHide": {},
+      "columnMoveLeft": {},
+      "columnMoveMove": {},
+      "columnMovePin": {},
+      "columnMovePivot": {},
+      "columnMoveRight": {},
+      "columnMoveValue": {},
+      "columnSelectClosed": {},
+      "columnSelectOpen": {},
+      "columns": {},
+      "dropNotAllowed": {},
+      "filter": {},
+      "groupContracted": {},
+      "groupExpanded": {},
+      "groupLoading": {},
+      "menu": {},
+      "menuAddRowGroup": {},
+      "menuPin": {},
+      "menuRemoveRowGroup": {},
+      "menuValue": {},
+      "pivotPanel": {},
+      "rowGroupPanel": {},
+      "sortAscending": {},
+      "sortDescending": {},
+      "sortUnSort": {},
+      "valuePanel": {}
+    },
     "insertArrayIntoArray": function () {},
     "insertIntoArray": function () {},
+    "insertTemplateWithDomOrder": function () {},
     "insertWithDomOrder": function () {},
     "isBrowserChrome": function () {},
     "isBrowserEdge": function () {},
@@ -731,6 +1201,7 @@ var agGrid = {
     "setScrollLeft": function () {},
     "setVisible": function () {},
     "shallowCompare": function () {},
+    "sortNumberArray": function () {},
     "toStringOrNull": function () {},
     "toStrings": function () {},
     "traverseNodesWithKey": function () {},
@@ -742,7 +1213,6 @@ var agGrid = {
   "simpleHttpRequest": function () {}
 };
 agGrid.AgCheckbox.prototype = {
-  "__agBeanMetaData": function () {},
   "__agComponentMetaData": function () {},
   "addAnnotatedEventListeners": function () {},
   "addCssClass": function () {},
@@ -759,6 +1229,7 @@ agGrid.AgCheckbox.prototype = {
   "dispatchEvent": function () {},
   "dispatchEventAsync": function () {},
   "getAttribute": function () {},
+  "getCompId": function () {},
   "getGui": function () {},
   "getNextValue": function () {},
   "getRefElement": function () {},
@@ -789,7 +1260,6 @@ agGrid.AgCheckbox.prototype = {
   "wireQuerySelectors": function () {}
 };
 agGrid.AlignedGridsService.prototype = {
-  "__agBeanMetaData": function () {},
   "fireColumnEvent": function () {},
   "fireEvent": function () {},
   "fireHorizontalScrollEvent": function () {},
@@ -799,6 +1269,8 @@ agGrid.AlignedGridsService.prototype = {
   "onColumnEvent": function () {},
   "onEvent": function () {},
   "onScrollEvent": function () {},
+  "processColumnEvent": function () {},
+  "processGroupOpenedEvent": function () {},
   "setBeans": function () {}
 };
 agGrid.AnimateShowChangeCellRenderer.prototype = {
@@ -817,6 +1289,7 @@ agGrid.AnimateShowChangeCellRenderer.prototype = {
   "dispatchEvent": function () {},
   "dispatchEventAsync": function () {},
   "getAttribute": function () {},
+  "getCompId": function () {},
   "getGui": function () {},
   "getRefElement": function () {},
   "hideDeltaValue": function () {},
@@ -857,6 +1330,7 @@ agGrid.AnimateSlideCellRenderer.prototype = {
   "dispatchEvent": function () {},
   "dispatchEventAsync": function () {},
   "getAttribute": function () {},
+  "getCompId": function () {},
   "getGui": function () {},
   "getRefElement": function () {},
   "init": function () {},
@@ -878,14 +1352,13 @@ agGrid.AnimateSlideCellRenderer.prototype = {
   "wireQuerySelectors": function () {}
 };
 agGrid.AutoWidthCalculator.prototype = {
-  "__agBeanMetaData": function () {},
   "cloneItemIntoDummy": function () {},
   "getHeaderCellForColumn": function () {},
   "getPreferredWidthForColumn": function () {},
   "putRowCellsIntoDummyContainer": function () {}
 };
 agGrid.BalancedColumnTreeBuilder.prototype = {
-  "__agBeanMetaData": function () {},
+  "assignColumnTypes": function () {},
   "balanceColumnTree": function () {},
   "checkForDeprecatedItems": function () {},
   "createBalancedColumnGroups": function () {},
@@ -903,14 +1376,12 @@ agGrid.BaseComponentWrapper.prototype = {
   "wrap": function () {}
 };
 agGrid.BaseCreator.prototype = {
-  "__agBeanMetaData": function () {},
   "export": function () {},
   "getData": function () {},
   "getMergedParamsAndData": function () {},
   "mergeDefaultParams": function () {}
 };
 agGrid.BaseFilter.prototype = {
-  "__agBeanMetaData": function () {},
   "__agComponentMetaData": function () {},
   "addAnnotatedEventListeners": function () {},
   "addCssClass": function () {},
@@ -931,6 +1402,7 @@ agGrid.BaseFilter.prototype = {
   "generateFilterHeader": function () {},
   "generateTemplate": function () {},
   "getAttribute": function () {},
+  "getCompId": function () {},
   "getGui": function () {},
   "getModel": function () {},
   "getNullableModel": function () {},
@@ -986,7 +1458,6 @@ agGrid.BeanStub.prototype = {
   "removeEventListener": function () {}
 };
 agGrid.BodyDropPivotTarget.prototype = {
-  "__agBeanMetaData": function () {},
   "clearColumnsList": function () {},
   "getIconName": function () {},
   "onDragEnter": function () {},
@@ -995,7 +1466,6 @@ agGrid.BodyDropPivotTarget.prototype = {
   "onDragging": function () {}
 };
 agGrid.BodyDropTarget.prototype = {
-  "__agBeanMetaData": function () {},
   "getContainer": function () {},
   "getIconName": function () {},
   "getSecondaryContainers": function () {},
@@ -1026,14 +1496,7 @@ agGrid.BorderLayout.prototype = {
   "showOverlay": function () {}
 };
 agGrid.CellComp.prototype = {
-  "__agBeanMetaData": function () {},
   "addAnnotatedEventListeners": function () {},
-  "addCellFocusedListener": function () {},
-  "addChangeListener": function () {},
-  "addClasses": function () {},
-  "addClassesFromColDef": function () {},
-  "addClassesFromRules": function () {},
-  "addColumnHoverListener": function () {},
   "addCssClass": function () {},
   "addDestroyFunc": function () {},
   "addDestroyableEventListener": function () {},
@@ -1041,29 +1504,29 @@ agGrid.CellComp.prototype = {
   "addEventListener": function () {},
   "addFeature": function () {},
   "addGuiEventListener": function () {},
-  "addHighlightListener": function () {},
   "addInCellEditor": function () {},
-  "addIndexChangeListener": function () {},
   "addOrRemoveCssClass": function () {},
   "addPopupCellEditor": function () {},
-  "addRangeSelectedListener": function () {},
-  "addStylesFromColDef": function () {},
+  "addSelectionCheckbox": function () {},
+  "afterAttached": function () {},
+  "angular1Compile": function () {},
   "animateCell": function () {},
-  "animateCellWithHighlight": function () {},
   "appendChild": function () {},
+  "attachCellRendererAfterCreate": function () {},
+  "attachCellRendererAfterRefresh": function () {},
   "attemptCellRendererRefresh": function () {},
   "attributesSet": function () {},
-  "checkCellFocused": function () {},
-  "checkColSpan": function () {},
+  "callAfterGuiAttachedOnCellRenderer": function () {},
+  "chooseCellRenderer": function () {},
   "constructor": function () {},
   "createCellEditor": function () {},
   "createCellEditorParams": function () {},
+  "createCellRendererInstance": function () {},
+  "createCellRendererParams": function () {},
   "createEvent": function () {},
-  "createGridCell": function () {},
-  "createParamsWithValue": function () {},
-  "createParentOfValue": function () {},
-  "createRendererAndRefreshParams": function () {},
+  "createGridCellVo": function () {},
   "destroy": function () {},
+  "detach": function () {},
   "dispatchEvent": function () {},
   "dispatchEventAsync": function () {},
   "doIeFocusHack": function () {},
@@ -1071,15 +1534,22 @@ agGrid.CellComp.prototype = {
   "focusCell": function () {},
   "formatValue": function () {},
   "getAttribute": function () {},
+  "getCellLeft": function () {},
   "getCellWidth": function () {},
+  "getColSpanningList": function () {},
   "getColumn": function () {},
+  "getCompId": function () {},
+  "getCreateTemplate": function () {},
   "getGridCell": function () {},
   "getGui": function () {},
+  "getInitialCssClasses": function () {},
+  "getInitialValueToRender": function () {},
   "getParentRow": function () {},
+  "getRangeClasses": function () {},
   "getRefElement": function () {},
   "getRenderedRow": function () {},
+  "getToolTip": function () {},
   "getValue": function () {},
-  "init": function () {},
   "instantiate": function () {},
   "instantiateRecurse": function () {},
   "isCellEditable": function () {},
@@ -1088,15 +1558,22 @@ agGrid.CellComp.prototype = {
   "isVisible": function () {},
   "isVolatile": function () {},
   "onBackspaceOrDeleteKeyPressed": function () {},
+  "onCellChanged": function () {},
   "onCellClicked": function () {},
   "onCellDoubleClicked": function () {},
+  "onCellFocused": function () {},
   "onColumnHover": function () {},
   "onContextMenu": function () {},
+  "onDisplayColumnsChanged": function () {},
   "onEnterKeyDown": function () {},
   "onEscapeKeyDown": function () {},
   "onF2KeyDown": function () {},
+  "onFirstRightPinnedChanged": function () {},
+  "onFlashCells": function () {},
   "onKeyDown": function () {},
   "onKeyPress": function () {},
+  "onLastLeftPinnedChanged": function () {},
+  "onLeftChanged": function () {},
   "onMouseDown": function () {},
   "onMouseEvent": function () {},
   "onMouseOut": function () {},
@@ -1107,27 +1584,35 @@ agGrid.CellComp.prototype = {
   "onRowIndexChanged": function () {},
   "onSpaceKeyPressed": function () {},
   "onTabKeyDown": function () {},
-  "populateCell": function () {},
-  "putDataIntoCell": function () {},
+  "onWidthChanged": function () {},
+  "parseValue": function () {},
+  "postProcessCellClassRules": function () {},
+  "postProcessClassesFromColDef": function () {},
+  "postProcessStylesFromColDef": function () {},
+  "preProcessCellClassRules": function () {},
+  "preProcessClassesFromColDef": function () {},
+  "preProcessStylesFromColDef": function () {},
+  "prepareCellRenderer": function () {},
+  "processCellClassRules": function () {},
+  "processClassesFromColDef": function () {},
+  "processStylesFromColDef": function () {},
+  "putDataIntoCellAfterRefresh": function () {},
   "queryForHtmlElement": function () {},
   "queryForHtmlInputElement": function () {},
   "refreshCell": function () {},
   "removeAnnotatedEventListeners": function () {},
   "removeCssClass": function () {},
   "removeEventListener": function () {},
-  "replaceCellContent": function () {},
-  "setColsSpanning": function () {},
+  "replaceContentsAfterRefresh": function () {},
   "setFocusInOnEditor": function () {},
   "setFocusOutOnEditor": function () {},
   "setGui": function () {},
   "setInlineEditingClass": function () {},
   "setParentRow": function () {},
-  "setPinnedClasses": function () {},
   "setTemplate": function () {},
   "setTemplateFromElement": function () {},
+  "setUsingWrapper": function () {},
   "setVisible": function () {},
-  "setWidthOnCell": function () {},
-  "setupCheckboxSelection": function () {},
   "setupColSpan": function () {},
   "startEditingIfEnabled": function () {},
   "startRowOrCellEdit": function () {},
@@ -1136,18 +1621,15 @@ agGrid.CellComp.prototype = {
   "stopRowOrCellEdit": function () {},
   "swapComponentForNode": function () {},
   "swapInComponentForQuerySelectors": function () {},
-  "useCellRenderer": function () {},
   "valuesAreEqual": function () {},
   "wireQuerySelectors": function () {}
 };
 agGrid.CellEditorFactory.prototype = {
-  "__agBeanMetaData": function () {},
   "addCellEditor": function () {},
   "createCellEditor": function () {},
   "init": function () {}
 };
 agGrid.CellNavigationService.prototype = {
-  "__agBeanMetaData": function () {},
   "getCellAbove": function () {},
   "getCellBelow": function () {},
   "getCellToLeft": function () {},
@@ -1163,17 +1645,16 @@ agGrid.CellNavigationService.prototype = {
   "isLastRowInContainer": function () {}
 };
 agGrid.CellRendererFactory.prototype = {
-  "__agBeanMetaData": function () {},
   "addCellRenderer": function () {},
   "getCellRenderer": function () {},
   "init": function () {}
 };
 agGrid.CellRendererService.prototype = {
-  "__agBeanMetaData": function () {},
-  "checkForDeprecatedItems": function () {},
-  "doesImplementICellRenderer": function () {},
-  "lookUpCellRenderer": function () {},
-  "useCellRenderer": function () {}
+  "bindToHtml": function () {},
+  "useCellRenderer": function () {},
+  "useFilterCellRenderer": function () {},
+  "useFullWidthGroupRowInnerCellRenderer": function () {},
+  "useInnerCellRenderer": function () {}
 };
 agGrid.ChangedPath.prototype = {
   "addParentNode": function () {},
@@ -1182,7 +1663,6 @@ agGrid.ChangedPath.prototype = {
   "isInPath": function () {}
 };
 agGrid.CheckboxSelectionComponent.prototype = {
-  "__agBeanMetaData": function () {},
   "addAnnotatedEventListeners": function () {},
   "addCssClass": function () {},
   "addDestroyFunc": function () {},
@@ -1200,6 +1680,7 @@ agGrid.CheckboxSelectionComponent.prototype = {
   "dispatchEvent": function () {},
   "dispatchEventAsync": function () {},
   "getAttribute": function () {},
+  "getCompId": function () {},
   "getGui": function () {},
   "getRefElement": function () {},
   "init": function () {},
@@ -1225,20 +1706,18 @@ agGrid.CheckboxSelectionComponent.prototype = {
   "wireQuerySelectors": function () {}
 };
 agGrid.Column.prototype = {
-  "__agBeanMetaData": function () {},
   "addEventListener": function () {},
+  "createColumnEvent": function () {},
   "createIsColumnFuncParams": function () {},
   "getActualWidth": function () {},
   "getAggFunc": function () {},
   "getCellEditor": function () {},
-  "getCellRenderer": function () {},
   "getColDef": function () {},
   "getColId": function () {},
   "getColSpan": function () {},
   "getColumnGroupShow": function () {},
   "getDefinition": function () {},
   "getFilter": function () {},
-  "getFloatingCellRenderer": function () {},
   "getId": function () {},
   "getLeft": function () {},
   "getMaxWidth": function () {},
@@ -1306,7 +1785,6 @@ agGrid.Column.prototype = {
   "validate": function () {}
 };
 agGrid.ColumnApi.prototype = {
-  "__agBeanMetaData": function () {},
   "addAggregationColumn": function () {},
   "addAggregationColumns": function () {},
   "addPivotColumn": function () {},
@@ -1381,26 +1859,7 @@ agGrid.ColumnApi.prototype = {
   "setValueColumns": function () {},
   "sizeColumnsToFit": function () {}
 };
-agGrid.ColumnChangeEvent.prototype = {
-  "getColumn": function () {},
-  "getColumnGroup": function () {},
-  "getColumns": function () {},
-  "getPinned": function () {},
-  "getToIndex": function () {},
-  "getType": function () {},
-  "isFinished": function () {},
-  "isVisible": function () {},
-  "toString": function () {},
-  "withColumn": function () {},
-  "withColumnGroup": function () {},
-  "withColumns": function () {},
-  "withFinished": function () {},
-  "withPinned": function () {},
-  "withToIndex": function () {},
-  "withVisible": function () {}
-};
 agGrid.ColumnController.prototype = {
-  "__agBeanMetaData": function () {},
   "actionOnGridColumns": function () {},
   "addPivotColumn": function () {},
   "addPivotColumns": function () {},
@@ -1546,13 +2005,13 @@ agGrid.ColumnController.prototype = {
   "wrapHeaderNameWithAggFunc": function () {}
 };
 agGrid.ColumnGroup.prototype = {
-  "__agBeanMetaData": function () {},
   "addChild": function () {},
   "addDisplayedLeafColumns": function () {},
   "addEventListener": function () {},
   "addLeafColumns": function () {},
   "calculateDisplayedColumns": function () {},
   "checkLeft": function () {},
+  "createAgEvent": function () {},
   "getActualWidth": function () {},
   "getChildren": function () {},
   "getColGroupDef": function () {},
@@ -1585,7 +2044,6 @@ agGrid.ColumnKeyCreator.prototype = {
   "getUniqueKey": function () {}
 };
 agGrid.ColumnUtils.prototype = {
-  "__agBeanMetaData": function () {},
   "calculateColInitialWidth": function () {},
   "depthFirstAllColumnTreeSearch": function () {},
   "depthFirstDisplayedColumnTreeSearch": function () {},
@@ -1608,6 +2066,7 @@ agGrid.Component.prototype = {
   "dispatchEvent": function () {},
   "dispatchEventAsync": function () {},
   "getAttribute": function () {},
+  "getCompId": function () {},
   "getGui": function () {},
   "getRefElement": function () {},
   "instantiate": function () {},
@@ -1648,7 +2107,6 @@ agGrid.Context.prototype = {
   "wireBeans": function () {}
 };
 agGrid.CsvCreator.prototype = {
-  "__agBeanMetaData": function () {},
   "constructor": function () {},
   "createSerializingSession": function () {},
   "export": function () {},
@@ -1662,7 +2120,6 @@ agGrid.CsvCreator.prototype = {
   "mergeDefaultParams": function () {}
 };
 agGrid.DateFilter.prototype = {
-  "__agBeanMetaData": function () {},
   "__agComponentMetaData": function () {},
   "addAnnotatedEventListeners": function () {},
   "addCssClass": function () {},
@@ -1690,6 +2147,7 @@ agGrid.DateFilter.prototype = {
   "generateTemplate": function () {},
   "getApplicableFilterTypes": function () {},
   "getAttribute": function () {},
+  "getCompId": function () {},
   "getDateFrom": function () {},
   "getDateTo": function () {},
   "getDefaultType": function () {},
@@ -1705,6 +2163,7 @@ agGrid.DateFilter.prototype = {
   "isFilterActive": function () {},
   "isVisible": function () {},
   "modelFromFloatingFilter": function () {},
+  "nullComparator": function () {},
   "onClearButton": function () {},
   "onDateChanged": function () {},
   "onFilterChanged": function () {},
@@ -1732,10 +2191,10 @@ agGrid.DateFilter.prototype = {
   "swapComponentForNode": function () {},
   "swapInComponentForQuerySelectors": function () {},
   "translate": function () {},
+  "translateNull": function () {},
   "wireQuerySelectors": function () {}
 };
 agGrid.DisplayedGroupCreator.prototype = {
-  "__agBeanMetaData": function () {},
   "createColumnGroup": function () {},
   "createDisplayedGroups": function () {},
   "createFakePath": function () {},
@@ -1744,11 +2203,9 @@ agGrid.DisplayedGroupCreator.prototype = {
   "setupParentsIntoColumns": function () {}
 };
 agGrid.Downloader.prototype = {
-  "__agBeanMetaData": function () {},
   "download": function () {}
 };
 agGrid.DragAndDropService.prototype = {
-  "__agBeanMetaData": function () {},
   "addDragSource": function () {},
   "addDropTarget": function () {},
   "createDropTargetEvent": function () {},
@@ -1772,7 +2229,6 @@ agGrid.DragAndDropService.prototype = {
   "workOutVDirection": function () {}
 };
 agGrid.DragService.prototype = {
-  "__agBeanMetaData": function () {},
   "addDragSource": function () {},
   "destroy": function () {},
   "getFirstActiveTouch": function () {},
@@ -1790,8 +2246,10 @@ agGrid.DragService.prototype = {
   "removeListener": function () {},
   "setNoSelectToBody": function () {}
 };
+agGrid.Environment.prototype = {
+  "getTheme": function () {}
+};
 agGrid.EventService.prototype = {
-  "__agBeanMetaData": function () {},
   "addEventListener": function () {},
   "addGlobalListener": function () {},
   "addModalPriorityEventListener": function () {},
@@ -1806,7 +2264,6 @@ agGrid.EventService.prototype = {
   "setBeans": function () {}
 };
 agGrid.ExpressionService.prototype = {
-  "__agBeanMetaData": function () {},
   "createExpressionFunction": function () {},
   "createFunctionBody": function () {},
   "evaluate": function () {},
@@ -1814,7 +2271,6 @@ agGrid.ExpressionService.prototype = {
   "setBeans": function () {}
 };
 agGrid.FilterManager.prototype = {
-  "__agBeanMetaData": function () {},
   "aggregateRowForQuickFilter": function () {},
   "assertMethodHasNoParameters": function () {},
   "cachedFilter": function () {},
@@ -1855,11 +2311,9 @@ agGrid.FilterManager.prototype = {
   "updateFilterFlagInColumns": function () {}
 };
 agGrid.FilterStage.prototype = {
-  "__agBeanMetaData": function () {},
   "execute": function () {}
 };
 agGrid.FlattenStage.prototype = {
-  "__agBeanMetaData": function () {},
   "addRowNodeToRowsToDisplay": function () {},
   "createFlowerNode": function () {},
   "ensureFooterNodeExists": function () {},
@@ -1867,18 +2321,7 @@ agGrid.FlattenStage.prototype = {
   "recursivelyAddToRowsToDisplay": function () {},
   "resetRowTops": function () {}
 };
-agGrid.FocusService.prototype = {
-  "__agBeanMetaData": function () {},
-  "addListener": function () {},
-  "destroy": function () {},
-  "getCellForFocus": function () {},
-  "informListeners": function () {},
-  "init": function () {},
-  "onFocus": function () {},
-  "removeListener": function () {}
-};
 agGrid.FocusedCellController.prototype = {
-  "__agBeanMetaData": function () {},
   "clearFocusedCell": function () {},
   "getFocusCellToUseAfterRefresh": function () {},
   "getFocusedCell": function () {},
@@ -1895,16 +2338,65 @@ agGrid.Grid.prototype = {
   "destroy": function () {},
   "dispatchGridReadyEvent": function () {},
   "getRowModelClass": function () {},
+  "registerComponents": function () {},
   "setColumnsAndData": function () {}
 };
+agGrid.Grid.RowModelClasses.inMemory.prototype = {
+  "createChangePath": function () {},
+  "doAggregate": function () {},
+  "doFilter": function () {},
+  "doPivot": function () {},
+  "doRowGrouping": function () {},
+  "doRowsToDisplay": function () {},
+  "doSort": function () {},
+  "expandOrCollapseAll": function () {},
+  "forEachLeafNode": function () {},
+  "forEachNode": function () {},
+  "forEachNodeAfterFilter": function () {},
+  "forEachNodeAfterFilterAndSort": function () {},
+  "forEachPivotNode": function () {},
+  "getCopyOfNodesMap": function () {},
+  "getCurrentPageHeight": function () {},
+  "getGroupState": function () {},
+  "getNodesInRangeForSelection": function () {},
+  "getPageFirstRow": function () {},
+  "getPageLastRow": function () {},
+  "getRootNode": function () {},
+  "getRow": function () {},
+  "getRowBounds": function () {},
+  "getRowCount": function () {},
+  "getRowIndexAtPixel": function () {},
+  "getRowNode": function () {},
+  "getTopLevelNodes": function () {},
+  "getType": function () {},
+  "getVirtualRowCount": function () {},
+  "init": function () {},
+  "isEmpty": function () {},
+  "isLastRowFound": function () {},
+  "isRowInPixel": function () {},
+  "isRowPresent": function () {},
+  "isRowsToRender": function () {},
+  "onFilterChanged": function () {},
+  "onRowGroupOpened": function () {},
+  "onRowHeightChanged": function () {},
+  "onSortChanged": function () {},
+  "onValueChanged": function () {},
+  "recursivelyWalkNodesAndCallback": function () {},
+  "refreshModel": function () {},
+  "resetRowHeights": function () {},
+  "restoreGroupState": function () {},
+  "setDatasource": function () {},
+  "setRowData": function () {},
+  "updateRowData": function () {}
+};
 agGrid.Grid.RowModelClasses.infinite.prototype = {
-  "__agBeanMetaData": function () {},
   "addDestroyFunc": function () {},
   "addDestroyableEventListener": function () {},
   "addEventListener": function () {},
   "addEventListeners": function () {},
   "checkForDeprecated": function () {},
   "constructor": function () {},
+  "createModelUpdatedEvent": function () {},
   "destroy": function () {},
   "destroyCache": function () {},
   "dispatchEvent": function () {},
@@ -1939,61 +2431,7 @@ agGrid.Grid.RowModelClasses.infinite.prototype = {
   "setVirtualRowCount": function () {},
   "updateRowData": function () {}
 };
-agGrid.Grid.RowModelClasses.normal.prototype = {
-  "__agBeanMetaData": function () {},
-  "addItems": function () {},
-  "createChangePath": function () {},
-  "doAggregate": function () {},
-  "doFilter": function () {},
-  "doPivot": function () {},
-  "doRowGrouping": function () {},
-  "doRowsToDisplay": function () {},
-  "doSort": function () {},
-  "expandOrCollapseAll": function () {},
-  "forEachLeafNode": function () {},
-  "forEachNode": function () {},
-  "forEachNodeAfterFilter": function () {},
-  "forEachNodeAfterFilterAndSort": function () {},
-  "forEachPivotNode": function () {},
-  "getCopyOfNodesMap": function () {},
-  "getCurrentPageHeight": function () {},
-  "getGroupState": function () {},
-  "getNodesInRangeForSelection": function () {},
-  "getPageFirstRow": function () {},
-  "getPageLastRow": function () {},
-  "getRootNode": function () {},
-  "getRow": function () {},
-  "getRowBounds": function () {},
-  "getRowCount": function () {},
-  "getRowIndexAtPixel": function () {},
-  "getRowNode": function () {},
-  "getTopLevelNodes": function () {},
-  "getType": function () {},
-  "getVirtualRowCount": function () {},
-  "init": function () {},
-  "insertItemsAtIndex": function () {},
-  "isEmpty": function () {},
-  "isLastRowFound": function () {},
-  "isRowInPixel": function () {},
-  "isRowPresent": function () {},
-  "isRowsToRender": function () {},
-  "onFilterChanged": function () {},
-  "onRowGroupOpened": function () {},
-  "onRowHeightChanged": function () {},
-  "onSortChanged": function () {},
-  "onValueChanged": function () {},
-  "recursivelyWalkNodesAndCallback": function () {},
-  "refreshAndFireEvent": function () {},
-  "refreshModel": function () {},
-  "removeItems": function () {},
-  "resetRowHeights": function () {},
-  "restoreGroupState": function () {},
-  "setDatasource": function () {},
-  "setRowData": function () {},
-  "updateRowData": function () {}
-};
 agGrid.GridApi.prototype = {
-  "__agBeanMetaData": function () {},
   "__getAlignedGridService": function () {},
   "addAggFunc": function () {},
   "addAggFuncs": function () {},
@@ -2043,6 +2481,7 @@ agGrid.GridApi.prototype = {
   "getFilterInstance": function () {},
   "getFilterModel": function () {},
   "getFirstDisplayedRow": function () {},
+  "getFirstRenderedRow": function () {},
   "getFloatingBottomRow": function () {},
   "getFloatingBottomRowCount": function () {},
   "getFloatingTopRow": function () {},
@@ -2051,6 +2490,7 @@ agGrid.GridApi.prototype = {
   "getInfinitePageState": function () {},
   "getInfiniteRowCount": function () {},
   "getLastDisplayedRow": function () {},
+  "getLastRenderedRow": function () {},
   "getModel": function () {},
   "getPinnedBottomRow": function () {},
   "getPinnedBottomRowCount": function () {},
@@ -2149,6 +2589,7 @@ agGrid.GridApi.prototype = {
   "stopEditing": function () {},
   "tabToNextCell": function () {},
   "tabToPreviousCell": function () {},
+  "timeFullRedraw": function () {},
   "updateRowData": function () {}
 };
 agGrid.GridCell.prototype = {
@@ -2158,7 +2599,6 @@ agGrid.GridCell.prototype = {
   "toString": function () {}
 };
 agGrid.GridCore.prototype = {
-  "__agBeanMetaData": function () {},
   "addRtlSupport": function () {},
   "addWindowResizeListener": function () {},
   "createNorthPanel": function () {},
@@ -2175,13 +2615,11 @@ agGrid.GridCore.prototype = {
   "showToolPanel": function () {}
 };
 agGrid.GridOptionsWrapper.prototype = {
-  "__agBeanMetaData": function () {},
   "addEventListener": function () {},
   "agWire": function () {},
   "checkForDeprecated": function () {},
   "destroy": function () {},
   "doesExternalFilterPass": function () {},
-  "executeProcessRowPostCreateFunc": function () {},
   "getAggFuncs": function () {},
   "getAlignedGrids": function () {},
   "getApi": function () {},
@@ -2201,18 +2639,16 @@ agGrid.GridOptionsWrapper.prototype = {
   "getDefaultColDef": function () {},
   "getDefaultColGroupDef": function () {},
   "getDefaultExportParams": function () {},
+  "getDefaultRowHeight": function () {},
   "getDocument": function () {},
   "getDoesDataFlowerFunc": function () {},
   "getDomData": function () {},
   "getEnterpriseDatasource": function () {},
   "getFloatingFiltersHeight": function () {},
-  "getFullWidthCellRenderer": function () {},
   "getFullWidthCellRendererParams": function () {},
   "getGroupDefaultExpanded": function () {},
   "getGroupHeaderHeight": function () {},
   "getGroupRowAggNodesFunc": function () {},
-  "getGroupRowInnerRenderer": function () {},
-  "getGroupRowRenderer": function () {},
   "getGroupRowRendererParams": function () {},
   "getHeaderCellRenderer": function () {},
   "getHeaderCellTemplate": function () {},
@@ -2221,7 +2657,6 @@ agGrid.GridOptionsWrapper.prototype = {
   "getIcons": function () {},
   "getInfiniteInitialRowCount": function () {},
   "getIsFullWidthCellFunc": function () {},
-  "getIsScrollLag": function () {},
   "getLayoutInterval": function () {},
   "getLocaleTextFunc": function () {},
   "getMainMenuItemsFunc": function () {},
@@ -2242,6 +2677,7 @@ agGrid.GridOptionsWrapper.prototype = {
   "getPostProcessPopupFunc": function () {},
   "getProcessCellForClipboardFunc": function () {},
   "getProcessCellFromClipboardFunc": function () {},
+  "getProcessRowPostCreateFunc": function () {},
   "getProcessSecondaryColDefFunc": function () {},
   "getProcessSecondaryColGroupDefFunc": function () {},
   "getQuickFilterText": function () {},
@@ -2326,6 +2762,7 @@ agGrid.GridOptionsWrapper.prototype = {
   "isStopEditingWhenGridLosesFocus": function () {},
   "isSuppressAggAtRootLevel": function () {},
   "isSuppressAggFuncInHeader": function () {},
+  "isSuppressAnimationFrame": function () {},
   "isSuppressAutoSize": function () {},
   "isSuppressCellSelection": function () {},
   "isSuppressChangeDetection": function () {},
@@ -2348,8 +2785,6 @@ agGrid.GridOptionsWrapper.prototype = {
   "isSuppressParentsInRowNodes": function () {},
   "isSuppressPreventDefaultOnMouseWheel": function () {},
   "isSuppressRowClickSelection": function () {},
-  "isSuppressRowHoverClass": function () {},
-  "isSuppressScrollLag": function () {},
   "isSuppressScrollOnNewData": function () {},
   "isSuppressTabbing": function () {},
   "isSuppressTouch": function () {},
@@ -2363,11 +2798,10 @@ agGrid.GridOptionsWrapper.prototype = {
   "removeEventListener": function () {},
   "setDomData": function () {},
   "setProperty": function () {},
-  "setupFrameworkComponents": function () {},
+  "specialForNewMaterial": function () {},
   "useAsyncEvents": function () {}
 };
 agGrid.GridPanel.prototype = {
-  "__agBeanMetaData": function () {},
   "addAngularApplyCheck": function () {},
   "addBodyViewportListener": function () {},
   "addDestroyFunc": function () {},
@@ -2377,7 +2811,7 @@ agGrid.GridPanel.prototype = {
   "addEventListeners": function () {},
   "addIEPinFix": function () {},
   "addKeyboardEvents": function () {},
-  "addMouseEvents": function () {},
+  "addMouseListeners": function () {},
   "addMouseWheelEventListeners": function () {},
   "addScrollEventListener": function () {},
   "addScrollListener": function () {},
@@ -2389,13 +2823,14 @@ agGrid.GridPanel.prototype = {
   "createLoadingOverlayTemplate": function () {},
   "createNoRowsOverlayTemplate": function () {},
   "createOverlayTemplate": function () {},
-  "debounce": function () {},
   "destroy": function () {},
   "disableBrowserDragging": function () {},
   "dispatchEvent": function () {},
   "dispatchEventAsync": function () {},
+  "doHorizontalScroll": function () {},
   "ensureColumnVisible": function () {},
   "ensureIndexVisible": function () {},
+  "executeFrame": function () {},
   "fakeVerticalScroll": function () {},
   "findElements": function () {},
   "generalMouseWheelListener": function () {},
@@ -2427,7 +2862,6 @@ agGrid.GridPanel.prototype = {
   "isBodyVerticalScrollActive": function () {},
   "isBodyVerticalScrollShowing": function () {},
   "isHorizontalScrollShowing": function () {},
-  "isUseScrollLag": function () {},
   "isVerticalScrollShowing": function () {},
   "loadTemplate": function () {},
   "onBodyHorizontalScroll": function () {},
@@ -2452,6 +2886,7 @@ agGrid.GridPanel.prototype = {
   "processKeyboardEvent": function () {},
   "processMouseEvent": function () {},
   "queryHtmlElement": function () {},
+  "redrawRowsAfterScroll": function () {},
   "removeEventListener": function () {},
   "removeScrollEventListener": function () {},
   "scrollHorizontally": function () {},
@@ -2459,6 +2894,7 @@ agGrid.GridPanel.prototype = {
   "setBodyAndHeaderHeights": function () {},
   "setBodyViewportScrollLeft": function () {},
   "setBottomPaddingOnPinnedRight": function () {},
+  "setFakeScroll": function () {},
   "setHorizontalScrollPosition": function () {},
   "setLeftAndRightBounds": function () {},
   "setMarginOnFullWidthCellContainer": function () {},
@@ -2482,13 +2918,11 @@ agGrid.GridRow.prototype = {
   "toString": function () {}
 };
 agGrid.GridSerializer.prototype = {
-  "__agBeanMetaData": function () {},
   "doAddHeaderHeader": function () {},
   "recursivelyAddHeaderGroups": function () {},
   "serialize": function () {}
 };
 agGrid.GroupCellRenderer.prototype = {
-  "__agBeanMetaData": function () {},
   "__agComponentMetaData": function () {},
   "addAnnotatedEventListeners": function () {},
   "addCheckboxIfNeeded": function () {},
@@ -2503,23 +2937,24 @@ agGrid.GroupCellRenderer.prototype = {
   "addOrRemoveCssClass": function () {},
   "addPadding": function () {},
   "addValueElement": function () {},
+  "afterGuiAttached": function () {},
   "appendChild": function () {},
   "attributesSet": function () {},
   "constructor": function () {},
   "createFooterCell": function () {},
-  "createFromInnerRenderer": function () {},
   "createGroupCell": function () {},
   "createLeafCell": function () {},
   "destroy": function () {},
   "dispatchEvent": function () {},
   "dispatchEventAsync": function () {},
-  "embeddedRowMismatch": function () {},
   "getAttribute": function () {},
+  "getCompId": function () {},
   "getGui": function () {},
   "getRefElement": function () {},
   "init": function () {},
   "instantiate": function () {},
   "instantiateRecurse": function () {},
+  "isEmbeddedRowMismatch": function () {},
   "isUserWantsSelected": function () {},
   "isVisible": function () {},
   "onExpandOrContract": function () {},
@@ -2535,7 +2970,6 @@ agGrid.GroupCellRenderer.prototype = {
   "setTemplate": function () {},
   "setTemplateFromElement": function () {},
   "setVisible": function () {},
-  "setupComponents": function () {},
   "setupDragOpenParents": function () {},
   "showExpandAndContractIcons": function () {},
   "swapComponentForNode": function () {},
@@ -2547,7 +2981,6 @@ agGrid.GroupInstanceIdCreator.prototype = {
   "getInstanceIdForKey": function () {}
 };
 agGrid.HeaderContainer.prototype = {
-  "__agBeanMetaData": function () {},
   "createHeaderRowComps": function () {},
   "destroy": function () {},
   "forEachHeaderElement": function () {},
@@ -2564,7 +2997,6 @@ agGrid.HeaderContainer.prototype = {
   "setupDragAndDrop": function () {}
 };
 agGrid.HeaderRenderer.prototype = {
-  "__agBeanMetaData": function () {},
   "destroy": function () {},
   "forEachHeaderElement": function () {},
   "init": function () {},
@@ -2575,7 +3007,6 @@ agGrid.HeaderRenderer.prototype = {
   "setPinnedColContainerWidth": function () {}
 };
 agGrid.HeaderRowComp.prototype = {
-  "__agBeanMetaData": function () {},
   "addAnnotatedEventListeners": function () {},
   "addCssClass": function () {},
   "addDestroyFunc": function () {},
@@ -2595,6 +3026,7 @@ agGrid.HeaderRowComp.prototype = {
   "dispatchEventAsync": function () {},
   "forEachHeaderElement": function () {},
   "getAttribute": function () {},
+  "getCompId": function () {},
   "getGui": function () {},
   "getRefElement": function () {},
   "init": function () {},
@@ -2624,13 +3056,11 @@ agGrid.HeaderRowComp.prototype = {
   "wireQuerySelectors": function () {}
 };
 agGrid.HeaderTemplateLoader.prototype = {
-  "__agBeanMetaData": function () {},
   "addInIcon": function () {},
   "createDefaultHeaderElement": function () {},
   "createHeaderElement": function () {}
 };
 agGrid.HorizontalDragService.prototype = {
-  "__agBeanMetaData": function () {},
   "addDragHandling": function () {}
 };
 agGrid.InMemoryNodeManager.prototype = {
@@ -2650,8 +3080,6 @@ agGrid.InMemoryNodeManager.prototype = {
   "updatedRowNode": function () {}
 };
 agGrid.InMemoryRowModel.prototype = {
-  "__agBeanMetaData": function () {},
-  "addItems": function () {},
   "createChangePath": function () {},
   "doAggregate": function () {},
   "doFilter": function () {},
@@ -2681,7 +3109,6 @@ agGrid.InMemoryRowModel.prototype = {
   "getType": function () {},
   "getVirtualRowCount": function () {},
   "init": function () {},
-  "insertItemsAtIndex": function () {},
   "isEmpty": function () {},
   "isLastRowFound": function () {},
   "isRowInPixel": function () {},
@@ -2693,9 +3120,7 @@ agGrid.InMemoryRowModel.prototype = {
   "onSortChanged": function () {},
   "onValueChanged": function () {},
   "recursivelyWalkNodesAndCallback": function () {},
-  "refreshAndFireEvent": function () {},
   "refreshModel": function () {},
-  "removeItems": function () {},
   "resetRowHeights": function () {},
   "restoreGroupState": function () {},
   "setDatasource": function () {},
@@ -2703,13 +3128,13 @@ agGrid.InMemoryRowModel.prototype = {
   "updateRowData": function () {}
 };
 agGrid.InfiniteRowModel.prototype = {
-  "__agBeanMetaData": function () {},
   "addDestroyFunc": function () {},
   "addDestroyableEventListener": function () {},
   "addEventListener": function () {},
   "addEventListeners": function () {},
   "checkForDeprecated": function () {},
   "constructor": function () {},
+  "createModelUpdatedEvent": function () {},
   "destroy": function () {},
   "destroyCache": function () {},
   "dispatchEvent": function () {},
@@ -2761,6 +3186,7 @@ agGrid.LargeTextCellEditor.prototype = {
   "dispatchEvent": function () {},
   "dispatchEventAsync": function () {},
   "getAttribute": function () {},
+  "getCompId": function () {},
   "getGui": function () {},
   "getRefElement": function () {},
   "getValue": function () {},
@@ -2788,26 +3214,24 @@ agGrid.Logger.prototype = {
   "log": function () {}
 };
 agGrid.LoggerFactory.prototype = {
-  "__agBeanMetaData": function () {},
   "create": function () {},
   "isLogging": function () {},
   "setBeans": function () {}
 };
 agGrid.MouseEventService.prototype = {
-  "__agBeanMetaData": function () {},
   "getGridCellForEvent": function () {},
   "getRenderedCellForEvent": function () {}
 };
 agGrid.MoveColumnController.prototype = {
-  "__agBeanMetaData": function () {},
   "attemptMoveColumns": function () {},
+  "calculateOldIndex": function () {},
+  "calculateValidMoves": function () {},
   "checkCenterForScrolling": function () {},
   "ensureIntervalCleared": function () {},
   "ensureIntervalStarted": function () {},
   "getIconName": function () {},
-  "getNewIndexForColMovingLeft": function () {},
-  "getNewIndexForColMovingRight": function () {},
   "init": function () {},
+  "isColumnHidden": function () {},
   "moveInterval": function () {},
   "normaliseDirection": function () {},
   "normaliseX": function () {},
@@ -2815,10 +3239,9 @@ agGrid.MoveColumnController.prototype = {
   "onDragLeave": function () {},
   "onDragStop": function () {},
   "onDragging": function () {},
-  "workOutNewIndex": function () {}
+  "workOutNewIndex_old": function () {}
 };
 agGrid.NumberFilter.prototype = {
-  "__agBeanMetaData": function () {},
   "__agComponentMetaData": function () {},
   "addAnnotatedEventListeners": function () {},
   "addCssClass": function () {},
@@ -2847,6 +3270,7 @@ agGrid.NumberFilter.prototype = {
   "generateTemplate": function () {},
   "getApplicableFilterTypes": function () {},
   "getAttribute": function () {},
+  "getCompId": function () {},
   "getDefaultType": function () {},
   "getFilter": function () {},
   "getGui": function () {},
@@ -2860,6 +3284,7 @@ agGrid.NumberFilter.prototype = {
   "isFilterActive": function () {},
   "isVisible": function () {},
   "modelFromFloatingFilter": function () {},
+  "nullComparator": function () {},
   "onClearButton": function () {},
   "onFilterChanged": function () {},
   "onFilterTypeChanged": function () {},
@@ -2888,6 +3313,7 @@ agGrid.NumberFilter.prototype = {
   "swapComponentForNode": function () {},
   "swapInComponentForQuerySelectors": function () {},
   "translate": function () {},
+  "translateNull": function () {},
   "wireQuerySelectors": function () {}
 };
 agGrid.NumberSequence.prototype = {
@@ -2898,7 +3324,6 @@ agGrid.NumberSequence.prototype = {
 agGrid.OriginalColumnGroup.prototype = {
   "addEventListener": function () {},
   "addLeafColumns": function () {},
-  "calculateExpandable": function () {},
   "getChildren": function () {},
   "getColGroupDef": function () {},
   "getColumnGroupShow": function () {},
@@ -2908,12 +3333,15 @@ agGrid.OriginalColumnGroup.prototype = {
   "isExpandable": function () {},
   "isExpanded": function () {},
   "isPadding": function () {},
+  "isVisible": function () {},
+  "onColumnVisibilityChanged": function () {},
   "removeEventListener": function () {},
   "setChildren": function () {},
-  "setExpanded": function () {}
+  "setExpandable": function () {},
+  "setExpanded": function () {},
+  "setupExpandable": function () {}
 };
 agGrid.PinnedRowModel.prototype = {
-  "__agBeanMetaData": function () {},
   "createNodesFromData": function () {},
   "forEachPinnedBottomRow": function () {},
   "forEachPinnedTopRow": function () {},
@@ -2934,7 +3362,6 @@ agGrid.PinnedRowModel.prototype = {
   "setPinnedTopRowData": function () {}
 };
 agGrid.PopupEditorWrapper.prototype = {
-  "__agBeanMetaData": function () {},
   "addAnnotatedEventListeners": function () {},
   "addCssClass": function () {},
   "addDestroyFunc": function () {},
@@ -2953,6 +3380,7 @@ agGrid.PopupEditorWrapper.prototype = {
   "focusIn": function () {},
   "focusOut": function () {},
   "getAttribute": function () {},
+  "getCompId": function () {},
   "getGui": function () {},
   "getRefElement": function () {},
   "getValue": function () {},
@@ -2978,7 +3406,6 @@ agGrid.PopupEditorWrapper.prototype = {
   "wireQuerySelectors": function () {}
 };
 agGrid.PopupSelectCellEditor.prototype = {
-  "__agBeanMetaData": function () {},
   "addAnnotatedEventListeners": function () {},
   "addCssClass": function () {},
   "addDestroyFunc": function () {},
@@ -2996,6 +3423,7 @@ agGrid.PopupSelectCellEditor.prototype = {
   "dispatchEventAsync": function () {},
   "focusIn": function () {},
   "getAttribute": function () {},
+  "getCompId": function () {},
   "getGui": function () {},
   "getRefElement": function () {},
   "getValue": function () {},
@@ -3018,7 +3446,6 @@ agGrid.PopupSelectCellEditor.prototype = {
   "wireQuerySelectors": function () {}
 };
 agGrid.PopupService.prototype = {
-  "__agBeanMetaData": function () {},
   "addAsModalPopup": function () {},
   "callPostProcessPopup": function () {},
   "getPopupParent": function () {},
@@ -3048,8 +3475,10 @@ agGrid.PopupTextCellEditor.prototype = {
   "dispatchEventAsync": function () {},
   "focusIn": function () {},
   "getAttribute": function () {},
+  "getCompId": function () {},
   "getGui": function () {},
   "getRefElement": function () {},
+  "getStartValue": function () {},
   "getValue": function () {},
   "init": function () {},
   "instantiate": function () {},
@@ -3070,7 +3499,6 @@ agGrid.PopupTextCellEditor.prototype = {
   "wireQuerySelectors": function () {}
 };
 agGrid.RenderedHeaderCell.prototype = {
-  "__agBeanMetaData": function () {},
   "addAnnotatedEventListeners": function () {},
   "addAttributes": function () {},
   "addCssClass": function () {},
@@ -3089,6 +3517,7 @@ agGrid.RenderedHeaderCell.prototype = {
   "dispatchEventAsync": function () {},
   "getAttribute": function () {},
   "getColumn": function () {},
+  "getCompId": function () {},
   "getGui": function () {},
   "getRefElement": function () {},
   "init": function () {},
@@ -3128,104 +3557,138 @@ agGrid.RenderedHeaderCell.prototype = {
   "wireQuerySelectors": function () {}
 };
 agGrid.RowComp.prototype = {
-  "__agBeanMetaData": function () {},
-  "addCellFocusedListener": function () {},
-  "addClassesFromRowClass": function () {},
-  "addClassesFromRowClassFunc": function () {},
-  "addColumnListener": function () {},
+  "addAnnotatedEventListeners": function () {},
+  "addCssClass": function () {},
   "addDestroyFunc": function () {},
   "addDestroyableEventListener": function () {},
   "addDomData": function () {},
   "addEventListener": function () {},
-  "addExpandedAndContractedClasses": function () {},
-  "addGridClasses": function () {},
-  "addHoverClass": function () {},
+  "addFeature": function () {},
+  "addGuiEventListener": function () {},
   "addHoverFunctionality": function () {},
+  "addListeners": function () {},
   "addMouseWheelListenerToFullWidthRow": function () {},
-  "addNodeDataChangedListener": function () {},
-  "addRowIds": function () {},
-  "addRowIndexes": function () {},
-  "addRowSelectedListener": function () {},
-  "addStyleFromRowStyle": function () {},
-  "addStyleFromRowStyleFunc": function () {},
-  "addToLastPlacedCells": function () {},
+  "addOrRemoveCssClass": function () {},
+  "afterFlush": function () {},
+  "afterRowAttached": function () {},
   "angular1Compile": function () {},
-  "animateRowIn": function () {},
+  "appendChild": function () {},
+  "applyPixelOffset": function () {},
+  "attributesSet": function () {},
+  "callAfterRowAttachedOnCells": function () {},
   "constructor": function () {},
+  "createCells": function () {},
   "createChildScopeOrNull": function () {},
-  "createEvent": function () {},
-  "createFullWidthComponent": function () {},
   "createFullWidthParams": function () {},
-  "createFullWidthRow": function () {},
-  "createParams": function () {},
+  "createFullWidthRowContainer": function () {},
+  "createFullWidthRows": function () {},
+  "createNewCell": function () {},
   "createRowContainer": function () {},
+  "createRowEvent": function () {},
+  "createRowEventWithSource": function () {},
+  "createTemplate": function () {},
   "destroy": function () {},
-  "destroyFullWidthComponent": function () {},
+  "destroyContainingCells": function () {},
+  "destroyFullWidthComponents": function () {},
   "destroyScope": function () {},
   "dispatchEvent": function () {},
   "dispatchEventAsync": function () {},
   "ensureCellInCorrectContainer": function () {},
-  "ensureInDomAfter": function () {},
+  "ensureDomOrder": function () {},
+  "executeProcessRowPostCreateFunc": function () {},
   "forEachCellComp": function () {},
   "getAndClearDelayedDestroyFunctions": function () {},
   "getAndClearNextVMTurnFunctions": function () {},
+  "getAttribute": function () {},
   "getBodyRowElement": function () {},
   "getCellForCol": function () {},
+  "getCompId": function () {},
   "getContainerForCell": function () {},
   "getFullWidthRowElement": function () {},
-  "getLastPlacedCell": function () {},
-  "getOrCreateCell": function () {},
+  "getGui": function () {},
+  "getInitialRowClasses": function () {},
+  "getInitialRowTopStyle": function () {},
   "getPinnedLeftRowElement": function () {},
   "getPinnedRightRowElement": function () {},
+  "getRefElement": function () {},
   "getRenderedCellForColumn": function () {},
+  "getRowBusinessKey": function () {},
   "getRowNode": function () {},
   "init": function () {},
+  "insertCellsIntoContainer": function () {},
+  "instantiate": function () {},
+  "instantiateRecurse": function () {},
   "isCellEligibleToBeRemoved": function () {},
   "isCellInWrongRow": function () {},
   "isEditing": function () {},
-  "isGroup": function () {},
+  "isFullWidth": function () {},
+  "isVisible": function () {},
+  "lazyCreateCells": function () {},
+  "onCellFocusChanged": function () {},
+  "onColumnResized": function () {},
   "onDisplayedColumnsChanged": function () {},
+  "onExpandedChanged": function () {},
   "onGridColumnsChanged": function () {},
   "onMouseEvent": function () {},
-  "onNodeDataChanged": function () {},
   "onPaginationChanged": function () {},
   "onRowClick": function () {},
   "onRowDblClick": function () {},
+  "onRowHeightChanged": function () {},
+  "onRowIndexChanged": function () {},
+  "onRowNodeDataChanged": function () {},
   "onRowSelected": function () {},
   "onTopChanged": function () {},
   "onVirtualColumnsChanged": function () {},
-  "refreshCellsIntoRow": function () {},
-  "refreshFullWidthComponent": function () {},
+  "postProcessClassesFromGridOptions": function () {},
+  "postProcessStylesFromGridOptions": function () {},
+  "preProcessStylesFromGridOptions": function () {},
+  "processClassesFromGridOptions": function () {},
+  "processStylesFromGridOptions": function () {},
+  "queryForHtmlElement": function () {},
+  "queryForHtmlInputElement": function () {},
+  "refreshCells": function () {},
+  "refreshCellsInAnimationFrame": function () {},
+  "removeAnnotatedEventListeners": function () {},
+  "removeCssClass": function () {},
   "removeEventListener": function () {},
   "removeRenderedCells": function () {},
   "roundRowTopToBounds": function () {},
+  "setAnimateFlags": function () {},
   "setEditingRow": function () {},
-  "setHeight": function () {},
-  "setRowFocusClasses": function () {},
+  "setGui": function () {},
   "setRowTop": function () {},
+  "setTemplate": function () {},
+  "setTemplateFromElement": function () {},
+  "setVisible": function () {},
   "setupFullWidthContainers": function () {},
   "setupFullWidthGroupContainers": function () {},
-  "setupNormalContainers": function () {},
+  "setupNormalRowContainers": function () {},
   "setupRowContainers": function () {},
   "setupRowStub": function () {},
-  "setupTop": function () {},
   "startRowEditing": function () {},
   "stopEditing": function () {},
-  "stopRowEditing": function () {}
+  "stopRowEditing": function () {},
+  "swapComponentForNode": function () {},
+  "swapInComponentForQuerySelectors": function () {},
+  "updateRowIndexes": function () {},
+  "wireQuerySelectors": function () {}
 };
 agGrid.RowNode.prototype = {
-  "__agBeanMetaData": function () {},
   "addEventListener": function () {},
   "calculateSelectedFromChildren": function () {},
   "calculateSelectedFromChildrenBubbleUp": function () {},
   "calculatedSelectedForAllGroupNodes": function () {},
   "clearRowTop": function () {},
   "createDaemonNode": function () {},
+  "createDataChangedEvent": function () {},
+  "createGlobalRowEvent": function () {},
+  "createLocalRowEvent": function () {},
   "depthFirstSearch": function () {},
   "dispatchCellChangedEvent": function () {},
   "dispatchLocalEvent": function () {},
   "doRowRangeSelection": function () {},
   "getFirstChildOfFirstChild": function () {},
+  "getRowIndexString": function () {},
   "isExpandable": function () {},
   "isParentOfNode": function () {},
   "isPixelInRange": function () {},
@@ -3292,7 +3755,6 @@ agGrid.RowNodeBlock.prototype = {
   "setRowNode": function () {}
 };
 agGrid.RowNodeBlockLoader.prototype = {
-  "__agBeanMetaData": function () {},
   "addBlock": function () {},
   "checkBlockToLoad": function () {},
   "destroy": function () {},
@@ -3336,7 +3798,6 @@ agGrid.RowNodeCache.prototype = {
   "setVirtualRowCount": function () {}
 };
 agGrid.RowRenderer.prototype = {
-  "__agBeanMetaData": function () {},
   "addDestroyFunc": function () {},
   "addDestroyableEventListener": function () {},
   "addEventListener": function () {},
@@ -3353,6 +3814,7 @@ agGrid.RowRenderer.prototype = {
   "dispatchEvent": function () {},
   "dispatchEventAsync": function () {},
   "findNextCellToFocusOn": function () {},
+  "flushContainers": function () {},
   "forEachCellComp": function () {},
   "forEachRowComp": function () {},
   "getAllCellsForColumn": function () {},
@@ -3369,6 +3831,7 @@ agGrid.RowRenderer.prototype = {
   "moveEditToNextRow": function () {},
   "moveToCellAfter": function () {},
   "navigateToNextCell": function () {},
+  "onDisplayedColumnsChanged": function () {},
   "onModelUpdated": function () {},
   "onPageLoaded": function () {},
   "onPinnedRowDataChanged": function () {},
@@ -3376,6 +3839,7 @@ agGrid.RowRenderer.prototype = {
   "redraw": function () {},
   "redrawAfterModelUpdate": function () {},
   "redrawAfterScroll": function () {},
+  "redrawFullWidthEmbeddedRows": function () {},
   "redrawRows": function () {},
   "refreshCells": function () {},
   "refreshFloatingRowComps": function () {},
@@ -3390,11 +3854,9 @@ agGrid.RowRenderer.prototype = {
   "startEditingCell": function () {},
   "stopEditing": function () {},
   "tabToNextCell": function () {},
-  "updatePreviousElements": function () {},
   "workOutFirstAndLastRowsToRender": function () {}
 };
 agGrid.ScrollVisibleService.prototype = {
-  "__agBeanMetaData": function () {},
   "getPinnedLeftWidth": function () {},
   "getPinnedLeftWithScrollWidth": function () {},
   "getPinnedRightWidth": function () {},
@@ -3406,7 +3868,6 @@ agGrid.ScrollVisibleService.prototype = {
   "setScrollsVisible": function () {}
 };
 agGrid.SelectCellEditor.prototype = {
-  "__agBeanMetaData": function () {},
   "addAnnotatedEventListeners": function () {},
   "addCssClass": function () {},
   "addDestroyFunc": function () {},
@@ -3424,6 +3885,7 @@ agGrid.SelectCellEditor.prototype = {
   "dispatchEventAsync": function () {},
   "focusIn": function () {},
   "getAttribute": function () {},
+  "getCompId": function () {},
   "getGui": function () {},
   "getRefElement": function () {},
   "getValue": function () {},
@@ -3445,7 +3907,6 @@ agGrid.SelectCellEditor.prototype = {
   "wireQuerySelectors": function () {}
 };
 agGrid.SelectionController.prototype = {
-  "__agBeanMetaData": function () {},
   "clearOtherNodes": function () {},
   "deselectAllRowNodes": function () {},
   "deselectIndex": function () {},
@@ -3472,7 +3933,6 @@ agGrid.SelectionController.prototype = {
   "updateGroupsFromChildrenSelections": function () {}
 };
 agGrid.SetLeftFeature.prototype = {
-  "__agBeanMetaData": function () {},
   "addDestroyFunc": function () {},
   "addDestroyableEventListener": function () {},
   "addEventListener": function () {},
@@ -3490,7 +3950,6 @@ agGrid.SetLeftFeature.prototype = {
   "setLeftFirstTime": function () {}
 };
 agGrid.SortController.prototype = {
-  "__agBeanMetaData": function () {},
   "clearSortBarThisColumn": function () {},
   "compareColIds": function () {},
   "dispatchSortChangedEvents": function () {},
@@ -3504,66 +3963,18 @@ agGrid.SortController.prototype = {
   "setSortModel": function () {}
 };
 agGrid.SortStage.prototype = {
-  "__agBeanMetaData": function () {},
   "execute": function () {}
 };
 agGrid.StandardMenuFactory.prototype = {
-  "__agBeanMetaData": function () {},
   "isMenuEnabled": function () {},
   "showMenuAfterButtonClick": function () {},
   "showMenuAfterMouseEvent": function () {},
   "showPopup": function () {}
 };
 agGrid.StylingService.prototype = {
-  "__agBeanMetaData": function () {},
   "processAllCellClasses": function () {},
   "processCellClassRules": function () {},
   "processStaticCellClasses": function () {}
-};
-agGrid.SvgFactory.prototype = {
-  "createAggregationIcon": function () {},
-  "createArrowDownSvg": function () {},
-  "createArrowLeftSvg": function () {},
-  "createArrowRightSvg": function () {},
-  "createArrowUpDownSvg": function () {},
-  "createArrowUpSvg": function () {},
-  "createCheckboxCheckedIcon": function () {},
-  "createCheckboxCheckedReadOnlyIcon": function () {},
-  "createCheckboxIndeterminateIcon": function () {},
-  "createCheckboxIndeterminateReadOnlyIcon": function () {},
-  "createCheckboxUncheckedIcon": function () {},
-  "createCheckboxUncheckedReadOnlyIcon": function () {},
-  "createColumnHiddenIcon": function () {},
-  "createColumnIcon": function () {},
-  "createColumnIndeterminateIcon": function () {},
-  "createColumnVisibleIcon": function () {},
-  "createColumnsIcon": function () {},
-  "createColumnsSvg12": function () {},
-  "createCopyIcon": function () {},
-  "createCutIcon": function () {},
-  "createDropNotAllowedIcon": function () {},
-  "createFilterSvg": function () {},
-  "createFilterSvg12": function () {},
-  "createFolderClosed": function () {},
-  "createFolderOpen": function () {},
-  "createGroupContractedIcon": function () {},
-  "createGroupExpandedIcon": function () {},
-  "createGroupIcon": function () {},
-  "createGroupIcon12": function () {},
-  "createGroupLoadingIcon": function () {},
-  "createLeftIcon": function () {},
-  "createMenuIcon": function () {},
-  "createMenuSvg": function () {},
-  "createMinusIcon": function () {},
-  "createMoveIcon": function () {},
-  "createPasteIcon": function () {},
-  "createPinIcon": function () {},
-  "createPivotIcon": function () {},
-  "createPlusIcon": function () {},
-  "createRightIcon": function () {},
-  "createSmallArrowDownSvg": function () {},
-  "createSmallArrowLeftSvg": function () {},
-  "createSmallArrowRightSvg": function () {}
 };
 agGrid.TabbedLayout.prototype = {
   "addItem": function () {},
@@ -3575,7 +3986,6 @@ agGrid.TabbedLayout.prototype = {
   "showItemWrapper": function () {}
 };
 agGrid.TemplateService.prototype = {
-  "__agBeanMetaData": function () {},
   "getTemplate": function () {},
   "handleHttpResult": function () {}
 };
@@ -3597,8 +4007,10 @@ agGrid.TextCellEditor.prototype = {
   "dispatchEventAsync": function () {},
   "focusIn": function () {},
   "getAttribute": function () {},
+  "getCompId": function () {},
   "getGui": function () {},
   "getRefElement": function () {},
+  "getStartValue": function () {},
   "getValue": function () {},
   "init": function () {},
   "instantiate": function () {},
@@ -3618,7 +4030,6 @@ agGrid.TextCellEditor.prototype = {
   "wireQuerySelectors": function () {}
 };
 agGrid.TextFilter.prototype = {
-  "__agBeanMetaData": function () {},
   "__agComponentMetaData": function () {},
   "addAnnotatedEventListeners": function () {},
   "addCssClass": function () {},
@@ -3645,6 +4056,7 @@ agGrid.TextFilter.prototype = {
   "generateTemplate": function () {},
   "getApplicableFilterTypes": function () {},
   "getAttribute": function () {},
+  "getCompId": function () {},
   "getDefaultType": function () {},
   "getFilter": function () {},
   "getGui": function () {},
@@ -3696,11 +4108,9 @@ agGrid.TouchListener.prototype = {
   "removeEventListener": function () {}
 };
 agGrid.ValueFormatterService.prototype = {
-  "__agBeanMetaData": function () {},
   "formatValue": function () {}
 };
 agGrid.ValueService.prototype = {
-  "__agBeanMetaData": function () {},
   "executeValueGetter": function () {},
   "getValue": function () {},
   "getValueCallback": function () {},
@@ -3714,7 +4124,6 @@ agGrid.VerticalStack.prototype = {
   "getGui": function () {}
 };
 agGrid.XmlFactory.prototype = {
-  "__agBeanMetaData": function () {},
   "createXml": function () {},
   "returnAttributeIfPopulated": function () {}
 };
