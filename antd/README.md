@@ -16,8 +16,8 @@ you can require the packaged library like so:
 ```
 You would need to include the `antd` CSS file within your HTML file. The CSS files will be written to the following classpaths:
 
-* `cljsjs/development/antd.inc.css`
-* `cljsjs/production/antd.min.inc.css`
+* `cljsjs/antd/development/antd.inc.css`
+* `cljsjs/antd/production/antd.min.inc.css`
 
 You can also follow instructions for customization with LESS [here](https://ant.design/docs/react/customize-theme).
 
