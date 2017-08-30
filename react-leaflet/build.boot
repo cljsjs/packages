@@ -3,12 +3,12 @@
   :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]
                   [cljsjs/react "15.6.1-1"]
                   [cljsjs/react-dom "15.6.1-1"]
-                  [cljsjs/leaflet "1.1.0-0"]])
+                  [cljsjs/leaflet "1.1.0-2"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "1.4.1")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/react-leaflet
