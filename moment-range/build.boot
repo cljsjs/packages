@@ -1,6 +1,6 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.7.0" :scope "test"]
                   [cljsjs/moment "2.9.0-3"]])
 
 (require '[boot.task-helpers]
