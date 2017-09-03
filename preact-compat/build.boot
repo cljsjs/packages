@@ -8,7 +8,7 @@
          '[boot.core :as boot]
          '[clojure.java.io :as io])
 
-(def +lib-version+ "3.9.4")
+(def +lib-version+ "3.17.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!

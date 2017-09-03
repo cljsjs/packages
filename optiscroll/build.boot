@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "2.0.0")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
   pom  {:project     'cljsjs/optiscroll
@@ -19,9 +19,11 @@
 (deftask package []
   (comp
     (download :url (str "https://github.com/albertogasparin/Optiscroll/archive/v" +lib-version+ ".zip")
+              :checksum "326b1a797f1b1982cd3212fc1fc78e43"
               :unzip true)
-    (sift :move {#"^Optiscroll-.*/dist/optiscroll.js" "cljsjs/development/optiscroll.inc.js"})
-    (minify :in "cljsjs/development/optiscroll.inc.js" :out "cljsjs/production/optiscroll.min.inc.js")
+    (sift :move {#"^Optiscroll-([\d.]*)/dist/optiscroll\.css" "cljsjs/optiscroll/development/optiscroll.inc.css"
+                 #"^Optiscroll-([\d.]*)/dist/optiscroll\.js" "cljsjs/optiscroll/development/optiscroll.inc.js"
+                 #"^Optiscroll-([\d.]*)/dist/optiscroll\.min\.js" "cljsjs/optiscroll/production/optiscroll.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.optiscroll")
     (pom)

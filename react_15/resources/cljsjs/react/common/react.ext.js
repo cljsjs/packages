@@ -208,6 +208,16 @@ React.Component.prototype.componentWillUnmount = function() {};
 React.Component.prototype.render = function() {};
 
 /**
+ * @extends {React.Component}
+ */
+React.PureComponent = function() {};
+
+/**
+ * @type {boolean}
+ */
+React.PureComponent.prototype.isPureReactComponent;
+
+/**
  * Interface to preserve React attributes for advanced compilation.
  * @interface
  */
@@ -473,6 +483,14 @@ React.DOM = {};
 React.ChildrenArgument;
 
 /**
+ * @param {*} componentClass
+ * @param {Object=} props
+ * @param {...React.ChildrenArgument} children
+ * @return {React.Component}
+ */
+React.createElement = function(componentClass, props, children) {};
+
+/**
  * @param {Object=} props
  * @param {...React.ChildrenArgument} children
  * @return {React.Component}
@@ -638,6 +656,14 @@ React.DOM.cite = function(props, children) {};
  * @return {React.Component}
  * @protected
  */
+React.DOM.clipPath = function(props, children) {};
+
+/**
+ * @param {Object=} props
+ * @param {...React.ChildrenArgument} children
+ * @return {React.Component}
+ * @protected
+ */
 React.DOM.code = function(props, children) {};
 
 /**
@@ -711,6 +737,14 @@ React.DOM.details = function(props, children) {};
  * @protected
  */
 React.DOM.dfn = function(props, children) {};
+
+/**
+ * @param {Object=} props
+ * @param {...React.ChildrenArgument} children
+ * @return {React.Component}
+ * @protected
+ */
+React.DOM.dialog = function(props, children) {};
 
 /**
  * @param {Object=} props
@@ -903,6 +937,14 @@ React.DOM.i = function(props, children) {};
  * @protected
  */
 React.DOM.iframe = function(props, children) {};
+
+/**
+ * @param {Object=} props
+ * @param {...React.ChildrenArgument} children
+ * @return {React.Component}
+ * @protected
+ */
+React.DOM.image = function(props, children) {};
 
 /**
  * @param {Object=} props
@@ -1150,6 +1192,14 @@ React.DOM.pattern = function(props, children) {};
  * @return {React.Component}
  * @protected
  */
+React.DOM.picture = function(props, children) {};
+
+/**
+ * @param {Object=} props
+ * @param {...React.ChildrenArgument} children
+ * @return {React.Component}
+ * @protected
+ */
 React.DOM.polygon = function(props, children) {};
 
 /**
@@ -1319,6 +1369,22 @@ React.DOM.style = function(props, children) {};
  * @protected
  */
 React.DOM.sub = function(props, children) {};
+
+/**
+ * @param {Object=} props
+ * @param {...React.ChildrenArgument} children
+ * @return {React.Component}
+ * @protected
+ */
+React.DOM.summary = function(props, children) {};
+
+/**
+ * @param {Object=} props
+ * @param {...React.ChildrenArgument} children
+ * @return {React.Component}
+ * @protected
+ */
+React.DOM.sup = function(props, children) {};
 
 /**
  * @param {Object=} props
@@ -1583,6 +1649,12 @@ React.Children.forEach;
 React.Children.only;
 
 /**
+ * @param {Object} children Children tree container.
+ * @return {Array.<Object>} Flat array of children.
+ */
+React.Children.toArray;
+
+/**
  * @type {Object}
  */
 React.addons;
@@ -1751,3 +1823,85 @@ React.addons.TestUtils.SimulateNative.touchEnd = function () {};
 React.addons.TestUtils.SimulateNative.touchMove = function () {};
 React.addons.TestUtils.SimulateNative.touchStart = function () {};
 React.addons.TestUtils.SimulateNative.wheel = function () {};
+
+/**
+ * React event system creates plugins and event properties dynamically.
+ * These externs are needed when consuming React as a JavaScript module
+ * in light of new ClojureScript compiler additions (as of version 1.9.456).
+ * See the following link for an example.
+ * https://github.com/facebook/react/blob/c7129c/src/renderers/dom/shared/eventPlugins/SimpleEventPlugin.js#L43
+ */
+var ResponderEventPlugin;
+var SimpleEventPlugin;
+var TapEventPlugin;
+var EnterLeaveEventPlugin;
+var ChangeEventPlugin;
+var SelectEventPlugin;
+var BeforeInputEventPlugin;
+
+var bubbled;
+var captured;
+var topAbort;
+var topAnimationEnd;
+var topAnimationIteration;
+var topAnimationStart;
+var topBlur;
+var topCancel;
+var topCanPlay;
+var topCanPlayThrough;
+var topClick;
+var topClose;
+var topContextMenu;
+var topCopy;
+var topCut;
+var topDoubleClick;
+var topDrag;
+var topDragEnd;
+var topDragEnter;
+var topDragExit;
+var topDragLeave;
+var topDragOver;
+var topDragStart;
+var topDrop;
+var topDurationChange;
+var topEmptied;
+var topEncrypted;
+var topEnded;
+var topError;
+var topFocus;
+var topInput;
+var topInvalid;
+var topKeyDown;
+var topKeyPress;
+var topKeyUp;
+var topLoad;
+var topLoadedData;
+var topLoadedMetadata;
+var topLoadStart;
+var topMouseDown;
+var topMouseMove;
+var topMouseOut;
+var topMouseOver;
+var topMouseUp;
+var topPaste;
+var topPause;
+var topPlay;
+var topPlaying;
+var topProgress;
+var topRateChange;
+var topReset;
+var topScroll;
+var topSeeked;
+var topSeeking;
+var topStalled;
+var topSubmit;
+var topSuspend;
+var topTimeUpdate;
+var topTouchCancel;
+var topTouchEnd;
+var topTouchMove;
+var topTouchStart;
+var topTransitionEnd;
+var topVolumeChange;
+var topWaiting;
+var topWheel;

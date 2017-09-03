@@ -18,7 +18,6 @@ var vl = {
       "median": {},
       "min": {},
       "missing": {},
-      "modeskew": {},
       "q1": {},
       "q3": {},
       "stdev": {},
@@ -29,6 +28,7 @@ var vl = {
       "variance": {},
       "variancep": {}
     },
+    "COUNTING_OPS": {},
     "SHARED_DOMAIN_OPS": {},
     "SHARED_DOMAIN_OP_INDEX": {
       "average": {},
@@ -39,10 +39,18 @@ var vl = {
       "q1": {},
       "q3": {}
     },
-    "SUM_OPS": {}
+    "SUM_OPS": {},
+    "isCountingAggregateOp": function () {}
   },
   "axis": {
-    "AXIS_PROPERTIES": {}
+    "AXIS_PROPERTIES": {},
+    "AXIS_PROPERTY_TYPE": {
+      "grid": {},
+      "labelOverlap": {},
+      "offset": {},
+      "title": {}
+    },
+    "VG_AXIS_PROPERTIES": {}
   },
   "bin": {
     "autoMaxBins": function () {},
@@ -77,13 +85,13 @@ var vl = {
     "ROW": {},
     "SCALE_CHANNELS": {},
     "SHAPE": {},
+    "SINGLE_DEF_CHANNELS": {},
     "SIZE": {},
     "SPATIAL_SCALE_CHANNELS": {},
-    "STACK_GROUP_CHANNELS": {},
+    "STACK_BY_CHANNELS": {},
     "TEXT": {},
     "TOOLTIP": {},
     "UNIT_CHANNELS": {},
-    "UNIT_SCALE_CHANNELS": {},
     "X": {},
     "X2": {},
     "Y": {},
@@ -91,32 +99,41 @@ var vl = {
     "getSupportedMark": function () {},
     "hasScale": function () {},
     "isChannel": function () {},
+    "isScaleChannel": function () {},
     "rangeType": function () {},
     "supportMark": function () {},
     "supportScaleType": function () {}
   },
   "compile": function () {},
   "compositeMark": {
+    "COMPOSITE_MARK_STYLES": {},
+    "VL_ONLY_COMPOSITE_MARK_SPECIFIC_CONFIG_PROPERTY_INDEX": {
+      "box": {}
+    },
     "add": function () {},
     "normalize": function () {},
     "remove": function () {}
   },
   "config": {
     "defaultCellConfig": {
-      "fill": {},
       "height": {},
       "width": {}
     },
     "defaultConfig": {
       "area": {},
-      "axis": {},
+      "axis": {
+        "domainColor": {},
+        "tickColor": {}
+      },
       "axisBand": {},
       "axisBottom": {},
       "axisLeft": {},
       "axisRight": {},
       "axisTop": {},
       "axisX": {},
-      "axisY": {},
+      "axisY": {
+        "minExtent": {}
+      },
       "bar": {
         "binSpacing": {},
         "continuousBandSize": {}
@@ -124,36 +141,28 @@ var vl = {
       "box": {
         "size": {}
       },
-      "boxMid": {},
+      "boxMid": {
+        "color": {}
+      },
       "boxWhisker": {},
       "cell": {
-        "fill": {},
         "height": {},
         "width": {}
       },
       "circle": {},
       "countTitle": {},
-      "facet": {
-        "cell": {
-          "stroke": {},
-          "strokeWidth": {}
-        }
-      },
-      "legend": {
-        "orient": {}
-      },
+      "invalidValues": {},
+      "legend": {},
       "line": {},
       "mark": {
         "color": {}
       },
-      "numberFormat": {},
-      "overlay": {
-        "line": {}
-      },
       "padding": {},
       "point": {},
       "rect": {},
-      "rule": {},
+      "rule": {
+        "color": {}
+      },
       "scale": {
         "bandPaddingInner": {},
         "facetSpacing": {},
@@ -173,6 +182,11 @@ var vl = {
       "selection": {
         "interval": {
           "encodings": {},
+          "mark": {
+            "fill": {},
+            "fillOpacity": {},
+            "stroke": {}
+          },
           "on": {},
           "resolve": {},
           "translate": {},
@@ -191,28 +205,18 @@ var vl = {
         }
       },
       "square": {},
+      "style": {},
       "text": {
-        "baseline": {}
+        "color": {}
       },
       "tick": {
         "thickness": {}
       },
-      "timeFormat": {}
+      "timeFormat": {},
+      "title": {}
     },
-    "defaultFacetCellConfig": {
-      "stroke": {},
-      "strokeWidth": {}
-    },
-    "defaultFacetConfig": {
-      "cell": {
-        "stroke": {},
-        "strokeWidth": {}
-      }
-    },
-    "defaultOverlayConfig": {
-      "line": {}
-    },
-    "initConfig": function () {}
+    "initConfig": function () {},
+    "stripAndRedirectConfig": function () {}
   },
   "data": {
     "MAIN": {},
@@ -227,8 +231,7 @@ var vl = {
     "SHORT_DAYS": {},
     "SHORT_MONTHS": {},
     "dateTimeExpr": function () {},
-    "isDateTime": function () {},
-    "timestamp": function () {}
+    "isDateTime": function () {}
   },
   "encoding": {
     "channelHasField": function () {},
@@ -244,20 +247,25 @@ var vl = {
     "channelCompatibility": function () {},
     "defaultType": function () {},
     "field": function () {},
+    "getFieldDef": function () {},
+    "hasConditionFieldDef": function () {},
+    "isConditionalDef": function () {},
     "isContinuous": function () {},
     "isCount": function () {},
     "isDiscrete": function () {},
     "isFieldDef": function () {},
     "isRepeatRef": function () {},
+    "isScaleFieldDef": function () {},
     "isValueDef": function () {},
     "normalize": function () {},
+    "normalizeBin": function () {},
+    "normalizeFieldDef": function () {},
     "title": function () {}
   },
   "legend": {
     "LEGEND_PROPERTIES": {},
-    "defaultLegendConfig": {
-      "orient": {}
-    }
+    "VG_LEGEND_PROPERTIES": {},
+    "defaultLegendConfig": {}
   },
   "mark": {
     "AREA": {},
@@ -286,15 +294,18 @@ var vl = {
     "STROKE_CONFIG": {},
     "TEXT": {},
     "TICK": {},
+    "VL_ONLY_MARK_CONFIG_PROPERTIES": {},
+    "VL_ONLY_MARK_SPECIFIC_CONFIG_PROPERTY_INDEX": {
+      "bar": {},
+      "text": {},
+      "tick": {}
+    },
     "defaultBarConfig": {
       "binSpacing": {},
       "continuousBandSize": {}
     },
     "defaultMarkConfig": {
       "color": {}
-    },
-    "defaultTextConfig": {
-      "baseline": {}
     },
     "defaultTickConfig": {
       "thickness": {}
@@ -306,6 +317,7 @@ var vl = {
     "CONTINUOUS_DOMAIN_SCALES": {},
     "CONTINUOUS_TO_CONTINUOUS_SCALES": {},
     "DISCRETE_DOMAIN_SCALES": {},
+    "NON_TYPE_DOMAIN_RANGE_VEGA_SCALE_PROPERTIES": {},
     "SCALE_PROPERTIES": {},
     "SCALE_TYPES": {},
     "ScaleType": {
@@ -343,12 +355,15 @@ var vl = {
       "shapes": {},
       "textXRangeStep": {}
     },
+    "getScaleCategory": function () {},
     "hasContinuousDomain": function () {},
     "hasDiscreteDomain": function () {},
     "isBinScale": function () {},
     "isContinuousToContinuous": function () {},
     "isExtendedScheme": function () {},
     "isSelectionDomain": function () {},
+    "scaleCompatible": function () {},
+    "scaleTypePrecedence": function () {},
     "scaleTypeSupportProperty": function () {}
   },
   "sort": {
@@ -390,6 +405,28 @@ var vl = {
       "QUARTERMONTH": {},
       "SECONDS": {},
       "SECONDSMILLISECONDS": {},
+      "UTCDATE": {},
+      "UTCDAY": {},
+      "UTCHOURS": {},
+      "UTCHOURSMINUTES": {},
+      "UTCHOURSMINUTESSECONDS": {},
+      "UTCMILLISECONDS": {},
+      "UTCMINUTES": {},
+      "UTCMINUTESSECONDS": {},
+      "UTCMONTH": {},
+      "UTCMONTHDATE": {},
+      "UTCQUARTER": {},
+      "UTCQUARTERMONTH": {},
+      "UTCSECONDS": {},
+      "UTCSECONDSMILLISECONDS": {},
+      "UTCYEAR": {},
+      "UTCYEARMONTH": {},
+      "UTCYEARMONTHDATE": {},
+      "UTCYEARMONTHDATEHOURS": {},
+      "UTCYEARMONTHDATEHOURSMINUTES": {},
+      "UTCYEARMONTHDATEHOURSMINUTESSECONDS": {},
+      "UTCYEARQUARTER": {},
+      "UTCYEARQUARTERMONTH": {},
       "YEAR": {},
       "YEARMONTH": {},
       "YEARMONTHDATE": {},
@@ -409,8 +446,12 @@ var vl = {
     "smallestUnit": function () {}
   },
   "transform": {
+    "isBin": function () {},
     "isCalculate": function () {},
-    "isFilter": function () {}
+    "isFilter": function () {},
+    "isLookup": function () {},
+    "isSummarize": function () {},
+    "isTimeUnit": function () {}
   },
   "type": {
     "NOMINAL": {},
@@ -441,6 +482,7 @@ var vl = {
     "isObject": function () {},
     "isString": function () {},
     "keys": function () {},
+    "logicalExpr": function () {},
     "mergeDeep": function () {},
     "omit": function () {},
     "pick": function () {},
