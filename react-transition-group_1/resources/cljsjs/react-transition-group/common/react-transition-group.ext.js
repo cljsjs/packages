@@ -4,7 +4,7 @@
  **********************************************************************/
 
 var ReactTransitionGroup = {
-  "CSSTransition": {
+  "CSSTransitionGroup": {
     "defaultProps": {
       "transitionAppear": {},
       "transitionEnter": {},
@@ -48,7 +48,7 @@ var ReactTransitionGroup = {
     }
   }
 };
-ReactTransitionGroup.CSSTransition.prototype = {
+ReactTransitionGroup.CSSTransitionGroup.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "render": function () {},
