@@ -6,7 +6,7 @@
          '[clojure.java.shell :as shell]
          '[clojure.java.io :as io])
 
-(def +lib-version+ "0.4.15")
+(def +lib-version+ "0.4.18")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!

@@ -1,7 +1,7 @@
 # cljsjs/iconv-lite
 
 ```clojure
-[cljsjs/iconv-lite "0.4.15-0"] ;; latest release
+[cljsjs/iconv-lite "0.4.18-0"] ;; latest release
 ```
 
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
