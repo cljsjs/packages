@@ -1,5 +1,6 @@
 // Please use https://github.com/jmmk/javascript-externs-generator
 // to generate the externs
+// These externs have also been updated by hand
 
 
 var Benchmark = {

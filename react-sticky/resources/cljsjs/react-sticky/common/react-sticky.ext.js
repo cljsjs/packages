@@ -4,119 +4,99 @@
  **********************************************************************/
 var ReactSticky = {
   "Sticky": {
-    "propTypes": {
-      "isActive": {
+    "contextTypes": {
+      "getParent": {
         "isRequired": function () {}
       },
-      "className": {
+      "subscribe": {
         "isRequired": function () {}
       },
-      "style": {
-        "isRequired": function () {}
-      },
-      "stickyClassName": {
-        "isRequired": function () {}
-      },
-      "stickyStyle": {
-        "isRequired": function () {}
-      },
-      "topOffset": {
-        "isRequired": function () {}
-      },
-      "bottomOffset": {
-        "isRequired": function () {}
-      },
-      "onStickyStateChange": {
+      "unsubscribe": {
         "isRequired": function () {}
       }
     },
     "defaultProps": {
-      "isActive": {},
-      "className": {},
-      "style": {},
-      "stickyClassName": {},
-      "stickyStyle": {},
-      "topOffset": {},
       "bottomOffset": {},
-      "onStickyStateChange": function () {}
+      "disableCompensation": {},
+      "disableHardwareAcceleration": {},
+      "relative": {},
+      "topOffset": {}
     },
-    "contextTypes": {
-      "sticky-channel": {
+    "propTypes": {
+      "bottomOffset": {
+        "isRequired": function () {}
+      },
+      "children": function () {},
+      "relative": {
+        "isRequired": function () {}
+      },
+      "topOffset": {
         "isRequired": function () {}
       }
     }
   },
   "StickyContainer": {
-    "contextTypes": {
-      "sticky-channel": {
-        "isRequired": function () {}
-      }
-    },
     "childContextTypes": {
-      "sticky-channel": {
+      "getParent": {
+        "isRequired": function () {}
+      },
+      "subscribe": {
+        "isRequired": function () {}
+      },
+      "unsubscribe": {
         "isRequired": function () {}
       }
     }
   },
-  "Channel": function () {},
   "default": {
-    "propTypes": {
-      "isActive": {
+    "contextTypes": {
+      "getParent": {
         "isRequired": function () {}
       },
-      "className": {
+      "subscribe": {
         "isRequired": function () {}
       },
-      "style": {
-        "isRequired": function () {}
-      },
-      "stickyClassName": {
-        "isRequired": function () {}
-      },
-      "stickyStyle": {
-        "isRequired": function () {}
-      },
-      "topOffset": {
-        "isRequired": function () {}
-      },
-      "bottomOffset": {
-        "isRequired": function () {}
-      },
-      "onStickyStateChange": {
+      "unsubscribe": {
         "isRequired": function () {}
       }
     },
     "defaultProps": {
-      "isActive": {},
-      "className": {},
-      "style": {},
-      "stickyClassName": {},
-      "stickyStyle": {},
-      "topOffset": {},
       "bottomOffset": {},
-      "onStickyStateChange": function () {}
+      "disableCompensation": {},
+      "disableHardwareAcceleration": {},
+      "relative": {},
+      "topOffset": {}
     },
-    "contextTypes": {
-      "sticky-channel": {
+    "propTypes": {
+      "bottomOffset": {
+        "isRequired": function () {}
+      },
+      "children": function () {},
+      "relative": {
+        "isRequired": function () {}
+      },
+      "topOffset": {
         "isRequired": function () {}
       }
     }
   }
 };
 ReactSticky.Sticky.prototype = {
+  "forceUpdate": function () {},
   "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
+  "setState": function () {}
 };
 ReactSticky.StickyContainer.prototype = {
+  "constructor": function () {},
+  "forceUpdate": function () {},
+  "isPureReactComponent": function () {},
   "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
+  "setState": function () {}
 };
 ReactSticky.default.prototype = {
+  "forceUpdate": function () {},
   "isReactComponent": function () {},
-  "setState": function () {},
-  "forceUpdate": function () {}
+  "setState": function () {}
 };
 /**********************************************************************
  * End Generated Extern for ReactSticky

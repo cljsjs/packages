@@ -1,12 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.7.0" :scope "test"]])
 
 (require '[boot.task-helpers]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-
-(def +lib-version+ "1.8.1")
+(def +lib-version+ "2.0.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -28,7 +27,7 @@
     (download :url (format
                      "https://github.com/shaunlebron/parinfer/releases/download/%s/parinfer.js"
                      +lib-version+)
-              :checksum "437bc91857a4b237b2e4ad4977d0f962")
+              :checksum "CA083A01C29455CDF553A34A5F4E504E")
 
     (sift :move {#"^parinfer\.js"
                  "cljsjs/parinfer/development/parinfer.inc.js"})

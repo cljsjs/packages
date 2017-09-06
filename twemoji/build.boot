@@ -1,10 +1,10 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.7.0" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.2.5")
+(def +lib-version+ "2.3.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -21,10 +21,10 @@
 (defn twemoji-files [version]
   {:js {:name "twemoji.js"
         :url (download-url version "twemoji.js")
-        :md5 "59bf90bdd1fcfcb58ffbde4d0ea39d2c"}
+        :md5 "c04a5730b20e1b6e0173ad205a8a59a3"}
    :js-min {:name "twemoji.min.js"
             :url (download-url version "twemoji.min.js")
-            :md5 "ec983478b91b07d5b855c0f6034a9c64"}})
+            :md5 "15d0721fa247d659e41324e7fd968c14"}})
 
 (defn download-files [version]
   (let [files (twemoji-files version)]

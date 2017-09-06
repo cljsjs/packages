@@ -1,8 +1,8 @@
 (set-env!
-  :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.6.0"  :scope "test"]
-                  [cljsjs/react "15.4.2-2"]
-                  [cljsjs/react-dom "15.4.2-2"]])
+ :resource-paths #{"resources"}
+ :dependencies '[[cljsjs/boot-cljsjs "0.7.0"  :scope "test"]
+                 [cljsjs/react "15.4.2-2"]
+                 [cljsjs/react-dom "15.4.2-2"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -10,7 +10,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "9.0.3")
+(def +lib-version+ "9.7.5")
 (def +version+ (str +lib-version+ "-1"))
 
 (task-options!
@@ -22,35 +22,35 @@
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (deftask build-react-virtualized []
-  (let [tmp (boot/tmp-dir!)]
+         (let [tmp (boot/tmp-dir!)]
            (with-pre-wrap
-             fileset
+            fileset
              ;; Copy all files in fileset to temp directory
-             (doseq [f (->> fileset boot/input-files)
-                     :let [target (io/file tmp (tmpd/path f))]]
-               (io/make-parents target)
-               (io/copy (tmpd/file f) target))
-             (binding [boot.util/*sh-dir* (str (io/file tmp (format "react-virtualized-%s" +lib-version+)))]
-               ((sh "npm" "install" "--ignore-scripts"))
-               ((sh "npm" "run" "build:umd"))
-               ((sh "npm" "run" "build:css")))
-             (-> fileset (boot/add-resource tmp) boot/commit!))))
+            (doseq [f (->> fileset boot/input-files)
+                    :let [target (io/file tmp (tmpd/path f))]]
+              (io/make-parents target)
+              (io/copy (tmpd/file f) target))
+            (binding [boot.util/*sh-dir* (str (io/file tmp (format "react-virtualized-%s" +lib-version+)))]
+              ((sh "npm" "install" "--ignore-scripts"))
+              ((sh "npm" "run" "build:umd"))
+              ((sh "npm" "run" "build:css")))
+            (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 (deftask package []
-  (comp
-   (download :url (str "https://github.com/bvaughn/react-virtualized/archive/" +lib-version+ ".zip")
-             :checksum "22EBA4EB4F2701464AC2029B89A7D49C"
-             :unzip true)
-   (build-react-virtualized)
-   (sift :move {#"^react-virtualized-(.*)/dist/umd/react-virtualized.js$" "cljsjs/react-virtualized/development/react-virtualized.inc.js"
-                #"^react-virtualized-(.*)/styles.css$" "cljsjs/react-virtualized/common/react-virtualized.inc.css"})
-   (minify :in "cljsjs/react-virtualized/development/react-virtualized.inc.js"
-            :out "cljsjs/react-virtualized/production/react-virtualized.min.inc.js")
-   (sift :include #{#"^cljsjs"})
+         (comp
+          (download :url (str "https://github.com/bvaughn/react-virtualized/archive/" +lib-version+ ".zip")
+                    :checksum "674DA69934D5F68DD347CF5CC69D3EFC"
+                    :unzip true)
+          (build-react-virtualized)
+          (sift :move {#"^react-virtualized-(.*)/dist/umd/react-virtualized.js$" "cljsjs/react-virtualized/development/react-virtualized.inc.js"
+                       #"^react-virtualized-(.*)/styles.css$" "cljsjs/react-virtualized/common/react-virtualized.inc.css"})
+          (minify :in "cljsjs/react-virtualized/development/react-virtualized.inc.js"
+                  :out "cljsjs/react-virtualized/production/react-virtualized.min.inc.js")
+          (sift :include #{#"^cljsjs"})
 
-   (deps-cljs :name "cljsjs.react-virtualized"
-              :requires ["cljsjs.react"
-                         "cljsjs.react.dom"])
-   (pom)
+          (deps-cljs :name "cljsjs.react-virtualized"
+                     :requires ["cljsjs.react"
+                                "cljsjs.react.dom"])
+          (pom)
 
-   (jar)))
+          (jar)))

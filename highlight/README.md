@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/highlight "9.6.0-0"] ;; latest release
+[cljsjs/highlight "9.12.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -43,6 +43,7 @@ List of highlight language packages:
 
 ```
 cljsjs.highlight.langs.1c
+cljsjs.highlight.langs.abnf
 cljsjs.highlight.langs.accesslog
 cljsjs.highlight.langs.actionscript
 cljsjs.highlight.langs.ada
@@ -55,6 +56,7 @@ cljsjs.highlight.langs.aspectj
 cljsjs.highlight.langs.autohotkey
 cljsjs.highlight.langs.autoit
 cljsjs.highlight.langs.avrasm
+cljsjs.highlight.langs.awk
 cljsjs.highlight.langs.axapta
 cljsjs.highlight.langs.bash
 cljsjs.highlight.langs.basic
@@ -63,6 +65,7 @@ cljsjs.highlight.langs.brainfuck
 cljsjs.highlight.langs.cal
 cljsjs.highlight.langs.capnproto
 cljsjs.highlight.langs.ceylon
+cljsjs.highlight.langs.clean
 cljsjs.highlight.langs.clojure
 cljsjs.highlight.langs.clojure-repl
 cljsjs.highlight.langs.cmake
@@ -86,6 +89,7 @@ cljsjs.highlight.langs.dos
 cljsjs.highlight.langs.dsconfig
 cljsjs.highlight.langs.dts
 cljsjs.highlight.langs.dust
+cljsjs.highlight.langs.ebnf
 cljsjs.highlight.langs.elixir
 cljsjs.highlight.langs.elm
 cljsjs.highlight.langs.erb
@@ -93,6 +97,7 @@ cljsjs.highlight.langs.erlang
 cljsjs.highlight.langs.erlang-repl
 cljsjs.highlight.langs.excel
 cljsjs.highlight.langs.fix
+cljsjs.highlight.langs.flix
 cljsjs.highlight.langs.fortran
 cljsjs.highlight.langs.fsharp
 cljsjs.highlight.langs.gams
@@ -111,20 +116,25 @@ cljsjs.highlight.langs.haxe
 cljsjs.highlight.langs.hsp
 cljsjs.highlight.langs.htmlbars
 cljsjs.highlight.langs.http
+cljsjs.highlight.langs.hy
 cljsjs.highlight.langs.inform7
 cljsjs.highlight.langs.ini
 cljsjs.highlight.langs.irpf90
 cljsjs.highlight.langs.java
 cljsjs.highlight.langs.javascript
+cljsjs.highlight.langs.jboss-cli
 cljsjs.highlight.langs.json
 cljsjs.highlight.langs.julia
+cljsjs.highlight.langs.julia-repl
 cljsjs.highlight.langs.kotlin
 cljsjs.highlight.langs.lasso
 cljsjs.highlight.langs.ldif
+cljsjs.highlight.langs.leaf
 cljsjs.highlight.langs.less
 cljsjs.highlight.langs.lisp
 cljsjs.highlight.langs.livecodeserver
 cljsjs.highlight.langs.livescript
+cljsjs.highlight.langs.llvm
 cljsjs.highlight.langs.lsl
 cljsjs.highlight.langs.lua
 cljsjs.highlight.langs.makefile
@@ -139,6 +149,7 @@ cljsjs.highlight.langs.mizar
 cljsjs.highlight.langs.mojolicious
 cljsjs.highlight.langs.monkey
 cljsjs.highlight.langs.moonscript
+cljsjs.highlight.langs.n1ql
 cljsjs.highlight.langs.nginx
 cljsjs.highlight.langs.nimrod
 cljsjs.highlight.langs.nix
@@ -165,6 +176,7 @@ cljsjs.highlight.langs.qml
 cljsjs.highlight.langs.r
 cljsjs.highlight.langs.rib
 cljsjs.highlight.langs.roboconf
+cljsjs.highlight.langs.routeros
 cljsjs.highlight.langs.rsl
 cljsjs.highlight.langs.ruby
 cljsjs.highlight.langs.ruleslanguage
@@ -173,6 +185,7 @@ cljsjs.highlight.langs.scala
 cljsjs.highlight.langs.scheme
 cljsjs.highlight.langs.scilab
 cljsjs.highlight.langs.scss
+cljsjs.highlight.langs.shell
 cljsjs.highlight.langs.smali
 cljsjs.highlight.langs.smalltalk
 cljsjs.highlight.langs.sml
@@ -182,6 +195,7 @@ cljsjs.highlight.langs.stan
 cljsjs.highlight.langs.stata
 cljsjs.highlight.langs.step21
 cljsjs.highlight.langs.stylus
+cljsjs.highlight.langs.subunit
 cljsjs.highlight.langs.swift
 cljsjs.highlight.langs.taggerscript
 cljsjs.highlight.langs.tap

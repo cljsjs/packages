@@ -1,11 +1,11 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.7.0"  :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot])
 
-(def +lib-version+ "0.4.3")
+(def +lib-version+ "0.4.7")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -19,7 +19,7 @@
 (deftask package []
   (comp
    (download :url (str "https://github.com/GoogleChrome/dialog-polyfill/archive/" +lib-version+ ".zip")
-             :checksum "19bee23e1ba568368aab5e8c8cf9657f"
+             :checksum "a14115ebef0947729fea9201035774ff"
              :unzip true)
    (sift :move {#"^dialog-polyfill-[^/]+/dialog-polyfill.js" "cljsjs/dialog-polyfill/development/dialog-polyfill.inc.js"})
    (minify :in "cljsjs/dialog-polyfill/development/dialog-polyfill.inc.js"

@@ -6,7 +6,7 @@ An example of this being used with Reagent can be found [here](https://github.co
 
 [](dependency)
 ```clojure
-[cljsjs/react-dates "8.2.1-2"] ;; latest release
+[cljsjs/react-dates "12.2.4-1"] ;; latest release
 ```
 [](/dependency)
 

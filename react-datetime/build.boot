@@ -1,16 +1,13 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]
-                  [cljsjs/react "15.3.0-0"]
-                  [cljsjs/moment "2.10.6-4"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.7.0"  :scope "test"]
+                  [cljsjs/react "15.6.1-0"]
+                  [cljsjs/react-dom "15.6.1-0"]
+                  [cljsjs/moment "2.17.1-1"]])
 
-(require '[cljsjs.boot-cljsjs.packaging :refer :all]
-         '[boot.core :as boot]
-         '[boot.tmpdir :as tmpd]
-         '[clojure.java.io :as io]
-         '[boot.util :refer [sh]])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.6.0")
+(def +lib-version+ "2.8.10")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -21,14 +18,9 @@
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
-(require '[boot.core :as c]
-         '[boot.tmpdir :as tmpd]
-         '[clojure.java.io :as io]
-         '[clojure.string :as string])
-
 (deftask download-datepicker []
   (download :url (str "https://github.com/YouCanBookMe/react-datetime/archive/v" +lib-version+ ".zip")
-            :checksum "8a4ad17109b8b44714500120406ba2e9"
+            :checksum "93717A12AE50C5251FE29868356D5E00"
             :unzip true))
 
 (deftask package []
@@ -42,6 +34,7 @@
 
     (deps-cljs :name "cljsjs.react-datetime"
                :requires ["cljsjs.react"
+                          "cljsjs.react.dom"
                           "cljsjs.moment"])
     (pom)
     (jar)))

@@ -22,8 +22,7 @@ var Trello = {
     boards: function() {},
     lists: function() {},
     members: function() {},
-    organizations: function() {},
-    lists: function() {}
+    organizations: function() {}
 };
 
 var deferred = {};

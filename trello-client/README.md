@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/trello-client "0.0.1-0"] ;; latest release
+[cljsjs/trello-client "0.0.1-1"] ;; latest release
 ```
 [](/dependency)
 

@@ -5,7 +5,7 @@ cljsjs/ag-grid:
 
 [](dependency)
 ```clojure
-[cljsjs/ag-grid "8.0.1-0"] ;; latest release
+[cljsjs/ag-grid "13.0.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -20,5 +20,13 @@ you can require the packaged library like:
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
 
-If you are using Reagent, a wrapper for this cljsjs library is being developed that will provide ready to use well
-documented Reagent components: [Reagent Toolbox](https://github.com/dashmantech/reagent-toolbox).
+## Upgrading
+
+When upgrading ag-grid, you need to regenerate the externs:
+1. Go to https://cdnjs.com/libraries/ag-grid/<THE-VERSION> such as https://cdnjs.com/libraries/ag-grid/10.0.1
+2. Find the URL for ag-grid.js, such as: https://cdnjs.cloudflare.com/ajax/libs/ag-grid/8.2.0/ag-grid.js
+3. Go to http://jmmk.github.io/javascript-externs-generator
+4. Paste the URL for ag-grid.js and click load.
+5. Name the JavaScript object agGrid.
+6. Click "Extern!"
+6. Copy the JavaScript value to resources/cljsjs/ag-grid/common/ag-grid.ext.js

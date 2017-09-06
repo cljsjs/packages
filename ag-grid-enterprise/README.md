@@ -5,7 +5,7 @@ cljsjs/ag-grid:
 
 [](dependency)
 ```clojure
-[cljsjs/ag-grid-enterprise "8.0.1-0"] ;; latest release
+[cljsjs/ag-grid-enterprise "13.0.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -19,6 +19,3 @@ you can require the packaged library like:
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
-
-If you are using Reagent, a wrapper for this cljsjs library is being developed that will provide ready to use well
-documented Reagent components: [Reagent Toolbox](https://github.com/dashmantech/reagent-toolbox).

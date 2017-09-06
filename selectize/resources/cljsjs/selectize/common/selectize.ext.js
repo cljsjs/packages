@@ -51,7 +51,6 @@ var Selectize = {
   render: function(templateName, data){},
   clearCache: function(templateName)  {},
   clearOptions: function(){},
-  clearOptionGroups: function(){},
   addOption: function(a){},
   refreshOptions: function(a){}
 }

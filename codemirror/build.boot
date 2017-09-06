@@ -1,6 +1,6 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.7.0" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -18,11 +18,8 @@
         :license     {"MIT" "https://github.com/codemirror/CodeMirror/blob/master/LICENSE"}})
 
 (require '[boot.core :as c]
-         '[boot.tmpdir :as tmpd]
          '[clojure.java.io :as io]
-         '[clojure.string :as string]
-         '[boot.util :refer [sh]]
-         '[boot.tmpdir :as tmpd])
+         '[clojure.string :as string])
 
 (defn path->foreign-lib [path]
   {:file     path
@@ -38,9 +35,9 @@
     (with-pre-wrap
       fileset
       (let [existing-deps-file (->> fileset c/input-files (c/by-name ["deps.cljs"]) first)
-            existing-deps      (-> existing-deps-file tmpd/file slurp read-string)
+            existing-deps      (-> existing-deps-file c/tmp-file slurp read-string)
             extra-files        (->> fileset c/input-files (c/by-re [ #"cljsjs/codemirror/common/(mode|addon|keymap)/.*\.inc\.js"]))
-            foreign-libs       (map (comp path->foreign-lib tmpd/path) extra-files)
+            foreign-libs       (map (comp path->foreign-lib c/tmp-path) extra-files)
             new-deps           (update-in existing-deps [:foreign-libs] concat foreign-libs)]
         (spit new-deps-file (pr-str new-deps))
         (-> fileset (c/add-resource tmp) c/commit!)))))

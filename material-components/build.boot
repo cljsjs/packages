@@ -1,14 +1,14 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.7.0" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
          '[boot.tmpdir :as tmpd]
          '[clojure.java.io :as io]
-         '[boot.util :refer [sh]])
+         '[boot.util :refer [dosh]])
 
-(def +lib-version+ "0.7.0")
+(def +lib-version+ "0.19.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -29,25 +29,29 @@
         (io/make-parents target)
         (io/copy (tmpd/file f) target))
       (binding [boot.util/*sh-dir* (str (io/file tmp (format "material-components-web-%s" +lib-version+)))]
-        ((sh "npm" "install"))
-        ((sh "npm" "run" "dist")))
+        ;; Material-components uses Lerna which is quite stupid and presumes
+        ;; that the project being built MUST BE a git repository: https://github.com/lerna/lerna/issues/555
+        (dosh "git" "init")
+        (dosh "npm" "install")
+        ;; postinstall should run this, but doesn't
+        (dosh "./node_modules/.bin/lerna" "bootstrap")
+        (dosh "npm" "run" "dist"))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 (deftask package []
   (task-options! push {:ensure-branch nil})
   (comp
    (download :url (str "https://github.com/material-components/material-components-web/archive/v" +lib-version+ ".zip")
-             :checksum "02d0870d024be6114b9bd1e098c1f396"
+             :checksum "7d4e3e350eece5ec7d43f973b177afc1"
              :unzip true)
 
    (build-material-components)
 
-   (sift :move {(re-pattern (str "^material-components-web-" +lib-version+ "/build/material-components-web.js$")) "cljsjs/material-components/development/material-components.inc.js"})
-   (sift :move {(re-pattern (str "^material-components-web-" +lib-version+ "/build/material-components-web.css$")) "cljsjs/material-components/development/material-components.inc.css"})
-   (sift :move {(re-pattern (str "^material-components-web-" +lib-version+ "/build/material-components-web.min.js$")) "cljsjs/material-components/production/material-components.min.inc.js"})
-   (sift :move {(re-pattern (str "^material-components-web-" +lib-version+ "/build/material-components-web.min.css$")) "cljsjs/material-components/production/material-components.min.inc.css"})
-   (sift :move {(re-pattern (str "^material-components-web-" +lib-version+ "/packages/([^/]*)/([^/]*).scss$"))
-                "cljsjs/material-components/development/packages/$1/$2.scss"})
+   (sift :move {#"^material-components-web-[^/]*/build/material-components-web.js$"      "cljsjs/material-components/development/material-components.inc.js"
+                #"^material-components-web-[^/]*/build/material-components-web.css$"     "cljsjs/material-components/development/material-components.inc.css"
+                #"^material-components-web-[^/]*/build/material-components-web.min.js$"  "cljsjs/material-components/production/material-components.min.inc.js"
+                #"^material-components-web-[^/]*/build/material-components-web.min.css$" "cljsjs/material-components/production/material-components.min.inc.css"
+                #"^material-components-web-[^/]*/packages/([^/]*)/([^/]*).scss$"         "cljsjs/material-components/development/packages/$1/$2.scss"})
 
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.material-components")
