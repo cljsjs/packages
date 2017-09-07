@@ -9,13 +9,20 @@ Phoenix.Channel.prototype = function () {};
 Phoenix.Channel.prototype = {
   bindings: {},
   canPush: function () {},
-  join: function () {},
-  joinPush: {
-    receive: function () {},
-    resend: function () {},
-    send: function () {}
-  },
   joinedOnce: {},
+  joinPush: {
+    channel: {},
+    event: {},
+    payload: {},
+    receive: function () {},
+    receivedResp: {},
+    recHooks: {},
+    resend: function () {},
+    sent: {},
+    send: function () {},
+    timeout: {},
+    timeoutTimer: {}
+  },
   leave: function () {},
   off: function () {},
   on: function () {},
@@ -25,96 +32,117 @@ Phoenix.Channel.prototype = {
   params: {},
   push: function () {},
   pushBuffer: {},
-  rejoin: function () {},
-  rejoinTimer: {},
-  rejoinUntilConnected: function () {},
-  replyEventName: function () {},
+  rejoinTimer: {
+    callback: function () {},
+    reset: function () {},
+    scheduleTimeout: function () {},
+    timerCalc: function() {},
+    timer: {},
+    tries: {}
+  },
   socket: {},
   state: {},
   timeout: {},
-  topic: {},
-  trigger: function () {}
+  topic: {}
 };
 
 Phoenix.Socket.prototype = function () {};
 Phoenix.Socket.prototype = {
-  stateChangeCallbacks: {
-    open: {},
-    close: {},
-    error: {},
-    message: {}
-  },
+  channel: function () {},
   channels: {},
-  sendBuffer: {},
-  ref: {},
-  timeout: {},
-  transport: {},
-  heartbeatIntervalMs: {},
-  reconnectAfterMs: {},
-  logger: {},
-  longpollerTimeout: {},
-  params: {},
-  endPoint: {},
-  reconnectTimer: {},
-  protocol: function () {},
-  endPointURL: function () {},
-  disconnect: function () {},
   connect: function () {},
+  connectionState: function () {},
+  decode: function () {},
+  defaultDecoder: function () {},
+  defaultEncoder: function () {},
+  disconnect: function () {},
+  encode: function () {},
+  endPoint: {},
+  endPointURL: function () {},
+  flushSendBuffer: function () {},
+  heartbeatIntervalMs: {},
+  heartbeatTimer: {},
+  isConnected: function () {},
   log: function () {},
-  onOpen: function () {},
+  logger: function () {},
+  longpollerTimeout: {},
+  makeRef: function () {},
   onClose: function () {},
-  onError: function () {},
-  onMessage: function () {},
-  onConnOpen: function () {},
   onConnClose: function () {},
   onConnError: function () {},
-  triggerChanError: function () {},
-  connectionState: function () {},
-  isConnected: function () {},
-  remove: function () {},
-  channel: function () {},
+  onConnMessage: function () {},
+  onConnOpen: function () {},
+  onError: function () {},
+  onMessage: function () {},
+  onOpen: function () {},
+  params: {},
+  pendingHeartbeatRef: {},
+  protocol: function () {},
   push: function () {},
-  makeRef: function () {},
+  reconnectAfterMs: function () {},
+  reconnectTimer: {
+    callback: function () {},
+    reset: function () {},
+    scheduleTimeout: function () {},
+    timerCalc: function() {},
+    timer: {},
+    tries: {}
+  }, 
+  ref: {},
+  remove: function () {},
+  sendBuffer: {},
   sendHeartbeat: function () {},
-  flushSendBuffer: function () {},
-  onConnMessage: function () {}
+  stateChangeCallbacks: {
+    close: {},
+    error: {},
+    message: {},
+    open: {}
+  },
+  timeout: {},
+  transport: {},
+  triggerChanError: function () {}
 };
 
 Phoenix.LongPoll.prototype = function () {};
 Phoenix.LongPoll.prototype = {
-  endPoint: {},
-  token: {},
-  skipHeartbeat: {},
-  onopen: {},
-  onerror: {},
-  onmessage: {},
-  onclose: {},
-  pollEndpoint: {},
-  readyState: {},
-  normalizeEndpoint: function () {},
-  endpointURL: function () {},
+  close: function () {},
   closeAndRetry: function () {},
+  endPoint: {},
+  endpointURL: function () {},
+  normalizeEndpoint: function () {},
+  onclose: function () {},
+  onerror: function () {},
+  onmessage: function () {},
+  onopen: function () {},
   ontimeout: function () {},
   poll: function () {},
+  pollEndpoint: {},
+  readyState: {},
   send: function () {},
-  close: function () {}
+  skipHeartbeat: {},
+  token: {}
+};
+
+Phoenix.Ajax = {
+  states: {
+    complete: {}
+  }
 };
 
 Phoenix.Ajax.prototype = function () {};
 Phoenix.Ajax.prototype = {
-  request: function () {},
-  xdomainRequest: function () {},
-  xhrRequest: function () {},
-  parseJSON: function () {},
-  serialize: function () {},
   appendParams: function () {},
-  states: {}
+  parseJSON: function () {},
+  request: function () {},
+  serialize: function () {},
+  xdomainRequest: function () {},
+  xhrRequest: function () {}
 };
 
-Phoenix.Presence.prototype = function () {};
-Phoenix.Presence.prototype = {
-  syncState: function () {},
+Phoenix.Presence = {
+  clone: function () {},
+  list: function () {},
+  map: function () {},
   syncDiff: function () {},
-  list: function () {}
+  syncState: function () {}
 };
-
