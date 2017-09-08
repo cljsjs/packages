@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "5.0.12")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "5.0.14")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/highcharts
