@@ -49,7 +49,7 @@
 (deftask package []
   (comp
     (download :url (format "https://code.highcharts.com/zips/Highcharts-%s.zip" +lib-version+)
-              :checksum "0402F6D3ADD60DAAA8D8B87643784C2A"
+              :checksum "F9922FA1BF5D93C8D20635A7DD091F87"
               :unzip true)
     (target)
     (sift :move {#"^code/([^/\.]*)\.js$"      "cljsjs/highcharts/production/$1.min.inc.js"
