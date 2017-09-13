@@ -1360,7 +1360,8 @@ var Highcharts = {
     "line": function () {},
     "pie": function () {},
     "scatter": function () {},
-    "spline": function () {}
+    "spline": function () {},
+    "solidgauge": function () {}
   },
   "setAnimation": function () {},
   "setOptions": function () {},
