@@ -1,12 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.7.1" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "4.0.0")
+(def +lib-version+ "4.3.0")
 (def +version+ (str +lib-version+ "-0"))
-(def +checksum+ "C34E607575903A7BA219D083B346A7CB")
+(def +checksum+ "CC7D3D5317BB3088251540405EFC3B96")
 
 (task-options!
  pom  {:project     'cljsjs/firebase

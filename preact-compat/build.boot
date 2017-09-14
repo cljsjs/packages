@@ -1,6 +1,6 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.7.1"  :scope "test"]
                   [cljsjs/preact "7.1.0-0"]
                   [cljsjs/proptypes "0.14.3-0"]])
 
@@ -8,7 +8,7 @@
          '[boot.core :as boot]
          '[clojure.java.io :as io])
 
-(def +lib-version+ "3.9.4")
+(def +lib-version+ "3.17.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!

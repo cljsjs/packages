@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/material-ui-chip-input "0.15.0-0"] ;; latest release
+[cljsjs/material-ui-chip-input "0.17.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.material-ui-chip-input))
+  (:require material-ui-chip-input))
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies

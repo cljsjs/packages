@@ -9,7 +9,7 @@
  * https://unpkg.com/recharts@0.22.4/umd/Recharts.min.js
  *
  **********************************************************************/
-echarts = {
+var Recharts = {
   "Area": {
     "defaultProps": {
       "activeDot": {},

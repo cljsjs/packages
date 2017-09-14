@@ -8,6 +8,7 @@ var vega = {
   "CanvasRenderer": function () {},
   "Dataflow": function () {},
   "Debug": {},
+  "Error": {},
   "EventStream": function () {},
   "Gradient": function () {},
   "GroupItem": function () {},
@@ -173,266 +174,8 @@ var vega = {
   "closeTag": function () {},
   "compare": function () {},
   "constant": function () {},
+  "debounce": function () {},
   "definition": function () {},
-  "definitions": {
-    "aggregate": {
-      "metadata": {
-        "changes": {},
-        "generates": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "bin": {
-      "metadata": {
-        "modifies": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "collect": {
-      "metadata": {
-        "source": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "contour": {
-      "metadata": {
-        "generates": {},
-        "source": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "countpattern": {
-      "metadata": {
-        "changes": {},
-        "generates": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "cross": {
-      "metadata": {
-        "changes": {},
-        "generates": {},
-        "source": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "crossfilter": {
-      "metadata": {},
-      "params": {},
-      "type": {}
-    },
-    "density": {
-      "metadata": {
-        "generates": {},
-        "source": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "extent": {
-      "metadata": {},
-      "params": {},
-      "type": {}
-    },
-    "filter": {
-      "metadata": {
-        "changes": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "fold": {
-      "metadata": {
-        "changes": {},
-        "generates": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "force": {
-      "metadata": {
-        "modifies": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "formula": {
-      "metadata": {
-        "modifies": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "geopath": {
-      "metadata": {
-        "modifies": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "geopoint": {
-      "metadata": {
-        "modifies": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "geoshape": {
-      "metadata": {
-        "modifies": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "graticule": {
-      "metadata": {
-        "changes": {},
-        "generates": {},
-        "source": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "impute": {
-      "metadata": {
-        "changes": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "linkpath": {
-      "metadata": {
-        "modifies": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "lookup": {
-      "metadata": {
-        "modifies": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "nest": {
-      "metadata": {
-        "treesource": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "pack": {
-      "metadata": {
-        "modifies": {},
-        "tree": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "partition": {
-      "metadata": {
-        "modifies": {},
-        "tree": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "pie": {
-      "metadata": {
-        "modifies": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "rank": {
-      "metadata": {
-        "modifies": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "resolvefilter": {
-      "metadata": {},
-      "params": {},
-      "type": {}
-    },
-    "sample": {
-      "metadata": {
-        "changes": {},
-        "source": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "sequence": {
-      "metadata": {
-        "generates": {},
-        "source": {}
-      },
-      "output": {},
-      "params": {},
-      "type": {}
-    },
-    "stack": {
-      "metadata": {
-        "modifies": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "stratify": {
-      "metadata": {
-        "treesource": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "tree": {
-      "metadata": {
-        "modifies": {},
-        "tree": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "treelinks": {
-      "metadata": {
-        "changes": {},
-        "generates": {},
-        "tree": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "treemap": {
-      "metadata": {
-        "modifies": {},
-        "tree": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "voronoi": {
-      "metadata": {
-        "modifies": {}
-      },
-      "params": {},
-      "type": {}
-    },
-    "wordcloud": {
-      "metadata": {
-        "modifies": {}
-      },
-      "params": {},
-      "type": {}
-    }
-  },
   "domChild": function () {},
   "domClear": function () {},
   "domCreate": function () {},
@@ -472,6 +215,7 @@ var vega = {
   "isObject": function () {},
   "isRegExp": function () {},
   "isString": function () {},
+  "isTuple": function () {},
   "key": function () {},
   "loader": function () {},
   "logger": function () {},
@@ -500,9 +244,9 @@ var vega = {
   "randomNormal": function () {},
   "randomUniform": function () {},
   "read": function () {},
-  "register": function () {},
   "renderModule": function () {},
   "repeat": function () {},
+  "resetSVGClipId": function () {},
   "runtime": function () {},
   "runtimeContext": function () {},
   "scale": function () {},
@@ -523,6 +267,7 @@ var vega = {
     "width": function () {}
   },
   "timeFormatLocale": function () {},
+  "timeInterval": function () {},
   "toBoolean": function () {},
   "toDate": function () {},
   "toNumber": function () {},
@@ -530,67 +275,388 @@ var vega = {
   "toString": function () {},
   "transform": function () {},
   "transforms": {
-    "Aggregate": function () {},
-    "AxisTicks": function () {},
-    "Bin": function () {},
-    "Bound": function () {},
-    "Collect": function () {},
-    "Compare": function () {},
-    "Contour": function () {},
-    "CountPattern": function () {},
-    "Cross": function () {},
-    "CrossFilter": function () {},
-    "DataJoin": function () {},
-    "Density": function () {},
-    "Encode": function () {},
-    "Extent": function () {},
-    "Facet": function () {},
-    "Field": function () {},
-    "Filter": function () {},
-    "Fold": function () {},
-    "Force": function () {},
-    "Formula": function () {},
-    "Generate": function () {},
-    "GeoPath": function () {},
-    "GeoPoint": function () {},
-    "GeoShape": function () {},
-    "Graticule": function () {},
-    "Impute": function () {},
-    "Key": function () {},
-    "LegendEntries": function () {},
-    "LinkPath": function () {},
-    "Lookup": function () {},
-    "Mark": function () {},
-    "MultiExtent": function () {},
-    "MultiValues": function () {},
-    "Nest": function () {},
-    "Pack": function () {},
-    "Params": function () {},
-    "Partition": function () {},
-    "Pie": function () {},
-    "PreFacet": function () {},
-    "Projection": function () {},
-    "Proxy": function () {},
-    "Rank": function () {},
-    "Relay": function () {},
-    "Render": function () {},
-    "ResolveFilter": function () {},
-    "Sample": function () {},
-    "Scale": function () {},
-    "Sequence": function () {},
-    "Sieve": function () {},
-    "SortItems": function () {},
-    "Stack": function () {},
-    "Stratify": function () {},
-    "Subflow": function () {},
-    "Tree": function () {},
-    "TreeLinks": function () {},
-    "Treemap": function () {},
-    "TupleIndex": function () {},
-    "Values": function () {},
-    "ViewLayout": function () {},
-    "Voronoi": function () {},
-    "Wordcloud": function () {}
+    "aggregate": {
+      "Definition": {
+        "metadata": {
+          "changes": {},
+          "generates": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "axisticks": function () {},
+    "bin": {
+      "Definition": {
+        "metadata": {
+          "modifies": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "bound": function () {},
+    "collect": {
+      "Definition": {
+        "metadata": {
+          "source": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "compare": function () {},
+    "contour": {
+      "Definition": {
+        "metadata": {
+          "generates": {},
+          "source": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "countpattern": {
+      "Definition": {
+        "metadata": {
+          "changes": {},
+          "generates": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "cross": {
+      "Definition": {
+        "metadata": {
+          "changes": {},
+          "generates": {},
+          "source": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "crossfilter": {
+      "Definition": {
+        "metadata": {},
+        "params": {},
+        "type": {}
+      }
+    },
+    "datajoin": function () {},
+    "density": {
+      "Definition": {
+        "metadata": {
+          "generates": {},
+          "source": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "encode": function () {},
+    "extent": {
+      "Definition": {
+        "metadata": {},
+        "params": {},
+        "type": {}
+      }
+    },
+    "facet": function () {},
+    "field": function () {},
+    "filter": {
+      "Definition": {
+        "metadata": {
+          "changes": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "fold": {
+      "Definition": {
+        "metadata": {
+          "changes": {},
+          "generates": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "force": {
+      "Definition": {
+        "metadata": {
+          "modifies": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "formula": {
+      "Definition": {
+        "metadata": {
+          "modifies": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "generate": function () {},
+    "geojson": {
+      "Definition": {
+        "metadata": {},
+        "params": {},
+        "type": {}
+      }
+    },
+    "geopath": {
+      "Definition": {
+        "metadata": {
+          "modifies": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "geopoint": {
+      "Definition": {
+        "metadata": {
+          "modifies": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "geoshape": {
+      "Definition": {
+        "metadata": {
+          "modifies": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "graticule": {
+      "Definition": {
+        "metadata": {
+          "changes": {},
+          "generates": {},
+          "source": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "identifier": {
+      "Definition": {
+        "metadata": {
+          "modifies": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "impute": {
+      "Definition": {
+        "metadata": {
+          "changes": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "joinaggregate": {
+      "Definition": {
+        "metadata": {
+          "modifies": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "key": function () {},
+    "legendentries": function () {},
+    "linkpath": {
+      "Definition": {
+        "metadata": {
+          "modifies": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "lookup": {
+      "Definition": {
+        "metadata": {
+          "modifies": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "mark": function () {},
+    "multiextent": function () {},
+    "multivalues": function () {},
+    "nest": {
+      "Definition": {
+        "metadata": {
+          "changes": {},
+          "generates": {},
+          "source": {},
+          "treesource": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "overlap": function () {},
+    "pack": {
+      "Definition": {
+        "metadata": {
+          "modifies": {},
+          "tree": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "params": function () {},
+    "partition": {
+      "Definition": {
+        "metadata": {
+          "modifies": {},
+          "tree": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "pie": {
+      "Definition": {
+        "metadata": {
+          "modifies": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "prefacet": function () {},
+    "projection": function () {},
+    "proxy": function () {},
+    "relay": function () {},
+    "render": function () {},
+    "resolvefilter": {
+      "Definition": {
+        "metadata": {},
+        "params": {},
+        "type": {}
+      }
+    },
+    "sample": {
+      "Definition": {
+        "metadata": {
+          "changes": {},
+          "source": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "scale": function () {},
+    "sequence": {
+      "Definition": {
+        "metadata": {
+          "generates": {},
+          "source": {}
+        },
+        "output": {},
+        "params": {},
+        "type": {}
+      }
+    },
+    "sieve": function () {},
+    "sortitems": function () {},
+    "stack": {
+      "Definition": {
+        "metadata": {
+          "modifies": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "stratify": {
+      "Definition": {
+        "metadata": {
+          "treesource": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "subflow": function () {},
+    "tree": {
+      "Definition": {
+        "metadata": {
+          "modifies": {},
+          "tree": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "treelinks": {
+      "Definition": {
+        "metadata": {
+          "changes": {},
+          "generates": {},
+          "tree": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "treemap": {
+      "Definition": {
+        "metadata": {
+          "modifies": {},
+          "tree": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "tupleindex": function () {},
+    "values": function () {},
+    "viewlayout": function () {},
+    "voronoi": {
+      "Definition": {
+        "metadata": {
+          "modifies": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "window": {
+      "Definition": {
+        "metadata": {
+          "modifies": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "wordcloud": {
+      "Definition": {
+        "metadata": {
+          "modifies": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    }
   },
   "truncate": function () {},
   "truthy": {
@@ -605,6 +671,7 @@ var vega = {
     "number": function () {},
     "string": function () {}
   },
+  "utcInterval": function () {},
   "version": {},
   "visitArray": function () {},
   "zero": {
@@ -618,6 +685,7 @@ vega.Bounds.prototype = {
   "clear": function () {},
   "clone": function () {},
   "contains": function () {},
+  "empty": function () {},
   "encloses": function () {},
   "expand": function () {},
   "height": function () {},
@@ -667,6 +735,7 @@ vega.CanvasRenderer.prototype = {
   "clear": function () {},
   "constructor": function () {},
   "context": function () {},
+  "dirty": function () {},
   "draw": function () {},
   "element": function () {},
   "initialize": function () {},
@@ -800,6 +869,7 @@ vega.Renderer.prototype = {
   "_load": function () {},
   "_render": function () {},
   "background": function () {},
+  "dirty": function () {},
   "element": function () {},
   "initialize": function () {},
   "loadImage": function () {},
@@ -837,6 +907,7 @@ vega.SVGRenderer.prototype = {
   "_update": function () {},
   "background": function () {},
   "constructor": function () {},
+  "dirty": function () {},
   "draw": function () {},
   "element": function () {},
   "initialize": function () {},
@@ -858,6 +929,7 @@ vega.SVGStringRenderer.prototype = {
   "background": function () {},
   "buildDefs": function () {},
   "constructor": function () {},
+  "dirty": function () {},
   "element": function () {},
   "href": function () {},
   "initialize": function () {},
@@ -866,7 +938,6 @@ vega.SVGStringRenderer.prototype = {
   "markGroup": function () {},
   "render": function () {},
   "renderAsync": function () {},
-  "reset": function () {},
   "resize": function () {},
   "sanitizeURL": function () {},
   "scene": function () {},
@@ -891,6 +962,7 @@ vega.Transform.prototype = {
 vega.View.prototype = {
   "_enqueue": function () {},
   "_getPulse": function () {},
+  "_resizeView": function () {},
   "add": function () {},
   "addEventListener": function () {},
   "addSignalListener": function () {},
@@ -901,9 +973,10 @@ vega.View.prototype = {
   "cleanThreshold": function () {},
   "connect": function () {},
   "constructor": function () {},
+  "container": function () {},
   "data": function () {},
   "debug": function () {},
-  "enqueue": function () {},
+  "dirty": function () {},
   "error": function () {},
   "events": function () {},
   "finalize": function () {},
@@ -928,6 +1001,7 @@ vega.View.prototype = {
   "renderer": function () {},
   "request": function () {},
   "rerank": function () {},
+  "resize": function () {},
   "run": function () {},
   "runAfter": function () {},
   "runAsync": function () {},
@@ -944,7 +1018,7 @@ vega.View.prototype = {
   "warn": function () {},
   "width": function () {}
 };
-vega.transforms.Aggregate.prototype = {
+vega.transforms.aggregate.prototype = {
   "add": function () {},
   "cell": function () {},
   "cellkey": function () {},
@@ -966,7 +1040,7 @@ vega.transforms.Aggregate.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.AxisTicks.prototype = {
+vega.transforms.axisticks.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -978,7 +1052,7 @@ vega.transforms.AxisTicks.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Bin.prototype = {
+vega.transforms.bin.prototype = {
   "_bins": function () {},
   "constructor": function () {},
   "evaluate": function () {},
@@ -991,7 +1065,7 @@ vega.transforms.Bin.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Bound.prototype = {
+vega.transforms.bound.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1003,7 +1077,7 @@ vega.transforms.Bound.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Collect.prototype = {
+vega.transforms.collect.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1015,7 +1089,7 @@ vega.transforms.Collect.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Compare.prototype = {
+vega.transforms.compare.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1026,7 +1100,7 @@ vega.transforms.Compare.prototype = {
   "skip": function () {},
   "targets": function () {}
 };
-vega.transforms.Contour.prototype = {
+vega.transforms.contour.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1038,7 +1112,7 @@ vega.transforms.Contour.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.CountPattern.prototype = {
+vega.transforms.countpattern.prototype = {
   "_finish": function () {},
   "_parameterCheck": function () {},
   "constructor": function () {},
@@ -1052,7 +1126,7 @@ vega.transforms.CountPattern.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Cross.prototype = {
+vega.transforms.cross.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1064,7 +1138,7 @@ vega.transforms.Cross.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.CrossFilter.prototype = {
+vega.transforms.crossfilter.prototype = {
   "constructor": function () {},
   "eval": function () {},
   "evaluate": function () {},
@@ -1086,7 +1160,7 @@ vega.transforms.CrossFilter.prototype = {
   "transform": function () {},
   "update": function () {}
 };
-vega.transforms.DataJoin.prototype = {
+vega.transforms.datajoin.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1098,7 +1172,7 @@ vega.transforms.DataJoin.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Density.prototype = {
+vega.transforms.density.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1110,7 +1184,7 @@ vega.transforms.Density.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Encode.prototype = {
+vega.transforms.encode.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1122,7 +1196,7 @@ vega.transforms.Encode.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Extent.prototype = {
+vega.transforms.extent.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1134,7 +1208,7 @@ vega.transforms.Extent.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Facet.prototype = {
+vega.transforms.facet.prototype = {
   "activate": function () {},
   "constructor": function () {},
   "evaluate": function () {},
@@ -1148,7 +1222,7 @@ vega.transforms.Facet.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Field.prototype = {
+vega.transforms.field.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1159,7 +1233,7 @@ vega.transforms.Field.prototype = {
   "skip": function () {},
   "targets": function () {}
 };
-vega.transforms.Filter.prototype = {
+vega.transforms.filter.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1171,7 +1245,7 @@ vega.transforms.Filter.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Fold.prototype = {
+vega.transforms.fold.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1183,7 +1257,7 @@ vega.transforms.Fold.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Force.prototype = {
+vega.transforms.force.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "finish": function () {},
@@ -1196,7 +1270,7 @@ vega.transforms.Force.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Formula.prototype = {
+vega.transforms.formula.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1208,7 +1282,7 @@ vega.transforms.Formula.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Generate.prototype = {
+vega.transforms.generate.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1220,7 +1294,7 @@ vega.transforms.Generate.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.GeoPath.prototype = {
+vega.transforms.geojson.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1232,7 +1306,7 @@ vega.transforms.GeoPath.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.GeoPoint.prototype = {
+vega.transforms.geopath.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1244,7 +1318,7 @@ vega.transforms.GeoPoint.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.GeoShape.prototype = {
+vega.transforms.geopoint.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1256,7 +1330,7 @@ vega.transforms.GeoShape.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Graticule.prototype = {
+vega.transforms.geoshape.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1268,7 +1342,7 @@ vega.transforms.Graticule.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Impute.prototype = {
+vega.transforms.graticule.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1280,7 +1354,53 @@ vega.transforms.Impute.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Key.prototype = {
+vega.transforms.identifier.prototype = {
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
+};
+vega.transforms.impute.prototype = {
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
+};
+vega.transforms.joinaggregate.prototype = {
+  "add": function () {},
+  "cell": function () {},
+  "cellkey": function () {},
+  "celltuple": function () {},
+  "changes": function () {},
+  "constructor": function () {},
+  "cross": function () {},
+  "evaluate": function () {},
+  "init": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "newcell": function () {},
+  "newtuple": function () {},
+  "parameters": function () {},
+  "rem": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
+};
+vega.transforms.key.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1291,7 +1411,7 @@ vega.transforms.Key.prototype = {
   "skip": function () {},
   "targets": function () {}
 };
-vega.transforms.LegendEntries.prototype = {
+vega.transforms.legendentries.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1303,7 +1423,7 @@ vega.transforms.LegendEntries.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.LinkPath.prototype = {
+vega.transforms.linkpath.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1315,7 +1435,7 @@ vega.transforms.LinkPath.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Lookup.prototype = {
+vega.transforms.lookup.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1327,7 +1447,7 @@ vega.transforms.Lookup.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Mark.prototype = {
+vega.transforms.mark.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1339,7 +1459,7 @@ vega.transforms.Mark.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.MultiExtent.prototype = {
+vega.transforms.multiextent.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1350,7 +1470,7 @@ vega.transforms.MultiExtent.prototype = {
   "skip": function () {},
   "targets": function () {}
 };
-vega.transforms.MultiValues.prototype = {
+vega.transforms.multivalues.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1361,7 +1481,7 @@ vega.transforms.MultiValues.prototype = {
   "skip": function () {},
   "targets": function () {}
 };
-vega.transforms.Nest.prototype = {
+vega.transforms.nest.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1373,7 +1493,19 @@ vega.transforms.Nest.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Pack.prototype = {
+vega.transforms.overlap.prototype = {
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
+};
+vega.transforms.pack.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "fields": function () {},
@@ -1388,7 +1520,7 @@ vega.transforms.Pack.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Params.prototype = {
+vega.transforms.params.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1400,7 +1532,7 @@ vega.transforms.Params.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Partition.prototype = {
+vega.transforms.partition.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "fields": function () {},
@@ -1415,7 +1547,7 @@ vega.transforms.Partition.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Pie.prototype = {
+vega.transforms.pie.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1427,7 +1559,7 @@ vega.transforms.Pie.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.PreFacet.prototype = {
+vega.transforms.prefacet.prototype = {
   "activate": function () {},
   "constructor": function () {},
   "evaluate": function () {},
@@ -1441,7 +1573,7 @@ vega.transforms.PreFacet.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Projection.prototype = {
+vega.transforms.projection.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1453,7 +1585,7 @@ vega.transforms.Projection.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Proxy.prototype = {
+vega.transforms.proxy.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1465,7 +1597,7 @@ vega.transforms.Proxy.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Rank.prototype = {
+vega.transforms.relay.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1477,7 +1609,7 @@ vega.transforms.Rank.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Relay.prototype = {
+vega.transforms.render.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1489,7 +1621,7 @@ vega.transforms.Relay.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Render.prototype = {
+vega.transforms.resolvefilter.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1501,7 +1633,7 @@ vega.transforms.Render.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.ResolveFilter.prototype = {
+vega.transforms.sample.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1513,7 +1645,7 @@ vega.transforms.ResolveFilter.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Sample.prototype = {
+vega.transforms.scale.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1525,7 +1657,7 @@ vega.transforms.Sample.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Scale.prototype = {
+vega.transforms.sequence.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1537,7 +1669,7 @@ vega.transforms.Scale.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Sequence.prototype = {
+vega.transforms.sieve.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1549,7 +1681,7 @@ vega.transforms.Sequence.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Sieve.prototype = {
+vega.transforms.sortitems.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1561,7 +1693,7 @@ vega.transforms.Sieve.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.SortItems.prototype = {
+vega.transforms.stack.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1573,7 +1705,7 @@ vega.transforms.SortItems.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Stack.prototype = {
+vega.transforms.stratify.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1585,19 +1717,7 @@ vega.transforms.Stack.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Stratify.prototype = {
-  "constructor": function () {},
-  "evaluate": function () {},
-  "marshall": function () {},
-  "modified": function () {},
-  "parameters": function () {},
-  "run": function () {},
-  "set": function () {},
-  "skip": function () {},
-  "targets": function () {},
-  "transform": function () {}
-};
-vega.transforms.Subflow.prototype = {
+vega.transforms.subflow.prototype = {
   "add": function () {},
   "connect": function () {},
   "constructor": function () {},
@@ -1613,7 +1733,7 @@ vega.transforms.Subflow.prototype = {
   "skip": function () {},
   "targets": function () {}
 };
-vega.transforms.Tree.prototype = {
+vega.transforms.tree.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "fields": function () {},
@@ -1628,7 +1748,7 @@ vega.transforms.Tree.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.TreeLinks.prototype = {
+vega.transforms.treelinks.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1640,7 +1760,7 @@ vega.transforms.TreeLinks.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Treemap.prototype = {
+vega.transforms.treemap.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "fields": function () {},
@@ -1655,7 +1775,7 @@ vega.transforms.Treemap.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.TupleIndex.prototype = {
+vega.transforms.tupleindex.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1667,7 +1787,7 @@ vega.transforms.TupleIndex.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Values.prototype = {
+vega.transforms.values.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1679,7 +1799,7 @@ vega.transforms.Values.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.ViewLayout.prototype = {
+vega.transforms.viewlayout.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1691,7 +1811,7 @@ vega.transforms.ViewLayout.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Voronoi.prototype = {
+vega.transforms.voronoi.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1703,7 +1823,20 @@ vega.transforms.Voronoi.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
-vega.transforms.Wordcloud.prototype = {
+vega.transforms.window.prototype = {
+  "constructor": function () {},
+  "evaluate": function () {},
+  "group": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
+};
+vega.transforms.wordcloud.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},

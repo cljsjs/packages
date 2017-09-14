@@ -1,6 +1,6 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.7.1" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -8,8 +8,8 @@
          '[boot.util :refer [dosh]]
          '[clojure.java.io :as io])
 
-(def +lib-version+ "11.0.0")
-(def +lib-checksum+ "46D5965CE1031A2449DE19FAD4A11699")
+(def +lib-version+ "13.0.1")
+(def +lib-checksum+ "42138AC6CF0B64E36EBE6A89EA8AB284")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "ag-grid-%s" +lib-version+))
 

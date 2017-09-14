@@ -1,10 +1,9 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.7.1"  :scope "test"]
                   [cljsjs/react "15.3.1-0"]
                   [cljsjs/moment "2.10.6-4"]
-                  [cljsjs/react-onclickoutside "5.9.0-0"]
-                  [cljsjs/tether "1.1.1-0"]])
+                  [cljsjs/react-onclickoutside "5.9.0-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -12,7 +11,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "0.41.1")
+(def +lib-version+ "0.53.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -31,7 +30,7 @@
 (deftask download-datepicker []
   (download
     :url (str "https://github.com/Hacker0x01/react-datepicker/archive/v" +lib-version+ ".zip")
-    :checksum "238f166b47f2cbb8af708e0ac046cb98"
+    :checksum "649383fc69bd87ebf0f515a27c32bb07"
     :unzip true))
 
 (deftask build-datepicker []
@@ -45,10 +44,8 @@
         (io/copy (tmpd/file f) target))
       (binding [boot.util/*sh-dir* (str (io/file tmp (format "react-datepicker-%s" +lib-version+)))]
         ((sh "npm" "install"))
-        ((sh "gem" "install" "scss_lint"))
         ((sh "npm" "run" "build")))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
-
 
 (deftask package []
   (comp
@@ -63,7 +60,6 @@
     (deps-cljs :name "cljsjs.react-datepicker"
                :requires ["cljsjs.react"
                           "cljsjs.moment"
-                          "cljsjs.react-onclickoutside"
-                          "cljsjs.tether"])
+                          "cljsjs.react-onclickoutside"])
     (pom)
     (jar)))

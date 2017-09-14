@@ -1,12 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.7.1"  :scope "test"]
                   [cljsjs/react "15.3.1-0"]
                   [cljsjs/react-dom "15.3.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.2.10")
+(def +lib-version+ "3.3.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -24,7 +24,7 @@
 
 (deftask download-react-tooltip []
   (download :url (format "https://github.com/wwayne/react-tooltip/archive/%s.zip" +lib-version+)
-              :checksum "df8466854facb8fa050c14d991c0ae11"
+              :checksum "16a6dc218c26658447b1a69175c9de62"
               :unzip true))
 
 
