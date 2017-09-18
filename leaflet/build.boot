@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.1.0")
-(def +version+ (str +lib-version+ "-2"))
+(def +lib-version+ "1.2.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/leaflet
@@ -20,12 +20,14 @@
 (deftask package []
   (comp
    (download :url      (str "https://github.com/Leaflet/Leaflet/archive/v" +lib-version+ ".zip")
-             :checksum "CE28FE4B917CDFB55F362FDC19203C5D"
+             :checksum "5F9DDB59B2C68E40B58467D508AC7F3E"
              :unzip    true)
    (sift :move {#"^Leaflet-(.*)/dist/leaflet-src.js"    "cljsjs/leaflet/development/leaflet.inc.js"
                 #"^Leaflet-(.*)/dist/leaflet.js"        "cljsjs/leaflet/production/leaflet.min.inc.js"
                 #"^Leaflet-(.*)/dist/leaflet.css"       "cljsjs/leaflet/common/leaflet.inc.css"
                 #"^Leaflet-(.*)/dist/images/(.*\.png)$" "cljsjs/leaflet/common/images/$2"})
-   (sift :include #{#"^cljsjs" #"^deps.cljs"})
+   (sift :include #{#"^cljsjs"})
+   (deps-cljs :provides ["cljsjs.leaflet" "leaflet"]
+              :global-exports '{leaflet L})
    (pom)
    (jar)))
