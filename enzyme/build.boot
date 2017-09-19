@@ -9,7 +9,7 @@
          '[boot.util :refer [sh]])
 
 (def +lib-version+ "2.9.1")
-(def +version+ (str +lib-version+ "-2"))
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/enzyme
@@ -39,6 +39,9 @@
       (io/copy
         (io/file tmp "build/webpack.config.js")
         (io/file tmp +lib-folder+ "webpack-cljsjs.config.js"))
+      (io/copy
+        (io/file tmp "build/helper.js")
+        (io/file tmp +lib-folder+ "helper.js"))
       (binding [boot.util/*sh-dir* (str (io/file tmp +lib-folder+))]
         ((sh (cmd "npm") "install" "--production"))
         ((sh (cmd "npm") "install" "react" "react-dom" "react-test-renderer" "enzyme" "webpack"))
@@ -50,7 +53,11 @@
     (download :url (str "http://registry.npmjs.org/enzyme/-/enzyme-" +lib-version+ ".tgz")
               :checksum "700E66FBC4C1BECC1E559F70B83403F8"
               :decompress true)
+    (build)
+    (sift :move {#"^enzyme.bundled.js" "cljsjs/enzyme/development/enzyme.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.enzyme")
+    (deps-cljs :name "cljsjs.enzyme"
+               :requires ["cljsjs.react"
+                          "cljsjs.react.dom"])
     (pom)
     (jar)))
