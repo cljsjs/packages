@@ -1,6 +1,7 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.7.1" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.7.1" :scope "test"]
+                  [cljsjs/pouchdb "6.3.4-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -24,7 +25,8 @@
    (sift :move {#"^pouchdb.find.js" "cljsjs/pouchdb-find/development/pouchdb-find.inc.js"
                 #"^pouchdb.find.min.js" "cljsjs/pouchdb-find/production/pouchdb-find.min.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.pouchdb-find")
+   (deps-cljs :name "cljsjs.pouchdb-find"
+              :requires ["cljsjs.pouchdb"])
    (pom)
    (jar)))
 
