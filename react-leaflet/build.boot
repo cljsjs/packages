@@ -18,16 +18,16 @@
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
-(require '[clojure.java.io :as io])
-
 (deftask package []
   (comp
     (download :url      (str "https://unpkg.com/react-leaflet@" +lib-version+ "/dist/react-leaflet.js")
+              :target   "cljsjs/react-leaflet/development/react-leaflet.inc.js"
               :checksum "9A5A94EDAF521D557F573B21CE2B3A9D")
     (download :url      (str "https://unpkg.com/react-leaflet@" +lib-version+ "/dist/react-leaflet.min.js")
+              :target   "cljsjs/react-leaflet/production/react-leaflet.min.inc.js"
               :checksum "96B51B1896661CFF7220908E0933FC94")
-    (sift :move {#"^react-leaflet.js"      "cljsjs/react-leaflet/development/react-leaflet.inc.js"
-                 #"^react-leaflet.min.js"  "cljsjs/react-leaflet/production/react-leaflet.min.inc.js"})
-    (sift :include #{#"^cljsjs" #"^deps.cljs"})
+    (deps-cljs :provides ["react-leaflet" "cljsjs.react-leaflet"]
+               :requires ["leaflet" "react" "react-dom"]
+               :global-exports '{react-leaflet ReactLeaflet})
     (pom)
     (jar)))

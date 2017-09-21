@@ -1,6 +1,6 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.7.1"  :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.7.2"  :scope "test"]
                   [cljsjs/react "15.6.1-2"]
                   [cljsjs/react-dom "15.6.1-2"]])
 
@@ -19,12 +19,10 @@
 
 (deftask package []
   (comp
-   (download :url (format "https://unpkg.com/react-transition-group@%s/dist/react-transition-group.js" +lib-version+))
-   (download :url (format "https://unpkg.com/react-transition-group@%s/dist/react-transition-group.min.js" +lib-version+))
-
-   (sift :move {#"^react-transition-group\.min\.js$" "cljsjs/react-transition-group/production/react-transition-group.min.inc.js"
-                #"^react-transition-group\.js$"      "cljsjs/react-transition-group/development/react-transition-group.inc.js"})
-
+   (download :url (format "https://unpkg.com/react-transition-group@%s/dist/react-transition-group.js" +lib-version+)
+             :target "cljsjs/react-transition-group/production/react-transition-group.min.inc.js")
+   (download :url (format "https://unpkg.com/react-transition-group@%s/dist/react-transition-group.min.js" +lib-version+)
+             :target "cljsjs/react-transition-group/development/react-transition-group.inc.js")
    (deps-cljs :provides ["react-transition-group" "react-transition-group/TransitionGroup" "react-transition-group/CSSTransition" "react-transition-group/Transition"
                          "cljsjs.react-transition-group"]
               :requires ["react" "react-dom"]

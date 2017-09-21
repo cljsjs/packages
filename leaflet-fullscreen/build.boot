@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "1.0.2")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/leaflet-fullscreen
@@ -14,8 +14,6 @@
        :url         "http://leaflet.github.io/Leaflet.fullscreen/"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
-
-(require '[clojure.java.io :as io])
 
 (deftask package []
   (comp
@@ -26,5 +24,8 @@
                 #"^Leaflet.fullscreen-(.*)/dist/leaflet.fullscreen.css"    "cljsjs/leaflet-fullscreen/common/leaflet-fullscreen.inc.css"
                 #"^Leaflet.fullscreen-(.*)/dist/(.*\.png)$"                "cljsjs/leaflet-fullscreen/common/$2"})
    (sift :include #{#"^cljsjs" #"^deps.cljs"})
+   (deps-cljs :provides ["leaflet-fullscreen" "cljsjs.leaflet-fullscreen"]
+              :requires ["leaflet"]
+              :global-exports '{leaflet-fullscreen L.Control.Fullscreen})
    (pom)
    (jar)))
