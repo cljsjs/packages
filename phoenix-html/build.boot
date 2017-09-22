@@ -1,5 +1,4 @@
 (set-env!
- :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.7.1" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
@@ -25,6 +24,6 @@
    (minify :in "cljsjs/phoenix-html/development/phoenix_html.inc.js"
            :out "cljsjs/phoenix-html/production/phoenix_html.min.inc.js")
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.phoenix-html")
+   (deps-cljs :name "cljsjs.phoenix-html" :no-externs true)
    (pom)
    (jar)))
