@@ -4,7 +4,7 @@
                   [cljsjs/material-ui "0.19.0-0"]
                   [cljsjs/react "15.6.1-1"]])
 
-(def +lib-version+ "0.17.0")
+(def +lib-version+ "0.17.2")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "material-ui-chip-input-%s" +lib-version+))
 
@@ -26,7 +26,7 @@
 
 (deftask download-material-ui-chip-input []
          (download :url url
-                   :checksum "bd7bc18aa3745a078d1c538ae0580ace"
+                   :checksum "06EFFCB23E852D834B9858E0F89412FF"
                    :unzip true))
 
 (def webpack-file-name "webpack.config.js")
