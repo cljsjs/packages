@@ -1,8 +1,8 @@
-# cljsjs/phoenix_html
+# cljsjs/phoenix-html
 
 [](dependency)
 ```clojure
-[cljsjs/phoenix_html "2.10.4-0"] ;; latest release
+[cljsjs/phoenix-html "2.10.4-0"] ;; latest release
 ```
 [](/dependency)
 
