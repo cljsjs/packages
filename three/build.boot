@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.0.84")
+(def +lib-version+ "0.0.87")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -17,10 +17,10 @@
 
 (deftask package []
   (comp
-   (download  :url      "https://raw.githubusercontent.com/mrdoob/three.js/r84/build/three.js"
-              :checksum "4F91E79951C54F6C3A8F5B56075A71F9")
-   (download  :url      "https://raw.githubusercontent.com/mrdoob/three.js/r84/build/three.min.js"
-              :checksum "3298078BCE82BDB1AFADF5B1A280915E")
+   (download  :url      "https://raw.githubusercontent.com/mrdoob/three.js/r87/build/three.js"
+              :checksum "8d712585261c33d2bc36a83fee48bb16")
+   (download  :url      "https://raw.githubusercontent.com/mrdoob/three.js/r87/build/three.min.js"
+              :checksum "61269fcecc3ab8c56cc34708403c8138")
    (sift      :move     {#"^three.js"
                          "cljsjs/three/development/three.inc.js"
                          #"^three.min.js"
