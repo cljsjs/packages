@@ -32,7 +32,7 @@
         (io/copy (tmpd/file f) target))
       (let [build-dir  (str (io/file tmp (format "react-autosuggest-%s" +lib-version+)))]
         (binding [boot.util/*sh-dir* build-dir]
-          ((sh "npm" "install"))))
+          ((sh "npm" "install" "--unsafe-perm"))))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 
@@ -40,7 +40,7 @@
   (comp
     (download :url (str "https://github.com/moroshko/react-autosuggest/archive/v" +lib-version+ ".zip")
               :checksum +expected-checksum+
-              :unzip true) 
+              :unzip true)
     (build-autosuggest)
 
     (sift :move {#"^react-autosuggest.*[/ \\]dist[/ \\]standalone[/ \\]autosuggest.js$" "cljsjs/react-autosuggest/development/react-autosuggest.inc.js"
@@ -53,4 +53,3 @@
                           "cljsjs.react.dom"])
     (pom)
     (jar)))
-
