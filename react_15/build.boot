@@ -6,6 +6,7 @@
 
 (def +lib-version+ "15.6.1")
 (def +version+ (str +lib-version+ "-2"))
+;; TODO: Copy simplified build from react if this needs update
 
 (def checksums
   {'cljsjs/react
