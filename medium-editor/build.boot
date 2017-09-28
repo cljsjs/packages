@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "5.22.1")
-(def +version+ (str +lib-version+ "-2"))
+(def +lib-version+ "5.23.2")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/medium-editor
@@ -18,7 +18,7 @@
 (deftask package []
   (comp
    (download :url      (format "https://github.com/daviferreira/medium-editor/archive/%s.zip" +lib-version+)
-             :checksum "3FF0230E2FB079D0114EA604B3F9D4F5"
+             :checksum "B65EDC11B4453FECC2BA6EF0BA6E2670"
              :unzip    true)
    (sift :move {#"^medium-editor-([\d\.]*)/dist/js/medium-editor\.js"
                 "cljsjs/medium_editor/development/medium-editor.inc.js" 
