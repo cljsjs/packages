@@ -24,8 +24,8 @@
              :archive-format "tar")
    (sift :move {#"package/dist/firebaseui.js" "cljsjs/development/firebaseui.inc.js"
                 #"package/dist/firebaseui.css" "cljsjs/development/firebaseui.inc.css"}
-         :include #{#"^cljsjs"
-                    #"^deps.cljs"})
+         :include #{#"^cljsjs"})
+   (deps-cljs :name "cljsjs.firebaseui")
    (pom)
    (jar)
    (validate-checksums)))
