@@ -8,12 +8,11 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "2.9.1")
-(def +version+ (str +lib-version+ "-0"))
+(def +lib-version+ "3.0.0")
 
 (task-options!
  pom  {:project     'cljsjs/enzyme
-       :version     +version+
+       :version     +lib-version+
        :description "A JavaScript Testing utility for React that makes it easier to assert, manipulate, and traverse your React Components' output."
        :url         "http://airbnb.io/enzyme/"
        :scm         {:url "https://github.com/airbnb/enzyme"}
@@ -44,14 +43,14 @@
         (io/file tmp +lib-folder+ "helper.js"))
       (binding [boot.util/*sh-dir* (str (io/file tmp +lib-folder+))]
         ((sh (cmd "npm") "install" "--production"))
-        ((sh (cmd "npm") "install" "react" "react-dom" "react-test-renderer" "enzyme" "webpack"))
+        ((sh (cmd "npm") "install" "react@15" "react-dom@15" "react-test-renderer@15" "enzyme" "webpack" "enzyme-adapter-react-15"))
         ((sh (cmd (path (str (io/file tmp +lib-folder+) "/node_modules/.bin/webpack"))) "--config" "webpack-cljsjs.config.js")))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 (deftask package []
   (comp
     (download :url (str "http://registry.npmjs.org/enzyme/-/enzyme-" +lib-version+ ".tgz")
-              :checksum "700E66FBC4C1BECC1E559F70B83403F8"
+              :checksum "336CA77636B5EE30B1FECA1ED1644626"
               :decompress true)
     (build)
     (sift :move {#"^enzyme.bundled.js" "cljsjs/enzyme/development/enzyme.inc.js"})

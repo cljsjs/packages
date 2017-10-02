@@ -4,7 +4,7 @@ https://github.com/airbnb/enzyme
 
 [](dependency)
 ```clojure
-[cljsjs/enzyme "2.9.1"] ;; latest release
+[cljsjs/enzyme "3.0.0"] ;; latest release
 ```
 [](/dependency)
 
