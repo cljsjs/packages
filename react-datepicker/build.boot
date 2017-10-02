@@ -11,7 +11,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "0.54.0")
+(def +lib-version+ "0.55.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -30,7 +30,7 @@
 (deftask download-datepicker []
   (download
     :url (str "https://github.com/Hacker0x01/react-datepicker/archive/v" +lib-version+ ".zip")
-    :checksum "2AFC2AF366F6D934A3DBA522B310B202"
+    :checksum "B17A46B0741F7074AB6306813BD3B835"
     :unzip true))
 
 (deftask build-datepicker []
