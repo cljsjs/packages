@@ -2,13 +2,10 @@
 
 [](dependency)
 ```clojure
-[cljsjs/paho "1.0.1-0"] ;; latest release
+[cljsjs/paho "1.0.3-0"] ;; latest release
 ```
 [](/dependency)
 
-Please note that the minimised version of the Paho client is not used when
-enabling compile optimizations as there is a weird interaction between the
-Google Closure compiler and the Eclipse Paho Javascript minimised file.
 
 ```clojure
 (ns mtest.core
