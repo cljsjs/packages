@@ -2,12 +2,11 @@
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.7.1"  :scope "test"]
                   [cljsjs/react       "15.3.0-0"]
-                  [cljsjs/radium      "0.17.1-0"]
                   [cljsjs/snapsvg     "0.4.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.9.9")
+(def +lib-version+ "2.1.6")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -20,7 +19,7 @@
 
 (deftask download-react-burger-menu []
   (download :url      (str "https://github.com/negomi/react-burger-menu/archive/v" +lib-version+ ".zip")
-            :checksum "12ac86125106d7c178f7934cf9cd09e9"
+            :checksum "18c5e0ae2a16157c63c80e449a0752fa"
             :unzip    true))
 
 (deftask package []
@@ -32,6 +31,6 @@
                  "cljsjs/react-burger-menu/production/react-burger-menu.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-burger-menu"
-               :requires ["cljsjs.react" "cljsjs.radium" "cljsjs.snapsvg"])
+               :requires ["cljsjs.react" "cljsjs.snapsvg"])
     (pom)
     (jar)))
