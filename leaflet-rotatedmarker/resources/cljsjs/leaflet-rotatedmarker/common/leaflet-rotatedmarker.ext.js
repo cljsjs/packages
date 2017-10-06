@@ -1,5 +1,5 @@
-var rotatedMarker {
+var rotatedMarker = {
 	rotationAngle:     {},
 	setRotationAngle:  function () {},
 	setRotationOrigin: function () {}
-}
+};
