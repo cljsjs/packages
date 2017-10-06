@@ -1,6 +1,6 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.7.1"  :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.8.1"  :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -54,6 +54,7 @@
               :decompress true)
     (build)
     (sift :move {#"^enzyme.bundled.js" "cljsjs/enzyme/development/enzyme.inc.js"})
-    (sift :include #{#"^cljsjs" #"^deps.cljs"})
+    (sift :include #{#"^cljsjs"})
+    (deps-cljs :name "cljsjs.enzyme")
     (pom)
     (jar)))
