@@ -54,9 +54,6 @@
               :decompress true)
     (build)
     (sift :move {#"^enzyme.bundled.js" "cljsjs/enzyme/development/enzyme.inc.js"})
-    (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.enzyme"
-               :requires ["cljsjs.react"
-                          "cljsjs.react.dom"])
+    (sift :include #{#"^cljsjs" #"^deps.cljs"})
     (pom)
     (jar)))
