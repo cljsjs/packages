@@ -18,10 +18,8 @@
 (deftask package []
   (comp
    (download :url (format "https://unpkg.com/howler@%s/dist/howler.js" +lib-version+)
-             :checksum "ac45047bc5f0b0b97aa22fd52bb29c5a"
              :target "cljsjs/howler/development/howler.inc.js")
    (download :url (format "https://unpkg.com/howler@%s/dist/howler.min.js" +lib-version+)
-             :checksum "06a921e548cba5192d3e1f9ae0e8dbb5"
              :target "cljsjs/howler/production/howler.min.inc.js")
    (deps-cljs :name "cljsjs.howler")
    (pom)
