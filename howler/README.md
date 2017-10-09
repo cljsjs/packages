@@ -4,7 +4,7 @@ https://github.com/goldfire/howler.js
 
 [](dependency)
 ```clojure
-[cljsjs/howler "2.0.5"] ;; latest release
+[cljsjs/howler "2.0.5-0"] ;; latest release
 ```
 [](/dependency)
 
