@@ -65,9 +65,68 @@ var ZeroEx = {
 ZeroEx.ZeroEx.prototype = {
   "_getTokenTransferProxyAddressAsync": function () {},
   "awaitTransactionMinedAsync": function () {},
+  "etherToken": {
+      "depositAsync": function() {},
+      "getContractAddressAsync": function() {},
+      "withdrawAsync": function() {}
+  },
+  "exchange": {
+      "batchCancelOrdersAsync": function () {},
+      "batchFillOrKillAsync": function () {},
+      "batchFillOrdersAsync": function () {},
+      "cancelOrderAsync": function () {},
+      "fillOrKillOrderAsync": function () {},
+      "fillOrderAsync": function () {},
+      "fillOrdersUpToAsync": function () {},
+      "getCanceledTakerAmountAsync": function () {},
+      "getContractAddressAsync": function () {},
+      "getFilledTakerAmountAsync": function () {},
+      "getLogsAsync": function () {},
+      "getUnavailableTakerAmountAsync": function () {},
+      "getZRXTokenAddressAsync": function () {},
+      "isRoundingErrorAsync": function () {},
+      "subscribeAsync": function () {},
+      "throwLogErrorsAsErrors": function () {},
+      "unsubscribe": function () {},
+      "unsubscribeAll": function () {},
+      "validateCancelOrderThrowIfInvalidAsync": function () {},
+      "validateFillOrKillOrderThrowIfInvalidAsync": function () {},
+      "validateFillOrderThrowIfInvalidAsync": function () {},
+      "validateOrderFillableOrThrowAsync": function () {}
+  },
   "getAvailableAddressesAsync": function () {},
+  "proxy": {
+      "getAuthorizedAddressesAsync": function () {},
+      "getContractAddressAsync": function () {},
+      "isAuthorizedAsync": function () {}
+  },
   "setProviderAsync": function () {},
-  "signOrderHashAsync": function () {}
+  "signOrderHashAsync": function () {},
+  "token": {
+      "getAllowanceAsync": function () {},
+      "getBalanceAsync": function () {},
+      "getLogsAsync": function () {},
+      "getProxyAllowanceAsync": function () {},
+      "setAllowanceAsync": function () {},
+      "setProxyAllowanceAsync": function () {},
+      "setUnlimitedAllowanceAsync": function () {},
+      "setUnlimitedProxyAllowanceAsync": function () {},
+      "subscribe": function () {},
+      "transferAsync": function () {},
+      "transferFromAsync": function () {},
+      "unsubscribe": function () {},
+      "unsubscribeAll": function () {}
+  },
+  "tokenRegistry": {
+      "getContractAddressAsync": function () {},
+      "getTokenAddressByNameIfExistsAsync": function () {},
+      "getTokenAddressBySymbolIfExistsAsync": function () {},
+      "getTokenAddressesAsync": function () {},
+      "getTokenByNameIfExistsAsync": function () {},
+      "getTokenBySymbolIfExistsAsync": function () {},
+      "getTokenIfExistsAsync": function () {},
+      "getTokensAsync": function () {}
+  }
 };
 /**********************************************************************
  * End Generated Extern for ZeroEx
