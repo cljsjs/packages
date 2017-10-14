@@ -1,10 +1,8 @@
 // Generated via http://jmmk.github.io/javascript-externs-generator/
-// Import react via cdn
-// Import react-grid-layout via rawgit
 
 // Loaded JavaScripts:
-// https://unpkg.com/react@15.3.2/dist/react.js
-// https://rawgit.com/STRML/react-grid-layout/0.13.9/dist/react-grid-layout.min.js
+// https://github.com/facebook/react/releases/download/v16.0.0/react.production.min.js
+// https://rawgit.com/STRML/react-grid-layout/0.16.0/dist/react-grid-layout.min.js
 
 // Reference ns as ReactGridLayout
 var ReactGridLayout = {
@@ -49,7 +47,9 @@ var ReactGridLayout = {
       "onWidthChange": {
         "isRequired": function () {}
       },
-      "width": function () {}
+      "width": {
+        "isRequired": function () {}
+      }
     },
     "utils": {
       "__esModule": {},
@@ -64,6 +64,7 @@ var ReactGridLayout = {
     "autoSize": {},
     "className": {},
     "cols": {},
+    "compactType": {},
     "isDraggable": {},
     "isResizable": {},
     "layout": {},
@@ -76,6 +77,7 @@ var ReactGridLayout = {
     "onResize": function () {},
     "onResizeStart": function () {},
     "onResizeStop": function () {},
+    "preventCollision": {},
     "rowHeight": {},
     "useCSSTransforms": {},
     "verticalCompact": {}
@@ -90,6 +92,9 @@ var ReactGridLayout = {
       "isRequired": function () {}
     },
     "cols": {
+      "isRequired": function () {}
+    },
+    "compactType": {
       "isRequired": function () {}
     },
     "containerPadding": {
@@ -135,6 +140,9 @@ var ReactGridLayout = {
     "onResizeStop": {
       "isRequired": function () {}
     },
+    "preventCollision": {
+      "isRequired": function () {}
+    },
     "rowHeight": {
       "isRequired": function () {}
     },
@@ -144,9 +152,7 @@ var ReactGridLayout = {
     "useCSSTransforms": {
       "isRequired": function () {}
     },
-    "verticalCompact": {
-      "isRequired": function () {}
-    },
+    "verticalCompact": function () {},
     "width": {
       "isRequired": function () {}
     }
@@ -171,12 +177,15 @@ var ReactGridLayout = {
     "perc": function () {},
     "setTopLeft": function () {},
     "setTransform": function () {},
+    "sortLayoutItems": function () {},
+    "sortLayoutItemsByColRow": function () {},
     "sortLayoutItemsByRowCol": function () {},
     "synchronizeLayoutWithChildren": function () {},
     "validateLayout": function () {}
   }
 };
 ReactGridLayout.prototype = {
+  "compactType": function () {},
   "componentDidMount": function () {},
   "componentWillReceiveProps": function () {},
   "containerHeight": function () {},
