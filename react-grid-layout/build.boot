@@ -23,7 +23,7 @@
               :unzip true)
 
     (sift :move {#"^react-grid-layout-(.*)/dist/react-grid-layout.min.js$" "cljsjs/react-grid-layout/development/react-grid-layout.inc.js"
-                 #"^react-grid-layout-(.*)/css/styles.css$" "cljsjs/react-grid-layout/common/react-virtualized.inc.css"})
+                 #"^react-grid-layout-(.*)/css/styles.css$" "cljsjs/react-grid-layout/common/react-grid-layout.inc.css"})
 
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-grid-layout"
