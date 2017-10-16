@@ -11,7 +11,6 @@ var THREE = {
                         "r": {},
                         "g": {},
                         "b": {},
-                        "constructor": function () {},
                         "isColor": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -55,7 +54,6 @@ var THREE = {
                         "y": {},
                         "z": {},
                         "w": {},
-                        "constructor": function () {},
                         "isVector4": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -83,6 +81,7 @@ var THREE = {
                         "max": function () {},
                         "clamp": function () {},
                         "clampScalar": function () {},
+                        "clampLength": function () {},
                         "floor": function () {},
                         "ceil": function () {},
                         "round": function () {},
@@ -103,10 +102,10 @@ var THREE = {
                         "fromAttribute": function () {}
                     }
                 },
-                "specularMap": {
+                "alphaMap": {
                     "value": function () {}
                 },
-                "alphaMap": {
+                "specularMap": {
                     "value": function () {}
                 },
                 "envMap": {
@@ -147,7 +146,6 @@ var THREE = {
                         "r": {},
                         "g": {},
                         "b": {},
-                        "constructor": function () {},
                         "isColor": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -190,7 +188,6 @@ var THREE = {
                         "r": {},
                         "g": {},
                         "b": {},
-                        "constructor": function () {},
                         "isColor": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -234,7 +231,6 @@ var THREE = {
                         "y": {},
                         "z": {},
                         "w": {},
-                        "constructor": function () {},
                         "isVector4": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -262,6 +258,7 @@ var THREE = {
                         "max": function () {},
                         "clamp": function () {},
                         "clampScalar": function () {},
+                        "clampLength": function () {},
                         "floor": function () {},
                         "ceil": function () {},
                         "round": function () {},
@@ -282,10 +279,10 @@ var THREE = {
                         "fromAttribute": function () {}
                     }
                 },
-                "specularMap": {
+                "alphaMap": {
                     "value": function () {}
                 },
-                "alphaMap": {
+                "specularMap": {
                     "value": function () {}
                 },
                 "envMap": {
@@ -329,7 +326,6 @@ var THREE = {
                         "r": {},
                         "g": {},
                         "b": {},
-                        "constructor": function () {},
                         "isColor": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -413,7 +409,9 @@ var THREE = {
                         "shadow": function () {},
                         "shadowBias": function () {},
                         "shadowRadius": function () {},
-                        "shadowMapSize": function () {}
+                        "shadowMapSize": function () {},
+                        "shadowCameraNear": function () {},
+                        "shadowCameraFar": function () {}
                     }
                 },
                 "pointShadowMap": {
@@ -444,7 +442,6 @@ var THREE = {
                         "r": {},
                         "g": {},
                         "b": {},
-                        "constructor": function () {},
                         "isColor": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -487,7 +484,6 @@ var THREE = {
                         "r": {},
                         "g": {},
                         "b": {},
-                        "constructor": function () {},
                         "isColor": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -531,7 +527,6 @@ var THREE = {
                         "y": {},
                         "z": {},
                         "w": {},
-                        "constructor": function () {},
                         "isVector4": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -559,6 +554,7 @@ var THREE = {
                         "max": function () {},
                         "clamp": function () {},
                         "clampScalar": function () {},
+                        "clampLength": function () {},
                         "floor": function () {},
                         "ceil": function () {},
                         "round": function () {},
@@ -579,10 +575,10 @@ var THREE = {
                         "fromAttribute": function () {}
                     }
                 },
-                "specularMap": {
+                "alphaMap": {
                     "value": function () {}
                 },
-                "alphaMap": {
+                "specularMap": {
                     "value": function () {}
                 },
                 "envMap": {
@@ -625,10 +621,7 @@ var THREE = {
                     "value": {
                         "x": {},
                         "y": {},
-                        "constructor": function () {},
                         "isVector2": {},
-                        "width": {},
-                        "height": {},
                         "set": function () {},
                         "setScalar": function () {},
                         "setX": function () {},
@@ -704,7 +697,6 @@ var THREE = {
                         "r": {},
                         "g": {},
                         "b": {},
-                        "constructor": function () {},
                         "isColor": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -788,7 +780,9 @@ var THREE = {
                         "shadow": function () {},
                         "shadowBias": function () {},
                         "shadowRadius": function () {},
-                        "shadowMapSize": function () {}
+                        "shadowMapSize": function () {},
+                        "shadowCameraNear": function () {},
+                        "shadowCameraFar": function () {}
                     }
                 },
                 "pointShadowMap": {
@@ -819,7 +813,6 @@ var THREE = {
                         "r": {},
                         "g": {},
                         "b": {},
-                        "constructor": function () {},
                         "isColor": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -856,7 +849,6 @@ var THREE = {
                         "r": {},
                         "g": {},
                         "b": {},
-                        "constructor": function () {},
                         "isColor": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -902,7 +894,6 @@ var THREE = {
                         "r": {},
                         "g": {},
                         "b": {},
-                        "constructor": function () {},
                         "isColor": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -946,7 +937,6 @@ var THREE = {
                         "y": {},
                         "z": {},
                         "w": {},
-                        "constructor": function () {},
                         "isVector4": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -974,6 +964,7 @@ var THREE = {
                         "max": function () {},
                         "clamp": function () {},
                         "clampScalar": function () {},
+                        "clampLength": function () {},
                         "floor": function () {},
                         "ceil": function () {},
                         "round": function () {},
@@ -993,9 +984,6 @@ var THREE = {
                         "fromBufferAttribute": function () {},
                         "fromAttribute": function () {}
                     }
-                },
-                "specularMap": {
-                    "value": function () {}
                 },
                 "alphaMap": {
                     "value": function () {}
@@ -1040,10 +1028,7 @@ var THREE = {
                     "value": {
                         "x": {},
                         "y": {},
-                        "constructor": function () {},
                         "isVector2": {},
-                        "width": {},
-                        "height": {},
                         "set": function () {},
                         "setScalar": function () {},
                         "setX": function () {},
@@ -1122,7 +1107,6 @@ var THREE = {
                         "r": {},
                         "g": {},
                         "b": {},
-                        "constructor": function () {},
                         "isColor": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -1206,7 +1190,9 @@ var THREE = {
                         "shadow": function () {},
                         "shadowBias": function () {},
                         "shadowRadius": function () {},
-                        "shadowMapSize": function () {}
+                        "shadowMapSize": function () {},
+                        "shadowCameraNear": function () {},
+                        "shadowCameraFar": function () {}
                     }
                 },
                 "pointShadowMap": {
@@ -1237,7 +1223,6 @@ var THREE = {
                         "r": {},
                         "g": {},
                         "b": {},
-                        "constructor": function () {},
                         "isColor": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -1289,7 +1274,6 @@ var THREE = {
                         "r": {},
                         "g": {},
                         "b": {},
-                        "constructor": function () {},
                         "isColor": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -1339,7 +1323,6 @@ var THREE = {
                         "y": {},
                         "z": {},
                         "w": {},
-                        "constructor": function () {},
                         "isVector4": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -1367,6 +1350,7 @@ var THREE = {
                         "max": function () {},
                         "clamp": function () {},
                         "clampScalar": function () {},
+                        "clampLength": function () {},
                         "floor": function () {},
                         "ceil": function () {},
                         "round": function () {},
@@ -1401,7 +1385,6 @@ var THREE = {
                         "r": {},
                         "g": {},
                         "b": {},
-                        "constructor": function () {},
                         "isColor": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -1444,7 +1427,6 @@ var THREE = {
                         "r": {},
                         "g": {},
                         "b": {},
-                        "constructor": function () {},
                         "isColor": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -1488,7 +1470,6 @@ var THREE = {
                         "y": {},
                         "z": {},
                         "w": {},
-                        "constructor": function () {},
                         "isVector4": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -1516,6 +1497,7 @@ var THREE = {
                         "max": function () {},
                         "clamp": function () {},
                         "clampScalar": function () {},
+                        "clampLength": function () {},
                         "floor": function () {},
                         "ceil": function () {},
                         "round": function () {},
@@ -1536,23 +1518,8 @@ var THREE = {
                         "fromAttribute": function () {}
                     }
                 },
-                "specularMap": {
-                    "value": function () {}
-                },
                 "alphaMap": {
                     "value": function () {}
-                },
-                "envMap": {
-                    "value": function () {}
-                },
-                "flipEnvMap": {
-                    "value": {}
-                },
-                "reflectivity": {
-                    "value": {}
-                },
-                "refractionRatio": {
-                    "value": {}
                 },
                 "fogDensity": {
                     "value": {}
@@ -1568,7 +1535,6 @@ var THREE = {
                         "r": {},
                         "g": {},
                         "b": {},
-                        "constructor": function () {},
                         "isColor": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -1620,7 +1586,6 @@ var THREE = {
                         "r": {},
                         "g": {},
                         "b": {},
-                        "constructor": function () {},
                         "isColor": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -1664,7 +1629,6 @@ var THREE = {
                         "y": {},
                         "z": {},
                         "w": {},
-                        "constructor": function () {},
                         "isVector4": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -1692,6 +1656,7 @@ var THREE = {
                         "max": function () {},
                         "clamp": function () {},
                         "clampScalar": function () {},
+                        "clampLength": function () {},
                         "floor": function () {},
                         "ceil": function () {},
                         "round": function () {},
@@ -1712,23 +1677,8 @@ var THREE = {
                         "fromAttribute": function () {}
                     }
                 },
-                "specularMap": {
-                    "value": function () {}
-                },
                 "alphaMap": {
                     "value": function () {}
-                },
-                "envMap": {
-                    "value": function () {}
-                },
-                "flipEnvMap": {
-                    "value": {}
-                },
-                "reflectivity": {
-                    "value": {}
-                },
-                "refractionRatio": {
-                    "value": {}
                 },
                 "displacementMap": {
                     "value": function () {}
@@ -1750,7 +1700,6 @@ var THREE = {
                         "r": {},
                         "g": {},
                         "b": {},
-                        "constructor": function () {},
                         "isColor": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -1794,7 +1743,6 @@ var THREE = {
                         "y": {},
                         "z": {},
                         "w": {},
-                        "constructor": function () {},
                         "isVector4": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -1822,6 +1770,7 @@ var THREE = {
                         "max": function () {},
                         "clamp": function () {},
                         "clampScalar": function () {},
+                        "clampLength": function () {},
                         "floor": function () {},
                         "ceil": function () {},
                         "round": function () {},
@@ -1842,23 +1791,8 @@ var THREE = {
                         "fromAttribute": function () {}
                     }
                 },
-                "specularMap": {
-                    "value": function () {}
-                },
                 "alphaMap": {
                     "value": function () {}
-                },
-                "envMap": {
-                    "value": function () {}
-                },
-                "flipEnvMap": {
-                    "value": {}
-                },
-                "reflectivity": {
-                    "value": {}
-                },
-                "refractionRatio": {
-                    "value": {}
                 },
                 "bumpMap": {
                     "value": function () {}
@@ -1873,10 +1807,7 @@ var THREE = {
                     "value": {
                         "x": {},
                         "y": {},
-                        "constructor": function () {},
                         "isVector2": {},
-                        "width": {},
-                        "height": {},
                         "set": function () {},
                         "setScalar": function () {},
                         "setX": function () {},
@@ -1958,9 +1889,6 @@ var THREE = {
             "uniforms": {
                 "tEquirect": {
                     "value": function () {}
-                },
-                "tFlip": {
-                    "value": {}
                 }
             },
             "vertexShader": {},
@@ -1968,12 +1896,119 @@ var THREE = {
         },
         "distanceRGBA": {
             "uniforms": {
-                "lightPos": {
+                "diffuse": {
+                    "value": {
+                        "r": {},
+                        "g": {},
+                        "b": {},
+                        "isColor": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setHex": function () {},
+                        "setRGB": function () {},
+                        "setHSL": function () {},
+                        "setStyle": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "copyGammaToLinear": function () {},
+                        "copyLinearToGamma": function () {},
+                        "convertGammaToLinear": function () {},
+                        "convertLinearToGamma": function () {},
+                        "getHex": function () {},
+                        "getHexString": function () {},
+                        "getHSL": function () {},
+                        "getStyle": function () {},
+                        "offsetHSL": function () {},
+                        "add": function () {},
+                        "addColors": function () {},
+                        "addScalar": function () {},
+                        "sub": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "lerp": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "toJSON": function () {}
+                    }
+                },
+                "opacity": {
+                    "value": {}
+                },
+                "map": {
+                    "value": function () {}
+                },
+                "offsetRepeat": {
                     "value": {
                         "x": {},
                         "y": {},
                         "z": {},
-                        "constructor": function () {},
+                        "w": {},
+                        "isVector4": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setX": function () {},
+                        "setY": function () {},
+                        "setZ": function () {},
+                        "setW": function () {},
+                        "setComponent": function () {},
+                        "getComponent": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "add": function () {},
+                        "addScalar": function () {},
+                        "addVectors": function () {},
+                        "addScaledVector": function () {},
+                        "sub": function () {},
+                        "subScalar": function () {},
+                        "subVectors": function () {},
+                        "multiplyScalar": function () {},
+                        "applyMatrix4": function () {},
+                        "divideScalar": function () {},
+                        "setAxisAngleFromQuaternion": function () {},
+                        "setAxisAngleFromRotationMatrix": function () {},
+                        "min": function () {},
+                        "max": function () {},
+                        "clamp": function () {},
+                        "clampScalar": function () {},
+                        "clampLength": function () {},
+                        "floor": function () {},
+                        "ceil": function () {},
+                        "round": function () {},
+                        "roundToZero": function () {},
+                        "negate": function () {},
+                        "dot": function () {},
+                        "lengthSq": function () {},
+                        "length": function () {},
+                        "lengthManhattan": function () {},
+                        "normalize": function () {},
+                        "setLength": function () {},
+                        "lerp": function () {},
+                        "lerpVectors": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "fromBufferAttribute": function () {},
+                        "fromAttribute": function () {}
+                    }
+                },
+                "alphaMap": {
+                    "value": function () {}
+                },
+                "displacementMap": {
+                    "value": function () {}
+                },
+                "displacementScale": {
+                    "value": {}
+                },
+                "displacementBias": {
+                    "value": {}
+                },
+                "referencePosition": {
+                    "value": {
+                        "x": {},
+                        "y": {},
+                        "z": {},
                         "isVector3": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -2048,6 +2083,137 @@ var THREE = {
                         "applyProjection": function () {},
                         "fromAttribute": function () {}
                     }
+                },
+                "nearDistance": {
+                    "value": {}
+                },
+                "farDistance": {
+                    "value": {}
+                }
+            },
+            "vertexShader": {},
+            "fragmentShader": {}
+        },
+        "shadow": {
+            "uniforms": {
+                "ambientLightColor": {
+                    "value": function () {}
+                },
+                "directionalLights": {
+                    "value": function () {},
+                    "properties": {
+                        "direction": function () {},
+                        "color": function () {},
+                        "shadow": function () {},
+                        "shadowBias": function () {},
+                        "shadowRadius": function () {},
+                        "shadowMapSize": function () {}
+                    }
+                },
+                "directionalShadowMap": {
+                    "value": function () {}
+                },
+                "directionalShadowMatrix": {
+                    "value": function () {}
+                },
+                "spotLights": {
+                    "value": function () {},
+                    "properties": {
+                        "color": function () {},
+                        "position": function () {},
+                        "direction": function () {},
+                        "distance": function () {},
+                        "coneCos": function () {},
+                        "penumbraCos": function () {},
+                        "decay": function () {},
+                        "shadow": function () {},
+                        "shadowBias": function () {},
+                        "shadowRadius": function () {},
+                        "shadowMapSize": function () {}
+                    }
+                },
+                "spotShadowMap": {
+                    "value": function () {}
+                },
+                "spotShadowMatrix": {
+                    "value": function () {}
+                },
+                "pointLights": {
+                    "value": function () {},
+                    "properties": {
+                        "color": function () {},
+                        "position": function () {},
+                        "decay": function () {},
+                        "distance": function () {},
+                        "shadow": function () {},
+                        "shadowBias": function () {},
+                        "shadowRadius": function () {},
+                        "shadowMapSize": function () {},
+                        "shadowCameraNear": function () {},
+                        "shadowCameraFar": function () {}
+                    }
+                },
+                "pointShadowMap": {
+                    "value": function () {}
+                },
+                "pointShadowMatrix": {
+                    "value": function () {}
+                },
+                "hemisphereLights": {
+                    "value": function () {},
+                    "properties": {
+                        "direction": function () {},
+                        "skyColor": function () {},
+                        "groundColor": function () {}
+                    }
+                },
+                "rectAreaLights": {
+                    "value": function () {},
+                    "properties": {
+                        "color": function () {},
+                        "position": function () {},
+                        "width": function () {},
+                        "height": function () {}
+                    }
+                },
+                "color": {
+                    "value": {
+                        "r": {},
+                        "g": {},
+                        "b": {},
+                        "isColor": {},
+                        "set": function () {},
+                        "setScalar": function () {},
+                        "setHex": function () {},
+                        "setRGB": function () {},
+                        "setHSL": function () {},
+                        "setStyle": function () {},
+                        "clone": function () {},
+                        "copy": function () {},
+                        "copyGammaToLinear": function () {},
+                        "copyLinearToGamma": function () {},
+                        "convertGammaToLinear": function () {},
+                        "convertLinearToGamma": function () {},
+                        "getHex": function () {},
+                        "getHexString": function () {},
+                        "getHSL": function () {},
+                        "getStyle": function () {},
+                        "offsetHSL": function () {},
+                        "add": function () {},
+                        "addColors": function () {},
+                        "addScalar": function () {},
+                        "sub": function () {},
+                        "multiply": function () {},
+                        "multiplyScalar": function () {},
+                        "lerp": function () {},
+                        "equals": function () {},
+                        "fromArray": function () {},
+                        "toArray": function () {},
+                        "toJSON": function () {}
+                    }
+                },
+                "opacity": {
+                    "value": {}
                 }
             },
             "vertexShader": {},
@@ -2060,7 +2226,6 @@ var THREE = {
                         "r": {},
                         "g": {},
                         "b": {},
-                        "constructor": function () {},
                         "isColor": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -2104,7 +2269,6 @@ var THREE = {
                         "y": {},
                         "z": {},
                         "w": {},
-                        "constructor": function () {},
                         "isVector4": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -2132,6 +2296,7 @@ var THREE = {
                         "max": function () {},
                         "clamp": function () {},
                         "clampScalar": function () {},
+                        "clampLength": function () {},
                         "floor": function () {},
                         "ceil": function () {},
                         "round": function () {},
@@ -2151,9 +2316,6 @@ var THREE = {
                         "fromBufferAttribute": function () {},
                         "fromAttribute": function () {}
                     }
-                },
-                "specularMap": {
-                    "value": function () {}
                 },
                 "alphaMap": {
                     "value": function () {}
@@ -2198,10 +2360,7 @@ var THREE = {
                     "value": {
                         "x": {},
                         "y": {},
-                        "constructor": function () {},
                         "isVector2": {},
-                        "width": {},
-                        "height": {},
                         "set": function () {},
                         "setScalar": function () {},
                         "setX": function () {},
@@ -2280,7 +2439,6 @@ var THREE = {
                         "r": {},
                         "g": {},
                         "b": {},
-                        "constructor": function () {},
                         "isColor": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -2364,7 +2522,9 @@ var THREE = {
                         "shadow": function () {},
                         "shadowBias": function () {},
                         "shadowRadius": function () {},
-                        "shadowMapSize": function () {}
+                        "shadowMapSize": function () {},
+                        "shadowCameraNear": function () {},
+                        "shadowCameraFar": function () {}
                     }
                 },
                 "pointShadowMap": {
@@ -2395,7 +2555,6 @@ var THREE = {
                         "r": {},
                         "g": {},
                         "b": {},
-                        "constructor": function () {},
                         "isColor": {},
                         "set": function () {},
                         "setScalar": function () {},
@@ -2454,7 +2613,6 @@ var THREE = {
                     "r": {},
                     "g": {},
                     "b": {},
-                    "constructor": function () {},
                     "isColor": {},
                     "set": function () {},
                     "setScalar": function () {},
@@ -2498,7 +2656,6 @@ var THREE = {
                     "y": {},
                     "z": {},
                     "w": {},
-                    "constructor": function () {},
                     "isVector4": {},
                     "set": function () {},
                     "setScalar": function () {},
@@ -2526,6 +2683,7 @@ var THREE = {
                     "max": function () {},
                     "clamp": function () {},
                     "clampScalar": function () {},
+                    "clampLength": function () {},
                     "floor": function () {},
                     "ceil": function () {},
                     "round": function () {},
@@ -2546,12 +2704,16 @@ var THREE = {
                     "fromAttribute": function () {}
                 }
             },
-            "specularMap": {
-                "value": function () {}
-            },
             "alphaMap": {
                 "value": function () {}
-            },
+            }
+        },
+        "specularmap": {
+            "specularMap": {
+                "value": function () {}
+            }
+        },
+        "envmap": {
             "envMap": {
                 "value": function () {}
             },
@@ -2602,10 +2764,7 @@ var THREE = {
                 "value": {
                     "x": {},
                     "y": {},
-                    "constructor": function () {},
                     "isVector2": {},
-                    "width": {},
-                    "height": {},
                     "set": function () {},
                     "setScalar": function () {},
                     "setX": function () {},
@@ -2697,7 +2856,6 @@ var THREE = {
                     "r": {},
                     "g": {},
                     "b": {},
-                    "constructor": function () {},
                     "isColor": {},
                     "set": function () {},
                     "setScalar": function () {},
@@ -2783,7 +2941,9 @@ var THREE = {
                     "shadow": function () {},
                     "shadowBias": function () {},
                     "shadowRadius": function () {},
-                    "shadowMapSize": function () {}
+                    "shadowMapSize": function () {},
+                    "shadowCameraNear": function () {},
+                    "shadowCameraFar": function () {}
                 }
             },
             "pointShadowMap": {
@@ -2816,7 +2976,6 @@ var THREE = {
                     "r": {},
                     "g": {},
                     "b": {},
-                    "constructor": function () {},
                     "isColor": {},
                     "set": function () {},
                     "setScalar": function () {},
@@ -2866,7 +3025,6 @@ var THREE = {
                     "y": {},
                     "z": {},
                     "w": {},
-                    "constructor": function () {},
                     "isVector4": {},
                     "set": function () {},
                     "setScalar": function () {},
@@ -2894,6 +3052,7 @@ var THREE = {
                     "max": function () {},
                     "clamp": function () {},
                     "clampScalar": function () {},
+                    "clampLength": function () {},
                     "floor": function () {},
                     "ceil": function () {},
                     "round": function () {},
@@ -2978,12 +3137,13 @@ var THREE = {
         "morphnormal_vertex": {},
         "morphtarget_pars_vertex": {},
         "morphtarget_vertex": {},
-        "normal_flip": {},
         "normal_fragment": {},
         "normalmap_pars_fragment": {},
         "packing": {},
         "premultiplied_alpha_fragment": {},
         "project_vertex": {},
+        "dithering_fragment": {},
+        "dithering_pars_fragment": {},
         "roughnessmap_fragment": {},
         "roughnessmap_pars_fragment": {},
         "shadowmap_pars_fragment": {},
@@ -3041,6 +3201,7 @@ var THREE = {
     "Bone": function () {},
     "Mesh": function () {},
     "LineSegments": function () {},
+    "LineLoop": function () {},
     "Line": function () {},
     "Points": function () {},
     "Group": function () {},
@@ -3096,6 +3257,7 @@ var THREE = {
     "PerspectiveCamera": function () {},
     "OrthographicCamera": function () {},
     "CubeCamera": function () {},
+    "ArrayCamera": function () {},
     "Camera": function () {},
     "AudioListener": function () {},
     "PositionalAudio": function () {},
@@ -3183,7 +3345,6 @@ var THREE = {
     "Vector2": function () {},
     "Quaternion": function () {},
     "Color": function () {},
-    "MorphBlendMesh": function () {},
     "ImmediateRenderObject": function () {},
     "VertexNormalsHelper": function () {},
     "SpotLightHelper": function () {},
@@ -3197,6 +3358,8 @@ var THREE = {
     "DirectionalLightHelper": function () {},
     "CameraHelper": function () {},
     "BoxHelper": function () {},
+    "Box3Helper": function () {},
+    "PlaneHelper": function () {},
     "ArrowHelper": function () {},
     "AxisHelper": function () {},
     "CatmullRomCurve3": function () {},
@@ -3226,6 +3389,7 @@ var THREE = {
         "detach": function () {},
         "attach": function () {}
     },
+    "WebGLUtils": function () {},
     "WireframeGeometry": function () {},
     "ParametricGeometry": function () {},
     "ParametricBufferGeometry": function () {},
@@ -3246,6 +3410,7 @@ var THREE = {
     "TorusGeometry": function () {},
     "TorusBufferGeometry": function () {},
     "TextGeometry": function () {},
+    "TextBufferGeometry": function () {},
     "SphereGeometry": function () {},
     "SphereBufferGeometry": function () {},
     "RingGeometry": function () {},
@@ -3257,6 +3422,7 @@ var THREE = {
     "ShapeGeometry": function () {},
     "ShapeBufferGeometry": function () {},
     "ExtrudeGeometry": function () {},
+    "ExtrudeBufferGeometry": function () {},
     "EdgesGeometry": function () {},
     "ConeGeometry": function () {},
     "ConeBufferGeometry": function () {},
@@ -3271,7 +3437,6 @@ var THREE = {
     "RawShaderMaterial": function () {},
     "ShaderMaterial": function () {},
     "PointsMaterial": function () {},
-    "MultiMaterial": function () {},
     "MeshPhysicalMaterial": function () {},
     "MeshStandardMaterial": function () {},
     "MeshPhongMaterial": function () {},
@@ -3279,6 +3444,7 @@ var THREE = {
     "MeshNormalMaterial": function () {},
     "MeshLambertMaterial": function () {},
     "MeshDepthMaterial": function () {},
+    "MeshDistanceMaterial": function () {},
     "MeshBasicMaterial": function () {},
     "LineDashedMaterial": function () {},
     "LineBasicMaterial": function () {},
@@ -3427,6 +3593,7 @@ var THREE = {
     "LineStrip": {},
     "LinePieces": {},
     "MeshFaceMaterial": function () {},
+    "MultiMaterial": function () {},
     "PointCloud": function () {},
     "Particle": function () {},
     "ParticleSystem": function () {},

@@ -1,10 +1,10 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.7.1"  :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "4.5.4")
+(def +lib-version+ "4.5.6")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,9 +18,9 @@
 (deftask package []
   (comp
     (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/pixi.js/" +lib-version+ "/pixi.min.js")
-              :checksum "785816E01164DF2E3CA8F7C24458DD13")
+              :checksum "679EED97A4B93060B158DBC7C550AECE")
     (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/pixi.js/" +lib-version+ "/pixi.js")
-              :checksum "1A8B56921957914E83A72F3AC466C665")
+              :checksum "7BA787E500A65F875D5DE657FC3CDDA5")
     (sift :move {#"pixi\.js$" "cljsjs/pixi/development/pixi.inc.js"
                  #"pixi\.min\.js$" "cljsjs/pixi/development/pixi.min.inc.js"})
     (sift :include #{#"^cljsjs"})

@@ -503,7 +503,6 @@ var PIXI = {
       "fillText": function () {},
       "filter": {},
       "font": {},
-      "getContextAttributes": function () {},
       "getImageData": function () {},
       "getLineDash": function () {},
       "globalAlpha": {},
@@ -2081,6 +2080,7 @@ PIXI.CanvasRenderer.prototype = {
   "eventNames": function () {},
   "generateTexture": function () {},
   "initPlugins": function () {},
+  "invalidateBlendMode": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
@@ -3029,6 +3029,7 @@ PIXI.WebGLRenderer.__plugins.mesh.prototype = {
   "stop": function () {}
 };
 PIXI.WebGLRenderer.__plugins.particle.prototype = {
+  "_generateOneMoreBuffer": function () {},
   "destroy": function () {},
   "flush": function () {},
   "generateBuffers": function () {},
@@ -3036,9 +3037,9 @@ PIXI.WebGLRenderer.__plugins.particle.prototype = {
   "render": function () {},
   "start": function () {},
   "stop": function () {},
-  "uploadAlpha": function () {},
   "uploadPosition": function () {},
   "uploadRotation": function () {},
+  "uploadTint": function () {},
   "uploadUvs": function () {},
   "uploadVertices": function () {}
 };
@@ -4061,6 +4062,7 @@ PIXI.particles.ParticleContainer.EventEmitter.prototype = {
   "setMaxListeners": function () {}
 };
 PIXI.particles.ParticleRenderer.prototype = {
+  "_generateOneMoreBuffer": function () {},
   "destroy": function () {},
   "flush": function () {},
   "generateBuffers": function () {},
@@ -4068,9 +4070,9 @@ PIXI.particles.ParticleRenderer.prototype = {
   "render": function () {},
   "start": function () {},
   "stop": function () {},
-  "uploadAlpha": function () {},
   "uploadPosition": function () {},
   "uploadRotation": function () {},
+  "uploadTint": function () {},
   "uploadUvs": function () {},
   "uploadVertices": function () {}
 };
@@ -4140,4 +4142,3 @@ PIXI.utils.EventEmitter.prototype = {
 /**********************************************************************
  * End Generated Extern for PIXI
 /**********************************************************************/
-

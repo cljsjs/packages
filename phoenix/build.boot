@@ -1,10 +1,10 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.7.1" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.2.0")
+(def +lib-version+ "1.3.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,7 +18,7 @@
 (deftask package []
   (comp
    (download :url (str "https://github.com/phoenixframework/phoenix/archive/v" +lib-version+ ".zip")
-             :checksum "D007D87B6160DD73E2AE097A5FC8C8E8"
+             :checksum "D47A5872A9FBFCE084FE7571A09B9AAD"
              :unzip true)
    (sift :move {#"^phoenix-.*/priv/static/phoenix\.js" "cljsjs/phoenix/development/phoenix.inc.js"})
 

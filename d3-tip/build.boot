@@ -1,12 +1,12 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/d3 "3.5.16-0"]
-                 [cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
+ :dependencies '[[cljsjs/d3 "4.3.0-5"]
+                 [cljsjs/boot-cljsjs "0.7.1" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.6.7")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "0.7.1")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/d3-tip
@@ -19,7 +19,7 @@
 (deftask package []
   (comp
    (download :url (str "https://github.com/Caged/d3-tip/archive/v" +lib-version+ ".zip")
-             :checksum "e14ed8733950f6c7a188757b7e117fac"
+             :checksum "23B59FD16A8AC2CFDC7EDACEAD5A005C"
              :unzip true)
    (sift :move {#"^d3-tip-.*/index.js" "cljsjs/d3-tip/development/d3-tip.inc.js"})
    (minify :in "cljsjs/d3-tip/development/d3-tip.inc.js"

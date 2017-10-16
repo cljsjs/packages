@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/optiscroll "2.0.0-0"] ;; latest release
+[cljsjs/optiscroll "2.0.0-1"] ;; latest release
 ```
 [](/dependency)
 

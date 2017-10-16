@@ -1,12 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.8.1" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "4.2.0")
+(def +lib-version+ "4.4.0")
 (def +version+ (str +lib-version+ "-0"))
-(def +checksum+ "549bae42c4d5ea59ef31b0d0e541fdc7")
 
 (task-options!
  pom  {:project     'cljsjs/firebase
@@ -19,7 +18,6 @@
 (deftask package []
   (comp
    (download :url (str "http://registry.npmjs.org/firebase/-/firebase-" +lib-version+ ".tgz")
-             :checksum +checksum+
              :decompress true
              :compression-format "gz"
              :archive-format "tar")
@@ -29,4 +27,5 @@
          :include #{#"^cljsjs"
                     #"^deps.cljs"})
    (pom)
-   (jar)))
+   (jar)
+   (validate-checksums)))

@@ -44,6 +44,7 @@ var Highcharts = {
   "SVG_NS": {},
   "Scrollbar": function () {},
   "Series": function () {},
+  "StackItem": function () {},
   "StockChart": function () {},
   "Tick": function () {},
   "Tooltip": function () {},
@@ -2092,7 +2093,6 @@ Highcharts.Legend.prototype = {
   "update": function () {}
 };
 Highcharts.Navigator.prototype = {
-  "addBaseSeries": function () {},
   "addBaseSeriesEvents": function () {},
   "addChartEvents": function () {},
   "addMouseEvents": function () {},
@@ -2116,6 +2116,7 @@ Highcharts.Navigator.prototype = {
   "setBaseSeries": function () {},
   "shadesMousedown": function () {},
   "update": function () {},
+  "updateNavigatorSeries": function () {},
   "updatedDataHandler": function () {}
 };
 Highcharts.PlotLineOrBand.prototype = {
@@ -2150,10 +2151,10 @@ Highcharts.Pointer.prototype = {
   "drag": function () {},
   "dragStart": function () {},
   "drop": function () {},
+  "findNearestKDPoint": function () {},
   "getChartCoordinatesFromPoint": function () {},
   "getCoordinates": function () {},
   "getHoverData": function () {},
-  "getKDPoints": function () {},
   "getPointFromEvent": function () {},
   "inClass": function () {},
   "init": function () {},
@@ -2415,6 +2416,12 @@ Highcharts.Series.prototype = {
   "update": function () {},
   "updateParallelArrays": function () {}
 };
+Highcharts.StackItem.prototype = {
+  "destroy": function () {},
+  "getStackBox": function () {},
+  "render": function () {},
+  "setOffset": function () {}
+};
 Highcharts.Tick.prototype = {
   "addLabel": function () {},
   "destroy": function () {},
@@ -2583,7 +2590,6 @@ Highcharts.seriesTypes.areaspline.prototype = {
   "setData": function () {},
   "setOptions": function () {},
   "setPercentStacks": function () {},
-  "setStackCliffs": function () {},
   "setStackedPoints": function () {},
   "setState": function () {},
   "setVisible": function () {},

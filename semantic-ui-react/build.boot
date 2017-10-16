@@ -1,6 +1,6 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.7.1" :scope "test"]
                   [cljsjs/react "15.0.0-0"]
                   [cljsjs/react-dom "15.0.0-0"]])
 
@@ -10,7 +10,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "0.71.0")
+(def +lib-version+ "0.73.0")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "semantic-ui-react-%s" +lib-version+))
 
@@ -26,7 +26,7 @@
 
 (deftask download-semantic-ui-react []
   (download :url      url
-            :checksum "8462E312FE38B411A90FC766536C10B1"))
+            :checksum "9E9E08E4706D90F2977F7F2B5A083126"))
 
 (deftask package []
   (comp

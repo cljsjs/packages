@@ -1,97 +1,104 @@
 // generated with http://www.dotnetwise.com/Code/Externs/
 // to regenerate from the tool:
-// first include react.js
-// then https://rawgit.com/rackt/react-router/master/dist/react-router.js
+// load latest react: https://unpkg.com/react@15.6.1/dist/react.min.js
+// load latest react-router: https://unpkg.com/react-router@2.6.1/umd/ReactRouter.js
+// enter `ReactRouter` as javascript object
 
 var ReactRouter = {
-    "DefaultRoute": function () {},
+    "__esModule": {},
+    "Router": function () {},
     "Link": function () {},
-    "NotFoundRoute": function () {},
+    "IndexLink": function () {},
+    "withRouter": function () {},
+    "IndexRedirect": function () {},
+    "IndexRoute": function () {},
     "Redirect": function () {},
     "Route": function () {},
-    "RouteHandler": function () {},
-    "HashLocation": {
-        "addChangeListener": function () {},
-        "removeChangeListener": function () {},
-        "push": function () {},
-        "replace": function () {},
-        "pop": function () {},
-        "getCurrentPath": function () {},
-        "toString": function () {}
-    },
-    "HistoryLocation": {
-        "addChangeListener": function () {},
-        "removeChangeListener": function () {},
-        "push": function () {},
-        "replace": function () {},
-        "pop": function () {},
-        "getCurrentPath": function () {},
-        "toString": function () {}
-    },
-    "RefreshLocation": {
-        "push": function () {},
-        "replace": function () {},
-        "pop": function () {},
-        "getCurrentPath": function () {},
-        "toString": function () {}
-    },
-    "ImitateBrowserBehavior": {
-        "updateScrollPosition": function () {}
-    },
-    "ScrollToTopBehavior": {
-        "updateScrollPosition": function () {}
-    },
     "History": {
-        "length": {},
-        "back": function () {}
-    },
-    "Navigation": {
         "contextTypes": {
-            "makePath": function () {},
-            "makeHref": function () {},
-            "transitionTo": function () {},
-            "replaceWith": function () {},
-            "goBack": function () {}
+            "history": function () {}
         },
-        "makePath": function () {},
-        "makeHref": function () {},
-        "transitionTo": function () {},
-        "replaceWith": function () {},
-        "goBack": function () {}
+        "componentWillMount": function () {}
     },
-    "RouteHandlerMixin": {
+    "Lifecycle": {
         "contextTypes": {
-            "getRouteAtDepth": function () {},
-            "setRouteComponentAtDepth": function () {},
-            "routeHandlers": function () {}
+            "history": function () {},
+            "route": function () {}
+        },
+        "propTypes": {
+            "route": function () {}
+        },
+        "componentDidMount": function () {},
+        "componentWillUnmount": function () {}
+    },
+    "RouteContext": {
+        "propTypes": {
+            "route": function () {}
         },
         "childContextTypes": {
-            "routeHandlers": function () {}
+            "route": function () {}
         },
         "getChildContext": function () {},
-        "componentDidMount": function () {},
-        "componentDidUpdate": function () {},
-        "componentWillUnmount": function () {},
-        "_updateRouteComponent": function () {},
-        "getRouteDepth": function () {},
-        "createChildRouteHandler": function () {}
+        "componentWillMount": function () {}
     },
-    "State": {
-        "contextTypes": {
-            "getCurrentPath": function () {},
-            "getCurrentRoutes": function () {},
-            "getCurrentPathname": function () {},
-            "getCurrentParams": function () {},
-            "getCurrentQuery": function () {},
-            "isActive": function () {}
-        },
-        "getPath": function () {},
-        "getRoutes": function () {},
-        "getPathname": function () {},
-        "getParams": function () {},
-        "getQuery": function () {},
-        "isActive": function () {}
+    "useRoutes": function () {},
+    "createRoutes": function () {},
+    "RouterContext": function () {},
+    "RoutingContext": function () {},
+    "PropTypes": {
+        "falsy": function () {},
+        "history": function () {},
+        "location": function () {},
+        "component": function () {},
+        "components": function () {},
+        "route": function () {},
+        "router": function () {}
     },
-    "create": function () {},
-    "run": function () {}
-}
+    "locationShape": function () {},
+    "routerShape": function () {},
+    "match": function () {},
+    "useRouterHistory": function () {},
+    "formatPattern": function () {},
+    "applyRouterMiddleware": function () {},
+    "browserHistory": {
+        "listenBefore": function () {},
+        "listen": function () {},
+        "transitionTo": function () {},
+        "push": function () {},
+        "replace": function () {},
+        "go": function () {},
+        "goBack": function () {},
+        "goForward": function () {},
+        "createKey": function () {},
+        "createPath": function () {},
+        "createHref": function () {},
+        "createLocation": function () {},
+        "setState": function () {},
+        "registerTransitionHook": function () {},
+        "unregisterTransitionHook": function () {},
+        "pushState": function () {},
+        "replaceState": function () {},
+        "__v2_compatible__": {}
+    },
+    "hashHistory": {
+        "listenBefore": function () {},
+        "listen": function () {},
+        "transitionTo": function () {},
+        "push": function () {},
+        "replace": function () {},
+        "go": function () {},
+        "goBack": function () {},
+        "goForward": function () {},
+        "createKey": function () {},
+        "createPath": function () {},
+        "createHref": function () {},
+        "createLocation": function () {},
+        "setState": function () {},
+        "registerTransitionHook": function () {},
+        "unregisterTransitionHook": function () {},
+        "pushState": function () {},
+        "replaceState": function () {},
+        "__v2_compatible__": {}
+    },
+    "createMemoryHistory": function () {}
+};

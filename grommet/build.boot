@@ -1,13 +1,13 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[adzerk/bootlaces "0.1.11" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.5.2" :scope "test"]
+                  [cljsjs/boot-cljsjs "0.7.1" :scope "test"]
                   [cljsjs/react "15.6.1-0"]
                   [cljsjs/react-dom "15.6.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.6.0")
+(def +lib-version+ "1.7.0")
 (def +version+ (str +lib-version+ "-0"))
 
 
@@ -21,7 +21,7 @@
 
 (deftask download-grommet []
   (download :url      (format "https://github.com/grommet/grommet-bower/archive/v%s.zip" +lib-version+)
-            :checksum "D5541BCEE647E26E1802EC10DB5BDC58" ;;MD5
+            :checksum "72AA63EA883449A8E6A2D899E0240F70" ;;MD5
             :unzip    true))
 
 (deftask package []
