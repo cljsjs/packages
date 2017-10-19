@@ -10,7 +10,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "9.10.1")
+(def +lib-version+ "9.11.1")
 (def +version+ (str +lib-version+ "-1"))
 
 (task-options!
@@ -39,7 +39,7 @@
 (deftask package []
          (comp
           (download :url (str "https://github.com/bvaughn/react-virtualized/archive/" +lib-version+ ".zip")
-                    :checksum "E7822DD87EA8D502A5F7C69C11170FFF"
+                    :checksum "732D9982CDB0EA63DCF93B52243C261C"
                     :unzip true)
           (build-react-virtualized)
           (sift :move {#"^react-virtualized-(.*)/dist/umd/react-virtualized.js$" "cljsjs/react-virtualized/development/react-virtualized.inc.js"
