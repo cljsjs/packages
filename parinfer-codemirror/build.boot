@@ -1,12 +1,13 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.8.1" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.8.1" :scope "test"]
+                  [cljsjs/codemirror "5.31.0-0"]])
 
 (require '[boot.task-helpers]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "1.4.1")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
   push {:ensure-clean false}
@@ -27,7 +28,9 @@
 
     (sift :include #{#"^cljsjs"})
 
-    (deps-cljs :name "cljsjs.parinfer-codemirror")
+    (deps-cljs :provides ["parinfer-codemirror" "cljsjs.parinfer-codemirror"]
+               :requires ["codemirror"]
+               :global-exports '{parinfer-codemirror parinferCodeMirror})
     (validate-checksums)
     (pom)
     (jar)))
