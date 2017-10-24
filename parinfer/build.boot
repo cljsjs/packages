@@ -5,7 +5,7 @@
 (require '[boot.task-helpers]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.0.0")
+(def +lib-version+ "3.11.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -27,7 +27,7 @@
     (download :url (format
                      "https://github.com/shaunlebron/parinfer/releases/download/%s/parinfer.js"
                      +lib-version+)
-              :checksum "CA083A01C29455CDF553A34A5F4E504E")
+              :checksum "A4B53FF5E37FDF57B9B4B2652D6C0C3C")
 
     (sift :move {#"^parinfer\.js"
                  "cljsjs/parinfer/development/parinfer.inc.js"})
