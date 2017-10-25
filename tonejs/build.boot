@@ -4,7 +4,7 @@
 
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.7.1"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.8.1"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.task.built-in :refer :all])

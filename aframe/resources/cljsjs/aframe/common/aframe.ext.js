@@ -90,6 +90,7 @@ var AFRAME = {
       "sortedArray": function () {}
     },
     "ArcCurve": function () {},
+    "ArrayCamera": function () {},
     "ArrowHelper": function () {},
     "Audio": function () {},
     "AudioAnalyser": function () {},
@@ -202,6 +203,7 @@ var AFRAME = {
       "RotationOrders": {}
     },
     "EventDispatcher": function () {},
+    "ExtrudeBufferGeometry": function () {},
     "ExtrudeGeometry": {
       "WorldUVGenerator": {
         "generateSideWallUV": function () {},
@@ -227,18 +229,7 @@ var AFRAME = {
     "FrontFaceDirectionCW": {},
     "FrontSide": {},
     "Frustum": function () {},
-    "GLTFLoader": {
-      "Animations": {
-        "update": function () {}
-      },
-      "Shaders": {
-        "add": function () {},
-        "get": function () {},
-        "remove": function () {},
-        "removeAll": function () {},
-        "update": function () {}
-      }
-    },
+    "GLTFLoader": function () {},
     "GammaEncoding": {},
     "Geometry": function () {},
     "GeometryIdCount": function () {},
@@ -301,6 +292,7 @@ var AFRAME = {
     "LineCurve": function () {},
     "LineCurve3": function () {},
     "LineDashedMaterial": function () {},
+    "LineLoop": function () {},
     "LinePieces": {},
     "LineSegments": function () {},
     "LineStrip": {},
@@ -404,7 +396,6 @@ var AFRAME = {
         "clampLength": function () {},
         "clampScalar": function () {},
         "clone": function () {},
-        "constructor": function () {},
         "copy": function () {},
         "cross": function () {},
         "crossVectors": function () {},
@@ -504,7 +495,8 @@ var AFRAME = {
       "Composite": function () {},
       "create": function () {},
       "findNode": function () {},
-      "parseTrackName": function () {}
+      "parseTrackName": function () {},
+      "sanitizeNodeName": function () {}
     },
     "PropertyMixer": function () {},
     "QuadraticBezierCurve": function () {},
@@ -578,6 +570,8 @@ var AFRAME = {
       "displacementmap_vertex": {},
       "distanceRGBA_frag": {},
       "distanceRGBA_vert": {},
+      "dithering_fragment": {},
+      "dithering_pars_fragment": {},
       "emissivemap_fragment": {},
       "emissivemap_pars_fragment": {},
       "encodings_fragment": {},
@@ -679,7 +673,6 @@ var AFRAME = {
               "addScalar": function () {},
               "b": {},
               "clone": function () {},
-              "constructor": function () {},
               "convertGammaToLinear": function () {},
               "convertLinearToGamma": function () {},
               "copy": function () {},
@@ -722,7 +715,6 @@ var AFRAME = {
               "addScalar": function () {},
               "b": {},
               "clone": function () {},
-              "constructor": function () {},
               "convertGammaToLinear": function () {},
               "convertLinearToGamma": function () {},
               "copy": function () {},
@@ -779,9 +771,9 @@ var AFRAME = {
               "applyMatrix4": function () {},
               "ceil": function () {},
               "clamp": function () {},
+              "clampLength": function () {},
               "clampScalar": function () {},
               "clone": function () {},
-              "constructor": function () {},
               "copy": function () {},
               "divideScalar": function () {},
               "dot": function () {},
@@ -870,7 +862,6 @@ var AFRAME = {
               "addScalar": function () {},
               "b": {},
               "clone": function () {},
-              "constructor": function () {},
               "convertGammaToLinear": function () {},
               "convertLinearToGamma": function () {},
               "copy": function () {},
@@ -913,7 +904,6 @@ var AFRAME = {
               "addScalar": function () {},
               "b": {},
               "clone": function () {},
-              "constructor": function () {},
               "convertGammaToLinear": function () {},
               "convertLinearToGamma": function () {},
               "copy": function () {},
@@ -964,9 +954,9 @@ var AFRAME = {
               "applyMatrix4": function () {},
               "ceil": function () {},
               "clamp": function () {},
+              "clampLength": function () {},
               "clampScalar": function () {},
               "clone": function () {},
-              "constructor": function () {},
               "copy": function () {},
               "divideScalar": function () {},
               "dot": function () {},
@@ -1043,7 +1033,6 @@ var AFRAME = {
               "addScalar": function () {},
               "b": {},
               "clone": function () {},
-              "constructor": function () {},
               "convertGammaToLinear": function () {},
               "convertLinearToGamma": function () {},
               "copy": function () {},
@@ -1100,9 +1089,9 @@ var AFRAME = {
               "applyMatrix4": function () {},
               "ceil": function () {},
               "clamp": function () {},
+              "clampLength": function () {},
               "clampScalar": function () {},
               "clone": function () {},
-              "constructor": function () {},
               "copy": function () {},
               "divideScalar": function () {},
               "dot": function () {},
@@ -1181,7 +1170,6 @@ var AFRAME = {
               "clampLength": function () {},
               "clampScalar": function () {},
               "clone": function () {},
-              "constructor": function () {},
               "copy": function () {},
               "cross": function () {},
               "crossVectors": function () {},
@@ -1281,7 +1269,6 @@ var AFRAME = {
               "addScalar": function () {},
               "b": {},
               "clone": function () {},
-              "constructor": function () {},
               "convertGammaToLinear": function () {},
               "convertLinearToGamma": function () {},
               "copy": function () {},
@@ -1335,7 +1322,6 @@ var AFRAME = {
               "addScalar": function () {},
               "b": {},
               "clone": function () {},
-              "constructor": function () {},
               "convertGammaToLinear": function () {},
               "convertLinearToGamma": function () {},
               "copy": function () {},
@@ -1381,7 +1367,6 @@ var AFRAME = {
               "addScalar": function () {},
               "b": {},
               "clone": function () {},
-              "constructor": function () {},
               "convertGammaToLinear": function () {},
               "convertLinearToGamma": function () {},
               "copy": function () {},
@@ -1446,9 +1431,9 @@ var AFRAME = {
               "applyMatrix4": function () {},
               "ceil": function () {},
               "clamp": function () {},
+              "clampLength": function () {},
               "clampScalar": function () {},
               "clone": function () {},
-              "constructor": function () {},
               "copy": function () {},
               "divideScalar": function () {},
               "dot": function () {},
@@ -1575,7 +1560,6 @@ var AFRAME = {
               "addScalar": function () {},
               "b": {},
               "clone": function () {},
-              "constructor": function () {},
               "convertGammaToLinear": function () {},
               "convertLinearToGamma": function () {},
               "copy": function () {},
@@ -1638,7 +1622,6 @@ var AFRAME = {
               "clampLength": function () {},
               "clampScalar": function () {},
               "clone": function () {},
-              "constructor": function () {},
               "copy": function () {},
               "distanceTo": function () {},
               "distanceToManhattan": function () {},
@@ -1652,7 +1635,6 @@ var AFRAME = {
               "fromAttribute": function () {},
               "fromBufferAttribute": function () {},
               "getComponent": function () {},
-              "height": {},
               "isVector2": {},
               "length": function () {},
               "lengthManhattan": function () {},
@@ -1678,7 +1660,6 @@ var AFRAME = {
               "subScalar": function () {},
               "subVectors": function () {},
               "toArray": function () {},
-              "width": {},
               "x": {},
               "y": {}
             }
@@ -1692,9 +1673,9 @@ var AFRAME = {
               "applyMatrix4": function () {},
               "ceil": function () {},
               "clamp": function () {},
+              "clampLength": function () {},
               "clampScalar": function () {},
               "clone": function () {},
-              "constructor": function () {},
               "copy": function () {},
               "divideScalar": function () {},
               "dot": function () {},
@@ -1780,7 +1761,6 @@ var AFRAME = {
               "addScalar": function () {},
               "b": {},
               "clone": function () {},
-              "constructor": function () {},
               "convertGammaToLinear": function () {},
               "convertLinearToGamma": function () {},
               "copy": function () {},
@@ -1843,7 +1823,6 @@ var AFRAME = {
               "addScalar": function () {},
               "b": {},
               "clone": function () {},
-              "constructor": function () {},
               "convertGammaToLinear": function () {},
               "convertLinearToGamma": function () {},
               "copy": function () {},
@@ -1889,7 +1868,6 @@ var AFRAME = {
               "addScalar": function () {},
               "b": {},
               "clone": function () {},
-              "constructor": function () {},
               "convertGammaToLinear": function () {},
               "convertLinearToGamma": function () {},
               "copy": function () {},
@@ -1963,7 +1941,6 @@ var AFRAME = {
               "clampLength": function () {},
               "clampScalar": function () {},
               "clone": function () {},
-              "constructor": function () {},
               "copy": function () {},
               "distanceTo": function () {},
               "distanceToManhattan": function () {},
@@ -1977,7 +1954,6 @@ var AFRAME = {
               "fromAttribute": function () {},
               "fromBufferAttribute": function () {},
               "getComponent": function () {},
-              "height": {},
               "isVector2": {},
               "length": function () {},
               "lengthManhattan": function () {},
@@ -2003,7 +1979,6 @@ var AFRAME = {
               "subScalar": function () {},
               "subVectors": function () {},
               "toArray": function () {},
-              "width": {},
               "x": {},
               "y": {}
             }
@@ -2017,9 +1992,9 @@ var AFRAME = {
               "applyMatrix4": function () {},
               "ceil": function () {},
               "clamp": function () {},
+              "clampLength": function () {},
               "clampScalar": function () {},
               "clone": function () {},
-              "constructor": function () {},
               "copy": function () {},
               "divideScalar": function () {},
               "dot": function () {},
@@ -2109,7 +2084,6 @@ var AFRAME = {
               "addScalar": function () {},
               "b": {},
               "clone": function () {},
-              "constructor": function () {},
               "convertGammaToLinear": function () {},
               "convertLinearToGamma": function () {},
               "copy": function () {},
@@ -2201,7 +2175,6 @@ var AFRAME = {
               "addScalar": function () {},
               "b": {},
               "clone": function () {},
-              "constructor": function () {},
               "convertGammaToLinear": function () {},
               "convertLinearToGamma": function () {},
               "copy": function () {},
@@ -2264,7 +2237,6 @@ var AFRAME = {
               "addScalar": function () {},
               "b": {},
               "clone": function () {},
-              "constructor": function () {},
               "convertGammaToLinear": function () {},
               "convertLinearToGamma": function () {},
               "copy": function () {},
@@ -2313,7 +2285,6 @@ var AFRAME = {
               "addScalar": function () {},
               "b": {},
               "clone": function () {},
-              "constructor": function () {},
               "convertGammaToLinear": function () {},
               "convertLinearToGamma": function () {},
               "copy": function () {},
@@ -2390,7 +2361,6 @@ var AFRAME = {
               "clampLength": function () {},
               "clampScalar": function () {},
               "clone": function () {},
-              "constructor": function () {},
               "copy": function () {},
               "distanceTo": function () {},
               "distanceToManhattan": function () {},
@@ -2404,7 +2374,6 @@ var AFRAME = {
               "fromAttribute": function () {},
               "fromBufferAttribute": function () {},
               "getComponent": function () {},
-              "height": {},
               "isVector2": {},
               "length": function () {},
               "lengthManhattan": function () {},
@@ -2430,7 +2399,6 @@ var AFRAME = {
               "subScalar": function () {},
               "subVectors": function () {},
               "toArray": function () {},
-              "width": {},
               "x": {},
               "y": {}
             }
@@ -2444,9 +2412,9 @@ var AFRAME = {
               "applyMatrix4": function () {},
               "ceil": function () {},
               "clamp": function () {},
+              "clampLength": function () {},
               "clampScalar": function () {},
               "clone": function () {},
-              "constructor": function () {},
               "copy": function () {},
               "divideScalar": function () {},
               "dot": function () {},
@@ -2570,7 +2538,6 @@ var AFRAME = {
               "addScalar": function () {},
               "b": {},
               "clone": function () {},
-              "constructor": function () {},
               "convertGammaToLinear": function () {},
               "convertLinearToGamma": function () {},
               "copy": function () {},
@@ -2607,7 +2574,6 @@ var AFRAME = {
               "addScalar": function () {},
               "b": {},
               "clone": function () {},
-              "constructor": function () {},
               "convertGammaToLinear": function () {},
               "convertLinearToGamma": function () {},
               "copy": function () {},
@@ -2658,9 +2624,9 @@ var AFRAME = {
               "applyMatrix4": function () {},
               "ceil": function () {},
               "clamp": function () {},
+              "clampLength": function () {},
               "clampScalar": function () {},
               "clone": function () {},
-              "constructor": function () {},
               "copy": function () {},
               "divideScalar": function () {},
               "dot": function () {},
@@ -2743,7 +2709,6 @@ var AFRAME = {
               "addScalar": function () {},
               "b": {},
               "clone": function () {},
-              "constructor": function () {},
               "convertGammaToLinear": function () {},
               "convertLinearToGamma": function () {},
               "copy": function () {},
@@ -2806,7 +2771,6 @@ var AFRAME = {
               "addScalar": function () {},
               "b": {},
               "clone": function () {},
-              "constructor": function () {},
               "convertGammaToLinear": function () {},
               "convertLinearToGamma": function () {},
               "copy": function () {},
@@ -2855,7 +2819,6 @@ var AFRAME = {
               "addScalar": function () {},
               "b": {},
               "clone": function () {},
-              "constructor": function () {},
               "convertGammaToLinear": function () {},
               "convertLinearToGamma": function () {},
               "copy": function () {},
@@ -2932,7 +2895,6 @@ var AFRAME = {
               "clampLength": function () {},
               "clampScalar": function () {},
               "clone": function () {},
-              "constructor": function () {},
               "copy": function () {},
               "distanceTo": function () {},
               "distanceToManhattan": function () {},
@@ -2946,7 +2908,6 @@ var AFRAME = {
               "fromAttribute": function () {},
               "fromBufferAttribute": function () {},
               "getComponent": function () {},
-              "height": {},
               "isVector2": {},
               "length": function () {},
               "lengthManhattan": function () {},
@@ -2972,7 +2933,6 @@ var AFRAME = {
               "subScalar": function () {},
               "subVectors": function () {},
               "toArray": function () {},
-              "width": {},
               "x": {},
               "y": {}
             }
@@ -2986,9 +2946,9 @@ var AFRAME = {
               "applyMatrix4": function () {},
               "ceil": function () {},
               "clamp": function () {},
+              "clampLength": function () {},
               "clampScalar": function () {},
               "clone": function () {},
-              "constructor": function () {},
               "copy": function () {},
               "divideScalar": function () {},
               "dot": function () {},
@@ -3142,6 +3102,7 @@ var AFRAME = {
     "SubtractiveBlending": {},
     "TetrahedronBufferGeometry": function () {},
     "TetrahedronGeometry": function () {},
+    "TextBufferGeometry": function () {},
     "TextGeometry": function () {},
     "Texture": {
       "DEFAULT_IMAGE": {},
@@ -3201,7 +3162,6 @@ var AFRAME = {
             "addScalar": function () {},
             "b": {},
             "clone": function () {},
-            "constructor": function () {},
             "convertGammaToLinear": function () {},
             "convertLinearToGamma": function () {},
             "copy": function () {},
@@ -3249,9 +3209,9 @@ var AFRAME = {
             "applyMatrix4": function () {},
             "ceil": function () {},
             "clamp": function () {},
+            "clampLength": function () {},
             "clampScalar": function () {},
             "clone": function () {},
-            "constructor": function () {},
             "copy": function () {},
             "divideScalar": function () {},
             "dot": function () {},
@@ -3331,7 +3291,6 @@ var AFRAME = {
             "addScalar": function () {},
             "b": {},
             "clone": function () {},
-            "constructor": function () {},
             "convertGammaToLinear": function () {},
             "convertLinearToGamma": function () {},
             "copy": function () {},
@@ -3485,7 +3444,6 @@ var AFRAME = {
             "clampLength": function () {},
             "clampScalar": function () {},
             "clone": function () {},
-            "constructor": function () {},
             "copy": function () {},
             "distanceTo": function () {},
             "distanceToManhattan": function () {},
@@ -3499,7 +3457,6 @@ var AFRAME = {
             "fromAttribute": function () {},
             "fromBufferAttribute": function () {},
             "getComponent": function () {},
-            "height": {},
             "isVector2": {},
             "length": function () {},
             "lengthManhattan": function () {},
@@ -3525,7 +3482,6 @@ var AFRAME = {
             "subScalar": function () {},
             "subVectors": function () {},
             "toArray": function () {},
-            "width": {},
             "x": {},
             "y": {}
           }
@@ -3539,7 +3495,6 @@ var AFRAME = {
             "addScalar": function () {},
             "b": {},
             "clone": function () {},
-            "constructor": function () {},
             "convertGammaToLinear": function () {},
             "convertLinearToGamma": function () {},
             "copy": function () {},
@@ -3581,9 +3536,9 @@ var AFRAME = {
             "applyMatrix4": function () {},
             "ceil": function () {},
             "clamp": function () {},
+            "clampLength": function () {},
             "clampScalar": function () {},
             "clone": function () {},
-            "constructor": function () {},
             "copy": function () {},
             "divideScalar": function () {},
             "dot": function () {},
@@ -3800,17 +3755,6 @@ var AFRAME = {
           "type": {}
         }
       },
-      "stringify": function () {},
-      "type": {}
-    },
-    "canvas": {
-      "Component": function () {},
-      "dependencies": {},
-      "isSingleProp": {},
-      "multiple": {},
-      "parse": function () {},
-      "parseAttrValueForCache": function () {},
-      "schema": {},
       "stringify": function () {},
       "type": {}
     },
@@ -4535,6 +4479,12 @@ var AFRAME = {
           "parse": function () {},
           "stringify": function () {},
           "type": {}
+        },
+        "touchEnabled": {
+          "default": {},
+          "parse": function () {},
+          "stringify": function () {},
+          "type": {}
         }
       },
       "stringify": function () {},
@@ -4622,6 +4572,13 @@ var AFRAME = {
         },
         "transparent": {
           "default": {},
+          "parse": function () {},
+          "stringify": function () {},
+          "type": {}
+        },
+        "vertexColors": {
+          "default": {},
+          "oneOf": {},
           "parse": function () {},
           "stringify": function () {},
           "type": {}
@@ -5121,98 +5078,98 @@ var AFRAME = {
                 "color": {
                   "default": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "fog": {
                   "default": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "height": {
                   "default": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "offset": {
                   "default": {
-                    "closure_uid_829403874": {},
+                    "closure_uid_114739238": {},
                     "x": {},
                     "y": {}
                   },
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "repeat": {
                   "default": {
-                    "closure_uid_829403874": {},
+                    "closure_uid_114739238": {},
                     "x": {},
                     "y": {}
                   },
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "src": {
                   "default": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "width": {
                   "default": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "wireframe": {
                   "default": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "wireframeLinewidth": {
                   "default": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 }
@@ -5225,10 +5182,10 @@ var AFRAME = {
                   "default": {},
                   "is": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
@@ -5236,10 +5193,10 @@ var AFRAME = {
                   "default": {},
                   "is": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 }
@@ -5252,10 +5209,10 @@ var AFRAME = {
                   "default": {},
                   "is": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
@@ -5263,10 +5220,10 @@ var AFRAME = {
                   "default": {},
                   "is": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
@@ -5274,10 +5231,10 @@ var AFRAME = {
                   "default": {},
                   "is": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
@@ -5285,10 +5242,10 @@ var AFRAME = {
                   "default": {},
                   "is": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 }
@@ -5301,10 +5258,10 @@ var AFRAME = {
                   "default": {},
                   "is": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
@@ -5312,10 +5269,10 @@ var AFRAME = {
                   "default": {},
                   "is": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
@@ -5323,10 +5280,10 @@ var AFRAME = {
                   "default": {},
                   "is": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 }
@@ -5339,10 +5296,10 @@ var AFRAME = {
                   "default": {},
                   "is": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
@@ -5350,10 +5307,10 @@ var AFRAME = {
                   "default": {},
                   "is": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
@@ -5361,10 +5318,10 @@ var AFRAME = {
                   "default": {},
                   "is": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
@@ -5372,10 +5329,10 @@ var AFRAME = {
                   "default": {},
                   "is": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 }
@@ -5387,146 +5344,166 @@ var AFRAME = {
                 "ambientOcclusionMap": {
                   "default": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "ambientOcclusionMapIntensity": {
                   "default": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "ambientOcclusionTextureOffset": {
                   "default": {
-                    "closure_uid_829403874": {},
+                    "closure_uid_114739238": {},
                     "x": {},
                     "y": {}
                   },
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "ambientOcclusionTextureRepeat": {
                   "default": {
-                    "closure_uid_829403874": {},
+                    "closure_uid_114739238": {},
                     "x": {},
                     "y": {}
                   },
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "color": {
                   "default": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "displacementBias": {
                   "default": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "displacementMap": {
                   "default": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "displacementScale": {
                   "default": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "displacementTextureOffset": {
                   "default": {
-                    "closure_uid_829403874": {},
+                    "closure_uid_114739238": {},
                     "x": {},
                     "y": {}
                   },
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "displacementTextureRepeat": {
                   "default": {
-                    "closure_uid_829403874": {},
+                    "closure_uid_114739238": {},
                     "x": {},
                     "y": {}
                   },
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
+                  },
+                  "type": {}
+                },
+                "emissive": {
+                  "default": {},
+                  "parse": {
+                    "closure_uid_114739238": {}
+                  },
+                  "stringify": {
+                    "closure_uid_114739238": {}
+                  },
+                  "type": {}
+                },
+                "emissiveIntensity": {
+                  "default": {},
+                  "parse": {
+                    "closure_uid_114739238": {}
+                  },
+                  "stringify": {
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "envMap": {
                   "default": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "fog": {
                   "default": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "height": {
                   "default": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
@@ -5535,90 +5512,90 @@ var AFRAME = {
                   "max": {},
                   "min": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "normalMap": {
                   "default": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "normalScale": {
                   "default": {
-                    "closure_uid_829403874": {},
+                    "closure_uid_114739238": {},
                     "x": {},
                     "y": {}
                   },
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "normalTextureOffset": {
                   "default": {
-                    "closure_uid_829403874": {},
+                    "closure_uid_114739238": {},
                     "x": {},
                     "y": {}
                   },
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "normalTextureRepeat": {
                   "default": {
-                    "closure_uid_829403874": {},
+                    "closure_uid_114739238": {},
                     "x": {},
                     "y": {}
                   },
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "offset": {
                   "default": {
-                    "closure_uid_829403874": {},
+                    "closure_uid_114739238": {},
                     "x": {},
                     "y": {}
                   },
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "repeat": {
                   "default": {
-                    "closure_uid_829403874": {},
+                    "closure_uid_114739238": {},
                     "x": {},
                     "y": {}
                   },
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
@@ -5627,60 +5604,60 @@ var AFRAME = {
                   "max": {},
                   "min": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "sphericalEnvMap": {
                   "default": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "src": {
                   "default": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "width": {
                   "default": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "wireframe": {
                   "default": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 },
                 "wireframeLinewidth": {
                   "default": {},
                   "parse": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "stringify": {
-                    "closure_uid_829403874": {}
+                    "closure_uid_114739238": {}
                   },
                   "type": {}
                 }
@@ -5688,10 +5665,10 @@ var AFRAME = {
             }
           },
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -5699,40 +5676,40 @@ var AFRAME = {
           "default": {},
           "oneOf": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "tabSize": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "transparent": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "value": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -5740,60 +5717,60 @@ var AFRAME = {
           "default": {},
           "oneOf": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "width": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "wrapCount": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "wrapPixels": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "yOffset": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "zOffset": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -5812,20 +5789,30 @@ var AFRAME = {
         "armModel": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "controller": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
+          },
+          "type": {}
+        },
+        "hand": {
+          "default": {},
+          "parse": {
+            "closure_uid_114739238": {}
+          },
+          "stringify": {
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -5838,30 +5825,30 @@ var AFRAME = {
         "id": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "idPrefix": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "rotationOffset": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -5879,10 +5866,10 @@ var AFRAME = {
       "schema": {
         "default": {},
         "parse": {
-          "closure_uid_829403874": {}
+          "closure_uid_114739238": {}
         },
         "stringify": {
-          "closure_uid_829403874": {}
+          "closure_uid_114739238": {}
         },
         "type": {}
       },
@@ -5900,50 +5887,50 @@ var AFRAME = {
         "buttonColor": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "buttonHighlightColor": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "hand": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "model": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "rotationOffset": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -5962,10 +5949,10 @@ var AFRAME = {
         "enabled": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -5984,10 +5971,10 @@ var AFRAME = {
         "acceleration": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -5995,60 +5982,60 @@ var AFRAME = {
           "default": {},
           "oneOf": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "adEnabled": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "adInverted": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "easing": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "enabled": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "fly": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6056,30 +6043,82 @@ var AFRAME = {
           "default": {},
           "oneOf": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "wsEnabled": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "wsInverted": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
+          },
+          "type": {}
+        }
+      },
+      "stringify": function () {},
+      "type": {}
+    },
+    "windows-motion-controls": {
+      "Component": function () {},
+      "dependencies": {},
+      "isSingleProp": {},
+      "multiple": {},
+      "parse": function () {},
+      "parseAttrValueForCache": function () {},
+      "schema": {
+        "hand": {
+          "default": {},
+          "parse": {
+            "closure_uid_114739238": {}
+          },
+          "stringify": {
+            "closure_uid_114739238": {}
+          },
+          "type": {}
+        },
+        "hideDisconnected": {
+          "default": {},
+          "parse": {
+            "closure_uid_114739238": {}
+          },
+          "stringify": {
+            "closure_uid_114739238": {}
+          },
+          "type": {}
+        },
+        "model": {
+          "default": {},
+          "parse": {
+            "closure_uid_114739238": {}
+          },
+          "stringify": {
+            "closure_uid_114739238": {}
+          },
+          "type": {}
+        },
+        "pair": {
+          "default": {},
+          "parse": {
+            "closure_uid_114739238": {}
+          },
+          "stringify": {
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -6096,10 +6135,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6107,10 +6146,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6119,10 +6158,10 @@ var AFRAME = {
           "max": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6131,10 +6170,10 @@ var AFRAME = {
           "max": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6143,10 +6182,10 @@ var AFRAME = {
           "max": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6154,10 +6193,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -6170,10 +6209,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6181,10 +6220,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6192,20 +6231,20 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "thetaStart": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -6218,20 +6257,20 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "openEnded": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6239,10 +6278,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6250,10 +6289,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6261,10 +6300,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6272,10 +6311,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6283,20 +6322,20 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "thetaStart": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -6309,20 +6348,20 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "openEnded": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6330,10 +6369,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6341,10 +6380,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6352,10 +6391,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6363,20 +6402,20 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "thetaStart": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -6390,10 +6429,10 @@ var AFRAME = {
           "max": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6401,10 +6440,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -6418,10 +6457,10 @@ var AFRAME = {
           "max": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6429,10 +6468,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -6446,10 +6485,10 @@ var AFRAME = {
           "max": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6457,10 +6496,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -6473,10 +6512,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6485,10 +6524,10 @@ var AFRAME = {
           "max": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6497,10 +6536,10 @@ var AFRAME = {
           "max": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6508,10 +6547,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -6524,10 +6563,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6535,10 +6574,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6546,10 +6585,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6557,10 +6596,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6568,20 +6607,20 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "thetaStart": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -6593,10 +6632,10 @@ var AFRAME = {
         "phiLength": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6604,10 +6643,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6615,10 +6654,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6626,10 +6665,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6637,10 +6676,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6648,20 +6687,20 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "thetaStart": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -6675,10 +6714,10 @@ var AFRAME = {
           "max": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6686,10 +6725,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -6701,10 +6740,10 @@ var AFRAME = {
         "arc": {
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6712,10 +6751,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6723,10 +6762,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6734,10 +6773,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6745,10 +6784,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -6761,10 +6800,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6772,10 +6811,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6783,10 +6822,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6794,10 +6833,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6805,10 +6844,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6816,10 +6855,10 @@ var AFRAME = {
           "default": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -6835,10 +6874,10 @@ var AFRAME = {
             "z": {}
           },
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6849,10 +6888,10 @@ var AFRAME = {
             "z": {}
           },
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
@@ -6863,10 +6902,10 @@ var AFRAME = {
             "z": {}
           },
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -7455,116 +7494,116 @@ var AFRAME = {
     "stringifyProperty": function () {}
   },
   "shaders": {
-    "closure_uid_829403874": {},
+    "closure_uid_114739238": {},
     "flat": {
       "Shader": function () {},
-      "closure_uid_829403874": {},
+      "closure_uid_114739238": {},
       "schema": {
-        "closure_uid_829403874": {},
+        "closure_uid_114739238": {},
         "color": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "fog": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "height": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "offset": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {
-            "closure_uid_829403874": {},
+            "closure_uid_114739238": {},
             "x": {},
             "y": {}
           },
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "repeat": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {
-            "closure_uid_829403874": {},
+            "closure_uid_114739238": {},
             "x": {},
             "y": {}
           },
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "src": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "width": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "wireframe": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "wireframeLinewidth": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -7572,30 +7611,30 @@ var AFRAME = {
     },
     "ios10hls": {
       "Shader": function () {},
-      "closure_uid_829403874": {},
+      "closure_uid_114739238": {},
       "schema": {
-        "closure_uid_829403874": {},
+        "closure_uid_114739238": {},
         "opacity": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "is": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "src": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "is": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -7603,54 +7642,54 @@ var AFRAME = {
     },
     "msdf": {
       "Shader": function () {},
-      "closure_uid_829403874": {},
+      "closure_uid_114739238": {},
       "schema": {
         "alphaTest": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "is": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
-        "closure_uid_829403874": {},
+        "closure_uid_114739238": {},
         "color": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "is": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "map": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "is": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "opacity": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "is": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -7658,42 +7697,42 @@ var AFRAME = {
     },
     "portal": {
       "Shader": function () {},
-      "closure_uid_829403874": {},
+      "closure_uid_114739238": {},
       "schema": {
         "borderEnabled": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "is": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
-        "closure_uid_829403874": {},
+        "closure_uid_114739238": {},
         "pano": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "is": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "strokeColor": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "is": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -7701,54 +7740,54 @@ var AFRAME = {
     },
     "sdf": {
       "Shader": function () {},
-      "closure_uid_829403874": {},
+      "closure_uid_114739238": {},
       "schema": {
         "alphaTest": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "is": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
-        "closure_uid_829403874": {},
+        "closure_uid_114739238": {},
         "color": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "is": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "map": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "is": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "opacity": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "is": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -7756,332 +7795,354 @@ var AFRAME = {
     },
     "standard": {
       "Shader": function () {},
-      "closure_uid_829403874": {},
+      "closure_uid_114739238": {},
       "schema": {
         "ambientOcclusionMap": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "ambientOcclusionMapIntensity": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "ambientOcclusionTextureOffset": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {
-            "closure_uid_829403874": {},
+            "closure_uid_114739238": {},
             "x": {},
             "y": {}
           },
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "ambientOcclusionTextureRepeat": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {
-            "closure_uid_829403874": {},
+            "closure_uid_114739238": {},
             "x": {},
             "y": {}
           },
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
-        "closure_uid_829403874": {},
+        "closure_uid_114739238": {},
         "color": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "displacementBias": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "displacementMap": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "displacementScale": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "displacementTextureOffset": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {
-            "closure_uid_829403874": {},
+            "closure_uid_114739238": {},
             "x": {},
             "y": {}
           },
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "displacementTextureRepeat": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {
-            "closure_uid_829403874": {},
+            "closure_uid_114739238": {},
             "x": {},
             "y": {}
           },
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
+          },
+          "type": {}
+        },
+        "emissive": {
+          "closure_uid_114739238": {},
+          "default": {},
+          "parse": {
+            "closure_uid_114739238": {}
+          },
+          "stringify": {
+            "closure_uid_114739238": {}
+          },
+          "type": {}
+        },
+        "emissiveIntensity": {
+          "closure_uid_114739238": {},
+          "default": {},
+          "parse": {
+            "closure_uid_114739238": {}
+          },
+          "stringify": {
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "envMap": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "fog": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "height": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "metalness": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "max": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "normalMap": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "normalScale": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {
-            "closure_uid_829403874": {},
+            "closure_uid_114739238": {},
             "x": {},
             "y": {}
           },
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "normalTextureOffset": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {
-            "closure_uid_829403874": {},
+            "closure_uid_114739238": {},
             "x": {},
             "y": {}
           },
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "normalTextureRepeat": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {
-            "closure_uid_829403874": {},
+            "closure_uid_114739238": {},
             "x": {},
             "y": {}
           },
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "offset": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {
-            "closure_uid_829403874": {},
+            "closure_uid_114739238": {},
             "x": {},
             "y": {}
           },
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "repeat": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {
-            "closure_uid_829403874": {},
+            "closure_uid_114739238": {},
             "x": {},
             "y": {}
           },
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "roughness": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "max": {},
           "min": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "sphericalEnvMap": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "src": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "width": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "wireframe": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         },
         "wireframeLinewidth": {
-          "closure_uid_829403874": {},
+          "closure_uid_114739238": {},
           "default": {},
           "parse": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "stringify": {
-            "closure_uid_829403874": {}
+            "closure_uid_114739238": {}
           },
           "type": {}
         }
@@ -8091,7 +8152,6 @@ var AFRAME = {
   "systems": {
     "camera": function () {},
     "geometry": function () {},
-    "gltf-model": function () {},
     "light": function () {},
     "material": function () {},
     "shadow": function () {},
@@ -8107,10 +8167,11 @@ var AFRAME = {
       "parse": function () {},
       "regex": {},
       "stringify": {
-        "closure_uid_829403874": {}
+        "closure_uid_114739238": {}
       },
       "toVector3": function () {}
     },
+    "debounce": function () {},
     "debug": {
       "coerce": function () {},
       "colors": {},
@@ -8186,7 +8247,7 @@ var AFRAME = {
     "trackedControls": {
       "checkControllerPresentAndSetup": function () {},
       "emitIfAxesChanged": function () {},
-      "getGamepadsByPrefix": function () {},
+      "findMatchingController": function () {},
       "isControllerPresent": function () {}
     }
   },
@@ -8196,7 +8257,6 @@ AFRAME.AComponent.prototype = {
   "buildData": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "init": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -8901,6 +8961,7 @@ AFRAME.THREE.AmbientLight.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -8920,6 +8981,8 @@ AFRAME.THREE.AmbientLight.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -8946,7 +9009,6 @@ AFRAME.THREE.AmbientLight.prototype = {
   "worldToLocal": function () {}
 };
 AFRAME.THREE.AnimationClip.prototype = {
-  "constructor": function () {},
   "optimize": function () {},
   "resetDuration": function () {},
   "trim": function () {}
@@ -8971,7 +9033,6 @@ AFRAME.THREE.AnimationMixer.prototype = {
   "_takeBackControlInterpolant": function () {},
   "addEventListener": function () {},
   "clipAction": function () {},
-  "constructor": function () {},
   "dispatchEvent": function () {},
   "existingAction": function () {},
   "getRoot": function () {},
@@ -8985,7 +9046,6 @@ AFRAME.THREE.AnimationMixer.prototype = {
 };
 AFRAME.THREE.AnimationObjectGroup.prototype = {
   "add": function () {},
-  "constructor": function () {},
   "isAnimationObjectGroup": function () {},
   "remove": function () {},
   "subscribe_": function () {},
@@ -9007,10 +9067,72 @@ AFRAME.THREE.ArcCurve.prototype = {
   "isEllipseCurve": function () {},
   "updateArcLengths": function () {}
 };
+AFRAME.THREE.ArrayCamera.prototype = {
+  "add": function () {},
+  "addEventListener": function () {},
+  "applyMatrix": function () {},
+  "applyQuaternion": function () {},
+  "clearViewOffset": function () {},
+  "clone": function () {},
+  "constructor": function () {},
+  "copy": function () {},
+  "dispatchEvent": function () {},
+  "getChildByName": function () {},
+  "getEffectiveFOV": function () {},
+  "getFilmHeight": function () {},
+  "getFilmWidth": function () {},
+  "getFocalLength": function () {},
+  "getObjectById": function () {},
+  "getObjectByName": function () {},
+  "getObjectByProperty": function () {},
+  "getWorldDirection": function () {},
+  "getWorldPosition": function () {},
+  "getWorldQuaternion": function () {},
+  "getWorldRotation": function () {},
+  "getWorldScale": function () {},
+  "hasEventListener": function () {},
+  "isArrayCamera": function () {},
+  "isCamera": function () {},
+  "isObject3D": function () {},
+  "isPerspectiveCamera": function () {},
+  "localToWorld": function () {},
+  "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
+  "raycast": function () {},
+  "remove": function () {},
+  "removeEventListener": function () {},
+  "renderDepth": function () {},
+  "rotateOnAxis": function () {},
+  "rotateX": function () {},
+  "rotateY": function () {},
+  "rotateZ": function () {},
+  "setFocalLength": function () {},
+  "setLens": function () {},
+  "setRotationFromAxisAngle": function () {},
+  "setRotationFromEuler": function () {},
+  "setRotationFromMatrix": function () {},
+  "setRotationFromQuaternion": function () {},
+  "setViewOffset": function () {},
+  "toJSON": function () {},
+  "translate": function () {},
+  "translateOnAxis": function () {},
+  "translateX": function () {},
+  "translateY": function () {},
+  "translateZ": function () {},
+  "traverse": function () {},
+  "traverseAncestors": function () {},
+  "traverseVisible": function () {},
+  "updateMatrix": function () {},
+  "updateMatrixWorld": function () {},
+  "updateProjectionMatrix": function () {},
+  "worldToLocal": function () {}
+};
 AFRAME.THREE.ArrowHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -9028,6 +9150,8 @@ AFRAME.THREE.ArrowHelper.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -9060,6 +9184,7 @@ AFRAME.THREE.Audio.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "connect": function () {},
   "constructor": function () {},
@@ -9086,6 +9211,8 @@ AFRAME.THREE.Audio.prototype = {
   "load": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "onEnded": function () {},
   "pause": function () {},
   "play": function () {},
@@ -9131,6 +9258,7 @@ AFRAME.THREE.AudioListener.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -9151,6 +9279,8 @@ AFRAME.THREE.AudioListener.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -9186,6 +9316,7 @@ AFRAME.THREE.AxisHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -9205,6 +9336,8 @@ AFRAME.THREE.AxisHelper.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -9234,6 +9367,7 @@ AFRAME.THREE.Bone.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -9252,6 +9386,8 @@ AFRAME.THREE.Bone.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -9299,7 +9435,6 @@ AFRAME.THREE.Box2.prototype = {
   "center": function () {},
   "clampPoint": function () {},
   "clone": function () {},
-  "constructor": function () {},
   "containsBox": function () {},
   "containsPoint": function () {},
   "copy": function () {},
@@ -9329,7 +9464,6 @@ AFRAME.THREE.Box3.prototype = {
   "center": function () {},
   "clampPoint": function () {},
   "clone": function () {},
-  "constructor": function () {},
   "containsBox": function () {},
   "containsPoint": function () {},
   "copy": function () {},
@@ -9445,6 +9579,7 @@ AFRAME.THREE.BoxHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -9464,6 +9599,8 @@ AFRAME.THREE.BoxHelper.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -9472,6 +9609,7 @@ AFRAME.THREE.BoxHelper.prototype = {
   "rotateX": function () {},
   "rotateY": function () {},
   "rotateZ": function () {},
+  "setFromObject": function () {},
   "setRotationFromAxisAngle": function () {},
   "setRotationFromEuler": function () {},
   "setRotationFromMatrix": function () {},
@@ -9492,7 +9630,6 @@ AFRAME.THREE.BoxHelper.prototype = {
 };
 AFRAME.THREE.BufferAttribute.prototype = {
   "clone": function () {},
-  "constructor": function () {},
   "copy": function () {},
   "copyArray": function () {},
   "copyAt": function () {},
@@ -9506,7 +9643,6 @@ AFRAME.THREE.BufferAttribute.prototype = {
   "getY": function () {},
   "getZ": function () {},
   "isBufferAttribute": function () {},
-  "needsUpdate": function () {},
   "onUpload": function () {},
   "set": function () {},
   "setArray": function () {},
@@ -9536,7 +9672,6 @@ AFRAME.THREE.BufferGeometry.prototype = {
   "computeOffsets": function () {},
   "computeTangents": function () {},
   "computeVertexNormals": function () {},
-  "constructor": function () {},
   "copy": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
@@ -9571,6 +9706,7 @@ AFRAME.THREE.Camera.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -9589,6 +9725,8 @@ AFRAME.THREE.Camera.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -9618,6 +9756,7 @@ AFRAME.THREE.CameraHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -9637,6 +9776,8 @@ AFRAME.THREE.CameraHelper.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -9672,7 +9813,6 @@ AFRAME.THREE.CanvasTexture.prototype = {
   "dispose": function () {},
   "hasEventListener": function () {},
   "isTexture": function () {},
-  "needsUpdate": function () {},
   "removeEventListener": function () {},
   "toJSON": function () {},
   "transformUv": function () {}
@@ -9770,7 +9910,6 @@ AFRAME.THREE.CircleGeometry.prototype = {
   "translate": function () {}
 };
 AFRAME.THREE.Clock.prototype = {
-  "constructor": function () {},
   "getDelta": function () {},
   "getElapsedTime": function () {},
   "start": function () {},
@@ -9799,7 +9938,6 @@ AFRAME.THREE.Color.prototype = {
   "addScalar": function () {},
   "b": function () {},
   "clone": function () {},
-  "constructor": function () {},
   "convertGammaToLinear": function () {},
   "convertLinearToGamma": function () {},
   "copy": function () {},
@@ -9856,7 +9994,6 @@ AFRAME.THREE.CompressedTexture.prototype = {
   "hasEventListener": function () {},
   "isCompressedTexture": function () {},
   "isTexture": function () {},
-  "needsUpdate": function () {},
   "removeEventListener": function () {},
   "toJSON": function () {},
   "transformUv": function () {}
@@ -9947,6 +10084,7 @@ AFRAME.THREE.CubeCamera.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -9964,6 +10102,8 @@ AFRAME.THREE.CubeCamera.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -10033,7 +10173,6 @@ AFRAME.THREE.CubeTexture.prototype = {
   "hasEventListener": function () {},
   "isCubeTexture": function () {},
   "isTexture": function () {},
-  "needsUpdate": function () {},
   "removeEventListener": function () {},
   "toJSON": function () {},
   "transformUv": function () {}
@@ -10085,7 +10224,6 @@ AFRAME.THREE.CubicInterpolant.prototype = {
 };
 AFRAME.THREE.Curve.prototype = {
   "computeFrenetFrames": function () {},
-  "constructor": function () {},
   "getLength": function () {},
   "getLengths": function () {},
   "getPoint": function () {},
@@ -10197,7 +10335,6 @@ AFRAME.THREE.CylinderGeometry.prototype = {
 };
 AFRAME.THREE.Cylindrical.prototype = {
   "clone": function () {},
-  "constructor": function () {},
   "copy": function () {},
   "set": function () {},
   "setFromVector3": function () {}
@@ -10212,7 +10349,6 @@ AFRAME.THREE.DataTexture.prototype = {
   "hasEventListener": function () {},
   "isDataTexture": function () {},
   "isTexture": function () {},
-  "needsUpdate": function () {},
   "removeEventListener": function () {},
   "toJSON": function () {},
   "transformUv": function () {}
@@ -10230,7 +10366,6 @@ AFRAME.THREE.DepthTexture.prototype = {
   "hasEventListener": function () {},
   "isDepthTexture": function () {},
   "isTexture": function () {},
-  "needsUpdate": function () {},
   "removeEventListener": function () {},
   "toJSON": function () {},
   "transformUv": function () {}
@@ -10239,6 +10374,7 @@ AFRAME.THREE.DirectionalLight.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -10258,6 +10394,8 @@ AFRAME.THREE.DirectionalLight.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -10287,6 +10425,7 @@ AFRAME.THREE.DirectionalLightHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -10305,6 +10444,8 @@ AFRAME.THREE.DirectionalLightHelper.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -10488,24 +10629,19 @@ AFRAME.THREE.EllipseCurve.prototype = {
 };
 AFRAME.THREE.Euler.prototype = {
   "clone": function () {},
-  "constructor": function () {},
   "copy": function () {},
   "equals": function () {},
   "fromArray": function () {},
   "isEuler": function () {},
   "onChange": function () {},
   "onChangeCallback": function () {},
-  "order": function () {},
   "reorder": function () {},
   "set": function () {},
   "setFromQuaternion": function () {},
   "setFromRotationMatrix": function () {},
   "setFromVector3": function () {},
   "toArray": function () {},
-  "toVector3": function () {},
-  "x": function () {},
-  "y": function () {},
-  "z": function () {}
+  "toVector3": function () {}
 };
 AFRAME.THREE.EventDispatcher.prototype = {
   "addEventListener": function () {},
@@ -10513,10 +10649,55 @@ AFRAME.THREE.EventDispatcher.prototype = {
   "hasEventListener": function () {},
   "removeEventListener": function () {}
 };
-AFRAME.THREE.ExtrudeGeometry.prototype = {
+AFRAME.THREE.ExtrudeBufferGeometry.prototype = {
+  "addAttribute": function () {},
+  "addDrawCall": function () {},
   "addEventListener": function () {},
+  "addGroup": function () {},
+  "addIndex": function () {},
   "addShape": function () {},
   "addShapeList": function () {},
+  "applyMatrix": function () {},
+  "center": function () {},
+  "clearDrawCalls": function () {},
+  "clearGroups": function () {},
+  "clone": function () {},
+  "computeBoundingBox": function () {},
+  "computeBoundingSphere": function () {},
+  "computeFaceNormals": function () {},
+  "computeOffsets": function () {},
+  "computeTangents": function () {},
+  "computeVertexNormals": function () {},
+  "constructor": function () {},
+  "copy": function () {},
+  "dispatchEvent": function () {},
+  "dispose": function () {},
+  "fromDirectGeometry": function () {},
+  "fromGeometry": function () {},
+  "getArrays": function () {},
+  "getAttribute": function () {},
+  "getIndex": function () {},
+  "hasEventListener": function () {},
+  "isBufferGeometry": function () {},
+  "lookAt": function () {},
+  "merge": function () {},
+  "normalizeNormals": function () {},
+  "removeAttribute": function () {},
+  "removeEventListener": function () {},
+  "rotateX": function () {},
+  "rotateY": function () {},
+  "rotateZ": function () {},
+  "scale": function () {},
+  "setDrawRange": function () {},
+  "setFromObject": function () {},
+  "setIndex": function () {},
+  "toJSON": function () {},
+  "toNonIndexed": function () {},
+  "translate": function () {},
+  "updateFromObject": function () {}
+};
+AFRAME.THREE.ExtrudeGeometry.prototype = {
+  "addEventListener": function () {},
   "applyMatrix": function () {},
   "center": function () {},
   "clone": function () {},
@@ -10551,13 +10732,13 @@ AFRAME.THREE.ExtrudeGeometry.prototype = {
 };
 AFRAME.THREE.Face3.prototype = {
   "clone": function () {},
-  "constructor": function () {},
   "copy": function () {}
 };
 AFRAME.THREE.FaceNormalsHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -10577,6 +10758,8 @@ AFRAME.THREE.FaceNormalsHelper.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -10607,6 +10790,7 @@ AFRAME.THREE.FileLoader.prototype = {
   "load": function () {},
   "setMimeType": function () {},
   "setPath": function () {},
+  "setRequestHeader": function () {},
   "setResponseType": function () {},
   "setWithCredentials": function () {}
 };
@@ -10626,7 +10810,6 @@ AFRAME.THREE.Float32BufferAttribute.prototype = {
   "getY": function () {},
   "getZ": function () {},
   "isBufferAttribute": function () {},
-  "needsUpdate": function () {},
   "onUpload": function () {},
   "set": function () {},
   "setArray": function () {},
@@ -10655,7 +10838,6 @@ AFRAME.THREE.Float64BufferAttribute.prototype = {
   "getY": function () {},
   "getZ": function () {},
   "isBufferAttribute": function () {},
-  "needsUpdate": function () {},
   "onUpload": function () {},
   "set": function () {},
   "setArray": function () {},
@@ -10688,7 +10870,6 @@ AFRAME.THREE.FontLoader.prototype = {
 };
 AFRAME.THREE.Frustum.prototype = {
   "clone": function () {},
-  "constructor": function () {},
   "containsPoint": function () {},
   "copy": function () {},
   "intersectsBox": function () {},
@@ -10719,7 +10900,6 @@ AFRAME.THREE.Geometry.prototype = {
   "computeMorphNormals": function () {},
   "computeTangents": function () {},
   "computeVertexNormals": function () {},
-  "constructor": function () {},
   "copy": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
@@ -10744,6 +10924,7 @@ AFRAME.THREE.GridHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -10763,6 +10944,8 @@ AFRAME.THREE.GridHelper.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -10793,6 +10976,7 @@ AFRAME.THREE.Group.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -10810,6 +10994,8 @@ AFRAME.THREE.Group.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -10839,6 +11025,7 @@ AFRAME.THREE.HemisphereLight.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -10858,6 +11045,8 @@ AFRAME.THREE.HemisphereLight.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -10887,6 +11076,7 @@ AFRAME.THREE.HemisphereLightHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -10905,6 +11095,8 @@ AFRAME.THREE.HemisphereLightHelper.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -11019,6 +11211,7 @@ AFRAME.THREE.ImmediateRenderObject.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -11037,6 +11230,8 @@ AFRAME.THREE.ImmediateRenderObject.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -11079,7 +11274,6 @@ AFRAME.THREE.InstancedBufferAttribute.prototype = {
   "getZ": function () {},
   "isBufferAttribute": function () {},
   "isInstancedBufferAttribute": function () {},
-  "needsUpdate": function () {},
   "onUpload": function () {},
   "set": function () {},
   "setArray": function () {},
@@ -11144,7 +11338,6 @@ AFRAME.THREE.InstancedInterleavedBuffer.prototype = {
   "copyAt": function () {},
   "isInstancedInterleavedBuffer": function () {},
   "isInterleavedBuffer": function () {},
-  "needsUpdate": function () {},
   "onUpload": function () {},
   "set": function () {},
   "setArray": function () {},
@@ -11166,7 +11359,6 @@ AFRAME.THREE.Int16BufferAttribute.prototype = {
   "getY": function () {},
   "getZ": function () {},
   "isBufferAttribute": function () {},
-  "needsUpdate": function () {},
   "onUpload": function () {},
   "set": function () {},
   "setArray": function () {},
@@ -11195,7 +11387,6 @@ AFRAME.THREE.Int32BufferAttribute.prototype = {
   "getY": function () {},
   "getZ": function () {},
   "isBufferAttribute": function () {},
-  "needsUpdate": function () {},
   "onUpload": function () {},
   "set": function () {},
   "setArray": function () {},
@@ -11224,7 +11415,6 @@ AFRAME.THREE.Int8BufferAttribute.prototype = {
   "getY": function () {},
   "getZ": function () {},
   "isBufferAttribute": function () {},
-  "needsUpdate": function () {},
   "onUpload": function () {},
   "set": function () {},
   "setArray": function () {},
@@ -11239,20 +11429,15 @@ AFRAME.THREE.Int8BufferAttribute.prototype = {
 };
 AFRAME.THREE.InterleavedBuffer.prototype = {
   "clone": function () {},
-  "constructor": function () {},
   "copy": function () {},
   "copyAt": function () {},
   "isInterleavedBuffer": function () {},
-  "needsUpdate": function () {},
   "onUpload": function () {},
   "set": function () {},
   "setArray": function () {},
   "setDynamic": function () {}
 };
 AFRAME.THREE.InterleavedBufferAttribute.prototype = {
-  "array": function () {},
-  "constructor": function () {},
-  "count": function () {},
   "getW": function () {},
   "getX": function () {},
   "getY": function () {},
@@ -11270,7 +11455,6 @@ AFRAME.THREE.Interpolant.prototype = {
   "DefaultSettings_": function () {},
   "afterEnd_": function () {},
   "beforeStart_": function () {},
-  "constructor": function () {},
   "copySampleValue_": function () {},
   "evaluate": function () {},
   "getSettings_": function () {},
@@ -11305,6 +11489,7 @@ AFRAME.THREE.LOD.prototype = {
   "addEventListener": function () {},
   "addLevel": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -11323,6 +11508,8 @@ AFRAME.THREE.LOD.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -11428,7 +11615,6 @@ AFRAME.THREE.LatheGeometry.prototype = {
   "translate": function () {}
 };
 AFRAME.THREE.Layers.prototype = {
-  "constructor": function () {},
   "disable": function () {},
   "enable": function () {},
   "set": function () {},
@@ -11439,6 +11625,7 @@ AFRAME.THREE.LensFlare.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -11457,6 +11644,8 @@ AFRAME.THREE.LensFlare.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -11487,6 +11676,7 @@ AFRAME.THREE.Light.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -11505,6 +11695,8 @@ AFRAME.THREE.Light.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -11539,6 +11731,7 @@ AFRAME.THREE.Line.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -11557,6 +11750,8 @@ AFRAME.THREE.Line.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -11589,7 +11784,6 @@ AFRAME.THREE.Line3.prototype = {
   "clone": function () {},
   "closestPointToPoint": function () {},
   "closestPointToPointParameter": function () {},
-  "constructor": function () {},
   "copy": function () {},
   "delta": function () {},
   "distance": function () {},
@@ -11608,11 +11802,10 @@ AFRAME.THREE.LineBasicMaterial.prototype = {
   "hasEventListener": function () {},
   "isLineBasicMaterial": function () {},
   "isMaterial": function () {},
-  "needsUpdate": function () {},
+  "onBeforeCompile": function () {},
   "removeEventListener": function () {},
   "setValues": function () {},
-  "toJSON": function () {},
-  "update": function () {}
+  "toJSON": function () {}
 };
 AFRAME.THREE.LineCurve.prototype = {
   "computeFrenetFrames": function () {},
@@ -11653,16 +11846,67 @@ AFRAME.THREE.LineDashedMaterial.prototype = {
   "hasEventListener": function () {},
   "isLineDashedMaterial": function () {},
   "isMaterial": function () {},
-  "needsUpdate": function () {},
+  "onBeforeCompile": function () {},
   "removeEventListener": function () {},
   "setValues": function () {},
+  "toJSON": function () {}
+};
+AFRAME.THREE.LineLoop.prototype = {
+  "add": function () {},
+  "addEventListener": function () {},
+  "applyMatrix": function () {},
+  "applyQuaternion": function () {},
+  "clone": function () {},
+  "constructor": function () {},
+  "copy": function () {},
+  "dispatchEvent": function () {},
+  "getChildByName": function () {},
+  "getObjectById": function () {},
+  "getObjectByName": function () {},
+  "getObjectByProperty": function () {},
+  "getWorldDirection": function () {},
+  "getWorldPosition": function () {},
+  "getWorldQuaternion": function () {},
+  "getWorldRotation": function () {},
+  "getWorldScale": function () {},
+  "hasEventListener": function () {},
+  "isLine": function () {},
+  "isLineLoop": function () {},
+  "isObject3D": function () {},
+  "localToWorld": function () {},
+  "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
+  "raycast": function () {},
+  "remove": function () {},
+  "removeEventListener": function () {},
+  "renderDepth": function () {},
+  "rotateOnAxis": function () {},
+  "rotateX": function () {},
+  "rotateY": function () {},
+  "rotateZ": function () {},
+  "setRotationFromAxisAngle": function () {},
+  "setRotationFromEuler": function () {},
+  "setRotationFromMatrix": function () {},
+  "setRotationFromQuaternion": function () {},
   "toJSON": function () {},
-  "update": function () {}
+  "translate": function () {},
+  "translateOnAxis": function () {},
+  "translateX": function () {},
+  "translateY": function () {},
+  "translateZ": function () {},
+  "traverse": function () {},
+  "traverseAncestors": function () {},
+  "traverseVisible": function () {},
+  "updateMatrix": function () {},
+  "updateMatrixWorld": function () {},
+  "worldToLocal": function () {}
 };
 AFRAME.THREE.LineSegments.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -11682,6 +11926,8 @@ AFRAME.THREE.LineSegments.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -11720,7 +11966,6 @@ AFRAME.THREE.LinearInterpolant.prototype = {
   "settings": function () {}
 };
 AFRAME.THREE.Loader.prototype = {
-  "constructor": function () {},
   "createMaterial": function () {},
   "crossOrigin": function () {},
   "extractUrlBase": function () {},
@@ -11742,6 +11987,7 @@ AFRAME.THREE.MTLLoader.MaterialCreator.prototype = {
   "convert": function () {},
   "create": function () {},
   "createMaterial_": function () {},
+  "crossOrigin": function () {},
   "getAsArray": function () {},
   "getIndex": function () {},
   "getTextureParams": function () {},
@@ -11754,17 +12000,15 @@ AFRAME.THREE.MTLLoader.MaterialCreator.prototype = {
 AFRAME.THREE.Material.prototype = {
   "addEventListener": function () {},
   "clone": function () {},
-  "constructor": function () {},
   "copy": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "hasEventListener": function () {},
   "isMaterial": function () {},
-  "needsUpdate": function () {},
+  "onBeforeCompile": function () {},
   "removeEventListener": function () {},
   "setValues": function () {},
-  "toJSON": function () {},
-  "update": function () {}
+  "toJSON": function () {}
 };
 AFRAME.THREE.MaterialLoader.prototype = {
   "load": function () {},
@@ -11776,18 +12020,21 @@ AFRAME.THREE.Matrix3.prototype = {
   "applyToBufferAttribute": function () {},
   "applyToVector3Array": function () {},
   "clone": function () {},
-  "constructor": function () {},
   "copy": function () {},
   "determinant": function () {},
+  "equals": function () {},
   "flattenToArrayOffset": function () {},
   "fromArray": function () {},
   "getInverse": function () {},
   "getNormalMatrix": function () {},
   "identity": function () {},
   "isMatrix3": function () {},
+  "multiply": function () {},
+  "multiplyMatrices": function () {},
   "multiplyScalar": function () {},
   "multiplyVector3": function () {},
   "multiplyVector3Array": function () {},
+  "premultiply": function () {},
   "set": function () {},
   "setFromMatrix4": function () {},
   "toArray": function () {},
@@ -11800,7 +12047,6 @@ AFRAME.THREE.Matrix4.prototype = {
   "applyToVector3Array": function () {},
   "clone": function () {},
   "compose": function () {},
-  "constructor": function () {},
   "copy": function () {},
   "copyPosition": function () {},
   "crossVector": function () {},
@@ -11856,6 +12102,7 @@ AFRAME.THREE.Mesh.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -11874,6 +12121,8 @@ AFRAME.THREE.Mesh.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -11911,11 +12160,10 @@ AFRAME.THREE.MeshBasicMaterial.prototype = {
   "hasEventListener": function () {},
   "isMaterial": function () {},
   "isMeshBasicMaterial": function () {},
-  "needsUpdate": function () {},
+  "onBeforeCompile": function () {},
   "removeEventListener": function () {},
   "setValues": function () {},
-  "toJSON": function () {},
-  "update": function () {}
+  "toJSON": function () {}
 };
 AFRAME.THREE.MeshDepthMaterial.prototype = {
   "addEventListener": function () {},
@@ -11927,11 +12175,10 @@ AFRAME.THREE.MeshDepthMaterial.prototype = {
   "hasEventListener": function () {},
   "isMaterial": function () {},
   "isMeshDepthMaterial": function () {},
-  "needsUpdate": function () {},
+  "onBeforeCompile": function () {},
   "removeEventListener": function () {},
   "setValues": function () {},
-  "toJSON": function () {},
-  "update": function () {}
+  "toJSON": function () {}
 };
 AFRAME.THREE.MeshLambertMaterial.prototype = {
   "addEventListener": function () {},
@@ -11943,11 +12190,10 @@ AFRAME.THREE.MeshLambertMaterial.prototype = {
   "hasEventListener": function () {},
   "isMaterial": function () {},
   "isMeshLambertMaterial": function () {},
-  "needsUpdate": function () {},
+  "onBeforeCompile": function () {},
   "removeEventListener": function () {},
   "setValues": function () {},
-  "toJSON": function () {},
-  "update": function () {}
+  "toJSON": function () {}
 };
 AFRAME.THREE.MeshNormalMaterial.prototype = {
   "addEventListener": function () {},
@@ -11959,11 +12205,10 @@ AFRAME.THREE.MeshNormalMaterial.prototype = {
   "hasEventListener": function () {},
   "isMaterial": function () {},
   "isMeshNormalMaterial": function () {},
-  "needsUpdate": function () {},
+  "onBeforeCompile": function () {},
   "removeEventListener": function () {},
   "setValues": function () {},
-  "toJSON": function () {},
-  "update": function () {}
+  "toJSON": function () {}
 };
 AFRAME.THREE.MeshPhongMaterial.prototype = {
   "addEventListener": function () {},
@@ -11975,11 +12220,10 @@ AFRAME.THREE.MeshPhongMaterial.prototype = {
   "hasEventListener": function () {},
   "isMaterial": function () {},
   "isMeshPhongMaterial": function () {},
-  "needsUpdate": function () {},
+  "onBeforeCompile": function () {},
   "removeEventListener": function () {},
   "setValues": function () {},
-  "toJSON": function () {},
-  "update": function () {}
+  "toJSON": function () {}
 };
 AFRAME.THREE.MeshPhysicalMaterial.prototype = {
   "addEventListener": function () {},
@@ -11992,11 +12236,10 @@ AFRAME.THREE.MeshPhysicalMaterial.prototype = {
   "isMaterial": function () {},
   "isMeshPhysicalMaterial": function () {},
   "isMeshStandardMaterial": function () {},
-  "needsUpdate": function () {},
+  "onBeforeCompile": function () {},
   "removeEventListener": function () {},
   "setValues": function () {},
-  "toJSON": function () {},
-  "update": function () {}
+  "toJSON": function () {}
 };
 AFRAME.THREE.MeshStandardMaterial.prototype = {
   "addEventListener": function () {},
@@ -12008,11 +12251,10 @@ AFRAME.THREE.MeshStandardMaterial.prototype = {
   "hasEventListener": function () {},
   "isMaterial": function () {},
   "isMeshStandardMaterial": function () {},
-  "needsUpdate": function () {},
+  "onBeforeCompile": function () {},
   "removeEventListener": function () {},
   "setValues": function () {},
-  "toJSON": function () {},
-  "update": function () {}
+  "toJSON": function () {}
 };
 AFRAME.THREE.MeshToonMaterial.prototype = {
   "addEventListener": function () {},
@@ -12025,16 +12267,16 @@ AFRAME.THREE.MeshToonMaterial.prototype = {
   "isMaterial": function () {},
   "isMeshPhongMaterial": function () {},
   "isMeshToonMaterial": function () {},
-  "needsUpdate": function () {},
+  "onBeforeCompile": function () {},
   "removeEventListener": function () {},
   "setValues": function () {},
-  "toJSON": function () {},
-  "update": function () {}
+  "toJSON": function () {}
 };
 AFRAME.THREE.MorphBlendMesh.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "autoCreateAnimations": function () {},
   "clone": function () {},
   "constructor": function () {},
@@ -12057,6 +12299,8 @@ AFRAME.THREE.MorphBlendMesh.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "playAnimation": function () {},
   "raycast": function () {},
   "remove": function () {},
@@ -12093,12 +12337,6 @@ AFRAME.THREE.MorphBlendMesh.prototype = {
   "updateMorphTargets": function () {},
   "worldToLocal": function () {}
 };
-AFRAME.THREE.MultiMaterial.prototype = {
-  "clone": function () {},
-  "constructor": function () {},
-  "isMultiMaterial": function () {},
-  "toJSON": function () {}
-};
 AFRAME.THREE.NumberKeyframeTrack.prototype = {
   "DefaultInterpolation": function () {},
   "InterpolantFactoryMethodDiscrete": function () {},
@@ -12118,7 +12356,6 @@ AFRAME.THREE.NumberKeyframeTrack.prototype = {
   "validate": function () {}
 };
 AFRAME.THREE.OBJLoader.prototype = {
-  "_createParserState": function () {},
   "constructor": function () {},
   "crossOrigin": function () {},
   "load": function () {},
@@ -12130,8 +12367,8 @@ AFRAME.THREE.Object3D.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
-  "constructor": function () {},
   "copy": function () {},
   "dispatchEvent": function () {},
   "getChildByName": function () {},
@@ -12147,6 +12384,8 @@ AFRAME.THREE.Object3D.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -12171,82 +12410,6 @@ AFRAME.THREE.Object3D.prototype = {
   "updateMatrix": function () {},
   "updateMatrixWorld": function () {},
   "worldToLocal": function () {}
-};
-AFRAME.THREE.Object3D.DefaultUp.constructor.prototype = {
-  "add": function () {},
-  "addScalar": function () {},
-  "addScaledVector": function () {},
-  "addVectors": function () {},
-  "angleTo": function () {},
-  "applyAxisAngle": function () {},
-  "applyEuler": function () {},
-  "applyMatrix3": function () {},
-  "applyMatrix4": function () {},
-  "applyProjection": function () {},
-  "applyQuaternion": function () {},
-  "ceil": function () {},
-  "clamp": function () {},
-  "clampLength": function () {},
-  "clampScalar": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "copy": function () {},
-  "cross": function () {},
-  "crossVectors": function () {},
-  "distanceTo": function () {},
-  "distanceToManhattan": function () {},
-  "distanceToSquared": function () {},
-  "divide": function () {},
-  "divideScalar": function () {},
-  "dot": function () {},
-  "equals": function () {},
-  "floor": function () {},
-  "fromArray": function () {},
-  "fromAttribute": function () {},
-  "fromBufferAttribute": function () {},
-  "getColumnFromMatrix": function () {},
-  "getComponent": function () {},
-  "getPositionFromMatrix": function () {},
-  "getScaleFromMatrix": function () {},
-  "isVector3": function () {},
-  "length": function () {},
-  "lengthManhattan": function () {},
-  "lengthSq": function () {},
-  "lerp": function () {},
-  "lerpVectors": function () {},
-  "max": function () {},
-  "min": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "multiplyVectors": function () {},
-  "negate": function () {},
-  "normalize": function () {},
-  "project": function () {},
-  "projectOnPlane": function () {},
-  "projectOnVector": function () {},
-  "reflect": function () {},
-  "round": function () {},
-  "roundToZero": function () {},
-  "set": function () {},
-  "setComponent": function () {},
-  "setEulerFromQuaternion": function () {},
-  "setEulerFromRotationMatrix": function () {},
-  "setFromCylindrical": function () {},
-  "setFromMatrixColumn": function () {},
-  "setFromMatrixPosition": function () {},
-  "setFromMatrixScale": function () {},
-  "setFromSpherical": function () {},
-  "setLength": function () {},
-  "setScalar": function () {},
-  "setX": function () {},
-  "setY": function () {},
-  "setZ": function () {},
-  "sub": function () {},
-  "subScalar": function () {},
-  "subVectors": function () {},
-  "toArray": function () {},
-  "transformDirection": function () {},
-  "unproject": function () {}
 };
 AFRAME.THREE.ObjectLoader.prototype = {
   "load": function () {},
@@ -12342,6 +12505,7 @@ AFRAME.THREE.OrthographicCamera.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clearViewOffset": function () {},
   "clone": function () {},
   "constructor": function () {},
@@ -12362,6 +12526,8 @@ AFRAME.THREE.OrthographicCamera.prototype = {
   "isOrthographicCamera": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -12501,6 +12667,7 @@ AFRAME.THREE.PerspectiveCamera.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clearViewOffset": function () {},
   "clone": function () {},
   "constructor": function () {},
@@ -12525,6 +12692,8 @@ AFRAME.THREE.PerspectiveCamera.prototype = {
   "isPerspectiveCamera": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -12557,7 +12726,6 @@ AFRAME.THREE.PerspectiveCamera.prototype = {
 AFRAME.THREE.Plane.prototype = {
   "applyMatrix4": function () {},
   "clone": function () {},
-  "constructor": function () {},
   "coplanarPoint": function () {},
   "copy": function () {},
   "distanceToPoint": function () {},
@@ -12660,6 +12828,7 @@ AFRAME.THREE.PointLight.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -12679,6 +12848,8 @@ AFRAME.THREE.PointLight.prototype = {
   "isPointLight": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -12708,6 +12879,7 @@ AFRAME.THREE.PointLightHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -12727,6 +12899,8 @@ AFRAME.THREE.PointLightHelper.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -12759,6 +12933,7 @@ AFRAME.THREE.Points.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -12777,6 +12952,8 @@ AFRAME.THREE.Points.prototype = {
   "isPoints": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -12812,16 +12989,16 @@ AFRAME.THREE.PointsMaterial.prototype = {
   "hasEventListener": function () {},
   "isMaterial": function () {},
   "isPointsMaterial": function () {},
-  "needsUpdate": function () {},
+  "onBeforeCompile": function () {},
   "removeEventListener": function () {},
   "setValues": function () {},
-  "toJSON": function () {},
-  "update": function () {}
+  "toJSON": function () {}
 };
 AFRAME.THREE.PolarGridHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -12841,6 +13018,8 @@ AFRAME.THREE.PolarGridHelper.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -12948,6 +13127,7 @@ AFRAME.THREE.PositionalAudio.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "connect": function () {},
   "constructor": function () {},
@@ -12978,6 +13158,8 @@ AFRAME.THREE.PositionalAudio.prototype = {
   "load": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "onEnded": function () {},
   "pause": function () {},
   "play": function () {},
@@ -13028,14 +13210,12 @@ AFRAME.THREE.PropertyBinding.prototype = {
   "_setValue_unavailable": function () {},
   "_setValue_unbound": function () {},
   "bind": function () {},
-  "constructor": function () {},
   "getValue": function () {},
   "setValue": function () {},
   "unbind": function () {}
 };
 AFRAME.THREE.PropertyBinding.Composite.prototype = {
   "bind": function () {},
-  "constructor": function () {},
   "getValue": function () {},
   "setValue": function () {},
   "unbind": function () {}
@@ -13046,7 +13226,6 @@ AFRAME.THREE.PropertyMixer.prototype = {
   "_slerp": function () {},
   "accumulate": function () {},
   "apply": function () {},
-  "constructor": function () {},
   "restoreOriginalState": function () {},
   "saveOriginalState": function () {}
 };
@@ -13081,7 +13260,6 @@ AFRAME.THREE.QuadraticBezierCurve3.prototype = {
 AFRAME.THREE.Quaternion.prototype = {
   "clone": function () {},
   "conjugate": function () {},
-  "constructor": function () {},
   "copy": function () {},
   "dot": function () {},
   "equals": function () {},
@@ -13102,11 +13280,7 @@ AFRAME.THREE.Quaternion.prototype = {
   "setFromRotationMatrix": function () {},
   "setFromUnitVectors": function () {},
   "slerp": function () {},
-  "toArray": function () {},
-  "w": function () {},
-  "x": function () {},
-  "y": function () {},
-  "z": function () {}
+  "toArray": function () {}
 };
 AFRAME.THREE.QuaternionKeyframeTrack.prototype = {
   "DefaultInterpolation": function () {},
@@ -13149,18 +13323,16 @@ AFRAME.THREE.RawShaderMaterial.prototype = {
   "isMaterial": function () {},
   "isRawShaderMaterial": function () {},
   "isShaderMaterial": function () {},
-  "needsUpdate": function () {},
+  "onBeforeCompile": function () {},
   "removeEventListener": function () {},
   "setValues": function () {},
-  "toJSON": function () {},
-  "update": function () {}
+  "toJSON": function () {}
 };
 AFRAME.THREE.Ray.prototype = {
   "applyMatrix4": function () {},
   "at": function () {},
   "clone": function () {},
   "closestPointToPoint": function () {},
-  "constructor": function () {},
   "copy": function () {},
   "distanceSqToPoint": function () {},
   "distanceSqToSegment": function () {},
@@ -13182,7 +13354,6 @@ AFRAME.THREE.Ray.prototype = {
   "set": function () {}
 };
 AFRAME.THREE.Raycaster.prototype = {
-  "constructor": function () {},
   "intersectObject": function () {},
   "intersectObjects": function () {},
   "linePrecision": function () {},
@@ -13193,6 +13364,7 @@ AFRAME.THREE.RectAreaLight.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -13212,6 +13384,8 @@ AFRAME.THREE.RectAreaLight.prototype = {
   "isRectAreaLight": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -13241,6 +13415,7 @@ AFRAME.THREE.RectAreaLightHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -13259,6 +13434,8 @@ AFRAME.THREE.RectAreaLightHelper.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -13367,6 +13544,7 @@ AFRAME.THREE.Scene.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -13384,6 +13562,8 @@ AFRAME.THREE.Scene.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -13409,1461 +13589,6 @@ AFRAME.THREE.Scene.prototype = {
   "updateMatrixWorld": function () {},
   "worldToLocal": function () {}
 };
-AFRAME.THREE.ShaderLib.basic.uniforms.diffuse.value.constructor.prototype = {
-  "add": function () {},
-  "addColors": function () {},
-  "addScalar": function () {},
-  "b": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "convertGammaToLinear": function () {},
-  "convertLinearToGamma": function () {},
-  "copy": function () {},
-  "copyGammaToLinear": function () {},
-  "copyLinearToGamma": function () {},
-  "equals": function () {},
-  "fromArray": function () {},
-  "g": function () {},
-  "getHSL": function () {},
-  "getHex": function () {},
-  "getHexString": function () {},
-  "getStyle": function () {},
-  "isColor": function () {},
-  "lerp": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "offsetHSL": function () {},
-  "r": function () {},
-  "set": function () {},
-  "setHSL": function () {},
-  "setHex": function () {},
-  "setRGB": function () {},
-  "setScalar": function () {},
-  "setStyle": function () {},
-  "sub": function () {},
-  "toArray": function () {},
-  "toJSON": function () {}
-};
-AFRAME.THREE.ShaderLib.basic.uniforms.fogColor.value.constructor.prototype = {
-  "add": function () {},
-  "addColors": function () {},
-  "addScalar": function () {},
-  "b": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "convertGammaToLinear": function () {},
-  "convertLinearToGamma": function () {},
-  "copy": function () {},
-  "copyGammaToLinear": function () {},
-  "copyLinearToGamma": function () {},
-  "equals": function () {},
-  "fromArray": function () {},
-  "g": function () {},
-  "getHSL": function () {},
-  "getHex": function () {},
-  "getHexString": function () {},
-  "getStyle": function () {},
-  "isColor": function () {},
-  "lerp": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "offsetHSL": function () {},
-  "r": function () {},
-  "set": function () {},
-  "setHSL": function () {},
-  "setHex": function () {},
-  "setRGB": function () {},
-  "setScalar": function () {},
-  "setStyle": function () {},
-  "sub": function () {},
-  "toArray": function () {},
-  "toJSON": function () {}
-};
-AFRAME.THREE.ShaderLib.basic.uniforms.offsetRepeat.value.constructor.prototype = {
-  "add": function () {},
-  "addScalar": function () {},
-  "addScaledVector": function () {},
-  "addVectors": function () {},
-  "applyMatrix4": function () {},
-  "ceil": function () {},
-  "clamp": function () {},
-  "clampScalar": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "copy": function () {},
-  "divideScalar": function () {},
-  "dot": function () {},
-  "equals": function () {},
-  "floor": function () {},
-  "fromArray": function () {},
-  "fromAttribute": function () {},
-  "fromBufferAttribute": function () {},
-  "getComponent": function () {},
-  "isVector4": function () {},
-  "length": function () {},
-  "lengthManhattan": function () {},
-  "lengthSq": function () {},
-  "lerp": function () {},
-  "lerpVectors": function () {},
-  "max": function () {},
-  "min": function () {},
-  "multiplyScalar": function () {},
-  "negate": function () {},
-  "normalize": function () {},
-  "round": function () {},
-  "roundToZero": function () {},
-  "set": function () {},
-  "setAxisAngleFromQuaternion": function () {},
-  "setAxisAngleFromRotationMatrix": function () {},
-  "setComponent": function () {},
-  "setLength": function () {},
-  "setScalar": function () {},
-  "setW": function () {},
-  "setX": function () {},
-  "setY": function () {},
-  "setZ": function () {},
-  "sub": function () {},
-  "subScalar": function () {},
-  "subVectors": function () {},
-  "toArray": function () {}
-};
-AFRAME.THREE.ShaderLib.dashed.uniforms.diffuse.value.constructor.prototype = {
-  "add": function () {},
-  "addColors": function () {},
-  "addScalar": function () {},
-  "b": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "convertGammaToLinear": function () {},
-  "convertLinearToGamma": function () {},
-  "copy": function () {},
-  "copyGammaToLinear": function () {},
-  "copyLinearToGamma": function () {},
-  "equals": function () {},
-  "fromArray": function () {},
-  "g": function () {},
-  "getHSL": function () {},
-  "getHex": function () {},
-  "getHexString": function () {},
-  "getStyle": function () {},
-  "isColor": function () {},
-  "lerp": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "offsetHSL": function () {},
-  "r": function () {},
-  "set": function () {},
-  "setHSL": function () {},
-  "setHex": function () {},
-  "setRGB": function () {},
-  "setScalar": function () {},
-  "setStyle": function () {},
-  "sub": function () {},
-  "toArray": function () {},
-  "toJSON": function () {}
-};
-AFRAME.THREE.ShaderLib.dashed.uniforms.fogColor.value.constructor.prototype = {
-  "add": function () {},
-  "addColors": function () {},
-  "addScalar": function () {},
-  "b": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "convertGammaToLinear": function () {},
-  "convertLinearToGamma": function () {},
-  "copy": function () {},
-  "copyGammaToLinear": function () {},
-  "copyLinearToGamma": function () {},
-  "equals": function () {},
-  "fromArray": function () {},
-  "g": function () {},
-  "getHSL": function () {},
-  "getHex": function () {},
-  "getHexString": function () {},
-  "getStyle": function () {},
-  "isColor": function () {},
-  "lerp": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "offsetHSL": function () {},
-  "r": function () {},
-  "set": function () {},
-  "setHSL": function () {},
-  "setHex": function () {},
-  "setRGB": function () {},
-  "setScalar": function () {},
-  "setStyle": function () {},
-  "sub": function () {},
-  "toArray": function () {},
-  "toJSON": function () {}
-};
-AFRAME.THREE.ShaderLib.dashed.uniforms.offsetRepeat.value.constructor.prototype = {
-  "add": function () {},
-  "addScalar": function () {},
-  "addScaledVector": function () {},
-  "addVectors": function () {},
-  "applyMatrix4": function () {},
-  "ceil": function () {},
-  "clamp": function () {},
-  "clampScalar": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "copy": function () {},
-  "divideScalar": function () {},
-  "dot": function () {},
-  "equals": function () {},
-  "floor": function () {},
-  "fromArray": function () {},
-  "fromAttribute": function () {},
-  "fromBufferAttribute": function () {},
-  "getComponent": function () {},
-  "isVector4": function () {},
-  "length": function () {},
-  "lengthManhattan": function () {},
-  "lengthSq": function () {},
-  "lerp": function () {},
-  "lerpVectors": function () {},
-  "max": function () {},
-  "min": function () {},
-  "multiplyScalar": function () {},
-  "negate": function () {},
-  "normalize": function () {},
-  "round": function () {},
-  "roundToZero": function () {},
-  "set": function () {},
-  "setAxisAngleFromQuaternion": function () {},
-  "setAxisAngleFromRotationMatrix": function () {},
-  "setComponent": function () {},
-  "setLength": function () {},
-  "setScalar": function () {},
-  "setW": function () {},
-  "setX": function () {},
-  "setY": function () {},
-  "setZ": function () {},
-  "sub": function () {},
-  "subScalar": function () {},
-  "subVectors": function () {},
-  "toArray": function () {}
-};
-AFRAME.THREE.ShaderLib.depth.uniforms.diffuse.value.constructor.prototype = {
-  "add": function () {},
-  "addColors": function () {},
-  "addScalar": function () {},
-  "b": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "convertGammaToLinear": function () {},
-  "convertLinearToGamma": function () {},
-  "copy": function () {},
-  "copyGammaToLinear": function () {},
-  "copyLinearToGamma": function () {},
-  "equals": function () {},
-  "fromArray": function () {},
-  "g": function () {},
-  "getHSL": function () {},
-  "getHex": function () {},
-  "getHexString": function () {},
-  "getStyle": function () {},
-  "isColor": function () {},
-  "lerp": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "offsetHSL": function () {},
-  "r": function () {},
-  "set": function () {},
-  "setHSL": function () {},
-  "setHex": function () {},
-  "setRGB": function () {},
-  "setScalar": function () {},
-  "setStyle": function () {},
-  "sub": function () {},
-  "toArray": function () {},
-  "toJSON": function () {}
-};
-AFRAME.THREE.ShaderLib.depth.uniforms.offsetRepeat.value.constructor.prototype = {
-  "add": function () {},
-  "addScalar": function () {},
-  "addScaledVector": function () {},
-  "addVectors": function () {},
-  "applyMatrix4": function () {},
-  "ceil": function () {},
-  "clamp": function () {},
-  "clampScalar": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "copy": function () {},
-  "divideScalar": function () {},
-  "dot": function () {},
-  "equals": function () {},
-  "floor": function () {},
-  "fromArray": function () {},
-  "fromAttribute": function () {},
-  "fromBufferAttribute": function () {},
-  "getComponent": function () {},
-  "isVector4": function () {},
-  "length": function () {},
-  "lengthManhattan": function () {},
-  "lengthSq": function () {},
-  "lerp": function () {},
-  "lerpVectors": function () {},
-  "max": function () {},
-  "min": function () {},
-  "multiplyScalar": function () {},
-  "negate": function () {},
-  "normalize": function () {},
-  "round": function () {},
-  "roundToZero": function () {},
-  "set": function () {},
-  "setAxisAngleFromQuaternion": function () {},
-  "setAxisAngleFromRotationMatrix": function () {},
-  "setComponent": function () {},
-  "setLength": function () {},
-  "setScalar": function () {},
-  "setW": function () {},
-  "setX": function () {},
-  "setY": function () {},
-  "setZ": function () {},
-  "sub": function () {},
-  "subScalar": function () {},
-  "subVectors": function () {},
-  "toArray": function () {}
-};
-AFRAME.THREE.ShaderLib.distanceRGBA.uniforms.lightPos.value.constructor.prototype = {
-  "add": function () {},
-  "addScalar": function () {},
-  "addScaledVector": function () {},
-  "addVectors": function () {},
-  "angleTo": function () {},
-  "applyAxisAngle": function () {},
-  "applyEuler": function () {},
-  "applyMatrix3": function () {},
-  "applyMatrix4": function () {},
-  "applyProjection": function () {},
-  "applyQuaternion": function () {},
-  "ceil": function () {},
-  "clamp": function () {},
-  "clampLength": function () {},
-  "clampScalar": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "copy": function () {},
-  "cross": function () {},
-  "crossVectors": function () {},
-  "distanceTo": function () {},
-  "distanceToManhattan": function () {},
-  "distanceToSquared": function () {},
-  "divide": function () {},
-  "divideScalar": function () {},
-  "dot": function () {},
-  "equals": function () {},
-  "floor": function () {},
-  "fromArray": function () {},
-  "fromAttribute": function () {},
-  "fromBufferAttribute": function () {},
-  "getColumnFromMatrix": function () {},
-  "getComponent": function () {},
-  "getPositionFromMatrix": function () {},
-  "getScaleFromMatrix": function () {},
-  "isVector3": function () {},
-  "length": function () {},
-  "lengthManhattan": function () {},
-  "lengthSq": function () {},
-  "lerp": function () {},
-  "lerpVectors": function () {},
-  "max": function () {},
-  "min": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "multiplyVectors": function () {},
-  "negate": function () {},
-  "normalize": function () {},
-  "project": function () {},
-  "projectOnPlane": function () {},
-  "projectOnVector": function () {},
-  "reflect": function () {},
-  "round": function () {},
-  "roundToZero": function () {},
-  "set": function () {},
-  "setComponent": function () {},
-  "setEulerFromQuaternion": function () {},
-  "setEulerFromRotationMatrix": function () {},
-  "setFromCylindrical": function () {},
-  "setFromMatrixColumn": function () {},
-  "setFromMatrixPosition": function () {},
-  "setFromMatrixScale": function () {},
-  "setFromSpherical": function () {},
-  "setLength": function () {},
-  "setScalar": function () {},
-  "setX": function () {},
-  "setY": function () {},
-  "setZ": function () {},
-  "sub": function () {},
-  "subScalar": function () {},
-  "subVectors": function () {},
-  "toArray": function () {},
-  "transformDirection": function () {},
-  "unproject": function () {}
-};
-AFRAME.THREE.ShaderLib.lambert.uniforms.diffuse.value.constructor.prototype = {
-  "add": function () {},
-  "addColors": function () {},
-  "addScalar": function () {},
-  "b": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "convertGammaToLinear": function () {},
-  "convertLinearToGamma": function () {},
-  "copy": function () {},
-  "copyGammaToLinear": function () {},
-  "copyLinearToGamma": function () {},
-  "equals": function () {},
-  "fromArray": function () {},
-  "g": function () {},
-  "getHSL": function () {},
-  "getHex": function () {},
-  "getHexString": function () {},
-  "getStyle": function () {},
-  "isColor": function () {},
-  "lerp": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "offsetHSL": function () {},
-  "r": function () {},
-  "set": function () {},
-  "setHSL": function () {},
-  "setHex": function () {},
-  "setRGB": function () {},
-  "setScalar": function () {},
-  "setStyle": function () {},
-  "sub": function () {},
-  "toArray": function () {},
-  "toJSON": function () {}
-};
-AFRAME.THREE.ShaderLib.lambert.uniforms.emissive.value.constructor.prototype = {
-  "add": function () {},
-  "addColors": function () {},
-  "addScalar": function () {},
-  "b": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "convertGammaToLinear": function () {},
-  "convertLinearToGamma": function () {},
-  "copy": function () {},
-  "copyGammaToLinear": function () {},
-  "copyLinearToGamma": function () {},
-  "equals": function () {},
-  "fromArray": function () {},
-  "g": function () {},
-  "getHSL": function () {},
-  "getHex": function () {},
-  "getHexString": function () {},
-  "getStyle": function () {},
-  "isColor": function () {},
-  "lerp": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "offsetHSL": function () {},
-  "r": function () {},
-  "set": function () {},
-  "setHSL": function () {},
-  "setHex": function () {},
-  "setRGB": function () {},
-  "setScalar": function () {},
-  "setStyle": function () {},
-  "sub": function () {},
-  "toArray": function () {},
-  "toJSON": function () {}
-};
-AFRAME.THREE.ShaderLib.lambert.uniforms.fogColor.value.constructor.prototype = {
-  "add": function () {},
-  "addColors": function () {},
-  "addScalar": function () {},
-  "b": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "convertGammaToLinear": function () {},
-  "convertLinearToGamma": function () {},
-  "copy": function () {},
-  "copyGammaToLinear": function () {},
-  "copyLinearToGamma": function () {},
-  "equals": function () {},
-  "fromArray": function () {},
-  "g": function () {},
-  "getHSL": function () {},
-  "getHex": function () {},
-  "getHexString": function () {},
-  "getStyle": function () {},
-  "isColor": function () {},
-  "lerp": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "offsetHSL": function () {},
-  "r": function () {},
-  "set": function () {},
-  "setHSL": function () {},
-  "setHex": function () {},
-  "setRGB": function () {},
-  "setScalar": function () {},
-  "setStyle": function () {},
-  "sub": function () {},
-  "toArray": function () {},
-  "toJSON": function () {}
-};
-AFRAME.THREE.ShaderLib.lambert.uniforms.offsetRepeat.value.constructor.prototype = {
-  "add": function () {},
-  "addScalar": function () {},
-  "addScaledVector": function () {},
-  "addVectors": function () {},
-  "applyMatrix4": function () {},
-  "ceil": function () {},
-  "clamp": function () {},
-  "clampScalar": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "copy": function () {},
-  "divideScalar": function () {},
-  "dot": function () {},
-  "equals": function () {},
-  "floor": function () {},
-  "fromArray": function () {},
-  "fromAttribute": function () {},
-  "fromBufferAttribute": function () {},
-  "getComponent": function () {},
-  "isVector4": function () {},
-  "length": function () {},
-  "lengthManhattan": function () {},
-  "lengthSq": function () {},
-  "lerp": function () {},
-  "lerpVectors": function () {},
-  "max": function () {},
-  "min": function () {},
-  "multiplyScalar": function () {},
-  "negate": function () {},
-  "normalize": function () {},
-  "round": function () {},
-  "roundToZero": function () {},
-  "set": function () {},
-  "setAxisAngleFromQuaternion": function () {},
-  "setAxisAngleFromRotationMatrix": function () {},
-  "setComponent": function () {},
-  "setLength": function () {},
-  "setScalar": function () {},
-  "setW": function () {},
-  "setX": function () {},
-  "setY": function () {},
-  "setZ": function () {},
-  "sub": function () {},
-  "subScalar": function () {},
-  "subVectors": function () {},
-  "toArray": function () {}
-};
-AFRAME.THREE.ShaderLib.normal.uniforms.diffuse.value.constructor.prototype = {
-  "add": function () {},
-  "addColors": function () {},
-  "addScalar": function () {},
-  "b": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "convertGammaToLinear": function () {},
-  "convertLinearToGamma": function () {},
-  "copy": function () {},
-  "copyGammaToLinear": function () {},
-  "copyLinearToGamma": function () {},
-  "equals": function () {},
-  "fromArray": function () {},
-  "g": function () {},
-  "getHSL": function () {},
-  "getHex": function () {},
-  "getHexString": function () {},
-  "getStyle": function () {},
-  "isColor": function () {},
-  "lerp": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "offsetHSL": function () {},
-  "r": function () {},
-  "set": function () {},
-  "setHSL": function () {},
-  "setHex": function () {},
-  "setRGB": function () {},
-  "setScalar": function () {},
-  "setStyle": function () {},
-  "sub": function () {},
-  "toArray": function () {},
-  "toJSON": function () {}
-};
-AFRAME.THREE.ShaderLib.normal.uniforms.normalScale.value.constructor.prototype = {
-  "add": function () {},
-  "addScalar": function () {},
-  "addScaledVector": function () {},
-  "addVectors": function () {},
-  "angle": function () {},
-  "ceil": function () {},
-  "clamp": function () {},
-  "clampLength": function () {},
-  "clampScalar": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "copy": function () {},
-  "distanceTo": function () {},
-  "distanceToManhattan": function () {},
-  "distanceToSquared": function () {},
-  "divide": function () {},
-  "divideScalar": function () {},
-  "dot": function () {},
-  "equals": function () {},
-  "floor": function () {},
-  "fromArray": function () {},
-  "fromAttribute": function () {},
-  "fromBufferAttribute": function () {},
-  "getComponent": function () {},
-  "height": function () {},
-  "isVector2": function () {},
-  "length": function () {},
-  "lengthManhattan": function () {},
-  "lengthSq": function () {},
-  "lerp": function () {},
-  "lerpVectors": function () {},
-  "max": function () {},
-  "min": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "negate": function () {},
-  "normalize": function () {},
-  "rotateAround": function () {},
-  "round": function () {},
-  "roundToZero": function () {},
-  "set": function () {},
-  "setComponent": function () {},
-  "setLength": function () {},
-  "setScalar": function () {},
-  "setX": function () {},
-  "setY": function () {},
-  "sub": function () {},
-  "subScalar": function () {},
-  "subVectors": function () {},
-  "toArray": function () {},
-  "width": function () {}
-};
-AFRAME.THREE.ShaderLib.normal.uniforms.offsetRepeat.value.constructor.prototype = {
-  "add": function () {},
-  "addScalar": function () {},
-  "addScaledVector": function () {},
-  "addVectors": function () {},
-  "applyMatrix4": function () {},
-  "ceil": function () {},
-  "clamp": function () {},
-  "clampScalar": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "copy": function () {},
-  "divideScalar": function () {},
-  "dot": function () {},
-  "equals": function () {},
-  "floor": function () {},
-  "fromArray": function () {},
-  "fromAttribute": function () {},
-  "fromBufferAttribute": function () {},
-  "getComponent": function () {},
-  "isVector4": function () {},
-  "length": function () {},
-  "lengthManhattan": function () {},
-  "lengthSq": function () {},
-  "lerp": function () {},
-  "lerpVectors": function () {},
-  "max": function () {},
-  "min": function () {},
-  "multiplyScalar": function () {},
-  "negate": function () {},
-  "normalize": function () {},
-  "round": function () {},
-  "roundToZero": function () {},
-  "set": function () {},
-  "setAxisAngleFromQuaternion": function () {},
-  "setAxisAngleFromRotationMatrix": function () {},
-  "setComponent": function () {},
-  "setLength": function () {},
-  "setScalar": function () {},
-  "setW": function () {},
-  "setX": function () {},
-  "setY": function () {},
-  "setZ": function () {},
-  "sub": function () {},
-  "subScalar": function () {},
-  "subVectors": function () {},
-  "toArray": function () {}
-};
-AFRAME.THREE.ShaderLib.phong.uniforms.diffuse.value.constructor.prototype = {
-  "add": function () {},
-  "addColors": function () {},
-  "addScalar": function () {},
-  "b": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "convertGammaToLinear": function () {},
-  "convertLinearToGamma": function () {},
-  "copy": function () {},
-  "copyGammaToLinear": function () {},
-  "copyLinearToGamma": function () {},
-  "equals": function () {},
-  "fromArray": function () {},
-  "g": function () {},
-  "getHSL": function () {},
-  "getHex": function () {},
-  "getHexString": function () {},
-  "getStyle": function () {},
-  "isColor": function () {},
-  "lerp": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "offsetHSL": function () {},
-  "r": function () {},
-  "set": function () {},
-  "setHSL": function () {},
-  "setHex": function () {},
-  "setRGB": function () {},
-  "setScalar": function () {},
-  "setStyle": function () {},
-  "sub": function () {},
-  "toArray": function () {},
-  "toJSON": function () {}
-};
-AFRAME.THREE.ShaderLib.phong.uniforms.emissive.value.constructor.prototype = {
-  "add": function () {},
-  "addColors": function () {},
-  "addScalar": function () {},
-  "b": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "convertGammaToLinear": function () {},
-  "convertLinearToGamma": function () {},
-  "copy": function () {},
-  "copyGammaToLinear": function () {},
-  "copyLinearToGamma": function () {},
-  "equals": function () {},
-  "fromArray": function () {},
-  "g": function () {},
-  "getHSL": function () {},
-  "getHex": function () {},
-  "getHexString": function () {},
-  "getStyle": function () {},
-  "isColor": function () {},
-  "lerp": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "offsetHSL": function () {},
-  "r": function () {},
-  "set": function () {},
-  "setHSL": function () {},
-  "setHex": function () {},
-  "setRGB": function () {},
-  "setScalar": function () {},
-  "setStyle": function () {},
-  "sub": function () {},
-  "toArray": function () {},
-  "toJSON": function () {}
-};
-AFRAME.THREE.ShaderLib.phong.uniforms.fogColor.value.constructor.prototype = {
-  "add": function () {},
-  "addColors": function () {},
-  "addScalar": function () {},
-  "b": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "convertGammaToLinear": function () {},
-  "convertLinearToGamma": function () {},
-  "copy": function () {},
-  "copyGammaToLinear": function () {},
-  "copyLinearToGamma": function () {},
-  "equals": function () {},
-  "fromArray": function () {},
-  "g": function () {},
-  "getHSL": function () {},
-  "getHex": function () {},
-  "getHexString": function () {},
-  "getStyle": function () {},
-  "isColor": function () {},
-  "lerp": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "offsetHSL": function () {},
-  "r": function () {},
-  "set": function () {},
-  "setHSL": function () {},
-  "setHex": function () {},
-  "setRGB": function () {},
-  "setScalar": function () {},
-  "setStyle": function () {},
-  "sub": function () {},
-  "toArray": function () {},
-  "toJSON": function () {}
-};
-AFRAME.THREE.ShaderLib.phong.uniforms.normalScale.value.constructor.prototype = {
-  "add": function () {},
-  "addScalar": function () {},
-  "addScaledVector": function () {},
-  "addVectors": function () {},
-  "angle": function () {},
-  "ceil": function () {},
-  "clamp": function () {},
-  "clampLength": function () {},
-  "clampScalar": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "copy": function () {},
-  "distanceTo": function () {},
-  "distanceToManhattan": function () {},
-  "distanceToSquared": function () {},
-  "divide": function () {},
-  "divideScalar": function () {},
-  "dot": function () {},
-  "equals": function () {},
-  "floor": function () {},
-  "fromArray": function () {},
-  "fromAttribute": function () {},
-  "fromBufferAttribute": function () {},
-  "getComponent": function () {},
-  "height": function () {},
-  "isVector2": function () {},
-  "length": function () {},
-  "lengthManhattan": function () {},
-  "lengthSq": function () {},
-  "lerp": function () {},
-  "lerpVectors": function () {},
-  "max": function () {},
-  "min": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "negate": function () {},
-  "normalize": function () {},
-  "rotateAround": function () {},
-  "round": function () {},
-  "roundToZero": function () {},
-  "set": function () {},
-  "setComponent": function () {},
-  "setLength": function () {},
-  "setScalar": function () {},
-  "setX": function () {},
-  "setY": function () {},
-  "sub": function () {},
-  "subScalar": function () {},
-  "subVectors": function () {},
-  "toArray": function () {},
-  "width": function () {}
-};
-AFRAME.THREE.ShaderLib.phong.uniforms.offsetRepeat.value.constructor.prototype = {
-  "add": function () {},
-  "addScalar": function () {},
-  "addScaledVector": function () {},
-  "addVectors": function () {},
-  "applyMatrix4": function () {},
-  "ceil": function () {},
-  "clamp": function () {},
-  "clampScalar": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "copy": function () {},
-  "divideScalar": function () {},
-  "dot": function () {},
-  "equals": function () {},
-  "floor": function () {},
-  "fromArray": function () {},
-  "fromAttribute": function () {},
-  "fromBufferAttribute": function () {},
-  "getComponent": function () {},
-  "isVector4": function () {},
-  "length": function () {},
-  "lengthManhattan": function () {},
-  "lengthSq": function () {},
-  "lerp": function () {},
-  "lerpVectors": function () {},
-  "max": function () {},
-  "min": function () {},
-  "multiplyScalar": function () {},
-  "negate": function () {},
-  "normalize": function () {},
-  "round": function () {},
-  "roundToZero": function () {},
-  "set": function () {},
-  "setAxisAngleFromQuaternion": function () {},
-  "setAxisAngleFromRotationMatrix": function () {},
-  "setComponent": function () {},
-  "setLength": function () {},
-  "setScalar": function () {},
-  "setW": function () {},
-  "setX": function () {},
-  "setY": function () {},
-  "setZ": function () {},
-  "sub": function () {},
-  "subScalar": function () {},
-  "subVectors": function () {},
-  "toArray": function () {}
-};
-AFRAME.THREE.ShaderLib.phong.uniforms.specular.value.constructor.prototype = {
-  "add": function () {},
-  "addColors": function () {},
-  "addScalar": function () {},
-  "b": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "convertGammaToLinear": function () {},
-  "convertLinearToGamma": function () {},
-  "copy": function () {},
-  "copyGammaToLinear": function () {},
-  "copyLinearToGamma": function () {},
-  "equals": function () {},
-  "fromArray": function () {},
-  "g": function () {},
-  "getHSL": function () {},
-  "getHex": function () {},
-  "getHexString": function () {},
-  "getStyle": function () {},
-  "isColor": function () {},
-  "lerp": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "offsetHSL": function () {},
-  "r": function () {},
-  "set": function () {},
-  "setHSL": function () {},
-  "setHex": function () {},
-  "setRGB": function () {},
-  "setScalar": function () {},
-  "setStyle": function () {},
-  "sub": function () {},
-  "toArray": function () {},
-  "toJSON": function () {}
-};
-AFRAME.THREE.ShaderLib.physical.uniforms.diffuse.value.constructor.prototype = {
-  "add": function () {},
-  "addColors": function () {},
-  "addScalar": function () {},
-  "b": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "convertGammaToLinear": function () {},
-  "convertLinearToGamma": function () {},
-  "copy": function () {},
-  "copyGammaToLinear": function () {},
-  "copyLinearToGamma": function () {},
-  "equals": function () {},
-  "fromArray": function () {},
-  "g": function () {},
-  "getHSL": function () {},
-  "getHex": function () {},
-  "getHexString": function () {},
-  "getStyle": function () {},
-  "isColor": function () {},
-  "lerp": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "offsetHSL": function () {},
-  "r": function () {},
-  "set": function () {},
-  "setHSL": function () {},
-  "setHex": function () {},
-  "setRGB": function () {},
-  "setScalar": function () {},
-  "setStyle": function () {},
-  "sub": function () {},
-  "toArray": function () {},
-  "toJSON": function () {}
-};
-AFRAME.THREE.ShaderLib.physical.uniforms.emissive.value.constructor.prototype = {
-  "add": function () {},
-  "addColors": function () {},
-  "addScalar": function () {},
-  "b": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "convertGammaToLinear": function () {},
-  "convertLinearToGamma": function () {},
-  "copy": function () {},
-  "copyGammaToLinear": function () {},
-  "copyLinearToGamma": function () {},
-  "equals": function () {},
-  "fromArray": function () {},
-  "g": function () {},
-  "getHSL": function () {},
-  "getHex": function () {},
-  "getHexString": function () {},
-  "getStyle": function () {},
-  "isColor": function () {},
-  "lerp": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "offsetHSL": function () {},
-  "r": function () {},
-  "set": function () {},
-  "setHSL": function () {},
-  "setHex": function () {},
-  "setRGB": function () {},
-  "setScalar": function () {},
-  "setStyle": function () {},
-  "sub": function () {},
-  "toArray": function () {},
-  "toJSON": function () {}
-};
-AFRAME.THREE.ShaderLib.physical.uniforms.fogColor.value.constructor.prototype = {
-  "add": function () {},
-  "addColors": function () {},
-  "addScalar": function () {},
-  "b": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "convertGammaToLinear": function () {},
-  "convertLinearToGamma": function () {},
-  "copy": function () {},
-  "copyGammaToLinear": function () {},
-  "copyLinearToGamma": function () {},
-  "equals": function () {},
-  "fromArray": function () {},
-  "g": function () {},
-  "getHSL": function () {},
-  "getHex": function () {},
-  "getHexString": function () {},
-  "getStyle": function () {},
-  "isColor": function () {},
-  "lerp": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "offsetHSL": function () {},
-  "r": function () {},
-  "set": function () {},
-  "setHSL": function () {},
-  "setHex": function () {},
-  "setRGB": function () {},
-  "setScalar": function () {},
-  "setStyle": function () {},
-  "sub": function () {},
-  "toArray": function () {},
-  "toJSON": function () {}
-};
-AFRAME.THREE.ShaderLib.physical.uniforms.normalScale.value.constructor.prototype = {
-  "add": function () {},
-  "addScalar": function () {},
-  "addScaledVector": function () {},
-  "addVectors": function () {},
-  "angle": function () {},
-  "ceil": function () {},
-  "clamp": function () {},
-  "clampLength": function () {},
-  "clampScalar": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "copy": function () {},
-  "distanceTo": function () {},
-  "distanceToManhattan": function () {},
-  "distanceToSquared": function () {},
-  "divide": function () {},
-  "divideScalar": function () {},
-  "dot": function () {},
-  "equals": function () {},
-  "floor": function () {},
-  "fromArray": function () {},
-  "fromAttribute": function () {},
-  "fromBufferAttribute": function () {},
-  "getComponent": function () {},
-  "height": function () {},
-  "isVector2": function () {},
-  "length": function () {},
-  "lengthManhattan": function () {},
-  "lengthSq": function () {},
-  "lerp": function () {},
-  "lerpVectors": function () {},
-  "max": function () {},
-  "min": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "negate": function () {},
-  "normalize": function () {},
-  "rotateAround": function () {},
-  "round": function () {},
-  "roundToZero": function () {},
-  "set": function () {},
-  "setComponent": function () {},
-  "setLength": function () {},
-  "setScalar": function () {},
-  "setX": function () {},
-  "setY": function () {},
-  "sub": function () {},
-  "subScalar": function () {},
-  "subVectors": function () {},
-  "toArray": function () {},
-  "width": function () {}
-};
-AFRAME.THREE.ShaderLib.physical.uniforms.offsetRepeat.value.constructor.prototype = {
-  "add": function () {},
-  "addScalar": function () {},
-  "addScaledVector": function () {},
-  "addVectors": function () {},
-  "applyMatrix4": function () {},
-  "ceil": function () {},
-  "clamp": function () {},
-  "clampScalar": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "copy": function () {},
-  "divideScalar": function () {},
-  "dot": function () {},
-  "equals": function () {},
-  "floor": function () {},
-  "fromArray": function () {},
-  "fromAttribute": function () {},
-  "fromBufferAttribute": function () {},
-  "getComponent": function () {},
-  "isVector4": function () {},
-  "length": function () {},
-  "lengthManhattan": function () {},
-  "lengthSq": function () {},
-  "lerp": function () {},
-  "lerpVectors": function () {},
-  "max": function () {},
-  "min": function () {},
-  "multiplyScalar": function () {},
-  "negate": function () {},
-  "normalize": function () {},
-  "round": function () {},
-  "roundToZero": function () {},
-  "set": function () {},
-  "setAxisAngleFromQuaternion": function () {},
-  "setAxisAngleFromRotationMatrix": function () {},
-  "setComponent": function () {},
-  "setLength": function () {},
-  "setScalar": function () {},
-  "setW": function () {},
-  "setX": function () {},
-  "setY": function () {},
-  "setZ": function () {},
-  "sub": function () {},
-  "subScalar": function () {},
-  "subVectors": function () {},
-  "toArray": function () {}
-};
-AFRAME.THREE.ShaderLib.points.uniforms.diffuse.value.constructor.prototype = {
-  "add": function () {},
-  "addColors": function () {},
-  "addScalar": function () {},
-  "b": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "convertGammaToLinear": function () {},
-  "convertLinearToGamma": function () {},
-  "copy": function () {},
-  "copyGammaToLinear": function () {},
-  "copyLinearToGamma": function () {},
-  "equals": function () {},
-  "fromArray": function () {},
-  "g": function () {},
-  "getHSL": function () {},
-  "getHex": function () {},
-  "getHexString": function () {},
-  "getStyle": function () {},
-  "isColor": function () {},
-  "lerp": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "offsetHSL": function () {},
-  "r": function () {},
-  "set": function () {},
-  "setHSL": function () {},
-  "setHex": function () {},
-  "setRGB": function () {},
-  "setScalar": function () {},
-  "setStyle": function () {},
-  "sub": function () {},
-  "toArray": function () {},
-  "toJSON": function () {}
-};
-AFRAME.THREE.ShaderLib.points.uniforms.fogColor.value.constructor.prototype = {
-  "add": function () {},
-  "addColors": function () {},
-  "addScalar": function () {},
-  "b": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "convertGammaToLinear": function () {},
-  "convertLinearToGamma": function () {},
-  "copy": function () {},
-  "copyGammaToLinear": function () {},
-  "copyLinearToGamma": function () {},
-  "equals": function () {},
-  "fromArray": function () {},
-  "g": function () {},
-  "getHSL": function () {},
-  "getHex": function () {},
-  "getHexString": function () {},
-  "getStyle": function () {},
-  "isColor": function () {},
-  "lerp": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "offsetHSL": function () {},
-  "r": function () {},
-  "set": function () {},
-  "setHSL": function () {},
-  "setHex": function () {},
-  "setRGB": function () {},
-  "setScalar": function () {},
-  "setStyle": function () {},
-  "sub": function () {},
-  "toArray": function () {},
-  "toJSON": function () {}
-};
-AFRAME.THREE.ShaderLib.points.uniforms.offsetRepeat.value.constructor.prototype = {
-  "add": function () {},
-  "addScalar": function () {},
-  "addScaledVector": function () {},
-  "addVectors": function () {},
-  "applyMatrix4": function () {},
-  "ceil": function () {},
-  "clamp": function () {},
-  "clampScalar": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "copy": function () {},
-  "divideScalar": function () {},
-  "dot": function () {},
-  "equals": function () {},
-  "floor": function () {},
-  "fromArray": function () {},
-  "fromAttribute": function () {},
-  "fromBufferAttribute": function () {},
-  "getComponent": function () {},
-  "isVector4": function () {},
-  "length": function () {},
-  "lengthManhattan": function () {},
-  "lengthSq": function () {},
-  "lerp": function () {},
-  "lerpVectors": function () {},
-  "max": function () {},
-  "min": function () {},
-  "multiplyScalar": function () {},
-  "negate": function () {},
-  "normalize": function () {},
-  "round": function () {},
-  "roundToZero": function () {},
-  "set": function () {},
-  "setAxisAngleFromQuaternion": function () {},
-  "setAxisAngleFromRotationMatrix": function () {},
-  "setComponent": function () {},
-  "setLength": function () {},
-  "setScalar": function () {},
-  "setW": function () {},
-  "setX": function () {},
-  "setY": function () {},
-  "setZ": function () {},
-  "sub": function () {},
-  "subScalar": function () {},
-  "subVectors": function () {},
-  "toArray": function () {}
-};
-AFRAME.THREE.ShaderLib.standard.uniforms.diffuse.value.constructor.prototype = {
-  "add": function () {},
-  "addColors": function () {},
-  "addScalar": function () {},
-  "b": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "convertGammaToLinear": function () {},
-  "convertLinearToGamma": function () {},
-  "copy": function () {},
-  "copyGammaToLinear": function () {},
-  "copyLinearToGamma": function () {},
-  "equals": function () {},
-  "fromArray": function () {},
-  "g": function () {},
-  "getHSL": function () {},
-  "getHex": function () {},
-  "getHexString": function () {},
-  "getStyle": function () {},
-  "isColor": function () {},
-  "lerp": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "offsetHSL": function () {},
-  "r": function () {},
-  "set": function () {},
-  "setHSL": function () {},
-  "setHex": function () {},
-  "setRGB": function () {},
-  "setScalar": function () {},
-  "setStyle": function () {},
-  "sub": function () {},
-  "toArray": function () {},
-  "toJSON": function () {}
-};
-AFRAME.THREE.ShaderLib.standard.uniforms.emissive.value.constructor.prototype = {
-  "add": function () {},
-  "addColors": function () {},
-  "addScalar": function () {},
-  "b": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "convertGammaToLinear": function () {},
-  "convertLinearToGamma": function () {},
-  "copy": function () {},
-  "copyGammaToLinear": function () {},
-  "copyLinearToGamma": function () {},
-  "equals": function () {},
-  "fromArray": function () {},
-  "g": function () {},
-  "getHSL": function () {},
-  "getHex": function () {},
-  "getHexString": function () {},
-  "getStyle": function () {},
-  "isColor": function () {},
-  "lerp": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "offsetHSL": function () {},
-  "r": function () {},
-  "set": function () {},
-  "setHSL": function () {},
-  "setHex": function () {},
-  "setRGB": function () {},
-  "setScalar": function () {},
-  "setStyle": function () {},
-  "sub": function () {},
-  "toArray": function () {},
-  "toJSON": function () {}
-};
-AFRAME.THREE.ShaderLib.standard.uniforms.fogColor.value.constructor.prototype = {
-  "add": function () {},
-  "addColors": function () {},
-  "addScalar": function () {},
-  "b": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "convertGammaToLinear": function () {},
-  "convertLinearToGamma": function () {},
-  "copy": function () {},
-  "copyGammaToLinear": function () {},
-  "copyLinearToGamma": function () {},
-  "equals": function () {},
-  "fromArray": function () {},
-  "g": function () {},
-  "getHSL": function () {},
-  "getHex": function () {},
-  "getHexString": function () {},
-  "getStyle": function () {},
-  "isColor": function () {},
-  "lerp": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "offsetHSL": function () {},
-  "r": function () {},
-  "set": function () {},
-  "setHSL": function () {},
-  "setHex": function () {},
-  "setRGB": function () {},
-  "setScalar": function () {},
-  "setStyle": function () {},
-  "sub": function () {},
-  "toArray": function () {},
-  "toJSON": function () {}
-};
-AFRAME.THREE.ShaderLib.standard.uniforms.normalScale.value.constructor.prototype = {
-  "add": function () {},
-  "addScalar": function () {},
-  "addScaledVector": function () {},
-  "addVectors": function () {},
-  "angle": function () {},
-  "ceil": function () {},
-  "clamp": function () {},
-  "clampLength": function () {},
-  "clampScalar": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "copy": function () {},
-  "distanceTo": function () {},
-  "distanceToManhattan": function () {},
-  "distanceToSquared": function () {},
-  "divide": function () {},
-  "divideScalar": function () {},
-  "dot": function () {},
-  "equals": function () {},
-  "floor": function () {},
-  "fromArray": function () {},
-  "fromAttribute": function () {},
-  "fromBufferAttribute": function () {},
-  "getComponent": function () {},
-  "height": function () {},
-  "isVector2": function () {},
-  "length": function () {},
-  "lengthManhattan": function () {},
-  "lengthSq": function () {},
-  "lerp": function () {},
-  "lerpVectors": function () {},
-  "max": function () {},
-  "min": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "negate": function () {},
-  "normalize": function () {},
-  "rotateAround": function () {},
-  "round": function () {},
-  "roundToZero": function () {},
-  "set": function () {},
-  "setComponent": function () {},
-  "setLength": function () {},
-  "setScalar": function () {},
-  "setX": function () {},
-  "setY": function () {},
-  "sub": function () {},
-  "subScalar": function () {},
-  "subVectors": function () {},
-  "toArray": function () {},
-  "width": function () {}
-};
-AFRAME.THREE.ShaderLib.standard.uniforms.offsetRepeat.value.constructor.prototype = {
-  "add": function () {},
-  "addScalar": function () {},
-  "addScaledVector": function () {},
-  "addVectors": function () {},
-  "applyMatrix4": function () {},
-  "ceil": function () {},
-  "clamp": function () {},
-  "clampScalar": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "copy": function () {},
-  "divideScalar": function () {},
-  "dot": function () {},
-  "equals": function () {},
-  "floor": function () {},
-  "fromArray": function () {},
-  "fromAttribute": function () {},
-  "fromBufferAttribute": function () {},
-  "getComponent": function () {},
-  "isVector4": function () {},
-  "length": function () {},
-  "lengthManhattan": function () {},
-  "lengthSq": function () {},
-  "lerp": function () {},
-  "lerpVectors": function () {},
-  "max": function () {},
-  "min": function () {},
-  "multiplyScalar": function () {},
-  "negate": function () {},
-  "normalize": function () {},
-  "round": function () {},
-  "roundToZero": function () {},
-  "set": function () {},
-  "setAxisAngleFromQuaternion": function () {},
-  "setAxisAngleFromRotationMatrix": function () {},
-  "setComponent": function () {},
-  "setLength": function () {},
-  "setScalar": function () {},
-  "setW": function () {},
-  "setX": function () {},
-  "setY": function () {},
-  "setZ": function () {},
-  "sub": function () {},
-  "subScalar": function () {},
-  "subVectors": function () {},
-  "toArray": function () {}
-};
 AFRAME.THREE.ShaderMaterial.prototype = {
   "addEventListener": function () {},
   "clone": function () {},
@@ -14874,11 +13599,10 @@ AFRAME.THREE.ShaderMaterial.prototype = {
   "hasEventListener": function () {},
   "isMaterial": function () {},
   "isShaderMaterial": function () {},
-  "needsUpdate": function () {},
+  "onBeforeCompile": function () {},
   "removeEventListener": function () {},
   "setValues": function () {},
-  "toJSON": function () {},
-  "update": function () {}
+  "toJSON": function () {}
 };
 AFRAME.THREE.ShadowMaterial.prototype = {
   "addEventListener": function () {},
@@ -14891,11 +13615,10 @@ AFRAME.THREE.ShadowMaterial.prototype = {
   "isMaterial": function () {},
   "isShaderMaterial": function () {},
   "isShadowMaterial": function () {},
-  "needsUpdate": function () {},
+  "onBeforeCompile": function () {},
   "removeEventListener": function () {},
   "setValues": function () {},
-  "toJSON": function () {},
-  "update": function () {}
+  "toJSON": function () {}
 };
 AFRAME.THREE.Shape.prototype = {
   "absarc": function () {},
@@ -15028,11 +13751,11 @@ AFRAME.THREE.SkeletonHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
   "dispatchEvent": function () {},
-  "getBoneList": function () {},
   "getChildByName": function () {},
   "getObjectById": function () {},
   "getObjectByName": function () {},
@@ -15048,6 +13771,8 @@ AFRAME.THREE.SkeletonHelper.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -15078,6 +13803,7 @@ AFRAME.THREE.SkinnedMesh.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "bind": function () {},
   "clone": function () {},
   "constructor": function () {},
@@ -15093,12 +13819,15 @@ AFRAME.THREE.SkinnedMesh.prototype = {
   "getWorldRotation": function () {},
   "getWorldScale": function () {},
   "hasEventListener": function () {},
+  "initBones": function () {},
   "isMesh": function () {},
   "isObject3D": function () {},
   "isSkinnedMesh": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
   "normalizeSkinWeights": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "pose": function () {},
   "raycast": function () {},
   "remove": function () {},
@@ -15131,7 +13860,6 @@ AFRAME.THREE.Sphere.prototype = {
   "applyMatrix4": function () {},
   "clampPoint": function () {},
   "clone": function () {},
-  "constructor": function () {},
   "containsPoint": function () {},
   "copy": function () {},
   "distanceToPoint": function () {},
@@ -15225,7 +13953,6 @@ AFRAME.THREE.SphereGeometry.prototype = {
 };
 AFRAME.THREE.Spherical.prototype = {
   "clone": function () {},
-  "constructor": function () {},
   "copy": function () {},
   "makeSafe": function () {},
   "set": function () {},
@@ -15281,6 +14008,7 @@ AFRAME.THREE.SpotLight.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -15300,6 +14028,8 @@ AFRAME.THREE.SpotLight.prototype = {
   "isSpotLight": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -15329,6 +14059,7 @@ AFRAME.THREE.SpotLightHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -15347,6 +14078,8 @@ AFRAME.THREE.SpotLightHelper.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -15385,6 +14118,7 @@ AFRAME.THREE.Sprite.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -15403,6 +14137,8 @@ AFRAME.THREE.Sprite.prototype = {
   "isSprite": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -15437,11 +14173,11 @@ AFRAME.THREE.SpriteMaterial.prototype = {
   "dispose": function () {},
   "hasEventListener": function () {},
   "isMaterial": function () {},
-  "needsUpdate": function () {},
+  "isSpriteMaterial": function () {},
+  "onBeforeCompile": function () {},
   "removeEventListener": function () {},
   "setValues": function () {},
-  "toJSON": function () {},
-  "update": function () {}
+  "toJSON": function () {}
 };
 AFRAME.THREE.StereoCamera.prototype = {
   "update": function () {}
@@ -15542,10 +14278,55 @@ AFRAME.THREE.TetrahedronGeometry.prototype = {
   "toJSON": function () {},
   "translate": function () {}
 };
-AFRAME.THREE.TextGeometry.prototype = {
+AFRAME.THREE.TextBufferGeometry.prototype = {
+  "addAttribute": function () {},
+  "addDrawCall": function () {},
   "addEventListener": function () {},
+  "addGroup": function () {},
+  "addIndex": function () {},
   "addShape": function () {},
   "addShapeList": function () {},
+  "applyMatrix": function () {},
+  "center": function () {},
+  "clearDrawCalls": function () {},
+  "clearGroups": function () {},
+  "clone": function () {},
+  "computeBoundingBox": function () {},
+  "computeBoundingSphere": function () {},
+  "computeFaceNormals": function () {},
+  "computeOffsets": function () {},
+  "computeTangents": function () {},
+  "computeVertexNormals": function () {},
+  "constructor": function () {},
+  "copy": function () {},
+  "dispatchEvent": function () {},
+  "dispose": function () {},
+  "fromDirectGeometry": function () {},
+  "fromGeometry": function () {},
+  "getArrays": function () {},
+  "getAttribute": function () {},
+  "getIndex": function () {},
+  "hasEventListener": function () {},
+  "isBufferGeometry": function () {},
+  "lookAt": function () {},
+  "merge": function () {},
+  "normalizeNormals": function () {},
+  "removeAttribute": function () {},
+  "removeEventListener": function () {},
+  "rotateX": function () {},
+  "rotateY": function () {},
+  "rotateZ": function () {},
+  "scale": function () {},
+  "setDrawRange": function () {},
+  "setFromObject": function () {},
+  "setIndex": function () {},
+  "toJSON": function () {},
+  "toNonIndexed": function () {},
+  "translate": function () {},
+  "updateFromObject": function () {}
+};
+AFRAME.THREE.TextGeometry.prototype = {
+  "addEventListener": function () {},
   "applyMatrix": function () {},
   "center": function () {},
   "clone": function () {},
@@ -15581,13 +14362,11 @@ AFRAME.THREE.TextGeometry.prototype = {
 AFRAME.THREE.Texture.prototype = {
   "addEventListener": function () {},
   "clone": function () {},
-  "constructor": function () {},
   "copy": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "hasEventListener": function () {},
   "isTexture": function () {},
-  "needsUpdate": function () {},
   "removeEventListener": function () {},
   "toJSON": function () {},
   "transformUv": function () {}
@@ -15759,7 +14538,6 @@ AFRAME.THREE.Triangle.prototype = {
   "barycoordFromPoint": function () {},
   "clone": function () {},
   "closestPointToPoint": function () {},
-  "constructor": function () {},
   "containsPoint": function () {},
   "copy": function () {},
   "equals": function () {},
@@ -15863,7 +14641,6 @@ AFRAME.THREE.Uint16BufferAttribute.prototype = {
   "getY": function () {},
   "getZ": function () {},
   "isBufferAttribute": function () {},
-  "needsUpdate": function () {},
   "onUpload": function () {},
   "set": function () {},
   "setArray": function () {},
@@ -15892,7 +14669,6 @@ AFRAME.THREE.Uint32BufferAttribute.prototype = {
   "getY": function () {},
   "getZ": function () {},
   "isBufferAttribute": function () {},
-  "needsUpdate": function () {},
   "onUpload": function () {},
   "set": function () {},
   "setArray": function () {},
@@ -15921,7 +14697,6 @@ AFRAME.THREE.Uint8BufferAttribute.prototype = {
   "getY": function () {},
   "getZ": function () {},
   "isBufferAttribute": function () {},
-  "needsUpdate": function () {},
   "onUpload": function () {},
   "set": function () {},
   "setArray": function () {},
@@ -15950,7 +14725,6 @@ AFRAME.THREE.Uint8ClampedBufferAttribute.prototype = {
   "getY": function () {},
   "getZ": function () {},
   "isBufferAttribute": function () {},
-  "needsUpdate": function () {},
   "onUpload": function () {},
   "set": function () {},
   "setArray": function () {},
@@ -15966,260 +14740,6 @@ AFRAME.THREE.Uint8ClampedBufferAttribute.prototype = {
 AFRAME.THREE.Uniform.prototype = {
   "clone": function () {}
 };
-AFRAME.THREE.UniformsLib.common.diffuse.value.constructor.prototype = {
-  "add": function () {},
-  "addColors": function () {},
-  "addScalar": function () {},
-  "b": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "convertGammaToLinear": function () {},
-  "convertLinearToGamma": function () {},
-  "copy": function () {},
-  "copyGammaToLinear": function () {},
-  "copyLinearToGamma": function () {},
-  "equals": function () {},
-  "fromArray": function () {},
-  "g": function () {},
-  "getHSL": function () {},
-  "getHex": function () {},
-  "getHexString": function () {},
-  "getStyle": function () {},
-  "isColor": function () {},
-  "lerp": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "offsetHSL": function () {},
-  "r": function () {},
-  "set": function () {},
-  "setHSL": function () {},
-  "setHex": function () {},
-  "setRGB": function () {},
-  "setScalar": function () {},
-  "setStyle": function () {},
-  "sub": function () {},
-  "toArray": function () {},
-  "toJSON": function () {}
-};
-AFRAME.THREE.UniformsLib.common.offsetRepeat.value.constructor.prototype = {
-  "add": function () {},
-  "addScalar": function () {},
-  "addScaledVector": function () {},
-  "addVectors": function () {},
-  "applyMatrix4": function () {},
-  "ceil": function () {},
-  "clamp": function () {},
-  "clampScalar": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "copy": function () {},
-  "divideScalar": function () {},
-  "dot": function () {},
-  "equals": function () {},
-  "floor": function () {},
-  "fromArray": function () {},
-  "fromAttribute": function () {},
-  "fromBufferAttribute": function () {},
-  "getComponent": function () {},
-  "isVector4": function () {},
-  "length": function () {},
-  "lengthManhattan": function () {},
-  "lengthSq": function () {},
-  "lerp": function () {},
-  "lerpVectors": function () {},
-  "max": function () {},
-  "min": function () {},
-  "multiplyScalar": function () {},
-  "negate": function () {},
-  "normalize": function () {},
-  "round": function () {},
-  "roundToZero": function () {},
-  "set": function () {},
-  "setAxisAngleFromQuaternion": function () {},
-  "setAxisAngleFromRotationMatrix": function () {},
-  "setComponent": function () {},
-  "setLength": function () {},
-  "setScalar": function () {},
-  "setW": function () {},
-  "setX": function () {},
-  "setY": function () {},
-  "setZ": function () {},
-  "sub": function () {},
-  "subScalar": function () {},
-  "subVectors": function () {},
-  "toArray": function () {}
-};
-AFRAME.THREE.UniformsLib.fog.fogColor.value.constructor.prototype = {
-  "add": function () {},
-  "addColors": function () {},
-  "addScalar": function () {},
-  "b": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "convertGammaToLinear": function () {},
-  "convertLinearToGamma": function () {},
-  "copy": function () {},
-  "copyGammaToLinear": function () {},
-  "copyLinearToGamma": function () {},
-  "equals": function () {},
-  "fromArray": function () {},
-  "g": function () {},
-  "getHSL": function () {},
-  "getHex": function () {},
-  "getHexString": function () {},
-  "getStyle": function () {},
-  "isColor": function () {},
-  "lerp": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "offsetHSL": function () {},
-  "r": function () {},
-  "set": function () {},
-  "setHSL": function () {},
-  "setHex": function () {},
-  "setRGB": function () {},
-  "setScalar": function () {},
-  "setStyle": function () {},
-  "sub": function () {},
-  "toArray": function () {},
-  "toJSON": function () {}
-};
-AFRAME.THREE.UniformsLib.normalmap.normalScale.value.constructor.prototype = {
-  "add": function () {},
-  "addScalar": function () {},
-  "addScaledVector": function () {},
-  "addVectors": function () {},
-  "angle": function () {},
-  "ceil": function () {},
-  "clamp": function () {},
-  "clampLength": function () {},
-  "clampScalar": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "copy": function () {},
-  "distanceTo": function () {},
-  "distanceToManhattan": function () {},
-  "distanceToSquared": function () {},
-  "divide": function () {},
-  "divideScalar": function () {},
-  "dot": function () {},
-  "equals": function () {},
-  "floor": function () {},
-  "fromArray": function () {},
-  "fromAttribute": function () {},
-  "fromBufferAttribute": function () {},
-  "getComponent": function () {},
-  "height": function () {},
-  "isVector2": function () {},
-  "length": function () {},
-  "lengthManhattan": function () {},
-  "lengthSq": function () {},
-  "lerp": function () {},
-  "lerpVectors": function () {},
-  "max": function () {},
-  "min": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "negate": function () {},
-  "normalize": function () {},
-  "rotateAround": function () {},
-  "round": function () {},
-  "roundToZero": function () {},
-  "set": function () {},
-  "setComponent": function () {},
-  "setLength": function () {},
-  "setScalar": function () {},
-  "setX": function () {},
-  "setY": function () {},
-  "sub": function () {},
-  "subScalar": function () {},
-  "subVectors": function () {},
-  "toArray": function () {},
-  "width": function () {}
-};
-AFRAME.THREE.UniformsLib.points.diffuse.value.constructor.prototype = {
-  "add": function () {},
-  "addColors": function () {},
-  "addScalar": function () {},
-  "b": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "convertGammaToLinear": function () {},
-  "convertLinearToGamma": function () {},
-  "copy": function () {},
-  "copyGammaToLinear": function () {},
-  "copyLinearToGamma": function () {},
-  "equals": function () {},
-  "fromArray": function () {},
-  "g": function () {},
-  "getHSL": function () {},
-  "getHex": function () {},
-  "getHexString": function () {},
-  "getStyle": function () {},
-  "isColor": function () {},
-  "lerp": function () {},
-  "multiply": function () {},
-  "multiplyScalar": function () {},
-  "offsetHSL": function () {},
-  "r": function () {},
-  "set": function () {},
-  "setHSL": function () {},
-  "setHex": function () {},
-  "setRGB": function () {},
-  "setScalar": function () {},
-  "setStyle": function () {},
-  "sub": function () {},
-  "toArray": function () {},
-  "toJSON": function () {}
-};
-AFRAME.THREE.UniformsLib.points.offsetRepeat.value.constructor.prototype = {
-  "add": function () {},
-  "addScalar": function () {},
-  "addScaledVector": function () {},
-  "addVectors": function () {},
-  "applyMatrix4": function () {},
-  "ceil": function () {},
-  "clamp": function () {},
-  "clampScalar": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "copy": function () {},
-  "divideScalar": function () {},
-  "dot": function () {},
-  "equals": function () {},
-  "floor": function () {},
-  "fromArray": function () {},
-  "fromAttribute": function () {},
-  "fromBufferAttribute": function () {},
-  "getComponent": function () {},
-  "isVector4": function () {},
-  "length": function () {},
-  "lengthManhattan": function () {},
-  "lengthSq": function () {},
-  "lerp": function () {},
-  "lerpVectors": function () {},
-  "max": function () {},
-  "min": function () {},
-  "multiplyScalar": function () {},
-  "negate": function () {},
-  "normalize": function () {},
-  "round": function () {},
-  "roundToZero": function () {},
-  "set": function () {},
-  "setAxisAngleFromQuaternion": function () {},
-  "setAxisAngleFromRotationMatrix": function () {},
-  "setComponent": function () {},
-  "setLength": function () {},
-  "setScalar": function () {},
-  "setW": function () {},
-  "setX": function () {},
-  "setY": function () {},
-  "setZ": function () {},
-  "sub": function () {},
-  "subScalar": function () {},
-  "subVectors": function () {},
-  "toArray": function () {}
-};
 AFRAME.THREE.Vector2.prototype = {
   "add": function () {},
   "addScalar": function () {},
@@ -16231,7 +14751,6 @@ AFRAME.THREE.Vector2.prototype = {
   "clampLength": function () {},
   "clampScalar": function () {},
   "clone": function () {},
-  "constructor": function () {},
   "copy": function () {},
   "distanceTo": function () {},
   "distanceToManhattan": function () {},
@@ -16245,7 +14764,6 @@ AFRAME.THREE.Vector2.prototype = {
   "fromAttribute": function () {},
   "fromBufferAttribute": function () {},
   "getComponent": function () {},
-  "height": function () {},
   "isVector2": function () {},
   "length": function () {},
   "lengthManhattan": function () {},
@@ -16270,8 +14788,7 @@ AFRAME.THREE.Vector2.prototype = {
   "sub": function () {},
   "subScalar": function () {},
   "subVectors": function () {},
-  "toArray": function () {},
-  "width": function () {}
+  "toArray": function () {}
 };
 AFRAME.THREE.Vector3.prototype = {
   "add": function () {},
@@ -16290,7 +14807,6 @@ AFRAME.THREE.Vector3.prototype = {
   "clampLength": function () {},
   "clampScalar": function () {},
   "clone": function () {},
-  "constructor": function () {},
   "copy": function () {},
   "cross": function () {},
   "crossVectors": function () {},
@@ -16357,9 +14873,9 @@ AFRAME.THREE.Vector4.prototype = {
   "applyMatrix4": function () {},
   "ceil": function () {},
   "clamp": function () {},
+  "clampLength": function () {},
   "clampScalar": function () {},
   "clone": function () {},
-  "constructor": function () {},
   "copy": function () {},
   "divideScalar": function () {},
   "dot": function () {},
@@ -16419,6 +14935,7 @@ AFRAME.THREE.VertexNormalsHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyQuaternion": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -16438,6 +14955,8 @@ AFRAME.THREE.VertexNormalsHelper.prototype = {
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
   "raycast": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
@@ -16473,7 +14992,6 @@ AFRAME.THREE.VideoTexture.prototype = {
   "dispose": function () {},
   "hasEventListener": function () {},
   "isTexture": function () {},
-  "needsUpdate": function () {},
   "removeEventListener": function () {},
   "toJSON": function () {},
   "transformUv": function () {}
@@ -16481,7 +14999,6 @@ AFRAME.THREE.VideoTexture.prototype = {
 AFRAME.THREE.WebGLRenderTarget.prototype = {
   "addEventListener": function () {},
   "clone": function () {},
-  "constructor": function () {},
   "copy": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
@@ -16507,6 +15024,7 @@ AFRAME.THREE.WebGLRenderer.prototype = {
   "addPostPlugin": function () {},
   "addPrePlugin": function () {},
   "enableScissorTest": function () {},
+  "getCurrentRenderTarget": function () {},
   "initMaterial": function () {},
   "supportsBlendMinMax": function () {},
   "supportsCompressedTexturePVRTC": function () {},
@@ -16567,7 +15085,6 @@ AFRAME.components.camera.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -16582,39 +15099,11 @@ AFRAME.components.camera.Component.prototype = {
   "updateProperties": function () {},
   "updateSchema": function () {}
 };
-AFRAME.components.canvas.Component.prototype = {
-  "buildData": function () {},
-  "constructor": function () {},
-  "extendSchema": function () {},
-  "flushToDOM": function () {},
-  "getData": function () {},
-  "name": function () {},
-  "parse": function () {},
-  "parseAttrValueForCache": function () {},
-  "pause": function () {},
-  "play": function () {},
-  "remove": function () {},
-  "resetProperty": function () {},
-  "schema": function () {},
-  "stringify": function () {},
-  "system": function () {},
-  "tick": function () {},
-  "tock": function () {},
-  "update": function () {},
-  "updateCachedAttrValue": function () {},
-  "updateProperties": function () {},
-  "updateSchema": function () {}
-};
-// Changed from:
-// AFRAME.components.collada - model.Component.prototype = {
-// to the following because that dash is invalid JS - wonder how it got there?
-// Changes 52 other instances of this regex: / - / in this file
 AFRAME.components.collada.model.Component.prototype = {
   "buildData": function () {},
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -16634,7 +15123,6 @@ AFRAME.components.cursor.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -16652,7 +15140,6 @@ AFRAME.components.daydream.controls.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -16672,7 +15159,6 @@ AFRAME.components.debug.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "init": function () {},
   "name": function () {},
   "parse": function () {},
@@ -16695,7 +15181,6 @@ AFRAME.components.embedded.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "init": function () {},
   "name": function () {},
   "parse": function () {},
@@ -16717,7 +15202,6 @@ AFRAME.components.fog.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "init": function () {},
   "name": function () {},
   "parse": function () {},
@@ -16738,7 +15222,6 @@ AFRAME.components.gearvr.controls.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -16758,7 +15241,6 @@ AFRAME.components.geometry.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -16777,7 +15259,6 @@ AFRAME.components.gltf.model.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -16797,7 +15278,6 @@ AFRAME.components.hand.controls.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -16814,7 +15294,6 @@ AFRAME.components.inspector.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -16835,7 +15314,6 @@ AFRAME.components.keyboard.shortcuts.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -16855,7 +15333,6 @@ AFRAME.components.laser.controls.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -16877,7 +15354,6 @@ AFRAME.components.light.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -16897,7 +15373,6 @@ AFRAME.components.line.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -16917,7 +15392,6 @@ AFRAME.components.link.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -16934,7 +15408,6 @@ AFRAME.components.look.controls.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -16951,7 +15424,6 @@ AFRAME.components.material.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -16970,7 +15442,6 @@ AFRAME.components.obj.model.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -16990,7 +15461,6 @@ AFRAME.components.oculus.touch.controls.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -17010,7 +15480,6 @@ AFRAME.components.pivot.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -17032,7 +15501,6 @@ AFRAME.components.pool.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "init": function () {},
   "name": function () {},
   "parse": function () {},
@@ -17054,7 +15522,6 @@ AFRAME.components.position.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "init": function () {},
   "name": function () {},
   "parse": function () {},
@@ -17076,7 +15543,6 @@ AFRAME.components.raycaster.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -17093,7 +15559,6 @@ AFRAME.components.rotation.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "init": function () {},
   "name": function () {},
   "parse": function () {},
@@ -17115,7 +15580,6 @@ AFRAME.components.scale.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "init": function () {},
   "name": function () {},
   "parse": function () {},
@@ -17137,7 +15601,6 @@ AFRAME.components.screenshot.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -17158,7 +15621,6 @@ AFRAME.components.shadow.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -17178,7 +15640,6 @@ AFRAME.components.sound.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -17196,7 +15657,6 @@ AFRAME.components.stats.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -17215,7 +15675,6 @@ AFRAME.components.text.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -17289,7 +15748,6 @@ AFRAME.components.tracked.controls.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -17310,7 +15768,6 @@ AFRAME.components.visible.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "init": function () {},
   "name": function () {},
   "parse": function () {},
@@ -17332,7 +15789,6 @@ AFRAME.components.vive.controls.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -17352,7 +15808,6 @@ AFRAME.components.vr.mode.ui.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
@@ -17372,13 +15827,31 @@ AFRAME.components.wasd.controls.Component.prototype = {
   "constructor": function () {},
   "extendSchema": function () {},
   "flushToDOM": function () {},
-  "getData": function () {},
   "name": function () {},
   "parse": function () {},
   "parseAttrValueForCache": function () {},
   "resetProperty": function () {},
   "stringify": function () {},
   "system": function () {},
+  "tock": function () {},
+  "update": function () {},
+  "updateCachedAttrValue": function () {},
+  "updateProperties": function () {},
+  "updateSchema": function () {}
+};
+AFRAME.components.windows.motion.controls.Component.prototype = {
+  "buildData": function () {},
+  "constructor": function () {},
+  "extendSchema": function () {},
+  "flushToDOM": function () {},
+  "name": function () {},
+  "parse": function () {},
+  "parseAttrValueForCache": function () {},
+  "remove": function () {},
+  "resetProperty": function () {},
+  "stringify": function () {},
+  "system": function () {},
+  "tick": function () {},
   "tock": function () {},
   "update": function () {},
   "updateCachedAttrValue": function () {},
@@ -23889,17 +22362,6 @@ AFRAME.systems.geometry.prototype = {
   "update": function () {},
   "updateProperties": function () {}
 };
-AFRAME.systems.gltf.model.prototype = {
-  "buildData": function () {},
-  "constructor": function () {},
-  "name": function () {},
-  "pause": function () {},
-  "play": function () {},
-  "schema": function () {},
-  "tock": function () {},
-  "update": function () {},
-  "updateProperties": function () {}
-};
 AFRAME.systems.light.prototype = {
   "buildData": function () {},
   "constructor": function () {},
@@ -23941,7 +22403,6 @@ AFRAME.systems.tracked.controls.prototype = {
   "pause": function () {},
   "play": function () {},
   "schema": function () {},
-  "tick": function () {},
   "tock": function () {},
   "update": function () {},
   "updateProperties": function () {}

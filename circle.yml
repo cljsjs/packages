@@ -20,3 +20,4 @@ jobs:
     environment:
       BOOT_JVM_OPTIONS: "-Xms512m -Xmx1024m"
       NPM_CONFIG_LOGLEVEL: warn
+      NPM_CONFIG_UNSAFE_PERMS: true

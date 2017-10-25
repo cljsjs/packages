@@ -56,6 +56,9 @@ var DatePicker = {
       "excludeDates": {
         "isRequired": function () {}
       },
+      "excludeTimes": {
+          "isRequired": function () {}
+      },
       "filterDate": {
         "isRequired": function () {}
       },
@@ -89,8 +92,14 @@ var DatePicker = {
       "maxDate": {
         "isRequired": function () {}
       },
+      "maxTime": {
+          "isRequired": function () {}
+      },
       "minDate": {
         "isRequired": function () {}
+      },
+      "minTime": {
+          "isRequired": function () {}
       },
       "monthsShown": {
         "isRequired": function () {}
@@ -166,6 +175,9 @@ var DatePicker = {
       },
       "showMonthDropdown": {
         "isRequired": function () {}
+      },
+      "showTimeSelect": {
+          "isRequired": function () {}
       },
       "showWeekNumbers": {
         "isRequired": function () {}

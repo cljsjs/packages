@@ -1,4 +1,8 @@
 var filestack = {
-  "init": function () {},
-  "version": {}
+  init: function () {},
+  version: {},
+  pick: function () {},
+  then: function () {},
+  transform: function () {},
+  storeURL: function () {}
 };
