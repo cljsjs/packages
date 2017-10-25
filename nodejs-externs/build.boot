@@ -1,5 +1,5 @@
 (set-env!
- :dependencies '[[cljsjs/boot-cljsjs "0.7.1" :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.8.1" :scope "test"]])
 
 (require '[boot.core :as core]
          '[boot.tmpdir :as tmpd]
