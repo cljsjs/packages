@@ -23,8 +23,7 @@
     (download :url      (format "https://registry.npmjs.org/leaflet-draw/-/leaflet-draw-%s.tgz" +lib-version+)
               :decompress true
               :compression-format "gz"
-              :archive-format "tar"
-              :name "package")
+              :archive-format "tar")
     (sift :move {#"^.*/dist/leaflet.draw-src.js" "cljsjs/development/leaflet-draw.inc.js"
                  #"^.*/dist/leaflet.draw.js" "cljsjs/production/leaflet-draw.min.inc.js"
                  #"^.*/dist/leaflet.draw.css" "cljsjs/common/leaflet-draw.inc.css"
