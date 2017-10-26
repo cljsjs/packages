@@ -21,17 +21,17 @@
 (deftask package []
   (comp
     (download :url      (format "https://registry.npmjs.org/leaflet-draw/-/leaflet-draw-%s.tgz" +lib-version+)
-              :checksum "C243F3F76278A151D5660858DAE6E140"
               :decompress true
               :compression-format "gz"
               :archive-format "tar"
               :name "package")
-    (sift :move {#"^.*/dist/leaflet.draw-src.js"    	"cljsjs/development/leaflet-draw.inc.js"
-                 #"^.*/dist/leaflet.draw.js"        	"cljsjs/production/leaflet-draw.min.inc.js"
-                 #"^.*/dist/leaflet.draw.css"       	"cljsjs/common/leaflet-draw.inc.css"
-                 #"^.*/dist/images/(.*).png$" 	"cljsjs/common/images/$1.png"})
+    (sift :move {#"^.*/dist/leaflet.draw-src.js" "cljsjs/development/leaflet-draw.inc.js"
+                 #"^.*/dist/leaflet.draw.js" "cljsjs/production/leaflet-draw.min.inc.js"
+                 #"^.*/dist/leaflet.draw.css" "cljsjs/common/leaflet-draw.inc.css"
+                 #"^.*/dist/images/(.*).png$" "cljsjs/common/images/$1.png"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.leaflet-draw"
                :requires ["cljsjs.leaflet"])
     (pom)
-    (jar)))
+    (jar)
+    (validate-checksums)))
