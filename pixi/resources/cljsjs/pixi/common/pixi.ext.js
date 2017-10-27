@@ -145,6 +145,7 @@ var PIXI = {
     "byDirection": function () {},
     "inv": function () {},
     "isSwapWidthHeight": function () {},
+    "isVertical": function () {},
     "matrixAppendRotationInv": function () {},
     "rotate180": function () {},
     "sub": function () {},
@@ -806,6 +807,7 @@ var PIXI = {
     "removeFromCache": function () {},
     "removeTextureFromCache": function () {}
   },
+  "TextureMatrix": function () {},
   "TextureUvs": function () {},
   "Transform": {
     "IDENTITY": {
@@ -1080,7 +1082,6 @@ var PIXI = {
       "prefixed": {},
       "registerFont": function () {}
     },
-    "TextureTransform": function () {},
     "TilingSprite": {
       "EventEmitter": {
         "EventEmitter": function () {},
@@ -1095,6 +1096,7 @@ var PIXI = {
     "__esModule": {}
   },
   "filters": {
+    "AlphaFilter": function () {},
     "BlurFilter": function () {},
     "BlurXFilter": function () {},
     "BlurYFilter": function () {},
@@ -1102,7 +1104,6 @@ var PIXI = {
     "DisplacementFilter": function () {},
     "FXAAFilter": function () {},
     "NoiseFilter": function () {},
-    "VoidFilter": function () {},
     "__esModule": {}
   },
   "glCore": {
@@ -2823,6 +2824,10 @@ PIXI.Texture.EventEmitter.prototype = {
   "removeListener": function () {},
   "setMaxListeners": function () {}
 };
+PIXI.TextureMatrix.prototype = {
+  "multiplyUvs": function () {},
+  "update": function () {}
+};
 PIXI.TextureUvs.prototype = {
   "set": function () {}
 };
@@ -3272,10 +3277,6 @@ PIXI.extras.BitmapText.EventEmitter.prototype = {
   "removeListener": function () {},
   "setMaxListeners": function () {}
 };
-PIXI.extras.TextureTransform.prototype = {
-  "multiplyUvs": function () {},
-  "update": function () {}
-};
 PIXI.extras.TilingSprite.prototype = {
   "_accessibleActive": function () {},
   "_accessibleDiv": function () {},
@@ -3369,6 +3370,9 @@ PIXI.extras.TilingSpriteRenderer.prototype = {
   "start": function () {},
   "stop": function () {}
 };
+PIXI.filters.AlphaFilter.prototype = {
+  "apply": function () {}
+};
 PIXI.filters.BlurFilter.prototype = {
   "apply": function () {}
 };
@@ -3412,9 +3416,6 @@ PIXI.filters.FXAAFilter.prototype = {
   "apply": function () {}
 };
 PIXI.filters.NoiseFilter.prototype = {
-  "apply": function () {}
-};
-PIXI.filters.VoidFilter.prototype = {
   "apply": function () {}
 };
 PIXI.glCore.GLBuffer.prototype = {
