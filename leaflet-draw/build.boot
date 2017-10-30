@@ -24,10 +24,10 @@
               :decompress true
               :compression-format "gz"
               :archive-format "tar")
-    (sift :move {#"^.*/dist/leaflet.draw-src.js" "cljsjs/development/leaflet-draw.inc.js"
-                 #"^.*/dist/leaflet.draw.js" "cljsjs/production/leaflet-draw.min.inc.js"
-                 #"^.*/dist/leaflet.draw.css" "cljsjs/common/leaflet-draw.inc.css"
-                 #"^.*/dist/images/(.*).png$" "cljsjs/common/images/$1.png"})
+    (sift :move {#"^.*/dist/leaflet.draw-src.js" "cljsjs/leaflet-draw/development/leaflet-draw.inc.js"
+                 #"^.*/dist/leaflet.draw.js" "cljsjs/leaflet-draw/production/leaflet-draw.min.inc.js"
+                 #"^.*/dist/leaflet.draw.css" "cljsjs/leaflet-draw/common/leaflet-draw.inc.css"
+                 #"^.*/dist/images/(.*).png$" "cljsjs/leaflet-draw/common/images/$1.png"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.leaflet-draw"
                :requires ["cljsjs.leaflet"])
