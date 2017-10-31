@@ -5,30 +5,7 @@
 var vl = {
   "aggregate": {
     "AGGREGATE_OPS": {},
-    "AGGREGATE_OP_INDEX": {
-      "argmax": {},
-      "argmin": {},
-      "average": {},
-      "ci0": {},
-      "ci1": {},
-      "count": {},
-      "distinct": {},
-      "max": {},
-      "mean": {},
-      "median": {},
-      "min": {},
-      "missing": {},
-      "modeskew": {},
-      "q1": {},
-      "q3": {},
-      "stdev": {},
-      "stdevp": {},
-      "sum": {},
-      "valid": {},
-      "values": {},
-      "variance": {},
-      "variancep": {}
-    },
+    "COUNTING_OPS": {},
     "SHARED_DOMAIN_OPS": {},
     "SHARED_DOMAIN_OP_INDEX": {
       "average": {},
@@ -39,10 +16,20 @@ var vl = {
       "q1": {},
       "q3": {}
     },
-    "SUM_OPS": {}
+    "SUM_OPS": {},
+    "isAggregateOp": function () {},
+    "isCountingAggregateOp": function () {}
   },
   "axis": {
-    "AXIS_PROPERTIES": {}
+    "AXIS_PROPERTIES": {},
+    "AXIS_PROPERTY_TYPE": {
+      "grid": {},
+      "labelOverlap": {},
+      "offset": {},
+      "title": {}
+    },
+    "VG_AXIS_PROPERTIES": {},
+    "isAxisProperty": function () {}
   },
   "bin": {
     "autoMaxBins": function () {},
@@ -69,44 +56,42 @@ var vl = {
       "Y2": {}
     },
     "DETAIL": {},
-    "LEVEL_OF_DETAIL_CHANNELS": {},
-    "NONSPATIAL_CHANNELS": {},
-    "NONSPATIAL_SCALE_CHANNELS": {},
+    "NONPOSITION_CHANNELS": {},
+    "NONPOSITION_SCALE_CHANNELS": {},
     "OPACITY": {},
     "ORDER": {},
+    "POSITION_SCALE_CHANNELS": {},
     "ROW": {},
     "SCALE_CHANNELS": {},
     "SHAPE": {},
+    "SINGLE_DEF_CHANNELS": {},
     "SIZE": {},
-    "SPATIAL_SCALE_CHANNELS": {},
-    "STACK_GROUP_CHANNELS": {},
     "TEXT": {},
     "TOOLTIP": {},
     "UNIT_CHANNELS": {},
-    "UNIT_SCALE_CHANNELS": {},
     "X": {},
     "X2": {},
     "Y": {},
     "Y2": {},
     "getSupportedMark": function () {},
-    "hasScale": function () {},
     "isChannel": function () {},
+    "isScaleChannel": function () {},
     "rangeType": function () {},
-    "supportMark": function () {},
-    "supportScaleType": function () {}
+    "supportMark": function () {}
   },
   "compile": function () {},
   "compositeMark": {
+    "COMPOSITE_MARK_STYLES": {},
+    "VL_ONLY_COMPOSITE_MARK_SPECIFIC_CONFIG_PROPERTY_INDEX": {
+      "box": {},
+      "boxMid": {},
+      "boxWhisker": {}
+    },
     "add": function () {},
     "normalize": function () {},
     "remove": function () {}
   },
   "config": {
-    "defaultCellConfig": {
-      "fill": {},
-      "height": {},
-      "width": {}
-    },
     "defaultConfig": {
       "area": {},
       "axis": {},
@@ -116,7 +101,9 @@ var vl = {
       "axisRight": {},
       "axisTop": {},
       "axisX": {},
-      "axisY": {},
+      "axisY": {
+        "minExtent": {}
+      },
       "bar": {
         "binSpacing": {},
         "continuousBandSize": {}
@@ -124,95 +111,87 @@ var vl = {
       "box": {
         "size": {}
       },
-      "boxMid": {},
-      "boxWhisker": {},
-      "cell": {
-        "fill": {},
-        "height": {},
-        "width": {}
+      "boxMid": {
+        "color": {}
       },
+      "boxWhisker": {},
       "circle": {},
       "countTitle": {},
-      "facet": {
-        "cell": {
-          "stroke": {},
-          "strokeWidth": {}
-        }
-      },
-      "legend": {
-        "orient": {}
-      },
+      "invalidValues": {},
+      "legend": {},
       "line": {},
       "mark": {
         "color": {}
       },
-      "numberFormat": {},
-      "overlay": {
-        "line": {}
-      },
       "padding": {},
       "point": {},
       "rect": {},
-      "rule": {},
+      "rule": {
+        "color": {}
+      },
       "scale": {
         "bandPaddingInner": {},
         "facetSpacing": {},
         "maxFontSize": {},
         "maxOpacity": {},
         "maxStrokeWidth": {},
+        "minBandSize": {},
         "minFontSize": {},
         "minOpacity": {},
         "minSize": {},
         "minStrokeWidth": {},
         "pointPadding": {},
         "rangeStep": {},
-        "round": {},
-        "shapes": {},
         "textXRangeStep": {}
       },
       "selection": {
         "interval": {
           "encodings": {},
+          "mark": {
+            "fill": {},
+            "fillOpacity": {},
+            "stroke": {}
+          },
           "on": {},
           "resolve": {},
           "translate": {},
           "zoom": {}
         },
         "multi": {
+          "empty": {},
           "fields": {},
           "on": {},
           "resolve": {},
           "toggle": {}
         },
         "single": {
+          "empty": {},
           "fields": {},
           "on": {},
           "resolve": {}
         }
       },
       "square": {},
+      "style": {},
       "text": {
-        "baseline": {}
+        "color": {}
       },
       "tick": {
         "thickness": {}
       },
-      "timeFormat": {}
-    },
-    "defaultFacetCellConfig": {
-      "stroke": {},
-      "strokeWidth": {}
-    },
-    "defaultFacetConfig": {
-      "cell": {
-        "stroke": {},
-        "strokeWidth": {}
+      "timeFormat": {},
+      "title": {},
+      "view": {
+        "height": {},
+        "width": {}
       }
     },
-    "defaultOverlayConfig": {
-      "line": {}
+    "defaultViewConfig": {
+      "height": {},
+      "width": {}
     },
-    "initConfig": function () {}
+    "initConfig": function () {},
+    "stripAndRedirectConfig": function () {}
   },
   "data": {
     "MAIN": {},
@@ -227,8 +206,7 @@ var vl = {
     "SHORT_DAYS": {},
     "SHORT_MONTHS": {},
     "dateTimeExpr": function () {},
-    "isDateTime": function () {},
-    "timestamp": function () {}
+    "isDateTime": function () {}
   },
   "encoding": {
     "channelHasField": function () {},
@@ -242,22 +220,36 @@ var vl = {
   "facet": {},
   "fieldDef": {
     "channelCompatibility": function () {},
+    "defaultTitleFormatter": function () {},
     "defaultType": function () {},
     "field": function () {},
+    "functionalTitleFormatter": function () {},
+    "getFieldDef": function () {},
+    "hasConditionalFieldDef": function () {},
+    "hasConditionalValueDef": function () {},
+    "isConditionalDef": function () {},
     "isContinuous": function () {},
     "isCount": function () {},
     "isDiscrete": function () {},
     "isFieldDef": function () {},
+    "isNumberFieldDef": function () {},
     "isRepeatRef": function () {},
+    "isScaleFieldDef": function () {},
+    "isStringFieldDef": function () {},
+    "isTimeFieldDef": function () {},
     "isValueDef": function () {},
     "normalize": function () {},
-    "title": function () {}
+    "normalizeBin": function () {},
+    "normalizeFieldDef": function () {},
+    "resetTitleFormatter": function () {},
+    "setTitleFormatter": function () {},
+    "title": function () {},
+    "verbalTitleFormatter": function () {}
   },
   "legend": {
     "LEGEND_PROPERTIES": {},
-    "defaultLegendConfig": {
-      "orient": {}
-    }
+    "VG_LEGEND_PROPERTIES": {},
+    "defaultLegendConfig": {}
   },
   "mark": {
     "AREA": {},
@@ -286,6 +278,12 @@ var vl = {
     "STROKE_CONFIG": {},
     "TEXT": {},
     "TICK": {},
+    "VL_ONLY_MARK_CONFIG_PROPERTIES": {},
+    "VL_ONLY_MARK_SPECIFIC_CONFIG_PROPERTY_INDEX": {
+      "bar": {},
+      "text": {},
+      "tick": {}
+    },
     "defaultBarConfig": {
       "binSpacing": {},
       "continuousBandSize": {}
@@ -293,12 +291,10 @@ var vl = {
     "defaultMarkConfig": {
       "color": {}
     },
-    "defaultTextConfig": {
-      "baseline": {}
-    },
     "defaultTickConfig": {
       "thickness": {}
     },
+    "isMark": function () {},
     "isMarkDef": function () {},
     "isPrimitiveMark": function () {}
   },
@@ -306,6 +302,7 @@ var vl = {
     "CONTINUOUS_DOMAIN_SCALES": {},
     "CONTINUOUS_TO_CONTINUOUS_SCALES": {},
     "DISCRETE_DOMAIN_SCALES": {},
+    "NON_TYPE_DOMAIN_RANGE_VEGA_SCALE_PROPERTIES": {},
     "SCALE_PROPERTIES": {},
     "SCALE_TYPES": {},
     "ScaleType": {
@@ -327,20 +324,20 @@ var vl = {
     },
     "TIME_SCALE_TYPES": {},
     "channelScalePropertyIncompatability": function () {},
+    "channelSupportScaleType": function () {},
     "defaultScaleConfig": {
       "bandPaddingInner": {},
       "facetSpacing": {},
       "maxFontSize": {},
       "maxOpacity": {},
       "maxStrokeWidth": {},
+      "minBandSize": {},
       "minFontSize": {},
       "minOpacity": {},
       "minSize": {},
       "minStrokeWidth": {},
       "pointPadding": {},
       "rangeStep": {},
-      "round": {},
-      "shapes": {},
       "textXRangeStep": {}
     },
     "hasContinuousDomain": function () {},
@@ -349,6 +346,8 @@ var vl = {
     "isContinuousToContinuous": function () {},
     "isExtendedScheme": function () {},
     "isSelectionDomain": function () {},
+    "scaleCompatible": function () {},
+    "scaleTypePrecedence": function () {},
     "scaleTypeSupportProperty": function () {}
   },
   "sort": {
@@ -369,12 +368,12 @@ var vl = {
   "stack": {
     "STACKABLE_MARKS": {},
     "STACK_BY_DEFAULT_MARKS": {},
+    "isStackOffset": function () {},
     "stack": function () {}
   },
   "timeUnit": {
-    "MULTI_TIMEUNITS": {},
-    "SINGLE_TIMEUNITS": {},
     "TIMEUNITS": {},
+    "TIMEUNIT_PARTS": {},
     "TimeUnit": {
       "DATE": {},
       "DAY": {},
@@ -390,6 +389,28 @@ var vl = {
       "QUARTERMONTH": {},
       "SECONDS": {},
       "SECONDSMILLISECONDS": {},
+      "UTCDATE": {},
+      "UTCDAY": {},
+      "UTCHOURS": {},
+      "UTCHOURSMINUTES": {},
+      "UTCHOURSMINUTESSECONDS": {},
+      "UTCMILLISECONDS": {},
+      "UTCMINUTES": {},
+      "UTCMINUTESSECONDS": {},
+      "UTCMONTH": {},
+      "UTCMONTHDATE": {},
+      "UTCQUARTER": {},
+      "UTCQUARTERMONTH": {},
+      "UTCSECONDS": {},
+      "UTCSECONDSMILLISECONDS": {},
+      "UTCYEAR": {},
+      "UTCYEARMONTH": {},
+      "UTCYEARMONTHDATE": {},
+      "UTCYEARMONTHDATEHOURS": {},
+      "UTCYEARMONTHDATEHOURSMINUTES": {},
+      "UTCYEARMONTHDATEHOURSMINUTESSECONDS": {},
+      "UTCYEARQUARTER": {},
+      "UTCYEARQUARTERMONTH": {},
       "YEAR": {},
       "YEARMONTH": {},
       "YEARMONTHDATE": {},
@@ -403,14 +424,22 @@ var vl = {
     "convert": function () {},
     "fieldExpr": function () {},
     "formatExpression": function () {},
-    "isDiscreteByDefault": function () {},
-    "isMultiTimeUnit": function () {},
-    "isSingleTimeUnit": function () {},
-    "smallestUnit": function () {}
+    "getLocalTimeUnit": function () {},
+    "getTimeUnitParts": function () {},
+    "isLocalSingleTimeUnit": function () {},
+    "isTimeUnit": function () {},
+    "isUTCTimeUnit": function () {},
+    "isUtcSingleTimeUnit": function () {},
+    "normalizeTimeUnit": function () {}
   },
   "transform": {
+    "isAggregate": function () {},
+    "isBin": function () {},
     "isCalculate": function () {},
-    "isFilter": function () {}
+    "isFilter": function () {},
+    "isLookup": function () {},
+    "isTimeUnit": function () {},
+    "normalizeTransform": function () {}
   },
   "type": {
     "NOMINAL": {},
@@ -423,29 +452,36 @@ var vl = {
       "QUANTITATIVE": {},
       "TEMPORAL": {}
     },
-    "getFullName": function () {}
+    "getFullName": function () {},
+    "isType": function () {}
   },
   "util": {
+    "accessPath": function () {},
     "contains": function () {},
+    "deleteNestedProperty": function () {},
     "differ": function () {},
     "differArray": function () {},
     "duplicate": function () {},
     "every": function () {},
-    "extend": function () {},
+    "flagKeys": function () {},
     "flatten": function () {},
     "hasIntersection": function () {},
     "hash": function () {},
     "isArray": function () {},
     "isBoolean": function () {},
     "isNumber": function () {},
+    "isNumeric": function () {},
     "isObject": function () {},
     "isString": function () {},
     "keys": function () {},
+    "logicalExpr": function () {},
     "mergeDeep": function () {},
     "omit": function () {},
     "pick": function () {},
     "some": function () {},
+    "splitAccessPath": function () {},
     "stringValue": function () {},
+    "titlecase": function () {},
     "toSet": function () {},
     "truncate": function () {},
     "union": function () {},
