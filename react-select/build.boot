@@ -9,7 +9,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "1.0.0-rc.10")
+(def +lib-version+ "1.0.0-rc.10")
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/react-select
