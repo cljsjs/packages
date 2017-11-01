@@ -27,7 +27,7 @@
 
 (deftask package []
   (comp
-   (download :url (str "https://github.com/JedWatson/react-select/archive/v" +version+ ".zip")
+   (download :url (str "https://github.com/JedWatson/react-select/archive/v" +lib-version+ ".zip")
              :checksum "2ccd33cb2fdde191b2d1f8d35da9128c"
              :unzip true)
 
