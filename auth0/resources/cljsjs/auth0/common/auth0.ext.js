@@ -11,33 +11,35 @@ var auth0 = {
 auth0.Authentication.prototype = {
   "buildAuthorizeUrl": function () {},
   "buildLogoutUrl": function () {},
-  "loginWithDefaultDirectory": function () {},
-  "login": function () {},
-  "oauthToken": function () {},
-  "loginWithResourceOwner": function () {},
-  "getSSOData": function () {},
-  "userInfo": function () {},
   "delegation": function () {},
-  "getUserCountry": function () {}
+  "getSSOData": function () {},
+  "getUserCountry": function () {},
+  "login": function () {},
+  "loginWithDefaultDirectory": function () {},
+  "loginWithResourceOwner": function () {},
+  "oauthToken": function () {},
+  "userInfo": function () {}
 };
 auth0.Management.prototype = {
   "getUser": function () {},
-  "patchUserMetadata": function () {},
-  "linkUser": function () {}
+  "linkUser": function () {},
+  "patchUserMetadata": function () {}
 };
-
-auth0.WebAuth.client = {};
 auth0.WebAuth.prototype = {
-  "parseHash": function () {},
-  "validateToken": function () {},
-  "renewAuth": function () {},
-  "changePassword": function () {},
-  "passwordlessStart": function () {},
-  "signup": function () {},
   "authorize": function () {},
-  "signupAndAuthorize": function () {},
+  "changePassword": function () {},
+  "checkSession": function () {},
+  "crossOriginAuthenticationCallback": function () {},
+  "login": function () {},
   "logout": function () {},
-  "passwordlessVerify": function () {}
+  "parseHash": function () {},
+  "passwordlessLogin": function () {},
+  "passwordlessStart": function () {},
+  "passwordlessVerify": function () {},
+  "renewAuth": function () {},
+  "signup": function () {},
+  "signupAndAuthorize": function () {},
+  "validateToken": function () {}
 };
 /**********************************************************************
  * End Generated Extern for auth0
