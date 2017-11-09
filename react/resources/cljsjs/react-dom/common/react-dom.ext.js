@@ -78,5 +78,5 @@ ReactDOM.unstable_renderSubtreeIntoContainer = function(parentComponent, nextEle
 
 // Version 16
 
-ReactDOM.hydrate = function();
-ReactDOM.createPortal = function();
+ReactDOM.hydrate = function() {};
+ReactDOM.createPortal = function() {};
