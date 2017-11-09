@@ -73,7 +73,7 @@ React.cloneElement = function(element, props) {};
 React.ReactElement = function() {};
 
 /**
- * @interface
+ * @constructor
  */
 React.Component = function() {};
 
@@ -214,6 +214,7 @@ React.Component.prototype.render = function() {};
 
 /**
  * @extends {React.Component}
+ * @constructor
  */
 React.PureComponent = function() {};
 
