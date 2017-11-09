@@ -1,6 +1,6 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.8.2" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0-SNAPSHOT" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -84,4 +84,4 @@
     (package-react)
     (package-dom)
     (package-dom-server)
-    (validate-checksums)))
+    (validate)))

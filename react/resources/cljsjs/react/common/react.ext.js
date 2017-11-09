@@ -70,6 +70,11 @@ React.cloneElement = function(element, props) {};
 /**
  * @interface
  */
+React.ReactElement = function() {};
+
+/**
+ * @interface
+ */
 React.Component = function() {};
 
 /**

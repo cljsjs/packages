@@ -11,9 +11,9 @@ Redux.combineReducers = function () {};
 Redux.compose = function () {};
 
 /**
- * @param {function} reducer
+ * @param {function(*, *)} reducer
  * @param {*=} preloadedState
- * @param {function=} enhancer
+ * @param {function(*)=} enhancer
  * @return {Redux.Store}
  */
 Redux.createStore = function(reducer, preloadedState, enhancer) {};
