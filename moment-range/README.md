@@ -1,8 +1,8 @@
-# cljsjs/moment
+# cljsjs/moment-range
 
 [](dependency)
 ```clojure
-[cljsjs/moment-range "2.0.3-1"] ;; latest release
+[cljsjs/moment-range "3.0.3-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -24,6 +24,5 @@ you can require the packaged library like so:
 ;;Create a range for two arbitrary moments
 (.range js/moment (.startOf (js/moment) "month") (.endOf (js/moment) "month"))
 ```
-
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
