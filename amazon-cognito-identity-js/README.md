@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/amazon-cognito-identity-js "1.19.0-0"] ;; latest release
+[cljsjs/amazon-cognito-identity-js "1.21.0-0"] ;; latest release
 ```
 [](/dependency)
 
