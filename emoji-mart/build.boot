@@ -33,7 +33,9 @@
         (io/copy (tmpd/file f) target))
       (binding [boot.util/*sh-dir* (str (io/file tmp (format "emoji-mart-%s" +lib-version+)))]
         ((sh "npm" "install"))
-        ((sh "npm" "run" "clean" "&&" "npm" "run" "build:data" "&&" "npm" "run" "build:dist"))
+        ((sh "npm" "run" "clean"))
+        ((sh "npm" "run" "build:data"))
+        ((sh "npm" "run" "build:dist"))
         ((sh "npm" "install" "browserify"))
         ((sh "node" "node_modules/browserify/bin/cmd.js" "--debug" "-u" "react" "dist/index.js" "-s" "EmojiMart" "-o" "dist/emoji-mart.js"))
         ((sh "sed" "-i.bak" "/var React = /d" "dist/emoji-mart.js"))
