@@ -4,7 +4,7 @@ https://github.com/absinthe-graphql/absinthe-socket
 
 [](dependency)
 ```clojure
-[cljsjs/absinthe-socket "0.1.8-0"] ;; latest release
+[cljsjs/absinthe-socket "0.1.8-1"] ;; latest release
 ```
 [](/dependency)
 
