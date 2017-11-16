@@ -1,7 +1,7 @@
 (set-env!
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.8.2" :scope "test"]
-                 [cljsjs/prop-types "15.5.10-1"] ;; bump to 15.6.0-0 when released
+                 [cljsjs/prop-types "15.6.0-0"]
                  [cljsjs/react "16.0.0-0"]
                  [cljsjs/react-dom "16.0.0-0"]])
 
@@ -12,7 +12,7 @@
          '[boot.util :refer [sh]])
 
 (def +lib-version+ "0.3.0")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/react-meta-tags
