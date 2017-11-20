@@ -1,7 +1,8 @@
 (set-env!
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.8.2"  :scope "test"]
-                 [asset-minifier "0.2.4" :scope "test"]])
+                 [asset-minifier "0.2.4" :scope "test"]
+                 [cljsjs/three "0.0.87-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -103,19 +104,30 @@
                "-o" (.getPath externs-file))))
         (-> fileset (c/add-resource tmp) c/commit!)))))
 
-(deftask package []
+(deftask update-externs []
   (comp
    (download  :url      "https://github.com/mrdoob/three.js/archive/r87.zip"
               :unzip    true
               :checksum "990dca1488f6d2a966a146d1dc150a63")
    (sift      :move     {#"^three\.js-r\d*/" ""})
    (generate-externs)
-   (sift      :move     {#"examples/js/(.*)\.js"
+   (sift      :include  #{#"^cljsjs"})
+   (target    :dir      #{"resources"})))
+
+(deftask package []
+  (comp
+   (download  :url      "https://github.com/mrdoob/three.js/archive/r87.zip"
+              :unzip    true
+              :checksum "990dca1488f6d2a966a146d1dc150a63")
+   (sift      :move     {#"^three\.js-r\d*/"
+                         ""
+                         #"examples/js/(.*)\.js"
                          "cljsjs/three-examples/development/$1.inc.js"
                          #"examples/js/(.*/)(.*)\.js"
                          "cljsjs/three-examples/development/$1$2.inc.js"})
    (minify-set)
-   (deps-cljs :name     "cljsjs.three-examples")
+   (deps-cljs :name     "cljsjs.three-examples"
+              :requires ["cljsjs.three"])
    (sift      :include  #{#"^cljsjs" #"deps\.cljs"})
    (generate-deps)
    (pom)
