@@ -13,61 +13,76 @@ var d3 = {
   },
   "active": function () {},
   "arc": {
+    "context": function () {},
+    "cornerRadius": function () {},
+    "centroid": function () {},
     "endAngle": function () {},
     "innerRadius": function () {},
     "outerRadius": function () {},
+    "padAngle": function () {},
+    "padRadius": function () {},
     "startAngle": function () {}
   },
   "area": {
+    "context": function () {},
+    "curve": function () {},
+    "defined": function () {},
+    "lineX0": function () {},
+    "lineX1": function () {},
+    "lineY0": function () {},
+    "lineY1": function () {},
+    "x": function () {},
+    "y": function () {},
     "x0": function () {},
     "x1": function () {},
     "y0": function () {},
     "y1": function () {}
   },
+  "areaRadial": function () {},
   "ascending": function () {},
   "axisBottom": {
     "scale": function () {},
     "tickArguments": function () {},
     "tickFormat": function () {},
     "tickPadding": function () {},
+    "ticks": function () {},
     "tickSize": function () {},
     "tickSizeInner": function () {},
     "tickSizeOuter": function () {},
-    "tickValues": function () {},
-    "ticks": function () {}
+    "tickValues": function () {}
   },
   "axisLeft": {
     "scale": function () {},
     "tickArguments": function () {},
     "tickFormat": function () {},
     "tickPadding": function () {},
+    "ticks": function () {},
     "tickSize": function () {},
     "tickSizeInner": function () {},
     "tickSizeOuter": function () {},
-    "tickValues": function () {},
-    "ticks": function () {}
+    "tickValues": function () {}
   },
   "axisRight": {
     "scale": function () {},
     "tickArguments": function () {},
     "tickFormat": function () {},
     "tickPadding": function () {},
+    "ticks": function () {},
     "tickSize": function () {},
     "tickSizeInner": function () {},
     "tickSizeOuter": function () {},
-    "tickValues": function () {},
-    "ticks": function () {}
+    "tickValues": function () {}
   },
   "axisTop": {
     "scale": function () {},
     "tickArguments": function () {},
     "tickFormat": function () {},
     "tickPadding": function () {},
+    "ticks": function () {},
     "tickSize": function () {},
     "tickSizeInner": function () {},
     "tickSizeOuter": function () {},
-    "tickValues": function () {},
-    "ticks": function () {}
+    "tickValues": function () {}
   },
   "bisect": function () {},
   "bisectLeft": function () {},
@@ -81,6 +96,7 @@ var d3 = {
   "cluster": function () {},
   "color": function () {},
   "creator": function () {},
+  "cross": function () {},
   "csv": function () {},
   "csvFormat": function () {},
   "csvFormatRows": function () {},
@@ -221,6 +237,13 @@ var d3 = {
     "strength": function () {},
     "theta": function () {}
   },
+  "forceRadial": {
+    "initialize": function () {},
+    "radius": function () {},
+    "strength": function () {},
+    "x": function () {},
+    "y": function () {}
+  },
   "forceSimulation": {
     "alpha": function () {},
     "alphaDecay": function () {},
@@ -265,13 +288,17 @@ var d3 = {
   "geoBounds": function () {},
   "geoCentroid": function () {},
   "geoCircle": function () {},
+  "geoClipAntimeridian": function () {},
+  "geoClipCircle": function () {},
   "geoClipExtent": function () {},
+  "geoClipRectangle": function () {},
   "geoConicConformal": function () {},
   "geoConicConformalRaw": function () {},
   "geoConicEqualArea": function () {},
   "geoConicEqualAreaRaw": function () {},
   "geoConicEquidistant": function () {},
   "geoConicEquidistantRaw": function () {},
+  "geoContains": function () {},
   "geoDistance": function () {},
   "geoEquirectangular": function () {},
   "geoEquirectangularRaw": {
@@ -282,10 +309,16 @@ var d3 = {
     "invert": function () {}
   },
   "geoGraticule": function () {},
+  "geoGraticule10": function () {},
+  "geoIdentity": function () {},
   "geoInterpolate": function () {},
   "geoLength": function () {},
   "geoMercator": function () {},
   "geoMercatorRaw": {
+    "invert": function () {}
+  },
+  "geoNaturalEarth1": function () {},
+  "geoNaturalEarth1Raw": {
     "invert": function () {}
   },
   "geoOrthographic": function () {},
@@ -355,11 +388,22 @@ var d3 = {
   "keys": function () {},
   "lab": function () {},
   "line": {
+    "context": function () {},
     "curve": function () {},
     "defined": function () {},
     "x": function () {},
     "y": function () {}
   },
+  "lineRadial": {
+    "angle": function () {},
+    "context": function () {},
+    "curve": function () {},
+    "defined": function () {},
+    "radius": function () {}
+  },
+  "linkHorizontal": function () {},
+  "linkRadial": function () {},
+  "linkVertical": function () {},
   "local": function () {},
   "map": function () {},
   "matcher": function () {},
@@ -394,6 +438,7 @@ var d3 = {
     "startAngle": function () {},
     "value": function () {}
   },
+  "pointRadial": function () {},
   "polygonArea": function () {},
   "polygonCentroid": function () {},
   "polygonContains": function () {},
@@ -412,12 +457,24 @@ var d3 = {
     "curve": function () {},
     "radius": function () {}
   },
-  "randomBates": function () {},
-  "randomExponential": function () {},
-  "randomIrwinHall": function () {},
-  "randomLogNormal": function () {},
-  "randomNormal": function () {},
-  "randomUniform": function () {},
+  "randomBates": {
+    "source": function () {}
+  },
+  "randomExponential": {
+    "source": function () {}
+  },
+  "randomIrwinHall": {
+    "source": function () {}
+  },
+  "randomLogNormal": {
+    "source": function () {}
+  },
+  "randomNormal": {
+    "source": function () {}
+  },
+  "randomUniform": {
+    "source": function () {}
+  },
   "range": function () {},
   "request": function () {},
   "rgb": function () {},
@@ -453,9 +510,14 @@ var d3 = {
   },
   "scaleLog": {
     "base": function () {},
+    "clamp": function () {},
     "copy": function () {},
     "domain": function () {},
+    "interpolate": function () {},
+    "invert": function () {},
     "nice": function () {},
+    "range": function () {},
+    "rangeRound": function () {},
     "tickFormat": function () {},
     "ticks": function () {}
   },
@@ -495,6 +557,7 @@ var d3 = {
   "set": function () {},
   "shuffle": function () {},
   "stack": function () {},
+  "stackOffsetDiverging": function () {},
   "stackOffsetExpand": function () {},
   "stackOffsetNone": function () {},
   "stackOffsetSilhouette": function () {},
@@ -505,6 +568,7 @@ var d3 = {
   "stackOrderNone": function () {},
   "stackOrderReverse": function () {},
   "stratify": function () {},
+  "style": function () {},
   "sum": function () {},
   "symbol": function () {},
   "symbolCircle": {
@@ -533,6 +597,7 @@ var d3 = {
   "thresholdFreedmanDiaconis": function () {},
   "thresholdScott": function () {},
   "thresholdSturges": function () {},
+  "tickIncrement": function () {},
   "tickStep": function () {},
   "ticks": function () {},
   "timeDay": {
@@ -904,16 +969,21 @@ var d3 = {
   "xml": function () {},
   "zip": function () {},
   "zoom": {
+    "clickDistance": function () {},
     "duration": function () {},
     "extent": function () {},
     "filter": function () {},
+    "interpolate": function () {},
     "on": function () {},
     "scaleBy": function () {},
     "scaleExtent": function () {},
     "scaleTo": function () {},
+    "touchable": function () {},
     "transform": function () {},
     "translateBy": function () {},
-    "translateExtent": function () {}
+    "translateExtent": function () {},
+    "translateTo": function () {},
+    "wheelDelta": function () {}
   },
   "zoomIdentity": {
     "apply": function () {},
@@ -954,6 +1024,9 @@ d3.dispatch.prototype = {
   "copy": function () {},
   "on": function () {}
 };
+d3.formatSpecifier.prototype = {
+  "toString": function () {}
+};
 d3.hcl.prototype = {
   "brighter": function () {},
   "constructor": function () {},
@@ -966,6 +1039,7 @@ d3.hierarchy.prototype = {
   "ancestors": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "count": function () {},
   "descendants": function () {},
   "each": function () {},
   "eachAfter": function () {},
