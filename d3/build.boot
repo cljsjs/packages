@@ -22,7 +22,8 @@
     (sift :move {#"^d3\.js"      "cljsjs/d3/development/d3.inc.js"
                  #"^d3\.min\.js" "cljsjs/d3/production/d3.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.d3")
+    (deps-cljs :provides ["d3" "cljsjs.d3"]
+               :global-exports '{d3 d3})
     (validate-checksums)
     (pom)
     (jar)))
