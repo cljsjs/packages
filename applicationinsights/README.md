@@ -8,14 +8,17 @@
 
 ```clojure
 (ns application.core
-  (:require cljsjs.applicationinsights))
+  (:require [applicationinsights :refer [ApplicationInsights]]))
 
 
-(defonce init-insights
-  (let [conf     (clj->js {:config {:instrumentationKey "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx"}})
-        init     (js/Microsoft.ApplicationInsights.Initialization. conf)
-        insights (.loadAppInsights init)]
-    (.trackPageView insights)))
+(defonce insights
+  (let [Initialization (aget ApplicationInsights "Initialization")
+        conf           (clj->js {:config {:instrumentationKey "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx"}})
+        init           (Initialization. conf)]
+    (.loadAppInsights init)))
+
+
+(.trackPageview insights)
 ```
 
 [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
