@@ -1,6 +1,6 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.8.2" :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]
                   [cljsjs/parinfer "3.11.0-0"]])
 
 (require '[boot.task-helpers]

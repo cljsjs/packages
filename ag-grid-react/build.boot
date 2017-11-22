@@ -1,6 +1,6 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.8.2" :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]
                   [cljsjs/react "15.2.1-0" :scope "provided"]
                   [cljsjs/react-dom "15.2.1-0" :scope "provided"]
                   [cljsjs/ag-grid "8.0.1-0"]])
