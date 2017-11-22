@@ -93,6 +93,7 @@ var d3 = {
   "brushX": function () {},
   "brushY": function () {},
   "chord": function () {},
+  "clientPoint": function () {},
   "cluster": function () {},
   "color": function () {},
   "creator": function () {},
@@ -970,6 +971,7 @@ var d3 = {
   "zip": function () {},
   "zoom": {
     "clickDistance": function () {},
+    "constrain": function () {},
     "duration": function () {},
     "extent": function () {},
     "filter": function () {},
