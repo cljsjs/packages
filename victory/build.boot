@@ -31,7 +31,7 @@
     (sift :include #{#"^cljsjs"})
 
     (deps-cljs :name "cljsjs.victory"
-               :requires ["cljsjs.react" "cljsjs/prop-types"])
+               :requires ["cljsjs.react" "cljsjs.prop-types"])
 
     (pom)
     (jar)))
