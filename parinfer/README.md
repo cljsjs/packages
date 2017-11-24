@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/parinfer "2.0.0-0"] ;; latest release
+[cljsjs/parinfer "3.11.0-0"] ;; latest release
 ```
 [](/dependency)
 

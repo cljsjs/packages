@@ -1,12 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.7.1" :scope "test"]
-                  [cljsjs/leaflet "0.7.7-4"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]
+                  [cljsjs/leaflet "1.2.0-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.2.3")
-(def +version+ (str +lib-version+ "-2"))
+(def +lib-version+ "0.4.12")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom  {:project     'cljsjs/leaflet-draw
@@ -20,17 +20,17 @@
 
 (deftask package []
   (comp
-    (download :url      (format "https://github.com/Leaflet/Leaflet.draw/archive/%s.zip" +lib-version+)
-              :checksum "BE611BFB85008C3C964ABE46C3C751D2"
-              :unzip    true)
-    (sift :move {#"^Leaflet.draw-(.*)/dist/leaflet.draw-src.js"    	"cljsjs/development/leaflet-draw.inc.js"
-                 #"^Leaflet.draw-(.*)/dist/leaflet.draw.js"        	"cljsjs/production/leaflet-draw.min.inc.js"
-                 #"^Leaflet.draw-(.*)/dist/leaflet.draw.css"       	"cljsjs/common/leaflet-draw.inc.css"
-                 #"^Leaflet.draw-(.*)/dist/images/spritesheet.png" 	"cljsjs/common/images/spritesheet.png"
-                 #"^Leaflet.draw-(.*)/dist/images/spritesheet-2x.png" "cljsjs/common/images/spritesheet-2x.png"
-                 }) ;; TODO Provide one-liner for images
+    (download :url      (format "https://registry.npmjs.org/leaflet-draw/-/leaflet-draw-%s.tgz" +lib-version+)
+              :decompress true
+              :compression-format "gz"
+              :archive-format "tar")
+    (sift :move {#"^.*/dist/leaflet.draw-src.js" "cljsjs/leaflet-draw/development/leaflet-draw.inc.js"
+                 #"^.*/dist/leaflet.draw.js" "cljsjs/leaflet-draw/production/leaflet-draw.min.inc.js"
+                 #"^.*/dist/leaflet.draw.css" "cljsjs/leaflet-draw/common/leaflet-draw.inc.css"
+                 #"^.*/dist/images/(.*).png$" "cljsjs/leaflet-draw/common/images/$1.png"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.leaflet-draw"
                :requires ["cljsjs.leaflet"])
     (pom)
-    (jar)))
+    (jar)
+    (validate-checksums)))

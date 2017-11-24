@@ -4,7 +4,7 @@ This is a cljsjs package for https://github.com/Semantic-Org/Semantic-UI
 
 [](dependency)
 ```clojure
-[cljsjs/semantic-ui "2.2.4-0"] ;; latest release
+[cljsjs/semantic-ui "2.2.13-0"] ;; latest release
 ```
 [](/dependency)
 

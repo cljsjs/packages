@@ -1,8 +1,8 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.7.1" :scope "test"]
-                  [cljsjs/react "15.6.1-2"]
-                  [cljsjs/react-dom "15.6.1-2"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0-SNAPSHOT" :scope "test"]
+                  [cljsjs/react "15.6.2-1"]
+                  [cljsjs/react-dom "15.6.2-1"]
                   [cljsjs/leaflet "1.1.0-2"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
@@ -21,13 +21,12 @@
 (deftask package []
   (comp
     (download :url      (str "https://unpkg.com/react-leaflet@" +lib-version+ "/dist/react-leaflet.js")
-              :target   "cljsjs/react-leaflet/development/react-leaflet.inc.js"
-              :checksum "9A5A94EDAF521D557F573B21CE2B3A9D")
+              :target   "cljsjs/react-leaflet/development/react-leaflet.inc.js")
     (download :url      (str "https://unpkg.com/react-leaflet@" +lib-version+ "/dist/react-leaflet.min.js")
-              :target   "cljsjs/react-leaflet/production/react-leaflet.min.inc.js"
-              :checksum "96B51B1896661CFF7220908E0933FC94")
+              :target   "cljsjs/react-leaflet/production/react-leaflet.min.inc.js")
     (deps-cljs :provides ["react-leaflet" "cljsjs.react-leaflet"]
                :requires ["leaflet" "react" "react-dom"]
                :global-exports '{react-leaflet ReactLeaflet})
     (pom)
-    (jar)))
+    (jar)
+    (validate)))

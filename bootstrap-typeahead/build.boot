@@ -1,6 +1,6 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.7.1" :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]
                   [cljsjs/bootstrap "3.3.6-1"]
                   [cljsjs/jquery "1.9.1-0"]
                   [cljsjs/typeahead-bundle "0.11.1-1"]])

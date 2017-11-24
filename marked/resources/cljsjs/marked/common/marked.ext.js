@@ -14,3 +14,4 @@ marked.inlineLexer = function() {};
 marked.InlineLexer = function() {};
 
 marked.Renderer = function() {};
+marked.setOptions = function() {};

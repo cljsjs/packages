@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/smoothscroll-polyfill "0.3.4-0"] ;; latest release
+[cljsjs/smoothscroll-polyfill "0.4.0-0"] ;; latest release
 ```
 [](/dependency)
 

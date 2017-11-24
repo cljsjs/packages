@@ -1,6 +1,6 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.7.1"  :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -9,9 +9,10 @@
          '[boot.util :refer [sh]]
          '[clojure.string :as str])
 
-(def +lib-version+ "2.7.2")
+(def +lib-version+ "2.9.17")
 (def +version+ (str +lib-version+ "-0"))
-(def +expected-checksum+ "06E2C9023B3CB08A4FFABBE31907179B")
+(def +expected-checksum+ "87472cee553d0dbe9880005107dd6cc1")
+(def +expected-checksum-min+ "deca2909caf12ddac7c0ae1c6d545b50")
 
 (task-options!
   pom  {:project     'cljsjs/react-flip-move
@@ -30,8 +31,8 @@
               :let [target (io/file tmp (tmpd/path f))]]
         (io/make-parents target)
         (io/copy (tmpd/file f) target))
-      (let [build-dir (str (io/file 
-                            tmp 
+      (let [build-dir (str (io/file
+                            tmp
                             (format "react-flip-move-%s" +lib-version+)))]
         (binding [boot.util/*sh-dir* build-dir]
           ((sh "npm" "install"))))
@@ -39,14 +40,13 @@
 
 (deftask package []
   (comp
-    (download :url (str "https://github.com/joshwcomeau/"
-                        "react-flip-move/archive/v" +lib-version+ ".zip")
-              :checksum +expected-checksum+
-              :unzip true) 
-    (build-flip-move)
+    (download :url (str "https://unpkg.com/react-flip-move@" +lib-version+ "/dist/react-flip-move.js")
+              :checksum +expected-checksum+)
+    (download :url (str "https://unpkg.com/react-flip-move@" +lib-version+ "/dist/react-flip-move.min.js")
+              :checksum +expected-checksum-min+)
 
-    (sift :move {#"^react-flip-move.*[/ \\]dist[/ \\]react-flip-move.js$" "cljsjs/react-flip-move/development/react-flip-move.inc.js"
-                 #"^react-flip-move.*[/ \\]dist[/ \\]react-flip-move.min\.js$" "cljsjs/react-flip-move/production/react-flip-move.min.inc.js"})
+    (sift :move {#"react-flip-move\.js" "cljsjs/react-flip-move/development/react-flip-move.inc.js"
+                 #"react-flip-move.min\.js" "cljsjs/react-flip-move/production/react-flip-move.min.inc.js"})
 
     (sift :include #{#"^cljsjs"})
 

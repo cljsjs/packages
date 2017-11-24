@@ -1,11 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.7.1" :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]
                   [cljsjs/react "15.4.2-2"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.0.1")
+(def +lib-version+ "2.5.3")
 (def +version+ (str +lib-version+ "-1"))
 
 (task-options!
@@ -19,7 +19,7 @@
 (deftask package []
   (comp
    (download :url (str "https://unpkg.com/react-xmasonry@ " +lib-version+ "/dist/index.js")
-             :checksum "0EBBB8D60FFC450A9BB625B49B2D0F0F")
+             :checksum "3785BC71BADBBFB0EA0AF8C967B74F23")
    (sift :move {#"^index.js$"  "cljsjs/react-xmasonry/common/react-xmasonry.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.react-xmasonry" :requires ["cljsjs.react"])

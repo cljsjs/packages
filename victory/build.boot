@@ -1,11 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.7.1"  :scope "test"]
-                  [cljsjs/react "15.3.1-0"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]
+                  [cljsjs/react "15.6.2-0"]
+                  [cljsjs/prop-types "15.6.0-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.17.0")
+(def +lib-version+ "0.24.2")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -19,10 +20,10 @@
 (deftask package []
   (comp
 
-    (download :url "https://cdnjs.cloudflare.com/ajax/libs/victory/0.17.0/victory.js"
-              :checksum "881DCF0A61962A75FBE635D36BC68D58")
-    (download :url "https://cdnjs.cloudflare.com/ajax/libs/victory/0.17.0/victory.min.js"
-              :checksum "3AFC1F085AD962748A84B42001F4D19D")
+    (download :url "https://cdnjs.cloudflare.com/ajax/libs/victory/0.24.2/victory.js"
+              :checksum "db8c6f77b988a983152432b0b5cb7f19")
+    (download :url "https://cdnjs.cloudflare.com/ajax/libs/victory/0.24.2/victory.min.js"
+              :checksum "064354b2c2f45fc46bb002f47e2bfc54")
 
     (sift :move {#"^victory\.js"       "cljsjs/victory/development/victory.inc.js"
                  #"^victory\.min.\.js" "cljsjs/victory/production/victory.min.inc.js"})
@@ -30,7 +31,7 @@
     (sift :include #{#"^cljsjs"})
 
     (deps-cljs :name "cljsjs.victory"
-               :requires ["cljsjs.react"])
+               :requires ["cljsjs.react" "cljsjs.prop-types"])
 
     (pom)
     (jar)))

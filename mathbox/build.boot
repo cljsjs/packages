@@ -1,6 +1,6 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/boot-cljsjs "0.7.1" :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]])
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "0.0.1") ; MathBox 1, *not* MathBox 2

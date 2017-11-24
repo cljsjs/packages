@@ -1,6 +1,6 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/boot-cljsjs "0.7.1" :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -8,7 +8,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [dosh]])
 
-(def +lib-version+ "0.19.0")
+(def +lib-version+ "0.25.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -42,7 +42,7 @@
   (task-options! push {:ensure-branch nil})
   (comp
    (download :url (str "https://github.com/material-components/material-components-web/archive/v" +lib-version+ ".zip")
-             :checksum "7d4e3e350eece5ec7d43f973b177afc1"
+             :checksum "0c5101cc2b9d0fbe5515c1262ab17d52"
              :unzip true)
 
    (build-material-components)

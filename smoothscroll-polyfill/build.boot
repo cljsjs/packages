@@ -1,12 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.7.1"  :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]])
 
 (require
   '[cljsjs.boot-cljsjs.packaging :refer :all]
   '[boot.core :as boot])
 
-(def +lib-version+ "0.3.4")
+(def +lib-version+ "0.4.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -20,7 +20,7 @@
 (deftask package []
   (comp
     (download :url (str "https://github.com/iamdustan/smoothscroll/archive/v" +lib-version+ ".zip")
-      :checksum "B1F20B2F4133BEB3B573E2344253B5F6"
+      :checksum "5A41A5F1E95E5219C0F5347FF64594CC"
       :unzip true)
     (sift :move {#"^smoothscroll-.+/dist/smoothscroll.js$" "cljsjs/smoothscroll-polyfill/development/smoothscroll-polyfill.inc.js"})
     (minify

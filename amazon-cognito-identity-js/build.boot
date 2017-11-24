@@ -1,10 +1,10 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.7.1" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.19.0")
+(def +lib-version+ "1.21.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -24,7 +24,7 @@
 (deftask package []
   (comp
    (download :url (format "https://github.com/aws/amazon-cognito-identity-js/archive/v%s.zip" +lib-version+)
-             :checksum "8515F5E1CEB6AEF8B3674675DFE4BF42"
+             :checksum "0D9E39D4FAE2888D96919FA69F9D5CBF"
              :unzip true)
 
    (sift :move {(dist-file "aws-cognito-sdk.js")

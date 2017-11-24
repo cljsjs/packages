@@ -7,4 +7,6 @@
            "cljsjs/common/firebase-auth-externs.js"
            "cljsjs/common/firebase-server-auth-externs.js"
            "cljsjs/common/firebase-client-auth-externs.js"
+           "cljsjs/common/firebase-messaging-externs.js"
+           "cljsjs/common/firebase-error-externs.js"
            "cljsjs/common/firebase-app-externs.js"]}

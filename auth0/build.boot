@@ -1,10 +1,10 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.7.1" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "8.6.0")
+(def +lib-version+ "8.10.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -19,7 +19,7 @@
   (comp
     (download
       :url (format "https://github.com/auth0/auth0.js/archive/v%s.zip" +lib-version+)
-      :checksum "1D5799534400F0B90918D85A2995470D"
+      :checksum "7F6C040D4D80E305004746E7FEBA88FA"
       :unzip true)
     (sift :move {#"^auth0\.js.*/build/auth0\.js$"      "cljsjs/auth0/development/auth0.inc.js"
                  #"^auth0\.js.*/build/auth0\.min\.js$" "cljsjs/auth0/production/auth0.min.inc.js"})

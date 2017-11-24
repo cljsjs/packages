@@ -1,11 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.7.1"  :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]
                   [cljsjs/jquery "2.2.2-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.2.4")
+(def +lib-version+ "2.2.13")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -20,7 +20,7 @@
   (comp
     (download
       :url (format "https://github.com/Semantic-Org/Semantic-UI/archive/%s.zip" +lib-version+)
-      :checksum "F62E6DE8BA291AFF9AEBB4375E1CAB8C"
+      :checksum "00B07F03AFAD84E119C6B7679D7008D6"
       :unzip true)
     (sift :move {#"^Semantic-UI-.*/dist/semantic.js$"     "cljsjs/semantic-ui/development/semantic.inc.js"
                  #"^Semantic-UI-.*/dist/semantic.min.js$" "cljsjs/semantic-ui/production/semantic.min.inc.js"

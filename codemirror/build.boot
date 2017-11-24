@@ -1,13 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.7.1" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "5.24.0")
-(def codemirror-checksum "ae6e5e946ad3dcbc0293f7f9ac53dd62")
+(def +lib-version+ "5.31.0")
 
-(def +version+ (str +lib-version+ "-1"))
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom  {:project     'cljsjs/codemirror
@@ -22,12 +21,17 @@
          '[clojure.string :as string])
 
 (defn path->foreign-lib [path]
-  {:file     path
-   :requires ["cljsjs.codemirror"]
-   :provides [(-> path
-                  (string/replace #"\.inc\.js$" "")
-                  (string/replace #"/common/" "/")
-                  (string/replace #"/" "."))]})
+  (let [node-name (-> path
+                      (string/replace #"\.inc\.js$" "")
+                      (string/replace #"/common/" "/")
+                      (string/replace #"^cljsjs/" ""))
+        ns (-> path
+               (string/replace #"\.inc\.js$" "")
+               (string/replace #"/common/" "/")
+               (string/replace #"/" "."))]
+    {:file     path
+     :requires ["codemirror"]
+     :provides [node-name ns]}))
 
 (deftask generate-extra-deps []
   (let [tmp (c/tmp-dir!)
@@ -45,8 +49,7 @@
 (deftask package []
   (comp
     (download :url (format "http://codemirror.net/codemirror-%s.zip" +lib-version+)
-              :unzip true
-              :checksum codemirror-checksum)
+              :unzip true)
     (sift :move {#"^codemirror-([\d\.]*)/lib/codemirror\.js"    "cljsjs/codemirror/development/codemirror.inc.js"
                  #"^codemirror-([\d\.]*)/lib/codemirror\.css"   "cljsjs/codemirror/development/codemirror.css"
                  #"^codemirror-([\d\.]*)/mode/meta\.js"         "cljsjs/codemirror/common/mode/meta.js"
@@ -60,7 +63,8 @@
     (minify    :in       "cljsjs/codemirror/development/codemirror.css"
                :out      "cljsjs/codemirror/production/codemirror.min.css")
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.codemirror")
+    (deps-cljs :provides ["cljsjs.codemirror" "codemirror"]
+               :global-exports '{codemirror CodeMirror})
     (sift :move {#"^cljsjs/codemirror/common/mode/(.*)\.js" "cljsjs/codemirror/common/mode/$1.inc.js"
                  #"^cljsjs/codemirror/common/keymap/(.*)\.js" "cljsjs/codemirror/common/keymap/$1.inc.js"
                  #"^cljsjs/codemirror/common/addon/(.*)/(.*)\.js" "cljsjs/codemirror/common/addon/$1/$2.inc.js"})

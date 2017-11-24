@@ -226,6 +226,9 @@ var vega = {
   },
   "openTag": function () {},
   "pad": function () {},
+  "panLinear": function () {},
+  "panLog": function () {},
+  "panPow": function () {},
   "parse": function () {},
   "pathCurves": function () {},
   "pathEqual": function () {},
@@ -238,6 +241,7 @@ var vega = {
   "point": function () {},
   "projection": function () {},
   "quartiles": function () {},
+  "random": function () {},
   "randomInteger": function () {},
   "randomKDE": function () {},
   "randomMixture": function () {},
@@ -257,6 +261,7 @@ var vega = {
   "sceneVisit": function () {},
   "sceneZOrder": function () {},
   "scheme": function () {},
+  "setRandom": function () {},
   "splitAccessPath": function () {},
   "stringValue": function () {},
   "textMetrics": {
@@ -542,6 +547,17 @@ var vega = {
       }
     },
     "prefacet": function () {},
+    "project": {
+      "Definition": {
+        "metadata": {
+          "changes": {},
+          "generates": {},
+          "modifies": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
     "projection": function () {},
     "proxy": function () {},
     "relay": function () {},
@@ -628,6 +644,7 @@ var vega = {
       }
     },
     "tupleindex": function () {},
+    "validTicks": function () {},
     "values": function () {},
     "viewlayout": function () {},
     "voronoi": {
@@ -669,7 +686,11 @@ var vega = {
     "date": function () {},
     "integer": function () {},
     "number": function () {},
-    "string": function () {}
+    "string": function () {},
+    "unknown": {
+      "fields": {},
+      "fname": {}
+    }
   },
   "utcInterval": function () {},
   "version": {},
@@ -677,7 +698,10 @@ var vega = {
   "zero": {
     "fields": {},
     "fname": {}
-  }
+  },
+  "zoomLinear": function () {},
+  "zoomLog": function () {},
+  "zoomPow": function () {}
 };
 vega.Bounds.prototype = {
   "add": function () {},
@@ -1570,6 +1594,18 @@ vega.transforms.prefacet.prototype = {
   "set": function () {},
   "skip": function () {},
   "subflow": function () {},
+  "targets": function () {},
+  "transform": function () {}
+};
+vega.transforms.project.prototype = {
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
   "targets": function () {},
   "transform": function () {}
 };

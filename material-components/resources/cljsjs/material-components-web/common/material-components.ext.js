@@ -43,9 +43,9 @@ var mdc = {
     "MDCPersistentDrawerFoundation": function () {},
     "util": function () {}
   },
-  "textfield": {
-    "MDCTextfieldFoundation": function () {},
-    "MDCTextfield": function () {}
+  "textField": {
+    "MDCTextFieldFoundation": function () {},
+    "MDCTextField": function () {}
   },
   "menu": {
     "MDCSimpleMenu": function () {},
@@ -182,11 +182,11 @@ mdc.gridList.MDCGridListFoundation.prototype = {
 
 /* Textfield */
 
-mdc.textfield.MDCTextfieldFoundation.cssClasses = {};
-mdc.textfield.MDCTextfieldFoundation.defaultAdapter = {};
-mdc.textfield.MDCTextfieldFoundation.strings = {};
+mdc.textField.MDCTextFieldFoundation.cssClasses = {};
+mdc.textField.MDCTextFieldFoundation.defaultAdapter = {};
+mdc.textField.MDCTextFieldFoundation.strings = {};
 
-mdc.textfield.MDCTextfieldFoundation.prototype = {
+mdc.textField.MDCTextFieldFoundation.prototype = {
   "destroy": function() {},
   "init": function() {},
   "isDisabled": function() {},

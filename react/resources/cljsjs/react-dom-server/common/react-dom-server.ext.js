@@ -40,3 +40,6 @@ ReactDOMServer.renderToString = function(element) {};
  * @return {string}
  */
 ReactDOMServer.renderToStaticMarkup = function(element) {};
+
+ReactDOMServer.renderToNodeStream = function() {};
+ReactDOMServer.renderToStaticNodeStream = function() {};

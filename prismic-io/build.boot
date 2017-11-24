@@ -1,7 +1,7 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[adzerk/bootlaces   "0.1.13" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.7.1" :scope "test"]])
+                  [cljsjs/boot-cljsjs "0.9.0" :scope "test"]])
 
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])

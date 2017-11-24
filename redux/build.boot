@@ -1,6 +1,6 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies   '[[cljsjs/boot-cljsjs "0.7.1" :scope "test"]])
+  :dependencies   '[[cljsjs/boot-cljsjs "0.9.0-SNAPSHOT" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -17,13 +17,12 @@
 
 (deftask package []
   (comp
-    (download :url (str "https://unpkg.com/redux@" +lib-version+ "/dist/redux.js")
-              :checksum "08d162f019f6f29d87cd2ab27b797c1e")
-    (download :url (str "https://unpkg.com/redux@" +lib-version+ "/dist/redux.min.js")
-              :checksum "c379220604b78bfef9a65b1d55f92041")
-  (sift :move {#"^redux\.js" "cljsjs/redux/development/redux.inc.js"
-               #"^redux\.min\.js" "cljsjs/redux/production/redux.min.inc.js"})
-  (sift :include #{#"^cljsjs"})
-  (deps-cljs :name "cljsjs.redux")
-  (pom)
-  (jar)))
+    (download :url (str "https://unpkg.com/redux@" +lib-version+ "/dist/redux.js"))
+    (download :url (str "https://unpkg.com/redux@" +lib-version+ "/dist/redux.min.js"))
+    (sift :move {#"^redux\.js" "cljsjs/redux/development/redux.inc.js"
+                 #"^redux\.min\.js" "cljsjs/redux/production/redux.min.inc.js"})
+    (sift :include #{#"^cljsjs"})
+    (deps-cljs :name "cljsjs.redux")
+    (pom)
+    (jar)
+    (validate)))
