@@ -1,0 +1,1 @@
+jQuery.prototype.dropotron = function() {};
