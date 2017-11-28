@@ -1,11 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.9.0-SNAPSHOT" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "16.1.0")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "16.1.1")
+(def +version+ (str +lib-version+ "-0"))
 
 (def npm-project {'cljsjs/react "react"
                   'cljsjs/react-dom "react-dom"
