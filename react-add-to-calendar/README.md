@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-add-to-calendar "0.1.4"] ;; latest release
+[cljsjs/react-add-to-calendar "0.1.4-0"] ;; latest release
 ```
 [](/dependency)
 
