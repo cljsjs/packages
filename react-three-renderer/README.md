@@ -4,7 +4,7 @@ https://toxicfork.github.com/react-three-renderer-example/
 
 [](dependency)
 ```clojure
-[cljsjs/material-ui "3.2.3-0"] ;; latest release
+[cljsjs/react-three-renderer "3.2.3-0"] ;; latest release
 ```
 [](/dependency)
 
