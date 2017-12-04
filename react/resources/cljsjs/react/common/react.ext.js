@@ -1911,3 +1911,5 @@ var topTransitionEnd;
 var topVolumeChange;
 var topWaiting;
 var topWheel;
+
+React.Fragment = function() {};
