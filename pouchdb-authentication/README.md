@@ -22,7 +22,7 @@ you can require the packaged library like so:
 Activate the plugin with:
 
 ```clojure
-(.plugin js/PuchDB PouchAuthentication)
+(.plugin js/PouchDB PouchAuthentication)
 ```
 
 ## Generating Externs
