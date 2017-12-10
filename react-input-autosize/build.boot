@@ -24,7 +24,7 @@
     (download :url (format "https://unpkg.com/react-input-autosize@%s/dist/react-input-autosize.min.js" +lib-version+)
               :target "cljsjs/react-input-autosize/production/react-input-autosize.min.inc.js")
     (deps-cljs :provides ["react-input-autosize" "cljsjs.react-input-autosize"]
-               :requires ["react" "prop-types"]
+               :requires ["cljsjs.react" "cljsjs.prop-types"]
                :global-exports '{react-input-autosize AutosizeInput})
     (pom)
     (jar)))
