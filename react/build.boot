@@ -7,9 +7,13 @@
 (def +lib-version+ "16.2.0")
 (def +version+ (str +lib-version+ "-0"))
 
-(def npm-project {'cljsjs/react "react"
-                  'cljsjs/react-dom "react-dom"
-                  'cljsjs/react-dom-server "react-dom"})
+(defn npm-project [project]
+  (case project
+    'cljsjs/react "react"
+    ('cljsjs/react-dom
+     'cljsjs/react-dom-test-utils
+     'cljsjs/react-dom-server)
+    "react-dom"))
 
 (task-options!
  pom  {:project     'cljsjs/react
@@ -62,11 +66,20 @@
 
 (deftask package-dom []
   (package-part
-    {:extern-name "react-dom.ext.js"
-     :provides ["react-dom" "cljsjs.react.dom"]
-     :requires ["react"]
-     :global-exports '{react-dom ReactDOM}
-     :project 'cljsjs/react-dom
+   {:extern-name "react-dom.ext.js"
+    :provides ["react-dom" "cljsjs.react.dom"]
+    :requires ["react"]
+    :global-exports '{react-dom ReactDOM}
+    :project 'cljsjs/react-dom
+    :dependencies [['cljsjs/react +version+]]}))
+
+(deftask package-dom-test-utils []
+  (package-part
+    {:extern-name "react-dom-test-utils.ext.js"
+     :provides ["react-dom-test-utils" "cljsjs.react.dom"]
+     :requires ["react-dom"]
+     :global-exports '{react-dom-test-utils ReactTestUtils}
+     :project 'cljsjs/react-dom-test-utils
      :dependencies [['cljsjs/react +version+]]}))
 
 (deftask package-dom-server []
@@ -83,5 +96,6 @@
   (comp
     (package-react)
     (package-dom)
+    (package-dom-test-utils)
     (package-dom-server)
     (validate)))
