@@ -5,11 +5,10 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "16.2.0")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (def npm-project {'cljsjs/react "react"
-                  'cljsjs/react-dom "react-dom"
-                  'cljsjs/react-dom-server "react-dom"})
+                  'cljsjs/react-dom "react-dom"})
 
 (task-options!
  pom  {:project     'cljsjs/react
@@ -37,51 +36,100 @@
                                           (:tree fileset)))]
         (handler fileset)))))
 
-(defn package-part [{:keys [extern-name project dependencies requires provides global-exports file]}]
-  (with-files (fn [x]
-                (= extern-name (.getName (tmp-file x))))
+(defn download-react [project part]
+  (comp
+    (download :url (format "https://unpkg.com/%s@%s/umd/%s.development.js" project +lib-version+ part)
+              :target (format "cljsjs/%1$s/development/%2$s.inc.js" project part))
+    (download :url (format "https://unpkg.com/%s@%s/umd/%s.production.min.js" project +lib-version+ part)
+              :target (format "cljsjs/%1$s/production/%2$s.min.inc.js" project part))))
+
+(deftask package-react []
+  (with-files (fn [x] (#{"react.ext.js"} (.getName (tmp-file x))))
     (comp
-      (download :url (format "https://unpkg.com/%s@%s/umd/%s.development.js" (npm-project project) +lib-version+ (or file (name project)))
-                :target (format "cljsjs/%1$s/development/%1$s.inc.js" (name project)))
-      (download :url (format "https://unpkg.com/%s@%s/umd/%s.production.min.js" (npm-project project) +lib-version+ (or file (name project)))
-                :target (format "cljsjs/%1$s/production/%1$s.min.inc.js" (name project)))
-      (deps-cljs :provides provides
-                 :requires requires
-                 :global-exports global-exports)
-      (pom :project project
-           :dependencies (or dependencies []))
+      (download-react "react" "react")
+      (deps-cljs :provides ["react" "cljsjs.react"]
+                 :requires []
+                 :global-exports '{react React})
+      (pom :project 'cljsjs/react
+           :dependencies [])
       (show :fileset true)
       (jar))))
 
-(deftask package-react []
-  (package-part
-    {:extern-name "react.ext.js"
-     :provides ["react" "cljsjs.react"]
-     :global-exports '{react React}
-     :project 'cljsjs/react}))
+;; TODO: Generallize for other packages?
+(require '[boot.core :as c]
+         '[boot.util :as util]
+         '[clojure.java.io :as io]
+         '[clojure.pprint :as pprint])
+
+(c/deftask new-deps-cljs
+  [f foreign-libs FOREIGN-LIBS edn ""
+   e externs EXTERNS edn ""]
+  (let [tmp              (c/tmp-dir!)
+        deps-file        (io/file tmp "deps.cljs")]
+    (c/with-pre-wrap fileset
+      (let [in-files (c/input-files fileset)]
+
+        (let [foreign-libs (mapv (fn [{:keys [file file-min] :as lib}]
+                                   (let [files (c/by-re [file] in-files)
+                                         files-min (c/by-re [file-min] in-files)]
+                                     (assert (or (not file) (= (count files) 1)))
+                                     (assert (or (not file-min) (= (count files-min) 1)))
+                                     (cond-> lib
+                                       file (assoc :file (c/tmp-path (first files)))
+                                       file-min (assoc :file-min (c/tmp-path (first files-min))))))
+                                 foreign-libs)
+              externs (vec (mapcat (fn [re]
+                                     (c/by-re [re] in-files))
+                                   externs))
+              data    (merge {:foreign-libs foreign-libs}
+                             (if (seq externs)
+                               {:externs (mapv c/tmp-path externs)}))
+              s (with-out-str (pprint/pprint data))]
+          (util/info (str "deps.cljs:\n" s))
+          (spit deps-file s)
+          (-> fileset
+              (c/add-resource tmp)
+              c/commit!))))))
 
 (deftask package-dom []
-  (package-part
-    {:extern-name "react-dom.ext.js"
-     :provides ["react-dom" "cljsjs.react.dom"]
-     :requires ["react"]
-     :global-exports '{react-dom ReactDOM}
-     :project 'cljsjs/react-dom
-     :dependencies [['cljsjs/react +version+]]}))
+  (with-files (fn [x] (re-find #"react-dom.*\.ext\.js" (.getName (tmp-file x))))
+    (comp
+      (download-react "react-dom" "react-dom")
+      (download-react "react-dom" "react-dom-server.browser")
+      (download-react "react-dom" "react-dom-test-utils")
+      (new-deps-cljs :foreign-libs [{:file #"react-dom\.inc\.js"
+                                 :file-min #"react-dom\.min\.inc\.js"
+                                 :provides ["react-dom" "cljsjs.react-dom"]
+                                 :requires ["react"]
+                                 :global-exports '{react-dom ReactDOM}}
+                                {:file #"react-dom-server\.browser\.inc\.js"
+                                 :file-min #"react-dom-server\.browser\.min\.inc\.js"
+                                 :provides ["react-dom/server" "cljsjs.react.dom.server"]
+                                 :requires ["react-dom"]
+                                 :global-exports '{react-dom/server ReactDOMServer}}
+                                {:file #"react-dom-test-utils\.inc\.js"
+                                 :file-min #"react-dom-test-utils\.min\.inc\.js"
+                                 :provides ["react-dom/test-utils" "cljsjs.react.dom.test-utils"]
+                                 :requires ["react-dom"]
+                                 :global-exports '{react-dom/test-utils ReactTestUtils}}]
+                 :externs [#"react-dom.*\.ext\.js"])
+      (pom :project 'cljsjs/react-dom
+           :dependencies [['cljsjs/react +version+]])
+      (show :fileset true)
+      (jar))))
 
-(deftask package-dom-server []
-  (package-part
-    {:extern-name "react-dom-server.ext.js"
-     :provides ["react-dom/server" "cljsjs.react.dom.server"]
-     :requires ["react"]
-     :global-exports '{react-dom/server ReactDOMServer}
-     :project 'cljsjs/react-dom-server
-     :file "react-dom-server.browser"
-     :dependencies [['cljsjs/react +version+]]}))
+(deftask package-dom-server-stub []
+  (with-files (constantly nil)
+    (comp
+      (pom :project 'cljsjs/react-dom-server
+           :description "React-dom-server package is now deprecated, the server file is included in react-dom package."
+           :dependencies [['cljsjs/react-dom +version+]])
+      (show :fileset true)
+      (jar))))
 
 (deftask package []
   (comp
     (package-react)
     (package-dom)
-    (package-dom-server)
+    (package-dom-server-stub)
     (validate)))
