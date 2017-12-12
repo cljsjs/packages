@@ -28,6 +28,6 @@
                 "cljsjs/slate/production/slate.min.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.slate"
-              :requires ["cljsjs.react" "cljsjs.immutable"])
+              :requires ["cljsjs.immutable"])
    (pom)
    (jar)))
