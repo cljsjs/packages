@@ -4,13 +4,9 @@
 (set-env!
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.8.2" :scope "test"]
-                 [adzerk/bootlaces "0.1.13" :scope "test"]
                  [cljsjs/immutable "3.8.1-0"]])
 
-(require '[cljsjs.boot-cljsjs.packaging :refer :all]
-         '[adzerk.bootlaces :refer :all])
-
-(bootlaces! +version+)
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (task-options!
  pom  {:project     'cljsjs/slate
