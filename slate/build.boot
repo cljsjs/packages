@@ -3,12 +3,8 @@
 
 (set-env!
  :resource-paths #{"resources"}
-<<<<<<< HEAD
  :dependencies '[[cljsjs/boot-cljsjs "0.8.2" :scope "test"]
                  [adzerk/bootlaces "0.1.13" :scope "test"]
-=======
- :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]
->>>>>>> upstream/master
                  [cljsjs/immutable "3.8.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
@@ -17,7 +13,7 @@
 (bootlaces! +version+)
 
 (task-options!
- pom  {:project     'reifyhealth/slate
+ pom  {:project     'cljsjs/slate
        :version     +version+
        :description "A completely customizable framework for building rich text editors."
        :url         "http://slatejs.org"
@@ -31,11 +27,11 @@
    (download :url (str "https://unpkg.com/slate@" +lib-version+  "/dist/slate.min.js")
              :checksum "f50c3828c0ca9040d9047612aa8745bf")
    (sift :move {#"^slate.js$"
-                "reifyhealth/slate/development/slate.inc.js"
+                "cljsjs/slate/development/slate.inc.js"
                 #"^slate.min.js"
-                "reifyhealth/slate/production/slate.min.inc.js"})
-   (sift :include #{#"^reifyhealth"})
-   (deps-cljs :name "reifyhealth.slate"
+                "cljsjs/slate/production/slate.min.inc.js"})
+   (sift :include #{#"^cljsjs"})
+   (deps-cljs :name "cljsjs.slate"
               :requires ["cljsjs.react" "cljsjs.immutable"])
    (pom)
    (jar)))

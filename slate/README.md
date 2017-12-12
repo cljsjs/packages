@@ -1,8 +1,8 @@
-# reifyhealth/slate
+# cljsjs/slate
 
 [](dependency)
 ```clojure
-[reifyhealth/slate "0.31.3-0"] ;; latest release
+[cljsjs/slate "0.31.3-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require reifyhealth.slate))
+  (:require cljsjs.slate))
 ```
 
 Documentation for the slate lib can be found [on its GitHub page](https://github.com/ianstormtaylor/slate)
