@@ -29,6 +29,7 @@
                                :provides ["cljsjs.highlight"]}
                               ;; Each matched file will create foreign lib entry
                               {:file #"cljsjs/production/highlight/(.*)\.min\.inc\.js"
+                               :requires ["cljsjs.highlight"]
                                :provides ["cljsjs.highlight.langs.%1$s"]}]
                :externs [#"highlight\.ext\.js"])
     (sift :include #{#"^cljsjs" #"^deps\.cljs$"})
