@@ -1,12 +1,13 @@
 (set-env!
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]
-                 [cljsjs/react "15.6.1-1"]
-                 [cljsjs/react-dom "15.6.1-1"]])
+                 [cljsjs/react "16.2.0-0"]
+                 [cljsjs/react-dom "16.2.0-0"]
+                 [cljsjs/moment "2.17.1-1"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.0.0")
+(def +lib-version+ "3.0.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -42,7 +43,8 @@
 
    (deps-cljs :name "cljsjs.antd"
               :requires ["cljsjs.react"
-                         "cljsjs.react.dom"])
+                         "cljsjs.react.dom"
+                         "cljsjs.moment"])
 
    (pom)
 
