@@ -39,6 +39,7 @@ auth0.WebAuth.prototype = {
   "renewAuth": function () {},
   "signup": function () {},
   "signupAndAuthorize": function () {},
+  "validateAuthenticationResponse": function () {},
   "validateToken": function () {}
 };
 /**********************************************************************
