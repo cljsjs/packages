@@ -22,4 +22,4 @@ Consult Interact's [documentation](https://github.com/taye/interact.js "Interact
 
 
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

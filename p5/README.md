@@ -21,4 +21,4 @@ Learn about p5.js at https://p5js.org/ and lots of tutorials on [The Coding Trai
 
 A wrapper library, [p5-cljs](https://github.com/pablinos/p5-cljs), is in early development.
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

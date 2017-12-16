@@ -27,7 +27,7 @@ you can require the packaged library like:
   (:require [cljsjs.react-toolbox]))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
 
 If you are using Reagent, a wrapper for this cljsjs library is being developed that will provide ready to use well
 documented Reagent components: [Reagent Toolbox](https://github.com/dashmantech/reagent-toolbox).

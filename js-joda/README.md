@@ -13,7 +13,7 @@ you can require and use the packaged library like so:
 ```clojure
 (ns application.core
   (:require [cljsjs.js-joda]))
-  
+
   (.. js/JSJoda -Year)
 ```
 
@@ -36,5 +36,4 @@ like so
 ```
 
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
-
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

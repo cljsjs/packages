@@ -21,11 +21,11 @@ from a javascript File object (the `img` variable in the example below):
 
 ```
   (js/EXIF.getData img
-   (fn [] (this-as this 
+   (fn [] (this-as this
     (let [exifdata (js->clj (.-exifdata this))]
       ;; exifdata will be a clojure map of exif metadata
       ;; that can be used however you need
     ))))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

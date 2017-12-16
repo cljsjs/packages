@@ -19,4 +19,4 @@ you can require and use the packaged library like so:
 
 Externs were generated manually, so it does not include all the api.
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

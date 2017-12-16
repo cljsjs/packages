@@ -21,4 +21,4 @@ Instantiate the single global Delegator like this:
 (defonce delegator (js/Delegator.))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

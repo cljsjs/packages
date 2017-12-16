@@ -27,4 +27,4 @@ This package also supports `:global-exports`:
 React-with-addons has been [deprecated](https://facebook.github.io/react/docs/addons.html).
 For animation utils use [react-transition-group](../react-transition-group) package instead.
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

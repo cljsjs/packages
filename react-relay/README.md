@@ -59,4 +59,4 @@ For embedding fragments, fully qualify the fragment component (e.g., `"${my.ui.M
 when referenced in GraphQL and export the component where it is defined (e.g., `(def ^:export MyComponent ...)`).
 
 [babel]: https://babeljs.io/
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

@@ -13,7 +13,7 @@ Provides MQTT.js - a client library for the MQTT protocol, written in JavaScript
   (:require [cljsjs.mqtt]))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
 
 ## Example
 ```clojure

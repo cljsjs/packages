@@ -36,4 +36,4 @@ you can require the packaged library like so:
                              :error   (fn [err] (js/console.log "Layout error: " err))}))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

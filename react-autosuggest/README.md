@@ -17,4 +17,4 @@ you can require the packaged library like so:
 
 A sample reagent project that uses the library is available at [https://github.com/cdorrat/autosuggest-sample](https://github.com/cdorrat/autosuggest-sample)
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

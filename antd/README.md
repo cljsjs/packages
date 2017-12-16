@@ -31,4 +31,4 @@ Locales are present under the global `antd` object, *e.g.*:
 If using `LocaleProvider`, pass the result of the above expression as the
 `locale` prop.
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

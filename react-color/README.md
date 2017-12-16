@@ -65,4 +65,4 @@ The build.boot will download the matching source from the github archive, bundle
 
 The react-colors.ext.js file was manually created, and has one entry for each exported ColorPicker React component.
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

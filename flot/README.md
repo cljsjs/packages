@@ -30,4 +30,4 @@ cljsjs.flot.plugins.resize
 cljsjs.flot.plugins.selection
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

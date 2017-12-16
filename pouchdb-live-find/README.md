@@ -15,8 +15,8 @@
  +  (:require cljsjs.pouchdb-live-find))
  +```
  +
- +[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+ +[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
  +
  +## Generating Externs
- + 
+ +
  +The externs were written manually following the `pouchdb-live-find` README.

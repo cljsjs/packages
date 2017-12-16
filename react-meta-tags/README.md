@@ -17,4 +17,4 @@ you can require the packaged library like so:
 (def meta-tags (r/adapt-react-class (aget js/MetaTags "default")))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

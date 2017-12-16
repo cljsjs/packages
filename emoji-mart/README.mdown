@@ -23,4 +23,4 @@ Documentation for EmojiMart can be found [in their GitHub repo](https://github.c
 EmojiMart stylesheet and LICENSE files in the release zip are provided under
 `cljsjs/emoji-mart/common/`.
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

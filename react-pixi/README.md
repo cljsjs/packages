@@ -17,4 +17,4 @@ you can require and use the packaged library like so:
 
 Externs were generated using https://github.com/jmmk/javascript-externs-generator
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

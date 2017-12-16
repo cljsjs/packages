@@ -16,10 +16,10 @@ you can require the packaged library like so:
 ```clojure
 (ns your-ns
   (:require [cljsjs.rot]))
-  
+
   (js/alert (.isSupported js/ROT))
 
 ```
 
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
