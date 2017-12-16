@@ -37,4 +37,4 @@ You can use it like this:
   [:> (.-Col js/ReactFlexboxGrid) {:xs 6 :md 3} "Hello World!"]]]
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

@@ -15,11 +15,11 @@ you can require the packaged library like so:
   (:require [cljsjs.reactstrap]))
 ```
 
-Additionally, this library requires some React Addons. To add React Addons to your project, require 
+Additionally, this library requires some React Addons. To add React Addons to your project, require
 `cljsjs/react-with-addons`. Also ensure that you have excluded all other versions of React. If you don't
 exclude other versions of React then the Addons will not be included in the build and you will get
 errors when using Reactstrap.
 
 Documentation for the Reactstrap lib can be found [here](https://reactstrap.github.io/)
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

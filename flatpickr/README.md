@@ -59,4 +59,4 @@ These end up in `public/flatpickr/`. So, if you are already serving assets from 
 
 Plugins and locales are not yet supported.
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

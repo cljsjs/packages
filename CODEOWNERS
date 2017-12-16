@@ -1,0 +1,9 @@
+# This file documents which packages are maintained by someone.
+# For these packages, you can ask help from mentioned people.
+
+react/           @Deraen
+react_15/        @Deraen
+leaflet/         @Deraen
+leaflet-fullscreen/ @Deraen
+react-leaflet/   @Deraen
+prop-types/      @Deraen

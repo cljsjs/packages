@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/antd "2.13.4-0"] ;; latest release
+[cljsjs/antd "3.0.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -31,4 +31,4 @@ Locales are present under the global `antd` object, *e.g.*:
 If using `LocaleProvider`, pass the result of the above expression as the
 `locale` prop.
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

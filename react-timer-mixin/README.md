@@ -15,4 +15,4 @@ of the ClojureScript compiler. After adding the above dependency to your project
   (:require cljsjs.react-timer-mixin))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

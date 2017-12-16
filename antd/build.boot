@@ -1,12 +1,13 @@
 (set-env!
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]
-                 [cljsjs/react "15.6.1-1"]
-                 [cljsjs/react-dom "15.6.1-1"]])
+                 [cljsjs/react "16.2.0-0"]
+                 [cljsjs/react-dom "16.2.0-0"]
+                 [cljsjs/moment "2.17.1-1"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.13.4")
+(def +lib-version+ "3.0.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -22,19 +23,15 @@
   (comp
 
    (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/antd/" +lib-version+ "/antd-with-locales.js")
-             :checksum "6ba56675c379ab9f056772913c8e8d28"
              :unzip false)
 
    (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/antd/" +lib-version+ "/antd-with-locales.min.js")
-             :checksum "e1855fa83794269b313c7ba8faf438b5"
              :unzip false)
 
    (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/antd/" +lib-version+ "/antd.css")
-             :checksum "3620ec50632e6b075af99b9fb12a3fa3"
              :unzip false)
 
    (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/antd/" +lib-version+ "/antd.min.css")
-             :checksum "8e9b3483d5657af950de4450df1298a0"
              :unzip false)
 
    (sift :move {#"^antd-with-locales.js$"     "cljsjs/antd/development/antd.inc.js"
@@ -46,8 +43,11 @@
 
    (deps-cljs :name "cljsjs.antd"
               :requires ["cljsjs.react"
-                         "cljsjs.react.dom"])
+                         "cljsjs.react.dom"
+                         "cljsjs.moment"])
 
    (pom)
 
-   (jar)))
+   (jar)
+
+   (validate-checksums)))

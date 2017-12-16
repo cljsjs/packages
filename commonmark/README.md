@@ -20,6 +20,6 @@ you can require the packaged library like so:
 syntax tree (AST), manipulating the AST, and rendering the document to HTML or
 to an XML representation of the AST.
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
 [commonmark]: http://commonmark.org/
 [library]: https://github.com/jgm/commonmark.js

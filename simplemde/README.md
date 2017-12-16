@@ -15,16 +15,16 @@ to can require the packaged library like so:
   (:require cljsjs.simplemde))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
 
 #### Non-JS Dependencies
-This package contains two CSS files, 
+This package contains two CSS files,
 
 ```css
 /cljsjs/simplemde/development/simplemde.css      ;non-minified
 /cljsjs/simplemde/production/simplemde.min.css   ;minified
 ```
 
-     
-One of which you must also load into your project in order to use SimpleMDE. 
+
+One of which you must also load into your project in order to use SimpleMDE.
 Refer to [the wiki to learn how to include this file in your project](https://github.com/cljsjs/packages/wiki/Non-JS-Assets).

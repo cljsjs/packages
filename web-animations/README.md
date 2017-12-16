@@ -17,4 +17,4 @@ you can require the packaged library like so:
 
 `web-animations` polyfills Web Animations [W3C spec](http://w3c.github.io/web-animations/).
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

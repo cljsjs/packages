@@ -17,4 +17,4 @@ you can require the packaged library like so:
 (.selectize (js/jQuery (.getElementById js/document "#dropdown")))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

@@ -307,6 +307,21 @@ React.ReactAttribute.onPaste;
 /**
  * @type {Function}
  */
+React.ReactAttribute.onCompositionEnd;
+
+/**
+ * @type {Function}
+ */
+React.ReactAttribute.onCompositionStart;
+
+/**
+ * @type {Function}
+ */
+React.ReactAttribute.onCompositionUpdate;
+
+/**
+ * @type {Function}
+ */
 React.ReactAttribute.onKeyDown;
 
 /**
@@ -342,12 +357,22 @@ React.ReactAttribute.onInput;
 /**
  * @type {Function}
  */
+React.ReactAttribute.onInvalid;
+
+/**
+ * @type {Function}
+ */
 React.ReactAttribute.onSubmit;
 
 /**
  * @type {Function}
  */
 React.ReactAttribute.onClick;
+
+/**
+ * @type {Function}
+ */
+React.ReactAttribute.onContextMenu;
 
 /**
  * @type {Function}
@@ -417,7 +442,22 @@ React.ReactAttribute.onMouseMove;
 /**
  * @type {Function}
  */
+React.ReactAttribute.onMouseOut;
+
+/**
+ * @type {Function}
+ */
+React.ReactAttribute.onMouseOver;
+
+/**
+ * @type {Function}
+ */
 React.ReactAttribute.onMouseUp;
+
+/**
+ * @type {Function}
+ */
+React.ReactAttribute.onSelect;
 
 /**
  * @type {Function}
@@ -448,6 +488,41 @@ React.ReactAttribute.onScroll;
  * @type {Function}
  */
 React.ReactAttribute.onWheel;
+
+/**
+ * @type {Function}
+ */
+React.ReactAttribute.onAbort;
+React.ReactAttribute.onCanPlay;
+React.ReactAttribute.onCanPlayThrough;
+React.ReactAttribute.onDurationChange;
+React.ReactAttribute.onEmptied;
+React.ReactAttribute.onEncrypted;
+React.ReactAttribute.onEnded;
+React.ReactAttribute.onError;
+React.ReactAttribute.onLoadedData;
+React.ReactAttribute.onLoadedMetadata;
+React.ReactAttribute.onLoadStart;
+React.ReactAttribute.onPause;
+React.ReactAttribute.onPlay;
+React.ReactAttribute.onPlaying;
+React.ReactAttribute.onProgress;
+React.ReactAttribute.onRateChange;
+React.ReactAttribute.onSeeked;
+React.ReactAttribute.onSeeking;
+React.ReactAttribute.onStalled;
+React.ReactAttribute.onSuspend;
+React.ReactAttribute.onTimeUpdate;
+React.ReactAttribute.onVolumeChange;
+React.ReactAttribute.onWaiting;
+
+React.ReactAttribute.onAnimationStart;
+React.ReactAttribute.onAnimationEnd;
+React.ReactAttribute.onAnimationIteration;
+
+React.ReactAttribute.onTransitionEnd;
+
+React.ReactAttribute.onToggle;
 
 /**
  * @interface

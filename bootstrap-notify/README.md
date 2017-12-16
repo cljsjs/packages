@@ -17,4 +17,4 @@ you can require the packaged library like so:
 
 Documentation for the bootstrap-notify lib can be found [on its github page](https://github.com/mouse0270/bootstrap-notify)
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

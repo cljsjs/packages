@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/c3 "0.4.14-0"] ;; latest release
+[cljsjs/c3 "0.4.18-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,4 +15,4 @@ you can require the packaged library like so:
   (:require cljsjs.c3))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

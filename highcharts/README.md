@@ -42,4 +42,4 @@ Notes:
 - Style by CSS version is packaged separately: https://github.com/cljsjs/packages/tree/master/highcharts-css
     - That package doesn't currently package the modules
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

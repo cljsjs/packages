@@ -32,7 +32,7 @@ Calling react-sticky example
 
 `<Sticky>` expects a function as its only child, and that function must return a valid React component. The above example shows how to achieve this with an anonymous function returning the value from `reagent.core/as-element`.
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
 
 ## Generating externs
 

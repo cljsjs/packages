@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/pixi "4.6.1-0"] ;; latest release
+[cljsjs/pixi "4.6.2-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -19,4 +19,4 @@ you can require and use the packaged library like so:
 
 Externs were generated using https://github.com/jmmk/javascript-externs-generator
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

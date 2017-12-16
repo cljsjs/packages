@@ -17,4 +17,4 @@ you can require the packaged library like so:
 
 Documentation for the amazon-cognito-identity-js lib can be found [on its github page](https://github.com/aws/amazon-cognito-identity-js)
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

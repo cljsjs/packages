@@ -13,4 +13,4 @@ It does not ship the Trello Client source, so this wil need to be provided throu
 
 [Extern only packages](https://github.com/cljsjs/packages/wiki/Extern-only-packages)
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

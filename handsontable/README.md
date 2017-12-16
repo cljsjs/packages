@@ -15,16 +15,16 @@ to can require the packaged library like so:
   (:require cljsjs.handsontable))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
 
 #### Non-JS Dependencies
-This package contains two CSS files, 
+This package contains two CSS files,
 
 ```css
 /cljsjs/handsontable/development/handsontable.full.css      ;non-minified
 /cljsjs/handsontable/production/handsontable.full.min.css   ;minified
 ```
 
-     
-One of which you must also load into your project in order to use Handsontable. 
+
+One of which you must also load into your project in order to use Handsontable.
 Refer to [the wiki to learn how to include this file in your project](https://github.com/cljsjs/packages/wiki/Non-JS-Assets).

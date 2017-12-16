@@ -17,4 +17,4 @@ you can require the packaged library like so:
 
 Documentation for the react-chartjs-2 lib can be found [here](https://github.com/gor181/react-chartjs-2)
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

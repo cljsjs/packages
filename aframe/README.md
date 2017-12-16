@@ -30,4 +30,4 @@ Changed 50 instances of ` - ` in the generated externs to `.` using Vim regular 
 
 Uses externs generated with by [`jmmk`'s Javascript Externs Generator'](https://github.com/jmmk/javascript-externs-generator).
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

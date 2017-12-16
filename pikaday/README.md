@@ -22,4 +22,4 @@ or if you want to use pikadays optional Moment.js integration:
   (:require cljsjs.pikaday.with-moment))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

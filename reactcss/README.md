@@ -26,4 +26,4 @@ The build.boot will download the matching source from the github archive, bundle
 The reactcss.ext.js file was manually created.
 
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

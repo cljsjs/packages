@@ -19,4 +19,4 @@ you can require the packaged library like so:
 
 [mathbox]: https://github.com/unconed/MathBox.js/tree/legacy
 [mathbox2]: https://gitgud.io/unconed/mathbox
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

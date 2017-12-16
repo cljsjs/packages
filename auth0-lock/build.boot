@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "10.21.1")
+(def +lib-version+ "10.24.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -24,4 +24,5 @@
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.auth0-lock")
     (pom)
-    (jar)))
+    (jar)
+    (validate-checksums)))

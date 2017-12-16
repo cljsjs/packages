@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/highlight "9.12.0-0"] ;; latest release
+[cljsjs/highlight "9.12.0-1"] ;; latest release
 ```
 [](/dependency)
 
@@ -220,4 +220,4 @@ cljsjs.highlight.langs.yaml
 cljsjs.highlight.langs.zephir
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

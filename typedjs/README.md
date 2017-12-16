@@ -16,4 +16,4 @@ you can require the packaged library like so:
 (ns application.core
   (:require cljsjs.typedjs))
 ```
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

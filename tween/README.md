@@ -17,4 +17,4 @@ you can require the packaged library like so:
 
 See example project https://github.com/sonwh98/four
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
