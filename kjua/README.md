@@ -16,5 +16,4 @@ you can require the packaged library like so:
 ```
 Documentation for the kjua lib can be found [here](https://larsjung.de/kjua)
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
-
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

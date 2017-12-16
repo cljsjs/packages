@@ -16,4 +16,4 @@ you can require the packaged library like:
   (:require cljsjs.vega-tooltip))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

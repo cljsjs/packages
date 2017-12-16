@@ -31,4 +31,4 @@ you can require and use the packaged library like so:
 (def asset-loader js/css_beautify)
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

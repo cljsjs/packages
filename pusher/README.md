@@ -16,4 +16,4 @@ your project, you can require the packaged library like so:
  (:require cljsjs.pusher))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

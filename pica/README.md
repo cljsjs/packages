@@ -13,7 +13,7 @@ Provides pica (Resize image in browser with high quality and high speed)
   (:require [cljsjs.pica]))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
 
 ## Maintenance
 

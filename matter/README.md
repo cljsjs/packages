@@ -22,7 +22,7 @@ I made updates to the externs by regenerating them using [Javascript Externs Gen
 ```bash
  egrep "^var.*{};|@property .*" m
  ```
- 
+
 Followed by a lot of manual editing and merging. The examples I've tried work with advanced optimisations, but there still may be things missed.
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

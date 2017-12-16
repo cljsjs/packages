@@ -17,4 +17,4 @@ you can require the packaged library like so:
 
 Uses externs provided by `federico-b/d3-externs`, many thanks!
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

@@ -27,4 +27,4 @@ you can require the packaged library like so:
                                      :end-time "2018-09-16T21:45:00-04:00"}}]]))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

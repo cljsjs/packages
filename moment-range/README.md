@@ -25,4 +25,4 @@ you can require the packaged library like so:
 (.range js/moment (.startOf (js/moment) "month") (.endOf (js/moment) "month"))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

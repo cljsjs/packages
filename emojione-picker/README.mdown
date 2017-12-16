@@ -24,4 +24,4 @@ All contents except `fonts` and `png_512x512` of the `assets/` folder
 in the EmojiOne release zip are provided under
 `cljsjs/emojione-picker/common/`.
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

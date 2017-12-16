@@ -17,4 +17,4 @@ you can require the packaged library like so:
 
 Documentation for the slate lib can be found [on its GitHub page](https://github.com/ianstormtaylor/slate)
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

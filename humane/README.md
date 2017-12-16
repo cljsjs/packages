@@ -18,5 +18,5 @@ you can require the packaged library like so:
   (:require cljsjs.humane))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
 [humane.js]: http://wavded.github.io/humane-js/

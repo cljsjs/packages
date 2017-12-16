@@ -24,4 +24,4 @@ To replace React with Preact, you should add global exclusion to `cljsjs/react`,
 `cljsjs/react-dom` and `cljsjs/react-dom-server` packages, and add dependency to this
 package.
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

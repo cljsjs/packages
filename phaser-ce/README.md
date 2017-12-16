@@ -16,7 +16,7 @@ so:
   (:require cljsjs.phaser-ce))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
 
 
 ## Externs

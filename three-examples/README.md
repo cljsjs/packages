@@ -21,7 +21,7 @@ Currently an automated processing of the files from the `examples/js` directory.
       [cljsjs.three-examples.loaders.OBJLoader2])) ;OBJLoader2 depends on MTL loader for `loadMtl`
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
 
 #### Example: Simple spinning cube
 ```clojure
@@ -67,16 +67,16 @@ Currently an automated processing of the files from the `examples/js` directory.
              (.load obj-loader "male02.obj"
                     (fn [event]
                       (println "Obj model loaded")))))
-    
+
     ;Kick off the animation loop updating
     (defn render []
       (aset pivot "rotation" "y" (+ 0.01 (.-y (.-rotation pivot))))
       (.render renderer scene p-camera))
-    
+
     (defn animate []
       (.requestAnimationFrame js/window animate)
       (render))
-    
+
     (animate)))
 
 (init)

@@ -21,4 +21,4 @@ If you want to use the time picker you can require the time library as well:
   (:require cljsjs.pickadate.time))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

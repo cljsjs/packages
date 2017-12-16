@@ -20,4 +20,4 @@ you can use the packaged library like this:
                       "id"     42"}))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

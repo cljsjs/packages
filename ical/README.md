@@ -20,7 +20,7 @@ Here's a simple example of how to parse the contents of an `.ics` file:
 
 ```clojure
 (def ical-data
-  (clojure.string/join 
+  (clojure.string/join
    "\r\n"
    ["BEGIN:VCALENDAR"
     "CALSCALE:GREGORIAN"
@@ -34,12 +34,12 @@ Here's a simple example of how to parse the contents of an `.ics` file:
     "END:VEVENT"
     "END:VCALENDAR"
     ]))
-    
-(= "Planning meeting" 
+
+(= "Planning meeting"
   (-> (js/ICAL.parse ical-data)
-      (js/ICAL.Component.) 
+      (js/ICAL.Component.)
       (.getFirstSubcomponent "vevent")
       (.getFirstPropertyValue "summary")))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

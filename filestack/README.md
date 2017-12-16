@@ -17,4 +17,4 @@ you can require the packaged library like so:
 
 Documentation for Filestack can be found [on the Filestack documentation site](https://www.filestack.com/docs/).
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

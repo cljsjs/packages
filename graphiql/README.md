@@ -26,4 +26,4 @@ This package ships `graphiql.css` as a resource at path `cljsjs/graphiql/common/
   (slurp (io/resource "cljsjs/graphiql/common/graphiql.css")))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
