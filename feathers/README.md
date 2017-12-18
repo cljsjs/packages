@@ -4,7 +4,7 @@ Provides feathers
 
 [](dependency)
 ```clojure
-[cljsjs/feathers "2.3.0-0"] ;; latest release
+[cljsjs/feathers "3.1.1-0"] ;; latest release
 ```
 [](/dependency)
 
