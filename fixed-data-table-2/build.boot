@@ -7,8 +7,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.7.17")
-(def +version+ (str +lib-version+ "-2"))
+(def +lib-version+ "0.8.8")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/fixed-data-table-2
@@ -20,7 +20,7 @@
 
 (deftask download-fixed-data-table-2 []
   (download :url      (format "https://github.com/schrodinger/fixed-data-table-2/archive/v%s.zip" +lib-version+)
-            :checksum "5D4958C7B2EC94321A00278002B03A46"
+            :checksum "88142ef7241911887bacc96a4ba62be4"
             :unzip    true))
 
 (deftask package []
