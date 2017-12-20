@@ -112,6 +112,11 @@ React.Component.prototype.contextTypes;
 /**
  * @type {Object}
  */
+React.Component.prototype.childContextTypes;
+
+/**
+ * @type {Object}
+ */
 React.Component.prototype.mixins;
 
 /**

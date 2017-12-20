@@ -115,6 +115,11 @@ React.Component.prototype.contextTypes;
 React.Component.prototype.mixins;
 
 /**
+ * @type {Object}
+ */
+React.Component.prototype.childContextTypes;
+
+/**
  * @return {Object}
  */
 React.Component.prototype.getInitialState = function() {};
