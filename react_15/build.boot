@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "15.6.2")
-(def +version+ (str +lib-version+ "-3"))
+(def +version+ (str +lib-version+ "-4"))
 
 (task-options!
  pom  {:project     'cljsjs/react
@@ -41,7 +41,7 @@
       (download-react "react-dom" "react-dom-server")
       (deps-cljs :foreign-libs [{:file #"react-dom\.inc\.js"
                                  :file-min #"react-dom\.min\.inc\.js"
-                                 :provides ["react-dom" "cljsjs.react-dom"]
+                                 :provides ["react-dom" "cljsjs.react.dom"]
                                  :requires ["react"]
                                  :global-exports '{react-dom ReactDOM}}
                                 {:file #"react-dom-server\.inc\.js"

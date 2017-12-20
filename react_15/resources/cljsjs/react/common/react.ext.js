@@ -212,6 +212,11 @@ React.Component.prototype.componentDidUpdate = function(
 React.Component.prototype.componentWillUnmount = function() {};
 
 /**
+ * @protected
+ */
+React.Component.prototype.componentDidCatch = function() {};
+
+/**
  * @return {React.Component}
  * @protected
  */
