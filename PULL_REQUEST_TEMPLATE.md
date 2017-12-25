@@ -1,17 +1,15 @@
-Keep relevant lines. You should select one choice for each category
-(e.g. **Extern**), if none of choices is valid you should probably do
-something or at least add a comment here.
+<!--
+PR Checklist
 
-New package:
+Have you read either:
+https://github.com/cljsjs/packages/wiki/Creating-Packages
+https://github.com/cljsjs/packages/wiki/Updating-packages
 
-**Extern:** Provided by the library.
-**Extern:** Generated.
-**Extern:** Written by hand.
-**Extern:** Not needed as this is Closure library.
+Did you follow contribution guidelines:
+https://github.com/cljsjs/packages/blob/master/CONTRIBUTING.md
 
-Update:
+Did you remember to run package script locally and commit
+boot-cljsjs-checksum.edn file changes?
 
-**Extern:** The API did not change.
-**Extern:** I updated the extern by hand.
-**Extern:** I updated the extern with generator.
-**Extern:** Not needed as this is Closure library.
+boot package install
+-->
