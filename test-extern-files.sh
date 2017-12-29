@@ -2,19 +2,12 @@
 
 # Some duplicate externs manually excluded
 
-externs=$(for ext in $(find . \
-    -name '*.ext.js' \
-    -not -path '*/target/*' \
-    -not -wholename './jquery_1/*/jquery.ext.js' \
-    -not -wholename './highstock/*/highstock.ext.js' \
-    -not -wholename './material-ui/*/react.ext.js' \
-    -not -wholename './material-ui/*/react-dom.ext.js'); do
-echo -en "--externs $ext "
-done)
+externs=$(find . -name '*.ext.js' -not -path '*/target/*' -exec echo -en ' --externs {}' \;)
 
-echo "TESTING:"
-echo $externs
+LEVEL=DEFAULT
+# LEVEL=VERBOSE
 
-    # --warning_level VERBOSE \
-
-java -jar node_modules/google-closure-compiler/compiler.jar --js extern-test.js $externs
+java -jar /usr/local/bin/closure-compiler.jar \
+  --js extern-test.js \
+  --warning_level $LEVEL \
+  $externs

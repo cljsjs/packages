@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-virtualized "9.0.3-1"] ;; latest release
+[cljsjs/react-virtualized "9.11.1-1"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,4 +15,4 @@ you can require the packaged library like so:
   (:require cljsjs.react-virtualized))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/filestack "2.4.10-0"] ;; latest release
+[cljsjs/filestack "0.9.9-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -17,4 +17,4 @@ you can require the packaged library like so:
 
 Documentation for Filestack can be found [on the Filestack documentation site](https://www.filestack.com/docs/).
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

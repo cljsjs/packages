@@ -1,11 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "8.4.1")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/libphonenumber
@@ -22,6 +22,9 @@
               :unzip true)
     (show :fileset true)
     (sift :move {#"^libphonenumber-[\d\.]*/javascript/i18n/phonenumbers/" "cljsjs/libphonenumber/development/i18n/"})
+    (sift :include #{#"cljsjs/libphonenumber/.*test"
+                     #"cljsjs/libphonenumber/.*demo"}
+          :invert true)
     (sift :include #{#"^cljsjs/" #"deps.cljs"})
     (pom)
     (jar)))

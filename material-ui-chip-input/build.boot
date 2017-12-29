@@ -1,8 +1,10 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]
+                  [cljsjs/material-ui "0.19.0-0"]
+                  [cljsjs/react "15.6.1-1"]])
 
-(def +lib-version+ "0.13.0")
+(def +lib-version+ "0.17.2")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "material-ui-chip-input-%s" +lib-version+))
 
@@ -24,7 +26,7 @@
 
 (deftask download-material-ui-chip-input []
          (download :url url
-                   :checksum "e74e5829c2a01ebd243c692d1e888d18"
+                   :checksum "06EFFCB23E852D834B9858E0F89412FF"
                    :unzip true))
 
 (def webpack-file-name "webpack.config.js")
@@ -60,6 +62,6 @@
      (minify :in  "cljsjs/material-ui-chip-input/development/material-ui-chip-input.inc.js"
              :out "cljsjs/material-ui-chip-input/production/material-ui-chip-input.min.inc.js")
 
-     (deps-cljs :name "cljsjs.material-ui-chip-input" :requires ["cljsjs.react" "cljsjs.material-ui"])
+     (deps-cljs :name "material-ui-chip-input" :requires ["react" "cljsjs.material-ui"])
      (pom)
      (jar)))

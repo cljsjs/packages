@@ -5,4 +5,4 @@ if [[ -z $1 ]]; then
     exit
 fi
 
-sed -i 's/boot-cljsjs\(\s*\)"[0-9.]*"/boot-cljsjs\1"'$1'"/' $(find -iname 'build.boot')
+sed -i 's/boot-cljsjs\(\s*\)"[0-9.]*(-SNAPSHOT)?"/boot-cljsjs\1"'$1'"/' $(find -iname 'build.boot')

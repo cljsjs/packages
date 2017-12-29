@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-modal "1.6.5-0"] ;; latest release
+[cljsjs/react-modal "2.3.2-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -23,4 +23,4 @@ Calling react modal example
               ...react/react-dom components here...)
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

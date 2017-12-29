@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/preact "7.1.0-0"] ;; latest release
+[cljsjs/preact "8.2.5-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -18,4 +18,4 @@ you can require the packaged library like so:
 ```
 
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

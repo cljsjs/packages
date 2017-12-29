@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/socket-io "1.6.0-0"] ;; latest release
+[cljsjs/socket-io "2.0.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,4 +15,4 @@ you can require the packaged library like so:
   (:require cljsjs.socket-io))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

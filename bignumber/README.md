@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/bignumber "2.1.4-1"] ;; latest release
+[cljsjs/bignumber "4.1.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,4 +15,4 @@ you can require the packaged library like so:
   (:require cljsjs.bignumber))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

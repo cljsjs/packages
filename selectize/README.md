@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/selectize "0.12.1-1"] ;; latest release
+[cljsjs/selectize "0.12.1-2"] ;; latest release
 ```
 [](/dependency)
 
@@ -17,4 +17,4 @@ you can require the packaged library like so:
 (.selectize (js/jQuery (.getElementById js/document "#dropdown")))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

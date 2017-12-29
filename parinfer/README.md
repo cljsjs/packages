@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/parinfer "1.8.1-0"] ;; latest release
+[cljsjs/parinfer "3.11.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -20,4 +20,4 @@ you can require the packaged library like so:
 ```
 
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

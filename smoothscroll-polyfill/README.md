@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/smoothscroll-polyfill "0.3.4-0"] ;; latest release
+[cljsjs/smoothscroll-polyfill "0.4.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,4 +15,4 @@ you can require the packaged library like so:
   (:require [cljsjs.smoothscroll-polyfill]))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

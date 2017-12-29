@@ -1,10 +1,10 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.26.1")
+(def +lib-version+ "0.31.2")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,7 +18,7 @@
 (deftask package []
   (comp
    (download  :url      (format "https://github.com/handsontable/handsontable/archive/%s.zip" +lib-version+)
-              :checksum "E98DE42564A851F01C9B93EE1DB74776"
+              :checksum "6CF70AFD087195D66C60137B64BD6BC4"
               :unzip    true)
    (sift      :move     {#"^handsontable.*/dist/handsontable\.full\.js$"    "cljsjs/handsontable/development/handsontable.full.inc.js"
                          #"^handsontable.*/dist/handsontable\.full\.css$"   "cljsjs/handsontable/development/handsontable.full.css"

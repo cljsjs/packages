@@ -4,7 +4,7 @@ http://www.material-ui.com/#/
 
 [](dependency)
 ```clojure
-[cljsjs/material-ui "0.17.4-0"] ;; latest release
+[cljsjs/material-ui "0.19.2-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -30,4 +30,4 @@ you can require the packaged library like so:
                   cljsjs.material-ui-svg-icons))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

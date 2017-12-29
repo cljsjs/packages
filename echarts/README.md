@@ -15,6 +15,6 @@ you can require the packaged library like so:
   (:require cljsjs.echarts))
 ```
 
-I replaced the Chinese toolbox text in the code with English translation, so end users will not see Chinese characters. 
+I replaced the Chinese toolbox text in the code with English translation, so end users will not see Chinese characters.
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

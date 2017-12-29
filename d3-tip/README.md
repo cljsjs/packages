@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/d3-tip "0.6.7-1"] ;; latest release
+[cljsjs/d3-tip "0.7.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -14,4 +14,4 @@ you can require the packaged library like so:
 (ns application.core
   (:require cljsjs.d3-tip))
 ```
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

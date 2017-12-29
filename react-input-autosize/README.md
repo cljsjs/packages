@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-input-autosize "1.1.0-0"] ;; latest release
+[cljsjs/react-input-autosize "2.0.0-1"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,4 +15,4 @@ you can require the packaged library like so:
   (:require cljsjs.react-input-autosize))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

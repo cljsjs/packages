@@ -1,9 +1,9 @@
-(def +lib-version+ "1.6.2")
+(def +lib-version+ "3.6.4")
 (def +version+ (str +lib-version+ "-0"))
 
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -16,16 +16,16 @@
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (def modules
-  {"inferno" "C6BF944224CBC32D835C2E0EA76E81B6",
-   "inferno-hyperscript.min" "C9694DB078CB5AC4AB021E08982E1D9A",
-   "inferno.min" "3A7DD1CD7C0A1547A402D0875A5104FD",
-   "inferno-create-element" "9566EE8BD2B7029465EEC180332A453A",
-   "inferno-hyperscript" "DFF58879BE2C422A43174E5274BA87A3",
-   "inferno-component" "56E234FD21369C56782C4EF53D365A7D",
-   "inferno-create-element.min" "9A3C118A3DD3E7C03EDC1658A8890AEB",
-   "inferno-component.min" "6884422F9A73CB28B4CF2F5CC323E8FD",
-   "inferno-create-class.min" "A14B9FFD8AB581A4654D92DE3E3E64AF",
-   "inferno-create-class" "526280EAD00DB454E6557CF8C8D4AFAE"})
+  {"inferno" "0E54A338B81B9FC71C597F57C2DC8819",
+   "inferno-hyperscript.min" "907D00E92CFDCFCDC76C7A4202328E31",
+   "inferno.min" "A2CD33BA6103A28C10C210AAE449598C",
+   "inferno-create-element" "79802C984554C1C4DC70FBD95EA57691",
+   "inferno-hyperscript" "B96AE123563217B2D3F5D18345B7B71E",
+   "inferno-component" "9125815484D1DEA03873628D6705C4F3",
+   "inferno-create-element.min" "59A995A8C57DDF785B31434C19C22E8B",
+   "inferno-component.min" "D2F40499D612081249BEDB12567675F0",
+   "inferno-create-class.min" "A293EAA615937614CA98EC8DCB80D83C",
+   "inferno-create-class" "4D3ED0D866E77C8E3424708B76E75AA1"})
 
 (defn get-module-url [module]
   (str "https://unpkg.com/"

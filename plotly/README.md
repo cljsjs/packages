@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/plotly "1.25.0-0"] ;; latest release
+[cljsjs/plotly "1.30.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -24,4 +24,4 @@ you can use the packaged library like this:
    (clj->js {:margin {:t 0}})))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

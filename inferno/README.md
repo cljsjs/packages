@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/inferno "1.6.2-0"] ;; latest release
+[cljsjs/inferno "3.6.4-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -37,4 +37,4 @@ Consult Inferno's [documentation](https://github.com/infernojs/inferno "Inferno"
 
 
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

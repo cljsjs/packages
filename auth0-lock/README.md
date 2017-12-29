@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/auth0-lock "10.13.0-0"] ;; latest release
+[cljsjs/auth0-lock "10.24.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -17,4 +17,4 @@ you can require the packaged library like so:
 
 Documentation for the auth0-lock lib can be found [on its github page](https://github.com/auth0/lock)
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

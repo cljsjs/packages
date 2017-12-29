@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-leaflet "0.12.3-4"] ;; latest release
+[cljsjs/react-leaflet "1.6.5-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,7 +15,7 @@ you can require the packaged library like so:
   (:require cljsjs.react-leaflet))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
 
 Note: This extern is a work in progress. You may need to add symbols
 as needed. For example (from leaflet library):

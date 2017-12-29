@@ -10,6 +10,7 @@
  *
  * @type {!Object}
  * @const
+ * @suppress {const|duplicate}
  */
 var ReactDOM = {};
 
@@ -24,10 +25,10 @@ ReactDOM.version;
 
 
 /**
- * @param {React.ReactComponent} container
+ * @param {React.Component} container
  * @param {Element} mountPoint
  * @param {Function=} opt_callback
- * @return {React.ReactComponent}
+ * @return {React.Component}
  */
 ReactDOM.render = function(container, mountPoint, opt_callback) {};
 
@@ -40,7 +41,7 @@ ReactDOM.unmountComponentAtNode = function(container) {};
 
 
 /**
- * @param {React.ReactComponent} component
+ * @param {React.Component} component
  * @return {Element}
  */
 ReactDOM.findDOMNode = function(component) {};
@@ -67,10 +68,15 @@ ReactDOM.unstable_batchedUpdates = function(callback, opt_a, opt_b, opt_c, opt_d
  * perform an update on it and only mutate the DOM as necessary to reflect the
  * latest React component.
  *
- * @param {React.ReactComponent} parentComponent The conceptual parent of this render tree.
+ * @param {React.Component} parentComponent The conceptual parent of this render tree.
  * @param {React.ReactElement} nextElement Component element to render.
  * @param {Element} container DOM element to render into.
  * @param {Function=} opt_callback function triggered on completion
- * @return {React.ReactComponent} Component instance rendered in `container`.
+ * @return {React.Component} Component instance rendered in `container`.
  */
 ReactDOM.unstable_renderSubtreeIntoContainer = function(parentComponent, nextElement, container, opt_callback) {};
+
+// Version 16
+
+ReactDOM.hydrate = function() {};
+ReactDOM.createPortal = function() {};

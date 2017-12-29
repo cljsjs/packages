@@ -1,1 +1,1 @@
-{:libs ["cljsjs/incremental-dom/development"]}
+{:libs ["cljsjs/incremental-dom/development/"]}

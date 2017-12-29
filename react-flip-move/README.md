@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-flip-move "2.7.2-0"] ;; latest release
+[cljsjs/react-flip-move "2.9.17-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -22,15 +22,15 @@ Here's a simple reagent example:
 
 (defn my-list [data]
   [:div
-    [:ul 
+    [:ul
       [flip-move {:easing "cubic-bezier(0, 0.7, 0.8, 0.1)"}
         (map (fn [[k v]] (vector :li {:key k} v)) (:list @data))]]
 
     [:button.btn.btn-primary
       {:on-click #(swap! data update-in
-                         [:list] (fn [s] 
+                         [:list] (fn [s]
                                    (into {} (shuffle (seq s)))))}
       "Shuffle"]])
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

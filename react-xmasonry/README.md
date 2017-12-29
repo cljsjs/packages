@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-xmasonry "2.0.1-1"] ;; latest release
+[cljsjs/react-xmasonry "2.5.3-1"] ;; latest release
 ```
 [](/dependency)
 
@@ -17,4 +17,4 @@ you can require the packaged library like so:
 
 Documentation for the aws-sdk-js lib can be found [on its github page](https://github.com/ZitRos/react-xmasonry)
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

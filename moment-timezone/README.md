@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/moment-timezone "0.5.11-0"] ;; latest release
+[cljsjs/moment-timezone "0.5.11-1"] ;; latest release
 ```
 [](/dependency)
 
@@ -18,4 +18,4 @@ you can require the packaged library like so:
 (def stockholm-snapshot (.tz helsinki-snapshot "Europe/Stockholm"))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

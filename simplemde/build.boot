@@ -1,6 +1,6 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -11,7 +11,7 @@
  pom {:project     'cljsjs/simplemde
       :version     +version+
       :description "A drop-in JavaScript textarea replacement for writing beautiful and understandable Markdown"
-      :url         "https://github.com/showdownjs/showdown"
+      :url         "https://simplemde.com/"
       :scm         {:url "https://github.com/NextStepWebs/simplemde-markdown-editor"}
       :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 

@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/skel "3.0.1-0"] ;; latest release
+[cljsjs/skel "3.0.1-1"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,4 +15,4 @@ you can require the packaged library like so:
   (:require cljsjs.skel))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

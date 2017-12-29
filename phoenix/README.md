@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/phoenix "1.2.0-0"] ;; latest release
+[cljsjs/phoenix "1.3.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,4 +15,4 @@ you can require the packaged library like so:
   (:require cljsjs.phoenix))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/vis "4.17.0-0"] ;; latest release
+[cljsjs/vis "4.20.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,4 +15,4 @@ you can require the packaged library like:
   (:require cljsjs.vis))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

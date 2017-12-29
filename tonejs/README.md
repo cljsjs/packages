@@ -40,4 +40,4 @@ Here's an example of basic usage
 
 To learn more about tonejs, check out tonejs'  [API](https://tonejs.github.io/docs/) and [examples](https://tonejs.github.io/docs/).
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

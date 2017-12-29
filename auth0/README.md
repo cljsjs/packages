@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/auth0 "8.1.2-0"] ;; latest release
+[cljsjs/auth0 "8.12.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -17,4 +17,4 @@ you can require the packaged library like so:
 
 Documentation for the auth0 lib can be found [on its github page](https://github.com/auth0/auth0.js)
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

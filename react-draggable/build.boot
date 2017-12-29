@@ -1,12 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]
                   [cljsjs/react "15.3.1-0"]
                   [cljsjs/react-dom "15.3.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.2.3")
+(def +lib-version+ "3.0.3")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -24,7 +24,7 @@
 
 (deftask download-react-draggable []
   (download :url (format "https://github.com/mzabriskie/react-draggable/archive/v%s.zip" +lib-version+)
-            :checksum "5435d08b0d8a2bffb57d5d5bfa42bf35"
+            :checksum "c3e5fcda8e216f431fa48263a04fc2c8"
             :unzip true))
 
 (deftask package []

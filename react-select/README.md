@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-select "1.0.0-rc.1"] ;; latest release
+[cljsjs/react-select "1.0.0-rc.10-1"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,4 +15,4 @@ you can require the packaged library like so:
   (:require cljsjs.react-select))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

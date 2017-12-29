@@ -17,4 +17,4 @@ you can require the packaged library like so:
 
 When working on this wrapper on Windows, beware [boot-cljsjs/48](https://github.com/cljsjs/boot-cljsjs/issues/48)!
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

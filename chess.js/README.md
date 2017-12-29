@@ -13,3 +13,5 @@ you can require the packaged library like so:
 (ns application.core
   (:require cljsjs.chess.js :as chess))
 ```
+
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

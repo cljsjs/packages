@@ -8,6 +8,7 @@ var Autosuggest = {
 	"renderSuggestion": {},
 	"inputProps": {},
 	"onSuggestionSelected": {},
+    "onSuggestionHighlighted": {},
 	"shouldRenderSuggestions": {},
 	"alwaysRenderSuggestions": {},
 	"focusFirstSuggestion": {},
@@ -29,6 +30,7 @@ var Autosuggest = {
 	"renderSuggestion": {},
 	"inputProps": {},
 	"onSuggestionSelected": {},
+    "onSuggestionHighlighted": {},
 	"shouldRenderSuggestions": {},
 	"alwaysRenderSuggestions": {},
 	"focusFirstSuggestion": {},
@@ -42,4 +44,3 @@ var Autosuggest = {
 	"id": {}
     }
 }
-

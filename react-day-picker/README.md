@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-day-picker "2.4.1-0"] ;; latest release
+[cljsjs/react-day-picker "5.5.3-1"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,4 +15,4 @@ you can require the packaged library like so:
   (:require cljsjs.react-day-picker))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

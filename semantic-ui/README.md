@@ -4,7 +4,7 @@ This is a cljsjs package for https://github.com/Semantic-Org/Semantic-UI
 
 [](dependency)
 ```clojure
-[cljsjs/semantic-ui "2.2.4-0"] ;; latest release
+[cljsjs/semantic-ui "2.2.13-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -16,4 +16,4 @@ you can require the packaged library like so:
 (ns application.core
   (:require cljsjs.semantic-ui))
 ```
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

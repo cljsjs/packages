@@ -15,9 +15,9 @@ you can require the packaged library like so:
 ```clojure
 (ns application.core
   (:require cljsjs.lunrjs))
-  
+
 ;; call lunr rather than lunrjs
-(js/lunr (fn [] ...)) 
+(js/lunr (fn [] ...))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

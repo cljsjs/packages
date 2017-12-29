@@ -14,4 +14,4 @@ The Google Maps js API will still need to provided through some other mechanism.
 
 [Extern only packages](https://github.com/cljsjs/packages/wiki/Extern-only-packages)
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

@@ -16,5 +16,5 @@ of the ClojureScript compiler. After adding the above dependency to your project
  (:require cljsjs.jszip))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
 [JSZip]: https://stuk.github.io/jszip/

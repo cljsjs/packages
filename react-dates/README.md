@@ -6,7 +6,7 @@ An example of this being used with Reagent can be found [here](https://github.co
 
 [](dependency)
 ```clojure
-[cljsjs/react-dates "8.2.1-2"] ;; latest release
+[cljsjs/react-dates "12.2.4-1"] ;; latest release
 ```
 [](/dependency)
 
@@ -19,4 +19,4 @@ you can require the packaged library like so:
   (:require cljsjs.react-dates))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

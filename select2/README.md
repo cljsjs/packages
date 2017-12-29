@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/select2 "4.0.3-0"] ;; latest release
+[cljsjs/select2 "4.0.3-1"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,7 +15,7 @@ you can require the packaged library like so:
   (:require [cljsjs.select2]))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
 
 ## Example:
 

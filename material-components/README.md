@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/material-components "0.7.0-0"] ;; latest release
+[cljsjs/material-components "0.25.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -37,6 +37,6 @@ according to the [MDC Theme Package][mdctheme]. There are many more options for
 mixins if you so desire. You would then load the compiled css in your project.
 Et voilà, you are set free to theme away.
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
 [nonjs]: https://github.com/cljsjs/packages/wiki/Non-JS-Assets
 [mdctheme]: https://github.com/material-components/material-components-web/tree/master/packages/mdc-theme

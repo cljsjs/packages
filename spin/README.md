@@ -18,5 +18,5 @@ you can require the packaged library like so:
   (:require cljsjs.spin))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
 [spin.js]: http://spin.js.org

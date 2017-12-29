@@ -4,7 +4,7 @@ http://react.semantic-ui.com
 
 [](dependency)
 ```clojure
-[cljsjs/semantic-ui-react "0.67.1-0"] ;; latest release
+[cljsjs/semantic-ui-react "0.76.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -43,4 +43,4 @@ Example:
   [:> button {:onClick #(println "Hello world")} "Press Me"])
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

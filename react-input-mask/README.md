@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-input-mask "0.7.5-0"] ;; latest release
+[cljsjs/react-input-mask "0.8.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,4 +15,4 @@ you can require the packaged library like so:
   (:require cljsjs.react-input-mask))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

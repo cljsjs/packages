@@ -1,8 +1,8 @@
-# cljsjs/pdjjs
+# cljsjs/pdfjs
 
 [](dependency)
 ```clojure
-[cljsjs/pdfjs "1.5.188-0"] ;; latest release
+[cljsjs/pdfjs "1.8.188-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,4 +15,4 @@ you can require the packaged library like so:
   (:require cljsjs.pdfjs))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

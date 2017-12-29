@@ -6,7 +6,8 @@ for x in *; do
             continue
         fi
 
-        artifact=${x//_[0-9]/}
+        # jquery_1, jquery_2, react and react_15 are different versions of the same package
+        artifact=${x//_[0-9]*/}
         version=$(grep "def +lib-version+" $x/build.boot | grep -o "\".*\"" | head -n1 | cut -d \" -f 2)
         version=$version$(grep "def +version+" $x/build.boot | grep -o "\".*\"" | head -n1 | cut -d \" -f 2)
 

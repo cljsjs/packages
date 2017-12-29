@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/highstock "4.2.6-0"] ;; latest release
+[cljsjs/highstock "5.0.14-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,4 +15,4 @@ you can require the packaged library like so:
   (:require cljsjs.highstock))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

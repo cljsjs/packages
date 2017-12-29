@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/benchmark "2.1.0-2"] ;; latest release
+[cljsjs/benchmark "2.1.4-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,4 +15,4 @@ you can require the packaged library like:
   (:require cljsjs.benchmark))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

@@ -2,529 +2,393 @@
 // to generate the externs
 
 var vis = {
-  "util": {
-    "isNumber": function () {},
-    "recursiveDOMDelete": function () {},
-    "giveRange": function () {},
-    "isString": function () {},
-    "isDate": function () {},
-    "randomUUID": function () {},
-    "assignAllKeys": function () {},
-    "fillIfDefined": function () {},
-    "protoExtend": function () {},
-    "extend": function () {},
-    "selectiveExtend": function () {},
-    "selectiveDeepExtend": function () {},
-    "selectiveNotDeepExtend": function () {},
-    "deepExtend": function () {},
-    "equalArray": function () {},
-    "convert": function () {},
-    "getType": function () {},
-    "copyAndExtendArray": function () {},
-    "copyArray": function () {},
-    "getAbsoluteLeft": function () {},
-    "getAbsoluteRight": function () {},
-    "getAbsoluteTop": function () {},
-    "addClassName": function () {},
-    "removeClassName": function () {},
-    "forEach": function () {},
-    "toArray": function () {},
-    "updateProperty": function () {},
-    "throttle": function () {},
-    "addEventListener": function () {},
-    "removeEventListener": function () {},
-    "preventDefault": function () {},
-    "getTarget": function () {},
-    "hasParent": function () {},
-    "option": {
-      "asBoolean": function () {},
-      "asNumber": function () {},
-      "asString": function () {},
-      "asSize": function () {},
-      "asElement": function () {}
-    },
-    "hexToRGB": function () {},
-    "overrideOpacity": function () {},
-    "RGBToHex": function () {},
-    "parseColor": function () {},
-    "RGBToHSV": function () {},
-    "addCssText": function () {},
-    "removeCssText": function () {},
-    "HSVToRGB": function () {},
-    "HSVToHex": function () {},
-    "hexToHSV": function () {},
-    "isValidHex": function () {},
-    "isValidRGB": function () {},
-    "isValidRGBA": function () {},
-    "selectiveBridgeObject": function () {},
-    "bridgeObject": function () {},
-    "insertSort": function () {},
-    "mergeOptions": function () {},
-    "binarySearchCustom": function () {},
-    "binarySearchValue": function () {},
-    "easingFunctions": {
-      "linear": function () {},
-      "easeInQuad": function () {},
-      "easeOutQuad": function () {},
-      "easeInOutQuad": function () {},
-      "easeInCubic": function () {},
-      "easeOutCubic": function () {},
-      "easeInOutCubic": function () {},
-      "easeInQuart": function () {},
-      "easeOutQuart": function () {},
-      "easeInOutQuart": function () {},
-      "easeInQuint": function () {},
-      "easeOutQuint": function () {},
-      "easeInOutQuint": function () {}
-    },
-    "getScrollBarWidth": function () {}
-  },
   "DOMutil": {
-    "prepareElements": function () {},
     "cleanupElements": function () {},
-    "resetElements": function () {},
-    "getSVGElement": function () {},
-    "getDOMElement": function () {},
+    "drawBar": function () {},
     "drawPoint": function () {},
-    "drawBar": function () {}
+    "getDOMElement": function () {},
+    "getSVGElement": function () {},
+    "prepareElements": function () {},
+    "resetElements": function () {}
   },
   "DataSet": function () {},
   "DataView": function () {},
-  "Queue": {
-    "extend": function () {}
-  },
+  "Graph2d": function () {},
   "Graph3d": {
     "STYLE": {
       "BAR": {},
       "BARCOLOR": {},
       "BARSIZE": {},
       "DOT": {},
-      "DOTLINE": {},
       "DOTCOLOR": {},
+      "DOTLINE": {},
       "DOTSIZE": {},
       "GRID": {},
       "LINE": {},
       "SURFACE": {}
     }
   },
+  "Hammer": {
+    "AttrRecognizer": function () {},
+    "DIRECTION_ALL": {},
+    "DIRECTION_DOWN": {},
+    "DIRECTION_HORIZONTAL": {},
+    "DIRECTION_LEFT": {},
+    "DIRECTION_NONE": {},
+    "DIRECTION_RIGHT": {},
+    "DIRECTION_UP": {},
+    "DIRECTION_VERTICAL": {},
+    "INPUT_CANCEL": {},
+    "INPUT_END": {},
+    "INPUT_MOVE": {},
+    "INPUT_START": {},
+    "Input": function () {},
+    "Manager": function () {},
+    "MouseInput": function () {},
+    "Pan": function () {},
+    "Pinch": function () {},
+    "PointerEventInput": function () {},
+    "Press": function () {},
+    "Recognizer": function () {},
+    "Rotate": function () {},
+    "STATE_BEGAN": {},
+    "STATE_CANCELLED": {},
+    "STATE_CHANGED": {},
+    "STATE_ENDED": {},
+    "STATE_FAILED": {},
+    "STATE_POSSIBLE": {},
+    "STATE_RECOGNIZED": {},
+    "SingleTouchInput": function () {},
+    "Swipe": function () {},
+    "Tap": function () {},
+    "TouchAction": function () {},
+    "TouchInput": function () {},
+    "TouchMouseInput": function () {},
+    "VERSION": {},
+    "assign": function () {},
+    "bindFn": function () {},
+    "defaults": {
+      "cssProps": {
+        "contentZooming": {},
+        "tapHighlightColor": {},
+        "touchCallout": {},
+        "touchSelect": {},
+        "userDrag": {},
+        "userSelect": {}
+      },
+      "domEvents": {},
+      "enable": {},
+      "inputClass": {},
+      "inputTarget": {},
+      "preset": {},
+      "touchAction": {}
+    },
+    "each": function () {},
+    "extend": function () {},
+    "inherit": function () {},
+    "merge": function () {},
+    "off": function () {},
+    "on": function () {},
+    "prefixed": function () {}
+  },
+  "Network": function () {},
+  "Queue": {
+    "extend": function () {}
+  },
+  "Timeline": function () {},
   "graph3d": {
     "Camera": function () {},
     "Filter": function () {},
     "Point2d": function () {},
     "Point3d": {
-      "subtract": function () {},
       "add": function () {},
       "avg": function () {},
-      "crossProduct": function () {}
+      "crossProduct": function () {},
+      "subtract": function () {}
     },
     "Slider": function () {},
     "StepNumber": {
       "calculatePrettyStep": function () {}
     }
   },
+  "keycharm": function () {},
   "moment": {
-    "momentProperties": {},
-    "suppressDeprecationWarnings": {},
-    "deprecationHandler": {},
-    "parseTwoDigitYear": function () {},
-    "createFromInputFallback": function () {},
     "ISO_8601": function () {},
-    "updateOffset": function () {},
+    "RFC_2822": function () {},
+    "calendarFormat": function () {},
+    "createFromInputFallback": function () {},
     "defaultFormat": {},
     "defaultFormatUtc": {},
-    "lang": function () {},
-    "langData": function () {},
-    "version": {},
+    "defineLocale": function () {},
+    "deprecationHandler": {},
+    "duration": {
+      "fn": {
+        "_bubble": function () {},
+        "abs": function () {},
+        "add": function () {},
+        "as": function () {},
+        "asDays": function () {},
+        "asHours": function () {},
+        "asMilliseconds": function () {},
+        "asMinutes": function () {},
+        "asMonths": function () {},
+        "asSeconds": function () {},
+        "asWeeks": function () {},
+        "asYears": function () {},
+        "days": function () {},
+        "get": function () {},
+        "hours": function () {},
+        "humanize": function () {},
+        "isValid": function () {},
+        "lang": function () {},
+        "locale": function () {},
+        "localeData": function () {},
+        "milliseconds": function () {},
+        "minutes": function () {},
+        "months": function () {},
+        "seconds": function () {},
+        "subtract": function () {},
+        "toISOString": function () {},
+        "toIsoString": function () {},
+        "toJSON": function () {},
+        "toString": function () {},
+        "valueOf": function () {},
+        "weeks": function () {},
+        "years": function () {}
+      },
+      "invalid": function () {}
+    },
     "fn": {
       "add": function () {},
       "calendar": function () {},
       "clone": function () {},
+      "creationData": function () {},
+      "date": function () {},
+      "dates": function () {},
+      "day": function () {},
+      "dayOfYear": function () {},
+      "days": function () {},
+      "daysInMonth": function () {},
       "diff": function () {},
       "endOf": function () {},
       "format": function () {},
       "from": function () {},
       "fromNow": function () {},
-      "to": function () {},
-      "toNow": function () {},
       "get": function () {},
+      "hasAlignedHourOffset": function () {},
+      "hour": function () {},
+      "hours": function () {},
+      "inspect": function () {},
       "invalidAt": function () {},
       "isAfter": function () {},
       "isBefore": function () {},
       "isBetween": function () {},
+      "isDST": function () {},
+      "isDSTShifted": function () {},
+      "isLeapYear": function () {},
+      "isLocal": function () {},
       "isSame": function () {},
       "isSameOrAfter": function () {},
       "isSameOrBefore": function () {},
+      "isUTC": function () {},
+      "isUtc": function () {},
+      "isUtcOffset": function () {},
       "isValid": function () {},
+      "isoWeek": function () {},
+      "isoWeekYear": function () {},
+      "isoWeekday": function () {},
+      "isoWeeks": function () {},
+      "isoWeeksInYear": function () {},
       "lang": function () {},
+      "local": function () {},
       "locale": function () {},
       "localeData": function () {},
       "max": function () {},
+      "millisecond": function () {},
+      "milliseconds": function () {},
       "min": function () {},
+      "minute": function () {},
+      "minutes": function () {},
+      "month": function () {},
+      "months": function () {},
+      "parseZone": function () {},
       "parsingFlags": function () {},
+      "quarter": function () {},
+      "quarters": function () {},
+      "second": function () {},
+      "seconds": function () {},
       "set": function () {},
       "startOf": function () {},
       "subtract": function () {},
+      "to": function () {},
       "toArray": function () {},
-      "toObject": function () {},
       "toDate": function () {},
       "toISOString": function () {},
       "toJSON": function () {},
+      "toNow": function () {},
+      "toObject": function () {},
       "toString": function () {},
       "unix": function () {},
-      "valueOf": function () {},
-      "creationData": function () {},
-      "year": function () {},
-      "isLeapYear": function () {},
-      "weekYear": function () {},
-      "isoWeekYear": function () {},
-      "quarters": function () {},
-      "quarter": function () {},
-      "month": function () {},
-      "daysInMonth": function () {},
-      "weeks": function () {},
-      "week": function () {},
-      "isoWeeks": function () {},
-      "isoWeek": function () {},
-      "weeksInYear": function () {},
-      "isoWeeksInYear": function () {},
-      "date": function () {},
-      "days": function () {},
-      "day": function () {},
-      "weekday": function () {},
-      "isoWeekday": function () {},
-      "dayOfYear": function () {},
-      "hours": function () {},
-      "hour": function () {},
-      "minutes": function () {},
-      "minute": function () {},
-      "seconds": function () {},
-      "second": function () {},
-      "milliseconds": function () {},
-      "millisecond": function () {},
-      "utcOffset": function () {},
       "utc": function () {},
-      "local": function () {},
-      "parseZone": function () {},
-      "hasAlignedHourOffset": function () {},
-      "isDST": function () {},
-      "isLocal": function () {},
-      "isUtcOffset": function () {},
-      "isUtc": function () {},
-      "isUTC": function () {},
-      "zoneAbbr": function () {},
-      "zoneName": function () {},
-      "dates": function () {},
-      "months": function () {},
+      "utcOffset": function () {},
+      "valueOf": function () {},
+      "week": function () {},
+      "weekYear": function () {},
+      "weekday": function () {},
+      "weeks": function () {},
+      "weeksInYear": function () {},
+      "year": function () {},
       "years": function () {},
       "zone": function () {},
-      "isDSTShifted": function () {}
+      "zoneAbbr": function () {},
+      "zoneName": function () {}
     },
-    "min": function () {},
-    "max": function () {},
-    "now": function () {},
-    "utc": function () {},
-    "unix": function () {},
-    "months": function () {},
-    "isDate": function () {},
-    "locale": function () {},
     "invalid": function () {},
-    "duration": {
-      "fn": {
-        "abs": function () {},
-        "add": function () {},
-        "subtract": function () {},
-        "as": function () {},
-        "asMilliseconds": function () {},
-        "asSeconds": function () {},
-        "asMinutes": function () {},
-        "asHours": function () {},
-        "asDays": function () {},
-        "asWeeks": function () {},
-        "asMonths": function () {},
-        "asYears": function () {},
-        "valueOf": function () {},
-        "_bubble": function () {},
-        "get": function () {},
-        "milliseconds": function () {},
-        "seconds": function () {},
-        "minutes": function () {},
-        "hours": function () {},
-        "days": function () {},
-        "weeks": function () {},
-        "months": function () {},
-        "years": function () {},
-        "humanize": function () {},
-        "toISOString": function () {},
-        "toString": function () {},
-        "toJSON": function () {},
-        "locale": function () {},
-        "localeData": function () {},
-        "toIsoString": function () {},
-        "lang": function () {}
-      }
-    },
-    "isMoment": function () {},
-    "weekdays": function () {},
-    "parseZone": function () {},
-    "localeData": function () {},
+    "isDate": function () {},
     "isDuration": function () {},
-    "monthsShort": function () {},
-    "weekdaysMin": function () {},
-    "defineLocale": function () {},
-    "updateLocale": function () {},
+    "isMoment": function () {},
+    "lang": function () {},
+    "langData": function () {},
+    "locale": function () {},
+    "localeData": function () {},
     "locales": function () {},
-    "weekdaysShort": function () {},
+    "max": function () {},
+    "min": function () {},
+    "momentProperties": {},
+    "months": function () {},
+    "monthsShort": function () {},
     "normalizeUnits": function () {},
+    "now": function () {},
+    "parseTwoDigitYear": function () {},
+    "parseZone": function () {},
     "relativeTimeRounding": function () {},
     "relativeTimeThreshold": function () {},
-    "calendarFormat": function () {}
+    "suppressDeprecationWarnings": {},
+    "unix": function () {},
+    "updateLocale": function () {},
+    "updateOffset": function () {},
+    "utc": function () {},
+    "version": {},
+    "weekdays": function () {},
+    "weekdaysMin": function () {},
+    "weekdaysShort": function () {}
   },
-  "Hammer": {
-    "VERSION": {},
-    "defaults": {
-      "domEvents": {},
-      "touchAction": {},
-      "enable": {},
-      "inputTarget": {},
-      "inputClass": {},
-      "preset": {},
-      "cssProps": {
-        "userSelect": {},
-        "touchSelect": {},
-        "touchCallout": {},
-        "contentZooming": {},
-        "userDrag": {},
-        "tapHighlightColor": {}
-      }
-    },
-    "INPUT_START": {},
-    "INPUT_MOVE": {},
-    "INPUT_END": {},
-    "INPUT_CANCEL": {},
-    "STATE_POSSIBLE": {},
-    "STATE_BEGAN": {},
-    "STATE_CHANGED": {},
-    "STATE_ENDED": {},
-    "STATE_RECOGNIZED": {},
-    "STATE_CANCELLED": {},
-    "STATE_FAILED": {},
-    "DIRECTION_NONE": {},
-    "DIRECTION_LEFT": {},
-    "DIRECTION_RIGHT": {},
-    "DIRECTION_UP": {},
-    "DIRECTION_DOWN": {},
-    "DIRECTION_HORIZONTAL": {},
-    "DIRECTION_VERTICAL": {},
-    "DIRECTION_ALL": {},
-    "Manager": function () {},
-    "Input": function () {},
-    "TouchAction": function () {},
-    "TouchInput": function () {},
-    "MouseInput": function () {},
-    "PointerEventInput": function () {},
-    "TouchMouseInput": function () {},
-    "SingleTouchInput": function () {},
-    "Recognizer": function () {},
-    "AttrRecognizer": function () {},
-    "Tap": function () {},
-    "Pan": function () {},
-    "Swipe": function () {},
-    "Pinch": function () {},
-    "Rotate": function () {},
-    "Press": function () {},
-    "on": function () {},
-    "off": function () {},
-    "each": function () {},
-    "merge": function () {},
-    "extend": function () {},
-    "assign": function () {},
-    "inherit": function () {},
-    "bindFn": function () {},
-    "prefixed": function () {}
-  },
-  "keycharm": function () {},
-  "Timeline": function () {},
-  "Graph2d": function () {},
-  "timeline": {
-    "Core": function () {},
-    "DateUtil": {
-      "convertHiddenOptions": function () {},
-      "updateHiddenDates": function () {},
-      "removeDuplicates": function () {},
-      "printDates": function () {},
-      "stepOverHiddenDates": function () {},
-      "toScreen": function () {},
-      "toTime": function () {},
-      "getHiddenDurationBetween": function () {},
-      "getHiddenDurationBeforeStart": function () {},
-      "correctTimeForHidden": function () {},
-      "getHiddenDurationBefore": function () {},
-      "getAccumulatedHiddenDuration": function () {},
-      "snapAwayFromHidden": function () {},
-      "isHidden": function () {}
-    },
-    "Range": {
-      "conversion": function () {}
-    },
-    "stack": {
-      "orderByStart": function () {},
-      "orderByEnd": function () {},
-      "stack": function () {},
-      "nostack": function () {},
-      "collision": function () {}
-    },
-    "TimeStep": {
-      "FORMAT": {
-        "minorLabels": {
-          "millisecond": {},
-          "second": {},
-          "minute": {},
-          "hour": {},
-          "weekday": {},
-          "day": {},
-          "month": {},
-          "year": {}
-        },
-        "majorLabels": {
-          "millisecond": {},
-          "second": {},
-          "minute": {},
-          "hour": {},
-          "weekday": {},
-          "day": {},
-          "month": {},
-          "year": {}
-        }
-      },
-      "snap": function () {}
-    },
-    "components": {
-      "items": {
-        "Item": function () {},
-        "BackgroundItem": function () {},
-        "BoxItem": function () {},
-        "PointItem": function () {},
-        "RangeItem": function () {}
-      },
-      "BackgroundGroup": function () {},
-      "Component": function () {},
-      "CurrentTime": function () {},
-      "CustomTime": {
-        "customTimeFromTarget": function () {}
-      },
-      "DataAxis": function () {},
-      "DataScale": function () {},
-      "GraphGroup": function () {},
-      "Group": function () {},
-      "ItemSet": {
-        "types": {
-          "background": function () {},
-          "box": function () {},
-          "range": function () {},
-          "point": function () {}
-        },
-        "_getItemRange": function () {},
-        "itemSetFromTarget": function () {}
-      },
-      "Legend": function () {},
-      "LineGraph": function () {},
-      "TimeAxis": function () {}
-    }
-  },
-  "Network": function () {},
   "network": {
     "Images": {
       "default": function () {}
     },
-    "dotparser": {
-      "parseDOT": function () {},
-      "DOTToGraph": function () {}
-    },
-    "gephiParser": {
-      "parseGephi": function () {}
-    },
     "allOptions": {
       "allOptions": {
+        "__type__": {
+          "object": {}
+        },
+        "autoResize": {
+          "boolean": {}
+        },
+        "clickToUse": {
+          "boolean": {}
+        },
         "configure": {
-          "enabled": {
-            "boolean": {}
-          },
-          "filter": {
-            "boolean": {},
-            "string": {},
+          "__type__": {
             "array": {},
-            "function": {}
+            "boolean": {},
+            "function": {},
+            "object": {},
+            "string": {}
           },
           "container": {
             "dom": {}
           },
-          "showButton": {
+          "enabled": {
             "boolean": {}
           },
-          "__type__": {
-            "object": {},
-            "boolean": {},
-            "string": {},
+          "filter": {
             "array": {},
-            "function": {}
+            "boolean": {},
+            "function": {},
+            "string": {}
+          },
+          "showButton": {
+            "boolean": {}
           }
         },
         "edges": {
-          "arrows": {
-            "to": {
-              "enabled": {
-                "boolean": {}
-              },
-              "scaleFactor": {
-                "number": {}
-              },
-              "type": {
-                "string": {}
-              },
-              "__type__": {
-                "object": {},
-                "boolean": {}
-              }
-            },
-            "middle": {
-              "enabled": {
-                "boolean": {}
-              },
-              "scaleFactor": {
-                "number": {}
-              },
-              "type": {
-                "string": {}
-              },
-              "__type__": {
-                "object": {},
-                "boolean": {}
-              }
-            },
-            "from": {
-              "enabled": {
-                "boolean": {}
-              },
-              "scaleFactor": {
-                "number": {}
-              },
-              "type": {
-                "string": {}
-              },
-              "__type__": {
-                "object": {},
-                "boolean": {}
-              }
-            },
-            "__type__": {
-              "string": {},
-              "object": {}
-            }
+          "__type__": {
+            "object": {}
           },
           "arrowStrikethrough": {
             "boolean": {}
           },
+          "arrows": {
+            "__type__": {
+              "object": {},
+              "string": {}
+            },
+            "from": {
+              "__type__": {
+                "boolean": {},
+                "object": {}
+              },
+              "enabled": {
+                "boolean": {}
+              },
+              "scaleFactor": {
+                "number": {}
+              },
+              "type": {
+                "string": {}
+              }
+            },
+            "middle": {
+              "__type__": {
+                "boolean": {},
+                "object": {}
+              },
+              "enabled": {
+                "boolean": {}
+              },
+              "scaleFactor": {
+                "number": {}
+              },
+              "type": {
+                "string": {}
+              }
+            },
+            "to": {
+              "__type__": {
+                "boolean": {},
+                "object": {}
+              },
+              "enabled": {
+                "boolean": {}
+              },
+              "scaleFactor": {
+                "number": {}
+              },
+              "type": {
+                "string": {}
+              }
+            }
+          },
+          "chosen": {
+            "__type__": {
+              "boolean": {},
+              "object": {}
+            },
+            "edge": {
+              "boolean": {},
+              "function": {}
+            },
+            "label": {
+              "boolean": {},
+              "function": {}
+            }
+          },
           "color": {
+            "__type__": {
+              "object": {},
+              "string": {}
+            },
             "color": {
               "string": {}
             },
@@ -535,46 +399,133 @@ var vis = {
               "string": {}
             },
             "inherit": {
-              "string": {},
-              "boolean": {}
+              "boolean": {},
+              "string": {}
             },
             "opacity": {
               "number": {}
-            },
-            "__type__": {
-              "object": {},
-              "string": {}
             }
           },
           "dashes": {
-            "boolean": {},
-            "array": {}
+            "array": {},
+            "boolean": {}
           },
           "font": {
-            "color": {
-              "string": {}
-            },
-            "size": {
-              "number": {}
-            },
-            "face": {
-              "string": {}
-            },
-            "background": {
-              "string": {}
-            },
-            "strokeWidth": {
-              "number": {}
-            },
-            "strokeColor": {
+            "__type__": {
+              "object": {},
               "string": {}
             },
             "align": {
               "string": {}
             },
-            "__type__": {
-              "object": {},
+            "background": {
               "string": {}
+            },
+            "bold": {
+              "__type__": {
+                "object": {},
+                "string": {}
+              },
+              "color": {
+                "string": {}
+              },
+              "face": {
+                "string": {}
+              },
+              "mod": {
+                "string": {}
+              },
+              "size": {
+                "number": {}
+              },
+              "vadjust": {
+                "number": {}
+              }
+            },
+            "boldital": {
+              "__type__": {
+                "object": {},
+                "string": {}
+              },
+              "color": {
+                "string": {}
+              },
+              "face": {
+                "string": {}
+              },
+              "mod": {
+                "string": {}
+              },
+              "size": {
+                "number": {}
+              },
+              "vadjust": {
+                "number": {}
+              }
+            },
+            "color": {
+              "string": {}
+            },
+            "face": {
+              "string": {}
+            },
+            "ital": {
+              "__type__": {
+                "object": {},
+                "string": {}
+              },
+              "color": {
+                "string": {}
+              },
+              "face": {
+                "string": {}
+              },
+              "mod": {
+                "string": {}
+              },
+              "size": {
+                "number": {}
+              },
+              "vadjust": {
+                "number": {}
+              }
+            },
+            "mono": {
+              "__type__": {
+                "object": {},
+                "string": {}
+              },
+              "color": {
+                "string": {}
+              },
+              "face": {
+                "string": {}
+              },
+              "mod": {
+                "string": {}
+              },
+              "size": {
+                "number": {}
+              },
+              "vadjust": {
+                "number": {}
+              }
+            },
+            "multi": {
+              "boolean": {},
+              "string": {}
+            },
+            "size": {
+              "number": {}
+            },
+            "strokeColor": {
+              "string": {}
+            },
+            "strokeWidth": {
+              "number": {}
+            },
+            "vadjust": {
+              "number": {}
             }
           },
           "hidden": {
@@ -599,18 +550,22 @@ var vis = {
             "boolean": {}
           },
           "scaling": {
-            "min": {
-              "number": {}
+            "__type__": {
+              "object": {}
             },
-            "max": {
-              "number": {}
+            "customScalingFunction": {
+              "function": {}
             },
             "label": {
+              "__type__": {
+                "boolean": {},
+                "object": {}
+              },
+              "drawThreshold": {
+                "number": {}
+              },
               "enabled": {
                 "boolean": {}
-              },
-              "min": {
-                "number": {}
               },
               "max": {
                 "number": {}
@@ -618,19 +573,15 @@ var vis = {
               "maxVisible": {
                 "number": {}
               },
-              "drawThreshold": {
+              "min": {
                 "number": {}
-              },
-              "__type__": {
-                "object": {},
-                "boolean": {}
               }
             },
-            "customScalingFunction": {
-              "function": {}
+            "max": {
+              "number": {}
             },
-            "__type__": {
-              "object": {}
+            "min": {
+              "number": {}
             }
           },
           "selectionWidth": {
@@ -641,11 +592,15 @@ var vis = {
             "number": {}
           },
           "shadow": {
-            "enabled": {
-              "boolean": {}
+            "__type__": {
+              "boolean": {},
+              "object": {}
             },
             "color": {
               "string": {}
+            },
+            "enabled": {
+              "boolean": {}
             },
             "size": {
               "number": {}
@@ -655,51 +610,54 @@ var vis = {
             },
             "y": {
               "number": {}
-            },
-            "__type__": {
-              "object": {},
-              "boolean": {}
             }
           },
           "smooth": {
+            "__type__": {
+              "boolean": {},
+              "object": {}
+            },
             "enabled": {
               "boolean": {}
             },
-            "type": {
+            "forceDirection": {
+              "boolean": {},
               "string": {}
             },
             "roundness": {
               "number": {}
             },
-            "forceDirection": {
-              "string": {},
-              "boolean": {}
-            },
-            "__type__": {
-              "object": {},
-              "boolean": {}
+            "type": {
+              "string": {}
             }
           },
           "title": {
             "string": {},
             "undefined": {}
           },
-          "width": {
-            "number": {}
-          },
           "value": {
             "number": {},
             "undefined": {}
           },
-          "__type__": {
-            "object": {}
+          "width": {
+            "number": {}
+          },
+          "widthConstraint": {
+            "__type__": {
+              "boolean": {},
+              "number": {},
+              "object": {}
+            },
+            "maximum": {
+              "number": {}
+            }
           }
         },
         "groups": {
-          "useDefaultGroups": {
-            "boolean": {}
-          },
           "__any__": {
+            "__type__": {
+              "object": {}
+            },
             "borderWidth": {
               "number": {}
             },
@@ -711,113 +669,241 @@ var vis = {
               "string": {},
               "undefined": {}
             },
+            "chosen": {
+              "__type__": {
+                "boolean": {},
+                "object": {}
+              },
+              "label": {
+                "boolean": {},
+                "function": {}
+              },
+              "node": {
+                "boolean": {},
+                "function": {}
+              }
+            },
             "color": {
-              "border": {
+              "__type__": {
+                "object": {},
                 "string": {}
               },
               "background": {
                 "string": {}
               },
+              "border": {
+                "string": {}
+              },
               "highlight": {
-                "border": {
+                "__type__": {
+                  "object": {},
                   "string": {}
                 },
                 "background": {
                   "string": {}
                 },
-                "__type__": {
-                  "object": {},
+                "border": {
                   "string": {}
                 }
               },
               "hover": {
-                "border": {
+                "__type__": {
+                  "object": {},
                   "string": {}
                 },
                 "background": {
                   "string": {}
                 },
-                "__type__": {
-                  "object": {},
+                "border": {
                   "string": {}
                 }
-              },
-              "__type__": {
-                "object": {},
-                "string": {}
               }
             },
             "fixed": {
+              "__type__": {
+                "boolean": {},
+                "object": {}
+              },
               "x": {
                 "boolean": {}
               },
               "y": {
                 "boolean": {}
-              },
-              "__type__": {
-                "object": {},
-                "boolean": {}
               }
             },
             "font": {
+              "__type__": {
+                "object": {},
+                "string": {}
+              },
               "align": {
-                "string": {}
-              },
-              "color": {
-                "string": {}
-              },
-              "size": {
-                "number": {}
-              },
-              "face": {
                 "string": {}
               },
               "background": {
                 "string": {}
               },
-              "strokeWidth": {
-                "number": {}
+              "bold": {
+                "__type__": {
+                  "object": {},
+                  "string": {}
+                },
+                "color": {
+                  "string": {}
+                },
+                "face": {
+                  "string": {}
+                },
+                "mod": {
+                  "string": {}
+                },
+                "size": {
+                  "number": {}
+                },
+                "vadjust": {
+                  "number": {}
+                }
               },
-              "strokeColor": {
+              "boldital": {
+                "__type__": {
+                  "object": {},
+                  "string": {}
+                },
+                "color": {
+                  "string": {}
+                },
+                "face": {
+                  "string": {}
+                },
+                "mod": {
+                  "string": {}
+                },
+                "size": {
+                  "number": {}
+                },
+                "vadjust": {
+                  "number": {}
+                }
+              },
+              "color": {
                 "string": {}
               },
-              "__type__": {
-                "object": {},
-                "string": {}
-              }
-            },
-            "group": {
-              "string": {},
-              "number": {},
-              "undefined": {}
-            },
-            "hidden": {
-              "boolean": {}
-            },
-            "icon": {
               "face": {
                 "string": {}
               },
-              "code": {
+              "ital": {
+                "__type__": {
+                  "object": {},
+                  "string": {}
+                },
+                "color": {
+                  "string": {}
+                },
+                "face": {
+                  "string": {}
+                },
+                "mod": {
+                  "string": {}
+                },
+                "size": {
+                  "number": {}
+                },
+                "vadjust": {
+                  "number": {}
+                }
+              },
+              "mono": {
+                "__type__": {
+                  "object": {},
+                  "string": {}
+                },
+                "color": {
+                  "string": {}
+                },
+                "face": {
+                  "string": {}
+                },
+                "mod": {
+                  "string": {}
+                },
+                "size": {
+                  "number": {}
+                },
+                "vadjust": {
+                  "number": {}
+                }
+              },
+              "multi": {
+                "boolean": {},
                 "string": {}
               },
               "size": {
                 "number": {}
               },
+              "strokeColor": {
+                "string": {}
+              },
+              "strokeWidth": {
+                "number": {}
+              },
+              "vadjust": {
+                "number": {}
+              }
+            },
+            "group": {
+              "number": {},
+              "string": {},
+              "undefined": {}
+            },
+            "heightConstraint": {
+              "__type__": {
+                "boolean": {},
+                "number": {},
+                "object": {}
+              },
+              "minimum": {
+                "number": {}
+              },
+              "valign": {
+                "string": {}
+              }
+            },
+            "hidden": {
+              "boolean": {}
+            },
+            "icon": {
+              "__type__": {
+                "object": {}
+              },
+              "code": {
+                "string": {}
+              },
               "color": {
                 "string": {}
               },
-              "__type__": {
-                "object": {}
+              "face": {
+                "string": {}
+              },
+              "size": {
+                "number": {}
               }
             },
             "id": {
-              "string": {},
-              "number": {}
+              "number": {},
+              "string": {}
             },
             "image": {
-              "string": {},
-              "undefined": {}
+              "__type__": {
+                "object": {},
+                "string": {}
+              },
+              "selected": {
+                "string": {},
+                "undefined": {}
+              },
+              "unselected": {
+                "string": {},
+                "undefined": {}
+              }
             },
             "label": {
               "string": {},
@@ -830,6 +916,24 @@ var vis = {
               "number": {},
               "undefined": {}
             },
+            "margin": {
+              "__type__": {
+                "number": {},
+                "object": {}
+              },
+              "bottom": {
+                "number": {}
+              },
+              "left": {
+                "number": {}
+              },
+              "right": {
+                "number": {}
+              },
+              "top": {
+                "number": {}
+              }
+            },
             "mass": {
               "number": {}
             },
@@ -837,18 +941,22 @@ var vis = {
               "boolean": {}
             },
             "scaling": {
-              "min": {
-                "number": {}
+              "__type__": {
+                "object": {}
               },
-              "max": {
-                "number": {}
+              "customScalingFunction": {
+                "function": {}
               },
               "label": {
+                "__type__": {
+                  "boolean": {},
+                  "object": {}
+                },
+                "drawThreshold": {
+                  "number": {}
+                },
                 "enabled": {
                   "boolean": {}
-                },
-                "min": {
-                  "number": {}
                 },
                 "max": {
                   "number": {}
@@ -856,27 +964,27 @@ var vis = {
                 "maxVisible": {
                   "number": {}
                 },
-                "drawThreshold": {
+                "min": {
                   "number": {}
-                },
-                "__type__": {
-                  "object": {},
-                  "boolean": {}
                 }
               },
-              "customScalingFunction": {
-                "function": {}
+              "max": {
+                "number": {}
               },
-              "__type__": {
-                "object": {}
+              "min": {
+                "number": {}
               }
             },
             "shadow": {
-              "enabled": {
-                "boolean": {}
+              "__type__": {
+                "boolean": {},
+                "object": {}
               },
               "color": {
                 "string": {}
+              },
+              "enabled": {
+                "boolean": {}
               },
               "size": {
                 "number": {}
@@ -886,19 +994,18 @@ var vis = {
               },
               "y": {
                 "number": {}
-              },
-              "__type__": {
-                "object": {},
-                "boolean": {}
               }
             },
             "shape": {
               "string": {}
             },
             "shapeProperties": {
+              "__type__": {
+                "object": {}
+              },
               "borderDashes": {
-                "boolean": {},
-                "array": {}
+                "array": {},
+                "boolean": {}
               },
               "borderRadius": {
                 "number": {}
@@ -906,14 +1013,11 @@ var vis = {
               "interpolation": {
                 "boolean": {}
               },
-              "useImageSize": {
-                "boolean": {}
-              },
               "useBorderWithImage": {
                 "boolean": {}
               },
-              "__type__": {
-                "object": {}
+              "useImageSize": {
+                "boolean": {}
               }
             },
             "size": {
@@ -927,21 +1031,40 @@ var vis = {
               "number": {},
               "undefined": {}
             },
+            "widthConstraint": {
+              "__type__": {
+                "boolean": {},
+                "number": {},
+                "object": {}
+              },
+              "maximum": {
+                "number": {}
+              },
+              "minimum": {
+                "number": {}
+              }
+            },
             "x": {
               "number": {}
             },
             "y": {
               "number": {}
-            },
-            "__type__": {
-              "object": {}
             }
           },
           "__type__": {
             "object": {}
+          },
+          "useDefaultGroups": {
+            "boolean": {}
           }
         },
+        "height": {
+          "string": {}
+        },
         "interaction": {
+          "__type__": {
+            "object": {}
+          },
           "dragNodes": {
             "boolean": {}
           },
@@ -957,11 +1080,24 @@ var vis = {
           "hover": {
             "boolean": {}
           },
+          "hoverConnectedEdges": {
+            "boolean": {}
+          },
           "keyboard": {
+            "__type__": {
+              "boolean": {},
+              "object": {}
+            },
+            "bindToWindow": {
+              "boolean": {}
+            },
             "enabled": {
               "boolean": {}
             },
             "speed": {
+              "__type__": {
+                "object": {}
+              },
               "x": {
                 "number": {}
               },
@@ -970,17 +1106,7 @@ var vis = {
               },
               "zoom": {
                 "number": {}
-              },
-              "__type__": {
-                "object": {}
               }
-            },
-            "bindToWindow": {
-              "boolean": {}
-            },
-            "__type__": {
-              "object": {},
-              "boolean": {}
             }
           },
           "multiselect": {
@@ -989,13 +1115,10 @@ var vis = {
           "navigationButtons": {
             "boolean": {}
           },
-          "selectable": {
-            "boolean": {}
-          },
           "selectConnectedEdges": {
             "boolean": {}
           },
-          "hoverConnectedEdges": {
+          "selectable": {
             "boolean": {}
           },
           "tooltipDelay": {
@@ -1003,20 +1126,26 @@ var vis = {
           },
           "zoomView": {
             "boolean": {}
-          },
-          "__type__": {
-            "object": {}
           }
         },
         "layout": {
-          "randomSeed": {
-            "undefined": {},
-            "number": {}
-          },
-          "improvedLayout": {
-            "boolean": {}
+          "__type__": {
+            "object": {}
           },
           "hierarchical": {
+            "__type__": {
+              "boolean": {},
+              "object": {}
+            },
+            "blockShifting": {
+              "boolean": {}
+            },
+            "direction": {
+              "string": {}
+            },
+            "edgeMinimization": {
+              "boolean": {}
+            },
             "enabled": {
               "boolean": {}
             },
@@ -1026,64 +1155,52 @@ var vis = {
             "nodeSpacing": {
               "number": {}
             },
-            "treeSpacing": {
-              "number": {}
-            },
-            "blockShifting": {
-              "boolean": {}
-            },
-            "edgeMinimization": {
-              "boolean": {}
-            },
             "parentCentralization": {
               "boolean": {}
-            },
-            "direction": {
-              "string": {}
             },
             "sortMethod": {
               "string": {}
             },
-            "__type__": {
-              "object": {},
-              "boolean": {}
+            "treeSpacing": {
+              "number": {}
             }
+          },
+          "improvedLayout": {
+            "boolean": {}
+          },
+          "randomSeed": {
+            "number": {},
+            "undefined": {}
+          }
+        },
+        "locale": {
+          "string": {}
+        },
+        "locales": {
+          "__any__": {
+            "any": {}
           },
           "__type__": {
             "object": {}
           }
         },
         "manipulation": {
-          "enabled": {
-            "boolean": {}
-          },
-          "initiallyActive": {
-            "boolean": {}
-          },
-          "addNode": {
+          "__type__": {
             "boolean": {},
-            "function": {}
+            "object": {}
           },
           "addEdge": {
             "boolean": {},
             "function": {}
           },
-          "editNode": {
-            "function": {}
-          },
-          "editEdge": {
-            "boolean": {},
-            "function": {}
-          },
-          "deleteNode": {
-            "boolean": {},
-            "function": {}
-          },
-          "deleteEdge": {
+          "addNode": {
             "boolean": {},
             "function": {}
           },
           "controlNodeStyle": {
+            "__type__": {
+              "object": {}
+            },
             "borderWidth": {
               "number": {}
             },
@@ -1095,113 +1212,241 @@ var vis = {
               "string": {},
               "undefined": {}
             },
+            "chosen": {
+              "__type__": {
+                "boolean": {},
+                "object": {}
+              },
+              "label": {
+                "boolean": {},
+                "function": {}
+              },
+              "node": {
+                "boolean": {},
+                "function": {}
+              }
+            },
             "color": {
-              "border": {
+              "__type__": {
+                "object": {},
                 "string": {}
               },
               "background": {
                 "string": {}
               },
+              "border": {
+                "string": {}
+              },
               "highlight": {
-                "border": {
+                "__type__": {
+                  "object": {},
                   "string": {}
                 },
                 "background": {
                   "string": {}
                 },
-                "__type__": {
-                  "object": {},
+                "border": {
                   "string": {}
                 }
               },
               "hover": {
-                "border": {
+                "__type__": {
+                  "object": {},
                   "string": {}
                 },
                 "background": {
                   "string": {}
                 },
-                "__type__": {
-                  "object": {},
+                "border": {
                   "string": {}
                 }
-              },
-              "__type__": {
-                "object": {},
-                "string": {}
               }
             },
             "fixed": {
+              "__type__": {
+                "boolean": {},
+                "object": {}
+              },
               "x": {
                 "boolean": {}
               },
               "y": {
                 "boolean": {}
-              },
-              "__type__": {
-                "object": {},
-                "boolean": {}
               }
             },
             "font": {
+              "__type__": {
+                "object": {},
+                "string": {}
+              },
               "align": {
-                "string": {}
-              },
-              "color": {
-                "string": {}
-              },
-              "size": {
-                "number": {}
-              },
-              "face": {
                 "string": {}
               },
               "background": {
                 "string": {}
               },
-              "strokeWidth": {
-                "number": {}
+              "bold": {
+                "__type__": {
+                  "object": {},
+                  "string": {}
+                },
+                "color": {
+                  "string": {}
+                },
+                "face": {
+                  "string": {}
+                },
+                "mod": {
+                  "string": {}
+                },
+                "size": {
+                  "number": {}
+                },
+                "vadjust": {
+                  "number": {}
+                }
               },
-              "strokeColor": {
+              "boldital": {
+                "__type__": {
+                  "object": {},
+                  "string": {}
+                },
+                "color": {
+                  "string": {}
+                },
+                "face": {
+                  "string": {}
+                },
+                "mod": {
+                  "string": {}
+                },
+                "size": {
+                  "number": {}
+                },
+                "vadjust": {
+                  "number": {}
+                }
+              },
+              "color": {
                 "string": {}
               },
-              "__type__": {
-                "object": {},
-                "string": {}
-              }
-            },
-            "group": {
-              "string": {},
-              "number": {},
-              "undefined": {}
-            },
-            "hidden": {
-              "boolean": {}
-            },
-            "icon": {
               "face": {
                 "string": {}
               },
-              "code": {
+              "ital": {
+                "__type__": {
+                  "object": {},
+                  "string": {}
+                },
+                "color": {
+                  "string": {}
+                },
+                "face": {
+                  "string": {}
+                },
+                "mod": {
+                  "string": {}
+                },
+                "size": {
+                  "number": {}
+                },
+                "vadjust": {
+                  "number": {}
+                }
+              },
+              "mono": {
+                "__type__": {
+                  "object": {},
+                  "string": {}
+                },
+                "color": {
+                  "string": {}
+                },
+                "face": {
+                  "string": {}
+                },
+                "mod": {
+                  "string": {}
+                },
+                "size": {
+                  "number": {}
+                },
+                "vadjust": {
+                  "number": {}
+                }
+              },
+              "multi": {
+                "boolean": {},
                 "string": {}
               },
               "size": {
                 "number": {}
               },
+              "strokeColor": {
+                "string": {}
+              },
+              "strokeWidth": {
+                "number": {}
+              },
+              "vadjust": {
+                "number": {}
+              }
+            },
+            "group": {
+              "number": {},
+              "string": {},
+              "undefined": {}
+            },
+            "heightConstraint": {
+              "__type__": {
+                "boolean": {},
+                "number": {},
+                "object": {}
+              },
+              "minimum": {
+                "number": {}
+              },
+              "valign": {
+                "string": {}
+              }
+            },
+            "hidden": {
+              "boolean": {}
+            },
+            "icon": {
+              "__type__": {
+                "object": {}
+              },
+              "code": {
+                "string": {}
+              },
               "color": {
                 "string": {}
               },
-              "__type__": {
-                "object": {}
+              "face": {
+                "string": {}
+              },
+              "size": {
+                "number": {}
               }
             },
             "id": {
-              "string": {},
-              "number": {}
+              "number": {},
+              "string": {}
             },
             "image": {
-              "string": {},
-              "undefined": {}
+              "__type__": {
+                "object": {},
+                "string": {}
+              },
+              "selected": {
+                "string": {},
+                "undefined": {}
+              },
+              "unselected": {
+                "string": {},
+                "undefined": {}
+              }
             },
             "label": {
               "string": {},
@@ -1214,6 +1459,24 @@ var vis = {
               "number": {},
               "undefined": {}
             },
+            "margin": {
+              "__type__": {
+                "number": {},
+                "object": {}
+              },
+              "bottom": {
+                "number": {}
+              },
+              "left": {
+                "number": {}
+              },
+              "right": {
+                "number": {}
+              },
+              "top": {
+                "number": {}
+              }
+            },
             "mass": {
               "number": {}
             },
@@ -1221,18 +1484,22 @@ var vis = {
               "boolean": {}
             },
             "scaling": {
-              "min": {
-                "number": {}
+              "__type__": {
+                "object": {}
               },
-              "max": {
-                "number": {}
+              "customScalingFunction": {
+                "function": {}
               },
               "label": {
+                "__type__": {
+                  "boolean": {},
+                  "object": {}
+                },
+                "drawThreshold": {
+                  "number": {}
+                },
                 "enabled": {
                   "boolean": {}
-                },
-                "min": {
-                  "number": {}
                 },
                 "max": {
                   "number": {}
@@ -1240,27 +1507,27 @@ var vis = {
                 "maxVisible": {
                   "number": {}
                 },
-                "drawThreshold": {
+                "min": {
                   "number": {}
-                },
-                "__type__": {
-                  "object": {},
-                  "boolean": {}
                 }
               },
-              "customScalingFunction": {
-                "function": {}
+              "max": {
+                "number": {}
               },
-              "__type__": {
-                "object": {}
+              "min": {
+                "number": {}
               }
             },
             "shadow": {
-              "enabled": {
-                "boolean": {}
+              "__type__": {
+                "boolean": {},
+                "object": {}
               },
               "color": {
                 "string": {}
+              },
+              "enabled": {
+                "boolean": {}
               },
               "size": {
                 "number": {}
@@ -1270,19 +1537,18 @@ var vis = {
               },
               "y": {
                 "number": {}
-              },
-              "__type__": {
-                "object": {},
-                "boolean": {}
               }
             },
             "shape": {
               "string": {}
             },
             "shapeProperties": {
+              "__type__": {
+                "object": {}
+              },
               "borderDashes": {
-                "boolean": {},
-                "array": {}
+                "array": {},
+                "boolean": {}
               },
               "borderRadius": {
                 "number": {}
@@ -1290,14 +1556,11 @@ var vis = {
               "interpolation": {
                 "boolean": {}
               },
-              "useImageSize": {
-                "boolean": {}
-              },
               "useBorderWithImage": {
                 "boolean": {}
               },
-              "__type__": {
-                "object": {}
+              "useImageSize": {
+                "boolean": {}
               }
             },
             "size": {
@@ -1311,22 +1574,58 @@ var vis = {
               "number": {},
               "undefined": {}
             },
+            "widthConstraint": {
+              "__type__": {
+                "boolean": {},
+                "number": {},
+                "object": {}
+              },
+              "maximum": {
+                "number": {}
+              },
+              "minimum": {
+                "number": {}
+              }
+            },
             "x": {
               "number": {}
             },
             "y": {
               "number": {}
-            },
-            "__type__": {
-              "object": {}
             }
           },
-          "__type__": {
-            "object": {},
+          "deleteEdge": {
+            "boolean": {},
+            "function": {}
+          },
+          "deleteNode": {
+            "boolean": {},
+            "function": {}
+          },
+          "editEdge": {
+            "__type__": {
+              "boolean": {},
+              "function": {},
+              "object": {}
+            },
+            "editWithoutDrag": {
+              "function": {}
+            }
+          },
+          "editNode": {
+            "function": {}
+          },
+          "enabled": {
+            "boolean": {}
+          },
+          "initiallyActive": {
             "boolean": {}
           }
         },
         "nodes": {
+          "__type__": {
+            "object": {}
+          },
           "borderWidth": {
             "number": {}
           },
@@ -1338,113 +1637,241 @@ var vis = {
             "string": {},
             "undefined": {}
           },
+          "chosen": {
+            "__type__": {
+              "boolean": {},
+              "object": {}
+            },
+            "label": {
+              "boolean": {},
+              "function": {}
+            },
+            "node": {
+              "boolean": {},
+              "function": {}
+            }
+          },
           "color": {
-            "border": {
+            "__type__": {
+              "object": {},
               "string": {}
             },
             "background": {
               "string": {}
             },
+            "border": {
+              "string": {}
+            },
             "highlight": {
-              "border": {
+              "__type__": {
+                "object": {},
                 "string": {}
               },
               "background": {
                 "string": {}
               },
-              "__type__": {
-                "object": {},
+              "border": {
                 "string": {}
               }
             },
             "hover": {
-              "border": {
+              "__type__": {
+                "object": {},
                 "string": {}
               },
               "background": {
                 "string": {}
               },
-              "__type__": {
-                "object": {},
+              "border": {
                 "string": {}
               }
-            },
-            "__type__": {
-              "object": {},
-              "string": {}
             }
           },
           "fixed": {
+            "__type__": {
+              "boolean": {},
+              "object": {}
+            },
             "x": {
               "boolean": {}
             },
             "y": {
               "boolean": {}
-            },
-            "__type__": {
-              "object": {},
-              "boolean": {}
             }
           },
           "font": {
+            "__type__": {
+              "object": {},
+              "string": {}
+            },
             "align": {
-              "string": {}
-            },
-            "color": {
-              "string": {}
-            },
-            "size": {
-              "number": {}
-            },
-            "face": {
               "string": {}
             },
             "background": {
               "string": {}
             },
-            "strokeWidth": {
-              "number": {}
+            "bold": {
+              "__type__": {
+                "object": {},
+                "string": {}
+              },
+              "color": {
+                "string": {}
+              },
+              "face": {
+                "string": {}
+              },
+              "mod": {
+                "string": {}
+              },
+              "size": {
+                "number": {}
+              },
+              "vadjust": {
+                "number": {}
+              }
             },
-            "strokeColor": {
+            "boldital": {
+              "__type__": {
+                "object": {},
+                "string": {}
+              },
+              "color": {
+                "string": {}
+              },
+              "face": {
+                "string": {}
+              },
+              "mod": {
+                "string": {}
+              },
+              "size": {
+                "number": {}
+              },
+              "vadjust": {
+                "number": {}
+              }
+            },
+            "color": {
               "string": {}
             },
-            "__type__": {
-              "object": {},
-              "string": {}
-            }
-          },
-          "group": {
-            "string": {},
-            "number": {},
-            "undefined": {}
-          },
-          "hidden": {
-            "boolean": {}
-          },
-          "icon": {
             "face": {
               "string": {}
             },
-            "code": {
+            "ital": {
+              "__type__": {
+                "object": {},
+                "string": {}
+              },
+              "color": {
+                "string": {}
+              },
+              "face": {
+                "string": {}
+              },
+              "mod": {
+                "string": {}
+              },
+              "size": {
+                "number": {}
+              },
+              "vadjust": {
+                "number": {}
+              }
+            },
+            "mono": {
+              "__type__": {
+                "object": {},
+                "string": {}
+              },
+              "color": {
+                "string": {}
+              },
+              "face": {
+                "string": {}
+              },
+              "mod": {
+                "string": {}
+              },
+              "size": {
+                "number": {}
+              },
+              "vadjust": {
+                "number": {}
+              }
+            },
+            "multi": {
+              "boolean": {},
               "string": {}
             },
             "size": {
               "number": {}
             },
+            "strokeColor": {
+              "string": {}
+            },
+            "strokeWidth": {
+              "number": {}
+            },
+            "vadjust": {
+              "number": {}
+            }
+          },
+          "group": {
+            "number": {},
+            "string": {},
+            "undefined": {}
+          },
+          "heightConstraint": {
+            "__type__": {
+              "boolean": {},
+              "number": {},
+              "object": {}
+            },
+            "minimum": {
+              "number": {}
+            },
+            "valign": {
+              "string": {}
+            }
+          },
+          "hidden": {
+            "boolean": {}
+          },
+          "icon": {
+            "__type__": {
+              "object": {}
+            },
+            "code": {
+              "string": {}
+            },
             "color": {
               "string": {}
             },
-            "__type__": {
-              "object": {}
+            "face": {
+              "string": {}
+            },
+            "size": {
+              "number": {}
             }
           },
           "id": {
-            "string": {},
-            "number": {}
+            "number": {},
+            "string": {}
           },
           "image": {
-            "string": {},
-            "undefined": {}
+            "__type__": {
+              "object": {},
+              "string": {}
+            },
+            "selected": {
+              "string": {},
+              "undefined": {}
+            },
+            "unselected": {
+              "string": {},
+              "undefined": {}
+            }
           },
           "label": {
             "string": {},
@@ -1457,6 +1884,24 @@ var vis = {
             "number": {},
             "undefined": {}
           },
+          "margin": {
+            "__type__": {
+              "number": {},
+              "object": {}
+            },
+            "bottom": {
+              "number": {}
+            },
+            "left": {
+              "number": {}
+            },
+            "right": {
+              "number": {}
+            },
+            "top": {
+              "number": {}
+            }
+          },
           "mass": {
             "number": {}
           },
@@ -1464,18 +1909,22 @@ var vis = {
             "boolean": {}
           },
           "scaling": {
-            "min": {
-              "number": {}
+            "__type__": {
+              "object": {}
             },
-            "max": {
-              "number": {}
+            "customScalingFunction": {
+              "function": {}
             },
             "label": {
+              "__type__": {
+                "boolean": {},
+                "object": {}
+              },
+              "drawThreshold": {
+                "number": {}
+              },
               "enabled": {
                 "boolean": {}
-              },
-              "min": {
-                "number": {}
               },
               "max": {
                 "number": {}
@@ -1483,27 +1932,27 @@ var vis = {
               "maxVisible": {
                 "number": {}
               },
-              "drawThreshold": {
+              "min": {
                 "number": {}
-              },
-              "__type__": {
-                "object": {},
-                "boolean": {}
               }
             },
-            "customScalingFunction": {
-              "function": {}
+            "max": {
+              "number": {}
             },
-            "__type__": {
-              "object": {}
+            "min": {
+              "number": {}
             }
           },
           "shadow": {
-            "enabled": {
-              "boolean": {}
+            "__type__": {
+              "boolean": {},
+              "object": {}
             },
             "color": {
               "string": {}
+            },
+            "enabled": {
+              "boolean": {}
             },
             "size": {
               "number": {}
@@ -1513,19 +1962,18 @@ var vis = {
             },
             "y": {
               "number": {}
-            },
-            "__type__": {
-              "object": {},
-              "boolean": {}
             }
           },
           "shape": {
             "string": {}
           },
           "shapeProperties": {
+            "__type__": {
+              "object": {}
+            },
             "borderDashes": {
-              "boolean": {},
-              "array": {}
+              "array": {},
+              "boolean": {}
             },
             "borderRadius": {
               "number": {}
@@ -1533,14 +1981,11 @@ var vis = {
             "interpolation": {
               "boolean": {}
             },
-            "useImageSize": {
-              "boolean": {}
-            },
             "useBorderWithImage": {
               "boolean": {}
             },
-            "__type__": {
-              "object": {}
+            "useImageSize": {
+              "boolean": {}
             }
           },
           "size": {
@@ -1554,104 +1999,101 @@ var vis = {
             "number": {},
             "undefined": {}
           },
+          "widthConstraint": {
+            "__type__": {
+              "boolean": {},
+              "number": {},
+              "object": {}
+            },
+            "maximum": {
+              "number": {}
+            },
+            "minimum": {
+              "number": {}
+            }
+          },
           "x": {
             "number": {}
           },
           "y": {
             "number": {}
-          },
-          "__type__": {
-            "object": {}
           }
         },
         "physics": {
-          "enabled": {
+          "__type__": {
+            "boolean": {},
+            "object": {}
+          },
+          "adaptiveTimestep": {
             "boolean": {}
           },
           "barnesHut": {
-            "gravitationalConstant": {
+            "__type__": {
+              "object": {}
+            },
+            "avoidOverlap": {
               "number": {}
             },
             "centralGravity": {
               "number": {}
             },
-            "springLength": {
+            "damping": {
+              "number": {}
+            },
+            "gravitationalConstant": {
               "number": {}
             },
             "springConstant": {
               "number": {}
             },
-            "damping": {
+            "springLength": {
               "number": {}
-            },
-            "avoidOverlap": {
-              "number": {}
-            },
-            "__type__": {
-              "object": {}
             }
+          },
+          "enabled": {
+            "boolean": {}
           },
           "forceAtlas2Based": {
-            "gravitationalConstant": {
-              "number": {}
-            },
-            "centralGravity": {
-              "number": {}
-            },
-            "springLength": {
-              "number": {}
-            },
-            "springConstant": {
-              "number": {}
-            },
-            "damping": {
-              "number": {}
+            "__type__": {
+              "object": {}
             },
             "avoidOverlap": {
               "number": {}
             },
-            "__type__": {
-              "object": {}
-            }
-          },
-          "repulsion": {
             "centralGravity": {
-              "number": {}
-            },
-            "springLength": {
-              "number": {}
-            },
-            "springConstant": {
-              "number": {}
-            },
-            "nodeDistance": {
               "number": {}
             },
             "damping": {
               "number": {}
             },
-            "__type__": {
-              "object": {}
+            "gravitationalConstant": {
+              "number": {}
+            },
+            "springConstant": {
+              "number": {}
+            },
+            "springLength": {
+              "number": {}
             }
           },
           "hierarchicalRepulsion": {
+            "__type__": {
+              "object": {}
+            },
             "centralGravity": {
-              "number": {}
-            },
-            "springLength": {
-              "number": {}
-            },
-            "springConstant": {
-              "number": {}
-            },
-            "nodeDistance": {
               "number": {}
             },
             "damping": {
               "number": {}
             },
-            "__type__": {
-              "object": {}
+            "nodeDistance": {
+              "number": {}
+            },
+            "springConstant": {
+              "number": {}
+            },
+            "springLength": {
+              "number": {}
             }
           },
           "maxVelocity": {
@@ -1660,82 +2102,180 @@ var vis = {
           "minVelocity": {
             "number": {}
           },
+          "repulsion": {
+            "__type__": {
+              "object": {}
+            },
+            "centralGravity": {
+              "number": {}
+            },
+            "damping": {
+              "number": {}
+            },
+            "nodeDistance": {
+              "number": {}
+            },
+            "springConstant": {
+              "number": {}
+            },
+            "springLength": {
+              "number": {}
+            }
+          },
           "solver": {
             "string": {}
           },
           "stabilization": {
+            "__type__": {
+              "boolean": {},
+              "object": {}
+            },
             "enabled": {
-              "boolean": {}
-            },
-            "iterations": {
-              "number": {}
-            },
-            "updateInterval": {
-              "number": {}
-            },
-            "onlyDynamicEdges": {
               "boolean": {}
             },
             "fit": {
               "boolean": {}
             },
-            "__type__": {
-              "object": {},
+            "iterations": {
+              "number": {}
+            },
+            "onlyDynamicEdges": {
               "boolean": {}
+            },
+            "updateInterval": {
+              "number": {}
             }
           },
           "timestep": {
             "number": {}
-          },
-          "adaptiveTimestep": {
-            "boolean": {}
-          },
-          "__type__": {
-            "object": {},
-            "boolean": {}
           }
-        },
-        "autoResize": {
-          "boolean": {}
-        },
-        "clickToUse": {
-          "boolean": {}
-        },
-        "locale": {
-          "string": {}
-        },
-        "locales": {
-          "__any__": {
-            "any": {}
-          },
-          "__type__": {
-            "object": {}
-          }
-        },
-        "height": {
-          "string": {}
         },
         "width": {
           "string": {}
-        },
-        "__type__": {
-          "object": {}
         }
       },
       "configureOptions": {
+        "edges": {
+          "arrowStrikethrough": {},
+          "arrows": {
+            "from": {
+              "enabled": {},
+              "scaleFactor": {},
+              "type": {}
+            },
+            "middle": {
+              "enabled": {},
+              "scaleFactor": {},
+              "type": {}
+            },
+            "to": {
+              "enabled": {},
+              "scaleFactor": {},
+              "type": {}
+            }
+          },
+          "color": {
+            "color": {},
+            "highlight": {},
+            "hover": {},
+            "inherit": {},
+            "opacity": {}
+          },
+          "dashes": {},
+          "font": {
+            "align": {},
+            "background": {},
+            "color": {},
+            "face": {},
+            "size": {},
+            "strokeColor": {},
+            "strokeWidth": {}
+          },
+          "hidden": {},
+          "hoverWidth": {},
+          "labelHighlightBold": {},
+          "physics": {},
+          "scaling": {
+            "label": {
+              "drawThreshold": {},
+              "enabled": {},
+              "max": {},
+              "maxVisible": {},
+              "min": {}
+            },
+            "max": {},
+            "min": {}
+          },
+          "selectionWidth": {},
+          "selfReferenceSize": {},
+          "shadow": {
+            "color": {},
+            "enabled": {},
+            "size": {},
+            "x": {},
+            "y": {}
+          },
+          "smooth": {
+            "enabled": {},
+            "forceDirection": {},
+            "roundness": {},
+            "type": {}
+          },
+          "width": {}
+        },
+        "interaction": {
+          "dragNodes": {},
+          "dragView": {},
+          "hideEdgesOnDrag": {},
+          "hideNodesOnDrag": {},
+          "hover": {},
+          "hoverConnectedEdges": {},
+          "keyboard": {
+            "bindToWindow": {},
+            "enabled": {},
+            "speed": {
+              "x": {},
+              "y": {},
+              "zoom": {}
+            }
+          },
+          "multiselect": {},
+          "navigationButtons": {},
+          "selectConnectedEdges": {},
+          "selectable": {},
+          "tooltipDelay": {},
+          "zoomView": {}
+        },
+        "layout": {
+          "hierarchical": {
+            "blockShifting": {},
+            "direction": {},
+            "edgeMinimization": {},
+            "enabled": {},
+            "levelSeparation": {},
+            "nodeSpacing": {},
+            "parentCentralization": {},
+            "sortMethod": {},
+            "treeSpacing": {}
+          }
+        },
+        "manipulation": {
+          "enabled": {},
+          "initiallyActive": {}
+        },
         "nodes": {
           "borderWidth": {},
           "borderWidthSelected": {},
           "color": {
-            "border": {},
             "background": {},
+            "border": {},
             "highlight": {
-              "border": {},
-              "background": {}
+              "background": {},
+              "border": {}
             },
             "hover": {
-              "border": {},
-              "background": {}
+              "background": {},
+              "border": {}
             }
           },
           "fixed": {
@@ -1743,30 +2283,30 @@ var vis = {
             "y": {}
           },
           "font": {
-            "color": {},
-            "size": {},
-            "face": {},
             "background": {},
-            "strokeWidth": {},
-            "strokeColor": {}
+            "color": {},
+            "face": {},
+            "size": {},
+            "strokeColor": {},
+            "strokeWidth": {}
           },
           "hidden": {},
           "labelHighlightBold": {},
           "physics": {},
           "scaling": {
-            "min": {},
-            "max": {},
             "label": {
+              "drawThreshold": {},
               "enabled": {},
-              "min": {},
               "max": {},
               "maxVisible": {},
-              "drawThreshold": {}
-            }
+              "min": {}
+            },
+            "max": {},
+            "min": {}
           },
           "shadow": {
-            "enabled": {},
             "color": {},
+            "enabled": {},
             "size": {},
             "x": {},
             "y": {}
@@ -1780,1478 +2320,1587 @@ var vis = {
           },
           "size": {}
         },
-        "edges": {
-          "arrows": {
-            "to": {
-              "enabled": {},
-              "scaleFactor": {},
-              "type": {}
-            },
-            "middle": {
-              "enabled": {},
-              "scaleFactor": {},
-              "type": {}
-            },
-            "from": {
-              "enabled": {},
-              "scaleFactor": {},
-              "type": {}
-            }
-          },
-          "arrowStrikethrough": {},
-          "color": {
-            "color": {},
-            "highlight": {},
-            "hover": {},
-            "inherit": {},
-            "opacity": {}
-          },
-          "dashes": {},
-          "font": {
-            "color": {},
-            "size": {},
-            "face": {},
-            "background": {},
-            "strokeWidth": {},
-            "strokeColor": {},
-            "align": {}
-          },
-          "hidden": {},
-          "hoverWidth": {},
-          "labelHighlightBold": {},
-          "physics": {},
-          "scaling": {
-            "min": {},
-            "max": {},
-            "label": {
-              "enabled": {},
-              "min": {},
-              "max": {},
-              "maxVisible": {},
-              "drawThreshold": {}
-            }
-          },
-          "selectionWidth": {},
-          "selfReferenceSize": {},
-          "shadow": {
-            "enabled": {},
-            "color": {},
-            "size": {},
-            "x": {},
-            "y": {}
-          },
-          "smooth": {
-            "enabled": {},
-            "type": {},
-            "forceDirection": {},
-            "roundness": {}
-          },
-          "width": {}
-        },
-        "layout": {
-          "hierarchical": {
-            "enabled": {},
-            "levelSeparation": {},
-            "nodeSpacing": {},
-            "treeSpacing": {},
-            "blockShifting": {},
-            "edgeMinimization": {},
-            "parentCentralization": {},
-            "direction": {},
-            "sortMethod": {}
-          }
-        },
-        "interaction": {
-          "dragNodes": {},
-          "dragView": {},
-          "hideEdgesOnDrag": {},
-          "hideNodesOnDrag": {},
-          "hover": {},
-          "keyboard": {
-            "enabled": {},
-            "speed": {
-              "x": {},
-              "y": {},
-              "zoom": {}
-            },
-            "bindToWindow": {}
-          },
-          "multiselect": {},
-          "navigationButtons": {},
-          "selectable": {},
-          "selectConnectedEdges": {},
-          "hoverConnectedEdges": {},
-          "tooltipDelay": {},
-          "zoomView": {}
-        },
-        "manipulation": {
-          "enabled": {},
-          "initiallyActive": {}
-        },
         "physics": {
-          "enabled": {},
           "barnesHut": {
-            "gravitationalConstant": {},
+            "avoidOverlap": {},
             "centralGravity": {},
-            "springLength": {},
-            "springConstant": {},
             "damping": {},
-            "avoidOverlap": {}
+            "gravitationalConstant": {},
+            "springConstant": {},
+            "springLength": {}
           },
+          "enabled": {},
           "forceAtlas2Based": {
-            "gravitationalConstant": {},
+            "avoidOverlap": {},
             "centralGravity": {},
-            "springLength": {},
-            "springConstant": {},
             "damping": {},
-            "avoidOverlap": {}
-          },
-          "repulsion": {
-            "centralGravity": {},
-            "springLength": {},
+            "gravitationalConstant": {},
             "springConstant": {},
-            "nodeDistance": {},
-            "damping": {}
+            "springLength": {}
           },
           "hierarchicalRepulsion": {
             "centralGravity": {},
-            "springLength": {},
-            "springConstant": {},
+            "damping": {},
             "nodeDistance": {},
-            "damping": {}
+            "springConstant": {},
+            "springLength": {}
           },
           "maxVelocity": {},
           "minVelocity": {},
+          "repulsion": {
+            "centralGravity": {},
+            "damping": {},
+            "nodeDistance": {},
+            "springConstant": {},
+            "springLength": {}
+          },
           "solver": {},
           "timestep": {}
         }
       }
     },
     "convertDot": function () {},
-    "convertGephi": function () {}
+    "convertGephi": function () {},
+    "dotparser": {
+      "DOTToGraph": function () {},
+      "parseDOT": function () {}
+    },
+    "gephiParser": {
+      "parseGephi": function () {}
+    }
+  },
+  "timeline": {
+    "Core": function () {},
+    "DateUtil": {
+      "convertHiddenOptions": function () {},
+      "correctTimeForHidden": function () {},
+      "getAccumulatedHiddenDuration": function () {},
+      "getHiddenDurationBefore": function () {},
+      "getHiddenDurationBeforeStart": function () {},
+      "getHiddenDurationBetween": function () {},
+      "isHidden": function () {},
+      "printDates": function () {},
+      "removeDuplicates": function () {},
+      "snapAwayFromHidden": function () {},
+      "stepOverHiddenDates": function () {},
+      "toScreen": function () {},
+      "toTime": function () {},
+      "updateHiddenDates": function () {}
+    },
+    "Range": {
+      "conversion": function () {}
+    },
+    "TimeStep": {
+      "FORMAT": {
+        "majorLabels": {
+          "day": {},
+          "hour": {},
+          "millisecond": {},
+          "minute": {},
+          "month": {},
+          "second": {},
+          "week": {},
+          "weekday": {},
+          "year": {}
+        },
+        "minorLabels": {
+          "day": {},
+          "hour": {},
+          "millisecond": {},
+          "minute": {},
+          "month": {},
+          "second": {},
+          "week": {},
+          "weekday": {},
+          "year": {}
+        }
+      },
+      "snap": function () {}
+    },
+    "components": {
+      "BackgroundGroup": function () {},
+      "Component": function () {},
+      "CurrentTime": function () {},
+      "CustomTime": {
+        "customTimeFromTarget": function () {}
+      },
+      "DataAxis": function () {},
+      "DataScale": function () {},
+      "GraphGroup": function () {},
+      "Group": function () {},
+      "ItemSet": {
+        "_getItemRange": function () {},
+        "itemSetFromTarget": function () {},
+        "types": {
+          "background": function () {},
+          "box": function () {},
+          "point": function () {},
+          "range": function () {}
+        }
+      },
+      "Legend": function () {},
+      "LineGraph": function () {},
+      "TimeAxis": function () {},
+      "items": {
+        "BackgroundItem": function () {},
+        "BoxItem": function () {},
+        "Item": function () {},
+        "PointItem": function () {},
+        "RangeItem": function () {}
+      }
+    },
+    "stack": {
+      "collision": function () {},
+      "collisionByTimes": function () {},
+      "nostack": function () {},
+      "orderByEnd": function () {},
+      "orderByStart": function () {},
+      "stack": function () {},
+      "stackSubgroups": function () {}
+    }
+  },
+  "util": {
+    "HSVToHex": function () {},
+    "HSVToRGB": function () {},
+    "RGBToHSV": function () {},
+    "RGBToHex": function () {},
+    "addClassName": function () {},
+    "addCssText": function () {},
+    "addEventListener": function () {},
+    "assignAllKeys": function () {},
+    "binarySearchCustom": function () {},
+    "binarySearchValue": function () {},
+    "bridgeObject": function () {},
+    "convert": function () {},
+    "copyAndExtendArray": function () {},
+    "copyArray": function () {},
+    "deepExtend": function () {},
+    "easingFunctions": {
+      "easeInCubic": function () {},
+      "easeInOutCubic": function () {},
+      "easeInOutQuad": function () {},
+      "easeInOutQuart": function () {},
+      "easeInOutQuint": function () {},
+      "easeInQuad": function () {},
+      "easeInQuart": function () {},
+      "easeInQuint": function () {},
+      "easeOutCubic": function () {},
+      "easeOutQuad": function () {},
+      "easeOutQuart": function () {},
+      "easeOutQuint": function () {},
+      "linear": function () {}
+    },
+    "equalArray": function () {},
+    "extend": function () {},
+    "fillIfDefined": function () {},
+    "forEach": function () {},
+    "getAbsoluteLeft": function () {},
+    "getAbsoluteRight": function () {},
+    "getAbsoluteTop": function () {},
+    "getScrollBarWidth": function () {},
+    "getTarget": function () {},
+    "getType": function () {},
+    "giveRange": function () {},
+    "hasParent": function () {},
+    "hexToHSV": function () {},
+    "hexToRGB": function () {},
+    "insertSort": function () {},
+    "isDate": function () {},
+    "isNumber": function () {},
+    "isString": function () {},
+    "isValidHex": function () {},
+    "isValidRGB": function () {},
+    "isValidRGBA": function () {},
+    "mergeOptions": function () {},
+    "option": {
+      "asBoolean": function () {},
+      "asElement": function () {},
+      "asNumber": function () {},
+      "asSize": function () {},
+      "asString": function () {}
+    },
+    "overrideOpacity": function () {},
+    "parseColor": function () {},
+    "preventDefault": function () {},
+    "protoExtend": function () {},
+    "randomUUID": function () {},
+    "recursiveDOMDelete": function () {},
+    "removeClassName": function () {},
+    "removeCssText": function () {},
+    "removeEventListener": function () {},
+    "selectiveBridgeObject": function () {},
+    "selectiveDeepExtend": function () {},
+    "selectiveExtend": function () {},
+    "selectiveNotDeepExtend": function () {},
+    "throttle": function () {},
+    "toArray": function () {},
+    "topMost": function () {},
+    "updateProperty": function () {}
   }
 };
 vis.DataSet.prototype = {
-  "setOptions": function () {},
-  "on": function () {},
-  "subscribe": function () {},
-  "off": function () {},
-  "unsubscribe": function () {},
-  "_trigger": function () {},
-  "add": function () {},
-  "update": function () {},
-  "get": function () {},
-  "getIds": function () {},
-  "getDataSet": function () {},
-  "forEach": function () {},
-  "map": function () {},
+  "_addItem": function () {},
   "_filterFields": function () {},
-  "_sort": function () {},
-  "remove": function () {},
+  "_getItem": function () {},
   "_remove": function () {},
+  "_sort": function () {},
+  "_trigger": function () {},
+  "_updateItem": function () {},
+  "add": function () {},
   "clear": function () {},
+  "distinct": function () {},
+  "forEach": function () {},
+  "get": function () {},
+  "getDataSet": function () {},
+  "getIds": function () {},
+  "map": function () {},
   "max": function () {},
   "min": function () {},
-  "distinct": function () {},
-  "_addItem": function () {},
-  "_getItem": function () {},
-  "_updateItem": function () {}
+  "off": function () {},
+  "on": function () {},
+  "remove": function () {},
+  "setOptions": function () {},
+  "subscribe": function () {},
+  "unsubscribe": function () {},
+  "update": function () {}
 };
 vis.DataView.prototype = {
-  "setData": function () {},
-  "refresh": function () {},
+  "_onEvent": function () {},
+  "_trigger": function () {},
   "get": function () {},
+  "getDataSet": function () {},
   "getIds": function () {},
   "map": function () {},
-  "getDataSet": function () {},
-  "_onEvent": function () {},
-  "on": function () {},
   "off": function () {},
-  "_trigger": function () {},
+  "on": function () {},
+  "refresh": function () {},
+  "setData": function () {},
   "subscribe": function () {},
   "unsubscribe": function () {}
 };
-vis.Queue.prototype = {
-  "setOptions": function () {},
-  "destroy": function () {},
-  "replace": function () {},
-  "queue": function () {},
-  "_flushIfNeeded": function () {},
-  "flush": function () {}
-};
-vis.Graph3d.prototype = {
+vis.Graph2d.prototype = {
+  "_create": function () {},
+  "_createConfigurator": function () {},
+  "_getScrollTop": function () {},
+  "_initAutoResize": function () {},
+  "_onDrag": function () {},
+  "_onPinch": function () {},
+  "_onTouch": function () {},
+  "_redraw": function () {},
+  "_setDOM": function () {},
+  "_setScrollTop": function () {},
+  "_startAutoResize": function () {},
+  "_stopAutoResize": function () {},
+  "_toGlobalScreen": function () {},
+  "_toGlobalTime": function () {},
+  "_toScreen": function () {},
+  "_toTime": function () {},
+  "_updateScrollTop": function () {},
+  "addCustomTime": function () {},
   "addEventListener": function () {},
+  "destroy": function () {},
+  "emit": function () {},
+  "fit": function () {},
+  "getCurrentTime": function () {},
+  "getCustomTime": function () {},
+  "getDataRange": function () {},
+  "getEventProperties": function () {},
+  "getLegend": function () {},
+  "getVisibleItems": function () {},
+  "getWindow": function () {},
+  "hasListeners": function () {},
+  "isActive": function () {},
+  "isGroupVisible": function () {},
+  "listeners": function () {},
+  "moveTo": function () {},
+  "off": function () {},
   "on": function () {},
   "once": function () {},
-  "removeEventListener": function () {},
+  "redraw": function () {},
   "removeAllListeners": function () {},
+  "removeCustomTime": function () {},
+  "removeEventListener": function () {},
   "removeListener": function () {},
-  "off": function () {},
-  "emit": function () {},
-  "listeners": function () {},
-  "hasListeners": function () {},
-  "_setScale": function () {},
+  "repaint": function () {},
+  "setCurrentTime": function () {},
+  "setCustomTime": function () {},
+  "setCustomTimeTitle": function () {},
+  "setGroups": function () {},
+  "setItems": function () {},
+  "setOptions": function () {},
+  "setWindow": function () {},
+  "zoomIn": function () {},
+  "zoomOut": function () {}
+};
+vis.Graph3d.prototype = {
+  "_calcRadius": function () {},
+  "_calcTranslations": function () {},
+  "_checkValueField": function () {},
   "_convert3Dto2D": function () {},
   "_convertPointToTranslation": function () {},
   "_convertTranslationToScreen": function () {},
-  "_calcTranslations": function () {},
-  "getNumberOfRows": function () {},
-  "getNumberOfColumns": function () {},
-  "getDistinctValues": function () {},
-  "getColumnRange": function () {},
-  "_checkValueField": function () {},
-  "_setRangeDefaults": function () {},
-  "_dataInitialize": function () {},
-  "_getDataPoints": function () {},
-  "create": function () {},
-  "setSize": function () {},
-  "_resizeCanvas": function () {},
-  "animationStart": function () {},
-  "animationStop": function () {},
-  "_resizeCenter": function () {},
-  "getCameraPosition": function () {},
-  "_readData": function () {},
-  "setData": function () {},
-  "setOptions": function () {},
-  "setPointDrawingMethod": function () {},
-  "redraw": function () {},
-  "_getContext": function () {},
-  "_redrawClear": function () {},
+  "_dataPointFromXY": function () {},
   "_dotSize": function () {},
-  "_getLegendWidth": function () {},
-  "_redrawLegend": function () {},
-  "_redrawFilter": function () {},
-  "_redrawSlider": function () {},
-  "_redrawInfo": function () {},
-  "_line": function () {},
-  "drawAxisLabelX": function () {},
-  "drawAxisLabelY": function () {},
-  "drawAxisLabelZ": function () {},
-  "_line3d": function () {},
-  "_redrawAxis": function () {},
-  "_hsv2rgb": function () {},
-  "_getStrokeWidth": function () {},
-  "_redrawBar": function () {},
-  "_polygon": function () {},
   "_drawCircle": function () {},
-  "_getColorsRegular": function () {},
-  "_getColorsColor": function () {},
-  "_getColorsSize": function () {},
-  "_calcRadius": function () {},
-  "_redrawBarGraphPoint": function () {},
-  "_redrawBarColorGraphPoint": function () {},
-  "_redrawBarSizeGraphPoint": function () {},
-  "_redrawDotGraphPoint": function () {},
-  "_redrawDotLineGraphPoint": function () {},
-  "_redrawDotColorGraphPoint": function () {},
-  "_redrawDotSizeGraphPoint": function () {},
-  "_redrawSurfaceGraphPoint": function () {},
   "_drawGridLine": function () {},
-  "_redrawGridGraphPoint": function () {},
-  "_redrawLineGraphPoint": function () {},
-  "_redrawDataGraph": function () {},
+  "_getColorsColor": function () {},
+  "_getColorsRegular": function () {},
+  "_getColorsSize": function () {},
+  "_getContext": function () {},
+  "_getDataPoints": function () {},
+  "_getLegendWidth": function () {},
+  "_getStrokeWidth": function () {},
+  "_hideTooltip": function () {},
+  "_hsv2rgb": function () {},
+  "_initializeData": function () {},
+  "_insideTriangle": function () {},
+  "_line": function () {},
+  "_line3d": function () {},
+  "_onClick": function () {},
   "_onMouseDown": function () {},
   "_onMouseMove": function () {},
   "_onMouseUp": function () {},
   "_onTooltip": function () {},
-  "_onTouchStart": function () {},
-  "_onTouchMove": function () {},
   "_onTouchEnd": function () {},
+  "_onTouchMove": function () {},
+  "_onTouchStart": function () {},
   "_onWheel": function () {},
-  "_insideTriangle": function () {},
-  "_dataPointFromXY": function () {},
+  "_polygon": function () {},
+  "_readData": function () {},
+  "_redrawAxis": function () {},
+  "_redrawBar": function () {},
+  "_redrawBarColorGraphPoint": function () {},
+  "_redrawBarGraphPoint": function () {},
+  "_redrawBarSizeGraphPoint": function () {},
+  "_redrawClear": function () {},
+  "_redrawDataGraph": function () {},
+  "_redrawDotColorGraphPoint": function () {},
+  "_redrawDotGraphPoint": function () {},
+  "_redrawDotLineGraphPoint": function () {},
+  "_redrawDotSizeGraphPoint": function () {},
+  "_redrawFilter": function () {},
+  "_redrawGridGraphPoint": function () {},
+  "_redrawInfo": function () {},
+  "_redrawLegend": function () {},
+  "_redrawLineGraphPoint": function () {},
+  "_redrawSlider": function () {},
+  "_redrawSurfaceGraphPoint": function () {},
+  "_resizeCanvas": function () {},
+  "_resizeCenter": function () {},
+  "_setScale": function () {},
+  "_setSize": function () {},
   "_showTooltip": function () {},
-  "_hideTooltip": function () {},
-  "setCameraPosition": function () {}
+  "_storeMousePosition": function () {},
+  "addEventListener": function () {},
+  "animationStart": function () {},
+  "animationStop": function () {},
+  "create": function () {},
+  "drawAxisLabelX": function () {},
+  "drawAxisLabelY": function () {},
+  "drawAxisLabelZ": function () {},
+  "emit": function () {},
+  "getCameraPosition": function () {},
+  "getDataPoints": function () {},
+  "hasBars": function () {},
+  "hasListeners": function () {},
+  "listeners": function () {},
+  "off": function () {},
+  "on": function () {},
+  "once": function () {},
+  "redraw": function () {},
+  "removeAllListeners": function () {},
+  "removeEventListener": function () {},
+  "removeListener": function () {},
+  "setCameraPosition": function () {},
+  "setData": function () {},
+  "setOptions": function () {},
+  "setPointDrawingMethod": function () {},
+  "setSize": function () {}
+};
+vis.Hammer.AttrRecognizer.prototype = {
+  "_super": function () {},
+  "attrTest": function () {},
+  "canEmit": function () {},
+  "canRecognizeWith": function () {},
+  "constructor": function () {},
+  "defaults": function () {},
+  "dropRecognizeWith": function () {},
+  "dropRequireFailure": function () {},
+  "emit": function () {},
+  "getTouchAction": function () {},
+  "hasRequireFailures": function () {},
+  "process": function () {},
+  "recognize": function () {},
+  "recognizeWith": function () {},
+  "requireFailure": function () {},
+  "reset": function () {},
+  "set": function () {},
+  "tryEmit": function () {}
+};
+vis.Hammer.Input.prototype = {
+  "destroy": function () {},
+  "handler": function () {},
+  "init": function () {}
+};
+vis.Hammer.MouseInput.prototype = {
+  "_super": function () {},
+  "constructor": function () {},
+  "destroy": function () {},
+  "handler": function () {},
+  "init": function () {}
+};
+vis.Hammer.Pan.prototype = {
+  "_super": function () {},
+  "attrTest": function () {},
+  "canEmit": function () {},
+  "canRecognizeWith": function () {},
+  "constructor": function () {},
+  "defaults": function () {},
+  "directionTest": function () {},
+  "dropRecognizeWith": function () {},
+  "dropRequireFailure": function () {},
+  "emit": function () {},
+  "getTouchAction": function () {},
+  "hasRequireFailures": function () {},
+  "process": function () {},
+  "recognize": function () {},
+  "recognizeWith": function () {},
+  "requireFailure": function () {},
+  "reset": function () {},
+  "set": function () {},
+  "tryEmit": function () {}
+};
+vis.Hammer.Pinch.prototype = {
+  "_super": function () {},
+  "attrTest": function () {},
+  "canEmit": function () {},
+  "canRecognizeWith": function () {},
+  "constructor": function () {},
+  "defaults": function () {},
+  "dropRecognizeWith": function () {},
+  "dropRequireFailure": function () {},
+  "emit": function () {},
+  "getTouchAction": function () {},
+  "hasRequireFailures": function () {},
+  "process": function () {},
+  "recognize": function () {},
+  "recognizeWith": function () {},
+  "requireFailure": function () {},
+  "reset": function () {},
+  "set": function () {},
+  "tryEmit": function () {}
+};
+vis.Hammer.PointerEventInput.prototype = {
+  "_super": function () {},
+  "constructor": function () {},
+  "destroy": function () {},
+  "handler": function () {},
+  "init": function () {}
+};
+vis.Hammer.Press.prototype = {
+  "_super": function () {},
+  "canEmit": function () {},
+  "canRecognizeWith": function () {},
+  "constructor": function () {},
+  "defaults": function () {},
+  "dropRecognizeWith": function () {},
+  "dropRequireFailure": function () {},
+  "emit": function () {},
+  "getTouchAction": function () {},
+  "hasRequireFailures": function () {},
+  "process": function () {},
+  "recognize": function () {},
+  "recognizeWith": function () {},
+  "requireFailure": function () {},
+  "reset": function () {},
+  "set": function () {},
+  "tryEmit": function () {}
+};
+vis.Hammer.Recognizer.prototype = {
+  "canEmit": function () {},
+  "canRecognizeWith": function () {},
+  "defaults": function () {},
+  "dropRecognizeWith": function () {},
+  "dropRequireFailure": function () {},
+  "emit": function () {},
+  "getTouchAction": function () {},
+  "hasRequireFailures": function () {},
+  "process": function () {},
+  "recognize": function () {},
+  "recognizeWith": function () {},
+  "requireFailure": function () {},
+  "reset": function () {},
+  "set": function () {},
+  "tryEmit": function () {}
+};
+vis.Hammer.Rotate.prototype = {
+  "_super": function () {},
+  "attrTest": function () {},
+  "canEmit": function () {},
+  "canRecognizeWith": function () {},
+  "constructor": function () {},
+  "defaults": function () {},
+  "dropRecognizeWith": function () {},
+  "dropRequireFailure": function () {},
+  "emit": function () {},
+  "getTouchAction": function () {},
+  "hasRequireFailures": function () {},
+  "process": function () {},
+  "recognize": function () {},
+  "recognizeWith": function () {},
+  "requireFailure": function () {},
+  "reset": function () {},
+  "set": function () {},
+  "tryEmit": function () {}
+};
+vis.Hammer.SingleTouchInput.prototype = {
+  "_super": function () {},
+  "constructor": function () {},
+  "destroy": function () {},
+  "handler": function () {},
+  "init": function () {}
+};
+vis.Hammer.Swipe.prototype = {
+  "_super": function () {},
+  "attrTest": function () {},
+  "canEmit": function () {},
+  "canRecognizeWith": function () {},
+  "constructor": function () {},
+  "defaults": function () {},
+  "dropRecognizeWith": function () {},
+  "dropRequireFailure": function () {},
+  "emit": function () {},
+  "getTouchAction": function () {},
+  "hasRequireFailures": function () {},
+  "process": function () {},
+  "recognize": function () {},
+  "recognizeWith": function () {},
+  "requireFailure": function () {},
+  "reset": function () {},
+  "set": function () {},
+  "tryEmit": function () {}
+};
+vis.Hammer.Tap.prototype = {
+  "_super": function () {},
+  "canEmit": function () {},
+  "canRecognizeWith": function () {},
+  "constructor": function () {},
+  "defaults": function () {},
+  "dropRecognizeWith": function () {},
+  "dropRequireFailure": function () {},
+  "emit": function () {},
+  "failTimeout": function () {},
+  "getTouchAction": function () {},
+  "hasRequireFailures": function () {},
+  "process": function () {},
+  "recognize": function () {},
+  "recognizeWith": function () {},
+  "requireFailure": function () {},
+  "reset": function () {},
+  "set": function () {},
+  "tryEmit": function () {}
+};
+vis.Hammer.TouchAction.prototype = {
+  "compute": function () {},
+  "preventDefaults": function () {},
+  "preventSrc": function () {},
+  "set": function () {},
+  "update": function () {}
+};
+vis.Hammer.TouchInput.prototype = {
+  "_super": function () {},
+  "constructor": function () {},
+  "destroy": function () {},
+  "handler": function () {},
+  "init": function () {}
+};
+vis.Hammer.TouchMouseInput.prototype = {
+  "_super": function () {},
+  "constructor": function () {},
+  "destroy": function () {},
+  "handler": function () {},
+  "init": function () {}
+};
+vis.Network.prototype = {
+  "DOMtoCanvas": function () {},
+  "_updateValueRange": function () {},
+  "_updateVisibleIndices": function () {},
+  "addEdgeMode": function () {},
+  "addEventListener": function () {},
+  "addNodeMode": function () {},
+  "bindEventListeners": function () {},
+  "canvasToDOM": function () {},
+  "cluster": function () {},
+  "clusterByConnection": function () {},
+  "clusterByHubsize": function () {},
+  "clusterOutliers": function () {},
+  "deleteSelected": function () {},
+  "destroy": function () {},
+  "disableEditMode": function () {},
+  "editEdgeMode": function () {},
+  "editNode": function () {},
+  "editNodeMode": function () {},
+  "emit": function () {},
+  "enableEditMode": function () {},
+  "findNode": function () {},
+  "fit": function () {},
+  "focus": function () {},
+  "getBoundingBox": function () {},
+  "getConnectedEdges": function () {},
+  "getConnectedNodes": function () {},
+  "getEdgeAt": function () {},
+  "getNodeAt": function () {},
+  "getNodesInCluster": function () {},
+  "getOptionsFromConfigurator": function () {},
+  "getPositions": function () {},
+  "getScale": function () {},
+  "getSeed": function () {},
+  "getSelectedEdges": function () {},
+  "getSelectedNodes": function () {},
+  "getSelection": function () {},
+  "getViewPosition": function () {},
+  "hasListeners": function () {},
+  "isActive": function () {},
+  "isCluster": function () {},
+  "listeners": function () {},
+  "moveNode": function () {},
+  "moveTo": function () {},
+  "off": function () {},
+  "on": function () {},
+  "once": function () {},
+  "openCluster": function () {},
+  "redraw": function () {},
+  "releaseNode": function () {},
+  "removeAllListeners": function () {},
+  "removeEventListener": function () {},
+  "removeListener": function () {},
+  "selectEdges": function () {},
+  "selectNodes": function () {},
+  "setData": function () {},
+  "setOptions": function () {},
+  "setSelection": function () {},
+  "setSize": function () {},
+  "stabilize": function () {},
+  "startSimulation": function () {},
+  "stopSimulation": function () {},
+  "storePositions": function () {},
+  "unselectAll": function () {}
+};
+vis.Queue.prototype = {
+  "_flushIfNeeded": function () {},
+  "destroy": function () {},
+  "flush": function () {},
+  "queue": function () {},
+  "replace": function () {},
+  "setOptions": function () {}
+};
+vis.Timeline.prototype = {
+  "_create": function () {},
+  "_createConfigurator": function () {},
+  "_getScrollTop": function () {},
+  "_initAutoResize": function () {},
+  "_onDrag": function () {},
+  "_onPinch": function () {},
+  "_onTouch": function () {},
+  "_redraw": function () {},
+  "_setDOM": function () {},
+  "_setScrollTop": function () {},
+  "_startAutoResize": function () {},
+  "_stopAutoResize": function () {},
+  "_toGlobalScreen": function () {},
+  "_toGlobalTime": function () {},
+  "_toScreen": function () {},
+  "_toTime": function () {},
+  "_updateScrollTop": function () {},
+  "addCustomTime": function () {},
+  "addEventListener": function () {},
+  "destroy": function () {},
+  "emit": function () {},
+  "fit": function () {},
+  "focus": function () {},
+  "getCurrentTime": function () {},
+  "getCustomTime": function () {},
+  "getDataRange": function () {},
+  "getEventProperties": function () {},
+  "getItemRange": function () {},
+  "getSelection": function () {},
+  "getVisibleItems": function () {},
+  "getWindow": function () {},
+  "hasListeners": function () {},
+  "isActive": function () {},
+  "listeners": function () {},
+  "moveTo": function () {},
+  "off": function () {},
+  "on": function () {},
+  "once": function () {},
+  "redraw": function () {},
+  "removeAllListeners": function () {},
+  "removeCustomTime": function () {},
+  "removeEventListener": function () {},
+  "removeListener": function () {},
+  "repaint": function () {},
+  "setCurrentTime": function () {},
+  "setCustomTime": function () {},
+  "setCustomTimeTitle": function () {},
+  "setData": function () {},
+  "setGroups": function () {},
+  "setItems": function () {},
+  "setOptions": function () {},
+  "setSelection": function () {},
+  "setWindow": function () {},
+  "toggleRollingMode": function () {},
+  "zoomIn": function () {},
+  "zoomOut": function () {}
 };
 vis.graph3d.Camera.prototype = {
-  "setArmLocation": function () {},
-  "setArmRotation": function () {},
-  "getArmRotation": function () {},
-  "setArmLength": function () {},
+  "calculateCameraOrientation": function () {},
   "getArmLength": function () {},
+  "getArmRotation": function () {},
   "getCameraLocation": function () {},
   "getCameraRotation": function () {},
-  "calculateCameraOrientation": function () {}
+  "getOffset": function () {},
+  "setArmLength": function () {},
+  "setArmLocation": function () {},
+  "setArmRotation": function () {},
+  "setOffset": function () {}
 };
 vis.graph3d.Filter.prototype = {
-  "isLoaded": function () {},
-  "getLoadedProgress": function () {},
-  "getLabel": function () {},
-  "getColumn": function () {},
-  "getSelectedValue": function () {},
-  "getValues": function () {},
-  "getValue": function () {},
   "_getDataPoints": function () {},
-  "setOnLoadCallback": function () {},
+  "getColumn": function () {},
+  "getLabel": function () {},
+  "getLoadedProgress": function () {},
+  "getSelectedValue": function () {},
+  "getValue": function () {},
+  "getValues": function () {},
+  "isLoaded": function () {},
+  "loadInBackground": function () {},
   "selectValue": function () {},
-  "loadInBackground": function () {}
+  "setOnLoadCallback": function () {}
 };
 vis.graph3d.Point3d.prototype = {
   "length": function () {}
 };
 vis.graph3d.Slider.prototype = {
-  "prev": function () {},
+  "_onMouseDown": function () {},
+  "_onMouseMove": function () {},
+  "_onMouseUp": function () {},
+  "get": function () {},
+  "getIndex": function () {},
+  "getPlayInterval": function () {},
+  "indexToLeft": function () {},
+  "leftToIndex": function () {},
   "next": function () {},
-  "playNext": function () {},
-  "togglePlay": function () {},
+  "onChange": function () {},
   "play": function () {},
-  "stop": function () {},
+  "playNext": function () {},
+  "prev": function () {},
+  "redraw": function () {},
+  "setIndex": function () {},
   "setOnChangeCallback": function () {},
   "setPlayInterval": function () {},
-  "getPlayInterval": function () {},
   "setPlayLoop": function () {},
-  "onChange": function () {},
-  "redraw": function () {},
   "setValues": function () {},
-  "setIndex": function () {},
-  "getIndex": function () {},
-  "get": function () {},
-  "_onMouseDown": function () {},
-  "leftToIndex": function () {},
-  "indexToLeft": function () {},
-  "_onMouseMove": function () {},
-  "_onMouseUp": function () {}
+  "stop": function () {},
+  "togglePlay": function () {}
 };
 vis.graph3d.StepNumber.prototype = {
-  "isNumeric": function () {},
-  "setRange": function () {},
-  "setStep": function () {},
+  "end": function () {},
   "getCurrent": function () {},
   "getStep": function () {},
-  "start": function () {},
+  "isNumeric": function () {},
   "next": function () {},
-  "end": function () {}
+  "setRange": function () {},
+  "setStep": function () {},
+  "start": function () {}
 };
 vis.moment.prototype = {
   "add": function () {},
   "calendar": function () {},
   "clone": function () {},
+  "creationData": function () {},
+  "date": function () {},
+  "dates": function () {},
+  "day": function () {},
+  "dayOfYear": function () {},
+  "days": function () {},
+  "daysInMonth": function () {},
   "diff": function () {},
   "endOf": function () {},
   "format": function () {},
   "from": function () {},
   "fromNow": function () {},
-  "to": function () {},
-  "toNow": function () {},
   "get": function () {},
+  "hasAlignedHourOffset": function () {},
+  "hour": function () {},
+  "hours": function () {},
+  "inspect": function () {},
   "invalidAt": function () {},
   "isAfter": function () {},
   "isBefore": function () {},
   "isBetween": function () {},
+  "isDST": function () {},
+  "isDSTShifted": function () {},
+  "isLeapYear": function () {},
+  "isLocal": function () {},
   "isSame": function () {},
   "isSameOrAfter": function () {},
   "isSameOrBefore": function () {},
+  "isUTC": function () {},
+  "isUtc": function () {},
+  "isUtcOffset": function () {},
   "isValid": function () {},
+  "isoWeek": function () {},
+  "isoWeekYear": function () {},
+  "isoWeekday": function () {},
+  "isoWeeks": function () {},
+  "isoWeeksInYear": function () {},
   "lang": function () {},
+  "local": function () {},
   "locale": function () {},
   "localeData": function () {},
   "max": function () {},
+  "millisecond": function () {},
+  "milliseconds": function () {},
   "min": function () {},
+  "minute": function () {},
+  "minutes": function () {},
+  "month": function () {},
+  "months": function () {},
+  "parseZone": function () {},
   "parsingFlags": function () {},
+  "quarter": function () {},
+  "quarters": function () {},
+  "second": function () {},
+  "seconds": function () {},
   "set": function () {},
   "startOf": function () {},
   "subtract": function () {},
+  "to": function () {},
   "toArray": function () {},
-  "toObject": function () {},
   "toDate": function () {},
   "toISOString": function () {},
   "toJSON": function () {},
+  "toNow": function () {},
+  "toObject": function () {},
   "toString": function () {},
   "unix": function () {},
-  "valueOf": function () {},
-  "creationData": function () {},
-  "year": function () {},
-  "isLeapYear": function () {},
-  "weekYear": function () {},
-  "isoWeekYear": function () {},
-  "quarters": function () {},
-  "quarter": function () {},
-  "month": function () {},
-  "daysInMonth": function () {},
-  "weeks": function () {},
-  "week": function () {},
-  "isoWeeks": function () {},
-  "isoWeek": function () {},
-  "weeksInYear": function () {},
-  "isoWeeksInYear": function () {},
-  "date": function () {},
-  "days": function () {},
-  "day": function () {},
-  "weekday": function () {},
-  "isoWeekday": function () {},
-  "dayOfYear": function () {},
-  "hours": function () {},
-  "hour": function () {},
-  "minutes": function () {},
-  "minute": function () {},
-  "seconds": function () {},
-  "second": function () {},
-  "milliseconds": function () {},
-  "millisecond": function () {},
-  "utcOffset": function () {},
   "utc": function () {},
-  "local": function () {},
-  "parseZone": function () {},
-  "hasAlignedHourOffset": function () {},
-  "isDST": function () {},
-  "isLocal": function () {},
-  "isUtcOffset": function () {},
-  "isUtc": function () {},
-  "isUTC": function () {},
-  "zoneAbbr": function () {},
-  "zoneName": function () {},
-  "dates": function () {},
-  "months": function () {},
+  "utcOffset": function () {},
+  "valueOf": function () {},
+  "week": function () {},
+  "weekYear": function () {},
+  "weekday": function () {},
+  "weeks": function () {},
+  "weeksInYear": function () {},
+  "year": function () {},
   "years": function () {},
   "zone": function () {},
-  "isDSTShifted": function () {}
-};
-vis.Hammer.Input.prototype = {
-  "handler": function () {},
-  "init": function () {},
-  "destroy": function () {}
-};
-vis.Hammer.TouchAction.prototype = {
-  "set": function () {},
-  "update": function () {},
-  "compute": function () {},
-  "preventDefaults": function () {},
-  "preventSrc": function () {}
-};
-vis.Hammer.TouchInput.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "handler": function () {},
-  "init": function () {},
-  "destroy": function () {}
-};
-vis.Hammer.MouseInput.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "handler": function () {},
-  "init": function () {},
-  "destroy": function () {}
-};
-vis.Hammer.PointerEventInput.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "handler": function () {},
-  "init": function () {},
-  "destroy": function () {}
-};
-vis.Hammer.TouchMouseInput.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "handler": function () {},
-  "destroy": function () {},
-  "init": function () {}
-};
-vis.Hammer.SingleTouchInput.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "handler": function () {},
-  "init": function () {},
-  "destroy": function () {}
-};
-vis.Hammer.Recognizer.prototype = {
-  "defaults": function () {},
-  "set": function () {},
-  "recognizeWith": function () {},
-  "dropRecognizeWith": function () {},
-  "requireFailure": function () {},
-  "dropRequireFailure": function () {},
-  "hasRequireFailures": function () {},
-  "canRecognizeWith": function () {},
-  "emit": function () {},
-  "tryEmit": function () {},
-  "canEmit": function () {},
-  "recognize": function () {},
-  "process": function () {},
-  "getTouchAction": function () {},
-  "reset": function () {}
-};
-vis.Hammer.AttrRecognizer.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "defaults": function () {},
-  "attrTest": function () {},
-  "process": function () {},
-  "set": function () {},
-  "recognizeWith": function () {},
-  "dropRecognizeWith": function () {},
-  "requireFailure": function () {},
-  "dropRequireFailure": function () {},
-  "hasRequireFailures": function () {},
-  "canRecognizeWith": function () {},
-  "emit": function () {},
-  "tryEmit": function () {},
-  "canEmit": function () {},
-  "recognize": function () {},
-  "getTouchAction": function () {},
-  "reset": function () {}
-};
-vis.Hammer.Tap.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "defaults": function () {},
-  "getTouchAction": function () {},
-  "process": function () {},
-  "failTimeout": function () {},
-  "reset": function () {},
-  "emit": function () {},
-  "set": function () {},
-  "recognizeWith": function () {},
-  "dropRecognizeWith": function () {},
-  "requireFailure": function () {},
-  "dropRequireFailure": function () {},
-  "hasRequireFailures": function () {},
-  "canRecognizeWith": function () {},
-  "tryEmit": function () {},
-  "canEmit": function () {},
-  "recognize": function () {}
-};
-vis.Hammer.Pan.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "defaults": function () {},
-  "getTouchAction": function () {},
-  "directionTest": function () {},
-  "attrTest": function () {},
-  "emit": function () {},
-  "process": function () {},
-  "set": function () {},
-  "recognizeWith": function () {},
-  "dropRecognizeWith": function () {},
-  "requireFailure": function () {},
-  "dropRequireFailure": function () {},
-  "hasRequireFailures": function () {},
-  "canRecognizeWith": function () {},
-  "tryEmit": function () {},
-  "canEmit": function () {},
-  "recognize": function () {},
-  "reset": function () {}
-};
-vis.Hammer.Swipe.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "defaults": function () {},
-  "getTouchAction": function () {},
-  "attrTest": function () {},
-  "emit": function () {},
-  "process": function () {},
-  "set": function () {},
-  "recognizeWith": function () {},
-  "dropRecognizeWith": function () {},
-  "requireFailure": function () {},
-  "dropRequireFailure": function () {},
-  "hasRequireFailures": function () {},
-  "canRecognizeWith": function () {},
-  "tryEmit": function () {},
-  "canEmit": function () {},
-  "recognize": function () {},
-  "reset": function () {}
-};
-vis.Hammer.Pinch.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "defaults": function () {},
-  "getTouchAction": function () {},
-  "attrTest": function () {},
-  "emit": function () {},
-  "process": function () {},
-  "set": function () {},
-  "recognizeWith": function () {},
-  "dropRecognizeWith": function () {},
-  "requireFailure": function () {},
-  "dropRequireFailure": function () {},
-  "hasRequireFailures": function () {},
-  "canRecognizeWith": function () {},
-  "tryEmit": function () {},
-  "canEmit": function () {},
-  "recognize": function () {},
-  "reset": function () {}
-};
-vis.Hammer.Rotate.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "defaults": function () {},
-  "getTouchAction": function () {},
-  "attrTest": function () {},
-  "process": function () {},
-  "set": function () {},
-  "recognizeWith": function () {},
-  "dropRecognizeWith": function () {},
-  "requireFailure": function () {},
-  "dropRequireFailure": function () {},
-  "hasRequireFailures": function () {},
-  "canRecognizeWith": function () {},
-  "emit": function () {},
-  "tryEmit": function () {},
-  "canEmit": function () {},
-  "recognize": function () {},
-  "reset": function () {}
-};
-vis.Hammer.Press.prototype = {
-  "constructor": function () {},
-  "_super": function () {},
-  "defaults": function () {},
-  "getTouchAction": function () {},
-  "process": function () {},
-  "reset": function () {},
-  "emit": function () {},
-  "set": function () {},
-  "recognizeWith": function () {},
-  "dropRecognizeWith": function () {},
-  "requireFailure": function () {},
-  "dropRequireFailure": function () {},
-  "hasRequireFailures": function () {},
-  "canRecognizeWith": function () {},
-  "tryEmit": function () {},
-  "canEmit": function () {},
-  "recognize": function () {}
-};
-vis.Timeline.prototype = {
-  "_createConfigurator": function () {},
-  "redraw": function () {},
-  "setOptions": function () {},
-  "setItems": function () {},
-  "setGroups": function () {},
-  "setData": function () {},
-  "setSelection": function () {},
-  "getSelection": function () {},
-  "focus": function () {},
-  "fit": function () {},
-  "getItemRange": function () {},
-  "getDataRange": function () {},
-  "getEventProperties": function () {},
-  "addEventListener": function () {},
-  "on": function () {},
-  "once": function () {},
-  "removeEventListener": function () {},
-  "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "off": function () {},
-  "emit": function () {},
-  "listeners": function () {},
-  "hasListeners": function () {},
-  "_create": function () {},
-  "isActive": function () {},
-  "destroy": function () {},
-  "setCustomTime": function () {},
-  "getCustomTime": function () {},
-  "setCustomTimeTitle": function () {},
-  "addCustomTime": function () {},
-  "removeCustomTime": function () {},
-  "getVisibleItems": function () {},
-  "setWindow": function () {},
-  "moveTo": function () {},
-  "getWindow": function () {},
-  "zoomIn": function () {},
-  "zoomOut": function () {},
-  "_redraw": function () {},
-  "repaint": function () {},
-  "setCurrentTime": function () {},
-  "getCurrentTime": function () {},
-  "_toTime": function () {},
-  "_toGlobalTime": function () {},
-  "_toScreen": function () {},
-  "_toGlobalScreen": function () {},
-  "_initAutoResize": function () {},
-  "_startAutoResize": function () {},
-  "_stopAutoResize": function () {},
-  "_onTouch": function () {},
-  "_onPinch": function () {},
-  "_onDrag": function () {},
-  "_setScrollTop": function () {},
-  "_updateScrollTop": function () {},
-  "_getScrollTop": function () {}
-};
-vis.Graph2d.prototype = {
-  "setOptions": function () {},
-  "setItems": function () {},
-  "setGroups": function () {},
-  "getLegend": function () {},
-  "isGroupVisible": function () {},
-  "getDataRange": function () {},
-  "getEventProperties": function () {},
-  "_createConfigurator": function () {},
-  "addEventListener": function () {},
-  "on": function () {},
-  "once": function () {},
-  "removeEventListener": function () {},
-  "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "off": function () {},
-  "emit": function () {},
-  "listeners": function () {},
-  "hasListeners": function () {},
-  "_create": function () {},
-  "isActive": function () {},
-  "destroy": function () {},
-  "setCustomTime": function () {},
-  "getCustomTime": function () {},
-  "setCustomTimeTitle": function () {},
-  "addCustomTime": function () {},
-  "removeCustomTime": function () {},
-  "getVisibleItems": function () {},
-  "fit": function () {},
-  "setWindow": function () {},
-  "moveTo": function () {},
-  "getWindow": function () {},
-  "zoomIn": function () {},
-  "zoomOut": function () {},
-  "redraw": function () {},
-  "_redraw": function () {},
-  "repaint": function () {},
-  "setCurrentTime": function () {},
-  "getCurrentTime": function () {},
-  "_toTime": function () {},
-  "_toGlobalTime": function () {},
-  "_toScreen": function () {},
-  "_toGlobalScreen": function () {},
-  "_initAutoResize": function () {},
-  "_startAutoResize": function () {},
-  "_stopAutoResize": function () {},
-  "_onTouch": function () {},
-  "_onPinch": function () {},
-  "_onDrag": function () {},
-  "_setScrollTop": function () {},
-  "_updateScrollTop": function () {},
-  "_getScrollTop": function () {}
+  "zoneAbbr": function () {},
+  "zoneName": function () {}
 };
 vis.timeline.Core.prototype = {
-  "addEventListener": function () {},
-  "on": function () {},
-  "once": function () {},
-  "removeEventListener": function () {},
-  "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "off": function () {},
-  "emit": function () {},
-  "listeners": function () {},
-  "hasListeners": function () {},
   "_create": function () {},
-  "setOptions": function () {},
-  "isActive": function () {},
-  "destroy": function () {},
-  "setCustomTime": function () {},
-  "getCustomTime": function () {},
-  "setCustomTimeTitle": function () {},
-  "getEventProperties": function () {},
-  "addCustomTime": function () {},
-  "removeCustomTime": function () {},
-  "getVisibleItems": function () {},
-  "fit": function () {},
-  "getDataRange": function () {},
-  "setWindow": function () {},
-  "moveTo": function () {},
-  "getWindow": function () {},
-  "zoomIn": function () {},
-  "zoomOut": function () {},
-  "redraw": function () {},
-  "_redraw": function () {},
-  "repaint": function () {},
-  "setCurrentTime": function () {},
-  "getCurrentTime": function () {},
-  "_toTime": function () {},
-  "_toGlobalTime": function () {},
-  "_toScreen": function () {},
-  "_toGlobalScreen": function () {},
+  "_createConfigurator": function () {},
+  "_getScrollTop": function () {},
   "_initAutoResize": function () {},
+  "_onDrag": function () {},
+  "_onPinch": function () {},
+  "_onTouch": function () {},
+  "_redraw": function () {},
+  "_setDOM": function () {},
+  "_setScrollTop": function () {},
   "_startAutoResize": function () {},
   "_stopAutoResize": function () {},
-  "_onTouch": function () {},
-  "_onPinch": function () {},
-  "_onDrag": function () {},
-  "_setScrollTop": function () {},
+  "_toGlobalScreen": function () {},
+  "_toGlobalTime": function () {},
+  "_toScreen": function () {},
+  "_toTime": function () {},
   "_updateScrollTop": function () {},
-  "_getScrollTop": function () {},
-  "_createConfigurator": function () {}
-};
-vis.timeline.Range.prototype = {
-  "options": function () {},
-  "props": function () {},
-  "setOptions": function () {},
-  "setRange": function () {},
-  "_cancelAnimation": function () {},
-  "_applyRange": function () {},
-  "getRange": function () {},
-  "conversion": function () {},
-  "_onDragStart": function () {},
-  "_onDrag": function () {},
-  "_onDragEnd": function () {},
-  "_onMouseWheel": function () {},
-  "_onTouch": function () {},
-  "_onPinch": function () {},
-  "_isInsideRange": function () {},
-  "_pointerToDate": function () {},
-  "getPointer": function () {},
-  "zoom": function () {},
-  "move": function () {},
-  "moveTo": function () {},
-  "redraw": function () {},
-  "destroy": function () {},
-  "_isResized": function () {}
-};
-vis.timeline.TimeStep.prototype = {
-  "setMoment": function () {},
-  "setFormat": function () {},
-  "setRange": function () {},
-  "start": function () {},
-  "roundToMinor": function () {},
-  "hasNext": function () {},
-  "next": function () {},
-  "getCurrent": function () {},
-  "setScale": function () {},
-  "setAutoScale": function () {},
-  "setMinimumStep": function () {},
-  "isMajor": function () {},
-  "getLabelMinor": function () {},
-  "getLabelMajor": function () {},
-  "getClassName": function () {}
-};
-vis.timeline.components.items.Item.prototype = {
-  "stack": function () {},
-  "select": function () {},
-  "unselect": function () {},
-  "setData": function () {},
-  "setParent": function () {},
-  "isVisible": function () {},
-  "show": function () {},
-  "hide": function () {},
-  "redraw": function () {},
-  "repositionX": function () {},
-  "repositionY": function () {},
-  "_repaintDeleteButton": function () {},
-  "_repaintOnItemUpdateTimeTooltip": function () {},
-  "_updateContents": function () {},
-  "_updateTitle": function () {},
-  "_updateDataAttributes": function () {},
-  "_updateStyle": function () {},
-  "_contentToString": function () {},
-  "getWidthLeft": function () {},
-  "getWidthRight": function () {},
-  "_repaintDragCenter": function () {}
-};
-vis.timeline.components.items.BackgroundItem.prototype = {
-  "id": function () {},
-  "parent": function () {},
-  "data": function () {},
-  "dom": function () {},
-  "conversion": function () {},
-  "options": function () {},
-  "selected": function () {},
-  "displayed": function () {},
-  "dirty": function () {},
-  "top": function () {},
-  "right": function () {},
-  "left": function () {},
-  "width": function () {},
-  "height": function () {},
-  "editable": function () {},
-  "baseClassName": function () {},
-  "stack": function () {},
-  "isVisible": function () {},
-  "redraw": function () {},
-  "show": function () {},
-  "hide": function () {},
-  "repositionX": function () {},
-  "repositionY": function () {},
-  "select": function () {},
-  "unselect": function () {},
-  "setData": function () {},
-  "setParent": function () {},
-  "_repaintDeleteButton": function () {},
-  "_repaintOnItemUpdateTimeTooltip": function () {},
-  "_updateContents": function () {},
-  "_updateTitle": function () {},
-  "_updateDataAttributes": function () {},
-  "_updateStyle": function () {},
-  "_contentToString": function () {},
-  "getWidthLeft": function () {},
-  "getWidthRight": function () {},
-  "_repaintDragCenter": function () {}
-};
-vis.timeline.components.items.BoxItem.prototype = {
-  "id": function () {},
-  "parent": function () {},
-  "data": function () {},
-  "dom": function () {},
-  "conversion": function () {},
-  "options": function () {},
-  "selected": function () {},
-  "displayed": function () {},
-  "dirty": function () {},
-  "top": function () {},
-  "right": function () {},
-  "left": function () {},
-  "width": function () {},
-  "height": function () {},
-  "editable": function () {},
-  "isVisible": function () {},
-  "redraw": function () {},
-  "show": function () {},
-  "hide": function () {},
-  "repositionX": function () {},
-  "repositionY": function () {},
-  "getWidthLeft": function () {},
-  "getWidthRight": function () {},
-  "stack": function () {},
-  "select": function () {},
-  "unselect": function () {},
-  "setData": function () {},
-  "setParent": function () {},
-  "_repaintDeleteButton": function () {},
-  "_repaintOnItemUpdateTimeTooltip": function () {},
-  "_updateContents": function () {},
-  "_updateTitle": function () {},
-  "_updateDataAttributes": function () {},
-  "_updateStyle": function () {},
-  "_contentToString": function () {},
-  "_repaintDragCenter": function () {}
-};
-vis.timeline.components.items.PointItem.prototype = {
-  "id": function () {},
-  "parent": function () {},
-  "data": function () {},
-  "dom": function () {},
-  "conversion": function () {},
-  "options": function () {},
-  "selected": function () {},
-  "displayed": function () {},
-  "dirty": function () {},
-  "top": function () {},
-  "right": function () {},
-  "left": function () {},
-  "width": function () {},
-  "height": function () {},
-  "editable": function () {},
-  "isVisible": function () {},
-  "redraw": function () {},
-  "show": function () {},
-  "hide": function () {},
-  "repositionX": function () {},
-  "repositionY": function () {},
-  "getWidthLeft": function () {},
-  "getWidthRight": function () {},
-  "stack": function () {},
-  "select": function () {},
-  "unselect": function () {},
-  "setData": function () {},
-  "setParent": function () {},
-  "_repaintDeleteButton": function () {},
-  "_repaintOnItemUpdateTimeTooltip": function () {},
-  "_updateContents": function () {},
-  "_updateTitle": function () {},
-  "_updateDataAttributes": function () {},
-  "_updateStyle": function () {},
-  "_contentToString": function () {},
-  "_repaintDragCenter": function () {}
-};
-vis.timeline.components.items.RangeItem.prototype = {
-  "id": function () {},
-  "parent": function () {},
-  "data": function () {},
-  "dom": function () {},
-  "conversion": function () {},
-  "options": function () {},
-  "selected": function () {},
-  "displayed": function () {},
-  "dirty": function () {},
-  "top": function () {},
-  "right": function () {},
-  "left": function () {},
-  "width": function () {},
-  "height": function () {},
-  "editable": function () {},
-  "baseClassName": function () {},
-  "isVisible": function () {},
-  "redraw": function () {},
-  "show": function () {},
-  "hide": function () {},
-  "repositionX": function () {},
-  "repositionY": function () {},
-  "_repaintDragLeft": function () {},
-  "_repaintDragRight": function () {},
-  "stack": function () {},
-  "select": function () {},
-  "unselect": function () {},
-  "setData": function () {},
-  "setParent": function () {},
-  "_repaintDeleteButton": function () {},
-  "_repaintOnItemUpdateTimeTooltip": function () {},
-  "_updateContents": function () {},
-  "_updateTitle": function () {},
-  "_updateDataAttributes": function () {},
-  "_updateStyle": function () {},
-  "_contentToString": function () {},
-  "getWidthLeft": function () {},
-  "getWidthRight": function () {},
-  "_repaintDragCenter": function () {}
-};
-vis.timeline.components.BackgroundGroup.prototype = {
-  "redraw": function () {},
-  "show": function () {},
-  "_create": function () {},
-  "setData": function () {},
-  "getLabelWidth": function () {},
-  "_calculateSubGroupHeights": function () {},
-  "_isGroupVisible": function () {},
-  "_calculateHeight": function () {},
-  "hide": function () {},
-  "add": function () {},
-  "orderSubgroups": function () {},
-  "resetSubgroups": function () {},
-  "remove": function () {},
-  "removeFromDataSet": function () {},
-  "order": function () {},
-  "_updateVisibleItems": function () {},
-  "_traceVisible": function () {},
-  "_checkIfVisible": function () {},
-  "_checkIfVisibleWithReference": function () {}
-};
-vis.timeline.components.Component.prototype = {
-  "setOptions": function () {},
-  "redraw": function () {},
-  "destroy": function () {},
-  "_isResized": function () {}
-};
-vis.timeline.components.CurrentTime.prototype = {
-  "options": function () {},
-  "props": function () {},
-  "_create": function () {},
-  "destroy": function () {},
-  "setOptions": function () {},
-  "redraw": function () {},
-  "start": function () {},
-  "stop": function () {},
-  "setCurrentTime": function () {},
-  "getCurrentTime": function () {},
-  "_isResized": function () {}
-};
-vis.timeline.components.CustomTime.prototype = {
-  "options": function () {},
-  "props": function () {},
-  "setOptions": function () {},
-  "_create": function () {},
-  "destroy": function () {},
-  "redraw": function () {},
-  "hide": function () {},
-  "setCustomTime": function () {},
-  "getCustomTime": function () {},
-  "setCustomTitle": function () {},
-  "_onDragStart": function () {},
-  "_onDrag": function () {},
-  "_onDragEnd": function () {},
-  "_isResized": function () {}
-};
-vis.timeline.components.DataAxis.prototype = {
-  "options": function () {},
-  "props": function () {},
-  "addGroup": function () {},
-  "updateGroup": function () {},
-  "removeGroup": function () {},
-  "setOptions": function () {},
-  "_create": function () {},
-  "_redrawGroupIcons": function () {},
-  "_cleanupIcons": function () {},
-  "show": function () {},
-  "hide": function () {},
-  "setRange": function () {},
-  "redraw": function () {},
-  "_redrawLabels": function () {},
-  "convertValue": function () {},
-  "screenToValue": function () {},
-  "_redrawLabel": function () {},
-  "_redrawLine": function () {},
-  "_redrawTitle": function () {},
-  "_calculateCharSize": function () {},
-  "destroy": function () {},
-  "_isResized": function () {}
-};
-vis.timeline.components.DataScale.prototype = {
-  "setCharHeight": function () {},
-  "setHeight": function () {},
-  "determineScale": function () {},
-  "is_major": function () {},
-  "getStep": function () {},
-  "getFirstMajor": function () {},
-  "formatValue": function () {},
-  "getLines": function () {},
-  "followScale": function () {},
-  "convertValue": function () {},
-  "screenToValue": function () {}
-};
-vis.timeline.components.GraphGroup.prototype = {
-  "setItems": function () {},
-  "getItems": function () {},
-  "setZeroPosition": function () {},
-  "setOptions": function () {},
-  "update": function () {},
-  "getLegend": function () {},
-  "getYRange": function () {}
-};
-vis.timeline.components.Group.prototype = {
-  "_create": function () {},
-  "setData": function () {},
-  "getLabelWidth": function () {},
-  "redraw": function () {},
-  "_calculateSubGroupHeights": function () {},
-  "_isGroupVisible": function () {},
-  "_calculateHeight": function () {},
-  "show": function () {},
-  "hide": function () {},
-  "add": function () {},
-  "orderSubgroups": function () {},
-  "resetSubgroups": function () {},
-  "remove": function () {},
-  "removeFromDataSet": function () {},
-  "order": function () {},
-  "_updateVisibleItems": function () {},
-  "_traceVisible": function () {},
-  "_checkIfVisible": function () {},
-  "_checkIfVisibleWithReference": function () {}
-};
-vis.timeline.components.ItemSet.prototype = {
-  "options": function () {},
-  "props": function () {},
-  "_create": function () {},
-  "setOptions": function () {},
-  "markDirty": function () {},
-  "destroy": function () {},
-  "hide": function () {},
-  "show": function () {},
-  "setSelection": function () {},
-  "getSelection": function () {},
-  "getVisibleItems": function () {},
-  "_deselect": function () {},
-  "redraw": function () {},
-  "_firstGroup": function () {},
-  "_updateUngrouped": function () {},
-  "getLabelSet": function () {},
-  "setItems": function () {},
-  "getItems": function () {},
-  "setGroups": function () {},
-  "getGroups": function () {},
-  "removeItem": function () {},
-  "_getType": function () {},
-  "_getGroupId": function () {},
-  "_onUpdate": function () {},
-  "_onAdd": function () {},
-  "_onRemove": function () {},
-  "_order": function () {},
-  "_onUpdateGroups": function () {},
-  "_onAddGroups": function () {},
-  "_onRemoveGroups": function () {},
-  "_orderGroups": function () {},
-  "_addItem": function () {},
-  "_updateItem": function () {},
-  "_removeItem": function () {},
-  "_constructByEndArray": function () {},
-  "_onTouch": function () {},
-  "_getGroupIndex": function () {},
-  "_onDragStart": function () {},
-  "_onDragStartAddItem": function () {},
-  "_onDrag": function () {},
-  "_moveToGroup": function () {},
-  "_onDragEnd": function () {},
-  "_onGroupDragStart": function () {},
-  "_onGroupDrag": function () {},
-  "_onGroupDragEnd": function () {},
-  "_onSelectItem": function () {},
-  "_onMouseOver": function () {},
-  "_onMouseOut": function () {},
-  "_onAddItem": function () {},
-  "_onMultiSelectItem": function () {},
-  "itemFromTarget": function () {},
-  "groupFromTarget": function () {},
-  "_cloneItemData": function () {},
-  "_isResized": function () {}
-};
-vis.timeline.components.ItemSet.types.background.prototype = {
-  "id": function () {},
-  "parent": function () {},
-  "data": function () {},
-  "dom": function () {},
-  "conversion": function () {},
-  "options": function () {},
-  "selected": function () {},
-  "displayed": function () {},
-  "dirty": function () {},
-  "top": function () {},
-  "right": function () {},
-  "left": function () {},
-  "width": function () {},
-  "height": function () {},
-  "editable": function () {},
-  "baseClassName": function () {},
-  "stack": function () {},
-  "isVisible": function () {},
-  "redraw": function () {},
-  "show": function () {},
-  "hide": function () {},
-  "repositionX": function () {},
-  "repositionY": function () {},
-  "select": function () {},
-  "unselect": function () {},
-  "setData": function () {},
-  "setParent": function () {},
-  "_repaintDeleteButton": function () {},
-  "_repaintOnItemUpdateTimeTooltip": function () {},
-  "_updateContents": function () {},
-  "_updateTitle": function () {},
-  "_updateDataAttributes": function () {},
-  "_updateStyle": function () {},
-  "_contentToString": function () {},
-  "getWidthLeft": function () {},
-  "getWidthRight": function () {},
-  "_repaintDragCenter": function () {}
-};
-vis.timeline.components.ItemSet.types.box.prototype = {
-  "id": function () {},
-  "parent": function () {},
-  "data": function () {},
-  "dom": function () {},
-  "conversion": function () {},
-  "options": function () {},
-  "selected": function () {},
-  "displayed": function () {},
-  "dirty": function () {},
-  "top": function () {},
-  "right": function () {},
-  "left": function () {},
-  "width": function () {},
-  "height": function () {},
-  "editable": function () {},
-  "isVisible": function () {},
-  "redraw": function () {},
-  "show": function () {},
-  "hide": function () {},
-  "repositionX": function () {},
-  "repositionY": function () {},
-  "getWidthLeft": function () {},
-  "getWidthRight": function () {},
-  "stack": function () {},
-  "select": function () {},
-  "unselect": function () {},
-  "setData": function () {},
-  "setParent": function () {},
-  "_repaintDeleteButton": function () {},
-  "_repaintOnItemUpdateTimeTooltip": function () {},
-  "_updateContents": function () {},
-  "_updateTitle": function () {},
-  "_updateDataAttributes": function () {},
-  "_updateStyle": function () {},
-  "_contentToString": function () {},
-  "_repaintDragCenter": function () {}
-};
-vis.timeline.components.ItemSet.types.range.prototype = {
-  "id": function () {},
-  "parent": function () {},
-  "data": function () {},
-  "dom": function () {},
-  "conversion": function () {},
-  "options": function () {},
-  "selected": function () {},
-  "displayed": function () {},
-  "dirty": function () {},
-  "top": function () {},
-  "right": function () {},
-  "left": function () {},
-  "width": function () {},
-  "height": function () {},
-  "editable": function () {},
-  "baseClassName": function () {},
-  "isVisible": function () {},
-  "redraw": function () {},
-  "show": function () {},
-  "hide": function () {},
-  "repositionX": function () {},
-  "repositionY": function () {},
-  "_repaintDragLeft": function () {},
-  "_repaintDragRight": function () {},
-  "stack": function () {},
-  "select": function () {},
-  "unselect": function () {},
-  "setData": function () {},
-  "setParent": function () {},
-  "_repaintDeleteButton": function () {},
-  "_repaintOnItemUpdateTimeTooltip": function () {},
-  "_updateContents": function () {},
-  "_updateTitle": function () {},
-  "_updateDataAttributes": function () {},
-  "_updateStyle": function () {},
-  "_contentToString": function () {},
-  "getWidthLeft": function () {},
-  "getWidthRight": function () {},
-  "_repaintDragCenter": function () {}
-};
-vis.timeline.components.ItemSet.types.point.prototype = {
-  "id": function () {},
-  "parent": function () {},
-  "data": function () {},
-  "dom": function () {},
-  "conversion": function () {},
-  "options": function () {},
-  "selected": function () {},
-  "displayed": function () {},
-  "dirty": function () {},
-  "top": function () {},
-  "right": function () {},
-  "left": function () {},
-  "width": function () {},
-  "height": function () {},
-  "editable": function () {},
-  "isVisible": function () {},
-  "redraw": function () {},
-  "show": function () {},
-  "hide": function () {},
-  "repositionX": function () {},
-  "repositionY": function () {},
-  "getWidthLeft": function () {},
-  "getWidthRight": function () {},
-  "stack": function () {},
-  "select": function () {},
-  "unselect": function () {},
-  "setData": function () {},
-  "setParent": function () {},
-  "_repaintDeleteButton": function () {},
-  "_repaintOnItemUpdateTimeTooltip": function () {},
-  "_updateContents": function () {},
-  "_updateTitle": function () {},
-  "_updateDataAttributes": function () {},
-  "_updateStyle": function () {},
-  "_contentToString": function () {},
-  "_repaintDragCenter": function () {}
-};
-vis.timeline.components.Legend.prototype = {
-  "options": function () {},
-  "props": function () {},
-  "clear": function () {},
-  "addGroup": function () {},
-  "updateGroup": function () {},
-  "removeGroup": function () {},
-  "_create": function () {},
-  "hide": function () {},
-  "show": function () {},
-  "setOptions": function () {},
-  "redraw": function () {},
-  "drawLegendIcons": function () {},
-  "destroy": function () {},
-  "_isResized": function () {}
-};
-vis.timeline.components.LineGraph.prototype = {
-  "options": function () {},
-  "props": function () {},
-  "_create": function () {},
-  "setOptions": function () {},
-  "hide": function () {},
-  "show": function () {},
-  "setItems": function () {},
-  "setGroups": function () {},
-  "_onUpdate": function () {},
-  "_onAdd": function () {},
-  "_onRemove": function () {},
-  "_onUpdateGroups": function () {},
-  "_onAddGroups": function () {},
-  "_onRemoveGroups": function () {},
-  "_removeGroup": function () {},
-  "_updateGroup": function () {},
-  "_updateAllGroupData": function () {},
-  "redraw": function () {},
-  "_getSortedGroupIds": function () {},
-  "_updateGraph": function () {},
-  "_stack": function () {},
-  "_getRelevantData": function () {},
-  "_applySampling": function () {},
-  "_getYRanges": function () {},
-  "_updateYAxis": function () {},
-  "_toggleAxisVisiblity": function () {},
-  "_convertXcoordinates": function () {},
-  "_convertYcoordinates": function () {},
-  "destroy": function () {},
-  "_isResized": function () {}
-};
-vis.timeline.components.TimeAxis.prototype = {
-  "options": function () {},
-  "props": function () {},
-  "setOptions": function () {},
-  "_create": function () {},
-  "destroy": function () {},
-  "redraw": function () {},
-  "_repaintLabels": function () {},
-  "_repaintMinorText": function () {},
-  "_repaintMajorText": function () {},
-  "_repaintMinorLine": function () {},
-  "_repaintMajorLine": function () {},
-  "_calculateCharSize": function () {},
-  "_isResized": function () {}
-};
-vis.Network.prototype = {
+  "addCustomTime": function () {},
   "addEventListener": function () {},
+  "destroy": function () {},
+  "emit": function () {},
+  "fit": function () {},
+  "getCurrentTime": function () {},
+  "getCustomTime": function () {},
+  "getDataRange": function () {},
+  "getEventProperties": function () {},
+  "getVisibleItems": function () {},
+  "getWindow": function () {},
+  "hasListeners": function () {},
+  "isActive": function () {},
+  "listeners": function () {},
+  "moveTo": function () {},
+  "off": function () {},
   "on": function () {},
   "once": function () {},
-  "removeEventListener": function () {},
-  "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "off": function () {},
-  "emit": function () {},
-  "listeners": function () {},
-  "hasListeners": function () {},
-  "setOptions": function () {},
-  "_updateVisibleIndices": function () {},
-  "bindEventListeners": function () {},
-  "setData": function () {},
-  "destroy": function () {},
-  "_updateValueRange": function () {},
-  "isActive": function () {},
-  "setSize": function () {},
-  "canvasToDOM": function () {},
-  "DOMtoCanvas": function () {},
-  "findNode": function () {},
-  "isCluster": function () {},
-  "openCluster": function () {},
-  "cluster": function () {},
-  "getNodesInCluster": function () {},
-  "clusterByConnection": function () {},
-  "clusterByHubsize": function () {},
-  "clusterOutliers": function () {},
-  "getSeed": function () {},
-  "enableEditMode": function () {},
-  "disableEditMode": function () {},
-  "addNodeMode": function () {},
-  "editNode": function () {},
-  "editNodeMode": function () {},
-  "addEdgeMode": function () {},
-  "editEdgeMode": function () {},
-  "deleteSelected": function () {},
-  "getPositions": function () {},
-  "storePositions": function () {},
-  "moveNode": function () {},
-  "getBoundingBox": function () {},
-  "getConnectedNodes": function () {},
-  "getConnectedEdges": function () {},
-  "startSimulation": function () {},
-  "stopSimulation": function () {},
-  "stabilize": function () {},
-  "getSelection": function () {},
-  "setSelection": function () {},
-  "getSelectedNodes": function () {},
-  "getSelectedEdges": function () {},
-  "getNodeAt": function () {},
-  "getEdgeAt": function () {},
-  "selectNodes": function () {},
-  "selectEdges": function () {},
-  "unselectAll": function () {},
   "redraw": function () {},
-  "getScale": function () {},
-  "getViewPosition": function () {},
-  "fit": function () {},
+  "removeAllListeners": function () {},
+  "removeCustomTime": function () {},
+  "removeEventListener": function () {},
+  "removeListener": function () {},
+  "repaint": function () {},
+  "setCurrentTime": function () {},
+  "setCustomTime": function () {},
+  "setCustomTimeTitle": function () {},
+  "setOptions": function () {},
+  "setWindow": function () {},
+  "zoomIn": function () {},
+  "zoomOut": function () {}
+};
+vis.timeline.Range.prototype = {
+  "_applyRange": function () {},
+  "_cancelAnimation": function () {},
+  "_isInsideRange": function () {},
+  "_isResized": function () {},
+  "_onDrag": function () {},
+  "_onDragEnd": function () {},
+  "_onDragStart": function () {},
+  "_onMouseWheel": function () {},
+  "_onPinch": function () {},
+  "_onTouch": function () {},
+  "_pointerToDate": function () {},
+  "conversion": function () {},
+  "destroy": function () {},
+  "getMillisecondsPerPixel": function () {},
+  "getPointer": function () {},
+  "getRange": function () {},
+  "move": function () {},
   "moveTo": function () {},
-  "focus": function () {},
-  "releaseNode": function () {},
-  "getOptionsFromConfigurator": function () {}
+  "options": function () {},
+  "props": function () {},
+  "redraw": function () {},
+  "setOptions": function () {},
+  "setRange": function () {},
+  "startRolling": function () {},
+  "stopRolling": function () {},
+  "zoom": function () {}
+};
+vis.timeline.TimeStep.prototype = {
+  "getClassName": function () {},
+  "getCurrent": function () {},
+  "getLabelMajor": function () {},
+  "getLabelMinor": function () {},
+  "hasNext": function () {},
+  "isMajor": function () {},
+  "next": function () {},
+  "roundToMinor": function () {},
+  "setAutoScale": function () {},
+  "setFormat": function () {},
+  "setMinimumStep": function () {},
+  "setMoment": function () {},
+  "setRange": function () {},
+  "setScale": function () {},
+  "start": function () {}
+};
+vis.timeline.components.BackgroundGroup.prototype = {
+  "_addToSubgroup": function () {},
+  "_calculateHeight": function () {},
+  "_calculateSubGroupHeights": function () {},
+  "_checkIfVisible": function () {},
+  "_checkIfVisibleWithReference": function () {},
+  "_create": function () {},
+  "_isGroupVisible": function () {},
+  "_removeFromSubgroup": function () {},
+  "_traceVisible": function () {},
+  "_updateItemsInRange": function () {},
+  "_updateSubgroupsSizes": function () {},
+  "add": function () {},
+  "changeSubgroup": function () {},
+  "getLabelWidth": function () {},
+  "hide": function () {},
+  "order": function () {},
+  "orderSubgroups": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeFromDataSet": function () {},
+  "resetSubgroups": function () {},
+  "setData": function () {},
+  "show": function () {}
+};
+vis.timeline.components.Component.prototype = {
+  "_isResized": function () {},
+  "destroy": function () {},
+  "redraw": function () {},
+  "setOptions": function () {}
+};
+vis.timeline.components.CurrentTime.prototype = {
+  "_create": function () {},
+  "_isResized": function () {},
+  "destroy": function () {},
+  "getCurrentTime": function () {},
+  "options": function () {},
+  "props": function () {},
+  "redraw": function () {},
+  "setCurrentTime": function () {},
+  "setOptions": function () {},
+  "start": function () {},
+  "stop": function () {}
+};
+vis.timeline.components.CustomTime.prototype = {
+  "_create": function () {},
+  "_isResized": function () {},
+  "_onDrag": function () {},
+  "_onDragEnd": function () {},
+  "_onDragStart": function () {},
+  "destroy": function () {},
+  "getCustomTime": function () {},
+  "hide": function () {},
+  "options": function () {},
+  "props": function () {},
+  "redraw": function () {},
+  "setCustomTime": function () {},
+  "setCustomTitle": function () {},
+  "setOptions": function () {}
+};
+vis.timeline.components.DataAxis.prototype = {
+  "_calculateCharSize": function () {},
+  "_cleanupIcons": function () {},
+  "_create": function () {},
+  "_isResized": function () {},
+  "_redrawGroupIcons": function () {},
+  "_redrawLabel": function () {},
+  "_redrawLabels": function () {},
+  "_redrawLine": function () {},
+  "_redrawTitle": function () {},
+  "addGroup": function () {},
+  "convertValue": function () {},
+  "destroy": function () {},
+  "hide": function () {},
+  "options": function () {},
+  "props": function () {},
+  "redraw": function () {},
+  "removeGroup": function () {},
+  "screenToValue": function () {},
+  "setOptions": function () {},
+  "setRange": function () {},
+  "show": function () {},
+  "updateGroup": function () {}
+};
+vis.timeline.components.DataScale.prototype = {
+  "convertValue": function () {},
+  "determineScale": function () {},
+  "followScale": function () {},
+  "formatValue": function () {},
+  "getFirstMajor": function () {},
+  "getLines": function () {},
+  "getStep": function () {},
+  "is_major": function () {},
+  "screenToValue": function () {},
+  "setCharHeight": function () {},
+  "setHeight": function () {}
+};
+vis.timeline.components.GraphGroup.prototype = {
+  "getItems": function () {},
+  "getLegend": function () {},
+  "getYRange": function () {},
+  "setItems": function () {},
+  "setOptions": function () {},
+  "setZeroPosition": function () {},
+  "update": function () {}
+};
+vis.timeline.components.Group.prototype = {
+  "_addToSubgroup": function () {},
+  "_calculateHeight": function () {},
+  "_calculateSubGroupHeights": function () {},
+  "_checkIfVisible": function () {},
+  "_checkIfVisibleWithReference": function () {},
+  "_create": function () {},
+  "_isGroupVisible": function () {},
+  "_removeFromSubgroup": function () {},
+  "_traceVisible": function () {},
+  "_updateItemsInRange": function () {},
+  "_updateSubgroupsSizes": function () {},
+  "add": function () {},
+  "changeSubgroup": function () {},
+  "getLabelWidth": function () {},
+  "hide": function () {},
+  "order": function () {},
+  "orderSubgroups": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeFromDataSet": function () {},
+  "resetSubgroups": function () {},
+  "setData": function () {},
+  "show": function () {}
+};
+vis.timeline.components.ItemSet.prototype = {
+  "_addItem": function () {},
+  "_cloneItemData": function () {},
+  "_constructByEndArray": function () {},
+  "_create": function () {},
+  "_deselect": function () {},
+  "_firstGroup": function () {},
+  "_getGroupId": function () {},
+  "_getGroupIndex": function () {},
+  "_getType": function () {},
+  "_isResized": function () {},
+  "_moveToGroup": function () {},
+  "_onAdd": function () {},
+  "_onAddGroups": function () {},
+  "_onAddItem": function () {},
+  "_onDrag": function () {},
+  "_onDragEnd": function () {},
+  "_onDragStart": function () {},
+  "_onDragStartAddItem": function () {},
+  "_onGroupClick": function () {},
+  "_onGroupDrag": function () {},
+  "_onGroupDragEnd": function () {},
+  "_onGroupDragStart": function () {},
+  "_onMouseMove": function () {},
+  "_onMouseOut": function () {},
+  "_onMouseOver": function () {},
+  "_onMouseWheel": function () {},
+  "_onMultiSelectItem": function () {},
+  "_onRemove": function () {},
+  "_onRemoveGroups": function () {},
+  "_onSelectItem": function () {},
+  "_onTouch": function () {},
+  "_onUpdate": function () {},
+  "_onUpdateGroups": function () {},
+  "_onUpdateItem": function () {},
+  "_order": function () {},
+  "_orderGroups": function () {},
+  "_orderNestedGroups": function () {},
+  "_removeItem": function () {},
+  "_updateItem": function () {},
+  "_updateUngrouped": function () {},
+  "destroy": function () {},
+  "getGroups": function () {},
+  "getItems": function () {},
+  "getLabelSet": function () {},
+  "getSelection": function () {},
+  "getVisibleItems": function () {},
+  "groupFromTarget": function () {},
+  "hide": function () {},
+  "itemFromElement": function () {},
+  "itemFromRelatedTarget": function () {},
+  "itemFromTarget": function () {},
+  "markDirty": function () {},
+  "options": function () {},
+  "props": function () {},
+  "redraw": function () {},
+  "removeItem": function () {},
+  "setGroups": function () {},
+  "setItems": function () {},
+  "setOptions": function () {},
+  "setSelection": function () {},
+  "show": function () {}
+};
+vis.timeline.components.ItemSet.types.background.prototype = {
+  "_contentToString": function () {},
+  "_repaintDeleteButton": function () {},
+  "_repaintDragCenter": function () {},
+  "_repaintOnItemUpdateTimeTooltip": function () {},
+  "_updateContents": function () {},
+  "_updateDataAttributes": function () {},
+  "_updateEditStatus": function () {},
+  "_updateStyle": function () {},
+  "baseClassName": function () {},
+  "conversion": function () {},
+  "data": function () {},
+  "dirty": function () {},
+  "displayed": function () {},
+  "dom": function () {},
+  "editable": function () {},
+  "getTitle": function () {},
+  "getWidthLeft": function () {},
+  "getWidthRight": function () {},
+  "groupShowing": function () {},
+  "height": function () {},
+  "hide": function () {},
+  "id": function () {},
+  "isVisible": function () {},
+  "left": function () {},
+  "options": function () {},
+  "parent": function () {},
+  "redraw": function () {},
+  "repositionX": function () {},
+  "repositionY": function () {},
+  "right": function () {},
+  "select": function () {},
+  "selected": function () {},
+  "setData": function () {},
+  "setParent": function () {},
+  "show": function () {},
+  "stack": function () {},
+  "top": function () {},
+  "unselect": function () {},
+  "width": function () {}
+};
+vis.timeline.components.ItemSet.types.box.prototype = {
+  "_contentToString": function () {},
+  "_repaintDeleteButton": function () {},
+  "_repaintDragCenter": function () {},
+  "_repaintOnItemUpdateTimeTooltip": function () {},
+  "_updateContents": function () {},
+  "_updateDataAttributes": function () {},
+  "_updateEditStatus": function () {},
+  "_updateStyle": function () {},
+  "conversion": function () {},
+  "data": function () {},
+  "dirty": function () {},
+  "displayed": function () {},
+  "dom": function () {},
+  "editable": function () {},
+  "getTitle": function () {},
+  "getWidthLeft": function () {},
+  "getWidthRight": function () {},
+  "groupShowing": function () {},
+  "height": function () {},
+  "hide": function () {},
+  "id": function () {},
+  "isVisible": function () {},
+  "left": function () {},
+  "options": function () {},
+  "parent": function () {},
+  "redraw": function () {},
+  "repositionX": function () {},
+  "repositionY": function () {},
+  "right": function () {},
+  "select": function () {},
+  "selected": function () {},
+  "setData": function () {},
+  "setParent": function () {},
+  "show": function () {},
+  "stack": function () {},
+  "top": function () {},
+  "unselect": function () {},
+  "width": function () {}
+};
+vis.timeline.components.ItemSet.types.point.prototype = {
+  "_contentToString": function () {},
+  "_repaintDeleteButton": function () {},
+  "_repaintDragCenter": function () {},
+  "_repaintOnItemUpdateTimeTooltip": function () {},
+  "_updateContents": function () {},
+  "_updateDataAttributes": function () {},
+  "_updateEditStatus": function () {},
+  "_updateStyle": function () {},
+  "conversion": function () {},
+  "data": function () {},
+  "dirty": function () {},
+  "displayed": function () {},
+  "dom": function () {},
+  "editable": function () {},
+  "getTitle": function () {},
+  "getWidthLeft": function () {},
+  "getWidthRight": function () {},
+  "groupShowing": function () {},
+  "height": function () {},
+  "hide": function () {},
+  "id": function () {},
+  "isVisible": function () {},
+  "left": function () {},
+  "options": function () {},
+  "parent": function () {},
+  "redraw": function () {},
+  "repositionX": function () {},
+  "repositionY": function () {},
+  "right": function () {},
+  "select": function () {},
+  "selected": function () {},
+  "setData": function () {},
+  "setParent": function () {},
+  "show": function () {},
+  "stack": function () {},
+  "top": function () {},
+  "unselect": function () {},
+  "width": function () {}
+};
+vis.timeline.components.ItemSet.types.range.prototype = {
+  "_contentToString": function () {},
+  "_repaintDeleteButton": function () {},
+  "_repaintDragCenter": function () {},
+  "_repaintDragLeft": function () {},
+  "_repaintDragRight": function () {},
+  "_repaintOnItemUpdateTimeTooltip": function () {},
+  "_updateContents": function () {},
+  "_updateDataAttributes": function () {},
+  "_updateEditStatus": function () {},
+  "_updateStyle": function () {},
+  "baseClassName": function () {},
+  "conversion": function () {},
+  "data": function () {},
+  "dirty": function () {},
+  "displayed": function () {},
+  "dom": function () {},
+  "editable": function () {},
+  "getTitle": function () {},
+  "getWidthLeft": function () {},
+  "getWidthRight": function () {},
+  "groupShowing": function () {},
+  "height": function () {},
+  "hide": function () {},
+  "id": function () {},
+  "isVisible": function () {},
+  "left": function () {},
+  "options": function () {},
+  "parent": function () {},
+  "redraw": function () {},
+  "repositionX": function () {},
+  "repositionY": function () {},
+  "right": function () {},
+  "select": function () {},
+  "selected": function () {},
+  "setData": function () {},
+  "setParent": function () {},
+  "show": function () {},
+  "stack": function () {},
+  "top": function () {},
+  "unselect": function () {},
+  "width": function () {}
+};
+vis.timeline.components.Legend.prototype = {
+  "_create": function () {},
+  "_isResized": function () {},
+  "addGroup": function () {},
+  "clear": function () {},
+  "destroy": function () {},
+  "drawLegendIcons": function () {},
+  "hide": function () {},
+  "options": function () {},
+  "props": function () {},
+  "redraw": function () {},
+  "removeGroup": function () {},
+  "setOptions": function () {},
+  "show": function () {},
+  "updateGroup": function () {}
+};
+vis.timeline.components.LineGraph.prototype = {
+  "_applySampling": function () {},
+  "_convertXcoordinates": function () {},
+  "_convertYcoordinates": function () {},
+  "_create": function () {},
+  "_getRelevantData": function () {},
+  "_getSortedGroupIds": function () {},
+  "_getYRanges": function () {},
+  "_isResized": function () {},
+  "_onAdd": function () {},
+  "_onAddGroups": function () {},
+  "_onRemove": function () {},
+  "_onRemoveGroups": function () {},
+  "_onUpdate": function () {},
+  "_onUpdateGroups": function () {},
+  "_removeGroup": function () {},
+  "_stack": function () {},
+  "_toggleAxisVisiblity": function () {},
+  "_updateAllGroupData": function () {},
+  "_updateGraph": function () {},
+  "_updateGroup": function () {},
+  "_updateYAxis": function () {},
+  "destroy": function () {},
+  "hide": function () {},
+  "options": function () {},
+  "props": function () {},
+  "redraw": function () {},
+  "setGroups": function () {},
+  "setItems": function () {},
+  "setOptions": function () {},
+  "show": function () {}
+};
+vis.timeline.components.TimeAxis.prototype = {
+  "_calculateCharSize": function () {},
+  "_create": function () {},
+  "_isResized": function () {},
+  "_repaintLabels": function () {},
+  "_repaintMajorLine": function () {},
+  "_repaintMajorText": function () {},
+  "_repaintMinorLine": function () {},
+  "_repaintMinorText": function () {},
+  "destroy": function () {},
+  "options": function () {},
+  "props": function () {},
+  "redraw": function () {},
+  "setOptions": function () {}
+};
+vis.timeline.components.items.BackgroundItem.prototype = {
+  "_contentToString": function () {},
+  "_repaintDeleteButton": function () {},
+  "_repaintDragCenter": function () {},
+  "_repaintOnItemUpdateTimeTooltip": function () {},
+  "_updateContents": function () {},
+  "_updateDataAttributes": function () {},
+  "_updateEditStatus": function () {},
+  "_updateStyle": function () {},
+  "baseClassName": function () {},
+  "conversion": function () {},
+  "data": function () {},
+  "dirty": function () {},
+  "displayed": function () {},
+  "dom": function () {},
+  "editable": function () {},
+  "getTitle": function () {},
+  "getWidthLeft": function () {},
+  "getWidthRight": function () {},
+  "groupShowing": function () {},
+  "height": function () {},
+  "hide": function () {},
+  "id": function () {},
+  "isVisible": function () {},
+  "left": function () {},
+  "options": function () {},
+  "parent": function () {},
+  "redraw": function () {},
+  "repositionX": function () {},
+  "repositionY": function () {},
+  "right": function () {},
+  "select": function () {},
+  "selected": function () {},
+  "setData": function () {},
+  "setParent": function () {},
+  "show": function () {},
+  "stack": function () {},
+  "top": function () {},
+  "unselect": function () {},
+  "width": function () {}
+};
+vis.timeline.components.items.BoxItem.prototype = {
+  "_contentToString": function () {},
+  "_repaintDeleteButton": function () {},
+  "_repaintDragCenter": function () {},
+  "_repaintOnItemUpdateTimeTooltip": function () {},
+  "_updateContents": function () {},
+  "_updateDataAttributes": function () {},
+  "_updateEditStatus": function () {},
+  "_updateStyle": function () {},
+  "conversion": function () {},
+  "data": function () {},
+  "dirty": function () {},
+  "displayed": function () {},
+  "dom": function () {},
+  "editable": function () {},
+  "getTitle": function () {},
+  "getWidthLeft": function () {},
+  "getWidthRight": function () {},
+  "groupShowing": function () {},
+  "height": function () {},
+  "hide": function () {},
+  "id": function () {},
+  "isVisible": function () {},
+  "left": function () {},
+  "options": function () {},
+  "parent": function () {},
+  "redraw": function () {},
+  "repositionX": function () {},
+  "repositionY": function () {},
+  "right": function () {},
+  "select": function () {},
+  "selected": function () {},
+  "setData": function () {},
+  "setParent": function () {},
+  "show": function () {},
+  "stack": function () {},
+  "top": function () {},
+  "unselect": function () {},
+  "width": function () {}
+};
+vis.timeline.components.items.Item.prototype = {
+  "_contentToString": function () {},
+  "_repaintDeleteButton": function () {},
+  "_repaintDragCenter": function () {},
+  "_repaintOnItemUpdateTimeTooltip": function () {},
+  "_updateContents": function () {},
+  "_updateDataAttributes": function () {},
+  "_updateEditStatus": function () {},
+  "_updateStyle": function () {},
+  "getTitle": function () {},
+  "getWidthLeft": function () {},
+  "getWidthRight": function () {},
+  "hide": function () {},
+  "isVisible": function () {},
+  "redraw": function () {},
+  "repositionX": function () {},
+  "repositionY": function () {},
+  "select": function () {},
+  "setData": function () {},
+  "setParent": function () {},
+  "show": function () {},
+  "stack": function () {},
+  "unselect": function () {}
+};
+vis.timeline.components.items.PointItem.prototype = {
+  "_contentToString": function () {},
+  "_repaintDeleteButton": function () {},
+  "_repaintDragCenter": function () {},
+  "_repaintOnItemUpdateTimeTooltip": function () {},
+  "_updateContents": function () {},
+  "_updateDataAttributes": function () {},
+  "_updateEditStatus": function () {},
+  "_updateStyle": function () {},
+  "conversion": function () {},
+  "data": function () {},
+  "dirty": function () {},
+  "displayed": function () {},
+  "dom": function () {},
+  "editable": function () {},
+  "getTitle": function () {},
+  "getWidthLeft": function () {},
+  "getWidthRight": function () {},
+  "groupShowing": function () {},
+  "height": function () {},
+  "hide": function () {},
+  "id": function () {},
+  "isVisible": function () {},
+  "left": function () {},
+  "options": function () {},
+  "parent": function () {},
+  "redraw": function () {},
+  "repositionX": function () {},
+  "repositionY": function () {},
+  "right": function () {},
+  "select": function () {},
+  "selected": function () {},
+  "setData": function () {},
+  "setParent": function () {},
+  "show": function () {},
+  "stack": function () {},
+  "top": function () {},
+  "unselect": function () {},
+  "width": function () {}
+};
+vis.timeline.components.items.RangeItem.prototype = {
+  "_contentToString": function () {},
+  "_repaintDeleteButton": function () {},
+  "_repaintDragCenter": function () {},
+  "_repaintDragLeft": function () {},
+  "_repaintDragRight": function () {},
+  "_repaintOnItemUpdateTimeTooltip": function () {},
+  "_updateContents": function () {},
+  "_updateDataAttributes": function () {},
+  "_updateEditStatus": function () {},
+  "_updateStyle": function () {},
+  "baseClassName": function () {},
+  "conversion": function () {},
+  "data": function () {},
+  "dirty": function () {},
+  "displayed": function () {},
+  "dom": function () {},
+  "editable": function () {},
+  "getTitle": function () {},
+  "getWidthLeft": function () {},
+  "getWidthRight": function () {},
+  "groupShowing": function () {},
+  "height": function () {},
+  "hide": function () {},
+  "id": function () {},
+  "isVisible": function () {},
+  "left": function () {},
+  "options": function () {},
+  "parent": function () {},
+  "redraw": function () {},
+  "repositionX": function () {},
+  "repositionY": function () {},
+  "right": function () {},
+  "select": function () {},
+  "selected": function () {},
+  "setData": function () {},
+  "setParent": function () {},
+  "show": function () {},
+  "stack": function () {},
+  "top": function () {},
+  "unselect": function () {},
+  "width": function () {}
 };
 /**********************************************************************
  * End Generated Extern for vis

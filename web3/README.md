@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/web3 "0.18.4-0"] ;; latest release
+[cljsjs/web3 "0.19.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -22,4 +22,4 @@ or
   (:require cljsjs.web3-light))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

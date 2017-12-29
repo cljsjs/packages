@@ -1,12 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]
                   [cljsjs/d3          "3.5.16-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.8.2")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "1.8.5")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/nvd3

@@ -1,13 +1,13 @@
 (set-env!
   :resource-paths #{"src"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.6.0" :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]
                   [org.clojure/clojurescript "1.9.456" :scope "provided"]
                   [org.clojure/data.json "0.2.6"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "6.18.1")
-(def +version+ (str +lib-version+ "-1"))
+(def +version+ (str +lib-version+ "-3"))
 
 (task-options!
  pom  {:project     'cljsjs/babel-standalone
@@ -20,10 +20,12 @@
 
 (deftask package []
   (comp
-    (download :url (format "https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/%s/babel.min.js" +lib-version+)
-              :checksum "F22EF4422B643D1FC3900CBAB4DB4D9D")
-    (sift :move {#"babel\.min\.js" "cljsjs/babel-standalone/production/babel.min.js"})
+    (download :url (format "https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/%s/babel.js" +lib-version+))
+    (download :url (format "https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/%s/babel.min.js" +lib-version+))
+    (sift :move {#"babel\.js" "cljsjs/babel-standalone/development/babel.inc.js"
+                 #"babel\.min\.js" "cljsjs/babel-standalone/production/babel.min.inc.js"})
     (sift :include #{#"^cljsjs"})
+    (deps-cljs :name "cljsjs.babel-standalone" :no-externs true)
     (pom)
     (jar)))
 

@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-infinite "0.9.0-0"] ;; latest release
+[cljsjs/react-infinite "0.12.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.react-infinite))
+  (:require react-infinite))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

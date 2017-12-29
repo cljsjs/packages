@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/leaflet "0.7.7-8"] ;; latest release
+[cljsjs/leaflet "1.2.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,7 +15,14 @@ you can require the packaged library like so:
   (:require cljsjs.leaflet))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
+
+## News
+
+**Version 1.1.0-0** moves the files under `cljsjs/leaflet` prefix,
+so you might need to update CSS requires etc.
+
+## Notes
 
 Note: This extern is a work in progress. You may need to add symbols
 as needed. For example:

@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-burger-menu "1.9.9-0"] ;; latest release
+[cljsjs/react-burger-menu "2.1.6-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,4 +15,4 @@ you can require the packaged library like so:
   (:require cljsjs.react-burger-menu))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

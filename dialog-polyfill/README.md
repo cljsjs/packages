@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/dialog-polyfill "0.4.3-0"] ;; latest release
+[cljsjs/dialog-polyfill "0.4.7-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -45,4 +45,4 @@ you can require the packaged library like so:
    [dialog-button]])
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/recharts "0.21.2-0"] ;; latest release
+[cljsjs/recharts "1.0.0-alpha.4-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,4 +15,4 @@ you can require the packaged library like so:
   (:require cljsjs.recharts))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

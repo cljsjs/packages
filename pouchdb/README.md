@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/pouchdb "6.0.4-0"] ;; latest release
+[cljsjs/pouchdb "6.3.4-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,7 +15,7 @@ you can require the packaged library like so:
   (:require cljsjs.pouchdb))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
 
 ## Generating Externs
 

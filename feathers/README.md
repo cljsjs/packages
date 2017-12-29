@@ -4,7 +4,7 @@ Provides feathers
 
 [](dependency)
 ```clojure
-[cljsjs/feathers "2.0.0-pre.1-0"] ;; latest release
+[cljsjs/feathers "3.1.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -17,7 +17,7 @@ you can require the packaged library like so:
   (:require [cljsjs.feathers]))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
 
 ## Maintenance
 

@@ -2,7 +2,8 @@
 
 [](dependency)
 ```clojure
-[cljsjs/vega-lite "1.2.0-0"] ;; latest release
+[cljsjs/vega-lite "2.0.0-0"] ;; latest release
+[cljsjs/vega "3.0.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +13,8 @@ you can require the packaged library like:
 
 ```clojure
 (ns application.core
+  (:require cljsjs.vega))
   (:require cljsjs.vega-lite))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

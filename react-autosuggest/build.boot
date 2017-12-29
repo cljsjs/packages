@@ -1,6 +1,6 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -9,9 +9,9 @@
          '[boot.util :refer [sh]]
          '[clojure.string :as str])
 
-(def +lib-version+ "9.0.0")
+(def +lib-version+ "9.3.2")
 (def +version+ (str +lib-version+ "-0"))
-(def +expected-checksum+ "E014B6B59C46C415F06A4277002541D6")
+(def +expected-checksum+ "AE435FBF7457FB5D7852BD799C9F5291")
 
 (task-options!
   pom  {:project     'cljsjs/react-autosuggest
@@ -32,7 +32,7 @@
         (io/copy (tmpd/file f) target))
       (let [build-dir  (str (io/file tmp (format "react-autosuggest-%s" +lib-version+)))]
         (binding [boot.util/*sh-dir* build-dir]
-          ((sh "npm" "install"))))
+          ((sh "npm" "install" "--unsafe-perm"))))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 
@@ -40,7 +40,7 @@
   (comp
     (download :url (str "https://github.com/moroshko/react-autosuggest/archive/v" +lib-version+ ".zip")
               :checksum +expected-checksum+
-              :unzip true) 
+              :unzip true)
     (build-autosuggest)
 
     (sift :move {#"^react-autosuggest.*[/ \\]dist[/ \\]standalone[/ \\]autosuggest.js$" "cljsjs/react-autosuggest/development/react-autosuggest.inc.js"
@@ -53,4 +53,3 @@
                           "cljsjs.react.dom"])
     (pom)
     (jar)))
-

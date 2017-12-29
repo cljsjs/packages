@@ -7,6 +7,7 @@
 /**
  * @type {!Object}
  * @const
+ * @suppress {const|duplicate}
  */
 var React = {};
 
@@ -69,6 +70,11 @@ React.cloneElement = function(element, props) {};
 /**
  * @interface
  */
+React.ReactElement = function() {};
+
+/**
+ * @constructor
+ */
 React.Component = function() {};
 
 /**
@@ -107,6 +113,11 @@ React.Component.prototype.contextTypes;
  * @type {Object}
  */
 React.Component.prototype.mixins;
+
+/**
+ * @type {Object}
+ */
+React.Component.prototype.childContextTypes;
 
 /**
  * @return {Object}
@@ -201,6 +212,11 @@ React.Component.prototype.componentDidUpdate = function(
 React.Component.prototype.componentWillUnmount = function() {};
 
 /**
+ * @protected
+ */
+React.Component.prototype.componentDidCatch = function() {};
+
+/**
  * @return {React.Component}
  * @protected
  */
@@ -208,6 +224,7 @@ React.Component.prototype.render = function() {};
 
 /**
  * @extends {React.Component}
+ * @constructor
  */
 React.PureComponent = function() {};
 
@@ -300,6 +317,21 @@ React.ReactAttribute.onPaste;
 /**
  * @type {Function}
  */
+React.ReactAttribute.onCompositionEnd;
+
+/**
+ * @type {Function}
+ */
+React.ReactAttribute.onCompositionStart;
+
+/**
+ * @type {Function}
+ */
+React.ReactAttribute.onCompositionUpdate;
+
+/**
+ * @type {Function}
+ */
 React.ReactAttribute.onKeyDown;
 
 /**
@@ -335,12 +367,22 @@ React.ReactAttribute.onInput;
 /**
  * @type {Function}
  */
+React.ReactAttribute.onInvalid;
+
+/**
+ * @type {Function}
+ */
 React.ReactAttribute.onSubmit;
 
 /**
  * @type {Function}
  */
 React.ReactAttribute.onClick;
+
+/**
+ * @type {Function}
+ */
+React.ReactAttribute.onContextMenu;
 
 /**
  * @type {Function}
@@ -410,7 +452,22 @@ React.ReactAttribute.onMouseMove;
 /**
  * @type {Function}
  */
+React.ReactAttribute.onMouseOut;
+
+/**
+ * @type {Function}
+ */
+React.ReactAttribute.onMouseOver;
+
+/**
+ * @type {Function}
+ */
 React.ReactAttribute.onMouseUp;
+
+/**
+ * @type {Function}
+ */
+React.ReactAttribute.onSelect;
 
 /**
  * @type {Function}
@@ -441,6 +498,41 @@ React.ReactAttribute.onScroll;
  * @type {Function}
  */
 React.ReactAttribute.onWheel;
+
+/**
+ * @type {Function}
+ */
+React.ReactAttribute.onAbort;
+React.ReactAttribute.onCanPlay;
+React.ReactAttribute.onCanPlayThrough;
+React.ReactAttribute.onDurationChange;
+React.ReactAttribute.onEmptied;
+React.ReactAttribute.onEncrypted;
+React.ReactAttribute.onEnded;
+React.ReactAttribute.onError;
+React.ReactAttribute.onLoadedData;
+React.ReactAttribute.onLoadedMetadata;
+React.ReactAttribute.onLoadStart;
+React.ReactAttribute.onPause;
+React.ReactAttribute.onPlay;
+React.ReactAttribute.onPlaying;
+React.ReactAttribute.onProgress;
+React.ReactAttribute.onRateChange;
+React.ReactAttribute.onSeeked;
+React.ReactAttribute.onSeeking;
+React.ReactAttribute.onStalled;
+React.ReactAttribute.onSuspend;
+React.ReactAttribute.onTimeUpdate;
+React.ReactAttribute.onVolumeChange;
+React.ReactAttribute.onWaiting;
+
+React.ReactAttribute.onAnimationStart;
+React.ReactAttribute.onAnimationEnd;
+React.ReactAttribute.onAnimationIteration;
+
+React.ReactAttribute.onTransitionEnd;
+
+React.ReactAttribute.onToggle;
 
 /**
  * @interface
@@ -480,6 +572,14 @@ React.DOM = {};
  * }
  */
 React.ChildrenArgument;
+
+/**
+ * @param {*} componentClass
+ * @param {Object=} props
+ * @param {...React.ChildrenArgument} children
+ * @return {React.Component}
+ */
+React.createElement = function(componentClass, props, children) {};
 
 /**
  * @param {Object=} props
@@ -1640,174 +1740,10 @@ React.Children.forEach;
 React.Children.only;
 
 /**
- * @type {Object}
+ * @param {Object} children Children tree container.
+ * @return {Array.<Object>} Flat array of children.
  */
-React.addons;
-
-/**
- * @param {Object|string} objectOrClassName
- * @param {...string} classNames
- * @return {string}
- */
-React.addons.classSet;
-
-/**
- * @type {React.Component}
- */
-React.addons.CSSTransitionGroup;
-
-/**
- * @type {React.Component}
- */
-React.addons.TransitionGroup;
-
-/**
- * @type {Object}
- */
-React.addons.Perf;
-
-React.addons.Perf.start = function() {};
-
-React.addons.Perf.stop = function() {};
-
-/**
- * @return {Array.<React.addons.Perf.Measurement>}
- */
-React.addons.Perf.getLastMeasurements = function() {};
-
-/**
- * @param {React.addons.Perf.Measurement=} measurements
- */
-React.addons.Perf.printExclusive = function(measurements) {};
-
-/**
- * @param {React.addons.Perf.Measurement=} measurements
- */
-React.addons.Perf.printInclusive = function(measurements) {};
-
-/**
- * @param {React.addons.Perf.Measurement=} measurements
- */
-React.addons.Perf.printWasted = function(measurements) {};
-
-/**
- * @typedef {{
- *     exclusive: !Object.<string, number>,
- *     inclusive: !Object.<string, number>,
- *     render: !Object.<string, number>,
- *     counts: !Object.<string, number>,
- *     writes: !Object.<string, {type: string, time: number, args: Array}>,
- *     displayNames: !Object.<string, {current: string, owner: string}>,
- *     totalTime: number
- * }}
- */
-React.addons.Perf.Measurement;
-
-/**
- * Only usable with non-minified version of React-with-addons
- */
-React.addons.TestUtils = {}
-React.addons.TestUtils.renderIntoDocument = function () {};
-React.addons.TestUtils.isComponentOfType = function () {};
-React.addons.TestUtils.isDOMComponent = function () {};
-React.addons.TestUtils.isCompositeComponent = function () {};
-React.addons.TestUtils.isCompositeComponentWithType = function () {};
-React.addons.TestUtils.isTextComponent = function () {};
-React.addons.TestUtils.findAllInRenderedTree = function () {};
-React.addons.TestUtils.scryRenderedDOMComponentsWithClass = function () {};
-React.addons.TestUtils.findRenderedDOMComponentWithClass = function () {};
-React.addons.TestUtils.scryRenderedDOMComponentsWithTag = function () {};
-React.addons.TestUtils.findRenderedDOMComponentWithTag = function () {};
-React.addons.TestUtils.scryRenderedComponentsWithType = function () {};
-React.addons.TestUtils.findRenderedComponentWithType = function () {};
-React.addons.TestUtils.mockComponent = function () {};
-React.addons.TestUtils.simulateNativeEventOnNode = function () {};
-React.addons.TestUtils.simulateNativeEventOnDOMComponent = function () {};
-React.addons.TestUtils.nativeTouchData = function () {};
-React.addons.TestUtils.Simulate = {};
-React.addons.TestUtils.Simulate.blur = function () {};
-React.addons.TestUtils.Simulate.click = function () {};
-React.addons.TestUtils.Simulate.contextMenu = function () {};
-React.addons.TestUtils.Simulate.copy = function () {};
-React.addons.TestUtils.Simulate.cut = function () {};
-React.addons.TestUtils.Simulate.doubleClick = function () {};
-React.addons.TestUtils.Simulate.drag = function () {};
-React.addons.TestUtils.Simulate.dragEnd = function () {};
-React.addons.TestUtils.Simulate.dragEnter = function () {};
-React.addons.TestUtils.Simulate.dragExit = function () {};
-React.addons.TestUtils.Simulate.dragLeave = function () {};
-React.addons.TestUtils.Simulate.dragOver = function () {};
-React.addons.TestUtils.Simulate.dragStart = function () {};
-React.addons.TestUtils.Simulate.drop = function () {};
-React.addons.TestUtils.Simulate.focus = function () {};
-React.addons.TestUtils.Simulate.input = function () {};
-React.addons.TestUtils.Simulate.keyDown = function () {};
-React.addons.TestUtils.Simulate.keyPress = function () {};
-React.addons.TestUtils.Simulate.keyUp = function () {};
-React.addons.TestUtils.Simulate.load = function () {};
-React.addons.TestUtils.Simulate.error = function () {};
-React.addons.TestUtils.Simulate.mouseDown = function () {};
-React.addons.TestUtils.Simulate.mouseMove = function () {};
-React.addons.TestUtils.Simulate.mouseOut = function () {};
-React.addons.TestUtils.Simulate.mouseOver = function () {};
-React.addons.TestUtils.Simulate.mouseUp = function () {};
-React.addons.TestUtils.Simulate.paste = function () {};
-React.addons.TestUtils.Simulate.reset = function () {};
-React.addons.TestUtils.Simulate.scroll = function () {};
-React.addons.TestUtils.Simulate.submit = function () {};
-React.addons.TestUtils.Simulate.touchCancel = function () {};
-React.addons.TestUtils.Simulate.touchEnd = function () {};
-React.addons.TestUtils.Simulate.touchMove = function () {};
-React.addons.TestUtils.Simulate.touchStart = function () {};
-React.addons.TestUtils.Simulate.wheel = function () {};
-React.addons.TestUtils.Simulate.mouseEnter = function () {};
-React.addons.TestUtils.Simulate.mouseLeave = function () {};
-React.addons.TestUtils.Simulate.change = function () {};
-React.addons.TestUtils.Simulate.compositionEnd = function () {};
-React.addons.TestUtils.Simulate.compositionStart = function () {};
-React.addons.TestUtils.Simulate.compositionUpdate = function () {};
-React.addons.TestUtils.Simulate.select = function () {};
-React.addons.TestUtils.SimulateNative = {};
-React.addons.TestUtils.SimulateNative.blur = function () {};
-React.addons.TestUtils.SimulateNative.change = function () {};
-React.addons.TestUtils.SimulateNative.click = function () {};
-React.addons.TestUtils.SimulateNative.compositionEnd = function () {};
-React.addons.TestUtils.SimulateNative.compositionStart = function () {};
-React.addons.TestUtils.SimulateNative.compositionUpdate = function () {};
-React.addons.TestUtils.SimulateNative.contextMenu = function () {};
-React.addons.TestUtils.SimulateNative.copy = function () {};
-React.addons.TestUtils.SimulateNative.cut = function () {};
-React.addons.TestUtils.SimulateNative.doubleClick = function () {};
-React.addons.TestUtils.SimulateNative.drag = function () {};
-React.addons.TestUtils.SimulateNative.dragEnd = function () {};
-React.addons.TestUtils.SimulateNative.dragEnter = function () {};
-React.addons.TestUtils.SimulateNative.dragExit = function () {};
-React.addons.TestUtils.SimulateNative.dragLeave = function () {};
-React.addons.TestUtils.SimulateNative.dragOver = function () {};
-React.addons.TestUtils.SimulateNative.dragStart = function () {};
-React.addons.TestUtils.SimulateNative.drop = function () {};
-React.addons.TestUtils.SimulateNative.error = function () {};
-React.addons.TestUtils.SimulateNative.focus = function () {};
-React.addons.TestUtils.SimulateNative.input = function () {};
-React.addons.TestUtils.SimulateNative.keyDown = function () {};
-React.addons.TestUtils.SimulateNative.keyPress = function () {};
-React.addons.TestUtils.SimulateNative.keyUp = function () {};
-React.addons.TestUtils.SimulateNative.load = function () {};
-React.addons.TestUtils.SimulateNative.mouseDown = function () {};
-React.addons.TestUtils.SimulateNative.mouseMove = function () {};
-React.addons.TestUtils.SimulateNative.mouseOut = function () {};
-React.addons.TestUtils.SimulateNative.mouseOver = function () {};
-React.addons.TestUtils.SimulateNative.mouseUp = function () {};
-React.addons.TestUtils.SimulateNative.paste = function () {};
-React.addons.TestUtils.SimulateNative.reset = function () {};
-React.addons.TestUtils.SimulateNative.scroll = function () {};
-React.addons.TestUtils.SimulateNative.selectionChange = function () {};
-React.addons.TestUtils.SimulateNative.submit = function () {};
-React.addons.TestUtils.SimulateNative.touchCancel = function () {};
-React.addons.TestUtils.SimulateNative.touchEnd = function () {};
-React.addons.TestUtils.SimulateNative.touchMove = function () {};
-React.addons.TestUtils.SimulateNative.touchStart = function () {};
-React.addons.TestUtils.SimulateNative.wheel = function () {};
+React.Children.toArray;
 
 /**
  * React event system creates plugins and event properties dynamically.
@@ -1890,3 +1826,5 @@ var topTransitionEnd;
 var topVolumeChange;
 var topWaiting;
 var topWheel;
+
+React.Fragment = function() {};

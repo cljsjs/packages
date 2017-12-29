@@ -1,10 +1,10 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.0.0-beta.11")
+(def +lib-version+ "4.3.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -19,7 +19,7 @@
   (comp
    (download :url
              (format "https://github.com/AllenFang/react-bootstrap-table/archive/v%s.zip" +lib-version+)
-             :checksum "ba22769f79ec3e6a872d31fadfc64890"
+             :checksum "12487a940498c997498749c3ed02c75d"
              :unzip true)
    (sift :move {#"^react-bootstrap-table-.*/dist/react-bootstrap-table\.js"
                 "cljsjs/react-bootstrap-table/development/react-bootstrap-table.inc.js"

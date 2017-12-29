@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/medium-editor "5.22.1-2"] ;; latest release
+[cljsjs/medium-editor "5.23.2-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,4 +15,4 @@ you can require the packaged library like so:
   (:require cljsjs.medium-editor))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

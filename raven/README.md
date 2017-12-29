@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/raven "3.9.1-0"] ;; latest release
+[cljsjs/raven "3.17.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -17,4 +17,4 @@ you can require the packaged library like so:
 
 Documentation for the raven-js lib can be found [on its github page](https://github.com/getsentry/raven-js)
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

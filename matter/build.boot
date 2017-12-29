@@ -1,11 +1,11 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.9.1")
-(def +version+ (str +lib-version+ "-0"))
+(def +lib-version+ "0.12.0")
+(def +version+ (str +lib-version+ "-14"))
 
 (task-options!
  pom {:project 'cljsjs/matter
@@ -18,7 +18,7 @@
 (deftask package []
   (comp
    (download :url (format "https://github.com/liabru/matter-js/archive/%s.zip" +lib-version+)
-             :checksum "ab7cb444120723d1e5ce35bf52a15124"
+             :checksum "207928ab300fb739ead7db7709fe6575"
              :unzip true)
    (sift :move {#"^.*/build/matter.js$" "cljsjs/matter/development/matter.inc.js"
                 #"^.*/build/matter.min.js$" "cljsjs/matter/production/matter.min.inc.js"})

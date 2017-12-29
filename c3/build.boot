@@ -1,11 +1,11 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]
-                 [cljsjs/d3          "3.5.5-0"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]
+                 [cljsjs/d3          "3.5.16-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.4.11")
+(def +lib-version+ "0.4.18")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,8 +18,7 @@
 
 (deftask package []
   (comp
-   (download :url      (str "https://github.com/masayuki0812/c3/archive/" +lib-version+ ".zip")
-             :checksum "9F20F238498DF31BCF7D0BAD2FABD293"
+   (download :url      (str "https://github.com/c3js/c3/archive/v" +lib-version+ ".zip")
              :unzip    true)
    (sift :move {#"^c3-([\d\.]*)/c3\.js"      "cljsjs/c3/development/c3.inc.js"
                 #"^c3-([\d\.]*)/c3\.min\.js" "cljsjs/c3/production/c3.min.inc.js"
@@ -29,4 +28,5 @@
    (deps-cljs :name     "cljsjs.c3"
               :requires ["cljsjs.d3"])
    (pom)
-   (jar)))
+   (jar)
+   (validate-checksums)))

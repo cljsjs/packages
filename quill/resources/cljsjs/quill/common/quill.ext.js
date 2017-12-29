@@ -33,4 +33,9 @@ var Quill = {
   "register": function() {},
   "addContainer": function() {},
   "getModule": function() {},
+  "find": function() {},
+  "getIndex": function() {},
+  "getLeaf": function() {},
+  "getLine": function() {},
+  "getLines": function() {},
 }

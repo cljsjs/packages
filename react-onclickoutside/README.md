@@ -18,5 +18,5 @@ you can require the packaged library like so:
 Then you can add this as a mixin to your react components, or use as a Higher
 Order Component, see the [repo][repo] for details.
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
 [repo]: https://github.com/Pomax/react-onclickoutside

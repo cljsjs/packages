@@ -1,12 +1,12 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]
+ :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]
                  [cljsjs/react "15.4.0-0"]
                  [cljsjs/react-dom "15.4.0-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.6.5")
+(def +lib-version+ "2.3.2")
 
 (def +version+ (str +lib-version+ "-0"))
 
@@ -25,7 +25,7 @@
 
 (deftask download-react-modal []
   (download :url (format "https://github.com/reactjs/react-modal/archive/v%s.zip" +lib-version+)
-            :checksum "6e1d66c3bb5bb349d58eef673b7da825"
+            :checksum "f91e3506bb45f918e557e9f66f8100e1"
             :unzip true))
 
 (deftask package []

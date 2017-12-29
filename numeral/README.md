@@ -29,4 +29,4 @@ You should be able to set Numeral to use locales if you first require them.
 (.locale js/numeral "fi")
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

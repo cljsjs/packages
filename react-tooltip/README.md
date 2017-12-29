@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-tooltip "3.2.10-0"] ;; latest release
+[cljsjs/react-tooltip "3.3.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -16,4 +16,4 @@ you can require the packaged library like so:
 ```
 
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

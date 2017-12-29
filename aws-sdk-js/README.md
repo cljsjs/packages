@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/aws-sdk-js "2.2.41-4"] ;; latest release
+[cljsjs/aws-sdk-js "2.94.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -17,4 +17,4 @@ you can require the packaged library like so:
 
 Documentation for the aws-sdk-js lib can be found [on its github page](https://github.com/aws/aws-sdk-js)
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/pouchdb-find "0.10.3-0"] ;; latest release
+[cljsjs/pouchdb-find "6.3.4-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,8 +15,8 @@ you can require the packaged library like so:
   (:require cljsjs.pouchdb-find))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
 
 ## Generating Externs
- 
+
 The externs were written manually following the `pouchdb-find` README.

@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/babel-standalone "6.18.1-1"] ;; latest release
+[cljsjs/babel-standalone "6.18.1-3"] ;; latest release
 ```
 [](/dependency)
 
@@ -23,6 +23,18 @@ foreign library map using property `:cljsjs.babel-standalone/babel-opts`:
                 :module-type :es6
                 :preprocess :cljsjs.babel-standalone/babel
                 :cljsjs.babel-standalone/babel-opts {:presets ["react" "es2016"]}}]
+```
+
+Or in next ClojureScript version:
+
+```clojure
+:foreign-libs
+  [{:file "src"
+    :module-type :es6
+    ;; changed
+    ;; notice that the symbol should not be quoted in project.clj or .cljs.edn
+    :preprocess 'cljsjs.babel-standalone/transform
+    :cljsjs.babel-standalone/babel-opts {:presets ["react" "es2016"]}}]
 ```
 
 ## Use in browsers

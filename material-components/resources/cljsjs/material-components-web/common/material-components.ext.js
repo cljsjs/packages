@@ -7,6 +7,10 @@ var mdc = {
     "MDCCheckboxFoundation": function () {},
     "MDCCheckbox": function () {}
   },
+  "formField": {
+      "MDCFormField": function () {},
+      "MDCFormFieldFoundation": function () {}
+  },
   "gridList": {
     "MDCGridListFoundation": function () {},
     "MDCGridList": function () {}
@@ -27,13 +31,21 @@ var mdc = {
     "MDCSnackbarFoundation": function () {},
     "MDCSnackbar": function () {}
   },
+    "dialog": {
+        "MDCDialogFoundation": function () {},
+        "MDCDialog": function () {},
+        "util": function () {}
+    },
   "drawer": {
     "MDCTemporaryDrawer": function () {},
-    "MDCTemporaryDrawerFoundation": function () {}
+    "MDCTemporaryDrawerFoundation": function () {},
+    "MDCPersistentDrawer": function () {},
+    "MDCPersistentDrawerFoundation": function () {},
+    "util": function () {}
   },
-  "textfield": {
-    "MDCTextfieldFoundation": function () {},
-    "MDCTextfield": function () {}
+  "textField": {
+    "MDCTextFieldFoundation": function () {},
+    "MDCTextField": function () {}
   },
   "menu": {
     "MDCSimpleMenu": function () {},
@@ -43,6 +55,10 @@ var mdc = {
     "MDCSelectFoundation": function () {},
     "MDCSelect": function () {}
   },
+    "toolbar": {
+        "MDCToolBarFoundation": function () {},
+        "MDCToolBar": function () {}
+    },
   "autoInit": {
     "register": function () {},
     "deregister": function () {},
@@ -138,6 +154,19 @@ mdc.drawer.MDCTemporaryDrawerFoundation.prototype = {
   "open": function () {}
 };
 
+mdc.drawer.MDCPersistentDrawerFoundation.cssClasses = {};
+mdc.drawer.MDCPersistentDrawerFoundation.defaultAdapter = {};
+mdc.drawer.MDCPersistentDrawerFoundation.numbers = {};
+mdc.drawer.MDCPersistentDrawerFoundation.strings = {};
+
+mdc.drawer.MDCPersistentDrawerFoundation.prototype = {
+    "close": function () {},
+    "destroy": function () {},
+    "init": function () {},
+    "isOpen": function () {},
+    "open": function () {}
+};
+
 /* Grid List */
 
 mdc.gridList.MDCGridList.attachTo = function(root) {};
@@ -153,11 +182,11 @@ mdc.gridList.MDCGridListFoundation.prototype = {
 
 /* Textfield */
 
-mdc.textfield.MDCTextfieldFoundation.cssClasses = {};
-mdc.textfield.MDCTextfieldFoundation.defaultAdapter = {};
-mdc.textfield.MDCTextfieldFoundation.strings = {};
+mdc.textField.MDCTextFieldFoundation.cssClasses = {};
+mdc.textField.MDCTextFieldFoundation.defaultAdapter = {};
+mdc.textField.MDCTextFieldFoundation.strings = {};
 
-mdc.textfield.MDCTextfieldFoundation.prototype = {
+mdc.textField.MDCTextFieldFoundation.prototype = {
   "destroy": function() {},
   "init": function() {},
   "isDisabled": function() {},

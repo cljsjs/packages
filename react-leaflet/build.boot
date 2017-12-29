@@ -1,12 +1,14 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]
-                  [cljsjs/leaflet "0.7.7-8"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0-SNAPSHOT" :scope "test"]
+                  [cljsjs/react "15.6.2-1"]
+                  [cljsjs/react-dom "15.6.2-1"]
+                  [cljsjs/leaflet "1.1.0-2"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.12.3")
-(def +version+ (str +lib-version+ "-4"))
+(def +lib-version+ "1.6.5")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/react-leaflet
@@ -16,17 +18,15 @@
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
-(require '[clojure.java.io :as io])
-
 (deftask package []
   (comp
-    (download :url      (str "https://github.com/PaulLeCam/react-leaflet/archive/v" +lib-version+ ".zip")
-              :checksum "0783AB13D2FD32C8566F0FF4B0AD101A"
-              :unzip    true)
-    (sift :move {#"^react-leaflet-(.*)/dist/react-leaflet.js"      "cljsjs/development/react-leaflet.inc.js"
-                 #"^react-leaflet-(.*)/dist/react-leaflet.min.js"  "cljsjs/production/react-leaflet.min.inc.js"})
-    (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.react-leaflet"
-               :requires ["cljsjs.react" "cljsjs.leaflet"])
+    (download :url      (str "https://unpkg.com/react-leaflet@" +lib-version+ "/dist/react-leaflet.js")
+              :target   "cljsjs/react-leaflet/development/react-leaflet.inc.js")
+    (download :url      (str "https://unpkg.com/react-leaflet@" +lib-version+ "/dist/react-leaflet.min.js")
+              :target   "cljsjs/react-leaflet/production/react-leaflet.min.inc.js")
+    (deps-cljs :provides ["react-leaflet" "cljsjs.react-leaflet"]
+               :requires ["leaflet" "react" "react-dom"]
+               :global-exports '{react-leaflet ReactLeaflet})
     (pom)
-    (jar)))
+    (jar)
+    (validate)))

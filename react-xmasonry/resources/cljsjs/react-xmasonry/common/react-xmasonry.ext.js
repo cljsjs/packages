@@ -3,9 +3,13 @@ var XMasonry = {
     "center": {},
     "maxColumns": {},
     "responsive": {},
+    "smartUpdate":{},
+    "smartUpdateCeil": {},
     "targetBlockWidth": {},
-    "updateOnAnimateEnd": {},
+    "updateOnFontLoad":{},
+    // "updateOnAnimateEnd": {}, version 2.1.1
     "updateOnImagesLoad": {}
+
   },
   "defaultStyle": {
     "propTypes": {
@@ -16,6 +20,12 @@ var XMasonry = {
         "isRequired": function () {}
       },
       "responsive": {
+        "isRequired": function () {}
+      },
+      "smartUpdate": {
+        "isRequired": function () {}
+      },
+      "smartUpdateCeil": {
         "isRequired": function () {}
       },
       "targetBlockWidth": {

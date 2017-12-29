@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-router "0.13.2-0"] ;; latest release
+[cljsjs/react-router "2.6.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,4 +15,4 @@ you can require the packaged library like so:
   (:require cljsjs.react-router))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-sanfona "0.0.14-0"] ;; latest release
+[cljsjs/react-sanfona "0.2.3-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,4 +15,4 @@ you can require the packaged library like so:
   (:require cljsjs.react-sanfona))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

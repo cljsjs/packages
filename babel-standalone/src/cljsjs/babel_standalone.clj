@@ -1,5 +1,5 @@
 (ns cljsjs.babel-standalone
-  "Provides cljs.closure/js-transforms :cljsjs/babel preprocess implementation.
+  "Provides js-transform function for ClojureScript compiler.
 
   Babel options (http://babeljs.io/docs/usage/api/#options) can be configured
   using :cljsjs/babel-opts property on the foreign lib maps."
@@ -17,7 +17,7 @@
   "Returns a nashorn engine with Babel-standalone loaded."
   []
   (doto (.getEngineByName (ScriptEngineManager.) "nashorn")
-    (.eval (io/reader (io/resource "cljsjs/babel-standalone/production/babel.min.js")))))
+    (.eval (io/reader (io/resource "cljsjs/babel-standalone/production/babel.min.inc.js")))))
 
 (defn process
   "Given JavaScript source and babel options, return the processed source."
@@ -34,18 +34,23 @@
 
 (defonce ^:private default-engine (delay (create-engine)))
 
-(defmethod closure/js-transforms :cljsjs.babel-standalone/babel [ijs opts]
+(defn transform [js-module opts]
   (let [babel-opts (merge {:presets ["react" "es2016"]}
-                          (:cljsjs.babel-standalone/babel-opts ijs))]
-    (assoc ijs :source (process @default-engine (:source ijs) babel-opts))))
+                          (:cljsjs.babel-standalone/babel-opts js-module))]
+    (assoc js-module :source (process @default-engine (:source js-module) babel-opts))))
+
+;; Legacy multimethod
+
+(defmethod closure/js-transforms :cljsjs.babel-standalone/babel [ijs opts]
+  (transform ijs opts))
 
 ;;
 ;; Test
 ;;
 
 (comment
-  (closure/js-transforms {:source "export var reactHello = function() { return <div>Hello world</div> };"
-                          :preprocess :cljsjs/babel
-                          :cljsjs/babel-opts {:presets ["react" "es2016"]}
-                          :module-type :es6}
-                         {}))
+  (transform {:source "export var reactHello = function() { return <div>Hello world</div> };"
+              :preprocess :cljsjs/babel
+              :cljsjs/babel-opts {:presets ["react" "es2016"]}
+              :module-type :es6}
+             {}))

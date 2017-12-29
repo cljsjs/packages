@@ -1,11 +1,11 @@
 
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "7.1.0")
+(def +lib-version+ "8.2.5")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -20,9 +20,9 @@
 (deftask package []
   (comp
     (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/preact/" +lib-version+ "/preact.js")
-              :checksum "38c4f97737f048a57f9d0408dcddd2e8")
+              :checksum "20eb698062a9bd0d8873629b53ed0e05")
     (download :url (str "https://cdnjs.cloudflare.com/ajax/libs/preact/" +lib-version+ "/preact.min.js")
-              :checksum "2a0b925a7535a9f00ec94a86348d3077")
+              :checksum "7cca97dc132ebebd01cd21e5c8b95ae1")
     (sift :move {#"preact\.js" "cljsjs/preact/development/preact.inc.js"
                  #"preact\.min\.js" "cljsjs/preact/production/preact.min.inc.js"})
     (sift :include #{#"^cljsjs"})
