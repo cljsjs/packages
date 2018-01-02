@@ -1,4 +1,4 @@
-# cljsjs/auth0 -lock
+# cljsjs/auth0-lock
 
 [](dependency)
 ```clojure
