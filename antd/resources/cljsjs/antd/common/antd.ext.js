@@ -330,56 +330,7 @@ var antd = {
     }
   },
   "Collapse": {
-    "Panel": {
-      "defaultProps": {
-        "destroyInactivePanel": {},
-        "headerClass": {},
-        "isActive": {},
-        "onItemClick": function () {},
-        "showArrow": {}
-      },
-      "propTypes": {
-        "children": {
-          "isRequired": function () {}
-        },
-        "className": {
-          "isRequired": function () {}
-        },
-        "destroyInactivePanel": {
-          "isRequired": function () {}
-        },
-        "disabled": {
-          "isRequired": function () {}
-        },
-        "header": {
-          "isRequired": function () {}
-        },
-        "headerClass": {
-          "isRequired": function () {}
-        },
-        "id": {
-          "isRequired": function () {}
-        },
-        "isActive": {
-          "isRequired": function () {}
-        },
-        "onItemClick": {
-          "isRequired": function () {}
-        },
-        "openAnimation": {
-          "isRequired": function () {}
-        },
-        "prefixCls": {
-          "isRequired": function () {}
-        },
-        "showArrow": {
-          "isRequired": function () {}
-        },
-        "style": {
-          "isRequired": function () {}
-        }
-      }
-    },
+    "Panel": function () {},
     "defaultProps": {
       "bordered": {},
       "openAnimation": {
@@ -591,6 +542,9 @@ var antd = {
       "onKeyDown": {
         "isRequired": function () {}
       },
+      "onKeyUp": {
+        "isRequired": function () {}
+      },
       "onPressEnter": {
         "isRequired": function () {}
       },
@@ -627,6 +581,9 @@ var antd = {
     "Sider": {
       "__ANT_LAYOUT_SIDER": {},
       "childContextTypes": {
+        "collapsedWidth": {
+          "isRequired": function () {}
+        },
         "siderCollapsed": {
           "isRequired": function () {}
         }
@@ -781,6 +738,9 @@ var antd = {
       }
     },
     "contextTypes": {
+      "collapsedWidth": {
+        "isRequired": function () {}
+      },
       "siderCollapsed": {
         "isRequired": function () {}
       }
