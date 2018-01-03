@@ -1,8 +1,8 @@
-# cljsjs/auth0 -lock
+# cljsjs/auth0-lock
 
 [](dependency)
 ```clojure
-[cljsjs/auth0-lock "10.24.1-0"] ;; latest release
+[cljsjs/auth0-lock "11.0.1-0"] ;; latest release
 ```
 [](/dependency)
 
