@@ -30,4 +30,5 @@
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.chartjs")
     (pom)
-    (jar)))
+    (jar)
+    (validate-checksums)))
