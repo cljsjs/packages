@@ -18,8 +18,8 @@
   pom {:project     'cljsjs/react-chartjs-2
        :version     +version+
        :description "React wrapper for Chart.js"
-       :url         "http://gor181.github.io/react-chartjs-2/"
-       :scm         {:url "https://github.com/gor181/react-chartjs-2"}
+       :url         "http://jerairrest.github.io/react-chartjs-2/"
+       :scm         {:url "https://github.com/jerairrest/react-chartjs-2"}
        :license     {"MIT" "https://opensource.org/licenses/MIT"}})
 
 (deftask build []
@@ -41,7 +41,7 @@
 
 (deftask package []
   (comp
-   (download :url (format "https://github.com/gor181/react-chartjs-2/archive/%s.zip" +lib-version+)
+   (download :url (format "https://github.com/jerairrest/react-chartjs-2/archive/%s.zip" +lib-version+)
              :unzip true)
    (build)
    (sift :move {#"^react-chartjs-2\.js"      "cljsjs/react-chartjs-2/development/react-chartjs-2.inc.js"
