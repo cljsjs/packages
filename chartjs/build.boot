@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.6.0")
+(def +lib-version+ "2.7.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -30,4 +30,5 @@
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.chartjs")
     (pom)
-    (jar)))
+    (jar)
+    (validate-checksums)))
