@@ -1,4 +1,4 @@
-var reactChartjs2 = {
+var ReactChartjs2 = {
     "ChartComponent": {},
     "Pie": {},
     "Line": {},
