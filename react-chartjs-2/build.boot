@@ -48,4 +48,5 @@
                 #"^react-chartjs-2\.min\.js" "cljsjs/react-chartjs-2/production/react-chartjs-2.min.inc.js"})
    (deps-cljs :name "cljsjs.react-chartjs-2" :requires ["cljsjs.chartjs" "cljsjs.react" "cljsjs.react.dom"])
    (pom)
-   (jar)))
+   (jar)
+   (validate-checksums)))
