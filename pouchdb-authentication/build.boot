@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.1.0")
+(def +lib-version+ "1.1.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,9 +18,9 @@
 (deftask package []
   (comp
    (download :url (str "https://github.com/pouchdb-community/pouchdb-authentication/releases/download/v" +lib-version+ "/pouchdb.authentication.js")
-             :checksum "bf782a8e287ce25f973e7d75d6737d87")
+             :checksum "96702e342830ede9d0cc1e423c921ddd")
    (download :url (str "https://github.com/pouchdb-community/pouchdb-authentication/releases/download/v" +lib-version+ "/pouchdb.authentication.min.js")
-             :checksum "d1489bfcdd6525f768c7482ed9cf720d")
+             :checksum "f36d054ea6937e30dde3c441a415a465")
    (sift :move {#"^pouchdb.authentication.js" "cljsjs/pouchdb-authentication/development/pouchdb-authentication.inc.js"
                 #"^pouchdb.authentication.min.js" "cljsjs/pouchdb-authentication/production/pouchdb-authentication.min.inc.js"})
    (sift :include #{#"^cljsjs"})
