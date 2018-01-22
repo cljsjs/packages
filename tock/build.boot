@@ -7,13 +7,18 @@
 (def +lib-version+ "1.0.12")
 (def +version+ (str +lib-version+ "-0"))
 
+(task-options!
+ pom {:project     'cljsjs/tock
+      :version     +version+
+      :description "A javscript timer/countdown clock"
+      :url         "https://github.com/mrchimp/tock"
+      :license     {"MIT" "http://opensource.org/licenses/MIT"}})
+
 (deftask package []
   (comp
 
-   (download :url "https://raw.githubusercontent.com/mrchimp/tock/master/tock.js"
-             :checksum "5bd332e6f9e37317d92b85c4131bca46")
-   (download :url "https://raw.githubusercontent.com/mrchimp/tock/master/tock.min.js"
-             :checksum "44aba8ca78ae523b4b26e5f78e320c44")
+   (download :url "https://raw.githubusercontent.com/mrchimp/tock/master/tock.js")
+   (download :url "https://raw.githubusercontent.com/mrchimp/tock/master/tock.min.js")
 
    (sift :move {#"^tock\.js"       "cljsjs/tock/development/tock.inc.js"
                 #"^tock\.min.\.js" "cljsjs/tock/production/tock.min.inc.js"})
@@ -23,4 +28,5 @@
    (deps-cljs :name "cljsjs.tock")
 
    (pom)
-   (jar)))
+   (jar)
+   (validate-checksums)))
