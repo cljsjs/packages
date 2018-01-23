@@ -1,6 +1,7 @@
 {:foreign-libs [{:file "cljsjs/development/firebase.inc.js"
                  :provides ["firebase" "cljsjs.firebase"] }
-                ]
+                {:file "cljsjs/development/firebase-firestore.inc.js"
+                 :provides ["firebase.firestore"] } ]
  :externs ["cljsjs/common/firebase-database-externs.js"
            "cljsjs/common/firebase-storage-externs.js"
            "cljsjs/common/firebase-auth-externs.js"

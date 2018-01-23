@@ -22,6 +22,7 @@
              :compression-format "gz"
              :archive-format "tar")
    (sift :move {#"package/firebase.js" "cljsjs/development/firebase.inc.js" 
+                #"package/firebase-firestore.js" "cljsjs/development/firebase-firestore.inc.js" 
                 #"package/externs/" "cljsjs/common/"}
          :include #{#"^cljsjs"
                     #"^deps.cljs"})
