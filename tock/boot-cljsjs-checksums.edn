@@ -1,2 +1,4 @@
 {"cljsjs/tock/development/tock.inc.js"
- "5BD332E6F9E37317D92B85C4131BCA46"}
+ "5BD332E6F9E37317D92B85C4131BCA46",
+ "cljsjs/tock/production/tock.min.inc.js"
+ "44ABA8CA78AE523B4B26E5F78E320C44"}

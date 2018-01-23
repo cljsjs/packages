@@ -17,11 +17,10 @@
 (deftask package []
   (comp
 
-   (download :url "https://raw.githubusercontent.com/mrchimp/tock/v1.0.12/tock.js")
-   (download :url "https://raw.githubusercontent.com/mrchimp/tock/v1.0.12/tock.min.js")
-
-   (sift :move {#"^tock\.js"       "cljsjs/tock/development/tock.inc.js"
-                #"^tock\.min.\.js" "cljsjs/tock/production/tock.min.inc.js"})
+   (download :url "https://raw.githubusercontent.com/mrchimp/tock/v1.0.12/tock.js"
+             :target "cljsjs/tock/development/tock.inc.js")
+   (download :url "https://raw.githubusercontent.com/mrchimp/tock/v1.0.12/tock.min.js"
+             :target "cljsjs/tock/production/tock.min.inc.js")
 
    (sift :include #{#"^cljsjs"})
 
