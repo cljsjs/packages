@@ -10,7 +10,7 @@
 (task-options!
  pom {:project     'cljsjs/tock
       :version     +version+
-      :description "A javscript timer/countdown clock"
+      :description "An accurate JavaScript timer/countdown"
       :url         "https://github.com/mrchimp/tock"
       :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
