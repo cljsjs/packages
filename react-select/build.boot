@@ -1,15 +1,15 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]
-                  [cljsjs/react "15.3.0-0"]
-                  [cljsjs/react-dom "15.3.0-0"]
+                  [cljsjs/react "16.2.0-3"]
+                  [cljsjs/react-dom "16.2.0-3"]
                   [cljsjs/prop-types "15.5.10-1"]
                   [cljsjs/classnames "2.2.3-0"]
-                  [cljsjs/react-input-autosize "2.0.0-1"]])
+                  [cljsjs/react-input-autosize "2.2.1-1"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.0.0-rc.10")
+(def +lib-version+ "1.2.1")
 (def +version+ (str +lib-version+ "-1"))
 
 (task-options!
@@ -28,7 +28,7 @@
 (deftask package []
   (comp
    (download :url (str "https://github.com/JedWatson/react-select/archive/v" +lib-version+ ".zip")
-             :checksum "2ccd33cb2fdde191b2d1f8d35da9128c"
+             :checksum "84e2beddd8ac389958d9bfe2f176be32"
              :unzip true)
 
    (sift :move {#"^react-select.*[/ \\]dist[/ \\]react-select.js$" "cljsjs/react-select/development/react-select.inc.js"
