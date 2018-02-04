@@ -11,7 +11,7 @@
          '[clojure.java.io :as io]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.0.0-alpha.4")
+(def +lib-version+ "1.0.0-beta.10")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!

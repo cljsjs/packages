@@ -7,7 +7,7 @@
  * https://unpkg.com/react-dom@15.6.2/dist/react-dom.min.js
  * https://unpkg.com/react-transition-group@2.2.1/dist/react-transition-group.min.js
  * https://unpkg.com/prop-types@15.6.0/prop-types.min.js
- * https://unpkg.com/recharts@1.0.0-alpha.4/umd/Recharts.min.js
+ * https://unpkg.com/recharts@1.0.0-beta.10/umd/Recharts.min.js
  *
  **********************************************************************/
 var Recharts = {
@@ -171,6 +171,9 @@ var Recharts = {
       "hide": {
         "isRequired": function () {}
       },
+      "id": {
+        "isRequired": function () {}
+      },
       "imageRendering": {
         "isRequired": function () {}
       },
@@ -268,6 +271,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "r": {
+        "isRequired": function () {}
+      },
+      "radius": {
         "isRequired": function () {}
       },
       "shapeRendering": {
@@ -375,6 +381,7 @@ var Recharts = {
         "right": {},
         "top": {}
       },
+      "reverseStackOrder": {},
       "stackOffset": {}
     },
     "displayName": {},
@@ -405,6 +412,9 @@ var Recharts = {
       "height": {
         "isRequired": function () {}
       },
+      "id": {
+        "isRequired": function () {}
+      },
       "layout": {
         "isRequired": function () {}
       },
@@ -430,6 +440,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "onMouseUp": {
+        "isRequired": function () {}
+      },
+      "reverseStackOrder": {
         "isRequired": function () {}
       },
       "stackOffset": {
@@ -600,6 +613,9 @@ var Recharts = {
       "hide": {
         "isRequired": function () {}
       },
+      "id": {
+        "isRequired": function () {}
+      },
       "imageRendering": {
         "isRequired": function () {}
       },
@@ -694,6 +710,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "r": {
+        "isRequired": function () {}
+      },
+      "radius": {
         "isRequired": function () {}
       },
       "shape": {
@@ -800,6 +819,7 @@ var Recharts = {
         "right": {},
         "top": {}
       },
+      "reverseStackOrder": {},
       "stackOffset": {}
     },
     "displayName": {},
@@ -830,6 +850,9 @@ var Recharts = {
       "height": {
         "isRequired": function () {}
       },
+      "id": {
+        "isRequired": function () {}
+      },
       "layout": {
         "isRequired": function () {}
       },
@@ -857,6 +880,9 @@ var Recharts = {
       "onMouseUp": {
         "isRequired": function () {}
       },
+      "reverseStackOrder": {
+        "isRequired": function () {}
+      },
       "stackOffset": {
         "isRequired": function () {}
       },
@@ -877,6 +903,7 @@ var Recharts = {
   "Brush": {
     "defaultProps": {
       "fill": {},
+      "gap": {},
       "height": {},
       "padding": {
         "bottom": {},
@@ -885,10 +912,7 @@ var Recharts = {
         "top": {}
       },
       "stroke": {},
-      "travellerWidth": {},
-      "width": {},
-      "x": {},
-      "y": {}
+      "travellerWidth": {}
     },
     "displayName": {},
     "propTypes": {
@@ -908,6 +932,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "fill": {
+        "isRequired": function () {}
+      },
+      "gap": {
         "isRequired": function () {}
       },
       "height": {
@@ -956,6 +983,7 @@ var Recharts = {
       "stroke": {},
       "tick": {},
       "tickLine": {},
+      "tickMargin": {},
       "tickSize": {},
       "ticks": {},
       "viewBox": {
@@ -1165,6 +1193,9 @@ var Recharts = {
       "r": {
         "isRequired": function () {}
       },
+      "radius": {
+        "isRequired": function () {}
+      },
       "shapeRendering": {
         "isRequired": function () {}
       },
@@ -1219,6 +1250,9 @@ var Recharts = {
       "tickLine": {
         "isRequired": function () {}
       },
+      "tickMargin": {
+        "isRequired": function () {}
+      },
       "tickSize": {
         "isRequired": function () {}
       },
@@ -1260,15 +1294,13 @@ var Recharts = {
   "CartesianGrid": {
     "defaultProps": {
       "fill": {},
-      "height": {},
       "horizontal": {},
+      "horizontalFill": {},
       "horizontalPoints": {},
       "stroke": {},
       "vertical": {},
-      "verticalPoints": {},
-      "width": {},
-      "x": {},
-      "y": {}
+      "verticalFill": {},
+      "verticalPoints": {}
     },
     "displayName": {},
     "propTypes": {
@@ -1389,6 +1421,9 @@ var Recharts = {
       "horizontalCoordinatesGenerator": {
         "isRequired": function () {}
       },
+      "horizontalFill": {
+        "isRequired": function () {}
+      },
       "horizontalPoints": {
         "isRequired": function () {}
       },
@@ -1429,6 +1464,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "r": {
+        "isRequired": function () {}
+      },
+      "radius": {
         "isRequired": function () {}
       },
       "shapeRendering": {
@@ -1486,6 +1524,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "verticalCoordinatesGenerator": {
+        "isRequired": function () {}
+      },
+      "verticalFill": {
         "isRequired": function () {}
       },
       "verticalPoints": {
@@ -1661,6 +1702,9 @@ var Recharts = {
       "r": {
         "isRequired": function () {}
       },
+      "radius": {
+        "isRequired": function () {}
+      },
       "shapeRendering": {
         "isRequired": function () {}
       },
@@ -1744,6 +1788,7 @@ var Recharts = {
         "right": {},
         "top": {}
       },
+      "reverseStackOrder": {},
       "stackOffset": {}
     },
     "displayName": {},
@@ -1774,6 +1819,9 @@ var Recharts = {
       "height": {
         "isRequired": function () {}
       },
+      "id": {
+        "isRequired": function () {}
+      },
       "layout": {
         "isRequired": function () {}
       },
@@ -1799,6 +1847,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "onMouseUp": {
+        "isRequired": function () {}
+      },
+      "reverseStackOrder": {
         "isRequired": function () {}
       },
       "stackOffset": {
@@ -1974,6 +2025,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "r": {
+        "isRequired": function () {}
+      },
+      "radius": {
         "isRequired": function () {}
       },
       "shapeRendering": {
@@ -2220,6 +2274,9 @@ var Recharts = {
       "r": {
         "isRequired": function () {}
       },
+      "radius": {
+        "isRequired": function () {}
+      },
       "shapeRendering": {
         "isRequired": function () {}
       },
@@ -2362,6 +2419,9 @@ var Recharts = {
       "children": {
         "isRequired": function () {}
       },
+      "className": {
+        "isRequired": function () {}
+      },
       "content": {
         "isRequired": function () {}
       },
@@ -2396,6 +2456,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "dataKey": {
+        "isRequired": function () {}
+      },
+      "id": {
         "isRequired": function () {}
       },
       "valueAccessor": {
@@ -2634,6 +2697,9 @@ var Recharts = {
       "hide": {
         "isRequired": function () {}
       },
+      "id": {
+        "isRequired": function () {}
+      },
       "imageRendering": {
         "isRequired": function () {}
       },
@@ -2728,6 +2794,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "r": {
+        "isRequired": function () {}
+      },
+      "radius": {
         "isRequired": function () {}
       },
       "shapeRendering": {
@@ -2834,6 +2903,7 @@ var Recharts = {
         "right": {},
         "top": {}
       },
+      "reverseStackOrder": {},
       "stackOffset": {}
     },
     "displayName": {},
@@ -2864,6 +2934,9 @@ var Recharts = {
       "height": {
         "isRequired": function () {}
       },
+      "id": {
+        "isRequired": function () {}
+      },
       "layout": {
         "isRequired": function () {}
       },
@@ -2889,6 +2962,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "onMouseUp": {
+        "isRequired": function () {}
+      },
+      "reverseStackOrder": {
         "isRequired": function () {}
       },
       "stackOffset": {
@@ -3082,6 +3158,9 @@ var Recharts = {
       "hide": {
         "isRequired": function () {}
       },
+      "id": {
+        "isRequired": function () {}
+      },
       "imageRendering": {
         "isRequired": function () {}
       },
@@ -3184,6 +3263,9 @@ var Recharts = {
       "r": {
         "isRequired": function () {}
       },
+      "radius": {
+        "isRequired": function () {}
+      },
       "sectors": {
         "isRequired": function () {}
       },
@@ -3281,6 +3363,7 @@ var Recharts = {
         "top": {}
       },
       "outerRadius": {},
+      "reverseStackOrder": {},
       "stackOffset": {},
       "startAngle": {}
     },
@@ -3321,6 +3404,9 @@ var Recharts = {
       "height": {
         "isRequired": function () {}
       },
+      "id": {
+        "isRequired": function () {}
+      },
       "innerRadius": {
         "isRequired": function () {}
       },
@@ -3354,6 +3440,9 @@ var Recharts = {
       "outerRadius": {
         "isRequired": function () {}
       },
+      "reverseStackOrder": {
+        "isRequired": function () {}
+      },
       "stackOffset": {
         "isRequired": function () {}
       },
@@ -3377,6 +3466,7 @@ var Recharts = {
   "PolarAngleAxis": {
     "axisType": {},
     "defaultProps": {
+      "allowDuplicatedCategory": {},
       "angleAxisId": {},
       "axisLine": {},
       "cx": {},
@@ -3392,6 +3482,9 @@ var Recharts = {
     "displayName": {},
     "propTypes": {
       "alignmentBaseline": {
+        "isRequired": function () {}
+      },
+      "allowDuplicatedCategory": {
         "isRequired": function () {}
       },
       "angle": {
@@ -3856,6 +3949,9 @@ var Recharts = {
       "r": {
         "isRequired": function () {}
       },
+      "radius": {
+        "isRequired": function () {}
+      },
       "shapeRendering": {
         "isRequired": function () {}
       },
@@ -3931,6 +4027,7 @@ var Recharts = {
     "axisType": {},
     "defaultProps": {
       "allowDataOverflow": {},
+      "allowDuplicatedCategory": {},
       "angle": {},
       "axisLine": {},
       "cx": {},
@@ -3950,6 +4047,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "allowDataOverflow": {
+        "isRequired": function () {}
+      },
+      "allowDuplicatedCategory": {
         "isRequired": function () {}
       },
       "angle": {
@@ -4142,6 +4242,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "r": {
+        "isRequired": function () {}
+      },
+      "radius": {
         "isRequired": function () {}
       },
       "radiusAxisId": {
@@ -4384,6 +4487,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "r": {
+        "isRequired": function () {}
+      },
+      "radius": {
         "isRequired": function () {}
       },
       "shapeRendering": {
@@ -4665,6 +4771,9 @@ var Recharts = {
       "r": {
         "isRequired": function () {}
       },
+      "radius": {
+        "isRequired": function () {}
+      },
       "radiusAxisId": {
         "isRequired": function () {}
       },
@@ -4759,6 +4868,7 @@ var Recharts = {
         "top": {}
       },
       "outerRadius": {},
+      "reverseStackOrder": {},
       "stackOffset": {},
       "startAngle": {}
     },
@@ -4799,6 +4909,9 @@ var Recharts = {
       "height": {
         "isRequired": function () {}
       },
+      "id": {
+        "isRequired": function () {}
+      },
       "innerRadius": {
         "isRequired": function () {}
       },
@@ -4830,6 +4943,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "outerRadius": {
+        "isRequired": function () {}
+      },
+      "reverseStackOrder": {
         "isRequired": function () {}
       },
       "stackOffset": {
@@ -5069,6 +5185,9 @@ var Recharts = {
       "r": {
         "isRequired": function () {}
       },
+      "radius": {
+        "isRequired": function () {}
+      },
       "radiusAxisId": {
         "isRequired": function () {}
       },
@@ -5163,6 +5282,7 @@ var Recharts = {
         "top": {}
       },
       "outerRadius": {},
+      "reverseStackOrder": {},
       "stackOffset": {},
       "startAngle": {}
     },
@@ -5203,6 +5323,9 @@ var Recharts = {
       "height": {
         "isRequired": function () {}
       },
+      "id": {
+        "isRequired": function () {}
+      },
       "innerRadius": {
         "isRequired": function () {}
       },
@@ -5234,6 +5357,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "outerRadius": {
+        "isRequired": function () {}
+      },
+      "reverseStackOrder": {
         "isRequired": function () {}
       },
       "stackOffset": {
@@ -5704,6 +5830,9 @@ var Recharts = {
       "r": {
         "isRequired": function () {}
       },
+      "radius": {
+        "isRequired": function () {}
+      },
       "shape": {
         "isRequired": function () {}
       },
@@ -6005,6 +6134,9 @@ var Recharts = {
       "r": {
         "isRequired": function () {}
       },
+      "radius": {
+        "isRequired": function () {}
+      },
       "shape": {
         "isRequired": function () {}
       },
@@ -6252,6 +6384,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "r": {
+        "isRequired": function () {}
+      },
+      "radius": {
         "isRequired": function () {}
       },
       "shape": {
@@ -6613,6 +6748,9 @@ var Recharts = {
       "r": {
         "isRequired": function () {}
       },
+      "radius": {
+        "isRequired": function () {}
+      },
       "shapeRendering": {
         "isRequired": function () {}
       },
@@ -6871,6 +7009,9 @@ var Recharts = {
       "mask": {
         "isRequired": function () {}
       },
+      "name": {
+        "isRequired": function () {}
+      },
       "onClick": {
         "isRequired": function () {}
       },
@@ -6920,6 +7061,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "r": {
+        "isRequired": function () {}
+      },
+      "radius": {
         "isRequired": function () {}
       },
       "shape": {
@@ -7017,6 +7161,7 @@ var Recharts = {
         "right": {},
         "top": {}
       },
+      "reverseStackOrder": {},
       "stackOffset": {}
     },
     "displayName": {},
@@ -7047,6 +7192,9 @@ var Recharts = {
       "height": {
         "isRequired": function () {}
       },
+      "id": {
+        "isRequired": function () {}
+      },
       "layout": {
         "isRequired": function () {}
       },
@@ -7072,6 +7220,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "onMouseUp": {
+        "isRequired": function () {}
+      },
+      "reverseStackOrder": {
         "isRequired": function () {}
       },
       "stackOffset": {
@@ -7263,6 +7414,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "r": {
+        "isRequired": function () {}
+      },
+      "radius": {
         "isRequired": function () {}
       },
       "shapeRendering": {
@@ -7519,6 +7673,9 @@ var Recharts = {
       "r": {
         "isRequired": function () {}
       },
+      "radius": {
+        "isRequired": function () {}
+      },
       "shapeRendering": {
         "isRequired": function () {}
       },
@@ -7751,6 +7908,9 @@ var Recharts = {
       "r": {
         "isRequired": function () {}
       },
+      "radius": {
+        "isRequired": function () {}
+      },
       "scaleToFit": {
         "isRequired": function () {}
       },
@@ -7839,12 +7999,14 @@ var Recharts = {
       },
       "cursor": {},
       "cursorStyle": {},
+      "filterNull": {},
       "isAnimationActive": {},
       "itemSorter": function () {},
       "itemStyle": {},
       "labelStyle": {},
       "offset": {},
       "separator": {},
+      "useTranslate3d": {},
       "viewBox": {
         "x1": {},
         "x2": {},
@@ -7871,6 +8033,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "cursor": {
+        "isRequired": function () {}
+      },
+      "filterNull": {
         "isRequired": function () {}
       },
       "formatter": {
@@ -7901,6 +8066,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "separator": {
+        "isRequired": function () {}
+      },
+      "useTranslate3d": {
         "isRequired": function () {}
       },
       "viewBox": {
@@ -7989,6 +8157,7 @@ var Recharts = {
     "defaultProps": {
       "allowDataOverflow": {},
       "allowDecimals": {},
+      "allowDuplicatedCategory": {},
       "domain": {},
       "height": {},
       "hide": {},
@@ -8011,6 +8180,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "allowDecimals": {
+        "isRequired": function () {}
+      },
+      "allowDuplicatedCategory": {
         "isRequired": function () {}
       },
       "axisLine": {
@@ -8088,6 +8260,7 @@ var Recharts = {
     "defaultProps": {
       "allowDataOverflow": {},
       "allowDecimals": {},
+      "allowDuplicatedCategory": {},
       "domain": {},
       "height": {},
       "hide": {},
@@ -8110,6 +8283,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "allowDecimals": {
+        "isRequired": function () {}
+      },
+      "allowDuplicatedCategory": {
         "isRequired": function () {}
       },
       "axisLine": {
@@ -8254,11 +8430,6 @@ Recharts.CartesianGrid.prototype = {
   "isReactComponent": function () {},
   "setState": function () {},
   "shouldComponentUpdate": function () {}
-};
-Recharts.Cell.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
 };
 Recharts.ComposedChart.prototype = {
   "forceUpdate": function () {},
@@ -8458,3 +8629,4 @@ Recharts.ZAxis.prototype = {
 /**********************************************************************
  * End Generated Extern for Recharts
 /**********************************************************************/
+
