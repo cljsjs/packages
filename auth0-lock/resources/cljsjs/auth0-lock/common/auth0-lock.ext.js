@@ -8,7 +8,6 @@ var Auth0Lock = {
     "defaultMaxListeners": {},
     "listenerCount": function () {}
   },
-  "css": {},
   "defaultMaxListeners": {},
   "listenerCount": function () {},
   "version": {}
