@@ -30,6 +30,7 @@ auth0.WebAuth.prototype = {
   "changePassword": function () {},
   "checkSession": function () {},
   "crossOriginAuthenticationCallback": function () {},
+  "crossOriginVerification": function () {},
   "login": function () {},
   "logout": function () {},
   "parseHash": function () {},
