@@ -5,37 +5,137 @@
 
 var ReactTransitionGroup = {
   "CSSTransition": {
-    "defaultProps": {
-      "transitionAppear": {},
-      "transitionEnter": {},
-      "transitionLeave": {}
-    },
-    "displayName": {},
     "propTypes": {
-      "transitionAppear": {
+      "addEndListener": {
         "isRequired": function () {}
       },
-      "transitionAppearTimeout": function () {},
-      "transitionEnter": {
+      "appear": {
         "isRequired": function () {}
       },
-      "transitionEnterTimeout": function () {},
-      "transitionLeave": {
+      "children": function () {},
+      "classNames": {
         "isRequired": function () {}
       },
-      "transitionLeaveTimeout": function () {},
-      "transitionName": {
+      "enter": {
+        "isRequired": function () {}
+      },
+      "exit": {
+        "isRequired": function () {}
+      },
+      "in": {
+        "isRequired": function () {}
+      },
+      "mountOnEnter": {
+        "isRequired": function () {}
+      },
+      "onEnter": {
+        "isRequired": function () {}
+      },
+      "onEntered": {
+        "isRequired": function () {}
+      },
+      "onEntering": {
+        "isRequired": function () {}
+      },
+      "onExit": {
+        "isRequired": function () {}
+      },
+      "onExited": {
+        "isRequired": function () {}
+      },
+      "onExiting": {
+        "isRequired": function () {}
+      },
+      "timeout": function () {},
+      "unmountOnExit": {
+        "isRequired": function () {}
+      }
+    }
+  },
+  "Transition": {
+    "ENTERED": {},
+    "ENTERING": {},
+    "EXITED": {},
+    "EXITING": {},
+    "UNMOUNTED": {},
+    "childContextTypes": {
+      "transitionGroup": function () {}
+    },
+    "contextTypes": {
+      "transitionGroup": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "appear": {},
+      "enter": {},
+      "exit": {},
+      "in": {},
+      "mountOnEnter": {},
+      "onEnter": function () {},
+      "onEntered": function () {},
+      "onEntering": function () {},
+      "onExit": function () {},
+      "onExited": function () {},
+      "onExiting": function () {},
+      "unmountOnExit": {}
+    },
+    "propTypes": {
+      "addEndListener": {
+        "isRequired": function () {}
+      },
+      "appear": {
+        "isRequired": function () {}
+      },
+      "children": function () {},
+      "enter": {
+        "isRequired": function () {}
+      },
+      "exit": {
+        "isRequired": function () {}
+      },
+      "in": {
+        "isRequired": function () {}
+      },
+      "mountOnEnter": {
+        "isRequired": function () {}
+      },
+      "onEnter": {
+        "isRequired": function () {}
+      },
+      "onEntered": {
+        "isRequired": function () {}
+      },
+      "onEntering": {
+        "isRequired": function () {}
+      },
+      "onExit": {
+        "isRequired": function () {}
+      },
+      "onExited": {
+        "isRequired": function () {}
+      },
+      "onExiting": {
+        "isRequired": function () {}
+      },
+      "timeout": function () {},
+      "unmountOnExit": {
         "isRequired": function () {}
       }
     }
   },
   "TransitionGroup": {
+    "childContextTypes": {
+      "transitionGroup": function () {}
+    },
     "defaultProps": {
       "childFactory": function () {},
       "component": {}
     },
-    "displayName": {},
     "propTypes": {
+      "appear": {
+        "isRequired": function () {}
+      },
       "childFactory": {
         "isRequired": function () {}
       },
@@ -44,6 +144,12 @@ var ReactTransitionGroup = {
       },
       "component": {
         "isRequired": function () {}
+      },
+      "enter": {
+        "isRequired": function () {}
+      },
+      "exit": {
+        "isRequired": function () {}
       }
     }
   }
@@ -51,16 +157,40 @@ var ReactTransitionGroup = {
 ReactTransitionGroup.CSSTransition.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
+  "reflowAndAddClass": function () {},
+  "removeClasses": function () {},
   "render": function () {},
   "setState": function () {}
 };
-ReactTransitionGroup.TransitionGroup.prototype = {
+ReactTransitionGroup.Transition.prototype = {
+  "cancelNextCallback": function () {},
   "componentDidMount": function () {},
   "componentDidUpdate": function () {},
-  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
+  "componentWillUnmount": function () {},
+  "forceUpdate": function () {},
+  "getChildContext": function () {},
+  "getTimeouts": function () {},
+  "isReactComponent": function () {},
+  "onTransitionEnd": function () {},
+  "performEnter": function () {},
+  "performExit": function () {},
+  "render": function () {},
+  "safeSetState": function () {},
+  "setNextCallback": function () {},
+  "setState": function () {},
+  "updateStatus": function () {}
+};
+ReactTransitionGroup.TransitionGroup.prototype = {
+  "componentDidMount": function () {},
   "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
+  "getChildContext": function () {},
+  "getProp": function () {},
   "isReactComponent": function () {},
   "render": function () {},
   "setState": function () {}
 };
+/**********************************************************************
+ * End Generated Extern for ReactTransitionGroup
+/**********************************************************************/
