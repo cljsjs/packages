@@ -20,10 +20,10 @@
                      :decompress true
                      :archive-format "tar"
                      :compression-format "gz")
-           (sift :move {#".*quill\.js"        "cljsjs/quill/quill.inc.js"
-                        #".*quill\.min\.js"   "cljsjs/quill/quill.min.inc.js"
+           (sift :move {#".*quill\.js" "cljsjs/quill/quill.inc.js"
+                        #".*quill\.min\.js" "cljsjs/quill/quill.min.inc.js"
                         #".*quill\.core\.css" "cljsjs/quill/quill.core.css"
-                        #".*dist/quill\.snow\.css" "cljsjs/quill/quill.snow.css"})
+                        #".*quill\.snow\.css" "cljsjs/quill/quill.snow.css"})
            (sift :include #{#"^cljsjs"})
            (deps-cljs :name "cljsjs.quill")
            (validate-checksums)
