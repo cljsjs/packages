@@ -4,21 +4,19 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.2.5") ;; released at May 28, 2017
-(def +version+ (str +lib-version+ "-4"))
+(def +lib-version+ "1.3.5")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom {:project     'cljsjs/quill
        :version     +version+
-       :description "Quill is a free, open source WYSIWYG editor built for the modern web."
+       :description "QuillJS is a modern rich text editor built for compatibility and extensibility."
        :url         "http://quilljs.com/"
        :license     {"BSD 3-Clause" "http://opensource.org/licenses/BSD-3-Clause"}})
 
 (deftask package []
          (comp
-           (download :url
-                     (format "https://github.com/quilljs/quill/releases/download/v%s/quill.tar.gz" +lib-version+)
-                     :checksum "CC0A9A7A866B40A63E0D3418B57A8F70"
+           (download :url (format "https://github.com/quilljs/quill/releases/download/v%s/quill.tar.gz" +lib-version+)
                      :decompress true
                      :archive-format "tar"
                      :compression-format "gz")
@@ -28,5 +26,6 @@
                         #".*dist/quill\.snow\.css" "cljsjs/quill/quill.snow.css"})
            (sift :include #{#"^cljsjs"})
            (deps-cljs :name "cljsjs.quill")
+           (validate-checksums)
            (pom)
            (jar)))
