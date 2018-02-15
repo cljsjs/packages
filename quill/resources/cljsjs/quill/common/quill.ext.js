@@ -19,6 +19,7 @@ var Quill = {
   "removeFormat": function() {},
   "text-change": function() {},
   "selection-change": function() {},
+  "editor-change": function() {},
   "off": function() {},
   "on": function() {},
   "once": function() {},
