@@ -18,17 +18,17 @@ module.exports = [{
 
   module: {
     loaders: [{
-      loader: 'babel',
+      loader: 'babel-loader',
       exclude: /node_modules/,
       query: {
-        presets: ['es2015', 'react', 'stage-0'],
+        presets: ['env', 'react', 'stage-0'],
         plugins: ['add-module-exports']
       }
     }]
   },
 
   resolve: {
-    extensions: ['', '.js', '.jsx'],
+    extensions: ['.js', '.jsx'],
   }
 },{
   entry: path.join(__dirname, "src", "index.js"),
@@ -47,17 +47,17 @@ module.exports = [{
 
   module: {
     loaders: [{
-      loader: 'babel',
+      loader: 'babel-loader',
       exclude: /node_modules/,
       query: {
-        presets: ['es2015', 'react', 'stage-0'],
+        presets: ['env', 'react', 'stage-0'],
         plugins: ['add-module-exports']
       }
     }]
   },
 
   resolve: {
-    extensions: ['', '.js', '.jsx'],
+    extensions: ['.js', '.jsx'],
   },
 
   plugins: [
