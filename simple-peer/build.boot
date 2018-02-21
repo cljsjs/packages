@@ -17,8 +17,8 @@
 
 (deftask package []
   (comp
-    (download :url "https://wzrd.in/standalone/simple-peer")
-    (sift :move {#"^simple-peer" "cljsjs/simple-peer/development/simple-peer.inc.js"})
+    (download :url "https://wzrd.in/standalone/simple-peer@8.5.0")
+    (sift :move {#"^simple-peer@8.5.0" "cljsjs/simple-peer/development/simple-peer.inc.js"})
     (minify :in "cljsjs/simple-peer/development/simple-peer.inc.js"
             :out "cljsjs/simple-peer/production/simple-peer.min.inc.js")
     (sift :include #{#"^cljsjs"})
