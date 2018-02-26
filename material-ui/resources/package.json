@@ -1,0 +1,23 @@
+{
+    "name": "@cljsjs/material-ui-bundle",
+    "version": "1.0.0",
+    "description": "Bundle material-ui and material-ui-icons for Clojurescript",
+    "scripts": {
+	"build:dev":        "browserify main.js                                 > material-ui.inc.js",
+	"build:dev-icons":  "browserify main-icons.js                           > material-ui-svg-icons.inc.js",
+	"build:prod":       "browserify main.js       -p [ minifyify --no-map ] > material-ui.min.inc.js",
+	"build:prod-icons": "browserify main-icons.js -p [ minifyify --no-map ] > material-ui-svg-icons.min.inc.js"
+    },
+    "author": "forwardblockchain.com",
+    "license": "ISC",
+    "dependencies": {
+	"material-ui": "^1.0.0-beta.34",
+	"material-ui-icons": "^1.0.0-beta.17"
+    },
+    "devDependencies": {
+	"browserify": "^16.1.0",
+	"minifyify": "^7.3.5",
+	"react": "^16.2.0",
+	"react-dom": "^16.2.0"
+    }
+}
