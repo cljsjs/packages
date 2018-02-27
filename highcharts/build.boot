@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "5.0.14")
+(def +lib-version+ "6.0.7")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -49,7 +49,6 @@
 (deftask package []
   (comp
     (download :url (format "https://code.highcharts.com/zips/Highcharts-%s.zip" +lib-version+)
-              :checksum "F9922FA1BF5D93C8D20635A7DD091F87"
               :unzip true)
     (target)
     (sift :move {#"^code/([^/\.]*)\.js$"      "cljsjs/highcharts/production/$1.min.inc.js"
@@ -60,4 +59,5 @@
     (sift :include #{#"^cljsjs"})
     (generate-deps)
     (pom)
-    (jar)))
+    (jar)
+    (validate-checksums)))

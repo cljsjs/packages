@@ -5,28 +5,11 @@
 var Highcharts = {
   "Axis": function () {},
   "CenteredSeriesMixin": {
-    "getCenter": function () {}
+    "getCenter": function () {},
+    "getStartAndEndRadians": function () {}
   },
   "Chart": function () {},
   "Color": function () {},
-  "Date": {
-    "hcGetDate": {},
-    "hcGetDay": {},
-    "hcGetFullYear": {},
-    "hcGetHours": {},
-    "hcGetMinutes": {},
-    "hcGetMonth": {},
-    "hcGetTimezoneOffset": {},
-    "hcMakeTime": function () {},
-    "hcSetDate": {},
-    "hcSetFullYear": {},
-    "hcSetHours": {},
-    "hcSetMilliseconds": {},
-    "hcSetMinutes": {},
-    "hcSetMonth": {},
-    "hcSetSeconds": {},
-    "hcTimezoneOffset": {}
-  },
   "Fx": function () {},
   "Legend": function () {},
   "LegendSymbolMixin": {
@@ -47,6 +30,7 @@ var Highcharts = {
   "StackItem": function () {},
   "StockChart": function () {},
   "Tick": function () {},
+  "Time": function () {},
   "Tooltip": function () {},
   "TrackerMixin": {
     "drawTrackerGraph": function () {},
@@ -55,6 +39,17 @@ var Highcharts = {
   "addEvent": function () {},
   "animObject": function () {},
   "animate": function () {},
+  "approximations": {
+    "average": function () {},
+    "averages": function () {},
+    "close": function () {},
+    "high": function () {},
+    "low": function () {},
+    "ohlc": function () {},
+    "open": function () {},
+    "range": function () {},
+    "sum": function () {}
+  },
   "arrayMax": function () {},
   "arrayMin": function () {},
   "attr": function () {},
@@ -106,10 +101,7 @@ var Highcharts = {
       },
       "text": {}
     },
-    "global": {
-      "VMLRadialGradientURL": {},
-      "useUTC": {}
-    },
+    "global": {},
     "labels": {
       "style": {
         "color": {},
@@ -187,7 +179,12 @@ var Highcharts = {
     "navigator": {
       "handles": {
         "backgroundColor": {},
-        "borderColor": {}
+        "borderColor": {},
+        "enabled": {},
+        "height": {},
+        "lineWidth": {},
+        "symbols": {},
+        "width": {}
       },
       "height": {},
       "margin": {},
@@ -197,7 +194,6 @@ var Highcharts = {
       "outlineWidth": {},
       "series": {
         "className": {},
-        "color": {},
         "compare": {},
         "dataGrouping": {
           "approximation": {},
@@ -218,7 +214,6 @@ var Highcharts = {
           "enabled": {}
         },
         "pointRange": {},
-        "shadow": {},
         "threshold": {},
         "type": {}
       },
@@ -236,6 +231,7 @@ var Highcharts = {
           "y": {}
         },
         "lineWidth": {},
+        "overscroll": {},
         "tickLength": {},
         "tickPixelInterval": {}
       },
@@ -282,6 +278,7 @@ var Highcharts = {
         "findNearestPointBy": {},
         "lineWidth": {},
         "marker": {
+          "enabledThreshold": {},
           "lineColor": {},
           "lineWidth": {},
           "radius": {},
@@ -293,6 +290,9 @@ var Highcharts = {
               "enabled": {},
               "lineWidthPlus": {},
               "radiusPlus": {}
+            },
+            "normal": {
+              "animation": {}
             },
             "select": {
               "fillColor": {},
@@ -318,6 +318,9 @@ var Highcharts = {
             },
             "lineWidthPlus": {},
             "marker": {}
+          },
+          "normal": {
+            "animation": {}
           },
           "select": {
             "marker": {}
@@ -351,6 +354,7 @@ var Highcharts = {
         "findNearestPointBy": {},
         "lineWidth": {},
         "marker": {
+          "enabledThreshold": {},
           "lineColor": {},
           "lineWidth": {},
           "radius": {},
@@ -362,6 +366,9 @@ var Highcharts = {
               "enabled": {},
               "lineWidthPlus": {},
               "radiusPlus": {}
+            },
+            "normal": {
+              "animation": {}
             },
             "select": {
               "fillColor": {},
@@ -387,6 +394,9 @@ var Highcharts = {
             },
             "lineWidthPlus": {},
             "marker": {}
+          },
+          "normal": {
+            "animation": {}
           },
           "select": {
             "marker": {}
@@ -441,14 +451,15 @@ var Highcharts = {
             "brightness": {},
             "halo": {},
             "lineWidthPlus": {},
-            "marker": {},
-            "shadow": {}
+            "marker": {}
+          },
+          "normal": {
+            "animation": {}
           },
           "select": {
             "borderColor": {},
             "color": {},
-            "marker": {},
-            "shadow": {}
+            "marker": {}
           }
         },
         "stickyTracking": {},
@@ -505,14 +516,15 @@ var Highcharts = {
             "halo": {},
             "lineWidth": {},
             "lineWidthPlus": {},
-            "marker": {},
-            "shadow": {}
+            "marker": {}
+          },
+          "normal": {
+            "animation": {}
           },
           "select": {
             "borderColor": {},
             "color": {},
-            "marker": {},
-            "shadow": {}
+            "marker": {}
           }
         },
         "stickyTracking": {},
@@ -569,14 +581,15 @@ var Highcharts = {
             "brightness": {},
             "halo": {},
             "lineWidthPlus": {},
-            "marker": {},
-            "shadow": {}
+            "marker": {}
+          },
+          "normal": {
+            "animation": {}
           },
           "select": {
             "borderColor": {},
             "color": {},
-            "marker": {},
-            "shadow": {}
+            "marker": {}
           }
         },
         "stickyTracking": {},
@@ -587,6 +600,7 @@ var Highcharts = {
         "turboThreshold": {}
       },
       "flags": {
+        "allowOverlapX": {},
         "allowPointSelect": {},
         "animation": {
           "duration": {}
@@ -636,14 +650,15 @@ var Highcharts = {
             "halo": {},
             "lineColor": {},
             "lineWidthPlus": {},
-            "marker": {},
-            "shadow": {}
+            "marker": {}
+          },
+          "normal": {
+            "animation": {}
           },
           "select": {
             "borderColor": {},
             "color": {},
-            "marker": {},
-            "shadow": {}
+            "marker": {}
           }
         },
         "stickyTracking": {},
@@ -684,6 +699,7 @@ var Highcharts = {
         "findNearestPointBy": {},
         "lineWidth": {},
         "marker": {
+          "enabledThreshold": {},
           "lineColor": {},
           "lineWidth": {},
           "radius": {},
@@ -695,6 +711,9 @@ var Highcharts = {
               "enabled": {},
               "lineWidthPlus": {},
               "radiusPlus": {}
+            },
+            "normal": {
+              "animation": {}
             },
             "select": {
               "fillColor": {},
@@ -720,6 +739,9 @@ var Highcharts = {
             },
             "lineWidthPlus": {},
             "marker": {}
+          },
+          "normal": {
+            "animation": {}
           },
           "select": {
             "marker": {}
@@ -774,14 +796,15 @@ var Highcharts = {
             "halo": {},
             "lineWidth": {},
             "lineWidthPlus": {},
-            "marker": {},
-            "shadow": {}
+            "marker": {}
+          },
+          "normal": {
+            "animation": {}
           },
           "select": {
             "borderColor": {},
             "color": {},
-            "marker": {},
-            "shadow": {}
+            "marker": {}
           }
         },
         "stickyTracking": {},
@@ -845,8 +868,10 @@ var Highcharts = {
               "size": {}
             },
             "lineWidthPlus": {},
-            "marker": {},
-            "shadow": {}
+            "marker": {}
+          },
+          "normal": {
+            "animation": {}
           },
           "select": {
             "marker": {}
@@ -883,6 +908,7 @@ var Highcharts = {
         "lineWidth": {},
         "marker": {
           "enabled": {},
+          "enabledThreshold": {},
           "lineColor": {},
           "lineWidth": {},
           "radius": {},
@@ -894,6 +920,9 @@ var Highcharts = {
               "enabled": {},
               "lineWidthPlus": {},
               "radiusPlus": {}
+            },
+            "normal": {
+              "animation": {}
             },
             "select": {
               "fillColor": {},
@@ -919,6 +948,9 @@ var Highcharts = {
             },
             "lineWidthPlus": {},
             "marker": {}
+          },
+          "normal": {
+            "animation": {}
           },
           "select": {
             "marker": {}
@@ -955,6 +987,7 @@ var Highcharts = {
         "findNearestPointBy": {},
         "lineWidth": {},
         "marker": {
+          "enabledThreshold": {},
           "lineColor": {},
           "lineWidth": {},
           "radius": {},
@@ -966,6 +999,9 @@ var Highcharts = {
               "enabled": {},
               "lineWidthPlus": {},
               "radiusPlus": {}
+            },
+            "normal": {
+              "animation": {}
             },
             "select": {
               "fillColor": {},
@@ -992,6 +1028,9 @@ var Highcharts = {
             "lineWidthPlus": {},
             "marker": {}
           },
+          "normal": {
+            "animation": {}
+          },
           "select": {
             "marker": {}
           }
@@ -1001,6 +1040,11 @@ var Highcharts = {
       }
     },
     "rangeSelector": {
+      "buttonPosition": {
+        "align": {},
+        "x": {},
+        "y": {}
+      },
       "buttonTheme": {
         "height": {},
         "padding": {},
@@ -1008,13 +1052,19 @@ var Highcharts = {
         "width": {},
         "zIndex": {}
       },
+      "floating": {},
       "height": {},
       "inputPosition": {
-        "align": {}
+        "align": {},
+        "x": {},
+        "y": {}
       },
       "labelStyle": {
         "color": {}
-      }
+      },
+      "verticalAlign": {},
+      "x": {},
+      "y": {}
     },
     "scrollbar": {
       "barBackgroundColor": {},
@@ -1043,6 +1093,7 @@ var Highcharts = {
       "widthAdjust": {}
     },
     "symbols": {},
+    "time": {},
     "title": {
       "align": {},
       "margin": {},
@@ -1105,6 +1156,7 @@ var Highcharts = {
       "findNearestPointBy": {},
       "lineWidth": {},
       "marker": {
+        "enabledThreshold": {},
         "lineColor": {},
         "lineWidth": {},
         "radius": {},
@@ -1116,6 +1168,9 @@ var Highcharts = {
             "enabled": {},
             "lineWidthPlus": {},
             "radiusPlus": {}
+          },
+          "normal": {
+            "animation": {}
           },
           "select": {
             "fillColor": {},
@@ -1141,6 +1196,9 @@ var Highcharts = {
           },
           "lineWidthPlus": {},
           "marker": {}
+        },
+        "normal": {
+          "animation": {}
         },
         "select": {
           "marker": {}
@@ -1174,6 +1232,7 @@ var Highcharts = {
       "findNearestPointBy": {},
       "lineWidth": {},
       "marker": {
+        "enabledThreshold": {},
         "lineColor": {},
         "lineWidth": {},
         "radius": {},
@@ -1185,6 +1244,9 @@ var Highcharts = {
             "enabled": {},
             "lineWidthPlus": {},
             "radiusPlus": {}
+          },
+          "normal": {
+            "animation": {}
           },
           "select": {
             "fillColor": {},
@@ -1210,6 +1272,9 @@ var Highcharts = {
           },
           "lineWidthPlus": {},
           "marker": {}
+        },
+        "normal": {
+          "animation": {}
         },
         "select": {
           "marker": {}
@@ -1264,14 +1329,15 @@ var Highcharts = {
           "brightness": {},
           "halo": {},
           "lineWidthPlus": {},
-          "marker": {},
-          "shadow": {}
+          "marker": {}
+        },
+        "normal": {
+          "animation": {}
         },
         "select": {
           "borderColor": {},
           "color": {},
-          "marker": {},
-          "shadow": {}
+          "marker": {}
         }
       },
       "stickyTracking": {},
@@ -1328,14 +1394,15 @@ var Highcharts = {
           "halo": {},
           "lineWidth": {},
           "lineWidthPlus": {},
-          "marker": {},
-          "shadow": {}
+          "marker": {}
+        },
+        "normal": {
+          "animation": {}
         },
         "select": {
           "borderColor": {},
           "color": {},
-          "marker": {},
-          "shadow": {}
+          "marker": {}
         }
       },
       "stickyTracking": {},
@@ -1392,14 +1459,15 @@ var Highcharts = {
           "brightness": {},
           "halo": {},
           "lineWidthPlus": {},
-          "marker": {},
-          "shadow": {}
+          "marker": {}
+        },
+        "normal": {
+          "animation": {}
         },
         "select": {
           "borderColor": {},
           "color": {},
-          "marker": {},
-          "shadow": {}
+          "marker": {}
         }
       },
       "stickyTracking": {},
@@ -1410,6 +1478,7 @@ var Highcharts = {
       "turboThreshold": {}
     },
     "flags": {
+      "allowOverlapX": {},
       "allowPointSelect": {},
       "animation": {
         "duration": {}
@@ -1459,14 +1528,15 @@ var Highcharts = {
           "halo": {},
           "lineColor": {},
           "lineWidthPlus": {},
-          "marker": {},
-          "shadow": {}
+          "marker": {}
+        },
+        "normal": {
+          "animation": {}
         },
         "select": {
           "borderColor": {},
           "color": {},
-          "marker": {},
-          "shadow": {}
+          "marker": {}
         }
       },
       "stickyTracking": {},
@@ -1507,6 +1577,7 @@ var Highcharts = {
       "findNearestPointBy": {},
       "lineWidth": {},
       "marker": {
+        "enabledThreshold": {},
         "lineColor": {},
         "lineWidth": {},
         "radius": {},
@@ -1518,6 +1589,9 @@ var Highcharts = {
             "enabled": {},
             "lineWidthPlus": {},
             "radiusPlus": {}
+          },
+          "normal": {
+            "animation": {}
           },
           "select": {
             "fillColor": {},
@@ -1543,6 +1617,9 @@ var Highcharts = {
           },
           "lineWidthPlus": {},
           "marker": {}
+        },
+        "normal": {
+          "animation": {}
         },
         "select": {
           "marker": {}
@@ -1597,14 +1674,15 @@ var Highcharts = {
           "halo": {},
           "lineWidth": {},
           "lineWidthPlus": {},
-          "marker": {},
-          "shadow": {}
+          "marker": {}
+        },
+        "normal": {
+          "animation": {}
         },
         "select": {
           "borderColor": {},
           "color": {},
-          "marker": {},
-          "shadow": {}
+          "marker": {}
         }
       },
       "stickyTracking": {},
@@ -1668,8 +1746,10 @@ var Highcharts = {
             "size": {}
           },
           "lineWidthPlus": {},
-          "marker": {},
-          "shadow": {}
+          "marker": {}
+        },
+        "normal": {
+          "animation": {}
         },
         "select": {
           "marker": {}
@@ -1706,6 +1786,7 @@ var Highcharts = {
       "lineWidth": {},
       "marker": {
         "enabled": {},
+        "enabledThreshold": {},
         "lineColor": {},
         "lineWidth": {},
         "radius": {},
@@ -1717,6 +1798,9 @@ var Highcharts = {
             "enabled": {},
             "lineWidthPlus": {},
             "radiusPlus": {}
+          },
+          "normal": {
+            "animation": {}
           },
           "select": {
             "fillColor": {},
@@ -1742,6 +1826,9 @@ var Highcharts = {
           },
           "lineWidthPlus": {},
           "marker": {}
+        },
+        "normal": {
+          "animation": {}
         },
         "select": {
           "marker": {}
@@ -1778,6 +1865,7 @@ var Highcharts = {
       "findNearestPointBy": {},
       "lineWidth": {},
       "marker": {
+        "enabledThreshold": {},
         "lineColor": {},
         "lineWidth": {},
         "radius": {},
@@ -1789,6 +1877,9 @@ var Highcharts = {
             "enabled": {},
             "lineWidthPlus": {},
             "radiusPlus": {}
+          },
+          "normal": {
+            "animation": {}
           },
           "select": {
             "fillColor": {},
@@ -1814,6 +1905,9 @@ var Highcharts = {
           },
           "lineWidthPlus": {},
           "marker": {}
+        },
+        "normal": {
+          "animation": {}
         },
         "select": {
           "marker": {}
@@ -1841,21 +1935,24 @@ var Highcharts = {
   "getMagnitude": function () {},
   "getOptions": function () {},
   "getStyle": function () {},
-  "getTZOffset": function () {},
   "grep": function () {},
   "hasBidiBug": {},
   "hasTouch": {},
   "inArray": function () {},
   "isArray": function () {},
+  "isChrome": {},
   "isClass": function () {},
   "isDOMElement": function () {},
   "isFirefox": {},
   "isMS": {},
   "isNumber": function () {},
   "isObject": function () {},
+  "isPrototype": function () {},
+  "isSafari": {},
   "isString": function () {},
   "isTouchDevice": {},
   "isWebKit": {},
+  "keys": function () {},
   "map": function () {},
   "marginNames": {},
   "merge": function () {},
@@ -1868,6 +1965,7 @@ var Highcharts = {
   "pad": function () {},
   "pick": function () {},
   "product": {},
+  "reduce": function () {},
   "relativeLength": function () {},
   "removeEvent": function () {},
   "seriesType": function () {},
@@ -1894,6 +1992,22 @@ var Highcharts = {
   "swapXY": function () {},
   "symbolSizes": {},
   "syncTimeout": function () {},
+  "time": {
+    "Date": function () {},
+    "dateFormat": function () {},
+    "defaultOptions": {},
+    "get": function () {},
+    "getTimeTicks": function () {},
+    "getTimezoneOffset": function () {},
+    "makeTime": function () {},
+    "options": {},
+    "set": function () {},
+    "timezoneOffset": {},
+    "timezoneOffsetFunction": function () {},
+    "update": function () {},
+    "useUTC": {},
+    "variableTimezone": {}
+  },
   "timeUnits": {
     "day": {},
     "hour": {},
@@ -1904,9 +2018,9 @@ var Highcharts = {
     "week": {},
     "year": {}
   },
+  "timers": {},
   "uniqueKey": function () {},
   "version": {},
-  "vml": {},
   "win": {},
   "wrap": function () {}
 };
@@ -1940,8 +2054,10 @@ Highcharts.Axis.prototype = {
   "getLinePath": function () {},
   "getLinearTickPositions": function () {},
   "getLogTickPositions": function () {},
+  "getMinorTickInterval": function () {},
   "getMinorTickPositions": function () {},
   "getOffset": function () {},
+  "getOverscrollPositions": function () {},
   "getPlotBandPath": function () {},
   "getPlotLinePath": function () {},
   "getSeriesExtremes": function () {},
@@ -1965,6 +2081,7 @@ Highcharts.Axis.prototype = {
   "normalizeTimeTickInterval": function () {},
   "ordinal2lin": function () {},
   "postProcessTickInterval": function () {},
+  "protoEvents": function () {},
   "redraw": function () {},
   "remove": function () {},
   "removePlotBand": function () {},
@@ -2004,6 +2121,7 @@ Highcharts.Chart.prototype = {
   "addAxis": function () {},
   "addCredits": function () {},
   "addSeries": function () {},
+  "adjustPlotArea": function () {},
   "callbacks": function () {},
   "currentOptions": function () {},
   "destroy": function () {},
@@ -2025,7 +2143,6 @@ Highcharts.Chart.prototype = {
   "initReflow": function () {},
   "initSeries": function () {},
   "isInsidePlot": function () {},
-  "isReadyToRender": function () {},
   "layOutTitles": function () {},
   "linkSeries": function () {},
   "matchResponsiveRule": function () {},
@@ -2035,6 +2152,7 @@ Highcharts.Chart.prototype = {
   "propFromSeries": function () {},
   "propsRequireDirtyBox": function () {},
   "propsRequireUpdateSeries": function () {},
+  "protoEvents": function () {},
   "redraw": function () {},
   "reflow": function () {},
   "render": function () {},
@@ -2078,6 +2196,7 @@ Highcharts.Legend.prototype = {
   "createCheckboxForItem": function () {},
   "destroy": function () {},
   "destroyItem": function () {},
+  "getAlignment": function () {},
   "getAllItems": function () {},
   "handleOverflow": function () {},
   "init": function () {},
@@ -2100,7 +2219,6 @@ Highcharts.Navigator.prototype = {
   "drawHandle": function () {},
   "drawMasks": function () {},
   "drawOutline": function () {},
-  "getHandlePath": function () {},
   "getPartsEvents": function () {},
   "getUnionExtremes": function () {},
   "handlesMousedown": function () {},
@@ -2138,6 +2256,7 @@ Highcharts.Point.prototype = {
   "onMouseOut": function () {},
   "onMouseOver": function () {},
   "optionsToObject": function () {},
+  "protoEvents": function () {},
   "remove": function () {},
   "select": function () {},
   "setState": function () {},
@@ -2188,6 +2307,7 @@ Highcharts.RangeSelector.prototype = {
   "defaultButtons": function () {},
   "destroy": function () {},
   "drawInput": function () {},
+  "getHeight": function () {},
   "getPosition": function () {},
   "getYTDExtremes": function () {},
   "hideInput": function () {},
@@ -2196,6 +2316,7 @@ Highcharts.RangeSelector.prototype = {
   "setInputValue": function () {},
   "setSelected": function () {},
   "showInput": function () {},
+  "titleCollision": function () {},
   "update": function () {},
   "updateButtonStates": function () {}
 };
@@ -2213,18 +2334,19 @@ Highcharts.Renderer.prototype = {
   "crispPolyLine": function () {},
   "destroy": function () {},
   "draw": function () {},
+  "escapes": function () {},
   "fontMetrics": function () {},
   "g": function () {},
   "getContrast": function () {},
   "getRadialAttr": function () {},
   "getSpanWidth": function () {},
   "getStyle": function () {},
+  "getTransformKey": function () {},
   "html": function () {},
   "image": function () {},
   "init": function () {},
   "isHidden": function () {},
   "label": function () {},
-  "measureSpanWidth": function () {},
   "path": function () {},
   "rect": function () {},
   "rotCorr": function () {},
@@ -2265,10 +2387,13 @@ Highcharts.SVGElement.prototype = {
   "htmlUpdateTransform": function () {},
   "init": function () {},
   "invert": function () {},
+  "matrixSetter": function () {},
   "on": function () {},
   "opacity": function () {},
   "opacitySetter": function () {},
   "removeClass": function () {},
+  "rotationOriginXSetter": function () {},
+  "rotationOriginYSetter": function () {},
   "rotationSetter": function () {},
   "safeRemoveChild": function () {},
   "scaleXSetter": function () {},
@@ -2310,18 +2435,19 @@ Highcharts.SVGRenderer.prototype = {
   "crispPolyLine": function () {},
   "destroy": function () {},
   "draw": function () {},
+  "escapes": function () {},
   "fontMetrics": function () {},
   "g": function () {},
   "getContrast": function () {},
   "getRadialAttr": function () {},
   "getSpanWidth": function () {},
   "getStyle": function () {},
+  "getTransformKey": function () {},
   "html": function () {},
   "image": function () {},
   "init": function () {},
   "isHidden": function () {},
   "label": function () {},
-  "measureSpanWidth": function () {},
   "path": function () {},
   "rect": function () {},
   "rotCorr": function () {},
@@ -2373,6 +2499,7 @@ Highcharts.Series.prototype = {
   "getCyclic": function () {},
   "getExtremes": function () {},
   "getGraphPath": function () {},
+  "getName": function () {},
   "getPlotBox": function () {},
   "getStackIndicator": function () {},
   "getSymbol": function () {},
@@ -2386,13 +2513,16 @@ Highcharts.Series.prototype = {
   "justifyDataLabel": function () {},
   "kdAxisArray": function () {},
   "markerAttribs": function () {},
+  "modifyStacks": function () {},
   "onMouseOut": function () {},
   "onMouseOver": function () {},
   "parallelArrays": function () {},
+  "percentStacker": function () {},
   "plotGroup": function () {},
   "pointAttribs": function () {},
   "pointClass": function () {},
   "processData": function () {},
+  "protoEvents": function () {},
   "redraw": function () {},
   "remove": function () {},
   "removePoint": function () {},
@@ -2405,7 +2535,6 @@ Highcharts.Series.prototype = {
   "setCompare": function () {},
   "setData": function () {},
   "setOptions": function () {},
-  "setPercentStacks": function () {},
   "setStackedPoints": function () {},
   "setState": function () {},
   "setVisible": function () {},
@@ -2434,6 +2563,14 @@ Highcharts.Tick.prototype = {
   "renderGridLine": function () {},
   "renderLabel": function () {},
   "renderMark": function () {}
+};
+Highcharts.Time.prototype = {
+  "dateFormat": function () {},
+  "defaultOptions": function () {},
+  "getTimeTicks": function () {},
+  "makeTime": function () {},
+  "timezoneOffsetFunction": function () {},
+  "update": function () {}
 };
 Highcharts.Tooltip.prototype = {
   "bodyFormatter": function () {},
@@ -2482,6 +2619,7 @@ Highcharts.seriesTypes.area.prototype = {
   "getCyclic": function () {},
   "getExtremes": function () {},
   "getGraphPath": function () {},
+  "getName": function () {},
   "getPlotBox": function () {},
   "getStackIndicator": function () {},
   "getStackPoints": function () {},
@@ -2496,13 +2634,16 @@ Highcharts.seriesTypes.area.prototype = {
   "justifyDataLabel": function () {},
   "kdAxisArray": function () {},
   "markerAttribs": function () {},
+  "modifyStacks": function () {},
   "onMouseOut": function () {},
   "onMouseOver": function () {},
   "parallelArrays": function () {},
+  "percentStacker": function () {},
   "plotGroup": function () {},
   "pointAttribs": function () {},
   "pointClass": function () {},
   "processData": function () {},
+  "protoEvents": function () {},
   "redraw": function () {},
   "remove": function () {},
   "removePoint": function () {},
@@ -2515,7 +2656,6 @@ Highcharts.seriesTypes.area.prototype = {
   "setCompare": function () {},
   "setData": function () {},
   "setOptions": function () {},
-  "setPercentStacks": function () {},
   "setStackedPoints": function () {},
   "setState": function () {},
   "setVisible": function () {},
@@ -2555,6 +2695,7 @@ Highcharts.seriesTypes.areaspline.prototype = {
   "getCyclic": function () {},
   "getExtremes": function () {},
   "getGraphPath": function () {},
+  "getName": function () {},
   "getPlotBox": function () {},
   "getPointSpline": function () {},
   "getStackIndicator": function () {},
@@ -2570,13 +2711,16 @@ Highcharts.seriesTypes.areaspline.prototype = {
   "justifyDataLabel": function () {},
   "kdAxisArray": function () {},
   "markerAttribs": function () {},
+  "modifyStacks": function () {},
   "onMouseOut": function () {},
   "onMouseOver": function () {},
   "parallelArrays": function () {},
+  "percentStacker": function () {},
   "plotGroup": function () {},
   "pointAttribs": function () {},
   "pointClass": function () {},
   "processData": function () {},
+  "protoEvents": function () {},
   "redraw": function () {},
   "remove": function () {},
   "removePoint": function () {},
@@ -2589,7 +2733,6 @@ Highcharts.seriesTypes.areaspline.prototype = {
   "setCompare": function () {},
   "setData": function () {},
   "setOptions": function () {},
-  "setPercentStacks": function () {},
   "setStackedPoints": function () {},
   "setState": function () {},
   "setVisible": function () {},
@@ -2631,6 +2774,7 @@ Highcharts.seriesTypes.bar.prototype = {
   "getCyclic": function () {},
   "getExtremes": function () {},
   "getGraphPath": function () {},
+  "getName": function () {},
   "getPlotBox": function () {},
   "getStackIndicator": function () {},
   "getSymbol": function () {},
@@ -2645,14 +2789,17 @@ Highcharts.seriesTypes.bar.prototype = {
   "justifyDataLabel": function () {},
   "kdAxisArray": function () {},
   "markerAttribs": function () {},
+  "modifyStacks": function () {},
   "negStacks": function () {},
   "onMouseOut": function () {},
   "onMouseOver": function () {},
   "parallelArrays": function () {},
+  "percentStacker": function () {},
   "plotGroup": function () {},
   "pointAttribs": function () {},
   "pointClass": function () {},
   "processData": function () {},
+  "protoEvents": function () {},
   "redraw": function () {},
   "remove": function () {},
   "removePoint": function () {},
@@ -2665,7 +2812,6 @@ Highcharts.seriesTypes.bar.prototype = {
   "setCompare": function () {},
   "setData": function () {},
   "setOptions": function () {},
-  "setPercentStacks": function () {},
   "setStackedPoints": function () {},
   "setState": function () {},
   "setVisible": function () {},
@@ -2708,6 +2854,7 @@ Highcharts.seriesTypes.candlestick.prototype = {
   "getCyclic": function () {},
   "getExtremes": function () {},
   "getGraphPath": function () {},
+  "getName": function () {},
   "getPlotBox": function () {},
   "getStackIndicator": function () {},
   "getSymbol": function () {},
@@ -2721,10 +2868,12 @@ Highcharts.seriesTypes.candlestick.prototype = {
   "justifyDataLabel": function () {},
   "kdAxisArray": function () {},
   "markerAttribs": function () {},
+  "modifyStacks": function () {},
   "negStacks": function () {},
   "onMouseOut": function () {},
   "onMouseOver": function () {},
   "parallelArrays": function () {},
+  "percentStacker": function () {},
   "plotGroup": function () {},
   "pointArrayMap": function () {},
   "pointAttrToOptions": function () {},
@@ -2732,6 +2881,7 @@ Highcharts.seriesTypes.candlestick.prototype = {
   "pointClass": function () {},
   "pointValKey": function () {},
   "processData": function () {},
+  "protoEvents": function () {},
   "redraw": function () {},
   "remove": function () {},
   "removePoint": function () {},
@@ -2744,7 +2894,6 @@ Highcharts.seriesTypes.candlestick.prototype = {
   "setCompare": function () {},
   "setData": function () {},
   "setOptions": function () {},
-  "setPercentStacks": function () {},
   "setStackedPoints": function () {},
   "setState": function () {},
   "setVisible": function () {},
@@ -2788,6 +2937,7 @@ Highcharts.seriesTypes.column.prototype = {
   "getCyclic": function () {},
   "getExtremes": function () {},
   "getGraphPath": function () {},
+  "getName": function () {},
   "getPlotBox": function () {},
   "getStackIndicator": function () {},
   "getSymbol": function () {},
@@ -2801,14 +2951,17 @@ Highcharts.seriesTypes.column.prototype = {
   "justifyDataLabel": function () {},
   "kdAxisArray": function () {},
   "markerAttribs": function () {},
+  "modifyStacks": function () {},
   "negStacks": function () {},
   "onMouseOut": function () {},
   "onMouseOver": function () {},
   "parallelArrays": function () {},
+  "percentStacker": function () {},
   "plotGroup": function () {},
   "pointAttribs": function () {},
   "pointClass": function () {},
   "processData": function () {},
+  "protoEvents": function () {},
   "redraw": function () {},
   "remove": function () {},
   "removePoint": function () {},
@@ -2821,7 +2974,6 @@ Highcharts.seriesTypes.column.prototype = {
   "setCompare": function () {},
   "setData": function () {},
   "setOptions": function () {},
-  "setPercentStacks": function () {},
   "setStackedPoints": function () {},
   "setState": function () {},
   "setVisible": function () {},
@@ -2866,6 +3018,7 @@ Highcharts.seriesTypes.flags.prototype = {
   "getCyclic": function () {},
   "getExtremes": function () {},
   "getGraphPath": function () {},
+  "getName": function () {},
   "getPlotBox": function () {},
   "getStackIndicator": function () {},
   "getSymbol": function () {},
@@ -2879,15 +3032,18 @@ Highcharts.seriesTypes.flags.prototype = {
   "justifyDataLabel": function () {},
   "kdAxisArray": function () {},
   "markerAttribs": function () {},
+  "modifyStacks": function () {},
   "negStacks": function () {},
   "noSharedTooltip": function () {},
   "onMouseOut": function () {},
   "onMouseOver": function () {},
   "parallelArrays": function () {},
+  "percentStacker": function () {},
   "plotGroup": function () {},
   "pointAttribs": function () {},
   "pointClass": function () {},
   "processData": function () {},
+  "protoEvents": function () {},
   "redraw": function () {},
   "remove": function () {},
   "removePoint": function () {},
@@ -2900,7 +3056,6 @@ Highcharts.seriesTypes.flags.prototype = {
   "setCompare": function () {},
   "setData": function () {},
   "setOptions": function () {},
-  "setPercentStacks": function () {},
   "setStackedPoints": function () {},
   "setState": function () {},
   "setVisible": function () {},
@@ -2941,6 +3096,7 @@ Highcharts.seriesTypes.line.prototype = {
   "getCyclic": function () {},
   "getExtremes": function () {},
   "getGraphPath": function () {},
+  "getName": function () {},
   "getPlotBox": function () {},
   "getStackIndicator": function () {},
   "getSymbol": function () {},
@@ -2954,13 +3110,16 @@ Highcharts.seriesTypes.line.prototype = {
   "justifyDataLabel": function () {},
   "kdAxisArray": function () {},
   "markerAttribs": function () {},
+  "modifyStacks": function () {},
   "onMouseOut": function () {},
   "onMouseOver": function () {},
   "parallelArrays": function () {},
+  "percentStacker": function () {},
   "plotGroup": function () {},
   "pointAttribs": function () {},
   "pointClass": function () {},
   "processData": function () {},
+  "protoEvents": function () {},
   "redraw": function () {},
   "remove": function () {},
   "removePoint": function () {},
@@ -2973,7 +3132,6 @@ Highcharts.seriesTypes.line.prototype = {
   "setCompare": function () {},
   "setData": function () {},
   "setOptions": function () {},
-  "setPercentStacks": function () {},
   "setStackedPoints": function () {},
   "setState": function () {},
   "setVisible": function () {},
@@ -3015,6 +3173,7 @@ Highcharts.seriesTypes.ohlc.prototype = {
   "getCyclic": function () {},
   "getExtremes": function () {},
   "getGraphPath": function () {},
+  "getName": function () {},
   "getPlotBox": function () {},
   "getStackIndicator": function () {},
   "getSymbol": function () {},
@@ -3028,10 +3187,12 @@ Highcharts.seriesTypes.ohlc.prototype = {
   "justifyDataLabel": function () {},
   "kdAxisArray": function () {},
   "markerAttribs": function () {},
+  "modifyStacks": function () {},
   "negStacks": function () {},
   "onMouseOut": function () {},
   "onMouseOver": function () {},
   "parallelArrays": function () {},
+  "percentStacker": function () {},
   "plotGroup": function () {},
   "pointArrayMap": function () {},
   "pointAttrToOptions": function () {},
@@ -3039,6 +3200,7 @@ Highcharts.seriesTypes.ohlc.prototype = {
   "pointClass": function () {},
   "pointValKey": function () {},
   "processData": function () {},
+  "protoEvents": function () {},
   "redraw": function () {},
   "remove": function () {},
   "removePoint": function () {},
@@ -3051,7 +3213,6 @@ Highcharts.seriesTypes.ohlc.prototype = {
   "setCompare": function () {},
   "setData": function () {},
   "setOptions": function () {},
-  "setPercentStacks": function () {},
   "setStackedPoints": function () {},
   "setState": function () {},
   "setVisible": function () {},
@@ -3094,6 +3255,7 @@ Highcharts.seriesTypes.pie.prototype = {
   "getCyclic": function () {},
   "getExtremes": function () {},
   "getGraphPath": function () {},
+  "getName": function () {},
   "getPlotBox": function () {},
   "getStackIndicator": function () {},
   "getSymbol": function () {},
@@ -3107,15 +3269,18 @@ Highcharts.seriesTypes.pie.prototype = {
   "justifyDataLabel": function () {},
   "kdAxisArray": function () {},
   "markerAttribs": function () {},
+  "modifyStacks": function () {},
   "noSharedTooltip": function () {},
   "onMouseOut": function () {},
   "onMouseOver": function () {},
   "parallelArrays": function () {},
+  "percentStacker": function () {},
   "placeDataLabels": function () {},
   "plotGroup": function () {},
   "pointAttribs": function () {},
   "pointClass": function () {},
   "processData": function () {},
+  "protoEvents": function () {},
   "redraw": function () {},
   "remove": function () {},
   "removePoint": function () {},
@@ -3128,7 +3293,6 @@ Highcharts.seriesTypes.pie.prototype = {
   "setCompare": function () {},
   "setData": function () {},
   "setOptions": function () {},
-  "setPercentStacks": function () {},
   "setStackedPoints": function () {},
   "setState": function () {},
   "setVisible": function () {},
@@ -3171,6 +3335,7 @@ Highcharts.seriesTypes.scatter.prototype = {
   "getCyclic": function () {},
   "getExtremes": function () {},
   "getGraphPath": function () {},
+  "getName": function () {},
   "getPlotBox": function () {},
   "getStackIndicator": function () {},
   "getSymbol": function () {},
@@ -3184,14 +3349,17 @@ Highcharts.seriesTypes.scatter.prototype = {
   "justifyDataLabel": function () {},
   "kdAxisArray": function () {},
   "markerAttribs": function () {},
+  "modifyStacks": function () {},
   "noSharedTooltip": function () {},
   "onMouseOut": function () {},
   "onMouseOver": function () {},
   "parallelArrays": function () {},
+  "percentStacker": function () {},
   "plotGroup": function () {},
   "pointAttribs": function () {},
   "pointClass": function () {},
   "processData": function () {},
+  "protoEvents": function () {},
   "redraw": function () {},
   "remove": function () {},
   "removePoint": function () {},
@@ -3204,7 +3372,6 @@ Highcharts.seriesTypes.scatter.prototype = {
   "setCompare": function () {},
   "setData": function () {},
   "setOptions": function () {},
-  "setPercentStacks": function () {},
   "setStackedPoints": function () {},
   "setState": function () {},
   "setVisible": function () {},
@@ -3245,6 +3412,7 @@ Highcharts.seriesTypes.spline.prototype = {
   "getCyclic": function () {},
   "getExtremes": function () {},
   "getGraphPath": function () {},
+  "getName": function () {},
   "getPlotBox": function () {},
   "getPointSpline": function () {},
   "getStackIndicator": function () {},
@@ -3259,13 +3427,16 @@ Highcharts.seriesTypes.spline.prototype = {
   "justifyDataLabel": function () {},
   "kdAxisArray": function () {},
   "markerAttribs": function () {},
+  "modifyStacks": function () {},
   "onMouseOut": function () {},
   "onMouseOver": function () {},
   "parallelArrays": function () {},
+  "percentStacker": function () {},
   "plotGroup": function () {},
   "pointAttribs": function () {},
   "pointClass": function () {},
   "processData": function () {},
+  "protoEvents": function () {},
   "redraw": function () {},
   "remove": function () {},
   "removePoint": function () {},
@@ -3278,7 +3449,6 @@ Highcharts.seriesTypes.spline.prototype = {
   "setCompare": function () {},
   "setData": function () {},
   "setOptions": function () {},
-  "setPercentStacks": function () {},
   "setStackedPoints": function () {},
   "setState": function () {},
   "setVisible": function () {},
