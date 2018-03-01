@@ -2,7 +2,7 @@
 
 // Loaded JavaScripts:
 // https://github.com/facebook/react/releases/download/v16.0.0/react.production.min.js
-// https://rawgit.com/STRML/react-grid-layout/0.16.0/dist/react-grid-layout.min.js
+// https://rawgit.com/STRML/react-grid-layout/0.16.5/dist/react-grid-layout.min.js
 
 // Reference ns as ReactGridLayout
 var ReactGridLayout = {
@@ -65,6 +65,9 @@ var ReactGridLayout = {
     "className": {},
     "cols": {},
     "compactType": {},
+    "containerPadding": {},
+    "draggableCancel": {},
+    "draggableHandle": {},
     "isDraggable": {},
     "isResizable": {},
     "layout": {},
@@ -79,6 +82,7 @@ var ReactGridLayout = {
     "onResizeStop": function () {},
     "preventCollision": {},
     "rowHeight": {},
+    "style": {},
     "useCSSTransforms": {},
     "verticalCompact": {}
   },
@@ -174,6 +178,7 @@ var ReactGridLayout = {
     "getStatics": function () {},
     "moveElement": function () {},
     "moveElementAwayFromCollision": function () {},
+    "noop": function () {},
     "perc": function () {},
     "setTopLeft": function () {},
     "setTransform": function () {},
