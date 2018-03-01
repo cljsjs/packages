@@ -1,4 +1,4 @@
-(def +lib-version+ "0.16.3")
+(def +lib-version+ "0.16.5")
 (def +version+ (str +lib-version+ "-0"))
 
 (set-env!
