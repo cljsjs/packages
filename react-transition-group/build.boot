@@ -7,7 +7,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "2.2.1")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/react-transition-group
@@ -19,9 +19,9 @@
 
 (deftask package []
   (comp
-   (download :url (format "https://unpkg.com/react-transition-group@%s/dist/react-transition-group.js" +lib-version+)
-             :target "cljsjs/react-transition-group/production/react-transition-group.min.inc.js")
    (download :url (format "https://unpkg.com/react-transition-group@%s/dist/react-transition-group.min.js" +lib-version+)
+             :target "cljsjs/react-transition-group/production/react-transition-group.min.inc.js")
+   (download :url (format "https://unpkg.com/react-transition-group@%s/dist/react-transition-group.js" +lib-version+)
              :target "cljsjs/react-transition-group/development/react-transition-group.inc.js")
    (deps-cljs :provides ["react-transition-group" "react-transition-group/TransitionGroup" "react-transition-group/CSSTransition" "react-transition-group/Transition"
                          "cljsjs.react-transition-group"]
