@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-transition-group "2.2.1-0"] ;; latest release
+[cljsjs/react-transition-group "2.2.1-1"] ;; latest release
 ```
 [](/dependency)
 
