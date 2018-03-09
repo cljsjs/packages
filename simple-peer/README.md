@@ -31,5 +31,8 @@ you can require the packaged library like so:
 
 ```
 
+See [simple-peers js github page]: https://github.com/feross/simple-peer
+or example.cljs in this repo for usage instructions.
+
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps
