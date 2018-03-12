@@ -156,6 +156,7 @@ var vega = {
   "array": function () {},
   "bin": function () {},
   "bootstrapCI": function () {},
+  "boundClip": function () {},
   "boundContext": {
     "arc": function () {},
     "beginPath": function () {},
@@ -169,7 +170,6 @@ var vega = {
   "boundItem": function () {},
   "boundMark": function () {},
   "boundStroke": function () {},
-  "canvas": function () {},
   "changeset": function () {},
   "closeTag": function () {},
   "compare": function () {},
@@ -314,8 +314,7 @@ var vega = {
     "contour": {
       "Definition": {
         "metadata": {
-          "generates": {},
-          "source": {}
+          "generates": {}
         },
         "params": {},
         "type": {}
@@ -334,9 +333,7 @@ var vega = {
     "cross": {
       "Definition": {
         "metadata": {
-          "changes": {},
-          "generates": {},
-          "source": {}
+          "generates": {}
         },
         "params": {},
         "type": {}
@@ -353,8 +350,7 @@ var vega = {
     "density": {
       "Definition": {
         "metadata": {
-          "generates": {},
-          "source": {}
+          "generates": {}
         },
         "params": {},
         "type": {}
@@ -379,11 +375,21 @@ var vega = {
         "type": {}
       }
     },
+    "flatten": {
+      "Definition": {
+        "metadata": {
+          "generates": {},
+          "source": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
     "fold": {
       "Definition": {
         "metadata": {
-          "changes": {},
-          "generates": {}
+          "generates": {},
+          "source": {}
         },
         "params": {},
         "type": {}
@@ -465,7 +471,8 @@ var vega = {
     "impute": {
       "Definition": {
         "metadata": {
-          "changes": {}
+          "changes": {},
+          "generates": {}
         },
         "params": {},
         "type": {}
@@ -506,9 +513,7 @@ var vega = {
     "nest": {
       "Definition": {
         "metadata": {
-          "changes": {},
           "generates": {},
-          "source": {},
           "treesource": {}
         },
         "params": {},
@@ -546,6 +551,16 @@ var vega = {
         "type": {}
       }
     },
+    "pivot": {
+      "Definition": {
+        "metadata": {
+          "changes": {},
+          "generates": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
     "prefacet": function () {},
     "project": {
       "Definition": {
@@ -571,10 +586,7 @@ var vega = {
     },
     "sample": {
       "Definition": {
-        "metadata": {
-          "changes": {},
-          "source": {}
-        },
+        "metadata": {},
         "params": {},
         "type": {}
       }
@@ -583,8 +595,8 @@ var vega = {
     "sequence": {
       "Definition": {
         "metadata": {
-          "generates": {},
-          "source": {}
+          "changes": {},
+          "generates": {}
         },
         "output": {},
         "params": {},
@@ -724,6 +736,7 @@ vega.Bounds.prototype = {
 };
 vega.CanvasHandler.prototype = {
   "DOMMouseScroll": function () {},
+  "_handlerIndex": function () {},
   "canvas": function () {},
   "click": function () {},
   "constructor": function () {},
@@ -814,6 +827,7 @@ vega.GroupItem.prototype = {
   "constructor": function () {}
 };
 vega.Handler.prototype = {
+  "_handlerIndex": function () {},
   "element": function () {},
   "eventName": function () {},
   "handleHref": function () {},
@@ -910,6 +924,7 @@ vega.ResourceLoader.prototype = {
   "sanitizeURL": function () {}
 };
 vega.SVGHandler.prototype = {
+  "_handlerIndex": function () {},
   "constructor": function () {},
   "element": function () {},
   "eventName": function () {},
@@ -989,6 +1004,7 @@ vega.View.prototype = {
   "_resizeView": function () {},
   "add": function () {},
   "addEventListener": function () {},
+  "addResizeListener": function () {},
   "addSignalListener": function () {},
   "autosize": function () {},
   "background": function () {},
@@ -1020,6 +1036,7 @@ vega.View.prototype = {
   "rank": function () {},
   "remove": function () {},
   "removeEventListener": function () {},
+  "removeResizeListener": function () {},
   "removeSignalListener": function () {},
   "render": function () {},
   "renderer": function () {},
@@ -1258,6 +1275,18 @@ vega.transforms.field.prototype = {
   "targets": function () {}
 };
 vega.transforms.filter.prototype = {
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
+};
+vega.transforms.flatten.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1577,6 +1606,29 @@ vega.transforms.pie.prototype = {
   "marshall": function () {},
   "modified": function () {},
   "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
+};
+vega.transforms.pivot.prototype = {
+  "_transform": function () {},
+  "add": function () {},
+  "cell": function () {},
+  "cellkey": function () {},
+  "celltuple": function () {},
+  "changes": function () {},
+  "constructor": function () {},
+  "cross": function () {},
+  "evaluate": function () {},
+  "init": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "newcell": function () {},
+  "newtuple": function () {},
+  "parameters": function () {},
+  "rem": function () {},
   "run": function () {},
   "set": function () {},
   "skip": function () {},

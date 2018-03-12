@@ -43,6 +43,7 @@ var vl = {
       "COLOR": {},
       "COLUMN": {},
       "DETAIL": {},
+      "HREF": {},
       "OPACITY": {},
       "ORDER": {},
       "ROW": {},
@@ -56,6 +57,7 @@ var vl = {
       "Y2": {}
     },
     "DETAIL": {},
+    "HREF": {},
     "NONPOSITION_CHANNELS": {},
     "NONPOSITION_SCALE_CHANNELS": {},
     "OPACITY": {},
@@ -94,10 +96,7 @@ var vl = {
   "config": {
     "defaultConfig": {
       "area": {},
-      "axis": {
-        "domainColor": {},
-        "tickColor": {}
-      },
+      "axis": {},
       "axisBand": {},
       "axisBottom": {},
       "axisLeft": {},
@@ -112,6 +111,7 @@ var vl = {
         "continuousBandSize": {}
       },
       "box": {
+        "extent": {},
         "size": {}
       },
       "boxMid": {
@@ -120,6 +120,7 @@ var vl = {
       "boxWhisker": {},
       "circle": {},
       "countTitle": {},
+      "geoshape": {},
       "invalidValues": {},
       "legend": {},
       "line": {},
@@ -128,6 +129,7 @@ var vl = {
       },
       "padding": {},
       "point": {},
+      "projection": {},
       "rect": {},
       "rule": {
         "color": {}
@@ -225,12 +227,12 @@ var vl = {
     "channelCompatibility": function () {},
     "defaultTitleFormatter": function () {},
     "defaultType": function () {},
-    "field": function () {},
     "functionalTitleFormatter": function () {},
     "getFieldDef": function () {},
     "hasConditionalFieldDef": function () {},
     "hasConditionalValueDef": function () {},
     "isConditionalDef": function () {},
+    "isConditionalSelection": function () {},
     "isContinuous": function () {},
     "isCount": function () {},
     "isDiscrete": function () {},
@@ -247,7 +249,8 @@ var vl = {
     "resetTitleFormatter": function () {},
     "setTitleFormatter": function () {},
     "title": function () {},
-    "verbalTitleFormatter": function () {}
+    "verbalTitleFormatter": function () {},
+    "vgField": function () {}
   },
   "legend": {
     "LEGEND_PROPERTIES": {},
@@ -260,11 +263,13 @@ var vl = {
     "CIRCLE": {},
     "FILL_CONFIG": {},
     "FILL_STROKE_CONFIG": {},
+    "GEOSHAPE": {},
     "LINE": {},
     "Mark": {
       "AREA": {},
       "BAR": {},
       "CIRCLE": {},
+      "GEOSHAPE": {},
       "LINE": {},
       "POINT": {},
       "RECT": {},
@@ -343,7 +348,6 @@ var vl = {
       "rangeStep": {},
       "textXRangeStep": {}
     },
-    "getScaleCategory": function () {},
     "hasContinuousDomain": function () {},
     "hasDiscreteDomain": function () {},
     "isBinScale": function () {},
@@ -446,11 +450,17 @@ var vl = {
     "normalizeTransform": function () {}
   },
   "type": {
+    "GEOJSON": {},
+    "LATITUDE": {},
+    "LONGITUDE": {},
     "NOMINAL": {},
     "ORDINAL": {},
     "QUANTITATIVE": {},
     "TEMPORAL": {},
     "Type": {
+      "GEOJSON": {},
+      "LATITUDE": {},
+      "LONGITUDE": {},
       "NOMINAL": {},
       "ORDINAL": {},
       "QUANTITATIVE": {},
@@ -471,23 +481,16 @@ var vl = {
     "flatten": function () {},
     "hasIntersection": function () {},
     "hash": function () {},
-    "isArray": function () {},
     "isBoolean": function () {},
-    "isNumber": function () {},
     "isNumeric": function () {},
-    "isObject": function () {},
-    "isString": function () {},
     "keys": function () {},
     "logicalExpr": function () {},
     "mergeDeep": function () {},
     "omit": function () {},
     "pick": function () {},
     "some": function () {},
-    "splitAccessPath": function () {},
-    "stringValue": function () {},
+    "stringify": function () {},
     "titlecase": function () {},
-    "toSet": function () {},
-    "truncate": function () {},
     "union": function () {},
     "unique": function () {},
     "vals": function () {},
@@ -526,6 +529,13 @@ var vl = {
         "size": {},
         "x": {},
         "y": {}
+      },
+      "geoshape": {
+        "color": {},
+        "column": {},
+        "detail": {},
+        "row": {},
+        "shape": {}
       },
       "line": {
         "color": {},
