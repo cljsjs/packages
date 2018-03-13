@@ -1406,7 +1406,6 @@ var antd = {
     },
     "defaultProps": {
       "choiceTransitionName": {},
-      "dropdownClassName": {},
       "prefixCls": {},
       "showSearch": {},
       "transitionName": {}
