@@ -7,3 +7,9 @@ leaflet/         @Deraen
 leaflet-fullscreen/ @Deraen
 react-leaflet/   @Deraen
 prop-types/      @Deraen
+react-transition-group/    @Deraen
+react-transition-group_1/  @Deraen
+
+highcharts/        @Miikka
+highstock/         @Miikka
+react-grid-layout/ @Miikka
