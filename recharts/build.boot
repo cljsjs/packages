@@ -1,9 +1,9 @@
 (set-env!
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]
-                 [cljsjs/react "15.6.2-4"]
-                 [cljsjs/react-transition-group "2.2.0-0"]
-                 [cljsjs/react-dom "15.6.2-4"]
+                 [cljsjs/react "16.2.0-3"]
+                 [cljsjs/react-dom "16.2.0-3"]
+                 [cljsjs/react-transition-group "2.2.1-1"]
                  [cljsjs/prop-types "15.6.0-0"]])
 
 (require '[boot.core :as c]
@@ -12,7 +12,7 @@
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "1.0.0-beta.10")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/recharts
