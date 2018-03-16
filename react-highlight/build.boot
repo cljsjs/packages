@@ -2,6 +2,7 @@
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]
                   [cljsjs/react "15.3.0-0"]
+                  [cljsjs/prop-types "15.6.0-0"]
                   [cljsjs/highlight "9.6.0-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
@@ -10,7 +11,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "1.0.5")
+(def +lib-version+ "1.0.7")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "react-highlight.js-%s" +lib-version+))
 
@@ -18,7 +19,7 @@
  pom  {:project     'cljsjs/react-highlight
        :version     +version+
        :description "A simple React wrapper around the Highlight.js library"
-       :url         "https://github.com/bvaughn/react-highlight.js"
+       :url         "https://github.com/danielcompton/react-highlight.js"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
@@ -50,8 +51,8 @@
                 (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 (deftask download-react-highlight []
-  (download :url (str "https://github.com/bvaughn/react-highlight.js/archive/" +lib-version+ ".zip")
-            :checksum "8a6903d6db1d51416fd7e19a4dd64ba7"
+  (download :url (str "https://github.com/danielcompton/react-highlight.js/archive/" +lib-version+ ".zip")
+            :checksum "0A03CD61E43498E4A1FB381808AE72A9"
             :unzip true))
 
 (deftask package []
@@ -67,6 +68,7 @@
 
     (deps-cljs :name "cljsjs.react-highlight"
                :requires ["cljsjs.react"
+                          "cljsjs.prop-types"
                           "cljsjs.highlight"])
     (pom)
     (jar)))
