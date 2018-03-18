@@ -4,7 +4,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/dataloader "1.4.0"] ;; latest release
+[cljsjs/dataloader "1.4.0-0"] ;; latest release
 ```
 [](/dependency)
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
