@@ -1,0 +1,25 @@
+{
+  "name": "connect",
+  "version": "0.6.2",
+  "author": "0xproject",
+  "license": "AL",
+  "description": "",
+  "dependencies": {
+    "@0xproject/connect": "^0.6.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "cross-env": "^3.1.4",
+    "externs-generator": "^0.3.3",
+    "json-loader": "^0.5.7",
+    "webpack": "^1.13.2"
+  },
+  "scripts": {
+    "bundle": "cross-env NODE_ENV=production webpack --config webpack.bundle.config.js",
+    "generate-extern": "generate-extern -f dist/connect.js -n connect -o dist/connect.ext.js"
+  }
+}
