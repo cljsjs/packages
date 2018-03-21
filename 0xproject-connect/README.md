@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/zeroxproject-connect "0.6.6-0"] ;; latest release
+[cljsjs/0xproject-connect "0.6.6-0"] ;; latest release
 ```
 [](/dependency)
 
