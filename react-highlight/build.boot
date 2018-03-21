@@ -5,70 +5,28 @@
                   [cljsjs/prop-types "15.6.0-0"]
                   [cljsjs/highlight "9.6.0-0"]])
 
-(require '[cljsjs.boot-cljsjs.packaging :refer :all]
-         '[boot.core :as boot]
-         '[boot.tmpdir :as tmpd]
-         '[clojure.java.io :as io]
-         '[boot.util :refer [sh]])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "1.0.7")
 (def +version+ (str +lib-version+ "-0"))
-(def +lib-folder+ (format "react-highlight.js-%s" +lib-version+))
 
 (task-options!
  pom  {:project     'cljsjs/react-highlight
        :version     +version+
        :description "A simple React wrapper around the Highlight.js library"
-       :url         "https://github.com/danielcompton/react-highlight.js"
+       :url         "https://github.com/bvaughn/react-highlight.js"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
-(require '[boot.core :as c]
-         '[boot.tmpdir :as tmpd]
-         '[clojure.java.io :as io]
-         '[clojure.string :as string])
-
-(def main-file-name "main.js")
-
-(deftask build []
-         (let [tmp (boot/tmp-dir!)]
-              (with-pre-wrap
-                fileset
-                (doseq [f (boot/input-files fileset)]
-                       (let [target (io/file tmp (tmpd/path f))]
-                            (io/make-parents target)
-                            (io/copy (tmpd/file f) target)))
-                (io/copy
-                  (io/file tmp main-file-name)
-                  (io/file tmp +lib-folder+ main-file-name))
-                (io/copy
-                  (io/file tmp "webpack.config.js")
-                  (io/file tmp +lib-folder+ "webpack-cljsjs.config.js"))
-                (binding [*sh-dir* (str (io/file tmp +lib-folder+))]
-                         ((sh "npm" "install" "--ignore-scripts"))
-                         ((sh "npm" "install" "webpack"))
-                         ((sh "./node_modules/.bin/webpack" "--config" "webpack-cljsjs.config.js")))
-                (-> fileset (boot/add-resource tmp) boot/commit!))))
-
-(deftask download-react-highlight []
-  (download :url (str "https://github.com/danielcompton/react-highlight.js/archive/" +lib-version+ ".zip")
-            :checksum "0A03CD61E43498E4A1FB381808AE72A9"
-            :unzip true))
-
 (deftask package []
-  (comp
-    (download-react-highlight)
-    (build)
-    (sift :move
-          {#"^react-highlight\.js.*[/ \\]dist[/ \\]main.js$"
-           "cljsjs/react-highlight/development/react-highlight.inc.js"})
-    (minify :in  "cljsjs/react-highlight/development/react-highlight.inc.js"
-            :out "cljsjs/react-highlight/development/react-highlight.min.inc.js")
-    (sift :include #{#"^cljsjs"})
-
-    (deps-cljs :name "cljsjs.react-highlight"
-               :requires ["cljsjs.react"
-                          "cljsjs.prop-types"
-                          "cljsjs.highlight"])
-    (pom)
-    (jar)))
+         (comp
+           (download :url (format "https://unpkg.com/react-highlight.js@%s/dist/main.js" +lib-version+)
+                     :target "cljsjs/prop-types/development/prop-types.inc.js")
+           (minify :in "cljsjs/prop-types/development/prop-types.inc.js"
+                   :out "cljsjs/prop-types/development/prop-types.min.inc.js")
+           (deps-cljs :name "cljsjs.react-highlight"
+                      :requires ["cljsjs.react"
+                                 "cljsjs.prop-types"
+                                 "cljsjs.highlight"])
+           (pom)
+           (jar)))
