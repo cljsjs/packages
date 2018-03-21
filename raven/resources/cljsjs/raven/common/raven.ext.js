@@ -76,6 +76,7 @@ var Raven = {
   "m": {
     "autoBreadcrumbs": {},
     "collectWindowErrors": {},
+    "captureUnhandledRejections": {},
     "headers": {},
     "ignoreErrors": {},
     "ignoreUrls": {},
