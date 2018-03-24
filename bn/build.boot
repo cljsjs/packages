@@ -17,8 +17,8 @@
 
 (deftask package []
   (comp
-    (download :url "https://wzrd.in/standalone/bn.js@4.11.8")
-    (sift :move {#"^bn.js@4.11.8" "cljsjs/bn/development/bn.inc.js"})
+    (download :url (str "https://wzrd.in/standalone/bn.js@" +lib-version+))
+    (sift :move {(re-pattern (str "^bn.js@" +lib-version+)) "cljsjs/bn/development/bn.inc.js"})
     (minify :in "cljsjs/bn/development/bn.inc.js"
             :out "cljsjs/bn/production/bn.min.inc.js")
     (sift :include #{#"^cljsjs"})
