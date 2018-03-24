@@ -17,8 +17,8 @@
 
 (deftask package []
   (comp
-    (download :url "https://wzrd.in/standalone/hash.js@1.1.3")
-    (sift :move {#"^hash.js@1.1.3" "cljsjs/hash/development/hash.inc.js"})
+    (download :url (str "https://wzrd.in/standalone/hash.js@" +lib-version+))
+    (sift :move {(re-pattern (str "^hash.js@" +lib-version+)) "cljsjs/hash/development/hash.inc.js"})
     (minify :in "cljsjs/hash/development/hash.inc.js"
             :out "cljsjs/hash/production/hash.min.inc.js")
     (sift :include #{#"^cljsjs"})
