@@ -17,8 +17,8 @@
 
 (deftask package []
   (comp
-    (download :url "https://wzrd.in/standalone/elliptic@6.4.0")
-    (sift :move {#"^elliptic@6.4.0" "cljsjs/elliptic/development/elliptic.inc.js"})
+    (download :url (str "https://wzrd.in/standalone/elliptic@" +lib-version+))
+    (sift :move {(re-pattern (str "^elliptic@" +lib-version+)) "cljsjs/elliptic/development/elliptic.inc.js"})
     (minify :in "cljsjs/elliptic/development/elliptic.inc.js"
             :out "cljsjs/elliptic/production/elliptic.min.inc.js")
     (sift :include #{#"^cljsjs"})
