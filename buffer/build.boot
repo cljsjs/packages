@@ -17,8 +17,8 @@
 
 (deftask package []
   (comp
-    (download :url "https://wzrd.in/standalone/buffer@5.1.0")
-    (sift :move {#"^buffer@5.1.0" "cljsjs/buffer/development/buffer.inc.js"})
+    (download :url (str "https://wzrd.in/standalone/buffer@" +lib-version+))
+    (sift :move {(re-pattern (str "^buffer@" +lib-version+)) "cljsjs/buffer/development/buffer.inc.js"})
     (minify :in "cljsjs/buffer/development/buffer.inc.js"
             :out "cljsjs/buffer/production/buffer.min.inc.js")
     (sift :include #{#"^cljsjs"})
