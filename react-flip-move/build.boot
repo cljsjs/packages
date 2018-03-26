@@ -9,10 +9,8 @@
          '[boot.util :refer [sh]]
          '[clojure.string :as str])
 
-(def +lib-version+ "2.9.17")
+(def +lib-version+ "3.0.1")
 (def +version+ (str +lib-version+ "-0"))
-(def +expected-checksum+ "87472cee553d0dbe9880005107dd6cc1")
-(def +expected-checksum-min+ "deca2909caf12ddac7c0ae1c6d545b50")
 
 (task-options!
   pom  {:project     'cljsjs/react-flip-move
@@ -40,10 +38,8 @@
 
 (deftask package []
   (comp
-    (download :url (str "https://unpkg.com/react-flip-move@" +lib-version+ "/dist/react-flip-move.js")
-              :checksum +expected-checksum+)
-    (download :url (str "https://unpkg.com/react-flip-move@" +lib-version+ "/dist/react-flip-move.min.js")
-              :checksum +expected-checksum-min+)
+    (download :url (str "https://unpkg.com/react-flip-move@" +lib-version+ "/dist/react-flip-move.js"))
+    (download :url (str "https://unpkg.com/react-flip-move@" +lib-version+ "/dist/react-flip-move.min.js"))
 
     (sift :move {#"react-flip-move\.js" "cljsjs/react-flip-move/development/react-flip-move.inc.js"
                  #"react-flip-move.min\.js" "cljsjs/react-flip-move/production/react-flip-move.min.inc.js"})
@@ -54,5 +50,5 @@
                :requires ["cljsjs.react"
                           "cljsjs.react.dom"])
     (pom)
-    (jar)))
-
+    (jar)
+    (validate-checksums)))

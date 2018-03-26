@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-flip-move "2.9.17-0"] ;; latest release
+[cljsjs/react-flip-move "3.0.1-0"] ;; latest release
 ```
 [](/dependency)
 
