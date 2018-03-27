@@ -5,7 +5,7 @@
  *
  * Loaded JavaScripts:
  * https://github.com/facebook/react/releases/download/v15.6.2/react.min.js
- * https://unpkg.com/react-stripe-elements@1.4.1/dist/react-stripe-elements.js
+ * https://unpkg.com/react-stripe-elements@1.6.0/dist/react-stripe-elements.js
  * 
  * Enter the JavaScript object you want to extern:
  * ReactStripeElements
@@ -20,7 +20,8 @@ var ReactStripeElements = {
     },
     "defaultProps": {
       "className": {},
-      "elementRef": function () {},
+      "elementRef": {},
+      "id": {},
       "onBlur": function () {},
       "onChange": function () {},
       "onFocus": function () {},
@@ -31,6 +32,9 @@ var ReactStripeElements = {
         "isRequired": function () {}
       },
       "elementRef": {
+        "isRequired": function () {}
+      },
+      "id": {
         "isRequired": function () {}
       },
       "onBlur": {
@@ -55,7 +59,8 @@ var ReactStripeElements = {
     },
     "defaultProps": {
       "className": {},
-      "elementRef": function () {},
+      "elementRef": {},
+      "id": {},
       "onBlur": function () {},
       "onChange": function () {},
       "onFocus": function () {},
@@ -66,6 +71,9 @@ var ReactStripeElements = {
         "isRequired": function () {}
       },
       "elementRef": {
+        "isRequired": function () {}
+      },
+      "id": {
         "isRequired": function () {}
       },
       "onBlur": {
@@ -90,7 +98,8 @@ var ReactStripeElements = {
     },
     "defaultProps": {
       "className": {},
-      "elementRef": function () {},
+      "elementRef": {},
+      "id": {},
       "onBlur": function () {},
       "onChange": function () {},
       "onFocus": function () {},
@@ -101,6 +110,9 @@ var ReactStripeElements = {
         "isRequired": function () {}
       },
       "elementRef": {
+        "isRequired": function () {}
+      },
+      "id": {
         "isRequired": function () {}
       },
       "onBlur": {
@@ -125,7 +137,8 @@ var ReactStripeElements = {
     },
     "defaultProps": {
       "className": {},
-      "elementRef": function () {},
+      "elementRef": {},
+      "id": {},
       "onBlur": function () {},
       "onChange": function () {},
       "onFocus": function () {},
@@ -136,6 +149,9 @@ var ReactStripeElements = {
         "isRequired": function () {}
       },
       "elementRef": {
+        "isRequired": function () {}
+      },
+      "id": {
         "isRequired": function () {}
       },
       "onBlur": {
@@ -180,7 +196,8 @@ var ReactStripeElements = {
     },
     "defaultProps": {
       "className": {},
-      "elementRef": function () {},
+      "elementRef": {},
+      "id": {},
       "onBlur": function () {},
       "onClick": function () {},
       "onFocus": function () {},
@@ -191,6 +208,9 @@ var ReactStripeElements = {
         "isRequired": function () {}
       },
       "elementRef": {
+        "isRequired": function () {}
+      },
+      "id": {
         "isRequired": function () {}
       },
       "onBlur": {
@@ -216,7 +236,8 @@ var ReactStripeElements = {
     },
     "defaultProps": {
       "className": {},
-      "elementRef": function () {},
+      "elementRef": {},
+      "id": {},
       "onBlur": function () {},
       "onChange": function () {},
       "onFocus": function () {},
@@ -227,6 +248,9 @@ var ReactStripeElements = {
         "isRequired": function () {}
       },
       "elementRef": {
+        "isRequired": function () {}
+      },
+      "id": {
         "isRequired": function () {}
       },
       "onBlur": {
