@@ -5,6 +5,9 @@ for x in *; do
         if [[ ! -f $x/build.boot ]]; then
             continue
         fi
+        if [[ -f $x/disabled ]]; then
+            continue
+        fi
 
         # jquery_1, jquery_2, react and react_15 are different versions of the same package
         artifact=${x//_[0-9]*/}
