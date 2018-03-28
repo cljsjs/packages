@@ -25,5 +25,6 @@ jobs:
             - ~/cljsjs/closure-compiler.jar
     environment:
       BOOT_JVM_OPTIONS: "-Xms512m -Xmx1024m"
+      BOOT_GPG_COMMAND: "gpg --batch --yes"
       NPM_CONFIG_LOGLEVEL: warn
       NPM_CONFIG_UNSAFE_PERMS: true
