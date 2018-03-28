@@ -2,7 +2,6 @@
   "name": "elliptic",
   "version": "6.4.0",
   "description": "EC cryptography",
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git@github.com:indutny/elliptic"
