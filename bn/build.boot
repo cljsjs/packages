@@ -1,6 +1,6 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.7.1" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -15,10 +15,17 @@
         :license     {"MIT" "https://github.com/indutny/bn.js#license"}
         :scm         {:url "https://github.com/cljsjs/packages"}})
 
+(deftask build-bn []
+  (run-commands :commands [["npm" "install" "--include-dev"]
+                           ["npm" "run" "bundle"]
+                           ["npm" "run" "generate-extern"]
+                           ["rm" "-rf" "./node_modules"]]))
+
 (deftask package []
   (comp
-    (download :url (str "https://wzrd.in/standalone/bn.js@" +lib-version+))
-    (sift :move {(re-pattern (str "^bn.js@" +lib-version+)) "cljsjs/bn/development/bn.inc.js"})
+    (build-bn)
+    (sift :move {#".*bn.bundle.js" "cljsjs/bn/development/bn.inc.js"
+                 #".*bn.ext.js" "cljsjs/bn/common/bn.ext.js"})
     (minify :in "cljsjs/bn/development/bn.inc.js"
             :out "cljsjs/bn/production/bn.min.inc.js")
     (sift :include #{#"^cljsjs"})

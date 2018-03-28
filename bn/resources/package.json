@@ -1,0 +1,34 @@
+{
+  "name": "bn.js",
+  "version": "4.11.8",
+  "description": "Big number implementation in pure javascript",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:indutny/bn.js"
+  },
+  "keywords": [
+    "BN",
+    "BigNum",
+    "Big number",
+    "Modulo",
+    "Montgomery"
+  ],
+  "author": "Fedor Indutny <fedor@indutny.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/indutny/bn.js/issues"
+  },
+  "homepage": "https://github.com/indutny/bn.js",
+  "dependencies": {
+    "bn.js": "^4.11.8"
+  },
+  "devDependencies": {
+    "cross-env": "^3.1.4",
+    "browserify": "^15.1.0",
+    "externs-generator": "^0.3.3"
+  },
+  "scripts": {
+    "bundle": "cross-env NODE_ENV=production browserify ./node_modules/bn.js/lib/bn.js -s bn -o bn.bundle.js",
+    "generate-extern": "generate-extern -f bn.bundle.js -n bn -o bn.ext.js"
+  }
+}
