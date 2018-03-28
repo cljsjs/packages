@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/simple-peer "8.5.0-0"] ;; latest release
+[cljsjs/simple-peer "9.0.0-0"] ;; latest release
 ```
 [](/dependency)
 
