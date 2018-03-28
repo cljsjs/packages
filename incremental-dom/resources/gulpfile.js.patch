@@ -1,0 +1,10 @@
+36c36
+< var googModuleName = 'incrementaldom';
+---
+> var googModuleName = 'incremental_dom';
+131c131
+<   var moduleDeclaration = 'goog.module(\'' + googModuleName + '\');';
+---
+>   var moduleDeclaration = 'goog.provide(\'' + googModuleName + '\');\n';
+138a139
+>     .pipe(replace('exports.', googModuleName + '.'))

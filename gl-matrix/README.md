@@ -23,7 +23,7 @@ to date as of 2015-04-09.
 ## Usage
 
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
-of the Clojurescript compiler. After adding the above dependency to your project
+of the ClojureScript compiler. After adding the above dependency to your project
 to can require the packaged library like so:
 
 ```clojure
@@ -31,4 +31,4 @@ to can require the packaged library like so:
   (:require cljsjs.gl-matrix))
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

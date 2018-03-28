@@ -1,3 +1,15 @@
-{:libs ["cljsjs/development/openlayers/"]
- :externs ["cljsjs/common/openlayersi.ext.js"
-           "cljsjs/common/openlayersx.ext.js"]}
+{:libs ["cljsjs/openlayers/development/"]
+ :externs ["cljsjs/openlayers/common/bingmaps.ext.js"
+           "cljsjs/openlayers/common/closure-compiler.ext.js"
+           ; "cljsjs/openlayers/common/example.ext.js"
+           "cljsjs/openlayers/common/geojson.ext.js"
+           "cljsjs/openlayers/common/oli.ext.js"
+           "cljsjs/openlayers/common/proj4js.ext.js"
+           "cljsjs/openlayers/common/tilejson.ext.js"
+           "cljsjs/openlayers/common/webgl-debug.ext.js"
+           "cljsjs/openlayers/common/bootstrap.ext.js"
+           "cljsjs/openlayers/common/esrijson.ext.js"
+           "cljsjs/openlayers/common/fastclick.ext.js"
+           ; "cljsjs/openlayers/common/jquery-1.9.ext.js"
+           "cljsjs/openlayers/common/olx.ext.js"
+           "cljsjs/openlayers/common/topojson.ext.js"]}

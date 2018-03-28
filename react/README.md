@@ -1,11 +1,13 @@
 # cljsjs/react
 
+[](dependency)
 ```clojure
-[cljsjs/react "0.13.1-0"] ;; latest release
+[cljsjs/react "16.2.0-3"] ;; latest release
 ```
+[](/dependency)
 
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
-of the Clojurescript compiler. After adding the above dependency to your project
+of the ClojureScript compiler. After adding the above dependency to your project
 you can require the packaged library like so:
 
 ```clojure
@@ -13,24 +15,16 @@ you can require the packaged library like so:
   (:require cljsjs.react))
 ```
 
-# cljsjs/react-with-addons
+This package also supports `:global-exports`:
 
 ```clojure
-[cljsjs/react-with-addons "0.13.1-0"] ;; latest release
+(ns application.core
+  (:require [react :as react]))
 ```
 
-**Note that this JAR provides the same `cljsjs/react` module as
-cljsjs/react.** This decision has been made to allow swapping regular
-React in transitive dependencies with React with addons.
+# cljsjs/react-with-addons
 
-## TestUtils
+React-with-addons has been [deprecated](https://facebook.github.io/react/docs/addons.html).
+For animation utils use [react-transition-group](../react-transition-group) package instead.
 
-The externs file includes definitions for TestUtils but to use those with `:advanced`
-optimizations you'll need to override `:file-min` to use non-minified version:
-
-src/cljs/deps.cljs:
-```clj
-{:foreign-libs [{:provides ["cljs.react"] :file-min "cljsjs/development/react-with-addons.inc.js"}}
-```
-
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

@@ -1,12 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.11" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.4.7" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "1.0.2-0")
+(def +lib-version+ "1.0.2")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom  {:project     'cljsjs/hashids
@@ -18,10 +17,12 @@
 
 (deftask package []
   (comp
-    (download :url "https://github.com/ivanakimov/hashids.js/archive/1.0.2.zip"
+    (download :url (format "https://github.com/ivanakimov/hashids.js/archive/%s.zip" +lib-version+)
               :checksum "cafc7be2c2f901cc8fe2cc96292d35dc"
               :unzip true)
     (sift :move {#"^hashids.js-.*/lib/hashids.js" "cljsjs/hashids/development/hashids.inc.js"})
     (sift :move {#"^hashids.js-.*/lib/hashids.min.js" "cljsjs/hashids/production/hashids.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.hashids")))
+    (deps-cljs :name "cljsjs.hashids")
+    (pom)
+    (jar)))

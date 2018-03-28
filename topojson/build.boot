@@ -1,13 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.10" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.4.6"  :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "1.6.18-0")
-(bootlaces! +version+)
+(def +lib-version+ "1.6.18")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/topojson
@@ -19,7 +17,7 @@
 
 (deftask package []
   (comp
-   (download  :url      "https://github.com/mbostock/topojson/archive/v1.6.18.zip"
+   (download  :url      (format "https://github.com/mbostock/topojson/archive/v%s.zip" +lib-version+)
               :checksum "036a19607242e00de0222d103febd161"
               :unzip    true)
    (sift      :move     {#"^topojson-.*/topojson.js"
@@ -27,4 +25,6 @@
    (minify    :in       "cljsjs/topojson/development/topojson.inc.js"
               :out      "cljsjs/topojson/production/topojson.min.inc.js")
    (sift      :include  #{#"^cljsjs"})
-   (deps-cljs :name     "cljsjs.topojson")))
+   (deps-cljs :name     "cljsjs.topojson")
+   (pom)
+   (jar)))

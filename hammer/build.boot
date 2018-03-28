@@ -1,28 +1,29 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.4.7" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "2.0.4-4")
+(def +lib-version+ "2.0.8")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/hammer
        :version     +version+
-       :description "Hammer.js packaged up with Google Closure externs"
+       :description "A javascript library for multi-touch gestures"
        :url         "http://hammerjs.github.io/"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (deftask package []
   (comp
-    (download :url "https://github.com/hammerjs/hammer.js/archive/2.0.4.zip"
-              :checksum "11fe50c17ced2808cffec81f80833d54"
+    (download :url (format "https://github.com/hammerjs/hammer.js/archive/v%s.zip" +lib-version+)
+              :checksum "43A872327E6BB626902D5C9554A7C2A0"
               :unzip true)
-    (sift :move {#"^hammer.js-\d\.\d\.\d/hammer.js"     "cljsjs/development/hammer.inc.js"
-                 #"^hammer.js-\d\.\d\.\d/hammer.min.js" "cljsjs/production/hammer.min.inc.js"})
+    (sift :move {#"^hammer.js-\d\.\d\.\d/hammer.js$"     "cljsjs/development/hammer.inc.js"
+                 #"^hammer.js-\d\.\d\.\d/hammer.min.js$" "cljsjs/production/hammer.min.inc.js"})
     (replace-content :in "cljsjs/production/hammer.min.inc.js" :match #"(?m)^//# sourceMappingURL=.*$" :value "")
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.hammer")))
+    (deps-cljs :name "cljsjs.hammer")
+    (pom)
+    (jar)))

@@ -1,51 +1,78 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.4.7" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def react-version "0.13.1")
-(def +version+ (str react-version "-0"))
-(bootlaces! +version+)
-
-(def urls
-  {:normal {:dev (str "http://fb.me/react-" react-version ".js")
-            :dev-checksum "E195BE5D021CBA5062E3C0F4C95DA322"
-            :min (str "http://fb.me/react-" react-version ".min.js")
-            :min-checksum "26B22E016CBE907215A04DBF03707622"}
-   :with-addons {:dev (str "http://fb.me/react-with-addons-" react-version ".js")
-                 :dev-checksum "F05CBC8CE979D2269947568789ECFDAA"
-                 :min (str "http://fb.me/react-with-addons-" react-version ".min.js")
-                 :min-checksum "C34D06B5F7840431BCAD2D3130978845"}})
+(def +lib-version+ "16.2.0")
+(def +version+ (str +lib-version+ "-3"))
 
 (task-options!
  pom  {:project     'cljsjs/react
        :version     +version+
-       :description "React.js packaged up with Google Closure externs"
+       :description "A Javascript library for building user interfaces"
        :url         "http://facebook.github.io/react/"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
 
-(deftask package []
-  (task-options! push {:ensure-branch nil})
+(defn download-react [project part]
   (comp
-    (download :url (-> urls :normal :dev) :checksum (-> urls :normal :dev-checksum))
-    (download :url (-> urls :normal :min) :checksum (-> urls :normal :min-checksum))
-    (sift :move {(re-pattern (str "^react-" react-version ".js$"))     "cljsjs/development/react.inc.js"
-                 (re-pattern (str "^react-" react-version ".min.js$")) "cljsjs/production/react.min.inc.js"})
-    (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.react")))
+    (download :url (format "https://unpkg.com/%s@%s/umd/%s.development.js" project +lib-version+ part)
+              :target (format "cljsjs/%1$s/development/%2$s.inc.js" project part))
+    (download :url (format "https://unpkg.com/%s@%s/umd/%s.production.min.js" project +lib-version+ part)
+              :target (format "cljsjs/%1$s/production/%2$s.min.inc.js" project part))))
 
-(deftask package-with-addons []
-  (task-options! pom {:project 'cljsjs/react-with-addons
-                      :description "React.js with addons packaged up with Google Closure externs"}
-                 push {:ensure-branch nil})
+(deftask package-react []
+  (with-files (fn [x] (#{"react.ext.js"} (.getName (tmp-file x))))
+    (comp
+      (download-react "react" "react")
+      (deps-cljs :provides ["react" "cljsjs.react"]
+                 :requires []
+                 :global-exports '{react React})
+      (pom :project 'cljsjs/react
+           :dependencies [])
+      (show :fileset true)
+      (jar))))
+
+(deftask package-dom []
+  (with-files (fn [x] (re-find #"react-dom.*\.ext\.js" (.getName (tmp-file x))))
+    (comp
+      (download-react "react-dom" "react-dom")
+      (download-react "react-dom" "react-dom-server.browser")
+      (download-react "react-dom" "react-dom-test-utils")
+      (deps-cljs :foreign-libs [{:file #"react-dom\.inc\.js"
+                                 :file-min #"react-dom\.min\.inc\.js"
+                                 :provides ["react-dom" "cljsjs.react.dom"]
+                                 :requires ["react"]
+                                 :global-exports '{react-dom ReactDOM}}
+                                {:file #"react-dom-server\.browser\.inc\.js"
+                                 :file-min #"react-dom-server\.browser\.min\.inc\.js"
+                                 :provides ["react-dom/server" "cljsjs.react.dom.server"]
+                                 :requires ["react-dom"]
+                                 :global-exports '{react-dom/server ReactDOMServer}}
+                                {:file #"react-dom-test-utils\.inc\.js"
+                                 :file-min #"react-dom-test-utils\.min\.inc\.js"
+                                 :provides ["react-dom/test-utils" "cljsjs.react.dom.test-utils"]
+                                 :requires ["react-dom"]
+                                 :global-exports '{react-dom/test-utils ReactTestUtils}}]
+                 :externs [#"react-dom.*\.ext\.js"])
+      (pom :project 'cljsjs/react-dom
+           :dependencies [['cljsjs/react +version+]])
+      (show :fileset true)
+      (jar))))
+
+(deftask package-dom-server []
+  (with-files (constantly nil)
+    (comp
+      (pom :project 'cljsjs/react-dom-server
+           :description "React-dom-server package is now deprecated, the server file is included in react-dom package."
+           :dependencies [['cljsjs/react-dom +version+]])
+      (show :fileset true)
+      (jar))))
+
+(deftask package []
   (comp
-    (download :url (-> urls :with-addons :dev) :checksum (-> urls :with-addons :dev-checksum))
-    (download :url (-> urls :with-addons :min) :checksum (-> urls :with-addons :min-checksum))
-    (sift :move {(re-pattern (str "^react-with-addons-" react-version ".js$"))     "cljsjs/development/react-with-addons.inc.js"
-                 (re-pattern (str "^react-with-addons-" react-version ".min.js$")) "cljsjs/production/react-with-addons.min.inc.js"})
-    (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.react")))
+    (package-react)
+    (package-dom)
+    (package-dom-server)
+    (validate)))

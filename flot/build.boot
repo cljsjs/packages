@@ -1,19 +1,18 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.4.6" :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]
                   [cljsjs/jquery "1.9.0-0"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.8.3-0")
+(def +lib-version+ "0.8.3")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom  {:project     'cljsjs/flot
         :version     +version+
         :scm         {:url "https://github.com/cljsjs/packages"}
-        :description "flot packaged up with Google Closure externs"
+        :description "Attractive JavaScript plotting for jQuery"
         :url         "http://www.flotcharts.org/"
         :license     {"MIT" "http://opensource.org/licenses/MIT"}
         })
@@ -45,7 +44,7 @@
 
 (deftask package []
   (comp
-    (download :url "http://www.flotcharts.org/downloads/flot-0.8.3.zip"
+    (download :url (format "http://www.flotcharts.org/downloads/flot-%s.zip" +lib-version+)
               :checksum "a134a869d2b3d476a67a86abbe881676"
               :unzip true)
 
@@ -62,4 +61,6 @@
 
     (sift :move {#"^cljsjs/plugins/(.*)\.js" "cljsjs/plugins/$1.inc.js"})
 
-    (generate-plugin-deps)))
+    (generate-plugin-deps)
+    (pom)
+    (jar)))

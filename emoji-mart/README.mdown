@@ -1,0 +1,26 @@
+# cljsjs/emojione-picker
+
+
+[](dependency)
+```clojure
+[cljsjs/emojione-picker "2.2.1-0"] ;; latest release
+```
+[](/dependency)
+
+This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
+of the ClojureScript compiler. After adding the above dependency to your project
+you can require the packaged library like so:
+
+```clojure
+(ns application.core
+  (:require cljsjs.emoji-mart))
+```
+
+Documentation for EmojiMart can be found [in their GitHub repo](https://github.com/missive/emoji-mart).
+
+#### Assets
+
+EmojiMart stylesheet and LICENSE files in the release zip are provided under
+`cljsjs/emoji-mart/common/`.
+
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

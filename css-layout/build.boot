@@ -1,13 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.4.6" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.0.2-0")
-(bootlaces! +version+)
+(def +lib-version+ "1.0.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/css-layout
@@ -19,13 +17,14 @@
 
 (deftask package []
   (comp
-   (download  :url      (str "https://github.com/facebook/css-layout/archive/"
-                             "8ae56041b58f6b8b433afe978b78fad7c72807d6.zip")
-              :checksum "5da1f1289247491961f219f7d29d8a0c"
+   (download  :url      (str "https://github.com/facebook/css-layout/archive/v" +lib-version+ ".zip")
+              :checksum "6D4B4D24A36920052B4CCB52EE7DFBB0"
               :unzip    true)
    (sift      :move     {#"^css-layout-.*/src/Layout.js"
                          "cljsjs/css_layout/development/css-layout.inc.js"})
    (minify    :in       "cljsjs/css_layout/development/css-layout.inc.js"
               :out      "cljsjs/css_layout/production/css-layout.min.inc.js")
    (sift      :include  #{#"^cljsjs"})
-   (deps-cljs :name     "cljsjs.css-layout")))
+   (deps-cljs :name     "cljsjs.css-layout")
+   (pom)
+   (jar)))

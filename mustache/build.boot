@@ -1,17 +1,16 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.4.6" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "1.1.0-0")
+(def +lib-version+ "2.2.1")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/mustache
        :version     +version+
-       :description "Mustache.js packaged up with Google Closure externs"
+       :description "Minimal templating with {{mustaches}} in JavaScript"
        :url         "https://github.com/janl/mustache.js/"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
@@ -20,10 +19,12 @@
 
 (deftask package []
   (comp
-    (download :url      "https://github.com/janl/mustache.js/archive/v1.1.0.zip"
-              :checksum "fe10b20e3a4cea190725ebbbbe5a5890"
+    (download :url      (format "https://github.com/janl/mustache.js/archive/v%s.zip" +lib-version+)
+              :checksum "58ed2f543954aaaea2c80d2530dd5aa6"
               :unzip    true)
     (sift :move {#"^mustache.js-\d.\d.\d/mustache.js$"     "cljsjs/mustache/development/mustache.inc.js"
                  #"^mustache.js-\d.\d.\d/mustache.min.js$" "cljsjs/mustache/production/mustache.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.mustache")))
+    (deps-cljs :name "cljsjs.mustache")
+    (pom)
+    (jar)))

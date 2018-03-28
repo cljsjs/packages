@@ -1,24 +1,163 @@
+/**
+ * @fileoverview Handwritten externs for jsdiff, based on API description in jsdiff README.md
+ * @externs
+ */
 
-var JsDiff = {
-  diffChars: function(oldStr, newStr, callback) {},
-  diffWords: function(oldStr, newStr, callback) {},
-  diffWordsWithSpace: function(oldStr, newStr, callback) {},
-  diffLines: function(oldStr, newStr, callback) {},
-  diffSentences: function(oldStr, newStr, callback) {},
-  diffCss: function(oldStr, newStr, callback) {},
-  diffJson: function(oldObj, newObj, callback) {},
-  createPatch: function(fileName, oldStr, newStr, oldHeader, newHeader) {},
-  applyPatch: function(oldStr, uniDiff) {},
-  convertChangesToXML: function(changes) {},
-  convertChangesToDMP: function(changes) {},
-  canonicalize: function(obj, stack, replacementStack) {}
-};
+/** @const */
+var JsDiff = {}
 
-JsDiff.Diff = function(ignoreWhitespace) {};
-JsDiff.Diff.prototype = {
-  diff: function(oldString, newString, callback) {},
-  pushComponent: function(components, added, removed) {},
-  extractCommon: function(basePath, newString, oldString, diagonalPath) {},
-  equals: function(left, right) {},
-  tokenize: function(value) {}
-};
+JsDiff.ChangeObject = function () {}
+
+/** @type {string} */
+JsDiff.Change.prototype.value;
+
+/** @type {?boolean} */
+JsDiff.Change.prototype.added;
+
+/** @type {?boolean} */
+JsDiff.Change.prototype.removed;
+
+/**
+ * @param {string} oldStr
+ * @param {string} newStr
+ * @param {Object=} options
+ * @return {Array<JsDiff.Change>}
+ */
+JsDiff.diffChars = function(oldStr, newStr, options) {};
+
+/**
+ * @param {string} oldStr
+ * @param {string} newStr
+ * @param {Object=} options
+ * @return {Array<JsDiff.Change>}
+ */
+JsDiff.diffWords = function(oldStr, newStr, options) {};
+
+/**
+ * @param {string} oldStr
+ * @param {string} newStr
+ * @param {Object=} options
+ * @return {Array<JsDiff.Change>}
+ */
+JsDiff.diffWordsWithSpace = function(oldStr, newStr, options) {};
+
+/**
+ * @param {string} oldStr
+ * @param {string} newStr
+ * @param {{ignoreWhitespace: boolean, newlineIsToken: boolean}=} options
+ * @return {Array<JsDiff.Change>}
+ */
+JsDiff.diffLines = function(oldStr, newStr, options) {};
+
+/**
+ * @param {string} oldStr
+ * @param {string} newStr
+ * @param {Object=} options
+ * @return {Array<JsDiff.Change>}
+ */
+JsDiff.diffTrimmedLines = function(oldStr, newStr, options) {};
+
+/**
+ * @param {string} oldStr
+ * @param {string} newStr
+ * @param {Object=} options
+ * @return {Array<JsDiff.Change>}
+ */
+JsDiff.diffSentences = function(oldStr, newStr, options) {};
+
+/**
+ * @param {string} oldStr
+ * @param {string} newStr
+ * @param {Object=} options
+ * @return {Array<JsDiff.Change>}
+ */
+JsDiff.diffCss = function(oldStr, newStr, options) {};
+
+/**
+ * @param {Object} oldObj
+ * @param {Object} newObj
+ * @param {Object=} options
+ * @return {Array<JsDiff.Change>}
+ */
+JsDiff.diffJson = function(oldObj, newObj, options) {};
+
+/**
+ * @param {Array} oldArr
+ * @param {Array} newArr
+ * @param {Object=} options
+ * @return {Array<JsDiff.Change>}
+ */
+JsDiff.diffArrays = function(oldArr, newArr, options) {};
+
+/**
+ * @param {string} oldFileName
+ * @param {string} newFileName
+ * @param {string} oldStr
+ * @param {string} newStr
+ * @param {string} oldHeader
+ * @param {string} newHeader
+ * @param {{context: number}=} options
+ * @return {string}
+ */
+JsDiff.createTwoFilesPatch = function(oldFileName, newFileName, oldStr, newStr, oldHeader, newHeader, options) {};
+
+/**
+ * @param {string} fileName
+ * @param {string} oldStr
+ * @param {string} newStr
+ * @param {string} oldHeader
+ * @param {string} newHeader
+ * @param {{context: number}=} options
+ * @return {string}
+ */
+JsDiff.createPatch = function(fileName, oldStr, newStr, oldHeader, newHeader, options) {};
+
+JsDiff.Hunk = function () {}
+
+/** type {number} */
+JsDiff.Hunk.prototype.oldStart;
+
+/** type {number} */
+JsDiff.Hunk.prototype.newStart;
+
+/** type {number} */
+JsDiff.Hunk.prototype.oldLines;
+
+/** type {number} */
+JsDiff.Hunk.prototype.newLines;
+
+/** type {Array<string>} */
+JsDiff.Hunk.prototype.lines;
+
+/**
+ * @param {string} oldFileName
+ * @param {string} newFileName
+ * @param {string} oldStr
+ * @param {string} newStr
+ * @param {string} oldHeader
+ * @param {string} newHeader
+ * @param {{context: number}=} options
+ * @return {{oldFileName: string, newFileName: string, oldHeader: string, newHeader: string, hunks: Array<JsDiff.Hunk>}}
+ */
+JsDiff.structuredPatch = function(oldFileName, newFileName, oldStr, newStr, oldHeader, newHeader, options) {};
+
+/**
+ * @param {string} source
+ * @param {(string|Object)} patch
+ * @param {{fuzzFactor: number, compareLine: function()}=} options
+ * @return {string}
+ */
+JsDiff.applyPatch = function(source, patch, options) {};
+
+/**
+ * @param {string} patch
+ * @param {{loadFile: function (), patched: function (), complete: function ()}} options
+ */
+JsDiff.applyPatches = function(patch, options) {};
+
+/**
+ * @param {Array<JsDiff.Change>} changes
+ * @return {string}
+ */
+JsDiff.convertChangesToXML = function (changes) {};
+

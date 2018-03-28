@@ -2,12 +2,12 @@
 
 [](dependency)
 ```clojure
-[cljsjs/moment "2.9.0-0"] ;; latest release
+[cljsjs/moment "2.17.1-1"] ;; latest release
 ```
 [](/dependency)
 
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
-of the Clojurescript compiler. After adding the above dependency to your project
+of the ClojureScript compiler. After adding the above dependency to your project
 you can require the packaged library like so:
 
 ```clojure
@@ -17,7 +17,7 @@ you can require the packaged library like so:
 
 ## Locales
 
-Each locale from Moment.js is provided as separate foreign dependancy namespace.
+Each locale from Moment.js is provided as separate foreign dependency namespace.
 You should be able to set Moment to use locales if you first require them.
 
 ```clojure
@@ -27,4 +27,4 @@ You should be able to set Moment to use locales if you first require them.
 (.locale js/moment "fi")
 ```
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps

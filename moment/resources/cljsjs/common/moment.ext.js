@@ -1,450 +1,323 @@
-/**
- * @license root42 Inc. All Right Reserved.
- */
-"use strict";
-
-/**
- * @fileoverview Externs for moment.js 2.6.0
- * @externs
- */
-
-/**
- * @interface
- * @author root42 Inc.
- */
-function Moment() {};
-
-/**
- * @nosideeffects
- * @type {(function():!Moment|function(!Date):!Moment|function(!number):!Moment|function(!Array.<!number>):!Moment|function(!string, !(string|Array.<!string>)=):!Moment|function(!Moment):!Moment)}
- */
-function moment() {};
-
-/**
- * @typedef {{seconds:?number, minutes:?number, hours:?number, weeks:?number, months:?number, years:?number}}
- */
-Moment.DateRecord;
-
-/**
- * @interface
- * @author root42 Inc.
- */
-Moment.Duration = function() {};
-
-/**
- * @since 1.6.0
- * @type {(function():!number|function(!number):!Moment)}
- */
-Moment.prototype.unix = function() {};
-
-/**
- * @since 1.5.0
- * @type {(function():!Moment|function(!number):!Moment|function(!Array.<!number>):!Moment|function(!string, !string=, !string=):!Moment|function(!string, !Array.<!string>):!Moment|function(!Moment):!Moment|function(!Date):!Moment)}
- */
-Moment.prototype.utc = function() {};
-
-/**
- * @nosideeffects
- * @since 1.7.0
- * @type {function():!boolean}
- */
-Moment.prototype.isValid = function() {};
-
-/**
- * @since 1.3.0
- * @type {(function():!number|function(!number):!Moment)}
- */
-Moment.prototype.millisecond = function() {};
-
-/**
- * @since 1.3.0
- * @type {(function():!number|function(!number):!Moment)}
- */
-Moment.prototype.milliseconds = function() {};
-
-/**
- * @since 1.0.0
- * @type {(function():!number|function(!number):!Moment)}
- */
-Moment.prototype.second = function() {};
-
-/**
- * @since 1.0.0
- * @type {(function():!number|function(!number):!Moment)}
- */
-Moment.prototype.seconds = function() {};
-
-/**
- * @since 1.0.0
- * @type {(function():!number|function(!number):!Moment)}
- */
-Moment.prototype.minute = function() {};
-
-/**
- * @since 1.0.0
- * @type {(function():!number|function(!number):!Moment)}
- */
-Moment.prototype.minutes = function() {};
-
-/**
- * @since 1.0.0
- * @type {(function():!number|function(!number):!Moment)}
- */
-Moment.prototype.hour = function() {};
-
-/**
- * @since 1.0.0
- * @type {(function():!number|function(!number):!Moment)}
- */
-Moment.prototype.hours = function() {};
-
-/**
- * @since 1.0.0
- * @type {(function():!number|function(!number):!Moment)}
- */
-Moment.prototype.date = function() {};
-
-/**
- * @since 1.0.0
- * @type {(function():!number|function(!number):!Moment)}
- */
-Moment.prototype.dates = function() {};
-
-/**
- * @since 1.3.0
- * @type {(function():!number|function(!number):!Moment)}
- */
-Moment.prototype.day = function() {};
-
-/**
- * @since 1.3.0
- * @type {(function():!number|function(!number):!Moment)}
- */
-Moment.prototype.days = function() {};
-
-/**
- * @since 2.0.0
- * @type {(function():!number|function(!number):!Moment)}
- */
-Moment.prototype.dayOfYear = function() {};
-
-/**
- * @since 2.0.0
- * @type {(function():!number|function(!number):!Moment)}
- */
-Moment.prototype.week = function() {};
-
-/**
- * @since 2.0.0
- * @type {(function():!number|function(!number):!Moment)}
- */
-Moment.prototype.weeks = function() {};
-
-/**
- * @since 2.0.0
- * @type {(function():!number|function(!number):!Moment)}
- */
-Moment.prototype.isoWeek = function() {};
-
-/**
- * @since 2.0.0
- * @type {(function():!number|function(!number):!Moment)}
- */
-Moment.prototype.isoWeeks = function() {};
-
-/**
- * @since 1.0.0
- * @type {(function():!number|function(!number):!Moment)}
- */
-Moment.prototype.month = function() {};
-
-/**
- * @since 1.0.0
- * @type {(function():!number|function(!number):!Moment)}
- */
-Moment.prototype.months = function() {};
-
-/**
- * @since 1.0.0
- * @type {(function():!number|function(!number):!Moment)}
- */
-Moment.prototype.year = function() {};
-
-/**
- * @since 1.0.0
- * @type {(function():!number|function(!number):!Moment)}
- */
-Moment.prototype.years = function() {};
-
-/**
- * @since 1.0.0
- * @type {(function(!string, !number):!Moment|function(!number, !string):!Moment|function(!Moment.Duration):!Moment|function(!Moment.DateRecord):!Moment)}
- */
-Moment.prototype.add = function() {};
-
-/**
- * @nosideeffects
- * @since 1.0.0
- * @type {(function(!string, !number):!Moment|function(!number, !string):!Moment|function(!Moment.Duration):!Moment|function(!Moment.DateRecord):!Moment)}
- */
-Moment.prototype.subtract = function() {};
-
-/**
- * @nosideeffects
- * @since 1.7.0
- * @type {function(!string):!Moment}
- */
-Moment.prototype.startOf = function() {};
-
-/**
- * @nosideeffects
- * @since 1.7.0
- * @type {function(!string):!Moment}
- */
-Moment.prototype.endOf = function() {};
-
-/**
- * @nosideeffects
- * @since 1.5.0
- * @type {function():!Moment}
- */
-Moment.prototype.local = function() {};
-
-/**
- * @nosideeffects
- * @since 1.0.0
- * @type {(function():!Moment|function(!string):!Moment)}
- */
-Moment.prototype.format = function() {};
-
-/**
- * @nosideeffects
- * @since 1.0.0
- * @type {function(!boolean=):!Moment}
- */
-Moment.prototype.fromNow = function() {};
-
-/**
- * @nosideeffects
- * @since 1.0.0
- * @type {function(!(Moment|string|number|Date|Array.<!number>), !boolean=):!Moment}
- */
-Moment.prototype.from = function() {};
-
-/**
- * @nosideeffects
- * @since 1.3.0
- * @type {function():!Moment}
- */
-Moment.prototype.calendar = function() {};
-
-/**
- * @nosideeffects
- * @since 1.0.0
- * @type {function(!(Moment|string|number|Date|Array.<!number>), !string=, !boolean=):!number}
- */
-Moment.prototype.diff = function() {};
-
-/**
- * @nosideeffects
- * @since 1.0.0
- * @type {function():!number}
- */
-Moment.prototype.valueOf = function() {};
-
-/**
- * @nosideeffects
- * @since 1.2.0
- * @type {function():!Array.<!number>}
- */
-Moment.prototype.zone = function() {};
-
-/**
- * @nosideeffects
- * @since 1.5.0
- * @type {function():!number}
- */
-Moment.prototype.daysInMonth = function() {};
-
-/**
- * @nosideeffects
- * @since 1.0.0
- * @type {function():!Date}
- */
-Moment.prototype.toDate = function() {};
-
-/**
- * @nosideeffects
- * @since 2.0.0
- * @type {function():!Moment.DateRecord}
- */
-Moment.prototype.toJSON = function() {};
-
-/**
- * @nosideeffects
- * @since 2.0.0
- * @type {function(!(Moment|string|number|Date|Array.<!number>), !string=):!boolean}
- */
-Moment.prototype.isBefore = function() {};
-
-/**
- * @nosideeffects
- * @since 2.0.0
- * @type {function(!(Moment|string|number|Date|Array.<!number>), !string=):!boolean}
- */
-Moment.prototype.isSame = function() {};
-
-/**
- * @nosideeffects
- * @since 2.0.0
- * @type {function(!(Moment|string|number|Date|Array.<!number>), !string=):!boolean}
- */
-Moment.prototype.isAfter = function() {};
-
-/**
- * @nosideeffects
- * @since 1.0.0
- * @type {function():!boolean}
- */
-Moment.prototype.isLearYear = function() {};
-
-/**
- * @nosideeffects
- * @since 1.0.0
- * @type {function():!boolean}
- */
-Moment.prototype.isDST = function() {};
-
-/**
- * @nosideeffects
- * @since 1.5.0
- * @type {function(!Object):!boolean}
- */
-Moment.prototype.isMoment = function() {};
-
-/**
- * @nosideeffects
- * @since 1.6.0
- * @type {(function(!number, !string=):!Moment.Duration|function(!Moment.DateRecord):!Moment.Duration)}
- */
-Moment.prototype.duration = function() {};
-
-/**
- * @nosideeffects
- * @since 1.6.0
- * @type {function(!boolean=):!string}
- */
-Moment.Duration.prototype.humanize = function() {};
-
-/**
- * @nosideeffects
- * @since 1.6.0
- * @type {function():!number}
- */
-Moment.Duration.prototype.milliseconds = function() {};
-
-/**
- * @nosideeffects
- * @since 1.6.0
- * @type {function():!number}
- */
-Moment.Duration.prototype.asMilliseconds = function() {};
-
-/**
- * @nosideeffects
- * @since 1.6.0
- * @type {function():!number}
- */
-Moment.Duration.prototype.seconds = function() {};
-
-/**
- * @nosideeffects
- * @since 1.6.0
- * @type {function():!number}
- */
-Moment.Duration.prototype.asSeconds = function() {};
-
-/**
- * @nosideeffects
- * @since 1.6.0
- * @type {function():!number}
- */
-Moment.Duration.prototype.minutes = function() {};
-
-/**
- * @nosideeffects
- * @since 1.6.0
- * @type {function():!number}
- */
-Moment.Duration.prototype.asMinutes = function() {};
-
-/**
- * @nosideeffects
- * @since 1.6.0
- * @type {function():!number}
- */
-Moment.Duration.prototype.hours = function() {};
-
-/**
- * @nosideeffects
- * @since 1.6.0
- * @type {function():!number}
- */
-Moment.Duration.prototype.asHours = function() {};
-
-/**
- * @nosideeffects
- * @since 1.6.0
- * @type {function():!number}
- */
-Moment.Duration.prototype.days = function() {};
-
-/**
- * @nosideeffects
- * @since 1.6.0
- * @type {function():!number}
- */
-Moment.Duration.prototype.asDays = function() {};
-
-/**
- * @nosideeffects
- * @since 1.6.0
- * @type {function():!number}
- */
-Moment.Duration.prototype.months = function() {};
-
-/**
- * @nosideeffects
- * @since 1.6.0
- * @type {function():!number}
- */
-Moment.Duration.prototype.asMonths = function() {};
-
-/**
- * @nosideeffects
- * @since 1.6.0
- * @type {function():!number}
- */
-Moment.Duration.prototype.years = function() {};
-
-/**
- * @nosideeffects
- * @since 1.6.0
- * @type {function():!number}
- */
-Moment.Duration.prototype.asYears = function() {};
-
-/**
- * @since 2.1.0
- */
-Moment.prototype.min = function() {};
-
-/**
- * @since 2.1.0
- */
-Moment.prototype.max = function() {};
-
-/**
- * @since 2.8.1
- */
-Moment.prototype.locale = function() {};
+/**********************************************************************
+ * Extern for moment
+ * Generated by http://jmmk.github.io/javascript-externs-generator
+ * HANDROLLED EXTERNS AFTER THE GENERATED EXTERNS
+ **********************************************************************/
+var moment = {
+	"momentProperties": {},
+	"suppressDeprecationWarnings": {},
+	"deprecationHandler": {},
+	"parseTwoDigitYear": function () {},
+	"createFromInputFallback": function () {},
+	"ISO_8601": function () {},
+	"updateOffset": function () {},
+	"defaultFormat": {},
+	"defaultFormatUtc": {},
+	"lang": function () {},
+	"langData": function () {},
+	"version": {},
+	"fn": {
+		"add": function () {},
+		"calendar": function () {},
+		"clone": function () {},
+		"diff": function () {},
+		"endOf": function () {},
+		"format": function () {},
+		"from": function () {},
+		"fromNow": function () {},
+		"to": function () {},
+		"toNow": function () {},
+		"get": function () {},
+		"invalidAt": function () {},
+		"isAfter": function () {},
+		"isBefore": function () {},
+		"isBetween": function () {},
+		"isSame": function () {},
+		"isSameOrAfter": function () {},
+		"isSameOrBefore": function () {},
+		"isValid": function () {},
+		"lang": function () {},
+		"locale": function () {},
+		"localeData": function () {},
+		"max": function () {},
+		"min": function () {},
+		"parsingFlags": function () {},
+		"set": function () {},
+		"startOf": function () {},
+		"subtract": function () {},
+		"toArray": function () {},
+		"toObject": function () {},
+		"toDate": function () {},
+		"toISOString": function () {},
+		"inspect": function () {},
+		"toJSON": function () {},
+		"toString": function () {},
+		"unix": function () {},
+		"valueOf": function () {},
+		"creationData": function () {},
+		"year": function () {},
+		"isLeapYear": function () {},
+		"weekYear": function () {},
+		"isoWeekYear": function () {},
+		"quarters": function () {},
+		"quarter": function () {},
+		"month": function () {},
+		"daysInMonth": function () {},
+		"weeks": function () {},
+		"week": function () {},
+		"isoWeeks": function () {},
+		"isoWeek": function () {},
+		"weeksInYear": function () {},
+		"isoWeeksInYear": function () {},
+		"date": function () {},
+		"days": function () {},
+		"day": function () {},
+		"weekday": function () {},
+		"isoWeekday": function () {},
+		"dayOfYear": function () {},
+		"hours": function () {},
+		"hour": function () {},
+		"minutes": function () {},
+		"minute": function () {},
+		"seconds": function () {},
+		"second": function () {},
+		"milliseconds": function () {},
+		"millisecond": function () {},
+		"utcOffset": function () {},
+    "utc": function () {},
+    "local": function () {},
+    "parseZone": function () {},
+    "hasAlignedHourOffset": function () {},
+    "isDST": function () {},
+    "isLocal": function () {},
+    "isUtcOffset": function () {},
+    "isUtc": function () {},
+    "isUTC": function () {},
+    "zoneAbbr": function () {},
+    "zoneName": function () {},
+    "dates": function () {},
+    "months": function () {},
+    "years": function () {},
+    "zone": function () {},
+    "isDSTShifted": function () {}
+  },
+  "min": function () {},
+  "max": function () {},
+  "now": function () {},
+  "utc": function () {},
+  "unix": function () {},
+  "months": function () {},
+  "isDate": function () {},
+  "locale": function () {},
+  "invalid": function () {},
+  "duration": {
+    "fn": {
+      "abs": function () {},
+      "add": function () {},
+      "subtract": function () {},
+      "as": function () {},
+      "asMilliseconds": function () {},
+      "asSeconds": function () {},
+      "asMinutes": function () {},
+      "asHours": function () {},
+      "asDays": function () {},
+      "asWeeks": function () {},
+      "asMonths": function () {},
+      "asYears": function () {},
+      "valueOf": function () {},
+      "_bubble": function () {},
+      "get": function () {},
+      "milliseconds": function () {},
+      "seconds": function () {},
+      "minutes": function () {},
+      "hours": function () {},
+      "days": function () {},
+      "weeks": function () {},
+      "months": function () {},
+      "years": function () {},
+      "humanize": function () {},
+      "toISOString": function () {},
+      "toString": function () {},
+      "toJSON": function () {},
+      "locale": function () {},
+      "localeData": function () {},
+      "toIsoString": function () {},
+      "lang": function () {}
+    }
+  },
+  "isMoment": function () {},
+  "weekdays": function () {},
+  "parseZone": function () {},
+  "localeData": function () {},
+  "isDuration": function () {},
+  "monthsShort": function () {},
+  "weekdaysMin": function () {},
+  "defineLocale": function () {},
+  "updateLocale": function () {},
+  "locales": function () {},
+  "weekdaysShort": function () {},
+  "normalizeUnits": function () {},
+  "relativeTimeRounding": function () {},
+  "relativeTimeThreshold": function () {},
+  "calendarFormat": function () {}
+};
+moment.prototype = {
+  "add": function () {},
+  "calendar": function () {},
+  "clone": function () {},
+  "diff": function () {},
+  "endOf": function () {},
+  "format": function () {},
+  "from": function () {},
+  "fromNow": function () {},
+  "to": function () {},
+  "toNow": function () {},
+  "get": function () {},
+  "invalidAt": function () {},
+  "isAfter": function () {},
+  "isBefore": function () {},
+  "isBetween": function () {},
+  "isSame": function () {},
+  "isSameOrAfter": function () {},
+  "isSameOrBefore": function () {},
+  "isValid": function () {},
+  "lang": function () {},
+  "locale": function () {},
+  "localeData": function () {},
+  "max": function () {},
+  "min": function () {},
+  "parsingFlags": function () {},
+  "set": function () {},
+  "startOf": function () {},
+  "subtract": function () {},
+  "toArray": function () {},
+  "toObject": function () {},
+  "toDate": function () {},
+  "toISOString": function () {},
+  "inspect": function () {},
+  "toJSON": function () {},
+  "toString": function () {},
+  "unix": function () {},
+  "valueOf": function () {},
+  "creationData": function () {},
+  "year": function () {},
+  "isLeapYear": function () {},
+  "weekYear": function () {},
+  "isoWeekYear": function () {},
+  "quarters": function () {},
+  "quarter": function () {},
+  "month": function () {},
+  "daysInMonth": function () {},
+  "weeks": function () {},
+  "week": function () {},
+  "isoWeeks": function () {},
+  "isoWeek": function () {},
+  "weeksInYear": function () {},
+  "isoWeeksInYear": function () {},
+  "date": function () {},
+  "days": function () {},
+  "day": function () {},
+  "weekday": function () {},
+  "isoWeekday": function () {},
+  "dayOfYear": function () {},
+  "hours": function () {},
+  "hour": function () {},
+  "minutes": function () {},
+  "minute": function () {},
+  "seconds": function () {},
+  "second": function () {},
+  "milliseconds": function () {},
+  "millisecond": function () {},
+  "utcOffset": function () {},
+  "utc": function () {},
+  "local": function () {},
+  "parseZone": function () {},
+  "hasAlignedHourOffset": function () {},
+  "isDST": function () {},
+  "isLocal": function () {},
+  "isUtcOffset": function () {},
+  "isUtc": function () {},
+  "isUTC": function () {},
+  "zoneAbbr": function () {},
+  "zoneName": function () {},
+  "dates": function () {},
+  "months": function () {},
+  "years": function () {},
+  "zone": function () {},
+  "isDSTShifted": function () {}
+};
+/**********************************************************************
+ * End Generated Extern for moment
+/**********************************************************************/
+
+// Moment does not expose the Locale constructor and thus the externs generator
+// does not see it. The following is written by hand based on
+// <https://github.com/moment/moment/blob/2.17.1/moment.js#L3759-L3795>
+
+moment.Locale = {};
+moment.Locale.prototype = {
+  "calendar": function() {},
+  "longDateFormat": function() {},
+  "invalidDate": function() {},
+  "ordinal": function() {},
+  "preparse": function() {},
+  "postformat": function() {},
+  "relativeTime": function() {},
+  "pastFuture": function() {},
+  "set": function() {},
+  "months": function() {},
+  "monthsShort": function() {},
+  "monthsParse": function() {},
+  "monthsRegex": function() {},
+  "monthsShortRegex": function() {},
+  "week": function() {},
+  "firstDayOfYear": function() {},
+  "firstDayOfWeek": function() {},
+  "weekdays": function() {},
+  "weekdaysMin": function() {},
+  "weekdaysShort": function() {},
+  "weekdaysParse": function() {},
+  "weekdaysRegex": function() {},
+  "weekdaysShortRegex": function() {},
+  "weekdaysMinRegex": function() {},
+  "isPM": function() {},
+  "meridiem": function() {}
+};
+
+// Duration constructor added by hand based on
+// <https://github.com/moment/moment/blob/2.17.1/moment.js#L4210-L4244>
+
+moment.Duration = {};
+moment.Duration.prototype = {
+  "abs": function () {},
+  "add": function () {},
+  "subtract": function () {},
+  "as": function () {},
+  "asMilliseconds": function () {},
+  "asSeconds": function () {},
+  "asMinutes": function () {},
+  "asHours": function () {},
+  "asDays": function () {},
+  "asWeeks": function () {},
+  "asMonths": function () {},
+  "asYears": function () {},
+  "valueOf": function () {},
+  "_bubble": function () {},
+  "get": function () {},
+  "milliseconds": function () {},
+  "seconds": function () {},
+  "minutes": function () {},
+  "hours": function () {},
+  "days": function () {},
+  "weeks": function () {},
+  "months": function () {},
+  "years": function () {},
+  "humanize": function () {},
+  "toISOString": function () {},
+  "toString": function () {},
+  "toJSON": function () {},
+  "locale": function () {},
+  "localeData": function () {},
+  "toIsoString": function () {},
+  "lang": function () {}
+};

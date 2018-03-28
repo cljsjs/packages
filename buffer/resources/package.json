@@ -1,0 +1,44 @@
+{
+  "name": "buffer",
+  "version": "5.1.0",
+  "description": "Node.js Buffer API, for the browser",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/feross/buffer.git"
+  },
+  "keywords": [
+    "arraybuffer",
+    "browser",
+    "browserify",
+    "buffer",
+    "compatible",
+    "dataview",
+    "uint8array"
+  ],
+  "author": {
+    "name": "Feross Aboukhadijeh",
+    "email": "feross@feross.org",
+    "url": "http://feross.org"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/feross/buffer/issues"
+  },
+  "homepage": "https://github.com/feross/buffer",
+  "contributors": [
+    "Romain Beauxis <toots@rastageeks.org>",
+    "James Halliday <mail@substack.net>"
+  ],
+  "dependencies": {
+    "buffer": "5.1.0"
+  },
+  "devDependencies": {
+    "cross-env": "^3.1.4",
+    "browserify": "^15.1.0",
+    "externs-generator": "^0.3.3"
+  },
+  "scripts": {
+    "bundle": "cross-env NODE_ENV=production browserify ./node_modules/buffer/index.js -s buffer -o buffer.bundle.js",
+    "generate-extern": "generate-extern -f buffer.bundle.js -n buffer -o buffer.ext.js"
+  }
+}

@@ -1,3 +1,8 @@
 .boot
 */target
 .nrepl-*
+node_modules
+.idea
+.DS_Store
+out/
+closure-compiler.jar

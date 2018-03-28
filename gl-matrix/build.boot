@@ -1,14 +1,11 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[adzerk/bootlaces "0.1.10" :scope "test"]
-                 [cljsjs/boot-cljsjs "0.4.6" :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def gl-matrix-version "2.3.0-jenanwise")
-(def +version+ (str gl-matrix-version "-0"))
-(bootlaces! +version+)
+(def +lib-version+ "2.3.0-jenanwise")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom {:project 'cljsjs/gl-matrix
@@ -21,14 +18,16 @@
 (deftask package []
   (comp
    (download
-    :url "https://raw.githubusercontent.com/jenanwise/gl-matrix/master/dist/gl-matrix.js"
+    :url (str "https://raw.githubusercontent.com/jenanwise/gl-matrix/v" +lib-version+ "/dist/gl-matrix.js")
     :checksum "6082aba84ad522cd32b653c815491568")
    (download
-    :url "https://raw.githubusercontent.com/jenanwise/gl-matrix/master/dist/gl-matrix-min.js"
+    :url (str "https://raw.githubusercontent.com/jenanwise/gl-matrix/v" +lib-version+ "/dist/gl-matrix-min.js")
     :checksum "eb7bc1a30db399a714a957b59cf4da92")
    (sift :move {#"^gl-matrix.js"
                 "cljsjs/gl-matrix/development/gl-matrix.inc.js"
                 #"^gl-matrix-min.js"
                 "cljsjs/gl-matrix/production/gl-matrix.min.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.gl-matrix")))
+   (deps-cljs :name "cljsjs.gl-matrix")
+   (pom)
+   (jar)))

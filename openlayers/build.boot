@@ -1,32 +1,32 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[adzerk/bootlaces   "0.1.9" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.4.6" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "3.3.0-0")
+(def +lib-version+ "4.4.1")
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/openlayers
        :version     +version+
-       :description "Openlayers packaged up with Google Closure externs"
+       :description "A high-performance, feature-packed library for all your mapping needs"
        :url         "http://openlayers.org/"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"BSD" "http://opensource.org/licenses/BSD-2-Clause"}})
 
 (deftask package []
   (comp
-    (download :url "https://github.com/openlayers/ol3/releases/download/v3.3.0/v3.3.0.zip"
-              :checksum "0d12356abb8e4ac6d3d3d955e1abbd47"
+    (download :url (format "https://github.com/openlayers/openlayers/releases/download/v%s/v%s.zip" +lib-version+ +lib-version+)
+              :checksum "555FEADA2D0767132E278AE030BF3694"
               :unzip true)
-    (download :url "https://github.com/openlayers/ol3/archive/v3.3.0.zip"
-              :checksum "cc552d354453d0ac7e1ae6fb849d9766"
+    (download :url (format "https://github.com/openlayers/openlayers/archive/v%s.zip" +lib-version+)
+              :checksum "89636AA3D173B338F59ADAD9DCD9C0F4"
               :unzip true)
-    (sift :move {#"^v([\d\.]*)/ol/ol/" "cljsjs/development/openlayers/ol/"
-                 #"^v([\d\.]*)/ol.ext/" "cljsjs/development/openlayers/ol.ext/"
-                 #"^v([\d\.]*)/css/ol.css" "cljsjs/common/openlayers.inc.css"
-                 #"^ol3-([\d\.]*)/externs/oli.js" "cljsjs/common/openlayersi.ext.js"
-                 #"^ol3-([\d\.]*)/externs/olx.js" "cljsjs/common/openlayersx.ext.js"})
-    (sift :include #{#"^cljsjs/" #"deps.cljs"})))
+    (sift :move {#"^v([\d\.]*)/ol/ol/" "cljsjs/openlayers/development/ol/"
+                 #"^v([\d\.]*)/ol\.ext/" "cljsjs/openlayers/development/ol.ext/"
+                 #"^v([\d\.]*)/css/ol\.css" "cljsjs/openlayers/common/openlayers.inc.css"
+                 #"^openlayers-([\d\.]*)/externs/(.*)\.js" "cljsjs/openlayers/common/$2.ext.js"})
+    (sift :include #{#"^cljsjs/" #"deps.cljs"})
+    (pom)
+    (jar)))
