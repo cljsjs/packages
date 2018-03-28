@@ -13,6 +13,8 @@ you can require the packaged library like so:
 ```clojure
 (ns application.core
   (:require cljsjs.simple-peer))
-  ```
+
+(js/SimplePeer opts)
+```
 
   [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies

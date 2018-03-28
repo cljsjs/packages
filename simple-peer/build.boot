@@ -1,10 +1,10 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.7.1" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "8.5.0")
+(def +lib-version+ "9.0.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -17,10 +17,11 @@
 
 (deftask package []
   (comp
-    (download :url (str "https://wzrd.in/standalone/simple-peer@" +lib-version+))
-    (sift :move {(re-pattern (str "^simple-peer@" +lib-version+)) "cljsjs/simple-peer/development/simple-peer.inc.js"})
-    (minify :in "cljsjs/simple-peer/development/simple-peer.inc.js"
-            :out "cljsjs/simple-peer/production/simple-peer.min.inc.js")
+    (download
+      :url (str "https://github.com/feross/simple-peer/archive/v" +lib-version+ ".zip")
+      :unzip true)
+    (sift :move {#".*simplepeer.min.js" "cljsjs/simple-peer/development/simple-peer.inc.js"
+                 #".*simplepeer.min.js" "cljsjs/simple-peer/production/simple-peer.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.simple-peer")
     (pom)
