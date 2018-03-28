@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/simple-peer "8.5.0-0"] ;; latest release
+[cljsjs/simple-peer "9.0.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -13,6 +13,8 @@ you can require the packaged library like so:
 ```clojure
 (ns application.core
   (:require cljsjs.simple-peer))
-  ```
+
+(js/SimplePeer opts)
+```
 
   [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies

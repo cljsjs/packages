@@ -1,0 +1,31 @@
+{
+  "name": "elliptic",
+  "version": "6.4.0",
+  "description": "EC cryptography",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:indutny/elliptic"
+  },
+  "keywords": [
+    "EC",
+    "Elliptic",
+    "curve",
+    "Cryptography"
+  ],
+  "author": "Fedor Indutny <fedor@indutny.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/indutny/elliptic/issues"
+  },
+  "homepage": "https://github.com/indutny/elliptic",
+  "dependencies": {
+    "elliptic": "^6.4.0"
+  },
+  "devDependencies": {
+    "cross-env": "^3.1.4",
+    "browserify": "^15.1.0"
+  },
+  "scripts": {
+    "bundle": "cross-env NODE_ENV=production browserify ./node_modules/elliptic/lib/elliptic.js -s elliptic -o elliptic.bundle.js"
+  }
+}

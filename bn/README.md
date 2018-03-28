@@ -14,7 +14,7 @@ you can require the packaged library like so:
 (ns application.core
   (:require cljsjs.bn))
 
-(js/bn.js. "13948194819348183491893481934013840913840913841")
-  ```
+(js/bn. "42")
+```
 
   [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies

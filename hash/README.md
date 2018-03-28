@@ -14,9 +14,9 @@ you can require the packaged library like so:
 (ns application.core
   (:require cljsjs.hash))
 
-(-> (.sha512 js/hash.js)
+(-> (.sha512 js/hash)
     (.update "I'm getting hashed!")
     (.digest))
-  ```
+```
 
   [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies
