@@ -8,7 +8,7 @@ jobs:
       - checkout
       # No easy way to create checksum for cljsjs
       - restore_cache:
-          key: cljsjs-v2
+          key: cljsjs-v3
       - restore_cache:
           key: closure-{{ checksum "test-extern-files.sh" }}
       - run: ./setup_gpg.sh
@@ -18,7 +18,7 @@ jobs:
             - ~/.m2
             - ~/.boot/cache/lib
             - ~/.boot/cache/bin
-          key: cljsjs-v2
+          key: cljsjs-v3
       - save_cache:
           key: closure-{{ checksum "test-extern-files.sh" }}
           paths:
