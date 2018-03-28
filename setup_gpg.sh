@@ -1,8 +1,10 @@
 #!/bin/bash
 
+set -e
 # Important to not use -x here, or secrets will be exposed...
 
 if [[ $CIRCLE_BRANCH == "master" ]]; then
+    mkdir -p ~/.gnupg
     echo -e "use-agent\ndefault-key cljsjs.robot@gmail.com\npassphrase $GPG_PASSPHRASE" >> ~/.gnupg/gpg.conf
     # CircleCI doesn't support newlines in vars so newlines are coded as "|"
     echo -e "$GPG_KEY" | tr "|" "\n" > gpg.key
