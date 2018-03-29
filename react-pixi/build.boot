@@ -1,7 +1,7 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]
-                  [cljsjs/pixi "4.0.3-0"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]
+                  [cljsjs/pixi "4.5.6-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -9,7 +9,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh *sh-dir*]])
 
-(def +lib-version+ "0.9.1")
+(def +lib-version+ "0.9.16")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (str "react-pixi-" +lib-version+))
 
@@ -24,7 +24,7 @@
 (deftask download-zip []
   (download
    :url (str "https://github.com/Izzimach/react-pixi/archive/v" +lib-version+ ".zip")
-   :checksum "94182b157a34584000e4999e644fa214"
+   :checksum "ad0f7bff0dd218cfcb1dce67a86b5fe9"
    :unzip true))
 
 (deftask build []
