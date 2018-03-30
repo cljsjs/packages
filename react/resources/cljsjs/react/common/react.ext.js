@@ -217,6 +217,16 @@ React.Component.prototype.componentWillUnmount = function() {};
 React.Component.prototype.componentDidCatch = function() {};
 
 /**
+ * @protected
+ */
+React.Component.prototype.getDerivedStateFromProps = function() {};
+
+/**
+ * @protected
+ */
+React.Component.prototype.getSnapshotBeforeUpdate = function() {};
+
+/**
  * @return {React.Component}
  * @protected
  */
@@ -1828,3 +1838,16 @@ var topWaiting;
 var topWheel;
 
 React.Fragment = function() {};
+
+/* 16.3.0 new API */
+
+React.createContext = function() {};
+
+React.Context = function() {};
+React.Context.prototype.Provider = function() {};
+React.Context.prototype.Consumer = function() {};
+
+React.createRef = function() {};
+React.forwardRef = function() {};
+
+React.StrictMode = function () {};
