@@ -30,8 +30,9 @@
              :unzip false)
    (sift :move {#"Recharts\.js" "cljsjs/recharts/development/Recharts.inc.js"
                 #"Recharts\.min\.js" "cljsjs/recharts/production/Recharts.min.inc.js"})
-   (deps-cljs :name "cljsjs.recharts"
-              :requires ["cljsjs.react" "cljsjs.prop-types"])
+   (deps-cljs :provides ["recharts" "cljsjs.recharts"]
+              :requires ["react" "prop-types"]
+              :global-exports '{recharts Recharts})
    (sift :include #{#"^cljsjs" #"^deps\.cljs$"})
    (pom)
    (jar)
