@@ -12,7 +12,7 @@
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "1.0.0-beta.10")
-(def +version+ (str +lib-version+ "-1"))
+(def +version+ (str +lib-version+ "-2"))
 
 (task-options!
  pom  {:project     'cljsjs/recharts
@@ -30,8 +30,9 @@
              :unzip false)
    (sift :move {#"Recharts\.js" "cljsjs/recharts/development/Recharts.inc.js"
                 #"Recharts\.min\.js" "cljsjs/recharts/production/Recharts.min.inc.js"})
-   (deps-cljs :name "cljsjs.recharts"
-              :requires ["cljsjs.react" "cljsjs.prop-types"])
+   (deps-cljs :provides ["recharts" "cljsjs.recharts"]
+              :requires ["react" "prop-types"]
+              :global-exports '{recharts Recharts})
    (sift :include #{#"^cljsjs" #"^deps\.cljs$"})
    (pom)
    (jar)
