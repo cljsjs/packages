@@ -5,7 +5,7 @@ var SlateReact = {
     "focus": function() {}
   },
   "Plugins": {},
-  "Custom": {
+  "CustomNode": {
     "shouldNodeComponentUpdate": function() {}
   },
   "findDOMNode": function() {},
