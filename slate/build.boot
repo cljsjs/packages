@@ -1,9 +1,9 @@
-(def +lib-version+ "0.31.3")
+(def +lib-version+ "0.33.4")
 (def +version+ (str +lib-version+ "-0"))
 
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/boot-cljsjs "0.8.2" :scope "test"]
+ :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]
                  [cljsjs/immutable "3.8.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
@@ -19,9 +19,9 @@
 (deftask package  []
   (comp
    (download :url (str "https://unpkg.com/slate@" +lib-version+  "/dist/slate.js")
-             :checksum "eae6213c6fe071154a6ca9868b29f688")
+             :checksum "04b5542a4e40a4c07ffb24972cba1905")
    (download :url (str "https://unpkg.com/slate@" +lib-version+  "/dist/slate.min.js")
-             :checksum "f50c3828c0ca9040d9047612aa8745bf")
+             :checksum "540ce9f0ce48e97fff0aa160dcd272f1")
    (sift :move {#"^slate.js$"
                 "cljsjs/slate/development/slate.inc.js"
                 #"^slate.min.js"
