@@ -1,10 +1,10 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.3.0")
+(def +lib-version+ "1.4.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,10 +18,10 @@
 (deftask package []
   (comp
     (download :url (format "https://github.com/bgrins/TinyColor/archive/%s.zip" +lib-version+)
-              :checksum "37157cab313a15d4c26dbc9c205ad4a1"
+              :checksum "0d7c96ba14179264c6739ddff3ac8471"
               :unzip true)
     (sift :move {#"^TinyColor.*/tinycolor\.js" "cljsjs/tinycolor/development/tinycolor.inc.js"
-                 #"^TinyColor.*/dist/tinycolor\.min\.js" "cljsjs/tinycolor/production/tinycolor.min.inc.js"})
+                 #"^TinyColor.*/dist/tinycolor-min\.js" "cljsjs/tinycolor/production/tinycolor.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.tinycolor")
     (pom)
