@@ -2,8 +2,7 @@
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.10.0"  :scope "test"]
                   [cljsjs/react       "16.3.0-0"]
-                  [cljsjs/react-dom   "16.3.0-0"]
-                  [cljsjs/react-dom-server "16.3.0-0"]])
+                  [cljsjs/react-dom   "16.3.0-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -59,7 +58,6 @@
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-sanfona"
                :requires ["cljsjs.react"
-                          "cljsjs.react-dom"
-                          "cljsjs.react-dom-server"])
+                          "cljsjs.react-dom"])
     (pom)
     (jar)))
