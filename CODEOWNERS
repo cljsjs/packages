@@ -9,6 +9,7 @@ react-leaflet/   @Deraen
 prop-types/      @Deraen
 react-transition-group/    @Deraen
 react-transition-group_1/  @Deraen
+react-lifecycles-compat/  @Deraen
 
 highcharts/        @Miikka
 highstock/         @Miikka
