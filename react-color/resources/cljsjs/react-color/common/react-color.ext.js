@@ -4,7 +4,7 @@ var ReactColor = {
     "ChromePicker": {},
     "CirclePicker": {},
     "CompactPicker": {},
-    "GitHubPicker": {},
+    "GithubPicker": {},
     "HuePicker": {},
     "MaterialPicker": {},
     "PhotoshopPicker": {},
@@ -12,5 +12,5 @@ var ReactColor = {
     "SliderPicker": {},
     "SwatchesPicker": {},
     "TwitterPicker": {},
-    "ColorWrapPicker": {}
+    "CustomPicker": {}
 }
