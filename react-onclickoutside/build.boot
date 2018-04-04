@@ -4,7 +4,6 @@
 (set-env!
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]
-                 [cljsjs/object-assign-shim "0.1.0-1"]
                  [cljsjs/react "16.3.0-0"]
                  [cljsjs/react-dom "16.3.0-0"]])
 
@@ -27,8 +26,7 @@
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.react-onclickoutside"
               :requires ["cljsjs.react"
-                         "cljsjs.react-dom"
-                         "cljsjs.object-assign-shim"])
+                         "cljsjs.react-dom"])
    (pom)
    (jar)
    (validate-checksums)))
