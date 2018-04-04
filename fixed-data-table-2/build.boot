@@ -22,21 +22,21 @@
    (download :url (format "https://github.com/schrodinger/fixed-data-table-2/archive/v%s.zip" +lib-version+)
              :unzip true)
    (sift :move {#"^fixed-data-table-.*/dist/fixed-data-table.js"
-                "cljsjs/development/fixed-data-table.inc.js"
+                "cljsjs/fixed-data-table-2/development/fixed-data-table.inc.js"
                 #"^fixed-data-table-.*/dist/fixed-data-table.css"
-                "cljsjs/development/fixed-data-table.inc.css"
+                "cljsjs/fixed-data-table-2/development/fixed-data-table.inc.css"
                 #"^fixed-data-table-.*/dist/fixed-data-table-base.css"
-                "cljsjs/development/fixed-data-table-base.inc.css"
+                "cljsjs/fixed-data-table-2/development/fixed-data-table-base.inc.css"
                 #"^fixed-data-table-.*/dist/fixed-data-table-style.css"
-                "cljsjs/development/fixed-data-table-style.inc.css"
+                "cljsjs/fixed-data-table-2/development/fixed-data-table-style.inc.css"
                 #"^fixed-data-table-.*/dist/fixed-data-table.min.js"
-                "cljsjs/production/fixed-data-table.min.inc.js"
+                "cljsjs/fixed-data-table-2/production/fixed-data-table.min.inc.js"
                 #"^fixed-data-table-.*/dist/fixed-data-table.min.css"
-                "cljsjs/production/fixed-data-table.min.inc.css"
+                "cljsjs/fixed-data-table-2/production/fixed-data-table.min.inc.css"
                 #"^fixed-data-table-.*/dist/fixed-data-table-base.min.css"
-                "cljsjs/production/fixed-data-table-base.min.inc.css"
+                "cljsjs/fixed-data-table-2/production/fixed-data-table-base.min.inc.css"
                 #"^fixed-data-table-.*/dist/fixed-data-table-style.min.css"
-                "cljsjs/production/fixed-data-table-style.min.inc.css"})
+                "cljsjs/fixed-data-table-2/production/fixed-data-table-style.min.inc.css"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.fixed-data-table-2"
               :requires ["cljsjs.react" "cljsjs.react.dom"])
