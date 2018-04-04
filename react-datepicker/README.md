@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-datepicker "0.55.0-0"] ;; latest release
+[cljsjs/react-datepicker "1.4.0-0"] ;; latest release
 ```
 [](/dependency)
 
