@@ -8,8 +8,8 @@
 	"build:prod-icons": "browserify main-icons.js -p [ minifyify --no-map ] > material-ui-svg-icons.min.inc.js"
     },
     "dependencies": {
-	"material-ui": "1.0.0-beta.34",
-	"material-ui-icons": "1.0.0-beta.17"
+	"material-ui": "1.0.0-beta.40",
+	"material-ui-icons": "1.0.0-beta.36"
     },
     "devDependencies": {
 	"browserify": "16.1.0",
