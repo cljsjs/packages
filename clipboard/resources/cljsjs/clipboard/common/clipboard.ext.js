@@ -7,7 +7,9 @@
  * Clipboard("foo"), then extracted from foo.
  */
 var Clipboard = {
-    "action": function () {},
+    "action": {
+        "clearSelection": function () {}
+    },
     "target": function () {},
     "text": function () {},
     "listener": {
