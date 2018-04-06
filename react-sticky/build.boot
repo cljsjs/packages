@@ -1,12 +1,13 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]
-                  [cljsjs/react "15.3.1-0"]
-                  [cljsjs/react-dom "15.3.1-0"]])
+                  [cljsjs/prop-types "15.6.0-0"]
+                  [cljsjs/react "15.6.2-0"]
+                  [cljsjs/react-dom "15.6.2-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "6.0.1")
+(def +lib-version+ "6.0.2")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "react-sticky-%s" +lib-version+))
 
@@ -29,7 +30,6 @@
 
 (deftask download-react-sticky []
   (download :url url
-            :checksum "371FACEE629677CE015B5AF3AE72651E"
             :unzip true))
 
 (def webpack-file-name "webpack.config.js")
@@ -64,7 +64,8 @@
             :out "cljsjs/react-sticky/production/react-sticky.min.inc.js")
 
     (deps-cljs :name "cljsjs.react-sticky"
-               :requires ["cljsjs.react" "cljsjs.react.dom"])
+               :requires ["cljsjs.prop-types" "cljsjs.react" "cljsjs.react.dom"])
     (pom)
-    (jar)))
+    (jar)
+    (validate-checksums)))
 
