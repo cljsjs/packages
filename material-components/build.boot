@@ -8,7 +8,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [dosh]])
 
-(def +lib-version+ "0.25.0")
+(def +lib-version+ "0.34.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -42,12 +42,12 @@
   (task-options! push {:ensure-branch nil})
   (comp
    (download :url (str "https://github.com/material-components/material-components-web/archive/v" +lib-version+ ".zip")
-             :checksum "0c5101cc2b9d0fbe5515c1262ab17d52"
              :unzip true)
 
    (build-material-components)
 
    (sift :move {#"^material-components-web-[^/]*/build/material-components-web.js$"      "cljsjs/material-components/development/material-components.inc.js"
+                #"^material-components-web-[^/]*/build/material-components-web.js.map$"     "cljsjs/material-components/development/material-components-web.js.map"
                 #"^material-components-web-[^/]*/build/material-components-web.css$"     "cljsjs/material-components/development/material-components.inc.css"
                 #"^material-components-web-[^/]*/build/material-components-web.min.js$"  "cljsjs/material-components/production/material-components.min.inc.js"
                 #"^material-components-web-[^/]*/build/material-components-web.min.css$" "cljsjs/material-components/production/material-components.min.inc.css"
@@ -56,4 +56,5 @@
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.material-components")
    (pom)
-   (jar)))
+   (jar)
+   (validate-checksums)))
