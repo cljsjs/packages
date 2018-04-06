@@ -6,7 +6,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.4.3")
+(def +lib-version+ "v0.9.5")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "react-popper-%s" +lib-version+))
 
@@ -42,7 +42,7 @@
 
 (deftask package []
   (comp
-    
+
     (download-react-popper)
 
     (build-react-popper)
