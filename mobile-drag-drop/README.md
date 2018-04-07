@@ -16,7 +16,9 @@ you can require the packaged library like so:
 ```clojure
 (ns application.core
   (:require
-    [cljsjs.mobile-drag-drop]))
+    [cljsjs.mobile-drag-drop]
+    ;; Require search-behaviour if needed
+    [cljsjs.mobile-drag-drop.search-behaviour]))
 ```
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps

@@ -18,9 +18,9 @@
 (deftask package []
   (comp
     (comp
-      (download :url (format "https://unpkg.com/mobile-drag-drop@%s/index.min.js" +lib-version+)
+      (download :url (format "https://unpkg.com/mobile-drag-drop@%s/index.js" +lib-version+)
                 :target "cljsjs/mobile-drag-drop/development/mobile-drag-drop.inc.js")
-      (download :url (format "https://unpkg.com/mobile-drag-drop@%s/scroll-behaviour.min.js" +lib-version+)
+      (download :url (format "https://unpkg.com/mobile-drag-drop@%s/scroll-behaviour.js" +lib-version+)
                 :target "cljsjs/mobile-drag-drop/development/scroll-behaviour.inc.js")
       (download :url (format "https://unpkg.com/mobile-drag-drop@%s/debug.css" +lib-version+)
                 :target "cljsjs/mobile-drag-drop/development/debug.inc.css")
@@ -32,14 +32,21 @@
       (download :url (format "https://unpkg.com/mobile-drag-drop@%s/index.min.js" +lib-version+)
                 :target "cljsjs/mobile-drag-drop/production/mobile-drag-drop.min.inc.js")
       (download :url (format "https://unpkg.com/mobile-drag-drop@%s/scroll-behaviour.min.js" +lib-version+)
-                :target "cljsjs/mobile-drag-drop/production/scroll-behaviour.inc.js")
+                :target "cljsjs/mobile-drag-drop/production/scroll-behaviour.min.inc.js")
       (download :url (format "https://unpkg.com/mobile-drag-drop@%s/debug.css" +lib-version+)
                 :target "cljsjs/mobile-drag-drop/production/debug.inc.css")
       (download :url (format "https://unpkg.com/mobile-drag-drop@%s/default.css" +lib-version+)
                 :target "cljsjs/mobile-drag-drop/development/default.inc.css")
       (download :url (format "https://unpkg.com/mobile-drag-drop@%s/icons.css" +lib-version+)
                 :target "cljsjs/mobile-drag-drop/production/icons.inc.css")
-      (deps-cljs :name "cljsjs.mobile-drag-drop")
+      (deps-cljs :foreign-libs [{:file #"mobile-drag-drop\.inc\.js"
+                                 :file-min #"mobile-drag-drop\.min\.inc\.js"
+                                 :provides ["cljsjs.mobile-drag-drop"]}
+                                {:file #"scroll-behaviour\.inc\.js"
+                                 :file-min #"scroll-behaviour\.min\.inc\.js"
+                                 :requires ["cljsjs.mobile-drag-drop"]
+                                 :provides ["cljsjs.mobile-drag-drop.search-behaviour"]}]
+                 :externs [#"mobile-drag-drop\.ext\.js"])
       (pom)
       (jar))
     (validate-checksums)))
