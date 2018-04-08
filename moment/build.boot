@@ -1,20 +1,20 @@
 (set-env!
-  :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]])
+ :resource-paths #{"resources"}
+ :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.17.1")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "2.22.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
-  push {:ensure-clean false}
-  pom  {:project     'cljsjs/moment
-        :version     +version+
-        :description "A javascript date library for parsing, validating, manipulating, and formatting dates."
-        :url         "http://momentjs.com/"
-        :license     {"MIT" "http://opensource.org/licenses/MIT"}
-        :scm         {:url "https://github.com/cljsjs/packages"}})
+ push {:ensure-clean false}
+ pom  {:project     'cljsjs/moment
+       :version     +version+
+       :description "A javascript date library for parsing, validating, manipulating, and formatting dates."
+       :url         "http://momentjs.com/"
+       :license     {"MIT" "http://opensource.org/licenses/MIT"}
+       :scm         {:url "https://github.com/cljsjs/packages"}})
 
 (require '[boot.core :as c]
          '[boot.tmpdir :as tmpd]
@@ -41,16 +41,16 @@
 
 (deftask package []
   (comp
-    (download :url (format "https://github.com/moment/moment/archive/%s.zip" +lib-version+)
-              :checksum "9d51871a95c2314ddd9b614eccd8e88f"
-              :unzip true)
-    ; Locale files are not immediately named .inc.js as we don't want deps-cljs to find them
-    (sift :move {#"^moment-[^\/]*/moment\.js"          "cljsjs/development/moment.inc.js"
-                 #"^moment-[^\/]*/min/moment\.min\.js" "cljsjs/production/moment.min.inc.js"
-                 #"^moment-[^\/]*/locale/(.*)\.js"     "cljsjs/common/locale/$1.js"})
-    (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.moment")
-    (sift :move {#"^cljsjs/common/locale/(.*)\.js" "cljsjs/common/locale/$1.inc.js"})
-    (generate-locale-deps)
-    (pom)
-    (jar)))
+   (download :url (format "https://github.com/moment/moment/archive/%s.zip" +lib-version+)
+             :checksum "eae4dbd3c3668ba508154b3965ad8cf5"
+             :unzip true)
+                                        ; Locale files are not immediately named .inc.js as we don't want deps-cljs to find them
+   (sift :move {#"^moment-[^\/]*/moment\.js"          "cljsjs/development/moment.inc.js"
+                #"^moment-[^\/]*/min/moment\.min\.js" "cljsjs/production/moment.min.inc.js"
+                #"^moment-[^\/]*/locale/(.*)\.js"     "cljsjs/common/locale/$1.js"})
+   (sift :include #{#"^cljsjs"})
+   (deps-cljs :name "cljsjs.moment")
+   (sift :move {#"^cljsjs/common/locale/(.*)\.js" "cljsjs/common/locale/$1.inc.js"})
+   (generate-locale-deps)
+   (pom)
+   (jar)))

@@ -3,12 +3,14 @@ jobs:
   build:
     working_directory: ~/cljsjs
     docker:
-      - image: cljsjs/build-image:0.0.7
+      - image: circleci/clojure:boot-2.7.2-node
     steps:
       - checkout
       # No easy way to create checksum for cljsjs
       - restore_cache:
-          key: cljsjs-v2
+          key: cljsjs-v3
+      - restore_cache:
+          key: closure-{{ checksum "test-extern-files.sh" }}
       - run: ./setup_gpg.sh
       - run: ./circle.sh
       - save_cache:
@@ -16,7 +18,11 @@ jobs:
             - ~/.m2
             - ~/.boot/cache/lib
             - ~/.boot/cache/bin
-          key: cljsjs-v2
+          key: cljsjs-v3
+      - save_cache:
+          key: closure-{{ checksum "test-extern-files.sh" }}
+          paths:
+            - ~/cljsjs/closure-compiler.jar
     environment:
       BOOT_JVM_OPTIONS: "-Xms512m -Xmx1024m"
       NPM_CONFIG_LOGLEVEL: warn

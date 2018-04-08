@@ -217,6 +217,16 @@ React.Component.prototype.componentWillUnmount = function() {};
 React.Component.prototype.componentDidCatch = function() {};
 
 /**
+ * @protected
+ */
+React.Component.prototype.getDerivedStateFromProps = function() {};
+
+/**
+ * @protected
+ */
+React.Component.prototype.getSnapshotBeforeUpdate = function() {};
+
+/**
  * @return {React.Component}
  * @protected
  */
@@ -1828,3 +1838,38 @@ var topWaiting;
 var topWheel;
 
 React.Fragment = function() {};
+
+/* 16.3.0 new API */
+
+React.createContext = function() {};
+
+React.Context = function() {};
+React.Context.prototype.Provider = function() {};
+React.Context.prototype.Consumer = function() {};
+
+React.createRef = function() {};
+React.forwardRef = function() {};
+
+React.StrictMode = function () {};
+
+// https://github.com/facebook/react/blob/master/packages/shared/isTextInputElement.js#L13-L29
+// Closure will rename these properties during optimization
+// But these are used dynamically to check against element props so they must not be renamed.
+var isTextInputElement = {};
+isTextInputElement.supportedInputTypes = {
+  color: true,
+  date: true,
+  datetime: true,
+  'datetime-local': true,
+  email: true,
+  month: true,
+  number: true,
+  password: true,
+  range: true,
+  search: true,
+  tel: true,
+  text: true,
+  time: true,
+  url: true,
+  week: true
+};

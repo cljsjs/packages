@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/buffer "5.1.0-0"] ;; latest release
+[cljsjs/buffer "5.1.0-1"] ;; latest release
 ```
 [](/dependency)
 
@@ -13,6 +13,8 @@ you can require the packaged library like so:
 ```clojure
 (ns application.core
   (:require cljsjs.buffer))
-  ```
+
+(js/buffer.Buffer.from "I'm almost a buffer!")
+```
 
   [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies

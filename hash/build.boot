@@ -1,6 +1,6 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.7.1" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -15,10 +15,17 @@
         :license     {"MIT" "https://github.com/indutny/hash.js#license"}
         :scm         {:url "https://github.com/cljsjs/packages"}})
 
+(deftask build-hash []
+  (run-commands :commands [["npm" "install" "--include-dev"]
+                           ["npm" "run" "bundle"]
+                           ["npm" "run" "generate-extern"]
+                           ["rm" "-rf" "./node_modules"]]))
+
 (deftask package []
   (comp
-    (download :url (str "https://wzrd.in/standalone/hash.js@" +lib-version+))
-    (sift :move {(re-pattern (str "^hash.js@" +lib-version+)) "cljsjs/hash/development/hash.inc.js"})
+    (build-hash)
+    (sift :move {#".*hash.bundle.js" "cljsjs/hash/development/hash.inc.js"
+                 #".*hash.ext.js" "cljsjs/hash/common/hash.ext.js"})
     (minify :in "cljsjs/hash/development/hash.inc.js"
             :out "cljsjs/hash/production/hash.min.inc.js")
     (sift :include #{#"^cljsjs"})

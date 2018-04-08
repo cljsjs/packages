@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-color "2.13.1-0"] ;; latest release
+[cljsjs/react-color "2.13.8-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -40,7 +40,7 @@ The following is an example of providing factory functions for each of the color
 (def slider-picker (js/React.createFactory js/ReactColor.SliderPicker))
 (def swatches-picker (js/React.createFactory js/ReactColor.SwatchesPicker))
 (def twitter-picker (js/React.createFactory js/ReactColor.TwitterPicker))
-(def color-wrap-picker (js/React.createFactory js/ReactColor.ColorWrapPicker))
+(def custom-picker (js/React.createFactory js/ReactColor.CustomPicker))
 
 ```
 

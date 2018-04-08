@@ -1,9 +1,9 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.0"  :scope "test"]
                   [cljsjs/react "15.4.2-2"]
                   [cljsjs/lodash "4.11.2-0"]
-                  [cljsjs/tinycolor "1.3.0-0"]
+                  [cljsjs/tinycolor "1.4.1-0"]
                   [cljsjs/proptypes "0.14.3-0"]
                   [cljsjs/material-colors "1.2.5-0"]
                   [cljsjs/reactcss "1.2.0-0"]])
@@ -14,7 +14,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "2.13.1")
+(def +lib-version+ "2.13.8")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "react-color-%s" +lib-version+))
 
@@ -28,7 +28,7 @@
 
 (deftask download-react-color []
   (download  :url      (format "https://github.com/casesandberg/react-color/archive/v%s.zip" +lib-version+)
-             :checksum "A6F47AB81F7829F88D46BAAF783E504F"
+             :checksum "1d0d832d217a675cb9dcf4618c66c01a"
              :unzip    true))
 
 (def webpack-file-name "webpack.config.js")
@@ -50,7 +50,7 @@
                   (io/file tmp +lib-folder+ "webpack-cljsjs.config.js"))
                 (binding [*sh-dir* (str (io/file tmp +lib-folder+))]
                          ((sh "npm" "install" "--ignore-scripts"))
-                         ((sh "npm" "install" "webpack"))
+                         ((sh "npm" "install" "webpack@3"))
                          ((sh "./node_modules/.bin/webpack" "--config" "webpack-cljsjs.config.js")))
                 (-> fileset (boot/add-resource tmp) boot/commit!))))
 

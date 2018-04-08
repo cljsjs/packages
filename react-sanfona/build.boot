@@ -1,7 +1,8 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]
-                  [cljsjs/react       "15.3.0-0"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.0"  :scope "test"]
+                  [cljsjs/react       "16.3.0-0"]
+                  [cljsjs/react-dom   "16.3.0-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -9,7 +10,7 @@
          '[boot.util :refer [dosh]]
          '[clojure.java.io :as io])
 
-(def +lib-version+ "0.2.3")
+  (def +lib-version+ "1.1.0")
 (def +lib-folder+ (format "react-sanfona-%s" +lib-version+))
 (def +version+ (str +lib-version+ "-0"))
 (defn- dosh-cmd [& args]
@@ -29,7 +30,7 @@
 
 (deftask download-react-sanfona []
   (download :url      (str "https://github.com/daviferreira/react-sanfona/archive/v" +lib-version+ ".zip")
-            :checksum "FE63AA06EC3F9E652C7E66CD0284A0A0"
+            :checksum "6C77AC2C31413C0CC4DA1BF3B499A51F"
             :unzip    true))
 
 (deftask build []
@@ -56,6 +57,7 @@
                  "cljsjs/react-sanfona/production/react-sanfona.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-sanfona"
-               :requires ["cljsjs.react"])
+               :requires ["cljsjs.react"
+                          "cljsjs.react-dom"])
     (pom)
     (jar)))

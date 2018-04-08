@@ -8,6 +8,7 @@ set -e
 echo "Validate extern files"
 ./test-extern-files.sh
 
+mkdir -p ~/.boot
 cp profile.boot ~/.boot/profile.boot
 echo '{"allow_root": true}' > ~/.bowerrc
 
