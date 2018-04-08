@@ -1,20 +1,23 @@
-# cljsjs/d3
+# cljsjs/datatables.net-responsive
 
 [](dependency)
 ```clojure
-[cljsjs/d3 "4.12.0-0"] ;; latest release
+[cljsjs/datatables.net-responsive "2.2.1-0"] ;; latest release
 ```
+
 [](/dependency)
 
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
-of the ClojureScript compiler. After adding the above dependency to your project
+of the ClojureScript compiler.
+
+This library 
+
+After adding the above dependency to your project
 you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.d3))
+  (:require
+    [cljsjs.datatables.net-responsive]))
 ```
-
-Uses externs provided by `federico-b/d3-externs`, many thanks!
-
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps
