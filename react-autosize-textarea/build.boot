@@ -1,13 +1,13 @@
 (set-env!
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]
-                 [cljsjs/react "16.3.0-0"]
-                 [cljsjs/react-dom "16.3.0-0"]])
+                 [cljsjs/react "16.3.0-1"]
+                 [cljsjs/react-dom "16.3.0-1"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "3.0.2")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/react-autosize-textarea
@@ -54,7 +54,7 @@
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.react-autosize-textarea"
               :requires ["cljsjs.react"
-                         "cljsjs.react-dom"])
+                         "cljsjs.react.dom"])
    (pom)
    (jar)
    (validate-checksums)))
