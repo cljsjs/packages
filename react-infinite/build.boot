@@ -28,10 +28,11 @@
                 #"^react-infinite-(.*)/dist/react-infinite.min.js$"
                 "cljsjs/react-infinite/production/react-infinite.min.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.react-infinite"
-              :requires ["cljsjs.react"
-                         "cljsjs.react.dom"
-                         "cljsjs.prop-types"])
+   (deps-cljs :foreign-libs [{:file #"react-infinite.inc.js"
+                              :file-min #"react-infinite.min.inc.js"
+                              :provides ["react-infinite" "cljsjs.react-infinite"]
+                              :requires ["react" "react-dom" "prop-types"]}]
+              :externs [#"react-infinite.ext.js"])
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))
