@@ -3,11 +3,14 @@
  :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]
                  [cljsjs/react "16.3.0-1"]
                  [cljsjs/react-dom "16.3.0-1"]
+                 [cljsjs/prop-types "15.6.0-0"]
                  [cljsjs/moment "2.22.0-0"]
-                 [cljsjs/react-onclickoutside "6.7.1-0"]])
+                 [cljsjs/react-popper "0.10.1-0"]
+                 [cljsjs/classnames "2.2.5-0"]
+                 [cljsjs/react-onclickoutside "6.7.1-1"]])
 
 (def +lib-version+ "1.4.0")
-(def +version+ (str +lib-version+ "-1"))
+(def +version+ (str +lib-version+ "-2"))
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -33,7 +36,10 @@
    (deps-cljs :name "cljsjs.react-datepicker"
               :requires ["cljsjs.react"
                          "cljsjs.react.dom"
+                         "cljsjs.prop-types"
+                         "cljsjs.classnames"
                          "cljsjs.moment"
+                         "cljsjs.react-popper"
                          "cljsjs.react-onclickoutside"])
    (pom)
    (jar)
