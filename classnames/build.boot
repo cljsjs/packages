@@ -1,10 +1,10 @@
 (set-env!
-  :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]])
+ :resource-paths #{"resources"}
+ :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.2.3")
+(def +lib-version+ "2.2.5")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -17,14 +17,14 @@
 
 (deftask package []
   (comp
-    (download :url (str "https://github.com/JedWatson/classnames/archive/v" +lib-version+ ".zip")
-              :checksum "489C6637D7FC745202B870A455B184A7"
-              :unzip    true)
-    (sift     :move     {(re-pattern (str "^classnames-" +lib-version+ "/index.js"))
-                         "cljsjs/development/classnames.inc.js"})
-    (minify   :in       "cljsjs/development/classnames.inc.js"
-              :out      "cljsjs/production/classnames.min.inc.js")
-    (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.classnames")
-    (pom)
-    (jar)))
+   (download :url (str "https://github.com/JedWatson/classnames/archive/v" +lib-version+ ".zip")
+             :unzip    true)
+   (sift     :move     {(re-pattern (str "^classnames-" +lib-version+ "/index.js"))
+                        "cljsjs/development/classnames.inc.js"})
+   (minify   :in       "cljsjs/development/classnames.inc.js"
+             :out      "cljsjs/production/classnames.min.inc.js")
+   (sift :include #{#"^cljsjs"})
+   (deps-cljs :name "cljsjs.classnames")
+   (pom)
+   (jar)
+   (validate-checksums)))
