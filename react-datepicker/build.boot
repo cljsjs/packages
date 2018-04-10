@@ -4,10 +4,10 @@
                  [cljsjs/react "16.3.0-1"]
                  [cljsjs/react-dom "16.3.0-1"]
                  [cljsjs/moment "2.22.0-0"]
-                 [cljsjs/react-onclickoutside "6.7.1-0"]])
+                 [cljsjs/react-onclickoutside "6.7.1-1"]])
 
 (def +lib-version+ "1.4.0")
-(def +version+ (str +lib-version+ "-1"))
+(def +version+ (str +lib-version+ "-2"))
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
