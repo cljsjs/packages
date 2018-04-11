@@ -1,39 +1,33 @@
 (set-env!
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]
-                 [cljsjs/react "16.2.0-3"]
-                 [cljsjs/react-dom "16.2.0-3"]
-                 [cljsjs/react-transition-group "2.2.1-1"]
+                 [cljsjs/react "16.3.0-1"]
+                 [cljsjs/react-dom "16.3.0-1"]
                  [cljsjs/prop-types "15.6.0-0"]])
 
-(require '[boot.core :as c]
-         '[boot.tmpdir :as tmpd]
-         '[clojure.java.io :as io]
-         '[cljsjs.boot-cljsjs.packaging :refer :all])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "1.0.0-beta.10")
-(def +version+ (str +lib-version+ "-2"))
+(def +version+ (str +lib-version+ "-3"))
 
 (task-options!
  pom  {:project     'cljsjs/recharts
        :version     +version+
-       :description "Redefined chart library built with React and D3"
+       :description "A composable charting library built on React components"
        :url         "http://recharts.org"
-       :scm         {:url "https://github.com/cljsjs/packages"}
-       :license     {"MIT" "https://raw.githubusercontent.com/react-bootstrap/react-bootstrap/master/LICENSE"}})
+       :scm         {:url "https://github.com/recharts/recharts"}
+       :license     {"MIT" "https://opensource.org/licenses/MIT"}})
 
 (deftask package []
   (comp
-   (download :url (str "https://unpkg.com/recharts@" +lib-version+ "/umd/Recharts.js")
-             :unzip false)
-   (download :url (str "https://unpkg.com/recharts@" +lib-version+ "/umd/Recharts.min.js")
-             :unzip false)
-   (sift :move {#"Recharts\.js" "cljsjs/recharts/development/Recharts.inc.js"
-                #"Recharts\.min\.js" "cljsjs/recharts/production/Recharts.min.inc.js"})
+   (download :url (format "https://unpkg.com/recharts@%s/umd/Recharts.js" +lib-version+)
+             :target "cljsjs/recharts/development/recharts.inc.js")
+   (download :url (format "https://unpkg.com/recharts@%s/umd/Recharts.min.js" +lib-version+)
+             :target "cljsjs/recharts/production/recharts.min.inc.js")
    (deps-cljs :provides ["recharts" "cljsjs.recharts"]
-              :requires ["react" "prop-types"]
+              :requires ["react" "react-dom" "prop-types"]
               :global-exports '{recharts Recharts})
    (sift :include #{#"^cljsjs" #"^deps\.cljs$"})
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))
