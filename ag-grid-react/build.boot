@@ -1,9 +1,9 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]
-                  [cljsjs/react "15.2.1-0" :scope "provided"]
-                  [cljsjs/react-dom "15.2.1-0" :scope "provided"]
-                  [cljsjs/ag-grid "8.0.1-0"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]
+                  [cljsjs/react "16.0.0-0" :scope "provided"]
+                  [cljsjs/react-dom "16.0.0-0" :scope "provided"]
+                  [cljsjs/ag-grid "15.0.0-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -11,8 +11,8 @@
          '[boot.util :refer [dosh]]
          '[clojure.java.io :as io])
 
-(def +lib-version+ "15.0.0")
-(def +lib-checksum+ "DC3DE68EAFCD070F60CA127CF80AAFEA")
+(def +lib-version+ "17.0.0")
+(def +lib-checksum+ "7BEBAFD4BBCE29CE1B9EB02A88C2E62E")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "ag-grid-react-%s" +lib-version+))
 

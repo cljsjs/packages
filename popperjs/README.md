@@ -1,8 +1,8 @@
-# cljsjs/react-autosize-textarea
+# cljsjs/popperjs
 
 [](dependency)
 ```clojure
-[cljsjs/react-autosize-textarea "3.0.2-1"] ;; latest release
+[cljsjs/popperjs "1.14.3-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,15 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.react-autosize-textarea))
-```
-
-To use the textarea component, create a component factory:
-
-```clojure
-
-(def textarea (.createFactory js/React (.-default js/TextareaAutosize)))
-
+  (:require [cljsjs.popperjs]))
 ```
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps

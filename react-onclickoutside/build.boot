@@ -1,11 +1,11 @@
 (def +lib-version+ "6.7.1")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (set-env!
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]
-                 [cljsjs/react "16.3.0-0"]
-                 [cljsjs/react-dom "16.3.0-0"]])
+                 [cljsjs/react "16.3.0-1"]
+                 [cljsjs/react-dom "16.3.0-1"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -26,7 +26,7 @@
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.react-onclickoutside"
               :requires ["cljsjs.react"
-                         "cljsjs.react-dom"])
+                         "cljsjs.react.dom"])
    (pom)
    (jar)
    (validate-checksums)))
