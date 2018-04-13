@@ -1,8 +1,8 @@
-# cljsjs/react-highlight
+# cljsjs/react-tiny-virtual-list
 
 [](dependency)
 ```clojure
-[cljsjs/react-highlight "1.0.7-0"] ;; latest release
+[cljsjs/react-tiny-virtual-list "2.1.4-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.react-highlight))
+  (:require react-tiny-virtual-list))
 ```
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps

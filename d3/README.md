@@ -1,8 +1,8 @@
-# cljsjs/react-highlight
+# cljsjs/d3
 
 [](dependency)
 ```clojure
-[cljsjs/react-highlight "1.0.7-0"] ;; latest release
+[cljsjs/d3 "4.12.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,9 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.react-highlight))
+  (:require cljsjs.d3))
 ```
+
+Uses externs provided by `federico-b/d3-externs`, many thanks!
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps
