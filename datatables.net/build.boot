@@ -15,17 +15,18 @@
         :url         "https://datatables.net"
         :license     {"MIT" "https://opensource.org/licenses/MIT"}})
 
-(deftask download-datatables-net []
-  (download :url      (format "https://github.com/DataTables/Dist-DataTables/archive/%s.zip" +lib-version+)
-            :unzip    true))
-
 (deftask package []
   (comp
-    (download-datatables-net)
-    (sift :move {#"^Dist-DataTables-[^\/]*/js/jquery.dataTables\.min\.js" "cljsjs/production/jquery.dataTables.min.inc.js"
-                    #"^Dist-DataTables-[^\/]*/js/jquery.dataTables\.js" "cljsjs/development/jquery.dataTables.inc.js"})
-    (deps-cljs :name "cljsjs.datatables.net"
-               :requires ["cljsjs.jquery"])
+    (download :url (format "https://cdn.datatables.net/%s/js/jquery.dataTables.js" +lib-version+)
+              :target "cljsjs/datatables.net/development/datatables.net.inc.js")
+    (download :url (format "https://cdn.datatables.net/%s/js/jquery.dataTables.min.js" +lib-version+)
+              :target "cljsjs/datatables.net/production/datatables.net.min.inc.js")
+
+    (deps-cljs :foreign-libs [{:file #"datatables\.net\.inc\.js"
+    						   :file-min #"datatables\.net\.min\.inc\.js"
+    						   :requires ["cljsjs.jquery"]
+                               :provides ["cljsjs.datatables.net"]}]
+               :externs [#"jquery\.dataTables\.ext\.js"])
     (pom)
     (jar)
     (validate-checksums)))

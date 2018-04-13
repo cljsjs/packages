@@ -1,10 +1,8 @@
-# cljsjs/graphql
-
-[graphql](https://github.com/graphql/graphql-js) is JavaScript reference implementation for GraphQL, a query language for APIs created by Facebook. 
+# cljsjs/datatables.net-bs
 
 [](dependency)
 ```clojure
-[cljsjs/graphql "0.13.1-0"] ;; latest release
+[cljsjs/datatables.net-bs "1.10.16````-0"] ;; latest release
 ```
 [](/dependency)
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
@@ -12,7 +10,7 @@ of the ClojureScript compiler. After adding the above dependency to your project
 
 ```clojure
 (ns application.core
-  (:require cljsjs.graphql))
+  (:require cljsjs.datatables.net-bs))
 ```
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps

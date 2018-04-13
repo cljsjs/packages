@@ -1,9 +1,8 @@
-# cljsjs/bitauth
+# cljsjs/datatables.net-select-bs
 
-ClojureScript wrapper around BitPay's [BitAuth](https://github.com/bitpay/bitauth) protocol.
 [](dependency)
 ```clojure
-[cljsjs/bitauth "0.2.1-0"] ;; latest release
+[cljsjs/datatables.net-select-bs "1.2.5-0"] ;; latest release
 ```
 [](/dependency)
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
@@ -11,7 +10,7 @@ of the ClojureScript compiler. After adding the above dependency to your project
 
 ```clojure
 (ns application.core
-  (:require cljsjs.bitauth))
+  (:require cljsjs.datatables.net-select-bs))
 ```
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps

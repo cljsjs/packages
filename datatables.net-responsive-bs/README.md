@@ -1,10 +1,8 @@
-# cljsjs/dataloader
-
-[DataLoader](https://github.com/facebook/dataloader) is a generic utility to be used as part of your application's data fetching layer to provide a consistent API over various backends and reduce requests to those backends via batching and caching.
+# cljsjs/datatables.net-responsive-bs
 
 [](dependency)
 ```clojure
-[cljsjs/dataloader "1.4.0-0"] ;; latest release
+[cljsjs/datatables.net-responsive-bs "2.2.1-0"] ;; latest release
 ```
 [](/dependency)
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
@@ -12,7 +10,7 @@ of the ClojureScript compiler. After adding the above dependency to your project
 
 ```clojure
 (ns application.core
-  (:require cljsjs.dataloader))
+  (:require cljsjs.datatables.net-responsive-bs))
 ```
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps

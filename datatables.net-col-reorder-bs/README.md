@@ -1,10 +1,8 @@
-# cljsjs/react-timer-mixin
-
-[react-timer-mixin](https://github.com/reactjs/react-timer-mixin) provides timer functions for executing code in the future that are safely cleaned up when the component unmounts.
+# cljsjs/datatables.net-col-reorder-bs
 
 [](dependency)
 ```clojure
-[cljsjs/react-timer-mixin "0.13.2-1"] ;; latest release
+[cljsjs/datatables.net-col-reorder-bs "1.4.1-0"] ;; latest release
 ```
 [](/dependency)
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
@@ -12,7 +10,7 @@ of the ClojureScript compiler. After adding the above dependency to your project
 
 ```clojure
 (ns application.core
-  (:require cljsjs.react-timer-mixin))
+  (:require cljsjs.datatables.net-col-reorder-bs))
 ```
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps
