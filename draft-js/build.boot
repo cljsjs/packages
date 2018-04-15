@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.10.0")
+(def +lib-version+ "0.10.5")
 (def +version+ (str +lib-version+ "-0"))
 
 (def npm-project "draft-js")
@@ -24,10 +24,10 @@
     (comp
       (download
         :url (format "https://unpkg.com/%s@%s/dist/%s.js" npm-project +lib-version+ "Draft")
-        :checksum "128669B3562E4650A1CE1DF62C6C3196")
+        :checksum "1081430BFCF0E6B9BC80A44BC431034F")
       (download
         :url (format "https://unpkg.com/%s@%s/dist/%s.min.js" npm-project +lib-version+ "Draft")
-        :checksum "5EA2FFE83123B9AD37DC12E379142170")
+        :checksum "DABDBCDDDE1086D77C1978F58DCF8D30")
       (sift
         :move {(re-pattern (format "^%s.js$" "Draft")) (format "cljsjs/%1$s/development/%1$s.inc.js" (name project))
                (re-pattern (format "^%s.min.js$" "Draft")) (format "cljsjs/%1$s/production/%1$s.min.inc.js" (name project))})
