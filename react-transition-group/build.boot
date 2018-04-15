@@ -1,13 +1,13 @@
 (set-env!
-  :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.0"  :scope "test"]
-                  [cljsjs/react "15.6.1-2"]
-                  [cljsjs/react-dom "15.6.1-2"]])
+ :resource-paths #{"resources"}
+ :dependencies '[[cljsjs/boot-cljsjs "0.10.0"  :scope "test"]
+                 [cljsjs/react "16.3.0-1"]
+                 [cljsjs/react-dom "16.3.0-1"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.2.1")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "2.3.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/react-transition-group
@@ -23,7 +23,10 @@
              :target "cljsjs/react-transition-group/production/react-transition-group.min.inc.js")
    (download :url (format "https://unpkg.com/react-transition-group@%s/dist/react-transition-group.js" +lib-version+)
              :target "cljsjs/react-transition-group/development/react-transition-group.inc.js")
-   (deps-cljs :provides ["react-transition-group" "react-transition-group/TransitionGroup" "react-transition-group/CSSTransition" "react-transition-group/Transition"
+   (deps-cljs :provides ["react-transition-group"
+                         "react-transition-group/TransitionGroup"
+                         "react-transition-group/CSSTransition"
+                         "react-transition-group/Transition"
                          "cljsjs.react-transition-group"]
               :requires ["react" "react-dom"]
               :global-exports '{react-transition-group ReactTransitionGroup
@@ -31,4 +34,5 @@
                                 react-transition-group/TransitionGroup ReactTransitionGroup.TransitionGroup
                                 react-transition-group/CSSTransition ReactTransitionGroup.CSSTransition})
    (pom)
-   (jar)))
+   (jar)
+   (validate)))
