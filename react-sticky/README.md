@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-sticky "6.0.1-0"] ;; latest release
+[cljsjs/react-sticky "6.0.2-0"] ;; latest release
 ;; or bring your own React (>= 15.3)
 [cljsjs/react-sticky "6.0.1-0" :exclusions [cljsjs/react cljsjs/react-dom]] ;; latest release
 ```

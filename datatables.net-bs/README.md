@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/datatables.net-bs "1.10.16````-0"] ;; latest release
+[cljsjs/datatables.net-bs "1.10.16-0"] ;; latest release
 ```
 [](/dependency)
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
