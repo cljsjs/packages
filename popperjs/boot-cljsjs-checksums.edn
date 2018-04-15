@@ -1,8 +1,4 @@
-{"cljsjs/popperjs/development/popper-utils.inc.js"
- "3A4086212629FC56C1710FF65EC89FF7",
- "cljsjs/popperjs/development/popper.inc.js"
+{"cljsjs/popperjs/development/popper.inc.js"
  "A8EB87A8850FB035EF22DB5016E0B525",
- "cljsjs/popperjs/production/popper-utils.min.inc.js"
- "827B1C138EE471322B93192345BEC2C0",
  "cljsjs/popperjs/production/popper.min.inc.js"
  "83FB8C4D9199DCE0224DA0206423106F"}

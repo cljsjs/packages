@@ -3,7 +3,7 @@
  :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]])
 
 (def +lib-version+ "1.14.3")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -21,12 +21,8 @@
              :target "cljsjs/popperjs/development/popper.inc.js")
    (download :url (format "https://unpkg.com/popper.js@%s/dist/umd/popper.min.js" +lib-version+)
              :target "cljsjs/popperjs/production/popper.min.inc.js")
-   (download :url (format "https://unpkg.com/popper.js@%s/dist/umd/popper-utils.js" +lib-version+)
-             :target "cljsjs/popperjs/development/popper-utils.inc.js")
-   (download :url (format "https://unpkg.com/popper.js@%s/dist/umd/popper-utils.min.js" +lib-version+)
-             :target "cljsjs/popperjs/production/popper-utils.min.inc.js")
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.popperjs")
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))
