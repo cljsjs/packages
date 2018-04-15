@@ -3,11 +3,11 @@
  :dependencies '[[cljsjs/boot-cljsjs "0.10.0"  :scope "test"]
                  [cljsjs/react "16.3.0-1"]
                  [cljsjs/react-dom "16.3.0-1"]
-                 [cljsjs/popperjs "1.14.3-0"]
+                 [cljsjs/popperjs "1.14.3-1"]
                  [cljsjs/prop-types "15.6.0-0"]])
 
 (def +lib-version+ "0.10.1")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -33,4 +33,4 @@
                          "cljsjs.prop-types"])
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))
