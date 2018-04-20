@@ -4,7 +4,7 @@ Three.js packages a variety of useful utilities and scripts in an "examples" dir
 
 [](dependency)
 ```clojure
-[cljsjs/three-examples "0.0.87-0"] ;; latest release
+[cljsjs/three-examples "0.0.91-0"] ;; latest release
 ```
 [](/dependency)
 
