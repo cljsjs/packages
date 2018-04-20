@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "2.2.5")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/classnames
@@ -24,7 +24,9 @@
    (minify   :in       "cljsjs/development/classnames.inc.js"
              :out      "cljsjs/production/classnames.min.inc.js")
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.classnames")
+   (deps-cljs :name "cljsjs.classnames"
+              :provides ["classnames" "cljsjs.classnames"]
+              :global-exports '{classnames classNames})
    (pom)
    (jar)
    (validate-checksums)))
