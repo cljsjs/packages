@@ -2,11 +2,11 @@
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]
                  [asset-minifier "0.2.4" :scope "test"]
-                 [cljsjs/three "0.0.87-0"]])
+                 [cljsjs/three "0.0.91-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.0.87")
+(def +lib-version+ "0.0.91")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -106,9 +106,9 @@
 
 (deftask update-externs []
   (comp
-   (download  :url      "https://github.com/mrdoob/three.js/archive/r87.zip"
+   (download  :url      "https://github.com/mrdoob/three.js/archive/r91.zip"
               :unzip    true
-              :checksum "990dca1488f6d2a966a146d1dc150a63")
+              :checksum "74ffeb0bda51e556aaa2d726c7a3577d")
    (sift      :move     {#"^three\.js-r\d*/" ""})
    (generate-externs)
    (sift      :include  #{#"^cljsjs"})
@@ -116,9 +116,9 @@
 
 (deftask package []
   (comp
-   (download  :url      "https://github.com/mrdoob/three.js/archive/r87.zip"
+   (download  :url      "https://github.com/mrdoob/three.js/archive/r91.zip"
               :unzip    true
-              :checksum "990dca1488f6d2a966a146d1dc150a63")
+              :checksum "74ffeb0bda51e556aaa2d726c7a3577d")
    (sift      :move     {#"^three\.js-r\d*/"
                          ""
                          #"examples/js/(.*)\.js"
