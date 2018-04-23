@@ -1,10 +1,10 @@
-(def +lib-version+ "0.7.1")
+(def +lib-version+ "0.9.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (set-env!
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]])
-                 
+
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -19,7 +19,6 @@
 (deftask package  []
   (comp
    (download :url (str "https://github.com/Khan/KaTeX/releases/download/v" +lib-version+ "/katex.zip")
-             :checksum "51B1448F636F16C9BFE41372048E0A49"
              :unzip true)
    (sift :move {#"^katex/katex.js$"
                 "cljsjs/katex/development/katex.inc.js"
@@ -35,4 +34,5 @@
    (show :fileset true)
    (deps-cljs :name "cljsjs.katex")
    (pom)
-   (jar)))
+   (jar)
+   (validate-checksums)))
