@@ -1,6 +1,6 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.0"  :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -10,7 +10,7 @@
          '[clojure.string :as str])
 
 (def +lib-version+ "3.0.1")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
   pom  {:project     'cljsjs/react-flip-move
@@ -19,22 +19,6 @@
         :url         "https://github.com/joshwcomeau/react-flip-move.git"
         :scm         {:url "https://github.com/cljsjs/packages"}
         :license     {"MIT" "http://opensource.org/licenses/MIT"}})
-
-(deftask build-flip-move  []
-  (let [tmp (boot/tmp-dir!)]
-    (with-pre-wrap
-      fileset
-      ;; Copy all files in fileset to temp directory
-      (doseq [f (->> fileset boot/input-files)
-              :let [target (io/file tmp (tmpd/path f))]]
-        (io/make-parents target)
-        (io/copy (tmpd/file f) target))
-      (let [build-dir (str (io/file
-                            tmp
-                            (format "react-flip-move-%s" +lib-version+)))]
-        (binding [boot.util/*sh-dir* build-dir]
-          ((sh "npm" "install"))))
-      (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 (deftask package []
   (comp
@@ -46,9 +30,10 @@
 
     (sift :include #{#"^cljsjs"})
 
-    (deps-cljs :name "cljsjs.react-flip-move"
-               :requires ["cljsjs.react"
-                          "cljsjs.react.dom"])
+    (deps-cljs :provides ["react-flip-move" "cljsjs.react-flip-move"]
+               :global-exports '{react-flip-move FlipMove}
+               :requires ["react"
+                          "react-dom"])
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

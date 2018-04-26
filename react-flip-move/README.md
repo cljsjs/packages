@@ -33,4 +33,8 @@ Here's a simple reagent example:
       "Shuffle"]])
 ```
 
+## Npm style names
+
+Also provides name `react-flip-move` which supports `:global-exports`.
+
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps
