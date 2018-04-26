@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.0")
+(def +lib-version+ "1.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,4 +18,5 @@
 (deftask package []
   (comp
     (pom)
-    (jar)))
+    (jar)
+    (validate)))
