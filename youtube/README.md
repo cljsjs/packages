@@ -1,7 +1,7 @@
 # cljsjs/youtube
 [](dependency)
 ```clojure
-[cljsjs/youtube "1.0-0"] ;; latest release
+[cljsjs/youtube "1.1-0"] ;; latest release
 ```
 [](/dependency)
 
