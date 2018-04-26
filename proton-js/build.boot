@@ -10,7 +10,7 @@
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
- pom  {:project     'cljsjs/proton
+ pom  {:project     'cljsjs/proton-js
        :version     +version+
        :description "a lightweight javascript particle engine"
        :url         "https://projects.jpeer.at/proton/"
@@ -23,6 +23,6 @@
    (sift :move {#"node_modules/proton-js/build/proton\.js$" "cljsjs/proton/development/pproton.inc.js"
                 #"node_modules/proton-js/build/proton\.min\.js$" "cljsjs/proton/production/proton.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.proton")
+    (deps-cljs :name "cljsjs.proton-js")
     (pom)
     (jar)))

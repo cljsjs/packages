@@ -1,8 +1,8 @@
-# cljsjs/proton
+# cljsjs/proton-js
 
 [](dependency)
 ```clojure
-[cljsjs/proton "3.1.2-0"] ;; latest release
+[cljsjs/proton-js "3.1.2-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,7 @@ you can require and use the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.proton))
+  (:require cljsjs.proton-js))
 
 (def emitter (js/Proton.Emitter.))
 ```
