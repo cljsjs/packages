@@ -220,4 +220,9 @@ cljsjs.highlight.langs.yaml
 cljsjs.highlight.langs.zephir
 ```
 
+
+## Npm style names
+
+Also provides names `highlight.js` and `highlight.js/lib/languages/<name>`.
+
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps
