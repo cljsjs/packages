@@ -14,7 +14,6 @@ module.exports = {
     },
 
     output: {
-        path: 'dist',
         filename: '[name].js',
         libraryTarget: "var",
         library: "Highlight"
@@ -24,7 +23,7 @@ module.exports = {
         loaders: [
           {
             test: /\.js$/,
-            loader: 'babel',
+            loader: 'babel-loader',
             include: path.join(__dirname, 'src')
           },
           {
