@@ -119,6 +119,12 @@ var Plotly = {
         "valType": {},
         "values": {}
       },
+      "selectdirection": {
+        "dflt": {},
+        "editType": {},
+        "valType": {},
+        "values": {}
+      },
       "spikedistance": {
         "dflt": {},
         "editType": {},
@@ -183,6 +189,12 @@ var Plotly = {
           }
         },
         "hovermode": {
+          "editType": {},
+          "valType": {},
+          "values": {}
+        },
+        "selectdirection": {
+          "dflt": {},
           "editType": {},
           "valType": {},
           "values": {}
@@ -341,12 +353,14 @@ var Plotly = {
       "2dMap": {},
       "bar": {},
       "box-violin": {},
+      "boxLayout": {},
       "candlestick": {},
       "carpet": {},
       "carpetAxis": {},
       "carpetDependent": {},
       "cartesian": {},
       "contour": {},
+      "draggedPts": {},
       "errorBarsOK": {},
       "geo": {},
       "gl": {},
@@ -365,8 +379,10 @@ var Plotly = {
       "scatter-like": {},
       "scatterlike": {},
       "showLegend": {},
+      "svg": {},
       "symbols": {},
-      "ternary": {}
+      "ternary": {},
+      "violinLayout": {}
     },
     "allTypes": {},
     "apiMethodRegistry": {
@@ -1101,20 +1117,20 @@ var Plotly = {
                 "editType": {},
                 "font": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -1128,33 +1144,33 @@ var Plotly = {
                 },
                 "hoverlabel": {
                   "bgcolor": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "bordercolor": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "font": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "color": {
-                      "closure_uid_236651161": {},
+                      "closure_uid_388947968": {},
                       "editType": {},
                       "valType": {}
                     },
                     "editType": {},
                     "family": {
-                      "closure_uid_236651161": {},
+                      "closure_uid_388947968": {},
                       "editType": {},
                       "noBlank": {},
                       "strict": {},
                       "valType": {}
                     },
                     "size": {
-                      "closure_uid_236651161": {},
+                      "closure_uid_388947968": {},
                       "editType": {},
                       "min": {},
                       "valType": {}
@@ -1667,7 +1683,7 @@ var Plotly = {
               "error_x": {
                 "_deprecated": {
                   "opacity": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   }
@@ -1740,9 +1756,9 @@ var Plotly = {
               },
               "error_y": {
                 "_deprecated": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "opacity": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   }
@@ -1811,12 +1827,12 @@ var Plotly = {
               }
             },
             "histogram": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "error_x": {
                 "_deprecated": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "opacity": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   }
@@ -1829,7 +1845,7 @@ var Plotly = {
                   "editType": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
                   "editType": {},
                   "valType": {}
@@ -1890,9 +1906,9 @@ var Plotly = {
               },
               "error_y": {
                 "_deprecated": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "opacity": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   }
@@ -1905,7 +1921,7 @@ var Plotly = {
                   "editType": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
                   "editType": {},
                   "valType": {}
@@ -1962,12 +1978,12 @@ var Plotly = {
               }
             },
             "scatter": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "error_x": {
                 "_deprecated": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "opacity": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   }
@@ -1980,7 +1996,7 @@ var Plotly = {
                   "editType": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
                   "editType": {},
                   "valType": {}
@@ -2041,9 +2057,9 @@ var Plotly = {
               },
               "error_y": {
                 "_deprecated": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "opacity": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   }
@@ -2056,7 +2072,7 @@ var Plotly = {
                   "editType": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
                   "editType": {},
                   "valType": {}
@@ -2116,7 +2132,7 @@ var Plotly = {
               "error_x": {
                 "_deprecated": {
                   "opacity": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   }
@@ -2190,7 +2206,7 @@ var Plotly = {
               "error_y": {
                 "_deprecated": {
                   "opacity": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   }
@@ -2264,7 +2280,7 @@ var Plotly = {
               "error_z": {
                 "_deprecated": {
                   "opacity": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   }
@@ -2336,7 +2352,7 @@ var Plotly = {
               "error_x": {
                 "_deprecated": {
                   "opacity": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   }
@@ -2410,7 +2426,7 @@ var Plotly = {
               "error_y": {
                 "_deprecated": {
                   "opacity": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   }
@@ -2599,6 +2615,12 @@ var Plotly = {
             "valType": {},
             "values": {}
           },
+          "selectdirection": {
+            "dflt": {},
+            "editType": {},
+            "valType": {},
+            "values": {}
+          },
           "spikedistance": {
             "dflt": {},
             "editType": {},
@@ -2663,6 +2685,12 @@ var Plotly = {
               }
             },
             "hovermode": {
+              "editType": {},
+              "valType": {},
+              "values": {}
+            },
+            "selectdirection": {
+              "dflt": {},
               "editType": {},
               "valType": {},
               "values": {}
@@ -3178,7 +3206,7 @@ var Plotly = {
                 "buttons": {
                   "_isLinkedToArray": {},
                   "count": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "min": {},
@@ -3186,19 +3214,19 @@ var Plotly = {
                   },
                   "editType": {},
                   "label": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "step": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   },
                   "stepmode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
@@ -3208,20 +3236,20 @@ var Plotly = {
                 "editType": {},
                 "font": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -3322,7 +3350,7 @@ var Plotly = {
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -3349,7 +3377,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -3370,13 +3398,13 @@ var Plotly = {
                   "_isSubplotObj": {},
                   "editType": {},
                   "range": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "rangemode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
@@ -3455,7 +3483,17 @@ var Plotly = {
             "editType": {},
             "valType": {}
           },
+          "xanchor": {
+            "editType": {},
+            "valType": {}
+          },
           "xref": {
+            "editType": {},
+            "valType": {},
+            "values": {}
+          },
+          "xsizemode": {
+            "dflt": {},
             "editType": {},
             "valType": {},
             "values": {}
@@ -3468,7 +3506,17 @@ var Plotly = {
             "editType": {},
             "valType": {}
           },
+          "yanchor": {
+            "editType": {},
+            "valType": {}
+          },
           "yref": {
+            "editType": {},
+            "valType": {},
+            "values": {}
+          },
+          "ysizemode": {
+            "dflt": {},
             "editType": {},
             "valType": {},
             "values": {}
@@ -4130,6 +4178,12 @@ var Plotly = {
         "editType": {},
         "valType": {}
       },
+      "selectdirection": {
+        "dflt": {},
+        "editType": {},
+        "valType": {},
+        "values": {}
+      },
       "separators": {
         "editType": {},
         "valType": {}
@@ -4476,7 +4530,7 @@ var Plotly = {
                 "dtick": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -4560,7 +4614,7 @@ var Plotly = {
                 "tick0": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -4577,20 +4631,20 @@ var Plotly = {
                 },
                 "tickfont": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -4604,14 +4658,14 @@ var Plotly = {
                 "tickformatstops": {
                   "_isLinkedToArray": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -4626,7 +4680,7 @@ var Plotly = {
                 "tickmode": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -4669,20 +4723,20 @@ var Plotly = {
                 },
                 "titlefont": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -4746,7 +4800,7 @@ var Plotly = {
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "colorscale": {}
                   },
                   "valType": {}
@@ -4755,7 +4809,7 @@ var Plotly = {
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "cmax": {},
                     "cmin": {}
                   },
@@ -4766,7 +4820,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "cauto": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -4775,7 +4829,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "cauto": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -4788,7 +4842,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "autocolorscale": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -5077,7 +5131,7 @@ var Plotly = {
               "dtick": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -5189,7 +5243,7 @@ var Plotly = {
                 "buttons": {
                   "_isLinkedToArray": {},
                   "count": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "min": {},
@@ -5197,19 +5251,19 @@ var Plotly = {
                   },
                   "editType": {},
                   "label": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "step": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   },
                   "stepmode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
@@ -5219,20 +5273,20 @@ var Plotly = {
                 "editType": {},
                 "font": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -5272,7 +5326,7 @@ var Plotly = {
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -5299,7 +5353,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -5320,13 +5374,13 @@ var Plotly = {
                   "_isSubplotObj": {},
                   "editType": {},
                   "range": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "rangemode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
@@ -5423,7 +5477,7 @@ var Plotly = {
               "tick0": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -5484,7 +5538,7 @@ var Plotly = {
               "tickmode": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -5572,7 +5626,8 @@ var Plotly = {
             "rangePlot": function () {},
             "supplyLayoutDefaults": function () {},
             "toSVG": function () {},
-            "transitionAxes": function () {}
+            "transitionAxes": function () {},
+            "updateFx": function () {}
           },
           "calc": function () {},
           "categories": {},
@@ -5618,10 +5673,12 @@ var Plotly = {
         "categories": {
           "bar": {},
           "cartesian": {},
+          "draggedPts": {},
           "errorBarsOK": {},
           "markerColorscale": {},
           "oriented": {},
-          "showLegend": {}
+          "showLegend": {},
+          "svg": {}
         }
       },
       "box": {
@@ -5857,7 +5914,7 @@ var Plotly = {
               }
             },
             "clean": function () {},
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "drawFramework": function () {},
             "finalizeSubplots": function () {},
             "idRegex": {
@@ -5909,7 +5966,7 @@ var Plotly = {
                 "valType": {},
                 "values": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
                 "dflt": {},
                 "editType": {},
@@ -5935,7 +5992,7 @@ var Plotly = {
               "dtick": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -6046,9 +6103,9 @@ var Plotly = {
                 },
                 "buttons": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "count": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "min": {},
@@ -6056,44 +6113,44 @@ var Plotly = {
                   },
                   "editType": {},
                   "label": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "step": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   },
                   "stepmode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   }
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "font": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -6130,11 +6187,11 @@ var Plotly = {
               },
               "rangeslider": {
                 "autorange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -6156,14 +6213,14 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "range": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -6182,16 +6239,16 @@ var Plotly = {
                 },
                 "yaxis": {
                   "_isSubplotObj": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "range": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "rangemode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
@@ -6288,7 +6345,7 @@ var Plotly = {
               "tick0": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -6349,7 +6406,7 @@ var Plotly = {
               "tickmode": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -6437,7 +6494,8 @@ var Plotly = {
             "rangePlot": function () {},
             "supplyLayoutDefaults": function () {},
             "toSVG": function () {},
-            "transitionAxes": function () {}
+            "transitionAxes": function () {},
+            "updateFx": function () {}
           },
           "calc": function () {},
           "categories": {},
@@ -6476,9 +6534,12 @@ var Plotly = {
         },
         "categories": {
           "box-violin": {},
+          "boxLayout": {},
           "cartesian": {},
+          "draggedPts": {},
           "oriented": {},
           "showLegend": {},
+          "svg": {},
           "symbols": {}
         }
       },
@@ -6486,7 +6547,6 @@ var Plotly = {
         "_module": {
           "attributes": {
             "close": {
-              "dflt": {},
               "editType": {},
               "valType": {}
             },
@@ -6509,19 +6569,9 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 }
-              },
-              "name": {
-                "editType": {},
-                "valType": {}
-              },
-              "showlegend": {
-                "dflt": {},
-                "editType": {},
-                "valType": {}
               }
             },
             "high": {
-              "dflt": {},
               "editType": {},
               "valType": {}
             },
@@ -6544,15 +6594,6 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 }
-              },
-              "name": {
-                "editType": {},
-                "valType": {}
-              },
-              "showlegend": {
-                "dflt": {},
-                "editType": {},
-                "valType": {}
               }
             },
             "line": {
@@ -6565,12 +6606,10 @@ var Plotly = {
               }
             },
             "low": {
-              "dflt": {},
               "editType": {},
               "valType": {}
             },
             "open": {
-              "dflt": {},
               "editType": {},
               "valType": {}
             },
@@ -6615,7 +6654,7 @@ var Plotly = {
               }
             },
             "clean": function () {},
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "drawFramework": function () {},
             "finalizeSubplots": function () {},
             "idRegex": {
@@ -6667,7 +6706,7 @@ var Plotly = {
                 "valType": {},
                 "values": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
                 "dflt": {},
                 "editType": {},
@@ -6693,7 +6732,7 @@ var Plotly = {
               "dtick": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -6804,9 +6843,9 @@ var Plotly = {
                 },
                 "buttons": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "count": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "min": {},
@@ -6814,44 +6853,44 @@ var Plotly = {
                   },
                   "editType": {},
                   "label": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "step": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   },
                   "stepmode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   }
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "font": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -6888,11 +6927,11 @@ var Plotly = {
               },
               "rangeslider": {
                 "autorange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -6914,14 +6953,14 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "range": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -6940,16 +6979,16 @@ var Plotly = {
                 },
                 "yaxis": {
                   "_isSubplotObj": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "range": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "rangemode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
@@ -7046,7 +7085,7 @@ var Plotly = {
               "tick0": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -7107,7 +7146,7 @@ var Plotly = {
               "tickmode": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -7195,18 +7234,50 @@ var Plotly = {
             "rangePlot": function () {},
             "supplyLayoutDefaults": function () {},
             "toSVG": function () {},
-            "transitionAxes": function () {}
+            "transitionAxes": function () {},
+            "updateFx": function () {}
           },
+          "calc": function () {},
           "categories": {},
+          "hoverPoints": function () {},
+          "layoutAttributes": {
+            "boxgap": {
+              "dflt": {},
+              "editType": {},
+              "max": {},
+              "min": {},
+              "valType": {}
+            },
+            "boxgroupgap": {
+              "dflt": {},
+              "editType": {},
+              "max": {},
+              "min": {},
+              "valType": {}
+            },
+            "boxmode": {
+              "dflt": {},
+              "editType": {},
+              "valType": {},
+              "values": {}
+            }
+          },
           "meta": {},
           "moduleType": {},
           "name": {},
-          "supplyDefaults": function () {}
+          "plot": function () {},
+          "selectPoints": function () {},
+          "setPositions": function () {},
+          "style": function () {},
+          "supplyDefaults": function () {},
+          "supplyLayoutDefaults": function () {}
         },
         "categories": {
+          "boxLayout": {},
           "candlestick": {},
           "cartesian": {},
-          "showLegend": {}
+          "showLegend": {},
+          "svg": {}
         }
       },
       "carpet": {
@@ -7909,7 +7980,7 @@ var Plotly = {
               }
             },
             "clean": function () {},
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "drawFramework": function () {},
             "finalizeSubplots": function () {},
             "idRegex": {
@@ -7961,7 +8032,7 @@ var Plotly = {
                 "valType": {},
                 "values": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
                 "dflt": {},
                 "editType": {},
@@ -7987,7 +8058,7 @@ var Plotly = {
               "dtick": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -8098,9 +8169,9 @@ var Plotly = {
                 },
                 "buttons": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "count": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "min": {},
@@ -8108,44 +8179,44 @@ var Plotly = {
                   },
                   "editType": {},
                   "label": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "step": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   },
                   "stepmode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   }
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "font": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -8182,11 +8253,11 @@ var Plotly = {
               },
               "rangeslider": {
                 "autorange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -8208,14 +8279,14 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "range": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -8234,16 +8305,16 @@ var Plotly = {
                 },
                 "yaxis": {
                   "_isSubplotObj": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "range": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "rangemode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
@@ -8340,7 +8411,7 @@ var Plotly = {
               "tick0": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -8401,7 +8472,7 @@ var Plotly = {
               "tickmode": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -8489,10 +8560,12 @@ var Plotly = {
             "rangePlot": function () {},
             "supplyLayoutDefaults": function () {},
             "toSVG": function () {},
-            "transitionAxes": function () {}
+            "transitionAxes": function () {},
+            "updateFx": function () {}
           },
           "calc": function () {},
           "categories": {},
+          "isContainer": {},
           "meta": {},
           "moduleType": {},
           "name": {},
@@ -8503,7 +8576,8 @@ var Plotly = {
           "carpet": {},
           "carpetAxis": {},
           "cartesian": {},
-          "notLegendIsolatable": {}
+          "notLegendIsolatable": {},
+          "svg": {}
         }
       },
       "choropleth": {
@@ -8534,12 +8608,12 @@ var Plotly = {
                 "min": {},
                 "valType": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "dtick": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -8621,10 +8695,10 @@ var Plotly = {
                 "values": {}
               },
               "tick0": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -8640,22 +8714,22 @@ var Plotly = {
                 "valType": {}
               },
               "tickfont": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "valType": {}
                 },
                 "editType": {},
                 "family": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "noBlank": {},
                   "strict": {},
                   "valType": {}
                 },
                 "size": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "min": {},
                   "valType": {}
@@ -8668,16 +8742,16 @@ var Plotly = {
               },
               "tickformatstops": {
                 "_isLinkedToArray": {},
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dtickrange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "items": {},
                   "valType": {}
                 },
                 "editType": {},
                 "value": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "valType": {}
@@ -8690,10 +8764,10 @@ var Plotly = {
                 "valType": {}
               },
               "tickmode": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -8735,22 +8809,22 @@ var Plotly = {
                 "valType": {}
               },
               "titlefont": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "valType": {}
                 },
                 "editType": {},
                 "family": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "noBlank": {},
                   "strict": {},
                   "valType": {}
                 },
                 "size": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "min": {},
                   "valType": {}
@@ -9102,17 +9176,17 @@ var Plotly = {
                 "rotation": {
                   "editType": {},
                   "lat": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "lon": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "roll": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   }
@@ -9231,7 +9305,7 @@ var Plotly = {
               "dflt": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "colorscale": {}
               },
               "valType": {}
@@ -9263,12 +9337,12 @@ var Plotly = {
                 "min": {},
                 "valType": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "dtick": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -9350,10 +9424,10 @@ var Plotly = {
                 "values": {}
               },
               "tick0": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -9369,22 +9443,22 @@ var Plotly = {
                 "valType": {}
               },
               "tickfont": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "valType": {}
                 },
                 "editType": {},
                 "family": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "noBlank": {},
                   "strict": {},
                   "valType": {}
                 },
                 "size": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "min": {},
                   "valType": {}
@@ -9397,16 +9471,16 @@ var Plotly = {
               },
               "tickformatstops": {
                 "_isLinkedToArray": {},
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dtickrange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "items": {},
                   "valType": {}
                 },
                 "editType": {},
                 "value": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "valType": {}
@@ -9419,10 +9493,10 @@ var Plotly = {
                 "valType": {}
               },
               "tickmode": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -9464,22 +9538,22 @@ var Plotly = {
                 "valType": {}
               },
               "titlefont": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "valType": {}
                 },
                 "editType": {},
                 "family": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "noBlank": {},
                   "strict": {},
                   "valType": {}
                 },
                 "size": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "min": {},
                   "valType": {}
@@ -9534,7 +9608,7 @@ var Plotly = {
               "editType": {},
               "impliedEdits": {
                 "autocolorscale": {},
-                "closure_uid_236651161": {}
+                "closure_uid_388947968": {}
               },
               "valType": {}
             },
@@ -9806,7 +9880,7 @@ var Plotly = {
               }
             },
             "clean": function () {},
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "drawFramework": function () {},
             "finalizeSubplots": function () {},
             "idRegex": {
@@ -9858,7 +9932,7 @@ var Plotly = {
                 "valType": {},
                 "values": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
                 "dflt": {},
                 "editType": {},
@@ -9884,7 +9958,7 @@ var Plotly = {
               "dtick": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -9995,9 +10069,9 @@ var Plotly = {
                 },
                 "buttons": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "count": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "min": {},
@@ -10005,44 +10079,44 @@ var Plotly = {
                   },
                   "editType": {},
                   "label": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "step": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   },
                   "stepmode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   }
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "font": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -10079,11 +10153,11 @@ var Plotly = {
               },
               "rangeslider": {
                 "autorange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -10105,14 +10179,14 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "range": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -10131,16 +10205,16 @@ var Plotly = {
                 },
                 "yaxis": {
                   "_isSubplotObj": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "range": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "rangemode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
@@ -10237,7 +10311,7 @@ var Plotly = {
               "tick0": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -10298,7 +10372,7 @@ var Plotly = {
               "tickmode": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -10386,7 +10460,8 @@ var Plotly = {
             "rangePlot": function () {},
             "supplyLayoutDefaults": function () {},
             "toSVG": function () {},
-            "transitionAxes": function () {}
+            "transitionAxes": function () {},
+            "updateFx": function () {}
           },
           "calc": function () {},
           "categories": {},
@@ -10403,7 +10478,8 @@ var Plotly = {
           "2dMap": {},
           "cartesian": {},
           "contour": {},
-          "showLegend": {}
+          "showLegend": {},
+          "svg": {}
         }
       },
       "contourcarpet": {
@@ -10433,7 +10509,7 @@ var Plotly = {
               "dflt": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "colorscale": {}
               },
               "valType": {}
@@ -10489,12 +10565,12 @@ var Plotly = {
                 "min": {},
                 "valType": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "dtick": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -10576,10 +10652,10 @@ var Plotly = {
                 "values": {}
               },
               "tick0": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -10595,22 +10671,22 @@ var Plotly = {
                 "valType": {}
               },
               "tickfont": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "valType": {}
                 },
                 "editType": {},
                 "family": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "noBlank": {},
                   "strict": {},
                   "valType": {}
                 },
                 "size": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "min": {},
                   "valType": {}
@@ -10623,16 +10699,16 @@ var Plotly = {
               },
               "tickformatstops": {
                 "_isLinkedToArray": {},
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dtickrange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "items": {},
                   "valType": {}
                 },
                 "editType": {},
                 "value": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "valType": {}
@@ -10645,10 +10721,10 @@ var Plotly = {
                 "valType": {}
               },
               "tickmode": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -10690,22 +10766,22 @@ var Plotly = {
                 "valType": {}
               },
               "titlefont": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "valType": {}
                 },
                 "editType": {},
                 "family": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "noBlank": {},
                   "strict": {},
                   "valType": {}
                 },
                 "size": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "min": {},
                   "valType": {}
@@ -10760,7 +10836,7 @@ var Plotly = {
               "editType": {},
               "impliedEdits": {
                 "autocolorscale": {},
-                "closure_uid_236651161": {}
+                "closure_uid_388947968": {}
               },
               "valType": {}
             },
@@ -10968,7 +11044,7 @@ var Plotly = {
               }
             },
             "clean": function () {},
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "drawFramework": function () {},
             "finalizeSubplots": function () {},
             "idRegex": {
@@ -11020,7 +11096,7 @@ var Plotly = {
                 "valType": {},
                 "values": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
                 "dflt": {},
                 "editType": {},
@@ -11046,7 +11122,7 @@ var Plotly = {
               "dtick": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -11157,9 +11233,9 @@ var Plotly = {
                 },
                 "buttons": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "count": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "min": {},
@@ -11167,44 +11243,44 @@ var Plotly = {
                   },
                   "editType": {},
                   "label": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "step": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   },
                   "stepmode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   }
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "font": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -11241,11 +11317,11 @@ var Plotly = {
               },
               "rangeslider": {
                 "autorange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -11267,14 +11343,14 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "range": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -11293,16 +11369,16 @@ var Plotly = {
                 },
                 "yaxis": {
                   "_isSubplotObj": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "range": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "rangemode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
@@ -11399,7 +11475,7 @@ var Plotly = {
               "tick0": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -11460,7 +11536,7 @@ var Plotly = {
               "tickmode": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -11548,7 +11624,8 @@ var Plotly = {
             "rangePlot": function () {},
             "supplyLayoutDefaults": function () {},
             "toSVG": function () {},
-            "transitionAxes": function () {}
+            "transitionAxes": function () {},
+            "updateFx": function () {}
           },
           "calc": function () {},
           "categories": {},
@@ -11567,6 +11644,7 @@ var Plotly = {
           "contour": {},
           "hasLines": {},
           "showLegend": {},
+          "svg": {},
           "symbols": {}
         }
       },
@@ -11577,7 +11655,7 @@ var Plotly = {
               "dflt": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "colorscale": {}
               },
               "valType": {}
@@ -11599,12 +11677,12 @@ var Plotly = {
                 "min": {},
                 "valType": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "dtick": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -11686,10 +11764,10 @@ var Plotly = {
                 "values": {}
               },
               "tick0": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -11705,22 +11783,22 @@ var Plotly = {
                 "valType": {}
               },
               "tickfont": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "valType": {}
                 },
                 "editType": {},
                 "family": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "noBlank": {},
                   "strict": {},
                   "valType": {}
                 },
                 "size": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "min": {},
                   "valType": {}
@@ -11733,16 +11811,16 @@ var Plotly = {
               },
               "tickformatstops": {
                 "_isLinkedToArray": {},
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dtickrange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "items": {},
                   "valType": {}
                 },
                 "editType": {},
                 "value": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "valType": {}
@@ -11755,10 +11833,10 @@ var Plotly = {
                 "valType": {}
               },
               "tickmode": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -11800,22 +11878,22 @@ var Plotly = {
                 "valType": {}
               },
               "titlefont": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "valType": {}
                 },
                 "editType": {},
                 "family": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "noBlank": {},
                   "strict": {},
                   "valType": {}
                 },
                 "size": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "min": {},
                   "valType": {}
@@ -11870,7 +11948,7 @@ var Plotly = {
               "editType": {},
               "impliedEdits": {
                 "autocolorscale": {},
-                "closure_uid_236651161": {}
+                "closure_uid_388947968": {}
               },
               "valType": {}
             },
@@ -12037,7 +12115,7 @@ var Plotly = {
               }
             },
             "clean": function () {},
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "drawFramework": function () {},
             "finalizeSubplots": function () {},
             "idRegex": {
@@ -12089,7 +12167,7 @@ var Plotly = {
                 "valType": {},
                 "values": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
                 "dflt": {},
                 "editType": {},
@@ -12115,7 +12193,7 @@ var Plotly = {
               "dtick": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -12226,9 +12304,9 @@ var Plotly = {
                 },
                 "buttons": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "count": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "min": {},
@@ -12236,44 +12314,44 @@ var Plotly = {
                   },
                   "editType": {},
                   "label": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "step": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   },
                   "stepmode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   }
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "font": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -12310,11 +12388,11 @@ var Plotly = {
               },
               "rangeslider": {
                 "autorange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -12336,14 +12414,14 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "range": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -12362,16 +12440,16 @@ var Plotly = {
                 },
                 "yaxis": {
                   "_isSubplotObj": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "range": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "rangemode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
@@ -12468,7 +12546,7 @@ var Plotly = {
               "tick0": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -12529,7 +12607,7 @@ var Plotly = {
               "tickmode": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -12617,7 +12695,8 @@ var Plotly = {
             "rangePlot": function () {},
             "supplyLayoutDefaults": function () {},
             "toSVG": function () {},
-            "transitionAxes": function () {}
+            "transitionAxes": function () {},
+            "updateFx": function () {}
           },
           "calc": function () {},
           "categories": {},
@@ -12632,7 +12711,8 @@ var Plotly = {
         },
         "categories": {
           "2dMap": {},
-          "cartesian": {}
+          "cartesian": {},
+          "svg": {}
         }
       },
       "heatmapgl": {
@@ -12642,7 +12722,7 @@ var Plotly = {
               "dflt": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "colorscale": {}
               },
               "valType": {}
@@ -12667,7 +12747,7 @@ var Plotly = {
               "dtick": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -12751,7 +12831,7 @@ var Plotly = {
               "tick0": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -12812,7 +12892,7 @@ var Plotly = {
               "tickmode": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -12920,7 +13000,7 @@ var Plotly = {
               "editType": {},
               "impliedEdits": {
                 "autocolorscale": {},
-                "closure_uid_236651161": {}
+                "closure_uid_388947968": {}
               },
               "valType": {}
             },
@@ -13057,13 +13137,13 @@ var Plotly = {
                 "editType": {},
                 "font": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "noBlank": {},
@@ -13071,7 +13151,7 @@ var Plotly = {
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "min": {},
@@ -13160,7 +13240,7 @@ var Plotly = {
               "dtick": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -13272,7 +13352,7 @@ var Plotly = {
                 "buttons": {
                   "_isLinkedToArray": {},
                   "count": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "min": {},
@@ -13280,19 +13360,19 @@ var Plotly = {
                   },
                   "editType": {},
                   "label": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "step": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   },
                   "stepmode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
@@ -13302,20 +13382,20 @@ var Plotly = {
                 "editType": {},
                 "font": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -13355,7 +13435,7 @@ var Plotly = {
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -13382,7 +13462,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -13403,13 +13483,13 @@ var Plotly = {
                   "_isSubplotObj": {},
                   "editType": {},
                   "range": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "rangemode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
@@ -13506,7 +13586,7 @@ var Plotly = {
               "tick0": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -13567,7 +13647,7 @@ var Plotly = {
               "tickmode": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -13880,7 +13960,7 @@ var Plotly = {
                 "dflt": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "colorscale": {}
                 },
                 "valType": {}
@@ -13894,7 +13974,7 @@ var Plotly = {
                 },
                 "valType": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "cmax": {
                 "dflt": {},
                 "editType": {},
@@ -13933,12 +14013,12 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dtick": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -14020,10 +14100,10 @@ var Plotly = {
                   "values": {}
                 },
                 "tick0": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -14039,22 +14119,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickfont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -14067,16 +14147,16 @@ var Plotly = {
                 },
                 "tickformatstops": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -14089,10 +14169,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickmode": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -14134,22 +14214,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "titlefont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -14204,51 +14284,51 @@ var Plotly = {
                 "editType": {},
                 "impliedEdits": {
                   "autocolorscale": {},
-                  "closure_uid_236651161": {}
+                  "closure_uid_388947968": {}
                 },
                 "valType": {}
               },
               "editType": {},
               "line": {
                 "autocolorscale": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "colorscale": {}
                   },
                   "valType": {}
                 },
                 "cauto": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "cmax": {},
                     "cmin": {}
                   },
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "cmax": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
                     "cauto": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
                 "cmin": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
                     "cauto": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -14258,11 +14338,11 @@ var Plotly = {
                   "valType": {}
                 },
                 "colorscale": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autocolorscale": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -14467,7 +14547,7 @@ var Plotly = {
               }
             },
             "clean": function () {},
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "drawFramework": function () {},
             "finalizeSubplots": function () {},
             "idRegex": {
@@ -14519,7 +14599,7 @@ var Plotly = {
                 "valType": {},
                 "values": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
                 "dflt": {},
                 "editType": {},
@@ -14545,7 +14625,7 @@ var Plotly = {
               "dtick": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -14656,9 +14736,9 @@ var Plotly = {
                 },
                 "buttons": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "count": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "min": {},
@@ -14666,44 +14746,44 @@ var Plotly = {
                   },
                   "editType": {},
                   "label": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "step": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   },
                   "stepmode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   }
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "font": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -14740,11 +14820,11 @@ var Plotly = {
               },
               "rangeslider": {
                 "autorange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -14766,14 +14846,14 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "range": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -14792,16 +14872,16 @@ var Plotly = {
                 },
                 "yaxis": {
                   "_isSubplotObj": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "range": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "rangemode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
@@ -14898,7 +14978,7 @@ var Plotly = {
               "tick0": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -14959,7 +15039,7 @@ var Plotly = {
               "tickmode": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -15047,7 +15127,8 @@ var Plotly = {
             "rangePlot": function () {},
             "supplyLayoutDefaults": function () {},
             "toSVG": function () {},
-            "transitionAxes": function () {}
+            "transitionAxes": function () {},
+            "updateFx": function () {}
           },
           "calc": function () {},
           "categories": {},
@@ -15097,7 +15178,8 @@ var Plotly = {
           "errorBarsOK": {},
           "histogram": {},
           "oriented": {},
-          "showLegend": {}
+          "showLegend": {},
+          "svg": {}
         }
       },
       "histogram2d": {
@@ -15127,7 +15209,7 @@ var Plotly = {
               "dflt": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "colorscale": {}
               },
               "valType": {}
@@ -15149,12 +15231,12 @@ var Plotly = {
                 "min": {},
                 "valType": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "dtick": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -15236,10 +15318,10 @@ var Plotly = {
                 "values": {}
               },
               "tick0": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -15255,22 +15337,22 @@ var Plotly = {
                 "valType": {}
               },
               "tickfont": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "valType": {}
                 },
                 "editType": {},
                 "family": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "noBlank": {},
                   "strict": {},
                   "valType": {}
                 },
                 "size": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "min": {},
                   "valType": {}
@@ -15283,16 +15365,16 @@ var Plotly = {
               },
               "tickformatstops": {
                 "_isLinkedToArray": {},
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dtickrange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "items": {},
                   "valType": {}
                 },
                 "editType": {},
                 "value": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "valType": {}
@@ -15305,10 +15387,10 @@ var Plotly = {
                 "valType": {}
               },
               "tickmode": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -15350,22 +15432,22 @@ var Plotly = {
                 "valType": {}
               },
               "titlefont": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "valType": {}
                 },
                 "editType": {},
                 "family": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "noBlank": {},
                   "strict": {},
                   "valType": {}
                 },
                 "size": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "min": {},
                   "valType": {}
@@ -15420,7 +15502,7 @@ var Plotly = {
               "editType": {},
               "impliedEdits": {
                 "autocolorscale": {},
-                "closure_uid_236651161": {}
+                "closure_uid_388947968": {}
               },
               "valType": {}
             },
@@ -15616,7 +15698,7 @@ var Plotly = {
               }
             },
             "clean": function () {},
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "drawFramework": function () {},
             "finalizeSubplots": function () {},
             "idRegex": {
@@ -15668,7 +15750,7 @@ var Plotly = {
                 "valType": {},
                 "values": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
                 "dflt": {},
                 "editType": {},
@@ -15694,7 +15776,7 @@ var Plotly = {
               "dtick": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -15805,9 +15887,9 @@ var Plotly = {
                 },
                 "buttons": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "count": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "min": {},
@@ -15815,44 +15897,44 @@ var Plotly = {
                   },
                   "editType": {},
                   "label": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "step": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   },
                   "stepmode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   }
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "font": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -15889,11 +15971,11 @@ var Plotly = {
               },
               "rangeslider": {
                 "autorange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -15915,14 +15997,14 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "range": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -15941,16 +16023,16 @@ var Plotly = {
                 },
                 "yaxis": {
                   "_isSubplotObj": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "range": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "rangemode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
@@ -16047,7 +16129,7 @@ var Plotly = {
               "tick0": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -16108,7 +16190,7 @@ var Plotly = {
               "tickmode": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -16196,7 +16278,8 @@ var Plotly = {
             "rangePlot": function () {},
             "supplyLayoutDefaults": function () {},
             "toSVG": function () {},
-            "transitionAxes": function () {}
+            "transitionAxes": function () {},
+            "updateFx": function () {}
           },
           "calc": function () {},
           "categories": {},
@@ -16213,7 +16296,8 @@ var Plotly = {
         "categories": {
           "2dMap": {},
           "cartesian": {},
-          "histogram": {}
+          "histogram": {},
+          "svg": {}
         }
       },
       "histogram2dcontour": {
@@ -16243,7 +16327,7 @@ var Plotly = {
               "dflt": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "colorscale": {}
               },
               "valType": {}
@@ -16275,12 +16359,12 @@ var Plotly = {
                 "min": {},
                 "valType": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "dtick": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -16362,10 +16446,10 @@ var Plotly = {
                 "values": {}
               },
               "tick0": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -16381,22 +16465,22 @@ var Plotly = {
                 "valType": {}
               },
               "tickfont": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "valType": {}
                 },
                 "editType": {},
                 "family": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "noBlank": {},
                   "strict": {},
                   "valType": {}
                 },
                 "size": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "min": {},
                   "valType": {}
@@ -16409,16 +16493,16 @@ var Plotly = {
               },
               "tickformatstops": {
                 "_isLinkedToArray": {},
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dtickrange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "items": {},
                   "valType": {}
                 },
                 "editType": {},
                 "value": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "valType": {}
@@ -16431,10 +16515,10 @@ var Plotly = {
                 "valType": {}
               },
               "tickmode": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -16476,22 +16560,22 @@ var Plotly = {
                 "valType": {}
               },
               "titlefont": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "valType": {}
                 },
                 "editType": {},
                 "family": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "noBlank": {},
                   "strict": {},
                   "valType": {}
                 },
                 "size": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "min": {},
                   "valType": {}
@@ -16546,7 +16630,7 @@ var Plotly = {
               "editType": {},
               "impliedEdits": {
                 "autocolorscale": {},
-                "closure_uid_236651161": {}
+                "closure_uid_388947968": {}
               },
               "valType": {}
             },
@@ -16843,7 +16927,7 @@ var Plotly = {
               }
             },
             "clean": function () {},
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "drawFramework": function () {},
             "finalizeSubplots": function () {},
             "idRegex": {
@@ -16895,7 +16979,7 @@ var Plotly = {
                 "valType": {},
                 "values": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
                 "dflt": {},
                 "editType": {},
@@ -16921,7 +17005,7 @@ var Plotly = {
               "dtick": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -17032,9 +17116,9 @@ var Plotly = {
                 },
                 "buttons": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "count": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "min": {},
@@ -17042,44 +17126,44 @@ var Plotly = {
                   },
                   "editType": {},
                   "label": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "step": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   },
                   "stepmode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   }
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "font": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -17116,11 +17200,11 @@ var Plotly = {
               },
               "rangeslider": {
                 "autorange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -17142,14 +17226,14 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "range": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -17168,16 +17252,16 @@ var Plotly = {
                 },
                 "yaxis": {
                   "_isSubplotObj": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "range": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "rangemode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
@@ -17274,7 +17358,7 @@ var Plotly = {
               "tick0": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -17335,7 +17419,7 @@ var Plotly = {
               "tickmode": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -17423,7 +17507,8 @@ var Plotly = {
             "rangePlot": function () {},
             "supplyLayoutDefaults": function () {},
             "toSVG": function () {},
-            "transitionAxes": function () {}
+            "transitionAxes": function () {},
+            "updateFx": function () {}
           },
           "calc": function () {},
           "categories": {},
@@ -17440,7 +17525,8 @@ var Plotly = {
           "2dMap": {},
           "cartesian": {},
           "contour": {},
-          "histogram": {}
+          "histogram": {},
+          "svg": {}
         }
       },
       "mesh3d": {
@@ -17455,7 +17541,7 @@ var Plotly = {
               "dflt": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "colorscale": {}
               },
               "valType": {}
@@ -17506,12 +17592,12 @@ var Plotly = {
                 "min": {},
                 "valType": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "dtick": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -17593,10 +17679,10 @@ var Plotly = {
                 "values": {}
               },
               "tick0": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -17612,22 +17698,22 @@ var Plotly = {
                 "valType": {}
               },
               "tickfont": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "valType": {}
                 },
                 "editType": {},
                 "family": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "noBlank": {},
                   "strict": {},
                   "valType": {}
                 },
                 "size": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "min": {},
                   "valType": {}
@@ -17640,16 +17726,16 @@ var Plotly = {
               },
               "tickformatstops": {
                 "_isLinkedToArray": {},
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dtickrange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "items": {},
                   "valType": {}
                 },
                 "editType": {},
                 "value": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "valType": {}
@@ -17662,10 +17748,10 @@ var Plotly = {
                 "valType": {}
               },
               "tickmode": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -17707,22 +17793,22 @@ var Plotly = {
                 "valType": {}
               },
               "titlefont": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "valType": {}
                 },
                 "editType": {},
                 "family": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "noBlank": {},
                   "strict": {},
                   "valType": {}
                 },
                 "size": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "min": {},
                   "valType": {}
@@ -17777,7 +17863,7 @@ var Plotly = {
               "editType": {},
               "impliedEdits": {
                 "autocolorscale": {},
-                "closure_uid_236651161": {}
+                "closure_uid_388947968": {}
               },
               "valType": {}
             },
@@ -18000,13 +18086,13 @@ var Plotly = {
                 "editType": {},
                 "font": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "noBlank": {},
@@ -18014,7 +18100,7 @@ var Plotly = {
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "min": {},
@@ -18115,20 +18201,20 @@ var Plotly = {
                 "editType": {},
                 "font": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -18142,33 +18228,33 @@ var Plotly = {
                 },
                 "hoverlabel": {
                   "bgcolor": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "bordercolor": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "font": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "color": {
-                      "closure_uid_236651161": {},
+                      "closure_uid_388947968": {},
                       "editType": {},
                       "valType": {}
                     },
                     "editType": {},
                     "family": {
-                      "closure_uid_236651161": {},
+                      "closure_uid_388947968": {},
                       "editType": {},
                       "noBlank": {},
                       "strict": {},
                       "valType": {}
                     },
                     "size": {
-                      "closure_uid_236651161": {},
+                      "closure_uid_388947968": {},
                       "editType": {},
                       "min": {},
                       "valType": {}
@@ -18297,7 +18383,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "^aspectmode": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "min": {},
                   "valType": {}
@@ -18306,7 +18392,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "^aspectmode": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "min": {},
                   "valType": {}
@@ -18315,7 +18401,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "^aspectmode": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "min": {},
                   "valType": {}
@@ -18330,19 +18416,19 @@ var Plotly = {
                 "center": {
                   "editType": {},
                   "x": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "y": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "z": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -18352,19 +18438,19 @@ var Plotly = {
                 "eye": {
                   "editType": {},
                   "x": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "y": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "z": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -18373,19 +18459,19 @@ var Plotly = {
                 "up": {
                   "editType": {},
                   "x": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "y": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "z": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -18437,7 +18523,7 @@ var Plotly = {
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -18474,7 +18560,7 @@ var Plotly = {
                 "dtick": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -18529,7 +18615,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -18611,7 +18697,7 @@ var Plotly = {
                 "tick0": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -18628,20 +18714,20 @@ var Plotly = {
                 },
                 "tickfont": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -18655,14 +18741,14 @@ var Plotly = {
                 "tickformatstops": {
                   "_isLinkedToArray": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -18677,7 +18763,7 @@ var Plotly = {
                 "tickmode": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -18719,20 +18805,20 @@ var Plotly = {
                 },
                 "titlefont": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -18765,11 +18851,11 @@ var Plotly = {
               },
               "yaxis": {
                 "autorange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -18798,17 +18884,17 @@ var Plotly = {
                   "valType": {},
                   "values": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
                   "dflt": {},
                   "editType": {},
                   "valType": {}
                 },
                 "dtick": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -18860,11 +18946,11 @@ var Plotly = {
                   "valType": {}
                 },
                 "range": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -18944,10 +19030,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tick0": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -18963,22 +19049,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickfont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -18991,16 +19077,16 @@ var Plotly = {
                 },
                 "tickformatstops": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -19013,10 +19099,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickmode": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -19057,22 +19143,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "titlefont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -19105,11 +19191,11 @@ var Plotly = {
               },
               "zaxis": {
                 "autorange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -19138,17 +19224,17 @@ var Plotly = {
                   "valType": {},
                   "values": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
                   "dflt": {},
                   "editType": {},
                   "valType": {}
                 },
                 "dtick": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -19200,11 +19286,11 @@ var Plotly = {
                   "valType": {}
                 },
                 "range": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -19284,10 +19370,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tick0": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -19303,22 +19389,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickfont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -19331,16 +19417,16 @@ var Plotly = {
                 },
                 "tickformatstops": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -19353,10 +19439,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickmode": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -19397,22 +19483,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "titlefont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -19467,7 +19553,6 @@ var Plotly = {
         "_module": {
           "attributes": {
             "close": {
-              "dflt": {},
               "editType": {},
               "valType": {}
             },
@@ -19492,19 +19577,9 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 }
-              },
-              "name": {
-                "editType": {},
-                "valType": {}
-              },
-              "showlegend": {
-                "dflt": {},
-                "editType": {},
-                "valType": {}
               }
             },
             "high": {
-              "dflt": {},
               "editType": {},
               "valType": {}
             },
@@ -19529,15 +19604,6 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 }
-              },
-              "name": {
-                "editType": {},
-                "valType": {}
-              },
-              "showlegend": {
-                "dflt": {},
-                "editType": {},
-                "valType": {}
               }
             },
             "line": {
@@ -19556,12 +19622,10 @@ var Plotly = {
               }
             },
             "low": {
-              "dflt": {},
               "editType": {},
               "valType": {}
             },
             "open": {
-              "dflt": {},
               "editType": {},
               "valType": {}
             },
@@ -19606,7 +19670,7 @@ var Plotly = {
               }
             },
             "clean": function () {},
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "drawFramework": function () {},
             "finalizeSubplots": function () {},
             "idRegex": {
@@ -19635,7 +19699,7 @@ var Plotly = {
                 "dflt": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "range[0]": {},
                   "range[1]": {}
                 },
@@ -19659,7 +19723,7 @@ var Plotly = {
                 "valType": {},
                 "values": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
                 "dflt": {},
                 "editType": {},
@@ -19685,7 +19749,7 @@ var Plotly = {
               "dtick": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -19763,7 +19827,7 @@ var Plotly = {
                 "editType": {},
                 "impliedEdits": {
                   "autorange": {},
-                  "closure_uid_236651161": {}
+                  "closure_uid_388947968": {}
                 },
                 "items": {},
                 "valType": {}
@@ -19797,9 +19861,9 @@ var Plotly = {
                 },
                 "buttons": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "count": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "min": {},
@@ -19807,44 +19871,44 @@ var Plotly = {
                   },
                   "editType": {},
                   "label": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "step": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   },
                   "stepmode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   }
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "font": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -19881,11 +19945,11 @@ var Plotly = {
               },
               "rangeslider": {
                 "autorange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -19907,14 +19971,14 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "range": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -19933,16 +19997,16 @@ var Plotly = {
                 },
                 "yaxis": {
                   "_isSubplotObj": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "range": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "rangemode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
@@ -20039,7 +20103,7 @@ var Plotly = {
               "tick0": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -20100,7 +20164,7 @@ var Plotly = {
               "tickmode": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -20188,17 +20252,24 @@ var Plotly = {
             "rangePlot": function () {},
             "supplyLayoutDefaults": function () {},
             "toSVG": function () {},
-            "transitionAxes": function () {}
+            "transitionAxes": function () {},
+            "updateFx": function () {}
           },
+          "calc": function () {},
           "categories": {},
+          "hoverPoints": function () {},
           "meta": {},
           "moduleType": {},
           "name": {},
+          "plot": function () {},
+          "selectPoints": function () {},
+          "style": function () {},
           "supplyDefaults": function () {}
         },
         "categories": {
           "cartesian": {},
-          "showLegend": {}
+          "showLegend": {},
+          "svg": {}
         }
       },
       "parcoords": {
@@ -20207,12 +20278,19 @@ var Plotly = {
             "dimensions": {
               "_isLinkedToArray": {},
               "constraintrange": {
+                "dimensions": {},
                 "editType": {},
+                "freeLength": {},
                 "items": {},
                 "valType": {}
               },
               "editType": {},
               "label": {
+                "editType": {},
+                "valType": {}
+              },
+              "multiselect": {
+                "dflt": {},
                 "editType": {},
                 "valType": {}
               },
@@ -20294,7 +20372,7 @@ var Plotly = {
                 "dflt": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "colorscale": {}
                 },
                 "valType": {}
@@ -20346,12 +20424,12 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dtick": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -20433,10 +20511,10 @@ var Plotly = {
                   "values": {}
                 },
                 "tick0": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -20452,22 +20530,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickfont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -20480,16 +20558,16 @@ var Plotly = {
                 },
                 "tickformatstops": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -20502,10 +20580,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickmode": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -20547,22 +20625,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "titlefont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -20618,7 +20696,7 @@ var Plotly = {
                 "editType": {},
                 "impliedEdits": {
                   "autocolorscale": {},
-                  "closure_uid_236651161": {}
+                  "closure_uid_388947968": {}
                 },
                 "valType": {}
               },
@@ -21013,7 +21091,7 @@ var Plotly = {
               }
             },
             "baseLayoutAttrOverrides": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "hoverlabel": {
                 "bgcolor": {
                   "editType": {},
@@ -21023,18 +21101,18 @@ var Plotly = {
                   "editType": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "font": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "noBlank": {},
@@ -21042,7 +21120,7 @@ var Plotly = {
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "min": {},
@@ -21063,7 +21141,7 @@ var Plotly = {
               }
             },
             "clean": function () {},
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "drawFramework": function () {},
             "idRegex": {
               "x": {},
@@ -21091,7 +21169,7 @@ var Plotly = {
                 "dflt": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "range[0]": {},
                   "range[1]": {}
                 },
@@ -21108,7 +21186,7 @@ var Plotly = {
                 "valType": {},
                 "values": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
                 "dflt": {},
                 "editType": {},
@@ -21134,7 +21212,7 @@ var Plotly = {
               "dtick": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -21212,7 +21290,7 @@ var Plotly = {
                 "editType": {},
                 "impliedEdits": {
                   "autorange": {},
-                  "closure_uid_236651161": {}
+                  "closure_uid_388947968": {}
                 },
                 "items": {},
                 "valType": {}
@@ -21246,9 +21324,9 @@ var Plotly = {
                 },
                 "buttons": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "count": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "min": {},
@@ -21256,44 +21334,44 @@ var Plotly = {
                   },
                   "editType": {},
                   "label": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "step": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   },
                   "stepmode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   }
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "font": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -21330,11 +21408,11 @@ var Plotly = {
               },
               "rangeslider": {
                 "autorange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -21356,14 +21434,14 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "range": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -21382,16 +21460,16 @@ var Plotly = {
                 },
                 "yaxis": {
                   "_isSubplotObj": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "range": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "rangemode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
@@ -21488,7 +21566,7 @@ var Plotly = {
               "tick0": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -21549,7 +21627,7 @@ var Plotly = {
               "tickmode": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -21872,13 +21950,13 @@ var Plotly = {
                 "editType": {},
                 "font": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "noBlank": {},
@@ -21886,7 +21964,7 @@ var Plotly = {
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "min": {},
@@ -22147,7 +22225,7 @@ var Plotly = {
                 "dflt": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "colorscale": {}
                 },
                 "valType": {}
@@ -22199,12 +22277,12 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dtick": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -22286,10 +22364,10 @@ var Plotly = {
                   "values": {}
                 },
                 "tick0": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -22305,22 +22383,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickfont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -22333,16 +22411,16 @@ var Plotly = {
                 },
                 "tickformatstops": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -22355,10 +22433,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickmode": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -22400,22 +22478,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "titlefont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -22470,7 +22548,7 @@ var Plotly = {
                 "editType": {},
                 "impliedEdits": {
                   "autocolorscale": {},
-                  "closure_uid_236651161": {}
+                  "closure_uid_388947968": {}
                 },
                 "valType": {}
               },
@@ -22495,7 +22573,7 @@ var Plotly = {
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "colorscale": {}
                   },
                   "valType": {}
@@ -22504,7 +22582,7 @@ var Plotly = {
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "cmax": {},
                     "cmin": {}
                   },
@@ -22515,7 +22593,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "cauto": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -22524,7 +22602,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "cauto": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -22537,7 +22615,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "autocolorscale": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -22762,7 +22840,7 @@ var Plotly = {
               }
             },
             "clean": function () {},
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "drawFramework": function () {},
             "finalizeSubplots": function () {},
             "idRegex": {
@@ -22791,7 +22869,7 @@ var Plotly = {
                 "dflt": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "range[0]": {},
                   "range[1]": {}
                 },
@@ -22815,7 +22893,7 @@ var Plotly = {
                 "valType": {},
                 "values": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
                 "dflt": {},
                 "editType": {},
@@ -22841,7 +22919,7 @@ var Plotly = {
               "dtick": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -22919,7 +22997,7 @@ var Plotly = {
                 "editType": {},
                 "impliedEdits": {
                   "autorange": {},
-                  "closure_uid_236651161": {}
+                  "closure_uid_388947968": {}
                 },
                 "items": {},
                 "valType": {}
@@ -22953,9 +23031,9 @@ var Plotly = {
                 },
                 "buttons": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "count": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "min": {},
@@ -22963,44 +23041,44 @@ var Plotly = {
                   },
                   "editType": {},
                   "label": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "step": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   },
                   "stepmode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   }
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "font": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -23037,11 +23115,11 @@ var Plotly = {
               },
               "rangeslider": {
                 "autorange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -23063,14 +23141,14 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "range": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -23089,16 +23167,16 @@ var Plotly = {
                 },
                 "yaxis": {
                   "_isSubplotObj": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "range": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "rangemode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
@@ -23195,7 +23273,7 @@ var Plotly = {
               "tick0": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -23256,7 +23334,7 @@ var Plotly = {
               "tickmode": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -23344,7 +23422,8 @@ var Plotly = {
             "rangePlot": function () {},
             "supplyLayoutDefaults": function () {},
             "toSVG": function () {},
-            "transitionAxes": function () {}
+            "transitionAxes": function () {},
+            "updateFx": function () {}
           },
           "calc": function () {},
           "categories": {},
@@ -23365,10 +23444,12 @@ var Plotly = {
         },
         "categories": {
           "cartesian": {},
+          "draggedPts": {},
           "errorBarsOK": {},
           "markerColorscale": {},
           "scatter-like": {},
           "showLegend": {},
+          "svg": {},
           "symbols": {}
         }
       },
@@ -23614,7 +23695,7 @@ var Plotly = {
                 "dflt": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "colorscale": {}
                 },
                 "valType": {}
@@ -23653,7 +23734,7 @@ var Plotly = {
                 "editType": {},
                 "impliedEdits": {
                   "autocolorscale": {},
-                  "closure_uid_236651161": {}
+                  "closure_uid_388947968": {}
                 },
                 "valType": {}
               },
@@ -23686,7 +23767,7 @@ var Plotly = {
                 "dflt": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "colorscale": {}
                 },
                 "valType": {}
@@ -23741,7 +23822,7 @@ var Plotly = {
                 "dtick": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -23825,7 +23906,7 @@ var Plotly = {
                 "tick0": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -23842,20 +23923,20 @@ var Plotly = {
                 },
                 "tickfont": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -23869,14 +23950,14 @@ var Plotly = {
                 "tickformatstops": {
                   "_isLinkedToArray": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -23891,7 +23972,7 @@ var Plotly = {
                 "tickmode": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -23934,20 +24015,20 @@ var Plotly = {
                 },
                 "titlefont": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -24002,7 +24083,7 @@ var Plotly = {
                 "editType": {},
                 "impliedEdits": {
                   "autocolorscale": {},
-                  "closure_uid_236651161": {}
+                  "closure_uid_388947968": {}
                 },
                 "valType": {}
               },
@@ -24012,7 +24093,7 @@ var Plotly = {
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "colorscale": {}
                   },
                   "valType": {}
@@ -24021,7 +24102,7 @@ var Plotly = {
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "cmax": {},
                     "cmin": {}
                   },
@@ -24032,7 +24113,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "cauto": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -24041,7 +24122,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "cauto": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -24054,7 +24135,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "autocolorscale": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -24285,7 +24366,7 @@ var Plotly = {
               }
             },
             "baseLayoutAttrOverrides": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "hoverlabel": {
                 "bgcolor": {
                   "editType": {},
@@ -24295,18 +24376,18 @@ var Plotly = {
                   "editType": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "font": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "noBlank": {},
@@ -24314,7 +24395,7 @@ var Plotly = {
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "min": {},
@@ -24331,7 +24412,7 @@ var Plotly = {
             },
             "clean": function () {},
             "cleanId": function () {},
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "idRegex": {},
             "idRoot": {},
             "layoutAttributes": {
@@ -24413,25 +24494,25 @@ var Plotly = {
                   "editType": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "font": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -24445,34 +24526,34 @@ var Plotly = {
                 },
                 "hoverlabel": {
                   "bgcolor": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "bordercolor": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "font": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "color": {
-                      "closure_uid_236651161": {},
+                      "closure_uid_388947968": {},
                       "editType": {},
                       "valType": {}
                     },
                     "editType": {},
                     "family": {
-                      "closure_uid_236651161": {},
+                      "closure_uid_388947968": {},
                       "editType": {},
                       "noBlank": {},
                       "strict": {},
                       "valType": {}
                     },
                     "size": {
-                      "closure_uid_236651161": {},
+                      "closure_uid_388947968": {},
                       "editType": {},
                       "min": {},
                       "valType": {}
@@ -24593,37 +24674,37 @@ var Plotly = {
                 "values": {}
               },
               "aspectratio": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "impliedEdits": {
                   "aspectmode": {}
                 },
                 "x": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "^aspectmode": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "min": {},
                   "valType": {}
                 },
                 "y": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "^aspectmode": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "min": {},
                   "valType": {}
                 },
                 "z": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "^aspectmode": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "min": {},
                   "valType": {}
@@ -24636,75 +24717,75 @@ var Plotly = {
               },
               "camera": {
                 "center": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "x": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "y": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "z": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   }
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "eye": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "x": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "y": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "z": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   }
                 },
                 "up": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "x": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "y": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "z": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   }
                 }
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "domain": {
                 "column": {
                   "dflt": {},
@@ -24747,11 +24828,11 @@ var Plotly = {
               },
               "xaxis": {
                 "autorange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -24780,17 +24861,17 @@ var Plotly = {
                   "valType": {},
                   "values": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
                   "dflt": {},
                   "editType": {},
                   "valType": {}
                 },
                 "dtick": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -24842,11 +24923,11 @@ var Plotly = {
                   "valType": {}
                 },
                 "range": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -24926,10 +25007,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tick0": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -24945,22 +25026,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickfont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -24973,16 +25054,16 @@ var Plotly = {
                 },
                 "tickformatstops": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -24995,10 +25076,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickmode": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -25039,22 +25120,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "titlefont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -25087,11 +25168,11 @@ var Plotly = {
               },
               "yaxis": {
                 "autorange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -25120,17 +25201,17 @@ var Plotly = {
                   "valType": {},
                   "values": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
                   "dflt": {},
                   "editType": {},
                   "valType": {}
                 },
                 "dtick": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -25182,11 +25263,11 @@ var Plotly = {
                   "valType": {}
                 },
                 "range": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -25266,10 +25347,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tick0": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -25285,22 +25366,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickfont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -25313,16 +25394,16 @@ var Plotly = {
                 },
                 "tickformatstops": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -25335,10 +25416,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickmode": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -25379,22 +25460,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "titlefont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -25427,11 +25508,11 @@ var Plotly = {
               },
               "zaxis": {
                 "autorange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -25460,17 +25541,17 @@ var Plotly = {
                   "valType": {},
                   "values": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
                   "dflt": {},
                   "editType": {},
                   "valType": {}
                 },
                 "dtick": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -25522,11 +25603,11 @@ var Plotly = {
                   "valType": {}
                 },
                 "range": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -25606,10 +25687,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tick0": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -25625,22 +25706,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickfont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -25653,16 +25734,16 @@ var Plotly = {
                 },
                 "tickformatstops": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -25675,10 +25756,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickmode": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -25719,22 +25800,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "titlefont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -25878,7 +25959,7 @@ var Plotly = {
                 "dflt": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "colorscale": {}
                 },
                 "valType": {}
@@ -25930,12 +26011,12 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dtick": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -26017,10 +26098,10 @@ var Plotly = {
                   "values": {}
                 },
                 "tick0": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -26036,22 +26117,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickfont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -26064,16 +26145,16 @@ var Plotly = {
                 },
                 "tickformatstops": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -26086,10 +26167,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickmode": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -26131,22 +26212,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "titlefont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -26201,7 +26282,7 @@ var Plotly = {
                 "editType": {},
                 "impliedEdits": {
                   "autocolorscale": {},
-                  "closure_uid_236651161": {}
+                  "closure_uid_388947968": {}
                 },
                 "valType": {}
               },
@@ -26226,7 +26307,7 @@ var Plotly = {
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "colorscale": {}
                   },
                   "valType": {}
@@ -26235,7 +26316,7 @@ var Plotly = {
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "cmax": {},
                     "cmin": {}
                   },
@@ -26246,7 +26327,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "cauto": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -26255,7 +26336,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "cauto": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -26268,7 +26349,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "autocolorscale": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -26454,7 +26535,7 @@ var Plotly = {
               }
             },
             "clean": function () {},
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "drawFramework": function () {},
             "finalizeSubplots": function () {},
             "idRegex": {
@@ -26483,7 +26564,7 @@ var Plotly = {
                 "dflt": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "range[0]": {},
                   "range[1]": {}
                 },
@@ -26507,7 +26588,7 @@ var Plotly = {
                 "valType": {},
                 "values": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
                 "dflt": {},
                 "editType": {},
@@ -26533,7 +26614,7 @@ var Plotly = {
               "dtick": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -26611,7 +26692,7 @@ var Plotly = {
                 "editType": {},
                 "impliedEdits": {
                   "autorange": {},
-                  "closure_uid_236651161": {}
+                  "closure_uid_388947968": {}
                 },
                 "items": {},
                 "valType": {}
@@ -26645,9 +26726,9 @@ var Plotly = {
                 },
                 "buttons": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "count": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "min": {},
@@ -26655,44 +26736,44 @@ var Plotly = {
                   },
                   "editType": {},
                   "label": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "step": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   },
                   "stepmode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   }
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "font": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -26729,11 +26810,11 @@ var Plotly = {
               },
               "rangeslider": {
                 "autorange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -26755,14 +26836,14 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "range": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -26781,16 +26862,16 @@ var Plotly = {
                 },
                 "yaxis": {
                   "_isSubplotObj": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "range": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "rangemode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
@@ -26887,7 +26968,7 @@ var Plotly = {
               "tick0": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -26948,7 +27029,7 @@ var Plotly = {
               "tickmode": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -27036,7 +27117,8 @@ var Plotly = {
             "rangePlot": function () {},
             "supplyLayoutDefaults": function () {},
             "toSVG": function () {},
-            "transitionAxes": function () {}
+            "transitionAxes": function () {},
+            "updateFx": function () {}
           },
           "calc": function () {},
           "categories": {},
@@ -27054,8 +27136,10 @@ var Plotly = {
         "categories": {
           "carpet": {},
           "carpetDependent": {},
+          "draggedPts": {},
           "markerColorscale": {},
           "showLegend": {},
+          "svg": {},
           "symbols": {}
         }
       },
@@ -27133,7 +27217,7 @@ var Plotly = {
                 "dflt": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "colorscale": {}
                 },
                 "valType": {}
@@ -27188,7 +27272,7 @@ var Plotly = {
                 "dtick": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -27272,7 +27356,7 @@ var Plotly = {
                 "tick0": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -27289,20 +27373,20 @@ var Plotly = {
                 },
                 "tickfont": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -27316,14 +27400,14 @@ var Plotly = {
                 "tickformatstops": {
                   "_isLinkedToArray": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -27338,7 +27422,7 @@ var Plotly = {
                 "tickmode": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -27381,20 +27465,20 @@ var Plotly = {
                 },
                 "titlefont": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -27449,7 +27533,7 @@ var Plotly = {
                 "editType": {},
                 "impliedEdits": {
                   "autocolorscale": {},
-                  "closure_uid_236651161": {}
+                  "closure_uid_388947968": {}
                 },
                 "valType": {}
               },
@@ -27474,7 +27558,7 @@ var Plotly = {
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "colorscale": {}
                   },
                   "valType": {}
@@ -27483,7 +27567,7 @@ var Plotly = {
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "cmax": {},
                     "cmin": {}
                   },
@@ -27494,7 +27578,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "cauto": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -27503,7 +27587,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "cauto": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -27516,7 +27600,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "autocolorscale": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -27691,7 +27775,7 @@ var Plotly = {
               }
             },
             "clean": function () {},
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "idRegex": {},
             "idRoot": {},
             "layoutAttributes": {
@@ -27711,7 +27795,7 @@ var Plotly = {
                   "valType": {}
                 }
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "coastlinecolor": {
                 "dflt": {},
                 "editType": {},
@@ -27853,7 +27937,7 @@ var Plotly = {
                 "valType": {}
               },
               "projection": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "parallels": {
                   "editType": {},
@@ -27861,20 +27945,20 @@ var Plotly = {
                   "valType": {}
                 },
                 "rotation": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "lat": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "lon": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "roll": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   }
@@ -28188,7 +28272,7 @@ var Plotly = {
                 "dflt": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "colorscale": {}
                 },
                 "valType": {}
@@ -28243,7 +28327,7 @@ var Plotly = {
                 "dtick": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -28327,7 +28411,7 @@ var Plotly = {
                 "tick0": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -28344,20 +28428,20 @@ var Plotly = {
                 },
                 "tickfont": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -28371,14 +28455,14 @@ var Plotly = {
                 "tickformatstops": {
                   "_isLinkedToArray": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -28393,7 +28477,7 @@ var Plotly = {
                 "tickmode": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -28436,20 +28520,20 @@ var Plotly = {
                 },
                 "titlefont": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -28504,7 +28588,7 @@ var Plotly = {
                 "editType": {},
                 "impliedEdits": {
                   "autocolorscale": {},
-                  "closure_uid_236651161": {}
+                  "closure_uid_388947968": {}
                 },
                 "valType": {}
               },
@@ -28514,7 +28598,7 @@ var Plotly = {
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "colorscale": {}
                   },
                   "valType": {}
@@ -28523,7 +28607,7 @@ var Plotly = {
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "cmax": {},
                     "cmin": {}
                   },
@@ -28534,7 +28618,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "cauto": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -28543,7 +28627,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "cauto": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -28556,7 +28640,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "autocolorscale": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -28732,7 +28816,7 @@ var Plotly = {
               }
             },
             "clean": function () {},
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "drawFramework": function () {},
             "finalizeSubplots": function () {},
             "idRegex": {
@@ -28761,7 +28845,7 @@ var Plotly = {
                 "dflt": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "range[0]": {},
                   "range[1]": {}
                 },
@@ -28785,7 +28869,7 @@ var Plotly = {
                 "valType": {},
                 "values": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
                 "dflt": {},
                 "editType": {},
@@ -28811,7 +28895,7 @@ var Plotly = {
               "dtick": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -28889,7 +28973,7 @@ var Plotly = {
                 "editType": {},
                 "impliedEdits": {
                   "autorange": {},
-                  "closure_uid_236651161": {}
+                  "closure_uid_388947968": {}
                 },
                 "items": {},
                 "valType": {}
@@ -28923,9 +29007,9 @@ var Plotly = {
                 },
                 "buttons": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "count": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "min": {},
@@ -28933,44 +29017,44 @@ var Plotly = {
                   },
                   "editType": {},
                   "label": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "step": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   },
                   "stepmode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   }
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "font": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -29007,11 +29091,11 @@ var Plotly = {
               },
               "rangeslider": {
                 "autorange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -29033,14 +29117,14 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "range": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -29059,16 +29143,16 @@ var Plotly = {
                 },
                 "yaxis": {
                   "_isSubplotObj": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "range": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "rangemode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
@@ -29165,7 +29249,7 @@ var Plotly = {
               "tick0": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -29226,7 +29310,7 @@ var Plotly = {
               "tickmode": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -29314,9 +29398,11 @@ var Plotly = {
             "rangePlot": function () {},
             "supplyLayoutDefaults": function () {},
             "toSVG": function () {},
-            "transitionAxes": function () {}
+            "transitionAxes": function () {},
+            "updateFx": function () {}
           },
           "calc": function () {},
+          "calcHover": function () {},
           "categories": {},
           "cleanData": function () {},
           "colorbar": function () {},
@@ -29400,7 +29486,7 @@ var Plotly = {
                 "dflt": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "colorscale": {}
                 },
                 "valType": {}
@@ -29455,7 +29541,7 @@ var Plotly = {
                 "dtick": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -29539,7 +29625,7 @@ var Plotly = {
                 "tick0": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -29556,20 +29642,20 @@ var Plotly = {
                 },
                 "tickfont": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -29583,14 +29669,14 @@ var Plotly = {
                 "tickformatstops": {
                   "_isLinkedToArray": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -29605,7 +29691,7 @@ var Plotly = {
                 "tickmode": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -29648,20 +29734,20 @@ var Plotly = {
                 },
                 "titlefont": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -29716,7 +29802,7 @@ var Plotly = {
                 "editType": {},
                 "impliedEdits": {
                   "autocolorscale": {},
-                  "closure_uid_236651161": {}
+                  "closure_uid_388947968": {}
                 },
                 "valType": {}
               },
@@ -29928,7 +30014,7 @@ var Plotly = {
                 "circle": {
                   "editType": {},
                   "radius": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -29943,7 +30029,7 @@ var Plotly = {
                 "fill": {
                   "editType": {},
                   "outlinecolor": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -29952,7 +30038,7 @@ var Plotly = {
                 "line": {
                   "editType": {},
                   "width": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -29983,33 +30069,33 @@ var Plotly = {
                 "symbol": {
                   "editType": {},
                   "icon": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "iconsize": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "text": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "textfont": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "color": {
-                      "closure_uid_236651161": {},
+                      "closure_uid_388947968": {},
                       "editType": {},
                       "valType": {}
                     },
                     "editType": {},
                     "family": {
-                      "closure_uid_236651161": {},
+                      "closure_uid_388947968": {},
                       "dflt": {},
                       "editType": {},
                       "noBlank": {},
@@ -30017,7 +30103,7 @@ var Plotly = {
                       "valType": {}
                     },
                     "size": {
-                      "closure_uid_236651161": {},
+                      "closure_uid_388947968": {},
                       "editType": {},
                       "min": {},
                       "valType": {}
@@ -30025,7 +30111,7 @@ var Plotly = {
                   },
                   "textposition": {
                     "arrayOk": {},
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
@@ -30163,7 +30249,7 @@ var Plotly = {
                 "dflt": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "colorscale": {}
                 },
                 "valType": {}
@@ -30177,7 +30263,7 @@ var Plotly = {
                 },
                 "valType": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "cmax": {
                 "dflt": {},
                 "editType": {},
@@ -30216,12 +30302,12 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dtick": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -30303,10 +30389,10 @@ var Plotly = {
                   "values": {}
                 },
                 "tick0": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -30322,22 +30408,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickfont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -30350,16 +30436,16 @@ var Plotly = {
                 },
                 "tickformatstops": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -30372,10 +30458,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickmode": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -30417,22 +30503,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "titlefont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -30487,7 +30573,7 @@ var Plotly = {
                 "editType": {},
                 "impliedEdits": {
                   "autocolorscale": {},
-                  "closure_uid_236651161": {}
+                  "closure_uid_388947968": {}
                 },
                 "valType": {}
               },
@@ -30509,44 +30595,44 @@ var Plotly = {
               },
               "line": {
                 "autocolorscale": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "colorscale": {}
                   },
                   "valType": {}
                 },
                 "cauto": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "cmax": {},
                     "cmin": {}
                   },
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "cmax": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
                     "cauto": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
                 "cmin": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
                     "cauto": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -30556,11 +30642,11 @@ var Plotly = {
                   "valType": {}
                 },
                 "colorscale": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autocolorscale": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -30782,7 +30868,7 @@ var Plotly = {
                 "dtick": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -30889,7 +30975,7 @@ var Plotly = {
                 "tick0": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -30906,20 +30992,20 @@ var Plotly = {
                 },
                 "tickfont": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -30933,14 +31019,14 @@ var Plotly = {
                 "tickformatstops": {
                   "_isLinkedToArray": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -30955,7 +31041,7 @@ var Plotly = {
                 "tickmode": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -31045,7 +31131,7 @@ var Plotly = {
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -31075,10 +31161,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "dtick": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -31133,7 +31219,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -31189,10 +31275,10 @@ var Plotly = {
                   "values": {}
                 },
                 "tick0": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -31208,22 +31294,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickfont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -31236,16 +31322,16 @@ var Plotly = {
                 },
                 "tickformatstops": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -31258,10 +31344,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickmode": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -31304,20 +31390,20 @@ var Plotly = {
                 },
                 "titlefont": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -31421,7 +31507,7 @@ var Plotly = {
                 "dflt": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "colorscale": {}
                 },
                 "valType": {}
@@ -31435,7 +31521,7 @@ var Plotly = {
                 },
                 "valType": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "cmax": {
                 "dflt": {},
                 "editType": {},
@@ -31474,12 +31560,12 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dtick": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -31561,10 +31647,10 @@ var Plotly = {
                   "values": {}
                 },
                 "tick0": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -31580,22 +31666,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickfont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -31608,16 +31694,16 @@ var Plotly = {
                 },
                 "tickformatstops": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -31630,10 +31716,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickmode": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -31675,22 +31761,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "titlefont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -31745,51 +31831,51 @@ var Plotly = {
                 "editType": {},
                 "impliedEdits": {
                   "autocolorscale": {},
-                  "closure_uid_236651161": {}
+                  "closure_uid_388947968": {}
                 },
                 "valType": {}
               },
               "editType": {},
               "line": {
                 "autocolorscale": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "colorscale": {}
                   },
                   "valType": {}
                 },
                 "cauto": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "cmax": {},
                     "cmin": {}
                   },
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "cmax": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
                     "cauto": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
                 "cmin": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
                     "cauto": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -31799,11 +31885,11 @@ var Plotly = {
                   "valType": {}
                 },
                 "colorscale": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autocolorscale": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -31963,7 +32049,7 @@ var Plotly = {
               }
             },
             "clean": function () {},
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "idRegex": {},
             "idRoot": {},
             "layoutAttributes": {
@@ -31978,7 +32064,7 @@ var Plotly = {
                   "valType": {},
                   "values": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
                   "dflt": {},
                   "editType": {},
@@ -31991,10 +32077,10 @@ var Plotly = {
                   "values": {}
                 },
                 "dtick": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -32099,10 +32185,10 @@ var Plotly = {
                   "values": {}
                 },
                 "tick0": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -32118,22 +32204,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickfont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -32146,16 +32232,16 @@ var Plotly = {
                 },
                 "tickformatstops": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -32168,10 +32254,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickmode": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -32224,7 +32310,7 @@ var Plotly = {
                 "editType": {},
                 "valType": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "domain": {
                 "column": {
                   "dflt": {},
@@ -32259,11 +32345,11 @@ var Plotly = {
                   "valType": {}
                 },
                 "autorange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -32287,17 +32373,17 @@ var Plotly = {
                   "valType": {},
                   "values": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
                   "dflt": {},
                   "editType": {},
                   "valType": {}
                 },
                 "dtick": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -32349,11 +32435,11 @@ var Plotly = {
                   "valType": {}
                 },
                 "range": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -32409,10 +32495,10 @@ var Plotly = {
                   "values": {}
                 },
                 "tick0": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -32428,22 +32514,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickfont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -32456,16 +32542,16 @@ var Plotly = {
                 },
                 "tickformatstops": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -32478,10 +32564,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickmode": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -32523,22 +32609,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "titlefont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -32680,7 +32766,7 @@ var Plotly = {
                 "dflt": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "colorscale": {}
                 },
                 "valType": {}
@@ -32732,12 +32818,12 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dtick": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -32819,10 +32905,10 @@ var Plotly = {
                   "values": {}
                 },
                 "tick0": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -32838,22 +32924,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickfont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -32866,16 +32952,16 @@ var Plotly = {
                 },
                 "tickformatstops": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -32888,10 +32974,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickmode": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -32933,22 +33019,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "titlefont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -33003,7 +33089,7 @@ var Plotly = {
                 "editType": {},
                 "impliedEdits": {
                   "autocolorscale": {},
-                  "closure_uid_236651161": {}
+                  "closure_uid_388947968": {}
                 },
                 "valType": {}
               },
@@ -33028,7 +33114,7 @@ var Plotly = {
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "colorscale": {}
                   },
                   "valType": {}
@@ -33037,7 +33123,7 @@ var Plotly = {
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "cmax": {},
                     "cmin": {}
                   },
@@ -33048,7 +33134,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "cauto": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -33057,7 +33143,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "cauto": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -33070,7 +33156,7 @@ var Plotly = {
                   "editType": {},
                   "impliedEdits": {
                     "autocolorscale": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "valType": {}
                 },
@@ -33269,7 +33355,7 @@ var Plotly = {
                 "dtick": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -33367,7 +33453,7 @@ var Plotly = {
                 "tick0": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -33384,20 +33470,20 @@ var Plotly = {
                 },
                 "tickfont": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -33411,14 +33497,14 @@ var Plotly = {
                 "tickformatstops": {
                   "_isLinkedToArray": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -33433,7 +33519,7 @@ var Plotly = {
                 "tickmode": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -33475,20 +33561,20 @@ var Plotly = {
                 },
                 "titlefont": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -33504,7 +33590,7 @@ var Plotly = {
                 "dtick": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -33602,7 +33688,7 @@ var Plotly = {
                 "tick0": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -33619,20 +33705,20 @@ var Plotly = {
                 },
                 "tickfont": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -33646,14 +33732,14 @@ var Plotly = {
                 "tickformatstops": {
                   "_isLinkedToArray": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -33668,7 +33754,7 @@ var Plotly = {
                 "tickmode": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -33710,20 +33796,20 @@ var Plotly = {
                 },
                 "titlefont": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -33744,7 +33830,7 @@ var Plotly = {
                 "dtick": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -33842,7 +33928,7 @@ var Plotly = {
                 "tick0": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -33859,20 +33945,20 @@ var Plotly = {
                 },
                 "tickfont": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -33886,14 +33972,14 @@ var Plotly = {
                 "tickformatstops": {
                   "_isLinkedToArray": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -33908,7 +33994,7 @@ var Plotly = {
                 "tickmode": {
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -33950,20 +34036,20 @@ var Plotly = {
                 },
                 "titlefont": {
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -34030,6 +34116,1177 @@ var Plotly = {
           "ternary": {}
         }
       },
+      "splom": {
+        "_module": {
+          "attributes": {
+            "diagonal": {
+              "editType": {},
+              "visible": {
+                "dflt": {},
+                "editType": {},
+                "valType": {}
+              }
+            },
+            "dimensions": {
+              "_isLinkedToArray": {},
+              "editType": {},
+              "label": {
+                "editType": {},
+                "valType": {}
+              },
+              "values": {
+                "editType": {},
+                "valType": {}
+              },
+              "visible": {
+                "dflt": {},
+                "editType": {},
+                "valType": {}
+              }
+            },
+            "marker": {
+              "autocolorscale": {
+                "dflt": {},
+                "editType": {},
+                "impliedEdits": {
+                  "closure_uid_388947968": {},
+                  "colorscale": {}
+                },
+                "valType": {}
+              },
+              "cauto": {
+                "dflt": {},
+                "editType": {},
+                "impliedEdits": {
+                  "cmax": {},
+                  "cmin": {}
+                },
+                "valType": {}
+              },
+              "closure_uid_388947968": {},
+              "cmax": {
+                "dflt": {},
+                "editType": {},
+                "impliedEdits": {
+                  "cauto": {}
+                },
+                "valType": {}
+              },
+              "cmin": {
+                "dflt": {},
+                "editType": {},
+                "impliedEdits": {
+                  "cauto": {}
+                },
+                "valType": {}
+              },
+              "color": {
+                "arrayOk": {},
+                "editType": {},
+                "valType": {}
+              },
+              "colorbar": {
+                "bgcolor": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {}
+                },
+                "bordercolor": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {}
+                },
+                "borderwidth": {
+                  "dflt": {},
+                  "editType": {},
+                  "min": {},
+                  "valType": {}
+                },
+                "closure_uid_388947968": {},
+                "dtick": {
+                  "closure_uid_388947968": {},
+                  "editType": {},
+                  "impliedEdits": {
+                    "closure_uid_388947968": {},
+                    "tickmode": {}
+                  },
+                  "valType": {}
+                },
+                "editType": {},
+                "exponentformat": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {},
+                  "values": {}
+                },
+                "len": {
+                  "dflt": {},
+                  "editType": {},
+                  "min": {},
+                  "valType": {}
+                },
+                "lenmode": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {},
+                  "values": {}
+                },
+                "nticks": {
+                  "dflt": {},
+                  "editType": {},
+                  "min": {},
+                  "valType": {}
+                },
+                "outlinecolor": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {}
+                },
+                "outlinewidth": {
+                  "dflt": {},
+                  "editType": {},
+                  "min": {},
+                  "valType": {}
+                },
+                "separatethousands": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {}
+                },
+                "showexponent": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {},
+                  "values": {}
+                },
+                "showticklabels": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {}
+                },
+                "showtickprefix": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {},
+                  "values": {}
+                },
+                "showticksuffix": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {},
+                  "values": {}
+                },
+                "thickness": {
+                  "dflt": {},
+                  "editType": {},
+                  "min": {},
+                  "valType": {}
+                },
+                "thicknessmode": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {},
+                  "values": {}
+                },
+                "tick0": {
+                  "closure_uid_388947968": {},
+                  "editType": {},
+                  "impliedEdits": {
+                    "closure_uid_388947968": {},
+                    "tickmode": {}
+                  },
+                  "valType": {}
+                },
+                "tickangle": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {}
+                },
+                "tickcolor": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {}
+                },
+                "tickfont": {
+                  "closure_uid_388947968": {},
+                  "color": {
+                    "closure_uid_388947968": {},
+                    "editType": {},
+                    "valType": {}
+                  },
+                  "editType": {},
+                  "family": {
+                    "closure_uid_388947968": {},
+                    "editType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "valType": {}
+                  },
+                  "size": {
+                    "closure_uid_388947968": {},
+                    "editType": {},
+                    "min": {},
+                    "valType": {}
+                  }
+                },
+                "tickformat": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {}
+                },
+                "tickformatstops": {
+                  "_isLinkedToArray": {},
+                  "closure_uid_388947968": {},
+                  "dtickrange": {
+                    "closure_uid_388947968": {},
+                    "editType": {},
+                    "items": {},
+                    "valType": {}
+                  },
+                  "editType": {},
+                  "value": {
+                    "closure_uid_388947968": {},
+                    "dflt": {},
+                    "editType": {},
+                    "valType": {}
+                  }
+                },
+                "ticklen": {
+                  "dflt": {},
+                  "editType": {},
+                  "min": {},
+                  "valType": {}
+                },
+                "tickmode": {
+                  "closure_uid_388947968": {},
+                  "editType": {},
+                  "impliedEdits": {
+                    "closure_uid_388947968": {},
+                    "dtick": {},
+                    "tick0": {}
+                  },
+                  "valType": {},
+                  "values": {}
+                },
+                "tickprefix": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {}
+                },
+                "ticks": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {},
+                  "values": {}
+                },
+                "ticksuffix": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {}
+                },
+                "ticktext": {
+                  "editType": {},
+                  "valType": {}
+                },
+                "tickvals": {
+                  "editType": {},
+                  "valType": {}
+                },
+                "tickwidth": {
+                  "dflt": {},
+                  "editType": {},
+                  "min": {},
+                  "valType": {}
+                },
+                "title": {
+                  "editType": {},
+                  "valType": {}
+                },
+                "titlefont": {
+                  "closure_uid_388947968": {},
+                  "color": {
+                    "closure_uid_388947968": {},
+                    "editType": {},
+                    "valType": {}
+                  },
+                  "editType": {},
+                  "family": {
+                    "closure_uid_388947968": {},
+                    "editType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "valType": {}
+                  },
+                  "size": {
+                    "closure_uid_388947968": {},
+                    "editType": {},
+                    "min": {},
+                    "valType": {}
+                  }
+                },
+                "titleside": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {},
+                  "values": {}
+                },
+                "x": {
+                  "dflt": {},
+                  "editType": {},
+                  "max": {},
+                  "min": {},
+                  "valType": {}
+                },
+                "xanchor": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {},
+                  "values": {}
+                },
+                "xpad": {
+                  "dflt": {},
+                  "editType": {},
+                  "min": {},
+                  "valType": {}
+                },
+                "y": {
+                  "dflt": {},
+                  "editType": {},
+                  "max": {},
+                  "min": {},
+                  "valType": {}
+                },
+                "yanchor": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {},
+                  "values": {}
+                },
+                "ypad": {
+                  "dflt": {},
+                  "editType": {},
+                  "min": {},
+                  "valType": {}
+                }
+              },
+              "colorscale": {
+                "editType": {},
+                "impliedEdits": {
+                  "autocolorscale": {},
+                  "closure_uid_388947968": {}
+                },
+                "valType": {}
+              },
+              "editType": {},
+              "line": {
+                "autocolorscale": {
+                  "closure_uid_388947968": {},
+                  "dflt": {},
+                  "editType": {},
+                  "impliedEdits": {
+                    "closure_uid_388947968": {},
+                    "colorscale": {}
+                  },
+                  "valType": {}
+                },
+                "cauto": {
+                  "closure_uid_388947968": {},
+                  "dflt": {},
+                  "editType": {},
+                  "impliedEdits": {
+                    "closure_uid_388947968": {},
+                    "cmax": {},
+                    "cmin": {}
+                  },
+                  "valType": {}
+                },
+                "closure_uid_388947968": {},
+                "cmax": {
+                  "closure_uid_388947968": {},
+                  "dflt": {},
+                  "editType": {},
+                  "impliedEdits": {
+                    "cauto": {},
+                    "closure_uid_388947968": {}
+                  },
+                  "valType": {}
+                },
+                "cmin": {
+                  "closure_uid_388947968": {},
+                  "dflt": {},
+                  "editType": {},
+                  "impliedEdits": {
+                    "cauto": {},
+                    "closure_uid_388947968": {}
+                  },
+                  "valType": {}
+                },
+                "color": {
+                  "arrayOk": {},
+                  "editType": {},
+                  "valType": {}
+                },
+                "colorscale": {
+                  "closure_uid_388947968": {},
+                  "editType": {},
+                  "impliedEdits": {
+                    "autocolorscale": {},
+                    "closure_uid_388947968": {}
+                  },
+                  "valType": {}
+                },
+                "editType": {},
+                "reversescale": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {}
+                },
+                "width": {
+                  "arrayOk": {},
+                  "editType": {},
+                  "min": {},
+                  "valType": {}
+                }
+              },
+              "opacity": {
+                "arrayOk": {},
+                "editType": {},
+                "max": {},
+                "min": {},
+                "valType": {}
+              },
+              "reversescale": {
+                "dflt": {},
+                "editType": {},
+                "valType": {}
+              },
+              "showscale": {
+                "dflt": {},
+                "editType": {},
+                "valType": {}
+              },
+              "size": {
+                "arrayOk": {},
+                "dflt": {},
+                "editType": {},
+                "min": {},
+                "valType": {}
+              },
+              "sizemin": {
+                "dflt": {},
+                "editType": {},
+                "min": {},
+                "valType": {}
+              },
+              "sizemode": {
+                "dflt": {},
+                "editType": {},
+                "valType": {},
+                "values": {}
+              },
+              "sizeref": {
+                "dflt": {},
+                "editType": {},
+                "valType": {}
+              },
+              "symbol": {
+                "arrayOk": {},
+                "dflt": {},
+                "editType": {},
+                "valType": {},
+                "values": {}
+              }
+            },
+            "opacity": {
+              "dflt": {},
+              "editType": {},
+              "max": {},
+              "min": {},
+              "valType": {}
+            },
+            "selected": {
+              "editType": {},
+              "marker": {
+                "color": {
+                  "editType": {},
+                  "valType": {}
+                },
+                "editType": {},
+                "opacity": {
+                  "editType": {},
+                  "max": {},
+                  "min": {},
+                  "valType": {}
+                },
+                "size": {
+                  "editType": {},
+                  "min": {},
+                  "valType": {}
+                }
+              }
+            },
+            "showlowerhalf": {
+              "dflt": {},
+              "editType": {},
+              "valType": {}
+            },
+            "showupperhalf": {
+              "dflt": {},
+              "editType": {},
+              "valType": {}
+            },
+            "text": {
+              "arrayOk": {},
+              "dflt": {},
+              "editType": {},
+              "valType": {}
+            },
+            "unselected": {
+              "editType": {},
+              "marker": {
+                "color": {
+                  "editType": {},
+                  "valType": {}
+                },
+                "editType": {},
+                "opacity": {
+                  "editType": {},
+                  "max": {},
+                  "min": {},
+                  "valType": {}
+                },
+                "size": {
+                  "editType": {},
+                  "min": {},
+                  "valType": {}
+                }
+              }
+            },
+            "xaxes": {
+              "editType": {},
+              "freeLength": {},
+              "items": {
+                "editType": {},
+                "regex": {},
+                "valType": {}
+              },
+              "valType": {}
+            },
+            "yaxes": {
+              "editType": {},
+              "freeLength": {},
+              "items": {
+                "editType": {},
+                "regex": {},
+                "valType": {}
+              },
+              "valType": {}
+            }
+          },
+          "basePlotModule": {
+            "attr": {},
+            "attrRegex": {},
+            "clean": function () {},
+            "drag": function () {},
+            "drawFramework": function () {},
+            "layoutAttributes": {
+              "_deprecated": {
+                "autotick": {
+                  "editType": {},
+                  "valType": {}
+                }
+              },
+              "anchor": {
+                "editType": {},
+                "valType": {},
+                "values": {}
+              },
+              "automargin": {
+                "dflt": {},
+                "editType": {},
+                "valType": {}
+              },
+              "autorange": {
+                "closure_uid_388947968": {},
+                "dflt": {},
+                "editType": {},
+                "impliedEdits": {
+                  "closure_uid_388947968": {},
+                  "range[0]": {},
+                  "range[1]": {}
+                },
+                "valType": {},
+                "values": {}
+              },
+              "calendar": {
+                "description": {},
+                "dflt": {},
+                "editType": {},
+                "valType": {},
+                "values": {}
+              },
+              "categoryarray": {
+                "editType": {},
+                "valType": {}
+              },
+              "categoryorder": {
+                "dflt": {},
+                "editType": {},
+                "valType": {},
+                "values": {}
+              },
+              "closure_uid_388947968": {},
+              "color": {
+                "dflt": {},
+                "editType": {},
+                "valType": {}
+              },
+              "constrain": {
+                "dflt": {},
+                "editType": {},
+                "valType": {},
+                "values": {}
+              },
+              "constraintoward": {
+                "editType": {},
+                "valType": {},
+                "values": {}
+              },
+              "domain": {
+                "dflt": {},
+                "editType": {},
+                "items": {},
+                "valType": {}
+              },
+              "dtick": {
+                "editType": {},
+                "impliedEdits": {
+                  "closure_uid_388947968": {},
+                  "tickmode": {}
+                },
+                "valType": {}
+              },
+              "editType": {},
+              "exponentformat": {
+                "dflt": {},
+                "editType": {},
+                "valType": {},
+                "values": {}
+              },
+              "fixedrange": {
+                "dflt": {},
+                "editType": {},
+                "valType": {}
+              },
+              "gridcolor": {
+                "dflt": {},
+                "editType": {},
+                "valType": {}
+              },
+              "gridwidth": {
+                "dflt": {},
+                "editType": {},
+                "min": {},
+                "valType": {}
+              },
+              "hoverformat": {
+                "dflt": {},
+                "editType": {},
+                "valType": {}
+              },
+              "layer": {
+                "dflt": {},
+                "editType": {},
+                "valType": {},
+                "values": {}
+              },
+              "linecolor": {
+                "dflt": {},
+                "editType": {},
+                "valType": {}
+              },
+              "linewidth": {
+                "dflt": {},
+                "editType": {},
+                "min": {},
+                "valType": {}
+              },
+              "mirror": {
+                "dflt": {},
+                "editType": {},
+                "valType": {},
+                "values": {}
+              },
+              "nticks": {
+                "dflt": {},
+                "editType": {},
+                "min": {},
+                "valType": {}
+              },
+              "overlaying": {
+                "editType": {},
+                "valType": {},
+                "values": {}
+              },
+              "position": {
+                "dflt": {},
+                "editType": {},
+                "max": {},
+                "min": {},
+                "valType": {}
+              },
+              "range": {
+                "closure_uid_388947968": {},
+                "editType": {},
+                "impliedEdits": {
+                  "autorange": {},
+                  "closure_uid_388947968": {}
+                },
+                "items": {},
+                "valType": {}
+              },
+              "rangemode": {
+                "dflt": {},
+                "editType": {},
+                "valType": {},
+                "values": {}
+              },
+              "rangeselector": {
+                "activecolor": {
+                  "editType": {},
+                  "valType": {}
+                },
+                "bgcolor": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {}
+                },
+                "bordercolor": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {}
+                },
+                "borderwidth": {
+                  "dflt": {},
+                  "editType": {},
+                  "min": {},
+                  "valType": {}
+                },
+                "buttons": {
+                  "_isLinkedToArray": {},
+                  "closure_uid_388947968": {},
+                  "count": {
+                    "closure_uid_388947968": {},
+                    "dflt": {},
+                    "editType": {},
+                    "min": {},
+                    "valType": {}
+                  },
+                  "editType": {},
+                  "label": {
+                    "closure_uid_388947968": {},
+                    "editType": {},
+                    "valType": {}
+                  },
+                  "step": {
+                    "closure_uid_388947968": {},
+                    "dflt": {},
+                    "editType": {},
+                    "valType": {},
+                    "values": {}
+                  },
+                  "stepmode": {
+                    "closure_uid_388947968": {},
+                    "dflt": {},
+                    "editType": {},
+                    "valType": {},
+                    "values": {}
+                  }
+                },
+                "closure_uid_388947968": {},
+                "editType": {},
+                "font": {
+                  "closure_uid_388947968": {},
+                  "color": {
+                    "closure_uid_388947968": {},
+                    "editType": {},
+                    "valType": {}
+                  },
+                  "editType": {},
+                  "family": {
+                    "closure_uid_388947968": {},
+                    "editType": {},
+                    "noBlank": {},
+                    "strict": {},
+                    "valType": {}
+                  },
+                  "size": {
+                    "closure_uid_388947968": {},
+                    "editType": {},
+                    "min": {},
+                    "valType": {}
+                  }
+                },
+                "visible": {
+                  "editType": {},
+                  "valType": {}
+                },
+                "x": {
+                  "editType": {},
+                  "max": {},
+                  "min": {},
+                  "valType": {}
+                },
+                "xanchor": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {},
+                  "values": {}
+                },
+                "y": {
+                  "editType": {},
+                  "max": {},
+                  "min": {},
+                  "valType": {}
+                },
+                "yanchor": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {},
+                  "values": {}
+                }
+              },
+              "rangeslider": {
+                "autorange": {
+                  "closure_uid_388947968": {},
+                  "dflt": {},
+                  "editType": {},
+                  "impliedEdits": {
+                    "closure_uid_388947968": {},
+                    "range[0]": {},
+                    "range[1]": {}
+                  },
+                  "valType": {}
+                },
+                "bgcolor": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {}
+                },
+                "bordercolor": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {}
+                },
+                "borderwidth": {
+                  "dflt": {},
+                  "editType": {},
+                  "min": {},
+                  "valType": {}
+                },
+                "closure_uid_388947968": {},
+                "editType": {},
+                "range": {
+                  "closure_uid_388947968": {},
+                  "editType": {},
+                  "impliedEdits": {
+                    "autorange": {},
+                    "closure_uid_388947968": {}
+                  },
+                  "items": {},
+                  "valType": {}
+                },
+                "thickness": {
+                  "dflt": {},
+                  "editType": {},
+                  "max": {},
+                  "min": {},
+                  "valType": {}
+                },
+                "visible": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {}
+                },
+                "yaxis": {
+                  "_isSubplotObj": {},
+                  "closure_uid_388947968": {},
+                  "editType": {},
+                  "range": {
+                    "closure_uid_388947968": {},
+                    "editType": {},
+                    "items": {},
+                    "valType": {}
+                  },
+                  "rangemode": {
+                    "closure_uid_388947968": {},
+                    "dflt": {},
+                    "editType": {},
+                    "valType": {},
+                    "values": {}
+                  }
+                }
+              },
+              "scaleanchor": {
+                "editType": {},
+                "valType": {},
+                "values": {}
+              },
+              "scaleratio": {
+                "dflt": {},
+                "editType": {},
+                "min": {},
+                "valType": {}
+              },
+              "separatethousands": {
+                "dflt": {},
+                "editType": {},
+                "valType": {}
+              },
+              "showexponent": {
+                "dflt": {},
+                "editType": {},
+                "valType": {},
+                "values": {}
+              },
+              "showgrid": {
+                "editType": {},
+                "valType": {}
+              },
+              "showline": {
+                "dflt": {},
+                "editType": {},
+                "valType": {}
+              },
+              "showspikes": {
+                "dflt": {},
+                "editType": {},
+                "valType": {}
+              },
+              "showticklabels": {
+                "dflt": {},
+                "editType": {},
+                "valType": {}
+              },
+              "showtickprefix": {
+                "dflt": {},
+                "editType": {},
+                "valType": {},
+                "values": {}
+              },
+              "showticksuffix": {
+                "dflt": {},
+                "editType": {},
+                "valType": {},
+                "values": {}
+              },
+              "side": {
+                "editType": {},
+                "valType": {},
+                "values": {}
+              },
+              "spikecolor": {
+                "dflt": {},
+                "editType": {},
+                "valType": {}
+              },
+              "spikedash": {
+                "dflt": {},
+                "editType": {},
+                "valType": {},
+                "values": {}
+              },
+              "spikemode": {
+                "dflt": {},
+                "editType": {},
+                "flags": {},
+                "valType": {}
+              },
+              "spikesnap": {
+                "dflt": {},
+                "editType": {},
+                "valType": {},
+                "values": {}
+              },
+              "spikethickness": {
+                "dflt": {},
+                "editType": {},
+                "valType": {}
+              },
+              "tick0": {
+                "editType": {},
+                "impliedEdits": {
+                  "closure_uid_388947968": {},
+                  "tickmode": {}
+                },
+                "valType": {}
+              },
+              "tickangle": {
+                "dflt": {},
+                "editType": {},
+                "valType": {}
+              },
+              "tickcolor": {
+                "dflt": {},
+                "editType": {},
+                "valType": {}
+              },
+              "tickfont": {
+                "color": {
+                  "editType": {},
+                  "valType": {}
+                },
+                "editType": {},
+                "family": {
+                  "editType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "valType": {}
+                },
+                "size": {
+                  "editType": {},
+                  "min": {},
+                  "valType": {}
+                }
+              },
+              "tickformat": {
+                "dflt": {},
+                "editType": {},
+                "valType": {}
+              },
+              "tickformatstops": {
+                "_isLinkedToArray": {},
+                "dtickrange": {
+                  "editType": {},
+                  "items": {},
+                  "valType": {}
+                },
+                "editType": {},
+                "value": {
+                  "dflt": {},
+                  "editType": {},
+                  "valType": {}
+                }
+              },
+              "ticklen": {
+                "dflt": {},
+                "editType": {},
+                "min": {},
+                "valType": {}
+              },
+              "tickmode": {
+                "editType": {},
+                "impliedEdits": {
+                  "closure_uid_388947968": {},
+                  "dtick": {},
+                  "tick0": {}
+                },
+                "valType": {},
+                "values": {}
+              },
+              "tickprefix": {
+                "dflt": {},
+                "editType": {},
+                "valType": {}
+              },
+              "ticks": {
+                "editType": {},
+                "valType": {},
+                "values": {}
+              },
+              "ticksuffix": {
+                "dflt": {},
+                "editType": {},
+                "valType": {}
+              },
+              "ticktext": {
+                "editType": {},
+                "valType": {}
+              },
+              "tickvals": {
+                "editType": {},
+                "valType": {}
+              },
+              "tickwidth": {
+                "dflt": {},
+                "editType": {},
+                "min": {},
+                "valType": {}
+              },
+              "title": {
+                "editType": {},
+                "valType": {}
+              },
+              "titlefont": {
+                "color": {
+                  "editType": {},
+                  "valType": {}
+                },
+                "editType": {},
+                "family": {
+                  "editType": {},
+                  "noBlank": {},
+                  "strict": {},
+                  "valType": {}
+                },
+                "size": {
+                  "editType": {},
+                  "min": {},
+                  "valType": {}
+                }
+              },
+              "type": {
+                "dflt": {},
+                "editType": {},
+                "valType": {},
+                "values": {}
+              },
+              "visible": {
+                "editType": {},
+                "valType": {}
+              },
+              "zeroline": {
+                "editType": {},
+                "valType": {}
+              },
+              "zerolinecolor": {
+                "dflt": {},
+                "editType": {},
+                "valType": {}
+              },
+              "zerolinewidth": {
+                "dflt": {},
+                "editType": {},
+                "valType": {}
+              }
+            },
+            "name": {},
+            "plot": function () {},
+            "supplyLayoutDefaults": function () {},
+            "toSVG": function () {},
+            "updateFx": function () {}
+          },
+          "calc": function () {},
+          "categories": {},
+          "hoverPoints": function () {},
+          "meta": {},
+          "moduleType": {},
+          "name": {},
+          "plot": function () {},
+          "selectPoints": function () {},
+          "style": function () {},
+          "supplyDefaults": function () {}
+        },
+        "categories": {
+          "cartesian": {},
+          "gl": {},
+          "markerColorscale": {},
+          "regl": {},
+          "scatter-like": {},
+          "showLegend": {},
+          "symbols": {}
+        }
+      },
       "surface": {
         "_module": {
           "attributes": {
@@ -34064,7 +35321,7 @@ var Plotly = {
               "dflt": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "colorscale": {}
               },
               "valType": {}
@@ -34114,7 +35371,7 @@ var Plotly = {
               "dtick": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -34198,7 +35455,7 @@ var Plotly = {
               "tick0": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -34259,7 +35516,7 @@ var Plotly = {
               "tickmode": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -34367,7 +35624,7 @@ var Plotly = {
               "editType": {},
               "impliedEdits": {
                 "autocolorscale": {},
-                "closure_uid_236651161": {}
+                "closure_uid_388947968": {}
               },
               "valType": {}
             },
@@ -34400,19 +35657,19 @@ var Plotly = {
                 "project": {
                   "editType": {},
                   "x": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "y": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "z": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -34463,19 +35720,19 @@ var Plotly = {
                 "project": {
                   "editType": {},
                   "x": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "y": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "z": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -34526,19 +35783,19 @@ var Plotly = {
                 "project": {
                   "editType": {},
                   "x": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "y": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "z": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -34710,7 +35967,7 @@ var Plotly = {
               }
             },
             "baseLayoutAttrOverrides": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "hoverlabel": {
                 "bgcolor": {
                   "editType": {},
@@ -34720,18 +35977,18 @@ var Plotly = {
                   "editType": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "font": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "noBlank": {},
@@ -34739,7 +35996,7 @@ var Plotly = {
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "min": {},
@@ -34756,7 +36013,7 @@ var Plotly = {
             },
             "clean": function () {},
             "cleanId": function () {},
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "idRegex": {},
             "idRoot": {},
             "layoutAttributes": {
@@ -34838,25 +36095,25 @@ var Plotly = {
                   "editType": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "font": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -34870,34 +36127,34 @@ var Plotly = {
                 },
                 "hoverlabel": {
                   "bgcolor": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "bordercolor": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "font": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "color": {
-                      "closure_uid_236651161": {},
+                      "closure_uid_388947968": {},
                       "editType": {},
                       "valType": {}
                     },
                     "editType": {},
                     "family": {
-                      "closure_uid_236651161": {},
+                      "closure_uid_388947968": {},
                       "editType": {},
                       "noBlank": {},
                       "strict": {},
                       "valType": {}
                     },
                     "size": {
-                      "closure_uid_236651161": {},
+                      "closure_uid_388947968": {},
                       "editType": {},
                       "min": {},
                       "valType": {}
@@ -35018,37 +36275,37 @@ var Plotly = {
                 "values": {}
               },
               "aspectratio": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "impliedEdits": {
                   "aspectmode": {}
                 },
                 "x": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "^aspectmode": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "min": {},
                   "valType": {}
                 },
                 "y": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "^aspectmode": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "min": {},
                   "valType": {}
                 },
                 "z": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "^aspectmode": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "min": {},
                   "valType": {}
@@ -35061,75 +36318,75 @@ var Plotly = {
               },
               "camera": {
                 "center": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "x": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "y": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "z": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   }
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "eye": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "x": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "y": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "z": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   }
                 },
                 "up": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "x": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "y": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   },
                   "z": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
                   }
                 }
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "domain": {
                 "column": {
                   "dflt": {},
@@ -35172,11 +36429,11 @@ var Plotly = {
               },
               "xaxis": {
                 "autorange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -35205,17 +36462,17 @@ var Plotly = {
                   "valType": {},
                   "values": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
                   "dflt": {},
                   "editType": {},
                   "valType": {}
                 },
                 "dtick": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -35267,11 +36524,11 @@ var Plotly = {
                   "valType": {}
                 },
                 "range": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -35351,10 +36608,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tick0": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -35370,22 +36627,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickfont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -35398,16 +36655,16 @@ var Plotly = {
                 },
                 "tickformatstops": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -35420,10 +36677,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickmode": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -35464,22 +36721,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "titlefont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -35512,11 +36769,11 @@ var Plotly = {
               },
               "yaxis": {
                 "autorange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -35545,17 +36802,17 @@ var Plotly = {
                   "valType": {},
                   "values": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
                   "dflt": {},
                   "editType": {},
                   "valType": {}
                 },
                 "dtick": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -35607,11 +36864,11 @@ var Plotly = {
                   "valType": {}
                 },
                 "range": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -35691,10 +36948,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tick0": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -35710,22 +36967,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickfont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -35738,16 +36995,16 @@ var Plotly = {
                 },
                 "tickformatstops": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -35760,10 +37017,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickmode": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -35804,22 +37061,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "titlefont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -35852,11 +37109,11 @@ var Plotly = {
               },
               "zaxis": {
                 "autorange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -35885,17 +37142,17 @@ var Plotly = {
                   "valType": {},
                   "values": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
                   "dflt": {},
                   "editType": {},
                   "valType": {}
                 },
                 "dtick": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -35947,11 +37204,11 @@ var Plotly = {
                   "valType": {}
                 },
                 "range": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -36031,10 +37288,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tick0": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "tickmode": {}
                   },
                   "valType": {}
@@ -36050,22 +37307,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickfont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -36078,16 +37335,16 @@ var Plotly = {
                 },
                 "tickformatstops": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtickrange": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "editType": {},
                   "value": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {}
@@ -36100,10 +37357,10 @@ var Plotly = {
                   "valType": {}
                 },
                 "tickmode": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dtick": {},
                     "tick0": {}
                   },
@@ -36144,22 +37401,22 @@ var Plotly = {
                   "valType": {}
                 },
                 "titlefont": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -36712,7 +37969,7 @@ var Plotly = {
               }
             },
             "clean": function () {},
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "drawFramework": function () {},
             "finalizeSubplots": function () {},
             "idRegex": {
@@ -36738,11 +37995,11 @@ var Plotly = {
                 "valType": {}
               },
               "autorange": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "range[0]": {},
                   "range[1]": {}
                 },
@@ -36766,7 +38023,7 @@ var Plotly = {
                 "valType": {},
                 "values": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
                 "dflt": {},
                 "editType": {},
@@ -36792,7 +38049,7 @@ var Plotly = {
               "dtick": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -36867,11 +38124,11 @@ var Plotly = {
                 "valType": {}
               },
               "range": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "impliedEdits": {
                   "autorange": {},
-                  "closure_uid_236651161": {}
+                  "closure_uid_388947968": {}
                 },
                 "items": {},
                 "valType": {}
@@ -36905,9 +38162,9 @@ var Plotly = {
                 },
                 "buttons": {
                   "_isLinkedToArray": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "count": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "min": {},
@@ -36915,44 +38172,44 @@ var Plotly = {
                   },
                   "editType": {},
                   "label": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "step": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   },
                   "stepmode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
                     "values": {}
                   }
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "font": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "color": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "valType": {}
                   },
                   "editType": {},
                   "family": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "noBlank": {},
                     "strict": {},
                     "valType": {}
                   },
                   "size": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "min": {},
                     "valType": {}
@@ -36989,11 +38246,11 @@ var Plotly = {
               },
               "rangeslider": {
                 "autorange": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "impliedEdits": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "range[0]": {},
                     "range[1]": {}
                   },
@@ -37015,14 +38272,14 @@ var Plotly = {
                   "min": {},
                   "valType": {}
                 },
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "range": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "impliedEdits": {
                     "autorange": {},
-                    "closure_uid_236651161": {}
+                    "closure_uid_388947968": {}
                   },
                   "items": {},
                   "valType": {}
@@ -37041,16 +38298,16 @@ var Plotly = {
                 },
                 "yaxis": {
                   "_isSubplotObj": {},
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "range": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "editType": {},
                     "items": {},
                     "valType": {}
                   },
                   "rangemode": {
-                    "closure_uid_236651161": {},
+                    "closure_uid_388947968": {},
                     "dflt": {},
                     "editType": {},
                     "valType": {},
@@ -37147,7 +38404,7 @@ var Plotly = {
               "tick0": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "tickmode": {}
                 },
                 "valType": {}
@@ -37208,7 +38465,7 @@ var Plotly = {
               "tickmode": {
                 "editType": {},
                 "impliedEdits": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dtick": {},
                   "tick0": {}
                 },
@@ -37296,7 +38553,8 @@ var Plotly = {
             "rangePlot": function () {},
             "supplyLayoutDefaults": function () {},
             "toSVG": function () {},
-            "transitionAxes": function () {}
+            "transitionAxes": function () {},
+            "updateFx": function () {}
           },
           "calc": function () {},
           "categories": {},
@@ -37336,9 +38594,12 @@ var Plotly = {
         "categories": {
           "box-violin": {},
           "cartesian": {},
+          "draggedPts": {},
           "oriented": {},
           "showLegend": {},
-          "symbols": {}
+          "svg": {},
+          "symbols": {},
+          "violinLayout": {}
         }
       }
     },
@@ -37370,7 +38631,7 @@ var Plotly = {
           }
         },
         "clean": function () {},
-        "closure_uid_236651161": {},
+        "closure_uid_388947968": {},
         "drawFramework": function () {},
         "finalizeSubplots": function () {},
         "idRegex": {
@@ -37396,11 +38657,11 @@ var Plotly = {
             "valType": {}
           },
           "autorange": {
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "dflt": {},
             "editType": {},
             "impliedEdits": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "range[0]": {},
               "range[1]": {}
             },
@@ -37424,7 +38685,7 @@ var Plotly = {
             "valType": {},
             "values": {}
           },
-          "closure_uid_236651161": {},
+          "closure_uid_388947968": {},
           "color": {
             "dflt": {},
             "editType": {},
@@ -37450,7 +38711,7 @@ var Plotly = {
           "dtick": {
             "editType": {},
             "impliedEdits": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "tickmode": {}
             },
             "valType": {}
@@ -37525,11 +38786,11 @@ var Plotly = {
             "valType": {}
           },
           "range": {
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "editType": {},
             "impliedEdits": {
               "autorange": {},
-              "closure_uid_236651161": {}
+              "closure_uid_388947968": {}
             },
             "items": {},
             "valType": {}
@@ -37563,9 +38824,9 @@ var Plotly = {
             },
             "buttons": {
               "_isLinkedToArray": {},
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "count": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "min": {},
@@ -37573,44 +38834,44 @@ var Plotly = {
               },
               "editType": {},
               "label": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "step": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {},
                 "values": {}
               },
               "stepmode": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {},
                 "values": {}
               }
             },
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "editType": {},
             "font": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "editType": {},
               "family": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "noBlank": {},
                 "strict": {},
                 "valType": {}
               },
               "size": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "min": {},
                 "valType": {}
@@ -37647,11 +38908,11 @@ var Plotly = {
           },
           "rangeslider": {
             "autorange": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "dflt": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "range[0]": {},
                 "range[1]": {}
               },
@@ -37673,14 +38934,14 @@ var Plotly = {
               "min": {},
               "valType": {}
             },
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "editType": {},
             "range": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
                 "autorange": {},
-                "closure_uid_236651161": {}
+                "closure_uid_388947968": {}
               },
               "items": {},
               "valType": {}
@@ -37699,16 +38960,16 @@ var Plotly = {
             },
             "yaxis": {
               "_isSubplotObj": {},
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "range": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "items": {},
                 "valType": {}
               },
               "rangemode": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {},
@@ -37805,7 +39066,7 @@ var Plotly = {
           "tick0": {
             "editType": {},
             "impliedEdits": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "tickmode": {}
             },
             "valType": {}
@@ -37866,7 +39127,7 @@ var Plotly = {
           "tickmode": {
             "editType": {},
             "impliedEdits": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "dtick": {},
               "tick0": {}
             },
@@ -37954,7 +39215,8 @@ var Plotly = {
         "rangePlot": function () {},
         "supplyLayoutDefaults": function () {},
         "toSVG": function () {},
-        "transitionAxes": function () {}
+        "transitionAxes": function () {},
+        "updateFx": function () {}
       },
       "geo": {
         "attr": {},
@@ -37967,7 +39229,7 @@ var Plotly = {
           }
         },
         "clean": function () {},
-        "closure_uid_236651161": {},
+        "closure_uid_388947968": {},
         "idRegex": {},
         "idRoot": {},
         "layoutAttributes": {
@@ -37987,7 +39249,7 @@ var Plotly = {
               "valType": {}
             }
           },
-          "closure_uid_236651161": {},
+          "closure_uid_388947968": {},
           "coastlinecolor": {
             "dflt": {},
             "editType": {},
@@ -38129,7 +39391,7 @@ var Plotly = {
             "valType": {}
           },
           "projection": {
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "editType": {},
             "parallels": {
               "editType": {},
@@ -38137,20 +39399,20 @@ var Plotly = {
               "valType": {}
             },
             "rotation": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "lat": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "lon": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "roll": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               }
@@ -38260,7 +39522,7 @@ var Plotly = {
           }
         },
         "baseLayoutAttrOverrides": {
-          "closure_uid_236651161": {},
+          "closure_uid_388947968": {},
           "hoverlabel": {
             "bgcolor": {
               "editType": {},
@@ -38270,18 +39532,18 @@ var Plotly = {
               "editType": {},
               "valType": {}
             },
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "editType": {},
             "font": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "editType": {},
               "family": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "noBlank": {},
@@ -38289,7 +39551,7 @@ var Plotly = {
                 "valType": {}
               },
               "size": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "min": {},
@@ -38310,7 +39572,7 @@ var Plotly = {
           }
         },
         "clean": function () {},
-        "closure_uid_236651161": {},
+        "closure_uid_388947968": {},
         "drawFramework": function () {},
         "idRegex": {
           "x": {},
@@ -38338,7 +39600,7 @@ var Plotly = {
             "dflt": {},
             "editType": {},
             "impliedEdits": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "range[0]": {},
               "range[1]": {}
             },
@@ -38355,7 +39617,7 @@ var Plotly = {
             "valType": {},
             "values": {}
           },
-          "closure_uid_236651161": {},
+          "closure_uid_388947968": {},
           "color": {
             "dflt": {},
             "editType": {},
@@ -38381,7 +39643,7 @@ var Plotly = {
           "dtick": {
             "editType": {},
             "impliedEdits": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "tickmode": {}
             },
             "valType": {}
@@ -38459,7 +39721,7 @@ var Plotly = {
             "editType": {},
             "impliedEdits": {
               "autorange": {},
-              "closure_uid_236651161": {}
+              "closure_uid_388947968": {}
             },
             "items": {},
             "valType": {}
@@ -38493,9 +39755,9 @@ var Plotly = {
             },
             "buttons": {
               "_isLinkedToArray": {},
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "count": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "min": {},
@@ -38503,44 +39765,44 @@ var Plotly = {
               },
               "editType": {},
               "label": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "step": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {},
                 "values": {}
               },
               "stepmode": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {},
                 "values": {}
               }
             },
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "editType": {},
             "font": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "editType": {},
               "family": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "noBlank": {},
                 "strict": {},
                 "valType": {}
               },
               "size": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "min": {},
                 "valType": {}
@@ -38577,11 +39839,11 @@ var Plotly = {
           },
           "rangeslider": {
             "autorange": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "dflt": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "range[0]": {},
                 "range[1]": {}
               },
@@ -38603,14 +39865,14 @@ var Plotly = {
               "min": {},
               "valType": {}
             },
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "editType": {},
             "range": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
                 "autorange": {},
-                "closure_uid_236651161": {}
+                "closure_uid_388947968": {}
               },
               "items": {},
               "valType": {}
@@ -38629,16 +39891,16 @@ var Plotly = {
             },
             "yaxis": {
               "_isSubplotObj": {},
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "range": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "items": {},
                 "valType": {}
               },
               "rangemode": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {},
@@ -38735,7 +39997,7 @@ var Plotly = {
           "tick0": {
             "editType": {},
             "impliedEdits": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "tickmode": {}
             },
             "valType": {}
@@ -38796,7 +40058,7 @@ var Plotly = {
           "tickmode": {
             "editType": {},
             "impliedEdits": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "dtick": {},
               "tick0": {}
             },
@@ -38896,7 +40158,7 @@ var Plotly = {
           }
         },
         "baseLayoutAttrOverrides": {
-          "closure_uid_236651161": {},
+          "closure_uid_388947968": {},
           "hoverlabel": {
             "bgcolor": {
               "editType": {},
@@ -38906,18 +40168,18 @@ var Plotly = {
               "editType": {},
               "valType": {}
             },
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "editType": {},
             "font": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "editType": {},
               "family": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "noBlank": {},
@@ -38925,7 +40187,7 @@ var Plotly = {
                 "valType": {}
               },
               "size": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "min": {},
@@ -38942,7 +40204,7 @@ var Plotly = {
         },
         "clean": function () {},
         "cleanId": function () {},
-        "closure_uid_236651161": {},
+        "closure_uid_388947968": {},
         "idRegex": {},
         "idRoot": {},
         "layoutAttributes": {
@@ -39024,25 +40286,25 @@ var Plotly = {
               "editType": {},
               "valType": {}
             },
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "editType": {},
             "font": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "editType": {},
               "family": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "noBlank": {},
                 "strict": {},
                 "valType": {}
               },
               "size": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "min": {},
                 "valType": {}
@@ -39056,34 +40318,34 @@ var Plotly = {
             },
             "hoverlabel": {
               "bgcolor": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "bordercolor": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "font": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "valType": {}
                 },
                 "editType": {},
                 "family": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "noBlank": {},
                   "strict": {},
                   "valType": {}
                 },
                 "size": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "min": {},
                   "valType": {}
@@ -39204,37 +40466,37 @@ var Plotly = {
             "values": {}
           },
           "aspectratio": {
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "editType": {},
             "impliedEdits": {
               "aspectmode": {}
             },
             "x": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
                 "^aspectmode": {},
-                "closure_uid_236651161": {}
+                "closure_uid_388947968": {}
               },
               "min": {},
               "valType": {}
             },
             "y": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
                 "^aspectmode": {},
-                "closure_uid_236651161": {}
+                "closure_uid_388947968": {}
               },
               "min": {},
               "valType": {}
             },
             "z": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
                 "^aspectmode": {},
-                "closure_uid_236651161": {}
+                "closure_uid_388947968": {}
               },
               "min": {},
               "valType": {}
@@ -39247,75 +40509,75 @@ var Plotly = {
           },
           "camera": {
             "center": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "x": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {}
               },
               "y": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {}
               },
               "z": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {}
               }
             },
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "editType": {},
             "eye": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "x": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {}
               },
               "y": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {}
               },
               "z": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {}
               }
             },
             "up": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "x": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {}
               },
               "y": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {}
               },
               "z": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {}
               }
             }
           },
-          "closure_uid_236651161": {},
+          "closure_uid_388947968": {},
           "domain": {
             "column": {
               "dflt": {},
@@ -39358,11 +40620,11 @@ var Plotly = {
           },
           "xaxis": {
             "autorange": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "dflt": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "range[0]": {},
                 "range[1]": {}
               },
@@ -39391,17 +40653,17 @@ var Plotly = {
               "valType": {},
               "values": {}
             },
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "color": {
               "dflt": {},
               "editType": {},
               "valType": {}
             },
             "dtick": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "tickmode": {}
               },
               "valType": {}
@@ -39453,11 +40715,11 @@ var Plotly = {
               "valType": {}
             },
             "range": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
                 "autorange": {},
-                "closure_uid_236651161": {}
+                "closure_uid_388947968": {}
               },
               "items": {},
               "valType": {}
@@ -39537,10 +40799,10 @@ var Plotly = {
               "valType": {}
             },
             "tick0": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "tickmode": {}
               },
               "valType": {}
@@ -39556,22 +40818,22 @@ var Plotly = {
               "valType": {}
             },
             "tickfont": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "editType": {},
               "family": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "noBlank": {},
                 "strict": {},
                 "valType": {}
               },
               "size": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "min": {},
                 "valType": {}
@@ -39584,16 +40846,16 @@ var Plotly = {
             },
             "tickformatstops": {
               "_isLinkedToArray": {},
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "dtickrange": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "items": {},
                 "valType": {}
               },
               "editType": {},
               "value": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {}
@@ -39606,10 +40868,10 @@ var Plotly = {
               "valType": {}
             },
             "tickmode": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dtick": {},
                 "tick0": {}
               },
@@ -39650,22 +40912,22 @@ var Plotly = {
               "valType": {}
             },
             "titlefont": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "editType": {},
               "family": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "noBlank": {},
                 "strict": {},
                 "valType": {}
               },
               "size": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "min": {},
                 "valType": {}
@@ -39698,11 +40960,11 @@ var Plotly = {
           },
           "yaxis": {
             "autorange": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "dflt": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "range[0]": {},
                 "range[1]": {}
               },
@@ -39731,17 +40993,17 @@ var Plotly = {
               "valType": {},
               "values": {}
             },
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "color": {
               "dflt": {},
               "editType": {},
               "valType": {}
             },
             "dtick": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "tickmode": {}
               },
               "valType": {}
@@ -39793,11 +41055,11 @@ var Plotly = {
               "valType": {}
             },
             "range": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
                 "autorange": {},
-                "closure_uid_236651161": {}
+                "closure_uid_388947968": {}
               },
               "items": {},
               "valType": {}
@@ -39877,10 +41139,10 @@ var Plotly = {
               "valType": {}
             },
             "tick0": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "tickmode": {}
               },
               "valType": {}
@@ -39896,22 +41158,22 @@ var Plotly = {
               "valType": {}
             },
             "tickfont": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "editType": {},
               "family": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "noBlank": {},
                 "strict": {},
                 "valType": {}
               },
               "size": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "min": {},
                 "valType": {}
@@ -39924,16 +41186,16 @@ var Plotly = {
             },
             "tickformatstops": {
               "_isLinkedToArray": {},
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "dtickrange": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "items": {},
                 "valType": {}
               },
               "editType": {},
               "value": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {}
@@ -39946,10 +41208,10 @@ var Plotly = {
               "valType": {}
             },
             "tickmode": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dtick": {},
                 "tick0": {}
               },
@@ -39990,22 +41252,22 @@ var Plotly = {
               "valType": {}
             },
             "titlefont": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "editType": {},
               "family": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "noBlank": {},
                 "strict": {},
                 "valType": {}
               },
               "size": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "min": {},
                 "valType": {}
@@ -40038,11 +41300,11 @@ var Plotly = {
           },
           "zaxis": {
             "autorange": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "dflt": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "range[0]": {},
                 "range[1]": {}
               },
@@ -40071,17 +41333,17 @@ var Plotly = {
               "valType": {},
               "values": {}
             },
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "color": {
               "dflt": {},
               "editType": {},
               "valType": {}
             },
             "dtick": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "tickmode": {}
               },
               "valType": {}
@@ -40133,11 +41395,11 @@ var Plotly = {
               "valType": {}
             },
             "range": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
                 "autorange": {},
-                "closure_uid_236651161": {}
+                "closure_uid_388947968": {}
               },
               "items": {},
               "valType": {}
@@ -40217,10 +41479,10 @@ var Plotly = {
               "valType": {}
             },
             "tick0": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "tickmode": {}
               },
               "valType": {}
@@ -40236,22 +41498,22 @@ var Plotly = {
               "valType": {}
             },
             "tickfont": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "editType": {},
               "family": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "noBlank": {},
                 "strict": {},
                 "valType": {}
               },
               "size": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "min": {},
                 "valType": {}
@@ -40264,16 +41526,16 @@ var Plotly = {
             },
             "tickformatstops": {
               "_isLinkedToArray": {},
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "dtickrange": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "items": {},
                 "valType": {}
               },
               "editType": {},
               "value": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {}
@@ -40286,10 +41548,10 @@ var Plotly = {
               "valType": {}
             },
             "tickmode": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dtick": {},
                 "tick0": {}
               },
@@ -40330,22 +41592,22 @@ var Plotly = {
               "valType": {}
             },
             "titlefont": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "editType": {},
               "family": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "noBlank": {},
                 "strict": {},
                 "valType": {}
               },
               "size": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "min": {},
                 "valType": {}
@@ -40394,7 +41656,7 @@ var Plotly = {
           }
         },
         "clean": function () {},
-        "closure_uid_236651161": {},
+        "closure_uid_388947968": {},
         "idRegex": {},
         "idRoot": {},
         "layoutAttributes": {
@@ -40423,7 +41685,7 @@ var Plotly = {
               "valType": {}
             }
           },
-          "closure_uid_236651161": {},
+          "closure_uid_388947968": {},
           "domain": {
             "column": {
               "dflt": {},
@@ -40460,16 +41722,16 @@ var Plotly = {
               "valType": {}
             },
             "circle": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "radius": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {}
               }
             },
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "color": {
               "dflt": {},
               "editType": {},
@@ -40477,20 +41739,20 @@ var Plotly = {
             },
             "editType": {},
             "fill": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "outlinecolor": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {}
               }
             },
             "line": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "width": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {}
@@ -40519,36 +41781,36 @@ var Plotly = {
               "values": {}
             },
             "symbol": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "icon": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {}
               },
               "iconsize": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {}
               },
               "text": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {}
               },
               "textfont": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "color": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "valType": {}
                 },
                 "editType": {},
                 "family": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "dflt": {},
                   "editType": {},
                   "noBlank": {},
@@ -40556,7 +41818,7 @@ var Plotly = {
                   "valType": {}
                 },
                 "size": {
-                  "closure_uid_236651161": {},
+                  "closure_uid_388947968": {},
                   "editType": {},
                   "min": {},
                   "valType": {}
@@ -40564,7 +41826,7 @@ var Plotly = {
               },
               "textposition": {
                 "arrayOk": {},
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {},
@@ -40623,7 +41885,7 @@ var Plotly = {
           }
         },
         "clean": function () {},
-        "closure_uid_236651161": {},
+        "closure_uid_388947968": {},
         "idRegex": {},
         "idRoot": {},
         "layoutAttributes": {
@@ -40638,7 +41900,7 @@ var Plotly = {
               "valType": {},
               "values": {}
             },
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "color": {
               "dflt": {},
               "editType": {},
@@ -40651,10 +41913,10 @@ var Plotly = {
               "values": {}
             },
             "dtick": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "tickmode": {}
               },
               "valType": {}
@@ -40759,10 +42021,10 @@ var Plotly = {
               "values": {}
             },
             "tick0": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "tickmode": {}
               },
               "valType": {}
@@ -40778,22 +42040,22 @@ var Plotly = {
               "valType": {}
             },
             "tickfont": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "editType": {},
               "family": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "noBlank": {},
                 "strict": {},
                 "valType": {}
               },
               "size": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "min": {},
                 "valType": {}
@@ -40806,16 +42068,16 @@ var Plotly = {
             },
             "tickformatstops": {
               "_isLinkedToArray": {},
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "dtickrange": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "items": {},
                 "valType": {}
               },
               "editType": {},
               "value": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {}
@@ -40828,10 +42090,10 @@ var Plotly = {
               "valType": {}
             },
             "tickmode": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dtick": {},
                 "tick0": {}
               },
@@ -40884,7 +42146,7 @@ var Plotly = {
             "editType": {},
             "valType": {}
           },
-          "closure_uid_236651161": {},
+          "closure_uid_388947968": {},
           "domain": {
             "column": {
               "dflt": {},
@@ -40919,11 +42181,11 @@ var Plotly = {
               "valType": {}
             },
             "autorange": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "dflt": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "range[0]": {},
                 "range[1]": {}
               },
@@ -40947,17 +42209,17 @@ var Plotly = {
               "valType": {},
               "values": {}
             },
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "color": {
               "dflt": {},
               "editType": {},
               "valType": {}
             },
             "dtick": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "tickmode": {}
               },
               "valType": {}
@@ -41009,11 +42271,11 @@ var Plotly = {
               "valType": {}
             },
             "range": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
                 "autorange": {},
-                "closure_uid_236651161": {}
+                "closure_uid_388947968": {}
               },
               "items": {},
               "valType": {}
@@ -41069,10 +42331,10 @@ var Plotly = {
               "values": {}
             },
             "tick0": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "tickmode": {}
               },
               "valType": {}
@@ -41088,22 +42350,22 @@ var Plotly = {
               "valType": {}
             },
             "tickfont": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "editType": {},
               "family": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "noBlank": {},
                 "strict": {},
                 "valType": {}
               },
               "size": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "min": {},
                 "valType": {}
@@ -41116,16 +42378,16 @@ var Plotly = {
             },
             "tickformatstops": {
               "_isLinkedToArray": {},
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "dtickrange": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "items": {},
                 "valType": {}
               },
               "editType": {},
               "value": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {}
@@ -41138,10 +42400,10 @@ var Plotly = {
               "valType": {}
             },
             "tickmode": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dtick": {},
                 "tick0": {}
               },
@@ -41183,22 +42445,22 @@ var Plotly = {
               "valType": {}
             },
             "titlefont": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "editType": {},
               "family": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "noBlank": {},
                 "strict": {},
                 "valType": {}
               },
               "size": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "min": {},
                 "valType": {}
@@ -41230,7 +42492,7 @@ var Plotly = {
       },
       "sankey": {
         "baseLayoutAttrOverrides": {
-          "closure_uid_236651161": {},
+          "closure_uid_388947968": {},
           "hoverlabel": {
             "bgcolor": {
               "editType": {},
@@ -41240,18 +42502,18 @@ var Plotly = {
               "editType": {},
               "valType": {}
             },
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "editType": {},
             "font": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "editType": {},
               "family": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "noBlank": {},
@@ -41259,7 +42521,7 @@ var Plotly = {
                 "valType": {}
               },
               "size": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "min": {},
@@ -41275,9 +42537,593 @@ var Plotly = {
           }
         },
         "clean": function () {},
-        "closure_uid_236651161": {},
+        "closure_uid_388947968": {},
         "name": {},
         "plot": function () {}
+      },
+      "splom": {
+        "attr": {},
+        "attrRegex": {},
+        "clean": function () {},
+        "closure_uid_388947968": {},
+        "drag": function () {},
+        "drawFramework": function () {},
+        "layoutAttributes": {
+          "_deprecated": {
+            "autotick": {
+              "editType": {},
+              "valType": {}
+            }
+          },
+          "anchor": {
+            "editType": {},
+            "valType": {},
+            "values": {}
+          },
+          "automargin": {
+            "dflt": {},
+            "editType": {},
+            "valType": {}
+          },
+          "autorange": {
+            "closure_uid_388947968": {},
+            "dflt": {},
+            "editType": {},
+            "impliedEdits": {
+              "closure_uid_388947968": {},
+              "range[0]": {},
+              "range[1]": {}
+            },
+            "valType": {},
+            "values": {}
+          },
+          "calendar": {
+            "description": {},
+            "dflt": {},
+            "editType": {},
+            "valType": {},
+            "values": {}
+          },
+          "categoryarray": {
+            "editType": {},
+            "valType": {}
+          },
+          "categoryorder": {
+            "dflt": {},
+            "editType": {},
+            "valType": {},
+            "values": {}
+          },
+          "closure_uid_388947968": {},
+          "color": {
+            "dflt": {},
+            "editType": {},
+            "valType": {}
+          },
+          "constrain": {
+            "dflt": {},
+            "editType": {},
+            "valType": {},
+            "values": {}
+          },
+          "constraintoward": {
+            "editType": {},
+            "valType": {},
+            "values": {}
+          },
+          "domain": {
+            "dflt": {},
+            "editType": {},
+            "items": {},
+            "valType": {}
+          },
+          "dtick": {
+            "editType": {},
+            "impliedEdits": {
+              "closure_uid_388947968": {},
+              "tickmode": {}
+            },
+            "valType": {}
+          },
+          "editType": {},
+          "exponentformat": {
+            "dflt": {},
+            "editType": {},
+            "valType": {},
+            "values": {}
+          },
+          "fixedrange": {
+            "dflt": {},
+            "editType": {},
+            "valType": {}
+          },
+          "gridcolor": {
+            "dflt": {},
+            "editType": {},
+            "valType": {}
+          },
+          "gridwidth": {
+            "dflt": {},
+            "editType": {},
+            "min": {},
+            "valType": {}
+          },
+          "hoverformat": {
+            "dflt": {},
+            "editType": {},
+            "valType": {}
+          },
+          "layer": {
+            "dflt": {},
+            "editType": {},
+            "valType": {},
+            "values": {}
+          },
+          "linecolor": {
+            "dflt": {},
+            "editType": {},
+            "valType": {}
+          },
+          "linewidth": {
+            "dflt": {},
+            "editType": {},
+            "min": {},
+            "valType": {}
+          },
+          "mirror": {
+            "dflt": {},
+            "editType": {},
+            "valType": {},
+            "values": {}
+          },
+          "nticks": {
+            "dflt": {},
+            "editType": {},
+            "min": {},
+            "valType": {}
+          },
+          "overlaying": {
+            "editType": {},
+            "valType": {},
+            "values": {}
+          },
+          "position": {
+            "dflt": {},
+            "editType": {},
+            "max": {},
+            "min": {},
+            "valType": {}
+          },
+          "range": {
+            "closure_uid_388947968": {},
+            "editType": {},
+            "impliedEdits": {
+              "autorange": {},
+              "closure_uid_388947968": {}
+            },
+            "items": {},
+            "valType": {}
+          },
+          "rangemode": {
+            "dflt": {},
+            "editType": {},
+            "valType": {},
+            "values": {}
+          },
+          "rangeselector": {
+            "activecolor": {
+              "editType": {},
+              "valType": {}
+            },
+            "bgcolor": {
+              "dflt": {},
+              "editType": {},
+              "valType": {}
+            },
+            "bordercolor": {
+              "dflt": {},
+              "editType": {},
+              "valType": {}
+            },
+            "borderwidth": {
+              "dflt": {},
+              "editType": {},
+              "min": {},
+              "valType": {}
+            },
+            "buttons": {
+              "_isLinkedToArray": {},
+              "closure_uid_388947968": {},
+              "count": {
+                "closure_uid_388947968": {},
+                "dflt": {},
+                "editType": {},
+                "min": {},
+                "valType": {}
+              },
+              "editType": {},
+              "label": {
+                "closure_uid_388947968": {},
+                "editType": {},
+                "valType": {}
+              },
+              "step": {
+                "closure_uid_388947968": {},
+                "dflt": {},
+                "editType": {},
+                "valType": {},
+                "values": {}
+              },
+              "stepmode": {
+                "closure_uid_388947968": {},
+                "dflt": {},
+                "editType": {},
+                "valType": {},
+                "values": {}
+              }
+            },
+            "closure_uid_388947968": {},
+            "editType": {},
+            "font": {
+              "closure_uid_388947968": {},
+              "color": {
+                "closure_uid_388947968": {},
+                "editType": {},
+                "valType": {}
+              },
+              "editType": {},
+              "family": {
+                "closure_uid_388947968": {},
+                "editType": {},
+                "noBlank": {},
+                "strict": {},
+                "valType": {}
+              },
+              "size": {
+                "closure_uid_388947968": {},
+                "editType": {},
+                "min": {},
+                "valType": {}
+              }
+            },
+            "visible": {
+              "editType": {},
+              "valType": {}
+            },
+            "x": {
+              "editType": {},
+              "max": {},
+              "min": {},
+              "valType": {}
+            },
+            "xanchor": {
+              "dflt": {},
+              "editType": {},
+              "valType": {},
+              "values": {}
+            },
+            "y": {
+              "editType": {},
+              "max": {},
+              "min": {},
+              "valType": {}
+            },
+            "yanchor": {
+              "dflt": {},
+              "editType": {},
+              "valType": {},
+              "values": {}
+            }
+          },
+          "rangeslider": {
+            "autorange": {
+              "closure_uid_388947968": {},
+              "dflt": {},
+              "editType": {},
+              "impliedEdits": {
+                "closure_uid_388947968": {},
+                "range[0]": {},
+                "range[1]": {}
+              },
+              "valType": {}
+            },
+            "bgcolor": {
+              "dflt": {},
+              "editType": {},
+              "valType": {}
+            },
+            "bordercolor": {
+              "dflt": {},
+              "editType": {},
+              "valType": {}
+            },
+            "borderwidth": {
+              "dflt": {},
+              "editType": {},
+              "min": {},
+              "valType": {}
+            },
+            "closure_uid_388947968": {},
+            "editType": {},
+            "range": {
+              "closure_uid_388947968": {},
+              "editType": {},
+              "impliedEdits": {
+                "autorange": {},
+                "closure_uid_388947968": {}
+              },
+              "items": {},
+              "valType": {}
+            },
+            "thickness": {
+              "dflt": {},
+              "editType": {},
+              "max": {},
+              "min": {},
+              "valType": {}
+            },
+            "visible": {
+              "dflt": {},
+              "editType": {},
+              "valType": {}
+            },
+            "yaxis": {
+              "_isSubplotObj": {},
+              "closure_uid_388947968": {},
+              "editType": {},
+              "range": {
+                "closure_uid_388947968": {},
+                "editType": {},
+                "items": {},
+                "valType": {}
+              },
+              "rangemode": {
+                "closure_uid_388947968": {},
+                "dflt": {},
+                "editType": {},
+                "valType": {},
+                "values": {}
+              }
+            }
+          },
+          "scaleanchor": {
+            "editType": {},
+            "valType": {},
+            "values": {}
+          },
+          "scaleratio": {
+            "dflt": {},
+            "editType": {},
+            "min": {},
+            "valType": {}
+          },
+          "separatethousands": {
+            "dflt": {},
+            "editType": {},
+            "valType": {}
+          },
+          "showexponent": {
+            "dflt": {},
+            "editType": {},
+            "valType": {},
+            "values": {}
+          },
+          "showgrid": {
+            "editType": {},
+            "valType": {}
+          },
+          "showline": {
+            "dflt": {},
+            "editType": {},
+            "valType": {}
+          },
+          "showspikes": {
+            "dflt": {},
+            "editType": {},
+            "valType": {}
+          },
+          "showticklabels": {
+            "dflt": {},
+            "editType": {},
+            "valType": {}
+          },
+          "showtickprefix": {
+            "dflt": {},
+            "editType": {},
+            "valType": {},
+            "values": {}
+          },
+          "showticksuffix": {
+            "dflt": {},
+            "editType": {},
+            "valType": {},
+            "values": {}
+          },
+          "side": {
+            "editType": {},
+            "valType": {},
+            "values": {}
+          },
+          "spikecolor": {
+            "dflt": {},
+            "editType": {},
+            "valType": {}
+          },
+          "spikedash": {
+            "dflt": {},
+            "editType": {},
+            "valType": {},
+            "values": {}
+          },
+          "spikemode": {
+            "dflt": {},
+            "editType": {},
+            "flags": {},
+            "valType": {}
+          },
+          "spikesnap": {
+            "dflt": {},
+            "editType": {},
+            "valType": {},
+            "values": {}
+          },
+          "spikethickness": {
+            "dflt": {},
+            "editType": {},
+            "valType": {}
+          },
+          "tick0": {
+            "editType": {},
+            "impliedEdits": {
+              "closure_uid_388947968": {},
+              "tickmode": {}
+            },
+            "valType": {}
+          },
+          "tickangle": {
+            "dflt": {},
+            "editType": {},
+            "valType": {}
+          },
+          "tickcolor": {
+            "dflt": {},
+            "editType": {},
+            "valType": {}
+          },
+          "tickfont": {
+            "color": {
+              "editType": {},
+              "valType": {}
+            },
+            "editType": {},
+            "family": {
+              "editType": {},
+              "noBlank": {},
+              "strict": {},
+              "valType": {}
+            },
+            "size": {
+              "editType": {},
+              "min": {},
+              "valType": {}
+            }
+          },
+          "tickformat": {
+            "dflt": {},
+            "editType": {},
+            "valType": {}
+          },
+          "tickformatstops": {
+            "_isLinkedToArray": {},
+            "dtickrange": {
+              "editType": {},
+              "items": {},
+              "valType": {}
+            },
+            "editType": {},
+            "value": {
+              "dflt": {},
+              "editType": {},
+              "valType": {}
+            }
+          },
+          "ticklen": {
+            "dflt": {},
+            "editType": {},
+            "min": {},
+            "valType": {}
+          },
+          "tickmode": {
+            "editType": {},
+            "impliedEdits": {
+              "closure_uid_388947968": {},
+              "dtick": {},
+              "tick0": {}
+            },
+            "valType": {},
+            "values": {}
+          },
+          "tickprefix": {
+            "dflt": {},
+            "editType": {},
+            "valType": {}
+          },
+          "ticks": {
+            "editType": {},
+            "valType": {},
+            "values": {}
+          },
+          "ticksuffix": {
+            "dflt": {},
+            "editType": {},
+            "valType": {}
+          },
+          "ticktext": {
+            "editType": {},
+            "valType": {}
+          },
+          "tickvals": {
+            "editType": {},
+            "valType": {}
+          },
+          "tickwidth": {
+            "dflt": {},
+            "editType": {},
+            "min": {},
+            "valType": {}
+          },
+          "title": {
+            "editType": {},
+            "valType": {}
+          },
+          "titlefont": {
+            "color": {
+              "editType": {},
+              "valType": {}
+            },
+            "editType": {},
+            "family": {
+              "editType": {},
+              "noBlank": {},
+              "strict": {},
+              "valType": {}
+            },
+            "size": {
+              "editType": {},
+              "min": {},
+              "valType": {}
+            }
+          },
+          "type": {
+            "dflt": {},
+            "editType": {},
+            "valType": {},
+            "values": {}
+          },
+          "visible": {
+            "editType": {},
+            "valType": {}
+          },
+          "zeroline": {
+            "editType": {},
+            "valType": {}
+          },
+          "zerolinecolor": {
+            "dflt": {},
+            "editType": {},
+            "valType": {}
+          },
+          "zerolinewidth": {
+            "dflt": {},
+            "editType": {},
+            "valType": {}
+          }
+        },
+        "name": {},
+        "plot": function () {},
+        "supplyLayoutDefaults": function () {},
+        "toSVG": function () {},
+        "updateFx": function () {}
       },
       "table": {
         "clean": function () {},
@@ -41295,22 +43141,22 @@ var Plotly = {
           }
         },
         "clean": function () {},
-        "closure_uid_236651161": {},
+        "closure_uid_388947968": {},
         "idRegex": {},
         "idRoot": {},
         "layoutAttributes": {
           "aaxis": {
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "color": {
               "dflt": {},
               "editType": {},
               "valType": {}
             },
             "dtick": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "tickmode": {}
               },
               "valType": {}
@@ -41406,10 +43252,10 @@ var Plotly = {
               "values": {}
             },
             "tick0": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "tickmode": {}
               },
               "valType": {}
@@ -41425,22 +43271,22 @@ var Plotly = {
               "valType": {}
             },
             "tickfont": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "editType": {},
               "family": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "noBlank": {},
                 "strict": {},
                 "valType": {}
               },
               "size": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "min": {},
                 "valType": {}
@@ -41453,16 +43299,16 @@ var Plotly = {
             },
             "tickformatstops": {
               "_isLinkedToArray": {},
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "dtickrange": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "items": {},
                 "valType": {}
               },
               "editType": {},
               "value": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {}
@@ -41475,10 +43321,10 @@ var Plotly = {
               "valType": {}
             },
             "tickmode": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dtick": {},
                 "tick0": {}
               },
@@ -41519,22 +43365,22 @@ var Plotly = {
               "valType": {}
             },
             "titlefont": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "editType": {},
               "family": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "noBlank": {},
                 "strict": {},
                 "valType": {}
               },
               "size": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "min": {},
                 "valType": {}
@@ -41542,17 +43388,17 @@ var Plotly = {
             }
           },
           "baxis": {
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "color": {
               "dflt": {},
               "editType": {},
               "valType": {}
             },
             "dtick": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "tickmode": {}
               },
               "valType": {}
@@ -41648,10 +43494,10 @@ var Plotly = {
               "values": {}
             },
             "tick0": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "tickmode": {}
               },
               "valType": {}
@@ -41667,22 +43513,22 @@ var Plotly = {
               "valType": {}
             },
             "tickfont": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "editType": {},
               "family": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "noBlank": {},
                 "strict": {},
                 "valType": {}
               },
               "size": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "min": {},
                 "valType": {}
@@ -41695,16 +43541,16 @@ var Plotly = {
             },
             "tickformatstops": {
               "_isLinkedToArray": {},
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "dtickrange": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "items": {},
                 "valType": {}
               },
               "editType": {},
               "value": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {}
@@ -41717,10 +43563,10 @@ var Plotly = {
               "valType": {}
             },
             "tickmode": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dtick": {},
                 "tick0": {}
               },
@@ -41761,22 +43607,22 @@ var Plotly = {
               "valType": {}
             },
             "titlefont": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "editType": {},
               "family": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "noBlank": {},
                 "strict": {},
                 "valType": {}
               },
               "size": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "min": {},
                 "valType": {}
@@ -41789,17 +43635,17 @@ var Plotly = {
             "valType": {}
           },
           "caxis": {
-            "closure_uid_236651161": {},
+            "closure_uid_388947968": {},
             "color": {
               "dflt": {},
               "editType": {},
               "valType": {}
             },
             "dtick": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "tickmode": {}
               },
               "valType": {}
@@ -41895,10 +43741,10 @@ var Plotly = {
               "values": {}
             },
             "tick0": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "tickmode": {}
               },
               "valType": {}
@@ -41914,22 +43760,22 @@ var Plotly = {
               "valType": {}
             },
             "tickfont": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "editType": {},
               "family": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "noBlank": {},
                 "strict": {},
                 "valType": {}
               },
               "size": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "min": {},
                 "valType": {}
@@ -41942,16 +43788,16 @@ var Plotly = {
             },
             "tickformatstops": {
               "_isLinkedToArray": {},
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "dtickrange": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "items": {},
                 "valType": {}
               },
               "editType": {},
               "value": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dflt": {},
                 "editType": {},
                 "valType": {}
@@ -41964,10 +43810,10 @@ var Plotly = {
               "valType": {}
             },
             "tickmode": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "editType": {},
               "impliedEdits": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "dtick": {},
                 "tick0": {}
               },
@@ -42008,29 +43854,29 @@ var Plotly = {
               "valType": {}
             },
             "titlefont": {
-              "closure_uid_236651161": {},
+              "closure_uid_388947968": {},
               "color": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "valType": {}
               },
               "editType": {},
               "family": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "noBlank": {},
                 "strict": {},
                 "valType": {}
               },
               "size": {
-                "closure_uid_236651161": {},
+                "closure_uid_388947968": {},
                 "editType": {},
                 "min": {},
                 "valType": {}
               }
             }
           },
-          "closure_uid_236651161": {},
+          "closure_uid_388947968": {},
           "domain": {
             "column": {
               "dflt": {},
@@ -42201,14 +44047,6 @@ var Plotly = {
         "name": {},
         "supplyDefaults": function () {}
       },
-      "candlestick": {
-        "attributes": {},
-        "calcTransform": function () {},
-        "moduleType": {},
-        "name": {},
-        "supplyDefaults": function () {},
-        "transform": function () {}
-      },
       "filter": {
         "attributes": {
           "editType": {},
@@ -42292,14 +44130,6 @@ var Plotly = {
             }
           }
         },
-        "moduleType": {},
-        "name": {},
-        "supplyDefaults": function () {},
-        "transform": function () {}
-      },
-      "ohlc": {
-        "attributes": {},
-        "calcTransform": function () {},
         "moduleType": {},
         "name": {},
         "supplyDefaults": function () {},
