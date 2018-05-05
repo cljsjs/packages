@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot])
 
-(def +lib-version+ "1.6.1")
+(def +lib-version+ "2.0.1")
 (def +version+ (str +lib-version+ "-2"))
 
 (task-options!
@@ -19,7 +19,7 @@
 (deftask package []
   (comp
    (download :url (str "https://github.com/zenorocha/clipboard.js/archive/v" +lib-version+ ".zip")
-             :checksum "0ffb60261a8e3a15071165e3b194925d"
+             :checksum "96c7eb4ee3600282a0f16b83b038b198"
              :unzip true)
    (sift :move {#"^clipboard.js-[^/]+/dist/clipboard.js" "cljsjs/clipboard/development/clipboard.inc.js"})
    (sift :move {#"^clipboard.js-[^/]+/dist/clipboard.min.js" "cljsjs/clipboard/production/clipboard.min.inc.js"})
