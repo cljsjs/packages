@@ -9,7 +9,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "6.0.1")
+(def +lib-version+ "9.4.5")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -39,7 +39,6 @@
   (comp
     (download
       :url (str "https://github.com/tomchentw/react-google-maps/archive/v" +lib-version+ ".zip")
-      :checksum "318986D58BFD408C7ED1C530334EBF63"
       :unzip true)
 
     (build-react-google-maps)
@@ -56,4 +55,5 @@
       :name "cljsjs.react-google-maps"
       :requires ["cljsjs.react" "cljsjs.react.dom"])
     (pom)
-    (jar)))
+    (jar)
+    (validate-checksums)))
