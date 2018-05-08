@@ -15,4 +15,11 @@ you can require the packaged library like so:
   (:require cljsjs.react-motion))
 ```
 
+This package also supports `:global-exports`:
+
+```
+(ns application.core
+  (:require [react-motion :as rm :refer [Motion]]))
+```
+
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps
