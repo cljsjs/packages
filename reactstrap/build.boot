@@ -1,10 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]
                   [cljsjs/react "16.3.2-0"]
                   [cljsjs/react-dom "16.3.2-0" :exclusions [cljsjs/react]]
-                  [cljsjs/react-transition-group "2.3.1-0"]
-                  [cljsjs/react-popper "0.10.4-0"]])
+                  [cljsjs/react-transition-group "2.3.1-0" :exclusions [cljsjs/react
+                                                                        cljsjs/react-dom]]
+                  [cljsjs/react-popper "0.10.4-0" :exclusions [cljsjs/react
+                                                               cljsjs/react-dom]]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
