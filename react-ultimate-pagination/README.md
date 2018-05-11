@@ -15,4 +15,11 @@ you can require the packaged library like so:
   (:require cljsjs.react-ultimate-pagination))
 ```
 
+This package supports `:global-exports`
+
+```clojure
+(ns application.core
+  (:require [react-ultimate-pagination :refer [createUltimatePagination]]))
+```
+
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps

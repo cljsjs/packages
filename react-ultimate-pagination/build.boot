@@ -2,7 +2,7 @@
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]])
 
-(def +lib-version+ "0.8.0")
+(def +lib-version+ "1.2.0")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "react-ultimate-pagination-%s" +lib-version+))
 
@@ -20,12 +20,12 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def url (format "https://github.com/ultimate-pagination/react-ultimate-pagination/archive/%s.zip" +lib-version+))
+(def url (format "https://github.com/ultimate-pagination/react-ultimate-pagination/archive/v%s.zip" +lib-version+))
 
 (deftask download-react-ultimate-pagination []
-         (download :url url
-                   :checksum "5bbc694d5c208f9f352476ef117aa3f7"
-                   :unzip true))
+  (download :url url
+            :checksum "E3688085BECFCF0B598F2AA9C174F1F5"
+            :unzip true))
 
 (def webpack-file-name "webpack.config.js")
 
@@ -63,6 +63,9 @@
      (minify :in  "cljsjs/react-ultimate-pagination/development/react-ultimate-pagination.inc.js"
              :out "cljsjs/react-ultimate-pagination/production/react-ultimate-pagination.min.inc.js")
 
-     (deps-cljs :name "cljsjs.react-ultimate-pagination" :requires ["cljsjs.react"])
+     (deps-cljs :provides ["react-ultimate-pagination" "cljsjs.react-ultimate-pagination"]
+                :requires ["cljsjs.react"]
+                :global-exports '{react-ultimate-pagination ReactUltimatePagination})
      (pom)
-     (jar)))
+     (jar)
+     (validate)))
