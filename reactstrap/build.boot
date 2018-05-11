@@ -34,4 +34,5 @@
                                                            "cljsjs.react-transition-group"
                                                            "cljsjs.react-popper"])
            (pom)
-           (jar)))
+           (jar)
+           (validate)))
