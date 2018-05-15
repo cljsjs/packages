@@ -23,16 +23,8 @@
   (comp
    (download :url (download-url false) :name "showdown.js")
    (download :url (download-url true)  :name "showdown.min.js")
-   #_(download  :url      (format "https://github.com/showdownjs/showdown/archive/%s.zip" +lib-version+)
-              :checksum "f751bf13b596ecd63af58bf598a606ec"
-              :unzip    true)
-   #_(sift      :move     {#"^showdown.*[/ \\]dist[/ \\]showdown.js$"
-                         "cljsjs/showdown/development/showdown.inc.js"
-                         #"^showdown.*[/ \\]dist[/ \\]showdown.min.js"
-                         "cljsjs/showdown/production/showdown.min.inc.js"})
    (sift      :move     {#"showdown.js" "cljsjs/showdown/development/showdown.inc.js"
                          #"showdown.min.js" "cljsjs/showdown/production/showdown.min.inc.js"})
-   #_(sift      :include  #{#"^cljsjs"})
    (deps-cljs :name     "cljsjs.showdown")
    (pom)
    (jar)
