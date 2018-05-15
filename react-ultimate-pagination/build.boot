@@ -3,7 +3,7 @@
   :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]])
 
 (def +lib-version+ "1.2.0")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 (def +lib-folder+ (format "react-ultimate-pagination-%s" +lib-version+))
 
 (task-options!
