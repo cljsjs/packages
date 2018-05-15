@@ -1,10 +1,10 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.10.0"  :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.4.2")
+(def +lib-version+ "1.8.6")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -15,16 +15,25 @@
       :scm         {:url "https://github.com/showdownjs/showdown"}
       :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
 
+(defn download-url
+  [min?]
+  (format "https://unpkg.com/showdown@%s/dist/showdown.%sjs" +lib-version+ (if min? "min." "")))
+
 (deftask package []
   (comp
-   (download  :url      (format "https://github.com/showdownjs/showdown/archive/%s.zip" +lib-version+)
+   (download :url (download-url false) :name "showdown.js")
+   (download :url (download-url true)  :name "showdown.min.js")
+   #_(download  :url      (format "https://github.com/showdownjs/showdown/archive/%s.zip" +lib-version+)
               :checksum "f751bf13b596ecd63af58bf598a606ec"
               :unzip    true)
-   (sift      :move     {#"^showdown.*[/ \\]dist[/ \\]showdown.js$"
+   #_(sift      :move     {#"^showdown.*[/ \\]dist[/ \\]showdown.js$"
                          "cljsjs/showdown/development/showdown.inc.js"
                          #"^showdown.*[/ \\]dist[/ \\]showdown.min.js"
                          "cljsjs/showdown/production/showdown.min.inc.js"})
-   (sift      :include  #{#"^cljsjs"})
+   (sift      :move     {#"showdown.js" "cljsjs/showdown/development/showdown.inc.js"
+                         #"showdown.min.js" "cljsjs/showdown/production/showdown.min.inc.js"})
+   #_(sift      :include  #{#"^cljsjs"})
    (deps-cljs :name     "cljsjs.showdown")
    (pom)
-   (jar)))
+   (jar)
+   (validate)))
