@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-ultimate-pagination "1.2.0-0"] ;; latest release
+[cljsjs/react-ultimate-pagination "1.2.0-1"] ;; latest release
 ```
 [](/dependency)
 
