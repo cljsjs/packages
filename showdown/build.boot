@@ -25,6 +25,7 @@
    (download :url (download-url true)  :name "showdown.min.js")
    (sift      :move     {#"showdown.js" "cljsjs/showdown/development/showdown.inc.js"
                          #"showdown.min.js" "cljsjs/showdown/production/showdown.min.inc.js"})
+   (sift      :include  #{#"^cljsjs"})
    (deps-cljs :name     "cljsjs.showdown")
    (pom)
    (jar)
