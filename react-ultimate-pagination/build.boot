@@ -1,6 +1,6 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.9.0"  :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.0"  :scope "test"]])
 
 (def +lib-version+ "1.2.0")
 (def +version+ (str +lib-version+ "-1"))
@@ -14,49 +14,18 @@
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"GPLv3" "https://www.gnu.org/licenses/gpl-3.0.en.html"}})
 
-(require '[cljsjs.boot-cljsjs.packaging :refer :all]
-         '[boot.core :as boot]
-         '[boot.tmpdir :as tmpd]
-         '[clojure.java.io :as io]
-         '[boot.util :refer [sh]])
-
-(def url (format "https://github.com/ultimate-pagination/react-ultimate-pagination/archive/v%s.zip" +lib-version+))
-
-(deftask download-react-ultimate-pagination []
-  (download :url url
-            :checksum "E3688085BECFCF0B598F2AA9C174F1F5"
-            :unzip true))
-
-(def webpack-file-name "webpack.config.js")
-
-(defn get-file [fileset file-name]
-      (io/file
-        (:dir (first (filter #(= (:path %) file-name) (boot/user-files fileset))))
-        file-name))
-
-(deftask build []
-  (let [tmp (boot/tmp-dir!)]
-    (with-pre-wrap
-      fileset
-      (doseq [f (boot/input-files fileset)]
-        (let [target (io/file tmp (tmpd/path f))]
-          (io/make-parents target)
-          (io/copy (tmpd/file f) target)))
-      (io/copy
-       (io/file tmp "webpack.config.js")
-       (io/file tmp +lib-folder+ "webpack-cljsjs.config.js"))
-      (binding [*sh-dir* (str (io/file tmp +lib-folder+))]
-        ((sh "npm" "install"))
-        ((sh "npm" "install" "webpack"))
-        ((sh "npm" "run" "build"))
-        ((sh "./node_modules/.bin/webpack" "--config" "webpack-cljsjs.config.js")))
-      (-> fileset (boot/add-resource tmp) boot/commit!))))
-
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (deftask package []
    (comp
-     (download-react-ultimate-pagination)
-     (build)
+     (download :url (format "https://github.com/ultimate-pagination/react-ultimate-pagination/archive/v%s.zip" +lib-version+)
+               :unzip true)
+     (sift :move {#"^react-ultimate-pagination-[^/]*/" ""})
+     (run-commands
+       :commands [["npm" "install"]
+                  ["npm" "install" "webpack"]
+                  ["npm" "run" "build"]
+                  ["./node_modules/.bin/webpack" "--config" "webpack.config.cljsjs.js"]])
      (sift :move {#".*react-ultimate-pagination.inc.js" "cljsjs/react-ultimate-pagination/development/react-ultimate-pagination.inc.js"})
      (sift :include #{#"^cljsjs"})
 
