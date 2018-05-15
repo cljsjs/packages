@@ -16,4 +16,8 @@ so:
   (:require cljsjs.waypoints))
 ```
 
+## Npm style names
+
+Also provides the namespace `waypoints.js`.
+
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps
