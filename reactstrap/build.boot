@@ -1,13 +1,17 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.9.0" :scope "test"]
-                  [cljsjs/react-with-addons "15.4.2-2"]
-                  [cljsjs/react-dom "15.4.2-2" :exclusions [cljsjs/react]]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]
+                  [cljsjs/react "16.3.2-0"]
+                  [cljsjs/react-dom "16.3.2-0" :exclusions [cljsjs/react]]
+                  [cljsjs/react-transition-group "2.3.1-0" :exclusions [cljsjs/react
+                                                                        cljsjs/react-dom]]
+                  [cljsjs/react-popper "0.10.4-0" :exclusions [cljsjs/react
+                                                               cljsjs/react-dom]]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "4.2.0")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "6.0.1")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom {:project     'cljsjs/reactstrap
@@ -27,6 +31,10 @@
            (download :url (download-url true) :name "reactstrap.min.js")
            (sift :move {#"reactstrap.js"     "cljsjs/reactstrap/development/reactstrap.inc.js"
                         #"reactstrap.min.js" "cljsjs/reactstrap/production/reactstrap.min.inc.js"})
-           (deps-cljs :name "cljsjs.reactstrap" :requires ["cljsjs.react" "cljsjs.react.dom"])
+           (deps-cljs :name "cljsjs.reactstrap" :requires ["cljsjs.react"
+                                                           "cljsjs.react.dom"
+                                                           "cljsjs.react-transition-group"
+                                                           "cljsjs.react-popper"])
            (pom)
-           (jar)))
+           (jar)
+           (validate)))
