@@ -10,8 +10,10 @@ var ReactModal = {
     "isOpen": {},
     "parentSelector": function () {},
     "portalClassName": {},
+    "shouldCloseOnEsc": {},
     "shouldCloseOnOverlayClick": {},
-    "shouldFocusAfterRender": {}
+    "shouldFocusAfterRender": {},
+    "shouldReturnFocusAfterClose": {}
   },
   "defaultStyles": {
     "content": {
@@ -56,7 +58,15 @@ var ReactModal = {
     "closeTimeoutMS": {
       "isRequired": function () {}
     },
-    "contentLabel": function () {},
+    "contentLabel": {
+      "isRequired": function () {}
+    },
+    "contentRef": {
+      "isRequired": function () {}
+    },
+    "htmlOpenClassName": {
+      "isRequired": function () {}
+    },
     "isOpen": function () {},
     "onAfterOpen": {
       "isRequired": function () {}
@@ -65,6 +75,9 @@ var ReactModal = {
       "isRequired": function () {}
     },
     "overlayClassName": {
+      "isRequired": function () {}
+    },
+    "overlayRef": {
       "isRequired": function () {}
     },
     "parentSelector": {
@@ -76,10 +89,16 @@ var ReactModal = {
     "role": {
       "isRequired": function () {}
     },
+    "shouldCloseOnEsc": {
+      "isRequired": function () {}
+    },
     "shouldCloseOnOverlayClick": {
       "isRequired": function () {}
     },
-    "shouldFocusAfter": {
+    "shouldFocusAfterRender": {
+      "isRequired": function () {}
+    },
+    "shouldReturnFocusAfterClose": {
       "isRequired": function () {}
     },
     "style": {
@@ -88,6 +107,7 @@ var ReactModal = {
   }
 };
 ReactModal.prototype = {
+  "componentWillUpdate": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
