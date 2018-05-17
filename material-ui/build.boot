@@ -10,7 +10,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "0.19.2")
+(def +lib-version+ "0.19.4")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "material-ui-%s" +lib-version+))
 
@@ -26,7 +26,6 @@
 
 (deftask download-material-ui []
   (download :url url
-            :checksum "01B1C705DAC5C188246AAB5E6375CFA6"
             :unzip true))
 
 (def main-file-name "main.js")
@@ -78,4 +77,5 @@
                  })
     (sift :include #{#"^cljsjs" #"^deps.cljs"})
     (pom)
-    (jar)))
+    (jar)
+    (validate-checksums)))
