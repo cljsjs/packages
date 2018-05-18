@@ -22,7 +22,7 @@ Reagent example:
 
 (defn player []
   [:div
-    [react-player {:url "http://rateless.net/~dormo/moo-test-files/big_buck_bunny.mp4"}]])
+    [react-player {:url "https://www.youtube.com/watch?v=rI8tNMsozo0"}]])
 ```
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps
