@@ -11,7 +11,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "8.6.0")
+(def +lib-version+ "8.6.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
