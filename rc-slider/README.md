@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/rc-slider "8.6.0-0"] ;; latest release
+[cljsjs/rc-slider "8.6.1-0"] ;; latest release
 ```
 [](/dependency)
 
