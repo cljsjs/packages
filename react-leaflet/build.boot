@@ -1,6 +1,6 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.9.0-SNAPSHOT" :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]
                   [cljsjs/react "15.6.2-1"]
                   [cljsjs/react-dom "15.6.2-1"]
                   [cljsjs/leaflet "1.1.0-2"]])
