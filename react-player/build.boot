@@ -18,7 +18,7 @@
 
 (deftask package []
   (comp
-    (download :url (str "https://unpkg.com/react-player@1.5.1/dist/ReactPlayer.js"))
+    (download :url (str "https://unpkg.com/react-player@" +lib-version+ "/dist/ReactPlayer.js"))
 
     (sift :move {#"^ReactPlayer.js$" "cljsjs/react-player/development/react-player.inc.js"})
 
