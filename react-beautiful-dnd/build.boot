@@ -1,10 +1,10 @@
-(def +lib-version+ "7.0.0")
+(def +lib-version+ "7.1.3")
 (def +version+ (str +lib-version+ "-0"))
 
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]
-                  [cljsjs/react "16.2.0-3"]])
+                  [cljsjs/react "16.3.2-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
