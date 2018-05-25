@@ -1,11 +1,10 @@
 // Generated via http://jmmk.github.io/javascript-externs-generator/
 
 // Loaded JavaScripts:
-// https://github.com/facebook/react/releases/download/v16.0.0/react.production.min.js
-// https://unpkg.com/react-beautiful-dnd@4.0.0/dist/react-beautiful-dnd.min.js
+// https://github.com/facebook/react/releases/download/v16.3.2/react.production.min.js
+// https://unpkg.com/react-beautiful-dnd@7.1.3/dist/react-beautiful-dnd.min.js
 
 // Reference ns as ReactBeautifulDnd
-
 var ReactBeautifulDnd = {
   "DragDropContext": {
     "childContextTypes": {
@@ -32,10 +31,6 @@ var ReactBeautifulDnd = {
         "private-react-beautiful-dnd-key-do-not-use-style-context": {
           "isRequired": function () {}
         }
-      },
-      "defaultProps": {
-        "disableInteractiveElementBlocking": {},
-        "isDragDisabled": {}
       }
     },
     "childContextTypes": {
@@ -50,6 +45,10 @@ var ReactBeautifulDnd = {
       "private-react-beautiful-dnd-key-do-not-use-storeSubscription": {
         "isRequired": function () {}
       }
+    },
+    "defaultProps": {
+      "disableInteractiveElementBlocking": {},
+      "isDragDisabled": {}
     },
     "displayName": {},
     "propTypes": {
@@ -68,11 +67,10 @@ var ReactBeautifulDnd = {
           "isRequired": function () {}
         }
       },
-      "defaultProps": {
-        "direction": {},
-        "ignoreContainerClipping": {},
-        "isDropDisabled": {},
-        "type": {}
+      "contextTypes": {
+        "private-react-beautiful-dnd-key-do-not-use-style-context": {
+          "isRequired": function () {}
+        }
       }
     },
     "childContextTypes": {
@@ -88,6 +86,12 @@ var ReactBeautifulDnd = {
         "isRequired": function () {}
       }
     },
+    "defaultProps": {
+      "direction": {},
+      "ignoreContainerClipping": {},
+      "isDropDisabled": {},
+      "type": {}
+    },
     "displayName": {},
     "propTypes": {
       "private-react-beautiful-dnd-key-do-not-use-store": {
@@ -97,11 +101,16 @@ var ReactBeautifulDnd = {
         "isRequired": function () {}
       }
     }
-  }
+  },
+  "resetServerContext": function () {}
 };
 ReactBeautifulDnd.DragDropContext.prototype = {
+  "componentDidMount": function () {},
+  "componentWillUnmount": function () {},
   "forceUpdate": function () {},
+  "getChildContext": function () {},
   "isReactComponent": function () {},
+  "render": function () {},
   "setState": function () {}
 };
 ReactBeautifulDnd.Draggable.prototype = {
@@ -124,9 +133,13 @@ ReactBeautifulDnd.Draggable.prototype = {
   "shouldComponentUpdate": function () {}
 };
 ReactBeautifulDnd.Draggable.WrappedComponent.prototype = {
+  "componentDidMount": function () {},
+  "componentWillUnmount": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
-  "setState": function () {}
+  "render": function () {},
+  "setState": function () {},
+  "throwIfCannotDrag": function () {}
 };
 ReactBeautifulDnd.Droppable.prototype = {
   "addExtraProps": function () {},
@@ -148,7 +161,11 @@ ReactBeautifulDnd.Droppable.prototype = {
   "shouldComponentUpdate": function () {}
 };
 ReactBeautifulDnd.Droppable.WrappedComponent.prototype = {
+  "componentDidMount": function () {},
   "forceUpdate": function () {},
+  "getChildContext": function () {},
+  "getPlaceholder": function () {},
   "isReactComponent": function () {},
+  "render": function () {},
   "setState": function () {}
 };
