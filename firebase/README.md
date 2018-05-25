@@ -1,10 +1,8 @@
 # cljsjs/firebase
 
-Provides firebase and firebase-node
-
 [](dependency)
 ```clojure
-[cljsjs/firebase "4.9.0-0"] ;; latest release
+[cljsjs/firebase "5.0.4-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -17,16 +15,16 @@ you can require the packaged library like so:
   (:require [cljsjs.firebase]))
 ```
 
-or for firebase-node:
+This package also supports `:global-exports`:
 
 ```clojure
 (ns application.core
-  (:require [cljsjs.firebase-node]))
+  (:require [firebase.app :as firebase-app])
+  (:require [firebase.auth :as firebase-auth]))
 ```
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps
 
 ## Maintenance
 
-Bump the version number in build.boot,
-the source and externs are downloaded from npm.
+Bump the version number in build.boot, the source and externs are downloaded from npm.
