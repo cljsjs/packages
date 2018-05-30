@@ -4,9 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def lib-version "5.0.4")
-(def release-version "1")
-(def version (str lib-version "-" release-version))
+(def +lib-version+ "5.0.4")
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/firebase
