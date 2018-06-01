@@ -1,2 +1,2 @@
-{:libs ["cljsjs/libphonenumber/development/"]
+{:libs ["cljsjs/libphonenumber/development"]
  :externs []}
