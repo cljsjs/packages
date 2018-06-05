@@ -300,7 +300,7 @@ moment.Locale.prototype = {
 };
 
 // Duration constructor added by hand based on
-// <https://github.com/moment/moment/blob/2.22.0/moment.js#L4401-L4436>
+// <https://github.com/moment/moment/blob/2.22.2/moment.js#L4401-L4436>
 
 moment.Duration = {};
 moment.Duration.prototype = {
