@@ -1,4 +1,4 @@
-(def +lib-version+ "2.19.0")
+(def +lib-version+ "2.22.4")
 (def +version+ (str +lib-version+ "-0"))
 
 (set-env!
@@ -17,14 +17,12 @@
 
 (deftask package  []
   (comp
-   (download :url (str "https://unpkg.com/mixpanel-browser@" +lib-version+  "/build/mixpanel.umd.js"))
-   (download :url (str "https://unpkg.com/mixpanel-browser@" +lib-version+  "/mixpanel.min.js"))
-   (sift :move {#"^mixpanel.umd.js$"
-                "cljsjs/mixpanel/development/mixpanel.inc.js"
-                #"^mixpanel.min.js"
-                "cljsjs/mixpanel/production/mixpanel.min.inc.js"})
+   (download :url (format "https://unpkg.com/mixpanel-browser@%s/build/mixpanel.umd.js" +lib-version+)
+             :target "cljsjs/mixpanel/development/mixpanel.inc.js")
+   (download :url (format "https://unpkg.com/mixpanel-browser@%s/mixpanel.min.js" +lib-version+)
+             :target "cljsjs/mixpanel/production/mixpanel.min.inc.js")
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.mixpanel")
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))
