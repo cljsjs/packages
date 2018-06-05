@@ -37,8 +37,8 @@
         (io/make-parents target)
         (io/copy (tmpdir/file f) target))
       (binding [boot.util/*sh-dir* (str (io/file tmp +lib-folder+))]
-        (dosh-cmd "sudo" "npm" "install")
-        (dosh-cmd "sudo" "npm" "run" "bundle-dist"))
+        (dosh-cmd "npm" "install")
+        (dosh-cmd "npm" "run" "bundle-dist"))
       (-> fileset
           (boot/add-resource tmp)
           boot/commit!))))
