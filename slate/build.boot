@@ -1,4 +1,4 @@
-(def +lib-version+ "0.33.4")
+(def +lib-version+ "0.33.6")
 (def +version+ (str +lib-version+ "-0"))
 
 (set-env!
@@ -18,16 +18,13 @@
 
 (deftask package  []
   (comp
-   (download :url (str "https://unpkg.com/slate@" +lib-version+  "/dist/slate.js")
-             :checksum "04b5542a4e40a4c07ffb24972cba1905")
-   (download :url (str "https://unpkg.com/slate@" +lib-version+  "/dist/slate.min.js")
-             :checksum "540ce9f0ce48e97fff0aa160dcd272f1")
-   (sift :move {#"^slate.js$"
-                "cljsjs/slate/development/slate.inc.js"
-                #"^slate.min.js"
-                "cljsjs/slate/production/slate.min.inc.js"})
+   (download :url (format "https://unpkg.com/slate@%s/dist/slate.js" +lib-version+)
+             :target "cljsjs/slate/development/slate.inc.js")
+   (download :url (format "https://unpkg.com/slate@%s/dist/slate.min.js" +lib-version+)
+             :target "cljsjs/slate/production/slate.min.inc.js")
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.slate"
               :requires ["cljsjs.immutable"])
    (pom)
-   (jar)))
+   (jar)
+   (validate)))
