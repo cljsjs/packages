@@ -21,7 +21,7 @@
    (download :url (format "https://unpkg.com/react-input-mask@%s/dist/react-input-mask.js" +lib-version+)
              :target "cljsjs/react-input-mask/development/react-input-mask.inc.js")
    (download :url (format "https://unpkg.com/react-input-mask@%s/dist/react-input-mask.min.js" +lib-version+)
-             :target "cljsjs/react-input-mask/development/react-input-mask.min.inc.js")
+             :target "cljsjs/react-input-mask/production/react-input-mask.min.inc.js")
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.react-input-mask"
               :requires ["cljsjs.react"])
