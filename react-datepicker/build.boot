@@ -1,15 +1,15 @@
 (set-env!
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]
-                 [cljsjs/react "16.3.0-1"]
-                 [cljsjs/react-dom "16.3.0-1"]
-                 [cljsjs/prop-types "15.6.0-0"]
+                 [cljsjs/react "16.3.2-0"]
+                 [cljsjs/react-dom "16.3.2-0"]
+                 [cljsjs/prop-types "15.6.1-0"]
                  [cljsjs/moment "2.22.0-0"]
-                 [cljsjs/react-popper "0.10.1-1"]
-                 [cljsjs/classnames "2.2.5-0"]
+                 [cljsjs/react-popper "0.10.4-0"]
+                 [cljsjs/classnames "2.2.5-1"]
                  [cljsjs/react-onclickoutside "6.7.1-1"]])
 
-  (def +lib-version+ "1.4.1")
+  (def +lib-version+ "1.5.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
