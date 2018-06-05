@@ -267,7 +267,7 @@ moment.prototype = {
 
 // Moment does not expose the Locale constructor and thus the externs generator
 // does not see it. The following is written by hand based on
-// <https://github.com/moment/moment/blob/2.22.0/moment.js#L3923-L3954>
+// <https://github.com/moment/moment/blob/2.22.2/moment.js#L3923-L3954>
 
 moment.Locale = {};
 moment.Locale.prototype = {
