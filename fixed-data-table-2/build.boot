@@ -6,7 +6,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-  (def +lib-version+ "0.8.11")
+(def +lib-version+ "0.8.13")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -42,4 +42,4 @@
               :requires ["cljsjs.react" "cljsjs.react.dom"])
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))
