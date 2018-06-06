@@ -24,4 +24,5 @@
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.dexie")
    (pom)
-   (jar)))
+   (jar)
+   (validate)))
