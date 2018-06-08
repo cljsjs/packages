@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/slate-html-serializer "0.6.1-0"] ;; latest release
+[cljsjs/slate-html-serializer "0.6.3-0"] ;; latest release
 ```
 [](/dependency)
 
