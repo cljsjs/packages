@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/mixpanel "2.19.0-0"] ;; latest release
+[cljsjs/mixpanel "2.22.4-0"] ;; latest release
 ```
 [](/dependency)
 
