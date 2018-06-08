@@ -1,8 +1,8 @@
 (set-env!
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.10.0"  :scope "test"]
-                 [cljsjs/react       "16.3.0-1"]
-                 [cljsjs/react-dom   "16.3.0-1"]])
+                 [cljsjs/react       "16.3.2-0"]
+                 [cljsjs/react-dom   "16.3.2-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -10,16 +10,13 @@
          '[boot.util :refer [dosh]]
          '[clojure.java.io :as io])
 
-(def +lib-version+ "1.2.0")
+(def +lib-version+ "1.2.2")
 (def +lib-folder+ (format "react-sanfona-%s" +lib-version+))
 (def +version+ (str +lib-version+ "-0"))
 (defn- dosh-cmd [& args]
   (apply dosh (if (re-find #"^Windows" (.get (System/getProperties) "os.name"))
                 (into ["cmd.exe" "/c"] args)
                 args)))
-(defn- path [x]
-  (.toString (java.nio.file.Paths/get x (into-array String nil))))
-
 (task-options!
  pom  {:project     'cljsjs/react-sanfona
        :version     +version+
@@ -62,4 +59,4 @@
                          "cljsjs.react.dom"])
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))
