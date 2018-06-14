@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.0.5-1")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "3.1.5")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom {:project 'cljsjs/flatpickr
@@ -17,7 +17,7 @@
 
 (deftask package []
   (comp
-    (download :url (str "https://github.com/chmln/flatpickr/archive/v3.0.5-1.zip")
+    (download :url (format "https://github.com/chmln/flatpickr/archive/v%s.zip" +lib-version+)
               :unzip true)
     (sift :move {#"^flatpickr.*/dist/flatpickr\.js" "cljsjs/flatpickr/development/flatpickr.inc.js"
                  #"^flatpickr.*/dist/(.*)\.css" "public/flatpickr/$1.css"
@@ -25,4 +25,5 @@
     (sift :include #{#"^cljsjs/" #"^public/"})
     (deps-cljs :name "cljsjs.flatpickr")
     (pom)
-    (jar)))
+    (jar)
+    (validate-checksums)))
