@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/mixpanel "2.22.4-0"] ;; latest release
+[cljsjs/mixpanel "2.22.4-1"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,6 +15,12 @@ you can require the packaged library like so:
   (:require cljsjs.mixpanel))
 ```
 
-Documentation for the slate lib can be found [on its GitHub page](https://github.com/mixpanel/mixpanel-js)
+Documentation for the mixpanel lib can be found [on its GitHub page](https://github.com/mixpanel/mixpanel-js)
+
+## EXTERN NOTE
+
+The javascript-externs-generator does _not_ pick up the "people" property,
+it is added to the extern file manually in order to preserve the names of
+its properties.
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps
