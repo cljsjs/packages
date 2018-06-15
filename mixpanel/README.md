@@ -20,7 +20,7 @@ Documentation for the mixpanel lib can be found [on its GitHub page](https://git
 ## EXTERN NOTE
 
 The javascript-externs-generator does _not_ pick up the "people" property,
-it is addexd to the extern file manually in order to preserve the names of
+it is added to the extern file manually in order to preserve the names of
 its properties.
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps
