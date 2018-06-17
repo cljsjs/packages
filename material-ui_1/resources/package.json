@@ -2,19 +2,16 @@
     "name": "@cljsjs/material-ui-bundle",
     "private": true,
     "scripts": {
-	"build:dev":        "browserify main.js                                 > material-ui.inc.js",
-	"build:dev-icons":  "browserify main-icons.js                           > material-ui-svg-icons.inc.js",
-	"build:prod":       "browserify main.js       -p [ minifyify --no-map ] > material-ui.min.inc.js",
-	"build:prod-icons": "browserify main-icons.js -p [ minifyify --no-map ] > material-ui-svg-icons.min.inc.js"
+        "build:dev":        "browserify main.js                                 > material-ui.inc.js",
+        "build:prod":       "browserify main.js       -p [ minifyify --no-map ] > material-ui.min.inc.js"
     },
     "dependencies": {
-	"material-ui": "1.0.0-beta.40",
-	"material-ui-icons": "1.0.0-beta.36"
+        "@material-ui/core": "1.2.1"
     },
     "devDependencies": {
-	"browserify": "16.1.0",
-	"minifyify": "7.3.5",
-	"react": "16.3.0",
-	"react-dom": "16.3.0"
+        "browserify": "16.1.0",
+        "minifyify": "7.3.5",
+        "react": "16.3.0",
+        "react-dom": "16.3.0"
     }
 }

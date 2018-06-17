@@ -1,4 +1,3 @@
 (function () {
-    window["MaterialUI"] = require('material-ui');
-    window["MaterialUIStyles"] = require('material-ui/styles');
+    window["MaterialUI"] = require('@material-ui/core');
 })();
