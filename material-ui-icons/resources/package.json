@@ -1,0 +1,18 @@
+{
+    "name": "@cljsjs/material-ui-icons-bundle",
+    "private": true,
+    "scripts": {
+        "build:dev":        "browserify main.js                                 > material-ui-icons.inc.js",
+        "build:prod":       "browserify main.js       -p [ minifyify --no-map ] > material-ui-icons.min.inc.js"
+    },
+    "dependencies": {
+        "@material-ui/core": "1.2.1",
+        "@material-ui/icons": "1.1.0"
+    },
+    "devDependencies": {
+        "browserify": "16.1.0",
+        "minifyify": "7.3.5",
+        "react": "16.3.0",
+        "react-dom": "16.3.0"
+    }
+}

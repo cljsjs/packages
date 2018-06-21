@@ -1,10 +1,10 @@
-# cljsjs/material-ui
+# cljsjs/material-ui-icons
 
 https://material-ui-next.com/
 
 [](dependency)
 ```clojure
-[cljsjs/material-ui "1.2.1-0"] ;; latest release
+[cljsjs/material-ui-icons "1.1.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -14,7 +14,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require material-ui))
+  (:require material-ui-icons))
 ```
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps
