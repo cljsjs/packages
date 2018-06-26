@@ -21,7 +21,7 @@
    (download :url (format "https://unpkg.com/machina@%s/lib/machina.js" +lib-version+)
              :target "cljsjs/machina/development/machina.inc.js")
    (download :url (format "https://unpkg.com/machina@%s/lib/machina.min.js" +lib-version+)
-             :target "cljsjs/react-datepicker/production/machina.min.inc.js")
+             :target "cljsjs/machina/production/machina.min.inc.js")
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.machina"
               :requires ["cljsjs.lodash"])
