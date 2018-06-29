@@ -11,7 +11,7 @@
          '[boot.util :refer [sh]])
 
 (def +lib-version+ "0.19.4")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 (def +lib-folder+ (format "material-ui-%s" +lib-version+))
 
 (task-options!
@@ -76,6 +76,20 @@
                  "cljsjs/material-ui/production/material-ui-svg-icons.min.inc.js"
                  })
     (sift :include #{#"^cljsjs" #"^deps.cljs"})
+    (deps-cljs :foreign-libs [{:file     #"material-ui.inc.js",
+                               :provides ["material-ui" "material-ui/styles" "material-ui/utils" "cljsjs.material-ui"]
+                               :global-exports '{"material-ui" MaterialUI
+                                                 "material-ui/styles" MaterialUIStyles
+                                                 "material-ui/utils" MaterialUIUtils}
+                               :requires ["react" "react-dom"],
+                               :file-min #"material-ui.min.inc.js"}
+                              {:file     #"material-ui-svg-icons.inc.js",
+                               :provides ["material-ui/svg-icons" "cljsjs.material-ui-svg-icons"],
+                               :global-exports '{"material-ui/svg-icons" MaterialUISvgIcons}
+                               :requires ["material-ui"],
+                               :file-min #"material-ui-svg-icons.min.inc.js"}],
+               :externs [#"material-ui.ext.js"
+                         #"material-ui-svg-icons.ext.js"])
     (pom)
     (jar)
     (validate-checksums)))
