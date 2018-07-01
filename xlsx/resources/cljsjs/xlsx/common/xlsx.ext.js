@@ -121,6 +121,16 @@ XLSX.writeFileAsync = function(wb, filename, opts, cb) {};
 XLSX.utils = {};
 
 /**
+ * @type {Object}
+ * @const
+ */
+XLSX.utils.consts = {
+    "SHEET_VISIBLE": 0,
+    "SHEET_HIDDEN": 1,
+    "SHEET_VERY_HIDDEN": 2
+};
+
+/**
  * @param {number} col
  * @return {string}
  */
