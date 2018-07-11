@@ -7,7 +7,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "1.2.1")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
   pom {:project     'cljsjs/material-ui
@@ -28,11 +28,22 @@
    (sift :include #{#"^cljsjs"})
    (deps-cljs :foreign-libs [{:file #"material-ui.inc.js"
                               :file-min #"material-ui.min.inc.js"
-                              :provides ["material-ui"]
-                              :global-exports '{material-ui MaterialUI}
-                              ;; FIXME: Closure bug currently prevents using real npm name
-                              ; :provides ["@material-ui/core"]
-                              ; :global-exports '{@material-ui/core MaterialUI}
+                              :provides ["@material-ui/core"
+                                         "@material-ui/core/styles"
+                                         "@material-ui/core/colors"
+                                         ;; old names
+                                         "material-ui"
+                                         "material-ui/styles"
+                                         "material-ui/colors"
+                                         "cljsjs.material-ui"]
+                              :global-exports '{;; new names
+                                                "@material-ui/core" MaterialUI
+                                                "@material-ui/core/styles" MaterialUIStyles
+                                                "@material-ui/core/colors" MaterialUIColors
+                                                ;; old names
+                                                material-ui/styles MaterialUIStyles
+                                                material-ui/colors MaterialUIColors
+                                                material-ui MaterialUI}
                               :requires ["react" "react-dom"]}]
               :externs [#"material-ui.ext.js"])
    (pom)

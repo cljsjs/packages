@@ -7,7 +7,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "1.1.0")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
   pom {:project     'cljsjs/material-ui-icons
@@ -28,8 +28,12 @@
    (sift :include #{#"^cljsjs"})
    (deps-cljs :foreign-libs [{:file #"material-ui-icons.inc.js"
                               :file-min #"material-ui-icons.min.inc.js"
-                              :provides ["material-ui-icons"]
-                              :global-exports '{material-ui-icons MaterialUIIcons}
+                              :provides ["@material-ui/icons"
+                                         ;; old names
+                                         "material-ui-icons"]
+                              :global-exports '{"@material-ui/icons" MaterialUIIcons
+                                                ;; old names
+                                                material-ui-icons MaterialUIIcons}
                               ;; FIXME: Closure bug currently prevents using real npm name
                               ; :provides ["@material-ui/icons"]
                               ; :global-exports '{@material-ui/icons MaterialUIIcons}
