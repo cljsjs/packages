@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "16.4.0")
+(def +lib-version+ "16.4.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -13,7 +13,7 @@
        :description "A Javascript library for building user interfaces"
        :url         "http://facebook.github.io/react/"
        :scm         {:url "https://github.com/cljsjs/packages"}
-       :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
+       :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (defn download-react [project part]
   (comp
