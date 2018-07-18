@@ -29,4 +29,5 @@
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.html2canvas")
     (pom)
-    (jar)))
+    (jar)
+    (validate-checksums)))
