@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.4.1")
-(def +version+ (str +lib-version+ "-0"))
+(def +lib-version+ "1.0.0")
+(def +version+ (str +lib-version+ "-alpha.12"))
 
 (task-options!
   pom {:project 'cljsjs/html2canvas
@@ -16,8 +16,8 @@
        :scm {:url "https://github.com/cljsjs/packages"}})
 
 (defn cdn-ver [file]
-  (str "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/"
-       +lib-version+ "/" file))
+  (str "https://unpkg.com/html2canvas@"
+       +version+ "/dist/" file))
 
 (deftask package []
   (comp
