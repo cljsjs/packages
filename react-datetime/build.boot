@@ -7,7 +7,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.8.10")
+(def +lib-version+ "2.14.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -20,7 +20,6 @@
 
 (deftask download-datepicker []
   (download :url (str "https://github.com/YouCanBookMe/react-datetime/archive/v" +lib-version+ ".zip")
-            :checksum "93717A12AE50C5251FE29868356D5E00"
             :unzip true))
 
 (deftask package []
@@ -37,4 +36,5 @@
                           "cljsjs.react.dom"
                           "cljsjs.moment"])
     (pom)
-    (jar)))
+    (jar)
+    (validate-checksums)))
