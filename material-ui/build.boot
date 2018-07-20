@@ -4,14 +4,10 @@
                   [cljsjs/react "15.6.1-1"]
                   [cljsjs/react-dom "15.6.1-1"]])
 
-(require '[cljsjs.boot-cljsjs.packaging :refer :all]
-         '[boot.core :as boot]
-         '[boot.tmpdir :as tmpd]
-         '[clojure.java.io :as io]
-         '[boot.util :refer [sh]])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.19.4")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "0.20.1")
+(def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "material-ui-%s" +lib-version+))
 
 (task-options!
@@ -22,50 +18,23 @@
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
 
-(def url (format "https://github.com/callemall/material-ui/archive/v%s.zip" +lib-version+))
-
-(deftask download-material-ui []
-  (download :url url
-            :unzip true))
-
-(def main-file-name "main.js")
-(def webpack-file-name "webpack.config.js")
-
-(defn get-file [fileset file-name]
-  (io/file
-    (:dir (first (filter #(= (:path %) file-name) (boot/user-files fileset))))
-    file-name))
-
-(deftask build-material-ui []
-  (let [tmp (boot/tmp-dir!)]
-    (with-pre-wrap fileset
-      (doseq [f (->> fileset boot/input-files)
-              :let [target (io/file tmp (tmpd/path f))]]
-        (io/make-parents target)
-        (io/copy (tmpd/file f) target))
-      (io/copy (get-file fileset main-file-name)
-               (io/file tmp +lib-folder+ main-file-name))
-      (io/copy (get-file fileset webpack-file-name)
-               (io/file tmp +lib-folder+ webpack-file-name))
-      (binding [boot.util/*sh-dir* (str (io/file tmp +lib-folder+))]
-        (do ((sh "npm" "install"))
-            ((sh "npm" "install" "webpack"))
-            ((sh "npm" "install" "babel-cli"))
-            ((sh "npm" "run" "build:icon-index"))
-            ((sh "node" "--stack-size=1500" "./node_modules/.bin/babel"
-                 "./src" "--ignore" "*.spec.js" "--out-dir" "./build"))
-            ((sh "npm" "run" "build:copy-files"))
-            ((sh "./node_modules/.bin/webpack"))
-            ((sh "./node_modules/.bin/webpack" "--production"))
-            ((sh "./node_modules/.bin/webpack" "--svg-icons"))
-            ((sh "./node_modules/.bin/webpack" "--svg-icons" "--production"))
-            ((sh "rm" "-rf" "./node_modules"))))
-      (-> fileset (boot/add-resource tmp) boot/commit!))))
-
 (deftask package []
   (comp
-    (download-material-ui)
-    (build-material-ui)
+    (download :url (format "https://github.com/mui-org/material-ui/archive/v%s.zip" +lib-version+)
+              :unzip true)
+    (sift :move {#"material-ui-[^/]*/" ""})
+    (show :fileset true)
+    (run-commands :commands [["npm" "install"]
+                             ["npm" "install" "webpack"]
+                             ["npm" "install" "babel-cli"]
+                             ["npm" "run" "build:icon-index"]
+                             ["node" "--stack-size=1500" "./node_modules/.bin/babel" "./src" "--ignore" "*.spec.js" "--out-dir" "./build"]
+                             ["npm" "run" "build:copy-files"]
+                             ["./node_modules/.bin/webpack"]
+                             ["./node_modules/.bin/webpack" "--production"]
+                             ["./node_modules/.bin/webpack" "--svg-icons"]
+                             ["./node_modules/.bin/webpack" "--svg-icons" "--production"]
+                             ["rm" "-rf" "./node_modules"]])
     (sift :move {#".*material-ui.inc.js"
                  "cljsjs/material-ui/development/material-ui.inc.js"
                  #".*material-ui-svg-icons.inc.js"
@@ -73,8 +42,7 @@
                  #".*material-ui.min.inc.js"
                  "cljsjs/material-ui/production/material-ui.min.inc.js"
                  #".*material-ui-svg-icons.min.inc.js"
-                 "cljsjs/material-ui/production/material-ui-svg-icons.min.inc.js"
-                 })
+                 "cljsjs/material-ui/production/material-ui-svg-icons.min.inc.js"})
     (sift :include #{#"^cljsjs" #"^deps.cljs"})
     (deps-cljs :foreign-libs [{:file     #"material-ui.inc.js",
                                :provides ["material-ui" "material-ui/styles" "material-ui/utils" "cljsjs.material-ui"]
