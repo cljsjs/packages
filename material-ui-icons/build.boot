@@ -34,9 +34,6 @@
                               :global-exports '{"@material-ui/icons" MaterialUIIcons
                                                 ;; old names
                                                 material-ui-icons MaterialUIIcons}
-                              ;; FIXME: Closure bug currently prevents using real npm name
-                              ; :provides ["@material-ui/icons"]
-                              ; :global-exports '{@material-ui/icons MaterialUIIcons}
                               :requires ["react" "react-dom"]}]
               :externs [#"material-ui-icons.ext.js"])
    (pom)
