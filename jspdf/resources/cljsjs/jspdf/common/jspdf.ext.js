@@ -176,6 +176,8 @@ var jsPDF = {
 	}
       }
     },
+    /* Begin of functions added by hand based on:
+       https://rawgit.com/MrRio/jsPDF/master/docs/global.html */
     "addPage": function () {},
     "setFontSize": function () {},
     "setFontStyle": function () {},
@@ -196,6 +198,7 @@ var jsPDF = {
     "text": function() {},
     "triangle": function () {},
     "viewerPreferences": function () {},
+    /* End of functions added by hand */
     "fromHTML": function () {},
     "addJS": function () {},
     "processPNG": function () {},
