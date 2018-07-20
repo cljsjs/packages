@@ -23,7 +23,6 @@
     (download :url (format "https://github.com/mui-org/material-ui/archive/v%s.zip" +lib-version+)
               :unzip true)
     (sift :move {#"material-ui-[^/]*/" ""})
-    (show :fileset true)
     (run-commands :commands [["npm" "install"]
                              ["npm" "install" "webpack"]
                              ["npm" "install" "babel-cli"]
