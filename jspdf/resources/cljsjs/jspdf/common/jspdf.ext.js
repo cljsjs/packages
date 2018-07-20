@@ -169,10 +169,36 @@ var jsPDF = {
         "move2": function () {},
         "line2": function () {},
         "createArc": function () {},
-        "createSmallArc": function () {}
+        "createSmallArc": function () {},
+	"pageSize": {
+	  "width": {},
+	  "height": {}
+	}
       }
     },
+    /* Begin of functions added by hand based on:
+       https://rawgit.com/MrRio/jsPDF/master/docs/global.html */
     "addPage": function () {},
+    "setFontSize": function () {},
+    "setFontStyle": function () {},
+    "setTextColor": function () {},
+    "addFont": function () {},
+    "CapJoinStyles": function () {},
+    "circle": function () {},
+    "ellipse": function () {},
+    "getFontList": function () {},
+    "lines": function() {},
+    "output": function() {},
+    "roundedRect": function () {},
+    "setDisplayMode": function () {},
+    "setDrawColor": function () {},
+    "setFillColor": function () {},
+    "setPage": function () {},
+    "setProperties": function () {},
+    "text": function() {},
+    "triangle": function () {},
+    "viewerPreferences": function () {},
+    /* End of functions added by hand */
     "fromHTML": function () {},
     "addJS": function () {},
     "processPNG": function () {},
