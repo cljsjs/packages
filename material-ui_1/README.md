@@ -4,7 +4,7 @@ https://material-ui-next.com/
 
 [](dependency)
 ```clojure
-[cljsjs/material-ui "1.2.1-1"] ;; latest release
+[cljsjs/material-ui "1.4.0-0"] ;; latest release
 ```
 [](/dependency)
 
