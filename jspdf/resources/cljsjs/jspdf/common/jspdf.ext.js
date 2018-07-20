@@ -169,7 +169,11 @@ var jsPDF = {
         "move2": function () {},
         "line2": function () {},
         "createArc": function () {},
-        "createSmallArc": function () {}
+        "createSmallArc": function () {},
+	"pageSize": {
+	  "width": {},
+	  "height": {}
+	}
       }
     },
     "addPage": function () {},
