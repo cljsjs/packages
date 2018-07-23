@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/sinon "1.17.3-0"] ;; latest release
+[cljsjs/sinon "6.1.4-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -34,7 +34,7 @@ After adding the above dependency to your project you can require the packaged l
 
 
 ;; Create a fake server
-(def server (js/sinon.fakeServer.create))
+(def server (js/sinon.createFakeServer))
 (def mock-response [{"id" 12 "comment" "Hey there"}])
 
 (.respondWith server "GET" "/some/article/comments.json"
