@@ -398,6 +398,63 @@ var antd = {
     }
   },
   "Divider": function () {},
+  "Drawer": {
+    "defaultProps": {
+      "closable": {},
+      "level": {},
+      "maskClosable": {},
+      "placement": {},
+      "prefixCls": {},
+      "width": {}
+    },
+    "propTypes": {
+      "closable": {
+        "isRequired": function () {}
+      },
+      "destroyOnClose": {
+        "isRequired": function () {}
+      },
+      "getContainer": {
+        "isRequired": function () {}
+      },
+      "mask": {
+        "isRequired": function () {}
+      },
+      "maskClosable": {
+        "isRequired": function () {}
+      },
+      "maskStyle": {
+        "isRequired": function () {}
+      },
+      "onClose": {
+        "isRequired": function () {}
+      },
+      "placement": {
+        "isRequired": function () {}
+      },
+      "prefixCls": {
+        "isRequired": function () {}
+      },
+      "style": {
+        "isRequired": function () {}
+      },
+      "title": {
+        "isRequired": function () {}
+      },
+      "visible": {
+        "isRequired": function () {}
+      },
+      "width": {
+        "isRequired": function () {}
+      },
+      "wrapClassName": {
+        "isRequired": function () {}
+      },
+      "zIndex": {
+        "isRequired": function () {}
+      }
+    }
+  },
   "Dropdown": {
     "Button": {
       "defaultProps": {
@@ -604,6 +661,7 @@ var antd = {
         "prefixCls": {},
         "reverseArrow": {},
         "style": {},
+        "theme": {},
         "width": {}
       }
     }
@@ -732,7 +790,8 @@ var antd = {
         "antdMenuTheme": {
           "isRequired": function () {}
         }
-      }
+      },
+      "isSubMenu": {}
     },
     "childContextTypes": {
       "antdMenuTheme": {
@@ -760,8 +819,10 @@ var antd = {
   "Modal": {
     "confirm": function () {},
     "defaultProps": {
+      "cancelButtonDisabled": {},
       "confirmLoading": {},
       "maskTransitionName": {},
+      "okButtonDisabled": {},
       "okType": {},
       "prefixCls": {},
       "transitionName": {},
@@ -866,6 +927,9 @@ var antd = {
       "status": {
         "isRequired": function () {}
       },
+      "strokeColor": {
+        "isRequired": function () {}
+      },
       "strokeWidth": {
         "isRequired": function () {}
       },
@@ -898,6 +962,7 @@ var antd = {
         }
       },
       "defaultProps": {
+        "buttonStyle": {},
         "disabled": {},
         "prefixCls": {}
       }
@@ -976,6 +1041,7 @@ var antd = {
         }
       }
     },
+    "SECRET_COMBOBOX_MODE_DO_NOT_USE": {},
     "defaultProps": {
       "choiceTransitionName": {},
       "prefixCls": {},
@@ -987,9 +1053,6 @@ var antd = {
         "isRequired": function () {}
       },
       "className": {
-        "isRequired": function () {}
-      },
-      "combobox": {
         "isRequired": function () {}
       },
       "notFoundContent": {
@@ -1141,7 +1204,6 @@ var antd = {
       "locale": {},
       "prefixCls": {},
       "rowKey": {},
-      "rowSelection": {},
       "showHeader": {},
       "size": {},
       "useFixedHeader": {}
@@ -1319,6 +1381,9 @@ var antd = {
       "onChange": {
         "isRequired": function () {}
       },
+      "operationStyle": {
+        "isRequired": function () {}
+      },
       "operations": {
         "isRequired": function () {}
       },
@@ -1337,6 +1402,9 @@ var antd = {
       "showSearch": {
         "isRequired": function () {}
       },
+      "style": {
+        "isRequired": function () {}
+      },
       "targetKeys": {
         "isRequired": function () {}
       },
@@ -1346,6 +1414,13 @@ var antd = {
     }
   },
   "Tree": {
+    "DirectoryTree": {
+      "defaultProps": {
+        "expandAction": {},
+        "prefixCls": {},
+        "showIcon": {}
+      }
+    },
     "TreeNode": {
       "childContextTypes": {
         "rcTree": {
@@ -1407,6 +1482,12 @@ var antd = {
         "isLeaf": {
           "isRequired": function () {}
         },
+        "loaded": {
+          "isRequired": function () {}
+        },
+        "loading": {
+          "isRequired": function () {}
+        },
         "onSelect": {
           "isRequired": function () {}
         },
@@ -1423,6 +1504,9 @@ var antd = {
           "isRequired": function () {}
         },
         "selected": {
+          "isRequired": function () {}
+        },
+        "style": {
           "isRequired": function () {}
         },
         "title": {
@@ -1446,7 +1530,77 @@ var antd = {
     "SHOW_CHILD": {},
     "SHOW_PARENT": {},
     "TreeNode": {
+      "isTreeNode": {},
       "propTypes": {
+        "checked": {
+          "isRequired": function () {}
+        },
+        "children": {
+          "isRequired": function () {}
+        },
+        "className": {
+          "isRequired": function () {}
+        },
+        "disableCheckbox": {
+          "isRequired": function () {}
+        },
+        "disabled": {
+          "isRequired": function () {}
+        },
+        "dragOver": {
+          "isRequired": function () {}
+        },
+        "dragOverGapBottom": {
+          "isRequired": function () {}
+        },
+        "dragOverGapTop": {
+          "isRequired": function () {}
+        },
+        "eventKey": {
+          "isRequired": function () {}
+        },
+        "expanded": {
+          "isRequired": function () {}
+        },
+        "halfChecked": {
+          "isRequired": function () {}
+        },
+        "icon": {
+          "isRequired": function () {}
+        },
+        "isLeaf": {
+          "isRequired": function () {}
+        },
+        "loaded": {
+          "isRequired": function () {}
+        },
+        "loading": {
+          "isRequired": function () {}
+        },
+        "onSelect": {
+          "isRequired": function () {}
+        },
+        "pos": {
+          "isRequired": function () {}
+        },
+        "prefixCls": {
+          "isRequired": function () {}
+        },
+        "root": {
+          "isRequired": function () {}
+        },
+        "selectable": {
+          "isRequired": function () {}
+        },
+        "selected": {
+          "isRequired": function () {}
+        },
+        "style": {
+          "isRequired": function () {}
+        },
+        "title": {
+          "isRequired": function () {}
+        },
         "value": {
           "isRequired": function () {}
         }
@@ -2320,6 +2474,7 @@ var antd = {
           "rangePlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekSelect": {},
           "year": {},
           "yearFormat": {},
           "yearSelect": {}
@@ -2354,6 +2509,7 @@ var antd = {
           "rangePlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekSelect": {},
           "year": {},
           "yearFormat": {},
           "yearSelect": {}
@@ -3553,7 +3709,9 @@ var antd = {
         "emptyText": {},
         "filterConfirm": {},
         "filterReset": {},
-        "filterTitle": {}
+        "filterTitle": {},
+        "selectAll": {},
+        "selectInvert": {}
       },
       "TimePicker": {
         "placeholder": {}
@@ -5363,6 +5521,7 @@ var antd = {
           "rangePlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekSelect": {},
           "year": {},
           "yearFormat": {},
           "yearSelect": {}
@@ -5397,6 +5556,7 @@ var antd = {
           "rangePlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekSelect": {},
           "year": {},
           "yearFormat": {},
           "yearSelect": {}
@@ -5480,6 +5640,7 @@ var antd = {
           "rangePlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekSelect": {},
           "year": {},
           "yearFormat": {},
           "yearSelect": {}
@@ -5513,6 +5674,7 @@ var antd = {
           "rangePlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekSelect": {},
           "year": {},
           "yearFormat": {},
           "yearSelect": {}
@@ -5840,6 +6002,11 @@ antd.DatePicker.WeekPicker.prototype = {
   "isReactComponent": function () {},
   "setState": function () {}
 };
+antd.Drawer.prototype = {
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
 antd.Dropdown.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
@@ -6098,6 +6265,8 @@ antd.Tabs.TabPane.prototype = {
   "updateComponent": function () {}
 };
 antd.Tag.prototype = {
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
@@ -6152,6 +6321,11 @@ antd.Tree.prototype = {
   "isReactComponent": function () {},
   "setState": function () {}
 };
+antd.Tree.DirectoryTree.prototype = {
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
 antd.Tree.TreeNode.prototype = {
   "componentDidMount": function () {},
   "componentWillReceiveProps": function () {},
@@ -6163,11 +6337,6 @@ antd.Tree.TreeNode.prototype = {
   "setState": function () {}
 };
 antd.TreeSelect.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.TreeSelect.TreeNode.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
