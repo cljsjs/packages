@@ -4,8 +4,8 @@
  **********************************************************************/
 
 // Load JavaScript (order matters):
-// https://cdn.rawgit.com/aws/amazon-cognito-identity-js/v1.19.0/dist/aws-cognito-sdk.js
-// https://cdn.rawgit.com/aws/amazon-cognito-identity-js/v1.19.0/dist/amazon-cognito-identity.js
+// https://cdn.rawgit.com/amazon-archives/amazon-cognito-identity-js/v1.31.0/dist/aws-cognito-sdk.js
+// https://cdn.rawgit.com/amazon-archives/amazon-cognito-identity-js/v1.31.0/dist/amazon-cognito-identity.js
 //
 // Extern:
 // AWSCognito
@@ -46,6 +46,7 @@ var AWSCognito = {
     "CognitoUserAttribute": function () {},
     "CognitoUserPool": function () {},
     "CognitoUserSession": function () {},
+    "CookieStorage": function () {},
     "DateHelper": function () {},
     "__esModule": {},
     "__super__": {
@@ -525,29 +526,29 @@ var AWSCognito = {
               "input": {
                 "members": {
                   "AllowUnauthenticatedIdentities": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "type": {}
                   },
                   "CognitoIdentityProviders": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "shape": {}
                   },
                   "DeveloperProviderName": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "IdentityPoolName": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "OpenIdConnectProviderARNs": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "shape": {}
                   },
                   "SamlProviderARNs": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "shape": {}
                   },
                   "SupportedLoginProviders": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "shape": {}
                   }
                 },
@@ -562,9 +563,9 @@ var AWSCognito = {
               "input": {
                 "members": {
                   "IdentityIdsToDelete": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "member": {
-                      "closure_uid_957732505": {}
+                      "closure_uid_599087356": {}
                     },
                     "type": {}
                   }
@@ -575,17 +576,17 @@ var AWSCognito = {
               "output": {
                 "members": {
                   "UnprocessedIdentityIds": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "member": {
-                      "closure_uid_957732505": {},
+                      "closure_uid_599087356": {},
                       "members": {
                         "ErrorCode": {
-                          "closure_uid_957732505": {}
+                          "closure_uid_599087356": {}
                         },
                         "IdentityId": {
-                          "closure_uid_957732505": {}
+                          "closure_uid_599087356": {}
                         },
-                        "closure_uid_957732505": {}
+                        "closure_uid_599087356": {}
                       },
                       "type": {}
                     },
@@ -599,7 +600,7 @@ var AWSCognito = {
               "input": {
                 "members": {
                   "IdentityPoolId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "required": {},
@@ -610,7 +611,7 @@ var AWSCognito = {
               "input": {
                 "members": {
                   "IdentityId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "required": {},
@@ -624,7 +625,7 @@ var AWSCognito = {
               "input": {
                 "members": {
                   "IdentityPoolId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "required": {},
@@ -638,13 +639,13 @@ var AWSCognito = {
               "input": {
                 "members": {
                   "CustomRoleArn": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "IdentityId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "Logins": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "shape": {}
                   }
                 },
@@ -654,27 +655,27 @@ var AWSCognito = {
               "output": {
                 "members": {
                   "Credentials": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "members": {
                       "AccessKeyId": {
-                        "closure_uid_957732505": {}
+                        "closure_uid_599087356": {}
                       },
                       "Expiration": {
-                        "closure_uid_957732505": {},
+                        "closure_uid_599087356": {},
                         "type": {}
                       },
                       "SecretKey": {
-                        "closure_uid_957732505": {}
+                        "closure_uid_599087356": {}
                       },
                       "SessionToken": {
-                        "closure_uid_957732505": {}
+                        "closure_uid_599087356": {}
                       },
-                      "closure_uid_957732505": {}
+                      "closure_uid_599087356": {}
                     },
                     "type": {}
                   },
                   "IdentityId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "type": {}
@@ -684,13 +685,13 @@ var AWSCognito = {
               "input": {
                 "members": {
                   "AccountId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "IdentityPoolId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "Logins": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "shape": {}
                   }
                 },
@@ -700,7 +701,7 @@ var AWSCognito = {
               "output": {
                 "members": {
                   "IdentityId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "type": {}
@@ -710,7 +711,7 @@ var AWSCognito = {
               "input": {
                 "members": {
                   "IdentityPoolId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "required": {},
@@ -719,10 +720,10 @@ var AWSCognito = {
               "output": {
                 "members": {
                   "IdentityPoolId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "Roles": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "shape": {}
                   }
                 },
@@ -733,10 +734,10 @@ var AWSCognito = {
               "input": {
                 "members": {
                   "IdentityId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "Logins": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "shape": {}
                   }
                 },
@@ -746,10 +747,10 @@ var AWSCognito = {
               "output": {
                 "members": {
                   "IdentityId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "Token": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "type": {}
@@ -759,17 +760,17 @@ var AWSCognito = {
               "input": {
                 "members": {
                   "IdentityId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "IdentityPoolId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "Logins": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "shape": {}
                   },
                   "TokenDuration": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "type": {}
                   }
                 },
@@ -779,10 +780,10 @@ var AWSCognito = {
               "output": {
                 "members": {
                   "IdentityId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "Token": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "type": {}
@@ -792,18 +793,18 @@ var AWSCognito = {
               "input": {
                 "members": {
                   "HideDisabled": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "type": {}
                   },
                   "IdentityPoolId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "MaxResults": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "type": {}
                   },
                   "NextToken": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "required": {},
@@ -812,18 +813,18 @@ var AWSCognito = {
               "output": {
                 "members": {
                   "Identities": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "member": {
-                      "closure_uid_957732505": {},
+                      "closure_uid_599087356": {},
                       "shape": {}
                     },
                     "type": {}
                   },
                   "IdentityPoolId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "NextToken": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "type": {}
@@ -833,11 +834,11 @@ var AWSCognito = {
               "input": {
                 "members": {
                   "MaxResults": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "type": {}
                   },
                   "NextToken": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "required": {},
@@ -846,24 +847,24 @@ var AWSCognito = {
               "output": {
                 "members": {
                   "IdentityPools": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "member": {
-                      "closure_uid_957732505": {},
+                      "closure_uid_599087356": {},
                       "members": {
                         "IdentityPoolId": {
-                          "closure_uid_957732505": {}
+                          "closure_uid_599087356": {}
                         },
                         "IdentityPoolName": {
-                          "closure_uid_957732505": {}
+                          "closure_uid_599087356": {}
                         },
-                        "closure_uid_957732505": {}
+                        "closure_uid_599087356": {}
                       },
                       "type": {}
                     },
                     "type": {}
                   },
                   "NextToken": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "type": {}
@@ -873,20 +874,20 @@ var AWSCognito = {
               "input": {
                 "members": {
                   "DeveloperUserIdentifier": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "IdentityId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "IdentityPoolId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "MaxResults": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "type": {}
                   },
                   "NextToken": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "required": {},
@@ -895,17 +896,17 @@ var AWSCognito = {
               "output": {
                 "members": {
                   "DeveloperUserIdentifierList": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "member": {
-                      "closure_uid_957732505": {}
+                      "closure_uid_599087356": {}
                     },
                     "type": {}
                   },
                   "IdentityId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "NextToken": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "type": {}
@@ -915,16 +916,16 @@ var AWSCognito = {
               "input": {
                 "members": {
                   "DestinationUserIdentifier": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "DeveloperProviderName": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "IdentityPoolId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "SourceUserIdentifier": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "required": {},
@@ -933,7 +934,7 @@ var AWSCognito = {
               "output": {
                 "members": {
                   "IdentityId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "type": {}
@@ -943,10 +944,10 @@ var AWSCognito = {
               "input": {
                 "members": {
                   "IdentityPoolId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "Roles": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "shape": {}
                   }
                 },
@@ -958,16 +959,16 @@ var AWSCognito = {
               "input": {
                 "members": {
                   "DeveloperProviderName": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "DeveloperUserIdentifier": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "IdentityId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "IdentityPoolId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "required": {},
@@ -978,14 +979,14 @@ var AWSCognito = {
               "input": {
                 "members": {
                   "IdentityId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "Logins": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "shape": {}
                   },
                   "LoginsToRemove": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "shape": {}
                   }
                 },
@@ -1021,10 +1022,10 @@ var AWSCognito = {
               "member": {
                 "members": {
                   "ClientId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "ProviderName": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "type": {}
@@ -1089,6 +1090,7 @@ var AWSCognito = {
       },
       "cognitoidentityserviceprovider": {
         "2016-04-18": {
+          "documentation": {},
           "metadata": {
             "apiVersion": {},
             "endpointPrefix": {},
@@ -1100,2016 +1102,7058 @@ var AWSCognito = {
           },
           "operations": {
             "AddCustomAttributes": {
-              "input": {
-                "members": {
-                  "CustomAttributes": {
-                    "closure_uid_957732505": {},
-                    "member": {
-                      "closure_uid_957732505": {},
-                      "shape": {}
-                    },
-                    "type": {}
-                  },
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {},
-                "type": {}
+                "shape": {}
               }
             },
-            "AdminConfirmSignUp": {
-              "input": {
-                "members": {
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  },
-                  "Username": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+            "AdminAddUserToGroup": {
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {}
+            },
+            "AdminConfirmSignUp": {
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {},
-                "type": {}
+                "shape": {}
+              }
+            },
+            "AdminCreateUser": {
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
               }
             },
             "AdminDeleteUser": {
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
               "input": {
-                "members": {
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  },
-                  "Username": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
-              }
+                "shape": {}
+              },
+              "name": {}
             },
             "AdminDeleteUserAttributes": {
-              "input": {
-                "members": {
-                  "UserAttributeNames": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  },
-                  "Username": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {},
-                "type": {}
+                "shape": {}
+              }
+            },
+            "AdminDisableProviderForUser": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
               }
             },
             "AdminDisableUser": {
-              "input": {
-                "members": {
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  },
-                  "Username": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {},
-                "type": {}
+                "shape": {}
               }
             },
             "AdminEnableUser": {
-              "input": {
-                "members": {
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  },
-                  "Username": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {},
-                "type": {}
+                "shape": {}
               }
             },
             "AdminForgetDevice": {
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
               "input": {
-                "members": {
-                  "DeviceKey": {
-                    "closure_uid_957732505": {}
-                  },
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  },
-                  "Username": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
-              }
+                "shape": {}
+              },
+              "name": {}
             },
             "AdminGetDevice": {
-              "input": {
-                "members": {
-                  "DeviceKey": {
-                    "closure_uid_957732505": {}
-                  },
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  },
-                  "Username": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "Device": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+                "shape": {}
               }
             },
             "AdminGetUser": {
-              "input": {
-                "members": {
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  },
-                  "Username": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "Enabled": {
-                    "closure_uid_957732505": {},
-                    "type": {}
-                  },
-                  "MFAOptions": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "UserAttributes": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "UserCreateDate": {
-                    "closure_uid_957732505": {},
-                    "type": {}
-                  },
-                  "UserLastModifiedDate": {
-                    "closure_uid_957732505": {},
-                    "type": {}
-                  },
-                  "UserStatus": {
-                    "closure_uid_957732505": {}
-                  },
-                  "Username": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+                "shape": {}
               }
             },
             "AdminInitiateAuth": {
-              "input": {
-                "members": {
-                  "AuthFlow": {
-                    "closure_uid_957732505": {}
-                  },
-                  "AuthParameters": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "ClientId": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "ClientMetadata": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "AuthenticationResult": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "ChallengeName": {
-                    "closure_uid_957732505": {}
-                  },
-                  "ChallengeParameters": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "Session": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
+              }
+            },
+            "AdminLinkProviderForUser": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
               }
             },
             "AdminListDevices": {
-              "input": {
-                "members": {
-                  "Limit": {
-                    "closure_uid_957732505": {},
-                    "type": {}
-                  },
-                  "PaginationToken": {
-                    "closure_uid_957732505": {}
-                  },
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  },
-                  "Username": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "Devices": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "PaginationToken": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
               }
             },
-            "AdminResetUserPassword": {
-              "input": {
-                "members": {
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  },
-                  "Username": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+            "AdminListGroupsForUser": {
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {},
-                "type": {}
+                "shape": {}
+              }
+            },
+            "AdminListUserAuthEvents": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
+              }
+            },
+            "AdminRemoveUserFromGroup": {
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {}
+            },
+            "AdminResetUserPassword": {
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
               }
             },
             "AdminRespondToAuthChallenge": {
-              "input": {
-                "members": {
-                  "ChallengeName": {
-                    "closure_uid_957732505": {}
-                  },
-                  "ChallengeResponses": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "ClientId": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "Session": {
-                    "closure_uid_957732505": {}
-                  },
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "AuthenticationResult": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "ChallengeName": {
-                    "closure_uid_957732505": {}
-                  },
-                  "ChallengeParameters": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "Session": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
+              }
+            },
+            "AdminSetUserMFAPreference": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
               }
             },
             "AdminSetUserSettings": {
-              "input": {
-                "members": {
-                  "MFAOptions": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  },
-                  "Username": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {},
-                "type": {}
+                "shape": {}
+              }
+            },
+            "AdminUpdateAuthEventFeedback": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
               }
             },
             "AdminUpdateDeviceStatus": {
-              "input": {
-                "members": {
-                  "DeviceKey": {
-                    "closure_uid_957732505": {}
-                  },
-                  "DeviceRememberedStatus": {
-                    "closure_uid_957732505": {}
-                  },
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  },
-                  "Username": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {},
-                "type": {}
+                "shape": {}
               }
             },
             "AdminUpdateUserAttributes": {
-              "input": {
-                "members": {
-                  "UserAttributes": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  },
-                  "Username": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {},
-                "type": {}
+                "shape": {}
               }
             },
             "AdminUserGlobalSignOut": {
-              "input": {
-                "members": {
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  },
-                  "Username": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {},
-                "type": {}
+                "shape": {}
+              }
+            },
+            "AssociateSoftwareToken": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
+              }
+            },
+            "Authenticate": {
+              "authtype": {},
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
               }
             },
             "ChangePassword": {
               "authtype": {},
-              "input": {
-                "members": {
-                  "AccessToken": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "PreviousPassword": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "ProposedPassword": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {},
-                "type": {}
+                "shape": {}
               }
             },
             "ConfirmDevice": {
-              "input": {
-                "members": {
-                  "AccessToken": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "DeviceKey": {
-                    "closure_uid_957732505": {}
-                  },
-                  "DeviceName": {
-                    "closure_uid_957732505": {}
-                  },
-                  "DeviceSecretVerifierConfig": {
-                    "closure_uid_957732505": {},
-                    "members": {
-                      "PasswordVerifier": {
-                        "closure_uid_957732505": {}
-                      },
-                      "Salt": {
-                        "closure_uid_957732505": {}
-                      },
-                      "closure_uid_957732505": {}
-                    },
-                    "type": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "UserConfirmationNecessary": {
-                    "closure_uid_957732505": {},
-                    "type": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
               }
             },
             "ConfirmForgotPassword": {
               "authtype": {},
-              "input": {
-                "members": {
-                  "ClientId": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "ConfirmationCode": {
-                    "closure_uid_957732505": {}
-                  },
-                  "Password": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "SecretHash": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "Username": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {},
-                "type": {}
+                "shape": {}
               }
             },
             "ConfirmSignUp": {
               "authtype": {},
-              "input": {
-                "members": {
-                  "ClientId": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "ConfirmationCode": {
-                    "closure_uid_957732505": {}
-                  },
-                  "ForceAliasCreation": {
-                    "closure_uid_957732505": {},
-                    "type": {}
-                  },
-                  "SecretHash": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "Username": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {},
-                "type": {}
+                "shape": {}
+              }
+            },
+            "CreateGroup": {
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
+              }
+            },
+            "CreateIdentityProvider": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
+              }
+            },
+            "CreateResourceServer": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
               }
             },
             "CreateUserImportJob": {
-              "input": {
-                "members": {
-                  "CloudWatchLogsRoleArn": {
-                    "closure_uid_957732505": {}
-                  },
-                  "JobName": {
-                    "closure_uid_957732505": {}
-                  },
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "UserImportJob": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
               }
             },
             "CreateUserPool": {
-              "input": {
-                "members": {
-                  "AliasAttributes": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "AutoVerifiedAttributes": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "DeviceConfiguration": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "EmailConfiguration": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "EmailVerificationMessage": {
-                    "closure_uid_957732505": {}
-                  },
-                  "EmailVerificationSubject": {
-                    "closure_uid_957732505": {}
-                  },
-                  "LambdaConfig": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "MfaConfiguration": {
-                    "closure_uid_957732505": {}
-                  },
-                  "Policies": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "PoolName": {
-                    "closure_uid_957732505": {}
-                  },
-                  "SmsAuthenticationMessage": {
-                    "closure_uid_957732505": {}
-                  },
-                  "SmsConfiguration": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "SmsVerificationMessage": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "UserPool": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
               }
             },
             "CreateUserPoolClient": {
-              "input": {
-                "members": {
-                  "ClientName": {
-                    "closure_uid_957732505": {}
-                  },
-                  "ExplicitAuthFlows": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "GenerateSecret": {
-                    "closure_uid_957732505": {},
-                    "type": {}
-                  },
-                  "ReadAttributes": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "RefreshTokenValidity": {
-                    "closure_uid_957732505": {},
-                    "type": {}
-                  },
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  },
-                  "WriteAttributes": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "UserPoolClient": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
               }
+            },
+            "CreateUserPoolDomain": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
+              }
+            },
+            "DeleteGroup": {
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {}
+            },
+            "DeleteIdentityProvider": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {}
+            },
+            "DeleteResourceServer": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {}
             },
             "DeleteUser": {
               "authtype": {},
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
               "input": {
-                "members": {
-                  "AccessToken": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "type": {}
-              }
+                "shape": {}
+              },
+              "name": {}
             },
             "DeleteUserAttributes": {
               "authtype": {},
-              "input": {
-                "members": {
-                  "AccessToken": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "UserAttributeNames": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {},
-                "type": {}
+                "shape": {}
               }
             },
             "DeleteUserPool": {
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
               "input": {
-                "members": {
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
-              }
+                "shape": {}
+              },
+              "name": {}
             },
             "DeleteUserPoolClient": {
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
               "input": {
-                "members": {
-                  "ClientId": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+                "shape": {}
+              },
+              "name": {}
+            },
+            "DeleteUserPoolDomain": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
+              }
+            },
+            "DescribeIdentityProvider": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
+              }
+            },
+            "DescribeResourceServer": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
+              }
+            },
+            "DescribeRiskConfiguration": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
               }
             },
             "DescribeUserImportJob": {
-              "input": {
-                "members": {
-                  "JobId": {
-                    "closure_uid_957732505": {}
-                  },
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "UserImportJob": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
               }
             },
             "DescribeUserPool": {
-              "input": {
-                "members": {
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "UserPool": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
               }
             },
             "DescribeUserPoolClient": {
-              "input": {
-                "members": {
-                  "ClientId": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "UserPoolClient": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
+              }
+            },
+            "DescribeUserPoolDomain": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
+              }
+            },
+            "EnhanceAuth": {
+              "authtype": {},
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
               }
             },
             "ForgetDevice": {
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
               "input": {
-                "members": {
-                  "AccessToken": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "DeviceKey": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
-              }
+                "shape": {}
+              },
+              "name": {}
             },
             "ForgotPassword": {
               "authtype": {},
-              "input": {
-                "members": {
-                  "ClientId": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "SecretHash": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "Username": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "CodeDeliveryDetails": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
+              }
+            },
+            "GetAuthenticationDetails": {
+              "authtype": {},
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
               }
             },
             "GetCSVHeader": {
-              "input": {
-                "members": {
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "CSVHeader": {
-                    "closure_uid_957732505": {},
-                    "member": {
-                      "closure_uid_957732505": {}
-                    },
-                    "type": {}
-                  },
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
               }
             },
             "GetDevice": {
-              "input": {
-                "members": {
-                  "AccessToken": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "DeviceKey": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "Device": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+                "shape": {}
+              }
+            },
+            "GetGroup": {
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
+              }
+            },
+            "GetIdentityProviderByIdentifier": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
+              }
+            },
+            "GetJWKS": {
+              "authtype": {},
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
+              }
+            },
+            "GetOpenIdConfiguration": {
+              "authtype": {},
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
+              }
+            },
+            "GetSigningCertificate": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
+              }
+            },
+            "GetUICustomization": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
               }
             },
             "GetUser": {
               "authtype": {},
-              "input": {
-                "members": {
-                  "AccessToken": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "MFAOptions": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "UserAttributes": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "Username": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+                "shape": {}
               }
             },
             "GetUserAttributeVerificationCode": {
               "authtype": {},
-              "input": {
-                "members": {
-                  "AccessToken": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "AttributeName": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "CodeDeliveryDetails": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
+              }
+            },
+            "GetUserPoolMfaConfig": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
+              }
+            },
+            "GetUserPoolUIConfiguration": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
               }
             },
             "GlobalSignOut": {
-              "input": {
-                "members": {
-                  "AccessToken": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {},
-                "type": {}
+                "shape": {}
               }
             },
             "InitiateAuth": {
-              "input": {
-                "members": {
-                  "AuthFlow": {
-                    "closure_uid_957732505": {}
-                  },
-                  "AuthParameters": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "ClientId": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "ClientMetadata": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "AuthenticationResult": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "ChallengeName": {
-                    "closure_uid_957732505": {}
-                  },
-                  "ChallengeParameters": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "Session": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
               }
             },
             "ListDevices": {
-              "input": {
-                "members": {
-                  "AccessToken": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "Limit": {
-                    "closure_uid_957732505": {},
-                    "type": {}
-                  },
-                  "PaginationToken": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "Devices": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "PaginationToken": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
+              }
+            },
+            "ListGroups": {
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
+              }
+            },
+            "ListIdentityProviders": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
+              }
+            },
+            "ListResourceServers": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
               }
             },
             "ListUserImportJobs": {
-              "input": {
-                "members": {
-                  "MaxResults": {
-                    "closure_uid_957732505": {},
-                    "type": {}
-                  },
-                  "PaginationToken": {
-                    "closure_uid_957732505": {}
-                  },
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "PaginationToken": {
-                    "closure_uid_957732505": {}
-                  },
-                  "UserImportJobs": {
-                    "closure_uid_957732505": {},
-                    "member": {
-                      "closure_uid_957732505": {},
-                      "shape": {}
-                    },
-                    "type": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
               }
             },
             "ListUserPoolClients": {
-              "input": {
-                "members": {
-                  "MaxResults": {
-                    "closure_uid_957732505": {},
-                    "type": {}
-                  },
-                  "NextToken": {
-                    "closure_uid_957732505": {}
-                  },
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "NextToken": {
-                    "closure_uid_957732505": {}
-                  },
-                  "UserPoolClients": {
-                    "closure_uid_957732505": {},
-                    "member": {
-                      "closure_uid_957732505": {},
-                      "members": {
-                        "ClientId": {
-                          "closure_uid_957732505": {},
-                          "shape": {}
-                        },
-                        "ClientName": {
-                          "closure_uid_957732505": {}
-                        },
-                        "UserPoolId": {
-                          "closure_uid_957732505": {}
-                        },
-                        "closure_uid_957732505": {}
-                      },
-                      "type": {}
-                    },
-                    "type": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
               }
             },
             "ListUserPools": {
-              "input": {
-                "members": {
-                  "MaxResults": {
-                    "closure_uid_957732505": {},
-                    "type": {}
-                  },
-                  "NextToken": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "NextToken": {
-                    "closure_uid_957732505": {}
-                  },
-                  "UserPools": {
-                    "closure_uid_957732505": {},
-                    "member": {
-                      "closure_uid_957732505": {},
-                      "members": {
-                        "CreationDate": {
-                          "closure_uid_957732505": {},
-                          "type": {}
-                        },
-                        "Id": {
-                          "closure_uid_957732505": {}
-                        },
-                        "LambdaConfig": {
-                          "closure_uid_957732505": {},
-                          "shape": {}
-                        },
-                        "LastModifiedDate": {
-                          "closure_uid_957732505": {},
-                          "type": {}
-                        },
-                        "Name": {
-                          "closure_uid_957732505": {}
-                        },
-                        "Status": {
-                          "closure_uid_957732505": {}
-                        },
-                        "closure_uid_957732505": {}
-                      },
-                      "type": {}
-                    },
-                    "type": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
               }
             },
             "ListUsers": {
-              "input": {
-                "members": {
-                  "AttributesToGet": {
-                    "closure_uid_957732505": {},
-                    "member": {
-                      "closure_uid_957732505": {}
-                    },
-                    "type": {}
-                  },
-                  "Filter": {
-                    "closure_uid_957732505": {}
-                  },
-                  "Limit": {
-                    "closure_uid_957732505": {},
-                    "type": {}
-                  },
-                  "PaginationToken": {
-                    "closure_uid_957732505": {}
-                  },
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "PaginationToken": {
-                    "closure_uid_957732505": {}
-                  },
-                  "Users": {
-                    "closure_uid_957732505": {},
-                    "member": {
-                      "closure_uid_957732505": {},
-                      "members": {
-                        "Attributes": {
-                          "closure_uid_957732505": {},
-                          "shape": {}
-                        },
-                        "Enabled": {
-                          "closure_uid_957732505": {},
-                          "type": {}
-                        },
-                        "UserCreateDate": {
-                          "closure_uid_957732505": {},
-                          "type": {}
-                        },
-                        "UserLastModifiedDate": {
-                          "closure_uid_957732505": {},
-                          "type": {}
-                        },
-                        "UserStatus": {
-                          "closure_uid_957732505": {}
-                        },
-                        "Username": {
-                          "closure_uid_957732505": {},
-                          "shape": {}
-                        },
-                        "closure_uid_957732505": {}
-                      },
-                      "type": {}
-                    },
-                    "type": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
+              }
+            },
+            "ListUsersInGroup": {
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
+              }
+            },
+            "RefreshTokens": {
+              "authtype": {},
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
               }
             },
             "ResendConfirmationCode": {
               "authtype": {},
-              "input": {
-                "members": {
-                  "ClientId": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "SecretHash": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "Username": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "CodeDeliveryDetails": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
               }
             },
             "RespondToAuthChallenge": {
-              "input": {
-                "members": {
-                  "ChallengeName": {
-                    "closure_uid_957732505": {}
-                  },
-                  "ChallengeResponses": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "ClientId": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "Session": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "AuthenticationResult": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "ChallengeName": {
-                    "closure_uid_957732505": {}
-                  },
-                  "ChallengeParameters": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "Session": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
+              }
+            },
+            "SetRiskConfiguration": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
+              }
+            },
+            "SetUICustomization": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
+              }
+            },
+            "SetUserMFAPreference": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
+              }
+            },
+            "SetUserPoolMfaConfig": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
+              }
+            },
+            "SetUserPoolUIConfiguration": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
               }
             },
             "SetUserSettings": {
               "authtype": {},
-              "input": {
-                "members": {
-                  "AccessToken": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "MFAOptions": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {},
-                "type": {}
+                "shape": {}
               }
             },
             "SignUp": {
               "authtype": {},
-              "input": {
-                "members": {
-                  "ClientId": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "Password": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "SecretHash": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "UserAttributes": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "Username": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "ValidationData": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "CodeDeliveryDetails": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "UserConfirmed": {
-                    "closure_uid_957732505": {},
-                    "type": {}
-                  },
-                  "UserSub": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
               }
             },
             "StartUserImportJob": {
-              "input": {
-                "members": {
-                  "JobId": {
-                    "closure_uid_957732505": {}
-                  },
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "UserImportJob": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
               }
             },
             "StopUserImportJob": {
-              "input": {
-                "members": {
-                  "JobId": {
-                    "closure_uid_957732505": {}
-                  },
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "UserImportJob": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
+              }
+            },
+            "UpdateAuthEventFeedback": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
               }
             },
             "UpdateDeviceStatus": {
-              "input": {
-                "members": {
-                  "AccessToken": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "DeviceKey": {
-                    "closure_uid_957732505": {}
-                  },
-                  "DeviceRememberedStatus": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {},
-                "type": {}
+                "shape": {}
+              }
+            },
+            "UpdateGroup": {
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
+              }
+            },
+            "UpdateIdentityProvider": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
+              }
+            },
+            "UpdateResourceServer": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
               }
             },
             "UpdateUserAttributes": {
               "authtype": {},
-              "input": {
-                "members": {
-                  "AccessToken": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "UserAttributes": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "CodeDeliveryDetailsList": {
-                    "closure_uid_957732505": {},
-                    "member": {
-                      "closure_uid_957732505": {},
-                      "shape": {}
-                    },
-                    "type": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
               }
             },
             "UpdateUserPool": {
-              "input": {
-                "members": {
-                  "AutoVerifiedAttributes": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "DeviceConfiguration": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "EmailConfiguration": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "EmailVerificationMessage": {
-                    "closure_uid_957732505": {}
-                  },
-                  "EmailVerificationSubject": {
-                    "closure_uid_957732505": {}
-                  },
-                  "LambdaConfig": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "MfaConfiguration": {
-                    "closure_uid_957732505": {}
-                  },
-                  "Policies": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "SmsAuthenticationMessage": {
-                    "closure_uid_957732505": {}
-                  },
-                  "SmsConfiguration": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "SmsVerificationMessage": {
-                    "closure_uid_957732505": {}
-                  },
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {},
-                "type": {}
+                "shape": {}
               }
             },
             "UpdateUserPoolClient": {
-              "input": {
-                "members": {
-                  "ClientId": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "ClientName": {
-                    "closure_uid_957732505": {}
-                  },
-                  "ExplicitAuthFlows": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "ReadAttributes": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "RefreshTokenValidity": {
-                    "closure_uid_957732505": {},
-                    "type": {}
-                  },
-                  "UserPoolId": {
-                    "closure_uid_957732505": {}
-                  },
-                  "WriteAttributes": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {
-                  "UserPoolClient": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  }
-                },
-                "type": {}
+                "shape": {}
+              }
+            },
+            "VerifySoftwareToken": {
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
+              },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
+              "output": {
+                "shape": {}
               }
             },
             "VerifyUserAttribute": {
               "authtype": {},
-              "input": {
-                "members": {
-                  "AccessToken": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "AttributeName": {
-                    "closure_uid_957732505": {}
-                  },
-                  "Code": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "required": {},
-                "type": {}
+              "documentation": {},
+              "errors": {},
+              "http": {
+                "method": {},
+                "requestUri": {}
               },
+              "input": {
+                "shape": {}
+              },
+              "name": {},
               "output": {
-                "members": {},
-                "type": {}
+                "shape": {}
               }
             }
           },
           "shapes": {
-            "S10": {
-              "member": {
-                "members": {
-                  "AttributeName": {
-                    "closure_uid_957732505": {}
-                  },
-                  "DeliveryMedium": {
-                    "closure_uid_957732505": {}
-                  }
-                },
-                "type": {}
-              },
+            "AValueHexStringType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
               "type": {}
             },
-            "S14": {
-              "sensitive": {},
+            "AWSAccountIdType": {
               "type": {}
             },
-            "S16": {
-              "key": {},
-              "type": {},
-              "value": {}
+            "AccountTakeoverActionNotifyType": {
+              "type": {}
             },
-            "S17": {
-              "key": {},
-              "type": {},
-              "value": {}
-            },
-            "S1b": {
-              "key": {},
-              "type": {},
-              "value": {}
-            },
-            "S1c": {
+            "AccountTakeoverActionType": {
               "members": {
-                "AccessToken": {
+                "EventAction": {
                   "shape": {}
                 },
-                "ExpiresIn": {
-                  "type": {}
-                },
-                "IdToken": {
+                "Notify": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AccountTakeoverActionsType": {
+              "members": {
+                "HighAction": {
                   "shape": {}
                 },
-                "NewDeviceMetadata": {
-                  "members": {
-                    "DeviceGroupKey": {
-                      "closure_uid_957732505": {}
-                    },
-                    "DeviceKey": {
-                      "closure_uid_957732505": {}
-                    },
-                    "closure_uid_957732505": {}
-                  },
-                  "type": {}
-                },
-                "RefreshToken": {
+                "LowAction": {
                   "shape": {}
                 },
-                "TokenType": {}
+                "MediumAction": {
+                  "shape": {}
+                }
               },
               "type": {}
             },
-            "S1d": {
-              "sensitive": {},
+            "AccountTakeoverEventActionType": {
+              "enum": {},
               "type": {}
             },
-            "S1k": {
+            "AccountTakeoverRiskConfigurationType": {
+              "members": {
+                "Actions": {
+                  "shape": {}
+                },
+                "NotifyConfiguration": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AddCustomAttributesRequest": {
+              "documentation": {},
+              "members": {
+                "CustomAttributes": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AddCustomAttributesResponse": {
+              "documentation": {},
+              "members": {},
+              "type": {}
+            },
+            "AdminAddUserToGroupRequest": {
+              "members": {
+                "GroupName": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminConfirmSignUpRequest": {
+              "documentation": {},
+              "members": {
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminConfirmSignUpResponse": {
+              "documentation": {},
+              "members": {},
+              "type": {}
+            },
+            "AdminCreateUserConfigType": {
+              "documentation": {},
+              "members": {
+                "AllowAdminCreateUserOnly": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "InviteMessageTemplate": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UnusedAccountValidityDays": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "AdminCreateUserRequest": {
+              "documentation": {},
+              "members": {
+                "DesiredDeliveryMediums": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ForceAliasCreation": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "MessageAction": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "TemporaryPassword": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserAttributes": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ValidationData": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminCreateUserResponse": {
+              "documentation": {},
+              "members": {
+                "User": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "AdminCreateUserUnusedAccountValidityDaysType": {
+              "max": {},
+              "min": {},
+              "type": {}
+            },
+            "AdminDeleteUserAttributesRequest": {
+              "documentation": {},
+              "members": {
+                "UserAttributeNames": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminDeleteUserAttributesResponse": {
+              "documentation": {},
+              "members": {},
+              "type": {}
+            },
+            "AdminDeleteUserRequest": {
+              "documentation": {},
+              "members": {
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminDisableProviderForUserRequest": {
+              "members": {
+                "User": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminDisableProviderForUserResponse": {
+              "members": {},
+              "type": {}
+            },
+            "AdminDisableUserRequest": {
+              "documentation": {},
+              "members": {
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminDisableUserResponse": {
+              "documentation": {},
+              "members": {},
+              "type": {}
+            },
+            "AdminEnableUserRequest": {
+              "documentation": {},
+              "members": {
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminEnableUserResponse": {
+              "documentation": {},
+              "members": {},
+              "type": {}
+            },
+            "AdminForgetDeviceRequest": {
+              "documentation": {},
+              "members": {
+                "DeviceKey": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminGetDeviceRequest": {
+              "documentation": {},
+              "members": {
+                "DeviceKey": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminGetDeviceResponse": {
+              "documentation": {},
+              "members": {
+                "Device": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminGetUserRequest": {
+              "documentation": {},
+              "members": {
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminGetUserResponse": {
+              "documentation": {},
+              "members": {
+                "Enabled": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "MFAOptions": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserAttributes": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserCreateDate": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserLastModifiedDate": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserStatus": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminInitiateAuthRequest": {
+              "documentation": {},
+              "members": {
+                "AnalyticsMetadata": {
+                  "shape": {}
+                },
+                "AuthFlow": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "AuthParameters": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ClientId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ClientMetadata": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ContextData": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminInitiateAuthResponse": {
+              "documentation": {},
+              "members": {
+                "AuthenticationResult": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ChallengeName": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ChallengeParameters": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Session": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "AdminLinkProviderForUserRequest": {
+              "members": {
+                "DestinationUser": {
+                  "shape": {}
+                },
+                "SourceUser": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminLinkProviderForUserResponse": {
+              "members": {},
+              "type": {}
+            },
+            "AdminListDevicesRequest": {
+              "documentation": {},
+              "members": {
+                "Limit": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "PaginationToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminListDevicesResponse": {
+              "documentation": {},
+              "members": {
+                "Devices": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "PaginationToken": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "AdminListGroupsForUserRequest": {
+              "members": {
+                "Limit": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "NextToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminListGroupsForUserResponse": {
+              "members": {
+                "Groups": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "NextToken": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "AdminListUserAuthEventsRequest": {
+              "members": {
+                "MaxResults": {
+                  "shape": {}
+                },
+                "NextToken": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                },
+                "Username": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminListUserAuthEventsResponse": {
+              "members": {
+                "AuthEvents": {
+                  "shape": {}
+                },
+                "NextToken": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "AdminRemoveUserFromGroupRequest": {
+              "members": {
+                "GroupName": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminResetUserPasswordRequest": {
+              "documentation": {},
+              "members": {
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminResetUserPasswordResponse": {
+              "documentation": {},
+              "members": {},
+              "type": {}
+            },
+            "AdminRespondToAuthChallengeRequest": {
+              "documentation": {},
+              "members": {
+                "AnalyticsMetadata": {
+                  "shape": {}
+                },
+                "ChallengeName": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ChallengeResponses": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ClientId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ContextData": {
+                  "shape": {}
+                },
+                "Session": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminRespondToAuthChallengeResponse": {
+              "documentation": {},
+              "members": {
+                "AuthenticationResult": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ChallengeName": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ChallengeParameters": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Session": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "AdminSetUserMFAPreferenceRequest": {
+              "members": {
+                "SMSMfaSettings": {
+                  "shape": {}
+                },
+                "SoftwareTokenMfaSettings": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                },
+                "Username": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminSetUserMFAPreferenceResponse": {
+              "members": {},
+              "type": {}
+            },
+            "AdminSetUserSettingsRequest": {
+              "documentation": {},
+              "members": {
+                "MFAOptions": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminSetUserSettingsResponse": {
+              "documentation": {},
+              "members": {},
+              "type": {}
+            },
+            "AdminUpdateAuthEventFeedbackRequest": {
+              "members": {
+                "EventId": {
+                  "shape": {}
+                },
+                "FeedbackValue": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                },
+                "Username": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminUpdateAuthEventFeedbackResponse": {
+              "members": {},
+              "type": {}
+            },
+            "AdminUpdateDeviceStatusRequest": {
+              "documentation": {},
+              "members": {
+                "DeviceKey": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "DeviceRememberedStatus": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminUpdateDeviceStatusResponse": {
+              "documentation": {},
+              "members": {},
+              "type": {}
+            },
+            "AdminUpdateUserAttributesRequest": {
+              "documentation": {},
+              "members": {
+                "UserAttributes": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminUpdateUserAttributesResponse": {
+              "documentation": {},
+              "members": {},
+              "type": {}
+            },
+            "AdminUserGlobalSignOutRequest": {
+              "documentation": {},
+              "members": {
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AdminUserGlobalSignOutResponse": {
+              "documentation": {},
+              "members": {},
+              "type": {}
+            },
+            "AdvancedSecurityModeType": {
+              "enum": {},
+              "type": {}
+            },
+            "AliasAttributeType": {
+              "enum": {},
+              "type": {}
+            },
+            "AliasAttributesListType": {
               "member": {
                 "shape": {}
               },
               "type": {}
             },
-            "S1o": {
-              "key": {},
+            "AliasExistsException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "AnalyticsConfigurationType": {
+              "members": {
+                "ApplicationId": {
+                  "shape": {}
+                },
+                "ExternalId": {
+                  "shape": {}
+                },
+                "RoleArn": {
+                  "shape": {}
+                },
+                "UserDataShared": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AnalyticsMetadataType": {
+              "members": {
+                "AnalyticsEndpointId": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "ArnType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "AssociateSoftwareTokenRequest": {
+              "members": {
+                "AccessToken": {
+                  "shape": {}
+                },
+                "Session": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "AssociateSoftwareTokenResponse": {
+              "members": {
+                "SecretCode": {
+                  "shape": {}
+                },
+                "Session": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "AttributeDataType": {
+              "enum": {},
+              "type": {}
+            },
+            "AttributeListType": {
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "AttributeMappingKeyType": {
+              "max": {},
+              "min": {},
+              "type": {}
+            },
+            "AttributeMappingType": {
+              "key": {
+                "shape": {}
+              },
               "type": {},
-              "value": {}
+              "value": {
+                "shape": {}
+              }
             },
-            "S20": {
-              "sensitive": {},
+            "AttributeNameListType": {
+              "member": {
+                "shape": {}
+              },
               "type": {}
             },
-            "S27": {
-              "sensitive": {},
+            "AttributeNameType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
               "type": {}
             },
-            "S2h": {
+            "AttributeType": {
+              "documentation": {},
               "members": {
-                "CloudWatchLogsRoleArn": {},
-                "CompletionDate": {
-                  "type": {}
+                "Name": {
+                  "documentation": {},
+                  "shape": {}
                 },
-                "CompletionMessage": {},
+                "Value": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AttributeValueType": {
+              "max": {},
+              "sensitive": {},
+              "type": {}
+            },
+            "AuthEventType": {
+              "members": {
+                "ChallengeResponses": {
+                  "shape": {}
+                },
                 "CreationDate": {
-                  "type": {}
+                  "shape": {}
                 },
-                "FailedUsers": {
-                  "type": {}
+                "EventContextData": {
+                  "shape": {}
                 },
-                "ImportedUsers": {
-                  "type": {}
+                "EventFeedback": {
+                  "shape": {}
                 },
-                "JobId": {},
-                "JobName": {},
-                "PreSignedUrl": {},
-                "SkippedUsers": {
-                  "type": {}
+                "EventId": {
+                  "shape": {}
                 },
-                "StartDate": {
-                  "type": {}
+                "EventResponse": {
+                  "shape": {}
                 },
-                "Status": {},
-                "UserPoolId": {}
-              },
-              "type": {}
-            },
-            "S2p": {
-              "members": {
-                "PasswordPolicy": {
-                  "members": {
-                    "MinimumLength": {
-                      "closure_uid_957732505": {},
-                      "type": {}
-                    },
-                    "RequireLowercase": {
-                      "closure_uid_957732505": {},
-                      "type": {}
-                    },
-                    "RequireNumbers": {
-                      "closure_uid_957732505": {},
-                      "type": {}
-                    },
-                    "RequireSymbols": {
-                      "closure_uid_957732505": {},
-                      "type": {}
-                    },
-                    "RequireUppercase": {
-                      "closure_uid_957732505": {},
-                      "type": {}
-                    },
-                    "closure_uid_957732505": {}
-                  },
-                  "type": {}
+                "EventRisk": {
+                  "shape": {}
+                },
+                "EventType": {
+                  "shape": {}
                 }
               },
               "type": {}
             },
-            "S2s": {
-              "members": {
-                "CreateAuthChallenge": {},
-                "CustomMessage": {},
-                "DefineAuthChallenge": {},
-                "PostAuthentication": {},
-                "PostConfirmation": {},
-                "PreAuthentication": {},
-                "PreSignUp": {},
-                "VerifyAuthChallengeResponse": {}
+            "AuthEventsType": {
+              "member": {
+                "shape": {}
               },
               "type": {}
             },
-            "S2t": {
-              "member": {},
+            "AuthFlowType": {
+              "enum": {},
               "type": {}
             },
-            "S2v": {
-              "member": {},
+            "AuthParametersType": {
+              "key": {
+                "shape": {}
+              },
+              "type": {},
+              "value": {
+                "shape": {}
+              }
+            },
+            "AuthStateType": {
+              "pattern": {},
+              "sensitive": {},
               "type": {}
             },
-            "S31": {
+            "AuthenticateRequest": {
+              "documentation": {},
               "members": {
-                "ChallengeRequiredOnNewDevice": {
-                  "type": {}
+                "AnalyticsMetadata": {
+                  "shape": {}
                 },
-                "DeviceOnlyRememberedOnUserPrompt": {
-                  "type": {}
+                "ClientId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "PasswordClaim": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SecretHash": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Timestamp": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "AuthenticateResponse": {
+              "documentation": {},
+              "members": {
+                "AuthState": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "AuthenticationResult": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "CodeDeliveryDetails": {
+                  "documentation": {},
+                  "shape": {}
                 }
               },
               "type": {}
             },
-            "S32": {
+            "AuthenticationResultType": {
+              "documentation": {},
               "members": {
-                "ReplyToEmailAddress": {},
-                "SourceArn": {}
+                "AccessToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ExpiresIn": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "IdToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "NewDeviceMetadata": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "RefreshToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "TokenType": {
+                  "documentation": {},
+                  "shape": {}
+                }
               },
               "type": {}
             },
-            "S34": {
-              "members": {
-                "ExternalId": {},
-                "SnsCallerArn": {}
+            "BlobType": {
+              "type": {}
+            },
+            "BlockedIPRangeListType": {
+              "max": {},
+              "member": {
+                "shape": {}
               },
               "type": {}
             },
-            "S36": {
+            "BooleanType": {
+              "type": {}
+            },
+            "BotActionType": {
               "members": {
+                "EventAction": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "BotActionsType": {
+              "members": {
+                "HighAction": {
+                  "shape": {}
+                },
+                "LowAction": {
+                  "shape": {}
+                },
+                "MediumAction": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "BotEventActionType": {
+              "enum": {},
+              "type": {}
+            },
+            "BotRiskConfigurationType": {
+              "members": {
+                "Actions": {
+                  "shape": {}
+                },
+                "EventFilter": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "CSSType": {
+              "type": {}
+            },
+            "CSSVersionType": {
+              "type": {}
+            },
+            "CallbackURLsListType": {
+              "max": {},
+              "member": {
+                "shape": {}
+              },
+              "min": {},
+              "type": {}
+            },
+            "ChallengeName": {
+              "enum": {},
+              "type": {}
+            },
+            "ChallengeNameType": {
+              "enum": {},
+              "type": {}
+            },
+            "ChallengeParametersType": {
+              "key": {
+                "shape": {}
+              },
+              "type": {},
+              "value": {
+                "shape": {}
+              }
+            },
+            "ChallengeResponse": {
+              "enum": {},
+              "type": {}
+            },
+            "ChallengeResponseListType": {
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "ChallengeResponseType": {
+              "members": {
+                "ChallengeName": {
+                  "shape": {}
+                },
+                "ChallengeResponse": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "ChallengeResponsesType": {
+              "key": {
+                "shape": {}
+              },
+              "type": {},
+              "value": {
+                "shape": {}
+              }
+            },
+            "ChangePasswordRequest": {
+              "documentation": {},
+              "members": {
+                "AccessToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "PreviousPassword": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ProposedPassword": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "ChangePasswordResponse": {
+              "documentation": {},
+              "members": {},
+              "type": {}
+            },
+            "ClientIdType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "sensitive": {},
+              "type": {}
+            },
+            "ClientMetadataType": {
+              "key": {
+                "shape": {}
+              },
+              "type": {},
+              "value": {
+                "shape": {}
+              }
+            },
+            "ClientNameType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "ClientPermissionListType": {
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "ClientPermissionType": {
+              "max": {},
+              "min": {},
+              "type": {}
+            },
+            "ClientSecretType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "sensitive": {},
+              "type": {}
+            },
+            "CodeDeliveryDetailsListType": {
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "CodeDeliveryDetailsType": {
+              "documentation": {},
+              "members": {
+                "AttributeName": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "DeliveryMedium": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Destination": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "CodeDeliveryFailureException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "CodeMismatchException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "CompletionMessageType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "CompromisedCredentialsActionsType": {
+              "members": {
+                "EventAction": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "CompromisedCredentialsEventActionType": {
+              "enum": {},
+              "type": {}
+            },
+            "CompromisedCredentialsRiskConfigurationType": {
+              "members": {
+                "Actions": {
+                  "shape": {}
+                },
+                "EventFilter": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "ConcurrentModificationException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "ConfirmDeviceRequest": {
+              "documentation": {},
+              "members": {
+                "AccessToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "DeviceKey": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "DeviceName": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "DeviceSecretVerifierConfig": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "ConfirmDeviceResponse": {
+              "documentation": {},
+              "members": {
+                "UserConfirmationNecessary": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "ConfirmForgotPasswordRequest": {
+              "documentation": {},
+              "members": {
+                "AnalyticsMetadata": {
+                  "shape": {}
+                },
+                "ClientId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ConfirmationCode": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Password": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SecretHash": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserContextData": {
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "ConfirmForgotPasswordResponse": {
+              "documentation": {},
+              "members": {},
+              "type": {}
+            },
+            "ConfirmSignUpRequest": {
+              "documentation": {},
+              "members": {
+                "AnalyticsMetadata": {
+                  "shape": {}
+                },
+                "ClientId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ConfirmationCode": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ForceAliasCreation": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SecretHash": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserContextData": {
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "ConfirmSignUpResponse": {
+              "documentation": {},
+              "members": {},
+              "type": {}
+            },
+            "ConfirmationCodeType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "ContextDataType": {
+              "members": {
+                "EncodedData": {
+                  "shape": {}
+                },
+                "HttpHeaders": {
+                  "shape": {}
+                },
+                "IpAddress": {
+                  "shape": {}
+                },
+                "ServerName": {
+                  "shape": {}
+                },
+                "ServerPath": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "CreateGroupRequest": {
+              "members": {
+                "Description": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "GroupName": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Precedence": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "RoleArn": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "CreateGroupResponse": {
+              "members": {
+                "Group": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "CreateIdentityProviderRequest": {
+              "members": {
+                "AttributeMapping": {
+                  "shape": {}
+                },
+                "IdpIdentifiers": {
+                  "shape": {}
+                },
+                "ProviderDetails": {
+                  "shape": {}
+                },
+                "ProviderName": {
+                  "shape": {}
+                },
+                "ProviderType": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "CreateIdentityProviderResponse": {
+              "members": {
+                "IdentityProvider": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "CreateResourceServerRequest": {
+              "members": {
+                "Identifier": {
+                  "shape": {}
+                },
+                "Name": {
+                  "shape": {}
+                },
+                "Scopes": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "CreateResourceServerResponse": {
+              "members": {
+                "ResourceServer": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "CreateUserImportJobRequest": {
+              "documentation": {},
+              "members": {
+                "CloudWatchLogsRoleArn": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "JobName": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "CreateUserImportJobResponse": {
+              "documentation": {},
+              "members": {
+                "UserImportJob": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "CreateUserPoolClientRequest": {
+              "documentation": {},
+              "members": {
+                "AllowedOAuthFlows": {
+                  "shape": {}
+                },
+                "AllowedOAuthFlowsUserPoolClient": {
+                  "shape": {}
+                },
+                "AllowedOAuthScopes": {
+                  "shape": {}
+                },
+                "AnalyticsConfiguration": {
+                  "shape": {}
+                },
+                "CallbackURLs": {
+                  "shape": {}
+                },
+                "ClientName": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "DefaultRedirectURI": {
+                  "shape": {}
+                },
+                "ExplicitAuthFlows": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "GenerateSecret": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "LogoutURLs": {
+                  "shape": {}
+                },
+                "ReadAttributes": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "RefreshTokenValidity": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SupportedIdentityProviders": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "WriteAttributes": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "CreateUserPoolClientResponse": {
+              "documentation": {},
+              "members": {
+                "UserPoolClient": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "CreateUserPoolDomainRequest": {
+              "members": {
+                "Domain": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "CreateUserPoolDomainResponse": {
+              "members": {},
+              "type": {}
+            },
+            "CreateUserPoolRequest": {
+              "documentation": {},
+              "members": {
+                "AdminCreateUserConfig": {
+                  "documentation": {},
+                  "shape": {}
+                },
                 "AliasAttributes": {
+                  "documentation": {},
                   "shape": {}
                 },
                 "AutoVerifiedAttributes": {
+                  "documentation": {},
                   "shape": {}
                 },
-                "CreationDate": {
-                  "type": {}
-                },
                 "DeviceConfiguration": {
+                  "documentation": {},
                   "shape": {}
                 },
                 "EmailConfiguration": {
+                  "documentation": {},
                   "shape": {}
                 },
-                "EmailConfigurationFailure": {},
-                "EmailVerificationMessage": {},
-                "EmailVerificationSubject": {},
-                "EstimatedNumberOfUsers": {
-                  "type": {}
+                "EmailVerificationMessage": {
+                  "documentation": {},
+                  "shape": {}
                 },
-                "Id": {},
+                "EmailVerificationSubject": {
+                  "documentation": {},
+                  "shape": {}
+                },
                 "LambdaConfig": {
+                  "documentation": {},
                   "shape": {}
                 },
-                "LastModifiedDate": {
-                  "type": {}
+                "MfaConfiguration": {
+                  "documentation": {},
+                  "shape": {}
                 },
-                "MfaConfiguration": {},
-                "Name": {},
                 "Policies": {
+                  "documentation": {},
                   "shape": {}
                 },
-                "SchemaAttributes": {
-                  "member": {
-                    "closure_uid_957732505": {},
-                    "shape": {}
-                  },
-                  "type": {}
+                "PoolName": {
+                  "documentation": {},
+                  "shape": {}
                 },
-                "SmsAuthenticationMessage": {},
+                "Schema": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SmsAuthenticationMessage": {
+                  "documentation": {},
+                  "shape": {}
+                },
                 "SmsConfiguration": {
+                  "documentation": {},
                   "shape": {}
                 },
-                "SmsConfigurationFailure": {},
-                "SmsVerificationMessage": {},
-                "Status": {}
+                "SmsVerificationMessage": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolAddOns": {
+                  "shape": {}
+                },
+                "UserPoolTags": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UsernameAttributes": {
+                  "shape": {}
+                },
+                "VerificationMessageTemplate": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "CreateUserPoolResponse": {
+              "documentation": {},
+              "members": {
+                "UserPool": {
+                  "documentation": {},
+                  "shape": {}
+                }
               },
               "type": {}
             },
-            "S3d": {
-              "member": {},
+            "CustomAttributeNameType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
               "type": {}
             },
-            "S3f": {
-              "member": {},
+            "CustomAttributesListType": {
+              "max": {},
+              "member": {
+                "shape": {}
+              },
+              "min": {},
               "type": {}
             },
-            "S3i": {
+            "DateType": {
+              "type": {}
+            },
+            "DefaultEmailOptionType": {
+              "enum": {},
+              "type": {}
+            },
+            "DeleteGroupRequest": {
+              "members": {
+                "GroupName": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "DeleteIdentityProviderRequest": {
+              "members": {
+                "ProviderName": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "DeleteResourceServerRequest": {
+              "members": {
+                "Identifier": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "DeleteUserAttributesRequest": {
+              "documentation": {},
+              "members": {
+                "AccessToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserAttributeNames": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "DeleteUserAttributesResponse": {
+              "documentation": {},
+              "members": {},
+              "type": {}
+            },
+            "DeleteUserPoolClientRequest": {
+              "documentation": {},
+              "members": {
+                "ClientId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "DeleteUserPoolDomainRequest": {
+              "members": {
+                "Domain": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "DeleteUserPoolDomainResponse": {
+              "members": {},
+              "type": {}
+            },
+            "DeleteUserPoolRequest": {
+              "documentation": {},
+              "members": {
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "DeleteUserRequest": {
+              "documentation": {},
+              "members": {
+                "AccessToken": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "DeliveryMediumListType": {
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "DeliveryMediumType": {
+              "enum": {},
+              "type": {}
+            },
+            "DescribeIdentityProviderRequest": {
+              "members": {
+                "ProviderName": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "DescribeIdentityProviderResponse": {
+              "members": {
+                "IdentityProvider": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "DescribeResourceServerRequest": {
+              "members": {
+                "Identifier": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "DescribeResourceServerResponse": {
+              "members": {
+                "ResourceServer": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "DescribeRiskConfigurationRequest": {
               "members": {
                 "ClientId": {
                   "shape": {}
                 },
-                "ClientName": {},
-                "ClientSecret": {
-                  "sensitive": {},
-                  "type": {}
-                },
-                "CreationDate": {
-                  "type": {}
-                },
-                "ExplicitAuthFlows": {
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "DescribeRiskConfigurationResponse": {
+              "members": {
+                "RiskConfiguration": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "DescribeUserImportJobRequest": {
+              "documentation": {},
+              "members": {
+                "JobId": {
+                  "documentation": {},
                   "shape": {}
                 },
-                "LastModifiedDate": {
-                  "type": {}
-                },
-                "ReadAttributes": {
+                "UserPoolId": {
+                  "documentation": {},
                   "shape": {}
-                },
-                "RefreshTokenValidity": {
-                  "type": {}
-                },
-                "UserPoolId": {},
-                "WriteAttributes": {
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "DescribeUserImportJobResponse": {
+              "documentation": {},
+              "members": {
+                "UserImportJob": {
+                  "documentation": {},
                   "shape": {}
                 }
               },
               "type": {}
             },
-            "S3y": {
+            "DescribeUserPoolClientRequest": {
+              "documentation": {},
               "members": {
-                "AttributeName": {},
-                "DeliveryMedium": {},
-                "Destination": {}
+                "ClientId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
               },
+              "required": {},
               "type": {}
             },
-            "S4": {
+            "DescribeUserPoolClientResponse": {
+              "documentation": {},
               "members": {
-                "AttributeDataType": {},
-                "DeveloperOnlyAttribute": {
-                  "type": {}
-                },
-                "Mutable": {
-                  "type": {}
-                },
-                "Name": {},
-                "NumberAttributeConstraints": {
-                  "members": {
-                    "MaxValue": {
-                      "closure_uid_957732505": {}
-                    },
-                    "MinValue": {
-                      "closure_uid_957732505": {}
-                    },
-                    "closure_uid_957732505": {}
-                  },
-                  "type": {}
-                },
-                "Required": {
-                  "type": {}
-                },
-                "StringAttributeConstraints": {
-                  "members": {
-                    "MaxLength": {
-                      "closure_uid_957732505": {}
-                    },
-                    "MinLength": {
-                      "closure_uid_957732505": {}
-                    },
-                    "closure_uid_957732505": {}
-                  },
-                  "type": {}
+                "UserPoolClient": {
+                  "documentation": {},
+                  "shape": {}
                 }
               },
               "type": {}
             },
-            "Sd": {
-              "sensitive": {},
+            "DescribeUserPoolDomainRequest": {
+              "members": {
+                "Domain": {
+                  "shape": {}
+                }
+              },
+              "required": {},
               "type": {}
             },
-            "Sh": {
-              "member": {},
+            "DescribeUserPoolDomainResponse": {
+              "members": {
+                "DomainDescription": {
+                  "shape": {}
+                }
+              },
               "type": {}
             },
-            "Ss": {
+            "DescribeUserPoolRequest": {
+              "documentation": {},
+              "members": {
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "DescribeUserPoolResponse": {
+              "documentation": {},
+              "members": {
+                "UserPool": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "DescriptionType": {
+              "max": {},
+              "type": {}
+            },
+            "DeviceConfigurationType": {
+              "documentation": {},
+              "members": {
+                "ChallengeRequiredOnNewDevice": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "DeviceOnlyRememberedOnUserPrompt": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "DeviceKeyType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "DeviceListType": {
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "DeviceNameType": {
+              "max": {},
+              "min": {},
+              "type": {}
+            },
+            "DeviceRememberedStatusType": {
+              "enum": {},
+              "type": {}
+            },
+            "DeviceSecretVerifierConfigType": {
+              "documentation": {},
+              "members": {
+                "PasswordVerifier": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Salt": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "DeviceType": {
+              "documentation": {},
               "members": {
                 "DeviceAttributes": {
+                  "documentation": {},
                   "shape": {}
                 },
                 "DeviceCreateDate": {
-                  "type": {}
+                  "documentation": {},
+                  "shape": {}
                 },
-                "DeviceKey": {},
+                "DeviceKey": {
+                  "documentation": {},
+                  "shape": {}
+                },
                 "DeviceLastAuthenticatedDate": {
-                  "type": {}
+                  "documentation": {},
+                  "shape": {}
                 },
                 "DeviceLastModifiedDate": {
-                  "type": {}
+                  "documentation": {},
+                  "shape": {}
                 }
               },
               "type": {}
             },
-            "St": {
-              "member": {
-                "members": {
-                  "Name": {
-                    "closure_uid_957732505": {}
-                  },
-                  "Value": {
-                    "closure_uid_957732505": {},
-                    "sensitive": {},
-                    "type": {}
-                  }
+            "DomainDescriptionType": {
+              "members": {
+                "AWSAccountId": {
+                  "shape": {}
                 },
-                "required": {},
-                "type": {}
+                "CloudFrontDistribution": {
+                  "shape": {}
+                },
+                "Domain": {
+                  "shape": {}
+                },
+                "S3Bucket": {
+                  "shape": {}
+                },
+                "Status": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                },
+                "Version": {
+                  "shape": {}
+                }
               },
+              "type": {}
+            },
+            "DomainStatusType": {
+              "enum": {},
+              "type": {}
+            },
+            "DomainType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "DomainVersionType": {
+              "max": {},
+              "min": {},
+              "type": {}
+            },
+            "DuplicateProviderException": {
+              "exception": {},
+              "members": {
+                "message": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "EmailAddressType": {
+              "pattern": {},
+              "type": {}
+            },
+            "EmailConfigurationType": {
+              "documentation": {},
+              "members": {
+                "ReplyToEmailAddress": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SourceArn": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "EmailNotificationBodyType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "EmailNotificationSubjectType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "EmailVerificationMessageByLinkType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "EmailVerificationMessageType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "EmailVerificationSubjectByLinkType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "EmailVerificationSubjectType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "EnableSoftwareTokenMFAException": {
+              "exception": {},
+              "members": {
+                "message": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "EnhanceAuthRequest": {
+              "documentation": {},
+              "members": {
+                "AnalyticsMetadata": {
+                  "shape": {}
+                },
+                "AuthState": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ClientId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Code": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SecretHash": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "EnhanceAuthResponse": {
+              "documentation": {},
+              "members": {
+                "AuthenticationResult": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "EventContextDataType": {
+              "members": {
+                "City": {
+                  "shape": {}
+                },
+                "Country": {
+                  "shape": {}
+                },
+                "DeviceName": {
+                  "shape": {}
+                },
+                "IpAddress": {
+                  "shape": {}
+                },
+                "Timezone": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "EventFeedbackType": {
+              "members": {
+                "FeedbackDate": {
+                  "shape": {}
+                },
+                "FeedbackValue": {
+                  "shape": {}
+                },
+                "Provider": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "EventFilterType": {
+              "enum": {},
+              "type": {}
+            },
+            "EventFiltersType": {
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "EventIdType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "EventResponseType": {
+              "enum": {},
+              "type": {}
+            },
+            "EventRiskType": {
+              "members": {
+                "RiskDecision": {
+                  "shape": {}
+                },
+                "RiskLevel": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "EventType": {
+              "enum": {},
+              "type": {}
+            },
+            "ExpiredCodeException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "ExplicitAuthFlowsListType": {
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "ExplicitAuthFlowsType": {
+              "enum": {},
+              "type": {}
+            },
+            "FeedbackValueType": {
+              "enum": {},
+              "type": {}
+            },
+            "ForceAliasCreation": {
+              "type": {}
+            },
+            "ForgetDeviceRequest": {
+              "documentation": {},
+              "members": {
+                "AccessToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "DeviceKey": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "ForgotPasswordRequest": {
+              "documentation": {},
+              "members": {
+                "AnalyticsMetadata": {
+                  "shape": {}
+                },
+                "ClientId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SecretHash": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserContextData": {
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "ForgotPasswordResponse": {
+              "documentation": {},
+              "members": {
+                "CodeDeliveryDetails": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "GenerateSecret": {
+              "type": {}
+            },
+            "GetAuthenticationDetailsRequest": {
+              "documentation": {},
+              "members": {
+                "AnalyticsMetadata": {
+                  "shape": {}
+                },
+                "ClientId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SecretHash": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SrpA": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ValidationData": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "GetAuthenticationDetailsResponse": {
+              "documentation": {},
+              "members": {
+                "Salt": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SecretBlock": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SrpB": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "GetCSVHeaderRequest": {
+              "documentation": {},
+              "members": {
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "GetCSVHeaderResponse": {
+              "documentation": {},
+              "members": {
+                "CSVHeader": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "GetDeviceRequest": {
+              "documentation": {},
+              "members": {
+                "AccessToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "DeviceKey": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "GetDeviceResponse": {
+              "documentation": {},
+              "members": {
+                "Device": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "GetGroupRequest": {
+              "members": {
+                "GroupName": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "GetGroupResponse": {
+              "members": {
+                "Group": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "GetIdentityProviderByIdentifierRequest": {
+              "members": {
+                "IdpIdentifier": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "GetIdentityProviderByIdentifierResponse": {
+              "members": {
+                "IdentityProvider": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "GetJWKSRequest": {
+              "documentation": {},
+              "members": {
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "GetJWKSResponse": {
+              "documentation": {},
+              "members": {
+                "cacheControl": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "keys": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "GetOpenIdConfigurationRequest": {
+              "documentation": {},
+              "members": {
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "GetOpenIdConfigurationResponse": {
+              "documentation": {},
+              "members": {
+                "authorization_endpoint": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "id_token_signing_alg_values_supported": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "issuer": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "jwks_uri": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "response_types_supported": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "subject_types_supported": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "GetSigningCertificateRequest": {
+              "members": {
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "GetSigningCertificateResponse": {
+              "members": {
+                "Certificate": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "GetUICustomizationRequest": {
+              "members": {
+                "ClientId": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "GetUICustomizationResponse": {
+              "members": {
+                "UICustomization": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "GetUserAttributeVerificationCodeRequest": {
+              "documentation": {},
+              "members": {
+                "AccessToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "AttributeName": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "GetUserAttributeVerificationCodeResponse": {
+              "documentation": {},
+              "members": {
+                "CodeDeliveryDetails": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "GetUserPoolMfaConfigRequest": {
+              "members": {
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "GetUserPoolMfaConfigResponse": {
+              "members": {
+                "MfaConfiguration": {
+                  "shape": {}
+                },
+                "SmsMfaConfiguration": {
+                  "shape": {}
+                },
+                "SoftwareTokenMfaConfiguration": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "GetUserPoolUIConfigurationRequest": {
+              "members": {
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "GetUserPoolUIConfigurationResponse": {
+              "members": {
+                "UserPoolUIConfiguration": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "GetUserRequest": {
+              "documentation": {},
+              "members": {
+                "AccessToken": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "GetUserResponse": {
+              "documentation": {},
+              "members": {
+                "MFAOptions": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserAttributes": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "GlobalSignOutRequest": {
+              "documentation": {},
+              "members": {
+                "AccessToken": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "GlobalSignOutResponse": {
+              "documentation": {},
+              "members": {},
+              "type": {}
+            },
+            "GroupExistsException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "GroupListType": {
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "GroupNameType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "GroupType": {
+              "documentation": {},
+              "members": {
+                "CreationDate": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Description": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "GroupName": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "LastModifiedDate": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Precedence": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "RoleArn": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "HexStringType": {
+              "pattern": {},
+              "type": {}
+            },
+            "HttpHeader": {
+              "members": {
+                "headerName": {
+                  "shape": {}
+                },
+                "headerValue": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "HttpHeaderList": {
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "IdentityProviderType": {
+              "members": {
+                "AttributeMapping": {
+                  "shape": {}
+                },
+                "CreationDate": {
+                  "shape": {}
+                },
+                "IdpIdentifiers": {
+                  "shape": {}
+                },
+                "LastModifiedDate": {
+                  "shape": {}
+                },
+                "ProviderDetails": {
+                  "shape": {}
+                },
+                "ProviderName": {
+                  "shape": {}
+                },
+                "ProviderType": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "IdentityProviderTypeType": {
+              "enum": {},
+              "type": {}
+            },
+            "IdpIdentifierType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "IdpIdentifiersListType": {
+              "max": {},
+              "member": {
+                "shape": {}
+              },
+              "min": {},
+              "type": {}
+            },
+            "ImageFileType": {
+              "type": {}
+            },
+            "ImageUrlType": {
+              "type": {}
+            },
+            "InitiateAuthRequest": {
+              "documentation": {},
+              "members": {
+                "AnalyticsMetadata": {
+                  "shape": {}
+                },
+                "AuthFlow": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "AuthParameters": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ClientId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ClientMetadata": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserContextData": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "InitiateAuthResponse": {
+              "documentation": {},
+              "members": {
+                "AuthenticationResult": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ChallengeName": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ChallengeParameters": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Session": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "IntegerType": {
+              "type": {}
+            },
+            "InternalErrorException": {
+              "documentation": {},
+              "exception": {},
+              "fault": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "InvalidEmailRoleAccessPolicyException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "InvalidLambdaResponseException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "InvalidOAuthFlowException": {
+              "exception": {},
+              "members": {
+                "message": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "InvalidParameterException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "InvalidPasswordException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "InvalidSmsRoleAccessPolicyException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "InvalidSmsRoleTrustRelationshipException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "InvalidUserPoolConfigurationException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "KeyListType": {
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "KeyType": {
+              "documentation": {},
+              "members": {
+                "alg": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "e": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "kid": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "kty": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "n": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "use": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "LambdaConfigType": {
+              "documentation": {},
+              "members": {
+                "CreateAuthChallenge": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "CustomMessage": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "DefineAuthChallenge": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "PostAuthentication": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "PostConfirmation": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "PreAuthentication": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "PreSignUp": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "PreTokenGeneration": {
+                  "shape": {}
+                },
+                "VerifyAuthChallengeResponse": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "LimitExceededException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "ListDevicesRequest": {
+              "documentation": {},
+              "members": {
+                "AccessToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Limit": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "PaginationToken": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "ListDevicesResponse": {
+              "documentation": {},
+              "members": {
+                "Devices": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "PaginationToken": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "ListGroupsRequest": {
+              "members": {
+                "Limit": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "NextToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "ListGroupsResponse": {
+              "members": {
+                "Groups": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "NextToken": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "ListIdentityProvidersRequest": {
+              "members": {
+                "MaxResults": {
+                  "shape": {}
+                },
+                "NextToken": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "ListIdentityProvidersResponse": {
+              "members": {
+                "NextToken": {
+                  "shape": {}
+                },
+                "Providers": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "ListOfStringTypes": {
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "ListProvidersLimitType": {
+              "max": {},
+              "min": {},
+              "type": {}
+            },
+            "ListResourceServersLimitType": {
+              "max": {},
+              "min": {},
+              "type": {}
+            },
+            "ListResourceServersRequest": {
+              "members": {
+                "MaxResults": {
+                  "shape": {}
+                },
+                "NextToken": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "ListResourceServersResponse": {
+              "members": {
+                "NextToken": {
+                  "shape": {}
+                },
+                "ResourceServers": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "ListUserImportJobsRequest": {
+              "documentation": {},
+              "members": {
+                "MaxResults": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "PaginationToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "ListUserImportJobsResponse": {
+              "documentation": {},
+              "members": {
+                "PaginationToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserImportJobs": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "ListUserPoolClientsRequest": {
+              "documentation": {},
+              "members": {
+                "MaxResults": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "NextToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "ListUserPoolClientsResponse": {
+              "documentation": {},
+              "members": {
+                "NextToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolClients": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "ListUserPoolsRequest": {
+              "documentation": {},
+              "members": {
+                "MaxResults": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "NextToken": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "ListUserPoolsResponse": {
+              "documentation": {},
+              "members": {
+                "NextToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPools": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "ListUsersInGroupRequest": {
+              "members": {
+                "GroupName": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Limit": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "NextToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "ListUsersInGroupResponse": {
+              "members": {
+                "NextToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Users": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "ListUsersRequest": {
+              "documentation": {},
+              "members": {
+                "AttributesToGet": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Filter": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Limit": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "PaginationToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "ListUsersResponse": {
+              "documentation": {},
+              "members": {
+                "PaginationToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Users": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "LogoutURLsListType": {
+              "max": {},
+              "member": {
+                "shape": {}
+              },
+              "min": {},
+              "type": {}
+            },
+            "LongType": {
+              "type": {}
+            },
+            "MFAMethodNotFoundException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "MFAOptionListType": {
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "MFAOptionType": {
+              "documentation": {},
+              "members": {
+                "AttributeName": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "DeliveryMedium": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "MessageActionType": {
+              "enum": {},
+              "type": {}
+            },
+            "MessageTemplateType": {
+              "documentation": {},
+              "members": {
+                "EmailMessage": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "EmailSubject": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SMSMessage": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "MessageType": {
+              "type": {}
+            },
+            "NewDeviceMetadataType": {
+              "documentation": {},
+              "members": {
+                "DeviceGroupKey": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "DeviceKey": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "NotAuthorizedException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "NotifyConfigurationType": {
+              "members": {
+                "BlockEmail": {
+                  "shape": {}
+                },
+                "From": {
+                  "shape": {}
+                },
+                "MfaEmail": {
+                  "shape": {}
+                },
+                "NoActionEmail": {
+                  "shape": {}
+                },
+                "ReplyTo": {
+                  "shape": {}
+                },
+                "SourceArn": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "NotifyEmailType": {
+              "members": {
+                "HtmlBody": {
+                  "shape": {}
+                },
+                "Subject": {
+                  "shape": {}
+                },
+                "TextBody": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "NumberAttributeConstraintsType": {
+              "documentation": {},
+              "members": {
+                "MaxValue": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "MinValue": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "OAuthFlowType": {
+              "enum": {},
+              "type": {}
+            },
+            "OAuthFlowsType": {
+              "max": {},
+              "member": {
+                "shape": {}
+              },
+              "min": {},
+              "type": {}
+            },
+            "PaginationKey": {
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "PaginationKeyType": {
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "PasswordClaimType": {
+              "documentation": {},
+              "members": {
+                "SecretBlock": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Signature": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "sensitive": {},
+              "type": {}
+            },
+            "PasswordPolicyMinLengthType": {
+              "max": {},
+              "min": {},
+              "type": {}
+            },
+            "PasswordPolicyType": {
+              "documentation": {},
+              "members": {
+                "MinimumLength": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "RequireLowercase": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "RequireNumbers": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "RequireSymbols": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "RequireUppercase": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "PasswordResetRequiredException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "PasswordType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "sensitive": {},
+              "type": {}
+            },
+            "PoolQueryLimitType": {
+              "max": {},
+              "min": {},
+              "type": {}
+            },
+            "PreSignedUrlType": {
+              "max": {},
+              "min": {},
+              "type": {}
+            },
+            "PrecedenceType": {
+              "min": {},
+              "type": {}
+            },
+            "PreconditionNotMetException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "ProviderDescription": {
+              "members": {
+                "CreationDate": {
+                  "shape": {}
+                },
+                "LastModifiedDate": {
+                  "shape": {}
+                },
+                "ProviderName": {
+                  "shape": {}
+                },
+                "ProviderType": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "ProviderDetailsType": {
+              "key": {
+                "shape": {}
+              },
+              "type": {},
+              "value": {
+                "shape": {}
+              }
+            },
+            "ProviderNameType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "ProviderNameTypeV1": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "ProviderUserIdentifierType": {
+              "members": {
+                "ProviderAttributeName": {
+                  "shape": {}
+                },
+                "ProviderAttributeValue": {
+                  "shape": {}
+                },
+                "ProviderName": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "ProvidersListType": {
+              "max": {},
+              "member": {
+                "shape": {}
+              },
+              "min": {},
+              "type": {}
+            },
+            "QueryLimit": {
+              "max": {},
+              "min": {},
+              "type": {}
+            },
+            "QueryLimitType": {
+              "max": {},
+              "min": {},
+              "type": {}
+            },
+            "RedirectUrlType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "RefreshTokenValidityType": {
+              "max": {},
+              "min": {},
+              "type": {}
+            },
+            "RefreshTokensRequest": {
+              "documentation": {},
+              "members": {
+                "AnalyticsMetadata": {
+                  "shape": {}
+                },
+                "ClientId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ClientSecret": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "RefreshToken": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "RefreshTokensResponse": {
+              "documentation": {},
+              "members": {
+                "AuthenticationResult": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "ResendConfirmationCodeRequest": {
+              "documentation": {},
+              "members": {
+                "AnalyticsMetadata": {
+                  "shape": {}
+                },
+                "ClientId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SecretHash": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserContextData": {
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "ResendConfirmationCodeResponse": {
+              "documentation": {},
+              "members": {
+                "CodeDeliveryDetails": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "ResourceNotFoundException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "ResourceServerIdentifierType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "ResourceServerNameType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "ResourceServerScopeDescriptionType": {
+              "max": {},
+              "min": {},
+              "type": {}
+            },
+            "ResourceServerScopeListType": {
+              "max": {},
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "ResourceServerScopeNameType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "ResourceServerScopeType": {
+              "members": {
+                "ScopeDescription": {
+                  "shape": {}
+                },
+                "ScopeName": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "ResourceServerType": {
+              "members": {
+                "Identifier": {
+                  "shape": {}
+                },
+                "Name": {
+                  "shape": {}
+                },
+                "Scopes": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "ResourceServersListType": {
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "RespondToAuthChallengeRequest": {
+              "documentation": {},
+              "members": {
+                "AnalyticsMetadata": {
+                  "shape": {}
+                },
+                "ChallengeName": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ChallengeResponses": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ClientId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Session": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserContextData": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "RespondToAuthChallengeResponse": {
+              "documentation": {},
+              "members": {
+                "AuthenticationResult": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ChallengeName": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ChallengeParameters": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Session": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "RiskConfigurationType": {
+              "members": {
+                "AccountTakeoverRiskConfiguration": {
+                  "shape": {}
+                },
+                "BotRiskConfiguration": {
+                  "shape": {}
+                },
+                "ClientId": {
+                  "shape": {}
+                },
+                "CompromisedCredentialsRiskConfiguration": {
+                  "shape": {}
+                },
+                "LastModifiedDate": {
+                  "shape": {}
+                },
+                "RiskExceptionConfiguration": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "RiskDecisionType": {
+              "enum": {},
+              "type": {}
+            },
+            "RiskExceptionConfigurationType": {
+              "members": {
+                "BlockedIPRangeList": {
+                  "shape": {}
+                },
+                "SkippedIPRangeList": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "RiskLevelType": {
+              "enum": {},
+              "type": {}
+            },
+            "S3BucketType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "SMSMfaSettingsType": {
+              "members": {
+                "Enabled": {
+                  "shape": {}
+                },
+                "PreferredMfa": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "SchemaAttributeType": {
+              "documentation": {},
+              "members": {
+                "AttributeDataType": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "DeveloperOnlyAttribute": {
+                  "box": {},
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Mutable": {
+                  "box": {},
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Name": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "NumberAttributeConstraints": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Required": {
+                  "box": {},
+                  "documentation": {},
+                  "shape": {}
+                },
+                "StringAttributeConstraints": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "SchemaAttributesListType": {
+              "max": {},
+              "member": {
+                "shape": {}
+              },
+              "min": {},
+              "type": {}
+            },
+            "ScopeDoesNotExistException": {
+              "exception": {},
+              "members": {
+                "message": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "ScopeListType": {
+              "max": {},
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "ScopeType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "SearchPaginationTokenType": {
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "SearchedAttributeNamesListType": {
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "SecretCodeType": {
+              "min": {},
+              "pattern": {},
+              "sensitive": {},
+              "type": {}
+            },
+            "SecretHashType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "sensitive": {},
+              "type": {}
+            },
+            "SessionType": {
+              "max": {},
+              "min": {},
+              "type": {}
+            },
+            "SetRiskConfigurationRequest": {
+              "members": {
+                "AccountTakeoverRiskConfiguration": {
+                  "shape": {}
+                },
+                "BotRiskConfiguration": {
+                  "shape": {}
+                },
+                "ClientId": {
+                  "shape": {}
+                },
+                "CompromisedCredentialsRiskConfiguration": {
+                  "shape": {}
+                },
+                "RiskExceptionConfiguration": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "SetRiskConfigurationResponse": {
+              "members": {
+                "RiskConfiguration": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "SetUICustomizationRequest": {
+              "members": {
+                "CSS": {
+                  "shape": {}
+                },
+                "ClientId": {
+                  "shape": {}
+                },
+                "ImageFile": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "SetUICustomizationResponse": {
+              "members": {
+                "UICustomization": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "SetUserMFAPreferenceRequest": {
+              "members": {
+                "AccessToken": {
+                  "shape": {}
+                },
+                "SMSMfaSettings": {
+                  "shape": {}
+                },
+                "SoftwareTokenMfaSettings": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "SetUserMFAPreferenceResponse": {
+              "members": {},
+              "type": {}
+            },
+            "SetUserPoolMfaConfigRequest": {
+              "members": {
+                "MfaConfiguration": {
+                  "shape": {}
+                },
+                "SmsMfaConfiguration": {
+                  "shape": {}
+                },
+                "SoftwareTokenMfaConfiguration": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "SetUserPoolMfaConfigResponse": {
+              "members": {
+                "MfaConfiguration": {
+                  "shape": {}
+                },
+                "SmsMfaConfiguration": {
+                  "shape": {}
+                },
+                "SoftwareTokenMfaConfiguration": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "SetUserPoolUIConfigurationRequest": {
+              "members": {
+                "Details": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "SetUserPoolUIConfigurationResponse": {
+              "members": {
+                "UserPoolUIConfiguration": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "SetUserSettingsRequest": {
+              "documentation": {},
+              "members": {
+                "AccessToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "MFAOptions": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "SetUserSettingsResponse": {
+              "documentation": {},
+              "members": {},
+              "type": {}
+            },
+            "SignUpRequest": {
+              "documentation": {},
+              "members": {
+                "AnalyticsMetadata": {
+                  "shape": {}
+                },
+                "ClientId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Password": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SecretHash": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserAttributes": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserContextData": {
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ValidationData": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "SignUpResponse": {
+              "documentation": {},
+              "members": {
+                "CodeDeliveryDetails": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserConfirmed": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserSub": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "SkippedIPRangeListType": {
+              "max": {},
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "SmsConfigurationType": {
+              "documentation": {},
+              "members": {
+                "ExternalId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SnsCallerArn": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "SmsMfaConfigType": {
+              "members": {
+                "SmsAuthenticationMessage": {
+                  "shape": {}
+                },
+                "SmsConfiguration": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "SmsVerificationMessageType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "SoftwareTokenMFANotFoundException": {
+              "exception": {},
+              "members": {
+                "message": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "SoftwareTokenMFAUserCodeType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "SoftwareTokenMfaConfigType": {
+              "members": {
+                "Enabled": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "SoftwareTokenMfaSettingsType": {
+              "members": {
+                "Enabled": {
+                  "shape": {}
+                },
+                "PreferredMfa": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "StartUserImportJobRequest": {
+              "documentation": {},
+              "members": {
+                "JobId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "StartUserImportJobResponse": {
+              "documentation": {},
+              "members": {
+                "UserImportJob": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "StatusType": {
+              "enum": {},
+              "type": {}
+            },
+            "StopUserImportJobRequest": {
+              "documentation": {},
+              "members": {
+                "JobId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "StopUserImportJobResponse": {
+              "documentation": {},
+              "members": {
+                "UserImportJob": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "StringAttributeConstraintsType": {
+              "documentation": {},
+              "members": {
+                "MaxLength": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "MinLength": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "StringType": {
+              "type": {}
+            },
+            "SupportedIdentityProvidersListType": {
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "TokenModelType": {
+              "pattern": {},
+              "sensitive": {},
+              "type": {}
+            },
+            "TooManyFailedAttemptsException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "TooManyRequestsException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "UICustomizationType": {
+              "members": {
+                "CSS": {
+                  "shape": {}
+                },
+                "CSSVersion": {
+                  "shape": {}
+                },
+                "ClientId": {
+                  "shape": {}
+                },
+                "CreationDate": {
+                  "shape": {}
+                },
+                "ImageUrl": {
+                  "shape": {}
+                },
+                "LastModifiedDate": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "UIDetailsMapType": {
+              "key": {
+                "shape": {}
+              },
+              "type": {},
+              "value": {
+                "shape": {}
+              }
+            },
+            "UnexpectedLambdaException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "UnsupportedIdentityProviderException": {
+              "exception": {},
+              "members": {
+                "message": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "UnsupportedUserStateException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "UpdateAuthEventFeedbackRequest": {
+              "members": {
+                "EventId": {
+                  "shape": {}
+                },
+                "FeedbackToken": {
+                  "shape": {}
+                },
+                "FeedbackValue": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                },
+                "Username": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "UpdateAuthEventFeedbackResponse": {
+              "members": {},
+              "type": {}
+            },
+            "UpdateDeviceStatusRequest": {
+              "documentation": {},
+              "members": {
+                "AccessToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "DeviceKey": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "DeviceRememberedStatus": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "UpdateDeviceStatusResponse": {
+              "documentation": {},
+              "members": {},
+              "type": {}
+            },
+            "UpdateGroupRequest": {
+              "members": {
+                "Description": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "GroupName": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Precedence": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "RoleArn": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "UpdateGroupResponse": {
+              "members": {
+                "Group": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "UpdateIdentityProviderRequest": {
+              "members": {
+                "AttributeMapping": {
+                  "shape": {}
+                },
+                "IdpIdentifiers": {
+                  "shape": {}
+                },
+                "ProviderDetails": {
+                  "shape": {}
+                },
+                "ProviderName": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "UpdateIdentityProviderResponse": {
+              "members": {
+                "IdentityProvider": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "UpdateResourceServerRequest": {
+              "members": {
+                "Identifier": {
+                  "shape": {}
+                },
+                "Name": {
+                  "shape": {}
+                },
+                "Scopes": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "UpdateResourceServerResponse": {
+              "members": {
+                "ResourceServer": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "UpdateUserAttributesRequest": {
+              "documentation": {},
+              "members": {
+                "AccessToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserAttributes": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "UpdateUserAttributesResponse": {
+              "documentation": {},
+              "members": {
+                "CodeDeliveryDetailsList": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "UpdateUserPoolClientRequest": {
+              "documentation": {},
+              "members": {
+                "AllowedOAuthFlows": {
+                  "shape": {}
+                },
+                "AllowedOAuthFlowsUserPoolClient": {
+                  "shape": {}
+                },
+                "AllowedOAuthScopes": {
+                  "shape": {}
+                },
+                "AnalyticsConfiguration": {
+                  "shape": {}
+                },
+                "CallbackURLs": {
+                  "shape": {}
+                },
+                "ClientId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ClientName": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "DefaultRedirectURI": {
+                  "shape": {}
+                },
+                "ExplicitAuthFlows": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "LogoutURLs": {
+                  "shape": {}
+                },
+                "ReadAttributes": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "RefreshTokenValidity": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SupportedIdentityProviders": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "WriteAttributes": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "UpdateUserPoolClientResponse": {
+              "documentation": {},
+              "members": {
+                "UserPoolClient": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "UpdateUserPoolRequest": {
+              "documentation": {},
+              "members": {
+                "AdminCreateUserConfig": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "AutoVerifiedAttributes": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "DeviceConfiguration": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "EmailConfiguration": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "EmailVerificationMessage": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "EmailVerificationSubject": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "LambdaConfig": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "MfaConfiguration": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Policies": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SmsAuthenticationMessage": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SmsConfiguration": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SmsVerificationMessage": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolAddOns": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolTags": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "VerificationMessageTemplate": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "UpdateUserPoolResponse": {
+              "documentation": {},
+              "members": {},
+              "type": {}
+            },
+            "UserContextDataType": {
+              "members": {
+                "encodedData": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "UserFilterType": {
+              "max": {},
+              "type": {}
+            },
+            "UserImportInProgressException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "UserImportJobIdType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "UserImportJobNameType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "UserImportJobStatusType": {
+              "enum": {},
+              "type": {}
+            },
+            "UserImportJobType": {
+              "documentation": {},
+              "members": {
+                "CloudWatchLogsRoleArn": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "CompletionDate": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "CompletionMessage": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "CreationDate": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "FailedUsers": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ImportedUsers": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "JobId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "JobName": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "PreSignedUrl": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SkippedUsers": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "StartDate": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Status": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "UserImportJobsListType": {
+              "max": {},
+              "member": {
+                "shape": {}
+              },
+              "min": {},
+              "type": {}
+            },
+            "UserLambdaValidationException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "UserNotConfirmedException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "UserNotFoundException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "UserPoolAddOnNotEnabledException": {
+              "exception": {},
+              "members": {
+                "message": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "UserPoolAddOnsType": {
+              "members": {
+                "AdvancedSecurityMode": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "UserPoolClientDescription": {
+              "documentation": {},
+              "members": {
+                "ClientId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ClientName": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "UserPoolClientListType": {
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "UserPoolClientType": {
+              "documentation": {},
+              "members": {
+                "AllowedOAuthFlows": {
+                  "shape": {}
+                },
+                "AllowedOAuthFlowsUserPoolClient": {
+                  "box": {},
+                  "shape": {}
+                },
+                "AllowedOAuthScopes": {
+                  "shape": {}
+                },
+                "AnalyticsConfiguration": {
+                  "shape": {}
+                },
+                "CallbackURLs": {
+                  "shape": {}
+                },
+                "ClientId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ClientName": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "ClientSecret": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "CreationDate": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "DefaultRedirectURI": {
+                  "shape": {}
+                },
+                "ExplicitAuthFlows": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "LastModifiedDate": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "LogoutURLs": {
+                  "shape": {}
+                },
+                "ReadAttributes": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "RefreshTokenValidity": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SupportedIdentityProviders": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "WriteAttributes": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "UserPoolDescriptionType": {
+              "documentation": {},
+              "members": {
+                "CreationDate": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Id": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "LambdaConfig": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "LastModifiedDate": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Name": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Status": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "UserPoolIdType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "UserPoolListType": {
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "UserPoolMfaType": {
+              "enum": {},
+              "type": {}
+            },
+            "UserPoolNameType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "type": {}
+            },
+            "UserPoolPolicyType": {
+              "documentation": {},
+              "members": {
+                "PasswordPolicy": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "UserPoolTaggingException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "UserPoolTagsType": {
+              "key": {
+                "shape": {}
+              },
+              "type": {},
+              "value": {
+                "shape": {}
+              }
+            },
+            "UserPoolType": {
+              "documentation": {},
+              "members": {
+                "AdminCreateUserConfig": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "AliasAttributes": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "AutoVerifiedAttributes": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "CreationDate": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "DeviceConfiguration": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "EmailConfiguration": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "EmailConfigurationFailure": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "EmailVerificationMessage": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "EmailVerificationSubject": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "EstimatedNumberOfUsers": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Id": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "LambdaConfig": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "LastModifiedDate": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "MfaConfiguration": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Name": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Policies": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SchemaAttributes": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SmsAuthenticationMessage": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SmsConfiguration": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SmsConfigurationFailure": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "SmsVerificationMessage": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Status": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserPoolAddOns": {
+                  "shape": {}
+                },
+                "UserPoolTags": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UsernameAttributes": {
+                  "shape": {}
+                },
+                "VerificationMessageTemplate": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "UserPoolUIConfigurationType": {
+              "members": {
+                "CreationDate": {
+                  "shape": {}
+                },
+                "Details": {
+                  "shape": {}
+                },
+                "LastModifiedDate": {
+                  "shape": {}
+                },
+                "UserPoolId": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "UserPoolUIDetailsType": {
+              "key": {
+                "shape": {}
+              },
+              "type": {},
+              "value": {
+                "shape": {}
+              }
+            },
+            "UserStatusType": {
+              "enum": {},
+              "type": {}
+            },
+            "UserType": {
+              "documentation": {},
+              "members": {
+                "Attributes": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Enabled": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "MFAOptions": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserCreateDate": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserLastModifiedDate": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "UserStatus": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Username": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "UsernameAttributeType": {
+              "enum": {},
+              "type": {}
+            },
+            "UsernameAttributesListType": {
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "UsernameExistsException": {
+              "documentation": {},
+              "exception": {},
+              "members": {
+                "message": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "UsernameType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
+              "sensitive": {},
+              "type": {}
+            },
+            "UsersListType": {
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "VerificationMessageTemplateType": {
+              "members": {
+                "DefaultEmailOption": {
+                  "shape": {}
+                },
+                "EmailMessage": {
+                  "shape": {}
+                },
+                "EmailMessageByLink": {
+                  "shape": {}
+                },
+                "EmailSubject": {
+                  "shape": {}
+                },
+                "EmailSubjectByLink": {
+                  "shape": {}
+                },
+                "SmsMessage": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "VerifiedAttributeType": {
+              "enum": {},
+              "type": {}
+            },
+            "VerifiedAttributesListType": {
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "VerifySoftwareTokenRequest": {
+              "members": {
+                "AccessToken": {
+                  "shape": {}
+                },
+                "FriendlyDeviceName": {
+                  "shape": {}
+                },
+                "Session": {
+                  "shape": {}
+                },
+                "UserCode": {
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "VerifySoftwareTokenResponse": {
+              "members": {
+                "Session": {
+                  "shape": {}
+                },
+                "Status": {
+                  "shape": {}
+                }
+              },
+              "type": {}
+            },
+            "VerifySoftwareTokenResponseType": {
+              "enum": {},
+              "type": {}
+            },
+            "VerifyUserAttributeRequest": {
+              "documentation": {},
+              "members": {
+                "AccessToken": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "AttributeName": {
+                  "documentation": {},
+                  "shape": {}
+                },
+                "Code": {
+                  "documentation": {},
+                  "shape": {}
+                }
+              },
+              "required": {},
+              "type": {}
+            },
+            "VerifyUserAttributeResponse": {
+              "documentation": {},
+              "members": {},
+              "type": {}
+            },
+            "openIdListType": {
+              "member": {
+                "shape": {}
+              },
+              "type": {}
+            },
+            "openIdUrlType": {
+              "max": {},
+              "min": {},
+              "pattern": {},
               "type": {}
             }
           },
@@ -3133,26 +8177,26 @@ var AWSCognito = {
               "input": {
                 "members": {
                   "DurationSeconds": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "type": {}
                   },
                   "ExternalId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "Policy": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "RoleArn": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "RoleSessionName": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "SerialNumber": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "TokenCode": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "required": {},
@@ -3161,15 +8205,15 @@ var AWSCognito = {
               "output": {
                 "members": {
                   "AssumedRoleUser": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "shape": {}
                   },
                   "Credentials": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "shape": {}
                   },
                   "PackedPolicySize": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "type": {}
                   }
                 },
@@ -3181,20 +8225,20 @@ var AWSCognito = {
               "input": {
                 "members": {
                   "DurationSeconds": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "type": {}
                   },
                   "Policy": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "PrincipalArn": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "RoleArn": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "SAMLAssertion": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "required": {},
@@ -3203,31 +8247,31 @@ var AWSCognito = {
               "output": {
                 "members": {
                   "AssumedRoleUser": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "shape": {}
                   },
                   "Audience": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "Credentials": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "shape": {}
                   },
                   "Issuer": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "NameQualifier": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "PackedPolicySize": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "type": {}
                   },
                   "Subject": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "SubjectType": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "resultWrapper": {},
@@ -3238,23 +8282,23 @@ var AWSCognito = {
               "input": {
                 "members": {
                   "DurationSeconds": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "type": {}
                   },
                   "Policy": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "ProviderId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "RoleArn": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "RoleSessionName": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "WebIdentityToken": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "required": {},
@@ -3263,25 +8307,25 @@ var AWSCognito = {
               "output": {
                 "members": {
                   "AssumedRoleUser": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "shape": {}
                   },
                   "Audience": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "Credentials": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "shape": {}
                   },
                   "PackedPolicySize": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "type": {}
                   },
                   "Provider": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "SubjectFromWebIdentityToken": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "resultWrapper": {},
@@ -3292,7 +8336,7 @@ var AWSCognito = {
               "input": {
                 "members": {
                   "EncodedMessage": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "required": {},
@@ -3301,7 +8345,7 @@ var AWSCognito = {
               "output": {
                 "members": {
                   "DecodedMessage": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "resultWrapper": {},
@@ -3316,13 +8360,13 @@ var AWSCognito = {
               "output": {
                 "members": {
                   "Account": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "Arn": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "UserId": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "resultWrapper": {},
@@ -3333,14 +8377,14 @@ var AWSCognito = {
               "input": {
                 "members": {
                   "DurationSeconds": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "type": {}
                   },
                   "Name": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "Policy": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "required": {},
@@ -3349,25 +8393,25 @@ var AWSCognito = {
               "output": {
                 "members": {
                   "Credentials": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "shape": {}
                   },
                   "FederatedUser": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "members": {
                       "Arn": {
-                        "closure_uid_957732505": {}
+                        "closure_uid_599087356": {}
                       },
                       "FederatedUserId": {
-                        "closure_uid_957732505": {}
+                        "closure_uid_599087356": {}
                       },
-                      "closure_uid_957732505": {}
+                      "closure_uid_599087356": {}
                     },
                     "required": {},
                     "type": {}
                   },
                   "PackedPolicySize": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "type": {}
                   }
                 },
@@ -3379,14 +8423,14 @@ var AWSCognito = {
               "input": {
                 "members": {
                   "DurationSeconds": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "type": {}
                   },
                   "SerialNumber": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   },
                   "TokenCode": {
-                    "closure_uid_957732505": {}
+                    "closure_uid_599087356": {}
                   }
                 },
                 "type": {}
@@ -3394,7 +8438,7 @@ var AWSCognito = {
               "output": {
                 "members": {
                   "Credentials": {
-                    "closure_uid_957732505": {},
+                    "closure_uid_599087356": {},
                     "shape": {}
                   }
                 },
@@ -3761,6 +8805,7 @@ AWSCognito.CognitoIdentityServiceProvider.AuthenticationDetails.prototype = {
 };
 AWSCognito.CognitoIdentityServiceProvider.AuthenticationHelper.prototype = {
   "calculateA": function () {},
+  "calculateS": function () {},
   "calculateU": function () {},
   "computehkdf": function () {},
   "generateHashDevice": function () {},
@@ -3778,17 +8823,22 @@ AWSCognito.CognitoIdentityServiceProvider.AuthenticationHelper.prototype = {
   "padHex": function () {}
 };
 AWSCognito.CognitoIdentityServiceProvider.CognitoAccessToken.prototype = {
+  "decodePayload": function () {},
   "getExpiration": function () {},
+  "getIssuedAt": function () {},
   "getJwtToken": function () {}
 };
 AWSCognito.CognitoIdentityServiceProvider.CognitoIdToken.prototype = {
+  "decodePayload": function () {},
   "getExpiration": function () {},
+  "getIssuedAt": function () {},
   "getJwtToken": function () {}
 };
 AWSCognito.CognitoIdentityServiceProvider.CognitoRefreshToken.prototype = {
   "getToken": function () {}
 };
 AWSCognito.CognitoIdentityServiceProvider.CognitoUser.prototype = {
+  "associateSoftwareToken": function () {},
   "authenticateUser": function () {},
   "authenticateUserInternal": function () {},
   "cacheDeviceKeyAndPassword": function () {},
@@ -3816,6 +8866,7 @@ AWSCognito.CognitoIdentityServiceProvider.CognitoUser.prototype = {
   "getSession": function () {},
   "getSignInUserSession": function () {},
   "getUserAttributes": function () {},
+  "getUserContextData": function () {},
   "getUsername": function () {},
   "globalSignOut": function () {},
   "initiateAuth": function () {},
@@ -3824,12 +8875,16 @@ AWSCognito.CognitoIdentityServiceProvider.CognitoUser.prototype = {
   "resendConfirmationCode": function () {},
   "sendCustomChallengeAnswer": function () {},
   "sendMFACode": function () {},
+  "sendMFASelectionAnswer": function () {},
   "setAuthenticationFlowType": function () {},
   "setDeviceStatusNotRemembered": function () {},
   "setDeviceStatusRemembered": function () {},
+  "setSignInUserSession": function () {},
+  "setUserMfaPreference": function () {},
   "signOut": function () {},
   "updateAttributes": function () {},
-  "verifyAttribute": function () {}
+  "verifyAttribute": function () {},
+  "verifySoftwareToken": function () {}
 };
 AWSCognito.CognitoIdentityServiceProvider.CognitoUserAttribute.prototype = {
   "getName": function () {},
@@ -3842,14 +8897,23 @@ AWSCognito.CognitoIdentityServiceProvider.CognitoUserAttribute.prototype = {
 AWSCognito.CognitoIdentityServiceProvider.CognitoUserPool.prototype = {
   "getClientId": function () {},
   "getCurrentUser": function () {},
+  "getUserContextData": function () {},
   "getUserPoolId": function () {},
   "signUp": function () {}
 };
 AWSCognito.CognitoIdentityServiceProvider.CognitoUserSession.prototype = {
+  "calculateClockDrift": function () {},
   "getAccessToken": function () {},
+  "getClockDrift": function () {},
   "getIdToken": function () {},
   "getRefreshToken": function () {},
   "isValid": function () {}
+};
+AWSCognito.CognitoIdentityServiceProvider.CookieStorage.prototype = {
+  "clear": function () {},
+  "getItem": function () {},
+  "removeItem": function () {},
+  "setItem": function () {}
 };
 AWSCognito.CognitoIdentityServiceProvider.DateHelper.prototype = {
   "getNowString": function () {}
