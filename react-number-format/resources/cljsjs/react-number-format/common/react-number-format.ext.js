@@ -4,6 +4,7 @@
  **********************************************************************/
 var NumberFormat = {
   "defaultProps": {
+    "allowEmptyFormatting": {},
     "allowNegative": {},
     "decimalSeparator": {},
     "displayType": {},
@@ -22,6 +23,9 @@ var NumberFormat = {
     "type": {}
   },
   "propTypes": {
+    "allowEmptyFormatting": {
+      "isRequired": function () {}
+    },
     "allowNegative": {
       "isRequired": function () {}
     },
