@@ -1055,6 +1055,9 @@ var antd = {
       "className": {
         "isRequired": function () {}
       },
+      "id": {
+        "isRequired": function () {}
+      },
       "notFoundContent": {
         "isRequired": function () {}
       },
