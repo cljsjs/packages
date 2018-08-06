@@ -21,19 +21,31 @@ var vl = {
     "isCountingAggregateOp": function () {}
   },
   "axis": {
+    "AXIS_PARTS": {},
     "AXIS_PROPERTIES": {},
     "AXIS_PROPERTY_TYPE": {
+      "domain": {},
       "grid": {},
+      "gridScale": {},
+      "labelFlush": {},
       "labelOverlap": {},
+      "labels": {},
+      "maxExtent": {},
+      "minExtent": {},
       "offset": {},
-      "title": {}
+      "scale": {},
+      "ticks": {},
+      "title": {},
+      "values": {},
+      "zindex": {}
     },
     "VG_AXIS_PROPERTIES": {},
     "isAxisProperty": function () {}
   },
   "bin": {
     "autoMaxBins": function () {},
-    "binToString": function () {}
+    "binToString": function () {},
+    "isBinParams": function () {}
   },
   "channel": {
     "CHANNELS": {},
@@ -43,12 +55,19 @@ var vl = {
       "COLOR": {},
       "COLUMN": {},
       "DETAIL": {},
+      "FILL": {},
       "HREF": {},
+      "KEY": {},
+      "LATITUDE": {},
+      "LATITUDE2": {},
+      "LONGITUDE": {},
+      "LONGITUDE2": {},
       "OPACITY": {},
       "ORDER": {},
       "ROW": {},
       "SHAPE": {},
       "SIZE": {},
+      "STROKE": {},
       "TEXT": {},
       "TOOLTIP": {},
       "X": {},
@@ -57,7 +76,20 @@ var vl = {
       "Y2": {}
     },
     "DETAIL": {},
+    "FILL": {},
+    "GEOPOSITION_CHANNELS": {},
+    "GEOPOSITION_CHANNEL_INDEX": {
+      "latitude": {},
+      "latitude2": {},
+      "longitude": {},
+      "longitude2": {}
+    },
     "HREF": {},
+    "KEY": {},
+    "LATITUDE": {},
+    "LATITUDE2": {},
+    "LONGITUDE": {},
+    "LONGITUDE2": {},
     "NONPOSITION_CHANNELS": {},
     "NONPOSITION_SCALE_CHANNELS": {},
     "OPACITY": {},
@@ -68,6 +100,7 @@ var vl = {
     "SHAPE": {},
     "SINGLE_DEF_CHANNELS": {},
     "SIZE": {},
+    "STROKE": {},
     "TEXT": {},
     "TOOLTIP": {},
     "UNIT_CHANNELS": {},
@@ -77,6 +110,7 @@ var vl = {
     "Y2": {},
     "getSupportedMark": function () {},
     "isChannel": function () {},
+    "isColorChannel": function () {},
     "isScaleChannel": function () {},
     "rangeType": function () {},
     "supportMark": function () {}
@@ -186,6 +220,7 @@ var vl = {
       },
       "timeFormat": {},
       "title": {},
+      "trail": {},
       "view": {
         "height": {},
         "width": {}
@@ -249,8 +284,32 @@ var vl = {
     "resetTitleFormatter": function () {},
     "setTitleFormatter": function () {},
     "title": function () {},
+    "toFieldDefBase": function () {},
+    "valueArray": function () {},
+    "valueExpr": function () {},
     "verbalTitleFormatter": function () {},
     "vgField": function () {}
+  },
+  "header": {
+    "HEADER_LABEL_PROPERTIES": {},
+    "HEADER_LABEL_PROPERTIES_MAP": {
+      "labelAngle": {},
+      "labelColor": {},
+      "labelFont": {},
+      "labelFontSize": {},
+      "labelLimit": {}
+    },
+    "HEADER_TITLE_PROPERTIES": {},
+    "HEADER_TITLE_PROPERTIES_MAP": {
+      "titleAnchor": {},
+      "titleAngle": {},
+      "titleBaseline": {},
+      "titleColor": {},
+      "titleFont": {},
+      "titleFontSize": {},
+      "titleFontWeight": {},
+      "titleLimit": {}
+    }
   },
   "legend": {
     "LEGEND_PROPERTIES": {},
@@ -276,7 +335,8 @@ var vl = {
       "RULE": {},
       "SQUARE": {},
       "TEXT": {},
-      "TICK": {}
+      "TICK": {},
+      "TRAIL": {}
     },
     "POINT": {},
     "PRIMITIVE_MARKS": {},
@@ -286,9 +346,12 @@ var vl = {
     "STROKE_CONFIG": {},
     "TEXT": {},
     "TICK": {},
+    "TRAIL": {},
     "VL_ONLY_MARK_CONFIG_PROPERTIES": {},
     "VL_ONLY_MARK_SPECIFIC_CONFIG_PROPERTY_INDEX": {
+      "area": {},
       "bar": {},
+      "line": {},
       "text": {},
       "tick": {}
     },
@@ -304,6 +367,7 @@ var vl = {
     },
     "isMark": function () {},
     "isMarkDef": function () {},
+    "isPathMark": function () {},
     "isPrimitiveMark": function () {}
   },
   "scale": {
@@ -313,6 +377,116 @@ var vl = {
     "NON_TYPE_DOMAIN_RANGE_VEGA_SCALE_PROPERTIES": {},
     "SCALE_PROPERTIES": {},
     "SCALE_TYPES": {},
+    "SCALE_TYPE_INDEX": {
+      "color_geojson": {},
+      "color_geojson_bin": {},
+      "color_latitude": {},
+      "color_latitude_bin": {},
+      "color_longitude": {},
+      "color_longitude_bin": {},
+      "color_nominal": {},
+      "color_nominal_bin": {},
+      "color_ordinal": {},
+      "color_ordinal_bin": {},
+      "color_quantitative": {},
+      "color_quantitative_bin": {},
+      "color_temporal": {},
+      "color_temporal_bin": {},
+      "fill_geojson": {},
+      "fill_geojson_bin": {},
+      "fill_latitude": {},
+      "fill_latitude_bin": {},
+      "fill_longitude": {},
+      "fill_longitude_bin": {},
+      "fill_nominal": {},
+      "fill_nominal_bin": {},
+      "fill_ordinal": {},
+      "fill_ordinal_bin": {},
+      "fill_quantitative": {},
+      "fill_quantitative_bin": {},
+      "fill_temporal": {},
+      "fill_temporal_bin": {},
+      "opacity_geojson": {},
+      "opacity_geojson_bin": {},
+      "opacity_latitude": {},
+      "opacity_latitude_bin": {},
+      "opacity_longitude": {},
+      "opacity_longitude_bin": {},
+      "opacity_nominal": {},
+      "opacity_nominal_bin": {},
+      "opacity_ordinal": {},
+      "opacity_ordinal_bin": {},
+      "opacity_quantitative": {},
+      "opacity_quantitative_bin": {},
+      "opacity_temporal": {},
+      "opacity_temporal_bin": {},
+      "shape_geojson": {},
+      "shape_geojson_bin": {},
+      "shape_latitude": {},
+      "shape_latitude_bin": {},
+      "shape_longitude": {},
+      "shape_longitude_bin": {},
+      "shape_nominal": {},
+      "shape_nominal_bin": {},
+      "shape_ordinal": {},
+      "shape_ordinal_bin": {},
+      "size_geojson": {},
+      "size_geojson_bin": {},
+      "size_latitude": {},
+      "size_latitude_bin": {},
+      "size_longitude": {},
+      "size_longitude_bin": {},
+      "size_nominal": {},
+      "size_nominal_bin": {},
+      "size_ordinal": {},
+      "size_ordinal_bin": {},
+      "size_quantitative": {},
+      "size_quantitative_bin": {},
+      "size_temporal": {},
+      "size_temporal_bin": {},
+      "stroke_geojson": {},
+      "stroke_geojson_bin": {},
+      "stroke_latitude": {},
+      "stroke_latitude_bin": {},
+      "stroke_longitude": {},
+      "stroke_longitude_bin": {},
+      "stroke_nominal": {},
+      "stroke_nominal_bin": {},
+      "stroke_ordinal": {},
+      "stroke_ordinal_bin": {},
+      "stroke_quantitative": {},
+      "stroke_quantitative_bin": {},
+      "stroke_temporal": {},
+      "stroke_temporal_bin": {},
+      "x_geojson": {},
+      "x_geojson_bin": {},
+      "x_latitude": {},
+      "x_latitude_bin": {},
+      "x_longitude": {},
+      "x_longitude_bin": {},
+      "x_nominal": {},
+      "x_nominal_bin": {},
+      "x_ordinal": {},
+      "x_ordinal_bin": {},
+      "x_quantitative": {},
+      "x_quantitative_bin": {},
+      "x_temporal": {},
+      "x_temporal_bin": {},
+      "y_geojson": {},
+      "y_geojson_bin": {},
+      "y_latitude": {},
+      "y_latitude_bin": {},
+      "y_longitude": {},
+      "y_longitude_bin": {},
+      "y_nominal": {},
+      "y_nominal_bin": {},
+      "y_ordinal": {},
+      "y_ordinal_bin": {},
+      "y_quantitative": {},
+      "y_quantitative_bin": {},
+      "y_temporal": {},
+      "y_temporal_bin": {}
+    },
     "ScaleType": {
       "BAND": {},
       "BIN_LINEAR": {},
@@ -348,6 +522,7 @@ var vl = {
       "rangeStep": {},
       "textXRangeStep": {}
     },
+    "getSupportedScaleType": function () {},
     "hasContinuousDomain": function () {},
     "hasDiscreteDomain": function () {},
     "isBinScale": function () {},
@@ -356,9 +531,11 @@ var vl = {
     "isSelectionDomain": function () {},
     "scaleCompatible": function () {},
     "scaleTypePrecedence": function () {},
+    "scaleTypeSupportDataType": function () {},
     "scaleTypeSupportProperty": function () {}
   },
   "sort": {
+    "isSortArray": function () {},
     "isSortField": function () {}
   },
   "spec": {
@@ -446,17 +623,26 @@ var vl = {
     "isCalculate": function () {},
     "isFilter": function () {},
     "isLookup": function () {},
+    "isStack": function () {},
     "isTimeUnit": function () {},
+    "isWindow": function () {},
     "normalizeTransform": function () {}
   },
   "type": {
     "GEOJSON": {},
-    "LATITUDE": {},
-    "LONGITUDE": {},
     "NOMINAL": {},
     "ORDINAL": {},
     "QUANTITATIVE": {},
     "TEMPORAL": {},
+    "TYPE_INDEX": {
+      "geojson": {},
+      "latitude": {},
+      "longitude": {},
+      "nominal": {},
+      "ordinal": {},
+      "quantitative": {},
+      "temporal": {}
+    },
     "Type": {
       "GEOJSON": {},
       "LATITUDE": {},
@@ -470,7 +656,8 @@ var vl = {
     "isType": function () {}
   },
   "util": {
-    "accessPath": function () {},
+    "accessPathDepth": function () {},
+    "accessPathWithDatum": function () {},
     "contains": function () {},
     "deleteNestedProperty": function () {},
     "differ": function () {},
@@ -478,6 +665,7 @@ var vl = {
     "duplicate": function () {},
     "every": function () {},
     "flagKeys": function () {},
+    "flatAccessWithDatum": function () {},
     "flatten": function () {},
     "hasIntersection": function () {},
     "hash": function () {},
@@ -488,6 +676,8 @@ var vl = {
     "mergeDeep": function () {},
     "omit": function () {},
     "pick": function () {},
+    "removePathFromField": function () {},
+    "replacePathInField": function () {},
     "some": function () {},
     "stringify": function () {},
     "titlecase": function () {},
@@ -501,14 +691,17 @@ var vl = {
     "DEFAULT_REQUIRED_CHANNEL_MAP": {
       "area": {},
       "line": {},
-      "text": {}
+      "text": {},
+      "trail": {}
     },
     "DEFAULT_SUPPORTED_CHANNEL_TYPE": {
       "area": {
         "color": {},
         "column": {},
         "detail": {},
+        "fill": {},
         "row": {},
+        "stroke": {},
         "x": {},
         "y": {}
       },
@@ -516,8 +709,10 @@ var vl = {
         "color": {},
         "column": {},
         "detail": {},
+        "fill": {},
         "row": {},
         "size": {},
+        "stroke": {},
         "x": {},
         "y": {}
       },
@@ -525,8 +720,10 @@ var vl = {
         "color": {},
         "column": {},
         "detail": {},
+        "fill": {},
         "row": {},
         "size": {},
+        "stroke": {},
         "x": {},
         "y": {}
       },
@@ -534,14 +731,18 @@ var vl = {
         "color": {},
         "column": {},
         "detail": {},
+        "fill": {},
         "row": {},
-        "shape": {}
+        "shape": {},
+        "stroke": {}
       },
       "line": {
         "color": {},
         "column": {},
         "detail": {},
+        "fill": {},
         "row": {},
+        "stroke": {},
         "x": {},
         "y": {}
       },
@@ -549,9 +750,11 @@ var vl = {
         "color": {},
         "column": {},
         "detail": {},
+        "fill": {},
         "row": {},
         "shape": {},
         "size": {},
+        "stroke": {},
         "x": {},
         "y": {}
       },
@@ -559,23 +762,40 @@ var vl = {
         "color": {},
         "column": {},
         "detail": {},
+        "fill": {},
         "row": {},
         "size": {},
+        "stroke": {},
         "x": {},
         "y": {}
       },
       "text": {
         "color": {},
         "column": {},
+        "fill": {},
         "row": {},
         "size": {},
+        "stroke": {},
         "text": {}
       },
       "tick": {
         "color": {},
         "column": {},
         "detail": {},
+        "fill": {},
         "row": {},
+        "stroke": {},
+        "x": {},
+        "y": {}
+      },
+      "trail": {
+        "color": {},
+        "column": {},
+        "detail": {},
+        "fill": {},
+        "row": {},
+        "size": {},
+        "stroke": {},
         "x": {},
         "y": {}
       }
@@ -586,4 +806,4 @@ var vl = {
 };
 /**********************************************************************
  * End Generated Extern for vl
-/**********************************************************************/
+ **********************************************************************/
