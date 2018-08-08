@@ -19,7 +19,6 @@
 (deftask package []
   (comp
    (download :url (str "https://github.com/CodeSeven/toastr/archive/" +lib-version+ ".zip")
-             :checksum "2B34F3F8D481170EF8CAB45F3A90F1E6"
              :unzip true)
    (sift :move {#"^toastr-([\d\.]*)/toastr.js"            "cljsjs/toastr/development/toastr.inc.js"
                 #"^toastr-([\d\.]*)/build/toastr.css"     "cljsjs/toastr/development/toastr.inc.css"
@@ -29,4 +28,5 @@
    (deps-cljs :name "cljsjs.toastr"
               :requires ["cljsjs.jquery"])
    (pom)
-   (jar)))
+   (jar)
+   (validate-checksums)))
