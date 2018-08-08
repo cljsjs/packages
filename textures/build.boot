@@ -1,11 +1,12 @@
 (set-env!
-  :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.0"  :scope "test"]])
+ :resource-paths #{"resources"}
+ :dependencies '[[cljsjs/boot-cljsjs "0.10.0"  :scope "test"]
+                 [cljsjs/d3 "4.12.0-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "1.0.3")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/textures
@@ -17,14 +18,11 @@
 
 (deftask package []
   (comp
-    #_(download :url "https://github.com/riccardoscalco/textures/archive/master.zip"
-              :checksum "84A1B1D175D8407C7B110DFDD40F537E" ;;sha1
-              :unzip true)
-    (download :url "https://raw.githubusercontent.com/riccardoscalco/textures/master/textures.js"
-              :checksum "880132a6e85afa07a3001350d3b287ef")
-    (sift :move {#"textures.js" "cljsjs/textures/development/textures.inc.js"
-                 #_#"textures.min.js" #_"cljsjs/textures/production/textures.min.inc.js"})
-    (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.textures")
-    (pom)
-    (jar)))
+   (download :url "https://raw.githubusercontent.com/riccardoscalco/textures/83094475a6cc6f58e6d0755cb0e7720f156ec65a/dist/textures.js"
+             :checksum "14ed87ddddfe4f6e56b9f715f8d11ca6")
+   (sift :move {#"textures.js" "cljsjs/textures/development/textures.inc.js"})
+   (sift :include #{#"^cljsjs"})
+   (deps-cljs :name "cljsjs.textures"
+              :requires ["cljsjs.d3"])
+   (pom)
+   (jar)))
