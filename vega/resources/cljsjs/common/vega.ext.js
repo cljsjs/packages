@@ -378,8 +378,7 @@ var vega = {
     "flatten": {
       "Definition": {
         "metadata": {
-          "generates": {},
-          "source": {}
+          "generates": {}
         },
         "params": {},
         "type": {}
@@ -388,8 +387,7 @@ var vega = {
     "fold": {
       "Definition": {
         "metadata": {
-          "generates": {},
-          "source": {}
+          "generates": {}
         },
         "params": {},
         "type": {}
@@ -451,9 +449,7 @@ var vega = {
     "graticule": {
       "Definition": {
         "metadata": {
-          "changes": {},
-          "generates": {},
-          "source": {}
+          "changes": {}
         },
         "params": {},
         "type": {}
@@ -471,8 +467,7 @@ var vega = {
     "impute": {
       "Definition": {
         "metadata": {
-          "changes": {},
-          "generates": {}
+          "changes": {}
         },
         "params": {},
         "type": {}
@@ -513,7 +508,7 @@ var vega = {
     "nest": {
       "Definition": {
         "metadata": {
-          "generates": {},
+          "changes": {},
           "treesource": {}
         },
         "params": {},
@@ -566,8 +561,7 @@ var vega = {
       "Definition": {
         "metadata": {
           "changes": {},
-          "generates": {},
-          "modifies": {}
+          "generates": {}
         },
         "params": {},
         "type": {}
@@ -595,8 +589,7 @@ var vega = {
     "sequence": {
       "Definition": {
         "metadata": {
-          "changes": {},
-          "generates": {}
+          "changes": {}
         },
         "output": {},
         "params": {},
@@ -853,6 +846,7 @@ vega.MultiPulse.prototype = {
   "StopPropagation": function () {},
   "addAll": function () {},
   "changed": function () {},
+  "clone": function () {},
   "constructor": function () {},
   "filter": function () {},
   "fork": function () {},
@@ -893,6 +887,7 @@ vega.Pulse.prototype = {
   "StopPropagation": function () {},
   "addAll": function () {},
   "changed": function () {},
+  "clone": function () {},
   "filter": function () {},
   "fork": function () {},
   "init": function () {},
@@ -1001,6 +996,7 @@ vega.Transform.prototype = {
 vega.View.prototype = {
   "_enqueue": function () {},
   "_getPulse": function () {},
+  "_resetRenderer": function () {},
   "_resizeView": function () {},
   "add": function () {},
   "addEventListener": function () {},
@@ -1030,6 +1026,7 @@ vega.View.prototype = {
   "loader": function () {},
   "logLevel": function () {},
   "on": function () {},
+  "origin": function () {},
   "padding": function () {},
   "preventDefault": function () {},
   "pulse": function () {},
@@ -1053,6 +1050,7 @@ vega.View.prototype = {
   "toCanvas": function () {},
   "toImageURL": function () {},
   "toSVG": function () {},
+  "tooltip": function () {},
   "tooltipHandler": function () {},
   "touch": function () {},
   "update": function () {},
@@ -1938,4 +1936,4 @@ vega.transforms.wordcloud.prototype = {
 };
 /**********************************************************************
  * End Generated Extern for vega
-/**********************************************************************/
+ **********************************************************************/
