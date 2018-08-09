@@ -5,8 +5,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.0.3")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "1.2.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/textures
@@ -18,16 +18,17 @@
 
 (deftask package []
   (comp
-   (download :url "https://raw.githubusercontent.com/riccardoscalco/textures/83094475a6cc6f58e6d0755cb0e7720f156ec65a/dist/textures.js"
-             :checksum "14ed87ddddfe4f6e56b9f715f8d11ca6"
-             :name "textures.inc.js")
-   (sift :move {#"textures\.inc\.js" "cljsjs/textures/development/textures.inc.js"})
-   (download :url "https://raw.githubusercontent.com/riccardoscalco/textures/83094475a6cc6f58e6d0755cb0e7720f156ec65a/dist/textures.js"
-             :checksum "14ed87ddddfe4f6e56b9f715f8d11ca6"
-             :name "textures.min.inc.js")
-   (sift :move {#"textures\.min\.inc\.js" "cljsjs/textures/production/textures.min.inc.js"})
+   (download
+    :url (format "https://github.com/riccardoscalco/textures/archive/v%s.zip" +lib-version+)
+    :unzip true)
+   (sift :move {#"^textures.*/dist/textures\.js" "cljsjs/textures/development/textures.inc.js"})
    (sift :include #{#"^cljsjs"})
+   (minify
+    :in "cljsjs/textures/development/textures.inc.js"
+    :out "cljsjs/textures/production/textures.min.inc.js"
+    :lang :ecmascript5)
    (deps-cljs :name "cljsjs.textures"
               :requires ["cljsjs.d3"])
    (pom)
-   (jar)))
+   (jar)
+   (validate)))
