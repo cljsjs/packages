@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.11.6")
-(def +version+ (str +lib-version+))
+(def +lib-version+ "0.12.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom {:project     'cljsjs/tfjs
