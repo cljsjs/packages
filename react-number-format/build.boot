@@ -36,4 +36,5 @@
     (deps-cljs :name "cljsjs.react-number-format"
                :requires ["cljsjs.react"])
     (pom)
-    (jar)))
+    (jar)
+    (validate)))
