@@ -3,8 +3,6 @@
 [](dependency)
 ```clojure
 [cljsjs/vega-embed "3.16.1-0"] ;; latest release
-[cljsjs/vega "3.3.1-0"] ;; last B4 4.x release
-[cljsjs/vega-lite "2.6.0-0"] ;; last B4 3.x release
 ```
 [](/dependency)
 
@@ -14,8 +12,6 @@ you can require the packaged library like:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.vega)
-  (:require cljsjs.vega-lite)
   (:require cljsjs.vega-embed))
 ```
 
