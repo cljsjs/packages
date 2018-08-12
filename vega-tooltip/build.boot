@@ -28,30 +28,10 @@
     (download
      :url (format "https://unpkg.com/vega-tooltip@%s/vega-tooltip.css" +lib-version+)
      :checksum "CA9DC27595BBADC7048370EE79FABB8D")
-    (sift :move {#".*vega-tooltip\.js$"      "cljsjs/development/vega-tooltip.inc.js"})
-    (sift :move {#".*vega-tooltip\.min\.js$" "cljsjs/production/vega-tooltip.min.inc.js"})
-    (sift :move {#".*vega-tooltip\.css$"     "cljsjs/common/vega-tooltip.css"})
+    (sift :move {#".*vega-tooltip\.js$"      "cljsjs/vega-tooltip/development/vega-tooltip.inc.js"})
+    (sift :move {#".*vega-tooltip\.min\.js$" "cljsjs/vega-tooltip/production/vega-tooltip.min.inc.js"})
+    (sift :move {#".*vega-tooltip\.css$"     "cljsjs/vega-tooltip/common/vega-tooltip.css"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.vega-tooltip"
-               :requires ["cljsjs.vega"])
-    (pom)
-    (jar)))
-
-
-;;; No longer works as IDL for some reason no longer includes builds!!
-#_(deftask package []
-  (task-options! push {:ensure-branch nil})
-  (comp
-    (download
-      :url (str "https://github.com/vega/vega-tooltip/archive/v" +lib-version+ ".zip")
-      :unzip true
-      :checksum "36C689DD687FCDDF642FCABD79C44210")
-    (sift :move {(re-pattern (str "^vega-tooltip-" +lib-version+ "/build/vega-tooltip.js$")) "cljsjs/development/vega-tooltip.inc.js"
-                 (re-pattern (str "^vega-tooltip-" +lib-version+ "/build/vega-tooltip.css$")) "cljsjs/development/vega-tooltip.css"
-                 (re-pattern (str "^vega-tooltip-" +lib-version+ "/build/vega-tooltip.min.js$")) "cljsjs/production/vega-tooltip.min.inc.js"
-                 (re-pattern (str "^vega-tooltip-" +lib-version+ "/build/vega-tooltip.min.css$")) "cljsjs/production/vega-tooltip.min.css"})
-    (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.vega-tooltip"
-               :requires ["cljsjs.vega"])
+    (deps-cljs :name "cljsjs.vega-tooltip" :requires ["cljsjs.vega"])
     (pom)
     (jar)))
