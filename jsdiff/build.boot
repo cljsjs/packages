@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.1.0")
+(def +lib-version+ "3.4.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,9 +18,9 @@
 (deftask package []
   (comp
     (download :url (format "https://raw.githubusercontent.com/components/jsdiff/v%s/diff.js" +lib-version+)
-              :checksum "D247D78CBD18D29EF6FB9A6CAE6526AC")
+              :checksum "290BD227BCC5EFA0E0CF605B03FE4956")
     (download :url (format "https://raw.githubusercontent.com/components/jsdiff/v%s/diff.min.js" +lib-version+)
-              :checksum "4E674BF7B98A5B9FFDF2DEBE44F6D754")
+              :checksum "1C483E3623A7F9D4B9C88E84F8E12B49")
     (sift :move {#"^diff.js$" "cljsjs/development/jsdiff.inc.js"
                  #"^diff.min.js$" "cljsjs/production/jsdiff.min.inc.js"})
     (sift :include #{#"^cljsjs"})
