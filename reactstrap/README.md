@@ -15,6 +15,12 @@ you can require the packaged library like so:
   (:require [cljsjs.reactstrap]))
 ```
 
+The components can be accessed using the `js/Reactstrap` namespace. Reagent example:
+
+```clojure
+[:> js/Reactstrap.Alert {:color "primary"} "Hello from Reactstrap"]
+```
+
 Additionally, this library requires some React Addons. To add React Addons to your project, require
 `cljsjs/react-with-addons`. Also ensure that you have excluded all other versions of React. If you don't
 exclude other versions of React then the Addons will not be included in the build and you will get
