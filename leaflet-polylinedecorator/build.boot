@@ -1,6 +1,7 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]
+                 [cljsjs/leaflet "0.7.7-4"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -21,6 +22,7 @@
              :unzip true)
    (sift :move {#"^Leaflet.PolylineDecorator-[^/]*/dist/leaflet.polylineDecorator.js" "cljsjs/leaflet-polylinedecorator/development/leaflet-polylinedecorator.inc.js"})
    (sift :include #{#"^cljsjs" #"^deps.cljs"})
-   (deps-cljs :name "cljsjs.leaflet-polylinedecorator")
+   (deps-cljs :name "cljsjs.leaflet-polylinedecorator"
+              :requires ["cljsjs.leaflet"])
    (pom)
    (jar)))
