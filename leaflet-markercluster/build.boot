@@ -18,14 +18,10 @@
 
 (deftask package []
   (comp
-   (download :url (format "https://unpkg.com/leaflet.markercluster@%s/dist/leaflet.markercluster-src.js.map" +lib-version+)
-             :target "cljsjs/leaflet-markercluster/development/leaflet-markercluster.inc.js.map")
    (download :url (format "https://unpkg.com/leaflet.markercluster@%s/dist/leaflet.markercluster-src.js" +lib-version+)
              :target "cljsjs/leaflet-markercluster/development/leaflet-markercluster.inc.js")
    (download :url (format "https://unpkg.com/leaflet.markercluster@%s/dist/leaflet.markercluster.js" +lib-version+)
              :target "cljsjs/leaflet-markercluster/production/leaflet-markercluster.min.inc.js")
-   (download :url (format "https://unpkg.com/leaflet.markercluster@%s/dist/leaflet.markercluster.js.map" +lib-version+)
-             :target "cljsjs/leaflet-markercluster/production/leaflet-markercluster.min.inc.js.map")
    (download :url (format "https://unpkg.com/leaflet.markercluster@%s/dist/MarkerCluster.Default.css" +lib-version+)
              :target "cljsjs/leaflet-markercluster/common/leaflet-markercluster.default.inc.css")
    (download :url (format "https://unpkg.com/leaflet.markercluster@%s/dist/MarkerCluster.css" +lib-version+)
