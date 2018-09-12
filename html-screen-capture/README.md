@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/html-screen-capture"1.0.10-1"] ;; latest release
+[cljsjs/html-screen-capture "1.0.10-1"] ;; latest release
 ```
 [](/dependency)
 
