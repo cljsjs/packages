@@ -9,7 +9,7 @@
 
 (task-options!
  pom  {:project     'cljsjs/firebase
-       :version     version
+       :version     +version+
        :description "Firebase Javascript SDK"
        :url         "https://firebase.google.com/docs/"
        :scm         {:url "https://github.com/cljsjs/packages"}
@@ -18,7 +18,7 @@
 
 (deftask package []
   (comp
-   (download :url (str "http://registry.npmjs.org/firebase/-/firebase-" lib-version ".tgz")
+   (download :url (str "http://registry.npmjs.org/firebase/-/firebase-" +lib-version+ ".tgz")
              :decompress true
              :compression-format "gz"
              :archive-format "tar")
