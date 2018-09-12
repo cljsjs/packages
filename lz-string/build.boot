@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "1.4.4")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
   pom {:project 'cljsjs/lz-string
@@ -25,7 +25,7 @@
     (download :url (cdn-ver "lz-string.min.js"))
     (sift :move
           {#"lz-string.js" "cljsjs/lz-string/development/lz-string.inc.js"
-           #"lz-string.js" "cljsjs/lz-string/development/lz-string.min.inc.js"})
+           #"lz-string.min.js" "cljsjs/lz-string/production/lz-string.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.lz-string")
     (pom)
