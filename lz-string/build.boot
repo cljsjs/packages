@@ -25,7 +25,7 @@
     (download :url (cdn-ver "lz-string.min.js"))
     (sift :move
           {#"lz-string.js" "cljsjs/lz-string/development/lz-string.inc.js"
-           #"lz-string.js" "cljsjs/lz-string/production/lz-string.min.inc.js"})
+           #"lz-string.min.js" "cljsjs/lz-string/production/lz-string.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.lz-string")
     (pom)
