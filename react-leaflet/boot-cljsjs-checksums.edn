@@ -1,2 +1,4 @@
-{"cljsjs/react-leaflet/production/react-leaflet.min.inc.js"
- "96B51B1896661CFF7220908E0933FC94"}
+{"cljsjs/react-leaflet/development/react-leaflet.inc.js"
+ "C59BE2FCB8557ABBC48C70FAA8DA4948",
+ "cljsjs/react-leaflet/production/react-leaflet.min.inc.js"
+ "BA70FE4C04B24C7F851658DA29B198B4"}

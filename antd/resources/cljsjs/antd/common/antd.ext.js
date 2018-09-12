@@ -409,6 +409,7 @@ var antd = {
   "Drawer": {
     "defaultProps": {
       "closable": {},
+      "height": {},
       "level": {},
       "maskClosable": {},
       "placement": {},
@@ -557,7 +558,12 @@ var antd = {
       }
     }
   },
-  "Icon": function () {},
+  "Icon": {
+    "createFromIconfontCN": function () {},
+    "displayName": {},
+    "getTwoToneColor": function () {},
+    "setTwoToneColor": function () {}
+  },
   "Input": {
     "Group": function () {},
     "Search": {
@@ -582,9 +588,6 @@ var antd = {
         "isRequired": function () {}
       },
       "addonBefore": {
-        "isRequired": function () {}
-      },
-      "autosize": {
         "isRequired": function () {}
       },
       "className": {
@@ -751,13 +754,18 @@ var antd = {
   "Menu": {
     "Divider": {
       "defaultProps": {
-        "disabled": {}
+        "className": {},
+        "disabled": {},
+        "style": {}
       },
       "propTypes": {
         "className": {
           "isRequired": function () {}
         },
         "rootPrefixCls": {
+          "isRequired": function () {}
+        },
+        "style": {
           "isRequired": function () {}
         }
       }
@@ -901,7 +909,12 @@ var antd = {
           "type": {}
         },
         "ref": {},
-        "type": function () {}
+        "type": {
+          "createFromIconfontCN": function () {},
+          "displayName": {},
+          "getTwoToneColor": function () {},
+          "setTwoToneColor": function () {}
+        }
       },
       "okType": {},
       "placement": {},
@@ -1010,10 +1023,16 @@ var antd = {
         "_store": {},
         "key": {},
         "props": {
+          "theme": {},
           "type": {}
         },
         "ref": {},
-        "type": function () {}
+        "type": {
+          "createFromIconfontCN": function () {},
+          "displayName": {},
+          "getTwoToneColor": function () {},
+          "setTwoToneColor": function () {}
+        }
       },
       "prefixCls": {}
     },
@@ -1103,6 +1122,14 @@ var antd = {
       }
     }
   },
+  "Skeleton": {
+    "defaultProps": {
+      "avatar": {},
+      "paragraph": {},
+      "prefixCls": {},
+      "title": {}
+    }
+  },
   "Slider": {
     "defaultProps": {
       "prefixCls": {},
@@ -1154,6 +1181,9 @@ var antd = {
           "isRequired": function () {}
         },
         "iconPrefix": {
+          "isRequired": function () {}
+        },
+        "icons": {
           "isRequired": function () {}
         },
         "itemWidth": {
@@ -1378,6 +1408,7 @@ var antd = {
     },
     "defaultProps": {
       "dataSource": {},
+      "locale": {},
       "render": function () {},
       "showSearch": {}
     },
@@ -1404,6 +1435,9 @@ var antd = {
         "isRequired": function () {}
       },
       "listStyle": {
+        "isRequired": function () {}
+      },
+      "locale": {
         "isRequired": function () {}
       },
       "notFoundContent": {
@@ -1540,6 +1574,9 @@ var antd = {
         "style": {
           "isRequired": function () {}
         },
+        "switcherIcon": {
+          "isRequired": function () {}
+        },
         "title": {
           "isRequired": function () {}
         }
@@ -1627,6 +1664,9 @@ var antd = {
           "isRequired": function () {}
         },
         "style": {
+          "isRequired": function () {}
+        },
+        "switcherIcon": {
           "isRequired": function () {}
         },
         "title": {
@@ -5886,6 +5926,7 @@ var antd = {
     "error": function () {},
     "info": function () {},
     "loading": function () {},
+    "open": function () {},
     "success": function () {},
     "warn": function () {},
     "warning": function () {}
@@ -5994,6 +6035,8 @@ antd.Checkbox.prototype = {
   "setState": function () {}
 };
 antd.Checkbox.Group.prototype = {
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
@@ -6099,6 +6142,8 @@ antd.Layout.Header.prototype = {
   "setState": function () {}
 };
 antd.Layout.Sider.prototype = {
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
@@ -6167,6 +6212,8 @@ antd.Pagination.prototype = {
   "setState": function () {}
 };
 antd.Popconfirm.prototype = {
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
@@ -6221,6 +6268,11 @@ antd.Select.Option.prototype = {
   "isReactComponent": function () {},
   "setState": function () {}
 };
+antd.Skeleton.prototype = {
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
 antd.Slider.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
@@ -6239,6 +6291,8 @@ antd.Steps.prototype = {
 antd.Steps.Step.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
+  "render": function () {},
+  "renderIconNode": function () {},
   "setState": function () {}
 };
 antd.Switch.prototype = {
@@ -6284,6 +6338,8 @@ antd.Tag.CheckableTag.prototype = {
   "setState": function () {}
 };
 antd.TimePicker.prototype = {
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
@@ -6299,6 +6355,8 @@ antd.Timeline.Item.prototype = {
   "setState": function () {}
 };
 antd.Tooltip.prototype = {
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
@@ -6344,6 +6402,8 @@ antd.TreeSelect.prototype = {
   "setState": function () {}
 };
 antd.Upload.prototype = {
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
