@@ -10,13 +10,13 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "0.12.16")
+(def +lib-version+ "0.12.17")
 (def +version+ (str +lib-version+ "-0"))
 
 ; the main repo is unresponsive; this commit on this repo
 ; represents a branch off the above +lib-version+ with support
 ; for building as UMD.
-(def +commit+ "23cc5b5b564ec7d2a1f7560ac225338267443de0")
+(def +commit+ "6dc158b1084b22950bd51fcb27c0f5e1b4420513")
 (def +repo-owner+ "dhleong")
 
 (task-options!
