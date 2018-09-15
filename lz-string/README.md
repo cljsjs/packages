@@ -6,4 +6,4 @@
 ```
 [](/dependency)
 
-CLJSJS package for [html-screen-capture-js](https://github.com/pieroxy/lz-string). An LZ-based compression algorithm for JavaScript. For more info please visit [lz-string website](http://pieroxy.net/blog/pages/lz-string/index.html)
+CLJSJS package for [lz-string](https://github.com/pieroxy/lz-string). An LZ-based compression algorithm for JavaScript. For more info please visit [lz-string website](http://pieroxy.net/blog/pages/lz-string/index.html)
