@@ -1,8 +1,8 @@
-# cljsjs/html-screen-capture
+# cljsjs/html-screen-capture-js
 
 [](dependency)
 ```clojure
-[cljsjs/html-screen-capture "1.0.10-1"] ;; latest release
+[cljsjs/html-screen-capture-js "1.0.10-1"] ;; latest release
 ```
 [](/dependency)
 
