@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-swipeable-views "0.12.17-0"] ;; latest release
+[cljsjs/react-swipeable-views "0.12.18-0"] ;; latest release
 ```
 [](/dependency)
 
