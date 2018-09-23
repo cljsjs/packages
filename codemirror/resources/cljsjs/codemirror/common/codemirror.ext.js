@@ -36,6 +36,7 @@ var CodeMirror = {
   "isModifierKey": function () {},
   "keyName": function () {},
   "fromTextArea": function () {},
+  "toTextArea": function () {},
   "StringStream": function () {},
   "TextMarker": function () {},
   "SharedTextMarker": function () {},
