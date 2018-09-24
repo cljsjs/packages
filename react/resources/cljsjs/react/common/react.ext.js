@@ -392,6 +392,11 @@ React.ReactAttribute.onClick;
 /**
  * @type {Function}
  */
+React.ReactAttribute.onAuxClick;
+
+/**
+ * @type {Function}
+ */
 React.ReactAttribute.onContextMenu;
 
 /**
