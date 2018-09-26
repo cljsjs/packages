@@ -41,9 +41,9 @@
                                                 "@material-ui/core/styles" MaterialUIStyles
                                                 "@material-ui/core/colors" MaterialUIColors
                                                 ;; old names
-                                                material-ui/styles MaterialUIStyles
-                                                material-ui/colors MaterialUIColors
-                                                material-ui MaterialUI}
+                                                "material-ui/styles" MaterialUIStyles
+                                                "material-ui/colors" MaterialUIColors
+                                                "material-ui" MaterialUI}
                               :requires ["react" "react-dom"]}]
               :externs [#"material-ui.ext.js"])
    (pom)
