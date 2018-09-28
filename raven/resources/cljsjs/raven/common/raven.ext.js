@@ -93,8 +93,7 @@ var Raven = {
     "protocol": {},
     "reload": function () {},
     "replace": function () {},
-    "search": {},
-    "toString": function () {}
+    "search": {}
   },
   "_logDebug": function () {},
   "_makeRequest": function () {},

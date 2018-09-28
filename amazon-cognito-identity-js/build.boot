@@ -1,17 +1,17 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.1" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.21.0")
+(def +lib-version+ "1.31.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom  {:project     'cljsjs/amazon-cognito-identity-js
         :version     +version+
         :description "Amazon Cognito Identity SDK"
-        :url         "https://github.com/aws/amazon-cognito-identity-js"
+        :url         "https://github.com/amazon-archives/amazon-cognito-identity-js"
         :license     {"ASL" "https://aws.amazon.com/asl/"}
         :scm         {:url "https://github.com/cljsjs/packages"}})
 
@@ -23,8 +23,8 @@
 
 (deftask package []
   (comp
-   (download :url (format "https://github.com/aws/amazon-cognito-identity-js/archive/v%s.zip" +lib-version+)
-             :checksum "0D9E39D4FAE2888D96919FA69F9D5CBF"
+   (download :url (format "https://github.com/amazon-archives/amazon-cognito-identity-js/archive/v%s.zip" +lib-version+)
+             :checksum "B7E779E4389D99636BBC6861E75C0BE6"
              :unzip true)
 
    (sift :move {(dist-file "aws-cognito-sdk.js")

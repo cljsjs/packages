@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/jwt-decode "2.1.0-0"] ;; latest release
+[cljsjs/jwt-decode "2.2.0-0"] ;; latest release
 ```
 [](/dependency)
 

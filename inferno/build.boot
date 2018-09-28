@@ -1,9 +1,9 @@
-(def +lib-version+ "3.6.4")
+(def +lib-version+ "5.6.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.1" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -16,16 +16,14 @@
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (def modules
-  {"inferno" "0E54A338B81B9FC71C597F57C2DC8819",
-   "inferno-hyperscript.min" "907D00E92CFDCFCDC76C7A4202328E31",
-   "inferno.min" "A2CD33BA6103A28C10C210AAE449598C",
-   "inferno-create-element" "79802C984554C1C4DC70FBD95EA57691",
-   "inferno-hyperscript" "B96AE123563217B2D3F5D18345B7B71E",
-   "inferno-component" "9125815484D1DEA03873628D6705C4F3",
-   "inferno-create-element.min" "59A995A8C57DDF785B31434C19C22E8B",
-   "inferno-component.min" "D2F40499D612081249BEDB12567675F0",
-   "inferno-create-class.min" "A293EAA615937614CA98EC8DCB80D83C",
-   "inferno-create-class" "4D3ED0D866E77C8E3424708B76E75AA1"})
+  {"inferno" "67D599FB72C96C38B4C03B815F593D53",
+   "inferno.min" "F598B0E9C93D496EE55ACDB6776DA60B",
+   "inferno-hyperscript" "06986B10D261203E95A288EC40762C7D",
+   "inferno-hyperscript.min" "91FDC6BF5FD9603300DC41569BEEB12B",
+   "inferno-create-element" "0EBDD8CF9BAFFF8F521A8850BB68E14F",
+   "inferno-create-element.min" "F08C7A20E8E3A1EEB20A2028E61BE553",
+   "inferno-create-class" "1DEDFA18612B9BB689E90CFB7F4E92A9",
+   "inferno-create-class.min" "5D78D700B34984B24AC4D5DEC07D53B7"})
 
 (defn get-module-url [module]
   (str "https://unpkg.com/"
@@ -43,8 +41,6 @@
     (download-modules)
     (sift :move {#"^inferno\.min\.js$"                "cljsjs/inferno/production/inferno.min.inc.js"
                  #"^inferno\.js$"                     "cljsjs/inferno/development/inferno.inc.js"
-                 #"^inferno-component\.min\.js$"      "cljsjs/inferno/production/inferno-component.min.inc.js"
-                 #"^inferno-component\.js$"           "cljsjs/inferno/development/inferno-component.inc.js"
                  #"^inferno-create-element\.min\.js$" "cljsjs/inferno/production/inferno-create-element.min.inc.js"
                  #"^inferno-create-element\.js$"      "cljsjs/inferno/development/inferno-create-element.inc.js"
                  #"^inferno-create-class\.min\.js$"   "cljsjs/inferno/production/inferno-create-class.min.inc.js"

@@ -152,11 +152,15 @@ var antd = {
     "Group": function () {},
     "__ANT_BUTTON": {},
     "defaultProps": {
+      "block": {},
       "ghost": {},
       "loading": {},
       "prefixCls": {}
     },
     "propTypes": {
+      "block": {
+        "isRequired": function () {}
+      },
       "className": {
         "isRequired": function () {}
       },
@@ -188,6 +192,7 @@ var antd = {
       "fullscreen": {},
       "locale": {},
       "mode": {},
+      "onChange": function () {},
       "onPanelChange": function () {},
       "onSelect": function () {},
       "prefixCls": {}
@@ -212,6 +217,9 @@ var antd = {
         "isRequired": function () {}
       },
       "monthFullCellRender": {
+        "isRequired": function () {}
+      },
+      "onChange": {
         "isRequired": function () {}
       },
       "onPanelChange": {
@@ -401,6 +409,7 @@ var antd = {
   "Drawer": {
     "defaultProps": {
       "closable": {},
+      "height": {},
       "level": {},
       "maskClosable": {},
       "placement": {},
@@ -408,6 +417,9 @@ var antd = {
       "width": {}
     },
     "propTypes": {
+      "className": {
+        "isRequired": function () {}
+      },
       "closable": {
         "isRequired": function () {}
       },
@@ -445,9 +457,6 @@ var antd = {
         "isRequired": function () {}
       },
       "width": {
-        "isRequired": function () {}
-      },
-      "wrapClassName": {
         "isRequired": function () {}
       },
       "zIndex": {
@@ -549,7 +558,12 @@ var antd = {
       }
     }
   },
-  "Icon": function () {},
+  "Icon": {
+    "createFromIconfontCN": function () {},
+    "displayName": {},
+    "getTwoToneColor": function () {},
+    "setTwoToneColor": function () {}
+  },
   "Input": {
     "Group": function () {},
     "Search": {
@@ -574,9 +588,6 @@ var antd = {
         "isRequired": function () {}
       },
       "addonBefore": {
-        "isRequired": function () {}
-      },
-      "autosize": {
         "isRequired": function () {}
       },
       "className": {
@@ -743,13 +754,18 @@ var antd = {
   "Menu": {
     "Divider": {
       "defaultProps": {
-        "disabled": {}
+        "className": {},
+        "disabled": {},
+        "style": {}
       },
       "propTypes": {
         "className": {
           "isRequired": function () {}
         },
         "rootPrefixCls": {
+          "isRequired": function () {}
+        },
+        "style": {
           "isRequired": function () {}
         }
       }
@@ -838,6 +854,9 @@ var antd = {
       "cancelText": {
         "isRequired": function () {}
       },
+      "centered": {
+        "isRequired": function () {}
+      },
       "closable": {
         "isRequired": function () {}
       },
@@ -881,6 +900,22 @@ var antd = {
   },
   "Popconfirm": {
     "defaultProps": {
+      "icon": {
+        "$$typeof": {},
+        "_owner": {},
+        "_store": {},
+        "key": {},
+        "props": {
+          "type": {}
+        },
+        "ref": {},
+        "type": {
+          "createFromIconfontCN": function () {},
+          "displayName": {},
+          "getTwoToneColor": function () {},
+          "setTwoToneColor": function () {}
+        }
+      },
       "okType": {},
       "placement": {},
       "prefixCls": {},
@@ -928,6 +963,9 @@ var antd = {
         "isRequired": function () {}
       },
       "strokeColor": {
+        "isRequired": function () {}
+      },
+      "strokeLinecap": {
         "isRequired": function () {}
       },
       "strokeWidth": {
@@ -985,10 +1023,16 @@ var antd = {
         "_store": {},
         "key": {},
         "props": {
+          "theme": {},
           "type": {}
         },
         "ref": {},
-        "type": function () {}
+        "type": {
+          "createFromIconfontCN": function () {},
+          "displayName": {},
+          "getTwoToneColor": function () {},
+          "setTwoToneColor": function () {}
+        }
       },
       "prefixCls": {}
     },
@@ -1078,6 +1122,14 @@ var antd = {
       }
     }
   },
+  "Skeleton": {
+    "defaultProps": {
+      "avatar": {},
+      "paragraph": {},
+      "prefixCls": {},
+      "title": {}
+    }
+  },
   "Slider": {
     "defaultProps": {
       "prefixCls": {},
@@ -1129,6 +1181,9 @@ var antd = {
           "isRequired": function () {}
         },
         "iconPrefix": {
+          "isRequired": function () {}
+        },
+        "icons": {
           "isRequired": function () {}
         },
         "itemWidth": {
@@ -1255,12 +1310,11 @@ var antd = {
       "defaultProps": {
         "placeholder": {}
       },
-      "displayName": {},
-      "getDefaultProps": {
-        "isReactClassApproved": {}
-      },
       "propTypes": {
         "active": {
+          "isRequired": function () {}
+        },
+        "children": {
           "isRequired": function () {}
         },
         "className": {
@@ -1273,6 +1327,9 @@ var antd = {
           "isRequired": function () {}
         },
         "placeholder": {
+          "isRequired": function () {}
+        },
+        "rootPrefixCls": {
           "isRequired": function () {}
         },
         "style": {
@@ -1317,6 +1374,7 @@ var antd = {
       }
     },
     "defaultProps": {
+      "mode": {},
       "prefixCls": {},
       "reverse": {}
     }
@@ -1350,6 +1408,7 @@ var antd = {
     },
     "defaultProps": {
       "dataSource": {},
+      "locale": {},
       "render": function () {},
       "showSearch": {}
     },
@@ -1376,6 +1435,9 @@ var antd = {
         "isRequired": function () {}
       },
       "listStyle": {
+        "isRequired": function () {}
+      },
+      "locale": {
         "isRequired": function () {}
       },
       "notFoundContent": {
@@ -1512,6 +1574,9 @@ var antd = {
         "style": {
           "isRequired": function () {}
         },
+        "switcherIcon": {
+          "isRequired": function () {}
+        },
         "title": {
           "isRequired": function () {}
         }
@@ -1520,7 +1585,7 @@ var antd = {
     "defaultProps": {
       "checkable": {},
       "openAnimation": {
-        "appear": function () {},
+        "appear": {},
         "enter": function () {},
         "leave": function () {}
       },
@@ -1599,6 +1664,9 @@ var antd = {
           "isRequired": function () {}
         },
         "style": {
+          "isRequired": function () {}
+        },
+        "switcherIcon": {
           "isRequired": function () {}
         },
         "title": {
@@ -5858,6 +5926,7 @@ var antd = {
     "error": function () {},
     "info": function () {},
     "loading": function () {},
+    "open": function () {},
     "success": function () {},
     "warn": function () {},
     "warning": function () {}
@@ -5966,6 +6035,8 @@ antd.Checkbox.prototype = {
   "setState": function () {}
 };
 antd.Checkbox.Group.prototype = {
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
@@ -6071,6 +6142,8 @@ antd.Layout.Header.prototype = {
   "setState": function () {}
 };
 antd.Layout.Sider.prototype = {
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
@@ -6139,6 +6212,8 @@ antd.Pagination.prototype = {
   "setState": function () {}
 };
 antd.Popconfirm.prototype = {
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
@@ -6193,6 +6268,11 @@ antd.Select.Option.prototype = {
   "isReactComponent": function () {},
   "setState": function () {}
 };
+antd.Skeleton.prototype = {
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
 antd.Slider.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
@@ -6211,6 +6291,8 @@ antd.Steps.prototype = {
 antd.Steps.Step.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
+  "render": function () {},
+  "renderIconNode": function () {},
   "setState": function () {}
 };
 antd.Switch.prototype = {
@@ -6239,33 +6321,9 @@ antd.Tabs.prototype = {
   "setState": function () {}
 };
 antd.Tabs.TabPane.prototype = {
-  "UNSAFE_componentWillMount": function () {},
-  "UNSAFE_componentWillReceiveProps": function () {},
-  "UNSAFE_componentWillUpdate": function () {},
-  "__reactAutoBindPairs": function () {},
-  "childContextTypes": function () {},
-  "componentDidMount": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "componentWillUnmount": function () {},
-  "componentWillUpdate": function () {},
-  "constructor": function () {},
-  "contextTypes": function () {},
   "forceUpdate": function () {},
-  "getChildContext": function () {},
-  "getDefaultProps": function () {},
-  "getInitialState": function () {},
-  "isMounted": function () {},
   "isReactComponent": function () {},
-  "mixins": function () {},
-  "propTypes": function () {},
-  "render": function () {},
-  "replaceState": function () {},
-  "setState": function () {},
-  "shouldComponentUpdate": function () {},
-  "statics": function () {},
-  "updateComponent": function () {}
+  "setState": function () {}
 };
 antd.Tag.prototype = {
   "componentWillMount": function () {},
@@ -6280,6 +6338,8 @@ antd.Tag.CheckableTag.prototype = {
   "setState": function () {}
 };
 antd.TimePicker.prototype = {
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
@@ -6295,6 +6355,8 @@ antd.Timeline.Item.prototype = {
   "setState": function () {}
 };
 antd.Tooltip.prototype = {
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
@@ -6330,13 +6392,8 @@ antd.Tree.DirectoryTree.prototype = {
   "setState": function () {}
 };
 antd.Tree.TreeNode.prototype = {
-  "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
-  "getChildContext": function () {},
   "isReactComponent": function () {},
-  "isSelectable": function () {},
-  "render": function () {},
   "setState": function () {}
 };
 antd.TreeSelect.prototype = {
@@ -6345,6 +6402,8 @@ antd.TreeSelect.prototype = {
   "setState": function () {}
 };
 antd.Upload.prototype = {
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}

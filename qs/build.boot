@@ -1,12 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.0"  :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.1"  :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[clojure.java.io :as io])
 
-(def +lib-version+ "6.4.0")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "6.5.2")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/qs

@@ -25,15 +25,18 @@ var tf = {
   "ENV": {
     "engine": {
       "activeScope": {
-        "keep": {},
         "track": {}
       },
       "addTapeNode": function () {},
       "backend": {
+        "NUM_BYTES_BEFORE_PAGING": {},
         "abs": function () {},
         "acos": function () {},
         "acosh": function () {},
+        "acquireTexture": function () {},
         "add": function () {},
+        "all": function () {},
+        "any": function () {},
         "argMax": function () {},
         "argMin": function () {},
         "argReduce": function () {},
@@ -52,6 +55,7 @@ var tf = {
         "ceil": function () {},
         "clip": function () {},
         "compileAndRun": function () {},
+        "computeBytes": function () {},
         "concat": function () {},
         "conv2d": function () {},
         "conv2dDerFilter": function () {},
@@ -61,10 +65,11 @@ var tf = {
         "cumsum": function () {},
         "delayedStorage": {},
         "depthwiseConv2D": function () {},
+        "depthwiseConv2DDerFilter": function () {},
+        "depthwiseConv2DDerInput": function () {},
         "dispose": function () {},
         "disposeData": function () {},
         "disposed": {},
-        "divide": function () {},
         "downloadWaitMs": {},
         "elu": function () {},
         "eluDer": function () {},
@@ -74,6 +79,7 @@ var tf = {
         "exp": function () {},
         "expm1": function () {},
         "floor": function () {},
+        "floorDiv": function () {},
         "fromPixels": function () {},
         "gather": function () {},
         "getAndSaveBinary": function () {},
@@ -81,28 +87,30 @@ var tf = {
         "getGPGPUContext": function () {},
         "getQueryTime": function () {},
         "getTexture": function () {},
-        "getTextureData": function () {},
         "getTextureManager": function () {},
         "gpgpu": {
+          "addItemToPoll": function () {},
           "autoDebugValidate": {},
           "beginQuery": function () {},
           "blockUntilAllProgramsCompleted": function () {},
           "colorBufferFloatExtension": {},
-          "createMatrixTexture": function () {},
+          "createFloat16MatrixTexture": function () {},
+          "createFloat32MatrixTexture": function () {},
           "createPackedMatrixTexture": function () {},
           "createProgram": function () {},
+          "createUnsignedBytesMatrixTexture": function () {},
           "debugValidate": function () {},
           "deleteMatrixTexture": function () {},
           "deleteProgram": function () {},
           "dispose": function () {},
           "disposed": {},
+          "downloadByteEncodedFloatMatrixFromOutputTexture": function () {},
+          "downloadFloat32MatrixFromOutputTexture": function () {},
           "downloadMatrixDriver": function () {},
           "downloadMatrixDriverAsync": function () {},
           "downloadMatrixDriverSetup": function () {},
           "downloadMatrixDriverTeardown": function () {},
           "downloadMatrixFromPackedTexture": function () {},
-          "downloadMatrixFromRGBAColorTexture": function () {},
-          "downloadMatrixFromTexture": function () {},
           "downloadMatrixFromTextureAsync": function () {},
           "enableAutomaticDebugValidation": function () {},
           "endQuery": function () {},
@@ -905,11 +913,13 @@ var tf = {
           },
           "indexBuffer": {},
           "isQueryAvailable": function () {},
+          "itemsToPoll": {},
           "loseContextExtension": {
             "loseContext": function () {},
             "restoreContext": function () {}
           },
           "outputTexture": {},
+          "pollItems": function () {},
           "pollQueryTime": function () {},
           "program": {},
           "runQuery": function () {},
@@ -921,6 +931,16 @@ var tf = {
           "setOutputPackedMatrixTexture": function () {},
           "setOutputPackedMatrixWriteRegion": function () {},
           "setProgram": function () {},
+          "textureConfig": {
+            "defaultNumChannels": {},
+            "downloadTextureFormat": {},
+            "downloadUnpackNumChannels": {},
+            "internalFormatFloat": {},
+            "internalFormatHalfFloat": {},
+            "internalFormatPackedFloat": {},
+            "textureFormatFloat": {},
+            "textureTypeHalfFloat": {}
+          },
           "throwIfDisposed": function () {},
           "throwIfNoProgram": function () {},
           "uploadMatrixToPackedTexture": function () {},
@@ -941,6 +961,7 @@ var tf = {
         "logicalAnd": function () {},
         "logicalNot": function () {},
         "logicalOr": function () {},
+        "lruDataGPU": {},
         "makeOutputArray": function () {},
         "matMul": function () {},
         "max": function () {},
@@ -955,22 +976,29 @@ var tf = {
         "multiply": function () {},
         "neg": function () {},
         "notEqual": function () {},
+        "numBytesInGPU": {},
         "oneHot": function () {},
         "pad": function () {},
+        "pendingDisposal": {},
+        "pendingRead": {},
         "pow": function () {},
         "read": function () {},
         "readSync": function () {},
+        "realDivide": function () {},
         "reciprocal": function () {},
         "reduce": function () {},
         "register": function () {},
+        "releaseTexture": function () {},
         "relu": function () {},
         "reshape": function () {},
         "resizeBilinear": function () {},
         "resizeBilinearBackprop": function () {},
         "resizeNearestNeighbor": function () {},
+        "resizeNearestNeighborBackprop": function () {},
         "reverse": function () {},
         "round": function () {},
         "rsqrt": function () {},
+        "segOpCompute": function () {},
         "selu": function () {},
         "sigmoid": function () {},
         "sign": function () {},
@@ -991,31 +1019,33 @@ var tf = {
         "texData": {},
         "textureManager": {
           "acquireTexture": function () {},
-          "allocatedTextures": {},
           "dispose": function () {},
           "freeTextures": {},
           "getNumFreeTextures": function () {},
           "getNumUsedTextures": function () {},
           "gpgpu": {
+            "addItemToPoll": function () {},
             "autoDebugValidate": {},
             "beginQuery": function () {},
             "blockUntilAllProgramsCompleted": function () {},
             "colorBufferFloatExtension": {},
-            "createMatrixTexture": function () {},
+            "createFloat16MatrixTexture": function () {},
+            "createFloat32MatrixTexture": function () {},
             "createPackedMatrixTexture": function () {},
             "createProgram": function () {},
+            "createUnsignedBytesMatrixTexture": function () {},
             "debugValidate": function () {},
             "deleteMatrixTexture": function () {},
             "deleteProgram": function () {},
             "dispose": function () {},
             "disposed": {},
+            "downloadByteEncodedFloatMatrixFromOutputTexture": function () {},
+            "downloadFloat32MatrixFromOutputTexture": function () {},
             "downloadMatrixDriver": function () {},
             "downloadMatrixDriverAsync": function () {},
             "downloadMatrixDriverSetup": function () {},
             "downloadMatrixDriverTeardown": function () {},
             "downloadMatrixFromPackedTexture": function () {},
-            "downloadMatrixFromRGBAColorTexture": function () {},
-            "downloadMatrixFromTexture": function () {},
             "downloadMatrixFromTextureAsync": function () {},
             "enableAutomaticDebugValidation": function () {},
             "endQuery": function () {},
@@ -1818,11 +1848,13 @@ var tf = {
             },
             "indexBuffer": {},
             "isQueryAvailable": function () {},
+            "itemsToPoll": {},
             "loseContextExtension": {
               "loseContext": function () {},
               "restoreContext": function () {}
             },
             "outputTexture": {},
+            "pollItems": function () {},
             "pollQueryTime": function () {},
             "program": {},
             "runQuery": function () {},
@@ -1834,6 +1866,16 @@ var tf = {
             "setOutputPackedMatrixTexture": function () {},
             "setOutputPackedMatrixWriteRegion": function () {},
             "setProgram": function () {},
+            "textureConfig": {
+              "defaultNumChannels": {},
+              "downloadTextureFormat": {},
+              "downloadUnpackNumChannels": {},
+              "internalFormatFloat": {},
+              "internalFormatHalfFloat": {},
+              "internalFormatPackedFloat": {},
+              "textureFormatFloat": {},
+              "textureTypeHalfFloat": {}
+            },
             "throwIfDisposed": function () {},
             "throwIfNoProgram": function () {},
             "uploadMatrixToPackedTexture": function () {},
@@ -1847,7 +1889,7 @@ var tf = {
           "numFreeTextures": {},
           "numUsedTextures": {},
           "releaseTexture": function () {},
-          "usedTextureCount": {}
+          "usedTextures": {}
         },
         "throwIfNoData": function () {},
         "tile": function () {},
@@ -1855,6 +1897,7 @@ var tf = {
         "topKIndices": function () {},
         "topKValues": function () {},
         "transpose": function () {},
+        "unsortedSegmentSum": function () {},
         "uploadToGPU": function () {},
         "uploadWaitMs": {},
         "where": function () {},
@@ -1862,7 +1905,7 @@ var tf = {
       },
       "customGrad": function () {},
       "customGradientDepth": {},
-      "dispose": function () {},
+      "debugMode": {},
       "disposeTensor": function () {},
       "disposeVariables": function () {},
       "endScope": function () {},
@@ -1870,6 +1913,7 @@ var tf = {
       "gradientScopeCount": {},
       "gradients": function () {},
       "keep": function () {},
+      "keepTensors": {},
       "memory": function () {},
       "nextTapeNodeId": {},
       "numBytes": {},
@@ -1877,10 +1921,14 @@ var tf = {
       "numTensors": {},
       "profiler": {
         "backendTimer": {
+          "NUM_BYTES_BEFORE_PAGING": {},
           "abs": function () {},
           "acos": function () {},
           "acosh": function () {},
+          "acquireTexture": function () {},
           "add": function () {},
+          "all": function () {},
+          "any": function () {},
           "argMax": function () {},
           "argMin": function () {},
           "argReduce": function () {},
@@ -1899,6 +1947,7 @@ var tf = {
           "ceil": function () {},
           "clip": function () {},
           "compileAndRun": function () {},
+          "computeBytes": function () {},
           "concat": function () {},
           "conv2d": function () {},
           "conv2dDerFilter": function () {},
@@ -1908,10 +1957,11 @@ var tf = {
           "cumsum": function () {},
           "delayedStorage": {},
           "depthwiseConv2D": function () {},
+          "depthwiseConv2DDerFilter": function () {},
+          "depthwiseConv2DDerInput": function () {},
           "dispose": function () {},
           "disposeData": function () {},
           "disposed": {},
-          "divide": function () {},
           "downloadWaitMs": {},
           "elu": function () {},
           "eluDer": function () {},
@@ -1921,6 +1971,7 @@ var tf = {
           "exp": function () {},
           "expm1": function () {},
           "floor": function () {},
+          "floorDiv": function () {},
           "fromPixels": function () {},
           "gather": function () {},
           "getAndSaveBinary": function () {},
@@ -1928,28 +1979,30 @@ var tf = {
           "getGPGPUContext": function () {},
           "getQueryTime": function () {},
           "getTexture": function () {},
-          "getTextureData": function () {},
           "getTextureManager": function () {},
           "gpgpu": {
+            "addItemToPoll": function () {},
             "autoDebugValidate": {},
             "beginQuery": function () {},
             "blockUntilAllProgramsCompleted": function () {},
             "colorBufferFloatExtension": {},
-            "createMatrixTexture": function () {},
+            "createFloat16MatrixTexture": function () {},
+            "createFloat32MatrixTexture": function () {},
             "createPackedMatrixTexture": function () {},
             "createProgram": function () {},
+            "createUnsignedBytesMatrixTexture": function () {},
             "debugValidate": function () {},
             "deleteMatrixTexture": function () {},
             "deleteProgram": function () {},
             "dispose": function () {},
             "disposed": {},
+            "downloadByteEncodedFloatMatrixFromOutputTexture": function () {},
+            "downloadFloat32MatrixFromOutputTexture": function () {},
             "downloadMatrixDriver": function () {},
             "downloadMatrixDriverAsync": function () {},
             "downloadMatrixDriverSetup": function () {},
             "downloadMatrixDriverTeardown": function () {},
             "downloadMatrixFromPackedTexture": function () {},
-            "downloadMatrixFromRGBAColorTexture": function () {},
-            "downloadMatrixFromTexture": function () {},
             "downloadMatrixFromTextureAsync": function () {},
             "enableAutomaticDebugValidation": function () {},
             "endQuery": function () {},
@@ -2752,11 +2805,13 @@ var tf = {
             },
             "indexBuffer": {},
             "isQueryAvailable": function () {},
+            "itemsToPoll": {},
             "loseContextExtension": {
               "loseContext": function () {},
               "restoreContext": function () {}
             },
             "outputTexture": {},
+            "pollItems": function () {},
             "pollQueryTime": function () {},
             "program": {},
             "runQuery": function () {},
@@ -2768,6 +2823,16 @@ var tf = {
             "setOutputPackedMatrixTexture": function () {},
             "setOutputPackedMatrixWriteRegion": function () {},
             "setProgram": function () {},
+            "textureConfig": {
+              "defaultNumChannels": {},
+              "downloadTextureFormat": {},
+              "downloadUnpackNumChannels": {},
+              "internalFormatFloat": {},
+              "internalFormatHalfFloat": {},
+              "internalFormatPackedFloat": {},
+              "textureFormatFloat": {},
+              "textureTypeHalfFloat": {}
+            },
             "throwIfDisposed": function () {},
             "throwIfNoProgram": function () {},
             "uploadMatrixToPackedTexture": function () {},
@@ -2788,6 +2853,7 @@ var tf = {
           "logicalAnd": function () {},
           "logicalNot": function () {},
           "logicalOr": function () {},
+          "lruDataGPU": {},
           "makeOutputArray": function () {},
           "matMul": function () {},
           "max": function () {},
@@ -2802,22 +2868,29 @@ var tf = {
           "multiply": function () {},
           "neg": function () {},
           "notEqual": function () {},
+          "numBytesInGPU": {},
           "oneHot": function () {},
           "pad": function () {},
+          "pendingDisposal": {},
+          "pendingRead": {},
           "pow": function () {},
           "read": function () {},
           "readSync": function () {},
+          "realDivide": function () {},
           "reciprocal": function () {},
           "reduce": function () {},
           "register": function () {},
+          "releaseTexture": function () {},
           "relu": function () {},
           "reshape": function () {},
           "resizeBilinear": function () {},
           "resizeBilinearBackprop": function () {},
           "resizeNearestNeighbor": function () {},
+          "resizeNearestNeighborBackprop": function () {},
           "reverse": function () {},
           "round": function () {},
           "rsqrt": function () {},
+          "segOpCompute": function () {},
           "selu": function () {},
           "sigmoid": function () {},
           "sign": function () {},
@@ -2838,31 +2911,33 @@ var tf = {
           "texData": {},
           "textureManager": {
             "acquireTexture": function () {},
-            "allocatedTextures": {},
             "dispose": function () {},
             "freeTextures": {},
             "getNumFreeTextures": function () {},
             "getNumUsedTextures": function () {},
             "gpgpu": {
+              "addItemToPoll": function () {},
               "autoDebugValidate": {},
               "beginQuery": function () {},
               "blockUntilAllProgramsCompleted": function () {},
               "colorBufferFloatExtension": {},
-              "createMatrixTexture": function () {},
+              "createFloat16MatrixTexture": function () {},
+              "createFloat32MatrixTexture": function () {},
               "createPackedMatrixTexture": function () {},
               "createProgram": function () {},
+              "createUnsignedBytesMatrixTexture": function () {},
               "debugValidate": function () {},
               "deleteMatrixTexture": function () {},
               "deleteProgram": function () {},
               "dispose": function () {},
               "disposed": {},
+              "downloadByteEncodedFloatMatrixFromOutputTexture": function () {},
+              "downloadFloat32MatrixFromOutputTexture": function () {},
               "downloadMatrixDriver": function () {},
               "downloadMatrixDriverAsync": function () {},
               "downloadMatrixDriverSetup": function () {},
               "downloadMatrixDriverTeardown": function () {},
               "downloadMatrixFromPackedTexture": function () {},
-              "downloadMatrixFromRGBAColorTexture": function () {},
-              "downloadMatrixFromTexture": function () {},
               "downloadMatrixFromTextureAsync": function () {},
               "enableAutomaticDebugValidation": function () {},
               "endQuery": function () {},
@@ -3665,11 +3740,13 @@ var tf = {
               },
               "indexBuffer": {},
               "isQueryAvailable": function () {},
+              "itemsToPoll": {},
               "loseContextExtension": {
                 "loseContext": function () {},
                 "restoreContext": function () {}
               },
               "outputTexture": {},
+              "pollItems": function () {},
               "pollQueryTime": function () {},
               "program": {},
               "runQuery": function () {},
@@ -3681,6 +3758,16 @@ var tf = {
               "setOutputPackedMatrixTexture": function () {},
               "setOutputPackedMatrixWriteRegion": function () {},
               "setProgram": function () {},
+              "textureConfig": {
+                "defaultNumChannels": {},
+                "downloadTextureFormat": {},
+                "downloadUnpackNumChannels": {},
+                "internalFormatFloat": {},
+                "internalFormatHalfFloat": {},
+                "internalFormatPackedFloat": {},
+                "textureFormatFloat": {},
+                "textureTypeHalfFloat": {}
+              },
               "throwIfDisposed": function () {},
               "throwIfNoProgram": function () {},
               "uploadMatrixToPackedTexture": function () {},
@@ -3694,7 +3781,7 @@ var tf = {
             "numFreeTextures": {},
             "numUsedTextures": {},
             "releaseTexture": function () {},
-            "usedTextureCount": {}
+            "usedTextures": {}
           },
           "throwIfNoData": function () {},
           "tile": function () {},
@@ -3702,6 +3789,7 @@ var tf = {
           "topKIndices": function () {},
           "topKValues": function () {},
           "transpose": function () {},
+          "unsortedSegmentSum": function () {},
           "uploadToGPU": function () {},
           "uploadWaitMs": {},
           "where": function () {},
@@ -3723,6 +3811,7 @@ var tf = {
       "scopeStack": {},
       "shouldRecord": function () {},
       "startScope": function () {},
+      "tidy": function () {},
       "time": function () {},
       "track": function () {},
       "write": function () {}
@@ -3738,6 +3827,7 @@ var tf = {
     "findBackend": function () {},
     "get": function () {},
     "getBestBackendType": function () {},
+    "getFeatures": function () {},
     "initBackend": function () {},
     "initDefaultBackend": function () {},
     "registerBackend": function () {},
@@ -3748,6 +3838,8 @@ var tf = {
           "acos": function () {},
           "acosh": function () {},
           "add": function () {},
+          "all": function () {},
+          "any": function () {},
           "argMax": function () {},
           "argMin": function () {},
           "asin": function () {},
@@ -3772,16 +3864,19 @@ var tf = {
           "cumsum": function () {},
           "data": {},
           "depthwiseConv2D": function () {},
+          "depthwiseConv2DDerFilter": function () {},
+          "depthwiseConv2DDerInput": function () {},
           "dispose": function () {},
           "disposeData": function () {},
-          "divide": function () {},
           "elu": function () {},
           "eluDer": function () {},
           "equal": function () {},
           "erf": function () {},
           "exp": function () {},
           "expm1": function () {},
+          "firstUse": {},
           "floor": function () {},
+          "floorDiv": function () {},
           "fromPixels": function () {},
           "gather": function () {},
           "greater": function () {},
@@ -3815,6 +3910,7 @@ var tf = {
           "pow": function () {},
           "read": function () {},
           "readSync": function () {},
+          "realDivide": function () {},
           "reciprocal": function () {},
           "register": function () {},
           "relu": function () {},
@@ -3822,6 +3918,7 @@ var tf = {
           "resizeBilinear": function () {},
           "resizeBilinearBackprop": function () {},
           "resizeNearestNeighbor": function () {},
+          "resizeNearestNeighborBackprop": function () {},
           "reverse": function () {},
           "round": function () {},
           "rsqrt": function () {},
@@ -3848,6 +3945,7 @@ var tf = {
           "topKIndices": function () {},
           "topKValues": function () {},
           "transpose": function () {},
+          "unsortedSegmentSum": function () {},
           "where": function () {},
           "write": function () {}
         },
@@ -3855,10 +3953,14 @@ var tf = {
       },
       "webgl": {
         "backend": {
+          "NUM_BYTES_BEFORE_PAGING": {},
           "abs": function () {},
           "acos": function () {},
           "acosh": function () {},
+          "acquireTexture": function () {},
           "add": function () {},
+          "all": function () {},
+          "any": function () {},
           "argMax": function () {},
           "argMin": function () {},
           "argReduce": function () {},
@@ -3877,6 +3979,7 @@ var tf = {
           "ceil": function () {},
           "clip": function () {},
           "compileAndRun": function () {},
+          "computeBytes": function () {},
           "concat": function () {},
           "conv2d": function () {},
           "conv2dDerFilter": function () {},
@@ -3886,10 +3989,11 @@ var tf = {
           "cumsum": function () {},
           "delayedStorage": {},
           "depthwiseConv2D": function () {},
+          "depthwiseConv2DDerFilter": function () {},
+          "depthwiseConv2DDerInput": function () {},
           "dispose": function () {},
           "disposeData": function () {},
           "disposed": {},
-          "divide": function () {},
           "downloadWaitMs": {},
           "elu": function () {},
           "eluDer": function () {},
@@ -3899,6 +4003,7 @@ var tf = {
           "exp": function () {},
           "expm1": function () {},
           "floor": function () {},
+          "floorDiv": function () {},
           "fromPixels": function () {},
           "gather": function () {},
           "getAndSaveBinary": function () {},
@@ -3906,28 +4011,30 @@ var tf = {
           "getGPGPUContext": function () {},
           "getQueryTime": function () {},
           "getTexture": function () {},
-          "getTextureData": function () {},
           "getTextureManager": function () {},
           "gpgpu": {
+            "addItemToPoll": function () {},
             "autoDebugValidate": {},
             "beginQuery": function () {},
             "blockUntilAllProgramsCompleted": function () {},
             "colorBufferFloatExtension": {},
-            "createMatrixTexture": function () {},
+            "createFloat16MatrixTexture": function () {},
+            "createFloat32MatrixTexture": function () {},
             "createPackedMatrixTexture": function () {},
             "createProgram": function () {},
+            "createUnsignedBytesMatrixTexture": function () {},
             "debugValidate": function () {},
             "deleteMatrixTexture": function () {},
             "deleteProgram": function () {},
             "dispose": function () {},
             "disposed": {},
+            "downloadByteEncodedFloatMatrixFromOutputTexture": function () {},
+            "downloadFloat32MatrixFromOutputTexture": function () {},
             "downloadMatrixDriver": function () {},
             "downloadMatrixDriverAsync": function () {},
             "downloadMatrixDriverSetup": function () {},
             "downloadMatrixDriverTeardown": function () {},
             "downloadMatrixFromPackedTexture": function () {},
-            "downloadMatrixFromRGBAColorTexture": function () {},
-            "downloadMatrixFromTexture": function () {},
             "downloadMatrixFromTextureAsync": function () {},
             "enableAutomaticDebugValidation": function () {},
             "endQuery": function () {},
@@ -4730,11 +4837,13 @@ var tf = {
             },
             "indexBuffer": {},
             "isQueryAvailable": function () {},
+            "itemsToPoll": {},
             "loseContextExtension": {
               "loseContext": function () {},
               "restoreContext": function () {}
             },
             "outputTexture": {},
+            "pollItems": function () {},
             "pollQueryTime": function () {},
             "program": {},
             "runQuery": function () {},
@@ -4746,6 +4855,16 @@ var tf = {
             "setOutputPackedMatrixTexture": function () {},
             "setOutputPackedMatrixWriteRegion": function () {},
             "setProgram": function () {},
+            "textureConfig": {
+              "defaultNumChannels": {},
+              "downloadTextureFormat": {},
+              "downloadUnpackNumChannels": {},
+              "internalFormatFloat": {},
+              "internalFormatHalfFloat": {},
+              "internalFormatPackedFloat": {},
+              "textureFormatFloat": {},
+              "textureTypeHalfFloat": {}
+            },
             "throwIfDisposed": function () {},
             "throwIfNoProgram": function () {},
             "uploadMatrixToPackedTexture": function () {},
@@ -4766,6 +4885,7 @@ var tf = {
           "logicalAnd": function () {},
           "logicalNot": function () {},
           "logicalOr": function () {},
+          "lruDataGPU": {},
           "makeOutputArray": function () {},
           "matMul": function () {},
           "max": function () {},
@@ -4780,22 +4900,29 @@ var tf = {
           "multiply": function () {},
           "neg": function () {},
           "notEqual": function () {},
+          "numBytesInGPU": {},
           "oneHot": function () {},
           "pad": function () {},
+          "pendingDisposal": {},
+          "pendingRead": {},
           "pow": function () {},
           "read": function () {},
           "readSync": function () {},
+          "realDivide": function () {},
           "reciprocal": function () {},
           "reduce": function () {},
           "register": function () {},
+          "releaseTexture": function () {},
           "relu": function () {},
           "reshape": function () {},
           "resizeBilinear": function () {},
           "resizeBilinearBackprop": function () {},
           "resizeNearestNeighbor": function () {},
+          "resizeNearestNeighborBackprop": function () {},
           "reverse": function () {},
           "round": function () {},
           "rsqrt": function () {},
+          "segOpCompute": function () {},
           "selu": function () {},
           "sigmoid": function () {},
           "sign": function () {},
@@ -4816,31 +4943,33 @@ var tf = {
           "texData": {},
           "textureManager": {
             "acquireTexture": function () {},
-            "allocatedTextures": {},
             "dispose": function () {},
             "freeTextures": {},
             "getNumFreeTextures": function () {},
             "getNumUsedTextures": function () {},
             "gpgpu": {
+              "addItemToPoll": function () {},
               "autoDebugValidate": {},
               "beginQuery": function () {},
               "blockUntilAllProgramsCompleted": function () {},
               "colorBufferFloatExtension": {},
-              "createMatrixTexture": function () {},
+              "createFloat16MatrixTexture": function () {},
+              "createFloat32MatrixTexture": function () {},
               "createPackedMatrixTexture": function () {},
               "createProgram": function () {},
+              "createUnsignedBytesMatrixTexture": function () {},
               "debugValidate": function () {},
               "deleteMatrixTexture": function () {},
               "deleteProgram": function () {},
               "dispose": function () {},
               "disposed": {},
+              "downloadByteEncodedFloatMatrixFromOutputTexture": function () {},
+              "downloadFloat32MatrixFromOutputTexture": function () {},
               "downloadMatrixDriver": function () {},
               "downloadMatrixDriverAsync": function () {},
               "downloadMatrixDriverSetup": function () {},
               "downloadMatrixDriverTeardown": function () {},
               "downloadMatrixFromPackedTexture": function () {},
-              "downloadMatrixFromRGBAColorTexture": function () {},
-              "downloadMatrixFromTexture": function () {},
               "downloadMatrixFromTextureAsync": function () {},
               "enableAutomaticDebugValidation": function () {},
               "endQuery": function () {},
@@ -5643,11 +5772,13 @@ var tf = {
               },
               "indexBuffer": {},
               "isQueryAvailable": function () {},
+              "itemsToPoll": {},
               "loseContextExtension": {
                 "loseContext": function () {},
                 "restoreContext": function () {}
               },
               "outputTexture": {},
+              "pollItems": function () {},
               "pollQueryTime": function () {},
               "program": {},
               "runQuery": function () {},
@@ -5659,6 +5790,16 @@ var tf = {
               "setOutputPackedMatrixTexture": function () {},
               "setOutputPackedMatrixWriteRegion": function () {},
               "setProgram": function () {},
+              "textureConfig": {
+                "defaultNumChannels": {},
+                "downloadTextureFormat": {},
+                "downloadUnpackNumChannels": {},
+                "internalFormatFloat": {},
+                "internalFormatHalfFloat": {},
+                "internalFormatPackedFloat": {},
+                "textureFormatFloat": {},
+                "textureTypeHalfFloat": {}
+              },
               "throwIfDisposed": function () {},
               "throwIfNoProgram": function () {},
               "uploadMatrixToPackedTexture": function () {},
@@ -5672,7 +5813,7 @@ var tf = {
             "numFreeTextures": {},
             "numUsedTextures": {},
             "releaseTexture": function () {},
-            "usedTextureCount": {}
+            "usedTextures": {}
           },
           "throwIfNoData": function () {},
           "tile": function () {},
@@ -5680,6 +5821,7 @@ var tf = {
           "topKIndices": function () {},
           "topKValues": function () {},
           "transpose": function () {},
+          "unsortedSegmentSum": function () {},
           "uploadToGPU": function () {},
           "uploadWaitMs": {},
           "where": function () {},
@@ -5694,10 +5836,14 @@ var tf = {
     "setFeatures": function () {}
   },
   "Environment": {
+    "dispose": function () {},
     "disposeVariables": function () {},
     "getBackend": function () {},
+    "keep": function () {},
     "memory": function () {},
-    "setBackend": function () {}
+    "setBackend": function () {},
+    "tidy": function () {},
+    "time": function () {}
   },
   "FrozenModel": function () {},
   "Model": {
@@ -5726,7 +5872,9 @@ var tf = {
     "R1": {},
     "R2": {},
     "R3": {},
-    "R4": {}
+    "R4": {},
+    "R5": {},
+    "R6": {}
   },
   "Reduction": {
     "0": {},
@@ -5764,6 +5912,8 @@ var tf = {
   "acosh": function () {},
   "add": function () {},
   "addStrict": function () {},
+  "all": function () {},
+  "any": function () {},
   "argMax": function () {},
   "argMin": function () {},
   "asin": function () {},
@@ -5806,21 +5956,25 @@ var tf = {
   "div": function () {},
   "divStrict": function () {},
   "doc": function () {},
+  "dot": function () {},
   "elu": function () {},
   "environment": {
     "ENV": {
       "currentBackend": {},
       "engine": {
         "activeScope": {
-          "keep": {},
           "track": {}
         },
         "addTapeNode": function () {},
         "backend": {
+          "NUM_BYTES_BEFORE_PAGING": {},
           "abs": function () {},
           "acos": function () {},
           "acosh": function () {},
+          "acquireTexture": function () {},
           "add": function () {},
+          "all": function () {},
+          "any": function () {},
           "argMax": function () {},
           "argMin": function () {},
           "argReduce": function () {},
@@ -5839,6 +5993,7 @@ var tf = {
           "ceil": function () {},
           "clip": function () {},
           "compileAndRun": function () {},
+          "computeBytes": function () {},
           "concat": function () {},
           "conv2d": function () {},
           "conv2dDerFilter": function () {},
@@ -5848,10 +6003,11 @@ var tf = {
           "cumsum": function () {},
           "delayedStorage": {},
           "depthwiseConv2D": function () {},
+          "depthwiseConv2DDerFilter": function () {},
+          "depthwiseConv2DDerInput": function () {},
           "dispose": function () {},
           "disposeData": function () {},
           "disposed": {},
-          "divide": function () {},
           "downloadWaitMs": {},
           "elu": function () {},
           "eluDer": function () {},
@@ -5861,6 +6017,7 @@ var tf = {
           "exp": function () {},
           "expm1": function () {},
           "floor": function () {},
+          "floorDiv": function () {},
           "fromPixels": function () {},
           "gather": function () {},
           "getAndSaveBinary": function () {},
@@ -5868,28 +6025,30 @@ var tf = {
           "getGPGPUContext": function () {},
           "getQueryTime": function () {},
           "getTexture": function () {},
-          "getTextureData": function () {},
           "getTextureManager": function () {},
           "gpgpu": {
+            "addItemToPoll": function () {},
             "autoDebugValidate": {},
             "beginQuery": function () {},
             "blockUntilAllProgramsCompleted": function () {},
             "colorBufferFloatExtension": {},
-            "createMatrixTexture": function () {},
+            "createFloat16MatrixTexture": function () {},
+            "createFloat32MatrixTexture": function () {},
             "createPackedMatrixTexture": function () {},
             "createProgram": function () {},
+            "createUnsignedBytesMatrixTexture": function () {},
             "debugValidate": function () {},
             "deleteMatrixTexture": function () {},
             "deleteProgram": function () {},
             "dispose": function () {},
             "disposed": {},
+            "downloadByteEncodedFloatMatrixFromOutputTexture": function () {},
+            "downloadFloat32MatrixFromOutputTexture": function () {},
             "downloadMatrixDriver": function () {},
             "downloadMatrixDriverAsync": function () {},
             "downloadMatrixDriverSetup": function () {},
             "downloadMatrixDriverTeardown": function () {},
             "downloadMatrixFromPackedTexture": function () {},
-            "downloadMatrixFromRGBAColorTexture": function () {},
-            "downloadMatrixFromTexture": function () {},
             "downloadMatrixFromTextureAsync": function () {},
             "enableAutomaticDebugValidation": function () {},
             "endQuery": function () {},
@@ -6692,11 +6851,13 @@ var tf = {
             },
             "indexBuffer": {},
             "isQueryAvailable": function () {},
+            "itemsToPoll": {},
             "loseContextExtension": {
               "loseContext": function () {},
               "restoreContext": function () {}
             },
             "outputTexture": {},
+            "pollItems": function () {},
             "pollQueryTime": function () {},
             "program": {},
             "runQuery": function () {},
@@ -6708,6 +6869,16 @@ var tf = {
             "setOutputPackedMatrixTexture": function () {},
             "setOutputPackedMatrixWriteRegion": function () {},
             "setProgram": function () {},
+            "textureConfig": {
+              "defaultNumChannels": {},
+              "downloadTextureFormat": {},
+              "downloadUnpackNumChannels": {},
+              "internalFormatFloat": {},
+              "internalFormatHalfFloat": {},
+              "internalFormatPackedFloat": {},
+              "textureFormatFloat": {},
+              "textureTypeHalfFloat": {}
+            },
             "throwIfDisposed": function () {},
             "throwIfNoProgram": function () {},
             "uploadMatrixToPackedTexture": function () {},
@@ -6728,6 +6899,7 @@ var tf = {
           "logicalAnd": function () {},
           "logicalNot": function () {},
           "logicalOr": function () {},
+          "lruDataGPU": {},
           "makeOutputArray": function () {},
           "matMul": function () {},
           "max": function () {},
@@ -6742,22 +6914,29 @@ var tf = {
           "multiply": function () {},
           "neg": function () {},
           "notEqual": function () {},
+          "numBytesInGPU": {},
           "oneHot": function () {},
           "pad": function () {},
+          "pendingDisposal": {},
+          "pendingRead": {},
           "pow": function () {},
           "read": function () {},
           "readSync": function () {},
+          "realDivide": function () {},
           "reciprocal": function () {},
           "reduce": function () {},
           "register": function () {},
+          "releaseTexture": function () {},
           "relu": function () {},
           "reshape": function () {},
           "resizeBilinear": function () {},
           "resizeBilinearBackprop": function () {},
           "resizeNearestNeighbor": function () {},
+          "resizeNearestNeighborBackprop": function () {},
           "reverse": function () {},
           "round": function () {},
           "rsqrt": function () {},
+          "segOpCompute": function () {},
           "selu": function () {},
           "sigmoid": function () {},
           "sign": function () {},
@@ -6778,31 +6957,33 @@ var tf = {
           "texData": {},
           "textureManager": {
             "acquireTexture": function () {},
-            "allocatedTextures": {},
             "dispose": function () {},
             "freeTextures": {},
             "getNumFreeTextures": function () {},
             "getNumUsedTextures": function () {},
             "gpgpu": {
+              "addItemToPoll": function () {},
               "autoDebugValidate": {},
               "beginQuery": function () {},
               "blockUntilAllProgramsCompleted": function () {},
               "colorBufferFloatExtension": {},
-              "createMatrixTexture": function () {},
+              "createFloat16MatrixTexture": function () {},
+              "createFloat32MatrixTexture": function () {},
               "createPackedMatrixTexture": function () {},
               "createProgram": function () {},
+              "createUnsignedBytesMatrixTexture": function () {},
               "debugValidate": function () {},
               "deleteMatrixTexture": function () {},
               "deleteProgram": function () {},
               "dispose": function () {},
               "disposed": {},
+              "downloadByteEncodedFloatMatrixFromOutputTexture": function () {},
+              "downloadFloat32MatrixFromOutputTexture": function () {},
               "downloadMatrixDriver": function () {},
               "downloadMatrixDriverAsync": function () {},
               "downloadMatrixDriverSetup": function () {},
               "downloadMatrixDriverTeardown": function () {},
               "downloadMatrixFromPackedTexture": function () {},
-              "downloadMatrixFromRGBAColorTexture": function () {},
-              "downloadMatrixFromTexture": function () {},
               "downloadMatrixFromTextureAsync": function () {},
               "enableAutomaticDebugValidation": function () {},
               "endQuery": function () {},
@@ -7605,11 +7786,13 @@ var tf = {
               },
               "indexBuffer": {},
               "isQueryAvailable": function () {},
+              "itemsToPoll": {},
               "loseContextExtension": {
                 "loseContext": function () {},
                 "restoreContext": function () {}
               },
               "outputTexture": {},
+              "pollItems": function () {},
               "pollQueryTime": function () {},
               "program": {},
               "runQuery": function () {},
@@ -7621,6 +7804,16 @@ var tf = {
               "setOutputPackedMatrixTexture": function () {},
               "setOutputPackedMatrixWriteRegion": function () {},
               "setProgram": function () {},
+              "textureConfig": {
+                "defaultNumChannels": {},
+                "downloadTextureFormat": {},
+                "downloadUnpackNumChannels": {},
+                "internalFormatFloat": {},
+                "internalFormatHalfFloat": {},
+                "internalFormatPackedFloat": {},
+                "textureFormatFloat": {},
+                "textureTypeHalfFloat": {}
+              },
               "throwIfDisposed": function () {},
               "throwIfNoProgram": function () {},
               "uploadMatrixToPackedTexture": function () {},
@@ -7634,7 +7827,7 @@ var tf = {
             "numFreeTextures": {},
             "numUsedTextures": {},
             "releaseTexture": function () {},
-            "usedTextureCount": {}
+            "usedTextures": {}
           },
           "throwIfNoData": function () {},
           "tile": function () {},
@@ -7642,6 +7835,7 @@ var tf = {
           "topKIndices": function () {},
           "topKValues": function () {},
           "transpose": function () {},
+          "unsortedSegmentSum": function () {},
           "uploadToGPU": function () {},
           "uploadWaitMs": {},
           "where": function () {},
@@ -7649,7 +7843,7 @@ var tf = {
         },
         "customGrad": function () {},
         "customGradientDepth": {},
-        "dispose": function () {},
+        "debugMode": {},
         "disposeTensor": function () {},
         "disposeVariables": function () {},
         "endScope": function () {},
@@ -7657,6 +7851,7 @@ var tf = {
         "gradientScopeCount": {},
         "gradients": function () {},
         "keep": function () {},
+        "keepTensors": {},
         "memory": function () {},
         "nextTapeNodeId": {},
         "numBytes": {},
@@ -7664,10 +7859,14 @@ var tf = {
         "numTensors": {},
         "profiler": {
           "backendTimer": {
+            "NUM_BYTES_BEFORE_PAGING": {},
             "abs": function () {},
             "acos": function () {},
             "acosh": function () {},
+            "acquireTexture": function () {},
             "add": function () {},
+            "all": function () {},
+            "any": function () {},
             "argMax": function () {},
             "argMin": function () {},
             "argReduce": function () {},
@@ -7686,6 +7885,7 @@ var tf = {
             "ceil": function () {},
             "clip": function () {},
             "compileAndRun": function () {},
+            "computeBytes": function () {},
             "concat": function () {},
             "conv2d": function () {},
             "conv2dDerFilter": function () {},
@@ -7695,10 +7895,11 @@ var tf = {
             "cumsum": function () {},
             "delayedStorage": {},
             "depthwiseConv2D": function () {},
+            "depthwiseConv2DDerFilter": function () {},
+            "depthwiseConv2DDerInput": function () {},
             "dispose": function () {},
             "disposeData": function () {},
             "disposed": {},
-            "divide": function () {},
             "downloadWaitMs": {},
             "elu": function () {},
             "eluDer": function () {},
@@ -7708,6 +7909,7 @@ var tf = {
             "exp": function () {},
             "expm1": function () {},
             "floor": function () {},
+            "floorDiv": function () {},
             "fromPixels": function () {},
             "gather": function () {},
             "getAndSaveBinary": function () {},
@@ -7715,28 +7917,30 @@ var tf = {
             "getGPGPUContext": function () {},
             "getQueryTime": function () {},
             "getTexture": function () {},
-            "getTextureData": function () {},
             "getTextureManager": function () {},
             "gpgpu": {
+              "addItemToPoll": function () {},
               "autoDebugValidate": {},
               "beginQuery": function () {},
               "blockUntilAllProgramsCompleted": function () {},
               "colorBufferFloatExtension": {},
-              "createMatrixTexture": function () {},
+              "createFloat16MatrixTexture": function () {},
+              "createFloat32MatrixTexture": function () {},
               "createPackedMatrixTexture": function () {},
               "createProgram": function () {},
+              "createUnsignedBytesMatrixTexture": function () {},
               "debugValidate": function () {},
               "deleteMatrixTexture": function () {},
               "deleteProgram": function () {},
               "dispose": function () {},
               "disposed": {},
+              "downloadByteEncodedFloatMatrixFromOutputTexture": function () {},
+              "downloadFloat32MatrixFromOutputTexture": function () {},
               "downloadMatrixDriver": function () {},
               "downloadMatrixDriverAsync": function () {},
               "downloadMatrixDriverSetup": function () {},
               "downloadMatrixDriverTeardown": function () {},
               "downloadMatrixFromPackedTexture": function () {},
-              "downloadMatrixFromRGBAColorTexture": function () {},
-              "downloadMatrixFromTexture": function () {},
               "downloadMatrixFromTextureAsync": function () {},
               "enableAutomaticDebugValidation": function () {},
               "endQuery": function () {},
@@ -8539,11 +8743,13 @@ var tf = {
               },
               "indexBuffer": {},
               "isQueryAvailable": function () {},
+              "itemsToPoll": {},
               "loseContextExtension": {
                 "loseContext": function () {},
                 "restoreContext": function () {}
               },
               "outputTexture": {},
+              "pollItems": function () {},
               "pollQueryTime": function () {},
               "program": {},
               "runQuery": function () {},
@@ -8555,6 +8761,16 @@ var tf = {
               "setOutputPackedMatrixTexture": function () {},
               "setOutputPackedMatrixWriteRegion": function () {},
               "setProgram": function () {},
+              "textureConfig": {
+                "defaultNumChannels": {},
+                "downloadTextureFormat": {},
+                "downloadUnpackNumChannels": {},
+                "internalFormatFloat": {},
+                "internalFormatHalfFloat": {},
+                "internalFormatPackedFloat": {},
+                "textureFormatFloat": {},
+                "textureTypeHalfFloat": {}
+              },
               "throwIfDisposed": function () {},
               "throwIfNoProgram": function () {},
               "uploadMatrixToPackedTexture": function () {},
@@ -8575,6 +8791,7 @@ var tf = {
             "logicalAnd": function () {},
             "logicalNot": function () {},
             "logicalOr": function () {},
+            "lruDataGPU": {},
             "makeOutputArray": function () {},
             "matMul": function () {},
             "max": function () {},
@@ -8589,22 +8806,29 @@ var tf = {
             "multiply": function () {},
             "neg": function () {},
             "notEqual": function () {},
+            "numBytesInGPU": {},
             "oneHot": function () {},
             "pad": function () {},
+            "pendingDisposal": {},
+            "pendingRead": {},
             "pow": function () {},
             "read": function () {},
             "readSync": function () {},
+            "realDivide": function () {},
             "reciprocal": function () {},
             "reduce": function () {},
             "register": function () {},
+            "releaseTexture": function () {},
             "relu": function () {},
             "reshape": function () {},
             "resizeBilinear": function () {},
             "resizeBilinearBackprop": function () {},
             "resizeNearestNeighbor": function () {},
+            "resizeNearestNeighborBackprop": function () {},
             "reverse": function () {},
             "round": function () {},
             "rsqrt": function () {},
+            "segOpCompute": function () {},
             "selu": function () {},
             "sigmoid": function () {},
             "sign": function () {},
@@ -8625,31 +8849,33 @@ var tf = {
             "texData": {},
             "textureManager": {
               "acquireTexture": function () {},
-              "allocatedTextures": {},
               "dispose": function () {},
               "freeTextures": {},
               "getNumFreeTextures": function () {},
               "getNumUsedTextures": function () {},
               "gpgpu": {
+                "addItemToPoll": function () {},
                 "autoDebugValidate": {},
                 "beginQuery": function () {},
                 "blockUntilAllProgramsCompleted": function () {},
                 "colorBufferFloatExtension": {},
-                "createMatrixTexture": function () {},
+                "createFloat16MatrixTexture": function () {},
+                "createFloat32MatrixTexture": function () {},
                 "createPackedMatrixTexture": function () {},
                 "createProgram": function () {},
+                "createUnsignedBytesMatrixTexture": function () {},
                 "debugValidate": function () {},
                 "deleteMatrixTexture": function () {},
                 "deleteProgram": function () {},
                 "dispose": function () {},
                 "disposed": {},
+                "downloadByteEncodedFloatMatrixFromOutputTexture": function () {},
+                "downloadFloat32MatrixFromOutputTexture": function () {},
                 "downloadMatrixDriver": function () {},
                 "downloadMatrixDriverAsync": function () {},
                 "downloadMatrixDriverSetup": function () {},
                 "downloadMatrixDriverTeardown": function () {},
                 "downloadMatrixFromPackedTexture": function () {},
-                "downloadMatrixFromRGBAColorTexture": function () {},
-                "downloadMatrixFromTexture": function () {},
                 "downloadMatrixFromTextureAsync": function () {},
                 "enableAutomaticDebugValidation": function () {},
                 "endQuery": function () {},
@@ -9223,692 +9449,694 @@ var tf = {
                   "WAIT_FAILED": {},
                   "ZERO": {},
                   "activeTexture": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "attachShader": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "beginQuery": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "beginTransformFeedback": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindAttribLocation": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindBuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindBufferBase": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindBufferRange": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindFramebuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindRenderbuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindSampler": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindTexture": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindTransformFeedback": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindVertexArray": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "blendColor": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "blendEquation": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "blendEquationSeparate": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "blendFunc": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "blendFuncSeparate": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "blitFramebuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bufferData": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bufferSubData": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "canvas": {},
                   "checkFramebufferStatus": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clear": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clearBufferfi": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clearBufferfv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clearBufferiv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clearBufferuiv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clearColor": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clearDepth": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clearStencil": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clientWaitSync": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "colorMask": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "compileShader": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "compressedTexImage2D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "compressedTexImage3D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "compressedTexSubImage2D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "compressedTexSubImage3D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "copyBufferSubData": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "copyTexImage2D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "copyTexSubImage2D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "copyTexSubImage3D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createBuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createFramebuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createProgram": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createQuery": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createRenderbuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createSampler": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createShader": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createTexture": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createTransformFeedback": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createVertexArray": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "cullFace": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteBuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteFramebuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteProgram": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteQuery": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteRenderbuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteSampler": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteShader": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteSync": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteTexture": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteTransformFeedback": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteVertexArray": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "depthFunc": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "depthMask": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "depthRange": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "detachShader": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "disable": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "disableVertexAttribArray": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "drawArrays": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "drawArraysInstanced": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "drawBuffers": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "drawElements": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "drawElementsInstanced": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "drawRangeElements": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "drawingBufferHeight": {},
                   "drawingBufferWidth": {},
                   "enable": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "enableVertexAttribArray": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "endQuery": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "endTransformFeedback": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "fenceSync": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "finish": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "flush": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "framebufferRenderbuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "framebufferTexture2D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "framebufferTextureLayer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "frontFace": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "generateMipmap": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getActiveAttrib": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getActiveUniform": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getActiveUniformBlockName": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getActiveUniformBlockParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getActiveUniforms": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getAttachedShaders": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getAttribLocation": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getBufferParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getBufferSubData": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getContextAttributes": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getError": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getExtension": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getFragDataLocation": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getFramebufferAttachmentParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getIndexedParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getInternalformatParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getProgramInfoLog": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getProgramParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getQuery": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getQueryParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getRenderbufferParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getSamplerParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getShaderInfoLog": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getShaderParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getShaderPrecisionFormat": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getShaderSource": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getSupportedExtensions": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getSyncParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getTexParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getTransformFeedbackVarying": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getUniform": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getUniformBlockIndex": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getUniformIndices": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getUniformLocation": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getVertexAttrib": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getVertexAttribOffset": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "hint": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "invalidateFramebuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "invalidateSubFramebuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isBuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isContextLost": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isEnabled": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isFramebuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isProgram": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isQuery": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isRenderbuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isSampler": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isShader": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isSync": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isTexture": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isTransformFeedback": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isVertexArray": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "lineWidth": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "linkProgram": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "pauseTransformFeedback": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "pixelStorei": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "polygonOffset": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "readBuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "readPixels": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "renderbufferStorage": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "renderbufferStorageMultisample": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "resumeTransformFeedback": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "sampleCoverage": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "samplerParameterf": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "samplerParameteri": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "scissor": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "shaderSource": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "stencilFunc": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "stencilFuncSeparate": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "stencilMask": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "stencilMaskSeparate": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "stencilOp": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "stencilOpSeparate": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "texImage2D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "texImage3D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "texParameterf": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "texParameteri": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "texStorage2D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "texStorage3D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "texSubImage2D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "texSubImage3D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "transformFeedbackVaryings": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform1f": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform1fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform1i": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform1iv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform1ui": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform1uiv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform2f": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform2fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform2i": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform2iv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform2ui": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform2uiv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform3f": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform3fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform3i": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform3iv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform3ui": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform3uiv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform4f": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform4fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform4i": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform4iv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform4ui": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform4uiv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformBlockBinding": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix2fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix2x3fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix2x4fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix3fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix3x2fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix3x4fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix4fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix4x2fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix4x3fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "useProgram": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "validateProgram": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttrib1f": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttrib1fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttrib2f": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttrib2fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttrib3f": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttrib3fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttrib4f": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttrib4fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttribDivisor": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttribI4i": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttribI4iv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttribI4ui": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttribI4uiv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttribIPointer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttribPointer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "viewport": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "waitSync": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   }
                 },
                 "indexBuffer": {},
                 "isQueryAvailable": function () {},
+                "itemsToPoll": {},
                 "loseContextExtension": {
                   "loseContext": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "restoreContext": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   }
                 },
                 "outputTexture": {},
+                "pollItems": function () {},
                 "pollQueryTime": function () {},
                 "program": {},
                 "runQuery": function () {},
@@ -9920,6 +10148,16 @@ var tf = {
                 "setOutputPackedMatrixTexture": function () {},
                 "setOutputPackedMatrixWriteRegion": function () {},
                 "setProgram": function () {},
+                "textureConfig": {
+                  "defaultNumChannels": {},
+                  "downloadTextureFormat": {},
+                  "downloadUnpackNumChannels": {},
+                  "internalFormatFloat": {},
+                  "internalFormatHalfFloat": {},
+                  "internalFormatPackedFloat": {},
+                  "textureFormatFloat": {},
+                  "textureTypeHalfFloat": {}
+                },
                 "throwIfDisposed": function () {},
                 "throwIfNoProgram": function () {},
                 "uploadMatrixToPackedTexture": function () {},
@@ -9933,7 +10171,7 @@ var tf = {
               "numFreeTextures": {},
               "numUsedTextures": {},
               "releaseTexture": function () {},
-              "usedTextureCount": {}
+              "usedTextures": {}
             },
             "throwIfNoData": function () {},
             "tile": function () {},
@@ -9941,6 +10179,7 @@ var tf = {
             "topKIndices": function () {},
             "topKValues": function () {},
             "transpose": function () {},
+            "unsortedSegmentSum": function () {},
             "uploadToGPU": function () {},
             "uploadWaitMs": {},
             "where": function () {},
@@ -9962,6 +10201,7 @@ var tf = {
         "scopeStack": {},
         "shouldRecord": function () {},
         "startScope": function () {},
+        "tidy": function () {},
         "time": function () {},
         "track": function () {},
         "write": function () {}
@@ -9977,17 +10217,21 @@ var tf = {
       "findBackend": function () {},
       "get": function () {},
       "getBestBackendType": function () {},
+      "getFeatures": function () {},
       "globalEngine": {
         "activeScope": {
-          "keep": {},
           "track": {}
         },
         "addTapeNode": function () {},
         "backend": {
+          "NUM_BYTES_BEFORE_PAGING": {},
           "abs": function () {},
           "acos": function () {},
           "acosh": function () {},
+          "acquireTexture": function () {},
           "add": function () {},
+          "all": function () {},
+          "any": function () {},
           "argMax": function () {},
           "argMin": function () {},
           "argReduce": function () {},
@@ -10005,8 +10249,9 @@ var tf = {
           "cast": function () {},
           "ceil": function () {},
           "clip": function () {},
-          "closure_uid_733892963": {},
+          "closure_uid_824103100": {},
           "compileAndRun": function () {},
+          "computeBytes": function () {},
           "concat": function () {},
           "conv2d": function () {},
           "conv2dDerFilter": function () {},
@@ -10016,10 +10261,11 @@ var tf = {
           "cumsum": function () {},
           "delayedStorage": {},
           "depthwiseConv2D": function () {},
+          "depthwiseConv2DDerFilter": function () {},
+          "depthwiseConv2DDerInput": function () {},
           "dispose": function () {},
           "disposeData": function () {},
           "disposed": {},
-          "divide": function () {},
           "downloadWaitMs": {},
           "elu": function () {},
           "eluDer": function () {},
@@ -10029,6 +10275,7 @@ var tf = {
           "exp": function () {},
           "expm1": function () {},
           "floor": function () {},
+          "floorDiv": function () {},
           "fromPixels": function () {},
           "gather": function () {},
           "getAndSaveBinary": function () {},
@@ -10036,29 +10283,31 @@ var tf = {
           "getGPGPUContext": function () {},
           "getQueryTime": function () {},
           "getTexture": function () {},
-          "getTextureData": function () {},
           "getTextureManager": function () {},
           "gpgpu": {
+            "addItemToPoll": function () {},
             "autoDebugValidate": {},
             "beginQuery": function () {},
             "blockUntilAllProgramsCompleted": function () {},
-            "closure_uid_733892963": {},
+            "closure_uid_824103100": {},
             "colorBufferFloatExtension": {},
-            "createMatrixTexture": function () {},
+            "createFloat16MatrixTexture": function () {},
+            "createFloat32MatrixTexture": function () {},
             "createPackedMatrixTexture": function () {},
             "createProgram": function () {},
+            "createUnsignedBytesMatrixTexture": function () {},
             "debugValidate": function () {},
             "deleteMatrixTexture": function () {},
             "deleteProgram": function () {},
             "dispose": function () {},
             "disposed": {},
+            "downloadByteEncodedFloatMatrixFromOutputTexture": function () {},
+            "downloadFloat32MatrixFromOutputTexture": function () {},
             "downloadMatrixDriver": function () {},
             "downloadMatrixDriverAsync": function () {},
             "downloadMatrixDriverSetup": function () {},
             "downloadMatrixDriverTeardown": function () {},
             "downloadMatrixFromPackedTexture": function () {},
-            "downloadMatrixFromRGBAColorTexture": function () {},
-            "downloadMatrixFromTexture": function () {},
             "downloadMatrixFromTextureAsync": function () {},
             "enableAutomaticDebugValidation": function () {},
             "endQuery": function () {},
@@ -10632,694 +10881,696 @@ var tf = {
               "WAIT_FAILED": {},
               "ZERO": {},
               "activeTexture": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "attachShader": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "beginQuery": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "beginTransformFeedback": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "bindAttribLocation": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "bindBuffer": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "bindBufferBase": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "bindBufferRange": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "bindFramebuffer": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "bindRenderbuffer": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "bindSampler": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "bindTexture": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "bindTransformFeedback": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "bindVertexArray": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "blendColor": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "blendEquation": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "blendEquationSeparate": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "blendFunc": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "blendFuncSeparate": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "blitFramebuffer": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "bufferData": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "bufferSubData": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "canvas": {},
               "checkFramebufferStatus": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "clear": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "clearBufferfi": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "clearBufferfv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "clearBufferiv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "clearBufferuiv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "clearColor": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "clearDepth": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "clearStencil": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "clientWaitSync": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
-              "closure_uid_733892963": {},
+              "closure_uid_824103100": {},
               "colorMask": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "compileShader": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "compressedTexImage2D": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "compressedTexImage3D": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "compressedTexSubImage2D": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "compressedTexSubImage3D": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "copyBufferSubData": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "copyTexImage2D": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "copyTexSubImage2D": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "copyTexSubImage3D": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "createBuffer": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "createFramebuffer": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "createProgram": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "createQuery": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "createRenderbuffer": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "createSampler": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "createShader": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "createTexture": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "createTransformFeedback": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "createVertexArray": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "cullFace": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "deleteBuffer": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "deleteFramebuffer": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "deleteProgram": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "deleteQuery": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "deleteRenderbuffer": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "deleteSampler": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "deleteShader": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "deleteSync": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "deleteTexture": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "deleteTransformFeedback": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "deleteVertexArray": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "depthFunc": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "depthMask": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "depthRange": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "detachShader": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "disable": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "disableVertexAttribArray": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "drawArrays": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "drawArraysInstanced": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "drawBuffers": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "drawElements": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "drawElementsInstanced": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "drawRangeElements": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "drawingBufferHeight": {},
               "drawingBufferWidth": {},
               "enable": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "enableVertexAttribArray": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "endQuery": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "endTransformFeedback": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "fenceSync": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "finish": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "flush": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "framebufferRenderbuffer": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "framebufferTexture2D": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "framebufferTextureLayer": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "frontFace": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "generateMipmap": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getActiveAttrib": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getActiveUniform": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getActiveUniformBlockName": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getActiveUniformBlockParameter": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getActiveUniforms": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getAttachedShaders": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getAttribLocation": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getBufferParameter": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getBufferSubData": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getContextAttributes": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getError": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getExtension": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getFragDataLocation": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getFramebufferAttachmentParameter": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getIndexedParameter": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getInternalformatParameter": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getParameter": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getProgramInfoLog": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getProgramParameter": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getQuery": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getQueryParameter": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getRenderbufferParameter": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getSamplerParameter": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getShaderInfoLog": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getShaderParameter": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getShaderPrecisionFormat": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getShaderSource": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getSupportedExtensions": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getSyncParameter": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getTexParameter": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getTransformFeedbackVarying": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getUniform": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getUniformBlockIndex": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getUniformIndices": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getUniformLocation": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getVertexAttrib": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "getVertexAttribOffset": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "hint": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "invalidateFramebuffer": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "invalidateSubFramebuffer": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "isBuffer": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "isContextLost": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "isEnabled": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "isFramebuffer": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "isProgram": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "isQuery": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "isRenderbuffer": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "isSampler": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "isShader": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "isSync": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "isTexture": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "isTransformFeedback": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "isVertexArray": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "lineWidth": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "linkProgram": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "pauseTransformFeedback": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "pixelStorei": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "polygonOffset": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "readBuffer": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "readPixels": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "renderbufferStorage": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "renderbufferStorageMultisample": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "resumeTransformFeedback": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "sampleCoverage": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "samplerParameterf": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "samplerParameteri": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "scissor": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "shaderSource": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "stencilFunc": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "stencilFuncSeparate": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "stencilMask": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "stencilMaskSeparate": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "stencilOp": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "stencilOpSeparate": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "texImage2D": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "texImage3D": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "texParameterf": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "texParameteri": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "texStorage2D": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "texStorage3D": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "texSubImage2D": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "texSubImage3D": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "transformFeedbackVaryings": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniform1f": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniform1fv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniform1i": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniform1iv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniform1ui": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniform1uiv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniform2f": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniform2fv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniform2i": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniform2iv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniform2ui": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniform2uiv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniform3f": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniform3fv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniform3i": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniform3iv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniform3ui": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniform3uiv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniform4f": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniform4fv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniform4i": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniform4iv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniform4ui": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniform4uiv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniformBlockBinding": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniformMatrix2fv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniformMatrix2x3fv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniformMatrix2x4fv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniformMatrix3fv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniformMatrix3x2fv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniformMatrix3x4fv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniformMatrix4fv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniformMatrix4x2fv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "uniformMatrix4x3fv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "useProgram": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "validateProgram": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "vertexAttrib1f": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "vertexAttrib1fv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "vertexAttrib2f": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "vertexAttrib2fv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "vertexAttrib3f": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "vertexAttrib3fv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "vertexAttrib4f": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "vertexAttrib4fv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "vertexAttribDivisor": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "vertexAttribI4i": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "vertexAttribI4iv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "vertexAttribI4ui": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "vertexAttribI4uiv": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "vertexAttribIPointer": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "vertexAttribPointer": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "viewport": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "waitSync": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               }
             },
             "indexBuffer": {},
             "isQueryAvailable": function () {},
+            "itemsToPoll": {},
             "loseContextExtension": {
-              "closure_uid_733892963": {},
+              "closure_uid_824103100": {},
               "loseContext": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               },
               "restoreContext": {
-                "closure_uid_733892963": {}
+                "closure_uid_824103100": {}
               }
             },
             "outputTexture": {},
+            "pollItems": function () {},
             "pollQueryTime": function () {},
             "program": {},
             "runQuery": function () {},
@@ -11331,6 +11582,16 @@ var tf = {
             "setOutputPackedMatrixTexture": function () {},
             "setOutputPackedMatrixWriteRegion": function () {},
             "setProgram": function () {},
+            "textureConfig": {
+              "defaultNumChannels": {},
+              "downloadTextureFormat": {},
+              "downloadUnpackNumChannels": {},
+              "internalFormatFloat": {},
+              "internalFormatHalfFloat": {},
+              "internalFormatPackedFloat": {},
+              "textureFormatFloat": {},
+              "textureTypeHalfFloat": {}
+            },
             "throwIfDisposed": function () {},
             "throwIfNoProgram": function () {},
             "uploadMatrixToPackedTexture": function () {},
@@ -11351,6 +11612,7 @@ var tf = {
           "logicalAnd": function () {},
           "logicalNot": function () {},
           "logicalOr": function () {},
+          "lruDataGPU": {},
           "makeOutputArray": function () {},
           "matMul": function () {},
           "max": function () {},
@@ -11365,22 +11627,29 @@ var tf = {
           "multiply": function () {},
           "neg": function () {},
           "notEqual": function () {},
+          "numBytesInGPU": {},
           "oneHot": function () {},
           "pad": function () {},
+          "pendingDisposal": {},
+          "pendingRead": {},
           "pow": function () {},
           "read": function () {},
           "readSync": function () {},
+          "realDivide": function () {},
           "reciprocal": function () {},
           "reduce": function () {},
           "register": function () {},
+          "releaseTexture": function () {},
           "relu": function () {},
           "reshape": function () {},
           "resizeBilinear": function () {},
           "resizeBilinearBackprop": function () {},
           "resizeNearestNeighbor": function () {},
+          "resizeNearestNeighborBackprop": function () {},
           "reverse": function () {},
           "round": function () {},
           "rsqrt": function () {},
+          "segOpCompute": function () {},
           "selu": function () {},
           "sigmoid": function () {},
           "sign": function () {},
@@ -11401,33 +11670,35 @@ var tf = {
           "texData": {},
           "textureManager": {
             "acquireTexture": function () {},
-            "allocatedTextures": {},
-            "closure_uid_733892963": {},
+            "closure_uid_824103100": {},
             "dispose": function () {},
             "freeTextures": {},
             "getNumFreeTextures": function () {},
             "getNumUsedTextures": function () {},
             "gpgpu": {
+              "addItemToPoll": function () {},
               "autoDebugValidate": {},
               "beginQuery": function () {},
               "blockUntilAllProgramsCompleted": function () {},
-              "closure_uid_733892963": {},
+              "closure_uid_824103100": {},
               "colorBufferFloatExtension": {},
-              "createMatrixTexture": function () {},
+              "createFloat16MatrixTexture": function () {},
+              "createFloat32MatrixTexture": function () {},
               "createPackedMatrixTexture": function () {},
               "createProgram": function () {},
+              "createUnsignedBytesMatrixTexture": function () {},
               "debugValidate": function () {},
               "deleteMatrixTexture": function () {},
               "deleteProgram": function () {},
               "dispose": function () {},
               "disposed": {},
+              "downloadByteEncodedFloatMatrixFromOutputTexture": function () {},
+              "downloadFloat32MatrixFromOutputTexture": function () {},
               "downloadMatrixDriver": function () {},
               "downloadMatrixDriverAsync": function () {},
               "downloadMatrixDriverSetup": function () {},
               "downloadMatrixDriverTeardown": function () {},
               "downloadMatrixFromPackedTexture": function () {},
-              "downloadMatrixFromRGBAColorTexture": function () {},
-              "downloadMatrixFromTexture": function () {},
               "downloadMatrixFromTextureAsync": function () {},
               "enableAutomaticDebugValidation": function () {},
               "endQuery": function () {},
@@ -12001,694 +12272,696 @@ var tf = {
                 "WAIT_FAILED": {},
                 "ZERO": {},
                 "activeTexture": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "attachShader": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "beginQuery": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "beginTransformFeedback": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindAttribLocation": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindBuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindBufferBase": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindBufferRange": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindFramebuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindRenderbuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindSampler": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindTexture": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindTransformFeedback": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindVertexArray": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "blendColor": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "blendEquation": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "blendEquationSeparate": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "blendFunc": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "blendFuncSeparate": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "blitFramebuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bufferData": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bufferSubData": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "canvas": {},
                 "checkFramebufferStatus": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clear": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clearBufferfi": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clearBufferfv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clearBufferiv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clearBufferuiv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clearColor": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clearDepth": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clearStencil": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clientWaitSync": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
-                "closure_uid_733892963": {},
+                "closure_uid_824103100": {},
                 "colorMask": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "compileShader": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "compressedTexImage2D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "compressedTexImage3D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "compressedTexSubImage2D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "compressedTexSubImage3D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "copyBufferSubData": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "copyTexImage2D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "copyTexSubImage2D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "copyTexSubImage3D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createBuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createFramebuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createProgram": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createQuery": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createRenderbuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createSampler": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createShader": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createTexture": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createTransformFeedback": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createVertexArray": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "cullFace": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteBuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteFramebuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteProgram": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteQuery": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteRenderbuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteSampler": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteShader": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteSync": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteTexture": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteTransformFeedback": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteVertexArray": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "depthFunc": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "depthMask": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "depthRange": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "detachShader": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "disable": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "disableVertexAttribArray": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "drawArrays": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "drawArraysInstanced": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "drawBuffers": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "drawElements": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "drawElementsInstanced": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "drawRangeElements": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "drawingBufferHeight": {},
                 "drawingBufferWidth": {},
                 "enable": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "enableVertexAttribArray": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "endQuery": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "endTransformFeedback": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "fenceSync": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "finish": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "flush": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "framebufferRenderbuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "framebufferTexture2D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "framebufferTextureLayer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "frontFace": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "generateMipmap": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getActiveAttrib": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getActiveUniform": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getActiveUniformBlockName": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getActiveUniformBlockParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getActiveUniforms": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getAttachedShaders": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getAttribLocation": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getBufferParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getBufferSubData": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getContextAttributes": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getError": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getExtension": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getFragDataLocation": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getFramebufferAttachmentParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getIndexedParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getInternalformatParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getProgramInfoLog": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getProgramParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getQuery": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getQueryParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getRenderbufferParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getSamplerParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getShaderInfoLog": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getShaderParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getShaderPrecisionFormat": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getShaderSource": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getSupportedExtensions": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getSyncParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getTexParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getTransformFeedbackVarying": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getUniform": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getUniformBlockIndex": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getUniformIndices": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getUniformLocation": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getVertexAttrib": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getVertexAttribOffset": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "hint": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "invalidateFramebuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "invalidateSubFramebuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isBuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isContextLost": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isEnabled": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isFramebuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isProgram": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isQuery": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isRenderbuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isSampler": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isShader": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isSync": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isTexture": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isTransformFeedback": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isVertexArray": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "lineWidth": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "linkProgram": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "pauseTransformFeedback": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "pixelStorei": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "polygonOffset": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "readBuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "readPixels": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "renderbufferStorage": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "renderbufferStorageMultisample": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "resumeTransformFeedback": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "sampleCoverage": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "samplerParameterf": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "samplerParameteri": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "scissor": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "shaderSource": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "stencilFunc": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "stencilFuncSeparate": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "stencilMask": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "stencilMaskSeparate": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "stencilOp": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "stencilOpSeparate": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "texImage2D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "texImage3D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "texParameterf": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "texParameteri": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "texStorage2D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "texStorage3D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "texSubImage2D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "texSubImage3D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "transformFeedbackVaryings": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform1f": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform1fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform1i": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform1iv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform1ui": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform1uiv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform2f": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform2fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform2i": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform2iv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform2ui": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform2uiv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform3f": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform3fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform3i": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform3iv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform3ui": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform3uiv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform4f": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform4fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform4i": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform4iv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform4ui": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform4uiv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformBlockBinding": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix2fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix2x3fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix2x4fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix3fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix3x2fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix3x4fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix4fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix4x2fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix4x3fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "useProgram": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "validateProgram": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttrib1f": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttrib1fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttrib2f": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttrib2fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttrib3f": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttrib3fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttrib4f": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttrib4fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttribDivisor": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttribI4i": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttribI4iv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttribI4ui": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttribI4uiv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttribIPointer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttribPointer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "viewport": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "waitSync": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 }
               },
               "indexBuffer": {},
               "isQueryAvailable": function () {},
+              "itemsToPoll": {},
               "loseContextExtension": {
-                "closure_uid_733892963": {},
+                "closure_uid_824103100": {},
                 "loseContext": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "restoreContext": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 }
               },
               "outputTexture": {},
+              "pollItems": function () {},
               "pollQueryTime": function () {},
               "program": {},
               "runQuery": function () {},
@@ -12700,6 +12973,16 @@ var tf = {
               "setOutputPackedMatrixTexture": function () {},
               "setOutputPackedMatrixWriteRegion": function () {},
               "setProgram": function () {},
+              "textureConfig": {
+                "defaultNumChannels": {},
+                "downloadTextureFormat": {},
+                "downloadUnpackNumChannels": {},
+                "internalFormatFloat": {},
+                "internalFormatHalfFloat": {},
+                "internalFormatPackedFloat": {},
+                "textureFormatFloat": {},
+                "textureTypeHalfFloat": {}
+              },
               "throwIfDisposed": function () {},
               "throwIfNoProgram": function () {},
               "uploadMatrixToPackedTexture": function () {},
@@ -12713,7 +12996,7 @@ var tf = {
             "numFreeTextures": {},
             "numUsedTextures": {},
             "releaseTexture": function () {},
-            "usedTextureCount": {}
+            "usedTextures": {}
           },
           "throwIfNoData": function () {},
           "tile": function () {},
@@ -12721,15 +13004,16 @@ var tf = {
           "topKIndices": function () {},
           "topKValues": function () {},
           "transpose": function () {},
+          "unsortedSegmentSum": function () {},
           "uploadToGPU": function () {},
           "uploadWaitMs": {},
           "where": function () {},
           "write": function () {}
         },
-        "closure_uid_733892963": {},
+        "closure_uid_824103100": {},
         "customGrad": function () {},
         "customGradientDepth": {},
-        "dispose": function () {},
+        "debugMode": {},
         "disposeTensor": function () {},
         "disposeVariables": function () {},
         "endScope": function () {},
@@ -12737,6 +13021,7 @@ var tf = {
         "gradientScopeCount": {},
         "gradients": function () {},
         "keep": function () {},
+        "keepTensors": {},
         "memory": function () {},
         "nextTapeNodeId": {},
         "numBytes": {},
@@ -12744,10 +13029,14 @@ var tf = {
         "numTensors": {},
         "profiler": {
           "backendTimer": {
+            "NUM_BYTES_BEFORE_PAGING": {},
             "abs": function () {},
             "acos": function () {},
             "acosh": function () {},
+            "acquireTexture": function () {},
             "add": function () {},
+            "all": function () {},
+            "any": function () {},
             "argMax": function () {},
             "argMin": function () {},
             "argReduce": function () {},
@@ -12765,8 +13054,9 @@ var tf = {
             "cast": function () {},
             "ceil": function () {},
             "clip": function () {},
-            "closure_uid_733892963": {},
+            "closure_uid_824103100": {},
             "compileAndRun": function () {},
+            "computeBytes": function () {},
             "concat": function () {},
             "conv2d": function () {},
             "conv2dDerFilter": function () {},
@@ -12776,10 +13066,11 @@ var tf = {
             "cumsum": function () {},
             "delayedStorage": {},
             "depthwiseConv2D": function () {},
+            "depthwiseConv2DDerFilter": function () {},
+            "depthwiseConv2DDerInput": function () {},
             "dispose": function () {},
             "disposeData": function () {},
             "disposed": {},
-            "divide": function () {},
             "downloadWaitMs": {},
             "elu": function () {},
             "eluDer": function () {},
@@ -12789,6 +13080,7 @@ var tf = {
             "exp": function () {},
             "expm1": function () {},
             "floor": function () {},
+            "floorDiv": function () {},
             "fromPixels": function () {},
             "gather": function () {},
             "getAndSaveBinary": function () {},
@@ -12796,29 +13088,31 @@ var tf = {
             "getGPGPUContext": function () {},
             "getQueryTime": function () {},
             "getTexture": function () {},
-            "getTextureData": function () {},
             "getTextureManager": function () {},
             "gpgpu": {
+              "addItemToPoll": function () {},
               "autoDebugValidate": {},
               "beginQuery": function () {},
               "blockUntilAllProgramsCompleted": function () {},
-              "closure_uid_733892963": {},
+              "closure_uid_824103100": {},
               "colorBufferFloatExtension": {},
-              "createMatrixTexture": function () {},
+              "createFloat16MatrixTexture": function () {},
+              "createFloat32MatrixTexture": function () {},
               "createPackedMatrixTexture": function () {},
               "createProgram": function () {},
+              "createUnsignedBytesMatrixTexture": function () {},
               "debugValidate": function () {},
               "deleteMatrixTexture": function () {},
               "deleteProgram": function () {},
               "dispose": function () {},
               "disposed": {},
+              "downloadByteEncodedFloatMatrixFromOutputTexture": function () {},
+              "downloadFloat32MatrixFromOutputTexture": function () {},
               "downloadMatrixDriver": function () {},
               "downloadMatrixDriverAsync": function () {},
               "downloadMatrixDriverSetup": function () {},
               "downloadMatrixDriverTeardown": function () {},
               "downloadMatrixFromPackedTexture": function () {},
-              "downloadMatrixFromRGBAColorTexture": function () {},
-              "downloadMatrixFromTexture": function () {},
               "downloadMatrixFromTextureAsync": function () {},
               "enableAutomaticDebugValidation": function () {},
               "endQuery": function () {},
@@ -13392,694 +13686,696 @@ var tf = {
                 "WAIT_FAILED": {},
                 "ZERO": {},
                 "activeTexture": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "attachShader": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "beginQuery": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "beginTransformFeedback": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindAttribLocation": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindBuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindBufferBase": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindBufferRange": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindFramebuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindRenderbuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindSampler": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindTexture": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindTransformFeedback": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindVertexArray": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "blendColor": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "blendEquation": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "blendEquationSeparate": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "blendFunc": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "blendFuncSeparate": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "blitFramebuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bufferData": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bufferSubData": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "canvas": {},
                 "checkFramebufferStatus": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clear": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clearBufferfi": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clearBufferfv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clearBufferiv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clearBufferuiv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clearColor": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clearDepth": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clearStencil": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clientWaitSync": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
-                "closure_uid_733892963": {},
+                "closure_uid_824103100": {},
                 "colorMask": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "compileShader": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "compressedTexImage2D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "compressedTexImage3D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "compressedTexSubImage2D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "compressedTexSubImage3D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "copyBufferSubData": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "copyTexImage2D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "copyTexSubImage2D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "copyTexSubImage3D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createBuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createFramebuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createProgram": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createQuery": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createRenderbuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createSampler": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createShader": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createTexture": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createTransformFeedback": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createVertexArray": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "cullFace": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteBuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteFramebuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteProgram": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteQuery": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteRenderbuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteSampler": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteShader": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteSync": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteTexture": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteTransformFeedback": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteVertexArray": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "depthFunc": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "depthMask": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "depthRange": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "detachShader": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "disable": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "disableVertexAttribArray": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "drawArrays": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "drawArraysInstanced": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "drawBuffers": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "drawElements": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "drawElementsInstanced": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "drawRangeElements": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "drawingBufferHeight": {},
                 "drawingBufferWidth": {},
                 "enable": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "enableVertexAttribArray": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "endQuery": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "endTransformFeedback": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "fenceSync": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "finish": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "flush": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "framebufferRenderbuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "framebufferTexture2D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "framebufferTextureLayer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "frontFace": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "generateMipmap": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getActiveAttrib": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getActiveUniform": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getActiveUniformBlockName": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getActiveUniformBlockParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getActiveUniforms": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getAttachedShaders": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getAttribLocation": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getBufferParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getBufferSubData": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getContextAttributes": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getError": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getExtension": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getFragDataLocation": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getFramebufferAttachmentParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getIndexedParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getInternalformatParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getProgramInfoLog": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getProgramParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getQuery": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getQueryParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getRenderbufferParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getSamplerParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getShaderInfoLog": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getShaderParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getShaderPrecisionFormat": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getShaderSource": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getSupportedExtensions": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getSyncParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getTexParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getTransformFeedbackVarying": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getUniform": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getUniformBlockIndex": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getUniformIndices": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getUniformLocation": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getVertexAttrib": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getVertexAttribOffset": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "hint": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "invalidateFramebuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "invalidateSubFramebuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isBuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isContextLost": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isEnabled": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isFramebuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isProgram": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isQuery": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isRenderbuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isSampler": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isShader": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isSync": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isTexture": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isTransformFeedback": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isVertexArray": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "lineWidth": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "linkProgram": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "pauseTransformFeedback": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "pixelStorei": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "polygonOffset": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "readBuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "readPixels": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "renderbufferStorage": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "renderbufferStorageMultisample": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "resumeTransformFeedback": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "sampleCoverage": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "samplerParameterf": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "samplerParameteri": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "scissor": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "shaderSource": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "stencilFunc": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "stencilFuncSeparate": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "stencilMask": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "stencilMaskSeparate": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "stencilOp": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "stencilOpSeparate": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "texImage2D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "texImage3D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "texParameterf": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "texParameteri": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "texStorage2D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "texStorage3D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "texSubImage2D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "texSubImage3D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "transformFeedbackVaryings": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform1f": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform1fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform1i": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform1iv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform1ui": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform1uiv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform2f": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform2fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform2i": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform2iv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform2ui": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform2uiv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform3f": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform3fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform3i": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform3iv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform3ui": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform3uiv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform4f": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform4fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform4i": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform4iv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform4ui": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform4uiv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformBlockBinding": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix2fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix2x3fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix2x4fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix3fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix3x2fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix3x4fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix4fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix4x2fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix4x3fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "useProgram": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "validateProgram": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttrib1f": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttrib1fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttrib2f": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttrib2fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttrib3f": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttrib3fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttrib4f": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttrib4fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttribDivisor": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttribI4i": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttribI4iv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttribI4ui": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttribI4uiv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttribIPointer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttribPointer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "viewport": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "waitSync": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 }
               },
               "indexBuffer": {},
               "isQueryAvailable": function () {},
+              "itemsToPoll": {},
               "loseContextExtension": {
-                "closure_uid_733892963": {},
+                "closure_uid_824103100": {},
                 "loseContext": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "restoreContext": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 }
               },
               "outputTexture": {},
+              "pollItems": function () {},
               "pollQueryTime": function () {},
               "program": {},
               "runQuery": function () {},
@@ -14091,6 +14387,16 @@ var tf = {
               "setOutputPackedMatrixTexture": function () {},
               "setOutputPackedMatrixWriteRegion": function () {},
               "setProgram": function () {},
+              "textureConfig": {
+                "defaultNumChannels": {},
+                "downloadTextureFormat": {},
+                "downloadUnpackNumChannels": {},
+                "internalFormatFloat": {},
+                "internalFormatHalfFloat": {},
+                "internalFormatPackedFloat": {},
+                "textureFormatFloat": {},
+                "textureTypeHalfFloat": {}
+              },
               "throwIfDisposed": function () {},
               "throwIfNoProgram": function () {},
               "uploadMatrixToPackedTexture": function () {},
@@ -14111,6 +14417,7 @@ var tf = {
             "logicalAnd": function () {},
             "logicalNot": function () {},
             "logicalOr": function () {},
+            "lruDataGPU": {},
             "makeOutputArray": function () {},
             "matMul": function () {},
             "max": function () {},
@@ -14125,22 +14432,29 @@ var tf = {
             "multiply": function () {},
             "neg": function () {},
             "notEqual": function () {},
+            "numBytesInGPU": {},
             "oneHot": function () {},
             "pad": function () {},
+            "pendingDisposal": {},
+            "pendingRead": {},
             "pow": function () {},
             "read": function () {},
             "readSync": function () {},
+            "realDivide": function () {},
             "reciprocal": function () {},
             "reduce": function () {},
             "register": function () {},
+            "releaseTexture": function () {},
             "relu": function () {},
             "reshape": function () {},
             "resizeBilinear": function () {},
             "resizeBilinearBackprop": function () {},
             "resizeNearestNeighbor": function () {},
+            "resizeNearestNeighborBackprop": function () {},
             "reverse": function () {},
             "round": function () {},
             "rsqrt": function () {},
+            "segOpCompute": function () {},
             "selu": function () {},
             "sigmoid": function () {},
             "sign": function () {},
@@ -14161,33 +14475,35 @@ var tf = {
             "texData": {},
             "textureManager": {
               "acquireTexture": function () {},
-              "allocatedTextures": {},
-              "closure_uid_733892963": {},
+              "closure_uid_824103100": {},
               "dispose": function () {},
               "freeTextures": {},
               "getNumFreeTextures": function () {},
               "getNumUsedTextures": function () {},
               "gpgpu": {
+                "addItemToPoll": function () {},
                 "autoDebugValidate": {},
                 "beginQuery": function () {},
                 "blockUntilAllProgramsCompleted": function () {},
-                "closure_uid_733892963": {},
+                "closure_uid_824103100": {},
                 "colorBufferFloatExtension": {},
-                "createMatrixTexture": function () {},
+                "createFloat16MatrixTexture": function () {},
+                "createFloat32MatrixTexture": function () {},
                 "createPackedMatrixTexture": function () {},
                 "createProgram": function () {},
+                "createUnsignedBytesMatrixTexture": function () {},
                 "debugValidate": function () {},
                 "deleteMatrixTexture": function () {},
                 "deleteProgram": function () {},
                 "dispose": function () {},
                 "disposed": {},
+                "downloadByteEncodedFloatMatrixFromOutputTexture": function () {},
+                "downloadFloat32MatrixFromOutputTexture": function () {},
                 "downloadMatrixDriver": function () {},
                 "downloadMatrixDriverAsync": function () {},
                 "downloadMatrixDriverSetup": function () {},
                 "downloadMatrixDriverTeardown": function () {},
                 "downloadMatrixFromPackedTexture": function () {},
-                "downloadMatrixFromRGBAColorTexture": function () {},
-                "downloadMatrixFromTexture": function () {},
                 "downloadMatrixFromTextureAsync": function () {},
                 "enableAutomaticDebugValidation": function () {},
                 "endQuery": function () {},
@@ -14761,694 +15077,696 @@ var tf = {
                   "WAIT_FAILED": {},
                   "ZERO": {},
                   "activeTexture": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "attachShader": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "beginQuery": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "beginTransformFeedback": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindAttribLocation": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindBuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindBufferBase": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindBufferRange": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindFramebuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindRenderbuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindSampler": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindTexture": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindTransformFeedback": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindVertexArray": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "blendColor": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "blendEquation": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "blendEquationSeparate": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "blendFunc": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "blendFuncSeparate": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "blitFramebuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bufferData": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bufferSubData": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "canvas": {},
                   "checkFramebufferStatus": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clear": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clearBufferfi": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clearBufferfv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clearBufferiv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clearBufferuiv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clearColor": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clearDepth": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clearStencil": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clientWaitSync": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
-                  "closure_uid_733892963": {},
+                  "closure_uid_824103100": {},
                   "colorMask": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "compileShader": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "compressedTexImage2D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "compressedTexImage3D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "compressedTexSubImage2D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "compressedTexSubImage3D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "copyBufferSubData": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "copyTexImage2D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "copyTexSubImage2D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "copyTexSubImage3D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createBuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createFramebuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createProgram": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createQuery": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createRenderbuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createSampler": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createShader": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createTexture": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createTransformFeedback": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createVertexArray": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "cullFace": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteBuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteFramebuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteProgram": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteQuery": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteRenderbuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteSampler": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteShader": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteSync": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteTexture": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteTransformFeedback": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteVertexArray": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "depthFunc": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "depthMask": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "depthRange": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "detachShader": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "disable": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "disableVertexAttribArray": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "drawArrays": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "drawArraysInstanced": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "drawBuffers": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "drawElements": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "drawElementsInstanced": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "drawRangeElements": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "drawingBufferHeight": {},
                   "drawingBufferWidth": {},
                   "enable": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "enableVertexAttribArray": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "endQuery": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "endTransformFeedback": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "fenceSync": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "finish": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "flush": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "framebufferRenderbuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "framebufferTexture2D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "framebufferTextureLayer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "frontFace": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "generateMipmap": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getActiveAttrib": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getActiveUniform": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getActiveUniformBlockName": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getActiveUniformBlockParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getActiveUniforms": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getAttachedShaders": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getAttribLocation": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getBufferParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getBufferSubData": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getContextAttributes": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getError": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getExtension": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getFragDataLocation": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getFramebufferAttachmentParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getIndexedParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getInternalformatParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getProgramInfoLog": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getProgramParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getQuery": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getQueryParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getRenderbufferParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getSamplerParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getShaderInfoLog": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getShaderParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getShaderPrecisionFormat": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getShaderSource": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getSupportedExtensions": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getSyncParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getTexParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getTransformFeedbackVarying": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getUniform": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getUniformBlockIndex": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getUniformIndices": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getUniformLocation": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getVertexAttrib": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getVertexAttribOffset": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "hint": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "invalidateFramebuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "invalidateSubFramebuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isBuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isContextLost": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isEnabled": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isFramebuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isProgram": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isQuery": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isRenderbuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isSampler": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isShader": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isSync": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isTexture": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isTransformFeedback": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isVertexArray": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "lineWidth": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "linkProgram": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "pauseTransformFeedback": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "pixelStorei": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "polygonOffset": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "readBuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "readPixels": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "renderbufferStorage": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "renderbufferStorageMultisample": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "resumeTransformFeedback": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "sampleCoverage": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "samplerParameterf": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "samplerParameteri": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "scissor": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "shaderSource": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "stencilFunc": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "stencilFuncSeparate": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "stencilMask": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "stencilMaskSeparate": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "stencilOp": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "stencilOpSeparate": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "texImage2D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "texImage3D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "texParameterf": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "texParameteri": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "texStorage2D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "texStorage3D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "texSubImage2D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "texSubImage3D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "transformFeedbackVaryings": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform1f": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform1fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform1i": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform1iv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform1ui": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform1uiv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform2f": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform2fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform2i": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform2iv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform2ui": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform2uiv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform3f": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform3fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform3i": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform3iv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform3ui": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform3uiv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform4f": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform4fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform4i": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform4iv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform4ui": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform4uiv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformBlockBinding": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix2fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix2x3fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix2x4fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix3fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix3x2fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix3x4fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix4fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix4x2fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix4x3fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "useProgram": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "validateProgram": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttrib1f": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttrib1fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttrib2f": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttrib2fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttrib3f": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttrib3fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttrib4f": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttrib4fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttribDivisor": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttribI4i": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttribI4iv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttribI4ui": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttribI4uiv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttribIPointer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttribPointer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "viewport": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "waitSync": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   }
                 },
                 "indexBuffer": {},
                 "isQueryAvailable": function () {},
+                "itemsToPoll": {},
                 "loseContextExtension": {
-                  "closure_uid_733892963": {},
+                  "closure_uid_824103100": {},
                   "loseContext": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "restoreContext": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   }
                 },
                 "outputTexture": {},
+                "pollItems": function () {},
                 "pollQueryTime": function () {},
                 "program": {},
                 "runQuery": function () {},
@@ -15460,6 +15778,16 @@ var tf = {
                 "setOutputPackedMatrixTexture": function () {},
                 "setOutputPackedMatrixWriteRegion": function () {},
                 "setProgram": function () {},
+                "textureConfig": {
+                  "defaultNumChannels": {},
+                  "downloadTextureFormat": {},
+                  "downloadUnpackNumChannels": {},
+                  "internalFormatFloat": {},
+                  "internalFormatHalfFloat": {},
+                  "internalFormatPackedFloat": {},
+                  "textureFormatFloat": {},
+                  "textureTypeHalfFloat": {}
+                },
                 "throwIfDisposed": function () {},
                 "throwIfNoProgram": function () {},
                 "uploadMatrixToPackedTexture": function () {},
@@ -15473,7 +15801,7 @@ var tf = {
               "numFreeTextures": {},
               "numUsedTextures": {},
               "releaseTexture": function () {},
-              "usedTextureCount": {}
+              "usedTextures": {}
             },
             "throwIfNoData": function () {},
             "tile": function () {},
@@ -15481,12 +15809,13 @@ var tf = {
             "topKIndices": function () {},
             "topKValues": function () {},
             "transpose": function () {},
+            "unsortedSegmentSum": function () {},
             "uploadToGPU": function () {},
             "uploadWaitMs": {},
             "where": function () {},
             "write": function () {}
           },
-          "closure_uid_733892963": {},
+          "closure_uid_824103100": {},
           "logger": {
             "logKernelProfile": function () {}
           },
@@ -15503,6 +15832,7 @@ var tf = {
         "scopeStack": {},
         "shouldRecord": function () {},
         "startScope": function () {},
+        "tidy": function () {},
         "time": function () {},
         "track": function () {},
         "write": function () {}
@@ -15517,6 +15847,8 @@ var tf = {
             "acos": function () {},
             "acosh": function () {},
             "add": function () {},
+            "all": function () {},
+            "any": function () {},
             "argMax": function () {},
             "argMin": function () {},
             "asin": function () {},
@@ -15541,16 +15873,19 @@ var tf = {
             "cumsum": function () {},
             "data": {},
             "depthwiseConv2D": function () {},
+            "depthwiseConv2DDerFilter": function () {},
+            "depthwiseConv2DDerInput": function () {},
             "dispose": function () {},
             "disposeData": function () {},
-            "divide": function () {},
             "elu": function () {},
             "eluDer": function () {},
             "equal": function () {},
             "erf": function () {},
             "exp": function () {},
             "expm1": function () {},
+            "firstUse": {},
             "floor": function () {},
+            "floorDiv": function () {},
             "fromPixels": function () {},
             "gather": function () {},
             "greater": function () {},
@@ -15584,6 +15919,7 @@ var tf = {
             "pow": function () {},
             "read": function () {},
             "readSync": function () {},
+            "realDivide": function () {},
             "reciprocal": function () {},
             "register": function () {},
             "relu": function () {},
@@ -15591,6 +15927,7 @@ var tf = {
             "resizeBilinear": function () {},
             "resizeBilinearBackprop": function () {},
             "resizeNearestNeighbor": function () {},
+            "resizeNearestNeighborBackprop": function () {},
             "reverse": function () {},
             "round": function () {},
             "rsqrt": function () {},
@@ -15617,6 +15954,7 @@ var tf = {
             "topKIndices": function () {},
             "topKValues": function () {},
             "transpose": function () {},
+            "unsortedSegmentSum": function () {},
             "where": function () {},
             "write": function () {}
           },
@@ -15624,10 +15962,14 @@ var tf = {
         },
         "webgl": {
           "backend": {
+            "NUM_BYTES_BEFORE_PAGING": {},
             "abs": function () {},
             "acos": function () {},
             "acosh": function () {},
+            "acquireTexture": function () {},
             "add": function () {},
+            "all": function () {},
+            "any": function () {},
             "argMax": function () {},
             "argMin": function () {},
             "argReduce": function () {},
@@ -15645,8 +15987,9 @@ var tf = {
             "cast": function () {},
             "ceil": function () {},
             "clip": function () {},
-            "closure_uid_733892963": {},
+            "closure_uid_824103100": {},
             "compileAndRun": function () {},
+            "computeBytes": function () {},
             "concat": function () {},
             "conv2d": function () {},
             "conv2dDerFilter": function () {},
@@ -15656,10 +15999,11 @@ var tf = {
             "cumsum": function () {},
             "delayedStorage": {},
             "depthwiseConv2D": function () {},
+            "depthwiseConv2DDerFilter": function () {},
+            "depthwiseConv2DDerInput": function () {},
             "dispose": function () {},
             "disposeData": function () {},
             "disposed": {},
-            "divide": function () {},
             "downloadWaitMs": {},
             "elu": function () {},
             "eluDer": function () {},
@@ -15669,6 +16013,7 @@ var tf = {
             "exp": function () {},
             "expm1": function () {},
             "floor": function () {},
+            "floorDiv": function () {},
             "fromPixels": function () {},
             "gather": function () {},
             "getAndSaveBinary": function () {},
@@ -15676,29 +16021,31 @@ var tf = {
             "getGPGPUContext": function () {},
             "getQueryTime": function () {},
             "getTexture": function () {},
-            "getTextureData": function () {},
             "getTextureManager": function () {},
             "gpgpu": {
+              "addItemToPoll": function () {},
               "autoDebugValidate": {},
               "beginQuery": function () {},
               "blockUntilAllProgramsCompleted": function () {},
-              "closure_uid_733892963": {},
+              "closure_uid_824103100": {},
               "colorBufferFloatExtension": {},
-              "createMatrixTexture": function () {},
+              "createFloat16MatrixTexture": function () {},
+              "createFloat32MatrixTexture": function () {},
               "createPackedMatrixTexture": function () {},
               "createProgram": function () {},
+              "createUnsignedBytesMatrixTexture": function () {},
               "debugValidate": function () {},
               "deleteMatrixTexture": function () {},
               "deleteProgram": function () {},
               "dispose": function () {},
               "disposed": {},
+              "downloadByteEncodedFloatMatrixFromOutputTexture": function () {},
+              "downloadFloat32MatrixFromOutputTexture": function () {},
               "downloadMatrixDriver": function () {},
               "downloadMatrixDriverAsync": function () {},
               "downloadMatrixDriverSetup": function () {},
               "downloadMatrixDriverTeardown": function () {},
               "downloadMatrixFromPackedTexture": function () {},
-              "downloadMatrixFromRGBAColorTexture": function () {},
-              "downloadMatrixFromTexture": function () {},
               "downloadMatrixFromTextureAsync": function () {},
               "enableAutomaticDebugValidation": function () {},
               "endQuery": function () {},
@@ -16272,694 +16619,696 @@ var tf = {
                 "WAIT_FAILED": {},
                 "ZERO": {},
                 "activeTexture": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "attachShader": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "beginQuery": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "beginTransformFeedback": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindAttribLocation": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindBuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindBufferBase": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindBufferRange": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindFramebuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindRenderbuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindSampler": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindTexture": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindTransformFeedback": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bindVertexArray": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "blendColor": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "blendEquation": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "blendEquationSeparate": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "blendFunc": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "blendFuncSeparate": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "blitFramebuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bufferData": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "bufferSubData": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "canvas": {},
                 "checkFramebufferStatus": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clear": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clearBufferfi": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clearBufferfv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clearBufferiv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clearBufferuiv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clearColor": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clearDepth": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clearStencil": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "clientWaitSync": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
-                "closure_uid_733892963": {},
+                "closure_uid_824103100": {},
                 "colorMask": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "compileShader": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "compressedTexImage2D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "compressedTexImage3D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "compressedTexSubImage2D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "compressedTexSubImage3D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "copyBufferSubData": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "copyTexImage2D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "copyTexSubImage2D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "copyTexSubImage3D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createBuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createFramebuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createProgram": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createQuery": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createRenderbuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createSampler": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createShader": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createTexture": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createTransformFeedback": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "createVertexArray": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "cullFace": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteBuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteFramebuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteProgram": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteQuery": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteRenderbuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteSampler": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteShader": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteSync": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteTexture": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteTransformFeedback": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "deleteVertexArray": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "depthFunc": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "depthMask": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "depthRange": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "detachShader": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "disable": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "disableVertexAttribArray": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "drawArrays": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "drawArraysInstanced": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "drawBuffers": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "drawElements": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "drawElementsInstanced": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "drawRangeElements": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "drawingBufferHeight": {},
                 "drawingBufferWidth": {},
                 "enable": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "enableVertexAttribArray": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "endQuery": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "endTransformFeedback": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "fenceSync": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "finish": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "flush": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "framebufferRenderbuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "framebufferTexture2D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "framebufferTextureLayer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "frontFace": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "generateMipmap": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getActiveAttrib": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getActiveUniform": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getActiveUniformBlockName": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getActiveUniformBlockParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getActiveUniforms": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getAttachedShaders": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getAttribLocation": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getBufferParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getBufferSubData": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getContextAttributes": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getError": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getExtension": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getFragDataLocation": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getFramebufferAttachmentParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getIndexedParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getInternalformatParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getProgramInfoLog": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getProgramParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getQuery": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getQueryParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getRenderbufferParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getSamplerParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getShaderInfoLog": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getShaderParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getShaderPrecisionFormat": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getShaderSource": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getSupportedExtensions": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getSyncParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getTexParameter": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getTransformFeedbackVarying": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getUniform": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getUniformBlockIndex": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getUniformIndices": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getUniformLocation": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getVertexAttrib": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "getVertexAttribOffset": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "hint": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "invalidateFramebuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "invalidateSubFramebuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isBuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isContextLost": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isEnabled": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isFramebuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isProgram": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isQuery": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isRenderbuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isSampler": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isShader": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isSync": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isTexture": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isTransformFeedback": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "isVertexArray": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "lineWidth": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "linkProgram": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "pauseTransformFeedback": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "pixelStorei": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "polygonOffset": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "readBuffer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "readPixels": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "renderbufferStorage": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "renderbufferStorageMultisample": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "resumeTransformFeedback": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "sampleCoverage": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "samplerParameterf": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "samplerParameteri": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "scissor": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "shaderSource": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "stencilFunc": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "stencilFuncSeparate": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "stencilMask": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "stencilMaskSeparate": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "stencilOp": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "stencilOpSeparate": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "texImage2D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "texImage3D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "texParameterf": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "texParameteri": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "texStorage2D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "texStorage3D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "texSubImage2D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "texSubImage3D": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "transformFeedbackVaryings": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform1f": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform1fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform1i": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform1iv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform1ui": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform1uiv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform2f": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform2fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform2i": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform2iv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform2ui": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform2uiv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform3f": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform3fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform3i": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform3iv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform3ui": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform3uiv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform4f": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform4fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform4i": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform4iv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform4ui": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniform4uiv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformBlockBinding": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix2fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix2x3fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix2x4fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix3fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix3x2fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix3x4fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix4fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix4x2fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "uniformMatrix4x3fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "useProgram": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "validateProgram": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttrib1f": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttrib1fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttrib2f": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttrib2fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttrib3f": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttrib3fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttrib4f": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttrib4fv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttribDivisor": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttribI4i": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttribI4iv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttribI4ui": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttribI4uiv": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttribIPointer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "vertexAttribPointer": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "viewport": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "waitSync": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 }
               },
               "indexBuffer": {},
               "isQueryAvailable": function () {},
+              "itemsToPoll": {},
               "loseContextExtension": {
-                "closure_uid_733892963": {},
+                "closure_uid_824103100": {},
                 "loseContext": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 },
                 "restoreContext": {
-                  "closure_uid_733892963": {}
+                  "closure_uid_824103100": {}
                 }
               },
               "outputTexture": {},
+              "pollItems": function () {},
               "pollQueryTime": function () {},
               "program": {},
               "runQuery": function () {},
@@ -16971,6 +17320,16 @@ var tf = {
               "setOutputPackedMatrixTexture": function () {},
               "setOutputPackedMatrixWriteRegion": function () {},
               "setProgram": function () {},
+              "textureConfig": {
+                "defaultNumChannels": {},
+                "downloadTextureFormat": {},
+                "downloadUnpackNumChannels": {},
+                "internalFormatFloat": {},
+                "internalFormatHalfFloat": {},
+                "internalFormatPackedFloat": {},
+                "textureFormatFloat": {},
+                "textureTypeHalfFloat": {}
+              },
               "throwIfDisposed": function () {},
               "throwIfNoProgram": function () {},
               "uploadMatrixToPackedTexture": function () {},
@@ -16991,6 +17350,7 @@ var tf = {
             "logicalAnd": function () {},
             "logicalNot": function () {},
             "logicalOr": function () {},
+            "lruDataGPU": {},
             "makeOutputArray": function () {},
             "matMul": function () {},
             "max": function () {},
@@ -17005,22 +17365,29 @@ var tf = {
             "multiply": function () {},
             "neg": function () {},
             "notEqual": function () {},
+            "numBytesInGPU": {},
             "oneHot": function () {},
             "pad": function () {},
+            "pendingDisposal": {},
+            "pendingRead": {},
             "pow": function () {},
             "read": function () {},
             "readSync": function () {},
+            "realDivide": function () {},
             "reciprocal": function () {},
             "reduce": function () {},
             "register": function () {},
+            "releaseTexture": function () {},
             "relu": function () {},
             "reshape": function () {},
             "resizeBilinear": function () {},
             "resizeBilinearBackprop": function () {},
             "resizeNearestNeighbor": function () {},
+            "resizeNearestNeighborBackprop": function () {},
             "reverse": function () {},
             "round": function () {},
             "rsqrt": function () {},
+            "segOpCompute": function () {},
             "selu": function () {},
             "sigmoid": function () {},
             "sign": function () {},
@@ -17041,33 +17408,35 @@ var tf = {
             "texData": {},
             "textureManager": {
               "acquireTexture": function () {},
-              "allocatedTextures": {},
-              "closure_uid_733892963": {},
+              "closure_uid_824103100": {},
               "dispose": function () {},
               "freeTextures": {},
               "getNumFreeTextures": function () {},
               "getNumUsedTextures": function () {},
               "gpgpu": {
+                "addItemToPoll": function () {},
                 "autoDebugValidate": {},
                 "beginQuery": function () {},
                 "blockUntilAllProgramsCompleted": function () {},
-                "closure_uid_733892963": {},
+                "closure_uid_824103100": {},
                 "colorBufferFloatExtension": {},
-                "createMatrixTexture": function () {},
+                "createFloat16MatrixTexture": function () {},
+                "createFloat32MatrixTexture": function () {},
                 "createPackedMatrixTexture": function () {},
                 "createProgram": function () {},
+                "createUnsignedBytesMatrixTexture": function () {},
                 "debugValidate": function () {},
                 "deleteMatrixTexture": function () {},
                 "deleteProgram": function () {},
                 "dispose": function () {},
                 "disposed": {},
+                "downloadByteEncodedFloatMatrixFromOutputTexture": function () {},
+                "downloadFloat32MatrixFromOutputTexture": function () {},
                 "downloadMatrixDriver": function () {},
                 "downloadMatrixDriverAsync": function () {},
                 "downloadMatrixDriverSetup": function () {},
                 "downloadMatrixDriverTeardown": function () {},
                 "downloadMatrixFromPackedTexture": function () {},
-                "downloadMatrixFromRGBAColorTexture": function () {},
-                "downloadMatrixFromTexture": function () {},
                 "downloadMatrixFromTextureAsync": function () {},
                 "enableAutomaticDebugValidation": function () {},
                 "endQuery": function () {},
@@ -17641,694 +18010,696 @@ var tf = {
                   "WAIT_FAILED": {},
                   "ZERO": {},
                   "activeTexture": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "attachShader": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "beginQuery": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "beginTransformFeedback": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindAttribLocation": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindBuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindBufferBase": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindBufferRange": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindFramebuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindRenderbuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindSampler": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindTexture": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindTransformFeedback": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bindVertexArray": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "blendColor": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "blendEquation": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "blendEquationSeparate": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "blendFunc": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "blendFuncSeparate": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "blitFramebuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bufferData": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "bufferSubData": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "canvas": {},
                   "checkFramebufferStatus": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clear": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clearBufferfi": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clearBufferfv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clearBufferiv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clearBufferuiv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clearColor": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clearDepth": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clearStencil": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "clientWaitSync": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
-                  "closure_uid_733892963": {},
+                  "closure_uid_824103100": {},
                   "colorMask": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "compileShader": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "compressedTexImage2D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "compressedTexImage3D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "compressedTexSubImage2D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "compressedTexSubImage3D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "copyBufferSubData": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "copyTexImage2D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "copyTexSubImage2D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "copyTexSubImage3D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createBuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createFramebuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createProgram": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createQuery": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createRenderbuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createSampler": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createShader": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createTexture": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createTransformFeedback": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "createVertexArray": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "cullFace": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteBuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteFramebuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteProgram": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteQuery": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteRenderbuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteSampler": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteShader": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteSync": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteTexture": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteTransformFeedback": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "deleteVertexArray": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "depthFunc": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "depthMask": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "depthRange": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "detachShader": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "disable": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "disableVertexAttribArray": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "drawArrays": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "drawArraysInstanced": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "drawBuffers": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "drawElements": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "drawElementsInstanced": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "drawRangeElements": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "drawingBufferHeight": {},
                   "drawingBufferWidth": {},
                   "enable": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "enableVertexAttribArray": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "endQuery": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "endTransformFeedback": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "fenceSync": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "finish": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "flush": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "framebufferRenderbuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "framebufferTexture2D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "framebufferTextureLayer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "frontFace": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "generateMipmap": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getActiveAttrib": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getActiveUniform": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getActiveUniformBlockName": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getActiveUniformBlockParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getActiveUniforms": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getAttachedShaders": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getAttribLocation": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getBufferParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getBufferSubData": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getContextAttributes": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getError": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getExtension": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getFragDataLocation": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getFramebufferAttachmentParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getIndexedParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getInternalformatParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getProgramInfoLog": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getProgramParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getQuery": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getQueryParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getRenderbufferParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getSamplerParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getShaderInfoLog": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getShaderParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getShaderPrecisionFormat": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getShaderSource": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getSupportedExtensions": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getSyncParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getTexParameter": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getTransformFeedbackVarying": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getUniform": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getUniformBlockIndex": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getUniformIndices": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getUniformLocation": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getVertexAttrib": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "getVertexAttribOffset": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "hint": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "invalidateFramebuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "invalidateSubFramebuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isBuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isContextLost": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isEnabled": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isFramebuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isProgram": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isQuery": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isRenderbuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isSampler": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isShader": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isSync": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isTexture": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isTransformFeedback": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "isVertexArray": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "lineWidth": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "linkProgram": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "pauseTransformFeedback": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "pixelStorei": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "polygonOffset": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "readBuffer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "readPixels": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "renderbufferStorage": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "renderbufferStorageMultisample": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "resumeTransformFeedback": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "sampleCoverage": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "samplerParameterf": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "samplerParameteri": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "scissor": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "shaderSource": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "stencilFunc": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "stencilFuncSeparate": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "stencilMask": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "stencilMaskSeparate": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "stencilOp": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "stencilOpSeparate": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "texImage2D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "texImage3D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "texParameterf": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "texParameteri": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "texStorage2D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "texStorage3D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "texSubImage2D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "texSubImage3D": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "transformFeedbackVaryings": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform1f": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform1fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform1i": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform1iv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform1ui": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform1uiv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform2f": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform2fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform2i": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform2iv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform2ui": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform2uiv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform3f": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform3fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform3i": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform3iv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform3ui": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform3uiv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform4f": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform4fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform4i": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform4iv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform4ui": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniform4uiv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformBlockBinding": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix2fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix2x3fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix2x4fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix3fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix3x2fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix3x4fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix4fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix4x2fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "uniformMatrix4x3fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "useProgram": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "validateProgram": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttrib1f": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttrib1fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttrib2f": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttrib2fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttrib3f": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttrib3fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttrib4f": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttrib4fv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttribDivisor": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttribI4i": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttribI4iv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttribI4ui": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttribI4uiv": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttribIPointer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "vertexAttribPointer": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "viewport": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "waitSync": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   }
                 },
                 "indexBuffer": {},
                 "isQueryAvailable": function () {},
+                "itemsToPoll": {},
                 "loseContextExtension": {
-                  "closure_uid_733892963": {},
+                  "closure_uid_824103100": {},
                   "loseContext": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   },
                   "restoreContext": {
-                    "closure_uid_733892963": {}
+                    "closure_uid_824103100": {}
                   }
                 },
                 "outputTexture": {},
+                "pollItems": function () {},
                 "pollQueryTime": function () {},
                 "program": {},
                 "runQuery": function () {},
@@ -18340,6 +18711,16 @@ var tf = {
                 "setOutputPackedMatrixTexture": function () {},
                 "setOutputPackedMatrixWriteRegion": function () {},
                 "setProgram": function () {},
+                "textureConfig": {
+                  "defaultNumChannels": {},
+                  "downloadTextureFormat": {},
+                  "downloadUnpackNumChannels": {},
+                  "internalFormatFloat": {},
+                  "internalFormatHalfFloat": {},
+                  "internalFormatPackedFloat": {},
+                  "textureFormatFloat": {},
+                  "textureTypeHalfFloat": {}
+                },
                 "throwIfDisposed": function () {},
                 "throwIfNoProgram": function () {},
                 "uploadMatrixToPackedTexture": function () {},
@@ -18353,7 +18734,7 @@ var tf = {
               "numFreeTextures": {},
               "numUsedTextures": {},
               "releaseTexture": function () {},
-              "usedTextureCount": {}
+              "usedTextures": {}
             },
             "throwIfNoData": function () {},
             "tile": function () {},
@@ -18361,6 +18742,7 @@ var tf = {
             "topKIndices": function () {},
             "topKValues": function () {},
             "transpose": function () {},
+            "unsortedSegmentSum": function () {},
             "uploadToGPU": function () {},
             "uploadWaitMs": {},
             "where": function () {},
@@ -18375,20 +18757,15 @@ var tf = {
       "setFeatures": function () {}
     },
     "Environment": {
+      "dispose": function () {},
       "disposeVariables": function () {},
       "getBackend": function () {},
+      "keep": function () {},
       "memory": function () {},
-      "setBackend": function () {}
-    },
-    "Type": {
-      "0": {},
-      "1": {},
-      "2": {},
-      "BOOLEAN": {},
-      "NUMBER": {},
-      "STRING": {}
-    },
-    "URL_PROPERTIES": {}
+      "setBackend": function () {},
+      "tidy": function () {},
+      "time": function () {}
+    }
   },
   "equal": function () {},
   "equalStrict": function () {},
@@ -18399,6 +18776,7 @@ var tf = {
   "eye": function () {},
   "fill": function () {},
   "floor": function () {},
+  "floorDiv": function () {},
   "fromPixels": function () {},
   "gather": function () {},
   "getBackend": function () {},
@@ -18431,10 +18809,12 @@ var tf = {
   "io": {
     "browserFiles": function () {},
     "browserHTTPRequest": function () {},
+    "concatenateArrayBuffers": function () {},
     "copyModel": function () {},
     "decodeWeights": function () {},
     "encodeWeights": function () {},
     "getLoadHandlers": function () {},
+    "getModelArtifactsInfoForJSON": function () {},
     "getSaveHandlers": function () {},
     "listModels": function () {},
     "loadWeights": function () {},
@@ -18506,6 +18886,7 @@ var tf = {
     "stackedRNNCells": function () {},
     "thresholdedReLU": function () {},
     "timeDistributed": function () {},
+    "upSampling2d": function () {},
     "zeroPadding2d": function () {}
   },
   "leakyRelu": function () {},
@@ -18514,7 +18895,8 @@ var tf = {
   "lessEqualStrict": function () {},
   "lessStrict": function () {},
   "linalg": {
-    "gramSchmidt": function () {}
+    "gramSchmidt": function () {},
+    "qr": function () {}
   },
   "linspace": function () {},
   "loadFrozenModel": function () {},
@@ -18533,6 +18915,7 @@ var tf = {
     "computeWeightedLoss": function () {},
     "cosineDistance": function () {},
     "hingeLoss": function () {},
+    "huberLoss": function () {},
     "logLoss": function () {},
     "meanSquaredError": function () {},
     "softmaxCrossEntropy": function () {}
@@ -18681,6 +19064,7 @@ var tf = {
           "TimeDistributed": {},
           "TruncatedNormal": {},
           "UnitNorm": {},
+          "UpSampling2D": {},
           "VarianceScaling": {},
           "ZeroPadding2D": {},
           "Zeros": {},
@@ -18702,6 +19086,7 @@ var tf = {
   },
   "setBackend": function () {},
   "sigmoid": function () {},
+  "sigmoidCrossEntropyWithLogits": function () {},
   "sign": function () {},
   "sin": function () {},
   "sinh": function () {},
@@ -18731,15 +19116,16 @@ var tf = {
   "tensor2d": function () {},
   "tensor3d": function () {},
   "tensor4d": function () {},
+  "tensor5d": function () {},
+  "tensor6d": function () {},
   "test_util": {
     "ALL_ENVS": {},
-    "CPU_ENVS": {
-      "BACKEND": {}
-    },
-    "TEST_EPSILON": {},
-    "WEBGL_ENVS": {
-      "BACKEND": {}
-    },
+    "BROWSER_ENVS": {},
+    "CHROME_CPU_ENVS": {},
+    "CPU_ENVS": {},
+    "NATIVE_ENV": {},
+    "WEBGL_ENVS": {},
+    "expectArrayBuffersEqual": function () {},
     "expectArraysClose": function () {},
     "expectArraysEqual": function () {},
     "expectNumbersClose": function () {},
@@ -18766,19 +19152,16 @@ var tf = {
   "util": {
     "arraysEqual": function () {},
     "assert": function () {},
-    "assertArgumentsAreTensors": function () {},
+    "assertNonNull": function () {},
     "assertShapesMatch": function () {},
-    "assertTypesMatch": function () {},
     "bytesPerElement": function () {},
     "checkForNaN": function () {},
     "clamp": function () {},
+    "computeStrides": function () {},
     "copyTypedArray": function () {},
     "createShuffledIndices": function () {},
     "distSquared": function () {},
-    "extractTensorsFromAny": function () {},
-    "extractTensorsFromContainer": function () {},
     "flatten": function () {},
-    "flattenNameArrayMap": function () {},
     "getQueryParams": function () {},
     "getTypedArrayFromDType": function () {},
     "hasEncodingLoss": function () {},
@@ -18787,8 +19170,10 @@ var tf = {
     "isFunction": function () {},
     "isInt": function () {},
     "isScalarShape": function () {},
-    "isTensorInList": function () {},
     "isTypedArray": function () {},
+    "makeOnesTypedArray": function () {},
+    "makeZerosTypedArray": function () {},
+    "nearestDivisor": function () {},
     "randUniform": function () {},
     "repeatedTry": function () {},
     "rightPad": function () {},
@@ -18797,7 +19182,7 @@ var tf = {
     "sizeToSquarishShape": function () {},
     "squeezeShape": function () {},
     "tanh": function () {},
-    "unflattenToNameArrayMap": function () {}
+    "toTypedArray": function () {}
   },
   "valueAndGrad": function () {},
   "valueAndGrads": function () {},
@@ -18818,17 +19203,19 @@ var tf = {
     "MathBackendWebGL": function () {},
     "gpgpu_util": {
       "bindVertexProgramAttributeStreams": function () {},
-      "createColorMatrixTexture": function () {},
+      "createFloat16MatrixTexture": function () {},
+      "createFloat32MatrixTexture": function () {},
       "createIndexBuffer": function () {},
-      "createMatrixTexture": function () {},
       "createPackedMatrixTexture": function () {},
+      "createUnsignedBytesMatrixTexture": function () {},
       "createVertexBuffer": function () {},
       "createVertexShader": function () {},
       "createWebGLContext": function () {},
-      "downloadMatrixFromOutputTexture": function () {},
+      "downloadByteEncodedFloatMatrixFromOutputTexture": function () {},
+      "downloadFloat32MatrixFromOutputTexture": function () {},
       "downloadMatrixFromOutputTextureAsync": function () {},
       "downloadMatrixFromPackedOutputTexture": function () {},
-      "downloadMatrixFromRGBAColorTexture": function () {},
+      "getTextureConfig": function () {},
       "getWebGLContextAttributes": function () {},
       "uploadMatrixToPackedTexture": function () {},
       "uploadMatrixToTexture": function () {},
@@ -18852,9 +19239,9 @@ var tf = {
       "createWebGLRenderingContext": function () {},
       "createWebGLRenderingContextFromCanvas": function () {},
       "enableDebugWebGLErrorChecking": function () {},
-      "getChannelsPerTexture": function () {},
       "getExtensionOrThrow": function () {},
       "getFramebufferErrorMessage": function () {},
+      "getNumChannels": function () {},
       "getProgramUniformLocation": function () {},
       "getProgramUniformLocationOrThrow": function () {},
       "getTextureShapeFromLogicalShape": function () {},
@@ -18909,6 +19296,7 @@ tf.AdamaxOptimizer.prototype = {
   "minimize": function () {}
 };
 tf.Callback.prototype = {
+  "constructor": function () {},
   "onBatchBegin": function () {},
   "onBatchEnd": function () {},
   "onEpochBegin": function () {},
@@ -18946,6 +19334,7 @@ tf.Environment.prototype = {
   "findBackend": function () {},
   "get": function () {},
   "getBestBackendType": function () {},
+  "getFeatures": function () {},
   "initBackend": function () {},
   "initDefaultBackend": function () {},
   "registerBackend": function () {},
@@ -18955,15 +19344,21 @@ tf.Environment.prototype = {
   "setFeatures": function () {}
 };
 tf.FrozenModel.prototype = {
+  "constructTensorMap": function () {},
   "convertTensorMapToTensorsMap": function () {},
   "dispose": function () {},
   "execute": function () {},
   "executeAsync": function () {},
   "getPathPrefix": function () {},
+  "inputNodes": function () {},
+  "inputs": function () {},
   "load": function () {},
   "loadRemoteProtoFile": function () {},
   "loadWeightManifest": function () {},
-  "modelVersion": function () {}
+  "modelVersion": function () {},
+  "outputNodes": function () {},
+  "outputs": function () {},
+  "predict": function () {}
 };
 tf.Model.prototype = {
   "addInboundNode": function () {},
@@ -18983,7 +19378,9 @@ tf.Model.prototype = {
   "computeMask": function () {},
   "computeOutputShape": function () {},
   "constructor": function () {},
+  "countParams": function () {},
   "evaluate": function () {},
+  "execute": function () {},
   "fit": function () {},
   "fitLoop": function () {},
   "getClassName": function () {},
@@ -19002,15 +19399,18 @@ tf.Model.prototype = {
   "makeTestFunction": function () {},
   "nonTrainableWeights": function () {},
   "output": function () {},
+  "outputShape": function () {},
   "predict": function () {},
   "predictLoop": function () {},
   "predictOnBatch": function () {},
+  "retrieveSymbolicTensors": function () {},
   "runInternalGraph": function () {},
   "save": function () {},
   "setCallHook": function () {},
   "setWeights": function () {},
   "standardizeUserData": function () {},
   "stateful": function () {},
+  "summary": function () {},
   "testLoop": function () {},
   "toJSON": function () {},
   "trainableWeights": function () {},
@@ -19058,6 +19458,7 @@ tf.RNN.prototype = {
   "computeMask": function () {},
   "computeOutputShape": function () {},
   "constructor": function () {},
+  "countParams": function () {},
   "getClassName": function () {},
   "getConfig": function () {},
   "getInitialState": function () {},
@@ -19071,6 +19472,7 @@ tf.RNN.prototype = {
   "losses": function () {},
   "nonTrainableWeights": function () {},
   "output": function () {},
+  "outputShape": function () {},
   "resetStates": function () {},
   "setCallHook": function () {},
   "setStates": function () {},
@@ -19110,7 +19512,9 @@ tf.Sequential.prototype = {
   "computeMask": function () {},
   "computeOutputShape": function () {},
   "constructor": function () {},
+  "countParams": function () {},
   "evaluate": function () {},
+  "execute": function () {},
   "fit": function () {},
   "fitLoop": function () {},
   "getClassName": function () {},
@@ -19129,16 +19533,19 @@ tf.Sequential.prototype = {
   "makeTestFunction": function () {},
   "nonTrainableWeights": function () {},
   "output": function () {},
+  "outputShape": function () {},
   "pop": function () {},
   "predict": function () {},
   "predictLoop": function () {},
   "predictOnBatch": function () {},
+  "retrieveSymbolicTensors": function () {},
   "runInternalGraph": function () {},
   "save": function () {},
   "setCallHook": function () {},
   "setWeights": function () {},
   "standardizeUserData": function () {},
   "stateful": function () {},
+  "summary": function () {},
   "testLoop": function () {},
   "toJSON": function () {},
   "trainableWeights": function () {},
@@ -19153,6 +19560,8 @@ tf.Tensor.prototype = {
   "acosh": function () {},
   "add": function () {},
   "addStrict": function () {},
+  "all": function () {},
+  "any": function () {},
   "argMax": function () {},
   "argMin": function () {},
   "as1D": function () {},
@@ -19185,6 +19594,7 @@ tf.Tensor.prototype = {
   "dispose": function () {},
   "div": function () {},
   "divStrict": function () {},
+  "dot": function () {},
   "elu": function () {},
   "equal": function () {},
   "equalStrict": function () {},
@@ -19194,12 +19604,14 @@ tf.Tensor.prototype = {
   "expm1": function () {},
   "flatten": function () {},
   "floor": function () {},
+  "floorDiv": function () {},
   "gather": function () {},
   "get": function () {},
   "greater": function () {},
   "greaterEqual": function () {},
   "greaterEqualStrict": function () {},
   "greaterStrict": function () {},
+  "isDisposed": function () {},
   "leakyRelu": function () {},
   "less": function () {},
   "lessEqual": function () {},
@@ -19292,6 +19704,8 @@ tf.Variable.prototype = {
   "acosh": function () {},
   "add": function () {},
   "addStrict": function () {},
+  "all": function () {},
+  "any": function () {},
   "argMax": function () {},
   "argMin": function () {},
   "as1D": function () {},
@@ -19326,6 +19740,7 @@ tf.Variable.prototype = {
   "dispose": function () {},
   "div": function () {},
   "divStrict": function () {},
+  "dot": function () {},
   "elu": function () {},
   "equal": function () {},
   "equalStrict": function () {},
@@ -19335,12 +19750,14 @@ tf.Variable.prototype = {
   "expm1": function () {},
   "flatten": function () {},
   "floor": function () {},
+  "floorDiv": function () {},
   "gather": function () {},
   "get": function () {},
   "greater": function () {},
   "greaterEqual": function () {},
   "greaterEqualStrict": function () {},
   "greaterStrict": function () {},
+  "isDisposed": function () {},
   "leakyRelu": function () {},
   "less": function () {},
   "lessEqual": function () {},
@@ -19425,6 +19842,7 @@ tf.environment.Environment.prototype = {
   "findBackend": function () {},
   "get": function () {},
   "getBestBackendType": function () {},
+  "getFeatures": function () {},
   "initBackend": function () {},
   "initDefaultBackend": function () {},
   "registerBackend": function () {},
@@ -19447,6 +19865,7 @@ tf.layers.Layer.prototype = {
   "computeMask": function () {},
   "computeOutputShape": function () {},
   "constructor": function () {},
+  "countParams": function () {},
   "getClassName": function () {},
   "getConfig": function () {},
   "getInputAt": function () {},
@@ -19458,6 +19877,7 @@ tf.layers.Layer.prototype = {
   "losses": function () {},
   "nonTrainableWeights": function () {},
   "output": function () {},
+  "outputShape": function () {},
   "setCallHook": function () {},
   "setWeights": function () {},
   "stateful": function () {},
@@ -19479,6 +19899,7 @@ tf.layers.RNN.prototype = {
   "computeMask": function () {},
   "computeOutputShape": function () {},
   "constructor": function () {},
+  "countParams": function () {},
   "getClassName": function () {},
   "getConfig": function () {},
   "getInitialState": function () {},
@@ -19492,6 +19913,7 @@ tf.layers.RNN.prototype = {
   "losses": function () {},
   "nonTrainableWeights": function () {},
   "output": function () {},
+  "outputShape": function () {},
   "resetStates": function () {},
   "setCallHook": function () {},
   "setStates": function () {},
@@ -19516,6 +19938,7 @@ tf.layers.RNNCell.prototype = {
   "computeMask": function () {},
   "computeOutputShape": function () {},
   "constructor": function () {},
+  "countParams": function () {},
   "getClassName": function () {},
   "getConfig": function () {},
   "getInputAt": function () {},
@@ -19527,6 +19950,7 @@ tf.layers.RNNCell.prototype = {
   "losses": function () {},
   "nonTrainableWeights": function () {},
   "output": function () {},
+  "outputShape": function () {},
   "setCallHook": function () {},
   "setWeights": function () {},
   "stateful": function () {},
@@ -19544,22 +19968,25 @@ tf.serialization.Serializable.prototype = {
   "getClassName": function () {}
 };
 tf.webgl.GPGPUContext.prototype = {
+  "addItemToPoll": function () {},
   "beginQuery": function () {},
   "blockUntilAllProgramsCompleted": function () {},
-  "createMatrixTexture": function () {},
+  "createFloat16MatrixTexture": function () {},
+  "createFloat32MatrixTexture": function () {},
   "createPackedMatrixTexture": function () {},
   "createProgram": function () {},
+  "createUnsignedBytesMatrixTexture": function () {},
   "debugValidate": function () {},
   "deleteMatrixTexture": function () {},
   "deleteProgram": function () {},
   "dispose": function () {},
+  "downloadByteEncodedFloatMatrixFromOutputTexture": function () {},
+  "downloadFloat32MatrixFromOutputTexture": function () {},
   "downloadMatrixDriver": function () {},
   "downloadMatrixDriverAsync": function () {},
   "downloadMatrixDriverSetup": function () {},
   "downloadMatrixDriverTeardown": function () {},
   "downloadMatrixFromPackedTexture": function () {},
-  "downloadMatrixFromRGBAColorTexture": function () {},
-  "downloadMatrixFromTexture": function () {},
   "downloadMatrixFromTextureAsync": function () {},
   "enableAutomaticDebugValidation": function () {},
   "endQuery": function () {},
@@ -19572,6 +19999,7 @@ tf.webgl.GPGPUContext.prototype = {
   "getUniformLocation": function () {},
   "getUniformLocationNoThrow": function () {},
   "isQueryAvailable": function () {},
+  "pollItems": function () {},
   "pollQueryTime": function () {},
   "runQuery": function () {},
   "setInputMatrixTexture": function () {},
@@ -19592,7 +20020,10 @@ tf.webgl.MathBackendWebGL.prototype = {
   "abs": function () {},
   "acos": function () {},
   "acosh": function () {},
+  "acquireTexture": function () {},
   "add": function () {},
+  "all": function () {},
+  "any": function () {},
   "argMax": function () {},
   "argMin": function () {},
   "argReduce": function () {},
@@ -19609,6 +20040,7 @@ tf.webgl.MathBackendWebGL.prototype = {
   "ceil": function () {},
   "clip": function () {},
   "compileAndRun": function () {},
+  "computeBytes": function () {},
   "concat": function () {},
   "conv2d": function () {},
   "conv2dDerFilter": function () {},
@@ -19617,9 +20049,10 @@ tf.webgl.MathBackendWebGL.prototype = {
   "cosh": function () {},
   "cumsum": function () {},
   "depthwiseConv2D": function () {},
+  "depthwiseConv2DDerFilter": function () {},
+  "depthwiseConv2DDerInput": function () {},
   "dispose": function () {},
   "disposeData": function () {},
-  "divide": function () {},
   "elu": function () {},
   "eluDer": function () {},
   "endTimer": function () {},
@@ -19628,6 +20061,7 @@ tf.webgl.MathBackendWebGL.prototype = {
   "exp": function () {},
   "expm1": function () {},
   "floor": function () {},
+  "floorDiv": function () {},
   "fromPixels": function () {},
   "gather": function () {},
   "getAndSaveBinary": function () {},
@@ -19635,7 +20069,6 @@ tf.webgl.MathBackendWebGL.prototype = {
   "getGPGPUContext": function () {},
   "getQueryTime": function () {},
   "getTexture": function () {},
-  "getTextureData": function () {},
   "getTextureManager": function () {},
   "greater": function () {},
   "greaterEqual": function () {},
@@ -19667,17 +20100,21 @@ tf.webgl.MathBackendWebGL.prototype = {
   "pow": function () {},
   "read": function () {},
   "readSync": function () {},
+  "realDivide": function () {},
   "reciprocal": function () {},
   "reduce": function () {},
   "register": function () {},
+  "releaseTexture": function () {},
   "relu": function () {},
   "reshape": function () {},
   "resizeBilinear": function () {},
   "resizeBilinearBackprop": function () {},
   "resizeNearestNeighbor": function () {},
+  "resizeNearestNeighborBackprop": function () {},
   "reverse": function () {},
   "round": function () {},
   "rsqrt": function () {},
+  "segOpCompute": function () {},
   "selu": function () {},
   "sigmoid": function () {},
   "sign": function () {},
@@ -19701,6 +20138,7 @@ tf.webgl.MathBackendWebGL.prototype = {
   "topKIndices": function () {},
   "topKValues": function () {},
   "transpose": function () {},
+  "unsortedSegmentSum": function () {},
   "uploadToGPU": function () {},
   "where": function () {},
   "write": function () {}

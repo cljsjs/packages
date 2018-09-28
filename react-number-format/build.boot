@@ -1,11 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.0"  :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.1"  :scope "test"]
                   [cljsjs/react "15.3.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.1.3")
+(def +lib-version+ "3.4.2")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -36,4 +36,5 @@
     (deps-cljs :name "cljsjs.react-number-format"
                :requires ["cljsjs.react"])
     (pom)
-    (jar)))
+    (jar)
+    (validate)))

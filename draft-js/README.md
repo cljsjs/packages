@@ -1,7 +1,7 @@
-# cljsjs/react
+# cljsjs/draft-js
 
 ```clojure
-[cljsjs/react "10.0.0-0"] ;; latest release
+[cljsjs/draft-js "0.10.5-0"] ;; latest release
 ```
 
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature

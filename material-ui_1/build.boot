@@ -1,12 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.0" :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.1" :scope "test"]
                   [cljsjs/react "16.4.1-0"]
                   [cljsjs/react-dom "16.4.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.4.0")
+(def +lib-version+ "3.1.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -41,9 +41,9 @@
                                                 "@material-ui/core/styles" MaterialUIStyles
                                                 "@material-ui/core/colors" MaterialUIColors
                                                 ;; old names
-                                                material-ui/styles MaterialUIStyles
-                                                material-ui/colors MaterialUIColors
-                                                material-ui MaterialUI}
+                                                "material-ui/styles" MaterialUIStyles
+                                                "material-ui/colors" MaterialUIColors
+                                                "material-ui" MaterialUI}
                               :requires ["react" "react-dom"]}]
               :externs [#"material-ui.ext.js"])
    (pom)
