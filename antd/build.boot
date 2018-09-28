@@ -7,7 +7,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.9.1")
+(def +lib-version+ "3.9.3")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -48,10 +48,9 @@
            #"^antd.min.css$" "cljsjs/antd/production/antd.min.inc.css"})
    (sift :include #{#"cljsjs"})
    (deps-cljs
-    :name "cljsjs.antd"
-    :requires ["cljsjs.react"
-               "cljsjs.react.dom"
-               "cljsjs.moment"])
+    :provides ["antd" "cljsjs.antd"]
+    :requires ["react" "react-dom" "moment"]
+    :global-exports '{antd antd})
    (pom)
    (jar)
    (validate-checksums)))
