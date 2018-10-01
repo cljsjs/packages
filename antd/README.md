@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/antd "3.9.1-0"] ;; latest release
+[cljsjs/antd "3.9.3-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -14,6 +14,14 @@ you can require the packaged library like so:
 (ns application.core
   (:require [cljsjs.antd]))
 ```
+
+This package also supports `:global-exports`:
+
+```clojure
+(ns application.core
+  (:require [antd :as antd]))
+```
+
 You would need to include the `antd` CSS file within your HTML file. The CSS files will be written to the following classpaths:
 
 * `cljsjs/antd/development/antd.inc.css`
