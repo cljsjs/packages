@@ -22,4 +22,5 @@
     (download :url +source-url+ :target "cljsjs/codeflask/development/codeflask.inc.js")
     (deps-cljs :provides ["cljsjs.codeflask"] :global-exports '{cljsjs.codeflask CodeFlask})
     (pom) 
-    (jar)))
+    (jar)
+    (validate)))
