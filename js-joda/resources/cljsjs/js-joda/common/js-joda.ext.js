@@ -6240,6 +6240,7 @@ var JSJoda = {
       "_seconds": {},
       "_secondsUntil": function () {},
       "adjustInto": function () {},
+      "atZone": function () {},
       "compareTo": function () {},
       "epochSecond": function () {},
       "equals": function () {},
