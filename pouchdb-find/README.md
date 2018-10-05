@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/pouchdb-find "7.0.0"] 
+[cljsjs/pouchdb-find "7.0.0-0"] ;; latest release
 ```
 [](/dependency)
 
