@@ -2,7 +2,7 @@
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.10.1" :scope "test"]
                   [cljsjs/bootstrap "3.3.6-1"]
-                  [cljsjs/jquery "1.9.1-0"]
+                  [cljsjs/jquery "3.2.1-0"]
                   [cljsjs/typeahead-bundle "0.11.1-1"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
