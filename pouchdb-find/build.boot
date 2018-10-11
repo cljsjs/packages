@@ -1,7 +1,7 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.10.1" :scope "test"]
-                  [cljsjs/pouchdb "6.3.4-0"]])
+                  [cljsjs/pouchdb "7.0.0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 

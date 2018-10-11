@@ -21,5 +21,5 @@ you can require the packaged library like so:
 
 Externs for this package were generated with [`javascript-externs-generator`](https://github.com/jmmk/javascript-externs-generator):
 ```shell
-generate-extern -f pouchdb-6.0.4.js -n PouchDB -o resources/cljsjs/pouchdb/common/pouchdb.ext.js
+generate-extern -f pouchdb-7.0.0.js -n PouchDB -o resources/cljsjs/pouchdb/common/pouchdb.ext.js
 ```
