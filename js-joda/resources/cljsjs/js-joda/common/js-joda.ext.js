@@ -6266,6 +6266,7 @@ var JSJoda = {
       "query": function () {},
       "range": function () {},
       "toEpochMilli": function () {},
+      "ofEpochMilli": function () {},
       "toJSON": function () {},
       "toString": function () {},
       "truncatedTo": function () {},
@@ -7685,6 +7686,11 @@ var JSJoda = {
       "_days": {},
       "_months": {},
       "_years": {},
+      "of": function () {},
+      "ofDays": function () {},
+      "ofWeeks": function () {},
+      "ofMonths": function () {},
+      "ofYears": function () {},
       "addTo": function () {},
       "chronology": function () {},
       "days": function () {},
@@ -7990,7 +7996,8 @@ var JSJoda = {
         "transition": function () {},
         "transitionRules": function () {},
         "transitions": function () {},
-        "validOffsets": function () {}
+        "validOffsets": function () {},
+        "systemDefault": function () {}
       },
       "equals": function () {},
       "hashCode": function () {},
@@ -8449,7 +8456,8 @@ JSJoda.DateTimeFormatter.prototype = {
   "toString": function () {},
   "withChronology": function () {},
   "withLocale": function () {},
-  "withResolverStyle": function () {}
+  "withResolverStyle": function () {},
+  "ofPattern": function () {}
 };
 JSJoda.DateTimeFormatterBuilder.prototype = {
   "_appendInternal": function () {},
@@ -9119,7 +9127,8 @@ JSJoda.ZoneId.prototype = {
   "normalized": function () {},
   "rules": function () {},
   "toJSON": function () {},
-  "toString": function () {}
+  "toString": function () {},
+  "systemDefault": function () {}
 };
 JSJoda.ZoneOffset.prototype = {
   "adjustInto": function () {},
@@ -9321,6 +9330,206 @@ JSJoda._.StringBuilder.prototype = {
   "setLength": function () {},
   "toString": function () {}
 };
+
 /**********************************************************************
  * End Generated Extern for JSJoda
 /**********************************************************************/
+JSJoda.use;
+
+/*******
+following additional 'static' method properties generated from https://github.com/henryw374/cljs.java-time/blob/master/dev/externs.clj
+****/
+
+JSJoda.Period
+JSJoda.Period.between
+JSJoda.Period.parse
+JSJoda.Period.ofWeeks
+JSJoda.Period.from
+JSJoda.Period.ofYears
+JSJoda.Period.ofDays
+JSJoda.Period.readExternal
+JSJoda.Period.ofMonths
+JSJoda.Period.between
+JSJoda.Period.of
+JSJoda.Instant
+JSJoda.Instant.from
+JSJoda.Instant.readExternal
+JSJoda.Instant.now
+JSJoda.Instant.now
+JSJoda.Instant.parse
+JSJoda.Instant.ofEpochSecond
+JSJoda.Instant.ofEpochMilli
+JSJoda.Instant.ofEpochSecond
+JSJoda.Duration
+JSJoda.Duration.ofNanos
+JSJoda.Duration.ofSeconds
+JSJoda.Duration.ofDays
+JSJoda.Duration.between
+JSJoda.Duration.from
+JSJoda.Duration.ofMillis
+JSJoda.Duration.ofHours
+JSJoda.Duration.ofMinutes
+JSJoda.Duration.parse
+JSJoda.Duration.readExternal
+JSJoda.Duration.of
+JSJoda.Duration.ofSeconds
+JSJoda.LocalDate
+JSJoda.LocalDate.from
+JSJoda.LocalDate.timeLineOrder
+JSJoda.LocalDate.of
+JSJoda.LocalDate.now
+JSJoda.LocalDate.parse
+JSJoda.LocalDate.from
+JSJoda.LocalDate.readExternal
+JSJoda.LocalDate.now
+JSJoda.LocalDate.parse
+JSJoda.LocalDate.of
+JSJoda.LocalDate.ofEpochDay
+JSJoda.LocalDate.now
+JSJoda.LocalDate.ofYearDay
+JSJoda.LocalTime
+JSJoda.LocalTime.of
+JSJoda.LocalTime.parse
+JSJoda.LocalTime.ofSecondOfDay
+JSJoda.LocalTime.now
+JSJoda.LocalTime.now
+JSJoda.LocalTime.from
+JSJoda.LocalTime.ofNanoOfDay
+JSJoda.LocalTime.parse
+JSJoda.LocalTime.now
+JSJoda.LocalTime.of
+JSJoda.LocalTime.readExternal
+JSJoda.LocalTime.of
+JSJoda.ZonedDateTime
+JSJoda.ZonedDateTime.timeLineOrder
+JSJoda.ZonedDateTime.from
+JSJoda.ZonedDateTime.readExternal
+JSJoda.ZonedDateTime.now
+JSJoda.ZonedDateTime.now
+JSJoda.ZonedDateTime.now
+JSJoda.ZonedDateTime.parse
+JSJoda.ZonedDateTime.ofLocal
+JSJoda.ZonedDateTime.parse
+JSJoda.ZonedDateTime.of
+JSJoda.ZonedDateTime.of
+JSJoda.ZonedDateTime.ofInstant
+JSJoda.ZonedDateTime.ofStrict
+JSJoda.ZonedDateTime.from
+JSJoda.ZonedDateTime.ofInstant
+JSJoda.ZonedDateTime.of
+JSJoda.LocalDateTime
+JSJoda.LocalDateTime.timeLineOrder
+JSJoda.LocalDateTime.from
+JSJoda.LocalDateTime.of
+JSJoda.LocalDateTime.parse
+JSJoda.LocalDateTime.from
+JSJoda.LocalDateTime.readExternal
+JSJoda.LocalDateTime.parse
+JSJoda.LocalDateTime.of
+JSJoda.LocalDateTime.of
+JSJoda.LocalDateTime.of
+JSJoda.LocalDateTime.of
+JSJoda.LocalDateTime.now
+JSJoda.LocalDateTime.now
+JSJoda.LocalDateTime.of
+JSJoda.LocalDateTime.now
+JSJoda.LocalDateTime.ofInstant
+JSJoda.LocalDateTime.ofEpochSecond
+JSJoda.LocalDateTime.of
+JSJoda.Year
+JSJoda.Year.parse
+JSJoda.Year.now
+JSJoda.Year.now
+JSJoda.Year.of
+JSJoda.Year.isLeap
+JSJoda.Year.parse
+JSJoda.Year.now
+JSJoda.Year.readExternal
+JSJoda.Year.from
+JSJoda.YearMonth
+JSJoda.YearMonth.readExternal
+JSJoda.YearMonth.of
+JSJoda.YearMonth.now
+JSJoda.YearMonth.now
+JSJoda.YearMonth.of
+JSJoda.YearMonth.now
+JSJoda.YearMonth.parse
+JSJoda.YearMonth.from
+JSJoda.YearMonth.parse
+JSJoda.ZoneId
+JSJoda.ZoneId.getAvailableZoneIds
+JSJoda.ZoneId.of
+JSJoda.ZoneId.of
+JSJoda.ZoneId.ofOffset
+JSJoda.ZoneId.of
+JSJoda.ZoneId.from
+JSJoda.ZoneId.systemDefault
+JSJoda.DayOfWeek
+JSJoda.DayOfWeek.valueOf
+JSJoda.DayOfWeek.values
+JSJoda.DayOfWeek.of
+JSJoda.DayOfWeek.from
+JSJoda.Month
+JSJoda.Month.values
+JSJoda.Month.from
+JSJoda.Month.valueOf
+JSJoda.Month.of
+JSJoda.Clock
+JSJoda.Clock.system
+JSJoda.Clock.systemUTC
+JSJoda.Clock.tickMinutes
+JSJoda.Clock.tickSeconds
+JSJoda.Clock.tick
+JSJoda.Clock.fixed
+JSJoda.Clock.offset
+JSJoda.Clock.systemDefaultZone
+JSJoda.ZoneOffset
+JSJoda.ZoneOffset.getAvailableZoneIds
+JSJoda.ZoneOffset.of
+JSJoda.ZoneOffset.of
+JSJoda.ZoneOffset.ofOffset
+JSJoda.ZoneOffset.of
+JSJoda.ZoneOffset.from
+JSJoda.ZoneOffset.systemDefault
+JSJoda.ZoneOffset.from
+JSJoda.ZoneOffset.of
+JSJoda.ZoneOffset.ofTotalSeconds
+JSJoda.ZoneOffset.readExternal
+JSJoda.ZoneOffset.ofHoursMinutesSeconds
+JSJoda.ZoneOffset.ofHours
+JSJoda.ZoneOffset.ofHoursMinutes
+JSJoda.ChronoUnit
+JSJoda.ChronoUnit.values
+JSJoda.ChronoUnit.valueOf
+JSJoda.ChronoField
+JSJoda.ChronoField.values
+JSJoda.ChronoField.valueOf
+JSJoda.TemporalAdjusters
+JSJoda.TemporalAdjusters.nextOrSame
+JSJoda.TemporalAdjusters.ofDateAdjuster
+JSJoda.TemporalAdjusters.dayOfWeekInMonth
+JSJoda.TemporalAdjusters.next
+JSJoda.TemporalAdjusters.previousOrSame
+JSJoda.TemporalAdjusters.firstDayOfNextYear
+JSJoda.TemporalAdjusters.lastDayOfYear
+JSJoda.TemporalAdjusters.firstDayOfNextMonth
+JSJoda.TemporalAdjusters.firstDayOfYear
+JSJoda.TemporalAdjusters.lastInMonth
+JSJoda.TemporalAdjusters.lastDayOfMonth
+JSJoda.TemporalAdjusters.firstInMonth
+JSJoda.TemporalAdjusters.firstDayOfMonth
+JSJoda.TemporalAdjusters.previous
+JSJoda.Temporal
+JSJoda.TemporalAmount
+JSJoda.DateTimeFormatter
+JSJoda.DateTimeFormatter.ofLocalizedDate
+JSJoda.DateTimeFormatter.parsedExcessDays
+JSJoda.DateTimeFormatter.ofPattern
+JSJoda.DateTimeFormatter.ofLocalizedTime
+JSJoda.DateTimeFormatter.ofPattern
+JSJoda.DateTimeFormatter.ofLocalizedDateTime
+JSJoda.DateTimeFormatter.ofLocalizedDateTime
+JSJoda.DateTimeFormatter.parsedLeapSecond
+JSJoda.ResolverStyle
+JSJoda.ResolverStyle.values
+JSJoda.ResolverStyle.valueOf
