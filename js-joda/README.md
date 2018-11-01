@@ -23,17 +23,10 @@ you can require and use the packaged library like so:
 
 built with cli of this [externs generator](https://github.com/jmmk/javascript-externs-generator)
 
+and additionally [this custom generator](https://github.com/henryw374/cljs.java-time/blob/master/dev/externs.clj)
+
 ### Replacements
 
-see build.boot for a variable that needs to be renamed in the DecimalStyle.convertToDigit fn. This can be tested
-like so
-
-```
-(-> (.. js/JSJoda -DateTimeFormatter)
-    (.ofPattern "yyyy-MM-dd")
-    (.decimalStyle)
-    (.convertToDigit "1"))
-```
-
+None
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps
