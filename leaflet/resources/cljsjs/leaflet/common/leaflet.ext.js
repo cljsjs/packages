@@ -646,6 +646,7 @@ var L = {
     "setZoomAround": function () {},
     "fitBounds": function () {},
     "fitWorld": function () {},
+    "flyToBounds": function () {},
     "panTo": function () {},
     "panInsideBounds": function () {},
     "panBy": function () {},
