@@ -1,13 +1,8 @@
-# cljsjs/js-joda-timezone
-
-
-This adds timezone database info to to js-joda.
-
-Add the dependency along with cljsjs/js-joda to enable zone-related functionality
+# cljsjs/js-joda-locale-en-us
 
 [](dependency)
 ```clojure
-[cljsjs/js-joda-timezone "2.0.1-0"] 
+[cljsjs/js-joda-locale-en-us "2.0.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -18,20 +13,19 @@ you can require and use the packaged library like so:
 ```clojure
 (ns application.core
   (:require 
-     [cljsjs.js-joda]
-     [cljsjs.js-joda-timezone]))
-  
+  [cljsjs.js-joda]
+  [cljsjs.js-joda-locale-en-us]))
+
 ```
 
 ## Info on how to build
 
 ### Externs
 
-None.
-
+None
+ 
 ### Replacements
 
-None.
+None
 
-[flibs]: https://github.com/clojure/clojurescript/wiki/Foreign-Dependencies
-
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
