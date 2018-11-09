@@ -32,6 +32,7 @@ var vega = {
       "nested": {},
       "pick": function () {},
       "tag": {},
+      "tip": function () {},
       "type": {}
     },
     "group": {
@@ -64,6 +65,7 @@ var vega = {
       "nested": {},
       "pick": function () {},
       "tag": {},
+      "tip": function () {},
       "type": {}
     },
     "path": {
@@ -127,6 +129,7 @@ var vega = {
       "nested": {},
       "pick": function () {},
       "tag": {},
+      "tip": function () {},
       "type": {}
     }
   },
@@ -191,6 +194,8 @@ var vega = {
   "fastmap": function () {},
   "field": function () {},
   "font": function () {},
+  "fontFamily": function () {},
+  "fontSize": function () {},
   "formatLocale": function () {},
   "formats": function () {},
   "id": {
@@ -261,6 +266,7 @@ var vega = {
   "sceneVisit": function () {},
   "sceneZOrder": function () {},
   "scheme": function () {},
+  "schemeDiscretized": function () {},
   "setRandom": function () {},
   "splitAccessPath": function () {},
   "stringValue": function () {},
@@ -357,6 +363,7 @@ var vega = {
       }
     },
     "encode": function () {},
+    "expression": function () {},
     "extent": {
       "Definition": {
         "metadata": {},
@@ -493,6 +500,7 @@ var vega = {
         "type": {}
       }
     },
+    "load": function () {},
     "lookup": {
       "Definition": {
         "metadata": {
@@ -591,7 +599,6 @@ var vega = {
         "metadata": {
           "changes": {}
         },
-        "output": {},
         "params": {},
         "type": {}
       }
@@ -740,6 +747,7 @@ vega.CanvasHandler.prototype = {
   "eventName": function () {},
   "events": function () {},
   "fire": function () {},
+  "getItemBoundingClientRect": function () {},
   "handleHref": function () {},
   "handleTooltip": function () {},
   "handlers": function () {},
@@ -773,8 +781,7 @@ vega.CanvasRenderer.prototype = {
   "render": function () {},
   "renderAsync": function () {},
   "resize": function () {},
-  "sanitizeURL": function () {},
-  "scene": function () {}
+  "sanitizeURL": function () {}
 };
 vega.Dataflow.prototype = {
   "_enqueue": function () {},
@@ -821,8 +828,10 @@ vega.GroupItem.prototype = {
 };
 vega.Handler.prototype = {
   "_handlerIndex": function () {},
+  "canvas": function () {},
   "element": function () {},
   "eventName": function () {},
+  "getItemBoundingClientRect": function () {},
   "handleHref": function () {},
   "handleTooltip": function () {},
   "handlers": function () {},
@@ -902,6 +911,7 @@ vega.Renderer.prototype = {
   "_load": function () {},
   "_render": function () {},
   "background": function () {},
+  "canvas": function () {},
   "dirty": function () {},
   "element": function () {},
   "initialize": function () {},
@@ -909,8 +919,7 @@ vega.Renderer.prototype = {
   "render": function () {},
   "renderAsync": function () {},
   "resize": function () {},
-  "sanitizeURL": function () {},
-  "scene": function () {}
+  "sanitizeURL": function () {}
 };
 vega.ResourceLoader.prototype = {
   "loadImage": function () {},
@@ -920,9 +929,11 @@ vega.ResourceLoader.prototype = {
 };
 vega.SVGHandler.prototype = {
   "_handlerIndex": function () {},
+  "canvas": function () {},
   "constructor": function () {},
   "element": function () {},
   "eventName": function () {},
+  "getItemBoundingClientRect": function () {},
   "handleHref": function () {},
   "handleTooltip": function () {},
   "handlers": function () {},
@@ -930,8 +941,7 @@ vega.SVGHandler.prototype = {
   "off": function () {},
   "on": function () {},
   "origin": function () {},
-  "scene": function () {},
-  "svg": function () {}
+  "scene": function () {}
 };
 vega.SVGRenderer.prototype = {
   "_dirtyCheck": function () {},
@@ -940,6 +950,7 @@ vega.SVGRenderer.prototype = {
   "_resetDefs": function () {},
   "_update": function () {},
   "background": function () {},
+  "canvas": function () {},
   "constructor": function () {},
   "dirty": function () {},
   "draw": function () {},
@@ -951,7 +962,6 @@ vega.SVGRenderer.prototype = {
   "renderAsync": function () {},
   "resize": function () {},
   "sanitizeURL": function () {},
-  "scene": function () {},
   "style": function () {},
   "svg": function () {},
   "updateDefs": function () {}
@@ -962,6 +972,7 @@ vega.SVGStringRenderer.prototype = {
   "attributes": function () {},
   "background": function () {},
   "buildDefs": function () {},
+  "canvas": function () {},
   "constructor": function () {},
   "dirty": function () {},
   "element": function () {},
@@ -974,7 +985,6 @@ vega.SVGStringRenderer.prototype = {
   "renderAsync": function () {},
   "resize": function () {},
   "sanitizeURL": function () {},
-  "scene": function () {},
   "svg": function () {}
 };
 vega.Scenegraph.prototype = {
@@ -999,6 +1009,7 @@ vega.View.prototype = {
   "_resetRenderer": function () {},
   "_resizeView": function () {},
   "add": function () {},
+  "addDataListener": function () {},
   "addEventListener": function () {},
   "addResizeListener": function () {},
   "addSignalListener": function () {},
@@ -1032,6 +1043,7 @@ vega.View.prototype = {
   "pulse": function () {},
   "rank": function () {},
   "remove": function () {},
+  "removeDataListener": function () {},
   "removeEventListener": function () {},
   "removeResizeListener": function () {},
   "removeSignalListener": function () {},
@@ -1043,15 +1055,16 @@ vega.View.prototype = {
   "run": function () {},
   "runAfter": function () {},
   "runAsync": function () {},
+  "scale": function () {},
   "scenegraph": function () {},
   "setState": function () {},
   "signal": function () {},
   "stamp": function () {},
+  "timer": function () {},
   "toCanvas": function () {},
   "toImageURL": function () {},
   "toSVG": function () {},
   "tooltip": function () {},
-  "tooltipHandler": function () {},
   "touch": function () {},
   "update": function () {},
   "warn": function () {},
@@ -1234,6 +1247,17 @@ vega.transforms.encode.prototype = {
   "skip": function () {},
   "targets": function () {},
   "transform": function () {}
+};
+vega.transforms.expression.prototype = {
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {}
 };
 vega.transforms.extent.prototype = {
   "constructor": function () {},
@@ -1475,6 +1499,18 @@ vega.transforms.legendentries.prototype = {
   "transform": function () {}
 };
 vega.transforms.linkpath.prototype = {
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
+};
+vega.transforms.load.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1936,4 +1972,4 @@ vega.transforms.wordcloud.prototype = {
 };
 /**********************************************************************
  * End Generated Extern for vega
- **********************************************************************/
+/**********************************************************************/
