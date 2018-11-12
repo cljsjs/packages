@@ -247,6 +247,7 @@ moment.prototype = {
   "toObject": function () {},
   "toString": function () {},
   "unix": function () {},
+  "updateLocale": function () {},
   "utc": function () {},
   "utcOffset": function () {},
   "valueOf": function () {},
