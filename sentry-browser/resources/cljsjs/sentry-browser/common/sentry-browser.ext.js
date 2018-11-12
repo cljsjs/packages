@@ -195,7 +195,6 @@ Sentry.BaseClient.prototype = {
   "prepareEvent": function () {},
   "processEvent": function () {},
   "close": function () {},
-  "close": function () {},
   "getIntegration": function () {}
 };
 
