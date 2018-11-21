@@ -1,11 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.1" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.3" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "4.3.0")
-(def +version+ (str +lib-version+ "-0"))
+(def +lib-version+ "5.5.0")
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/dropzone
@@ -18,9 +18,10 @@
 (deftask package []
   (comp
     (download :url (format "https://github.com/enyo/dropzone/archive/v%s.zip" +lib-version+)
-              :checksum "8BD1A2E5DE0903CB3140B597F23B07D8"
+              :checksum "d062716ee9eb0fe7a2740a887f1f3c10"
               :unzip true)
     (sift :move {#"^dropzone-\d\.\d\.\d/dist/dropzone.js" "cljsjs/dropzone/development/dropzone.inc.js"
+                 #"^dropzone-\d\.\d\.\d/dist/dropzone.css" "cljsjs/dropzone/development/dropzone.inc.css"
                  #"^dropzone-\d\.\d\.\d/dist/min/dropzone.min.js" "cljsjs/dropzone/production/dropzone.min.inc.js"
                  #"^dropzone-\d\.\d\.\d/dist/min/dropzone.min.css" "cljsjs/dropzone/common/dropzone.min.css"})
     (sift :include #{#"^cljsjs"})

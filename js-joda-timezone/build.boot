@@ -1,9 +1,9 @@
 (set-env!
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.1"  :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.3"  :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.3.0") 
+(def +lib-version+ "2.0.1") 
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!

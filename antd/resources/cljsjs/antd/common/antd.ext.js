@@ -411,6 +411,7 @@ var antd = {
       "closable": {},
       "height": {},
       "level": {},
+      "mask": {},
       "maskClosable": {},
       "placement": {},
       "prefixCls": {},
@@ -560,7 +561,6 @@ var antd = {
   },
   "Icon": {
     "createFromIconfontCN": function () {},
-    "displayName": {},
     "getTwoToneColor": function () {},
     "setTwoToneColor": function () {}
   },
@@ -906,12 +906,12 @@ var antd = {
         "_store": {},
         "key": {},
         "props": {
+          "theme": {},
           "type": {}
         },
         "ref": {},
         "type": {
           "createFromIconfontCN": function () {},
-          "displayName": {},
           "getTwoToneColor": function () {},
           "setTwoToneColor": function () {}
         }
@@ -1029,7 +1029,6 @@ var antd = {
         "ref": {},
         "type": {
           "createFromIconfontCN": function () {},
-          "displayName": {},
           "getTwoToneColor": function () {},
           "setTwoToneColor": function () {}
         }
@@ -1326,6 +1325,9 @@ var antd = {
         "forceRender": {
           "isRequired": function () {}
         },
+        "id": {
+          "isRequired": function () {}
+        },
         "placeholder": {
           "isRequired": function () {}
         },
@@ -1420,6 +1422,9 @@ var antd = {
         "isRequired": function () {}
       },
       "dataSource": {
+        "isRequired": function () {}
+      },
+      "disabled": {
         "isRequired": function () {}
       },
       "filterOption": {
@@ -1672,9 +1677,7 @@ var antd = {
         "title": {
           "isRequired": function () {}
         },
-        "value": {
-          "isRequired": function () {}
-        }
+        "value": function () {}
       }
     },
     "defaultProps": {
@@ -2619,7 +2622,8 @@ var antd = {
         "filterReset": {},
         "filterTitle": {},
         "selectAll": {},
-        "selectInvert": {}
+        "selectInvert": {},
+        "sortTitle": {}
       },
       "TimePicker": {
         "placeholder": {}
@@ -3548,7 +3552,8 @@ var antd = {
         "filterReset": {},
         "filterTitle": {},
         "selectAll": {},
-        "selectInvert": {}
+        "selectInvert": {},
+        "sortTitle": {}
       },
       "TimePicker": {
         "placeholder": {}
@@ -3862,6 +3867,126 @@ var antd = {
           "rangePlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "year": {},
+          "yearFormat": {},
+          "yearSelect": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "Modal": {
+        "cancelText": {},
+        "justOkText": {},
+        "okText": {}
+      },
+      "Pagination": {
+        "items_per_page": {},
+        "jump_to": {},
+        "jump_to_confirm": {},
+        "next_3": {},
+        "next_5": {},
+        "next_page": {},
+        "page": {},
+        "prev_3": {},
+        "prev_5": {},
+        "prev_page": {}
+      },
+      "Popconfirm": {
+        "cancelText": {},
+        "okText": {}
+      },
+      "Select": {
+        "notFoundContent": {}
+      },
+      "Table": {
+        "emptyText": {},
+        "filterConfirm": {},
+        "filterReset": {},
+        "filterTitle": {},
+        "selectAll": {},
+        "selectInvert": {}
+      },
+      "TimePicker": {
+        "placeholder": {}
+      },
+      "Transfer": {
+        "itemUnit": {},
+        "itemsUnit": {},
+        "notFoundContent": {},
+        "searchPlaceholder": {}
+      },
+      "Upload": {
+        "previewFile": {},
+        "removeFile": {},
+        "uploadError": {},
+        "uploading": {}
+      },
+      "locale": {}
+    },
+    "mn_MN": {
+      "Calendar": {
+        "lang": {
+          "backToToday": {},
+          "clear": {},
+          "dateFormat": {},
+          "dateSelect": {},
+          "dateTimeFormat": {},
+          "dayFormat": {},
+          "decadeSelect": {},
+          "month": {},
+          "monthBeforeYear": {},
+          "monthSelect": {},
+          "nextCentury": {},
+          "nextDecade": {},
+          "nextMonth": {},
+          "nextYear": {},
+          "now": {},
+          "ok": {},
+          "placeholder": {},
+          "previousCentury": {},
+          "previousDecade": {},
+          "previousMonth": {},
+          "previousYear": {},
+          "rangePlaceholder": {},
+          "timeSelect": {},
+          "today": {},
+          "weekSelect": {},
+          "year": {},
+          "yearFormat": {},
+          "yearSelect": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "DatePicker": {
+        "lang": {
+          "backToToday": {},
+          "clear": {},
+          "dateFormat": {},
+          "dateSelect": {},
+          "dateTimeFormat": {},
+          "dayFormat": {},
+          "decadeSelect": {},
+          "month": {},
+          "monthBeforeYear": {},
+          "monthSelect": {},
+          "nextCentury": {},
+          "nextDecade": {},
+          "nextMonth": {},
+          "nextYear": {},
+          "now": {},
+          "ok": {},
+          "placeholder": {},
+          "previousCentury": {},
+          "previousDecade": {},
+          "previousMonth": {},
+          "previousYear": {},
+          "rangePlaceholder": {},
+          "timeSelect": {},
+          "today": {},
+          "weekSelect": {},
           "year": {},
           "yearFormat": {},
           "yearSelect": {}
@@ -5784,7 +5909,8 @@ var antd = {
         "filterReset": {},
         "filterTitle": {},
         "selectAll": {},
-        "selectInvert": {}
+        "selectInvert": {},
+        "sortTitle": {}
       },
       "TimePicker": {
         "placeholder": {}

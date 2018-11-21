@@ -1,14 +1,14 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.1" :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.3" :scope "test"]
                   [cljsjs/bootstrap "3.3.6-1"]
-                  [cljsjs/jquery "1.9.1-0"]
+                  [cljsjs/jquery "3.2.1-0"]
                   [cljsjs/typeahead-bundle "0.11.1-1"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "4.0.2")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
   pom  {:project     'cljsjs/bootstrap-typeahead

@@ -1,8 +1,4 @@
-{"cljsjs/material-ui/development/material-ui-svg-icons.inc.js"
- "3624BABFDC2B361644E306056F5E3B5A",
- "cljsjs/material-ui/development/material-ui.inc.js"
- "3503EE22FE8A5101D84B48957CEAB5B7",
- "cljsjs/material-ui/production/material-ui-svg-icons.min.inc.js"
- "4B7289D552C82F5D3FEA19CDE52E24E6",
+{"cljsjs/material-ui/development/material-ui.inc.js"
+ "DC3FB4F926B88003DDF75C889E311B72",
  "cljsjs/material-ui/production/material-ui.min.inc.js"
- "DBD605C717EE565636EF696579DD01CD"}
+ "19E80928DE5DA9D8B8667DE07057A654"}

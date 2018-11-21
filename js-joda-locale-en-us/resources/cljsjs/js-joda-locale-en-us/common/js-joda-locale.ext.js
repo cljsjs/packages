@@ -1,0 +1,2 @@
+var JSJodaLocale;
+JSJodaLocale.Locale

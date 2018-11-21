@@ -1,7 +1,7 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[adzerk/bootlaces "0.1.13" :scope "test"]
-                  [cljsjs/boot-cljsjs "0.10.1" :scope "test"]
+                  [cljsjs/boot-cljsjs "0.10.3" :scope "test"]
                   [cljsjs/react "15.6.2-1"]
                   [cljsjs/react-dom "15.6.2-1"]
                   [cljsjs/bootstrap "3.3.6-1"]])

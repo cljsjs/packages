@@ -1,4 +1,5 @@
-# cljsjs/js-joda
+# cljsjs/js-joda-timezone
+
 
 This adds timezone database info to to js-joda.
 
@@ -6,7 +7,7 @@ Add the dependency along with cljsjs/js-joda to enable zone-related functionalit
 
 [](dependency)
 ```clojure
-[cljsjs/js-joda-timezone "1.3.0-0"] ;; latest release
+[cljsjs/js-joda-timezone "2.0.1-0"] ;; latest release
 ```
 [](/dependency)
 

@@ -1,6 +1,6 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/boot-cljsjs "0.10.1" :scope "test"]
+ :dependencies '[[cljsjs/boot-cljsjs "0.10.3" :scope "test"]
                  [cljsjs/filesaverjs "1.3.3-0"]
                  [cljsjs/jszip "3.1.3-0"]])
 

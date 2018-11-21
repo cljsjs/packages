@@ -224,6 +224,11 @@ React.Component.prototype.getDerivedStateFromProps = function() {};
 /**
  * @protected
  */
+React.Component.prototype.getDerivedStateFromError = function() {};
+
+/**
+ * @protected
+ */
 React.Component.prototype.getSnapshotBeforeUpdate = function() {};
 
 /**
@@ -1878,3 +1883,12 @@ isTextInputElement.supportedInputTypes = {
   url: true,
   week: true
 };
+
+// 16.6 new api
+
+React.Suspense = function() {};
+React.Suspense.prototype.maxDuration;
+React.memo = function() {};
+React.lazy = function() {};
+React.unstable_ConcurrentMode = function() {};
+React.unstable_Profiler = function() {};
