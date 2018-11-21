@@ -18,24 +18,68 @@ var vl = {
     },
     "SUM_OPS": {},
     "isAggregateOp": function () {},
-    "isCountingAggregateOp": function () {}
+    "isCountingAggregateOp": function () {},
+    "isMinMaxOp": function () {}
   },
   "axis": {
     "AXIS_PARTS": {},
     "AXIS_PROPERTIES": {},
     "AXIS_PROPERTY_TYPE": {
+      "bandPosition": {},
       "domain": {},
+      "domainColor": {},
+      "domainOpacity": {},
+      "domainWidth": {},
+      "format": {},
       "grid": {},
+      "gridColor": {},
+      "gridDash": {},
+      "gridOpacity": {},
       "gridScale": {},
+      "gridWidth": {},
+      "labelAlign": {},
+      "labelAngle": {},
+      "labelBaseline": {},
+      "labelBound": {},
+      "labelColor": {},
       "labelFlush": {},
+      "labelFlushOffset": {},
+      "labelFont": {},
+      "labelFontSize": {},
+      "labelFontWeight": {},
+      "labelLimit": {},
+      "labelOpacity": {},
       "labelOverlap": {},
+      "labelPadding": {},
       "labels": {},
       "maxExtent": {},
       "minExtent": {},
       "offset": {},
+      "orient": {},
+      "position": {},
       "scale": {},
+      "tickColor": {},
+      "tickCount": {},
+      "tickExtra": {},
+      "tickOffset": {},
+      "tickOpacity": {},
+      "tickRound": {},
+      "tickSize": {},
+      "tickWidth": {},
       "ticks": {},
       "title": {},
+      "titleAlign": {},
+      "titleAngle": {},
+      "titleBaseline": {},
+      "titleColor": {},
+      "titleFont": {},
+      "titleFontSize": {},
+      "titleFontWeight": {},
+      "titleLimit": {},
+      "titleOpacity": {},
+      "titlePadding": {},
+      "titleX": {},
+      "titleY": {},
       "values": {},
       "zindex": {}
     },
@@ -45,7 +89,9 @@ var vl = {
   "bin": {
     "autoMaxBins": function () {},
     "binToString": function () {},
-    "isBinParams": function () {}
+    "isBinParams": function () {},
+    "isBinned": function () {},
+    "isBinning": function () {}
   },
   "channel": {
     "CHANNELS": {},
@@ -111,19 +157,16 @@ var vl = {
     "getSupportedMark": function () {},
     "isChannel": function () {},
     "isColorChannel": function () {},
+    "isNonPositionScaleChannel": function () {},
     "isScaleChannel": function () {},
     "rangeType": function () {},
     "supportMark": function () {}
   },
   "compile": function () {},
   "compositeMark": {
-    "COMPOSITE_MARK_STYLES": {},
-    "VL_ONLY_COMPOSITE_MARK_SPECIFIC_CONFIG_PROPERTY_INDEX": {
-      "box": {},
-      "boxMid": {},
-      "boxWhisker": {}
-    },
     "add": function () {},
+    "getAllCompositeMarks": function () {},
+    "getCompositeMarkParts": function () {},
     "normalize": function () {},
     "remove": function () {}
   },
@@ -144,22 +187,39 @@ var vl = {
         "binSpacing": {},
         "continuousBandSize": {}
       },
-      "box": {
+      "boxplot": {
+        "box": {},
         "extent": {},
-        "size": {}
+        "median": {
+          "color": {}
+        },
+        "outliers": {},
+        "rule": {},
+        "size": {},
+        "ticks": {}
       },
-      "boxMid": {
-        "color": {}
-      },
-      "boxWhisker": {},
       "circle": {},
       "countTitle": {},
+      "errorband": {
+        "band": {
+          "opacity": {}
+        },
+        "borders": {}
+      },
+      "errorbar": {
+        "center": {},
+        "rule": {},
+        "ticks": {}
+      },
       "geoshape": {},
       "invalidValues": {},
       "legend": {},
       "line": {},
       "mark": {
-        "color": {}
+        "color": {},
+        "tooltip": {
+          "content": {}
+        }
       },
       "padding": {},
       "point": {},
@@ -180,6 +240,8 @@ var vl = {
         "minSize": {},
         "minStrokeWidth": {},
         "pointPadding": {},
+        "quantileCount": {},
+        "quantizeCount": {},
         "rangeStep": {},
         "textXRangeStep": {}
       },
@@ -231,6 +293,7 @@ var vl = {
       "width": {}
     },
     "initConfig": function () {},
+    "isVgScheme": function () {},
     "stripAndRedirectConfig": function () {}
   },
   "data": {
@@ -250,6 +313,7 @@ var vl = {
   },
   "encoding": {
     "channelHasField": function () {},
+    "extractTransformsFromEncoding": function () {},
     "fieldDefs": function () {},
     "forEach": function () {},
     "isAggregate": function () {},
@@ -257,13 +321,19 @@ var vl = {
     "normalizeEncoding": function () {},
     "reduce": function () {}
   },
-  "facet": {},
+  "extractTransforms": function () {},
+  "facet": {
+    "isFacetFieldDef": function () {}
+  },
   "fieldDef": {
     "channelCompatibility": function () {},
+    "defaultTitle": function () {},
     "defaultTitleFormatter": function () {},
     "defaultType": function () {},
+    "format": function () {},
     "functionalTitleFormatter": function () {},
     "getFieldDef": function () {},
+    "getGuide": function () {},
     "hasConditionalFieldDef": function () {},
     "hasConditionalValueDef": function () {},
     "isConditionalDef": function () {},
@@ -272,10 +342,13 @@ var vl = {
     "isCount": function () {},
     "isDiscrete": function () {},
     "isFieldDef": function () {},
+    "isMarkPropFieldDef": function () {},
     "isNumberFieldDef": function () {},
+    "isPositionFieldDef": function () {},
     "isRepeatRef": function () {},
     "isScaleFieldDef": function () {},
     "isStringFieldDef": function () {},
+    "isTextFieldDef": function () {},
     "isTimeFieldDef": function () {},
     "isValueDef": function () {},
     "normalize": function () {},
@@ -297,7 +370,8 @@ var vl = {
       "labelColor": {},
       "labelFont": {},
       "labelFontSize": {},
-      "labelLimit": {}
+      "labelLimit": {},
+      "labelPadding": {}
     },
     "HEADER_TITLE_PROPERTIES": {},
     "HEADER_TITLE_PROPERTIES_MAP": {
@@ -308,7 +382,8 @@ var vl = {
       "titleFont": {},
       "titleFontSize": {},
       "titleFontWeight": {},
-      "titleLimit": {}
+      "titleLimit": {},
+      "titlePadding": {}
     }
   },
   "legend": {
@@ -360,7 +435,10 @@ var vl = {
       "continuousBandSize": {}
     },
     "defaultMarkConfig": {
-      "color": {}
+      "color": {},
+      "tooltip": {
+        "content": {}
+      }
     },
     "defaultTickConfig": {
       "thickness": {}
@@ -373,6 +451,7 @@ var vl = {
   "scale": {
     "CONTINUOUS_DOMAIN_SCALES": {},
     "CONTINUOUS_TO_CONTINUOUS_SCALES": {},
+    "CONTINUOUS_TO_DISCRETE_SCALES": {},
     "DISCRETE_DOMAIN_SCALES": {},
     "NON_TYPE_DOMAIN_RANGE_VEGA_SCALE_PROPERTIES": {},
     "SCALE_PROPERTIES": {},
@@ -380,10 +459,6 @@ var vl = {
     "SCALE_TYPE_INDEX": {
       "color_geojson": {},
       "color_geojson_bin": {},
-      "color_latitude": {},
-      "color_latitude_bin": {},
-      "color_longitude": {},
-      "color_longitude_bin": {},
       "color_nominal": {},
       "color_nominal_bin": {},
       "color_ordinal": {},
@@ -394,10 +469,6 @@ var vl = {
       "color_temporal_bin": {},
       "fill_geojson": {},
       "fill_geojson_bin": {},
-      "fill_latitude": {},
-      "fill_latitude_bin": {},
-      "fill_longitude": {},
-      "fill_longitude_bin": {},
       "fill_nominal": {},
       "fill_nominal_bin": {},
       "fill_ordinal": {},
@@ -408,10 +479,6 @@ var vl = {
       "fill_temporal_bin": {},
       "opacity_geojson": {},
       "opacity_geojson_bin": {},
-      "opacity_latitude": {},
-      "opacity_latitude_bin": {},
-      "opacity_longitude": {},
-      "opacity_longitude_bin": {},
       "opacity_nominal": {},
       "opacity_nominal_bin": {},
       "opacity_ordinal": {},
@@ -422,20 +489,12 @@ var vl = {
       "opacity_temporal_bin": {},
       "shape_geojson": {},
       "shape_geojson_bin": {},
-      "shape_latitude": {},
-      "shape_latitude_bin": {},
-      "shape_longitude": {},
-      "shape_longitude_bin": {},
       "shape_nominal": {},
       "shape_nominal_bin": {},
       "shape_ordinal": {},
       "shape_ordinal_bin": {},
       "size_geojson": {},
       "size_geojson_bin": {},
-      "size_latitude": {},
-      "size_latitude_bin": {},
-      "size_longitude": {},
-      "size_longitude_bin": {},
       "size_nominal": {},
       "size_nominal_bin": {},
       "size_ordinal": {},
@@ -446,10 +505,6 @@ var vl = {
       "size_temporal_bin": {},
       "stroke_geojson": {},
       "stroke_geojson_bin": {},
-      "stroke_latitude": {},
-      "stroke_latitude_bin": {},
-      "stroke_longitude": {},
-      "stroke_longitude_bin": {},
       "stroke_nominal": {},
       "stroke_nominal_bin": {},
       "stroke_ordinal": {},
@@ -460,10 +515,6 @@ var vl = {
       "stroke_temporal_bin": {},
       "x_geojson": {},
       "x_geojson_bin": {},
-      "x_latitude": {},
-      "x_latitude_bin": {},
-      "x_longitude": {},
-      "x_longitude_bin": {},
       "x_nominal": {},
       "x_nominal_bin": {},
       "x_ordinal": {},
@@ -474,10 +525,6 @@ var vl = {
       "x_temporal_bin": {},
       "y_geojson": {},
       "y_geojson_bin": {},
-      "y_latitude": {},
-      "y_latitude_bin": {},
-      "y_longitude": {},
-      "y_longitude_bin": {},
       "y_nominal": {},
       "y_nominal_bin": {},
       "y_ordinal": {},
@@ -519,6 +566,8 @@ var vl = {
       "minSize": {},
       "minStrokeWidth": {},
       "pointPadding": {},
+      "quantileCount": {},
+      "quantizeCount": {},
       "rangeStep": {},
       "textXRangeStep": {}
     },
@@ -527,6 +576,7 @@ var vl = {
     "hasDiscreteDomain": function () {},
     "isBinScale": function () {},
     "isContinuousToContinuous": function () {},
+    "isContinuousToDiscrete": function () {},
     "isExtendedScheme": function () {},
     "isSelectionDomain": function () {},
     "scaleCompatible": function () {},
@@ -548,7 +598,8 @@ var vl = {
     "isStacked": function () {},
     "isUnitSpec": function () {},
     "isVConcatSpec": function () {},
-    "normalize": function () {}
+    "normalize": function () {},
+    "usedFields": function () {}
   },
   "stack": {
     "STACKABLE_MARKS": {},
@@ -609,6 +660,7 @@ var vl = {
     "convert": function () {},
     "fieldExpr": function () {},
     "formatExpression": function () {},
+    "getDateTimeComponents": function () {},
     "getLocalTimeUnit": function () {},
     "getTimeUnitParts": function () {},
     "isLocalSingleTimeUnit": function () {},
@@ -622,7 +674,12 @@ var vl = {
     "isBin": function () {},
     "isCalculate": function () {},
     "isFilter": function () {},
+    "isFlatten": function () {},
+    "isFold": function () {},
+    "isImpute": function () {},
+    "isImputeSequence": function () {},
     "isLookup": function () {},
+    "isSample": function () {},
     "isStack": function () {},
     "isTimeUnit": function () {},
     "isWindow": function () {},
@@ -636,8 +693,6 @@ var vl = {
     "TEMPORAL": {},
     "TYPE_INDEX": {
       "geojson": {},
-      "latitude": {},
-      "longitude": {},
       "nominal": {},
       "ordinal": {},
       "quantitative": {},
@@ -645,8 +700,6 @@ var vl = {
     },
     "Type": {
       "GEOJSON": {},
-      "LATITUDE": {},
-      "LONGITUDE": {},
       "NOMINAL": {},
       "ORDINAL": {},
       "QUANTITATIVE": {},
@@ -659,14 +712,19 @@ var vl = {
     "accessPathDepth": function () {},
     "accessPathWithDatum": function () {},
     "contains": function () {},
+    "deepEqual": function () {},
     "deleteNestedProperty": function () {},
     "differ": function () {},
     "differArray": function () {},
     "duplicate": function () {},
+    "entries": function () {},
     "every": function () {},
+    "fieldIntersection": function () {},
+    "fill": function () {},
     "flagKeys": function () {},
     "flatAccessWithDatum": function () {},
     "flatten": function () {},
+    "getFirstDefined": function () {},
     "hasIntersection": function () {},
     "hash": function () {},
     "isBoolean": function () {},
@@ -676,13 +734,16 @@ var vl = {
     "mergeDeep": function () {},
     "omit": function () {},
     "pick": function () {},
+    "prefixGenerator": function () {},
     "removePathFromField": function () {},
     "replacePathInField": function () {},
+    "resetIdCounter": function () {},
     "some": function () {},
     "stringify": function () {},
     "titlecase": function () {},
     "union": function () {},
     "unique": function () {},
+    "uniqueId": function () {},
     "vals": function () {},
     "varName": function () {},
     "without": function () {}
@@ -806,4 +867,4 @@ var vl = {
 };
 /**********************************************************************
  * End Generated Extern for vl
- **********************************************************************/
+/**********************************************************************/
