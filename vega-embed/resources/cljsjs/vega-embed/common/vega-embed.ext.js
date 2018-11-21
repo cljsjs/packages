@@ -36,6 +36,7 @@ var vegaEmbed = {
         "nested": {},
         "pick": function () {},
         "tag": {},
+        "tip": function () {},
         "type": {}
       },
       "group": {
@@ -68,6 +69,7 @@ var vegaEmbed = {
         "nested": {},
         "pick": function () {},
         "tag": {},
+        "tip": function () {},
         "type": {}
       },
       "path": {
@@ -131,6 +133,7 @@ var vegaEmbed = {
         "nested": {},
         "pick": function () {},
         "tag": {},
+        "tip": function () {},
         "type": {}
       }
     },
@@ -195,6 +198,8 @@ var vegaEmbed = {
     "fastmap": function () {},
     "field": function () {},
     "font": function () {},
+    "fontFamily": function () {},
+    "fontSize": function () {},
     "formatLocale": function () {},
     "formats": function () {},
     "id": {
@@ -265,6 +270,7 @@ var vegaEmbed = {
     "sceneVisit": function () {},
     "sceneZOrder": function () {},
     "scheme": function () {},
+    "schemeDiscretized": function () {},
     "setRandom": function () {},
     "splitAccessPath": function () {},
     "stringValue": function () {},
@@ -361,6 +367,7 @@ var vegaEmbed = {
         }
       },
       "encode": function () {},
+      "expression": function () {},
       "extent": {
         "Definition": {
           "metadata": {},
@@ -497,6 +504,7 @@ var vegaEmbed = {
           "type": {}
         }
       },
+      "load": function () {},
       "lookup": {
         "Definition": {
           "metadata": {
@@ -595,7 +603,6 @@ var vegaEmbed = {
           "metadata": {
             "changes": {}
           },
-          "output": {},
           "params": {},
           "type": {}
         }
@@ -712,6 +719,7 @@ var vegaEmbed = {
     "zoomLog": function () {},
     "zoomPow": function () {}
   },
+  "version": {},
   "vl": {
     "aggregate": {
       "AGGREGATE_OPS": {},
@@ -728,24 +736,68 @@ var vegaEmbed = {
       },
       "SUM_OPS": {},
       "isAggregateOp": function () {},
-      "isCountingAggregateOp": function () {}
+      "isCountingAggregateOp": function () {},
+      "isMinMaxOp": function () {}
     },
     "axis": {
       "AXIS_PARTS": {},
       "AXIS_PROPERTIES": {},
       "AXIS_PROPERTY_TYPE": {
+        "bandPosition": {},
         "domain": {},
+        "domainColor": {},
+        "domainOpacity": {},
+        "domainWidth": {},
+        "format": {},
         "grid": {},
+        "gridColor": {},
+        "gridDash": {},
+        "gridOpacity": {},
         "gridScale": {},
+        "gridWidth": {},
+        "labelAlign": {},
+        "labelAngle": {},
+        "labelBaseline": {},
+        "labelBound": {},
+        "labelColor": {},
         "labelFlush": {},
+        "labelFlushOffset": {},
+        "labelFont": {},
+        "labelFontSize": {},
+        "labelFontWeight": {},
+        "labelLimit": {},
+        "labelOpacity": {},
         "labelOverlap": {},
+        "labelPadding": {},
         "labels": {},
         "maxExtent": {},
         "minExtent": {},
         "offset": {},
+        "orient": {},
+        "position": {},
         "scale": {},
+        "tickColor": {},
+        "tickCount": {},
+        "tickExtra": {},
+        "tickOffset": {},
+        "tickOpacity": {},
+        "tickRound": {},
+        "tickSize": {},
+        "tickWidth": {},
         "ticks": {},
         "title": {},
+        "titleAlign": {},
+        "titleAngle": {},
+        "titleBaseline": {},
+        "titleColor": {},
+        "titleFont": {},
+        "titleFontSize": {},
+        "titleFontWeight": {},
+        "titleLimit": {},
+        "titleOpacity": {},
+        "titlePadding": {},
+        "titleX": {},
+        "titleY": {},
         "values": {},
         "zindex": {}
       },
@@ -755,7 +807,9 @@ var vegaEmbed = {
     "bin": {
       "autoMaxBins": function () {},
       "binToString": function () {},
-      "isBinParams": function () {}
+      "isBinParams": function () {},
+      "isBinned": function () {},
+      "isBinning": function () {}
     },
     "channel": {
       "CHANNELS": {},
@@ -821,19 +875,16 @@ var vegaEmbed = {
       "getSupportedMark": function () {},
       "isChannel": function () {},
       "isColorChannel": function () {},
+      "isNonPositionScaleChannel": function () {},
       "isScaleChannel": function () {},
       "rangeType": function () {},
       "supportMark": function () {}
     },
     "compile": function () {},
     "compositeMark": {
-      "COMPOSITE_MARK_STYLES": {},
-      "VL_ONLY_COMPOSITE_MARK_SPECIFIC_CONFIG_PROPERTY_INDEX": {
-        "box": {},
-        "boxMid": {},
-        "boxWhisker": {}
-      },
       "add": function () {},
+      "getAllCompositeMarks": function () {},
+      "getCompositeMarkParts": function () {},
       "normalize": function () {},
       "remove": function () {}
     },
@@ -854,22 +905,39 @@ var vegaEmbed = {
           "binSpacing": {},
           "continuousBandSize": {}
         },
-        "box": {
+        "boxplot": {
+          "box": {},
           "extent": {},
-          "size": {}
+          "median": {
+            "color": {}
+          },
+          "outliers": {},
+          "rule": {},
+          "size": {},
+          "ticks": {}
         },
-        "boxMid": {
-          "color": {}
-        },
-        "boxWhisker": {},
         "circle": {},
         "countTitle": {},
+        "errorband": {
+          "band": {
+            "opacity": {}
+          },
+          "borders": {}
+        },
+        "errorbar": {
+          "center": {},
+          "rule": {},
+          "ticks": {}
+        },
         "geoshape": {},
         "invalidValues": {},
         "legend": {},
         "line": {},
         "mark": {
-          "color": {}
+          "color": {},
+          "tooltip": {
+            "content": {}
+          }
         },
         "padding": {},
         "point": {},
@@ -890,6 +958,8 @@ var vegaEmbed = {
           "minSize": {},
           "minStrokeWidth": {},
           "pointPadding": {},
+          "quantileCount": {},
+          "quantizeCount": {},
           "rangeStep": {},
           "textXRangeStep": {}
         },
@@ -941,6 +1011,7 @@ var vegaEmbed = {
         "width": {}
       },
       "initConfig": function () {},
+      "isVgScheme": function () {},
       "stripAndRedirectConfig": function () {}
     },
     "data": {
@@ -960,6 +1031,7 @@ var vegaEmbed = {
     },
     "encoding": {
       "channelHasField": function () {},
+      "extractTransformsFromEncoding": function () {},
       "fieldDefs": function () {},
       "forEach": function () {},
       "isAggregate": function () {},
@@ -967,13 +1039,19 @@ var vegaEmbed = {
       "normalizeEncoding": function () {},
       "reduce": function () {}
     },
-    "facet": {},
+    "extractTransforms": function () {},
+    "facet": {
+      "isFacetFieldDef": function () {}
+    },
     "fieldDef": {
       "channelCompatibility": function () {},
+      "defaultTitle": function () {},
       "defaultTitleFormatter": function () {},
       "defaultType": function () {},
+      "format": function () {},
       "functionalTitleFormatter": function () {},
       "getFieldDef": function () {},
+      "getGuide": function () {},
       "hasConditionalFieldDef": function () {},
       "hasConditionalValueDef": function () {},
       "isConditionalDef": function () {},
@@ -982,10 +1060,13 @@ var vegaEmbed = {
       "isCount": function () {},
       "isDiscrete": function () {},
       "isFieldDef": function () {},
+      "isMarkPropFieldDef": function () {},
       "isNumberFieldDef": function () {},
+      "isPositionFieldDef": function () {},
       "isRepeatRef": function () {},
       "isScaleFieldDef": function () {},
       "isStringFieldDef": function () {},
+      "isTextFieldDef": function () {},
       "isTimeFieldDef": function () {},
       "isValueDef": function () {},
       "normalize": function () {},
@@ -1007,7 +1088,8 @@ var vegaEmbed = {
         "labelColor": {},
         "labelFont": {},
         "labelFontSize": {},
-        "labelLimit": {}
+        "labelLimit": {},
+        "labelPadding": {}
       },
       "HEADER_TITLE_PROPERTIES": {},
       "HEADER_TITLE_PROPERTIES_MAP": {
@@ -1018,7 +1100,8 @@ var vegaEmbed = {
         "titleFont": {},
         "titleFontSize": {},
         "titleFontWeight": {},
-        "titleLimit": {}
+        "titleLimit": {},
+        "titlePadding": {}
       }
     },
     "legend": {
@@ -1070,7 +1153,10 @@ var vegaEmbed = {
         "continuousBandSize": {}
       },
       "defaultMarkConfig": {
-        "color": {}
+        "color": {},
+        "tooltip": {
+          "content": {}
+        }
       },
       "defaultTickConfig": {
         "thickness": {}
@@ -1083,6 +1169,7 @@ var vegaEmbed = {
     "scale": {
       "CONTINUOUS_DOMAIN_SCALES": {},
       "CONTINUOUS_TO_CONTINUOUS_SCALES": {},
+      "CONTINUOUS_TO_DISCRETE_SCALES": {},
       "DISCRETE_DOMAIN_SCALES": {},
       "NON_TYPE_DOMAIN_RANGE_VEGA_SCALE_PROPERTIES": {},
       "SCALE_PROPERTIES": {},
@@ -1090,10 +1177,6 @@ var vegaEmbed = {
       "SCALE_TYPE_INDEX": {
         "color_geojson": {},
         "color_geojson_bin": {},
-        "color_latitude": {},
-        "color_latitude_bin": {},
-        "color_longitude": {},
-        "color_longitude_bin": {},
         "color_nominal": {},
         "color_nominal_bin": {},
         "color_ordinal": {},
@@ -1104,10 +1187,6 @@ var vegaEmbed = {
         "color_temporal_bin": {},
         "fill_geojson": {},
         "fill_geojson_bin": {},
-        "fill_latitude": {},
-        "fill_latitude_bin": {},
-        "fill_longitude": {},
-        "fill_longitude_bin": {},
         "fill_nominal": {},
         "fill_nominal_bin": {},
         "fill_ordinal": {},
@@ -1118,10 +1197,6 @@ var vegaEmbed = {
         "fill_temporal_bin": {},
         "opacity_geojson": {},
         "opacity_geojson_bin": {},
-        "opacity_latitude": {},
-        "opacity_latitude_bin": {},
-        "opacity_longitude": {},
-        "opacity_longitude_bin": {},
         "opacity_nominal": {},
         "opacity_nominal_bin": {},
         "opacity_ordinal": {},
@@ -1132,20 +1207,12 @@ var vegaEmbed = {
         "opacity_temporal_bin": {},
         "shape_geojson": {},
         "shape_geojson_bin": {},
-        "shape_latitude": {},
-        "shape_latitude_bin": {},
-        "shape_longitude": {},
-        "shape_longitude_bin": {},
         "shape_nominal": {},
         "shape_nominal_bin": {},
         "shape_ordinal": {},
         "shape_ordinal_bin": {},
         "size_geojson": {},
         "size_geojson_bin": {},
-        "size_latitude": {},
-        "size_latitude_bin": {},
-        "size_longitude": {},
-        "size_longitude_bin": {},
         "size_nominal": {},
         "size_nominal_bin": {},
         "size_ordinal": {},
@@ -1156,10 +1223,6 @@ var vegaEmbed = {
         "size_temporal_bin": {},
         "stroke_geojson": {},
         "stroke_geojson_bin": {},
-        "stroke_latitude": {},
-        "stroke_latitude_bin": {},
-        "stroke_longitude": {},
-        "stroke_longitude_bin": {},
         "stroke_nominal": {},
         "stroke_nominal_bin": {},
         "stroke_ordinal": {},
@@ -1170,10 +1233,6 @@ var vegaEmbed = {
         "stroke_temporal_bin": {},
         "x_geojson": {},
         "x_geojson_bin": {},
-        "x_latitude": {},
-        "x_latitude_bin": {},
-        "x_longitude": {},
-        "x_longitude_bin": {},
         "x_nominal": {},
         "x_nominal_bin": {},
         "x_ordinal": {},
@@ -1184,10 +1243,6 @@ var vegaEmbed = {
         "x_temporal_bin": {},
         "y_geojson": {},
         "y_geojson_bin": {},
-        "y_latitude": {},
-        "y_latitude_bin": {},
-        "y_longitude": {},
-        "y_longitude_bin": {},
         "y_nominal": {},
         "y_nominal_bin": {},
         "y_ordinal": {},
@@ -1229,6 +1284,8 @@ var vegaEmbed = {
         "minSize": {},
         "minStrokeWidth": {},
         "pointPadding": {},
+        "quantileCount": {},
+        "quantizeCount": {},
         "rangeStep": {},
         "textXRangeStep": {}
       },
@@ -1237,6 +1294,7 @@ var vegaEmbed = {
       "hasDiscreteDomain": function () {},
       "isBinScale": function () {},
       "isContinuousToContinuous": function () {},
+      "isContinuousToDiscrete": function () {},
       "isExtendedScheme": function () {},
       "isSelectionDomain": function () {},
       "scaleCompatible": function () {},
@@ -1258,7 +1316,8 @@ var vegaEmbed = {
       "isStacked": function () {},
       "isUnitSpec": function () {},
       "isVConcatSpec": function () {},
-      "normalize": function () {}
+      "normalize": function () {},
+      "usedFields": function () {}
     },
     "stack": {
       "STACKABLE_MARKS": {},
@@ -1319,6 +1378,7 @@ var vegaEmbed = {
       "convert": function () {},
       "fieldExpr": function () {},
       "formatExpression": function () {},
+      "getDateTimeComponents": function () {},
       "getLocalTimeUnit": function () {},
       "getTimeUnitParts": function () {},
       "isLocalSingleTimeUnit": function () {},
@@ -1332,7 +1392,12 @@ var vegaEmbed = {
       "isBin": function () {},
       "isCalculate": function () {},
       "isFilter": function () {},
+      "isFlatten": function () {},
+      "isFold": function () {},
+      "isImpute": function () {},
+      "isImputeSequence": function () {},
       "isLookup": function () {},
+      "isSample": function () {},
       "isStack": function () {},
       "isTimeUnit": function () {},
       "isWindow": function () {},
@@ -1346,8 +1411,6 @@ var vegaEmbed = {
       "TEMPORAL": {},
       "TYPE_INDEX": {
         "geojson": {},
-        "latitude": {},
-        "longitude": {},
         "nominal": {},
         "ordinal": {},
         "quantitative": {},
@@ -1355,8 +1418,6 @@ var vegaEmbed = {
       },
       "Type": {
         "GEOJSON": {},
-        "LATITUDE": {},
-        "LONGITUDE": {},
         "NOMINAL": {},
         "ORDINAL": {},
         "QUANTITATIVE": {},
@@ -1369,14 +1430,19 @@ var vegaEmbed = {
       "accessPathDepth": function () {},
       "accessPathWithDatum": function () {},
       "contains": function () {},
+      "deepEqual": function () {},
       "deleteNestedProperty": function () {},
       "differ": function () {},
       "differArray": function () {},
       "duplicate": function () {},
+      "entries": function () {},
       "every": function () {},
+      "fieldIntersection": function () {},
+      "fill": function () {},
       "flagKeys": function () {},
       "flatAccessWithDatum": function () {},
       "flatten": function () {},
+      "getFirstDefined": function () {},
       "hasIntersection": function () {},
       "hash": function () {},
       "isBoolean": function () {},
@@ -1386,13 +1452,16 @@ var vegaEmbed = {
       "mergeDeep": function () {},
       "omit": function () {},
       "pick": function () {},
+      "prefixGenerator": function () {},
       "removePathFromField": function () {},
       "replacePathInField": function () {},
+      "resetIdCounter": function () {},
       "some": function () {},
       "stringify": function () {},
       "titlecase": function () {},
       "union": function () {},
       "unique": function () {},
+      "uniqueId": function () {},
       "vals": function () {},
       "varName": function () {},
       "without": function () {}
@@ -1547,6 +1616,7 @@ vegaEmbed.vega.CanvasHandler.prototype = {
   "eventName": function () {},
   "events": function () {},
   "fire": function () {},
+  "getItemBoundingClientRect": function () {},
   "handleHref": function () {},
   "handleTooltip": function () {},
   "handlers": function () {},
@@ -1580,8 +1650,7 @@ vegaEmbed.vega.CanvasRenderer.prototype = {
   "render": function () {},
   "renderAsync": function () {},
   "resize": function () {},
-  "sanitizeURL": function () {},
-  "scene": function () {}
+  "sanitizeURL": function () {}
 };
 vegaEmbed.vega.Dataflow.prototype = {
   "_enqueue": function () {},
@@ -1628,8 +1697,10 @@ vegaEmbed.vega.GroupItem.prototype = {
 };
 vegaEmbed.vega.Handler.prototype = {
   "_handlerIndex": function () {},
+  "canvas": function () {},
   "element": function () {},
   "eventName": function () {},
+  "getItemBoundingClientRect": function () {},
   "handleHref": function () {},
   "handleTooltip": function () {},
   "handlers": function () {},
@@ -1709,6 +1780,7 @@ vegaEmbed.vega.Renderer.prototype = {
   "_load": function () {},
   "_render": function () {},
   "background": function () {},
+  "canvas": function () {},
   "dirty": function () {},
   "element": function () {},
   "initialize": function () {},
@@ -1716,8 +1788,7 @@ vegaEmbed.vega.Renderer.prototype = {
   "render": function () {},
   "renderAsync": function () {},
   "resize": function () {},
-  "sanitizeURL": function () {},
-  "scene": function () {}
+  "sanitizeURL": function () {}
 };
 vegaEmbed.vega.ResourceLoader.prototype = {
   "loadImage": function () {},
@@ -1727,9 +1798,11 @@ vegaEmbed.vega.ResourceLoader.prototype = {
 };
 vegaEmbed.vega.SVGHandler.prototype = {
   "_handlerIndex": function () {},
+  "canvas": function () {},
   "constructor": function () {},
   "element": function () {},
   "eventName": function () {},
+  "getItemBoundingClientRect": function () {},
   "handleHref": function () {},
   "handleTooltip": function () {},
   "handlers": function () {},
@@ -1737,8 +1810,7 @@ vegaEmbed.vega.SVGHandler.prototype = {
   "off": function () {},
   "on": function () {},
   "origin": function () {},
-  "scene": function () {},
-  "svg": function () {}
+  "scene": function () {}
 };
 vegaEmbed.vega.SVGRenderer.prototype = {
   "_dirtyCheck": function () {},
@@ -1747,6 +1819,7 @@ vegaEmbed.vega.SVGRenderer.prototype = {
   "_resetDefs": function () {},
   "_update": function () {},
   "background": function () {},
+  "canvas": function () {},
   "constructor": function () {},
   "dirty": function () {},
   "draw": function () {},
@@ -1758,7 +1831,6 @@ vegaEmbed.vega.SVGRenderer.prototype = {
   "renderAsync": function () {},
   "resize": function () {},
   "sanitizeURL": function () {},
-  "scene": function () {},
   "style": function () {},
   "svg": function () {},
   "updateDefs": function () {}
@@ -1769,6 +1841,7 @@ vegaEmbed.vega.SVGStringRenderer.prototype = {
   "attributes": function () {},
   "background": function () {},
   "buildDefs": function () {},
+  "canvas": function () {},
   "constructor": function () {},
   "dirty": function () {},
   "element": function () {},
@@ -1781,7 +1854,6 @@ vegaEmbed.vega.SVGStringRenderer.prototype = {
   "renderAsync": function () {},
   "resize": function () {},
   "sanitizeURL": function () {},
-  "scene": function () {},
   "svg": function () {}
 };
 vegaEmbed.vega.Scenegraph.prototype = {
@@ -1806,6 +1878,7 @@ vegaEmbed.vega.View.prototype = {
   "_resetRenderer": function () {},
   "_resizeView": function () {},
   "add": function () {},
+  "addDataListener": function () {},
   "addEventListener": function () {},
   "addResizeListener": function () {},
   "addSignalListener": function () {},
@@ -1839,6 +1912,7 @@ vegaEmbed.vega.View.prototype = {
   "pulse": function () {},
   "rank": function () {},
   "remove": function () {},
+  "removeDataListener": function () {},
   "removeEventListener": function () {},
   "removeResizeListener": function () {},
   "removeSignalListener": function () {},
@@ -1850,15 +1924,16 @@ vegaEmbed.vega.View.prototype = {
   "run": function () {},
   "runAfter": function () {},
   "runAsync": function () {},
+  "scale": function () {},
   "scenegraph": function () {},
   "setState": function () {},
   "signal": function () {},
   "stamp": function () {},
+  "timer": function () {},
   "toCanvas": function () {},
   "toImageURL": function () {},
   "toSVG": function () {},
   "tooltip": function () {},
-  "tooltipHandler": function () {},
   "touch": function () {},
   "update": function () {},
   "warn": function () {},
@@ -2041,6 +2116,17 @@ vegaEmbed.vega.transforms.encode.prototype = {
   "skip": function () {},
   "targets": function () {},
   "transform": function () {}
+};
+vegaEmbed.vega.transforms.expression.prototype = {
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {}
 };
 vegaEmbed.vega.transforms.extent.prototype = {
   "constructor": function () {},
@@ -2282,6 +2368,18 @@ vegaEmbed.vega.transforms.legendentries.prototype = {
   "transform": function () {}
 };
 vegaEmbed.vega.transforms.linkpath.prototype = {
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
+};
+vegaEmbed.vega.transforms.load.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
