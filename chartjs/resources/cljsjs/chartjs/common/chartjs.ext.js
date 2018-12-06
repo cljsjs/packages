@@ -63,6 +63,7 @@ var Chart = {
     "Line": function () {},
     "LinearScaleBase": {
       "__super__": {
+        "_autoSkip": function () {},
         "afterBuildTicks": function () {},
         "afterCalculateTickRotation": function () {},
         "afterDataLimits": function () {},
@@ -101,12 +102,14 @@ var Chart = {
         "getPixelForTick": function () {},
         "getPixelForValue": function () {},
         "getRightValue": function () {},
+        "getTicks": function () {},
         "getValueForPixel": function () {},
         "handleMargins": function () {},
         "hasValue": function () {},
         "initialize": function () {},
         "isFullWidth": function () {},
         "isHorizontal": function () {},
+        "mergeTicksOptions": function () {},
         "pivot": function () {},
         "setDimensions": function () {},
         "tooltipPosition": function () {},
@@ -143,11 +146,6 @@ var Chart = {
         "linear": function () {},
         "logarithmic": function () {},
         "values": function () {}
-      },
-      "generators": {
-        "linear": function () {},
-        "logarithmic": function () {},
-        "time": function () {}
       }
     },
     "Title": {
@@ -186,9 +184,11 @@ var Chart = {
       "startDigest": function () {}
     },
     "canvasHelpers": {
+      "clear": function () {},
       "clipArea": function () {},
       "drawPoint": function () {},
       "lineTo": function () {},
+      "roundedRect": function () {},
       "unclipArea": function () {}
     },
     "controllers": {
@@ -290,6 +290,7 @@ var Chart = {
       },
       "horizontalBar": {
         "__super__": {
+          "_getStacks": function () {},
           "addElementAndReset": function () {},
           "addElements": function () {},
           "buildOrUpdateElements": function () {},
@@ -534,6 +535,7 @@ var Chart = {
       }
     },
     "defaults": {
+      "_set": function () {},
       "bar": {
         "hover": {
           "mode": {}
@@ -563,7 +565,6 @@ var Chart = {
           "animateRotate": {},
           "animateScale": {}
         },
-        "aspectRatio": {},
         "circumference": {},
         "cutoutPercentage": {},
         "hover": {
@@ -638,6 +639,14 @@ var Chart = {
           "mode": {},
           "onHover": {}
         },
+        "layout": {
+          "padding": {
+            "bottom": {},
+            "left": {},
+            "right": {},
+            "top": {}
+          }
+        },
         "legend": {
           "display": {},
           "fullWidth": {},
@@ -667,6 +676,7 @@ var Chart = {
           "display": {},
           "fontStyle": {},
           "fullWidth": {},
+          "lineHeight": {},
           "padding": {},
           "position": {},
           "text": {},
@@ -691,6 +701,7 @@ var Chart = {
             "footer": function () {},
             "label": function () {},
             "labelColor": function () {},
+            "labelTextColor": function () {},
             "title": function () {}
           },
           "caretPadding": {},
@@ -724,6 +735,7 @@ var Chart = {
           }
         },
         "hover": {
+          "axis": {},
           "mode": {}
         },
         "scales": {
@@ -731,10 +743,12 @@ var Chart = {
           "yAxes": {}
         },
         "tooltips": {
+          "axis": {},
           "callbacks": {
             "label": function () {},
             "title": function () {}
-          }
+          },
+          "mode": {}
         }
       },
       "line": {
@@ -753,7 +767,6 @@ var Chart = {
           "animateRotate": {},
           "animateScale": {}
         },
-        "aspectRatio": {},
         "circumference": {},
         "cutoutPercentage": {},
         "hover": {
@@ -779,7 +792,6 @@ var Chart = {
           "animateRotate": {},
           "animateScale": {}
         },
-        "aspectRatio": {},
         "legend": {
           "labels": {
             "generateLabels": function () {}
@@ -811,7 +823,6 @@ var Chart = {
         }
       },
       "radar": {
-        "aspectRatio": {},
         "elements": {
           "line": {
             "tension": {}
@@ -839,10 +850,16 @@ var Chart = {
           "zeroLineColor": {},
           "zeroLineWidth": {}
         },
+        "offset": {},
         "position": {},
         "scaleLabel": {
           "display": {},
-          "labelString": {}
+          "labelString": {},
+          "lineHeight": {},
+          "padding": {
+            "bottom": {},
+            "top": {}
+          }
         },
         "ticks": {
           "autoSkip": {},
@@ -851,8 +868,10 @@ var Chart = {
           "callback": function () {},
           "display": {},
           "labelOffset": {},
+          "major": {},
           "maxRotation": {},
           "minRotation": {},
+          "minor": {},
           "mirror": {},
           "padding": {},
           "reverse": {}
@@ -866,6 +885,7 @@ var Chart = {
           "xAxes": {},
           "yAxes": {}
         },
+        "showLines": {},
         "tooltips": {
           "callbacks": {
             "label": function () {},
@@ -918,6 +938,10 @@ var Chart = {
     },
     "helpers": {
       "EPSILON": {},
+      "_calculatePadding": function () {},
+      "_getParentNode": function () {},
+      "_merger": function () {},
+      "_mergerIf": function () {},
       "addEvent": function () {},
       "aliasPixel": function () {},
       "almostEquals": function () {},
@@ -926,9 +950,11 @@ var Chart = {
       "callCallback": function () {},
       "callback": function () {},
       "canvas": {
+        "clear": function () {},
         "clipArea": function () {},
         "drawPoint": function () {},
         "lineTo": function () {},
+        "roundedRect": function () {},
         "unclipArea": function () {}
       },
       "clear": function () {},
@@ -938,6 +964,41 @@ var Chart = {
       "distanceBetweenPoints": function () {},
       "drawRoundedRectangle": function () {},
       "each": function () {},
+      "easing": {
+        "effects": {
+          "easeInBack": function () {},
+          "easeInBounce": function () {},
+          "easeInCirc": function () {},
+          "easeInCubic": function () {},
+          "easeInElastic": function () {},
+          "easeInExpo": function () {},
+          "easeInOutBack": function () {},
+          "easeInOutBounce": function () {},
+          "easeInOutCirc": function () {},
+          "easeInOutCubic": function () {},
+          "easeInOutElastic": function () {},
+          "easeInOutExpo": function () {},
+          "easeInOutQuad": function () {},
+          "easeInOutQuart": function () {},
+          "easeInOutQuint": function () {},
+          "easeInOutSine": function () {},
+          "easeInQuad": function () {},
+          "easeInQuart": function () {},
+          "easeInQuint": function () {},
+          "easeInSine": function () {},
+          "easeOutBack": function () {},
+          "easeOutBounce": function () {},
+          "easeOutCirc": function () {},
+          "easeOutCubic": function () {},
+          "easeOutElastic": function () {},
+          "easeOutExpo": function () {},
+          "easeOutQuad": function () {},
+          "easeOutQuart": function () {},
+          "easeOutQuint": function () {},
+          "easeOutSine": function () {},
+          "linear": function () {}
+        }
+      },
       "easingEffects": {
         "easeInBack": function () {},
         "easeInBounce": function () {},
@@ -989,16 +1050,25 @@ var Chart = {
       "indexOf": function () {},
       "inherits": function () {},
       "isArray": function () {},
+      "isNullOrUndef": function () {},
       "isNumber": function () {},
+      "isObject": function () {},
       "log10": function () {},
       "longestText": function () {},
       "max": function () {},
       "measureText": function () {},
+      "merge": function () {},
+      "mergeIf": function () {},
       "min": function () {},
       "nextItem": function () {},
       "niceNum": function () {},
       "noop": function () {},
       "numberOfLabelLines": function () {},
+      "options": {
+        "resolve": function () {},
+        "toLineHeight": function () {},
+        "toPadding": function () {}
+      },
       "previousItem": function () {},
       "removeEvent": function () {},
       "requestAnimFrame": function () {},
@@ -1010,6 +1080,8 @@ var Chart = {
       "toDegrees": function () {},
       "toRadians": function () {},
       "uid": function () {},
+      "valueAtIndexOrDefault": function () {},
+      "valueOrDefault": function () {},
       "where": function () {}
     },
     "instances": {},
@@ -1020,14 +1092,25 @@ var Chart = {
       "removeBox": function () {},
       "update": function () {}
     },
+    "layouts": {
+      "addBox": function () {},
+      "configure": function () {},
+      "defaults": {},
+      "removeBox": function () {},
+      "update": function () {}
+    },
     "platform": {
+      "_enabled": {},
+      "_style": {},
       "acquireContext": function () {},
       "addEventListener": function () {},
+      "initialize": function () {},
       "releaseContext": function () {},
       "removeEventListener": function () {}
     },
     "pluginService": {
       "_cacheId": {},
+      "_invalidate": function () {},
       "_plugins": {},
       "clear": function () {},
       "count": function () {},
@@ -1039,6 +1122,7 @@ var Chart = {
     },
     "plugins": {
       "_cacheId": {},
+      "_invalidate": function () {},
       "_plugins": {},
       "clear": function () {},
       "count": function () {},
@@ -1053,6 +1137,7 @@ var Chart = {
       "constructors": {
         "category": {
           "__super__": {
+            "_autoSkip": function () {},
             "afterBuildTicks": function () {},
             "afterCalculateTickRotation": function () {},
             "afterDataLimits": function () {},
@@ -1091,12 +1176,14 @@ var Chart = {
             "getPixelForTick": function () {},
             "getPixelForValue": function () {},
             "getRightValue": function () {},
+            "getTicks": function () {},
             "getValueForPixel": function () {},
             "handleMargins": function () {},
             "hasValue": function () {},
             "initialize": function () {},
             "isFullWidth": function () {},
             "isHorizontal": function () {},
+            "mergeTicksOptions": function () {},
             "pivot": function () {},
             "setDimensions": function () {},
             "tooltipPosition": function () {},
@@ -1107,6 +1194,7 @@ var Chart = {
         },
         "linear": {
           "__super__": {
+            "_autoSkip": function () {},
             "afterBuildTicks": function () {},
             "afterCalculateTickRotation": function () {},
             "afterDataLimits": function () {},
@@ -1125,6 +1213,7 @@ var Chart = {
             "calculateTickRotation": function () {},
             "constructor": {
               "__super__": {
+                "_autoSkip": function () {},
                 "afterBuildTicks": function () {},
                 "afterCalculateTickRotation": function () {},
                 "afterDataLimits": function () {},
@@ -1143,25 +1232,25 @@ var Chart = {
                 "calculateTickRotation": function () {},
                 "constructor": {
                   "__super__": {
-                    "closure_uid_98017659": {},
+                    "closure_uid_557975952": {},
                     "hasValue": {
-                      "closure_uid_98017659": {}
+                      "closure_uid_557975952": {}
                     },
                     "initialize": {
-                      "closure_uid_98017659": {}
+                      "closure_uid_557975952": {}
                     },
                     "pivot": {
-                      "closure_uid_98017659": {}
+                      "closure_uid_557975952": {}
                     },
                     "tooltipPosition": {
-                      "closure_uid_98017659": {}
+                      "closure_uid_557975952": {}
                     },
                     "transition": {
-                      "closure_uid_98017659": {}
+                      "closure_uid_557975952": {}
                     }
                   },
                   "extend": {
-                    "closure_uid_98017659": {}
+                    "closure_uid_557975952": {}
                   }
                 },
                 "convertTicksToLabels": function () {},
@@ -1176,30 +1265,32 @@ var Chart = {
                 "getPixelForTick": function () {},
                 "getPixelForValue": function () {},
                 "getRightValue": function () {},
+                "getTicks": function () {},
                 "getValueForPixel": function () {},
                 "handleMargins": function () {},
                 "hasValue": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "initialize": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "isFullWidth": function () {},
                 "isHorizontal": function () {},
+                "mergeTicksOptions": function () {},
                 "pivot": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "setDimensions": function () {},
                 "tooltipPosition": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "transition": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "update": function () {}
               },
               "extend": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -1215,36 +1306,39 @@ var Chart = {
             "getPixelForValue": function () {},
             "getRightValue": function () {},
             "getTickLimit": function () {},
+            "getTicks": function () {},
             "getValueForPixel": function () {},
             "handleDirectionalChanges": function () {},
             "handleMargins": function () {},
             "handleTickRangeOptions": function () {},
             "hasValue": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "initialize": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
+            "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "transition": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "update": function () {}
           },
           "extend": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           }
         },
         "logarithmic": {
           "__super__": {
+            "_autoSkip": function () {},
             "afterBuildTicks": function () {},
             "afterCalculateTickRotation": function () {},
             "afterDataLimits": function () {},
@@ -1261,29 +1355,29 @@ var Chart = {
             "beforeUpdate": function () {},
             "buildTicks": function () {},
             "calculateTickRotation": function () {},
-            "closure_uid_98017659": {},
+            "closure_uid_557975952": {},
             "constructor": {
               "__super__": {
-                "closure_uid_98017659": {},
+                "closure_uid_557975952": {},
                 "hasValue": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "initialize": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "pivot": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "tooltipPosition": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "transition": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 }
               },
-              "closure_uid_98017659": {},
+              "closure_uid_557975952": {},
               "extend": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -1298,34 +1392,37 @@ var Chart = {
             "getPixelForTick": function () {},
             "getPixelForValue": function () {},
             "getRightValue": function () {},
+            "getTicks": function () {},
             "getValueForPixel": function () {},
             "handleMargins": function () {},
             "hasValue": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "initialize": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
+            "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "transition": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "update": function () {}
           },
           "extend": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           }
         },
         "radialLinear": {
           "__super__": {
+            "_autoSkip": function () {},
             "afterBuildTicks": function () {},
             "afterCalculateTickRotation": function () {},
             "afterDataLimits": function () {},
@@ -1342,9 +1439,10 @@ var Chart = {
             "beforeUpdate": function () {},
             "buildTicks": function () {},
             "calculateTickRotation": function () {},
-            "closure_uid_98017659": {},
+            "closure_uid_557975952": {},
             "constructor": {
               "__super__": {
+                "_autoSkip": function () {},
                 "afterBuildTicks": function () {},
                 "afterCalculateTickRotation": function () {},
                 "afterDataLimits": function () {},
@@ -1361,29 +1459,29 @@ var Chart = {
                 "beforeUpdate": function () {},
                 "buildTicks": function () {},
                 "calculateTickRotation": function () {},
-                "closure_uid_98017659": {},
+                "closure_uid_557975952": {},
                 "constructor": {
                   "__super__": {
-                    "closure_uid_98017659": {},
+                    "closure_uid_557975952": {},
                     "hasValue": {
-                      "closure_uid_98017659": {}
+                      "closure_uid_557975952": {}
                     },
                     "initialize": {
-                      "closure_uid_98017659": {}
+                      "closure_uid_557975952": {}
                     },
                     "pivot": {
-                      "closure_uid_98017659": {}
+                      "closure_uid_557975952": {}
                     },
                     "tooltipPosition": {
-                      "closure_uid_98017659": {}
+                      "closure_uid_557975952": {}
                     },
                     "transition": {
-                      "closure_uid_98017659": {}
+                      "closure_uid_557975952": {}
                     }
                   },
-                  "closure_uid_98017659": {},
+                  "closure_uid_557975952": {},
                   "extend": {
-                    "closure_uid_98017659": {}
+                    "closure_uid_557975952": {}
                   }
                 },
                 "convertTicksToLabels": function () {},
@@ -1398,31 +1496,33 @@ var Chart = {
                 "getPixelForTick": function () {},
                 "getPixelForValue": function () {},
                 "getRightValue": function () {},
+                "getTicks": function () {},
                 "getValueForPixel": function () {},
                 "handleMargins": function () {},
                 "hasValue": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "initialize": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "isFullWidth": function () {},
                 "isHorizontal": function () {},
+                "mergeTicksOptions": function () {},
                 "pivot": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "setDimensions": function () {},
                 "tooltipPosition": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "transition": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "update": function () {}
               },
-              "closure_uid_98017659": {},
+              "closure_uid_557975952": {},
               "extend": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -1438,36 +1538,39 @@ var Chart = {
             "getPixelForValue": function () {},
             "getRightValue": function () {},
             "getTickLimit": function () {},
+            "getTicks": function () {},
             "getValueForPixel": function () {},
             "handleDirectionalChanges": function () {},
             "handleMargins": function () {},
             "handleTickRangeOptions": function () {},
             "hasValue": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "initialize": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
+            "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "transition": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "update": function () {}
           },
           "extend": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           }
         },
         "time": {
           "__super__": {
+            "_autoSkip": function () {},
             "afterBuildTicks": function () {},
             "afterCalculateTickRotation": function () {},
             "afterDataLimits": function () {},
@@ -1484,29 +1587,29 @@ var Chart = {
             "beforeUpdate": function () {},
             "buildTicks": function () {},
             "calculateTickRotation": function () {},
-            "closure_uid_98017659": {},
+            "closure_uid_557975952": {},
             "constructor": {
               "__super__": {
-                "closure_uid_98017659": {},
+                "closure_uid_557975952": {},
                 "hasValue": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "initialize": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "pivot": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "tooltipPosition": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "transition": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 }
               },
-              "closure_uid_98017659": {},
+              "closure_uid_557975952": {},
               "extend": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -1521,30 +1624,32 @@ var Chart = {
             "getPixelForTick": function () {},
             "getPixelForValue": function () {},
             "getRightValue": function () {},
+            "getTicks": function () {},
             "getValueForPixel": function () {},
             "handleMargins": function () {},
             "hasValue": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "initialize": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
+            "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "transition": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "update": function () {}
           },
           "extend": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           }
         }
       },
@@ -1590,9 +1695,15 @@ var Chart = {
           }
         },
         "time": {
+          "bounds": {},
+          "distribution": {},
           "position": {},
           "ticks": {
-            "autoSkip": {}
+            "autoSkip": {},
+            "major": {
+              "enabled": {}
+            },
+            "source": {}
           },
           "time": {
             "displayFormat": {},
@@ -1626,25 +1737,25 @@ var Chart = {
   "Controller": {
     "Animation": {
       "__super__": {
-        "closure_uid_98017659": {},
+        "closure_uid_557975952": {},
         "hasValue": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "initialize": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "pivot": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "tooltipPosition": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "transition": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
       "extend": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     },
     "Bar": function () {},
@@ -1653,13 +1764,13 @@ var Chart = {
     "Controller": function () {},
     "DatasetController": {
       "extend": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     },
     "Doughnut": function () {},
     "Element": {
       "extend": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     },
     "Interaction": {
@@ -1677,30 +1788,31 @@ var Chart = {
     },
     "Legend": {
       "__super__": {
-        "closure_uid_98017659": {},
+        "closure_uid_557975952": {},
         "hasValue": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "initialize": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "pivot": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "tooltipPosition": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "transition": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
       "extend": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     },
     "Line": function () {},
     "LinearScaleBase": {
       "__super__": {
+        "_autoSkip": function () {},
         "afterBuildTicks": function () {},
         "afterCalculateTickRotation": function () {},
         "afterDataLimits": function () {},
@@ -1717,29 +1829,29 @@ var Chart = {
         "beforeUpdate": function () {},
         "buildTicks": function () {},
         "calculateTickRotation": function () {},
-        "closure_uid_98017659": {},
+        "closure_uid_557975952": {},
         "constructor": {
           "__super__": {
-            "closure_uid_98017659": {},
+            "closure_uid_557975952": {},
             "hasValue": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "initialize": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "pivot": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "tooltipPosition": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "transition": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             }
           },
-          "closure_uid_98017659": {},
+          "closure_uid_557975952": {},
           "extend": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           }
         },
         "convertTicksToLabels": function () {},
@@ -1754,80 +1866,82 @@ var Chart = {
         "getPixelForTick": function () {},
         "getPixelForValue": function () {},
         "getRightValue": function () {},
+        "getTicks": function () {},
         "getValueForPixel": function () {},
         "handleMargins": function () {},
         "hasValue": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "initialize": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "isFullWidth": function () {},
         "isHorizontal": function () {},
+        "mergeTicksOptions": function () {},
         "pivot": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "setDimensions": function () {},
         "tooltipPosition": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "transition": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "update": function () {}
       },
-      "closure_uid_98017659": {},
+      "closure_uid_557975952": {},
       "extend": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     },
     "PluginBase": {
       "__super__": {
-        "closure_uid_98017659": {},
+        "closure_uid_557975952": {},
         "hasValue": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "initialize": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "pivot": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "tooltipPosition": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "transition": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
       "extend": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     },
     "PolarArea": function () {},
     "Radar": function () {},
     "Scale": {
       "__super__": {
-        "closure_uid_98017659": {},
+        "closure_uid_557975952": {},
         "hasValue": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "initialize": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "pivot": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "tooltipPosition": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "transition": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
-      "closure_uid_98017659": {},
+      "closure_uid_557975952": {},
       "extend": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     },
     "Scatter": function () {},
@@ -1836,57 +1950,52 @@ var Chart = {
         "linear": function () {},
         "logarithmic": function () {},
         "values": function () {}
-      },
-      "generators": {
-        "linear": function () {},
-        "logarithmic": function () {},
-        "time": function () {}
       }
     },
     "Title": {
       "__super__": {
-        "closure_uid_98017659": {},
+        "closure_uid_557975952": {},
         "hasValue": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "initialize": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "pivot": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "tooltipPosition": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "transition": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
       "extend": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     },
     "Tooltip": {
       "__super__": {
-        "closure_uid_98017659": {},
+        "closure_uid_557975952": {},
         "hasValue": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "initialize": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "pivot": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "tooltipPosition": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "transition": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
       "extend": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "positioners": {
         "average": function () {},
@@ -1905,12 +2014,14 @@ var Chart = {
       "startDigest": function () {}
     },
     "canvasHelpers": {
+      "clear": function () {},
       "clipArea": function () {},
       "drawPoint": function () {},
       "lineTo": function () {},
+      "roundedRect": function () {},
       "unclipArea": function () {}
     },
-    "closure_uid_98017659": {},
+    "closure_uid_557975952": {},
     "controllers": {
       "bar": {
         "__super__": {
@@ -1943,7 +2054,7 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
       "bubble": {
@@ -1977,7 +2088,7 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
       "doughnut": {
@@ -2011,11 +2122,12 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
       "horizontalBar": {
         "__super__": {
+          "_getStacks": function () {},
           "addElementAndReset": function () {},
           "addElements": function () {},
           "buildOrUpdateElements": function () {},
@@ -2052,32 +2164,32 @@ var Chart = {
               "updateIndex": function () {}
             },
             "extend": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             }
           },
           "createMetaData": function () {},
           "createMetaDataset": function () {},
           "dataElementType": {
             "__super__": {
-              "closure_uid_98017659": {},
+              "closure_uid_557975952": {},
               "hasValue": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "initialize": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "pivot": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "tooltipPosition": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "transition": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               }
             },
             "extend": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             }
           },
           "datasetElementType": {},
@@ -2112,7 +2224,7 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
       "line": {
@@ -2146,7 +2258,7 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
       "pie": {
@@ -2180,7 +2292,7 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
       "polarArea": {
@@ -2214,7 +2326,7 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
       "radar": {
@@ -2248,7 +2360,7 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
       "scatter": {
@@ -2282,11 +2394,12 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       }
     },
     "defaults": {
+      "_set": function () {},
       "bar": {
         "hover": {
           "mode": {}
@@ -2316,7 +2429,6 @@ var Chart = {
           "animateRotate": {},
           "animateScale": {}
         },
-        "aspectRatio": {},
         "circumference": {},
         "cutoutPercentage": {},
         "hover": {
@@ -2391,6 +2503,14 @@ var Chart = {
           "mode": {},
           "onHover": {}
         },
+        "layout": {
+          "padding": {
+            "bottom": {},
+            "left": {},
+            "right": {},
+            "top": {}
+          }
+        },
         "legend": {
           "display": {},
           "fullWidth": {},
@@ -2420,6 +2540,7 @@ var Chart = {
           "display": {},
           "fontStyle": {},
           "fullWidth": {},
+          "lineHeight": {},
           "padding": {},
           "position": {},
           "text": {},
@@ -2444,6 +2565,7 @@ var Chart = {
             "footer": function () {},
             "label": function () {},
             "labelColor": function () {},
+            "labelTextColor": function () {},
             "title": function () {}
           },
           "caretPadding": {},
@@ -2477,6 +2599,7 @@ var Chart = {
           }
         },
         "hover": {
+          "axis": {},
           "mode": {}
         },
         "scales": {
@@ -2484,10 +2607,12 @@ var Chart = {
           "yAxes": {}
         },
         "tooltips": {
+          "axis": {},
           "callbacks": {
             "label": function () {},
             "title": function () {}
-          }
+          },
+          "mode": {}
         }
       },
       "line": {
@@ -2506,7 +2631,6 @@ var Chart = {
           "animateRotate": {},
           "animateScale": {}
         },
-        "aspectRatio": {},
         "circumference": {},
         "cutoutPercentage": {},
         "hover": {
@@ -2532,7 +2656,6 @@ var Chart = {
           "animateRotate": {},
           "animateScale": {}
         },
-        "aspectRatio": {},
         "legend": {
           "labels": {
             "generateLabels": function () {}
@@ -2564,7 +2687,6 @@ var Chart = {
         }
       },
       "radar": {
-        "aspectRatio": {},
         "elements": {
           "line": {
             "tension": {}
@@ -2592,10 +2714,16 @@ var Chart = {
           "zeroLineColor": {},
           "zeroLineWidth": {}
         },
+        "offset": {},
         "position": {},
         "scaleLabel": {
           "display": {},
-          "labelString": {}
+          "labelString": {},
+          "lineHeight": {},
+          "padding": {
+            "bottom": {},
+            "top": {}
+          }
         },
         "ticks": {
           "autoSkip": {},
@@ -2604,8 +2732,10 @@ var Chart = {
           "callback": function () {},
           "display": {},
           "labelOffset": {},
+          "major": {},
           "maxRotation": {},
           "minRotation": {},
+          "minor": {},
           "mirror": {},
           "padding": {},
           "reverse": {}
@@ -2619,6 +2749,7 @@ var Chart = {
           "xAxes": {},
           "yAxes": {}
         },
+        "showLines": {},
         "tooltips": {
           "callbacks": {
             "label": function () {},
@@ -2630,99 +2761,103 @@ var Chart = {
     "elements": {
       "Arc": {
         "__super__": {
-          "closure_uid_98017659": {},
+          "closure_uid_557975952": {},
           "hasValue": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "initialize": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "pivot": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "tooltipPosition": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "transition": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           }
         },
         "extend": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
       "Line": {
         "__super__": {
-          "closure_uid_98017659": {},
+          "closure_uid_557975952": {},
           "hasValue": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "initialize": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "pivot": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "tooltipPosition": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "transition": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           }
         },
         "extend": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
       "Point": {
         "__super__": {
-          "closure_uid_98017659": {},
+          "closure_uid_557975952": {},
           "hasValue": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "initialize": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "pivot": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "tooltipPosition": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "transition": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           }
         },
         "extend": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
       "Rectangle": {
         "__super__": {
-          "closure_uid_98017659": {},
+          "closure_uid_557975952": {},
           "hasValue": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "initialize": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "pivot": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "tooltipPosition": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "transition": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           }
         },
         "extend": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       }
     },
     "helpers": {
       "EPSILON": {},
+      "_calculatePadding": function () {},
+      "_getParentNode": function () {},
+      "_merger": function () {},
+      "_mergerIf": function () {},
       "addEvent": function () {},
       "aliasPixel": function () {},
       "almostEquals": function () {},
@@ -2731,9 +2866,11 @@ var Chart = {
       "callCallback": function () {},
       "callback": function () {},
       "canvas": {
+        "clear": function () {},
         "clipArea": function () {},
         "drawPoint": function () {},
         "lineTo": function () {},
+        "roundedRect": function () {},
         "unclipArea": function () {}
       },
       "clear": function () {},
@@ -2743,6 +2880,41 @@ var Chart = {
       "distanceBetweenPoints": function () {},
       "drawRoundedRectangle": function () {},
       "each": function () {},
+      "easing": {
+        "effects": {
+          "easeInBack": function () {},
+          "easeInBounce": function () {},
+          "easeInCirc": function () {},
+          "easeInCubic": function () {},
+          "easeInElastic": function () {},
+          "easeInExpo": function () {},
+          "easeInOutBack": function () {},
+          "easeInOutBounce": function () {},
+          "easeInOutCirc": function () {},
+          "easeInOutCubic": function () {},
+          "easeInOutElastic": function () {},
+          "easeInOutExpo": function () {},
+          "easeInOutQuad": function () {},
+          "easeInOutQuart": function () {},
+          "easeInOutQuint": function () {},
+          "easeInOutSine": function () {},
+          "easeInQuad": function () {},
+          "easeInQuart": function () {},
+          "easeInQuint": function () {},
+          "easeInSine": function () {},
+          "easeOutBack": function () {},
+          "easeOutBounce": function () {},
+          "easeOutCirc": function () {},
+          "easeOutCubic": function () {},
+          "easeOutElastic": function () {},
+          "easeOutExpo": function () {},
+          "easeOutQuad": function () {},
+          "easeOutQuart": function () {},
+          "easeOutQuint": function () {},
+          "easeOutSine": function () {},
+          "linear": function () {}
+        }
+      },
       "easingEffects": {
         "easeInBack": function () {},
         "easeInBounce": function () {},
@@ -2793,19 +2965,28 @@ var Chart = {
       "getValueOrDefault": function () {},
       "indexOf": function () {},
       "inherits": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "isArray": function () {},
+      "isNullOrUndef": function () {},
       "isNumber": function () {},
+      "isObject": function () {},
       "log10": function () {},
       "longestText": function () {},
       "max": function () {},
       "measureText": function () {},
+      "merge": function () {},
+      "mergeIf": function () {},
       "min": function () {},
       "nextItem": function () {},
       "niceNum": function () {},
       "noop": function () {},
       "numberOfLabelLines": function () {},
+      "options": {
+        "resolve": function () {},
+        "toLineHeight": function () {},
+        "toPadding": function () {}
+      },
       "previousItem": function () {},
       "removeEvent": function () {},
       "requestAnimFrame": function () {},
@@ -2817,6 +2998,8 @@ var Chart = {
       "toDegrees": function () {},
       "toRadians": function () {},
       "uid": function () {},
+      "valueAtIndexOrDefault": function () {},
+      "valueOrDefault": function () {},
       "where": function () {}
     },
     "instances": {},
@@ -2827,14 +3010,25 @@ var Chart = {
       "removeBox": function () {},
       "update": function () {}
     },
+    "layouts": {
+      "addBox": function () {},
+      "configure": function () {},
+      "defaults": {},
+      "removeBox": function () {},
+      "update": function () {}
+    },
     "platform": {
+      "_enabled": {},
+      "_style": {},
       "acquireContext": function () {},
       "addEventListener": function () {},
+      "initialize": function () {},
       "releaseContext": function () {},
       "removeEventListener": function () {}
     },
     "pluginService": {
       "_cacheId": {},
+      "_invalidate": function () {},
       "_plugins": {},
       "clear": function () {},
       "count": function () {},
@@ -2846,6 +3040,7 @@ var Chart = {
     },
     "plugins": {
       "_cacheId": {},
+      "_invalidate": function () {},
       "_plugins": {},
       "clear": function () {},
       "count": function () {},
@@ -2857,10 +3052,11 @@ var Chart = {
     },
     "scaleService": {
       "addScalesToLayout": function () {},
-      "closure_uid_98017659": {},
+      "closure_uid_557975952": {},
       "constructors": {
         "category": {
           "__super__": {
+            "_autoSkip": function () {},
             "afterBuildTicks": function () {},
             "afterCalculateTickRotation": function () {},
             "afterDataLimits": function () {},
@@ -2877,29 +3073,29 @@ var Chart = {
             "beforeUpdate": function () {},
             "buildTicks": function () {},
             "calculateTickRotation": function () {},
-            "closure_uid_98017659": {},
+            "closure_uid_557975952": {},
             "constructor": {
               "__super__": {
-                "closure_uid_98017659": {},
+                "closure_uid_557975952": {},
                 "hasValue": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "initialize": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "pivot": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "tooltipPosition": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "transition": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 }
               },
-              "closure_uid_98017659": {},
+              "closure_uid_557975952": {},
               "extend": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -2914,35 +3110,38 @@ var Chart = {
             "getPixelForTick": function () {},
             "getPixelForValue": function () {},
             "getRightValue": function () {},
+            "getTicks": function () {},
             "getValueForPixel": function () {},
             "handleMargins": function () {},
             "hasValue": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "initialize": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
+            "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "transition": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "update": function () {}
           },
           "extend": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           }
         },
-        "closure_uid_98017659": {},
+        "closure_uid_557975952": {},
         "linear": {
           "__super__": {
+            "_autoSkip": function () {},
             "afterBuildTicks": function () {},
             "afterCalculateTickRotation": function () {},
             "afterDataLimits": function () {},
@@ -2959,9 +3158,10 @@ var Chart = {
             "beforeUpdate": function () {},
             "buildTicks": function () {},
             "calculateTickRotation": function () {},
-            "closure_uid_98017659": {},
+            "closure_uid_557975952": {},
             "constructor": {
               "__super__": {
+                "_autoSkip": function () {},
                 "afterBuildTicks": function () {},
                 "afterCalculateTickRotation": function () {},
                 "afterDataLimits": function () {},
@@ -2978,29 +3178,29 @@ var Chart = {
                 "beforeUpdate": function () {},
                 "buildTicks": function () {},
                 "calculateTickRotation": function () {},
-                "closure_uid_98017659": {},
+                "closure_uid_557975952": {},
                 "constructor": {
                   "__super__": {
-                    "closure_uid_98017659": {},
+                    "closure_uid_557975952": {},
                     "hasValue": {
-                      "closure_uid_98017659": {}
+                      "closure_uid_557975952": {}
                     },
                     "initialize": {
-                      "closure_uid_98017659": {}
+                      "closure_uid_557975952": {}
                     },
                     "pivot": {
-                      "closure_uid_98017659": {}
+                      "closure_uid_557975952": {}
                     },
                     "tooltipPosition": {
-                      "closure_uid_98017659": {}
+                      "closure_uid_557975952": {}
                     },
                     "transition": {
-                      "closure_uid_98017659": {}
+                      "closure_uid_557975952": {}
                     }
                   },
-                  "closure_uid_98017659": {},
+                  "closure_uid_557975952": {},
                   "extend": {
-                    "closure_uid_98017659": {}
+                    "closure_uid_557975952": {}
                   }
                 },
                 "convertTicksToLabels": function () {},
@@ -3015,31 +3215,33 @@ var Chart = {
                 "getPixelForTick": function () {},
                 "getPixelForValue": function () {},
                 "getRightValue": function () {},
+                "getTicks": function () {},
                 "getValueForPixel": function () {},
                 "handleMargins": function () {},
                 "hasValue": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "initialize": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "isFullWidth": function () {},
                 "isHorizontal": function () {},
+                "mergeTicksOptions": function () {},
                 "pivot": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "setDimensions": function () {},
                 "tooltipPosition": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "transition": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "update": function () {}
               },
-              "closure_uid_98017659": {},
+              "closure_uid_557975952": {},
               "extend": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -3055,37 +3257,40 @@ var Chart = {
             "getPixelForValue": function () {},
             "getRightValue": function () {},
             "getTickLimit": function () {},
+            "getTicks": function () {},
             "getValueForPixel": function () {},
             "handleDirectionalChanges": function () {},
             "handleMargins": function () {},
             "handleTickRangeOptions": function () {},
             "hasValue": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "initialize": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
+            "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "transition": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "update": function () {}
           },
-          "closure_uid_98017659": {},
+          "closure_uid_557975952": {},
           "extend": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           }
         },
         "logarithmic": {
           "__super__": {
+            "_autoSkip": function () {},
             "afterBuildTicks": function () {},
             "afterCalculateTickRotation": function () {},
             "afterDataLimits": function () {},
@@ -3102,29 +3307,29 @@ var Chart = {
             "beforeUpdate": function () {},
             "buildTicks": function () {},
             "calculateTickRotation": function () {},
-            "closure_uid_98017659": {},
+            "closure_uid_557975952": {},
             "constructor": {
               "__super__": {
-                "closure_uid_98017659": {},
+                "closure_uid_557975952": {},
                 "hasValue": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "initialize": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "pivot": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "tooltipPosition": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "transition": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 }
               },
-              "closure_uid_98017659": {},
+              "closure_uid_557975952": {},
               "extend": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -3139,34 +3344,37 @@ var Chart = {
             "getPixelForTick": function () {},
             "getPixelForValue": function () {},
             "getRightValue": function () {},
+            "getTicks": function () {},
             "getValueForPixel": function () {},
             "handleMargins": function () {},
             "hasValue": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "initialize": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
+            "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "transition": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "update": function () {}
           },
           "extend": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           }
         },
         "radialLinear": {
           "__super__": {
+            "_autoSkip": function () {},
             "afterBuildTicks": function () {},
             "afterCalculateTickRotation": function () {},
             "afterDataLimits": function () {},
@@ -3183,9 +3391,10 @@ var Chart = {
             "beforeUpdate": function () {},
             "buildTicks": function () {},
             "calculateTickRotation": function () {},
-            "closure_uid_98017659": {},
+            "closure_uid_557975952": {},
             "constructor": {
               "__super__": {
+                "_autoSkip": function () {},
                 "afterBuildTicks": function () {},
                 "afterCalculateTickRotation": function () {},
                 "afterDataLimits": function () {},
@@ -3202,29 +3411,29 @@ var Chart = {
                 "beforeUpdate": function () {},
                 "buildTicks": function () {},
                 "calculateTickRotation": function () {},
-                "closure_uid_98017659": {},
+                "closure_uid_557975952": {},
                 "constructor": {
                   "__super__": {
-                    "closure_uid_98017659": {},
+                    "closure_uid_557975952": {},
                     "hasValue": {
-                      "closure_uid_98017659": {}
+                      "closure_uid_557975952": {}
                     },
                     "initialize": {
-                      "closure_uid_98017659": {}
+                      "closure_uid_557975952": {}
                     },
                     "pivot": {
-                      "closure_uid_98017659": {}
+                      "closure_uid_557975952": {}
                     },
                     "tooltipPosition": {
-                      "closure_uid_98017659": {}
+                      "closure_uid_557975952": {}
                     },
                     "transition": {
-                      "closure_uid_98017659": {}
+                      "closure_uid_557975952": {}
                     }
                   },
-                  "closure_uid_98017659": {},
+                  "closure_uid_557975952": {},
                   "extend": {
-                    "closure_uid_98017659": {}
+                    "closure_uid_557975952": {}
                   }
                 },
                 "convertTicksToLabels": function () {},
@@ -3239,31 +3448,33 @@ var Chart = {
                 "getPixelForTick": function () {},
                 "getPixelForValue": function () {},
                 "getRightValue": function () {},
+                "getTicks": function () {},
                 "getValueForPixel": function () {},
                 "handleMargins": function () {},
                 "hasValue": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "initialize": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "isFullWidth": function () {},
                 "isHorizontal": function () {},
+                "mergeTicksOptions": function () {},
                 "pivot": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "setDimensions": function () {},
                 "tooltipPosition": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "transition": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "update": function () {}
               },
-              "closure_uid_98017659": {},
+              "closure_uid_557975952": {},
               "extend": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -3279,37 +3490,40 @@ var Chart = {
             "getPixelForValue": function () {},
             "getRightValue": function () {},
             "getTickLimit": function () {},
+            "getTicks": function () {},
             "getValueForPixel": function () {},
             "handleDirectionalChanges": function () {},
             "handleMargins": function () {},
             "handleTickRangeOptions": function () {},
             "hasValue": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "initialize": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
+            "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "transition": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "update": function () {}
           },
-          "closure_uid_98017659": {},
+          "closure_uid_557975952": {},
           "extend": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           }
         },
         "time": {
           "__super__": {
+            "_autoSkip": function () {},
             "afterBuildTicks": function () {},
             "afterCalculateTickRotation": function () {},
             "afterDataLimits": function () {},
@@ -3326,29 +3540,29 @@ var Chart = {
             "beforeUpdate": function () {},
             "buildTicks": function () {},
             "calculateTickRotation": function () {},
-            "closure_uid_98017659": {},
+            "closure_uid_557975952": {},
             "constructor": {
               "__super__": {
-                "closure_uid_98017659": {},
+                "closure_uid_557975952": {},
                 "hasValue": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "initialize": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "pivot": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "tooltipPosition": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 },
                 "transition": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 }
               },
-              "closure_uid_98017659": {},
+              "closure_uid_557975952": {},
               "extend": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -3363,30 +3577,32 @@ var Chart = {
             "getPixelForTick": function () {},
             "getPixelForValue": function () {},
             "getRightValue": function () {},
+            "getTicks": function () {},
             "getValueForPixel": function () {},
             "handleMargins": function () {},
             "hasValue": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "initialize": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
+            "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "transition": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "update": function () {}
           },
           "extend": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           }
         }
       },
@@ -3432,9 +3648,15 @@ var Chart = {
           }
         },
         "time": {
+          "bounds": {},
+          "distribution": {},
           "position": {},
           "ticks": {
-            "autoSkip": {}
+            "autoSkip": {},
+            "major": {
+              "enabled": {}
+            },
+            "source": {}
           },
           "time": {
             "displayFormat": {},
@@ -3467,13 +3689,13 @@ var Chart = {
   },
   "DatasetController": {
     "extend": {
-      "closure_uid_98017659": {}
+      "closure_uid_557975952": {}
     }
   },
   "Doughnut": function () {},
   "Element": {
     "extend": {
-      "closure_uid_98017659": {}
+      "closure_uid_557975952": {}
     }
   },
   "Interaction": {
@@ -3491,30 +3713,31 @@ var Chart = {
   },
   "Legend": {
     "__super__": {
-      "closure_uid_98017659": {},
+      "closure_uid_557975952": {},
       "hasValue": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "initialize": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "pivot": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "tooltipPosition": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "transition": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     },
     "extend": {
-      "closure_uid_98017659": {}
+      "closure_uid_557975952": {}
     }
   },
   "Line": function () {},
   "LinearScaleBase": {
     "__super__": {
+      "_autoSkip": function () {},
       "afterBuildTicks": function () {},
       "afterCalculateTickRotation": function () {},
       "afterDataLimits": function () {},
@@ -3531,29 +3754,29 @@ var Chart = {
       "beforeUpdate": function () {},
       "buildTicks": function () {},
       "calculateTickRotation": function () {},
-      "closure_uid_98017659": {},
+      "closure_uid_557975952": {},
       "constructor": {
         "__super__": {
-          "closure_uid_98017659": {},
+          "closure_uid_557975952": {},
           "hasValue": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "initialize": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "pivot": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "tooltipPosition": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "transition": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           }
         },
-        "closure_uid_98017659": {},
+        "closure_uid_557975952": {},
         "extend": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
       "convertTicksToLabels": function () {},
@@ -3568,80 +3791,82 @@ var Chart = {
       "getPixelForTick": function () {},
       "getPixelForValue": function () {},
       "getRightValue": function () {},
+      "getTicks": function () {},
       "getValueForPixel": function () {},
       "handleMargins": function () {},
       "hasValue": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "initialize": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "isFullWidth": function () {},
       "isHorizontal": function () {},
+      "mergeTicksOptions": function () {},
       "pivot": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "setDimensions": function () {},
       "tooltipPosition": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "transition": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "update": function () {}
     },
-    "closure_uid_98017659": {},
+    "closure_uid_557975952": {},
     "extend": {
-      "closure_uid_98017659": {}
+      "closure_uid_557975952": {}
     }
   },
   "PluginBase": {
     "__super__": {
-      "closure_uid_98017659": {},
+      "closure_uid_557975952": {},
       "hasValue": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "initialize": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "pivot": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "tooltipPosition": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "transition": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     },
     "extend": {
-      "closure_uid_98017659": {}
+      "closure_uid_557975952": {}
     }
   },
   "PolarArea": function () {},
   "Radar": function () {},
   "Scale": {
     "__super__": {
-      "closure_uid_98017659": {},
+      "closure_uid_557975952": {},
       "hasValue": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "initialize": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "pivot": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "tooltipPosition": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "transition": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     },
-    "closure_uid_98017659": {},
+    "closure_uid_557975952": {},
     "extend": {
-      "closure_uid_98017659": {}
+      "closure_uid_557975952": {}
     }
   },
   "Scatter": function () {},
@@ -3650,57 +3875,52 @@ var Chart = {
       "linear": function () {},
       "logarithmic": function () {},
       "values": function () {}
-    },
-    "generators": {
-      "linear": function () {},
-      "logarithmic": function () {},
-      "time": function () {}
     }
   },
   "Title": {
     "__super__": {
-      "closure_uid_98017659": {},
+      "closure_uid_557975952": {},
       "hasValue": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "initialize": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "pivot": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "tooltipPosition": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "transition": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     },
     "extend": {
-      "closure_uid_98017659": {}
+      "closure_uid_557975952": {}
     }
   },
   "Tooltip": {
     "__super__": {
-      "closure_uid_98017659": {},
+      "closure_uid_557975952": {},
       "hasValue": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "initialize": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "pivot": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "tooltipPosition": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       },
       "transition": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     },
     "extend": {
-      "closure_uid_98017659": {}
+      "closure_uid_557975952": {}
     },
     "positioners": {
       "average": function () {},
@@ -3719,9 +3939,11 @@ var Chart = {
     "startDigest": function () {}
   },
   "canvasHelpers": {
+    "clear": function () {},
     "clipArea": function () {},
     "drawPoint": function () {},
     "lineTo": function () {},
+    "roundedRect": function () {},
     "unclipArea": function () {}
   },
   "controllers": {
@@ -3756,7 +3978,7 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     },
     "bubble": {
@@ -3790,7 +4012,7 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     },
     "doughnut": {
@@ -3824,11 +4046,12 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     },
     "horizontalBar": {
       "__super__": {
+        "_getStacks": function () {},
         "addElementAndReset": function () {},
         "addElements": function () {},
         "buildOrUpdateElements": function () {},
@@ -3865,32 +4088,32 @@ var Chart = {
             "updateIndex": function () {}
           },
           "extend": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           }
         },
         "createMetaData": function () {},
         "createMetaDataset": function () {},
         "dataElementType": {
           "__super__": {
-            "closure_uid_98017659": {},
+            "closure_uid_557975952": {},
             "hasValue": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "initialize": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "pivot": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "tooltipPosition": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             },
             "transition": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             }
           },
           "extend": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           }
         },
         "datasetElementType": {},
@@ -3925,7 +4148,7 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     },
     "line": {
@@ -3959,7 +4182,7 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     },
     "pie": {
@@ -3993,7 +4216,7 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     },
     "polarArea": {
@@ -4027,7 +4250,7 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     },
     "radar": {
@@ -4061,7 +4284,7 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     },
     "scatter": {
@@ -4095,11 +4318,12 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     }
   },
   "defaults": {
+    "_set": function () {},
     "bar": {
       "hover": {
         "mode": {}
@@ -4129,7 +4353,6 @@ var Chart = {
         "animateRotate": {},
         "animateScale": {}
       },
-      "aspectRatio": {},
       "circumference": {},
       "cutoutPercentage": {},
       "hover": {
@@ -4204,6 +4427,14 @@ var Chart = {
         "mode": {},
         "onHover": {}
       },
+      "layout": {
+        "padding": {
+          "bottom": {},
+          "left": {},
+          "right": {},
+          "top": {}
+        }
+      },
       "legend": {
         "display": {},
         "fullWidth": {},
@@ -4233,6 +4464,7 @@ var Chart = {
         "display": {},
         "fontStyle": {},
         "fullWidth": {},
+        "lineHeight": {},
         "padding": {},
         "position": {},
         "text": {},
@@ -4257,6 +4489,7 @@ var Chart = {
           "footer": function () {},
           "label": function () {},
           "labelColor": function () {},
+          "labelTextColor": function () {},
           "title": function () {}
         },
         "caretPadding": {},
@@ -4290,6 +4523,7 @@ var Chart = {
         }
       },
       "hover": {
+        "axis": {},
         "mode": {}
       },
       "scales": {
@@ -4297,10 +4531,12 @@ var Chart = {
         "yAxes": {}
       },
       "tooltips": {
+        "axis": {},
         "callbacks": {
           "label": function () {},
           "title": function () {}
-        }
+        },
+        "mode": {}
       }
     },
     "line": {
@@ -4319,7 +4555,6 @@ var Chart = {
         "animateRotate": {},
         "animateScale": {}
       },
-      "aspectRatio": {},
       "circumference": {},
       "cutoutPercentage": {},
       "hover": {
@@ -4345,7 +4580,6 @@ var Chart = {
         "animateRotate": {},
         "animateScale": {}
       },
-      "aspectRatio": {},
       "legend": {
         "labels": {
           "generateLabels": function () {}
@@ -4377,7 +4611,6 @@ var Chart = {
       }
     },
     "radar": {
-      "aspectRatio": {},
       "elements": {
         "line": {
           "tension": {}
@@ -4405,10 +4638,16 @@ var Chart = {
         "zeroLineColor": {},
         "zeroLineWidth": {}
       },
+      "offset": {},
       "position": {},
       "scaleLabel": {
         "display": {},
-        "labelString": {}
+        "labelString": {},
+        "lineHeight": {},
+        "padding": {
+          "bottom": {},
+          "top": {}
+        }
       },
       "ticks": {
         "autoSkip": {},
@@ -4417,8 +4656,10 @@ var Chart = {
         "callback": function () {},
         "display": {},
         "labelOffset": {},
+        "major": {},
         "maxRotation": {},
         "minRotation": {},
+        "minor": {},
         "mirror": {},
         "padding": {},
         "reverse": {}
@@ -4432,6 +4673,7 @@ var Chart = {
         "xAxes": {},
         "yAxes": {}
       },
+      "showLines": {},
       "tooltips": {
         "callbacks": {
           "label": function () {},
@@ -4443,99 +4685,103 @@ var Chart = {
   "elements": {
     "Arc": {
       "__super__": {
-        "closure_uid_98017659": {},
+        "closure_uid_557975952": {},
         "hasValue": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "initialize": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "pivot": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "tooltipPosition": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "transition": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
       "extend": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     },
     "Line": {
       "__super__": {
-        "closure_uid_98017659": {},
+        "closure_uid_557975952": {},
         "hasValue": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "initialize": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "pivot": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "tooltipPosition": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "transition": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
       "extend": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     },
     "Point": {
       "__super__": {
-        "closure_uid_98017659": {},
+        "closure_uid_557975952": {},
         "hasValue": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "initialize": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "pivot": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "tooltipPosition": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "transition": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
       "extend": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     },
     "Rectangle": {
       "__super__": {
-        "closure_uid_98017659": {},
+        "closure_uid_557975952": {},
         "hasValue": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "initialize": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "pivot": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "tooltipPosition": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         },
         "transition": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
       "extend": {
-        "closure_uid_98017659": {}
+        "closure_uid_557975952": {}
       }
     }
   },
   "helpers": {
     "EPSILON": {},
+    "_calculatePadding": function () {},
+    "_getParentNode": function () {},
+    "_merger": function () {},
+    "_mergerIf": function () {},
     "addEvent": function () {},
     "aliasPixel": function () {},
     "almostEquals": function () {},
@@ -4544,9 +4790,11 @@ var Chart = {
     "callCallback": function () {},
     "callback": function () {},
     "canvas": {
+      "clear": function () {},
       "clipArea": function () {},
       "drawPoint": function () {},
       "lineTo": function () {},
+      "roundedRect": function () {},
       "unclipArea": function () {}
     },
     "clear": function () {},
@@ -4556,6 +4804,41 @@ var Chart = {
     "distanceBetweenPoints": function () {},
     "drawRoundedRectangle": function () {},
     "each": function () {},
+    "easing": {
+      "effects": {
+        "easeInBack": function () {},
+        "easeInBounce": function () {},
+        "easeInCirc": function () {},
+        "easeInCubic": function () {},
+        "easeInElastic": function () {},
+        "easeInExpo": function () {},
+        "easeInOutBack": function () {},
+        "easeInOutBounce": function () {},
+        "easeInOutCirc": function () {},
+        "easeInOutCubic": function () {},
+        "easeInOutElastic": function () {},
+        "easeInOutExpo": function () {},
+        "easeInOutQuad": function () {},
+        "easeInOutQuart": function () {},
+        "easeInOutQuint": function () {},
+        "easeInOutSine": function () {},
+        "easeInQuad": function () {},
+        "easeInQuart": function () {},
+        "easeInQuint": function () {},
+        "easeInSine": function () {},
+        "easeOutBack": function () {},
+        "easeOutBounce": function () {},
+        "easeOutCirc": function () {},
+        "easeOutCubic": function () {},
+        "easeOutElastic": function () {},
+        "easeOutExpo": function () {},
+        "easeOutQuad": function () {},
+        "easeOutQuart": function () {},
+        "easeOutQuint": function () {},
+        "easeOutSine": function () {},
+        "linear": function () {}
+      }
+    },
     "easingEffects": {
       "easeInBack": function () {},
       "easeInBounce": function () {},
@@ -4606,19 +4889,28 @@ var Chart = {
     "getValueOrDefault": function () {},
     "indexOf": function () {},
     "inherits": {
-      "closure_uid_98017659": {}
+      "closure_uid_557975952": {}
     },
     "isArray": function () {},
+    "isNullOrUndef": function () {},
     "isNumber": function () {},
+    "isObject": function () {},
     "log10": function () {},
     "longestText": function () {},
     "max": function () {},
     "measureText": function () {},
+    "merge": function () {},
+    "mergeIf": function () {},
     "min": function () {},
     "nextItem": function () {},
     "niceNum": function () {},
     "noop": function () {},
     "numberOfLabelLines": function () {},
+    "options": {
+      "resolve": function () {},
+      "toLineHeight": function () {},
+      "toPadding": function () {}
+    },
     "previousItem": function () {},
     "removeEvent": function () {},
     "requestAnimFrame": function () {},
@@ -4630,6 +4922,8 @@ var Chart = {
     "toDegrees": function () {},
     "toRadians": function () {},
     "uid": function () {},
+    "valueAtIndexOrDefault": function () {},
+    "valueOrDefault": function () {},
     "where": function () {}
   },
   "instances": {},
@@ -4640,14 +4934,25 @@ var Chart = {
     "removeBox": function () {},
     "update": function () {}
   },
+  "layouts": {
+    "addBox": function () {},
+    "configure": function () {},
+    "defaults": {},
+    "removeBox": function () {},
+    "update": function () {}
+  },
   "platform": {
+    "_enabled": {},
+    "_style": {},
     "acquireContext": function () {},
     "addEventListener": function () {},
+    "initialize": function () {},
     "releaseContext": function () {},
     "removeEventListener": function () {}
   },
   "pluginService": {
     "_cacheId": {},
+    "_invalidate": function () {},
     "_plugins": {},
     "clear": function () {},
     "count": function () {},
@@ -4659,6 +4964,7 @@ var Chart = {
   },
   "plugins": {
     "_cacheId": {},
+    "_invalidate": function () {},
     "_plugins": {},
     "clear": function () {},
     "count": function () {},
@@ -4670,10 +4976,11 @@ var Chart = {
   },
   "scaleService": {
     "addScalesToLayout": function () {},
-    "closure_uid_98017659": {},
+    "closure_uid_557975952": {},
     "constructors": {
       "category": {
         "__super__": {
+          "_autoSkip": function () {},
           "afterBuildTicks": function () {},
           "afterCalculateTickRotation": function () {},
           "afterDataLimits": function () {},
@@ -4690,29 +4997,29 @@ var Chart = {
           "beforeUpdate": function () {},
           "buildTicks": function () {},
           "calculateTickRotation": function () {},
-          "closure_uid_98017659": {},
+          "closure_uid_557975952": {},
           "constructor": {
             "__super__": {
-              "closure_uid_98017659": {},
+              "closure_uid_557975952": {},
               "hasValue": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "initialize": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "pivot": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "tooltipPosition": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "transition": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               }
             },
-            "closure_uid_98017659": {},
+            "closure_uid_557975952": {},
             "extend": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             }
           },
           "convertTicksToLabels": function () {},
@@ -4727,35 +5034,38 @@ var Chart = {
           "getPixelForTick": function () {},
           "getPixelForValue": function () {},
           "getRightValue": function () {},
+          "getTicks": function () {},
           "getValueForPixel": function () {},
           "handleMargins": function () {},
           "hasValue": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "initialize": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "isFullWidth": function () {},
           "isHorizontal": function () {},
+          "mergeTicksOptions": function () {},
           "pivot": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "setDimensions": function () {},
           "tooltipPosition": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "transition": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "update": function () {}
         },
         "extend": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
-      "closure_uid_98017659": {},
+      "closure_uid_557975952": {},
       "linear": {
         "__super__": {
+          "_autoSkip": function () {},
           "afterBuildTicks": function () {},
           "afterCalculateTickRotation": function () {},
           "afterDataLimits": function () {},
@@ -4772,9 +5082,10 @@ var Chart = {
           "beforeUpdate": function () {},
           "buildTicks": function () {},
           "calculateTickRotation": function () {},
-          "closure_uid_98017659": {},
+          "closure_uid_557975952": {},
           "constructor": {
             "__super__": {
+              "_autoSkip": function () {},
               "afterBuildTicks": function () {},
               "afterCalculateTickRotation": function () {},
               "afterDataLimits": function () {},
@@ -4791,29 +5102,29 @@ var Chart = {
               "beforeUpdate": function () {},
               "buildTicks": function () {},
               "calculateTickRotation": function () {},
-              "closure_uid_98017659": {},
+              "closure_uid_557975952": {},
               "constructor": {
                 "__super__": {
-                  "closure_uid_98017659": {},
+                  "closure_uid_557975952": {},
                   "hasValue": {
-                    "closure_uid_98017659": {}
+                    "closure_uid_557975952": {}
                   },
                   "initialize": {
-                    "closure_uid_98017659": {}
+                    "closure_uid_557975952": {}
                   },
                   "pivot": {
-                    "closure_uid_98017659": {}
+                    "closure_uid_557975952": {}
                   },
                   "tooltipPosition": {
-                    "closure_uid_98017659": {}
+                    "closure_uid_557975952": {}
                   },
                   "transition": {
-                    "closure_uid_98017659": {}
+                    "closure_uid_557975952": {}
                   }
                 },
-                "closure_uid_98017659": {},
+                "closure_uid_557975952": {},
                 "extend": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 }
               },
               "convertTicksToLabels": function () {},
@@ -4828,31 +5139,33 @@ var Chart = {
               "getPixelForTick": function () {},
               "getPixelForValue": function () {},
               "getRightValue": function () {},
+              "getTicks": function () {},
               "getValueForPixel": function () {},
               "handleMargins": function () {},
               "hasValue": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "initialize": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "isFullWidth": function () {},
               "isHorizontal": function () {},
+              "mergeTicksOptions": function () {},
               "pivot": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "setDimensions": function () {},
               "tooltipPosition": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "transition": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "update": function () {}
             },
-            "closure_uid_98017659": {},
+            "closure_uid_557975952": {},
             "extend": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             }
           },
           "convertTicksToLabels": function () {},
@@ -4868,37 +5181,40 @@ var Chart = {
           "getPixelForValue": function () {},
           "getRightValue": function () {},
           "getTickLimit": function () {},
+          "getTicks": function () {},
           "getValueForPixel": function () {},
           "handleDirectionalChanges": function () {},
           "handleMargins": function () {},
           "handleTickRangeOptions": function () {},
           "hasValue": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "initialize": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "isFullWidth": function () {},
           "isHorizontal": function () {},
+          "mergeTicksOptions": function () {},
           "pivot": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "setDimensions": function () {},
           "tooltipPosition": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "transition": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "update": function () {}
         },
-        "closure_uid_98017659": {},
+        "closure_uid_557975952": {},
         "extend": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
       "logarithmic": {
         "__super__": {
+          "_autoSkip": function () {},
           "afterBuildTicks": function () {},
           "afterCalculateTickRotation": function () {},
           "afterDataLimits": function () {},
@@ -4915,29 +5231,29 @@ var Chart = {
           "beforeUpdate": function () {},
           "buildTicks": function () {},
           "calculateTickRotation": function () {},
-          "closure_uid_98017659": {},
+          "closure_uid_557975952": {},
           "constructor": {
             "__super__": {
-              "closure_uid_98017659": {},
+              "closure_uid_557975952": {},
               "hasValue": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "initialize": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "pivot": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "tooltipPosition": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "transition": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               }
             },
-            "closure_uid_98017659": {},
+            "closure_uid_557975952": {},
             "extend": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             }
           },
           "convertTicksToLabels": function () {},
@@ -4952,34 +5268,37 @@ var Chart = {
           "getPixelForTick": function () {},
           "getPixelForValue": function () {},
           "getRightValue": function () {},
+          "getTicks": function () {},
           "getValueForPixel": function () {},
           "handleMargins": function () {},
           "hasValue": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "initialize": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "isFullWidth": function () {},
           "isHorizontal": function () {},
+          "mergeTicksOptions": function () {},
           "pivot": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "setDimensions": function () {},
           "tooltipPosition": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "transition": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "update": function () {}
         },
         "extend": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
       "radialLinear": {
         "__super__": {
+          "_autoSkip": function () {},
           "afterBuildTicks": function () {},
           "afterCalculateTickRotation": function () {},
           "afterDataLimits": function () {},
@@ -4996,9 +5315,10 @@ var Chart = {
           "beforeUpdate": function () {},
           "buildTicks": function () {},
           "calculateTickRotation": function () {},
-          "closure_uid_98017659": {},
+          "closure_uid_557975952": {},
           "constructor": {
             "__super__": {
+              "_autoSkip": function () {},
               "afterBuildTicks": function () {},
               "afterCalculateTickRotation": function () {},
               "afterDataLimits": function () {},
@@ -5015,29 +5335,29 @@ var Chart = {
               "beforeUpdate": function () {},
               "buildTicks": function () {},
               "calculateTickRotation": function () {},
-              "closure_uid_98017659": {},
+              "closure_uid_557975952": {},
               "constructor": {
                 "__super__": {
-                  "closure_uid_98017659": {},
+                  "closure_uid_557975952": {},
                   "hasValue": {
-                    "closure_uid_98017659": {}
+                    "closure_uid_557975952": {}
                   },
                   "initialize": {
-                    "closure_uid_98017659": {}
+                    "closure_uid_557975952": {}
                   },
                   "pivot": {
-                    "closure_uid_98017659": {}
+                    "closure_uid_557975952": {}
                   },
                   "tooltipPosition": {
-                    "closure_uid_98017659": {}
+                    "closure_uid_557975952": {}
                   },
                   "transition": {
-                    "closure_uid_98017659": {}
+                    "closure_uid_557975952": {}
                   }
                 },
-                "closure_uid_98017659": {},
+                "closure_uid_557975952": {},
                 "extend": {
-                  "closure_uid_98017659": {}
+                  "closure_uid_557975952": {}
                 }
               },
               "convertTicksToLabels": function () {},
@@ -5052,31 +5372,33 @@ var Chart = {
               "getPixelForTick": function () {},
               "getPixelForValue": function () {},
               "getRightValue": function () {},
+              "getTicks": function () {},
               "getValueForPixel": function () {},
               "handleMargins": function () {},
               "hasValue": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "initialize": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "isFullWidth": function () {},
               "isHorizontal": function () {},
+              "mergeTicksOptions": function () {},
               "pivot": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "setDimensions": function () {},
               "tooltipPosition": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "transition": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "update": function () {}
             },
-            "closure_uid_98017659": {},
+            "closure_uid_557975952": {},
             "extend": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             }
           },
           "convertTicksToLabels": function () {},
@@ -5092,37 +5414,40 @@ var Chart = {
           "getPixelForValue": function () {},
           "getRightValue": function () {},
           "getTickLimit": function () {},
+          "getTicks": function () {},
           "getValueForPixel": function () {},
           "handleDirectionalChanges": function () {},
           "handleMargins": function () {},
           "handleTickRangeOptions": function () {},
           "hasValue": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "initialize": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "isFullWidth": function () {},
           "isHorizontal": function () {},
+          "mergeTicksOptions": function () {},
           "pivot": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "setDimensions": function () {},
           "tooltipPosition": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "transition": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "update": function () {}
         },
-        "closure_uid_98017659": {},
+        "closure_uid_557975952": {},
         "extend": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       },
       "time": {
         "__super__": {
+          "_autoSkip": function () {},
           "afterBuildTicks": function () {},
           "afterCalculateTickRotation": function () {},
           "afterDataLimits": function () {},
@@ -5139,29 +5464,29 @@ var Chart = {
           "beforeUpdate": function () {},
           "buildTicks": function () {},
           "calculateTickRotation": function () {},
-          "closure_uid_98017659": {},
+          "closure_uid_557975952": {},
           "constructor": {
             "__super__": {
-              "closure_uid_98017659": {},
+              "closure_uid_557975952": {},
               "hasValue": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "initialize": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "pivot": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "tooltipPosition": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               },
               "transition": {
-                "closure_uid_98017659": {}
+                "closure_uid_557975952": {}
               }
             },
-            "closure_uid_98017659": {},
+            "closure_uid_557975952": {},
             "extend": {
-              "closure_uid_98017659": {}
+              "closure_uid_557975952": {}
             }
           },
           "convertTicksToLabels": function () {},
@@ -5176,30 +5501,32 @@ var Chart = {
           "getPixelForTick": function () {},
           "getPixelForValue": function () {},
           "getRightValue": function () {},
+          "getTicks": function () {},
           "getValueForPixel": function () {},
           "handleMargins": function () {},
           "hasValue": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "initialize": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "isFullWidth": function () {},
           "isHorizontal": function () {},
+          "mergeTicksOptions": function () {},
           "pivot": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "setDimensions": function () {},
           "tooltipPosition": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "transition": {
-            "closure_uid_98017659": {}
+            "closure_uid_557975952": {}
           },
           "update": function () {}
         },
         "extend": {
-          "closure_uid_98017659": {}
+          "closure_uid_557975952": {}
         }
       }
     },
@@ -5245,9 +5572,15 @@ var Chart = {
         }
       },
       "time": {
+        "bounds": {},
+        "distribution": {},
         "position": {},
         "ticks": {
-          "autoSkip": {}
+          "autoSkip": {},
+          "major": {
+            "enabled": {}
+          },
+          "source": {}
         },
         "time": {
           "displayFormat": {},
@@ -5279,12 +5612,14 @@ var Chart = {
   "types": {}
 };
 Chart.prototype = {
+  "_drawTooltip": function () {},
   "bindEvents": function () {},
   "buildOrUpdateControllers": function () {},
-  "buildScales": function () {},
+  "buildOrUpdateScales": function () {},
   "clear": function () {},
   "construct": function () {},
   "destroy": function () {},
+  "destroyDatasetMeta": function () {},
   "draw": function () {},
   "drawDataset": function () {},
   "drawDatasets": function () {},
@@ -5332,12 +5667,14 @@ Chart.Animation.prototype = {
   "transition": function () {}
 };
 Chart.Chart.prototype = {
+  "_drawTooltip": function () {},
   "bindEvents": function () {},
   "buildOrUpdateControllers": function () {},
-  "buildScales": function () {},
+  "buildOrUpdateScales": function () {},
   "clear": function () {},
   "construct": function () {},
   "destroy": function () {},
+  "destroyDatasetMeta": function () {},
   "draw": function () {},
   "drawDataset": function () {},
   "drawDatasets": function () {},
@@ -5444,6 +5781,7 @@ Chart.Chart.Legend.prototype = {
   "update": function () {}
 };
 Chart.Chart.LinearScaleBase.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -5474,6 +5812,7 @@ Chart.Chart.LinearScaleBase.prototype = {
   "getPixelForValue": function () {},
   "getRightValue": function () {},
   "getTickLimit": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleDirectionalChanges": function () {},
   "handleMargins": function () {},
@@ -5482,6 +5821,7 @@ Chart.Chart.LinearScaleBase.prototype = {
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -5489,6 +5829,7 @@ Chart.Chart.LinearScaleBase.prototype = {
   "update": function () {}
 };
 Chart.Chart.LinearScaleBase.__super__.constructor.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -5518,12 +5859,14 @@ Chart.Chart.LinearScaleBase.__super__.constructor.prototype = {
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -5539,6 +5882,7 @@ Chart.Chart.PluginBase.prototype = {
   "transition": function () {}
 };
 Chart.Chart.Scale.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -5568,12 +5912,14 @@ Chart.Chart.Scale.prototype = {
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -5625,6 +5971,7 @@ Chart.Chart.Tooltip.prototype = {
   "update": function () {}
 };
 Chart.Chart.controllers.bar.prototype = {
+  "_getStacks": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -5666,6 +6013,7 @@ Chart.Chart.controllers.bar.prototype = {
   "updateIndex": function () {}
 };
 Chart.Chart.controllers.bubble.prototype = {
+  "_resolveElementOptions": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -5678,7 +6026,6 @@ Chart.Chart.controllers.bubble.prototype = {
   "draw": function () {},
   "getDataset": function () {},
   "getMeta": function () {},
-  "getRadius": function () {},
   "getScaleForId": function () {},
   "initialize": function () {},
   "insertElements": function () {},
@@ -5733,6 +6080,7 @@ Chart.Chart.controllers.doughnut.prototype = {
   "updateIndex": function () {}
 };
 Chart.Chart.controllers.horizontalBar.prototype = {
+  "_getStacks": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -5774,6 +6122,7 @@ Chart.Chart.controllers.horizontalBar.prototype = {
   "updateIndex": function () {}
 };
 Chart.Chart.controllers.horizontalBar.__super__.constructor.prototype = {
+  "_getStacks": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -5847,6 +6196,7 @@ Chart.Chart.controllers.line.prototype = {
   "getPointBackgroundColor": function () {},
   "getPointBorderColor": function () {},
   "getPointBorderWidth": function () {},
+  "getPointRotation": function () {},
   "getScaleForId": function () {},
   "initialize": function () {},
   "insertElements": function () {},
@@ -5902,10 +6252,11 @@ Chart.Chart.controllers.pie.prototype = {
   "updateIndex": function () {}
 };
 Chart.Chart.controllers.polarArea.prototype = {
+  "_computeAngle": function () {},
+  "_updateRadius": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
-  "calculateCircumference": function () {},
   "constructor": function () {},
   "countVisibleElements": function () {},
   "createMetaData": function () {},
@@ -5983,6 +6334,7 @@ Chart.Chart.controllers.scatter.prototype = {
   "getPointBackgroundColor": function () {},
   "getPointBorderColor": function () {},
   "getPointBorderWidth": function () {},
+  "getPointRotation": function () {},
   "getScaleForId": function () {},
   "initialize": function () {},
   "insertElements": function () {},
@@ -6056,6 +6408,7 @@ Chart.Chart.elements.Rectangle.prototype = {
   "transition": function () {}
 };
 Chart.Chart.scaleService.constructors.category.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -6086,12 +6439,14 @@ Chart.Chart.scaleService.constructors.category.prototype = {
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -6099,6 +6454,7 @@ Chart.Chart.scaleService.constructors.category.prototype = {
   "update": function () {}
 };
 Chart.Chart.scaleService.constructors.category.__super__.constructor.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -6128,12 +6484,14 @@ Chart.Chart.scaleService.constructors.category.__super__.constructor.prototype =
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -6141,6 +6499,7 @@ Chart.Chart.scaleService.constructors.category.__super__.constructor.prototype =
   "update": function () {}
 };
 Chart.Chart.scaleService.constructors.linear.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -6171,6 +6530,7 @@ Chart.Chart.scaleService.constructors.linear.prototype = {
   "getPixelForValue": function () {},
   "getRightValue": function () {},
   "getTickLimit": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleDirectionalChanges": function () {},
   "handleMargins": function () {},
@@ -6179,6 +6539,7 @@ Chart.Chart.scaleService.constructors.linear.prototype = {
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -6186,6 +6547,7 @@ Chart.Chart.scaleService.constructors.linear.prototype = {
   "update": function () {}
 };
 Chart.Chart.scaleService.constructors.linear.__super__.constructor.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -6216,6 +6578,7 @@ Chart.Chart.scaleService.constructors.linear.__super__.constructor.prototype = {
   "getPixelForValue": function () {},
   "getRightValue": function () {},
   "getTickLimit": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleDirectionalChanges": function () {},
   "handleMargins": function () {},
@@ -6224,6 +6587,7 @@ Chart.Chart.scaleService.constructors.linear.__super__.constructor.prototype = {
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -6231,6 +6595,7 @@ Chart.Chart.scaleService.constructors.linear.__super__.constructor.prototype = {
   "update": function () {}
 };
 Chart.Chart.scaleService.constructors.linear.__super__.constructor.__super__.constructor.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -6260,12 +6625,14 @@ Chart.Chart.scaleService.constructors.linear.__super__.constructor.__super__.con
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -6273,6 +6640,8 @@ Chart.Chart.scaleService.constructors.linear.__super__.constructor.__super__.con
   "update": function () {}
 };
 Chart.Chart.scaleService.constructors.logarithmic.prototype = {
+  "_autoSkip": function () {},
+  "_getFirstTickValue": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -6289,7 +6658,7 @@ Chart.Chart.scaleService.constructors.logarithmic.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -6303,12 +6672,15 @@ Chart.Chart.scaleService.constructors.logarithmic.prototype = {
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
+  "handleTickRangeOptions": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -6316,6 +6688,7 @@ Chart.Chart.scaleService.constructors.logarithmic.prototype = {
   "update": function () {}
 };
 Chart.Chart.scaleService.constructors.logarithmic.__super__.constructor.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -6332,7 +6705,7 @@ Chart.Chart.scaleService.constructors.logarithmic.__super__.constructor.prototyp
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -6346,12 +6719,14 @@ Chart.Chart.scaleService.constructors.logarithmic.__super__.constructor.prototyp
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -6359,6 +6734,7 @@ Chart.Chart.scaleService.constructors.logarithmic.__super__.constructor.prototyp
   "update": function () {}
 };
 Chart.Chart.scaleService.constructors.radialLinear.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -6375,7 +6751,7 @@ Chart.Chart.scaleService.constructors.radialLinear.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -6395,6 +6771,7 @@ Chart.Chart.scaleService.constructors.radialLinear.prototype = {
   "getPointPositionForValue": function () {},
   "getRightValue": function () {},
   "getTickLimit": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleDirectionalChanges": function () {},
   "handleMargins": function () {},
@@ -6403,6 +6780,7 @@ Chart.Chart.scaleService.constructors.radialLinear.prototype = {
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setCenterPoint": function () {},
   "setDimensions": function () {},
@@ -6412,6 +6790,7 @@ Chart.Chart.scaleService.constructors.radialLinear.prototype = {
   "update": function () {}
 };
 Chart.Chart.scaleService.constructors.radialLinear.__super__.constructor.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -6428,7 +6807,7 @@ Chart.Chart.scaleService.constructors.radialLinear.__super__.constructor.prototy
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -6443,6 +6822,7 @@ Chart.Chart.scaleService.constructors.radialLinear.__super__.constructor.prototy
   "getPixelForValue": function () {},
   "getRightValue": function () {},
   "getTickLimit": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleDirectionalChanges": function () {},
   "handleMargins": function () {},
@@ -6451,6 +6831,7 @@ Chart.Chart.scaleService.constructors.radialLinear.__super__.constructor.prototy
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -6458,6 +6839,7 @@ Chart.Chart.scaleService.constructors.radialLinear.__super__.constructor.prototy
   "update": function () {}
 };
 Chart.Chart.scaleService.constructors.radialLinear.__super__.constructor.__super__.constructor.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -6474,7 +6856,7 @@ Chart.Chart.scaleService.constructors.radialLinear.__super__.constructor.__super
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -6488,12 +6870,14 @@ Chart.Chart.scaleService.constructors.radialLinear.__super__.constructor.__super
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -6501,6 +6885,7 @@ Chart.Chart.scaleService.constructors.radialLinear.__super__.constructor.__super
   "update": function () {}
 };
 Chart.Chart.scaleService.constructors.time.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -6517,7 +6902,7 @@ Chart.Chart.scaleService.constructors.time.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -6534,12 +6919,14 @@ Chart.Chart.scaleService.constructors.time.prototype = {
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tickFormatFunction": function () {},
@@ -6548,6 +6935,7 @@ Chart.Chart.scaleService.constructors.time.prototype = {
   "update": function () {}
 };
 Chart.Chart.scaleService.constructors.time.__super__.constructor.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -6564,7 +6952,7 @@ Chart.Chart.scaleService.constructors.time.__super__.constructor.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -6578,12 +6966,14 @@ Chart.Chart.scaleService.constructors.time.__super__.constructor.prototype = {
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -6591,12 +6981,14 @@ Chart.Chart.scaleService.constructors.time.__super__.constructor.prototype = {
   "update": function () {}
 };
 Chart.Controller.prototype = {
+  "_drawTooltip": function () {},
   "bindEvents": function () {},
   "buildOrUpdateControllers": function () {},
-  "buildScales": function () {},
+  "buildOrUpdateScales": function () {},
   "clear": function () {},
   "construct": function () {},
   "destroy": function () {},
+  "destroyDatasetMeta": function () {},
   "draw": function () {},
   "drawDataset": function () {},
   "drawDatasets": function () {},
@@ -6630,7 +7022,7 @@ Chart.Controller.prototype = {
 };
 Chart.Controller.Animation.prototype = {
   "chart": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "currentStep": function () {},
   "easing": function () {},
@@ -6674,7 +7066,7 @@ Chart.Controller.DatasetController.prototype = {
   "updateIndex": function () {}
 };
 Chart.Controller.Element.prototype = {
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "pivot": function () {},
@@ -6691,7 +7083,7 @@ Chart.Controller.Legend.prototype = {
   "beforeSetDimensions": function () {},
   "beforeUpdate": function () {},
   "buildLabels": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "draw": function () {},
   "fit": function () {},
@@ -6706,6 +7098,7 @@ Chart.Controller.Legend.prototype = {
   "update": function () {}
 };
 Chart.Controller.LinearScaleBase.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -6722,7 +7115,7 @@ Chart.Controller.LinearScaleBase.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -6737,6 +7130,7 @@ Chart.Controller.LinearScaleBase.prototype = {
   "getPixelForValue": function () {},
   "getRightValue": function () {},
   "getTickLimit": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleDirectionalChanges": function () {},
   "handleMargins": function () {},
@@ -6745,6 +7139,7 @@ Chart.Controller.LinearScaleBase.prototype = {
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -6752,6 +7147,7 @@ Chart.Controller.LinearScaleBase.prototype = {
   "update": function () {}
 };
 Chart.Controller.LinearScaleBase.__super__.constructor.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -6768,7 +7164,7 @@ Chart.Controller.LinearScaleBase.__super__.constructor.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -6782,12 +7178,14 @@ Chart.Controller.LinearScaleBase.__super__.constructor.prototype = {
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -6795,7 +7193,7 @@ Chart.Controller.LinearScaleBase.__super__.constructor.prototype = {
   "update": function () {}
 };
 Chart.Controller.PluginBase.prototype = {
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "hasValue": function () {},
   "initialize": function () {},
@@ -6804,6 +7202,7 @@ Chart.Controller.PluginBase.prototype = {
   "transition": function () {}
 };
 Chart.Controller.Scale.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -6820,7 +7219,7 @@ Chart.Controller.Scale.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -6834,12 +7233,14 @@ Chart.Controller.Scale.prototype = {
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -6856,7 +7257,7 @@ Chart.Controller.Title.prototype = {
   "beforeSetDimensions": function () {},
   "beforeUpdate": function () {},
   "buildLabels": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "draw": function () {},
   "fit": function () {},
@@ -6870,7 +7271,7 @@ Chart.Controller.Title.prototype = {
   "update": function () {}
 };
 Chart.Controller.Tooltip.prototype = {
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "draw": function () {},
   "drawBackground": function () {},
@@ -6893,6 +7294,7 @@ Chart.Controller.Tooltip.prototype = {
   "update": function () {}
 };
 Chart.Controller.controllers.bar.prototype = {
+  "_getStacks": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -6934,6 +7336,7 @@ Chart.Controller.controllers.bar.prototype = {
   "updateIndex": function () {}
 };
 Chart.Controller.controllers.bubble.prototype = {
+  "_resolveElementOptions": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -6946,7 +7349,6 @@ Chart.Controller.controllers.bubble.prototype = {
   "draw": function () {},
   "getDataset": function () {},
   "getMeta": function () {},
-  "getRadius": function () {},
   "getScaleForId": function () {},
   "initialize": function () {},
   "insertElements": function () {},
@@ -7001,6 +7403,7 @@ Chart.Controller.controllers.doughnut.prototype = {
   "updateIndex": function () {}
 };
 Chart.Controller.controllers.horizontalBar.prototype = {
+  "_getStacks": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -7042,6 +7445,7 @@ Chart.Controller.controllers.horizontalBar.prototype = {
   "updateIndex": function () {}
 };
 Chart.Controller.controllers.horizontalBar.__super__.constructor.prototype = {
+  "_getStacks": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -7083,7 +7487,7 @@ Chart.Controller.controllers.horizontalBar.__super__.constructor.prototype = {
   "updateIndex": function () {}
 };
 Chart.Controller.controllers.horizontalBar.__super__.dataElementType.prototype = {
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -7116,6 +7520,7 @@ Chart.Controller.controllers.line.prototype = {
   "getPointBackgroundColor": function () {},
   "getPointBorderColor": function () {},
   "getPointBorderWidth": function () {},
+  "getPointRotation": function () {},
   "getScaleForId": function () {},
   "initialize": function () {},
   "insertElements": function () {},
@@ -7171,10 +7576,11 @@ Chart.Controller.controllers.pie.prototype = {
   "updateIndex": function () {}
 };
 Chart.Controller.controllers.polarArea.prototype = {
+  "_computeAngle": function () {},
+  "_updateRadius": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
-  "calculateCircumference": function () {},
   "constructor": function () {},
   "countVisibleElements": function () {},
   "createMetaData": function () {},
@@ -7252,6 +7658,7 @@ Chart.Controller.controllers.scatter.prototype = {
   "getPointBackgroundColor": function () {},
   "getPointBorderColor": function () {},
   "getPointBorderWidth": function () {},
+  "getPointRotation": function () {},
   "getScaleForId": function () {},
   "initialize": function () {},
   "insertElements": function () {},
@@ -7272,7 +7679,7 @@ Chart.Controller.controllers.scatter.prototype = {
   "updateIndex": function () {}
 };
 Chart.Controller.elements.Arc.prototype = {
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -7286,7 +7693,7 @@ Chart.Controller.elements.Arc.prototype = {
   "transition": function () {}
 };
 Chart.Controller.elements.Line.prototype = {
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "draw": function () {},
   "hasValue": function () {},
@@ -7296,7 +7703,7 @@ Chart.Controller.elements.Line.prototype = {
   "transition": function () {}
 };
 Chart.Controller.elements.Point.prototype = {
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -7312,7 +7719,7 @@ Chart.Controller.elements.Point.prototype = {
   "transition": function () {}
 };
 Chart.Controller.elements.Rectangle.prototype = {
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -7329,6 +7736,7 @@ Chart.Controller.elements.Rectangle.prototype = {
   "transition": function () {}
 };
 Chart.Controller.scaleService.constructors.category.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7345,7 +7753,7 @@ Chart.Controller.scaleService.constructors.category.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -7360,12 +7768,14 @@ Chart.Controller.scaleService.constructors.category.prototype = {
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -7373,6 +7783,7 @@ Chart.Controller.scaleService.constructors.category.prototype = {
   "update": function () {}
 };
 Chart.Controller.scaleService.constructors.category.__super__.constructor.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7389,7 +7800,7 @@ Chart.Controller.scaleService.constructors.category.__super__.constructor.protot
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -7403,12 +7814,14 @@ Chart.Controller.scaleService.constructors.category.__super__.constructor.protot
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -7416,6 +7829,7 @@ Chart.Controller.scaleService.constructors.category.__super__.constructor.protot
   "update": function () {}
 };
 Chart.Controller.scaleService.constructors.linear.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7432,7 +7846,7 @@ Chart.Controller.scaleService.constructors.linear.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -7447,6 +7861,7 @@ Chart.Controller.scaleService.constructors.linear.prototype = {
   "getPixelForValue": function () {},
   "getRightValue": function () {},
   "getTickLimit": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleDirectionalChanges": function () {},
   "handleMargins": function () {},
@@ -7455,6 +7870,7 @@ Chart.Controller.scaleService.constructors.linear.prototype = {
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -7462,6 +7878,7 @@ Chart.Controller.scaleService.constructors.linear.prototype = {
   "update": function () {}
 };
 Chart.Controller.scaleService.constructors.linear.__super__.constructor.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7478,7 +7895,7 @@ Chart.Controller.scaleService.constructors.linear.__super__.constructor.prototyp
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -7493,6 +7910,7 @@ Chart.Controller.scaleService.constructors.linear.__super__.constructor.prototyp
   "getPixelForValue": function () {},
   "getRightValue": function () {},
   "getTickLimit": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleDirectionalChanges": function () {},
   "handleMargins": function () {},
@@ -7501,6 +7919,7 @@ Chart.Controller.scaleService.constructors.linear.__super__.constructor.prototyp
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -7508,6 +7927,7 @@ Chart.Controller.scaleService.constructors.linear.__super__.constructor.prototyp
   "update": function () {}
 };
 Chart.Controller.scaleService.constructors.linear.__super__.constructor.__super__.constructor.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7524,7 +7944,7 @@ Chart.Controller.scaleService.constructors.linear.__super__.constructor.__super_
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -7538,12 +7958,14 @@ Chart.Controller.scaleService.constructors.linear.__super__.constructor.__super_
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -7551,6 +7973,8 @@ Chart.Controller.scaleService.constructors.linear.__super__.constructor.__super_
   "update": function () {}
 };
 Chart.Controller.scaleService.constructors.logarithmic.prototype = {
+  "_autoSkip": function () {},
+  "_getFirstTickValue": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7567,7 +7991,7 @@ Chart.Controller.scaleService.constructors.logarithmic.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -7581,12 +8005,15 @@ Chart.Controller.scaleService.constructors.logarithmic.prototype = {
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
+  "handleTickRangeOptions": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -7594,6 +8021,7 @@ Chart.Controller.scaleService.constructors.logarithmic.prototype = {
   "update": function () {}
 };
 Chart.Controller.scaleService.constructors.logarithmic.__super__.constructor.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7610,7 +8038,7 @@ Chart.Controller.scaleService.constructors.logarithmic.__super__.constructor.pro
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -7624,12 +8052,14 @@ Chart.Controller.scaleService.constructors.logarithmic.__super__.constructor.pro
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -7637,6 +8067,7 @@ Chart.Controller.scaleService.constructors.logarithmic.__super__.constructor.pro
   "update": function () {}
 };
 Chart.Controller.scaleService.constructors.radialLinear.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7653,7 +8084,7 @@ Chart.Controller.scaleService.constructors.radialLinear.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -7673,6 +8104,7 @@ Chart.Controller.scaleService.constructors.radialLinear.prototype = {
   "getPointPositionForValue": function () {},
   "getRightValue": function () {},
   "getTickLimit": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleDirectionalChanges": function () {},
   "handleMargins": function () {},
@@ -7681,6 +8113,7 @@ Chart.Controller.scaleService.constructors.radialLinear.prototype = {
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setCenterPoint": function () {},
   "setDimensions": function () {},
@@ -7690,6 +8123,7 @@ Chart.Controller.scaleService.constructors.radialLinear.prototype = {
   "update": function () {}
 };
 Chart.Controller.scaleService.constructors.radialLinear.__super__.constructor.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7706,7 +8140,7 @@ Chart.Controller.scaleService.constructors.radialLinear.__super__.constructor.pr
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -7721,6 +8155,7 @@ Chart.Controller.scaleService.constructors.radialLinear.__super__.constructor.pr
   "getPixelForValue": function () {},
   "getRightValue": function () {},
   "getTickLimit": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleDirectionalChanges": function () {},
   "handleMargins": function () {},
@@ -7729,6 +8164,7 @@ Chart.Controller.scaleService.constructors.radialLinear.__super__.constructor.pr
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -7736,6 +8172,7 @@ Chart.Controller.scaleService.constructors.radialLinear.__super__.constructor.pr
   "update": function () {}
 };
 Chart.Controller.scaleService.constructors.radialLinear.__super__.constructor.__super__.constructor.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7752,7 +8189,7 @@ Chart.Controller.scaleService.constructors.radialLinear.__super__.constructor.__
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -7766,12 +8203,14 @@ Chart.Controller.scaleService.constructors.radialLinear.__super__.constructor.__
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -7779,6 +8218,7 @@ Chart.Controller.scaleService.constructors.radialLinear.__super__.constructor.__
   "update": function () {}
 };
 Chart.Controller.scaleService.constructors.time.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7795,7 +8235,7 @@ Chart.Controller.scaleService.constructors.time.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -7812,12 +8252,14 @@ Chart.Controller.scaleService.constructors.time.prototype = {
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tickFormatFunction": function () {},
@@ -7826,6 +8268,7 @@ Chart.Controller.scaleService.constructors.time.prototype = {
   "update": function () {}
 };
 Chart.Controller.scaleService.constructors.time.__super__.constructor.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7842,7 +8285,7 @@ Chart.Controller.scaleService.constructors.time.__super__.constructor.prototype 
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -7856,12 +8299,14 @@ Chart.Controller.scaleService.constructors.time.__super__.constructor.prototype 
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -7898,7 +8343,7 @@ Chart.DatasetController.prototype = {
   "updateIndex": function () {}
 };
 Chart.Element.prototype = {
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "pivot": function () {},
@@ -7915,7 +8360,7 @@ Chart.Legend.prototype = {
   "beforeSetDimensions": function () {},
   "beforeUpdate": function () {},
   "buildLabels": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "draw": function () {},
   "fit": function () {},
@@ -7930,6 +8375,7 @@ Chart.Legend.prototype = {
   "update": function () {}
 };
 Chart.LinearScaleBase.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7946,7 +8392,7 @@ Chart.LinearScaleBase.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -7961,6 +8407,7 @@ Chart.LinearScaleBase.prototype = {
   "getPixelForValue": function () {},
   "getRightValue": function () {},
   "getTickLimit": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleDirectionalChanges": function () {},
   "handleMargins": function () {},
@@ -7969,6 +8416,7 @@ Chart.LinearScaleBase.prototype = {
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -7976,6 +8424,7 @@ Chart.LinearScaleBase.prototype = {
   "update": function () {}
 };
 Chart.LinearScaleBase.__super__.constructor.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7992,7 +8441,7 @@ Chart.LinearScaleBase.__super__.constructor.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8006,12 +8455,14 @@ Chart.LinearScaleBase.__super__.constructor.prototype = {
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -8019,7 +8470,7 @@ Chart.LinearScaleBase.__super__.constructor.prototype = {
   "update": function () {}
 };
 Chart.PluginBase.prototype = {
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "hasValue": function () {},
   "initialize": function () {},
@@ -8028,6 +8479,7 @@ Chart.PluginBase.prototype = {
   "transition": function () {}
 };
 Chart.Scale.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8044,7 +8496,7 @@ Chart.Scale.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8058,12 +8510,14 @@ Chart.Scale.prototype = {
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -8080,7 +8534,7 @@ Chart.Title.prototype = {
   "beforeSetDimensions": function () {},
   "beforeUpdate": function () {},
   "buildLabels": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "draw": function () {},
   "fit": function () {},
@@ -8094,7 +8548,7 @@ Chart.Title.prototype = {
   "update": function () {}
 };
 Chart.Tooltip.prototype = {
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "draw": function () {},
   "drawBackground": function () {},
@@ -8117,6 +8571,7 @@ Chart.Tooltip.prototype = {
   "update": function () {}
 };
 Chart.controllers.bar.prototype = {
+  "_getStacks": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -8158,6 +8613,7 @@ Chart.controllers.bar.prototype = {
   "updateIndex": function () {}
 };
 Chart.controllers.bubble.prototype = {
+  "_resolveElementOptions": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -8170,7 +8626,6 @@ Chart.controllers.bubble.prototype = {
   "draw": function () {},
   "getDataset": function () {},
   "getMeta": function () {},
-  "getRadius": function () {},
   "getScaleForId": function () {},
   "initialize": function () {},
   "insertElements": function () {},
@@ -8225,6 +8680,7 @@ Chart.controllers.doughnut.prototype = {
   "updateIndex": function () {}
 };
 Chart.controllers.horizontalBar.prototype = {
+  "_getStacks": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -8266,6 +8722,7 @@ Chart.controllers.horizontalBar.prototype = {
   "updateIndex": function () {}
 };
 Chart.controllers.horizontalBar.__super__.constructor.prototype = {
+  "_getStacks": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -8307,7 +8764,7 @@ Chart.controllers.horizontalBar.__super__.constructor.prototype = {
   "updateIndex": function () {}
 };
 Chart.controllers.horizontalBar.__super__.dataElementType.prototype = {
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -8340,6 +8797,7 @@ Chart.controllers.line.prototype = {
   "getPointBackgroundColor": function () {},
   "getPointBorderColor": function () {},
   "getPointBorderWidth": function () {},
+  "getPointRotation": function () {},
   "getScaleForId": function () {},
   "initialize": function () {},
   "insertElements": function () {},
@@ -8395,10 +8853,11 @@ Chart.controllers.pie.prototype = {
   "updateIndex": function () {}
 };
 Chart.controllers.polarArea.prototype = {
+  "_computeAngle": function () {},
+  "_updateRadius": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
-  "calculateCircumference": function () {},
   "constructor": function () {},
   "countVisibleElements": function () {},
   "createMetaData": function () {},
@@ -8476,6 +8935,7 @@ Chart.controllers.scatter.prototype = {
   "getPointBackgroundColor": function () {},
   "getPointBorderColor": function () {},
   "getPointBorderWidth": function () {},
+  "getPointRotation": function () {},
   "getScaleForId": function () {},
   "initialize": function () {},
   "insertElements": function () {},
@@ -8496,7 +8956,7 @@ Chart.controllers.scatter.prototype = {
   "updateIndex": function () {}
 };
 Chart.elements.Arc.prototype = {
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -8510,7 +8970,7 @@ Chart.elements.Arc.prototype = {
   "transition": function () {}
 };
 Chart.elements.Line.prototype = {
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "draw": function () {},
   "hasValue": function () {},
@@ -8520,7 +8980,7 @@ Chart.elements.Line.prototype = {
   "transition": function () {}
 };
 Chart.elements.Point.prototype = {
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -8536,7 +8996,7 @@ Chart.elements.Point.prototype = {
   "transition": function () {}
 };
 Chart.elements.Rectangle.prototype = {
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -8553,6 +9013,7 @@ Chart.elements.Rectangle.prototype = {
   "transition": function () {}
 };
 Chart.scaleService.constructors.category.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8569,7 +9030,7 @@ Chart.scaleService.constructors.category.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8584,12 +9045,14 @@ Chart.scaleService.constructors.category.prototype = {
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -8597,6 +9060,7 @@ Chart.scaleService.constructors.category.prototype = {
   "update": function () {}
 };
 Chart.scaleService.constructors.category.__super__.constructor.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8613,7 +9077,7 @@ Chart.scaleService.constructors.category.__super__.constructor.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8627,12 +9091,14 @@ Chart.scaleService.constructors.category.__super__.constructor.prototype = {
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -8640,6 +9106,7 @@ Chart.scaleService.constructors.category.__super__.constructor.prototype = {
   "update": function () {}
 };
 Chart.scaleService.constructors.linear.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8656,7 +9123,7 @@ Chart.scaleService.constructors.linear.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8671,6 +9138,7 @@ Chart.scaleService.constructors.linear.prototype = {
   "getPixelForValue": function () {},
   "getRightValue": function () {},
   "getTickLimit": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleDirectionalChanges": function () {},
   "handleMargins": function () {},
@@ -8679,6 +9147,7 @@ Chart.scaleService.constructors.linear.prototype = {
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -8686,6 +9155,7 @@ Chart.scaleService.constructors.linear.prototype = {
   "update": function () {}
 };
 Chart.scaleService.constructors.linear.__super__.constructor.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8702,7 +9172,7 @@ Chart.scaleService.constructors.linear.__super__.constructor.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8717,6 +9187,7 @@ Chart.scaleService.constructors.linear.__super__.constructor.prototype = {
   "getPixelForValue": function () {},
   "getRightValue": function () {},
   "getTickLimit": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleDirectionalChanges": function () {},
   "handleMargins": function () {},
@@ -8725,6 +9196,7 @@ Chart.scaleService.constructors.linear.__super__.constructor.prototype = {
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -8732,6 +9204,7 @@ Chart.scaleService.constructors.linear.__super__.constructor.prototype = {
   "update": function () {}
 };
 Chart.scaleService.constructors.linear.__super__.constructor.__super__.constructor.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8748,7 +9221,7 @@ Chart.scaleService.constructors.linear.__super__.constructor.__super__.construct
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8762,12 +9235,14 @@ Chart.scaleService.constructors.linear.__super__.constructor.__super__.construct
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -8775,6 +9250,8 @@ Chart.scaleService.constructors.linear.__super__.constructor.__super__.construct
   "update": function () {}
 };
 Chart.scaleService.constructors.logarithmic.prototype = {
+  "_autoSkip": function () {},
+  "_getFirstTickValue": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8791,7 +9268,7 @@ Chart.scaleService.constructors.logarithmic.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8805,12 +9282,15 @@ Chart.scaleService.constructors.logarithmic.prototype = {
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
+  "handleTickRangeOptions": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -8818,6 +9298,7 @@ Chart.scaleService.constructors.logarithmic.prototype = {
   "update": function () {}
 };
 Chart.scaleService.constructors.logarithmic.__super__.constructor.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8834,7 +9315,7 @@ Chart.scaleService.constructors.logarithmic.__super__.constructor.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8848,12 +9329,14 @@ Chart.scaleService.constructors.logarithmic.__super__.constructor.prototype = {
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -8861,6 +9344,7 @@ Chart.scaleService.constructors.logarithmic.__super__.constructor.prototype = {
   "update": function () {}
 };
 Chart.scaleService.constructors.radialLinear.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8877,7 +9361,7 @@ Chart.scaleService.constructors.radialLinear.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8897,6 +9381,7 @@ Chart.scaleService.constructors.radialLinear.prototype = {
   "getPointPositionForValue": function () {},
   "getRightValue": function () {},
   "getTickLimit": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleDirectionalChanges": function () {},
   "handleMargins": function () {},
@@ -8905,6 +9390,7 @@ Chart.scaleService.constructors.radialLinear.prototype = {
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setCenterPoint": function () {},
   "setDimensions": function () {},
@@ -8914,6 +9400,7 @@ Chart.scaleService.constructors.radialLinear.prototype = {
   "update": function () {}
 };
 Chart.scaleService.constructors.radialLinear.__super__.constructor.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8930,7 +9417,7 @@ Chart.scaleService.constructors.radialLinear.__super__.constructor.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8945,6 +9432,7 @@ Chart.scaleService.constructors.radialLinear.__super__.constructor.prototype = {
   "getPixelForValue": function () {},
   "getRightValue": function () {},
   "getTickLimit": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleDirectionalChanges": function () {},
   "handleMargins": function () {},
@@ -8953,6 +9441,7 @@ Chart.scaleService.constructors.radialLinear.__super__.constructor.prototype = {
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -8960,6 +9449,7 @@ Chart.scaleService.constructors.radialLinear.__super__.constructor.prototype = {
   "update": function () {}
 };
 Chart.scaleService.constructors.radialLinear.__super__.constructor.__super__.constructor.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8976,7 +9466,7 @@ Chart.scaleService.constructors.radialLinear.__super__.constructor.__super__.con
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8990,12 +9480,14 @@ Chart.scaleService.constructors.radialLinear.__super__.constructor.__super__.con
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
@@ -9003,6 +9495,7 @@ Chart.scaleService.constructors.radialLinear.__super__.constructor.__super__.con
   "update": function () {}
 };
 Chart.scaleService.constructors.time.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -9019,7 +9512,7 @@ Chart.scaleService.constructors.time.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -9036,12 +9529,14 @@ Chart.scaleService.constructors.time.prototype = {
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tickFormatFunction": function () {},
@@ -9050,6 +9545,7 @@ Chart.scaleService.constructors.time.prototype = {
   "update": function () {}
 };
 Chart.scaleService.constructors.time.__super__.constructor.prototype = {
+  "_autoSkip": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -9066,7 +9562,7 @@ Chart.scaleService.constructors.time.__super__.constructor.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_98017659": function () {},
+  "closure_uid_557975952": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -9080,12 +9576,14 @@ Chart.scaleService.constructors.time.__super__.constructor.prototype = {
   "getPixelForTick": function () {},
   "getPixelForValue": function () {},
   "getRightValue": function () {},
+  "getTicks": function () {},
   "getValueForPixel": function () {},
   "handleMargins": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "isFullWidth": function () {},
   "isHorizontal": function () {},
+  "mergeTicksOptions": function () {},
   "pivot": function () {},
   "setDimensions": function () {},
   "tooltipPosition": function () {},
