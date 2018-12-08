@@ -196,6 +196,13 @@ var vega = {
   "font": function () {},
   "fontFamily": function () {},
   "fontSize": function () {},
+  "format": {
+    "csv": function () {},
+    "dsv": function () {},
+    "json": function () {},
+    "topojson": function () {},
+    "tsv": function () {}
+  },
   "formatLocale": function () {},
   "formats": function () {},
   "id": {
