@@ -22,9 +22,6 @@ var vegaTooltip = {
   "replacer": function () {},
   "stringify": function () {}
 };
-vegaTooltip.Handler.prototype = {
-  "tooltip_handler": function () {}
-};
 /**********************************************************************
  * End Generated Extern for vegaTooltip
-/**********************************************************************/
+ **********************************************************************/
