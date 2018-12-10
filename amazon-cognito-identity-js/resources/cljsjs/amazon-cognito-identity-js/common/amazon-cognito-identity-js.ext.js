@@ -4,8 +4,8 @@
  **********************************************************************/
 
 // Load JavaScript (order matters):
-// https://cdn.rawgit.com/amazon-archives/amazon-cognito-identity-js/v1.31.0/dist/aws-cognito-sdk.js
-// https://cdn.rawgit.com/amazon-archives/amazon-cognito-identity-js/v1.31.0/dist/amazon-cognito-identity.js
+// https://cdn.jsdelivr.net/gh/amazon-archives/amazon-cognito-identity-js@v1.31.0/dist/aws-cognito-sdk.js
+// https://cdn.jsdelivr.net/gh/amazon-archives/amazon-cognito-identity-js@v1.31.0/dist/amazon-cognito-identity.js
 //
 // Extern:
 // AWSCognito

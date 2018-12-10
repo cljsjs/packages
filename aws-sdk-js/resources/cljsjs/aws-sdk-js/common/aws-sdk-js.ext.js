@@ -1,7 +1,7 @@
 // Generated via http://jmmk.github.io/javascript-externs-generator/
 //
 // Load JavaScript:
-// https://cdn.rawgit.com/aws/aws-sdk-js/v2.94.0/dist/aws-sdk.min.js
+// https://cdn.jsdelivr.net/gh/aws/aws-sdk-js@v2.94.0/dist/aws-sdk.min.js
 //
 // Cleanup Extern:
 // Remove lines w/ "closure_uid_*"

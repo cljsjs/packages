@@ -6,7 +6,7 @@
 // https://cdnjs.cloudflare.com/ajax/libs/react/15.0.2/react.js
 // https://cdnjs.cloudflare.com/ajax/libs/react/15.0.2/react-dom-server.js
 // https://cdnjs.cloudflare.com/ajax/libs/react/15.0.2/react-dom.js
-// https://rawgit.com/seatgeek/react-infinite/master/dist/react-infinite.js
+// https://cdn.jsdelivr.net/gh/seatgeek/react-infinite@master/dist/react-infinite.js
 
 // Reference ns as Infinite
 

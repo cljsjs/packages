@@ -3,7 +3,7 @@
 // Import formsy-react
 // Loaded JavaScripts:
 // https://cdnjs.cloudflare.com/ajax/libs/react/15.0.2/react.js
-// https://rawgit.com/christianalfoni/formsy-react/master/release/formsy-react.js
+// https://cdn.jsdelivr.net/gh/christianalfoni/formsy-react@master/release/formsy-react.js
 
 // Object to extern: Formsy
 
