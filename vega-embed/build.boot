@@ -1,11 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.10.3" :scope "test"]
-                  [cljsjs/vega "4.3.0-0"]])
+                  [cljsjs/vega "4.4.0-0"]
+                  [cljsjs/vega-lite "3.0.0-rc10-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.24.1")
+  (def +lib-version+ "3.26.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -20,10 +21,10 @@
   (comp
     (download
      :url (format "https://unpkg.com/vega-embed@%s/build/vega-embed.js" +lib-version+)
-     :checksum "062C4B09891E5E7D1893301A7092F27B")
+     :checksum "F19B68E44197E68EFF6F3CA9853E22F4")
     (download
      :url (format "https://unpkg.com/vega-embed@%s/build/vega-embed.min.js" +lib-version+)
-     :checksum "DDEAF3AA0801E95A9ADDCA558FEBE130")
+     :checksum "F5A79DB2A11969A205EC0222E28D9EFB")
     (download
      :url (format "https://unpkg.com/vega-embed@%s/vega-embed.css" +lib-version+)
      :checksum "CFA09422ACF13696B84282A5FCE9267A")
