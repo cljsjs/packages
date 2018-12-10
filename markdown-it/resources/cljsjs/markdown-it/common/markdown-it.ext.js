@@ -1,6 +1,6 @@
 // Generated via http://jmmk.github.io/javascript-externs-generator/
 // Loaded JavaScripts:
-// https://rawgit.com/markdown-it/markdown-it/master/dist/markdown-it.js
+// https://cdn.jsdelivr.net/gh/markdown-it/markdown-it@master/dist/markdown-it.js
 
 // extern the 'markdownit' object
 

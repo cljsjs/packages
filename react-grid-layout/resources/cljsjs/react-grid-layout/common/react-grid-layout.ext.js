@@ -2,7 +2,7 @@
 
 // Loaded JavaScripts:
 // https://github.com/facebook/react/releases/download/v16.0.0/react.production.min.js
-// https://rawgit.com/STRML/react-grid-layout/0.16.5/dist/react-grid-layout.min.js
+// https://cdn.jsdelivr.net/gh/STRML/react-grid-layout@0.16.5/dist/react-grid-layout.min.js
 
 // Reference ns as ReactGridLayout
 var ReactGridLayout = {

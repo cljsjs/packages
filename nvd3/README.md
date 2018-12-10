@@ -29,9 +29,9 @@ This jar requires additional CSS assets:
 
 ```html
 <!-- Directly in your index.html file. -->
-<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/novus/nvd3@v1.8.1/build/nv.d3.css">
 <!-- or the min version -->
-<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/novus/nvd3@v1.8.1/build/nv.d3.min.css">
 ```
 
 ## Usage Example

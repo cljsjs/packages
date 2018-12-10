@@ -2,7 +2,7 @@
 // Import toastr via rawgit
 
 // Loaded JavaScripts:
-// https://rawgit.com/CodeSeven/toastr/2.1.2/toastr.js
+// https://cdn.jsdelivr.net/gh/CodeSeven/toastr@2.1.2/toastr.js
 
 // Reference ns as toastr
 

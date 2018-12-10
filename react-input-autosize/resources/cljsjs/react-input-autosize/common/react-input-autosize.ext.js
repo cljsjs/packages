@@ -3,7 +3,7 @@
 // Loaded JS:
 // * https://cdnjs.cloudflare.com/ajax/libs/react/16.2.0/umd/react.production.min.js
 // * https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.6.0/prop-types.min.js
-// * https://rawgit.com/JedWatson/react-input-autosize/v2.2.1/dist/react-input-autosize.min.js
+// * https://cdn.jsdelivr.net/gh/JedWatson/react-input-autosize@v2.2.1/dist/react-input-autosize.min.js
 
 /**********************************************************************
  * Extern for AutosizeInput

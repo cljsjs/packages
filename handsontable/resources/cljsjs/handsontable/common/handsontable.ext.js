@@ -1,6 +1,6 @@
 // Generated via http://jmmk.github.io/javascript-externs-generator/
 // Loaded JavaScripts:
-// https://rawgit.com/handsontable/handsontable/master/dist/handsontable.full.min.js
+// https://cdn.jsdelivr.net/gh/handsontable/handsontable@master/dist/handsontable.full.min.js
 // extern the 'Handsontable' object
 
 var Handsontable = {
