@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.5.8")
-(def +version+ (str +lib-version+ "-4"))
+(def +lib-version+ "0.7.2")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom {:project 'cljsjs/p5
@@ -18,11 +18,11 @@
 (deftask package []
   (comp
    (download :url (format "https://github.com/processing/p5.js/releases/download/%s/p5.zip" +lib-version+)
-             :checksum "73e9706bf925b98105ebdb0ae3852da3"
              :unzip true)
-   (sift :move {#"^.*/p5.min.js$" "cljsjs/p5/production/p5.min.inc.js"
-                #"^.*/p5.js$" "cljsjs/p5/development/p5.inc.js"})
+   (sift :move {#"^p5.min.js$" "cljsjs/p5/production/p5.min.inc.js"
+                #"^p5.js$" "cljsjs/p5/development/p5.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.p5")
+   (validate-checksums)
    (pom)
    (jar)))
