@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.83.0")
+(def +lib-version+ "0.84.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -23,7 +23,7 @@
                :provides ["cljsjs.semantic-ui-react"]
                :global-exports '{cljsjs.semantic-ui-react semanticUIReact})
     (pom :project 'cljsjs/semantic-ui-react
-         :dependencies [['cljsjs/react "16.0.0-0"]
-                        ['cljsjs/react-dom "16.0.0-0"]])
+         :dependencies [['cljsjs/react "16.3.0-0"]
+                        ['cljsjs/react-dom "16.3.0-0"]])
     (jar)
     (validate)))
