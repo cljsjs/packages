@@ -8,6 +8,7 @@ $.prototype.embed = function() {};
 $.prototype.form = function() {};
 $.prototype.modal = function() {};
 $.prototype.nag = function() {};
+$.prototype.placeholder = function() {};
 $.prototype.popup = function() {};
 $.prototype.progress = function() {};
 $.prototype.rating = function() {};
