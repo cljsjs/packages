@@ -7,8 +7,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.1.0")
-(def +version+ (str +lib-version+ "-3"))
+(def +lib-version+ "1.4.2")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/recharts
@@ -28,6 +28,6 @@
               :requires ["react" "react-dom" "prop-types"]
               :global-exports '{recharts Recharts})
    (sift :include #{#"^cljsjs" #"^deps\.cljs$"})
+   (validate-checksums)
    (pom)
-   (jar)
-   (validate)))
+   (jar)))
