@@ -6,7 +6,7 @@
  * https://unpkg.com/react-dom@16.4.1/umd/react-dom.development.js
  * https://unpkg.com/react-transition-group@2.2.1/dist/react-transition-group.min.js
  * https://unpkg.com/prop-types@15.6.0/prop-types.min.js
- * https://unpkg.com/recharts@1.1.0/umd/Recharts.min.js
+ * https://unpkg.com/recharts@1.4.2/umd/Recharts.min.js
  **********************************************************************/
 var Recharts = {
   "Area": {
@@ -197,6 +197,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "lightingColor": {
+        "isRequired": function () {}
+      },
+      "lineHeight": {
         "isRequired": function () {}
       },
       "markerEnd": {
@@ -636,6 +639,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "lightingColor": {
+        "isRequired": function () {}
+      },
+      "lineHeight": {
         "isRequired": function () {}
       },
       "markerEnd": {
@@ -1128,6 +1134,9 @@ var Recharts = {
       "lightingColor": {
         "isRequired": function () {}
       },
+      "lineHeight": {
+        "isRequired": function () {}
+      },
       "markerEnd": {
         "isRequired": function () {}
       },
@@ -1443,6 +1452,9 @@ var Recharts = {
       "lightingColor": {
         "isRequired": function () {}
       },
+      "lineHeight": {
+        "isRequired": function () {}
+      },
       "markerEnd": {
         "isRequired": function () {}
       },
@@ -1680,6 +1692,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "lightingColor": {
+        "isRequired": function () {}
+      },
+      "lineHeight": {
         "isRequired": function () {}
       },
       "markerEnd": {
@@ -2010,6 +2025,9 @@ var Recharts = {
       "lightingColor": {
         "isRequired": function () {}
       },
+      "lineHeight": {
+        "isRequired": function () {}
+      },
       "markerEnd": {
         "isRequired": function () {}
       },
@@ -2248,6 +2266,9 @@ var Recharts = {
       "lightingColor": {
         "isRequired": function () {}
       },
+      "lineHeight": {
+        "isRequired": function () {}
+      },
       "markerEnd": {
         "isRequired": function () {}
       },
@@ -2416,6 +2437,413 @@ var Recharts = {
       }
     }
   },
+  "Funnel": {
+    "defaultProps": {
+      "animationBegin": {},
+      "animationDuration": {},
+      "animationEasing": {},
+      "fill": {},
+      "hide": {},
+      "isAnimationActive": {},
+      "labelLine": {},
+      "legendType": {},
+      "nameKey": {},
+      "stroke": {}
+    },
+    "displayName": {},
+    "getComposedData": function () {},
+    "getRealFunnelData": function () {},
+    "getRealWidthHeight": function () {},
+    "propTypes": {
+      "activeIndex": {
+        "isRequired": function () {}
+      },
+      "activeShape": {
+        "isRequired": function () {}
+      },
+      "alignmentBaseline": {
+        "isRequired": function () {}
+      },
+      "angle": {
+        "isRequired": function () {}
+      },
+      "animationBegin": {
+        "isRequired": function () {}
+      },
+      "animationDuration": {
+        "isRequired": function () {}
+      },
+      "animationEasing": {
+        "isRequired": function () {}
+      },
+      "animationId": {
+        "isRequired": function () {}
+      },
+      "baselineShift": {
+        "isRequired": function () {}
+      },
+      "className": {
+        "isRequired": function () {}
+      },
+      "clip": {
+        "isRequired": function () {}
+      },
+      "clipPath": {
+        "isRequired": function () {}
+      },
+      "clipRule": {
+        "isRequired": function () {}
+      },
+      "color": {
+        "isRequired": function () {}
+      },
+      "colorInterpolation": {
+        "isRequired": function () {}
+      },
+      "colorInterpolationFilters": {
+        "isRequired": function () {}
+      },
+      "colorProfile": {
+        "isRequired": function () {}
+      },
+      "colorRendering": {
+        "isRequired": function () {}
+      },
+      "cursor": {
+        "isRequired": function () {}
+      },
+      "data": {
+        "isRequired": function () {}
+      },
+      "dataKey": {
+        "isRequired": function () {}
+      },
+      "direction": {
+        "isRequired": function () {}
+      },
+      "display": {
+        "isRequired": function () {}
+      },
+      "dominantBaseline": {
+        "isRequired": function () {}
+      },
+      "dx": {
+        "isRequired": function () {}
+      },
+      "dy": {
+        "isRequired": function () {}
+      },
+      "enableBackground": {
+        "isRequired": function () {}
+      },
+      "fill": {
+        "isRequired": function () {}
+      },
+      "fillOpacity": {
+        "isRequired": function () {}
+      },
+      "fillRule": {
+        "isRequired": function () {}
+      },
+      "filter": {
+        "isRequired": function () {}
+      },
+      "floodColor": {
+        "isRequired": function () {}
+      },
+      "floodOpacity": {
+        "isRequired": function () {}
+      },
+      "font": {
+        "isRequired": function () {}
+      },
+      "fontFamily": {
+        "isRequired": function () {}
+      },
+      "fontSize": {
+        "isRequired": function () {}
+      },
+      "fontSizeAdjust": {
+        "isRequired": function () {}
+      },
+      "fontStretch": {
+        "isRequired": function () {}
+      },
+      "fontStyle": {
+        "isRequired": function () {}
+      },
+      "fontVariant": {
+        "isRequired": function () {}
+      },
+      "fontWeight": {
+        "isRequired": function () {}
+      },
+      "glyphOrientationHorizontal": {
+        "isRequired": function () {}
+      },
+      "glyphOrientationVertical": {
+        "isRequired": function () {}
+      },
+      "height": {
+        "isRequired": function () {}
+      },
+      "hide": {
+        "isRequired": function () {}
+      },
+      "imageRendering": {
+        "isRequired": function () {}
+      },
+      "isAnimationActive": {
+        "isRequired": function () {}
+      },
+      "kerning": {
+        "isRequired": function () {}
+      },
+      "letterSpacing": {
+        "isRequired": function () {}
+      },
+      "lightingColor": {
+        "isRequired": function () {}
+      },
+      "lineHeight": {
+        "isRequired": function () {}
+      },
+      "markerEnd": {
+        "isRequired": function () {}
+      },
+      "markerMid": {
+        "isRequired": function () {}
+      },
+      "markerStart": {
+        "isRequired": function () {}
+      },
+      "mask": {
+        "isRequired": function () {}
+      },
+      "nameKey": {
+        "isRequired": function () {}
+      },
+      "onClick": {
+        "isRequired": function () {}
+      },
+      "onMouseDown": {
+        "isRequired": function () {}
+      },
+      "onMouseEnter": {
+        "isRequired": function () {}
+      },
+      "onMouseLeave": {
+        "isRequired": function () {}
+      },
+      "onMouseMove": {
+        "isRequired": function () {}
+      },
+      "onMouseOut": {
+        "isRequired": function () {}
+      },
+      "onMouseOver": {
+        "isRequired": function () {}
+      },
+      "onMouseUp": {
+        "isRequired": function () {}
+      },
+      "onTouchCancel": {
+        "isRequired": function () {}
+      },
+      "onTouchEnd": {
+        "isRequired": function () {}
+      },
+      "onTouchMove": {
+        "isRequired": function () {}
+      },
+      "onTouchStart": {
+        "isRequired": function () {}
+      },
+      "opacity": {
+        "isRequired": function () {}
+      },
+      "overflow": {
+        "isRequired": function () {}
+      },
+      "pointerEvents": {
+        "isRequired": function () {}
+      },
+      "r": {
+        "isRequired": function () {}
+      },
+      "radius": {
+        "isRequired": function () {}
+      },
+      "shapeRendering": {
+        "isRequired": function () {}
+      },
+      "stopColor": {
+        "isRequired": function () {}
+      },
+      "stopOpacity": {
+        "isRequired": function () {}
+      },
+      "stroke": {
+        "isRequired": function () {}
+      },
+      "strokeDasharray": {
+        "isRequired": function () {}
+      },
+      "strokeDashoffset": {
+        "isRequired": function () {}
+      },
+      "strokeLinecap": {
+        "isRequired": function () {}
+      },
+      "strokeLinejoin": {
+        "isRequired": function () {}
+      },
+      "strokeMiterlimit": {
+        "isRequired": function () {}
+      },
+      "strokeOpacity": {
+        "isRequired": function () {}
+      },
+      "strokeWidth": {
+        "isRequired": function () {}
+      },
+      "style": {
+        "isRequired": function () {}
+      },
+      "textAnchor": {
+        "isRequired": function () {}
+      },
+      "textDecoration": {
+        "isRequired": function () {}
+      },
+      "textRendering": {
+        "isRequired": function () {}
+      },
+      "transform": {
+        "isRequired": function () {}
+      },
+      "trapezoids": {
+        "isRequired": function () {}
+      },
+      "unicodeBidi": {
+        "isRequired": function () {}
+      },
+      "visibility": {
+        "isRequired": function () {}
+      },
+      "width": {
+        "isRequired": function () {}
+      },
+      "wordSpacing": {
+        "isRequired": function () {}
+      },
+      "writingMode": {
+        "isRequired": function () {}
+      },
+      "x": {
+        "isRequired": function () {}
+      },
+      "y": {
+        "isRequired": function () {}
+      }
+    }
+  },
+  "FunnelChart": {
+    "createDefaultState": function () {},
+    "defaultProps": {
+      "barCategoryGap": {},
+      "barGap": {},
+      "layout": {},
+      "margin": {
+        "bottom": {},
+        "left": {},
+        "right": {},
+        "top": {}
+      },
+      "reverseStackOrder": {},
+      "stackOffset": {}
+    },
+    "displayName": {},
+    "getDisplayedData": function () {},
+    "hasBar": function () {},
+    "propTypes": {
+      "barCategoryGap": {
+        "isRequired": function () {}
+      },
+      "barGap": {
+        "isRequired": function () {}
+      },
+      "barSize": {
+        "isRequired": function () {}
+      },
+      "children": {
+        "isRequired": function () {}
+      },
+      "className": {
+        "isRequired": function () {}
+      },
+      "compact": {
+        "isRequired": function () {}
+      },
+      "data": {
+        "isRequired": function () {}
+      },
+      "defaultShowTooltip": {
+        "isRequired": function () {}
+      },
+      "height": {
+        "isRequired": function () {}
+      },
+      "id": {
+        "isRequired": function () {}
+      },
+      "layout": {
+        "isRequired": function () {}
+      },
+      "margin": {
+        "isRequired": function () {}
+      },
+      "maxBarSize": {
+        "isRequired": function () {}
+      },
+      "onClick": {
+        "isRequired": function () {}
+      },
+      "onMouseDown": {
+        "isRequired": function () {}
+      },
+      "onMouseEnter": {
+        "isRequired": function () {}
+      },
+      "onMouseLeave": {
+        "isRequired": function () {}
+      },
+      "onMouseMove": {
+        "isRequired": function () {}
+      },
+      "onMouseUp": {
+        "isRequired": function () {}
+      },
+      "reverseStackOrder": {
+        "isRequired": function () {}
+      },
+      "stackOffset": {
+        "isRequired": function () {}
+      },
+      "style": {
+        "isRequired": function () {}
+      },
+      "syncId": {
+        "isRequired": function () {}
+      },
+      "throttleDelay": {
+        "isRequired": function () {}
+      },
+      "width": {
+        "isRequired": function () {}
+      }
+    }
+  },
   "Label": {
     "defaultProps": {
       "offset": {}
@@ -2550,6 +2978,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "lightingColor": {
+        "isRequired": function () {}
+      },
+      "lineHeight": {
         "isRequired": function () {}
       },
       "markerEnd": {
@@ -2765,6 +3196,7 @@ var Recharts = {
   "Line": {
     "defaultProps": {
       "activeDot": {},
+      "animateNewValues": {},
       "animationBegin": {},
       "animationDuration": {},
       "animationEasing": {},
@@ -2792,6 +3224,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "angle": {
+        "isRequired": function () {}
+      },
+      "animateNewValues": {
         "isRequired": function () {}
       },
       "animationBegin": {
@@ -2942,6 +3377,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "lightingColor": {
+        "isRequired": function () {}
+      },
+      "lineHeight": {
         "isRequired": function () {}
       },
       "markerEnd": {
@@ -3212,6 +3650,7 @@ var Recharts = {
       "animationBegin": {},
       "animationDuration": {},
       "animationEasing": {},
+      "blendStroke": {},
       "cx": {},
       "cy": {},
       "endAngle": {},
@@ -3259,6 +3698,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "baselineShift": {
+        "isRequired": function () {}
+      },
+      "blendStroke": {
         "isRequired": function () {}
       },
       "className": {
@@ -3409,6 +3851,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "lightingColor": {
+        "isRequired": function () {}
+      },
+      "lineHeight": {
         "isRequired": function () {}
       },
       "markerEnd": {
@@ -3848,6 +4293,9 @@ var Recharts = {
       "lightingColor": {
         "isRequired": function () {}
       },
+      "lineHeight": {
+        "isRequired": function () {}
+      },
       "markerEnd": {
         "isRequired": function () {}
       },
@@ -4142,6 +4590,9 @@ var Recharts = {
       "lightingColor": {
         "isRequired": function () {}
       },
+      "lineHeight": {
+        "isRequired": function () {}
+      },
       "markerEnd": {
         "isRequired": function () {}
       },
@@ -4405,6 +4856,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "lightingColor": {
+        "isRequired": function () {}
+      },
+      "lineHeight": {
         "isRequired": function () {}
       },
       "markerEnd": {
@@ -4688,6 +5142,9 @@ var Recharts = {
       "lightingColor": {
         "isRequired": function () {}
       },
+      "lineHeight": {
+        "isRequired": function () {}
+      },
       "markerEnd": {
         "isRequired": function () {}
       },
@@ -4959,6 +5416,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "lightingColor": {
+        "isRequired": function () {}
+      },
+      "lineHeight": {
         "isRequired": function () {}
       },
       "markerEnd": {
@@ -5375,6 +5835,9 @@ var Recharts = {
       "lightingColor": {
         "isRequired": function () {}
       },
+      "lineHeight": {
+        "isRequired": function () {}
+      },
       "markerEnd": {
         "isRequired": function () {}
       },
@@ -5764,6 +6227,9 @@ var Recharts = {
       "lightingColor": {
         "isRequired": function () {}
       },
+      "lineHeight": {
+        "isRequired": function () {}
+      },
       "markerEnd": {
         "isRequired": function () {}
       },
@@ -6041,6 +6507,9 @@ var Recharts = {
       "lightingColor": {
         "isRequired": function () {}
       },
+      "lineHeight": {
+        "isRequired": function () {}
+      },
       "markerEnd": {
         "isRequired": function () {}
       },
@@ -6313,6 +6782,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "lightingColor": {
+        "isRequired": function () {}
+      },
+      "lineHeight": {
         "isRequired": function () {}
       },
       "markerEnd": {
@@ -6604,6 +7076,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "lightingColor": {
+        "isRequired": function () {}
+      },
+      "lineHeight": {
         "isRequired": function () {}
       },
       "markerEnd": {
@@ -6912,6 +7387,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "lightingColor": {
+        "isRequired": function () {}
+      },
+      "lineHeight": {
         "isRequired": function () {}
       },
       "link": {
@@ -7236,6 +7714,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "line": {
+        "isRequired": function () {}
+      },
+      "lineHeight": {
         "isRequired": function () {}
       },
       "lineJointType": {
@@ -7639,6 +8120,9 @@ var Recharts = {
       "lightingColor": {
         "isRequired": function () {}
       },
+      "lineHeight": {
+        "isRequired": function () {}
+      },
       "markerEnd": {
         "isRequired": function () {}
       },
@@ -7899,6 +8383,9 @@ var Recharts = {
       "lightingColor": {
         "isRequired": function () {}
       },
+      "lineHeight": {
+        "isRequired": function () {}
+      },
       "markerEnd": {
         "isRequired": function () {}
       },
@@ -8134,6 +8621,9 @@ var Recharts = {
       "lightingColor": {
         "isRequired": function () {}
       },
+      "lineHeight": {
+        "isRequired": function () {}
+      },
       "markerEnd": {
         "isRequired": function () {}
       },
@@ -8243,6 +8733,7 @@ var Recharts = {
       "active": {},
       "animationDuration": {},
       "animationEasing": {},
+      "contentStyle": {},
       "coordinate": {
         "x": {},
         "y": {}
@@ -8277,6 +8768,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "content": {
+        "isRequired": function () {}
+      },
+      "contentStyle": {
         "isRequired": function () {}
       },
       "coordinate": {
@@ -8329,6 +8823,295 @@ var Recharts = {
       }
     }
   },
+  "Trapezoid": {
+    "defaultProps": {
+      "animationBegin": {},
+      "animationDuration": {},
+      "animationEasing": {},
+      "height": {},
+      "isUpdateAnimationActive": {},
+      "lowerWidth": {},
+      "upperWidth": {},
+      "x": {},
+      "y": {}
+    },
+    "displayName": {},
+    "propTypes": {
+      "alignmentBaseline": {
+        "isRequired": function () {}
+      },
+      "angle": {
+        "isRequired": function () {}
+      },
+      "animationBegin": {
+        "isRequired": function () {}
+      },
+      "animationDuration": {
+        "isRequired": function () {}
+      },
+      "animationEasing": {
+        "isRequired": function () {}
+      },
+      "baselineShift": {
+        "isRequired": function () {}
+      },
+      "className": {
+        "isRequired": function () {}
+      },
+      "clip": {
+        "isRequired": function () {}
+      },
+      "clipPath": {
+        "isRequired": function () {}
+      },
+      "clipRule": {
+        "isRequired": function () {}
+      },
+      "color": {
+        "isRequired": function () {}
+      },
+      "colorInterpolation": {
+        "isRequired": function () {}
+      },
+      "colorInterpolationFilters": {
+        "isRequired": function () {}
+      },
+      "colorProfile": {
+        "isRequired": function () {}
+      },
+      "colorRendering": {
+        "isRequired": function () {}
+      },
+      "cursor": {
+        "isRequired": function () {}
+      },
+      "direction": {
+        "isRequired": function () {}
+      },
+      "display": {
+        "isRequired": function () {}
+      },
+      "dominantBaseline": {
+        "isRequired": function () {}
+      },
+      "dx": {
+        "isRequired": function () {}
+      },
+      "dy": {
+        "isRequired": function () {}
+      },
+      "enableBackground": {
+        "isRequired": function () {}
+      },
+      "fill": {
+        "isRequired": function () {}
+      },
+      "fillOpacity": {
+        "isRequired": function () {}
+      },
+      "fillRule": {
+        "isRequired": function () {}
+      },
+      "filter": {
+        "isRequired": function () {}
+      },
+      "floodColor": {
+        "isRequired": function () {}
+      },
+      "floodOpacity": {
+        "isRequired": function () {}
+      },
+      "font": {
+        "isRequired": function () {}
+      },
+      "fontFamily": {
+        "isRequired": function () {}
+      },
+      "fontSize": {
+        "isRequired": function () {}
+      },
+      "fontSizeAdjust": {
+        "isRequired": function () {}
+      },
+      "fontStretch": {
+        "isRequired": function () {}
+      },
+      "fontStyle": {
+        "isRequired": function () {}
+      },
+      "fontVariant": {
+        "isRequired": function () {}
+      },
+      "fontWeight": {
+        "isRequired": function () {}
+      },
+      "glyphOrientationHorizontal": {
+        "isRequired": function () {}
+      },
+      "glyphOrientationVertical": {
+        "isRequired": function () {}
+      },
+      "height": {
+        "isRequired": function () {}
+      },
+      "imageRendering": {
+        "isRequired": function () {}
+      },
+      "isUpdateAnimationActive": {
+        "isRequired": function () {}
+      },
+      "kerning": {
+        "isRequired": function () {}
+      },
+      "letterSpacing": {
+        "isRequired": function () {}
+      },
+      "lightingColor": {
+        "isRequired": function () {}
+      },
+      "lineHeight": {
+        "isRequired": function () {}
+      },
+      "lowerWidth": {
+        "isRequired": function () {}
+      },
+      "markerEnd": {
+        "isRequired": function () {}
+      },
+      "markerMid": {
+        "isRequired": function () {}
+      },
+      "markerStart": {
+        "isRequired": function () {}
+      },
+      "mask": {
+        "isRequired": function () {}
+      },
+      "onClick": {
+        "isRequired": function () {}
+      },
+      "onMouseDown": {
+        "isRequired": function () {}
+      },
+      "onMouseEnter": {
+        "isRequired": function () {}
+      },
+      "onMouseLeave": {
+        "isRequired": function () {}
+      },
+      "onMouseMove": {
+        "isRequired": function () {}
+      },
+      "onMouseOut": {
+        "isRequired": function () {}
+      },
+      "onMouseOver": {
+        "isRequired": function () {}
+      },
+      "onMouseUp": {
+        "isRequired": function () {}
+      },
+      "onTouchCancel": {
+        "isRequired": function () {}
+      },
+      "onTouchEnd": {
+        "isRequired": function () {}
+      },
+      "onTouchMove": {
+        "isRequired": function () {}
+      },
+      "onTouchStart": {
+        "isRequired": function () {}
+      },
+      "opacity": {
+        "isRequired": function () {}
+      },
+      "overflow": {
+        "isRequired": function () {}
+      },
+      "pointerEvents": {
+        "isRequired": function () {}
+      },
+      "r": {
+        "isRequired": function () {}
+      },
+      "radius": {
+        "isRequired": function () {}
+      },
+      "shapeRendering": {
+        "isRequired": function () {}
+      },
+      "stopColor": {
+        "isRequired": function () {}
+      },
+      "stopOpacity": {
+        "isRequired": function () {}
+      },
+      "stroke": {
+        "isRequired": function () {}
+      },
+      "strokeDasharray": {
+        "isRequired": function () {}
+      },
+      "strokeDashoffset": {
+        "isRequired": function () {}
+      },
+      "strokeLinecap": {
+        "isRequired": function () {}
+      },
+      "strokeLinejoin": {
+        "isRequired": function () {}
+      },
+      "strokeMiterlimit": {
+        "isRequired": function () {}
+      },
+      "strokeOpacity": {
+        "isRequired": function () {}
+      },
+      "strokeWidth": {
+        "isRequired": function () {}
+      },
+      "style": {
+        "isRequired": function () {}
+      },
+      "textAnchor": {
+        "isRequired": function () {}
+      },
+      "textDecoration": {
+        "isRequired": function () {}
+      },
+      "textRendering": {
+        "isRequired": function () {}
+      },
+      "transform": {
+        "isRequired": function () {}
+      },
+      "unicodeBidi": {
+        "isRequired": function () {}
+      },
+      "upperWidth": {
+        "isRequired": function () {}
+      },
+      "visibility": {
+        "isRequired": function () {}
+      },
+      "width": {
+        "isRequired": function () {}
+      },
+      "wordSpacing": {
+        "isRequired": function () {}
+      },
+      "writingMode": {
+        "isRequired": function () {}
+      },
+      "x": {
+        "isRequired": function () {}
+      },
+      "y": {
+        "isRequired": function () {}
+      }
+    }
+  },
   "Treemap": {
     "defaultProps": {
       "animationBegin": {},
@@ -8337,7 +9120,8 @@ var Recharts = {
       "aspectRatio": {},
       "dataKey": {},
       "isAnimationActive": {},
-      "isUpdateAnimationActive": {}
+      "isUpdateAnimationActive": {},
+      "type": {}
     },
     "displayName": {},
     "propTypes": {
@@ -8357,6 +9141,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "className": {
+        "isRequired": function () {}
+      },
+      "colorPanel": {
         "isRequired": function () {}
       },
       "content": {
@@ -8383,6 +9170,9 @@ var Recharts = {
       "nameKey": {
         "isRequired": function () {}
       },
+      "nestIndexContent": {
+        "isRequired": function () {}
+      },
       "onClick": {
         "isRequired": function () {}
       },
@@ -8396,6 +9186,9 @@ var Recharts = {
         "isRequired": function () {}
       },
       "style": {
+        "isRequired": function () {}
+      },
+      "type": {
         "isRequired": function () {}
       },
       "width": {
@@ -8709,6 +9502,17 @@ Recharts.ErrorBar.prototype = {
   "isReactComponent": function () {},
   "setState": function () {}
 };
+Recharts.Funnel.prototype = {
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {},
+  "shouldComponentUpdate": function () {}
+};
+Recharts.FunnelChart.prototype = {
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
 Recharts.Legend.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
@@ -8847,6 +9651,12 @@ Recharts.Text.prototype = {
   "setState": function () {}
 };
 Recharts.Tooltip.prototype = {
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {},
+  "shouldComponentUpdate": function () {}
+};
+Recharts.Trapezoid.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {},
