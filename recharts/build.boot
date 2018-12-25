@@ -28,6 +28,6 @@
               :requires ["react" "react-dom" "prop-types"]
               :global-exports '{recharts Recharts})
    (sift :include #{#"^cljsjs" #"^deps\.cljs$"})
-   (validate-checksums)
    (pom)
-   (jar)))
+   (jar)
+   (validate)))
