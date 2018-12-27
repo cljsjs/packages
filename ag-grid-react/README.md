@@ -1,11 +1,11 @@
 # cljsjs/ag-grid-react - The JavaScript Datagrid for Enterprise
 
-React Toolbox depends on React with Addons, so, to be able to use it, you not only have to depend in
+React Toolbox depends on React with Addons, so, to be able to use it, you not only have to depend on
 cljsjs/ag-grid-react:
 
 [](dependency)
 ```clojure
-[cljsjs/ag-grid-react "17.0.0-0"] ;; latest release
+[cljsjs/ag-grid-react "19.0.0-0"] ;; latest release
 ```
 [](/dependency)
 

@@ -9,7 +9,7 @@ module.exports = {
     externals: {
         "react": "React",
         "react-dom": "ReactDOM",
-        "ag-grid": "agGrid"
+        "ag-grid-community": "agGrid"
     },
 
     output: {
