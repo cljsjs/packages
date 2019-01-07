@@ -7,7 +7,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.14.0")
+(def +lib-version+ "2.16.2")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -19,7 +19,7 @@
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (deftask download-datepicker []
-  (download :url (str "https://github.com/YouCanBookMe/react-datetime/archive/v" +lib-version+ ".zip")
+  (download :url (str "https://github.com/YouCanBookMe/react-datetime/archive/" +lib-version+ ".zip")
             :unzip true))
 
 (deftask package []
