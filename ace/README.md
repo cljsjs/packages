@@ -1,7 +1,7 @@
 # cljsjs/ace
 [](dependency)
 ```clojure
-[cljsjs/golden-layout "1.4.2-0"] ;; latest release
+[cljsjs/ace "1.4.2-0"] ;; latest release
 ```
 [](/dependency)
 
