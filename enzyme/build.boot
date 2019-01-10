@@ -8,7 +8,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "3.0.0")
+(def +lib-version+ "3.8.0")
 
 (task-options!
  pom  {:project     'cljsjs/enzyme
@@ -27,7 +27,6 @@
 
 (deftask build []
   (let [tmp (boot/tmp-dir!)
-        ;; +lib-folder+ (str "enzyme-" +lib-version+)
         +lib-folder+ "."]
     (with-pre-wrap
       fileset
@@ -43,18 +42,22 @@
         (io/file tmp +lib-folder+ "helper.js"))
       (binding [boot.util/*sh-dir* (str (io/file tmp +lib-folder+))]
         ((sh (cmd "npm") "install" "--production"))
-        ((sh (cmd "npm") "install" "react@15" "react-dom@15" "react-test-renderer@15" "enzyme" "webpack" "enzyme-adapter-react-15"))
-        ((sh (cmd (path (str (io/file tmp +lib-folder+) "/node_modules/.bin/webpack"))) "--config" "webpack-cljsjs.config.js")))
+        ((sh (cmd "npm") "install" "react@~16.4.0" "react-dom@~16.4.0" "react-test-renderer@~16.4.0" "enzyme" "webpack" "webpack-cli" "enzyme-adapter-react-16"))
+        ((sh (cmd (path (str (io/file tmp +lib-folder+) "/node_modules/.bin/webpack"))) "--config" "webpack-cljsjs.config.js"))
+        )
       (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 (deftask package []
   (comp
     (download :url (str "http://registry.npmjs.org/enzyme/-/enzyme-" +lib-version+ ".tgz")
-              :checksum "336CA77636B5EE30B1FECA1ED1644626"
               :decompress true)
     (build)
-    (sift :move {#"^enzyme.bundled.js" "cljsjs/enzyme/development/enzyme.inc.js"})
+    (sift :move {#"^dist/enzyme.bundled.js" "cljsjs/enzyme/development/enzyme.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.enzyme")
+    (deps-cljs :name "cljsjs.enzyme"
+               :foreign-libs [{:file #"enzyme\.inc\.js",
+                               :provides ["enzyme" "cljsjs.enzyme"]
+                               :global-exports '{enzyme Enzyme}}]
+               :externs [#"enzyme\.ext\.js"])
     (pom)
     (jar)))
