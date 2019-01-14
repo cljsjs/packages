@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/highcharts "6.0.7-0"] ;; latest release
+[cljsjs/highcharts "7.0.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -30,6 +30,7 @@ This package also provides following namespaces:
 - cljsjs.highcharts.modules.drilldown
 - cljsjs.highcharts.modules.funnel
 - cljsjs.highcharts.modules.heatmap
+- cljsjs.highcharts.modules.networkgraph
 - cljsjs.highcharts.modules.no-data-to-display
 - cljsjs.highcharts.modules.offline-exporting
 - cljsjs.highcharts.modules.solid-gauge
