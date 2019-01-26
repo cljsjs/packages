@@ -6,12 +6,12 @@
         "build:prod": "webpack --mode production --output-filename material-ui.min.inc.js"
     },
     "dependencies": {
-	"@material-ui/core": "v3.2.0"
+	"@material-ui/core": "v3.9.0"
     },
     "devDependencies": {
-        "webpack": "4.15.1",
-        "webpack-command": "0.4.1",
-        "react": "16.4.1",
-        "react-dom": "16.4.1"
+        "webpack": "4.29.0",
+        "webpack-command": "0.4.2",
+        "react": "16.6.0",
+        "react-dom": "16.6.0"
     }
 }
