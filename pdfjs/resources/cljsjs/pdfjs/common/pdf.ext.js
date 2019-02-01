@@ -1,20 +1,47 @@
 // Generated via http://www.dotnetwise.com/Code/Externs/
-// One difference - the auto-generator marks workerSrc as a function, but it appears to be confused
-// Explicitly defined in pdf.js as @var {string}
 
 // Loaded JavaScripts:
-// pdf.js from https://github.com/mozilla/pdf.js/releases/tag/v1.5.188
+// pdf.js from https://cdn.jsdelivr.net/npm/pdfjs-dist@2.0.943/build/pdf.js
 
 
 var PDFJS = {
-    "version": {},
     "build": {},
-    "pdfBug": {},
-    "VERBOSITY_LEVELS": {
-        "errors": {},
-        "warnings": {},
-        "infos": {}
+    "version": {},
+    "getDocument": function () {},
+    "LoopbackPort": function () {},
+    "PDFDataRangeTransport": function () {},
+    "PDFWorker": function () {},
+    "renderTextLayer": function () {},
+    "AnnotationLayer": function () {},
+    "createPromiseCapability": function () {},
+    "PasswordResponses": {
+        "NEED_PASSWORD": {},
+        "INCORRECT_PASSWORD": {}
     },
+    "InvalidPDFException": function () {},
+    "MissingPDFException": function () {},
+    "SVGGraphics": function () {},
+    "NativeImageDecoding": {
+        "NONE": {},
+        "DECODE": {},
+        "DISPLAY": {}
+    },
+    "CMapCompressionType": {
+        "NONE": {},
+        "BINARY": {},
+        "STREAM": {}
+    },
+    "PermissionFlag": {
+        "PRINT": {},
+        "MODIFY_CONTENTS": {},
+        "COPY": {},
+        "MODIFY_ANNOTATIONS": {},
+        "FILL_INTERACTIVE_FORMS": {},
+        "COPY_FOR_ACCESSIBILITY": {},
+        "ASSEMBLE": {},
+        "PRINT_HIGH_QUALITY": {}
+    },
+    "UnexpectedResponseException": function () {},
     "OPS": {
         "dependency": {},
         "setLineWidth": {},
@@ -108,6 +135,11 @@ var PDFJS = {
         "paintSolidColorImageMask": {},
         "constructPath": {}
     },
+    "VerbosityLevel": {
+        "ERRORS": {},
+        "WARNINGS": {},
+        "INFOS": {}
+    },
     "UNSUPPORTED_FEATURES": {
         "unknown": {},
         "forms": {},
@@ -116,52 +148,15 @@ var PDFJS = {
         "shadingPattern": {},
         "font": {}
     },
-    "UnsupportedManager": {
-        "listen": function () {},
-        "notify": function () {}
-    },
-    "isValidUrl": function () {},
-    "shadow": function () {},
-    "PasswordResponses": {
-        "NEED_PASSWORD": {},
-        "INCORRECT_PASSWORD": {}
-    },
-    "PasswordException": function () {},
-    "UnknownErrorException": function () {},
-    "InvalidPDFException": function () {},
-    "MissingPDFException": function () {},
-    "UnexpectedResponseException": function () {},
-    "Util": function () {},
-    "PageViewport": function () {},
-    "createPromiseCapability": function () {},
-    "createBlob": function () {},
+    "createValidAbsoluteUrl": function () {},
     "createObjectURL": function () {},
     "removeNullCharacters": function () {},
-    "maxImageSize": {},
-    "cMapUrl": function () {},
-    "cMapPacked": {},
-    "disableFontFace": {},
-    "imageResourcesPath": {},
-    "disableWorker": {},
-    "workerSrc": {},
-    "disableRange": {},
-    "disableStream": {},
-    "disableAutoFetch": {},
-    "postMessageTransfers": {},
-    "disableCreateObjectURL": {},
-    "disableWebGL": {},
-    "disableFullscreen": {},
-    "useOnlyCssZoom": {},
-    "verbosity": {},
-    "maxCanvasPixels": {},
-    "externalLinkTarget": {},
-    "externalLinkRel": {},
-    "isEvalSupported": {},
-    "openExternalLinksInNewWindow": {},
-    "getDocument": function () {},
-    "PDFDataRangeTransport": function () {},
-    "PDFWorker": function () {},
-    "CustomStyle": function () {},
+    "shadow": function () {},
+    "Util": function () {},
+    "ReadableStream": function () {},
+    "URL": function () {},
+    "RenderingCancelledException": function () {},
+    "getFilenameFromUrl": function () {},
     "LinkTarget": {
         "NONE": {},
         "SELF": {},
@@ -170,17 +165,10 @@ var PDFJS = {
         "TOP": {}
     },
     "addLinkAttributes": function () {},
-    "getFilenameFromUrl": function () {},
-    "isExternalLinkTargetSet": function () {},
-    "AnnotationLayer": {
-        "render": function () {},
-        "update": function () {}
+    "loadScript": function () {},
+    "GlobalWorkerOptions": {
+        "workerPort": function () {},
+        "workerSrc": {}
     },
-    "renderTextLayer": function () {},
-    "Metadata": function () {},
-    "SVGGraphics": function () {},
-    "disableHistory": {},
-    "disableTextLayer": {},
-    "ignoreCurrentPositionOnZoom": {},
-    "locale": {}
+    "apiCompatibilityParams": function () {}
 };
