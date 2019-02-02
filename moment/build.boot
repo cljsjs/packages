@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.22.2")
-(def +version+ (str +lib-version+ "-2"))
+(def +lib-version+ "2.24.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  push {:ensure-clean false}

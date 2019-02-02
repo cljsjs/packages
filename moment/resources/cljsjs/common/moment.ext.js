@@ -34,6 +34,7 @@ var moment = {
       "asMilliseconds": function () {},
       "asMinutes": function () {},
       "asMonths": function () {},
+      "asQuarters": function () {},
       "asSeconds": function () {},
       "asWeeks": function () {},
       "asYears": function () {},
@@ -247,7 +248,6 @@ moment.prototype = {
   "toObject": function () {},
   "toString": function () {},
   "unix": function () {},
-  "updateLocale": function () {},
   "utc": function () {},
   "utcOffset": function () {},
   "valueOf": function () {},
@@ -268,7 +268,7 @@ moment.prototype = {
 
 // Moment does not expose the Locale constructor and thus the externs generator
 // does not see it. The following is written by hand based on
-// <https://github.com/moment/moment/blob/2.22.2/moment.js#L3923-L3954>
+// <https://github.com/moment/moment/blob/2.24.0/moment.js#L4013-L4044>
 
 moment.Locale = {};
 moment.Locale.prototype = {
@@ -301,7 +301,7 @@ moment.Locale.prototype = {
 };
 
 // Duration constructor added by hand based on
-// <https://github.com/moment/moment/blob/2.22.2/moment.js#L4401-L4436>
+// <https://github.com/moment/moment/blob/2.24.0/moment.js#L4496-L4532>
 
 moment.Duration = {};
 moment.Duration.prototype = {
@@ -317,6 +317,7 @@ moment.Duration.prototype = {
     "asDays": function () {},
     "asWeeks": function () {},
     "asMonths": function () {},
+    "asQuarters": function () {},
     "asYears": function () {},
     "valueOf": function () {},
     "_bubble": function () {},
