@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/clipboard "2.0.1-2"] ;; latest release
+[cljsjs/clipboard "2.0.4-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -21,7 +21,7 @@ you can require the packaged library like so:
     (reagent/create-class
      {:display-name "clipboard-button"
       :component-did-mount
-      #(let [clipboard (new js/Clipboard (reagent/dom-node %))]
+      #(let [clipboard (new js/ClipboardJS (reagent/dom-node %))]
          (reset! clipboard-atom clipboard)
          (debugf "Clipboard mounted"))
       :component-will-unmount
