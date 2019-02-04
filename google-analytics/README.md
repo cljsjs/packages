@@ -1,13 +1,13 @@
 # cljsjs/google-analytics
 
-The latest release as of 2015-09-22 is "2015-04-13" according to the
+The latest release as of 2019-02-04 is "2017-09-21" according to the
 [the changelog](https://developers.google.com/analytics/devguides/collection/analyticsjs/changelog).
 
 This is converted to a semver for cljsjs like so:
 
 [](dependency)
 ```clojure
-[cljsjs/google-analytics "2015.04.13-0"] ;; latest release
+[cljsjs/google-analytics "2017.09.21"] ;; latest release
 ```
 [](/dependency)
 
