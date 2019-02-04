@@ -7,7 +7,7 @@ This is converted to a semver for cljsjs like so:
 
 [](dependency)
 ```clojure
-[cljsjs/google-analytics "2017.09.21"] ;; latest release
+[cljsjs/google-analytics "2017.09.21-0"] ;; latest release
 ```
 [](/dependency)
 
