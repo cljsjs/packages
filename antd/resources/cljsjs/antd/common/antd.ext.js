@@ -5,7 +5,7 @@
  * https://unpkg.com/react@16.6.0/umd/react.development.js
  * https://unpkg.com/react-dom@16.6.0/umd/react-dom.development.js
  * https://unpkg.com/moment@2.24.0/moment.js
- * https://cdnjs.cloudflare.com/ajax/libs/antd/3.13.0/antd-with-locales.js
+ * https://cdnjs.cloudflare.com/ajax/libs/antd/3.13.1/antd-with-locales.js
  * and extern the `antd` object
  **********************************************************************/
 var antd = {
