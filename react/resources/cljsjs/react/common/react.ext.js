@@ -1892,3 +1892,40 @@ React.memo = function() {};
 React.lazy = function() {};
 React.unstable_ConcurrentMode = function() {};
 React.unstable_Profiler = function() {};
+
+// 16.8 Hooks
+
+React.useState = function() {};
+React.useEffect = function() {};
+React.useContext = function() {};
+React.useReducer = function() {};
+React.useCallback = function() {};
+React.useMemo = function() {};
+React.useRef = function() {};
+React.useImperativeHandle = function() {};
+React.useLayoutEffect = function() {};
+React.useDebugValue = function() {};
+
+// 16.8, for some reason renaming unstable Scheduler function calls don't work
+// with Closure node module processing.
+// unstable_now caused problems with Reagent tests.
+// These aren't neede for foreign-libs use, just :npm-deps!
+
+var Scheduler = {
+  unstable_ImmediatePriority: function() {},
+  unstable_UserBlockingPriority: function() {},
+  unstable_NormalPriority: function() {},
+  unstable_IdlePriority: function() {},
+  unstable_LowPriority: function() {},
+  unstable_runWithPriority: function() {},
+  unstable_next: function() {},
+  unstable_scheduleCallback: function() {},
+  unstable_cancelCallback: function() {},
+  unstable_wrapCallback: function() {},
+  unstable_getCurrentPriorityLevel: function() {},
+  unstable_shouldYield: function() {},
+  unstable_continueExecution: function() {},
+  unstable_pauseExecution: function() {},
+  unstable_getFirstCallbackNode: function() {},
+  unstable_now: function() {}
+};
