@@ -650,6 +650,7 @@ var L = {
     "panTo": function () {},
     "panInsideBounds": function () {},
     "panBy": function () {},
+    "panInside": function () {},
     "invalidateSize": function () {},
     "setMaxBounds": function () {},
     "locate": function () {},
