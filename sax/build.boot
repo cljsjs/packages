@@ -13,7 +13,7 @@
        :description "A sax style parser for JS"
        :url         "https://github.com/isaacs/sax-js"
        :scm         {:url "https://github.com/cljsjs/packages"}
-       :license     {"MIT" "http://opensource.org/licenses/MIT"}})
+       :license     {"ISC" "https://github.com/isaacs/sax-js/blob/master/LICENSE"}})
 
 (deftask package []
   (comp
