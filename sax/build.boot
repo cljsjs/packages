@@ -21,7 +21,7 @@
    (sift :move {#"^sax.js"     "cljsjs/sax/development/sax.inc.js"})
    (minify :in "cljsjs/sax/development/sax.inc.js"
            :out "cljsjs/sax/production/sax.min.inc.js")
-   (deps-cljs :provides ["sax" "sax"]
+   (deps-cljs :provides ["sax" "cljsjs.sax"]
               :global-exports '{sax sax})
    (pom)
    (jar)
