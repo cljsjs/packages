@@ -18,7 +18,9 @@
 (deftask package []
   (comp
    (download :url (format "https://unpkg.com/sax@%s/lib/sax.js" +lib-version+))
-   (sift :move {#"^sax.js"     "cljsjs/sax/development/sax.inc.js"})
+   (download :url (format "https://unpkg.com/sax@%s/LICENSE" +lib-version+))
+   (sift :move {#"^sax.js"  "cljsjs/sax/development/sax.inc.js"
+                #"^LICENSE" "cljsjs/sax/common/LICENSE"})
    (minify :in "cljsjs/sax/development/sax.inc.js"
            :out "cljsjs/sax/production/sax.min.inc.js")
    (deps-cljs :provides ["sax" "cljsjs.sax"]
