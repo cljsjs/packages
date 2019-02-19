@@ -2,11 +2,11 @@
 
 [](dependency)
 ```clojure
-[cljsjs/antd "3.13.1-0"] ;; latest release
+[cljsjs/antd "3.13.4-0"]
 ```
 [](/dependency)
 
-This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
+This JAR comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
 of the ClojureScript compiler. after adding the above dependency to your project
 you can require the packaged library like so:
 
