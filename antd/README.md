@@ -2,11 +2,11 @@
 
 [](dependency)
 ```clojure
-[cljsjs/antd "3.13.1-0"] ;; latest release
+[cljsjs/antd "3.13.3-3"]
 ```
 [](/dependency)
 
-This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
+This JAR comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
 of the ClojureScript compiler. after adding the above dependency to your project
 you can require the packaged library like so:
 
@@ -40,3 +40,8 @@ If using `LocaleProvider`, pass the result of the above expression as the
 `locale` prop.
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps
+
+
+#### Useful libraries
+
+* [Ant-Man](https://github.com/hypaer/ant-man) - Thin ClojureScript wrapper around Ant Design React components with Reagent
