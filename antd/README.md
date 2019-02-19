@@ -40,3 +40,8 @@ If using `LocaleProvider`, pass the result of the above expression as the
 `locale` prop.
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps
+
+
+#### Useful libraries
+
+* [Ant-Man](https://github.com/hypaer/ant-man) - Thin ClojureScript wrapper around Ant Design React components with Reagent
