@@ -1,6 +1,6 @@
 # cljsjs/material-ui-icons
 
-https://material-ui-next.com/
+https://material-ui.com
 
 [](dependency)
 ```clojure
