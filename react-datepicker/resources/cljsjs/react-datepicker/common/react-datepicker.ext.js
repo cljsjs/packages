@@ -1,9 +1,12 @@
 /***
- * Externs manually updated from https://unpkg.com/react-datepicker@1.4.0/es/index.js
+ * Externs manually updated from https://unpkg.com/react-datepicker@2.1.0/es/index.js
  */
 var DatePicker = {
     "default": {
         "propTypes": {
+            "onInputClick": {
+                "isRequired": function () {}
+            },
             "adjustDateOnChange": {
                 "isRequired": function () {}
             },
@@ -94,6 +97,9 @@ var DatePicker = {
             "minDate": {
                 "isRequired": function () {}
             },
+            "monthSelectedIn": {
+                "isRequired": function () {}
+            },
             "monthsShown": {
                 "isRequired": function () {}
             },
@@ -137,6 +143,9 @@ var DatePicker = {
                 "isRequired": function () {}
             },
             "placeholderText": {
+                "isRequired": function () {}
+            },
+            "popperProps": {
                 "isRequired": function () {}
             },
             "popperContainer": {
@@ -217,6 +226,15 @@ var DatePicker = {
             "utcOffset": {
                 "isRequired": function () {}
             },
+            "renderCustomHeader": {
+                "isRequired": function () {}
+            },
+            "renderDayContents": {
+                "isRequired": function () {}
+            },
+            "inlineFocusSelectedMonth": {
+                "isRequired": function () {}
+            },
             "value": {
                 "isRequired": function () {}
             },
@@ -267,4 +285,5 @@ DatePicker.default.prototype = {
     "render": function () {},
     "componentWillReceiveProps": function () {},
     "componentWillUnmount": function () {},
+    "componentDidUpdate": function () {}
 };
