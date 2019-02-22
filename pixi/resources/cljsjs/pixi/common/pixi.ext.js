@@ -121,6 +121,12 @@ var PIXI = {
     "MANUAL": {}
   },
   "Graphics": {
+    "CURVES": {
+      "adaptive": {},
+      "maxLength": {},
+      "maxSegments": {},
+      "minSegments": {}
+    },
     "EventEmitter": {
       "EventEmitter": function () {},
       "prefixed": {}
@@ -179,6 +185,7 @@ var PIXI = {
       "_events": {},
       "_eventsCount": {},
       "_frame": {
+        "ceil": function () {},
         "clone": function () {},
         "contains": function () {},
         "copy": function () {},
@@ -253,6 +260,14 @@ var PIXI = {
         "wrapMode": {}
       },
       "clone": function () {},
+      "defaultAnchor": {
+        "clone": function () {},
+        "copy": function () {},
+        "equals": function () {},
+        "set": function () {},
+        "x": {},
+        "y": {}
+      },
       "destroy": function () {},
       "emit": function () {},
       "eventNames": function () {},
@@ -264,6 +279,7 @@ var PIXI = {
       "onBaseTextureUpdated": function () {},
       "once": function () {},
       "orig": {
+        "ceil": function () {},
         "clone": function () {},
         "contains": function () {},
         "copy": function () {},
@@ -295,6 +311,7 @@ var PIXI = {
       "_events": {},
       "_eventsCount": {},
       "_frame": {
+        "ceil": function () {},
         "clone": function () {},
         "contains": function () {},
         "copy": function () {},
@@ -385,6 +402,14 @@ var PIXI = {
         "wrapMode": {}
       },
       "clone": function () {},
+      "defaultAnchor": {
+        "clone": function () {},
+        "copy": function () {},
+        "equals": function () {},
+        "set": function () {},
+        "x": {},
+        "y": {}
+      },
       "destroy": function () {},
       "emit": function () {},
       "eventNames": function () {},
@@ -396,6 +421,7 @@ var PIXI = {
       "onBaseTextureUpdated": function () {},
       "once": function () {},
       "orig": {
+        "ceil": function () {},
         "clone": function () {},
         "contains": function () {},
         "copy": function () {},
@@ -481,6 +507,10 @@ var PIXI = {
     "prefixed": {}
   },
   "TextMetrics": {
+    "BASELINE_MULTIPLIER": {},
+    "BASELINE_SYMBOL": {},
+    "METRICS_STRING": {},
+    "_breakingSpaces": {},
     "_canvas": {},
     "_context": {
       "arc": function () {},
@@ -506,6 +536,7 @@ var PIXI = {
       "font": {},
       "getImageData": function () {},
       "getLineDash": function () {},
+      "getTransform": function () {},
       "globalAlpha": {},
       "globalCompositeOperation": {},
       "imageSmoothingEnabled": {},
@@ -544,8 +575,20 @@ var PIXI = {
       "translate": function () {}
     },
     "_fonts": {},
+    "_newlines": {},
+    "addLine": function () {},
+    "canBreakChars": function () {},
+    "canBreakWords": function () {},
+    "clearMetrics": function () {},
+    "collapseNewlines": function () {},
+    "collapseSpaces": function () {},
+    "getFromCache": function () {},
+    "isBreakingSpace": function () {},
+    "isNewline": function () {},
     "measureFont": function () {},
     "measureText": function () {},
+    "tokenize": function () {},
+    "trimRight": function () {},
     "wordWrap": function () {}
   },
   "TextStyle": function () {},
@@ -554,6 +597,7 @@ var PIXI = {
       "_events": {},
       "_eventsCount": {},
       "_frame": {
+        "ceil": function () {},
         "clone": function () {},
         "contains": function () {},
         "copy": function () {},
@@ -628,6 +672,14 @@ var PIXI = {
         "wrapMode": {}
       },
       "clone": function () {},
+      "defaultAnchor": {
+        "clone": function () {},
+        "copy": function () {},
+        "equals": function () {},
+        "set": function () {},
+        "x": {},
+        "y": {}
+      },
       "destroy": function () {},
       "emit": function () {},
       "eventNames": function () {},
@@ -639,6 +691,7 @@ var PIXI = {
       "onBaseTextureUpdated": function () {},
       "once": function () {},
       "orig": {
+        "ceil": function () {},
         "clone": function () {},
         "contains": function () {},
         "copy": function () {},
@@ -670,6 +723,7 @@ var PIXI = {
       "_events": {},
       "_eventsCount": {},
       "_frame": {
+        "ceil": function () {},
         "clone": function () {},
         "contains": function () {},
         "copy": function () {},
@@ -760,6 +814,14 @@ var PIXI = {
         "wrapMode": {}
       },
       "clone": function () {},
+      "defaultAnchor": {
+        "clone": function () {},
+        "copy": function () {},
+        "equals": function () {},
+        "set": function () {},
+        "x": {},
+        "y": {}
+      },
       "destroy": function () {},
       "emit": function () {},
       "eventNames": function () {},
@@ -771,6 +833,7 @@ var PIXI = {
       "onBaseTextureUpdated": function () {},
       "once": function () {},
       "orig": {
+        "ceil": function () {},
         "clone": function () {},
         "contains": function () {},
         "copy": function () {},
@@ -1313,94 +1376,8 @@ var PIXI = {
   },
   "loaders": {
     "Loader": {
-      "Resource": {
-        "EMPTY_GIF": {},
-        "LOAD_TYPE": {
-          "AUDIO": {},
-          "IMAGE": {},
-          "VIDEO": {},
-          "XHR": {}
-        },
-        "STATUS_FLAGS": {
-          "COMPLETE": {},
-          "DATA_URL": {},
-          "LOADING": {},
-          "NONE": {}
-        },
-        "TYPE": {
-          "AUDIO": {},
-          "IMAGE": {},
-          "JSON": {},
-          "TEXT": {},
-          "UNKNOWN": {},
-          "VIDEO": {},
-          "XML": {}
-        },
-        "XHR_RESPONSE_TYPE": {
-          "BLOB": {},
-          "BUFFER": {},
-          "DEFAULT": {},
-          "DOCUMENT": {},
-          "JSON": {},
-          "TEXT": {}
-        },
-        "_loadTypeMap": {
-          "bmp": {},
-          "gif": {},
-          "jpeg": {},
-          "jpg": {},
-          "mp3": {},
-          "mp4": {},
-          "ogg": {},
-          "png": {},
-          "svg": {},
-          "svg+xml": {},
-          "tga": {},
-          "tif": {},
-          "tiff": {},
-          "wav": {},
-          "webm": {},
-          "webp": {}
-        },
-        "_xhrTypeMap": {
-          "bmp": {},
-          "fnt": {},
-          "gif": {},
-          "htm": {},
-          "html": {},
-          "jpeg": {},
-          "jpg": {},
-          "json": {},
-          "otf": {},
-          "png": {},
-          "svg": {},
-          "text": {},
-          "tga": {},
-          "tif": {},
-          "tiff": {},
-          "tmx": {},
-          "tsx": {},
-          "ttf": {},
-          "txt": {},
-          "webp": {},
-          "xhtml": {},
-          "xml": {}
-        },
-        "setExtensionLoadType": function () {},
-        "setExtensionXhrType": function () {}
-      },
-      "_pixiMiddleware": {},
-      "addPixiMiddleware": function () {},
-      "async": {
-        "__esModule": {},
-        "eachSeries": function () {},
-        "queue": function () {}
-      },
-      "base64": {
-        "__esModule": {},
-        "encodeBinary": function () {}
-      },
-      "default": {
+      "Loader": {
+        "Loader": function () {},
         "Resource": {
           "EMPTY_GIF": {},
           "LOAD_TYPE": {
@@ -1477,6 +1454,8 @@ var PIXI = {
           "setExtensionLoadType": function () {},
           "setExtensionXhrType": function () {}
         },
+        "_defaultAfterMiddleware": {},
+        "_defaultBeforeMiddleware": {},
         "async": {
           "__esModule": {},
           "eachSeries": function () {},
@@ -1484,10 +1463,214 @@ var PIXI = {
         },
         "base64": {
           "__esModule": {},
+          "default": function () {},
           "encodeBinary": function () {}
         },
-        "default": function () {}
-      }
+        "default": function () {},
+        "encodeBinary": {
+          "__esModule": {},
+          "default": function () {},
+          "encodeBinary": function () {}
+        },
+        "pre": function () {},
+        "use": function () {}
+      },
+      "Resource": {
+        "EMPTY_GIF": {},
+        "LOAD_TYPE": {
+          "AUDIO": {},
+          "IMAGE": {},
+          "VIDEO": {},
+          "XHR": {}
+        },
+        "STATUS_FLAGS": {
+          "COMPLETE": {},
+          "DATA_URL": {},
+          "LOADING": {},
+          "NONE": {}
+        },
+        "TYPE": {
+          "AUDIO": {},
+          "IMAGE": {},
+          "JSON": {},
+          "TEXT": {},
+          "UNKNOWN": {},
+          "VIDEO": {},
+          "XML": {}
+        },
+        "XHR_RESPONSE_TYPE": {
+          "BLOB": {},
+          "BUFFER": {},
+          "DEFAULT": {},
+          "DOCUMENT": {},
+          "JSON": {},
+          "TEXT": {}
+        },
+        "_loadTypeMap": {
+          "bmp": {},
+          "gif": {},
+          "jpeg": {},
+          "jpg": {},
+          "mp3": {},
+          "mp4": {},
+          "ogg": {},
+          "png": {},
+          "svg": {},
+          "svg+xml": {},
+          "tga": {},
+          "tif": {},
+          "tiff": {},
+          "wav": {},
+          "webm": {},
+          "webp": {}
+        },
+        "_xhrTypeMap": {
+          "bmp": {},
+          "fnt": {},
+          "gif": {},
+          "htm": {},
+          "html": {},
+          "jpeg": {},
+          "jpg": {},
+          "json": {},
+          "otf": {},
+          "png": {},
+          "svg": {},
+          "text": {},
+          "tga": {},
+          "tif": {},
+          "tiff": {},
+          "tmx": {},
+          "tsx": {},
+          "ttf": {},
+          "txt": {},
+          "webp": {},
+          "xhtml": {},
+          "xml": {}
+        },
+        "setExtensionLoadType": function () {},
+        "setExtensionXhrType": function () {}
+      },
+      "_defaultAfterMiddleware": {},
+      "_defaultBeforeMiddleware": {},
+      "_pixiMiddleware": {},
+      "addPixiMiddleware": function () {},
+      "async": {
+        "__esModule": {},
+        "eachSeries": function () {},
+        "queue": function () {}
+      },
+      "base64": {
+        "__esModule": {},
+        "default": function () {},
+        "encodeBinary": function () {}
+      },
+      "default": {
+        "Loader": function () {},
+        "Resource": {
+          "EMPTY_GIF": {},
+          "LOAD_TYPE": {
+            "AUDIO": {},
+            "IMAGE": {},
+            "VIDEO": {},
+            "XHR": {}
+          },
+          "STATUS_FLAGS": {
+            "COMPLETE": {},
+            "DATA_URL": {},
+            "LOADING": {},
+            "NONE": {}
+          },
+          "TYPE": {
+            "AUDIO": {},
+            "IMAGE": {},
+            "JSON": {},
+            "TEXT": {},
+            "UNKNOWN": {},
+            "VIDEO": {},
+            "XML": {}
+          },
+          "XHR_RESPONSE_TYPE": {
+            "BLOB": {},
+            "BUFFER": {},
+            "DEFAULT": {},
+            "DOCUMENT": {},
+            "JSON": {},
+            "TEXT": {}
+          },
+          "_loadTypeMap": {
+            "bmp": {},
+            "gif": {},
+            "jpeg": {},
+            "jpg": {},
+            "mp3": {},
+            "mp4": {},
+            "ogg": {},
+            "png": {},
+            "svg": {},
+            "svg+xml": {},
+            "tga": {},
+            "tif": {},
+            "tiff": {},
+            "wav": {},
+            "webm": {},
+            "webp": {}
+          },
+          "_xhrTypeMap": {
+            "bmp": {},
+            "fnt": {},
+            "gif": {},
+            "htm": {},
+            "html": {},
+            "jpeg": {},
+            "jpg": {},
+            "json": {},
+            "otf": {},
+            "png": {},
+            "svg": {},
+            "text": {},
+            "tga": {},
+            "tif": {},
+            "tiff": {},
+            "tmx": {},
+            "tsx": {},
+            "ttf": {},
+            "txt": {},
+            "webp": {},
+            "xhtml": {},
+            "xml": {}
+          },
+          "setExtensionLoadType": function () {},
+          "setExtensionXhrType": function () {}
+        },
+        "_defaultAfterMiddleware": {},
+        "_defaultBeforeMiddleware": {},
+        "async": {
+          "__esModule": {},
+          "eachSeries": function () {},
+          "queue": function () {}
+        },
+        "base64": {
+          "__esModule": {},
+          "default": function () {},
+          "encodeBinary": function () {}
+        },
+        "default": function () {},
+        "encodeBinary": {
+          "__esModule": {},
+          "default": function () {},
+          "encodeBinary": function () {}
+        },
+        "pre": function () {},
+        "use": function () {}
+      },
+      "encodeBinary": {
+        "__esModule": {},
+        "default": function () {},
+        "encodeBinary": function () {}
+      },
+      "pre": function () {},
+      "use": function () {}
     },
     "Resource": {
       "EMPTY_GIF": {},
@@ -1871,13 +2054,17 @@ var PIXI = {
     "correctBlendMode": function () {},
     "decomposeDataUri": function () {},
     "destroyTextureCache": function () {},
+    "earcut": {
+      "default": function () {},
+      "deviation": function () {},
+      "flatten": function () {}
+    },
     "getResolutionOfUrl": function () {},
     "getSvgSize": function () {},
     "getUrlFileExtension": function () {},
     "hex2rgb": function () {},
     "hex2string": function () {},
     "isMobile": {
-      "Class": function () {},
       "amazon": {
         "device": {},
         "phone": {},
@@ -1896,7 +2083,6 @@ var PIXI = {
         "tablet": {}
       },
       "default": {
-        "Class": function () {},
         "amazon": {
           "device": {},
           "phone": {},
@@ -1923,7 +2109,6 @@ var PIXI = {
           "opera": {}
         },
         "phone": {},
-        "seven_inch": {},
         "tablet": {},
         "windows": {
           "device": {},
@@ -1940,7 +2125,6 @@ var PIXI = {
         "opera": {}
       },
       "phone": {},
-      "seven_inch": {},
       "tablet": {},
       "windows": {
         "device": {},
@@ -2369,6 +2553,7 @@ PIXI.Filter.prototype = {
 PIXI.Graphics.prototype = {
   "_accessibleActive": function () {},
   "_accessibleDiv": function () {},
+  "_bezierCurveLength": function () {},
   "_cacheAsBitmap": function () {},
   "_cacheAsBitmapDestroy": function () {},
   "_cacheData": function () {},
@@ -2378,12 +2563,14 @@ PIXI.Graphics.prototype = {
   "_getCachedLocalBounds": function () {},
   "_initCachedDisplayObject": function () {},
   "_initCachedDisplayObjectCanvas": function () {},
+  "_quadraticCurveLength": function () {},
   "_recursivePostUpdateTransform": function () {},
   "_renderCachedCanvas": function () {},
   "_renderCachedWebGL": function () {},
   "_renderCanvas": function () {},
   "_renderSpriteRect": function () {},
   "_renderWebGL": function () {},
+  "_segmentsCount": function () {},
   "_trackedPointers": function () {},
   "accessible": function () {},
   "accessibleHint": function () {},
@@ -2512,7 +2699,9 @@ PIXI.ObjectRenderer.prototype = {
   "stop": function () {}
 };
 PIXI.ObservablePoint.prototype = {
+  "clone": function () {},
   "copy": function () {},
+  "equals": function () {},
   "set": function () {}
 };
 PIXI.Point.prototype = {
@@ -2533,6 +2722,7 @@ PIXI.Quad.prototype = {
   "upload": function () {}
 };
 PIXI.Rectangle.prototype = {
+  "ceil": function () {},
   "clone": function () {},
   "contains": function () {},
   "copy": function () {},
@@ -2694,6 +2884,7 @@ PIXI.SpriteRenderer.prototype = {
 PIXI.Spritesheet.prototype = {
   "_nextBatch": function () {},
   "_parseComplete": function () {},
+  "_processAnimations": function () {},
   "_processFrames": function () {},
   "_updateResolution": function () {},
   "destroy": function () {},
@@ -3467,12 +3658,12 @@ PIXI.glCore.VertexArrayObject.prototype = {
   "unbind": function () {}
 };
 PIXI.interaction.InteractionData.prototype = {
-  "_copyEvent": function () {},
-  "_reset": function () {},
-  "getLocalPosition": function () {}
+  "copyEvent": function () {},
+  "getLocalPosition": function () {},
+  "reset": function () {}
 };
 PIXI.interaction.InteractionEvent.prototype = {
-  "_reset": function () {},
+  "reset": function () {},
   "stopPropagation": function () {}
 };
 PIXI.interaction.InteractionManager.prototype = {
@@ -3551,11 +3742,25 @@ PIXI.loaders.Loader.prototype = {
   "setMaxListeners": function () {},
   "use": function () {}
 };
-PIXI.loaders.Loader.Resource.prototype = {
+PIXI.loaders.Loader.Loader.prototype = {
+  "_loadResource": function () {},
+  "_onComplete": function () {},
+  "_onLoad": function () {},
+  "_onStart": function () {},
+  "_prepareUrl": function () {},
+  "add": function () {},
+  "load": function () {},
+  "pre": function () {},
+  "reset": function () {},
+  "use": function () {}
+};
+PIXI.loaders.Loader.Loader.Resource.prototype = {
+  "_clearEvents": function () {},
   "_createSource": function () {},
   "_determineCrossOrigin": function () {},
   "_determineLoadType": function () {},
   "_determineXhrType": function () {},
+  "_finish": function () {},
   "_getExtension": function () {},
   "_getMimeFromXhrType": function () {},
   "_hasFlag": function () {},
@@ -3565,11 +3770,38 @@ PIXI.loaders.Loader.Resource.prototype = {
   "_loadXhr": function () {},
   "_onError": function () {},
   "_onProgress": function () {},
+  "_onTimeout": function () {},
   "_setFlag": function () {},
-  "_xdrOnTimeout": function () {},
   "_xhrOnAbort": function () {},
   "_xhrOnError": function () {},
   "_xhrOnLoad": function () {},
+  "_xhrOnTimeout": function () {},
+  "abort": function () {},
+  "complete": function () {},
+  "load": function () {}
+};
+PIXI.loaders.Loader.Resource.prototype = {
+  "_clearEvents": function () {},
+  "_createSource": function () {},
+  "_determineCrossOrigin": function () {},
+  "_determineLoadType": function () {},
+  "_determineXhrType": function () {},
+  "_finish": function () {},
+  "_getExtension": function () {},
+  "_getMimeFromXhrType": function () {},
+  "_hasFlag": function () {},
+  "_loadElement": function () {},
+  "_loadSourceElement": function () {},
+  "_loadXdr": function () {},
+  "_loadXhr": function () {},
+  "_onError": function () {},
+  "_onProgress": function () {},
+  "_onTimeout": function () {},
+  "_setFlag": function () {},
+  "_xhrOnAbort": function () {},
+  "_xhrOnError": function () {},
+  "_xhrOnLoad": function () {},
+  "_xhrOnTimeout": function () {},
   "abort": function () {},
   "complete": function () {},
   "load": function () {}
@@ -3587,10 +3819,12 @@ PIXI.loaders.Loader.default.prototype = {
   "use": function () {}
 };
 PIXI.loaders.Loader.default.Resource.prototype = {
+  "_clearEvents": function () {},
   "_createSource": function () {},
   "_determineCrossOrigin": function () {},
   "_determineLoadType": function () {},
   "_determineXhrType": function () {},
+  "_finish": function () {},
   "_getExtension": function () {},
   "_getMimeFromXhrType": function () {},
   "_hasFlag": function () {},
@@ -3600,20 +3834,23 @@ PIXI.loaders.Loader.default.Resource.prototype = {
   "_loadXhr": function () {},
   "_onError": function () {},
   "_onProgress": function () {},
+  "_onTimeout": function () {},
   "_setFlag": function () {},
-  "_xdrOnTimeout": function () {},
   "_xhrOnAbort": function () {},
   "_xhrOnError": function () {},
   "_xhrOnLoad": function () {},
+  "_xhrOnTimeout": function () {},
   "abort": function () {},
   "complete": function () {},
   "load": function () {}
 };
 PIXI.loaders.Resource.prototype = {
+  "_clearEvents": function () {},
   "_createSource": function () {},
   "_determineCrossOrigin": function () {},
   "_determineLoadType": function () {},
   "_determineXhrType": function () {},
+  "_finish": function () {},
   "_getExtension": function () {},
   "_getMimeFromXhrType": function () {},
   "_hasFlag": function () {},
@@ -3623,11 +3860,12 @@ PIXI.loaders.Resource.prototype = {
   "_loadXhr": function () {},
   "_onError": function () {},
   "_onProgress": function () {},
+  "_onTimeout": function () {},
   "_setFlag": function () {},
-  "_xdrOnTimeout": function () {},
   "_xhrOnAbort": function () {},
   "_xhrOnError": function () {},
   "_xhrOnLoad": function () {},
+  "_xhrOnTimeout": function () {},
   "abort": function () {},
   "complete": function () {},
   "load": function () {}
@@ -3765,7 +4003,6 @@ PIXI.mesh.NineSlicePlane.prototype = {
   "cursor": function () {},
   "destroy": function () {},
   "displayObjectUpdateTransform": function () {},
-  "drawSegment": function () {},
   "emit": function () {},
   "eventNames": function () {},
   "generateTexture": function () {},
