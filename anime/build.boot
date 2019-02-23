@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.2.0")
+(def +lib-version+ "3.0.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -13,16 +13,16 @@
        :description "JavaScript animation engine"
        :url         "http://animejs.com/"
        :scm         {:url "https://github.com/juliangarnier/anime"}
-       :license     {"MIT" "https://github.com/juliangarnier/anime/blob/v2.2.0/LICENSE.md"}})
+       :license     {"MIT" "https://opensource.org/licenses/MIT"}})
 
 (deftask package []
          (comp
-          (download  :url      (format "https://github.com/juliangarnier/anime/archive/%s.zip" +lib-version+)
-                     :checksum "7EB658E42F5268927E38FD642F925C2C"
+          (download  :url      (str "https://github.com/juliangarnier/anime/archive/v" +lib-version+ ".zip")
+                     :checksum "3279689A50F312725D6645C223D8602E"
                      :unzip    true)
-          (sift      :move     {#"^anime(.*)/anime.js"
+          (sift      :move     {#".*anime.js"
                                 "cljsjs/anime/development/anime.inc.js"
-                                #"^anime(.*)/anime.min.js"
+                                #".*anime.min.js"
                                 "cljsjs/anime/production/anime.min.inc.js"})
           (sift      :include  #{#"^cljsjs"})
           (deps-cljs :name     "cljsjs.anime")
