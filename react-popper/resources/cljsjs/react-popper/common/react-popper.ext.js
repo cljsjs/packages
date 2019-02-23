@@ -16,6 +16,19 @@ var ReactPopper = {
             "component": {}
         }
     },
+    "Reference": {
+        "contextTypes": {
+            "popperManager": function () {}
+        },
+        "propTypes": {
+            "component": {
+                "isRequired": function () {}
+            }
+        },
+        "defaultProps": {
+            "component": {}
+        }
+    },
     "Target": {
         "contextTypes": {
             "popperManager": function () {}
