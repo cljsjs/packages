@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.11.0")
+(def +lib-version+ "0.12.2")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -24,4 +24,5 @@
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.hls")
     (pom)
-    (jar)))
+    (jar)
+    (validate-checksums)))
