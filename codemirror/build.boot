@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "5.40.2")
+(def +lib-version+ "5.44.0")
 
 (def +version+ (str +lib-version+ "-1"))
 
@@ -70,4 +70,5 @@
                  #"^cljsjs/codemirror/common/addon/(.*)/(.*)\.js" "cljsjs/codemirror/common/addon/$1/$2.inc.js"})
     (generate-extra-deps)
     (pom)
-    (jar)))
+    (jar)
+    (validate-checksums)))
