@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.2.0")
+(def +lib-version+ "3.3.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -17,11 +17,10 @@
 
 (deftask package []
   (comp
-    (download :url "http://cdn.babylonjs.com/2-2/babylon.js")
-    (sift :move {#"babylon.js" "cljsjs/babylon/development/babylon.inc.js"})
-    (download :url "http://cdn.babylonjs.com/2-2/babylon.js")
-    (sift :move {#"babylon.js" "cljsjs/babylon/production/babylon.min.inc.js"})
+    (download :url (format "https://raw.githubusercontent.com/BabylonJS/Babylon.js/v%s/dist/babylon.js" +lib-version+)
+              :target "cljsjs/babylon/production/babylon.inc.js")
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.babylon")
     (pom)
-    (jar)))
+    (jar)
+    (validate-checksums)))
