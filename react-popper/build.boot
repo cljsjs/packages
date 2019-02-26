@@ -6,7 +6,7 @@
                  [cljsjs/popperjs "1.14.3-1"]
                  [cljsjs/prop-types "15.6.1-0"]])
 
-(def +lib-version+ "0.10.4")
+(def +lib-version+ "1.0.2")
 (def +version+ (str +lib-version+ "-0"))
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
@@ -21,9 +21,9 @@
 
 (deftask package []
   (comp
-   (download :url (format "https://unpkg.com/react-popper@%s/dist/umd/react-popper.js" +lib-version+)
+   (download :url (format "https://unpkg.com/react-popper@%s/dist/index.umd.js" +lib-version+)
              :target "cljsjs/react-popper/development/react-popper.inc.js")
-   (download :url (format "https://unpkg.com/react-popper@%s/dist/umd/react-popper.min.js" +lib-version+)
+   (download :url (format "https://unpkg.com/react-popper@%s/dist/index.umd.min.js" +lib-version+)
              :target "cljsjs/react-popper/production/react-popper.min.inc.js")
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.react-popper"
