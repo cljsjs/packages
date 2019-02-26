@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-day-picker "5.5.3-1"] ;; latest release
+[cljsjs/react-day-picker "7.3.0-0"] ;; latest release
 ```
 [](/dependency)
 

@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "4.7.0")
+(def +lib-version+ "4.8.6")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,12 +18,12 @@
 (deftask package []
   (comp
     (download
-      :url (str "https://cdnjs.cloudflare.com/ajax/libs/pixi.js/"
+      :url (str "https://pixijs.download/v"
                 +lib-version+
                 "/pixi.min.js")
       :unzip false)
     (download
-      :url (str "https://cdnjs.cloudflare.com/ajax/libs/pixi.js/"
+      :url (str "https://pixijs.download/v"
                 +lib-version+
                 "/pixi.js")
       :unzip false)
