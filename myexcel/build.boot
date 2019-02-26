@@ -32,4 +32,4 @@
               :requires ["cljsjs.jszip" "cljsjs.filesaverjs"])
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

@@ -29,4 +29,4 @@
               :requires ["cljsjs.d3"])
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

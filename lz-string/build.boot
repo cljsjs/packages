@@ -30,4 +30,4 @@
     (deps-cljs :name "cljsjs.lz-string")
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

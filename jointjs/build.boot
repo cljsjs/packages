@@ -27,4 +27,4 @@
     (deps-cljs :name "cljsjs.jointjs")
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

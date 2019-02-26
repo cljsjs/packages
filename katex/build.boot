@@ -35,4 +35,4 @@
    (deps-cljs :name "cljsjs.katex")
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

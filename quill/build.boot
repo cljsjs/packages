@@ -26,6 +26,6 @@
                         #".*quill\.snow\.css" "cljsjs/quill/quill.snow.css"})
            (sift :include #{#"^cljsjs"})
            (deps-cljs :name "cljsjs.quill")
-           (validate-checksums)
+           (validate)
            (pom)
            (jar)))

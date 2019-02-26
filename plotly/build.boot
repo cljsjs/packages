@@ -27,4 +27,4 @@
    (deps-cljs :name     "cljsjs.plotly")
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

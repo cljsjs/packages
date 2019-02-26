@@ -37,4 +37,4 @@
                           "cljsjs.moment"])
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

@@ -28,4 +28,4 @@
    (deps-cljs :name "cljsjs.lunrjs")
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

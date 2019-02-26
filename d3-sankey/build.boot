@@ -30,6 +30,6 @@
      :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.d3-sankey"
               :requires ["cljsjs.d3"])
-   (validate-checksums)
+   (validate)
    (pom)
    (jar)))

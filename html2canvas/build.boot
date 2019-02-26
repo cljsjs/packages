@@ -30,4 +30,4 @@
     (deps-cljs :name "cljsjs.html2canvas")
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

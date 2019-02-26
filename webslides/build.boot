@@ -28,4 +28,4 @@
       :name "cljsjs.webslides")
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

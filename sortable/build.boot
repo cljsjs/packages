@@ -25,4 +25,4 @@
    (deps-cljs :name "cljsjs.sortable")
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

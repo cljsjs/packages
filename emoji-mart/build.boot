@@ -55,4 +55,4 @@
    (deps-cljs :name "cljsjs.emoji-mart")
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

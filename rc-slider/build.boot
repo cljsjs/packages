@@ -63,4 +63,4 @@
                           "cljsjs.classnames"])
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

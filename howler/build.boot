@@ -24,4 +24,4 @@
    (deps-cljs :name "cljsjs.howler")
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

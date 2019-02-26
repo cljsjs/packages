@@ -25,4 +25,4 @@
     (deps-cljs :name "cljsjs.tfjs")
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

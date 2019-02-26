@@ -57,4 +57,4 @@
    (deps-cljs :name "cljsjs.material-components")
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

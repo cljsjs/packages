@@ -29,4 +29,4 @@
     (deps-cljs :name "cljsjs.diffdom")
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

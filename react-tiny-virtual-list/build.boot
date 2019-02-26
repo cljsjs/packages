@@ -29,4 +29,4 @@
                :requires ["cljsjs.prop-types"])
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

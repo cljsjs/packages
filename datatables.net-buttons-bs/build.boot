@@ -82,4 +82,4 @@
                :externs [#"datatables\.net-buttons-bs\.ext\.js"])
 	(pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

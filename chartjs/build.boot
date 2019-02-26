@@ -31,4 +31,4 @@
     (deps-cljs :name "cljsjs.chartjs")
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

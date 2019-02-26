@@ -28,4 +28,4 @@
 
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

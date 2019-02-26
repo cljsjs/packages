@@ -67,5 +67,5 @@
                :requires ["cljsjs.prop-types" "cljsjs.react" "cljsjs.react.dom"])
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))
 

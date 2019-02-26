@@ -27,4 +27,4 @@
    (deps-cljs :name     "cljsjs.three")
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

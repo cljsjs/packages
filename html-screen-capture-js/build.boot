@@ -30,4 +30,4 @@
     (deps-cljs :name "cljsjs.html-screen-capture-js")
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

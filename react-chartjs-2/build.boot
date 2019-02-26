@@ -30,4 +30,4 @@
    (deps-cljs :name "cljsjs.react-chartjs-2" :requires ["cljsjs.chartjs" "cljsjs.react" "cljsjs.react.dom"])
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

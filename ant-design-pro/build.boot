@@ -49,4 +49,4 @@
     :global-exports '{ant-design-pro AntDesignPro})
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

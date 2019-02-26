@@ -25,4 +25,4 @@
     (deps-cljs :name "cljsjs.hls")
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

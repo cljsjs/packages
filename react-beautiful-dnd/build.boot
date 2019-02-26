@@ -28,4 +28,4 @@
               :requires ["cljsjs.react"])
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

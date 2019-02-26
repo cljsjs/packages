@@ -25,4 +25,4 @@
    (deps-cljs :name "cljsjs.feathers")
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

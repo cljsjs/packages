@@ -25,4 +25,4 @@
    (deps-cljs :name "cljsjs.clipboard")
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

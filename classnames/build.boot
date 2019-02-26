@@ -29,4 +29,4 @@
               :global-exports '{classnames classNames})
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

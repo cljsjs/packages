@@ -28,4 +28,4 @@
                     #"^deps.cljs"})
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

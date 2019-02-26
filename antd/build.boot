@@ -69,4 +69,4 @@
     :global-exports '{antd antd})
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

@@ -27,6 +27,6 @@
               :target "cljsjs/flatpickr/production/flatpickr.min.inc.css")
     (sift :include #{#"^cljsjs/" #"^public/"})
     (deps-cljs :name "cljsjs.flatpickr")
-    (validate-checksums)
+    (validate)
     (pom)
     (jar)))

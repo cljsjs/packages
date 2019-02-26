@@ -60,4 +60,4 @@
     (generate-deps)
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

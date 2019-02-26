@@ -31,6 +31,6 @@
     (deps-cljs :provides ["parinfer-codemirror" "cljsjs.parinfer-codemirror"]
                :requires ["cljsjs.parinfer"]
                :global-exports '{parinfer-codemirror parinferCodeMirror})
-    (validate-checksums)
+    (validate)
     (pom)
     (jar)))

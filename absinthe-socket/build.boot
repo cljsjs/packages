@@ -27,4 +27,4 @@
    (deps-cljs :name "cljsjs.absinthe-socket")
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

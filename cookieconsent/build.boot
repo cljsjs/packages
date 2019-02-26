@@ -34,4 +34,4 @@
    (deps-cljs :name "cljsjs.cookieconsent")
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

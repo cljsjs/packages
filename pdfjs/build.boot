@@ -2,7 +2,7 @@
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.10.3" :scope "test"]])
 
-(require '[cljsjs.boot-cljsjs.packaging :refer [download validate-checksums]])
+(require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "2.0.943")
 (def +version+ (str +lib-version+ "-0"))
@@ -28,4 +28,4 @@
    (sift :include #{#"^cljsjs/" #"^deps\.cljs$"})
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

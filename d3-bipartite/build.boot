@@ -29,6 +29,6 @@
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.d3-bipartite"
               :requires ["cljsjs.d3"])
-   (validate-checksums)
+   (validate)
    (pom)
    (jar)))

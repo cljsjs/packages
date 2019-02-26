@@ -25,4 +25,4 @@
                 #".*style.css" "cljsjs/react-vis/common/react-vis.inc.css"}) (pom)
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

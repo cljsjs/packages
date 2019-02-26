@@ -28,4 +28,4 @@
    (deps-cljs :name "cljsjs.firebaseui")
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

@@ -25,4 +25,4 @@
    (deps-cljs :name "cljsjs.sinon")
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

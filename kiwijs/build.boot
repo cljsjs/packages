@@ -23,6 +23,6 @@
             :out "cljsjs/production/kiwi.min.inc.js")
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.kiwijs")
-    (validate-checksums)
+    (validate)
     (pom)
     (jar)))

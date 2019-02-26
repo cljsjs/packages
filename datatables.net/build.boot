@@ -29,4 +29,4 @@
                :externs [#"jquery\.dataTables\.ext\.js"])
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

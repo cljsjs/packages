@@ -34,5 +34,5 @@
                :requires ["cljsjs.datatables.net-bs"])
 	(pom)
     (jar)
-    (validate-checksums)))
+    (validate)))
 

@@ -24,6 +24,6 @@
     (sift :include #{#"^cljsjs"})
     (deps-cljs :provides ["d3" "cljsjs.d3"]
                :global-exports '{d3 d3})
-    (validate-checksums)
+    (validate)
     (pom)
     (jar)))

@@ -23,6 +23,6 @@
                 #"^p5.js$" "cljsjs/p5/development/p5.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.p5")
-   (validate-checksums)
+   (validate)
    (pom)
    (jar)))

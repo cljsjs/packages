@@ -27,4 +27,4 @@
     (deps-cljs :name "cljsjs.office-js")
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

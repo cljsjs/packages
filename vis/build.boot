@@ -32,4 +32,4 @@
    (deps-cljs :name     "cljsjs.vis")
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

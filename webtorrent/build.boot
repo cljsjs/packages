@@ -25,4 +25,4 @@
     (deps-cljs :name "cljsjs.webtorrent")
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

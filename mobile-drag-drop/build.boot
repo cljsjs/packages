@@ -49,4 +49,4 @@
                  :externs [#"mobile-drag-drop\.ext\.js"])
       (pom)
       (jar))
-    (validate-checksums)))
+    (validate)))

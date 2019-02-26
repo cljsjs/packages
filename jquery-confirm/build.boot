@@ -28,4 +28,4 @@
    (deps-cljs :name "cljsjs.jquery-confirm" :requires ["cljsjs.jquery"])
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

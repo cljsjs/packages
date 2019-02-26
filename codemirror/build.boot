@@ -71,4 +71,4 @@
     (generate-extra-deps)
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

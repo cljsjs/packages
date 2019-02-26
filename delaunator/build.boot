@@ -29,4 +29,4 @@
     (deps-cljs :name "cljsjs.delaunator")
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

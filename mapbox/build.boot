@@ -52,4 +52,4 @@
     :name "cljsjs.mapbox")
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

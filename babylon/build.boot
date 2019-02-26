@@ -23,4 +23,4 @@
     (deps-cljs :name "cljsjs.babylon")
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

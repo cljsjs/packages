@@ -30,5 +30,5 @@
    (deps-cljs :name     "cljsjs.dygraph")
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))
 

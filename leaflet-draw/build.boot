@@ -33,4 +33,4 @@
                :requires ["cljsjs.leaflet"])
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

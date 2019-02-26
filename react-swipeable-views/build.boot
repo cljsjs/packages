@@ -61,4 +61,4 @@
 
     (jar)
 
-    (validate-checksums)))
+    (validate)))

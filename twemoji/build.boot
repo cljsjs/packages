@@ -38,4 +38,4 @@
         (pom)
         (show :fileset true)
         (jar)
-        (validate-checksums)))
+        (validate)))

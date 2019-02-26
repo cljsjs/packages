@@ -26,4 +26,4 @@
     (deps-cljs :name "cljsjs.auth0")
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

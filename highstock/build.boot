@@ -25,4 +25,4 @@
    (deps-cljs :name "cljsjs.highstock")
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

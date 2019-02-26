@@ -29,4 +29,4 @@
               :requires ["cljsjs.jquery"])
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

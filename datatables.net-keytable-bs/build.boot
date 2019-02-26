@@ -35,4 +35,4 @@
                :externs [#"datatables\.net-keytable-bs\.ext\.js"])
 	(pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

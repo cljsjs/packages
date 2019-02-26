@@ -33,4 +33,4 @@
                :externs [#"datatables\.net-bs\.ext\.js"])
 	(pom)
     (jar)
-    (validate-checksums)))
+    (validate)))

@@ -29,4 +29,4 @@
               :global-exports '{applicationinsights Microsoft})
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))

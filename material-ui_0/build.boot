@@ -59,4 +59,4 @@
                          #"material-ui-svg-icons.ext.js"])
     (pom)
     (jar)
-    (validate-checksums)))
+    (validate)))
