@@ -1,7 +1,7 @@
 # cljsjs/babylon
 [](dependency)
 ```clojure
-[cljsjs/babylon "2.2.0-0"] ;; latest release
+[cljsjs/babylon "3.3.0-0"] ;; latest release
 ```
 [](/dependency)
 
