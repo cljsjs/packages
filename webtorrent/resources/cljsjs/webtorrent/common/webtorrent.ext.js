@@ -13,46 +13,48 @@
  * (deftask ... sh browserify index.js -o webtorrent.js)
  **********************************************************************/
 var WebTorrent = {
-  "WEBRTC_SUPPORT": {},
-  "super_": {
+  "EventEmitter": {
     "EventEmitter": function () {},
     "defaultMaxListeners": {},
     "listenerCount": function () {}
-  }
+  },
+  "VERSION": {},
+  "WEBRTC_SUPPORT": {},
+  "defaultMaxListeners": {},
+  "listenerCount": function () {}
 };
 WebTorrent.prototype = {
-  "_debug": function () {},
-  "_destroy": function () {},
   "_events": function () {},
   "_maxListeners": function () {},
-  "_onListening": function () {},
-  "_remove": function () {},
-  "add": function () {},
   "addListener": function () {},
-  "address": function () {},
-  "destroy": function () {},
-  "download": function () {},
   "emit": function () {},
-  "get": function () {},
+  "eventNames": function () {},
+  "getMaxListeners": function () {},
   "listenerCount": function () {},
   "listeners": function () {},
   "on": function () {},
   "once": function () {},
-  "remove": function () {},
+  "prependListener": function () {},
+  "prependOnceListener": function () {},
+  "rawListeners": function () {},
   "removeAllListeners": function () {},
   "removeListener": function () {},
-  "seed": function () {},
   "setMaxListeners": function () {}
 };
-WebTorrent.super_.prototype = {
+WebTorrent.EventEmitter.prototype = {
   "_events": function () {},
   "_maxListeners": function () {},
   "addListener": function () {},
   "emit": function () {},
+  "eventNames": function () {},
+  "getMaxListeners": function () {},
   "listenerCount": function () {},
   "listeners": function () {},
   "on": function () {},
   "once": function () {},
+  "prependListener": function () {},
+  "prependOnceListener": function () {},
+  "rawListeners": function () {},
   "removeAllListeners": function () {},
   "removeListener": function () {},
   "setMaxListeners": function () {}
