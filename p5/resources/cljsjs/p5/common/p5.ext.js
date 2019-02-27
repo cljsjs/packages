@@ -15,7 +15,11 @@ var p5 = {
     "_rgbaToHSBA": function () {},
     "_rgbaToHSLA": function () {}
   },
-  "Element": function () {},
+  "Element": {
+    "_adjustListener": function () {},
+    "_attachListener": function () {},
+    "_detachListener": function () {}
+  },
   "Font": function () {},
   "Geometry": function () {},
   "Graphics": function () {},
@@ -36,7 +40,6 @@ var p5 = {
   "TableRow": function () {},
   "Texture": function () {},
   "TypedDict": function () {},
-  "ValidationError": function () {},
   "Vector": {
     "add": function () {},
     "cross": function () {},
@@ -53,8 +56,8 @@ var p5 = {
     "sub": function () {}
   },
   "XML": function () {},
+  "_friendlyError": function () {},
   "_friendlyFileLoadError": function () {},
-  "_friendlyParamError": function () {},
   "_validateParameters": function () {},
   "disableFriendlyErrors": {},
   "instance": {}
@@ -72,6 +75,7 @@ p5.prototype = {
   "BLEND": function () {},
   "BLUR": function () {},
   "BOLD": function () {},
+  "BOLDITALIC": function () {},
   "BOTTOM": function () {},
   "BURN": function () {},
   "CENTER": function () {},
@@ -103,6 +107,7 @@ p5.prototype = {
   "HARD_LIGHT": function () {},
   "HSB": function () {},
   "HSL": function () {},
+  "IMAGE": function () {},
   "IMMEDIATE": function () {},
   "INVERT": function () {},
   "ITALIC": function () {},
@@ -218,7 +223,6 @@ p5.prototype = {
   "_updatePRotations": function () {},
   "_updateTextMetrics": function () {},
   "_updateTouchCoords": function () {},
-  "_validateParameters": function () {},
   "abs": function () {},
   "accelerationX": function () {},
   "accelerationY": function () {},
@@ -253,6 +257,7 @@ p5.prototype = {
   "camera": function () {},
   "ceil": function () {},
   "char": function () {},
+  "circle": function () {},
   "clear": function () {},
   "color": function () {},
   "colorMode": function () {},
@@ -293,7 +298,6 @@ p5.prototype = {
   "ellipsoid": function () {},
   "endContour": function () {},
   "endShape": function () {},
-  "exit": function () {},
   "exp": function () {},
   "fill": function () {},
   "filter": function () {},
@@ -445,7 +449,6 @@ p5.prototype = {
   "shorten": function () {},
   "shuffle": function () {},
   "sin": function () {},
-  "size": function () {},
   "smooth": function () {},
   "sort": function () {},
   "specularMaterial": function () {},
@@ -455,6 +458,7 @@ p5.prototype = {
   "splitTokens": function () {},
   "sq": function () {},
   "sqrt": function () {},
+  "square": function () {},
   "str": function () {},
   "stroke": function () {},
   "strokeCap": function () {},
@@ -472,6 +476,7 @@ p5.prototype = {
   "textStyle": function () {},
   "textWidth": function () {},
   "texture": function () {},
+  "textureMode": function () {},
   "tint": function () {},
   "torus": function () {},
   "touches": function () {},
@@ -530,14 +535,12 @@ p5.Color.prototype = {
 };
 p5.Element.prototype = {
   "_setProperty": function () {},
-  "changed": function () {},
   "class": function () {},
   "doubleClicked": function () {},
   "dragLeave": function () {},
   "dragOver": function () {},
   "drop": function () {},
   "id": function () {},
-  "input": function () {},
   "mouseClicked": function () {},
   "mouseMoved": function () {},
   "mouseOut": function () {},
@@ -561,7 +564,6 @@ p5.Font.prototype = {
   "_textAscent": function () {},
   "_textDescent": function () {},
   "_textWidth": function () {},
-  "list": function () {},
   "textBounds": function () {},
   "textToPoints": function () {}
 };
@@ -577,14 +579,12 @@ p5.Geometry.prototype = {
 };
 p5.Graphics.prototype = {
   "_setProperty": function () {},
-  "changed": function () {},
   "class": function () {},
   "doubleClicked": function () {},
   "dragLeave": function () {},
   "dragOver": function () {},
   "drop": function () {},
   "id": function () {},
-  "input": function () {},
   "mouseClicked": function () {},
   "mouseMoved": function () {},
   "mouseOut": function () {},
@@ -662,14 +662,12 @@ p5.Renderer.prototype = {
   "_isOpenType": function () {},
   "_setProperty": function () {},
   "_updateTextMetrics": function () {},
-  "changed": function () {},
   "class": function () {},
   "doubleClicked": function () {},
   "dragLeave": function () {},
   "dragOver": function () {},
   "drop": function () {},
   "id": function () {},
-  "input": function () {},
   "mouseClicked": function () {},
   "mouseMoved": function () {},
   "mouseOut": function () {},
@@ -712,7 +710,6 @@ p5.Renderer2D.prototype = {
   "bezier": function () {},
   "blend": function () {},
   "blendMode": function () {},
-  "changed": function () {},
   "class": function () {},
   "clear": function () {},
   "copy": function () {},
@@ -727,7 +724,6 @@ p5.Renderer2D.prototype = {
   "get": function () {},
   "id": function () {},
   "image": function () {},
-  "input": function () {},
   "line": function () {},
   "loadPixels": function () {},
   "mouseClicked": function () {},
@@ -814,7 +810,6 @@ p5.RendererGL.prototype = {
   "beginShape": function () {},
   "bezier": function () {},
   "bezierVertex": function () {},
-  "changed": function () {},
   "class": function () {},
   "clear": function () {},
   "createBuffers": function () {},
@@ -833,7 +828,6 @@ p5.RendererGL.prototype = {
   "get": function () {},
   "getTexture": function () {},
   "id": function () {},
-  "input": function () {},
   "line": function () {},
   "loadPixels": function () {},
   "mouseClicked": function () {},
@@ -971,10 +965,6 @@ p5.TypedDict.prototype = {
   "set": function () {},
   "size": function () {}
 };
-p5.ValidationError.prototype = {
-  "constructor": function () {},
-  "name": function () {}
-};
 p5.Vector.prototype = {
   "add": function () {},
   "angleBetween": function () {},
@@ -999,8 +989,6 @@ p5.Vector.prototype = {
   "toString": function () {}
 };
 p5.XML.prototype = {
-  "_setAttributes": function () {},
-  "_setCont": function () {},
   "addChild": function () {},
   "getAttributeCount": function () {},
   "getChild": function () {},
@@ -1015,6 +1003,7 @@ p5.XML.prototype = {
   "listAttributes": function () {},
   "listChildren": function () {},
   "removeChild": function () {},
+  "serialize": function () {},
   "setAttribute": function () {},
   "setContent": function () {},
   "setName": function () {}
