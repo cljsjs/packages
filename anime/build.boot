@@ -17,14 +17,12 @@
 
 (deftask package []
          (comp
-          (download  :url      (str "https://github.com/juliangarnier/anime/archive/v" +lib-version+ ".zip")
-                     :checksum "3279689A50F312725D6645C223D8602E"
-                     :unzip    true)
-          (sift      :move     {#".*anime.js"
-                                "cljsjs/anime/development/anime.inc.js"
-                                #".*anime.min.js"
-                                "cljsjs/anime/production/anime.min.inc.js"})
-          (sift      :include  #{#"^cljsjs"})
-          (deps-cljs :name     "cljsjs.anime")
+          (download :url (format "https://github.com/juliangarnier/anime/archive/v%s.zip" +lib-version+)
+                    :unzip true)
+          (sift :move {#".*anime.js" "cljsjs/anime/development/anime.inc.js"
+                       #".*anime.min.js" "cljsjs/anime/production/anime.min.inc.js"})
+          (sift :include #{#"^cljsjs"})
+          (deps-cljs :name "cljsjs.anime")
           (pom)
-          (jar)))
+          (jar)
+          (validate-checksums)))
