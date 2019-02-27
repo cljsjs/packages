@@ -17,11 +17,12 @@
 
 (deftask package []
   (comp
-    (download :url (str "https://unpkg.com/mousetrap@" +lib-version+ "/mousetrap.js"))
-    (sift :move {#".*mousetrap.js" "cljsjs/mousetrap/development/mousetrap.inc.js"})
-    (download :url (str "https://unpkg.com/mousetrap@" +lib-version+ "/mousetrap.min.js"))
-    (sift :move {#".*mousetrap.min.js" "cljsjs/mousetrap/production/mousetrap.min.inc.js"})
+    (download :url (format "https://unpkg.com/mousetrap@%s/mousetrap.js" +lib-version+ )
+              :target "cljsjs/mousetrap/development/mousetrap.inc.js")
+    (download :url (format "https://unpkg.com/mousetrap@%s/mousetrap.min.js" +lib-version+ )
+              :target "cljsjs/mousetrap/production/mousetrap.min.inc.js")
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.mousetrap")
     (pom)
-    (jar)))
+    (jar)
+    (validate-checksums)))
