@@ -18,18 +18,13 @@
 (deftask package []
   (comp
     (download
-      :url (str "https://pixijs.download/v"
-                +lib-version+
-                "/pixi.min.js")
-      :unzip false)
+      :url (format "https://pixijs.download/v%s/pixi.min.js" +lib-version+)
+      :target "cljsjs/pixi/production/pixi.min.inc.js")
     (download
-      :url (str "https://pixijs.download/v"
-                +lib-version+
-                "/pixi.js")
-      :unzip false)
-    (sift :move {#"pixi\.js$" "cljsjs/pixi/development/pixi.inc.js"
-                 #"pixi\.min\.js$" "cljsjs/pixi/production/pixi.min.inc.js"})
+      :url (format "https://pixijs.download/v%s/pixi.js" +lib-version+)
+      :target "cljsjs/pixi/development/pixi.inc.js")
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.pixi")
     (pom)
-    (jar)))
+    (jar)
+    (validate-checksums)))
