@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.3.5")
+(def +lib-version+ "1.3.6")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -26,6 +26,6 @@
                         #".*quill\.snow\.css" "cljsjs/quill/quill.snow.css"})
            (sift :include #{#"^cljsjs"})
            (deps-cljs :name "cljsjs.quill")
-           (validate)
            (pom)
-           (jar)))
+           (jar)
+           (validate-checksums)))
