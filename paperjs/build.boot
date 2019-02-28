@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.9.24")
+(def +lib-version+ "0.12.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -17,12 +17,12 @@
 
 (deftask package []
   (comp
-    (download :url (str "https://github.com/paperjs/paper.js/archive/v" +lib-version+ ".zip")
-              :checksum "36FC91B3438A8967D1231876F731E918"
+    (download :url (format "https://github.com/paperjs/paper.js/archive/v%s.zip" +lib-version+)
               :unzip true)
     (sift :move {#"^paper.js-.*/dist/paper-full.js" "cljsjs/development/paper-full.inc.js"
                  #"^paper.js-.*/dist/paper-full.min.js" "cljsjs/production/paper-full.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.paperjs")
     (pom)
-    (jar)))
+    (jar)
+    (validate-checksums)))
