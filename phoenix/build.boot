@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.3.0")
+(def +lib-version+ "1.4.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -17,8 +17,7 @@
 
 (deftask package []
   (comp
-   (download :url (str "https://github.com/phoenixframework/phoenix/archive/v" +lib-version+ ".zip")
-             :checksum "D47A5872A9FBFCE084FE7571A09B9AAD"
+   (download :url (format "https://github.com/phoenixframework/phoenix/archive/v%s.zip" +lib-version+)
              :unzip true)
    (sift :move {#"^phoenix-.*/priv/static/phoenix\.js" "cljsjs/phoenix/development/phoenix.inc.js"})
 
@@ -27,4 +26,5 @@
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.phoenix")
    (pom)
-   (jar)))
+   (jar)
+   (validate-checksums)))
