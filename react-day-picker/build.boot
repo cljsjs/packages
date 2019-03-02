@@ -20,10 +20,8 @@
 (deftask package  []
   (task-options! push {:ensure-branch nil :tag false})
   (comp
-   (download :url (str "https://unpkg.com/react-day-picker@" +lib-version+ "/lib/daypicker.min.js")
-             :checksum "84E031CF3FAD5116E11A68DE484EA128")
-   (download :url (str "https://unpkg.com/react-day-picker@" +lib-version+ "/lib/style.css")
-             :checksum "F85DB4BA3CDA17D70FD882F2EFF3689A")
+   (download :url (str "https://unpkg.com/react-day-picker@" +lib-version+ "/lib/daypicker.min.js"))
+   (download :url (str "https://unpkg.com/react-day-picker@" +lib-version+ "/lib/style.css"))
    (sift :move {#"^daypicker.min.js$"
                 "cljsjs/react-day-picker/development/react-day-picker.inc.js"
                 #"^daypicker.min.js$"
@@ -32,5 +30,6 @@
                 "cljsjs/react-day-picker/common/react-day-picker.inc.css"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.react-day-picker" :requires ["cljsjs.react"])
+   (validate-checksums)
    (pom)
    (jar)))
