@@ -16,7 +16,8 @@ regex='https://github.com/([^/]*)/([^/]*)'
 
 changelog=$(curl -sS "https://raw.githubusercontent.com/$organisation/$name/master/CHANGELOG.md" | sed "/^## $new_version/,/^## .*/!d;//d")
 
-message="Update $name to $new_version\n\n## $old_version => $new_version\n$changelog"
+# Wrap changelog in codeblock to disable github references to authors or issues/prs
+message="Update $name to $new_version\n\n## $old_version => $new_version\n\`\`\`$changelog\n\`\`\`"
 
 # FIXME: Need way to automatically accept changed checksums
 boot package
