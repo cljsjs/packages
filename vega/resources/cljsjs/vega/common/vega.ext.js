@@ -20,6 +20,7 @@ var vega = {
       "attr": function () {},
       "bound": function () {},
       "draw": function () {},
+      "isect": function () {},
       "nested": {},
       "pick": function () {},
       "tag": {},
@@ -29,6 +30,7 @@ var vega = {
       "attr": function () {},
       "bound": function () {},
       "draw": function () {},
+      "isect": function () {},
       "nested": {},
       "pick": function () {},
       "tag": {},
@@ -41,6 +43,7 @@ var vega = {
       "bound": function () {},
       "draw": function () {},
       "foreground": function () {},
+      "isect": function () {},
       "nested": {},
       "pick": function () {},
       "tag": {},
@@ -51,6 +54,10 @@ var vega = {
       "bound": function () {},
       "draw": function () {},
       "get": function () {},
+      "isect": {
+        "fields": {},
+        "fname": {}
+      },
       "nested": {},
       "pick": function () {},
       "tag": {},
@@ -62,6 +69,7 @@ var vega = {
       "attr": function () {},
       "bound": function () {},
       "draw": function () {},
+      "isect": function () {},
       "nested": {},
       "pick": function () {},
       "tag": {},
@@ -72,6 +80,7 @@ var vega = {
       "attr": function () {},
       "bound": function () {},
       "draw": function () {},
+      "isect": function () {},
       "nested": {},
       "pick": function () {},
       "tag": {},
@@ -81,6 +90,7 @@ var vega = {
       "attr": function () {},
       "bound": function () {},
       "draw": function () {},
+      "isect": function () {},
       "nested": {},
       "pick": function () {},
       "tag": {},
@@ -90,6 +100,7 @@ var vega = {
       "attr": function () {},
       "bound": function () {},
       "draw": function () {},
+      "isect": function () {},
       "nested": {},
       "pick": function () {},
       "tag": {},
@@ -99,6 +110,7 @@ var vega = {
       "attr": function () {},
       "bound": function () {},
       "draw": function () {},
+      "isect": function () {},
       "nested": {},
       "pick": function () {},
       "tag": {},
@@ -108,6 +120,7 @@ var vega = {
       "attr": function () {},
       "bound": function () {},
       "draw": function () {},
+      "isect": function () {},
       "nested": {},
       "pick": function () {},
       "tag": {},
@@ -117,6 +130,7 @@ var vega = {
       "attr": function () {},
       "bound": function () {},
       "draw": function () {},
+      "isect": function () {},
       "nested": {},
       "pick": function () {},
       "tag": {},
@@ -126,6 +140,7 @@ var vega = {
       "attr": function () {},
       "bound": function () {},
       "draw": function () {},
+      "isect": function () {},
       "nested": {},
       "pick": function () {},
       "tag": {},
@@ -174,6 +189,7 @@ var vega = {
   "boundMark": function () {},
   "boundStroke": function () {},
   "changeset": function () {},
+  "clampRange": function () {},
   "closeTag": function () {},
   "compare": function () {},
   "constant": function () {},
@@ -186,6 +202,7 @@ var vega = {
   "error": function () {},
   "expressionFunction": function () {},
   "extend": function () {},
+  "extent": function () {},
   "extentIndex": function () {},
   "falsy": {
     "fields": {},
@@ -193,15 +210,26 @@ var vega = {
   },
   "fastmap": function () {},
   "field": function () {},
+  "flush": function () {},
   "font": function () {},
   "fontFamily": function () {},
   "fontSize": function () {},
   "format": {
-    "csv": function () {},
-    "dsv": function () {},
-    "json": function () {},
-    "topojson": function () {},
-    "tsv": function () {}
+    "csv": {
+      "responseType": {}
+    },
+    "dsv": {
+      "responseType": {}
+    },
+    "json": {
+      "responseType": {}
+    },
+    "topojson": {
+      "responseType": {}
+    },
+    "tsv": {
+      "responseType": {}
+    }
   },
   "formatLocale": function () {},
   "formats": function () {},
@@ -217,8 +245,15 @@ var vega = {
   "inferTypes": function () {},
   "ingest": function () {},
   "inherits": function () {},
+  "inrange": function () {},
   "interpolate": function () {},
+  "interpolateColors": function () {},
   "interpolateRange": function () {},
+  "intersect": function () {},
+  "intersectBoxLine": function () {},
+  "intersectPath": function () {},
+  "intersectPoint": function () {},
+  "intersectRule": function () {},
   "isArray": function () {},
   "isBoolean": function () {},
   "isDate": function () {},
@@ -229,6 +264,7 @@ var vega = {
   "isString": function () {},
   "isTuple": function () {},
   "key": function () {},
+  "lerp": function () {},
   "loader": function () {},
   "logger": function () {},
   "merge": function () {},
@@ -241,6 +277,7 @@ var vega = {
   "panLinear": function () {},
   "panLog": function () {},
   "panPow": function () {},
+  "panSymlog": function () {},
   "parse": function () {},
   "pathCurves": function () {},
   "pathEqual": function () {},
@@ -252,10 +289,13 @@ var vega = {
   "peek": function () {},
   "point": function () {},
   "projection": function () {},
+  "quantizeInterpolator": function () {},
+  "quarter": function () {},
   "quartiles": function () {},
   "random": function () {},
   "randomInteger": function () {},
   "randomKDE": function () {},
+  "randomLCG": function () {},
   "randomMixture": function () {},
   "randomNormal": function () {},
   "randomUniform": function () {},
@@ -263,6 +303,7 @@ var vega = {
   "renderModule": function () {},
   "repeat": function () {},
   "resetSVGClipId": function () {},
+  "responseType": function () {},
   "runtime": function () {},
   "runtimeContext": function () {},
   "scale": function () {},
@@ -273,8 +314,8 @@ var vega = {
   "sceneVisit": function () {},
   "sceneZOrder": function () {},
   "scheme": function () {},
-  "schemeDiscretized": function () {},
   "setRandom": function () {},
+  "span": function () {},
   "splitAccessPath": function () {},
   "stringValue": function () {},
   "textMetrics": {
@@ -711,7 +752,7 @@ var vega = {
       "fname": {}
     }
   },
-  "utcInterval": function () {},
+  "utcquarter": function () {},
   "version": {},
   "visitArray": function () {},
   "zero": {
@@ -720,7 +761,8 @@ var vega = {
   },
   "zoomLinear": function () {},
   "zoomLog": function () {},
-  "zoomPow": function () {}
+  "zoomPow": function () {},
+  "zoomSymlog": function () {}
 };
 vega.Bounds.prototype = {
   "add": function () {},
@@ -730,11 +772,13 @@ vega.Bounds.prototype = {
   "contains": function () {},
   "empty": function () {},
   "encloses": function () {},
+  "equals": function () {},
   "expand": function () {},
   "height": function () {},
   "intersect": function () {},
   "intersects": function () {},
   "rotate": function () {},
+  "rotatedPoints": function () {},
   "round": function () {},
   "set": function () {},
   "translate": function () {},
@@ -799,12 +843,15 @@ vega.Dataflow.prototype = {
   "connect": function () {},
   "debug": function () {},
   "error": function () {},
+  "evaluate": function () {},
   "events": function () {},
   "info": function () {},
   "ingest": function () {},
   "loader": function () {},
   "logLevel": function () {},
   "on": function () {},
+  "parse": function () {},
+  "preload": function () {},
   "pulse": function () {},
   "rank": function () {},
   "request": function () {},
@@ -1032,6 +1079,7 @@ vega.View.prototype = {
   "debug": function () {},
   "dirty": function () {},
   "error": function () {},
+  "evaluate": function () {},
   "events": function () {},
   "finalize": function () {},
   "getState": function () {},
@@ -1046,6 +1094,8 @@ vega.View.prototype = {
   "on": function () {},
   "origin": function () {},
   "padding": function () {},
+  "parse": function () {},
+  "preload": function () {},
   "preventDefault": function () {},
   "pulse": function () {},
   "rank": function () {},
@@ -1054,7 +1104,6 @@ vega.View.prototype = {
   "removeEventListener": function () {},
   "removeResizeListener": function () {},
   "removeSignalListener": function () {},
-  "render": function () {},
   "renderer": function () {},
   "request": function () {},
   "rerank": function () {},
@@ -1979,4 +2028,4 @@ vega.transforms.wordcloud.prototype = {
 };
 /**********************************************************************
  * End Generated Extern for vega
- **********************************************************************/
+/**********************************************************************/
