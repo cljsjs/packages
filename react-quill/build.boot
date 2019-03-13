@@ -1,12 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.10.3" :scope "test"]
-                  [cljsjs/quill "1.1.0-3"]
-                  [cljsjs/react "15.5.0-0"]])
+                  [cljsjs/quill "1.3.6-0"]
+                  [cljsjs/react "15.6.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.0.0-beta-5")
+(def +lib-version+ "1.1.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -19,7 +19,7 @@
 
 (deftask download-react-quill []
   (download :url      (str "https://github.com/zenoamaro/react-quill/releases/download/v" +lib-version+ "/react-quill-" +lib-version+ ".tgz")
-            :checksum "f5847ec49dc7c3a539aac2e1d2bd56e8"
+            :checksum "1629C6D2CBA935575776A9B127B43FCF"
             :decompress true
             :archive-format "tar"
             :compression-format "gz"))
