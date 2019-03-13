@@ -52,6 +52,9 @@ var ReactDraggable = {
       "onStop": {
         "isRequired": function () {}
       },
+      "scale": {
+        "isRequired": function () {}
+      },
       "style": function () {},
       "transform": function () {}
     }
@@ -106,6 +109,9 @@ var ReactDraggable = {
         "onStop": {
           "isRequired": function () {}
         },
+        "scale": {
+          "isRequired": function () {}
+        },
         "style": function () {},
         "transform": function () {}
       }
@@ -133,6 +139,7 @@ var ReactDraggable = {
       "onStart": function () {},
       "onStop": function () {},
       "position": {},
+      "scale": {},
       "transform": {}
     },
     "displayName": {},
@@ -190,6 +197,9 @@ var ReactDraggable = {
       "position": {
         "isRequired": function () {}
       },
+      "scale": {
+        "isRequired": function () {}
+      },
       "style": function () {},
       "transform": function () {}
     }
@@ -216,6 +226,7 @@ var ReactDraggable = {
     "onStart": function () {},
     "onStop": function () {},
     "position": {},
+    "scale": {},
     "transform": {}
   },
   "displayName": {},
@@ -271,6 +282,9 @@ var ReactDraggable = {
       "isRequired": function () {}
     },
     "position": {
+      "isRequired": function () {}
+    },
+    "scale": {
       "isRequired": function () {}
     },
     "style": function () {},
