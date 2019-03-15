@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "4.21.0")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom {:project     'cljsjs/vis
@@ -27,7 +27,9 @@
                          #"^vis(.*)/dist/vis.min.js"
                          "cljsjs/vis/production/vis.min.inc.js"
                          #"^vis(.*)/dist/vis.min.css"
-                         "cljsjs/vis/production/vis.inc.css"})
+                         "cljsjs/vis/production/vis.inc.css"
+                         #"^vis(.*)/dist/img"
+                         "cljsjs/vis/production/img"})
    (sift      :include  #{#"^cljsjs"})
    (deps-cljs :name     "cljsjs.vis")
    (pom)
