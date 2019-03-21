@@ -4,7 +4,7 @@ https://github.com/Foliotek/Croppie
 
 [](dependency)
 ```clojure
-[cljsjs/croppie "2.6.3-0"]
+[cljsjs/croppie "2.6.3-0"] ;; latest release
 ```
 [](/dependency)
 
