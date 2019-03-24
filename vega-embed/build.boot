@@ -25,12 +25,8 @@
     (download
      :url (format "https://unpkg.com/vega-embed@%s/build/vega-embed.min.js" +lib-version+)
      :checksum "F5A79DB2A11969A205EC0222E28D9EFB")
-    (download
-     :url (format "https://unpkg.com/vega-embed@%s/vega-embed.css" +lib-version+)
-     :checksum "CFA09422ACF13696B84282A5FCE9267A")
     (sift :move {#".*vega-embed\.js$"      "cljsjs/development/vega-embed.inc.js"})
     (sift :move {#".*vega-embed\.min\.js$" "cljsjs/production/vega-embed.min.inc.js"})
-    (sift :move {#".*vega-embed\.css$"     "cljsjs/vega-embed/common/vega-embed.css"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.vega-embed" :requires ["cljsjs.vega" "cljsjs.vega-lite"])
     (pom)
