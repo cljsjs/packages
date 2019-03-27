@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/vega-embed "4.0.0-rc1-0"] ;; latest release
+[cljsjs/vega-embed "4.0.0-0"] ;; latest release
 ```
 [](/dependency)
 
