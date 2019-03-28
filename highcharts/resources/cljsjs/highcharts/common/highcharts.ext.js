@@ -154,7 +154,9 @@ var Highcharts = {
           "fontWeight": {}
         }
       },
+        "useHTML": {},
       "verticalAlign": {},
+      "width": {},
       "x": {},
       "y": {}
     },
@@ -610,6 +612,10 @@ var Highcharts = {
         },
         "events": {},
         "findNearestPointBy": {},
+        "jitter": {
+          "x": {},
+          "y": {}
+        },
         "lineWidth": {},
         "marker": {
           "enabled": {},
@@ -738,6 +744,50 @@ var Highcharts = {
         },
         "stickyTracking": {},
         "turboThreshold": {}
+      },
+        "treemap": {
+            "events": {
+                "setRootNode": function () {}
+            }
+        },
+      "waterfall": {
+        "allowPointSelect": {},
+        "animation": {
+          "duration": {},
+          "easing": {}
+        },
+        "animationLimit": {},
+        "boostBlending": {},
+        "boostThreshold": {},
+        "borderColor": {},
+        "borderWidth": {},
+        "borderRadius": {},
+        "className": {},
+        "clip": {},
+        "color": {},
+        "colorByPoint": {},
+        "colorIndex": {},
+        "colors": {},
+        "crisp": {},
+        "cropThreshold": {},
+        "cursor": {},
+        "dashStyle": {},
+        "dataLabels": {},
+        "depth": {},
+        "description": {},
+        "dragDrop": {},
+        "edgeColor": {},
+        "edgeWidth": {},
+        "enableMouseTracking": {},
+        "events": {},
+        "lineColor": {},
+        "lineWidth": {},
+        "stacking": {},
+        "states": {
+          "hover": {},
+          "select": {}
+        },
+        "upColor": {}
       }
     },
     "subtitle": {
@@ -1224,6 +1274,10 @@ var Highcharts = {
       "events": {},
       "findNearestPointBy": {},
       "lineWidth": {},
+      "jitter": {
+        "x": {},
+        "y": {}
+      },
       "marker": {
         "enabled": {},
         "enabledThreshold": {},
@@ -1600,6 +1654,7 @@ var Highcharts = {
             }
           },
           "verticalAlign": {},
+          "width": {},
           "x": {},
           "y": {}
         },
@@ -2188,6 +2243,45 @@ var Highcharts = {
             },
             "stickyTracking": {},
             "turboThreshold": {}
+          },
+          "waterfall": {
+            "allowPointSelect": {},
+            "animation": {
+              "duration": {},
+              "easing": {}
+            },
+            "animationLimit": {},
+            "boostBlending": {},
+            "boostThreshold": {},
+            "borderColor": {},
+            "borderWidth": {},
+            "borderRadius": {},
+            "className": {},
+            "clip": {},
+            "color": {},
+            "colorByPoint": {},
+            "colorIndex": {},
+            "colors": {},
+            "crisp": {},
+            "cropThreshold": {},
+            "cursor": {},
+            "dashStyle": {},
+            "dataLabels": {},
+            "depth": {},
+            "description": {},
+            "dragDrop": {},
+            "edgeColor": {},
+            "edgeWidth": {},
+            "enableMouseTracking": {},
+            "events": {},
+            "lineColor": {},
+            "lineWidth": {},
+            "stacking": {},
+            "states": {
+              "hover": {},
+              "select": {}
+            },
+            "upColor": {}
           }
         },
         "subtitle": {
