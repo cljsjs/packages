@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/plotly "1.36.1-0"] ;; latest release
+[cljsjs/plotly "1.45.3-0"] ;; latest release
 ```
 [](/dependency)
 
