@@ -1,5 +1,5 @@
 /***
- * Externs manually updated from https://unpkg.com/react-datepicker@2.1.0/es/index.js
+ * Externs manually updated from https://unpkg.com/react-datepicker@2.3.0/es/index.js
  */
 var DatePicker = {
     "default": {
@@ -275,6 +275,24 @@ var DatePicker = {
                 "isRequired": function () {}
             },
             "clearButtonTitle": {
+                "isRequired": function () {}
+            },
+            "strictParsing": {
+                "isRequired": function () {}
+            },
+            "showTimeInput": {
+                "isRequired": function () {}
+            },
+            "showMonthYearPicker": {
+                "isRequired": function () {}
+            },
+            "timeInputLabel": {
+                "isRequired": function () {}
+            },
+            "onDayMouseEnter": {
+                "isRequired": function () {}
+            },
+            "onMonthMouseLeave": {
                 "isRequired": function () {}
             }
         }
