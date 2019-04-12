@@ -10,7 +10,7 @@
                  [cljsjs/classnames "2.2.5-1"]
                  [cljsjs/react-onclickoutside "6.7.1-1"]])
 
-  (def +lib-version+ "2.1.0")
+  (def +lib-version+ "2.3.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
