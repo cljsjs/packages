@@ -5,6 +5,7 @@
 var ReactPlayer = {
   "addCustomPlayer": function () {},
   "canPlay": function () {},
+  "canEnablePiP": function() {},
   "defaultProps": {
     "config": {
       "dailymotion": {
