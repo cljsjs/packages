@@ -6,7 +6,7 @@
  * https://unpkg.com/react@16.8.1/umd/react.development.js
  * https://unpkg.com/react-dom@16.8.1/umd/react-dom.development.js
  * https://unpkg.com/moment@2.24.0/moment.js
- * https://unpkg.com/antd@3.14.1/dist/antd-with-locales.js
+ * https://unpkg.com/antd@3.16.4/dist/antd-with-locales.js
  *
  * and extern the `antd` JavaScript object
  *
@@ -17,16 +17,8 @@
  **********************************************************************/
 var antd = {
   "Affix": {
-    "propTypes": {
-      "offsetBottom": {
-        "isRequired": function () {}
-      },
-      "offsetTop": {
-        "isRequired": function () {}
-      },
-      "target": {
-        "isRequired": function () {}
-      }
+    "defaultProps": {
+      "target": function () {}
     }
   },
   "Alert": function () {},
@@ -153,6 +145,7 @@ var antd = {
     "defaultProps": {
       "block": {},
       "ghost": {},
+      "htmlType": {},
       "loading": {}
     },
     "propTypes": {
@@ -189,7 +182,6 @@ var antd = {
     "defaultProps": {
       "fullscreen": {},
       "locale": {},
-      "mode": {},
       "onChange": function () {},
       "onPanelChange": function () {},
       "onSelect": function () {}
@@ -402,11 +394,13 @@ var antd = {
       "placement": {}
     }
   },
-  "Empty": function () {},
+  "Empty": {
+    "PRESENTED_IMAGE_DEFAULT": {},
+    "PRESENTED_IMAGE_SIMPLE": {}
+  },
   "Form": {
     "Item": {
       "defaultProps": {
-        "colon": {},
         "hasFeedback": {}
       },
       "propTypes": {
@@ -431,6 +425,9 @@ var antd = {
         "label": {
           "isRequired": function () {}
         },
+        "labelAlign": {
+          "isRequired": function () {}
+        },
         "labelCol": {
           "isRequired": function () {}
         },
@@ -448,12 +445,16 @@ var antd = {
     "create": function () {},
     "createFormField": function () {},
     "defaultProps": {
+      "colon": {},
       "hideRequiredMark": {},
       "layout": {},
       "onSubmit": function () {}
     },
     "propTypes": {
       "children": {
+        "isRequired": function () {}
+      },
+      "colon": {
         "isRequired": function () {}
       },
       "hideRequiredMark": {
@@ -564,31 +565,7 @@ var antd = {
     "Content": function () {},
     "Footer": function () {},
     "Header": function () {},
-    "Sider": {
-      "__ANT_LAYOUT_SIDER": {},
-      "childContextTypes": {
-        "collapsedWidth": {
-          "isRequired": function () {}
-        },
-        "siderCollapsed": {
-          "isRequired": function () {}
-        }
-      },
-      "contextTypes": {
-        "siderHook": {
-          "isRequired": function () {}
-        }
-      },
-      "defaultProps": {
-        "collapsedWidth": {},
-        "collapsible": {},
-        "defaultCollapsed": {},
-        "reverseArrow": {},
-        "style": {},
-        "theme": {},
-        "width": {}
-      }
-    }
+    "Sider": function () {}
   },
   "List": {
     "Item": {
@@ -596,11 +573,17 @@ var antd = {
       "contextTypes": {
         "grid": {
           "isRequired": function () {}
+        },
+        "itemLayout": {
+          "isRequired": function () {}
         }
       }
     },
     "childContextTypes": {
       "grid": {
+        "isRequired": function () {}
+      },
+      "itemLayout": {
         "isRequired": function () {}
       }
     },
@@ -659,11 +642,6 @@ var antd = {
       }
     },
     "Item": {
-      "contextTypes": {
-        "inlineCollapsed": {
-          "isRequired": function () {}
-        }
-      },
       "isMenuItem": {}
     },
     "ItemGroup": {
@@ -696,27 +674,6 @@ var antd = {
         }
       },
       "isSubMenu": {}
-    },
-    "childContextTypes": {
-      "antdMenuTheme": {
-        "isRequired": function () {}
-      },
-      "inlineCollapsed": {
-        "isRequired": function () {}
-      }
-    },
-    "contextTypes": {
-      "collapsedWidth": {
-        "isRequired": function () {}
-      },
-      "siderCollapsed": {
-        "isRequired": function () {}
-      }
-    },
-    "defaultProps": {
-      "className": {},
-      "focusable": {},
-      "theme": {}
     }
   },
   "Modal": {
@@ -1477,6 +1434,7 @@ var antd = {
       }
     },
     "defaultProps": {
+      "blockNode": {},
       "checkable": {},
       "openAnimation": {
         "appear": {},
@@ -5308,7 +5266,8 @@ var antd = {
         "filterReset": {},
         "filterTitle": {},
         "selectAll": {},
-        "selectInvert": {}
+        "selectInvert": {},
+        "sortTitle": {}
       },
       "TimePicker": {
         "placeholder": {}
@@ -6087,6 +6046,9 @@ var antd = {
       "Empty": {
         "description": {}
       },
+      "Icon": {
+        "icon": {}
+      },
       "Modal": {
         "cancelText": {},
         "justOkText": {},
@@ -6113,7 +6075,14 @@ var antd = {
         "filterReset": {},
         "filterTitle": {},
         "selectAll": {},
-        "selectInvert": {}
+        "selectInvert": {},
+        "sortTitle": {}
+      },
+      "Text": {
+        "copied": {},
+        "copy": {},
+        "edit": {},
+        "expand": {}
       },
       "TimePicker": {
         "placeholder": {}
@@ -6121,13 +6090,17 @@ var antd = {
       "Transfer": {
         "itemUnit": {},
         "itemsUnit": {},
-        "searchPlaceholder": {}
+        "searchPlaceholder": {},
+        "titles": {}
       },
       "Upload": {
         "previewFile": {},
         "removeFile": {},
         "uploadError": {},
         "uploading": {}
+      },
+      "global": {
+        "placeholder": {}
       },
       "locale": {}
     },
@@ -6701,6 +6674,8 @@ antd.Button.prototype = {
   "setState": function () {}
 };
 antd.Calendar.prototype = {
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
@@ -6760,21 +6735,29 @@ antd.ConfigProvider.prototype = {
   "setState": function () {}
 };
 antd.DatePicker.prototype = {
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
 };
 antd.DatePicker.MonthPicker.prototype = {
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
 };
 antd.DatePicker.RangePicker.prototype = {
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
 };
 antd.DatePicker.WeekPicker.prototype = {
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
@@ -6848,8 +6831,6 @@ antd.Layout.Header.prototype = {
   "setState": function () {}
 };
 antd.Layout.Sider.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
@@ -7070,6 +7051,8 @@ antd.Tooltip.prototype = {
   "setState": function () {}
 };
 antd.Transfer.prototype = {
+  "componentWillMount": function () {},
+  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
@@ -7126,3 +7109,4 @@ antd.Upload.Dragger.prototype = {
 /**********************************************************************
  * End Generated Extern for antd
 /**********************************************************************/
+
