@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "5.9.1")
+(def +lib-version+ "5.9.2")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -23,7 +23,7 @@
                  #"^d3\.min\.js" "cljsjs/d3/production/d3.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :provides ["d3" "cljsjs.d3"]
-               :global-exports '{d3 d3})
-    (validate)
+               :global-exports '{d3 d3}) 
     (pom)
-    (jar)))
+    (jar)
+	(validate-checksums)))
