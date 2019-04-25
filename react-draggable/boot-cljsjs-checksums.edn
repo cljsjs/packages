@@ -1,2 +1,4 @@
 {"cljsjs/react-draggable/development/react-draggable.inc.js"
- "0B601AEE31085EEDC94B8D38E56291FC"}
+ "B797CDC8C4D1D240A9C2767643E9F401",
+ "cljsjs/react-draggable/production/react-draggable.min.inc.js"
+ "B797CDC8C4D1D240A9C2767643E9F401"}

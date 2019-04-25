@@ -197,6 +197,9 @@ var ReactDraggable = {
       "position": {
         "isRequired": function () {}
       },
+      "positionOffset": {
+        "isRequired": function () {}
+      },
       "scale": {
         "isRequired": function () {}
       },
@@ -282,6 +285,9 @@ var ReactDraggable = {
       "isRequired": function () {}
     },
     "position": {
+      "isRequired": function () {}
+    },
+    "positionOffset": {
       "isRequired": function () {}
     },
     "scale": {

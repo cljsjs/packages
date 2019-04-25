@@ -6,7 +6,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.2.1")
+(def +lib-version+ "3.3.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -26,6 +26,7 @@
   (comp
     (download :url (str "https://unpkg.com/react-draggable@" +lib-version+ "/dist/react-draggable.min.js"))
     (sift :move {#"^react-draggable.min.js$" "cljsjs/react-draggable/development/react-draggable.inc.js"})
+	(download :url (str "https://unpkg.com/react-draggable@" +lib-version+ "/dist/react-draggable.min.js"))
     (sift :move {#"^react-draggable.min.js$" "cljsjs/react-draggable/production/react-draggable.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react-draggable"
