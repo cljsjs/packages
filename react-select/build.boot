@@ -10,7 +10,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.4.1")
+(def +lib-version+ "2.4.3")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -41,4 +41,5 @@
                          "cljsjs.react-input-autosize"
                          "cljsjs.emotion"])
    (pom)
-   (jar)))
+   (jar)
+   (validate-checksums)))
