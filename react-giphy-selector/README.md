@@ -15,6 +15,13 @@ you can require the packaged library like:
 ```clojure
 (ns application.core
   (:require cljsjs.react-giphy-selector))
+
+;; Access with
+(.-Selector js/ReactGiphySelector)
+;; or
+(.-ResultSort js/ReactGiphySelector)
+;; or
+(.-ResultSort js/ReactGiphySelector)
 ```
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps
