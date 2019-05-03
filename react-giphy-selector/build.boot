@@ -9,19 +9,19 @@
          '[boot.tmpdir :as tmpdir]
          '[clojure.java.io :as io])
 
-(def +lib-version+ "0.0.1")
+(def +lib-version+ "0.0.2")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom {:project     'cljsjs/react-giphy-selector
       :version     +version+
       :description "A very customizable react search component for picking the perfect giphy."
-      :url         "https://github.com/tshaddix/react-giphy-selector"
+      :url         "https://github.com/bago2k4/react-giphy-selector"
       :scm         {:url "https://github.com/cljsjs/packages"}
       :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (deftask download-lib []
-  (download :url (format "https://github.com/tshaddix/react-giphy-selector/archive/v%s.zip" +lib-version+)
+  (download :url (format "https://github.com/bago2k4/react-giphy-selector/archive/v%s.zip" +lib-version+)
             :unzip true))
 
 (deftask package []
