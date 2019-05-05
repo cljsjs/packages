@@ -1,2 +1,4 @@
 {"cljsjs/react-giphy-selector/development/react-giphy-selector.inc.js"
- "0915B4A606DFCA85D975C1CCEABE0C23"}
+ "0915B4A606DFCA85D975C1CCEABE0C23",
+ "cljsjs/react-giphy-selector/production/react-giphy-selector.min.inc.js"
+ "0A1F43DDFF14A1FD166A2550FEE12916"}
