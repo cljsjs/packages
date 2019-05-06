@@ -23,6 +23,7 @@ var PIXI = {
     "fromImages": function () {},
     "fromSVG": function () {},
     "fromVideo": function () {},
+    "mixin": function () {},
     "prefixed": {}
   },
   "AppLoaderPlugin": {
@@ -74,6 +75,7 @@ var PIXI = {
       "EventEmitter": function () {},
       "prefixed": {}
     },
+    "_globalBatch": {},
     "addToCache": function () {},
     "from": function () {},
     "fromBuffer": function () {},
@@ -88,6 +90,7 @@ var PIXI = {
       "EventEmitter": function () {},
       "prefixed": {}
     },
+    "_globalBatch": {},
     "addToCache": function () {},
     "from": function () {},
     "fromBuffer": function () {},
@@ -114,6 +117,7 @@ var PIXI = {
       "prefixed": {}
     },
     "fonts": {},
+    "mixin": function () {},
     "prefixed": {},
     "registerFont": function () {}
   },
@@ -127,6 +131,7 @@ var PIXI = {
       "EventEmitter": function () {},
       "prefixed": {}
     },
+    "mixin": function () {},
     "prefixed": {}
   },
   "CubeTexture": {
@@ -134,6 +139,7 @@ var PIXI = {
       "EventEmitter": function () {},
       "prefixed": {}
     },
+    "_globalBatch": {},
     "addToCache": function () {},
     "from": function () {},
     "fromBuffer": function () {},
@@ -158,6 +164,7 @@ var PIXI = {
       "EventEmitter": function () {},
       "prefixed": {}
     },
+    "mixin": function () {},
     "prefixed": {}
   },
   "ENV": {
@@ -175,6 +182,7 @@ var PIXI = {
     "RGB": {},
     "RGBA": {}
   },
+  "FillStyle": function () {},
   "Filter": {
     "SOURCE_KEY_MAP": {},
     "from": function () {}
@@ -190,6 +198,7 @@ var PIXI = {
       "EventEmitter": function () {},
       "prefixed": {}
     },
+    "_globalBatch": {},
     "addToCache": function () {},
     "from": function () {},
     "fromBuffer": function () {},
@@ -224,6 +233,7 @@ var PIXI = {
       "x": {},
       "y": {}
     },
+    "mixin": function () {},
     "prefixed": {}
   },
   "GraphicsData": function () {},
@@ -254,6 +264,7 @@ var PIXI = {
     "vX": function () {},
     "vY": function () {}
   },
+  "LineStyle": function () {},
   "Loader": {
     "Loader": {
       "Loader": function () {},
@@ -640,6 +651,7 @@ var PIXI = {
       "EventEmitter": function () {},
       "prefixed": {}
     },
+    "mixin": function () {},
     "prefixed": {}
   },
   "MeshBatchUvs": function () {},
@@ -655,6 +667,7 @@ var PIXI = {
       "EventEmitter": function () {},
       "prefixed": {}
     },
+    "mixin": function () {},
     "prefixed": {}
   },
   "ObjectRenderer": function () {},
@@ -670,6 +683,7 @@ var PIXI = {
       "EventEmitter": function () {},
       "prefixed": {}
     },
+    "mixin": function () {},
     "prefixed": {}
   },
   "ParticleRenderer": function () {},
@@ -739,6 +753,7 @@ var PIXI = {
       },
       "addListener": function () {},
       "baseTexture": {
+        "_batchEnabled": {},
         "_events": {
           "loaded": {
             "context": {},
@@ -756,6 +771,7 @@ var PIXI = {
             "EventEmitter": function () {},
             "prefixed": {}
           },
+          "_globalBatch": {},
           "addToCache": function () {},
           "from": function () {},
           "fromBuffer": function () {},
@@ -775,7 +791,9 @@ var PIXI = {
         "format": {},
         "height": {},
         "isPowerOfTwo": {},
+        "listenerCount": function () {},
         "listeners": function () {},
+        "loadSource": function () {},
         "mipmap": {},
         "off": function () {},
         "on": function () {},
@@ -786,7 +804,6 @@ var PIXI = {
         "resolution": {},
         "resource": {},
         "scaleMode": {},
-        "setMaxListeners": function () {},
         "setRealSize": function () {},
         "setResolution": function () {},
         "setResource": function () {},
@@ -853,6 +870,7 @@ var PIXI = {
           },
           "addListener": function () {},
           "baseTexture": {
+            "_batchEnabled": {},
             "_events": {
               "update": {
                 "context": {},
@@ -870,6 +888,7 @@ var PIXI = {
                 "EventEmitter": function () {},
                 "prefixed": {}
               },
+              "_globalBatch": {},
               "addToCache": function () {},
               "from": function () {},
               "fromBuffer": function () {},
@@ -889,7 +908,9 @@ var PIXI = {
             "format": {},
             "height": {},
             "isPowerOfTwo": {},
+            "listenerCount": function () {},
             "listeners": function () {},
+            "loadSource": function () {},
             "mipmap": {},
             "off": function () {},
             "on": function () {},
@@ -915,6 +936,7 @@ var PIXI = {
                 "_name": {},
                 "add": function () {},
                 "contains": function () {},
+                "destroy": function () {},
                 "dispatch": function () {},
                 "emit": function () {},
                 "items": {},
@@ -926,6 +948,7 @@ var PIXI = {
                 "_name": {},
                 "add": function () {},
                 "contains": function () {},
+                "destroy": function () {},
                 "dispatch": function () {},
                 "emit": function () {},
                 "items": {},
@@ -941,7 +964,6 @@ var PIXI = {
               "upload": function () {}
             },
             "scaleMode": {},
-            "setMaxListeners": function () {},
             "setRealSize": function () {},
             "setResolution": function () {},
             "setResource": function () {},
@@ -972,6 +994,7 @@ var PIXI = {
           "destroy": function () {},
           "emit": function () {},
           "eventNames": function () {},
+          "listenerCount": function () {},
           "listeners": function () {},
           "noFrame": {},
           "off": function () {},
@@ -997,7 +1020,6 @@ var PIXI = {
           "removeAllListeners": function () {},
           "removeListener": function () {},
           "requiresUpdate": {},
-          "setMaxListeners": function () {},
           "textureCacheIds": {},
           "trim": {},
           "update": function () {},
@@ -1030,6 +1052,7 @@ var PIXI = {
       "destroy": function () {},
       "emit": function () {},
       "eventNames": function () {},
+      "listenerCount": function () {},
       "listeners": function () {},
       "noFrame": {},
       "off": function () {},
@@ -1055,7 +1078,6 @@ var PIXI = {
       "removeAllListeners": function () {},
       "removeListener": function () {},
       "requiresUpdate": {},
-      "setMaxListeners": function () {},
       "textureCacheIds": {},
       "trim": {},
       "update": function () {},
@@ -1111,6 +1133,7 @@ var PIXI = {
       },
       "addListener": function () {},
       "baseTexture": {
+        "_batchEnabled": {},
         "_events": {
           "update": {
             "context": {},
@@ -1128,6 +1151,7 @@ var PIXI = {
             "EventEmitter": function () {},
             "prefixed": {}
           },
+          "_globalBatch": {},
           "addToCache": function () {},
           "from": function () {},
           "fromBuffer": function () {},
@@ -1147,7 +1171,9 @@ var PIXI = {
         "format": {},
         "height": {},
         "isPowerOfTwo": {},
+        "listenerCount": function () {},
         "listeners": function () {},
+        "loadSource": function () {},
         "mipmap": {},
         "off": function () {},
         "on": function () {},
@@ -1173,6 +1199,7 @@ var PIXI = {
             "_name": {},
             "add": function () {},
             "contains": function () {},
+            "destroy": function () {},
             "dispatch": function () {},
             "emit": function () {},
             "items": {},
@@ -1184,6 +1211,7 @@ var PIXI = {
             "_name": {},
             "add": function () {},
             "contains": function () {},
+            "destroy": function () {},
             "dispatch": function () {},
             "emit": function () {},
             "items": {},
@@ -1199,7 +1227,6 @@ var PIXI = {
           "upload": function () {}
         },
         "scaleMode": {},
-        "setMaxListeners": function () {},
         "setRealSize": function () {},
         "setResolution": function () {},
         "setResource": function () {},
@@ -1261,6 +1288,7 @@ var PIXI = {
           },
           "addListener": function () {},
           "baseTexture": {
+            "_batchEnabled": {},
             "_events": {
               "loaded": {
                 "context": {},
@@ -1278,6 +1306,7 @@ var PIXI = {
                 "EventEmitter": function () {},
                 "prefixed": {}
               },
+              "_globalBatch": {},
               "addToCache": function () {},
               "from": function () {},
               "fromBuffer": function () {},
@@ -1297,7 +1326,9 @@ var PIXI = {
             "format": {},
             "height": {},
             "isPowerOfTwo": {},
+            "listenerCount": function () {},
             "listeners": function () {},
+            "loadSource": function () {},
             "mipmap": {},
             "off": function () {},
             "on": function () {},
@@ -1308,7 +1339,6 @@ var PIXI = {
             "resolution": {},
             "resource": {},
             "scaleMode": {},
-            "setMaxListeners": function () {},
             "setRealSize": function () {},
             "setResolution": function () {},
             "setResource": function () {},
@@ -1339,6 +1369,7 @@ var PIXI = {
           "destroy": function () {},
           "emit": function () {},
           "eventNames": function () {},
+          "listenerCount": function () {},
           "listeners": function () {},
           "noFrame": {},
           "off": function () {},
@@ -1364,7 +1395,6 @@ var PIXI = {
           "removeAllListeners": function () {},
           "removeListener": function () {},
           "requiresUpdate": {},
-          "setMaxListeners": function () {},
           "textureCacheIds": {},
           "trim": {},
           "update": function () {},
@@ -1402,6 +1432,7 @@ var PIXI = {
       "destroy": function () {},
       "emit": function () {},
       "eventNames": function () {},
+      "listenerCount": function () {},
       "listeners": function () {},
       "noFrame": {},
       "off": function () {},
@@ -1427,7 +1458,6 @@ var PIXI = {
       "removeAllListeners": function () {},
       "removeListener": function () {},
       "requiresUpdate": {},
-      "setMaxListeners": function () {},
       "textureCacheIds": {},
       "trim": {},
       "update": function () {},
@@ -1468,6 +1498,7 @@ var PIXI = {
       "prepare": function () {},
       "tilingSprite": function () {}
     },
+    "create": function () {},
     "prefixed": {},
     "registerPlugin": function () {}
   },
@@ -1475,6 +1506,7 @@ var PIXI = {
     "merge": function () {}
   },
   "RoundedRectangle": function () {},
+  "Runner": function () {},
   "SCALE_MODES": {
     "LINEAR": {},
     "NEAREST": {}
@@ -1495,6 +1527,7 @@ var PIXI = {
       "EventEmitter": function () {},
       "prefixed": {}
     },
+    "mixin": function () {},
     "prefixed": {}
   },
   "SimplePlane": {
@@ -1503,6 +1536,7 @@ var PIXI = {
       "EventEmitter": function () {},
       "prefixed": {}
     },
+    "mixin": function () {},
     "prefixed": {}
   },
   "SimpleRope": {
@@ -1511,6 +1545,7 @@ var PIXI = {
       "EventEmitter": function () {},
       "prefixed": {}
     },
+    "mixin": function () {},
     "prefixed": {}
   },
   "Sprite": {
@@ -1524,6 +1559,7 @@ var PIXI = {
     "fromImage": function () {},
     "fromSVG": function () {},
     "fromVideo": function () {},
+    "mixin": function () {},
     "prefixed": {}
   },
   "SpriteMaskFilter": {
@@ -1574,6 +1610,7 @@ var PIXI = {
     "fromImage": function () {},
     "fromSVG": function () {},
     "fromVideo": function () {},
+    "mixin": function () {},
     "prefixed": {}
   },
   "TextMetrics": {
@@ -1604,6 +1641,7 @@ var PIXI = {
       "fillText": function () {},
       "filter": {},
       "font": {},
+      "getContextAttributes": function () {},
       "getImageData": function () {},
       "getLineDash": function () {},
       "getTransform": function () {},
@@ -1707,6 +1745,7 @@ var PIXI = {
       },
       "addListener": function () {},
       "baseTexture": {
+        "_batchEnabled": {},
         "_events": {
           "loaded": {
             "context": {},
@@ -1724,6 +1763,7 @@ var PIXI = {
             "EventEmitter": function () {},
             "prefixed": {}
           },
+          "_globalBatch": {},
           "addToCache": function () {},
           "from": function () {},
           "fromBuffer": function () {},
@@ -1743,7 +1783,9 @@ var PIXI = {
         "format": {},
         "height": {},
         "isPowerOfTwo": {},
+        "listenerCount": function () {},
         "listeners": function () {},
+        "loadSource": function () {},
         "mipmap": {},
         "off": function () {},
         "on": function () {},
@@ -1754,7 +1796,6 @@ var PIXI = {
         "resolution": {},
         "resource": {},
         "scaleMode": {},
-        "setMaxListeners": function () {},
         "setRealSize": function () {},
         "setResolution": function () {},
         "setResource": function () {},
@@ -1785,6 +1826,7 @@ var PIXI = {
       "destroy": function () {},
       "emit": function () {},
       "eventNames": function () {},
+      "listenerCount": function () {},
       "listeners": function () {},
       "noFrame": {},
       "off": function () {},
@@ -1810,7 +1852,6 @@ var PIXI = {
       "removeAllListeners": function () {},
       "removeListener": function () {},
       "requiresUpdate": {},
-      "setMaxListeners": function () {},
       "textureCacheIds": {},
       "trim": {},
       "update": function () {},
@@ -1866,6 +1907,7 @@ var PIXI = {
       },
       "addListener": function () {},
       "baseTexture": {
+        "_batchEnabled": {},
         "_events": {
           "update": {
             "context": {},
@@ -1883,6 +1925,7 @@ var PIXI = {
             "EventEmitter": function () {},
             "prefixed": {}
           },
+          "_globalBatch": {},
           "addToCache": function () {},
           "from": function () {},
           "fromBuffer": function () {},
@@ -1902,7 +1945,9 @@ var PIXI = {
         "format": {},
         "height": {},
         "isPowerOfTwo": {},
+        "listenerCount": function () {},
         "listeners": function () {},
+        "loadSource": function () {},
         "mipmap": {},
         "off": function () {},
         "on": function () {},
@@ -1928,6 +1973,7 @@ var PIXI = {
             "_name": {},
             "add": function () {},
             "contains": function () {},
+            "destroy": function () {},
             "dispatch": function () {},
             "emit": function () {},
             "items": {},
@@ -1939,6 +1985,7 @@ var PIXI = {
             "_name": {},
             "add": function () {},
             "contains": function () {},
+            "destroy": function () {},
             "dispatch": function () {},
             "emit": function () {},
             "items": {},
@@ -1954,7 +2001,6 @@ var PIXI = {
           "upload": function () {}
         },
         "scaleMode": {},
-        "setMaxListeners": function () {},
         "setRealSize": function () {},
         "setResolution": function () {},
         "setResource": function () {},
@@ -1985,6 +2031,7 @@ var PIXI = {
       "destroy": function () {},
       "emit": function () {},
       "eventNames": function () {},
+      "listenerCount": function () {},
       "listeners": function () {},
       "noFrame": {},
       "off": function () {},
@@ -2010,7 +2057,6 @@ var PIXI = {
       "removeAllListeners": function () {},
       "removeListener": function () {},
       "requiresUpdate": {},
-      "setMaxListeners": function () {},
       "textureCacheIds": {},
       "trim": {},
       "update": function () {},
@@ -2051,6 +2097,7 @@ var PIXI = {
     "fromImage": function () {},
     "fromSVG": function () {},
     "fromVideo": function () {},
+    "mixin": function () {},
     "prefixed": {}
   },
   "TilingSpriteRenderer": function () {},
@@ -2201,7 +2248,10 @@ var PIXI = {
       "tabIndex": {}
     }
   },
+  "autoDetectRenderer": function () {},
   "checkMaxIfStatementsInShader": function () {},
+  "defaultFilterVertex": {},
+  "defaultVertex": {},
   "extract": {
     "Extract": function () {}
   },
@@ -2273,6 +2323,40 @@ var PIXI = {
       "trackedPointers": {}
     }
   },
+  "isMobile": {
+    "amazon": {
+      "device": {},
+      "phone": {},
+      "tablet": {}
+    },
+    "android": {
+      "device": {},
+      "phone": {},
+      "tablet": {}
+    },
+    "any": {},
+    "apple": {
+      "device": {},
+      "ipod": {},
+      "phone": {},
+      "tablet": {}
+    },
+    "other": {
+      "blackberry": {},
+      "blackberry10": {},
+      "chrome": {},
+      "device": {},
+      "firefox": {},
+      "opera": {}
+    },
+    "phone": {},
+    "tablet": {},
+    "windows": {
+      "device": {},
+      "phone": {},
+      "tablet": {}
+    }
+  },
   "loaders": {},
   "mesh": {},
   "particles": {},
@@ -2328,7 +2412,7 @@ var PIXI = {
     "PREFER_ENV": {},
     "RENDER_OPTIONS": {
       "antialias": {},
-      "autoResize": {},
+      "autoDensity": {},
       "backgroundColor": {},
       "clearBeforeRender": {},
       "forceFXAA": {},
@@ -2448,7 +2532,14 @@ var PIXI = {
     "skipHello": function () {},
     "string2hex": function () {},
     "trimCanvas": function () {},
-    "uid": function () {}
+    "uid": function () {},
+    "url": {
+      "Url": function () {},
+      "format": function () {},
+      "parse": function () {},
+      "resolve": function () {},
+      "resolveObject": function () {}
+    }
   }
 };
 PIXI.AbstractRenderer.prototype = {
@@ -2459,26 +2550,26 @@ PIXI.AbstractRenderer.prototype = {
   "eventNames": function () {},
   "generateTexture": function () {},
   "initPlugins": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
   "removeListener": function () {},
-  "resize": function () {},
-  "setMaxListeners": function () {}
+  "resize": function () {}
 };
 PIXI.AbstractRenderer.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.AnimatedSprite.prototype = {
   "_accessibleActive": function () {},
@@ -2529,6 +2620,7 @@ PIXI.AnimatedSprite.prototype = {
   "hitArea": function () {},
   "interactive": function () {},
   "interactiveChildren": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "name": function () {},
   "off": function () {},
@@ -2546,7 +2638,6 @@ PIXI.AnimatedSprite.prototype = {
   "renderAdvancedWebGL": function () {},
   "renderWebGL": function () {},
   "setChildIndex": function () {},
-  "setMaxListeners": function () {},
   "setParent": function () {},
   "setTransform": function () {},
   "sortChildren": function () {},
@@ -2564,16 +2655,15 @@ PIXI.AnimatedSprite.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.Application.prototype = {
-  "createRenderer": function () {},
   "destroy": function () {},
   "render": function () {}
 };
@@ -2588,14 +2678,15 @@ PIXI.BaseRenderTexture.prototype = {
   "dispose": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
+  "loadSource": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
   "removeListener": function () {},
   "resize": function () {},
-  "setMaxListeners": function () {},
   "setRealSize": function () {},
   "setResolution": function () {},
   "setResource": function () {},
@@ -2607,13 +2698,13 @@ PIXI.BaseRenderTexture.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.BaseTexture.prototype = {
   "_refreshPOT": function () {},
@@ -2623,13 +2714,14 @@ PIXI.BaseTexture.prototype = {
   "dispose": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
+  "loadSource": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
   "removeListener": function () {},
-  "setMaxListeners": function () {},
   "setRealSize": function () {},
   "setResolution": function () {},
   "setResource": function () {},
@@ -2641,13 +2733,13 @@ PIXI.BaseTexture.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.BatchGeometry.prototype = {
   "addAttribute": function () {},
@@ -2657,6 +2749,7 @@ PIXI.BatchGeometry.prototype = {
   "destroy": function () {},
   "dispose": function () {},
   "getAttribute": function () {},
+  "getBuffer": function () {},
   "getIndex": function () {},
   "getSize": function () {},
   "interleave": function () {}
@@ -2716,6 +2809,7 @@ PIXI.BitmapText.prototype = {
   "hitArea": function () {},
   "interactive": function () {},
   "interactiveChildren": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "name": function () {},
   "off": function () {},
@@ -2732,7 +2826,6 @@ PIXI.BitmapText.prototype = {
   "renderAdvancedWebGL": function () {},
   "renderWebGL": function () {},
   "setChildIndex": function () {},
-  "setMaxListeners": function () {},
   "setParent": function () {},
   "setTransform": function () {},
   "sortChildren": function () {},
@@ -2749,13 +2842,13 @@ PIXI.BitmapText.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.Bounds.prototype = {
   "addBounds": function () {},
@@ -2822,6 +2915,7 @@ PIXI.Container.prototype = {
   "hitArea": function () {},
   "interactive": function () {},
   "interactiveChildren": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "name": function () {},
   "off": function () {},
@@ -2838,7 +2932,6 @@ PIXI.Container.prototype = {
   "renderAdvancedWebGL": function () {},
   "renderWebGL": function () {},
   "setChildIndex": function () {},
-  "setMaxListeners": function () {},
   "setParent": function () {},
   "setTransform": function () {},
   "sortChildren": function () {},
@@ -2853,13 +2946,13 @@ PIXI.Container.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.CubeTexture.prototype = {
   "_refreshPOT": function () {},
@@ -2869,13 +2962,14 @@ PIXI.CubeTexture.prototype = {
   "dispose": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
+  "loadSource": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
   "removeListener": function () {},
-  "setMaxListeners": function () {},
   "setRealSize": function () {},
   "setResolution": function () {},
   "setResource": function () {},
@@ -2887,13 +2981,13 @@ PIXI.CubeTexture.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.DisplayObject.prototype = {
   "_accessibleActive": function () {},
@@ -2927,6 +3021,7 @@ PIXI.DisplayObject.prototype = {
   "hitArea": function () {},
   "interactive": function () {},
   "interactiveChildren": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "name": function () {},
   "off": function () {},
@@ -2936,7 +3031,6 @@ PIXI.DisplayObject.prototype = {
   "removeListener": function () {},
   "render": function () {},
   "renderWebGL": function () {},
-  "setMaxListeners": function () {},
   "setParent": function () {},
   "setTransform": function () {},
   "tabIndex": function () {},
@@ -2949,18 +3043,23 @@ PIXI.DisplayObject.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.Ellipse.prototype = {
   "clone": function () {},
   "contains": function () {},
   "getBounds": function () {}
+};
+PIXI.FillStyle.prototype = {
+  "clone": function () {},
+  "destroy": function () {},
+  "reset": function () {}
 };
 PIXI.Filter.prototype = {
   "apply": function () {},
@@ -2987,13 +3086,14 @@ PIXI.GLTexture.prototype = {
   "dispose": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
+  "loadSource": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
   "removeListener": function () {},
-  "setMaxListeners": function () {},
   "setRealSize": function () {},
   "setResolution": function () {},
   "setResource": function () {},
@@ -3005,13 +3105,13 @@ PIXI.GLTexture.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.Geometry.prototype = {
   "addAttribute": function () {},
@@ -3020,6 +3120,7 @@ PIXI.Geometry.prototype = {
   "destroy": function () {},
   "dispose": function () {},
   "getAttribute": function () {},
+  "getBuffer": function () {},
   "getIndex": function () {},
   "getSize": function () {},
   "interleave": function () {}
@@ -3080,6 +3181,7 @@ PIXI.Graphics.prototype = {
   "endHole": function () {},
   "eventNames": function () {},
   "finishPoly": function () {},
+  "generateCanvasTexture": function () {},
   "getBounds": function () {},
   "getChildAt": function () {},
   "getChildByName": function () {},
@@ -3093,6 +3195,7 @@ PIXI.Graphics.prototype = {
   "lineStyle": function () {},
   "lineTextureStyle": function () {},
   "lineTo": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "moveTo": function () {},
   "name": function () {},
@@ -3112,7 +3215,6 @@ PIXI.Graphics.prototype = {
   "renderWebGL": function () {},
   "setChildIndex": function () {},
   "setMatrix": function () {},
-  "setMaxListeners": function () {},
   "setParent": function () {},
   "setTransform": function () {},
   "sortChildren": function () {},
@@ -3128,13 +3230,13 @@ PIXI.Graphics.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.GraphicsData.prototype = {
   "clone": function () {},
@@ -3146,6 +3248,7 @@ PIXI.GraphicsGeometry.prototype = {
   "addIndex": function () {},
   "addTextureIds": function () {},
   "addUvs": function () {},
+  "adjustUvs": function () {},
   "buildDrawCalls": function () {},
   "calculateBounds": function () {},
   "clear": function () {},
@@ -3157,13 +3260,20 @@ PIXI.GraphicsGeometry.prototype = {
   "drawHole": function () {},
   "drawShape": function () {},
   "getAttribute": function () {},
+  "getBuffer": function () {},
   "getIndex": function () {},
   "getSize": function () {},
   "interleave": function () {},
   "isBatchable": function () {},
-  "proccessHoles": function () {},
+  "processHoles": function () {},
   "transformPoints": function () {},
   "updateBatches": function () {}
+};
+PIXI.LineStyle.prototype = {
+  "clone": function () {},
+  "constructor": function () {},
+  "destroy": function () {},
+  "reset": function () {}
 };
 PIXI.Loader.prototype = {
   "_loadResource": function () {},
@@ -3177,6 +3287,7 @@ PIXI.Loader.prototype = {
   "destroy": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "load": function () {},
   "off": function () {},
@@ -3186,7 +3297,6 @@ PIXI.Loader.prototype = {
   "removeAllListeners": function () {},
   "removeListener": function () {},
   "reset": function () {},
-  "setMaxListeners": function () {},
   "use": function () {}
 };
 PIXI.Loader.Loader.prototype = {
@@ -3384,6 +3494,7 @@ PIXI.Mesh.prototype = {
   "hitArea": function () {},
   "interactive": function () {},
   "interactiveChildren": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "name": function () {},
   "off": function () {},
@@ -3400,7 +3511,6 @@ PIXI.Mesh.prototype = {
   "renderAdvancedWebGL": function () {},
   "renderWebGL": function () {},
   "setChildIndex": function () {},
-  "setMaxListeners": function () {},
   "setParent": function () {},
   "setTransform": function () {},
   "sortChildren": function () {},
@@ -3415,13 +3525,13 @@ PIXI.Mesh.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.MeshBatchUvs.prototype = {
   "update": function () {}
@@ -3434,6 +3544,7 @@ PIXI.MeshGeometry.prototype = {
   "destroy": function () {},
   "dispose": function () {},
   "getAttribute": function () {},
+  "getBuffer": function () {},
   "getIndex": function () {},
   "getSize": function () {},
   "interleave": function () {}
@@ -3492,6 +3603,7 @@ PIXI.NineSlicePlane.prototype = {
   "hitArea": function () {},
   "interactive": function () {},
   "interactiveChildren": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "name": function () {},
   "off": function () {},
@@ -3508,7 +3620,6 @@ PIXI.NineSlicePlane.prototype = {
   "renderAdvancedWebGL": function () {},
   "renderWebGL": function () {},
   "setChildIndex": function () {},
-  "setMaxListeners": function () {},
   "setParent": function () {},
   "setTransform": function () {},
   "sortChildren": function () {},
@@ -3526,13 +3637,13 @@ PIXI.NineSlicePlane.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.ObjectRenderer.prototype = {
   "constructor": function () {},
@@ -3594,6 +3705,7 @@ PIXI.ParticleContainer.prototype = {
   "hitArea": function () {},
   "interactive": function () {},
   "interactiveChildren": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "name": function () {},
   "off": function () {},
@@ -3610,7 +3722,6 @@ PIXI.ParticleContainer.prototype = {
   "renderAdvancedWebGL": function () {},
   "renderWebGL": function () {},
   "setChildIndex": function () {},
-  "setMaxListeners": function () {},
   "setParent": function () {},
   "setProperties": function () {},
   "setTransform": function () {},
@@ -3626,13 +3737,13 @@ PIXI.ParticleContainer.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.ParticleRenderer.prototype = {
   "_generateOneMoreBuffer": function () {},
@@ -3659,6 +3770,7 @@ PIXI.PlaneGeometry.prototype = {
   "destroy": function () {},
   "dispose": function () {},
   "getAttribute": function () {},
+  "getBuffer": function () {},
   "getIndex": function () {},
   "getSize": function () {},
   "interleave": function () {}
@@ -3673,7 +3785,6 @@ PIXI.Point.prototype = {
 };
 PIXI.Polygon.prototype = {
   "clone": function () {},
-  "close": function () {},
   "contains": function () {}
 };
 PIXI.Program.prototype = {
@@ -3689,6 +3800,7 @@ PIXI.Quad.prototype = {
   "destroy": function () {},
   "dispose": function () {},
   "getAttribute": function () {},
+  "getBuffer": function () {},
   "getIndex": function () {},
   "getSize": function () {},
   "interleave": function () {}
@@ -3701,6 +3813,7 @@ PIXI.QuadUv.prototype = {
   "destroy": function () {},
   "dispose": function () {},
   "getAttribute": function () {},
+  "getBuffer": function () {},
   "getIndex": function () {},
   "getSize": function () {},
   "interleave": function () {},
@@ -3725,6 +3838,7 @@ PIXI.RenderTexture.prototype = {
   "destroy": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
@@ -3733,7 +3847,6 @@ PIXI.RenderTexture.prototype = {
   "removeAllListeners": function () {},
   "removeListener": function () {},
   "resize": function () {},
-  "setMaxListeners": function () {},
   "update": function () {},
   "updateUvs": function () {}
 };
@@ -3745,13 +3858,14 @@ PIXI.RenderTexture.EMPTY.baseTexture.constructor.prototype = {
   "dispose": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
+  "loadSource": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
   "removeListener": function () {},
-  "setMaxListeners": function () {},
   "setRealSize": function () {},
   "setResolution": function () {},
   "setResource": function () {},
@@ -3763,13 +3877,13 @@ PIXI.RenderTexture.EMPTY.baseTexture.constructor.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.RenderTexture.EMPTY.constructor.prototype = {
   "addListener": function () {},
@@ -3778,6 +3892,7 @@ PIXI.RenderTexture.EMPTY.constructor.prototype = {
   "destroy": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
@@ -3785,7 +3900,6 @@ PIXI.RenderTexture.EMPTY.constructor.prototype = {
   "once": function () {},
   "removeAllListeners": function () {},
   "removeListener": function () {},
-  "setMaxListeners": function () {},
   "update": function () {},
   "updateUvs": function () {}
 };
@@ -3793,13 +3907,13 @@ PIXI.RenderTexture.EMPTY.constructor.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.RenderTexture.EMPTY.constructor.WHITE.baseTexture.constructor.prototype = {
   "_refreshPOT": function () {},
@@ -3809,13 +3923,14 @@ PIXI.RenderTexture.EMPTY.constructor.WHITE.baseTexture.constructor.prototype = {
   "dispose": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
+  "loadSource": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
   "removeListener": function () {},
-  "setMaxListeners": function () {},
   "setRealSize": function () {},
   "setResolution": function () {},
   "setResource": function () {},
@@ -3827,13 +3942,13 @@ PIXI.RenderTexture.EMPTY.constructor.WHITE.baseTexture.constructor.EventEmitter.
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.RenderTexture.EMPTY.constructor.WHITE.baseTexture.resource.constructor.prototype = {
   "bind": function () {},
@@ -3851,13 +3966,13 @@ PIXI.RenderTexture.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.RenderTexture.WHITE.baseTexture.constructor.prototype = {
   "_refreshPOT": function () {},
@@ -3867,13 +3982,14 @@ PIXI.RenderTexture.WHITE.baseTexture.constructor.prototype = {
   "dispose": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
+  "loadSource": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
   "removeListener": function () {},
-  "setMaxListeners": function () {},
   "setRealSize": function () {},
   "setResolution": function () {},
   "setResource": function () {},
@@ -3885,13 +4001,13 @@ PIXI.RenderTexture.WHITE.baseTexture.constructor.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.RenderTexture.WHITE.baseTexture.resource.constructor.prototype = {
   "bind": function () {},
@@ -3912,6 +4028,7 @@ PIXI.RenderTexture.WHITE.constructor.prototype = {
   "destroy": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
@@ -3919,7 +4036,6 @@ PIXI.RenderTexture.WHITE.constructor.prototype = {
   "once": function () {},
   "removeAllListeners": function () {},
   "removeListener": function () {},
-  "setMaxListeners": function () {},
   "update": function () {},
   "updateUvs": function () {}
 };
@@ -3931,13 +4047,14 @@ PIXI.RenderTexture.WHITE.constructor.EMPTY.baseTexture.constructor.prototype = {
   "dispose": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
+  "loadSource": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
   "removeListener": function () {},
-  "setMaxListeners": function () {},
   "setRealSize": function () {},
   "setResolution": function () {},
   "setResource": function () {},
@@ -3949,25 +4066,25 @@ PIXI.RenderTexture.WHITE.constructor.EMPTY.baseTexture.constructor.EventEmitter.
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.RenderTexture.WHITE.constructor.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.Renderer.prototype = {
   "addListener": function () {},
@@ -3979,6 +4096,7 @@ PIXI.Renderer.prototype = {
   "eventNames": function () {},
   "generateTexture": function () {},
   "initPlugins": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
@@ -3987,20 +4105,19 @@ PIXI.Renderer.prototype = {
   "removeListener": function () {},
   "render": function () {},
   "reset": function () {},
-  "resize": function () {},
-  "setMaxListeners": function () {}
+  "resize": function () {}
 };
 PIXI.Renderer.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.Renderer.__plugins.accessibility.prototype = {
   "_onClick": function () {},
@@ -4049,6 +4166,7 @@ PIXI.Renderer.__plugins.interaction.prototype = {
   "eventNames": function () {},
   "getInteractionDataForPointerId": function () {},
   "hitTest": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "mapPositionToPoint": function () {},
   "normalizeToPointerData": function () {},
@@ -4073,7 +4191,6 @@ PIXI.Renderer.__plugins.interaction.prototype = {
   "removeEvents": function () {},
   "removeListener": function () {},
   "setCursorMode": function () {},
-  "setMaxListeners": function () {},
   "setTargetElement": function () {},
   "update": function () {}
 };
@@ -4081,13 +4198,13 @@ PIXI.Renderer.__plugins.interaction.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.Renderer.__plugins.particle.prototype = {
   "_generateOneMoreBuffer": function () {},
@@ -4133,6 +4250,7 @@ PIXI.RopeGeometry.prototype = {
   "destroy": function () {},
   "dispose": function () {},
   "getAttribute": function () {},
+  "getBuffer": function () {},
   "getIndex": function () {},
   "getSize": function () {},
   "interleave": function () {},
@@ -4142,6 +4260,16 @@ PIXI.RopeGeometry.prototype = {
 PIXI.RoundedRectangle.prototype = {
   "clone": function () {},
   "contains": function () {}
+};
+PIXI.Runner.prototype = {
+  "add": function () {},
+  "contains": function () {},
+  "destroy": function () {},
+  "dispatch": function () {},
+  "emit": function () {},
+  "remove": function () {},
+  "removeAll": function () {},
+  "run": function () {}
 };
 PIXI.Shader.prototype = {
   "checkUniformExists": function () {},
@@ -4194,6 +4322,7 @@ PIXI.SimpleMesh.prototype = {
   "hitArea": function () {},
   "interactive": function () {},
   "interactiveChildren": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "name": function () {},
   "off": function () {},
@@ -4210,7 +4339,6 @@ PIXI.SimpleMesh.prototype = {
   "renderAdvancedWebGL": function () {},
   "renderWebGL": function () {},
   "setChildIndex": function () {},
-  "setMaxListeners": function () {},
   "setParent": function () {},
   "setTransform": function () {},
   "sortChildren": function () {},
@@ -4225,13 +4353,13 @@ PIXI.SimpleMesh.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.SimplePlane.prototype = {
   "_accessibleActive": function () {},
@@ -4280,6 +4408,7 @@ PIXI.SimplePlane.prototype = {
   "hitArea": function () {},
   "interactive": function () {},
   "interactiveChildren": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "name": function () {},
   "off": function () {},
@@ -4296,7 +4425,6 @@ PIXI.SimplePlane.prototype = {
   "renderAdvancedWebGL": function () {},
   "renderWebGL": function () {},
   "setChildIndex": function () {},
-  "setMaxListeners": function () {},
   "setParent": function () {},
   "setTransform": function () {},
   "sortChildren": function () {},
@@ -4312,13 +4440,13 @@ PIXI.SimplePlane.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.SimpleRope.prototype = {
   "_accessibleActive": function () {},
@@ -4367,6 +4495,7 @@ PIXI.SimpleRope.prototype = {
   "hitArea": function () {},
   "interactive": function () {},
   "interactiveChildren": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "name": function () {},
   "off": function () {},
@@ -4383,7 +4512,6 @@ PIXI.SimpleRope.prototype = {
   "renderAdvancedWebGL": function () {},
   "renderWebGL": function () {},
   "setChildIndex": function () {},
-  "setMaxListeners": function () {},
   "setParent": function () {},
   "setTransform": function () {},
   "sortChildren": function () {},
@@ -4398,13 +4526,13 @@ PIXI.SimpleRope.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.Sprite.prototype = {
   "_accessibleActive": function () {},
@@ -4453,6 +4581,7 @@ PIXI.Sprite.prototype = {
   "hitArea": function () {},
   "interactive": function () {},
   "interactiveChildren": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "name": function () {},
   "off": function () {},
@@ -4469,7 +4598,6 @@ PIXI.Sprite.prototype = {
   "renderAdvancedWebGL": function () {},
   "renderWebGL": function () {},
   "setChildIndex": function () {},
-  "setMaxListeners": function () {},
   "setParent": function () {},
   "setTransform": function () {},
   "sortChildren": function () {},
@@ -4484,13 +4612,13 @@ PIXI.Sprite.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.SpriteMaskFilter.prototype = {
   "apply": function () {},
@@ -4562,6 +4690,7 @@ PIXI.Text.prototype = {
   "hitArea": function () {},
   "interactive": function () {},
   "interactiveChildren": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "name": function () {},
   "off": function () {},
@@ -4578,7 +4707,6 @@ PIXI.Text.prototype = {
   "renderAdvancedWebGL": function () {},
   "renderWebGL": function () {},
   "setChildIndex": function () {},
-  "setMaxListeners": function () {},
   "setParent": function () {},
   "setTransform": function () {},
   "sortChildren": function () {},
@@ -4595,13 +4723,13 @@ PIXI.Text.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.TextStyle.prototype = {
   "clone": function () {},
@@ -4615,6 +4743,7 @@ PIXI.Texture.prototype = {
   "destroy": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
@@ -4622,7 +4751,6 @@ PIXI.Texture.prototype = {
   "once": function () {},
   "removeAllListeners": function () {},
   "removeListener": function () {},
-  "setMaxListeners": function () {},
   "update": function () {},
   "updateUvs": function () {}
 };
@@ -4634,13 +4762,14 @@ PIXI.Texture.EMPTY.baseTexture.constructor.prototype = {
   "dispose": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
+  "loadSource": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
   "removeListener": function () {},
-  "setMaxListeners": function () {},
   "setRealSize": function () {},
   "setResolution": function () {},
   "setResource": function () {},
@@ -4652,25 +4781,25 @@ PIXI.Texture.EMPTY.baseTexture.constructor.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.Texture.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.Texture.WHITE.baseTexture.constructor.prototype = {
   "_refreshPOT": function () {},
@@ -4680,13 +4809,14 @@ PIXI.Texture.WHITE.baseTexture.constructor.prototype = {
   "dispose": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
+  "loadSource": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
   "removeListener": function () {},
-  "setMaxListeners": function () {},
   "setRealSize": function () {},
   "setResolution": function () {},
   "setResource": function () {},
@@ -4698,13 +4828,13 @@ PIXI.Texture.WHITE.baseTexture.constructor.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.Texture.WHITE.baseTexture.resource.constructor.prototype = {
   "bind": function () {},
@@ -4785,6 +4915,7 @@ PIXI.TilingSprite.prototype = {
   "hitArea": function () {},
   "interactive": function () {},
   "interactiveChildren": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "name": function () {},
   "off": function () {},
@@ -4801,7 +4932,6 @@ PIXI.TilingSprite.prototype = {
   "renderAdvancedWebGL": function () {},
   "renderWebGL": function () {},
   "setChildIndex": function () {},
-  "setMaxListeners": function () {},
   "setParent": function () {},
   "setTransform": function () {},
   "sortChildren": function () {},
@@ -4816,13 +4946,13 @@ PIXI.TilingSprite.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.TilingSpriteRenderer.prototype = {
   "constructor": function () {},
@@ -4966,6 +5096,7 @@ PIXI.interaction.InteractionManager.prototype = {
   "eventNames": function () {},
   "getInteractionDataForPointerId": function () {},
   "hitTest": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "mapPositionToPoint": function () {},
   "normalizeToPointerData": function () {},
@@ -4990,7 +5121,6 @@ PIXI.interaction.InteractionManager.prototype = {
   "removeEvents": function () {},
   "removeListener": function () {},
   "setCursorMode": function () {},
-  "setMaxListeners": function () {},
   "setTargetElement": function () {},
   "update": function () {}
 };
@@ -4998,13 +5128,13 @@ PIXI.interaction.InteractionManager.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
 };
 PIXI.interaction.InteractionTrackingData.prototype = {
   "_doSet": function () {}
@@ -5177,6 +5307,7 @@ PIXI.systems.ContextSystem.prototype = {
 };
 PIXI.systems.FilterSystem.prototype = {
   "applyFilter": function () {},
+  "calculateNormalizedScreenSpaceMatrix": function () {},
   "calculateScreenSpaceMatrix": function () {},
   "calculateSpriteMatrix": function () {},
   "constructor": function () {},
@@ -5264,7 +5395,9 @@ PIXI.systems.ShaderSystem.prototype = {
   "getglProgram": function () {},
   "reset": function () {},
   "setUniforms": function () {},
-  "syncUniformGroup": function () {}
+  "syncUniformGroup": function () {},
+  "syncUniforms": function () {},
+  "systemCheck": function () {}
 };
 PIXI.systems.StateSystem.prototype = {
   "constructor": function () {},
@@ -5322,13 +5455,20 @@ PIXI.utils.EventEmitter.prototype = {
   "addListener": function () {},
   "emit": function () {},
   "eventNames": function () {},
+  "listenerCount": function () {},
   "listeners": function () {},
   "off": function () {},
   "on": function () {},
   "once": function () {},
   "removeAllListeners": function () {},
-  "removeListener": function () {},
-  "setMaxListeners": function () {}
+  "removeListener": function () {}
+};
+PIXI.utils.url.Url.prototype = {
+  "format": function () {},
+  "parse": function () {},
+  "parseHost": function () {},
+  "resolve": function () {},
+  "resolveObject": function () {}
 };
 /**********************************************************************
  * End Generated Extern for PIXI
