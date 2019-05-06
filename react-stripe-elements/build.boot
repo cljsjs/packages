@@ -1,13 +1,13 @@
 (set-env!
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.10.3" :scope "test"]
-                 [cljsjs/stripe "2.0-0"]
+                 [cljsjs/stripe "3.0-0"]
                  [cljsjs/react "15.6.2-4"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.6.0")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "3.0.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/react-stripe-elements
