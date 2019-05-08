@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.26.0")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "0.29.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom  {:project     'cljsjs/commonmark
@@ -21,12 +21,14 @@
 
 (deftask package []
   (comp
-   (download  :url (str "https://codeload.github.com/jgm/commonmark.js/zip/" +lib-version+)
-              :checksum "CCBEE55FC8C4B03B7C539F12852CA27B"
-              :unzip true)
-   (sift :move {#"^commonmark.js.*/dist/commonmark.js" "cljsjs/development/commonmark.inc.js"})
-   (sift :move {#"^commonmark.js.*/dist/commonmark.min.js" "cljsjs/production/commonmark.min.inc.js"})
+   (download 
+     :url (format "https://unpkg.com/commonmark@%s/dist/commonmark.js" +lib-version+)
+     :target "cljsjs/commonmark/development/commonmark.inc.js")  
+   (download 
+     :url (format "https://unpkg.com/commonmark@%s/dist/commonmark.min.js" +lib-version+)
+     :target "cljsjs/commonmark/production/commonmark.min.inc.js")
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.commonmark")
    (pom)
-   (jar)))
+   (jar)
+   (validate-checksums)))
