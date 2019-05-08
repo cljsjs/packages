@@ -755,7 +755,7 @@ var PIXI = {
       "baseTexture": {
         "_batchEnabled": {},
         "_events": {
-          "loaded": {
+          "update": {
             "context": {},
             "fn": function () {},
             "once": {}
@@ -1290,7 +1290,7 @@ var PIXI = {
           "baseTexture": {
             "_batchEnabled": {},
             "_events": {
-              "loaded": {
+              "update": {
                 "context": {},
                 "fn": function () {},
                 "once": {}
@@ -1747,7 +1747,7 @@ var PIXI = {
       "baseTexture": {
         "_batchEnabled": {},
         "_events": {
-          "loaded": {
+          "update": {
             "context": {},
             "fn": function () {},
             "once": {}
