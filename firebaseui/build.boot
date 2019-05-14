@@ -1,11 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.10.3" :scope "test"]
-                  [cljsjs/firebase "4.3.0-1"]])
+                  [cljsjs/firebase "5.7.3-1"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.3.0")
+(def +lib-version+ "3.6.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -22,8 +22,9 @@
              :decompress true
              :compression-format "gz"
              :archive-format "tar")
-   (sift :move {#"package/dist/firebaseui.js" "cljsjs/development/firebaseui.inc.js"
-                #"package/dist/firebaseui.css" "cljsjs/development/firebaseui.inc.css"}
+   (sift :move {#"package/dist/firebaseui.js" "cljsjs/firebaseui/common/firebaseui.inc.js"
+                #"package/dist/firebaseui.css" "cljsjs/firebaseui/common/firebaseui.inc.css"
+                #"package/dist/externs/firebaseui-externs.js" "cljsjs/firebaseui/common/firebaseui-externs.ext.js"}
          :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.firebaseui")
    (pom)

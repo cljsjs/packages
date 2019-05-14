@@ -1,8 +1,8 @@
-# cljsjs/react-virtualized
+# cljsjs/body-scroll-lock
 
 [](dependency)
 ```clojure
-[cljsjs/react-virtualized "9.21.1-0"] ;; latest release
+[cljsjs/body-scroll-lock "2.6.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,9 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.react-virtualized))
+  (:require cljsjs.body-scroll-lock))
+
+(.disableBodyScroll js/bodyScrollLock "element-id")
 ```
 
-[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
+  [flibs]: https://github.com/clojure/clojurescript/wiki/Packaging-Foreign-Dependencies

@@ -6,7 +6,7 @@
 (require '[boot.task-helpers]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "4.0.1")
+(def +lib-version+ "4.0.2")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -26,7 +26,6 @@
 (deftask package []
  (comp
   (download :url (format (str "https://unpkg.com/moment-range@" +lib-version+ "/dist/moment-range.js"))
-            :checksum "E9EC840BF9A6D0C2A4A6104AB6FA3113"
             :unzip false)
    (sift :move {#"^moment-range.js" "cljsjs/moment-range/development/moment-range.inc.js"
                 #"^moment-range.js" "cljsjs/moment-range/production/moment-range.min.inc.js"})
@@ -34,4 +33,5 @@
    (deps-cljs :name "cljsjs.moment-range"
               :requires #{"cljsjs.moment"})
    (pom)
-   (jar)))
+   (jar)
+   (validate-checksums)))

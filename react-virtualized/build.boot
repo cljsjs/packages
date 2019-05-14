@@ -1,8 +1,8 @@
 (set-env!
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.10.3"  :scope "test"]
-                 [cljsjs/react "16.2.0-3"]
-                 [cljsjs/react-dom "16.2.0-3"]])
+                 [cljsjs/react "16.8.3-0"]
+                 [cljsjs/react-dom "16.8.3-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -10,8 +10,8 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "9.18.5")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "9.21.1")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/react-virtualized
@@ -39,7 +39,6 @@
 (deftask package []
          (comp
           (download :url (str "https://github.com/bvaughn/react-virtualized/archive/" +lib-version+ ".zip")
-                    :checksum "AAF908E718975E4579D92DE06F765FCE"
                     :unzip true)
           (build-react-virtualized)
           (sift :move {#"^react-virtualized-(.*)/dist/umd/react-virtualized.js$" "cljsjs/react-virtualized/development/react-virtualized.inc.js"
@@ -53,4 +52,5 @@
                                 "cljsjs.react.dom"])
           (pom)
 
-          (jar)))
+          (jar)
+		  (validate-checksums)))
