@@ -18,6 +18,8 @@ var ReactGiphySelector = {
     "defaultProps": {
       "footerStyle": {},
       "limit": {},
+      "containerClassName": {},
+      "containerStyle": {},
       "loaderContent": {},
       "loaderStyle": {},
       "queryFormSubmitContent": {},
@@ -28,6 +30,7 @@ var ReactGiphySelector = {
       "searchResultStyle": {},
       "searchResultsStyle": {},
       "showGiphyMark": {},
+      "preloadTrending": {},
       "sort": {},
       "suggestionStyle": {},
       "suggestions": {},
@@ -40,9 +43,11 @@ ReactGiphySelector.Selector.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "onQueryChange": function () {},
+  "onTrendingExecute": function () {},
   "onQueryExecute": function () {},
   "onSuggestionSelected": function () {},
   "render": function () {},
+  "componentDidMount": function () {},
   "setState": function () {}
 };
 /**********************************************************************
