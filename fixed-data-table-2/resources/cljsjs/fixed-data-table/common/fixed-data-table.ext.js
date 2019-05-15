@@ -4,7 +4,7 @@
  * Loaded JavaScripts:
      https://unpkg.com/react@15.6.1/dist/react.min.js
      https://unpkg.com/react-dom@15.6.1/dist/react-dom.min.js
-     https://unpkg.com/fixed-data-table-2@0.8.13/dist/fixed-data-table.min.js
+     https://unpkg.com/fixed-data-table-2@0.8.23/dist/fixed-data-table.min.js
  **********************************************************************/
 var FixedDataTable = {
   "Cell": {
@@ -269,6 +269,9 @@ FixedDataTable.ColumnGroup.prototype = {
   "setState": function () {}
 };
 FixedDataTable.Table.prototype = {
+  "UNSAFE_componentWillMount": function () {},
+  "UNSAFE_componentWillReceiveProps": function () {},
+  "UNSAFE_componentWillUpdate": function () {},
   "__reactAutoBindPairs": function () {},
   "_areColumnSettingsIdentical": function () {},
   "_calculateState": function () {},
