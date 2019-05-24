@@ -6,7 +6,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
   (def +lib-version+ "16.4.1")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/react-test-renderer-shallow
@@ -24,7 +24,7 @@
               :target "cljsjs/react-test-renderer-shallow/production/react-test-renderer-shallow.min.inc.js")
     (deps-cljs :provides ["react-test-renderer/shallow" "cljsjs.react.test-renderer.shallow"]
                :requires ["react"]
-               :global-exports '{react-test-renderer-shallow ShallowRenderer})
+               :global-exports '{react-test-renderer-shallow ReactShallowRenderer})
     (pom)
     (jar)
     (validate)))

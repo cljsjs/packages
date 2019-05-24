@@ -3,14 +3,14 @@
  * @const
  * @suppress {const|duplicate}
  */
-var ShallowRenderer = function() {}
+var ReactShallowRenderer = function() {}
 
 /**
  * @return {Object}
  */
-ShallowRenderer.prototype.render = function() {}
+ReactShallowRenderer.prototype.render = function() {}
 
 /**
  * @return {Object}
  */
-ShallowRenderer.prototype.getRenderOutput = function() {}
+ReactShallowRenderer.prototype.getRenderOutput = function() {}
