@@ -22,6 +22,7 @@ var ReactGiphySelector = {
       "containerStyle": {},
       "loaderContent": {},
       "loaderStyle": {},
+      "queryFormAutoFocus": {},
       "queryFormSubmitContent": {},
       "queryInputPlaceholder": {},
       "rating": {},
