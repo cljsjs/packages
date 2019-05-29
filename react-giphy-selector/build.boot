@@ -9,7 +9,7 @@
          '[boot.tmpdir :as tmpdir]
          '[clojure.java.io :as io])
 
-(def +lib-version+ "0.0.2")
+(def +lib-version+ "0.0.3")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
