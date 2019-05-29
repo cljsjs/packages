@@ -4,7 +4,7 @@ https://github.com/tshaddix/react-giphy-selector
 
 [](dependency)
 ```clojure
-[cljsjs/react-giphy-selector "0.0.2-0"] ;; latest release
+[cljsjs/react-giphy-selector "0.0.3-0"] ;; latest release
 ```
 [](/dependency)
 
