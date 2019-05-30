@@ -6,7 +6,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "4.0.0")
+(def +lib-version+ "4.0.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -19,33 +19,14 @@
 
 (deftask package []
   (comp
-   (run-commands :commands [["npm" "install" "--include-dev"]
-                            ["npm" "run" "build:dev"]
-                            ["npm" "run" "build:prod"]
-                            ["rm" "-rf" "./node_modules"]])
-   (sift :move {#".*material-ui.inc.js"     "cljsjs/material-ui/development/material-ui.inc.js"
-                #".*material-ui.min.inc.js" "cljsjs/material-ui/production/material-ui.min.inc.js"})
+    (download :url (str "https://unpkg.com/@material-ui/core@" +lib-version+ "/umd/material-ui.development.js")
+              :target "cljsjs/material-ui/development/material-ui.inc.js")
+    (download :url (str "https://unpkg.com/@material-ui/core@" +lib-version+ "/umd/material-ui.production.min.js")
+              :target "cljsjs/material-ui/production/material-ui.min.inc.js")
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :foreign-libs [{:file #"material-ui.inc.js"
-                              :file-min #"material-ui.min.inc.js"
-                              :provides ["@material-ui/core"
-                                         "@material-ui/core/styles"
-                                         "@material-ui/core/colors"
-                                         ;; old names
-                                         "material-ui"
-                                         "material-ui/styles"
-                                         "material-ui/colors"
-                                         "cljsjs.material-ui"]
-                              :global-exports '{;; new names
-                                                "@material-ui/core" MaterialUI
-                                                "@material-ui/core/styles" MaterialUIStyles
-                                                "@material-ui/core/colors" MaterialUIColors
-                                                ;; old names
-                                                "material-ui/styles" MaterialUIStyles
-                                                "material-ui/colors" MaterialUIColors
-                                                "material-ui" MaterialUI}
-                              :requires ["react" "react-dom"]}]
-              :externs [#"material-ui.ext.js"])
+   (deps-cljs :name "cljsjs.material-ui"
+              :requires ["cljsjs.react"
+                         "cljsjs.react.dom"])
    (pom)
    (jar)
    (validate-checksums)))
