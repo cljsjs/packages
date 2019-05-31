@@ -15,7 +15,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.material-ui))
+  (:require material-ui))
 ```
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps

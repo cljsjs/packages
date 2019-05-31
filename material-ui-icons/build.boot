@@ -38,4 +38,4 @@
               :externs [#"material-ui-icons.ext.js"])
    (pom)
    (jar)
-   (validate-checksums)))
+   (validate)))
