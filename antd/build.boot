@@ -7,7 +7,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.19.2")
+(def +lib-version+ "3.19.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -22,16 +22,24 @@
 (deftask package []
   (comp
    (download
-    :url (str "https://unpkg.com/antd@" +lib-version+ "/dist/antd-with-locales.js")
+    :url (str "https://cdnjs.cloudflare.com/ajax/libs/antd/"
+              +lib-version+
+              "/antd-with-locales.js")
     :unzip false)
    (download
-    :url (str "https://unpkg.com/antd@" +lib-version+ "/dist/antd-with-locales.min.js")
+    :url (str "https://cdnjs.cloudflare.com/ajax/libs/antd/"
+              +lib-version+
+              "/antd-with-locales.min.js")
     :unzip false)
    (download
-    :url (str "https://unpkg.com/antd@" +lib-version+ "/dist/antd.css")
+    :url (str "https://cdnjs.cloudflare.com/ajax/libs/antd/"
+              +lib-version+
+              "/antd.css")
     :unzip false)
    (download
-    :url (str "https://unpkg.com/antd@" +lib-version+ "/dist/antd.min.css")
+    :url (str "https://cdnjs.cloudflare.com/ajax/libs/antd/"
+              +lib-version+
+              "/antd.min.css")
     :unzip false)
    (sift
     :move {#"^antd-with-locales.js$" "cljsjs/antd/development/antd.inc.js"

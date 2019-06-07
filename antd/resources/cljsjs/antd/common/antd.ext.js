@@ -6,7 +6,7 @@
  * https://unpkg.com/react@16.8.3/umd/react.development.js
  * https://unpkg.com/react-dom@16.8.3/umd/react-dom.development.js
  * https://unpkg.com/moment@2.24.0/moment.js
- * https://unpkg.com/antd@3.19.2/dist/antd-with-locales.js
+ * https://unpkg.com/antd@3.19.0/dist/antd-with-locales.js
  *
  * and extern the `antd` JavaScript object
  *
@@ -689,8 +689,10 @@ var antd = {
   "Modal": {
     "confirm": function () {},
     "defaultProps": {
+      "cancelButtonDisabled": {},
       "confirmLoading": {},
       "maskTransitionName": {},
+      "okButtonDisabled": {},
       "okType": {},
       "transitionName": {},
       "visible": {},
@@ -7405,4 +7407,4 @@ antd.Upload.Dragger.prototype = {
 };
 /**********************************************************************
  * End Generated Extern for antd
- * /**********************************************************************/
+ /**********************************************************************/

@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/antd "3.19.2-0"] ;; latest release
+[cljsjs/antd "3.19.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -29,7 +29,7 @@ You would need to include the `antd` CSS file within your HTML file. The CSS fil
 
 You can also follow instructions for customization with LESS [here](https://ant.design/docs/react/customize-theme).
 
-As of `[cljsjs/antd "3.19.2-0"]`, the precompiled `antd` includes locales.
+As of `[cljsjs/antd "3.19.0-0"]`, the precompiled `antd` includes locales.
 Locales are present under the global `antd` object, *e.g.*:
 
 ```clojure
