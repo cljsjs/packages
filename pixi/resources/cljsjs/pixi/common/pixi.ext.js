@@ -755,6 +755,11 @@ var PIXI = {
       "baseTexture": {
         "_batchEnabled": {},
         "_events": {
+          "loaded": {
+            "context": {},
+            "fn": function () {},
+            "once": {}
+          },
           "update": {
             "context": {},
             "fn": function () {},
@@ -1290,6 +1295,11 @@ var PIXI = {
           "baseTexture": {
             "_batchEnabled": {},
             "_events": {
+              "loaded": {
+                "context": {},
+                "fn": function () {},
+                "once": {}
+              },
               "update": {
                 "context": {},
                 "fn": function () {},
@@ -1747,6 +1757,11 @@ var PIXI = {
       "baseTexture": {
         "_batchEnabled": {},
         "_events": {
+          "loaded": {
+            "context": {},
+            "fn": function () {},
+            "once": {}
+          },
           "update": {
             "context": {},
             "fn": function () {},
@@ -2341,6 +2356,7 @@ var PIXI = {
       "phone": {},
       "tablet": {}
     },
+    "isMobile": function () {},
     "other": {
       "blackberry": {},
       "blackberry10": {},
@@ -2445,7 +2461,8 @@ var PIXI = {
     "RenderTextureSystem": function () {},
     "ShaderSystem": function () {},
     "StateSystem": {
-      "checkBlendMode": function () {}
+      "checkBlendMode": function () {},
+      "checkPolygonOffset": function () {}
     },
     "StencilSystem": function () {},
     "TextureGCSystem": function () {},
@@ -2496,6 +2513,7 @@ var PIXI = {
         "phone": {},
         "tablet": {}
       },
+      "isMobile": function () {},
       "other": {
         "blackberry": {},
         "blackberry10": {},
@@ -3847,6 +3865,7 @@ PIXI.RenderTexture.prototype = {
   "removeAllListeners": function () {},
   "removeListener": function () {},
   "resize": function () {},
+  "setResolution": function () {},
   "update": function () {},
   "updateUvs": function () {}
 };
@@ -5253,9 +5272,7 @@ PIXI.resources.Resource.prototype = {
   "upload": function () {}
 };
 PIXI.resources.SVGResource.prototype = {
-  "_loadDataUri": function () {},
-  "_loadString": function () {},
-  "_loadXhr": function () {},
+  "_loadSvg": function () {},
   "bind": function () {},
   "constructor": function () {},
   "destroy": function () {},
