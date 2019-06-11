@@ -1,5 +1,9 @@
 # cljsjs/ag-grid - The JavaScript Datagrid for Enterprise
 
+> ## Latest version
+> From 19.0.0 onwards, ag-grid was packaged in a different way and
+> ag-grid was renamed ag-grid-community. You can find that package [here](https://github.com/cljsjs/packages/tree/master/ag-grid-community).
+
 React Toolbox depends on React with Addons, so, to be able to use it, you not only have to depend in
 cljsjs/ag-grid:
 
