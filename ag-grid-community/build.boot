@@ -8,8 +8,8 @@
          '[boot.util :refer [dosh]]
          '[clojure.java.io :as io])
 
-(def +lib-version+ "19.0.0")
-(def +lib-checksum+ "D904467925A64A9E000A57F471C59CDF")
+(def +lib-version+ "21.0.1")
+(def +lib-checksum+ "58D7CDD5F67F5DC00FC6A05E0F255FB5")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "ag-grid-community-%s" +lib-version+))
 
@@ -30,7 +30,7 @@
       :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (deftask download-lib []
-  (download :url (format "https://github.com/ceolter/ag-grid/archive/%s.zip" +lib-version+)
+  (download :url (format "https://github.com/ag-grid/ag-grid/archive/v%s.zip" +lib-version+)
             :checksum +lib-checksum+
             :unzip true))
 
@@ -39,7 +39,7 @@
    (download-lib)
    (sift :move {#".*ag-grid-community/dist/ag-grid-community.js"            "cljsjs/ag-grid-community/development/ag-grid-community.inc.js"
                 #".*ag-grid-community/dist/styles/ag-grid.css"              "cljsjs/ag-grid-community/development/ag-grid.inc.css"
-                #".*ag-grid-community/dist/styles/compiled-icons.css"       "cljsjs/ag-grid-community/development/compiled-icons.inc.css"
+                #".*dist/styles/compiled-icons.css"                         "cljsjs/ag-grid-community/development/compiled-icons.inc.css"
                 #".*ag-grid-community/dist/styles/ag-theme-balham.css"      "cljsjs/ag-grid-community/development/ag-theme-balham.inc.css"
                 #".*ag-grid-community/dist/styles/ag-theme-balham-dark.css" "cljsjs/ag-grid-community/development/ag-theme-balham-dark.inc.css"
                 #".*ag-grid-community/dist/styles/ag-theme-blue.css"        "cljsjs/ag-grid-community/development/ag-theme-blue.inc.css"
@@ -51,7 +51,6 @@
    (minify :in "cljsjs/ag-grid-community/development/ag-grid-community.inc.js"
            :out "cljsjs/ag-grid-community/production/ag-grid-community.min.inc.js"
            :lang :ecmascript5)
-
    (minify :in "cljsjs/ag-grid-community/development/ag-grid.inc.css"
            :out "cljsjs/ag-grid-community/production/ag-grid.min.inc.css")
    (minify :in "cljsjs/ag-grid-community/development/compiled-icons.inc.css"

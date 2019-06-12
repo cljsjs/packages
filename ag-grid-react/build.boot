@@ -11,8 +11,8 @@
          '[boot.util :refer [dosh]]
          '[clojure.java.io :as io])
 
-(def +lib-version+ "19.0.0")
-(def +lib-checksum+ "D904467925A64A9E000A57F471C59CDF")
+(def +lib-version+ "21.0.1")
+(def +lib-checksum+ "58D7CDD5F67F5DC00FC6A05E0F255FB5")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "ag-grid-%s/packages/ag-grid-react" +lib-version+))
 
@@ -33,7 +33,7 @@
       :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (deftask download-lib []
-  (download :url (format "https://github.com/ceolter/ag-grid/archive/%s.zip" +lib-version+)
+  (download :url (format "https://github.com/ag-grid/ag-grid/archive/v%s.zip" +lib-version+)
             :checksum +lib-checksum+
             :unzip true))
 
