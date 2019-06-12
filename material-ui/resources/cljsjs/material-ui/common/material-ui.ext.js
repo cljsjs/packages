@@ -9,6 +9,7 @@ var MaterialUI = {
     Breadcrumbs: function () { },
     Button: function () { },
     ButtonBase: function () { },
+	ButtonGroup: function () { },
     Card: function () { },
     CardActionArea: function () { },
     CardActions: function () { },
@@ -79,12 +80,8 @@ var MaterialUI = {
     RootRef: function () { },
     Select: function () { },
     Slide: function () { },
-    Slider: function () { },
     Snackbar: function () { },
     SnackbarContent: function () { },
-    SpeedDial: function () { },
-    SpeedDialAction: function () { },
-    SpeedDialIcon: function () { },
     Step: function () { },
     StepButton: function () { },
     StepConnector: function () { },
@@ -110,13 +107,8 @@ var MaterialUI = {
     ToggleButtonGroup: function () { },
     Toolbar: function () { },
     Tooltip: function () { },
-    TouchRipple: function () { },
     Typography: function () { },
-    Zoom: function () { },
-    withMobileDialog: function () { },
-    withWidth: function () { },
-    isWidthUp: function () { },
-    useMediaQuery: function () { }
+    Zoom: function () { }
 };
 
 var MaterialUIColors = {
@@ -431,17 +423,22 @@ var MaterialUIColors = {
 };
 
 var MaterialUIStyles = {
-    createGenerateClassName: function () { },
+    createMuiTheme: function () { },
     createStyles: function () { },
     makeStyles: function () { },
-    ServerStyleSheets: function () { },
     styled: function () { },
+    useMediaQuery: function () { },
+    useScrollTrigger: function () { },
+    withMobileDialog: function () { },
+    withStyles: function () { },
+    withWidth: function () { },
+    withTheme: function () { },
+    isWidthUp: function () { }
+    createGenerateClassName: function () { },
+    ServerStyleSheets: function () { },
     StylesProvider: function () { },
     ThemeProvider: function () { },
-    useTheme: function () { },
-    withStyles: function () { },
-    withTheme: function () { },
-    createMuiTheme: function () { },
+    useTheme: function () { },    
     jssPreset: function () { },
     responsiveFontSizes: function () { }
 };
