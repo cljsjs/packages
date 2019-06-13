@@ -158,3 +158,26 @@ UserManagerEvents.prototype = {
 
 /** @type {UserManagerEvents} */
 Oidc.UserManager.prototype.events;
+
+/** @record */
+function User() {};
+
+User.prototype = {
+    "id_token": function () {},
+    "session_state": function () {},
+    "access_token": function () {},
+    "refresh_token": function () {},
+    "token_type": function () {},
+    "scope": function () {},
+    "profile": function () {},
+    "expires_at": function () {},
+    "state": function () {},
+    "expires_in": function () {},
+    "expired": function () {},
+    "scopes": function () {},
+    "toStorageString": function () {},
+    "fromStorageString": function () {}
+};
+
+/** @type {User} */
+Oidc.UserManager.prototype.getUser;
