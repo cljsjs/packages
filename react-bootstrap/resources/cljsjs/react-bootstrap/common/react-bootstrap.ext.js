@@ -2,7 +2,7 @@
 // to regenerate from the tool:
 // first https://unpkg.com/react@16.8.6/umd/react.production.min.js
 // then https://unpkg.com/react-dom@16.8.6/umd/react-dom.production.min.js
-// then https://unpkg.com/react-bootstrap@1.0.0-beta.6/dist/react-bootstrap.min.js
+// then https://unpkg.com/react-bootstrap@1.0.0-beta.9/dist/react-bootstrap.min.js
 // and enter ReactBootstrap as the javascript object to extern
 
 /**********************************************************************
