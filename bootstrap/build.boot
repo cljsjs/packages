@@ -1,12 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.10.3" :scope "test"]
-                  [cljsjs/jquery    "1.9.1-0"] ])
+                  [cljsjs/jquery "3.4.0-0"] ])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.3.6")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "3.4.1")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom  {:project     'cljsjs/bootstrap
@@ -19,7 +19,7 @@
 (deftask package []
   (comp
    (download :url (str "https://github.com/twbs/bootstrap/releases/download/v" +lib-version+ "/bootstrap-" +lib-version+ "-dist.zip")
-             :checksum "229936b042baadfc9f167244575ffe12"
+             :checksum "b40f2ec8769ebee23a395fa2b907e4b4"
              :unzip true)
    (sift :move {#"^bootstrap-([\d\.]*)-dist/js/bootstrap.js" "cljsjs/bootstrap/development/bootstrap.inc.js"
                 #"^bootstrap-([\d\.]*)-dist/js/bootstrap.min.js" "cljsjs/bootstrap/production/bootstrap.min.inc.js"})
