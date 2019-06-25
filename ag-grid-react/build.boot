@@ -3,7 +3,7 @@
  :dependencies '[[cljsjs/boot-cljsjs "0.10.3" :scope "test"]
                  [cljsjs/react "16.0.0-0" :scope "provided"]
                  [cljsjs/react-dom "16.0.0-0" :scope "provided"]
-                 [cljsjs/ag-grid-community "19.0.0-0"]])
+                 [cljsjs/ag-grid-community "21.0.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -13,7 +13,7 @@
 
 (def +lib-version+ "21.0.1")
 (def +lib-checksum+ "58D7CDD5F67F5DC00FC6A05E0F255FB5")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 (def +lib-folder+ (format "ag-grid-%s/packages/ag-grid-react" +lib-version+))
 
 (defn- dosh-cmd [& args]
