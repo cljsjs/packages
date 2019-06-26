@@ -22,6 +22,11 @@
     (sift :move {#"^js-joda-([\d\.]+)/dist/js-joda\.js$" "cljsjs/js-joda/development/js-joda.inc.js"})
     (sift :move {#"^js-joda-([\d\.]+)/dist/js-joda\.min\.js$" "cljsjs/js-joda/production/js-joda.min.inc.js"})
     (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.js-joda")
-    (pom)
+    (deps-cljs 
+      :provides ["js-joda" "cljsjs.js-joda"]
+      :requires []
+      :global-exports '{js-joda JSJoda})
+    (pom :project 'cljsjs/js-joda
+      :dependencies [])
+    (show :fileset true)
     (jar)))
