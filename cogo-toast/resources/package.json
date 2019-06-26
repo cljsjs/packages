@@ -1,0 +1,18 @@
+{
+    "name": "@cljsjs/cogo-toast-bundle",
+    "private": true,
+    "scripts": {
+        "build:dev": "webpack --mode development",
+        "build:prod": "webpack --mode production --output-filename cogo-toast.min.inc.js"
+    },
+    "dependencies": {
+         "prop-types": "^15.7.2",
+         "cogo-toast": "3.1.0"
+    },
+    "devDependencies": {
+        "webpack": "4.29.0",
+        "webpack-command": "0.4.2",
+        "react": "16.8.3",
+        "react-dom": "16.8.3"
+    }
+}
