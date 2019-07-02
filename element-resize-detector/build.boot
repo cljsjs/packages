@@ -5,7 +5,7 @@
 (require '[boot.task.built-in :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.1.9")
+(def +lib-version+ "1.1.15")
 (def +version+ (str +lib-version+ "-1"))
 
 
@@ -20,7 +20,7 @@
 (deftask package []
   (comp
    (download :url (str "https://github.com/wnr/element-resize-detector/archive/" +lib-version+ ".zip")
-             :checksum "69f4c2122f430fbb265da8451dbf2317"
+             :checksum "6F72A56B914F0D463BF3511E1123991B"
              :unzip true)
    (show :fileset true) 
    (sift :move {#"^element-resize-detector-.*/dist/element-resize-detector.js" "cljsjs/element-resize-detector/development/element-resize-detector.inc.js"
