@@ -33,14 +33,15 @@ var p5 = {
   "Renderer2D": {
     "_copyHelper": function () {}
   },
-  "RendererGL": function () {},
+  "RendererGL": {
+    "_textBuffers": {}
+  },
   "Shader": function () {},
   "StringDict": function () {},
   "Table": function () {},
   "TableRow": function () {},
   "Texture": function () {},
   "TypedDict": function () {},
-  "ValidationError": function () {},
   "Vector": {
     "add": function () {},
     "cross": function () {},
@@ -59,7 +60,6 @@ var p5 = {
   "XML": function () {},
   "_friendlyError": function () {},
   "_friendlyFileLoadError": function () {},
-  "_friendlyParamError": function () {},
   "_validateParameters": function () {},
   "disableFriendlyErrors": {},
   "instance": {}
@@ -228,7 +228,6 @@ p5.prototype = {
   "_updatePRotations": function () {},
   "_updateTextMetrics": function () {},
   "_updateTouchCoords": function () {},
-  "_validateParameters": function () {},
   "abs": function () {},
   "accelerationX": function () {},
   "accelerationY": function () {},
@@ -265,6 +264,7 @@ p5.prototype = {
   "char": function () {},
   "circle": function () {},
   "clear": function () {},
+  "clearStorage": function () {},
   "color": function () {},
   "colorMode": function () {},
   "concat": function () {},
@@ -292,6 +292,7 @@ p5.prototype = {
   "day": function () {},
   "debugMode": function () {},
   "degrees": function () {},
+  "deltaTime": function () {},
   "deviceOrientation": function () {},
   "directionalLight": function () {},
   "displayDensity": function () {},
@@ -315,6 +316,7 @@ p5.prototype = {
   "fullscreen": function () {},
   "get": function () {},
   "getFrameRate": function () {},
+  "getItem": function () {},
   "getURL": function () {},
   "getURLParams": function () {},
   "getURLPath": function () {},
@@ -337,6 +339,7 @@ p5.prototype = {
   "keyIsPressed": function () {},
   "lerp": function () {},
   "lerpColor": function () {},
+  "lightFalloff": function () {},
   "lightness": function () {},
   "lights": function () {},
   "line": function () {},
@@ -422,6 +425,7 @@ p5.prototype = {
   "redraw": function () {},
   "registerMethod": function () {},
   "registerPreloadMethod": function () {},
+  "removeItem": function () {},
   "resetMatrix": function () {},
   "resetShader": function () {},
   "resizeCanvas": function () {},
@@ -468,6 +472,7 @@ p5.prototype = {
   "sq": function () {},
   "sqrt": function () {},
   "square": function () {},
+  "storeItem": function () {},
   "str": function () {},
   "stroke": function () {},
   "strokeCap": function () {},
@@ -584,7 +589,8 @@ p5.Geometry.prototype = {
   "averagePoleNormals": function () {},
   "computeFaces": function () {},
   "computeNormals": function () {},
-  "normalize": function () {}
+  "normalize": function () {},
+  "reset": function () {}
 };
 p5.Graphics.prototype = {
   "_setProperty": function () {},
@@ -808,6 +814,7 @@ p5.RendererGL.prototype = {
   "_initContext": function () {},
   "_initTessy": function () {},
   "_isOpenType": function () {},
+  "_prepareBuffers": function () {},
   "_quadraticCoefficients": function () {},
   "_renderText": function () {},
   "_resetContext": function () {},
@@ -976,10 +983,6 @@ p5.TypedDict.prototype = {
   "saveTable": function () {},
   "set": function () {},
   "size": function () {}
-};
-p5.ValidationError.prototype = {
-  "constructor": function () {},
-  "name": function () {}
 };
 p5.Vector.prototype = {
   "add": function () {},
