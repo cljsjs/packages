@@ -1,12 +1,12 @@
 (set-env!
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.10.3"  :scope "test"]
-                 [cljsjs/react "16.3.2-0"]
-                 [cljsjs/react-dom "16.3.2-0"]])
+                 [cljsjs/react "16.6.0-0"]
+                 [cljsjs/react-dom "16.6.0-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.4.0")
+(def +lib-version+ "4.2.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -27,12 +27,14 @@
                          "react-transition-group/TransitionGroup"
                          "react-transition-group/CSSTransition"
                          "react-transition-group/Transition"
+                         "react-transition-group/SwitchTransition"
                          "cljsjs.react-transition-group"]
               :requires ["react" "react-dom"]
               :global-exports '{react-transition-group ReactTransitionGroup
                                 react-transition-group/Transition ReactTransitionGroup.Transition
                                 react-transition-group/TransitionGroup ReactTransitionGroup.TransitionGroup
-                                react-transition-group/CSSTransition ReactTransitionGroup.CSSTransition})
+                                react-transition-group/CSSTransition ReactTransitionGroup.CSSTransition
+                                react-transition-group/SwitchTransition ReactTransitionGroup.SwitchTransition})
    (pom)
    (jar)
    (validate)))
