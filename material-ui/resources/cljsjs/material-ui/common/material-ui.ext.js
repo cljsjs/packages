@@ -80,6 +80,7 @@ var MaterialUI = {
     RootRef: function () { },
     Select: function () { },
     Slide: function () { },
+    Slider: function () { },
     Snackbar: function () { },
     SnackbarContent: function () { },
     Step: function () { },
@@ -102,6 +103,7 @@ var MaterialUI = {
     TableRow: function () { },
     TableSortLabel: function () { },
     Tabs: function () { },
+    TextareaAutosize: function () { },
     TextField: function () { },
     ToggleButton: function () { },
     ToggleButtonGroup: function () { },
@@ -438,7 +440,7 @@ var MaterialUIStyles = {
     ServerStyleSheets: function () { },
     StylesProvider: function () { },
     ThemeProvider: function () { },
-    useTheme: function () { },    
+    useTheme: function () { },
     jssPreset: function () { },
     responsiveFontSizes: function () { }
 };
