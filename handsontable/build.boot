@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.31.2")
+(def +lib-version+ "7.1.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,7 +18,7 @@
 (deftask package []
   (comp
    (download  :url      (format "https://github.com/handsontable/handsontable/archive/%s.zip" +lib-version+)
-              :checksum "6CF70AFD087195D66C60137B64BD6BC4"
+              :checksum "5F39E79C96AD9F4EF7E47C9AF83F5B08"
               :unzip    true)
    (sift      :move     {#"^handsontable.*/dist/handsontable\.full\.js$"    "cljsjs/handsontable/development/handsontable.full.inc.js"
                          #"^handsontable.*/dist/handsontable\.full\.css$"   "cljsjs/handsontable/development/handsontable.full.css"
