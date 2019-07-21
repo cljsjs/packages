@@ -6,7 +6,7 @@
         "build:prod": "webpack --mode production --output-filename material-ui.min.inc.js"
     },
     "dependencies": {
-        "@material-ui/core": "v4.2.0"
+        "@material-ui/core": "v4.2.1"
     },
     "devDependencies": {
         "webpack": "4.29.0",
