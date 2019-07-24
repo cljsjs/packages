@@ -1,6 +1,6 @@
-# cljsjs/material-ui
+# cljsjs/material-ui-pickers
 
-https://material-ui.com/
+https://material-ui-pickers.dev/
 
 
 [](dependency)
@@ -15,7 +15,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require material-ui))
+  (:require material-ui-pickers))
 ```
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps

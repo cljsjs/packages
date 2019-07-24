@@ -1,11 +1,11 @@
 # cljsjs/material-ui
 
-https://material-ui.com/
+https://github.com/dmtrKovalenko/date-io
 
 
 [](dependency)
 ```clojure
-[cljsjs/material-ui "4.2.0-0"] ;; latest release
+[cljsjs/date-io "1.3.8-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -15,7 +15,22 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require material-ui))
+  (:require date-io-moment))
+```
+
+```clojure
+(ns application.core
+  (:require date-io-date-fns))
+```
+
+```clojure
+(ns application.core
+  (:require date-io-luxon))
+```
+
+```clojure
+(ns application.core
+  (:require date-io-dayjs))
 ```
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps
