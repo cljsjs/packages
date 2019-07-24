@@ -1,0 +1,25 @@
+{
+    "name": "@cljsjs/date-io-bundle",
+    "private": true,
+    "scripts": {
+        "build:dev": "webpack --mode development",
+        "build:prod": "webpack --mode production --output-filename date-io.min.inc.js"
+    },
+    "dependencies": {
+        "@date-io/core": "v1.3.8",
+        "@date-io/moment": "v1.3.8",
+        "@date-io/date-fns": "v1.3.8",
+        "@date-io/luxon": "v1.3.8",
+        "@date-io/dayjs": "v1.3.8",
+        "@date-io/jalaali": "v1.3.8",
+        "@date-io/hijri": "v1.3.8",
+        "luxon": "^1.17.1",
+        "date-fns": "2.0.0-beta.2",
+        "moment": "^2.24.0",
+        "dayjs": "^1.8.15"
+    },
+    "devDependencies": {
+        "webpack": "4.29.0",
+        "webpack-command": "0.4.2"
+    }
+}
