@@ -6,7 +6,7 @@
  * https://unpkg.com/react@16.8.6/umd/react.development.js
  * https://unpkg.com/react-dom@16.8.6/umd/react-dom.development.js
  * https://unpkg.com/moment@2.24.0/moment.js
- * https://unpkg.com/antd@3.19.8/dist/antd-with-locales.js
+ * https://unpkg.com/antd@3.20.6/dist/antd-with-locales.js
  *
  * and extern the `antd` JavaScript object
  *
@@ -501,7 +501,6 @@ var antd = {
     },
     "TextArea": function () {},
     "defaultProps": {
-      "disabled": {},
       "type": {}
     },
     "propTypes": {
@@ -765,6 +764,7 @@ var antd = {
   "Pagination": function () {},
   "Popconfirm": {
     "defaultProps": {
+      "disabled": {},
       "icon": {
         "$$typeof": {},
         "_owner": {},
@@ -858,8 +858,7 @@ var antd = {
         }
       },
       "defaultProps": {
-        "buttonStyle": {},
-        "disabled": {}
+        "buttonStyle": {}
       }
     },
     "contextTypes": {
@@ -897,6 +896,14 @@ var antd = {
       "prefixCls": {
         "isRequired": function () {}
       }
+    }
+  },
+  "Result": {
+    "PRESENTED_IMAGE_403": function () {},
+    "PRESENTED_IMAGE_404": function () {},
+    "PRESENTED_IMAGE_500": function () {},
+    "defaultProps": {
+      "status": {}
     }
   },
   "Row": {
@@ -1097,6 +1104,7 @@ var antd = {
     }
   },
   "Switch": {
+    "__ANT_SWITCH": {},
     "propTypes": {
       "className": {
         "isRequired": function () {}
@@ -1221,7 +1229,6 @@ var antd = {
       "align": {
         "offset": {}
       },
-      "disabled": {},
       "disabledHours": {},
       "disabledMinutes": {},
       "disabledSeconds": {},
