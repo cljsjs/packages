@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.9.9")
+(def +lib-version+ "3.5.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -16,11 +16,12 @@
 
 (deftask package []
   (comp
-   (download :url (str "http://static.filestackapi.com/v3/filestack-" +lib-version+ ".js")
-             :checksum "0C5D4282C4136892883EB702C00452B8")
-   (sift :move {#"^filestack-\d+\.\d+\.\d+\.js$" "cljsjs/filestack/development/filestack.inc.js"})
-   (target)
+   (download :url (str "http://static.filestackapi.com/filestack-js/" +lib-version+ "/filestack.min.js"))
+   (sift :move {#"^filestack\.min\.js$" "cljsjs/filestack/development/filestack.inc.js"})
    (sift :include #{#"^cljsjs"})
+   (minify :in "cljsjs/filestack/development/filestack.inc.js"
+           :out "cljsjs/filestack/production/filestack.min.inc.js")
    (deps-cljs :name "cljsjs.filestack")
    (pom)
-   (jar)))
+   (jar)
+   (validate-checksums)))
