@@ -1,0 +1,18 @@
+{
+    "name": "@cljsjs/material-ui-pickers-bundle",
+    "private": true,
+    "scripts": {
+        "build:dev": "webpack --mode development",
+        "build:prod": "webpack --mode production --output-filename material-ui-pickers.min.inc.js"
+    },
+    "dependencies": {
+        "@material-ui/core": "v4.2.0",
+        "@material-ui/pickers": "v3.2.0"
+    },
+    "devDependencies": {
+        "webpack": "4.29.0",
+        "webpack-command": "0.4.2",
+        "react": "16.8.3",
+        "react-dom": "16.8.3"
+    }
+}
