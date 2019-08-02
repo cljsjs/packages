@@ -1,10 +1,10 @@
 (set-env!
-  :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.3"  :scope "test"]])
+ :resource-paths #{"resources"}
+ :dependencies '[[cljsjs/boot-cljsjs "0.10.3"  :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "5.0.4")
+(def +lib-version+ "5.1.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -17,14 +17,14 @@
 
 (deftask package []
   (comp
-    (download
-      :url (format "https://unpkg.com/pixi.js-legacy@%s/dist/pixi-legacy.min.js" +lib-version+)
-      :target "cljsjs/pixi-legacy/production/pixi-legacy.min.inc.js")
-    (download
-      :url (format "https://unpkg.com/pixi.js-legacy@%s/dist/pixi-legacy.js" +lib-version+)
-      :target "cljsjs/pixi-legacy/development/pixi-legacy.inc.js")
-    (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.pixi-legacy")
-    (pom)
-    (jar)
-    (validate-checksums)))
+   (download
+    :url (format "https://unpkg.com/pixi.js-legacy@%s/dist/pixi-legacy.min.js" +lib-version+)
+    :target "cljsjs/pixi-legacy/production/pixi-legacy.min.inc.js")
+   (download
+    :url (format "https://unpkg.com/pixi.js-legacy@%s/dist/pixi-legacy.js" +lib-version+)
+    :target "cljsjs/pixi-legacy/development/pixi-legacy.inc.js")
+   (sift :include #{#"^cljsjs"})
+   (deps-cljs :name "cljsjs.pixi-legacy")
+   (pom)
+   (jar)
+   (validate-checksums)))
