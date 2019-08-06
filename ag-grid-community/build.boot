@@ -10,7 +10,7 @@
 
 (def +lib-version+ "21.0.1")
 (def +lib-checksum+ "58D7CDD5F67F5DC00FC6A05E0F255FB5")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 (def +lib-folder+ (format "ag-grid-community-%s" +lib-version+))
 
 (defn- dosh-cmd [& args]
@@ -46,7 +46,8 @@
                 #".*ag-grid-community/dist/styles/ag-theme-bootstrap.css"   "cljsjs/ag-grid-community/development/ag-theme-bootstrap.inc.css"
                 #".*ag-grid-community/dist/styles/ag-theme-dark.css"        "cljsjs/ag-grid-community/development/ag-theme-dark.inc.css"
                 #".*ag-grid-community/dist/styles/ag-theme-fresh.css"       "cljsjs/ag-grid-community/development/ag-theme-fresh.inc.css"
-                #".*ag-grid-community/dist/styles/ag-theme-material.css"    "cljsjs/ag-grid-community/development/ag-theme-material.inc.css"})
+                #".*ag-grid-community/dist/styles/ag-theme-material.css"    "cljsjs/ag-grid-community/development/ag-theme-material.inc.css"
+                #".*ag-grid-community/src/styles/(.*)"                      "cljsjs/ag-grid-community/development/styles/$1"})
    (sift :include #{#"^cljsjs"})
    (minify :in "cljsjs/ag-grid-community/development/ag-grid-community.inc.js"
            :out "cljsjs/ag-grid-community/production/ag-grid-community.min.inc.js"
