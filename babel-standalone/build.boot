@@ -1,6 +1,6 @@
 (set-env!
   :resource-paths #{"src"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.3" :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.4" :scope "test"]
                   [org.clojure/clojurescript "1.9.456" :scope "provided"]
                   [org.clojure/data.json "0.2.6"]])
 
