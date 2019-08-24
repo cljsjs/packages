@@ -1,6 +1,35 @@
 /* Arranged according to https://tonejs.github.io/docs/ */
 
+/* BASE CLASS */
 var Tone = function() {};
+Tone.Offline = function() {}
+Tone.connectSeries = function() {}
+Tone.dbToGain = function() {}
+Tone.defaultArg = function() {}
+Tone.defaults = function() {}
+Tone.equalPowerScale = function() {}
+Tone.extend = function() {}
+Tone.gainToDb = function() {}
+Tone.immediate = function() {}
+Tone.intervalToFrequencyRatio = function() {}
+Tone.isArray = function() {}
+Tone.isBoolean = function() {}
+Tone.isDefined = function() {}
+Tone.isFunction = function() {}
+Tone.isNote = function() {}
+Tone.isNumber = function() {}
+Tone.isObject = function() {}
+Tone.isString = function() {}
+Tone.isUndef = function() {}
+Tone.loaded = function() {}
+Tone.now = function() {}
+Tone.start = function() {}
+Tone.prototype.context = {}
+Tone.prototype.receive = function() {}
+Tone.prototype.send = function() {}
+Tone.prototype.toFrequency = function() {}
+Tone.prototype.toSeconds = function() {}
+Tone.prototype.toTicks = function() {}
 
 /* EFFECT */
 Tone.Chorus = function() {}
@@ -2315,36 +2344,6 @@ Tone.Param.prototype.connect = function() {}
 Tone.Param.prototype.disconnect = function() {}
 Tone.Param.prototype.fan = function() {}
 Tone.Param.prototype.toMaster = function() {}
-
-Tone.Tone = function() {}
-Tone.Tone.Offline = function() {}
-Tone.Tone.connectSeries = function() {}
-Tone.Tone.dbToGain = function() {}
-Tone.Tone.defaultArg = function() {}
-Tone.Tone.defaults = function() {}
-Tone.Tone.equalPowerScale = function() {}
-Tone.Tone.extend = function() {}
-Tone.Tone.gainToDb = function() {}
-Tone.Tone.immediate = function() {}
-Tone.Tone.intervalToFrequencyRatio = function() {}
-Tone.Tone.isArray = function() {}
-Tone.Tone.isBoolean = function() {}
-Tone.Tone.isDefined = function() {}
-Tone.Tone.isFunction = function() {}
-Tone.Tone.isNote = function() {}
-Tone.Tone.isNumber = function() {}
-Tone.Tone.isObject = function() {}
-Tone.Tone.isString = function() {}
-Tone.Tone.isUndef = function() {}
-Tone.Tone.loaded = function() {}
-Tone.Tone.now = function() {}
-Tone.Tone.start = function() {}
-Tone.Tone.prototype.context = {}
-Tone.Tone.prototype.receive = function() {}
-Tone.Tone.prototype.send = function() {}
-Tone.Tone.prototype.toFrequency = function() {}
-Tone.Tone.prototype.toSeconds = function() {}
-Tone.Tone.prototype.toTicks = function() {}
 
 Tone.Timeline = function() {}
 Tone.Timeline.prototype.length = {}
