@@ -146,6 +146,7 @@ Sentry.Integrations.FunctionToString.prototype = {
 };
 Sentry.Integrations.GlobalHandlers.prototype = {
   "_eventFromGlobalHandler": function () {},
+  "_eventFromIncompleteRejection": function () {},
   "setupOnce": function () {}
 };
 Sentry.Integrations.InboundFilters.prototype = {
