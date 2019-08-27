@@ -1,6 +1,6 @@
 var ReactTestUtils = {};
 
-ReactTestUtils.renderIntoDocument = function () {};
+ReactTestUtils.act = function () {};
 ReactTestUtils.mockComponent = function () {};
 ReactTestUtils.isElement = function () {};
 ReactTestUtils.isElementOfType = function () {};
@@ -14,6 +14,7 @@ ReactTestUtils.scryRenderedDOMComponentsWithTag = function () {};
 ReactTestUtils.findRenderedDOMComponentWithTag = function () {};
 ReactTestUtils.scryRenderedComponentsWithType = function () {};
 ReactTestUtils.findRenderedComponentWithType = function () {};
+ReactTestUtils.renderIntoDocument = function () {};
 
 // http://facebook.github.io/react/docs/events.html
 ReactTestUtils.Simulate = {};
