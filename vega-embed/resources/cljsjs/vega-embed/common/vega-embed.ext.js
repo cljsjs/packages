@@ -304,12 +304,20 @@ var vegaEmbed = {
     "randomNormal": function () {},
     "randomUniform": function () {},
     "read": function () {},
+    "regressionExp": function () {},
+    "regressionLinear": function () {},
+    "regressionLoess": function () {},
+    "regressionLog": function () {},
+    "regressionPoly": function () {},
+    "regressionPow": function () {},
+    "regressionQuad": function () {},
     "renderModule": function () {},
     "repeat": function () {},
     "resetSVGClipId": function () {},
     "responseType": function () {},
     "runtime": function () {},
     "runtimeContext": function () {},
+    "sampleCurve": function () {},
     "scale": function () {},
     "sceneEqual": function () {},
     "sceneFromJSON": function () {},
@@ -499,7 +507,8 @@ var vegaEmbed = {
       "geoshape": {
         "Definition": {
           "metadata": {
-            "modifies": {}
+            "modifies": {},
+            "nomod": {}
           },
           "params": {},
           "type": {}
@@ -541,6 +550,15 @@ var vegaEmbed = {
           "type": {}
         }
       },
+      "kde": {
+        "Definition": {
+          "metadata": {
+            "generates": {}
+          },
+          "params": {},
+          "type": {}
+        }
+      },
       "key": function () {},
       "legendentries": function () {},
       "linkpath": {
@@ -553,6 +571,15 @@ var vegaEmbed = {
         }
       },
       "load": function () {},
+      "loess": {
+        "Definition": {
+          "metadata": {
+            "generates": {}
+          },
+          "params": {},
+          "type": {}
+        }
+      },
       "lookup": {
         "Definition": {
           "metadata": {
@@ -629,6 +656,15 @@ var vegaEmbed = {
       },
       "projection": function () {},
       "proxy": function () {},
+      "regression": {
+        "Definition": {
+          "metadata": {
+            "generates": {}
+          },
+          "params": {},
+          "type": {}
+        }
+      },
       "relay": function () {},
       "render": function () {},
       "resolvefilter": {
@@ -1545,6 +1581,18 @@ vegaEmbed.vega.transforms.joinaggregate.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
+vegaEmbed.vega.transforms.kde.prototype = {
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
+};
 vegaEmbed.vega.transforms.key.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
@@ -1581,6 +1629,18 @@ vegaEmbed.vega.transforms.linkpath.prototype = {
   "transform": function () {}
 };
 vegaEmbed.vega.transforms.load.prototype = {
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
+};
+vegaEmbed.vega.transforms.loess.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1778,6 +1838,18 @@ vegaEmbed.vega.transforms.projection.prototype = {
   "transform": function () {}
 };
 vegaEmbed.vega.transforms.proxy.prototype = {
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
+};
+vegaEmbed.vega.transforms.regression.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},

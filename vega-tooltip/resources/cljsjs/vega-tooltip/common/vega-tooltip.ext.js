@@ -20,7 +20,8 @@ var vegaTooltip = {
   "escapeHTML": function () {},
   "formatValue": function () {},
   "replacer": function () {},
-  "stringify": function () {}
+  "stringify": function () {},
+  "version": {}
 };
 /**********************************************************************
  * End Generated Extern for vegaTooltip
