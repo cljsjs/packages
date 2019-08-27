@@ -1,6 +1,6 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.3" :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.4" :scope "test"]
                   [cljsjs/jquery    "1.8.2-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])

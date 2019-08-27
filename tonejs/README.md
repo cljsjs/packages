@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/tonejs "0.8.0-1"] ;; latest release
+[cljsjs/tonejs "13.4.9-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -31,10 +31,9 @@ Here's an example of basic usage
 (def obj-synth (-> (new js/Tone.Synth synth-settings)
                    (.toMaster)))
 
-(def main ["D3" "+1"])
 (.log js/console synth-settings)
 (.log js/console (.-modulationFrequency (.-oscillator synth-settings)))
-(.triggerAttackRelease obj-synth main)
+(.triggerAttackRelease obj-synth "C4" "8n")
 
 ```
 

@@ -1,7 +1,6 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/boot-cljsjs "0.10.3" :scope "test"]
-                 [javax.xml.bind/jaxb-api "2.3.0"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.10.4" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 

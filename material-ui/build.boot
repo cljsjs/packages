@@ -1,12 +1,12 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/boot-cljsjs "0.10.3" :scope "test"]
-                 [cljsjs/react "16.8.3-0"]
-                 [cljsjs/react-dom "16.8.3-0"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.10.4" :scope "test"]
+                 [cljsjs/react "16.8.6-0"]
+                 [cljsjs/react-dom "16.8.6-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "4.3.0")
+(def +lib-version+ "4.3.3")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!

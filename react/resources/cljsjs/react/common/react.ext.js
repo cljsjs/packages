@@ -168,6 +168,11 @@ React.Component.prototype.replaceState = function(nextState, callback) {};
 React.Component.prototype.componentWillMount = function() {};
 
 /**
+ * @protected
+ */
+React.Component.prototype.UNSAFE_componentWillMount = function() {};
+
+/**
  * @param {Element} element
  * @protected
  */
@@ -178,6 +183,13 @@ React.Component.prototype.componentDidMount = function(element) {};
  * @protected
  */
 React.Component.prototype.componentWillReceiveProps = function(
+  nextProps) {};
+
+/**
+ * @param {Object} nextProps
+ * @protected
+ */
+React.Component.prototype.UNSAFE_componentWillReceiveProps = function(
   nextProps) {};
 
 /**
@@ -195,6 +207,14 @@ React.Component.prototype.shouldComponentUpdate = function(
  * @protected
  */
 React.Component.prototype.componentWillUpdate = function(
+  nextProps, nextState) {};
+
+/**
+ * @param {Object} nextProps
+ * @param {Object} nextState
+ * @protected
+ */
+React.Component.prototype.UNSAFE_componentWillUpdate = function(
   nextProps, nextState) {};
 
 /**
@@ -1929,3 +1949,7 @@ var Scheduler = {
   unstable_getFirstCallbackNode: function() {},
   unstable_now: function() {}
 };
+
+// 16.9
+
+React.Profiler = function () {};
