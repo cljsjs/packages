@@ -1,5 +1,12 @@
 # cljsjs/xlsx
 
+[](dependency)
+```clojure
+[cljsjs/xlsx "0.15.1-0"] ;; latest release
+```
+[](/dependency)
+
+
 https://sheetjs.com/
 
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature

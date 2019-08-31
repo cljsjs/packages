@@ -2,11 +2,11 @@
     "name": "@cljsjs/xlsx",
     "private": true,
     "scripts": {
-        "build:dev":        "browserify main.js                                 > xlsx.inc.js",
-        "build:prod":       "browserify main.js       -p [ minifyify --no-map ] > xlsx.min.inc.js"
+        "build:dev": "browserify main.js                                 > xlsx.inc.js",
+        "build:prod": "browserify main.js       -p [ minifyify --no-map ] > xlsx.min.inc.js"
     },
     "dependencies": {
-        "xlsx": "0.13.1"
+        "xlsx": "0.15.1"
     },
     "devDependencies": {
         "browserify": "16.1.0",
