@@ -1,12 +1,12 @@
 (set-env!
-  :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.4"  :scope "test"]
-                  [cljsjs/react "16.8.3-0"]
-                  [cljsjs/react-dom "16.8.3-0"]])
+ :resource-paths #{"resources"}
+ :dependencies '[[cljsjs/boot-cljsjs "0.10.4"  :scope "test"]
+                 [cljsjs/react "16.8.3-0"]
+                 [cljsjs/react-dom "16.8.3-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.3.0")
+(def +lib-version+ "3.3.2")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -24,13 +24,13 @@
 
 (deftask package []
   (comp
-    (download :url (str "https://unpkg.com/react-draggable@" +lib-version+ "/dist/react-draggable.min.js"))
-    (sift :move {#"^react-draggable.min.js$" "cljsjs/react-draggable/development/react-draggable.inc.js"})
-	(download :url (str "https://unpkg.com/react-draggable@" +lib-version+ "/dist/react-draggable.min.js"))
-    (sift :move {#"^react-draggable.min.js$" "cljsjs/react-draggable/production/react-draggable.min.inc.js"})
-    (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.react-draggable"
-               :requires ["cljsjs.react" "cljsjs.react.dom"])
-    (validate-checksums)
-    (pom)
-    (jar)))
+   (download :url (str "https://unpkg.com/react-draggable@" +lib-version+ "/dist/react-draggable.min.js"))
+   (sift :move {#"^react-draggable.min.js$" "cljsjs/react-draggable/development/react-draggable.inc.js"})
+   (download :url (str "https://unpkg.com/react-draggable@" +lib-version+ "/dist/react-draggable.min.js"))
+   (sift :move {#"^react-draggable.min.js$" "cljsjs/react-draggable/production/react-draggable.min.inc.js"})
+   (sift :include #{#"^cljsjs"})
+   (deps-cljs :name "cljsjs.react-draggable"
+              :requires ["cljsjs.react" "cljsjs.react.dom"])
+   (validate-checksums)
+   (pom)
+   (jar)))
