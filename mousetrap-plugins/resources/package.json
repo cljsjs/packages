@@ -1,0 +1,17 @@
+{
+    "name": "@cljsjs/mousetrap-plugins-bundle",
+    "private": true,
+    "scripts": {
+        "build:dev": "browserify main.js > mousetrap-plugins.inc.js",
+        "build:prod": "browserify main.js -p [ minifyify --no-map ] > mousetrap-plugins.min.inc.js"
+    },
+    "dependencies": {
+        "mousetrap": "v1.6.3",
+        "mousetrap-record": "v1.0.1",
+        "mousetrap-pause": "v1.0.0"
+    },
+    "devDependencies": {
+        "browserify": "16.5.0",
+        "minifyify": "7.3.5"
+    }
+}
