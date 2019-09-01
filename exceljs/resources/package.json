@@ -1,0 +1,15 @@
+{
+    "name": "@cljsjs/exceljs",
+    "private": true,
+    "scripts": {
+        "build:dev": "browserify main.js                                 > exceljs.inc.js",
+        "build:prod": "browserify main.js       -p [ minifyify --no-map ] > exceljs.min.inc.js"
+    },
+    "dependencies": {
+        "exceljs": "1.15.0"
+    },
+    "devDependencies": {
+        "browserify": "16.1.0",
+        "minifyify": "7.3.5"
+    }
+}
