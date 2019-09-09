@@ -1,21 +1,21 @@
 (set-env!
-  :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.4" :scope "test"]
-                  [cljsjs/react "16.8.6-0"]
-                  [cljsjs/react-dom "16.8.6-0"]])
+ :resource-paths #{"resources"}
+ :dependencies '[[cljsjs/boot-cljsjs "0.10.4" :scope "test"]
+                 [cljsjs/react "16.8.6-0"]
+                 [cljsjs/react-dom "16.8.6-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "4.2.1")
+(def +lib-version+ "4.4.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
-  pom {:project     'cljsjs/material-ui-icons
-       :version     +version+
-       :description "Material Design Svg Icons converted to Material-UI React components."
-       :url         "http://www.material-ui.com/"
-       :scm         {:url "https://github.com/cljsjs/packages"}
-       :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
+ pom {:project     'cljsjs/material-ui-icons
+      :version     +version+
+      :description "Material Design Svg Icons converted to Material-UI React components."
+      :url         "http://www.material-ui.com/"
+      :scm         {:url "https://github.com/cljsjs/packages"}
+      :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (deftask package []
   (comp

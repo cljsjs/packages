@@ -4,7 +4,7 @@ https://material-ui.com
 
 [](dependency)
 ```clojure
-[cljsjs/material-ui-icons "4.2.1-0"] ;; latest release
+[cljsjs/material-ui-icons "4.4.1-0"] ;; latest release
 ```
 [](/dependency)
 
