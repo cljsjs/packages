@@ -68,11 +68,9 @@ var ReactLeaflet = {
       "_context": {}
     },
     "_calculateChangedBits": {},
-    "_changedBits": {},
-    "_changedBits2": {},
     "_currentValue": {},
     "_currentValue2": {},
-    "_defaultValue": {}
+    "_threadCount": {}
   },
   "LeafletProvider": {
     "$$typeof": {},
@@ -81,16 +79,15 @@ var ReactLeaflet = {
       "Consumer": {},
       "Provider": {},
       "_calculateChangedBits": {},
-      "_changedBits": {},
-      "_changedBits2": {},
       "_currentValue": {},
       "_currentValue2": {},
-      "_defaultValue": {}
+      "_threadCount": {}
     }
   },
   "Map": function () {},
   "MapComponent": function () {},
   "MapControl": function () {},
+  "MapEvented": function () {},
   "MapLayer": function () {},
   "Marker": {
     "$$typeof": {},
@@ -165,141 +162,63 @@ var ReactLeaflet = {
       "displayName": {}
     }
   },
+  "useLeaflet": function () {},
   "withLeaflet": function () {}
 };
 ReactLeaflet.ControlledLayer.prototype = {
-  "addLayer": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
-  "removeLayer": function () {},
-  "render": function () {},
   "setState": function () {}
 };
 ReactLeaflet.DivOverlay.prototype = {
-  "bindLeafletEvents": function () {},
-  "componentDidMount": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "createLeafletElement": function () {},
-  "extractLeafletEvents": function () {},
-  "fireLeafletEvent": function () {},
   "forceUpdate": function () {},
-  "getOptions": function () {},
   "isReactComponent": function () {},
-  "onRender": function () {},
-  "render": function () {},
-  "setState": function () {},
-  "updateLeafletElement": function () {}
+  "setState": function () {}
 };
 ReactLeaflet.GridLayer.prototype = {
-  "bindLeafletEvents": function () {},
-  "componentDidMount": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "createLeafletElement": function () {},
-  "extractLeafletEvents": function () {},
-  "fireLeafletEvent": function () {},
   "forceUpdate": function () {},
-  "getOptions": function () {},
   "isReactComponent": function () {},
-  "render": function () {},
-  "setState": function () {},
-  "updateLeafletElement": function () {}
+  "setState": function () {}
 };
 ReactLeaflet.LayersControl.BaseLayer.prototype = {
-  "addLayer": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
-  "removeLayer": function () {},
-  "render": function () {},
   "setState": function () {}
 };
 ReactLeaflet.LayersControl.Overlay.prototype = {
-  "addLayer": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
-  "removeLayer": function () {},
-  "render": function () {},
   "setState": function () {}
 };
 ReactLeaflet.Map.prototype = {
-  "bindLeafletEvents": function () {},
-  "componentDidMount": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "createLeafletElement": function () {},
-  "extractLeafletEvents": function () {},
-  "fireLeafletEvent": function () {},
   "forceUpdate": function () {},
-  "getOptions": function () {},
   "isReactComponent": function () {},
-  "render": function () {},
-  "setState": function () {},
-  "shouldUpdateBounds": function () {},
-  "shouldUpdateCenter": function () {},
-  "updateLeafletElement": function () {}
+  "setState": function () {}
 };
 ReactLeaflet.MapComponent.prototype = {
-  "bindLeafletEvents": function () {},
-  "componentDidMount": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "extractLeafletEvents": function () {},
-  "fireLeafletEvent": function () {},
   "forceUpdate": function () {},
-  "getOptions": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
 };
 ReactLeaflet.MapControl.prototype = {
-  "componentDidMount": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "createLeafletElement": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
-  "render": function () {},
-  "setState": function () {},
-  "updateLeafletElement": function () {}
+  "setState": function () {}
+};
+ReactLeaflet.MapEvented.prototype = {
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
 };
 ReactLeaflet.MapLayer.prototype = {
-  "bindLeafletEvents": function () {},
-  "componentDidMount": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "createLeafletElement": function () {},
-  "extractLeafletEvents": function () {},
-  "fireLeafletEvent": function () {},
   "forceUpdate": function () {},
-  "getOptions": function () {},
   "isReactComponent": function () {},
-  "render": function () {},
-  "setState": function () {},
-  "updateLeafletElement": function () {}
+  "setState": function () {}
 };
 ReactLeaflet.Path.prototype = {
-  "bindLeafletEvents": function () {},
-  "componentDidMount": function () {},
-  "componentDidUpdate": function () {},
-  "componentWillUnmount": function () {},
-  "createLeafletElement": function () {},
-  "extractLeafletEvents": function () {},
-  "fireLeafletEvent": function () {},
   "forceUpdate": function () {},
-  "getOptions": function () {},
-  "getPathOptions": function () {},
   "isReactComponent": function () {},
-  "render": function () {},
-  "setState": function () {},
-  "setStyle": function () {},
-  "setStyleIfChanged": function () {},
-  "updateLeafletElement": function () {}
+  "setState": function () {}
 };
 /**********************************************************************
  * End Generated Extern for ReactLeaflet
