@@ -1,10 +1,10 @@
 (set-env!
-  :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.4"  :scope "test"]])
+ :resource-paths #{"resources"}
+ :dependencies '[[cljsjs/boot-cljsjs "0.10.4"  :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "5.9.2")
+(def +lib-version+ "5.12.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -17,13 +17,13 @@
 
 (deftask package []
   (comp
-    (download :url (str "https://github.com/d3/d3/releases/download/v" +lib-version+ "/d3.zip")
-              :unzip true)
-    (sift :move {#"^d3\.js"      "cljsjs/d3/development/d3.inc.js"
-                 #"^d3\.min\.js" "cljsjs/d3/production/d3.min.inc.js"})
-    (sift :include #{#"^cljsjs"})
-    (deps-cljs :provides ["d3" "cljsjs.d3"]
-               :global-exports '{d3 d3}) 
-    (pom)
-    (jar)
-	(validate-checksums)))
+   (download :url (str "https://github.com/d3/d3/releases/download/v" +lib-version+ "/d3.zip")
+             :unzip true)
+   (sift :move {#"^d3\.js"      "cljsjs/d3/development/d3.inc.js"
+                #"^d3\.min\.js" "cljsjs/d3/production/d3.min.inc.js"})
+   (sift :include #{#"^cljsjs"})
+   (deps-cljs :provides ["d3" "cljsjs.d3"]
+              :global-exports '{d3 d3})
+   (pom)
+   (jar)
+   (validate-checksums)))
