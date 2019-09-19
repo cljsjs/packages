@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "8.10.8")
+(def +lib-version+ "8.10.18")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,7 +18,7 @@
 (deftask package []
   (comp
     (download :url (format "https://github.com/googlei18n/libphonenumber/archive/v%s.zip" +lib-version+)
-              :checksum "584649705B795CCFBD9C554062F542B1"
+              :checksum "F7541FF62479666CCD9B2C5AB276B6B6"
               :unzip true)
     (show :fileset true)
     (sift :move {#"^libphonenumber-[\d\.]*/javascript/i18n/phonenumbers/" "cljsjs/libphonenumber/development/i18n/"})
