@@ -6,7 +6,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.8.2")
+(def +lib-version+ "1.10.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -19,9 +19,9 @@
 
 (deftask package []
   (comp
-   (download :url (format "https://unpkg.com/react-sortable-hoc@%s/dist/umd/react-sortable-hoc.js" +lib-version+)
+   (download :url (format "https://unpkg.com/react-sortable-hoc@%s/dist/react-sortable-hoc.umd.js" +lib-version+)
              :target "cljsjs/react-sortable-hoc/development/react-sortable-hoc.inc.js")
-   (download :url (format "https://unpkg.com/react-sortable-hoc@%s/dist/umd/react-sortable-hoc.min.js" +lib-version+)
+   (download :url (format "https://unpkg.com/react-sortable-hoc@%s/dist/react-sortable-hoc.umd.min.js" +lib-version+)
              :target "cljsjs/react-sortable-hoc/production/react-sortable-hoc.min.inc.js")
 
    (deps-cljs :name "cljsjs.react-sortable-hoc"
