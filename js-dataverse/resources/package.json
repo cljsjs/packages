@@ -1,0 +1,16 @@
+{
+    "name": "@cljsjs/js-dataverse-bundle",
+    "private": true,
+    "scripts": {
+        "build:dev": "webpack --mode development",
+        "build:prod": "webpack --mode production --output-filename js-dataverse.min.inc.js"
+    },
+    "dependencies": {
+        "js-dataverse": "1.0.17"
+    },
+    "devDependencies": {
+        "webpack": "4.39.2",
+        "webpack-command": "0.4.2",
+        "axios": "0.19.0"
+    }
+}
