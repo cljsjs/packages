@@ -659,6 +659,7 @@ var PIXI = {
               "dispose": function () { },
               "internal": {},
               "load": function () { },
+              "noSubImage": {},
               "onError": {
                 "_aliasCount": {},
                 "_name": {},
@@ -942,6 +943,7 @@ var PIXI = {
           "dispose": function () { },
           "internal": {},
           "load": function () { },
+          "noSubImage": {},
           "onError": {
             "_aliasCount": {},
             "_name": {},
@@ -1771,6 +1773,7 @@ var PIXI = {
           "dispose": function () { },
           "internal": {},
           "load": function () { },
+          "noSubImage": {},
           "onError": {
             "_aliasCount": {},
             "_name": {},
@@ -5113,6 +5116,7 @@ PIXI.systems.FramebufferSystem.prototype = {
   "destroy": function () { },
   "disposeAll": function () { },
   "disposeFramebuffer": function () { },
+  "forceStencil": function () { },
   "initFramebuffer": function () { },
   "reset": function () { },
   "resizeFramebuffer": function () { },
