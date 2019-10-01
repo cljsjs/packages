@@ -45,6 +45,48 @@ var ReactStripeElements = {
       }
     }
   },
+  "CardCvcElement": {
+    "contextTypes": {
+      "addElementsLoadListener": {
+        "isRequired": function () {}
+      },
+      "registerElement": {
+        "isRequired": function () {}
+      },
+      "unregisterElement": {
+        "isRequired": function () {}
+      }
+    },
+    "defaultProps": {
+      "className": {},
+      "id": {},
+      "onBlur": function () {},
+      "onChange": function () {},
+      "onFocus": function () {},
+      "onReady": function () {}
+    },
+    "displayName": {},
+    "propTypes": {
+      "className": {
+        "isRequired": function () {}
+      },
+      "id": {
+        "isRequired": function () {}
+      },
+      "onBlur": {
+        "isRequired": function () {}
+      },
+      "onChange": {
+        "isRequired": function () {}
+      },
+      "onFocus": {
+        "isRequired": function () {}
+      },
+      "onReady": {
+        "isRequired": function () {}
+      }
+    }
+  },
   "CardElement": {
     "contextTypes": {
       "addElementsLoadListener": {
@@ -363,7 +405,17 @@ var ReactStripeElements = {
 ReactStripeElements.CardCVCElement.prototype = {
   "_setupEventListeners": function () {},
   "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
+  "componentDidUpdate": function () {},
+  "componentWillUnmount": function () {},
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "render": function () {},
+  "setState": function () {}
+};
+ReactStripeElements.CardCvcElement.prototype = {
+  "_setupEventListeners": function () {},
+  "componentDidMount": function () {},
+  "componentDidUpdate": function () {},
   "componentWillUnmount": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
@@ -373,7 +425,7 @@ ReactStripeElements.CardCVCElement.prototype = {
 ReactStripeElements.CardElement.prototype = {
   "_setupEventListeners": function () {},
   "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
+  "componentDidUpdate": function () {},
   "componentWillUnmount": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
@@ -383,7 +435,7 @@ ReactStripeElements.CardElement.prototype = {
 ReactStripeElements.CardExpiryElement.prototype = {
   "_setupEventListeners": function () {},
   "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
+  "componentDidUpdate": function () {},
   "componentWillUnmount": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
@@ -393,7 +445,7 @@ ReactStripeElements.CardExpiryElement.prototype = {
 ReactStripeElements.CardNumberElement.prototype = {
   "_setupEventListeners": function () {},
   "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
+  "componentDidUpdate": function () {},
   "componentWillUnmount": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
@@ -410,7 +462,7 @@ ReactStripeElements.Elements.prototype = {
 ReactStripeElements.IbanElement.prototype = {
   "_setupEventListeners": function () {},
   "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
+  "componentDidUpdate": function () {},
   "componentWillUnmount": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
@@ -420,7 +472,7 @@ ReactStripeElements.IbanElement.prototype = {
 ReactStripeElements.IdealBankElement.prototype = {
   "_setupEventListeners": function () {},
   "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
+  "componentDidUpdate": function () {},
   "componentWillUnmount": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
@@ -429,7 +481,7 @@ ReactStripeElements.IdealBankElement.prototype = {
 };
 ReactStripeElements.PaymentRequestButtonElement.prototype = {
   "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
+  "componentDidUpdate": function () {},
   "componentWillUnmount": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
@@ -437,7 +489,7 @@ ReactStripeElements.PaymentRequestButtonElement.prototype = {
   "setState": function () {}
 };
 ReactStripeElements.StripeProvider.prototype = {
-  "componentWillReceiveProps": function () {},
+  "componentDidUpdate": function () {},
   "forceUpdate": function () {},
   "getChildContext": function () {},
   "isReactComponent": function () {},
