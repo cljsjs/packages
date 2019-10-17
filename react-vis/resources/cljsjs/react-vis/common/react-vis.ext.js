@@ -657,6 +657,31 @@ var reactVis = {
     },
     "requiresSVG": {}
   },
+  "ChartLabel": {
+    "defaultProps": {
+      "className": {},
+      "includeMargin": {},
+      "style": {},
+      "text": {},
+      "xPercent": {},
+      "yPercent": {}
+    },
+    "displayName": {},
+    "propTypes": {
+      "className": {
+        "isRequired": function () {}
+      },
+      "includeMargin": {
+        "isRequired": function () {}
+      },
+      "style": {
+        "isRequired": function () {}
+      },
+      "text": function () {},
+      "xPercent": function () {},
+      "yPercent": function () {}
+    }
+  },
   "CircularGridLines": {
     "defaultProps": {
       "centerX": {},
@@ -981,6 +1006,7 @@ var reactVis = {
       "animation": {},
       "className": {},
       "customComponent": {},
+      "size": {},
       "stack": {},
       "style": {}
     },
@@ -1000,6 +1026,15 @@ var reactVis = {
         "isRequired": function () {}
       },
       "marginTop": {
+        "isRequired": function () {}
+      },
+      "onValueMouseOut": {
+        "isRequired": function () {}
+      },
+      "onValueMouseOver": {
+        "isRequired": function () {}
+      },
+      "size": {
         "isRequired": function () {}
       },
       "style": {
@@ -1393,6 +1428,404 @@ var reactVis = {
         "isRequired": function () {}
       },
       "height": {
+        "isRequired": function () {}
+      },
+      "onNearestX": {
+        "isRequired": function () {}
+      },
+      "onNearestXY": {
+        "isRequired": function () {}
+      },
+      "onSeriesClick": {
+        "isRequired": function () {}
+      },
+      "onSeriesMouseOut": {
+        "isRequired": function () {}
+      },
+      "onSeriesMouseOver": {
+        "isRequired": function () {}
+      },
+      "onSeriesRightClick": {
+        "isRequired": function () {}
+      },
+      "onValueClick": {
+        "isRequired": function () {}
+      },
+      "onValueMouseOut": {
+        "isRequired": function () {}
+      },
+      "onValueMouseOver": {
+        "isRequired": function () {}
+      },
+      "onValueRightClick": {
+        "isRequired": function () {}
+      },
+      "opacityBaseValue": {
+        "isRequired": function () {}
+      },
+      "opacityDistance": {
+        "isRequired": function () {}
+      },
+      "opacityDomain": {
+        "isRequired": function () {}
+      },
+      "opacityRange": {
+        "isRequired": function () {}
+      },
+      "opacityType": {
+        "isRequired": function () {}
+      },
+      "sizeBaseValue": {
+        "isRequired": function () {}
+      },
+      "sizeDistance": {
+        "isRequired": function () {}
+      },
+      "sizeDomain": {
+        "isRequired": function () {}
+      },
+      "sizeRange": {
+        "isRequired": function () {}
+      },
+      "sizeType": {
+        "isRequired": function () {}
+      },
+      "stack": {
+        "isRequired": function () {}
+      },
+      "style": {
+        "isRequired": function () {}
+      },
+      "width": {
+        "isRequired": function () {}
+      },
+      "xBaseValue": {
+        "isRequired": function () {}
+      },
+      "xDistance": {
+        "isRequired": function () {}
+      },
+      "xDomain": {
+        "isRequired": function () {}
+      },
+      "xRange": {
+        "isRequired": function () {}
+      },
+      "xType": {
+        "isRequired": function () {}
+      },
+      "yBaseValue": {
+        "isRequired": function () {}
+      },
+      "yDistance": {
+        "isRequired": function () {}
+      },
+      "yDomain": {
+        "isRequired": function () {}
+      },
+      "yRange": {
+        "isRequired": function () {}
+      },
+      "yType": {
+        "isRequired": function () {}
+      }
+    }
+  },
+  "HexbinSeries": {
+    "defaultProps": {
+      "colorRange": {},
+      "radius": {},
+      "xOffset": {},
+      "yOffset": {}
+    },
+    "displayName": {},
+    "propTypes": {
+      "_colorValue": {
+        "isRequired": function () {}
+      },
+      "_opacityValue": {
+        "isRequired": function () {}
+      },
+      "_sizeValue": {
+        "isRequired": function () {}
+      },
+      "_xValue": {
+        "isRequired": function () {}
+      },
+      "_yValue": {
+        "isRequired": function () {}
+      },
+      "animation": {
+        "isRequired": function () {}
+      },
+      "colorBaseValue": {
+        "isRequired": function () {}
+      },
+      "colorDistance": {
+        "isRequired": function () {}
+      },
+      "colorDomain": {
+        "isRequired": function () {}
+      },
+      "colorRange": {
+        "isRequired": function () {}
+      },
+      "colorType": {
+        "isRequired": function () {}
+      },
+      "data": {
+        "isRequired": function () {}
+      },
+      "getColor": {
+        "isRequired": function () {}
+      },
+      "getColor0": {
+        "isRequired": function () {}
+      },
+      "getOpacity": {
+        "isRequired": function () {}
+      },
+      "getOpacity0": {
+        "isRequired": function () {}
+      },
+      "getSize": {
+        "isRequired": function () {}
+      },
+      "getSize0": {
+        "isRequired": function () {}
+      },
+      "getX": {
+        "isRequired": function () {}
+      },
+      "getX0": {
+        "isRequired": function () {}
+      },
+      "getY": {
+        "isRequired": function () {}
+      },
+      "getY0": {
+        "isRequired": function () {}
+      },
+      "height": {
+        "isRequired": function () {}
+      },
+      "onNearestX": {
+        "isRequired": function () {}
+      },
+      "onNearestXY": {
+        "isRequired": function () {}
+      },
+      "onSeriesClick": {
+        "isRequired": function () {}
+      },
+      "onSeriesMouseOut": {
+        "isRequired": function () {}
+      },
+      "onSeriesMouseOver": {
+        "isRequired": function () {}
+      },
+      "onSeriesRightClick": {
+        "isRequired": function () {}
+      },
+      "onValueClick": {
+        "isRequired": function () {}
+      },
+      "onValueMouseOut": {
+        "isRequired": function () {}
+      },
+      "onValueMouseOver": {
+        "isRequired": function () {}
+      },
+      "onValueRightClick": {
+        "isRequired": function () {}
+      },
+      "opacityBaseValue": {
+        "isRequired": function () {}
+      },
+      "opacityDistance": {
+        "isRequired": function () {}
+      },
+      "opacityDomain": {
+        "isRequired": function () {}
+      },
+      "opacityRange": {
+        "isRequired": function () {}
+      },
+      "opacityType": {
+        "isRequired": function () {}
+      },
+      "radius": {
+        "isRequired": function () {}
+      },
+      "sizeBaseValue": {
+        "isRequired": function () {}
+      },
+      "sizeDistance": {
+        "isRequired": function () {}
+      },
+      "sizeDomain": {
+        "isRequired": function () {}
+      },
+      "sizeRange": {
+        "isRequired": function () {}
+      },
+      "sizeType": {
+        "isRequired": function () {}
+      },
+      "stack": {
+        "isRequired": function () {}
+      },
+      "style": {
+        "isRequired": function () {}
+      },
+      "width": {
+        "isRequired": function () {}
+      },
+      "xBaseValue": {
+        "isRequired": function () {}
+      },
+      "xDistance": {
+        "isRequired": function () {}
+      },
+      "xDomain": {
+        "isRequired": function () {}
+      },
+      "xRange": {
+        "isRequired": function () {}
+      },
+      "xType": {
+        "isRequired": function () {}
+      },
+      "yBaseValue": {
+        "isRequired": function () {}
+      },
+      "yDistance": {
+        "isRequired": function () {}
+      },
+      "yDomain": {
+        "isRequired": function () {}
+      },
+      "yRange": {
+        "isRequired": function () {}
+      },
+      "yType": {
+        "isRequired": function () {}
+      }
+    }
+  },
+  "Highlight": {
+    "defaultProps": {
+      "className": {},
+      "color": {},
+      "enableX": {},
+      "enableY": {},
+      "opacity": {}
+    },
+    "displayName": {},
+    "propTypes": {
+      "_colorValue": {
+        "isRequired": function () {}
+      },
+      "_opacityValue": {
+        "isRequired": function () {}
+      },
+      "_sizeValue": {
+        "isRequired": function () {}
+      },
+      "_xValue": {
+        "isRequired": function () {}
+      },
+      "_yValue": {
+        "isRequired": function () {}
+      },
+      "animation": {
+        "isRequired": function () {}
+      },
+      "colorBaseValue": {
+        "isRequired": function () {}
+      },
+      "colorDistance": {
+        "isRequired": function () {}
+      },
+      "colorDomain": {
+        "isRequired": function () {}
+      },
+      "colorRange": {
+        "isRequired": function () {}
+      },
+      "colorType": {
+        "isRequired": function () {}
+      },
+      "data": {
+        "isRequired": function () {}
+      },
+      "enableX": {
+        "isRequired": function () {}
+      },
+      "enableY": {
+        "isRequired": function () {}
+      },
+      "getColor": {
+        "isRequired": function () {}
+      },
+      "getColor0": {
+        "isRequired": function () {}
+      },
+      "getOpacity": {
+        "isRequired": function () {}
+      },
+      "getOpacity0": {
+        "isRequired": function () {}
+      },
+      "getSize": {
+        "isRequired": function () {}
+      },
+      "getSize0": {
+        "isRequired": function () {}
+      },
+      "getX": {
+        "isRequired": function () {}
+      },
+      "getX0": {
+        "isRequired": function () {}
+      },
+      "getY": {
+        "isRequired": function () {}
+      },
+      "getY0": {
+        "isRequired": function () {}
+      },
+      "height": {
+        "isRequired": function () {}
+      },
+      "highlightHeight": {
+        "isRequired": function () {}
+      },
+      "highlightWidth": {
+        "isRequired": function () {}
+      },
+      "highlightX": {
+        "isRequired": function () {}
+      },
+      "highlightY": {
+        "isRequired": function () {}
+      },
+      "onBrush": {
+        "isRequired": function () {}
+      },
+      "onBrushEnd": {
+        "isRequired": function () {}
+      },
+      "onBrushStart": {
+        "isRequired": function () {}
+      },
+      "onDrag": {
+        "isRequired": function () {}
+      },
+      "onDragEnd": {
+        "isRequired": function () {}
+      },
+      "onDragStart": {
         "isRequired": function () {}
       },
       "onNearestX": {
@@ -3441,6 +3874,9 @@ var reactVis = {
           "text": {},
           "ticks": {}
         },
+        "deselectedLineStyle": {
+          "strokeOpacity": {}
+        },
         "labels": {
           "fontSize": {},
           "textAnchor": {}
@@ -3457,6 +3893,9 @@ var reactVis = {
     "displayName": {},
     "propTypes": {
       "animation": {
+        "isRequired": function () {}
+      },
+      "brushing": {
         "isRequired": function () {}
       },
       "className": {
@@ -3500,6 +3939,7 @@ var reactVis = {
       "colorRange": {},
       "colorType": {},
       "hideInnerMostValues": {},
+      "renderAxesOverPolygons": {},
       "startingAngle": {},
       "style": {
         "axes": {
@@ -3542,6 +3982,21 @@ var reactVis = {
         "isRequired": function () {}
       },
       "margin": {
+        "isRequired": function () {}
+      },
+      "onSeriesMouseOut": {
+        "isRequired": function () {}
+      },
+      "onSeriesMouseOver": {
+        "isRequired": function () {}
+      },
+      "onValueMouseOut": {
+        "isRequired": function () {}
+      },
+      "onValueMouseOver": {
+        "isRequired": function () {}
+      },
+      "renderAxesOverPolygons": {
         "isRequired": function () {}
       },
       "startingAngle": {
@@ -5287,7 +5742,7 @@ reactVis.AreaSeries.prototype = {
   "isReactComponent": function () {},
   "setState": function () {}
 };
-reactVis.Borders.prototype = {
+reactVis.ChartLabel.prototype = {
   "forceUpdate": function () {},
   "isPureReactComponent": function () {},
   "isReactComponent": function () {},
@@ -5338,12 +5793,6 @@ reactVis.FlexibleXYPlot.prototype = {
   "isReactComponent": function () {},
   "setState": function () {}
 };
-reactVis.GradientDefs.prototype = {
-  "forceUpdate": function () {},
-  "isPureReactComponent": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
 reactVis.GridLines.prototype = {
   "forceUpdate": function () {},
   "isPureReactComponent": function () {},
@@ -5351,6 +5800,18 @@ reactVis.GridLines.prototype = {
   "setState": function () {}
 };
 reactVis.HeatmapSeries.prototype = {
+  "forceUpdate": function () {},
+  "isPureReactComponent": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
+reactVis.HexbinSeries.prototype = {
+  "forceUpdate": function () {},
+  "isPureReactComponent": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
+reactVis.Highlight.prototype = {
   "forceUpdate": function () {},
   "isPureReactComponent": function () {},
   "isReactComponent": function () {},
@@ -5439,16 +5900,6 @@ reactVis.PolygonSeries.prototype = {
   "isReactComponent": function () {},
   "setState": function () {}
 };
-reactVis.RadarChart.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-reactVis.RadialChart.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
 reactVis.RectSeries.prototype = {
   "forceUpdate": function () {},
   "isPureReactComponent": function () {},
@@ -5458,16 +5909,6 @@ reactVis.RectSeries.prototype = {
 reactVis.RectSeriesCanvas.prototype = {
   "forceUpdate": function () {},
   "isPureReactComponent": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-reactVis.Sankey.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-reactVis.Sunburst.prototype = {
-  "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
 };
