@@ -2,7 +2,7 @@
 // to regenerate from the tool:
 // first https://unpkg.com/react@16.8.6/umd/react.production.min.js
 // then https://unpkg.com/react-dom@16.8.6/umd/react-dom.production.min.js
-// then https://unpkg.com/react-bootstrap@1.0.0-beta.9/dist/react-bootstrap.min.js
+// then https://unpkg.com/react-bootstrap@1.0.0-beta.14/dist/react-bootstrap.min.js
 // and enter ReactBootstrap as the javascript object to extern
 
 /**********************************************************************
@@ -14,12 +14,22 @@ var ReactBootstrap = {
     "$$typeof": {},
     "Collapse": {
       "$$typeof": {},
+      "displayName": {},
       "render": function () {}
     },
     "Toggle": {
       "$$typeof": {},
       "render": function () {}
     },
+    "render": function () {}
+  },
+  "AccordionCollapse": {
+    "$$typeof": {},
+    "displayName": {},
+    "render": function () {}
+  },
+  "AccordionToggle": {
+    "$$typeof": {},
     "render": function () {}
   },
   "Alert": {
@@ -40,13 +50,16 @@ var ReactBootstrap = {
       "closeLabel": {},
       "show": {},
       "transition": {
+        "$$typeof": {},
         "defaultProps": {
           "appear": {},
           "in": {},
           "mountOnEnter": {},
           "timeout": {},
           "unmountOnExit": {}
-        }
+        },
+        "displayName": {},
+        "render": function () {}
       }
     },
     "displayName": {},
@@ -290,7 +303,11 @@ var ReactBootstrap = {
     "Item": {
       "$$typeof": {},
       "defaultProps": {
-        "as": function () {},
+        "as": {
+          "$$typeof": {},
+          "displayName": {},
+          "render": function () {}
+        },
         "disabled": {}
       },
       "displayName": {},
@@ -358,20 +375,27 @@ var ReactBootstrap = {
   "DropdownItem": {
     "$$typeof": {},
     "defaultProps": {
-      "as": function () {},
+      "as": {
+        "$$typeof": {},
+        "displayName": {},
+        "render": function () {}
+      },
       "disabled": {}
     },
     "displayName": {},
     "render": function () {}
   },
   "Fade": {
+    "$$typeof": {},
     "defaultProps": {
       "appear": {},
       "in": {},
       "mountOnEnter": {},
       "timeout": {},
       "unmountOnExit": {}
-    }
+    },
+    "displayName": {},
+    "render": function () {}
   },
   "Figure": {
     "$$typeof": {},
@@ -424,9 +448,6 @@ var ReactBootstrap = {
       },
       "Label": {
         "$$typeof": {},
-        "defaultProps": {
-          "type": {}
-        },
         "displayName": {},
         "render": function () {}
       },
@@ -482,6 +503,24 @@ var ReactBootstrap = {
       "displayName": {},
       "render": function () {}
     },
+    "Switch": {
+      "$$typeof": {},
+      "Input": {
+        "$$typeof": {},
+        "defaultProps": {
+          "type": {}
+        },
+        "displayName": {},
+        "render": function () {}
+      },
+      "Label": {
+        "$$typeof": {},
+        "displayName": {},
+        "render": function () {}
+      },
+      "displayName": {},
+      "render": function () {}
+    },
     "Text": {
       "$$typeof": {},
       "displayName": {},
@@ -505,9 +544,6 @@ var ReactBootstrap = {
     },
     "Label": {
       "$$typeof": {},
-      "defaultProps": {
-        "type": {}
-      },
       "displayName": {},
       "render": function () {}
     },
@@ -564,9 +600,13 @@ var ReactBootstrap = {
   },
   "Image": {
     "$$typeof": {},
-    "defaultProps": {},
+    "defaultProps": {
+      "fluid": {},
+      "rounded": {},
+      "roundedCircle": {},
+      "thumbnail": {}
+    },
     "displayName": {},
-    "propTypes": {},
     "render": function () {}
   },
   "InputGroup": {
@@ -591,46 +631,43 @@ var ReactBootstrap = {
       "displayName": {},
       "render": function () {}
     },
-    "defaultProps": {},
     "displayName": {},
-    "propTypes": {},
     "render": function () {}
   },
   "Jumbotron": {
     "$$typeof": {},
-    "defaultProps": {},
+    "defaultProps": {
+      "fluid": {}
+    },
     "displayName": {},
-    "propTypes": {},
     "render": function () {}
   },
   "ListGroup": {
     "$$typeof": {},
-    "ControlledComponent": {
-      "$$typeof": {},
-      "defaultProps": {},
-      "displayName": {},
-      "propTypes": {},
-      "render": function () {}
-    },
     "Item": {
       "$$typeof": {},
-      "defaultProps": {},
+      "defaultProps": {
+        "active": {},
+        "disabled": {},
+        "variant": {}
+      },
       "displayName": {},
-      "propTypes": {},
       "render": function () {}
     },
-    "deferControlTo": function () {},
-    "propTypes": {
-      "defaultActiveKey": function () {},
-      "innerRef": function () {}
+    "defaultProps": {
+      "variant": {}
     },
+    "displayName": {},
     "render": function () {}
   },
   "ListGroupItem": {
     "$$typeof": {},
-    "defaultProps": {},
+    "defaultProps": {
+      "active": {},
+      "disabled": {},
+      "variant": {}
+    },
     "displayName": {},
-    "propTypes": {},
     "render": function () {}
   },
   "Media": {
@@ -718,13 +755,16 @@ var ReactBootstrap = {
     "Link": {
       "$$typeof": {},
       "defaultProps": {
-        "as": function () {},
+        "as": {
+          "$$typeof": {},
+          "displayName": {},
+          "render": function () {}
+        },
         "disabled": {}
       },
       "displayName": {},
       "render": function () {}
     },
-    "_Nav": {},
     "defaultProps": {
       "fill": {},
       "justify": {}
@@ -752,7 +792,11 @@ var ReactBootstrap = {
     "Item": {
       "$$typeof": {},
       "defaultProps": {
-        "as": function () {},
+        "as": {
+          "$$typeof": {},
+          "displayName": {},
+          "render": function () {}
+        },
         "disabled": {}
       },
       "displayName": {},
@@ -790,9 +834,12 @@ var ReactBootstrap = {
       "displayName": {},
       "render": function () {}
     },
-    "defaultProps": {},
+    "defaultProps": {
+      "collapseOnSelect": {},
+      "expand": {},
+      "variant": {}
+    },
     "displayName": {},
-    "propTypes": {},
     "render": function () {}
   },
   "NavbarBrand": {
@@ -806,13 +853,16 @@ var ReactBootstrap = {
       "rootClose": {},
       "show": {},
       "transition": {
+        "$$typeof": {},
         "defaultProps": {
           "appear": {},
           "in": {},
           "mountOnEnter": {},
           "timeout": {},
           "unmountOnExit": {}
-        }
+        },
+        "displayName": {},
+        "render": function () {}
       }
     }
   },
@@ -860,16 +910,38 @@ var ReactBootstrap = {
   },
   "Popover": {
     "$$typeof": {},
+    "Content": {
+      "$$typeof": {},
+      "render": function () {}
+    },
+    "Title": {
+      "$$typeof": {},
+      "render": function () {}
+    },
     "defaultProps": {},
     "displayName": {},
     "propTypes": {},
     "render": function () {}
   },
+  "PopoverContent": {
+    "$$typeof": {},
+    "render": function () {}
+  },
+  "PopoverTitle": {
+    "$$typeof": {},
+    "render": function () {}
+  },
   "ProgressBar": {
     "$$typeof": {},
-    "defaultProps": {},
+    "defaultProps": {
+      "animated": {},
+      "isChild": {},
+      "max": {},
+      "min": {},
+      "srOnly": {},
+      "striped": {}
+    },
     "displayName": {},
-    "propTypes": {},
     "render": function () {}
   },
   "ResponsiveEmbed": {
@@ -881,37 +953,87 @@ var ReactBootstrap = {
   },
   "Row": {
     "$$typeof": {},
-    "defaultProps": {},
-    "displayName": {},
-    "propTypes": {},
+    "defaultProps": {
+      "noGutters": {}
+    },
     "render": function () {}
   },
-  "SafeAnchor": function () {},
+  "SafeAnchor": {
+    "$$typeof": {},
+    "displayName": {},
+    "render": function () {}
+  },
   "Spinner": {
     "$$typeof": {},
-    "defaultProps": {},
     "displayName": {},
-    "propTypes": {},
     "render": function () {}
   },
   "SplitButton": {
+    "$$typeof": {},
     "defaultProps": {
       "toggleLabel": {}
-    }
+    },
+    "displayName": {},
+    "propTypes": {
+      "bsPrefix": {
+        "isRequired": function () {}
+      },
+      "disabled": {
+        "isRequired": function () {}
+      },
+      "href": {
+        "isRequired": function () {}
+      },
+      "id": {
+        "isRequired": function () {}
+      },
+      "menuRole": {
+        "isRequired": function () {}
+      },
+      "onClick": {
+        "isRequired": function () {}
+      },
+      "rootCloseEvent": {
+        "isRequired": function () {}
+      },
+      "size": {
+        "isRequired": function () {}
+      },
+      "target": {
+        "isRequired": function () {}
+      },
+      "title": {
+        "isRequired": function () {}
+      },
+      "toggleLabel": {
+        "isRequired": function () {}
+      },
+      "variant": {
+        "isRequired": function () {}
+      }
+    },
+    "render": function () {}
   },
-  "Tab": {
-    "Container": {
+  "Switch": {
+    "$$typeof": {},
+    "Input": {
       "$$typeof": {},
-      "ControlledComponent": {
-        "getDerivedStateFromProps": function () {}
+      "defaultProps": {
+        "type": {}
       },
-      "deferControlTo": function () {},
-      "propTypes": {
-        "defaultActiveKey": function () {},
-        "innerRef": function () {}
-      },
+      "displayName": {},
       "render": function () {}
     },
+    "Label": {
+      "$$typeof": {},
+      "displayName": {},
+      "render": function () {}
+    },
+    "displayName": {},
+    "render": function () {}
+  },
+  "Tab": {
+    "Container": function () {},
     "Content": {
       "$$typeof": {},
       "defaultProps": {},
@@ -925,18 +1047,7 @@ var ReactBootstrap = {
       "render": function () {}
     }
   },
-  "TabContainer": {
-    "$$typeof": {},
-    "ControlledComponent": {
-      "getDerivedStateFromProps": function () {}
-    },
-    "deferControlTo": function () {},
-    "propTypes": {
-      "defaultActiveKey": function () {},
-      "innerRef": function () {}
-    },
-    "render": function () {}
-  },
+  "TabContainer": function () {},
   "TabContent": {
     "$$typeof": {},
     "defaultProps": {},
@@ -958,18 +1069,12 @@ var ReactBootstrap = {
   },
   "Tabs": {
     "$$typeof": {},
-    "ControlledComponent": {
-      "defaultProps": {
-        "mountOnEnter": {},
-        "unmountOnExit": {},
-        "variant": {}
-      }
+    "defaultProps": {
+      "mountOnEnter": {},
+      "unmountOnExit": {},
+      "variant": {}
     },
-    "deferControlTo": function () {},
-    "propTypes": {
-      "defaultActiveKey": function () {},
-      "innerRef": function () {}
-    },
+    "displayName": {},
     "render": function () {}
   },
   "ThemeProvider": function () {},
@@ -982,15 +1087,33 @@ var ReactBootstrap = {
       "render": function () {}
     },
     "Header": {
+      "$$typeof": {},
       "defaultProps": {
         "closeButton": {},
         "closeLabel": {}
       },
-      "displayName": {}
+      "displayName": {},
+      "render": function () {}
     },
-    "defaultProps": {},
+    "defaultProps": {
+      "animation": {},
+      "autohide": {},
+      "delay": {},
+      "show": {},
+      "transition": {
+        "$$typeof": {},
+        "defaultProps": {
+          "appear": {},
+          "in": {},
+          "mountOnEnter": {},
+          "timeout": {},
+          "unmountOnExit": {}
+        },
+        "displayName": {},
+        "render": function () {}
+      }
+    },
     "displayName": {},
-    "propTypes": {},
     "render": function () {}
   },
   "ToastBody": {
@@ -1000,11 +1123,13 @@ var ReactBootstrap = {
     "render": function () {}
   },
   "ToastHeader": {
+    "$$typeof": {},
     "defaultProps": {
       "closeButton": {},
       "closeLabel": {}
     },
-    "displayName": {}
+    "displayName": {},
+    "render": function () {}
   },
   "ToggleButton": {
     "$$typeof": {},
@@ -1030,18 +1155,13 @@ var ReactBootstrap = {
   },
   "Tooltip": {
     "$$typeof": {},
-    "defaultProps": {},
+    "defaultProps": {
+      "placement": {}
+    },
     "displayName": {},
-    "propTypes": {},
     "render": function () {}
-  }
-};
-ReactBootstrap.Alert.defaultProps.transition.prototype = {
-  "constructor": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "render": function () {},
-  "setState": function () {}
+  },
+  "useAccordionToggle": function () {}
 };
 ReactBootstrap.Collapse.prototype = {
   "_getScrollDimensionValue": function () {},
@@ -1052,57 +1172,7 @@ ReactBootstrap.Collapse.prototype = {
   "render": function () {},
   "setState": function () {}
 };
-ReactBootstrap.Dropdown.Item.defaultProps.as.prototype = {
-  "constructor": function () {},
-  "forceUpdate": function () {},
-  "handleClick": function () {},
-  "handleKeyDown": function () {},
-  "isReactComponent": function () {},
-  "render": function () {},
-  "setState": function () {}
-};
-ReactBootstrap.DropdownItem.defaultProps.as.prototype = {
-  "constructor": function () {},
-  "forceUpdate": function () {},
-  "handleClick": function () {},
-  "handleKeyDown": function () {},
-  "isReactComponent": function () {},
-  "render": function () {},
-  "setState": function () {}
-};
-ReactBootstrap.Fade.prototype = {
-  "constructor": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "render": function () {},
-  "setState": function () {}
-};
-ReactBootstrap.Nav.Link.defaultProps.as.prototype = {
-  "constructor": function () {},
-  "forceUpdate": function () {},
-  "handleClick": function () {},
-  "handleKeyDown": function () {},
-  "isReactComponent": function () {},
-  "render": function () {},
-  "setState": function () {}
-};
 ReactBootstrap.NavDropdown.prototype = {
-  "constructor": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "render": function () {},
-  "setState": function () {}
-};
-ReactBootstrap.NavDropdown.Item.defaultProps.as.prototype = {
-  "constructor": function () {},
-  "forceUpdate": function () {},
-  "handleClick": function () {},
-  "handleKeyDown": function () {},
-  "isReactComponent": function () {},
-  "render": function () {},
-  "setState": function () {}
-};
-ReactBootstrap.Overlay.defaultProps.transition.prototype = {
   "constructor": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
@@ -1156,54 +1226,7 @@ ReactBootstrap.Pagination.Prev.prototype = {
   "render": function () {},
   "setState": function () {}
 };
-ReactBootstrap.SafeAnchor.prototype = {
-  "constructor": function () {},
-  "forceUpdate": function () {},
-  "handleClick": function () {},
-  "handleKeyDown": function () {},
-  "isReactComponent": function () {},
-  "render": function () {},
-  "setState": function () {}
-};
-ReactBootstrap.SplitButton.prototype = {
-  "constructor": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "render": function () {},
-  "setState": function () {}
-};
 ReactBootstrap.Tab.prototype = {
-  "constructor": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "render": function () {},
-  "setState": function () {}
-};
-ReactBootstrap.Tab.Container.ControlledComponent.prototype = {
-  "constructor": function () {},
-  "forceUpdate": function () {},
-  "getKey": function () {},
-  "isReactComponent": function () {},
-  "render": function () {},
-  "setState": function () {}
-};
-ReactBootstrap.TabContainer.ControlledComponent.prototype = {
-  "constructor": function () {},
-  "forceUpdate": function () {},
-  "getKey": function () {},
-  "isReactComponent": function () {},
-  "render": function () {},
-  "setState": function () {}
-};
-ReactBootstrap.Tabs.ControlledComponent.prototype = {
-  "constructor": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "render": function () {},
-  "renderTab": function () {},
-  "setState": function () {}
-};
-ReactBootstrap.ThemeProvider.prototype = {
   "constructor": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},

@@ -7,7 +7,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.0.0-beta.9")
+(def +lib-version+ "1.0.0-beta.14")
 (def +version+ (str +lib-version+ "-0"))
 
 
