@@ -4,7 +4,7 @@ https://github.com/stripe/react-stripe-elements
 
 [](dependency)
 ```clojure
-[cljsjs/react-stripe-elements "3.0.0-0"] ;; latest release
+[cljsjs/react-stripe-elements "5.0.1-0"] ;; latest release
 ```
 [](/dependency)
 
