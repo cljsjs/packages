@@ -13,6 +13,7 @@ var echarts = {
   "PRIORITY": {
     "PROCESSOR": {
       "FILTER": {},
+      "SERIES_FILTER": {},
       "STATISTIC": {}
     },
     "VISUAL": {
@@ -191,11 +192,13 @@ var echarts = {
     "extendPath": function () { },
     "extendShape": function () { },
     "getFont": function () { },
+    "getShapeClass": function () { },
     "getTransform": function () { },
     "initProps": function () { },
     "makeImage": function () { },
     "makePath": function () { },
     "mergePath": function () { },
+    "registerShape": function () { },
     "resizePath": function () { },
     "setHoverStyle": function () { },
     "setLabelStyle": function () { },
@@ -396,7 +399,7 @@ echarts.List.prototype = {
   "wrapMethod": function () { }
 };
 echarts.Model.prototype = {
-  "__is_clz_0_0.898": function () { },
+  "__is_clz_0_0.573": function () { },
   "clone": function () { },
   "constructor": function () { },
   "customizeGetParent": function () { },
