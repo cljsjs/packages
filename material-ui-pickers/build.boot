@@ -1,12 +1,13 @@
 (set-env!
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.10.4" :scope "test"]
-                 [cljsjs/react "16.8.3-0"]
-                 [cljsjs/react-dom "16.8.3-0"]])
+                 [cljsjs/react "16.8.6-0"]
+                 [cljsjs/react-dom "16.8.3-0"]
+                 [cljsjs/material-ui "4.5.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.2.0")
+(def +lib-version+ "3.2.7")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -33,7 +34,7 @@
                                          "cljsjs.material-ui-pickers"]
                               :global-exports '{;; new names
                                                 "@material-ui/pickers" MaterialUIPickers}
-                              :requires ["react" "react-dom"]}]
+                              :requires ["react" "react-dom" "cljsjs.material-ui"]}]
               :externs [#"material-ui-pickers.ext.js"])
    (pom)
    (jar)

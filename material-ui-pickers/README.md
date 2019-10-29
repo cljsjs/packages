@@ -5,7 +5,7 @@ https://material-ui-pickers.dev/
 
 [](dependency)
 ```clojure
-[cljsjs/material-ui-pickers "3.2.0-0"] ;; latest release
+[cljsjs/material-ui-pickers "3.2.7-0"] ;; latest release
 ```
 [](/dependency)
 
