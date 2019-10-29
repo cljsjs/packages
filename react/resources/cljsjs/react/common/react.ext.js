@@ -1,5 +1,5 @@
 /**
- * @fileoverview Closure Compiler externs for Facebook React.js 15.0.0
+ * @fileoverview Closure Compiler externs for Facebook React.js 16.9.0
  * @see http://reactjs.org
  * @externs
  */
@@ -62,8 +62,11 @@ React.constructAndRenderComponent = function(constructor, props, container) {};
  * @param {string} id ID of the DOM element to render into.
  * @return {React.Component} Component instance rendered in the container node.
  */
-React.constructAndRenderComponentByID = function(componentConstructor, props,
-  id) {};
+React.constructAndRenderComponentByID = function(
+  componentConstructor,
+  props,
+  id
+) {};
 
 React.cloneElement = function(element, props) {};
 
@@ -182,15 +185,15 @@ React.Component.prototype.componentDidMount = function(element) {};
  * @param {Object} nextProps
  * @protected
  */
-React.Component.prototype.componentWillReceiveProps = function(
-  nextProps) {};
+React.Component.prototype.componentWillReceiveProps = function(nextProps) {};
 
 /**
  * @param {Object} nextProps
  * @protected
  */
 React.Component.prototype.UNSAFE_componentWillReceiveProps = function(
-  nextProps) {};
+  nextProps
+) {};
 
 /**
  * @param {Object} nextProps
@@ -199,7 +202,9 @@ React.Component.prototype.UNSAFE_componentWillReceiveProps = function(
  * @protected
  */
 React.Component.prototype.shouldComponentUpdate = function(
-  nextProps, nextState) {};
+  nextProps,
+  nextState
+) {};
 
 /**
  * @param {Object} nextProps
@@ -207,7 +212,9 @@ React.Component.prototype.shouldComponentUpdate = function(
  * @protected
  */
 React.Component.prototype.componentWillUpdate = function(
-  nextProps, nextState) {};
+  nextProps,
+  nextState
+) {};
 
 /**
  * @param {Object} nextProps
@@ -215,7 +222,9 @@ React.Component.prototype.componentWillUpdate = function(
  * @protected
  */
 React.Component.prototype.UNSAFE_componentWillUpdate = function(
-  nextProps, nextState) {};
+  nextProps,
+  nextState
+) {};
 
 /**
  * @param {Object} prevProps
@@ -224,7 +233,10 @@ React.Component.prototype.UNSAFE_componentWillUpdate = function(
  * @protected
  */
 React.Component.prototype.componentDidUpdate = function(
-  prevProps, prevState, rootNode) {};
+  prevProps,
+  prevState,
+  rootNode
+) {};
 
 /**
  * @protected
@@ -330,7 +342,6 @@ React.ReactAttribute.noValidate;
  * @type {boolean}
  */
 React.ReactAttribute.spellCheck;
-
 
 // http://facebook.github.io/react/docs/events.html
 
@@ -1880,7 +1891,7 @@ React.Context.prototype.Consumer = function() {};
 React.createRef = function() {};
 React.forwardRef = function() {};
 
-React.StrictMode = function () {};
+React.StrictMode = function() {};
 
 // https://github.com/facebook/react/blob/master/packages/shared/isTextInputElement.js#L13-L29
 // Closure will rename these properties during optimization
@@ -1890,7 +1901,7 @@ isTextInputElement.supportedInputTypes = {
   color: true,
   date: true,
   datetime: true,
-  'datetime-local': true,
+  "datetime-local": true,
   email: true,
   month: true,
   number: true,
@@ -1952,4 +1963,4 @@ var Scheduler = {
 
 // 16.9
 
-React.Profiler = function () {};
+React.Profiler = function() {};
