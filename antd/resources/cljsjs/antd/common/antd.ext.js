@@ -6,7 +6,7 @@
  * https://unpkg.com/react@16.9.0/umd/react.development.js
  * https://unpkg.com/react-dom@16.9.0/umd/react-dom.development.js
  * https://unpkg.com/moment@2.24.0/moment.js
- * https://unpkg.com/antd@3.23.4/dist/antd-with-locales.js
+ * https://unpkg.com/antd@3.24.3/dist/antd-with-locales.js
  *
  * and extern the `antd` JavaScript object
  *
@@ -240,7 +240,6 @@ var antd = {
       "allowClear": {},
       "disabled": {},
       "options": {},
-      "placeholder": {},
       "popupPlacement": {},
       "transitionName": {}
     }
@@ -659,17 +658,6 @@ var antd = {
         "className": {},
         "disabled": {},
         "style": {}
-      },
-      "propTypes": {
-        "className": {
-          "isRequired": function () {}
-        },
-        "rootPrefixCls": {
-          "isRequired": function () {}
-        },
-        "style": {
-          "isRequired": function () {}
-        }
       }
     },
     "Item": {
@@ -679,24 +667,7 @@ var antd = {
       "defaultProps": {
         "disabled": {}
       },
-      "isMenuItemGroup": {},
-      "propTypes": {
-        "className": {
-          "isRequired": function () {}
-        },
-        "index": {
-          "isRequired": function () {}
-        },
-        "renderMenuItem": {
-          "isRequired": function () {}
-        },
-        "rootPrefixCls": {
-          "isRequired": function () {}
-        },
-        "subMenuKey": {
-          "isRequired": function () {}
-        }
-      }
+      "isMenuItemGroup": {}
     },
     "SubMenu": {
       "contextTypes": {
@@ -1154,64 +1125,7 @@ var antd = {
     "ColumnGroup": {
       "__ANT_TABLE_COLUMN_GROUP": {}
     },
-    "defaultProps": {
-      "bordered": {},
-      "childrenColumnName": {},
-      "className": {},
-      "dataSource": {},
-      "indentSize": {},
-      "loading": {},
-      "locale": {},
-      "rowKey": {},
-      "showHeader": {},
-      "size": {},
-      "sortDirections": {},
-      "useFixedHeader": {}
-    },
-    "propTypes": {
-      "bordered": {
-        "isRequired": function () {}
-      },
-      "className": {
-        "isRequired": function () {}
-      },
-      "columns": {
-        "isRequired": function () {}
-      },
-      "dataSource": {
-        "isRequired": function () {}
-      },
-      "dropdownPrefixCls": {
-        "isRequired": function () {}
-      },
-      "getPopupContainer": {
-        "isRequired": function () {}
-      },
-      "loading": {
-        "isRequired": function () {}
-      },
-      "locale": {
-        "isRequired": function () {}
-      },
-      "onChange": {
-        "isRequired": function () {}
-      },
-      "prefixCls": {
-        "isRequired": function () {}
-      },
-      "rowSelection": {
-        "isRequired": function () {}
-      },
-      "size": {
-        "isRequired": function () {}
-      },
-      "sortDirections": {
-        "isRequired": function () {}
-      },
-      "useFixedHeader": {
-        "isRequired": function () {}
-      }
-    }
+    "displayName": {}
   },
   "Tabs": {
     "TabPane": {
@@ -1502,9 +1416,12 @@ var antd = {
     }
   },
   "Typography": {
+    "$$typeof": {},
     "Paragraph": function () {},
     "Text": function () {},
-    "Title": function () {}
+    "Title": function () {},
+    "displayName": {},
+    "render": function () {}
   },
   "Upload": {
     "Dragger": function () {},
@@ -2576,6 +2493,7 @@ var antd = {
         "titles": {}
       },
       "Upload": {
+        "downloadFile": {},
         "previewFile": {},
         "removeFile": {},
         "uploadError": {},
@@ -7414,6 +7332,7 @@ var antd = {
         "searchPlaceholder": {}
       },
       "Upload": {
+        "downloadFile": {},
         "previewFile": {},
         "removeFile": {},
         "uploadError": {},
@@ -7839,12 +7758,6 @@ antd.Menu.prototype = {
   "isReactComponent": function () {},
   "setState": function () {}
 };
-antd.Menu.Divider.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "render": function () {},
-  "setState": function () {}
-};
 antd.Menu.Item.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
@@ -7853,7 +7766,6 @@ antd.Menu.Item.prototype = {
 antd.Menu.ItemGroup.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
-  "render": function () {},
   "setState": function () {}
 };
 antd.Menu.SubMenu.prototype = {

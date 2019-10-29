@@ -7,7 +7,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.23.4")
+(def +lib-version+ "3.24.3")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -20,43 +20,28 @@
       :scm         {:url "https://github.com/cljsjs/packages"}})
 
 (deftask package []
-  (comp
+ (comp
    (download
-    :url (str "https://cdnjs.cloudflare.com/ajax/libs/antd/"
-              +lib-version+
-              "/antd-with-locales.js")
-    :unzip false)
+     :url (str "https://unpkg.com/antd@" +lib-version+ "/dist/antd-with-locales.js")
+     :target "cljsjs/antd/development/antd.inc.js")
    (download
-    :url (str "https://cdnjs.cloudflare.com/ajax/libs/antd/"
-              +lib-version+
-              "/antd-with-locales.min.js")
-    :unzip false)
+     :url (str "https://unpkg.com/antd@" +lib-version+ "/dist/antd.css")
+     :target "cljsjs/antd/development/antd.inc.css")
    (download
-    :url (str "https://cdnjs.cloudflare.com/ajax/libs/antd/"
-              +lib-version+
-              "/antd.css")
-    :unzip false)
+     :url (str "https://unpkg.com/antd@" +lib-version+ "/dist/antd-with-locales.min.js")
+     :target "cljsjs/antd/production/antd.min.inc.js")
    (download
-    :url (str "https://cdnjs.cloudflare.com/ajax/libs/antd/"
-              +lib-version+
-              "/antd.min.css")
-    :unzip false)
-   (sift
-    :move {#"^antd-with-locales.js$" "cljsjs/antd/development/antd.inc.js"
-           #"^antd-with-locales.min.js$" "cljsjs/antd/production/antd.min.inc.js"
-           #"^antd.css$" "cljsjs/antd/development/antd.inc.css"
-           #"^antd.min.css$" "cljsjs/antd/production/antd.min.inc.css"})
+     :url (str "https://unpkg.com/antd@" +lib-version+ "/dist/antd.min.css")
+     :target "cljsjs/antd/production/antd.min.inc.css")
 
    (replace-content
       :in "cljsjs/antd/development/antd.inc.js"
       :match #"\/\/\# sourceMappingURL=performance-now\.js\.map"
       :value "")
-
    (replace-content
       :in "cljsjs/antd/development/antd.inc.js"
       :match #"\/\/\# sourceMappingURL=antd-with-locales\.js\.map$"
       :value "")
-
    (replace-content
       :in "cljsjs/antd/production/antd.min.inc.js"
       :match #"\/\/\# sourceMappingURL=antd-with-locales\.min\.js\.map$"
