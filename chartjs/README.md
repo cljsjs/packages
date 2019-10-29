@@ -1,8 +1,8 @@
-# cljsjs/chart
+# cljsjs/chartjs
 
 [](dependency)
 ```clojure
-[cljsjs/chartjs "2.8.0-0"] ;; latest release
+[cljsjs/chartjs "2.9.1-0"] ;; latest release
 ```
 [](/dependency)
 

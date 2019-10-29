@@ -5,6 +5,7 @@
 var Chart = {
   "Animation": {
     "__super__": {
+      "_type": {},
       "hasValue": function () {},
       "initialize": function () {},
       "pivot": function () {},
@@ -18,6 +19,7 @@ var Chart = {
   "Chart": {
     "Animation": {
       "__super__": {
+        "_type": {},
         "hasValue": function () {},
         "initialize": function () {},
         "pivot": function () {},
@@ -52,6 +54,7 @@ var Chart = {
     },
     "Legend": {
       "__super__": {
+        "_type": {},
         "hasValue": function () {},
         "initialize": function () {},
         "pivot": function () {},
@@ -64,8 +67,23 @@ var Chart = {
     "LinearScaleBase": {
       "__super__": {
         "_autoSkip": function () {},
+        "_computeGridLineItems": function () {},
+        "_computeLabelItems": function () {},
+        "_configure": function () {},
+        "_convertTicksToLabels": function () {},
+        "_draw": function () {},
+        "_drawGrid": function () {},
+        "_drawLabels": function () {},
+        "_drawTitle": function () {},
+        "_getLabelSizes": function () {},
+        "_getLabels": function () {},
+        "_getMatchingVisibleMetas": function () {},
+        "_getScaleLabel": function () {},
         "_isVisible": function () {},
+        "_layers": function () {},
+        "_parseValue": function () {},
         "_tickSize": function () {},
+        "_type": {},
         "afterBuildTicks": function () {},
         "afterCalculateTickRotation": function () {},
         "afterDataLimits": function () {},
@@ -84,6 +102,7 @@ var Chart = {
         "calculateTickRotation": function () {},
         "constructor": {
           "__super__": {
+            "_type": {},
             "hasValue": function () {},
             "initialize": function () {},
             "pivot": function () {},
@@ -98,6 +117,7 @@ var Chart = {
         "fit": function () {},
         "getBasePixel": function () {},
         "getBaseValue": function () {},
+        "getDecimalForPixel": function () {},
         "getLabelForIndex": function () {},
         "getPadding": function () {},
         "getPixelForDecimal": function () {},
@@ -116,12 +136,14 @@ var Chart = {
         "setDimensions": function () {},
         "tooltipPosition": function () {},
         "transition": function () {},
-        "update": function () {}
+        "update": function () {},
+        "zeroLineIndex": {}
       },
       "extend": function () {}
     },
     "PluginBase": {
       "__super__": {
+        "_type": {},
         "hasValue": function () {},
         "initialize": function () {},
         "pivot": function () {},
@@ -134,6 +156,7 @@ var Chart = {
     "Radar": function () {},
     "Scale": {
       "__super__": {
+        "_type": {},
         "hasValue": function () {},
         "initialize": function () {},
         "pivot": function () {},
@@ -152,6 +175,7 @@ var Chart = {
     },
     "Title": {
       "__super__": {
+        "_type": {},
         "hasValue": function () {},
         "initialize": function () {},
         "pivot": function () {},
@@ -162,6 +186,7 @@ var Chart = {
     },
     "Tooltip": {
       "__super__": {
+        "_type": {},
         "hasValue": function () {},
         "initialize": function () {},
         "pivot": function () {},
@@ -200,10 +225,18 @@ var Chart = {
     "controllers": {
       "bar": {
         "__super__": {
+          "_configure": function () {},
+          "_dataElementOptions": {},
+          "_datasetElementOptions": {},
           "_getIndexScale": function () {},
           "_getIndexScaleId": function () {},
           "_getValueScale": function () {},
           "_getValueScaleId": function () {},
+          "_removeDatasetHoverStyle": function () {},
+          "_resolveDataElementOptions": function () {},
+          "_resolveDatasetElementOptions": function () {},
+          "_setDatasetHoverStyle": function () {},
+          "_update": function () {},
           "addElementAndReset": function () {},
           "addElements": function () {},
           "buildOrUpdateElements": function () {},
@@ -216,6 +249,7 @@ var Chart = {
           "getDataset": function () {},
           "getMeta": function () {},
           "getScaleForId": function () {},
+          "getStyle": function () {},
           "initialize": function () {},
           "insertElements": function () {},
           "linkScales": function () {},
@@ -236,10 +270,18 @@ var Chart = {
       },
       "bubble": {
         "__super__": {
+          "_configure": function () {},
+          "_dataElementOptions": {},
+          "_datasetElementOptions": {},
           "_getIndexScale": function () {},
           "_getIndexScaleId": function () {},
           "_getValueScale": function () {},
           "_getValueScaleId": function () {},
+          "_removeDatasetHoverStyle": function () {},
+          "_resolveDataElementOptions": function () {},
+          "_resolveDatasetElementOptions": function () {},
+          "_setDatasetHoverStyle": function () {},
+          "_update": function () {},
           "addElementAndReset": function () {},
           "addElements": function () {},
           "buildOrUpdateElements": function () {},
@@ -252,6 +294,7 @@ var Chart = {
           "getDataset": function () {},
           "getMeta": function () {},
           "getScaleForId": function () {},
+          "getStyle": function () {},
           "initialize": function () {},
           "insertElements": function () {},
           "linkScales": function () {},
@@ -272,10 +315,18 @@ var Chart = {
       },
       "doughnut": {
         "__super__": {
+          "_configure": function () {},
+          "_dataElementOptions": {},
+          "_datasetElementOptions": {},
           "_getIndexScale": function () {},
           "_getIndexScaleId": function () {},
           "_getValueScale": function () {},
           "_getValueScaleId": function () {},
+          "_removeDatasetHoverStyle": function () {},
+          "_resolveDataElementOptions": function () {},
+          "_resolveDatasetElementOptions": function () {},
+          "_setDatasetHoverStyle": function () {},
+          "_update": function () {},
           "addElementAndReset": function () {},
           "addElements": function () {},
           "buildOrUpdateElements": function () {},
@@ -288,6 +339,7 @@ var Chart = {
           "getDataset": function () {},
           "getMeta": function () {},
           "getScaleForId": function () {},
+          "getStyle": function () {},
           "initialize": function () {},
           "insertElements": function () {},
           "linkScales": function () {},
@@ -308,12 +360,19 @@ var Chart = {
       },
       "horizontalBar": {
         "__super__": {
+          "_configure": function () {},
+          "_dataElementOptions": {},
+          "_datasetElementOptions": {},
           "_getIndexScale": function () {},
           "_getIndexScaleId": function () {},
           "_getStacks": function () {},
           "_getValueScale": function () {},
           "_getValueScaleId": function () {},
-          "_resolveElementOptions": function () {},
+          "_removeDatasetHoverStyle": function () {},
+          "_resolveDataElementOptions": function () {},
+          "_resolveDatasetElementOptions": function () {},
+          "_setDatasetHoverStyle": function () {},
+          "_update": function () {},
           "_updateElementGeometry": function () {},
           "addElementAndReset": function () {},
           "addElements": function () {},
@@ -322,10 +381,18 @@ var Chart = {
           "calculateBarValuePixels": function () {},
           "constructor": {
             "__super__": {
+              "_configure": function () {},
+              "_dataElementOptions": {},
+              "_datasetElementOptions": {},
               "_getIndexScale": function () {},
               "_getIndexScaleId": function () {},
               "_getValueScale": function () {},
               "_getValueScaleId": function () {},
+              "_removeDatasetHoverStyle": function () {},
+              "_resolveDataElementOptions": function () {},
+              "_resolveDatasetElementOptions": function () {},
+              "_setDatasetHoverStyle": function () {},
+              "_update": function () {},
               "addElementAndReset": function () {},
               "addElements": function () {},
               "buildOrUpdateElements": function () {},
@@ -338,6 +405,7 @@ var Chart = {
               "getDataset": function () {},
               "getMeta": function () {},
               "getScaleForId": function () {},
+              "getStyle": function () {},
               "initialize": function () {},
               "insertElements": function () {},
               "linkScales": function () {},
@@ -360,6 +428,7 @@ var Chart = {
           "createMetaDataset": function () {},
           "dataElementType": {
             "__super__": {
+              "_type": {},
               "hasValue": function () {},
               "initialize": function () {},
               "pivot": function () {},
@@ -377,6 +446,7 @@ var Chart = {
           "getScaleForId": function () {},
           "getStackCount": function () {},
           "getStackIndex": function () {},
+          "getStyle": function () {},
           "initialize": function () {},
           "insertElements": function () {},
           "linkScales": function () {},
@@ -398,10 +468,18 @@ var Chart = {
       },
       "line": {
         "__super__": {
+          "_configure": function () {},
+          "_dataElementOptions": {},
+          "_datasetElementOptions": {},
           "_getIndexScale": function () {},
           "_getIndexScaleId": function () {},
           "_getValueScale": function () {},
           "_getValueScaleId": function () {},
+          "_removeDatasetHoverStyle": function () {},
+          "_resolveDataElementOptions": function () {},
+          "_resolveDatasetElementOptions": function () {},
+          "_setDatasetHoverStyle": function () {},
+          "_update": function () {},
           "addElementAndReset": function () {},
           "addElements": function () {},
           "buildOrUpdateElements": function () {},
@@ -414,6 +492,7 @@ var Chart = {
           "getDataset": function () {},
           "getMeta": function () {},
           "getScaleForId": function () {},
+          "getStyle": function () {},
           "initialize": function () {},
           "insertElements": function () {},
           "linkScales": function () {},
@@ -434,10 +513,18 @@ var Chart = {
       },
       "pie": {
         "__super__": {
+          "_configure": function () {},
+          "_dataElementOptions": {},
+          "_datasetElementOptions": {},
           "_getIndexScale": function () {},
           "_getIndexScaleId": function () {},
           "_getValueScale": function () {},
           "_getValueScaleId": function () {},
+          "_removeDatasetHoverStyle": function () {},
+          "_resolveDataElementOptions": function () {},
+          "_resolveDatasetElementOptions": function () {},
+          "_setDatasetHoverStyle": function () {},
+          "_update": function () {},
           "addElementAndReset": function () {},
           "addElements": function () {},
           "buildOrUpdateElements": function () {},
@@ -450,6 +537,7 @@ var Chart = {
           "getDataset": function () {},
           "getMeta": function () {},
           "getScaleForId": function () {},
+          "getStyle": function () {},
           "initialize": function () {},
           "insertElements": function () {},
           "linkScales": function () {},
@@ -470,10 +558,18 @@ var Chart = {
       },
       "polarArea": {
         "__super__": {
+          "_configure": function () {},
+          "_dataElementOptions": {},
+          "_datasetElementOptions": {},
           "_getIndexScale": function () {},
           "_getIndexScaleId": function () {},
           "_getValueScale": function () {},
           "_getValueScaleId": function () {},
+          "_removeDatasetHoverStyle": function () {},
+          "_resolveDataElementOptions": function () {},
+          "_resolveDatasetElementOptions": function () {},
+          "_setDatasetHoverStyle": function () {},
+          "_update": function () {},
           "addElementAndReset": function () {},
           "addElements": function () {},
           "buildOrUpdateElements": function () {},
@@ -486,6 +582,7 @@ var Chart = {
           "getDataset": function () {},
           "getMeta": function () {},
           "getScaleForId": function () {},
+          "getStyle": function () {},
           "initialize": function () {},
           "insertElements": function () {},
           "linkScales": function () {},
@@ -506,10 +603,18 @@ var Chart = {
       },
       "radar": {
         "__super__": {
+          "_configure": function () {},
+          "_dataElementOptions": {},
+          "_datasetElementOptions": {},
           "_getIndexScale": function () {},
           "_getIndexScaleId": function () {},
           "_getValueScale": function () {},
           "_getValueScaleId": function () {},
+          "_removeDatasetHoverStyle": function () {},
+          "_resolveDataElementOptions": function () {},
+          "_resolveDatasetElementOptions": function () {},
+          "_setDatasetHoverStyle": function () {},
+          "_update": function () {},
           "addElementAndReset": function () {},
           "addElements": function () {},
           "buildOrUpdateElements": function () {},
@@ -522,6 +627,7 @@ var Chart = {
           "getDataset": function () {},
           "getMeta": function () {},
           "getScaleForId": function () {},
+          "getStyle": function () {},
           "initialize": function () {},
           "insertElements": function () {},
           "linkScales": function () {},
@@ -542,10 +648,18 @@ var Chart = {
       },
       "scatter": {
         "__super__": {
+          "_configure": function () {},
+          "_dataElementOptions": {},
+          "_datasetElementOptions": {},
           "_getIndexScale": function () {},
           "_getIndexScaleId": function () {},
           "_getValueScale": function () {},
           "_getValueScaleId": function () {},
+          "_removeDatasetHoverStyle": function () {},
+          "_resolveDataElementOptions": function () {},
+          "_resolveDatasetElementOptions": function () {},
+          "_setDatasetHoverStyle": function () {},
+          "_update": function () {},
           "addElementAndReset": function () {},
           "addElements": function () {},
           "buildOrUpdateElements": function () {},
@@ -558,6 +672,7 @@ var Chart = {
           "getDataset": function () {},
           "getMeta": function () {},
           "getScaleForId": function () {},
+          "getStyle": function () {},
           "initialize": function () {},
           "insertElements": function () {},
           "linkScales": function () {},
@@ -635,6 +750,19 @@ var Chart = {
           "onComplete": function () {},
           "onProgress": function () {}
         },
+        "datasets": {
+          "bar": {
+            "barPercentage": {},
+            "categoryPercentage": {}
+          },
+          "horizontalBar": {
+            "barPercentage": {},
+            "categoryPercentage": {}
+          },
+          "scatter": {
+            "showLine": {}
+          }
+        },
         "defaultColor": {},
         "defaultFontColor": {},
         "defaultFontFamily": {},
@@ -693,6 +821,7 @@ var Chart = {
           }
         },
         "legend": {
+          "align": {},
           "display": {},
           "fullWidth": {},
           "labels": {
@@ -871,7 +1000,8 @@ var Chart = {
         },
         "scale": {
           "type": {}
-        }
+        },
+        "spanGaps": {}
       },
       "scale": {
         "display": {},
@@ -925,7 +1055,6 @@ var Chart = {
           "xAxes": {},
           "yAxes": {}
         },
-        "showLines": {},
         "tooltips": {
           "callbacks": {
             "label": function () {},
@@ -937,6 +1066,7 @@ var Chart = {
     "elements": {
       "Arc": {
         "__super__": {
+          "_type": {},
           "hasValue": function () {},
           "initialize": function () {},
           "pivot": function () {},
@@ -947,6 +1077,7 @@ var Chart = {
       },
       "Line": {
         "__super__": {
+          "_type": {},
           "hasValue": function () {},
           "initialize": function () {},
           "pivot": function () {},
@@ -957,6 +1088,7 @@ var Chart = {
       },
       "Point": {
         "__super__": {
+          "_type": {},
           "hasValue": function () {},
           "initialize": function () {},
           "pivot": function () {},
@@ -967,6 +1099,7 @@ var Chart = {
       },
       "Rectangle": {
         "__super__": {
+          "_type": {},
           "hasValue": function () {},
           "initialize": function () {},
           "pivot": function () {},
@@ -981,6 +1114,7 @@ var Chart = {
       "_alignPixel": function () {},
       "_calculatePadding": function () {},
       "_decimalPlaces": function () {},
+      "_deprecated": function () {},
       "_getParentNode": function () {},
       "_merger": function () {},
       "_mergerIf": function () {},
@@ -1099,6 +1233,10 @@ var Chart = {
       "isObject": function () {},
       "log10": function () {},
       "longestText": function () {},
+      "math": {
+        "_factorize": function () {},
+        "log10": function () {}
+      },
       "max": function () {},
       "measureText": function () {},
       "merge": function () {},
@@ -1118,6 +1256,11 @@ var Chart = {
       "removeEvent": function () {},
       "requestAnimFrame": function () {},
       "retinaScale": function () {},
+      "rtl": {
+        "getRtlAdapter": function () {},
+        "overrideTextDirection": function () {},
+        "restoreTextDirection": function () {}
+      },
       "scaleMerge": function () {},
       "sign": function () {},
       "splineCurve": function () {},
@@ -1184,8 +1327,23 @@ var Chart = {
         "category": {
           "__super__": {
             "_autoSkip": function () {},
+            "_computeGridLineItems": function () {},
+            "_computeLabelItems": function () {},
+            "_configure": function () {},
+            "_convertTicksToLabels": function () {},
+            "_draw": function () {},
+            "_drawGrid": function () {},
+            "_drawLabels": function () {},
+            "_drawTitle": function () {},
+            "_getLabelSizes": function () {},
+            "_getLabels": function () {},
+            "_getMatchingVisibleMetas": function () {},
+            "_getScaleLabel": function () {},
             "_isVisible": function () {},
+            "_layers": function () {},
+            "_parseValue": function () {},
             "_tickSize": function () {},
+            "_type": {},
             "afterBuildTicks": function () {},
             "afterCalculateTickRotation": function () {},
             "afterDataLimits": function () {},
@@ -1204,6 +1362,7 @@ var Chart = {
             "calculateTickRotation": function () {},
             "constructor": {
               "__super__": {
+                "_type": {},
                 "hasValue": function () {},
                 "initialize": function () {},
                 "pivot": function () {},
@@ -1218,6 +1377,7 @@ var Chart = {
             "fit": function () {},
             "getBasePixel": function () {},
             "getBaseValue": function () {},
+            "getDecimalForPixel": function () {},
             "getLabelForIndex": function () {},
             "getPadding": function () {},
             "getPixelForDecimal": function () {},
@@ -1236,7 +1396,8 @@ var Chart = {
             "setDimensions": function () {},
             "tooltipPosition": function () {},
             "transition": function () {},
-            "update": function () {}
+            "update": function () {},
+            "zeroLineIndex": {}
           },
           "_defaults": {
             "position": {}
@@ -1246,9 +1407,24 @@ var Chart = {
         "linear": {
           "__super__": {
             "_autoSkip": function () {},
+            "_computeGridLineItems": function () {},
+            "_computeLabelItems": function () {},
             "_computeTickLimit": function () {},
+            "_configure": function () {},
+            "_convertTicksToLabels": function () {},
+            "_draw": function () {},
+            "_drawGrid": function () {},
+            "_drawLabels": function () {},
+            "_drawTitle": function () {},
+            "_getLabelSizes": function () {},
+            "_getLabels": function () {},
+            "_getMatchingVisibleMetas": function () {},
+            "_getScaleLabel": function () {},
             "_isVisible": function () {},
+            "_layers": function () {},
+            "_parseValue": function () {},
             "_tickSize": function () {},
+            "_type": {},
             "afterBuildTicks": function () {},
             "afterCalculateTickRotation": function () {},
             "afterDataLimits": function () {},
@@ -1268,8 +1444,23 @@ var Chart = {
             "constructor": {
               "__super__": {
                 "_autoSkip": function () {},
+                "_computeGridLineItems": function () {},
+                "_computeLabelItems": function () {},
+                "_configure": function () {},
+                "_convertTicksToLabels": function () {},
+                "_draw": function () {},
+                "_drawGrid": function () {},
+                "_drawLabels": function () {},
+                "_drawTitle": function () {},
+                "_getLabelSizes": function () {},
+                "_getLabels": function () {},
+                "_getMatchingVisibleMetas": function () {},
+                "_getScaleLabel": function () {},
                 "_isVisible": function () {},
+                "_layers": function () {},
+                "_parseValue": function () {},
                 "_tickSize": function () {},
+                "_type": {},
                 "afterBuildTicks": function () {},
                 "afterCalculateTickRotation": function () {},
                 "afterDataLimits": function () {},
@@ -1288,25 +1479,26 @@ var Chart = {
                 "calculateTickRotation": function () {},
                 "constructor": {
                   "__super__": {
-                    "closure_uid_386273086": {},
+                    "_type": {},
+                    "closure_uid_671108055": {},
                     "hasValue": {
-                      "closure_uid_386273086": {}
+                      "closure_uid_671108055": {}
                     },
                     "initialize": {
-                      "closure_uid_386273086": {}
+                      "closure_uid_671108055": {}
                     },
                     "pivot": {
-                      "closure_uid_386273086": {}
+                      "closure_uid_671108055": {}
                     },
                     "tooltipPosition": {
-                      "closure_uid_386273086": {}
+                      "closure_uid_671108055": {}
                     },
                     "transition": {
-                      "closure_uid_386273086": {}
+                      "closure_uid_671108055": {}
                     }
                   },
                   "extend": {
-                    "closure_uid_386273086": {}
+                    "closure_uid_671108055": {}
                   }
                 },
                 "convertTicksToLabels": function () {},
@@ -1315,6 +1507,7 @@ var Chart = {
                 "fit": function () {},
                 "getBasePixel": function () {},
                 "getBaseValue": function () {},
+                "getDecimalForPixel": function () {},
                 "getLabelForIndex": function () {},
                 "getPadding": function () {},
                 "getPixelForDecimal": function () {},
@@ -1325,28 +1518,29 @@ var Chart = {
                 "getValueForPixel": function () {},
                 "handleMargins": function () {},
                 "hasValue": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "initialize": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "isFullWidth": function () {},
                 "isHorizontal": function () {},
                 "mergeTicksOptions": function () {},
                 "pivot": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "setDimensions": function () {},
                 "tooltipPosition": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "transition": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
-                "update": function () {}
+                "update": function () {},
+                "zeroLineIndex": {}
               },
               "extend": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -1355,6 +1549,7 @@ var Chart = {
             "fit": function () {},
             "getBasePixel": function () {},
             "getBaseValue": function () {},
+            "getDecimalForPixel": function () {},
             "getLabelForIndex": function () {},
             "getPadding": function () {},
             "getPixelForDecimal": function () {},
@@ -1368,25 +1563,26 @@ var Chart = {
             "handleMargins": function () {},
             "handleTickRangeOptions": function () {},
             "hasValue": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "initialize": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
             "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "transition": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
-            "update": function () {}
+            "update": function () {},
+            "zeroLineIndex": {}
           },
           "_defaults": {
             "position": {},
@@ -1395,14 +1591,29 @@ var Chart = {
             }
           },
           "extend": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           }
         },
         "logarithmic": {
           "__super__": {
             "_autoSkip": function () {},
+            "_computeGridLineItems": function () {},
+            "_computeLabelItems": function () {},
+            "_configure": function () {},
+            "_convertTicksToLabels": function () {},
+            "_draw": function () {},
+            "_drawGrid": function () {},
+            "_drawLabels": function () {},
+            "_drawTitle": function () {},
+            "_getLabelSizes": function () {},
+            "_getLabels": function () {},
+            "_getMatchingVisibleMetas": function () {},
+            "_getScaleLabel": function () {},
             "_isVisible": function () {},
+            "_layers": function () {},
+            "_parseValue": function () {},
             "_tickSize": function () {},
+            "_type": {},
             "afterBuildTicks": function () {},
             "afterCalculateTickRotation": function () {},
             "afterDataLimits": function () {},
@@ -1419,29 +1630,30 @@ var Chart = {
             "beforeUpdate": function () {},
             "buildTicks": function () {},
             "calculateTickRotation": function () {},
-            "closure_uid_386273086": {},
+            "closure_uid_671108055": {},
             "constructor": {
               "__super__": {
-                "closure_uid_386273086": {},
+                "_type": {},
+                "closure_uid_671108055": {},
                 "hasValue": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "initialize": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "pivot": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "tooltipPosition": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "transition": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 }
               },
-              "closure_uid_386273086": {},
+              "closure_uid_671108055": {},
               "extend": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -1450,6 +1662,7 @@ var Chart = {
             "fit": function () {},
             "getBasePixel": function () {},
             "getBaseValue": function () {},
+            "getDecimalForPixel": function () {},
             "getLabelForIndex": function () {},
             "getPadding": function () {},
             "getPixelForDecimal": function () {},
@@ -1460,25 +1673,26 @@ var Chart = {
             "getValueForPixel": function () {},
             "handleMargins": function () {},
             "hasValue": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "initialize": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
             "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "transition": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
-            "update": function () {}
+            "update": function () {},
+            "zeroLineIndex": {}
           },
           "_defaults": {
             "position": {},
@@ -1487,15 +1701,30 @@ var Chart = {
             }
           },
           "extend": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           }
         },
         "radialLinear": {
           "__super__": {
             "_autoSkip": function () {},
+            "_computeGridLineItems": function () {},
+            "_computeLabelItems": function () {},
             "_computeTickLimit": function () {},
+            "_configure": function () {},
+            "_convertTicksToLabels": function () {},
+            "_draw": function () {},
+            "_drawGrid": function () {},
+            "_drawLabels": function () {},
+            "_drawTitle": function () {},
+            "_getLabelSizes": function () {},
+            "_getLabels": function () {},
+            "_getMatchingVisibleMetas": function () {},
+            "_getScaleLabel": function () {},
             "_isVisible": function () {},
+            "_layers": function () {},
+            "_parseValue": function () {},
             "_tickSize": function () {},
+            "_type": {},
             "afterBuildTicks": function () {},
             "afterCalculateTickRotation": function () {},
             "afterDataLimits": function () {},
@@ -1512,12 +1741,27 @@ var Chart = {
             "beforeUpdate": function () {},
             "buildTicks": function () {},
             "calculateTickRotation": function () {},
-            "closure_uid_386273086": {},
+            "closure_uid_671108055": {},
             "constructor": {
               "__super__": {
                 "_autoSkip": function () {},
+                "_computeGridLineItems": function () {},
+                "_computeLabelItems": function () {},
+                "_configure": function () {},
+                "_convertTicksToLabels": function () {},
+                "_draw": function () {},
+                "_drawGrid": function () {},
+                "_drawLabels": function () {},
+                "_drawTitle": function () {},
+                "_getLabelSizes": function () {},
+                "_getLabels": function () {},
+                "_getMatchingVisibleMetas": function () {},
+                "_getScaleLabel": function () {},
                 "_isVisible": function () {},
+                "_layers": function () {},
+                "_parseValue": function () {},
                 "_tickSize": function () {},
+                "_type": {},
                 "afterBuildTicks": function () {},
                 "afterCalculateTickRotation": function () {},
                 "afterDataLimits": function () {},
@@ -1534,29 +1778,30 @@ var Chart = {
                 "beforeUpdate": function () {},
                 "buildTicks": function () {},
                 "calculateTickRotation": function () {},
-                "closure_uid_386273086": {},
+                "closure_uid_671108055": {},
                 "constructor": {
                   "__super__": {
-                    "closure_uid_386273086": {},
+                    "_type": {},
+                    "closure_uid_671108055": {},
                     "hasValue": {
-                      "closure_uid_386273086": {}
+                      "closure_uid_671108055": {}
                     },
                     "initialize": {
-                      "closure_uid_386273086": {}
+                      "closure_uid_671108055": {}
                     },
                     "pivot": {
-                      "closure_uid_386273086": {}
+                      "closure_uid_671108055": {}
                     },
                     "tooltipPosition": {
-                      "closure_uid_386273086": {}
+                      "closure_uid_671108055": {}
                     },
                     "transition": {
-                      "closure_uid_386273086": {}
+                      "closure_uid_671108055": {}
                     }
                   },
-                  "closure_uid_386273086": {},
+                  "closure_uid_671108055": {},
                   "extend": {
-                    "closure_uid_386273086": {}
+                    "closure_uid_671108055": {}
                   }
                 },
                 "convertTicksToLabels": function () {},
@@ -1565,6 +1810,7 @@ var Chart = {
                 "fit": function () {},
                 "getBasePixel": function () {},
                 "getBaseValue": function () {},
+                "getDecimalForPixel": function () {},
                 "getLabelForIndex": function () {},
                 "getPadding": function () {},
                 "getPixelForDecimal": function () {},
@@ -1575,29 +1821,30 @@ var Chart = {
                 "getValueForPixel": function () {},
                 "handleMargins": function () {},
                 "hasValue": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "initialize": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "isFullWidth": function () {},
                 "isHorizontal": function () {},
                 "mergeTicksOptions": function () {},
                 "pivot": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "setDimensions": function () {},
                 "tooltipPosition": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "transition": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
-                "update": function () {}
+                "update": function () {},
+                "zeroLineIndex": {}
               },
-              "closure_uid_386273086": {},
+              "closure_uid_671108055": {},
               "extend": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -1606,6 +1853,7 @@ var Chart = {
             "fit": function () {},
             "getBasePixel": function () {},
             "getBaseValue": function () {},
+            "getDecimalForPixel": function () {},
             "getLabelForIndex": function () {},
             "getPadding": function () {},
             "getPixelForDecimal": function () {},
@@ -1619,25 +1867,26 @@ var Chart = {
             "handleMargins": function () {},
             "handleTickRangeOptions": function () {},
             "hasValue": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "initialize": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
             "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "transition": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
-            "update": function () {}
+            "update": function () {},
+            "zeroLineIndex": {}
           },
           "_defaults": {
             "angleLines": {
@@ -1667,14 +1916,29 @@ var Chart = {
             }
           },
           "extend": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           }
         },
         "time": {
           "__super__": {
             "_autoSkip": function () {},
+            "_computeGridLineItems": function () {},
+            "_computeLabelItems": function () {},
+            "_configure": function () {},
+            "_convertTicksToLabels": function () {},
+            "_draw": function () {},
+            "_drawGrid": function () {},
+            "_drawLabels": function () {},
+            "_drawTitle": function () {},
+            "_getLabelSizes": function () {},
+            "_getLabels": function () {},
+            "_getMatchingVisibleMetas": function () {},
+            "_getScaleLabel": function () {},
             "_isVisible": function () {},
+            "_layers": function () {},
+            "_parseValue": function () {},
             "_tickSize": function () {},
+            "_type": {},
             "afterBuildTicks": function () {},
             "afterCalculateTickRotation": function () {},
             "afterDataLimits": function () {},
@@ -1691,29 +1955,30 @@ var Chart = {
             "beforeUpdate": function () {},
             "buildTicks": function () {},
             "calculateTickRotation": function () {},
-            "closure_uid_386273086": {},
+            "closure_uid_671108055": {},
             "constructor": {
               "__super__": {
-                "closure_uid_386273086": {},
+                "_type": {},
+                "closure_uid_671108055": {},
                 "hasValue": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "initialize": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "pivot": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "tooltipPosition": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "transition": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 }
               },
-              "closure_uid_386273086": {},
+              "closure_uid_671108055": {},
               "extend": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -1722,6 +1987,7 @@ var Chart = {
             "fit": function () {},
             "getBasePixel": function () {},
             "getBaseValue": function () {},
+            "getDecimalForPixel": function () {},
             "getLabelForIndex": function () {},
             "getPadding": function () {},
             "getPixelForDecimal": function () {},
@@ -1732,25 +1998,26 @@ var Chart = {
             "getValueForPixel": function () {},
             "handleMargins": function () {},
             "hasValue": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "initialize": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
             "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "transition": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
-            "update": function () {}
+            "update": function () {},
+            "zeroLineIndex": {}
           },
           "_defaults": {
             "adapters": {},
@@ -1767,7 +2034,6 @@ var Chart = {
             "time": {
               "displayFormat": {},
               "displayFormats": {},
-              "format": {},
               "isoWeekday": {},
               "minUnit": {},
               "parser": {},
@@ -1776,7 +2042,7 @@ var Chart = {
             }
           },
           "extend": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           }
         }
       },
@@ -1838,7 +2104,6 @@ var Chart = {
           "time": {
             "displayFormat": {},
             "displayFormats": {},
-            "format": {},
             "isoWeekday": {},
             "minUnit": {},
             "parser": {},
@@ -1857,25 +2122,26 @@ var Chart = {
   "Controller": {
     "Animation": {
       "__super__": {
-        "closure_uid_386273086": {},
+        "_type": {},
+        "closure_uid_671108055": {},
         "hasValue": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "initialize": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "pivot": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "tooltipPosition": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "transition": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
       "extend": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     },
     "Bar": function () {},
@@ -1884,13 +2150,13 @@ var Chart = {
     "Controller": function () {},
     "DatasetController": {
       "extend": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     },
     "Doughnut": function () {},
     "Element": {
       "extend": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     },
     "Interaction": {
@@ -1908,33 +2174,49 @@ var Chart = {
     },
     "Legend": {
       "__super__": {
-        "closure_uid_386273086": {},
+        "_type": {},
+        "closure_uid_671108055": {},
         "hasValue": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "initialize": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "pivot": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "tooltipPosition": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "transition": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
       "extend": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     },
     "Line": function () {},
     "LinearScaleBase": {
       "__super__": {
         "_autoSkip": function () {},
+        "_computeGridLineItems": function () {},
+        "_computeLabelItems": function () {},
+        "_configure": function () {},
+        "_convertTicksToLabels": function () {},
+        "_draw": function () {},
+        "_drawGrid": function () {},
+        "_drawLabels": function () {},
+        "_drawTitle": function () {},
+        "_getLabelSizes": function () {},
+        "_getLabels": function () {},
+        "_getMatchingVisibleMetas": function () {},
+        "_getScaleLabel": function () {},
         "_isVisible": function () {},
+        "_layers": function () {},
+        "_parseValue": function () {},
         "_tickSize": function () {},
+        "_type": {},
         "afterBuildTicks": function () {},
         "afterCalculateTickRotation": function () {},
         "afterDataLimits": function () {},
@@ -1951,29 +2233,30 @@ var Chart = {
         "beforeUpdate": function () {},
         "buildTicks": function () {},
         "calculateTickRotation": function () {},
-        "closure_uid_386273086": {},
+        "closure_uid_671108055": {},
         "constructor": {
           "__super__": {
-            "closure_uid_386273086": {},
+            "_type": {},
+            "closure_uid_671108055": {},
             "hasValue": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "initialize": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "pivot": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "tooltipPosition": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "transition": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             }
           },
-          "closure_uid_386273086": {},
+          "closure_uid_671108055": {},
           "extend": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           }
         },
         "convertTicksToLabels": function () {},
@@ -1982,6 +2265,7 @@ var Chart = {
         "fit": function () {},
         "getBasePixel": function () {},
         "getBaseValue": function () {},
+        "getDecimalForPixel": function () {},
         "getLabelForIndex": function () {},
         "getPadding": function () {},
         "getPixelForDecimal": function () {},
@@ -1992,78 +2276,81 @@ var Chart = {
         "getValueForPixel": function () {},
         "handleMargins": function () {},
         "hasValue": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "initialize": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "isFullWidth": function () {},
         "isHorizontal": function () {},
         "mergeTicksOptions": function () {},
         "pivot": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "setDimensions": function () {},
         "tooltipPosition": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "transition": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
-        "update": function () {}
+        "update": function () {},
+        "zeroLineIndex": {}
       },
-      "closure_uid_386273086": {},
+      "closure_uid_671108055": {},
       "extend": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     },
     "PluginBase": {
       "__super__": {
-        "closure_uid_386273086": {},
+        "_type": {},
+        "closure_uid_671108055": {},
         "hasValue": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "initialize": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "pivot": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "tooltipPosition": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "transition": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
       "extend": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     },
     "PolarArea": function () {},
     "Radar": function () {},
     "Scale": {
       "__super__": {
-        "closure_uid_386273086": {},
+        "_type": {},
+        "closure_uid_671108055": {},
         "hasValue": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "initialize": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "pivot": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "tooltipPosition": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "transition": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
-      "closure_uid_386273086": {},
+      "closure_uid_671108055": {},
       "extend": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     },
     "Scatter": function () {},
@@ -2076,48 +2363,50 @@ var Chart = {
     },
     "Title": {
       "__super__": {
-        "closure_uid_386273086": {},
+        "_type": {},
+        "closure_uid_671108055": {},
         "hasValue": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "initialize": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "pivot": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "tooltipPosition": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "transition": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
       "extend": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     },
     "Tooltip": {
       "__super__": {
-        "closure_uid_386273086": {},
+        "_type": {},
+        "closure_uid_671108055": {},
         "hasValue": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "initialize": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "pivot": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "tooltipPosition": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "transition": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
       "extend": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "positioners": {
         "average": function () {},
@@ -2147,14 +2436,22 @@ var Chart = {
       "roundedRect": function () {},
       "unclipArea": function () {}
     },
-    "closure_uid_386273086": {},
+    "closure_uid_671108055": {},
     "controllers": {
       "bar": {
         "__super__": {
+          "_configure": function () {},
+          "_dataElementOptions": {},
+          "_datasetElementOptions": {},
           "_getIndexScale": function () {},
           "_getIndexScaleId": function () {},
           "_getValueScale": function () {},
           "_getValueScaleId": function () {},
+          "_removeDatasetHoverStyle": function () {},
+          "_resolveDataElementOptions": function () {},
+          "_resolveDatasetElementOptions": function () {},
+          "_setDatasetHoverStyle": function () {},
+          "_update": function () {},
           "addElementAndReset": function () {},
           "addElements": function () {},
           "buildOrUpdateElements": function () {},
@@ -2167,6 +2464,7 @@ var Chart = {
           "getDataset": function () {},
           "getMeta": function () {},
           "getScaleForId": function () {},
+          "getStyle": function () {},
           "initialize": function () {},
           "insertElements": function () {},
           "linkScales": function () {},
@@ -2184,15 +2482,23 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
       "bubble": {
         "__super__": {
+          "_configure": function () {},
+          "_dataElementOptions": {},
+          "_datasetElementOptions": {},
           "_getIndexScale": function () {},
           "_getIndexScaleId": function () {},
           "_getValueScale": function () {},
           "_getValueScaleId": function () {},
+          "_removeDatasetHoverStyle": function () {},
+          "_resolveDataElementOptions": function () {},
+          "_resolveDatasetElementOptions": function () {},
+          "_setDatasetHoverStyle": function () {},
+          "_update": function () {},
           "addElementAndReset": function () {},
           "addElements": function () {},
           "buildOrUpdateElements": function () {},
@@ -2205,6 +2511,7 @@ var Chart = {
           "getDataset": function () {},
           "getMeta": function () {},
           "getScaleForId": function () {},
+          "getStyle": function () {},
           "initialize": function () {},
           "insertElements": function () {},
           "linkScales": function () {},
@@ -2222,15 +2529,23 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
       "doughnut": {
         "__super__": {
+          "_configure": function () {},
+          "_dataElementOptions": {},
+          "_datasetElementOptions": {},
           "_getIndexScale": function () {},
           "_getIndexScaleId": function () {},
           "_getValueScale": function () {},
           "_getValueScaleId": function () {},
+          "_removeDatasetHoverStyle": function () {},
+          "_resolveDataElementOptions": function () {},
+          "_resolveDatasetElementOptions": function () {},
+          "_setDatasetHoverStyle": function () {},
+          "_update": function () {},
           "addElementAndReset": function () {},
           "addElements": function () {},
           "buildOrUpdateElements": function () {},
@@ -2243,6 +2558,7 @@ var Chart = {
           "getDataset": function () {},
           "getMeta": function () {},
           "getScaleForId": function () {},
+          "getStyle": function () {},
           "initialize": function () {},
           "insertElements": function () {},
           "linkScales": function () {},
@@ -2260,17 +2576,24 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
       "horizontalBar": {
         "__super__": {
+          "_configure": function () {},
+          "_dataElementOptions": {},
+          "_datasetElementOptions": {},
           "_getIndexScale": function () {},
           "_getIndexScaleId": function () {},
           "_getStacks": function () {},
           "_getValueScale": function () {},
           "_getValueScaleId": function () {},
-          "_resolveElementOptions": function () {},
+          "_removeDatasetHoverStyle": function () {},
+          "_resolveDataElementOptions": function () {},
+          "_resolveDatasetElementOptions": function () {},
+          "_setDatasetHoverStyle": function () {},
+          "_update": function () {},
           "_updateElementGeometry": function () {},
           "addElementAndReset": function () {},
           "addElements": function () {},
@@ -2279,10 +2602,18 @@ var Chart = {
           "calculateBarValuePixels": function () {},
           "constructor": {
             "__super__": {
+              "_configure": function () {},
+              "_dataElementOptions": {},
+              "_datasetElementOptions": {},
               "_getIndexScale": function () {},
               "_getIndexScaleId": function () {},
               "_getValueScale": function () {},
               "_getValueScaleId": function () {},
+              "_removeDatasetHoverStyle": function () {},
+              "_resolveDataElementOptions": function () {},
+              "_resolveDatasetElementOptions": function () {},
+              "_setDatasetHoverStyle": function () {},
+              "_update": function () {},
               "addElementAndReset": function () {},
               "addElements": function () {},
               "buildOrUpdateElements": function () {},
@@ -2295,6 +2626,7 @@ var Chart = {
               "getDataset": function () {},
               "getMeta": function () {},
               "getScaleForId": function () {},
+              "getStyle": function () {},
               "initialize": function () {},
               "insertElements": function () {},
               "linkScales": function () {},
@@ -2312,32 +2644,33 @@ var Chart = {
               "updateIndex": function () {}
             },
             "extend": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             }
           },
           "createMetaData": function () {},
           "createMetaDataset": function () {},
           "dataElementType": {
             "__super__": {
-              "closure_uid_386273086": {},
+              "_type": {},
+              "closure_uid_671108055": {},
               "hasValue": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
               "initialize": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
               "pivot": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
               "tooltipPosition": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
               "transition": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               }
             },
             "extend": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             }
           },
           "datasetElementType": {},
@@ -2349,6 +2682,7 @@ var Chart = {
           "getScaleForId": function () {},
           "getStackCount": function () {},
           "getStackIndex": function () {},
+          "getStyle": function () {},
           "initialize": function () {},
           "insertElements": function () {},
           "linkScales": function () {},
@@ -2367,15 +2701,23 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
       "line": {
         "__super__": {
+          "_configure": function () {},
+          "_dataElementOptions": {},
+          "_datasetElementOptions": {},
           "_getIndexScale": function () {},
           "_getIndexScaleId": function () {},
           "_getValueScale": function () {},
           "_getValueScaleId": function () {},
+          "_removeDatasetHoverStyle": function () {},
+          "_resolveDataElementOptions": function () {},
+          "_resolveDatasetElementOptions": function () {},
+          "_setDatasetHoverStyle": function () {},
+          "_update": function () {},
           "addElementAndReset": function () {},
           "addElements": function () {},
           "buildOrUpdateElements": function () {},
@@ -2388,6 +2730,7 @@ var Chart = {
           "getDataset": function () {},
           "getMeta": function () {},
           "getScaleForId": function () {},
+          "getStyle": function () {},
           "initialize": function () {},
           "insertElements": function () {},
           "linkScales": function () {},
@@ -2405,15 +2748,23 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
       "pie": {
         "__super__": {
+          "_configure": function () {},
+          "_dataElementOptions": {},
+          "_datasetElementOptions": {},
           "_getIndexScale": function () {},
           "_getIndexScaleId": function () {},
           "_getValueScale": function () {},
           "_getValueScaleId": function () {},
+          "_removeDatasetHoverStyle": function () {},
+          "_resolveDataElementOptions": function () {},
+          "_resolveDatasetElementOptions": function () {},
+          "_setDatasetHoverStyle": function () {},
+          "_update": function () {},
           "addElementAndReset": function () {},
           "addElements": function () {},
           "buildOrUpdateElements": function () {},
@@ -2426,6 +2777,7 @@ var Chart = {
           "getDataset": function () {},
           "getMeta": function () {},
           "getScaleForId": function () {},
+          "getStyle": function () {},
           "initialize": function () {},
           "insertElements": function () {},
           "linkScales": function () {},
@@ -2443,15 +2795,23 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
       "polarArea": {
         "__super__": {
+          "_configure": function () {},
+          "_dataElementOptions": {},
+          "_datasetElementOptions": {},
           "_getIndexScale": function () {},
           "_getIndexScaleId": function () {},
           "_getValueScale": function () {},
           "_getValueScaleId": function () {},
+          "_removeDatasetHoverStyle": function () {},
+          "_resolveDataElementOptions": function () {},
+          "_resolveDatasetElementOptions": function () {},
+          "_setDatasetHoverStyle": function () {},
+          "_update": function () {},
           "addElementAndReset": function () {},
           "addElements": function () {},
           "buildOrUpdateElements": function () {},
@@ -2464,6 +2824,7 @@ var Chart = {
           "getDataset": function () {},
           "getMeta": function () {},
           "getScaleForId": function () {},
+          "getStyle": function () {},
           "initialize": function () {},
           "insertElements": function () {},
           "linkScales": function () {},
@@ -2481,15 +2842,23 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
       "radar": {
         "__super__": {
+          "_configure": function () {},
+          "_dataElementOptions": {},
+          "_datasetElementOptions": {},
           "_getIndexScale": function () {},
           "_getIndexScaleId": function () {},
           "_getValueScale": function () {},
           "_getValueScaleId": function () {},
+          "_removeDatasetHoverStyle": function () {},
+          "_resolveDataElementOptions": function () {},
+          "_resolveDatasetElementOptions": function () {},
+          "_setDatasetHoverStyle": function () {},
+          "_update": function () {},
           "addElementAndReset": function () {},
           "addElements": function () {},
           "buildOrUpdateElements": function () {},
@@ -2502,6 +2871,7 @@ var Chart = {
           "getDataset": function () {},
           "getMeta": function () {},
           "getScaleForId": function () {},
+          "getStyle": function () {},
           "initialize": function () {},
           "insertElements": function () {},
           "linkScales": function () {},
@@ -2519,15 +2889,23 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
       "scatter": {
         "__super__": {
+          "_configure": function () {},
+          "_dataElementOptions": {},
+          "_datasetElementOptions": {},
           "_getIndexScale": function () {},
           "_getIndexScaleId": function () {},
           "_getValueScale": function () {},
           "_getValueScaleId": function () {},
+          "_removeDatasetHoverStyle": function () {},
+          "_resolveDataElementOptions": function () {},
+          "_resolveDatasetElementOptions": function () {},
+          "_setDatasetHoverStyle": function () {},
+          "_update": function () {},
           "addElementAndReset": function () {},
           "addElements": function () {},
           "buildOrUpdateElements": function () {},
@@ -2540,6 +2918,7 @@ var Chart = {
           "getDataset": function () {},
           "getMeta": function () {},
           "getScaleForId": function () {},
+          "getStyle": function () {},
           "initialize": function () {},
           "insertElements": function () {},
           "linkScales": function () {},
@@ -2557,7 +2936,7 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       }
     },
@@ -2619,6 +2998,19 @@ var Chart = {
           "onComplete": function () {},
           "onProgress": function () {}
         },
+        "datasets": {
+          "bar": {
+            "barPercentage": {},
+            "categoryPercentage": {}
+          },
+          "horizontalBar": {
+            "barPercentage": {},
+            "categoryPercentage": {}
+          },
+          "scatter": {
+            "showLine": {}
+          }
+        },
         "defaultColor": {},
         "defaultFontColor": {},
         "defaultFontFamily": {},
@@ -2677,6 +3069,7 @@ var Chart = {
           }
         },
         "legend": {
+          "align": {},
           "display": {},
           "fullWidth": {},
           "labels": {
@@ -2855,7 +3248,8 @@ var Chart = {
         },
         "scale": {
           "type": {}
-        }
+        },
+        "spanGaps": {}
       },
       "scale": {
         "display": {},
@@ -2909,7 +3303,6 @@ var Chart = {
           "xAxes": {},
           "yAxes": {}
         },
-        "showLines": {},
         "tooltips": {
           "callbacks": {
             "label": function () {},
@@ -2921,94 +3314,98 @@ var Chart = {
     "elements": {
       "Arc": {
         "__super__": {
-          "closure_uid_386273086": {},
+          "_type": {},
+          "closure_uid_671108055": {},
           "hasValue": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "initialize": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "pivot": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "tooltipPosition": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "transition": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           }
         },
         "extend": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
       "Line": {
         "__super__": {
-          "closure_uid_386273086": {},
+          "_type": {},
+          "closure_uid_671108055": {},
           "hasValue": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "initialize": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "pivot": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "tooltipPosition": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "transition": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           }
         },
         "extend": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
       "Point": {
         "__super__": {
-          "closure_uid_386273086": {},
+          "_type": {},
+          "closure_uid_671108055": {},
           "hasValue": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "initialize": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "pivot": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "tooltipPosition": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "transition": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           }
         },
         "extend": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
       "Rectangle": {
         "__super__": {
-          "closure_uid_386273086": {},
+          "_type": {},
+          "closure_uid_671108055": {},
           "hasValue": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "initialize": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "pivot": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "tooltipPosition": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "transition": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           }
         },
         "extend": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       }
     },
@@ -3017,6 +3414,7 @@ var Chart = {
       "_alignPixel": function () {},
       "_calculatePadding": function () {},
       "_decimalPlaces": function () {},
+      "_deprecated": function () {},
       "_getParentNode": function () {},
       "_merger": function () {},
       "_mergerIf": function () {},
@@ -3128,7 +3526,7 @@ var Chart = {
       "getValueOrDefault": function () {},
       "indexOf": function () {},
       "inherits": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "isArray": function () {},
       "isFinite": function () {},
@@ -3137,6 +3535,10 @@ var Chart = {
       "isObject": function () {},
       "log10": function () {},
       "longestText": function () {},
+      "math": {
+        "_factorize": function () {},
+        "log10": function () {}
+      },
       "max": function () {},
       "measureText": function () {},
       "merge": function () {},
@@ -3156,6 +3558,11 @@ var Chart = {
       "removeEvent": function () {},
       "requestAnimFrame": function () {},
       "retinaScale": function () {},
+      "rtl": {
+        "getRtlAdapter": function () {},
+        "overrideTextDirection": function () {},
+        "restoreTextDirection": function () {}
+      },
       "scaleMerge": function () {},
       "sign": function () {},
       "splineCurve": function () {},
@@ -3218,13 +3625,28 @@ var Chart = {
     },
     "scaleService": {
       "addScalesToLayout": function () {},
-      "closure_uid_386273086": {},
+      "closure_uid_671108055": {},
       "constructors": {
         "category": {
           "__super__": {
             "_autoSkip": function () {},
+            "_computeGridLineItems": function () {},
+            "_computeLabelItems": function () {},
+            "_configure": function () {},
+            "_convertTicksToLabels": function () {},
+            "_draw": function () {},
+            "_drawGrid": function () {},
+            "_drawLabels": function () {},
+            "_drawTitle": function () {},
+            "_getLabelSizes": function () {},
+            "_getLabels": function () {},
+            "_getMatchingVisibleMetas": function () {},
+            "_getScaleLabel": function () {},
             "_isVisible": function () {},
+            "_layers": function () {},
+            "_parseValue": function () {},
             "_tickSize": function () {},
+            "_type": {},
             "afterBuildTicks": function () {},
             "afterCalculateTickRotation": function () {},
             "afterDataLimits": function () {},
@@ -3241,29 +3663,30 @@ var Chart = {
             "beforeUpdate": function () {},
             "buildTicks": function () {},
             "calculateTickRotation": function () {},
-            "closure_uid_386273086": {},
+            "closure_uid_671108055": {},
             "constructor": {
               "__super__": {
-                "closure_uid_386273086": {},
+                "_type": {},
+                "closure_uid_671108055": {},
                 "hasValue": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "initialize": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "pivot": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "tooltipPosition": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "transition": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 }
               },
-              "closure_uid_386273086": {},
+              "closure_uid_671108055": {},
               "extend": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -3272,6 +3695,7 @@ var Chart = {
             "fit": function () {},
             "getBasePixel": function () {},
             "getBaseValue": function () {},
+            "getDecimalForPixel": function () {},
             "getLabelForIndex": function () {},
             "getPadding": function () {},
             "getPixelForDecimal": function () {},
@@ -3282,40 +3706,56 @@ var Chart = {
             "getValueForPixel": function () {},
             "handleMargins": function () {},
             "hasValue": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "initialize": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
             "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "transition": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
-            "update": function () {}
+            "update": function () {},
+            "zeroLineIndex": {}
           },
           "_defaults": {
             "position": {}
           },
           "extend": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           }
         },
-        "closure_uid_386273086": {},
+        "closure_uid_671108055": {},
         "linear": {
           "__super__": {
             "_autoSkip": function () {},
+            "_computeGridLineItems": function () {},
+            "_computeLabelItems": function () {},
             "_computeTickLimit": function () {},
+            "_configure": function () {},
+            "_convertTicksToLabels": function () {},
+            "_draw": function () {},
+            "_drawGrid": function () {},
+            "_drawLabels": function () {},
+            "_drawTitle": function () {},
+            "_getLabelSizes": function () {},
+            "_getLabels": function () {},
+            "_getMatchingVisibleMetas": function () {},
+            "_getScaleLabel": function () {},
             "_isVisible": function () {},
+            "_layers": function () {},
+            "_parseValue": function () {},
             "_tickSize": function () {},
+            "_type": {},
             "afterBuildTicks": function () {},
             "afterCalculateTickRotation": function () {},
             "afterDataLimits": function () {},
@@ -3332,12 +3772,27 @@ var Chart = {
             "beforeUpdate": function () {},
             "buildTicks": function () {},
             "calculateTickRotation": function () {},
-            "closure_uid_386273086": {},
+            "closure_uid_671108055": {},
             "constructor": {
               "__super__": {
                 "_autoSkip": function () {},
+                "_computeGridLineItems": function () {},
+                "_computeLabelItems": function () {},
+                "_configure": function () {},
+                "_convertTicksToLabels": function () {},
+                "_draw": function () {},
+                "_drawGrid": function () {},
+                "_drawLabels": function () {},
+                "_drawTitle": function () {},
+                "_getLabelSizes": function () {},
+                "_getLabels": function () {},
+                "_getMatchingVisibleMetas": function () {},
+                "_getScaleLabel": function () {},
                 "_isVisible": function () {},
+                "_layers": function () {},
+                "_parseValue": function () {},
                 "_tickSize": function () {},
+                "_type": {},
                 "afterBuildTicks": function () {},
                 "afterCalculateTickRotation": function () {},
                 "afterDataLimits": function () {},
@@ -3354,29 +3809,30 @@ var Chart = {
                 "beforeUpdate": function () {},
                 "buildTicks": function () {},
                 "calculateTickRotation": function () {},
-                "closure_uid_386273086": {},
+                "closure_uid_671108055": {},
                 "constructor": {
                   "__super__": {
-                    "closure_uid_386273086": {},
+                    "_type": {},
+                    "closure_uid_671108055": {},
                     "hasValue": {
-                      "closure_uid_386273086": {}
+                      "closure_uid_671108055": {}
                     },
                     "initialize": {
-                      "closure_uid_386273086": {}
+                      "closure_uid_671108055": {}
                     },
                     "pivot": {
-                      "closure_uid_386273086": {}
+                      "closure_uid_671108055": {}
                     },
                     "tooltipPosition": {
-                      "closure_uid_386273086": {}
+                      "closure_uid_671108055": {}
                     },
                     "transition": {
-                      "closure_uid_386273086": {}
+                      "closure_uid_671108055": {}
                     }
                   },
-                  "closure_uid_386273086": {},
+                  "closure_uid_671108055": {},
                   "extend": {
-                    "closure_uid_386273086": {}
+                    "closure_uid_671108055": {}
                   }
                 },
                 "convertTicksToLabels": function () {},
@@ -3385,6 +3841,7 @@ var Chart = {
                 "fit": function () {},
                 "getBasePixel": function () {},
                 "getBaseValue": function () {},
+                "getDecimalForPixel": function () {},
                 "getLabelForIndex": function () {},
                 "getPadding": function () {},
                 "getPixelForDecimal": function () {},
@@ -3395,29 +3852,30 @@ var Chart = {
                 "getValueForPixel": function () {},
                 "handleMargins": function () {},
                 "hasValue": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "initialize": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "isFullWidth": function () {},
                 "isHorizontal": function () {},
                 "mergeTicksOptions": function () {},
                 "pivot": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "setDimensions": function () {},
                 "tooltipPosition": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "transition": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
-                "update": function () {}
+                "update": function () {},
+                "zeroLineIndex": {}
               },
-              "closure_uid_386273086": {},
+              "closure_uid_671108055": {},
               "extend": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -3426,6 +3884,7 @@ var Chart = {
             "fit": function () {},
             "getBasePixel": function () {},
             "getBaseValue": function () {},
+            "getDecimalForPixel": function () {},
             "getLabelForIndex": function () {},
             "getPadding": function () {},
             "getPixelForDecimal": function () {},
@@ -3439,25 +3898,26 @@ var Chart = {
             "handleMargins": function () {},
             "handleTickRangeOptions": function () {},
             "hasValue": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "initialize": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
             "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "transition": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
-            "update": function () {}
+            "update": function () {},
+            "zeroLineIndex": {}
           },
           "_defaults": {
             "position": {},
@@ -3465,16 +3925,31 @@ var Chart = {
               "callback": function () {}
             }
           },
-          "closure_uid_386273086": {},
+          "closure_uid_671108055": {},
           "extend": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           }
         },
         "logarithmic": {
           "__super__": {
             "_autoSkip": function () {},
+            "_computeGridLineItems": function () {},
+            "_computeLabelItems": function () {},
+            "_configure": function () {},
+            "_convertTicksToLabels": function () {},
+            "_draw": function () {},
+            "_drawGrid": function () {},
+            "_drawLabels": function () {},
+            "_drawTitle": function () {},
+            "_getLabelSizes": function () {},
+            "_getLabels": function () {},
+            "_getMatchingVisibleMetas": function () {},
+            "_getScaleLabel": function () {},
             "_isVisible": function () {},
+            "_layers": function () {},
+            "_parseValue": function () {},
             "_tickSize": function () {},
+            "_type": {},
             "afterBuildTicks": function () {},
             "afterCalculateTickRotation": function () {},
             "afterDataLimits": function () {},
@@ -3491,29 +3966,30 @@ var Chart = {
             "beforeUpdate": function () {},
             "buildTicks": function () {},
             "calculateTickRotation": function () {},
-            "closure_uid_386273086": {},
+            "closure_uid_671108055": {},
             "constructor": {
               "__super__": {
-                "closure_uid_386273086": {},
+                "_type": {},
+                "closure_uid_671108055": {},
                 "hasValue": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "initialize": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "pivot": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "tooltipPosition": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "transition": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 }
               },
-              "closure_uid_386273086": {},
+              "closure_uid_671108055": {},
               "extend": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -3522,6 +3998,7 @@ var Chart = {
             "fit": function () {},
             "getBasePixel": function () {},
             "getBaseValue": function () {},
+            "getDecimalForPixel": function () {},
             "getLabelForIndex": function () {},
             "getPadding": function () {},
             "getPixelForDecimal": function () {},
@@ -3532,25 +4009,26 @@ var Chart = {
             "getValueForPixel": function () {},
             "handleMargins": function () {},
             "hasValue": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "initialize": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
             "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "transition": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
-            "update": function () {}
+            "update": function () {},
+            "zeroLineIndex": {}
           },
           "_defaults": {
             "position": {},
@@ -3559,15 +4037,30 @@ var Chart = {
             }
           },
           "extend": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           }
         },
         "radialLinear": {
           "__super__": {
             "_autoSkip": function () {},
+            "_computeGridLineItems": function () {},
+            "_computeLabelItems": function () {},
             "_computeTickLimit": function () {},
+            "_configure": function () {},
+            "_convertTicksToLabels": function () {},
+            "_draw": function () {},
+            "_drawGrid": function () {},
+            "_drawLabels": function () {},
+            "_drawTitle": function () {},
+            "_getLabelSizes": function () {},
+            "_getLabels": function () {},
+            "_getMatchingVisibleMetas": function () {},
+            "_getScaleLabel": function () {},
             "_isVisible": function () {},
+            "_layers": function () {},
+            "_parseValue": function () {},
             "_tickSize": function () {},
+            "_type": {},
             "afterBuildTicks": function () {},
             "afterCalculateTickRotation": function () {},
             "afterDataLimits": function () {},
@@ -3584,12 +4077,27 @@ var Chart = {
             "beforeUpdate": function () {},
             "buildTicks": function () {},
             "calculateTickRotation": function () {},
-            "closure_uid_386273086": {},
+            "closure_uid_671108055": {},
             "constructor": {
               "__super__": {
                 "_autoSkip": function () {},
+                "_computeGridLineItems": function () {},
+                "_computeLabelItems": function () {},
+                "_configure": function () {},
+                "_convertTicksToLabels": function () {},
+                "_draw": function () {},
+                "_drawGrid": function () {},
+                "_drawLabels": function () {},
+                "_drawTitle": function () {},
+                "_getLabelSizes": function () {},
+                "_getLabels": function () {},
+                "_getMatchingVisibleMetas": function () {},
+                "_getScaleLabel": function () {},
                 "_isVisible": function () {},
+                "_layers": function () {},
+                "_parseValue": function () {},
                 "_tickSize": function () {},
+                "_type": {},
                 "afterBuildTicks": function () {},
                 "afterCalculateTickRotation": function () {},
                 "afterDataLimits": function () {},
@@ -3606,29 +4114,30 @@ var Chart = {
                 "beforeUpdate": function () {},
                 "buildTicks": function () {},
                 "calculateTickRotation": function () {},
-                "closure_uid_386273086": {},
+                "closure_uid_671108055": {},
                 "constructor": {
                   "__super__": {
-                    "closure_uid_386273086": {},
+                    "_type": {},
+                    "closure_uid_671108055": {},
                     "hasValue": {
-                      "closure_uid_386273086": {}
+                      "closure_uid_671108055": {}
                     },
                     "initialize": {
-                      "closure_uid_386273086": {}
+                      "closure_uid_671108055": {}
                     },
                     "pivot": {
-                      "closure_uid_386273086": {}
+                      "closure_uid_671108055": {}
                     },
                     "tooltipPosition": {
-                      "closure_uid_386273086": {}
+                      "closure_uid_671108055": {}
                     },
                     "transition": {
-                      "closure_uid_386273086": {}
+                      "closure_uid_671108055": {}
                     }
                   },
-                  "closure_uid_386273086": {},
+                  "closure_uid_671108055": {},
                   "extend": {
-                    "closure_uid_386273086": {}
+                    "closure_uid_671108055": {}
                   }
                 },
                 "convertTicksToLabels": function () {},
@@ -3637,6 +4146,7 @@ var Chart = {
                 "fit": function () {},
                 "getBasePixel": function () {},
                 "getBaseValue": function () {},
+                "getDecimalForPixel": function () {},
                 "getLabelForIndex": function () {},
                 "getPadding": function () {},
                 "getPixelForDecimal": function () {},
@@ -3647,29 +4157,30 @@ var Chart = {
                 "getValueForPixel": function () {},
                 "handleMargins": function () {},
                 "hasValue": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "initialize": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "isFullWidth": function () {},
                 "isHorizontal": function () {},
                 "mergeTicksOptions": function () {},
                 "pivot": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "setDimensions": function () {},
                 "tooltipPosition": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "transition": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
-                "update": function () {}
+                "update": function () {},
+                "zeroLineIndex": {}
               },
-              "closure_uid_386273086": {},
+              "closure_uid_671108055": {},
               "extend": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -3678,6 +4189,7 @@ var Chart = {
             "fit": function () {},
             "getBasePixel": function () {},
             "getBaseValue": function () {},
+            "getDecimalForPixel": function () {},
             "getLabelForIndex": function () {},
             "getPadding": function () {},
             "getPixelForDecimal": function () {},
@@ -3691,25 +4203,26 @@ var Chart = {
             "handleMargins": function () {},
             "handleTickRangeOptions": function () {},
             "hasValue": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "initialize": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
             "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "transition": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
-            "update": function () {}
+            "update": function () {},
+            "zeroLineIndex": {}
           },
           "_defaults": {
             "angleLines": {
@@ -3738,16 +4251,31 @@ var Chart = {
               "showLabelBackdrop": {}
             }
           },
-          "closure_uid_386273086": {},
+          "closure_uid_671108055": {},
           "extend": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           }
         },
         "time": {
           "__super__": {
             "_autoSkip": function () {},
+            "_computeGridLineItems": function () {},
+            "_computeLabelItems": function () {},
+            "_configure": function () {},
+            "_convertTicksToLabels": function () {},
+            "_draw": function () {},
+            "_drawGrid": function () {},
+            "_drawLabels": function () {},
+            "_drawTitle": function () {},
+            "_getLabelSizes": function () {},
+            "_getLabels": function () {},
+            "_getMatchingVisibleMetas": function () {},
+            "_getScaleLabel": function () {},
             "_isVisible": function () {},
+            "_layers": function () {},
+            "_parseValue": function () {},
             "_tickSize": function () {},
+            "_type": {},
             "afterBuildTicks": function () {},
             "afterCalculateTickRotation": function () {},
             "afterDataLimits": function () {},
@@ -3764,29 +4292,30 @@ var Chart = {
             "beforeUpdate": function () {},
             "buildTicks": function () {},
             "calculateTickRotation": function () {},
-            "closure_uid_386273086": {},
+            "closure_uid_671108055": {},
             "constructor": {
               "__super__": {
-                "closure_uid_386273086": {},
+                "_type": {},
+                "closure_uid_671108055": {},
                 "hasValue": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "initialize": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "pivot": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "tooltipPosition": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 },
                 "transition": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 }
               },
-              "closure_uid_386273086": {},
+              "closure_uid_671108055": {},
               "extend": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -3795,6 +4324,7 @@ var Chart = {
             "fit": function () {},
             "getBasePixel": function () {},
             "getBaseValue": function () {},
+            "getDecimalForPixel": function () {},
             "getLabelForIndex": function () {},
             "getPadding": function () {},
             "getPixelForDecimal": function () {},
@@ -3805,25 +4335,26 @@ var Chart = {
             "getValueForPixel": function () {},
             "handleMargins": function () {},
             "hasValue": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "initialize": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
             "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "transition": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
-            "update": function () {}
+            "update": function () {},
+            "zeroLineIndex": {}
           },
           "_defaults": {
             "adapters": {},
@@ -3840,7 +4371,6 @@ var Chart = {
             "time": {
               "displayFormat": {},
               "displayFormats": {},
-              "format": {},
               "isoWeekday": {},
               "minUnit": {},
               "parser": {},
@@ -3849,7 +4379,7 @@ var Chart = {
             }
           },
           "extend": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           }
         }
       },
@@ -3911,7 +4441,6 @@ var Chart = {
           "time": {
             "displayFormat": {},
             "displayFormats": {},
-            "format": {},
             "isoWeekday": {},
             "minUnit": {},
             "parser": {},
@@ -3929,13 +4458,13 @@ var Chart = {
   },
   "DatasetController": {
     "extend": {
-      "closure_uid_386273086": {}
+      "closure_uid_671108055": {}
     }
   },
   "Doughnut": function () {},
   "Element": {
     "extend": {
-      "closure_uid_386273086": {}
+      "closure_uid_671108055": {}
     }
   },
   "Interaction": {
@@ -3953,33 +4482,49 @@ var Chart = {
   },
   "Legend": {
     "__super__": {
-      "closure_uid_386273086": {},
+      "_type": {},
+      "closure_uid_671108055": {},
       "hasValue": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "initialize": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "pivot": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "tooltipPosition": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "transition": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     },
     "extend": {
-      "closure_uid_386273086": {}
+      "closure_uid_671108055": {}
     }
   },
   "Line": function () {},
   "LinearScaleBase": {
     "__super__": {
       "_autoSkip": function () {},
+      "_computeGridLineItems": function () {},
+      "_computeLabelItems": function () {},
+      "_configure": function () {},
+      "_convertTicksToLabels": function () {},
+      "_draw": function () {},
+      "_drawGrid": function () {},
+      "_drawLabels": function () {},
+      "_drawTitle": function () {},
+      "_getLabelSizes": function () {},
+      "_getLabels": function () {},
+      "_getMatchingVisibleMetas": function () {},
+      "_getScaleLabel": function () {},
       "_isVisible": function () {},
+      "_layers": function () {},
+      "_parseValue": function () {},
       "_tickSize": function () {},
+      "_type": {},
       "afterBuildTicks": function () {},
       "afterCalculateTickRotation": function () {},
       "afterDataLimits": function () {},
@@ -3996,29 +4541,30 @@ var Chart = {
       "beforeUpdate": function () {},
       "buildTicks": function () {},
       "calculateTickRotation": function () {},
-      "closure_uid_386273086": {},
+      "closure_uid_671108055": {},
       "constructor": {
         "__super__": {
-          "closure_uid_386273086": {},
+          "_type": {},
+          "closure_uid_671108055": {},
           "hasValue": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "initialize": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "pivot": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "tooltipPosition": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "transition": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           }
         },
-        "closure_uid_386273086": {},
+        "closure_uid_671108055": {},
         "extend": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
       "convertTicksToLabels": function () {},
@@ -4027,6 +4573,7 @@ var Chart = {
       "fit": function () {},
       "getBasePixel": function () {},
       "getBaseValue": function () {},
+      "getDecimalForPixel": function () {},
       "getLabelForIndex": function () {},
       "getPadding": function () {},
       "getPixelForDecimal": function () {},
@@ -4037,78 +4584,81 @@ var Chart = {
       "getValueForPixel": function () {},
       "handleMargins": function () {},
       "hasValue": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "initialize": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "isFullWidth": function () {},
       "isHorizontal": function () {},
       "mergeTicksOptions": function () {},
       "pivot": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "setDimensions": function () {},
       "tooltipPosition": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "transition": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
-      "update": function () {}
+      "update": function () {},
+      "zeroLineIndex": {}
     },
-    "closure_uid_386273086": {},
+    "closure_uid_671108055": {},
     "extend": {
-      "closure_uid_386273086": {}
+      "closure_uid_671108055": {}
     }
   },
   "PluginBase": {
     "__super__": {
-      "closure_uid_386273086": {},
+      "_type": {},
+      "closure_uid_671108055": {},
       "hasValue": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "initialize": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "pivot": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "tooltipPosition": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "transition": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     },
     "extend": {
-      "closure_uid_386273086": {}
+      "closure_uid_671108055": {}
     }
   },
   "PolarArea": function () {},
   "Radar": function () {},
   "Scale": {
     "__super__": {
-      "closure_uid_386273086": {},
+      "_type": {},
+      "closure_uid_671108055": {},
       "hasValue": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "initialize": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "pivot": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "tooltipPosition": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "transition": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     },
-    "closure_uid_386273086": {},
+    "closure_uid_671108055": {},
     "extend": {
-      "closure_uid_386273086": {}
+      "closure_uid_671108055": {}
     }
   },
   "Scatter": function () {},
@@ -4121,48 +4671,50 @@ var Chart = {
   },
   "Title": {
     "__super__": {
-      "closure_uid_386273086": {},
+      "_type": {},
+      "closure_uid_671108055": {},
       "hasValue": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "initialize": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "pivot": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "tooltipPosition": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "transition": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     },
     "extend": {
-      "closure_uid_386273086": {}
+      "closure_uid_671108055": {}
     }
   },
   "Tooltip": {
     "__super__": {
-      "closure_uid_386273086": {},
+      "_type": {},
+      "closure_uid_671108055": {},
       "hasValue": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "initialize": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "pivot": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "tooltipPosition": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       },
       "transition": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     },
     "extend": {
-      "closure_uid_386273086": {}
+      "closure_uid_671108055": {}
     },
     "positioners": {
       "average": function () {},
@@ -4195,10 +4747,18 @@ var Chart = {
   "controllers": {
     "bar": {
       "__super__": {
+        "_configure": function () {},
+        "_dataElementOptions": {},
+        "_datasetElementOptions": {},
         "_getIndexScale": function () {},
         "_getIndexScaleId": function () {},
         "_getValueScale": function () {},
         "_getValueScaleId": function () {},
+        "_removeDatasetHoverStyle": function () {},
+        "_resolveDataElementOptions": function () {},
+        "_resolveDatasetElementOptions": function () {},
+        "_setDatasetHoverStyle": function () {},
+        "_update": function () {},
         "addElementAndReset": function () {},
         "addElements": function () {},
         "buildOrUpdateElements": function () {},
@@ -4211,6 +4771,7 @@ var Chart = {
         "getDataset": function () {},
         "getMeta": function () {},
         "getScaleForId": function () {},
+        "getStyle": function () {},
         "initialize": function () {},
         "insertElements": function () {},
         "linkScales": function () {},
@@ -4228,15 +4789,23 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     },
     "bubble": {
       "__super__": {
+        "_configure": function () {},
+        "_dataElementOptions": {},
+        "_datasetElementOptions": {},
         "_getIndexScale": function () {},
         "_getIndexScaleId": function () {},
         "_getValueScale": function () {},
         "_getValueScaleId": function () {},
+        "_removeDatasetHoverStyle": function () {},
+        "_resolveDataElementOptions": function () {},
+        "_resolveDatasetElementOptions": function () {},
+        "_setDatasetHoverStyle": function () {},
+        "_update": function () {},
         "addElementAndReset": function () {},
         "addElements": function () {},
         "buildOrUpdateElements": function () {},
@@ -4249,6 +4818,7 @@ var Chart = {
         "getDataset": function () {},
         "getMeta": function () {},
         "getScaleForId": function () {},
+        "getStyle": function () {},
         "initialize": function () {},
         "insertElements": function () {},
         "linkScales": function () {},
@@ -4266,15 +4836,23 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     },
     "doughnut": {
       "__super__": {
+        "_configure": function () {},
+        "_dataElementOptions": {},
+        "_datasetElementOptions": {},
         "_getIndexScale": function () {},
         "_getIndexScaleId": function () {},
         "_getValueScale": function () {},
         "_getValueScaleId": function () {},
+        "_removeDatasetHoverStyle": function () {},
+        "_resolveDataElementOptions": function () {},
+        "_resolveDatasetElementOptions": function () {},
+        "_setDatasetHoverStyle": function () {},
+        "_update": function () {},
         "addElementAndReset": function () {},
         "addElements": function () {},
         "buildOrUpdateElements": function () {},
@@ -4287,6 +4865,7 @@ var Chart = {
         "getDataset": function () {},
         "getMeta": function () {},
         "getScaleForId": function () {},
+        "getStyle": function () {},
         "initialize": function () {},
         "insertElements": function () {},
         "linkScales": function () {},
@@ -4304,17 +4883,24 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     },
     "horizontalBar": {
       "__super__": {
+        "_configure": function () {},
+        "_dataElementOptions": {},
+        "_datasetElementOptions": {},
         "_getIndexScale": function () {},
         "_getIndexScaleId": function () {},
         "_getStacks": function () {},
         "_getValueScale": function () {},
         "_getValueScaleId": function () {},
-        "_resolveElementOptions": function () {},
+        "_removeDatasetHoverStyle": function () {},
+        "_resolveDataElementOptions": function () {},
+        "_resolveDatasetElementOptions": function () {},
+        "_setDatasetHoverStyle": function () {},
+        "_update": function () {},
         "_updateElementGeometry": function () {},
         "addElementAndReset": function () {},
         "addElements": function () {},
@@ -4323,10 +4909,18 @@ var Chart = {
         "calculateBarValuePixels": function () {},
         "constructor": {
           "__super__": {
+            "_configure": function () {},
+            "_dataElementOptions": {},
+            "_datasetElementOptions": {},
             "_getIndexScale": function () {},
             "_getIndexScaleId": function () {},
             "_getValueScale": function () {},
             "_getValueScaleId": function () {},
+            "_removeDatasetHoverStyle": function () {},
+            "_resolveDataElementOptions": function () {},
+            "_resolveDatasetElementOptions": function () {},
+            "_setDatasetHoverStyle": function () {},
+            "_update": function () {},
             "addElementAndReset": function () {},
             "addElements": function () {},
             "buildOrUpdateElements": function () {},
@@ -4339,6 +4933,7 @@ var Chart = {
             "getDataset": function () {},
             "getMeta": function () {},
             "getScaleForId": function () {},
+            "getStyle": function () {},
             "initialize": function () {},
             "insertElements": function () {},
             "linkScales": function () {},
@@ -4356,32 +4951,33 @@ var Chart = {
             "updateIndex": function () {}
           },
           "extend": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           }
         },
         "createMetaData": function () {},
         "createMetaDataset": function () {},
         "dataElementType": {
           "__super__": {
-            "closure_uid_386273086": {},
+            "_type": {},
+            "closure_uid_671108055": {},
             "hasValue": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "initialize": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "pivot": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "tooltipPosition": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             },
             "transition": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             }
           },
           "extend": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           }
         },
         "datasetElementType": {},
@@ -4393,6 +4989,7 @@ var Chart = {
         "getScaleForId": function () {},
         "getStackCount": function () {},
         "getStackIndex": function () {},
+        "getStyle": function () {},
         "initialize": function () {},
         "insertElements": function () {},
         "linkScales": function () {},
@@ -4411,15 +5008,23 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     },
     "line": {
       "__super__": {
+        "_configure": function () {},
+        "_dataElementOptions": {},
+        "_datasetElementOptions": {},
         "_getIndexScale": function () {},
         "_getIndexScaleId": function () {},
         "_getValueScale": function () {},
         "_getValueScaleId": function () {},
+        "_removeDatasetHoverStyle": function () {},
+        "_resolveDataElementOptions": function () {},
+        "_resolveDatasetElementOptions": function () {},
+        "_setDatasetHoverStyle": function () {},
+        "_update": function () {},
         "addElementAndReset": function () {},
         "addElements": function () {},
         "buildOrUpdateElements": function () {},
@@ -4432,6 +5037,7 @@ var Chart = {
         "getDataset": function () {},
         "getMeta": function () {},
         "getScaleForId": function () {},
+        "getStyle": function () {},
         "initialize": function () {},
         "insertElements": function () {},
         "linkScales": function () {},
@@ -4449,15 +5055,23 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     },
     "pie": {
       "__super__": {
+        "_configure": function () {},
+        "_dataElementOptions": {},
+        "_datasetElementOptions": {},
         "_getIndexScale": function () {},
         "_getIndexScaleId": function () {},
         "_getValueScale": function () {},
         "_getValueScaleId": function () {},
+        "_removeDatasetHoverStyle": function () {},
+        "_resolveDataElementOptions": function () {},
+        "_resolveDatasetElementOptions": function () {},
+        "_setDatasetHoverStyle": function () {},
+        "_update": function () {},
         "addElementAndReset": function () {},
         "addElements": function () {},
         "buildOrUpdateElements": function () {},
@@ -4470,6 +5084,7 @@ var Chart = {
         "getDataset": function () {},
         "getMeta": function () {},
         "getScaleForId": function () {},
+        "getStyle": function () {},
         "initialize": function () {},
         "insertElements": function () {},
         "linkScales": function () {},
@@ -4487,15 +5102,23 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     },
     "polarArea": {
       "__super__": {
+        "_configure": function () {},
+        "_dataElementOptions": {},
+        "_datasetElementOptions": {},
         "_getIndexScale": function () {},
         "_getIndexScaleId": function () {},
         "_getValueScale": function () {},
         "_getValueScaleId": function () {},
+        "_removeDatasetHoverStyle": function () {},
+        "_resolveDataElementOptions": function () {},
+        "_resolveDatasetElementOptions": function () {},
+        "_setDatasetHoverStyle": function () {},
+        "_update": function () {},
         "addElementAndReset": function () {},
         "addElements": function () {},
         "buildOrUpdateElements": function () {},
@@ -4508,6 +5131,7 @@ var Chart = {
         "getDataset": function () {},
         "getMeta": function () {},
         "getScaleForId": function () {},
+        "getStyle": function () {},
         "initialize": function () {},
         "insertElements": function () {},
         "linkScales": function () {},
@@ -4525,15 +5149,23 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     },
     "radar": {
       "__super__": {
+        "_configure": function () {},
+        "_dataElementOptions": {},
+        "_datasetElementOptions": {},
         "_getIndexScale": function () {},
         "_getIndexScaleId": function () {},
         "_getValueScale": function () {},
         "_getValueScaleId": function () {},
+        "_removeDatasetHoverStyle": function () {},
+        "_resolveDataElementOptions": function () {},
+        "_resolveDatasetElementOptions": function () {},
+        "_setDatasetHoverStyle": function () {},
+        "_update": function () {},
         "addElementAndReset": function () {},
         "addElements": function () {},
         "buildOrUpdateElements": function () {},
@@ -4546,6 +5178,7 @@ var Chart = {
         "getDataset": function () {},
         "getMeta": function () {},
         "getScaleForId": function () {},
+        "getStyle": function () {},
         "initialize": function () {},
         "insertElements": function () {},
         "linkScales": function () {},
@@ -4563,15 +5196,23 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     },
     "scatter": {
       "__super__": {
+        "_configure": function () {},
+        "_dataElementOptions": {},
+        "_datasetElementOptions": {},
         "_getIndexScale": function () {},
         "_getIndexScaleId": function () {},
         "_getValueScale": function () {},
         "_getValueScaleId": function () {},
+        "_removeDatasetHoverStyle": function () {},
+        "_resolveDataElementOptions": function () {},
+        "_resolveDatasetElementOptions": function () {},
+        "_setDatasetHoverStyle": function () {},
+        "_update": function () {},
         "addElementAndReset": function () {},
         "addElements": function () {},
         "buildOrUpdateElements": function () {},
@@ -4584,6 +5225,7 @@ var Chart = {
         "getDataset": function () {},
         "getMeta": function () {},
         "getScaleForId": function () {},
+        "getStyle": function () {},
         "initialize": function () {},
         "insertElements": function () {},
         "linkScales": function () {},
@@ -4601,7 +5243,7 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     }
   },
@@ -4663,6 +5305,19 @@ var Chart = {
         "onComplete": function () {},
         "onProgress": function () {}
       },
+      "datasets": {
+        "bar": {
+          "barPercentage": {},
+          "categoryPercentage": {}
+        },
+        "horizontalBar": {
+          "barPercentage": {},
+          "categoryPercentage": {}
+        },
+        "scatter": {
+          "showLine": {}
+        }
+      },
       "defaultColor": {},
       "defaultFontColor": {},
       "defaultFontFamily": {},
@@ -4721,6 +5376,7 @@ var Chart = {
         }
       },
       "legend": {
+        "align": {},
         "display": {},
         "fullWidth": {},
         "labels": {
@@ -4899,7 +5555,8 @@ var Chart = {
       },
       "scale": {
         "type": {}
-      }
+      },
+      "spanGaps": {}
     },
     "scale": {
       "display": {},
@@ -4953,7 +5610,6 @@ var Chart = {
         "xAxes": {},
         "yAxes": {}
       },
-      "showLines": {},
       "tooltips": {
         "callbacks": {
           "label": function () {},
@@ -4965,94 +5621,98 @@ var Chart = {
   "elements": {
     "Arc": {
       "__super__": {
-        "closure_uid_386273086": {},
+        "_type": {},
+        "closure_uid_671108055": {},
         "hasValue": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "initialize": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "pivot": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "tooltipPosition": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "transition": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
       "extend": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     },
     "Line": {
       "__super__": {
-        "closure_uid_386273086": {},
+        "_type": {},
+        "closure_uid_671108055": {},
         "hasValue": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "initialize": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "pivot": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "tooltipPosition": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "transition": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
       "extend": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     },
     "Point": {
       "__super__": {
-        "closure_uid_386273086": {},
+        "_type": {},
+        "closure_uid_671108055": {},
         "hasValue": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "initialize": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "pivot": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "tooltipPosition": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "transition": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
       "extend": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     },
     "Rectangle": {
       "__super__": {
-        "closure_uid_386273086": {},
+        "_type": {},
+        "closure_uid_671108055": {},
         "hasValue": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "initialize": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "pivot": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "tooltipPosition": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         },
         "transition": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
       "extend": {
-        "closure_uid_386273086": {}
+        "closure_uid_671108055": {}
       }
     }
   },
@@ -5061,6 +5721,7 @@ var Chart = {
     "_alignPixel": function () {},
     "_calculatePadding": function () {},
     "_decimalPlaces": function () {},
+    "_deprecated": function () {},
     "_getParentNode": function () {},
     "_merger": function () {},
     "_mergerIf": function () {},
@@ -5172,7 +5833,7 @@ var Chart = {
     "getValueOrDefault": function () {},
     "indexOf": function () {},
     "inherits": {
-      "closure_uid_386273086": {}
+      "closure_uid_671108055": {}
     },
     "isArray": function () {},
     "isFinite": function () {},
@@ -5181,6 +5842,10 @@ var Chart = {
     "isObject": function () {},
     "log10": function () {},
     "longestText": function () {},
+    "math": {
+      "_factorize": function () {},
+      "log10": function () {}
+    },
     "max": function () {},
     "measureText": function () {},
     "merge": function () {},
@@ -5200,6 +5865,11 @@ var Chart = {
     "removeEvent": function () {},
     "requestAnimFrame": function () {},
     "retinaScale": function () {},
+    "rtl": {
+      "getRtlAdapter": function () {},
+      "overrideTextDirection": function () {},
+      "restoreTextDirection": function () {}
+    },
     "scaleMerge": function () {},
     "sign": function () {},
     "splineCurve": function () {},
@@ -5262,13 +5932,28 @@ var Chart = {
   },
   "scaleService": {
     "addScalesToLayout": function () {},
-    "closure_uid_386273086": {},
+    "closure_uid_671108055": {},
     "constructors": {
       "category": {
         "__super__": {
           "_autoSkip": function () {},
+          "_computeGridLineItems": function () {},
+          "_computeLabelItems": function () {},
+          "_configure": function () {},
+          "_convertTicksToLabels": function () {},
+          "_draw": function () {},
+          "_drawGrid": function () {},
+          "_drawLabels": function () {},
+          "_drawTitle": function () {},
+          "_getLabelSizes": function () {},
+          "_getLabels": function () {},
+          "_getMatchingVisibleMetas": function () {},
+          "_getScaleLabel": function () {},
           "_isVisible": function () {},
+          "_layers": function () {},
+          "_parseValue": function () {},
           "_tickSize": function () {},
+          "_type": {},
           "afterBuildTicks": function () {},
           "afterCalculateTickRotation": function () {},
           "afterDataLimits": function () {},
@@ -5285,29 +5970,30 @@ var Chart = {
           "beforeUpdate": function () {},
           "buildTicks": function () {},
           "calculateTickRotation": function () {},
-          "closure_uid_386273086": {},
+          "closure_uid_671108055": {},
           "constructor": {
             "__super__": {
-              "closure_uid_386273086": {},
+              "_type": {},
+              "closure_uid_671108055": {},
               "hasValue": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
               "initialize": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
               "pivot": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
               "tooltipPosition": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
               "transition": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               }
             },
-            "closure_uid_386273086": {},
+            "closure_uid_671108055": {},
             "extend": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             }
           },
           "convertTicksToLabels": function () {},
@@ -5316,6 +6002,7 @@ var Chart = {
           "fit": function () {},
           "getBasePixel": function () {},
           "getBaseValue": function () {},
+          "getDecimalForPixel": function () {},
           "getLabelForIndex": function () {},
           "getPadding": function () {},
           "getPixelForDecimal": function () {},
@@ -5326,40 +6013,56 @@ var Chart = {
           "getValueForPixel": function () {},
           "handleMargins": function () {},
           "hasValue": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "initialize": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "isFullWidth": function () {},
           "isHorizontal": function () {},
           "mergeTicksOptions": function () {},
           "pivot": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "setDimensions": function () {},
           "tooltipPosition": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "transition": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
-          "update": function () {}
+          "update": function () {},
+          "zeroLineIndex": {}
         },
         "_defaults": {
           "position": {}
         },
         "extend": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
-      "closure_uid_386273086": {},
+      "closure_uid_671108055": {},
       "linear": {
         "__super__": {
           "_autoSkip": function () {},
+          "_computeGridLineItems": function () {},
+          "_computeLabelItems": function () {},
           "_computeTickLimit": function () {},
+          "_configure": function () {},
+          "_convertTicksToLabels": function () {},
+          "_draw": function () {},
+          "_drawGrid": function () {},
+          "_drawLabels": function () {},
+          "_drawTitle": function () {},
+          "_getLabelSizes": function () {},
+          "_getLabels": function () {},
+          "_getMatchingVisibleMetas": function () {},
+          "_getScaleLabel": function () {},
           "_isVisible": function () {},
+          "_layers": function () {},
+          "_parseValue": function () {},
           "_tickSize": function () {},
+          "_type": {},
           "afterBuildTicks": function () {},
           "afterCalculateTickRotation": function () {},
           "afterDataLimits": function () {},
@@ -5376,12 +6079,27 @@ var Chart = {
           "beforeUpdate": function () {},
           "buildTicks": function () {},
           "calculateTickRotation": function () {},
-          "closure_uid_386273086": {},
+          "closure_uid_671108055": {},
           "constructor": {
             "__super__": {
               "_autoSkip": function () {},
+              "_computeGridLineItems": function () {},
+              "_computeLabelItems": function () {},
+              "_configure": function () {},
+              "_convertTicksToLabels": function () {},
+              "_draw": function () {},
+              "_drawGrid": function () {},
+              "_drawLabels": function () {},
+              "_drawTitle": function () {},
+              "_getLabelSizes": function () {},
+              "_getLabels": function () {},
+              "_getMatchingVisibleMetas": function () {},
+              "_getScaleLabel": function () {},
               "_isVisible": function () {},
+              "_layers": function () {},
+              "_parseValue": function () {},
               "_tickSize": function () {},
+              "_type": {},
               "afterBuildTicks": function () {},
               "afterCalculateTickRotation": function () {},
               "afterDataLimits": function () {},
@@ -5398,29 +6116,30 @@ var Chart = {
               "beforeUpdate": function () {},
               "buildTicks": function () {},
               "calculateTickRotation": function () {},
-              "closure_uid_386273086": {},
+              "closure_uid_671108055": {},
               "constructor": {
                 "__super__": {
-                  "closure_uid_386273086": {},
+                  "_type": {},
+                  "closure_uid_671108055": {},
                   "hasValue": {
-                    "closure_uid_386273086": {}
+                    "closure_uid_671108055": {}
                   },
                   "initialize": {
-                    "closure_uid_386273086": {}
+                    "closure_uid_671108055": {}
                   },
                   "pivot": {
-                    "closure_uid_386273086": {}
+                    "closure_uid_671108055": {}
                   },
                   "tooltipPosition": {
-                    "closure_uid_386273086": {}
+                    "closure_uid_671108055": {}
                   },
                   "transition": {
-                    "closure_uid_386273086": {}
+                    "closure_uid_671108055": {}
                   }
                 },
-                "closure_uid_386273086": {},
+                "closure_uid_671108055": {},
                 "extend": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 }
               },
               "convertTicksToLabels": function () {},
@@ -5429,6 +6148,7 @@ var Chart = {
               "fit": function () {},
               "getBasePixel": function () {},
               "getBaseValue": function () {},
+              "getDecimalForPixel": function () {},
               "getLabelForIndex": function () {},
               "getPadding": function () {},
               "getPixelForDecimal": function () {},
@@ -5439,29 +6159,30 @@ var Chart = {
               "getValueForPixel": function () {},
               "handleMargins": function () {},
               "hasValue": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
               "initialize": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
               "isFullWidth": function () {},
               "isHorizontal": function () {},
               "mergeTicksOptions": function () {},
               "pivot": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
               "setDimensions": function () {},
               "tooltipPosition": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
               "transition": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
-              "update": function () {}
+              "update": function () {},
+              "zeroLineIndex": {}
             },
-            "closure_uid_386273086": {},
+            "closure_uid_671108055": {},
             "extend": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             }
           },
           "convertTicksToLabels": function () {},
@@ -5470,6 +6191,7 @@ var Chart = {
           "fit": function () {},
           "getBasePixel": function () {},
           "getBaseValue": function () {},
+          "getDecimalForPixel": function () {},
           "getLabelForIndex": function () {},
           "getPadding": function () {},
           "getPixelForDecimal": function () {},
@@ -5483,25 +6205,26 @@ var Chart = {
           "handleMargins": function () {},
           "handleTickRangeOptions": function () {},
           "hasValue": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "initialize": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "isFullWidth": function () {},
           "isHorizontal": function () {},
           "mergeTicksOptions": function () {},
           "pivot": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "setDimensions": function () {},
           "tooltipPosition": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "transition": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
-          "update": function () {}
+          "update": function () {},
+          "zeroLineIndex": {}
         },
         "_defaults": {
           "position": {},
@@ -5509,16 +6232,31 @@ var Chart = {
             "callback": function () {}
           }
         },
-        "closure_uid_386273086": {},
+        "closure_uid_671108055": {},
         "extend": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
       "logarithmic": {
         "__super__": {
           "_autoSkip": function () {},
+          "_computeGridLineItems": function () {},
+          "_computeLabelItems": function () {},
+          "_configure": function () {},
+          "_convertTicksToLabels": function () {},
+          "_draw": function () {},
+          "_drawGrid": function () {},
+          "_drawLabels": function () {},
+          "_drawTitle": function () {},
+          "_getLabelSizes": function () {},
+          "_getLabels": function () {},
+          "_getMatchingVisibleMetas": function () {},
+          "_getScaleLabel": function () {},
           "_isVisible": function () {},
+          "_layers": function () {},
+          "_parseValue": function () {},
           "_tickSize": function () {},
+          "_type": {},
           "afterBuildTicks": function () {},
           "afterCalculateTickRotation": function () {},
           "afterDataLimits": function () {},
@@ -5535,29 +6273,30 @@ var Chart = {
           "beforeUpdate": function () {},
           "buildTicks": function () {},
           "calculateTickRotation": function () {},
-          "closure_uid_386273086": {},
+          "closure_uid_671108055": {},
           "constructor": {
             "__super__": {
-              "closure_uid_386273086": {},
+              "_type": {},
+              "closure_uid_671108055": {},
               "hasValue": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
               "initialize": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
               "pivot": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
               "tooltipPosition": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
               "transition": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               }
             },
-            "closure_uid_386273086": {},
+            "closure_uid_671108055": {},
             "extend": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             }
           },
           "convertTicksToLabels": function () {},
@@ -5566,6 +6305,7 @@ var Chart = {
           "fit": function () {},
           "getBasePixel": function () {},
           "getBaseValue": function () {},
+          "getDecimalForPixel": function () {},
           "getLabelForIndex": function () {},
           "getPadding": function () {},
           "getPixelForDecimal": function () {},
@@ -5576,25 +6316,26 @@ var Chart = {
           "getValueForPixel": function () {},
           "handleMargins": function () {},
           "hasValue": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "initialize": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "isFullWidth": function () {},
           "isHorizontal": function () {},
           "mergeTicksOptions": function () {},
           "pivot": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "setDimensions": function () {},
           "tooltipPosition": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "transition": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
-          "update": function () {}
+          "update": function () {},
+          "zeroLineIndex": {}
         },
         "_defaults": {
           "position": {},
@@ -5603,15 +6344,30 @@ var Chart = {
           }
         },
         "extend": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
       "radialLinear": {
         "__super__": {
           "_autoSkip": function () {},
+          "_computeGridLineItems": function () {},
+          "_computeLabelItems": function () {},
           "_computeTickLimit": function () {},
+          "_configure": function () {},
+          "_convertTicksToLabels": function () {},
+          "_draw": function () {},
+          "_drawGrid": function () {},
+          "_drawLabels": function () {},
+          "_drawTitle": function () {},
+          "_getLabelSizes": function () {},
+          "_getLabels": function () {},
+          "_getMatchingVisibleMetas": function () {},
+          "_getScaleLabel": function () {},
           "_isVisible": function () {},
+          "_layers": function () {},
+          "_parseValue": function () {},
           "_tickSize": function () {},
+          "_type": {},
           "afterBuildTicks": function () {},
           "afterCalculateTickRotation": function () {},
           "afterDataLimits": function () {},
@@ -5628,12 +6384,27 @@ var Chart = {
           "beforeUpdate": function () {},
           "buildTicks": function () {},
           "calculateTickRotation": function () {},
-          "closure_uid_386273086": {},
+          "closure_uid_671108055": {},
           "constructor": {
             "__super__": {
               "_autoSkip": function () {},
+              "_computeGridLineItems": function () {},
+              "_computeLabelItems": function () {},
+              "_configure": function () {},
+              "_convertTicksToLabels": function () {},
+              "_draw": function () {},
+              "_drawGrid": function () {},
+              "_drawLabels": function () {},
+              "_drawTitle": function () {},
+              "_getLabelSizes": function () {},
+              "_getLabels": function () {},
+              "_getMatchingVisibleMetas": function () {},
+              "_getScaleLabel": function () {},
               "_isVisible": function () {},
+              "_layers": function () {},
+              "_parseValue": function () {},
               "_tickSize": function () {},
+              "_type": {},
               "afterBuildTicks": function () {},
               "afterCalculateTickRotation": function () {},
               "afterDataLimits": function () {},
@@ -5650,29 +6421,30 @@ var Chart = {
               "beforeUpdate": function () {},
               "buildTicks": function () {},
               "calculateTickRotation": function () {},
-              "closure_uid_386273086": {},
+              "closure_uid_671108055": {},
               "constructor": {
                 "__super__": {
-                  "closure_uid_386273086": {},
+                  "_type": {},
+                  "closure_uid_671108055": {},
                   "hasValue": {
-                    "closure_uid_386273086": {}
+                    "closure_uid_671108055": {}
                   },
                   "initialize": {
-                    "closure_uid_386273086": {}
+                    "closure_uid_671108055": {}
                   },
                   "pivot": {
-                    "closure_uid_386273086": {}
+                    "closure_uid_671108055": {}
                   },
                   "tooltipPosition": {
-                    "closure_uid_386273086": {}
+                    "closure_uid_671108055": {}
                   },
                   "transition": {
-                    "closure_uid_386273086": {}
+                    "closure_uid_671108055": {}
                   }
                 },
-                "closure_uid_386273086": {},
+                "closure_uid_671108055": {},
                 "extend": {
-                  "closure_uid_386273086": {}
+                  "closure_uid_671108055": {}
                 }
               },
               "convertTicksToLabels": function () {},
@@ -5681,6 +6453,7 @@ var Chart = {
               "fit": function () {},
               "getBasePixel": function () {},
               "getBaseValue": function () {},
+              "getDecimalForPixel": function () {},
               "getLabelForIndex": function () {},
               "getPadding": function () {},
               "getPixelForDecimal": function () {},
@@ -5691,29 +6464,30 @@ var Chart = {
               "getValueForPixel": function () {},
               "handleMargins": function () {},
               "hasValue": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
               "initialize": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
               "isFullWidth": function () {},
               "isHorizontal": function () {},
               "mergeTicksOptions": function () {},
               "pivot": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
               "setDimensions": function () {},
               "tooltipPosition": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
               "transition": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
-              "update": function () {}
+              "update": function () {},
+              "zeroLineIndex": {}
             },
-            "closure_uid_386273086": {},
+            "closure_uid_671108055": {},
             "extend": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             }
           },
           "convertTicksToLabels": function () {},
@@ -5722,6 +6496,7 @@ var Chart = {
           "fit": function () {},
           "getBasePixel": function () {},
           "getBaseValue": function () {},
+          "getDecimalForPixel": function () {},
           "getLabelForIndex": function () {},
           "getPadding": function () {},
           "getPixelForDecimal": function () {},
@@ -5735,25 +6510,26 @@ var Chart = {
           "handleMargins": function () {},
           "handleTickRangeOptions": function () {},
           "hasValue": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "initialize": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "isFullWidth": function () {},
           "isHorizontal": function () {},
           "mergeTicksOptions": function () {},
           "pivot": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "setDimensions": function () {},
           "tooltipPosition": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "transition": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
-          "update": function () {}
+          "update": function () {},
+          "zeroLineIndex": {}
         },
         "_defaults": {
           "angleLines": {
@@ -5782,16 +6558,31 @@ var Chart = {
             "showLabelBackdrop": {}
           }
         },
-        "closure_uid_386273086": {},
+        "closure_uid_671108055": {},
         "extend": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       },
       "time": {
         "__super__": {
           "_autoSkip": function () {},
+          "_computeGridLineItems": function () {},
+          "_computeLabelItems": function () {},
+          "_configure": function () {},
+          "_convertTicksToLabels": function () {},
+          "_draw": function () {},
+          "_drawGrid": function () {},
+          "_drawLabels": function () {},
+          "_drawTitle": function () {},
+          "_getLabelSizes": function () {},
+          "_getLabels": function () {},
+          "_getMatchingVisibleMetas": function () {},
+          "_getScaleLabel": function () {},
           "_isVisible": function () {},
+          "_layers": function () {},
+          "_parseValue": function () {},
           "_tickSize": function () {},
+          "_type": {},
           "afterBuildTicks": function () {},
           "afterCalculateTickRotation": function () {},
           "afterDataLimits": function () {},
@@ -5808,29 +6599,30 @@ var Chart = {
           "beforeUpdate": function () {},
           "buildTicks": function () {},
           "calculateTickRotation": function () {},
-          "closure_uid_386273086": {},
+          "closure_uid_671108055": {},
           "constructor": {
             "__super__": {
-              "closure_uid_386273086": {},
+              "_type": {},
+              "closure_uid_671108055": {},
               "hasValue": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
               "initialize": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
               "pivot": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
               "tooltipPosition": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               },
               "transition": {
-                "closure_uid_386273086": {}
+                "closure_uid_671108055": {}
               }
             },
-            "closure_uid_386273086": {},
+            "closure_uid_671108055": {},
             "extend": {
-              "closure_uid_386273086": {}
+              "closure_uid_671108055": {}
             }
           },
           "convertTicksToLabels": function () {},
@@ -5839,6 +6631,7 @@ var Chart = {
           "fit": function () {},
           "getBasePixel": function () {},
           "getBaseValue": function () {},
+          "getDecimalForPixel": function () {},
           "getLabelForIndex": function () {},
           "getPadding": function () {},
           "getPixelForDecimal": function () {},
@@ -5849,25 +6642,26 @@ var Chart = {
           "getValueForPixel": function () {},
           "handleMargins": function () {},
           "hasValue": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "initialize": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "isFullWidth": function () {},
           "isHorizontal": function () {},
           "mergeTicksOptions": function () {},
           "pivot": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "setDimensions": function () {},
           "tooltipPosition": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
           "transition": {
-            "closure_uid_386273086": {}
+            "closure_uid_671108055": {}
           },
-          "update": function () {}
+          "update": function () {},
+          "zeroLineIndex": {}
         },
         "_defaults": {
           "adapters": {},
@@ -5884,7 +6678,6 @@ var Chart = {
           "time": {
             "displayFormat": {},
             "displayFormats": {},
-            "format": {},
             "isoWeekday": {},
             "minUnit": {},
             "parser": {},
@@ -5893,7 +6686,7 @@ var Chart = {
           }
         },
         "extend": {
-          "closure_uid_386273086": {}
+          "closure_uid_671108055": {}
         }
       }
     },
@@ -5955,7 +6748,6 @@ var Chart = {
         "time": {
           "displayFormat": {},
           "displayFormats": {},
-          "format": {},
           "isoWeekday": {},
           "minUnit": {},
           "parser": {},
@@ -5973,6 +6765,8 @@ var Chart = {
 };
 Chart.prototype = {
   "_drawTooltip": function () {},
+  "_getSortedDatasetMetas": function () {},
+  "_getSortedVisibleDatasetMetas": function () {},
   "bindEvents": function () {},
   "buildOrUpdateControllers": function () {},
   "buildOrUpdateScales": function () {},
@@ -6012,6 +6806,7 @@ Chart.prototype = {
   "updateLayout": function () {}
 };
 Chart.Animation.prototype = {
+  "_type": function () {},
   "chart": function () {},
   "constructor": function () {},
   "currentStep": function () {},
@@ -6028,6 +6823,8 @@ Chart.Animation.prototype = {
 };
 Chart.Chart.prototype = {
   "_drawTooltip": function () {},
+  "_getSortedDatasetMetas": function () {},
+  "_getSortedVisibleDatasetMetas": function () {},
   "bindEvents": function () {},
   "buildOrUpdateControllers": function () {},
   "buildOrUpdateScales": function () {},
@@ -6067,6 +6864,7 @@ Chart.Chart.prototype = {
   "updateLayout": function () {}
 };
 Chart.Chart.Animation.prototype = {
+  "_type": function () {},
   "chart": function () {},
   "constructor": function () {},
   "currentStep": function () {},
@@ -6082,10 +6880,18 @@ Chart.Chart.Animation.prototype = {
   "transition": function () {}
 };
 Chart.Chart.DatasetController.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -6098,6 +6904,7 @@ Chart.Chart.DatasetController.prototype = {
   "getDataset": function () {},
   "getMeta": function () {},
   "getScaleForId": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -6115,6 +6922,7 @@ Chart.Chart.DatasetController.prototype = {
   "updateIndex": function () {}
 };
 Chart.Chart.Element.prototype = {
+  "_type": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "pivot": function () {},
@@ -6123,6 +6931,7 @@ Chart.Chart.Element.prototype = {
 };
 Chart.Chart.Legend.prototype = {
   "_getLegendItemAt": function () {},
+  "_type": function () {},
   "afterBuildLabels": function () {},
   "afterFit": function () {},
   "afterSetDimensions": function () {},
@@ -6147,9 +6956,24 @@ Chart.Chart.Legend.prototype = {
 };
 Chart.Chart.LinearScaleBase.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
   "_computeTickLimit": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -6173,6 +6997,7 @@ Chart.Chart.LinearScaleBase.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -6194,12 +7019,28 @@ Chart.Chart.LinearScaleBase.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Chart.LinearScaleBase.__super__.constructor.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -6223,6 +7064,7 @@ Chart.Chart.LinearScaleBase.__super__.constructor.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -6241,9 +7083,11 @@ Chart.Chart.LinearScaleBase.__super__.constructor.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Chart.PluginBase.prototype = {
+  "_type": function () {},
   "constructor": function () {},
   "hasValue": function () {},
   "initialize": function () {},
@@ -6253,8 +7097,23 @@ Chart.Chart.PluginBase.prototype = {
 };
 Chart.Chart.Scale.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -6278,6 +7137,7 @@ Chart.Chart.Scale.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -6296,9 +7156,11 @@ Chart.Chart.Scale.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Chart.Title.prototype = {
+  "_type": function () {},
   "afterBuildLabels": function () {},
   "afterFit": function () {},
   "afterSetDimensions": function () {},
@@ -6321,6 +7183,7 @@ Chart.Chart.Title.prototype = {
   "update": function () {}
 };
 Chart.Chart.Tooltip.prototype = {
+  "_type": function () {},
   "constructor": function () {},
   "draw": function () {},
   "drawBackground": function () {},
@@ -6353,12 +7216,19 @@ Chart.Chart._adapters._date.prototype = {
   "startOf": function () {}
 };
 Chart.Chart.controllers.bar.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getStacks": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
-  "_resolveElementOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "_updateElementGeometry": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
@@ -6378,6 +7248,7 @@ Chart.Chart.controllers.bar.prototype = {
   "getScaleForId": function () {},
   "getStackCount": function () {},
   "getStackIndex": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -6396,11 +7267,18 @@ Chart.Chart.controllers.bar.prototype = {
   "updateIndex": function () {}
 };
 Chart.Chart.controllers.bubble.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
-  "_resolveElementOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -6414,6 +7292,7 @@ Chart.Chart.controllers.bubble.prototype = {
   "getDataset": function () {},
   "getMeta": function () {},
   "getScaleForId": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -6432,6 +7311,9 @@ Chart.Chart.controllers.bubble.prototype = {
   "updateIndex": function () {}
 };
 Chart.Chart.controllers.doughnut.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getRingWeight": function () {},
@@ -6439,7 +7321,11 @@ Chart.Chart.controllers.doughnut.prototype = {
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
   "_getVisibleDatasetWeightTotal": function () {},
-  "_resolveElementOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -6457,6 +7343,7 @@ Chart.Chart.controllers.doughnut.prototype = {
   "getMeta": function () {},
   "getRingIndex": function () {},
   "getScaleForId": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -6475,12 +7362,19 @@ Chart.Chart.controllers.doughnut.prototype = {
   "updateIndex": function () {}
 };
 Chart.Chart.controllers.horizontalBar.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getStacks": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
-  "_resolveElementOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "_updateElementGeometry": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
@@ -6500,6 +7394,7 @@ Chart.Chart.controllers.horizontalBar.prototype = {
   "getScaleForId": function () {},
   "getStackCount": function () {},
   "getStackIndex": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -6518,12 +7413,19 @@ Chart.Chart.controllers.horizontalBar.prototype = {
   "updateIndex": function () {}
 };
 Chart.Chart.controllers.horizontalBar.__super__.constructor.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getStacks": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
-  "_resolveElementOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "_updateElementGeometry": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
@@ -6543,6 +7445,7 @@ Chart.Chart.controllers.horizontalBar.__super__.constructor.prototype = {
   "getScaleForId": function () {},
   "getStackCount": function () {},
   "getStackIndex": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -6561,6 +7464,7 @@ Chart.Chart.controllers.horizontalBar.__super__.constructor.prototype = {
   "updateIndex": function () {}
 };
 Chart.Chart.controllers.horizontalBar.__super__.dataElementType.prototype = {
+  "_type": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -6577,12 +7481,18 @@ Chart.Chart.controllers.horizontalBar.__super__.dataElementType.prototype = {
   "transition": function () {}
 };
 Chart.Chart.controllers.line.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
-  "_resolveLineOptions": function () {},
-  "_resolvePointOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -6597,6 +7507,7 @@ Chart.Chart.controllers.line.prototype = {
   "getDataset": function () {},
   "getMeta": function () {},
   "getScaleForId": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -6616,6 +7527,9 @@ Chart.Chart.controllers.line.prototype = {
   "updateIndex": function () {}
 };
 Chart.Chart.controllers.pie.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getRingWeight": function () {},
@@ -6623,7 +7537,11 @@ Chart.Chart.controllers.pie.prototype = {
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
   "_getVisibleDatasetWeightTotal": function () {},
-  "_resolveElementOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -6641,6 +7559,7 @@ Chart.Chart.controllers.pie.prototype = {
   "getMeta": function () {},
   "getRingIndex": function () {},
   "getScaleForId": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -6660,11 +7579,18 @@ Chart.Chart.controllers.pie.prototype = {
 };
 Chart.Chart.controllers.polarArea.prototype = {
   "_computeAngle": function () {},
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
-  "_resolveElementOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "_updateRadius": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
@@ -6680,6 +7606,7 @@ Chart.Chart.controllers.polarArea.prototype = {
   "getDataset": function () {},
   "getMeta": function () {},
   "getScaleForId": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -6698,12 +7625,18 @@ Chart.Chart.controllers.polarArea.prototype = {
   "updateIndex": function () {}
 };
 Chart.Chart.controllers.radar.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
-  "_resolveLineOptions": function () {},
-  "_resolvePointOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -6717,6 +7650,7 @@ Chart.Chart.controllers.radar.prototype = {
   "getDataset": function () {},
   "getMeta": function () {},
   "getScaleForId": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -6736,12 +7670,18 @@ Chart.Chart.controllers.radar.prototype = {
   "updateIndex": function () {}
 };
 Chart.Chart.controllers.scatter.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
-  "_resolveLineOptions": function () {},
-  "_resolvePointOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -6756,6 +7696,7 @@ Chart.Chart.controllers.scatter.prototype = {
   "getDataset": function () {},
   "getMeta": function () {},
   "getScaleForId": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -6775,6 +7716,7 @@ Chart.Chart.controllers.scatter.prototype = {
   "updateIndex": function () {}
 };
 Chart.Chart.elements.Arc.prototype = {
+  "_type": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -6788,6 +7730,7 @@ Chart.Chart.elements.Arc.prototype = {
   "transition": function () {}
 };
 Chart.Chart.elements.Line.prototype = {
+  "_type": function () {},
   "constructor": function () {},
   "draw": function () {},
   "hasValue": function () {},
@@ -6797,6 +7740,7 @@ Chart.Chart.elements.Line.prototype = {
   "transition": function () {}
 };
 Chart.Chart.elements.Point.prototype = {
+  "_type": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -6812,6 +7756,7 @@ Chart.Chart.elements.Point.prototype = {
   "transition": function () {}
 };
 Chart.Chart.elements.Rectangle.prototype = {
+  "_type": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -6829,8 +7774,23 @@ Chart.Chart.elements.Rectangle.prototype = {
 };
 Chart.Chart.scaleService.constructors.category.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -6854,8 +7814,8 @@ Chart.Chart.scaleService.constructors.category.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
-  "getLabels": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
   "getPixelForTick": function () {},
@@ -6873,12 +7833,28 @@ Chart.Chart.scaleService.constructors.category.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Chart.scaleService.constructors.category.__super__.constructor.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -6902,6 +7878,7 @@ Chart.Chart.scaleService.constructors.category.__super__.constructor.prototype =
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -6920,13 +7897,29 @@ Chart.Chart.scaleService.constructors.category.__super__.constructor.prototype =
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Chart.scaleService.constructors.linear.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
   "_computeTickLimit": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -6950,6 +7943,7 @@ Chart.Chart.scaleService.constructors.linear.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -6971,13 +7965,29 @@ Chart.Chart.scaleService.constructors.linear.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Chart.scaleService.constructors.linear.__super__.constructor.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
   "_computeTickLimit": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7001,6 +8011,7 @@ Chart.Chart.scaleService.constructors.linear.__super__.constructor.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -7022,12 +8033,28 @@ Chart.Chart.scaleService.constructors.linear.__super__.constructor.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Chart.scaleService.constructors.linear.__super__.constructor.__super__.constructor.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7051,6 +8078,7 @@ Chart.Chart.scaleService.constructors.linear.__super__.constructor.__super__.con
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -7069,13 +8097,29 @@ Chart.Chart.scaleService.constructors.linear.__super__.constructor.__super__.con
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Chart.scaleService.constructors.logarithmic.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
   "_getFirstTickValue": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7092,7 +8136,7 @@ Chart.Chart.scaleService.constructors.logarithmic.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -7100,6 +8144,7 @@ Chart.Chart.scaleService.constructors.logarithmic.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -7119,12 +8164,28 @@ Chart.Chart.scaleService.constructors.logarithmic.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Chart.scaleService.constructors.logarithmic.__super__.constructor.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7141,7 +8202,7 @@ Chart.Chart.scaleService.constructors.logarithmic.__super__.constructor.prototyp
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -7149,6 +8210,7 @@ Chart.Chart.scaleService.constructors.logarithmic.__super__.constructor.prototyp
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -7167,13 +8229,29 @@ Chart.Chart.scaleService.constructors.logarithmic.__super__.constructor.prototyp
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Chart.scaleService.constructors.radialLinear.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
   "_computeTickLimit": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7190,7 +8268,7 @@ Chart.Chart.scaleService.constructors.radialLinear.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -7199,6 +8277,7 @@ Chart.Chart.scaleService.constructors.radialLinear.prototype = {
   "getBasePixel": function () {},
   "getBasePosition": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getDistanceFromCenterForValue": function () {},
   "getIndexAngle": function () {},
   "getLabelForIndex": function () {},
@@ -7226,13 +8305,29 @@ Chart.Chart.scaleService.constructors.radialLinear.prototype = {
   "setReductions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Chart.scaleService.constructors.radialLinear.__super__.constructor.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
   "_computeTickLimit": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7249,7 +8344,7 @@ Chart.Chart.scaleService.constructors.radialLinear.__super__.constructor.prototy
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -7257,6 +8352,7 @@ Chart.Chart.scaleService.constructors.radialLinear.__super__.constructor.prototy
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -7278,12 +8374,28 @@ Chart.Chart.scaleService.constructors.radialLinear.__super__.constructor.prototy
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Chart.scaleService.constructors.radialLinear.__super__.constructor.__super__.constructor.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7300,7 +8412,7 @@ Chart.Chart.scaleService.constructors.radialLinear.__super__.constructor.__super
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -7308,6 +8420,7 @@ Chart.Chart.scaleService.constructors.radialLinear.__super__.constructor.__super
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -7326,12 +8439,29 @@ Chart.Chart.scaleService.constructors.radialLinear.__super__.constructor.__super
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Chart.scaleService.constructors.time.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSize": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7348,7 +8478,7 @@ Chart.Chart.scaleService.constructors.time.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -7356,6 +8486,7 @@ Chart.Chart.scaleService.constructors.time.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelCapacity": function () {},
   "getLabelForIndex": function () {},
   "getLabelWidth": function () {},
@@ -7378,12 +8509,28 @@ Chart.Chart.scaleService.constructors.time.prototype = {
   "tickFormatFunction": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Chart.scaleService.constructors.time.__super__.constructor.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7400,7 +8547,7 @@ Chart.Chart.scaleService.constructors.time.__super__.constructor.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -7408,6 +8555,7 @@ Chart.Chart.scaleService.constructors.time.__super__.constructor.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -7426,10 +8574,13 @@ Chart.Chart.scaleService.constructors.time.__super__.constructor.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Controller.prototype = {
   "_drawTooltip": function () {},
+  "_getSortedDatasetMetas": function () {},
+  "_getSortedVisibleDatasetMetas": function () {},
   "bindEvents": function () {},
   "buildOrUpdateControllers": function () {},
   "buildOrUpdateScales": function () {},
@@ -7469,8 +8620,9 @@ Chart.Controller.prototype = {
   "updateLayout": function () {}
 };
 Chart.Controller.Animation.prototype = {
+  "_type": function () {},
   "chart": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "currentStep": function () {},
   "easing": function () {},
@@ -7485,10 +8637,18 @@ Chart.Controller.Animation.prototype = {
   "transition": function () {}
 };
 Chart.Controller.DatasetController.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -7501,6 +8661,7 @@ Chart.Controller.DatasetController.prototype = {
   "getDataset": function () {},
   "getMeta": function () {},
   "getScaleForId": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -7518,7 +8679,8 @@ Chart.Controller.DatasetController.prototype = {
   "updateIndex": function () {}
 };
 Chart.Controller.Element.prototype = {
-  "closure_uid_386273086": function () {},
+  "_type": function () {},
+  "closure_uid_671108055": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "pivot": function () {},
@@ -7527,6 +8689,7 @@ Chart.Controller.Element.prototype = {
 };
 Chart.Controller.Legend.prototype = {
   "_getLegendItemAt": function () {},
+  "_type": function () {},
   "afterBuildLabels": function () {},
   "afterFit": function () {},
   "afterSetDimensions": function () {},
@@ -7536,7 +8699,7 @@ Chart.Controller.Legend.prototype = {
   "beforeSetDimensions": function () {},
   "beforeUpdate": function () {},
   "buildLabels": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "draw": function () {},
   "fit": function () {},
@@ -7552,9 +8715,24 @@ Chart.Controller.Legend.prototype = {
 };
 Chart.Controller.LinearScaleBase.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
   "_computeTickLimit": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7571,7 +8749,7 @@ Chart.Controller.LinearScaleBase.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -7579,6 +8757,7 @@ Chart.Controller.LinearScaleBase.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -7600,12 +8779,28 @@ Chart.Controller.LinearScaleBase.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Controller.LinearScaleBase.__super__.constructor.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7622,7 +8817,7 @@ Chart.Controller.LinearScaleBase.__super__.constructor.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -7630,6 +8825,7 @@ Chart.Controller.LinearScaleBase.__super__.constructor.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -7648,10 +8844,12 @@ Chart.Controller.LinearScaleBase.__super__.constructor.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Controller.PluginBase.prototype = {
-  "closure_uid_386273086": function () {},
+  "_type": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "hasValue": function () {},
   "initialize": function () {},
@@ -7661,8 +8859,23 @@ Chart.Controller.PluginBase.prototype = {
 };
 Chart.Controller.Scale.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -7679,7 +8892,7 @@ Chart.Controller.Scale.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -7687,6 +8900,7 @@ Chart.Controller.Scale.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -7705,9 +8919,11 @@ Chart.Controller.Scale.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Controller.Title.prototype = {
+  "_type": function () {},
   "afterBuildLabels": function () {},
   "afterFit": function () {},
   "afterSetDimensions": function () {},
@@ -7717,7 +8933,7 @@ Chart.Controller.Title.prototype = {
   "beforeSetDimensions": function () {},
   "beforeUpdate": function () {},
   "buildLabels": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "draw": function () {},
   "fit": function () {},
@@ -7731,7 +8947,8 @@ Chart.Controller.Title.prototype = {
   "update": function () {}
 };
 Chart.Controller.Tooltip.prototype = {
-  "closure_uid_386273086": function () {},
+  "_type": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "draw": function () {},
   "drawBackground": function () {},
@@ -7764,12 +8981,19 @@ Chart.Controller._adapters._date.prototype = {
   "startOf": function () {}
 };
 Chart.Controller.controllers.bar.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getStacks": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
-  "_resolveElementOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "_updateElementGeometry": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
@@ -7789,6 +9013,7 @@ Chart.Controller.controllers.bar.prototype = {
   "getScaleForId": function () {},
   "getStackCount": function () {},
   "getStackIndex": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -7807,11 +9032,18 @@ Chart.Controller.controllers.bar.prototype = {
   "updateIndex": function () {}
 };
 Chart.Controller.controllers.bubble.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
-  "_resolveElementOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -7825,6 +9057,7 @@ Chart.Controller.controllers.bubble.prototype = {
   "getDataset": function () {},
   "getMeta": function () {},
   "getScaleForId": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -7843,6 +9076,9 @@ Chart.Controller.controllers.bubble.prototype = {
   "updateIndex": function () {}
 };
 Chart.Controller.controllers.doughnut.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getRingWeight": function () {},
@@ -7850,7 +9086,11 @@ Chart.Controller.controllers.doughnut.prototype = {
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
   "_getVisibleDatasetWeightTotal": function () {},
-  "_resolveElementOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -7868,6 +9108,7 @@ Chart.Controller.controllers.doughnut.prototype = {
   "getMeta": function () {},
   "getRingIndex": function () {},
   "getScaleForId": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -7886,12 +9127,19 @@ Chart.Controller.controllers.doughnut.prototype = {
   "updateIndex": function () {}
 };
 Chart.Controller.controllers.horizontalBar.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getStacks": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
-  "_resolveElementOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "_updateElementGeometry": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
@@ -7911,6 +9159,7 @@ Chart.Controller.controllers.horizontalBar.prototype = {
   "getScaleForId": function () {},
   "getStackCount": function () {},
   "getStackIndex": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -7929,12 +9178,19 @@ Chart.Controller.controllers.horizontalBar.prototype = {
   "updateIndex": function () {}
 };
 Chart.Controller.controllers.horizontalBar.__super__.constructor.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getStacks": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
-  "_resolveElementOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "_updateElementGeometry": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
@@ -7954,6 +9210,7 @@ Chart.Controller.controllers.horizontalBar.__super__.constructor.prototype = {
   "getScaleForId": function () {},
   "getStackCount": function () {},
   "getStackIndex": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -7972,7 +9229,8 @@ Chart.Controller.controllers.horizontalBar.__super__.constructor.prototype = {
   "updateIndex": function () {}
 };
 Chart.Controller.controllers.horizontalBar.__super__.dataElementType.prototype = {
-  "closure_uid_386273086": function () {},
+  "_type": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -7989,12 +9247,18 @@ Chart.Controller.controllers.horizontalBar.__super__.dataElementType.prototype =
   "transition": function () {}
 };
 Chart.Controller.controllers.line.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
-  "_resolveLineOptions": function () {},
-  "_resolvePointOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -8009,6 +9273,7 @@ Chart.Controller.controllers.line.prototype = {
   "getDataset": function () {},
   "getMeta": function () {},
   "getScaleForId": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -8028,6 +9293,9 @@ Chart.Controller.controllers.line.prototype = {
   "updateIndex": function () {}
 };
 Chart.Controller.controllers.pie.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getRingWeight": function () {},
@@ -8035,7 +9303,11 @@ Chart.Controller.controllers.pie.prototype = {
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
   "_getVisibleDatasetWeightTotal": function () {},
-  "_resolveElementOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -8053,6 +9325,7 @@ Chart.Controller.controllers.pie.prototype = {
   "getMeta": function () {},
   "getRingIndex": function () {},
   "getScaleForId": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -8072,11 +9345,18 @@ Chart.Controller.controllers.pie.prototype = {
 };
 Chart.Controller.controllers.polarArea.prototype = {
   "_computeAngle": function () {},
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
-  "_resolveElementOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "_updateRadius": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
@@ -8092,6 +9372,7 @@ Chart.Controller.controllers.polarArea.prototype = {
   "getDataset": function () {},
   "getMeta": function () {},
   "getScaleForId": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -8110,12 +9391,18 @@ Chart.Controller.controllers.polarArea.prototype = {
   "updateIndex": function () {}
 };
 Chart.Controller.controllers.radar.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
-  "_resolveLineOptions": function () {},
-  "_resolvePointOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -8129,6 +9416,7 @@ Chart.Controller.controllers.radar.prototype = {
   "getDataset": function () {},
   "getMeta": function () {},
   "getScaleForId": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -8148,12 +9436,18 @@ Chart.Controller.controllers.radar.prototype = {
   "updateIndex": function () {}
 };
 Chart.Controller.controllers.scatter.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
-  "_resolveLineOptions": function () {},
-  "_resolvePointOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -8168,6 +9462,7 @@ Chart.Controller.controllers.scatter.prototype = {
   "getDataset": function () {},
   "getMeta": function () {},
   "getScaleForId": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -8187,7 +9482,8 @@ Chart.Controller.controllers.scatter.prototype = {
   "updateIndex": function () {}
 };
 Chart.Controller.elements.Arc.prototype = {
-  "closure_uid_386273086": function () {},
+  "_type": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -8201,7 +9497,8 @@ Chart.Controller.elements.Arc.prototype = {
   "transition": function () {}
 };
 Chart.Controller.elements.Line.prototype = {
-  "closure_uid_386273086": function () {},
+  "_type": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "draw": function () {},
   "hasValue": function () {},
@@ -8211,7 +9508,8 @@ Chart.Controller.elements.Line.prototype = {
   "transition": function () {}
 };
 Chart.Controller.elements.Point.prototype = {
-  "closure_uid_386273086": function () {},
+  "_type": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -8227,7 +9525,8 @@ Chart.Controller.elements.Point.prototype = {
   "transition": function () {}
 };
 Chart.Controller.elements.Rectangle.prototype = {
-  "closure_uid_386273086": function () {},
+  "_type": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -8245,8 +9544,23 @@ Chart.Controller.elements.Rectangle.prototype = {
 };
 Chart.Controller.scaleService.constructors.category.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8263,7 +9577,7 @@ Chart.Controller.scaleService.constructors.category.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8271,8 +9585,8 @@ Chart.Controller.scaleService.constructors.category.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
-  "getLabels": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
   "getPixelForTick": function () {},
@@ -8290,12 +9604,28 @@ Chart.Controller.scaleService.constructors.category.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Controller.scaleService.constructors.category.__super__.constructor.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8312,7 +9642,7 @@ Chart.Controller.scaleService.constructors.category.__super__.constructor.protot
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8320,6 +9650,7 @@ Chart.Controller.scaleService.constructors.category.__super__.constructor.protot
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -8338,13 +9669,29 @@ Chart.Controller.scaleService.constructors.category.__super__.constructor.protot
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Controller.scaleService.constructors.linear.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
   "_computeTickLimit": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8361,7 +9708,7 @@ Chart.Controller.scaleService.constructors.linear.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8369,6 +9716,7 @@ Chart.Controller.scaleService.constructors.linear.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -8390,13 +9738,29 @@ Chart.Controller.scaleService.constructors.linear.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Controller.scaleService.constructors.linear.__super__.constructor.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
   "_computeTickLimit": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8413,7 +9777,7 @@ Chart.Controller.scaleService.constructors.linear.__super__.constructor.prototyp
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8421,6 +9785,7 @@ Chart.Controller.scaleService.constructors.linear.__super__.constructor.prototyp
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -8442,12 +9807,28 @@ Chart.Controller.scaleService.constructors.linear.__super__.constructor.prototyp
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Controller.scaleService.constructors.linear.__super__.constructor.__super__.constructor.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8464,7 +9845,7 @@ Chart.Controller.scaleService.constructors.linear.__super__.constructor.__super_
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8472,6 +9853,7 @@ Chart.Controller.scaleService.constructors.linear.__super__.constructor.__super_
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -8490,13 +9872,29 @@ Chart.Controller.scaleService.constructors.linear.__super__.constructor.__super_
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Controller.scaleService.constructors.logarithmic.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
   "_getFirstTickValue": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8513,7 +9911,7 @@ Chart.Controller.scaleService.constructors.logarithmic.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8521,6 +9919,7 @@ Chart.Controller.scaleService.constructors.logarithmic.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -8540,12 +9939,28 @@ Chart.Controller.scaleService.constructors.logarithmic.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Controller.scaleService.constructors.logarithmic.__super__.constructor.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8562,7 +9977,7 @@ Chart.Controller.scaleService.constructors.logarithmic.__super__.constructor.pro
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8570,6 +9985,7 @@ Chart.Controller.scaleService.constructors.logarithmic.__super__.constructor.pro
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -8588,13 +10004,29 @@ Chart.Controller.scaleService.constructors.logarithmic.__super__.constructor.pro
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Controller.scaleService.constructors.radialLinear.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
   "_computeTickLimit": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8611,7 +10043,7 @@ Chart.Controller.scaleService.constructors.radialLinear.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8620,6 +10052,7 @@ Chart.Controller.scaleService.constructors.radialLinear.prototype = {
   "getBasePixel": function () {},
   "getBasePosition": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getDistanceFromCenterForValue": function () {},
   "getIndexAngle": function () {},
   "getLabelForIndex": function () {},
@@ -8647,13 +10080,29 @@ Chart.Controller.scaleService.constructors.radialLinear.prototype = {
   "setReductions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Controller.scaleService.constructors.radialLinear.__super__.constructor.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
   "_computeTickLimit": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8670,7 +10119,7 @@ Chart.Controller.scaleService.constructors.radialLinear.__super__.constructor.pr
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8678,6 +10127,7 @@ Chart.Controller.scaleService.constructors.radialLinear.__super__.constructor.pr
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -8699,12 +10149,28 @@ Chart.Controller.scaleService.constructors.radialLinear.__super__.constructor.pr
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Controller.scaleService.constructors.radialLinear.__super__.constructor.__super__.constructor.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8721,7 +10187,7 @@ Chart.Controller.scaleService.constructors.radialLinear.__super__.constructor.__
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8729,6 +10195,7 @@ Chart.Controller.scaleService.constructors.radialLinear.__super__.constructor.__
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -8747,12 +10214,29 @@ Chart.Controller.scaleService.constructors.radialLinear.__super__.constructor.__
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Controller.scaleService.constructors.time.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSize": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8769,7 +10253,7 @@ Chart.Controller.scaleService.constructors.time.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8777,6 +10261,7 @@ Chart.Controller.scaleService.constructors.time.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelCapacity": function () {},
   "getLabelForIndex": function () {},
   "getLabelWidth": function () {},
@@ -8799,12 +10284,28 @@ Chart.Controller.scaleService.constructors.time.prototype = {
   "tickFormatFunction": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Controller.scaleService.constructors.time.__super__.constructor.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8821,7 +10322,7 @@ Chart.Controller.scaleService.constructors.time.__super__.constructor.prototype 
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8829,6 +10330,7 @@ Chart.Controller.scaleService.constructors.time.__super__.constructor.prototype 
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -8847,13 +10349,22 @@ Chart.Controller.scaleService.constructors.time.__super__.constructor.prototype 
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.DatasetController.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -8866,6 +10377,7 @@ Chart.DatasetController.prototype = {
   "getDataset": function () {},
   "getMeta": function () {},
   "getScaleForId": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -8883,7 +10395,8 @@ Chart.DatasetController.prototype = {
   "updateIndex": function () {}
 };
 Chart.Element.prototype = {
-  "closure_uid_386273086": function () {},
+  "_type": function () {},
+  "closure_uid_671108055": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "pivot": function () {},
@@ -8892,6 +10405,7 @@ Chart.Element.prototype = {
 };
 Chart.Legend.prototype = {
   "_getLegendItemAt": function () {},
+  "_type": function () {},
   "afterBuildLabels": function () {},
   "afterFit": function () {},
   "afterSetDimensions": function () {},
@@ -8901,7 +10415,7 @@ Chart.Legend.prototype = {
   "beforeSetDimensions": function () {},
   "beforeUpdate": function () {},
   "buildLabels": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "draw": function () {},
   "fit": function () {},
@@ -8917,9 +10431,24 @@ Chart.Legend.prototype = {
 };
 Chart.LinearScaleBase.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
   "_computeTickLimit": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8936,7 +10465,7 @@ Chart.LinearScaleBase.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8944,6 +10473,7 @@ Chart.LinearScaleBase.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -8965,12 +10495,28 @@ Chart.LinearScaleBase.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.LinearScaleBase.__super__.constructor.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -8987,7 +10533,7 @@ Chart.LinearScaleBase.__super__.constructor.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8995,6 +10541,7 @@ Chart.LinearScaleBase.__super__.constructor.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -9013,10 +10560,12 @@ Chart.LinearScaleBase.__super__.constructor.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.PluginBase.prototype = {
-  "closure_uid_386273086": function () {},
+  "_type": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "hasValue": function () {},
   "initialize": function () {},
@@ -9026,8 +10575,23 @@ Chart.PluginBase.prototype = {
 };
 Chart.Scale.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -9044,7 +10608,7 @@ Chart.Scale.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -9052,6 +10616,7 @@ Chart.Scale.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -9070,9 +10635,11 @@ Chart.Scale.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.Title.prototype = {
+  "_type": function () {},
   "afterBuildLabels": function () {},
   "afterFit": function () {},
   "afterSetDimensions": function () {},
@@ -9082,7 +10649,7 @@ Chart.Title.prototype = {
   "beforeSetDimensions": function () {},
   "beforeUpdate": function () {},
   "buildLabels": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "draw": function () {},
   "fit": function () {},
@@ -9096,7 +10663,8 @@ Chart.Title.prototype = {
   "update": function () {}
 };
 Chart.Tooltip.prototype = {
-  "closure_uid_386273086": function () {},
+  "_type": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "draw": function () {},
   "drawBackground": function () {},
@@ -9129,12 +10697,19 @@ Chart._adapters._date.prototype = {
   "startOf": function () {}
 };
 Chart.controllers.bar.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getStacks": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
-  "_resolveElementOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "_updateElementGeometry": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
@@ -9154,6 +10729,7 @@ Chart.controllers.bar.prototype = {
   "getScaleForId": function () {},
   "getStackCount": function () {},
   "getStackIndex": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -9172,11 +10748,18 @@ Chart.controllers.bar.prototype = {
   "updateIndex": function () {}
 };
 Chart.controllers.bubble.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
-  "_resolveElementOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -9190,6 +10773,7 @@ Chart.controllers.bubble.prototype = {
   "getDataset": function () {},
   "getMeta": function () {},
   "getScaleForId": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -9208,6 +10792,9 @@ Chart.controllers.bubble.prototype = {
   "updateIndex": function () {}
 };
 Chart.controllers.doughnut.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getRingWeight": function () {},
@@ -9215,7 +10802,11 @@ Chart.controllers.doughnut.prototype = {
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
   "_getVisibleDatasetWeightTotal": function () {},
-  "_resolveElementOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -9233,6 +10824,7 @@ Chart.controllers.doughnut.prototype = {
   "getMeta": function () {},
   "getRingIndex": function () {},
   "getScaleForId": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -9251,12 +10843,19 @@ Chart.controllers.doughnut.prototype = {
   "updateIndex": function () {}
 };
 Chart.controllers.horizontalBar.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getStacks": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
-  "_resolveElementOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "_updateElementGeometry": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
@@ -9276,6 +10875,7 @@ Chart.controllers.horizontalBar.prototype = {
   "getScaleForId": function () {},
   "getStackCount": function () {},
   "getStackIndex": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -9294,12 +10894,19 @@ Chart.controllers.horizontalBar.prototype = {
   "updateIndex": function () {}
 };
 Chart.controllers.horizontalBar.__super__.constructor.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getStacks": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
-  "_resolveElementOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "_updateElementGeometry": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
@@ -9319,6 +10926,7 @@ Chart.controllers.horizontalBar.__super__.constructor.prototype = {
   "getScaleForId": function () {},
   "getStackCount": function () {},
   "getStackIndex": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -9337,7 +10945,8 @@ Chart.controllers.horizontalBar.__super__.constructor.prototype = {
   "updateIndex": function () {}
 };
 Chart.controllers.horizontalBar.__super__.dataElementType.prototype = {
-  "closure_uid_386273086": function () {},
+  "_type": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -9354,12 +10963,18 @@ Chart.controllers.horizontalBar.__super__.dataElementType.prototype = {
   "transition": function () {}
 };
 Chart.controllers.line.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
-  "_resolveLineOptions": function () {},
-  "_resolvePointOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -9374,6 +10989,7 @@ Chart.controllers.line.prototype = {
   "getDataset": function () {},
   "getMeta": function () {},
   "getScaleForId": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -9393,6 +11009,9 @@ Chart.controllers.line.prototype = {
   "updateIndex": function () {}
 };
 Chart.controllers.pie.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getRingWeight": function () {},
@@ -9400,7 +11019,11 @@ Chart.controllers.pie.prototype = {
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
   "_getVisibleDatasetWeightTotal": function () {},
-  "_resolveElementOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -9418,6 +11041,7 @@ Chart.controllers.pie.prototype = {
   "getMeta": function () {},
   "getRingIndex": function () {},
   "getScaleForId": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -9437,11 +11061,18 @@ Chart.controllers.pie.prototype = {
 };
 Chart.controllers.polarArea.prototype = {
   "_computeAngle": function () {},
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
-  "_resolveElementOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "_updateRadius": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
@@ -9457,6 +11088,7 @@ Chart.controllers.polarArea.prototype = {
   "getDataset": function () {},
   "getMeta": function () {},
   "getScaleForId": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -9475,12 +11107,18 @@ Chart.controllers.polarArea.prototype = {
   "updateIndex": function () {}
 };
 Chart.controllers.radar.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
-  "_resolveLineOptions": function () {},
-  "_resolvePointOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -9494,6 +11132,7 @@ Chart.controllers.radar.prototype = {
   "getDataset": function () {},
   "getMeta": function () {},
   "getScaleForId": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -9513,12 +11152,18 @@ Chart.controllers.radar.prototype = {
   "updateIndex": function () {}
 };
 Chart.controllers.scatter.prototype = {
+  "_configure": function () {},
+  "_dataElementOptions": function () {},
+  "_datasetElementOptions": function () {},
   "_getIndexScale": function () {},
   "_getIndexScaleId": function () {},
   "_getValueScale": function () {},
   "_getValueScaleId": function () {},
-  "_resolveLineOptions": function () {},
-  "_resolvePointOptions": function () {},
+  "_removeDatasetHoverStyle": function () {},
+  "_resolveDataElementOptions": function () {},
+  "_resolveDatasetElementOptions": function () {},
+  "_setDatasetHoverStyle": function () {},
+  "_update": function () {},
   "addElementAndReset": function () {},
   "addElements": function () {},
   "buildOrUpdateElements": function () {},
@@ -9533,6 +11178,7 @@ Chart.controllers.scatter.prototype = {
   "getDataset": function () {},
   "getMeta": function () {},
   "getScaleForId": function () {},
+  "getStyle": function () {},
   "initialize": function () {},
   "insertElements": function () {},
   "linkScales": function () {},
@@ -9552,7 +11198,8 @@ Chart.controllers.scatter.prototype = {
   "updateIndex": function () {}
 };
 Chart.elements.Arc.prototype = {
-  "closure_uid_386273086": function () {},
+  "_type": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -9566,7 +11213,8 @@ Chart.elements.Arc.prototype = {
   "transition": function () {}
 };
 Chart.elements.Line.prototype = {
-  "closure_uid_386273086": function () {},
+  "_type": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "draw": function () {},
   "hasValue": function () {},
@@ -9576,7 +11224,8 @@ Chart.elements.Line.prototype = {
   "transition": function () {}
 };
 Chart.elements.Point.prototype = {
-  "closure_uid_386273086": function () {},
+  "_type": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -9592,7 +11241,8 @@ Chart.elements.Point.prototype = {
   "transition": function () {}
 };
 Chart.elements.Rectangle.prototype = {
-  "closure_uid_386273086": function () {},
+  "_type": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -9610,8 +11260,23 @@ Chart.elements.Rectangle.prototype = {
 };
 Chart.scaleService.constructors.category.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -9628,7 +11293,7 @@ Chart.scaleService.constructors.category.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -9636,8 +11301,8 @@ Chart.scaleService.constructors.category.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
-  "getLabels": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
   "getPixelForTick": function () {},
@@ -9655,12 +11320,28 @@ Chart.scaleService.constructors.category.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.scaleService.constructors.category.__super__.constructor.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -9677,7 +11358,7 @@ Chart.scaleService.constructors.category.__super__.constructor.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -9685,6 +11366,7 @@ Chart.scaleService.constructors.category.__super__.constructor.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -9703,13 +11385,29 @@ Chart.scaleService.constructors.category.__super__.constructor.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.scaleService.constructors.linear.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
   "_computeTickLimit": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -9726,7 +11424,7 @@ Chart.scaleService.constructors.linear.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -9734,6 +11432,7 @@ Chart.scaleService.constructors.linear.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -9755,13 +11454,29 @@ Chart.scaleService.constructors.linear.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.scaleService.constructors.linear.__super__.constructor.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
   "_computeTickLimit": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -9778,7 +11493,7 @@ Chart.scaleService.constructors.linear.__super__.constructor.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -9786,6 +11501,7 @@ Chart.scaleService.constructors.linear.__super__.constructor.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -9807,12 +11523,28 @@ Chart.scaleService.constructors.linear.__super__.constructor.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.scaleService.constructors.linear.__super__.constructor.__super__.constructor.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -9829,7 +11561,7 @@ Chart.scaleService.constructors.linear.__super__.constructor.__super__.construct
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -9837,6 +11569,7 @@ Chart.scaleService.constructors.linear.__super__.constructor.__super__.construct
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -9855,13 +11588,29 @@ Chart.scaleService.constructors.linear.__super__.constructor.__super__.construct
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.scaleService.constructors.logarithmic.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
   "_getFirstTickValue": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -9878,7 +11627,7 @@ Chart.scaleService.constructors.logarithmic.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -9886,6 +11635,7 @@ Chart.scaleService.constructors.logarithmic.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -9905,12 +11655,28 @@ Chart.scaleService.constructors.logarithmic.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.scaleService.constructors.logarithmic.__super__.constructor.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -9927,7 +11693,7 @@ Chart.scaleService.constructors.logarithmic.__super__.constructor.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -9935,6 +11701,7 @@ Chart.scaleService.constructors.logarithmic.__super__.constructor.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -9953,13 +11720,29 @@ Chart.scaleService.constructors.logarithmic.__super__.constructor.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.scaleService.constructors.radialLinear.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
   "_computeTickLimit": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -9976,7 +11759,7 @@ Chart.scaleService.constructors.radialLinear.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -9985,6 +11768,7 @@ Chart.scaleService.constructors.radialLinear.prototype = {
   "getBasePixel": function () {},
   "getBasePosition": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getDistanceFromCenterForValue": function () {},
   "getIndexAngle": function () {},
   "getLabelForIndex": function () {},
@@ -10012,13 +11796,29 @@ Chart.scaleService.constructors.radialLinear.prototype = {
   "setReductions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.scaleService.constructors.radialLinear.__super__.constructor.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
   "_computeTickLimit": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -10035,7 +11835,7 @@ Chart.scaleService.constructors.radialLinear.__super__.constructor.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -10043,6 +11843,7 @@ Chart.scaleService.constructors.radialLinear.__super__.constructor.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -10064,12 +11865,28 @@ Chart.scaleService.constructors.radialLinear.__super__.constructor.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.scaleService.constructors.radialLinear.__super__.constructor.__super__.constructor.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -10086,7 +11903,7 @@ Chart.scaleService.constructors.radialLinear.__super__.constructor.__super__.con
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -10094,6 +11911,7 @@ Chart.scaleService.constructors.radialLinear.__super__.constructor.__super__.con
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -10112,12 +11930,29 @@ Chart.scaleService.constructors.radialLinear.__super__.constructor.__super__.con
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.scaleService.constructors.time.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSize": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -10134,7 +11969,7 @@ Chart.scaleService.constructors.time.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -10142,6 +11977,7 @@ Chart.scaleService.constructors.time.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelCapacity": function () {},
   "getLabelForIndex": function () {},
   "getLabelWidth": function () {},
@@ -10164,12 +12000,28 @@ Chart.scaleService.constructors.time.prototype = {
   "tickFormatFunction": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 Chart.scaleService.constructors.time.__super__.constructor.prototype = {
   "_autoSkip": function () {},
+  "_computeGridLineItems": function () {},
+  "_computeLabelItems": function () {},
+  "_configure": function () {},
+  "_convertTicksToLabels": function () {},
+  "_draw": function () {},
+  "_drawGrid": function () {},
+  "_drawLabels": function () {},
+  "_drawTitle": function () {},
+  "_getLabelSizes": function () {},
+  "_getLabels": function () {},
+  "_getMatchingVisibleMetas": function () {},
+  "_getScaleLabel": function () {},
   "_isVisible": function () {},
+  "_layers": function () {},
+  "_parseValue": function () {},
   "_tickSize": function () {},
+  "_type": function () {},
   "afterBuildTicks": function () {},
   "afterCalculateTickRotation": function () {},
   "afterDataLimits": function () {},
@@ -10186,7 +12038,7 @@ Chart.scaleService.constructors.time.__super__.constructor.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_386273086": function () {},
+  "closure_uid_671108055": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -10194,6 +12046,7 @@ Chart.scaleService.constructors.time.__super__.constructor.prototype = {
   "fit": function () {},
   "getBasePixel": function () {},
   "getBaseValue": function () {},
+  "getDecimalForPixel": function () {},
   "getLabelForIndex": function () {},
   "getPadding": function () {},
   "getPixelForDecimal": function () {},
@@ -10212,7 +12065,8 @@ Chart.scaleService.constructors.time.__super__.constructor.prototype = {
   "setDimensions": function () {},
   "tooltipPosition": function () {},
   "transition": function () {},
-  "update": function () {}
+  "update": function () {},
+  "zeroLineIndex": function () {}
 };
 /**********************************************************************
  * End Generated Extern for Chart
