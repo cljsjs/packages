@@ -995,6 +995,7 @@ var Chart = {
       "radar": {
         "elements": {
           "line": {
+            "fill": {},
             "tension": {}
           }
         },
@@ -1480,25 +1481,25 @@ var Chart = {
                 "constructor": {
                   "__super__": {
                     "_type": {},
-                    "closure_uid_671108055": {},
+                    "closure_uid_323210828": {},
                     "hasValue": {
-                      "closure_uid_671108055": {}
+                      "closure_uid_323210828": {}
                     },
                     "initialize": {
-                      "closure_uid_671108055": {}
+                      "closure_uid_323210828": {}
                     },
                     "pivot": {
-                      "closure_uid_671108055": {}
+                      "closure_uid_323210828": {}
                     },
                     "tooltipPosition": {
-                      "closure_uid_671108055": {}
+                      "closure_uid_323210828": {}
                     },
                     "transition": {
-                      "closure_uid_671108055": {}
+                      "closure_uid_323210828": {}
                     }
                   },
                   "extend": {
-                    "closure_uid_671108055": {}
+                    "closure_uid_323210828": {}
                   }
                 },
                 "convertTicksToLabels": function () {},
@@ -1518,29 +1519,29 @@ var Chart = {
                 "getValueForPixel": function () {},
                 "handleMargins": function () {},
                 "hasValue": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "initialize": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "isFullWidth": function () {},
                 "isHorizontal": function () {},
                 "mergeTicksOptions": function () {},
                 "pivot": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "setDimensions": function () {},
                 "tooltipPosition": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "transition": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "update": function () {},
                 "zeroLineIndex": {}
               },
               "extend": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -1563,23 +1564,23 @@ var Chart = {
             "handleMargins": function () {},
             "handleTickRangeOptions": function () {},
             "hasValue": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "initialize": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
             "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "transition": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "update": function () {},
             "zeroLineIndex": {}
@@ -1591,7 +1592,7 @@ var Chart = {
             }
           },
           "extend": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           }
         },
         "logarithmic": {
@@ -1630,30 +1631,30 @@ var Chart = {
             "beforeUpdate": function () {},
             "buildTicks": function () {},
             "calculateTickRotation": function () {},
-            "closure_uid_671108055": {},
+            "closure_uid_323210828": {},
             "constructor": {
               "__super__": {
                 "_type": {},
-                "closure_uid_671108055": {},
+                "closure_uid_323210828": {},
                 "hasValue": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "initialize": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "pivot": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "tooltipPosition": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "transition": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 }
               },
-              "closure_uid_671108055": {},
+              "closure_uid_323210828": {},
               "extend": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -1673,23 +1674,23 @@ var Chart = {
             "getValueForPixel": function () {},
             "handleMargins": function () {},
             "hasValue": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "initialize": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
             "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "transition": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "update": function () {},
             "zeroLineIndex": {}
@@ -1701,7 +1702,7 @@ var Chart = {
             }
           },
           "extend": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           }
         },
         "radialLinear": {
@@ -1741,7 +1742,7 @@ var Chart = {
             "beforeUpdate": function () {},
             "buildTicks": function () {},
             "calculateTickRotation": function () {},
-            "closure_uid_671108055": {},
+            "closure_uid_323210828": {},
             "constructor": {
               "__super__": {
                 "_autoSkip": function () {},
@@ -1778,30 +1779,30 @@ var Chart = {
                 "beforeUpdate": function () {},
                 "buildTicks": function () {},
                 "calculateTickRotation": function () {},
-                "closure_uid_671108055": {},
+                "closure_uid_323210828": {},
                 "constructor": {
                   "__super__": {
                     "_type": {},
-                    "closure_uid_671108055": {},
+                    "closure_uid_323210828": {},
                     "hasValue": {
-                      "closure_uid_671108055": {}
+                      "closure_uid_323210828": {}
                     },
                     "initialize": {
-                      "closure_uid_671108055": {}
+                      "closure_uid_323210828": {}
                     },
                     "pivot": {
-                      "closure_uid_671108055": {}
+                      "closure_uid_323210828": {}
                     },
                     "tooltipPosition": {
-                      "closure_uid_671108055": {}
+                      "closure_uid_323210828": {}
                     },
                     "transition": {
-                      "closure_uid_671108055": {}
+                      "closure_uid_323210828": {}
                     }
                   },
-                  "closure_uid_671108055": {},
+                  "closure_uid_323210828": {},
                   "extend": {
-                    "closure_uid_671108055": {}
+                    "closure_uid_323210828": {}
                   }
                 },
                 "convertTicksToLabels": function () {},
@@ -1821,30 +1822,30 @@ var Chart = {
                 "getValueForPixel": function () {},
                 "handleMargins": function () {},
                 "hasValue": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "initialize": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "isFullWidth": function () {},
                 "isHorizontal": function () {},
                 "mergeTicksOptions": function () {},
                 "pivot": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "setDimensions": function () {},
                 "tooltipPosition": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "transition": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "update": function () {},
                 "zeroLineIndex": {}
               },
-              "closure_uid_671108055": {},
+              "closure_uid_323210828": {},
               "extend": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -1867,23 +1868,23 @@ var Chart = {
             "handleMargins": function () {},
             "handleTickRangeOptions": function () {},
             "hasValue": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "initialize": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
             "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "transition": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "update": function () {},
             "zeroLineIndex": {}
@@ -1916,7 +1917,7 @@ var Chart = {
             }
           },
           "extend": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           }
         },
         "time": {
@@ -1955,30 +1956,30 @@ var Chart = {
             "beforeUpdate": function () {},
             "buildTicks": function () {},
             "calculateTickRotation": function () {},
-            "closure_uid_671108055": {},
+            "closure_uid_323210828": {},
             "constructor": {
               "__super__": {
                 "_type": {},
-                "closure_uid_671108055": {},
+                "closure_uid_323210828": {},
                 "hasValue": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "initialize": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "pivot": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "tooltipPosition": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "transition": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 }
               },
-              "closure_uid_671108055": {},
+              "closure_uid_323210828": {},
               "extend": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -1998,23 +1999,23 @@ var Chart = {
             "getValueForPixel": function () {},
             "handleMargins": function () {},
             "hasValue": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "initialize": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
             "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "transition": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "update": function () {},
             "zeroLineIndex": {}
@@ -2042,7 +2043,7 @@ var Chart = {
             }
           },
           "extend": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           }
         }
       },
@@ -2123,25 +2124,25 @@ var Chart = {
     "Animation": {
       "__super__": {
         "_type": {},
-        "closure_uid_671108055": {},
+        "closure_uid_323210828": {},
         "hasValue": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "initialize": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "pivot": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "tooltipPosition": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "transition": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
       "extend": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     },
     "Bar": function () {},
@@ -2150,13 +2151,13 @@ var Chart = {
     "Controller": function () {},
     "DatasetController": {
       "extend": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     },
     "Doughnut": function () {},
     "Element": {
       "extend": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     },
     "Interaction": {
@@ -2175,25 +2176,25 @@ var Chart = {
     "Legend": {
       "__super__": {
         "_type": {},
-        "closure_uid_671108055": {},
+        "closure_uid_323210828": {},
         "hasValue": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "initialize": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "pivot": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "tooltipPosition": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "transition": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
       "extend": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     },
     "Line": function () {},
@@ -2233,30 +2234,30 @@ var Chart = {
         "beforeUpdate": function () {},
         "buildTicks": function () {},
         "calculateTickRotation": function () {},
-        "closure_uid_671108055": {},
+        "closure_uid_323210828": {},
         "constructor": {
           "__super__": {
             "_type": {},
-            "closure_uid_671108055": {},
+            "closure_uid_323210828": {},
             "hasValue": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "initialize": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "pivot": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "tooltipPosition": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "transition": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             }
           },
-          "closure_uid_671108055": {},
+          "closure_uid_323210828": {},
           "extend": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           }
         },
         "convertTicksToLabels": function () {},
@@ -2276,54 +2277,54 @@ var Chart = {
         "getValueForPixel": function () {},
         "handleMargins": function () {},
         "hasValue": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "initialize": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "isFullWidth": function () {},
         "isHorizontal": function () {},
         "mergeTicksOptions": function () {},
         "pivot": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "setDimensions": function () {},
         "tooltipPosition": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "transition": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "update": function () {},
         "zeroLineIndex": {}
       },
-      "closure_uid_671108055": {},
+      "closure_uid_323210828": {},
       "extend": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     },
     "PluginBase": {
       "__super__": {
         "_type": {},
-        "closure_uid_671108055": {},
+        "closure_uid_323210828": {},
         "hasValue": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "initialize": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "pivot": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "tooltipPosition": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "transition": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
       "extend": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     },
     "PolarArea": function () {},
@@ -2331,26 +2332,26 @@ var Chart = {
     "Scale": {
       "__super__": {
         "_type": {},
-        "closure_uid_671108055": {},
+        "closure_uid_323210828": {},
         "hasValue": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "initialize": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "pivot": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "tooltipPosition": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "transition": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
-      "closure_uid_671108055": {},
+      "closure_uid_323210828": {},
       "extend": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     },
     "Scatter": function () {},
@@ -2364,49 +2365,49 @@ var Chart = {
     "Title": {
       "__super__": {
         "_type": {},
-        "closure_uid_671108055": {},
+        "closure_uid_323210828": {},
         "hasValue": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "initialize": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "pivot": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "tooltipPosition": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "transition": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
       "extend": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     },
     "Tooltip": {
       "__super__": {
         "_type": {},
-        "closure_uid_671108055": {},
+        "closure_uid_323210828": {},
         "hasValue": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "initialize": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "pivot": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "tooltipPosition": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "transition": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
       "extend": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "positioners": {
         "average": function () {},
@@ -2436,7 +2437,7 @@ var Chart = {
       "roundedRect": function () {},
       "unclipArea": function () {}
     },
-    "closure_uid_671108055": {},
+    "closure_uid_323210828": {},
     "controllers": {
       "bar": {
         "__super__": {
@@ -2482,7 +2483,7 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
       "bubble": {
@@ -2529,7 +2530,7 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
       "doughnut": {
@@ -2576,7 +2577,7 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
       "horizontalBar": {
@@ -2644,7 +2645,7 @@ var Chart = {
               "updateIndex": function () {}
             },
             "extend": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             }
           },
           "createMetaData": function () {},
@@ -2652,25 +2653,25 @@ var Chart = {
           "dataElementType": {
             "__super__": {
               "_type": {},
-              "closure_uid_671108055": {},
+              "closure_uid_323210828": {},
               "hasValue": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "initialize": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "pivot": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "tooltipPosition": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "transition": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               }
             },
             "extend": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             }
           },
           "datasetElementType": {},
@@ -2701,7 +2702,7 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
       "line": {
@@ -2748,7 +2749,7 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
       "pie": {
@@ -2795,7 +2796,7 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
       "polarArea": {
@@ -2842,7 +2843,7 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
       "radar": {
@@ -2889,7 +2890,7 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
       "scatter": {
@@ -2936,7 +2937,7 @@ var Chart = {
           "updateIndex": function () {}
         },
         "extend": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       }
     },
@@ -3243,6 +3244,7 @@ var Chart = {
       "radar": {
         "elements": {
           "line": {
+            "fill": {},
             "tension": {}
           }
         },
@@ -3315,97 +3317,97 @@ var Chart = {
       "Arc": {
         "__super__": {
           "_type": {},
-          "closure_uid_671108055": {},
+          "closure_uid_323210828": {},
           "hasValue": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "initialize": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "pivot": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "tooltipPosition": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "transition": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           }
         },
         "extend": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
       "Line": {
         "__super__": {
           "_type": {},
-          "closure_uid_671108055": {},
+          "closure_uid_323210828": {},
           "hasValue": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "initialize": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "pivot": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "tooltipPosition": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "transition": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           }
         },
         "extend": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
       "Point": {
         "__super__": {
           "_type": {},
-          "closure_uid_671108055": {},
+          "closure_uid_323210828": {},
           "hasValue": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "initialize": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "pivot": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "tooltipPosition": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "transition": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           }
         },
         "extend": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
       "Rectangle": {
         "__super__": {
           "_type": {},
-          "closure_uid_671108055": {},
+          "closure_uid_323210828": {},
           "hasValue": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "initialize": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "pivot": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "tooltipPosition": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "transition": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           }
         },
         "extend": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       }
     },
@@ -3526,7 +3528,7 @@ var Chart = {
       "getValueOrDefault": function () {},
       "indexOf": function () {},
       "inherits": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "isArray": function () {},
       "isFinite": function () {},
@@ -3625,7 +3627,7 @@ var Chart = {
     },
     "scaleService": {
       "addScalesToLayout": function () {},
-      "closure_uid_671108055": {},
+      "closure_uid_323210828": {},
       "constructors": {
         "category": {
           "__super__": {
@@ -3663,30 +3665,30 @@ var Chart = {
             "beforeUpdate": function () {},
             "buildTicks": function () {},
             "calculateTickRotation": function () {},
-            "closure_uid_671108055": {},
+            "closure_uid_323210828": {},
             "constructor": {
               "__super__": {
                 "_type": {},
-                "closure_uid_671108055": {},
+                "closure_uid_323210828": {},
                 "hasValue": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "initialize": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "pivot": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "tooltipPosition": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "transition": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 }
               },
-              "closure_uid_671108055": {},
+              "closure_uid_323210828": {},
               "extend": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -3706,23 +3708,23 @@ var Chart = {
             "getValueForPixel": function () {},
             "handleMargins": function () {},
             "hasValue": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "initialize": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
             "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "transition": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "update": function () {},
             "zeroLineIndex": {}
@@ -3731,10 +3733,10 @@ var Chart = {
             "position": {}
           },
           "extend": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           }
         },
-        "closure_uid_671108055": {},
+        "closure_uid_323210828": {},
         "linear": {
           "__super__": {
             "_autoSkip": function () {},
@@ -3772,7 +3774,7 @@ var Chart = {
             "beforeUpdate": function () {},
             "buildTicks": function () {},
             "calculateTickRotation": function () {},
-            "closure_uid_671108055": {},
+            "closure_uid_323210828": {},
             "constructor": {
               "__super__": {
                 "_autoSkip": function () {},
@@ -3809,30 +3811,30 @@ var Chart = {
                 "beforeUpdate": function () {},
                 "buildTicks": function () {},
                 "calculateTickRotation": function () {},
-                "closure_uid_671108055": {},
+                "closure_uid_323210828": {},
                 "constructor": {
                   "__super__": {
                     "_type": {},
-                    "closure_uid_671108055": {},
+                    "closure_uid_323210828": {},
                     "hasValue": {
-                      "closure_uid_671108055": {}
+                      "closure_uid_323210828": {}
                     },
                     "initialize": {
-                      "closure_uid_671108055": {}
+                      "closure_uid_323210828": {}
                     },
                     "pivot": {
-                      "closure_uid_671108055": {}
+                      "closure_uid_323210828": {}
                     },
                     "tooltipPosition": {
-                      "closure_uid_671108055": {}
+                      "closure_uid_323210828": {}
                     },
                     "transition": {
-                      "closure_uid_671108055": {}
+                      "closure_uid_323210828": {}
                     }
                   },
-                  "closure_uid_671108055": {},
+                  "closure_uid_323210828": {},
                   "extend": {
-                    "closure_uid_671108055": {}
+                    "closure_uid_323210828": {}
                   }
                 },
                 "convertTicksToLabels": function () {},
@@ -3852,30 +3854,30 @@ var Chart = {
                 "getValueForPixel": function () {},
                 "handleMargins": function () {},
                 "hasValue": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "initialize": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "isFullWidth": function () {},
                 "isHorizontal": function () {},
                 "mergeTicksOptions": function () {},
                 "pivot": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "setDimensions": function () {},
                 "tooltipPosition": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "transition": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "update": function () {},
                 "zeroLineIndex": {}
               },
-              "closure_uid_671108055": {},
+              "closure_uid_323210828": {},
               "extend": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -3898,23 +3900,23 @@ var Chart = {
             "handleMargins": function () {},
             "handleTickRangeOptions": function () {},
             "hasValue": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "initialize": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
             "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "transition": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "update": function () {},
             "zeroLineIndex": {}
@@ -3925,9 +3927,9 @@ var Chart = {
               "callback": function () {}
             }
           },
-          "closure_uid_671108055": {},
+          "closure_uid_323210828": {},
           "extend": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           }
         },
         "logarithmic": {
@@ -3966,30 +3968,30 @@ var Chart = {
             "beforeUpdate": function () {},
             "buildTicks": function () {},
             "calculateTickRotation": function () {},
-            "closure_uid_671108055": {},
+            "closure_uid_323210828": {},
             "constructor": {
               "__super__": {
                 "_type": {},
-                "closure_uid_671108055": {},
+                "closure_uid_323210828": {},
                 "hasValue": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "initialize": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "pivot": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "tooltipPosition": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "transition": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 }
               },
-              "closure_uid_671108055": {},
+              "closure_uid_323210828": {},
               "extend": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -4009,23 +4011,23 @@ var Chart = {
             "getValueForPixel": function () {},
             "handleMargins": function () {},
             "hasValue": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "initialize": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
             "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "transition": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "update": function () {},
             "zeroLineIndex": {}
@@ -4037,7 +4039,7 @@ var Chart = {
             }
           },
           "extend": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           }
         },
         "radialLinear": {
@@ -4077,7 +4079,7 @@ var Chart = {
             "beforeUpdate": function () {},
             "buildTicks": function () {},
             "calculateTickRotation": function () {},
-            "closure_uid_671108055": {},
+            "closure_uid_323210828": {},
             "constructor": {
               "__super__": {
                 "_autoSkip": function () {},
@@ -4114,30 +4116,30 @@ var Chart = {
                 "beforeUpdate": function () {},
                 "buildTicks": function () {},
                 "calculateTickRotation": function () {},
-                "closure_uid_671108055": {},
+                "closure_uid_323210828": {},
                 "constructor": {
                   "__super__": {
                     "_type": {},
-                    "closure_uid_671108055": {},
+                    "closure_uid_323210828": {},
                     "hasValue": {
-                      "closure_uid_671108055": {}
+                      "closure_uid_323210828": {}
                     },
                     "initialize": {
-                      "closure_uid_671108055": {}
+                      "closure_uid_323210828": {}
                     },
                     "pivot": {
-                      "closure_uid_671108055": {}
+                      "closure_uid_323210828": {}
                     },
                     "tooltipPosition": {
-                      "closure_uid_671108055": {}
+                      "closure_uid_323210828": {}
                     },
                     "transition": {
-                      "closure_uid_671108055": {}
+                      "closure_uid_323210828": {}
                     }
                   },
-                  "closure_uid_671108055": {},
+                  "closure_uid_323210828": {},
                   "extend": {
-                    "closure_uid_671108055": {}
+                    "closure_uid_323210828": {}
                   }
                 },
                 "convertTicksToLabels": function () {},
@@ -4157,30 +4159,30 @@ var Chart = {
                 "getValueForPixel": function () {},
                 "handleMargins": function () {},
                 "hasValue": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "initialize": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "isFullWidth": function () {},
                 "isHorizontal": function () {},
                 "mergeTicksOptions": function () {},
                 "pivot": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "setDimensions": function () {},
                 "tooltipPosition": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "transition": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "update": function () {},
                 "zeroLineIndex": {}
               },
-              "closure_uid_671108055": {},
+              "closure_uid_323210828": {},
               "extend": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -4203,23 +4205,23 @@ var Chart = {
             "handleMargins": function () {},
             "handleTickRangeOptions": function () {},
             "hasValue": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "initialize": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
             "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "transition": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "update": function () {},
             "zeroLineIndex": {}
@@ -4251,9 +4253,9 @@ var Chart = {
               "showLabelBackdrop": {}
             }
           },
-          "closure_uid_671108055": {},
+          "closure_uid_323210828": {},
           "extend": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           }
         },
         "time": {
@@ -4292,30 +4294,30 @@ var Chart = {
             "beforeUpdate": function () {},
             "buildTicks": function () {},
             "calculateTickRotation": function () {},
-            "closure_uid_671108055": {},
+            "closure_uid_323210828": {},
             "constructor": {
               "__super__": {
                 "_type": {},
-                "closure_uid_671108055": {},
+                "closure_uid_323210828": {},
                 "hasValue": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "initialize": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "pivot": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "tooltipPosition": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 },
                 "transition": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 }
               },
-              "closure_uid_671108055": {},
+              "closure_uid_323210828": {},
               "extend": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               }
             },
             "convertTicksToLabels": function () {},
@@ -4335,23 +4337,23 @@ var Chart = {
             "getValueForPixel": function () {},
             "handleMargins": function () {},
             "hasValue": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "initialize": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "isFullWidth": function () {},
             "isHorizontal": function () {},
             "mergeTicksOptions": function () {},
             "pivot": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "setDimensions": function () {},
             "tooltipPosition": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "transition": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "update": function () {},
             "zeroLineIndex": {}
@@ -4379,7 +4381,7 @@ var Chart = {
             }
           },
           "extend": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           }
         }
       },
@@ -4458,13 +4460,13 @@ var Chart = {
   },
   "DatasetController": {
     "extend": {
-      "closure_uid_671108055": {}
+      "closure_uid_323210828": {}
     }
   },
   "Doughnut": function () {},
   "Element": {
     "extend": {
-      "closure_uid_671108055": {}
+      "closure_uid_323210828": {}
     }
   },
   "Interaction": {
@@ -4483,25 +4485,25 @@ var Chart = {
   "Legend": {
     "__super__": {
       "_type": {},
-      "closure_uid_671108055": {},
+      "closure_uid_323210828": {},
       "hasValue": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "initialize": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "pivot": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "tooltipPosition": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "transition": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     },
     "extend": {
-      "closure_uid_671108055": {}
+      "closure_uid_323210828": {}
     }
   },
   "Line": function () {},
@@ -4541,30 +4543,30 @@ var Chart = {
       "beforeUpdate": function () {},
       "buildTicks": function () {},
       "calculateTickRotation": function () {},
-      "closure_uid_671108055": {},
+      "closure_uid_323210828": {},
       "constructor": {
         "__super__": {
           "_type": {},
-          "closure_uid_671108055": {},
+          "closure_uid_323210828": {},
           "hasValue": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "initialize": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "pivot": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "tooltipPosition": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "transition": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           }
         },
-        "closure_uid_671108055": {},
+        "closure_uid_323210828": {},
         "extend": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
       "convertTicksToLabels": function () {},
@@ -4584,54 +4586,54 @@ var Chart = {
       "getValueForPixel": function () {},
       "handleMargins": function () {},
       "hasValue": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "initialize": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "isFullWidth": function () {},
       "isHorizontal": function () {},
       "mergeTicksOptions": function () {},
       "pivot": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "setDimensions": function () {},
       "tooltipPosition": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "transition": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "update": function () {},
       "zeroLineIndex": {}
     },
-    "closure_uid_671108055": {},
+    "closure_uid_323210828": {},
     "extend": {
-      "closure_uid_671108055": {}
+      "closure_uid_323210828": {}
     }
   },
   "PluginBase": {
     "__super__": {
       "_type": {},
-      "closure_uid_671108055": {},
+      "closure_uid_323210828": {},
       "hasValue": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "initialize": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "pivot": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "tooltipPosition": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "transition": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     },
     "extend": {
-      "closure_uid_671108055": {}
+      "closure_uid_323210828": {}
     }
   },
   "PolarArea": function () {},
@@ -4639,26 +4641,26 @@ var Chart = {
   "Scale": {
     "__super__": {
       "_type": {},
-      "closure_uid_671108055": {},
+      "closure_uid_323210828": {},
       "hasValue": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "initialize": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "pivot": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "tooltipPosition": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "transition": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     },
-    "closure_uid_671108055": {},
+    "closure_uid_323210828": {},
     "extend": {
-      "closure_uid_671108055": {}
+      "closure_uid_323210828": {}
     }
   },
   "Scatter": function () {},
@@ -4672,49 +4674,49 @@ var Chart = {
   "Title": {
     "__super__": {
       "_type": {},
-      "closure_uid_671108055": {},
+      "closure_uid_323210828": {},
       "hasValue": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "initialize": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "pivot": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "tooltipPosition": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "transition": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     },
     "extend": {
-      "closure_uid_671108055": {}
+      "closure_uid_323210828": {}
     }
   },
   "Tooltip": {
     "__super__": {
       "_type": {},
-      "closure_uid_671108055": {},
+      "closure_uid_323210828": {},
       "hasValue": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "initialize": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "pivot": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "tooltipPosition": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       },
       "transition": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     },
     "extend": {
-      "closure_uid_671108055": {}
+      "closure_uid_323210828": {}
     },
     "positioners": {
       "average": function () {},
@@ -4789,7 +4791,7 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     },
     "bubble": {
@@ -4836,7 +4838,7 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     },
     "doughnut": {
@@ -4883,7 +4885,7 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     },
     "horizontalBar": {
@@ -4951,7 +4953,7 @@ var Chart = {
             "updateIndex": function () {}
           },
           "extend": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           }
         },
         "createMetaData": function () {},
@@ -4959,25 +4961,25 @@ var Chart = {
         "dataElementType": {
           "__super__": {
             "_type": {},
-            "closure_uid_671108055": {},
+            "closure_uid_323210828": {},
             "hasValue": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "initialize": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "pivot": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "tooltipPosition": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             },
             "transition": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             }
           },
           "extend": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           }
         },
         "datasetElementType": {},
@@ -5008,7 +5010,7 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     },
     "line": {
@@ -5055,7 +5057,7 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     },
     "pie": {
@@ -5102,7 +5104,7 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     },
     "polarArea": {
@@ -5149,7 +5151,7 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     },
     "radar": {
@@ -5196,7 +5198,7 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     },
     "scatter": {
@@ -5243,7 +5245,7 @@ var Chart = {
         "updateIndex": function () {}
       },
       "extend": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     }
   },
@@ -5550,6 +5552,7 @@ var Chart = {
     "radar": {
       "elements": {
         "line": {
+          "fill": {},
           "tension": {}
         }
       },
@@ -5622,97 +5625,97 @@ var Chart = {
     "Arc": {
       "__super__": {
         "_type": {},
-        "closure_uid_671108055": {},
+        "closure_uid_323210828": {},
         "hasValue": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "initialize": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "pivot": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "tooltipPosition": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "transition": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
       "extend": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     },
     "Line": {
       "__super__": {
         "_type": {},
-        "closure_uid_671108055": {},
+        "closure_uid_323210828": {},
         "hasValue": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "initialize": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "pivot": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "tooltipPosition": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "transition": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
       "extend": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     },
     "Point": {
       "__super__": {
         "_type": {},
-        "closure_uid_671108055": {},
+        "closure_uid_323210828": {},
         "hasValue": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "initialize": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "pivot": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "tooltipPosition": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "transition": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
       "extend": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     },
     "Rectangle": {
       "__super__": {
         "_type": {},
-        "closure_uid_671108055": {},
+        "closure_uid_323210828": {},
         "hasValue": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "initialize": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "pivot": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "tooltipPosition": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         },
         "transition": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
       "extend": {
-        "closure_uid_671108055": {}
+        "closure_uid_323210828": {}
       }
     }
   },
@@ -5833,7 +5836,7 @@ var Chart = {
     "getValueOrDefault": function () {},
     "indexOf": function () {},
     "inherits": {
-      "closure_uid_671108055": {}
+      "closure_uid_323210828": {}
     },
     "isArray": function () {},
     "isFinite": function () {},
@@ -5932,7 +5935,7 @@ var Chart = {
   },
   "scaleService": {
     "addScalesToLayout": function () {},
-    "closure_uid_671108055": {},
+    "closure_uid_323210828": {},
     "constructors": {
       "category": {
         "__super__": {
@@ -5970,30 +5973,30 @@ var Chart = {
           "beforeUpdate": function () {},
           "buildTicks": function () {},
           "calculateTickRotation": function () {},
-          "closure_uid_671108055": {},
+          "closure_uid_323210828": {},
           "constructor": {
             "__super__": {
               "_type": {},
-              "closure_uid_671108055": {},
+              "closure_uid_323210828": {},
               "hasValue": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "initialize": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "pivot": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "tooltipPosition": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "transition": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               }
             },
-            "closure_uid_671108055": {},
+            "closure_uid_323210828": {},
             "extend": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             }
           },
           "convertTicksToLabels": function () {},
@@ -6013,23 +6016,23 @@ var Chart = {
           "getValueForPixel": function () {},
           "handleMargins": function () {},
           "hasValue": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "initialize": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "isFullWidth": function () {},
           "isHorizontal": function () {},
           "mergeTicksOptions": function () {},
           "pivot": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "setDimensions": function () {},
           "tooltipPosition": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "transition": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "update": function () {},
           "zeroLineIndex": {}
@@ -6038,10 +6041,10 @@ var Chart = {
           "position": {}
         },
         "extend": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
-      "closure_uid_671108055": {},
+      "closure_uid_323210828": {},
       "linear": {
         "__super__": {
           "_autoSkip": function () {},
@@ -6079,7 +6082,7 @@ var Chart = {
           "beforeUpdate": function () {},
           "buildTicks": function () {},
           "calculateTickRotation": function () {},
-          "closure_uid_671108055": {},
+          "closure_uid_323210828": {},
           "constructor": {
             "__super__": {
               "_autoSkip": function () {},
@@ -6116,30 +6119,30 @@ var Chart = {
               "beforeUpdate": function () {},
               "buildTicks": function () {},
               "calculateTickRotation": function () {},
-              "closure_uid_671108055": {},
+              "closure_uid_323210828": {},
               "constructor": {
                 "__super__": {
                   "_type": {},
-                  "closure_uid_671108055": {},
+                  "closure_uid_323210828": {},
                   "hasValue": {
-                    "closure_uid_671108055": {}
+                    "closure_uid_323210828": {}
                   },
                   "initialize": {
-                    "closure_uid_671108055": {}
+                    "closure_uid_323210828": {}
                   },
                   "pivot": {
-                    "closure_uid_671108055": {}
+                    "closure_uid_323210828": {}
                   },
                   "tooltipPosition": {
-                    "closure_uid_671108055": {}
+                    "closure_uid_323210828": {}
                   },
                   "transition": {
-                    "closure_uid_671108055": {}
+                    "closure_uid_323210828": {}
                   }
                 },
-                "closure_uid_671108055": {},
+                "closure_uid_323210828": {},
                 "extend": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 }
               },
               "convertTicksToLabels": function () {},
@@ -6159,30 +6162,30 @@ var Chart = {
               "getValueForPixel": function () {},
               "handleMargins": function () {},
               "hasValue": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "initialize": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "isFullWidth": function () {},
               "isHorizontal": function () {},
               "mergeTicksOptions": function () {},
               "pivot": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "setDimensions": function () {},
               "tooltipPosition": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "transition": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "update": function () {},
               "zeroLineIndex": {}
             },
-            "closure_uid_671108055": {},
+            "closure_uid_323210828": {},
             "extend": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             }
           },
           "convertTicksToLabels": function () {},
@@ -6205,23 +6208,23 @@ var Chart = {
           "handleMargins": function () {},
           "handleTickRangeOptions": function () {},
           "hasValue": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "initialize": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "isFullWidth": function () {},
           "isHorizontal": function () {},
           "mergeTicksOptions": function () {},
           "pivot": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "setDimensions": function () {},
           "tooltipPosition": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "transition": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "update": function () {},
           "zeroLineIndex": {}
@@ -6232,9 +6235,9 @@ var Chart = {
             "callback": function () {}
           }
         },
-        "closure_uid_671108055": {},
+        "closure_uid_323210828": {},
         "extend": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
       "logarithmic": {
@@ -6273,30 +6276,30 @@ var Chart = {
           "beforeUpdate": function () {},
           "buildTicks": function () {},
           "calculateTickRotation": function () {},
-          "closure_uid_671108055": {},
+          "closure_uid_323210828": {},
           "constructor": {
             "__super__": {
               "_type": {},
-              "closure_uid_671108055": {},
+              "closure_uid_323210828": {},
               "hasValue": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "initialize": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "pivot": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "tooltipPosition": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "transition": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               }
             },
-            "closure_uid_671108055": {},
+            "closure_uid_323210828": {},
             "extend": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             }
           },
           "convertTicksToLabels": function () {},
@@ -6316,23 +6319,23 @@ var Chart = {
           "getValueForPixel": function () {},
           "handleMargins": function () {},
           "hasValue": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "initialize": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "isFullWidth": function () {},
           "isHorizontal": function () {},
           "mergeTicksOptions": function () {},
           "pivot": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "setDimensions": function () {},
           "tooltipPosition": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "transition": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "update": function () {},
           "zeroLineIndex": {}
@@ -6344,7 +6347,7 @@ var Chart = {
           }
         },
         "extend": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
       "radialLinear": {
@@ -6384,7 +6387,7 @@ var Chart = {
           "beforeUpdate": function () {},
           "buildTicks": function () {},
           "calculateTickRotation": function () {},
-          "closure_uid_671108055": {},
+          "closure_uid_323210828": {},
           "constructor": {
             "__super__": {
               "_autoSkip": function () {},
@@ -6421,30 +6424,30 @@ var Chart = {
               "beforeUpdate": function () {},
               "buildTicks": function () {},
               "calculateTickRotation": function () {},
-              "closure_uid_671108055": {},
+              "closure_uid_323210828": {},
               "constructor": {
                 "__super__": {
                   "_type": {},
-                  "closure_uid_671108055": {},
+                  "closure_uid_323210828": {},
                   "hasValue": {
-                    "closure_uid_671108055": {}
+                    "closure_uid_323210828": {}
                   },
                   "initialize": {
-                    "closure_uid_671108055": {}
+                    "closure_uid_323210828": {}
                   },
                   "pivot": {
-                    "closure_uid_671108055": {}
+                    "closure_uid_323210828": {}
                   },
                   "tooltipPosition": {
-                    "closure_uid_671108055": {}
+                    "closure_uid_323210828": {}
                   },
                   "transition": {
-                    "closure_uid_671108055": {}
+                    "closure_uid_323210828": {}
                   }
                 },
-                "closure_uid_671108055": {},
+                "closure_uid_323210828": {},
                 "extend": {
-                  "closure_uid_671108055": {}
+                  "closure_uid_323210828": {}
                 }
               },
               "convertTicksToLabels": function () {},
@@ -6464,30 +6467,30 @@ var Chart = {
               "getValueForPixel": function () {},
               "handleMargins": function () {},
               "hasValue": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "initialize": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "isFullWidth": function () {},
               "isHorizontal": function () {},
               "mergeTicksOptions": function () {},
               "pivot": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "setDimensions": function () {},
               "tooltipPosition": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "transition": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "update": function () {},
               "zeroLineIndex": {}
             },
-            "closure_uid_671108055": {},
+            "closure_uid_323210828": {},
             "extend": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             }
           },
           "convertTicksToLabels": function () {},
@@ -6510,23 +6513,23 @@ var Chart = {
           "handleMargins": function () {},
           "handleTickRangeOptions": function () {},
           "hasValue": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "initialize": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "isFullWidth": function () {},
           "isHorizontal": function () {},
           "mergeTicksOptions": function () {},
           "pivot": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "setDimensions": function () {},
           "tooltipPosition": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "transition": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "update": function () {},
           "zeroLineIndex": {}
@@ -6558,9 +6561,9 @@ var Chart = {
             "showLabelBackdrop": {}
           }
         },
-        "closure_uid_671108055": {},
+        "closure_uid_323210828": {},
         "extend": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       },
       "time": {
@@ -6599,30 +6602,30 @@ var Chart = {
           "beforeUpdate": function () {},
           "buildTicks": function () {},
           "calculateTickRotation": function () {},
-          "closure_uid_671108055": {},
+          "closure_uid_323210828": {},
           "constructor": {
             "__super__": {
               "_type": {},
-              "closure_uid_671108055": {},
+              "closure_uid_323210828": {},
               "hasValue": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "initialize": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "pivot": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "tooltipPosition": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               },
               "transition": {
-                "closure_uid_671108055": {}
+                "closure_uid_323210828": {}
               }
             },
-            "closure_uid_671108055": {},
+            "closure_uid_323210828": {},
             "extend": {
-              "closure_uid_671108055": {}
+              "closure_uid_323210828": {}
             }
           },
           "convertTicksToLabels": function () {},
@@ -6642,23 +6645,23 @@ var Chart = {
           "getValueForPixel": function () {},
           "handleMargins": function () {},
           "hasValue": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "initialize": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "isFullWidth": function () {},
           "isHorizontal": function () {},
           "mergeTicksOptions": function () {},
           "pivot": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "setDimensions": function () {},
           "tooltipPosition": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "transition": {
-            "closure_uid_671108055": {}
+            "closure_uid_323210828": {}
           },
           "update": function () {},
           "zeroLineIndex": {}
@@ -6686,7 +6689,7 @@ var Chart = {
           }
         },
         "extend": {
-          "closure_uid_671108055": {}
+          "closure_uid_323210828": {}
         }
       }
     },
@@ -8136,7 +8139,7 @@ Chart.Chart.scaleService.constructors.logarithmic.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8202,7 +8205,7 @@ Chart.Chart.scaleService.constructors.logarithmic.__super__.constructor.prototyp
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8268,7 +8271,7 @@ Chart.Chart.scaleService.constructors.radialLinear.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8344,7 +8347,7 @@ Chart.Chart.scaleService.constructors.radialLinear.__super__.constructor.prototy
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8412,7 +8415,7 @@ Chart.Chart.scaleService.constructors.radialLinear.__super__.constructor.__super
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8478,7 +8481,7 @@ Chart.Chart.scaleService.constructors.time.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8547,7 +8550,7 @@ Chart.Chart.scaleService.constructors.time.__super__.constructor.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8622,7 +8625,7 @@ Chart.Controller.prototype = {
 Chart.Controller.Animation.prototype = {
   "_type": function () {},
   "chart": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "currentStep": function () {},
   "easing": function () {},
@@ -8680,7 +8683,7 @@ Chart.Controller.DatasetController.prototype = {
 };
 Chart.Controller.Element.prototype = {
   "_type": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "pivot": function () {},
@@ -8699,7 +8702,7 @@ Chart.Controller.Legend.prototype = {
   "beforeSetDimensions": function () {},
   "beforeUpdate": function () {},
   "buildLabels": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "draw": function () {},
   "fit": function () {},
@@ -8749,7 +8752,7 @@ Chart.Controller.LinearScaleBase.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8817,7 +8820,7 @@ Chart.Controller.LinearScaleBase.__super__.constructor.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8849,7 +8852,7 @@ Chart.Controller.LinearScaleBase.__super__.constructor.prototype = {
 };
 Chart.Controller.PluginBase.prototype = {
   "_type": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "hasValue": function () {},
   "initialize": function () {},
@@ -8892,7 +8895,7 @@ Chart.Controller.Scale.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -8933,7 +8936,7 @@ Chart.Controller.Title.prototype = {
   "beforeSetDimensions": function () {},
   "beforeUpdate": function () {},
   "buildLabels": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "draw": function () {},
   "fit": function () {},
@@ -8948,7 +8951,7 @@ Chart.Controller.Title.prototype = {
 };
 Chart.Controller.Tooltip.prototype = {
   "_type": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "draw": function () {},
   "drawBackground": function () {},
@@ -9230,7 +9233,7 @@ Chart.Controller.controllers.horizontalBar.__super__.constructor.prototype = {
 };
 Chart.Controller.controllers.horizontalBar.__super__.dataElementType.prototype = {
   "_type": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -9483,7 +9486,7 @@ Chart.Controller.controllers.scatter.prototype = {
 };
 Chart.Controller.elements.Arc.prototype = {
   "_type": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -9498,7 +9501,7 @@ Chart.Controller.elements.Arc.prototype = {
 };
 Chart.Controller.elements.Line.prototype = {
   "_type": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "draw": function () {},
   "hasValue": function () {},
@@ -9509,7 +9512,7 @@ Chart.Controller.elements.Line.prototype = {
 };
 Chart.Controller.elements.Point.prototype = {
   "_type": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -9526,7 +9529,7 @@ Chart.Controller.elements.Point.prototype = {
 };
 Chart.Controller.elements.Rectangle.prototype = {
   "_type": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -9577,7 +9580,7 @@ Chart.Controller.scaleService.constructors.category.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -9642,7 +9645,7 @@ Chart.Controller.scaleService.constructors.category.__super__.constructor.protot
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -9708,7 +9711,7 @@ Chart.Controller.scaleService.constructors.linear.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -9777,7 +9780,7 @@ Chart.Controller.scaleService.constructors.linear.__super__.constructor.prototyp
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -9845,7 +9848,7 @@ Chart.Controller.scaleService.constructors.linear.__super__.constructor.__super_
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -9911,7 +9914,7 @@ Chart.Controller.scaleService.constructors.logarithmic.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -9977,7 +9980,7 @@ Chart.Controller.scaleService.constructors.logarithmic.__super__.constructor.pro
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -10043,7 +10046,7 @@ Chart.Controller.scaleService.constructors.radialLinear.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -10119,7 +10122,7 @@ Chart.Controller.scaleService.constructors.radialLinear.__super__.constructor.pr
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -10187,7 +10190,7 @@ Chart.Controller.scaleService.constructors.radialLinear.__super__.constructor.__
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -10253,7 +10256,7 @@ Chart.Controller.scaleService.constructors.time.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -10322,7 +10325,7 @@ Chart.Controller.scaleService.constructors.time.__super__.constructor.prototype 
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -10396,7 +10399,7 @@ Chart.DatasetController.prototype = {
 };
 Chart.Element.prototype = {
   "_type": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "hasValue": function () {},
   "initialize": function () {},
   "pivot": function () {},
@@ -10415,7 +10418,7 @@ Chart.Legend.prototype = {
   "beforeSetDimensions": function () {},
   "beforeUpdate": function () {},
   "buildLabels": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "draw": function () {},
   "fit": function () {},
@@ -10465,7 +10468,7 @@ Chart.LinearScaleBase.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -10533,7 +10536,7 @@ Chart.LinearScaleBase.__super__.constructor.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -10565,7 +10568,7 @@ Chart.LinearScaleBase.__super__.constructor.prototype = {
 };
 Chart.PluginBase.prototype = {
   "_type": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "hasValue": function () {},
   "initialize": function () {},
@@ -10608,7 +10611,7 @@ Chart.Scale.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -10649,7 +10652,7 @@ Chart.Title.prototype = {
   "beforeSetDimensions": function () {},
   "beforeUpdate": function () {},
   "buildLabels": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "draw": function () {},
   "fit": function () {},
@@ -10664,7 +10667,7 @@ Chart.Title.prototype = {
 };
 Chart.Tooltip.prototype = {
   "_type": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "draw": function () {},
   "drawBackground": function () {},
@@ -10946,7 +10949,7 @@ Chart.controllers.horizontalBar.__super__.constructor.prototype = {
 };
 Chart.controllers.horizontalBar.__super__.dataElementType.prototype = {
   "_type": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -11199,7 +11202,7 @@ Chart.controllers.scatter.prototype = {
 };
 Chart.elements.Arc.prototype = {
   "_type": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -11214,7 +11217,7 @@ Chart.elements.Arc.prototype = {
 };
 Chart.elements.Line.prototype = {
   "_type": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "draw": function () {},
   "hasValue": function () {},
@@ -11225,7 +11228,7 @@ Chart.elements.Line.prototype = {
 };
 Chart.elements.Point.prototype = {
   "_type": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -11242,7 +11245,7 @@ Chart.elements.Point.prototype = {
 };
 Chart.elements.Rectangle.prototype = {
   "_type": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "draw": function () {},
   "getArea": function () {},
@@ -11293,7 +11296,7 @@ Chart.scaleService.constructors.category.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -11358,7 +11361,7 @@ Chart.scaleService.constructors.category.__super__.constructor.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -11424,7 +11427,7 @@ Chart.scaleService.constructors.linear.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -11493,7 +11496,7 @@ Chart.scaleService.constructors.linear.__super__.constructor.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -11561,7 +11564,7 @@ Chart.scaleService.constructors.linear.__super__.constructor.__super__.construct
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -11627,7 +11630,7 @@ Chart.scaleService.constructors.logarithmic.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -11693,7 +11696,7 @@ Chart.scaleService.constructors.logarithmic.__super__.constructor.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -11759,7 +11762,7 @@ Chart.scaleService.constructors.radialLinear.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -11835,7 +11838,7 @@ Chart.scaleService.constructors.radialLinear.__super__.constructor.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -11903,7 +11906,7 @@ Chart.scaleService.constructors.radialLinear.__super__.constructor.__super__.con
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -11969,7 +11972,7 @@ Chart.scaleService.constructors.time.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
@@ -12038,7 +12041,7 @@ Chart.scaleService.constructors.time.__super__.constructor.prototype = {
   "beforeUpdate": function () {},
   "buildTicks": function () {},
   "calculateTickRotation": function () {},
-  "closure_uid_671108055": function () {},
+  "closure_uid_323210828": function () {},
   "constructor": function () {},
   "convertTicksToLabels": function () {},
   "determineDataLimits": function () {},
