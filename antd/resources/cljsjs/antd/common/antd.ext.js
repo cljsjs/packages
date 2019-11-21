@@ -6,7 +6,7 @@
  * https://unpkg.com/react@16.11.0/umd/react.development.js
  * https://unpkg.com/react-dom@16.11.0/umd/react-dom.development.js
  * https://unpkg.com/moment@2.24.0/moment.js
- * https://unpkg.com/antd@3.25.1/dist/antd-with-locales.js
+ * https://unpkg.com/antd@3.25.2/dist/antd-with-locales.js
  *
  * and extern the `antd` JavaScript object
  *
@@ -5518,10 +5518,16 @@ var antd = {
       "Empty": {
         "description": {}
       },
+      "Icon": {
+        "icon": {}
+      },
       "Modal": {
         "cancelText": {},
         "justOkText": {},
         "okText": {}
+      },
+      "PageHeader": {
+        "back": {}
       },
       "Pagination": {
         "items_per_page": {},
@@ -5540,11 +5546,20 @@ var antd = {
         "okText": {}
       },
       "Table": {
+        "collapse": {},
+        "expand": {},
         "filterConfirm": {},
         "filterReset": {},
         "filterTitle": {},
         "selectAll": {},
-        "selectInvert": {}
+        "selectInvert": {},
+        "sortTitle": {}
+      },
+      "Text": {
+        "copied": {},
+        "copy": {},
+        "edit": {},
+        "expand": {}
       },
       "TimePicker": {
         "placeholder": {}
@@ -5552,7 +5567,8 @@ var antd = {
       "Transfer": {
         "itemUnit": {},
         "itemsUnit": {},
-        "searchPlaceholder": {}
+        "searchPlaceholder": {},
+        "titles": {}
       },
       "Upload": {
         "downloadFile": {},
@@ -5560,6 +5576,9 @@ var antd = {
         "removeFile": {},
         "uploadError": {},
         "uploading": {}
+      },
+      "global": {
+        "placeholder": {}
       },
       "locale": {}
     },
