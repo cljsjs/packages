@@ -31,16 +31,17 @@ var ReResizable = {
 };
 ReResizable.Resizable.prototype = {
   "base": function () {},
+  "bindEvents": function () {},
   "calculateNewMaxFromBoundary": function () {},
   "calculateNewSizeFromAspectRatio": function () {},
   "calculateNewSizeFromDirection": function () {},
   "componentDidMount": function () {},
-  "componentWillReceiveProps": function () {},
   "componentWillUnmount": function () {},
   "constructor": function () {},
   "createSizeForCssProperty": function () {},
   "forceUpdate": function () {},
   "getParentSize": function () {},
+  "isPureReactComponent": function () {},
   "isReactComponent": function () {},
   "onMouseMove": function () {},
   "onMouseUp": function () {},
@@ -53,7 +54,7 @@ ReResizable.Resizable.prototype = {
   "setState": function () {},
   "size": function () {},
   "sizeStyle": function () {},
-  "updateExtendsProps": function () {},
+  "unbindEvents": function () {},
   "updateSize": function () {}
 };
 /**********************************************************************
