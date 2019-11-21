@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/echarts "4.4.0-0"] ;; latest release
+[cljsjs/echarts "4.5.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -14,7 +14,5 @@ you can require the packaged library like so:
 (ns application.core
   (:require cljsjs.echarts))
 ```
-
-I replaced the Chinese toolbox text in the code with English translation, so end users will not see Chinese characters.
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps

@@ -247,6 +247,7 @@ var echarts = {
     "parsePercent": function () { },
     "quantile": function () { },
     "quantity": function () { },
+    "quantityExponent": function () { },
     "reformIntervals": function () { },
     "remRadian": function () { },
     "round": function () { }
@@ -399,7 +400,7 @@ echarts.List.prototype = {
   "wrapMethod": function () { }
 };
 echarts.Model.prototype = {
-  "__is_clz_0_0.573": function () { },
+  "__is_clz_0_0.168": function () { },
   "clone": function () { },
   "constructor": function () { },
   "customizeGetParent": function () { },
