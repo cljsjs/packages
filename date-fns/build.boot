@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.29.0")
+(def +lib-version+ "2.8.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -17,12 +17,18 @@
 
 (deftask package []
   (comp
-   (download :url (format "https://github.com/date-fns/date-fns/archive/v%s.zip" +lib-version+)
-             :checksum "8113C34DAFFB509D2A7A35476B679CB0"
-             :unzip true)
-   (sift :move {#"^date-fns-.*/dist/date_fns.js"  "cljsjs/date-fns/development/date-fns.inc.js"
-                #"^date-fns-.*/dist/date_fns.min.js"  "cljsjs/date-fns/production/date-fns.min.inc.js"})
+   (run-commands :commands [["npm" "install" "--include-dev"]
+                            ["npm" "run" "build:dev"]
+                            ["npm" "run" "build:prod"]
+                            ["rm" "-rf" "./node_modules"]])
+   (sift :move {#".*/date-fns.inc.js"  "cljsjs/date-fns/development/date-fns.inc.js"
+                #".*/date-fns.min.inc.js"  "cljsjs/date-fns/production/date-fns.min.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.date-fns")
+   (deps-cljs :foreign-libs [{:file           #"date-fns.inc.js"
+                              :file-min       #"date-fns.min.inc.js"
+                              :provides       ["date-fns" "cljsjs.date-fns"]
+                              :global-exports '{"date-fns" DateFns}}]
+              :externs [#"date-fns.ext.js"])
    (pom)
-   (jar)))
+   (jar)
+   (validate)))
