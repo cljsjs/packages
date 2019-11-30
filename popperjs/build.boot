@@ -2,7 +2,7 @@
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.10.4" :scope "test"]])
 
-(def +lib-version+ "1.15.0")
+(def +lib-version+ "1.16.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
