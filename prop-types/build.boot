@@ -1,11 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.10.4" :scope "test"]
-                  [cljsjs/react "16.3.0-1"]])
+                  [cljsjs/react "16.11.0-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "15.6.2")
+(def +lib-version+ "15.7.2")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,11 +18,12 @@
 
 (deftask package []
   (comp
-    (download :url (format "https://unpkg.com/prop-types@%s/prop-types.js" +lib-version+)
-              :target "cljsjs/prop-types/development/prop-types.inc.js")
-    (download :url (format "https://unpkg.com/prop-types@%s/prop-types.min.js" +lib-version+)
-              :target "cljsjs/prop-types/production/prop-types.min.inc.js")
-    (deps-cljs :provides ["prop-types" "cljsjs.prop-types"]
-               :global-exports '{prop-types PropTypes})
-    (pom)
-    (jar)))
+   (download :url (format "https://unpkg.com/prop-types@%s/prop-types.js" +lib-version+)
+             :target "cljsjs/prop-types/development/prop-types.inc.js")
+   (download :url (format "https://unpkg.com/prop-types@%s/prop-types.min.js" +lib-version+)
+             :target "cljsjs/prop-types/production/prop-types.min.inc.js")
+   (deps-cljs :provides ["prop-types" "cljsjs.prop-types"]
+              :global-exports '{prop-types PropTypes})
+   (pom)
+   (jar)
+   (validate)))
