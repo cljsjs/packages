@@ -8,20 +8,20 @@ var Popper = {
     "modifiers": {
       "applyStyle": {
         "enabled": {},
-        "fn": function () {},
+        "fn": function () { },
         "gpuAcceleration": {},
-        "onLoad": function () {},
+        "onLoad": function () { },
         "order": {}
       },
       "arrow": {
         "element": {},
         "enabled": {},
-        "fn": function () {},
+        "fn": function () { },
         "order": {}
       },
       "computeStyle": {
         "enabled": {},
-        "fn": function () {},
+        "fn": function () { },
         "gpuAcceleration": {},
         "order": {},
         "x": {},
@@ -33,47 +33,47 @@ var Popper = {
         "enabled": {},
         "flipVariations": {},
         "flipVariationsByContent": {},
-        "fn": function () {},
+        "fn": function () { },
         "order": {},
         "padding": {}
       },
       "hide": {
         "enabled": {},
-        "fn": function () {},
+        "fn": function () { },
         "order": {}
       },
       "inner": {
         "enabled": {},
-        "fn": function () {},
+        "fn": function () { },
         "order": {}
       },
       "keepTogether": {
         "enabled": {},
-        "fn": function () {},
+        "fn": function () { },
         "order": {}
       },
       "offset": {
         "enabled": {},
-        "fn": function () {},
+        "fn": function () { },
         "offset": {},
         "order": {}
       },
       "preventOverflow": {
         "boundariesElement": {},
         "enabled": {},
-        "fn": function () {},
+        "fn": function () { },
         "order": {},
         "padding": {},
         "priority": {}
       },
       "shift": {
         "enabled": {},
-        "fn": function () {},
+        "fn": function () { },
         "order": {}
       }
     },
-    "onCreate": function () {},
-    "onUpdate": function () {},
+    "onCreate": function () { },
+    "onUpdate": function () { },
     "placement": {},
     "positionFixed": {},
     "removeOnDestroy": {}
