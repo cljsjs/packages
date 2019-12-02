@@ -20,7 +20,7 @@
     (download :url (str "https://unpkg.com/qrcode-generator@" +lib-version+ "/qrcode.js"))
     (sift :move {#"^qrcode\.js" "cljsjs/qrcode-generator/development/qrcode-generator.inc.js"})
     (sift :include #{#"^cljsjs"})
-    #_(minify :in "cljsjs/qrcode-generator/development/qrcode-generator.inc.js"
+    (minify :in "cljsjs/qrcode-generator/development/qrcode-generator.inc.js"
             :out "cljsjs/qrcode-generator/production/qrcode-generator.min.inc.js")
     (deps-cljs :name "cljsjs.qrcode-generator")
     (validate-checksums)
