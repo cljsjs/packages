@@ -5,7 +5,7 @@ https://github.com/bsidelinger912/react-tooltip-lite
 
 [](dependency)
 ```clojure
-[cljsjs/react-tooltip-lite "1.9.1-0"] ;; latest release
+[cljsjs/react-tooltip-lite "1.10.0-0"] ;; latest release
 ```
 [](/dependency)
 
