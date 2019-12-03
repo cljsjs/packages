@@ -245,8 +245,10 @@ React.Component.prototype.componentWillUnmount = function() {};
 
 /**
  * @protected
+ * @param {Object} error
+ * @param {Object} info
  */
-React.Component.prototype.componentDidCatch = function() {};
+React.Component.prototype.componentDidCatch = function(error, info) {};
 
 /**
  * @protected
