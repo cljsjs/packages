@@ -2,10 +2,9 @@
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.10.4"  :scope "test"]
                   [cljsjs/react "15.3.0-0"]
-                  [cljsjs/moment "2.10.6-0"]
                   [cljsjs/classnames "2.2.3-0"]])
 
-(def +lib-version+ "0.2.4")
+(def +lib-version+ "1.0.0-beta2")
 (def +version+ (str +lib-version+ "-0"))
 (def +lib-folder+ (format "react-date-range-%s" +lib-version+))
 
@@ -27,16 +26,15 @@
 
 (deftask download-react-date-range []
          (download :url url
-                   :checksum "90869c14c1dc07544f04a8640b9b10a2"
                    :unzip true))
 
 (def main-file-name "main.js")
 (def webpack-file-name "webpack.config.js")
 
-(defn get-file [fileset file-name]
-      (io/file
-        (:dir (first (filter #(= (:path %) file-name) (boot/user-files fileset))))
-        file-name))
+; (defn get-file [fileset file-name]
+;       (io/file
+;         (:dir (first (filter #(= (:path %) file-name) (boot/user-files fileset))))
+;         file-name))
 
 (deftask build []
   (let [tmp (boot/tmp-dir!)]
@@ -61,10 +59,17 @@
          (comp
            (download-react-date-range)
            (build)
-           (sift :move {#".*react-date-range.js"
-                        "cljsjs/react-date-range/development/react-date-range.inc.js"})
+           (sift :move {#".*react-date-range.js$" "cljsjs/react-date-range/development/react-date-range.inc.js"
+                        #".*styles.css$" "cljsjs/react-date-range/development/styles.inc.css"
+                        #".*default.css$" "cljsjs/react-date-range/development/theme/default.inc.css"})
            (minify :in  "cljsjs/react-date-range/development/react-date-range.inc.js"
                    :out "cljsjs/react-date-range/production/react-date-range.min.inc.js")
-           (deps-cljs :name "cljsjs.react-date-range" :requires ["cljsjs.react" "cljsjs.moment"])
+           (minify :in  "cljsjs/react-date-range/development/styles.inc.css"
+                   :out "cljsjs/react-date-range/production/styles.min.inc.css")
+           (minify :in  "cljsjs/react-date-range/development/theme/default.inc.css"
+                   :out "cljsjs/react-date-range/production/theme/default.min.inc.css")
+           (sift :include #{#"^cljsjs"})
+           (deps-cljs :name "cljsjs.react-date-range" :requires ["cljsjs.react"])
            (pom)
-           (jar)))
+           (jar)
+           (validate-checksums)))
