@@ -114,6 +114,12 @@ React.Component.prototype.contextTypes;
 
 /**
  * @type {Object}
+ * @protected
+ */
+React.Component.prototype.contextType;
+
+/**
+ * @type {Object}
  */
 React.Component.prototype.mixins;
 
