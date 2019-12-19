@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "6.2.4")
+(def +lib-version+ "6.3.2")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -23,7 +23,10 @@
     :target "cljsjs/vis-timeline/development/vis-timeline.inc.js")
    (download
     :url (format "https://unpkg.com/vis-timeline@%s/dist/vis-timeline-graph2d.min.js" +lib-version+)
-    :target "cljsjs/vis-timeline/production/vis-timeline.min.inc.js")   
+    :target "cljsjs/vis-timeline/production/vis-timeline.min.inc.js")
+   (download 
+    :url (format "https://unpkg.com/vis-timeline@%s/dist/vis-timeline-graph2d.min.css" +lib-version+)
+    :target "cljsjs/vis-timeline/production/vis-timeline.min.inc.css")
    (sift      :include  #{#"^cljsjs"})
    (deps-cljs :name     "cljsjs.vis-timeline")
    (pom)
