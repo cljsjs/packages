@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/sentry-browser "5.6.2-0"] ;; latest release
+[cljsjs/sentry-browser "5.10.2-0"] ;; latest release
 ```
 [](/dependency)
 
