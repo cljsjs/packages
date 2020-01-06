@@ -7,8 +7,6 @@
                   [cljsjs/react "16.12.0-1"]
                   [cljsjs/react-dom "16.12.0-1"]])
 
-(task-options! push {:repo-map {:url "https://repos.com/repo/"}})
-
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (task-options!
