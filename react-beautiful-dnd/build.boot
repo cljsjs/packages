@@ -1,10 +1,13 @@
-(def +lib-version+ "10.0.4")
-(def +version+ (str +lib-version+ "-0"))
+(def +lib-version+ "12.2.0")
+(def +version+ (str +lib-version+ "-2"))
 
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.10.4" :scope "test"]
-                  [cljsjs/react "16.3.2-0"]])
+                  [cljsjs/react "16.12.0-1"]
+                  [cljsjs/react-dom "16.12.0-1"]])
+
+(task-options! push {:repo-map {:url "https://repos.com/repo/"}})
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -25,7 +28,7 @@
 
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.react-beautiful-dnd"
-              :requires ["cljsjs.react"])
+              :requires ["cljsjs.react" "cljsjs.react.dom"])
    (pom)
    (jar)
    (validate)))
