@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-date-range "0.2.4-0"] ;; latest release
+[cljsjs/react-date-range "1.0.0-beta2-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -19,8 +19,25 @@ Usage might look something like this:
 
 ```clojure
 (js/React.createElement
-  js/ReactDateRange.DateRange
-  #js {onChange: #(js/console.log %)})
+ js/ReactDateRange.DateRangePicker
+ #js{:ranges   #js [#js {:startDate (js/Date.)
+                         :endDate   (js/Date.)
+                         :key       "selection"}]
+     :onChange prn})
 ```
+
+You can also use those 2 provided CSS files:
+
+```clojure
+;; Development
+cljsjs/react-date-range/development/styles.inc.css
+cljsjs/react-date-range/development/theme/default.inc.css
+
+;; Production
+cljsjs/react-date-range/production/styles.min.inc.css
+cljsjs/react-date-range/production/theme/default.min.inc.css
+
+```
+
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps

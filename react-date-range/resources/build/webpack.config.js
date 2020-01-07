@@ -1,7 +1,7 @@
 var path = require('path');
 
 module.exports = {
-    entry: path.join(__dirname, "lib", "index.js"),
+    entry: path.join(__dirname, "dist", "index.js"),
 
     externals: {
         "moment": "moment",
