@@ -386,7 +386,16 @@ var ReactStripeElements = {
     "defaultProps": {
       "apiKey": {},
       "children": {},
-      "stripe": {}
+      "stripe": {
+        // Note that these are dynamically injected.
+        // They aren't picked up by externs generation and need to be manually preserved.
+        // https://github.com/stripe/react-stripe-elements/blob/v6.0.1/src/components/inject.js#L98-L108
+        "createToken": function () {},
+        "createSource": function () {},
+        "createPaymentMethod": function () {},
+        "handleCardPayment": function () {},
+        "handleCardSetup": function () {}
+      }
     },
     "propTypes": {
       "apiKey": {
