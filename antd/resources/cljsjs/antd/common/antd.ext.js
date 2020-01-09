@@ -6,7 +6,7 @@
  * https://unpkg.com/react@16.12.0/umd/react.development.js
  * https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js
  * https://unpkg.com/moment@2.24.0/moment.js
- * https://unpkg.com/antd@3.26.5/dist/antd-with-locales.js
+ * https://unpkg.com/antd@3.26.6/dist/antd-with-locales.js
  *
  * and extern the `antd` JavaScript object
  *
