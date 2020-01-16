@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.2.9")
+(def +lib-version+ "1.5.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -17,9 +17,9 @@
 
 (deftask package []
   (comp
-   (download :url (str "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@" +lib-version+)
+   (download :url (str "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@" +lib-version+ "/dist/tf.js")
              :target "cljsjs/tfjs/development/tfjs.inc.js")
-   (download :url (str "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@" +lib-version+)
+   (download :url (str "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@" +lib-version+"/dist/tf.min.js")
              :target "cljsjs/tfjs/production/tfjs.min.inc.js")
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.tfjs")

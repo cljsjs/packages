@@ -217,6 +217,7 @@ var tf = {
           },
           "cast": function () { },
           "ceil": function () { },
+          "checkNumericalProblems": function () { },
           "clip": function () { },
           "compileAndRun": function () { },
           "complex": function () { },
@@ -224,6 +225,7 @@ var tf = {
           "complexSeparableBinaryOp": function () { },
           "computeBytes": function () { },
           "concat": function () { },
+          "constructor": function () { },
           "conv2d": function () { },
           "conv2dByMatMul": function () { },
           "conv2dDerFilter": function () { },
@@ -262,9 +264,9 @@ var tf = {
           "floatPrecision": function () { },
           "floor": function () { },
           "floorDiv": function () { },
-          "fromPixels": function () { },
           "fusedBatchMatMul": function () { },
           "fusedConv2d": function () { },
+          "fusedDepthwiseConv2D": function () { },
           "gather": function () { },
           "gatherND": function () { },
           "getAndSaveBinary": function () { },
@@ -1026,6 +1028,7 @@ var tf = {
               "isVertexArray": function () { },
               "lineWidth": function () { },
               "linkProgram": function () { },
+              "makeXRCompatible": function () { },
               "pauseTransformFeedback": function () { },
               "pixelStorei": function () { },
               "polygonOffset": function () { },
@@ -1162,10 +1165,9 @@ var tf = {
           "logicalAnd": function () { },
           "logicalNot": function () { },
           "logicalOr": function () { },
-          "makeComplexComponentTensorHandle": function () { },
-          "makeOutputArray": function () { },
-          "makePackedTensor": function () { },
-          "makeTensorHandle": function () { },
+          "makeComplexComponentTensorInfo": function () { },
+          "makeOutput": function () { },
+          "makeTensorInfo": function () { },
           "max": function () { },
           "maxPool": function () { },
           "maxPool3d": function () { },
@@ -1176,12 +1178,14 @@ var tf = {
           "min": function () { },
           "minimum": function () { },
           "mod": function () { },
+          "move": function () { },
           "multinomial": function () { },
           "multiply": function () { },
           "neg": function () { },
           "nonMaxSuppression": function () { },
           "notEqual": function () { },
           "numBytesInGPU": {},
+          "numDataIds": function () { },
           "numMBBeforeWarning": {},
           "oneHot": function () { },
           "onesLike": function () { },
@@ -1190,6 +1194,7 @@ var tf = {
           "packedReshape": function () { },
           "packedUnaryOp": function () { },
           "pad": function () { },
+          "pendingDeletes": {},
           "pendingDisposal": {},
           "pendingRead": {},
           "pow": function () { },
@@ -1201,9 +1206,9 @@ var tf = {
           "realDivide": function () { },
           "reciprocal": function () { },
           "reduce": function () { },
-          "register": function () { },
           "releaseGPUData": function () { },
           "relu": function () { },
+          "relu6": function () { },
           "reshape": function () { },
           "resizeBilinear": function () { },
           "resizeBilinearBackprop": function () { },
@@ -1212,6 +1217,7 @@ var tf = {
           "reverse": function () { },
           "round": function () { },
           "rsqrt": function () { },
+          "runWebGLProgram": function () { },
           "scatterND": function () { },
           "segOpCompute": function () { },
           "select": function () { },
@@ -1240,10 +1246,12 @@ var tf = {
           "texData": {
             "backend": {},
             "data": {},
+            "dataIdsCount": {},
             "dataMover": {},
             "delete": function () { },
             "get": function () { },
             "has": function () { },
+            "numDataIds": function () { },
             "set": function () { }
           },
           "textureManager": {
@@ -1872,23 +1880,23 @@ var tf = {
                 "bufferSubData": function () { },
                 "canvas": {
                   "addEventListener": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "convertToBlob": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "dispatchEvent": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getContext": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "height": {},
                   "removeEventListener": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "transferToImageBitmap": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "width": {}
                 },
@@ -2015,6 +2023,7 @@ var tf = {
                 "isVertexArray": function () { },
                 "lineWidth": function () { },
                 "linkProgram": function () { },
+                "makeXRCompatible": function () { },
                 "pauseTransformFeedback": function () { },
                 "pixelStorei": function () { },
                 "polygonOffset": function () { },
@@ -2155,8 +2164,10 @@ var tf = {
           "zerosLike": function () { }
         },
         "backendNames": function () { },
+        "checkKernelForMemLeak": function () { },
         "clone": function () { },
         "customGrad": function () { },
+        "disposeRegisteredKernels": function () { },
         "disposeTensor": function () { },
         "disposeVariable": function () { },
         "disposeVariables": function () { },
@@ -2164,13 +2175,16 @@ var tf = {
         "endTape": function () { },
         "findBackend": function () { },
         "findBackendFactory": function () { },
-        "fromPixels": function () { },
         "getSortedBackends": function () { },
         "gradients": function () { },
+        "incRef": function () { },
         "initializeBackend": function () { },
         "initializeBackendsAndReturnBest": function () { },
         "isTapeOn": function () { },
         "keep": function () { },
+        "makeTensor": function () { },
+        "makeTensorFromDataId": function () { },
+        "makeVariable": function () { },
         "memory": function () { },
         "moveData": function () { },
         "nextTensorId": function () { },
@@ -2181,8 +2195,6 @@ var tf = {
         "readSync": function () { },
         "ready": function () { },
         "registerBackend": function () { },
-        "registerTensor": function () { },
-        "registerVariable": function () { },
         "registeredVariables": {},
         "registry": {
           "webgl": {
@@ -2215,37 +2227,39 @@ var tf = {
             "binaryCache": {},
             "canvas": {
               "addEventListener": {
-                "closure_uid_20499601": {}
+                "closure_uid_943987451": {}
               },
-              "closure_uid_20499601": {},
+              "closure_uid_943987451": {},
               "convertToBlob": {
-                "closure_uid_20499601": {}
+                "closure_uid_943987451": {}
               },
               "dispatchEvent": {
-                "closure_uid_20499601": {}
+                "closure_uid_943987451": {}
               },
               "getContext": {
-                "closure_uid_20499601": {}
+                "closure_uid_943987451": {}
               },
               "height": {},
               "removeEventListener": {
-                "closure_uid_20499601": {}
+                "closure_uid_943987451": {}
               },
               "transferToImageBitmap": {
-                "closure_uid_20499601": {}
+                "closure_uid_943987451": {}
               },
               "width": {}
             },
             "cast": function () { },
             "ceil": function () { },
+            "checkNumericalProblems": function () { },
             "clip": function () { },
-            "closure_uid_20499601": {},
+            "closure_uid_943987451": {},
             "compileAndRun": function () { },
             "complex": function () { },
             "complexAbs": function () { },
             "complexSeparableBinaryOp": function () { },
             "computeBytes": function () { },
             "concat": function () { },
+            "constructor": function () { },
             "conv2d": function () { },
             "conv2dByMatMul": function () { },
             "conv2dDerFilter": function () { },
@@ -2284,9 +2298,9 @@ var tf = {
             "floatPrecision": function () { },
             "floor": function () { },
             "floorDiv": function () { },
-            "fromPixels": function () { },
             "fusedBatchMatMul": function () { },
             "fusedConv2d": function () { },
+            "fusedDepthwiseConv2D": function () { },
             "gather": function () { },
             "gatherND": function () { },
             "getAndSaveBinary": function () { },
@@ -2302,7 +2316,7 @@ var tf = {
               "beginQuery": function () { },
               "bindTextureToFrameBuffer": function () { },
               "blockUntilAllProgramsCompleted": function () { },
-              "closure_uid_20499601": {},
+              "closure_uid_943987451": {},
               "colorBufferFloatExtension": {},
               "createAndWaitForFence": function () { },
               "createBufferFromTexture": function () { },
@@ -2918,24 +2932,24 @@ var tf = {
                 "bufferSubData": function () { },
                 "canvas": {
                   "addEventListener": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
-                  "closure_uid_20499601": {},
+                  "closure_uid_943987451": {},
                   "convertToBlob": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "dispatchEvent": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getContext": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "height": {},
                   "removeEventListener": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "transferToImageBitmap": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "width": {}
                 },
@@ -2949,7 +2963,7 @@ var tf = {
                 "clearDepth": function () { },
                 "clearStencil": function () { },
                 "clientWaitSync": function () { },
-                "closure_uid_20499601": {},
+                "closure_uid_943987451": {},
                 "colorMask": function () { },
                 "compileShader": function () { },
                 "compressedTexImage2D": function () { },
@@ -3063,6 +3077,7 @@ var tf = {
                 "isVertexArray": function () { },
                 "lineWidth": function () { },
                 "linkProgram": function () { },
+                "makeXRCompatible": function () { },
                 "pauseTransformFeedback": function () { },
                 "pixelStorei": function () { },
                 "polygonOffset": function () { },
@@ -3199,10 +3214,9 @@ var tf = {
             "logicalAnd": function () { },
             "logicalNot": function () { },
             "logicalOr": function () { },
-            "makeComplexComponentTensorHandle": function () { },
-            "makeOutputArray": function () { },
-            "makePackedTensor": function () { },
-            "makeTensorHandle": function () { },
+            "makeComplexComponentTensorInfo": function () { },
+            "makeOutput": function () { },
+            "makeTensorInfo": function () { },
             "max": function () { },
             "maxPool": function () { },
             "maxPool3d": function () { },
@@ -3213,12 +3227,14 @@ var tf = {
             "min": function () { },
             "minimum": function () { },
             "mod": function () { },
+            "move": function () { },
             "multinomial": function () { },
             "multiply": function () { },
             "neg": function () { },
             "nonMaxSuppression": function () { },
             "notEqual": function () { },
             "numBytesInGPU": {},
+            "numDataIds": function () { },
             "numMBBeforeWarning": {},
             "oneHot": function () { },
             "onesLike": function () { },
@@ -3227,6 +3243,7 @@ var tf = {
             "packedReshape": function () { },
             "packedUnaryOp": function () { },
             "pad": function () { },
+            "pendingDeletes": {},
             "pendingDisposal": {},
             "pendingRead": {},
             "pow": function () { },
@@ -3238,9 +3255,9 @@ var tf = {
             "realDivide": function () { },
             "reciprocal": function () { },
             "reduce": function () { },
-            "register": function () { },
             "releaseGPUData": function () { },
             "relu": function () { },
+            "relu6": function () { },
             "reshape": function () { },
             "resizeBilinear": function () { },
             "resizeBilinearBackprop": function () { },
@@ -3249,6 +3266,7 @@ var tf = {
             "reverse": function () { },
             "round": function () { },
             "rsqrt": function () { },
+            "runWebGLProgram": function () { },
             "scatterND": function () { },
             "segOpCompute": function () { },
             "select": function () { },
@@ -3277,15 +3295,17 @@ var tf = {
             "texData": {
               "backend": {},
               "data": {},
+              "dataIdsCount": {},
               "dataMover": {},
               "delete": function () { },
               "get": function () { },
               "has": function () { },
+              "numDataIds": function () { },
               "set": function () { }
             },
             "textureManager": {
               "acquireTexture": function () { },
-              "closure_uid_20499601": {},
+              "closure_uid_943987451": {},
               "dispose": function () { },
               "freeTextures": {},
               "getNumFreeTextures": function () { },
@@ -3295,7 +3315,7 @@ var tf = {
                 "beginQuery": function () { },
                 "bindTextureToFrameBuffer": function () { },
                 "blockUntilAllProgramsCompleted": function () { },
-                "closure_uid_20499601": {},
+                "closure_uid_943987451": {},
                 "colorBufferFloatExtension": {},
                 "createAndWaitForFence": function () { },
                 "createBufferFromTexture": function () { },
@@ -3888,702 +3908,705 @@ var tf = {
                   "WAIT_FAILED": {},
                   "ZERO": {},
                   "activeTexture": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "attachShader": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "beginQuery": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "beginTransformFeedback": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "bindAttribLocation": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "bindBuffer": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "bindBufferBase": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "bindBufferRange": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "bindFramebuffer": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "bindRenderbuffer": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "bindSampler": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "bindTexture": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "bindTransformFeedback": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "bindVertexArray": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "blendColor": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "blendEquation": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "blendEquationSeparate": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "blendFunc": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "blendFuncSeparate": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "blitFramebuffer": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "bufferData": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "bufferSubData": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "canvas": {
                     "addEventListener": {
-                      "closure_uid_20499601": {}
+                      "closure_uid_943987451": {}
                     },
-                    "closure_uid_20499601": {},
+                    "closure_uid_943987451": {},
                     "convertToBlob": {
-                      "closure_uid_20499601": {}
+                      "closure_uid_943987451": {}
                     },
                     "dispatchEvent": {
-                      "closure_uid_20499601": {}
+                      "closure_uid_943987451": {}
                     },
                     "getContext": {
-                      "closure_uid_20499601": {}
+                      "closure_uid_943987451": {}
                     },
                     "height": {},
                     "removeEventListener": {
-                      "closure_uid_20499601": {}
+                      "closure_uid_943987451": {}
                     },
                     "transferToImageBitmap": {
-                      "closure_uid_20499601": {}
+                      "closure_uid_943987451": {}
                     },
                     "width": {}
                   },
                   "checkFramebufferStatus": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "clear": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "clearBufferfi": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "clearBufferfv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "clearBufferiv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "clearBufferuiv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "clearColor": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "clearDepth": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "clearStencil": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "clientWaitSync": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
-                  "closure_uid_20499601": {},
+                  "closure_uid_943987451": {},
                   "colorMask": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "compileShader": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "compressedTexImage2D": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "compressedTexImage3D": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "compressedTexSubImage2D": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "compressedTexSubImage3D": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "copyBufferSubData": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "copyTexImage2D": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "copyTexSubImage2D": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "copyTexSubImage3D": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "createBuffer": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "createFramebuffer": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "createProgram": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "createQuery": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "createRenderbuffer": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "createSampler": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "createShader": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "createTexture": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "createTransformFeedback": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "createVertexArray": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "cullFace": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "deleteBuffer": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "deleteFramebuffer": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "deleteProgram": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "deleteQuery": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "deleteRenderbuffer": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "deleteSampler": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "deleteShader": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "deleteSync": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "deleteTexture": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "deleteTransformFeedback": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "deleteVertexArray": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "depthFunc": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "depthMask": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "depthRange": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "detachShader": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "disable": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "disableVertexAttribArray": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "drawArrays": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "drawArraysInstanced": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "drawBuffers": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "drawElements": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "drawElementsInstanced": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "drawRangeElements": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "drawingBufferHeight": {},
                   "drawingBufferWidth": {},
                   "enable": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "enableVertexAttribArray": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "endQuery": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "endTransformFeedback": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "fenceSync": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "finish": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "flush": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "framebufferRenderbuffer": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "framebufferTexture2D": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "framebufferTextureLayer": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "frontFace": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "generateMipmap": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getActiveAttrib": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getActiveUniform": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getActiveUniformBlockName": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getActiveUniformBlockParameter": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getActiveUniforms": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getAttachedShaders": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getAttribLocation": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getBufferParameter": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getBufferSubData": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getContextAttributes": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getError": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getExtension": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getFragDataLocation": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getFramebufferAttachmentParameter": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getIndexedParameter": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getInternalformatParameter": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getParameter": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getProgramInfoLog": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getProgramParameter": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getQuery": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getQueryParameter": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getRenderbufferParameter": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getSamplerParameter": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getShaderInfoLog": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getShaderParameter": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getShaderPrecisionFormat": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getShaderSource": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getSupportedExtensions": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getSyncParameter": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getTexParameter": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getTransformFeedbackVarying": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getUniform": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getUniformBlockIndex": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getUniformIndices": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getUniformLocation": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getVertexAttrib": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "getVertexAttribOffset": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "hint": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "invalidateFramebuffer": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "invalidateSubFramebuffer": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "isBuffer": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "isContextLost": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "isEnabled": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "isFramebuffer": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "isProgram": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "isQuery": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "isRenderbuffer": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "isSampler": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "isShader": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "isSync": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "isTexture": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "isTransformFeedback": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "isVertexArray": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "lineWidth": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "linkProgram": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
+                  },
+                  "makeXRCompatible": {
+                    "closure_uid_943987451": {}
                   },
                   "pauseTransformFeedback": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "pixelStorei": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "polygonOffset": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "readBuffer": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "readPixels": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "renderbufferStorage": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "renderbufferStorageMultisample": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "resumeTransformFeedback": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "sampleCoverage": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "samplerParameterf": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "samplerParameteri": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "scissor": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "shaderSource": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "stencilFunc": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "stencilFuncSeparate": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "stencilMask": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "stencilMaskSeparate": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "stencilOp": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "stencilOpSeparate": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "texImage2D": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "texImage3D": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "texParameterf": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "texParameteri": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "texStorage2D": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "texStorage3D": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "texSubImage2D": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "texSubImage3D": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "transformFeedbackVaryings": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniform1f": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniform1fv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniform1i": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniform1iv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniform1ui": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniform1uiv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniform2f": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniform2fv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniform2i": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniform2iv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniform2ui": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniform2uiv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniform3f": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniform3fv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniform3i": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniform3iv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniform3ui": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniform3uiv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniform4f": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniform4fv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniform4i": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniform4iv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniform4ui": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniform4uiv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniformBlockBinding": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniformMatrix2fv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniformMatrix2x3fv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniformMatrix2x4fv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniformMatrix3fv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniformMatrix3x2fv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniformMatrix3x4fv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniformMatrix4fv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniformMatrix4x2fv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "uniformMatrix4x3fv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "useProgram": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "validateProgram": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "vertexAttrib1f": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "vertexAttrib1fv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "vertexAttrib2f": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "vertexAttrib2fv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "vertexAttrib3f": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "vertexAttrib3fv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "vertexAttrib4f": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "vertexAttrib4fv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "vertexAttribDivisor": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "vertexAttribI4i": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "vertexAttribI4iv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "vertexAttribI4ui": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "vertexAttribI4uiv": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "vertexAttribIPointer": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "vertexAttribPointer": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "viewport": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   },
                   "waitSync": {
-                    "closure_uid_20499601": {}
+                    "closure_uid_943987451": {}
                   }
                 },
                 "indexBuffer": {},
@@ -4657,8 +4680,11 @@ var tf = {
         "removeBackend": function () { },
         "reset": function () { },
         "runKernel": function () { },
+        "runKernelFunc": function () { },
         "scopedRun": function () { },
         "setBackend": function () { },
+        "setupRegisteredKernels": function () { },
+        "shouldCheckForMemLeaks": function () { },
         "startScope": function () { },
         "startTape": function () { },
         "state": {
@@ -4676,6 +4702,7 @@ var tf = {
           "nextTapeNodeId": {},
           "numBytes": {},
           "numDataBuffers": {},
+          "numDataMovesStack": {},
           "numStringTensors": {},
           "numTensors": {},
           "profiling": {},
@@ -4685,11 +4712,10 @@ var tf = {
         },
         "tidy": function () { },
         "time": function () { },
-        "track": function () { },
-        "write": function () { }
+        "track": function () { }
       },
       "addEventListener": {
-        "closure_uid_20499601": {}
+        "closure_uid_943987451": {}
       },
       "alert": function () { },
       "applicationCache": {
@@ -4701,10 +4727,10 @@ var tf = {
         "UPDATEREADY": {},
         "abort": function () { },
         "addEventListener": {
-          "closure_uid_20499601": {}
+          "closure_uid_943987451": {}
         },
         "dispatchEvent": {
-          "closure_uid_20499601": {}
+          "closure_uid_943987451": {}
         },
         "oncached": {},
         "onchecking": {},
@@ -4715,7 +4741,7 @@ var tf = {
         "onprogress": {},
         "onupdateready": {},
         "removeEventListener": {
-          "closure_uid_20499601": {}
+          "closure_uid_943987451": {}
         },
         "status": {},
         "swapCache": function () { },
@@ -4763,43 +4789,44 @@ var tf = {
         "appVersion": {},
         "bluetooth": {
           "addEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "dispatchEvent": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
+          "getAvailability": function () { },
           "removeEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "requestDevice": function () { }
         },
         "clipboard": {
           "addEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "dispatchEvent": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "read": function () { },
           "readText": function () { },
           "removeEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "write": function () { },
           "writeText": function () { }
         },
         "connection": {
           "addEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "dispatchEvent": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "downlink": {},
           "effectiveType": {},
           "onchange": {},
           "removeEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "rtt": {},
           "saveData": {}
@@ -4840,10 +4867,10 @@ var tf = {
         },
         "mediaDevices": {
           "addEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "dispatchEvent": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "enumerateDevices": function () { },
           "getDisplayMedia": function () { },
@@ -4851,7 +4878,7 @@ var tf = {
           "getUserMedia": function () { },
           "ondevicechange": {},
           "removeEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           }
         },
         "mediaSession": {
@@ -5023,11 +5050,11 @@ var tf = {
         "sendBeacon": function () { },
         "serviceWorker": {
           "addEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "controller": {},
           "dispatchEvent": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "getRegistration": function () { },
           "getRegistrations": function () { },
@@ -5036,7 +5063,7 @@ var tf = {
           "ready": {},
           "register": function () { },
           "removeEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "startMessages": function () { }
         },
@@ -5048,16 +5075,16 @@ var tf = {
         "unregisterProtocolHandler": function () { },
         "usb": {
           "addEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "dispatchEvent": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "getDevices": function () { },
           "onconnect": {},
           "ondisconnect": {},
           "removeEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "requestDevice": function () { }
         },
@@ -5077,6 +5104,21 @@ var tf = {
         "webkitTemporaryStorage": {
           "queryUsageAndQuota": function () { },
           "requestQuota": function () { }
+        },
+        "xr": {
+          "addEventListener": {
+            "closure_uid_943987451": {}
+          },
+          "dispatchEvent": {
+            "closure_uid_943987451": {}
+          },
+          "isSessionSupported": function () { },
+          "ondevicechange": {},
+          "removeEventListener": {
+            "closure_uid_943987451": {}
+          },
+          "requestSession": function () { },
+          "supportsSession": function () { }
         }
       },
       "close": function () { },
@@ -5110,7 +5152,7 @@ var tf = {
       "defaultstatus": {},
       "devicePixelRatio": {},
       "dispatchEvent": {
-        "closure_uid_20499601": {}
+        "closure_uid_943987451": {}
       },
       "document": {},
       "external": {
@@ -5189,43 +5231,44 @@ var tf = {
         "appVersion": {},
         "bluetooth": {
           "addEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "dispatchEvent": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
+          "getAvailability": function () { },
           "removeEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "requestDevice": function () { }
         },
         "clipboard": {
           "addEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "dispatchEvent": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "read": function () { },
           "readText": function () { },
           "removeEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "write": function () { },
           "writeText": function () { }
         },
         "connection": {
           "addEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "dispatchEvent": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "downlink": {},
           "effectiveType": {},
           "onchange": {},
           "removeEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "rtt": {},
           "saveData": {}
@@ -5266,10 +5309,10 @@ var tf = {
         },
         "mediaDevices": {
           "addEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "dispatchEvent": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "enumerateDevices": function () { },
           "getDisplayMedia": function () { },
@@ -5277,7 +5320,7 @@ var tf = {
           "getUserMedia": function () { },
           "ondevicechange": {},
           "removeEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           }
         },
         "mediaSession": {
@@ -5449,11 +5492,11 @@ var tf = {
         "sendBeacon": function () { },
         "serviceWorker": {
           "addEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "controller": {},
           "dispatchEvent": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "getRegistration": function () { },
           "getRegistrations": function () { },
@@ -5462,7 +5505,7 @@ var tf = {
           "ready": {},
           "register": function () { },
           "removeEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "startMessages": function () { }
         },
@@ -5474,16 +5517,16 @@ var tf = {
         "unregisterProtocolHandler": function () { },
         "usb": {
           "addEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "dispatchEvent": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "getDevices": function () { },
           "onconnect": {},
           "ondisconnect": {},
           "removeEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "requestDevice": function () { }
         },
@@ -5503,6 +5546,21 @@ var tf = {
         "webkitTemporaryStorage": {
           "queryUsageAndQuota": function () { },
           "requestQuota": function () { }
+        },
+        "xr": {
+          "addEventListener": {
+            "closure_uid_943987451": {}
+          },
+          "dispatchEvent": {
+            "closure_uid_943987451": {}
+          },
+          "isSessionSupported": function () { },
+          "ondevicechange": {},
+          "removeEventListener": {
+            "closure_uid_943987451": {}
+          },
+          "requestSession": function () { },
+          "supportsSession": function () { }
         }
       },
       "onabort": {},
@@ -5540,6 +5598,7 @@ var tf = {
       "onended": {},
       "onerror": {},
       "onfocus": {},
+      "onformdata": {},
       "ongotpointercapture": {},
       "onhashchange": {},
       "oninput": {},
@@ -5577,6 +5636,7 @@ var tf = {
       "onpointermove": {},
       "onpointerout": {},
       "onpointerover": {},
+      "onpointerrawupdate": {},
       "onpointerup": {},
       "onpopstate": {},
       "onprogress": {},
@@ -6199,6 +6259,7 @@ var tf = {
           "bluetooth": {
             "addEventListener": function () { },
             "dispatchEvent": function () { },
+            "getAvailability": function () { },
             "removeEventListener": function () { },
             "requestDevice": function () { }
           },
@@ -6476,6 +6537,15 @@ var tf = {
           "webkitTemporaryStorage": {
             "queryUsageAndQuota": function () { },
             "requestQuota": function () { }
+          },
+          "xr": {
+            "addEventListener": function () { },
+            "dispatchEvent": function () { },
+            "isSessionSupported": function () { },
+            "ondevicechange": {},
+            "removeEventListener": function () { },
+            "requestSession": function () { },
+            "supportsSession": function () { }
           }
         },
         "close": function () { },
@@ -6596,6 +6666,7 @@ var tf = {
           "bluetooth": {
             "addEventListener": function () { },
             "dispatchEvent": function () { },
+            "getAvailability": function () { },
             "removeEventListener": function () { },
             "requestDevice": function () { }
           },
@@ -6873,6 +6944,15 @@ var tf = {
           "webkitTemporaryStorage": {
             "queryUsageAndQuota": function () { },
             "requestQuota": function () { }
+          },
+          "xr": {
+            "addEventListener": function () { },
+            "dispatchEvent": function () { },
+            "isSessionSupported": function () { },
+            "ondevicechange": {},
+            "removeEventListener": function () { },
+            "requestSession": function () { },
+            "supportsSession": function () { }
           }
         },
         "onabort": {},
@@ -6910,6 +6990,7 @@ var tf = {
         "onended": {},
         "onerror": {},
         "onfocus": {},
+        "onformdata": {},
         "ongotpointercapture": {},
         "onhashchange": {},
         "oninput": {},
@@ -6947,6 +7028,7 @@ var tf = {
         "onpointermove": {},
         "onpointerout": {},
         "onpointerover": {},
+        "onpointerrawupdate": {},
         "onpointerup": {},
         "onpopstate": {},
         "onprogress": {},
@@ -7158,13 +7240,13 @@ var tf = {
       },
       "performance": {
         "addEventListener": {
-          "closure_uid_20499601": {}
+          "closure_uid_943987451": {}
         },
         "clearMarks": function () { },
         "clearMeasures": function () { },
         "clearResourceTimings": function () { },
         "dispatchEvent": {
-          "closure_uid_20499601": {}
+          "closure_uid_943987451": {}
         },
         "getEntries": function () { },
         "getEntriesByName": function () { },
@@ -7188,7 +7270,7 @@ var tf = {
         "now": function () { },
         "onresourcetimingbufferfull": {},
         "removeEventListener": {
-          "closure_uid_20499601": {}
+          "closure_uid_943987451": {}
         },
         "setResourceTimingBufferSize": function () { },
         "timeOrigin": {},
@@ -7227,7 +7309,7 @@ var tf = {
       "queueMicrotask": function () { },
       "releaseEvents": function () { },
       "removeEventListener": {
-        "closure_uid_20499601": {}
+        "closure_uid_943987451": {}
       },
       "requestAnimationFrame": function () { },
       "requestIdleCallback": function () { },
@@ -7242,16 +7324,16 @@ var tf = {
         "height": {},
         "orientation": {
           "addEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "angle": {},
           "dispatchEvent": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "lock": function () { },
           "onchange": {},
           "removeEventListener": {
-            "closure_uid_20499601": {}
+            "closure_uid_943987451": {}
           },
           "type": {},
           "unlock": function () { }
@@ -7284,11 +7366,11 @@ var tf = {
       "setTimeout": function () { },
       "speechSynthesis": {
         "addEventListener": {
-          "closure_uid_20499601": {}
+          "closure_uid_943987451": {}
         },
         "cancel": function () { },
         "dispatchEvent": {
-          "closure_uid_20499601": {}
+          "closure_uid_943987451": {}
         },
         "getVoices": function () { },
         "onvoiceschanged": {},
@@ -7296,7 +7378,7 @@ var tf = {
         "paused": {},
         "pending": {},
         "removeEventListener": {
-          "closure_uid_20499601": {}
+          "closure_uid_943987451": {}
         },
         "resume": function () { },
         "speak": function () { },
@@ -7390,14 +7472,9 @@ var tf = {
           "nodeKey": function () { }
         },
         "SymbolicTensor": function () { },
-        "Tensor": {
-          "make": function () { }
-        },
+        "Tensor": function () { },
         "TensorBuffer": function () { },
-        "Variable": {
-          "make": function () { },
-          "variable": function () { }
-        },
+        "Variable": function () { },
         "abs": function () { },
         "acos": function () { },
         "acosh": function () { },
@@ -7454,6 +7531,7 @@ var tf = {
         "batchNormalization4d": function () { },
         "batchToSpaceND": function () { },
         "booleanMaskAsync": function () { },
+        "broadcastTo": function () { },
         "browser": {
           "fromPixels": function () { },
           "toPixels": function () { }
@@ -7480,8 +7558,6 @@ var tf = {
         },
         "conv1d": function () { },
         "conv2d": function () { },
-        "conv2dDerFilter": function () { },
-        "conv2dDerInput": function () { },
         "conv2dTranspose": function () { },
         "conv3d": function () { },
         "conv3dTranspose": function () { },
@@ -7519,18 +7595,15 @@ var tf = {
         "dispose": function () { },
         "disposeVariables": function () { },
         "div": function () { },
+        "divNoNan": function () { },
         "divStrict": function () { },
         "dot": function () { },
         "dropout": function () { },
         "elu": function () { },
         "enableDebugMode": function () { },
         "enableProdMode": function () { },
-        "environment": {
-          "ENV": {},
-          "Environment": function () { },
-          "getQueryParams": function () { },
-          "setEnvironmentGlobal": function () { }
-        },
+        "engine": function () { },
+        "env": function () { },
         "equal": function () { },
         "equalStrict": function () { },
         "erf": function () { },
@@ -7547,11 +7620,15 @@ var tf = {
         "frame": function () { },
         "fused": {
           "conv2d": function () { },
+          "depthwiseConv2d": function () { },
           "matMul": function () { }
         },
         "gather": function () { },
         "gatherND": function () { },
         "getBackend": function () { },
+        "getGradient": function () { },
+        "getKernel": function () { },
+        "getKernelsForBackend": function () { },
         "grad": function () { },
         "grads": function () { },
         "greater": function () { },
@@ -7566,6 +7643,8 @@ var tf = {
           "cropAndResize": function () { },
           "nonMaxSuppression": function () { },
           "nonMaxSuppressionAsync": function () { },
+          "nonMaxSuppressionWithScore": function () { },
+          "nonMaxSuppressionWithScoreAsync": function () { },
           "resizeBilinear": function () { },
           "resizeNearestNeighbor": function () { }
         },
@@ -7669,6 +7748,7 @@ var tf = {
           "gruCell": function () { },
           "input": function () { },
           "inputLayer": function () { },
+          "layerNormalization": function () { },
           "leakyReLU": function () { },
           "lstm": function () { },
           "lstmCell": function () { },
@@ -7691,6 +7771,7 @@ var tf = {
           "simpleRNN": function () { },
           "simpleRNNCell": function () { },
           "softmax": function () { },
+          "spatialDropout1d": function () { },
           "stackedRNNCells": function () { },
           "thresholdedReLU": function () { },
           "timeDistributed": function () { },
@@ -7703,6 +7784,7 @@ var tf = {
         "lessEqualStrict": function () { },
         "lessStrict": function () { },
         "linalg": {
+          "bandPart": function () { },
           "gramSchmidt": function () { },
           "qr": function () { }
         },
@@ -7815,6 +7897,8 @@ var tf = {
         "reciprocal": function () { },
         "registerBackend": function () { },
         "registerCallbackConstructor": function () { },
+        "registerGradient": function () { },
+        "registerKernel": function () { },
         "registerOp": function () { },
         "regularizers": {
           "l1": function () { },
@@ -7822,6 +7906,7 @@ var tf = {
           "l2": function () { }
         },
         "relu": function () { },
+        "relu6": function () { },
         "removeBackend": function () { },
         "reshape": function () { },
         "reverse": function () { },
@@ -7889,6 +7974,7 @@ var tf = {
                 "L1L2": {},
                 "LSTM": {},
                 "LSTMCell": {},
+                "LayerNormalization": {},
                 "LeCunNormal": {},
                 "LeakyReLU": {},
                 "Masking": {},
@@ -7920,6 +8006,7 @@ var tf = {
                 "SimpleRNN": {},
                 "SimpleRNNCell": {},
                 "Softmax": {},
+                "SpatialDropout1D": {},
                 "StackedRNNCells": {},
                 "ThresholdedReLU": {},
                 "TimeDistributed": {},
@@ -7965,6 +8052,15 @@ var tf = {
         "slice2d": function () { },
         "slice3d": function () { },
         "slice4d": function () { },
+        "slice_util": {
+          "assertParamsValid": function () { },
+          "computeFlatOffset": function () { },
+          "computeOutShape": function () { },
+          "isSliceContinous": function () { },
+          "maskToAxes": function () { },
+          "startForAxis": function () { },
+          "stopForAxis": function () { }
+        },
         "softmax": function () { },
         "softplus": function () { },
         "spaceToBatchND": function () { },
@@ -8028,6 +8124,8 @@ var tf = {
         },
         "transpose": function () { },
         "truncatedNormal": function () { },
+        "unregisterGradient": function () { },
+        "unregisterKernel": function () { },
         "unsortedSegmentSum": function () { },
         "unstack": function () { },
         "util": {
@@ -8751,6 +8849,7 @@ var tf = {
           "bluetooth": {
             "addEventListener": function () { },
             "dispatchEvent": function () { },
+            "getAvailability": function () { },
             "removeEventListener": function () { },
             "requestDevice": function () { }
           },
@@ -9028,6 +9127,15 @@ var tf = {
           "webkitTemporaryStorage": {
             "queryUsageAndQuota": function () { },
             "requestQuota": function () { }
+          },
+          "xr": {
+            "addEventListener": function () { },
+            "dispatchEvent": function () { },
+            "isSessionSupported": function () { },
+            "ondevicechange": {},
+            "removeEventListener": function () { },
+            "requestSession": function () { },
+            "supportsSession": function () { }
           }
         },
         "close": function () { },
@@ -9148,6 +9256,7 @@ var tf = {
           "bluetooth": {
             "addEventListener": function () { },
             "dispatchEvent": function () { },
+            "getAvailability": function () { },
             "removeEventListener": function () { },
             "requestDevice": function () { }
           },
@@ -9425,6 +9534,15 @@ var tf = {
           "webkitTemporaryStorage": {
             "queryUsageAndQuota": function () { },
             "requestQuota": function () { }
+          },
+          "xr": {
+            "addEventListener": function () { },
+            "dispatchEvent": function () { },
+            "isSessionSupported": function () { },
+            "ondevicechange": {},
+            "removeEventListener": function () { },
+            "requestSession": function () { },
+            "supportsSession": function () { }
           }
         },
         "onabort": {},
@@ -9462,6 +9580,7 @@ var tf = {
         "onended": {},
         "onerror": {},
         "onfocus": {},
+        "onformdata": {},
         "ongotpointercapture": {},
         "onhashchange": {},
         "oninput": {},
@@ -9499,6 +9618,7 @@ var tf = {
         "onpointermove": {},
         "onpointerout": {},
         "onpointerover": {},
+        "onpointerrawupdate": {},
         "onpointerup": {},
         "onpopstate": {},
         "onprogress": {},
@@ -9710,10 +9830,10 @@ var tf = {
       },
       "visualViewport": {
         "addEventListener": {
-          "closure_uid_20499601": {}
+          "closure_uid_943987451": {}
         },
         "dispatchEvent": {
-          "closure_uid_20499601": {}
+          "closure_uid_943987451": {}
         },
         "height": {},
         "offsetLeft": {},
@@ -9723,7 +9843,7 @@ var tf = {
         "pageLeft": {},
         "pageTop": {},
         "removeEventListener": {
-          "closure_uid_20499601": {}
+          "closure_uid_943987451": {}
         },
         "scale": {},
         "width": {}
@@ -9744,12 +9864,7 @@ var tf = {
       "decode": function () { },
       "encode": function () { },
       "fetch": function () { },
-      "now": function () { },
-      "textEncoder": {
-        "encode": function () { },
-        "encodeInto": function () { },
-        "encoding": {}
-      }
+      "now": function () { }
     },
     "platformName": {},
     "populateURLFlags": function () { },
@@ -9817,14 +9932,9 @@ var tf = {
     "nodeKey": function () { }
   },
   "SymbolicTensor": function () { },
-  "Tensor": {
-    "make": function () { }
-  },
+  "Tensor": function () { },
   "TensorBuffer": function () { },
-  "Variable": {
-    "make": function () { },
-    "variable": function () { }
-  },
+  "Variable": function () { },
   "abs": function () { },
   "acos": function () { },
   "acosh": function () { },
@@ -9881,6 +9991,7 @@ var tf = {
   "batchNormalization4d": function () { },
   "batchToSpaceND": function () { },
   "booleanMaskAsync": function () { },
+  "broadcastTo": function () { },
   "browser": {
     "fromPixels": function () { },
     "toPixels": function () { }
@@ -9907,8 +10018,6 @@ var tf = {
   },
   "conv1d": function () { },
   "conv2d": function () { },
-  "conv2dDerFilter": function () { },
-  "conv2dDerInput": function () { },
   "conv2dTranspose": function () { },
   "conv3d": function () { },
   "conv3dTranspose": function () { },
@@ -9946,17450 +10055,15 @@ var tf = {
   "dispose": function () { },
   "disposeVariables": function () { },
   "div": function () { },
+  "divNoNan": function () { },
   "divStrict": function () { },
   "dot": function () { },
   "dropout": function () { },
   "elu": function () { },
   "enableDebugMode": function () { },
   "enableProdMode": function () { },
-  "environment": {
-    "ENV": {
-      "closure_uid_20499601": {},
-      "evaluateFlag": function () { },
-      "features": {
-        "DEBUG": {},
-        "HAS_WEBGL": {},
-        "IS_BROWSER": {},
-        "IS_NODE": {},
-        "WEBGL_VERSION": {}
-      },
-      "flagRegistry": {
-        "DEBUG": {
-          "evaluationFn": function () { },
-          "setHook": function () { }
-        },
-        "DEPRECATION_WARNINGS_ENABLED": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "HAS_WEBGL": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "IS_BROWSER": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "IS_CHROME": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "IS_NODE": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "IS_TEST": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "PROD": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "TENSORLIKE_CHECK_SHAPE_CONSISTENCY": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "WEBGL_BUFFER_SUPPORTED": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "WEBGL_CONV_IM2COL": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "WEBGL_CPU_FORWARD": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "WEBGL_DISJOINT_QUERY_TIMER_EXTENSION_RELIABLE": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "WEBGL_DISJOINT_QUERY_TIMER_EXTENSION_VERSION": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "WEBGL_DOWNLOAD_FLOAT_ENABLED": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "WEBGL_FENCE_API_ENABLED": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "WEBGL_FORCE_F16_TEXTURES": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "WEBGL_LAZILY_UNPACK": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "WEBGL_MAX_TEXTURES_IN_SHADER": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "WEBGL_MAX_TEXTURE_SIZE": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "WEBGL_PACK": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "WEBGL_PACK_ARRAY_OPERATIONS": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "WEBGL_PACK_BINARY_OPERATIONS": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "WEBGL_PACK_CLIP": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "WEBGL_PACK_DEPTHWISECONV": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "WEBGL_PACK_IMAGE_OPERATIONS": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "WEBGL_PACK_NORMALIZATION": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "WEBGL_PACK_REDUCE": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "WEBGL_PACK_UNARY_OPERATIONS": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "WEBGL_RENDER_FLOAT32_CAPABLE": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "WEBGL_RENDER_FLOAT32_ENABLED": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "WEBGL_SIZE_UPLOAD_UNIFORM": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        },
-        "WEBGL_VERSION": {
-          "evaluationFn": function () { },
-          "setHook": {}
-        }
-      },
-      "flags": {
-        "DEBUG": {},
-        "HAS_WEBGL": {},
-        "IS_BROWSER": {},
-        "IS_NODE": {},
-        "WEBGL_VERSION": {}
-      },
-      "get": function () { },
-      "getBool": function () { },
-      "getFlags": function () { },
-      "getNumber": function () { },
-      "global": {
-        "PERSISTENT": {},
-        "TEMPORARY": {},
-        "_tfengine": {
-          "ENV": {},
-          "addTapeNode": function () { },
-          "backend": {
-            "LRNGrad": function () { },
-            "abs": function () { },
-            "acos": function () { },
-            "acosh": function () { },
-            "acquireTexture": function () { },
-            "add": function () { },
-            "addN": function () { },
-            "all": function () { },
-            "any": function () { },
-            "argMax": function () { },
-            "argMin": function () { },
-            "argMinMaxReduce": function () { },
-            "argReduce": function () { },
-            "argReducePacked": function () { },
-            "asin": function () { },
-            "asinh": function () { },
-            "atan": function () { },
-            "atan2": function () { },
-            "atanh": function () { },
-            "avgPool": function () { },
-            "avgPool3d": function () { },
-            "avgPool3dBackprop": function () { },
-            "avgPoolBackprop": function () { },
-            "batchMatMul": function () { },
-            "batchNormalization": function () { },
-            "batchToSpaceND": function () { },
-            "binaryCache": {},
-            "canvas": {
-              "addEventListener": {
-                "closure_uid_20499601": {}
-              },
-              "closure_uid_20499601": {},
-              "convertToBlob": {
-                "closure_uid_20499601": {}
-              },
-              "dispatchEvent": {
-                "closure_uid_20499601": {}
-              },
-              "getContext": {
-                "closure_uid_20499601": {}
-              },
-              "height": {},
-              "removeEventListener": {
-                "closure_uid_20499601": {}
-              },
-              "transferToImageBitmap": {
-                "closure_uid_20499601": {}
-              },
-              "width": {}
-            },
-            "cast": function () { },
-            "ceil": function () { },
-            "clip": function () { },
-            "closure_uid_20499601": {},
-            "compileAndRun": function () { },
-            "complex": function () { },
-            "complexAbs": function () { },
-            "complexSeparableBinaryOp": function () { },
-            "computeBytes": function () { },
-            "concat": function () { },
-            "conv2d": function () { },
-            "conv2dByMatMul": function () { },
-            "conv2dDerFilter": function () { },
-            "conv2dDerInput": function () { },
-            "conv2dWithIm2Row": function () { },
-            "conv3d": function () { },
-            "conv3dDerFilter": function () { },
-            "conv3dDerInput": function () { },
-            "convertAndCacheOnCPU": function () { },
-            "cos": function () { },
-            "cosh": function () { },
-            "cropAndResize": function () { },
-            "cumsum": function () { },
-            "dataRefCount": {},
-            "decode": function () { },
-            "depthToSpace": function () { },
-            "depthwiseConv2D": function () { },
-            "depthwiseConv2DDerFilter": function () { },
-            "depthwiseConv2DDerInput": function () { },
-            "diag": function () { },
-            "dispose": function () { },
-            "disposeData": function () { },
-            "disposed": {},
-            "downloadWaitMs": {},
-            "elu": function () { },
-            "eluDer": function () { },
-            "endTimer": function () { },
-            "epsilon": function () { },
-            "equal": function () { },
-            "erf": function () { },
-            "exp": function () { },
-            "expm1": function () { },
-            "fft": function () { },
-            "fftImpl": function () { },
-            "fill": function () { },
-            "floatPrecision": function () { },
-            "floor": function () { },
-            "floorDiv": function () { },
-            "fromPixels": function () { },
-            "fusedBatchMatMul": function () { },
-            "fusedConv2d": function () { },
-            "gather": function () { },
-            "gatherND": function () { },
-            "getAndSaveBinary": function () { },
-            "getCPUBackend": function () { },
-            "getDataInfo": function () { },
-            "getGPGPUContext": function () { },
-            "getQueryTime": function () { },
-            "getTexture": function () { },
-            "getTextureManager": function () { },
-            "getValuesFromTexture": function () { },
-            "gpgpu": {
-              "addItemToPoll": function () { },
-              "beginQuery": function () { },
-              "bindTextureToFrameBuffer": function () { },
-              "blockUntilAllProgramsCompleted": function () { },
-              "closure_uid_20499601": {},
-              "colorBufferFloatExtension": {},
-              "createAndWaitForFence": function () { },
-              "createBufferFromTexture": function () { },
-              "createFence": function () { },
-              "createFloat16MatrixTexture": function () { },
-              "createFloat16PackedMatrixTexture": function () { },
-              "createFloat32MatrixTexture": function () { },
-              "createPackedMatrixTexture": function () { },
-              "createProgram": function () { },
-              "createUnsignedBytesMatrixTexture": function () { },
-              "debug": {},
-              "debugValidate": function () { },
-              "deleteMatrixTexture": function () { },
-              "deleteProgram": function () { },
-              "dispose": function () { },
-              "disposed": {},
-              "downloadByteEncodedFloatMatrixFromOutputTexture": function () { },
-              "downloadFloat32MatrixFromBuffer": function () { },
-              "downloadMatrixDriver": function () { },
-              "downloadMatrixFromPackedTexture": function () { },
-              "downloadPackedMatrixFromBuffer": function () { },
-              "endQuery": function () { },
-              "executeProgram": function () { },
-              "framebuffer": {},
-              "getAttributeLocation": function () { },
-              "getQueryTime": function () { },
-              "getQueryTimerExtension": function () { },
-              "getQueryTimerExtensionWebGL1": function () { },
-              "getQueryTimerExtensionWebGL2": function () { },
-              "getUniformLocation": function () { },
-              "getUniformLocationNoThrow": function () { },
-              "gl": {
-                "ACTIVE_ATTRIBUTES": {},
-                "ACTIVE_TEXTURE": {},
-                "ACTIVE_UNIFORMS": {},
-                "ACTIVE_UNIFORM_BLOCKS": {},
-                "ALIASED_LINE_WIDTH_RANGE": {},
-                "ALIASED_POINT_SIZE_RANGE": {},
-                "ALPHA": {},
-                "ALPHA_BITS": {},
-                "ALREADY_SIGNALED": {},
-                "ALWAYS": {},
-                "ANY_SAMPLES_PASSED": {},
-                "ANY_SAMPLES_PASSED_CONSERVATIVE": {},
-                "ARRAY_BUFFER": {},
-                "ARRAY_BUFFER_BINDING": {},
-                "ATTACHED_SHADERS": {},
-                "BACK": {},
-                "BLEND": {},
-                "BLEND_COLOR": {},
-                "BLEND_DST_ALPHA": {},
-                "BLEND_DST_RGB": {},
-                "BLEND_EQUATION": {},
-                "BLEND_EQUATION_ALPHA": {},
-                "BLEND_EQUATION_RGB": {},
-                "BLEND_SRC_ALPHA": {},
-                "BLEND_SRC_RGB": {},
-                "BLUE_BITS": {},
-                "BOOL": {},
-                "BOOL_VEC2": {},
-                "BOOL_VEC3": {},
-                "BOOL_VEC4": {},
-                "BROWSER_DEFAULT_WEBGL": {},
-                "BUFFER_SIZE": {},
-                "BUFFER_USAGE": {},
-                "BYTE": {},
-                "CCW": {},
-                "CLAMP_TO_EDGE": {},
-                "COLOR": {},
-                "COLOR_ATTACHMENT0": {},
-                "COLOR_ATTACHMENT1": {},
-                "COLOR_ATTACHMENT10": {},
-                "COLOR_ATTACHMENT11": {},
-                "COLOR_ATTACHMENT12": {},
-                "COLOR_ATTACHMENT13": {},
-                "COLOR_ATTACHMENT14": {},
-                "COLOR_ATTACHMENT15": {},
-                "COLOR_ATTACHMENT2": {},
-                "COLOR_ATTACHMENT3": {},
-                "COLOR_ATTACHMENT4": {},
-                "COLOR_ATTACHMENT5": {},
-                "COLOR_ATTACHMENT6": {},
-                "COLOR_ATTACHMENT7": {},
-                "COLOR_ATTACHMENT8": {},
-                "COLOR_ATTACHMENT9": {},
-                "COLOR_BUFFER_BIT": {},
-                "COLOR_CLEAR_VALUE": {},
-                "COLOR_WRITEMASK": {},
-                "COMPARE_REF_TO_TEXTURE": {},
-                "COMPILE_STATUS": {},
-                "COMPRESSED_TEXTURE_FORMATS": {},
-                "CONDITION_SATISFIED": {},
-                "CONSTANT_ALPHA": {},
-                "CONSTANT_COLOR": {},
-                "CONTEXT_LOST_WEBGL": {},
-                "COPY_READ_BUFFER": {},
-                "COPY_READ_BUFFER_BINDING": {},
-                "COPY_WRITE_BUFFER": {},
-                "COPY_WRITE_BUFFER_BINDING": {},
-                "CULL_FACE": {},
-                "CULL_FACE_MODE": {},
-                "CURRENT_PROGRAM": {},
-                "CURRENT_QUERY": {},
-                "CURRENT_VERTEX_ATTRIB": {},
-                "CW": {},
-                "DECR": {},
-                "DECR_WRAP": {},
-                "DELETE_STATUS": {},
-                "DEPTH": {},
-                "DEPTH24_STENCIL8": {},
-                "DEPTH32F_STENCIL8": {},
-                "DEPTH_ATTACHMENT": {},
-                "DEPTH_BITS": {},
-                "DEPTH_BUFFER_BIT": {},
-                "DEPTH_CLEAR_VALUE": {},
-                "DEPTH_COMPONENT": {},
-                "DEPTH_COMPONENT16": {},
-                "DEPTH_COMPONENT24": {},
-                "DEPTH_COMPONENT32F": {},
-                "DEPTH_FUNC": {},
-                "DEPTH_RANGE": {},
-                "DEPTH_STENCIL": {},
-                "DEPTH_STENCIL_ATTACHMENT": {},
-                "DEPTH_TEST": {},
-                "DEPTH_WRITEMASK": {},
-                "DITHER": {},
-                "DONT_CARE": {},
-                "DRAW_BUFFER0": {},
-                "DRAW_BUFFER1": {},
-                "DRAW_BUFFER10": {},
-                "DRAW_BUFFER11": {},
-                "DRAW_BUFFER12": {},
-                "DRAW_BUFFER13": {},
-                "DRAW_BUFFER14": {},
-                "DRAW_BUFFER15": {},
-                "DRAW_BUFFER2": {},
-                "DRAW_BUFFER3": {},
-                "DRAW_BUFFER4": {},
-                "DRAW_BUFFER5": {},
-                "DRAW_BUFFER6": {},
-                "DRAW_BUFFER7": {},
-                "DRAW_BUFFER8": {},
-                "DRAW_BUFFER9": {},
-                "DRAW_FRAMEBUFFER": {},
-                "DRAW_FRAMEBUFFER_BINDING": {},
-                "DST_ALPHA": {},
-                "DST_COLOR": {},
-                "DYNAMIC_COPY": {},
-                "DYNAMIC_DRAW": {},
-                "DYNAMIC_READ": {},
-                "ELEMENT_ARRAY_BUFFER": {},
-                "ELEMENT_ARRAY_BUFFER_BINDING": {},
-                "EQUAL": {},
-                "FASTEST": {},
-                "FLOAT": {},
-                "FLOAT_32_UNSIGNED_INT_24_8_REV": {},
-                "FLOAT_MAT2": {},
-                "FLOAT_MAT2x3": {},
-                "FLOAT_MAT2x4": {},
-                "FLOAT_MAT3": {},
-                "FLOAT_MAT3x2": {},
-                "FLOAT_MAT3x4": {},
-                "FLOAT_MAT4": {},
-                "FLOAT_MAT4x2": {},
-                "FLOAT_MAT4x3": {},
-                "FLOAT_VEC2": {},
-                "FLOAT_VEC3": {},
-                "FLOAT_VEC4": {},
-                "FRAGMENT_SHADER": {},
-                "FRAGMENT_SHADER_DERIVATIVE_HINT": {},
-                "FRAMEBUFFER": {},
-                "FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE": {},
-                "FRAMEBUFFER_ATTACHMENT_BLUE_SIZE": {},
-                "FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING": {},
-                "FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE": {},
-                "FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE": {},
-                "FRAMEBUFFER_ATTACHMENT_GREEN_SIZE": {},
-                "FRAMEBUFFER_ATTACHMENT_OBJECT_NAME": {},
-                "FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE": {},
-                "FRAMEBUFFER_ATTACHMENT_RED_SIZE": {},
-                "FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE": {},
-                "FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE": {},
-                "FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER": {},
-                "FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL": {},
-                "FRAMEBUFFER_BINDING": {},
-                "FRAMEBUFFER_COMPLETE": {},
-                "FRAMEBUFFER_DEFAULT": {},
-                "FRAMEBUFFER_INCOMPLETE_ATTACHMENT": {},
-                "FRAMEBUFFER_INCOMPLETE_DIMENSIONS": {},
-                "FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT": {},
-                "FRAMEBUFFER_INCOMPLETE_MULTISAMPLE": {},
-                "FRAMEBUFFER_UNSUPPORTED": {},
-                "FRONT": {},
-                "FRONT_AND_BACK": {},
-                "FRONT_FACE": {},
-                "FUNC_ADD": {},
-                "FUNC_REVERSE_SUBTRACT": {},
-                "FUNC_SUBTRACT": {},
-                "GENERATE_MIPMAP_HINT": {},
-                "GEQUAL": {},
-                "GREATER": {},
-                "GREEN_BITS": {},
-                "HALF_FLOAT": {},
-                "HIGH_FLOAT": {},
-                "HIGH_INT": {},
-                "IMPLEMENTATION_COLOR_READ_FORMAT": {},
-                "IMPLEMENTATION_COLOR_READ_TYPE": {},
-                "INCR": {},
-                "INCR_WRAP": {},
-                "INT": {},
-                "INTERLEAVED_ATTRIBS": {},
-                "INT_2_10_10_10_REV": {},
-                "INT_SAMPLER_2D": {},
-                "INT_SAMPLER_2D_ARRAY": {},
-                "INT_SAMPLER_3D": {},
-                "INT_SAMPLER_CUBE": {},
-                "INT_VEC2": {},
-                "INT_VEC3": {},
-                "INT_VEC4": {},
-                "INVALID_ENUM": {},
-                "INVALID_FRAMEBUFFER_OPERATION": {},
-                "INVALID_INDEX": {},
-                "INVALID_OPERATION": {},
-                "INVALID_VALUE": {},
-                "INVERT": {},
-                "KEEP": {},
-                "LEQUAL": {},
-                "LESS": {},
-                "LINEAR": {},
-                "LINEAR_MIPMAP_LINEAR": {},
-                "LINEAR_MIPMAP_NEAREST": {},
-                "LINES": {},
-                "LINE_LOOP": {},
-                "LINE_STRIP": {},
-                "LINE_WIDTH": {},
-                "LINK_STATUS": {},
-                "LOW_FLOAT": {},
-                "LOW_INT": {},
-                "LUMINANCE": {},
-                "LUMINANCE_ALPHA": {},
-                "MAX": {},
-                "MAX_3D_TEXTURE_SIZE": {},
-                "MAX_ARRAY_TEXTURE_LAYERS": {},
-                "MAX_CLIENT_WAIT_TIMEOUT_WEBGL": {},
-                "MAX_COLOR_ATTACHMENTS": {},
-                "MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS": {},
-                "MAX_COMBINED_TEXTURE_IMAGE_UNITS": {},
-                "MAX_COMBINED_UNIFORM_BLOCKS": {},
-                "MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS": {},
-                "MAX_CUBE_MAP_TEXTURE_SIZE": {},
-                "MAX_DRAW_BUFFERS": {},
-                "MAX_ELEMENTS_INDICES": {},
-                "MAX_ELEMENTS_VERTICES": {},
-                "MAX_ELEMENT_INDEX": {},
-                "MAX_FRAGMENT_INPUT_COMPONENTS": {},
-                "MAX_FRAGMENT_UNIFORM_BLOCKS": {},
-                "MAX_FRAGMENT_UNIFORM_COMPONENTS": {},
-                "MAX_FRAGMENT_UNIFORM_VECTORS": {},
-                "MAX_PROGRAM_TEXEL_OFFSET": {},
-                "MAX_RENDERBUFFER_SIZE": {},
-                "MAX_SAMPLES": {},
-                "MAX_SERVER_WAIT_TIMEOUT": {},
-                "MAX_TEXTURE_IMAGE_UNITS": {},
-                "MAX_TEXTURE_LOD_BIAS": {},
-                "MAX_TEXTURE_SIZE": {},
-                "MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS": {},
-                "MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS": {},
-                "MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS": {},
-                "MAX_UNIFORM_BLOCK_SIZE": {},
-                "MAX_UNIFORM_BUFFER_BINDINGS": {},
-                "MAX_VARYING_COMPONENTS": {},
-                "MAX_VARYING_VECTORS": {},
-                "MAX_VERTEX_ATTRIBS": {},
-                "MAX_VERTEX_OUTPUT_COMPONENTS": {},
-                "MAX_VERTEX_TEXTURE_IMAGE_UNITS": {},
-                "MAX_VERTEX_UNIFORM_BLOCKS": {},
-                "MAX_VERTEX_UNIFORM_COMPONENTS": {},
-                "MAX_VERTEX_UNIFORM_VECTORS": {},
-                "MAX_VIEWPORT_DIMS": {},
-                "MEDIUM_FLOAT": {},
-                "MEDIUM_INT": {},
-                "MIN": {},
-                "MIN_PROGRAM_TEXEL_OFFSET": {},
-                "MIRRORED_REPEAT": {},
-                "NEAREST": {},
-                "NEAREST_MIPMAP_LINEAR": {},
-                "NEAREST_MIPMAP_NEAREST": {},
-                "NEVER": {},
-                "NICEST": {},
-                "NONE": {},
-                "NOTEQUAL": {},
-                "NO_ERROR": {},
-                "OBJECT_TYPE": {},
-                "ONE": {},
-                "ONE_MINUS_CONSTANT_ALPHA": {},
-                "ONE_MINUS_CONSTANT_COLOR": {},
-                "ONE_MINUS_DST_ALPHA": {},
-                "ONE_MINUS_DST_COLOR": {},
-                "ONE_MINUS_SRC_ALPHA": {},
-                "ONE_MINUS_SRC_COLOR": {},
-                "OUT_OF_MEMORY": {},
-                "PACK_ALIGNMENT": {},
-                "PACK_ROW_LENGTH": {},
-                "PACK_SKIP_PIXELS": {},
-                "PACK_SKIP_ROWS": {},
-                "PIXEL_PACK_BUFFER": {},
-                "PIXEL_PACK_BUFFER_BINDING": {},
-                "PIXEL_UNPACK_BUFFER": {},
-                "PIXEL_UNPACK_BUFFER_BINDING": {},
-                "POINTS": {},
-                "POLYGON_OFFSET_FACTOR": {},
-                "POLYGON_OFFSET_FILL": {},
-                "POLYGON_OFFSET_UNITS": {},
-                "QUERY_RESULT": {},
-                "QUERY_RESULT_AVAILABLE": {},
-                "R11F_G11F_B10F": {},
-                "R16F": {},
-                "R16I": {},
-                "R16UI": {},
-                "R32F": {},
-                "R32I": {},
-                "R32UI": {},
-                "R8": {},
-                "R8I": {},
-                "R8UI": {},
-                "R8_SNORM": {},
-                "RASTERIZER_DISCARD": {},
-                "READ_BUFFER": {},
-                "READ_FRAMEBUFFER": {},
-                "READ_FRAMEBUFFER_BINDING": {},
-                "RED": {},
-                "RED_BITS": {},
-                "RED_INTEGER": {},
-                "RENDERBUFFER": {},
-                "RENDERBUFFER_ALPHA_SIZE": {},
-                "RENDERBUFFER_BINDING": {},
-                "RENDERBUFFER_BLUE_SIZE": {},
-                "RENDERBUFFER_DEPTH_SIZE": {},
-                "RENDERBUFFER_GREEN_SIZE": {},
-                "RENDERBUFFER_HEIGHT": {},
-                "RENDERBUFFER_INTERNAL_FORMAT": {},
-                "RENDERBUFFER_RED_SIZE": {},
-                "RENDERBUFFER_SAMPLES": {},
-                "RENDERBUFFER_STENCIL_SIZE": {},
-                "RENDERBUFFER_WIDTH": {},
-                "RENDERER": {},
-                "REPEAT": {},
-                "REPLACE": {},
-                "RG": {},
-                "RG16F": {},
-                "RG16I": {},
-                "RG16UI": {},
-                "RG32F": {},
-                "RG32I": {},
-                "RG32UI": {},
-                "RG8": {},
-                "RG8I": {},
-                "RG8UI": {},
-                "RG8_SNORM": {},
-                "RGB": {},
-                "RGB10_A2": {},
-                "RGB10_A2UI": {},
-                "RGB16F": {},
-                "RGB16I": {},
-                "RGB16UI": {},
-                "RGB32F": {},
-                "RGB32I": {},
-                "RGB32UI": {},
-                "RGB565": {},
-                "RGB5_A1": {},
-                "RGB8": {},
-                "RGB8I": {},
-                "RGB8UI": {},
-                "RGB8_SNORM": {},
-                "RGB9_E5": {},
-                "RGBA": {},
-                "RGBA16F": {},
-                "RGBA16I": {},
-                "RGBA16UI": {},
-                "RGBA32F": {},
-                "RGBA32I": {},
-                "RGBA32UI": {},
-                "RGBA4": {},
-                "RGBA8": {},
-                "RGBA8I": {},
-                "RGBA8UI": {},
-                "RGBA8_SNORM": {},
-                "RGBA_INTEGER": {},
-                "RGB_INTEGER": {},
-                "RG_INTEGER": {},
-                "SAMPLER_2D": {},
-                "SAMPLER_2D_ARRAY": {},
-                "SAMPLER_2D_ARRAY_SHADOW": {},
-                "SAMPLER_2D_SHADOW": {},
-                "SAMPLER_3D": {},
-                "SAMPLER_BINDING": {},
-                "SAMPLER_CUBE": {},
-                "SAMPLER_CUBE_SHADOW": {},
-                "SAMPLES": {},
-                "SAMPLE_ALPHA_TO_COVERAGE": {},
-                "SAMPLE_BUFFERS": {},
-                "SAMPLE_COVERAGE": {},
-                "SAMPLE_COVERAGE_INVERT": {},
-                "SAMPLE_COVERAGE_VALUE": {},
-                "SCISSOR_BOX": {},
-                "SCISSOR_TEST": {},
-                "SEPARATE_ATTRIBS": {},
-                "SHADER_TYPE": {},
-                "SHADING_LANGUAGE_VERSION": {},
-                "SHORT": {},
-                "SIGNALED": {},
-                "SIGNED_NORMALIZED": {},
-                "SRC_ALPHA": {},
-                "SRC_ALPHA_SATURATE": {},
-                "SRC_COLOR": {},
-                "SRGB": {},
-                "SRGB8": {},
-                "SRGB8_ALPHA8": {},
-                "STATIC_COPY": {},
-                "STATIC_DRAW": {},
-                "STATIC_READ": {},
-                "STENCIL": {},
-                "STENCIL_ATTACHMENT": {},
-                "STENCIL_BACK_FAIL": {},
-                "STENCIL_BACK_FUNC": {},
-                "STENCIL_BACK_PASS_DEPTH_FAIL": {},
-                "STENCIL_BACK_PASS_DEPTH_PASS": {},
-                "STENCIL_BACK_REF": {},
-                "STENCIL_BACK_VALUE_MASK": {},
-                "STENCIL_BACK_WRITEMASK": {},
-                "STENCIL_BITS": {},
-                "STENCIL_BUFFER_BIT": {},
-                "STENCIL_CLEAR_VALUE": {},
-                "STENCIL_FAIL": {},
-                "STENCIL_FUNC": {},
-                "STENCIL_INDEX8": {},
-                "STENCIL_PASS_DEPTH_FAIL": {},
-                "STENCIL_PASS_DEPTH_PASS": {},
-                "STENCIL_REF": {},
-                "STENCIL_TEST": {},
-                "STENCIL_VALUE_MASK": {},
-                "STENCIL_WRITEMASK": {},
-                "STREAM_COPY": {},
-                "STREAM_DRAW": {},
-                "STREAM_READ": {},
-                "SUBPIXEL_BITS": {},
-                "SYNC_CONDITION": {},
-                "SYNC_FENCE": {},
-                "SYNC_FLAGS": {},
-                "SYNC_FLUSH_COMMANDS_BIT": {},
-                "SYNC_GPU_COMMANDS_COMPLETE": {},
-                "SYNC_STATUS": {},
-                "TEXTURE": {},
-                "TEXTURE0": {},
-                "TEXTURE1": {},
-                "TEXTURE10": {},
-                "TEXTURE11": {},
-                "TEXTURE12": {},
-                "TEXTURE13": {},
-                "TEXTURE14": {},
-                "TEXTURE15": {},
-                "TEXTURE16": {},
-                "TEXTURE17": {},
-                "TEXTURE18": {},
-                "TEXTURE19": {},
-                "TEXTURE2": {},
-                "TEXTURE20": {},
-                "TEXTURE21": {},
-                "TEXTURE22": {},
-                "TEXTURE23": {},
-                "TEXTURE24": {},
-                "TEXTURE25": {},
-                "TEXTURE26": {},
-                "TEXTURE27": {},
-                "TEXTURE28": {},
-                "TEXTURE29": {},
-                "TEXTURE3": {},
-                "TEXTURE30": {},
-                "TEXTURE31": {},
-                "TEXTURE4": {},
-                "TEXTURE5": {},
-                "TEXTURE6": {},
-                "TEXTURE7": {},
-                "TEXTURE8": {},
-                "TEXTURE9": {},
-                "TEXTURE_2D": {},
-                "TEXTURE_2D_ARRAY": {},
-                "TEXTURE_3D": {},
-                "TEXTURE_BASE_LEVEL": {},
-                "TEXTURE_BINDING_2D": {},
-                "TEXTURE_BINDING_2D_ARRAY": {},
-                "TEXTURE_BINDING_3D": {},
-                "TEXTURE_BINDING_CUBE_MAP": {},
-                "TEXTURE_COMPARE_FUNC": {},
-                "TEXTURE_COMPARE_MODE": {},
-                "TEXTURE_CUBE_MAP": {},
-                "TEXTURE_CUBE_MAP_NEGATIVE_X": {},
-                "TEXTURE_CUBE_MAP_NEGATIVE_Y": {},
-                "TEXTURE_CUBE_MAP_NEGATIVE_Z": {},
-                "TEXTURE_CUBE_MAP_POSITIVE_X": {},
-                "TEXTURE_CUBE_MAP_POSITIVE_Y": {},
-                "TEXTURE_CUBE_MAP_POSITIVE_Z": {},
-                "TEXTURE_IMMUTABLE_FORMAT": {},
-                "TEXTURE_IMMUTABLE_LEVELS": {},
-                "TEXTURE_MAG_FILTER": {},
-                "TEXTURE_MAX_LEVEL": {},
-                "TEXTURE_MAX_LOD": {},
-                "TEXTURE_MIN_FILTER": {},
-                "TEXTURE_MIN_LOD": {},
-                "TEXTURE_WRAP_R": {},
-                "TEXTURE_WRAP_S": {},
-                "TEXTURE_WRAP_T": {},
-                "TIMEOUT_EXPIRED": {},
-                "TIMEOUT_IGNORED": {},
-                "TRANSFORM_FEEDBACK": {},
-                "TRANSFORM_FEEDBACK_ACTIVE": {},
-                "TRANSFORM_FEEDBACK_BINDING": {},
-                "TRANSFORM_FEEDBACK_BUFFER": {},
-                "TRANSFORM_FEEDBACK_BUFFER_BINDING": {},
-                "TRANSFORM_FEEDBACK_BUFFER_MODE": {},
-                "TRANSFORM_FEEDBACK_BUFFER_SIZE": {},
-                "TRANSFORM_FEEDBACK_BUFFER_START": {},
-                "TRANSFORM_FEEDBACK_PAUSED": {},
-                "TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN": {},
-                "TRANSFORM_FEEDBACK_VARYINGS": {},
-                "TRIANGLES": {},
-                "TRIANGLE_FAN": {},
-                "TRIANGLE_STRIP": {},
-                "UNIFORM_ARRAY_STRIDE": {},
-                "UNIFORM_BLOCK_ACTIVE_UNIFORMS": {},
-                "UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES": {},
-                "UNIFORM_BLOCK_BINDING": {},
-                "UNIFORM_BLOCK_DATA_SIZE": {},
-                "UNIFORM_BLOCK_INDEX": {},
-                "UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER": {},
-                "UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER": {},
-                "UNIFORM_BUFFER": {},
-                "UNIFORM_BUFFER_BINDING": {},
-                "UNIFORM_BUFFER_OFFSET_ALIGNMENT": {},
-                "UNIFORM_BUFFER_SIZE": {},
-                "UNIFORM_BUFFER_START": {},
-                "UNIFORM_IS_ROW_MAJOR": {},
-                "UNIFORM_MATRIX_STRIDE": {},
-                "UNIFORM_OFFSET": {},
-                "UNIFORM_SIZE": {},
-                "UNIFORM_TYPE": {},
-                "UNPACK_ALIGNMENT": {},
-                "UNPACK_COLORSPACE_CONVERSION_WEBGL": {},
-                "UNPACK_FLIP_Y_WEBGL": {},
-                "UNPACK_IMAGE_HEIGHT": {},
-                "UNPACK_PREMULTIPLY_ALPHA_WEBGL": {},
-                "UNPACK_ROW_LENGTH": {},
-                "UNPACK_SKIP_IMAGES": {},
-                "UNPACK_SKIP_PIXELS": {},
-                "UNPACK_SKIP_ROWS": {},
-                "UNSIGNALED": {},
-                "UNSIGNED_BYTE": {},
-                "UNSIGNED_INT": {},
-                "UNSIGNED_INT_10F_11F_11F_REV": {},
-                "UNSIGNED_INT_24_8": {},
-                "UNSIGNED_INT_2_10_10_10_REV": {},
-                "UNSIGNED_INT_5_9_9_9_REV": {},
-                "UNSIGNED_INT_SAMPLER_2D": {},
-                "UNSIGNED_INT_SAMPLER_2D_ARRAY": {},
-                "UNSIGNED_INT_SAMPLER_3D": {},
-                "UNSIGNED_INT_SAMPLER_CUBE": {},
-                "UNSIGNED_INT_VEC2": {},
-                "UNSIGNED_INT_VEC3": {},
-                "UNSIGNED_INT_VEC4": {},
-                "UNSIGNED_NORMALIZED": {},
-                "UNSIGNED_SHORT": {},
-                "UNSIGNED_SHORT_4_4_4_4": {},
-                "UNSIGNED_SHORT_5_5_5_1": {},
-                "UNSIGNED_SHORT_5_6_5": {},
-                "VALIDATE_STATUS": {},
-                "VENDOR": {},
-                "VERSION": {},
-                "VERTEX_ARRAY_BINDING": {},
-                "VERTEX_ATTRIB_ARRAY_BUFFER_BINDING": {},
-                "VERTEX_ATTRIB_ARRAY_DIVISOR": {},
-                "VERTEX_ATTRIB_ARRAY_ENABLED": {},
-                "VERTEX_ATTRIB_ARRAY_INTEGER": {},
-                "VERTEX_ATTRIB_ARRAY_NORMALIZED": {},
-                "VERTEX_ATTRIB_ARRAY_POINTER": {},
-                "VERTEX_ATTRIB_ARRAY_SIZE": {},
-                "VERTEX_ATTRIB_ARRAY_STRIDE": {},
-                "VERTEX_ATTRIB_ARRAY_TYPE": {},
-                "VERTEX_SHADER": {},
-                "VIEWPORT": {},
-                "WAIT_FAILED": {},
-                "ZERO": {},
-                "activeTexture": {
-                  "closure_uid_20499601": {}
-                },
-                "attachShader": {
-                  "closure_uid_20499601": {}
-                },
-                "beginQuery": {
-                  "closure_uid_20499601": {}
-                },
-                "beginTransformFeedback": {
-                  "closure_uid_20499601": {}
-                },
-                "bindAttribLocation": {
-                  "closure_uid_20499601": {}
-                },
-                "bindBuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "bindBufferBase": {
-                  "closure_uid_20499601": {}
-                },
-                "bindBufferRange": {
-                  "closure_uid_20499601": {}
-                },
-                "bindFramebuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "bindRenderbuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "bindSampler": {
-                  "closure_uid_20499601": {}
-                },
-                "bindTexture": {
-                  "closure_uid_20499601": {}
-                },
-                "bindTransformFeedback": {
-                  "closure_uid_20499601": {}
-                },
-                "bindVertexArray": {
-                  "closure_uid_20499601": {}
-                },
-                "blendColor": {
-                  "closure_uid_20499601": {}
-                },
-                "blendEquation": {
-                  "closure_uid_20499601": {}
-                },
-                "blendEquationSeparate": {
-                  "closure_uid_20499601": {}
-                },
-                "blendFunc": {
-                  "closure_uid_20499601": {}
-                },
-                "blendFuncSeparate": {
-                  "closure_uid_20499601": {}
-                },
-                "blitFramebuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "bufferData": {
-                  "closure_uid_20499601": {}
-                },
-                "bufferSubData": {
-                  "closure_uid_20499601": {}
-                },
-                "canvas": {
-                  "addEventListener": {
-                    "closure_uid_20499601": {}
-                  },
-                  "closure_uid_20499601": {},
-                  "convertToBlob": {
-                    "closure_uid_20499601": {}
-                  },
-                  "dispatchEvent": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getContext": {
-                    "closure_uid_20499601": {}
-                  },
-                  "height": {},
-                  "removeEventListener": {
-                    "closure_uid_20499601": {}
-                  },
-                  "transferToImageBitmap": {
-                    "closure_uid_20499601": {}
-                  },
-                  "width": {}
-                },
-                "checkFramebufferStatus": {
-                  "closure_uid_20499601": {}
-                },
-                "clear": {
-                  "closure_uid_20499601": {}
-                },
-                "clearBufferfi": {
-                  "closure_uid_20499601": {}
-                },
-                "clearBufferfv": {
-                  "closure_uid_20499601": {}
-                },
-                "clearBufferiv": {
-                  "closure_uid_20499601": {}
-                },
-                "clearBufferuiv": {
-                  "closure_uid_20499601": {}
-                },
-                "clearColor": {
-                  "closure_uid_20499601": {}
-                },
-                "clearDepth": {
-                  "closure_uid_20499601": {}
-                },
-                "clearStencil": {
-                  "closure_uid_20499601": {}
-                },
-                "clientWaitSync": {
-                  "closure_uid_20499601": {}
-                },
-                "closure_uid_20499601": {},
-                "colorMask": {
-                  "closure_uid_20499601": {}
-                },
-                "compileShader": {
-                  "closure_uid_20499601": {}
-                },
-                "compressedTexImage2D": {
-                  "closure_uid_20499601": {}
-                },
-                "compressedTexImage3D": {
-                  "closure_uid_20499601": {}
-                },
-                "compressedTexSubImage2D": {
-                  "closure_uid_20499601": {}
-                },
-                "compressedTexSubImage3D": {
-                  "closure_uid_20499601": {}
-                },
-                "copyBufferSubData": {
-                  "closure_uid_20499601": {}
-                },
-                "copyTexImage2D": {
-                  "closure_uid_20499601": {}
-                },
-                "copyTexSubImage2D": {
-                  "closure_uid_20499601": {}
-                },
-                "copyTexSubImage3D": {
-                  "closure_uid_20499601": {}
-                },
-                "createBuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "createFramebuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "createProgram": {
-                  "closure_uid_20499601": {}
-                },
-                "createQuery": {
-                  "closure_uid_20499601": {}
-                },
-                "createRenderbuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "createSampler": {
-                  "closure_uid_20499601": {}
-                },
-                "createShader": {
-                  "closure_uid_20499601": {}
-                },
-                "createTexture": {
-                  "closure_uid_20499601": {}
-                },
-                "createTransformFeedback": {
-                  "closure_uid_20499601": {}
-                },
-                "createVertexArray": {
-                  "closure_uid_20499601": {}
-                },
-                "cullFace": {
-                  "closure_uid_20499601": {}
-                },
-                "deleteBuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "deleteFramebuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "deleteProgram": {
-                  "closure_uid_20499601": {}
-                },
-                "deleteQuery": {
-                  "closure_uid_20499601": {}
-                },
-                "deleteRenderbuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "deleteSampler": {
-                  "closure_uid_20499601": {}
-                },
-                "deleteShader": {
-                  "closure_uid_20499601": {}
-                },
-                "deleteSync": {
-                  "closure_uid_20499601": {}
-                },
-                "deleteTexture": {
-                  "closure_uid_20499601": {}
-                },
-                "deleteTransformFeedback": {
-                  "closure_uid_20499601": {}
-                },
-                "deleteVertexArray": {
-                  "closure_uid_20499601": {}
-                },
-                "depthFunc": {
-                  "closure_uid_20499601": {}
-                },
-                "depthMask": {
-                  "closure_uid_20499601": {}
-                },
-                "depthRange": {
-                  "closure_uid_20499601": {}
-                },
-                "detachShader": {
-                  "closure_uid_20499601": {}
-                },
-                "disable": {
-                  "closure_uid_20499601": {}
-                },
-                "disableVertexAttribArray": {
-                  "closure_uid_20499601": {}
-                },
-                "drawArrays": {
-                  "closure_uid_20499601": {}
-                },
-                "drawArraysInstanced": {
-                  "closure_uid_20499601": {}
-                },
-                "drawBuffers": {
-                  "closure_uid_20499601": {}
-                },
-                "drawElements": {
-                  "closure_uid_20499601": {}
-                },
-                "drawElementsInstanced": {
-                  "closure_uid_20499601": {}
-                },
-                "drawRangeElements": {
-                  "closure_uid_20499601": {}
-                },
-                "drawingBufferHeight": {},
-                "drawingBufferWidth": {},
-                "enable": {
-                  "closure_uid_20499601": {}
-                },
-                "enableVertexAttribArray": {
-                  "closure_uid_20499601": {}
-                },
-                "endQuery": {
-                  "closure_uid_20499601": {}
-                },
-                "endTransformFeedback": {
-                  "closure_uid_20499601": {}
-                },
-                "fenceSync": {
-                  "closure_uid_20499601": {}
-                },
-                "finish": {
-                  "closure_uid_20499601": {}
-                },
-                "flush": {
-                  "closure_uid_20499601": {}
-                },
-                "framebufferRenderbuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "framebufferTexture2D": {
-                  "closure_uid_20499601": {}
-                },
-                "framebufferTextureLayer": {
-                  "closure_uid_20499601": {}
-                },
-                "frontFace": {
-                  "closure_uid_20499601": {}
-                },
-                "generateMipmap": {
-                  "closure_uid_20499601": {}
-                },
-                "getActiveAttrib": {
-                  "closure_uid_20499601": {}
-                },
-                "getActiveUniform": {
-                  "closure_uid_20499601": {}
-                },
-                "getActiveUniformBlockName": {
-                  "closure_uid_20499601": {}
-                },
-                "getActiveUniformBlockParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getActiveUniforms": {
-                  "closure_uid_20499601": {}
-                },
-                "getAttachedShaders": {
-                  "closure_uid_20499601": {}
-                },
-                "getAttribLocation": {
-                  "closure_uid_20499601": {}
-                },
-                "getBufferParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getBufferSubData": {
-                  "closure_uid_20499601": {}
-                },
-                "getContextAttributes": {
-                  "closure_uid_20499601": {}
-                },
-                "getError": {
-                  "closure_uid_20499601": {}
-                },
-                "getExtension": {
-                  "closure_uid_20499601": {}
-                },
-                "getFragDataLocation": {
-                  "closure_uid_20499601": {}
-                },
-                "getFramebufferAttachmentParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getIndexedParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getInternalformatParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getProgramInfoLog": {
-                  "closure_uid_20499601": {}
-                },
-                "getProgramParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getQuery": {
-                  "closure_uid_20499601": {}
-                },
-                "getQueryParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getRenderbufferParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getSamplerParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getShaderInfoLog": {
-                  "closure_uid_20499601": {}
-                },
-                "getShaderParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getShaderPrecisionFormat": {
-                  "closure_uid_20499601": {}
-                },
-                "getShaderSource": {
-                  "closure_uid_20499601": {}
-                },
-                "getSupportedExtensions": {
-                  "closure_uid_20499601": {}
-                },
-                "getSyncParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getTexParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getTransformFeedbackVarying": {
-                  "closure_uid_20499601": {}
-                },
-                "getUniform": {
-                  "closure_uid_20499601": {}
-                },
-                "getUniformBlockIndex": {
-                  "closure_uid_20499601": {}
-                },
-                "getUniformIndices": {
-                  "closure_uid_20499601": {}
-                },
-                "getUniformLocation": {
-                  "closure_uid_20499601": {}
-                },
-                "getVertexAttrib": {
-                  "closure_uid_20499601": {}
-                },
-                "getVertexAttribOffset": {
-                  "closure_uid_20499601": {}
-                },
-                "hint": {
-                  "closure_uid_20499601": {}
-                },
-                "invalidateFramebuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "invalidateSubFramebuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "isBuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "isContextLost": {
-                  "closure_uid_20499601": {}
-                },
-                "isEnabled": {
-                  "closure_uid_20499601": {}
-                },
-                "isFramebuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "isProgram": {
-                  "closure_uid_20499601": {}
-                },
-                "isQuery": {
-                  "closure_uid_20499601": {}
-                },
-                "isRenderbuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "isSampler": {
-                  "closure_uid_20499601": {}
-                },
-                "isShader": {
-                  "closure_uid_20499601": {}
-                },
-                "isSync": {
-                  "closure_uid_20499601": {}
-                },
-                "isTexture": {
-                  "closure_uid_20499601": {}
-                },
-                "isTransformFeedback": {
-                  "closure_uid_20499601": {}
-                },
-                "isVertexArray": {
-                  "closure_uid_20499601": {}
-                },
-                "lineWidth": {
-                  "closure_uid_20499601": {}
-                },
-                "linkProgram": {
-                  "closure_uid_20499601": {}
-                },
-                "pauseTransformFeedback": {
-                  "closure_uid_20499601": {}
-                },
-                "pixelStorei": {
-                  "closure_uid_20499601": {}
-                },
-                "polygonOffset": {
-                  "closure_uid_20499601": {}
-                },
-                "readBuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "readPixels": {
-                  "closure_uid_20499601": {}
-                },
-                "renderbufferStorage": {
-                  "closure_uid_20499601": {}
-                },
-                "renderbufferStorageMultisample": {
-                  "closure_uid_20499601": {}
-                },
-                "resumeTransformFeedback": {
-                  "closure_uid_20499601": {}
-                },
-                "sampleCoverage": {
-                  "closure_uid_20499601": {}
-                },
-                "samplerParameterf": {
-                  "closure_uid_20499601": {}
-                },
-                "samplerParameteri": {
-                  "closure_uid_20499601": {}
-                },
-                "scissor": {
-                  "closure_uid_20499601": {}
-                },
-                "shaderSource": {
-                  "closure_uid_20499601": {}
-                },
-                "stencilFunc": {
-                  "closure_uid_20499601": {}
-                },
-                "stencilFuncSeparate": {
-                  "closure_uid_20499601": {}
-                },
-                "stencilMask": {
-                  "closure_uid_20499601": {}
-                },
-                "stencilMaskSeparate": {
-                  "closure_uid_20499601": {}
-                },
-                "stencilOp": {
-                  "closure_uid_20499601": {}
-                },
-                "stencilOpSeparate": {
-                  "closure_uid_20499601": {}
-                },
-                "texImage2D": {
-                  "closure_uid_20499601": {}
-                },
-                "texImage3D": {
-                  "closure_uid_20499601": {}
-                },
-                "texParameterf": {
-                  "closure_uid_20499601": {}
-                },
-                "texParameteri": {
-                  "closure_uid_20499601": {}
-                },
-                "texStorage2D": {
-                  "closure_uid_20499601": {}
-                },
-                "texStorage3D": {
-                  "closure_uid_20499601": {}
-                },
-                "texSubImage2D": {
-                  "closure_uid_20499601": {}
-                },
-                "texSubImage3D": {
-                  "closure_uid_20499601": {}
-                },
-                "transformFeedbackVaryings": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform1f": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform1fv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform1i": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform1iv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform1ui": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform1uiv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform2f": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform2fv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform2i": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform2iv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform2ui": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform2uiv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform3f": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform3fv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform3i": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform3iv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform3ui": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform3uiv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform4f": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform4fv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform4i": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform4iv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform4ui": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform4uiv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniformBlockBinding": {
-                  "closure_uid_20499601": {}
-                },
-                "uniformMatrix2fv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniformMatrix2x3fv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniformMatrix2x4fv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniformMatrix3fv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniformMatrix3x2fv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniformMatrix3x4fv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniformMatrix4fv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniformMatrix4x2fv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniformMatrix4x3fv": {
-                  "closure_uid_20499601": {}
-                },
-                "useProgram": {
-                  "closure_uid_20499601": {}
-                },
-                "validateProgram": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttrib1f": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttrib1fv": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttrib2f": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttrib2fv": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttrib3f": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttrib3fv": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttrib4f": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttrib4fv": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttribDivisor": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttribI4i": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttribI4iv": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttribI4ui": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttribI4uiv": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttribIPointer": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttribPointer": {
-                  "closure_uid_20499601": {}
-                },
-                "viewport": {
-                  "closure_uid_20499601": {}
-                },
-                "waitSync": {
-                  "closure_uid_20499601": {}
-                }
-              },
-              "indexBuffer": {},
-              "isQueryAvailable": function () { },
-              "itemsToPoll": {},
-              "outputTexture": {},
-              "pollFence": function () { },
-              "pollItems": function () { },
-              "program": {},
-              "setInputMatrixTexture": function () { },
-              "setOutputMatrixTexture": function () { },
-              "setOutputMatrixTextureDriver": function () { },
-              "setOutputMatrixWriteRegion": function () { },
-              "setOutputMatrixWriteRegionDriver": function () { },
-              "setOutputPackedMatrixTexture": function () { },
-              "setOutputPackedMatrixWriteRegion": function () { },
-              "setProgram": function () { },
-              "textureConfig": {
-                "defaultNumChannels": {},
-                "downloadTextureFormat": {},
-                "downloadUnpackNumChannels": {},
-                "internalFormatFloat": {},
-                "internalFormatHalfFloat": {},
-                "internalFormatPackedFloat": {},
-                "internalFormatPackedHalfFloat": {},
-                "textureFormatFloat": {},
-                "textureTypeFloat": {},
-                "textureTypeHalfFloat": {}
-              },
-              "throwIfDisposed": function () { },
-              "throwIfNoProgram": function () { },
-              "unbindTextureToFrameBuffer": function () { },
-              "uploadDenseMatrixToTexture": function () { },
-              "uploadPixelDataToTexture": function () { },
-              "vertexAttrsAreBound": {},
-              "vertexBuffer": {},
-              "waitForQueryAndGetTime": function () { }
-            },
-            "gpgpuCreatedLocally": {},
-            "greater": function () { },
-            "greaterEqual": function () { },
-            "ifft": function () { },
-            "imag": function () { },
-            "int": function () { },
-            "isFinite": function () { },
-            "isInf": function () { },
-            "isNaN": function () { },
-            "less": function () { },
-            "lessEqual": function () { },
-            "linspace": function () { },
-            "localResponseNormalization4D": function () { },
-            "log": function () { },
-            "log1p": function () { },
-            "logicalAnd": function () { },
-            "logicalNot": function () { },
-            "logicalOr": function () { },
-            "makeComplexComponentTensorHandle": function () { },
-            "makeOutputArray": function () { },
-            "makePackedTensor": function () { },
-            "makeTensorHandle": function () { },
-            "max": function () { },
-            "maxPool": function () { },
-            "maxPool3d": function () { },
-            "maxPool3dBackprop": function () { },
-            "maxPoolBackprop": function () { },
-            "maximum": function () { },
-            "memory": function () { },
-            "min": function () { },
-            "minimum": function () { },
-            "mod": function () { },
-            "multinomial": function () { },
-            "multiply": function () { },
-            "neg": function () { },
-            "nonMaxSuppression": function () { },
-            "notEqual": function () { },
-            "numBytesInGPU": {},
-            "numMBBeforeWarning": {},
-            "oneHot": function () { },
-            "onesLike": function () { },
-            "packTensor": function () { },
-            "packedBinaryOp": function () { },
-            "packedReshape": function () { },
-            "packedUnaryOp": function () { },
-            "pad": function () { },
-            "pendingDisposal": {},
-            "pendingRead": {},
-            "pow": function () { },
-            "prelu": function () { },
-            "prod": function () { },
-            "read": function () { },
-            "readSync": function () { },
-            "real": function () { },
-            "realDivide": function () { },
-            "reciprocal": function () { },
-            "reduce": function () { },
-            "register": function () { },
-            "releaseGPUData": function () { },
-            "relu": function () { },
-            "reshape": function () { },
-            "resizeBilinear": function () { },
-            "resizeBilinearBackprop": function () { },
-            "resizeNearestNeighbor": function () { },
-            "resizeNearestNeighborBackprop": function () { },
-            "reverse": function () { },
-            "round": function () { },
-            "rsqrt": function () { },
-            "scatterND": function () { },
-            "segOpCompute": function () { },
-            "select": function () { },
-            "selu": function () { },
-            "shallowSlice": function () { },
-            "shouldExecuteOnCPU": function () { },
-            "sigmoid": function () { },
-            "sign": function () { },
-            "sin": function () { },
-            "sinh": function () { },
-            "slice": function () { },
-            "softplus": function () { },
-            "spaceToBatchND": function () { },
-            "sparseToDense": function () { },
-            "split": function () { },
-            "sqrt": function () { },
-            "square": function () { },
-            "squaredDifference": function () { },
-            "startTimer": function () { },
-            "step": function () { },
-            "stridedSlice": function () { },
-            "subtract": function () { },
-            "sum": function () { },
-            "tan": function () { },
-            "tanh": function () { },
-            "texData": {
-              "backend": {},
-              "data": {},
-              "dataMover": {},
-              "delete": function () { },
-              "get": function () { },
-              "has": function () { },
-              "set": function () { }
-            },
-            "textureManager": {
-              "acquireTexture": function () { },
-              "closure_uid_20499601": {},
-              "dispose": function () { },
-              "freeTextures": {},
-              "getNumFreeTextures": function () { },
-              "getNumUsedTextures": function () { },
-              "gpgpu": {
-                "addItemToPoll": function () { },
-                "beginQuery": function () { },
-                "bindTextureToFrameBuffer": function () { },
-                "blockUntilAllProgramsCompleted": function () { },
-                "closure_uid_20499601": {},
-                "colorBufferFloatExtension": {},
-                "createAndWaitForFence": function () { },
-                "createBufferFromTexture": function () { },
-                "createFence": function () { },
-                "createFloat16MatrixTexture": function () { },
-                "createFloat16PackedMatrixTexture": function () { },
-                "createFloat32MatrixTexture": function () { },
-                "createPackedMatrixTexture": function () { },
-                "createProgram": function () { },
-                "createUnsignedBytesMatrixTexture": function () { },
-                "debug": {},
-                "debugValidate": function () { },
-                "deleteMatrixTexture": function () { },
-                "deleteProgram": function () { },
-                "dispose": function () { },
-                "disposed": {},
-                "downloadByteEncodedFloatMatrixFromOutputTexture": function () { },
-                "downloadFloat32MatrixFromBuffer": function () { },
-                "downloadMatrixDriver": function () { },
-                "downloadMatrixFromPackedTexture": function () { },
-                "downloadPackedMatrixFromBuffer": function () { },
-                "endQuery": function () { },
-                "executeProgram": function () { },
-                "framebuffer": {},
-                "getAttributeLocation": function () { },
-                "getQueryTime": function () { },
-                "getQueryTimerExtension": function () { },
-                "getQueryTimerExtensionWebGL1": function () { },
-                "getQueryTimerExtensionWebGL2": function () { },
-                "getUniformLocation": function () { },
-                "getUniformLocationNoThrow": function () { },
-                "gl": {
-                  "ACTIVE_ATTRIBUTES": {},
-                  "ACTIVE_TEXTURE": {},
-                  "ACTIVE_UNIFORMS": {},
-                  "ACTIVE_UNIFORM_BLOCKS": {},
-                  "ALIASED_LINE_WIDTH_RANGE": {},
-                  "ALIASED_POINT_SIZE_RANGE": {},
-                  "ALPHA": {},
-                  "ALPHA_BITS": {},
-                  "ALREADY_SIGNALED": {},
-                  "ALWAYS": {},
-                  "ANY_SAMPLES_PASSED": {},
-                  "ANY_SAMPLES_PASSED_CONSERVATIVE": {},
-                  "ARRAY_BUFFER": {},
-                  "ARRAY_BUFFER_BINDING": {},
-                  "ATTACHED_SHADERS": {},
-                  "BACK": {},
-                  "BLEND": {},
-                  "BLEND_COLOR": {},
-                  "BLEND_DST_ALPHA": {},
-                  "BLEND_DST_RGB": {},
-                  "BLEND_EQUATION": {},
-                  "BLEND_EQUATION_ALPHA": {},
-                  "BLEND_EQUATION_RGB": {},
-                  "BLEND_SRC_ALPHA": {},
-                  "BLEND_SRC_RGB": {},
-                  "BLUE_BITS": {},
-                  "BOOL": {},
-                  "BOOL_VEC2": {},
-                  "BOOL_VEC3": {},
-                  "BOOL_VEC4": {},
-                  "BROWSER_DEFAULT_WEBGL": {},
-                  "BUFFER_SIZE": {},
-                  "BUFFER_USAGE": {},
-                  "BYTE": {},
-                  "CCW": {},
-                  "CLAMP_TO_EDGE": {},
-                  "COLOR": {},
-                  "COLOR_ATTACHMENT0": {},
-                  "COLOR_ATTACHMENT1": {},
-                  "COLOR_ATTACHMENT10": {},
-                  "COLOR_ATTACHMENT11": {},
-                  "COLOR_ATTACHMENT12": {},
-                  "COLOR_ATTACHMENT13": {},
-                  "COLOR_ATTACHMENT14": {},
-                  "COLOR_ATTACHMENT15": {},
-                  "COLOR_ATTACHMENT2": {},
-                  "COLOR_ATTACHMENT3": {},
-                  "COLOR_ATTACHMENT4": {},
-                  "COLOR_ATTACHMENT5": {},
-                  "COLOR_ATTACHMENT6": {},
-                  "COLOR_ATTACHMENT7": {},
-                  "COLOR_ATTACHMENT8": {},
-                  "COLOR_ATTACHMENT9": {},
-                  "COLOR_BUFFER_BIT": {},
-                  "COLOR_CLEAR_VALUE": {},
-                  "COLOR_WRITEMASK": {},
-                  "COMPARE_REF_TO_TEXTURE": {},
-                  "COMPILE_STATUS": {},
-                  "COMPRESSED_TEXTURE_FORMATS": {},
-                  "CONDITION_SATISFIED": {},
-                  "CONSTANT_ALPHA": {},
-                  "CONSTANT_COLOR": {},
-                  "CONTEXT_LOST_WEBGL": {},
-                  "COPY_READ_BUFFER": {},
-                  "COPY_READ_BUFFER_BINDING": {},
-                  "COPY_WRITE_BUFFER": {},
-                  "COPY_WRITE_BUFFER_BINDING": {},
-                  "CULL_FACE": {},
-                  "CULL_FACE_MODE": {},
-                  "CURRENT_PROGRAM": {},
-                  "CURRENT_QUERY": {},
-                  "CURRENT_VERTEX_ATTRIB": {},
-                  "CW": {},
-                  "DECR": {},
-                  "DECR_WRAP": {},
-                  "DELETE_STATUS": {},
-                  "DEPTH": {},
-                  "DEPTH24_STENCIL8": {},
-                  "DEPTH32F_STENCIL8": {},
-                  "DEPTH_ATTACHMENT": {},
-                  "DEPTH_BITS": {},
-                  "DEPTH_BUFFER_BIT": {},
-                  "DEPTH_CLEAR_VALUE": {},
-                  "DEPTH_COMPONENT": {},
-                  "DEPTH_COMPONENT16": {},
-                  "DEPTH_COMPONENT24": {},
-                  "DEPTH_COMPONENT32F": {},
-                  "DEPTH_FUNC": {},
-                  "DEPTH_RANGE": {},
-                  "DEPTH_STENCIL": {},
-                  "DEPTH_STENCIL_ATTACHMENT": {},
-                  "DEPTH_TEST": {},
-                  "DEPTH_WRITEMASK": {},
-                  "DITHER": {},
-                  "DONT_CARE": {},
-                  "DRAW_BUFFER0": {},
-                  "DRAW_BUFFER1": {},
-                  "DRAW_BUFFER10": {},
-                  "DRAW_BUFFER11": {},
-                  "DRAW_BUFFER12": {},
-                  "DRAW_BUFFER13": {},
-                  "DRAW_BUFFER14": {},
-                  "DRAW_BUFFER15": {},
-                  "DRAW_BUFFER2": {},
-                  "DRAW_BUFFER3": {},
-                  "DRAW_BUFFER4": {},
-                  "DRAW_BUFFER5": {},
-                  "DRAW_BUFFER6": {},
-                  "DRAW_BUFFER7": {},
-                  "DRAW_BUFFER8": {},
-                  "DRAW_BUFFER9": {},
-                  "DRAW_FRAMEBUFFER": {},
-                  "DRAW_FRAMEBUFFER_BINDING": {},
-                  "DST_ALPHA": {},
-                  "DST_COLOR": {},
-                  "DYNAMIC_COPY": {},
-                  "DYNAMIC_DRAW": {},
-                  "DYNAMIC_READ": {},
-                  "ELEMENT_ARRAY_BUFFER": {},
-                  "ELEMENT_ARRAY_BUFFER_BINDING": {},
-                  "EQUAL": {},
-                  "FASTEST": {},
-                  "FLOAT": {},
-                  "FLOAT_32_UNSIGNED_INT_24_8_REV": {},
-                  "FLOAT_MAT2": {},
-                  "FLOAT_MAT2x3": {},
-                  "FLOAT_MAT2x4": {},
-                  "FLOAT_MAT3": {},
-                  "FLOAT_MAT3x2": {},
-                  "FLOAT_MAT3x4": {},
-                  "FLOAT_MAT4": {},
-                  "FLOAT_MAT4x2": {},
-                  "FLOAT_MAT4x3": {},
-                  "FLOAT_VEC2": {},
-                  "FLOAT_VEC3": {},
-                  "FLOAT_VEC4": {},
-                  "FRAGMENT_SHADER": {},
-                  "FRAGMENT_SHADER_DERIVATIVE_HINT": {},
-                  "FRAMEBUFFER": {},
-                  "FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE": {},
-                  "FRAMEBUFFER_ATTACHMENT_BLUE_SIZE": {},
-                  "FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING": {},
-                  "FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE": {},
-                  "FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE": {},
-                  "FRAMEBUFFER_ATTACHMENT_GREEN_SIZE": {},
-                  "FRAMEBUFFER_ATTACHMENT_OBJECT_NAME": {},
-                  "FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE": {},
-                  "FRAMEBUFFER_ATTACHMENT_RED_SIZE": {},
-                  "FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE": {},
-                  "FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE": {},
-                  "FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER": {},
-                  "FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL": {},
-                  "FRAMEBUFFER_BINDING": {},
-                  "FRAMEBUFFER_COMPLETE": {},
-                  "FRAMEBUFFER_DEFAULT": {},
-                  "FRAMEBUFFER_INCOMPLETE_ATTACHMENT": {},
-                  "FRAMEBUFFER_INCOMPLETE_DIMENSIONS": {},
-                  "FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT": {},
-                  "FRAMEBUFFER_INCOMPLETE_MULTISAMPLE": {},
-                  "FRAMEBUFFER_UNSUPPORTED": {},
-                  "FRONT": {},
-                  "FRONT_AND_BACK": {},
-                  "FRONT_FACE": {},
-                  "FUNC_ADD": {},
-                  "FUNC_REVERSE_SUBTRACT": {},
-                  "FUNC_SUBTRACT": {},
-                  "GENERATE_MIPMAP_HINT": {},
-                  "GEQUAL": {},
-                  "GREATER": {},
-                  "GREEN_BITS": {},
-                  "HALF_FLOAT": {},
-                  "HIGH_FLOAT": {},
-                  "HIGH_INT": {},
-                  "IMPLEMENTATION_COLOR_READ_FORMAT": {},
-                  "IMPLEMENTATION_COLOR_READ_TYPE": {},
-                  "INCR": {},
-                  "INCR_WRAP": {},
-                  "INT": {},
-                  "INTERLEAVED_ATTRIBS": {},
-                  "INT_2_10_10_10_REV": {},
-                  "INT_SAMPLER_2D": {},
-                  "INT_SAMPLER_2D_ARRAY": {},
-                  "INT_SAMPLER_3D": {},
-                  "INT_SAMPLER_CUBE": {},
-                  "INT_VEC2": {},
-                  "INT_VEC3": {},
-                  "INT_VEC4": {},
-                  "INVALID_ENUM": {},
-                  "INVALID_FRAMEBUFFER_OPERATION": {},
-                  "INVALID_INDEX": {},
-                  "INVALID_OPERATION": {},
-                  "INVALID_VALUE": {},
-                  "INVERT": {},
-                  "KEEP": {},
-                  "LEQUAL": {},
-                  "LESS": {},
-                  "LINEAR": {},
-                  "LINEAR_MIPMAP_LINEAR": {},
-                  "LINEAR_MIPMAP_NEAREST": {},
-                  "LINES": {},
-                  "LINE_LOOP": {},
-                  "LINE_STRIP": {},
-                  "LINE_WIDTH": {},
-                  "LINK_STATUS": {},
-                  "LOW_FLOAT": {},
-                  "LOW_INT": {},
-                  "LUMINANCE": {},
-                  "LUMINANCE_ALPHA": {},
-                  "MAX": {},
-                  "MAX_3D_TEXTURE_SIZE": {},
-                  "MAX_ARRAY_TEXTURE_LAYERS": {},
-                  "MAX_CLIENT_WAIT_TIMEOUT_WEBGL": {},
-                  "MAX_COLOR_ATTACHMENTS": {},
-                  "MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS": {},
-                  "MAX_COMBINED_TEXTURE_IMAGE_UNITS": {},
-                  "MAX_COMBINED_UNIFORM_BLOCKS": {},
-                  "MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS": {},
-                  "MAX_CUBE_MAP_TEXTURE_SIZE": {},
-                  "MAX_DRAW_BUFFERS": {},
-                  "MAX_ELEMENTS_INDICES": {},
-                  "MAX_ELEMENTS_VERTICES": {},
-                  "MAX_ELEMENT_INDEX": {},
-                  "MAX_FRAGMENT_INPUT_COMPONENTS": {},
-                  "MAX_FRAGMENT_UNIFORM_BLOCKS": {},
-                  "MAX_FRAGMENT_UNIFORM_COMPONENTS": {},
-                  "MAX_FRAGMENT_UNIFORM_VECTORS": {},
-                  "MAX_PROGRAM_TEXEL_OFFSET": {},
-                  "MAX_RENDERBUFFER_SIZE": {},
-                  "MAX_SAMPLES": {},
-                  "MAX_SERVER_WAIT_TIMEOUT": {},
-                  "MAX_TEXTURE_IMAGE_UNITS": {},
-                  "MAX_TEXTURE_LOD_BIAS": {},
-                  "MAX_TEXTURE_SIZE": {},
-                  "MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS": {},
-                  "MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS": {},
-                  "MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS": {},
-                  "MAX_UNIFORM_BLOCK_SIZE": {},
-                  "MAX_UNIFORM_BUFFER_BINDINGS": {},
-                  "MAX_VARYING_COMPONENTS": {},
-                  "MAX_VARYING_VECTORS": {},
-                  "MAX_VERTEX_ATTRIBS": {},
-                  "MAX_VERTEX_OUTPUT_COMPONENTS": {},
-                  "MAX_VERTEX_TEXTURE_IMAGE_UNITS": {},
-                  "MAX_VERTEX_UNIFORM_BLOCKS": {},
-                  "MAX_VERTEX_UNIFORM_COMPONENTS": {},
-                  "MAX_VERTEX_UNIFORM_VECTORS": {},
-                  "MAX_VIEWPORT_DIMS": {},
-                  "MEDIUM_FLOAT": {},
-                  "MEDIUM_INT": {},
-                  "MIN": {},
-                  "MIN_PROGRAM_TEXEL_OFFSET": {},
-                  "MIRRORED_REPEAT": {},
-                  "NEAREST": {},
-                  "NEAREST_MIPMAP_LINEAR": {},
-                  "NEAREST_MIPMAP_NEAREST": {},
-                  "NEVER": {},
-                  "NICEST": {},
-                  "NONE": {},
-                  "NOTEQUAL": {},
-                  "NO_ERROR": {},
-                  "OBJECT_TYPE": {},
-                  "ONE": {},
-                  "ONE_MINUS_CONSTANT_ALPHA": {},
-                  "ONE_MINUS_CONSTANT_COLOR": {},
-                  "ONE_MINUS_DST_ALPHA": {},
-                  "ONE_MINUS_DST_COLOR": {},
-                  "ONE_MINUS_SRC_ALPHA": {},
-                  "ONE_MINUS_SRC_COLOR": {},
-                  "OUT_OF_MEMORY": {},
-                  "PACK_ALIGNMENT": {},
-                  "PACK_ROW_LENGTH": {},
-                  "PACK_SKIP_PIXELS": {},
-                  "PACK_SKIP_ROWS": {},
-                  "PIXEL_PACK_BUFFER": {},
-                  "PIXEL_PACK_BUFFER_BINDING": {},
-                  "PIXEL_UNPACK_BUFFER": {},
-                  "PIXEL_UNPACK_BUFFER_BINDING": {},
-                  "POINTS": {},
-                  "POLYGON_OFFSET_FACTOR": {},
-                  "POLYGON_OFFSET_FILL": {},
-                  "POLYGON_OFFSET_UNITS": {},
-                  "QUERY_RESULT": {},
-                  "QUERY_RESULT_AVAILABLE": {},
-                  "R11F_G11F_B10F": {},
-                  "R16F": {},
-                  "R16I": {},
-                  "R16UI": {},
-                  "R32F": {},
-                  "R32I": {},
-                  "R32UI": {},
-                  "R8": {},
-                  "R8I": {},
-                  "R8UI": {},
-                  "R8_SNORM": {},
-                  "RASTERIZER_DISCARD": {},
-                  "READ_BUFFER": {},
-                  "READ_FRAMEBUFFER": {},
-                  "READ_FRAMEBUFFER_BINDING": {},
-                  "RED": {},
-                  "RED_BITS": {},
-                  "RED_INTEGER": {},
-                  "RENDERBUFFER": {},
-                  "RENDERBUFFER_ALPHA_SIZE": {},
-                  "RENDERBUFFER_BINDING": {},
-                  "RENDERBUFFER_BLUE_SIZE": {},
-                  "RENDERBUFFER_DEPTH_SIZE": {},
-                  "RENDERBUFFER_GREEN_SIZE": {},
-                  "RENDERBUFFER_HEIGHT": {},
-                  "RENDERBUFFER_INTERNAL_FORMAT": {},
-                  "RENDERBUFFER_RED_SIZE": {},
-                  "RENDERBUFFER_SAMPLES": {},
-                  "RENDERBUFFER_STENCIL_SIZE": {},
-                  "RENDERBUFFER_WIDTH": {},
-                  "RENDERER": {},
-                  "REPEAT": {},
-                  "REPLACE": {},
-                  "RG": {},
-                  "RG16F": {},
-                  "RG16I": {},
-                  "RG16UI": {},
-                  "RG32F": {},
-                  "RG32I": {},
-                  "RG32UI": {},
-                  "RG8": {},
-                  "RG8I": {},
-                  "RG8UI": {},
-                  "RG8_SNORM": {},
-                  "RGB": {},
-                  "RGB10_A2": {},
-                  "RGB10_A2UI": {},
-                  "RGB16F": {},
-                  "RGB16I": {},
-                  "RGB16UI": {},
-                  "RGB32F": {},
-                  "RGB32I": {},
-                  "RGB32UI": {},
-                  "RGB565": {},
-                  "RGB5_A1": {},
-                  "RGB8": {},
-                  "RGB8I": {},
-                  "RGB8UI": {},
-                  "RGB8_SNORM": {},
-                  "RGB9_E5": {},
-                  "RGBA": {},
-                  "RGBA16F": {},
-                  "RGBA16I": {},
-                  "RGBA16UI": {},
-                  "RGBA32F": {},
-                  "RGBA32I": {},
-                  "RGBA32UI": {},
-                  "RGBA4": {},
-                  "RGBA8": {},
-                  "RGBA8I": {},
-                  "RGBA8UI": {},
-                  "RGBA8_SNORM": {},
-                  "RGBA_INTEGER": {},
-                  "RGB_INTEGER": {},
-                  "RG_INTEGER": {},
-                  "SAMPLER_2D": {},
-                  "SAMPLER_2D_ARRAY": {},
-                  "SAMPLER_2D_ARRAY_SHADOW": {},
-                  "SAMPLER_2D_SHADOW": {},
-                  "SAMPLER_3D": {},
-                  "SAMPLER_BINDING": {},
-                  "SAMPLER_CUBE": {},
-                  "SAMPLER_CUBE_SHADOW": {},
-                  "SAMPLES": {},
-                  "SAMPLE_ALPHA_TO_COVERAGE": {},
-                  "SAMPLE_BUFFERS": {},
-                  "SAMPLE_COVERAGE": {},
-                  "SAMPLE_COVERAGE_INVERT": {},
-                  "SAMPLE_COVERAGE_VALUE": {},
-                  "SCISSOR_BOX": {},
-                  "SCISSOR_TEST": {},
-                  "SEPARATE_ATTRIBS": {},
-                  "SHADER_TYPE": {},
-                  "SHADING_LANGUAGE_VERSION": {},
-                  "SHORT": {},
-                  "SIGNALED": {},
-                  "SIGNED_NORMALIZED": {},
-                  "SRC_ALPHA": {},
-                  "SRC_ALPHA_SATURATE": {},
-                  "SRC_COLOR": {},
-                  "SRGB": {},
-                  "SRGB8": {},
-                  "SRGB8_ALPHA8": {},
-                  "STATIC_COPY": {},
-                  "STATIC_DRAW": {},
-                  "STATIC_READ": {},
-                  "STENCIL": {},
-                  "STENCIL_ATTACHMENT": {},
-                  "STENCIL_BACK_FAIL": {},
-                  "STENCIL_BACK_FUNC": {},
-                  "STENCIL_BACK_PASS_DEPTH_FAIL": {},
-                  "STENCIL_BACK_PASS_DEPTH_PASS": {},
-                  "STENCIL_BACK_REF": {},
-                  "STENCIL_BACK_VALUE_MASK": {},
-                  "STENCIL_BACK_WRITEMASK": {},
-                  "STENCIL_BITS": {},
-                  "STENCIL_BUFFER_BIT": {},
-                  "STENCIL_CLEAR_VALUE": {},
-                  "STENCIL_FAIL": {},
-                  "STENCIL_FUNC": {},
-                  "STENCIL_INDEX8": {},
-                  "STENCIL_PASS_DEPTH_FAIL": {},
-                  "STENCIL_PASS_DEPTH_PASS": {},
-                  "STENCIL_REF": {},
-                  "STENCIL_TEST": {},
-                  "STENCIL_VALUE_MASK": {},
-                  "STENCIL_WRITEMASK": {},
-                  "STREAM_COPY": {},
-                  "STREAM_DRAW": {},
-                  "STREAM_READ": {},
-                  "SUBPIXEL_BITS": {},
-                  "SYNC_CONDITION": {},
-                  "SYNC_FENCE": {},
-                  "SYNC_FLAGS": {},
-                  "SYNC_FLUSH_COMMANDS_BIT": {},
-                  "SYNC_GPU_COMMANDS_COMPLETE": {},
-                  "SYNC_STATUS": {},
-                  "TEXTURE": {},
-                  "TEXTURE0": {},
-                  "TEXTURE1": {},
-                  "TEXTURE10": {},
-                  "TEXTURE11": {},
-                  "TEXTURE12": {},
-                  "TEXTURE13": {},
-                  "TEXTURE14": {},
-                  "TEXTURE15": {},
-                  "TEXTURE16": {},
-                  "TEXTURE17": {},
-                  "TEXTURE18": {},
-                  "TEXTURE19": {},
-                  "TEXTURE2": {},
-                  "TEXTURE20": {},
-                  "TEXTURE21": {},
-                  "TEXTURE22": {},
-                  "TEXTURE23": {},
-                  "TEXTURE24": {},
-                  "TEXTURE25": {},
-                  "TEXTURE26": {},
-                  "TEXTURE27": {},
-                  "TEXTURE28": {},
-                  "TEXTURE29": {},
-                  "TEXTURE3": {},
-                  "TEXTURE30": {},
-                  "TEXTURE31": {},
-                  "TEXTURE4": {},
-                  "TEXTURE5": {},
-                  "TEXTURE6": {},
-                  "TEXTURE7": {},
-                  "TEXTURE8": {},
-                  "TEXTURE9": {},
-                  "TEXTURE_2D": {},
-                  "TEXTURE_2D_ARRAY": {},
-                  "TEXTURE_3D": {},
-                  "TEXTURE_BASE_LEVEL": {},
-                  "TEXTURE_BINDING_2D": {},
-                  "TEXTURE_BINDING_2D_ARRAY": {},
-                  "TEXTURE_BINDING_3D": {},
-                  "TEXTURE_BINDING_CUBE_MAP": {},
-                  "TEXTURE_COMPARE_FUNC": {},
-                  "TEXTURE_COMPARE_MODE": {},
-                  "TEXTURE_CUBE_MAP": {},
-                  "TEXTURE_CUBE_MAP_NEGATIVE_X": {},
-                  "TEXTURE_CUBE_MAP_NEGATIVE_Y": {},
-                  "TEXTURE_CUBE_MAP_NEGATIVE_Z": {},
-                  "TEXTURE_CUBE_MAP_POSITIVE_X": {},
-                  "TEXTURE_CUBE_MAP_POSITIVE_Y": {},
-                  "TEXTURE_CUBE_MAP_POSITIVE_Z": {},
-                  "TEXTURE_IMMUTABLE_FORMAT": {},
-                  "TEXTURE_IMMUTABLE_LEVELS": {},
-                  "TEXTURE_MAG_FILTER": {},
-                  "TEXTURE_MAX_LEVEL": {},
-                  "TEXTURE_MAX_LOD": {},
-                  "TEXTURE_MIN_FILTER": {},
-                  "TEXTURE_MIN_LOD": {},
-                  "TEXTURE_WRAP_R": {},
-                  "TEXTURE_WRAP_S": {},
-                  "TEXTURE_WRAP_T": {},
-                  "TIMEOUT_EXPIRED": {},
-                  "TIMEOUT_IGNORED": {},
-                  "TRANSFORM_FEEDBACK": {},
-                  "TRANSFORM_FEEDBACK_ACTIVE": {},
-                  "TRANSFORM_FEEDBACK_BINDING": {},
-                  "TRANSFORM_FEEDBACK_BUFFER": {},
-                  "TRANSFORM_FEEDBACK_BUFFER_BINDING": {},
-                  "TRANSFORM_FEEDBACK_BUFFER_MODE": {},
-                  "TRANSFORM_FEEDBACK_BUFFER_SIZE": {},
-                  "TRANSFORM_FEEDBACK_BUFFER_START": {},
-                  "TRANSFORM_FEEDBACK_PAUSED": {},
-                  "TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN": {},
-                  "TRANSFORM_FEEDBACK_VARYINGS": {},
-                  "TRIANGLES": {},
-                  "TRIANGLE_FAN": {},
-                  "TRIANGLE_STRIP": {},
-                  "UNIFORM_ARRAY_STRIDE": {},
-                  "UNIFORM_BLOCK_ACTIVE_UNIFORMS": {},
-                  "UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES": {},
-                  "UNIFORM_BLOCK_BINDING": {},
-                  "UNIFORM_BLOCK_DATA_SIZE": {},
-                  "UNIFORM_BLOCK_INDEX": {},
-                  "UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER": {},
-                  "UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER": {},
-                  "UNIFORM_BUFFER": {},
-                  "UNIFORM_BUFFER_BINDING": {},
-                  "UNIFORM_BUFFER_OFFSET_ALIGNMENT": {},
-                  "UNIFORM_BUFFER_SIZE": {},
-                  "UNIFORM_BUFFER_START": {},
-                  "UNIFORM_IS_ROW_MAJOR": {},
-                  "UNIFORM_MATRIX_STRIDE": {},
-                  "UNIFORM_OFFSET": {},
-                  "UNIFORM_SIZE": {},
-                  "UNIFORM_TYPE": {},
-                  "UNPACK_ALIGNMENT": {},
-                  "UNPACK_COLORSPACE_CONVERSION_WEBGL": {},
-                  "UNPACK_FLIP_Y_WEBGL": {},
-                  "UNPACK_IMAGE_HEIGHT": {},
-                  "UNPACK_PREMULTIPLY_ALPHA_WEBGL": {},
-                  "UNPACK_ROW_LENGTH": {},
-                  "UNPACK_SKIP_IMAGES": {},
-                  "UNPACK_SKIP_PIXELS": {},
-                  "UNPACK_SKIP_ROWS": {},
-                  "UNSIGNALED": {},
-                  "UNSIGNED_BYTE": {},
-                  "UNSIGNED_INT": {},
-                  "UNSIGNED_INT_10F_11F_11F_REV": {},
-                  "UNSIGNED_INT_24_8": {},
-                  "UNSIGNED_INT_2_10_10_10_REV": {},
-                  "UNSIGNED_INT_5_9_9_9_REV": {},
-                  "UNSIGNED_INT_SAMPLER_2D": {},
-                  "UNSIGNED_INT_SAMPLER_2D_ARRAY": {},
-                  "UNSIGNED_INT_SAMPLER_3D": {},
-                  "UNSIGNED_INT_SAMPLER_CUBE": {},
-                  "UNSIGNED_INT_VEC2": {},
-                  "UNSIGNED_INT_VEC3": {},
-                  "UNSIGNED_INT_VEC4": {},
-                  "UNSIGNED_NORMALIZED": {},
-                  "UNSIGNED_SHORT": {},
-                  "UNSIGNED_SHORT_4_4_4_4": {},
-                  "UNSIGNED_SHORT_5_5_5_1": {},
-                  "UNSIGNED_SHORT_5_6_5": {},
-                  "VALIDATE_STATUS": {},
-                  "VENDOR": {},
-                  "VERSION": {},
-                  "VERTEX_ARRAY_BINDING": {},
-                  "VERTEX_ATTRIB_ARRAY_BUFFER_BINDING": {},
-                  "VERTEX_ATTRIB_ARRAY_DIVISOR": {},
-                  "VERTEX_ATTRIB_ARRAY_ENABLED": {},
-                  "VERTEX_ATTRIB_ARRAY_INTEGER": {},
-                  "VERTEX_ATTRIB_ARRAY_NORMALIZED": {},
-                  "VERTEX_ATTRIB_ARRAY_POINTER": {},
-                  "VERTEX_ATTRIB_ARRAY_SIZE": {},
-                  "VERTEX_ATTRIB_ARRAY_STRIDE": {},
-                  "VERTEX_ATTRIB_ARRAY_TYPE": {},
-                  "VERTEX_SHADER": {},
-                  "VIEWPORT": {},
-                  "WAIT_FAILED": {},
-                  "ZERO": {},
-                  "activeTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "attachShader": {
-                    "closure_uid_20499601": {}
-                  },
-                  "beginQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "beginTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindAttribLocation": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindBufferBase": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindBufferRange": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindRenderbuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindSampler": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindVertexArray": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blendColor": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blendEquation": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blendEquationSeparate": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blendFunc": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blendFuncSeparate": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blitFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bufferData": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bufferSubData": {
-                    "closure_uid_20499601": {}
-                  },
-                  "canvas": {
-                    "addEventListener": {
-                      "closure_uid_20499601": {}
-                    },
-                    "closure_uid_20499601": {},
-                    "convertToBlob": {
-                      "closure_uid_20499601": {}
-                    },
-                    "dispatchEvent": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getContext": {
-                      "closure_uid_20499601": {}
-                    },
-                    "height": {},
-                    "removeEventListener": {
-                      "closure_uid_20499601": {}
-                    },
-                    "transferToImageBitmap": {
-                      "closure_uid_20499601": {}
-                    },
-                    "width": {}
-                  },
-                  "checkFramebufferStatus": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clear": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearBufferfi": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearBufferfv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearBufferiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearBufferuiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearColor": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearDepth": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearStencil": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clientWaitSync": {
-                    "closure_uid_20499601": {}
-                  },
-                  "closure_uid_20499601": {},
-                  "colorMask": {
-                    "closure_uid_20499601": {}
-                  },
-                  "compileShader": {
-                    "closure_uid_20499601": {}
-                  },
-                  "compressedTexImage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "compressedTexImage3D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "compressedTexSubImage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "compressedTexSubImage3D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "copyBufferSubData": {
-                    "closure_uid_20499601": {}
-                  },
-                  "copyTexImage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "copyTexSubImage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "copyTexSubImage3D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createRenderbuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createSampler": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createShader": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createVertexArray": {
-                    "closure_uid_20499601": {}
-                  },
-                  "cullFace": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteRenderbuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteSampler": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteShader": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteSync": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteVertexArray": {
-                    "closure_uid_20499601": {}
-                  },
-                  "depthFunc": {
-                    "closure_uid_20499601": {}
-                  },
-                  "depthMask": {
-                    "closure_uid_20499601": {}
-                  },
-                  "depthRange": {
-                    "closure_uid_20499601": {}
-                  },
-                  "detachShader": {
-                    "closure_uid_20499601": {}
-                  },
-                  "disable": {
-                    "closure_uid_20499601": {}
-                  },
-                  "disableVertexAttribArray": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawArrays": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawArraysInstanced": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawBuffers": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawElements": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawElementsInstanced": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawRangeElements": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawingBufferHeight": {},
-                  "drawingBufferWidth": {},
-                  "enable": {
-                    "closure_uid_20499601": {}
-                  },
-                  "enableVertexAttribArray": {
-                    "closure_uid_20499601": {}
-                  },
-                  "endQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "endTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "fenceSync": {
-                    "closure_uid_20499601": {}
-                  },
-                  "finish": {
-                    "closure_uid_20499601": {}
-                  },
-                  "flush": {
-                    "closure_uid_20499601": {}
-                  },
-                  "framebufferRenderbuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "framebufferTexture2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "framebufferTextureLayer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "frontFace": {
-                    "closure_uid_20499601": {}
-                  },
-                  "generateMipmap": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getActiveAttrib": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getActiveUniform": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getActiveUniformBlockName": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getActiveUniformBlockParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getActiveUniforms": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getAttachedShaders": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getAttribLocation": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getBufferParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getBufferSubData": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getContextAttributes": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getError": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getExtension": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getFragDataLocation": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getFramebufferAttachmentParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getIndexedParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getInternalformatParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getProgramInfoLog": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getProgramParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getQueryParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getRenderbufferParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getSamplerParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getShaderInfoLog": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getShaderParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getShaderPrecisionFormat": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getShaderSource": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getSupportedExtensions": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getSyncParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getTexParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getTransformFeedbackVarying": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getUniform": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getUniformBlockIndex": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getUniformIndices": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getUniformLocation": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getVertexAttrib": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getVertexAttribOffset": {
-                    "closure_uid_20499601": {}
-                  },
-                  "hint": {
-                    "closure_uid_20499601": {}
-                  },
-                  "invalidateFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "invalidateSubFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isContextLost": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isEnabled": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isRenderbuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isSampler": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isShader": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isSync": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isVertexArray": {
-                    "closure_uid_20499601": {}
-                  },
-                  "lineWidth": {
-                    "closure_uid_20499601": {}
-                  },
-                  "linkProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "pauseTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "pixelStorei": {
-                    "closure_uid_20499601": {}
-                  },
-                  "polygonOffset": {
-                    "closure_uid_20499601": {}
-                  },
-                  "readBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "readPixels": {
-                    "closure_uid_20499601": {}
-                  },
-                  "renderbufferStorage": {
-                    "closure_uid_20499601": {}
-                  },
-                  "renderbufferStorageMultisample": {
-                    "closure_uid_20499601": {}
-                  },
-                  "resumeTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "sampleCoverage": {
-                    "closure_uid_20499601": {}
-                  },
-                  "samplerParameterf": {
-                    "closure_uid_20499601": {}
-                  },
-                  "samplerParameteri": {
-                    "closure_uid_20499601": {}
-                  },
-                  "scissor": {
-                    "closure_uid_20499601": {}
-                  },
-                  "shaderSource": {
-                    "closure_uid_20499601": {}
-                  },
-                  "stencilFunc": {
-                    "closure_uid_20499601": {}
-                  },
-                  "stencilFuncSeparate": {
-                    "closure_uid_20499601": {}
-                  },
-                  "stencilMask": {
-                    "closure_uid_20499601": {}
-                  },
-                  "stencilMaskSeparate": {
-                    "closure_uid_20499601": {}
-                  },
-                  "stencilOp": {
-                    "closure_uid_20499601": {}
-                  },
-                  "stencilOpSeparate": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texImage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texImage3D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texParameterf": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texParameteri": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texStorage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texStorage3D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texSubImage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texSubImage3D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "transformFeedbackVaryings": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform1f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform1fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform1i": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform1iv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform1ui": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform1uiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform2f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform2fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform2i": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform2iv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform2ui": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform2uiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform3f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform3fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform3i": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform3iv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform3ui": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform3uiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform4f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform4fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform4i": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform4iv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform4ui": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform4uiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformBlockBinding": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix2fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix2x3fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix2x4fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix3fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix3x2fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix3x4fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix4fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix4x2fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix4x3fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "useProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "validateProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib1f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib1fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib2f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib2fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib3f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib3fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib4f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib4fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribDivisor": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribI4i": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribI4iv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribI4ui": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribI4uiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribIPointer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribPointer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "viewport": {
-                    "closure_uid_20499601": {}
-                  },
-                  "waitSync": {
-                    "closure_uid_20499601": {}
-                  }
-                },
-                "indexBuffer": {},
-                "isQueryAvailable": function () { },
-                "itemsToPoll": {},
-                "outputTexture": {},
-                "pollFence": function () { },
-                "pollItems": function () { },
-                "program": {},
-                "setInputMatrixTexture": function () { },
-                "setOutputMatrixTexture": function () { },
-                "setOutputMatrixTextureDriver": function () { },
-                "setOutputMatrixWriteRegion": function () { },
-                "setOutputMatrixWriteRegionDriver": function () { },
-                "setOutputPackedMatrixTexture": function () { },
-                "setOutputPackedMatrixWriteRegion": function () { },
-                "setProgram": function () { },
-                "textureConfig": {
-                  "defaultNumChannels": {},
-                  "downloadTextureFormat": {},
-                  "downloadUnpackNumChannels": {},
-                  "internalFormatFloat": {},
-                  "internalFormatHalfFloat": {},
-                  "internalFormatPackedFloat": {},
-                  "internalFormatPackedHalfFloat": {},
-                  "textureFormatFloat": {},
-                  "textureTypeFloat": {},
-                  "textureTypeHalfFloat": {}
-                },
-                "throwIfDisposed": function () { },
-                "throwIfNoProgram": function () { },
-                "unbindTextureToFrameBuffer": function () { },
-                "uploadDenseMatrixToTexture": function () { },
-                "uploadPixelDataToTexture": function () { },
-                "vertexAttrsAreBound": {},
-                "vertexBuffer": {},
-                "waitForQueryAndGetTime": function () { }
-              },
-              "log": function () { },
-              "logEnabled": {},
-              "numFreeTextures": {},
-              "numUsedTextures": {},
-              "releaseTexture": function () { },
-              "usedTextures": {}
-            },
-            "tile": function () { },
-            "time": function () { },
-            "topk": function () { },
-            "transpose": function () { },
-            "unpackTensor": function () { },
-            "unsortedSegmentSum": function () { },
-            "unstack": function () { },
-            "uploadToGPU": function () { },
-            "uploadWaitMs": {},
-            "warnedAboutMemory": {},
-            "where": function () { },
-            "write": function () { },
-            "zerosLike": function () { }
-          },
-          "backendInstance": {
-            "LRNGrad": function () { },
-            "abs": function () { },
-            "acos": function () { },
-            "acosh": function () { },
-            "acquireTexture": function () { },
-            "add": function () { },
-            "addN": function () { },
-            "all": function () { },
-            "any": function () { },
-            "argMax": function () { },
-            "argMin": function () { },
-            "argMinMaxReduce": function () { },
-            "argReduce": function () { },
-            "argReducePacked": function () { },
-            "asin": function () { },
-            "asinh": function () { },
-            "atan": function () { },
-            "atan2": function () { },
-            "atanh": function () { },
-            "avgPool": function () { },
-            "avgPool3d": function () { },
-            "avgPool3dBackprop": function () { },
-            "avgPoolBackprop": function () { },
-            "batchMatMul": function () { },
-            "batchNormalization": function () { },
-            "batchToSpaceND": function () { },
-            "binaryCache": {},
-            "canvas": {
-              "addEventListener": {
-                "closure_uid_20499601": {}
-              },
-              "closure_uid_20499601": {},
-              "convertToBlob": {
-                "closure_uid_20499601": {}
-              },
-              "dispatchEvent": {
-                "closure_uid_20499601": {}
-              },
-              "getContext": {
-                "closure_uid_20499601": {}
-              },
-              "height": {},
-              "removeEventListener": {
-                "closure_uid_20499601": {}
-              },
-              "transferToImageBitmap": {
-                "closure_uid_20499601": {}
-              },
-              "width": {}
-            },
-            "cast": function () { },
-            "ceil": function () { },
-            "clip": function () { },
-            "closure_uid_20499601": {},
-            "compileAndRun": function () { },
-            "complex": function () { },
-            "complexAbs": function () { },
-            "complexSeparableBinaryOp": function () { },
-            "computeBytes": function () { },
-            "concat": function () { },
-            "conv2d": function () { },
-            "conv2dByMatMul": function () { },
-            "conv2dDerFilter": function () { },
-            "conv2dDerInput": function () { },
-            "conv2dWithIm2Row": function () { },
-            "conv3d": function () { },
-            "conv3dDerFilter": function () { },
-            "conv3dDerInput": function () { },
-            "convertAndCacheOnCPU": function () { },
-            "cos": function () { },
-            "cosh": function () { },
-            "cropAndResize": function () { },
-            "cumsum": function () { },
-            "dataRefCount": {},
-            "decode": function () { },
-            "depthToSpace": function () { },
-            "depthwiseConv2D": function () { },
-            "depthwiseConv2DDerFilter": function () { },
-            "depthwiseConv2DDerInput": function () { },
-            "diag": function () { },
-            "dispose": function () { },
-            "disposeData": function () { },
-            "disposed": {},
-            "downloadWaitMs": {},
-            "elu": function () { },
-            "eluDer": function () { },
-            "endTimer": function () { },
-            "epsilon": function () { },
-            "equal": function () { },
-            "erf": function () { },
-            "exp": function () { },
-            "expm1": function () { },
-            "fft": function () { },
-            "fftImpl": function () { },
-            "fill": function () { },
-            "floatPrecision": function () { },
-            "floor": function () { },
-            "floorDiv": function () { },
-            "fromPixels": function () { },
-            "fusedBatchMatMul": function () { },
-            "fusedConv2d": function () { },
-            "gather": function () { },
-            "gatherND": function () { },
-            "getAndSaveBinary": function () { },
-            "getCPUBackend": function () { },
-            "getDataInfo": function () { },
-            "getGPGPUContext": function () { },
-            "getQueryTime": function () { },
-            "getTexture": function () { },
-            "getTextureManager": function () { },
-            "getValuesFromTexture": function () { },
-            "gpgpu": {
-              "addItemToPoll": function () { },
-              "beginQuery": function () { },
-              "bindTextureToFrameBuffer": function () { },
-              "blockUntilAllProgramsCompleted": function () { },
-              "closure_uid_20499601": {},
-              "colorBufferFloatExtension": {},
-              "createAndWaitForFence": function () { },
-              "createBufferFromTexture": function () { },
-              "createFence": function () { },
-              "createFloat16MatrixTexture": function () { },
-              "createFloat16PackedMatrixTexture": function () { },
-              "createFloat32MatrixTexture": function () { },
-              "createPackedMatrixTexture": function () { },
-              "createProgram": function () { },
-              "createUnsignedBytesMatrixTexture": function () { },
-              "debug": {},
-              "debugValidate": function () { },
-              "deleteMatrixTexture": function () { },
-              "deleteProgram": function () { },
-              "dispose": function () { },
-              "disposed": {},
-              "downloadByteEncodedFloatMatrixFromOutputTexture": function () { },
-              "downloadFloat32MatrixFromBuffer": function () { },
-              "downloadMatrixDriver": function () { },
-              "downloadMatrixFromPackedTexture": function () { },
-              "downloadPackedMatrixFromBuffer": function () { },
-              "endQuery": function () { },
-              "executeProgram": function () { },
-              "framebuffer": {},
-              "getAttributeLocation": function () { },
-              "getQueryTime": function () { },
-              "getQueryTimerExtension": function () { },
-              "getQueryTimerExtensionWebGL1": function () { },
-              "getQueryTimerExtensionWebGL2": function () { },
-              "getUniformLocation": function () { },
-              "getUniformLocationNoThrow": function () { },
-              "gl": {
-                "ACTIVE_ATTRIBUTES": {},
-                "ACTIVE_TEXTURE": {},
-                "ACTIVE_UNIFORMS": {},
-                "ACTIVE_UNIFORM_BLOCKS": {},
-                "ALIASED_LINE_WIDTH_RANGE": {},
-                "ALIASED_POINT_SIZE_RANGE": {},
-                "ALPHA": {},
-                "ALPHA_BITS": {},
-                "ALREADY_SIGNALED": {},
-                "ALWAYS": {},
-                "ANY_SAMPLES_PASSED": {},
-                "ANY_SAMPLES_PASSED_CONSERVATIVE": {},
-                "ARRAY_BUFFER": {},
-                "ARRAY_BUFFER_BINDING": {},
-                "ATTACHED_SHADERS": {},
-                "BACK": {},
-                "BLEND": {},
-                "BLEND_COLOR": {},
-                "BLEND_DST_ALPHA": {},
-                "BLEND_DST_RGB": {},
-                "BLEND_EQUATION": {},
-                "BLEND_EQUATION_ALPHA": {},
-                "BLEND_EQUATION_RGB": {},
-                "BLEND_SRC_ALPHA": {},
-                "BLEND_SRC_RGB": {},
-                "BLUE_BITS": {},
-                "BOOL": {},
-                "BOOL_VEC2": {},
-                "BOOL_VEC3": {},
-                "BOOL_VEC4": {},
-                "BROWSER_DEFAULT_WEBGL": {},
-                "BUFFER_SIZE": {},
-                "BUFFER_USAGE": {},
-                "BYTE": {},
-                "CCW": {},
-                "CLAMP_TO_EDGE": {},
-                "COLOR": {},
-                "COLOR_ATTACHMENT0": {},
-                "COLOR_ATTACHMENT1": {},
-                "COLOR_ATTACHMENT10": {},
-                "COLOR_ATTACHMENT11": {},
-                "COLOR_ATTACHMENT12": {},
-                "COLOR_ATTACHMENT13": {},
-                "COLOR_ATTACHMENT14": {},
-                "COLOR_ATTACHMENT15": {},
-                "COLOR_ATTACHMENT2": {},
-                "COLOR_ATTACHMENT3": {},
-                "COLOR_ATTACHMENT4": {},
-                "COLOR_ATTACHMENT5": {},
-                "COLOR_ATTACHMENT6": {},
-                "COLOR_ATTACHMENT7": {},
-                "COLOR_ATTACHMENT8": {},
-                "COLOR_ATTACHMENT9": {},
-                "COLOR_BUFFER_BIT": {},
-                "COLOR_CLEAR_VALUE": {},
-                "COLOR_WRITEMASK": {},
-                "COMPARE_REF_TO_TEXTURE": {},
-                "COMPILE_STATUS": {},
-                "COMPRESSED_TEXTURE_FORMATS": {},
-                "CONDITION_SATISFIED": {},
-                "CONSTANT_ALPHA": {},
-                "CONSTANT_COLOR": {},
-                "CONTEXT_LOST_WEBGL": {},
-                "COPY_READ_BUFFER": {},
-                "COPY_READ_BUFFER_BINDING": {},
-                "COPY_WRITE_BUFFER": {},
-                "COPY_WRITE_BUFFER_BINDING": {},
-                "CULL_FACE": {},
-                "CULL_FACE_MODE": {},
-                "CURRENT_PROGRAM": {},
-                "CURRENT_QUERY": {},
-                "CURRENT_VERTEX_ATTRIB": {},
-                "CW": {},
-                "DECR": {},
-                "DECR_WRAP": {},
-                "DELETE_STATUS": {},
-                "DEPTH": {},
-                "DEPTH24_STENCIL8": {},
-                "DEPTH32F_STENCIL8": {},
-                "DEPTH_ATTACHMENT": {},
-                "DEPTH_BITS": {},
-                "DEPTH_BUFFER_BIT": {},
-                "DEPTH_CLEAR_VALUE": {},
-                "DEPTH_COMPONENT": {},
-                "DEPTH_COMPONENT16": {},
-                "DEPTH_COMPONENT24": {},
-                "DEPTH_COMPONENT32F": {},
-                "DEPTH_FUNC": {},
-                "DEPTH_RANGE": {},
-                "DEPTH_STENCIL": {},
-                "DEPTH_STENCIL_ATTACHMENT": {},
-                "DEPTH_TEST": {},
-                "DEPTH_WRITEMASK": {},
-                "DITHER": {},
-                "DONT_CARE": {},
-                "DRAW_BUFFER0": {},
-                "DRAW_BUFFER1": {},
-                "DRAW_BUFFER10": {},
-                "DRAW_BUFFER11": {},
-                "DRAW_BUFFER12": {},
-                "DRAW_BUFFER13": {},
-                "DRAW_BUFFER14": {},
-                "DRAW_BUFFER15": {},
-                "DRAW_BUFFER2": {},
-                "DRAW_BUFFER3": {},
-                "DRAW_BUFFER4": {},
-                "DRAW_BUFFER5": {},
-                "DRAW_BUFFER6": {},
-                "DRAW_BUFFER7": {},
-                "DRAW_BUFFER8": {},
-                "DRAW_BUFFER9": {},
-                "DRAW_FRAMEBUFFER": {},
-                "DRAW_FRAMEBUFFER_BINDING": {},
-                "DST_ALPHA": {},
-                "DST_COLOR": {},
-                "DYNAMIC_COPY": {},
-                "DYNAMIC_DRAW": {},
-                "DYNAMIC_READ": {},
-                "ELEMENT_ARRAY_BUFFER": {},
-                "ELEMENT_ARRAY_BUFFER_BINDING": {},
-                "EQUAL": {},
-                "FASTEST": {},
-                "FLOAT": {},
-                "FLOAT_32_UNSIGNED_INT_24_8_REV": {},
-                "FLOAT_MAT2": {},
-                "FLOAT_MAT2x3": {},
-                "FLOAT_MAT2x4": {},
-                "FLOAT_MAT3": {},
-                "FLOAT_MAT3x2": {},
-                "FLOAT_MAT3x4": {},
-                "FLOAT_MAT4": {},
-                "FLOAT_MAT4x2": {},
-                "FLOAT_MAT4x3": {},
-                "FLOAT_VEC2": {},
-                "FLOAT_VEC3": {},
-                "FLOAT_VEC4": {},
-                "FRAGMENT_SHADER": {},
-                "FRAGMENT_SHADER_DERIVATIVE_HINT": {},
-                "FRAMEBUFFER": {},
-                "FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE": {},
-                "FRAMEBUFFER_ATTACHMENT_BLUE_SIZE": {},
-                "FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING": {},
-                "FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE": {},
-                "FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE": {},
-                "FRAMEBUFFER_ATTACHMENT_GREEN_SIZE": {},
-                "FRAMEBUFFER_ATTACHMENT_OBJECT_NAME": {},
-                "FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE": {},
-                "FRAMEBUFFER_ATTACHMENT_RED_SIZE": {},
-                "FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE": {},
-                "FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE": {},
-                "FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER": {},
-                "FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL": {},
-                "FRAMEBUFFER_BINDING": {},
-                "FRAMEBUFFER_COMPLETE": {},
-                "FRAMEBUFFER_DEFAULT": {},
-                "FRAMEBUFFER_INCOMPLETE_ATTACHMENT": {},
-                "FRAMEBUFFER_INCOMPLETE_DIMENSIONS": {},
-                "FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT": {},
-                "FRAMEBUFFER_INCOMPLETE_MULTISAMPLE": {},
-                "FRAMEBUFFER_UNSUPPORTED": {},
-                "FRONT": {},
-                "FRONT_AND_BACK": {},
-                "FRONT_FACE": {},
-                "FUNC_ADD": {},
-                "FUNC_REVERSE_SUBTRACT": {},
-                "FUNC_SUBTRACT": {},
-                "GENERATE_MIPMAP_HINT": {},
-                "GEQUAL": {},
-                "GREATER": {},
-                "GREEN_BITS": {},
-                "HALF_FLOAT": {},
-                "HIGH_FLOAT": {},
-                "HIGH_INT": {},
-                "IMPLEMENTATION_COLOR_READ_FORMAT": {},
-                "IMPLEMENTATION_COLOR_READ_TYPE": {},
-                "INCR": {},
-                "INCR_WRAP": {},
-                "INT": {},
-                "INTERLEAVED_ATTRIBS": {},
-                "INT_2_10_10_10_REV": {},
-                "INT_SAMPLER_2D": {},
-                "INT_SAMPLER_2D_ARRAY": {},
-                "INT_SAMPLER_3D": {},
-                "INT_SAMPLER_CUBE": {},
-                "INT_VEC2": {},
-                "INT_VEC3": {},
-                "INT_VEC4": {},
-                "INVALID_ENUM": {},
-                "INVALID_FRAMEBUFFER_OPERATION": {},
-                "INVALID_INDEX": {},
-                "INVALID_OPERATION": {},
-                "INVALID_VALUE": {},
-                "INVERT": {},
-                "KEEP": {},
-                "LEQUAL": {},
-                "LESS": {},
-                "LINEAR": {},
-                "LINEAR_MIPMAP_LINEAR": {},
-                "LINEAR_MIPMAP_NEAREST": {},
-                "LINES": {},
-                "LINE_LOOP": {},
-                "LINE_STRIP": {},
-                "LINE_WIDTH": {},
-                "LINK_STATUS": {},
-                "LOW_FLOAT": {},
-                "LOW_INT": {},
-                "LUMINANCE": {},
-                "LUMINANCE_ALPHA": {},
-                "MAX": {},
-                "MAX_3D_TEXTURE_SIZE": {},
-                "MAX_ARRAY_TEXTURE_LAYERS": {},
-                "MAX_CLIENT_WAIT_TIMEOUT_WEBGL": {},
-                "MAX_COLOR_ATTACHMENTS": {},
-                "MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS": {},
-                "MAX_COMBINED_TEXTURE_IMAGE_UNITS": {},
-                "MAX_COMBINED_UNIFORM_BLOCKS": {},
-                "MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS": {},
-                "MAX_CUBE_MAP_TEXTURE_SIZE": {},
-                "MAX_DRAW_BUFFERS": {},
-                "MAX_ELEMENTS_INDICES": {},
-                "MAX_ELEMENTS_VERTICES": {},
-                "MAX_ELEMENT_INDEX": {},
-                "MAX_FRAGMENT_INPUT_COMPONENTS": {},
-                "MAX_FRAGMENT_UNIFORM_BLOCKS": {},
-                "MAX_FRAGMENT_UNIFORM_COMPONENTS": {},
-                "MAX_FRAGMENT_UNIFORM_VECTORS": {},
-                "MAX_PROGRAM_TEXEL_OFFSET": {},
-                "MAX_RENDERBUFFER_SIZE": {},
-                "MAX_SAMPLES": {},
-                "MAX_SERVER_WAIT_TIMEOUT": {},
-                "MAX_TEXTURE_IMAGE_UNITS": {},
-                "MAX_TEXTURE_LOD_BIAS": {},
-                "MAX_TEXTURE_SIZE": {},
-                "MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS": {},
-                "MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS": {},
-                "MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS": {},
-                "MAX_UNIFORM_BLOCK_SIZE": {},
-                "MAX_UNIFORM_BUFFER_BINDINGS": {},
-                "MAX_VARYING_COMPONENTS": {},
-                "MAX_VARYING_VECTORS": {},
-                "MAX_VERTEX_ATTRIBS": {},
-                "MAX_VERTEX_OUTPUT_COMPONENTS": {},
-                "MAX_VERTEX_TEXTURE_IMAGE_UNITS": {},
-                "MAX_VERTEX_UNIFORM_BLOCKS": {},
-                "MAX_VERTEX_UNIFORM_COMPONENTS": {},
-                "MAX_VERTEX_UNIFORM_VECTORS": {},
-                "MAX_VIEWPORT_DIMS": {},
-                "MEDIUM_FLOAT": {},
-                "MEDIUM_INT": {},
-                "MIN": {},
-                "MIN_PROGRAM_TEXEL_OFFSET": {},
-                "MIRRORED_REPEAT": {},
-                "NEAREST": {},
-                "NEAREST_MIPMAP_LINEAR": {},
-                "NEAREST_MIPMAP_NEAREST": {},
-                "NEVER": {},
-                "NICEST": {},
-                "NONE": {},
-                "NOTEQUAL": {},
-                "NO_ERROR": {},
-                "OBJECT_TYPE": {},
-                "ONE": {},
-                "ONE_MINUS_CONSTANT_ALPHA": {},
-                "ONE_MINUS_CONSTANT_COLOR": {},
-                "ONE_MINUS_DST_ALPHA": {},
-                "ONE_MINUS_DST_COLOR": {},
-                "ONE_MINUS_SRC_ALPHA": {},
-                "ONE_MINUS_SRC_COLOR": {},
-                "OUT_OF_MEMORY": {},
-                "PACK_ALIGNMENT": {},
-                "PACK_ROW_LENGTH": {},
-                "PACK_SKIP_PIXELS": {},
-                "PACK_SKIP_ROWS": {},
-                "PIXEL_PACK_BUFFER": {},
-                "PIXEL_PACK_BUFFER_BINDING": {},
-                "PIXEL_UNPACK_BUFFER": {},
-                "PIXEL_UNPACK_BUFFER_BINDING": {},
-                "POINTS": {},
-                "POLYGON_OFFSET_FACTOR": {},
-                "POLYGON_OFFSET_FILL": {},
-                "POLYGON_OFFSET_UNITS": {},
-                "QUERY_RESULT": {},
-                "QUERY_RESULT_AVAILABLE": {},
-                "R11F_G11F_B10F": {},
-                "R16F": {},
-                "R16I": {},
-                "R16UI": {},
-                "R32F": {},
-                "R32I": {},
-                "R32UI": {},
-                "R8": {},
-                "R8I": {},
-                "R8UI": {},
-                "R8_SNORM": {},
-                "RASTERIZER_DISCARD": {},
-                "READ_BUFFER": {},
-                "READ_FRAMEBUFFER": {},
-                "READ_FRAMEBUFFER_BINDING": {},
-                "RED": {},
-                "RED_BITS": {},
-                "RED_INTEGER": {},
-                "RENDERBUFFER": {},
-                "RENDERBUFFER_ALPHA_SIZE": {},
-                "RENDERBUFFER_BINDING": {},
-                "RENDERBUFFER_BLUE_SIZE": {},
-                "RENDERBUFFER_DEPTH_SIZE": {},
-                "RENDERBUFFER_GREEN_SIZE": {},
-                "RENDERBUFFER_HEIGHT": {},
-                "RENDERBUFFER_INTERNAL_FORMAT": {},
-                "RENDERBUFFER_RED_SIZE": {},
-                "RENDERBUFFER_SAMPLES": {},
-                "RENDERBUFFER_STENCIL_SIZE": {},
-                "RENDERBUFFER_WIDTH": {},
-                "RENDERER": {},
-                "REPEAT": {},
-                "REPLACE": {},
-                "RG": {},
-                "RG16F": {},
-                "RG16I": {},
-                "RG16UI": {},
-                "RG32F": {},
-                "RG32I": {},
-                "RG32UI": {},
-                "RG8": {},
-                "RG8I": {},
-                "RG8UI": {},
-                "RG8_SNORM": {},
-                "RGB": {},
-                "RGB10_A2": {},
-                "RGB10_A2UI": {},
-                "RGB16F": {},
-                "RGB16I": {},
-                "RGB16UI": {},
-                "RGB32F": {},
-                "RGB32I": {},
-                "RGB32UI": {},
-                "RGB565": {},
-                "RGB5_A1": {},
-                "RGB8": {},
-                "RGB8I": {},
-                "RGB8UI": {},
-                "RGB8_SNORM": {},
-                "RGB9_E5": {},
-                "RGBA": {},
-                "RGBA16F": {},
-                "RGBA16I": {},
-                "RGBA16UI": {},
-                "RGBA32F": {},
-                "RGBA32I": {},
-                "RGBA32UI": {},
-                "RGBA4": {},
-                "RGBA8": {},
-                "RGBA8I": {},
-                "RGBA8UI": {},
-                "RGBA8_SNORM": {},
-                "RGBA_INTEGER": {},
-                "RGB_INTEGER": {},
-                "RG_INTEGER": {},
-                "SAMPLER_2D": {},
-                "SAMPLER_2D_ARRAY": {},
-                "SAMPLER_2D_ARRAY_SHADOW": {},
-                "SAMPLER_2D_SHADOW": {},
-                "SAMPLER_3D": {},
-                "SAMPLER_BINDING": {},
-                "SAMPLER_CUBE": {},
-                "SAMPLER_CUBE_SHADOW": {},
-                "SAMPLES": {},
-                "SAMPLE_ALPHA_TO_COVERAGE": {},
-                "SAMPLE_BUFFERS": {},
-                "SAMPLE_COVERAGE": {},
-                "SAMPLE_COVERAGE_INVERT": {},
-                "SAMPLE_COVERAGE_VALUE": {},
-                "SCISSOR_BOX": {},
-                "SCISSOR_TEST": {},
-                "SEPARATE_ATTRIBS": {},
-                "SHADER_TYPE": {},
-                "SHADING_LANGUAGE_VERSION": {},
-                "SHORT": {},
-                "SIGNALED": {},
-                "SIGNED_NORMALIZED": {},
-                "SRC_ALPHA": {},
-                "SRC_ALPHA_SATURATE": {},
-                "SRC_COLOR": {},
-                "SRGB": {},
-                "SRGB8": {},
-                "SRGB8_ALPHA8": {},
-                "STATIC_COPY": {},
-                "STATIC_DRAW": {},
-                "STATIC_READ": {},
-                "STENCIL": {},
-                "STENCIL_ATTACHMENT": {},
-                "STENCIL_BACK_FAIL": {},
-                "STENCIL_BACK_FUNC": {},
-                "STENCIL_BACK_PASS_DEPTH_FAIL": {},
-                "STENCIL_BACK_PASS_DEPTH_PASS": {},
-                "STENCIL_BACK_REF": {},
-                "STENCIL_BACK_VALUE_MASK": {},
-                "STENCIL_BACK_WRITEMASK": {},
-                "STENCIL_BITS": {},
-                "STENCIL_BUFFER_BIT": {},
-                "STENCIL_CLEAR_VALUE": {},
-                "STENCIL_FAIL": {},
-                "STENCIL_FUNC": {},
-                "STENCIL_INDEX8": {},
-                "STENCIL_PASS_DEPTH_FAIL": {},
-                "STENCIL_PASS_DEPTH_PASS": {},
-                "STENCIL_REF": {},
-                "STENCIL_TEST": {},
-                "STENCIL_VALUE_MASK": {},
-                "STENCIL_WRITEMASK": {},
-                "STREAM_COPY": {},
-                "STREAM_DRAW": {},
-                "STREAM_READ": {},
-                "SUBPIXEL_BITS": {},
-                "SYNC_CONDITION": {},
-                "SYNC_FENCE": {},
-                "SYNC_FLAGS": {},
-                "SYNC_FLUSH_COMMANDS_BIT": {},
-                "SYNC_GPU_COMMANDS_COMPLETE": {},
-                "SYNC_STATUS": {},
-                "TEXTURE": {},
-                "TEXTURE0": {},
-                "TEXTURE1": {},
-                "TEXTURE10": {},
-                "TEXTURE11": {},
-                "TEXTURE12": {},
-                "TEXTURE13": {},
-                "TEXTURE14": {},
-                "TEXTURE15": {},
-                "TEXTURE16": {},
-                "TEXTURE17": {},
-                "TEXTURE18": {},
-                "TEXTURE19": {},
-                "TEXTURE2": {},
-                "TEXTURE20": {},
-                "TEXTURE21": {},
-                "TEXTURE22": {},
-                "TEXTURE23": {},
-                "TEXTURE24": {},
-                "TEXTURE25": {},
-                "TEXTURE26": {},
-                "TEXTURE27": {},
-                "TEXTURE28": {},
-                "TEXTURE29": {},
-                "TEXTURE3": {},
-                "TEXTURE30": {},
-                "TEXTURE31": {},
-                "TEXTURE4": {},
-                "TEXTURE5": {},
-                "TEXTURE6": {},
-                "TEXTURE7": {},
-                "TEXTURE8": {},
-                "TEXTURE9": {},
-                "TEXTURE_2D": {},
-                "TEXTURE_2D_ARRAY": {},
-                "TEXTURE_3D": {},
-                "TEXTURE_BASE_LEVEL": {},
-                "TEXTURE_BINDING_2D": {},
-                "TEXTURE_BINDING_2D_ARRAY": {},
-                "TEXTURE_BINDING_3D": {},
-                "TEXTURE_BINDING_CUBE_MAP": {},
-                "TEXTURE_COMPARE_FUNC": {},
-                "TEXTURE_COMPARE_MODE": {},
-                "TEXTURE_CUBE_MAP": {},
-                "TEXTURE_CUBE_MAP_NEGATIVE_X": {},
-                "TEXTURE_CUBE_MAP_NEGATIVE_Y": {},
-                "TEXTURE_CUBE_MAP_NEGATIVE_Z": {},
-                "TEXTURE_CUBE_MAP_POSITIVE_X": {},
-                "TEXTURE_CUBE_MAP_POSITIVE_Y": {},
-                "TEXTURE_CUBE_MAP_POSITIVE_Z": {},
-                "TEXTURE_IMMUTABLE_FORMAT": {},
-                "TEXTURE_IMMUTABLE_LEVELS": {},
-                "TEXTURE_MAG_FILTER": {},
-                "TEXTURE_MAX_LEVEL": {},
-                "TEXTURE_MAX_LOD": {},
-                "TEXTURE_MIN_FILTER": {},
-                "TEXTURE_MIN_LOD": {},
-                "TEXTURE_WRAP_R": {},
-                "TEXTURE_WRAP_S": {},
-                "TEXTURE_WRAP_T": {},
-                "TIMEOUT_EXPIRED": {},
-                "TIMEOUT_IGNORED": {},
-                "TRANSFORM_FEEDBACK": {},
-                "TRANSFORM_FEEDBACK_ACTIVE": {},
-                "TRANSFORM_FEEDBACK_BINDING": {},
-                "TRANSFORM_FEEDBACK_BUFFER": {},
-                "TRANSFORM_FEEDBACK_BUFFER_BINDING": {},
-                "TRANSFORM_FEEDBACK_BUFFER_MODE": {},
-                "TRANSFORM_FEEDBACK_BUFFER_SIZE": {},
-                "TRANSFORM_FEEDBACK_BUFFER_START": {},
-                "TRANSFORM_FEEDBACK_PAUSED": {},
-                "TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN": {},
-                "TRANSFORM_FEEDBACK_VARYINGS": {},
-                "TRIANGLES": {},
-                "TRIANGLE_FAN": {},
-                "TRIANGLE_STRIP": {},
-                "UNIFORM_ARRAY_STRIDE": {},
-                "UNIFORM_BLOCK_ACTIVE_UNIFORMS": {},
-                "UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES": {},
-                "UNIFORM_BLOCK_BINDING": {},
-                "UNIFORM_BLOCK_DATA_SIZE": {},
-                "UNIFORM_BLOCK_INDEX": {},
-                "UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER": {},
-                "UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER": {},
-                "UNIFORM_BUFFER": {},
-                "UNIFORM_BUFFER_BINDING": {},
-                "UNIFORM_BUFFER_OFFSET_ALIGNMENT": {},
-                "UNIFORM_BUFFER_SIZE": {},
-                "UNIFORM_BUFFER_START": {},
-                "UNIFORM_IS_ROW_MAJOR": {},
-                "UNIFORM_MATRIX_STRIDE": {},
-                "UNIFORM_OFFSET": {},
-                "UNIFORM_SIZE": {},
-                "UNIFORM_TYPE": {},
-                "UNPACK_ALIGNMENT": {},
-                "UNPACK_COLORSPACE_CONVERSION_WEBGL": {},
-                "UNPACK_FLIP_Y_WEBGL": {},
-                "UNPACK_IMAGE_HEIGHT": {},
-                "UNPACK_PREMULTIPLY_ALPHA_WEBGL": {},
-                "UNPACK_ROW_LENGTH": {},
-                "UNPACK_SKIP_IMAGES": {},
-                "UNPACK_SKIP_PIXELS": {},
-                "UNPACK_SKIP_ROWS": {},
-                "UNSIGNALED": {},
-                "UNSIGNED_BYTE": {},
-                "UNSIGNED_INT": {},
-                "UNSIGNED_INT_10F_11F_11F_REV": {},
-                "UNSIGNED_INT_24_8": {},
-                "UNSIGNED_INT_2_10_10_10_REV": {},
-                "UNSIGNED_INT_5_9_9_9_REV": {},
-                "UNSIGNED_INT_SAMPLER_2D": {},
-                "UNSIGNED_INT_SAMPLER_2D_ARRAY": {},
-                "UNSIGNED_INT_SAMPLER_3D": {},
-                "UNSIGNED_INT_SAMPLER_CUBE": {},
-                "UNSIGNED_INT_VEC2": {},
-                "UNSIGNED_INT_VEC3": {},
-                "UNSIGNED_INT_VEC4": {},
-                "UNSIGNED_NORMALIZED": {},
-                "UNSIGNED_SHORT": {},
-                "UNSIGNED_SHORT_4_4_4_4": {},
-                "UNSIGNED_SHORT_5_5_5_1": {},
-                "UNSIGNED_SHORT_5_6_5": {},
-                "VALIDATE_STATUS": {},
-                "VENDOR": {},
-                "VERSION": {},
-                "VERTEX_ARRAY_BINDING": {},
-                "VERTEX_ATTRIB_ARRAY_BUFFER_BINDING": {},
-                "VERTEX_ATTRIB_ARRAY_DIVISOR": {},
-                "VERTEX_ATTRIB_ARRAY_ENABLED": {},
-                "VERTEX_ATTRIB_ARRAY_INTEGER": {},
-                "VERTEX_ATTRIB_ARRAY_NORMALIZED": {},
-                "VERTEX_ATTRIB_ARRAY_POINTER": {},
-                "VERTEX_ATTRIB_ARRAY_SIZE": {},
-                "VERTEX_ATTRIB_ARRAY_STRIDE": {},
-                "VERTEX_ATTRIB_ARRAY_TYPE": {},
-                "VERTEX_SHADER": {},
-                "VIEWPORT": {},
-                "WAIT_FAILED": {},
-                "ZERO": {},
-                "activeTexture": {
-                  "closure_uid_20499601": {}
-                },
-                "attachShader": {
-                  "closure_uid_20499601": {}
-                },
-                "beginQuery": {
-                  "closure_uid_20499601": {}
-                },
-                "beginTransformFeedback": {
-                  "closure_uid_20499601": {}
-                },
-                "bindAttribLocation": {
-                  "closure_uid_20499601": {}
-                },
-                "bindBuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "bindBufferBase": {
-                  "closure_uid_20499601": {}
-                },
-                "bindBufferRange": {
-                  "closure_uid_20499601": {}
-                },
-                "bindFramebuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "bindRenderbuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "bindSampler": {
-                  "closure_uid_20499601": {}
-                },
-                "bindTexture": {
-                  "closure_uid_20499601": {}
-                },
-                "bindTransformFeedback": {
-                  "closure_uid_20499601": {}
-                },
-                "bindVertexArray": {
-                  "closure_uid_20499601": {}
-                },
-                "blendColor": {
-                  "closure_uid_20499601": {}
-                },
-                "blendEquation": {
-                  "closure_uid_20499601": {}
-                },
-                "blendEquationSeparate": {
-                  "closure_uid_20499601": {}
-                },
-                "blendFunc": {
-                  "closure_uid_20499601": {}
-                },
-                "blendFuncSeparate": {
-                  "closure_uid_20499601": {}
-                },
-                "blitFramebuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "bufferData": {
-                  "closure_uid_20499601": {}
-                },
-                "bufferSubData": {
-                  "closure_uid_20499601": {}
-                },
-                "canvas": {
-                  "addEventListener": {
-                    "closure_uid_20499601": {}
-                  },
-                  "closure_uid_20499601": {},
-                  "convertToBlob": {
-                    "closure_uid_20499601": {}
-                  },
-                  "dispatchEvent": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getContext": {
-                    "closure_uid_20499601": {}
-                  },
-                  "height": {},
-                  "removeEventListener": {
-                    "closure_uid_20499601": {}
-                  },
-                  "transferToImageBitmap": {
-                    "closure_uid_20499601": {}
-                  },
-                  "width": {}
-                },
-                "checkFramebufferStatus": {
-                  "closure_uid_20499601": {}
-                },
-                "clear": {
-                  "closure_uid_20499601": {}
-                },
-                "clearBufferfi": {
-                  "closure_uid_20499601": {}
-                },
-                "clearBufferfv": {
-                  "closure_uid_20499601": {}
-                },
-                "clearBufferiv": {
-                  "closure_uid_20499601": {}
-                },
-                "clearBufferuiv": {
-                  "closure_uid_20499601": {}
-                },
-                "clearColor": {
-                  "closure_uid_20499601": {}
-                },
-                "clearDepth": {
-                  "closure_uid_20499601": {}
-                },
-                "clearStencil": {
-                  "closure_uid_20499601": {}
-                },
-                "clientWaitSync": {
-                  "closure_uid_20499601": {}
-                },
-                "closure_uid_20499601": {},
-                "colorMask": {
-                  "closure_uid_20499601": {}
-                },
-                "compileShader": {
-                  "closure_uid_20499601": {}
-                },
-                "compressedTexImage2D": {
-                  "closure_uid_20499601": {}
-                },
-                "compressedTexImage3D": {
-                  "closure_uid_20499601": {}
-                },
-                "compressedTexSubImage2D": {
-                  "closure_uid_20499601": {}
-                },
-                "compressedTexSubImage3D": {
-                  "closure_uid_20499601": {}
-                },
-                "copyBufferSubData": {
-                  "closure_uid_20499601": {}
-                },
-                "copyTexImage2D": {
-                  "closure_uid_20499601": {}
-                },
-                "copyTexSubImage2D": {
-                  "closure_uid_20499601": {}
-                },
-                "copyTexSubImage3D": {
-                  "closure_uid_20499601": {}
-                },
-                "createBuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "createFramebuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "createProgram": {
-                  "closure_uid_20499601": {}
-                },
-                "createQuery": {
-                  "closure_uid_20499601": {}
-                },
-                "createRenderbuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "createSampler": {
-                  "closure_uid_20499601": {}
-                },
-                "createShader": {
-                  "closure_uid_20499601": {}
-                },
-                "createTexture": {
-                  "closure_uid_20499601": {}
-                },
-                "createTransformFeedback": {
-                  "closure_uid_20499601": {}
-                },
-                "createVertexArray": {
-                  "closure_uid_20499601": {}
-                },
-                "cullFace": {
-                  "closure_uid_20499601": {}
-                },
-                "deleteBuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "deleteFramebuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "deleteProgram": {
-                  "closure_uid_20499601": {}
-                },
-                "deleteQuery": {
-                  "closure_uid_20499601": {}
-                },
-                "deleteRenderbuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "deleteSampler": {
-                  "closure_uid_20499601": {}
-                },
-                "deleteShader": {
-                  "closure_uid_20499601": {}
-                },
-                "deleteSync": {
-                  "closure_uid_20499601": {}
-                },
-                "deleteTexture": {
-                  "closure_uid_20499601": {}
-                },
-                "deleteTransformFeedback": {
-                  "closure_uid_20499601": {}
-                },
-                "deleteVertexArray": {
-                  "closure_uid_20499601": {}
-                },
-                "depthFunc": {
-                  "closure_uid_20499601": {}
-                },
-                "depthMask": {
-                  "closure_uid_20499601": {}
-                },
-                "depthRange": {
-                  "closure_uid_20499601": {}
-                },
-                "detachShader": {
-                  "closure_uid_20499601": {}
-                },
-                "disable": {
-                  "closure_uid_20499601": {}
-                },
-                "disableVertexAttribArray": {
-                  "closure_uid_20499601": {}
-                },
-                "drawArrays": {
-                  "closure_uid_20499601": {}
-                },
-                "drawArraysInstanced": {
-                  "closure_uid_20499601": {}
-                },
-                "drawBuffers": {
-                  "closure_uid_20499601": {}
-                },
-                "drawElements": {
-                  "closure_uid_20499601": {}
-                },
-                "drawElementsInstanced": {
-                  "closure_uid_20499601": {}
-                },
-                "drawRangeElements": {
-                  "closure_uid_20499601": {}
-                },
-                "drawingBufferHeight": {},
-                "drawingBufferWidth": {},
-                "enable": {
-                  "closure_uid_20499601": {}
-                },
-                "enableVertexAttribArray": {
-                  "closure_uid_20499601": {}
-                },
-                "endQuery": {
-                  "closure_uid_20499601": {}
-                },
-                "endTransformFeedback": {
-                  "closure_uid_20499601": {}
-                },
-                "fenceSync": {
-                  "closure_uid_20499601": {}
-                },
-                "finish": {
-                  "closure_uid_20499601": {}
-                },
-                "flush": {
-                  "closure_uid_20499601": {}
-                },
-                "framebufferRenderbuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "framebufferTexture2D": {
-                  "closure_uid_20499601": {}
-                },
-                "framebufferTextureLayer": {
-                  "closure_uid_20499601": {}
-                },
-                "frontFace": {
-                  "closure_uid_20499601": {}
-                },
-                "generateMipmap": {
-                  "closure_uid_20499601": {}
-                },
-                "getActiveAttrib": {
-                  "closure_uid_20499601": {}
-                },
-                "getActiveUniform": {
-                  "closure_uid_20499601": {}
-                },
-                "getActiveUniformBlockName": {
-                  "closure_uid_20499601": {}
-                },
-                "getActiveUniformBlockParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getActiveUniforms": {
-                  "closure_uid_20499601": {}
-                },
-                "getAttachedShaders": {
-                  "closure_uid_20499601": {}
-                },
-                "getAttribLocation": {
-                  "closure_uid_20499601": {}
-                },
-                "getBufferParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getBufferSubData": {
-                  "closure_uid_20499601": {}
-                },
-                "getContextAttributes": {
-                  "closure_uid_20499601": {}
-                },
-                "getError": {
-                  "closure_uid_20499601": {}
-                },
-                "getExtension": {
-                  "closure_uid_20499601": {}
-                },
-                "getFragDataLocation": {
-                  "closure_uid_20499601": {}
-                },
-                "getFramebufferAttachmentParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getIndexedParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getInternalformatParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getProgramInfoLog": {
-                  "closure_uid_20499601": {}
-                },
-                "getProgramParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getQuery": {
-                  "closure_uid_20499601": {}
-                },
-                "getQueryParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getRenderbufferParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getSamplerParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getShaderInfoLog": {
-                  "closure_uid_20499601": {}
-                },
-                "getShaderParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getShaderPrecisionFormat": {
-                  "closure_uid_20499601": {}
-                },
-                "getShaderSource": {
-                  "closure_uid_20499601": {}
-                },
-                "getSupportedExtensions": {
-                  "closure_uid_20499601": {}
-                },
-                "getSyncParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getTexParameter": {
-                  "closure_uid_20499601": {}
-                },
-                "getTransformFeedbackVarying": {
-                  "closure_uid_20499601": {}
-                },
-                "getUniform": {
-                  "closure_uid_20499601": {}
-                },
-                "getUniformBlockIndex": {
-                  "closure_uid_20499601": {}
-                },
-                "getUniformIndices": {
-                  "closure_uid_20499601": {}
-                },
-                "getUniformLocation": {
-                  "closure_uid_20499601": {}
-                },
-                "getVertexAttrib": {
-                  "closure_uid_20499601": {}
-                },
-                "getVertexAttribOffset": {
-                  "closure_uid_20499601": {}
-                },
-                "hint": {
-                  "closure_uid_20499601": {}
-                },
-                "invalidateFramebuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "invalidateSubFramebuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "isBuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "isContextLost": {
-                  "closure_uid_20499601": {}
-                },
-                "isEnabled": {
-                  "closure_uid_20499601": {}
-                },
-                "isFramebuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "isProgram": {
-                  "closure_uid_20499601": {}
-                },
-                "isQuery": {
-                  "closure_uid_20499601": {}
-                },
-                "isRenderbuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "isSampler": {
-                  "closure_uid_20499601": {}
-                },
-                "isShader": {
-                  "closure_uid_20499601": {}
-                },
-                "isSync": {
-                  "closure_uid_20499601": {}
-                },
-                "isTexture": {
-                  "closure_uid_20499601": {}
-                },
-                "isTransformFeedback": {
-                  "closure_uid_20499601": {}
-                },
-                "isVertexArray": {
-                  "closure_uid_20499601": {}
-                },
-                "lineWidth": {
-                  "closure_uid_20499601": {}
-                },
-                "linkProgram": {
-                  "closure_uid_20499601": {}
-                },
-                "pauseTransformFeedback": {
-                  "closure_uid_20499601": {}
-                },
-                "pixelStorei": {
-                  "closure_uid_20499601": {}
-                },
-                "polygonOffset": {
-                  "closure_uid_20499601": {}
-                },
-                "readBuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "readPixels": {
-                  "closure_uid_20499601": {}
-                },
-                "renderbufferStorage": {
-                  "closure_uid_20499601": {}
-                },
-                "renderbufferStorageMultisample": {
-                  "closure_uid_20499601": {}
-                },
-                "resumeTransformFeedback": {
-                  "closure_uid_20499601": {}
-                },
-                "sampleCoverage": {
-                  "closure_uid_20499601": {}
-                },
-                "samplerParameterf": {
-                  "closure_uid_20499601": {}
-                },
-                "samplerParameteri": {
-                  "closure_uid_20499601": {}
-                },
-                "scissor": {
-                  "closure_uid_20499601": {}
-                },
-                "shaderSource": {
-                  "closure_uid_20499601": {}
-                },
-                "stencilFunc": {
-                  "closure_uid_20499601": {}
-                },
-                "stencilFuncSeparate": {
-                  "closure_uid_20499601": {}
-                },
-                "stencilMask": {
-                  "closure_uid_20499601": {}
-                },
-                "stencilMaskSeparate": {
-                  "closure_uid_20499601": {}
-                },
-                "stencilOp": {
-                  "closure_uid_20499601": {}
-                },
-                "stencilOpSeparate": {
-                  "closure_uid_20499601": {}
-                },
-                "texImage2D": {
-                  "closure_uid_20499601": {}
-                },
-                "texImage3D": {
-                  "closure_uid_20499601": {}
-                },
-                "texParameterf": {
-                  "closure_uid_20499601": {}
-                },
-                "texParameteri": {
-                  "closure_uid_20499601": {}
-                },
-                "texStorage2D": {
-                  "closure_uid_20499601": {}
-                },
-                "texStorage3D": {
-                  "closure_uid_20499601": {}
-                },
-                "texSubImage2D": {
-                  "closure_uid_20499601": {}
-                },
-                "texSubImage3D": {
-                  "closure_uid_20499601": {}
-                },
-                "transformFeedbackVaryings": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform1f": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform1fv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform1i": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform1iv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform1ui": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform1uiv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform2f": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform2fv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform2i": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform2iv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform2ui": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform2uiv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform3f": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform3fv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform3i": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform3iv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform3ui": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform3uiv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform4f": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform4fv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform4i": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform4iv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform4ui": {
-                  "closure_uid_20499601": {}
-                },
-                "uniform4uiv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniformBlockBinding": {
-                  "closure_uid_20499601": {}
-                },
-                "uniformMatrix2fv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniformMatrix2x3fv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniformMatrix2x4fv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniformMatrix3fv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniformMatrix3x2fv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniformMatrix3x4fv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniformMatrix4fv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniformMatrix4x2fv": {
-                  "closure_uid_20499601": {}
-                },
-                "uniformMatrix4x3fv": {
-                  "closure_uid_20499601": {}
-                },
-                "useProgram": {
-                  "closure_uid_20499601": {}
-                },
-                "validateProgram": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttrib1f": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttrib1fv": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttrib2f": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttrib2fv": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttrib3f": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttrib3fv": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttrib4f": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttrib4fv": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttribDivisor": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttribI4i": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttribI4iv": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttribI4ui": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttribI4uiv": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttribIPointer": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttribPointer": {
-                  "closure_uid_20499601": {}
-                },
-                "viewport": {
-                  "closure_uid_20499601": {}
-                },
-                "waitSync": {
-                  "closure_uid_20499601": {}
-                }
-              },
-              "indexBuffer": {},
-              "isQueryAvailable": function () { },
-              "itemsToPoll": {},
-              "outputTexture": {},
-              "pollFence": function () { },
-              "pollItems": function () { },
-              "program": {},
-              "setInputMatrixTexture": function () { },
-              "setOutputMatrixTexture": function () { },
-              "setOutputMatrixTextureDriver": function () { },
-              "setOutputMatrixWriteRegion": function () { },
-              "setOutputMatrixWriteRegionDriver": function () { },
-              "setOutputPackedMatrixTexture": function () { },
-              "setOutputPackedMatrixWriteRegion": function () { },
-              "setProgram": function () { },
-              "textureConfig": {
-                "defaultNumChannels": {},
-                "downloadTextureFormat": {},
-                "downloadUnpackNumChannels": {},
-                "internalFormatFloat": {},
-                "internalFormatHalfFloat": {},
-                "internalFormatPackedFloat": {},
-                "internalFormatPackedHalfFloat": {},
-                "textureFormatFloat": {},
-                "textureTypeFloat": {},
-                "textureTypeHalfFloat": {}
-              },
-              "throwIfDisposed": function () { },
-              "throwIfNoProgram": function () { },
-              "unbindTextureToFrameBuffer": function () { },
-              "uploadDenseMatrixToTexture": function () { },
-              "uploadPixelDataToTexture": function () { },
-              "vertexAttrsAreBound": {},
-              "vertexBuffer": {},
-              "waitForQueryAndGetTime": function () { }
-            },
-            "gpgpuCreatedLocally": {},
-            "greater": function () { },
-            "greaterEqual": function () { },
-            "ifft": function () { },
-            "imag": function () { },
-            "int": function () { },
-            "isFinite": function () { },
-            "isInf": function () { },
-            "isNaN": function () { },
-            "less": function () { },
-            "lessEqual": function () { },
-            "linspace": function () { },
-            "localResponseNormalization4D": function () { },
-            "log": function () { },
-            "log1p": function () { },
-            "logicalAnd": function () { },
-            "logicalNot": function () { },
-            "logicalOr": function () { },
-            "makeComplexComponentTensorHandle": function () { },
-            "makeOutputArray": function () { },
-            "makePackedTensor": function () { },
-            "makeTensorHandle": function () { },
-            "max": function () { },
-            "maxPool": function () { },
-            "maxPool3d": function () { },
-            "maxPool3dBackprop": function () { },
-            "maxPoolBackprop": function () { },
-            "maximum": function () { },
-            "memory": function () { },
-            "min": function () { },
-            "minimum": function () { },
-            "mod": function () { },
-            "multinomial": function () { },
-            "multiply": function () { },
-            "neg": function () { },
-            "nonMaxSuppression": function () { },
-            "notEqual": function () { },
-            "numBytesInGPU": {},
-            "numMBBeforeWarning": {},
-            "oneHot": function () { },
-            "onesLike": function () { },
-            "packTensor": function () { },
-            "packedBinaryOp": function () { },
-            "packedReshape": function () { },
-            "packedUnaryOp": function () { },
-            "pad": function () { },
-            "pendingDisposal": {},
-            "pendingRead": {},
-            "pow": function () { },
-            "prelu": function () { },
-            "prod": function () { },
-            "read": function () { },
-            "readSync": function () { },
-            "real": function () { },
-            "realDivide": function () { },
-            "reciprocal": function () { },
-            "reduce": function () { },
-            "register": function () { },
-            "releaseGPUData": function () { },
-            "relu": function () { },
-            "reshape": function () { },
-            "resizeBilinear": function () { },
-            "resizeBilinearBackprop": function () { },
-            "resizeNearestNeighbor": function () { },
-            "resizeNearestNeighborBackprop": function () { },
-            "reverse": function () { },
-            "round": function () { },
-            "rsqrt": function () { },
-            "scatterND": function () { },
-            "segOpCompute": function () { },
-            "select": function () { },
-            "selu": function () { },
-            "shallowSlice": function () { },
-            "shouldExecuteOnCPU": function () { },
-            "sigmoid": function () { },
-            "sign": function () { },
-            "sin": function () { },
-            "sinh": function () { },
-            "slice": function () { },
-            "softplus": function () { },
-            "spaceToBatchND": function () { },
-            "sparseToDense": function () { },
-            "split": function () { },
-            "sqrt": function () { },
-            "square": function () { },
-            "squaredDifference": function () { },
-            "startTimer": function () { },
-            "step": function () { },
-            "stridedSlice": function () { },
-            "subtract": function () { },
-            "sum": function () { },
-            "tan": function () { },
-            "tanh": function () { },
-            "texData": {
-              "backend": {},
-              "data": {},
-              "dataMover": {},
-              "delete": function () { },
-              "get": function () { },
-              "has": function () { },
-              "set": function () { }
-            },
-            "textureManager": {
-              "acquireTexture": function () { },
-              "closure_uid_20499601": {},
-              "dispose": function () { },
-              "freeTextures": {},
-              "getNumFreeTextures": function () { },
-              "getNumUsedTextures": function () { },
-              "gpgpu": {
-                "addItemToPoll": function () { },
-                "beginQuery": function () { },
-                "bindTextureToFrameBuffer": function () { },
-                "blockUntilAllProgramsCompleted": function () { },
-                "closure_uid_20499601": {},
-                "colorBufferFloatExtension": {},
-                "createAndWaitForFence": function () { },
-                "createBufferFromTexture": function () { },
-                "createFence": function () { },
-                "createFloat16MatrixTexture": function () { },
-                "createFloat16PackedMatrixTexture": function () { },
-                "createFloat32MatrixTexture": function () { },
-                "createPackedMatrixTexture": function () { },
-                "createProgram": function () { },
-                "createUnsignedBytesMatrixTexture": function () { },
-                "debug": {},
-                "debugValidate": function () { },
-                "deleteMatrixTexture": function () { },
-                "deleteProgram": function () { },
-                "dispose": function () { },
-                "disposed": {},
-                "downloadByteEncodedFloatMatrixFromOutputTexture": function () { },
-                "downloadFloat32MatrixFromBuffer": function () { },
-                "downloadMatrixDriver": function () { },
-                "downloadMatrixFromPackedTexture": function () { },
-                "downloadPackedMatrixFromBuffer": function () { },
-                "endQuery": function () { },
-                "executeProgram": function () { },
-                "framebuffer": {},
-                "getAttributeLocation": function () { },
-                "getQueryTime": function () { },
-                "getQueryTimerExtension": function () { },
-                "getQueryTimerExtensionWebGL1": function () { },
-                "getQueryTimerExtensionWebGL2": function () { },
-                "getUniformLocation": function () { },
-                "getUniformLocationNoThrow": function () { },
-                "gl": {
-                  "ACTIVE_ATTRIBUTES": {},
-                  "ACTIVE_TEXTURE": {},
-                  "ACTIVE_UNIFORMS": {},
-                  "ACTIVE_UNIFORM_BLOCKS": {},
-                  "ALIASED_LINE_WIDTH_RANGE": {},
-                  "ALIASED_POINT_SIZE_RANGE": {},
-                  "ALPHA": {},
-                  "ALPHA_BITS": {},
-                  "ALREADY_SIGNALED": {},
-                  "ALWAYS": {},
-                  "ANY_SAMPLES_PASSED": {},
-                  "ANY_SAMPLES_PASSED_CONSERVATIVE": {},
-                  "ARRAY_BUFFER": {},
-                  "ARRAY_BUFFER_BINDING": {},
-                  "ATTACHED_SHADERS": {},
-                  "BACK": {},
-                  "BLEND": {},
-                  "BLEND_COLOR": {},
-                  "BLEND_DST_ALPHA": {},
-                  "BLEND_DST_RGB": {},
-                  "BLEND_EQUATION": {},
-                  "BLEND_EQUATION_ALPHA": {},
-                  "BLEND_EQUATION_RGB": {},
-                  "BLEND_SRC_ALPHA": {},
-                  "BLEND_SRC_RGB": {},
-                  "BLUE_BITS": {},
-                  "BOOL": {},
-                  "BOOL_VEC2": {},
-                  "BOOL_VEC3": {},
-                  "BOOL_VEC4": {},
-                  "BROWSER_DEFAULT_WEBGL": {},
-                  "BUFFER_SIZE": {},
-                  "BUFFER_USAGE": {},
-                  "BYTE": {},
-                  "CCW": {},
-                  "CLAMP_TO_EDGE": {},
-                  "COLOR": {},
-                  "COLOR_ATTACHMENT0": {},
-                  "COLOR_ATTACHMENT1": {},
-                  "COLOR_ATTACHMENT10": {},
-                  "COLOR_ATTACHMENT11": {},
-                  "COLOR_ATTACHMENT12": {},
-                  "COLOR_ATTACHMENT13": {},
-                  "COLOR_ATTACHMENT14": {},
-                  "COLOR_ATTACHMENT15": {},
-                  "COLOR_ATTACHMENT2": {},
-                  "COLOR_ATTACHMENT3": {},
-                  "COLOR_ATTACHMENT4": {},
-                  "COLOR_ATTACHMENT5": {},
-                  "COLOR_ATTACHMENT6": {},
-                  "COLOR_ATTACHMENT7": {},
-                  "COLOR_ATTACHMENT8": {},
-                  "COLOR_ATTACHMENT9": {},
-                  "COLOR_BUFFER_BIT": {},
-                  "COLOR_CLEAR_VALUE": {},
-                  "COLOR_WRITEMASK": {},
-                  "COMPARE_REF_TO_TEXTURE": {},
-                  "COMPILE_STATUS": {},
-                  "COMPRESSED_TEXTURE_FORMATS": {},
-                  "CONDITION_SATISFIED": {},
-                  "CONSTANT_ALPHA": {},
-                  "CONSTANT_COLOR": {},
-                  "CONTEXT_LOST_WEBGL": {},
-                  "COPY_READ_BUFFER": {},
-                  "COPY_READ_BUFFER_BINDING": {},
-                  "COPY_WRITE_BUFFER": {},
-                  "COPY_WRITE_BUFFER_BINDING": {},
-                  "CULL_FACE": {},
-                  "CULL_FACE_MODE": {},
-                  "CURRENT_PROGRAM": {},
-                  "CURRENT_QUERY": {},
-                  "CURRENT_VERTEX_ATTRIB": {},
-                  "CW": {},
-                  "DECR": {},
-                  "DECR_WRAP": {},
-                  "DELETE_STATUS": {},
-                  "DEPTH": {},
-                  "DEPTH24_STENCIL8": {},
-                  "DEPTH32F_STENCIL8": {},
-                  "DEPTH_ATTACHMENT": {},
-                  "DEPTH_BITS": {},
-                  "DEPTH_BUFFER_BIT": {},
-                  "DEPTH_CLEAR_VALUE": {},
-                  "DEPTH_COMPONENT": {},
-                  "DEPTH_COMPONENT16": {},
-                  "DEPTH_COMPONENT24": {},
-                  "DEPTH_COMPONENT32F": {},
-                  "DEPTH_FUNC": {},
-                  "DEPTH_RANGE": {},
-                  "DEPTH_STENCIL": {},
-                  "DEPTH_STENCIL_ATTACHMENT": {},
-                  "DEPTH_TEST": {},
-                  "DEPTH_WRITEMASK": {},
-                  "DITHER": {},
-                  "DONT_CARE": {},
-                  "DRAW_BUFFER0": {},
-                  "DRAW_BUFFER1": {},
-                  "DRAW_BUFFER10": {},
-                  "DRAW_BUFFER11": {},
-                  "DRAW_BUFFER12": {},
-                  "DRAW_BUFFER13": {},
-                  "DRAW_BUFFER14": {},
-                  "DRAW_BUFFER15": {},
-                  "DRAW_BUFFER2": {},
-                  "DRAW_BUFFER3": {},
-                  "DRAW_BUFFER4": {},
-                  "DRAW_BUFFER5": {},
-                  "DRAW_BUFFER6": {},
-                  "DRAW_BUFFER7": {},
-                  "DRAW_BUFFER8": {},
-                  "DRAW_BUFFER9": {},
-                  "DRAW_FRAMEBUFFER": {},
-                  "DRAW_FRAMEBUFFER_BINDING": {},
-                  "DST_ALPHA": {},
-                  "DST_COLOR": {},
-                  "DYNAMIC_COPY": {},
-                  "DYNAMIC_DRAW": {},
-                  "DYNAMIC_READ": {},
-                  "ELEMENT_ARRAY_BUFFER": {},
-                  "ELEMENT_ARRAY_BUFFER_BINDING": {},
-                  "EQUAL": {},
-                  "FASTEST": {},
-                  "FLOAT": {},
-                  "FLOAT_32_UNSIGNED_INT_24_8_REV": {},
-                  "FLOAT_MAT2": {},
-                  "FLOAT_MAT2x3": {},
-                  "FLOAT_MAT2x4": {},
-                  "FLOAT_MAT3": {},
-                  "FLOAT_MAT3x2": {},
-                  "FLOAT_MAT3x4": {},
-                  "FLOAT_MAT4": {},
-                  "FLOAT_MAT4x2": {},
-                  "FLOAT_MAT4x3": {},
-                  "FLOAT_VEC2": {},
-                  "FLOAT_VEC3": {},
-                  "FLOAT_VEC4": {},
-                  "FRAGMENT_SHADER": {},
-                  "FRAGMENT_SHADER_DERIVATIVE_HINT": {},
-                  "FRAMEBUFFER": {},
-                  "FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE": {},
-                  "FRAMEBUFFER_ATTACHMENT_BLUE_SIZE": {},
-                  "FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING": {},
-                  "FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE": {},
-                  "FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE": {},
-                  "FRAMEBUFFER_ATTACHMENT_GREEN_SIZE": {},
-                  "FRAMEBUFFER_ATTACHMENT_OBJECT_NAME": {},
-                  "FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE": {},
-                  "FRAMEBUFFER_ATTACHMENT_RED_SIZE": {},
-                  "FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE": {},
-                  "FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE": {},
-                  "FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER": {},
-                  "FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL": {},
-                  "FRAMEBUFFER_BINDING": {},
-                  "FRAMEBUFFER_COMPLETE": {},
-                  "FRAMEBUFFER_DEFAULT": {},
-                  "FRAMEBUFFER_INCOMPLETE_ATTACHMENT": {},
-                  "FRAMEBUFFER_INCOMPLETE_DIMENSIONS": {},
-                  "FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT": {},
-                  "FRAMEBUFFER_INCOMPLETE_MULTISAMPLE": {},
-                  "FRAMEBUFFER_UNSUPPORTED": {},
-                  "FRONT": {},
-                  "FRONT_AND_BACK": {},
-                  "FRONT_FACE": {},
-                  "FUNC_ADD": {},
-                  "FUNC_REVERSE_SUBTRACT": {},
-                  "FUNC_SUBTRACT": {},
-                  "GENERATE_MIPMAP_HINT": {},
-                  "GEQUAL": {},
-                  "GREATER": {},
-                  "GREEN_BITS": {},
-                  "HALF_FLOAT": {},
-                  "HIGH_FLOAT": {},
-                  "HIGH_INT": {},
-                  "IMPLEMENTATION_COLOR_READ_FORMAT": {},
-                  "IMPLEMENTATION_COLOR_READ_TYPE": {},
-                  "INCR": {},
-                  "INCR_WRAP": {},
-                  "INT": {},
-                  "INTERLEAVED_ATTRIBS": {},
-                  "INT_2_10_10_10_REV": {},
-                  "INT_SAMPLER_2D": {},
-                  "INT_SAMPLER_2D_ARRAY": {},
-                  "INT_SAMPLER_3D": {},
-                  "INT_SAMPLER_CUBE": {},
-                  "INT_VEC2": {},
-                  "INT_VEC3": {},
-                  "INT_VEC4": {},
-                  "INVALID_ENUM": {},
-                  "INVALID_FRAMEBUFFER_OPERATION": {},
-                  "INVALID_INDEX": {},
-                  "INVALID_OPERATION": {},
-                  "INVALID_VALUE": {},
-                  "INVERT": {},
-                  "KEEP": {},
-                  "LEQUAL": {},
-                  "LESS": {},
-                  "LINEAR": {},
-                  "LINEAR_MIPMAP_LINEAR": {},
-                  "LINEAR_MIPMAP_NEAREST": {},
-                  "LINES": {},
-                  "LINE_LOOP": {},
-                  "LINE_STRIP": {},
-                  "LINE_WIDTH": {},
-                  "LINK_STATUS": {},
-                  "LOW_FLOAT": {},
-                  "LOW_INT": {},
-                  "LUMINANCE": {},
-                  "LUMINANCE_ALPHA": {},
-                  "MAX": {},
-                  "MAX_3D_TEXTURE_SIZE": {},
-                  "MAX_ARRAY_TEXTURE_LAYERS": {},
-                  "MAX_CLIENT_WAIT_TIMEOUT_WEBGL": {},
-                  "MAX_COLOR_ATTACHMENTS": {},
-                  "MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS": {},
-                  "MAX_COMBINED_TEXTURE_IMAGE_UNITS": {},
-                  "MAX_COMBINED_UNIFORM_BLOCKS": {},
-                  "MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS": {},
-                  "MAX_CUBE_MAP_TEXTURE_SIZE": {},
-                  "MAX_DRAW_BUFFERS": {},
-                  "MAX_ELEMENTS_INDICES": {},
-                  "MAX_ELEMENTS_VERTICES": {},
-                  "MAX_ELEMENT_INDEX": {},
-                  "MAX_FRAGMENT_INPUT_COMPONENTS": {},
-                  "MAX_FRAGMENT_UNIFORM_BLOCKS": {},
-                  "MAX_FRAGMENT_UNIFORM_COMPONENTS": {},
-                  "MAX_FRAGMENT_UNIFORM_VECTORS": {},
-                  "MAX_PROGRAM_TEXEL_OFFSET": {},
-                  "MAX_RENDERBUFFER_SIZE": {},
-                  "MAX_SAMPLES": {},
-                  "MAX_SERVER_WAIT_TIMEOUT": {},
-                  "MAX_TEXTURE_IMAGE_UNITS": {},
-                  "MAX_TEXTURE_LOD_BIAS": {},
-                  "MAX_TEXTURE_SIZE": {},
-                  "MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS": {},
-                  "MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS": {},
-                  "MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS": {},
-                  "MAX_UNIFORM_BLOCK_SIZE": {},
-                  "MAX_UNIFORM_BUFFER_BINDINGS": {},
-                  "MAX_VARYING_COMPONENTS": {},
-                  "MAX_VARYING_VECTORS": {},
-                  "MAX_VERTEX_ATTRIBS": {},
-                  "MAX_VERTEX_OUTPUT_COMPONENTS": {},
-                  "MAX_VERTEX_TEXTURE_IMAGE_UNITS": {},
-                  "MAX_VERTEX_UNIFORM_BLOCKS": {},
-                  "MAX_VERTEX_UNIFORM_COMPONENTS": {},
-                  "MAX_VERTEX_UNIFORM_VECTORS": {},
-                  "MAX_VIEWPORT_DIMS": {},
-                  "MEDIUM_FLOAT": {},
-                  "MEDIUM_INT": {},
-                  "MIN": {},
-                  "MIN_PROGRAM_TEXEL_OFFSET": {},
-                  "MIRRORED_REPEAT": {},
-                  "NEAREST": {},
-                  "NEAREST_MIPMAP_LINEAR": {},
-                  "NEAREST_MIPMAP_NEAREST": {},
-                  "NEVER": {},
-                  "NICEST": {},
-                  "NONE": {},
-                  "NOTEQUAL": {},
-                  "NO_ERROR": {},
-                  "OBJECT_TYPE": {},
-                  "ONE": {},
-                  "ONE_MINUS_CONSTANT_ALPHA": {},
-                  "ONE_MINUS_CONSTANT_COLOR": {},
-                  "ONE_MINUS_DST_ALPHA": {},
-                  "ONE_MINUS_DST_COLOR": {},
-                  "ONE_MINUS_SRC_ALPHA": {},
-                  "ONE_MINUS_SRC_COLOR": {},
-                  "OUT_OF_MEMORY": {},
-                  "PACK_ALIGNMENT": {},
-                  "PACK_ROW_LENGTH": {},
-                  "PACK_SKIP_PIXELS": {},
-                  "PACK_SKIP_ROWS": {},
-                  "PIXEL_PACK_BUFFER": {},
-                  "PIXEL_PACK_BUFFER_BINDING": {},
-                  "PIXEL_UNPACK_BUFFER": {},
-                  "PIXEL_UNPACK_BUFFER_BINDING": {},
-                  "POINTS": {},
-                  "POLYGON_OFFSET_FACTOR": {},
-                  "POLYGON_OFFSET_FILL": {},
-                  "POLYGON_OFFSET_UNITS": {},
-                  "QUERY_RESULT": {},
-                  "QUERY_RESULT_AVAILABLE": {},
-                  "R11F_G11F_B10F": {},
-                  "R16F": {},
-                  "R16I": {},
-                  "R16UI": {},
-                  "R32F": {},
-                  "R32I": {},
-                  "R32UI": {},
-                  "R8": {},
-                  "R8I": {},
-                  "R8UI": {},
-                  "R8_SNORM": {},
-                  "RASTERIZER_DISCARD": {},
-                  "READ_BUFFER": {},
-                  "READ_FRAMEBUFFER": {},
-                  "READ_FRAMEBUFFER_BINDING": {},
-                  "RED": {},
-                  "RED_BITS": {},
-                  "RED_INTEGER": {},
-                  "RENDERBUFFER": {},
-                  "RENDERBUFFER_ALPHA_SIZE": {},
-                  "RENDERBUFFER_BINDING": {},
-                  "RENDERBUFFER_BLUE_SIZE": {},
-                  "RENDERBUFFER_DEPTH_SIZE": {},
-                  "RENDERBUFFER_GREEN_SIZE": {},
-                  "RENDERBUFFER_HEIGHT": {},
-                  "RENDERBUFFER_INTERNAL_FORMAT": {},
-                  "RENDERBUFFER_RED_SIZE": {},
-                  "RENDERBUFFER_SAMPLES": {},
-                  "RENDERBUFFER_STENCIL_SIZE": {},
-                  "RENDERBUFFER_WIDTH": {},
-                  "RENDERER": {},
-                  "REPEAT": {},
-                  "REPLACE": {},
-                  "RG": {},
-                  "RG16F": {},
-                  "RG16I": {},
-                  "RG16UI": {},
-                  "RG32F": {},
-                  "RG32I": {},
-                  "RG32UI": {},
-                  "RG8": {},
-                  "RG8I": {},
-                  "RG8UI": {},
-                  "RG8_SNORM": {},
-                  "RGB": {},
-                  "RGB10_A2": {},
-                  "RGB10_A2UI": {},
-                  "RGB16F": {},
-                  "RGB16I": {},
-                  "RGB16UI": {},
-                  "RGB32F": {},
-                  "RGB32I": {},
-                  "RGB32UI": {},
-                  "RGB565": {},
-                  "RGB5_A1": {},
-                  "RGB8": {},
-                  "RGB8I": {},
-                  "RGB8UI": {},
-                  "RGB8_SNORM": {},
-                  "RGB9_E5": {},
-                  "RGBA": {},
-                  "RGBA16F": {},
-                  "RGBA16I": {},
-                  "RGBA16UI": {},
-                  "RGBA32F": {},
-                  "RGBA32I": {},
-                  "RGBA32UI": {},
-                  "RGBA4": {},
-                  "RGBA8": {},
-                  "RGBA8I": {},
-                  "RGBA8UI": {},
-                  "RGBA8_SNORM": {},
-                  "RGBA_INTEGER": {},
-                  "RGB_INTEGER": {},
-                  "RG_INTEGER": {},
-                  "SAMPLER_2D": {},
-                  "SAMPLER_2D_ARRAY": {},
-                  "SAMPLER_2D_ARRAY_SHADOW": {},
-                  "SAMPLER_2D_SHADOW": {},
-                  "SAMPLER_3D": {},
-                  "SAMPLER_BINDING": {},
-                  "SAMPLER_CUBE": {},
-                  "SAMPLER_CUBE_SHADOW": {},
-                  "SAMPLES": {},
-                  "SAMPLE_ALPHA_TO_COVERAGE": {},
-                  "SAMPLE_BUFFERS": {},
-                  "SAMPLE_COVERAGE": {},
-                  "SAMPLE_COVERAGE_INVERT": {},
-                  "SAMPLE_COVERAGE_VALUE": {},
-                  "SCISSOR_BOX": {},
-                  "SCISSOR_TEST": {},
-                  "SEPARATE_ATTRIBS": {},
-                  "SHADER_TYPE": {},
-                  "SHADING_LANGUAGE_VERSION": {},
-                  "SHORT": {},
-                  "SIGNALED": {},
-                  "SIGNED_NORMALIZED": {},
-                  "SRC_ALPHA": {},
-                  "SRC_ALPHA_SATURATE": {},
-                  "SRC_COLOR": {},
-                  "SRGB": {},
-                  "SRGB8": {},
-                  "SRGB8_ALPHA8": {},
-                  "STATIC_COPY": {},
-                  "STATIC_DRAW": {},
-                  "STATIC_READ": {},
-                  "STENCIL": {},
-                  "STENCIL_ATTACHMENT": {},
-                  "STENCIL_BACK_FAIL": {},
-                  "STENCIL_BACK_FUNC": {},
-                  "STENCIL_BACK_PASS_DEPTH_FAIL": {},
-                  "STENCIL_BACK_PASS_DEPTH_PASS": {},
-                  "STENCIL_BACK_REF": {},
-                  "STENCIL_BACK_VALUE_MASK": {},
-                  "STENCIL_BACK_WRITEMASK": {},
-                  "STENCIL_BITS": {},
-                  "STENCIL_BUFFER_BIT": {},
-                  "STENCIL_CLEAR_VALUE": {},
-                  "STENCIL_FAIL": {},
-                  "STENCIL_FUNC": {},
-                  "STENCIL_INDEX8": {},
-                  "STENCIL_PASS_DEPTH_FAIL": {},
-                  "STENCIL_PASS_DEPTH_PASS": {},
-                  "STENCIL_REF": {},
-                  "STENCIL_TEST": {},
-                  "STENCIL_VALUE_MASK": {},
-                  "STENCIL_WRITEMASK": {},
-                  "STREAM_COPY": {},
-                  "STREAM_DRAW": {},
-                  "STREAM_READ": {},
-                  "SUBPIXEL_BITS": {},
-                  "SYNC_CONDITION": {},
-                  "SYNC_FENCE": {},
-                  "SYNC_FLAGS": {},
-                  "SYNC_FLUSH_COMMANDS_BIT": {},
-                  "SYNC_GPU_COMMANDS_COMPLETE": {},
-                  "SYNC_STATUS": {},
-                  "TEXTURE": {},
-                  "TEXTURE0": {},
-                  "TEXTURE1": {},
-                  "TEXTURE10": {},
-                  "TEXTURE11": {},
-                  "TEXTURE12": {},
-                  "TEXTURE13": {},
-                  "TEXTURE14": {},
-                  "TEXTURE15": {},
-                  "TEXTURE16": {},
-                  "TEXTURE17": {},
-                  "TEXTURE18": {},
-                  "TEXTURE19": {},
-                  "TEXTURE2": {},
-                  "TEXTURE20": {},
-                  "TEXTURE21": {},
-                  "TEXTURE22": {},
-                  "TEXTURE23": {},
-                  "TEXTURE24": {},
-                  "TEXTURE25": {},
-                  "TEXTURE26": {},
-                  "TEXTURE27": {},
-                  "TEXTURE28": {},
-                  "TEXTURE29": {},
-                  "TEXTURE3": {},
-                  "TEXTURE30": {},
-                  "TEXTURE31": {},
-                  "TEXTURE4": {},
-                  "TEXTURE5": {},
-                  "TEXTURE6": {},
-                  "TEXTURE7": {},
-                  "TEXTURE8": {},
-                  "TEXTURE9": {},
-                  "TEXTURE_2D": {},
-                  "TEXTURE_2D_ARRAY": {},
-                  "TEXTURE_3D": {},
-                  "TEXTURE_BASE_LEVEL": {},
-                  "TEXTURE_BINDING_2D": {},
-                  "TEXTURE_BINDING_2D_ARRAY": {},
-                  "TEXTURE_BINDING_3D": {},
-                  "TEXTURE_BINDING_CUBE_MAP": {},
-                  "TEXTURE_COMPARE_FUNC": {},
-                  "TEXTURE_COMPARE_MODE": {},
-                  "TEXTURE_CUBE_MAP": {},
-                  "TEXTURE_CUBE_MAP_NEGATIVE_X": {},
-                  "TEXTURE_CUBE_MAP_NEGATIVE_Y": {},
-                  "TEXTURE_CUBE_MAP_NEGATIVE_Z": {},
-                  "TEXTURE_CUBE_MAP_POSITIVE_X": {},
-                  "TEXTURE_CUBE_MAP_POSITIVE_Y": {},
-                  "TEXTURE_CUBE_MAP_POSITIVE_Z": {},
-                  "TEXTURE_IMMUTABLE_FORMAT": {},
-                  "TEXTURE_IMMUTABLE_LEVELS": {},
-                  "TEXTURE_MAG_FILTER": {},
-                  "TEXTURE_MAX_LEVEL": {},
-                  "TEXTURE_MAX_LOD": {},
-                  "TEXTURE_MIN_FILTER": {},
-                  "TEXTURE_MIN_LOD": {},
-                  "TEXTURE_WRAP_R": {},
-                  "TEXTURE_WRAP_S": {},
-                  "TEXTURE_WRAP_T": {},
-                  "TIMEOUT_EXPIRED": {},
-                  "TIMEOUT_IGNORED": {},
-                  "TRANSFORM_FEEDBACK": {},
-                  "TRANSFORM_FEEDBACK_ACTIVE": {},
-                  "TRANSFORM_FEEDBACK_BINDING": {},
-                  "TRANSFORM_FEEDBACK_BUFFER": {},
-                  "TRANSFORM_FEEDBACK_BUFFER_BINDING": {},
-                  "TRANSFORM_FEEDBACK_BUFFER_MODE": {},
-                  "TRANSFORM_FEEDBACK_BUFFER_SIZE": {},
-                  "TRANSFORM_FEEDBACK_BUFFER_START": {},
-                  "TRANSFORM_FEEDBACK_PAUSED": {},
-                  "TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN": {},
-                  "TRANSFORM_FEEDBACK_VARYINGS": {},
-                  "TRIANGLES": {},
-                  "TRIANGLE_FAN": {},
-                  "TRIANGLE_STRIP": {},
-                  "UNIFORM_ARRAY_STRIDE": {},
-                  "UNIFORM_BLOCK_ACTIVE_UNIFORMS": {},
-                  "UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES": {},
-                  "UNIFORM_BLOCK_BINDING": {},
-                  "UNIFORM_BLOCK_DATA_SIZE": {},
-                  "UNIFORM_BLOCK_INDEX": {},
-                  "UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER": {},
-                  "UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER": {},
-                  "UNIFORM_BUFFER": {},
-                  "UNIFORM_BUFFER_BINDING": {},
-                  "UNIFORM_BUFFER_OFFSET_ALIGNMENT": {},
-                  "UNIFORM_BUFFER_SIZE": {},
-                  "UNIFORM_BUFFER_START": {},
-                  "UNIFORM_IS_ROW_MAJOR": {},
-                  "UNIFORM_MATRIX_STRIDE": {},
-                  "UNIFORM_OFFSET": {},
-                  "UNIFORM_SIZE": {},
-                  "UNIFORM_TYPE": {},
-                  "UNPACK_ALIGNMENT": {},
-                  "UNPACK_COLORSPACE_CONVERSION_WEBGL": {},
-                  "UNPACK_FLIP_Y_WEBGL": {},
-                  "UNPACK_IMAGE_HEIGHT": {},
-                  "UNPACK_PREMULTIPLY_ALPHA_WEBGL": {},
-                  "UNPACK_ROW_LENGTH": {},
-                  "UNPACK_SKIP_IMAGES": {},
-                  "UNPACK_SKIP_PIXELS": {},
-                  "UNPACK_SKIP_ROWS": {},
-                  "UNSIGNALED": {},
-                  "UNSIGNED_BYTE": {},
-                  "UNSIGNED_INT": {},
-                  "UNSIGNED_INT_10F_11F_11F_REV": {},
-                  "UNSIGNED_INT_24_8": {},
-                  "UNSIGNED_INT_2_10_10_10_REV": {},
-                  "UNSIGNED_INT_5_9_9_9_REV": {},
-                  "UNSIGNED_INT_SAMPLER_2D": {},
-                  "UNSIGNED_INT_SAMPLER_2D_ARRAY": {},
-                  "UNSIGNED_INT_SAMPLER_3D": {},
-                  "UNSIGNED_INT_SAMPLER_CUBE": {},
-                  "UNSIGNED_INT_VEC2": {},
-                  "UNSIGNED_INT_VEC3": {},
-                  "UNSIGNED_INT_VEC4": {},
-                  "UNSIGNED_NORMALIZED": {},
-                  "UNSIGNED_SHORT": {},
-                  "UNSIGNED_SHORT_4_4_4_4": {},
-                  "UNSIGNED_SHORT_5_5_5_1": {},
-                  "UNSIGNED_SHORT_5_6_5": {},
-                  "VALIDATE_STATUS": {},
-                  "VENDOR": {},
-                  "VERSION": {},
-                  "VERTEX_ARRAY_BINDING": {},
-                  "VERTEX_ATTRIB_ARRAY_BUFFER_BINDING": {},
-                  "VERTEX_ATTRIB_ARRAY_DIVISOR": {},
-                  "VERTEX_ATTRIB_ARRAY_ENABLED": {},
-                  "VERTEX_ATTRIB_ARRAY_INTEGER": {},
-                  "VERTEX_ATTRIB_ARRAY_NORMALIZED": {},
-                  "VERTEX_ATTRIB_ARRAY_POINTER": {},
-                  "VERTEX_ATTRIB_ARRAY_SIZE": {},
-                  "VERTEX_ATTRIB_ARRAY_STRIDE": {},
-                  "VERTEX_ATTRIB_ARRAY_TYPE": {},
-                  "VERTEX_SHADER": {},
-                  "VIEWPORT": {},
-                  "WAIT_FAILED": {},
-                  "ZERO": {},
-                  "activeTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "attachShader": {
-                    "closure_uid_20499601": {}
-                  },
-                  "beginQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "beginTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindAttribLocation": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindBufferBase": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindBufferRange": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindRenderbuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindSampler": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindVertexArray": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blendColor": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blendEquation": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blendEquationSeparate": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blendFunc": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blendFuncSeparate": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blitFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bufferData": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bufferSubData": {
-                    "closure_uid_20499601": {}
-                  },
-                  "canvas": {
-                    "addEventListener": {
-                      "closure_uid_20499601": {}
-                    },
-                    "closure_uid_20499601": {},
-                    "convertToBlob": {
-                      "closure_uid_20499601": {}
-                    },
-                    "dispatchEvent": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getContext": {
-                      "closure_uid_20499601": {}
-                    },
-                    "height": {},
-                    "removeEventListener": {
-                      "closure_uid_20499601": {}
-                    },
-                    "transferToImageBitmap": {
-                      "closure_uid_20499601": {}
-                    },
-                    "width": {}
-                  },
-                  "checkFramebufferStatus": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clear": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearBufferfi": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearBufferfv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearBufferiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearBufferuiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearColor": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearDepth": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearStencil": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clientWaitSync": {
-                    "closure_uid_20499601": {}
-                  },
-                  "closure_uid_20499601": {},
-                  "colorMask": {
-                    "closure_uid_20499601": {}
-                  },
-                  "compileShader": {
-                    "closure_uid_20499601": {}
-                  },
-                  "compressedTexImage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "compressedTexImage3D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "compressedTexSubImage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "compressedTexSubImage3D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "copyBufferSubData": {
-                    "closure_uid_20499601": {}
-                  },
-                  "copyTexImage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "copyTexSubImage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "copyTexSubImage3D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createRenderbuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createSampler": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createShader": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createVertexArray": {
-                    "closure_uid_20499601": {}
-                  },
-                  "cullFace": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteRenderbuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteSampler": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteShader": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteSync": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteVertexArray": {
-                    "closure_uid_20499601": {}
-                  },
-                  "depthFunc": {
-                    "closure_uid_20499601": {}
-                  },
-                  "depthMask": {
-                    "closure_uid_20499601": {}
-                  },
-                  "depthRange": {
-                    "closure_uid_20499601": {}
-                  },
-                  "detachShader": {
-                    "closure_uid_20499601": {}
-                  },
-                  "disable": {
-                    "closure_uid_20499601": {}
-                  },
-                  "disableVertexAttribArray": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawArrays": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawArraysInstanced": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawBuffers": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawElements": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawElementsInstanced": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawRangeElements": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawingBufferHeight": {},
-                  "drawingBufferWidth": {},
-                  "enable": {
-                    "closure_uid_20499601": {}
-                  },
-                  "enableVertexAttribArray": {
-                    "closure_uid_20499601": {}
-                  },
-                  "endQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "endTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "fenceSync": {
-                    "closure_uid_20499601": {}
-                  },
-                  "finish": {
-                    "closure_uid_20499601": {}
-                  },
-                  "flush": {
-                    "closure_uid_20499601": {}
-                  },
-                  "framebufferRenderbuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "framebufferTexture2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "framebufferTextureLayer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "frontFace": {
-                    "closure_uid_20499601": {}
-                  },
-                  "generateMipmap": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getActiveAttrib": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getActiveUniform": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getActiveUniformBlockName": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getActiveUniformBlockParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getActiveUniforms": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getAttachedShaders": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getAttribLocation": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getBufferParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getBufferSubData": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getContextAttributes": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getError": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getExtension": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getFragDataLocation": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getFramebufferAttachmentParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getIndexedParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getInternalformatParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getProgramInfoLog": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getProgramParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getQueryParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getRenderbufferParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getSamplerParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getShaderInfoLog": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getShaderParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getShaderPrecisionFormat": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getShaderSource": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getSupportedExtensions": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getSyncParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getTexParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getTransformFeedbackVarying": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getUniform": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getUniformBlockIndex": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getUniformIndices": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getUniformLocation": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getVertexAttrib": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getVertexAttribOffset": {
-                    "closure_uid_20499601": {}
-                  },
-                  "hint": {
-                    "closure_uid_20499601": {}
-                  },
-                  "invalidateFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "invalidateSubFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isContextLost": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isEnabled": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isRenderbuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isSampler": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isShader": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isSync": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isVertexArray": {
-                    "closure_uid_20499601": {}
-                  },
-                  "lineWidth": {
-                    "closure_uid_20499601": {}
-                  },
-                  "linkProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "pauseTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "pixelStorei": {
-                    "closure_uid_20499601": {}
-                  },
-                  "polygonOffset": {
-                    "closure_uid_20499601": {}
-                  },
-                  "readBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "readPixels": {
-                    "closure_uid_20499601": {}
-                  },
-                  "renderbufferStorage": {
-                    "closure_uid_20499601": {}
-                  },
-                  "renderbufferStorageMultisample": {
-                    "closure_uid_20499601": {}
-                  },
-                  "resumeTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "sampleCoverage": {
-                    "closure_uid_20499601": {}
-                  },
-                  "samplerParameterf": {
-                    "closure_uid_20499601": {}
-                  },
-                  "samplerParameteri": {
-                    "closure_uid_20499601": {}
-                  },
-                  "scissor": {
-                    "closure_uid_20499601": {}
-                  },
-                  "shaderSource": {
-                    "closure_uid_20499601": {}
-                  },
-                  "stencilFunc": {
-                    "closure_uid_20499601": {}
-                  },
-                  "stencilFuncSeparate": {
-                    "closure_uid_20499601": {}
-                  },
-                  "stencilMask": {
-                    "closure_uid_20499601": {}
-                  },
-                  "stencilMaskSeparate": {
-                    "closure_uid_20499601": {}
-                  },
-                  "stencilOp": {
-                    "closure_uid_20499601": {}
-                  },
-                  "stencilOpSeparate": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texImage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texImage3D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texParameterf": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texParameteri": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texStorage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texStorage3D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texSubImage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texSubImage3D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "transformFeedbackVaryings": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform1f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform1fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform1i": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform1iv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform1ui": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform1uiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform2f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform2fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform2i": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform2iv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform2ui": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform2uiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform3f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform3fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform3i": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform3iv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform3ui": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform3uiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform4f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform4fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform4i": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform4iv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform4ui": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform4uiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformBlockBinding": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix2fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix2x3fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix2x4fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix3fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix3x2fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix3x4fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix4fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix4x2fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix4x3fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "useProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "validateProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib1f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib1fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib2f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib2fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib3f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib3fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib4f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib4fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribDivisor": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribI4i": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribI4iv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribI4ui": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribI4uiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribIPointer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribPointer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "viewport": {
-                    "closure_uid_20499601": {}
-                  },
-                  "waitSync": {
-                    "closure_uid_20499601": {}
-                  }
-                },
-                "indexBuffer": {},
-                "isQueryAvailable": function () { },
-                "itemsToPoll": {},
-                "outputTexture": {},
-                "pollFence": function () { },
-                "pollItems": function () { },
-                "program": {},
-                "setInputMatrixTexture": function () { },
-                "setOutputMatrixTexture": function () { },
-                "setOutputMatrixTextureDriver": function () { },
-                "setOutputMatrixWriteRegion": function () { },
-                "setOutputMatrixWriteRegionDriver": function () { },
-                "setOutputPackedMatrixTexture": function () { },
-                "setOutputPackedMatrixWriteRegion": function () { },
-                "setProgram": function () { },
-                "textureConfig": {
-                  "defaultNumChannels": {},
-                  "downloadTextureFormat": {},
-                  "downloadUnpackNumChannels": {},
-                  "internalFormatFloat": {},
-                  "internalFormatHalfFloat": {},
-                  "internalFormatPackedFloat": {},
-                  "internalFormatPackedHalfFloat": {},
-                  "textureFormatFloat": {},
-                  "textureTypeFloat": {},
-                  "textureTypeHalfFloat": {}
-                },
-                "throwIfDisposed": function () { },
-                "throwIfNoProgram": function () { },
-                "unbindTextureToFrameBuffer": function () { },
-                "uploadDenseMatrixToTexture": function () { },
-                "uploadPixelDataToTexture": function () { },
-                "vertexAttrsAreBound": {},
-                "vertexBuffer": {},
-                "waitForQueryAndGetTime": function () { }
-              },
-              "log": function () { },
-              "logEnabled": {},
-              "numFreeTextures": {},
-              "numUsedTextures": {},
-              "releaseTexture": function () { },
-              "usedTextures": {}
-            },
-            "tile": function () { },
-            "time": function () { },
-            "topk": function () { },
-            "transpose": function () { },
-            "unpackTensor": function () { },
-            "unsortedSegmentSum": function () { },
-            "unstack": function () { },
-            "uploadToGPU": function () { },
-            "uploadWaitMs": {},
-            "warnedAboutMemory": {},
-            "where": function () { },
-            "write": function () { },
-            "zerosLike": function () { }
-          },
-          "backendName": {},
-          "backendNames": function () { },
-          "clone": function () { },
-          "closure_uid_20499601": {},
-          "customGrad": function () { },
-          "disposeTensor": function () { },
-          "disposeVariable": function () { },
-          "disposeVariables": function () { },
-          "endScope": function () { },
-          "endTape": function () { },
-          "findBackend": function () { },
-          "findBackendFactory": function () { },
-          "fromPixels": function () { },
-          "getSortedBackends": function () { },
-          "gradients": function () { },
-          "initializeBackend": function () { },
-          "initializeBackendsAndReturnBest": function () { },
-          "isTapeOn": function () { },
-          "keep": function () { },
-          "memory": function () { },
-          "moveData": function () { },
-          "nextTensorId": function () { },
-          "nextVariableId": function () { },
-          "pendingBackendInitId": {},
-          "profile": function () { },
-          "profiler": {
-            "backendTimer": {
-              "LRNGrad": function () { },
-              "abs": function () { },
-              "acos": function () { },
-              "acosh": function () { },
-              "acquireTexture": function () { },
-              "add": function () { },
-              "addN": function () { },
-              "all": function () { },
-              "any": function () { },
-              "argMax": function () { },
-              "argMin": function () { },
-              "argMinMaxReduce": function () { },
-              "argReduce": function () { },
-              "argReducePacked": function () { },
-              "asin": function () { },
-              "asinh": function () { },
-              "atan": function () { },
-              "atan2": function () { },
-              "atanh": function () { },
-              "avgPool": function () { },
-              "avgPool3d": function () { },
-              "avgPool3dBackprop": function () { },
-              "avgPoolBackprop": function () { },
-              "batchMatMul": function () { },
-              "batchNormalization": function () { },
-              "batchToSpaceND": function () { },
-              "binaryCache": {},
-              "canvas": {
-                "addEventListener": {
-                  "closure_uid_20499601": {}
-                },
-                "closure_uid_20499601": {},
-                "convertToBlob": {
-                  "closure_uid_20499601": {}
-                },
-                "dispatchEvent": {
-                  "closure_uid_20499601": {}
-                },
-                "getContext": {
-                  "closure_uid_20499601": {}
-                },
-                "height": {},
-                "removeEventListener": {
-                  "closure_uid_20499601": {}
-                },
-                "transferToImageBitmap": {
-                  "closure_uid_20499601": {}
-                },
-                "width": {}
-              },
-              "cast": function () { },
-              "ceil": function () { },
-              "clip": function () { },
-              "closure_uid_20499601": {},
-              "compileAndRun": function () { },
-              "complex": function () { },
-              "complexAbs": function () { },
-              "complexSeparableBinaryOp": function () { },
-              "computeBytes": function () { },
-              "concat": function () { },
-              "conv2d": function () { },
-              "conv2dByMatMul": function () { },
-              "conv2dDerFilter": function () { },
-              "conv2dDerInput": function () { },
-              "conv2dWithIm2Row": function () { },
-              "conv3d": function () { },
-              "conv3dDerFilter": function () { },
-              "conv3dDerInput": function () { },
-              "convertAndCacheOnCPU": function () { },
-              "cos": function () { },
-              "cosh": function () { },
-              "cropAndResize": function () { },
-              "cumsum": function () { },
-              "dataRefCount": {},
-              "decode": function () { },
-              "depthToSpace": function () { },
-              "depthwiseConv2D": function () { },
-              "depthwiseConv2DDerFilter": function () { },
-              "depthwiseConv2DDerInput": function () { },
-              "diag": function () { },
-              "dispose": function () { },
-              "disposeData": function () { },
-              "disposed": {},
-              "downloadWaitMs": {},
-              "elu": function () { },
-              "eluDer": function () { },
-              "endTimer": function () { },
-              "epsilon": function () { },
-              "equal": function () { },
-              "erf": function () { },
-              "exp": function () { },
-              "expm1": function () { },
-              "fft": function () { },
-              "fftImpl": function () { },
-              "fill": function () { },
-              "floatPrecision": function () { },
-              "floor": function () { },
-              "floorDiv": function () { },
-              "fromPixels": function () { },
-              "fusedBatchMatMul": function () { },
-              "fusedConv2d": function () { },
-              "gather": function () { },
-              "gatherND": function () { },
-              "getAndSaveBinary": function () { },
-              "getCPUBackend": function () { },
-              "getDataInfo": function () { },
-              "getGPGPUContext": function () { },
-              "getQueryTime": function () { },
-              "getTexture": function () { },
-              "getTextureManager": function () { },
-              "getValuesFromTexture": function () { },
-              "gpgpu": {
-                "addItemToPoll": function () { },
-                "beginQuery": function () { },
-                "bindTextureToFrameBuffer": function () { },
-                "blockUntilAllProgramsCompleted": function () { },
-                "closure_uid_20499601": {},
-                "colorBufferFloatExtension": {},
-                "createAndWaitForFence": function () { },
-                "createBufferFromTexture": function () { },
-                "createFence": function () { },
-                "createFloat16MatrixTexture": function () { },
-                "createFloat16PackedMatrixTexture": function () { },
-                "createFloat32MatrixTexture": function () { },
-                "createPackedMatrixTexture": function () { },
-                "createProgram": function () { },
-                "createUnsignedBytesMatrixTexture": function () { },
-                "debug": {},
-                "debugValidate": function () { },
-                "deleteMatrixTexture": function () { },
-                "deleteProgram": function () { },
-                "dispose": function () { },
-                "disposed": {},
-                "downloadByteEncodedFloatMatrixFromOutputTexture": function () { },
-                "downloadFloat32MatrixFromBuffer": function () { },
-                "downloadMatrixDriver": function () { },
-                "downloadMatrixFromPackedTexture": function () { },
-                "downloadPackedMatrixFromBuffer": function () { },
-                "endQuery": function () { },
-                "executeProgram": function () { },
-                "framebuffer": {},
-                "getAttributeLocation": function () { },
-                "getQueryTime": function () { },
-                "getQueryTimerExtension": function () { },
-                "getQueryTimerExtensionWebGL1": function () { },
-                "getQueryTimerExtensionWebGL2": function () { },
-                "getUniformLocation": function () { },
-                "getUniformLocationNoThrow": function () { },
-                "gl": {
-                  "ACTIVE_ATTRIBUTES": {},
-                  "ACTIVE_TEXTURE": {},
-                  "ACTIVE_UNIFORMS": {},
-                  "ACTIVE_UNIFORM_BLOCKS": {},
-                  "ALIASED_LINE_WIDTH_RANGE": {},
-                  "ALIASED_POINT_SIZE_RANGE": {},
-                  "ALPHA": {},
-                  "ALPHA_BITS": {},
-                  "ALREADY_SIGNALED": {},
-                  "ALWAYS": {},
-                  "ANY_SAMPLES_PASSED": {},
-                  "ANY_SAMPLES_PASSED_CONSERVATIVE": {},
-                  "ARRAY_BUFFER": {},
-                  "ARRAY_BUFFER_BINDING": {},
-                  "ATTACHED_SHADERS": {},
-                  "BACK": {},
-                  "BLEND": {},
-                  "BLEND_COLOR": {},
-                  "BLEND_DST_ALPHA": {},
-                  "BLEND_DST_RGB": {},
-                  "BLEND_EQUATION": {},
-                  "BLEND_EQUATION_ALPHA": {},
-                  "BLEND_EQUATION_RGB": {},
-                  "BLEND_SRC_ALPHA": {},
-                  "BLEND_SRC_RGB": {},
-                  "BLUE_BITS": {},
-                  "BOOL": {},
-                  "BOOL_VEC2": {},
-                  "BOOL_VEC3": {},
-                  "BOOL_VEC4": {},
-                  "BROWSER_DEFAULT_WEBGL": {},
-                  "BUFFER_SIZE": {},
-                  "BUFFER_USAGE": {},
-                  "BYTE": {},
-                  "CCW": {},
-                  "CLAMP_TO_EDGE": {},
-                  "COLOR": {},
-                  "COLOR_ATTACHMENT0": {},
-                  "COLOR_ATTACHMENT1": {},
-                  "COLOR_ATTACHMENT10": {},
-                  "COLOR_ATTACHMENT11": {},
-                  "COLOR_ATTACHMENT12": {},
-                  "COLOR_ATTACHMENT13": {},
-                  "COLOR_ATTACHMENT14": {},
-                  "COLOR_ATTACHMENT15": {},
-                  "COLOR_ATTACHMENT2": {},
-                  "COLOR_ATTACHMENT3": {},
-                  "COLOR_ATTACHMENT4": {},
-                  "COLOR_ATTACHMENT5": {},
-                  "COLOR_ATTACHMENT6": {},
-                  "COLOR_ATTACHMENT7": {},
-                  "COLOR_ATTACHMENT8": {},
-                  "COLOR_ATTACHMENT9": {},
-                  "COLOR_BUFFER_BIT": {},
-                  "COLOR_CLEAR_VALUE": {},
-                  "COLOR_WRITEMASK": {},
-                  "COMPARE_REF_TO_TEXTURE": {},
-                  "COMPILE_STATUS": {},
-                  "COMPRESSED_TEXTURE_FORMATS": {},
-                  "CONDITION_SATISFIED": {},
-                  "CONSTANT_ALPHA": {},
-                  "CONSTANT_COLOR": {},
-                  "CONTEXT_LOST_WEBGL": {},
-                  "COPY_READ_BUFFER": {},
-                  "COPY_READ_BUFFER_BINDING": {},
-                  "COPY_WRITE_BUFFER": {},
-                  "COPY_WRITE_BUFFER_BINDING": {},
-                  "CULL_FACE": {},
-                  "CULL_FACE_MODE": {},
-                  "CURRENT_PROGRAM": {},
-                  "CURRENT_QUERY": {},
-                  "CURRENT_VERTEX_ATTRIB": {},
-                  "CW": {},
-                  "DECR": {},
-                  "DECR_WRAP": {},
-                  "DELETE_STATUS": {},
-                  "DEPTH": {},
-                  "DEPTH24_STENCIL8": {},
-                  "DEPTH32F_STENCIL8": {},
-                  "DEPTH_ATTACHMENT": {},
-                  "DEPTH_BITS": {},
-                  "DEPTH_BUFFER_BIT": {},
-                  "DEPTH_CLEAR_VALUE": {},
-                  "DEPTH_COMPONENT": {},
-                  "DEPTH_COMPONENT16": {},
-                  "DEPTH_COMPONENT24": {},
-                  "DEPTH_COMPONENT32F": {},
-                  "DEPTH_FUNC": {},
-                  "DEPTH_RANGE": {},
-                  "DEPTH_STENCIL": {},
-                  "DEPTH_STENCIL_ATTACHMENT": {},
-                  "DEPTH_TEST": {},
-                  "DEPTH_WRITEMASK": {},
-                  "DITHER": {},
-                  "DONT_CARE": {},
-                  "DRAW_BUFFER0": {},
-                  "DRAW_BUFFER1": {},
-                  "DRAW_BUFFER10": {},
-                  "DRAW_BUFFER11": {},
-                  "DRAW_BUFFER12": {},
-                  "DRAW_BUFFER13": {},
-                  "DRAW_BUFFER14": {},
-                  "DRAW_BUFFER15": {},
-                  "DRAW_BUFFER2": {},
-                  "DRAW_BUFFER3": {},
-                  "DRAW_BUFFER4": {},
-                  "DRAW_BUFFER5": {},
-                  "DRAW_BUFFER6": {},
-                  "DRAW_BUFFER7": {},
-                  "DRAW_BUFFER8": {},
-                  "DRAW_BUFFER9": {},
-                  "DRAW_FRAMEBUFFER": {},
-                  "DRAW_FRAMEBUFFER_BINDING": {},
-                  "DST_ALPHA": {},
-                  "DST_COLOR": {},
-                  "DYNAMIC_COPY": {},
-                  "DYNAMIC_DRAW": {},
-                  "DYNAMIC_READ": {},
-                  "ELEMENT_ARRAY_BUFFER": {},
-                  "ELEMENT_ARRAY_BUFFER_BINDING": {},
-                  "EQUAL": {},
-                  "FASTEST": {},
-                  "FLOAT": {},
-                  "FLOAT_32_UNSIGNED_INT_24_8_REV": {},
-                  "FLOAT_MAT2": {},
-                  "FLOAT_MAT2x3": {},
-                  "FLOAT_MAT2x4": {},
-                  "FLOAT_MAT3": {},
-                  "FLOAT_MAT3x2": {},
-                  "FLOAT_MAT3x4": {},
-                  "FLOAT_MAT4": {},
-                  "FLOAT_MAT4x2": {},
-                  "FLOAT_MAT4x3": {},
-                  "FLOAT_VEC2": {},
-                  "FLOAT_VEC3": {},
-                  "FLOAT_VEC4": {},
-                  "FRAGMENT_SHADER": {},
-                  "FRAGMENT_SHADER_DERIVATIVE_HINT": {},
-                  "FRAMEBUFFER": {},
-                  "FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE": {},
-                  "FRAMEBUFFER_ATTACHMENT_BLUE_SIZE": {},
-                  "FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING": {},
-                  "FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE": {},
-                  "FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE": {},
-                  "FRAMEBUFFER_ATTACHMENT_GREEN_SIZE": {},
-                  "FRAMEBUFFER_ATTACHMENT_OBJECT_NAME": {},
-                  "FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE": {},
-                  "FRAMEBUFFER_ATTACHMENT_RED_SIZE": {},
-                  "FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE": {},
-                  "FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE": {},
-                  "FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER": {},
-                  "FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL": {},
-                  "FRAMEBUFFER_BINDING": {},
-                  "FRAMEBUFFER_COMPLETE": {},
-                  "FRAMEBUFFER_DEFAULT": {},
-                  "FRAMEBUFFER_INCOMPLETE_ATTACHMENT": {},
-                  "FRAMEBUFFER_INCOMPLETE_DIMENSIONS": {},
-                  "FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT": {},
-                  "FRAMEBUFFER_INCOMPLETE_MULTISAMPLE": {},
-                  "FRAMEBUFFER_UNSUPPORTED": {},
-                  "FRONT": {},
-                  "FRONT_AND_BACK": {},
-                  "FRONT_FACE": {},
-                  "FUNC_ADD": {},
-                  "FUNC_REVERSE_SUBTRACT": {},
-                  "FUNC_SUBTRACT": {},
-                  "GENERATE_MIPMAP_HINT": {},
-                  "GEQUAL": {},
-                  "GREATER": {},
-                  "GREEN_BITS": {},
-                  "HALF_FLOAT": {},
-                  "HIGH_FLOAT": {},
-                  "HIGH_INT": {},
-                  "IMPLEMENTATION_COLOR_READ_FORMAT": {},
-                  "IMPLEMENTATION_COLOR_READ_TYPE": {},
-                  "INCR": {},
-                  "INCR_WRAP": {},
-                  "INT": {},
-                  "INTERLEAVED_ATTRIBS": {},
-                  "INT_2_10_10_10_REV": {},
-                  "INT_SAMPLER_2D": {},
-                  "INT_SAMPLER_2D_ARRAY": {},
-                  "INT_SAMPLER_3D": {},
-                  "INT_SAMPLER_CUBE": {},
-                  "INT_VEC2": {},
-                  "INT_VEC3": {},
-                  "INT_VEC4": {},
-                  "INVALID_ENUM": {},
-                  "INVALID_FRAMEBUFFER_OPERATION": {},
-                  "INVALID_INDEX": {},
-                  "INVALID_OPERATION": {},
-                  "INVALID_VALUE": {},
-                  "INVERT": {},
-                  "KEEP": {},
-                  "LEQUAL": {},
-                  "LESS": {},
-                  "LINEAR": {},
-                  "LINEAR_MIPMAP_LINEAR": {},
-                  "LINEAR_MIPMAP_NEAREST": {},
-                  "LINES": {},
-                  "LINE_LOOP": {},
-                  "LINE_STRIP": {},
-                  "LINE_WIDTH": {},
-                  "LINK_STATUS": {},
-                  "LOW_FLOAT": {},
-                  "LOW_INT": {},
-                  "LUMINANCE": {},
-                  "LUMINANCE_ALPHA": {},
-                  "MAX": {},
-                  "MAX_3D_TEXTURE_SIZE": {},
-                  "MAX_ARRAY_TEXTURE_LAYERS": {},
-                  "MAX_CLIENT_WAIT_TIMEOUT_WEBGL": {},
-                  "MAX_COLOR_ATTACHMENTS": {},
-                  "MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS": {},
-                  "MAX_COMBINED_TEXTURE_IMAGE_UNITS": {},
-                  "MAX_COMBINED_UNIFORM_BLOCKS": {},
-                  "MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS": {},
-                  "MAX_CUBE_MAP_TEXTURE_SIZE": {},
-                  "MAX_DRAW_BUFFERS": {},
-                  "MAX_ELEMENTS_INDICES": {},
-                  "MAX_ELEMENTS_VERTICES": {},
-                  "MAX_ELEMENT_INDEX": {},
-                  "MAX_FRAGMENT_INPUT_COMPONENTS": {},
-                  "MAX_FRAGMENT_UNIFORM_BLOCKS": {},
-                  "MAX_FRAGMENT_UNIFORM_COMPONENTS": {},
-                  "MAX_FRAGMENT_UNIFORM_VECTORS": {},
-                  "MAX_PROGRAM_TEXEL_OFFSET": {},
-                  "MAX_RENDERBUFFER_SIZE": {},
-                  "MAX_SAMPLES": {},
-                  "MAX_SERVER_WAIT_TIMEOUT": {},
-                  "MAX_TEXTURE_IMAGE_UNITS": {},
-                  "MAX_TEXTURE_LOD_BIAS": {},
-                  "MAX_TEXTURE_SIZE": {},
-                  "MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS": {},
-                  "MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS": {},
-                  "MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS": {},
-                  "MAX_UNIFORM_BLOCK_SIZE": {},
-                  "MAX_UNIFORM_BUFFER_BINDINGS": {},
-                  "MAX_VARYING_COMPONENTS": {},
-                  "MAX_VARYING_VECTORS": {},
-                  "MAX_VERTEX_ATTRIBS": {},
-                  "MAX_VERTEX_OUTPUT_COMPONENTS": {},
-                  "MAX_VERTEX_TEXTURE_IMAGE_UNITS": {},
-                  "MAX_VERTEX_UNIFORM_BLOCKS": {},
-                  "MAX_VERTEX_UNIFORM_COMPONENTS": {},
-                  "MAX_VERTEX_UNIFORM_VECTORS": {},
-                  "MAX_VIEWPORT_DIMS": {},
-                  "MEDIUM_FLOAT": {},
-                  "MEDIUM_INT": {},
-                  "MIN": {},
-                  "MIN_PROGRAM_TEXEL_OFFSET": {},
-                  "MIRRORED_REPEAT": {},
-                  "NEAREST": {},
-                  "NEAREST_MIPMAP_LINEAR": {},
-                  "NEAREST_MIPMAP_NEAREST": {},
-                  "NEVER": {},
-                  "NICEST": {},
-                  "NONE": {},
-                  "NOTEQUAL": {},
-                  "NO_ERROR": {},
-                  "OBJECT_TYPE": {},
-                  "ONE": {},
-                  "ONE_MINUS_CONSTANT_ALPHA": {},
-                  "ONE_MINUS_CONSTANT_COLOR": {},
-                  "ONE_MINUS_DST_ALPHA": {},
-                  "ONE_MINUS_DST_COLOR": {},
-                  "ONE_MINUS_SRC_ALPHA": {},
-                  "ONE_MINUS_SRC_COLOR": {},
-                  "OUT_OF_MEMORY": {},
-                  "PACK_ALIGNMENT": {},
-                  "PACK_ROW_LENGTH": {},
-                  "PACK_SKIP_PIXELS": {},
-                  "PACK_SKIP_ROWS": {},
-                  "PIXEL_PACK_BUFFER": {},
-                  "PIXEL_PACK_BUFFER_BINDING": {},
-                  "PIXEL_UNPACK_BUFFER": {},
-                  "PIXEL_UNPACK_BUFFER_BINDING": {},
-                  "POINTS": {},
-                  "POLYGON_OFFSET_FACTOR": {},
-                  "POLYGON_OFFSET_FILL": {},
-                  "POLYGON_OFFSET_UNITS": {},
-                  "QUERY_RESULT": {},
-                  "QUERY_RESULT_AVAILABLE": {},
-                  "R11F_G11F_B10F": {},
-                  "R16F": {},
-                  "R16I": {},
-                  "R16UI": {},
-                  "R32F": {},
-                  "R32I": {},
-                  "R32UI": {},
-                  "R8": {},
-                  "R8I": {},
-                  "R8UI": {},
-                  "R8_SNORM": {},
-                  "RASTERIZER_DISCARD": {},
-                  "READ_BUFFER": {},
-                  "READ_FRAMEBUFFER": {},
-                  "READ_FRAMEBUFFER_BINDING": {},
-                  "RED": {},
-                  "RED_BITS": {},
-                  "RED_INTEGER": {},
-                  "RENDERBUFFER": {},
-                  "RENDERBUFFER_ALPHA_SIZE": {},
-                  "RENDERBUFFER_BINDING": {},
-                  "RENDERBUFFER_BLUE_SIZE": {},
-                  "RENDERBUFFER_DEPTH_SIZE": {},
-                  "RENDERBUFFER_GREEN_SIZE": {},
-                  "RENDERBUFFER_HEIGHT": {},
-                  "RENDERBUFFER_INTERNAL_FORMAT": {},
-                  "RENDERBUFFER_RED_SIZE": {},
-                  "RENDERBUFFER_SAMPLES": {},
-                  "RENDERBUFFER_STENCIL_SIZE": {},
-                  "RENDERBUFFER_WIDTH": {},
-                  "RENDERER": {},
-                  "REPEAT": {},
-                  "REPLACE": {},
-                  "RG": {},
-                  "RG16F": {},
-                  "RG16I": {},
-                  "RG16UI": {},
-                  "RG32F": {},
-                  "RG32I": {},
-                  "RG32UI": {},
-                  "RG8": {},
-                  "RG8I": {},
-                  "RG8UI": {},
-                  "RG8_SNORM": {},
-                  "RGB": {},
-                  "RGB10_A2": {},
-                  "RGB10_A2UI": {},
-                  "RGB16F": {},
-                  "RGB16I": {},
-                  "RGB16UI": {},
-                  "RGB32F": {},
-                  "RGB32I": {},
-                  "RGB32UI": {},
-                  "RGB565": {},
-                  "RGB5_A1": {},
-                  "RGB8": {},
-                  "RGB8I": {},
-                  "RGB8UI": {},
-                  "RGB8_SNORM": {},
-                  "RGB9_E5": {},
-                  "RGBA": {},
-                  "RGBA16F": {},
-                  "RGBA16I": {},
-                  "RGBA16UI": {},
-                  "RGBA32F": {},
-                  "RGBA32I": {},
-                  "RGBA32UI": {},
-                  "RGBA4": {},
-                  "RGBA8": {},
-                  "RGBA8I": {},
-                  "RGBA8UI": {},
-                  "RGBA8_SNORM": {},
-                  "RGBA_INTEGER": {},
-                  "RGB_INTEGER": {},
-                  "RG_INTEGER": {},
-                  "SAMPLER_2D": {},
-                  "SAMPLER_2D_ARRAY": {},
-                  "SAMPLER_2D_ARRAY_SHADOW": {},
-                  "SAMPLER_2D_SHADOW": {},
-                  "SAMPLER_3D": {},
-                  "SAMPLER_BINDING": {},
-                  "SAMPLER_CUBE": {},
-                  "SAMPLER_CUBE_SHADOW": {},
-                  "SAMPLES": {},
-                  "SAMPLE_ALPHA_TO_COVERAGE": {},
-                  "SAMPLE_BUFFERS": {},
-                  "SAMPLE_COVERAGE": {},
-                  "SAMPLE_COVERAGE_INVERT": {},
-                  "SAMPLE_COVERAGE_VALUE": {},
-                  "SCISSOR_BOX": {},
-                  "SCISSOR_TEST": {},
-                  "SEPARATE_ATTRIBS": {},
-                  "SHADER_TYPE": {},
-                  "SHADING_LANGUAGE_VERSION": {},
-                  "SHORT": {},
-                  "SIGNALED": {},
-                  "SIGNED_NORMALIZED": {},
-                  "SRC_ALPHA": {},
-                  "SRC_ALPHA_SATURATE": {},
-                  "SRC_COLOR": {},
-                  "SRGB": {},
-                  "SRGB8": {},
-                  "SRGB8_ALPHA8": {},
-                  "STATIC_COPY": {},
-                  "STATIC_DRAW": {},
-                  "STATIC_READ": {},
-                  "STENCIL": {},
-                  "STENCIL_ATTACHMENT": {},
-                  "STENCIL_BACK_FAIL": {},
-                  "STENCIL_BACK_FUNC": {},
-                  "STENCIL_BACK_PASS_DEPTH_FAIL": {},
-                  "STENCIL_BACK_PASS_DEPTH_PASS": {},
-                  "STENCIL_BACK_REF": {},
-                  "STENCIL_BACK_VALUE_MASK": {},
-                  "STENCIL_BACK_WRITEMASK": {},
-                  "STENCIL_BITS": {},
-                  "STENCIL_BUFFER_BIT": {},
-                  "STENCIL_CLEAR_VALUE": {},
-                  "STENCIL_FAIL": {},
-                  "STENCIL_FUNC": {},
-                  "STENCIL_INDEX8": {},
-                  "STENCIL_PASS_DEPTH_FAIL": {},
-                  "STENCIL_PASS_DEPTH_PASS": {},
-                  "STENCIL_REF": {},
-                  "STENCIL_TEST": {},
-                  "STENCIL_VALUE_MASK": {},
-                  "STENCIL_WRITEMASK": {},
-                  "STREAM_COPY": {},
-                  "STREAM_DRAW": {},
-                  "STREAM_READ": {},
-                  "SUBPIXEL_BITS": {},
-                  "SYNC_CONDITION": {},
-                  "SYNC_FENCE": {},
-                  "SYNC_FLAGS": {},
-                  "SYNC_FLUSH_COMMANDS_BIT": {},
-                  "SYNC_GPU_COMMANDS_COMPLETE": {},
-                  "SYNC_STATUS": {},
-                  "TEXTURE": {},
-                  "TEXTURE0": {},
-                  "TEXTURE1": {},
-                  "TEXTURE10": {},
-                  "TEXTURE11": {},
-                  "TEXTURE12": {},
-                  "TEXTURE13": {},
-                  "TEXTURE14": {},
-                  "TEXTURE15": {},
-                  "TEXTURE16": {},
-                  "TEXTURE17": {},
-                  "TEXTURE18": {},
-                  "TEXTURE19": {},
-                  "TEXTURE2": {},
-                  "TEXTURE20": {},
-                  "TEXTURE21": {},
-                  "TEXTURE22": {},
-                  "TEXTURE23": {},
-                  "TEXTURE24": {},
-                  "TEXTURE25": {},
-                  "TEXTURE26": {},
-                  "TEXTURE27": {},
-                  "TEXTURE28": {},
-                  "TEXTURE29": {},
-                  "TEXTURE3": {},
-                  "TEXTURE30": {},
-                  "TEXTURE31": {},
-                  "TEXTURE4": {},
-                  "TEXTURE5": {},
-                  "TEXTURE6": {},
-                  "TEXTURE7": {},
-                  "TEXTURE8": {},
-                  "TEXTURE9": {},
-                  "TEXTURE_2D": {},
-                  "TEXTURE_2D_ARRAY": {},
-                  "TEXTURE_3D": {},
-                  "TEXTURE_BASE_LEVEL": {},
-                  "TEXTURE_BINDING_2D": {},
-                  "TEXTURE_BINDING_2D_ARRAY": {},
-                  "TEXTURE_BINDING_3D": {},
-                  "TEXTURE_BINDING_CUBE_MAP": {},
-                  "TEXTURE_COMPARE_FUNC": {},
-                  "TEXTURE_COMPARE_MODE": {},
-                  "TEXTURE_CUBE_MAP": {},
-                  "TEXTURE_CUBE_MAP_NEGATIVE_X": {},
-                  "TEXTURE_CUBE_MAP_NEGATIVE_Y": {},
-                  "TEXTURE_CUBE_MAP_NEGATIVE_Z": {},
-                  "TEXTURE_CUBE_MAP_POSITIVE_X": {},
-                  "TEXTURE_CUBE_MAP_POSITIVE_Y": {},
-                  "TEXTURE_CUBE_MAP_POSITIVE_Z": {},
-                  "TEXTURE_IMMUTABLE_FORMAT": {},
-                  "TEXTURE_IMMUTABLE_LEVELS": {},
-                  "TEXTURE_MAG_FILTER": {},
-                  "TEXTURE_MAX_LEVEL": {},
-                  "TEXTURE_MAX_LOD": {},
-                  "TEXTURE_MIN_FILTER": {},
-                  "TEXTURE_MIN_LOD": {},
-                  "TEXTURE_WRAP_R": {},
-                  "TEXTURE_WRAP_S": {},
-                  "TEXTURE_WRAP_T": {},
-                  "TIMEOUT_EXPIRED": {},
-                  "TIMEOUT_IGNORED": {},
-                  "TRANSFORM_FEEDBACK": {},
-                  "TRANSFORM_FEEDBACK_ACTIVE": {},
-                  "TRANSFORM_FEEDBACK_BINDING": {},
-                  "TRANSFORM_FEEDBACK_BUFFER": {},
-                  "TRANSFORM_FEEDBACK_BUFFER_BINDING": {},
-                  "TRANSFORM_FEEDBACK_BUFFER_MODE": {},
-                  "TRANSFORM_FEEDBACK_BUFFER_SIZE": {},
-                  "TRANSFORM_FEEDBACK_BUFFER_START": {},
-                  "TRANSFORM_FEEDBACK_PAUSED": {},
-                  "TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN": {},
-                  "TRANSFORM_FEEDBACK_VARYINGS": {},
-                  "TRIANGLES": {},
-                  "TRIANGLE_FAN": {},
-                  "TRIANGLE_STRIP": {},
-                  "UNIFORM_ARRAY_STRIDE": {},
-                  "UNIFORM_BLOCK_ACTIVE_UNIFORMS": {},
-                  "UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES": {},
-                  "UNIFORM_BLOCK_BINDING": {},
-                  "UNIFORM_BLOCK_DATA_SIZE": {},
-                  "UNIFORM_BLOCK_INDEX": {},
-                  "UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER": {},
-                  "UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER": {},
-                  "UNIFORM_BUFFER": {},
-                  "UNIFORM_BUFFER_BINDING": {},
-                  "UNIFORM_BUFFER_OFFSET_ALIGNMENT": {},
-                  "UNIFORM_BUFFER_SIZE": {},
-                  "UNIFORM_BUFFER_START": {},
-                  "UNIFORM_IS_ROW_MAJOR": {},
-                  "UNIFORM_MATRIX_STRIDE": {},
-                  "UNIFORM_OFFSET": {},
-                  "UNIFORM_SIZE": {},
-                  "UNIFORM_TYPE": {},
-                  "UNPACK_ALIGNMENT": {},
-                  "UNPACK_COLORSPACE_CONVERSION_WEBGL": {},
-                  "UNPACK_FLIP_Y_WEBGL": {},
-                  "UNPACK_IMAGE_HEIGHT": {},
-                  "UNPACK_PREMULTIPLY_ALPHA_WEBGL": {},
-                  "UNPACK_ROW_LENGTH": {},
-                  "UNPACK_SKIP_IMAGES": {},
-                  "UNPACK_SKIP_PIXELS": {},
-                  "UNPACK_SKIP_ROWS": {},
-                  "UNSIGNALED": {},
-                  "UNSIGNED_BYTE": {},
-                  "UNSIGNED_INT": {},
-                  "UNSIGNED_INT_10F_11F_11F_REV": {},
-                  "UNSIGNED_INT_24_8": {},
-                  "UNSIGNED_INT_2_10_10_10_REV": {},
-                  "UNSIGNED_INT_5_9_9_9_REV": {},
-                  "UNSIGNED_INT_SAMPLER_2D": {},
-                  "UNSIGNED_INT_SAMPLER_2D_ARRAY": {},
-                  "UNSIGNED_INT_SAMPLER_3D": {},
-                  "UNSIGNED_INT_SAMPLER_CUBE": {},
-                  "UNSIGNED_INT_VEC2": {},
-                  "UNSIGNED_INT_VEC3": {},
-                  "UNSIGNED_INT_VEC4": {},
-                  "UNSIGNED_NORMALIZED": {},
-                  "UNSIGNED_SHORT": {},
-                  "UNSIGNED_SHORT_4_4_4_4": {},
-                  "UNSIGNED_SHORT_5_5_5_1": {},
-                  "UNSIGNED_SHORT_5_6_5": {},
-                  "VALIDATE_STATUS": {},
-                  "VENDOR": {},
-                  "VERSION": {},
-                  "VERTEX_ARRAY_BINDING": {},
-                  "VERTEX_ATTRIB_ARRAY_BUFFER_BINDING": {},
-                  "VERTEX_ATTRIB_ARRAY_DIVISOR": {},
-                  "VERTEX_ATTRIB_ARRAY_ENABLED": {},
-                  "VERTEX_ATTRIB_ARRAY_INTEGER": {},
-                  "VERTEX_ATTRIB_ARRAY_NORMALIZED": {},
-                  "VERTEX_ATTRIB_ARRAY_POINTER": {},
-                  "VERTEX_ATTRIB_ARRAY_SIZE": {},
-                  "VERTEX_ATTRIB_ARRAY_STRIDE": {},
-                  "VERTEX_ATTRIB_ARRAY_TYPE": {},
-                  "VERTEX_SHADER": {},
-                  "VIEWPORT": {},
-                  "WAIT_FAILED": {},
-                  "ZERO": {},
-                  "activeTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "attachShader": {
-                    "closure_uid_20499601": {}
-                  },
-                  "beginQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "beginTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindAttribLocation": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindBufferBase": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindBufferRange": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindRenderbuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindSampler": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindVertexArray": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blendColor": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blendEquation": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blendEquationSeparate": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blendFunc": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blendFuncSeparate": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blitFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bufferData": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bufferSubData": {
-                    "closure_uid_20499601": {}
-                  },
-                  "canvas": {
-                    "addEventListener": {
-                      "closure_uid_20499601": {}
-                    },
-                    "closure_uid_20499601": {},
-                    "convertToBlob": {
-                      "closure_uid_20499601": {}
-                    },
-                    "dispatchEvent": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getContext": {
-                      "closure_uid_20499601": {}
-                    },
-                    "height": {},
-                    "removeEventListener": {
-                      "closure_uid_20499601": {}
-                    },
-                    "transferToImageBitmap": {
-                      "closure_uid_20499601": {}
-                    },
-                    "width": {}
-                  },
-                  "checkFramebufferStatus": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clear": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearBufferfi": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearBufferfv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearBufferiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearBufferuiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearColor": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearDepth": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearStencil": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clientWaitSync": {
-                    "closure_uid_20499601": {}
-                  },
-                  "closure_uid_20499601": {},
-                  "colorMask": {
-                    "closure_uid_20499601": {}
-                  },
-                  "compileShader": {
-                    "closure_uid_20499601": {}
-                  },
-                  "compressedTexImage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "compressedTexImage3D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "compressedTexSubImage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "compressedTexSubImage3D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "copyBufferSubData": {
-                    "closure_uid_20499601": {}
-                  },
-                  "copyTexImage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "copyTexSubImage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "copyTexSubImage3D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createRenderbuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createSampler": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createShader": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createVertexArray": {
-                    "closure_uid_20499601": {}
-                  },
-                  "cullFace": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteRenderbuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteSampler": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteShader": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteSync": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteVertexArray": {
-                    "closure_uid_20499601": {}
-                  },
-                  "depthFunc": {
-                    "closure_uid_20499601": {}
-                  },
-                  "depthMask": {
-                    "closure_uid_20499601": {}
-                  },
-                  "depthRange": {
-                    "closure_uid_20499601": {}
-                  },
-                  "detachShader": {
-                    "closure_uid_20499601": {}
-                  },
-                  "disable": {
-                    "closure_uid_20499601": {}
-                  },
-                  "disableVertexAttribArray": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawArrays": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawArraysInstanced": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawBuffers": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawElements": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawElementsInstanced": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawRangeElements": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawingBufferHeight": {},
-                  "drawingBufferWidth": {},
-                  "enable": {
-                    "closure_uid_20499601": {}
-                  },
-                  "enableVertexAttribArray": {
-                    "closure_uid_20499601": {}
-                  },
-                  "endQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "endTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "fenceSync": {
-                    "closure_uid_20499601": {}
-                  },
-                  "finish": {
-                    "closure_uid_20499601": {}
-                  },
-                  "flush": {
-                    "closure_uid_20499601": {}
-                  },
-                  "framebufferRenderbuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "framebufferTexture2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "framebufferTextureLayer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "frontFace": {
-                    "closure_uid_20499601": {}
-                  },
-                  "generateMipmap": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getActiveAttrib": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getActiveUniform": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getActiveUniformBlockName": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getActiveUniformBlockParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getActiveUniforms": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getAttachedShaders": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getAttribLocation": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getBufferParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getBufferSubData": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getContextAttributes": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getError": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getExtension": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getFragDataLocation": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getFramebufferAttachmentParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getIndexedParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getInternalformatParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getProgramInfoLog": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getProgramParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getQueryParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getRenderbufferParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getSamplerParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getShaderInfoLog": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getShaderParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getShaderPrecisionFormat": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getShaderSource": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getSupportedExtensions": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getSyncParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getTexParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getTransformFeedbackVarying": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getUniform": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getUniformBlockIndex": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getUniformIndices": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getUniformLocation": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getVertexAttrib": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getVertexAttribOffset": {
-                    "closure_uid_20499601": {}
-                  },
-                  "hint": {
-                    "closure_uid_20499601": {}
-                  },
-                  "invalidateFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "invalidateSubFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isContextLost": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isEnabled": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isRenderbuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isSampler": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isShader": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isSync": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isVertexArray": {
-                    "closure_uid_20499601": {}
-                  },
-                  "lineWidth": {
-                    "closure_uid_20499601": {}
-                  },
-                  "linkProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "pauseTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "pixelStorei": {
-                    "closure_uid_20499601": {}
-                  },
-                  "polygonOffset": {
-                    "closure_uid_20499601": {}
-                  },
-                  "readBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "readPixels": {
-                    "closure_uid_20499601": {}
-                  },
-                  "renderbufferStorage": {
-                    "closure_uid_20499601": {}
-                  },
-                  "renderbufferStorageMultisample": {
-                    "closure_uid_20499601": {}
-                  },
-                  "resumeTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "sampleCoverage": {
-                    "closure_uid_20499601": {}
-                  },
-                  "samplerParameterf": {
-                    "closure_uid_20499601": {}
-                  },
-                  "samplerParameteri": {
-                    "closure_uid_20499601": {}
-                  },
-                  "scissor": {
-                    "closure_uid_20499601": {}
-                  },
-                  "shaderSource": {
-                    "closure_uid_20499601": {}
-                  },
-                  "stencilFunc": {
-                    "closure_uid_20499601": {}
-                  },
-                  "stencilFuncSeparate": {
-                    "closure_uid_20499601": {}
-                  },
-                  "stencilMask": {
-                    "closure_uid_20499601": {}
-                  },
-                  "stencilMaskSeparate": {
-                    "closure_uid_20499601": {}
-                  },
-                  "stencilOp": {
-                    "closure_uid_20499601": {}
-                  },
-                  "stencilOpSeparate": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texImage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texImage3D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texParameterf": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texParameteri": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texStorage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texStorage3D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texSubImage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texSubImage3D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "transformFeedbackVaryings": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform1f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform1fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform1i": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform1iv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform1ui": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform1uiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform2f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform2fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform2i": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform2iv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform2ui": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform2uiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform3f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform3fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform3i": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform3iv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform3ui": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform3uiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform4f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform4fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform4i": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform4iv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform4ui": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform4uiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformBlockBinding": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix2fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix2x3fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix2x4fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix3fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix3x2fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix3x4fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix4fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix4x2fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix4x3fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "useProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "validateProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib1f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib1fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib2f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib2fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib3f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib3fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib4f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib4fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribDivisor": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribI4i": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribI4iv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribI4ui": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribI4uiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribIPointer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribPointer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "viewport": {
-                    "closure_uid_20499601": {}
-                  },
-                  "waitSync": {
-                    "closure_uid_20499601": {}
-                  }
-                },
-                "indexBuffer": {},
-                "isQueryAvailable": function () { },
-                "itemsToPoll": {},
-                "outputTexture": {},
-                "pollFence": function () { },
-                "pollItems": function () { },
-                "program": {},
-                "setInputMatrixTexture": function () { },
-                "setOutputMatrixTexture": function () { },
-                "setOutputMatrixTextureDriver": function () { },
-                "setOutputMatrixWriteRegion": function () { },
-                "setOutputMatrixWriteRegionDriver": function () { },
-                "setOutputPackedMatrixTexture": function () { },
-                "setOutputPackedMatrixWriteRegion": function () { },
-                "setProgram": function () { },
-                "textureConfig": {
-                  "defaultNumChannels": {},
-                  "downloadTextureFormat": {},
-                  "downloadUnpackNumChannels": {},
-                  "internalFormatFloat": {},
-                  "internalFormatHalfFloat": {},
-                  "internalFormatPackedFloat": {},
-                  "internalFormatPackedHalfFloat": {},
-                  "textureFormatFloat": {},
-                  "textureTypeFloat": {},
-                  "textureTypeHalfFloat": {}
-                },
-                "throwIfDisposed": function () { },
-                "throwIfNoProgram": function () { },
-                "unbindTextureToFrameBuffer": function () { },
-                "uploadDenseMatrixToTexture": function () { },
-                "uploadPixelDataToTexture": function () { },
-                "vertexAttrsAreBound": {},
-                "vertexBuffer": {},
-                "waitForQueryAndGetTime": function () { }
-              },
-              "gpgpuCreatedLocally": {},
-              "greater": function () { },
-              "greaterEqual": function () { },
-              "ifft": function () { },
-              "imag": function () { },
-              "int": function () { },
-              "isFinite": function () { },
-              "isInf": function () { },
-              "isNaN": function () { },
-              "less": function () { },
-              "lessEqual": function () { },
-              "linspace": function () { },
-              "localResponseNormalization4D": function () { },
-              "log": function () { },
-              "log1p": function () { },
-              "logicalAnd": function () { },
-              "logicalNot": function () { },
-              "logicalOr": function () { },
-              "makeComplexComponentTensorHandle": function () { },
-              "makeOutputArray": function () { },
-              "makePackedTensor": function () { },
-              "makeTensorHandle": function () { },
-              "max": function () { },
-              "maxPool": function () { },
-              "maxPool3d": function () { },
-              "maxPool3dBackprop": function () { },
-              "maxPoolBackprop": function () { },
-              "maximum": function () { },
-              "memory": function () { },
-              "min": function () { },
-              "minimum": function () { },
-              "mod": function () { },
-              "multinomial": function () { },
-              "multiply": function () { },
-              "neg": function () { },
-              "nonMaxSuppression": function () { },
-              "notEqual": function () { },
-              "numBytesInGPU": {},
-              "numMBBeforeWarning": {},
-              "oneHot": function () { },
-              "onesLike": function () { },
-              "packTensor": function () { },
-              "packedBinaryOp": function () { },
-              "packedReshape": function () { },
-              "packedUnaryOp": function () { },
-              "pad": function () { },
-              "pendingDisposal": {},
-              "pendingRead": {},
-              "pow": function () { },
-              "prelu": function () { },
-              "prod": function () { },
-              "read": function () { },
-              "readSync": function () { },
-              "real": function () { },
-              "realDivide": function () { },
-              "reciprocal": function () { },
-              "reduce": function () { },
-              "register": function () { },
-              "releaseGPUData": function () { },
-              "relu": function () { },
-              "reshape": function () { },
-              "resizeBilinear": function () { },
-              "resizeBilinearBackprop": function () { },
-              "resizeNearestNeighbor": function () { },
-              "resizeNearestNeighborBackprop": function () { },
-              "reverse": function () { },
-              "round": function () { },
-              "rsqrt": function () { },
-              "scatterND": function () { },
-              "segOpCompute": function () { },
-              "select": function () { },
-              "selu": function () { },
-              "shallowSlice": function () { },
-              "shouldExecuteOnCPU": function () { },
-              "sigmoid": function () { },
-              "sign": function () { },
-              "sin": function () { },
-              "sinh": function () { },
-              "slice": function () { },
-              "softplus": function () { },
-              "spaceToBatchND": function () { },
-              "sparseToDense": function () { },
-              "split": function () { },
-              "sqrt": function () { },
-              "square": function () { },
-              "squaredDifference": function () { },
-              "startTimer": function () { },
-              "step": function () { },
-              "stridedSlice": function () { },
-              "subtract": function () { },
-              "sum": function () { },
-              "tan": function () { },
-              "tanh": function () { },
-              "texData": {
-                "backend": {},
-                "data": {},
-                "dataMover": {},
-                "delete": function () { },
-                "get": function () { },
-                "has": function () { },
-                "set": function () { }
-              },
-              "textureManager": {
-                "acquireTexture": function () { },
-                "closure_uid_20499601": {},
-                "dispose": function () { },
-                "freeTextures": {},
-                "getNumFreeTextures": function () { },
-                "getNumUsedTextures": function () { },
-                "gpgpu": {
-                  "addItemToPoll": {
-                    "closure_uid_20499601": {}
-                  },
-                  "beginQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindTextureToFrameBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blockUntilAllProgramsCompleted": {
-                    "closure_uid_20499601": {}
-                  },
-                  "closure_uid_20499601": {},
-                  "colorBufferFloatExtension": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createAndWaitForFence": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createBufferFromTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createFence": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createFloat16MatrixTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createFloat16PackedMatrixTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createFloat32MatrixTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createPackedMatrixTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createUnsignedBytesMatrixTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "debug": {},
-                  "debugValidate": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteMatrixTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "dispose": {
-                    "closure_uid_20499601": {}
-                  },
-                  "disposed": {},
-                  "downloadByteEncodedFloatMatrixFromOutputTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "downloadFloat32MatrixFromBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "downloadMatrixDriver": {
-                    "closure_uid_20499601": {}
-                  },
-                  "downloadMatrixFromPackedTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "downloadPackedMatrixFromBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "endQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "executeProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "framebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getAttributeLocation": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getQueryTime": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getQueryTimerExtension": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getQueryTimerExtensionWebGL1": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getQueryTimerExtensionWebGL2": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getUniformLocation": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getUniformLocationNoThrow": {
-                    "closure_uid_20499601": {}
-                  },
-                  "gl": {
-                    "ACTIVE_ATTRIBUTES": {},
-                    "ACTIVE_TEXTURE": {},
-                    "ACTIVE_UNIFORMS": {},
-                    "ACTIVE_UNIFORM_BLOCKS": {},
-                    "ALIASED_LINE_WIDTH_RANGE": {},
-                    "ALIASED_POINT_SIZE_RANGE": {},
-                    "ALPHA": {},
-                    "ALPHA_BITS": {},
-                    "ALREADY_SIGNALED": {},
-                    "ALWAYS": {},
-                    "ANY_SAMPLES_PASSED": {},
-                    "ANY_SAMPLES_PASSED_CONSERVATIVE": {},
-                    "ARRAY_BUFFER": {},
-                    "ARRAY_BUFFER_BINDING": {},
-                    "ATTACHED_SHADERS": {},
-                    "BACK": {},
-                    "BLEND": {},
-                    "BLEND_COLOR": {},
-                    "BLEND_DST_ALPHA": {},
-                    "BLEND_DST_RGB": {},
-                    "BLEND_EQUATION": {},
-                    "BLEND_EQUATION_ALPHA": {},
-                    "BLEND_EQUATION_RGB": {},
-                    "BLEND_SRC_ALPHA": {},
-                    "BLEND_SRC_RGB": {},
-                    "BLUE_BITS": {},
-                    "BOOL": {},
-                    "BOOL_VEC2": {},
-                    "BOOL_VEC3": {},
-                    "BOOL_VEC4": {},
-                    "BROWSER_DEFAULT_WEBGL": {},
-                    "BUFFER_SIZE": {},
-                    "BUFFER_USAGE": {},
-                    "BYTE": {},
-                    "CCW": {},
-                    "CLAMP_TO_EDGE": {},
-                    "COLOR": {},
-                    "COLOR_ATTACHMENT0": {},
-                    "COLOR_ATTACHMENT1": {},
-                    "COLOR_ATTACHMENT10": {},
-                    "COLOR_ATTACHMENT11": {},
-                    "COLOR_ATTACHMENT12": {},
-                    "COLOR_ATTACHMENT13": {},
-                    "COLOR_ATTACHMENT14": {},
-                    "COLOR_ATTACHMENT15": {},
-                    "COLOR_ATTACHMENT2": {},
-                    "COLOR_ATTACHMENT3": {},
-                    "COLOR_ATTACHMENT4": {},
-                    "COLOR_ATTACHMENT5": {},
-                    "COLOR_ATTACHMENT6": {},
-                    "COLOR_ATTACHMENT7": {},
-                    "COLOR_ATTACHMENT8": {},
-                    "COLOR_ATTACHMENT9": {},
-                    "COLOR_BUFFER_BIT": {},
-                    "COLOR_CLEAR_VALUE": {},
-                    "COLOR_WRITEMASK": {},
-                    "COMPARE_REF_TO_TEXTURE": {},
-                    "COMPILE_STATUS": {},
-                    "COMPRESSED_TEXTURE_FORMATS": {},
-                    "CONDITION_SATISFIED": {},
-                    "CONSTANT_ALPHA": {},
-                    "CONSTANT_COLOR": {},
-                    "CONTEXT_LOST_WEBGL": {},
-                    "COPY_READ_BUFFER": {},
-                    "COPY_READ_BUFFER_BINDING": {},
-                    "COPY_WRITE_BUFFER": {},
-                    "COPY_WRITE_BUFFER_BINDING": {},
-                    "CULL_FACE": {},
-                    "CULL_FACE_MODE": {},
-                    "CURRENT_PROGRAM": {},
-                    "CURRENT_QUERY": {},
-                    "CURRENT_VERTEX_ATTRIB": {},
-                    "CW": {},
-                    "DECR": {},
-                    "DECR_WRAP": {},
-                    "DELETE_STATUS": {},
-                    "DEPTH": {},
-                    "DEPTH24_STENCIL8": {},
-                    "DEPTH32F_STENCIL8": {},
-                    "DEPTH_ATTACHMENT": {},
-                    "DEPTH_BITS": {},
-                    "DEPTH_BUFFER_BIT": {},
-                    "DEPTH_CLEAR_VALUE": {},
-                    "DEPTH_COMPONENT": {},
-                    "DEPTH_COMPONENT16": {},
-                    "DEPTH_COMPONENT24": {},
-                    "DEPTH_COMPONENT32F": {},
-                    "DEPTH_FUNC": {},
-                    "DEPTH_RANGE": {},
-                    "DEPTH_STENCIL": {},
-                    "DEPTH_STENCIL_ATTACHMENT": {},
-                    "DEPTH_TEST": {},
-                    "DEPTH_WRITEMASK": {},
-                    "DITHER": {},
-                    "DONT_CARE": {},
-                    "DRAW_BUFFER0": {},
-                    "DRAW_BUFFER1": {},
-                    "DRAW_BUFFER10": {},
-                    "DRAW_BUFFER11": {},
-                    "DRAW_BUFFER12": {},
-                    "DRAW_BUFFER13": {},
-                    "DRAW_BUFFER14": {},
-                    "DRAW_BUFFER15": {},
-                    "DRAW_BUFFER2": {},
-                    "DRAW_BUFFER3": {},
-                    "DRAW_BUFFER4": {},
-                    "DRAW_BUFFER5": {},
-                    "DRAW_BUFFER6": {},
-                    "DRAW_BUFFER7": {},
-                    "DRAW_BUFFER8": {},
-                    "DRAW_BUFFER9": {},
-                    "DRAW_FRAMEBUFFER": {},
-                    "DRAW_FRAMEBUFFER_BINDING": {},
-                    "DST_ALPHA": {},
-                    "DST_COLOR": {},
-                    "DYNAMIC_COPY": {},
-                    "DYNAMIC_DRAW": {},
-                    "DYNAMIC_READ": {},
-                    "ELEMENT_ARRAY_BUFFER": {},
-                    "ELEMENT_ARRAY_BUFFER_BINDING": {},
-                    "EQUAL": {},
-                    "FASTEST": {},
-                    "FLOAT": {},
-                    "FLOAT_32_UNSIGNED_INT_24_8_REV": {},
-                    "FLOAT_MAT2": {},
-                    "FLOAT_MAT2x3": {},
-                    "FLOAT_MAT2x4": {},
-                    "FLOAT_MAT3": {},
-                    "FLOAT_MAT3x2": {},
-                    "FLOAT_MAT3x4": {},
-                    "FLOAT_MAT4": {},
-                    "FLOAT_MAT4x2": {},
-                    "FLOAT_MAT4x3": {},
-                    "FLOAT_VEC2": {},
-                    "FLOAT_VEC3": {},
-                    "FLOAT_VEC4": {},
-                    "FRAGMENT_SHADER": {},
-                    "FRAGMENT_SHADER_DERIVATIVE_HINT": {},
-                    "FRAMEBUFFER": {},
-                    "FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE": {},
-                    "FRAMEBUFFER_ATTACHMENT_BLUE_SIZE": {},
-                    "FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING": {},
-                    "FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE": {},
-                    "FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE": {},
-                    "FRAMEBUFFER_ATTACHMENT_GREEN_SIZE": {},
-                    "FRAMEBUFFER_ATTACHMENT_OBJECT_NAME": {},
-                    "FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE": {},
-                    "FRAMEBUFFER_ATTACHMENT_RED_SIZE": {},
-                    "FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE": {},
-                    "FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE": {},
-                    "FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER": {},
-                    "FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL": {},
-                    "FRAMEBUFFER_BINDING": {},
-                    "FRAMEBUFFER_COMPLETE": {},
-                    "FRAMEBUFFER_DEFAULT": {},
-                    "FRAMEBUFFER_INCOMPLETE_ATTACHMENT": {},
-                    "FRAMEBUFFER_INCOMPLETE_DIMENSIONS": {},
-                    "FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT": {},
-                    "FRAMEBUFFER_INCOMPLETE_MULTISAMPLE": {},
-                    "FRAMEBUFFER_UNSUPPORTED": {},
-                    "FRONT": {},
-                    "FRONT_AND_BACK": {},
-                    "FRONT_FACE": {},
-                    "FUNC_ADD": {},
-                    "FUNC_REVERSE_SUBTRACT": {},
-                    "FUNC_SUBTRACT": {},
-                    "GENERATE_MIPMAP_HINT": {},
-                    "GEQUAL": {},
-                    "GREATER": {},
-                    "GREEN_BITS": {},
-                    "HALF_FLOAT": {},
-                    "HIGH_FLOAT": {},
-                    "HIGH_INT": {},
-                    "IMPLEMENTATION_COLOR_READ_FORMAT": {},
-                    "IMPLEMENTATION_COLOR_READ_TYPE": {},
-                    "INCR": {},
-                    "INCR_WRAP": {},
-                    "INT": {},
-                    "INTERLEAVED_ATTRIBS": {},
-                    "INT_2_10_10_10_REV": {},
-                    "INT_SAMPLER_2D": {},
-                    "INT_SAMPLER_2D_ARRAY": {},
-                    "INT_SAMPLER_3D": {},
-                    "INT_SAMPLER_CUBE": {},
-                    "INT_VEC2": {},
-                    "INT_VEC3": {},
-                    "INT_VEC4": {},
-                    "INVALID_ENUM": {},
-                    "INVALID_FRAMEBUFFER_OPERATION": {},
-                    "INVALID_INDEX": {},
-                    "INVALID_OPERATION": {},
-                    "INVALID_VALUE": {},
-                    "INVERT": {},
-                    "KEEP": {},
-                    "LEQUAL": {},
-                    "LESS": {},
-                    "LINEAR": {},
-                    "LINEAR_MIPMAP_LINEAR": {},
-                    "LINEAR_MIPMAP_NEAREST": {},
-                    "LINES": {},
-                    "LINE_LOOP": {},
-                    "LINE_STRIP": {},
-                    "LINE_WIDTH": {},
-                    "LINK_STATUS": {},
-                    "LOW_FLOAT": {},
-                    "LOW_INT": {},
-                    "LUMINANCE": {},
-                    "LUMINANCE_ALPHA": {},
-                    "MAX": {},
-                    "MAX_3D_TEXTURE_SIZE": {},
-                    "MAX_ARRAY_TEXTURE_LAYERS": {},
-                    "MAX_CLIENT_WAIT_TIMEOUT_WEBGL": {},
-                    "MAX_COLOR_ATTACHMENTS": {},
-                    "MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS": {},
-                    "MAX_COMBINED_TEXTURE_IMAGE_UNITS": {},
-                    "MAX_COMBINED_UNIFORM_BLOCKS": {},
-                    "MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS": {},
-                    "MAX_CUBE_MAP_TEXTURE_SIZE": {},
-                    "MAX_DRAW_BUFFERS": {},
-                    "MAX_ELEMENTS_INDICES": {},
-                    "MAX_ELEMENTS_VERTICES": {},
-                    "MAX_ELEMENT_INDEX": {},
-                    "MAX_FRAGMENT_INPUT_COMPONENTS": {},
-                    "MAX_FRAGMENT_UNIFORM_BLOCKS": {},
-                    "MAX_FRAGMENT_UNIFORM_COMPONENTS": {},
-                    "MAX_FRAGMENT_UNIFORM_VECTORS": {},
-                    "MAX_PROGRAM_TEXEL_OFFSET": {},
-                    "MAX_RENDERBUFFER_SIZE": {},
-                    "MAX_SAMPLES": {},
-                    "MAX_SERVER_WAIT_TIMEOUT": {},
-                    "MAX_TEXTURE_IMAGE_UNITS": {},
-                    "MAX_TEXTURE_LOD_BIAS": {},
-                    "MAX_TEXTURE_SIZE": {},
-                    "MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS": {},
-                    "MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS": {},
-                    "MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS": {},
-                    "MAX_UNIFORM_BLOCK_SIZE": {},
-                    "MAX_UNIFORM_BUFFER_BINDINGS": {},
-                    "MAX_VARYING_COMPONENTS": {},
-                    "MAX_VARYING_VECTORS": {},
-                    "MAX_VERTEX_ATTRIBS": {},
-                    "MAX_VERTEX_OUTPUT_COMPONENTS": {},
-                    "MAX_VERTEX_TEXTURE_IMAGE_UNITS": {},
-                    "MAX_VERTEX_UNIFORM_BLOCKS": {},
-                    "MAX_VERTEX_UNIFORM_COMPONENTS": {},
-                    "MAX_VERTEX_UNIFORM_VECTORS": {},
-                    "MAX_VIEWPORT_DIMS": {},
-                    "MEDIUM_FLOAT": {},
-                    "MEDIUM_INT": {},
-                    "MIN": {},
-                    "MIN_PROGRAM_TEXEL_OFFSET": {},
-                    "MIRRORED_REPEAT": {},
-                    "NEAREST": {},
-                    "NEAREST_MIPMAP_LINEAR": {},
-                    "NEAREST_MIPMAP_NEAREST": {},
-                    "NEVER": {},
-                    "NICEST": {},
-                    "NONE": {},
-                    "NOTEQUAL": {},
-                    "NO_ERROR": {},
-                    "OBJECT_TYPE": {},
-                    "ONE": {},
-                    "ONE_MINUS_CONSTANT_ALPHA": {},
-                    "ONE_MINUS_CONSTANT_COLOR": {},
-                    "ONE_MINUS_DST_ALPHA": {},
-                    "ONE_MINUS_DST_COLOR": {},
-                    "ONE_MINUS_SRC_ALPHA": {},
-                    "ONE_MINUS_SRC_COLOR": {},
-                    "OUT_OF_MEMORY": {},
-                    "PACK_ALIGNMENT": {},
-                    "PACK_ROW_LENGTH": {},
-                    "PACK_SKIP_PIXELS": {},
-                    "PACK_SKIP_ROWS": {},
-                    "PIXEL_PACK_BUFFER": {},
-                    "PIXEL_PACK_BUFFER_BINDING": {},
-                    "PIXEL_UNPACK_BUFFER": {},
-                    "PIXEL_UNPACK_BUFFER_BINDING": {},
-                    "POINTS": {},
-                    "POLYGON_OFFSET_FACTOR": {},
-                    "POLYGON_OFFSET_FILL": {},
-                    "POLYGON_OFFSET_UNITS": {},
-                    "QUERY_RESULT": {},
-                    "QUERY_RESULT_AVAILABLE": {},
-                    "R11F_G11F_B10F": {},
-                    "R16F": {},
-                    "R16I": {},
-                    "R16UI": {},
-                    "R32F": {},
-                    "R32I": {},
-                    "R32UI": {},
-                    "R8": {},
-                    "R8I": {},
-                    "R8UI": {},
-                    "R8_SNORM": {},
-                    "RASTERIZER_DISCARD": {},
-                    "READ_BUFFER": {},
-                    "READ_FRAMEBUFFER": {},
-                    "READ_FRAMEBUFFER_BINDING": {},
-                    "RED": {},
-                    "RED_BITS": {},
-                    "RED_INTEGER": {},
-                    "RENDERBUFFER": {},
-                    "RENDERBUFFER_ALPHA_SIZE": {},
-                    "RENDERBUFFER_BINDING": {},
-                    "RENDERBUFFER_BLUE_SIZE": {},
-                    "RENDERBUFFER_DEPTH_SIZE": {},
-                    "RENDERBUFFER_GREEN_SIZE": {},
-                    "RENDERBUFFER_HEIGHT": {},
-                    "RENDERBUFFER_INTERNAL_FORMAT": {},
-                    "RENDERBUFFER_RED_SIZE": {},
-                    "RENDERBUFFER_SAMPLES": {},
-                    "RENDERBUFFER_STENCIL_SIZE": {},
-                    "RENDERBUFFER_WIDTH": {},
-                    "RENDERER": {},
-                    "REPEAT": {},
-                    "REPLACE": {},
-                    "RG": {},
-                    "RG16F": {},
-                    "RG16I": {},
-                    "RG16UI": {},
-                    "RG32F": {},
-                    "RG32I": {},
-                    "RG32UI": {},
-                    "RG8": {},
-                    "RG8I": {},
-                    "RG8UI": {},
-                    "RG8_SNORM": {},
-                    "RGB": {},
-                    "RGB10_A2": {},
-                    "RGB10_A2UI": {},
-                    "RGB16F": {},
-                    "RGB16I": {},
-                    "RGB16UI": {},
-                    "RGB32F": {},
-                    "RGB32I": {},
-                    "RGB32UI": {},
-                    "RGB565": {},
-                    "RGB5_A1": {},
-                    "RGB8": {},
-                    "RGB8I": {},
-                    "RGB8UI": {},
-                    "RGB8_SNORM": {},
-                    "RGB9_E5": {},
-                    "RGBA": {},
-                    "RGBA16F": {},
-                    "RGBA16I": {},
-                    "RGBA16UI": {},
-                    "RGBA32F": {},
-                    "RGBA32I": {},
-                    "RGBA32UI": {},
-                    "RGBA4": {},
-                    "RGBA8": {},
-                    "RGBA8I": {},
-                    "RGBA8UI": {},
-                    "RGBA8_SNORM": {},
-                    "RGBA_INTEGER": {},
-                    "RGB_INTEGER": {},
-                    "RG_INTEGER": {},
-                    "SAMPLER_2D": {},
-                    "SAMPLER_2D_ARRAY": {},
-                    "SAMPLER_2D_ARRAY_SHADOW": {},
-                    "SAMPLER_2D_SHADOW": {},
-                    "SAMPLER_3D": {},
-                    "SAMPLER_BINDING": {},
-                    "SAMPLER_CUBE": {},
-                    "SAMPLER_CUBE_SHADOW": {},
-                    "SAMPLES": {},
-                    "SAMPLE_ALPHA_TO_COVERAGE": {},
-                    "SAMPLE_BUFFERS": {},
-                    "SAMPLE_COVERAGE": {},
-                    "SAMPLE_COVERAGE_INVERT": {},
-                    "SAMPLE_COVERAGE_VALUE": {},
-                    "SCISSOR_BOX": {},
-                    "SCISSOR_TEST": {},
-                    "SEPARATE_ATTRIBS": {},
-                    "SHADER_TYPE": {},
-                    "SHADING_LANGUAGE_VERSION": {},
-                    "SHORT": {},
-                    "SIGNALED": {},
-                    "SIGNED_NORMALIZED": {},
-                    "SRC_ALPHA": {},
-                    "SRC_ALPHA_SATURATE": {},
-                    "SRC_COLOR": {},
-                    "SRGB": {},
-                    "SRGB8": {},
-                    "SRGB8_ALPHA8": {},
-                    "STATIC_COPY": {},
-                    "STATIC_DRAW": {},
-                    "STATIC_READ": {},
-                    "STENCIL": {},
-                    "STENCIL_ATTACHMENT": {},
-                    "STENCIL_BACK_FAIL": {},
-                    "STENCIL_BACK_FUNC": {},
-                    "STENCIL_BACK_PASS_DEPTH_FAIL": {},
-                    "STENCIL_BACK_PASS_DEPTH_PASS": {},
-                    "STENCIL_BACK_REF": {},
-                    "STENCIL_BACK_VALUE_MASK": {},
-                    "STENCIL_BACK_WRITEMASK": {},
-                    "STENCIL_BITS": {},
-                    "STENCIL_BUFFER_BIT": {},
-                    "STENCIL_CLEAR_VALUE": {},
-                    "STENCIL_FAIL": {},
-                    "STENCIL_FUNC": {},
-                    "STENCIL_INDEX8": {},
-                    "STENCIL_PASS_DEPTH_FAIL": {},
-                    "STENCIL_PASS_DEPTH_PASS": {},
-                    "STENCIL_REF": {},
-                    "STENCIL_TEST": {},
-                    "STENCIL_VALUE_MASK": {},
-                    "STENCIL_WRITEMASK": {},
-                    "STREAM_COPY": {},
-                    "STREAM_DRAW": {},
-                    "STREAM_READ": {},
-                    "SUBPIXEL_BITS": {},
-                    "SYNC_CONDITION": {},
-                    "SYNC_FENCE": {},
-                    "SYNC_FLAGS": {},
-                    "SYNC_FLUSH_COMMANDS_BIT": {},
-                    "SYNC_GPU_COMMANDS_COMPLETE": {},
-                    "SYNC_STATUS": {},
-                    "TEXTURE": {},
-                    "TEXTURE0": {},
-                    "TEXTURE1": {},
-                    "TEXTURE10": {},
-                    "TEXTURE11": {},
-                    "TEXTURE12": {},
-                    "TEXTURE13": {},
-                    "TEXTURE14": {},
-                    "TEXTURE15": {},
-                    "TEXTURE16": {},
-                    "TEXTURE17": {},
-                    "TEXTURE18": {},
-                    "TEXTURE19": {},
-                    "TEXTURE2": {},
-                    "TEXTURE20": {},
-                    "TEXTURE21": {},
-                    "TEXTURE22": {},
-                    "TEXTURE23": {},
-                    "TEXTURE24": {},
-                    "TEXTURE25": {},
-                    "TEXTURE26": {},
-                    "TEXTURE27": {},
-                    "TEXTURE28": {},
-                    "TEXTURE29": {},
-                    "TEXTURE3": {},
-                    "TEXTURE30": {},
-                    "TEXTURE31": {},
-                    "TEXTURE4": {},
-                    "TEXTURE5": {},
-                    "TEXTURE6": {},
-                    "TEXTURE7": {},
-                    "TEXTURE8": {},
-                    "TEXTURE9": {},
-                    "TEXTURE_2D": {},
-                    "TEXTURE_2D_ARRAY": {},
-                    "TEXTURE_3D": {},
-                    "TEXTURE_BASE_LEVEL": {},
-                    "TEXTURE_BINDING_2D": {},
-                    "TEXTURE_BINDING_2D_ARRAY": {},
-                    "TEXTURE_BINDING_3D": {},
-                    "TEXTURE_BINDING_CUBE_MAP": {},
-                    "TEXTURE_COMPARE_FUNC": {},
-                    "TEXTURE_COMPARE_MODE": {},
-                    "TEXTURE_CUBE_MAP": {},
-                    "TEXTURE_CUBE_MAP_NEGATIVE_X": {},
-                    "TEXTURE_CUBE_MAP_NEGATIVE_Y": {},
-                    "TEXTURE_CUBE_MAP_NEGATIVE_Z": {},
-                    "TEXTURE_CUBE_MAP_POSITIVE_X": {},
-                    "TEXTURE_CUBE_MAP_POSITIVE_Y": {},
-                    "TEXTURE_CUBE_MAP_POSITIVE_Z": {},
-                    "TEXTURE_IMMUTABLE_FORMAT": {},
-                    "TEXTURE_IMMUTABLE_LEVELS": {},
-                    "TEXTURE_MAG_FILTER": {},
-                    "TEXTURE_MAX_LEVEL": {},
-                    "TEXTURE_MAX_LOD": {},
-                    "TEXTURE_MIN_FILTER": {},
-                    "TEXTURE_MIN_LOD": {},
-                    "TEXTURE_WRAP_R": {},
-                    "TEXTURE_WRAP_S": {},
-                    "TEXTURE_WRAP_T": {},
-                    "TIMEOUT_EXPIRED": {},
-                    "TIMEOUT_IGNORED": {},
-                    "TRANSFORM_FEEDBACK": {},
-                    "TRANSFORM_FEEDBACK_ACTIVE": {},
-                    "TRANSFORM_FEEDBACK_BINDING": {},
-                    "TRANSFORM_FEEDBACK_BUFFER": {},
-                    "TRANSFORM_FEEDBACK_BUFFER_BINDING": {},
-                    "TRANSFORM_FEEDBACK_BUFFER_MODE": {},
-                    "TRANSFORM_FEEDBACK_BUFFER_SIZE": {},
-                    "TRANSFORM_FEEDBACK_BUFFER_START": {},
-                    "TRANSFORM_FEEDBACK_PAUSED": {},
-                    "TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN": {},
-                    "TRANSFORM_FEEDBACK_VARYINGS": {},
-                    "TRIANGLES": {},
-                    "TRIANGLE_FAN": {},
-                    "TRIANGLE_STRIP": {},
-                    "UNIFORM_ARRAY_STRIDE": {},
-                    "UNIFORM_BLOCK_ACTIVE_UNIFORMS": {},
-                    "UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES": {},
-                    "UNIFORM_BLOCK_BINDING": {},
-                    "UNIFORM_BLOCK_DATA_SIZE": {},
-                    "UNIFORM_BLOCK_INDEX": {},
-                    "UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER": {},
-                    "UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER": {},
-                    "UNIFORM_BUFFER": {},
-                    "UNIFORM_BUFFER_BINDING": {},
-                    "UNIFORM_BUFFER_OFFSET_ALIGNMENT": {},
-                    "UNIFORM_BUFFER_SIZE": {},
-                    "UNIFORM_BUFFER_START": {},
-                    "UNIFORM_IS_ROW_MAJOR": {},
-                    "UNIFORM_MATRIX_STRIDE": {},
-                    "UNIFORM_OFFSET": {},
-                    "UNIFORM_SIZE": {},
-                    "UNIFORM_TYPE": {},
-                    "UNPACK_ALIGNMENT": {},
-                    "UNPACK_COLORSPACE_CONVERSION_WEBGL": {},
-                    "UNPACK_FLIP_Y_WEBGL": {},
-                    "UNPACK_IMAGE_HEIGHT": {},
-                    "UNPACK_PREMULTIPLY_ALPHA_WEBGL": {},
-                    "UNPACK_ROW_LENGTH": {},
-                    "UNPACK_SKIP_IMAGES": {},
-                    "UNPACK_SKIP_PIXELS": {},
-                    "UNPACK_SKIP_ROWS": {},
-                    "UNSIGNALED": {},
-                    "UNSIGNED_BYTE": {},
-                    "UNSIGNED_INT": {},
-                    "UNSIGNED_INT_10F_11F_11F_REV": {},
-                    "UNSIGNED_INT_24_8": {},
-                    "UNSIGNED_INT_2_10_10_10_REV": {},
-                    "UNSIGNED_INT_5_9_9_9_REV": {},
-                    "UNSIGNED_INT_SAMPLER_2D": {},
-                    "UNSIGNED_INT_SAMPLER_2D_ARRAY": {},
-                    "UNSIGNED_INT_SAMPLER_3D": {},
-                    "UNSIGNED_INT_SAMPLER_CUBE": {},
-                    "UNSIGNED_INT_VEC2": {},
-                    "UNSIGNED_INT_VEC3": {},
-                    "UNSIGNED_INT_VEC4": {},
-                    "UNSIGNED_NORMALIZED": {},
-                    "UNSIGNED_SHORT": {},
-                    "UNSIGNED_SHORT_4_4_4_4": {},
-                    "UNSIGNED_SHORT_5_5_5_1": {},
-                    "UNSIGNED_SHORT_5_6_5": {},
-                    "VALIDATE_STATUS": {},
-                    "VENDOR": {},
-                    "VERSION": {},
-                    "VERTEX_ARRAY_BINDING": {},
-                    "VERTEX_ATTRIB_ARRAY_BUFFER_BINDING": {},
-                    "VERTEX_ATTRIB_ARRAY_DIVISOR": {},
-                    "VERTEX_ATTRIB_ARRAY_ENABLED": {},
-                    "VERTEX_ATTRIB_ARRAY_INTEGER": {},
-                    "VERTEX_ATTRIB_ARRAY_NORMALIZED": {},
-                    "VERTEX_ATTRIB_ARRAY_POINTER": {},
-                    "VERTEX_ATTRIB_ARRAY_SIZE": {},
-                    "VERTEX_ATTRIB_ARRAY_STRIDE": {},
-                    "VERTEX_ATTRIB_ARRAY_TYPE": {},
-                    "VERTEX_SHADER": {},
-                    "VIEWPORT": {},
-                    "WAIT_FAILED": {},
-                    "ZERO": {},
-                    "activeTexture": {
-                      "closure_uid_20499601": {}
-                    },
-                    "attachShader": {
-                      "closure_uid_20499601": {}
-                    },
-                    "beginQuery": {
-                      "closure_uid_20499601": {}
-                    },
-                    "beginTransformFeedback": {
-                      "closure_uid_20499601": {}
-                    },
-                    "bindAttribLocation": {
-                      "closure_uid_20499601": {}
-                    },
-                    "bindBuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "bindBufferBase": {
-                      "closure_uid_20499601": {}
-                    },
-                    "bindBufferRange": {
-                      "closure_uid_20499601": {}
-                    },
-                    "bindFramebuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "bindRenderbuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "bindSampler": {
-                      "closure_uid_20499601": {}
-                    },
-                    "bindTexture": {
-                      "closure_uid_20499601": {}
-                    },
-                    "bindTransformFeedback": {
-                      "closure_uid_20499601": {}
-                    },
-                    "bindVertexArray": {
-                      "closure_uid_20499601": {}
-                    },
-                    "blendColor": {
-                      "closure_uid_20499601": {}
-                    },
-                    "blendEquation": {
-                      "closure_uid_20499601": {}
-                    },
-                    "blendEquationSeparate": {
-                      "closure_uid_20499601": {}
-                    },
-                    "blendFunc": {
-                      "closure_uid_20499601": {}
-                    },
-                    "blendFuncSeparate": {
-                      "closure_uid_20499601": {}
-                    },
-                    "blitFramebuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "bufferData": {
-                      "closure_uid_20499601": {}
-                    },
-                    "bufferSubData": {
-                      "closure_uid_20499601": {}
-                    },
-                    "canvas": {
-                      "addEventListener": {
-                        "closure_uid_20499601": {}
-                      },
-                      "closure_uid_20499601": {},
-                      "convertToBlob": {
-                        "closure_uid_20499601": {}
-                      },
-                      "dispatchEvent": {
-                        "closure_uid_20499601": {}
-                      },
-                      "getContext": {
-                        "closure_uid_20499601": {}
-                      },
-                      "height": {},
-                      "removeEventListener": {
-                        "closure_uid_20499601": {}
-                      },
-                      "transferToImageBitmap": {
-                        "closure_uid_20499601": {}
-                      },
-                      "width": {}
-                    },
-                    "checkFramebufferStatus": {
-                      "closure_uid_20499601": {}
-                    },
-                    "clear": {
-                      "closure_uid_20499601": {}
-                    },
-                    "clearBufferfi": {
-                      "closure_uid_20499601": {}
-                    },
-                    "clearBufferfv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "clearBufferiv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "clearBufferuiv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "clearColor": {
-                      "closure_uid_20499601": {}
-                    },
-                    "clearDepth": {
-                      "closure_uid_20499601": {}
-                    },
-                    "clearStencil": {
-                      "closure_uid_20499601": {}
-                    },
-                    "clientWaitSync": {
-                      "closure_uid_20499601": {}
-                    },
-                    "closure_uid_20499601": {},
-                    "colorMask": {
-                      "closure_uid_20499601": {}
-                    },
-                    "compileShader": {
-                      "closure_uid_20499601": {}
-                    },
-                    "compressedTexImage2D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "compressedTexImage3D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "compressedTexSubImage2D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "compressedTexSubImage3D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "copyBufferSubData": {
-                      "closure_uid_20499601": {}
-                    },
-                    "copyTexImage2D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "copyTexSubImage2D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "copyTexSubImage3D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "createBuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "createFramebuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "createProgram": {
-                      "closure_uid_20499601": {}
-                    },
-                    "createQuery": {
-                      "closure_uid_20499601": {}
-                    },
-                    "createRenderbuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "createSampler": {
-                      "closure_uid_20499601": {}
-                    },
-                    "createShader": {
-                      "closure_uid_20499601": {}
-                    },
-                    "createTexture": {
-                      "closure_uid_20499601": {}
-                    },
-                    "createTransformFeedback": {
-                      "closure_uid_20499601": {}
-                    },
-                    "createVertexArray": {
-                      "closure_uid_20499601": {}
-                    },
-                    "cullFace": {
-                      "closure_uid_20499601": {}
-                    },
-                    "deleteBuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "deleteFramebuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "deleteProgram": {
-                      "closure_uid_20499601": {}
-                    },
-                    "deleteQuery": {
-                      "closure_uid_20499601": {}
-                    },
-                    "deleteRenderbuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "deleteSampler": {
-                      "closure_uid_20499601": {}
-                    },
-                    "deleteShader": {
-                      "closure_uid_20499601": {}
-                    },
-                    "deleteSync": {
-                      "closure_uid_20499601": {}
-                    },
-                    "deleteTexture": {
-                      "closure_uid_20499601": {}
-                    },
-                    "deleteTransformFeedback": {
-                      "closure_uid_20499601": {}
-                    },
-                    "deleteVertexArray": {
-                      "closure_uid_20499601": {}
-                    },
-                    "depthFunc": {
-                      "closure_uid_20499601": {}
-                    },
-                    "depthMask": {
-                      "closure_uid_20499601": {}
-                    },
-                    "depthRange": {
-                      "closure_uid_20499601": {}
-                    },
-                    "detachShader": {
-                      "closure_uid_20499601": {}
-                    },
-                    "disable": {
-                      "closure_uid_20499601": {}
-                    },
-                    "disableVertexAttribArray": {
-                      "closure_uid_20499601": {}
-                    },
-                    "drawArrays": {
-                      "closure_uid_20499601": {}
-                    },
-                    "drawArraysInstanced": {
-                      "closure_uid_20499601": {}
-                    },
-                    "drawBuffers": {
-                      "closure_uid_20499601": {}
-                    },
-                    "drawElements": {
-                      "closure_uid_20499601": {}
-                    },
-                    "drawElementsInstanced": {
-                      "closure_uid_20499601": {}
-                    },
-                    "drawRangeElements": {
-                      "closure_uid_20499601": {}
-                    },
-                    "drawingBufferHeight": {},
-                    "drawingBufferWidth": {},
-                    "enable": {
-                      "closure_uid_20499601": {}
-                    },
-                    "enableVertexAttribArray": {
-                      "closure_uid_20499601": {}
-                    },
-                    "endQuery": {
-                      "closure_uid_20499601": {}
-                    },
-                    "endTransformFeedback": {
-                      "closure_uid_20499601": {}
-                    },
-                    "fenceSync": {
-                      "closure_uid_20499601": {}
-                    },
-                    "finish": {
-                      "closure_uid_20499601": {}
-                    },
-                    "flush": {
-                      "closure_uid_20499601": {}
-                    },
-                    "framebufferRenderbuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "framebufferTexture2D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "framebufferTextureLayer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "frontFace": {
-                      "closure_uid_20499601": {}
-                    },
-                    "generateMipmap": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getActiveAttrib": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getActiveUniform": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getActiveUniformBlockName": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getActiveUniformBlockParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getActiveUniforms": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getAttachedShaders": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getAttribLocation": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getBufferParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getBufferSubData": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getContextAttributes": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getError": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getExtension": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getFragDataLocation": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getFramebufferAttachmentParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getIndexedParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getInternalformatParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getProgramInfoLog": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getProgramParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getQuery": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getQueryParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getRenderbufferParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getSamplerParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getShaderInfoLog": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getShaderParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getShaderPrecisionFormat": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getShaderSource": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getSupportedExtensions": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getSyncParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getTexParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getTransformFeedbackVarying": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getUniform": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getUniformBlockIndex": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getUniformIndices": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getUniformLocation": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getVertexAttrib": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getVertexAttribOffset": {
-                      "closure_uid_20499601": {}
-                    },
-                    "hint": {
-                      "closure_uid_20499601": {}
-                    },
-                    "invalidateFramebuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "invalidateSubFramebuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isBuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isContextLost": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isEnabled": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isFramebuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isProgram": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isQuery": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isRenderbuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isSampler": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isShader": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isSync": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isTexture": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isTransformFeedback": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isVertexArray": {
-                      "closure_uid_20499601": {}
-                    },
-                    "lineWidth": {
-                      "closure_uid_20499601": {}
-                    },
-                    "linkProgram": {
-                      "closure_uid_20499601": {}
-                    },
-                    "pauseTransformFeedback": {
-                      "closure_uid_20499601": {}
-                    },
-                    "pixelStorei": {
-                      "closure_uid_20499601": {}
-                    },
-                    "polygonOffset": {
-                      "closure_uid_20499601": {}
-                    },
-                    "readBuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "readPixels": {
-                      "closure_uid_20499601": {}
-                    },
-                    "renderbufferStorage": {
-                      "closure_uid_20499601": {}
-                    },
-                    "renderbufferStorageMultisample": {
-                      "closure_uid_20499601": {}
-                    },
-                    "resumeTransformFeedback": {
-                      "closure_uid_20499601": {}
-                    },
-                    "sampleCoverage": {
-                      "closure_uid_20499601": {}
-                    },
-                    "samplerParameterf": {
-                      "closure_uid_20499601": {}
-                    },
-                    "samplerParameteri": {
-                      "closure_uid_20499601": {}
-                    },
-                    "scissor": {
-                      "closure_uid_20499601": {}
-                    },
-                    "shaderSource": {
-                      "closure_uid_20499601": {}
-                    },
-                    "stencilFunc": {
-                      "closure_uid_20499601": {}
-                    },
-                    "stencilFuncSeparate": {
-                      "closure_uid_20499601": {}
-                    },
-                    "stencilMask": {
-                      "closure_uid_20499601": {}
-                    },
-                    "stencilMaskSeparate": {
-                      "closure_uid_20499601": {}
-                    },
-                    "stencilOp": {
-                      "closure_uid_20499601": {}
-                    },
-                    "stencilOpSeparate": {
-                      "closure_uid_20499601": {}
-                    },
-                    "texImage2D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "texImage3D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "texParameterf": {
-                      "closure_uid_20499601": {}
-                    },
-                    "texParameteri": {
-                      "closure_uid_20499601": {}
-                    },
-                    "texStorage2D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "texStorage3D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "texSubImage2D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "texSubImage3D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "transformFeedbackVaryings": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform1f": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform1fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform1i": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform1iv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform1ui": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform1uiv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform2f": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform2fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform2i": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform2iv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform2ui": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform2uiv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform3f": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform3fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform3i": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform3iv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform3ui": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform3uiv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform4f": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform4fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform4i": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform4iv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform4ui": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform4uiv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniformBlockBinding": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniformMatrix2fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniformMatrix2x3fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniformMatrix2x4fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniformMatrix3fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniformMatrix3x2fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniformMatrix3x4fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniformMatrix4fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniformMatrix4x2fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniformMatrix4x3fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "useProgram": {
-                      "closure_uid_20499601": {}
-                    },
-                    "validateProgram": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttrib1f": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttrib1fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttrib2f": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttrib2fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttrib3f": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttrib3fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttrib4f": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttrib4fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttribDivisor": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttribI4i": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttribI4iv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttribI4ui": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttribI4uiv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttribIPointer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttribPointer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "viewport": {
-                      "closure_uid_20499601": {}
-                    },
-                    "waitSync": {
-                      "closure_uid_20499601": {}
-                    }
-                  },
-                  "indexBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isQueryAvailable": {
-                    "closure_uid_20499601": {}
-                  },
-                  "itemsToPoll": {},
-                  "outputTexture": {},
-                  "pollFence": {
-                    "closure_uid_20499601": {}
-                  },
-                  "pollItems": {
-                    "closure_uid_20499601": {}
-                  },
-                  "program": {},
-                  "setInputMatrixTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "setOutputMatrixTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "setOutputMatrixTextureDriver": {
-                    "closure_uid_20499601": {}
-                  },
-                  "setOutputMatrixWriteRegion": {
-                    "closure_uid_20499601": {}
-                  },
-                  "setOutputMatrixWriteRegionDriver": {
-                    "closure_uid_20499601": {}
-                  },
-                  "setOutputPackedMatrixTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "setOutputPackedMatrixWriteRegion": {
-                    "closure_uid_20499601": {}
-                  },
-                  "setProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "textureConfig": {
-                    "closure_uid_20499601": {},
-                    "defaultNumChannels": {},
-                    "downloadTextureFormat": {},
-                    "downloadUnpackNumChannels": {},
-                    "internalFormatFloat": {},
-                    "internalFormatHalfFloat": {},
-                    "internalFormatPackedFloat": {},
-                    "internalFormatPackedHalfFloat": {},
-                    "textureFormatFloat": {},
-                    "textureTypeFloat": {},
-                    "textureTypeHalfFloat": {}
-                  },
-                  "throwIfDisposed": {
-                    "closure_uid_20499601": {}
-                  },
-                  "throwIfNoProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "unbindTextureToFrameBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uploadDenseMatrixToTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uploadPixelDataToTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrsAreBound": {},
-                  "vertexBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "waitForQueryAndGetTime": {
-                    "closure_uid_20499601": {}
-                  }
-                },
-                "log": function () { },
-                "logEnabled": {},
-                "numFreeTextures": {},
-                "numUsedTextures": {},
-                "releaseTexture": function () { },
-                "usedTextures": {}
-              },
-              "tile": function () { },
-              "time": function () { },
-              "topk": function () { },
-              "transpose": function () { },
-              "unpackTensor": function () { },
-              "unsortedSegmentSum": function () { },
-              "unstack": function () { },
-              "uploadToGPU": function () { },
-              "uploadWaitMs": {},
-              "warnedAboutMemory": {},
-              "where": function () { },
-              "write": function () { },
-              "zerosLike": function () { }
-            },
-            "logger": {
-              "logKernelProfile": function () { }
-            },
-            "profileKernel": function () { }
-          },
-          "read": function () { },
-          "readSync": function () { },
-          "ready": function () { },
-          "registerBackend": function () { },
-          "registerTensor": function () { },
-          "registerVariable": function () { },
-          "registeredVariables": {},
-          "registry": {
-            "closure_uid_20499601": {},
-            "webgl": {
-              "LRNGrad": function () { },
-              "abs": function () { },
-              "acos": function () { },
-              "acosh": function () { },
-              "acquireTexture": function () { },
-              "add": function () { },
-              "addN": function () { },
-              "all": function () { },
-              "any": function () { },
-              "argMax": function () { },
-              "argMin": function () { },
-              "argMinMaxReduce": function () { },
-              "argReduce": function () { },
-              "argReducePacked": function () { },
-              "asin": function () { },
-              "asinh": function () { },
-              "atan": function () { },
-              "atan2": function () { },
-              "atanh": function () { },
-              "avgPool": function () { },
-              "avgPool3d": function () { },
-              "avgPool3dBackprop": function () { },
-              "avgPoolBackprop": function () { },
-              "batchMatMul": function () { },
-              "batchNormalization": function () { },
-              "batchToSpaceND": function () { },
-              "binaryCache": {},
-              "canvas": {
-                "addEventListener": {
-                  "closure_uid_20499601": {}
-                },
-                "closure_uid_20499601": {},
-                "convertToBlob": {
-                  "closure_uid_20499601": {}
-                },
-                "dispatchEvent": {
-                  "closure_uid_20499601": {}
-                },
-                "getContext": {
-                  "closure_uid_20499601": {}
-                },
-                "height": {},
-                "removeEventListener": {
-                  "closure_uid_20499601": {}
-                },
-                "transferToImageBitmap": {
-                  "closure_uid_20499601": {}
-                },
-                "width": {}
-              },
-              "cast": function () { },
-              "ceil": function () { },
-              "clip": function () { },
-              "closure_uid_20499601": {},
-              "compileAndRun": function () { },
-              "complex": function () { },
-              "complexAbs": function () { },
-              "complexSeparableBinaryOp": function () { },
-              "computeBytes": function () { },
-              "concat": function () { },
-              "conv2d": function () { },
-              "conv2dByMatMul": function () { },
-              "conv2dDerFilter": function () { },
-              "conv2dDerInput": function () { },
-              "conv2dWithIm2Row": function () { },
-              "conv3d": function () { },
-              "conv3dDerFilter": function () { },
-              "conv3dDerInput": function () { },
-              "convertAndCacheOnCPU": function () { },
-              "cos": function () { },
-              "cosh": function () { },
-              "cropAndResize": function () { },
-              "cumsum": function () { },
-              "dataRefCount": {},
-              "decode": function () { },
-              "depthToSpace": function () { },
-              "depthwiseConv2D": function () { },
-              "depthwiseConv2DDerFilter": function () { },
-              "depthwiseConv2DDerInput": function () { },
-              "diag": function () { },
-              "dispose": function () { },
-              "disposeData": function () { },
-              "disposed": {},
-              "downloadWaitMs": {},
-              "elu": function () { },
-              "eluDer": function () { },
-              "endTimer": function () { },
-              "epsilon": function () { },
-              "equal": function () { },
-              "erf": function () { },
-              "exp": function () { },
-              "expm1": function () { },
-              "fft": function () { },
-              "fftImpl": function () { },
-              "fill": function () { },
-              "floatPrecision": function () { },
-              "floor": function () { },
-              "floorDiv": function () { },
-              "fromPixels": function () { },
-              "fusedBatchMatMul": function () { },
-              "fusedConv2d": function () { },
-              "gather": function () { },
-              "gatherND": function () { },
-              "getAndSaveBinary": function () { },
-              "getCPUBackend": function () { },
-              "getDataInfo": function () { },
-              "getGPGPUContext": function () { },
-              "getQueryTime": function () { },
-              "getTexture": function () { },
-              "getTextureManager": function () { },
-              "getValuesFromTexture": function () { },
-              "gpgpu": {
-                "addItemToPoll": {
-                  "closure_uid_20499601": {}
-                },
-                "beginQuery": {
-                  "closure_uid_20499601": {}
-                },
-                "bindTextureToFrameBuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "blockUntilAllProgramsCompleted": {
-                  "closure_uid_20499601": {}
-                },
-                "closure_uid_20499601": {},
-                "colorBufferFloatExtension": {
-                  "closure_uid_20499601": {}
-                },
-                "createAndWaitForFence": {
-                  "closure_uid_20499601": {}
-                },
-                "createBufferFromTexture": {
-                  "closure_uid_20499601": {}
-                },
-                "createFence": {
-                  "closure_uid_20499601": {}
-                },
-                "createFloat16MatrixTexture": {
-                  "closure_uid_20499601": {}
-                },
-                "createFloat16PackedMatrixTexture": {
-                  "closure_uid_20499601": {}
-                },
-                "createFloat32MatrixTexture": {
-                  "closure_uid_20499601": {}
-                },
-                "createPackedMatrixTexture": {
-                  "closure_uid_20499601": {}
-                },
-                "createProgram": {
-                  "closure_uid_20499601": {}
-                },
-                "createUnsignedBytesMatrixTexture": {
-                  "closure_uid_20499601": {}
-                },
-                "debug": {},
-                "debugValidate": {
-                  "closure_uid_20499601": {}
-                },
-                "deleteMatrixTexture": {
-                  "closure_uid_20499601": {}
-                },
-                "deleteProgram": {
-                  "closure_uid_20499601": {}
-                },
-                "dispose": {
-                  "closure_uid_20499601": {}
-                },
-                "disposed": {},
-                "downloadByteEncodedFloatMatrixFromOutputTexture": {
-                  "closure_uid_20499601": {}
-                },
-                "downloadFloat32MatrixFromBuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "downloadMatrixDriver": {
-                  "closure_uid_20499601": {}
-                },
-                "downloadMatrixFromPackedTexture": {
-                  "closure_uid_20499601": {}
-                },
-                "downloadPackedMatrixFromBuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "endQuery": {
-                  "closure_uid_20499601": {}
-                },
-                "executeProgram": {
-                  "closure_uid_20499601": {}
-                },
-                "framebuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "getAttributeLocation": {
-                  "closure_uid_20499601": {}
-                },
-                "getQueryTime": {
-                  "closure_uid_20499601": {}
-                },
-                "getQueryTimerExtension": {
-                  "closure_uid_20499601": {}
-                },
-                "getQueryTimerExtensionWebGL1": {
-                  "closure_uid_20499601": {}
-                },
-                "getQueryTimerExtensionWebGL2": {
-                  "closure_uid_20499601": {}
-                },
-                "getUniformLocation": {
-                  "closure_uid_20499601": {}
-                },
-                "getUniformLocationNoThrow": {
-                  "closure_uid_20499601": {}
-                },
-                "gl": {
-                  "ACTIVE_ATTRIBUTES": {},
-                  "ACTIVE_TEXTURE": {},
-                  "ACTIVE_UNIFORMS": {},
-                  "ACTIVE_UNIFORM_BLOCKS": {},
-                  "ALIASED_LINE_WIDTH_RANGE": {},
-                  "ALIASED_POINT_SIZE_RANGE": {},
-                  "ALPHA": {},
-                  "ALPHA_BITS": {},
-                  "ALREADY_SIGNALED": {},
-                  "ALWAYS": {},
-                  "ANY_SAMPLES_PASSED": {},
-                  "ANY_SAMPLES_PASSED_CONSERVATIVE": {},
-                  "ARRAY_BUFFER": {},
-                  "ARRAY_BUFFER_BINDING": {},
-                  "ATTACHED_SHADERS": {},
-                  "BACK": {},
-                  "BLEND": {},
-                  "BLEND_COLOR": {},
-                  "BLEND_DST_ALPHA": {},
-                  "BLEND_DST_RGB": {},
-                  "BLEND_EQUATION": {},
-                  "BLEND_EQUATION_ALPHA": {},
-                  "BLEND_EQUATION_RGB": {},
-                  "BLEND_SRC_ALPHA": {},
-                  "BLEND_SRC_RGB": {},
-                  "BLUE_BITS": {},
-                  "BOOL": {},
-                  "BOOL_VEC2": {},
-                  "BOOL_VEC3": {},
-                  "BOOL_VEC4": {},
-                  "BROWSER_DEFAULT_WEBGL": {},
-                  "BUFFER_SIZE": {},
-                  "BUFFER_USAGE": {},
-                  "BYTE": {},
-                  "CCW": {},
-                  "CLAMP_TO_EDGE": {},
-                  "COLOR": {},
-                  "COLOR_ATTACHMENT0": {},
-                  "COLOR_ATTACHMENT1": {},
-                  "COLOR_ATTACHMENT10": {},
-                  "COLOR_ATTACHMENT11": {},
-                  "COLOR_ATTACHMENT12": {},
-                  "COLOR_ATTACHMENT13": {},
-                  "COLOR_ATTACHMENT14": {},
-                  "COLOR_ATTACHMENT15": {},
-                  "COLOR_ATTACHMENT2": {},
-                  "COLOR_ATTACHMENT3": {},
-                  "COLOR_ATTACHMENT4": {},
-                  "COLOR_ATTACHMENT5": {},
-                  "COLOR_ATTACHMENT6": {},
-                  "COLOR_ATTACHMENT7": {},
-                  "COLOR_ATTACHMENT8": {},
-                  "COLOR_ATTACHMENT9": {},
-                  "COLOR_BUFFER_BIT": {},
-                  "COLOR_CLEAR_VALUE": {},
-                  "COLOR_WRITEMASK": {},
-                  "COMPARE_REF_TO_TEXTURE": {},
-                  "COMPILE_STATUS": {},
-                  "COMPRESSED_TEXTURE_FORMATS": {},
-                  "CONDITION_SATISFIED": {},
-                  "CONSTANT_ALPHA": {},
-                  "CONSTANT_COLOR": {},
-                  "CONTEXT_LOST_WEBGL": {},
-                  "COPY_READ_BUFFER": {},
-                  "COPY_READ_BUFFER_BINDING": {},
-                  "COPY_WRITE_BUFFER": {},
-                  "COPY_WRITE_BUFFER_BINDING": {},
-                  "CULL_FACE": {},
-                  "CULL_FACE_MODE": {},
-                  "CURRENT_PROGRAM": {},
-                  "CURRENT_QUERY": {},
-                  "CURRENT_VERTEX_ATTRIB": {},
-                  "CW": {},
-                  "DECR": {},
-                  "DECR_WRAP": {},
-                  "DELETE_STATUS": {},
-                  "DEPTH": {},
-                  "DEPTH24_STENCIL8": {},
-                  "DEPTH32F_STENCIL8": {},
-                  "DEPTH_ATTACHMENT": {},
-                  "DEPTH_BITS": {},
-                  "DEPTH_BUFFER_BIT": {},
-                  "DEPTH_CLEAR_VALUE": {},
-                  "DEPTH_COMPONENT": {},
-                  "DEPTH_COMPONENT16": {},
-                  "DEPTH_COMPONENT24": {},
-                  "DEPTH_COMPONENT32F": {},
-                  "DEPTH_FUNC": {},
-                  "DEPTH_RANGE": {},
-                  "DEPTH_STENCIL": {},
-                  "DEPTH_STENCIL_ATTACHMENT": {},
-                  "DEPTH_TEST": {},
-                  "DEPTH_WRITEMASK": {},
-                  "DITHER": {},
-                  "DONT_CARE": {},
-                  "DRAW_BUFFER0": {},
-                  "DRAW_BUFFER1": {},
-                  "DRAW_BUFFER10": {},
-                  "DRAW_BUFFER11": {},
-                  "DRAW_BUFFER12": {},
-                  "DRAW_BUFFER13": {},
-                  "DRAW_BUFFER14": {},
-                  "DRAW_BUFFER15": {},
-                  "DRAW_BUFFER2": {},
-                  "DRAW_BUFFER3": {},
-                  "DRAW_BUFFER4": {},
-                  "DRAW_BUFFER5": {},
-                  "DRAW_BUFFER6": {},
-                  "DRAW_BUFFER7": {},
-                  "DRAW_BUFFER8": {},
-                  "DRAW_BUFFER9": {},
-                  "DRAW_FRAMEBUFFER": {},
-                  "DRAW_FRAMEBUFFER_BINDING": {},
-                  "DST_ALPHA": {},
-                  "DST_COLOR": {},
-                  "DYNAMIC_COPY": {},
-                  "DYNAMIC_DRAW": {},
-                  "DYNAMIC_READ": {},
-                  "ELEMENT_ARRAY_BUFFER": {},
-                  "ELEMENT_ARRAY_BUFFER_BINDING": {},
-                  "EQUAL": {},
-                  "FASTEST": {},
-                  "FLOAT": {},
-                  "FLOAT_32_UNSIGNED_INT_24_8_REV": {},
-                  "FLOAT_MAT2": {},
-                  "FLOAT_MAT2x3": {},
-                  "FLOAT_MAT2x4": {},
-                  "FLOAT_MAT3": {},
-                  "FLOAT_MAT3x2": {},
-                  "FLOAT_MAT3x4": {},
-                  "FLOAT_MAT4": {},
-                  "FLOAT_MAT4x2": {},
-                  "FLOAT_MAT4x3": {},
-                  "FLOAT_VEC2": {},
-                  "FLOAT_VEC3": {},
-                  "FLOAT_VEC4": {},
-                  "FRAGMENT_SHADER": {},
-                  "FRAGMENT_SHADER_DERIVATIVE_HINT": {},
-                  "FRAMEBUFFER": {},
-                  "FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE": {},
-                  "FRAMEBUFFER_ATTACHMENT_BLUE_SIZE": {},
-                  "FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING": {},
-                  "FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE": {},
-                  "FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE": {},
-                  "FRAMEBUFFER_ATTACHMENT_GREEN_SIZE": {},
-                  "FRAMEBUFFER_ATTACHMENT_OBJECT_NAME": {},
-                  "FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE": {},
-                  "FRAMEBUFFER_ATTACHMENT_RED_SIZE": {},
-                  "FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE": {},
-                  "FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE": {},
-                  "FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER": {},
-                  "FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL": {},
-                  "FRAMEBUFFER_BINDING": {},
-                  "FRAMEBUFFER_COMPLETE": {},
-                  "FRAMEBUFFER_DEFAULT": {},
-                  "FRAMEBUFFER_INCOMPLETE_ATTACHMENT": {},
-                  "FRAMEBUFFER_INCOMPLETE_DIMENSIONS": {},
-                  "FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT": {},
-                  "FRAMEBUFFER_INCOMPLETE_MULTISAMPLE": {},
-                  "FRAMEBUFFER_UNSUPPORTED": {},
-                  "FRONT": {},
-                  "FRONT_AND_BACK": {},
-                  "FRONT_FACE": {},
-                  "FUNC_ADD": {},
-                  "FUNC_REVERSE_SUBTRACT": {},
-                  "FUNC_SUBTRACT": {},
-                  "GENERATE_MIPMAP_HINT": {},
-                  "GEQUAL": {},
-                  "GREATER": {},
-                  "GREEN_BITS": {},
-                  "HALF_FLOAT": {},
-                  "HIGH_FLOAT": {},
-                  "HIGH_INT": {},
-                  "IMPLEMENTATION_COLOR_READ_FORMAT": {},
-                  "IMPLEMENTATION_COLOR_READ_TYPE": {},
-                  "INCR": {},
-                  "INCR_WRAP": {},
-                  "INT": {},
-                  "INTERLEAVED_ATTRIBS": {},
-                  "INT_2_10_10_10_REV": {},
-                  "INT_SAMPLER_2D": {},
-                  "INT_SAMPLER_2D_ARRAY": {},
-                  "INT_SAMPLER_3D": {},
-                  "INT_SAMPLER_CUBE": {},
-                  "INT_VEC2": {},
-                  "INT_VEC3": {},
-                  "INT_VEC4": {},
-                  "INVALID_ENUM": {},
-                  "INVALID_FRAMEBUFFER_OPERATION": {},
-                  "INVALID_INDEX": {},
-                  "INVALID_OPERATION": {},
-                  "INVALID_VALUE": {},
-                  "INVERT": {},
-                  "KEEP": {},
-                  "LEQUAL": {},
-                  "LESS": {},
-                  "LINEAR": {},
-                  "LINEAR_MIPMAP_LINEAR": {},
-                  "LINEAR_MIPMAP_NEAREST": {},
-                  "LINES": {},
-                  "LINE_LOOP": {},
-                  "LINE_STRIP": {},
-                  "LINE_WIDTH": {},
-                  "LINK_STATUS": {},
-                  "LOW_FLOAT": {},
-                  "LOW_INT": {},
-                  "LUMINANCE": {},
-                  "LUMINANCE_ALPHA": {},
-                  "MAX": {},
-                  "MAX_3D_TEXTURE_SIZE": {},
-                  "MAX_ARRAY_TEXTURE_LAYERS": {},
-                  "MAX_CLIENT_WAIT_TIMEOUT_WEBGL": {},
-                  "MAX_COLOR_ATTACHMENTS": {},
-                  "MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS": {},
-                  "MAX_COMBINED_TEXTURE_IMAGE_UNITS": {},
-                  "MAX_COMBINED_UNIFORM_BLOCKS": {},
-                  "MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS": {},
-                  "MAX_CUBE_MAP_TEXTURE_SIZE": {},
-                  "MAX_DRAW_BUFFERS": {},
-                  "MAX_ELEMENTS_INDICES": {},
-                  "MAX_ELEMENTS_VERTICES": {},
-                  "MAX_ELEMENT_INDEX": {},
-                  "MAX_FRAGMENT_INPUT_COMPONENTS": {},
-                  "MAX_FRAGMENT_UNIFORM_BLOCKS": {},
-                  "MAX_FRAGMENT_UNIFORM_COMPONENTS": {},
-                  "MAX_FRAGMENT_UNIFORM_VECTORS": {},
-                  "MAX_PROGRAM_TEXEL_OFFSET": {},
-                  "MAX_RENDERBUFFER_SIZE": {},
-                  "MAX_SAMPLES": {},
-                  "MAX_SERVER_WAIT_TIMEOUT": {},
-                  "MAX_TEXTURE_IMAGE_UNITS": {},
-                  "MAX_TEXTURE_LOD_BIAS": {},
-                  "MAX_TEXTURE_SIZE": {},
-                  "MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS": {},
-                  "MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS": {},
-                  "MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS": {},
-                  "MAX_UNIFORM_BLOCK_SIZE": {},
-                  "MAX_UNIFORM_BUFFER_BINDINGS": {},
-                  "MAX_VARYING_COMPONENTS": {},
-                  "MAX_VARYING_VECTORS": {},
-                  "MAX_VERTEX_ATTRIBS": {},
-                  "MAX_VERTEX_OUTPUT_COMPONENTS": {},
-                  "MAX_VERTEX_TEXTURE_IMAGE_UNITS": {},
-                  "MAX_VERTEX_UNIFORM_BLOCKS": {},
-                  "MAX_VERTEX_UNIFORM_COMPONENTS": {},
-                  "MAX_VERTEX_UNIFORM_VECTORS": {},
-                  "MAX_VIEWPORT_DIMS": {},
-                  "MEDIUM_FLOAT": {},
-                  "MEDIUM_INT": {},
-                  "MIN": {},
-                  "MIN_PROGRAM_TEXEL_OFFSET": {},
-                  "MIRRORED_REPEAT": {},
-                  "NEAREST": {},
-                  "NEAREST_MIPMAP_LINEAR": {},
-                  "NEAREST_MIPMAP_NEAREST": {},
-                  "NEVER": {},
-                  "NICEST": {},
-                  "NONE": {},
-                  "NOTEQUAL": {},
-                  "NO_ERROR": {},
-                  "OBJECT_TYPE": {},
-                  "ONE": {},
-                  "ONE_MINUS_CONSTANT_ALPHA": {},
-                  "ONE_MINUS_CONSTANT_COLOR": {},
-                  "ONE_MINUS_DST_ALPHA": {},
-                  "ONE_MINUS_DST_COLOR": {},
-                  "ONE_MINUS_SRC_ALPHA": {},
-                  "ONE_MINUS_SRC_COLOR": {},
-                  "OUT_OF_MEMORY": {},
-                  "PACK_ALIGNMENT": {},
-                  "PACK_ROW_LENGTH": {},
-                  "PACK_SKIP_PIXELS": {},
-                  "PACK_SKIP_ROWS": {},
-                  "PIXEL_PACK_BUFFER": {},
-                  "PIXEL_PACK_BUFFER_BINDING": {},
-                  "PIXEL_UNPACK_BUFFER": {},
-                  "PIXEL_UNPACK_BUFFER_BINDING": {},
-                  "POINTS": {},
-                  "POLYGON_OFFSET_FACTOR": {},
-                  "POLYGON_OFFSET_FILL": {},
-                  "POLYGON_OFFSET_UNITS": {},
-                  "QUERY_RESULT": {},
-                  "QUERY_RESULT_AVAILABLE": {},
-                  "R11F_G11F_B10F": {},
-                  "R16F": {},
-                  "R16I": {},
-                  "R16UI": {},
-                  "R32F": {},
-                  "R32I": {},
-                  "R32UI": {},
-                  "R8": {},
-                  "R8I": {},
-                  "R8UI": {},
-                  "R8_SNORM": {},
-                  "RASTERIZER_DISCARD": {},
-                  "READ_BUFFER": {},
-                  "READ_FRAMEBUFFER": {},
-                  "READ_FRAMEBUFFER_BINDING": {},
-                  "RED": {},
-                  "RED_BITS": {},
-                  "RED_INTEGER": {},
-                  "RENDERBUFFER": {},
-                  "RENDERBUFFER_ALPHA_SIZE": {},
-                  "RENDERBUFFER_BINDING": {},
-                  "RENDERBUFFER_BLUE_SIZE": {},
-                  "RENDERBUFFER_DEPTH_SIZE": {},
-                  "RENDERBUFFER_GREEN_SIZE": {},
-                  "RENDERBUFFER_HEIGHT": {},
-                  "RENDERBUFFER_INTERNAL_FORMAT": {},
-                  "RENDERBUFFER_RED_SIZE": {},
-                  "RENDERBUFFER_SAMPLES": {},
-                  "RENDERBUFFER_STENCIL_SIZE": {},
-                  "RENDERBUFFER_WIDTH": {},
-                  "RENDERER": {},
-                  "REPEAT": {},
-                  "REPLACE": {},
-                  "RG": {},
-                  "RG16F": {},
-                  "RG16I": {},
-                  "RG16UI": {},
-                  "RG32F": {},
-                  "RG32I": {},
-                  "RG32UI": {},
-                  "RG8": {},
-                  "RG8I": {},
-                  "RG8UI": {},
-                  "RG8_SNORM": {},
-                  "RGB": {},
-                  "RGB10_A2": {},
-                  "RGB10_A2UI": {},
-                  "RGB16F": {},
-                  "RGB16I": {},
-                  "RGB16UI": {},
-                  "RGB32F": {},
-                  "RGB32I": {},
-                  "RGB32UI": {},
-                  "RGB565": {},
-                  "RGB5_A1": {},
-                  "RGB8": {},
-                  "RGB8I": {},
-                  "RGB8UI": {},
-                  "RGB8_SNORM": {},
-                  "RGB9_E5": {},
-                  "RGBA": {},
-                  "RGBA16F": {},
-                  "RGBA16I": {},
-                  "RGBA16UI": {},
-                  "RGBA32F": {},
-                  "RGBA32I": {},
-                  "RGBA32UI": {},
-                  "RGBA4": {},
-                  "RGBA8": {},
-                  "RGBA8I": {},
-                  "RGBA8UI": {},
-                  "RGBA8_SNORM": {},
-                  "RGBA_INTEGER": {},
-                  "RGB_INTEGER": {},
-                  "RG_INTEGER": {},
-                  "SAMPLER_2D": {},
-                  "SAMPLER_2D_ARRAY": {},
-                  "SAMPLER_2D_ARRAY_SHADOW": {},
-                  "SAMPLER_2D_SHADOW": {},
-                  "SAMPLER_3D": {},
-                  "SAMPLER_BINDING": {},
-                  "SAMPLER_CUBE": {},
-                  "SAMPLER_CUBE_SHADOW": {},
-                  "SAMPLES": {},
-                  "SAMPLE_ALPHA_TO_COVERAGE": {},
-                  "SAMPLE_BUFFERS": {},
-                  "SAMPLE_COVERAGE": {},
-                  "SAMPLE_COVERAGE_INVERT": {},
-                  "SAMPLE_COVERAGE_VALUE": {},
-                  "SCISSOR_BOX": {},
-                  "SCISSOR_TEST": {},
-                  "SEPARATE_ATTRIBS": {},
-                  "SHADER_TYPE": {},
-                  "SHADING_LANGUAGE_VERSION": {},
-                  "SHORT": {},
-                  "SIGNALED": {},
-                  "SIGNED_NORMALIZED": {},
-                  "SRC_ALPHA": {},
-                  "SRC_ALPHA_SATURATE": {},
-                  "SRC_COLOR": {},
-                  "SRGB": {},
-                  "SRGB8": {},
-                  "SRGB8_ALPHA8": {},
-                  "STATIC_COPY": {},
-                  "STATIC_DRAW": {},
-                  "STATIC_READ": {},
-                  "STENCIL": {},
-                  "STENCIL_ATTACHMENT": {},
-                  "STENCIL_BACK_FAIL": {},
-                  "STENCIL_BACK_FUNC": {},
-                  "STENCIL_BACK_PASS_DEPTH_FAIL": {},
-                  "STENCIL_BACK_PASS_DEPTH_PASS": {},
-                  "STENCIL_BACK_REF": {},
-                  "STENCIL_BACK_VALUE_MASK": {},
-                  "STENCIL_BACK_WRITEMASK": {},
-                  "STENCIL_BITS": {},
-                  "STENCIL_BUFFER_BIT": {},
-                  "STENCIL_CLEAR_VALUE": {},
-                  "STENCIL_FAIL": {},
-                  "STENCIL_FUNC": {},
-                  "STENCIL_INDEX8": {},
-                  "STENCIL_PASS_DEPTH_FAIL": {},
-                  "STENCIL_PASS_DEPTH_PASS": {},
-                  "STENCIL_REF": {},
-                  "STENCIL_TEST": {},
-                  "STENCIL_VALUE_MASK": {},
-                  "STENCIL_WRITEMASK": {},
-                  "STREAM_COPY": {},
-                  "STREAM_DRAW": {},
-                  "STREAM_READ": {},
-                  "SUBPIXEL_BITS": {},
-                  "SYNC_CONDITION": {},
-                  "SYNC_FENCE": {},
-                  "SYNC_FLAGS": {},
-                  "SYNC_FLUSH_COMMANDS_BIT": {},
-                  "SYNC_GPU_COMMANDS_COMPLETE": {},
-                  "SYNC_STATUS": {},
-                  "TEXTURE": {},
-                  "TEXTURE0": {},
-                  "TEXTURE1": {},
-                  "TEXTURE10": {},
-                  "TEXTURE11": {},
-                  "TEXTURE12": {},
-                  "TEXTURE13": {},
-                  "TEXTURE14": {},
-                  "TEXTURE15": {},
-                  "TEXTURE16": {},
-                  "TEXTURE17": {},
-                  "TEXTURE18": {},
-                  "TEXTURE19": {},
-                  "TEXTURE2": {},
-                  "TEXTURE20": {},
-                  "TEXTURE21": {},
-                  "TEXTURE22": {},
-                  "TEXTURE23": {},
-                  "TEXTURE24": {},
-                  "TEXTURE25": {},
-                  "TEXTURE26": {},
-                  "TEXTURE27": {},
-                  "TEXTURE28": {},
-                  "TEXTURE29": {},
-                  "TEXTURE3": {},
-                  "TEXTURE30": {},
-                  "TEXTURE31": {},
-                  "TEXTURE4": {},
-                  "TEXTURE5": {},
-                  "TEXTURE6": {},
-                  "TEXTURE7": {},
-                  "TEXTURE8": {},
-                  "TEXTURE9": {},
-                  "TEXTURE_2D": {},
-                  "TEXTURE_2D_ARRAY": {},
-                  "TEXTURE_3D": {},
-                  "TEXTURE_BASE_LEVEL": {},
-                  "TEXTURE_BINDING_2D": {},
-                  "TEXTURE_BINDING_2D_ARRAY": {},
-                  "TEXTURE_BINDING_3D": {},
-                  "TEXTURE_BINDING_CUBE_MAP": {},
-                  "TEXTURE_COMPARE_FUNC": {},
-                  "TEXTURE_COMPARE_MODE": {},
-                  "TEXTURE_CUBE_MAP": {},
-                  "TEXTURE_CUBE_MAP_NEGATIVE_X": {},
-                  "TEXTURE_CUBE_MAP_NEGATIVE_Y": {},
-                  "TEXTURE_CUBE_MAP_NEGATIVE_Z": {},
-                  "TEXTURE_CUBE_MAP_POSITIVE_X": {},
-                  "TEXTURE_CUBE_MAP_POSITIVE_Y": {},
-                  "TEXTURE_CUBE_MAP_POSITIVE_Z": {},
-                  "TEXTURE_IMMUTABLE_FORMAT": {},
-                  "TEXTURE_IMMUTABLE_LEVELS": {},
-                  "TEXTURE_MAG_FILTER": {},
-                  "TEXTURE_MAX_LEVEL": {},
-                  "TEXTURE_MAX_LOD": {},
-                  "TEXTURE_MIN_FILTER": {},
-                  "TEXTURE_MIN_LOD": {},
-                  "TEXTURE_WRAP_R": {},
-                  "TEXTURE_WRAP_S": {},
-                  "TEXTURE_WRAP_T": {},
-                  "TIMEOUT_EXPIRED": {},
-                  "TIMEOUT_IGNORED": {},
-                  "TRANSFORM_FEEDBACK": {},
-                  "TRANSFORM_FEEDBACK_ACTIVE": {},
-                  "TRANSFORM_FEEDBACK_BINDING": {},
-                  "TRANSFORM_FEEDBACK_BUFFER": {},
-                  "TRANSFORM_FEEDBACK_BUFFER_BINDING": {},
-                  "TRANSFORM_FEEDBACK_BUFFER_MODE": {},
-                  "TRANSFORM_FEEDBACK_BUFFER_SIZE": {},
-                  "TRANSFORM_FEEDBACK_BUFFER_START": {},
-                  "TRANSFORM_FEEDBACK_PAUSED": {},
-                  "TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN": {},
-                  "TRANSFORM_FEEDBACK_VARYINGS": {},
-                  "TRIANGLES": {},
-                  "TRIANGLE_FAN": {},
-                  "TRIANGLE_STRIP": {},
-                  "UNIFORM_ARRAY_STRIDE": {},
-                  "UNIFORM_BLOCK_ACTIVE_UNIFORMS": {},
-                  "UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES": {},
-                  "UNIFORM_BLOCK_BINDING": {},
-                  "UNIFORM_BLOCK_DATA_SIZE": {},
-                  "UNIFORM_BLOCK_INDEX": {},
-                  "UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER": {},
-                  "UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER": {},
-                  "UNIFORM_BUFFER": {},
-                  "UNIFORM_BUFFER_BINDING": {},
-                  "UNIFORM_BUFFER_OFFSET_ALIGNMENT": {},
-                  "UNIFORM_BUFFER_SIZE": {},
-                  "UNIFORM_BUFFER_START": {},
-                  "UNIFORM_IS_ROW_MAJOR": {},
-                  "UNIFORM_MATRIX_STRIDE": {},
-                  "UNIFORM_OFFSET": {},
-                  "UNIFORM_SIZE": {},
-                  "UNIFORM_TYPE": {},
-                  "UNPACK_ALIGNMENT": {},
-                  "UNPACK_COLORSPACE_CONVERSION_WEBGL": {},
-                  "UNPACK_FLIP_Y_WEBGL": {},
-                  "UNPACK_IMAGE_HEIGHT": {},
-                  "UNPACK_PREMULTIPLY_ALPHA_WEBGL": {},
-                  "UNPACK_ROW_LENGTH": {},
-                  "UNPACK_SKIP_IMAGES": {},
-                  "UNPACK_SKIP_PIXELS": {},
-                  "UNPACK_SKIP_ROWS": {},
-                  "UNSIGNALED": {},
-                  "UNSIGNED_BYTE": {},
-                  "UNSIGNED_INT": {},
-                  "UNSIGNED_INT_10F_11F_11F_REV": {},
-                  "UNSIGNED_INT_24_8": {},
-                  "UNSIGNED_INT_2_10_10_10_REV": {},
-                  "UNSIGNED_INT_5_9_9_9_REV": {},
-                  "UNSIGNED_INT_SAMPLER_2D": {},
-                  "UNSIGNED_INT_SAMPLER_2D_ARRAY": {},
-                  "UNSIGNED_INT_SAMPLER_3D": {},
-                  "UNSIGNED_INT_SAMPLER_CUBE": {},
-                  "UNSIGNED_INT_VEC2": {},
-                  "UNSIGNED_INT_VEC3": {},
-                  "UNSIGNED_INT_VEC4": {},
-                  "UNSIGNED_NORMALIZED": {},
-                  "UNSIGNED_SHORT": {},
-                  "UNSIGNED_SHORT_4_4_4_4": {},
-                  "UNSIGNED_SHORT_5_5_5_1": {},
-                  "UNSIGNED_SHORT_5_6_5": {},
-                  "VALIDATE_STATUS": {},
-                  "VENDOR": {},
-                  "VERSION": {},
-                  "VERTEX_ARRAY_BINDING": {},
-                  "VERTEX_ATTRIB_ARRAY_BUFFER_BINDING": {},
-                  "VERTEX_ATTRIB_ARRAY_DIVISOR": {},
-                  "VERTEX_ATTRIB_ARRAY_ENABLED": {},
-                  "VERTEX_ATTRIB_ARRAY_INTEGER": {},
-                  "VERTEX_ATTRIB_ARRAY_NORMALIZED": {},
-                  "VERTEX_ATTRIB_ARRAY_POINTER": {},
-                  "VERTEX_ATTRIB_ARRAY_SIZE": {},
-                  "VERTEX_ATTRIB_ARRAY_STRIDE": {},
-                  "VERTEX_ATTRIB_ARRAY_TYPE": {},
-                  "VERTEX_SHADER": {},
-                  "VIEWPORT": {},
-                  "WAIT_FAILED": {},
-                  "ZERO": {},
-                  "activeTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "attachShader": {
-                    "closure_uid_20499601": {}
-                  },
-                  "beginQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "beginTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindAttribLocation": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindBufferBase": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindBufferRange": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindRenderbuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindSampler": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindVertexArray": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blendColor": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blendEquation": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blendEquationSeparate": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blendFunc": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blendFuncSeparate": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blitFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bufferData": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bufferSubData": {
-                    "closure_uid_20499601": {}
-                  },
-                  "canvas": {
-                    "addEventListener": {
-                      "closure_uid_20499601": {}
-                    },
-                    "closure_uid_20499601": {},
-                    "convertToBlob": {
-                      "closure_uid_20499601": {}
-                    },
-                    "dispatchEvent": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getContext": {
-                      "closure_uid_20499601": {}
-                    },
-                    "height": {},
-                    "removeEventListener": {
-                      "closure_uid_20499601": {}
-                    },
-                    "transferToImageBitmap": {
-                      "closure_uid_20499601": {}
-                    },
-                    "width": {}
-                  },
-                  "checkFramebufferStatus": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clear": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearBufferfi": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearBufferfv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearBufferiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearBufferuiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearColor": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearDepth": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clearStencil": {
-                    "closure_uid_20499601": {}
-                  },
-                  "clientWaitSync": {
-                    "closure_uid_20499601": {}
-                  },
-                  "closure_uid_20499601": {},
-                  "colorMask": {
-                    "closure_uid_20499601": {}
-                  },
-                  "compileShader": {
-                    "closure_uid_20499601": {}
-                  },
-                  "compressedTexImage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "compressedTexImage3D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "compressedTexSubImage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "compressedTexSubImage3D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "copyBufferSubData": {
-                    "closure_uid_20499601": {}
-                  },
-                  "copyTexImage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "copyTexSubImage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "copyTexSubImage3D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createRenderbuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createSampler": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createShader": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createVertexArray": {
-                    "closure_uid_20499601": {}
-                  },
-                  "cullFace": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteRenderbuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteSampler": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteShader": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteSync": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteVertexArray": {
-                    "closure_uid_20499601": {}
-                  },
-                  "depthFunc": {
-                    "closure_uid_20499601": {}
-                  },
-                  "depthMask": {
-                    "closure_uid_20499601": {}
-                  },
-                  "depthRange": {
-                    "closure_uid_20499601": {}
-                  },
-                  "detachShader": {
-                    "closure_uid_20499601": {}
-                  },
-                  "disable": {
-                    "closure_uid_20499601": {}
-                  },
-                  "disableVertexAttribArray": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawArrays": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawArraysInstanced": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawBuffers": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawElements": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawElementsInstanced": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawRangeElements": {
-                    "closure_uid_20499601": {}
-                  },
-                  "drawingBufferHeight": {},
-                  "drawingBufferWidth": {},
-                  "enable": {
-                    "closure_uid_20499601": {}
-                  },
-                  "enableVertexAttribArray": {
-                    "closure_uid_20499601": {}
-                  },
-                  "endQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "endTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "fenceSync": {
-                    "closure_uid_20499601": {}
-                  },
-                  "finish": {
-                    "closure_uid_20499601": {}
-                  },
-                  "flush": {
-                    "closure_uid_20499601": {}
-                  },
-                  "framebufferRenderbuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "framebufferTexture2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "framebufferTextureLayer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "frontFace": {
-                    "closure_uid_20499601": {}
-                  },
-                  "generateMipmap": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getActiveAttrib": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getActiveUniform": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getActiveUniformBlockName": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getActiveUniformBlockParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getActiveUniforms": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getAttachedShaders": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getAttribLocation": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getBufferParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getBufferSubData": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getContextAttributes": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getError": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getExtension": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getFragDataLocation": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getFramebufferAttachmentParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getIndexedParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getInternalformatParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getProgramInfoLog": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getProgramParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getQueryParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getRenderbufferParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getSamplerParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getShaderInfoLog": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getShaderParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getShaderPrecisionFormat": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getShaderSource": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getSupportedExtensions": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getSyncParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getTexParameter": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getTransformFeedbackVarying": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getUniform": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getUniformBlockIndex": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getUniformIndices": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getUniformLocation": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getVertexAttrib": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getVertexAttribOffset": {
-                    "closure_uid_20499601": {}
-                  },
-                  "hint": {
-                    "closure_uid_20499601": {}
-                  },
-                  "invalidateFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "invalidateSubFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isContextLost": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isEnabled": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isFramebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isRenderbuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isSampler": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isShader": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isSync": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isVertexArray": {
-                    "closure_uid_20499601": {}
-                  },
-                  "lineWidth": {
-                    "closure_uid_20499601": {}
-                  },
-                  "linkProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "pauseTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "pixelStorei": {
-                    "closure_uid_20499601": {}
-                  },
-                  "polygonOffset": {
-                    "closure_uid_20499601": {}
-                  },
-                  "readBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "readPixels": {
-                    "closure_uid_20499601": {}
-                  },
-                  "renderbufferStorage": {
-                    "closure_uid_20499601": {}
-                  },
-                  "renderbufferStorageMultisample": {
-                    "closure_uid_20499601": {}
-                  },
-                  "resumeTransformFeedback": {
-                    "closure_uid_20499601": {}
-                  },
-                  "sampleCoverage": {
-                    "closure_uid_20499601": {}
-                  },
-                  "samplerParameterf": {
-                    "closure_uid_20499601": {}
-                  },
-                  "samplerParameteri": {
-                    "closure_uid_20499601": {}
-                  },
-                  "scissor": {
-                    "closure_uid_20499601": {}
-                  },
-                  "shaderSource": {
-                    "closure_uid_20499601": {}
-                  },
-                  "stencilFunc": {
-                    "closure_uid_20499601": {}
-                  },
-                  "stencilFuncSeparate": {
-                    "closure_uid_20499601": {}
-                  },
-                  "stencilMask": {
-                    "closure_uid_20499601": {}
-                  },
-                  "stencilMaskSeparate": {
-                    "closure_uid_20499601": {}
-                  },
-                  "stencilOp": {
-                    "closure_uid_20499601": {}
-                  },
-                  "stencilOpSeparate": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texImage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texImage3D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texParameterf": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texParameteri": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texStorage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texStorage3D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texSubImage2D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "texSubImage3D": {
-                    "closure_uid_20499601": {}
-                  },
-                  "transformFeedbackVaryings": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform1f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform1fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform1i": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform1iv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform1ui": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform1uiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform2f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform2fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform2i": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform2iv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform2ui": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform2uiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform3f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform3fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform3i": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform3iv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform3ui": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform3uiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform4f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform4fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform4i": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform4iv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform4ui": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniform4uiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformBlockBinding": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix2fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix2x3fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix2x4fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix3fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix3x2fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix3x4fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix4fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix4x2fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uniformMatrix4x3fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "useProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "validateProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib1f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib1fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib2f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib2fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib3f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib3fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib4f": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrib4fv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribDivisor": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribI4i": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribI4iv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribI4ui": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribI4uiv": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribIPointer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttribPointer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "viewport": {
-                    "closure_uid_20499601": {}
-                  },
-                  "waitSync": {
-                    "closure_uid_20499601": {}
-                  }
-                },
-                "indexBuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "isQueryAvailable": {
-                  "closure_uid_20499601": {}
-                },
-                "itemsToPoll": {},
-                "outputTexture": {},
-                "pollFence": {
-                  "closure_uid_20499601": {}
-                },
-                "pollItems": {
-                  "closure_uid_20499601": {}
-                },
-                "program": {},
-                "setInputMatrixTexture": {
-                  "closure_uid_20499601": {}
-                },
-                "setOutputMatrixTexture": {
-                  "closure_uid_20499601": {}
-                },
-                "setOutputMatrixTextureDriver": {
-                  "closure_uid_20499601": {}
-                },
-                "setOutputMatrixWriteRegion": {
-                  "closure_uid_20499601": {}
-                },
-                "setOutputMatrixWriteRegionDriver": {
-                  "closure_uid_20499601": {}
-                },
-                "setOutputPackedMatrixTexture": {
-                  "closure_uid_20499601": {}
-                },
-                "setOutputPackedMatrixWriteRegion": {
-                  "closure_uid_20499601": {}
-                },
-                "setProgram": {
-                  "closure_uid_20499601": {}
-                },
-                "textureConfig": {
-                  "closure_uid_20499601": {},
-                  "defaultNumChannels": {},
-                  "downloadTextureFormat": {},
-                  "downloadUnpackNumChannels": {},
-                  "internalFormatFloat": {},
-                  "internalFormatHalfFloat": {},
-                  "internalFormatPackedFloat": {},
-                  "internalFormatPackedHalfFloat": {},
-                  "textureFormatFloat": {},
-                  "textureTypeFloat": {},
-                  "textureTypeHalfFloat": {}
-                },
-                "throwIfDisposed": {
-                  "closure_uid_20499601": {}
-                },
-                "throwIfNoProgram": {
-                  "closure_uid_20499601": {}
-                },
-                "unbindTextureToFrameBuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "uploadDenseMatrixToTexture": {
-                  "closure_uid_20499601": {}
-                },
-                "uploadPixelDataToTexture": {
-                  "closure_uid_20499601": {}
-                },
-                "vertexAttrsAreBound": {},
-                "vertexBuffer": {
-                  "closure_uid_20499601": {}
-                },
-                "waitForQueryAndGetTime": {
-                  "closure_uid_20499601": {}
-                }
-              },
-              "gpgpuCreatedLocally": {},
-              "greater": function () { },
-              "greaterEqual": function () { },
-              "ifft": function () { },
-              "imag": function () { },
-              "int": function () { },
-              "isFinite": function () { },
-              "isInf": function () { },
-              "isNaN": function () { },
-              "less": function () { },
-              "lessEqual": function () { },
-              "linspace": function () { },
-              "localResponseNormalization4D": function () { },
-              "log": function () { },
-              "log1p": function () { },
-              "logicalAnd": function () { },
-              "logicalNot": function () { },
-              "logicalOr": function () { },
-              "makeComplexComponentTensorHandle": function () { },
-              "makeOutputArray": function () { },
-              "makePackedTensor": function () { },
-              "makeTensorHandle": function () { },
-              "max": function () { },
-              "maxPool": function () { },
-              "maxPool3d": function () { },
-              "maxPool3dBackprop": function () { },
-              "maxPoolBackprop": function () { },
-              "maximum": function () { },
-              "memory": function () { },
-              "min": function () { },
-              "minimum": function () { },
-              "mod": function () { },
-              "multinomial": function () { },
-              "multiply": function () { },
-              "neg": function () { },
-              "nonMaxSuppression": function () { },
-              "notEqual": function () { },
-              "numBytesInGPU": {},
-              "numMBBeforeWarning": {},
-              "oneHot": function () { },
-              "onesLike": function () { },
-              "packTensor": function () { },
-              "packedBinaryOp": function () { },
-              "packedReshape": function () { },
-              "packedUnaryOp": function () { },
-              "pad": function () { },
-              "pendingDisposal": {},
-              "pendingRead": {},
-              "pow": function () { },
-              "prelu": function () { },
-              "prod": function () { },
-              "read": function () { },
-              "readSync": function () { },
-              "real": function () { },
-              "realDivide": function () { },
-              "reciprocal": function () { },
-              "reduce": function () { },
-              "register": function () { },
-              "releaseGPUData": function () { },
-              "relu": function () { },
-              "reshape": function () { },
-              "resizeBilinear": function () { },
-              "resizeBilinearBackprop": function () { },
-              "resizeNearestNeighbor": function () { },
-              "resizeNearestNeighborBackprop": function () { },
-              "reverse": function () { },
-              "round": function () { },
-              "rsqrt": function () { },
-              "scatterND": function () { },
-              "segOpCompute": function () { },
-              "select": function () { },
-              "selu": function () { },
-              "shallowSlice": function () { },
-              "shouldExecuteOnCPU": function () { },
-              "sigmoid": function () { },
-              "sign": function () { },
-              "sin": function () { },
-              "sinh": function () { },
-              "slice": function () { },
-              "softplus": function () { },
-              "spaceToBatchND": function () { },
-              "sparseToDense": function () { },
-              "split": function () { },
-              "sqrt": function () { },
-              "square": function () { },
-              "squaredDifference": function () { },
-              "startTimer": function () { },
-              "step": function () { },
-              "stridedSlice": function () { },
-              "subtract": function () { },
-              "sum": function () { },
-              "tan": function () { },
-              "tanh": function () { },
-              "texData": {
-                "backend": {},
-                "data": {},
-                "dataMover": {},
-                "delete": function () { },
-                "get": function () { },
-                "has": function () { },
-                "set": function () { }
-              },
-              "textureManager": {
-                "acquireTexture": function () { },
-                "closure_uid_20499601": {},
-                "dispose": function () { },
-                "freeTextures": {},
-                "getNumFreeTextures": function () { },
-                "getNumUsedTextures": function () { },
-                "gpgpu": {
-                  "addItemToPoll": {
-                    "closure_uid_20499601": {}
-                  },
-                  "beginQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "bindTextureToFrameBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "blockUntilAllProgramsCompleted": {
-                    "closure_uid_20499601": {}
-                  },
-                  "closure_uid_20499601": {},
-                  "colorBufferFloatExtension": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createAndWaitForFence": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createBufferFromTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createFence": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createFloat16MatrixTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createFloat16PackedMatrixTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createFloat32MatrixTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createPackedMatrixTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "createUnsignedBytesMatrixTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "debug": {},
-                  "debugValidate": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteMatrixTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "deleteProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "dispose": {
-                    "closure_uid_20499601": {}
-                  },
-                  "disposed": {},
-                  "downloadByteEncodedFloatMatrixFromOutputTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "downloadFloat32MatrixFromBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "downloadMatrixDriver": {
-                    "closure_uid_20499601": {}
-                  },
-                  "downloadMatrixFromPackedTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "downloadPackedMatrixFromBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "endQuery": {
-                    "closure_uid_20499601": {}
-                  },
-                  "executeProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "framebuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getAttributeLocation": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getQueryTime": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getQueryTimerExtension": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getQueryTimerExtensionWebGL1": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getQueryTimerExtensionWebGL2": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getUniformLocation": {
-                    "closure_uid_20499601": {}
-                  },
-                  "getUniformLocationNoThrow": {
-                    "closure_uid_20499601": {}
-                  },
-                  "gl": {
-                    "ACTIVE_ATTRIBUTES": {},
-                    "ACTIVE_TEXTURE": {},
-                    "ACTIVE_UNIFORMS": {},
-                    "ACTIVE_UNIFORM_BLOCKS": {},
-                    "ALIASED_LINE_WIDTH_RANGE": {},
-                    "ALIASED_POINT_SIZE_RANGE": {},
-                    "ALPHA": {},
-                    "ALPHA_BITS": {},
-                    "ALREADY_SIGNALED": {},
-                    "ALWAYS": {},
-                    "ANY_SAMPLES_PASSED": {},
-                    "ANY_SAMPLES_PASSED_CONSERVATIVE": {},
-                    "ARRAY_BUFFER": {},
-                    "ARRAY_BUFFER_BINDING": {},
-                    "ATTACHED_SHADERS": {},
-                    "BACK": {},
-                    "BLEND": {},
-                    "BLEND_COLOR": {},
-                    "BLEND_DST_ALPHA": {},
-                    "BLEND_DST_RGB": {},
-                    "BLEND_EQUATION": {},
-                    "BLEND_EQUATION_ALPHA": {},
-                    "BLEND_EQUATION_RGB": {},
-                    "BLEND_SRC_ALPHA": {},
-                    "BLEND_SRC_RGB": {},
-                    "BLUE_BITS": {},
-                    "BOOL": {},
-                    "BOOL_VEC2": {},
-                    "BOOL_VEC3": {},
-                    "BOOL_VEC4": {},
-                    "BROWSER_DEFAULT_WEBGL": {},
-                    "BUFFER_SIZE": {},
-                    "BUFFER_USAGE": {},
-                    "BYTE": {},
-                    "CCW": {},
-                    "CLAMP_TO_EDGE": {},
-                    "COLOR": {},
-                    "COLOR_ATTACHMENT0": {},
-                    "COLOR_ATTACHMENT1": {},
-                    "COLOR_ATTACHMENT10": {},
-                    "COLOR_ATTACHMENT11": {},
-                    "COLOR_ATTACHMENT12": {},
-                    "COLOR_ATTACHMENT13": {},
-                    "COLOR_ATTACHMENT14": {},
-                    "COLOR_ATTACHMENT15": {},
-                    "COLOR_ATTACHMENT2": {},
-                    "COLOR_ATTACHMENT3": {},
-                    "COLOR_ATTACHMENT4": {},
-                    "COLOR_ATTACHMENT5": {},
-                    "COLOR_ATTACHMENT6": {},
-                    "COLOR_ATTACHMENT7": {},
-                    "COLOR_ATTACHMENT8": {},
-                    "COLOR_ATTACHMENT9": {},
-                    "COLOR_BUFFER_BIT": {},
-                    "COLOR_CLEAR_VALUE": {},
-                    "COLOR_WRITEMASK": {},
-                    "COMPARE_REF_TO_TEXTURE": {},
-                    "COMPILE_STATUS": {},
-                    "COMPRESSED_TEXTURE_FORMATS": {},
-                    "CONDITION_SATISFIED": {},
-                    "CONSTANT_ALPHA": {},
-                    "CONSTANT_COLOR": {},
-                    "CONTEXT_LOST_WEBGL": {},
-                    "COPY_READ_BUFFER": {},
-                    "COPY_READ_BUFFER_BINDING": {},
-                    "COPY_WRITE_BUFFER": {},
-                    "COPY_WRITE_BUFFER_BINDING": {},
-                    "CULL_FACE": {},
-                    "CULL_FACE_MODE": {},
-                    "CURRENT_PROGRAM": {},
-                    "CURRENT_QUERY": {},
-                    "CURRENT_VERTEX_ATTRIB": {},
-                    "CW": {},
-                    "DECR": {},
-                    "DECR_WRAP": {},
-                    "DELETE_STATUS": {},
-                    "DEPTH": {},
-                    "DEPTH24_STENCIL8": {},
-                    "DEPTH32F_STENCIL8": {},
-                    "DEPTH_ATTACHMENT": {},
-                    "DEPTH_BITS": {},
-                    "DEPTH_BUFFER_BIT": {},
-                    "DEPTH_CLEAR_VALUE": {},
-                    "DEPTH_COMPONENT": {},
-                    "DEPTH_COMPONENT16": {},
-                    "DEPTH_COMPONENT24": {},
-                    "DEPTH_COMPONENT32F": {},
-                    "DEPTH_FUNC": {},
-                    "DEPTH_RANGE": {},
-                    "DEPTH_STENCIL": {},
-                    "DEPTH_STENCIL_ATTACHMENT": {},
-                    "DEPTH_TEST": {},
-                    "DEPTH_WRITEMASK": {},
-                    "DITHER": {},
-                    "DONT_CARE": {},
-                    "DRAW_BUFFER0": {},
-                    "DRAW_BUFFER1": {},
-                    "DRAW_BUFFER10": {},
-                    "DRAW_BUFFER11": {},
-                    "DRAW_BUFFER12": {},
-                    "DRAW_BUFFER13": {},
-                    "DRAW_BUFFER14": {},
-                    "DRAW_BUFFER15": {},
-                    "DRAW_BUFFER2": {},
-                    "DRAW_BUFFER3": {},
-                    "DRAW_BUFFER4": {},
-                    "DRAW_BUFFER5": {},
-                    "DRAW_BUFFER6": {},
-                    "DRAW_BUFFER7": {},
-                    "DRAW_BUFFER8": {},
-                    "DRAW_BUFFER9": {},
-                    "DRAW_FRAMEBUFFER": {},
-                    "DRAW_FRAMEBUFFER_BINDING": {},
-                    "DST_ALPHA": {},
-                    "DST_COLOR": {},
-                    "DYNAMIC_COPY": {},
-                    "DYNAMIC_DRAW": {},
-                    "DYNAMIC_READ": {},
-                    "ELEMENT_ARRAY_BUFFER": {},
-                    "ELEMENT_ARRAY_BUFFER_BINDING": {},
-                    "EQUAL": {},
-                    "FASTEST": {},
-                    "FLOAT": {},
-                    "FLOAT_32_UNSIGNED_INT_24_8_REV": {},
-                    "FLOAT_MAT2": {},
-                    "FLOAT_MAT2x3": {},
-                    "FLOAT_MAT2x4": {},
-                    "FLOAT_MAT3": {},
-                    "FLOAT_MAT3x2": {},
-                    "FLOAT_MAT3x4": {},
-                    "FLOAT_MAT4": {},
-                    "FLOAT_MAT4x2": {},
-                    "FLOAT_MAT4x3": {},
-                    "FLOAT_VEC2": {},
-                    "FLOAT_VEC3": {},
-                    "FLOAT_VEC4": {},
-                    "FRAGMENT_SHADER": {},
-                    "FRAGMENT_SHADER_DERIVATIVE_HINT": {},
-                    "FRAMEBUFFER": {},
-                    "FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE": {},
-                    "FRAMEBUFFER_ATTACHMENT_BLUE_SIZE": {},
-                    "FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING": {},
-                    "FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE": {},
-                    "FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE": {},
-                    "FRAMEBUFFER_ATTACHMENT_GREEN_SIZE": {},
-                    "FRAMEBUFFER_ATTACHMENT_OBJECT_NAME": {},
-                    "FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE": {},
-                    "FRAMEBUFFER_ATTACHMENT_RED_SIZE": {},
-                    "FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE": {},
-                    "FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE": {},
-                    "FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER": {},
-                    "FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL": {},
-                    "FRAMEBUFFER_BINDING": {},
-                    "FRAMEBUFFER_COMPLETE": {},
-                    "FRAMEBUFFER_DEFAULT": {},
-                    "FRAMEBUFFER_INCOMPLETE_ATTACHMENT": {},
-                    "FRAMEBUFFER_INCOMPLETE_DIMENSIONS": {},
-                    "FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT": {},
-                    "FRAMEBUFFER_INCOMPLETE_MULTISAMPLE": {},
-                    "FRAMEBUFFER_UNSUPPORTED": {},
-                    "FRONT": {},
-                    "FRONT_AND_BACK": {},
-                    "FRONT_FACE": {},
-                    "FUNC_ADD": {},
-                    "FUNC_REVERSE_SUBTRACT": {},
-                    "FUNC_SUBTRACT": {},
-                    "GENERATE_MIPMAP_HINT": {},
-                    "GEQUAL": {},
-                    "GREATER": {},
-                    "GREEN_BITS": {},
-                    "HALF_FLOAT": {},
-                    "HIGH_FLOAT": {},
-                    "HIGH_INT": {},
-                    "IMPLEMENTATION_COLOR_READ_FORMAT": {},
-                    "IMPLEMENTATION_COLOR_READ_TYPE": {},
-                    "INCR": {},
-                    "INCR_WRAP": {},
-                    "INT": {},
-                    "INTERLEAVED_ATTRIBS": {},
-                    "INT_2_10_10_10_REV": {},
-                    "INT_SAMPLER_2D": {},
-                    "INT_SAMPLER_2D_ARRAY": {},
-                    "INT_SAMPLER_3D": {},
-                    "INT_SAMPLER_CUBE": {},
-                    "INT_VEC2": {},
-                    "INT_VEC3": {},
-                    "INT_VEC4": {},
-                    "INVALID_ENUM": {},
-                    "INVALID_FRAMEBUFFER_OPERATION": {},
-                    "INVALID_INDEX": {},
-                    "INVALID_OPERATION": {},
-                    "INVALID_VALUE": {},
-                    "INVERT": {},
-                    "KEEP": {},
-                    "LEQUAL": {},
-                    "LESS": {},
-                    "LINEAR": {},
-                    "LINEAR_MIPMAP_LINEAR": {},
-                    "LINEAR_MIPMAP_NEAREST": {},
-                    "LINES": {},
-                    "LINE_LOOP": {},
-                    "LINE_STRIP": {},
-                    "LINE_WIDTH": {},
-                    "LINK_STATUS": {},
-                    "LOW_FLOAT": {},
-                    "LOW_INT": {},
-                    "LUMINANCE": {},
-                    "LUMINANCE_ALPHA": {},
-                    "MAX": {},
-                    "MAX_3D_TEXTURE_SIZE": {},
-                    "MAX_ARRAY_TEXTURE_LAYERS": {},
-                    "MAX_CLIENT_WAIT_TIMEOUT_WEBGL": {},
-                    "MAX_COLOR_ATTACHMENTS": {},
-                    "MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS": {},
-                    "MAX_COMBINED_TEXTURE_IMAGE_UNITS": {},
-                    "MAX_COMBINED_UNIFORM_BLOCKS": {},
-                    "MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS": {},
-                    "MAX_CUBE_MAP_TEXTURE_SIZE": {},
-                    "MAX_DRAW_BUFFERS": {},
-                    "MAX_ELEMENTS_INDICES": {},
-                    "MAX_ELEMENTS_VERTICES": {},
-                    "MAX_ELEMENT_INDEX": {},
-                    "MAX_FRAGMENT_INPUT_COMPONENTS": {},
-                    "MAX_FRAGMENT_UNIFORM_BLOCKS": {},
-                    "MAX_FRAGMENT_UNIFORM_COMPONENTS": {},
-                    "MAX_FRAGMENT_UNIFORM_VECTORS": {},
-                    "MAX_PROGRAM_TEXEL_OFFSET": {},
-                    "MAX_RENDERBUFFER_SIZE": {},
-                    "MAX_SAMPLES": {},
-                    "MAX_SERVER_WAIT_TIMEOUT": {},
-                    "MAX_TEXTURE_IMAGE_UNITS": {},
-                    "MAX_TEXTURE_LOD_BIAS": {},
-                    "MAX_TEXTURE_SIZE": {},
-                    "MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS": {},
-                    "MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS": {},
-                    "MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS": {},
-                    "MAX_UNIFORM_BLOCK_SIZE": {},
-                    "MAX_UNIFORM_BUFFER_BINDINGS": {},
-                    "MAX_VARYING_COMPONENTS": {},
-                    "MAX_VARYING_VECTORS": {},
-                    "MAX_VERTEX_ATTRIBS": {},
-                    "MAX_VERTEX_OUTPUT_COMPONENTS": {},
-                    "MAX_VERTEX_TEXTURE_IMAGE_UNITS": {},
-                    "MAX_VERTEX_UNIFORM_BLOCKS": {},
-                    "MAX_VERTEX_UNIFORM_COMPONENTS": {},
-                    "MAX_VERTEX_UNIFORM_VECTORS": {},
-                    "MAX_VIEWPORT_DIMS": {},
-                    "MEDIUM_FLOAT": {},
-                    "MEDIUM_INT": {},
-                    "MIN": {},
-                    "MIN_PROGRAM_TEXEL_OFFSET": {},
-                    "MIRRORED_REPEAT": {},
-                    "NEAREST": {},
-                    "NEAREST_MIPMAP_LINEAR": {},
-                    "NEAREST_MIPMAP_NEAREST": {},
-                    "NEVER": {},
-                    "NICEST": {},
-                    "NONE": {},
-                    "NOTEQUAL": {},
-                    "NO_ERROR": {},
-                    "OBJECT_TYPE": {},
-                    "ONE": {},
-                    "ONE_MINUS_CONSTANT_ALPHA": {},
-                    "ONE_MINUS_CONSTANT_COLOR": {},
-                    "ONE_MINUS_DST_ALPHA": {},
-                    "ONE_MINUS_DST_COLOR": {},
-                    "ONE_MINUS_SRC_ALPHA": {},
-                    "ONE_MINUS_SRC_COLOR": {},
-                    "OUT_OF_MEMORY": {},
-                    "PACK_ALIGNMENT": {},
-                    "PACK_ROW_LENGTH": {},
-                    "PACK_SKIP_PIXELS": {},
-                    "PACK_SKIP_ROWS": {},
-                    "PIXEL_PACK_BUFFER": {},
-                    "PIXEL_PACK_BUFFER_BINDING": {},
-                    "PIXEL_UNPACK_BUFFER": {},
-                    "PIXEL_UNPACK_BUFFER_BINDING": {},
-                    "POINTS": {},
-                    "POLYGON_OFFSET_FACTOR": {},
-                    "POLYGON_OFFSET_FILL": {},
-                    "POLYGON_OFFSET_UNITS": {},
-                    "QUERY_RESULT": {},
-                    "QUERY_RESULT_AVAILABLE": {},
-                    "R11F_G11F_B10F": {},
-                    "R16F": {},
-                    "R16I": {},
-                    "R16UI": {},
-                    "R32F": {},
-                    "R32I": {},
-                    "R32UI": {},
-                    "R8": {},
-                    "R8I": {},
-                    "R8UI": {},
-                    "R8_SNORM": {},
-                    "RASTERIZER_DISCARD": {},
-                    "READ_BUFFER": {},
-                    "READ_FRAMEBUFFER": {},
-                    "READ_FRAMEBUFFER_BINDING": {},
-                    "RED": {},
-                    "RED_BITS": {},
-                    "RED_INTEGER": {},
-                    "RENDERBUFFER": {},
-                    "RENDERBUFFER_ALPHA_SIZE": {},
-                    "RENDERBUFFER_BINDING": {},
-                    "RENDERBUFFER_BLUE_SIZE": {},
-                    "RENDERBUFFER_DEPTH_SIZE": {},
-                    "RENDERBUFFER_GREEN_SIZE": {},
-                    "RENDERBUFFER_HEIGHT": {},
-                    "RENDERBUFFER_INTERNAL_FORMAT": {},
-                    "RENDERBUFFER_RED_SIZE": {},
-                    "RENDERBUFFER_SAMPLES": {},
-                    "RENDERBUFFER_STENCIL_SIZE": {},
-                    "RENDERBUFFER_WIDTH": {},
-                    "RENDERER": {},
-                    "REPEAT": {},
-                    "REPLACE": {},
-                    "RG": {},
-                    "RG16F": {},
-                    "RG16I": {},
-                    "RG16UI": {},
-                    "RG32F": {},
-                    "RG32I": {},
-                    "RG32UI": {},
-                    "RG8": {},
-                    "RG8I": {},
-                    "RG8UI": {},
-                    "RG8_SNORM": {},
-                    "RGB": {},
-                    "RGB10_A2": {},
-                    "RGB10_A2UI": {},
-                    "RGB16F": {},
-                    "RGB16I": {},
-                    "RGB16UI": {},
-                    "RGB32F": {},
-                    "RGB32I": {},
-                    "RGB32UI": {},
-                    "RGB565": {},
-                    "RGB5_A1": {},
-                    "RGB8": {},
-                    "RGB8I": {},
-                    "RGB8UI": {},
-                    "RGB8_SNORM": {},
-                    "RGB9_E5": {},
-                    "RGBA": {},
-                    "RGBA16F": {},
-                    "RGBA16I": {},
-                    "RGBA16UI": {},
-                    "RGBA32F": {},
-                    "RGBA32I": {},
-                    "RGBA32UI": {},
-                    "RGBA4": {},
-                    "RGBA8": {},
-                    "RGBA8I": {},
-                    "RGBA8UI": {},
-                    "RGBA8_SNORM": {},
-                    "RGBA_INTEGER": {},
-                    "RGB_INTEGER": {},
-                    "RG_INTEGER": {},
-                    "SAMPLER_2D": {},
-                    "SAMPLER_2D_ARRAY": {},
-                    "SAMPLER_2D_ARRAY_SHADOW": {},
-                    "SAMPLER_2D_SHADOW": {},
-                    "SAMPLER_3D": {},
-                    "SAMPLER_BINDING": {},
-                    "SAMPLER_CUBE": {},
-                    "SAMPLER_CUBE_SHADOW": {},
-                    "SAMPLES": {},
-                    "SAMPLE_ALPHA_TO_COVERAGE": {},
-                    "SAMPLE_BUFFERS": {},
-                    "SAMPLE_COVERAGE": {},
-                    "SAMPLE_COVERAGE_INVERT": {},
-                    "SAMPLE_COVERAGE_VALUE": {},
-                    "SCISSOR_BOX": {},
-                    "SCISSOR_TEST": {},
-                    "SEPARATE_ATTRIBS": {},
-                    "SHADER_TYPE": {},
-                    "SHADING_LANGUAGE_VERSION": {},
-                    "SHORT": {},
-                    "SIGNALED": {},
-                    "SIGNED_NORMALIZED": {},
-                    "SRC_ALPHA": {},
-                    "SRC_ALPHA_SATURATE": {},
-                    "SRC_COLOR": {},
-                    "SRGB": {},
-                    "SRGB8": {},
-                    "SRGB8_ALPHA8": {},
-                    "STATIC_COPY": {},
-                    "STATIC_DRAW": {},
-                    "STATIC_READ": {},
-                    "STENCIL": {},
-                    "STENCIL_ATTACHMENT": {},
-                    "STENCIL_BACK_FAIL": {},
-                    "STENCIL_BACK_FUNC": {},
-                    "STENCIL_BACK_PASS_DEPTH_FAIL": {},
-                    "STENCIL_BACK_PASS_DEPTH_PASS": {},
-                    "STENCIL_BACK_REF": {},
-                    "STENCIL_BACK_VALUE_MASK": {},
-                    "STENCIL_BACK_WRITEMASK": {},
-                    "STENCIL_BITS": {},
-                    "STENCIL_BUFFER_BIT": {},
-                    "STENCIL_CLEAR_VALUE": {},
-                    "STENCIL_FAIL": {},
-                    "STENCIL_FUNC": {},
-                    "STENCIL_INDEX8": {},
-                    "STENCIL_PASS_DEPTH_FAIL": {},
-                    "STENCIL_PASS_DEPTH_PASS": {},
-                    "STENCIL_REF": {},
-                    "STENCIL_TEST": {},
-                    "STENCIL_VALUE_MASK": {},
-                    "STENCIL_WRITEMASK": {},
-                    "STREAM_COPY": {},
-                    "STREAM_DRAW": {},
-                    "STREAM_READ": {},
-                    "SUBPIXEL_BITS": {},
-                    "SYNC_CONDITION": {},
-                    "SYNC_FENCE": {},
-                    "SYNC_FLAGS": {},
-                    "SYNC_FLUSH_COMMANDS_BIT": {},
-                    "SYNC_GPU_COMMANDS_COMPLETE": {},
-                    "SYNC_STATUS": {},
-                    "TEXTURE": {},
-                    "TEXTURE0": {},
-                    "TEXTURE1": {},
-                    "TEXTURE10": {},
-                    "TEXTURE11": {},
-                    "TEXTURE12": {},
-                    "TEXTURE13": {},
-                    "TEXTURE14": {},
-                    "TEXTURE15": {},
-                    "TEXTURE16": {},
-                    "TEXTURE17": {},
-                    "TEXTURE18": {},
-                    "TEXTURE19": {},
-                    "TEXTURE2": {},
-                    "TEXTURE20": {},
-                    "TEXTURE21": {},
-                    "TEXTURE22": {},
-                    "TEXTURE23": {},
-                    "TEXTURE24": {},
-                    "TEXTURE25": {},
-                    "TEXTURE26": {},
-                    "TEXTURE27": {},
-                    "TEXTURE28": {},
-                    "TEXTURE29": {},
-                    "TEXTURE3": {},
-                    "TEXTURE30": {},
-                    "TEXTURE31": {},
-                    "TEXTURE4": {},
-                    "TEXTURE5": {},
-                    "TEXTURE6": {},
-                    "TEXTURE7": {},
-                    "TEXTURE8": {},
-                    "TEXTURE9": {},
-                    "TEXTURE_2D": {},
-                    "TEXTURE_2D_ARRAY": {},
-                    "TEXTURE_3D": {},
-                    "TEXTURE_BASE_LEVEL": {},
-                    "TEXTURE_BINDING_2D": {},
-                    "TEXTURE_BINDING_2D_ARRAY": {},
-                    "TEXTURE_BINDING_3D": {},
-                    "TEXTURE_BINDING_CUBE_MAP": {},
-                    "TEXTURE_COMPARE_FUNC": {},
-                    "TEXTURE_COMPARE_MODE": {},
-                    "TEXTURE_CUBE_MAP": {},
-                    "TEXTURE_CUBE_MAP_NEGATIVE_X": {},
-                    "TEXTURE_CUBE_MAP_NEGATIVE_Y": {},
-                    "TEXTURE_CUBE_MAP_NEGATIVE_Z": {},
-                    "TEXTURE_CUBE_MAP_POSITIVE_X": {},
-                    "TEXTURE_CUBE_MAP_POSITIVE_Y": {},
-                    "TEXTURE_CUBE_MAP_POSITIVE_Z": {},
-                    "TEXTURE_IMMUTABLE_FORMAT": {},
-                    "TEXTURE_IMMUTABLE_LEVELS": {},
-                    "TEXTURE_MAG_FILTER": {},
-                    "TEXTURE_MAX_LEVEL": {},
-                    "TEXTURE_MAX_LOD": {},
-                    "TEXTURE_MIN_FILTER": {},
-                    "TEXTURE_MIN_LOD": {},
-                    "TEXTURE_WRAP_R": {},
-                    "TEXTURE_WRAP_S": {},
-                    "TEXTURE_WRAP_T": {},
-                    "TIMEOUT_EXPIRED": {},
-                    "TIMEOUT_IGNORED": {},
-                    "TRANSFORM_FEEDBACK": {},
-                    "TRANSFORM_FEEDBACK_ACTIVE": {},
-                    "TRANSFORM_FEEDBACK_BINDING": {},
-                    "TRANSFORM_FEEDBACK_BUFFER": {},
-                    "TRANSFORM_FEEDBACK_BUFFER_BINDING": {},
-                    "TRANSFORM_FEEDBACK_BUFFER_MODE": {},
-                    "TRANSFORM_FEEDBACK_BUFFER_SIZE": {},
-                    "TRANSFORM_FEEDBACK_BUFFER_START": {},
-                    "TRANSFORM_FEEDBACK_PAUSED": {},
-                    "TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN": {},
-                    "TRANSFORM_FEEDBACK_VARYINGS": {},
-                    "TRIANGLES": {},
-                    "TRIANGLE_FAN": {},
-                    "TRIANGLE_STRIP": {},
-                    "UNIFORM_ARRAY_STRIDE": {},
-                    "UNIFORM_BLOCK_ACTIVE_UNIFORMS": {},
-                    "UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES": {},
-                    "UNIFORM_BLOCK_BINDING": {},
-                    "UNIFORM_BLOCK_DATA_SIZE": {},
-                    "UNIFORM_BLOCK_INDEX": {},
-                    "UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER": {},
-                    "UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER": {},
-                    "UNIFORM_BUFFER": {},
-                    "UNIFORM_BUFFER_BINDING": {},
-                    "UNIFORM_BUFFER_OFFSET_ALIGNMENT": {},
-                    "UNIFORM_BUFFER_SIZE": {},
-                    "UNIFORM_BUFFER_START": {},
-                    "UNIFORM_IS_ROW_MAJOR": {},
-                    "UNIFORM_MATRIX_STRIDE": {},
-                    "UNIFORM_OFFSET": {},
-                    "UNIFORM_SIZE": {},
-                    "UNIFORM_TYPE": {},
-                    "UNPACK_ALIGNMENT": {},
-                    "UNPACK_COLORSPACE_CONVERSION_WEBGL": {},
-                    "UNPACK_FLIP_Y_WEBGL": {},
-                    "UNPACK_IMAGE_HEIGHT": {},
-                    "UNPACK_PREMULTIPLY_ALPHA_WEBGL": {},
-                    "UNPACK_ROW_LENGTH": {},
-                    "UNPACK_SKIP_IMAGES": {},
-                    "UNPACK_SKIP_PIXELS": {},
-                    "UNPACK_SKIP_ROWS": {},
-                    "UNSIGNALED": {},
-                    "UNSIGNED_BYTE": {},
-                    "UNSIGNED_INT": {},
-                    "UNSIGNED_INT_10F_11F_11F_REV": {},
-                    "UNSIGNED_INT_24_8": {},
-                    "UNSIGNED_INT_2_10_10_10_REV": {},
-                    "UNSIGNED_INT_5_9_9_9_REV": {},
-                    "UNSIGNED_INT_SAMPLER_2D": {},
-                    "UNSIGNED_INT_SAMPLER_2D_ARRAY": {},
-                    "UNSIGNED_INT_SAMPLER_3D": {},
-                    "UNSIGNED_INT_SAMPLER_CUBE": {},
-                    "UNSIGNED_INT_VEC2": {},
-                    "UNSIGNED_INT_VEC3": {},
-                    "UNSIGNED_INT_VEC4": {},
-                    "UNSIGNED_NORMALIZED": {},
-                    "UNSIGNED_SHORT": {},
-                    "UNSIGNED_SHORT_4_4_4_4": {},
-                    "UNSIGNED_SHORT_5_5_5_1": {},
-                    "UNSIGNED_SHORT_5_6_5": {},
-                    "VALIDATE_STATUS": {},
-                    "VENDOR": {},
-                    "VERSION": {},
-                    "VERTEX_ARRAY_BINDING": {},
-                    "VERTEX_ATTRIB_ARRAY_BUFFER_BINDING": {},
-                    "VERTEX_ATTRIB_ARRAY_DIVISOR": {},
-                    "VERTEX_ATTRIB_ARRAY_ENABLED": {},
-                    "VERTEX_ATTRIB_ARRAY_INTEGER": {},
-                    "VERTEX_ATTRIB_ARRAY_NORMALIZED": {},
-                    "VERTEX_ATTRIB_ARRAY_POINTER": {},
-                    "VERTEX_ATTRIB_ARRAY_SIZE": {},
-                    "VERTEX_ATTRIB_ARRAY_STRIDE": {},
-                    "VERTEX_ATTRIB_ARRAY_TYPE": {},
-                    "VERTEX_SHADER": {},
-                    "VIEWPORT": {},
-                    "WAIT_FAILED": {},
-                    "ZERO": {},
-                    "activeTexture": {
-                      "closure_uid_20499601": {}
-                    },
-                    "attachShader": {
-                      "closure_uid_20499601": {}
-                    },
-                    "beginQuery": {
-                      "closure_uid_20499601": {}
-                    },
-                    "beginTransformFeedback": {
-                      "closure_uid_20499601": {}
-                    },
-                    "bindAttribLocation": {
-                      "closure_uid_20499601": {}
-                    },
-                    "bindBuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "bindBufferBase": {
-                      "closure_uid_20499601": {}
-                    },
-                    "bindBufferRange": {
-                      "closure_uid_20499601": {}
-                    },
-                    "bindFramebuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "bindRenderbuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "bindSampler": {
-                      "closure_uid_20499601": {}
-                    },
-                    "bindTexture": {
-                      "closure_uid_20499601": {}
-                    },
-                    "bindTransformFeedback": {
-                      "closure_uid_20499601": {}
-                    },
-                    "bindVertexArray": {
-                      "closure_uid_20499601": {}
-                    },
-                    "blendColor": {
-                      "closure_uid_20499601": {}
-                    },
-                    "blendEquation": {
-                      "closure_uid_20499601": {}
-                    },
-                    "blendEquationSeparate": {
-                      "closure_uid_20499601": {}
-                    },
-                    "blendFunc": {
-                      "closure_uid_20499601": {}
-                    },
-                    "blendFuncSeparate": {
-                      "closure_uid_20499601": {}
-                    },
-                    "blitFramebuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "bufferData": {
-                      "closure_uid_20499601": {}
-                    },
-                    "bufferSubData": {
-                      "closure_uid_20499601": {}
-                    },
-                    "canvas": {
-                      "addEventListener": {
-                        "closure_uid_20499601": {}
-                      },
-                      "closure_uid_20499601": {},
-                      "convertToBlob": {
-                        "closure_uid_20499601": {}
-                      },
-                      "dispatchEvent": {
-                        "closure_uid_20499601": {}
-                      },
-                      "getContext": {
-                        "closure_uid_20499601": {}
-                      },
-                      "height": {},
-                      "removeEventListener": {
-                        "closure_uid_20499601": {}
-                      },
-                      "transferToImageBitmap": {
-                        "closure_uid_20499601": {}
-                      },
-                      "width": {}
-                    },
-                    "checkFramebufferStatus": {
-                      "closure_uid_20499601": {}
-                    },
-                    "clear": {
-                      "closure_uid_20499601": {}
-                    },
-                    "clearBufferfi": {
-                      "closure_uid_20499601": {}
-                    },
-                    "clearBufferfv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "clearBufferiv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "clearBufferuiv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "clearColor": {
-                      "closure_uid_20499601": {}
-                    },
-                    "clearDepth": {
-                      "closure_uid_20499601": {}
-                    },
-                    "clearStencil": {
-                      "closure_uid_20499601": {}
-                    },
-                    "clientWaitSync": {
-                      "closure_uid_20499601": {}
-                    },
-                    "closure_uid_20499601": {},
-                    "colorMask": {
-                      "closure_uid_20499601": {}
-                    },
-                    "compileShader": {
-                      "closure_uid_20499601": {}
-                    },
-                    "compressedTexImage2D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "compressedTexImage3D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "compressedTexSubImage2D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "compressedTexSubImage3D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "copyBufferSubData": {
-                      "closure_uid_20499601": {}
-                    },
-                    "copyTexImage2D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "copyTexSubImage2D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "copyTexSubImage3D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "createBuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "createFramebuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "createProgram": {
-                      "closure_uid_20499601": {}
-                    },
-                    "createQuery": {
-                      "closure_uid_20499601": {}
-                    },
-                    "createRenderbuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "createSampler": {
-                      "closure_uid_20499601": {}
-                    },
-                    "createShader": {
-                      "closure_uid_20499601": {}
-                    },
-                    "createTexture": {
-                      "closure_uid_20499601": {}
-                    },
-                    "createTransformFeedback": {
-                      "closure_uid_20499601": {}
-                    },
-                    "createVertexArray": {
-                      "closure_uid_20499601": {}
-                    },
-                    "cullFace": {
-                      "closure_uid_20499601": {}
-                    },
-                    "deleteBuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "deleteFramebuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "deleteProgram": {
-                      "closure_uid_20499601": {}
-                    },
-                    "deleteQuery": {
-                      "closure_uid_20499601": {}
-                    },
-                    "deleteRenderbuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "deleteSampler": {
-                      "closure_uid_20499601": {}
-                    },
-                    "deleteShader": {
-                      "closure_uid_20499601": {}
-                    },
-                    "deleteSync": {
-                      "closure_uid_20499601": {}
-                    },
-                    "deleteTexture": {
-                      "closure_uid_20499601": {}
-                    },
-                    "deleteTransformFeedback": {
-                      "closure_uid_20499601": {}
-                    },
-                    "deleteVertexArray": {
-                      "closure_uid_20499601": {}
-                    },
-                    "depthFunc": {
-                      "closure_uid_20499601": {}
-                    },
-                    "depthMask": {
-                      "closure_uid_20499601": {}
-                    },
-                    "depthRange": {
-                      "closure_uid_20499601": {}
-                    },
-                    "detachShader": {
-                      "closure_uid_20499601": {}
-                    },
-                    "disable": {
-                      "closure_uid_20499601": {}
-                    },
-                    "disableVertexAttribArray": {
-                      "closure_uid_20499601": {}
-                    },
-                    "drawArrays": {
-                      "closure_uid_20499601": {}
-                    },
-                    "drawArraysInstanced": {
-                      "closure_uid_20499601": {}
-                    },
-                    "drawBuffers": {
-                      "closure_uid_20499601": {}
-                    },
-                    "drawElements": {
-                      "closure_uid_20499601": {}
-                    },
-                    "drawElementsInstanced": {
-                      "closure_uid_20499601": {}
-                    },
-                    "drawRangeElements": {
-                      "closure_uid_20499601": {}
-                    },
-                    "drawingBufferHeight": {},
-                    "drawingBufferWidth": {},
-                    "enable": {
-                      "closure_uid_20499601": {}
-                    },
-                    "enableVertexAttribArray": {
-                      "closure_uid_20499601": {}
-                    },
-                    "endQuery": {
-                      "closure_uid_20499601": {}
-                    },
-                    "endTransformFeedback": {
-                      "closure_uid_20499601": {}
-                    },
-                    "fenceSync": {
-                      "closure_uid_20499601": {}
-                    },
-                    "finish": {
-                      "closure_uid_20499601": {}
-                    },
-                    "flush": {
-                      "closure_uid_20499601": {}
-                    },
-                    "framebufferRenderbuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "framebufferTexture2D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "framebufferTextureLayer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "frontFace": {
-                      "closure_uid_20499601": {}
-                    },
-                    "generateMipmap": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getActiveAttrib": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getActiveUniform": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getActiveUniformBlockName": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getActiveUniformBlockParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getActiveUniforms": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getAttachedShaders": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getAttribLocation": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getBufferParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getBufferSubData": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getContextAttributes": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getError": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getExtension": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getFragDataLocation": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getFramebufferAttachmentParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getIndexedParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getInternalformatParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getProgramInfoLog": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getProgramParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getQuery": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getQueryParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getRenderbufferParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getSamplerParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getShaderInfoLog": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getShaderParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getShaderPrecisionFormat": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getShaderSource": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getSupportedExtensions": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getSyncParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getTexParameter": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getTransformFeedbackVarying": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getUniform": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getUniformBlockIndex": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getUniformIndices": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getUniformLocation": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getVertexAttrib": {
-                      "closure_uid_20499601": {}
-                    },
-                    "getVertexAttribOffset": {
-                      "closure_uid_20499601": {}
-                    },
-                    "hint": {
-                      "closure_uid_20499601": {}
-                    },
-                    "invalidateFramebuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "invalidateSubFramebuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isBuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isContextLost": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isEnabled": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isFramebuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isProgram": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isQuery": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isRenderbuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isSampler": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isShader": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isSync": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isTexture": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isTransformFeedback": {
-                      "closure_uid_20499601": {}
-                    },
-                    "isVertexArray": {
-                      "closure_uid_20499601": {}
-                    },
-                    "lineWidth": {
-                      "closure_uid_20499601": {}
-                    },
-                    "linkProgram": {
-                      "closure_uid_20499601": {}
-                    },
-                    "pauseTransformFeedback": {
-                      "closure_uid_20499601": {}
-                    },
-                    "pixelStorei": {
-                      "closure_uid_20499601": {}
-                    },
-                    "polygonOffset": {
-                      "closure_uid_20499601": {}
-                    },
-                    "readBuffer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "readPixels": {
-                      "closure_uid_20499601": {}
-                    },
-                    "renderbufferStorage": {
-                      "closure_uid_20499601": {}
-                    },
-                    "renderbufferStorageMultisample": {
-                      "closure_uid_20499601": {}
-                    },
-                    "resumeTransformFeedback": {
-                      "closure_uid_20499601": {}
-                    },
-                    "sampleCoverage": {
-                      "closure_uid_20499601": {}
-                    },
-                    "samplerParameterf": {
-                      "closure_uid_20499601": {}
-                    },
-                    "samplerParameteri": {
-                      "closure_uid_20499601": {}
-                    },
-                    "scissor": {
-                      "closure_uid_20499601": {}
-                    },
-                    "shaderSource": {
-                      "closure_uid_20499601": {}
-                    },
-                    "stencilFunc": {
-                      "closure_uid_20499601": {}
-                    },
-                    "stencilFuncSeparate": {
-                      "closure_uid_20499601": {}
-                    },
-                    "stencilMask": {
-                      "closure_uid_20499601": {}
-                    },
-                    "stencilMaskSeparate": {
-                      "closure_uid_20499601": {}
-                    },
-                    "stencilOp": {
-                      "closure_uid_20499601": {}
-                    },
-                    "stencilOpSeparate": {
-                      "closure_uid_20499601": {}
-                    },
-                    "texImage2D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "texImage3D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "texParameterf": {
-                      "closure_uid_20499601": {}
-                    },
-                    "texParameteri": {
-                      "closure_uid_20499601": {}
-                    },
-                    "texStorage2D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "texStorage3D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "texSubImage2D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "texSubImage3D": {
-                      "closure_uid_20499601": {}
-                    },
-                    "transformFeedbackVaryings": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform1f": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform1fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform1i": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform1iv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform1ui": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform1uiv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform2f": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform2fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform2i": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform2iv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform2ui": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform2uiv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform3f": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform3fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform3i": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform3iv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform3ui": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform3uiv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform4f": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform4fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform4i": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform4iv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform4ui": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniform4uiv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniformBlockBinding": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniformMatrix2fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniformMatrix2x3fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniformMatrix2x4fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniformMatrix3fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniformMatrix3x2fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniformMatrix3x4fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniformMatrix4fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniformMatrix4x2fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "uniformMatrix4x3fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "useProgram": {
-                      "closure_uid_20499601": {}
-                    },
-                    "validateProgram": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttrib1f": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttrib1fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttrib2f": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttrib2fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttrib3f": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttrib3fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttrib4f": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttrib4fv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttribDivisor": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttribI4i": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttribI4iv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttribI4ui": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttribI4uiv": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttribIPointer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "vertexAttribPointer": {
-                      "closure_uid_20499601": {}
-                    },
-                    "viewport": {
-                      "closure_uid_20499601": {}
-                    },
-                    "waitSync": {
-                      "closure_uid_20499601": {}
-                    }
-                  },
-                  "indexBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "isQueryAvailable": {
-                    "closure_uid_20499601": {}
-                  },
-                  "itemsToPoll": {},
-                  "outputTexture": {},
-                  "pollFence": {
-                    "closure_uid_20499601": {}
-                  },
-                  "pollItems": {
-                    "closure_uid_20499601": {}
-                  },
-                  "program": {},
-                  "setInputMatrixTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "setOutputMatrixTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "setOutputMatrixTextureDriver": {
-                    "closure_uid_20499601": {}
-                  },
-                  "setOutputMatrixWriteRegion": {
-                    "closure_uid_20499601": {}
-                  },
-                  "setOutputMatrixWriteRegionDriver": {
-                    "closure_uid_20499601": {}
-                  },
-                  "setOutputPackedMatrixTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "setOutputPackedMatrixWriteRegion": {
-                    "closure_uid_20499601": {}
-                  },
-                  "setProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "textureConfig": {
-                    "closure_uid_20499601": {},
-                    "defaultNumChannels": {},
-                    "downloadTextureFormat": {},
-                    "downloadUnpackNumChannels": {},
-                    "internalFormatFloat": {},
-                    "internalFormatHalfFloat": {},
-                    "internalFormatPackedFloat": {},
-                    "internalFormatPackedHalfFloat": {},
-                    "textureFormatFloat": {},
-                    "textureTypeFloat": {},
-                    "textureTypeHalfFloat": {}
-                  },
-                  "throwIfDisposed": {
-                    "closure_uid_20499601": {}
-                  },
-                  "throwIfNoProgram": {
-                    "closure_uid_20499601": {}
-                  },
-                  "unbindTextureToFrameBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uploadDenseMatrixToTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "uploadPixelDataToTexture": {
-                    "closure_uid_20499601": {}
-                  },
-                  "vertexAttrsAreBound": {},
-                  "vertexBuffer": {
-                    "closure_uid_20499601": {}
-                  },
-                  "waitForQueryAndGetTime": {
-                    "closure_uid_20499601": {}
-                  }
-                },
-                "log": function () { },
-                "logEnabled": {},
-                "numFreeTextures": {},
-                "numUsedTextures": {},
-                "releaseTexture": function () { },
-                "usedTextures": {}
-              },
-              "tile": function () { },
-              "time": function () { },
-              "topk": function () { },
-              "transpose": function () { },
-              "unpackTensor": function () { },
-              "unsortedSegmentSum": function () { },
-              "unstack": function () { },
-              "uploadToGPU": function () { },
-              "uploadWaitMs": {},
-              "warnedAboutMemory": {},
-              "where": function () { },
-              "write": function () { },
-              "zerosLike": function () { }
-            }
-          },
-          "registryFactory": {
-            "cpu": {
-              "factory": function () { },
-              "priority": {}
-            },
-            "webgl": {
-              "factory": function () { },
-              "priority": {}
-            }
-          },
-          "removeBackend": function () { },
-          "reset": function () { },
-          "runKernel": function () { },
-          "scopedRun": function () { },
-          "setBackend": function () { },
-          "startScope": function () { },
-          "startTape": function () { },
-          "state": {
-            "activeProfile": {
-              "kernels": {},
-              "newBytes": {},
-              "newTensors": {},
-              "peakBytes": {},
-              "result": {}
-            },
-            "dispose": function () { },
-            "gradientDepth": {},
-            "kernelDepth": {},
-            "nextScopeId": {},
-            "nextTapeNodeId": {},
-            "numBytes": {},
-            "numDataBuffers": {},
-            "numStringTensors": {},
-            "numTensors": {},
-            "profiling": {},
-            "registeredVariables": {},
-            "scopeStack": {},
-            "tensorInfo": {}
-          },
-          "tidy": function () { },
-          "time": function () { },
-          "track": function () { },
-          "write": function () { }
-        },
-        "addEventListener": {
-          "closure_uid_20499601": {}
-        },
-        "alert": function () { },
-        "applicationCache": {
-          "CHECKING": {},
-          "DOWNLOADING": {},
-          "IDLE": {},
-          "OBSOLETE": {},
-          "UNCACHED": {},
-          "UPDATEREADY": {},
-          "abort": function () { },
-          "addEventListener": {
-            "closure_uid_20499601": {}
-          },
-          "dispatchEvent": {
-            "closure_uid_20499601": {}
-          },
-          "oncached": {},
-          "onchecking": {},
-          "ondownloading": {},
-          "onerror": {},
-          "onnoupdate": {},
-          "onobsolete": {},
-          "onprogress": {},
-          "onupdateready": {},
-          "removeEventListener": {
-            "closure_uid_20499601": {}
-          },
-          "status": {},
-          "swapCache": function () { },
-          "update": function () { }
-        },
-        "atob": function () { },
-        "blur": function () { },
-        "btoa": function () { },
-        "caches": {
-          "delete": function () { },
-          "has": function () { },
-          "keys": function () { },
-          "match": function () { },
-          "open": function () { }
-        },
-        "cancelAnimationFrame": function () { },
-        "cancelIdleCallback": function () { },
-        "captureEvents": function () { },
-        "chrome": {
-          "app": {
-            "InstallState": {
-              "DISABLED": {},
-              "INSTALLED": {},
-              "NOT_INSTALLED": {}
-            },
-            "RunningState": {
-              "CANNOT_RUN": {},
-              "READY_TO_RUN": {},
-              "RUNNING": {}
-            },
-            "getDetails": function () { },
-            "getIsInstalled": function () { },
-            "installState": function () { },
-            "isInstalled": {},
-            "runningState": function () { }
-          },
-          "csi": function () { },
-          "loadTimes": function () { }
-        },
-        "clearInterval": function () { },
-        "clearTimeout": function () { },
-        "clientInformation": {
-          "appCodeName": {},
-          "appName": {},
-          "appVersion": {},
-          "bluetooth": {
-            "addEventListener": {
-              "closure_uid_20499601": {}
-            },
-            "dispatchEvent": {
-              "closure_uid_20499601": {}
-            },
-            "removeEventListener": {
-              "closure_uid_20499601": {}
-            },
-            "requestDevice": function () { }
-          },
-          "clipboard": {
-            "addEventListener": {
-              "closure_uid_20499601": {}
-            },
-            "dispatchEvent": {
-              "closure_uid_20499601": {}
-            },
-            "read": function () { },
-            "readText": function () { },
-            "removeEventListener": {
-              "closure_uid_20499601": {}
-            },
-            "write": function () { },
-            "writeText": function () { }
-          },
-          "connection": {
-            "addEventListener": {
-              "closure_uid_20499601": {}
-            },
-            "dispatchEvent": {
-              "closure_uid_20499601": {}
-            },
-            "downlink": {},
-            "effectiveType": {},
-            "onchange": {},
-            "removeEventListener": {
-              "closure_uid_20499601": {}
-            },
-            "rtt": {},
-            "saveData": {}
-          },
-          "cookieEnabled": {},
-          "credentials": {
-            "create": function () { },
-            "get": function () { },
-            "preventSilentAccess": function () { },
-            "store": function () { }
-          },
-          "deviceMemory": {},
-          "doNotTrack": {},
-          "geolocation": {
-            "clearWatch": function () { },
-            "getCurrentPosition": function () { },
-            "watchPosition": function () { }
-          },
-          "getBattery": function () { },
-          "getGamepads": function () { },
-          "getUserMedia": function () { },
-          "hardwareConcurrency": {},
-          "javaEnabled": function () { },
-          "keyboard": {
-            "getLayoutMap": function () { },
-            "lock": function () { },
-            "unlock": function () { }
-          },
-          "language": {},
-          "languages": {},
-          "locks": {
-            "query": function () { },
-            "request": function () { }
-          },
-          "maxTouchPoints": {},
-          "mediaCapabilities": {
-            "decodingInfo": function () { }
-          },
-          "mediaDevices": {
-            "addEventListener": {
-              "closure_uid_20499601": {}
-            },
-            "dispatchEvent": {
-              "closure_uid_20499601": {}
-            },
-            "enumerateDevices": function () { },
-            "getDisplayMedia": function () { },
-            "getSupportedConstraints": function () { },
-            "getUserMedia": function () { },
-            "ondevicechange": {},
-            "removeEventListener": {
-              "closure_uid_20499601": {}
-            }
-          },
-          "mediaSession": {
-            "metadata": {},
-            "playbackState": {},
-            "setActionHandler": function () { }
-          },
-          "mimeTypes": {
-            "0": {
-              "description": {},
-              "enabledPlugin": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "description": {},
-                "filename": {},
-                "item": function () { },
-                "length": {},
-                "name": {},
-                "namedItem": function () { }
-              },
-              "suffixes": {},
-              "type": {}
-            },
-            "1": {
-              "description": {},
-              "enabledPlugin": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "description": {},
-                "filename": {},
-                "item": function () { },
-                "length": {},
-                "name": {},
-                "namedItem": function () { }
-              },
-              "suffixes": {},
-              "type": {}
-            },
-            "2": {
-              "description": {},
-              "enabledPlugin": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "1": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "description": {},
-                "filename": {},
-                "item": function () { },
-                "length": {},
-                "name": {},
-                "namedItem": function () { }
-              },
-              "suffixes": {},
-              "type": {}
-            },
-            "3": {
-              "description": {},
-              "enabledPlugin": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "1": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "description": {},
-                "filename": {},
-                "item": function () { },
-                "length": {},
-                "name": {},
-                "namedItem": function () { }
-              },
-              "suffixes": {},
-              "type": {}
-            },
-            "item": function () { },
-            "length": {},
-            "namedItem": function () { }
-          },
-          "onLine": {},
-          "permissions": {
-            "query": function () { }
-          },
-          "platform": {},
-          "plugins": {
-            "0": {
-              "0": {
-                "description": {},
-                "enabledPlugin": {},
-                "suffixes": {},
-                "type": {}
-              },
-              "description": {},
-              "filename": {},
-              "item": function () { },
-              "length": {},
-              "name": {},
-              "namedItem": function () { }
-            },
-            "1": {
-              "0": {
-                "description": {},
-                "enabledPlugin": {},
-                "suffixes": {},
-                "type": {}
-              },
-              "description": {},
-              "filename": {},
-              "item": function () { },
-              "length": {},
-              "name": {},
-              "namedItem": function () { }
-            },
-            "2": {
-              "0": {
-                "description": {},
-                "enabledPlugin": {},
-                "suffixes": {},
-                "type": {}
-              },
-              "1": {
-                "description": {},
-                "enabledPlugin": {},
-                "suffixes": {},
-                "type": {}
-              },
-              "description": {},
-              "filename": {},
-              "item": function () { },
-              "length": {},
-              "name": {},
-              "namedItem": function () { }
-            },
-            "item": function () { },
-            "length": {},
-            "namedItem": function () { },
-            "refresh": function () { }
-          },
-          "presentation": {
-            "defaultRequest": {},
-            "receiver": {}
-          },
-          "product": {},
-          "productSub": {},
-          "registerProtocolHandler": function () { },
-          "requestMIDIAccess": function () { },
-          "requestMediaKeySystemAccess": function () { },
-          "sendBeacon": function () { },
-          "serviceWorker": {
-            "addEventListener": {
-              "closure_uid_20499601": {}
-            },
-            "controller": {},
-            "dispatchEvent": {
-              "closure_uid_20499601": {}
-            },
-            "getRegistration": function () { },
-            "getRegistrations": function () { },
-            "oncontrollerchange": {},
-            "onmessage": {},
-            "ready": {},
-            "register": function () { },
-            "removeEventListener": {
-              "closure_uid_20499601": {}
-            },
-            "startMessages": function () { }
-          },
-          "storage": {
-            "estimate": function () { },
-            "persist": function () { },
-            "persisted": function () { }
-          },
-          "unregisterProtocolHandler": function () { },
-          "usb": {
-            "addEventListener": {
-              "closure_uid_20499601": {}
-            },
-            "dispatchEvent": {
-              "closure_uid_20499601": {}
-            },
-            "getDevices": function () { },
-            "onconnect": {},
-            "ondisconnect": {},
-            "removeEventListener": {
-              "closure_uid_20499601": {}
-            },
-            "requestDevice": function () { }
-          },
-          "userActivation": {
-            "hasBeenActive": {},
-            "isActive": {}
-          },
-          "userAgent": {},
-          "vendor": {},
-          "vendorSub": {},
-          "vibrate": function () { },
-          "webkitGetUserMedia": function () { },
-          "webkitPersistentStorage": {
-            "queryUsageAndQuota": function () { },
-            "requestQuota": function () { }
-          },
-          "webkitTemporaryStorage": {
-            "queryUsageAndQuota": function () { },
-            "requestQuota": function () { }
-          }
-        },
-        "close": function () { },
-        "closed": {},
-        "closure_uid_20499601": {},
-        "confirm": function () { },
-        "createImageBitmap": function () { },
-        "crypto": {
-          "getRandomValues": function () { },
-          "subtle": {
-            "decrypt": function () { },
-            "deriveBits": function () { },
-            "deriveKey": function () { },
-            "digest": function () { },
-            "encrypt": function () { },
-            "exportKey": function () { },
-            "generateKey": function () { },
-            "importKey": function () { },
-            "sign": function () { },
-            "unwrapKey": function () { },
-            "verify": function () { },
-            "wrapKey": function () { }
-          }
-        },
-        "customElements": {
-          "define": function () { },
-          "get": function () { },
-          "upgrade": function () { },
-          "whenDefined": function () { }
-        },
-        "defaultStatus": {},
-        "defaultstatus": {},
-        "devicePixelRatio": {},
-        "dispatchEvent": {
-          "closure_uid_20499601": {}
-        },
-        "document": {},
-        "external": {
-          "AddSearchProvider": function () { },
-          "IsSearchProviderInstalled": function () { }
-        },
-        "fetch": function () { },
-        "find": function () { },
-        "focus": function () { },
-        "frameElement": {},
-        "frames": {},
-        "getComputedStyle": function () { },
-        "getSelection": function () { },
-        "history": {
-          "back": function () { },
-          "forward": function () { },
-          "go": function () { },
-          "length": {},
-          "pushState": function () { },
-          "replaceState": function () { },
-          "scrollRestoration": {},
-          "state": {}
-        },
-        "indexedDB": {
-          "cmp": function () { },
-          "databases": function () { },
-          "deleteDatabase": function () { },
-          "open": function () { }
-        },
-        "innerHeight": {},
-        "innerWidth": {},
-        "isSecureContext": {},
-        "length": {},
-        "localStorage": {
-          "clear": function () { },
-          "getItem": function () { },
-          "key": function () { },
-          "length": {},
-          "removeItem": function () { },
-          "setItem": function () { }
-        },
-        "location": {
-          "ancestorOrigins": {
-            "0": {},
-            "contains": function () { },
-            "item": function () { },
-            "length": {}
-          },
-          "assign": function () { },
-          "hash": {},
-          "host": {},
-          "hostname": {},
-          "href": {},
-          "origin": {},
-          "pathname": {},
-          "port": {},
-          "protocol": {},
-          "reload": function () { },
-          "replace": function () { },
-          "search": {},
-          "toString": function () { }
-        },
-        "locationbar": {
-          "visible": {}
-        },
-        "matchMedia": function () { },
-        "menubar": {
-          "visible": {}
-        },
-        "moveBy": function () { },
-        "moveTo": function () { },
-        "name": {},
-        "navigator": {
-          "appCodeName": {},
-          "appName": {},
-          "appVersion": {},
-          "bluetooth": {
-            "addEventListener": {
-              "closure_uid_20499601": {}
-            },
-            "dispatchEvent": {
-              "closure_uid_20499601": {}
-            },
-            "removeEventListener": {
-              "closure_uid_20499601": {}
-            },
-            "requestDevice": function () { }
-          },
-          "clipboard": {
-            "addEventListener": {
-              "closure_uid_20499601": {}
-            },
-            "dispatchEvent": {
-              "closure_uid_20499601": {}
-            },
-            "read": function () { },
-            "readText": function () { },
-            "removeEventListener": {
-              "closure_uid_20499601": {}
-            },
-            "write": function () { },
-            "writeText": function () { }
-          },
-          "connection": {
-            "addEventListener": {
-              "closure_uid_20499601": {}
-            },
-            "dispatchEvent": {
-              "closure_uid_20499601": {}
-            },
-            "downlink": {},
-            "effectiveType": {},
-            "onchange": {},
-            "removeEventListener": {
-              "closure_uid_20499601": {}
-            },
-            "rtt": {},
-            "saveData": {}
-          },
-          "cookieEnabled": {},
-          "credentials": {
-            "create": function () { },
-            "get": function () { },
-            "preventSilentAccess": function () { },
-            "store": function () { }
-          },
-          "deviceMemory": {},
-          "doNotTrack": {},
-          "geolocation": {
-            "clearWatch": function () { },
-            "getCurrentPosition": function () { },
-            "watchPosition": function () { }
-          },
-          "getBattery": function () { },
-          "getGamepads": function () { },
-          "getUserMedia": function () { },
-          "hardwareConcurrency": {},
-          "javaEnabled": function () { },
-          "keyboard": {
-            "getLayoutMap": function () { },
-            "lock": function () { },
-            "unlock": function () { }
-          },
-          "language": {},
-          "languages": {},
-          "locks": {
-            "query": function () { },
-            "request": function () { }
-          },
-          "maxTouchPoints": {},
-          "mediaCapabilities": {
-            "decodingInfo": function () { }
-          },
-          "mediaDevices": {
-            "addEventListener": {
-              "closure_uid_20499601": {}
-            },
-            "dispatchEvent": {
-              "closure_uid_20499601": {}
-            },
-            "enumerateDevices": function () { },
-            "getDisplayMedia": function () { },
-            "getSupportedConstraints": function () { },
-            "getUserMedia": function () { },
-            "ondevicechange": {},
-            "removeEventListener": {
-              "closure_uid_20499601": {}
-            }
-          },
-          "mediaSession": {
-            "metadata": {},
-            "playbackState": {},
-            "setActionHandler": function () { }
-          },
-          "mimeTypes": {
-            "0": {
-              "description": {},
-              "enabledPlugin": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "description": {},
-                "filename": {},
-                "item": function () { },
-                "length": {},
-                "name": {},
-                "namedItem": function () { }
-              },
-              "suffixes": {},
-              "type": {}
-            },
-            "1": {
-              "description": {},
-              "enabledPlugin": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "description": {},
-                "filename": {},
-                "item": function () { },
-                "length": {},
-                "name": {},
-                "namedItem": function () { }
-              },
-              "suffixes": {},
-              "type": {}
-            },
-            "2": {
-              "description": {},
-              "enabledPlugin": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "1": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "description": {},
-                "filename": {},
-                "item": function () { },
-                "length": {},
-                "name": {},
-                "namedItem": function () { }
-              },
-              "suffixes": {},
-              "type": {}
-            },
-            "3": {
-              "description": {},
-              "enabledPlugin": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "1": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "description": {},
-                "filename": {},
-                "item": function () { },
-                "length": {},
-                "name": {},
-                "namedItem": function () { }
-              },
-              "suffixes": {},
-              "type": {}
-            },
-            "item": function () { },
-            "length": {},
-            "namedItem": function () { }
-          },
-          "onLine": {},
-          "permissions": {
-            "query": function () { }
-          },
-          "platform": {},
-          "plugins": {
-            "0": {
-              "0": {
-                "description": {},
-                "enabledPlugin": {},
-                "suffixes": {},
-                "type": {}
-              },
-              "description": {},
-              "filename": {},
-              "item": function () { },
-              "length": {},
-              "name": {},
-              "namedItem": function () { }
-            },
-            "1": {
-              "0": {
-                "description": {},
-                "enabledPlugin": {},
-                "suffixes": {},
-                "type": {}
-              },
-              "description": {},
-              "filename": {},
-              "item": function () { },
-              "length": {},
-              "name": {},
-              "namedItem": function () { }
-            },
-            "2": {
-              "0": {
-                "description": {},
-                "enabledPlugin": {},
-                "suffixes": {},
-                "type": {}
-              },
-              "1": {
-                "description": {},
-                "enabledPlugin": {},
-                "suffixes": {},
-                "type": {}
-              },
-              "description": {},
-              "filename": {},
-              "item": function () { },
-              "length": {},
-              "name": {},
-              "namedItem": function () { }
-            },
-            "item": function () { },
-            "length": {},
-            "namedItem": function () { },
-            "refresh": function () { }
-          },
-          "presentation": {
-            "defaultRequest": {},
-            "receiver": {}
-          },
-          "product": {},
-          "productSub": {},
-          "registerProtocolHandler": function () { },
-          "requestMIDIAccess": function () { },
-          "requestMediaKeySystemAccess": function () { },
-          "sendBeacon": function () { },
-          "serviceWorker": {
-            "addEventListener": {
-              "closure_uid_20499601": {}
-            },
-            "controller": {},
-            "dispatchEvent": {
-              "closure_uid_20499601": {}
-            },
-            "getRegistration": function () { },
-            "getRegistrations": function () { },
-            "oncontrollerchange": {},
-            "onmessage": {},
-            "ready": {},
-            "register": function () { },
-            "removeEventListener": {
-              "closure_uid_20499601": {}
-            },
-            "startMessages": function () { }
-          },
-          "storage": {
-            "estimate": function () { },
-            "persist": function () { },
-            "persisted": function () { }
-          },
-          "unregisterProtocolHandler": function () { },
-          "usb": {
-            "addEventListener": {
-              "closure_uid_20499601": {}
-            },
-            "dispatchEvent": {
-              "closure_uid_20499601": {}
-            },
-            "getDevices": function () { },
-            "onconnect": {},
-            "ondisconnect": {},
-            "removeEventListener": {
-              "closure_uid_20499601": {}
-            },
-            "requestDevice": function () { }
-          },
-          "userActivation": {
-            "hasBeenActive": {},
-            "isActive": {}
-          },
-          "userAgent": {},
-          "vendor": {},
-          "vendorSub": {},
-          "vibrate": function () { },
-          "webkitGetUserMedia": function () { },
-          "webkitPersistentStorage": {
-            "queryUsageAndQuota": function () { },
-            "requestQuota": function () { }
-          },
-          "webkitTemporaryStorage": {
-            "queryUsageAndQuota": function () { },
-            "requestQuota": function () { }
-          }
-        },
-        "onabort": {},
-        "onafterprint": {},
-        "onanimationend": {},
-        "onanimationiteration": {},
-        "onanimationstart": {},
-        "onappinstalled": {},
-        "onauxclick": {},
-        "onbeforeinstallprompt": {},
-        "onbeforeprint": {},
-        "onbeforeunload": {},
-        "onblur": {},
-        "oncancel": {},
-        "oncanplay": {},
-        "oncanplaythrough": {},
-        "onchange": {},
-        "onclick": {},
-        "onclose": {},
-        "oncontextmenu": {},
-        "oncuechange": {},
-        "ondblclick": {},
-        "ondevicemotion": {},
-        "ondeviceorientation": {},
-        "ondeviceorientationabsolute": {},
-        "ondrag": {},
-        "ondragend": {},
-        "ondragenter": {},
-        "ondragleave": {},
-        "ondragover": {},
-        "ondragstart": {},
-        "ondrop": {},
-        "ondurationchange": {},
-        "onemptied": {},
-        "onended": {},
-        "onerror": {},
-        "onfocus": {},
-        "ongotpointercapture": {},
-        "onhashchange": {},
-        "oninput": {},
-        "oninvalid": {},
-        "onkeydown": {},
-        "onkeypress": {},
-        "onkeyup": {},
-        "onlanguagechange": {},
-        "onload": {},
-        "onloadeddata": {},
-        "onloadedmetadata": {},
-        "onloadstart": {},
-        "onlostpointercapture": {},
-        "onmessage": {},
-        "onmessageerror": {},
-        "onmousedown": {},
-        "onmouseenter": {},
-        "onmouseleave": {},
-        "onmousemove": {},
-        "onmouseout": {},
-        "onmouseover": {},
-        "onmouseup": {},
-        "onmousewheel": {},
-        "onoffline": {},
-        "ononline": {},
-        "onpagehide": {},
-        "onpageshow": {},
-        "onpause": {},
-        "onplay": {},
-        "onplaying": {},
-        "onpointercancel": {},
-        "onpointerdown": {},
-        "onpointerenter": {},
-        "onpointerleave": {},
-        "onpointermove": {},
-        "onpointerout": {},
-        "onpointerover": {},
-        "onpointerup": {},
-        "onpopstate": {},
-        "onprogress": {},
-        "onratechange": {},
-        "onrejectionhandled": {},
-        "onreset": {},
-        "onresize": {},
-        "onscroll": {},
-        "onsearch": {},
-        "onseeked": {},
-        "onseeking": {},
-        "onselect": {},
-        "onselectionchange": {},
-        "onselectstart": {},
-        "onstalled": {},
-        "onstorage": {},
-        "onsubmit": {},
-        "onsuspend": {},
-        "ontimeupdate": {},
-        "ontoggle": {},
-        "ontransitionend": {},
-        "onunhandledrejection": {},
-        "onunload": {},
-        "onvolumechange": {},
-        "onwaiting": {},
-        "onwebkitanimationend": {},
-        "onwebkitanimationiteration": {},
-        "onwebkitanimationstart": {},
-        "onwebkittransitionend": {},
-        "onwheel": {},
-        "open": function () { },
-        "openDatabase": function () { },
-        "opener": {},
-        "origin": {},
-        "outerHeight": {},
-        "outerWidth": {},
-        "pageXOffset": {},
-        "pageYOffset": {},
-        "parent": {
-          "PERSISTENT": {},
-          "React": {
-            "Children": {
-              "count": function () { },
-              "forEach": function () { },
-              "map": function () { },
-              "only": function () { },
-              "toArray": function () { }
-            },
-            "Component": function () { },
-            "DOM": {
-              "a": {
-                "type": {}
-              },
-              "abbr": {
-                "type": {}
-              },
-              "address": {
-                "type": {}
-              },
-              "area": {
-                "type": {}
-              },
-              "article": {
-                "type": {}
-              },
-              "aside": {
-                "type": {}
-              },
-              "audio": {
-                "type": {}
-              },
-              "b": {
-                "type": {}
-              },
-              "base": {
-                "type": {}
-              },
-              "bdi": {
-                "type": {}
-              },
-              "bdo": {
-                "type": {}
-              },
-              "big": {
-                "type": {}
-              },
-              "blockquote": {
-                "type": {}
-              },
-              "body": {
-                "type": {}
-              },
-              "br": {
-                "type": {}
-              },
-              "button": {
-                "type": {}
-              },
-              "canvas": {
-                "type": {}
-              },
-              "caption": {
-                "type": {}
-              },
-              "circle": {
-                "type": {}
-              },
-              "cite": {
-                "type": {}
-              },
-              "clipPath": {
-                "type": {}
-              },
-              "code": {
-                "type": {}
-              },
-              "col": {
-                "type": {}
-              },
-              "colgroup": {
-                "type": {}
-              },
-              "data": {
-                "type": {}
-              },
-              "datalist": {
-                "type": {}
-              },
-              "dd": {
-                "type": {}
-              },
-              "defs": {
-                "type": {}
-              },
-              "del": {
-                "type": {}
-              },
-              "details": {
-                "type": {}
-              },
-              "dfn": {
-                "type": {}
-              },
-              "dialog": {
-                "type": {}
-              },
-              "div": {
-                "type": {}
-              },
-              "dl": {
-                "type": {}
-              },
-              "dt": {
-                "type": {}
-              },
-              "ellipse": {
-                "type": {}
-              },
-              "em": {
-                "type": {}
-              },
-              "embed": {
-                "type": {}
-              },
-              "fieldset": {
-                "type": {}
-              },
-              "figcaption": {
-                "type": {}
-              },
-              "figure": {
-                "type": {}
-              },
-              "footer": {
-                "type": {}
-              },
-              "form": {
-                "type": {}
-              },
-              "g": {
-                "type": {}
-              },
-              "h1": {
-                "type": {}
-              },
-              "h2": {
-                "type": {}
-              },
-              "h3": {
-                "type": {}
-              },
-              "h4": {
-                "type": {}
-              },
-              "h5": {
-                "type": {}
-              },
-              "h6": {
-                "type": {}
-              },
-              "head": {
-                "type": {}
-              },
-              "header": {
-                "type": {}
-              },
-              "hgroup": {
-                "type": {}
-              },
-              "hr": {
-                "type": {}
-              },
-              "html": {
-                "type": {}
-              },
-              "i": {
-                "type": {}
-              },
-              "iframe": {
-                "type": {}
-              },
-              "image": {
-                "type": {}
-              },
-              "img": {
-                "type": {}
-              },
-              "input": {
-                "type": {}
-              },
-              "ins": {
-                "type": {}
-              },
-              "kbd": {
-                "type": {}
-              },
-              "keygen": {
-                "type": {}
-              },
-              "label": {
-                "type": {}
-              },
-              "legend": {
-                "type": {}
-              },
-              "li": {
-                "type": {}
-              },
-              "line": {
-                "type": {}
-              },
-              "linearGradient": {
-                "type": {}
-              },
-              "link": {
-                "type": {}
-              },
-              "main": {
-                "type": {}
-              },
-              "map": {
-                "type": {}
-              },
-              "mark": {
-                "type": {}
-              },
-              "mask": {
-                "type": {}
-              },
-              "menu": {
-                "type": {}
-              },
-              "menuitem": {
-                "type": {}
-              },
-              "meta": {
-                "type": {}
-              },
-              "meter": {
-                "type": {}
-              },
-              "nav": {
-                "type": {}
-              },
-              "noscript": {
-                "type": {}
-              },
-              "object": {
-                "type": {}
-              },
-              "ol": {
-                "type": {}
-              },
-              "optgroup": {
-                "type": {}
-              },
-              "option": {
-                "type": {}
-              },
-              "output": {
-                "type": {}
-              },
-              "p": {
-                "type": {}
-              },
-              "param": {
-                "type": {}
-              },
-              "path": {
-                "type": {}
-              },
-              "pattern": {
-                "type": {}
-              },
-              "picture": {
-                "type": {}
-              },
-              "polygon": {
-                "type": {}
-              },
-              "polyline": {
-                "type": {}
-              },
-              "pre": {
-                "type": {}
-              },
-              "progress": {
-                "type": {}
-              },
-              "q": {
-                "type": {}
-              },
-              "radialGradient": {
-                "type": {}
-              },
-              "rect": {
-                "type": {}
-              },
-              "rp": {
-                "type": {}
-              },
-              "rt": {
-                "type": {}
-              },
-              "ruby": {
-                "type": {}
-              },
-              "s": {
-                "type": {}
-              },
-              "samp": {
-                "type": {}
-              },
-              "script": {
-                "type": {}
-              },
-              "section": {
-                "type": {}
-              },
-              "select": {
-                "type": {}
-              },
-              "small": {
-                "type": {}
-              },
-              "source": {
-                "type": {}
-              },
-              "span": {
-                "type": {}
-              },
-              "stop": {
-                "type": {}
-              },
-              "strong": {
-                "type": {}
-              },
-              "style": {
-                "type": {}
-              },
-              "sub": {
-                "type": {}
-              },
-              "summary": {
-                "type": {}
-              },
-              "sup": {
-                "type": {}
-              },
-              "svg": {
-                "type": {}
-              },
-              "table": {
-                "type": {}
-              },
-              "tbody": {
-                "type": {}
-              },
-              "td": {
-                "type": {}
-              },
-              "text": {
-                "type": {}
-              },
-              "textarea": {
-                "type": {}
-              },
-              "tfoot": {
-                "type": {}
-              },
-              "th": {
-                "type": {}
-              },
-              "thead": {
-                "type": {}
-              },
-              "time": {
-                "type": {}
-              },
-              "title": {
-                "type": {}
-              },
-              "tr": {
-                "type": {}
-              },
-              "track": {
-                "type": {}
-              },
-              "tspan": {
-                "type": {}
-              },
-              "u": {
-                "type": {}
-              },
-              "ul": {
-                "type": {}
-              },
-              "var": {
-                "type": {}
-              },
-              "video": {
-                "type": {}
-              },
-              "wbr": {
-                "type": {}
-              }
-            },
-            "PropTypes": {
-              "PropTypes": {},
-              "any": {
-                "isRequired": function () { }
-              },
-              "array": {
-                "isRequired": function () { }
-              },
-              "arrayOf": function () { },
-              "bool": {
-                "isRequired": function () { }
-              },
-              "checkPropTypes": function () { },
-              "element": {
-                "isRequired": function () { }
-              },
-              "func": {
-                "isRequired": function () { }
-              },
-              "instanceOf": function () { },
-              "node": {
-                "isRequired": function () { }
-              },
-              "number": {
-                "isRequired": function () { }
-              },
-              "object": {
-                "isRequired": function () { }
-              },
-              "objectOf": function () { },
-              "oneOf": function () { },
-              "oneOfType": function () { },
-              "shape": function () { },
-              "string": {
-                "isRequired": function () { }
-              },
-              "symbol": {
-                "isRequired": function () { }
-              }
-            },
-            "PureComponent": function () { },
-            "__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED": {
-              "ReactCurrentOwner": {
-                "current": {}
-              }
-            },
-            "__spread": function () { },
-            "cloneElement": function () { },
-            "createClass": function () { },
-            "createElement": function () { },
-            "createFactory": function () { },
-            "createMixin": function () { },
-            "isValidElement": function () { },
-            "version": {}
-          },
-          "ReactDOM": {
-            "findDOMNode": function () { },
-            "render": function () { },
-            "unmountComponentAtNode": function () { },
-            "unstable_batchedUpdates": function () { },
-            "unstable_renderSubtreeIntoContainer": function () { },
-            "version": {}
-          },
-          "TEMPORARY": {},
-          "addEventListener": function () { },
-          "alert": function () { },
-          "applicationCache": {
-            "CHECKING": {},
-            "DOWNLOADING": {},
-            "IDLE": {},
-            "OBSOLETE": {},
-            "UNCACHED": {},
-            "UPDATEREADY": {},
-            "abort": function () { },
-            "addEventListener": function () { },
-            "dispatchEvent": function () { },
-            "oncached": {},
-            "onchecking": {},
-            "ondownloading": {},
-            "onerror": {},
-            "onnoupdate": {},
-            "onobsolete": {},
-            "onprogress": {},
-            "onupdateready": {},
-            "removeEventListener": function () { },
-            "status": {},
-            "swapCache": function () { },
-            "update": function () { }
-          },
-          "atob": function () { },
-          "blur": function () { },
-          "btoa": function () { },
-          "caches": {
-            "delete": function () { },
-            "has": function () { },
-            "keys": function () { },
-            "match": function () { },
-            "open": function () { }
-          },
-          "cancelAnimationFrame": function () { },
-          "cancelIdleCallback": function () { },
-          "captureEvents": function () { },
-          "chrome": {
-            "app": {
-              "InstallState": {
-                "DISABLED": {},
-                "INSTALLED": {},
-                "NOT_INSTALLED": {}
-              },
-              "RunningState": {
-                "CANNOT_RUN": {},
-                "READY_TO_RUN": {},
-                "RUNNING": {}
-              },
-              "getDetails": function () { },
-              "getIsInstalled": function () { },
-              "installState": function () { },
-              "isInstalled": {},
-              "runningState": function () { }
-            },
-            "csi": function () { },
-            "loadTimes": function () { },
-            "runtime": {
-              "OnInstalledReason": {
-                "CHROME_UPDATE": {},
-                "INSTALL": {},
-                "SHARED_MODULE_UPDATE": {},
-                "UPDATE": {}
-              },
-              "OnRestartRequiredReason": {
-                "APP_UPDATE": {},
-                "OS_UPDATE": {},
-                "PERIODIC": {}
-              },
-              "PlatformArch": {
-                "ARM": {},
-                "MIPS": {},
-                "MIPS64": {},
-                "X86_32": {},
-                "X86_64": {}
-              },
-              "PlatformNaclArch": {
-                "ARM": {},
-                "MIPS": {},
-                "MIPS64": {},
-                "X86_32": {},
-                "X86_64": {}
-              },
-              "PlatformOs": {
-                "ANDROID": {},
-                "CROS": {},
-                "LINUX": {},
-                "MAC": {},
-                "OPENBSD": {},
-                "WIN": {}
-              },
-              "RequestUpdateCheckStatus": {
-                "NO_UPDATE": {},
-                "THROTTLED": {},
-                "UPDATE_AVAILABLE": {}
-              },
-              "connect": function () { },
-              "id": {},
-              "sendMessage": function () { }
-            }
-          },
-          "clearInterval": function () { },
-          "clearTimeout": function () { },
-          "clientInformation": {
-            "appCodeName": {},
-            "appName": {},
-            "appVersion": {},
-            "bluetooth": {
-              "addEventListener": function () { },
-              "dispatchEvent": function () { },
-              "removeEventListener": function () { },
-              "requestDevice": function () { }
-            },
-            "clipboard": {
-              "addEventListener": function () { },
-              "dispatchEvent": function () { },
-              "read": function () { },
-              "readText": function () { },
-              "removeEventListener": function () { },
-              "write": function () { },
-              "writeText": function () { }
-            },
-            "connection": {
-              "addEventListener": function () { },
-              "dispatchEvent": function () { },
-              "downlink": {},
-              "effectiveType": {},
-              "onchange": {},
-              "removeEventListener": function () { },
-              "rtt": {},
-              "saveData": {}
-            },
-            "cookieEnabled": {},
-            "credentials": {
-              "create": function () { },
-              "get": function () { },
-              "preventSilentAccess": function () { },
-              "store": function () { }
-            },
-            "deviceMemory": {},
-            "doNotTrack": {},
-            "geolocation": {
-              "clearWatch": function () { },
-              "getCurrentPosition": function () { },
-              "watchPosition": function () { }
-            },
-            "getBattery": function () { },
-            "getGamepads": function () { },
-            "getUserMedia": function () { },
-            "hardwareConcurrency": {},
-            "javaEnabled": function () { },
-            "keyboard": {
-              "getLayoutMap": function () { },
-              "lock": function () { },
-              "unlock": function () { }
-            },
-            "language": {},
-            "languages": {},
-            "locks": {
-              "query": function () { },
-              "request": function () { }
-            },
-            "maxTouchPoints": {},
-            "mediaCapabilities": {
-              "decodingInfo": function () { }
-            },
-            "mediaDevices": {
-              "addEventListener": function () { },
-              "dispatchEvent": function () { },
-              "enumerateDevices": function () { },
-              "getDisplayMedia": function () { },
-              "getSupportedConstraints": function () { },
-              "getUserMedia": function () { },
-              "ondevicechange": {},
-              "removeEventListener": function () { }
-            },
-            "mediaSession": {
-              "metadata": {},
-              "playbackState": {},
-              "setActionHandler": function () { }
-            },
-            "mimeTypes": {
-              "0": {
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_20499601": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_20499601": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_20499601": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "1": {
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_20499601": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_20499601": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_20499601": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "2": {
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_20499601": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "1": {
-                    "closure_uid_20499601": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_20499601": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_20499601": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "3": {
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_20499601": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "1": {
-                    "closure_uid_20499601": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_20499601": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_20499601": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_20499601": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "item": function () { },
-              "length": {},
-              "namedItem": function () { }
-            },
-            "onLine": {},
-            "permissions": {
-              "query": function () { }
-            },
-            "platform": {},
-            "plugins": {
-              "0": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "closure_uid_20499601": {},
-                "description": {},
-                "filename": {},
-                "item": {
-                  "closure_uid_20499601": {}
-                },
-                "length": {},
-                "name": {},
-                "namedItem": {
-                  "closure_uid_20499601": {}
-                }
-              },
-              "1": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "closure_uid_20499601": {},
-                "description": {},
-                "filename": {},
-                "item": {
-                  "closure_uid_20499601": {}
-                },
-                "length": {},
-                "name": {},
-                "namedItem": {
-                  "closure_uid_20499601": {}
-                }
-              },
-              "2": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "1": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "closure_uid_20499601": {},
-                "description": {},
-                "filename": {},
-                "item": {
-                  "closure_uid_20499601": {}
-                },
-                "length": {},
-                "name": {},
-                "namedItem": {
-                  "closure_uid_20499601": {}
-                }
-              },
-              "item": function () { },
-              "length": {},
-              "namedItem": function () { },
-              "refresh": function () { }
-            },
-            "presentation": {
-              "defaultRequest": {},
-              "receiver": {}
-            },
-            "product": {},
-            "productSub": {},
-            "registerProtocolHandler": function () { },
-            "requestMIDIAccess": function () { },
-            "requestMediaKeySystemAccess": function () { },
-            "sendBeacon": function () { },
-            "serviceWorker": {
-              "addEventListener": function () { },
-              "controller": {},
-              "dispatchEvent": function () { },
-              "getRegistration": function () { },
-              "getRegistrations": function () { },
-              "oncontrollerchange": {},
-              "onmessage": {},
-              "ready": {},
-              "register": function () { },
-              "removeEventListener": function () { },
-              "startMessages": function () { }
-            },
-            "storage": {
-              "estimate": function () { },
-              "persist": function () { },
-              "persisted": function () { }
-            },
-            "unregisterProtocolHandler": function () { },
-            "usb": {
-              "addEventListener": function () { },
-              "dispatchEvent": function () { },
-              "getDevices": function () { },
-              "onconnect": {},
-              "ondisconnect": {},
-              "removeEventListener": function () { },
-              "requestDevice": function () { }
-            },
-            "userActivation": {
-              "hasBeenActive": {},
-              "isActive": {}
-            },
-            "userAgent": {},
-            "vendor": {},
-            "vendorSub": {},
-            "vibrate": function () { },
-            "webkitGetUserMedia": function () { },
-            "webkitPersistentStorage": {
-              "queryUsageAndQuota": function () { },
-              "requestQuota": function () { }
-            },
-            "webkitTemporaryStorage": {
-              "queryUsageAndQuota": function () { },
-              "requestQuota": function () { }
-            }
-          },
-          "close": function () { },
-          "closed": {},
-          "confirm": function () { },
-          "createImageBitmap": function () { },
-          "createReactClass": function () { },
-          "crypto": {
-            "getRandomValues": function () { },
-            "subtle": {
-              "decrypt": function () { },
-              "deriveBits": function () { },
-              "deriveKey": function () { },
-              "digest": function () { },
-              "encrypt": function () { },
-              "exportKey": function () { },
-              "generateKey": function () { },
-              "importKey": function () { },
-              "sign": function () { },
-              "unwrapKey": function () { },
-              "verify": function () { },
-              "wrapKey": function () { }
-            }
-          },
-          "customElements": {
-            "define": function () { },
-            "get": function () { },
-            "upgrade": function () { },
-            "whenDefined": function () { }
-          },
-          "defaultStatus": {},
-          "defaultstatus": {},
-          "devicePixelRatio": {},
-          "dispatchEvent": function () { },
-          "document": {},
-          "external": {
-            "AddSearchProvider": function () { },
-            "IsSearchProviderInstalled": function () { }
-          },
-          "fetch": function () { },
-          "find": function () { },
-          "focus": function () { },
-          "frameElement": {},
-          "frames": {},
-          "getComputedStyle": function () { },
-          "getSelection": function () { },
-          "history": {
-            "back": function () { },
-            "forward": function () { },
-            "go": function () { },
-            "length": {},
-            "pushState": function () { },
-            "replaceState": function () { },
-            "scrollRestoration": {},
-            "state": {}
-          },
-          "indexedDB": {
-            "cmp": function () { },
-            "databases": function () { },
-            "deleteDatabase": function () { },
-            "open": function () { }
-          },
-          "innerHeight": {},
-          "innerWidth": {},
-          "isSecureContext": {},
-          "javascript_externs_generator": {
-            "ui": {
-              "core": {
-                "init": function () { },
-                "re_render": function () { }
-              }
-            }
-          },
-          "js_beautify": function () { },
-          "length": {},
-          "localStorage": {
-            "clear": function () { },
-            "getItem": function () { },
-            "key": function () { },
-            "length": {},
-            "removeItem": function () { },
-            "setItem": function () { }
-          },
-          "location": {
-            "ancestorOrigins": {
-              "contains": function () { },
-              "item": function () { },
-              "length": {}
-            },
-            "assign": function () { },
-            "hash": {},
-            "host": {},
-            "hostname": {},
-            "href": {},
-            "origin": {},
-            "pathname": {},
-            "port": {},
-            "protocol": {},
-            "reload": function () { },
-            "replace": function () { },
-            "search": {},
-            "toString": function () { }
-          },
-          "locationbar": {
-            "visible": {}
-          },
-          "matchMedia": function () { },
-          "menubar": {
-            "visible": {}
-          },
-          "moveBy": function () { },
-          "moveTo": function () { },
-          "name": {},
-          "navigator": {
-            "appCodeName": {},
-            "appName": {},
-            "appVersion": {},
-            "bluetooth": {
-              "addEventListener": function () { },
-              "dispatchEvent": function () { },
-              "removeEventListener": function () { },
-              "requestDevice": function () { }
-            },
-            "clipboard": {
-              "addEventListener": function () { },
-              "dispatchEvent": function () { },
-              "read": function () { },
-              "readText": function () { },
-              "removeEventListener": function () { },
-              "write": function () { },
-              "writeText": function () { }
-            },
-            "closure_uid_20499601": {},
-            "connection": {
-              "addEventListener": function () { },
-              "dispatchEvent": function () { },
-              "downlink": {},
-              "effectiveType": {},
-              "onchange": {},
-              "removeEventListener": function () { },
-              "rtt": {},
-              "saveData": {}
-            },
-            "cookieEnabled": {},
-            "credentials": {
-              "create": function () { },
-              "get": function () { },
-              "preventSilentAccess": function () { },
-              "store": function () { }
-            },
-            "deviceMemory": {},
-            "doNotTrack": {},
-            "geolocation": {
-              "clearWatch": function () { },
-              "getCurrentPosition": function () { },
-              "watchPosition": function () { }
-            },
-            "getBattery": function () { },
-            "getGamepads": function () { },
-            "getUserMedia": function () { },
-            "hardwareConcurrency": {},
-            "javaEnabled": function () { },
-            "keyboard": {
-              "getLayoutMap": function () { },
-              "lock": function () { },
-              "unlock": function () { }
-            },
-            "language": {},
-            "languages": {},
-            "locks": {
-              "query": function () { },
-              "request": function () { }
-            },
-            "maxTouchPoints": {},
-            "mediaCapabilities": {
-              "decodingInfo": function () { }
-            },
-            "mediaDevices": {
-              "addEventListener": function () { },
-              "dispatchEvent": function () { },
-              "enumerateDevices": function () { },
-              "getDisplayMedia": function () { },
-              "getSupportedConstraints": function () { },
-              "getUserMedia": function () { },
-              "ondevicechange": {},
-              "removeEventListener": function () { }
-            },
-            "mediaSession": {
-              "metadata": {},
-              "playbackState": {},
-              "setActionHandler": function () { }
-            },
-            "mimeTypes": {
-              "0": {
-                "closure_uid_20499601": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_20499601": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_20499601": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_20499601": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_20499601": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "1": {
-                "closure_uid_20499601": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_20499601": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_20499601": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_20499601": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_20499601": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "2": {
-                "closure_uid_20499601": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_20499601": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "1": {
-                    "closure_uid_20499601": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_20499601": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_20499601": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_20499601": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "3": {
-                "closure_uid_20499601": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_20499601": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "1": {
-                    "closure_uid_20499601": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_20499601": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_20499601": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_20499601": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "closure_uid_20499601": {},
-              "item": function () { },
-              "length": {},
-              "namedItem": function () { }
-            },
-            "onLine": {},
-            "permissions": {
-              "query": function () { }
-            },
-            "platform": {},
-            "plugins": {
-              "0": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "closure_uid_20499601": {},
-                "description": {},
-                "filename": {},
-                "item": {
-                  "closure_uid_20499601": {}
-                },
-                "length": {},
-                "name": {},
-                "namedItem": {
-                  "closure_uid_20499601": {}
-                }
-              },
-              "1": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "closure_uid_20499601": {},
-                "description": {},
-                "filename": {},
-                "item": {
-                  "closure_uid_20499601": {}
-                },
-                "length": {},
-                "name": {},
-                "namedItem": {
-                  "closure_uid_20499601": {}
-                }
-              },
-              "2": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "1": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "closure_uid_20499601": {},
-                "description": {},
-                "filename": {},
-                "item": {
-                  "closure_uid_20499601": {}
-                },
-                "length": {},
-                "name": {},
-                "namedItem": {
-                  "closure_uid_20499601": {}
-                }
-              },
-              "item": function () { },
-              "length": {},
-              "namedItem": function () { },
-              "refresh": function () { }
-            },
-            "presentation": {
-              "defaultRequest": {},
-              "receiver": {}
-            },
-            "product": {},
-            "productSub": {},
-            "registerProtocolHandler": function () { },
-            "requestMIDIAccess": function () { },
-            "requestMediaKeySystemAccess": function () { },
-            "sendBeacon": function () { },
-            "serviceWorker": {
-              "addEventListener": function () { },
-              "controller": {},
-              "dispatchEvent": function () { },
-              "getRegistration": function () { },
-              "getRegistrations": function () { },
-              "oncontrollerchange": {},
-              "onmessage": {},
-              "ready": {},
-              "register": function () { },
-              "removeEventListener": function () { },
-              "startMessages": function () { }
-            },
-            "storage": {
-              "estimate": function () { },
-              "persist": function () { },
-              "persisted": function () { }
-            },
-            "unregisterProtocolHandler": function () { },
-            "usb": {
-              "addEventListener": function () { },
-              "dispatchEvent": function () { },
-              "getDevices": function () { },
-              "onconnect": {},
-              "ondisconnect": {},
-              "removeEventListener": function () { },
-              "requestDevice": function () { }
-            },
-            "userActivation": {
-              "hasBeenActive": {},
-              "isActive": {}
-            },
-            "userAgent": {},
-            "vendor": {},
-            "vendorSub": {},
-            "vibrate": function () { },
-            "webkitGetUserMedia": function () { },
-            "webkitPersistentStorage": {
-              "queryUsageAndQuota": function () { },
-              "requestQuota": function () { }
-            },
-            "webkitTemporaryStorage": {
-              "queryUsageAndQuota": function () { },
-              "requestQuota": function () { }
-            }
-          },
-          "onabort": {},
-          "onafterprint": {},
-          "onanimationend": {},
-          "onanimationiteration": {},
-          "onanimationstart": {},
-          "onappinstalled": {},
-          "onauxclick": {},
-          "onbeforeinstallprompt": {},
-          "onbeforeprint": {},
-          "onbeforeunload": {},
-          "onblur": {},
-          "oncancel": {},
-          "oncanplay": {},
-          "oncanplaythrough": {},
-          "onchange": {},
-          "onclick": {},
-          "onclose": {},
-          "oncontextmenu": {},
-          "oncuechange": {},
-          "ondblclick": {},
-          "ondevicemotion": {},
-          "ondeviceorientation": {},
-          "ondeviceorientationabsolute": {},
-          "ondrag": {},
-          "ondragend": {},
-          "ondragenter": {},
-          "ondragleave": {},
-          "ondragover": {},
-          "ondragstart": {},
-          "ondrop": {},
-          "ondurationchange": {},
-          "onemptied": {},
-          "onended": {},
-          "onerror": {},
-          "onfocus": {},
-          "ongotpointercapture": {},
-          "onhashchange": {},
-          "oninput": {},
-          "oninvalid": {},
-          "onkeydown": {},
-          "onkeypress": {},
-          "onkeyup": {},
-          "onlanguagechange": {},
-          "onload": {},
-          "onloadeddata": {},
-          "onloadedmetadata": {},
-          "onloadstart": {},
-          "onlostpointercapture": {},
-          "onmessage": {},
-          "onmessageerror": {},
-          "onmousedown": {},
-          "onmouseenter": {},
-          "onmouseleave": {},
-          "onmousemove": {},
-          "onmouseout": {},
-          "onmouseover": {},
-          "onmouseup": {},
-          "onmousewheel": {},
-          "onoffline": {},
-          "ononline": {},
-          "onpagehide": {},
-          "onpageshow": {},
-          "onpause": {},
-          "onplay": {},
-          "onplaying": {},
-          "onpointercancel": {},
-          "onpointerdown": {},
-          "onpointerenter": {},
-          "onpointerleave": {},
-          "onpointermove": {},
-          "onpointerout": {},
-          "onpointerover": {},
-          "onpointerup": {},
-          "onpopstate": {},
-          "onprogress": {},
-          "onratechange": {},
-          "onrejectionhandled": {},
-          "onreset": {},
-          "onresize": {},
-          "onscroll": {},
-          "onsearch": {},
-          "onseeked": {},
-          "onseeking": {},
-          "onselect": {},
-          "onselectionchange": {},
-          "onselectstart": {},
-          "onstalled": {},
-          "onstorage": {},
-          "onsubmit": {},
-          "onsuspend": {},
-          "ontimeupdate": {},
-          "ontoggle": {},
-          "ontransitionend": {},
-          "onunhandledrejection": {},
-          "onunload": {},
-          "onvolumechange": {},
-          "onwaiting": {},
-          "onwebkitanimationend": {},
-          "onwebkitanimationiteration": {},
-          "onwebkitanimationstart": {},
-          "onwebkittransitionend": {},
-          "onwheel": {},
-          "open": function () { },
-          "openDatabase": function () { },
-          "opener": {},
-          "origin": {},
-          "outerHeight": {},
-          "outerWidth": {},
-          "pageXOffset": {},
-          "pageYOffset": {},
-          "parent": {},
-          "performance": {
-            "addEventListener": function () { },
-            "clearMarks": function () { },
-            "clearMeasures": function () { },
-            "clearResourceTimings": function () { },
-            "dispatchEvent": function () { },
-            "getEntries": function () { },
-            "getEntriesByName": function () { },
-            "getEntriesByType": function () { },
-            "mark": function () { },
-            "measure": function () { },
-            "memory": {
-              "jsHeapSizeLimit": {},
-              "totalJSHeapSize": {},
-              "usedJSHeapSize": {}
-            },
-            "navigation": {
-              "TYPE_BACK_FORWARD": {},
-              "TYPE_NAVIGATE": {},
-              "TYPE_RELOAD": {},
-              "TYPE_RESERVED": {},
-              "redirectCount": {},
-              "toJSON": function () { },
-              "type": {}
-            },
-            "now": function () { },
-            "onresourcetimingbufferfull": {},
-            "removeEventListener": function () { },
-            "setResourceTimingBufferSize": function () { },
-            "timeOrigin": {},
-            "timing": {
-              "connectEnd": {},
-              "connectStart": {},
-              "domComplete": {},
-              "domContentLoadedEventEnd": {},
-              "domContentLoadedEventStart": {},
-              "domInteractive": {},
-              "domLoading": {},
-              "domainLookupEnd": {},
-              "domainLookupStart": {},
-              "fetchStart": {},
-              "loadEventEnd": {},
-              "loadEventStart": {},
-              "navigationStart": {},
-              "redirectEnd": {},
-              "redirectStart": {},
-              "requestStart": {},
-              "responseEnd": {},
-              "responseStart": {},
-              "secureConnectionStart": {},
-              "toJSON": function () { },
-              "unloadEventEnd": {},
-              "unloadEventStart": {}
-            },
-            "toJSON": function () { }
-          },
-          "personalbar": {
-            "visible": {}
-          },
-          "postMessage": function () { },
-          "print": function () { },
-          "prompt": function () { },
-          "queueMicrotask": function () { },
-          "reagent": {
-            "core": {
-              "force_update_all": function () { }
-            }
-          },
-          "releaseEvents": function () { },
-          "removeEventListener": function () { },
-          "requestAnimationFrame": function () { },
-          "requestIdleCallback": function () { },
-          "resizeBy": function () { },
-          "resizeTo": function () { },
-          "screen": {
-            "availHeight": {},
-            "availLeft": {},
-            "availTop": {},
-            "availWidth": {},
-            "colorDepth": {},
-            "height": {},
-            "orientation": {
-              "addEventListener": function () { },
-              "angle": {},
-              "dispatchEvent": function () { },
-              "lock": function () { },
-              "onchange": {},
-              "removeEventListener": function () { },
-              "type": {},
-              "unlock": function () { }
-            },
-            "pixelDepth": {},
-            "width": {}
-          },
-          "screenLeft": {},
-          "screenTop": {},
-          "screenX": {},
-          "screenY": {},
-          "scroll": function () { },
-          "scrollBy": function () { },
-          "scrollTo": function () { },
-          "scrollX": {},
-          "scrollY": {},
-          "scrollbars": {
-            "visible": {}
-          },
-          "self": {},
-          "sessionStorage": {
-            "clear": function () { },
-            "getItem": function () { },
-            "key": function () { },
-            "length": {},
-            "removeItem": function () { },
-            "setItem": function () { }
-          },
-          "setInterval": function () { },
-          "setTimeout": function () { },
-          "speechSynthesis": {
-            "addEventListener": function () { },
-            "cancel": function () { },
-            "dispatchEvent": function () { },
-            "getVoices": function () { },
-            "onvoiceschanged": {},
-            "pause": function () { },
-            "paused": {},
-            "pending": {},
-            "removeEventListener": function () { },
-            "resume": function () { },
-            "speak": function () { },
-            "speaking": {}
-          },
-          "status": {},
-          "statusbar": {
-            "visible": {}
-          },
-          "stop": function () { },
-          "styleMedia": {
-            "matchMedium": function () { },
-            "type": {}
-          },
-          "toolbar": {
-            "visible": {}
-          },
-          "top": {},
-          "visualViewport": {
-            "addEventListener": function () { },
-            "dispatchEvent": function () { },
-            "height": {},
-            "offsetLeft": {},
-            "offsetTop": {},
-            "onresize": {},
-            "onscroll": {},
-            "pageLeft": {},
-            "pageTop": {},
-            "removeEventListener": function () { },
-            "scale": {},
-            "width": {}
-          },
-          "webkitCancelAnimationFrame": function () { },
-          "webkitRequestAnimationFrame": function () { },
-          "webkitRequestFileSystem": function () { },
-          "webkitResolveLocalFileSystemURL": function () { },
-          "webkitStorageInfo": {
-            "PERSISTENT": {},
-            "TEMPORARY": {},
-            "queryUsageAndQuota": function () { },
-            "requestQuota": function () { }
-          },
-          "window": {}
-        },
-        "performance": {
-          "addEventListener": {
-            "closure_uid_20499601": {}
-          },
-          "clearMarks": function () { },
-          "clearMeasures": function () { },
-          "clearResourceTimings": function () { },
-          "dispatchEvent": {
-            "closure_uid_20499601": {}
-          },
-          "getEntries": function () { },
-          "getEntriesByName": function () { },
-          "getEntriesByType": function () { },
-          "mark": function () { },
-          "measure": function () { },
-          "memory": {
-            "jsHeapSizeLimit": {},
-            "totalJSHeapSize": {},
-            "usedJSHeapSize": {}
-          },
-          "navigation": {
-            "TYPE_BACK_FORWARD": {},
-            "TYPE_NAVIGATE": {},
-            "TYPE_RELOAD": {},
-            "TYPE_RESERVED": {},
-            "redirectCount": {},
-            "toJSON": function () { },
-            "type": {}
-          },
-          "now": function () { },
-          "onresourcetimingbufferfull": {},
-          "removeEventListener": {
-            "closure_uid_20499601": {}
-          },
-          "setResourceTimingBufferSize": function () { },
-          "timeOrigin": {},
-          "timing": {
-            "connectEnd": {},
-            "connectStart": {},
-            "domComplete": {},
-            "domContentLoadedEventEnd": {},
-            "domContentLoadedEventStart": {},
-            "domInteractive": {},
-            "domLoading": {},
-            "domainLookupEnd": {},
-            "domainLookupStart": {},
-            "fetchStart": {},
-            "loadEventEnd": {},
-            "loadEventStart": {},
-            "navigationStart": {},
-            "redirectEnd": {},
-            "redirectStart": {},
-            "requestStart": {},
-            "responseEnd": {},
-            "responseStart": {},
-            "secureConnectionStart": {},
-            "toJSON": function () { },
-            "unloadEventEnd": {},
-            "unloadEventStart": {}
-          },
-          "toJSON": function () { }
-        },
-        "personalbar": {
-          "visible": {}
-        },
-        "postMessage": function () { },
-        "print": function () { },
-        "prompt": function () { },
-        "queueMicrotask": function () { },
-        "releaseEvents": function () { },
-        "removeEventListener": {
-          "closure_uid_20499601": {}
-        },
-        "requestAnimationFrame": function () { },
-        "requestIdleCallback": function () { },
-        "resizeBy": function () { },
-        "resizeTo": function () { },
-        "screen": {
-          "availHeight": {},
-          "availLeft": {},
-          "availTop": {},
-          "availWidth": {},
-          "colorDepth": {},
-          "height": {},
-          "orientation": {
-            "addEventListener": {
-              "closure_uid_20499601": {}
-            },
-            "angle": {},
-            "dispatchEvent": {
-              "closure_uid_20499601": {}
-            },
-            "lock": function () { },
-            "onchange": {},
-            "removeEventListener": {
-              "closure_uid_20499601": {}
-            },
-            "type": {},
-            "unlock": function () { }
-          },
-          "pixelDepth": {},
-          "width": {}
-        },
-        "screenLeft": {},
-        "screenTop": {},
-        "screenX": {},
-        "screenY": {},
-        "scroll": function () { },
-        "scrollBy": function () { },
-        "scrollTo": function () { },
-        "scrollX": {},
-        "scrollY": {},
-        "scrollbars": {
-          "visible": {}
-        },
-        "self": {},
-        "sessionStorage": {
-          "clear": function () { },
-          "getItem": function () { },
-          "key": function () { },
-          "length": {},
-          "removeItem": function () { },
-          "setItem": function () { }
-        },
-        "setInterval": function () { },
-        "setTimeout": function () { },
-        "speechSynthesis": {
-          "addEventListener": {
-            "closure_uid_20499601": {}
-          },
-          "cancel": function () { },
-          "dispatchEvent": {
-            "closure_uid_20499601": {}
-          },
-          "getVoices": function () { },
-          "onvoiceschanged": {},
-          "pause": function () { },
-          "paused": {},
-          "pending": {},
-          "removeEventListener": {
-            "closure_uid_20499601": {}
-          },
-          "resume": function () { },
-          "speak": function () { },
-          "speaking": {}
-        },
-        "status": {},
-        "statusbar": {
-          "visible": {}
-        },
-        "stop": function () { },
-        "styleMedia": {
-          "matchMedium": function () { },
-          "type": {}
-        },
-        "tf": {
-          "AdadeltaOptimizer": {
-            "className": {},
-            "fromConfig": function () { }
-          },
-          "AdagradOptimizer": {
-            "className": {},
-            "fromConfig": function () { }
-          },
-          "AdamOptimizer": {
-            "className": {},
-            "fromConfig": function () { }
-          },
-          "AdamaxOptimizer": {
-            "className": {},
-            "fromConfig": function () { }
-          },
-          "Callback": function () { },
-          "CallbackList": function () { },
-          "CustomCallback": function () { },
-          "DataStorage": function () { },
-          "ENV": {},
-          "EarlyStopping": function () { },
-          "Environment": function () { },
-          "GraphModel": function () { },
-          "History": function () { },
-          "InputSpec": function () { },
-          "KernelBackend": function () { },
-          "LayerVariable": function () { },
-          "LayersModel": {
-            "className": {},
-            "fromConfig": function () { },
-            "nodeKey": function () { }
-          },
-          "MomentumOptimizer": {
-            "className": {},
-            "fromConfig": function () { }
-          },
-          "Optimizer": {
-            "fromConfig": function () { }
-          },
-          "RMSPropOptimizer": {
-            "className": {},
-            "fromConfig": function () { }
-          },
-          "RNN": {
-            "className": {},
-            "fromConfig": function () { },
-            "nodeKey": function () { }
-          },
-          "Rank": {
-            "R0": {},
-            "R1": {},
-            "R2": {},
-            "R3": {},
-            "R4": {},
-            "R5": {},
-            "R6": {}
-          },
-          "Reduction": {
-            "0": {},
-            "1": {},
-            "2": {},
-            "3": {},
-            "MEAN": {},
-            "NONE": {},
-            "SUM": {},
-            "SUM_BY_NONZERO_WEIGHTS": {}
-          },
-          "SGDOptimizer": {
-            "className": {},
-            "fromConfig": function () { }
-          },
-          "Sequential": {
-            "className": {},
-            "fromConfig": function () { },
-            "nodeKey": function () { }
-          },
-          "SymbolicTensor": function () { },
-          "Tensor": {
-            "make": function () { }
-          },
-          "TensorBuffer": function () { },
-          "Variable": {
-            "make": function () { },
-            "variable": function () { }
-          },
-          "abs": function () { },
-          "acos": function () { },
-          "acosh": function () { },
-          "add": function () { },
-          "addN": function () { },
-          "addStrict": function () { },
-          "all": function () { },
-          "any": function () { },
-          "argMax": function () { },
-          "argMin": function () { },
-          "asin": function () { },
-          "asinh": function () { },
-          "atan": function () { },
-          "atan2": function () { },
-          "atanh": function () { },
-          "avgPool": function () { },
-          "avgPool3d": function () { },
-          "backend": function () { },
-          "backend_util": {
-            "assertAndGetBroadcastShape": function () { },
-            "assertAxesAreInnerMostDims": function () { },
-            "assertParamsConsistent": function () { },
-            "axesAreInnerMostDims": function () { },
-            "castTensor": function () { },
-            "combineLocations": function () { },
-            "computeConv2DInfo": function () { },
-            "computeConv3DInfo": function () { },
-            "computeDefaultPad": function () { },
-            "computeOutAndReduceShapes": function () { },
-            "computeOutShape": function () { },
-            "computePool2DInfo": function () { },
-            "computePool3DInfo": function () { },
-            "convertConv2DDataFormat": function () { },
-            "eitherStridesOrDilationsAreOne": function () { },
-            "expandShapeToKeepDim": function () { },
-            "getAxesPermutation": function () { },
-            "getBroadcastDims": function () { },
-            "getInnerMostAxes": function () { },
-            "getReductionAxes": function () { },
-            "getUndoAxesPermutation": function () { },
-            "linspaceImpl": function () { },
-            "reshapeTensor": function () { },
-            "tupleValuesAreOne": function () { },
-            "upcastType": function () { }
-          },
-          "basicLSTMCell": function () { },
-          "batchNorm": function () { },
-          "batchNorm2d": function () { },
-          "batchNorm3d": function () { },
-          "batchNorm4d": function () { },
-          "batchNormalization": function () { },
-          "batchNormalization2d": function () { },
-          "batchNormalization3d": function () { },
-          "batchNormalization4d": function () { },
-          "batchToSpaceND": function () { },
-          "booleanMaskAsync": function () { },
-          "browser": {
-            "fromPixels": function () { },
-            "toPixels": function () { }
-          },
-          "buffer": function () { },
-          "callbacks": {
-            "earlyStopping": function () { }
-          },
-          "cast": function () { },
-          "ceil": function () { },
-          "clipByValue": function () { },
-          "clone": function () { },
-          "complex": function () { },
-          "concat": function () { },
-          "concat1d": function () { },
-          "concat2d": function () { },
-          "concat3d": function () { },
-          "concat4d": function () { },
-          "constraints": {
-            "maxNorm": function () { },
-            "minMaxNorm": function () { },
-            "nonNeg": function () { },
-            "unitNorm": function () { }
-          },
-          "conv1d": function () { },
-          "conv2d": function () { },
-          "conv2dDerFilter": function () { },
-          "conv2dDerInput": function () { },
-          "conv2dTranspose": function () { },
-          "conv3d": function () { },
-          "conv3dTranspose": function () { },
-          "cos": function () { },
-          "cosh": function () { },
-          "cumsum": function () { },
-          "customGrad": function () { },
-          "data": {
-            "CSVDataset": {
-              "MAX_BUFFER_SIZE": {}
-            },
-            "Dataset": {
-              "MAX_BUFFER_SIZE": {}
-            },
-            "FileDataSource": function () { },
-            "TextLineDataset": {
-              "MAX_BUFFER_SIZE": {}
-            },
-            "URLDataSource": function () { },
-            "array": function () { },
-            "csv": function () { },
-            "func": function () { },
-            "generator": function () { },
-            "microphone": function () { },
-            "version_data": {},
-            "webcam": function () { },
-            "zip": function () { }
-          },
-          "deprecationWarn": function () { },
-          "depthToSpace": function () { },
-          "depthwiseConv2d": function () { },
-          "deregisterOp": function () { },
-          "diag": function () { },
-          "disableDeprecationWarnings": function () { },
-          "dispose": function () { },
-          "disposeVariables": function () { },
-          "div": function () { },
-          "divStrict": function () { },
-          "dot": function () { },
-          "dropout": function () { },
-          "elu": function () { },
-          "enableDebugMode": function () { },
-          "enableProdMode": function () { },
-          "environment": {},
-          "equal": function () { },
-          "equalStrict": function () { },
-          "erf": function () { },
-          "exp": function () { },
-          "expandDims": function () { },
-          "expm1": function () { },
-          "eye": function () { },
-          "fft": function () { },
-          "fill": function () { },
-          "findBackend": function () { },
-          "findBackendFactory": function () { },
-          "floor": function () { },
-          "floorDiv": function () { },
-          "frame": function () { },
-          "fused": {
-            "conv2d": function () { },
-            "matMul": function () { }
-          },
-          "gather": function () { },
-          "gatherND": function () { },
-          "getBackend": function () { },
-          "grad": function () { },
-          "grads": function () { },
-          "greater": function () { },
-          "greaterEqual": function () { },
-          "greaterEqualStrict": function () { },
-          "greaterStrict": function () { },
-          "hammingWindow": function () { },
-          "hannWindow": function () { },
-          "ifft": function () { },
-          "imag": function () { },
-          "image": {
-            "cropAndResize": function () { },
-            "nonMaxSuppression": function () { },
-            "nonMaxSuppressionAsync": function () { },
-            "resizeBilinear": function () { },
-            "resizeNearestNeighbor": function () { }
-          },
-          "inTopKAsync": function () { },
-          "initializers": {
-            "constant": function () { },
-            "glorotNormal": function () { },
-            "glorotUniform": function () { },
-            "heNormal": function () { },
-            "heUniform": function () { },
-            "identity": function () { },
-            "leCunNormal": function () { },
-            "leCunUniform": function () { },
-            "ones": function () { },
-            "orthogonal": function () { },
-            "randomNormal": function () { },
-            "randomUniform": function () { },
-            "truncatedNormal": function () { },
-            "varianceScaling": function () { },
-            "zeros": function () { }
-          },
-          "input": function () { },
-          "io": {
-            "browserFiles": function () { },
-            "browserHTTPRequest": function () { },
-            "concatenateArrayBuffers": function () { },
-            "copyModel": function () { },
-            "decodeWeights": function () { },
-            "encodeWeights": function () { },
-            "fromMemory": function () { },
-            "getLoadHandlers": function () { },
-            "getModelArtifactsInfoForJSON": function () { },
-            "getSaveHandlers": function () { },
-            "http": function () { },
-            "isHTTPScheme": function () { },
-            "listModels": function () { },
-            "loadWeights": function () { },
-            "moveModel": function () { },
-            "registerLoadRouter": function () { },
-            "registerSaveRouter": function () { },
-            "removeModel": function () { },
-            "weightsLoaderFactory": function () { },
-            "withSaveHandler": function () { }
-          },
-          "irfft": function () { },
-          "isFinite": function () { },
-          "isInf": function () { },
-          "isNaN": function () { },
-          "keep": function () { },
-          "layers": {
-            "Layer": {
-              "fromConfig": function () { },
-              "nodeKey": function () { }
-            },
-            "RNN": {
-              "className": {},
-              "fromConfig": function () { },
-              "nodeKey": function () { }
-            },
-            "RNNCell": {
-              "fromConfig": function () { },
-              "nodeKey": function () { }
-            },
-            "activation": function () { },
-            "add": function () { },
-            "alphaDropout": function () { },
-            "average": function () { },
-            "averagePooling1d": function () { },
-            "averagePooling2d": function () { },
-            "averagePooling3d": function () { },
-            "avgPool1d": function () { },
-            "avgPool2d": function () { },
-            "avgPool3d": function () { },
-            "avgPooling1d": function () { },
-            "avgPooling2d": function () { },
-            "avgPooling3d": function () { },
-            "batchNormalization": function () { },
-            "bidirectional": function () { },
-            "concatenate": function () { },
-            "conv1d": function () { },
-            "conv2d": function () { },
-            "conv2dTranspose": function () { },
-            "conv3d": function () { },
-            "cropping2D": function () { },
-            "dense": function () { },
-            "depthwiseConv2d": function () { },
-            "dot": function () { },
-            "dropout": function () { },
-            "elu": function () { },
-            "embedding": function () { },
-            "flatten": function () { },
-            "gaussianDropout": function () { },
-            "gaussianNoise": function () { },
-            "globalAveragePooling1d": function () { },
-            "globalAveragePooling2d": function () { },
-            "globalMaxPool1d": function () { },
-            "globalMaxPool2d": function () { },
-            "globalMaxPooling1d": function () { },
-            "globalMaxPooling2d": function () { },
-            "gru": function () { },
-            "gruCell": function () { },
-            "input": function () { },
-            "inputLayer": function () { },
-            "leakyReLU": function () { },
-            "lstm": function () { },
-            "lstmCell": function () { },
-            "masking": function () { },
-            "maxPool1d": function () { },
-            "maxPool2d": function () { },
-            "maxPooling1d": function () { },
-            "maxPooling2d": function () { },
-            "maxPooling3d": function () { },
-            "maximum": function () { },
-            "minimum": function () { },
-            "multiply": function () { },
-            "permute": function () { },
-            "prelu": function () { },
-            "reLU": function () { },
-            "repeatVector": function () { },
-            "reshape": function () { },
-            "rnn": function () { },
-            "separableConv2d": function () { },
-            "simpleRNN": function () { },
-            "simpleRNNCell": function () { },
-            "softmax": function () { },
-            "stackedRNNCells": function () { },
-            "thresholdedReLU": function () { },
-            "timeDistributed": function () { },
-            "upSampling2d": function () { },
-            "zeroPadding2d": function () { }
-          },
-          "leakyRelu": function () { },
-          "less": function () { },
-          "lessEqual": function () { },
-          "lessEqualStrict": function () { },
-          "lessStrict": function () { },
-          "linalg": {
-            "gramSchmidt": function () { },
-            "qr": function () { }
-          },
-          "linspace": function () { },
-          "loadGraphModel": function () { },
-          "loadLayersModel": function () { },
-          "localResponseNormalization": function () { },
-          "log": function () { },
-          "log1p": function () { },
-          "logSigmoid": function () { },
-          "logSoftmax": function () { },
-          "logSumExp": function () { },
-          "logicalAnd": function () { },
-          "logicalNot": function () { },
-          "logicalOr": function () { },
-          "logicalXor": function () { },
-          "losses": {
-            "Reduction": {
-              "0": {},
-              "1": {},
-              "2": {},
-              "3": {},
-              "MEAN": {},
-              "NONE": {},
-              "SUM": {},
-              "SUM_BY_NONZERO_WEIGHTS": {}
-            },
-            "absoluteDifference": function () { },
-            "computeWeightedLoss": function () { },
-            "cosineDistance": function () { },
-            "hingeLoss": function () { },
-            "huberLoss": function () { },
-            "logLoss": function () { },
-            "meanSquaredError": function () { },
-            "sigmoidCrossEntropy": function () { },
-            "softmaxCrossEntropy": function () { }
-          },
-          "matMul": function () { },
-          "math": {
-            "confusionMatrix": function () { }
-          },
-          "max": function () { },
-          "maxPool": function () { },
-          "maxPool3d": function () { },
-          "maximum": function () { },
-          "maximumStrict": function () { },
-          "mean": function () { },
-          "memory": function () { },
-          "metrics": {
-            "MAPE": function () { },
-            "MSE": function () { },
-            "binaryAccuracy": function () { },
-            "binaryCrossentropy": function () { },
-            "categoricalAccuracy": function () { },
-            "categoricalCrossentropy": function () { },
-            "cosineProximity": function () { },
-            "mape": function () { },
-            "meanAbsoluteError": function () { },
-            "meanAbsolutePercentageError": function () { },
-            "meanSquaredError": function () { },
-            "mse": function () { },
-            "precision": function () { },
-            "recall": function () { },
-            "sparseCategoricalAccuracy": function () { }
-          },
-          "min": function () { },
-          "minimum": function () { },
-          "minimumStrict": function () { },
-          "mod": function () { },
-          "modStrict": function () { },
-          "model": function () { },
-          "models": {
-            "modelFromJSON": function () { }
-          },
-          "moments": function () { },
-          "movingAverage": function () { },
-          "mul": function () { },
-          "mulStrict": function () { },
-          "multiRNNCell": function () { },
-          "multinomial": function () { },
-          "neg": function () { },
-          "nextFrame": function () { },
-          "norm": function () { },
-          "notEqual": function () { },
-          "notEqualStrict": function () { },
-          "oneHot": function () { },
-          "ones": function () { },
-          "onesLike": function () { },
-          "op": function () { },
-          "outerProduct": function () { },
-          "pad": function () { },
-          "pad1d": function () { },
-          "pad2d": function () { },
-          "pad3d": function () { },
-          "pad4d": function () { },
-          "pool": function () { },
-          "pow": function () { },
-          "powStrict": function () { },
-          "prelu": function () { },
-          "print": function () { },
-          "prod": function () { },
-          "profile": function () { },
-          "rand": function () { },
-          "randomGamma": function () { },
-          "randomNormal": function () { },
-          "randomUniform": function () { },
-          "range": function () { },
-          "ready": function () { },
-          "real": function () { },
-          "reciprocal": function () { },
-          "registerBackend": function () { },
-          "registerCallbackConstructor": function () { },
-          "registerOp": function () { },
-          "regularizers": {
-            "l1": function () { },
-            "l1l2": function () { },
-            "l2": function () { }
-          },
-          "relu": function () { },
-          "removeBackend": function () { },
-          "reshape": function () { },
-          "reverse": function () { },
-          "reverse1d": function () { },
-          "reverse2d": function () { },
-          "reverse3d": function () { },
-          "reverse4d": function () { },
-          "rfft": function () { },
-          "round": function () { },
-          "rsqrt": function () { },
-          "scalar": function () { },
-          "scatterND": function () { },
-          "selu": function () { },
-          "separableConv2d": function () { },
-          "sequential": function () { },
-          "serialization": {
-            "Serializable": {
-              "fromConfig": function () { }
-            },
-            "SerializationMap": {
-              "getMap": function () { },
-              "instance": {
-                "classNameMap": {
-                  "Activation": {},
-                  "Adadelta": {},
-                  "Adagrad": {},
-                  "Adam": {},
-                  "Adamax": {},
-                  "Add": {},
-                  "AlphaDropout": {},
-                  "Average": {},
-                  "AveragePooling1D": {},
-                  "AveragePooling2D": {},
-                  "AveragePooling3D": {},
-                  "BatchNormalization": {},
-                  "Bidirectional": {},
-                  "Concatenate": {},
-                  "Constant": {},
-                  "Conv1D": {},
-                  "Conv2D": {},
-                  "Conv2DTranspose": {},
-                  "Conv3D": {},
-                  "Cropping2D": {},
-                  "Dense": {},
-                  "DepthwiseConv2D": {},
-                  "Dot": {},
-                  "Dropout": {},
-                  "ELU": {},
-                  "Embedding": {},
-                  "Flatten": {},
-                  "GRU": {},
-                  "GRUCell": {},
-                  "GaussianDropout": {},
-                  "GaussianNoise": {},
-                  "GlobalAveragePooling1D": {},
-                  "GlobalAveragePooling2D": {},
-                  "GlobalMaxPooling1D": {},
-                  "GlobalMaxPooling2D": {},
-                  "GlorotNormal": {},
-                  "GlorotUniform": {},
-                  "HeNormal": {},
-                  "HeUniform": {},
-                  "Identity": {},
-                  "InputLayer": {},
-                  "L1L2": {},
-                  "LSTM": {},
-                  "LSTMCell": {},
-                  "LeCunNormal": {},
-                  "LeakyReLU": {},
-                  "Masking": {},
-                  "MaxNorm": {},
-                  "MaxPooling1D": {},
-                  "MaxPooling2D": {},
-                  "MaxPooling3D": {},
-                  "Maximum": {},
-                  "MinMaxNorm": {},
-                  "Minimum": {},
-                  "Model": {},
-                  "Momentum": {},
-                  "Multiply": {},
-                  "NonNeg": {},
-                  "Ones": {},
-                  "Orthogonal": {},
-                  "PReLU": {},
-                  "Permute": {},
-                  "RMSProp": {},
-                  "RNN": {},
-                  "RandomNormal": {},
-                  "RandomUniform": {},
-                  "ReLU": {},
-                  "RepeatVector": {},
-                  "Reshape": {},
-                  "SGD": {},
-                  "SeparableConv2D": {},
-                  "Sequential": {},
-                  "SimpleRNN": {},
-                  "SimpleRNNCell": {},
-                  "Softmax": {},
-                  "StackedRNNCells": {},
-                  "ThresholdedReLU": {},
-                  "TimeDistributed": {},
-                  "TruncatedNormal": {},
-                  "UnitNorm": {},
-                  "UpSampling2D": {},
-                  "VarianceScaling": {},
-                  "ZeroPadding2D": {},
-                  "Zeros": {},
-                  "elu": {},
-                  "hardSigmoid": {},
-                  "linear": {},
-                  "logSoftmax": {},
-                  "relu": {},
-                  "relu6": {},
-                  "selu": {},
-                  "sigmoid": {},
-                  "softmax": {},
-                  "softplus": {},
-                  "softsign": {},
-                  "tanh": {}
-                }
-              },
-              "register": function () { }
-            },
-            "registerClass": function () { }
-          },
-          "setBackend": function () { },
-          "setPlatform": function () { },
-          "setdiff1dAsync": function () { },
-          "sigmoid": function () { },
-          "sign": function () { },
-          "signal": {
-            "frame": function () { },
-            "hammingWindow": function () { },
-            "hannWindow": function () { },
-            "stft": function () { }
-          },
-          "sin": function () { },
-          "sinh": function () { },
-          "slice": function () { },
-          "slice1d": function () { },
-          "slice2d": function () { },
-          "slice3d": function () { },
-          "slice4d": function () { },
-          "softmax": function () { },
-          "softplus": function () { },
-          "spaceToBatchND": function () { },
-          "sparseToDense": function () { },
-          "spectral": {
-            "fft": function () { },
-            "ifft": function () { },
-            "irfft": function () { },
-            "rfft": function () { }
-          },
-          "split": function () { },
-          "sqrt": function () { },
-          "square": function () { },
-          "squaredDifference": function () { },
-          "squaredDifferenceStrict": function () { },
-          "squeeze": function () { },
-          "stack": function () { },
-          "step": function () { },
-          "stft": function () { },
-          "stridedSlice": function () { },
-          "sub": function () { },
-          "subStrict": function () { },
-          "sum": function () { },
-          "tan": function () { },
-          "tanh": function () { },
-          "tensor": function () { },
-          "tensor1d": function () { },
-          "tensor2d": function () { },
-          "tensor3d": function () { },
-          "tensor4d": function () { },
-          "tensor5d": function () { },
-          "tensor6d": function () { },
-          "tensor_util": {
-            "assertTypesMatch": function () { },
-            "getTensorsInContainer": function () { },
-            "isTensorInList": function () { },
-            "makeTypesMatch": function () { }
-          },
-          "test_util": {
-            "TEST_EPSILON_FLOAT16": {},
-            "expectArrayBuffersEqual": function () { },
-            "expectArraysClose": function () { },
-            "expectArraysEqual": function () { },
-            "expectNumbersClose": function () { },
-            "expectPromiseToFail": function () { },
-            "expectValuesInRange": function () { },
-            "testEpsilon": function () { }
-          },
-          "tidy": function () { },
-          "tile": function () { },
-          "time": function () { },
-          "topk": function () { },
-          "train": {
-            "adadelta": function () { },
-            "adagrad": function () { },
-            "adam": function () { },
-            "adamax": function () { },
-            "momentum": function () { },
-            "rmsprop": function () { },
-            "sgd": function () { }
-          },
-          "transpose": function () { },
-          "truncatedNormal": function () { },
-          "unsortedSegmentSum": function () { },
-          "unstack": function () { },
-          "util": {
-            "arraysEqual": function () { },
-            "assert": function () { },
-            "assertNonNegativeIntegerDimensions": function () { },
-            "assertNonNull": function () { },
-            "assertShapesMatch": function () { },
-            "bytesFromStringArray": function () { },
-            "bytesPerElement": function () { },
-            "checkConversionForErrors": function () { },
-            "clamp": function () { },
-            "computeStrides": function () { },
-            "createShuffledIndices": function () { },
-            "decodeString": function () { },
-            "distSquared": function () { },
-            "encodeString": function () { },
-            "fetch": function () { },
-            "flatten": function () { },
-            "getArrayFromDType": function () { },
-            "getTypedArrayFromDType": function () { },
-            "hasEncodingLoss": function () { },
-            "inferDtype": function () { },
-            "inferFromImplicitShape": function () { },
-            "isBoolean": function () { },
-            "isFunction": function () { },
-            "isInt": function () { },
-            "isNumber": function () { },
-            "isScalarShape": function () { },
-            "isString": function () { },
-            "isTypedArray": function () { },
-            "isValidDtype": function () { },
-            "makeOnesTypedArray": function () { },
-            "makeZerosTypedArray": function () { },
-            "nearestDivisor": function () { },
-            "nearestLargerEven": function () { },
-            "now": function () { },
-            "parseAxisParam": function () { },
-            "randUniform": function () { },
-            "repeatedTry": function () { },
-            "rightPad": function () { },
-            "shuffle": function () { },
-            "sizeFromShape": function () { },
-            "sizeToSquarishShape": function () { },
-            "squeezeShape": function () { },
-            "sum": function () { },
-            "tanh": function () { },
-            "toNestedArray": function () { },
-            "toTypedArray": function () { }
-          },
-          "valueAndGrad": function () { },
-          "valueAndGrads": function () { },
-          "variable": function () { },
-          "variableGrads": function () { },
-          "version": {
-            "tfjs": {},
-            "tfjs-converter": {},
-            "tfjs-core": {},
-            "tfjs-data": {},
-            "tfjs-layers": {}
-          },
-          "version_converter": {},
-          "version_core": {},
-          "version_layers": {},
-          "webgl": {
-            "GPGPUContext": function () { },
-            "MathBackendWebGL": function () { },
-            "forceHalfFloat": function () { },
-            "gpgpu_util": {
-              "bindVertexProgramAttributeStreams": function () { },
-              "createBufferFromOutputTexture": function () { },
-              "createFloat16MatrixTexture": function () { },
-              "createFloat16PackedMatrixTexture": function () { },
-              "createFloat32MatrixTexture": function () { },
-              "createIndexBuffer": function () { },
-              "createPackedMatrixTexture": function () { },
-              "createUnsignedBytesMatrixTexture": function () { },
-              "createVertexBuffer": function () { },
-              "createVertexShader": function () { },
-              "downloadByteEncodedFloatMatrixFromOutputTexture": function () { },
-              "downloadFloat32MatrixFromBuffer": function () { },
-              "downloadMatrixFromPackedOutputTexture": function () { },
-              "downloadPackedMatrixFromBuffer": function () { },
-              "uploadDenseMatrixToTexture": function () { },
-              "uploadPixelDataToTexture": function () { }
-            },
-            "setWebGLContext": function () { },
-            "webgl_util": {
-              "bindCanvasToFramebuffer": function () { },
-              "bindColorTextureToFramebuffer": function () { },
-              "bindTextureToProgramUniformSampler": function () { },
-              "bindTextureUnit": function () { },
-              "bindVertexBufferToProgramAttribute": function () { },
-              "callAndCheck": function () { },
-              "canBeRepresented": function () { },
-              "createFragmentShader": function () { },
-              "createFramebuffer": function () { },
-              "createProgram": function () { },
-              "createStaticIndexBuffer": function () { },
-              "createStaticVertexBuffer": function () { },
-              "createTexture": function () { },
-              "createVertexShader": function () { },
-              "getBatchDim": function () { },
-              "getExtensionOrThrow": function () { },
-              "getFramebufferErrorMessage": function () { },
-              "getMaxTexturesInShader": function () { },
-              "getNumChannels": function () { },
-              "getProgramUniformLocation": function () { },
-              "getProgramUniformLocationOrThrow": function () { },
-              "getRowsCols": function () { },
-              "getShapeAs3D": function () { },
-              "getTextureShapeFromLogicalShape": function () { },
-              "getWebGLDisjointQueryTimerVersion": function () { },
-              "getWebGLErrorMessage": function () { },
-              "getWebGLMaxTextureSize": function () { },
-              "hasExtension": function () { },
-              "isCapableOfRenderingToFloatTexture": function () { },
-              "isDownloadFloatTextureEnabled": function () { },
-              "isReshapeFree": function () { },
-              "isWebGLFenceEnabled": function () { },
-              "isWebGLVersionEnabled": function () { },
-              "linkProgram": function () { },
-              "resetMaxTextureSize": function () { },
-              "resetMaxTexturesInShader": function () { },
-              "unbindColorTextureFromFramebuffer": function () { },
-              "unbindTextureUnit": function () { },
-              "validateFramebuffer": function () { },
-              "validateProgram": function () { },
-              "validateTextureSize": function () { }
-            }
-          },
-          "where": function () { },
-          "whereAsync": function () { },
-          "zeros": function () { },
-          "zerosLike": function () { }
-        },
-        "toolbar": {
-          "visible": {}
-        },
-        "top": {
-          "PERSISTENT": {},
-          "React": {
-            "Children": {
-              "count": function () { },
-              "forEach": function () { },
-              "map": function () { },
-              "only": function () { },
-              "toArray": function () { }
-            },
-            "Component": function () { },
-            "DOM": {
-              "a": {
-                "type": {}
-              },
-              "abbr": {
-                "type": {}
-              },
-              "address": {
-                "type": {}
-              },
-              "area": {
-                "type": {}
-              },
-              "article": {
-                "type": {}
-              },
-              "aside": {
-                "type": {}
-              },
-              "audio": {
-                "type": {}
-              },
-              "b": {
-                "type": {}
-              },
-              "base": {
-                "type": {}
-              },
-              "bdi": {
-                "type": {}
-              },
-              "bdo": {
-                "type": {}
-              },
-              "big": {
-                "type": {}
-              },
-              "blockquote": {
-                "type": {}
-              },
-              "body": {
-                "type": {}
-              },
-              "br": {
-                "type": {}
-              },
-              "button": {
-                "type": {}
-              },
-              "canvas": {
-                "type": {}
-              },
-              "caption": {
-                "type": {}
-              },
-              "circle": {
-                "type": {}
-              },
-              "cite": {
-                "type": {}
-              },
-              "clipPath": {
-                "type": {}
-              },
-              "code": {
-                "type": {}
-              },
-              "col": {
-                "type": {}
-              },
-              "colgroup": {
-                "type": {}
-              },
-              "data": {
-                "type": {}
-              },
-              "datalist": {
-                "type": {}
-              },
-              "dd": {
-                "type": {}
-              },
-              "defs": {
-                "type": {}
-              },
-              "del": {
-                "type": {}
-              },
-              "details": {
-                "type": {}
-              },
-              "dfn": {
-                "type": {}
-              },
-              "dialog": {
-                "type": {}
-              },
-              "div": {
-                "type": {}
-              },
-              "dl": {
-                "type": {}
-              },
-              "dt": {
-                "type": {}
-              },
-              "ellipse": {
-                "type": {}
-              },
-              "em": {
-                "type": {}
-              },
-              "embed": {
-                "type": {}
-              },
-              "fieldset": {
-                "type": {}
-              },
-              "figcaption": {
-                "type": {}
-              },
-              "figure": {
-                "type": {}
-              },
-              "footer": {
-                "type": {}
-              },
-              "form": {
-                "type": {}
-              },
-              "g": {
-                "type": {}
-              },
-              "h1": {
-                "type": {}
-              },
-              "h2": {
-                "type": {}
-              },
-              "h3": {
-                "type": {}
-              },
-              "h4": {
-                "type": {}
-              },
-              "h5": {
-                "type": {}
-              },
-              "h6": {
-                "type": {}
-              },
-              "head": {
-                "type": {}
-              },
-              "header": {
-                "type": {}
-              },
-              "hgroup": {
-                "type": {}
-              },
-              "hr": {
-                "type": {}
-              },
-              "html": {
-                "type": {}
-              },
-              "i": {
-                "type": {}
-              },
-              "iframe": {
-                "type": {}
-              },
-              "image": {
-                "type": {}
-              },
-              "img": {
-                "type": {}
-              },
-              "input": {
-                "type": {}
-              },
-              "ins": {
-                "type": {}
-              },
-              "kbd": {
-                "type": {}
-              },
-              "keygen": {
-                "type": {}
-              },
-              "label": {
-                "type": {}
-              },
-              "legend": {
-                "type": {}
-              },
-              "li": {
-                "type": {}
-              },
-              "line": {
-                "type": {}
-              },
-              "linearGradient": {
-                "type": {}
-              },
-              "link": {
-                "type": {}
-              },
-              "main": {
-                "type": {}
-              },
-              "map": {
-                "type": {}
-              },
-              "mark": {
-                "type": {}
-              },
-              "mask": {
-                "type": {}
-              },
-              "menu": {
-                "type": {}
-              },
-              "menuitem": {
-                "type": {}
-              },
-              "meta": {
-                "type": {}
-              },
-              "meter": {
-                "type": {}
-              },
-              "nav": {
-                "type": {}
-              },
-              "noscript": {
-                "type": {}
-              },
-              "object": {
-                "type": {}
-              },
-              "ol": {
-                "type": {}
-              },
-              "optgroup": {
-                "type": {}
-              },
-              "option": {
-                "type": {}
-              },
-              "output": {
-                "type": {}
-              },
-              "p": {
-                "type": {}
-              },
-              "param": {
-                "type": {}
-              },
-              "path": {
-                "type": {}
-              },
-              "pattern": {
-                "type": {}
-              },
-              "picture": {
-                "type": {}
-              },
-              "polygon": {
-                "type": {}
-              },
-              "polyline": {
-                "type": {}
-              },
-              "pre": {
-                "type": {}
-              },
-              "progress": {
-                "type": {}
-              },
-              "q": {
-                "type": {}
-              },
-              "radialGradient": {
-                "type": {}
-              },
-              "rect": {
-                "type": {}
-              },
-              "rp": {
-                "type": {}
-              },
-              "rt": {
-                "type": {}
-              },
-              "ruby": {
-                "type": {}
-              },
-              "s": {
-                "type": {}
-              },
-              "samp": {
-                "type": {}
-              },
-              "script": {
-                "type": {}
-              },
-              "section": {
-                "type": {}
-              },
-              "select": {
-                "type": {}
-              },
-              "small": {
-                "type": {}
-              },
-              "source": {
-                "type": {}
-              },
-              "span": {
-                "type": {}
-              },
-              "stop": {
-                "type": {}
-              },
-              "strong": {
-                "type": {}
-              },
-              "style": {
-                "type": {}
-              },
-              "sub": {
-                "type": {}
-              },
-              "summary": {
-                "type": {}
-              },
-              "sup": {
-                "type": {}
-              },
-              "svg": {
-                "type": {}
-              },
-              "table": {
-                "type": {}
-              },
-              "tbody": {
-                "type": {}
-              },
-              "td": {
-                "type": {}
-              },
-              "text": {
-                "type": {}
-              },
-              "textarea": {
-                "type": {}
-              },
-              "tfoot": {
-                "type": {}
-              },
-              "th": {
-                "type": {}
-              },
-              "thead": {
-                "type": {}
-              },
-              "time": {
-                "type": {}
-              },
-              "title": {
-                "type": {}
-              },
-              "tr": {
-                "type": {}
-              },
-              "track": {
-                "type": {}
-              },
-              "tspan": {
-                "type": {}
-              },
-              "u": {
-                "type": {}
-              },
-              "ul": {
-                "type": {}
-              },
-              "var": {
-                "type": {}
-              },
-              "video": {
-                "type": {}
-              },
-              "wbr": {
-                "type": {}
-              }
-            },
-            "PropTypes": {
-              "PropTypes": {},
-              "any": {
-                "isRequired": function () { }
-              },
-              "array": {
-                "isRequired": function () { }
-              },
-              "arrayOf": function () { },
-              "bool": {
-                "isRequired": function () { }
-              },
-              "checkPropTypes": function () { },
-              "element": {
-                "isRequired": function () { }
-              },
-              "func": {
-                "isRequired": function () { }
-              },
-              "instanceOf": function () { },
-              "node": {
-                "isRequired": function () { }
-              },
-              "number": {
-                "isRequired": function () { }
-              },
-              "object": {
-                "isRequired": function () { }
-              },
-              "objectOf": function () { },
-              "oneOf": function () { },
-              "oneOfType": function () { },
-              "shape": function () { },
-              "string": {
-                "isRequired": function () { }
-              },
-              "symbol": {
-                "isRequired": function () { }
-              }
-            },
-            "PureComponent": function () { },
-            "__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED": {
-              "ReactCurrentOwner": {
-                "current": {}
-              }
-            },
-            "__spread": function () { },
-            "cloneElement": function () { },
-            "createClass": function () { },
-            "createElement": function () { },
-            "createFactory": function () { },
-            "createMixin": function () { },
-            "isValidElement": function () { },
-            "version": {}
-          },
-          "ReactDOM": {
-            "findDOMNode": function () { },
-            "render": function () { },
-            "unmountComponentAtNode": function () { },
-            "unstable_batchedUpdates": function () { },
-            "unstable_renderSubtreeIntoContainer": function () { },
-            "version": {}
-          },
-          "TEMPORARY": {},
-          "addEventListener": function () { },
-          "alert": function () { },
-          "applicationCache": {
-            "CHECKING": {},
-            "DOWNLOADING": {},
-            "IDLE": {},
-            "OBSOLETE": {},
-            "UNCACHED": {},
-            "UPDATEREADY": {},
-            "abort": function () { },
-            "addEventListener": function () { },
-            "dispatchEvent": function () { },
-            "oncached": {},
-            "onchecking": {},
-            "ondownloading": {},
-            "onerror": {},
-            "onnoupdate": {},
-            "onobsolete": {},
-            "onprogress": {},
-            "onupdateready": {},
-            "removeEventListener": function () { },
-            "status": {},
-            "swapCache": function () { },
-            "update": function () { }
-          },
-          "atob": function () { },
-          "blur": function () { },
-          "btoa": function () { },
-          "caches": {
-            "delete": function () { },
-            "has": function () { },
-            "keys": function () { },
-            "match": function () { },
-            "open": function () { }
-          },
-          "cancelAnimationFrame": function () { },
-          "cancelIdleCallback": function () { },
-          "captureEvents": function () { },
-          "chrome": {
-            "app": {
-              "InstallState": {
-                "DISABLED": {},
-                "INSTALLED": {},
-                "NOT_INSTALLED": {}
-              },
-              "RunningState": {
-                "CANNOT_RUN": {},
-                "READY_TO_RUN": {},
-                "RUNNING": {}
-              },
-              "getDetails": function () { },
-              "getIsInstalled": function () { },
-              "installState": function () { },
-              "isInstalled": {},
-              "runningState": function () { }
-            },
-            "csi": function () { },
-            "loadTimes": function () { },
-            "runtime": {
-              "OnInstalledReason": {
-                "CHROME_UPDATE": {},
-                "INSTALL": {},
-                "SHARED_MODULE_UPDATE": {},
-                "UPDATE": {}
-              },
-              "OnRestartRequiredReason": {
-                "APP_UPDATE": {},
-                "OS_UPDATE": {},
-                "PERIODIC": {}
-              },
-              "PlatformArch": {
-                "ARM": {},
-                "MIPS": {},
-                "MIPS64": {},
-                "X86_32": {},
-                "X86_64": {}
-              },
-              "PlatformNaclArch": {
-                "ARM": {},
-                "MIPS": {},
-                "MIPS64": {},
-                "X86_32": {},
-                "X86_64": {}
-              },
-              "PlatformOs": {
-                "ANDROID": {},
-                "CROS": {},
-                "LINUX": {},
-                "MAC": {},
-                "OPENBSD": {},
-                "WIN": {}
-              },
-              "RequestUpdateCheckStatus": {
-                "NO_UPDATE": {},
-                "THROTTLED": {},
-                "UPDATE_AVAILABLE": {}
-              },
-              "connect": function () { },
-              "id": {},
-              "sendMessage": function () { }
-            }
-          },
-          "clearInterval": function () { },
-          "clearTimeout": function () { },
-          "clientInformation": {
-            "appCodeName": {},
-            "appName": {},
-            "appVersion": {},
-            "bluetooth": {
-              "addEventListener": function () { },
-              "dispatchEvent": function () { },
-              "removeEventListener": function () { },
-              "requestDevice": function () { }
-            },
-            "clipboard": {
-              "addEventListener": function () { },
-              "dispatchEvent": function () { },
-              "read": function () { },
-              "readText": function () { },
-              "removeEventListener": function () { },
-              "write": function () { },
-              "writeText": function () { }
-            },
-            "closure_uid_20499601": {},
-            "connection": {
-              "addEventListener": function () { },
-              "dispatchEvent": function () { },
-              "downlink": {},
-              "effectiveType": {},
-              "onchange": {},
-              "removeEventListener": function () { },
-              "rtt": {},
-              "saveData": {}
-            },
-            "cookieEnabled": {},
-            "credentials": {
-              "create": function () { },
-              "get": function () { },
-              "preventSilentAccess": function () { },
-              "store": function () { }
-            },
-            "deviceMemory": {},
-            "doNotTrack": {},
-            "geolocation": {
-              "clearWatch": function () { },
-              "getCurrentPosition": function () { },
-              "watchPosition": function () { }
-            },
-            "getBattery": function () { },
-            "getGamepads": function () { },
-            "getUserMedia": function () { },
-            "hardwareConcurrency": {},
-            "javaEnabled": function () { },
-            "keyboard": {
-              "getLayoutMap": function () { },
-              "lock": function () { },
-              "unlock": function () { }
-            },
-            "language": {},
-            "languages": {},
-            "locks": {
-              "query": function () { },
-              "request": function () { }
-            },
-            "maxTouchPoints": {},
-            "mediaCapabilities": {
-              "decodingInfo": function () { }
-            },
-            "mediaDevices": {
-              "addEventListener": function () { },
-              "dispatchEvent": function () { },
-              "enumerateDevices": function () { },
-              "getDisplayMedia": function () { },
-              "getSupportedConstraints": function () { },
-              "getUserMedia": function () { },
-              "ondevicechange": {},
-              "removeEventListener": function () { }
-            },
-            "mediaSession": {
-              "metadata": {},
-              "playbackState": {},
-              "setActionHandler": function () { }
-            },
-            "mimeTypes": {
-              "0": {
-                "closure_uid_20499601": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_20499601": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_20499601": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_20499601": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_20499601": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "1": {
-                "closure_uid_20499601": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_20499601": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_20499601": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_20499601": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_20499601": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "2": {
-                "closure_uid_20499601": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_20499601": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "1": {
-                    "closure_uid_20499601": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_20499601": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_20499601": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_20499601": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "3": {
-                "closure_uid_20499601": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_20499601": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "1": {
-                    "closure_uid_20499601": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_20499601": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_20499601": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_20499601": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "closure_uid_20499601": {},
-              "item": function () { },
-              "length": {},
-              "namedItem": function () { }
-            },
-            "onLine": {},
-            "permissions": {
-              "query": function () { }
-            },
-            "platform": {},
-            "plugins": {
-              "0": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "closure_uid_20499601": {},
-                "description": {},
-                "filename": {},
-                "item": {
-                  "closure_uid_20499601": {}
-                },
-                "length": {},
-                "name": {},
-                "namedItem": {
-                  "closure_uid_20499601": {}
-                }
-              },
-              "1": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "closure_uid_20499601": {},
-                "description": {},
-                "filename": {},
-                "item": {
-                  "closure_uid_20499601": {}
-                },
-                "length": {},
-                "name": {},
-                "namedItem": {
-                  "closure_uid_20499601": {}
-                }
-              },
-              "2": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "1": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "closure_uid_20499601": {},
-                "description": {},
-                "filename": {},
-                "item": {
-                  "closure_uid_20499601": {}
-                },
-                "length": {},
-                "name": {},
-                "namedItem": {
-                  "closure_uid_20499601": {}
-                }
-              },
-              "item": function () { },
-              "length": {},
-              "namedItem": function () { },
-              "refresh": function () { }
-            },
-            "presentation": {
-              "defaultRequest": {},
-              "receiver": {}
-            },
-            "product": {},
-            "productSub": {},
-            "registerProtocolHandler": function () { },
-            "requestMIDIAccess": function () { },
-            "requestMediaKeySystemAccess": function () { },
-            "sendBeacon": function () { },
-            "serviceWorker": {
-              "addEventListener": function () { },
-              "controller": {},
-              "dispatchEvent": function () { },
-              "getRegistration": function () { },
-              "getRegistrations": function () { },
-              "oncontrollerchange": {},
-              "onmessage": {},
-              "ready": {},
-              "register": function () { },
-              "removeEventListener": function () { },
-              "startMessages": function () { }
-            },
-            "storage": {
-              "estimate": function () { },
-              "persist": function () { },
-              "persisted": function () { }
-            },
-            "unregisterProtocolHandler": function () { },
-            "usb": {
-              "addEventListener": function () { },
-              "dispatchEvent": function () { },
-              "getDevices": function () { },
-              "onconnect": {},
-              "ondisconnect": {},
-              "removeEventListener": function () { },
-              "requestDevice": function () { }
-            },
-            "userActivation": {
-              "hasBeenActive": {},
-              "isActive": {}
-            },
-            "userAgent": {},
-            "vendor": {},
-            "vendorSub": {},
-            "vibrate": function () { },
-            "webkitGetUserMedia": function () { },
-            "webkitPersistentStorage": {
-              "queryUsageAndQuota": function () { },
-              "requestQuota": function () { }
-            },
-            "webkitTemporaryStorage": {
-              "queryUsageAndQuota": function () { },
-              "requestQuota": function () { }
-            }
-          },
-          "close": function () { },
-          "closed": {},
-          "closure_uid_20499601": {},
-          "confirm": function () { },
-          "createImageBitmap": function () { },
-          "createReactClass": function () { },
-          "crypto": {
-            "getRandomValues": function () { },
-            "subtle": {
-              "decrypt": function () { },
-              "deriveBits": function () { },
-              "deriveKey": function () { },
-              "digest": function () { },
-              "encrypt": function () { },
-              "exportKey": function () { },
-              "generateKey": function () { },
-              "importKey": function () { },
-              "sign": function () { },
-              "unwrapKey": function () { },
-              "verify": function () { },
-              "wrapKey": function () { }
-            }
-          },
-          "customElements": {
-            "define": function () { },
-            "get": function () { },
-            "upgrade": function () { },
-            "whenDefined": function () { }
-          },
-          "defaultStatus": {},
-          "defaultstatus": {},
-          "devicePixelRatio": {},
-          "dispatchEvent": function () { },
-          "document": {},
-          "external": {
-            "AddSearchProvider": function () { },
-            "IsSearchProviderInstalled": function () { }
-          },
-          "fetch": function () { },
-          "find": function () { },
-          "focus": function () { },
-          "frameElement": {},
-          "frames": {},
-          "getComputedStyle": function () { },
-          "getSelection": function () { },
-          "history": {
-            "back": function () { },
-            "forward": function () { },
-            "go": function () { },
-            "length": {},
-            "pushState": function () { },
-            "replaceState": function () { },
-            "scrollRestoration": {},
-            "state": {}
-          },
-          "indexedDB": {
-            "cmp": function () { },
-            "databases": function () { },
-            "deleteDatabase": function () { },
-            "open": function () { }
-          },
-          "innerHeight": {},
-          "innerWidth": {},
-          "isSecureContext": {},
-          "javascript_externs_generator": {
-            "ui": {
-              "core": {
-                "init": function () { },
-                "re_render": function () { }
-              }
-            }
-          },
-          "js_beautify": function () { },
-          "length": {},
-          "localStorage": {
-            "clear": function () { },
-            "getItem": function () { },
-            "key": function () { },
-            "length": {},
-            "removeItem": function () { },
-            "setItem": function () { }
-          },
-          "location": {
-            "ancestorOrigins": {
-              "contains": function () { },
-              "item": function () { },
-              "length": {}
-            },
-            "assign": function () { },
-            "hash": {},
-            "host": {},
-            "hostname": {},
-            "href": {},
-            "origin": {},
-            "pathname": {},
-            "port": {},
-            "protocol": {},
-            "reload": function () { },
-            "replace": function () { },
-            "search": {},
-            "toString": function () { }
-          },
-          "locationbar": {
-            "visible": {}
-          },
-          "matchMedia": function () { },
-          "menubar": {
-            "visible": {}
-          },
-          "moveBy": function () { },
-          "moveTo": function () { },
-          "name": {},
-          "navigator": {
-            "appCodeName": {},
-            "appName": {},
-            "appVersion": {},
-            "bluetooth": {
-              "addEventListener": function () { },
-              "dispatchEvent": function () { },
-              "removeEventListener": function () { },
-              "requestDevice": function () { }
-            },
-            "clipboard": {
-              "addEventListener": function () { },
-              "dispatchEvent": function () { },
-              "read": function () { },
-              "readText": function () { },
-              "removeEventListener": function () { },
-              "write": function () { },
-              "writeText": function () { }
-            },
-            "closure_uid_20499601": {},
-            "connection": {
-              "addEventListener": function () { },
-              "dispatchEvent": function () { },
-              "downlink": {},
-              "effectiveType": {},
-              "onchange": {},
-              "removeEventListener": function () { },
-              "rtt": {},
-              "saveData": {}
-            },
-            "cookieEnabled": {},
-            "credentials": {
-              "create": function () { },
-              "get": function () { },
-              "preventSilentAccess": function () { },
-              "store": function () { }
-            },
-            "deviceMemory": {},
-            "doNotTrack": {},
-            "geolocation": {
-              "clearWatch": function () { },
-              "getCurrentPosition": function () { },
-              "watchPosition": function () { }
-            },
-            "getBattery": function () { },
-            "getGamepads": function () { },
-            "getUserMedia": function () { },
-            "hardwareConcurrency": {},
-            "javaEnabled": function () { },
-            "keyboard": {
-              "getLayoutMap": function () { },
-              "lock": function () { },
-              "unlock": function () { }
-            },
-            "language": {},
-            "languages": {},
-            "locks": {
-              "query": function () { },
-              "request": function () { }
-            },
-            "maxTouchPoints": {},
-            "mediaCapabilities": {
-              "decodingInfo": function () { }
-            },
-            "mediaDevices": {
-              "addEventListener": function () { },
-              "dispatchEvent": function () { },
-              "enumerateDevices": function () { },
-              "getDisplayMedia": function () { },
-              "getSupportedConstraints": function () { },
-              "getUserMedia": function () { },
-              "ondevicechange": {},
-              "removeEventListener": function () { }
-            },
-            "mediaSession": {
-              "metadata": {},
-              "playbackState": {},
-              "setActionHandler": function () { }
-            },
-            "mimeTypes": {
-              "0": {
-                "closure_uid_20499601": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_20499601": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_20499601": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_20499601": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_20499601": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "1": {
-                "closure_uid_20499601": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_20499601": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_20499601": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_20499601": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_20499601": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "2": {
-                "closure_uid_20499601": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_20499601": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "1": {
-                    "closure_uid_20499601": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_20499601": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_20499601": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_20499601": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "3": {
-                "closure_uid_20499601": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_20499601": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "1": {
-                    "closure_uid_20499601": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_20499601": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_20499601": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_20499601": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "closure_uid_20499601": {},
-              "item": function () { },
-              "length": {},
-              "namedItem": function () { }
-            },
-            "onLine": {},
-            "permissions": {
-              "query": function () { }
-            },
-            "platform": {},
-            "plugins": {
-              "0": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "closure_uid_20499601": {},
-                "description": {},
-                "filename": {},
-                "item": {
-                  "closure_uid_20499601": {}
-                },
-                "length": {},
-                "name": {},
-                "namedItem": {
-                  "closure_uid_20499601": {}
-                }
-              },
-              "1": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "closure_uid_20499601": {},
-                "description": {},
-                "filename": {},
-                "item": {
-                  "closure_uid_20499601": {}
-                },
-                "length": {},
-                "name": {},
-                "namedItem": {
-                  "closure_uid_20499601": {}
-                }
-              },
-              "2": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "1": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "closure_uid_20499601": {},
-                "description": {},
-                "filename": {},
-                "item": {
-                  "closure_uid_20499601": {}
-                },
-                "length": {},
-                "name": {},
-                "namedItem": {
-                  "closure_uid_20499601": {}
-                }
-              },
-              "item": function () { },
-              "length": {},
-              "namedItem": function () { },
-              "refresh": function () { }
-            },
-            "presentation": {
-              "defaultRequest": {},
-              "receiver": {}
-            },
-            "product": {},
-            "productSub": {},
-            "registerProtocolHandler": function () { },
-            "requestMIDIAccess": function () { },
-            "requestMediaKeySystemAccess": function () { },
-            "sendBeacon": function () { },
-            "serviceWorker": {
-              "addEventListener": function () { },
-              "controller": {},
-              "dispatchEvent": function () { },
-              "getRegistration": function () { },
-              "getRegistrations": function () { },
-              "oncontrollerchange": {},
-              "onmessage": {},
-              "ready": {},
-              "register": function () { },
-              "removeEventListener": function () { },
-              "startMessages": function () { }
-            },
-            "storage": {
-              "estimate": function () { },
-              "persist": function () { },
-              "persisted": function () { }
-            },
-            "unregisterProtocolHandler": function () { },
-            "usb": {
-              "addEventListener": function () { },
-              "dispatchEvent": function () { },
-              "getDevices": function () { },
-              "onconnect": {},
-              "ondisconnect": {},
-              "removeEventListener": function () { },
-              "requestDevice": function () { }
-            },
-            "userActivation": {
-              "hasBeenActive": {},
-              "isActive": {}
-            },
-            "userAgent": {},
-            "vendor": {},
-            "vendorSub": {},
-            "vibrate": function () { },
-            "webkitGetUserMedia": function () { },
-            "webkitPersistentStorage": {
-              "queryUsageAndQuota": function () { },
-              "requestQuota": function () { }
-            },
-            "webkitTemporaryStorage": {
-              "queryUsageAndQuota": function () { },
-              "requestQuota": function () { }
-            }
-          },
-          "onabort": {},
-          "onafterprint": {},
-          "onanimationend": {},
-          "onanimationiteration": {},
-          "onanimationstart": {},
-          "onappinstalled": {},
-          "onauxclick": {},
-          "onbeforeinstallprompt": {},
-          "onbeforeprint": {},
-          "onbeforeunload": {},
-          "onblur": {},
-          "oncancel": {},
-          "oncanplay": {},
-          "oncanplaythrough": {},
-          "onchange": {},
-          "onclick": {},
-          "onclose": {},
-          "oncontextmenu": {},
-          "oncuechange": {},
-          "ondblclick": {},
-          "ondevicemotion": {},
-          "ondeviceorientation": {},
-          "ondeviceorientationabsolute": {},
-          "ondrag": {},
-          "ondragend": {},
-          "ondragenter": {},
-          "ondragleave": {},
-          "ondragover": {},
-          "ondragstart": {},
-          "ondrop": {},
-          "ondurationchange": {},
-          "onemptied": {},
-          "onended": {},
-          "onerror": {},
-          "onfocus": {},
-          "ongotpointercapture": {},
-          "onhashchange": {},
-          "oninput": {},
-          "oninvalid": {},
-          "onkeydown": {},
-          "onkeypress": {},
-          "onkeyup": {},
-          "onlanguagechange": {},
-          "onload": {},
-          "onloadeddata": {},
-          "onloadedmetadata": {},
-          "onloadstart": {},
-          "onlostpointercapture": {},
-          "onmessage": {},
-          "onmessageerror": {},
-          "onmousedown": {},
-          "onmouseenter": {},
-          "onmouseleave": {},
-          "onmousemove": {},
-          "onmouseout": {},
-          "onmouseover": {},
-          "onmouseup": {},
-          "onmousewheel": {},
-          "onoffline": {},
-          "ononline": {},
-          "onpagehide": {},
-          "onpageshow": {},
-          "onpause": {},
-          "onplay": {},
-          "onplaying": {},
-          "onpointercancel": {},
-          "onpointerdown": {},
-          "onpointerenter": {},
-          "onpointerleave": {},
-          "onpointermove": {},
-          "onpointerout": {},
-          "onpointerover": {},
-          "onpointerup": {},
-          "onpopstate": {},
-          "onprogress": {},
-          "onratechange": {},
-          "onrejectionhandled": {},
-          "onreset": {},
-          "onresize": {},
-          "onscroll": {},
-          "onsearch": {},
-          "onseeked": {},
-          "onseeking": {},
-          "onselect": {},
-          "onselectionchange": {},
-          "onselectstart": {},
-          "onstalled": {},
-          "onstorage": {},
-          "onsubmit": {},
-          "onsuspend": {},
-          "ontimeupdate": {},
-          "ontoggle": {},
-          "ontransitionend": {},
-          "onunhandledrejection": {},
-          "onunload": {},
-          "onvolumechange": {},
-          "onwaiting": {},
-          "onwebkitanimationend": {},
-          "onwebkitanimationiteration": {},
-          "onwebkitanimationstart": {},
-          "onwebkittransitionend": {},
-          "onwheel": {},
-          "open": function () { },
-          "openDatabase": function () { },
-          "opener": {},
-          "origin": {},
-          "outerHeight": {},
-          "outerWidth": {},
-          "pageXOffset": {},
-          "pageYOffset": {},
-          "parent": {},
-          "performance": {
-            "addEventListener": function () { },
-            "clearMarks": function () { },
-            "clearMeasures": function () { },
-            "clearResourceTimings": function () { },
-            "dispatchEvent": function () { },
-            "getEntries": function () { },
-            "getEntriesByName": function () { },
-            "getEntriesByType": function () { },
-            "mark": function () { },
-            "measure": function () { },
-            "memory": {
-              "jsHeapSizeLimit": {},
-              "totalJSHeapSize": {},
-              "usedJSHeapSize": {}
-            },
-            "navigation": {
-              "TYPE_BACK_FORWARD": {},
-              "TYPE_NAVIGATE": {},
-              "TYPE_RELOAD": {},
-              "TYPE_RESERVED": {},
-              "redirectCount": {},
-              "toJSON": function () { },
-              "type": {}
-            },
-            "now": function () { },
-            "onresourcetimingbufferfull": {},
-            "removeEventListener": function () { },
-            "setResourceTimingBufferSize": function () { },
-            "timeOrigin": {},
-            "timing": {
-              "connectEnd": {},
-              "connectStart": {},
-              "domComplete": {},
-              "domContentLoadedEventEnd": {},
-              "domContentLoadedEventStart": {},
-              "domInteractive": {},
-              "domLoading": {},
-              "domainLookupEnd": {},
-              "domainLookupStart": {},
-              "fetchStart": {},
-              "loadEventEnd": {},
-              "loadEventStart": {},
-              "navigationStart": {},
-              "redirectEnd": {},
-              "redirectStart": {},
-              "requestStart": {},
-              "responseEnd": {},
-              "responseStart": {},
-              "secureConnectionStart": {},
-              "toJSON": function () { },
-              "unloadEventEnd": {},
-              "unloadEventStart": {}
-            },
-            "toJSON": function () { }
-          },
-          "personalbar": {
-            "visible": {}
-          },
-          "postMessage": function () { },
-          "print": function () { },
-          "prompt": function () { },
-          "queueMicrotask": function () { },
-          "reagent": {
-            "core": {
-              "force_update_all": function () { }
-            }
-          },
-          "releaseEvents": function () { },
-          "removeEventListener": function () { },
-          "requestAnimationFrame": function () { },
-          "requestIdleCallback": function () { },
-          "resizeBy": function () { },
-          "resizeTo": function () { },
-          "screen": {
-            "availHeight": {},
-            "availLeft": {},
-            "availTop": {},
-            "availWidth": {},
-            "colorDepth": {},
-            "height": {},
-            "orientation": {
-              "addEventListener": function () { },
-              "angle": {},
-              "dispatchEvent": function () { },
-              "lock": function () { },
-              "onchange": {},
-              "removeEventListener": function () { },
-              "type": {},
-              "unlock": function () { }
-            },
-            "pixelDepth": {},
-            "width": {}
-          },
-          "screenLeft": {},
-          "screenTop": {},
-          "screenX": {},
-          "screenY": {},
-          "scroll": function () { },
-          "scrollBy": function () { },
-          "scrollTo": function () { },
-          "scrollX": {},
-          "scrollY": {},
-          "scrollbars": {
-            "visible": {}
-          },
-          "self": {},
-          "sessionStorage": {
-            "clear": function () { },
-            "getItem": function () { },
-            "key": function () { },
-            "length": {},
-            "removeItem": function () { },
-            "setItem": function () { }
-          },
-          "setInterval": function () { },
-          "setTimeout": function () { },
-          "speechSynthesis": {
-            "addEventListener": function () { },
-            "cancel": function () { },
-            "dispatchEvent": function () { },
-            "getVoices": function () { },
-            "onvoiceschanged": {},
-            "pause": function () { },
-            "paused": {},
-            "pending": {},
-            "removeEventListener": function () { },
-            "resume": function () { },
-            "speak": function () { },
-            "speaking": {}
-          },
-          "status": {},
-          "statusbar": {
-            "visible": {}
-          },
-          "stop": function () { },
-          "styleMedia": {
-            "matchMedium": function () { },
-            "type": {}
-          },
-          "toolbar": {
-            "visible": {}
-          },
-          "top": {},
-          "visualViewport": {
-            "addEventListener": function () { },
-            "dispatchEvent": function () { },
-            "height": {},
-            "offsetLeft": {},
-            "offsetTop": {},
-            "onresize": {},
-            "onscroll": {},
-            "pageLeft": {},
-            "pageTop": {},
-            "removeEventListener": function () { },
-            "scale": {},
-            "width": {}
-          },
-          "webkitCancelAnimationFrame": function () { },
-          "webkitRequestAnimationFrame": function () { },
-          "webkitRequestFileSystem": function () { },
-          "webkitResolveLocalFileSystemURL": function () { },
-          "webkitStorageInfo": {
-            "PERSISTENT": {},
-            "TEMPORARY": {},
-            "queryUsageAndQuota": function () { },
-            "requestQuota": function () { }
-          },
-          "window": {}
-        },
-        "visualViewport": {
-          "addEventListener": {
-            "closure_uid_20499601": {}
-          },
-          "dispatchEvent": {
-            "closure_uid_20499601": {}
-          },
-          "height": {},
-          "offsetLeft": {},
-          "offsetTop": {},
-          "onresize": {},
-          "onscroll": {},
-          "pageLeft": {},
-          "pageTop": {},
-          "removeEventListener": {
-            "closure_uid_20499601": {}
-          },
-          "scale": {},
-          "width": {}
-        },
-        "webkitCancelAnimationFrame": function () { },
-        "webkitRequestAnimationFrame": function () { },
-        "webkitRequestFileSystem": function () { },
-        "webkitResolveLocalFileSystemURL": function () { },
-        "webkitStorageInfo": {
-          "PERSISTENT": {},
-          "TEMPORARY": {},
-          "queryUsageAndQuota": function () { },
-          "requestQuota": function () { }
-        },
-        "window": {}
-      },
-      "platform": {
-        "decode": function () { },
-        "encode": function () { },
-        "fetch": function () { },
-        "now": function () { },
-        "textEncoder": {
-          "encode": function () { },
-          "encodeInto": function () { },
-          "encoding": {}
-        }
-      },
-      "platformName": {},
-      "populateURLFlags": function () { },
-      "registerFlag": function () { },
-      "reset": function () { },
-      "set": function () { },
-      "setFlags": function () { },
-      "setPlatform": function () { },
-      "urlFlags": {}
-    },
-    "Environment": function () { },
-    "getQueryParams": function () { },
-    "setEnvironmentGlobal": function () { }
-  },
+  "engine": function () { },
+  "env": function () { },
   "equal": function () { },
   "equalStrict": function () { },
   "erf": function () { },
@@ -27406,11 +10080,15 @@ var tf = {
   "frame": function () { },
   "fused": {
     "conv2d": function () { },
+    "depthwiseConv2d": function () { },
     "matMul": function () { }
   },
   "gather": function () { },
   "gatherND": function () { },
   "getBackend": function () { },
+  "getGradient": function () { },
+  "getKernel": function () { },
+  "getKernelsForBackend": function () { },
   "grad": function () { },
   "grads": function () { },
   "greater": function () { },
@@ -27425,6 +10103,8 @@ var tf = {
     "cropAndResize": function () { },
     "nonMaxSuppression": function () { },
     "nonMaxSuppressionAsync": function () { },
+    "nonMaxSuppressionWithScore": function () { },
+    "nonMaxSuppressionWithScoreAsync": function () { },
     "resizeBilinear": function () { },
     "resizeNearestNeighbor": function () { }
   },
@@ -27528,6 +10208,7 @@ var tf = {
     "gruCell": function () { },
     "input": function () { },
     "inputLayer": function () { },
+    "layerNormalization": function () { },
     "leakyReLU": function () { },
     "lstm": function () { },
     "lstmCell": function () { },
@@ -27550,6 +10231,7 @@ var tf = {
     "simpleRNN": function () { },
     "simpleRNNCell": function () { },
     "softmax": function () { },
+    "spatialDropout1d": function () { },
     "stackedRNNCells": function () { },
     "thresholdedReLU": function () { },
     "timeDistributed": function () { },
@@ -27562,6 +10244,7 @@ var tf = {
   "lessEqualStrict": function () { },
   "lessStrict": function () { },
   "linalg": {
+    "bandPart": function () { },
     "gramSchmidt": function () { },
     "qr": function () { }
   },
@@ -27674,6 +10357,8 @@ var tf = {
   "reciprocal": function () { },
   "registerBackend": function () { },
   "registerCallbackConstructor": function () { },
+  "registerGradient": function () { },
+  "registerKernel": function () { },
   "registerOp": function () { },
   "regularizers": {
     "l1": function () { },
@@ -27681,6 +10366,7 @@ var tf = {
     "l2": function () { }
   },
   "relu": function () { },
+  "relu6": function () { },
   "removeBackend": function () { },
   "reshape": function () { },
   "reverse": function () { },
@@ -27748,6 +10434,7 @@ var tf = {
           "L1L2": {},
           "LSTM": {},
           "LSTMCell": {},
+          "LayerNormalization": {},
           "LeCunNormal": {},
           "LeakyReLU": {},
           "Masking": {},
@@ -27779,6 +10466,7 @@ var tf = {
           "SimpleRNN": {},
           "SimpleRNNCell": {},
           "Softmax": {},
+          "SpatialDropout1D": {},
           "StackedRNNCells": {},
           "ThresholdedReLU": {},
           "TimeDistributed": {},
@@ -27824,6 +10512,15 @@ var tf = {
   "slice2d": function () { },
   "slice3d": function () { },
   "slice4d": function () { },
+  "slice_util": {
+    "assertParamsValid": function () { },
+    "computeFlatOffset": function () { },
+    "computeOutShape": function () { },
+    "isSliceContinous": function () { },
+    "maskToAxes": function () { },
+    "startForAxis": function () { },
+    "stopForAxis": function () { }
+  },
   "softmax": function () { },
   "softplus": function () { },
   "spaceToBatchND": function () { },
@@ -27887,6 +10584,8 @@ var tf = {
   },
   "transpose": function () { },
   "truncatedNormal": function () { },
+  "unregisterGradient": function () { },
+  "unregisterKernel": function () { },
   "unsortedSegmentSum": function () { },
   "unstack": function () { },
   "util": {
@@ -28121,7 +10820,384 @@ tf.DataStorage.prototype = {
   "delete": function () { },
   "get": function () { },
   "has": function () { },
+  "numDataIds": function () { },
   "set": function () { }
+};
+tf.ENV.global._tfengine.backend.constructor.prototype = {
+  "LRNGrad": function () { },
+  "abs": function () { },
+  "acos": function () { },
+  "acosh": function () { },
+  "acquireTexture": function () { },
+  "add": function () { },
+  "addN": function () { },
+  "all": function () { },
+  "any": function () { },
+  "argMax": function () { },
+  "argMin": function () { },
+  "argMinMaxReduce": function () { },
+  "argReduce": function () { },
+  "argReducePacked": function () { },
+  "asin": function () { },
+  "asinh": function () { },
+  "atan": function () { },
+  "atan2": function () { },
+  "atanh": function () { },
+  "avgPool": function () { },
+  "avgPool3d": function () { },
+  "avgPool3dBackprop": function () { },
+  "avgPoolBackprop": function () { },
+  "batchMatMul": function () { },
+  "batchNormalization": function () { },
+  "batchToSpaceND": function () { },
+  "cast": function () { },
+  "ceil": function () { },
+  "checkNumericalProblems": function () { },
+  "clip": function () { },
+  "compileAndRun": function () { },
+  "complex": function () { },
+  "complexAbs": function () { },
+  "complexSeparableBinaryOp": function () { },
+  "computeBytes": function () { },
+  "concat": function () { },
+  "constructor": function () { },
+  "conv2d": function () { },
+  "conv2dByMatMul": function () { },
+  "conv2dDerFilter": function () { },
+  "conv2dDerInput": function () { },
+  "conv2dWithIm2Row": function () { },
+  "conv3d": function () { },
+  "conv3dDerFilter": function () { },
+  "conv3dDerInput": function () { },
+  "convertAndCacheOnCPU": function () { },
+  "cos": function () { },
+  "cosh": function () { },
+  "cropAndResize": function () { },
+  "cumsum": function () { },
+  "decode": function () { },
+  "depthToSpace": function () { },
+  "depthwiseConv2D": function () { },
+  "depthwiseConv2DDerFilter": function () { },
+  "depthwiseConv2DDerInput": function () { },
+  "diag": function () { },
+  "dispose": function () { },
+  "disposeData": function () { },
+  "elu": function () { },
+  "eluDer": function () { },
+  "endTimer": function () { },
+  "epsilon": function () { },
+  "equal": function () { },
+  "erf": function () { },
+  "exp": function () { },
+  "expm1": function () { },
+  "fft": function () { },
+  "fftImpl": function () { },
+  "fill": function () { },
+  "floatPrecision": function () { },
+  "floor": function () { },
+  "floorDiv": function () { },
+  "fusedBatchMatMul": function () { },
+  "fusedConv2d": function () { },
+  "fusedDepthwiseConv2D": function () { },
+  "gather": function () { },
+  "gatherND": function () { },
+  "getAndSaveBinary": function () { },
+  "getCPUBackend": function () { },
+  "getDataInfo": function () { },
+  "getGPGPUContext": function () { },
+  "getQueryTime": function () { },
+  "getTexture": function () { },
+  "getTextureManager": function () { },
+  "getValuesFromTexture": function () { },
+  "greater": function () { },
+  "greaterEqual": function () { },
+  "ifft": function () { },
+  "imag": function () { },
+  "int": function () { },
+  "isFinite": function () { },
+  "isInf": function () { },
+  "isNaN": function () { },
+  "less": function () { },
+  "lessEqual": function () { },
+  "linspace": function () { },
+  "localResponseNormalization4D": function () { },
+  "log": function () { },
+  "log1p": function () { },
+  "logicalAnd": function () { },
+  "logicalNot": function () { },
+  "logicalOr": function () { },
+  "makeComplexComponentTensorInfo": function () { },
+  "makeOutput": function () { },
+  "makeTensorInfo": function () { },
+  "max": function () { },
+  "maxPool": function () { },
+  "maxPool3d": function () { },
+  "maxPool3dBackprop": function () { },
+  "maxPoolBackprop": function () { },
+  "maximum": function () { },
+  "memory": function () { },
+  "min": function () { },
+  "minimum": function () { },
+  "mod": function () { },
+  "move": function () { },
+  "multinomial": function () { },
+  "multiply": function () { },
+  "neg": function () { },
+  "nonMaxSuppression": function () { },
+  "notEqual": function () { },
+  "numDataIds": function () { },
+  "oneHot": function () { },
+  "onesLike": function () { },
+  "packTensor": function () { },
+  "packedBinaryOp": function () { },
+  "packedReshape": function () { },
+  "packedUnaryOp": function () { },
+  "pad": function () { },
+  "pow": function () { },
+  "prelu": function () { },
+  "prod": function () { },
+  "read": function () { },
+  "readSync": function () { },
+  "real": function () { },
+  "realDivide": function () { },
+  "reciprocal": function () { },
+  "reduce": function () { },
+  "releaseGPUData": function () { },
+  "relu": function () { },
+  "relu6": function () { },
+  "reshape": function () { },
+  "resizeBilinear": function () { },
+  "resizeBilinearBackprop": function () { },
+  "resizeNearestNeighbor": function () { },
+  "resizeNearestNeighborBackprop": function () { },
+  "reverse": function () { },
+  "round": function () { },
+  "rsqrt": function () { },
+  "runWebGLProgram": function () { },
+  "scatterND": function () { },
+  "segOpCompute": function () { },
+  "select": function () { },
+  "selu": function () { },
+  "shallowSlice": function () { },
+  "shouldExecuteOnCPU": function () { },
+  "sigmoid": function () { },
+  "sign": function () { },
+  "sin": function () { },
+  "sinh": function () { },
+  "slice": function () { },
+  "softplus": function () { },
+  "spaceToBatchND": function () { },
+  "sparseToDense": function () { },
+  "split": function () { },
+  "sqrt": function () { },
+  "square": function () { },
+  "squaredDifference": function () { },
+  "startTimer": function () { },
+  "step": function () { },
+  "stridedSlice": function () { },
+  "subtract": function () { },
+  "sum": function () { },
+  "tan": function () { },
+  "tanh": function () { },
+  "tile": function () { },
+  "time": function () { },
+  "topk": function () { },
+  "transpose": function () { },
+  "unpackTensor": function () { },
+  "unsortedSegmentSum": function () { },
+  "unstack": function () { },
+  "uploadToGPU": function () { },
+  "where": function () { },
+  "write": function () { },
+  "zerosLike": function () { }
+};
+tf.ENV.global._tfengine.registry.webgl.constructor.prototype = {
+  "LRNGrad": function () { },
+  "abs": function () { },
+  "acos": function () { },
+  "acosh": function () { },
+  "acquireTexture": function () { },
+  "add": function () { },
+  "addN": function () { },
+  "all": function () { },
+  "any": function () { },
+  "argMax": function () { },
+  "argMin": function () { },
+  "argMinMaxReduce": function () { },
+  "argReduce": function () { },
+  "argReducePacked": function () { },
+  "asin": function () { },
+  "asinh": function () { },
+  "atan": function () { },
+  "atan2": function () { },
+  "atanh": function () { },
+  "avgPool": function () { },
+  "avgPool3d": function () { },
+  "avgPool3dBackprop": function () { },
+  "avgPoolBackprop": function () { },
+  "batchMatMul": function () { },
+  "batchNormalization": function () { },
+  "batchToSpaceND": function () { },
+  "cast": function () { },
+  "ceil": function () { },
+  "checkNumericalProblems": function () { },
+  "clip": function () { },
+  "compileAndRun": function () { },
+  "complex": function () { },
+  "complexAbs": function () { },
+  "complexSeparableBinaryOp": function () { },
+  "computeBytes": function () { },
+  "concat": function () { },
+  "constructor": function () { },
+  "conv2d": function () { },
+  "conv2dByMatMul": function () { },
+  "conv2dDerFilter": function () { },
+  "conv2dDerInput": function () { },
+  "conv2dWithIm2Row": function () { },
+  "conv3d": function () { },
+  "conv3dDerFilter": function () { },
+  "conv3dDerInput": function () { },
+  "convertAndCacheOnCPU": function () { },
+  "cos": function () { },
+  "cosh": function () { },
+  "cropAndResize": function () { },
+  "cumsum": function () { },
+  "decode": function () { },
+  "depthToSpace": function () { },
+  "depthwiseConv2D": function () { },
+  "depthwiseConv2DDerFilter": function () { },
+  "depthwiseConv2DDerInput": function () { },
+  "diag": function () { },
+  "dispose": function () { },
+  "disposeData": function () { },
+  "elu": function () { },
+  "eluDer": function () { },
+  "endTimer": function () { },
+  "epsilon": function () { },
+  "equal": function () { },
+  "erf": function () { },
+  "exp": function () { },
+  "expm1": function () { },
+  "fft": function () { },
+  "fftImpl": function () { },
+  "fill": function () { },
+  "floatPrecision": function () { },
+  "floor": function () { },
+  "floorDiv": function () { },
+  "fusedBatchMatMul": function () { },
+  "fusedConv2d": function () { },
+  "fusedDepthwiseConv2D": function () { },
+  "gather": function () { },
+  "gatherND": function () { },
+  "getAndSaveBinary": function () { },
+  "getCPUBackend": function () { },
+  "getDataInfo": function () { },
+  "getGPGPUContext": function () { },
+  "getQueryTime": function () { },
+  "getTexture": function () { },
+  "getTextureManager": function () { },
+  "getValuesFromTexture": function () { },
+  "greater": function () { },
+  "greaterEqual": function () { },
+  "ifft": function () { },
+  "imag": function () { },
+  "int": function () { },
+  "isFinite": function () { },
+  "isInf": function () { },
+  "isNaN": function () { },
+  "less": function () { },
+  "lessEqual": function () { },
+  "linspace": function () { },
+  "localResponseNormalization4D": function () { },
+  "log": function () { },
+  "log1p": function () { },
+  "logicalAnd": function () { },
+  "logicalNot": function () { },
+  "logicalOr": function () { },
+  "makeComplexComponentTensorInfo": function () { },
+  "makeOutput": function () { },
+  "makeTensorInfo": function () { },
+  "max": function () { },
+  "maxPool": function () { },
+  "maxPool3d": function () { },
+  "maxPool3dBackprop": function () { },
+  "maxPoolBackprop": function () { },
+  "maximum": function () { },
+  "memory": function () { },
+  "min": function () { },
+  "minimum": function () { },
+  "mod": function () { },
+  "move": function () { },
+  "multinomial": function () { },
+  "multiply": function () { },
+  "neg": function () { },
+  "nonMaxSuppression": function () { },
+  "notEqual": function () { },
+  "numDataIds": function () { },
+  "oneHot": function () { },
+  "onesLike": function () { },
+  "packTensor": function () { },
+  "packedBinaryOp": function () { },
+  "packedReshape": function () { },
+  "packedUnaryOp": function () { },
+  "pad": function () { },
+  "pow": function () { },
+  "prelu": function () { },
+  "prod": function () { },
+  "read": function () { },
+  "readSync": function () { },
+  "real": function () { },
+  "realDivide": function () { },
+  "reciprocal": function () { },
+  "reduce": function () { },
+  "releaseGPUData": function () { },
+  "relu": function () { },
+  "relu6": function () { },
+  "reshape": function () { },
+  "resizeBilinear": function () { },
+  "resizeBilinearBackprop": function () { },
+  "resizeNearestNeighbor": function () { },
+  "resizeNearestNeighborBackprop": function () { },
+  "reverse": function () { },
+  "round": function () { },
+  "rsqrt": function () { },
+  "runWebGLProgram": function () { },
+  "scatterND": function () { },
+  "segOpCompute": function () { },
+  "select": function () { },
+  "selu": function () { },
+  "shallowSlice": function () { },
+  "shouldExecuteOnCPU": function () { },
+  "sigmoid": function () { },
+  "sign": function () { },
+  "sin": function () { },
+  "sinh": function () { },
+  "slice": function () { },
+  "softplus": function () { },
+  "spaceToBatchND": function () { },
+  "sparseToDense": function () { },
+  "split": function () { },
+  "sqrt": function () { },
+  "square": function () { },
+  "squaredDifference": function () { },
+  "startTimer": function () { },
+  "step": function () { },
+  "stridedSlice": function () { },
+  "subtract": function () { },
+  "sum": function () { },
+  "tan": function () { },
+  "tanh": function () { },
+  "tile": function () { },
+  "time": function () { },
+  "topk": function () { },
+  "transpose": function () { },
+  "unpackTensor": function () { },
+  "unsortedSegmentSum": function () { },
+  "unstack": function () { },
+  "uploadToGPU": function () { },
+  "where": function () { },
+  "write": function () { },
+  "zerosLike": function () { }
 };
 tf.ENV.global.parent.React.Component.prototype = {
   "forceUpdate": function () { },
@@ -28233,6 +11309,7 @@ tf.ENV.global.tf.DataStorage.prototype = {
   "delete": function () { },
   "get": function () { },
   "has": function () { },
+  "numDataIds": function () { },
   "set": function () { }
 };
 tf.ENV.global.tf.EarlyStopping.prototype = {
@@ -28348,9 +11425,9 @@ tf.ENV.global.tf.KernelBackend.prototype = {
   "floatPrecision": function () { },
   "floor": function () { },
   "floorDiv": function () { },
-  "fromPixels": function () { },
   "fusedBatchMatMul": function () { },
   "fusedConv2d": function () { },
+  "fusedDepthwiseConv2D": function () { },
   "gather": function () { },
   "gatherND": function () { },
   "greater": function () { },
@@ -28380,11 +11457,13 @@ tf.ENV.global.tf.KernelBackend.prototype = {
   "min": function () { },
   "minimum": function () { },
   "mod": function () { },
+  "move": function () { },
   "multinomial": function () { },
   "multiply": function () { },
   "neg": function () { },
   "nonMaxSuppression": function () { },
   "notEqual": function () { },
+  "numDataIds": function () { },
   "oneHot": function () { },
   "onesLike": function () { },
   "pad": function () { },
@@ -28396,8 +11475,8 @@ tf.ENV.global.tf.KernelBackend.prototype = {
   "real": function () { },
   "realDivide": function () { },
   "reciprocal": function () { },
-  "register": function () { },
   "relu": function () { },
+  "relu6": function () { },
   "reshape": function () { },
   "resizeBilinear": function () { },
   "resizeBilinearBackprop": function () { },
@@ -28755,6 +11834,7 @@ tf.ENV.global.tf.Tensor.prototype = {
   "depthwiseConv2D": function () { },
   "dispose": function () { },
   "div": function () { },
+  "divNoNan": function () { },
   "divStrict": function () { },
   "dot": function () { },
   "elu": function () { },
@@ -28823,6 +11903,7 @@ tf.ENV.global.tf.Tensor.prototype = {
   "rank": function () { },
   "reciprocal": function () { },
   "relu": function () { },
+  "relu6": function () { },
   "reshape": function () { },
   "reshapeAs": function () { },
   "resizeBilinear": function () { },
@@ -28927,6 +12008,7 @@ tf.ENV.global.tf.Variable.prototype = {
   "depthwiseConv2D": function () { },
   "dispose": function () { },
   "div": function () { },
+  "divNoNan": function () { },
   "divStrict": function () { },
   "dot": function () { },
   "elu": function () { },
@@ -28995,6 +12077,7 @@ tf.ENV.global.tf.Variable.prototype = {
   "rank": function () { },
   "reciprocal": function () { },
   "relu": function () { },
+  "relu6": function () { },
   "reshape": function () { },
   "reshapeAs": function () { },
   "resizeBilinear": function () { },
@@ -29106,20 +12189,6 @@ tf.ENV.global.tf.data.TextLineDataset.prototype = {
 tf.ENV.global.tf.data.URLDataSource.prototype = {
   "constructor": function () { },
   "iterator": function () { }
-};
-tf.ENV.global.tf.environment.Environment.prototype = {
-  "evaluateFlag": function () { },
-  "features": function () { },
-  "get": function () { },
-  "getBool": function () { },
-  "getFlags": function () { },
-  "getNumber": function () { },
-  "populateURLFlags": function () { },
-  "registerFlag": function () { },
-  "reset": function () { },
-  "set": function () { },
-  "setFlags": function () { },
-  "setPlatform": function () { }
 };
 tf.ENV.global.tf.layers.Layer.prototype = {
   "addInboundNode": function () { },
@@ -29331,6 +12400,7 @@ tf.ENV.global.tf.webgl.MathBackendWebGL.prototype = {
   "batchToSpaceND": function () { },
   "cast": function () { },
   "ceil": function () { },
+  "checkNumericalProblems": function () { },
   "clip": function () { },
   "compileAndRun": function () { },
   "complex": function () { },
@@ -29338,6 +12408,7 @@ tf.ENV.global.tf.webgl.MathBackendWebGL.prototype = {
   "complexSeparableBinaryOp": function () { },
   "computeBytes": function () { },
   "concat": function () { },
+  "constructor": function () { },
   "conv2d": function () { },
   "conv2dByMatMul": function () { },
   "conv2dDerFilter": function () { },
@@ -29373,9 +12444,9 @@ tf.ENV.global.tf.webgl.MathBackendWebGL.prototype = {
   "floatPrecision": function () { },
   "floor": function () { },
   "floorDiv": function () { },
-  "fromPixels": function () { },
   "fusedBatchMatMul": function () { },
   "fusedConv2d": function () { },
+  "fusedDepthwiseConv2D": function () { },
   "gather": function () { },
   "gatherND": function () { },
   "getAndSaveBinary": function () { },
@@ -29403,10 +12474,9 @@ tf.ENV.global.tf.webgl.MathBackendWebGL.prototype = {
   "logicalAnd": function () { },
   "logicalNot": function () { },
   "logicalOr": function () { },
-  "makeComplexComponentTensorHandle": function () { },
-  "makeOutputArray": function () { },
-  "makePackedTensor": function () { },
-  "makeTensorHandle": function () { },
+  "makeComplexComponentTensorInfo": function () { },
+  "makeOutput": function () { },
+  "makeTensorInfo": function () { },
   "max": function () { },
   "maxPool": function () { },
   "maxPool3d": function () { },
@@ -29417,11 +12487,13 @@ tf.ENV.global.tf.webgl.MathBackendWebGL.prototype = {
   "min": function () { },
   "minimum": function () { },
   "mod": function () { },
+  "move": function () { },
   "multinomial": function () { },
   "multiply": function () { },
   "neg": function () { },
   "nonMaxSuppression": function () { },
   "notEqual": function () { },
+  "numDataIds": function () { },
   "oneHot": function () { },
   "onesLike": function () { },
   "packTensor": function () { },
@@ -29438,9 +12510,9 @@ tf.ENV.global.tf.webgl.MathBackendWebGL.prototype = {
   "realDivide": function () { },
   "reciprocal": function () { },
   "reduce": function () { },
-  "register": function () { },
   "releaseGPUData": function () { },
   "relu": function () { },
+  "relu6": function () { },
   "reshape": function () { },
   "resizeBilinear": function () { },
   "resizeBilinearBackprop": function () { },
@@ -29449,6 +12521,7 @@ tf.ENV.global.tf.webgl.MathBackendWebGL.prototype = {
   "reverse": function () { },
   "round": function () { },
   "rsqrt": function () { },
+  "runWebGLProgram": function () { },
   "scatterND": function () { },
   "segOpCompute": function () { },
   "select": function () { },
@@ -29611,9 +12684,9 @@ tf.KernelBackend.prototype = {
   "floatPrecision": function () { },
   "floor": function () { },
   "floorDiv": function () { },
-  "fromPixels": function () { },
   "fusedBatchMatMul": function () { },
   "fusedConv2d": function () { },
+  "fusedDepthwiseConv2D": function () { },
   "gather": function () { },
   "gatherND": function () { },
   "greater": function () { },
@@ -29643,11 +12716,13 @@ tf.KernelBackend.prototype = {
   "min": function () { },
   "minimum": function () { },
   "mod": function () { },
+  "move": function () { },
   "multinomial": function () { },
   "multiply": function () { },
   "neg": function () { },
   "nonMaxSuppression": function () { },
   "notEqual": function () { },
+  "numDataIds": function () { },
   "oneHot": function () { },
   "onesLike": function () { },
   "pad": function () { },
@@ -29659,8 +12734,8 @@ tf.KernelBackend.prototype = {
   "real": function () { },
   "realDivide": function () { },
   "reciprocal": function () { },
-  "register": function () { },
   "relu": function () { },
+  "relu6": function () { },
   "reshape": function () { },
   "resizeBilinear": function () { },
   "resizeBilinearBackprop": function () { },
@@ -30018,6 +13093,7 @@ tf.Tensor.prototype = {
   "depthwiseConv2D": function () { },
   "dispose": function () { },
   "div": function () { },
+  "divNoNan": function () { },
   "divStrict": function () { },
   "dot": function () { },
   "elu": function () { },
@@ -30086,6 +13162,7 @@ tf.Tensor.prototype = {
   "rank": function () { },
   "reciprocal": function () { },
   "relu": function () { },
+  "relu6": function () { },
   "reshape": function () { },
   "reshapeAs": function () { },
   "resizeBilinear": function () { },
@@ -30190,6 +13267,7 @@ tf.Variable.prototype = {
   "depthwiseConv2D": function () { },
   "dispose": function () { },
   "div": function () { },
+  "divNoNan": function () { },
   "divStrict": function () { },
   "dot": function () { },
   "elu": function () { },
@@ -30258,6 +13336,7 @@ tf.Variable.prototype = {
   "rank": function () { },
   "reciprocal": function () { },
   "relu": function () { },
+  "relu6": function () { },
   "reshape": function () { },
   "reshapeAs": function () { },
   "resizeBilinear": function () { },
@@ -30369,1381 +13448,6 @@ tf.data.TextLineDataset.prototype = {
 tf.data.URLDataSource.prototype = {
   "constructor": function () { },
   "iterator": function () { }
-};
-tf.environment.ENV.global.parent.React.Component.prototype = {
-  "forceUpdate": function () { },
-  "isReactComponent": function () { },
-  "setState": function () { }
-};
-tf.environment.ENV.global.parent.React.PureComponent.prototype = {
-  "constructor": function () { },
-  "forceUpdate": function () { },
-  "isPureReactComponent": function () { },
-  "isReactComponent": function () { },
-  "setState": function () { }
-};
-tf.environment.ENV.global.tf.AdadeltaOptimizer.prototype = {
-  "applyGradients": function () { },
-  "computeGradients": function () { },
-  "constructor": function () { },
-  "dispose": function () { },
-  "extractIterations": function () { },
-  "getClassName": function () { },
-  "getConfig": function () { },
-  "getWeights": function () { },
-  "incrementIterations": function () { },
-  "iterations": function () { },
-  "minimize": function () { },
-  "saveIterations": function () { },
-  "setWeights": function () { }
-};
-tf.environment.ENV.global.tf.AdagradOptimizer.prototype = {
-  "applyGradients": function () { },
-  "computeGradients": function () { },
-  "constructor": function () { },
-  "dispose": function () { },
-  "extractIterations": function () { },
-  "getClassName": function () { },
-  "getConfig": function () { },
-  "getWeights": function () { },
-  "incrementIterations": function () { },
-  "iterations": function () { },
-  "minimize": function () { },
-  "saveIterations": function () { },
-  "setWeights": function () { }
-};
-tf.environment.ENV.global.tf.AdamOptimizer.prototype = {
-  "applyGradients": function () { },
-  "computeGradients": function () { },
-  "constructor": function () { },
-  "dispose": function () { },
-  "extractIterations": function () { },
-  "getClassName": function () { },
-  "getConfig": function () { },
-  "getWeights": function () { },
-  "incrementIterations": function () { },
-  "iterations": function () { },
-  "minimize": function () { },
-  "saveIterations": function () { },
-  "setWeights": function () { }
-};
-tf.environment.ENV.global.tf.AdamaxOptimizer.prototype = {
-  "applyGradients": function () { },
-  "computeGradients": function () { },
-  "constructor": function () { },
-  "dispose": function () { },
-  "extractIterations": function () { },
-  "getClassName": function () { },
-  "getConfig": function () { },
-  "getWeights": function () { },
-  "incrementIterations": function () { },
-  "iterations": function () { },
-  "minimize": function () { },
-  "saveIterations": function () { },
-  "setWeights": function () { }
-};
-tf.environment.ENV.global.tf.Callback.prototype = {
-  "constructor": function () { },
-  "onBatchBegin": function () { },
-  "onBatchEnd": function () { },
-  "onEpochBegin": function () { },
-  "onEpochEnd": function () { },
-  "onTrainBegin": function () { },
-  "onTrainEnd": function () { },
-  "setModel": function () { },
-  "setParams": function () { }
-};
-tf.environment.ENV.global.tf.CallbackList.prototype = {
-  "append": function () { },
-  "onBatchBegin": function () { },
-  "onBatchEnd": function () { },
-  "onEpochBegin": function () { },
-  "onEpochEnd": function () { },
-  "onTrainBegin": function () { },
-  "onTrainEnd": function () { },
-  "setModel": function () { },
-  "setParams": function () { }
-};
-tf.environment.ENV.global.tf.CustomCallback.prototype = {
-  "constructor": function () { },
-  "maybeWait": function () { },
-  "onBatchBegin": function () { },
-  "onBatchEnd": function () { },
-  "onEpochBegin": function () { },
-  "onEpochEnd": function () { },
-  "onTrainBegin": function () { },
-  "onTrainEnd": function () { },
-  "setModel": function () { },
-  "setParams": function () { }
-};
-tf.environment.ENV.global.tf.DataStorage.prototype = {
-  "delete": function () { },
-  "get": function () { },
-  "has": function () { },
-  "set": function () { }
-};
-tf.environment.ENV.global.tf.EarlyStopping.prototype = {
-  "constructor": function () { },
-  "getMonitorValue": function () { },
-  "onBatchBegin": function () { },
-  "onBatchEnd": function () { },
-  "onEpochBegin": function () { },
-  "onEpochEnd": function () { },
-  "onTrainBegin": function () { },
-  "onTrainEnd": function () { },
-  "setModel": function () { },
-  "setParams": function () { }
-};
-tf.environment.ENV.global.tf.Environment.prototype = {
-  "evaluateFlag": function () { },
-  "features": function () { },
-  "get": function () { },
-  "getBool": function () { },
-  "getFlags": function () { },
-  "getNumber": function () { },
-  "populateURLFlags": function () { },
-  "registerFlag": function () { },
-  "reset": function () { },
-  "set": function () { },
-  "setFlags": function () { },
-  "setPlatform": function () { }
-};
-tf.environment.ENV.global.tf.GraphModel.prototype = {
-  "convertTensorMapToTensorsMap": function () { },
-  "dispose": function () { },
-  "execute": function () { },
-  "executeAsync": function () { },
-  "findIOHandler": function () { },
-  "inputNodes": function () { },
-  "inputs": function () { },
-  "load": function () { },
-  "modelVersion": function () { },
-  "normalizeInputs": function () { },
-  "normalizeOutputs": function () { },
-  "outputNodes": function () { },
-  "outputs": function () { },
-  "predict": function () { },
-  "weights": function () { }
-};
-tf.environment.ENV.global.tf.History.prototype = {
-  "constructor": function () { },
-  "onBatchBegin": function () { },
-  "onBatchEnd": function () { },
-  "onEpochBegin": function () { },
-  "onEpochEnd": function () { },
-  "onTrainBegin": function () { },
-  "onTrainEnd": function () { },
-  "setModel": function () { },
-  "setParams": function () { },
-  "syncData": function () { }
-};
-tf.environment.ENV.global.tf.KernelBackend.prototype = {
-  "LRNGrad": function () { },
-  "abs": function () { },
-  "acos": function () { },
-  "acosh": function () { },
-  "add": function () { },
-  "addN": function () { },
-  "all": function () { },
-  "any": function () { },
-  "argMax": function () { },
-  "argMin": function () { },
-  "asin": function () { },
-  "asinh": function () { },
-  "atan": function () { },
-  "atan2": function () { },
-  "atanh": function () { },
-  "avgPool": function () { },
-  "avgPool3d": function () { },
-  "avgPool3dBackprop": function () { },
-  "avgPoolBackprop": function () { },
-  "batchMatMul": function () { },
-  "batchNormalization": function () { },
-  "batchToSpaceND": function () { },
-  "cast": function () { },
-  "ceil": function () { },
-  "clip": function () { },
-  "complex": function () { },
-  "complexAbs": function () { },
-  "concat": function () { },
-  "conv2d": function () { },
-  "conv2dDerFilter": function () { },
-  "conv2dDerInput": function () { },
-  "conv3d": function () { },
-  "conv3dDerFilter": function () { },
-  "conv3dDerInput": function () { },
-  "cos": function () { },
-  "cosh": function () { },
-  "cropAndResize": function () { },
-  "cumsum": function () { },
-  "depthToSpace": function () { },
-  "depthwiseConv2D": function () { },
-  "depthwiseConv2DDerFilter": function () { },
-  "depthwiseConv2DDerInput": function () { },
-  "diag": function () { },
-  "dispose": function () { },
-  "disposeData": function () { },
-  "elu": function () { },
-  "eluDer": function () { },
-  "epsilon": function () { },
-  "equal": function () { },
-  "erf": function () { },
-  "exp": function () { },
-  "expm1": function () { },
-  "fft": function () { },
-  "fill": function () { },
-  "floatPrecision": function () { },
-  "floor": function () { },
-  "floorDiv": function () { },
-  "fromPixels": function () { },
-  "fusedBatchMatMul": function () { },
-  "fusedConv2d": function () { },
-  "gather": function () { },
-  "gatherND": function () { },
-  "greater": function () { },
-  "greaterEqual": function () { },
-  "ifft": function () { },
-  "imag": function () { },
-  "int": function () { },
-  "isFinite": function () { },
-  "isInf": function () { },
-  "isNaN": function () { },
-  "less": function () { },
-  "lessEqual": function () { },
-  "linspace": function () { },
-  "localResponseNormalization4D": function () { },
-  "log": function () { },
-  "log1p": function () { },
-  "logicalAnd": function () { },
-  "logicalNot": function () { },
-  "logicalOr": function () { },
-  "max": function () { },
-  "maxPool": function () { },
-  "maxPool3d": function () { },
-  "maxPool3dBackprop": function () { },
-  "maxPoolBackprop": function () { },
-  "maximum": function () { },
-  "memory": function () { },
-  "min": function () { },
-  "minimum": function () { },
-  "mod": function () { },
-  "multinomial": function () { },
-  "multiply": function () { },
-  "neg": function () { },
-  "nonMaxSuppression": function () { },
-  "notEqual": function () { },
-  "oneHot": function () { },
-  "onesLike": function () { },
-  "pad": function () { },
-  "pow": function () { },
-  "prelu": function () { },
-  "prod": function () { },
-  "read": function () { },
-  "readSync": function () { },
-  "real": function () { },
-  "realDivide": function () { },
-  "reciprocal": function () { },
-  "register": function () { },
-  "relu": function () { },
-  "reshape": function () { },
-  "resizeBilinear": function () { },
-  "resizeBilinearBackprop": function () { },
-  "resizeNearestNeighbor": function () { },
-  "resizeNearestNeighborBackprop": function () { },
-  "reverse": function () { },
-  "round": function () { },
-  "rsqrt": function () { },
-  "scatterND": function () { },
-  "select": function () { },
-  "selu": function () { },
-  "sigmoid": function () { },
-  "sign": function () { },
-  "sin": function () { },
-  "sinh": function () { },
-  "slice": function () { },
-  "softplus": function () { },
-  "spaceToBatchND": function () { },
-  "sparseToDense": function () { },
-  "split": function () { },
-  "sqrt": function () { },
-  "square": function () { },
-  "squaredDifference": function () { },
-  "step": function () { },
-  "stridedSlice": function () { },
-  "subtract": function () { },
-  "sum": function () { },
-  "tan": function () { },
-  "tanh": function () { },
-  "tile": function () { },
-  "time": function () { },
-  "topk": function () { },
-  "transpose": function () { },
-  "unsortedSegmentSum": function () { },
-  "unstack": function () { },
-  "where": function () { },
-  "write": function () { },
-  "zerosLike": function () { }
-};
-tf.environment.ENV.global.tf.LayerVariable.prototype = {
-  "assertNotDisposed": function () { },
-  "dispose": function () { },
-  "read": function () { },
-  "trainable": function () { },
-  "write": function () { }
-};
-tf.environment.ENV.global.tf.LayersModel.prototype = {
-  "addInboundNode": function () { },
-  "addLoss": function () { },
-  "addWeight": function () { },
-  "apply": function () { },
-  "assertInputCompatibility": function () { },
-  "assertNotDisposed": function () { },
-  "build": function () { },
-  "buildNodeConversionMap": function () { },
-  "built": function () { },
-  "calculateLosses": function () { },
-  "call": function () { },
-  "checkNumSamples": function () { },
-  "checkTrainableWeightsConsistency": function () { },
-  "clearCallHook": function () { },
-  "compile": function () { },
-  "computeMask": function () { },
-  "computeOutputShape": function () { },
-  "constructor": function () { },
-  "countParams": function () { },
-  "dispose": function () { },
-  "disposeWeights": function () { },
-  "evaluate": function () { },
-  "evaluateDataset": function () { },
-  "execute": function () { },
-  "fit": function () { },
-  "fitDataset": function () { },
-  "getClassName": function () { },
-  "getConfig": function () { },
-  "getDedupedMetricsNames": function () { },
-  "getInputAt": function () { },
-  "getLayer": function () { },
-  "getLossIdentifiers": function () { },
-  "getMetricIdentifiers": function () { },
-  "getNamedWeights": function () { },
-  "getNodeAtIndex": function () { },
-  "getOutputAt": function () { },
-  "getTrainingConfig": function () { },
-  "getUserDefinedMetadata": function () { },
-  "getWeights": function () { },
-  "input": function () { },
-  "invokeCallHook": function () { },
-  "loadTrainingConfig": function () { },
-  "loadWeights": function () { },
-  "losses": function () { },
-  "makeTestFunction": function () { },
-  "makeTrainFunction": function () { },
-  "nonTrainableWeights": function () { },
-  "optimizer": function () { },
-  "output": function () { },
-  "outputShape": function () { },
-  "predict": function () { },
-  "predictLoop": function () { },
-  "predictOnBatch": function () { },
-  "resetStates": function () { },
-  "retrieveSymbolicTensors": function () { },
-  "runInternalGraph": function () { },
-  "save": function () { },
-  "setCallHook": function () { },
-  "setFastWeightInitDuringBuild": function () { },
-  "setUserDefinedMetadata": function () { },
-  "setWeights": function () { },
-  "standardizeUserData": function () { },
-  "standardizeUserDataXY": function () { },
-  "stateful": function () { },
-  "stopTraining": function () { },
-  "summary": function () { },
-  "testLoop": function () { },
-  "toJSON": function () { },
-  "trainOnBatch": function () { },
-  "trainable": function () { },
-  "trainableWeights": function () { },
-  "updatedConfig": function () { },
-  "updates": function () { },
-  "warnOnIncompatibleInputShape": function () { },
-  "weights": function () { }
-};
-tf.environment.ENV.global.tf.MomentumOptimizer.prototype = {
-  "applyGradients": function () { },
-  "computeGradients": function () { },
-  "constructor": function () { },
-  "dispose": function () { },
-  "extractIterations": function () { },
-  "getClassName": function () { },
-  "getConfig": function () { },
-  "getWeights": function () { },
-  "incrementIterations": function () { },
-  "iterations": function () { },
-  "minimize": function () { },
-  "saveIterations": function () { },
-  "setLearningRate": function () { },
-  "setMomentum": function () { },
-  "setWeights": function () { }
-};
-tf.environment.ENV.global.tf.Optimizer.prototype = {
-  "computeGradients": function () { },
-  "constructor": function () { },
-  "dispose": function () { },
-  "extractIterations": function () { },
-  "getClassName": function () { },
-  "getWeights": function () { },
-  "incrementIterations": function () { },
-  "iterations": function () { },
-  "minimize": function () { },
-  "saveIterations": function () { },
-  "setWeights": function () { }
-};
-tf.environment.ENV.global.tf.RMSPropOptimizer.prototype = {
-  "applyGradients": function () { },
-  "computeGradients": function () { },
-  "constructor": function () { },
-  "dispose": function () { },
-  "extractIterations": function () { },
-  "getClassName": function () { },
-  "getConfig": function () { },
-  "getWeights": function () { },
-  "incrementIterations": function () { },
-  "iterations": function () { },
-  "minimize": function () { },
-  "saveIterations": function () { },
-  "setWeights": function () { }
-};
-tf.environment.ENV.global.tf.RNN.prototype = {
-  "addInboundNode": function () { },
-  "addLoss": function () { },
-  "addWeight": function () { },
-  "apply": function () { },
-  "assertInputCompatibility": function () { },
-  "assertNotDisposed": function () { },
-  "build": function () { },
-  "built": function () { },
-  "calculateLosses": function () { },
-  "call": function () { },
-  "clearCallHook": function () { },
-  "computeMask": function () { },
-  "computeOutputShape": function () { },
-  "constructor": function () { },
-  "countParams": function () { },
-  "dispose": function () { },
-  "disposeWeights": function () { },
-  "getClassName": function () { },
-  "getConfig": function () { },
-  "getInitialState": function () { },
-  "getInputAt": function () { },
-  "getNodeAtIndex": function () { },
-  "getOutputAt": function () { },
-  "getStates": function () { },
-  "getWeights": function () { },
-  "input": function () { },
-  "invokeCallHook": function () { },
-  "losses": function () { },
-  "nonTrainableWeights": function () { },
-  "output": function () { },
-  "outputShape": function () { },
-  "resetStates": function () { },
-  "setCallHook": function () { },
-  "setFastWeightInitDuringBuild": function () { },
-  "setStates": function () { },
-  "setWeights": function () { },
-  "stateful": function () { },
-  "states": function () { },
-  "trainable": function () { },
-  "trainableWeights": function () { },
-  "updates": function () { },
-  "warnOnIncompatibleInputShape": function () { },
-  "weights": function () { }
-};
-tf.environment.ENV.global.tf.SGDOptimizer.prototype = {
-  "applyGradients": function () { },
-  "computeGradients": function () { },
-  "constructor": function () { },
-  "dispose": function () { },
-  "extractIterations": function () { },
-  "getClassName": function () { },
-  "getConfig": function () { },
-  "getWeights": function () { },
-  "incrementIterations": function () { },
-  "iterations": function () { },
-  "minimize": function () { },
-  "saveIterations": function () { },
-  "setLearningRate": function () { },
-  "setWeights": function () { }
-};
-tf.environment.ENV.global.tf.Sequential.prototype = {
-  "add": function () { },
-  "addInboundNode": function () { },
-  "addLoss": function () { },
-  "addWeight": function () { },
-  "apply": function () { },
-  "assertInputCompatibility": function () { },
-  "assertNotDisposed": function () { },
-  "build": function () { },
-  "buildNodeConversionMap": function () { },
-  "built": function () { },
-  "calculateLosses": function () { },
-  "call": function () { },
-  "checkNumSamples": function () { },
-  "checkShape": function () { },
-  "checkTrainableWeightsConsistency": function () { },
-  "clearCallHook": function () { },
-  "compile": function () { },
-  "computeMask": function () { },
-  "computeOutputShape": function () { },
-  "constructor": function () { },
-  "countParams": function () { },
-  "dispose": function () { },
-  "disposeWeights": function () { },
-  "evaluate": function () { },
-  "evaluateDataset": function () { },
-  "execute": function () { },
-  "fit": function () { },
-  "fitDataset": function () { },
-  "getClassName": function () { },
-  "getConfig": function () { },
-  "getDedupedMetricsNames": function () { },
-  "getInputAt": function () { },
-  "getLayer": function () { },
-  "getLossIdentifiers": function () { },
-  "getMetricIdentifiers": function () { },
-  "getNamedWeights": function () { },
-  "getNodeAtIndex": function () { },
-  "getOutputAt": function () { },
-  "getTrainingConfig": function () { },
-  "getUserDefinedMetadata": function () { },
-  "getWeights": function () { },
-  "input": function () { },
-  "invokeCallHook": function () { },
-  "loadTrainingConfig": function () { },
-  "loadWeights": function () { },
-  "losses": function () { },
-  "makeTestFunction": function () { },
-  "makeTrainFunction": function () { },
-  "nonTrainableWeights": function () { },
-  "optimizer": function () { },
-  "output": function () { },
-  "outputShape": function () { },
-  "pop": function () { },
-  "predict": function () { },
-  "predictLoop": function () { },
-  "predictOnBatch": function () { },
-  "resetStates": function () { },
-  "retrieveSymbolicTensors": function () { },
-  "runInternalGraph": function () { },
-  "save": function () { },
-  "setCallHook": function () { },
-  "setFastWeightInitDuringBuild": function () { },
-  "setUserDefinedMetadata": function () { },
-  "setWeights": function () { },
-  "standardizeUserData": function () { },
-  "standardizeUserDataXY": function () { },
-  "stateful": function () { },
-  "stopTraining": function () { },
-  "summary": function () { },
-  "testLoop": function () { },
-  "toJSON": function () { },
-  "trainOnBatch": function () { },
-  "trainable": function () { },
-  "trainableWeights": function () { },
-  "updatedConfig": function () { },
-  "updates": function () { },
-  "warnOnIncompatibleInputShape": function () { },
-  "weights": function () { }
-};
-tf.environment.ENV.global.tf.Tensor.prototype = {
-  "abs": function () { },
-  "acos": function () { },
-  "acosh": function () { },
-  "add": function () { },
-  "addStrict": function () { },
-  "all": function () { },
-  "any": function () { },
-  "argMax": function () { },
-  "argMin": function () { },
-  "array": function () { },
-  "arraySync": function () { },
-  "as1D": function () { },
-  "as2D": function () { },
-  "as3D": function () { },
-  "as4D": function () { },
-  "as5D": function () { },
-  "asScalar": function () { },
-  "asType": function () { },
-  "asin": function () { },
-  "asinh": function () { },
-  "atan": function () { },
-  "atan2": function () { },
-  "atanh": function () { },
-  "avgPool": function () { },
-  "batchNorm": function () { },
-  "batchNormalization": function () { },
-  "batchToSpaceND": function () { },
-  "buffer": function () { },
-  "bufferSync": function () { },
-  "bytes": function () { },
-  "cast": function () { },
-  "ceil": function () { },
-  "clipByValue": function () { },
-  "clone": function () { },
-  "concat": function () { },
-  "conv1d": function () { },
-  "conv2d": function () { },
-  "conv2dTranspose": function () { },
-  "cos": function () { },
-  "cosh": function () { },
-  "cumsum": function () { },
-  "data": function () { },
-  "dataSync": function () { },
-  "depthToSpace": function () { },
-  "depthwiseConv2D": function () { },
-  "dispose": function () { },
-  "div": function () { },
-  "divStrict": function () { },
-  "dot": function () { },
-  "elu": function () { },
-  "equal": function () { },
-  "equalStrict": function () { },
-  "erf": function () { },
-  "exp": function () { },
-  "expandDims": function () { },
-  "expm1": function () { },
-  "fft": function () { },
-  "flatten": function () { },
-  "floor": function () { },
-  "floorDiv": function () { },
-  "gather": function () { },
-  "greater": function () { },
-  "greaterEqual": function () { },
-  "greaterEqualStrict": function () { },
-  "greaterStrict": function () { },
-  "ifft": function () { },
-  "irfft": function () { },
-  "isDisposed": function () { },
-  "isFinite": function () { },
-  "isInf": function () { },
-  "isNaN": function () { },
-  "leakyRelu": function () { },
-  "less": function () { },
-  "lessEqual": function () { },
-  "lessEqualStrict": function () { },
-  "lessStrict": function () { },
-  "localResponseNormalization": function () { },
-  "log": function () { },
-  "log1p": function () { },
-  "logSigmoid": function () { },
-  "logSoftmax": function () { },
-  "logSumExp": function () { },
-  "logicalAnd": function () { },
-  "logicalNot": function () { },
-  "logicalOr": function () { },
-  "logicalXor": function () { },
-  "matMul": function () { },
-  "max": function () { },
-  "maxPool": function () { },
-  "maximum": function () { },
-  "maximumStrict": function () { },
-  "mean": function () { },
-  "min": function () { },
-  "minimum": function () { },
-  "minimumStrict": function () { },
-  "mod": function () { },
-  "modStrict": function () { },
-  "mul": function () { },
-  "mulStrict": function () { },
-  "neg": function () { },
-  "norm": function () { },
-  "notEqual": function () { },
-  "notEqualStrict": function () { },
-  "oneHot": function () { },
-  "onesLike": function () { },
-  "pad": function () { },
-  "pool": function () { },
-  "pow": function () { },
-  "powStrict": function () { },
-  "prelu": function () { },
-  "print": function () { },
-  "prod": function () { },
-  "rank": function () { },
-  "reciprocal": function () { },
-  "relu": function () { },
-  "reshape": function () { },
-  "reshapeAs": function () { },
-  "resizeBilinear": function () { },
-  "resizeNearestNeighbor": function () { },
-  "reverse": function () { },
-  "rfft": function () { },
-  "round": function () { },
-  "rsqrt": function () { },
-  "selu": function () { },
-  "separableConv2d": function () { },
-  "sigmoid": function () { },
-  "sign": function () { },
-  "sin": function () { },
-  "sinh": function () { },
-  "slice": function () { },
-  "softmax": function () { },
-  "softplus": function () { },
-  "spaceToBatchND": function () { },
-  "split": function () { },
-  "sqrt": function () { },
-  "square": function () { },
-  "squaredDifference": function () { },
-  "squaredDifferenceStrict": function () { },
-  "squeeze": function () { },
-  "stack": function () { },
-  "step": function () { },
-  "stridedSlice": function () { },
-  "sub": function () { },
-  "subStrict": function () { },
-  "sum": function () { },
-  "tan": function () { },
-  "tanh": function () { },
-  "throwIfDisposed": function () { },
-  "tile": function () { },
-  "toBool": function () { },
-  "toFloat": function () { },
-  "toInt": function () { },
-  "toString": function () { },
-  "topk": function () { },
-  "transpose": function () { },
-  "unsortedSegmentSum": function () { },
-  "unstack": function () { },
-  "variable": function () { },
-  "where": function () { },
-  "zerosLike": function () { }
-};
-tf.environment.ENV.global.tf.TensorBuffer.prototype = {
-  "get": function () { },
-  "indexToLoc": function () { },
-  "locToIndex": function () { },
-  "rank": function () { },
-  "set": function () { },
-  "toTensor": function () { }
-};
-tf.environment.ENV.global.tf.Variable.prototype = {
-  "abs": function () { },
-  "acos": function () { },
-  "acosh": function () { },
-  "add": function () { },
-  "addStrict": function () { },
-  "all": function () { },
-  "any": function () { },
-  "argMax": function () { },
-  "argMin": function () { },
-  "array": function () { },
-  "arraySync": function () { },
-  "as1D": function () { },
-  "as2D": function () { },
-  "as3D": function () { },
-  "as4D": function () { },
-  "as5D": function () { },
-  "asScalar": function () { },
-  "asType": function () { },
-  "asin": function () { },
-  "asinh": function () { },
-  "assign": function () { },
-  "atan": function () { },
-  "atan2": function () { },
-  "atanh": function () { },
-  "avgPool": function () { },
-  "batchNorm": function () { },
-  "batchNormalization": function () { },
-  "batchToSpaceND": function () { },
-  "buffer": function () { },
-  "bufferSync": function () { },
-  "bytes": function () { },
-  "cast": function () { },
-  "ceil": function () { },
-  "clipByValue": function () { },
-  "clone": function () { },
-  "concat": function () { },
-  "constructor": function () { },
-  "conv1d": function () { },
-  "conv2d": function () { },
-  "conv2dTranspose": function () { },
-  "cos": function () { },
-  "cosh": function () { },
-  "cumsum": function () { },
-  "data": function () { },
-  "dataSync": function () { },
-  "depthToSpace": function () { },
-  "depthwiseConv2D": function () { },
-  "dispose": function () { },
-  "div": function () { },
-  "divStrict": function () { },
-  "dot": function () { },
-  "elu": function () { },
-  "equal": function () { },
-  "equalStrict": function () { },
-  "erf": function () { },
-  "exp": function () { },
-  "expandDims": function () { },
-  "expm1": function () { },
-  "fft": function () { },
-  "flatten": function () { },
-  "floor": function () { },
-  "floorDiv": function () { },
-  "gather": function () { },
-  "greater": function () { },
-  "greaterEqual": function () { },
-  "greaterEqualStrict": function () { },
-  "greaterStrict": function () { },
-  "ifft": function () { },
-  "irfft": function () { },
-  "isDisposed": function () { },
-  "isFinite": function () { },
-  "isInf": function () { },
-  "isNaN": function () { },
-  "leakyRelu": function () { },
-  "less": function () { },
-  "lessEqual": function () { },
-  "lessEqualStrict": function () { },
-  "lessStrict": function () { },
-  "localResponseNormalization": function () { },
-  "log": function () { },
-  "log1p": function () { },
-  "logSigmoid": function () { },
-  "logSoftmax": function () { },
-  "logSumExp": function () { },
-  "logicalAnd": function () { },
-  "logicalNot": function () { },
-  "logicalOr": function () { },
-  "logicalXor": function () { },
-  "matMul": function () { },
-  "max": function () { },
-  "maxPool": function () { },
-  "maximum": function () { },
-  "maximumStrict": function () { },
-  "mean": function () { },
-  "min": function () { },
-  "minimum": function () { },
-  "minimumStrict": function () { },
-  "mod": function () { },
-  "modStrict": function () { },
-  "mul": function () { },
-  "mulStrict": function () { },
-  "neg": function () { },
-  "norm": function () { },
-  "notEqual": function () { },
-  "notEqualStrict": function () { },
-  "oneHot": function () { },
-  "onesLike": function () { },
-  "pad": function () { },
-  "pool": function () { },
-  "pow": function () { },
-  "powStrict": function () { },
-  "prelu": function () { },
-  "print": function () { },
-  "prod": function () { },
-  "rank": function () { },
-  "reciprocal": function () { },
-  "relu": function () { },
-  "reshape": function () { },
-  "reshapeAs": function () { },
-  "resizeBilinear": function () { },
-  "resizeNearestNeighbor": function () { },
-  "reverse": function () { },
-  "rfft": function () { },
-  "round": function () { },
-  "rsqrt": function () { },
-  "selu": function () { },
-  "separableConv2d": function () { },
-  "sigmoid": function () { },
-  "sign": function () { },
-  "sin": function () { },
-  "sinh": function () { },
-  "slice": function () { },
-  "softmax": function () { },
-  "softplus": function () { },
-  "spaceToBatchND": function () { },
-  "split": function () { },
-  "sqrt": function () { },
-  "square": function () { },
-  "squaredDifference": function () { },
-  "squaredDifferenceStrict": function () { },
-  "squeeze": function () { },
-  "stack": function () { },
-  "step": function () { },
-  "stridedSlice": function () { },
-  "sub": function () { },
-  "subStrict": function () { },
-  "sum": function () { },
-  "tan": function () { },
-  "tanh": function () { },
-  "throwIfDisposed": function () { },
-  "tile": function () { },
-  "toBool": function () { },
-  "toFloat": function () { },
-  "toInt": function () { },
-  "toString": function () { },
-  "topk": function () { },
-  "transpose": function () { },
-  "unsortedSegmentSum": function () { },
-  "unstack": function () { },
-  "variable": function () { },
-  "where": function () { },
-  "zerosLike": function () { }
-};
-tf.environment.ENV.global.tf.data.CSVDataset.prototype = {
-  "batch": function () { },
-  "columnNames": function () { },
-  "concatenate": function () { },
-  "constructor": function () { },
-  "filter": function () { },
-  "forEach": function () { },
-  "forEachAsync": function () { },
-  "getBoolean": function () { },
-  "iterator": function () { },
-  "makeDataElement": function () { },
-  "map": function () { },
-  "mapAsync": function () { },
-  "maybeReadHeaderLine": function () { },
-  "parseRow": function () { },
-  "prefetch": function () { },
-  "repeat": function () { },
-  "setColumnNames": function () { },
-  "shuffle": function () { },
-  "skip": function () { },
-  "take": function () { },
-  "toArray": function () { },
-  "toArrayForTest": function () { }
-};
-tf.environment.ENV.global.tf.data.Dataset.prototype = {
-  "batch": function () { },
-  "concatenate": function () { },
-  "filter": function () { },
-  "forEach": function () { },
-  "forEachAsync": function () { },
-  "map": function () { },
-  "mapAsync": function () { },
-  "prefetch": function () { },
-  "repeat": function () { },
-  "shuffle": function () { },
-  "skip": function () { },
-  "take": function () { },
-  "toArray": function () { },
-  "toArrayForTest": function () { }
-};
-tf.environment.ENV.global.tf.data.FileDataSource.prototype = {
-  "constructor": function () { },
-  "iterator": function () { }
-};
-tf.environment.ENV.global.tf.data.TextLineDataset.prototype = {
-  "batch": function () { },
-  "concatenate": function () { },
-  "constructor": function () { },
-  "filter": function () { },
-  "forEach": function () { },
-  "forEachAsync": function () { },
-  "iterator": function () { },
-  "map": function () { },
-  "mapAsync": function () { },
-  "prefetch": function () { },
-  "repeat": function () { },
-  "shuffle": function () { },
-  "skip": function () { },
-  "take": function () { },
-  "toArray": function () { },
-  "toArrayForTest": function () { }
-};
-tf.environment.ENV.global.tf.data.URLDataSource.prototype = {
-  "constructor": function () { },
-  "iterator": function () { }
-};
-tf.environment.ENV.global.tf.layers.Layer.prototype = {
-  "addInboundNode": function () { },
-  "addLoss": function () { },
-  "addWeight": function () { },
-  "apply": function () { },
-  "assertInputCompatibility": function () { },
-  "assertNotDisposed": function () { },
-  "build": function () { },
-  "built": function () { },
-  "calculateLosses": function () { },
-  "call": function () { },
-  "clearCallHook": function () { },
-  "computeMask": function () { },
-  "computeOutputShape": function () { },
-  "constructor": function () { },
-  "countParams": function () { },
-  "dispose": function () { },
-  "disposeWeights": function () { },
-  "getClassName": function () { },
-  "getConfig": function () { },
-  "getInputAt": function () { },
-  "getNodeAtIndex": function () { },
-  "getOutputAt": function () { },
-  "getWeights": function () { },
-  "input": function () { },
-  "invokeCallHook": function () { },
-  "losses": function () { },
-  "nonTrainableWeights": function () { },
-  "output": function () { },
-  "outputShape": function () { },
-  "resetStates": function () { },
-  "setCallHook": function () { },
-  "setFastWeightInitDuringBuild": function () { },
-  "setWeights": function () { },
-  "stateful": function () { },
-  "trainable": function () { },
-  "trainableWeights": function () { },
-  "updates": function () { },
-  "warnOnIncompatibleInputShape": function () { },
-  "weights": function () { }
-};
-tf.environment.ENV.global.tf.layers.RNN.prototype = {
-  "addInboundNode": function () { },
-  "addLoss": function () { },
-  "addWeight": function () { },
-  "apply": function () { },
-  "assertInputCompatibility": function () { },
-  "assertNotDisposed": function () { },
-  "build": function () { },
-  "built": function () { },
-  "calculateLosses": function () { },
-  "call": function () { },
-  "clearCallHook": function () { },
-  "computeMask": function () { },
-  "computeOutputShape": function () { },
-  "constructor": function () { },
-  "countParams": function () { },
-  "dispose": function () { },
-  "disposeWeights": function () { },
-  "getClassName": function () { },
-  "getConfig": function () { },
-  "getInitialState": function () { },
-  "getInputAt": function () { },
-  "getNodeAtIndex": function () { },
-  "getOutputAt": function () { },
-  "getStates": function () { },
-  "getWeights": function () { },
-  "input": function () { },
-  "invokeCallHook": function () { },
-  "losses": function () { },
-  "nonTrainableWeights": function () { },
-  "output": function () { },
-  "outputShape": function () { },
-  "resetStates": function () { },
-  "setCallHook": function () { },
-  "setFastWeightInitDuringBuild": function () { },
-  "setStates": function () { },
-  "setWeights": function () { },
-  "stateful": function () { },
-  "states": function () { },
-  "trainable": function () { },
-  "trainableWeights": function () { },
-  "updates": function () { },
-  "warnOnIncompatibleInputShape": function () { },
-  "weights": function () { }
-};
-tf.environment.ENV.global.tf.layers.RNNCell.prototype = {
-  "addInboundNode": function () { },
-  "addLoss": function () { },
-  "addWeight": function () { },
-  "apply": function () { },
-  "assertInputCompatibility": function () { },
-  "assertNotDisposed": function () { },
-  "build": function () { },
-  "built": function () { },
-  "calculateLosses": function () { },
-  "call": function () { },
-  "clearCallHook": function () { },
-  "computeMask": function () { },
-  "computeOutputShape": function () { },
-  "constructor": function () { },
-  "countParams": function () { },
-  "dispose": function () { },
-  "disposeWeights": function () { },
-  "getClassName": function () { },
-  "getConfig": function () { },
-  "getInputAt": function () { },
-  "getNodeAtIndex": function () { },
-  "getOutputAt": function () { },
-  "getWeights": function () { },
-  "input": function () { },
-  "invokeCallHook": function () { },
-  "losses": function () { },
-  "nonTrainableWeights": function () { },
-  "output": function () { },
-  "outputShape": function () { },
-  "resetStates": function () { },
-  "setCallHook": function () { },
-  "setFastWeightInitDuringBuild": function () { },
-  "setWeights": function () { },
-  "stateful": function () { },
-  "trainable": function () { },
-  "trainableWeights": function () { },
-  "updates": function () { },
-  "warnOnIncompatibleInputShape": function () { },
-  "weights": function () { }
-};
-tf.environment.ENV.global.tf.serialization.Serializable.prototype = {
-  "getClassName": function () { }
-};
-tf.environment.ENV.global.tf.webgl.GPGPUContext.prototype = {
-  "addItemToPoll": function () { },
-  "beginQuery": function () { },
-  "bindTextureToFrameBuffer": function () { },
-  "blockUntilAllProgramsCompleted": function () { },
-  "createAndWaitForFence": function () { },
-  "createBufferFromTexture": function () { },
-  "createFence": function () { },
-  "createFloat16MatrixTexture": function () { },
-  "createFloat16PackedMatrixTexture": function () { },
-  "createFloat32MatrixTexture": function () { },
-  "createPackedMatrixTexture": function () { },
-  "createProgram": function () { },
-  "createUnsignedBytesMatrixTexture": function () { },
-  "debug": function () { },
-  "debugValidate": function () { },
-  "deleteMatrixTexture": function () { },
-  "deleteProgram": function () { },
-  "dispose": function () { },
-  "downloadByteEncodedFloatMatrixFromOutputTexture": function () { },
-  "downloadFloat32MatrixFromBuffer": function () { },
-  "downloadMatrixDriver": function () { },
-  "downloadMatrixFromPackedTexture": function () { },
-  "downloadPackedMatrixFromBuffer": function () { },
-  "endQuery": function () { },
-  "executeProgram": function () { },
-  "getAttributeLocation": function () { },
-  "getQueryTime": function () { },
-  "getQueryTimerExtension": function () { },
-  "getQueryTimerExtensionWebGL1": function () { },
-  "getQueryTimerExtensionWebGL2": function () { },
-  "getUniformLocation": function () { },
-  "getUniformLocationNoThrow": function () { },
-  "isQueryAvailable": function () { },
-  "pollFence": function () { },
-  "pollItems": function () { },
-  "setInputMatrixTexture": function () { },
-  "setOutputMatrixTexture": function () { },
-  "setOutputMatrixTextureDriver": function () { },
-  "setOutputMatrixWriteRegion": function () { },
-  "setOutputMatrixWriteRegionDriver": function () { },
-  "setOutputPackedMatrixTexture": function () { },
-  "setOutputPackedMatrixWriteRegion": function () { },
-  "setProgram": function () { },
-  "throwIfDisposed": function () { },
-  "throwIfNoProgram": function () { },
-  "unbindTextureToFrameBuffer": function () { },
-  "uploadDenseMatrixToTexture": function () { },
-  "uploadPixelDataToTexture": function () { },
-  "waitForQueryAndGetTime": function () { }
-};
-tf.environment.ENV.global.tf.webgl.MathBackendWebGL.prototype = {
-  "LRNGrad": function () { },
-  "abs": function () { },
-  "acos": function () { },
-  "acosh": function () { },
-  "acquireTexture": function () { },
-  "add": function () { },
-  "addN": function () { },
-  "all": function () { },
-  "any": function () { },
-  "argMax": function () { },
-  "argMin": function () { },
-  "argMinMaxReduce": function () { },
-  "argReduce": function () { },
-  "argReducePacked": function () { },
-  "asin": function () { },
-  "asinh": function () { },
-  "atan": function () { },
-  "atan2": function () { },
-  "atanh": function () { },
-  "avgPool": function () { },
-  "avgPool3d": function () { },
-  "avgPool3dBackprop": function () { },
-  "avgPoolBackprop": function () { },
-  "batchMatMul": function () { },
-  "batchNormalization": function () { },
-  "batchToSpaceND": function () { },
-  "cast": function () { },
-  "ceil": function () { },
-  "clip": function () { },
-  "compileAndRun": function () { },
-  "complex": function () { },
-  "complexAbs": function () { },
-  "complexSeparableBinaryOp": function () { },
-  "computeBytes": function () { },
-  "concat": function () { },
-  "conv2d": function () { },
-  "conv2dByMatMul": function () { },
-  "conv2dDerFilter": function () { },
-  "conv2dDerInput": function () { },
-  "conv2dWithIm2Row": function () { },
-  "conv3d": function () { },
-  "conv3dDerFilter": function () { },
-  "conv3dDerInput": function () { },
-  "convertAndCacheOnCPU": function () { },
-  "cos": function () { },
-  "cosh": function () { },
-  "cropAndResize": function () { },
-  "cumsum": function () { },
-  "decode": function () { },
-  "depthToSpace": function () { },
-  "depthwiseConv2D": function () { },
-  "depthwiseConv2DDerFilter": function () { },
-  "depthwiseConv2DDerInput": function () { },
-  "diag": function () { },
-  "dispose": function () { },
-  "disposeData": function () { },
-  "elu": function () { },
-  "eluDer": function () { },
-  "endTimer": function () { },
-  "epsilon": function () { },
-  "equal": function () { },
-  "erf": function () { },
-  "exp": function () { },
-  "expm1": function () { },
-  "fft": function () { },
-  "fftImpl": function () { },
-  "fill": function () { },
-  "floatPrecision": function () { },
-  "floor": function () { },
-  "floorDiv": function () { },
-  "fromPixels": function () { },
-  "fusedBatchMatMul": function () { },
-  "fusedConv2d": function () { },
-  "gather": function () { },
-  "gatherND": function () { },
-  "getAndSaveBinary": function () { },
-  "getCPUBackend": function () { },
-  "getDataInfo": function () { },
-  "getGPGPUContext": function () { },
-  "getQueryTime": function () { },
-  "getTexture": function () { },
-  "getTextureManager": function () { },
-  "getValuesFromTexture": function () { },
-  "greater": function () { },
-  "greaterEqual": function () { },
-  "ifft": function () { },
-  "imag": function () { },
-  "int": function () { },
-  "isFinite": function () { },
-  "isInf": function () { },
-  "isNaN": function () { },
-  "less": function () { },
-  "lessEqual": function () { },
-  "linspace": function () { },
-  "localResponseNormalization4D": function () { },
-  "log": function () { },
-  "log1p": function () { },
-  "logicalAnd": function () { },
-  "logicalNot": function () { },
-  "logicalOr": function () { },
-  "makeComplexComponentTensorHandle": function () { },
-  "makeOutputArray": function () { },
-  "makePackedTensor": function () { },
-  "makeTensorHandle": function () { },
-  "max": function () { },
-  "maxPool": function () { },
-  "maxPool3d": function () { },
-  "maxPool3dBackprop": function () { },
-  "maxPoolBackprop": function () { },
-  "maximum": function () { },
-  "memory": function () { },
-  "min": function () { },
-  "minimum": function () { },
-  "mod": function () { },
-  "multinomial": function () { },
-  "multiply": function () { },
-  "neg": function () { },
-  "nonMaxSuppression": function () { },
-  "notEqual": function () { },
-  "oneHot": function () { },
-  "onesLike": function () { },
-  "packTensor": function () { },
-  "packedBinaryOp": function () { },
-  "packedReshape": function () { },
-  "packedUnaryOp": function () { },
-  "pad": function () { },
-  "pow": function () { },
-  "prelu": function () { },
-  "prod": function () { },
-  "read": function () { },
-  "readSync": function () { },
-  "real": function () { },
-  "realDivide": function () { },
-  "reciprocal": function () { },
-  "reduce": function () { },
-  "register": function () { },
-  "releaseGPUData": function () { },
-  "relu": function () { },
-  "reshape": function () { },
-  "resizeBilinear": function () { },
-  "resizeBilinearBackprop": function () { },
-  "resizeNearestNeighbor": function () { },
-  "resizeNearestNeighborBackprop": function () { },
-  "reverse": function () { },
-  "round": function () { },
-  "rsqrt": function () { },
-  "scatterND": function () { },
-  "segOpCompute": function () { },
-  "select": function () { },
-  "selu": function () { },
-  "shallowSlice": function () { },
-  "shouldExecuteOnCPU": function () { },
-  "sigmoid": function () { },
-  "sign": function () { },
-  "sin": function () { },
-  "sinh": function () { },
-  "slice": function () { },
-  "softplus": function () { },
-  "spaceToBatchND": function () { },
-  "sparseToDense": function () { },
-  "split": function () { },
-  "sqrt": function () { },
-  "square": function () { },
-  "squaredDifference": function () { },
-  "startTimer": function () { },
-  "step": function () { },
-  "stridedSlice": function () { },
-  "subtract": function () { },
-  "sum": function () { },
-  "tan": function () { },
-  "tanh": function () { },
-  "tile": function () { },
-  "time": function () { },
-  "topk": function () { },
-  "transpose": function () { },
-  "unpackTensor": function () { },
-  "unsortedSegmentSum": function () { },
-  "unstack": function () { },
-  "uploadToGPU": function () { },
-  "where": function () { },
-  "write": function () { },
-  "zerosLike": function () { }
-};
-tf.environment.ENV.global.top.React.Component.prototype = {
-  "forceUpdate": function () { },
-  "isReactComponent": function () { },
-  "setState": function () { }
-};
-tf.environment.ENV.global.top.React.PureComponent.prototype = {
-  "constructor": function () { },
-  "forceUpdate": function () { },
-  "isPureReactComponent": function () { },
-  "isReactComponent": function () { },
-  "setState": function () { }
-};
-tf.environment.Environment.prototype = {
-  "evaluateFlag": function () { },
-  "features": function () { },
-  "get": function () { },
-  "getBool": function () { },
-  "getFlags": function () { },
-  "getNumber": function () { },
-  "populateURLFlags": function () { },
-  "registerFlag": function () { },
-  "reset": function () { },
-  "set": function () { },
-  "setFlags": function () { },
-  "setPlatform": function () { }
 };
 tf.layers.Layer.prototype = {
   "addInboundNode": function () { },
@@ -31955,6 +13659,7 @@ tf.webgl.MathBackendWebGL.prototype = {
   "batchToSpaceND": function () { },
   "cast": function () { },
   "ceil": function () { },
+  "checkNumericalProblems": function () { },
   "clip": function () { },
   "compileAndRun": function () { },
   "complex": function () { },
@@ -31962,6 +13667,7 @@ tf.webgl.MathBackendWebGL.prototype = {
   "complexSeparableBinaryOp": function () { },
   "computeBytes": function () { },
   "concat": function () { },
+  "constructor": function () { },
   "conv2d": function () { },
   "conv2dByMatMul": function () { },
   "conv2dDerFilter": function () { },
@@ -31997,9 +13703,9 @@ tf.webgl.MathBackendWebGL.prototype = {
   "floatPrecision": function () { },
   "floor": function () { },
   "floorDiv": function () { },
-  "fromPixels": function () { },
   "fusedBatchMatMul": function () { },
   "fusedConv2d": function () { },
+  "fusedDepthwiseConv2D": function () { },
   "gather": function () { },
   "gatherND": function () { },
   "getAndSaveBinary": function () { },
@@ -32027,10 +13733,9 @@ tf.webgl.MathBackendWebGL.prototype = {
   "logicalAnd": function () { },
   "logicalNot": function () { },
   "logicalOr": function () { },
-  "makeComplexComponentTensorHandle": function () { },
-  "makeOutputArray": function () { },
-  "makePackedTensor": function () { },
-  "makeTensorHandle": function () { },
+  "makeComplexComponentTensorInfo": function () { },
+  "makeOutput": function () { },
+  "makeTensorInfo": function () { },
   "max": function () { },
   "maxPool": function () { },
   "maxPool3d": function () { },
@@ -32041,11 +13746,13 @@ tf.webgl.MathBackendWebGL.prototype = {
   "min": function () { },
   "minimum": function () { },
   "mod": function () { },
+  "move": function () { },
   "multinomial": function () { },
   "multiply": function () { },
   "neg": function () { },
   "nonMaxSuppression": function () { },
   "notEqual": function () { },
+  "numDataIds": function () { },
   "oneHot": function () { },
   "onesLike": function () { },
   "packTensor": function () { },
@@ -32062,9 +13769,9 @@ tf.webgl.MathBackendWebGL.prototype = {
   "realDivide": function () { },
   "reciprocal": function () { },
   "reduce": function () { },
-  "register": function () { },
   "releaseGPUData": function () { },
   "relu": function () { },
+  "relu6": function () { },
   "reshape": function () { },
   "resizeBilinear": function () { },
   "resizeBilinearBackprop": function () { },
@@ -32073,6 +13780,7 @@ tf.webgl.MathBackendWebGL.prototype = {
   "reverse": function () { },
   "round": function () { },
   "rsqrt": function () { },
+  "runWebGLProgram": function () { },
   "scatterND": function () { },
   "segOpCompute": function () { },
   "select": function () { },
