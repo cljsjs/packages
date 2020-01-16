@@ -330,6 +330,7 @@ echarts.Axis.prototype = {
   "getBandWidth": function () { },
   "getExtent": function () { },
   "getLabelModel": function () { },
+  "getMinorTicksCoords": function () { },
   "getPixelPrecision": function () { },
   "getRotate": function () { },
   "getTickModel": function () { },
@@ -400,7 +401,7 @@ echarts.List.prototype = {
   "wrapMethod": function () { }
 };
 echarts.Model.prototype = {
-  "__is_clz_0_0.168": function () { },
+  "__is_clz_0_0.596": function () { },
   "clone": function () { },
   "constructor": function () { },
   "customizeGetParent": function () { },
