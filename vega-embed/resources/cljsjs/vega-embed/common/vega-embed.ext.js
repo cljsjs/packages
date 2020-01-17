@@ -45,6 +45,7 @@ var vegaEmbed = {
         "attr": function () {},
         "background": function () {},
         "bound": function () {},
+        "content": function () {},
         "draw": function () {},
         "foreground": function () {},
         "isect": function () {},
@@ -176,6 +177,7 @@ var vegaEmbed = {
     "accessorFields": function () {},
     "accessorName": function () {},
     "array": function () {},
+    "bandwidthNRD": function () {},
     "bin": function () {},
     "bootstrapCI": function () {},
     "boundClip": function () {},
@@ -197,12 +199,19 @@ var vegaEmbed = {
     "closeTag": function () {},
     "compare": function () {},
     "constant": function () {},
+    "cumulativeLogNormal": function () {},
+    "cumulativeNormal": function () {},
+    "cumulativeUniform": function () {},
     "debounce": function () {},
     "definition": function () {},
+    "densityLogNormal": function () {},
+    "densityNormal": function () {},
+    "densityUniform": function () {},
     "domChild": function () {},
     "domClear": function () {},
     "domCreate": function () {},
     "domFind": function () {},
+    "dotbin": function () {},
     "error": function () {},
     "expressionFunction": function () {},
     "extend": function () {},
@@ -237,6 +246,7 @@ var vegaEmbed = {
     },
     "formatLocale": function () {},
     "formats": function () {},
+    "hasOwnProperty": function () {},
     "id": {
       "fields": {},
       "fname": {}
@@ -269,9 +279,12 @@ var vegaEmbed = {
     "isTuple": function () {},
     "key": function () {},
     "lerp": function () {},
+    "lineHeight": function () {},
     "loader": function () {},
     "logger": function () {},
     "merge": function () {},
+    "mergeConfig": function () {},
+    "multiLineOffset": function () {},
     "one": {
       "fields": {},
       "fname": {}
@@ -293,6 +306,10 @@ var vegaEmbed = {
     "peek": function () {},
     "point": function () {},
     "projection": function () {},
+    "quantileLogNormal": function () {},
+    "quantileNormal": function () {},
+    "quantileUniform": function () {},
+    "quantiles": function () {},
     "quantizeInterpolator": function () {},
     "quarter": function () {},
     "quartiles": function () {},
@@ -300,6 +317,7 @@ var vegaEmbed = {
     "randomInteger": function () {},
     "randomKDE": function () {},
     "randomLCG": function () {},
+    "randomLogNormal": function () {},
     "randomMixture": function () {},
     "randomNormal": function () {},
     "randomUniform": function () {},
@@ -318,6 +336,9 @@ var vegaEmbed = {
     "runtime": function () {},
     "runtimeContext": function () {},
     "sampleCurve": function () {},
+    "sampleLogNormal": function () {},
+    "sampleNormal": function () {},
+    "sampleUniform": function () {},
     "scale": function () {},
     "sceneEqual": function () {},
     "sceneFromJSON": function () {},
@@ -337,8 +358,15 @@ var vegaEmbed = {
       "measureWidth": function () {},
       "width": function () {}
     },
+    "timeBin": function () {},
+    "timeFloor": function () {},
+    "timeFormat": function () {},
     "timeFormatLocale": function () {},
     "timeInterval": function () {},
+    "timeOffset": function () {},
+    "timeSequence": function () {},
+    "timeUnitSpecifier": function () {},
+    "timeUnits": function () {},
     "toBoolean": function () {},
     "toDate": function () {},
     "toNumber": function () {},
@@ -417,6 +445,15 @@ var vegaEmbed = {
         "Definition": {
           "metadata": {
             "generates": {}
+          },
+          "params": {},
+          "type": {}
+        }
+      },
+      "dotbin": {
+        "Definition": {
+          "metadata": {
+            "modifies": {}
           },
           "params": {},
           "type": {}
@@ -517,7 +554,17 @@ var vegaEmbed = {
       "graticule": {
         "Definition": {
           "metadata": {
-            "changes": {}
+            "changes": {},
+            "generates": {}
+          },
+          "params": {},
+          "type": {}
+        }
+      },
+      "heatmap": {
+        "Definition": {
+          "metadata": {
+            "modifies": {}
           },
           "params": {},
           "type": {}
@@ -541,6 +588,15 @@ var vegaEmbed = {
           "type": {}
         }
       },
+      "isocontour": {
+        "Definition": {
+          "metadata": {
+            "generates": {}
+          },
+          "params": {},
+          "type": {}
+        }
+      },
       "joinaggregate": {
         "Definition": {
           "metadata": {
@@ -551,6 +607,15 @@ var vegaEmbed = {
         }
       },
       "kde": {
+        "Definition": {
+          "metadata": {
+            "generates": {}
+          },
+          "params": {},
+          "type": {}
+        }
+      },
+      "kde2d": {
         "Definition": {
           "metadata": {
             "generates": {}
@@ -656,6 +721,16 @@ var vegaEmbed = {
       },
       "projection": function () {},
       "proxy": function () {},
+      "quantile": {
+        "Definition": {
+          "metadata": {
+            "changes": {},
+            "generates": {}
+          },
+          "params": {},
+          "type": {}
+        }
+      },
       "regression": {
         "Definition": {
           "metadata": {
@@ -685,7 +760,8 @@ var vegaEmbed = {
       "sequence": {
         "Definition": {
           "metadata": {
-            "changes": {}
+            "changes": {},
+            "generates": {}
           },
           "params": {},
           "type": {}
@@ -712,6 +788,15 @@ var vegaEmbed = {
         }
       },
       "subflow": function () {},
+      "timeunit": {
+        "Definition": {
+          "metadata": {
+            "modifies": {}
+          },
+          "params": {},
+          "type": {}
+        }
+      },
       "tree": {
         "Definition": {
           "metadata": {
@@ -792,9 +877,15 @@ var vegaEmbed = {
         "fname": {}
       }
     },
+    "utcFloor": function () {},
+    "utcFormat": function () {},
+    "utcInterval": function () {},
+    "utcOffset": function () {},
+    "utcSequence": function () {},
     "utcquarter": function () {},
     "version": {},
     "visitArray": function () {},
+    "writeConfig": function () {},
     "zero": {
       "fields": {},
       "fname": {}
@@ -803,6 +894,12 @@ var vegaEmbed = {
     "zoomLog": function () {},
     "zoomPow": function () {},
     "zoomSymlog": function () {}
+  },
+  "vegaLite": {
+    "compile": function () {},
+    "extractTransforms": function () {},
+    "normalize": function () {},
+    "version": {}
   },
   "version": {},
   "vl": {
@@ -1342,6 +1439,18 @@ vegaEmbed.vega.transforms.density.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
+vegaEmbed.vega.transforms.dotbin.prototype = {
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
+};
 vegaEmbed.vega.transforms.encode.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
@@ -1535,6 +1644,18 @@ vegaEmbed.vega.transforms.graticule.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
+vegaEmbed.vega.transforms.heatmap.prototype = {
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
+};
 vegaEmbed.vega.transforms.identifier.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
@@ -1548,6 +1669,18 @@ vegaEmbed.vega.transforms.identifier.prototype = {
   "transform": function () {}
 };
 vegaEmbed.vega.transforms.impute.prototype = {
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
+};
+vegaEmbed.vega.transforms.isocontour.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1582,6 +1715,18 @@ vegaEmbed.vega.transforms.joinaggregate.prototype = {
   "transform": function () {}
 };
 vegaEmbed.vega.transforms.kde.prototype = {
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
+};
+vegaEmbed.vega.transforms.kde2d.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1849,6 +1994,18 @@ vegaEmbed.vega.transforms.proxy.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
+vegaEmbed.vega.transforms.quantile.prototype = {
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
+};
 vegaEmbed.vega.transforms.regression.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
@@ -1996,6 +2153,19 @@ vegaEmbed.vega.transforms.subflow.prototype = {
   "set": function () {},
   "skip": function () {},
   "targets": function () {}
+};
+vegaEmbed.vega.transforms.timeunit.prototype = {
+  "_floor": function () {},
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
 };
 vegaEmbed.vega.transforms.tree.prototype = {
   "constructor": function () {},

@@ -1,11 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.4" :scope "test"]
-                  [cljsjs/vega "5.4.0-0"]])
+  :dependencies '[[org.clojure/clojurescript "1.10.597"]
+                  [cljsjs/boot-cljsjs "0.10.4" :scope "test"]
+                  [cljsjs/vega "5.9.0-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.18.1")
+(def +lib-version+ "0.20.0")
 
 (def +version+ (str +lib-version+ "-0"))
 
@@ -21,10 +22,10 @@
   (comp
     (download
      :url (format "https://unpkg.com/vega-tooltip@%s/build/vega-tooltip.js" +lib-version+)
-     :checksum "98a04b89eb46785e97f3ffe7d17d7138")
+     :checksum "113b66b7a0576c439427741c0fcc62df")
     (download
      :url (format "https://unpkg.com/vega-tooltip@%s/build/vega-tooltip.min.js" +lib-version+)
-     :checksum "cfd3d20bcb0fd915158904fd91566d0e")
+     :checksum "0821e5537771c8e6eb745f2dacce4b7b")
     (sift :move {#".*vega-tooltip\.js$"      "cljsjs/vega-tooltip/development/vega-tooltip.inc.js"})
     (sift :move {#".*vega-tooltip\.min\.js$" "cljsjs/vega-tooltip/production/vega-tooltip.min.inc.js"})
     (sift :include #{#"^cljsjs"})
