@@ -41,6 +41,7 @@ var vega = {
       "attr": function () {},
       "background": function () {},
       "bound": function () {},
+      "content": function () {},
       "draw": function () {},
       "foreground": function () {},
       "isect": function () {},
@@ -172,6 +173,7 @@ var vega = {
   "accessorFields": function () {},
   "accessorName": function () {},
   "array": function () {},
+  "bandwidthNRD": function () {},
   "bin": function () {},
   "bootstrapCI": function () {},
   "boundClip": function () {},
@@ -193,12 +195,19 @@ var vega = {
   "closeTag": function () {},
   "compare": function () {},
   "constant": function () {},
+  "cumulativeLogNormal": function () {},
+  "cumulativeNormal": function () {},
+  "cumulativeUniform": function () {},
   "debounce": function () {},
   "definition": function () {},
+  "densityLogNormal": function () {},
+  "densityNormal": function () {},
+  "densityUniform": function () {},
   "domChild": function () {},
   "domClear": function () {},
   "domCreate": function () {},
   "domFind": function () {},
+  "dotbin": function () {},
   "error": function () {},
   "expressionFunction": function () {},
   "extend": function () {},
@@ -233,6 +242,7 @@ var vega = {
   },
   "formatLocale": function () {},
   "formats": function () {},
+  "hasOwnProperty": function () {},
   "id": {
     "fields": {},
     "fname": {}
@@ -265,9 +275,12 @@ var vega = {
   "isTuple": function () {},
   "key": function () {},
   "lerp": function () {},
+  "lineHeight": function () {},
   "loader": function () {},
   "logger": function () {},
   "merge": function () {},
+  "mergeConfig": function () {},
+  "multiLineOffset": function () {},
   "one": {
     "fields": {},
     "fname": {}
@@ -289,6 +302,10 @@ var vega = {
   "peek": function () {},
   "point": function () {},
   "projection": function () {},
+  "quantileLogNormal": function () {},
+  "quantileNormal": function () {},
+  "quantileUniform": function () {},
+  "quantiles": function () {},
   "quantizeInterpolator": function () {},
   "quarter": function () {},
   "quartiles": function () {},
@@ -296,6 +313,7 @@ var vega = {
   "randomInteger": function () {},
   "randomKDE": function () {},
   "randomLCG": function () {},
+  "randomLogNormal": function () {},
   "randomMixture": function () {},
   "randomNormal": function () {},
   "randomUniform": function () {},
@@ -314,6 +332,9 @@ var vega = {
   "runtime": function () {},
   "runtimeContext": function () {},
   "sampleCurve": function () {},
+  "sampleLogNormal": function () {},
+  "sampleNormal": function () {},
+  "sampleUniform": function () {},
   "scale": function () {},
   "sceneEqual": function () {},
   "sceneFromJSON": function () {},
@@ -333,8 +354,15 @@ var vega = {
     "measureWidth": function () {},
     "width": function () {}
   },
+  "timeBin": function () {},
+  "timeFloor": function () {},
+  "timeFormat": function () {},
   "timeFormatLocale": function () {},
   "timeInterval": function () {},
+  "timeOffset": function () {},
+  "timeSequence": function () {},
+  "timeUnitSpecifier": function () {},
+  "timeUnits": function () {},
   "toBoolean": function () {},
   "toDate": function () {},
   "toNumber": function () {},
@@ -413,6 +441,15 @@ var vega = {
       "Definition": {
         "metadata": {
           "generates": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "dotbin": {
+      "Definition": {
+        "metadata": {
+          "modifies": {}
         },
         "params": {},
         "type": {}
@@ -513,7 +550,17 @@ var vega = {
     "graticule": {
       "Definition": {
         "metadata": {
-          "changes": {}
+          "changes": {},
+          "generates": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "heatmap": {
+      "Definition": {
+        "metadata": {
+          "modifies": {}
         },
         "params": {},
         "type": {}
@@ -537,6 +584,15 @@ var vega = {
         "type": {}
       }
     },
+    "isocontour": {
+      "Definition": {
+        "metadata": {
+          "generates": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
     "joinaggregate": {
       "Definition": {
         "metadata": {
@@ -547,6 +603,15 @@ var vega = {
       }
     },
     "kde": {
+      "Definition": {
+        "metadata": {
+          "generates": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
+    "kde2d": {
       "Definition": {
         "metadata": {
           "generates": {}
@@ -652,6 +717,16 @@ var vega = {
     },
     "projection": function () {},
     "proxy": function () {},
+    "quantile": {
+      "Definition": {
+        "metadata": {
+          "changes": {},
+          "generates": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
     "regression": {
       "Definition": {
         "metadata": {
@@ -681,7 +756,8 @@ var vega = {
     "sequence": {
       "Definition": {
         "metadata": {
-          "changes": {}
+          "changes": {},
+          "generates": {}
         },
         "params": {},
         "type": {}
@@ -708,6 +784,15 @@ var vega = {
       }
     },
     "subflow": function () {},
+    "timeunit": {
+      "Definition": {
+        "metadata": {
+          "modifies": {}
+        },
+        "params": {},
+        "type": {}
+      }
+    },
     "tree": {
       "Definition": {
         "metadata": {
@@ -788,9 +873,15 @@ var vega = {
       "fname": {}
     }
   },
+  "utcFloor": function () {},
+  "utcFormat": function () {},
+  "utcInterval": function () {},
+  "utcOffset": function () {},
+  "utcSequence": function () {},
   "utcquarter": function () {},
   "version": {},
   "visitArray": function () {},
+  "writeConfig": function () {},
   "zero": {
     "fields": {},
     "fname": {}
@@ -1330,6 +1421,18 @@ vega.transforms.density.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
+vega.transforms.dotbin.prototype = {
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
+};
 vega.transforms.encode.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
@@ -1523,6 +1626,18 @@ vega.transforms.graticule.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
+vega.transforms.heatmap.prototype = {
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
+};
 vega.transforms.identifier.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
@@ -1536,6 +1651,18 @@ vega.transforms.identifier.prototype = {
   "transform": function () {}
 };
 vega.transforms.impute.prototype = {
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
+};
+vega.transforms.isocontour.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1570,6 +1697,18 @@ vega.transforms.joinaggregate.prototype = {
   "transform": function () {}
 };
 vega.transforms.kde.prototype = {
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
+};
+vega.transforms.kde2d.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
   "marshall": function () {},
@@ -1837,6 +1976,18 @@ vega.transforms.proxy.prototype = {
   "targets": function () {},
   "transform": function () {}
 };
+vega.transforms.quantile.prototype = {
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
+};
 vega.transforms.regression.prototype = {
   "constructor": function () {},
   "evaluate": function () {},
@@ -1984,6 +2135,19 @@ vega.transforms.subflow.prototype = {
   "set": function () {},
   "skip": function () {},
   "targets": function () {}
+};
+vega.transforms.timeunit.prototype = {
+  "_floor": function () {},
+  "constructor": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
 };
 vega.transforms.tree.prototype = {
   "constructor": function () {},
