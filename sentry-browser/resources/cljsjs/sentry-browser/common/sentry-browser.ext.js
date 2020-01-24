@@ -7,7 +7,6 @@ var Sentry = {
   "Hub": function () {},
   "Integrations": {
     "Breadcrumbs": {
-      "addBreadcrumb": function () {},
       "id": {}
     },
     "FunctionToString": {
@@ -43,9 +42,6 @@ var Sentry = {
     "Log": {},
     "Warning": {},
     "fromString": function () {}
-  },
-  "Span": {
-    "fromTraceparent": function () {}
   },
   "Status": {
     "Failed": {},
@@ -87,27 +83,28 @@ var Sentry = {
   "wrap": function () {}
 };
 Sentry.BrowserClient.prototype = {
-  "_addIntegrations": function () {},
-  "_getBackend": function () {},
-  "_handleAsyncBeforeSend": function () {},
-  "_isClientProcessing": function () {},
-  "_isEnabled": function () {},
-  "_prepareEvent": function () {},
-  "_processEvent": function () {},
+  "an": function () {},
   "captureEvent": function () {},
   "captureException": function () {},
   "captureMessage": function () {},
   "close": function () {},
+  "cn": function () {},
   "constructor": function () {},
   "flush": function () {},
+  "fn": function () {},
   "getDsn": function () {},
   "getIntegration": function () {},
   "getIntegrations": function () {},
   "getOptions": function () {},
-  "showReportDialog": function () {}
+  "in": function () {},
+  "on": function () {},
+  "showReportDialog": function () {},
+  "sn": function () {},
+  "un": function () {}
 };
 Sentry.Hub.prototype = {
-  "_invokeClient": function () {},
+  "G": function () {},
+  "V": function () {},
   "addBreadcrumb": function () {},
   "bindClient": function () {},
   "captureEvent": function () {},
@@ -130,54 +127,58 @@ Sentry.Hub.prototype = {
   "setTag": function () {},
   "setTags": function () {},
   "setUser": function () {},
+  "startSpan": function () {},
   "traceHeaders": function () {},
   "withScope": function () {}
 };
 Sentry.Integrations.Breadcrumbs.prototype = {
-  "_instrumentConsole": function () {},
-  "_instrumentDOM": function () {},
-  "_instrumentFetch": function () {},
-  "_instrumentHistory": function () {},
-  "_instrumentXHR": function () {},
+  "Fn": function () {},
+  "Hn": function () {},
+  "Ln": function () {},
+  "Pn": function () {},
+  "qn": function () {},
   "setupOnce": function () {}
 };
 Sentry.Integrations.FunctionToString.prototype = {
   "setupOnce": function () {}
 };
 Sentry.Integrations.GlobalHandlers.prototype = {
-  "_eventFromGlobalHandler": function () {},
-  "_eventFromIncompleteRejection": function () {},
+  "Dn": function () {},
+  "Nn": function () {},
+  "On": function () {},
+  "Rn": function () {},
+  "Tn": function () {},
   "setupOnce": function () {}
 };
 Sentry.Integrations.InboundFilters.prototype = {
-  "_getEventFilterUrl": function () {},
-  "_getPossibleEventMessages": function () {},
-  "_isBlacklistedUrl": function () {},
-  "_isIgnoredError": function () {},
-  "_isSentryError": function () {},
-  "_isWhitelistedUrl": function () {},
-  "_mergeOptions": function () {},
-  "_shouldDropEvent": function () {},
-  "setupOnce": function () {}
+  "bn": function () {},
+  "dn": function () {},
+  "gn": function () {},
+  "ln": function () {},
+  "mn": function () {},
+  "pn": function () {},
+  "setupOnce": function () {},
+  "wn": function () {},
+  "yn": function () {}
 };
 Sentry.Integrations.LinkedErrors.prototype = {
-  "_handler": function () {},
-  "_walkErrorTree": function () {},
+  "Bn": function () {},
+  "Xn": function () {},
   "setupOnce": function () {}
 };
 Sentry.Integrations.TryCatch.prototype = {
-  "_wrapEventTarget": function () {},
-  "_wrapRAF": function () {},
-  "_wrapTimeFunction": function () {},
+  "An": function () {},
+  "Cn": function () {},
+  "Mn": function () {},
+  "Un": function () {},
   "setupOnce": function () {}
 };
 Sentry.Integrations.UserAgent.prototype = {
   "setupOnce": function () {}
 };
 Sentry.Scope.prototype = {
-  "_applyFingerprint": function () {},
-  "_notifyEventProcessors": function () {},
-  "_notifyScopeListeners": function () {},
+  "L": function () {},
+  "X": function () {},
   "addBreadcrumb": function () {},
   "addEventProcessor": function () {},
   "addScopeListener": function () {},
@@ -185,6 +186,7 @@ Sentry.Scope.prototype = {
   "clear": function () {},
   "clearBreadcrumbs": function () {},
   "getSpan": function () {},
+  "q": function () {},
   "setContext": function () {},
   "setExtra": function () {},
   "setExtras": function () {},
@@ -194,14 +196,7 @@ Sentry.Scope.prototype = {
   "setTag": function () {},
   "setTags": function () {},
   "setTransaction": function () {},
-  "setUser": function () {},
-  "startSpan": function () {}
-};
-Sentry.Span.prototype = {
-  "setParent": function () {},
-  "setSampled": function () {},
-  "toJSON": function () {},
-  "toTraceparent": function () {}
+  "setUser": function () {}
 };
 Sentry.Transports.BaseTransport.prototype = {
   "close": function () {},
