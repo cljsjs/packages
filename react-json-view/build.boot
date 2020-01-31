@@ -1,7 +1,7 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[org.clojure/clojure "1.9.0" :scope "provided"]
-                  [cljsjs/boot-cljsjs "0.10.4" :scope "test"]])
+                  [cljsjs/boot-cljsjs "0.10.5" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 

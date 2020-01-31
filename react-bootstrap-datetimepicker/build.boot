@@ -1,6 +1,6 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.4" :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.5" :scope "test"]
                   [cljsjs/moment "2.10.6-2"]
                   [cljsjs/react-bootstrap "0.28.1-1"]])
 

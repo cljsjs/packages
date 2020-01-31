@@ -3,7 +3,7 @@
 
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.4" :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.5" :scope "test"]
                   [cljsjs/emotion "10.0.6-0"]
                   [cljsjs/react "16.9.0-0"]
                   [cljsjs/react-dom "16.9.0-0"]])
