@@ -5,7 +5,7 @@ https://github.com/ricardo-ch/react-easy-crop
 
 [](dependency)
 ```clojure
-[cljsjs/react-easy-crop "1.14.0-0"] ;; latest release
+[cljsjs/react-easy-crop "1.17.1-0"] ;; latest release
 ```
 [](/dependency)
 
