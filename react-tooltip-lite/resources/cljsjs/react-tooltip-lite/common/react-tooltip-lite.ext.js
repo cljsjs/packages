@@ -19,91 +19,99 @@ var ReactToolTipLite = {
       "hoverDelay": {},
       "isOpen": {},
       "mouseOutDelay": {},
+      "onToggle": {},
       "padding": {},
       "styles": {},
       "tagName": {},
       "tipContentClassName": {},
       "tipContentHover": {},
       "useDefaultStyles": {},
-      "useHover": {}
+      "useHover": {},
+      "zIndex": {}
     },
     "propTypes": {
       "arrow": {
-        "isRequired": function () { }
+        "isRequired": function () {}
       },
       "arrowSize": {
-        "isRequired": function () { }
+        "isRequired": function () {}
       },
       "background": {
-        "isRequired": function () { }
+        "isRequired": function () {}
       },
       "children": {
-        "isRequired": function () { }
+        "isRequired": function () {}
       },
       "className": {
-        "isRequired": function () { }
+        "isRequired": function () {}
       },
       "color": {
-        "isRequired": function () { }
+        "isRequired": function () {}
       },
       "content": {
-        "isRequired": function () { }
+        "isRequired": function () {}
       },
       "direction": {
-        "isRequired": function () { }
+        "isRequired": function () {}
       },
       "distance": {
-        "isRequired": function () { }
+        "isRequired": function () {}
       },
       "eventOff": {
-        "isRequired": function () { }
+        "isRequired": function () {}
       },
       "eventOn": {
-        "isRequired": function () { }
+        "isRequired": function () {}
       },
       "eventToggle": {
-        "isRequired": function () { }
+        "isRequired": function () {}
       },
       "forceDirection": {
-        "isRequired": function () { }
+        "isRequired": function () {}
       },
       "hoverDelay": {
-        "isRequired": function () { }
+        "isRequired": function () {}
       },
       "isOpen": {
-        "isRequired": function () { }
+        "isRequired": function () {}
       },
       "mouseOutDelay": {
-        "isRequired": function () { }
+        "isRequired": function () {}
+      },
+      "onToggle": {
+        "isRequired": function () {}
       },
       "padding": {
-        "isRequired": function () { }
+        "isRequired": function () {}
       },
       "styles": {
-        "isRequired": function () { }
+        "isRequired": function () {}
       },
       "tagName": {
-        "isRequired": function () { }
+        "isRequired": function () {}
       },
       "tipContentClassName": {
-        "isRequired": function () { }
+        "isRequired": function () {}
       },
       "tipContentHover": {
-        "isRequired": function () { }
+        "isRequired": function () {}
       },
       "useDefaultStyles": {
-        "isRequired": function () { }
+        "isRequired": function () {}
       },
       "useHover": {
-        "isRequired": function () { }
+        "isRequired": function () {}
+      },
+      "zIndex": {
+        "isRequired": function () {}
       }
     }
   }
 };
 ReactToolTipLite.default.prototype = {
-  "forceUpdate": function () { },
-  "isReactComponent": function () { },
-  "setState": function () { }
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
 };
 /**********************************************************************
  * End Generated Extern for ReactToolTipLite
