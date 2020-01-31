@@ -1,0 +1,18 @@
+{
+    "name": "@cljsjs/blueprintjs-datetime-bundle",
+    "private": true,
+    "scripts": {
+        "build:dev": "webpack --mode development",
+        "build:prod": "webpack --mode production --output-filename blueprintjs-datetime.min.inc.js"
+    },
+    "dependencies": {
+        "@blueprintjs/datetime": "3.15.1"
+    },
+    "devDependencies": {
+        "webpack": "4.41.5",
+        "webpack-command": "0.5.0",
+        "react": "*",
+        "react-dom": "*",
+        "tslib": "~1.9.0"
+    }
+}
