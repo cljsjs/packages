@@ -7,42 +7,42 @@ var neo4j = {
     "stackTraceLimit": {}
   },
   "auth": {
-    "basic": function () {},
-    "custom": function () {},
-    "kerberos": function () {}
+    "basic": function () { },
+    "custom": function () { },
+    "kerberos": function () { }
   },
   "default": {
     "Neo4jError": {
       "stackTraceLimit": {}
     },
     "auth": {
-      "basic": function () {},
-      "custom": function () {},
-      "kerberos": function () {}
+      "basic": function () { },
+      "custom": function () { },
+      "kerberos": function () { }
     },
-    "driver": function () {},
+    "driver": function () { },
     "error": {
       "PROTOCOL_ERROR": {},
       "SERVICE_UNAVAILABLE": {},
       "SESSION_EXPIRED": {}
     },
-    "int": function () {},
+    "int": function () { },
     "integer": {
-      "inSafeRange": function () {},
-      "toNumber": function () {},
-      "toString": function () {}
+      "inSafeRange": function () { },
+      "toNumber": function () { },
+      "toString": function () { }
     },
-    "isDate": function () {},
-    "isDateTime": function () {},
-    "isDuration": function () {},
-    "isInt": function () {},
-    "isLocalDateTime": function () {},
-    "isLocalTime": function () {},
-    "isPoint": function () {},
-    "isTime": function () {},
+    "isDate": function () { },
+    "isDateTime": function () { },
+    "isDuration": function () { },
+    "isInt": function () { },
+    "isLocalDateTime": function () { },
+    "isLocalTime": function () { },
+    "isPoint": function () { },
+    "isTime": function () { },
     "logging": {
       "console": {
-        "toString": function () {}
+        "toString": function () { }
       }
     },
     "session": {
@@ -50,20 +50,20 @@ var neo4j = {
       "WRITE": {}
     },
     "spatial": {
-      "isPoint": function () {}
+      "isPoint": function () { }
     },
     "temporal": {
-      "isDate": function () {},
-      "isDateTime": function () {},
-      "isDuration": function () {},
-      "isLocalDateTime": function () {},
-      "isLocalTime": function () {},
-      "isTime": function () {}
+      "isDate": function () { },
+      "isDateTime": function () { },
+      "isDuration": function () { },
+      "isLocalDateTime": function () { },
+      "isLocalTime": function () { },
+      "isTime": function () { }
     },
     "types": {
-      "Date": function () {},
-      "DateTime": function () {},
-      "Duration": function () {},
+      "Date": function () { },
+      "DateTime": function () { },
+      "Duration": function () { },
       "Integer": {
         "MAX_SAFE_VALUE": {
           "high": {},
@@ -94,53 +94,53 @@ var neo4j = {
           "low": {}
         },
         "__isInteger__": {},
-        "fromBits": function () {},
-        "fromInt": function () {},
-        "fromNumber": function () {},
-        "fromString": function () {},
-        "fromValue": function () {},
-        "inSafeRange": function () {},
-        "isInteger": function () {},
-        "toNumber": function () {},
-        "toString": function () {}
+        "fromBits": function () { },
+        "fromInt": function () { },
+        "fromNumber": function () { },
+        "fromString": function () { },
+        "fromValue": function () { },
+        "inSafeRange": function () { },
+        "isInteger": function () { },
+        "toNumber": function () { },
+        "toString": function () { }
       },
-      "LocalDateTime": function () {},
-      "LocalTime": function () {},
-      "Node": function () {},
-      "Path": function () {},
-      "PathSegment": function () {},
-      "Point": function () {},
-      "Record": function () {},
-      "Relationship": function () {},
-      "Result": function () {},
-      "ResultSummary": function () {},
-      "Time": function () {},
-      "UnboundRelationship": function () {}
+      "LocalDateTime": function () { },
+      "LocalTime": function () { },
+      "Node": function () { },
+      "Path": function () { },
+      "PathSegment": function () { },
+      "Point": function () { },
+      "Record": function () { },
+      "Relationship": function () { },
+      "Result": function () { },
+      "ResultSummary": function () { },
+      "Time": function () { },
+      "UnboundRelationship": function () { }
     }
   },
-  "driver": function () {},
+  "driver": function () { },
   "error": {
     "PROTOCOL_ERROR": {},
     "SERVICE_UNAVAILABLE": {},
     "SESSION_EXPIRED": {}
   },
-  "int": function () {},
+  "int": function () { },
   "integer": {
-    "inSafeRange": function () {},
-    "toNumber": function () {},
-    "toString": function () {}
+    "inSafeRange": function () { },
+    "toNumber": function () { },
+    "toString": function () { }
   },
-  "isDate": function () {},
-  "isDateTime": function () {},
-  "isDuration": function () {},
-  "isInt": function () {},
-  "isLocalDateTime": function () {},
-  "isLocalTime": function () {},
-  "isPoint": function () {},
-  "isTime": function () {},
+  "isDate": function () { },
+  "isDateTime": function () { },
+  "isDuration": function () { },
+  "isInt": function () { },
+  "isLocalDateTime": function () { },
+  "isLocalTime": function () { },
+  "isPoint": function () { },
+  "isTime": function () { },
   "logging": {
     "console": {
-      "toString": function () {}
+      "toString": function () { }
     }
   },
   "session": {
@@ -148,20 +148,20 @@ var neo4j = {
     "WRITE": {}
   },
   "spatial": {
-    "isPoint": function () {}
+    "isPoint": function () { }
   },
   "temporal": {
-    "isDate": function () {},
-    "isDateTime": function () {},
-    "isDuration": function () {},
-    "isLocalDateTime": function () {},
-    "isLocalTime": function () {},
-    "isTime": function () {}
+    "isDate": function () { },
+    "isDateTime": function () { },
+    "isDuration": function () { },
+    "isLocalDateTime": function () { },
+    "isLocalTime": function () { },
+    "isTime": function () { }
   },
   "types": {
-    "Date": function () {},
-    "DateTime": function () {},
-    "Duration": function () {},
+    "Date": function () { },
+    "DateTime": function () { },
+    "Duration": function () { },
     "Integer": {
       "MAX_SAFE_VALUE": {
         "high": {},
@@ -192,28 +192,28 @@ var neo4j = {
         "low": {}
       },
       "__isInteger__": {},
-      "fromBits": function () {},
-      "fromInt": function () {},
-      "fromNumber": function () {},
-      "fromString": function () {},
-      "fromValue": function () {},
-      "inSafeRange": function () {},
-      "isInteger": function () {},
-      "toNumber": function () {},
-      "toString": function () {}
+      "fromBits": function () { },
+      "fromInt": function () { },
+      "fromNumber": function () { },
+      "fromString": function () { },
+      "fromValue": function () { },
+      "inSafeRange": function () { },
+      "isInteger": function () { },
+      "toNumber": function () { },
+      "toString": function () { }
     },
-    "LocalDateTime": function () {},
-    "LocalTime": function () {},
-    "Node": function () {},
-    "Path": function () {},
-    "PathSegment": function () {},
-    "Point": function () {},
-    "Record": function () {},
-    "Relationship": function () {},
-    "Result": function () {},
-    "ResultSummary": function () {},
-    "Time": function () {},
-    "UnboundRelationship": function () {}
+    "LocalDateTime": function () { },
+    "LocalTime": function () { },
+    "Node": function () { },
+    "Path": function () { },
+    "PathSegment": function () { },
+    "Point": function () { },
+    "Record": function () { },
+    "Relationship": function () { },
+    "Result": function () { },
+    "ResultSummary": function () { },
+    "Time": function () { },
+    "UnboundRelationship": function () { }
   }
 };
 /**********************************************************************
