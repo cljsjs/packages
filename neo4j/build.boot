@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.7.2")
+(def +lib-version+ "4.0.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -24,4 +24,5 @@
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.neo4j")
    (pom)
-   (jar)))
+   (jar)
+   (validate)))
