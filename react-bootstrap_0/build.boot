@@ -2,13 +2,13 @@
   :resource-paths #{"resources"}
   :dependencies '[[adzerk/bootlaces "0.1.13" :scope "test"]
                   [cljsjs/boot-cljsjs "0.10.5" :scope "test"]
-                  [cljsjs/react "16.4.2-0"]
-                  [cljsjs/react-dom "16.4.2-0"]
-                  [cljsjs/bootstrap "3.3.6-1"]])
+                  [cljsjs/react "16.8.6-0"]
+                  [cljsjs/react-dom "16.8.6-0"]
+                  [cljsjs/bootstrap "3.4.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.32.4")
+(def +lib-version+ "0.33.1")
 (def +version+ (str +lib-version+ "-0"))
 
 
