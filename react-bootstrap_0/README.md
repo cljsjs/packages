@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-bootstrap "0.32.4-0"] ;; latest release
+[cljsjs/react-bootstrap "0.33.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -19,7 +19,7 @@ To use this with Boot, require [boot-less][less4clj] like so:
 ```clojure
 (set-env!
   :dependencies '[[deraen/boot-less "0.6.2" :scope "test"]
-                  [cljsjs/react-bootstrap "0.32.4-0"]])
+                  [cljsjs/react-bootstrap "0.33.1-0"]])
 
 ```
 create a "main.main.less" file within one of your source-paths with following content
