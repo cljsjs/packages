@@ -1972,3 +1972,9 @@ var Scheduler = {
 // 16.9
 
 React.Profiler = function() {};
+
+// Support hooks with node module processing.
+// They are used with hasOwnProperty in https://github.com/facebook/react/blob/v16.12.0/packages/shared/ReactSharedInternals.js
+var ReactSharedInternals = {};
+ReactSharedInternals.ReactCurrentDispatcher = {};
+ReactSharedInternals.ReactCurrentBatchConfig = {};
