@@ -4,7 +4,7 @@ This provides (https://developers.google.com/blockly/)[Blockly], a library for b
 
 [](dependency)
 ```clojure
-[cljsjs/blockly "3.20200123.1-0"] ;; latest release (versions track Blockly release versions)
+[cljsjs/blockly "3.20200123.1-0"] ;; latest release
 ```
 [](/dependency)
 
