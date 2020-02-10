@@ -33,9 +33,6 @@
                               {:file #"blocks\.inc\.js"
                                :requires ["blockly.js"]
                                :provides ["cljsjs.blockly.blocks"]}
-                              {:file #"en\.inc\.js"
-                               :requires ["blockly.js"]
-                               :provides ["cljsjs.blockly.en"]}
                               ;; Each matched file will create foreign lib entry
                               {:file #"cljsjs/blockly/development/msg/(.*)\.inc\.js"
                                :requires ["cljsjs.blockly"]
