@@ -23,6 +23,7 @@
              :unzip true)
    (sift :move {#"^blockly-.*/blockly\_compressed\.js"  "cljsjs/blockly/development/blockly.inc.js"
                 #"^blockly-.*blocks\_compressed\.js"    "cljsjs/blockly/development/blocks.inc.js" 
+                #"^blockly-.*/media/(.*)"               "cljsjs/blockly/common/media/$1"
                 ;; Change the following line to include non-English support
                 #"^blockly-.*msg/js/en\.js"             "cljsjs/blockly/development/en.inc.js"
                 })
