@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "16.12.0")
-(def +version+ (str +lib-version+ "-2"))
+(def +lib-version+ "16.13.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/react

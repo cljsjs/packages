@@ -1978,3 +1978,6 @@ React.Profiler = function() {};
 var ReactSharedInternals = {};
 ReactSharedInternals.ReactCurrentDispatcher = {};
 ReactSharedInternals.ReactCurrentBatchConfig = {};
+
+var ReactErrorInfo = {};
+ReactErrorInfo.componentStack = {};
