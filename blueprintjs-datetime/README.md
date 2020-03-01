@@ -3,7 +3,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/blueprintjs-datetime "3.15.1-0"] ;; latest release
+[cljsjs/blueprintjs-datetime "3.15.2-0"] ;; latest release
 ```
 [](/dependency)
 
