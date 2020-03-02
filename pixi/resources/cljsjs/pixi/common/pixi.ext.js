@@ -116,6 +116,7 @@ var PIXI = {
     "SUBTRACT": {},
     "XOR": {}
   },
+  "BasePrepare": function () { },
   "BaseRenderTexture": {
     "EventEmitter": {
       "EventEmitter": function () { },
@@ -188,6 +189,7 @@ var PIXI = {
     "mixin": function () { },
     "prefixed": {}
   },
+  "CountLimiter": function () { },
   "CubeTexture": {
     "EventEmitter": {
       "EventEmitter": function () { },
@@ -237,6 +239,9 @@ var PIXI = {
     "WEBGL_LEGACY": {}
   },
   "Ellipse": function () { },
+  "Extract": {
+    "arrayPostDivide": function () { }
+  },
   "FORMATS": {
     "34041": {},
     "6402": {},
@@ -508,6 +513,7 @@ var PIXI = {
   },
   "Point": function () { },
   "Polygon": function () { },
+  "Prepare": function () { },
   "Program": {
     "from": function () { }
   },
@@ -1624,6 +1630,7 @@ var PIXI = {
       "font": {},
       "getImageData": function () { },
       "getLineDash": function () { },
+      "getTransform": function () { },
       "globalAlpha": {},
       "globalCompositeOperation": {},
       "imageSmoothingEnabled": {},
@@ -1676,7 +1683,8 @@ var PIXI = {
     "measureText": function () { },
     "tokenize": function () { },
     "trimRight": function () { },
-    "wordWrap": function () { }
+    "wordWrap": function () { },
+    "wordWrapSplit": function () { }
   },
   "TextStyle": function () { },
   "Texture": {
@@ -2135,6 +2143,7 @@ var PIXI = {
       "add": function () { },
       "addOnce": function () { },
       "autoStart": {},
+      "count": {},
       "deltaMS": {},
       "deltaTime": {},
       "destroy": function () { },
@@ -2177,6 +2186,7 @@ var PIXI = {
       "add": function () { },
       "addOnce": function () { },
       "autoStart": {},
+      "count": {},
       "deltaMS": {},
       "deltaTime": {},
       "destroy": function () { },
@@ -2211,6 +2221,7 @@ var PIXI = {
     "prefixed": {}
   },
   "TilingSpriteRenderer": function () { },
+  "TimeLimiter": function () { },
   "Transform": {
     "IDENTITY": {
       "_currentLocalID": {},
@@ -2385,11 +2396,7 @@ var PIXI = {
   "checkMaxIfStatementsInShader": function () { },
   "defaultFilterVertex": {},
   "defaultVertex": {},
-  "extract": {
-    "Extract": {
-      "arrayPostDivide": function () { }
-    }
-  },
+  "extract": {},
   "extras": {},
   "filters": {
     "AlphaFilter": {
@@ -2559,7 +2566,6 @@ var PIXI = {
       "phone": {},
       "tablet": {}
     },
-    "isMobile": function () { },
     "other": {
       "blackberry": {},
       "blackberry10": {},
@@ -2579,12 +2585,7 @@ var PIXI = {
   "loaders": {},
   "mesh": {},
   "particles": {},
-  "prepare": {
-    "BasePrepare": function () { },
-    "CountLimiter": function () { },
-    "Prepare": function () { },
-    "TimeLimiter": function () { }
-  },
+  "prepare": {},
   "resources": {
     "ArrayResource": function () { },
     "BaseImageResource": {
@@ -2703,9 +2704,11 @@ var PIXI = {
       "deviation": function () { },
       "flatten": function () { }
     },
+    "getBufferType": function () { },
     "getResolutionOfUrl": function () { },
     "hex2rgb": function () { },
     "hex2string": function () { },
+    "interleaveTypedArrays": function () { },
     "isMobile": {
       "amazon": {
         "device": {},
@@ -2724,7 +2727,6 @@ var PIXI = {
         "phone": {},
         "tablet": {}
       },
-      "isMobile": function () { },
       "other": {
         "blackberry": {},
         "blackberry10": {},
@@ -2920,6 +2922,15 @@ PIXI.Application.prototype = {
 };
 PIXI.Attribute.prototype = {
   "destroy": function () { }
+};
+PIXI.BasePrepare.prototype = {
+  "add": function () { },
+  "destroy": function () { },
+  "prepareItems": function () { },
+  "registerFindHook": function () { },
+  "registerUploadHook": function () { },
+  "tick": function () { },
+  "upload": function () { }
 };
 PIXI.BaseRenderTexture.prototype = {
   "_refreshPOT": function () { },
@@ -3231,6 +3242,10 @@ PIXI.Container.EventEmitter.prototype = {
   "removeAllListeners": function () { },
   "removeListener": function () { }
 };
+PIXI.CountLimiter.prototype = {
+  "allowedToUpload": function () { },
+  "beginFrame": function () { }
+};
 PIXI.CubeTexture.prototype = {
   "_refreshPOT": function () { },
   "addListener": function () { },
@@ -3290,6 +3305,7 @@ PIXI.DisplayObject.prototype = {
   "accessibleType": function () { },
   "addListener": function () { },
   "buttonMode": function () { },
+  "calculateBounds": function () { },
   "constructor": function () { },
   "cursor": function () { },
   "destroy": function () { },
@@ -3336,6 +3352,13 @@ PIXI.Ellipse.prototype = {
   "clone": function () { },
   "contains": function () { },
   "getBounds": function () { }
+};
+PIXI.Extract.prototype = {
+  "base64": function () { },
+  "canvas": function () { },
+  "destroy": function () { },
+  "image": function () { },
+  "pixels": function () { }
 };
 PIXI.FillStyle.prototype = {
   "clone": function () { },
@@ -3731,6 +3754,7 @@ PIXI.NineSlicePlane.prototype = {
   "_calculateCachedBounds": function () { },
   "_destroyCachedDisplayObject": function () { },
   "_getCachedLocalBounds": function () { },
+  "_getMinScale": function () { },
   "_initCachedDisplayObject": function () { },
   "_initCachedDisplayObjectCanvas": function () { },
   "_recursivePostUpdateTransform": function () { },
@@ -3957,6 +3981,16 @@ PIXI.Point.prototype = {
 PIXI.Polygon.prototype = {
   "clone": function () { },
   "contains": function () { }
+};
+PIXI.Prepare.prototype = {
+  "add": function () { },
+  "constructor": function () { },
+  "destroy": function () { },
+  "prepareItems": function () { },
+  "registerFindHook": function () { },
+  "registerUploadHook": function () { },
+  "tick": function () { },
+  "upload": function () { }
 };
 PIXI.Program.prototype = {
   "extractData": function () { },
@@ -4354,6 +4388,7 @@ PIXI.Renderer.__plugins.extract.prototype = {
 PIXI.Renderer.__plugins.interaction.prototype = {
   "addEvents": function () { },
   "addListener": function () { },
+  "addTickerListener": function () { },
   "configureInteractionEventForDOMEvent": function () { },
   "constructor": function () { },
   "delayDispatchEvent": function () { },
@@ -4387,8 +4422,10 @@ PIXI.Renderer.__plugins.interaction.prototype = {
   "removeAllListeners": function () { },
   "removeEvents": function () { },
   "removeListener": function () { },
+  "removeTickerListener": function () { },
   "setCursorMode": function () { },
   "setTargetElement": function () { },
+  "tickerUpdate": function () { },
   "update": function () { }
 };
 PIXI.Renderer.__plugins.interaction.EventEmitter.prototype = {
@@ -5074,6 +5111,7 @@ PIXI.Ticker.prototype = {
   "_startIfPossible": function () { },
   "add": function () { },
   "addOnce": function () { },
+  "count": function () { },
   "destroy": function () { },
   "maxFPS": function () { },
   "minFPS": function () { },
@@ -5179,6 +5217,10 @@ PIXI.TilingSpriteRenderer.prototype = {
   "start": function () { },
   "stop": function () { }
 };
+PIXI.TimeLimiter.prototype = {
+  "allowedToUpload": function () { },
+  "beginFrame": function () { }
+};
 PIXI.Transform.prototype = {
   "onChange": function () { },
   "rotation": function () { },
@@ -5211,13 +5253,6 @@ PIXI.accessibility.AccessibilityManager.prototype = {
   "update": function () { },
   "updateAccessibleObjects": function () { },
   "updateDebugHTML": function () { }
-};
-PIXI.extract.Extract.prototype = {
-  "base64": function () { },
-  "canvas": function () { },
-  "destroy": function () { },
-  "image": function () { },
-  "pixels": function () { }
 };
 PIXI.filters.AlphaFilter.prototype = {
   "apply": function () { },
@@ -5320,6 +5355,7 @@ PIXI.interaction.InteractionEvent.prototype = {
 PIXI.interaction.InteractionManager.prototype = {
   "addEvents": function () { },
   "addListener": function () { },
+  "addTickerListener": function () { },
   "configureInteractionEventForDOMEvent": function () { },
   "constructor": function () { },
   "delayDispatchEvent": function () { },
@@ -5353,8 +5389,10 @@ PIXI.interaction.InteractionManager.prototype = {
   "removeAllListeners": function () { },
   "removeEvents": function () { },
   "removeListener": function () { },
+  "removeTickerListener": function () { },
   "setCursorMode": function () { },
   "setTargetElement": function () { },
+  "tickerUpdate": function () { },
   "update": function () { }
 };
 PIXI.interaction.InteractionManager.EventEmitter.prototype = {
@@ -5371,33 +5409,6 @@ PIXI.interaction.InteractionManager.EventEmitter.prototype = {
 };
 PIXI.interaction.InteractionTrackingData.prototype = {
   "_doSet": function () { }
-};
-PIXI.prepare.BasePrepare.prototype = {
-  "add": function () { },
-  "destroy": function () { },
-  "prepareItems": function () { },
-  "registerFindHook": function () { },
-  "registerUploadHook": function () { },
-  "tick": function () { },
-  "upload": function () { }
-};
-PIXI.prepare.CountLimiter.prototype = {
-  "allowedToUpload": function () { },
-  "beginFrame": function () { }
-};
-PIXI.prepare.Prepare.prototype = {
-  "add": function () { },
-  "constructor": function () { },
-  "destroy": function () { },
-  "prepareItems": function () { },
-  "registerFindHook": function () { },
-  "registerUploadHook": function () { },
-  "tick": function () { },
-  "upload": function () { }
-};
-PIXI.prepare.TimeLimiter.prototype = {
-  "allowedToUpload": function () { },
-  "beginFrame": function () { }
 };
 PIXI.resources.ArrayResource.prototype = {
   "addResourceAt": function () { },
@@ -5699,7 +5710,9 @@ PIXI.systems.TextureSystem.prototype = {
 PIXI.utils.CanvasRenderTarget.prototype = {
   "clear": function () { },
   "destroy": function () { },
-  "resize": function () { }
+  "height": function () { },
+  "resize": function () { },
+  "width": function () { }
 };
 PIXI.utils.EventEmitter.prototype = {
   "addListener": function () { },
