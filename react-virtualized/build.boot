@@ -10,7 +10,7 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "9.21.1")
+(def +lib-version+ "9.21.2")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
