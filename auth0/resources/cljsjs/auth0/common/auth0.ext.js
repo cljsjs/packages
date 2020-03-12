@@ -8,12 +8,23 @@ var auth0 = {
   "Authentication": function () {},
   "Management": function () {},
   "WebAuth": function () {},
-  "version": {}
+  "default": {
+    "Authentication": function () {},
+    "Management": function () {},
+    "WebAuth": function () {},
+    "version": {
+      "raw": {}
+    }
+  },
+  "version": {
+    "raw": {}
+  }
 };
 auth0.Authentication.prototype = {
   "buildAuthorizeUrl": function () {},
   "buildLogoutUrl": function () {},
   "delegation": function () {},
+  "getChallenge": function () {},
   "getSSOData": function () {},
   "getUserCountry": function () {},
   "login": function () {},
@@ -25,9 +36,47 @@ auth0.Authentication.prototype = {
 auth0.Management.prototype = {
   "getUser": function () {},
   "linkUser": function () {},
+  "patchUserAttributes": function () {},
   "patchUserMetadata": function () {}
 };
 auth0.WebAuth.prototype = {
+  "authorize": function () {},
+  "changePassword": function () {},
+  "checkSession": function () {},
+  "crossOriginAuthenticationCallback": function () {},
+  "crossOriginVerification": function () {},
+  "login": function () {},
+  "logout": function () {},
+  "parseHash": function () {},
+  "passwordlessLogin": function () {},
+  "passwordlessStart": function () {},
+  "passwordlessVerify": function () {},
+  "renewAuth": function () {},
+  "signup": function () {},
+  "signupAndAuthorize": function () {},
+  "validateAuthenticationResponse": function () {},
+  "validateToken": function () {}
+};
+auth0.default.Authentication.prototype = {
+  "buildAuthorizeUrl": function () {},
+  "buildLogoutUrl": function () {},
+  "delegation": function () {},
+  "getChallenge": function () {},
+  "getSSOData": function () {},
+  "getUserCountry": function () {},
+  "login": function () {},
+  "loginWithDefaultDirectory": function () {},
+  "loginWithResourceOwner": function () {},
+  "oauthToken": function () {},
+  "userInfo": function () {}
+};
+auth0.default.Management.prototype = {
+  "getUser": function () {},
+  "linkUser": function () {},
+  "patchUserAttributes": function () {},
+  "patchUserMetadata": function () {}
+};
+auth0.default.WebAuth.prototype = {
   "authorize": function () {},
   "changePassword": function () {},
   "checkSession": function () {},
