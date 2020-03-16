@@ -17,7 +17,7 @@
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (defn url [name env]
-  (format "https://unpkg.com/browse/scheduler@%s/umd/scheduler%s.%s.js" +lib-version+ (if name (str "-" name) "") env))
+  (format "https://unpkg.com/scheduler@%s/umd/scheduler%s.%s.js" +lib-version+ (if name (str "-" name) "") env))
 
 
 (deftask package []
