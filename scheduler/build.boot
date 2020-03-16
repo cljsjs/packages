@@ -6,7 +6,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "0.19.0")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/scheduler
@@ -36,12 +36,12 @@
                               {:file #"scheduler-unstable_mock.production.min.js"
                                :file-min #"scheduler-unstable_mock.development.js"
                                :requires []
-                               :provides ["scheduler" "cljsjs.scheduler"]
+                               :provides ["scheduler/unstable_mock"]
                                :global-exports {"scheduler/unstable_mock" "SchedulerMock"}}
                               {:file #"scheduler-tracing.production.min.js"
                                :file-min #"scheduler-tracing.development.js"
                                :requires []
-                               :provides ["scheduler" "cljsjs.scheduler"]
+                               :provides ["scheduler/tracing"]
                                :global-exports {"scheduler/profiling" "SchedulerTracing"}}]
                :externs [#"scheduler\.ext\.js"])
     (pom)

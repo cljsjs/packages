@@ -1,4 +1,8 @@
-{"cljsjs/react-test-renderer/development/react-test-renderer.inc.js"
+{"cljsjs/react-test-renderer/development/react-test-renderer-shallow.inc.js"
+ "FCD8F55B357CFEF3ABEC9E32E50F1028",
+ "cljsjs/react-test-renderer/development/react-test-renderer.inc.js"
  "058FCA1CADF20CF6E39CAB9854E6054A",
+ "cljsjs/react-test-renderer/production/react-test-renderer-shallow.min.inc.js"
+ "8C61C0C725432C18E6C09450DDC1B8FC",
  "cljsjs/react-test-renderer/production/react-test-renderer.min.inc.js"
  "DE7B07C5E7CD987F98EE55460BBF586D"}
