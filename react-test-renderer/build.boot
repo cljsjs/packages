@@ -7,7 +7,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "16.13.0")
-(def +version+ (str +lib-version+ "-2"))
+(def +version+ (str +lib-version+ "-3"))
 
 (task-options!
  pom  {:project     'cljsjs/react-test-renderer
@@ -36,7 +36,8 @@
                                :file-min #"react-test-renderer-shallow.inc.js"
                                :requires ["react"]
                                :provides ["react-test-renderer/shallow"]
-                               :global-exports {"react-test-renderer/shallow" "ReactShallowRenderer"}}])
+                               :global-exports {"react-test-renderer/shallow" "ReactShallowRenderer"}}]
+               :externs [#"react-test-renderer.ext.js"])
     (pom)
     (jar)
     (validate)))
