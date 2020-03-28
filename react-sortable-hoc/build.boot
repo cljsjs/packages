@@ -8,7 +8,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "1.11.0")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/react-sortable-hoc
@@ -27,6 +27,7 @@
    (deps-cljs :foreign-libs [{:file #"react-sortable-hoc.inc.js"
                               :file-min #"react-sortable-hoc.min.inc.js"
                               :provides ["react-sortable-hoc" "cljsjs.react-sortable-hoc"]
+                              :global-exports {"react-sortable-hoc" "SortableHOC"}
                               :requires ["react"
                                          "react-dom"
                                          "prop-types"]}]
