@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-sortable-hoc "1.10.1-0"] ;; latest release
+[cljsjs/react-sortable-hoc "1.11.0-1"] ;; latest release
 ```
 [](/dependency)
 
