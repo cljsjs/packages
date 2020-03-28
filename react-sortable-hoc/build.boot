@@ -2,11 +2,12 @@
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.10.5"  :scope "test"]
                   [cljsjs/react "16.3.0-1"]
-                  [cljsjs/react-dom "16.3.0-1"]])
+                  [cljsjs/react-dom "16.3.0-1"]
+                  [cljsjs/prop-types "15.7.2-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.10.1")
+(def +lib-version+ "1.11.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -23,10 +24,13 @@
              :target "cljsjs/react-sortable-hoc/development/react-sortable-hoc.inc.js")
    (download :url (format "https://unpkg.com/react-sortable-hoc@%s/dist/react-sortable-hoc.umd.min.js" +lib-version+)
              :target "cljsjs/react-sortable-hoc/production/react-sortable-hoc.min.inc.js")
-
-   (deps-cljs :name "cljsjs.react-sortable-hoc"
-              :requires ["cljsjs.react"
-                         "cljsjs.react.dom"])
+   (deps-cljs :foreign-libs [{:file #"react-sortable-hoc.inc.js"
+                              :file-min #"react-sortable-hoc.min.inc.js"
+                              :provides ["react-sortable-hoc" "cljsjs.react-sortable-hoc"]
+                              :requires ["react"
+                                         "react-dom"
+                                         "prop-types"]}]
+              :externs [#"react-sortable-hoc.ext.js"])
    (pom)
    (jar)
    (validate)))
