@@ -11,19 +11,19 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require [cljsjs.snabbdom]
-            [cljsjs.snabbdom.attributes]
-            [cljsjs.snabbdom.class]
-            [cljsjs.snabbdom.eventlisteners]
-            [cljsjs.snabbdom.props]
-            [cljsjs.snabbdom.style]))
+  (:require [snabbdom :refer [init h]]
+            [snabbdom.modules.attributes :as attrs]
+            [snabbdom.modules.class :as class]
+            [snabbdom.modules.eventlisteners :as el]
+            [snabbdom.modules.props :as props]
+            [snabbdom.modules.style :as style]))
 
-(let [patch (js/snabbdom.init #js [(.-default js/snabbdom_attributes)
-                                   (.-default js/snabbdom_class)
-                                   (.-default js/snabbdom_eventlisteners)
-                                   (.-default js/snabbdom_props)
-                                   (.-default js/snabbdom_style)])
-      vdom (js/snabbdom.h "div" #js {} "Hello World")]
+(let [patch (init #js [(.-default attrs)
+                       (.-default class)
+                       (.-default el)
+                       (.-default props)
+                       (.-default style)])
+      vdom (h "div" #js {} "Hello World")]
   (patch (.getElementById js/document "root") vdom))
 
 ```
