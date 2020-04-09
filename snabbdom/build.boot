@@ -32,4 +32,5 @@
                 })
    (sift :include #{#"^cljsjs" #"^deps.cljs"})
    (pom)
-   (jar)))
+   (jar)
+   (validate)))
