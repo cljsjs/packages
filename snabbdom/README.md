@@ -1,7 +1,7 @@
 # cljsjs/snabbdom
 [](dependency)
 ```clojure
-[cljsjs/snabbdom "0.7.4-3"] ;; latest release
+[cljsjs/snabbdom "0.7.4-0"] ;; latest release
 ```
 [](/dependency)
 
