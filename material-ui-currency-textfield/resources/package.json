@@ -1,0 +1,15 @@
+{
+  "name": "@cljsjs/material-ui-currency-textfield-bundle",
+  "private": true,
+  "scripts": {
+    "build:dev": "webpack --mode development",
+    "build:prod": "webpack --mode production"
+  },
+  "dependencies": {
+    "@unicef/material-ui-currency-textfield": "0.8.6"
+  },
+  "devDependencies": {
+    "webpack": "4.42.1",
+    "webpack-cli": "3.3.11"
+  }
+}
