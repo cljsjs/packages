@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/js-joda-locale-en-us "2.0.0-0"] ;; latest release
+[cljsjs/js-joda-locale-en-us "3.1.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -13,8 +13,8 @@ you can require and use the packaged library like so:
 ```clojure
 (ns application.core
   (:require 
-  [cljsjs.js-joda]
-  [cljsjs.js-joda-locale-en-us]))
+  ["@js-joda/core"]
+  ["@js-joda/locale_en-us"]))
 
 ```
 
