@@ -1,0 +1,17 @@
+{
+    "name": "@cljsjs/material-ui-lab-bundle",
+    "private": true,
+    "scripts": {
+        "build:dev": "webpack --mode development",
+        "build:prod": "webpack --mode production --output-filename material-ui-lab.min.inc.js"
+    },
+    "dependencies": {
+        "@material-ui/lab": "4.0.0-alpha.49"
+    },
+    "devDependencies": {
+        "webpack": "4.29.0",
+        "webpack-command": "0.4.2",
+        "react": "16.8.3",
+        "react-dom": "16.8.3"
+    }
+}
