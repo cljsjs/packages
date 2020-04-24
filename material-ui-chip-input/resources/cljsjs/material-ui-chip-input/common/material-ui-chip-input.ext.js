@@ -1,1 +1,1 @@
-var MaterialUIChipInput = {}
+var MaterialUIChipInput = {};
