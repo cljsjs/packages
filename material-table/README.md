@@ -5,7 +5,7 @@ https://material-table.com/
 
 [](dependency)
 ```clojure
-[cljsjs/material-table "1.57.2"] ;; latest release
+[cljsjs/material-table "1.57.2-0"] ;; latest release
 ```
 [](/dependency)
 
