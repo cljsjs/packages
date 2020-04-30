@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.0.0")
+(def +lib-version+ "3.1.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -28,6 +28,7 @@
       :out "cljsjs/js-joda-locale-en-us/production/js-joda-locale-en-us.min.inc.js")
     (sift :include #{#"^cljsjs"})
     (deps-cljs
-      :name "cljsjs.js-joda-locale-en-us")
+      :provides ["@js-joda/locale_en-us"]
+      :requires ["@js-joda/core"])
     (pom)
     (jar)))

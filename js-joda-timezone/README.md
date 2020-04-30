@@ -7,7 +7,7 @@ Add the dependency along with cljsjs/js-joda to enable zone-related functionalit
 
 [](dependency)
 ```clojure
-[cljsjs/js-joda-timezone "2.0.1-0"] ;; latest release
+[cljsjs/js-joda-timezone "2.2.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -18,8 +18,8 @@ you can require and use the packaged library like so:
 ```clojure
 (ns application.core
   (:require 
-     [cljsjs.js-joda]
-     [cljsjs.js-joda-timezone]))
+     ["@js-joda/core"]
+     ["@js-joda/timezone"]))
   
 ```
 

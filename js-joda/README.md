@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/js-joda "1.10.1-0"] ;; latest release
+[cljsjs/js-joda "1.12.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,9 +12,9 @@ you can require and use the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require [cljsjs.js-joda]))
+  (:require ["@js-joda/core" :as js-joda]))
 
-  (.. js/JSJoda -Year)
+  (.. js-joda -Year)
 ```
 
 ## Info on how to build
