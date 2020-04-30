@@ -1,8 +1,8 @@
-# cljsjs/webcola
+# cljsjs/cytoscape-cola
 
 [](dependency)
 ```clojure
-[cljsjs/webcola "3.4.0"] ;; latest release
+[cljsjs/cytoscape-cola "2.3.1"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.webcola))
+  (:require cljsjs.cytoscape-cola))
 ```
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps
