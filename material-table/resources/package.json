@@ -1,0 +1,17 @@
+{
+    "name": "@cljsjs/material-table-bundle",
+    "private": true,
+    "scripts": {
+        "build:dev": "webpack --mode development",
+        "build:prod": "webpack --mode production --output-filename material-table.min.inc.js"
+    },
+    "dependencies": {
+        "material-table": "1.57.2"
+    },
+    "devDependencies": {
+        "webpack": "4.29.0",
+        "webpack-command": "0.4.2",
+        "react": "16.8.3",
+        "react-dom": "16.8.3"
+    }
+}
