@@ -19,10 +19,14 @@ var tf = {
     "className": {},
     "fromConfig": function () { }
   },
+  "Add": {},
+  "AddN": {},
+  "BroadcastTo": {},
   "Callback": function () { },
   "CallbackList": function () { },
   "CustomCallback": function () { },
   "DataStorage": function () { },
+  "Div": {},
   "ENV": {
     "evaluateFlag": function () { },
     "features": {
@@ -1229,6 +1233,7 @@ var tf = {
           "sin": function () { },
           "sinh": function () { },
           "slice": function () { },
+          "softmax": function () { },
           "softplus": function () { },
           "spaceToBatchND": function () { },
           "sparseToDense": function () { },
@@ -1880,23 +1885,23 @@ var tf = {
                 "bufferSubData": function () { },
                 "canvas": {
                   "addEventListener": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "convertToBlob": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "dispatchEvent": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getContext": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "height": {},
                   "removeEventListener": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "transferToImageBitmap": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "width": {}
                 },
@@ -2176,6 +2181,7 @@ var tf = {
         "findBackend": function () { },
         "findBackendFactory": function () { },
         "getSortedBackends": function () { },
+        "getTensorsForGradient": function () { },
         "gradients": function () { },
         "incRef": function () { },
         "initializeBackend": function () { },
@@ -2227,24 +2233,24 @@ var tf = {
             "binaryCache": {},
             "canvas": {
               "addEventListener": {
-                "closure_uid_943987451": {}
+                "closure_uid_78352790": {}
               },
-              "closure_uid_943987451": {},
+              "closure_uid_78352790": {},
               "convertToBlob": {
-                "closure_uid_943987451": {}
+                "closure_uid_78352790": {}
               },
               "dispatchEvent": {
-                "closure_uid_943987451": {}
+                "closure_uid_78352790": {}
               },
               "getContext": {
-                "closure_uid_943987451": {}
+                "closure_uid_78352790": {}
               },
               "height": {},
               "removeEventListener": {
-                "closure_uid_943987451": {}
+                "closure_uid_78352790": {}
               },
               "transferToImageBitmap": {
-                "closure_uid_943987451": {}
+                "closure_uid_78352790": {}
               },
               "width": {}
             },
@@ -2252,7 +2258,7 @@ var tf = {
             "ceil": function () { },
             "checkNumericalProblems": function () { },
             "clip": function () { },
-            "closure_uid_943987451": {},
+            "closure_uid_78352790": {},
             "compileAndRun": function () { },
             "complex": function () { },
             "complexAbs": function () { },
@@ -2316,7 +2322,7 @@ var tf = {
               "beginQuery": function () { },
               "bindTextureToFrameBuffer": function () { },
               "blockUntilAllProgramsCompleted": function () { },
-              "closure_uid_943987451": {},
+              "closure_uid_78352790": {},
               "colorBufferFloatExtension": {},
               "createAndWaitForFence": function () { },
               "createBufferFromTexture": function () { },
@@ -2932,24 +2938,24 @@ var tf = {
                 "bufferSubData": function () { },
                 "canvas": {
                   "addEventListener": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
-                  "closure_uid_943987451": {},
+                  "closure_uid_78352790": {},
                   "convertToBlob": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "dispatchEvent": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getContext": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "height": {},
                   "removeEventListener": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "transferToImageBitmap": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "width": {}
                 },
@@ -2963,7 +2969,7 @@ var tf = {
                 "clearDepth": function () { },
                 "clearStencil": function () { },
                 "clientWaitSync": function () { },
-                "closure_uid_943987451": {},
+                "closure_uid_78352790": {},
                 "colorMask": function () { },
                 "compileShader": function () { },
                 "compressedTexImage2D": function () { },
@@ -3278,6 +3284,7 @@ var tf = {
             "sin": function () { },
             "sinh": function () { },
             "slice": function () { },
+            "softmax": function () { },
             "softplus": function () { },
             "spaceToBatchND": function () { },
             "sparseToDense": function () { },
@@ -3305,7 +3312,7 @@ var tf = {
             },
             "textureManager": {
               "acquireTexture": function () { },
-              "closure_uid_943987451": {},
+              "closure_uid_78352790": {},
               "dispose": function () { },
               "freeTextures": {},
               "getNumFreeTextures": function () { },
@@ -3315,7 +3322,7 @@ var tf = {
                 "beginQuery": function () { },
                 "bindTextureToFrameBuffer": function () { },
                 "blockUntilAllProgramsCompleted": function () { },
-                "closure_uid_943987451": {},
+                "closure_uid_78352790": {},
                 "colorBufferFloatExtension": {},
                 "createAndWaitForFence": function () { },
                 "createBufferFromTexture": function () { },
@@ -3908,705 +3915,705 @@ var tf = {
                   "WAIT_FAILED": {},
                   "ZERO": {},
                   "activeTexture": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "attachShader": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "beginQuery": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "beginTransformFeedback": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "bindAttribLocation": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "bindBuffer": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "bindBufferBase": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "bindBufferRange": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "bindFramebuffer": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "bindRenderbuffer": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "bindSampler": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "bindTexture": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "bindTransformFeedback": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "bindVertexArray": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "blendColor": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "blendEquation": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "blendEquationSeparate": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "blendFunc": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "blendFuncSeparate": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "blitFramebuffer": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "bufferData": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "bufferSubData": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "canvas": {
                     "addEventListener": {
-                      "closure_uid_943987451": {}
+                      "closure_uid_78352790": {}
                     },
-                    "closure_uid_943987451": {},
+                    "closure_uid_78352790": {},
                     "convertToBlob": {
-                      "closure_uid_943987451": {}
+                      "closure_uid_78352790": {}
                     },
                     "dispatchEvent": {
-                      "closure_uid_943987451": {}
+                      "closure_uid_78352790": {}
                     },
                     "getContext": {
-                      "closure_uid_943987451": {}
+                      "closure_uid_78352790": {}
                     },
                     "height": {},
                     "removeEventListener": {
-                      "closure_uid_943987451": {}
+                      "closure_uid_78352790": {}
                     },
                     "transferToImageBitmap": {
-                      "closure_uid_943987451": {}
+                      "closure_uid_78352790": {}
                     },
                     "width": {}
                   },
                   "checkFramebufferStatus": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "clear": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "clearBufferfi": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "clearBufferfv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "clearBufferiv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "clearBufferuiv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "clearColor": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "clearDepth": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "clearStencil": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "clientWaitSync": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
-                  "closure_uid_943987451": {},
+                  "closure_uid_78352790": {},
                   "colorMask": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "compileShader": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "compressedTexImage2D": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "compressedTexImage3D": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "compressedTexSubImage2D": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "compressedTexSubImage3D": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "copyBufferSubData": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "copyTexImage2D": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "copyTexSubImage2D": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "copyTexSubImage3D": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "createBuffer": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "createFramebuffer": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "createProgram": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "createQuery": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "createRenderbuffer": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "createSampler": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "createShader": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "createTexture": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "createTransformFeedback": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "createVertexArray": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "cullFace": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "deleteBuffer": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "deleteFramebuffer": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "deleteProgram": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "deleteQuery": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "deleteRenderbuffer": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "deleteSampler": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "deleteShader": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "deleteSync": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "deleteTexture": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "deleteTransformFeedback": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "deleteVertexArray": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "depthFunc": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "depthMask": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "depthRange": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "detachShader": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "disable": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "disableVertexAttribArray": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "drawArrays": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "drawArraysInstanced": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "drawBuffers": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "drawElements": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "drawElementsInstanced": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "drawRangeElements": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "drawingBufferHeight": {},
                   "drawingBufferWidth": {},
                   "enable": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "enableVertexAttribArray": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "endQuery": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "endTransformFeedback": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "fenceSync": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "finish": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "flush": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "framebufferRenderbuffer": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "framebufferTexture2D": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "framebufferTextureLayer": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "frontFace": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "generateMipmap": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getActiveAttrib": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getActiveUniform": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getActiveUniformBlockName": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getActiveUniformBlockParameter": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getActiveUniforms": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getAttachedShaders": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getAttribLocation": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getBufferParameter": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getBufferSubData": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getContextAttributes": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getError": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getExtension": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getFragDataLocation": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getFramebufferAttachmentParameter": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getIndexedParameter": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getInternalformatParameter": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getParameter": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getProgramInfoLog": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getProgramParameter": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getQuery": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getQueryParameter": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getRenderbufferParameter": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getSamplerParameter": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getShaderInfoLog": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getShaderParameter": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getShaderPrecisionFormat": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getShaderSource": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getSupportedExtensions": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getSyncParameter": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getTexParameter": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getTransformFeedbackVarying": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getUniform": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getUniformBlockIndex": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getUniformIndices": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getUniformLocation": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getVertexAttrib": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "getVertexAttribOffset": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "hint": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "invalidateFramebuffer": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "invalidateSubFramebuffer": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "isBuffer": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "isContextLost": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "isEnabled": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "isFramebuffer": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "isProgram": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "isQuery": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "isRenderbuffer": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "isSampler": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "isShader": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "isSync": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "isTexture": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "isTransformFeedback": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "isVertexArray": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "lineWidth": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "linkProgram": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "makeXRCompatible": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "pauseTransformFeedback": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "pixelStorei": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "polygonOffset": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "readBuffer": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "readPixels": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "renderbufferStorage": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "renderbufferStorageMultisample": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "resumeTransformFeedback": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "sampleCoverage": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "samplerParameterf": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "samplerParameteri": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "scissor": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "shaderSource": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "stencilFunc": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "stencilFuncSeparate": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "stencilMask": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "stencilMaskSeparate": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "stencilOp": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "stencilOpSeparate": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "texImage2D": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "texImage3D": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "texParameterf": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "texParameteri": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "texStorage2D": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "texStorage3D": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "texSubImage2D": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "texSubImage3D": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "transformFeedbackVaryings": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniform1f": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniform1fv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniform1i": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniform1iv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniform1ui": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniform1uiv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniform2f": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniform2fv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniform2i": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniform2iv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniform2ui": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniform2uiv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniform3f": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniform3fv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniform3i": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniform3iv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniform3ui": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniform3uiv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniform4f": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniform4fv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniform4i": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniform4iv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniform4ui": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniform4uiv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniformBlockBinding": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniformMatrix2fv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniformMatrix2x3fv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniformMatrix2x4fv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniformMatrix3fv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniformMatrix3x2fv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniformMatrix3x4fv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniformMatrix4fv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniformMatrix4x2fv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "uniformMatrix4x3fv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "useProgram": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "validateProgram": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "vertexAttrib1f": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "vertexAttrib1fv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "vertexAttrib2f": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "vertexAttrib2fv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "vertexAttrib3f": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "vertexAttrib3fv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "vertexAttrib4f": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "vertexAttrib4fv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "vertexAttribDivisor": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "vertexAttribI4i": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "vertexAttribI4iv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "vertexAttribI4ui": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "vertexAttribI4uiv": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "vertexAttribIPointer": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "vertexAttribPointer": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "viewport": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   },
                   "waitSync": {
-                    "closure_uid_943987451": {}
+                    "closure_uid_78352790": {}
                   }
                 },
                 "indexBuffer": {},
@@ -4681,6 +4688,7 @@ var tf = {
         "reset": function () { },
         "runKernel": function () { },
         "runKernelFunc": function () { },
+        "saveTensorsForBackwardMode": function () { },
         "scopedRun": function () { },
         "setBackend": function () { },
         "setupRegisteredKernels": function () { },
@@ -4715,7 +4723,7 @@ var tf = {
         "track": function () { }
       },
       "addEventListener": {
-        "closure_uid_943987451": {}
+        "closure_uid_78352790": {}
       },
       "alert": function () { },
       "applicationCache": {
@@ -4727,10 +4735,10 @@ var tf = {
         "UPDATEREADY": {},
         "abort": function () { },
         "addEventListener": {
-          "closure_uid_943987451": {}
+          "closure_uid_78352790": {}
         },
         "dispatchEvent": {
-          "closure_uid_943987451": {}
+          "closure_uid_78352790": {}
         },
         "oncached": {},
         "onchecking": {},
@@ -4741,7 +4749,7 @@ var tf = {
         "onprogress": {},
         "onupdateready": {},
         "removeEventListener": {
-          "closure_uid_943987451": {}
+          "closure_uid_78352790": {}
         },
         "status": {},
         "swapCache": function () { },
@@ -4789,44 +4797,45 @@ var tf = {
         "appVersion": {},
         "bluetooth": {
           "addEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "dispatchEvent": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "getAvailability": function () { },
           "removeEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "requestDevice": function () { }
         },
+        "clearAppBadge": function () { },
         "clipboard": {
           "addEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "dispatchEvent": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "read": function () { },
           "readText": function () { },
           "removeEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "write": function () { },
           "writeText": function () { }
         },
         "connection": {
           "addEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "dispatchEvent": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "downlink": {},
           "effectiveType": {},
           "onchange": {},
           "removeEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "rtt": {},
           "saveData": {}
@@ -4847,6 +4856,7 @@ var tf = {
         },
         "getBattery": function () { },
         "getGamepads": function () { },
+        "getInstalledRelatedApps": function () { },
         "getUserMedia": function () { },
         "hardwareConcurrency": {},
         "javaEnabled": function () { },
@@ -4867,10 +4877,10 @@ var tf = {
         },
         "mediaDevices": {
           "addEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "dispatchEvent": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "enumerateDevices": function () { },
           "getDisplayMedia": function () { },
@@ -4878,13 +4888,14 @@ var tf = {
           "getUserMedia": function () { },
           "ondevicechange": {},
           "removeEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           }
         },
         "mediaSession": {
           "metadata": {},
           "playbackState": {},
-          "setActionHandler": function () { }
+          "setActionHandler": function () { },
+          "setPositionState": function () { }
         },
         "mimeTypes": {
           "0": {
@@ -5050,23 +5061,25 @@ var tf = {
         "sendBeacon": function () { },
         "serviceWorker": {
           "addEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "controller": {},
           "dispatchEvent": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "getRegistration": function () { },
           "getRegistrations": function () { },
           "oncontrollerchange": {},
           "onmessage": {},
+          "onmessageerror": {},
           "ready": {},
           "register": function () { },
           "removeEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "startMessages": function () { }
         },
+        "setAppBadge": function () { },
         "storage": {
           "estimate": function () { },
           "persist": function () { },
@@ -5075,16 +5088,16 @@ var tf = {
         "unregisterProtocolHandler": function () { },
         "usb": {
           "addEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "dispatchEvent": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "getDevices": function () { },
           "onconnect": {},
           "ondisconnect": {},
           "removeEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "requestDevice": function () { }
         },
@@ -5107,15 +5120,15 @@ var tf = {
         },
         "xr": {
           "addEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "dispatchEvent": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "isSessionSupported": function () { },
           "ondevicechange": {},
           "removeEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "requestSession": function () { },
           "supportsSession": function () { }
@@ -5152,7 +5165,7 @@ var tf = {
       "defaultstatus": {},
       "devicePixelRatio": {},
       "dispatchEvent": {
-        "closure_uid_943987451": {}
+        "closure_uid_78352790": {}
       },
       "document": {},
       "external": {
@@ -5202,6 +5215,7 @@ var tf = {
           "length": {}
         },
         "assign": function () { },
+        "fragmentDirective": {},
         "hash": {},
         "host": {},
         "hostname": {},
@@ -5231,44 +5245,45 @@ var tf = {
         "appVersion": {},
         "bluetooth": {
           "addEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "dispatchEvent": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "getAvailability": function () { },
           "removeEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "requestDevice": function () { }
         },
+        "clearAppBadge": function () { },
         "clipboard": {
           "addEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "dispatchEvent": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "read": function () { },
           "readText": function () { },
           "removeEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "write": function () { },
           "writeText": function () { }
         },
         "connection": {
           "addEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "dispatchEvent": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "downlink": {},
           "effectiveType": {},
           "onchange": {},
           "removeEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "rtt": {},
           "saveData": {}
@@ -5289,6 +5304,7 @@ var tf = {
         },
         "getBattery": function () { },
         "getGamepads": function () { },
+        "getInstalledRelatedApps": function () { },
         "getUserMedia": function () { },
         "hardwareConcurrency": {},
         "javaEnabled": function () { },
@@ -5309,10 +5325,10 @@ var tf = {
         },
         "mediaDevices": {
           "addEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "dispatchEvent": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "enumerateDevices": function () { },
           "getDisplayMedia": function () { },
@@ -5320,13 +5336,14 @@ var tf = {
           "getUserMedia": function () { },
           "ondevicechange": {},
           "removeEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           }
         },
         "mediaSession": {
           "metadata": {},
           "playbackState": {},
-          "setActionHandler": function () { }
+          "setActionHandler": function () { },
+          "setPositionState": function () { }
         },
         "mimeTypes": {
           "0": {
@@ -5492,23 +5509,25 @@ var tf = {
         "sendBeacon": function () { },
         "serviceWorker": {
           "addEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "controller": {},
           "dispatchEvent": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "getRegistration": function () { },
           "getRegistrations": function () { },
           "oncontrollerchange": {},
           "onmessage": {},
+          "onmessageerror": {},
           "ready": {},
           "register": function () { },
           "removeEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "startMessages": function () { }
         },
+        "setAppBadge": function () { },
         "storage": {
           "estimate": function () { },
           "persist": function () { },
@@ -5517,16 +5536,16 @@ var tf = {
         "unregisterProtocolHandler": function () { },
         "usb": {
           "addEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "dispatchEvent": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "getDevices": function () { },
           "onconnect": {},
           "ondisconnect": {},
           "removeEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "requestDevice": function () { }
         },
@@ -5549,15 +5568,15 @@ var tf = {
         },
         "xr": {
           "addEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "dispatchEvent": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "isSessionSupported": function () { },
           "ondevicechange": {},
           "removeEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "requestSession": function () { },
           "supportsSession": function () { }
@@ -6263,6 +6282,7 @@ var tf = {
             "removeEventListener": function () { },
             "requestDevice": function () { }
           },
+          "clearAppBadge": function () { },
           "clipboard": {
             "addEventListener": function () { },
             "dispatchEvent": function () { },
@@ -6298,6 +6318,7 @@ var tf = {
           },
           "getBattery": function () { },
           "getGamepads": function () { },
+          "getInstalledRelatedApps": function () { },
           "getUserMedia": function () { },
           "hardwareConcurrency": {},
           "javaEnabled": function () { },
@@ -6329,7 +6350,8 @@ var tf = {
           "mediaSession": {
             "metadata": {},
             "playbackState": {},
-            "setActionHandler": function () { }
+            "setActionHandler": function () { },
+            "setPositionState": function () { }
           },
           "mimeTypes": {
             "0": {
@@ -6501,11 +6523,13 @@ var tf = {
             "getRegistrations": function () { },
             "oncontrollerchange": {},
             "onmessage": {},
+            "onmessageerror": {},
             "ready": {},
             "register": function () { },
             "removeEventListener": function () { },
             "startMessages": function () { }
           },
+          "setAppBadge": function () { },
           "storage": {
             "estimate": function () { },
             "persist": function () { },
@@ -6636,6 +6660,7 @@ var tf = {
             "length": {}
           },
           "assign": function () { },
+          "fragmentDirective": {},
           "hash": {},
           "host": {},
           "hostname": {},
@@ -6670,6 +6695,7 @@ var tf = {
             "removeEventListener": function () { },
             "requestDevice": function () { }
           },
+          "clearAppBadge": function () { },
           "clipboard": {
             "addEventListener": function () { },
             "dispatchEvent": function () { },
@@ -6705,6 +6731,7 @@ var tf = {
           },
           "getBattery": function () { },
           "getGamepads": function () { },
+          "getInstalledRelatedApps": function () { },
           "getUserMedia": function () { },
           "hardwareConcurrency": {},
           "javaEnabled": function () { },
@@ -6736,7 +6763,8 @@ var tf = {
           "mediaSession": {
             "metadata": {},
             "playbackState": {},
-            "setActionHandler": function () { }
+            "setActionHandler": function () { },
+            "setPositionState": function () { }
           },
           "mimeTypes": {
             "0": {
@@ -6908,11 +6936,13 @@ var tf = {
             "getRegistrations": function () { },
             "oncontrollerchange": {},
             "onmessage": {},
+            "onmessageerror": {},
             "ready": {},
             "register": function () { },
             "removeEventListener": function () { },
             "startMessages": function () { }
           },
+          "setAppBadge": function () { },
           "storage": {
             "estimate": function () { },
             "persist": function () { },
@@ -7240,13 +7270,13 @@ var tf = {
       },
       "performance": {
         "addEventListener": {
-          "closure_uid_943987451": {}
+          "closure_uid_78352790": {}
         },
         "clearMarks": function () { },
         "clearMeasures": function () { },
         "clearResourceTimings": function () { },
         "dispatchEvent": {
-          "closure_uid_943987451": {}
+          "closure_uid_78352790": {}
         },
         "getEntries": function () { },
         "getEntriesByName": function () { },
@@ -7270,7 +7300,7 @@ var tf = {
         "now": function () { },
         "onresourcetimingbufferfull": {},
         "removeEventListener": {
-          "closure_uid_943987451": {}
+          "closure_uid_78352790": {}
         },
         "setResourceTimingBufferSize": function () { },
         "timeOrigin": {},
@@ -7309,7 +7339,7 @@ var tf = {
       "queueMicrotask": function () { },
       "releaseEvents": function () { },
       "removeEventListener": {
-        "closure_uid_943987451": {}
+        "closure_uid_78352790": {}
       },
       "requestAnimationFrame": function () { },
       "requestIdleCallback": function () { },
@@ -7324,16 +7354,16 @@ var tf = {
         "height": {},
         "orientation": {
           "addEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "angle": {},
           "dispatchEvent": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "lock": function () { },
           "onchange": {},
           "removeEventListener": {
-            "closure_uid_943987451": {}
+            "closure_uid_78352790": {}
           },
           "type": {},
           "unlock": function () { }
@@ -7366,11 +7396,11 @@ var tf = {
       "setTimeout": function () { },
       "speechSynthesis": {
         "addEventListener": {
-          "closure_uid_943987451": {}
+          "closure_uid_78352790": {}
         },
         "cancel": function () { },
         "dispatchEvent": {
-          "closure_uid_943987451": {}
+          "closure_uid_78352790": {}
         },
         "getVoices": function () { },
         "onvoiceschanged": {},
@@ -7378,7 +7408,7 @@ var tf = {
         "paused": {},
         "pending": {},
         "removeEventListener": {
-          "closure_uid_943987451": {}
+          "closure_uid_78352790": {}
         },
         "resume": function () { },
         "speak": function () { },
@@ -7410,15 +7440,22 @@ var tf = {
           "className": {},
           "fromConfig": function () { }
         },
+        "Add": {},
+        "AddN": {},
+        "BroadcastTo": {},
         "Callback": function () { },
         "CallbackList": function () { },
         "CustomCallback": function () { },
         "DataStorage": function () { },
+        "Div": {},
         "ENV": {},
         "EarlyStopping": function () { },
         "Environment": function () { },
+        "FromPixels": {},
+        "FusedBatchNorm": {},
         "GraphModel": function () { },
         "History": function () { },
+        "Identity": {},
         "InputSpec": function () { },
         "KernelBackend": function () { },
         "LayerVariable": function () { },
@@ -7427,13 +7464,17 @@ var tf = {
           "fromConfig": function () { },
           "nodeKey": function () { }
         },
+        "MaxPoolWithArgmax": {},
         "MomentumOptimizer": {
           "className": {},
           "fromConfig": function () { }
         },
+        "NonMaxSuppressionV5": {},
+        "OneHot": {},
         "Optimizer": {
           "fromConfig": function () { }
         },
+        "PadV2": {},
         "RMSPropOptimizer": {
           "className": {},
           "fromConfig": function () { }
@@ -7471,9 +7512,13 @@ var tf = {
           "fromConfig": function () { },
           "nodeKey": function () { }
         },
+        "Square": {},
+        "SquaredDifference": {},
         "SymbolicTensor": function () { },
         "Tensor": function () { },
         "TensorBuffer": function () { },
+        "Tile": {},
+        "Transpose": {},
         "Variable": function () { },
         "abs": function () { },
         "acos": function () { },
@@ -7494,6 +7539,7 @@ var tf = {
         "avgPool3d": function () { },
         "backend": function () { },
         "backend_util": {
+          "PARALLELIZE_THRESHOLD": {},
           "assertAndGetBroadcastShape": function () { },
           "assertAxesAreInnerMostDims": function () { },
           "assertParamsConsistent": function () { },
@@ -7503,6 +7549,7 @@ var tf = {
           "computeConv2DInfo": function () { },
           "computeConv3DInfo": function () { },
           "computeDefaultPad": function () { },
+          "computeOptimalWindowSize": function () { },
           "computeOutAndReduceShapes": function () { },
           "computeOutShape": function () { },
           "computePool2DInfo": function () { },
@@ -7625,6 +7672,9 @@ var tf = {
         },
         "gather": function () { },
         "gatherND": function () { },
+        "gather_util": {
+          "prepareAndValidate": function () { }
+        },
         "getBackend": function () { },
         "getGradient": function () { },
         "getKernel": function () { },
@@ -7829,6 +7879,7 @@ var tf = {
         "max": function () { },
         "maxPool": function () { },
         "maxPool3d": function () { },
+        "maxPoolWithArgmax": function () { },
         "maximum": function () { },
         "maximumStrict": function () { },
         "mean": function () { },
@@ -7919,6 +7970,11 @@ var tf = {
         "rsqrt": function () { },
         "scalar": function () { },
         "scatterND": function () { },
+        "scatter_util": {
+          "calculateShapes": function () { },
+          "validateInput": function () { },
+          "validateUpdateShape": function () { }
+        },
         "selu": function () { },
         "separableConv2d": function () { },
         "sequential": function () { },
@@ -8084,6 +8140,7 @@ var tf = {
         "sub": function () { },
         "subStrict": function () { },
         "sum": function () { },
+        "sumOutType": function () { },
         "tan": function () { },
         "tanh": function () { },
         "tensor": function () { },
@@ -8148,6 +8205,7 @@ var tf = {
           "getArrayFromDType": function () { },
           "getTypedArrayFromDType": function () { },
           "hasEncodingLoss": function () { },
+          "indexToLoc": function () { },
           "inferDtype": function () { },
           "inferFromImplicitShape": function () { },
           "isBoolean": function () { },
@@ -8158,6 +8216,7 @@ var tf = {
           "isString": function () { },
           "isTypedArray": function () { },
           "isValidDtype": function () { },
+          "locToIndex": function () { },
           "makeOnesTypedArray": function () { },
           "makeZerosTypedArray": function () { },
           "nearestDivisor": function () { },
@@ -8853,6 +8912,7 @@ var tf = {
             "removeEventListener": function () { },
             "requestDevice": function () { }
           },
+          "clearAppBadge": function () { },
           "clipboard": {
             "addEventListener": function () { },
             "dispatchEvent": function () { },
@@ -8888,6 +8948,7 @@ var tf = {
           },
           "getBattery": function () { },
           "getGamepads": function () { },
+          "getInstalledRelatedApps": function () { },
           "getUserMedia": function () { },
           "hardwareConcurrency": {},
           "javaEnabled": function () { },
@@ -8919,7 +8980,8 @@ var tf = {
           "mediaSession": {
             "metadata": {},
             "playbackState": {},
-            "setActionHandler": function () { }
+            "setActionHandler": function () { },
+            "setPositionState": function () { }
           },
           "mimeTypes": {
             "0": {
@@ -9091,11 +9153,13 @@ var tf = {
             "getRegistrations": function () { },
             "oncontrollerchange": {},
             "onmessage": {},
+            "onmessageerror": {},
             "ready": {},
             "register": function () { },
             "removeEventListener": function () { },
             "startMessages": function () { }
           },
+          "setAppBadge": function () { },
           "storage": {
             "estimate": function () { },
             "persist": function () { },
@@ -9226,6 +9290,7 @@ var tf = {
             "length": {}
           },
           "assign": function () { },
+          "fragmentDirective": {},
           "hash": {},
           "host": {},
           "hostname": {},
@@ -9260,6 +9325,7 @@ var tf = {
             "removeEventListener": function () { },
             "requestDevice": function () { }
           },
+          "clearAppBadge": function () { },
           "clipboard": {
             "addEventListener": function () { },
             "dispatchEvent": function () { },
@@ -9295,6 +9361,7 @@ var tf = {
           },
           "getBattery": function () { },
           "getGamepads": function () { },
+          "getInstalledRelatedApps": function () { },
           "getUserMedia": function () { },
           "hardwareConcurrency": {},
           "javaEnabled": function () { },
@@ -9326,7 +9393,8 @@ var tf = {
           "mediaSession": {
             "metadata": {},
             "playbackState": {},
-            "setActionHandler": function () { }
+            "setActionHandler": function () { },
+            "setPositionState": function () { }
           },
           "mimeTypes": {
             "0": {
@@ -9498,11 +9566,13 @@ var tf = {
             "getRegistrations": function () { },
             "oncontrollerchange": {},
             "onmessage": {},
+            "onmessageerror": {},
             "ready": {},
             "register": function () { },
             "removeEventListener": function () { },
             "startMessages": function () { }
           },
+          "setAppBadge": function () { },
           "storage": {
             "estimate": function () { },
             "persist": function () { },
@@ -9830,10 +9900,10 @@ var tf = {
       },
       "visualViewport": {
         "addEventListener": {
-          "closure_uid_943987451": {}
+          "closure_uid_78352790": {}
         },
         "dispatchEvent": {
-          "closure_uid_943987451": {}
+          "closure_uid_78352790": {}
         },
         "height": {},
         "offsetLeft": {},
@@ -9843,7 +9913,7 @@ var tf = {
         "pageLeft": {},
         "pageTop": {},
         "removeEventListener": {
-          "closure_uid_943987451": {}
+          "closure_uid_78352790": {}
         },
         "scale": {},
         "width": {}
@@ -9877,8 +9947,11 @@ var tf = {
   },
   "EarlyStopping": function () { },
   "Environment": function () { },
+  "FromPixels": {},
+  "FusedBatchNorm": {},
   "GraphModel": function () { },
   "History": function () { },
+  "Identity": {},
   "InputSpec": function () { },
   "KernelBackend": function () { },
   "LayerVariable": function () { },
@@ -9887,13 +9960,17 @@ var tf = {
     "fromConfig": function () { },
     "nodeKey": function () { }
   },
+  "MaxPoolWithArgmax": {},
   "MomentumOptimizer": {
     "className": {},
     "fromConfig": function () { }
   },
+  "NonMaxSuppressionV5": {},
+  "OneHot": {},
   "Optimizer": {
     "fromConfig": function () { }
   },
+  "PadV2": {},
   "RMSPropOptimizer": {
     "className": {},
     "fromConfig": function () { }
@@ -9931,9 +10008,13 @@ var tf = {
     "fromConfig": function () { },
     "nodeKey": function () { }
   },
+  "Square": {},
+  "SquaredDifference": {},
   "SymbolicTensor": function () { },
   "Tensor": function () { },
   "TensorBuffer": function () { },
+  "Tile": {},
+  "Transpose": {},
   "Variable": function () { },
   "abs": function () { },
   "acos": function () { },
@@ -9954,6 +10035,7 @@ var tf = {
   "avgPool3d": function () { },
   "backend": function () { },
   "backend_util": {
+    "PARALLELIZE_THRESHOLD": {},
     "assertAndGetBroadcastShape": function () { },
     "assertAxesAreInnerMostDims": function () { },
     "assertParamsConsistent": function () { },
@@ -9963,6 +10045,7 @@ var tf = {
     "computeConv2DInfo": function () { },
     "computeConv3DInfo": function () { },
     "computeDefaultPad": function () { },
+    "computeOptimalWindowSize": function () { },
     "computeOutAndReduceShapes": function () { },
     "computeOutShape": function () { },
     "computePool2DInfo": function () { },
@@ -10085,6 +10168,9 @@ var tf = {
   },
   "gather": function () { },
   "gatherND": function () { },
+  "gather_util": {
+    "prepareAndValidate": function () { }
+  },
   "getBackend": function () { },
   "getGradient": function () { },
   "getKernel": function () { },
@@ -10289,6 +10375,7 @@ var tf = {
   "max": function () { },
   "maxPool": function () { },
   "maxPool3d": function () { },
+  "maxPoolWithArgmax": function () { },
   "maximum": function () { },
   "maximumStrict": function () { },
   "mean": function () { },
@@ -10379,6 +10466,11 @@ var tf = {
   "rsqrt": function () { },
   "scalar": function () { },
   "scatterND": function () { },
+  "scatter_util": {
+    "calculateShapes": function () { },
+    "validateInput": function () { },
+    "validateUpdateShape": function () { }
+  },
   "selu": function () { },
   "separableConv2d": function () { },
   "sequential": function () { },
@@ -10544,6 +10636,7 @@ var tf = {
   "sub": function () { },
   "subStrict": function () { },
   "sum": function () { },
+  "sumOutType": function () { },
   "tan": function () { },
   "tanh": function () { },
   "tensor": function () { },
@@ -10608,6 +10701,7 @@ var tf = {
     "getArrayFromDType": function () { },
     "getTypedArrayFromDType": function () { },
     "hasEncodingLoss": function () { },
+    "indexToLoc": function () { },
     "inferDtype": function () { },
     "inferFromImplicitShape": function () { },
     "isBoolean": function () { },
@@ -10618,6 +10712,7 @@ var tf = {
     "isString": function () { },
     "isTypedArray": function () { },
     "isValidDtype": function () { },
+    "locToIndex": function () { },
     "makeOnesTypedArray": function () { },
     "makeZerosTypedArray": function () { },
     "nearestDivisor": function () { },
@@ -10985,6 +11080,7 @@ tf.ENV.global._tfengine.backend.constructor.prototype = {
   "sin": function () { },
   "sinh": function () { },
   "slice": function () { },
+  "softmax": function () { },
   "softplus": function () { },
   "spaceToBatchND": function () { },
   "sparseToDense": function () { },
@@ -11173,6 +11269,7 @@ tf.ENV.global._tfengine.registry.webgl.constructor.prototype = {
   "sin": function () { },
   "sinh": function () { },
   "slice": function () { },
+  "softmax": function () { },
   "softplus": function () { },
   "spaceToBatchND": function () { },
   "sparseToDense": function () { },
@@ -11353,6 +11450,7 @@ tf.ENV.global.tf.GraphModel.prototype = {
   "outputNodes": function () { },
   "outputs": function () { },
   "predict": function () { },
+  "save": function () { },
   "weights": function () { }
 };
 tf.ENV.global.tf.History.prototype = {
@@ -11493,6 +11591,7 @@ tf.ENV.global.tf.KernelBackend.prototype = {
   "sin": function () { },
   "sinh": function () { },
   "slice": function () { },
+  "softmax": function () { },
   "softplus": function () { },
   "spaceToBatchND": function () { },
   "sparseToDense": function () { },
@@ -11814,6 +11913,7 @@ tf.ENV.global.tf.Tensor.prototype = {
   "batchNorm": function () { },
   "batchNormalization": function () { },
   "batchToSpaceND": function () { },
+  "broadcastTo": function () { },
   "buffer": function () { },
   "bufferSync": function () { },
   "bytes": function () { },
@@ -11987,6 +12087,7 @@ tf.ENV.global.tf.Variable.prototype = {
   "batchNorm": function () { },
   "batchNormalization": function () { },
   "batchToSpaceND": function () { },
+  "broadcastTo": function () { },
   "buffer": function () { },
   "bufferSync": function () { },
   "bytes": function () { },
@@ -12533,6 +12634,7 @@ tf.ENV.global.tf.webgl.MathBackendWebGL.prototype = {
   "sin": function () { },
   "sinh": function () { },
   "slice": function () { },
+  "softmax": function () { },
   "softplus": function () { },
   "spaceToBatchND": function () { },
   "sparseToDense": function () { },
@@ -12612,6 +12714,7 @@ tf.GraphModel.prototype = {
   "outputNodes": function () { },
   "outputs": function () { },
   "predict": function () { },
+  "save": function () { },
   "weights": function () { }
 };
 tf.History.prototype = {
@@ -12752,6 +12855,7 @@ tf.KernelBackend.prototype = {
   "sin": function () { },
   "sinh": function () { },
   "slice": function () { },
+  "softmax": function () { },
   "softplus": function () { },
   "spaceToBatchND": function () { },
   "sparseToDense": function () { },
@@ -13073,6 +13177,7 @@ tf.Tensor.prototype = {
   "batchNorm": function () { },
   "batchNormalization": function () { },
   "batchToSpaceND": function () { },
+  "broadcastTo": function () { },
   "buffer": function () { },
   "bufferSync": function () { },
   "bytes": function () { },
@@ -13246,6 +13351,7 @@ tf.Variable.prototype = {
   "batchNorm": function () { },
   "batchNormalization": function () { },
   "batchToSpaceND": function () { },
+  "broadcastTo": function () { },
   "buffer": function () { },
   "bufferSync": function () { },
   "bytes": function () { },
@@ -13792,6 +13898,7 @@ tf.webgl.MathBackendWebGL.prototype = {
   "sin": function () { },
   "sinh": function () { },
   "slice": function () { },
+  "softmax": function () { },
   "softplus": function () { },
   "spaceToBatchND": function () { },
   "sparseToDense": function () { },
