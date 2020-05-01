@@ -1,5 +1,5 @@
-(def +lib-version+ "7.3.0")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "7.4.8")
+(def +version+ (str +lib-version+ "-0"))
 
 (set-env!
   :resource-paths #{"resources"}
@@ -20,14 +20,15 @@
 (deftask package  []
   (task-options! push {:ensure-branch nil :tag false})
   (comp
-   (download :url (str "https://unpkg.com/react-day-picker@" +lib-version+ "/lib/daypicker.min.js"))
-   (download :url (str "https://unpkg.com/react-day-picker@" +lib-version+ "/lib/style.css"))
-   (sift :move {#"^daypicker.min.js$"
-                "cljsjs/react-day-picker/development/react-day-picker.inc.js"
-                #"^daypicker.min.js$"
-                "cljsjs/react-day-picker/development/react-day-picker.min.inc.js"
-                #"^style.css$"
-                "cljsjs/react-day-picker/common/react-day-picker.inc.css"})
+   (download 
+    :url (str "https://unpkg.com/react-day-picker@" +lib-version+ "/lib/react-day-picker.min.js")
+    :target "cljsjs/react-day-picker/development/react-day-picker.inc.js")
+   (download
+    :url (str "https://unpkg.com/react-day-picker@" +lib-version+ "/lib/react-day-picker.min.js")
+    :target "cljsjs/react-day-picker/development/react-day-picker.min.inc.js")
+   (download 
+    :url (str "https://unpkg.com/react-day-picker@" +lib-version+ "/lib/style.css")
+    :target "cljsjs/react-day-picker/common/react-day-picker.inc.css")
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.react-day-picker" :requires ["cljsjs.react"])
    (validate-checksums)

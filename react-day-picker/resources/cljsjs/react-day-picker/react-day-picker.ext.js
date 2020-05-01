@@ -4,34 +4,34 @@
  **********************************************************************/
 var DayPicker = {
   "DateUtils": {
-    "addDayToRange": function () {},
-    "addMonths": function () {},
-    "clone": function () {},
+    "addDayToRange": function () { },
+    "addMonths": function () { },
+    "clone": function () { },
     "default": {
-      "addDayToRange": function () {},
-      "addMonths": function () {},
-      "clone": function () {},
-      "getWeekNumber": function () {},
-      "isDate": function () {},
-      "isDayAfter": function () {},
-      "isDayBefore": function () {},
-      "isDayBetween": function () {},
-      "isDayInRange": function () {},
-      "isFutureDay": function () {},
-      "isPastDay": function () {},
-      "isSameDay": function () {},
-      "isSameMonth": function () {}
+      "addDayToRange": function () { },
+      "addMonths": function () { },
+      "clone": function () { },
+      "getWeekNumber": function () { },
+      "isDate": function () { },
+      "isDayAfter": function () { },
+      "isDayBefore": function () { },
+      "isDayBetween": function () { },
+      "isDayInRange": function () { },
+      "isFutureDay": function () { },
+      "isPastDay": function () { },
+      "isSameDay": function () { },
+      "isSameMonth": function () { }
     },
-    "getWeekNumber": function () {},
-    "isDate": function () {},
-    "isDayAfter": function () {},
-    "isDayBefore": function () {},
-    "isDayBetween": function () {},
-    "isDayInRange": function () {},
-    "isFutureDay": function () {},
-    "isPastDay": function () {},
-    "isSameDay": function () {},
-    "isSameMonth": function () {}
+    "getWeekNumber": function () { },
+    "isDate": function () { },
+    "isDayAfter": function () { },
+    "isDayBefore": function () { },
+    "isDayBetween": function () { },
+    "isDayInRange": function () { },
+    "isFutureDay": function () { },
+    "isPastDay": function () { },
+    "isSameDay": function () { },
+    "isSameMonth": function () { }
   },
   "Input": {
     "defaultProps": {
@@ -44,43 +44,133 @@ var DayPicker = {
       "component": {},
       "dayPickerProps": {},
       "format": {},
-      "formatDate": function () {},
+      "formatDate": function () { },
       "hideOnDayClick": {},
       "inputProps": {},
       "keepFocus": {},
       "overlayComponent": {
-        "propTypes": {}
+        "propTypes": {
+          "children": {
+            "isRequired": function () { }
+          },
+          "classNames": {
+            "isRequired": function () { }
+          },
+          "input": {
+            "isRequired": function () { }
+          },
+          "month": {
+            "isRequired": function () { }
+          },
+          "selectedDay": {
+            "isRequired": function () { }
+          }
+        }
       },
-      "parseDate": function () {},
+      "parseDate": function () { },
       "placeholder": {},
       "showOverlay": {},
+      "typedValue": {},
       "value": {}
     },
-    "propTypes": {}
+    "propTypes": {
+      "classNames": {
+        "isRequired": function () { }
+      },
+      "clickUnselectsDay": {
+        "isRequired": function () { }
+      },
+      "component": {
+        "isRequired": function () { }
+      },
+      "dayPickerProps": {
+        "isRequired": function () { }
+      },
+      "format": {
+        "isRequired": function () { }
+      },
+      "formatDate": {
+        "isRequired": function () { }
+      },
+      "hideOnDayClick": {
+        "isRequired": function () { }
+      },
+      "inputProps": {
+        "isRequired": function () { }
+      },
+      "keepFocus": {
+        "isRequired": function () { }
+      },
+      "onBlur": {
+        "isRequired": function () { }
+      },
+      "onChange": {
+        "isRequired": function () { }
+      },
+      "onClick": {
+        "isRequired": function () { }
+      },
+      "onDayChange": {
+        "isRequired": function () { }
+      },
+      "onDayPickerHide": {
+        "isRequired": function () { }
+      },
+      "onDayPickerShow": {
+        "isRequired": function () { }
+      },
+      "onFocus": {
+        "isRequired": function () { }
+      },
+      "onKeyUp": {
+        "isRequired": function () { }
+      },
+      "overlayComponent": {
+        "isRequired": function () { }
+      },
+      "parseDate": {
+        "isRequired": function () { }
+      },
+      "placeholder": {
+        "isRequired": function () { }
+      },
+      "showOverlay": {
+        "isRequired": function () { }
+      },
+      "style": {
+        "isRequired": function () { }
+      },
+      "typedValue": {
+        "isRequired": function () { }
+      },
+      "value": {
+        "isRequired": function () { }
+      }
+    }
   },
   "LocaleUtils": {
     "default": {
-      "formatDay": function () {},
-      "formatMonthTitle": function () {},
-      "formatWeekdayLong": function () {},
-      "formatWeekdayShort": function () {},
-      "getFirstDayOfWeek": function () {},
-      "getMonths": function () {}
+      "formatDay": function () { },
+      "formatMonthTitle": function () { },
+      "formatWeekdayLong": function () { },
+      "formatWeekdayShort": function () { },
+      "getFirstDayOfWeek": function () { },
+      "getMonths": function () { }
     },
-    "formatDay": function () {},
-    "formatMonthTitle": function () {},
-    "formatWeekdayLong": function () {},
-    "formatWeekdayShort": function () {},
-    "getFirstDayOfWeek": function () {},
-    "getMonths": function () {}
+    "formatDay": function () { },
+    "formatMonthTitle": function () { },
+    "formatWeekdayLong": function () { },
+    "formatWeekdayShort": function () { },
+    "getFirstDayOfWeek": function () { },
+    "getMonths": function () { }
   },
   "ModifiersUtils": {
-    "dayMatchesModifier": function () {},
+    "dayMatchesModifier": function () { },
     "default": {
-      "dayMatchesModifier": function () {},
-      "getModifiersForDay": function () {}
+      "dayMatchesModifier": function () { },
+      "getModifiersForDay": function () { }
     },
-    "getModifiersForDay": function () {}
+    "getModifiersForDay": function () { }
   },
   "VERSION": {},
   "defaultProps": {
@@ -88,6 +178,7 @@ var DayPicker = {
     "captionElement": {
       "$$typeof": {},
       "_owner": {},
+      "_store": {},
       "key": {},
       "props": {
         "classNames": {
@@ -116,27 +207,46 @@ var DayPicker = {
           "wrapper": {}
         },
         "localeUtils": {
-          "formatDay": function () {},
-          "formatMonthTitle": function () {},
-          "formatWeekdayLong": function () {},
-          "formatWeekdayShort": function () {},
-          "getFirstDayOfWeek": function () {},
-          "getMonths": function () {}
+          "formatDay": function () { },
+          "formatMonthTitle": function () { },
+          "formatWeekdayLong": function () { },
+          "formatWeekdayShort": function () { },
+          "getFirstDayOfWeek": function () { },
+          "getMonths": function () { }
         }
       },
       "ref": {},
       "type": {
         "defaultProps": {
           "localeUtils": {
-            "formatDay": function () {},
-            "formatMonthTitle": function () {},
-            "formatWeekdayLong": function () {},
-            "formatWeekdayShort": function () {},
-            "getFirstDayOfWeek": function () {},
-            "getMonths": function () {}
+            "formatDay": function () { },
+            "formatMonthTitle": function () { },
+            "formatWeekdayLong": function () { },
+            "formatWeekdayShort": function () { },
+            "getFirstDayOfWeek": function () { },
+            "getMonths": function () { }
           }
         },
-        "propTypes": {}
+        "propTypes": {
+          "classNames": {
+            "isRequired": function () { }
+          },
+          "date": {
+            "isRequired": function () { }
+          },
+          "locale": {
+            "isRequired": function () { }
+          },
+          "localeUtils": {
+            "isRequired": function () { }
+          },
+          "months": {
+            "isRequired": function () { }
+          },
+          "onClick": {
+            "isRequired": function () { }
+          }
+        }
       }
     },
     "classNames": {
@@ -166,7 +276,6 @@ var DayPicker = {
     },
     "enableOutsideDaysClick": {},
     "fixedWeeks": {},
-    "initialMonth": {},
     "labels": {
       "nextMonth": {},
       "previousMonth": {}
@@ -174,23 +283,24 @@ var DayPicker = {
     "locale": {},
     "localeUtils": {
       "default": {
-        "formatDay": function () {},
-        "formatMonthTitle": function () {},
-        "formatWeekdayLong": function () {},
-        "formatWeekdayShort": function () {},
-        "getFirstDayOfWeek": function () {},
-        "getMonths": function () {}
+        "formatDay": function () { },
+        "formatMonthTitle": function () { },
+        "formatWeekdayLong": function () { },
+        "formatWeekdayShort": function () { },
+        "getFirstDayOfWeek": function () { },
+        "getMonths": function () { }
       },
-      "formatDay": function () {},
-      "formatMonthTitle": function () {},
-      "formatWeekdayLong": function () {},
-      "formatWeekdayShort": function () {},
-      "getFirstDayOfWeek": function () {},
-      "getMonths": function () {}
+      "formatDay": function () { },
+      "formatMonthTitle": function () { },
+      "formatWeekdayLong": function () { },
+      "formatWeekdayShort": function () { },
+      "getFirstDayOfWeek": function () { },
+      "getMonths": function () { }
     },
     "navbarElement": {
       "$$typeof": {},
       "_owner": {},
+      "_store": {},
       "key": {},
       "props": {
         "classNames": {
@@ -262,13 +372,38 @@ var DayPicker = {
           "showNextButton": {},
           "showPreviousButton": {}
         },
-        "propTypes": {}
+        "propTypes": {
+          "className": {
+            "isRequired": function () { }
+          },
+          "classNames": {
+            "isRequired": function () { }
+          },
+          "dir": {
+            "isRequired": function () { }
+          },
+          "labels": {
+            "isRequired": function () { }
+          },
+          "onNextClick": {
+            "isRequired": function () { }
+          },
+          "onPreviousClick": {
+            "isRequired": function () { }
+          },
+          "showNextButton": {
+            "isRequired": function () { }
+          },
+          "showPreviousButton": {
+            "isRequired": function () { }
+          }
+        }
       }
     },
     "numberOfMonths": {},
     "pagedNavigation": {},
-    "renderDay": function () {},
-    "renderWeek": function () {},
+    "renderDay": function () { },
+    "renderWeek": function () { },
     "reverseMonths": {},
     "showOutsideDays": {},
     "showWeekDays": {},
@@ -277,40 +412,214 @@ var DayPicker = {
     "weekdayElement": {
       "$$typeof": {},
       "_owner": {},
+      "_store": {},
       "key": {},
       "props": {},
       "ref": {},
       "type": {
-        "propTypes": {}
+        "propTypes": {
+          "className": {
+            "isRequired": function () { }
+          },
+          "locale": {
+            "isRequired": function () { }
+          },
+          "localeUtils": {
+            "isRequired": function () { }
+          },
+          "weekday": {
+            "isRequired": function () { }
+          },
+          "weekdaysLong": {
+            "isRequired": function () { }
+          },
+          "weekdaysShort": {
+            "isRequired": function () { }
+          }
+        }
       }
     }
   },
-  "propTypes": {}
+  "propTypes": {
+    "canChangeMonth": {
+      "isRequired": function () { }
+    },
+    "captionElement": {
+      "isRequired": function () { }
+    },
+    "className": {
+      "isRequired": function () { }
+    },
+    "classNames": {
+      "isRequired": function () { }
+    },
+    "containerProps": {
+      "isRequired": function () { }
+    },
+    "dir": {
+      "isRequired": function () { }
+    },
+    "disabledDays": {
+      "isRequired": function () { }
+    },
+    "enableOutsideDaysClick": {
+      "isRequired": function () { }
+    },
+    "firstDayOfWeek": {
+      "isRequired": function () { }
+    },
+    "fixedWeeks": {
+      "isRequired": function () { }
+    },
+    "fromMonth": {
+      "isRequired": function () { }
+    },
+    "initialMonth": {
+      "isRequired": function () { }
+    },
+    "labels": {
+      "isRequired": function () { }
+    },
+    "locale": {
+      "isRequired": function () { }
+    },
+    "localeUtils": {
+      "isRequired": function () { }
+    },
+    "modifiers": {
+      "isRequired": function () { }
+    },
+    "modifiersStyles": {
+      "isRequired": function () { }
+    },
+    "month": {
+      "isRequired": function () { }
+    },
+    "months": {
+      "isRequired": function () { }
+    },
+    "navbarElement": {
+      "isRequired": function () { }
+    },
+    "numberOfMonths": {
+      "isRequired": function () { }
+    },
+    "onBlur": {
+      "isRequired": function () { }
+    },
+    "onCaptionClick": {
+      "isRequired": function () { }
+    },
+    "onDayClick": {
+      "isRequired": function () { }
+    },
+    "onDayFocus": {
+      "isRequired": function () { }
+    },
+    "onDayKeyDown": {
+      "isRequired": function () { }
+    },
+    "onDayMouseDown": {
+      "isRequired": function () { }
+    },
+    "onDayMouseEnter": {
+      "isRequired": function () { }
+    },
+    "onDayMouseLeave": {
+      "isRequired": function () { }
+    },
+    "onDayMouseUp": {
+      "isRequired": function () { }
+    },
+    "onDayTouchEnd": {
+      "isRequired": function () { }
+    },
+    "onDayTouchStart": {
+      "isRequired": function () { }
+    },
+    "onFocus": {
+      "isRequired": function () { }
+    },
+    "onKeyDown": {
+      "isRequired": function () { }
+    },
+    "onMonthChange": {
+      "isRequired": function () { }
+    },
+    "onTodayButtonClick": {
+      "isRequired": function () { }
+    },
+    "onWeekClick": {
+      "isRequired": function () { }
+    },
+    "pagedNavigation": {
+      "isRequired": function () { }
+    },
+    "renderDay": {
+      "isRequired": function () { }
+    },
+    "renderWeek": {
+      "isRequired": function () { }
+    },
+    "reverseMonths": {
+      "isRequired": function () { }
+    },
+    "selectedDays": {
+      "isRequired": function () { }
+    },
+    "showOutsideDays": {
+      "isRequired": function () { }
+    },
+    "showWeekDays": {
+      "isRequired": function () { }
+    },
+    "showWeekNumbers": {
+      "isRequired": function () { }
+    },
+    "tabIndex": {
+      "isRequired": function () { }
+    },
+    "toMonth": {
+      "isRequired": function () { }
+    },
+    "todayButton": {
+      "isRequired": function () { }
+    },
+    "weekdayElement": {
+      "isRequired": function () { }
+    },
+    "weekdaysLong": {
+      "isRequired": function () { }
+    },
+    "weekdaysShort": {
+      "isRequired": function () { }
+    }
+  }
 };
 DayPicker.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 DayPicker.Input.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 DayPicker.defaultProps.captionElement.type.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 DayPicker.defaultProps.navbarElement.type.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 DayPicker.defaultProps.weekdayElement.type.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 /**********************************************************************
  * End Generated Extern for DayPicker
