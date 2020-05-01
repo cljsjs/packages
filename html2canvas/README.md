@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/html2canvas "1.0.0-alpha.12-1"] ;; latest release
+[cljsjs/html2canvas "1.0.0-rc.5-0"] ;; latest release
 ```
 [](/dependency)
 
