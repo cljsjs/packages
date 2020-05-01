@@ -2564,7 +2564,8 @@ var PIXI = {
       "device": {},
       "ipod": {},
       "phone": {},
-      "tablet": {}
+      "tablet": {},
+      "universal": {}
     },
     "other": {
       "blackberry": {},
@@ -2725,7 +2726,8 @@ var PIXI = {
         "device": {},
         "ipod": {},
         "phone": {},
-        "tablet": {}
+        "tablet": {},
+        "universal": {}
       },
       "other": {
         "blackberry": {},
