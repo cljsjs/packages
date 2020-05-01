@@ -16,6 +16,7 @@ var ReactDraggable = {
       "onMouseDown": function () {},
       "onStart": function () {},
       "onStop": function () {},
+      "scale": {},
       "transform": {}
     },
     "displayName": {},
@@ -73,6 +74,7 @@ var ReactDraggable = {
         "onMouseDown": function () {},
         "onStart": function () {},
         "onStop": function () {},
+        "scale": {},
         "transform": {}
       },
       "displayName": {},
