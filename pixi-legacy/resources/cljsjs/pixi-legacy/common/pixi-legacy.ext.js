@@ -2432,6 +2432,7 @@ var PIXI = {
     "canUseMultiply": {},
     "convertTintToImage": {},
     "getTintedCanvas": function () { },
+    "getTintedPattern": function () { },
     "roundColor": function () { },
     "tintMethod": function () { },
     "tintWithMultiply": function () { },
@@ -2609,7 +2610,8 @@ var PIXI = {
       "device": {},
       "ipod": {},
       "phone": {},
-      "tablet": {}
+      "tablet": {},
+      "universal": {}
     },
     "other": {
       "blackberry": {},
@@ -2771,7 +2773,8 @@ var PIXI = {
         "device": {},
         "ipod": {},
         "phone": {},
-        "tablet": {}
+        "tablet": {},
+        "universal": {}
       },
       "other": {
         "blackberry": {},
@@ -3214,8 +3217,10 @@ PIXI.CanvasExtract.prototype = {
   "pixels": function () { }
 };
 PIXI.CanvasGraphicsRenderer.prototype = {
+  "_calcCanvasStyle": function () { },
   "destroy": function () { },
   "render": function () { },
+  "setPatternTransform": function () { },
   "updateGraphicsTint": function () { }
 };
 PIXI.CanvasMeshRenderer.prototype = {
@@ -3255,7 +3260,8 @@ PIXI.CanvasRenderer.prototype = {
   "removeListener": function () { },
   "render": function () { },
   "resize": function () { },
-  "setBlendMode": function () { }
+  "setBlendMode": function () { },
+  "setContextTransform": function () { }
 };
 PIXI.CanvasRenderer.EventEmitter.prototype = {
   "addListener": function () { },
@@ -3294,8 +3300,10 @@ PIXI.CanvasRenderer.__plugins.extract.prototype = {
   "pixels": function () { }
 };
 PIXI.CanvasRenderer.__plugins.graphics.prototype = {
+  "_calcCanvasStyle": function () { },
   "destroy": function () { },
   "render": function () { },
+  "setPatternTransform": function () { },
   "updateGraphicsTint": function () { }
 };
 PIXI.CanvasRenderer.__plugins.interaction.prototype = {
