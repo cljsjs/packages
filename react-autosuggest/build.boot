@@ -1,10 +1,12 @@
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/boot-cljsjs "0.10.5"  :scope "test"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.10.5"  :scope "test"]
+                 [cljsjs/react "16.8.6-0"]
+                 [cljsjs/react-dom "16.8.6-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "9.4.3")
+(def +lib-version+ "10.0.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -17,9 +19,9 @@
 
 (deftask package []
   (comp
-   (download :url (format "https://unpkg.com/react-autosuggest@%s/dist/standalone/autosuggest.js" +lib-version+)
+   (download :url (format "https://unpkg.com/react-autosuggest@%s/dist/dist/standalone/autosuggest.js" +lib-version+)
              :target "cljsjs/react-autosuggest/development/react-autosuggest.inc.js")
-   (download :url (format "https://unpkg.com/react-autosuggest@%s/dist/standalone/autosuggest.min.js" +lib-version+)
+   (download :url (format "https://unpkg.com/react-autosuggest@%s/dist/dist/standalone/autosuggest.min.js" +lib-version+)
              :target "cljsjs/react-autosuggest/production/react-autosuggest.min.inc.js")
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.react-autosuggest"
