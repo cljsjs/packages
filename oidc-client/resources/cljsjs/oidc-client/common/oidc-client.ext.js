@@ -28,6 +28,7 @@ var Oidc = {
     "fromStorageString": function () {}
   },
   "UserManager": function () {},
+  "Version": {},
   "WebStorageStateStore": function () {}
 };
 Oidc.AccessTokenEvents.prototype = {
@@ -74,7 +75,9 @@ Oidc.OidcClient.prototype = {
   "createSigninRequest": function () {},
   "createSignoutRequest": function () {},
   "processSigninResponse": function () {},
-  "processSignoutResponse": function () {}
+  "processSignoutResponse": function () {},
+  "readSigninResponseState": function () {},
+  "readSignoutResponseState": function () {}
 };
 Oidc.SessionMonitor.prototype = {
   "_callback": function () {},
@@ -110,14 +113,18 @@ Oidc.UserManager.prototype = {
   "processSigninResponse": function () {},
   "processSignoutResponse": function () {},
   "querySessionStatus": function () {},
+  "readSigninResponseState": function () {},
+  "readSignoutResponseState": function () {},
   "removeUser": function () {},
   "revokeAccessToken": function () {},
+  "signinCallback": function () {},
   "signinPopup": function () {},
   "signinPopupCallback": function () {},
   "signinRedirect": function () {},
   "signinRedirectCallback": function () {},
   "signinSilent": function () {},
   "signinSilentCallback": function () {},
+  "signoutCallback": function () {},
   "signoutPopup": function () {},
   "signoutPopupCallback": function () {},
   "signoutRedirect": function () {},
@@ -134,7 +141,7 @@ Oidc.WebStorageStateStore.prototype = {
 };
 /**********************************************************************
  * End Generated Extern for Oidc
-/**********************************************************************/
+ /**********************************************************************/
 
 // Non genenrated externs
 
