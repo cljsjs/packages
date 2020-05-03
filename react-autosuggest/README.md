@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-autosuggest "10.0.1-0"] ;; latest release
+[cljsjs/react-autosuggest "10.0.2-0"] ;; latest release
 ```
 [](/dependency)
 
