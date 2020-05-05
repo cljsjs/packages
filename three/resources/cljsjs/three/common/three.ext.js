@@ -6,10 +6,13 @@ var THREE = {
   "ACESFilmicToneMapping": {},
   "AddEquation": {},
   "AddOperation": {},
+  "AdditiveAnimationBlendMode": {},
   "AdditiveBlending": {},
   "AlphaFormat": {},
   "AlwaysDepth": {},
+  "AlwaysStencilFunc": {},
   "AmbientLight": function () {},
+  "AmbientLightProbe": function () {},
   "AnimationClip": {
     "CreateClipsFromMorphTargetSequences": function () {},
     "CreateFromMorphTargetSequence": function () {},
@@ -27,7 +30,9 @@ var THREE = {
     "flattenJSON": function () {},
     "getKeyframeOrder": function () {},
     "isTypedArray": function () {},
-    "sortedArray": function () {}
+    "makeClipAdditive": function () {},
+    "sortedArray": function () {},
+    "subclip": function () {}
   },
   "ArcCurve": function () {},
   "ArrayCamera": function () {},
@@ -78,7 +83,158 @@ var THREE = {
   "ClampToEdgeWrapping": {},
   "Clock": function () {},
   "ClosedSplineCurve3": function () {},
-  "Color": function () {},
+  "Color": {
+    "NAMES": {
+      "aliceblue": {},
+      "antiquewhite": {},
+      "aqua": {},
+      "aquamarine": {},
+      "azure": {},
+      "beige": {},
+      "bisque": {},
+      "black": {},
+      "blanchedalmond": {},
+      "blue": {},
+      "blueviolet": {},
+      "brown": {},
+      "burlywood": {},
+      "cadetblue": {},
+      "chartreuse": {},
+      "chocolate": {},
+      "coral": {},
+      "cornflowerblue": {},
+      "cornsilk": {},
+      "crimson": {},
+      "cyan": {},
+      "darkblue": {},
+      "darkcyan": {},
+      "darkgoldenrod": {},
+      "darkgray": {},
+      "darkgreen": {},
+      "darkgrey": {},
+      "darkkhaki": {},
+      "darkmagenta": {},
+      "darkolivegreen": {},
+      "darkorange": {},
+      "darkorchid": {},
+      "darkred": {},
+      "darksalmon": {},
+      "darkseagreen": {},
+      "darkslateblue": {},
+      "darkslategray": {},
+      "darkslategrey": {},
+      "darkturquoise": {},
+      "darkviolet": {},
+      "deeppink": {},
+      "deepskyblue": {},
+      "dimgray": {},
+      "dimgrey": {},
+      "dodgerblue": {},
+      "firebrick": {},
+      "floralwhite": {},
+      "forestgreen": {},
+      "fuchsia": {},
+      "gainsboro": {},
+      "ghostwhite": {},
+      "gold": {},
+      "goldenrod": {},
+      "gray": {},
+      "green": {},
+      "greenyellow": {},
+      "grey": {},
+      "honeydew": {},
+      "hotpink": {},
+      "indianred": {},
+      "indigo": {},
+      "ivory": {},
+      "khaki": {},
+      "lavender": {},
+      "lavenderblush": {},
+      "lawngreen": {},
+      "lemonchiffon": {},
+      "lightblue": {},
+      "lightcoral": {},
+      "lightcyan": {},
+      "lightgoldenrodyellow": {},
+      "lightgray": {},
+      "lightgreen": {},
+      "lightgrey": {},
+      "lightpink": {},
+      "lightsalmon": {},
+      "lightseagreen": {},
+      "lightskyblue": {},
+      "lightslategray": {},
+      "lightslategrey": {},
+      "lightsteelblue": {},
+      "lightyellow": {},
+      "lime": {},
+      "limegreen": {},
+      "linen": {},
+      "magenta": {},
+      "maroon": {},
+      "mediumaquamarine": {},
+      "mediumblue": {},
+      "mediumorchid": {},
+      "mediumpurple": {},
+      "mediumseagreen": {},
+      "mediumslateblue": {},
+      "mediumspringgreen": {},
+      "mediumturquoise": {},
+      "mediumvioletred": {},
+      "midnightblue": {},
+      "mintcream": {},
+      "mistyrose": {},
+      "moccasin": {},
+      "navajowhite": {},
+      "navy": {},
+      "oldlace": {},
+      "olive": {},
+      "olivedrab": {},
+      "orange": {},
+      "orangered": {},
+      "orchid": {},
+      "palegoldenrod": {},
+      "palegreen": {},
+      "paleturquoise": {},
+      "palevioletred": {},
+      "papayawhip": {},
+      "peachpuff": {},
+      "peru": {},
+      "pink": {},
+      "plum": {},
+      "powderblue": {},
+      "purple": {},
+      "rebeccapurple": {},
+      "red": {},
+      "rosybrown": {},
+      "royalblue": {},
+      "saddlebrown": {},
+      "salmon": {},
+      "sandybrown": {},
+      "seagreen": {},
+      "seashell": {},
+      "sienna": {},
+      "silver": {},
+      "skyblue": {},
+      "slateblue": {},
+      "slategray": {},
+      "slategrey": {},
+      "snow": {},
+      "springgreen": {},
+      "steelblue": {},
+      "tan": {},
+      "teal": {},
+      "thistle": {},
+      "tomato": {},
+      "turquoise": {},
+      "violet": {},
+      "wheat": {},
+      "white": {},
+      "whitesmoke": {},
+      "yellow": {},
+      "yellowgreen": {}
+    }
+  },
   "ColorKeyframeTrack": function () {},
   "CompressedTexture": function () {},
   "CompressedTextureLoader": function () {},
@@ -108,9 +264,14 @@ var THREE = {
   "CylinderGeometry": function () {},
   "Cylindrical": function () {},
   "DataTexture": function () {},
+  "DataTexture2DArray": function () {},
   "DataTexture3D": function () {},
   "DataTextureLoader": function () {},
+  "DecrementStencilOp": {},
+  "DecrementWrapStencilOp": {},
   "DefaultLoadingManager": {
+    "addHandler": function () {},
+    "getHandler": function () {},
     "itemEnd": function () {},
     "itemError": function () {},
     "itemStart": function () {},
@@ -118,6 +279,7 @@ var THREE = {
     "onLoad": {},
     "onProgress": {},
     "onStart": {},
+    "removeHandler": function () {},
     "resolveURL": function () {},
     "setURLModifier": function () {}
   },
@@ -134,10 +296,14 @@ var THREE = {
   "DstAlphaFactor": {},
   "DstColorFactor": {},
   "DynamicBufferAttribute": function () {},
+  "DynamicCopyUsage": {},
+  "DynamicDrawUsage": {},
+  "DynamicReadUsage": {},
   "EdgesGeometry": function () {},
   "EdgesHelper": function () {},
   "EllipseCurve": function () {},
   "EqualDepth": {},
+  "EqualStencilFunc": {},
   "EquirectangularReflectionMapping": {},
   "EquirectangularRefractionMapping": {},
   "Euler": {
@@ -150,7 +316,6 @@ var THREE = {
   "Face3": function () {},
   "Face4": function () {},
   "FaceColors": {},
-  "FaceNormalsHelper": function () {},
   "FileLoader": function () {},
   "FlatShading": {},
   "Float32Attribute": function () {},
@@ -174,11 +339,14 @@ var THREE = {
   },
   "GreaterDepth": {},
   "GreaterEqualDepth": {},
+  "GreaterEqualStencilFunc": {},
+  "GreaterStencilFunc": {},
   "GridHelper": function () {},
   "Group": function () {},
   "HalfFloatType": {},
   "HemisphereLight": function () {},
   "HemisphereLightHelper": function () {},
+  "HemisphereLightProbe": function () {},
   "IcosahedronBufferGeometry": function () {},
   "IcosahedronGeometry": function () {},
   "ImageBitmapLoader": function () {},
@@ -192,9 +360,12 @@ var THREE = {
     "loadTextureCube": function () {}
   },
   "ImmediateRenderObject": function () {},
+  "IncrementStencilOp": {},
+  "IncrementWrapStencilOp": {},
   "InstancedBufferAttribute": function () {},
   "InstancedBufferGeometry": function () {},
   "InstancedInterleavedBuffer": function () {},
+  "InstancedMesh": function () {},
   "Int16Attribute": function () {},
   "Int16BufferAttribute": function () {},
   "Int32Attribute": function () {},
@@ -208,7 +379,9 @@ var THREE = {
   "InterpolateDiscrete": {},
   "InterpolateLinear": {},
   "InterpolateSmooth": {},
+  "InvertStencilOp": {},
   "JSONLoader": function () {},
+  "KeepStencilOp": {},
   "KeyframeTrack": {
     "toJSON": function () {}
   },
@@ -219,7 +392,10 @@ var THREE = {
   "LensFlare": function () {},
   "LessDepth": {},
   "LessEqualDepth": {},
+  "LessEqualStencilFunc": {},
+  "LessStencilFunc": {},
   "Light": function () {},
+  "LightProbe": function () {},
   "LightShadow": function () {},
   "Line": function () {},
   "Line3": function () {},
@@ -236,12 +412,13 @@ var THREE = {
   "LinearInterpolant": function () {},
   "LinearMipMapLinearFilter": {},
   "LinearMipMapNearestFilter": {},
+  "LinearMipmapLinearFilter": {},
+  "LinearMipmapNearestFilter": {},
   "LinearToneMapping": {},
   "Loader": {
     "Handlers": {
       "add": function () {},
-      "get": function () {},
-      "handlers": {}
+      "get": function () {}
     }
   },
   "LoaderUtils": {
@@ -256,9 +433,12 @@ var THREE = {
   "LuminanceAlphaFormat": {},
   "LuminanceFormat": {},
   "MOUSE": {
+    "DOLLY": {},
     "LEFT": {},
     "MIDDLE": {},
-    "RIGHT": {}
+    "PAN": {},
+    "RIGHT": {},
+    "ROTATE": {}
   },
   "Material": function () {},
   "MaterialLoader": function () {},
@@ -281,6 +461,30 @@ var THREE = {
     "randFloatSpread": function () {},
     "randInt": function () {},
     "random16": function () {},
+    "setQuaternionFromProperEuler": function () {},
+    "smootherstep": function () {},
+    "smoothstep": function () {}
+  },
+  "MathUtils": {
+    "DEG2RAD": {},
+    "RAD2DEG": {},
+    "ceilPowerOfTwo": function () {},
+    "clamp": function () {},
+    "degToRad": function () {},
+    "euclideanModulo": function () {},
+    "floorPowerOfTwo": function () {},
+    "generateUUID": function () {},
+    "isPowerOfTwo": function () {},
+    "lerp": function () {},
+    "mapLinear": function () {},
+    "nearestPowerOfTwo": function () {},
+    "nextPowerOfTwo": function () {},
+    "radToDeg": function () {},
+    "randFloat": function () {},
+    "randFloatSpread": function () {},
+    "randInt": function () {},
+    "random16": function () {},
+    "setQuaternionFromProperEuler": function () {},
     "smootherstep": function () {},
     "smoothstep": function () {}
   },
@@ -308,12 +512,17 @@ var THREE = {
   "NearestFilter": {},
   "NearestMipMapLinearFilter": {},
   "NearestMipMapNearestFilter": {},
+  "NearestMipmapLinearFilter": {},
+  "NearestMipmapNearestFilter": {},
   "NeverDepth": {},
+  "NeverStencilFunc": {},
   "NoBlending": {},
   "NoColors": {},
   "NoToneMapping": {},
+  "NormalAnimationBlendMode": {},
   "NormalBlending": {},
   "NotEqualDepth": {},
+  "NotEqualStencilFunc": {},
   "NumberKeyframeTrack": function () {},
   "Object3D": {
     "DefaultMatrixAutoUpdate": {},
@@ -327,6 +536,7 @@ var THREE = {
       "applyEuler": function () {},
       "applyMatrix3": function () {},
       "applyMatrix4": function () {},
+      "applyNormalMatrix": function () {},
       "applyProjection": function () {},
       "applyQuaternion": function () {},
       "ceil": function () {},
@@ -370,6 +580,7 @@ var THREE = {
       "project": function () {},
       "projectOnPlane": function () {},
       "projectOnVector": function () {},
+      "random": function () {},
       "reflect": function () {},
       "round": function () {},
       "roundToZero": function () {},
@@ -379,6 +590,7 @@ var THREE = {
       "setEulerFromRotationMatrix": function () {},
       "setFromCylindrical": function () {},
       "setFromCylindricalCoords": function () {},
+      "setFromMatrix3Column": function () {},
       "setFromMatrixColumn": function () {},
       "setFromMatrixPosition": function () {},
       "setFromMatrixScale": function () {},
@@ -412,6 +624,7 @@ var THREE = {
   "OrthographicCamera": function () {},
   "PCFShadowMap": {},
   "PCFSoftShadowMap": {},
+  "PMREMGenerator": function () {},
   "ParametricBufferGeometry": function () {},
   "ParametricGeometry": function () {},
   "Particle": function () {},
@@ -434,7 +647,6 @@ var THREE = {
   "PolyhedronBufferGeometry": function () {},
   "PolyhedronGeometry": function () {},
   "PositionalAudio": function () {},
-  "Projector": function () {},
   "PropertyBinding": {
     "Composite": function () {},
     "create": function () {},
@@ -446,6 +658,7 @@ var THREE = {
   "QuadraticBezierCurve": function () {},
   "QuadraticBezierCurve3": function () {},
   "Quaternion": {
+    "multiplyQuaternionsFlat": function () {},
     "slerp": function () {},
     "slerpFlat": function () {}
   },
@@ -454,6 +667,7 @@ var THREE = {
   "REVISION": {},
   "RGBADepthPacking": {},
   "RGBAFormat": {},
+  "RGBAIntegerFormat": {},
   "RGBA_ASTC_10x10_Format": {},
   "RGBA_ASTC_10x5_Format": {},
   "RGBA_ASTC_10x6_Format": {},
@@ -468,6 +682,8 @@ var THREE = {
   "RGBA_ASTC_8x5_Format": {},
   "RGBA_ASTC_8x6_Format": {},
   "RGBA_ASTC_8x8_Format": {},
+  "RGBA_BPTC_Format": {},
+  "RGBA_ETC2_EAC_Format": {},
   "RGBA_PVRTC_2BPPV1_Format": {},
   "RGBA_PVRTC_4BPPV1_Format": {},
   "RGBA_S3TC_DXT1_Format": {},
@@ -477,23 +693,42 @@ var THREE = {
   "RGBEEncoding": {},
   "RGBEFormat": {},
   "RGBFormat": {},
+  "RGBIntegerFormat": {},
   "RGBM16Encoding": {},
   "RGBM7Encoding": {},
   "RGB_ETC1_Format": {},
+  "RGB_ETC2_Format": {},
   "RGB_PVRTC_2BPPV1_Format": {},
   "RGB_PVRTC_4BPPV1_Format": {},
   "RGB_S3TC_DXT1_Format": {},
+  "RGFormat": {},
+  "RGIntegerFormat": {},
   "RawShaderMaterial": function () {},
   "Ray": function () {},
   "Raycaster": function () {},
   "RectAreaLight": function () {},
-  "RectAreaLightHelper": function () {},
   "RedFormat": {},
+  "RedIntegerFormat": {},
   "ReinhardToneMapping": {},
   "RepeatWrapping": {},
+  "ReplaceStencilOp": {},
   "ReverseSubtractEquation": {},
   "RingBufferGeometry": function () {},
   "RingGeometry": function () {},
+  "SRGB8_ALPHA8_ASTC_10x10_Format": {},
+  "SRGB8_ALPHA8_ASTC_10x5_Format": {},
+  "SRGB8_ALPHA8_ASTC_10x6_Format": {},
+  "SRGB8_ALPHA8_ASTC_10x8_Format": {},
+  "SRGB8_ALPHA8_ASTC_12x10_Format": {},
+  "SRGB8_ALPHA8_ASTC_12x12_Format": {},
+  "SRGB8_ALPHA8_ASTC_4x4_Format": {},
+  "SRGB8_ALPHA8_ASTC_5x4_Format": {},
+  "SRGB8_ALPHA8_ASTC_5x5_Format": {},
+  "SRGB8_ALPHA8_ASTC_6x5_Format": {},
+  "SRGB8_ALPHA8_ASTC_6x6_Format": {},
+  "SRGB8_ALPHA8_ASTC_8x5_Format": {},
+  "SRGB8_ALPHA8_ASTC_8x6_Format": {},
+  "SRGB8_ALPHA8_ASTC_8x8_Format": {},
   "Scene": function () {},
   "SceneUtils": {
     "attach": function () {},
@@ -512,6 +747,9 @@ var THREE = {
     "beginnormal_vertex": {},
     "bsdfs": {},
     "bumpmap_pars_fragment": {},
+    "clearcoat_normal_fragment_begin": {},
+    "clearcoat_normal_fragment_maps": {},
+    "clearcoat_pars_fragment": {},
     "clipping_planes_fragment": {},
     "clipping_planes_pars_fragment": {},
     "clipping_planes_pars_vertex": {},
@@ -537,6 +775,7 @@ var THREE = {
     "emissivemap_pars_fragment": {},
     "encodings_fragment": {},
     "encodings_pars_fragment": {},
+    "envmap_common_pars_fragment": {},
     "envmap_fragment": {},
     "envmap_pars_fragment": {},
     "envmap_pars_vertex": {},
@@ -560,6 +799,8 @@ var THREE = {
     "lights_phong_pars_fragment": {},
     "lights_physical_fragment": {},
     "lights_physical_pars_fragment": {},
+    "lights_toon_fragment": {},
+    "lights_toon_pars_fragment": {},
     "linedashed_frag": {},
     "linedashed_vert": {},
     "logdepthbuf_fragment": {},
@@ -580,6 +821,8 @@ var THREE = {
     "meshphong_vert": {},
     "meshphysical_frag": {},
     "meshphysical_vert": {},
+    "meshtoon_frag": {},
+    "meshtoon_vert": {},
     "metalnessmap_fragment": {},
     "metalnessmap_pars_fragment": {},
     "morphnormal_vertex": {},
@@ -630,7 +873,6 @@ var THREE = {
         },
         "uvTransform": {
           "value": {
-            "applyToBuffer": function () {},
             "applyToBufferAttribute": function () {},
             "applyToVector3Array": function () {},
             "clone": function () {},
@@ -638,6 +880,7 @@ var THREE = {
             "determinant": function () {},
             "elements": {},
             "equals": function () {},
+            "extractBasis": function () {},
             "flattenToArrayOffset": function () {},
             "fromArray": function () {},
             "getInverse": function () {},
@@ -707,6 +950,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -754,6 +998,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -797,9 +1042,8 @@ var THREE = {
         "specularMap": {
           "value": {}
         },
-        "uvTransform": {
+        "uv2Transform": {
           "value": {
-            "applyToBuffer": function () {},
             "applyToBufferAttribute": function () {},
             "applyToVector3Array": function () {},
             "clone": function () {},
@@ -807,6 +1051,40 @@ var THREE = {
             "determinant": function () {},
             "elements": {},
             "equals": function () {},
+            "extractBasis": function () {},
+            "flattenToArrayOffset": function () {},
+            "fromArray": function () {},
+            "getInverse": function () {},
+            "getNormalMatrix": function () {},
+            "identity": function () {},
+            "isMatrix3": {},
+            "multiply": function () {},
+            "multiplyMatrices": function () {},
+            "multiplyScalar": function () {},
+            "multiplyVector3": function () {},
+            "multiplyVector3Array": function () {},
+            "premultiply": function () {},
+            "rotate": function () {},
+            "scale": function () {},
+            "set": function () {},
+            "setFromMatrix4": function () {},
+            "setUvTransform": function () {},
+            "toArray": function () {},
+            "translate": function () {},
+            "transpose": function () {},
+            "transposeIntoArray": function () {}
+          }
+        },
+        "uvTransform": {
+          "value": {
+            "applyToBufferAttribute": function () {},
+            "applyToVector3Array": function () {},
+            "clone": function () {},
+            "copy": function () {},
+            "determinant": function () {},
+            "elements": {},
+            "equals": function () {},
+            "extractBasis": function () {},
             "flattenToArrayOffset": function () {},
             "fromArray": function () {},
             "getInverse": function () {},
@@ -836,13 +1114,22 @@ var THREE = {
     "cube": {
       "fragmentShader": {},
       "uniforms": {
+        "envMap": {
+          "value": {}
+        },
+        "flipEnvMap": {
+          "value": {}
+        },
+        "maxMipLevel": {
+          "value": {}
+        },
         "opacity": {
           "value": {}
         },
-        "tCube": {
+        "reflectivity": {
           "value": {}
         },
-        "tFlip": {
+        "refractionRatio": {
           "value": {}
         }
       },
@@ -888,6 +1175,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -929,6 +1217,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -960,9 +1249,8 @@ var THREE = {
         "totalSize": {
           "value": {}
         },
-        "uvTransform": {
+        "uv2Transform": {
           "value": {
-            "applyToBuffer": function () {},
             "applyToBufferAttribute": function () {},
             "applyToVector3Array": function () {},
             "clone": function () {},
@@ -970,6 +1258,40 @@ var THREE = {
             "determinant": function () {},
             "elements": {},
             "equals": function () {},
+            "extractBasis": function () {},
+            "flattenToArrayOffset": function () {},
+            "fromArray": function () {},
+            "getInverse": function () {},
+            "getNormalMatrix": function () {},
+            "identity": function () {},
+            "isMatrix3": {},
+            "multiply": function () {},
+            "multiplyMatrices": function () {},
+            "multiplyScalar": function () {},
+            "multiplyVector3": function () {},
+            "multiplyVector3Array": function () {},
+            "premultiply": function () {},
+            "rotate": function () {},
+            "scale": function () {},
+            "set": function () {},
+            "setFromMatrix4": function () {},
+            "setUvTransform": function () {},
+            "toArray": function () {},
+            "translate": function () {},
+            "transpose": function () {},
+            "transposeIntoArray": function () {}
+          }
+        },
+        "uvTransform": {
+          "value": {
+            "applyToBufferAttribute": function () {},
+            "applyToVector3Array": function () {},
+            "clone": function () {},
+            "copy": function () {},
+            "determinant": function () {},
+            "elements": {},
+            "equals": function () {},
+            "extractBasis": function () {},
             "flattenToArrayOffset": function () {},
             "fromArray": function () {},
             "getInverse": function () {},
@@ -1033,6 +1355,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -1058,9 +1381,8 @@ var THREE = {
         "opacity": {
           "value": {}
         },
-        "uvTransform": {
+        "uv2Transform": {
           "value": {
-            "applyToBuffer": function () {},
             "applyToBufferAttribute": function () {},
             "applyToVector3Array": function () {},
             "clone": function () {},
@@ -1068,6 +1390,40 @@ var THREE = {
             "determinant": function () {},
             "elements": {},
             "equals": function () {},
+            "extractBasis": function () {},
+            "flattenToArrayOffset": function () {},
+            "fromArray": function () {},
+            "getInverse": function () {},
+            "getNormalMatrix": function () {},
+            "identity": function () {},
+            "isMatrix3": {},
+            "multiply": function () {},
+            "multiplyMatrices": function () {},
+            "multiplyScalar": function () {},
+            "multiplyVector3": function () {},
+            "multiplyVector3Array": function () {},
+            "premultiply": function () {},
+            "rotate": function () {},
+            "scale": function () {},
+            "set": function () {},
+            "setFromMatrix4": function () {},
+            "setUvTransform": function () {},
+            "toArray": function () {},
+            "translate": function () {},
+            "transpose": function () {},
+            "transposeIntoArray": function () {}
+          }
+        },
+        "uvTransform": {
+          "value": {
+            "applyToBufferAttribute": function () {},
+            "applyToVector3Array": function () {},
+            "clone": function () {},
+            "copy": function () {},
+            "determinant": function () {},
+            "elements": {},
+            "equals": function () {},
+            "extractBasis": function () {},
             "flattenToArrayOffset": function () {},
             "fromArray": function () {},
             "getInverse": function () {},
@@ -1131,6 +1487,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -1173,6 +1530,7 @@ var THREE = {
             "applyEuler": function () {},
             "applyMatrix3": function () {},
             "applyMatrix4": function () {},
+            "applyNormalMatrix": function () {},
             "applyProjection": function () {},
             "applyQuaternion": function () {},
             "ceil": function () {},
@@ -1216,6 +1574,7 @@ var THREE = {
             "project": function () {},
             "projectOnPlane": function () {},
             "projectOnVector": function () {},
+            "random": function () {},
             "reflect": function () {},
             "round": function () {},
             "roundToZero": function () {},
@@ -1225,6 +1584,7 @@ var THREE = {
             "setEulerFromRotationMatrix": function () {},
             "setFromCylindrical": function () {},
             "setFromCylindricalCoords": function () {},
+            "setFromMatrix3Column": function () {},
             "setFromMatrixColumn": function () {},
             "setFromMatrixPosition": function () {},
             "setFromMatrixScale": function () {},
@@ -1246,9 +1606,8 @@ var THREE = {
             "z": {}
           }
         },
-        "uvTransform": {
+        "uv2Transform": {
           "value": {
-            "applyToBuffer": function () {},
             "applyToBufferAttribute": function () {},
             "applyToVector3Array": function () {},
             "clone": function () {},
@@ -1256,6 +1615,40 @@ var THREE = {
             "determinant": function () {},
             "elements": {},
             "equals": function () {},
+            "extractBasis": function () {},
+            "flattenToArrayOffset": function () {},
+            "fromArray": function () {},
+            "getInverse": function () {},
+            "getNormalMatrix": function () {},
+            "identity": function () {},
+            "isMatrix3": {},
+            "multiply": function () {},
+            "multiplyMatrices": function () {},
+            "multiplyScalar": function () {},
+            "multiplyVector3": function () {},
+            "multiplyVector3Array": function () {},
+            "premultiply": function () {},
+            "rotate": function () {},
+            "scale": function () {},
+            "set": function () {},
+            "setFromMatrix4": function () {},
+            "setUvTransform": function () {},
+            "toArray": function () {},
+            "translate": function () {},
+            "transpose": function () {},
+            "transposeIntoArray": function () {}
+          }
+        },
+        "uvTransform": {
+          "value": {
+            "applyToBufferAttribute": function () {},
+            "applyToVector3Array": function () {},
+            "clone": function () {},
+            "copy": function () {},
+            "determinant": function () {},
+            "elements": {},
+            "equals": function () {},
+            "extractBasis": function () {},
             "flattenToArrayOffset": function () {},
             "fromArray": function () {},
             "getInverse": function () {},
@@ -1337,6 +1730,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -1347,14 +1741,18 @@ var THREE = {
             "toJSON": function () {}
           }
         },
-        "directionalLights": {
+        "directionalLightShadows": {
           "properties": {
-            "color": {},
-            "direction": {},
-            "shadow": {},
             "shadowBias": {},
             "shadowMapSize": {},
             "shadowRadius": {}
+          },
+          "value": {}
+        },
+        "directionalLights": {
+          "properties": {
+            "color": {},
+            "direction": {}
           },
           "value": {}
         },
@@ -1395,6 +1793,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -1445,6 +1844,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -1478,6 +1878,9 @@ var THREE = {
         "lightMapIntensity": {
           "value": {}
         },
+        "lightProbe": {
+          "value": {}
+        },
         "map": {
           "value": {}
         },
@@ -1487,18 +1890,22 @@ var THREE = {
         "opacity": {
           "value": {}
         },
-        "pointLights": {
+        "pointLightShadows": {
           "properties": {
-            "color": {},
-            "decay": {},
-            "distance": {},
-            "position": {},
-            "shadow": {},
             "shadowBias": {},
             "shadowCameraFar": {},
             "shadowCameraNear": {},
             "shadowMapSize": {},
             "shadowRadius": {}
+          },
+          "value": {}
+        },
+        "pointLights": {
+          "properties": {
+            "color": {},
+            "decay": {},
+            "distance": {},
+            "position": {}
           },
           "value": {}
         },
@@ -1526,6 +1933,14 @@ var THREE = {
         "specularMap": {
           "value": {}
         },
+        "spotLightShadows": {
+          "properties": {
+            "shadowBias": {},
+            "shadowMapSize": {},
+            "shadowRadius": {}
+          },
+          "value": {}
+        },
         "spotLights": {
           "properties": {
             "color": {},
@@ -1534,11 +1949,7 @@ var THREE = {
             "direction": {},
             "distance": {},
             "penumbraCos": {},
-            "position": {},
-            "shadow": {},
-            "shadowBias": {},
-            "shadowMapSize": {},
-            "shadowRadius": {}
+            "position": {}
           },
           "value": {}
         },
@@ -1548,9 +1959,8 @@ var THREE = {
         "spotShadowMatrix": {
           "value": {}
         },
-        "uvTransform": {
+        "uv2Transform": {
           "value": {
-            "applyToBuffer": function () {},
             "applyToBufferAttribute": function () {},
             "applyToVector3Array": function () {},
             "clone": function () {},
@@ -1558,6 +1968,40 @@ var THREE = {
             "determinant": function () {},
             "elements": {},
             "equals": function () {},
+            "extractBasis": function () {},
+            "flattenToArrayOffset": function () {},
+            "fromArray": function () {},
+            "getInverse": function () {},
+            "getNormalMatrix": function () {},
+            "identity": function () {},
+            "isMatrix3": {},
+            "multiply": function () {},
+            "multiplyMatrices": function () {},
+            "multiplyScalar": function () {},
+            "multiplyVector3": function () {},
+            "multiplyVector3Array": function () {},
+            "premultiply": function () {},
+            "rotate": function () {},
+            "scale": function () {},
+            "set": function () {},
+            "setFromMatrix4": function () {},
+            "setUvTransform": function () {},
+            "toArray": function () {},
+            "translate": function () {},
+            "transpose": function () {},
+            "transposeIntoArray": function () {}
+          }
+        },
+        "uvTransform": {
+          "value": {
+            "applyToBufferAttribute": function () {},
+            "applyToVector3Array": function () {},
+            "clone": function () {},
+            "copy": function () {},
+            "determinant": function () {},
+            "elements": {},
+            "equals": function () {},
+            "extractBasis": function () {},
             "flattenToArrayOffset": function () {},
             "fromArray": function () {},
             "getInverse": function () {},
@@ -1627,6 +2071,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -1677,6 +2122,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -1746,6 +2192,7 @@ var THREE = {
             "multiplyScalar": function () {},
             "negate": function () {},
             "normalize": function () {},
+            "random": function () {},
             "rotateAround": function () {},
             "round": function () {},
             "roundToZero": function () {},
@@ -1766,9 +2213,8 @@ var THREE = {
         "opacity": {
           "value": {}
         },
-        "uvTransform": {
+        "uv2Transform": {
           "value": {
-            "applyToBuffer": function () {},
             "applyToBufferAttribute": function () {},
             "applyToVector3Array": function () {},
             "clone": function () {},
@@ -1776,6 +2222,40 @@ var THREE = {
             "determinant": function () {},
             "elements": {},
             "equals": function () {},
+            "extractBasis": function () {},
+            "flattenToArrayOffset": function () {},
+            "fromArray": function () {},
+            "getInverse": function () {},
+            "getNormalMatrix": function () {},
+            "identity": function () {},
+            "isMatrix3": {},
+            "multiply": function () {},
+            "multiplyMatrices": function () {},
+            "multiplyScalar": function () {},
+            "multiplyVector3": function () {},
+            "multiplyVector3Array": function () {},
+            "premultiply": function () {},
+            "rotate": function () {},
+            "scale": function () {},
+            "set": function () {},
+            "setFromMatrix4": function () {},
+            "setUvTransform": function () {},
+            "toArray": function () {},
+            "translate": function () {},
+            "transpose": function () {},
+            "transposeIntoArray": function () {}
+          }
+        },
+        "uvTransform": {
+          "value": {
+            "applyToBufferAttribute": function () {},
+            "applyToVector3Array": function () {},
+            "clone": function () {},
+            "copy": function () {},
+            "determinant": function () {},
+            "elements": {},
+            "equals": function () {},
+            "extractBasis": function () {},
             "flattenToArrayOffset": function () {},
             "fromArray": function () {},
             "getInverse": function () {},
@@ -1845,6 +2325,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -1911,6 +2392,7 @@ var THREE = {
             "multiplyScalar": function () {},
             "negate": function () {},
             "normalize": function () {},
+            "random": function () {},
             "rotateAround": function () {},
             "round": function () {},
             "roundToZero": function () {},
@@ -1931,9 +2413,8 @@ var THREE = {
         "opacity": {
           "value": {}
         },
-        "uvTransform": {
+        "uv2Transform": {
           "value": {
-            "applyToBuffer": function () {},
             "applyToBufferAttribute": function () {},
             "applyToVector3Array": function () {},
             "clone": function () {},
@@ -1941,6 +2422,40 @@ var THREE = {
             "determinant": function () {},
             "elements": {},
             "equals": function () {},
+            "extractBasis": function () {},
+            "flattenToArrayOffset": function () {},
+            "fromArray": function () {},
+            "getInverse": function () {},
+            "getNormalMatrix": function () {},
+            "identity": function () {},
+            "isMatrix3": {},
+            "multiply": function () {},
+            "multiplyMatrices": function () {},
+            "multiplyScalar": function () {},
+            "multiplyVector3": function () {},
+            "multiplyVector3Array": function () {},
+            "premultiply": function () {},
+            "rotate": function () {},
+            "scale": function () {},
+            "set": function () {},
+            "setFromMatrix4": function () {},
+            "setUvTransform": function () {},
+            "toArray": function () {},
+            "translate": function () {},
+            "transpose": function () {},
+            "transposeIntoArray": function () {}
+          }
+        },
+        "uvTransform": {
+          "value": {
+            "applyToBufferAttribute": function () {},
+            "applyToVector3Array": function () {},
+            "clone": function () {},
+            "copy": function () {},
+            "determinant": function () {},
+            "elements": {},
+            "equals": function () {},
+            "extractBasis": function () {},
             "flattenToArrayOffset": function () {},
             "fromArray": function () {},
             "getInverse": function () {},
@@ -2019,6 +2534,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -2029,14 +2545,18 @@ var THREE = {
             "toJSON": function () {}
           }
         },
-        "directionalLights": {
+        "directionalLightShadows": {
           "properties": {
-            "color": {},
-            "direction": {},
-            "shadow": {},
             "shadowBias": {},
             "shadowMapSize": {},
             "shadowRadius": {}
+          },
+          "value": {}
+        },
+        "directionalLights": {
+          "properties": {
+            "color": {},
+            "direction": {}
           },
           "value": {}
         },
@@ -2086,6 +2606,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -2136,6 +2657,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -2155,9 +2677,6 @@ var THREE = {
         "fogNear": {
           "value": {}
         },
-        "gradientMap": {
-          "value": {}
-        },
         "hemisphereLights": {
           "properties": {
             "direction": {},
@@ -2170,6 +2689,9 @@ var THREE = {
           "value": {}
         },
         "lightMapIntensity": {
+          "value": {}
+        },
+        "lightProbe": {
           "value": {}
         },
         "map": {
@@ -2222,6 +2744,7 @@ var THREE = {
             "multiplyScalar": function () {},
             "negate": function () {},
             "normalize": function () {},
+            "random": function () {},
             "rotateAround": function () {},
             "round": function () {},
             "roundToZero": function () {},
@@ -2242,18 +2765,22 @@ var THREE = {
         "opacity": {
           "value": {}
         },
-        "pointLights": {
+        "pointLightShadows": {
           "properties": {
-            "color": {},
-            "decay": {},
-            "distance": {},
-            "position": {},
-            "shadow": {},
             "shadowBias": {},
             "shadowCameraFar": {},
             "shadowCameraNear": {},
             "shadowMapSize": {},
             "shadowRadius": {}
+          },
+          "value": {}
+        },
+        "pointLights": {
+          "properties": {
+            "color": {},
+            "decay": {},
+            "distance": {},
+            "position": {}
           },
           "value": {}
         },
@@ -2312,6 +2839,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -2325,6 +2853,14 @@ var THREE = {
         "specularMap": {
           "value": {}
         },
+        "spotLightShadows": {
+          "properties": {
+            "shadowBias": {},
+            "shadowMapSize": {},
+            "shadowRadius": {}
+          },
+          "value": {}
+        },
         "spotLights": {
           "properties": {
             "color": {},
@@ -2333,11 +2869,7 @@ var THREE = {
             "direction": {},
             "distance": {},
             "penumbraCos": {},
-            "position": {},
-            "shadow": {},
-            "shadowBias": {},
-            "shadowMapSize": {},
-            "shadowRadius": {}
+            "position": {}
           },
           "value": {}
         },
@@ -2347,9 +2879,8 @@ var THREE = {
         "spotShadowMatrix": {
           "value": {}
         },
-        "uvTransform": {
+        "uv2Transform": {
           "value": {
-            "applyToBuffer": function () {},
             "applyToBufferAttribute": function () {},
             "applyToVector3Array": function () {},
             "clone": function () {},
@@ -2357,6 +2888,40 @@ var THREE = {
             "determinant": function () {},
             "elements": {},
             "equals": function () {},
+            "extractBasis": function () {},
+            "flattenToArrayOffset": function () {},
+            "fromArray": function () {},
+            "getInverse": function () {},
+            "getNormalMatrix": function () {},
+            "identity": function () {},
+            "isMatrix3": {},
+            "multiply": function () {},
+            "multiplyMatrices": function () {},
+            "multiplyScalar": function () {},
+            "multiplyVector3": function () {},
+            "multiplyVector3Array": function () {},
+            "premultiply": function () {},
+            "rotate": function () {},
+            "scale": function () {},
+            "set": function () {},
+            "setFromMatrix4": function () {},
+            "setUvTransform": function () {},
+            "toArray": function () {},
+            "translate": function () {},
+            "transpose": function () {},
+            "transposeIntoArray": function () {}
+          }
+        },
+        "uvTransform": {
+          "value": {
+            "applyToBufferAttribute": function () {},
+            "applyToVector3Array": function () {},
+            "clone": function () {},
+            "copy": function () {},
+            "determinant": function () {},
+            "elements": {},
+            "equals": function () {},
+            "extractBasis": function () {},
             "flattenToArrayOffset": function () {},
             "fromArray": function () {},
             "getInverse": function () {},
@@ -2404,10 +2969,78 @@ var THREE = {
         "bumpScale": {
           "value": {}
         },
-        "clearCoat": {
+        "clearcoat": {
           "value": {}
         },
-        "clearCoatRoughness": {
+        "clearcoatMap": {
+          "value": {}
+        },
+        "clearcoatNormalMap": {
+          "value": {}
+        },
+        "clearcoatNormalScale": {
+          "value": {
+            "add": function () {},
+            "addScalar": function () {},
+            "addScaledVector": function () {},
+            "addVectors": function () {},
+            "angle": function () {},
+            "applyMatrix3": function () {},
+            "ceil": function () {},
+            "clamp": function () {},
+            "clampLength": function () {},
+            "clampScalar": function () {},
+            "clone": function () {},
+            "copy": function () {},
+            "cross": function () {},
+            "distanceTo": function () {},
+            "distanceToManhattan": function () {},
+            "distanceToSquared": function () {},
+            "divide": function () {},
+            "divideScalar": function () {},
+            "dot": function () {},
+            "equals": function () {},
+            "floor": function () {},
+            "fromArray": function () {},
+            "fromAttribute": function () {},
+            "fromBufferAttribute": function () {},
+            "getComponent": function () {},
+            "isVector2": {},
+            "length": function () {},
+            "lengthManhattan": function () {},
+            "lengthSq": function () {},
+            "lerp": function () {},
+            "lerpVectors": function () {},
+            "manhattanDistanceTo": function () {},
+            "manhattanLength": function () {},
+            "max": function () {},
+            "min": function () {},
+            "multiply": function () {},
+            "multiplyScalar": function () {},
+            "negate": function () {},
+            "normalize": function () {},
+            "random": function () {},
+            "rotateAround": function () {},
+            "round": function () {},
+            "roundToZero": function () {},
+            "set": function () {},
+            "setComponent": function () {},
+            "setLength": function () {},
+            "setScalar": function () {},
+            "setX": function () {},
+            "setY": function () {},
+            "sub": function () {},
+            "subScalar": function () {},
+            "subVectors": function () {},
+            "toArray": function () {},
+            "x": {},
+            "y": {}
+          }
+        },
+        "clearcoatRoughness": {
+          "value": {}
+        },
+        "clearcoatRoughnessMap": {
           "value": {}
         },
         "diffuse": {
@@ -2441,6 +3074,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -2451,14 +3085,18 @@ var THREE = {
             "toJSON": function () {}
           }
         },
-        "directionalLights": {
+        "directionalLightShadows": {
           "properties": {
-            "color": {},
-            "direction": {},
-            "shadow": {},
             "shadowBias": {},
             "shadowMapSize": {},
             "shadowRadius": {}
+          },
+          "value": {}
+        },
+        "directionalLights": {
+          "properties": {
+            "color": {},
+            "direction": {}
           },
           "value": {}
         },
@@ -2508,6 +3146,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -2561,6 +3200,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -2592,6 +3232,9 @@ var THREE = {
           "value": {}
         },
         "lightMapIntensity": {
+          "value": {}
+        },
+        "lightProbe": {
           "value": {}
         },
         "map": {
@@ -2650,6 +3293,7 @@ var THREE = {
             "multiplyScalar": function () {},
             "negate": function () {},
             "normalize": function () {},
+            "random": function () {},
             "rotateAround": function () {},
             "round": function () {},
             "roundToZero": function () {},
@@ -2670,18 +3314,22 @@ var THREE = {
         "opacity": {
           "value": {}
         },
-        "pointLights": {
+        "pointLightShadows": {
           "properties": {
-            "color": {},
-            "decay": {},
-            "distance": {},
-            "position": {},
-            "shadow": {},
             "shadowBias": {},
             "shadowCameraFar": {},
             "shadowCameraNear": {},
             "shadowMapSize": {},
             "shadowRadius": {}
+          },
+          "value": {}
+        },
+        "pointLights": {
+          "properties": {
+            "color": {},
+            "decay": {},
+            "distance": {},
+            "position": {}
           },
           "value": {}
         },
@@ -2712,6 +3360,56 @@ var THREE = {
         "roughnessMap": {
           "value": {}
         },
+        "sheen": {
+          "value": {
+            "add": function () {},
+            "addColors": function () {},
+            "addScalar": function () {},
+            "b": {},
+            "clone": function () {},
+            "convertGammaToLinear": function () {},
+            "convertLinearToGamma": function () {},
+            "convertLinearToSRGB": function () {},
+            "convertSRGBToLinear": function () {},
+            "copy": function () {},
+            "copyGammaToLinear": function () {},
+            "copyLinearToGamma": function () {},
+            "copyLinearToSRGB": function () {},
+            "copySRGBToLinear": function () {},
+            "equals": function () {},
+            "fromArray": function () {},
+            "g": {},
+            "getHSL": function () {},
+            "getHex": function () {},
+            "getHexString": function () {},
+            "getStyle": function () {},
+            "isColor": {},
+            "lerp": function () {},
+            "lerpHSL": function () {},
+            "multiply": function () {},
+            "multiplyScalar": function () {},
+            "offsetHSL": function () {},
+            "r": {},
+            "set": function () {},
+            "setColorName": function () {},
+            "setHSL": function () {},
+            "setHex": function () {},
+            "setRGB": function () {},
+            "setScalar": function () {},
+            "setStyle": function () {},
+            "sub": function () {},
+            "toArray": function () {},
+            "toJSON": function () {}
+          }
+        },
+        "spotLightShadows": {
+          "properties": {
+            "shadowBias": {},
+            "shadowMapSize": {},
+            "shadowRadius": {}
+          },
+          "value": {}
+        },
         "spotLights": {
           "properties": {
             "color": {},
@@ -2720,11 +3418,7 @@ var THREE = {
             "direction": {},
             "distance": {},
             "penumbraCos": {},
-            "position": {},
-            "shadow": {},
-            "shadowBias": {},
-            "shadowMapSize": {},
-            "shadowRadius": {}
+            "position": {}
           },
           "value": {}
         },
@@ -2734,9 +3428,11 @@ var THREE = {
         "spotShadowMatrix": {
           "value": {}
         },
-        "uvTransform": {
+        "transparency": {
+          "value": {}
+        },
+        "uv2Transform": {
           "value": {
-            "applyToBuffer": function () {},
             "applyToBufferAttribute": function () {},
             "applyToVector3Array": function () {},
             "clone": function () {},
@@ -2744,6 +3440,40 @@ var THREE = {
             "determinant": function () {},
             "elements": {},
             "equals": function () {},
+            "extractBasis": function () {},
+            "flattenToArrayOffset": function () {},
+            "fromArray": function () {},
+            "getInverse": function () {},
+            "getNormalMatrix": function () {},
+            "identity": function () {},
+            "isMatrix3": {},
+            "multiply": function () {},
+            "multiplyMatrices": function () {},
+            "multiplyScalar": function () {},
+            "multiplyVector3": function () {},
+            "multiplyVector3Array": function () {},
+            "premultiply": function () {},
+            "rotate": function () {},
+            "scale": function () {},
+            "set": function () {},
+            "setFromMatrix4": function () {},
+            "setUvTransform": function () {},
+            "toArray": function () {},
+            "translate": function () {},
+            "transpose": function () {},
+            "transposeIntoArray": function () {}
+          }
+        },
+        "uvTransform": {
+          "value": {
+            "applyToBufferAttribute": function () {},
+            "applyToVector3Array": function () {},
+            "clone": function () {},
+            "copy": function () {},
+            "determinant": function () {},
+            "elements": {},
+            "equals": function () {},
+            "extractBasis": function () {},
             "flattenToArrayOffset": function () {},
             "fromArray": function () {},
             "getInverse": function () {},
@@ -2773,6 +3503,9 @@ var THREE = {
     "points": {
       "fragmentShader": {},
       "uniforms": {
+        "alphaMap": {
+          "value": {}
+        },
         "diffuse": {
           "value": {
             "add": function () {},
@@ -2804,6 +3537,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -2845,6 +3579,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -2878,7 +3613,6 @@ var THREE = {
         },
         "uvTransform": {
           "value": {
-            "applyToBuffer": function () {},
             "applyToBufferAttribute": function () {},
             "applyToVector3Array": function () {},
             "clone": function () {},
@@ -2886,6 +3620,7 @@ var THREE = {
             "determinant": function () {},
             "elements": {},
             "equals": function () {},
+            "extractBasis": function () {},
             "flattenToArrayOffset": function () {},
             "fromArray": function () {},
             "getInverse": function () {},
@@ -2949,6 +3684,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -2959,14 +3695,18 @@ var THREE = {
             "toJSON": function () {}
           }
         },
-        "directionalLights": {
+        "directionalLightShadows": {
           "properties": {
-            "color": {},
-            "direction": {},
-            "shadow": {},
             "shadowBias": {},
             "shadowMapSize": {},
             "shadowRadius": {}
+          },
+          "value": {}
+        },
+        "directionalLights": {
+          "properties": {
+            "color": {},
+            "direction": {}
           },
           "value": {}
         },
@@ -3007,6 +3747,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -3034,7 +3775,20 @@ var THREE = {
           },
           "value": {}
         },
+        "lightProbe": {
+          "value": {}
+        },
         "opacity": {
+          "value": {}
+        },
+        "pointLightShadows": {
+          "properties": {
+            "shadowBias": {},
+            "shadowCameraFar": {},
+            "shadowCameraNear": {},
+            "shadowMapSize": {},
+            "shadowRadius": {}
+          },
           "value": {}
         },
         "pointLights": {
@@ -3042,13 +3796,7 @@ var THREE = {
             "color": {},
             "decay": {},
             "distance": {},
-            "position": {},
-            "shadow": {},
-            "shadowBias": {},
-            "shadowCameraFar": {},
-            "shadowCameraNear": {},
-            "shadowMapSize": {},
-            "shadowRadius": {}
+            "position": {}
           },
           "value": {}
         },
@@ -3067,6 +3815,14 @@ var THREE = {
           },
           "value": {}
         },
+        "spotLightShadows": {
+          "properties": {
+            "shadowBias": {},
+            "shadowMapSize": {},
+            "shadowRadius": {}
+          },
+          "value": {}
+        },
         "spotLights": {
           "properties": {
             "color": {},
@@ -3075,11 +3831,7 @@ var THREE = {
             "direction": {},
             "distance": {},
             "penumbraCos": {},
-            "position": {},
-            "shadow": {},
-            "shadowBias": {},
-            "shadowMapSize": {},
-            "shadowRadius": {}
+            "position": {}
           },
           "value": {}
         },
@@ -3095,6 +3847,9 @@ var THREE = {
     "sprite": {
       "fragmentShader": {},
       "uniforms": {
+        "alphaMap": {
+          "value": {}
+        },
         "center": {
           "value": {
             "add": function () {},
@@ -3136,6 +3891,7 @@ var THREE = {
             "multiplyScalar": function () {},
             "negate": function () {},
             "normalize": function () {},
+            "random": function () {},
             "rotateAround": function () {},
             "round": function () {},
             "roundToZero": function () {},
@@ -3184,6 +3940,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -3225,6 +3982,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -3255,7 +4013,6 @@ var THREE = {
         },
         "uvTransform": {
           "value": {
-            "applyToBuffer": function () {},
             "applyToBufferAttribute": function () {},
             "applyToVector3Array": function () {},
             "clone": function () {},
@@ -3263,6 +4020,7 @@ var THREE = {
             "determinant": function () {},
             "elements": {},
             "equals": function () {},
+            "extractBasis": function () {},
             "flattenToArrayOffset": function () {},
             "fromArray": function () {},
             "getInverse": function () {},
@@ -3341,6 +4099,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -3351,14 +4110,18 @@ var THREE = {
             "toJSON": function () {}
           }
         },
-        "directionalLights": {
+        "directionalLightShadows": {
           "properties": {
-            "color": {},
-            "direction": {},
-            "shadow": {},
             "shadowBias": {},
             "shadowMapSize": {},
             "shadowRadius": {}
+          },
+          "value": {}
+        },
+        "directionalLights": {
+          "properties": {
+            "color": {},
+            "direction": {}
           },
           "value": {}
         },
@@ -3408,6 +4171,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -3461,6 +4225,7 @@ var THREE = {
             "offsetHSL": function () {},
             "r": {},
             "set": function () {},
+            "setColorName": function () {},
             "setHSL": function () {},
             "setHex": function () {},
             "setRGB": function () {},
@@ -3492,6 +4257,9 @@ var THREE = {
           "value": {}
         },
         "lightMapIntensity": {
+          "value": {}
+        },
+        "lightProbe": {
           "value": {}
         },
         "map": {
@@ -3550,6 +4318,7 @@ var THREE = {
             "multiplyScalar": function () {},
             "negate": function () {},
             "normalize": function () {},
+            "random": function () {},
             "rotateAround": function () {},
             "round": function () {},
             "roundToZero": function () {},
@@ -3570,18 +4339,22 @@ var THREE = {
         "opacity": {
           "value": {}
         },
-        "pointLights": {
+        "pointLightShadows": {
           "properties": {
-            "color": {},
-            "decay": {},
-            "distance": {},
-            "position": {},
-            "shadow": {},
             "shadowBias": {},
             "shadowCameraFar": {},
             "shadowCameraNear": {},
             "shadowMapSize": {},
             "shadowRadius": {}
+          },
+          "value": {}
+        },
+        "pointLights": {
+          "properties": {
+            "color": {},
+            "decay": {},
+            "distance": {},
+            "position": {}
           },
           "value": {}
         },
@@ -3612,6 +4385,14 @@ var THREE = {
         "roughnessMap": {
           "value": {}
         },
+        "spotLightShadows": {
+          "properties": {
+            "shadowBias": {},
+            "shadowMapSize": {},
+            "shadowRadius": {}
+          },
+          "value": {}
+        },
         "spotLights": {
           "properties": {
             "color": {},
@@ -3620,11 +4401,7 @@ var THREE = {
             "direction": {},
             "distance": {},
             "penumbraCos": {},
-            "position": {},
-            "shadow": {},
-            "shadowBias": {},
-            "shadowMapSize": {},
-            "shadowRadius": {}
+            "position": {}
           },
           "value": {}
         },
@@ -3634,9 +4411,8 @@ var THREE = {
         "spotShadowMatrix": {
           "value": {}
         },
-        "uvTransform": {
+        "uv2Transform": {
           "value": {
-            "applyToBuffer": function () {},
             "applyToBufferAttribute": function () {},
             "applyToVector3Array": function () {},
             "clone": function () {},
@@ -3644,6 +4420,494 @@ var THREE = {
             "determinant": function () {},
             "elements": {},
             "equals": function () {},
+            "extractBasis": function () {},
+            "flattenToArrayOffset": function () {},
+            "fromArray": function () {},
+            "getInverse": function () {},
+            "getNormalMatrix": function () {},
+            "identity": function () {},
+            "isMatrix3": {},
+            "multiply": function () {},
+            "multiplyMatrices": function () {},
+            "multiplyScalar": function () {},
+            "multiplyVector3": function () {},
+            "multiplyVector3Array": function () {},
+            "premultiply": function () {},
+            "rotate": function () {},
+            "scale": function () {},
+            "set": function () {},
+            "setFromMatrix4": function () {},
+            "setUvTransform": function () {},
+            "toArray": function () {},
+            "translate": function () {},
+            "transpose": function () {},
+            "transposeIntoArray": function () {}
+          }
+        },
+        "uvTransform": {
+          "value": {
+            "applyToBufferAttribute": function () {},
+            "applyToVector3Array": function () {},
+            "clone": function () {},
+            "copy": function () {},
+            "determinant": function () {},
+            "elements": {},
+            "equals": function () {},
+            "extractBasis": function () {},
+            "flattenToArrayOffset": function () {},
+            "fromArray": function () {},
+            "getInverse": function () {},
+            "getNormalMatrix": function () {},
+            "identity": function () {},
+            "isMatrix3": {},
+            "multiply": function () {},
+            "multiplyMatrices": function () {},
+            "multiplyScalar": function () {},
+            "multiplyVector3": function () {},
+            "multiplyVector3Array": function () {},
+            "premultiply": function () {},
+            "rotate": function () {},
+            "scale": function () {},
+            "set": function () {},
+            "setFromMatrix4": function () {},
+            "setUvTransform": function () {},
+            "toArray": function () {},
+            "translate": function () {},
+            "transpose": function () {},
+            "transposeIntoArray": function () {}
+          }
+        }
+      },
+      "vertexShader": {}
+    },
+    "toon": {
+      "fragmentShader": {},
+      "uniforms": {
+        "alphaMap": {
+          "value": {}
+        },
+        "ambientLightColor": {
+          "value": {}
+        },
+        "aoMap": {
+          "value": {}
+        },
+        "aoMapIntensity": {
+          "value": {}
+        },
+        "bumpMap": {
+          "value": {}
+        },
+        "bumpScale": {
+          "value": {}
+        },
+        "diffuse": {
+          "value": {
+            "add": function () {},
+            "addColors": function () {},
+            "addScalar": function () {},
+            "b": {},
+            "clone": function () {},
+            "convertGammaToLinear": function () {},
+            "convertLinearToGamma": function () {},
+            "convertLinearToSRGB": function () {},
+            "convertSRGBToLinear": function () {},
+            "copy": function () {},
+            "copyGammaToLinear": function () {},
+            "copyLinearToGamma": function () {},
+            "copyLinearToSRGB": function () {},
+            "copySRGBToLinear": function () {},
+            "equals": function () {},
+            "fromArray": function () {},
+            "g": {},
+            "getHSL": function () {},
+            "getHex": function () {},
+            "getHexString": function () {},
+            "getStyle": function () {},
+            "isColor": {},
+            "lerp": function () {},
+            "lerpHSL": function () {},
+            "multiply": function () {},
+            "multiplyScalar": function () {},
+            "offsetHSL": function () {},
+            "r": {},
+            "set": function () {},
+            "setColorName": function () {},
+            "setHSL": function () {},
+            "setHex": function () {},
+            "setRGB": function () {},
+            "setScalar": function () {},
+            "setStyle": function () {},
+            "sub": function () {},
+            "toArray": function () {},
+            "toJSON": function () {}
+          }
+        },
+        "directionalLightShadows": {
+          "properties": {
+            "shadowBias": {},
+            "shadowMapSize": {},
+            "shadowRadius": {}
+          },
+          "value": {}
+        },
+        "directionalLights": {
+          "properties": {
+            "color": {},
+            "direction": {}
+          },
+          "value": {}
+        },
+        "directionalShadowMap": {
+          "value": {}
+        },
+        "directionalShadowMatrix": {
+          "value": {}
+        },
+        "displacementBias": {
+          "value": {}
+        },
+        "displacementMap": {
+          "value": {}
+        },
+        "displacementScale": {
+          "value": {}
+        },
+        "emissive": {
+          "value": {
+            "add": function () {},
+            "addColors": function () {},
+            "addScalar": function () {},
+            "b": {},
+            "clone": function () {},
+            "convertGammaToLinear": function () {},
+            "convertLinearToGamma": function () {},
+            "convertLinearToSRGB": function () {},
+            "convertSRGBToLinear": function () {},
+            "copy": function () {},
+            "copyGammaToLinear": function () {},
+            "copyLinearToGamma": function () {},
+            "copyLinearToSRGB": function () {},
+            "copySRGBToLinear": function () {},
+            "equals": function () {},
+            "fromArray": function () {},
+            "g": {},
+            "getHSL": function () {},
+            "getHex": function () {},
+            "getHexString": function () {},
+            "getStyle": function () {},
+            "isColor": {},
+            "lerp": function () {},
+            "lerpHSL": function () {},
+            "multiply": function () {},
+            "multiplyScalar": function () {},
+            "offsetHSL": function () {},
+            "r": {},
+            "set": function () {},
+            "setColorName": function () {},
+            "setHSL": function () {},
+            "setHex": function () {},
+            "setRGB": function () {},
+            "setScalar": function () {},
+            "setStyle": function () {},
+            "sub": function () {},
+            "toArray": function () {},
+            "toJSON": function () {}
+          }
+        },
+        "emissiveMap": {
+          "value": {}
+        },
+        "fogColor": {
+          "value": {
+            "add": function () {},
+            "addColors": function () {},
+            "addScalar": function () {},
+            "b": {},
+            "clone": function () {},
+            "convertGammaToLinear": function () {},
+            "convertLinearToGamma": function () {},
+            "convertLinearToSRGB": function () {},
+            "convertSRGBToLinear": function () {},
+            "copy": function () {},
+            "copyGammaToLinear": function () {},
+            "copyLinearToGamma": function () {},
+            "copyLinearToSRGB": function () {},
+            "copySRGBToLinear": function () {},
+            "equals": function () {},
+            "fromArray": function () {},
+            "g": {},
+            "getHSL": function () {},
+            "getHex": function () {},
+            "getHexString": function () {},
+            "getStyle": function () {},
+            "isColor": {},
+            "lerp": function () {},
+            "lerpHSL": function () {},
+            "multiply": function () {},
+            "multiplyScalar": function () {},
+            "offsetHSL": function () {},
+            "r": {},
+            "set": function () {},
+            "setColorName": function () {},
+            "setHSL": function () {},
+            "setHex": function () {},
+            "setRGB": function () {},
+            "setScalar": function () {},
+            "setStyle": function () {},
+            "sub": function () {},
+            "toArray": function () {},
+            "toJSON": function () {}
+          }
+        },
+        "fogDensity": {
+          "value": {}
+        },
+        "fogFar": {
+          "value": {}
+        },
+        "fogNear": {
+          "value": {}
+        },
+        "gradientMap": {
+          "value": {}
+        },
+        "hemisphereLights": {
+          "properties": {
+            "direction": {},
+            "groundColor": {},
+            "skyColor": {}
+          },
+          "value": {}
+        },
+        "lightMap": {
+          "value": {}
+        },
+        "lightMapIntensity": {
+          "value": {}
+        },
+        "lightProbe": {
+          "value": {}
+        },
+        "map": {
+          "value": {}
+        },
+        "normalMap": {
+          "value": {}
+        },
+        "normalScale": {
+          "value": {
+            "add": function () {},
+            "addScalar": function () {},
+            "addScaledVector": function () {},
+            "addVectors": function () {},
+            "angle": function () {},
+            "applyMatrix3": function () {},
+            "ceil": function () {},
+            "clamp": function () {},
+            "clampLength": function () {},
+            "clampScalar": function () {},
+            "clone": function () {},
+            "copy": function () {},
+            "cross": function () {},
+            "distanceTo": function () {},
+            "distanceToManhattan": function () {},
+            "distanceToSquared": function () {},
+            "divide": function () {},
+            "divideScalar": function () {},
+            "dot": function () {},
+            "equals": function () {},
+            "floor": function () {},
+            "fromArray": function () {},
+            "fromAttribute": function () {},
+            "fromBufferAttribute": function () {},
+            "getComponent": function () {},
+            "isVector2": {},
+            "length": function () {},
+            "lengthManhattan": function () {},
+            "lengthSq": function () {},
+            "lerp": function () {},
+            "lerpVectors": function () {},
+            "manhattanDistanceTo": function () {},
+            "manhattanLength": function () {},
+            "max": function () {},
+            "min": function () {},
+            "multiply": function () {},
+            "multiplyScalar": function () {},
+            "negate": function () {},
+            "normalize": function () {},
+            "random": function () {},
+            "rotateAround": function () {},
+            "round": function () {},
+            "roundToZero": function () {},
+            "set": function () {},
+            "setComponent": function () {},
+            "setLength": function () {},
+            "setScalar": function () {},
+            "setX": function () {},
+            "setY": function () {},
+            "sub": function () {},
+            "subScalar": function () {},
+            "subVectors": function () {},
+            "toArray": function () {},
+            "x": {},
+            "y": {}
+          }
+        },
+        "opacity": {
+          "value": {}
+        },
+        "pointLightShadows": {
+          "properties": {
+            "shadowBias": {},
+            "shadowCameraFar": {},
+            "shadowCameraNear": {},
+            "shadowMapSize": {},
+            "shadowRadius": {}
+          },
+          "value": {}
+        },
+        "pointLights": {
+          "properties": {
+            "color": {},
+            "decay": {},
+            "distance": {},
+            "position": {}
+          },
+          "value": {}
+        },
+        "pointShadowMap": {
+          "value": {}
+        },
+        "pointShadowMatrix": {
+          "value": {}
+        },
+        "rectAreaLights": {
+          "properties": {
+            "color": {},
+            "height": {},
+            "position": {},
+            "width": {}
+          },
+          "value": {}
+        },
+        "shininess": {
+          "value": {}
+        },
+        "specular": {
+          "value": {
+            "add": function () {},
+            "addColors": function () {},
+            "addScalar": function () {},
+            "b": {},
+            "clone": function () {},
+            "convertGammaToLinear": function () {},
+            "convertLinearToGamma": function () {},
+            "convertLinearToSRGB": function () {},
+            "convertSRGBToLinear": function () {},
+            "copy": function () {},
+            "copyGammaToLinear": function () {},
+            "copyLinearToGamma": function () {},
+            "copyLinearToSRGB": function () {},
+            "copySRGBToLinear": function () {},
+            "equals": function () {},
+            "fromArray": function () {},
+            "g": {},
+            "getHSL": function () {},
+            "getHex": function () {},
+            "getHexString": function () {},
+            "getStyle": function () {},
+            "isColor": {},
+            "lerp": function () {},
+            "lerpHSL": function () {},
+            "multiply": function () {},
+            "multiplyScalar": function () {},
+            "offsetHSL": function () {},
+            "r": {},
+            "set": function () {},
+            "setColorName": function () {},
+            "setHSL": function () {},
+            "setHex": function () {},
+            "setRGB": function () {},
+            "setScalar": function () {},
+            "setStyle": function () {},
+            "sub": function () {},
+            "toArray": function () {},
+            "toJSON": function () {}
+          }
+        },
+        "specularMap": {
+          "value": {}
+        },
+        "spotLightShadows": {
+          "properties": {
+            "shadowBias": {},
+            "shadowMapSize": {},
+            "shadowRadius": {}
+          },
+          "value": {}
+        },
+        "spotLights": {
+          "properties": {
+            "color": {},
+            "coneCos": {},
+            "decay": {},
+            "direction": {},
+            "distance": {},
+            "penumbraCos": {},
+            "position": {}
+          },
+          "value": {}
+        },
+        "spotShadowMap": {
+          "value": {}
+        },
+        "spotShadowMatrix": {
+          "value": {}
+        },
+        "uv2Transform": {
+          "value": {
+            "applyToBufferAttribute": function () {},
+            "applyToVector3Array": function () {},
+            "clone": function () {},
+            "copy": function () {},
+            "determinant": function () {},
+            "elements": {},
+            "equals": function () {},
+            "extractBasis": function () {},
+            "flattenToArrayOffset": function () {},
+            "fromArray": function () {},
+            "getInverse": function () {},
+            "getNormalMatrix": function () {},
+            "identity": function () {},
+            "isMatrix3": {},
+            "multiply": function () {},
+            "multiplyMatrices": function () {},
+            "multiplyScalar": function () {},
+            "multiplyVector3": function () {},
+            "multiplyVector3Array": function () {},
+            "premultiply": function () {},
+            "rotate": function () {},
+            "scale": function () {},
+            "set": function () {},
+            "setFromMatrix4": function () {},
+            "setUvTransform": function () {},
+            "toArray": function () {},
+            "translate": function () {},
+            "transpose": function () {},
+            "transposeIntoArray": function () {}
+          }
+        },
+        "uvTransform": {
+          "value": {
+            "applyToBufferAttribute": function () {},
+            "applyToVector3Array": function () {},
+            "clone": function () {},
+            "copy": function () {},
+            "determinant": function () {},
+            "elements": {},
+            "equals": function () {},
+            "extractBasis": function () {},
             "flattenToArrayOffset": function () {},
             "fromArray": function () {},
             "getInverse": function () {},
@@ -3691,6 +4955,9 @@ var THREE = {
   "SphereBufferGeometry": function () {},
   "SphereGeometry": function () {},
   "Spherical": function () {},
+  "SphericalHarmonics3": {
+    "getBasisAt": function () {}
+  },
   "SphericalReflectionMapping": {},
   "Spline": function () {},
   "SplineCurve": function () {},
@@ -3703,10 +4970,22 @@ var THREE = {
   "SrcAlphaFactor": {},
   "SrcAlphaSaturateFactor": {},
   "SrcColorFactor": {},
+  "StaticCopyUsage": {},
+  "StaticDrawUsage": {},
+  "StaticReadUsage": {},
   "StereoCamera": function () {},
+  "StreamCopyUsage": {},
+  "StreamDrawUsage": {},
+  "StreamReadUsage": {},
   "StringKeyframeTrack": function () {},
   "SubtractEquation": {},
   "SubtractiveBlending": {},
+  "TOUCH": {
+    "DOLLY_PAN": {},
+    "DOLLY_ROTATE": {},
+    "PAN": {},
+    "ROTATE": {}
+  },
   "TangentSpaceNormalMap": {},
   "TetrahedronBufferGeometry": function () {},
   "TetrahedronGeometry": function () {},
@@ -3727,6 +5006,7 @@ var THREE = {
     "getBarycoord": function () {},
     "getNormal": function () {},
     "getUV": function () {},
+    "isFrontFacing": function () {},
     "normal": function () {}
   },
   "TriangleFanDrawMode": {},
@@ -3797,6 +5077,7 @@ var THREE = {
           "offsetHSL": function () {},
           "r": {},
           "set": function () {},
+          "setColorName": function () {},
           "setHSL": function () {},
           "setHex": function () {},
           "setRGB": function () {},
@@ -3813,9 +5094,8 @@ var THREE = {
       "opacity": {
         "value": {}
       },
-      "uvTransform": {
+      "uv2Transform": {
         "value": {
-          "applyToBuffer": function () {},
           "applyToBufferAttribute": function () {},
           "applyToVector3Array": function () {},
           "clone": function () {},
@@ -3823,6 +5103,40 @@ var THREE = {
           "determinant": function () {},
           "elements": {},
           "equals": function () {},
+          "extractBasis": function () {},
+          "flattenToArrayOffset": function () {},
+          "fromArray": function () {},
+          "getInverse": function () {},
+          "getNormalMatrix": function () {},
+          "identity": function () {},
+          "isMatrix3": {},
+          "multiply": function () {},
+          "multiplyMatrices": function () {},
+          "multiplyScalar": function () {},
+          "multiplyVector3": function () {},
+          "multiplyVector3Array": function () {},
+          "premultiply": function () {},
+          "rotate": function () {},
+          "scale": function () {},
+          "set": function () {},
+          "setFromMatrix4": function () {},
+          "setUvTransform": function () {},
+          "toArray": function () {},
+          "translate": function () {},
+          "transpose": function () {},
+          "transposeIntoArray": function () {}
+        }
+      },
+      "uvTransform": {
+        "value": {
+          "applyToBufferAttribute": function () {},
+          "applyToVector3Array": function () {},
+          "clone": function () {},
+          "copy": function () {},
+          "determinant": function () {},
+          "elements": {},
+          "equals": function () {},
+          "extractBasis": function () {},
           "flattenToArrayOffset": function () {},
           "fromArray": function () {},
           "getInverse": function () {},
@@ -3912,6 +5226,7 @@ var THREE = {
           "offsetHSL": function () {},
           "r": {},
           "set": function () {},
+          "setColorName": function () {},
           "setHSL": function () {},
           "setHex": function () {},
           "setRGB": function () {},
@@ -3949,14 +5264,18 @@ var THREE = {
       "ambientLightColor": {
         "value": {}
       },
-      "directionalLights": {
+      "directionalLightShadows": {
         "properties": {
-          "color": {},
-          "direction": {},
-          "shadow": {},
           "shadowBias": {},
           "shadowMapSize": {},
           "shadowRadius": {}
+        },
+        "value": {}
+      },
+      "directionalLights": {
+        "properties": {
+          "color": {},
+          "direction": {}
         },
         "value": {}
       },
@@ -3974,18 +5293,25 @@ var THREE = {
         },
         "value": {}
       },
-      "pointLights": {
+      "lightProbe": {
+        "value": {}
+      },
+      "pointLightShadows": {
         "properties": {
-          "color": {},
-          "decay": {},
-          "distance": {},
-          "position": {},
-          "shadow": {},
           "shadowBias": {},
           "shadowCameraFar": {},
           "shadowCameraNear": {},
           "shadowMapSize": {},
           "shadowRadius": {}
+        },
+        "value": {}
+      },
+      "pointLights": {
+        "properties": {
+          "color": {},
+          "decay": {},
+          "distance": {},
+          "position": {}
         },
         "value": {}
       },
@@ -4004,6 +5330,14 @@ var THREE = {
         },
         "value": {}
       },
+      "spotLightShadows": {
+        "properties": {
+          "shadowBias": {},
+          "shadowMapSize": {},
+          "shadowRadius": {}
+        },
+        "value": {}
+      },
       "spotLights": {
         "properties": {
           "color": {},
@@ -4012,11 +5346,7 @@ var THREE = {
           "direction": {},
           "distance": {},
           "penumbraCos": {},
-          "position": {},
-          "shadow": {},
-          "shadowBias": {},
-          "shadowMapSize": {},
-          "shadowRadius": {}
+          "position": {}
         },
         "value": {}
       },
@@ -4077,6 +5407,7 @@ var THREE = {
           "multiplyScalar": function () {},
           "negate": function () {},
           "normalize": function () {},
+          "random": function () {},
           "rotateAround": function () {},
           "round": function () {},
           "roundToZero": function () {},
@@ -4096,6 +5427,9 @@ var THREE = {
       }
     },
     "points": {
+      "alphaMap": {
+        "value": {}
+      },
       "diffuse": {
         "value": {
           "add": function () {},
@@ -4127,6 +5461,7 @@ var THREE = {
           "offsetHSL": function () {},
           "r": {},
           "set": function () {},
+          "setColorName": function () {},
           "setHSL": function () {},
           "setHex": function () {},
           "setRGB": function () {},
@@ -4151,7 +5486,6 @@ var THREE = {
       },
       "uvTransform": {
         "value": {
-          "applyToBuffer": function () {},
           "applyToBufferAttribute": function () {},
           "applyToVector3Array": function () {},
           "clone": function () {},
@@ -4159,6 +5493,7 @@ var THREE = {
           "determinant": function () {},
           "elements": {},
           "equals": function () {},
+          "extractBasis": function () {},
           "flattenToArrayOffset": function () {},
           "fromArray": function () {},
           "getInverse": function () {},
@@ -4194,6 +5529,9 @@ var THREE = {
       }
     },
     "sprite": {
+      "alphaMap": {
+        "value": {}
+      },
       "center": {
         "value": {
           "add": function () {},
@@ -4235,6 +5573,7 @@ var THREE = {
           "multiplyScalar": function () {},
           "negate": function () {},
           "normalize": function () {},
+          "random": function () {},
           "rotateAround": function () {},
           "round": function () {},
           "roundToZero": function () {},
@@ -4283,6 +5622,7 @@ var THREE = {
           "offsetHSL": function () {},
           "r": {},
           "set": function () {},
+          "setColorName": function () {},
           "setHSL": function () {},
           "setHex": function () {},
           "setRGB": function () {},
@@ -4304,7 +5644,6 @@ var THREE = {
       },
       "uvTransform": {
         "value": {
-          "applyToBuffer": function () {},
           "applyToBufferAttribute": function () {},
           "applyToVector3Array": function () {},
           "clone": function () {},
@@ -4312,6 +5651,7 @@ var THREE = {
           "determinant": function () {},
           "elements": {},
           "equals": function () {},
+          "extractBasis": function () {},
           "flattenToArrayOffset": function () {},
           "fromArray": function () {},
           "getInverse": function () {},
@@ -4348,14 +5688,15 @@ var THREE = {
   "UnsignedShort5551Type": {},
   "UnsignedShort565Type": {},
   "UnsignedShortType": {},
+  "VSMShadowMap": {},
   "Vector2": function () {},
   "Vector3": function () {},
   "Vector4": function () {},
   "VectorKeyframeTrack": function () {},
   "Vertex": function () {},
   "VertexColors": {},
-  "VertexNormalsHelper": function () {},
   "VideoTexture": function () {},
+  "WebGLCubeRenderTarget": function () {},
   "WebGLMultisampleRenderTarget": function () {},
   "WebGLRenderTarget": function () {},
   "WebGLRenderTargetCube": function () {},
@@ -4368,13 +5709,16 @@ var THREE = {
   "ZeroCurvatureEnding": {},
   "ZeroFactor": {},
   "ZeroSlopeEnding": {},
+  "ZeroStencilOp": {},
   "sRGBEncoding": {}
 };
 THREE.AmbientLight.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -4423,6 +5767,63 @@ THREE.AmbientLight.prototype = {
   "updateWorldMatrix": function () {},
   "worldToLocal": function () {}
 };
+THREE.AmbientLightProbe.prototype = {
+  "add": function () {},
+  "addEventListener": function () {},
+  "applyMatrix": function () {},
+  "applyMatrix4": function () {},
+  "applyQuaternion": function () {},
+  "attach": function () {},
+  "clone": function () {},
+  "constructor": function () {},
+  "copy": function () {},
+  "dispatchEvent": function () {},
+  "fromJSON": function () {},
+  "getChildByName": function () {},
+  "getObjectById": function () {},
+  "getObjectByName": function () {},
+  "getObjectByProperty": function () {},
+  "getWorldDirection": function () {},
+  "getWorldPosition": function () {},
+  "getWorldQuaternion": function () {},
+  "getWorldRotation": function () {},
+  "getWorldScale": function () {},
+  "hasEventListener": function () {},
+  "isAmbientLightProbe": function () {},
+  "isLight": function () {},
+  "isLightProbe": function () {},
+  "isObject3D": function () {},
+  "localToWorld": function () {},
+  "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
+  "raycast": function () {},
+  "remove": function () {},
+  "removeEventListener": function () {},
+  "renderDepth": function () {},
+  "rotateOnAxis": function () {},
+  "rotateOnWorldAxis": function () {},
+  "rotateX": function () {},
+  "rotateY": function () {},
+  "rotateZ": function () {},
+  "setRotationFromAxisAngle": function () {},
+  "setRotationFromEuler": function () {},
+  "setRotationFromMatrix": function () {},
+  "setRotationFromQuaternion": function () {},
+  "toJSON": function () {},
+  "translate": function () {},
+  "translateOnAxis": function () {},
+  "translateX": function () {},
+  "translateY": function () {},
+  "translateZ": function () {},
+  "traverse": function () {},
+  "traverseAncestors": function () {},
+  "traverseVisible": function () {},
+  "updateMatrix": function () {},
+  "updateMatrixWorld": function () {},
+  "updateWorldMatrix": function () {},
+  "worldToLocal": function () {}
+};
 THREE.AnimationClip.prototype = {
   "clone": function () {},
   "optimize": function () {},
@@ -4431,9 +5832,14 @@ THREE.AnimationClip.prototype = {
   "validate": function () {}
 };
 THREE.AnimationLoader.prototype = {
+  "constructor": function () {},
+  "extractUrlBase": function () {},
   "load": function () {},
+  "loadAsync": function () {},
   "parse": function () {},
-  "setPath": function () {}
+  "setCrossOrigin": function () {},
+  "setPath": function () {},
+  "setResourcePath": function () {}
 };
 THREE.AnimationMixer.prototype = {
   "_activateAction": function () {},
@@ -4461,6 +5867,7 @@ THREE.AnimationMixer.prototype = {
   "getRoot": function () {},
   "hasEventListener": function () {},
   "removeEventListener": function () {},
+  "setTime": function () {},
   "stopAllAction": function () {},
   "uncacheAction": function () {},
   "uncacheClip": function () {},
@@ -4499,7 +5906,9 @@ THREE.ArrayCamera.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clearViewOffset": function () {},
   "clone": function () {},
   "constructor": function () {},
@@ -4562,7 +5971,9 @@ THREE.ArrowHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -4616,7 +6027,9 @@ THREE.Audio.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "connect": function () {},
   "constructor": function () {},
@@ -4641,7 +6054,6 @@ THREE.Audio.prototype = {
   "getWorldScale": function () {},
   "hasEventListener": function () {},
   "isObject3D": function () {},
-  "load": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
   "onAfterRender": function () {},
@@ -4663,7 +6075,10 @@ THREE.Audio.prototype = {
   "setFilter": function () {},
   "setFilters": function () {},
   "setLoop": function () {},
+  "setLoopEnd": function () {},
+  "setLoopStart": function () {},
   "setMediaElementSource": function () {},
+  "setMediaStreamSource": function () {},
   "setNodeSource": function () {},
   "setPlaybackRate": function () {},
   "setRotationFromAxisAngle": function () {},
@@ -4695,7 +6110,9 @@ THREE.AudioListener.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -4749,14 +6166,22 @@ THREE.AudioListener.prototype = {
   "worldToLocal": function () {}
 };
 THREE.AudioLoader.prototype = {
+  "constructor": function () {},
+  "extractUrlBase": function () {},
   "load": function () {},
-  "setPath": function () {}
+  "loadAsync": function () {},
+  "parse": function () {},
+  "setCrossOrigin": function () {},
+  "setPath": function () {},
+  "setResourcePath": function () {}
 };
 THREE.AxesHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "computeLineDistances": function () {},
   "constructor": function () {},
@@ -4810,7 +6235,9 @@ THREE.Bone.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -4948,7 +6375,9 @@ THREE.Box3Helper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "computeLineDistances": function () {},
   "constructor": function () {},
@@ -5005,6 +6434,7 @@ THREE.BoxBufferGeometry.prototype = {
   "addGroup": function () {},
   "addIndex": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clearDrawCalls": function () {},
   "clearGroups": function () {},
@@ -5017,6 +6447,7 @@ THREE.BoxBufferGeometry.prototype = {
   "computeVertexNormals": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "deleteAttribute": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "fromDirectGeometry": function () {},
@@ -5034,6 +6465,7 @@ THREE.BoxBufferGeometry.prototype = {
   "rotateY": function () {},
   "rotateZ": function () {},
   "scale": function () {},
+  "setAttribute": function () {},
   "setDrawRange": function () {},
   "setFromObject": function () {},
   "setFromPoints": function () {},
@@ -5046,6 +6478,7 @@ THREE.BoxBufferGeometry.prototype = {
 THREE.BoxGeometry.prototype = {
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clone": function () {},
   "computeBoundingBox": function () {},
@@ -5082,7 +6515,9 @@ THREE.BoxHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "computeLineDistances": function () {},
   "constructor": function () {},
@@ -5135,11 +6570,15 @@ THREE.BoxHelper.prototype = {
   "worldToLocal": function () {}
 };
 THREE.BufferAttribute.prototype = {
+  "applyMatrix3": function () {},
+  "applyMatrix4": function () {},
+  "applyNormalMatrix": function () {},
   "clone": function () {},
   "copy": function () {},
   "copyArray": function () {},
   "copyAt": function () {},
   "copyColorsArray": function () {},
+  "copyIndicesArray": function () {},
   "copyVector2sArray": function () {},
   "copyVector3sArray": function () {},
   "copyVector4sArray": function () {},
@@ -5153,13 +6592,16 @@ THREE.BufferAttribute.prototype = {
   "set": function () {},
   "setArray": function () {},
   "setDynamic": function () {},
+  "setUsage": function () {},
   "setW": function () {},
   "setX": function () {},
   "setXY": function () {},
   "setXYZ": function () {},
   "setXYZW": function () {},
   "setY": function () {},
-  "setZ": function () {}
+  "setZ": function () {},
+  "toJSON": function () {},
+  "transformDirection": function () {}
 };
 THREE.BufferGeometry.prototype = {
   "addAttribute": function () {},
@@ -5168,6 +6610,7 @@ THREE.BufferGeometry.prototype = {
   "addGroup": function () {},
   "addIndex": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clearDrawCalls": function () {},
   "clearGroups": function () {},
@@ -5180,6 +6623,7 @@ THREE.BufferGeometry.prototype = {
   "computeVertexNormals": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "deleteAttribute": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "fromDirectGeometry": function () {},
@@ -5197,6 +6641,7 @@ THREE.BufferGeometry.prototype = {
   "rotateY": function () {},
   "rotateZ": function () {},
   "scale": function () {},
+  "setAttribute": function () {},
   "setDrawRange": function () {},
   "setFromObject": function () {},
   "setFromPoints": function () {},
@@ -5207,15 +6652,22 @@ THREE.BufferGeometry.prototype = {
   "updateFromObject": function () {}
 };
 THREE.BufferGeometryLoader.prototype = {
+  "constructor": function () {},
+  "extractUrlBase": function () {},
   "load": function () {},
+  "loadAsync": function () {},
   "parse": function () {},
-  "setPath": function () {}
+  "setCrossOrigin": function () {},
+  "setPath": function () {},
+  "setResourcePath": function () {}
 };
 THREE.Camera.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -5267,7 +6719,9 @@ THREE.CameraHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "computeLineDistances": function () {},
   "constructor": function () {},
@@ -5359,6 +6813,7 @@ THREE.CircleBufferGeometry.prototype = {
   "addGroup": function () {},
   "addIndex": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clearDrawCalls": function () {},
   "clearGroups": function () {},
@@ -5371,6 +6826,7 @@ THREE.CircleBufferGeometry.prototype = {
   "computeVertexNormals": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "deleteAttribute": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "fromDirectGeometry": function () {},
@@ -5388,6 +6844,7 @@ THREE.CircleBufferGeometry.prototype = {
   "rotateY": function () {},
   "rotateZ": function () {},
   "scale": function () {},
+  "setAttribute": function () {},
   "setDrawRange": function () {},
   "setFromObject": function () {},
   "setFromPoints": function () {},
@@ -5400,6 +6857,7 @@ THREE.CircleBufferGeometry.prototype = {
 THREE.CircleGeometry.prototype = {
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clone": function () {},
   "computeBoundingBox": function () {},
@@ -5487,6 +6945,7 @@ THREE.Color.prototype = {
   "offsetHSL": function () {},
   "r": function () {},
   "set": function () {},
+  "setColorName": function () {},
   "setHSL": function () {},
   "setHex": function () {},
   "setRGB": function () {},
@@ -5531,8 +6990,14 @@ THREE.CompressedTexture.prototype = {
   "updateMatrix": function () {}
 };
 THREE.CompressedTextureLoader.prototype = {
+  "constructor": function () {},
+  "extractUrlBase": function () {},
   "load": function () {},
-  "setPath": function () {}
+  "loadAsync": function () {},
+  "parse": function () {},
+  "setCrossOrigin": function () {},
+  "setPath": function () {},
+  "setResourcePath": function () {}
 };
 THREE.ConeBufferGeometry.prototype = {
   "addAttribute": function () {},
@@ -5541,6 +7006,7 @@ THREE.ConeBufferGeometry.prototype = {
   "addGroup": function () {},
   "addIndex": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clearDrawCalls": function () {},
   "clearGroups": function () {},
@@ -5553,6 +7019,7 @@ THREE.ConeBufferGeometry.prototype = {
   "computeVertexNormals": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "deleteAttribute": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "fromDirectGeometry": function () {},
@@ -5570,6 +7037,7 @@ THREE.ConeBufferGeometry.prototype = {
   "rotateY": function () {},
   "rotateZ": function () {},
   "scale": function () {},
+  "setAttribute": function () {},
   "setDrawRange": function () {},
   "setFromObject": function () {},
   "setFromPoints": function () {},
@@ -5582,6 +7050,7 @@ THREE.ConeBufferGeometry.prototype = {
 THREE.ConeGeometry.prototype = {
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clone": function () {},
   "computeBoundingBox": function () {},
@@ -5618,7 +7087,9 @@ THREE.CubeCamera.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -5669,6 +7140,7 @@ THREE.CubeCamera.prototype = {
 THREE.CubeGeometry.prototype = {
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clone": function () {},
   "computeBoundingBox": function () {},
@@ -5717,10 +7189,14 @@ THREE.CubeTexture.prototype = {
   "updateMatrix": function () {}
 };
 THREE.CubeTextureLoader.prototype = {
-  "crossOrigin": function () {},
+  "constructor": function () {},
+  "extractUrlBase": function () {},
   "load": function () {},
+  "loadAsync": function () {},
+  "parse": function () {},
   "setCrossOrigin": function () {},
-  "setPath": function () {}
+  "setPath": function () {},
+  "setResourcePath": function () {}
 };
 THREE.CubicBezierCurve.prototype = {
   "clone": function () {},
@@ -5820,6 +7296,7 @@ THREE.CylinderBufferGeometry.prototype = {
   "addGroup": function () {},
   "addIndex": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clearDrawCalls": function () {},
   "clearGroups": function () {},
@@ -5832,6 +7309,7 @@ THREE.CylinderBufferGeometry.prototype = {
   "computeVertexNormals": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "deleteAttribute": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "fromDirectGeometry": function () {},
@@ -5849,6 +7327,7 @@ THREE.CylinderBufferGeometry.prototype = {
   "rotateY": function () {},
   "rotateZ": function () {},
   "scale": function () {},
+  "setAttribute": function () {},
   "setDrawRange": function () {},
   "setFromObject": function () {},
   "setFromPoints": function () {},
@@ -5861,6 +7340,7 @@ THREE.CylinderBufferGeometry.prototype = {
 THREE.CylinderGeometry.prototype = {
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clone": function () {},
   "computeBoundingBox": function () {},
@@ -5915,6 +7395,21 @@ THREE.DataTexture.prototype = {
   "transformUv": function () {},
   "updateMatrix": function () {}
 };
+THREE.DataTexture2DArray.prototype = {
+  "addEventListener": function () {},
+  "clone": function () {},
+  "constructor": function () {},
+  "copy": function () {},
+  "dispatchEvent": function () {},
+  "dispose": function () {},
+  "hasEventListener": function () {},
+  "isDataTexture2DArray": function () {},
+  "isTexture": function () {},
+  "removeEventListener": function () {},
+  "toJSON": function () {},
+  "transformUv": function () {},
+  "updateMatrix": function () {}
+};
 THREE.DataTexture3D.prototype = {
   "addEventListener": function () {},
   "clone": function () {},
@@ -5931,8 +7426,14 @@ THREE.DataTexture3D.prototype = {
   "updateMatrix": function () {}
 };
 THREE.DataTextureLoader.prototype = {
+  "constructor": function () {},
+  "extractUrlBase": function () {},
   "load": function () {},
-  "setPath": function () {}
+  "loadAsync": function () {},
+  "parse": function () {},
+  "setCrossOrigin": function () {},
+  "setPath": function () {},
+  "setResourcePath": function () {}
 };
 THREE.DepthTexture.prototype = {
   "addEventListener": function () {},
@@ -5953,7 +7454,9 @@ THREE.DirectionalLight.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -6006,7 +7509,9 @@ THREE.DirectionalLightHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -6056,10 +7561,19 @@ THREE.DirectionalLightHelper.prototype = {
   "worldToLocal": function () {}
 };
 THREE.DirectionalLightShadow.prototype = {
+  "_lightPositionWorld": function () {},
+  "_lookTarget": function () {},
+  "_projScreenMatrix": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
-  "toJSON": function () {}
+  "getFrameExtents": function () {},
+  "getFrustum": function () {},
+  "getViewport": function () {},
+  "getViewportCount": function () {},
+  "isDirectionalLightShadow": function () {},
+  "toJSON": function () {},
+  "updateMatrices": function () {}
 };
 THREE.DiscreteInterpolant.prototype = {
   "DefaultSettings_": function () {},
@@ -6080,6 +7594,7 @@ THREE.DodecahedronBufferGeometry.prototype = {
   "addGroup": function () {},
   "addIndex": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clearDrawCalls": function () {},
   "clearGroups": function () {},
@@ -6092,6 +7607,7 @@ THREE.DodecahedronBufferGeometry.prototype = {
   "computeVertexNormals": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "deleteAttribute": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "fromDirectGeometry": function () {},
@@ -6109,6 +7625,7 @@ THREE.DodecahedronBufferGeometry.prototype = {
   "rotateY": function () {},
   "rotateZ": function () {},
   "scale": function () {},
+  "setAttribute": function () {},
   "setDrawRange": function () {},
   "setFromObject": function () {},
   "setFromPoints": function () {},
@@ -6121,6 +7638,7 @@ THREE.DodecahedronBufferGeometry.prototype = {
 THREE.DodecahedronGeometry.prototype = {
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clone": function () {},
   "computeBoundingBox": function () {},
@@ -6160,6 +7678,7 @@ THREE.EdgesGeometry.prototype = {
   "addGroup": function () {},
   "addIndex": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clearDrawCalls": function () {},
   "clearGroups": function () {},
@@ -6172,6 +7691,7 @@ THREE.EdgesGeometry.prototype = {
   "computeVertexNormals": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "deleteAttribute": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "fromDirectGeometry": function () {},
@@ -6189,6 +7709,7 @@ THREE.EdgesGeometry.prototype = {
   "rotateY": function () {},
   "rotateZ": function () {},
   "scale": function () {},
+  "setAttribute": function () {},
   "setDrawRange": function () {},
   "setFromObject": function () {},
   "setFromPoints": function () {},
@@ -6218,13 +7739,13 @@ THREE.EllipseCurve.prototype = {
   "updateArcLengths": function () {}
 };
 THREE.Euler.prototype = {
+  "_onChange": function () {},
+  "_onChangeCallback": function () {},
   "clone": function () {},
   "copy": function () {},
   "equals": function () {},
   "fromArray": function () {},
   "isEuler": function () {},
-  "onChange": function () {},
-  "onChangeCallback": function () {},
   "reorder": function () {},
   "set": function () {},
   "setFromQuaternion": function () {},
@@ -6248,6 +7769,7 @@ THREE.ExtrudeBufferGeometry.prototype = {
   "addShape": function () {},
   "addShapeList": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clearDrawCalls": function () {},
   "clearGroups": function () {},
@@ -6260,6 +7782,7 @@ THREE.ExtrudeBufferGeometry.prototype = {
   "computeVertexNormals": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "deleteAttribute": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "fromDirectGeometry": function () {},
@@ -6278,6 +7801,7 @@ THREE.ExtrudeBufferGeometry.prototype = {
   "rotateY": function () {},
   "rotateZ": function () {},
   "scale": function () {},
+  "setAttribute": function () {},
   "setDrawRange": function () {},
   "setFromObject": function () {},
   "setFromPoints": function () {},
@@ -6290,6 +7814,7 @@ THREE.ExtrudeBufferGeometry.prototype = {
 THREE.ExtrudeGeometry.prototype = {
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clone": function () {},
   "computeBoundingBox": function () {},
@@ -6326,76 +7851,31 @@ THREE.Face3.prototype = {
   "clone": function () {},
   "copy": function () {}
 };
-THREE.FaceNormalsHelper.prototype = {
-  "add": function () {},
-  "addEventListener": function () {},
-  "applyMatrix": function () {},
-  "applyQuaternion": function () {},
-  "clone": function () {},
-  "computeLineDistances": function () {},
-  "constructor": function () {},
-  "copy": function () {},
-  "dispatchEvent": function () {},
-  "getChildByName": function () {},
-  "getObjectById": function () {},
-  "getObjectByName": function () {},
-  "getObjectByProperty": function () {},
-  "getWorldDirection": function () {},
-  "getWorldPosition": function () {},
-  "getWorldQuaternion": function () {},
-  "getWorldRotation": function () {},
-  "getWorldScale": function () {},
-  "hasEventListener": function () {},
-  "isLine": function () {},
-  "isLineSegments": function () {},
-  "isObject3D": function () {},
-  "localToWorld": function () {},
-  "lookAt": function () {},
-  "onAfterRender": function () {},
-  "onBeforeRender": function () {},
-  "raycast": function () {},
-  "remove": function () {},
-  "removeEventListener": function () {},
-  "renderDepth": function () {},
-  "rotateOnAxis": function () {},
-  "rotateOnWorldAxis": function () {},
-  "rotateX": function () {},
-  "rotateY": function () {},
-  "rotateZ": function () {},
-  "setRotationFromAxisAngle": function () {},
-  "setRotationFromEuler": function () {},
-  "setRotationFromMatrix": function () {},
-  "setRotationFromQuaternion": function () {},
-  "toJSON": function () {},
-  "translate": function () {},
-  "translateOnAxis": function () {},
-  "translateX": function () {},
-  "translateY": function () {},
-  "translateZ": function () {},
-  "traverse": function () {},
-  "traverseAncestors": function () {},
-  "traverseVisible": function () {},
-  "update": function () {},
-  "updateMatrix": function () {},
-  "updateMatrixWorld": function () {},
-  "updateWorldMatrix": function () {},
-  "worldToLocal": function () {}
-};
 THREE.FileLoader.prototype = {
+  "constructor": function () {},
+  "extractUrlBase": function () {},
   "load": function () {},
+  "loadAsync": function () {},
+  "parse": function () {},
+  "setCrossOrigin": function () {},
   "setMimeType": function () {},
   "setPath": function () {},
   "setRequestHeader": function () {},
+  "setResourcePath": function () {},
   "setResponseType": function () {},
   "setWithCredentials": function () {}
 };
 THREE.Float32BufferAttribute.prototype = {
+  "applyMatrix3": function () {},
+  "applyMatrix4": function () {},
+  "applyNormalMatrix": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
   "copyArray": function () {},
   "copyAt": function () {},
   "copyColorsArray": function () {},
+  "copyIndicesArray": function () {},
   "copyVector2sArray": function () {},
   "copyVector3sArray": function () {},
   "copyVector4sArray": function () {},
@@ -6409,21 +7889,28 @@ THREE.Float32BufferAttribute.prototype = {
   "set": function () {},
   "setArray": function () {},
   "setDynamic": function () {},
+  "setUsage": function () {},
   "setW": function () {},
   "setX": function () {},
   "setXY": function () {},
   "setXYZ": function () {},
   "setXYZW": function () {},
   "setY": function () {},
-  "setZ": function () {}
+  "setZ": function () {},
+  "toJSON": function () {},
+  "transformDirection": function () {}
 };
 THREE.Float64BufferAttribute.prototype = {
+  "applyMatrix3": function () {},
+  "applyMatrix4": function () {},
+  "applyNormalMatrix": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
   "copyArray": function () {},
   "copyAt": function () {},
   "copyColorsArray": function () {},
+  "copyIndicesArray": function () {},
   "copyVector2sArray": function () {},
   "copyVector3sArray": function () {},
   "copyVector4sArray": function () {},
@@ -6437,13 +7924,16 @@ THREE.Float64BufferAttribute.prototype = {
   "set": function () {},
   "setArray": function () {},
   "setDynamic": function () {},
+  "setUsage": function () {},
   "setW": function () {},
   "setX": function () {},
   "setXY": function () {},
   "setXYZ": function () {},
   "setXYZW": function () {},
   "setY": function () {},
-  "setZ": function () {}
+  "setZ": function () {},
+  "toJSON": function () {},
+  "transformDirection": function () {}
 };
 THREE.Fog.prototype = {
   "clone": function () {},
@@ -6460,9 +7950,14 @@ THREE.Font.prototype = {
   "isFont": function () {}
 };
 THREE.FontLoader.prototype = {
+  "constructor": function () {},
+  "extractUrlBase": function () {},
   "load": function () {},
+  "loadAsync": function () {},
   "parse": function () {},
-  "setPath": function () {}
+  "setCrossOrigin": function () {},
+  "setPath": function () {},
+  "setResourcePath": function () {}
 };
 THREE.Frustum.prototype = {
   "clone": function () {},
@@ -6473,11 +7968,13 @@ THREE.Frustum.prototype = {
   "intersectsSphere": function () {},
   "intersectsSprite": function () {},
   "set": function () {},
-  "setFromMatrix": function () {}
+  "setFromMatrix": function () {},
+  "setFromProjectionMatrix": function () {}
 };
 THREE.Geometry.prototype = {
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clone": function () {},
   "computeBoundingBox": function () {},
@@ -6514,7 +8011,9 @@ THREE.GridHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "computeLineDistances": function () {},
   "constructor": function () {},
@@ -6569,7 +8068,9 @@ THREE.Group.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -6621,7 +8122,9 @@ THREE.HemisphereLight.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -6674,7 +8177,9 @@ THREE.HemisphereLightHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -6723,6 +8228,63 @@ THREE.HemisphereLightHelper.prototype = {
   "updateWorldMatrix": function () {},
   "worldToLocal": function () {}
 };
+THREE.HemisphereLightProbe.prototype = {
+  "add": function () {},
+  "addEventListener": function () {},
+  "applyMatrix": function () {},
+  "applyMatrix4": function () {},
+  "applyQuaternion": function () {},
+  "attach": function () {},
+  "clone": function () {},
+  "constructor": function () {},
+  "copy": function () {},
+  "dispatchEvent": function () {},
+  "fromJSON": function () {},
+  "getChildByName": function () {},
+  "getObjectById": function () {},
+  "getObjectByName": function () {},
+  "getObjectByProperty": function () {},
+  "getWorldDirection": function () {},
+  "getWorldPosition": function () {},
+  "getWorldQuaternion": function () {},
+  "getWorldRotation": function () {},
+  "getWorldScale": function () {},
+  "hasEventListener": function () {},
+  "isHemisphereLightProbe": function () {},
+  "isLight": function () {},
+  "isLightProbe": function () {},
+  "isObject3D": function () {},
+  "localToWorld": function () {},
+  "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
+  "raycast": function () {},
+  "remove": function () {},
+  "removeEventListener": function () {},
+  "renderDepth": function () {},
+  "rotateOnAxis": function () {},
+  "rotateOnWorldAxis": function () {},
+  "rotateX": function () {},
+  "rotateY": function () {},
+  "rotateZ": function () {},
+  "setRotationFromAxisAngle": function () {},
+  "setRotationFromEuler": function () {},
+  "setRotationFromMatrix": function () {},
+  "setRotationFromQuaternion": function () {},
+  "toJSON": function () {},
+  "translate": function () {},
+  "translateOnAxis": function () {},
+  "translateX": function () {},
+  "translateY": function () {},
+  "translateZ": function () {},
+  "traverse": function () {},
+  "traverseAncestors": function () {},
+  "traverseVisible": function () {},
+  "updateMatrix": function () {},
+  "updateMatrixWorld": function () {},
+  "updateWorldMatrix": function () {},
+  "worldToLocal": function () {}
+};
 THREE.IcosahedronBufferGeometry.prototype = {
   "addAttribute": function () {},
   "addDrawCall": function () {},
@@ -6730,6 +8292,7 @@ THREE.IcosahedronBufferGeometry.prototype = {
   "addGroup": function () {},
   "addIndex": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clearDrawCalls": function () {},
   "clearGroups": function () {},
@@ -6742,6 +8305,7 @@ THREE.IcosahedronBufferGeometry.prototype = {
   "computeVertexNormals": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "deleteAttribute": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "fromDirectGeometry": function () {},
@@ -6759,6 +8323,7 @@ THREE.IcosahedronBufferGeometry.prototype = {
   "rotateY": function () {},
   "rotateZ": function () {},
   "scale": function () {},
+  "setAttribute": function () {},
   "setDrawRange": function () {},
   "setFromObject": function () {},
   "setFromPoints": function () {},
@@ -6771,6 +8336,7 @@ THREE.IcosahedronBufferGeometry.prototype = {
 THREE.IcosahedronGeometry.prototype = {
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clone": function () {},
   "computeBoundingBox": function () {},
@@ -6805,22 +8371,32 @@ THREE.IcosahedronGeometry.prototype = {
 };
 THREE.ImageBitmapLoader.prototype = {
   "constructor": function () {},
+  "extractUrlBase": function () {},
   "load": function () {},
+  "loadAsync": function () {},
+  "parse": function () {},
   "setCrossOrigin": function () {},
   "setOptions": function () {},
-  "setPath": function () {}
+  "setPath": function () {},
+  "setResourcePath": function () {}
 };
 THREE.ImageLoader.prototype = {
-  "crossOrigin": function () {},
+  "constructor": function () {},
+  "extractUrlBase": function () {},
   "load": function () {},
+  "loadAsync": function () {},
+  "parse": function () {},
   "setCrossOrigin": function () {},
-  "setPath": function () {}
+  "setPath": function () {},
+  "setResourcePath": function () {}
 };
 THREE.ImmediateRenderObject.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -6869,12 +8445,16 @@ THREE.ImmediateRenderObject.prototype = {
   "worldToLocal": function () {}
 };
 THREE.InstancedBufferAttribute.prototype = {
+  "applyMatrix3": function () {},
+  "applyMatrix4": function () {},
+  "applyNormalMatrix": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
   "copyArray": function () {},
   "copyAt": function () {},
   "copyColorsArray": function () {},
+  "copyIndicesArray": function () {},
   "copyVector2sArray": function () {},
   "copyVector3sArray": function () {},
   "copyVector4sArray": function () {},
@@ -6889,13 +8469,16 @@ THREE.InstancedBufferAttribute.prototype = {
   "set": function () {},
   "setArray": function () {},
   "setDynamic": function () {},
+  "setUsage": function () {},
   "setW": function () {},
   "setX": function () {},
   "setXY": function () {},
   "setXYZ": function () {},
   "setXYZW": function () {},
   "setY": function () {},
-  "setZ": function () {}
+  "setZ": function () {},
+  "toJSON": function () {},
+  "transformDirection": function () {}
 };
 THREE.InstancedBufferGeometry.prototype = {
   "addAttribute": function () {},
@@ -6904,6 +8487,7 @@ THREE.InstancedBufferGeometry.prototype = {
   "addGroup": function () {},
   "addIndex": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clearDrawCalls": function () {},
   "clearGroups": function () {},
@@ -6916,6 +8500,7 @@ THREE.InstancedBufferGeometry.prototype = {
   "computeVertexNormals": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "deleteAttribute": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "fromDirectGeometry": function () {},
@@ -6934,6 +8519,7 @@ THREE.InstancedBufferGeometry.prototype = {
   "rotateY": function () {},
   "rotateZ": function () {},
   "scale": function () {},
+  "setAttribute": function () {},
   "setDrawRange": function () {},
   "setFromObject": function () {},
   "setFromPoints": function () {},
@@ -6954,15 +8540,79 @@ THREE.InstancedInterleavedBuffer.prototype = {
   "onUploadCallback": function () {},
   "set": function () {},
   "setArray": function () {},
-  "setDynamic": function () {}
+  "setDynamic": function () {},
+  "setUsage": function () {}
+};
+THREE.InstancedMesh.prototype = {
+  "add": function () {},
+  "addEventListener": function () {},
+  "applyMatrix": function () {},
+  "applyMatrix4": function () {},
+  "applyQuaternion": function () {},
+  "attach": function () {},
+  "clone": function () {},
+  "constructor": function () {},
+  "copy": function () {},
+  "dispatchEvent": function () {},
+  "getChildByName": function () {},
+  "getMatrixAt": function () {},
+  "getObjectById": function () {},
+  "getObjectByName": function () {},
+  "getObjectByProperty": function () {},
+  "getWorldDirection": function () {},
+  "getWorldPosition": function () {},
+  "getWorldQuaternion": function () {},
+  "getWorldRotation": function () {},
+  "getWorldScale": function () {},
+  "hasEventListener": function () {},
+  "isInstancedMesh": function () {},
+  "isMesh": function () {},
+  "isObject3D": function () {},
+  "localToWorld": function () {},
+  "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
+  "raycast": function () {},
+  "remove": function () {},
+  "removeEventListener": function () {},
+  "renderDepth": function () {},
+  "rotateOnAxis": function () {},
+  "rotateOnWorldAxis": function () {},
+  "rotateX": function () {},
+  "rotateY": function () {},
+  "rotateZ": function () {},
+  "setDrawMode": function () {},
+  "setMatrixAt": function () {},
+  "setRotationFromAxisAngle": function () {},
+  "setRotationFromEuler": function () {},
+  "setRotationFromMatrix": function () {},
+  "setRotationFromQuaternion": function () {},
+  "toJSON": function () {},
+  "translate": function () {},
+  "translateOnAxis": function () {},
+  "translateX": function () {},
+  "translateY": function () {},
+  "translateZ": function () {},
+  "traverse": function () {},
+  "traverseAncestors": function () {},
+  "traverseVisible": function () {},
+  "updateMatrix": function () {},
+  "updateMatrixWorld": function () {},
+  "updateMorphTargets": function () {},
+  "updateWorldMatrix": function () {},
+  "worldToLocal": function () {}
 };
 THREE.Int16BufferAttribute.prototype = {
+  "applyMatrix3": function () {},
+  "applyMatrix4": function () {},
+  "applyNormalMatrix": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
   "copyArray": function () {},
   "copyAt": function () {},
   "copyColorsArray": function () {},
+  "copyIndicesArray": function () {},
   "copyVector2sArray": function () {},
   "copyVector3sArray": function () {},
   "copyVector4sArray": function () {},
@@ -6976,21 +8626,28 @@ THREE.Int16BufferAttribute.prototype = {
   "set": function () {},
   "setArray": function () {},
   "setDynamic": function () {},
+  "setUsage": function () {},
   "setW": function () {},
   "setX": function () {},
   "setXY": function () {},
   "setXYZ": function () {},
   "setXYZW": function () {},
   "setY": function () {},
-  "setZ": function () {}
+  "setZ": function () {},
+  "toJSON": function () {},
+  "transformDirection": function () {}
 };
 THREE.Int32BufferAttribute.prototype = {
+  "applyMatrix3": function () {},
+  "applyMatrix4": function () {},
+  "applyNormalMatrix": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
   "copyArray": function () {},
   "copyAt": function () {},
   "copyColorsArray": function () {},
+  "copyIndicesArray": function () {},
   "copyVector2sArray": function () {},
   "copyVector3sArray": function () {},
   "copyVector4sArray": function () {},
@@ -7004,21 +8661,28 @@ THREE.Int32BufferAttribute.prototype = {
   "set": function () {},
   "setArray": function () {},
   "setDynamic": function () {},
+  "setUsage": function () {},
   "setW": function () {},
   "setX": function () {},
   "setXY": function () {},
   "setXYZ": function () {},
   "setXYZW": function () {},
   "setY": function () {},
-  "setZ": function () {}
+  "setZ": function () {},
+  "toJSON": function () {},
+  "transformDirection": function () {}
 };
 THREE.Int8BufferAttribute.prototype = {
+  "applyMatrix3": function () {},
+  "applyMatrix4": function () {},
+  "applyNormalMatrix": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
   "copyArray": function () {},
   "copyAt": function () {},
   "copyColorsArray": function () {},
+  "copyIndicesArray": function () {},
   "copyVector2sArray": function () {},
   "copyVector3sArray": function () {},
   "copyVector4sArray": function () {},
@@ -7032,13 +8696,16 @@ THREE.Int8BufferAttribute.prototype = {
   "set": function () {},
   "setArray": function () {},
   "setDynamic": function () {},
+  "setUsage": function () {},
   "setW": function () {},
   "setX": function () {},
   "setXY": function () {},
   "setXYZ": function () {},
   "setXYZW": function () {},
   "setY": function () {},
-  "setZ": function () {}
+  "setZ": function () {},
+  "toJSON": function () {},
+  "transformDirection": function () {}
 };
 THREE.InterleavedBuffer.prototype = {
   "clone": function () {},
@@ -7049,9 +8716,11 @@ THREE.InterleavedBuffer.prototype = {
   "onUploadCallback": function () {},
   "set": function () {},
   "setArray": function () {},
-  "setDynamic": function () {}
+  "setDynamic": function () {},
+  "setUsage": function () {}
 };
 THREE.InterleavedBufferAttribute.prototype = {
+  "applyMatrix4": function () {},
   "getW": function () {},
   "getX": function () {},
   "getY": function () {},
@@ -7098,12 +8767,15 @@ THREE.LOD.prototype = {
   "addEventListener": function () {},
   "addLevel": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
   "dispatchEvent": function () {},
   "getChildByName": function () {},
+  "getCurrentLevel": function () {},
   "getObjectById": function () {},
   "getObjectByName": function () {},
   "getObjectByProperty": function () {},
@@ -7114,6 +8786,7 @@ THREE.LOD.prototype = {
   "getWorldRotation": function () {},
   "getWorldScale": function () {},
   "hasEventListener": function () {},
+  "isLOD": function () {},
   "isObject3D": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
@@ -7154,6 +8827,7 @@ THREE.LatheBufferGeometry.prototype = {
   "addGroup": function () {},
   "addIndex": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clearDrawCalls": function () {},
   "clearGroups": function () {},
@@ -7166,6 +8840,7 @@ THREE.LatheBufferGeometry.prototype = {
   "computeVertexNormals": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "deleteAttribute": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "fromDirectGeometry": function () {},
@@ -7183,6 +8858,7 @@ THREE.LatheBufferGeometry.prototype = {
   "rotateY": function () {},
   "rotateZ": function () {},
   "scale": function () {},
+  "setAttribute": function () {},
   "setDrawRange": function () {},
   "setFromObject": function () {},
   "setFromPoints": function () {},
@@ -7195,6 +8871,7 @@ THREE.LatheBufferGeometry.prototype = {
 THREE.LatheGeometry.prototype = {
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clone": function () {},
   "computeBoundingBox": function () {},
@@ -7229,7 +8906,9 @@ THREE.LatheGeometry.prototype = {
 };
 THREE.Layers.prototype = {
   "disable": function () {},
+  "disableAll": function () {},
   "enable": function () {},
+  "enableAll": function () {},
   "set": function () {},
   "test": function () {},
   "toggle": function () {}
@@ -7238,7 +8917,9 @@ THREE.Light.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -7286,16 +8967,82 @@ THREE.Light.prototype = {
   "updateWorldMatrix": function () {},
   "worldToLocal": function () {}
 };
+THREE.LightProbe.prototype = {
+  "add": function () {},
+  "addEventListener": function () {},
+  "applyMatrix": function () {},
+  "applyMatrix4": function () {},
+  "applyQuaternion": function () {},
+  "attach": function () {},
+  "clone": function () {},
+  "constructor": function () {},
+  "copy": function () {},
+  "dispatchEvent": function () {},
+  "fromJSON": function () {},
+  "getChildByName": function () {},
+  "getObjectById": function () {},
+  "getObjectByName": function () {},
+  "getObjectByProperty": function () {},
+  "getWorldDirection": function () {},
+  "getWorldPosition": function () {},
+  "getWorldQuaternion": function () {},
+  "getWorldRotation": function () {},
+  "getWorldScale": function () {},
+  "hasEventListener": function () {},
+  "isLight": function () {},
+  "isLightProbe": function () {},
+  "isObject3D": function () {},
+  "localToWorld": function () {},
+  "lookAt": function () {},
+  "onAfterRender": function () {},
+  "onBeforeRender": function () {},
+  "raycast": function () {},
+  "remove": function () {},
+  "removeEventListener": function () {},
+  "renderDepth": function () {},
+  "rotateOnAxis": function () {},
+  "rotateOnWorldAxis": function () {},
+  "rotateX": function () {},
+  "rotateY": function () {},
+  "rotateZ": function () {},
+  "setRotationFromAxisAngle": function () {},
+  "setRotationFromEuler": function () {},
+  "setRotationFromMatrix": function () {},
+  "setRotationFromQuaternion": function () {},
+  "toJSON": function () {},
+  "translate": function () {},
+  "translateOnAxis": function () {},
+  "translateX": function () {},
+  "translateY": function () {},
+  "translateZ": function () {},
+  "traverse": function () {},
+  "traverseAncestors": function () {},
+  "traverseVisible": function () {},
+  "updateMatrix": function () {},
+  "updateMatrixWorld": function () {},
+  "updateWorldMatrix": function () {},
+  "worldToLocal": function () {}
+};
 THREE.LightShadow.prototype = {
+  "_lightPositionWorld": function () {},
+  "_lookTarget": function () {},
+  "_projScreenMatrix": function () {},
   "clone": function () {},
   "copy": function () {},
-  "toJSON": function () {}
+  "getFrameExtents": function () {},
+  "getFrustum": function () {},
+  "getViewport": function () {},
+  "getViewportCount": function () {},
+  "toJSON": function () {},
+  "updateMatrices": function () {}
 };
 THREE.Line.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "computeLineDistances": function () {},
   "constructor": function () {},
@@ -7432,7 +9179,9 @@ THREE.LineLoop.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "computeLineDistances": function () {},
   "constructor": function () {},
@@ -7486,7 +9235,9 @@ THREE.LineSegments.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "computeLineDistances": function () {},
   "constructor": function () {},
@@ -7549,13 +9300,13 @@ THREE.LinearInterpolant.prototype = {
   "settings": function () {}
 };
 THREE.Loader.prototype = {
-  "createMaterial": function () {},
-  "crossOrigin": function () {},
   "extractUrlBase": function () {},
-  "initMaterials": function () {},
-  "onLoadComplete": function () {},
-  "onLoadProgress": function () {},
-  "onLoadStart": function () {}
+  "load": function () {},
+  "loadAsync": function () {},
+  "parse": function () {},
+  "setCrossOrigin": function () {},
+  "setPath": function () {},
+  "setResourcePath": function () {}
 };
 THREE.Material.prototype = {
   "addEventListener": function () {},
@@ -7572,19 +9323,24 @@ THREE.Material.prototype = {
   "toJSON": function () {}
 };
 THREE.MaterialLoader.prototype = {
+  "constructor": function () {},
+  "extractUrlBase": function () {},
   "load": function () {},
+  "loadAsync": function () {},
   "parse": function () {},
+  "setCrossOrigin": function () {},
   "setPath": function () {},
+  "setResourcePath": function () {},
   "setTextures": function () {}
 };
 THREE.Matrix3.prototype = {
-  "applyToBuffer": function () {},
   "applyToBufferAttribute": function () {},
   "applyToVector3Array": function () {},
   "clone": function () {},
   "copy": function () {},
   "determinant": function () {},
   "equals": function () {},
+  "extractBasis": function () {},
   "flattenToArrayOffset": function () {},
   "fromArray": function () {},
   "getInverse": function () {},
@@ -7608,7 +9364,6 @@ THREE.Matrix3.prototype = {
   "transposeIntoArray": function () {}
 };
 THREE.Matrix4.prototype = {
-  "applyToBuffer": function () {},
   "applyToBufferAttribute": function () {},
   "applyToVector3Array": function () {},
   "clone": function () {},
@@ -7668,7 +9423,9 @@ THREE.Mesh.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -7863,7 +9620,6 @@ THREE.MeshToonMaterial.prototype = {
   "dispose": function () {},
   "hasEventListener": function () {},
   "isMaterial": function () {},
-  "isMeshPhongMaterial": function () {},
   "isMeshToonMaterial": function () {},
   "onBeforeCompile": function () {},
   "removeEventListener": function () {},
@@ -7893,7 +9649,9 @@ THREE.Object3D.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -7941,8 +9699,10 @@ THREE.Object3D.prototype = {
   "worldToLocal": function () {}
 };
 THREE.ObjectLoader.prototype = {
-  "crossOrigin": function () {},
+  "constructor": function () {},
+  "extractUrlBase": function () {},
   "load": function () {},
+  "loadAsync": function () {},
   "parse": function () {},
   "parseAnimations": function () {},
   "parseGeometries": function () {},
@@ -7963,6 +9723,7 @@ THREE.OctahedronBufferGeometry.prototype = {
   "addGroup": function () {},
   "addIndex": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clearDrawCalls": function () {},
   "clearGroups": function () {},
@@ -7975,6 +9736,7 @@ THREE.OctahedronBufferGeometry.prototype = {
   "computeVertexNormals": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "deleteAttribute": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "fromDirectGeometry": function () {},
@@ -7992,6 +9754,7 @@ THREE.OctahedronBufferGeometry.prototype = {
   "rotateY": function () {},
   "rotateZ": function () {},
   "scale": function () {},
+  "setAttribute": function () {},
   "setDrawRange": function () {},
   "setFromObject": function () {},
   "setFromPoints": function () {},
@@ -8004,6 +9767,7 @@ THREE.OctahedronBufferGeometry.prototype = {
 THREE.OctahedronGeometry.prototype = {
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clone": function () {},
   "computeBoundingBox": function () {},
@@ -8040,7 +9804,9 @@ THREE.OrthographicCamera.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clearViewOffset": function () {},
   "clone": function () {},
   "constructor": function () {},
@@ -8092,6 +9858,23 @@ THREE.OrthographicCamera.prototype = {
   "updateWorldMatrix": function () {},
   "worldToLocal": function () {}
 };
+THREE.PMREMGenerator.prototype = {
+  "_allocateTargets": function () {},
+  "_applyPMREM": function () {},
+  "_blur": function () {},
+  "_cleanup": function () {},
+  "_compileMaterial": function () {},
+  "_halfBlur": function () {},
+  "_sceneToCubeUV": function () {},
+  "_textureToCubeUV": function () {},
+  "compileCubemapShader": function () {},
+  "compileEquirectangularShader": function () {},
+  "constructor": function () {},
+  "dispose": function () {},
+  "fromCubemap": function () {},
+  "fromEquirectangular": function () {},
+  "fromScene": function () {}
+};
 THREE.ParametricBufferGeometry.prototype = {
   "addAttribute": function () {},
   "addDrawCall": function () {},
@@ -8099,6 +9882,7 @@ THREE.ParametricBufferGeometry.prototype = {
   "addGroup": function () {},
   "addIndex": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clearDrawCalls": function () {},
   "clearGroups": function () {},
@@ -8111,6 +9895,7 @@ THREE.ParametricBufferGeometry.prototype = {
   "computeVertexNormals": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "deleteAttribute": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "fromDirectGeometry": function () {},
@@ -8128,6 +9913,7 @@ THREE.ParametricBufferGeometry.prototype = {
   "rotateY": function () {},
   "rotateZ": function () {},
   "scale": function () {},
+  "setAttribute": function () {},
   "setDrawRange": function () {},
   "setFromObject": function () {},
   "setFromPoints": function () {},
@@ -8140,6 +9926,7 @@ THREE.ParametricBufferGeometry.prototype = {
 THREE.ParametricGeometry.prototype = {
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clone": function () {},
   "computeBoundingBox": function () {},
@@ -8211,7 +9998,9 @@ THREE.PerspectiveCamera.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clearViewOffset": function () {},
   "clone": function () {},
   "constructor": function () {},
@@ -8282,6 +10071,7 @@ THREE.Plane.prototype = {
   "intersectsLine": function () {},
   "intersectsSphere": function () {},
   "isIntersectionLine": function () {},
+  "isPlane": function () {},
   "negate": function () {},
   "normalize": function () {},
   "projectPoint": function () {},
@@ -8298,6 +10088,7 @@ THREE.PlaneBufferGeometry.prototype = {
   "addGroup": function () {},
   "addIndex": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clearDrawCalls": function () {},
   "clearGroups": function () {},
@@ -8310,6 +10101,7 @@ THREE.PlaneBufferGeometry.prototype = {
   "computeVertexNormals": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "deleteAttribute": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "fromDirectGeometry": function () {},
@@ -8327,6 +10119,7 @@ THREE.PlaneBufferGeometry.prototype = {
   "rotateY": function () {},
   "rotateZ": function () {},
   "scale": function () {},
+  "setAttribute": function () {},
   "setDrawRange": function () {},
   "setFromObject": function () {},
   "setFromPoints": function () {},
@@ -8339,6 +10132,7 @@ THREE.PlaneBufferGeometry.prototype = {
 THREE.PlaneGeometry.prototype = {
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clone": function () {},
   "computeBoundingBox": function () {},
@@ -8375,7 +10169,9 @@ THREE.PlaneHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "computeLineDistances": function () {},
   "constructor": function () {},
@@ -8428,7 +10224,9 @@ THREE.PointLight.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -8481,7 +10279,9 @@ THREE.PointLightHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -8537,7 +10337,9 @@ THREE.Points.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -8582,6 +10384,7 @@ THREE.Points.prototype = {
   "traverseVisible": function () {},
   "updateMatrix": function () {},
   "updateMatrixWorld": function () {},
+  "updateMorphTargets": function () {},
   "updateWorldMatrix": function () {},
   "worldToLocal": function () {}
 };
@@ -8604,7 +10407,9 @@ THREE.PolarGridHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "computeLineDistances": function () {},
   "constructor": function () {},
@@ -8661,6 +10466,7 @@ THREE.PolyhedronBufferGeometry.prototype = {
   "addGroup": function () {},
   "addIndex": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clearDrawCalls": function () {},
   "clearGroups": function () {},
@@ -8673,6 +10479,7 @@ THREE.PolyhedronBufferGeometry.prototype = {
   "computeVertexNormals": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "deleteAttribute": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "fromDirectGeometry": function () {},
@@ -8690,6 +10497,7 @@ THREE.PolyhedronBufferGeometry.prototype = {
   "rotateY": function () {},
   "rotateZ": function () {},
   "scale": function () {},
+  "setAttribute": function () {},
   "setDrawRange": function () {},
   "setFromObject": function () {},
   "setFromPoints": function () {},
@@ -8702,6 +10510,7 @@ THREE.PolyhedronBufferGeometry.prototype = {
 THREE.PolyhedronGeometry.prototype = {
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clone": function () {},
   "computeBoundingBox": function () {},
@@ -8738,7 +10547,9 @@ THREE.PositionalAudio.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "connect": function () {},
   "constructor": function () {},
@@ -8767,7 +10578,6 @@ THREE.PositionalAudio.prototype = {
   "getWorldScale": function () {},
   "hasEventListener": function () {},
   "isObject3D": function () {},
-  "load": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
   "onAfterRender": function () {},
@@ -8791,8 +10601,11 @@ THREE.PositionalAudio.prototype = {
   "setFilter": function () {},
   "setFilters": function () {},
   "setLoop": function () {},
+  "setLoopEnd": function () {},
+  "setLoopStart": function () {},
   "setMaxDistance": function () {},
   "setMediaElementSource": function () {},
+  "setMediaStreamSource": function () {},
   "setNodeSource": function () {},
   "setPlaybackRate": function () {},
   "setRefDistance": function () {},
@@ -8839,9 +10652,15 @@ THREE.PropertyBinding.Composite.prototype = {
 };
 THREE.PropertyMixer.prototype = {
   "_lerp": function () {},
+  "_lerpAdditive": function () {},
   "_select": function () {},
+  "_setAdditiveIdentityNumeric": function () {},
+  "_setAdditiveIdentityOther": function () {},
+  "_setAdditiveIdentityQuaternion": function () {},
   "_slerp": function () {},
+  "_slerpAdditive": function () {},
   "accumulate": function () {},
+  "accumulateAdditive": function () {},
   "apply": function () {},
   "restoreOriginalState": function () {},
   "saveOriginalState": function () {}
@@ -8885,6 +10704,8 @@ THREE.QuadraticBezierCurve3.prototype = {
   "updateArcLengths": function () {}
 };
 THREE.Quaternion.prototype = {
+  "_onChange": function () {},
+  "_onChangeCallback": function () {},
   "angleTo": function () {},
   "clone": function () {},
   "conjugate": function () {},
@@ -8892,6 +10713,7 @@ THREE.Quaternion.prototype = {
   "dot": function () {},
   "equals": function () {},
   "fromArray": function () {},
+  "fromBufferAttribute": function () {},
   "inverse": function () {},
   "isQuaternion": function () {},
   "length": function () {},
@@ -8900,8 +10722,6 @@ THREE.Quaternion.prototype = {
   "multiplyQuaternions": function () {},
   "multiplyVector3": function () {},
   "normalize": function () {},
-  "onChange": function () {},
-  "onChangeCallback": function () {},
   "premultiply": function () {},
   "rotateTowards": function () {},
   "set": function () {},
@@ -8987,7 +10807,6 @@ THREE.Ray.prototype = {
 THREE.Raycaster.prototype = {
   "intersectObject": function () {},
   "intersectObjects": function () {},
-  "linePrecision": function () {},
   "set": function () {},
   "setFromCamera": function () {}
 };
@@ -8995,7 +10814,9 @@ THREE.RectAreaLight.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -9044,61 +10865,6 @@ THREE.RectAreaLight.prototype = {
   "updateWorldMatrix": function () {},
   "worldToLocal": function () {}
 };
-THREE.RectAreaLightHelper.prototype = {
-  "add": function () {},
-  "addEventListener": function () {},
-  "applyMatrix": function () {},
-  "applyQuaternion": function () {},
-  "clone": function () {},
-  "computeLineDistances": function () {},
-  "constructor": function () {},
-  "copy": function () {},
-  "dispatchEvent": function () {},
-  "dispose": function () {},
-  "getChildByName": function () {},
-  "getObjectById": function () {},
-  "getObjectByName": function () {},
-  "getObjectByProperty": function () {},
-  "getWorldDirection": function () {},
-  "getWorldPosition": function () {},
-  "getWorldQuaternion": function () {},
-  "getWorldRotation": function () {},
-  "getWorldScale": function () {},
-  "hasEventListener": function () {},
-  "isLine": function () {},
-  "isObject3D": function () {},
-  "localToWorld": function () {},
-  "lookAt": function () {},
-  "onAfterRender": function () {},
-  "onBeforeRender": function () {},
-  "raycast": function () {},
-  "remove": function () {},
-  "removeEventListener": function () {},
-  "renderDepth": function () {},
-  "rotateOnAxis": function () {},
-  "rotateOnWorldAxis": function () {},
-  "rotateX": function () {},
-  "rotateY": function () {},
-  "rotateZ": function () {},
-  "setRotationFromAxisAngle": function () {},
-  "setRotationFromEuler": function () {},
-  "setRotationFromMatrix": function () {},
-  "setRotationFromQuaternion": function () {},
-  "toJSON": function () {},
-  "translate": function () {},
-  "translateOnAxis": function () {},
-  "translateX": function () {},
-  "translateY": function () {},
-  "translateZ": function () {},
-  "traverse": function () {},
-  "traverseAncestors": function () {},
-  "traverseVisible": function () {},
-  "update": function () {},
-  "updateMatrix": function () {},
-  "updateMatrixWorld": function () {},
-  "updateWorldMatrix": function () {},
-  "worldToLocal": function () {}
-};
 THREE.RingBufferGeometry.prototype = {
   "addAttribute": function () {},
   "addDrawCall": function () {},
@@ -9106,6 +10872,7 @@ THREE.RingBufferGeometry.prototype = {
   "addGroup": function () {},
   "addIndex": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clearDrawCalls": function () {},
   "clearGroups": function () {},
@@ -9118,6 +10885,7 @@ THREE.RingBufferGeometry.prototype = {
   "computeVertexNormals": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "deleteAttribute": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "fromDirectGeometry": function () {},
@@ -9135,6 +10903,7 @@ THREE.RingBufferGeometry.prototype = {
   "rotateY": function () {},
   "rotateZ": function () {},
   "scale": function () {},
+  "setAttribute": function () {},
   "setDrawRange": function () {},
   "setFromObject": function () {},
   "setFromPoints": function () {},
@@ -9147,6 +10916,7 @@ THREE.RingBufferGeometry.prototype = {
 THREE.RingGeometry.prototype = {
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clone": function () {},
   "computeBoundingBox": function () {},
@@ -9183,7 +10953,9 @@ THREE.Scene.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -9309,6 +11081,7 @@ THREE.ShapeBufferGeometry.prototype = {
   "addGroup": function () {},
   "addIndex": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clearDrawCalls": function () {},
   "clearGroups": function () {},
@@ -9321,6 +11094,7 @@ THREE.ShapeBufferGeometry.prototype = {
   "computeVertexNormals": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "deleteAttribute": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "fromDirectGeometry": function () {},
@@ -9338,6 +11112,7 @@ THREE.ShapeBufferGeometry.prototype = {
   "rotateY": function () {},
   "rotateZ": function () {},
   "scale": function () {},
+  "setAttribute": function () {},
   "setDrawRange": function () {},
   "setFromObject": function () {},
   "setFromPoints": function () {},
@@ -9350,6 +11125,7 @@ THREE.ShapeBufferGeometry.prototype = {
 THREE.ShapeGeometry.prototype = {
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clone": function () {},
   "computeBoundingBox": function () {},
@@ -9393,6 +11169,7 @@ THREE.ShapePath.prototype = {
 THREE.Skeleton.prototype = {
   "calculateInverses": function () {},
   "clone": function () {},
+  "dispose": function () {},
   "getBoneByName": function () {},
   "pose": function () {},
   "update": function () {}
@@ -9401,7 +11178,9 @@ THREE.SkeletonHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "computeLineDistances": function () {},
   "constructor": function () {},
@@ -9420,6 +11199,7 @@ THREE.SkeletonHelper.prototype = {
   "isLine": function () {},
   "isLineSegments": function () {},
   "isObject3D": function () {},
+  "isSkeletonHelper": function () {},
   "localToWorld": function () {},
   "lookAt": function () {},
   "onAfterRender": function () {},
@@ -9456,8 +11236,11 @@ THREE.SkinnedMesh.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "bind": function () {},
+  "boneTransform": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -9524,6 +11307,8 @@ THREE.Sphere.prototype = {
   "intersectsBox": function () {},
   "intersectsPlane": function () {},
   "intersectsSphere": function () {},
+  "isEmpty": function () {},
+  "makeEmpty": function () {},
   "set": function () {},
   "setFromPoints": function () {},
   "translate": function () {}
@@ -9535,6 +11320,7 @@ THREE.SphereBufferGeometry.prototype = {
   "addGroup": function () {},
   "addIndex": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clearDrawCalls": function () {},
   "clearGroups": function () {},
@@ -9547,6 +11333,7 @@ THREE.SphereBufferGeometry.prototype = {
   "computeVertexNormals": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "deleteAttribute": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "fromDirectGeometry": function () {},
@@ -9564,6 +11351,7 @@ THREE.SphereBufferGeometry.prototype = {
   "rotateY": function () {},
   "rotateZ": function () {},
   "scale": function () {},
+  "setAttribute": function () {},
   "setDrawRange": function () {},
   "setFromObject": function () {},
   "setFromPoints": function () {},
@@ -9576,6 +11364,7 @@ THREE.SphereBufferGeometry.prototype = {
 THREE.SphereGeometry.prototype = {
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clone": function () {},
   "computeBoundingBox": function () {},
@@ -9615,6 +11404,22 @@ THREE.Spherical.prototype = {
   "set": function () {},
   "setFromCartesianCoords": function () {},
   "setFromVector3": function () {}
+};
+THREE.SphericalHarmonics3.prototype = {
+  "add": function () {},
+  "addScaledSH": function () {},
+  "clone": function () {},
+  "copy": function () {},
+  "equals": function () {},
+  "fromArray": function () {},
+  "getAt": function () {},
+  "getIrradianceAt": function () {},
+  "isSphericalHarmonics3": function () {},
+  "lerp": function () {},
+  "scale": function () {},
+  "set": function () {},
+  "toArray": function () {},
+  "zero": function () {}
 };
 THREE.Spline.prototype = {
   "clone": function () {},
@@ -9680,7 +11485,9 @@ THREE.SpotLight.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -9733,7 +11540,9 @@ THREE.SpotLightHelper.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -9783,18 +11592,27 @@ THREE.SpotLightHelper.prototype = {
   "worldToLocal": function () {}
 };
 THREE.SpotLightShadow.prototype = {
+  "_lightPositionWorld": function () {},
+  "_lookTarget": function () {},
+  "_projScreenMatrix": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "getFrameExtents": function () {},
+  "getFrustum": function () {},
+  "getViewport": function () {},
+  "getViewportCount": function () {},
   "isSpotLightShadow": function () {},
   "toJSON": function () {},
-  "update": function () {}
+  "updateMatrices": function () {}
 };
 THREE.Sprite.prototype = {
   "add": function () {},
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "applyQuaternion": function () {},
+  "attach": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
@@ -9886,6 +11704,7 @@ THREE.TetrahedronBufferGeometry.prototype = {
   "addGroup": function () {},
   "addIndex": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clearDrawCalls": function () {},
   "clearGroups": function () {},
@@ -9898,6 +11717,7 @@ THREE.TetrahedronBufferGeometry.prototype = {
   "computeVertexNormals": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "deleteAttribute": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "fromDirectGeometry": function () {},
@@ -9915,6 +11735,7 @@ THREE.TetrahedronBufferGeometry.prototype = {
   "rotateY": function () {},
   "rotateZ": function () {},
   "scale": function () {},
+  "setAttribute": function () {},
   "setDrawRange": function () {},
   "setFromObject": function () {},
   "setFromPoints": function () {},
@@ -9927,6 +11748,7 @@ THREE.TetrahedronBufferGeometry.prototype = {
 THREE.TetrahedronGeometry.prototype = {
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clone": function () {},
   "computeBoundingBox": function () {},
@@ -9968,6 +11790,7 @@ THREE.TextBufferGeometry.prototype = {
   "addShape": function () {},
   "addShapeList": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clearDrawCalls": function () {},
   "clearGroups": function () {},
@@ -9980,6 +11803,7 @@ THREE.TextBufferGeometry.prototype = {
   "computeVertexNormals": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "deleteAttribute": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "fromDirectGeometry": function () {},
@@ -9998,6 +11822,7 @@ THREE.TextBufferGeometry.prototype = {
   "rotateY": function () {},
   "rotateZ": function () {},
   "scale": function () {},
+  "setAttribute": function () {},
   "setDrawRange": function () {},
   "setFromObject": function () {},
   "setFromPoints": function () {},
@@ -10010,6 +11835,7 @@ THREE.TextBufferGeometry.prototype = {
 THREE.TextGeometry.prototype = {
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clone": function () {},
   "computeBoundingBox": function () {},
@@ -10057,10 +11883,14 @@ THREE.Texture.prototype = {
   "updateMatrix": function () {}
 };
 THREE.TextureLoader.prototype = {
-  "crossOrigin": function () {},
+  "constructor": function () {},
+  "extractUrlBase": function () {},
   "load": function () {},
+  "loadAsync": function () {},
+  "parse": function () {},
   "setCrossOrigin": function () {},
-  "setPath": function () {}
+  "setPath": function () {},
+  "setResourcePath": function () {}
 };
 THREE.TorusBufferGeometry.prototype = {
   "addAttribute": function () {},
@@ -10069,6 +11899,7 @@ THREE.TorusBufferGeometry.prototype = {
   "addGroup": function () {},
   "addIndex": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clearDrawCalls": function () {},
   "clearGroups": function () {},
@@ -10081,6 +11912,7 @@ THREE.TorusBufferGeometry.prototype = {
   "computeVertexNormals": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "deleteAttribute": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "fromDirectGeometry": function () {},
@@ -10098,6 +11930,7 @@ THREE.TorusBufferGeometry.prototype = {
   "rotateY": function () {},
   "rotateZ": function () {},
   "scale": function () {},
+  "setAttribute": function () {},
   "setDrawRange": function () {},
   "setFromObject": function () {},
   "setFromPoints": function () {},
@@ -10110,6 +11943,7 @@ THREE.TorusBufferGeometry.prototype = {
 THREE.TorusGeometry.prototype = {
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clone": function () {},
   "computeBoundingBox": function () {},
@@ -10149,6 +11983,7 @@ THREE.TorusKnotBufferGeometry.prototype = {
   "addGroup": function () {},
   "addIndex": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clearDrawCalls": function () {},
   "clearGroups": function () {},
@@ -10161,6 +11996,7 @@ THREE.TorusKnotBufferGeometry.prototype = {
   "computeVertexNormals": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "deleteAttribute": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "fromDirectGeometry": function () {},
@@ -10178,6 +12014,7 @@ THREE.TorusKnotBufferGeometry.prototype = {
   "rotateY": function () {},
   "rotateZ": function () {},
   "scale": function () {},
+  "setAttribute": function () {},
   "setDrawRange": function () {},
   "setFromObject": function () {},
   "setFromPoints": function () {},
@@ -10190,6 +12027,7 @@ THREE.TorusKnotBufferGeometry.prototype = {
 THREE.TorusKnotGeometry.prototype = {
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clone": function () {},
   "computeBoundingBox": function () {},
@@ -10237,6 +12075,7 @@ THREE.Triangle.prototype = {
   "getPlane": function () {},
   "getUV": function () {},
   "intersectsBox": function () {},
+  "isFrontFacing": function () {},
   "midpoint": function () {},
   "normal": function () {},
   "plane": function () {},
@@ -10250,6 +12089,7 @@ THREE.TubeBufferGeometry.prototype = {
   "addGroup": function () {},
   "addIndex": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clearDrawCalls": function () {},
   "clearGroups": function () {},
@@ -10262,6 +12102,7 @@ THREE.TubeBufferGeometry.prototype = {
   "computeVertexNormals": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "deleteAttribute": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "fromDirectGeometry": function () {},
@@ -10279,6 +12120,7 @@ THREE.TubeBufferGeometry.prototype = {
   "rotateY": function () {},
   "rotateZ": function () {},
   "scale": function () {},
+  "setAttribute": function () {},
   "setDrawRange": function () {},
   "setFromObject": function () {},
   "setFromPoints": function () {},
@@ -10291,6 +12133,7 @@ THREE.TubeBufferGeometry.prototype = {
 THREE.TubeGeometry.prototype = {
   "addEventListener": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clone": function () {},
   "computeBoundingBox": function () {},
@@ -10324,12 +12167,16 @@ THREE.TubeGeometry.prototype = {
   "translate": function () {}
 };
 THREE.Uint16BufferAttribute.prototype = {
+  "applyMatrix3": function () {},
+  "applyMatrix4": function () {},
+  "applyNormalMatrix": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
   "copyArray": function () {},
   "copyAt": function () {},
   "copyColorsArray": function () {},
+  "copyIndicesArray": function () {},
   "copyVector2sArray": function () {},
   "copyVector3sArray": function () {},
   "copyVector4sArray": function () {},
@@ -10343,21 +12190,28 @@ THREE.Uint16BufferAttribute.prototype = {
   "set": function () {},
   "setArray": function () {},
   "setDynamic": function () {},
+  "setUsage": function () {},
   "setW": function () {},
   "setX": function () {},
   "setXY": function () {},
   "setXYZ": function () {},
   "setXYZW": function () {},
   "setY": function () {},
-  "setZ": function () {}
+  "setZ": function () {},
+  "toJSON": function () {},
+  "transformDirection": function () {}
 };
 THREE.Uint32BufferAttribute.prototype = {
+  "applyMatrix3": function () {},
+  "applyMatrix4": function () {},
+  "applyNormalMatrix": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
   "copyArray": function () {},
   "copyAt": function () {},
   "copyColorsArray": function () {},
+  "copyIndicesArray": function () {},
   "copyVector2sArray": function () {},
   "copyVector3sArray": function () {},
   "copyVector4sArray": function () {},
@@ -10371,21 +12225,28 @@ THREE.Uint32BufferAttribute.prototype = {
   "set": function () {},
   "setArray": function () {},
   "setDynamic": function () {},
+  "setUsage": function () {},
   "setW": function () {},
   "setX": function () {},
   "setXY": function () {},
   "setXYZ": function () {},
   "setXYZW": function () {},
   "setY": function () {},
-  "setZ": function () {}
+  "setZ": function () {},
+  "toJSON": function () {},
+  "transformDirection": function () {}
 };
 THREE.Uint8BufferAttribute.prototype = {
+  "applyMatrix3": function () {},
+  "applyMatrix4": function () {},
+  "applyNormalMatrix": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
   "copyArray": function () {},
   "copyAt": function () {},
   "copyColorsArray": function () {},
+  "copyIndicesArray": function () {},
   "copyVector2sArray": function () {},
   "copyVector3sArray": function () {},
   "copyVector4sArray": function () {},
@@ -10399,21 +12260,28 @@ THREE.Uint8BufferAttribute.prototype = {
   "set": function () {},
   "setArray": function () {},
   "setDynamic": function () {},
+  "setUsage": function () {},
   "setW": function () {},
   "setX": function () {},
   "setXY": function () {},
   "setXYZ": function () {},
   "setXYZW": function () {},
   "setY": function () {},
-  "setZ": function () {}
+  "setZ": function () {},
+  "toJSON": function () {},
+  "transformDirection": function () {}
 };
 THREE.Uint8ClampedBufferAttribute.prototype = {
+  "applyMatrix3": function () {},
+  "applyMatrix4": function () {},
+  "applyNormalMatrix": function () {},
   "clone": function () {},
   "constructor": function () {},
   "copy": function () {},
   "copyArray": function () {},
   "copyAt": function () {},
   "copyColorsArray": function () {},
+  "copyIndicesArray": function () {},
   "copyVector2sArray": function () {},
   "copyVector3sArray": function () {},
   "copyVector4sArray": function () {},
@@ -10427,13 +12295,16 @@ THREE.Uint8ClampedBufferAttribute.prototype = {
   "set": function () {},
   "setArray": function () {},
   "setDynamic": function () {},
+  "setUsage": function () {},
   "setW": function () {},
   "setX": function () {},
   "setXY": function () {},
   "setXYZ": function () {},
   "setXYZW": function () {},
   "setY": function () {},
-  "setZ": function () {}
+  "setZ": function () {},
+  "toJSON": function () {},
+  "transformDirection": function () {}
 };
 THREE.Uniform.prototype = {
   "clone": function () {}
@@ -10478,6 +12349,7 @@ THREE.Vector2.prototype = {
   "multiplyScalar": function () {},
   "negate": function () {},
   "normalize": function () {},
+  "random": function () {},
   "rotateAround": function () {},
   "round": function () {},
   "roundToZero": function () {},
@@ -10502,6 +12374,7 @@ THREE.Vector3.prototype = {
   "applyEuler": function () {},
   "applyMatrix3": function () {},
   "applyMatrix4": function () {},
+  "applyNormalMatrix": function () {},
   "applyProjection": function () {},
   "applyQuaternion": function () {},
   "ceil": function () {},
@@ -10545,6 +12418,7 @@ THREE.Vector3.prototype = {
   "project": function () {},
   "projectOnPlane": function () {},
   "projectOnVector": function () {},
+  "random": function () {},
   "reflect": function () {},
   "round": function () {},
   "roundToZero": function () {},
@@ -10554,6 +12428,7 @@ THREE.Vector3.prototype = {
   "setEulerFromRotationMatrix": function () {},
   "setFromCylindrical": function () {},
   "setFromCylindricalCoords": function () {},
+  "setFromMatrix3Column": function () {},
   "setFromMatrixColumn": function () {},
   "setFromMatrixPosition": function () {},
   "setFromMatrixScale": function () {},
@@ -10603,6 +12478,7 @@ THREE.Vector4.prototype = {
   "multiplyScalar": function () {},
   "negate": function () {},
   "normalize": function () {},
+  "random": function () {},
   "round": function () {},
   "roundToZero": function () {},
   "set": function () {},
@@ -10639,61 +12515,6 @@ THREE.VectorKeyframeTrack.prototype = {
   "trim": function () {},
   "validate": function () {}
 };
-THREE.VertexNormalsHelper.prototype = {
-  "add": function () {},
-  "addEventListener": function () {},
-  "applyMatrix": function () {},
-  "applyQuaternion": function () {},
-  "clone": function () {},
-  "computeLineDistances": function () {},
-  "constructor": function () {},
-  "copy": function () {},
-  "dispatchEvent": function () {},
-  "getChildByName": function () {},
-  "getObjectById": function () {},
-  "getObjectByName": function () {},
-  "getObjectByProperty": function () {},
-  "getWorldDirection": function () {},
-  "getWorldPosition": function () {},
-  "getWorldQuaternion": function () {},
-  "getWorldRotation": function () {},
-  "getWorldScale": function () {},
-  "hasEventListener": function () {},
-  "isLine": function () {},
-  "isLineSegments": function () {},
-  "isObject3D": function () {},
-  "localToWorld": function () {},
-  "lookAt": function () {},
-  "onAfterRender": function () {},
-  "onBeforeRender": function () {},
-  "raycast": function () {},
-  "remove": function () {},
-  "removeEventListener": function () {},
-  "renderDepth": function () {},
-  "rotateOnAxis": function () {},
-  "rotateOnWorldAxis": function () {},
-  "rotateX": function () {},
-  "rotateY": function () {},
-  "rotateZ": function () {},
-  "setRotationFromAxisAngle": function () {},
-  "setRotationFromEuler": function () {},
-  "setRotationFromMatrix": function () {},
-  "setRotationFromQuaternion": function () {},
-  "toJSON": function () {},
-  "translate": function () {},
-  "translateOnAxis": function () {},
-  "translateX": function () {},
-  "translateY": function () {},
-  "translateZ": function () {},
-  "traverse": function () {},
-  "traverseAncestors": function () {},
-  "traverseVisible": function () {},
-  "update": function () {},
-  "updateMatrix": function () {},
-  "updateMatrixWorld": function () {},
-  "updateWorldMatrix": function () {},
-  "worldToLocal": function () {}
-};
 THREE.VideoTexture.prototype = {
   "addEventListener": function () {},
   "clone": function () {},
@@ -10709,6 +12530,20 @@ THREE.VideoTexture.prototype = {
   "transformUv": function () {},
   "update": function () {},
   "updateMatrix": function () {}
+};
+THREE.WebGLCubeRenderTarget.prototype = {
+  "addEventListener": function () {},
+  "clone": function () {},
+  "constructor": function () {},
+  "copy": function () {},
+  "dispatchEvent": function () {},
+  "dispose": function () {},
+  "fromEquirectangularTexture": function () {},
+  "hasEventListener": function () {},
+  "isWebGLCubeRenderTarget": function () {},
+  "isWebGLRenderTarget": function () {},
+  "removeEventListener": function () {},
+  "setSize": function () {}
 };
 THREE.WebGLMultisampleRenderTarget.prototype = {
   "addEventListener": function () {},
@@ -10735,31 +12570,23 @@ THREE.WebGLRenderTarget.prototype = {
   "removeEventListener": function () {},
   "setSize": function () {}
 };
-THREE.WebGLRenderTargetCube.prototype = {
-  "addEventListener": function () {},
-  "clone": function () {},
-  "constructor": function () {},
-  "copy": function () {},
-  "dispatchEvent": function () {},
-  "dispose": function () {},
-  "hasEventListener": function () {},
-  "isWebGLRenderTarget": function () {},
-  "isWebGLRenderTargetCube": function () {},
-  "removeEventListener": function () {},
-  "setSize": function () {}
-};
 THREE.WebGLRenderer.prototype = {
   "addPostPlugin": function () {},
   "addPrePlugin": function () {},
+  "allocTextureUnit": function () {},
   "animate": function () {},
   "clearTarget": function () {},
   "enableScissorTest": function () {},
+  "getActiveMipMapLevel": function () {},
   "getCurrentRenderTarget": function () {},
   "getMaxAnisotropy": function () {},
   "getPrecision": function () {},
   "initMaterial": function () {},
   "resetGLState": function () {},
   "setFaceCulling": function () {},
+  "setTexture": function () {},
+  "setTexture2D": function () {},
+  "setTextureCube": function () {},
   "supportsBlendMinMax": function () {},
   "supportsCompressedTexturePVRTC": function () {},
   "supportsCompressedTextureS3TC": function () {},
@@ -10777,6 +12604,7 @@ THREE.WireframeGeometry.prototype = {
   "addGroup": function () {},
   "addIndex": function () {},
   "applyMatrix": function () {},
+  "applyMatrix4": function () {},
   "center": function () {},
   "clearDrawCalls": function () {},
   "clearGroups": function () {},
@@ -10789,6 +12617,7 @@ THREE.WireframeGeometry.prototype = {
   "computeVertexNormals": function () {},
   "constructor": function () {},
   "copy": function () {},
+  "deleteAttribute": function () {},
   "dispatchEvent": function () {},
   "dispose": function () {},
   "fromDirectGeometry": function () {},
@@ -10806,6 +12635,7 @@ THREE.WireframeGeometry.prototype = {
   "rotateY": function () {},
   "rotateZ": function () {},
   "scale": function () {},
+  "setAttribute": function () {},
   "setDrawRange": function () {},
   "setFromObject": function () {},
   "setFromPoints": function () {},

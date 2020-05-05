@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.1.01")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "0.1.16")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom {:project     'cljsjs/three
@@ -17,8 +17,8 @@
 
 (deftask package []
   (comp
-   (download  :url      "https://raw.githubusercontent.com/mrdoob/three.js/r101/build/three.js")
-   (download  :url      "https://raw.githubusercontent.com/mrdoob/three.js/r101/build/three.min.js")
+   (download  :url      "https://unpkg.com/three@0.116.1/build/three.js")
+   (download  :url      "https://unpkg.com/three@0.116.1/build/three.min.js")
    (sift      :move     {#"^three.js"
                          "cljsjs/three/development/three.inc.js"
                          #"^three.min.js"
