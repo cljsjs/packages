@@ -1,32 +1,21 @@
 var path = require('path');
 
 module.exports = {
-  entry: './main.js',
+  entry: {
+    'material-ui-chip-input' :'./main.js'
+  },
   output: {
-    path: path.join(__dirname, "dist"),
-    filename: "material-ui-chip-input.inc.js",
-    libraryTarget: "var",
-    library: "MaterialUIChipInput"
+    filename: "[name].inc.js",
   },
   externals: {
     "react": "React",
-    "material-ui/Chip": "MaterialUI.Chip",
-    "material-ui/styles/colors": "MaterialUIStyles.colors",
-    "material-ui/styles/transitions": "MaterialUIStyles.transitions",
-    "material-ui/AutoComplete/AutoComplete": "MaterialUI.AutoComplete",
-    "material-ui/utils/colorManipulator": "MaterialUIUtils.colorManipulator"
-  },
-  devtool: 'source-map',
-  module: {
-    loaders: [
-      {
-        test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['es2015', 'react', 'stage-0']
-        }
-      }
-    ]
+    "@material-ui/core/Chip": "MaterialUI.Chip",
+    "@material-ui/core/Input": "MaterialUI.Input",
+    "@material-ui/core/FilledInput/FilledInput": "MaterialUI.FilledInput",
+    "@material-ui/core/InputLabel": "MaterialUI.InputLabel",
+    "@material-ui/core/FormControl": "MaterialUI.FormControl",
+    "@material-ui/core/FormHelperText": "MaterialUI.FormHelperText",
+    "@material-ui/core/styles/transitions": "MaterialUIStyles.transitions",
+    "@material-ui/core/styles/colors/blue": "MaterialUIStyles.colors.blue"
   }
 };
