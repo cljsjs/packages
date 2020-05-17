@@ -1,10 +1,9 @@
-(def +lib-version+ "0.33.6")
+(def +lib-version+ "0.58.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (set-env!
  :resource-paths #{"resources"}
- :dependencies '[[cljsjs/boot-cljsjs "0.10.5" :scope "test"]
-                 [cljsjs/immutable "3.8.1-0"]])
+ :dependencies '[[cljsjs/boot-cljsjs "0.10.5" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
@@ -23,8 +22,11 @@
    (download :url (format "https://unpkg.com/slate@%s/dist/slate.min.js" +lib-version+)
              :target "cljsjs/slate/production/slate.min.inc.js")
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.slate"
-              :requires ["cljsjs.immutable"])
+   (deps-cljs :foreign-libs [{:file           #"slate\.inc\.js"
+                              :file-min       #"slate\.min\.inc\.js"
+                              :provides       ["slate" "cljsjs.slate"]
+                              :global-exports '{slate Slate}}]
+              :externs [#"slate\.ext\.js"])
    (pom)
    (jar)
    (validate)))
