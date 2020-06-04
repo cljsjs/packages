@@ -19,3 +19,5 @@ or
 ```
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps
+
+Do note that you have to include the css files yourself, both `noty.css` and the themes.
