@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "3.1.1")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
   push {:repo "clojars"}
@@ -28,7 +28,11 @@
       :out "cljsjs/js-joda-locale-en-us/production/js-joda-locale-en-us.min.inc.js")
     (sift :include #{#"^cljsjs"})
     (deps-cljs
-      :provides ["@js-joda/locale_en-us"]
-      :requires ["@js-joda/core"])
+      :foreign-libs [{:file #"js-joda-locale-en-us.inc.js"
+                      :file-min #"js-joda-locale-en-us.min.inc.js"
+                      :provides ["@js-joda/locale_en-us"]
+                      :requires ["@js-joda/core"]
+                      :global-exports '{"@js-joda/locale_en-us" JSJodaLocale}}]
+      )
     (pom)
     (jar)))
