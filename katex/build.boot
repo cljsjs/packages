@@ -1,4 +1,4 @@
-(def +lib-version+ "0.9.0")
+(def +lib-version+ "0.11.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (set-env!
@@ -12,7 +12,7 @@
  pom  {:project     'cljsjs/katex
        :version     +version+
        :description "A fast, easy-to-use JavaScript library for TeX math rendering on the web."
-       :url         "https://khan.github.io/KaTeX/"
+       :url         "https://katex.org/"
        :scm         {:url "https://github.com/Khan/KaTeX"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
