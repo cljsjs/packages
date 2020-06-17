@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "5.11.1")
+(def +lib-version+ "5.17.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -17,16 +17,18 @@
 
 (deftask package []
   (comp
-   (download :url (format "https://github.com/getsentry/sentry-javascript/releases/download/%s/sentry-browser-%s.tgz" +lib-version+ +lib-version+)
-             :decompress true
-             :compression-format "gz"
-             :archive-format "tar")
-   (sift :move {#"package/build/bundle\.js"
-                "cljsjs/sentry-browser/development/sentry-browser.inc.js"
-                #"package/build/bundle\.min\.js"
-                "cljsjs/sentry-browser/production/sentry-browser.min.inc.js" })
+   (download :url (format "https://unpkg.com/@sentry/browser@%s/build/bundle.js" +lib-version+)
+             :target "cljsjs/sentry-browser/development/sentry-browser.inc.js")
+   (download :url (format "https://unpkg.com/@sentry/browser@%s/build/bundle.min.js" +lib-version+)
+             :target "cljsjs/sentry-browser/production/sentry-browser.min.inc.js")
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.sentry-browser")
+   (deps-cljs :foreign-libs [{:file #"sentry-browser.inc.js"
+                              :file-min #"sentry-browser.min.inc.js"
+                              :provides ["@sentry/browser"
+                                         "cljsjs.sentry-browser"]
+                              ;; Requires cljs 1.10.439
+                              :global-exports {"@sentry/browser" "Sentry"}}]
+              :externs [#"sentry-browser.ext.js"])
    (pom)
    (jar)
    (validate)))
