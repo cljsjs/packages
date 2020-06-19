@@ -9,8 +9,8 @@
          '[boot.util :refer [sh]]
          '[clojure.string :as str])
 
-(def +lib-version+ "3.0.1")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "3.0.4")
+(def +version+ (str +lib-version+ "-2"))
 
 (task-options!
   pom  {:project     'cljsjs/react-flip-move
