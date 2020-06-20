@@ -72,7 +72,8 @@ var echarts = {
     "getTooltipMarker": function () { },
     "normalizeCssArray": function () { },
     "toCamelCase": function () { },
-    "truncateText": function () { }
+    "truncateText": function () { },
+    "windowOpen": function () { }
   },
   "getCoordinateSystemDimensions": function () { },
   "getInstanceByDom": function () { },
@@ -401,7 +402,7 @@ echarts.List.prototype = {
   "wrapMethod": function () { }
 };
 echarts.Model.prototype = {
-  "__is_clz_0_0.596": function () { },
+  "__is_clz_0_0.043": function () { },
   "clone": function () { },
   "constructor": function () { },
   "customizeGetParent": function () { },
