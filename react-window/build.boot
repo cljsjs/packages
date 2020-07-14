@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "1.8.5")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
   pom  {:project     'cljsjs/react-window
@@ -16,16 +16,21 @@
         :scm         {:url "https://github.com/cljsjs/packages"}})
 
 (deftask package []
-  (comp
-   (download
-     :url (str "https://unpkg.com/react-window@" +lib-version+ "/dist/index-prod.umd.js")
-     :target "cljsjs/react-window/production/react-window.min.inc.js")
-   (sift :include #{#"^cljsjs"})
-   (deps-cljs :foreign-libs [{:file #"react-window.min.inc.js"
-                              :provides ["react-window" "cljsjs.react-window"]
-                              :requires ["cljsjs.react" "cljsjs.react.dom"]
-                              :global-exports '{react-window ReactWindow}}]
-              :externs [#"react-window.ext.js"])
-   (pom)
-   (jar)
-   (validate)))
+  (let [src "cljsjs/react-window/production/react-window.min.inc.js"]
+    (comp
+     (download
+       :url (str "https://unpkg.com/react-window@" +lib-version+ "/dist/index-prod.umd.js")
+       :target src)
+     (replace-content
+       :in src
+       :match #"\/\/\# sourceMappingURL=.*"
+       :value "")
+     (sift :include #{#"^cljsjs"})
+     (deps-cljs :foreign-libs [{:file #"react-window.min.inc.js"
+                                :provides ["react-window" "cljsjs.react-window"]
+                                :requires ["cljsjs.react" "cljsjs.react.dom"]
+                                :global-exports '{react-window ReactWindow}}]
+                :externs [#"react-window.ext.js"])
+     (pom)
+     (jar)
+     (validate))))
