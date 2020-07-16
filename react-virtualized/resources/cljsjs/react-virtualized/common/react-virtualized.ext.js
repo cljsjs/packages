@@ -23,7 +23,10 @@ var ReactVirtualized = {
   "CellMeasurer": {
     "__internalCellMeasurerFlag": {}
   },
-  "CellMeasurerCache": function () {},
+  "CellMeasurerCache": {
+    "clear": function () {},
+    "clearAll": function () {}
+  },
   "Collection": {
     "defaultProps": {
       "aria-label": {},
@@ -490,7 +493,10 @@ var ReactVirtualized = {
           "CellMeasurer": {
             "__internalCellMeasurerFlag": {}
           },
-          "CellMeasurerCache": function () {},
+          "CellMeasurerCache": {
+            "clear": function () {},
+            "clearAll": function () {}
+          },
           "Collection": {
             "defaultProps": {
               "aria-label": {},
