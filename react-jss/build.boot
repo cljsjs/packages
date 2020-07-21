@@ -1,4 +1,3 @@
-
 (set-env!
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.10.5" :scope "test"]])
@@ -34,7 +33,6 @@
           :dependencies [['cljsjs/react "16.13.1-0"]])
      (show :fileset true)
      (jar))))
-
 
 (deftask package []
   (comp
