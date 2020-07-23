@@ -30,7 +30,10 @@
    (minify :in "cljsjs/odex/development/odex.inc.js"
            :out "cljsjs/odex/production/odex.min.inc.js")
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.odex")
+   (deps-cljs :provides ["odex", "cljsjs.odex"]
+              :requires []
+              :global-exports '{odex odex
+                                cljsjs.odex odex})
    (pom)
    (jar)
    (validate-checksums)))
