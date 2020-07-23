@@ -15,6 +15,20 @@ you can require the packaged library like so:
   (:require cljsjs.fraction))
 ```
 
+This package also supports `:global-exports`:
+
+```clojure
+(ns application.core
+  (:require ["fraction.js" :as frac]))
+```
+
+This works too:
+
+```clojure
+(ns application.core
+  (:require [cljsjs.fraction :as frac]))
+```
+
 Fraction is a rational number library written in JavaScript.
 
 Tired of inprecise numbers represented by doubles, which have to store rational
@@ -39,6 +53,26 @@ just a little overhead. However, the library is written with performance in mind
 and outperforms any other implementation, as you can see [here][benchmark]. This
 basic data-type makes it the perfect basis for [Polynomial.js][polyjs] and
 [Math.js][mathjs].
+
+Example usage from Clojurescript:
+
+```clojure
+(ns example.core
+  (:require ["fraction.js" :as frac]))
+
+(extend-type frac
+  IEquiv
+  (-equiv [this other]
+    (.equals this other)))
+
+(defn fraction
+  [num denom]
+  (frac. num denom))
+
+(= (fraction 50 100)
+   (fraction 1 2))
+;; => true
+```
 
 [benchmark]: http://jsperf.com/convert-a-rational-number-to-a-babylonian-fractions/28
 [polyjs]: https://github.com/infusion/Polynomial.js

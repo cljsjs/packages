@@ -1,0 +1,35 @@
+{
+    "name": "fraction.js",
+    "title": "fraction.js",
+    "version": "4.0.12",
+    "homepage": "http://www.xarg.org/2014/03/rational-numbers-in-javascript/",
+    "bugs": "https://github.com/infusion/Fraction.js/issues",
+    "description": "A rational number library",
+    "keywords": [
+        "math",
+        "fraction",
+        "rational",
+        "rationals",
+        "number",
+        "parser",
+        "rational numbers"
+    ],
+    "author": "Robert Eisele <robert@xarg.org> (http://www.xarg.org/)",
+    "repository" : {
+        "type": "git",
+        "url": "https://github.com/infusion/Fraction.js.git"
+    },
+    "license": "MIT OR GPL-2.0-or-later",
+    "dependencies": {
+        "fraction.js": "^4.0.12"
+    },
+    "devDependencies": {
+        "cross-env": "^3.1.4",
+        "browserify": "^15.1.0",
+        "externs-generator": "^0.3.3"
+    },
+    "scripts": {
+        "bundle": "cross-env NODE_ENV=production browserify ./node_modules/fraction.js/fraction.js -s Fraction -o fraction.bundle.js",
+        "generate-extern": "generate-extern -f fraction.bundle.js -n Fraction -o fraction.ext.js"
+    }
+}
