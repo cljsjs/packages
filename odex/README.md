@@ -31,7 +31,7 @@ Here's an example of how to replicate the demo from the [Github README][readme]:
 (defn routine [x y] y)
 
 (let [s (js/odex.Solver. 1)]
-  (.solve s routine 0 [1] 1))
+  (.solve s routine 0 #js [1] 1))
 ```
 
 [impl]: http://jsperf.com/convert-a-rational-number-to-a-babylonian-fractions/28
