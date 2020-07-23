@@ -30,7 +30,10 @@
    (minify :in  "cljsjs/decimal/development/decimal.inc.js"
            :out "cljsjs/decimal/production/decimal.min.inc.js")
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.decimal")
+   (deps-cljs :provides ["decimal.js", "cljsjs.decimal"]
+              :requires []
+              :global-exports '{decimal.js Decimal
+                                cljsjs.decimal Decimal})
    (pom)
    (jar)
    (validate-checksums)))

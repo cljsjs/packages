@@ -15,6 +15,13 @@ you can require the packaged library like so:
   (:require cljsjs.decimal))
 ```
 
+This package also supports `:global-exports`:
+
+```clojure
+(ns application.core
+  (:require ["decimal.js" :as decimal]))
+```
+
 The library is similar to [bignumber.js][bignumber], but here precision is
 specified in terms of significant digits rather than decimal places, and all
 calculations are rounded to the precision (similar to Python's decimal module)
@@ -28,19 +35,16 @@ Example usage from Clojurescript:
 
 ```clojure
 (ns example.core
-  (:require [cljsjs.decimal]))
+  (:require ["decimal.js" :as decimal]))
 
-(extend-type js/Decimal
+(extend-type decimal
   IEquiv
   (-equiv [this other]
     (.equals this other)))
 
-(defn decimal [x]
-  (js/Decimal. x))
-
-(let [x (decimal 123.4567)
-      y (decimal "123456.7e-3")
-      z (decimal x)]
+(let [x (decimal. 123.4567)
+      y (decimal. "123456.7e-3")
+      z (decimal. x)]
   (= x y z))
 ;; => true
 ```
