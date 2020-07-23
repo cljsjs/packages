@@ -16,15 +16,24 @@
        :license     {"MIT" "http://opensource.org/licenses/MIT"}
        :scm         {:url "https://github.com/cljsjs/packages"}})
 
+(deftask build-complex []
+  (run-commands :commands [["npm" "install" "--include-dev"]
+                           ["npm" "run" "bundle"]
+                           ["npm" "run" "generate-extern"]
+                           ["rm" "-rf" "./node_modules"]]))
+
 (deftask package []
   (comp
-   (download :url (format "https://github.com/infusion/Complex.js/archive/v%s.zip" +lib-version+)
-             :unzip true)
-   (sift :move {#"^Complex.js-[^\/]*/complex\.js" "cljsjs/complex/development/complex.inc.js"})
+   (build-complex)
+   (sift :move {#".*complex.bundle.js" "cljsjs/complex/development/complex.inc.js"
+                #".*complex.ext.js" "cljsjs/complex/common/complex.ext.js"})
    (minify    :in  "cljsjs/complex/development/complex.inc.js"
               :out "cljsjs/complex/production/complex.min.inc.js")
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.complex")
+   (deps-cljs :provides ["complex.js", "cljsjs.complex"]
+              :requires []
+              :global-exports '{complex.js Complex
+                                cljsjs.complex Complex})
    (pom)
    (jar)
    (validate-checksums)))
