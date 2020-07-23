@@ -4,26 +4,36 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "4.1.0")
+(def +lib-version+ "9.0.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
-  push {:ensure-clean false}
-  pom  {:project     'cljsjs/bignumber
-        :version     +version+
-        :description "A JavaScript library for arbitrary-precision decimal and non-decimal arithmetic."
-        :url         "http://mikemcl.github.io/bignumber.js"
-        :license     {"MIT" "http://opensource.org/licenses/MIT"}
-        :scm         {:url "https://github.com/cljsjs/packages"}})
+ push {:ensure-clean false}
+ pom  {:project     'cljsjs/bignumber
+       :version     +version+
+       :description "A JavaScript library for arbitrary-precision decimal and non-decimal arithmetic."
+       :url         "http://mikemcl.github.io/bignumber.js"
+       :license     {"MIT" "http://opensource.org/licenses/MIT"}
+       :scm         {:url "https://github.com/cljsjs/packages"}})
+
+(deftask build-bignumber []
+  (run-commands :commands [["npm" "install" "--include-dev"]
+                           ["npm" "run" "bundle"]
+                           ["npm" "run" "generate-extern"]
+                           ["rm" "-rf" "./node_modules"]]))
 
 (deftask package []
   (comp
-    (download :url (format "https://github.com/MikeMcl/bignumber.js/archive/v%s.zip" +lib-version+)
-              :checksum "78d7864c66e9f79043ae3c65d7f6f322"
-              :unzip true)
-    (sift :move {#"^bignumber.js-[^\/]*/bignumber\.js"      "cljsjs/bignumber/development/bignumber.inc.js"
-                 #"^bignumber.js-[^\/]*/bignumber\.min\.js" "cljsjs/bignumber/production/bignumber.min.inc.js"})
-    (sift :include #{#"^cljsjs"})
-    (deps-cljs :name "cljsjs.bignumber")
-    (pom)
-    (jar)))
+   (build-bignumber)
+   (sift :move {#".*bignumber.bundle.js" "cljsjs/bignumber/development/bignumber.inc.js"
+                #".*bignumber.ext.js" "cljsjs/bignumber/common/bignumber.ext.js"})
+   (minify :in  "cljsjs/bignumber/development/bignumber.inc.js"
+           :out "cljsjs/bignumber/production/bignumber.min.inc.js")
+   (sift :include #{#"^cljsjs"})
+   (deps-cljs :provides ["bignumber.js", "cljsjs.bignumber"]
+              :requires []
+              :global-exports '{bignumber.js BigNumber
+                                cljsjs.bignumber BigNumber})
+   (pom)
+   (jar)
+   (validate-checksums)))

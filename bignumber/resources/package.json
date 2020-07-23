@@ -1,0 +1,42 @@
+{
+    "name": "bignumber.js",
+    "homepage": "https://github.com/MikeMcl/bignumber.js",
+    "bugs": "https://github.com/MikeMcl/bignumber.js/issues",
+    "description": "A library for arbitrary-precision decimal and non-decimal arithmetic",
+    "version": "9.0.0",
+    "keywords": [
+        "arbitrary",
+        "precision",
+        "arithmetic",
+        "big",
+        "number",
+        "decimal",
+        "float",
+        "biginteger",
+        "bigdecimal",
+        "bignumber",
+        "bigint",
+        "bignum"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MikeMcl/bignumber.js.git"
+    },
+    "author": {
+        "name": "Michael Mclaughlin",
+        "email": "M8ch88l@gmail.com"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "bignumber.js": "^9.0.0"
+    },
+    "devDependencies": {
+        "cross-env": "^3.1.4",
+        "browserify": "^15.1.0",
+        "externs-generator": "^0.3.3"
+    },
+    "scripts": {
+        "bundle": "cross-env NODE_ENV=production browserify ./node_modules/bignumber.js/bignumber.js -s BigNumber -o bignumber.bundle.js",
+        "generate-extern": "generate-extern -f bignumber.bundle.js -n BigNumber -o bignumber.ext.js"
+    }
+}
