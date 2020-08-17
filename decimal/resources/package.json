@@ -1,0 +1,42 @@
+{
+    "name": "decimal.js",
+    "homepage": "https://github.com/MikeMcl/decimal.js",
+    "bugs": "https://github.com/MikeMcl/decimal.js/issues",
+    "description": "An arbitrary-precision Decimal type for JavaScript.",
+    "version": "10.2.0",
+    "keywords": [
+        "arbitrary",
+        "precision",
+        "arithmetic",
+        "big",
+        "number",
+        "decimal",
+        "float",
+        "biginteger",
+        "bigdecimal",
+        "bignumber",
+        "bigint",
+        "bignum"
+    ],
+    "repository" : {
+        "type": "git",
+        "url": "https://github.com/MikeMcl/decimal.js.git"
+    },
+    "author": {
+        "name": "Michael Mclaughlin",
+        "email": "M8ch88l@gmail.com"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "decimal.js": "^10.2.0"
+    },
+    "devDependencies": {
+        "cross-env": "^3.1.4",
+        "browserify": "^15.1.0",
+        "externs-generator": "^0.3.3"
+    },
+    "scripts": {
+        "bundle": "cross-env NODE_ENV=production browserify ./node_modules/decimal.js/decimal.js -s Decimal -o decimal.bundle.js",
+        "generate-extern": "generate-extern -f decimal.bundle.js -n Decimal -o decimal.ext.js"
+    }
+}
