@@ -1,0 +1,34 @@
+{
+    "name": "odex",
+    "homepage": "https://github.com/littleredcomputer/odex-js",
+    "bugs": "https://github.com/littleredcomputer/odex-js/issues",
+    "version": "2.0.4",
+    "title": "odex",
+    "description": "Ernst Hairer's ODEX nonstiff ODE solver in JavaScript",
+    "keywords": [
+        "ordinary",
+        "differential",
+        "equation",
+        "numerical",
+        "method",
+        "ode",
+        "solver"
+    ],
+    "repository": {
+        "url": "http://github.com/littleredcomputer/odex-js"
+    },
+    "author": "Colin Smith <colin.smith@gmail.com> (http://github.com/littleredcomputer)",
+    "license": "BSD-2-Clause",
+    "dependencies": {
+        "odex": "^2.0.4"
+    },
+    "devDependencies": {
+        "cross-env": "^3.1.4",
+        "browserify": "^15.1.0",
+        "externs-generator": "^0.3.3"
+    },
+    "scripts": {
+        "bundle": "cross-env NODE_ENV=production browserify ./node_modules/odex/src/odex.js -s odex -o odex.bundle.js",
+        "generate-extern": "generate-extern -f odex.bundle.js -n odex -o odex.ext.js"
+    }
+}
