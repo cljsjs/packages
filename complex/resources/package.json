@@ -1,0 +1,35 @@
+{
+    "name": "complex.js",
+    "homepage": "https://github.com/infusion/Complex.js",
+    "bugs": "https://github.com/infusion/Complex.js/issues",
+    "title": "complex.js",
+    "version": "2.0.11",
+    "description": "A complex number library",
+    "keywords": [
+        "complex numbers",
+        "math",
+        "complex",
+        "number",
+        "calculus",
+        "parser",
+        "arithmetic"
+    ],
+    "author": "Robert Eisele <robert@xarg.org> (http://www.xarg.org/)",
+    "license": "MIT OR GPL-2.0-or-later",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/infusion/Complex.js.git"
+    },
+    "dependencies": {
+        "complex.js": "^2.0.11"
+    },
+    "devDependencies": {
+        "cross-env": "^3.1.4",
+        "browserify": "^15.1.0",
+        "externs-generator": "^0.3.3"
+    },
+    "scripts": {
+        "bundle": "cross-env NODE_ENV=production browserify ./node_modules/complex.js/complex.js -s Complex -o complex.bundle.js",
+        "generate-extern": "generate-extern -f complex.bundle.js -n Complex -o complex.ext.js"
+    }
+}
