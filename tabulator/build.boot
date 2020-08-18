@@ -21,7 +21,9 @@
    (download :url (str "https://github.com/olifolkerd/tabulator/archive/" +lib-version+ ".zip")
              :unzip true)
    (sift :move {#".*tabulator.js" "cljsjs/tabulator/development/tabulator.inc.js"
-                #".*tabulator.min.js" "cljsjs/tabulator/production/tabulator.min.inc.js"})
+                #".*tabulator.css*" "cljsjs/tabulator/development/tabulator.inc.css"
+                #".*tabulator.min.js" "cljsjs/tabulator/production/tabulator.min.inc.js"
+                #".*tabulator.min.css" "cljsjs/tabulator/production/tabulator.inc.css"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.tabulator")
    (pom)
