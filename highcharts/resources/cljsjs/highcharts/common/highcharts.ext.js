@@ -6545,6 +6545,7 @@ Highcharts.Chart.prototype = {
   "currentOptions": function () {},
   "destroy": function () {},
   "drawChartBox": function () {},
+  "exportChart": function () {},
   "firstRender": function () {},
   "get": function () {},
   "getArgs": function () {},
