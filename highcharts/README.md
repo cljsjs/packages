@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/highcharts "7.0.3-1"] ;; latest release
+[cljsjs/highcharts "7.0.3-2"] ;; latest release
 ```
 [](/dependency)
 

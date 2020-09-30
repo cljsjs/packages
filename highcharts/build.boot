@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "7.0.3")
-(def +version+ (str +lib-version+ "-1"))
+(def +version+ (str +lib-version+ "-2"))
 
 (task-options!
  pom  {:project     'cljsjs/highcharts
@@ -24,10 +24,10 @@
     {:file-min "cljsjs/highcharts/production/highcharts.min.inc.js"
      :file path
      :provides ["cljsjs.highcharts"]}
-    {:file-min path
-     :file (-> path
-               (string/replace #"\.inc\.js$" ".min.inc.js")
-               (string/replace #"/development/" "/production/"))
+    {:file path
+     :file-min (-> path
+                 (string/replace #"\.inc\.js$" ".min.inc.js")
+                 (string/replace #"/development/" "/production/"))
      :requires ["cljsjs.highcharts"]
      :provides [(-> path
                     (string/replace #"\.inc\.js$" "")
