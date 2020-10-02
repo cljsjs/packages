@@ -6592,7 +6592,9 @@ Highcharts.Chart.prototype = {
   "update": function () {},
   "zoom": function () {},
   "zoomOut": function () {},
-  "series": []
+  "series": [],
+  "xAxis": [],
+  "yAxis": []
 };
 Highcharts.Color.prototype = {
   "brighten": function () {},
