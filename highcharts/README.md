@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/highcharts "7.0.3-3"] ;; latest release
+[cljsjs/highcharts "8.1.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -26,37 +26,45 @@ This package also provides following namespaces:
 - cljsjs.highcharts.modules.annotations-advanced
 - cljsjs.highcharts.modules.arrow-symbols
 - cljsjs.highcharts.modules.boost
+- cljsjs.highcharts.modules.boost-canvas
 - cljsjs.highcharts.modules.broken-axis
 - cljsjs.highcharts.modules.bullet
+- cljsjs.highcharts.modules.coloraxis
 - cljsjs.highcharts.modules.current-date-indicator
 - cljsjs.highcharts.modules.cylinder
 - cljsjs.highcharts.modules.data
+- cljsjs.highcharts.modules.datagrouping
 - cljsjs.highcharts.modules.debugger
+- cljsjs.highcharts.modules.dependency-wheel
 - cljsjs.highcharts.modules.drag-panes
 - cljsjs.highcharts.modules.draggable-points
 - cljsjs.highcharts.modules.drilldown
+- cljsjs.highcharts.modules.dumbbell
 - cljsjs.highcharts.modules.exporting
 - cljsjs.highcharts.modules.export-data
 - cljsjs.highcharts.modules.full-screen
 - cljsjs.highcharts.modules.funnel
+- cljsjs.highcharts.modules.funnel3d
 - cljsjs.highcharts.modules.gantt
 - cljsjs.highcharts.modules.grid-axis
 - cljsjs.highcharts.modules.heatmap
 - cljsjs.highcharts.modules.histogram-bellcurve
 - cljsjs.highcharts.modules.item-series
+- cljsjs.highcharts.modules.lollipop
+- cljsjs.highcharts.modules.marker-clusters
 - cljsjs.highcharts.modules.networkgraph
 - cljsjs.highcharts.modules.no-data-to-display
-- cljsjs.highcharts.modules.no-data-to-display
-- cljsjs.highcharts.modules.offline-exporting
 - cljsjs.highcharts.modules.offline-exporting
 - cljsjs.highcharts.modules.oldie-polyfills
 - cljsjs.highcharts.modules.oldie
+- cljsjs.highcharts.modules.organization
 - cljsjs.highcharts.modules.overlapping-datalabels
 - cljsjs.highcharts.modules.parallel-coordinates
 - cljsjs.highcharts.modules.pareto
 - cljsjs.highcharts.modules.pathfinder
 - cljsjs.highcharts.modules.pattern-fill
 - cljsjs.highcharts.modules.price-indicator
+- cljsjs.highcharts.modules.pyramid3d
 - cljsjs.highcharts.modules.sankey
 - cljsjs.highcharts.modules.series-label
 - cljsjs.highcharts.modules.solid-gauge
