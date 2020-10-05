@@ -6,130 +6,134 @@
  * https://unpkg.com/react@16.13.1/umd/react.development.js
  * https://unpkg.com/react-dom@16.13.1/umd/react-dom.development.js
  * https://unpkg.com/moment@2.24.0/moment.js
- * https://unpkg.com/antd@3.26.17/dist/antd-with-locales.js
+ * https://unpkg.com/antd@4.6.1/dist/antd-with-locales.js
  *
  * and extern the `antd` JavaScript object
  *
  **********************************************************************/
+
 var antd = {
   "Affix": {
-    "defaultProps": {
-      "target": function () {}
+    "contextType": {
+      "$$typeof": {},
+      "Consumer": {
+        "$$typeof": {},
+        "_calculateChangedBits": {},
+        "_context": {}
+      },
+      "Provider": {
+        "$$typeof": {},
+        "_context": {}
+      },
+      "_calculateChangedBits": {},
+      "_currentRenderer": {},
+      "_currentRenderer2": {},
+      "_currentValue": {
+        "getPrefixCls": function () {},
+        "renderEmpty": function () {}
+      },
+      "_currentValue2": {
+        "getPrefixCls": function () {},
+        "renderEmpty": function () {}
+      },
+      "_threadCount": {}
     }
   },
-  "Alert": function () {},
+  "Alert": {
+    "ErrorBoundary": function () {}
+  },
   "Anchor": {
     "Link": {
-      "contextTypes": {
-        "antAnchor": {
-          "isRequired": function () {}
-        }
+      "contextType": {
+        "$$typeof": {},
+        "Consumer": {
+          "$$typeof": {},
+          "_calculateChangedBits": {},
+          "_context": {}
+        },
+        "Provider": {
+          "$$typeof": {},
+          "_context": {}
+        },
+        "_calculateChangedBits": {},
+        "_currentRenderer": {},
+        "_currentRenderer2": {},
+        "_currentValue": {},
+        "_currentValue2": {},
+        "_threadCount": {}
       },
       "defaultProps": {
         "href": {}
       }
     },
-    "childContextTypes": {
-      "antAnchor": {
-        "isRequired": function () {}
-      }
+    "contextType": {
+      "$$typeof": {},
+      "Consumer": {
+        "$$typeof": {},
+        "_calculateChangedBits": {},
+        "_context": {}
+      },
+      "Provider": {
+        "$$typeof": {},
+        "_context": {}
+      },
+      "_calculateChangedBits": {},
+      "_currentRenderer": {},
+      "_currentRenderer2": {},
+      "_currentValue": {
+        "getPrefixCls": function () {},
+        "renderEmpty": function () {}
+      },
+      "_currentValue2": {
+        "getPrefixCls": function () {},
+        "renderEmpty": function () {}
+      },
+      "_threadCount": {}
     },
     "defaultProps": {
       "affix": {},
-      "getContainer": function () {},
       "showInkInFixed": {}
     }
   },
   "AutoComplete": {
-    "OptGroup": {
-      "isSelectOptGroup": {}
-    },
+    "$$typeof": {},
     "Option": {
-      "isSelectOption": {},
-      "propTypes": {
-        "value": {
-          "isRequired": function () {}
-        }
-      }
+      "isSelectOption": {}
     },
-    "defaultProps": {
-      "choiceTransitionName": {},
-      "filterOption": {},
-      "optionLabelProp": {},
-      "showSearch": {},
-      "transitionName": {}
-    }
+    "render": function () {}
   },
   "Avatar": {
+    "$$typeof": {},
+    "Group": function () {},
     "defaultProps": {
       "shape": {},
       "size": {}
-    }
+    },
+    "displayName": {},
+    "render": function () {}
   },
   "BackTop": {
-    "defaultProps": {
-      "visibilityHeight": {}
+    "$$typeof": {},
+    "compare": {},
+    "type": {
+      "defaultProps": {
+        "visibilityHeight": {}
+      }
     }
   },
   "Badge": {
-    "defaultProps": {
-      "count": {},
-      "dot": {},
-      "overflowCount": {},
-      "showZero": {}
-    },
-    "propTypes": {
-      "count": {
-        "isRequired": function () {}
-      },
-      "dot": {
-        "isRequired": function () {}
-      },
-      "overflowCount": {
-        "isRequired": function () {}
-      },
-      "showZero": {
-        "isRequired": function () {}
-      }
-    }
+    "Ribbon": function () {}
   },
   "Breadcrumb": {
     "Item": {
-      "__ANT_BREADCRUMB_ITEM": {},
-      "defaultProps": {
-        "separator": {}
-      },
-      "propTypes": {
-        "href": {
-          "isRequired": function () {}
-        },
-        "prefixCls": {
-          "isRequired": function () {}
-        },
-        "separator": {
-          "isRequired": function () {}
-        }
-      }
+      "__ANT_BREADCRUMB_ITEM": {}
     },
     "Separator": {
       "__ANT_BREADCRUMB_SEPARATOR": {}
-    },
-    "defaultProps": {
-      "separator": {}
-    },
-    "propTypes": {
-      "prefixCls": {
-        "isRequired": function () {}
-      },
-      "routes": {
-        "isRequired": function () {}
-      },
-      "separator": {
-        "isRequired": function () {}
-      }
     }
   },
   "Button": {
+    "$$typeof": {},
     "Group": function () {},
     "__ANT_BUTTON": {},
     "defaultProps": {
@@ -138,92 +142,10 @@ var antd = {
       "htmlType": {},
       "loading": {}
     },
-    "propTypes": {
-      "block": {
-        "isRequired": function () {}
-      },
-      "className": {
-        "isRequired": function () {}
-      },
-      "htmlType": {
-        "isRequired": function () {}
-      },
-      "icon": {
-        "isRequired": function () {}
-      },
-      "loading": {
-        "isRequired": function () {}
-      },
-      "onClick": {
-        "isRequired": function () {}
-      },
-      "shape": {
-        "isRequired": function () {}
-      },
-      "size": {
-        "isRequired": function () {}
-      },
-      "title": {
-        "isRequired": function () {}
-      },
-      "type": {
-        "isRequired": function () {}
-      }
-    }
+    "displayName": {},
+    "render": function () {}
   },
-  "Calendar": {
-    "defaultProps": {
-      "fullscreen": {},
-      "locale": {},
-      "onChange": function () {},
-      "onPanelChange": function () {},
-      "onSelect": function () {}
-    },
-    "propTypes": {
-      "className": {
-        "isRequired": function () {}
-      },
-      "dateCellRender": {
-        "isRequired": function () {}
-      },
-      "dateFullCellRender": {
-        "isRequired": function () {}
-      },
-      "fullscreen": {
-        "isRequired": function () {}
-      },
-      "headerRender": {
-        "isRequired": function () {}
-      },
-      "locale": {
-        "isRequired": function () {}
-      },
-      "monthCellRender": {
-        "isRequired": function () {}
-      },
-      "monthFullCellRender": {
-        "isRequired": function () {}
-      },
-      "onChange": {
-        "isRequired": function () {}
-      },
-      "onPanelChange": {
-        "isRequired": function () {}
-      },
-      "onSelect": {
-        "isRequired": function () {}
-      },
-      "prefixCls": {
-        "isRequired": function () {}
-      },
-      "style": {
-        "isRequired": function () {}
-      },
-      "value": {
-        "isRequired": function () {}
-      }
-    }
-  },
+  "Calendar": function () {},
   "Card": {
     "Grid": function () {},
     "Meta": function () {}
@@ -238,155 +160,243 @@ var antd = {
   "Cascader": {
     "defaultProps": {
       "allowClear": {},
+      "bordered": {},
       "disabled": {},
       "options": {},
-      "popupPlacement": {},
       "transitionName": {}
     }
   },
   "Checkbox": {
     "Group": {
-      "childContextTypes": {
-        "checkboxGroup": {
-          "isRequired": function () {}
-        }
-      },
       "defaultProps": {
         "options": {}
-      },
-      "propTypes": {
-        "defaultValue": {
-          "isRequired": function () {}
-        },
-        "onChange": {
-          "isRequired": function () {}
-        },
-        "options": function () {},
-        "value": {
-          "isRequired": function () {}
-        }
       }
     },
     "__ANT_CHECKBOX": {},
-    "contextTypes": {
-      "checkboxGroup": {
-        "isRequired": function () {}
-      }
+    "contextType": {
+      "$$typeof": {},
+      "Consumer": {
+        "$$typeof": {},
+        "_calculateChangedBits": {},
+        "_context": {}
+      },
+      "Provider": {
+        "$$typeof": {},
+        "_context": {}
+      },
+      "_calculateChangedBits": {},
+      "_currentRenderer": {},
+      "_currentRenderer2": {},
+      "_currentValue": {},
+      "_currentValue2": {},
+      "_threadCount": {}
     },
     "defaultProps": {
       "indeterminate": {}
     }
   },
   "Col": {
-    "propTypes": {
-      "children": {
-        "isRequired": function () {}
-      },
-      "className": {
-        "isRequired": function () {}
-      },
-      "lg": {
-        "isRequired": function () {}
-      },
-      "md": {
-        "isRequired": function () {}
-      },
-      "offset": {
-        "isRequired": function () {}
-      },
-      "order": {
-        "isRequired": function () {}
-      },
-      "pull": {
-        "isRequired": function () {}
-      },
-      "push": {
-        "isRequired": function () {}
-      },
-      "sm": {
-        "isRequired": function () {}
-      },
-      "span": {
-        "isRequired": function () {}
-      },
-      "xl": {
-        "isRequired": function () {}
-      },
-      "xs": {
-        "isRequired": function () {}
-      },
-      "xxl": {
-        "isRequired": function () {}
-      }
-    }
+    "$$typeof": {},
+    "displayName": {},
+    "render": function () {}
   },
   "Collapse": {
     "Panel": function () {},
     "defaultProps": {
-      "bordered": {},
-      "expandIconPosition": {},
-      "openAnimation": {
-        "appear": function () {},
-        "enter": function () {},
-        "leave": function () {}
-      }
+      "bordered": {}
     }
   },
   "Comment": function () {},
   "ConfigProvider": function () {},
   "DatePicker": {
     "MonthPicker": {
-      "defaultProps": {
-        "locale": {},
-        "onChange": function () {},
-        "onOk": function () {},
-        "onOpenChange": function () {},
-        "popupStyle": {},
-        "transitionName": {}
-      }
+      "contextType": {
+        "$$typeof": {},
+        "Consumer": {
+          "$$typeof": {},
+          "_calculateChangedBits": {},
+          "_context": {}
+        },
+        "Provider": {
+          "$$typeof": {},
+          "_context": {}
+        },
+        "_calculateChangedBits": {},
+        "_currentRenderer": {},
+        "_currentRenderer2": {},
+        "_currentValue": {
+          "getPrefixCls": function () {},
+          "renderEmpty": function () {}
+        },
+        "_currentValue2": {
+          "getPrefixCls": function () {},
+          "renderEmpty": function () {}
+        },
+        "_threadCount": {}
+      },
+      "displayName": {}
+    },
+    "QuarterPicker": {
+      "contextType": {
+        "$$typeof": {},
+        "Consumer": {
+          "$$typeof": {},
+          "_calculateChangedBits": {},
+          "_context": {}
+        },
+        "Provider": {
+          "$$typeof": {},
+          "_context": {}
+        },
+        "_calculateChangedBits": {},
+        "_currentRenderer": {},
+        "_currentRenderer2": {},
+        "_currentValue": {
+          "getPrefixCls": function () {},
+          "renderEmpty": function () {}
+        },
+        "_currentValue2": {
+          "getPrefixCls": function () {},
+          "renderEmpty": function () {}
+        },
+        "_threadCount": {}
+      },
+      "displayName": {}
     },
     "RangePicker": {
-      "defaultProps": {
-        "locale": {},
-        "onChange": function () {},
-        "onOk": function () {},
-        "onOpenChange": function () {},
-        "popupStyle": {},
-        "transitionName": {}
+      "contextType": {
+        "$$typeof": {},
+        "Consumer": {
+          "$$typeof": {},
+          "_calculateChangedBits": {},
+          "_context": {}
+        },
+        "Provider": {
+          "$$typeof": {},
+          "_context": {}
+        },
+        "_calculateChangedBits": {},
+        "_currentRenderer": {},
+        "_currentRenderer2": {},
+        "_currentValue": {
+          "getPrefixCls": function () {},
+          "renderEmpty": function () {}
+        },
+        "_currentValue2": {
+          "getPrefixCls": function () {},
+          "renderEmpty": function () {}
+        },
+        "_threadCount": {}
       }
+    },
+    "TimePicker": {
+      "contextType": {
+        "$$typeof": {},
+        "Consumer": {
+          "$$typeof": {},
+          "_calculateChangedBits": {},
+          "_context": {}
+        },
+        "Provider": {
+          "$$typeof": {},
+          "_context": {}
+        },
+        "_calculateChangedBits": {},
+        "_currentRenderer": {},
+        "_currentRenderer2": {},
+        "_currentValue": {
+          "getPrefixCls": function () {},
+          "renderEmpty": function () {}
+        },
+        "_currentValue2": {
+          "getPrefixCls": function () {},
+          "renderEmpty": function () {}
+        },
+        "_threadCount": {}
+      },
+      "displayName": {}
     },
     "WeekPicker": {
-      "defaultProps": {
-        "locale": {},
-        "onChange": function () {},
-        "onOk": function () {},
-        "onOpenChange": function () {},
-        "popupStyle": {},
-        "transitionName": {}
-      }
+      "contextType": {
+        "$$typeof": {},
+        "Consumer": {
+          "$$typeof": {},
+          "_calculateChangedBits": {},
+          "_context": {}
+        },
+        "Provider": {
+          "$$typeof": {},
+          "_context": {}
+        },
+        "_calculateChangedBits": {},
+        "_currentRenderer": {},
+        "_currentRenderer2": {},
+        "_currentValue": {
+          "getPrefixCls": function () {},
+          "renderEmpty": function () {}
+        },
+        "_currentValue2": {
+          "getPrefixCls": function () {},
+          "renderEmpty": function () {}
+        },
+        "_threadCount": {}
+      },
+      "displayName": {}
     },
-    "defaultProps": {
-      "locale": {},
-      "onChange": function () {},
-      "onOk": function () {},
-      "onOpenChange": function () {},
-      "popupStyle": {},
-      "transitionName": {}
+    "YearPicker": {
+      "contextType": {
+        "$$typeof": {},
+        "Consumer": {
+          "$$typeof": {},
+          "_calculateChangedBits": {},
+          "_context": {}
+        },
+        "Provider": {
+          "$$typeof": {},
+          "_context": {}
+        },
+        "_calculateChangedBits": {},
+        "_currentRenderer": {},
+        "_currentRenderer2": {},
+        "_currentValue": {
+          "getPrefixCls": function () {},
+          "renderEmpty": function () {}
+        },
+        "_currentValue2": {
+          "getPrefixCls": function () {},
+          "renderEmpty": function () {}
+        },
+        "_threadCount": {}
+      },
+      "displayName": {}
+    },
+    "contextType": {
+      "$$typeof": {},
+      "Consumer": {
+        "$$typeof": {},
+        "_calculateChangedBits": {},
+        "_context": {}
+      },
+      "Provider": {
+        "$$typeof": {},
+        "_context": {}
+      },
+      "_calculateChangedBits": {},
+      "_currentRenderer": {},
+      "_currentRenderer2": {},
+      "_currentValue": {
+        "getPrefixCls": function () {},
+        "renderEmpty": function () {}
+      },
+      "_currentValue2": {
+        "getPrefixCls": function () {},
+        "renderEmpty": function () {}
+      },
+      "_threadCount": {}
     }
   },
   "Descriptions": {
-    "Item": function () {},
-    "defaultProps": {
-      "column": {
-        "lg": {},
-        "md": {},
-        "sm": {},
-        "xl": {},
-        "xs": {},
-        "xxl": {}
-      },
-      "size": {}
-    }
+    "Item": function () {}
   },
   "Divider": function () {},
   "Drawer": {
@@ -394,15 +404,15 @@ var antd = {
   },
   "Dropdown": {
     "Button": {
+      "__ANT_BUTTON": {},
       "defaultProps": {
-        "placement": {},
+        "buttonsRender": function () {},
         "type": {}
       }
     },
     "defaultProps": {
       "mouseEnterDelay": {},
-      "mouseLeaveDelay": {},
-      "placement": {}
+      "mouseLeaveDelay": {}
     }
   },
   "Empty": {
@@ -426,163 +436,49 @@ var antd = {
     }
   },
   "Form": {
-    "Item": {
-      "defaultProps": {
-        "hasFeedback": {}
-      },
-      "propTypes": {
-        "children": {
-          "isRequired": function () {}
-        },
-        "className": {
-          "isRequired": function () {}
-        },
-        "colon": {
-          "isRequired": function () {}
-        },
-        "hasFeedback": {
-          "isRequired": function () {}
-        },
-        "help": {
-          "isRequired": function () {}
-        },
-        "id": {
-          "isRequired": function () {}
-        },
-        "label": {
-          "isRequired": function () {}
-        },
-        "labelCol": {
-          "isRequired": function () {}
-        },
-        "prefixCls": {
-          "isRequired": function () {}
-        },
-        "validateStatus": {
-          "isRequired": function () {}
-        },
-        "wrapperCol": {
-          "isRequired": function () {}
-        }
-      }
-    },
+    "$$typeof": {},
+    "Item": function () {},
+    "List": function () {},
+    "Provider": function () {},
     "create": function () {},
-    "createFormField": function () {},
-    "defaultProps": {
-      "colon": {},
-      "hideRequiredMark": {},
-      "layout": {},
-      "onSubmit": function () {}
-    },
-    "propTypes": {
-      "children": {
-        "isRequired": function () {}
-      },
-      "colon": {
-        "isRequired": function () {}
-      },
-      "hideRequiredMark": {
-        "isRequired": function () {}
-      },
-      "layout": {
-        "isRequired": function () {}
-      },
-      "onSubmit": {
-        "isRequired": function () {}
-      },
-      "prefixCls": {
-        "isRequired": function () {}
-      }
-    }
+    "render": function () {},
+    "useForm": function () {}
   },
-  "Icon": {
-    "createFromIconfontCN": function () {},
-    "getTwoToneColor": function () {},
-    "setTwoToneColor": function () {}
+  "Grid": {
+    "useBreakpoint": function () {}
   },
+  "Image": function () {},
   "Input": {
     "Group": function () {},
     "Password": {
+      "$$typeof": {},
       "defaultProps": {
         "action": {},
-        "inputPrefixCls": {},
-        "prefixCls": {},
+        "iconRender": function () {},
         "visibilityToggle": {}
-      }
+      },
+      "displayName": {},
+      "render": function () {}
     },
     "Search": {
+      "$$typeof": {},
       "defaultProps": {
         "enterButton": {}
-      }
+      },
+      "displayName": {},
+      "render": function () {}
     },
     "TextArea": function () {},
     "defaultProps": {
       "type": {}
-    },
-    "propTypes": {
-      "addonAfter": {
-        "isRequired": function () {}
-      },
-      "addonBefore": {
-        "isRequired": function () {}
-      },
-      "allowClear": {
-        "isRequired": function () {}
-      },
-      "className": {
-        "isRequired": function () {}
-      },
-      "defaultValue": {
-        "isRequired": function () {}
-      },
-      "disabled": {
-        "isRequired": function () {}
-      },
-      "id": {
-        "isRequired": function () {}
-      },
-      "maxLength": {
-        "isRequired": function () {}
-      },
-      "onBlur": {
-        "isRequired": function () {}
-      },
-      "onFocus": {
-        "isRequired": function () {}
-      },
-      "onKeyDown": {
-        "isRequired": function () {}
-      },
-      "onKeyUp": {
-        "isRequired": function () {}
-      },
-      "onPressEnter": {
-        "isRequired": function () {}
-      },
-      "prefix": {
-        "isRequired": function () {}
-      },
-      "prefixCls": {
-        "isRequired": function () {}
-      },
-      "size": {
-        "isRequired": function () {}
-      },
-      "suffix": {
-        "isRequired": function () {}
-      },
-      "type": {
-        "isRequired": function () {}
-      },
-      "value": {
-        "isRequired": function () {}
-      }
     }
   },
   "InputNumber": {
+    "$$typeof": {},
     "defaultProps": {
       "step": {}
-    }
+    },
+    "render": function () {}
   },
   "Layout": {
     "Content": {
@@ -599,62 +495,15 @@ var antd = {
   },
   "List": {
     "Item": {
-      "Meta": function () {},
-      "contextTypes": {
-        "grid": {
-          "isRequired": function () {}
-        },
-        "itemLayout": {
-          "isRequired": function () {}
-        }
-      }
-    },
-    "childContextTypes": {
-      "grid": {
-        "isRequired": function () {}
-      },
-      "itemLayout": {
-        "isRequired": function () {}
-      }
-    },
-    "defaultProps": {
-      "bordered": {},
-      "dataSource": {},
-      "loading": {},
-      "pagination": {},
-      "split": {}
+      "Meta": function () {}
     }
-  },
-  "LocaleProvider": {
-    "childContextTypes": {
-      "antLocale": {
-        "isRequired": function () {}
-      }
-    },
-    "defaultProps": {
-      "locale": {}
-    },
-    "propTypes": {
-      "locale": {
-        "isRequired": function () {}
-      }
-    }
-  },
-  "Mention": {
-    "Nav": function () {},
-    "defaultProps": {
-      "loading": {},
-      "multiLines": {},
-      "notFoundContent": {},
-      "placement": {}
-    },
-    "getMentions": function () {},
-    "toContentState": function () {},
-    "toString": function () {}
   },
   "Mentions": {
+    "$$typeof": {},
     "Option": function () {},
-    "getMentions": function () {}
+    "displayName": {},
+    "getMentions": function () {},
+    "render": function () {}
   },
   "Menu": {
     "Divider": {
@@ -674,15 +523,33 @@ var antd = {
       "isMenuItemGroup": {}
     },
     "SubMenu": {
-      "contextTypes": {
-        "antdMenuTheme": {
-          "isRequired": function () {}
-        }
+      "contextType": {
+        "$$typeof": {},
+        "Consumer": {
+          "$$typeof": {},
+          "_calculateChangedBits": {},
+          "_context": {}
+        },
+        "Provider": {
+          "$$typeof": {},
+          "_context": {}
+        },
+        "_calculateChangedBits": {},
+        "_currentRenderer": {},
+        "_currentRenderer2": {},
+        "_currentValue": {
+          "inlineCollapsed": {}
+        },
+        "_currentValue2": {
+          "inlineCollapsed": {}
+        },
+        "_threadCount": {}
       },
       "isSubMenu": {}
     }
   },
   "Modal": {
+    "config": function () {},
     "confirm": function () {},
     "defaultProps": {
       "confirmLoading": {},
@@ -695,72 +562,15 @@ var antd = {
     "destroyAll": function () {},
     "error": function () {},
     "info": function () {},
-    "propTypes": {
-      "cancelText": {
-        "isRequired": function () {}
-      },
-      "centered": {
-        "isRequired": function () {}
-      },
-      "closable": {
-        "isRequired": function () {}
-      },
-      "closeIcon": {
-        "isRequired": function () {}
-      },
-      "confirmLoading": {
-        "isRequired": function () {}
-      },
-      "footer": {
-        "isRequired": function () {}
-      },
-      "okText": {
-        "isRequired": function () {}
-      },
-      "onCancel": {
-        "isRequired": function () {}
-      },
-      "onOk": {
-        "isRequired": function () {}
-      },
-      "prefixCls": {
-        "isRequired": function () {}
-      },
-      "title": {
-        "isRequired": function () {}
-      },
-      "visible": {
-        "isRequired": function () {}
-      },
-      "width": {
-        "isRequired": function () {}
-      }
-    },
     "success": function () {},
+    "useModal": function () {},
     "warn": function () {},
     "warning": function () {}
   },
-  "PageHeader": {
-    "defaultProps": {
-      "backIcon": {
-        "$$typeof": {},
-        "_owner": {},
-        "_store": {},
-        "key": {},
-        "props": {
-          "type": {}
-        },
-        "ref": {},
-        "type": {
-          "createFromIconfontCN": function () {},
-          "getTwoToneColor": function () {},
-          "setTwoToneColor": function () {}
-        }
-      }
-    }
-  },
+  "PageHeader": function () {},
   "Pagination": function () {},
   "Popconfirm": {
+    "$$typeof": {},
     "defaultProps": {
       "disabled": {},
       "icon": {
@@ -768,24 +578,24 @@ var antd = {
         "_owner": {},
         "_store": {},
         "key": {},
-        "props": {
-          "theme": {},
-          "type": {}
-        },
+        "props": {},
         "ref": {},
         "type": {
-          "createFromIconfontCN": function () {},
-          "getTwoToneColor": function () {},
-          "setTwoToneColor": function () {}
+          "$$typeof": {},
+          "render": {
+            "displayName": {}
+          }
         }
       },
       "okType": {},
       "placement": {},
       "transitionName": {},
       "trigger": {}
-    }
+    },
+    "render": function () {}
   },
   "Popover": {
+    "$$typeof": {},
     "defaultProps": {
       "mouseEnterDelay": {},
       "mouseLeaveDelay": {},
@@ -793,7 +603,9 @@ var antd = {
       "placement": {},
       "transitionName": {},
       "trigger": {}
-    }
+    },
+    "displayName": {},
+    "render": function () {}
   },
   "Progress": {
     "defaultProps": {
@@ -804,97 +616,51 @@ var antd = {
       "strokeLinecap": {},
       "trailColor": {},
       "type": {}
-    },
-    "propTypes": {
-      "format": {
-        "isRequired": function () {}
-      },
-      "gapDegree": {
-        "isRequired": function () {}
-      },
-      "percent": {
-        "isRequired": function () {}
-      },
-      "showInfo": {
-        "isRequired": function () {}
-      },
-      "status": {
-        "isRequired": function () {}
-      },
-      "strokeColor": {
-        "isRequired": function () {}
-      },
-      "strokeLinecap": {
-        "isRequired": function () {}
-      },
-      "strokeWidth": {
-        "isRequired": function () {}
-      },
-      "trailColor": {
-        "isRequired": function () {}
-      },
-      "type": {
-        "isRequired": function () {}
-      },
-      "width": {
-        "isRequired": function () {}
-      }
     }
   },
   "Radio": {
+    "$$typeof": {},
     "Button": {
-      "contextTypes": {
-        "radioGroup": {
-          "isRequired": function () {}
-        }
-      }
+      "$$typeof": {},
+      "render": function () {}
     },
     "Group": {
-      "childContextTypes": {
-        "radioGroup": {
-          "isRequired": function () {}
-        }
-      },
-      "defaultProps": {
-        "buttonStyle": {}
-      }
-    },
-    "contextTypes": {
-      "radioGroup": {
-        "isRequired": function () {}
+      "$$typeof": {},
+      "compare": {},
+      "type": {
+        "$$typeof": {},
+        "defaultProps": {
+          "buttonStyle": {}
+        },
+        "render": function () {}
       }
     },
     "defaultProps": {
       "type": {}
-    }
+    },
+    "displayName": {},
+    "render": function () {}
   },
   "Rate": {
+    "$$typeof": {},
     "defaultProps": {
       "character": {
         "$$typeof": {},
         "_owner": {},
         "_store": {},
         "key": {},
-        "props": {
-          "theme": {},
-          "type": {}
-        },
+        "props": {},
         "ref": {},
         "type": {
-          "createFromIconfontCN": function () {},
-          "getTwoToneColor": function () {},
-          "setTwoToneColor": function () {}
+          "$$typeof": {},
+          "render": {
+            "displayName": {}
+          }
         }
       }
     },
-    "propTypes": {
-      "character": {
-        "isRequired": function () {}
-      },
-      "prefixCls": {
-        "isRequired": function () {}
-      }
-    }
+    "displayName": {},
+    "render": function () {}
   },
   "Result": {
     "PRESENTED_IMAGE_403": function () {},
@@ -905,82 +671,42 @@ var antd = {
     }
   },
   "Row": {
-    "defaultProps": {
-      "gutter": {}
-    },
-    "propTypes": {
-      "align": {
-        "isRequired": function () {}
-      },
-      "children": {
-        "isRequired": function () {}
-      },
-      "className": {
-        "isRequired": function () {}
-      },
-      "gutter": {
-        "isRequired": function () {}
-      },
-      "justify": {
-        "isRequired": function () {}
-      },
-      "prefixCls": {
-        "isRequired": function () {}
-      },
-      "type": {
-        "isRequired": function () {}
-      }
-    }
+    "$$typeof": {},
+    "displayName": {},
+    "render": function () {}
   },
   "Select": {
     "OptGroup": {
       "isSelectOptGroup": {}
     },
     "Option": {
-      "isSelectOption": {},
-      "propTypes": {
-        "value": {
-          "isRequired": function () {}
-        }
-      }
+      "isSelectOption": {}
     },
     "SECRET_COMBOBOX_MODE_DO_NOT_USE": {},
     "defaultProps": {
+      "bordered": {},
       "choiceTransitionName": {},
-      "showSearch": {},
       "transitionName": {}
-    },
-    "propTypes": {
-      "choiceTransitionName": {
-        "isRequired": function () {}
-      },
-      "className": {
-        "isRequired": function () {}
-      },
-      "id": {
-        "isRequired": function () {}
-      },
-      "notFoundContent": {
-        "isRequired": function () {}
-      },
-      "optionLabelProp": {
-        "isRequired": function () {}
-      },
-      "prefixCls": {
-        "isRequired": function () {}
-      },
-      "showSearch": {
-        "isRequired": function () {}
-      },
-      "size": {
-        "isRequired": function () {}
-      },
-      "transitionName": {
-        "isRequired": function () {}
-      }
     }
   },
   "Skeleton": {
+    "Avatar": {
+      "defaultProps": {
+        "shape": {},
+        "size": {}
+      }
+    },
+    "Button": {
+      "defaultProps": {
+        "size": {}
+      }
+    },
+    "Image": function () {},
+    "Input": {
+      "defaultProps": {
+        "size": {}
+      }
+    },
     "defaultProps": {
       "avatar": {},
       "paragraph": {},
@@ -988,35 +714,19 @@ var antd = {
     }
   },
   "Slider": {
+    "$$typeof": {},
     "defaultProps": {
       "tipFormatter": function () {}
-    }
+    },
+    "displayName": {},
+    "render": function () {}
   },
+  "Space": function () {},
   "Spin": {
     "defaultProps": {
       "size": {},
       "spinning": {},
       "wrapperClassName": {}
-    },
-    "propTypes": {
-      "className": {
-        "isRequired": function () {}
-      },
-      "indicator": {
-        "isRequired": function () {}
-      },
-      "prefixCls": {
-        "isRequired": function () {}
-      },
-      "size": {
-        "isRequired": function () {}
-      },
-      "spinning": {
-        "isRequired": function () {}
-      },
-      "wrapperClassName": {
-        "isRequired": function () {}
-      }
     }
   },
   "Statistic": {
@@ -1028,168 +738,47 @@ var antd = {
     "displayName": {}
   },
   "Steps": {
-    "Step": {
-      "propTypes": {
-        "active": {
-          "isRequired": function () {}
-        },
-        "adjustMarginRight": {
-          "isRequired": function () {}
-        },
-        "className": {
-          "isRequired": function () {}
-        },
-        "description": {
-          "isRequired": function () {}
-        },
-        "disabled": {
-          "isRequired": function () {}
-        },
-        "icon": {
-          "isRequired": function () {}
-        },
-        "iconPrefix": {
-          "isRequired": function () {}
-        },
-        "icons": {
-          "isRequired": function () {}
-        },
-        "itemWidth": {
-          "isRequired": function () {}
-        },
-        "onClick": {
-          "isRequired": function () {}
-        },
-        "onStepClick": {
-          "isRequired": function () {}
-        },
-        "prefixCls": {
-          "isRequired": function () {}
-        },
-        "progressDot": {
-          "isRequired": function () {}
-        },
-        "status": {
-          "isRequired": function () {}
-        },
-        "stepIndex": {
-          "isRequired": function () {}
-        },
-        "stepNumber": {
-          "isRequired": function () {}
-        },
-        "style": {
-          "isRequired": function () {}
-        },
-        "subTitle": {
-          "isRequired": function () {}
-        },
-        "tailContent": {
-          "isRequired": function () {}
-        },
-        "title": {
-          "isRequired": function () {}
-        },
-        "wrapperStyle": {
-          "isRequired": function () {}
-        }
-      }
-    },
+    "Step": function () {},
     "defaultProps": {
       "current": {}
-    },
-    "propTypes": {
-      "current": {
-        "isRequired": function () {}
-      },
-      "iconPrefix": {
-        "isRequired": function () {}
-      },
-      "prefixCls": {
-        "isRequired": function () {}
-      }
     }
   },
   "Switch": {
+    "$$typeof": {},
     "__ANT_SWITCH": {},
-    "propTypes": {
-      "className": {
-        "isRequired": function () {}
-      },
-      "prefixCls": {
-        "isRequired": function () {}
-      },
-      "size": {
-        "isRequired": function () {}
-      }
-    }
+    "displayName": {},
+    "render": function () {}
   },
   "Table": {
     "Column": function () {},
-    "ColumnGroup": {
-      "__ANT_TABLE_COLUMN_GROUP": {}
+    "ColumnGroup": function () {},
+    "SELECTION_ALL": {},
+    "SELECTION_INVERT": {},
+    "Summary": {
+      "Cell": function () {},
+      "Row": function () {}
     },
-    "displayName": {}
+    "defaultProps": {
+      "rowKey": {}
+    }
   },
   "Tabs": {
-    "TabPane": {
-      "defaultProps": {
-        "placeholder": {}
-      },
-      "propTypes": {
-        "active": {
-          "isRequired": function () {}
-        },
-        "children": {
-          "isRequired": function () {}
-        },
-        "className": {
-          "isRequired": function () {}
-        },
-        "destroyInactiveTabPane": {
-          "isRequired": function () {}
-        },
-        "forceRender": {
-          "isRequired": function () {}
-        },
-        "id": {
-          "isRequired": function () {}
-        },
-        "placeholder": {
-          "isRequired": function () {}
-        },
-        "rootPrefixCls": {
-          "isRequired": function () {}
-        },
-        "style": {
-          "isRequired": function () {}
-        }
-      }
-    },
-    "defaultProps": {
-      "hideAdd": {},
-      "tabPosition": {}
-    }
+    "TabPane": function () {}
   },
   "Tag": {
+    "$$typeof": {},
     "CheckableTag": function () {},
-    "defaultProps": {
-      "closable": {}
-    }
+    "displayName": {},
+    "render": function () {}
   },
   "TimePicker": {
-    "defaultProps": {
-      "align": {
-        "offset": {}
-      },
-      "disabledHours": {},
-      "disabledMinutes": {},
-      "disabledSeconds": {},
-      "focusOnOpen": {},
-      "hideDisabledOptions": {},
-      "placement": {},
-      "transitionName": {}
-    }
+    "$$typeof": {},
+    "RangePicker": {
+      "$$typeof": {},
+      "render": function () {}
+    },
+    "displayName": {},
+    "render": function () {}
   },
   "Timeline": {
     "Item": {
@@ -1205,6 +794,7 @@ var antd = {
     }
   },
   "Tooltip": {
+    "$$typeof": {},
     "defaultProps": {
       "arrowPointAtCenter": {},
       "autoAdjustOverflow": {},
@@ -1212,13 +802,14 @@ var antd = {
       "mouseLeaveDelay": {},
       "placement": {},
       "transitionName": {}
-    }
+    },
+    "displayName": {},
+    "render": function () {}
   },
   "Transfer": {
     "List": {
       "defaultProps": {
         "dataSource": {},
-        "lazy": {},
         "showSearch": {},
         "titleText": {}
       }
@@ -1234,87 +825,24 @@ var antd = {
       "listStyle": function () {},
       "locale": {},
       "showSearch": {}
-    },
-    "propTypes": {
-      "body": {
-        "isRequired": function () {}
-      },
-      "className": {
-        "isRequired": function () {}
-      },
-      "dataSource": {
-        "isRequired": function () {}
-      },
-      "disabled": {
-        "isRequired": function () {}
-      },
-      "filterOption": {
-        "isRequired": function () {}
-      },
-      "footer": {
-        "isRequired": function () {}
-      },
-      "height": {
-        "isRequired": function () {}
-      },
-      "lazy": {
-        "isRequired": function () {}
-      },
-      "listStyle": {
-        "isRequired": function () {}
-      },
-      "locale": {
-        "isRequired": function () {}
-      },
-      "notFoundContent": {
-        "isRequired": function () {}
-      },
-      "onChange": {
-        "isRequired": function () {}
-      },
-      "operationStyle": {
-        "isRequired": function () {}
-      },
-      "operations": {
-        "isRequired": function () {}
-      },
-      "prefixCls": {
-        "isRequired": function () {}
-      },
-      "render": {
-        "isRequired": function () {}
-      },
-      "rowKey": {
-        "isRequired": function () {}
-      },
-      "searchPlaceholder": {
-        "isRequired": function () {}
-      },
-      "showSearch": {
-        "isRequired": function () {}
-      },
-      "style": {
-        "isRequired": function () {}
-      },
-      "targetKeys": {
-        "isRequired": function () {}
-      },
-      "titles": {
-        "isRequired": function () {}
-      }
     }
   },
   "Tree": {
+    "$$typeof": {},
     "DirectoryTree": {
+      "$$typeof": {},
       "defaultProps": {
         "expandAction": {},
         "showIcon": {}
-      }
+      },
+      "displayName": {},
+      "render": function () {}
     },
     "TreeNode": {
       "defaultProps": {
         "title": {}
       },
+      "displayName": {},
       "isTreeNode": {}
     },
     "defaultProps": {
@@ -1322,34 +850,39 @@ var antd = {
       "checkable": {},
       "motion": {
         "motionAppear": {},
+        "motionDeadline": {},
         "motionName": {},
         "onAppearActive": function () {},
+        "onAppearEnd": function () {},
         "onAppearStart": function () {},
         "onEnterActive": function () {},
+        "onEnterEnd": function () {},
         "onEnterStart": function () {},
         "onLeaveActive": function () {},
+        "onLeaveEnd": function () {},
         "onLeaveStart": function () {}
       },
       "showIcon": {}
-    }
+    },
+    "render": function () {}
   },
   "TreeSelect": {
     "SHOW_ALL": {},
     "SHOW_CHILD": {},
     "SHOW_PARENT": {},
-    "TreeNode": {
-      "isTreeNode": {},
-      "propTypes": {
-        "value": function () {}
-      }
-    },
+    "TreeNode": function () {},
     "defaultProps": {
+      "bordered": {},
       "choiceTransitionName": {},
       "transitionName": {}
     }
   },
   "Typography": {
     "$$typeof": {},
+    "Link": {
+      "$$typeof": {},
+      "render": function () {}
+    },
     "Paragraph": function () {},
     "Text": function () {},
     "Title": function () {},
@@ -1357,7 +890,12 @@ var antd = {
     "render": function () {}
   },
   "Upload": {
-    "Dragger": function () {},
+    "$$typeof": {},
+    "Dragger": {
+      "$$typeof": {},
+      "displayName": {},
+      "render": function () {}
+    },
     "defaultProps": {
       "accept": {},
       "action": {},
@@ -1370,7 +908,9 @@ var antd = {
       "showUploadList": {},
       "supportServerRender": {},
       "type": {}
-    }
+    },
+    "displayName": {},
+    "render": function () {}
   },
   "locales": {
     "ar_EG": {
@@ -1385,6 +925,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -1423,6 +964,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -1453,6 +995,195 @@ var antd = {
       "Empty": {
         "description": {}
       },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        }
+      },
+      "Icon": {
+        "icon": {}
+      },
+      "Modal": {
+        "cancelText": {},
+        "justOkText": {},
+        "okText": {}
+      },
+      "PageHeader": {
+        "back": {}
+      },
+      "Pagination": {
+        "items_per_page": {},
+        "jump_to": {},
+        "jump_to_confirm": {},
+        "next_3": {},
+        "next_5": {},
+        "next_page": {},
+        "page": {},
+        "prev_3": {},
+        "prev_5": {},
+        "prev_page": {}
+      },
+      "Popconfirm": {
+        "cancelText": {},
+        "okText": {}
+      },
+      "Table": {
+        "cancelSort": {},
+        "collapse": {},
+        "expand": {},
+        "filterConfirm": {},
+        "filterReset": {},
+        "filterTitle": {},
+        "selectAll": {},
+        "selectInvert": {},
+        "selectionAll": {},
+        "sortTitle": {},
+        "triggerAsc": {},
+        "triggerDesc": {}
+      },
+      "Text": {
+        "copied": {},
+        "copy": {},
+        "edit": {},
+        "expand": {}
+      },
+      "TimePicker": {
+        "placeholder": {}
+      },
+      "Transfer": {
+        "itemUnit": {},
+        "itemsUnit": {},
+        "searchPlaceholder": {}
+      },
+      "Upload": {
+        "downloadFile": {},
+        "previewFile": {},
+        "removeFile": {},
+        "uploadError": {},
+        "uploading": {}
+      },
+      "global": {
+        "placeholder": {}
+      },
+      "locale": {}
+    },
+    "az_AZ": {
+      "Calendar": {
+        "lang": {
+          "backToToday": {},
+          "clear": {},
+          "dateFormat": {},
+          "dateSelect": {},
+          "dateTimeFormat": {},
+          "dayFormat": {},
+          "decadeSelect": {},
+          "locale": {},
+          "month": {},
+          "monthBeforeYear": {},
+          "monthSelect": {},
+          "nextCentury": {},
+          "nextDecade": {},
+          "nextMonth": {},
+          "nextYear": {},
+          "now": {},
+          "ok": {},
+          "placeholder": {},
+          "previousCentury": {},
+          "previousDecade": {},
+          "previousMonth": {},
+          "previousYear": {},
+          "rangePlaceholder": {},
+          "timeSelect": {},
+          "today": {},
+          "weekSelect": {},
+          "year": {},
+          "yearFormat": {},
+          "yearSelect": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "DatePicker": {
+        "lang": {
+          "backToToday": {},
+          "clear": {},
+          "dateFormat": {},
+          "dateSelect": {},
+          "dateTimeFormat": {},
+          "dayFormat": {},
+          "decadeSelect": {},
+          "locale": {},
+          "month": {},
+          "monthBeforeYear": {},
+          "monthSelect": {},
+          "nextCentury": {},
+          "nextDecade": {},
+          "nextMonth": {},
+          "nextYear": {},
+          "now": {},
+          "ok": {},
+          "placeholder": {},
+          "previousCentury": {},
+          "previousDecade": {},
+          "previousMonth": {},
+          "previousYear": {},
+          "rangePlaceholder": {},
+          "timeSelect": {},
+          "today": {},
+          "weekSelect": {},
+          "year": {},
+          "yearFormat": {},
+          "yearSelect": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
       "Modal": {
         "cancelText": {},
         "justOkText": {},
@@ -1474,7 +1205,11 @@ var antd = {
         "cancelText": {},
         "okText": {}
       },
+      "Select": {
+        "notFoundContent": {}
+      },
       "Table": {
+        "emptyText": {},
         "filterConfirm": {},
         "filterReset": {},
         "filterTitle": {},
@@ -1487,10 +1222,11 @@ var antd = {
       "Transfer": {
         "itemUnit": {},
         "itemsUnit": {},
-        "searchPlaceholder": {}
+        "notFoundContent": {},
+        "searchPlaceholder": {},
+        "titles": {}
       },
       "Upload": {
-        "downloadFile": {},
         "previewFile": {},
         "removeFile": {},
         "uploadError": {},
@@ -1508,6 +1244,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -1542,6 +1279,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -1625,6 +1363,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -1659,6 +1398,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -1687,10 +1427,65 @@ var antd = {
       "Empty": {
         "description": {}
       },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        }
+      },
+      "Icon": {
+        "icon": {}
+      },
       "Modal": {
         "cancelText": {},
         "justOkText": {},
         "okText": {}
+      },
+      "PageHeader": {
+        "back": {}
       },
       "Pagination": {
         "items_per_page": {},
@@ -1709,9 +1504,25 @@ var antd = {
         "okText": {}
       },
       "Table": {
+        "cancelSort": {},
+        "collapse": {},
+        "expand": {},
         "filterConfirm": {},
+        "filterEmptyText": {},
         "filterReset": {},
-        "filterTitle": {}
+        "filterTitle": {},
+        "selectAll": {},
+        "selectInvert": {},
+        "selectionAll": {},
+        "sortTitle": {},
+        "triggerAsc": {},
+        "triggerDesc": {}
+      },
+      "Text": {
+        "copied": {},
+        "copy": {},
+        "edit": {},
+        "expand": {}
       },
       "TimePicker": {
         "placeholder": {}
@@ -1719,7 +1530,14 @@ var antd = {
       "Transfer": {
         "itemUnit": {},
         "itemsUnit": {},
-        "searchPlaceholder": {}
+        "remove": {},
+        "removeAll": {},
+        "removeCurrent": {},
+        "searchPlaceholder": {},
+        "selectAll": {},
+        "selectCurrent": {},
+        "selectInvert": {},
+        "titles": {}
       },
       "Upload": {
         "downloadFile": {},
@@ -1727,6 +1545,9 @@ var antd = {
         "removeFile": {},
         "uploadError": {},
         "uploading": {}
+      },
+      "global": {
+        "placeholder": {}
       },
       "locale": {}
     },
@@ -1740,6 +1561,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -1774,6 +1596,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -1824,9 +1647,19 @@ var antd = {
         "okText": {}
       },
       "Table": {
+        "cancelSort": {},
+        "collapse": {},
+        "expand": {},
         "filterConfirm": {},
+        "filterEmptyText": {},
         "filterReset": {},
-        "filterTitle": {}
+        "filterTitle": {},
+        "selectAll": {},
+        "selectInvert": {},
+        "selectionAll": {},
+        "sortTitle": {},
+        "triggerAsc": {},
+        "triggerDesc": {}
       },
       "TimePicker": {
         "placeholder": {}
@@ -1843,6 +1676,9 @@ var antd = {
         "uploadError": {},
         "uploading": {}
       },
+      "global": {
+        "placeholder": {}
+      },
       "locale": {}
     },
     "da_DK": {
@@ -1855,6 +1691,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -1889,6 +1726,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -1972,6 +1810,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2006,6 +1845,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2034,10 +1874,62 @@ var antd = {
       "Empty": {
         "description": {}
       },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        }
+      },
       "Modal": {
         "cancelText": {},
         "justOkText": {},
         "okText": {}
+      },
+      "PageHeader": {
+        "back": {}
       },
       "Pagination": {
         "items_per_page": {},
@@ -2056,11 +1948,24 @@ var antd = {
         "okText": {}
       },
       "Table": {
+        "cancelSort": {},
+        "collapse": {},
+        "expand": {},
         "filterConfirm": {},
         "filterReset": {},
         "filterTitle": {},
         "selectAll": {},
-        "selectInvert": {}
+        "selectInvert": {},
+        "selectionAll": {},
+        "sortTitle": {},
+        "triggerAsc": {},
+        "triggerDesc": {}
+      },
+      "Text": {
+        "copied": {},
+        "copy": {},
+        "edit": {},
+        "expand": {}
       },
       "TimePicker": {
         "placeholder": {}
@@ -2077,6 +1982,9 @@ var antd = {
         "uploadError": {},
         "uploading": {}
       },
+      "global": {
+        "placeholder": {}
+      },
       "locale": {}
     },
     "el_GR": {
@@ -2089,6 +1997,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2123,6 +2032,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2206,6 +2116,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2240,6 +2151,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2267,6 +2179,55 @@ var antd = {
       },
       "Empty": {
         "description": {}
+      },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        }
       },
       "Modal": {
         "cancelText": {},
@@ -2323,8 +2284,10 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
+          "monthPlaceholder": {},
           "monthSelect": {},
           "nextCentury": {},
           "nextDecade": {},
@@ -2337,16 +2300,23 @@ var antd = {
           "previousDecade": {},
           "previousMonth": {},
           "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
           "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekPlaceholder": {},
           "weekSelect": {},
           "year": {},
           "yearFormat": {},
+          "yearPlaceholder": {},
           "yearSelect": {}
         },
         "timePickerLocale": {
-          "placeholder": {}
+          "placeholder": {},
+          "rangePlaceholder": {}
         }
       },
       "DatePicker": {
@@ -2358,8 +2328,10 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
+          "monthPlaceholder": {},
           "monthSelect": {},
           "nextCentury": {},
           "nextDecade": {},
@@ -2372,20 +2344,77 @@ var antd = {
           "previousDecade": {},
           "previousMonth": {},
           "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
           "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekPlaceholder": {},
           "weekSelect": {},
           "year": {},
           "yearFormat": {},
+          "yearPlaceholder": {},
           "yearSelect": {}
         },
         "timePickerLocale": {
-          "placeholder": {}
+          "placeholder": {},
+          "rangePlaceholder": {}
         }
       },
       "Empty": {
         "description": {}
+      },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        },
+        "optional": {}
       },
       "Icon": {
         "icon": {}
@@ -2415,14 +2444,20 @@ var antd = {
         "okText": {}
       },
       "Table": {
+        "cancelSort": {},
         "collapse": {},
+        "emptyText": {},
         "expand": {},
         "filterConfirm": {},
+        "filterEmptyText": {},
         "filterReset": {},
         "filterTitle": {},
         "selectAll": {},
         "selectInvert": {},
-        "sortTitle": {}
+        "selectionAll": {},
+        "sortTitle": {},
+        "triggerAsc": {},
+        "triggerDesc": {}
       },
       "Text": {
         "copied": {},
@@ -2431,12 +2466,19 @@ var antd = {
         "expand": {}
       },
       "TimePicker": {
-        "placeholder": {}
+        "placeholder": {},
+        "rangePlaceholder": {}
       },
       "Transfer": {
         "itemUnit": {},
         "itemsUnit": {},
+        "remove": {},
+        "removeAll": {},
+        "removeCurrent": {},
         "searchPlaceholder": {},
+        "selectAll": {},
+        "selectCurrent": {},
+        "selectInvert": {},
         "titles": {}
       },
       "Upload": {
@@ -2461,6 +2503,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2495,6 +2538,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2522,6 +2566,55 @@ var antd = {
       },
       "Empty": {
         "description": {}
+      },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        }
       },
       "Icon": {
         "icon": {}
@@ -2594,6 +2687,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2628,6 +2722,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2711,6 +2806,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2745,6 +2841,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2773,10 +2870,65 @@ var antd = {
       "Empty": {
         "description": {}
       },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        }
+      },
+      "Icon": {
+        "icon": {}
+      },
       "Modal": {
         "cancelText": {},
         "justOkText": {},
         "okText": {}
+      },
+      "PageHeader": {
+        "back": {}
       },
       "Pagination": {
         "items_per_page": {},
@@ -2795,11 +2947,24 @@ var antd = {
         "okText": {}
       },
       "Table": {
+        "cancelSort": {},
+        "collapse": {},
+        "expand": {},
         "filterConfirm": {},
         "filterReset": {},
         "filterTitle": {},
         "selectAll": {},
-        "selectInvert": {}
+        "selectInvert": {},
+        "selectionAll": {},
+        "sortTitle": {},
+        "triggerAsc": {},
+        "triggerDesc": {}
+      },
+      "Text": {
+        "copied": {},
+        "copy": {},
+        "edit": {},
+        "expand": {}
       },
       "TimePicker": {
         "placeholder": {}
@@ -2807,7 +2972,8 @@ var antd = {
       "Transfer": {
         "itemUnit": {},
         "itemsUnit": {},
-        "searchPlaceholder": {}
+        "searchPlaceholder": {},
+        "titles": {}
       },
       "Upload": {
         "downloadFile": {},
@@ -2828,6 +2994,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2862,6 +3029,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2919,6 +3087,12 @@ var antd = {
         "selectInvert": {},
         "sortTitle": {}
       },
+      "Text": {
+        "copied": {},
+        "copy": {},
+        "edit": {},
+        "expand": {}
+      },
       "TimePicker": {
         "placeholder": {}
       },
@@ -2946,6 +3120,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2980,6 +3155,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3067,8 +3243,10 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
+          "monthPlaceholder": {},
           "monthSelect": {},
           "nextCentury": {},
           "nextDecade": {},
@@ -3081,15 +3259,22 @@ var antd = {
           "previousDecade": {},
           "previousMonth": {},
           "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
           "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekPlaceholder": {},
           "year": {},
           "yearFormat": {},
+          "yearPlaceholder": {},
           "yearSelect": {}
         },
         "timePickerLocale": {
-          "placeholder": {}
+          "placeholder": {},
+          "rangePlaceholder": {}
         }
       },
       "DatePicker": {
@@ -3101,8 +3286,10 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
+          "monthPlaceholder": {},
           "monthSelect": {},
           "nextCentury": {},
           "nextDecade": {},
@@ -3115,15 +3302,22 @@ var antd = {
           "previousDecade": {},
           "previousMonth": {},
           "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
           "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekPlaceholder": {},
           "year": {},
           "yearFormat": {},
+          "yearPlaceholder": {},
           "yearSelect": {}
         },
         "timePickerLocale": {
-          "placeholder": {}
+          "placeholder": {},
+          "rangePlaceholder": {}
         }
       },
       "Empty": {
@@ -3133,6 +3327,9 @@ var antd = {
         "cancelText": {},
         "justOkText": {},
         "okText": {}
+      },
+      "PageHeader": {
+        "back": {}
       },
       "Pagination": {
         "items_per_page": {},
@@ -3151,9 +3348,18 @@ var antd = {
         "okText": {}
       },
       "Table": {
+        "cancelSort": {},
+        "collapse": {},
+        "expand": {},
         "filterConfirm": {},
         "filterReset": {},
-        "filterTitle": {}
+        "filterTitle": {},
+        "selectAll": {},
+        "selectInvert": {},
+        "selectionAll": {},
+        "sortTitle": {},
+        "triggerAsc": {},
+        "triggerDesc": {}
       },
       "Text": {
         "copied": {},
@@ -3162,7 +3368,8 @@ var antd = {
         "expand": {}
       },
       "TimePicker": {
-        "placeholder": {}
+        "placeholder": {},
+        "rangePlaceholder": {}
       },
       "Transfer": {
         "itemUnit": {},
@@ -3178,7 +3385,7 @@ var antd = {
       },
       "locale": {}
     },
-    "he_IL": {
+    "ga_IE": {
       "Calendar": {
         "lang": {
           "backToToday": {},
@@ -3188,6 +3395,223 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
+          "month": {},
+          "monthBeforeYear": {},
+          "monthPlaceholder": {},
+          "monthSelect": {},
+          "nextCentury": {},
+          "nextDecade": {},
+          "nextMonth": {},
+          "nextYear": {},
+          "now": {},
+          "ok": {},
+          "placeholder": {},
+          "previousCentury": {},
+          "previousDecade": {},
+          "previousMonth": {},
+          "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
+          "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
+          "timeSelect": {},
+          "today": {},
+          "weekPlaceholder": {},
+          "weekSelect": {},
+          "year": {},
+          "yearFormat": {},
+          "yearPlaceholder": {},
+          "yearSelect": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {},
+          "rangePlaceholder": {}
+        }
+      },
+      "DatePicker": {
+        "lang": {
+          "backToToday": {},
+          "clear": {},
+          "dateFormat": {},
+          "dateSelect": {},
+          "dateTimeFormat": {},
+          "dayFormat": {},
+          "decadeSelect": {},
+          "locale": {},
+          "month": {},
+          "monthBeforeYear": {},
+          "monthPlaceholder": {},
+          "monthSelect": {},
+          "nextCentury": {},
+          "nextDecade": {},
+          "nextMonth": {},
+          "nextYear": {},
+          "now": {},
+          "ok": {},
+          "placeholder": {},
+          "previousCentury": {},
+          "previousDecade": {},
+          "previousMonth": {},
+          "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
+          "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
+          "timeSelect": {},
+          "today": {},
+          "weekPlaceholder": {},
+          "weekSelect": {},
+          "year": {},
+          "yearFormat": {},
+          "yearPlaceholder": {},
+          "yearSelect": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {},
+          "rangePlaceholder": {}
+        }
+      },
+      "Empty": {
+        "description": {}
+      },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        }
+      },
+      "Icon": {
+        "icon": {}
+      },
+      "Modal": {
+        "cancelText": {},
+        "justOkText": {},
+        "okText": {}
+      },
+      "PageHeader": {
+        "back": {}
+      },
+      "Pagination": {
+        "items_per_page": {},
+        "jump_to": {},
+        "jump_to_confirm": {},
+        "next_3": {},
+        "next_5": {},
+        "next_page": {},
+        "page": {},
+        "prev_3": {},
+        "prev_5": {},
+        "prev_page": {}
+      },
+      "Popconfirm": {
+        "cancelText": {},
+        "okText": {}
+      },
+      "Table": {
+        "cancelSort": {},
+        "collapse": {},
+        "expand": {},
+        "filterConfirm": {},
+        "filterReset": {},
+        "filterTitle": {},
+        "selectAll": {},
+        "selectInvert": {},
+        "selectionAll": {},
+        "sortTitle": {},
+        "triggerAsc": {},
+        "triggerDesc": {}
+      },
+      "Text": {
+        "copied": {},
+        "copy": {},
+        "edit": {},
+        "expand": {}
+      },
+      "TimePicker": {
+        "placeholder": {},
+        "rangePlaceholder": {}
+      },
+      "Transfer": {
+        "itemUnit": {},
+        "itemsUnit": {},
+        "remove": {},
+        "removeAll": {},
+        "removeCurrent": {},
+        "searchPlaceholder": {},
+        "selectAll": {},
+        "selectCurrent": {},
+        "selectInvert": {},
+        "titles": {}
+      },
+      "Upload": {
+        "downloadFile": {},
+        "previewFile": {},
+        "removeFile": {},
+        "uploadError": {},
+        "uploading": {}
+      },
+      "global": {
+        "placeholder": {}
+      },
+      "locale": {}
+    },
+    "gl_ES": {
+      "Calendar": {
+        "lang": {
+          "backToToday": {},
+          "clear": {},
+          "dateFormat": {},
+          "dateSelect": {},
+          "dateTimeFormat": {},
+          "dayFormat": {},
+          "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3205,7 +3629,6 @@ var antd = {
           "rangePlaceholder": {},
           "timeSelect": {},
           "today": {},
-          "weekSelect": {},
           "year": {},
           "yearFormat": {},
           "yearSelect": {}
@@ -3223,6 +3646,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3240,7 +3664,6 @@ var antd = {
           "rangePlaceholder": {},
           "timeSelect": {},
           "today": {},
-          "weekSelect": {},
           "year": {},
           "yearFormat": {},
           "yearSelect": {}
@@ -3252,10 +3675,65 @@ var antd = {
       "Empty": {
         "description": {}
       },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        }
+      },
+      "Icon": {
+        "icon": {}
+      },
       "Modal": {
         "cancelText": {},
         "justOkText": {},
         "okText": {}
+      },
+      "PageHeader": {
+        "back": {}
       },
       "Pagination": {
         "items_per_page": {},
@@ -3278,7 +3756,14 @@ var antd = {
         "filterReset": {},
         "filterTitle": {},
         "selectAll": {},
-        "selectInvert": {}
+        "selectInvert": {},
+        "sortTitle": {}
+      },
+      "Text": {
+        "copied": {},
+        "copy": {},
+        "edit": {},
+        "expand": {}
       },
       "TimePicker": {
         "placeholder": {}
@@ -3295,9 +3780,12 @@ var antd = {
         "uploadError": {},
         "uploading": {}
       },
+      "global": {
+        "placeholder": {}
+      },
       "locale": {}
     },
-    "hi_IN": {
+    "he_IL": {
       "Calendar": {
         "lang": {
           "backToToday": {},
@@ -3307,6 +3795,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3342,6 +3831,199 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
+          "month": {},
+          "monthBeforeYear": {},
+          "monthSelect": {},
+          "nextCentury": {},
+          "nextDecade": {},
+          "nextMonth": {},
+          "nextYear": {},
+          "now": {},
+          "ok": {},
+          "placeholder": {},
+          "previousCentury": {},
+          "previousDecade": {},
+          "previousMonth": {},
+          "previousYear": {},
+          "rangePlaceholder": {},
+          "timeSelect": {},
+          "today": {},
+          "weekSelect": {},
+          "year": {},
+          "yearFormat": {},
+          "yearSelect": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "Empty": {
+        "description": {}
+      },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        }
+      },
+      "Icon": {
+        "icon": {}
+      },
+      "Modal": {
+        "cancelText": {},
+        "justOkText": {},
+        "okText": {}
+      },
+      "PageHeader": {
+        "back": {}
+      },
+      "Pagination": {
+        "items_per_page": {},
+        "jump_to": {},
+        "jump_to_confirm": {},
+        "next_3": {},
+        "next_5": {},
+        "next_page": {},
+        "page": {},
+        "prev_3": {},
+        "prev_5": {},
+        "prev_page": {}
+      },
+      "Popconfirm": {
+        "cancelText": {},
+        "okText": {}
+      },
+      "Table": {
+        "cancelSort": {},
+        "collapse": {},
+        "expand": {},
+        "filterConfirm": {},
+        "filterReset": {},
+        "filterTitle": {},
+        "selectAll": {},
+        "selectInvert": {},
+        "selectionAll": {},
+        "sortTitle": {},
+        "triggerAsc": {},
+        "triggerDesc": {}
+      },
+      "Text": {
+        "copied": {},
+        "copy": {},
+        "edit": {},
+        "expand": {}
+      },
+      "TimePicker": {
+        "placeholder": {}
+      },
+      "Transfer": {
+        "itemUnit": {},
+        "itemsUnit": {},
+        "searchPlaceholder": {}
+      },
+      "Upload": {
+        "downloadFile": {},
+        "previewFile": {},
+        "removeFile": {},
+        "uploadError": {},
+        "uploading": {}
+      },
+      "global": {
+        "placeholder": {}
+      },
+      "locale": {}
+    },
+    "hi_IN": {
+      "Calendar": {
+        "lang": {
+          "backToToday": {},
+          "clear": {},
+          "dateFormat": {},
+          "dateSelect": {},
+          "dateTimeFormat": {},
+          "dayFormat": {},
+          "decadeSelect": {},
+          "locale": {},
+          "month": {},
+          "monthBeforeYear": {},
+          "monthSelect": {},
+          "nextCentury": {},
+          "nextDecade": {},
+          "nextMonth": {},
+          "nextYear": {},
+          "now": {},
+          "ok": {},
+          "placeholder": {},
+          "previousCentury": {},
+          "previousDecade": {},
+          "previousMonth": {},
+          "previousYear": {},
+          "rangePlaceholder": {},
+          "timeSelect": {},
+          "today": {},
+          "weekSelect": {},
+          "year": {},
+          "yearFormat": {},
+          "yearSelect": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "DatePicker": {
+        "lang": {
+          "backToToday": {},
+          "clear": {},
+          "dateFormat": {},
+          "dateSelect": {},
+          "dateTimeFormat": {},
+          "dayFormat": {},
+          "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3433,6 +4115,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3468,6 +4151,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3566,6 +4250,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3600,6 +4285,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3684,6 +4370,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3719,6 +4406,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3822,6 +4510,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3857,6 +4546,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3943,6 +4633,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3977,6 +4668,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4060,6 +4752,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4094,6 +4787,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4147,12 +4841,15 @@ var antd = {
         "okText": {}
       },
       "Table": {
+        "cancelSort": {},
         "filterConfirm": {},
         "filterReset": {},
         "filterTitle": {},
         "selectAll": {},
         "selectInvert": {},
-        "sortTitle": {}
+        "sortTitle": {},
+        "triggerAsc": {},
+        "triggerDesc": {}
       },
       "Text": {
         "copied": {},
@@ -4190,7 +4887,177 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
+          "monthSelect": {},
+          "nextCentury": {},
+          "nextDecade": {},
+          "nextMonth": {},
+          "nextYear": {},
+          "now": {},
+          "ok": {},
+          "placeholder": {},
+          "previousCentury": {},
+          "previousDecade": {},
+          "previousMonth": {},
+          "previousYear": {},
+          "rangePlaceholder": {},
+          "timeSelect": {},
+          "today": {},
+          "weekSelect": {},
+          "year": {},
+          "yearFormat": {},
+          "yearSelect": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "DatePicker": {
+        "lang": {
+          "backToToday": {},
+          "clear": {},
+          "dateFormat": {},
+          "dateSelect": {},
+          "dateTimeFormat": {},
+          "dayFormat": {},
+          "decadeSelect": {},
+          "locale": {},
+          "month": {},
+          "monthSelect": {},
+          "nextCentury": {},
+          "nextDecade": {},
+          "nextMonth": {},
+          "nextYear": {},
+          "now": {},
+          "ok": {},
+          "placeholder": {},
+          "previousCentury": {},
+          "previousDecade": {},
+          "previousMonth": {},
+          "previousYear": {},
+          "rangePlaceholder": {},
+          "timeSelect": {},
+          "today": {},
+          "weekSelect": {},
+          "year": {},
+          "yearFormat": {},
+          "yearSelect": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "Empty": {
+        "description": {}
+      },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        }
+      },
+      "Modal": {
+        "cancelText": {},
+        "justOkText": {},
+        "okText": {}
+      },
+      "Pagination": {
+        "items_per_page": {},
+        "jump_to": {},
+        "jump_to_confirm": {},
+        "next_3": {},
+        "next_5": {},
+        "next_page": {},
+        "page": {},
+        "prev_3": {},
+        "prev_5": {},
+        "prev_page": {}
+      },
+      "Popconfirm": {
+        "cancelText": {},
+        "okText": {}
+      },
+      "Table": {
+        "filterConfirm": {},
+        "filterReset": {},
+        "filterTitle": {},
+        "selectAll": {},
+        "selectInvert": {}
+      },
+      "TimePicker": {
+        "placeholder": {}
+      },
+      "Transfer": {
+        "itemUnit": {},
+        "itemsUnit": {},
+        "searchPlaceholder": {}
+      },
+      "Upload": {
+        "downloadFile": {},
+        "previewFile": {},
+        "removeFile": {},
+        "uploadError": {},
+        "uploading": {}
+      },
+      "locale": {}
+    },
+    "kmr_IQ": {
+      "Calendar": {
+        "lang": {
+          "backToToday": {},
+          "clear": {},
+          "dateFormat": {},
+          "dateSelect": {},
+          "dateTimeFormat": {},
+          "dayFormat": {},
+          "decadeSelect": {},
+          "locale": {},
+          "month": {},
+          "monthBeforeYear": {},
           "monthSelect": {},
           "nextCentury": {},
           "nextDecade": {},
@@ -4223,7 +5090,9 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
+          "monthBeforeYear": {},
           "monthSelect": {},
           "nextCentury": {},
           "nextDecade": {},
@@ -4305,6 +5174,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4340,6 +5210,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4431,6 +5302,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4465,6 +5337,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4492,6 +5365,55 @@ var antd = {
       },
       "Empty": {
         "description": {}
+      },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        }
       },
       "Modal": {
         "cancelText": {},
@@ -4548,6 +5470,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4582,6 +5505,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4655,6 +5579,218 @@ var antd = {
       },
       "locale": {}
     },
+    "lt_LT": {
+      "Calendar": {
+        "lang": {
+          "backToToday": {},
+          "clear": {},
+          "dateFormat": {},
+          "dateSelect": {},
+          "dateTimeFormat": {},
+          "dayFormat": {},
+          "decadeSelect": {},
+          "locale": {},
+          "month": {},
+          "monthBeforeYear": {},
+          "monthPlaceholder": {},
+          "monthSelect": {},
+          "nextCentury": {},
+          "nextDecade": {},
+          "nextMonth": {},
+          "nextYear": {},
+          "now": {},
+          "ok": {},
+          "placeholder": {},
+          "previousCentury": {},
+          "previousDecade": {},
+          "previousMonth": {},
+          "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
+          "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
+          "timeSelect": {},
+          "today": {},
+          "weekPlaceholder": {},
+          "year": {},
+          "yearFormat": {},
+          "yearPlaceholder": {},
+          "yearSelect": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {},
+          "rangePlaceholder": {}
+        }
+      },
+      "DatePicker": {
+        "lang": {
+          "backToToday": {},
+          "clear": {},
+          "dateFormat": {},
+          "dateSelect": {},
+          "dateTimeFormat": {},
+          "dayFormat": {},
+          "decadeSelect": {},
+          "locale": {},
+          "month": {},
+          "monthBeforeYear": {},
+          "monthPlaceholder": {},
+          "monthSelect": {},
+          "nextCentury": {},
+          "nextDecade": {},
+          "nextMonth": {},
+          "nextYear": {},
+          "now": {},
+          "ok": {},
+          "placeholder": {},
+          "previousCentury": {},
+          "previousDecade": {},
+          "previousMonth": {},
+          "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
+          "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
+          "timeSelect": {},
+          "today": {},
+          "weekPlaceholder": {},
+          "year": {},
+          "yearFormat": {},
+          "yearPlaceholder": {},
+          "yearSelect": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {},
+          "rangePlaceholder": {}
+        }
+      },
+      "Empty": {
+        "description": {}
+      },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        }
+      },
+      "Icon": {
+        "icon": {}
+      },
+      "Modal": {
+        "cancelText": {},
+        "justOkText": {},
+        "okText": {}
+      },
+      "PageHeader": {
+        "back": {}
+      },
+      "Pagination": {
+        "items_per_page": {},
+        "jump_to": {},
+        "jump_to_confirm": {},
+        "next_3": {},
+        "next_5": {},
+        "next_page": {},
+        "page": {},
+        "prev_3": {},
+        "prev_5": {},
+        "prev_page": {}
+      },
+      "Popconfirm": {
+        "cancelText": {},
+        "okText": {}
+      },
+      "Table": {
+        "cancelSort": {},
+        "collapse": {},
+        "emptyText": {},
+        "expand": {},
+        "filterConfirm": {},
+        "filterEmptyText": {},
+        "filterReset": {},
+        "filterTitle": {},
+        "selectAll": {},
+        "selectInvert": {},
+        "selectionAll": {},
+        "sortTitle": {},
+        "triggerAsc": {},
+        "triggerDesc": {}
+      },
+      "Text": {
+        "copied": {},
+        "copy": {},
+        "edit": {},
+        "expand": {}
+      },
+      "TimePicker": {
+        "placeholder": {},
+        "rangePlaceholder": {}
+      },
+      "Transfer": {
+        "itemUnit": {},
+        "itemsUnit": {},
+        "remove": {},
+        "removeAll": {},
+        "removeCurrent": {},
+        "searchPlaceholder": {},
+        "selectAll": {},
+        "selectCurrent": {},
+        "selectInvert": {},
+        "titles": {}
+      },
+      "Upload": {
+        "downloadFile": {},
+        "previewFile": {},
+        "removeFile": {},
+        "uploadError": {},
+        "uploading": {}
+      },
+      "locale": {}
+    },
     "lv_LV": {
       "Calendar": {
         "lang": {
@@ -4665,6 +5801,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4699,6 +5836,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4782,6 +5920,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4816,6 +5955,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4914,6 +6054,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4949,6 +6090,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -5033,6 +6175,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthSelect": {},
           "nextCentury": {},
@@ -5067,6 +6210,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthSelect": {},
           "nextCentury": {},
@@ -5170,8 +6314,10 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
+          "monthPlaceholder": {},
           "monthSelect": {},
           "nextCentury": {},
           "nextDecade": {},
@@ -5184,15 +6330,23 @@ var antd = {
           "previousDecade": {},
           "previousMonth": {},
           "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
           "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekPlaceholder": {},
+          "weekSelect": {},
           "year": {},
           "yearFormat": {},
+          "yearPlaceholder": {},
           "yearSelect": {}
         },
         "timePickerLocale": {
-          "placeholder": {}
+          "placeholder": {},
+          "rangePlaceholder": {}
         }
       },
       "DatePicker": {
@@ -5204,8 +6358,10 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
+          "monthPlaceholder": {},
           "monthSelect": {},
           "nextCentury": {},
           "nextDecade": {},
@@ -5218,24 +6374,87 @@ var antd = {
           "previousDecade": {},
           "previousMonth": {},
           "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
           "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekPlaceholder": {},
+          "weekSelect": {},
           "year": {},
           "yearFormat": {},
+          "yearPlaceholder": {},
           "yearSelect": {}
         },
         "timePickerLocale": {
-          "placeholder": {}
+          "placeholder": {},
+          "rangePlaceholder": {}
         }
       },
       "Empty": {
         "description": {}
       },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        }
+      },
+      "Icon": {
+        "icon": {}
+      },
       "Modal": {
         "cancelText": {},
         "justOkText": {},
         "okText": {}
+      },
+      "PageHeader": {
+        "back": {}
       },
       "Pagination": {
         "items_per_page": {},
@@ -5253,19 +6472,41 @@ var antd = {
         "okText": {}
       },
       "Table": {
+        "cancelSort": {},
+        "collapse": {},
+        "expand": {},
         "filterConfirm": {},
+        "filterEmptyText": {},
         "filterReset": {},
         "filterTitle": {},
         "selectAll": {},
-        "selectInvert": {}
+        "selectInvert": {},
+        "selectionAll": {},
+        "sortTitle": {},
+        "triggerAsc": {},
+        "triggerDesc": {}
+      },
+      "Text": {
+        "copied": {},
+        "copy": {},
+        "edit": {},
+        "expand": {}
       },
       "TimePicker": {
-        "placeholder": {}
+        "placeholder": {},
+        "rangePlaceholder": {}
       },
       "Transfer": {
         "itemUnit": {},
         "itemsUnit": {},
-        "searchPlaceholder": {}
+        "remove": {},
+        "removeAll": {},
+        "removeCurrent": {},
+        "searchPlaceholder": {},
+        "selectAll": {},
+        "selectCurrent": {},
+        "selectInvert": {},
+        "titles": {}
       },
       "Upload": {
         "downloadFile": {},
@@ -5273,6 +6514,9 @@ var antd = {
         "removeFile": {},
         "uploadError": {},
         "uploading": {}
+      },
+      "global": {
+        "placeholder": {}
       },
       "locale": {}
     },
@@ -5286,8 +6530,10 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
+          "monthPlaceholder": {},
           "monthSelect": {},
           "nextCentury": {},
           "nextDecade": {},
@@ -5300,16 +6546,23 @@ var antd = {
           "previousDecade": {},
           "previousMonth": {},
           "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
           "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekPlaceholder": {},
           "weekSelect": {},
           "year": {},
           "yearFormat": {},
+          "yearPlaceholder": {},
           "yearSelect": {}
         },
         "timePickerLocale": {
-          "placeholder": {}
+          "placeholder": {},
+          "rangePlaceholder": {}
         }
       },
       "DatePicker": {
@@ -5321,8 +6574,10 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
+          "monthPlaceholder": {},
           "monthSelect": {},
           "nextCentury": {},
           "nextDecade": {},
@@ -5335,16 +6590,23 @@ var antd = {
           "previousDecade": {},
           "previousMonth": {},
           "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
           "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekPlaceholder": {},
           "weekSelect": {},
           "year": {},
           "yearFormat": {},
+          "yearPlaceholder": {},
           "yearSelect": {}
         },
         "timePickerLocale": {
-          "placeholder": {}
+          "placeholder": {},
+          "rangePlaceholder": {}
         }
       },
       "Empty": {
@@ -5379,7 +6641,8 @@ var antd = {
         "selectInvert": {}
       },
       "TimePicker": {
-        "placeholder": {}
+        "placeholder": {},
+        "rangePlaceholder": {}
       },
       "Transfer": {
         "itemUnit": {},
@@ -5406,6 +6669,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -5440,6 +6704,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -5523,6 +6788,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -5557,6 +6823,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -5659,6 +6926,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -5693,6 +6961,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -5776,6 +7045,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -5810,6 +7080,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -5838,10 +7109,65 @@ var antd = {
       "Empty": {
         "description": {}
       },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        }
+      },
+      "Icon": {
+        "icon": {}
+      },
       "Modal": {
         "cancelText": {},
         "justOkText": {},
         "okText": {}
+      },
+      "PageHeader": {
+        "back": {}
       },
       "Pagination": {
         "items_per_page": {},
@@ -5860,11 +7186,18 @@ var antd = {
         "okText": {}
       },
       "Table": {
+        "cancelSort": {},
+        "collapse": {},
+        "expand": {},
         "filterConfirm": {},
         "filterReset": {},
         "filterTitle": {},
         "selectAll": {},
-        "selectInvert": {}
+        "selectInvert": {},
+        "selectionAll": {},
+        "sortTitle": {},
+        "triggerAsc": {},
+        "triggerDesc": {}
       },
       "Text": {
         "copied": {},
@@ -5887,6 +7220,9 @@ var antd = {
         "uploadError": {},
         "uploading": {}
       },
+      "global": {
+        "placeholder": {}
+      },
       "locale": {}
     },
     "pt_PT": {
@@ -5899,6 +7235,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthFormat": {},
@@ -5934,6 +7271,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthFormat": {},
@@ -6019,6 +7357,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -6054,6 +7393,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -6157,8 +7497,10 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
+          "monthPlaceholder": {},
           "monthSelect": {},
           "nextCentury": {},
           "nextDecade": {},
@@ -6171,15 +7513,22 @@ var antd = {
           "previousDecade": {},
           "previousMonth": {},
           "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
           "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekPlaceholder": {},
           "year": {},
           "yearFormat": {},
+          "yearPlaceholder": {},
           "yearSelect": {}
         },
         "timePickerLocale": {
-          "placeholder": {}
+          "placeholder": {},
+          "rangePlaceholder": {}
         }
       },
       "DatePicker": {
@@ -6191,8 +7540,10 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
+          "monthPlaceholder": {},
           "monthSelect": {},
           "nextCentury": {},
           "nextDecade": {},
@@ -6205,19 +7556,77 @@ var antd = {
           "previousDecade": {},
           "previousMonth": {},
           "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
           "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekPlaceholder": {},
           "year": {},
           "yearFormat": {},
+          "yearPlaceholder": {},
           "yearSelect": {}
         },
         "timePickerLocale": {
-          "placeholder": {}
+          "placeholder": {},
+          "rangePlaceholder": {}
         }
       },
       "Empty": {
         "description": {}
+      },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        }
+      },
+      "Icon": {
+        "icon": {}
       },
       "Modal": {
         "cancelText": {},
@@ -6244,12 +7653,20 @@ var antd = {
         "okText": {}
       },
       "Table": {
+        "cancelSort": {},
+        "collapse": {},
+        "emptyText": {},
+        "expand": {},
         "filterConfirm": {},
+        "filterEmptyText": {},
         "filterReset": {},
         "filterTitle": {},
         "selectAll": {},
         "selectInvert": {},
-        "sortTitle": {}
+        "selectionAll": {},
+        "sortTitle": {},
+        "triggerAsc": {},
+        "triggerDesc": {}
       },
       "Text": {
         "copied": {},
@@ -6258,12 +7675,20 @@ var antd = {
         "expand": {}
       },
       "TimePicker": {
-        "placeholder": {}
+        "placeholder": {},
+        "rangePlaceholder": {}
       },
       "Transfer": {
         "itemUnit": {},
         "itemsUnit": {},
-        "searchPlaceholder": {}
+        "remove": {},
+        "removeAll": {},
+        "removeCurrent": {},
+        "searchPlaceholder": {},
+        "selectAll": {},
+        "selectCurrent": {},
+        "selectInvert": {},
+        "titles": {}
       },
       "Upload": {
         "downloadFile": {},
@@ -6271,6 +7696,9 @@ var antd = {
         "removeFile": {},
         "uploadError": {},
         "uploading": {}
+      },
+      "global": {
+        "placeholder": {}
       },
       "locale": {}
     },
@@ -6284,6 +7712,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -6301,7 +7730,6 @@ var antd = {
           "rangePlaceholder": {},
           "timeSelect": {},
           "today": {},
-          "weekSelect": {},
           "year": {},
           "yearFormat": {},
           "yearSelect": {}
@@ -6319,6 +7747,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -6336,7 +7765,6 @@ var antd = {
           "rangePlaceholder": {},
           "timeSelect": {},
           "today": {},
-          "weekSelect": {},
           "year": {},
           "yearFormat": {},
           "yearSelect": {}
@@ -6422,6 +7850,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthFormat": {},
@@ -6457,6 +7886,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthFormat": {},
@@ -6541,6 +7971,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -6575,6 +8006,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -6657,6 +8089,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -6691,6 +8124,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -6778,6 +8212,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -6813,6 +8248,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -6916,6 +8352,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -6950,6 +8387,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -7052,8 +8490,10 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
+          "monthPlaceholder": {},
           "monthSelect": {},
           "nextCentury": {},
           "nextDecade": {},
@@ -7066,15 +8506,22 @@ var antd = {
           "previousDecade": {},
           "previousMonth": {},
           "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
           "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekPlaceholder": {},
           "year": {},
           "yearFormat": {},
+          "yearPlaceholder": {},
           "yearSelect": {}
         },
         "timePickerLocale": {
-          "placeholder": {}
+          "placeholder": {},
+          "rangePlaceholder": {}
         }
       },
       "DatePicker": {
@@ -7086,8 +8533,10 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
+          "monthPlaceholder": {},
           "monthSelect": {},
           "nextCentury": {},
           "nextDecade": {},
@@ -7100,19 +8549,75 @@ var antd = {
           "previousDecade": {},
           "previousMonth": {},
           "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
           "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekPlaceholder": {},
           "year": {},
           "yearFormat": {},
+          "yearPlaceholder": {},
           "yearSelect": {}
         },
         "timePickerLocale": {
-          "placeholder": {}
+          "placeholder": {},
+          "rangePlaceholder": {}
         }
       },
       "Empty": {
         "description": {}
+      },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        }
       },
       "Icon": {
         "icon": {}
@@ -7121,6 +8626,9 @@ var antd = {
         "cancelText": {},
         "justOkText": {},
         "okText": {}
+      },
+      "PageHeader": {
+        "back": {}
       },
       "Pagination": {
         "items_per_page": {},
@@ -7139,12 +8647,19 @@ var antd = {
         "okText": {}
       },
       "Table": {
+        "cancelSort": {},
+        "collapse": {},
+        "expand": {},
         "filterConfirm": {},
+        "filterEmptyText": {},
         "filterReset": {},
         "filterTitle": {},
         "selectAll": {},
         "selectInvert": {},
-        "sortTitle": {}
+        "selectionAll": {},
+        "sortTitle": {},
+        "triggerAsc": {},
+        "triggerDesc": {}
       },
       "Text": {
         "copied": {},
@@ -7153,12 +8668,19 @@ var antd = {
         "expand": {}
       },
       "TimePicker": {
-        "placeholder": {}
+        "placeholder": {},
+        "rangePlaceholder": {}
       },
       "Transfer": {
         "itemUnit": {},
         "itemsUnit": {},
+        "remove": {},
+        "removeAll": {},
+        "removeCurrent": {},
         "searchPlaceholder": {},
+        "selectAll": {},
+        "selectCurrent": {},
+        "selectInvert": {},
         "titles": {}
       },
       "Upload": {
@@ -7183,6 +8705,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -7217,6 +8740,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -7300,6 +8824,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -7335,6 +8860,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -7419,6 +8945,222 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
+          "month": {},
+          "monthPlaceholder": {},
+          "monthSelect": {},
+          "nextCentury": {},
+          "nextDecade": {},
+          "nextMonth": {},
+          "nextYear": {},
+          "now": {},
+          "ok": {},
+          "placeholder": {},
+          "previousCentury": {},
+          "previousDecade": {},
+          "previousMonth": {},
+          "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
+          "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
+          "timeSelect": {},
+          "today": {},
+          "weekPlaceholder": {},
+          "weekSelect": {},
+          "year": {},
+          "yearFormat": {},
+          "yearPlaceholder": {},
+          "yearSelect": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {},
+          "rangePlaceholder": {}
+        }
+      },
+      "DatePicker": {
+        "lang": {
+          "backToToday": {},
+          "clear": {},
+          "dateFormat": {},
+          "dateSelect": {},
+          "dateTimeFormat": {},
+          "dayFormat": {},
+          "decadeSelect": {},
+          "locale": {},
+          "month": {},
+          "monthPlaceholder": {},
+          "monthSelect": {},
+          "nextCentury": {},
+          "nextDecade": {},
+          "nextMonth": {},
+          "nextYear": {},
+          "now": {},
+          "ok": {},
+          "placeholder": {},
+          "previousCentury": {},
+          "previousDecade": {},
+          "previousMonth": {},
+          "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
+          "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
+          "timeSelect": {},
+          "today": {},
+          "weekPlaceholder": {},
+          "weekSelect": {},
+          "year": {},
+          "yearFormat": {},
+          "yearPlaceholder": {},
+          "yearSelect": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {},
+          "rangePlaceholder": {}
+        }
+      },
+      "Empty": {
+        "description": {}
+      },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        },
+        "optional": {}
+      },
+      "Icon": {
+        "icon": {}
+      },
+      "Modal": {
+        "cancelText": {},
+        "justOkText": {},
+        "okText": {}
+      },
+      "PageHeader": {
+        "back": {}
+      },
+      "Pagination": {
+        "items_per_page": {},
+        "jump_to": {},
+        "jump_to_confirm": {},
+        "next_3": {},
+        "next_5": {},
+        "next_page": {},
+        "page": {},
+        "prev_3": {},
+        "prev_5": {},
+        "prev_page": {}
+      },
+      "Popconfirm": {
+        "cancelText": {},
+        "okText": {}
+      },
+      "Table": {
+        "cancelSort": {},
+        "collapse": {},
+        "expand": {},
+        "filterConfirm": {},
+        "filterEmptyText": {},
+        "filterReset": {},
+        "filterTitle": {},
+        "selectAll": {},
+        "selectInvert": {},
+        "selectionAll": {},
+        "sortTitle": {},
+        "triggerAsc": {},
+        "triggerDesc": {}
+      },
+      "Text": {
+        "copied": {},
+        "copy": {},
+        "edit": {},
+        "expand": {}
+      },
+      "TimePicker": {
+        "placeholder": {},
+        "rangePlaceholder": {}
+      },
+      "Transfer": {
+        "itemUnit": {},
+        "itemsUnit": {},
+        "remove": {},
+        "removeAll": {},
+        "removeCurrent": {},
+        "searchPlaceholder": {},
+        "selectAll": {},
+        "selectCurrent": {},
+        "selectInvert": {}
+      },
+      "Upload": {
+        "downloadFile": {},
+        "previewFile": {},
+        "removeFile": {},
+        "uploadError": {},
+        "uploading": {}
+      },
+      "global": {
+        "placeholder": {}
+      },
+      "locale": {}
+    },
+    "zh_HK": {
+      "Calendar": {
+        "lang": {
+          "backToToday": {},
+          "clear": {},
+          "dateFormat": {},
+          "dateSelect": {},
+          "dateTimeFormat": {},
+          "dayFormat": {},
+          "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthSelect": {},
           "nextCentury": {},
@@ -7453,6 +9195,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthSelect": {},
           "nextCentury": {},
@@ -7480,6 +9223,55 @@ var antd = {
       },
       "Empty": {
         "description": {}
+      },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        }
       },
       "Icon": {
         "icon": {}
@@ -7509,14 +9301,19 @@ var antd = {
         "okText": {}
       },
       "Table": {
+        "cancelSort": {},
         "collapse": {},
         "expand": {},
         "filterConfirm": {},
+        "filterEmptyText": {},
         "filterReset": {},
         "filterTitle": {},
         "selectAll": {},
         "selectInvert": {},
-        "sortTitle": {}
+        "selectionAll": {},
+        "sortTitle": {},
+        "triggerAsc": {},
+        "triggerDesc": {}
       },
       "Text": {
         "copied": {},
@@ -7554,6 +9351,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthSelect": {},
           "nextCentury": {},
@@ -7570,6 +9368,7 @@ var antd = {
           "rangePlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekSelect": {},
           "year": {},
           "yearFormat": {},
           "yearSelect": {}
@@ -7587,6 +9386,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthSelect": {},
           "nextCentury": {},
@@ -7603,6 +9403,7 @@ var antd = {
           "rangePlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekSelect": {},
           "year": {},
           "yearFormat": {},
           "yearSelect": {}
@@ -7613,6 +9414,58 @@ var antd = {
       },
       "Empty": {
         "description": {}
+      },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        }
+      },
+      "Icon": {
+        "icon": {}
       },
       "Modal": {
         "cancelText": {},
@@ -7639,11 +9492,25 @@ var antd = {
         "okText": {}
       },
       "Table": {
+        "cancelSort": {},
+        "collapse": {},
+        "expand": {},
         "filterConfirm": {},
+        "filterEmptyText": {},
         "filterReset": {},
         "filterTitle": {},
         "selectAll": {},
-        "selectInvert": {}
+        "selectInvert": {},
+        "selectionAll": {},
+        "sortTitle": {},
+        "triggerAsc": {},
+        "triggerDesc": {}
+      },
+      "Text": {
+        "copied": {},
+        "copy": {},
+        "edit": {},
+        "expand": {}
       },
       "TimePicker": {
         "placeholder": {}
@@ -7660,6 +9527,9 @@ var antd = {
         "uploadError": {},
         "uploading": {}
       },
+      "global": {
+        "placeholder": {}
+      },
       "locale": {}
     }
   },
@@ -7671,6 +9541,7 @@ var antd = {
     "loading": function () {},
     "open": function () {},
     "success": function () {},
+    "useMessage": function () {},
     "warn": function () {},
     "warning": function () {}
   },
@@ -7682,6 +9553,7 @@ var antd = {
     "info": function () {},
     "open": function () {},
     "success": function () {},
+    "useNotification": function () {},
     "warn": function () {},
     "warning": function () {}
   },
@@ -7692,7 +9564,7 @@ antd.Affix.prototype = {
   "isReactComponent": function () {},
   "setState": function () {}
 };
-antd.Alert.prototype = {
+antd.Alert.ErrorBoundary.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
@@ -7707,196 +9579,69 @@ antd.Anchor.Link.prototype = {
   "isReactComponent": function () {},
   "setState": function () {}
 };
-antd.AutoComplete.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.AutoComplete.OptGroup.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.AutoComplete.Option.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Avatar.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.BackTop.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Badge.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Breadcrumb.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Breadcrumb.Item.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Breadcrumb.Separator.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Button.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Calendar.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Card.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
 antd.Carousel.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
 };
 antd.Cascader.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
 };
 antd.Checkbox.prototype = {
   "forceUpdate": function () {},
+  "isPureReactComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
 };
 antd.Checkbox.Group.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Col.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Collapse.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Collapse.Panel.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Comment.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.ConfigProvider.prototype = {
-  "forceUpdate": function () {},
+  "isPureReactComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
 };
 antd.DatePicker.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
 };
 antd.DatePicker.MonthPicker.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
+antd.DatePicker.QuarterPicker.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
 };
 antd.DatePicker.RangePicker.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
+antd.DatePicker.TimePicker.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
 };
 antd.DatePicker.WeekPicker.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
 };
-antd.Descriptions.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Dropdown.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Dropdown.Button.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Form.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Form.Item.prototype = {
+antd.DatePicker.YearPicker.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
 };
 antd.Input.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "componentWillUpdate": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Input.Password.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Input.Search.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
 };
 antd.Input.TextArea.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.InputNumber.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
@@ -7926,37 +9671,6 @@ antd.Layout.Sider.prototype = {
   "isReactComponent": function () {},
   "setState": function () {}
 };
-antd.List.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.List.Item.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.LocaleProvider.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Mention.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Mention.Nav.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "render": function () {},
-  "setState": function () {}
-};
-antd.Mentions.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
 antd.Menu.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
@@ -7977,81 +9691,12 @@ antd.Menu.SubMenu.prototype = {
   "isReactComponent": function () {},
   "setState": function () {}
 };
-antd.Modal.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Pagination.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Popconfirm.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Popover.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
 antd.Progress.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
 };
-antd.Radio.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Radio.Button.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Radio.Group.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Rate.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Row.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
 antd.Select.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Select.OptGroup.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Select.Option.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Skeleton.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Slider.prototype = {
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
@@ -8076,92 +9721,18 @@ antd.Steps.Step.prototype = {
   "isReactComponent": function () {},
   "setState": function () {}
 };
-antd.Switch.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Table.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Table.Column.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Table.ColumnGroup.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Tabs.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Tabs.TabPane.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Tag.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Tag.CheckableTag.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.TimePicker.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Timeline.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Tooltip.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
 antd.Transfer.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
 };
 antd.Transfer.List.prototype = {
   "forceUpdate": function () {},
+  "isPureReactComponent": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
 };
 antd.Transfer.Search.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Tree.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Tree.DirectoryTree.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
   "forceUpdate": function () {},
   "isReactComponent": function () {},
   "setState": function () {}
@@ -8171,18 +9742,7 @@ antd.TreeSelect.prototype = {
   "isReactComponent": function () {},
   "setState": function () {}
 };
-antd.Upload.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Upload.Dragger.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
+
 /**********************************************************************
  * End Generated Extern for antd
  /**********************************************************************/
