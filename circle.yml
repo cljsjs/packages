@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/cljsjs
     docker:
-      - image: circleci/clojure:openjdk-8-boot-2.8.3-node
+      - image: circleci/clojure:openjdk-8-boot-2.8.2-node
     steps:
       - checkout
       # No easy way to create checksum for cljsjs
