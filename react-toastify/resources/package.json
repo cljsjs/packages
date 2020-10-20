@@ -10,7 +10,7 @@
          "classnames": "^2.2.6",
          "prop-types": "^15.7.2",
          "react-transition-group": "^4.3.0",
-         "react-toastify": "6.0.5"
+         "react-toastify": "6.0.9"
     },
     "devDependencies": {
         "webpack": "4.43.0",
