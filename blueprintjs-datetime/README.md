@@ -3,7 +3,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/blueprintjs-datetime "3.18.2-0"] ;; latest release
+[cljsjs/blueprintjs-datetime "3.19.3-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -33,6 +33,6 @@ you can require the packaged library like so:
 ```
 
 #### Info:
-Package includes @blueprintjs/datetime. You also need a css for styling from: https://unpkg.com/@blueprintjs/datetime@3.15.1/lib/css/blueprint-datetime.css
+Package includes @blueprintjs/datetime. You also need a css for styling from: https://unpkg.com/@blueprintjs/datetime@3.19.3/lib/css/blueprint-datetime.css
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps
