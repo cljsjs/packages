@@ -6,8 +6,8 @@
         "build:prod": "webpack --mode production --output-filename blueprintjs-core.min.inc.js"
     },
     "dependencies": {
-        "@blueprintjs/core": "v3.28.2",
-        "@blueprintjs/icons": "^3.18.1",
+        "@blueprintjs/core": "v3.34.0",
+        "@blueprintjs/icons": "^3.22.0",
         "tslib": "~1.11.0",
         "@types/dom4": "^2.0.1"
     },
