@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/highlight "9.12.0-2"] ;; latest release
+[cljsjs/highlight "10.3.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -36,7 +36,7 @@ whatever way you prefer. The easiest is to just include the theme CSS in your
 HTML file:
 
 ```html
-<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/zenburn.min.css" rel="stylesheet" type="text/css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.1/styles/zenburn.min.css" rel="stylesheet" type="text/css">
 ```
 
 List of highlight language packages:
