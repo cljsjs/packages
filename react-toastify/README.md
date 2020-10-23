@@ -5,7 +5,7 @@ https://github.com/fkhadra/react-toastify
 
 [](dependency)
 ```clojure
-[cljsjs/react-toastify "6.0.5-0"] ;; latest release
+[cljsjs/react-toastify "6.0.9-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -25,4 +25,4 @@ you can require the packaged library like so:
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps
 
-For Styling embed css from https://unpkg.com/react-toastify@5.3.1/dist/ReactToastify.min.css or implement your own styles (Separated for custom styling)
+For Styling embed css from https://unpkg.com/react-toastify@6.0.9/dist/ReactToastify.min.css or implement your own styles (Separated for custom styling)
