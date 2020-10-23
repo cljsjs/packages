@@ -6,7 +6,7 @@
         "build:prod": "webpack --mode production --output-filename blueprintjs-datetime.min.inc.js"
     },
     "dependencies": {
-        "@blueprintjs/datetime": "3.18.2"
+        "@blueprintjs/datetime": "3.19.3"
     },
     "devDependencies": {
         "webpack": "4.43.0",
