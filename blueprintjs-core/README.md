@@ -3,7 +3,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/blueprintjs-core "3.28.2-0"] ;; latest release
+[cljsjs/blueprintjs-core "3.34.0-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -35,6 +35,6 @@ you can require the packaged library like so:
 
 #### Info:
 Package includes @blueprintjs/core and @blueprintjs/icons, because the core requires icons.
-You also need a css for styling from: https://unpkg.com/@blueprintjs/core@3.22.3/lib/css/blueprint.css
+You also need a css for styling from: https://unpkg.com/@blueprintjs/core@3.34.0/lib/css/blueprint.css
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps
