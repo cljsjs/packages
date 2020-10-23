@@ -1,8 +1,8 @@
 (set-env!
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.10.5"  :scope "test"]
-                 [cljsjs/react "16.8.3-0"]
-                 [cljsjs/react-dom "16.8.3-0"]])
+                 [cljsjs/react "16.13.1-0"]
+                 [cljsjs/react-dom "16.13.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -10,8 +10,8 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "9.21.2")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "9.22.2")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/react-virtualized
@@ -37,20 +37,20 @@
             (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 (deftask package []
-         (comp
-          (download :url (str "https://github.com/bvaughn/react-virtualized/archive/" +lib-version+ ".zip")
-                    :unzip true)
-          (build-react-virtualized)
-          (sift :move {#"^react-virtualized-(.*)/dist/umd/react-virtualized.js$" "cljsjs/react-virtualized/development/react-virtualized.inc.js"
-                       #"^react-virtualized-(.*)/styles.css$" "cljsjs/react-virtualized/common/react-virtualized.inc.css"})
-          (minify :in "cljsjs/react-virtualized/development/react-virtualized.inc.js"
-                  :out "cljsjs/react-virtualized/production/react-virtualized.min.inc.js")
-          (sift :include #{#"^cljsjs"})
+  (comp
+   (download :url (str "https://github.com/bvaughn/react-virtualized/archive/v" +lib-version+ ".zip")
+             :unzip true)
+   (build-react-virtualized)
+   (sift :move {#"^react-virtualized-(.*)/dist/umd/react-virtualized.js$" "cljsjs/react-virtualized/development/react-virtualized.inc.js"
+                #"^react-virtualized-(.*)/styles.css$" "cljsjs/react-virtualized/common/react-virtualized.inc.css"})
+   (minify :in "cljsjs/react-virtualized/development/react-virtualized.inc.js"
+           :out "cljsjs/react-virtualized/production/react-virtualized.min.inc.js")
+   (sift :include #{#"^cljsjs"})
 
-          (deps-cljs :name "cljsjs.react-virtualized"
-                     :requires ["cljsjs.react"
-                                "cljsjs.react.dom"])
-          (pom)
+   (deps-cljs :name "cljsjs.react-virtualized"
+              :requires ["cljsjs.react"
+                         "cljsjs.react.dom"])
+   (pom)
 
-          (jar)
-		  (validate-checksums)))
+   (jar)
+   (validate-checksums)))
