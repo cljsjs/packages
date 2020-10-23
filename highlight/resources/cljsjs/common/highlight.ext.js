@@ -1,4 +1,4 @@
-// copied from https://github.com/isagalaev/highlight.js/blob/6662b/src/highlight.js#L699-L711
+// copied from https://github.com/highlightjs/highlight.js/blob/215eb88a8b18a549b6b5340ed595a94d7700a270/src/highlight.js#L854
 
 var hljs = {};
 hljs.highlight = function (name, value, ignore_illegals, continuation) {};
@@ -11,4 +11,8 @@ hljs.initHighlightingOnLoad = function () {};
 hljs.registerLanguage = function (name, language) {};
 hljs.listLanguages = function () {};
 hljs.getLanguage = function (name) {};
+hljs.registerAliases = function (aliasList, language) {};
+hljs.requireLanguage = function (name) {};
+hljs.autoDetection = function (name) {};
 hljs.inherit = function (parent, obj) {};
+hljs.addPlugin = function (plugin) {};
