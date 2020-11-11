@@ -10,15 +10,22 @@ var vegaEmbed = {
     "Bounds": function () {},
     "CanvasHandler": function () {},
     "CanvasRenderer": function () {},
+    "DATE": {},
+    "DAY": {},
+    "DAYOFYEAR": {},
     "Dataflow": function () {},
     "Debug": {},
     "Error": {},
     "EventStream": function () {},
     "Gradient": function () {},
     "GroupItem": function () {},
+    "HOURS": {},
     "Handler": function () {},
     "Info": {},
     "Item": function () {},
+    "MILLISECONDS": {},
+    "MINUTES": {},
+    "MONTH": {},
     "Marks": {
       "arc": {
         "attr": function () {},
@@ -158,6 +165,7 @@ var vegaEmbed = {
     "Operator": function () {},
     "Parameters": function () {},
     "Pulse": function () {},
+    "QUARTER": {},
     "RenderType": {
       "Canvas": {},
       "None": {},
@@ -166,43 +174,40 @@ var vegaEmbed = {
     },
     "Renderer": function () {},
     "ResourceLoader": function () {},
+    "SECONDS": {},
     "SVGHandler": function () {},
     "SVGRenderer": function () {},
     "SVGStringRenderer": function () {},
     "Scenegraph": function () {},
+    "TIME_UNITS": {},
     "Transform": function () {},
     "View": function () {},
+    "WEEK": {},
     "Warn": {},
+    "YEAR": {},
     "accessor": function () {},
     "accessorFields": function () {},
     "accessorName": function () {},
     "array": function () {},
+    "ascending": function () {},
     "bandwidthNRD": function () {},
     "bin": function () {},
     "bootstrapCI": function () {},
     "boundClip": function () {},
-    "boundContext": {
-      "arc": function () {},
-      "beginPath": function () {},
-      "bezierCurveTo": function () {},
-      "closePath": function () {},
-      "lineTo": function () {},
-      "moveTo": function () {},
-      "quadraticCurveTo": function () {},
-      "rect": function () {}
-    },
+    "boundContext": function () {},
     "boundItem": function () {},
     "boundMark": function () {},
     "boundStroke": function () {},
     "changeset": function () {},
     "clampRange": function () {},
-    "closeTag": function () {},
     "compare": function () {},
     "constant": function () {},
     "cumulativeLogNormal": function () {},
     "cumulativeNormal": function () {},
     "cumulativeUniform": function () {},
+    "dayofyear": function () {},
     "debounce": function () {},
+    "defaultLocale": function () {},
     "definition": function () {},
     "densityLogNormal": function () {},
     "densityNormal": function () {},
@@ -272,6 +277,7 @@ var vegaEmbed = {
     "isBoolean": function () {},
     "isDate": function () {},
     "isFunction": function () {},
+    "isIterable": function () {},
     "isNumber": function () {},
     "isObject": function () {},
     "isRegExp": function () {},
@@ -281,7 +287,10 @@ var vegaEmbed = {
     "lerp": function () {},
     "lineHeight": function () {},
     "loader": function () {},
+    "locale": function () {},
     "logger": function () {},
+    "lruCache": function () {},
+    "markup": function () {},
     "merge": function () {},
     "mergeConfig": function () {},
     "multiLineOffset": function () {},
@@ -289,7 +298,6 @@ var vegaEmbed = {
       "fields": {},
       "fname": {}
     },
-    "openTag": function () {},
     "pad": function () {},
     "panLinear": function () {},
     "panLog": function () {},
@@ -331,9 +339,10 @@ var vegaEmbed = {
     "regressionQuad": function () {},
     "renderModule": function () {},
     "repeat": function () {},
+    "resetDefaultLocale": function () {},
     "resetSVGClipId": function () {},
+    "resetSVGDefIds": function () {},
     "responseType": function () {},
-    "runtime": function () {},
     "runtimeContext": function () {},
     "sampleCurve": function () {},
     "sampleLogNormal": function () {},
@@ -347,6 +356,7 @@ var vegaEmbed = {
     "sceneVisit": function () {},
     "sceneZOrder": function () {},
     "scheme": function () {},
+    "serializeXML": function () {},
     "setRandom": function () {},
     "span": function () {},
     "splitAccessPath": function () {},
@@ -360,7 +370,6 @@ var vegaEmbed = {
     },
     "timeBin": function () {},
     "timeFloor": function () {},
-    "timeFormat": function () {},
     "timeFormatLocale": function () {},
     "timeInterval": function () {},
     "timeOffset": function () {},
@@ -625,6 +634,15 @@ var vegaEmbed = {
         }
       },
       "key": function () {},
+      "label": {
+        "Definition": {
+          "metadata": {
+            "modifies": {}
+          },
+          "params": {},
+          "type": {}
+        }
+      },
       "legendentries": function () {},
       "linkpath": {
         "Definition": {
@@ -829,7 +847,6 @@ var vegaEmbed = {
         }
       },
       "tupleindex": function () {},
-      "validTicks": function () {},
       "values": function () {},
       "viewlayout": function () {},
       "voronoi": {
@@ -878,13 +895,15 @@ var vegaEmbed = {
       }
     },
     "utcFloor": function () {},
-    "utcFormat": function () {},
     "utcInterval": function () {},
     "utcOffset": function () {},
     "utcSequence": function () {},
+    "utcdayofyear": function () {},
     "utcquarter": function () {},
+    "utcweek": function () {},
     "version": {},
     "visitArray": function () {},
+    "week": function () {},
     "writeConfig": function () {},
     "zero": {
       "fields": {},
@@ -896,16 +915,106 @@ var vegaEmbed = {
     "zoomSymlog": function () {}
   },
   "vegaLite": {
+    "accessPathDepth": function () {},
+    "accessPathWithDatum": function () {},
     "compile": function () {},
-    "extractTransforms": function () {},
+    "contains": function () {},
+    "deepEqual": function () {},
+    "deleteNestedProperty": function () {},
+    "duplicate": {
+      "__getRegExpFlags": function () {},
+      "__isArray": function () {},
+      "__isDate": function () {},
+      "__isRegExp": function () {},
+      "__objToStr": function () {},
+      "clonePrototype": function () {}
+    },
+    "entries": function () {},
+    "every": function () {},
+    "fieldIntersection": function () {},
+    "flatAccessWithDatum": function () {},
+    "getFirstDefined": function () {},
+    "hasIntersection": function () {},
+    "hash": function () {},
+    "internalField": function () {},
+    "isBoolean": function () {},
+    "isEmpty": function () {},
+    "isEqual": function () {},
+    "isInternalField": function () {},
+    "isNullOrFalse": function () {},
+    "isNumeric": function () {},
+    "keys": function () {},
+    "logicalExpr": function () {},
+    "mergeDeep": function () {},
     "normalize": function () {},
+    "normalizeAngle": function () {},
+    "omit": function () {},
+    "pick": function () {},
+    "prefixGenerator": function () {},
+    "removePathFromField": function () {},
+    "replaceAll": function () {},
+    "replacePathInField": function () {},
+    "resetIdCounter": function () {},
+    "setEqual": function () {},
+    "some": function () {},
+    "stringify": function () {},
+    "titleCase": function () {},
+    "unique": function () {},
+    "uniqueId": function () {},
+    "vals": function () {},
+    "varName": function () {},
     "version": {}
   },
   "version": {},
   "vl": {
+    "accessPathDepth": function () {},
+    "accessPathWithDatum": function () {},
     "compile": function () {},
-    "extractTransforms": function () {},
+    "contains": function () {},
+    "deepEqual": function () {},
+    "deleteNestedProperty": function () {},
+    "duplicate": {
+      "__getRegExpFlags": function () {},
+      "__isArray": function () {},
+      "__isDate": function () {},
+      "__isRegExp": function () {},
+      "__objToStr": function () {},
+      "clonePrototype": function () {}
+    },
+    "entries": function () {},
+    "every": function () {},
+    "fieldIntersection": function () {},
+    "flatAccessWithDatum": function () {},
+    "getFirstDefined": function () {},
+    "hasIntersection": function () {},
+    "hash": function () {},
+    "internalField": function () {},
+    "isBoolean": function () {},
+    "isEmpty": function () {},
+    "isEqual": function () {},
+    "isInternalField": function () {},
+    "isNullOrFalse": function () {},
+    "isNumeric": function () {},
+    "keys": function () {},
+    "logicalExpr": function () {},
+    "mergeDeep": function () {},
     "normalize": function () {},
+    "normalizeAngle": function () {},
+    "omit": function () {},
+    "pick": function () {},
+    "prefixGenerator": function () {},
+    "removePathFromField": function () {},
+    "replaceAll": function () {},
+    "replacePathInField": function () {},
+    "resetIdCounter": function () {},
+    "setEqual": function () {},
+    "some": function () {},
+    "stringify": function () {},
+    "titleCase": function () {},
+    "unique": function () {},
+    "uniqueId": function () {},
+    "vals": function () {},
+    "varName": function () {},
     "version": {}
   }
 };
@@ -925,6 +1034,7 @@ vegaEmbed.vega.Bounds.prototype = {
   "rotate": function () {},
   "rotatedPoints": function () {},
   "round": function () {},
+  "scale": function () {},
   "set": function () {},
   "translate": function () {},
   "union": function () {},
@@ -993,6 +1103,7 @@ vegaEmbed.vega.Dataflow.prototype = {
   "info": function () {},
   "ingest": function () {},
   "loader": function () {},
+  "locale": function () {},
   "logLevel": function () {},
   "logger": function () {},
   "on": function () {},
@@ -1017,6 +1128,7 @@ vegaEmbed.vega.EventStream.prototype = {
   "between": function () {},
   "consume": function () {},
   "debounce": function () {},
+  "detach": function () {},
   "filter": function () {},
   "merge": function () {},
   "receive": function () {},
@@ -1055,6 +1167,7 @@ vegaEmbed.vega.MultiPulse.prototype = {
   "StopPropagation": function () {},
   "addAll": function () {},
   "changed": function () {},
+  "clean": function () {},
   "clone": function () {},
   "constructor": function () {},
   "filter": function () {},
@@ -1068,6 +1181,7 @@ vegaEmbed.vega.MultiPulse.prototype = {
   "visit": function () {}
 };
 vegaEmbed.vega.Operator.prototype = {
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1096,6 +1210,7 @@ vegaEmbed.vega.Pulse.prototype = {
   "StopPropagation": function () {},
   "addAll": function () {},
   "changed": function () {},
+  "clean": function () {},
   "clone": function () {},
   "filter": function () {},
   "fork": function () {},
@@ -1144,43 +1259,42 @@ vegaEmbed.vega.SVGHandler.prototype = {
   "scene": function () {}
 };
 vegaEmbed.vega.SVGRenderer.prototype = {
+  "_clearDefs": function () {},
   "_dirtyCheck": function () {},
   "_load": function () {},
   "_render": function () {},
-  "_resetDefs": function () {},
   "_update": function () {},
   "background": function () {},
   "canvas": function () {},
   "constructor": function () {},
+  "defs": function () {},
   "dirty": function () {},
-  "draw": function () {},
   "element": function () {},
   "initialize": function () {},
   "isDirty": function () {},
   "loadImage": function () {},
+  "mark": function () {},
   "render": function () {},
   "renderAsync": function () {},
   "resize": function () {},
   "sanitizeURL": function () {},
   "style": function () {},
-  "svg": function () {},
-  "updateDefs": function () {}
+  "svg": function () {}
 };
 vegaEmbed.vega.SVGStringRenderer.prototype = {
   "_load": function () {},
   "_render": function () {},
-  "attributes": function () {},
+  "attr": function () {},
   "background": function () {},
-  "buildDefs": function () {},
   "canvas": function () {},
   "constructor": function () {},
+  "defs": function () {},
   "dirty": function () {},
   "element": function () {},
   "href": function () {},
   "initialize": function () {},
   "loadImage": function () {},
   "mark": function () {},
-  "markGroup": function () {},
   "render": function () {},
   "renderAsync": function () {},
   "resize": function () {},
@@ -1193,6 +1307,7 @@ vegaEmbed.vega.Scenegraph.prototype = {
 };
 vegaEmbed.vega.Transform.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1223,12 +1338,14 @@ vegaEmbed.vega.View.prototype = {
   "container": function () {},
   "data": function () {},
   "debug": function () {},
+  "description": function () {},
   "dirty": function () {},
   "error": function () {},
   "evaluate": function () {},
   "events": function () {},
   "finalize": function () {},
   "getState": function () {},
+  "globalCursor": function () {},
   "height": function () {},
   "hover": function () {},
   "info": function () {},
@@ -1236,6 +1353,7 @@ vegaEmbed.vega.View.prototype = {
   "initialize": function () {},
   "insert": function () {},
   "loader": function () {},
+  "locale": function () {},
   "logLevel": function () {},
   "logger": function () {},
   "on": function () {},
@@ -1279,8 +1397,10 @@ vegaEmbed.vega.transforms.aggregate.prototype = {
   "cellkey": function () {},
   "celltuple": function () {},
   "changes": function () {},
+  "clean": function () {},
   "constructor": function () {},
   "cross": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "init": function () {},
   "marshall": function () {},
@@ -1297,6 +1417,7 @@ vegaEmbed.vega.transforms.aggregate.prototype = {
 };
 vegaEmbed.vega.transforms.axisticks.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1310,6 +1431,7 @@ vegaEmbed.vega.transforms.axisticks.prototype = {
 vegaEmbed.vega.transforms.bin.prototype = {
   "_bins": function () {},
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1322,6 +1444,7 @@ vegaEmbed.vega.transforms.bin.prototype = {
 };
 vegaEmbed.vega.transforms.bound.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1334,6 +1457,7 @@ vegaEmbed.vega.transforms.bound.prototype = {
 };
 vegaEmbed.vega.transforms.collect.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1346,6 +1470,7 @@ vegaEmbed.vega.transforms.collect.prototype = {
 };
 vegaEmbed.vega.transforms.compare.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1357,6 +1482,7 @@ vegaEmbed.vega.transforms.compare.prototype = {
 };
 vegaEmbed.vega.transforms.contour.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1371,6 +1497,7 @@ vegaEmbed.vega.transforms.countpattern.prototype = {
   "_finish": function () {},
   "_parameterCheck": function () {},
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1383,6 +1510,7 @@ vegaEmbed.vega.transforms.countpattern.prototype = {
 };
 vegaEmbed.vega.transforms.cross.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1395,6 +1523,7 @@ vegaEmbed.vega.transforms.cross.prototype = {
 };
 vegaEmbed.vega.transforms.crossfilter.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "eval": function () {},
   "evaluate": function () {},
   "incrementAll": function () {},
@@ -1417,6 +1546,7 @@ vegaEmbed.vega.transforms.crossfilter.prototype = {
 };
 vegaEmbed.vega.transforms.datajoin.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1429,6 +1559,7 @@ vegaEmbed.vega.transforms.datajoin.prototype = {
 };
 vegaEmbed.vega.transforms.density.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1441,6 +1572,7 @@ vegaEmbed.vega.transforms.density.prototype = {
 };
 vegaEmbed.vega.transforms.dotbin.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1453,6 +1585,7 @@ vegaEmbed.vega.transforms.dotbin.prototype = {
 };
 vegaEmbed.vega.transforms.encode.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1465,6 +1598,7 @@ vegaEmbed.vega.transforms.encode.prototype = {
 };
 vegaEmbed.vega.transforms.expression.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1476,6 +1610,7 @@ vegaEmbed.vega.transforms.expression.prototype = {
 };
 vegaEmbed.vega.transforms.extent.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1488,8 +1623,11 @@ vegaEmbed.vega.transforms.extent.prototype = {
 };
 vegaEmbed.vega.transforms.facet.prototype = {
   "activate": function () {},
+  "clean": function () {},
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
+  "initTargets": function () {},
   "marshall": function () {},
   "modified": function () {},
   "parameters": function () {},
@@ -1502,6 +1640,7 @@ vegaEmbed.vega.transforms.facet.prototype = {
 };
 vegaEmbed.vega.transforms.field.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1513,6 +1652,7 @@ vegaEmbed.vega.transforms.field.prototype = {
 };
 vegaEmbed.vega.transforms.filter.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1525,6 +1665,7 @@ vegaEmbed.vega.transforms.filter.prototype = {
 };
 vegaEmbed.vega.transforms.flatten.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1537,6 +1678,7 @@ vegaEmbed.vega.transforms.flatten.prototype = {
 };
 vegaEmbed.vega.transforms.fold.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1549,6 +1691,7 @@ vegaEmbed.vega.transforms.fold.prototype = {
 };
 vegaEmbed.vega.transforms.force.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "finish": function () {},
   "marshall": function () {},
@@ -1562,6 +1705,7 @@ vegaEmbed.vega.transforms.force.prototype = {
 };
 vegaEmbed.vega.transforms.formula.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1574,6 +1718,7 @@ vegaEmbed.vega.transforms.formula.prototype = {
 };
 vegaEmbed.vega.transforms.generate.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1586,6 +1731,7 @@ vegaEmbed.vega.transforms.generate.prototype = {
 };
 vegaEmbed.vega.transforms.geojson.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1598,6 +1744,7 @@ vegaEmbed.vega.transforms.geojson.prototype = {
 };
 vegaEmbed.vega.transforms.geopath.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1610,6 +1757,7 @@ vegaEmbed.vega.transforms.geopath.prototype = {
 };
 vegaEmbed.vega.transforms.geopoint.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1622,6 +1770,7 @@ vegaEmbed.vega.transforms.geopoint.prototype = {
 };
 vegaEmbed.vega.transforms.geoshape.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1634,6 +1783,7 @@ vegaEmbed.vega.transforms.geoshape.prototype = {
 };
 vegaEmbed.vega.transforms.graticule.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1646,6 +1796,7 @@ vegaEmbed.vega.transforms.graticule.prototype = {
 };
 vegaEmbed.vega.transforms.heatmap.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1658,6 +1809,7 @@ vegaEmbed.vega.transforms.heatmap.prototype = {
 };
 vegaEmbed.vega.transforms.identifier.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1670,6 +1822,7 @@ vegaEmbed.vega.transforms.identifier.prototype = {
 };
 vegaEmbed.vega.transforms.impute.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1682,6 +1835,7 @@ vegaEmbed.vega.transforms.impute.prototype = {
 };
 vegaEmbed.vega.transforms.isocontour.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1698,8 +1852,10 @@ vegaEmbed.vega.transforms.joinaggregate.prototype = {
   "cellkey": function () {},
   "celltuple": function () {},
   "changes": function () {},
+  "clean": function () {},
   "constructor": function () {},
   "cross": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "init": function () {},
   "marshall": function () {},
@@ -1716,6 +1872,7 @@ vegaEmbed.vega.transforms.joinaggregate.prototype = {
 };
 vegaEmbed.vega.transforms.kde.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1728,6 +1885,7 @@ vegaEmbed.vega.transforms.kde.prototype = {
 };
 vegaEmbed.vega.transforms.kde2d.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1740,6 +1898,7 @@ vegaEmbed.vega.transforms.kde2d.prototype = {
 };
 vegaEmbed.vega.transforms.key.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1749,8 +1908,22 @@ vegaEmbed.vega.transforms.key.prototype = {
   "skip": function () {},
   "targets": function () {}
 };
+vegaEmbed.vega.transforms.label.prototype = {
+  "constructor": function () {},
+  "detach": function () {},
+  "evaluate": function () {},
+  "marshall": function () {},
+  "modified": function () {},
+  "parameters": function () {},
+  "run": function () {},
+  "set": function () {},
+  "skip": function () {},
+  "targets": function () {},
+  "transform": function () {}
+};
 vegaEmbed.vega.transforms.legendentries.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1763,6 +1936,7 @@ vegaEmbed.vega.transforms.legendentries.prototype = {
 };
 vegaEmbed.vega.transforms.linkpath.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1775,6 +1949,7 @@ vegaEmbed.vega.transforms.linkpath.prototype = {
 };
 vegaEmbed.vega.transforms.load.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1787,6 +1962,7 @@ vegaEmbed.vega.transforms.load.prototype = {
 };
 vegaEmbed.vega.transforms.loess.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1799,6 +1975,7 @@ vegaEmbed.vega.transforms.loess.prototype = {
 };
 vegaEmbed.vega.transforms.lookup.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1811,6 +1988,7 @@ vegaEmbed.vega.transforms.lookup.prototype = {
 };
 vegaEmbed.vega.transforms.mark.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1823,6 +2001,7 @@ vegaEmbed.vega.transforms.mark.prototype = {
 };
 vegaEmbed.vega.transforms.multiextent.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1834,6 +2013,7 @@ vegaEmbed.vega.transforms.multiextent.prototype = {
 };
 vegaEmbed.vega.transforms.multivalues.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1845,6 +2025,7 @@ vegaEmbed.vega.transforms.multivalues.prototype = {
 };
 vegaEmbed.vega.transforms.nest.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1857,6 +2038,7 @@ vegaEmbed.vega.transforms.nest.prototype = {
 };
 vegaEmbed.vega.transforms.overlap.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1869,6 +2051,7 @@ vegaEmbed.vega.transforms.overlap.prototype = {
 };
 vegaEmbed.vega.transforms.pack.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "fields": function () {},
   "layout": function () {},
@@ -1884,6 +2067,7 @@ vegaEmbed.vega.transforms.pack.prototype = {
 };
 vegaEmbed.vega.transforms.params.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1896,6 +2080,7 @@ vegaEmbed.vega.transforms.params.prototype = {
 };
 vegaEmbed.vega.transforms.partition.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "fields": function () {},
   "layout": function () {},
@@ -1911,6 +2096,7 @@ vegaEmbed.vega.transforms.partition.prototype = {
 };
 vegaEmbed.vega.transforms.pie.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1928,8 +2114,10 @@ vegaEmbed.vega.transforms.pivot.prototype = {
   "cellkey": function () {},
   "celltuple": function () {},
   "changes": function () {},
+  "clean": function () {},
   "constructor": function () {},
   "cross": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "init": function () {},
   "marshall": function () {},
@@ -1946,8 +2134,11 @@ vegaEmbed.vega.transforms.pivot.prototype = {
 };
 vegaEmbed.vega.transforms.prefacet.prototype = {
   "activate": function () {},
+  "clean": function () {},
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
+  "initTargets": function () {},
   "marshall": function () {},
   "modified": function () {},
   "parameters": function () {},
@@ -1960,6 +2151,7 @@ vegaEmbed.vega.transforms.prefacet.prototype = {
 };
 vegaEmbed.vega.transforms.project.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1972,6 +2164,7 @@ vegaEmbed.vega.transforms.project.prototype = {
 };
 vegaEmbed.vega.transforms.projection.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1984,6 +2177,7 @@ vegaEmbed.vega.transforms.projection.prototype = {
 };
 vegaEmbed.vega.transforms.proxy.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -1996,6 +2190,7 @@ vegaEmbed.vega.transforms.proxy.prototype = {
 };
 vegaEmbed.vega.transforms.quantile.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -2008,6 +2203,7 @@ vegaEmbed.vega.transforms.quantile.prototype = {
 };
 vegaEmbed.vega.transforms.regression.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -2020,6 +2216,7 @@ vegaEmbed.vega.transforms.regression.prototype = {
 };
 vegaEmbed.vega.transforms.relay.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -2032,6 +2229,7 @@ vegaEmbed.vega.transforms.relay.prototype = {
 };
 vegaEmbed.vega.transforms.render.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -2044,6 +2242,7 @@ vegaEmbed.vega.transforms.render.prototype = {
 };
 vegaEmbed.vega.transforms.resolvefilter.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -2056,6 +2255,7 @@ vegaEmbed.vega.transforms.resolvefilter.prototype = {
 };
 vegaEmbed.vega.transforms.sample.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -2068,6 +2268,7 @@ vegaEmbed.vega.transforms.sample.prototype = {
 };
 vegaEmbed.vega.transforms.scale.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -2080,6 +2281,7 @@ vegaEmbed.vega.transforms.scale.prototype = {
 };
 vegaEmbed.vega.transforms.sequence.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -2092,6 +2294,7 @@ vegaEmbed.vega.transforms.sequence.prototype = {
 };
 vegaEmbed.vega.transforms.sieve.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -2104,6 +2307,7 @@ vegaEmbed.vega.transforms.sieve.prototype = {
 };
 vegaEmbed.vega.transforms.sortitems.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -2116,6 +2320,7 @@ vegaEmbed.vega.transforms.sortitems.prototype = {
 };
 vegaEmbed.vega.transforms.stack.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -2128,6 +2333,7 @@ vegaEmbed.vega.transforms.stack.prototype = {
 };
 vegaEmbed.vega.transforms.stratify.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -2142,6 +2348,7 @@ vegaEmbed.vega.transforms.subflow.prototype = {
   "add": function () {},
   "connect": function () {},
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "init": function () {},
   "marshall": function () {},
@@ -2157,6 +2364,7 @@ vegaEmbed.vega.transforms.subflow.prototype = {
 vegaEmbed.vega.transforms.timeunit.prototype = {
   "_floor": function () {},
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -2169,6 +2377,7 @@ vegaEmbed.vega.transforms.timeunit.prototype = {
 };
 vegaEmbed.vega.transforms.tree.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "fields": function () {},
   "layout": function () {},
@@ -2184,6 +2393,7 @@ vegaEmbed.vega.transforms.tree.prototype = {
 };
 vegaEmbed.vega.transforms.treelinks.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -2196,6 +2406,7 @@ vegaEmbed.vega.transforms.treelinks.prototype = {
 };
 vegaEmbed.vega.transforms.treemap.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "fields": function () {},
   "layout": function () {},
@@ -2211,6 +2422,7 @@ vegaEmbed.vega.transforms.treemap.prototype = {
 };
 vegaEmbed.vega.transforms.tupleindex.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -2223,6 +2435,7 @@ vegaEmbed.vega.transforms.tupleindex.prototype = {
 };
 vegaEmbed.vega.transforms.values.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -2235,6 +2448,7 @@ vegaEmbed.vega.transforms.values.prototype = {
 };
 vegaEmbed.vega.transforms.viewlayout.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -2247,6 +2461,7 @@ vegaEmbed.vega.transforms.viewlayout.prototype = {
 };
 vegaEmbed.vega.transforms.voronoi.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
@@ -2259,6 +2474,7 @@ vegaEmbed.vega.transforms.voronoi.prototype = {
 };
 vegaEmbed.vega.transforms.window.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "group": function () {},
   "marshall": function () {},
@@ -2272,6 +2488,7 @@ vegaEmbed.vega.transforms.window.prototype = {
 };
 vegaEmbed.vega.transforms.wordcloud.prototype = {
   "constructor": function () {},
+  "detach": function () {},
   "evaluate": function () {},
   "marshall": function () {},
   "modified": function () {},
