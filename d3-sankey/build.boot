@@ -1,11 +1,11 @@
 (set-env!
  :resource-paths #{"resources"}
  :dependencies '[[cljsjs/boot-cljsjs "0.10.5"  :scope "test"]
-                 [cljsjs/d3 "5.7.0-0"]])
+                 [cljsjs/d3 "6.2.0-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.7.1")
+(def +lib-version+ "0.12.3")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,9 +18,9 @@
 
 (deftask package []
   (comp
-   (download :url (format "https://unpkg.com/d3-sankey@%s/build/d3-sankey.min.js"
+   (download :url (format "https://unpkg.com/d3-sankey@%s/dist/d3-sankey.min.js"
                     +lib-version+))
-   (download :url (format "https://unpkg.com/d3-sankey@%s/build/d3-sankey.js"
+   (download :url (format "https://unpkg.com/d3-sankey@%s/dist/d3-sankey.js"
                     +lib-version+))
    (sift
      :move {#"^d3-sankey\.js"
@@ -30,6 +30,6 @@
      :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.d3-sankey"
               :requires ["cljsjs.d3"])
-   (validate)
    (pom)
-   (jar)))
+   (jar)
+   (validate-checksums)))
