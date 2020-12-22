@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.9.3")
+(def +lib-version+ "2.9.4")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -17,8 +17,10 @@
        :scm {:url "https://github.com/cljsjs/packages"}})
 
 (defn cdn-ver [file]
-  (str "https://github.com/chartjs/Chart.js/releases/download/v"
-       +lib-version+ "/" file))
+  (str "https://unpkg.com/chart.js@"
+       +lib-version+
+       "/dist/"
+       file))
 
 (deftask package []
   (comp
