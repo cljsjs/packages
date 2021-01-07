@@ -124,6 +124,7 @@ var Highcharts = {
       "showLastLabel": {},
       "stackLabels": {
         "allowOverlap": {},
+        "animation": {},
         "crop": {},
         "enabled": {},
         "formatter": function () {},
@@ -172,21 +173,6080 @@ var Highcharts = {
   "Series": function () {},
   "StackItem": function () {},
   "Tick": function () {},
-  "Time": {
-    "defaultOptions": {
-      "Date": {},
-      "getTimezoneOffset": {},
-      "timezone": {},
-      "timezoneOffset": {},
-      "useUTC": {}
-    }
-  },
+  "Time": function () {},
   "Tooltip": function () {},
   "TrackerMixin": {
     "drawTrackerGraph": function () {},
     "drawTrackerPoint": function () {}
   },
   "_modules": {
+    "Core/Animation/AnimationUtilities.js": {
+      "animObject": function () {},
+      "animate": function () {},
+      "getDeferredAnimation": function () {},
+      "setAnimation": function () {},
+      "stop": function () {}
+    },
+    "Core/Animation/Fx.js": function () {},
+    "Core/Axis/Axis.js": {
+      "defaultBottomAxisOptions": {
+        "labels": {
+          "autoRotation": {},
+          "x": {}
+        },
+        "margin": {},
+        "title": {
+          "rotation": {}
+        }
+      },
+      "defaultLeftAxisOptions": {
+        "labels": {
+          "x": {}
+        },
+        "title": {
+          "rotation": {}
+        }
+      },
+      "defaultOptions": {
+        "dateTimeLabelFormats": {
+          "day": {
+            "main": {}
+          },
+          "hour": {
+            "main": {},
+            "range": {}
+          },
+          "millisecond": {
+            "main": {},
+            "range": {}
+          },
+          "minute": {
+            "main": {},
+            "range": {}
+          },
+          "month": {
+            "main": {}
+          },
+          "second": {
+            "main": {},
+            "range": {}
+          },
+          "week": {
+            "main": {}
+          },
+          "year": {
+            "main": {}
+          }
+        },
+        "endOnTick": {},
+        "gridLineColor": {},
+        "labels": {
+          "enabled": {},
+          "indentation": {},
+          "style": {
+            "color": {},
+            "cursor": {},
+            "fontSize": {}
+          },
+          "x": {}
+        },
+        "lineColor": {},
+        "lineWidth": {},
+        "maxPadding": {},
+        "minPadding": {},
+        "minorGridLineColor": {},
+        "minorGridLineWidth": {},
+        "minorTickColor": {},
+        "minorTickLength": {},
+        "minorTickPosition": {},
+        "showEmpty": {},
+        "startOfWeek": {},
+        "startOnTick": {},
+        "tickColor": {},
+        "tickLength": {},
+        "tickPixelInterval": {},
+        "tickPosition": {},
+        "tickmarkPlacement": {},
+        "title": {
+          "align": {},
+          "style": {
+            "color": {}
+          }
+        },
+        "type": {}
+      },
+      "defaultRightAxisOptions": {
+        "labels": {
+          "x": {}
+        },
+        "title": {
+          "rotation": {}
+        }
+      },
+      "defaultTopAxisOptions": {
+        "labels": {
+          "autoRotation": {},
+          "x": {}
+        },
+        "margin": {},
+        "title": {
+          "rotation": {}
+        }
+      },
+      "defaultYAxisOptions": {
+        "endOnTick": {},
+        "gridLineWidth": {},
+        "labels": {
+          "x": {}
+        },
+        "lineWidth": {},
+        "maxPadding": {},
+        "minPadding": {},
+        "showLastLabel": {},
+        "stackLabels": {
+          "allowOverlap": {},
+          "animation": {},
+          "crop": {},
+          "enabled": {},
+          "formatter": function () {},
+          "overflow": {},
+          "style": {
+            "color": {},
+            "fontSize": {},
+            "fontWeight": {},
+            "textOutline": {}
+          }
+        },
+        "startOnTick": {},
+        "tickPixelInterval": {},
+        "title": {
+          "rotation": {},
+          "text": {}
+        }
+      },
+      "keepProps": {}
+    },
+    "Core/Axis/DateTimeAxis.js": {
+      "AdditionsClass": function () {},
+      "compose": function () {}
+    },
+    "Core/Axis/LogarithmicAxis.js": {
+      "compose": function () {}
+    },
+    "Core/Axis/PlotLineOrBand.js": function () {},
+    "Core/Axis/StackingAxis.js": {
+      "compose": function () {},
+      "onDestroy": function () {},
+      "onInit": function () {}
+    },
+    "Core/Axis/Tick.js": function () {},
+    "Core/Chart/Chart.js": function () {},
+    "Core/Color/Color.js": {
+      "names": {
+        "black": {},
+        "white": {}
+      },
+      "parse": function () {}
+    },
+    "Core/Dynamics.js": {},
+    "Core/Globals.js": {
+      "Axis": {
+        "defaultBottomAxisOptions": {
+          "labels": {
+            "autoRotation": {},
+            "x": {}
+          },
+          "margin": {},
+          "title": {
+            "rotation": {}
+          }
+        },
+        "defaultLeftAxisOptions": {
+          "labels": {
+            "x": {}
+          },
+          "title": {
+            "rotation": {}
+          }
+        },
+        "defaultOptions": {
+          "dateTimeLabelFormats": {
+            "day": {
+              "main": {}
+            },
+            "hour": {
+              "main": {},
+              "range": {}
+            },
+            "millisecond": {
+              "main": {},
+              "range": {}
+            },
+            "minute": {
+              "main": {},
+              "range": {}
+            },
+            "month": {
+              "main": {}
+            },
+            "second": {
+              "main": {},
+              "range": {}
+            },
+            "week": {
+              "main": {}
+            },
+            "year": {
+              "main": {}
+            }
+          },
+          "endOnTick": {},
+          "gridLineColor": {},
+          "labels": {
+            "enabled": {},
+            "indentation": {},
+            "style": {
+              "color": {},
+              "cursor": {},
+              "fontSize": {}
+            },
+            "x": {}
+          },
+          "lineColor": {},
+          "lineWidth": {},
+          "maxPadding": {},
+          "minPadding": {},
+          "minorGridLineColor": {},
+          "minorGridLineWidth": {},
+          "minorTickColor": {},
+          "minorTickLength": {},
+          "minorTickPosition": {},
+          "showEmpty": {},
+          "startOfWeek": {},
+          "startOnTick": {},
+          "tickColor": {},
+          "tickLength": {},
+          "tickPixelInterval": {},
+          "tickPosition": {},
+          "tickmarkPlacement": {},
+          "title": {
+            "align": {},
+            "style": {
+              "color": {}
+            }
+          },
+          "type": {}
+        },
+        "defaultRightAxisOptions": {
+          "labels": {
+            "x": {}
+          },
+          "title": {
+            "rotation": {}
+          }
+        },
+        "defaultTopAxisOptions": {
+          "labels": {
+            "autoRotation": {},
+            "x": {}
+          },
+          "margin": {},
+          "title": {
+            "rotation": {}
+          }
+        },
+        "defaultYAxisOptions": {
+          "endOnTick": {},
+          "gridLineWidth": {},
+          "labels": {
+            "x": {}
+          },
+          "lineWidth": {},
+          "maxPadding": {},
+          "minPadding": {},
+          "showLastLabel": {},
+          "stackLabels": {
+            "allowOverlap": {},
+            "animation": {},
+            "crop": {},
+            "enabled": {},
+            "formatter": function () {},
+            "overflow": {},
+            "style": {
+              "color": {},
+              "fontSize": {},
+              "fontWeight": {},
+              "textOutline": {}
+            }
+          },
+          "startOnTick": {},
+          "tickPixelInterval": {},
+          "title": {
+            "rotation": {},
+            "text": {}
+          }
+        },
+        "keepProps": {}
+      },
+      "CenteredSeriesMixin": {
+        "getCenter": function () {},
+        "getStartAndEndRadians": function () {}
+      },
+      "Chart": function () {},
+      "Color": {
+        "names": {
+          "black": {},
+          "white": {}
+        },
+        "parse": function () {}
+      },
+      "Fx": function () {},
+      "Legend": function () {},
+      "LegendSymbolMixin": {
+        "drawLineMarker": function () {},
+        "drawRectangle": function () {}
+      },
+      "PlotLineOrBand": function () {},
+      "Point": function () {},
+      "Pointer": function () {},
+      "Renderer": function () {},
+      "SVGElement": function () {},
+      "SVGRenderer": function () {},
+      "SVG_NS": {},
+      "Series": function () {},
+      "StackItem": function () {},
+      "Tick": function () {},
+      "Time": function () {},
+      "Tooltip": function () {},
+      "TrackerMixin": {
+        "drawTrackerGraph": function () {},
+        "drawTrackerPoint": function () {}
+      },
+      "_modules": {},
+      "addEvent": function () {},
+      "animObject": function () {},
+      "animate": function () {},
+      "arrayMax": function () {},
+      "arrayMin": function () {},
+      "attr": function () {},
+      "chart": function () {},
+      "chartCount": {},
+      "charts": {},
+      "cleanRecursively": function () {},
+      "clearTimeout": function () {},
+      "color": function () {},
+      "correctFloat": function () {},
+      "createElement": function () {},
+      "css": function () {},
+      "dateFormat": function () {},
+      "dateFormats": {},
+      "defaultOptions": {
+        "caption": {
+          "align": {},
+          "margin": {},
+          "text": {},
+          "verticalAlign": {}
+        },
+        "chart": {
+          "backgroundColor": {},
+          "borderColor": {},
+          "borderRadius": {},
+          "colorCount": {},
+          "defaultSeriesType": {},
+          "height": {},
+          "ignoreHiddenSeries": {},
+          "plotBorderColor": {},
+          "resetZoomButton": {
+            "position": {
+              "align": {},
+              "x": {},
+              "y": {}
+            },
+            "theme": {
+              "zIndex": {}
+            }
+          },
+          "spacing": {},
+          "styledMode": {},
+          "width": {}
+        },
+        "colors": {},
+        "credits": {
+          "enabled": {},
+          "href": {},
+          "position": {
+            "align": {},
+            "verticalAlign": {},
+            "x": {},
+            "y": {}
+          },
+          "style": {
+            "color": {},
+            "cursor": {},
+            "fontSize": {}
+          },
+          "text": {}
+        },
+        "global": {},
+        "labels": {
+          "style": {
+            "color": {},
+            "position": {}
+          }
+        },
+        "lang": {
+          "decimalPoint": {},
+          "loading": {},
+          "months": {},
+          "numericSymbols": {},
+          "resetZoom": {},
+          "resetZoomTitle": {},
+          "shortMonths": {},
+          "thousandsSep": {},
+          "weekdays": {}
+        },
+        "legend": {
+          "align": {},
+          "alignColumns": {},
+          "borderColor": {},
+          "borderRadius": {},
+          "enabled": {},
+          "itemCheckboxStyle": {
+            "height": {},
+            "position": {},
+            "width": {}
+          },
+          "itemHiddenStyle": {
+            "color": {}
+          },
+          "itemHoverStyle": {
+            "color": {}
+          },
+          "itemStyle": {
+            "color": {},
+            "cursor": {},
+            "fontSize": {},
+            "fontWeight": {},
+            "textOverflow": {}
+          },
+          "labelFormatter": function () {},
+          "layout": {},
+          "navigation": {
+            "activeColor": {},
+            "inactiveColor": {}
+          },
+          "shadow": {},
+          "squareSymbol": {},
+          "symbolPadding": {},
+          "title": {
+            "style": {
+              "fontWeight": {}
+            }
+          },
+          "verticalAlign": {},
+          "x": {},
+          "y": {}
+        },
+        "loading": {
+          "labelStyle": {
+            "fontWeight": {},
+            "position": {},
+            "top": {}
+          },
+          "style": {
+            "backgroundColor": {},
+            "opacity": {},
+            "position": {},
+            "textAlign": {}
+          }
+        },
+        "plotOptions": {
+          "area": {
+            "allowPointSelect": {},
+            "animation": {
+              "duration": {}
+            },
+            "crisp": {},
+            "cropThreshold": {},
+            "dataLabels": {
+              "align": {},
+              "animation": {},
+              "defer": {},
+              "formatter": function () {},
+              "padding": {},
+              "style": {
+                "color": {},
+                "fontSize": {},
+                "fontWeight": {},
+                "textOutline": {}
+              },
+              "verticalAlign": {},
+              "x": {},
+              "y": {}
+            },
+            "events": {},
+            "findNearestPointBy": {},
+            "lineWidth": {},
+            "marker": {
+              "enabledThreshold": {},
+              "lineColor": {},
+              "lineWidth": {},
+              "radius": {},
+              "states": {
+                "hover": {
+                  "animation": {
+                    "closure_uid_659125373": {},
+                    "duration": {}
+                  },
+                  "enabled": {},
+                  "lineWidthPlus": {},
+                  "radiusPlus": {}
+                },
+                "normal": {
+                  "animation": {}
+                },
+                "select": {
+                  "fillColor": {},
+                  "lineColor": {},
+                  "lineWidth": {}
+                }
+              }
+            },
+            "opacity": {},
+            "point": {
+              "events": {}
+            },
+            "pointRange": {},
+            "showCheckbox": {},
+            "softThreshold": {},
+            "states": {
+              "hover": {
+                "animation": {
+                  "duration": {}
+                },
+                "halo": {
+                  "opacity": {},
+                  "size": {}
+                },
+                "lineWidthPlus": {},
+                "marker": {}
+              },
+              "inactive": {
+                "animation": {
+                  "duration": {}
+                },
+                "opacity": {}
+              },
+              "normal": {
+                "animation": {}
+              },
+              "select": {
+                "animation": {
+                  "duration": {}
+                }
+              }
+            },
+            "stickyTracking": {},
+            "threshold": {},
+            "turboThreshold": {}
+          },
+          "areaspline": {
+            "allowPointSelect": {},
+            "animation": {
+              "duration": {}
+            },
+            "crisp": {},
+            "cropThreshold": {},
+            "dataLabels": {
+              "align": {},
+              "animation": {},
+              "defer": {},
+              "formatter": function () {},
+              "padding": {},
+              "style": {
+                "color": {},
+                "fontSize": {},
+                "fontWeight": {},
+                "textOutline": {}
+              },
+              "verticalAlign": {},
+              "x": {},
+              "y": {}
+            },
+            "events": {},
+            "findNearestPointBy": {},
+            "lineWidth": {},
+            "marker": {
+              "enabledThreshold": {},
+              "lineColor": {},
+              "lineWidth": {},
+              "radius": {},
+              "states": {
+                "hover": {
+                  "animation": {
+                    "closure_uid_659125373": {},
+                    "duration": {}
+                  },
+                  "enabled": {},
+                  "lineWidthPlus": {},
+                  "radiusPlus": {}
+                },
+                "normal": {
+                  "animation": {}
+                },
+                "select": {
+                  "fillColor": {},
+                  "lineColor": {},
+                  "lineWidth": {}
+                }
+              }
+            },
+            "opacity": {},
+            "point": {
+              "events": {}
+            },
+            "pointRange": {},
+            "showCheckbox": {},
+            "softThreshold": {},
+            "states": {
+              "hover": {
+                "animation": {
+                  "duration": {}
+                },
+                "halo": {
+                  "opacity": {},
+                  "size": {}
+                },
+                "lineWidthPlus": {},
+                "marker": {}
+              },
+              "inactive": {
+                "animation": {
+                  "duration": {}
+                },
+                "opacity": {}
+              },
+              "normal": {
+                "animation": {}
+              },
+              "select": {
+                "animation": {
+                  "duration": {}
+                }
+              }
+            },
+            "stickyTracking": {},
+            "threshold": {},
+            "turboThreshold": {}
+          },
+          "bar": {
+            "allowPointSelect": {},
+            "animation": {
+              "duration": {}
+            },
+            "borderColor": {},
+            "borderRadius": {},
+            "centerInCategory": {},
+            "crisp": {},
+            "cropThreshold": {},
+            "dataLabels": {
+              "align": {},
+              "animation": {},
+              "defer": {},
+              "formatter": function () {},
+              "padding": {},
+              "style": {
+                "color": {},
+                "fontSize": {},
+                "fontWeight": {},
+                "textOutline": {}
+              },
+              "verticalAlign": {},
+              "x": {},
+              "y": {}
+            },
+            "events": {},
+            "findNearestPointBy": {},
+            "groupPadding": {},
+            "lineWidth": {},
+            "marker": {},
+            "minPointLength": {},
+            "opacity": {},
+            "point": {
+              "events": {}
+            },
+            "pointPadding": {},
+            "pointRange": {},
+            "showCheckbox": {},
+            "softThreshold": {},
+            "startFromThreshold": {},
+            "states": {
+              "hover": {
+                "animation": {
+                  "duration": {}
+                },
+                "brightness": {},
+                "halo": {},
+                "lineWidthPlus": {},
+                "marker": {}
+              },
+              "inactive": {
+                "animation": {
+                  "duration": {}
+                },
+                "opacity": {}
+              },
+              "normal": {
+                "animation": {}
+              },
+              "select": {
+                "animation": {
+                  "duration": {}
+                },
+                "borderColor": {},
+                "color": {}
+              }
+            },
+            "stickyTracking": {},
+            "threshold": {},
+            "tooltip": {
+              "distance": {}
+            },
+            "turboThreshold": {}
+          },
+          "column": {
+            "allowPointSelect": {},
+            "animation": {
+              "duration": {}
+            },
+            "borderColor": {},
+            "borderRadius": {},
+            "centerInCategory": {},
+            "crisp": {},
+            "cropThreshold": {},
+            "dataLabels": {
+              "align": {},
+              "animation": {},
+              "defer": {},
+              "formatter": function () {},
+              "padding": {},
+              "style": {
+                "color": {},
+                "fontSize": {},
+                "fontWeight": {},
+                "textOutline": {}
+              },
+              "verticalAlign": {},
+              "x": {},
+              "y": {}
+            },
+            "events": {},
+            "findNearestPointBy": {},
+            "groupPadding": {},
+            "lineWidth": {},
+            "marker": {},
+            "minPointLength": {},
+            "opacity": {},
+            "point": {
+              "events": {}
+            },
+            "pointPadding": {},
+            "pointRange": {},
+            "showCheckbox": {},
+            "softThreshold": {},
+            "startFromThreshold": {},
+            "states": {
+              "hover": {
+                "animation": {
+                  "duration": {}
+                },
+                "brightness": {},
+                "halo": {},
+                "lineWidthPlus": {},
+                "marker": {}
+              },
+              "inactive": {
+                "animation": {
+                  "duration": {}
+                },
+                "opacity": {}
+              },
+              "normal": {
+                "animation": {}
+              },
+              "select": {
+                "animation": {
+                  "duration": {}
+                },
+                "borderColor": {},
+                "color": {}
+              }
+            },
+            "stickyTracking": {},
+            "threshold": {},
+            "tooltip": {
+              "distance": {}
+            },
+            "turboThreshold": {}
+          },
+          "line": {
+            "allowPointSelect": {},
+            "animation": {
+              "duration": {}
+            },
+            "crisp": {},
+            "cropThreshold": {},
+            "dataLabels": {
+              "align": {},
+              "animation": {},
+              "defer": {},
+              "formatter": function () {},
+              "padding": {},
+              "style": {
+                "color": {},
+                "fontSize": {},
+                "fontWeight": {},
+                "textOutline": {}
+              },
+              "verticalAlign": {},
+              "x": {},
+              "y": {}
+            },
+            "events": {},
+            "findNearestPointBy": {},
+            "lineWidth": {},
+            "marker": {
+              "enabledThreshold": {},
+              "lineColor": {},
+              "lineWidth": {},
+              "radius": {},
+              "states": {
+                "hover": {
+                  "animation": {
+                    "closure_uid_659125373": {},
+                    "duration": {}
+                  },
+                  "enabled": {},
+                  "lineWidthPlus": {},
+                  "radiusPlus": {}
+                },
+                "normal": {
+                  "animation": {}
+                },
+                "select": {
+                  "fillColor": {},
+                  "lineColor": {},
+                  "lineWidth": {}
+                }
+              }
+            },
+            "opacity": {},
+            "point": {
+              "events": {}
+            },
+            "pointRange": {},
+            "showCheckbox": {},
+            "softThreshold": {},
+            "states": {
+              "hover": {
+                "animation": {
+                  "duration": {}
+                },
+                "halo": {
+                  "opacity": {},
+                  "size": {}
+                },
+                "lineWidthPlus": {},
+                "marker": {}
+              },
+              "inactive": {
+                "animation": {
+                  "duration": {}
+                },
+                "opacity": {}
+              },
+              "normal": {
+                "animation": {}
+              },
+              "select": {
+                "animation": {
+                  "duration": {}
+                }
+              }
+            },
+            "stickyTracking": {},
+            "turboThreshold": {}
+          },
+          "pie": {
+            "allowPointSelect": {},
+            "animation": {
+              "duration": {}
+            },
+            "borderColor": {},
+            "borderWidth": {},
+            "center": {},
+            "clip": {},
+            "colorByPoint": {},
+            "crisp": {},
+            "cropThreshold": {},
+            "dataLabels": {
+              "align": {},
+              "allowOverlap": {},
+              "animation": {},
+              "connectorPadding": {},
+              "connectorShape": {},
+              "crookDistance": {},
+              "defer": {},
+              "distance": {},
+              "enabled": {},
+              "formatter": function () {},
+              "padding": {},
+              "softConnector": {},
+              "style": {
+                "color": {},
+                "fontSize": {},
+                "fontWeight": {},
+                "textOutline": {}
+              },
+              "verticalAlign": {},
+              "x": {},
+              "y": {}
+            },
+            "events": {},
+            "fillColor": {},
+            "findNearestPointBy": {},
+            "ignoreHiddenPoint": {},
+            "inactiveOtherPoints": {},
+            "legendType": {},
+            "lineWidth": {},
+            "marker": {},
+            "opacity": {},
+            "point": {
+              "events": {}
+            },
+            "pointRange": {},
+            "showCheckbox": {},
+            "showInLegend": {},
+            "size": {},
+            "slicedOffset": {},
+            "softThreshold": {},
+            "states": {
+              "hover": {
+                "animation": {
+                  "duration": {}
+                },
+                "brightness": {},
+                "halo": {
+                  "opacity": {},
+                  "size": {}
+                },
+                "lineWidthPlus": {},
+                "marker": {}
+              },
+              "inactive": {
+                "animation": {
+                  "duration": {}
+                },
+                "opacity": {}
+              },
+              "normal": {
+                "animation": {}
+              },
+              "select": {
+                "animation": {
+                  "duration": {}
+                }
+              }
+            },
+            "stickyTracking": {},
+            "tooltip": {
+              "followPointer": {}
+            },
+            "turboThreshold": {}
+          },
+          "scatter": {
+            "allowPointSelect": {},
+            "animation": {
+              "duration": {}
+            },
+            "crisp": {},
+            "cropThreshold": {},
+            "dataLabels": {
+              "align": {},
+              "animation": {},
+              "defer": {},
+              "formatter": function () {},
+              "padding": {},
+              "style": {
+                "color": {},
+                "fontSize": {},
+                "fontWeight": {},
+                "textOutline": {}
+              },
+              "verticalAlign": {},
+              "x": {},
+              "y": {}
+            },
+            "events": {},
+            "findNearestPointBy": {},
+            "jitter": {
+              "x": {},
+              "y": {}
+            },
+            "lineWidth": {},
+            "marker": {
+              "enabled": {},
+              "enabledThreshold": {},
+              "lineColor": {},
+              "lineWidth": {},
+              "radius": {},
+              "states": {
+                "hover": {
+                  "animation": {
+                    "closure_uid_659125373": {},
+                    "duration": {}
+                  },
+                  "enabled": {},
+                  "lineWidthPlus": {},
+                  "radiusPlus": {}
+                },
+                "normal": {
+                  "animation": {}
+                },
+                "select": {
+                  "fillColor": {},
+                  "lineColor": {},
+                  "lineWidth": {}
+                }
+              }
+            },
+            "opacity": {},
+            "point": {
+              "events": {}
+            },
+            "pointRange": {},
+            "showCheckbox": {},
+            "softThreshold": {},
+            "states": {
+              "hover": {
+                "animation": {
+                  "duration": {}
+                },
+                "halo": {
+                  "opacity": {},
+                  "size": {}
+                },
+                "lineWidthPlus": {},
+                "marker": {}
+              },
+              "inactive": {
+                "animation": {
+                  "duration": {}
+                },
+                "opacity": {}
+              },
+              "normal": {
+                "animation": {}
+              },
+              "select": {
+                "animation": {
+                  "duration": {}
+                }
+              }
+            },
+            "stickyTracking": {},
+            "tooltip": {
+              "headerFormat": {},
+              "pointFormat": {}
+            },
+            "turboThreshold": {}
+          },
+          "spline": {
+            "allowPointSelect": {},
+            "animation": {
+              "duration": {}
+            },
+            "crisp": {},
+            "cropThreshold": {},
+            "dataLabels": {
+              "align": {},
+              "animation": {},
+              "defer": {},
+              "formatter": function () {},
+              "padding": {},
+              "style": {
+                "color": {},
+                "fontSize": {},
+                "fontWeight": {},
+                "textOutline": {}
+              },
+              "verticalAlign": {},
+              "x": {},
+              "y": {}
+            },
+            "events": {},
+            "findNearestPointBy": {},
+            "lineWidth": {},
+            "marker": {
+              "enabledThreshold": {},
+              "lineColor": {},
+              "lineWidth": {},
+              "radius": {},
+              "states": {
+                "hover": {
+                  "animation": {
+                    "closure_uid_659125373": {},
+                    "duration": {}
+                  },
+                  "enabled": {},
+                  "lineWidthPlus": {},
+                  "radiusPlus": {}
+                },
+                "normal": {
+                  "animation": {}
+                },
+                "select": {
+                  "fillColor": {},
+                  "lineColor": {},
+                  "lineWidth": {}
+                }
+              }
+            },
+            "opacity": {},
+            "point": {
+              "events": {}
+            },
+            "pointRange": {},
+            "showCheckbox": {},
+            "softThreshold": {},
+            "states": {
+              "hover": {
+                "animation": {
+                  "duration": {}
+                },
+                "halo": {
+                  "opacity": {},
+                  "size": {}
+                },
+                "lineWidthPlus": {},
+                "marker": {}
+              },
+              "inactive": {
+                "animation": {
+                  "duration": {}
+                },
+                "opacity": {}
+              },
+              "normal": {
+                "animation": {}
+              },
+              "select": {
+                "animation": {
+                  "duration": {}
+                }
+              }
+            },
+            "stickyTracking": {},
+            "turboThreshold": {}
+          }
+        },
+        "subtitle": {
+          "align": {},
+          "text": {},
+          "widthAdjust": {}
+        },
+        "symbols": {},
+        "time": {
+          "Date": {},
+          "getTimezoneOffset": {},
+          "timezone": {},
+          "timezoneOffset": {},
+          "useUTC": {}
+        },
+        "title": {
+          "align": {},
+          "margin": {},
+          "text": {},
+          "widthAdjust": {}
+        },
+        "tooltip": {
+          "animation": {},
+          "backgroundColor": {},
+          "borderRadius": {},
+          "borderWidth": {},
+          "dateTimeLabelFormats": {
+            "day": {},
+            "hour": {},
+            "millisecond": {},
+            "minute": {},
+            "month": {},
+            "second": {},
+            "week": {},
+            "year": {}
+          },
+          "enabled": {},
+          "footerFormat": {},
+          "headerFormat": {},
+          "padding": {},
+          "pointFormat": {},
+          "shadow": {},
+          "snap": {},
+          "style": {
+            "color": {},
+            "cursor": {},
+            "fontSize": {},
+            "whiteSpace": {}
+          }
+        }
+      },
+      "defined": function () {},
+      "deg2rad": {},
+      "destroyObjectProperties": function () {},
+      "discardElement": function () {},
+      "distribute": function () {},
+      "doc": {},
+      "each": function () {},
+      "erase": function () {},
+      "error": {
+        "messages": {}
+      },
+      "extend": function () {},
+      "extendClass": function () {},
+      "find": function () {},
+      "fireEvent": function () {},
+      "format": function () {},
+      "getDeferredAnimation": function () {},
+      "getMagnitude": function () {},
+      "getOptions": function () {},
+      "getStyle": function () {},
+      "grep": function () {},
+      "hasBidiBug": {},
+      "hasTouch": {},
+      "inArray": function () {},
+      "isArray": function () {},
+      "isChrome": {},
+      "isClass": function () {},
+      "isDOMElement": function () {},
+      "isFirefox": {},
+      "isFunction": function () {},
+      "isMS": {},
+      "isNumber": function () {},
+      "isObject": function () {},
+      "isSafari": {},
+      "isString": function () {},
+      "isTouchDevice": {},
+      "isWebKit": {},
+      "keys": function () {},
+      "map": function () {},
+      "marginNames": {},
+      "merge": function () {},
+      "noop": function () {},
+      "normalizeTickInterval": function () {},
+      "numberFormat": function () {},
+      "objectEach": function () {},
+      "offset": function () {},
+      "pInt": function () {},
+      "pad": function () {},
+      "pick": function () {},
+      "product": {},
+      "reduce": function () {},
+      "relativeLength": function () {},
+      "removeEvent": function () {},
+      "seriesType": function () {},
+      "seriesTypes": {
+        "area": function () {},
+        "areaspline": function () {},
+        "bar": function () {},
+        "column": function () {},
+        "line": function () {},
+        "pie": function () {},
+        "scatter": function () {},
+        "spline": function () {}
+      },
+      "setAnimation": function () {},
+      "setOptions": function () {},
+      "some": function () {},
+      "splat": function () {},
+      "stableSort": function () {},
+      "stop": function () {},
+      "svg": {},
+      "symbolSizes": {},
+      "syncTimeout": function () {},
+      "time": {
+        "Date": function () {},
+        "dateFormat": function () {},
+        "get": function () {},
+        "getTimeTicks": function () {},
+        "getTimezoneOffset": function () {},
+        "makeTime": function () {},
+        "options": {
+          "Date": {},
+          "getTimezoneOffset": {},
+          "timezone": {},
+          "timezoneOffset": {},
+          "useUTC": {}
+        },
+        "resolveDTLFormat": function () {},
+        "set": function () {},
+        "timezoneOffset": {},
+        "timezoneOffsetFunction": function () {},
+        "update": function () {},
+        "useUTC": {},
+        "variableTimezone": {}
+      },
+      "timeUnits": {
+        "day": {},
+        "hour": {},
+        "millisecond": {},
+        "minute": {},
+        "month": {},
+        "second": {},
+        "week": {},
+        "year": {}
+      },
+      "timers": {},
+      "uniqueKey": function () {},
+      "useSerialIds": function () {},
+      "version": {},
+      "win": {
+        "Highcharts": {},
+        "PERSISTENT": {},
+        "TEMPORARY": {},
+        "addEventListener": function () {},
+        "alert": function () {},
+        "atob": function () {},
+        "blur": function () {},
+        "btoa": function () {},
+        "cancelAnimationFrame": function () {},
+        "cancelIdleCallback": function () {},
+        "captureEvents": function () {},
+        "chrome": {
+          "app": {
+            "InstallState": {
+              "DISABLED": {},
+              "INSTALLED": {},
+              "NOT_INSTALLED": {}
+            },
+            "RunningState": {
+              "CANNOT_RUN": {},
+              "READY_TO_RUN": {},
+              "RUNNING": {}
+            },
+            "getDetails": function () {},
+            "getIsInstalled": function () {},
+            "installState": function () {},
+            "isInstalled": {},
+            "runningState": function () {}
+          },
+          "csi": function () {},
+          "loadTimes": function () {}
+        },
+        "clearInterval": function () {},
+        "clearTimeout": function () {},
+        "clientInformation": {
+          "appCodeName": {},
+          "appName": {},
+          "appVersion": {},
+          "connection": {
+            "addEventListener": function () {},
+            "dispatchEvent": function () {},
+            "downlink": {},
+            "effectiveType": {},
+            "onchange": {},
+            "removeEventListener": function () {},
+            "rtt": {},
+            "saveData": {}
+          },
+          "cookieEnabled": {},
+          "doNotTrack": {},
+          "geolocation": {
+            "clearWatch": function () {},
+            "getCurrentPosition": function () {},
+            "watchPosition": function () {}
+          },
+          "getBattery": function () {},
+          "getGamepads": function () {},
+          "hardwareConcurrency": {},
+          "javaEnabled": function () {},
+          "language": {},
+          "languages": {},
+          "maxTouchPoints": {},
+          "mediaCapabilities": {
+            "decodingInfo": function () {}
+          },
+          "mediaSession": {
+            "metadata": {},
+            "playbackState": {},
+            "setActionHandler": function () {},
+            "setPositionState": function () {}
+          },
+          "mimeTypes": {
+            "0": {
+              "description": {},
+              "enabledPlugin": {
+                "0": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "description": {},
+                "filename": {},
+                "item": function () {},
+                "length": {},
+                "name": {},
+                "namedItem": function () {}
+              },
+              "suffixes": {},
+              "type": {}
+            },
+            "1": {
+              "description": {},
+              "enabledPlugin": {
+                "0": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "description": {},
+                "filename": {},
+                "item": function () {},
+                "length": {},
+                "name": {},
+                "namedItem": function () {}
+              },
+              "suffixes": {},
+              "type": {}
+            },
+            "2": {
+              "description": {},
+              "enabledPlugin": {
+                "0": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "1": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "description": {},
+                "filename": {},
+                "item": function () {},
+                "length": {},
+                "name": {},
+                "namedItem": function () {}
+              },
+              "suffixes": {},
+              "type": {}
+            },
+            "3": {
+              "description": {},
+              "enabledPlugin": {
+                "0": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "1": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "description": {},
+                "filename": {},
+                "item": function () {},
+                "length": {},
+                "name": {},
+                "namedItem": function () {}
+              },
+              "suffixes": {},
+              "type": {}
+            },
+            "item": function () {},
+            "length": {},
+            "namedItem": function () {}
+          },
+          "onLine": {},
+          "permissions": {
+            "query": function () {}
+          },
+          "platform": {},
+          "plugins": {
+            "0": {
+              "0": {
+                "description": {},
+                "enabledPlugin": {},
+                "suffixes": {},
+                "type": {}
+              },
+              "description": {},
+              "filename": {},
+              "item": function () {},
+              "length": {},
+              "name": {},
+              "namedItem": function () {}
+            },
+            "1": {
+              "0": {
+                "description": {},
+                "enabledPlugin": {},
+                "suffixes": {},
+                "type": {}
+              },
+              "description": {},
+              "filename": {},
+              "item": function () {},
+              "length": {},
+              "name": {},
+              "namedItem": function () {}
+            },
+            "2": {
+              "0": {
+                "description": {},
+                "enabledPlugin": {},
+                "suffixes": {},
+                "type": {}
+              },
+              "1": {
+                "description": {},
+                "enabledPlugin": {},
+                "suffixes": {},
+                "type": {}
+              },
+              "description": {},
+              "filename": {},
+              "item": function () {},
+              "length": {},
+              "name": {},
+              "namedItem": function () {}
+            },
+            "item": function () {},
+            "length": {},
+            "namedItem": function () {},
+            "refresh": function () {}
+          },
+          "product": {},
+          "productSub": {},
+          "scheduling": {
+            "isInputPending": function () {}
+          },
+          "sendBeacon": function () {},
+          "userActivation": {
+            "hasBeenActive": {},
+            "isActive": {}
+          },
+          "userAgent": {},
+          "vendor": {},
+          "vendorSub": {},
+          "vibrate": function () {},
+          "webkitPersistentStorage": {
+            "queryUsageAndQuota": function () {},
+            "requestQuota": function () {}
+          },
+          "webkitTemporaryStorage": {
+            "queryUsageAndQuota": function () {},
+            "requestQuota": function () {}
+          }
+        },
+        "close": function () {},
+        "closed": {},
+        "confirm": function () {},
+        "createImageBitmap": function () {},
+        "crossOriginIsolated": {},
+        "crypto": {
+          "getRandomValues": function () {}
+        },
+        "customElements": {
+          "define": function () {},
+          "get": function () {},
+          "upgrade": function () {},
+          "whenDefined": function () {}
+        },
+        "defaultStatus": {},
+        "defaultstatus": {},
+        "devicePixelRatio": {},
+        "dispatchEvent": function () {},
+        "document": {},
+        "external": {
+          "AddSearchProvider": function () {},
+          "IsSearchProviderInstalled": function () {}
+        },
+        "fetch": function () {},
+        "find": function () {},
+        "focus": function () {},
+        "frameElement": {},
+        "frames": {},
+        "getComputedStyle": function () {},
+        "getSelection": function () {},
+        "history": {
+          "back": function () {},
+          "forward": function () {},
+          "go": function () {},
+          "length": {},
+          "pushState": function () {},
+          "replaceState": function () {},
+          "scrollRestoration": {},
+          "state": {}
+        },
+        "indexedDB": {
+          "cmp": function () {},
+          "databases": function () {},
+          "deleteDatabase": function () {},
+          "open": function () {}
+        },
+        "innerHeight": {},
+        "innerWidth": {},
+        "isSecureContext": {},
+        "length": {},
+        "localStorage": {
+          "clear": function () {},
+          "getItem": function () {},
+          "key": function () {},
+          "length": {},
+          "removeItem": function () {},
+          "setItem": function () {}
+        },
+        "location": {
+          "ancestorOrigins": {
+            "0": {},
+            "contains": function () {},
+            "item": function () {},
+            "length": {}
+          },
+          "assign": function () {},
+          "hash": {},
+          "host": {},
+          "hostname": {},
+          "href": {},
+          "origin": {},
+          "pathname": {},
+          "port": {},
+          "protocol": {},
+          "reload": function () {},
+          "replace": function () {},
+          "search": {},
+          "toString": function () {}
+        },
+        "locationbar": {
+          "visible": {}
+        },
+        "matchMedia": function () {},
+        "menubar": {
+          "visible": {}
+        },
+        "moveBy": function () {},
+        "moveTo": function () {},
+        "name": {},
+        "navigator": {
+          "appCodeName": {},
+          "appName": {},
+          "appVersion": {},
+          "connection": {
+            "addEventListener": function () {},
+            "dispatchEvent": function () {},
+            "downlink": {},
+            "effectiveType": {},
+            "onchange": {},
+            "removeEventListener": function () {},
+            "rtt": {},
+            "saveData": {}
+          },
+          "cookieEnabled": {},
+          "doNotTrack": {},
+          "geolocation": {
+            "clearWatch": function () {},
+            "getCurrentPosition": function () {},
+            "watchPosition": function () {}
+          },
+          "getBattery": function () {},
+          "getGamepads": function () {},
+          "hardwareConcurrency": {},
+          "javaEnabled": function () {},
+          "language": {},
+          "languages": {},
+          "maxTouchPoints": {},
+          "mediaCapabilities": {
+            "decodingInfo": function () {}
+          },
+          "mediaSession": {
+            "metadata": {},
+            "playbackState": {},
+            "setActionHandler": function () {},
+            "setPositionState": function () {}
+          },
+          "mimeTypes": {
+            "0": {
+              "description": {},
+              "enabledPlugin": {
+                "0": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "description": {},
+                "filename": {},
+                "item": function () {},
+                "length": {},
+                "name": {},
+                "namedItem": function () {}
+              },
+              "suffixes": {},
+              "type": {}
+            },
+            "1": {
+              "description": {},
+              "enabledPlugin": {
+                "0": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "description": {},
+                "filename": {},
+                "item": function () {},
+                "length": {},
+                "name": {},
+                "namedItem": function () {}
+              },
+              "suffixes": {},
+              "type": {}
+            },
+            "2": {
+              "description": {},
+              "enabledPlugin": {
+                "0": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "1": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "description": {},
+                "filename": {},
+                "item": function () {},
+                "length": {},
+                "name": {},
+                "namedItem": function () {}
+              },
+              "suffixes": {},
+              "type": {}
+            },
+            "3": {
+              "description": {},
+              "enabledPlugin": {
+                "0": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "1": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "description": {},
+                "filename": {},
+                "item": function () {},
+                "length": {},
+                "name": {},
+                "namedItem": function () {}
+              },
+              "suffixes": {},
+              "type": {}
+            },
+            "item": function () {},
+            "length": {},
+            "namedItem": function () {}
+          },
+          "onLine": {},
+          "permissions": {
+            "query": function () {}
+          },
+          "platform": {},
+          "plugins": {
+            "0": {
+              "0": {
+                "description": {},
+                "enabledPlugin": {},
+                "suffixes": {},
+                "type": {}
+              },
+              "description": {},
+              "filename": {},
+              "item": function () {},
+              "length": {},
+              "name": {},
+              "namedItem": function () {}
+            },
+            "1": {
+              "0": {
+                "description": {},
+                "enabledPlugin": {},
+                "suffixes": {},
+                "type": {}
+              },
+              "description": {},
+              "filename": {},
+              "item": function () {},
+              "length": {},
+              "name": {},
+              "namedItem": function () {}
+            },
+            "2": {
+              "0": {
+                "description": {},
+                "enabledPlugin": {},
+                "suffixes": {},
+                "type": {}
+              },
+              "1": {
+                "description": {},
+                "enabledPlugin": {},
+                "suffixes": {},
+                "type": {}
+              },
+              "description": {},
+              "filename": {},
+              "item": function () {},
+              "length": {},
+              "name": {},
+              "namedItem": function () {}
+            },
+            "item": function () {},
+            "length": {},
+            "namedItem": function () {},
+            "refresh": function () {}
+          },
+          "product": {},
+          "productSub": {},
+          "scheduling": {
+            "isInputPending": function () {}
+          },
+          "sendBeacon": function () {},
+          "userActivation": {
+            "hasBeenActive": {},
+            "isActive": {}
+          },
+          "userAgent": {},
+          "vendor": {},
+          "vendorSub": {},
+          "vibrate": function () {},
+          "webkitPersistentStorage": {
+            "queryUsageAndQuota": function () {},
+            "requestQuota": function () {}
+          },
+          "webkitTemporaryStorage": {
+            "queryUsageAndQuota": function () {},
+            "requestQuota": function () {}
+          }
+        },
+        "onabort": {},
+        "onafterprint": {},
+        "onanimationend": {},
+        "onanimationiteration": {},
+        "onanimationstart": {},
+        "onappinstalled": {},
+        "onauxclick": {},
+        "onbeforeinstallprompt": {},
+        "onbeforeprint": {},
+        "onbeforeunload": {},
+        "onblur": {},
+        "oncancel": {},
+        "oncanplay": {},
+        "oncanplaythrough": {},
+        "onchange": {},
+        "onclick": {},
+        "onclose": {},
+        "oncontextmenu": {},
+        "oncuechange": {},
+        "ondblclick": {},
+        "ondrag": {},
+        "ondragend": {},
+        "ondragenter": {},
+        "ondragleave": {},
+        "ondragover": {},
+        "ondragstart": {},
+        "ondrop": {},
+        "ondurationchange": {},
+        "onemptied": {},
+        "onended": {},
+        "onerror": {},
+        "onfocus": {},
+        "onformdata": {},
+        "ongotpointercapture": {},
+        "onhashchange": {},
+        "oninput": {},
+        "oninvalid": {},
+        "onkeydown": {},
+        "onkeypress": {},
+        "onkeyup": {},
+        "onlanguagechange": {},
+        "onload": {},
+        "onloadeddata": {},
+        "onloadedmetadata": {},
+        "onloadstart": {},
+        "onlostpointercapture": {},
+        "onmessage": {},
+        "onmessageerror": {},
+        "onmousedown": {},
+        "onmouseenter": {},
+        "onmouseleave": {},
+        "onmousemove": {},
+        "onmouseout": {},
+        "onmouseover": {},
+        "onmouseup": {},
+        "onmousewheel": {},
+        "onoffline": {},
+        "ononline": {},
+        "onpagehide": {},
+        "onpageshow": {},
+        "onpause": {},
+        "onplay": {},
+        "onplaying": {},
+        "onpointercancel": {},
+        "onpointerdown": {},
+        "onpointerenter": {},
+        "onpointerleave": {},
+        "onpointermove": {},
+        "onpointerout": {},
+        "onpointerover": {},
+        "onpointerrawupdate": {},
+        "onpointerup": {},
+        "onpopstate": {},
+        "onprogress": {},
+        "onratechange": {},
+        "onrejectionhandled": {},
+        "onreset": {},
+        "onresize": {},
+        "onscroll": {},
+        "onsearch": {},
+        "onseeked": {},
+        "onseeking": {},
+        "onselect": {},
+        "onselectionchange": {},
+        "onselectstart": {},
+        "onstalled": {},
+        "onstorage": {},
+        "onsubmit": {},
+        "onsuspend": {},
+        "ontimeupdate": {},
+        "ontoggle": {},
+        "ontransitioncancel": {},
+        "ontransitionend": {},
+        "ontransitionrun": {},
+        "ontransitionstart": {},
+        "onunhandledrejection": {},
+        "onunload": {},
+        "onvolumechange": {},
+        "onwaiting": {},
+        "onwebkitanimationend": {},
+        "onwebkitanimationiteration": {},
+        "onwebkitanimationstart": {},
+        "onwebkittransitionend": {},
+        "onwheel": {},
+        "open": function () {},
+        "openDatabase": function () {},
+        "opener": {},
+        "origin": {},
+        "outerHeight": {},
+        "outerWidth": {},
+        "pageXOffset": {},
+        "pageYOffset": {},
+        "parent": {
+          "0": {},
+          "PERSISTENT": {},
+          "React": {
+            "Children": {
+              "count": function () {},
+              "forEach": function () {},
+              "map": function () {},
+              "only": function () {},
+              "toArray": function () {}
+            },
+            "Component": function () {},
+            "DOM": {
+              "a": {
+                "type": {}
+              },
+              "abbr": {
+                "type": {}
+              },
+              "address": {
+                "type": {}
+              },
+              "area": {
+                "type": {}
+              },
+              "article": {
+                "type": {}
+              },
+              "aside": {
+                "type": {}
+              },
+              "audio": {
+                "type": {}
+              },
+              "b": {
+                "type": {}
+              },
+              "base": {
+                "type": {}
+              },
+              "bdi": {
+                "type": {}
+              },
+              "bdo": {
+                "type": {}
+              },
+              "big": {
+                "type": {}
+              },
+              "blockquote": {
+                "type": {}
+              },
+              "body": {
+                "type": {}
+              },
+              "br": {
+                "type": {}
+              },
+              "button": {
+                "type": {}
+              },
+              "canvas": {
+                "type": {}
+              },
+              "caption": {
+                "type": {}
+              },
+              "circle": {
+                "type": {}
+              },
+              "cite": {
+                "type": {}
+              },
+              "clipPath": {
+                "type": {}
+              },
+              "code": {
+                "type": {}
+              },
+              "col": {
+                "type": {}
+              },
+              "colgroup": {
+                "type": {}
+              },
+              "data": {
+                "type": {}
+              },
+              "datalist": {
+                "type": {}
+              },
+              "dd": {
+                "type": {}
+              },
+              "defs": {
+                "type": {}
+              },
+              "del": {
+                "type": {}
+              },
+              "details": {
+                "type": {}
+              },
+              "dfn": {
+                "type": {}
+              },
+              "dialog": {
+                "type": {}
+              },
+              "div": {
+                "type": {}
+              },
+              "dl": {
+                "type": {}
+              },
+              "dt": {
+                "type": {}
+              },
+              "ellipse": {
+                "type": {}
+              },
+              "em": {
+                "type": {}
+              },
+              "embed": {
+                "type": {}
+              },
+              "fieldset": {
+                "type": {}
+              },
+              "figcaption": {
+                "type": {}
+              },
+              "figure": {
+                "type": {}
+              },
+              "footer": {
+                "type": {}
+              },
+              "form": {
+                "type": {}
+              },
+              "g": {
+                "type": {}
+              },
+              "h1": {
+                "type": {}
+              },
+              "h2": {
+                "type": {}
+              },
+              "h3": {
+                "type": {}
+              },
+              "h4": {
+                "type": {}
+              },
+              "h5": {
+                "type": {}
+              },
+              "h6": {
+                "type": {}
+              },
+              "head": {
+                "type": {}
+              },
+              "header": {
+                "type": {}
+              },
+              "hgroup": {
+                "type": {}
+              },
+              "hr": {
+                "type": {}
+              },
+              "html": {
+                "type": {}
+              },
+              "i": {
+                "type": {}
+              },
+              "iframe": {
+                "type": {}
+              },
+              "image": {
+                "type": {}
+              },
+              "img": {
+                "type": {}
+              },
+              "input": {
+                "type": {}
+              },
+              "ins": {
+                "type": {}
+              },
+              "kbd": {
+                "type": {}
+              },
+              "keygen": {
+                "type": {}
+              },
+              "label": {
+                "type": {}
+              },
+              "legend": {
+                "type": {}
+              },
+              "li": {
+                "type": {}
+              },
+              "line": {
+                "type": {}
+              },
+              "linearGradient": {
+                "type": {}
+              },
+              "link": {
+                "type": {}
+              },
+              "main": {
+                "type": {}
+              },
+              "map": {
+                "type": {}
+              },
+              "mark": {
+                "type": {}
+              },
+              "mask": {
+                "type": {}
+              },
+              "menu": {
+                "type": {}
+              },
+              "menuitem": {
+                "type": {}
+              },
+              "meta": {
+                "type": {}
+              },
+              "meter": {
+                "type": {}
+              },
+              "nav": {
+                "type": {}
+              },
+              "noscript": {
+                "type": {}
+              },
+              "object": {
+                "type": {}
+              },
+              "ol": {
+                "type": {}
+              },
+              "optgroup": {
+                "type": {}
+              },
+              "option": {
+                "type": {}
+              },
+              "output": {
+                "type": {}
+              },
+              "p": {
+                "type": {}
+              },
+              "param": {
+                "type": {}
+              },
+              "path": {
+                "type": {}
+              },
+              "pattern": {
+                "type": {}
+              },
+              "picture": {
+                "type": {}
+              },
+              "polygon": {
+                "type": {}
+              },
+              "polyline": {
+                "type": {}
+              },
+              "pre": {
+                "type": {}
+              },
+              "progress": {
+                "type": {}
+              },
+              "q": {
+                "type": {}
+              },
+              "radialGradient": {
+                "type": {}
+              },
+              "rect": {
+                "type": {}
+              },
+              "rp": {
+                "type": {}
+              },
+              "rt": {
+                "type": {}
+              },
+              "ruby": {
+                "type": {}
+              },
+              "s": {
+                "type": {}
+              },
+              "samp": {
+                "type": {}
+              },
+              "script": {
+                "type": {}
+              },
+              "section": {
+                "type": {}
+              },
+              "select": {
+                "type": {}
+              },
+              "small": {
+                "type": {}
+              },
+              "source": {
+                "type": {}
+              },
+              "span": {
+                "type": {}
+              },
+              "stop": {
+                "type": {}
+              },
+              "strong": {
+                "type": {}
+              },
+              "style": {
+                "type": {}
+              },
+              "sub": {
+                "type": {}
+              },
+              "summary": {
+                "type": {}
+              },
+              "sup": {
+                "type": {}
+              },
+              "svg": {
+                "type": {}
+              },
+              "table": {
+                "type": {}
+              },
+              "tbody": {
+                "type": {}
+              },
+              "td": {
+                "type": {}
+              },
+              "text": {
+                "type": {}
+              },
+              "textarea": {
+                "type": {}
+              },
+              "tfoot": {
+                "type": {}
+              },
+              "th": {
+                "type": {}
+              },
+              "thead": {
+                "type": {}
+              },
+              "time": {
+                "type": {}
+              },
+              "title": {
+                "type": {}
+              },
+              "tr": {
+                "type": {}
+              },
+              "track": {
+                "type": {}
+              },
+              "tspan": {
+                "type": {}
+              },
+              "u": {
+                "type": {}
+              },
+              "ul": {
+                "type": {}
+              },
+              "var": {
+                "type": {}
+              },
+              "video": {
+                "type": {}
+              },
+              "wbr": {
+                "type": {}
+              }
+            },
+            "PropTypes": {
+              "PropTypes": {},
+              "any": {
+                "isRequired": function () {}
+              },
+              "array": {
+                "isRequired": function () {}
+              },
+              "arrayOf": function () {},
+              "bool": {
+                "isRequired": function () {}
+              },
+              "checkPropTypes": function () {},
+              "element": {
+                "isRequired": function () {}
+              },
+              "func": {
+                "isRequired": function () {}
+              },
+              "instanceOf": function () {},
+              "node": {
+                "isRequired": function () {}
+              },
+              "number": {
+                "isRequired": function () {}
+              },
+              "object": {
+                "isRequired": function () {}
+              },
+              "objectOf": function () {},
+              "oneOf": function () {},
+              "oneOfType": function () {},
+              "shape": function () {},
+              "string": {
+                "isRequired": function () {}
+              },
+              "symbol": {
+                "isRequired": function () {}
+              }
+            },
+            "PureComponent": function () {},
+            "__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED": {
+              "ReactCurrentOwner": {
+                "current": {}
+              }
+            },
+            "__spread": function () {},
+            "cloneElement": function () {},
+            "createClass": function () {},
+            "createElement": function () {},
+            "createFactory": function () {},
+            "createMixin": function () {},
+            "isValidElement": function () {},
+            "version": {}
+          },
+          "ReactDOM": {
+            "findDOMNode": function () {},
+            "render": function () {},
+            "unmountComponentAtNode": function () {},
+            "unstable_batchedUpdates": function () {},
+            "unstable_renderSubtreeIntoContainer": function () {},
+            "version": {}
+          },
+          "TEMPORARY": {},
+          "addEventListener": function () {},
+          "alert": function () {},
+          "atob": function () {},
+          "blur": function () {},
+          "btoa": function () {},
+          "cancelAnimationFrame": function () {},
+          "cancelIdleCallback": function () {},
+          "captureEvents": function () {},
+          "chrome": {
+            "app": {
+              "InstallState": {
+                "DISABLED": {},
+                "INSTALLED": {},
+                "NOT_INSTALLED": {}
+              },
+              "RunningState": {
+                "CANNOT_RUN": {},
+                "READY_TO_RUN": {},
+                "RUNNING": {}
+              },
+              "getDetails": function () {},
+              "getIsInstalled": function () {},
+              "installState": function () {},
+              "isInstalled": {},
+              "runningState": function () {}
+            },
+            "csi": function () {},
+            "loadTimes": function () {}
+          },
+          "clearInterval": function () {},
+          "clearTimeout": function () {},
+          "clientInformation": {
+            "appCodeName": {},
+            "appName": {},
+            "appVersion": {},
+            "connection": {
+              "addEventListener": function () {},
+              "dispatchEvent": function () {},
+              "downlink": {},
+              "effectiveType": {},
+              "onchange": {},
+              "removeEventListener": function () {},
+              "rtt": {},
+              "saveData": {}
+            },
+            "cookieEnabled": {},
+            "doNotTrack": {},
+            "geolocation": {
+              "clearWatch": function () {},
+              "getCurrentPosition": function () {},
+              "watchPosition": function () {}
+            },
+            "getBattery": function () {},
+            "getGamepads": function () {},
+            "hardwareConcurrency": {},
+            "javaEnabled": function () {},
+            "language": {},
+            "languages": {},
+            "maxTouchPoints": {},
+            "mediaCapabilities": {
+              "decodingInfo": function () {}
+            },
+            "mediaSession": {
+              "metadata": {},
+              "playbackState": {},
+              "setActionHandler": function () {},
+              "setPositionState": function () {}
+            },
+            "mimeTypes": {
+              "0": {
+                "description": {},
+                "enabledPlugin": {
+                  "0": {
+                    "closure_uid_659125373": {},
+                    "description": {},
+                    "enabledPlugin": {},
+                    "suffixes": {},
+                    "type": {}
+                  },
+                  "description": {},
+                  "filename": {},
+                  "item": {
+                    "closure_uid_659125373": {}
+                  },
+                  "length": {},
+                  "name": {},
+                  "namedItem": {
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "suffixes": {},
+                "type": {}
+              },
+              "1": {
+                "description": {},
+                "enabledPlugin": {
+                  "0": {
+                    "closure_uid_659125373": {},
+                    "description": {},
+                    "enabledPlugin": {},
+                    "suffixes": {},
+                    "type": {}
+                  },
+                  "description": {},
+                  "filename": {},
+                  "item": {
+                    "closure_uid_659125373": {}
+                  },
+                  "length": {},
+                  "name": {},
+                  "namedItem": {
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "suffixes": {},
+                "type": {}
+              },
+              "2": {
+                "description": {},
+                "enabledPlugin": {
+                  "0": {
+                    "closure_uid_659125373": {},
+                    "description": {},
+                    "enabledPlugin": {},
+                    "suffixes": {},
+                    "type": {}
+                  },
+                  "1": {
+                    "closure_uid_659125373": {},
+                    "description": {},
+                    "enabledPlugin": {},
+                    "suffixes": {},
+                    "type": {}
+                  },
+                  "description": {},
+                  "filename": {},
+                  "item": {
+                    "closure_uid_659125373": {}
+                  },
+                  "length": {},
+                  "name": {},
+                  "namedItem": {
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "suffixes": {},
+                "type": {}
+              },
+              "3": {
+                "description": {},
+                "enabledPlugin": {
+                  "0": {
+                    "closure_uid_659125373": {},
+                    "description": {},
+                    "enabledPlugin": {},
+                    "suffixes": {},
+                    "type": {}
+                  },
+                  "1": {
+                    "closure_uid_659125373": {},
+                    "description": {},
+                    "enabledPlugin": {},
+                    "suffixes": {},
+                    "type": {}
+                  },
+                  "closure_uid_659125373": {},
+                  "description": {},
+                  "filename": {},
+                  "item": {
+                    "closure_uid_659125373": {}
+                  },
+                  "length": {},
+                  "name": {},
+                  "namedItem": {
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "suffixes": {},
+                "type": {}
+              },
+              "item": function () {},
+              "length": {},
+              "namedItem": function () {}
+            },
+            "onLine": {},
+            "permissions": {
+              "query": function () {}
+            },
+            "platform": {},
+            "plugins": {
+              "0": {
+                "0": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "closure_uid_659125373": {},
+                "description": {},
+                "filename": {},
+                "item": {
+                  "closure_uid_659125373": {}
+                },
+                "length": {},
+                "name": {},
+                "namedItem": {
+                  "closure_uid_659125373": {}
+                }
+              },
+              "1": {
+                "0": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "closure_uid_659125373": {},
+                "description": {},
+                "filename": {},
+                "item": {
+                  "closure_uid_659125373": {}
+                },
+                "length": {},
+                "name": {},
+                "namedItem": {
+                  "closure_uid_659125373": {}
+                }
+              },
+              "2": {
+                "0": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "1": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "closure_uid_659125373": {},
+                "description": {},
+                "filename": {},
+                "item": {
+                  "closure_uid_659125373": {}
+                },
+                "length": {},
+                "name": {},
+                "namedItem": {
+                  "closure_uid_659125373": {}
+                }
+              },
+              "item": function () {},
+              "length": {},
+              "namedItem": function () {},
+              "refresh": function () {}
+            },
+            "product": {},
+            "productSub": {},
+            "scheduling": {
+              "isInputPending": function () {}
+            },
+            "sendBeacon": function () {},
+            "userActivation": {
+              "hasBeenActive": {},
+              "isActive": {}
+            },
+            "userAgent": {},
+            "vendor": {},
+            "vendorSub": {},
+            "vibrate": function () {},
+            "webkitPersistentStorage": {
+              "queryUsageAndQuota": function () {},
+              "requestQuota": function () {}
+            },
+            "webkitTemporaryStorage": {
+              "queryUsageAndQuota": function () {},
+              "requestQuota": function () {}
+            }
+          },
+          "close": function () {},
+          "closed": {},
+          "confirm": function () {},
+          "createImageBitmap": function () {},
+          "createReactClass": function () {},
+          "crossOriginIsolated": {},
+          "crypto": {
+            "getRandomValues": function () {}
+          },
+          "customElements": {
+            "define": function () {},
+            "get": function () {},
+            "upgrade": function () {},
+            "whenDefined": function () {}
+          },
+          "defaultStatus": {},
+          "defaultstatus": {},
+          "devicePixelRatio": {},
+          "dispatchEvent": function () {},
+          "document": {},
+          "external": {
+            "AddSearchProvider": function () {},
+            "IsSearchProviderInstalled": function () {}
+          },
+          "fetch": function () {},
+          "find": function () {},
+          "focus": function () {},
+          "frameElement": {},
+          "frames": {},
+          "getComputedStyle": function () {},
+          "getSelection": function () {},
+          "history": {
+            "back": function () {},
+            "forward": function () {},
+            "go": function () {},
+            "length": {},
+            "pushState": function () {},
+            "replaceState": function () {},
+            "scrollRestoration": {},
+            "state": {}
+          },
+          "indexedDB": {
+            "cmp": function () {},
+            "databases": function () {},
+            "deleteDatabase": function () {},
+            "open": function () {}
+          },
+          "innerHeight": {},
+          "innerWidth": {},
+          "isSecureContext": {},
+          "javascript_externs_generator": {
+            "ui": {
+              "core": {
+                "init": function () {},
+                "re_render": function () {}
+              }
+            }
+          },
+          "js_beautify": function () {},
+          "length": {},
+          "localStorage": {
+            "clear": function () {},
+            "getItem": function () {},
+            "key": function () {},
+            "length": {},
+            "removeItem": function () {},
+            "setItem": function () {}
+          },
+          "location": {
+            "ancestorOrigins": {
+              "contains": function () {},
+              "item": function () {},
+              "length": {}
+            },
+            "assign": function () {},
+            "hash": {},
+            "host": {},
+            "hostname": {},
+            "href": {},
+            "origin": {},
+            "pathname": {},
+            "port": {},
+            "protocol": {},
+            "reload": function () {},
+            "replace": function () {},
+            "search": {},
+            "toString": function () {}
+          },
+          "locationbar": {
+            "visible": {}
+          },
+          "matchMedia": function () {},
+          "menubar": {
+            "visible": {}
+          },
+          "moveBy": function () {},
+          "moveTo": function () {},
+          "name": {},
+          "navigator": {
+            "appCodeName": {},
+            "appName": {},
+            "appVersion": {},
+            "closure_uid_659125373": {},
+            "connection": {
+              "addEventListener": function () {},
+              "dispatchEvent": function () {},
+              "downlink": {},
+              "effectiveType": {},
+              "onchange": {},
+              "removeEventListener": function () {},
+              "rtt": {},
+              "saveData": {}
+            },
+            "cookieEnabled": {},
+            "doNotTrack": {},
+            "geolocation": {
+              "clearWatch": function () {},
+              "getCurrentPosition": function () {},
+              "watchPosition": function () {}
+            },
+            "getBattery": function () {},
+            "getGamepads": function () {},
+            "hardwareConcurrency": {},
+            "javaEnabled": function () {},
+            "language": {},
+            "languages": {},
+            "maxTouchPoints": {},
+            "mediaCapabilities": {
+              "decodingInfo": function () {}
+            },
+            "mediaSession": {
+              "metadata": {},
+              "playbackState": {},
+              "setActionHandler": function () {},
+              "setPositionState": function () {}
+            },
+            "mimeTypes": {
+              "0": {
+                "closure_uid_659125373": {},
+                "description": {},
+                "enabledPlugin": {
+                  "0": {
+                    "closure_uid_659125373": {},
+                    "description": {},
+                    "enabledPlugin": {},
+                    "suffixes": {},
+                    "type": {}
+                  },
+                  "closure_uid_659125373": {},
+                  "description": {},
+                  "filename": {},
+                  "item": {
+                    "closure_uid_659125373": {}
+                  },
+                  "length": {},
+                  "name": {},
+                  "namedItem": {
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "suffixes": {},
+                "type": {}
+              },
+              "1": {
+                "closure_uid_659125373": {},
+                "description": {},
+                "enabledPlugin": {
+                  "0": {
+                    "closure_uid_659125373": {},
+                    "description": {},
+                    "enabledPlugin": {},
+                    "suffixes": {},
+                    "type": {}
+                  },
+                  "closure_uid_659125373": {},
+                  "description": {},
+                  "filename": {},
+                  "item": {
+                    "closure_uid_659125373": {}
+                  },
+                  "length": {},
+                  "name": {},
+                  "namedItem": {
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "suffixes": {},
+                "type": {}
+              },
+              "2": {
+                "closure_uid_659125373": {},
+                "description": {},
+                "enabledPlugin": {
+                  "0": {
+                    "closure_uid_659125373": {},
+                    "description": {},
+                    "enabledPlugin": {},
+                    "suffixes": {},
+                    "type": {}
+                  },
+                  "1": {
+                    "closure_uid_659125373": {},
+                    "description": {},
+                    "enabledPlugin": {},
+                    "suffixes": {},
+                    "type": {}
+                  },
+                  "closure_uid_659125373": {},
+                  "description": {},
+                  "filename": {},
+                  "item": {
+                    "closure_uid_659125373": {}
+                  },
+                  "length": {},
+                  "name": {},
+                  "namedItem": {
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "suffixes": {},
+                "type": {}
+              },
+              "3": {
+                "closure_uid_659125373": {},
+                "description": {},
+                "enabledPlugin": {
+                  "0": {
+                    "closure_uid_659125373": {},
+                    "description": {},
+                    "enabledPlugin": {},
+                    "suffixes": {},
+                    "type": {}
+                  },
+                  "1": {
+                    "closure_uid_659125373": {},
+                    "description": {},
+                    "enabledPlugin": {},
+                    "suffixes": {},
+                    "type": {}
+                  },
+                  "closure_uid_659125373": {},
+                  "description": {},
+                  "filename": {},
+                  "item": {
+                    "closure_uid_659125373": {}
+                  },
+                  "length": {},
+                  "name": {},
+                  "namedItem": {
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "suffixes": {},
+                "type": {}
+              },
+              "closure_uid_659125373": {},
+              "item": function () {},
+              "length": {},
+              "namedItem": function () {}
+            },
+            "onLine": {},
+            "permissions": {
+              "query": function () {}
+            },
+            "platform": {},
+            "plugins": {
+              "0": {
+                "0": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "closure_uid_659125373": {},
+                "description": {},
+                "filename": {},
+                "item": {
+                  "closure_uid_659125373": {}
+                },
+                "length": {},
+                "name": {},
+                "namedItem": {
+                  "closure_uid_659125373": {}
+                }
+              },
+              "1": {
+                "0": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "closure_uid_659125373": {},
+                "description": {},
+                "filename": {},
+                "item": {
+                  "closure_uid_659125373": {}
+                },
+                "length": {},
+                "name": {},
+                "namedItem": {
+                  "closure_uid_659125373": {}
+                }
+              },
+              "2": {
+                "0": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "1": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "closure_uid_659125373": {},
+                "description": {},
+                "filename": {},
+                "item": {
+                  "closure_uid_659125373": {}
+                },
+                "length": {},
+                "name": {},
+                "namedItem": {
+                  "closure_uid_659125373": {}
+                }
+              },
+              "item": function () {},
+              "length": {},
+              "namedItem": function () {},
+              "refresh": function () {}
+            },
+            "product": {},
+            "productSub": {},
+            "scheduling": {
+              "isInputPending": function () {}
+            },
+            "sendBeacon": function () {},
+            "userActivation": {
+              "hasBeenActive": {},
+              "isActive": {}
+            },
+            "userAgent": {},
+            "vendor": {},
+            "vendorSub": {},
+            "vibrate": function () {},
+            "webkitPersistentStorage": {
+              "queryUsageAndQuota": function () {},
+              "requestQuota": function () {}
+            },
+            "webkitTemporaryStorage": {
+              "queryUsageAndQuota": function () {},
+              "requestQuota": function () {}
+            }
+          },
+          "onabort": {},
+          "onafterprint": {},
+          "onanimationend": {},
+          "onanimationiteration": {},
+          "onanimationstart": {},
+          "onappinstalled": {},
+          "onauxclick": {},
+          "onbeforeinstallprompt": {},
+          "onbeforeprint": {},
+          "onbeforeunload": {},
+          "onblur": {},
+          "oncancel": {},
+          "oncanplay": {},
+          "oncanplaythrough": {},
+          "onchange": {},
+          "onclick": {},
+          "onclose": {},
+          "oncontextmenu": {},
+          "oncuechange": {},
+          "ondblclick": {},
+          "ondrag": {},
+          "ondragend": {},
+          "ondragenter": {},
+          "ondragleave": {},
+          "ondragover": {},
+          "ondragstart": {},
+          "ondrop": {},
+          "ondurationchange": {},
+          "onemptied": {},
+          "onended": {},
+          "onerror": {},
+          "onfocus": {},
+          "onformdata": {},
+          "ongotpointercapture": {},
+          "onhashchange": {},
+          "oninput": {},
+          "oninvalid": {},
+          "onkeydown": {},
+          "onkeypress": {},
+          "onkeyup": {},
+          "onlanguagechange": {},
+          "onload": {},
+          "onloadeddata": {},
+          "onloadedmetadata": {},
+          "onloadstart": {},
+          "onlostpointercapture": {},
+          "onmessage": {},
+          "onmessageerror": {},
+          "onmousedown": {},
+          "onmouseenter": {},
+          "onmouseleave": {},
+          "onmousemove": {},
+          "onmouseout": {},
+          "onmouseover": {},
+          "onmouseup": {},
+          "onmousewheel": {},
+          "onoffline": {},
+          "ononline": {},
+          "onpagehide": {},
+          "onpageshow": {},
+          "onpause": {},
+          "onplay": {},
+          "onplaying": {},
+          "onpointercancel": {},
+          "onpointerdown": {},
+          "onpointerenter": {},
+          "onpointerleave": {},
+          "onpointermove": {},
+          "onpointerout": {},
+          "onpointerover": {},
+          "onpointerrawupdate": {},
+          "onpointerup": {},
+          "onpopstate": {},
+          "onprogress": {},
+          "onratechange": {},
+          "onrejectionhandled": {},
+          "onreset": {},
+          "onresize": {},
+          "onscroll": {},
+          "onsearch": {},
+          "onseeked": {},
+          "onseeking": {},
+          "onselect": {},
+          "onselectionchange": {},
+          "onselectstart": {},
+          "onstalled": {},
+          "onstorage": {},
+          "onsubmit": {},
+          "onsuspend": {},
+          "ontimeupdate": {},
+          "ontoggle": {},
+          "ontransitioncancel": {},
+          "ontransitionend": {},
+          "ontransitionrun": {},
+          "ontransitionstart": {},
+          "onunhandledrejection": {},
+          "onunload": {},
+          "onvolumechange": {},
+          "onwaiting": {},
+          "onwebkitanimationend": {},
+          "onwebkitanimationiteration": {},
+          "onwebkitanimationstart": {},
+          "onwebkittransitionend": {},
+          "onwheel": {},
+          "open": function () {},
+          "openDatabase": function () {},
+          "opener": {},
+          "origin": {},
+          "outerHeight": {},
+          "outerWidth": {},
+          "pageXOffset": {},
+          "pageYOffset": {},
+          "parent": {},
+          "performance": {
+            "addEventListener": function () {},
+            "clearMarks": function () {},
+            "clearMeasures": function () {},
+            "clearResourceTimings": function () {},
+            "dispatchEvent": function () {},
+            "eventCounts": {
+              "entries": function () {},
+              "forEach": function () {},
+              "get": function () {},
+              "has": function () {},
+              "keys": function () {},
+              "size": {},
+              "values": function () {}
+            },
+            "getEntries": function () {},
+            "getEntriesByName": function () {},
+            "getEntriesByType": function () {},
+            "mark": function () {},
+            "measure": function () {},
+            "memory": {
+              "jsHeapSizeLimit": {},
+              "totalJSHeapSize": {},
+              "usedJSHeapSize": {}
+            },
+            "navigation": {
+              "TYPE_BACK_FORWARD": {},
+              "TYPE_NAVIGATE": {},
+              "TYPE_RELOAD": {},
+              "TYPE_RESERVED": {},
+              "redirectCount": {},
+              "toJSON": function () {},
+              "type": {}
+            },
+            "now": function () {},
+            "onresourcetimingbufferfull": {},
+            "removeEventListener": function () {},
+            "setResourceTimingBufferSize": function () {},
+            "timeOrigin": {},
+            "timing": {
+              "connectEnd": {},
+              "connectStart": {},
+              "domComplete": {},
+              "domContentLoadedEventEnd": {},
+              "domContentLoadedEventStart": {},
+              "domInteractive": {},
+              "domLoading": {},
+              "domainLookupEnd": {},
+              "domainLookupStart": {},
+              "fetchStart": {},
+              "loadEventEnd": {},
+              "loadEventStart": {},
+              "navigationStart": {},
+              "redirectEnd": {},
+              "redirectStart": {},
+              "requestStart": {},
+              "responseEnd": {},
+              "responseStart": {},
+              "secureConnectionStart": {},
+              "toJSON": function () {},
+              "unloadEventEnd": {},
+              "unloadEventStart": {}
+            },
+            "toJSON": function () {}
+          },
+          "personalbar": {
+            "visible": {}
+          },
+          "postMessage": function () {},
+          "print": function () {},
+          "prompt": function () {},
+          "queueMicrotask": function () {},
+          "reagent": {
+            "core": {
+              "force_update_all": function () {}
+            }
+          },
+          "releaseEvents": function () {},
+          "removeEventListener": function () {},
+          "requestAnimationFrame": function () {},
+          "requestIdleCallback": function () {},
+          "resizeBy": function () {},
+          "resizeTo": function () {},
+          "screen": {
+            "availHeight": {},
+            "availLeft": {},
+            "availTop": {},
+            "availWidth": {},
+            "colorDepth": {},
+            "height": {},
+            "orientation": {
+              "addEventListener": function () {},
+              "angle": {},
+              "dispatchEvent": function () {},
+              "lock": function () {},
+              "onchange": {},
+              "removeEventListener": function () {},
+              "type": {},
+              "unlock": function () {}
+            },
+            "pixelDepth": {},
+            "width": {}
+          },
+          "screenLeft": {},
+          "screenTop": {},
+          "screenX": {},
+          "screenY": {},
+          "scroll": function () {},
+          "scrollBy": function () {},
+          "scrollTo": function () {},
+          "scrollX": {},
+          "scrollY": {},
+          "scrollbars": {
+            "visible": {}
+          },
+          "self": {},
+          "sessionStorage": {
+            "clear": function () {},
+            "getItem": function () {},
+            "key": function () {},
+            "length": {},
+            "removeItem": function () {},
+            "setItem": function () {}
+          },
+          "setInterval": function () {},
+          "setTimeout": function () {},
+          "speechSynthesis": {
+            "addEventListener": function () {},
+            "cancel": function () {},
+            "dispatchEvent": function () {},
+            "getVoices": function () {},
+            "onvoiceschanged": {},
+            "pause": function () {},
+            "paused": {},
+            "pending": {},
+            "removeEventListener": function () {},
+            "resume": function () {},
+            "speak": function () {},
+            "speaking": {}
+          },
+          "status": {},
+          "statusbar": {
+            "visible": {}
+          },
+          "stop": function () {},
+          "styleMedia": {
+            "matchMedium": function () {},
+            "type": {}
+          },
+          "toolbar": {
+            "visible": {}
+          },
+          "top": {},
+          "trustedTypes": {
+            "addEventListener": function () {},
+            "createPolicy": function () {},
+            "defaultPolicy": {},
+            "dispatchEvent": function () {},
+            "emptyHTML": {
+              "toString": function () {}
+            },
+            "emptyScript": {
+              "toString": function () {}
+            },
+            "getAttributeType": function () {},
+            "getPropertyType": function () {},
+            "getTypeMapping": function () {},
+            "isHTML": function () {},
+            "isScript": function () {},
+            "isScriptURL": function () {},
+            "removeEventListener": function () {}
+          },
+          "visualViewport": {
+            "addEventListener": function () {},
+            "dispatchEvent": function () {},
+            "height": {},
+            "offsetLeft": {},
+            "offsetTop": {},
+            "onresize": {},
+            "onscroll": {},
+            "pageLeft": {},
+            "pageTop": {},
+            "removeEventListener": function () {},
+            "scale": {},
+            "width": {}
+          },
+          "webkitCancelAnimationFrame": function () {},
+          "webkitRequestAnimationFrame": function () {},
+          "webkitRequestFileSystem": function () {},
+          "webkitResolveLocalFileSystemURL": function () {},
+          "webkitStorageInfo": {
+            "PERSISTENT": {},
+            "TEMPORARY": {},
+            "queryUsageAndQuota": function () {},
+            "requestQuota": function () {}
+          },
+          "window": {}
+        },
+        "performance": {
+          "addEventListener": function () {},
+          "clearMarks": function () {},
+          "clearMeasures": function () {},
+          "clearResourceTimings": function () {},
+          "dispatchEvent": function () {},
+          "eventCounts": {
+            "entries": function () {},
+            "forEach": function () {},
+            "get": function () {},
+            "has": function () {},
+            "keys": function () {},
+            "size": {},
+            "values": function () {}
+          },
+          "getEntries": function () {},
+          "getEntriesByName": function () {},
+          "getEntriesByType": function () {},
+          "mark": function () {},
+          "measure": function () {},
+          "memory": {
+            "jsHeapSizeLimit": {},
+            "totalJSHeapSize": {},
+            "usedJSHeapSize": {}
+          },
+          "navigation": {
+            "TYPE_BACK_FORWARD": {},
+            "TYPE_NAVIGATE": {},
+            "TYPE_RELOAD": {},
+            "TYPE_RESERVED": {},
+            "redirectCount": {},
+            "toJSON": function () {},
+            "type": {}
+          },
+          "now": function () {},
+          "onresourcetimingbufferfull": {},
+          "removeEventListener": function () {},
+          "setResourceTimingBufferSize": function () {},
+          "timeOrigin": {},
+          "timing": {
+            "connectEnd": {},
+            "connectStart": {},
+            "domComplete": {},
+            "domContentLoadedEventEnd": {},
+            "domContentLoadedEventStart": {},
+            "domInteractive": {},
+            "domLoading": {},
+            "domainLookupEnd": {},
+            "domainLookupStart": {},
+            "fetchStart": {},
+            "loadEventEnd": {},
+            "loadEventStart": {},
+            "navigationStart": {},
+            "redirectEnd": {},
+            "redirectStart": {},
+            "requestStart": {},
+            "responseEnd": {},
+            "responseStart": {},
+            "secureConnectionStart": {},
+            "toJSON": function () {},
+            "unloadEventEnd": {},
+            "unloadEventStart": {}
+          },
+          "toJSON": function () {}
+        },
+        "personalbar": {
+          "visible": {}
+        },
+        "postMessage": function () {},
+        "print": function () {},
+        "prompt": function () {},
+        "queueMicrotask": function () {},
+        "releaseEvents": function () {},
+        "removeEventListener": function () {},
+        "requestAnimationFrame": function () {},
+        "requestIdleCallback": function () {},
+        "resizeBy": function () {},
+        "resizeTo": function () {},
+        "screen": {
+          "availHeight": {},
+          "availLeft": {},
+          "availTop": {},
+          "availWidth": {},
+          "colorDepth": {},
+          "height": {},
+          "orientation": {
+            "addEventListener": function () {},
+            "angle": {},
+            "dispatchEvent": function () {},
+            "lock": function () {},
+            "onchange": {},
+            "removeEventListener": function () {},
+            "type": {},
+            "unlock": function () {}
+          },
+          "pixelDepth": {},
+          "width": {}
+        },
+        "screenLeft": {},
+        "screenTop": {},
+        "screenX": {},
+        "screenY": {},
+        "scroll": function () {},
+        "scrollBy": function () {},
+        "scrollTo": function () {},
+        "scrollX": {},
+        "scrollY": {},
+        "scrollbars": {
+          "visible": {}
+        },
+        "self": {},
+        "sessionStorage": {
+          "clear": function () {},
+          "getItem": function () {},
+          "key": function () {},
+          "length": {},
+          "removeItem": function () {},
+          "setItem": function () {}
+        },
+        "setInterval": function () {},
+        "setTimeout": function () {},
+        "speechSynthesis": {
+          "addEventListener": function () {},
+          "cancel": function () {},
+          "dispatchEvent": function () {},
+          "getVoices": function () {},
+          "onvoiceschanged": {},
+          "pause": function () {},
+          "paused": {},
+          "pending": {},
+          "removeEventListener": function () {},
+          "resume": function () {},
+          "speak": function () {},
+          "speaking": {}
+        },
+        "status": {},
+        "statusbar": {
+          "visible": {}
+        },
+        "stop": function () {},
+        "styleMedia": {
+          "matchMedium": function () {},
+          "type": {}
+        },
+        "toolbar": {
+          "visible": {}
+        },
+        "top": {
+          "0": {},
+          "PERSISTENT": {},
+          "React": {
+            "Children": {
+              "count": function () {},
+              "forEach": function () {},
+              "map": function () {},
+              "only": function () {},
+              "toArray": function () {}
+            },
+            "Component": function () {},
+            "DOM": {
+              "a": {
+                "type": {}
+              },
+              "abbr": {
+                "type": {}
+              },
+              "address": {
+                "type": {}
+              },
+              "area": {
+                "type": {}
+              },
+              "article": {
+                "type": {}
+              },
+              "aside": {
+                "type": {}
+              },
+              "audio": {
+                "type": {}
+              },
+              "b": {
+                "type": {}
+              },
+              "base": {
+                "type": {}
+              },
+              "bdi": {
+                "type": {}
+              },
+              "bdo": {
+                "type": {}
+              },
+              "big": {
+                "type": {}
+              },
+              "blockquote": {
+                "type": {}
+              },
+              "body": {
+                "type": {}
+              },
+              "br": {
+                "type": {}
+              },
+              "button": {
+                "type": {}
+              },
+              "canvas": {
+                "type": {}
+              },
+              "caption": {
+                "type": {}
+              },
+              "circle": {
+                "type": {}
+              },
+              "cite": {
+                "type": {}
+              },
+              "clipPath": {
+                "type": {}
+              },
+              "code": {
+                "type": {}
+              },
+              "col": {
+                "type": {}
+              },
+              "colgroup": {
+                "type": {}
+              },
+              "data": {
+                "type": {}
+              },
+              "datalist": {
+                "type": {}
+              },
+              "dd": {
+                "type": {}
+              },
+              "defs": {
+                "type": {}
+              },
+              "del": {
+                "type": {}
+              },
+              "details": {
+                "type": {}
+              },
+              "dfn": {
+                "type": {}
+              },
+              "dialog": {
+                "type": {}
+              },
+              "div": {
+                "type": {}
+              },
+              "dl": {
+                "type": {}
+              },
+              "dt": {
+                "type": {}
+              },
+              "ellipse": {
+                "type": {}
+              },
+              "em": {
+                "type": {}
+              },
+              "embed": {
+                "type": {}
+              },
+              "fieldset": {
+                "type": {}
+              },
+              "figcaption": {
+                "type": {}
+              },
+              "figure": {
+                "type": {}
+              },
+              "footer": {
+                "type": {}
+              },
+              "form": {
+                "type": {}
+              },
+              "g": {
+                "type": {}
+              },
+              "h1": {
+                "type": {}
+              },
+              "h2": {
+                "type": {}
+              },
+              "h3": {
+                "type": {}
+              },
+              "h4": {
+                "type": {}
+              },
+              "h5": {
+                "type": {}
+              },
+              "h6": {
+                "type": {}
+              },
+              "head": {
+                "type": {}
+              },
+              "header": {
+                "type": {}
+              },
+              "hgroup": {
+                "type": {}
+              },
+              "hr": {
+                "type": {}
+              },
+              "html": {
+                "type": {}
+              },
+              "i": {
+                "type": {}
+              },
+              "iframe": {
+                "type": {}
+              },
+              "image": {
+                "type": {}
+              },
+              "img": {
+                "type": {}
+              },
+              "input": {
+                "type": {}
+              },
+              "ins": {
+                "type": {}
+              },
+              "kbd": {
+                "type": {}
+              },
+              "keygen": {
+                "type": {}
+              },
+              "label": {
+                "type": {}
+              },
+              "legend": {
+                "type": {}
+              },
+              "li": {
+                "type": {}
+              },
+              "line": {
+                "type": {}
+              },
+              "linearGradient": {
+                "type": {}
+              },
+              "link": {
+                "type": {}
+              },
+              "main": {
+                "type": {}
+              },
+              "map": {
+                "type": {}
+              },
+              "mark": {
+                "type": {}
+              },
+              "mask": {
+                "type": {}
+              },
+              "menu": {
+                "type": {}
+              },
+              "menuitem": {
+                "type": {}
+              },
+              "meta": {
+                "type": {}
+              },
+              "meter": {
+                "type": {}
+              },
+              "nav": {
+                "type": {}
+              },
+              "noscript": {
+                "type": {}
+              },
+              "object": {
+                "type": {}
+              },
+              "ol": {
+                "type": {}
+              },
+              "optgroup": {
+                "type": {}
+              },
+              "option": {
+                "type": {}
+              },
+              "output": {
+                "type": {}
+              },
+              "p": {
+                "type": {}
+              },
+              "param": {
+                "type": {}
+              },
+              "path": {
+                "type": {}
+              },
+              "pattern": {
+                "type": {}
+              },
+              "picture": {
+                "type": {}
+              },
+              "polygon": {
+                "type": {}
+              },
+              "polyline": {
+                "type": {}
+              },
+              "pre": {
+                "type": {}
+              },
+              "progress": {
+                "type": {}
+              },
+              "q": {
+                "type": {}
+              },
+              "radialGradient": {
+                "type": {}
+              },
+              "rect": {
+                "type": {}
+              },
+              "rp": {
+                "type": {}
+              },
+              "rt": {
+                "type": {}
+              },
+              "ruby": {
+                "type": {}
+              },
+              "s": {
+                "type": {}
+              },
+              "samp": {
+                "type": {}
+              },
+              "script": {
+                "type": {}
+              },
+              "section": {
+                "type": {}
+              },
+              "select": {
+                "type": {}
+              },
+              "small": {
+                "type": {}
+              },
+              "source": {
+                "type": {}
+              },
+              "span": {
+                "type": {}
+              },
+              "stop": {
+                "type": {}
+              },
+              "strong": {
+                "type": {}
+              },
+              "style": {
+                "type": {}
+              },
+              "sub": {
+                "type": {}
+              },
+              "summary": {
+                "type": {}
+              },
+              "sup": {
+                "type": {}
+              },
+              "svg": {
+                "type": {}
+              },
+              "table": {
+                "type": {}
+              },
+              "tbody": {
+                "type": {}
+              },
+              "td": {
+                "type": {}
+              },
+              "text": {
+                "type": {}
+              },
+              "textarea": {
+                "type": {}
+              },
+              "tfoot": {
+                "type": {}
+              },
+              "th": {
+                "type": {}
+              },
+              "thead": {
+                "type": {}
+              },
+              "time": {
+                "type": {}
+              },
+              "title": {
+                "type": {}
+              },
+              "tr": {
+                "type": {}
+              },
+              "track": {
+                "type": {}
+              },
+              "tspan": {
+                "type": {}
+              },
+              "u": {
+                "type": {}
+              },
+              "ul": {
+                "type": {}
+              },
+              "var": {
+                "type": {}
+              },
+              "video": {
+                "type": {}
+              },
+              "wbr": {
+                "type": {}
+              }
+            },
+            "PropTypes": {
+              "PropTypes": {},
+              "any": {
+                "isRequired": function () {}
+              },
+              "array": {
+                "isRequired": function () {}
+              },
+              "arrayOf": function () {},
+              "bool": {
+                "isRequired": function () {}
+              },
+              "checkPropTypes": function () {},
+              "element": {
+                "isRequired": function () {}
+              },
+              "func": {
+                "isRequired": function () {}
+              },
+              "instanceOf": function () {},
+              "node": {
+                "isRequired": function () {}
+              },
+              "number": {
+                "isRequired": function () {}
+              },
+              "object": {
+                "isRequired": function () {}
+              },
+              "objectOf": function () {},
+              "oneOf": function () {},
+              "oneOfType": function () {},
+              "shape": function () {},
+              "string": {
+                "isRequired": function () {}
+              },
+              "symbol": {
+                "isRequired": function () {}
+              }
+            },
+            "PureComponent": function () {},
+            "__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED": {
+              "ReactCurrentOwner": {
+                "current": {}
+              }
+            },
+            "__spread": function () {},
+            "cloneElement": function () {},
+            "createClass": function () {},
+            "createElement": function () {},
+            "createFactory": function () {},
+            "createMixin": function () {},
+            "isValidElement": function () {},
+            "version": {}
+          },
+          "ReactDOM": {
+            "findDOMNode": function () {},
+            "render": function () {},
+            "unmountComponentAtNode": function () {},
+            "unstable_batchedUpdates": function () {},
+            "unstable_renderSubtreeIntoContainer": function () {},
+            "version": {}
+          },
+          "TEMPORARY": {},
+          "addEventListener": function () {},
+          "alert": function () {},
+          "atob": function () {},
+          "blur": function () {},
+          "btoa": function () {},
+          "cancelAnimationFrame": function () {},
+          "cancelIdleCallback": function () {},
+          "captureEvents": function () {},
+          "chrome": {
+            "app": {
+              "InstallState": {
+                "DISABLED": {},
+                "INSTALLED": {},
+                "NOT_INSTALLED": {}
+              },
+              "RunningState": {
+                "CANNOT_RUN": {},
+                "READY_TO_RUN": {},
+                "RUNNING": {}
+              },
+              "getDetails": function () {},
+              "getIsInstalled": function () {},
+              "installState": function () {},
+              "isInstalled": {},
+              "runningState": function () {}
+            },
+            "csi": function () {},
+            "loadTimes": function () {}
+          },
+          "clearInterval": function () {},
+          "clearTimeout": function () {},
+          "clientInformation": {
+            "appCodeName": {},
+            "appName": {},
+            "appVersion": {},
+            "closure_uid_659125373": {},
+            "connection": {
+              "addEventListener": function () {},
+              "dispatchEvent": function () {},
+              "downlink": {},
+              "effectiveType": {},
+              "onchange": {},
+              "removeEventListener": function () {},
+              "rtt": {},
+              "saveData": {}
+            },
+            "cookieEnabled": {},
+            "doNotTrack": {},
+            "geolocation": {
+              "clearWatch": function () {},
+              "getCurrentPosition": function () {},
+              "watchPosition": function () {}
+            },
+            "getBattery": function () {},
+            "getGamepads": function () {},
+            "hardwareConcurrency": {},
+            "javaEnabled": function () {},
+            "language": {},
+            "languages": {},
+            "maxTouchPoints": {},
+            "mediaCapabilities": {
+              "decodingInfo": function () {}
+            },
+            "mediaSession": {
+              "metadata": {},
+              "playbackState": {},
+              "setActionHandler": function () {},
+              "setPositionState": function () {}
+            },
+            "mimeTypes": {
+              "0": {
+                "closure_uid_659125373": {},
+                "description": {},
+                "enabledPlugin": {
+                  "0": {
+                    "closure_uid_659125373": {},
+                    "description": {},
+                    "enabledPlugin": {},
+                    "suffixes": {},
+                    "type": {}
+                  },
+                  "closure_uid_659125373": {},
+                  "description": {},
+                  "filename": {},
+                  "item": {
+                    "closure_uid_659125373": {}
+                  },
+                  "length": {},
+                  "name": {},
+                  "namedItem": {
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "suffixes": {},
+                "type": {}
+              },
+              "1": {
+                "closure_uid_659125373": {},
+                "description": {},
+                "enabledPlugin": {
+                  "0": {
+                    "closure_uid_659125373": {},
+                    "description": {},
+                    "enabledPlugin": {},
+                    "suffixes": {},
+                    "type": {}
+                  },
+                  "closure_uid_659125373": {},
+                  "description": {},
+                  "filename": {},
+                  "item": {
+                    "closure_uid_659125373": {}
+                  },
+                  "length": {},
+                  "name": {},
+                  "namedItem": {
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "suffixes": {},
+                "type": {}
+              },
+              "2": {
+                "closure_uid_659125373": {},
+                "description": {},
+                "enabledPlugin": {
+                  "0": {
+                    "closure_uid_659125373": {},
+                    "description": {},
+                    "enabledPlugin": {},
+                    "suffixes": {},
+                    "type": {}
+                  },
+                  "1": {
+                    "closure_uid_659125373": {},
+                    "description": {},
+                    "enabledPlugin": {},
+                    "suffixes": {},
+                    "type": {}
+                  },
+                  "closure_uid_659125373": {},
+                  "description": {},
+                  "filename": {},
+                  "item": {
+                    "closure_uid_659125373": {}
+                  },
+                  "length": {},
+                  "name": {},
+                  "namedItem": {
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "suffixes": {},
+                "type": {}
+              },
+              "3": {
+                "closure_uid_659125373": {},
+                "description": {},
+                "enabledPlugin": {
+                  "0": {
+                    "closure_uid_659125373": {},
+                    "description": {},
+                    "enabledPlugin": {},
+                    "suffixes": {},
+                    "type": {}
+                  },
+                  "1": {
+                    "closure_uid_659125373": {},
+                    "description": {},
+                    "enabledPlugin": {},
+                    "suffixes": {},
+                    "type": {}
+                  },
+                  "closure_uid_659125373": {},
+                  "description": {},
+                  "filename": {},
+                  "item": {
+                    "closure_uid_659125373": {}
+                  },
+                  "length": {},
+                  "name": {},
+                  "namedItem": {
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "suffixes": {},
+                "type": {}
+              },
+              "closure_uid_659125373": {},
+              "item": function () {},
+              "length": {},
+              "namedItem": function () {}
+            },
+            "onLine": {},
+            "permissions": {
+              "query": function () {}
+            },
+            "platform": {},
+            "plugins": {
+              "0": {
+                "0": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "closure_uid_659125373": {},
+                "description": {},
+                "filename": {},
+                "item": {
+                  "closure_uid_659125373": {}
+                },
+                "length": {},
+                "name": {},
+                "namedItem": {
+                  "closure_uid_659125373": {}
+                }
+              },
+              "1": {
+                "0": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "closure_uid_659125373": {},
+                "description": {},
+                "filename": {},
+                "item": {
+                  "closure_uid_659125373": {}
+                },
+                "length": {},
+                "name": {},
+                "namedItem": {
+                  "closure_uid_659125373": {}
+                }
+              },
+              "2": {
+                "0": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "1": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "closure_uid_659125373": {},
+                "description": {},
+                "filename": {},
+                "item": {
+                  "closure_uid_659125373": {}
+                },
+                "length": {},
+                "name": {},
+                "namedItem": {
+                  "closure_uid_659125373": {}
+                }
+              },
+              "item": function () {},
+              "length": {},
+              "namedItem": function () {},
+              "refresh": function () {}
+            },
+            "product": {},
+            "productSub": {},
+            "scheduling": {
+              "isInputPending": function () {}
+            },
+            "sendBeacon": function () {},
+            "userActivation": {
+              "hasBeenActive": {},
+              "isActive": {}
+            },
+            "userAgent": {},
+            "vendor": {},
+            "vendorSub": {},
+            "vibrate": function () {},
+            "webkitPersistentStorage": {
+              "queryUsageAndQuota": function () {},
+              "requestQuota": function () {}
+            },
+            "webkitTemporaryStorage": {
+              "queryUsageAndQuota": function () {},
+              "requestQuota": function () {}
+            }
+          },
+          "close": function () {},
+          "closed": {},
+          "closure_uid_659125373": {},
+          "confirm": function () {},
+          "createImageBitmap": function () {},
+          "createReactClass": function () {},
+          "crossOriginIsolated": {},
+          "crypto": {
+            "getRandomValues": function () {}
+          },
+          "customElements": {
+            "define": function () {},
+            "get": function () {},
+            "upgrade": function () {},
+            "whenDefined": function () {}
+          },
+          "defaultStatus": {},
+          "defaultstatus": {},
+          "devicePixelRatio": {},
+          "dispatchEvent": function () {},
+          "document": {},
+          "external": {
+            "AddSearchProvider": function () {},
+            "IsSearchProviderInstalled": function () {}
+          },
+          "fetch": function () {},
+          "find": function () {},
+          "focus": function () {},
+          "frameElement": {},
+          "frames": {},
+          "getComputedStyle": function () {},
+          "getSelection": function () {},
+          "history": {
+            "back": function () {},
+            "forward": function () {},
+            "go": function () {},
+            "length": {},
+            "pushState": function () {},
+            "replaceState": function () {},
+            "scrollRestoration": {},
+            "state": {}
+          },
+          "indexedDB": {
+            "cmp": function () {},
+            "databases": function () {},
+            "deleteDatabase": function () {},
+            "open": function () {}
+          },
+          "innerHeight": {},
+          "innerWidth": {},
+          "isSecureContext": {},
+          "javascript_externs_generator": {
+            "ui": {
+              "core": {
+                "init": function () {},
+                "re_render": function () {}
+              }
+            }
+          },
+          "js_beautify": function () {},
+          "length": {},
+          "localStorage": {
+            "clear": function () {},
+            "getItem": function () {},
+            "key": function () {},
+            "length": {},
+            "removeItem": function () {},
+            "setItem": function () {}
+          },
+          "location": {
+            "ancestorOrigins": {
+              "contains": function () {},
+              "item": function () {},
+              "length": {}
+            },
+            "assign": function () {},
+            "hash": {},
+            "host": {},
+            "hostname": {},
+            "href": {},
+            "origin": {},
+            "pathname": {},
+            "port": {},
+            "protocol": {},
+            "reload": function () {},
+            "replace": function () {},
+            "search": {},
+            "toString": function () {}
+          },
+          "locationbar": {
+            "visible": {}
+          },
+          "matchMedia": function () {},
+          "menubar": {
+            "visible": {}
+          },
+          "moveBy": function () {},
+          "moveTo": function () {},
+          "name": {},
+          "navigator": {
+            "appCodeName": {},
+            "appName": {},
+            "appVersion": {},
+            "closure_uid_659125373": {},
+            "connection": {
+              "addEventListener": function () {},
+              "dispatchEvent": function () {},
+              "downlink": {},
+              "effectiveType": {},
+              "onchange": {},
+              "removeEventListener": function () {},
+              "rtt": {},
+              "saveData": {}
+            },
+            "cookieEnabled": {},
+            "doNotTrack": {},
+            "geolocation": {
+              "clearWatch": function () {},
+              "getCurrentPosition": function () {},
+              "watchPosition": function () {}
+            },
+            "getBattery": function () {},
+            "getGamepads": function () {},
+            "hardwareConcurrency": {},
+            "javaEnabled": function () {},
+            "language": {},
+            "languages": {},
+            "maxTouchPoints": {},
+            "mediaCapabilities": {
+              "decodingInfo": function () {}
+            },
+            "mediaSession": {
+              "metadata": {},
+              "playbackState": {},
+              "setActionHandler": function () {},
+              "setPositionState": function () {}
+            },
+            "mimeTypes": {
+              "0": {
+                "closure_uid_659125373": {},
+                "description": {},
+                "enabledPlugin": {
+                  "0": {
+                    "closure_uid_659125373": {},
+                    "description": {},
+                    "enabledPlugin": {},
+                    "suffixes": {},
+                    "type": {}
+                  },
+                  "closure_uid_659125373": {},
+                  "description": {},
+                  "filename": {},
+                  "item": {
+                    "closure_uid_659125373": {}
+                  },
+                  "length": {},
+                  "name": {},
+                  "namedItem": {
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "suffixes": {},
+                "type": {}
+              },
+              "1": {
+                "closure_uid_659125373": {},
+                "description": {},
+                "enabledPlugin": {
+                  "0": {
+                    "closure_uid_659125373": {},
+                    "description": {},
+                    "enabledPlugin": {},
+                    "suffixes": {},
+                    "type": {}
+                  },
+                  "closure_uid_659125373": {},
+                  "description": {},
+                  "filename": {},
+                  "item": {
+                    "closure_uid_659125373": {}
+                  },
+                  "length": {},
+                  "name": {},
+                  "namedItem": {
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "suffixes": {},
+                "type": {}
+              },
+              "2": {
+                "closure_uid_659125373": {},
+                "description": {},
+                "enabledPlugin": {
+                  "0": {
+                    "closure_uid_659125373": {},
+                    "description": {},
+                    "enabledPlugin": {},
+                    "suffixes": {},
+                    "type": {}
+                  },
+                  "1": {
+                    "closure_uid_659125373": {},
+                    "description": {},
+                    "enabledPlugin": {},
+                    "suffixes": {},
+                    "type": {}
+                  },
+                  "closure_uid_659125373": {},
+                  "description": {},
+                  "filename": {},
+                  "item": {
+                    "closure_uid_659125373": {}
+                  },
+                  "length": {},
+                  "name": {},
+                  "namedItem": {
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "suffixes": {},
+                "type": {}
+              },
+              "3": {
+                "closure_uid_659125373": {},
+                "description": {},
+                "enabledPlugin": {
+                  "0": {
+                    "closure_uid_659125373": {},
+                    "description": {},
+                    "enabledPlugin": {},
+                    "suffixes": {},
+                    "type": {}
+                  },
+                  "1": {
+                    "closure_uid_659125373": {},
+                    "description": {},
+                    "enabledPlugin": {},
+                    "suffixes": {},
+                    "type": {}
+                  },
+                  "closure_uid_659125373": {},
+                  "description": {},
+                  "filename": {},
+                  "item": {
+                    "closure_uid_659125373": {}
+                  },
+                  "length": {},
+                  "name": {},
+                  "namedItem": {
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "suffixes": {},
+                "type": {}
+              },
+              "closure_uid_659125373": {},
+              "item": function () {},
+              "length": {},
+              "namedItem": function () {}
+            },
+            "onLine": {},
+            "permissions": {
+              "query": function () {}
+            },
+            "platform": {},
+            "plugins": {
+              "0": {
+                "0": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "closure_uid_659125373": {},
+                "description": {},
+                "filename": {},
+                "item": {
+                  "closure_uid_659125373": {}
+                },
+                "length": {},
+                "name": {},
+                "namedItem": {
+                  "closure_uid_659125373": {}
+                }
+              },
+              "1": {
+                "0": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "closure_uid_659125373": {},
+                "description": {},
+                "filename": {},
+                "item": {
+                  "closure_uid_659125373": {}
+                },
+                "length": {},
+                "name": {},
+                "namedItem": {
+                  "closure_uid_659125373": {}
+                }
+              },
+              "2": {
+                "0": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "1": {
+                  "description": {},
+                  "enabledPlugin": {},
+                  "suffixes": {},
+                  "type": {}
+                },
+                "closure_uid_659125373": {},
+                "description": {},
+                "filename": {},
+                "item": {
+                  "closure_uid_659125373": {}
+                },
+                "length": {},
+                "name": {},
+                "namedItem": {
+                  "closure_uid_659125373": {}
+                }
+              },
+              "item": function () {},
+              "length": {},
+              "namedItem": function () {},
+              "refresh": function () {}
+            },
+            "product": {},
+            "productSub": {},
+            "scheduling": {
+              "isInputPending": function () {}
+            },
+            "sendBeacon": function () {},
+            "userActivation": {
+              "hasBeenActive": {},
+              "isActive": {}
+            },
+            "userAgent": {},
+            "vendor": {},
+            "vendorSub": {},
+            "vibrate": function () {},
+            "webkitPersistentStorage": {
+              "queryUsageAndQuota": function () {},
+              "requestQuota": function () {}
+            },
+            "webkitTemporaryStorage": {
+              "queryUsageAndQuota": function () {},
+              "requestQuota": function () {}
+            }
+          },
+          "onabort": {},
+          "onafterprint": {},
+          "onanimationend": {},
+          "onanimationiteration": {},
+          "onanimationstart": {},
+          "onappinstalled": {},
+          "onauxclick": {},
+          "onbeforeinstallprompt": {},
+          "onbeforeprint": {},
+          "onbeforeunload": {},
+          "onblur": {},
+          "oncancel": {},
+          "oncanplay": {},
+          "oncanplaythrough": {},
+          "onchange": {},
+          "onclick": {},
+          "onclose": {},
+          "oncontextmenu": {},
+          "oncuechange": {},
+          "ondblclick": {},
+          "ondrag": {},
+          "ondragend": {},
+          "ondragenter": {},
+          "ondragleave": {},
+          "ondragover": {},
+          "ondragstart": {},
+          "ondrop": {},
+          "ondurationchange": {},
+          "onemptied": {},
+          "onended": {},
+          "onerror": {},
+          "onfocus": {},
+          "onformdata": {},
+          "ongotpointercapture": {},
+          "onhashchange": {},
+          "oninput": {},
+          "oninvalid": {},
+          "onkeydown": {},
+          "onkeypress": {},
+          "onkeyup": {},
+          "onlanguagechange": {},
+          "onload": {},
+          "onloadeddata": {},
+          "onloadedmetadata": {},
+          "onloadstart": {},
+          "onlostpointercapture": {},
+          "onmessage": {},
+          "onmessageerror": {},
+          "onmousedown": {},
+          "onmouseenter": {},
+          "onmouseleave": {},
+          "onmousemove": {},
+          "onmouseout": {},
+          "onmouseover": {},
+          "onmouseup": {},
+          "onmousewheel": {},
+          "onoffline": {},
+          "ononline": {},
+          "onpagehide": {},
+          "onpageshow": {},
+          "onpause": {},
+          "onplay": {},
+          "onplaying": {},
+          "onpointercancel": {},
+          "onpointerdown": {},
+          "onpointerenter": {},
+          "onpointerleave": {},
+          "onpointermove": {},
+          "onpointerout": {},
+          "onpointerover": {},
+          "onpointerrawupdate": {},
+          "onpointerup": {},
+          "onpopstate": {},
+          "onprogress": {},
+          "onratechange": {},
+          "onrejectionhandled": {},
+          "onreset": {},
+          "onresize": {},
+          "onscroll": {},
+          "onsearch": {},
+          "onseeked": {},
+          "onseeking": {},
+          "onselect": {},
+          "onselectionchange": {},
+          "onselectstart": {},
+          "onstalled": {},
+          "onstorage": {},
+          "onsubmit": {},
+          "onsuspend": {},
+          "ontimeupdate": {},
+          "ontoggle": {},
+          "ontransitioncancel": {},
+          "ontransitionend": {},
+          "ontransitionrun": {},
+          "ontransitionstart": {},
+          "onunhandledrejection": {},
+          "onunload": {},
+          "onvolumechange": {},
+          "onwaiting": {},
+          "onwebkitanimationend": {},
+          "onwebkitanimationiteration": {},
+          "onwebkitanimationstart": {},
+          "onwebkittransitionend": {},
+          "onwheel": {},
+          "open": function () {},
+          "openDatabase": function () {},
+          "opener": {},
+          "origin": {},
+          "outerHeight": {},
+          "outerWidth": {},
+          "pageXOffset": {},
+          "pageYOffset": {},
+          "parent": {},
+          "performance": {
+            "addEventListener": function () {},
+            "clearMarks": function () {},
+            "clearMeasures": function () {},
+            "clearResourceTimings": function () {},
+            "dispatchEvent": function () {},
+            "eventCounts": {
+              "entries": function () {},
+              "forEach": function () {},
+              "get": function () {},
+              "has": function () {},
+              "keys": function () {},
+              "size": {},
+              "values": function () {}
+            },
+            "getEntries": function () {},
+            "getEntriesByName": function () {},
+            "getEntriesByType": function () {},
+            "mark": function () {},
+            "measure": function () {},
+            "memory": {
+              "jsHeapSizeLimit": {},
+              "totalJSHeapSize": {},
+              "usedJSHeapSize": {}
+            },
+            "navigation": {
+              "TYPE_BACK_FORWARD": {},
+              "TYPE_NAVIGATE": {},
+              "TYPE_RELOAD": {},
+              "TYPE_RESERVED": {},
+              "redirectCount": {},
+              "toJSON": function () {},
+              "type": {}
+            },
+            "now": function () {},
+            "onresourcetimingbufferfull": {},
+            "removeEventListener": function () {},
+            "setResourceTimingBufferSize": function () {},
+            "timeOrigin": {},
+            "timing": {
+              "connectEnd": {},
+              "connectStart": {},
+              "domComplete": {},
+              "domContentLoadedEventEnd": {},
+              "domContentLoadedEventStart": {},
+              "domInteractive": {},
+              "domLoading": {},
+              "domainLookupEnd": {},
+              "domainLookupStart": {},
+              "fetchStart": {},
+              "loadEventEnd": {},
+              "loadEventStart": {},
+              "navigationStart": {},
+              "redirectEnd": {},
+              "redirectStart": {},
+              "requestStart": {},
+              "responseEnd": {},
+              "responseStart": {},
+              "secureConnectionStart": {},
+              "toJSON": function () {},
+              "unloadEventEnd": {},
+              "unloadEventStart": {}
+            },
+            "toJSON": function () {}
+          },
+          "personalbar": {
+            "visible": {}
+          },
+          "postMessage": function () {},
+          "print": function () {},
+          "prompt": function () {},
+          "queueMicrotask": function () {},
+          "reagent": {
+            "core": {
+              "force_update_all": function () {}
+            }
+          },
+          "releaseEvents": function () {},
+          "removeEventListener": function () {},
+          "requestAnimationFrame": function () {},
+          "requestIdleCallback": function () {},
+          "resizeBy": function () {},
+          "resizeTo": function () {},
+          "screen": {
+            "availHeight": {},
+            "availLeft": {},
+            "availTop": {},
+            "availWidth": {},
+            "colorDepth": {},
+            "height": {},
+            "orientation": {
+              "addEventListener": function () {},
+              "angle": {},
+              "dispatchEvent": function () {},
+              "lock": function () {},
+              "onchange": {},
+              "removeEventListener": function () {},
+              "type": {},
+              "unlock": function () {}
+            },
+            "pixelDepth": {},
+            "width": {}
+          },
+          "screenLeft": {},
+          "screenTop": {},
+          "screenX": {},
+          "screenY": {},
+          "scroll": function () {},
+          "scrollBy": function () {},
+          "scrollTo": function () {},
+          "scrollX": {},
+          "scrollY": {},
+          "scrollbars": {
+            "visible": {}
+          },
+          "self": {},
+          "sessionStorage": {
+            "clear": function () {},
+            "getItem": function () {},
+            "key": function () {},
+            "length": {},
+            "removeItem": function () {},
+            "setItem": function () {}
+          },
+          "setInterval": function () {},
+          "setTimeout": function () {},
+          "speechSynthesis": {
+            "addEventListener": function () {},
+            "cancel": function () {},
+            "dispatchEvent": function () {},
+            "getVoices": function () {},
+            "onvoiceschanged": {},
+            "pause": function () {},
+            "paused": {},
+            "pending": {},
+            "removeEventListener": function () {},
+            "resume": function () {},
+            "speak": function () {},
+            "speaking": {}
+          },
+          "status": {},
+          "statusbar": {
+            "visible": {}
+          },
+          "stop": function () {},
+          "styleMedia": {
+            "matchMedium": function () {},
+            "type": {}
+          },
+          "toolbar": {
+            "visible": {}
+          },
+          "top": {},
+          "trustedTypes": {
+            "addEventListener": function () {},
+            "createPolicy": function () {},
+            "defaultPolicy": {},
+            "dispatchEvent": function () {},
+            "emptyHTML": {
+              "toString": function () {}
+            },
+            "emptyScript": {
+              "toString": function () {}
+            },
+            "getAttributeType": function () {},
+            "getPropertyType": function () {},
+            "getTypeMapping": function () {},
+            "isHTML": function () {},
+            "isScript": function () {},
+            "isScriptURL": function () {},
+            "removeEventListener": function () {}
+          },
+          "visualViewport": {
+            "addEventListener": function () {},
+            "dispatchEvent": function () {},
+            "height": {},
+            "offsetLeft": {},
+            "offsetTop": {},
+            "onresize": {},
+            "onscroll": {},
+            "pageLeft": {},
+            "pageTop": {},
+            "removeEventListener": function () {},
+            "scale": {},
+            "width": {}
+          },
+          "webkitCancelAnimationFrame": function () {},
+          "webkitRequestAnimationFrame": function () {},
+          "webkitRequestFileSystem": function () {},
+          "webkitResolveLocalFileSystemURL": function () {},
+          "webkitStorageInfo": {
+            "PERSISTENT": {},
+            "TEMPORARY": {},
+            "queryUsageAndQuota": function () {},
+            "requestQuota": function () {}
+          },
+          "window": {}
+        },
+        "trustedTypes": {
+          "addEventListener": function () {},
+          "createPolicy": function () {},
+          "defaultPolicy": {},
+          "dispatchEvent": function () {},
+          "emptyHTML": {
+            "toString": function () {}
+          },
+          "emptyScript": {
+            "toString": function () {}
+          },
+          "getAttributeType": function () {},
+          "getPropertyType": function () {},
+          "getTypeMapping": function () {},
+          "isHTML": function () {},
+          "isScript": function () {},
+          "isScriptURL": function () {},
+          "removeEventListener": function () {}
+        },
+        "visualViewport": {
+          "addEventListener": function () {},
+          "dispatchEvent": function () {},
+          "height": {},
+          "offsetLeft": {},
+          "offsetTop": {},
+          "onresize": {},
+          "onscroll": {},
+          "pageLeft": {},
+          "pageTop": {},
+          "removeEventListener": function () {},
+          "scale": {},
+          "width": {}
+        },
+        "webkitCancelAnimationFrame": function () {},
+        "webkitRequestAnimationFrame": function () {},
+        "webkitRequestFileSystem": function () {},
+        "webkitResolveLocalFileSystemURL": function () {},
+        "webkitStorageInfo": {
+          "PERSISTENT": {},
+          "TEMPORARY": {},
+          "queryUsageAndQuota": function () {},
+          "requestQuota": function () {}
+        },
+        "window": {}
+      },
+      "wrap": function () {}
+    },
+    "Core/Interaction.js": {},
+    "Core/Legend.js": function () {},
+    "Core/MSPointer.js": function () {},
+    "Core/Options.js": {
+      "dateFormat": function () {},
+      "defaultOptions": {
+        "caption": {
+          "align": {},
+          "margin": {},
+          "text": {},
+          "verticalAlign": {}
+        },
+        "chart": {
+          "backgroundColor": {},
+          "borderColor": {},
+          "borderRadius": {},
+          "colorCount": {},
+          "defaultSeriesType": {},
+          "height": {},
+          "ignoreHiddenSeries": {},
+          "plotBorderColor": {},
+          "resetZoomButton": {
+            "position": {
+              "align": {},
+              "x": {},
+              "y": {}
+            },
+            "theme": {
+              "zIndex": {}
+            }
+          },
+          "spacing": {},
+          "styledMode": {},
+          "width": {}
+        },
+        "closure_uid_659125373": {},
+        "colors": {},
+        "credits": {
+          "enabled": {},
+          "href": {},
+          "position": {
+            "align": {},
+            "verticalAlign": {},
+            "x": {},
+            "y": {}
+          },
+          "style": {
+            "color": {},
+            "cursor": {},
+            "fontSize": {}
+          },
+          "text": {}
+        },
+        "global": {},
+        "labels": {
+          "style": {
+            "color": {},
+            "position": {}
+          }
+        },
+        "lang": {
+          "decimalPoint": {},
+          "loading": {},
+          "months": {},
+          "numericSymbols": {},
+          "resetZoom": {},
+          "resetZoomTitle": {},
+          "shortMonths": {},
+          "thousandsSep": {},
+          "weekdays": {}
+        },
+        "legend": {
+          "align": {},
+          "alignColumns": {},
+          "borderColor": {},
+          "borderRadius": {},
+          "enabled": {},
+          "itemCheckboxStyle": {
+            "height": {},
+            "position": {},
+            "width": {}
+          },
+          "itemHiddenStyle": {
+            "color": {}
+          },
+          "itemHoverStyle": {
+            "color": {}
+          },
+          "itemStyle": {
+            "color": {},
+            "cursor": {},
+            "fontSize": {},
+            "fontWeight": {},
+            "textOverflow": {}
+          },
+          "labelFormatter": function () {},
+          "layout": {},
+          "navigation": {
+            "activeColor": {},
+            "inactiveColor": {}
+          },
+          "shadow": {},
+          "squareSymbol": {},
+          "symbolPadding": {},
+          "title": {
+            "style": {
+              "fontWeight": {}
+            }
+          },
+          "verticalAlign": {},
+          "x": {},
+          "y": {}
+        },
+        "loading": {
+          "labelStyle": {
+            "fontWeight": {},
+            "position": {},
+            "top": {}
+          },
+          "style": {
+            "backgroundColor": {},
+            "opacity": {},
+            "position": {},
+            "textAlign": {}
+          }
+        },
+        "plotOptions": {
+          "area": {
+            "allowPointSelect": {},
+            "animation": {
+              "duration": {}
+            },
+            "closure_uid_659125373": {},
+            "crisp": {},
+            "cropThreshold": {},
+            "dataLabels": {
+              "align": {},
+              "animation": {},
+              "defer": {},
+              "formatter": function () {},
+              "padding": {},
+              "style": {
+                "color": {},
+                "fontSize": {},
+                "fontWeight": {},
+                "textOutline": {}
+              },
+              "verticalAlign": {},
+              "x": {},
+              "y": {}
+            },
+            "events": {},
+            "findNearestPointBy": {},
+            "lineWidth": {},
+            "marker": {
+              "closure_uid_659125373": {},
+              "enabledThreshold": {},
+              "lineColor": {},
+              "lineWidth": {},
+              "radius": {},
+              "states": {
+                "closure_uid_659125373": {},
+                "hover": {
+                  "animation": {
+                    "closure_uid_659125373": {},
+                    "duration": {}
+                  },
+                  "closure_uid_659125373": {},
+                  "enabled": {},
+                  "lineWidthPlus": {},
+                  "radiusPlus": {}
+                },
+                "normal": {
+                  "animation": {}
+                },
+                "select": {
+                  "fillColor": {},
+                  "lineColor": {},
+                  "lineWidth": {}
+                }
+              }
+            },
+            "opacity": {},
+            "point": {
+              "events": {}
+            },
+            "pointRange": {},
+            "showCheckbox": {},
+            "softThreshold": {},
+            "states": {
+              "hover": {
+                "animation": {
+                  "duration": {}
+                },
+                "halo": {
+                  "opacity": {},
+                  "size": {}
+                },
+                "lineWidthPlus": {},
+                "marker": {}
+              },
+              "inactive": {
+                "animation": {
+                  "duration": {}
+                },
+                "opacity": {}
+              },
+              "normal": {
+                "animation": {}
+              },
+              "select": {
+                "animation": {
+                  "duration": {}
+                }
+              }
+            },
+            "stickyTracking": {},
+            "threshold": {},
+            "turboThreshold": {}
+          },
+          "areaspline": {
+            "allowPointSelect": {},
+            "animation": {
+              "duration": {}
+            },
+            "closure_uid_659125373": {},
+            "crisp": {},
+            "cropThreshold": {},
+            "dataLabels": {
+              "align": {},
+              "animation": {},
+              "defer": {},
+              "formatter": function () {},
+              "padding": {},
+              "style": {
+                "color": {},
+                "fontSize": {},
+                "fontWeight": {},
+                "textOutline": {}
+              },
+              "verticalAlign": {},
+              "x": {},
+              "y": {}
+            },
+            "events": {},
+            "findNearestPointBy": {},
+            "lineWidth": {},
+            "marker": {
+              "closure_uid_659125373": {},
+              "enabledThreshold": {},
+              "lineColor": {},
+              "lineWidth": {},
+              "radius": {},
+              "states": {
+                "closure_uid_659125373": {},
+                "hover": {
+                  "animation": {
+                    "closure_uid_659125373": {},
+                    "duration": {}
+                  },
+                  "closure_uid_659125373": {},
+                  "enabled": {},
+                  "lineWidthPlus": {},
+                  "radiusPlus": {}
+                },
+                "normal": {
+                  "animation": {}
+                },
+                "select": {
+                  "fillColor": {},
+                  "lineColor": {},
+                  "lineWidth": {}
+                }
+              }
+            },
+            "opacity": {},
+            "point": {
+              "events": {}
+            },
+            "pointRange": {},
+            "showCheckbox": {},
+            "softThreshold": {},
+            "states": {
+              "hover": {
+                "animation": {
+                  "duration": {}
+                },
+                "halo": {
+                  "opacity": {},
+                  "size": {}
+                },
+                "lineWidthPlus": {},
+                "marker": {}
+              },
+              "inactive": {
+                "animation": {
+                  "duration": {}
+                },
+                "opacity": {}
+              },
+              "normal": {
+                "animation": {}
+              },
+              "select": {
+                "animation": {
+                  "duration": {}
+                }
+              }
+            },
+            "stickyTracking": {},
+            "threshold": {},
+            "turboThreshold": {}
+          },
+          "bar": {
+            "allowPointSelect": {},
+            "animation": {
+              "duration": {}
+            },
+            "borderColor": {},
+            "borderRadius": {},
+            "centerInCategory": {},
+            "crisp": {},
+            "cropThreshold": {},
+            "dataLabels": {
+              "align": {},
+              "animation": {},
+              "defer": {},
+              "formatter": function () {},
+              "padding": {},
+              "style": {
+                "color": {},
+                "fontSize": {},
+                "fontWeight": {},
+                "textOutline": {}
+              },
+              "verticalAlign": {},
+              "x": {},
+              "y": {}
+            },
+            "events": {},
+            "findNearestPointBy": {},
+            "groupPadding": {},
+            "lineWidth": {},
+            "marker": {},
+            "minPointLength": {},
+            "opacity": {},
+            "point": {
+              "events": {}
+            },
+            "pointPadding": {},
+            "pointRange": {},
+            "showCheckbox": {},
+            "softThreshold": {},
+            "startFromThreshold": {},
+            "states": {
+              "hover": {
+                "animation": {
+                  "duration": {}
+                },
+                "brightness": {},
+                "halo": {},
+                "lineWidthPlus": {},
+                "marker": {}
+              },
+              "inactive": {
+                "animation": {
+                  "duration": {}
+                },
+                "opacity": {}
+              },
+              "normal": {
+                "animation": {}
+              },
+              "select": {
+                "animation": {
+                  "duration": {}
+                },
+                "borderColor": {},
+                "color": {}
+              }
+            },
+            "stickyTracking": {},
+            "threshold": {},
+            "tooltip": {
+              "distance": {}
+            },
+            "turboThreshold": {}
+          },
+          "closure_uid_659125373": {},
+          "column": {
+            "allowPointSelect": {},
+            "animation": {
+              "duration": {}
+            },
+            "borderColor": {},
+            "borderRadius": {},
+            "centerInCategory": {},
+            "crisp": {},
+            "cropThreshold": {},
+            "dataLabels": {
+              "align": {},
+              "animation": {},
+              "defer": {},
+              "formatter": function () {},
+              "padding": {},
+              "style": {
+                "color": {},
+                "fontSize": {},
+                "fontWeight": {},
+                "textOutline": {}
+              },
+              "verticalAlign": {},
+              "x": {},
+              "y": {}
+            },
+            "events": {},
+            "findNearestPointBy": {},
+            "groupPadding": {},
+            "lineWidth": {},
+            "marker": {},
+            "minPointLength": {},
+            "opacity": {},
+            "point": {
+              "events": {}
+            },
+            "pointPadding": {},
+            "pointRange": {},
+            "showCheckbox": {},
+            "softThreshold": {},
+            "startFromThreshold": {},
+            "states": {
+              "hover": {
+                "animation": {
+                  "duration": {}
+                },
+                "brightness": {},
+                "halo": {},
+                "lineWidthPlus": {},
+                "marker": {}
+              },
+              "inactive": {
+                "animation": {
+                  "duration": {}
+                },
+                "opacity": {}
+              },
+              "normal": {
+                "animation": {}
+              },
+              "select": {
+                "animation": {
+                  "duration": {}
+                },
+                "borderColor": {},
+                "color": {}
+              }
+            },
+            "stickyTracking": {},
+            "threshold": {},
+            "tooltip": {
+              "distance": {}
+            },
+            "turboThreshold": {}
+          },
+          "line": {
+            "allowPointSelect": {},
+            "animation": {
+              "duration": {}
+            },
+            "closure_uid_659125373": {},
+            "crisp": {},
+            "cropThreshold": {},
+            "dataLabels": {
+              "align": {},
+              "animation": {},
+              "defer": {},
+              "formatter": function () {},
+              "padding": {},
+              "style": {
+                "color": {},
+                "fontSize": {},
+                "fontWeight": {},
+                "textOutline": {}
+              },
+              "verticalAlign": {},
+              "x": {},
+              "y": {}
+            },
+            "events": {},
+            "findNearestPointBy": {},
+            "lineWidth": {},
+            "marker": {
+              "closure_uid_659125373": {},
+              "enabledThreshold": {},
+              "lineColor": {},
+              "lineWidth": {},
+              "radius": {},
+              "states": {
+                "closure_uid_659125373": {},
+                "hover": {
+                  "animation": {
+                    "closure_uid_659125373": {},
+                    "duration": {}
+                  },
+                  "closure_uid_659125373": {},
+                  "enabled": {},
+                  "lineWidthPlus": {},
+                  "radiusPlus": {}
+                },
+                "normal": {
+                  "animation": {}
+                },
+                "select": {
+                  "fillColor": {},
+                  "lineColor": {},
+                  "lineWidth": {}
+                }
+              }
+            },
+            "opacity": {},
+            "point": {
+              "events": {}
+            },
+            "pointRange": {},
+            "showCheckbox": {},
+            "softThreshold": {},
+            "states": {
+              "hover": {
+                "animation": {
+                  "duration": {}
+                },
+                "halo": {
+                  "opacity": {},
+                  "size": {}
+                },
+                "lineWidthPlus": {},
+                "marker": {}
+              },
+              "inactive": {
+                "animation": {
+                  "duration": {}
+                },
+                "opacity": {}
+              },
+              "normal": {
+                "animation": {}
+              },
+              "select": {
+                "animation": {
+                  "duration": {}
+                }
+              }
+            },
+            "stickyTracking": {},
+            "turboThreshold": {}
+          },
+          "pie": {
+            "allowPointSelect": {},
+            "animation": {
+              "duration": {}
+            },
+            "borderColor": {},
+            "borderWidth": {},
+            "center": {},
+            "clip": {},
+            "colorByPoint": {},
+            "crisp": {},
+            "cropThreshold": {},
+            "dataLabels": {
+              "align": {},
+              "allowOverlap": {},
+              "animation": {},
+              "connectorPadding": {},
+              "connectorShape": {},
+              "crookDistance": {},
+              "defer": {},
+              "distance": {},
+              "enabled": {},
+              "formatter": function () {},
+              "padding": {},
+              "softConnector": {},
+              "style": {
+                "color": {},
+                "fontSize": {},
+                "fontWeight": {},
+                "textOutline": {}
+              },
+              "verticalAlign": {},
+              "x": {},
+              "y": {}
+            },
+            "events": {},
+            "fillColor": {},
+            "findNearestPointBy": {},
+            "ignoreHiddenPoint": {},
+            "inactiveOtherPoints": {},
+            "legendType": {},
+            "lineWidth": {},
+            "marker": {},
+            "opacity": {},
+            "point": {
+              "events": {}
+            },
+            "pointRange": {},
+            "showCheckbox": {},
+            "showInLegend": {},
+            "size": {},
+            "slicedOffset": {},
+            "softThreshold": {},
+            "states": {
+              "hover": {
+                "animation": {
+                  "duration": {}
+                },
+                "brightness": {},
+                "halo": {
+                  "opacity": {},
+                  "size": {}
+                },
+                "lineWidthPlus": {},
+                "marker": {}
+              },
+              "inactive": {
+                "animation": {
+                  "duration": {}
+                },
+                "opacity": {}
+              },
+              "normal": {
+                "animation": {}
+              },
+              "select": {
+                "animation": {
+                  "duration": {}
+                }
+              }
+            },
+            "stickyTracking": {},
+            "tooltip": {
+              "followPointer": {}
+            },
+            "turboThreshold": {}
+          },
+          "scatter": {
+            "allowPointSelect": {},
+            "animation": {
+              "duration": {}
+            },
+            "closure_uid_659125373": {},
+            "crisp": {},
+            "cropThreshold": {},
+            "dataLabels": {
+              "align": {},
+              "animation": {},
+              "defer": {},
+              "formatter": function () {},
+              "padding": {},
+              "style": {
+                "color": {},
+                "fontSize": {},
+                "fontWeight": {},
+                "textOutline": {}
+              },
+              "verticalAlign": {},
+              "x": {},
+              "y": {}
+            },
+            "events": {},
+            "findNearestPointBy": {},
+            "jitter": {
+              "x": {},
+              "y": {}
+            },
+            "lineWidth": {},
+            "marker": {
+              "closure_uid_659125373": {},
+              "enabled": {},
+              "enabledThreshold": {},
+              "lineColor": {},
+              "lineWidth": {},
+              "radius": {},
+              "states": {
+                "closure_uid_659125373": {},
+                "hover": {
+                  "animation": {
+                    "closure_uid_659125373": {},
+                    "duration": {}
+                  },
+                  "closure_uid_659125373": {},
+                  "enabled": {},
+                  "lineWidthPlus": {},
+                  "radiusPlus": {}
+                },
+                "normal": {
+                  "animation": {}
+                },
+                "select": {
+                  "fillColor": {},
+                  "lineColor": {},
+                  "lineWidth": {}
+                }
+              }
+            },
+            "opacity": {},
+            "point": {
+              "events": {}
+            },
+            "pointRange": {},
+            "showCheckbox": {},
+            "softThreshold": {},
+            "states": {
+              "hover": {
+                "animation": {
+                  "duration": {}
+                },
+                "halo": {
+                  "opacity": {},
+                  "size": {}
+                },
+                "lineWidthPlus": {},
+                "marker": {}
+              },
+              "inactive": {
+                "animation": {
+                  "duration": {}
+                },
+                "opacity": {}
+              },
+              "normal": {
+                "animation": {}
+              },
+              "select": {
+                "animation": {
+                  "duration": {}
+                }
+              }
+            },
+            "stickyTracking": {},
+            "tooltip": {
+              "headerFormat": {},
+              "pointFormat": {}
+            },
+            "turboThreshold": {}
+          },
+          "spline": {
+            "allowPointSelect": {},
+            "animation": {
+              "duration": {}
+            },
+            "closure_uid_659125373": {},
+            "crisp": {},
+            "cropThreshold": {},
+            "dataLabels": {
+              "align": {},
+              "animation": {},
+              "defer": {},
+              "formatter": function () {},
+              "padding": {},
+              "style": {
+                "color": {},
+                "fontSize": {},
+                "fontWeight": {},
+                "textOutline": {}
+              },
+              "verticalAlign": {},
+              "x": {},
+              "y": {}
+            },
+            "events": {},
+            "findNearestPointBy": {},
+            "lineWidth": {},
+            "marker": {
+              "closure_uid_659125373": {},
+              "enabledThreshold": {},
+              "lineColor": {},
+              "lineWidth": {},
+              "radius": {},
+              "states": {
+                "closure_uid_659125373": {},
+                "hover": {
+                  "animation": {
+                    "closure_uid_659125373": {},
+                    "duration": {}
+                  },
+                  "closure_uid_659125373": {},
+                  "enabled": {},
+                  "lineWidthPlus": {},
+                  "radiusPlus": {}
+                },
+                "normal": {
+                  "animation": {}
+                },
+                "select": {
+                  "fillColor": {},
+                  "lineColor": {},
+                  "lineWidth": {}
+                }
+              }
+            },
+            "opacity": {},
+            "point": {
+              "events": {}
+            },
+            "pointRange": {},
+            "showCheckbox": {},
+            "softThreshold": {},
+            "states": {
+              "hover": {
+                "animation": {
+                  "duration": {}
+                },
+                "halo": {
+                  "opacity": {},
+                  "size": {}
+                },
+                "lineWidthPlus": {},
+                "marker": {}
+              },
+              "inactive": {
+                "animation": {
+                  "duration": {}
+                },
+                "opacity": {}
+              },
+              "normal": {
+                "animation": {}
+              },
+              "select": {
+                "animation": {
+                  "duration": {}
+                }
+              }
+            },
+            "stickyTracking": {},
+            "turboThreshold": {}
+          }
+        },
+        "subtitle": {
+          "align": {},
+          "text": {},
+          "widthAdjust": {}
+        },
+        "symbols": {},
+        "time": {
+          "Date": {},
+          "getTimezoneOffset": {},
+          "timezone": {},
+          "timezoneOffset": {},
+          "useUTC": {}
+        },
+        "title": {
+          "align": {},
+          "margin": {},
+          "text": {},
+          "widthAdjust": {}
+        },
+        "tooltip": {
+          "animation": {},
+          "backgroundColor": {},
+          "borderRadius": {},
+          "borderWidth": {},
+          "dateTimeLabelFormats": {
+            "day": {},
+            "hour": {},
+            "millisecond": {},
+            "minute": {},
+            "month": {},
+            "second": {},
+            "week": {},
+            "year": {}
+          },
+          "enabled": {},
+          "footerFormat": {},
+          "headerFormat": {},
+          "padding": {},
+          "pointFormat": {},
+          "shadow": {},
+          "snap": {},
+          "style": {
+            "color": {},
+            "cursor": {},
+            "fontSize": {},
+            "whiteSpace": {}
+          }
+        }
+      },
+      "time": {
+        "Date": function () {},
+        "dateFormat": function () {},
+        "get": function () {},
+        "getTimeTicks": function () {},
+        "getTimezoneOffset": function () {},
+        "makeTime": function () {},
+        "options": {
+          "Date": {},
+          "getTimezoneOffset": {},
+          "timezone": {},
+          "timezoneOffset": {},
+          "useUTC": {}
+        },
+        "resolveDTLFormat": function () {},
+        "set": function () {},
+        "timezoneOffset": {},
+        "timezoneOffsetFunction": function () {},
+        "update": function () {},
+        "useUTC": {},
+        "variableTimezone": {}
+      }
+    },
+    "Core/Pointer.js": function () {},
+    "Core/Renderer/HTML/HTMLElement.js": function () {},
+    "Core/Renderer/HTML/HTMLRenderer.js": function () {},
+    "Core/Renderer/SVG/SVGElement.js": function () {},
+    "Core/Renderer/SVG/SVGLabel.js": {
+      "emptyBBox": {
+        "height": {},
+        "width": {},
+        "x": {},
+        "y": {}
+      },
+      "textProps": {}
+    },
+    "Core/Renderer/SVG/SVGRenderer.js": function () {},
+    "Core/Responsive.js": {},
+    "Core/Series/CartesianSeries.js": function () {},
+    "Core/Series/DataLabels.js": {},
+    "Core/Series/Point.js": function () {},
+    "Core/Series/Series.js": {
+      "addSeries": function () {},
+      "cleanRecursively": function () {},
+      "defaultOptions": {
+        "type": {}
+      },
+      "getSeries": function () {},
+      "seriesType": function () {},
+      "seriesTypes": {
+        "area": function () {},
+        "areaspline": function () {},
+        "bar": function () {},
+        "column": function () {},
+        "line": function () {},
+        "pie": function () {},
+        "scatter": function () {},
+        "spline": function () {}
+      }
+    },
+    "Core/Time.js": function () {},
+    "Core/Tooltip.js": function () {},
+    "Core/Utilities.js": {
+      "addEvent": function () {},
+      "arrayMax": function () {},
+      "arrayMin": function () {},
+      "attr": function () {},
+      "clamp": function () {},
+      "clearTimeout": function () {},
+      "correctFloat": function () {},
+      "createElement": function () {},
+      "css": function () {},
+      "defined": function () {},
+      "destroyObjectProperties": function () {},
+      "discardElement": function () {},
+      "erase": function () {},
+      "error": {
+        "messages": {}
+      },
+      "extend": function () {},
+      "extendClass": function () {},
+      "find": function () {},
+      "fireEvent": function () {},
+      "format": function () {},
+      "getMagnitude": function () {},
+      "getNestedProperty": function () {},
+      "getOptions": function () {},
+      "getStyle": function () {},
+      "inArray": function () {},
+      "isArray": function () {},
+      "isClass": function () {},
+      "isDOMElement": function () {},
+      "isFunction": function () {},
+      "isNumber": function () {},
+      "isObject": function () {},
+      "isString": function () {},
+      "merge": function () {},
+      "normalizeTickInterval": function () {},
+      "numberFormat": function () {},
+      "objectEach": function () {},
+      "offset": function () {},
+      "pInt": function () {},
+      "pad": function () {},
+      "pick": function () {},
+      "relativeLength": function () {},
+      "removeEvent": function () {},
+      "setOptions": function () {},
+      "splat": function () {},
+      "stableSort": function () {},
+      "syncTimeout": function () {},
+      "timeUnits": {
+        "day": {},
+        "hour": {},
+        "millisecond": {},
+        "minute": {},
+        "month": {},
+        "second": {},
+        "week": {},
+        "year": {}
+      },
+      "uniqueKey": function () {},
+      "useSerialIds": function () {},
+      "wrap": function () {}
+    },
+    "Extensions/OverlappingDataLabels.js": {},
+    "Extensions/ScrollablePlotArea.js": {},
+    "Extensions/Stacking.js": function () {},
+    "Mixins/CenteredSeries.js": {
+      "getCenter": function () {},
+      "getStartAndEndRadians": function () {}
+    },
+    "Mixins/LegendSymbol.js": {
+      "drawLineMarker": function () {},
+      "drawRectangle": function () {}
+    },
+    "Series/AreaSeries.js": {},
+    "Series/AreaSplineSeries.js": {},
+    "Series/BarSeries.js": {},
+    "Series/ColumnSeries.js": function () {},
+    "Series/LineSeries.js": function () {},
+    "Series/PieSeries.js": {},
+    "Series/ScatterSeries.js": {},
+    "Series/SplineSeries.js": {},
     "masters/highcharts.src.js": {
       "Axis": {
         "defaultBottomAxisOptions": {
@@ -305,6 +6365,7 @@ var Highcharts = {
           "showLastLabel": {},
           "stackLabels": {
             "allowOverlap": {},
+            "animation": {},
             "crop": {},
             "enabled": {},
             "formatter": function () {},
@@ -353,15 +6414,7 @@ var Highcharts = {
       "Series": function () {},
       "StackItem": function () {},
       "Tick": function () {},
-      "Time": {
-        "defaultOptions": {
-          "Date": {},
-          "getTimezoneOffset": {},
-          "timezone": {},
-          "timezoneOffset": {},
-          "useUTC": {}
-        }
-      },
+      "Time": function () {},
       "Tooltip": function () {},
       "TrackerMixin": {
         "drawTrackerGraph": function () {},
@@ -379,6 +6432,7 @@ var Highcharts = {
       "charts": {},
       "cleanRecursively": function () {},
       "clearTimeout": function () {},
+      "closure_uid_659125373": {},
       "color": function () {},
       "correctFloat": function () {},
       "createElement": function () {},
@@ -415,6 +6469,7 @@ var Highcharts = {
           "styledMode": {},
           "width": {}
         },
+        "closure_uid_659125373": {},
         "colors": {},
         "credits": {
           "enabled": {},
@@ -511,10 +6566,13 @@ var Highcharts = {
             "animation": {
               "duration": {}
             },
+            "closure_uid_659125373": {},
             "crisp": {},
             "cropThreshold": {},
             "dataLabels": {
               "align": {},
+              "animation": {},
+              "defer": {},
               "formatter": function () {},
               "padding": {},
               "style": {
@@ -531,16 +6589,19 @@ var Highcharts = {
             "findNearestPointBy": {},
             "lineWidth": {},
             "marker": {
+              "closure_uid_659125373": {},
               "enabledThreshold": {},
               "lineColor": {},
               "lineWidth": {},
               "radius": {},
               "states": {
+                "closure_uid_659125373": {},
                 "hover": {
                   "animation": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "duration": {}
                   },
+                  "closure_uid_659125373": {},
                   "enabled": {},
                   "lineWidthPlus": {},
                   "radiusPlus": {}
@@ -598,10 +6659,13 @@ var Highcharts = {
             "animation": {
               "duration": {}
             },
+            "closure_uid_659125373": {},
             "crisp": {},
             "cropThreshold": {},
             "dataLabels": {
               "align": {},
+              "animation": {},
+              "defer": {},
               "formatter": function () {},
               "padding": {},
               "style": {
@@ -618,16 +6682,19 @@ var Highcharts = {
             "findNearestPointBy": {},
             "lineWidth": {},
             "marker": {
+              "closure_uid_659125373": {},
               "enabledThreshold": {},
               "lineColor": {},
               "lineWidth": {},
               "radius": {},
               "states": {
+                "closure_uid_659125373": {},
                 "hover": {
                   "animation": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "duration": {}
                   },
+                  "closure_uid_659125373": {},
                   "enabled": {},
                   "lineWidthPlus": {},
                   "radiusPlus": {}
@@ -687,10 +6754,13 @@ var Highcharts = {
             },
             "borderColor": {},
             "borderRadius": {},
+            "centerInCategory": {},
             "crisp": {},
             "cropThreshold": {},
             "dataLabels": {
               "align": {},
+              "animation": {},
+              "defer": {},
               "formatter": function () {},
               "padding": {},
               "style": {
@@ -752,6 +6822,7 @@ var Highcharts = {
             },
             "turboThreshold": {}
           },
+          "closure_uid_659125373": {},
           "column": {
             "allowPointSelect": {},
             "animation": {
@@ -759,10 +6830,13 @@ var Highcharts = {
             },
             "borderColor": {},
             "borderRadius": {},
+            "centerInCategory": {},
             "crisp": {},
             "cropThreshold": {},
             "dataLabels": {
               "align": {},
+              "animation": {},
+              "defer": {},
               "formatter": function () {},
               "padding": {},
               "style": {
@@ -829,10 +6903,13 @@ var Highcharts = {
             "animation": {
               "duration": {}
             },
+            "closure_uid_659125373": {},
             "crisp": {},
             "cropThreshold": {},
             "dataLabels": {
               "align": {},
+              "animation": {},
+              "defer": {},
               "formatter": function () {},
               "padding": {},
               "style": {
@@ -849,16 +6926,19 @@ var Highcharts = {
             "findNearestPointBy": {},
             "lineWidth": {},
             "marker": {
+              "closure_uid_659125373": {},
               "enabledThreshold": {},
               "lineColor": {},
               "lineWidth": {},
               "radius": {},
               "states": {
+                "closure_uid_659125373": {},
                 "hover": {
                   "animation": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "duration": {}
                   },
+                  "closure_uid_659125373": {},
                   "enabled": {},
                   "lineWidthPlus": {},
                   "radiusPlus": {}
@@ -925,9 +7005,11 @@ var Highcharts = {
             "dataLabels": {
               "align": {},
               "allowOverlap": {},
+              "animation": {},
               "connectorPadding": {},
               "connectorShape": {},
               "crookDistance": {},
+              "defer": {},
               "distance": {},
               "enabled": {},
               "formatter": function () {},
@@ -1000,10 +7082,13 @@ var Highcharts = {
             "animation": {
               "duration": {}
             },
+            "closure_uid_659125373": {},
             "crisp": {},
             "cropThreshold": {},
             "dataLabels": {
               "align": {},
+              "animation": {},
+              "defer": {},
               "formatter": function () {},
               "padding": {},
               "style": {
@@ -1024,17 +7109,20 @@ var Highcharts = {
             },
             "lineWidth": {},
             "marker": {
+              "closure_uid_659125373": {},
               "enabled": {},
               "enabledThreshold": {},
               "lineColor": {},
               "lineWidth": {},
               "radius": {},
               "states": {
+                "closure_uid_659125373": {},
                 "hover": {
                   "animation": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "duration": {}
                   },
+                  "closure_uid_659125373": {},
                   "enabled": {},
                   "lineWidthPlus": {},
                   "radiusPlus": {}
@@ -1095,10 +7183,13 @@ var Highcharts = {
             "animation": {
               "duration": {}
             },
+            "closure_uid_659125373": {},
             "crisp": {},
             "cropThreshold": {},
             "dataLabels": {
               "align": {},
+              "animation": {},
+              "defer": {},
               "formatter": function () {},
               "padding": {},
               "style": {
@@ -1115,16 +7206,19 @@ var Highcharts = {
             "findNearestPointBy": {},
             "lineWidth": {},
             "marker": {
+              "closure_uid_659125373": {},
               "enabledThreshold": {},
               "lineColor": {},
               "lineWidth": {},
               "radius": {},
               "states": {
+                "closure_uid_659125373": {},
                 "hover": {
                   "animation": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "duration": {}
                   },
+                  "closure_uid_659125373": {},
                   "enabled": {},
                   "lineWidthPlus": {},
                   "radiusPlus": {}
@@ -1226,699 +7320,6 @@ var Highcharts = {
           }
         }
       },
-      "defaultPlotOptions": {
-        "area": {
-          "allowPointSelect": {},
-          "animation": {
-            "duration": {}
-          },
-          "closure_uid_347133726": {},
-          "crisp": {},
-          "cropThreshold": {},
-          "dataLabels": {
-            "align": {},
-            "formatter": function () {},
-            "padding": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            },
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "events": {},
-          "findNearestPointBy": {},
-          "lineWidth": {},
-          "marker": {
-            "closure_uid_347133726": {},
-            "enabledThreshold": {},
-            "lineColor": {},
-            "lineWidth": {},
-            "radius": {},
-            "states": {
-              "closure_uid_347133726": {},
-              "hover": {
-                "animation": {
-                  "closure_uid_347133726": {},
-                  "duration": {}
-                },
-                "closure_uid_347133726": {},
-                "enabled": {},
-                "lineWidthPlus": {},
-                "radiusPlus": {}
-              },
-              "normal": {
-                "animation": {}
-              },
-              "select": {
-                "fillColor": {},
-                "lineColor": {},
-                "lineWidth": {}
-              }
-            }
-          },
-          "opacity": {},
-          "point": {
-            "events": {}
-          },
-          "pointRange": {},
-          "showCheckbox": {},
-          "softThreshold": {},
-          "states": {
-            "hover": {
-              "animation": {
-                "duration": {}
-              },
-              "halo": {
-                "opacity": {},
-                "size": {}
-              },
-              "lineWidthPlus": {},
-              "marker": {}
-            },
-            "inactive": {
-              "animation": {
-                "duration": {}
-              },
-              "opacity": {}
-            },
-            "normal": {
-              "animation": {}
-            },
-            "select": {
-              "animation": {
-                "duration": {}
-              }
-            }
-          },
-          "stickyTracking": {},
-          "threshold": {},
-          "turboThreshold": {}
-        },
-        "areaspline": {
-          "allowPointSelect": {},
-          "animation": {
-            "duration": {}
-          },
-          "closure_uid_347133726": {},
-          "crisp": {},
-          "cropThreshold": {},
-          "dataLabels": {
-            "align": {},
-            "formatter": function () {},
-            "padding": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            },
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "events": {},
-          "findNearestPointBy": {},
-          "lineWidth": {},
-          "marker": {
-            "closure_uid_347133726": {},
-            "enabledThreshold": {},
-            "lineColor": {},
-            "lineWidth": {},
-            "radius": {},
-            "states": {
-              "closure_uid_347133726": {},
-              "hover": {
-                "animation": {
-                  "closure_uid_347133726": {},
-                  "duration": {}
-                },
-                "closure_uid_347133726": {},
-                "enabled": {},
-                "lineWidthPlus": {},
-                "radiusPlus": {}
-              },
-              "normal": {
-                "animation": {}
-              },
-              "select": {
-                "fillColor": {},
-                "lineColor": {},
-                "lineWidth": {}
-              }
-            }
-          },
-          "opacity": {},
-          "point": {
-            "events": {}
-          },
-          "pointRange": {},
-          "showCheckbox": {},
-          "softThreshold": {},
-          "states": {
-            "hover": {
-              "animation": {
-                "duration": {}
-              },
-              "halo": {
-                "opacity": {},
-                "size": {}
-              },
-              "lineWidthPlus": {},
-              "marker": {}
-            },
-            "inactive": {
-              "animation": {
-                "duration": {}
-              },
-              "opacity": {}
-            },
-            "normal": {
-              "animation": {}
-            },
-            "select": {
-              "animation": {
-                "duration": {}
-              }
-            }
-          },
-          "stickyTracking": {},
-          "threshold": {},
-          "turboThreshold": {}
-        },
-        "bar": {
-          "allowPointSelect": {},
-          "animation": {
-            "duration": {}
-          },
-          "borderColor": {},
-          "borderRadius": {},
-          "crisp": {},
-          "cropThreshold": {},
-          "dataLabels": {
-            "align": {},
-            "formatter": function () {},
-            "padding": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            },
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "events": {},
-          "findNearestPointBy": {},
-          "groupPadding": {},
-          "lineWidth": {},
-          "marker": {},
-          "minPointLength": {},
-          "opacity": {},
-          "point": {
-            "events": {}
-          },
-          "pointPadding": {},
-          "pointRange": {},
-          "showCheckbox": {},
-          "softThreshold": {},
-          "startFromThreshold": {},
-          "states": {
-            "hover": {
-              "animation": {
-                "duration": {}
-              },
-              "brightness": {},
-              "halo": {},
-              "lineWidthPlus": {},
-              "marker": {}
-            },
-            "inactive": {
-              "animation": {
-                "duration": {}
-              },
-              "opacity": {}
-            },
-            "normal": {
-              "animation": {}
-            },
-            "select": {
-              "animation": {
-                "duration": {}
-              },
-              "borderColor": {},
-              "color": {}
-            }
-          },
-          "stickyTracking": {},
-          "threshold": {},
-          "tooltip": {
-            "distance": {}
-          },
-          "turboThreshold": {}
-        },
-        "closure_uid_347133726": {},
-        "column": {
-          "allowPointSelect": {},
-          "animation": {
-            "duration": {}
-          },
-          "borderColor": {},
-          "borderRadius": {},
-          "crisp": {},
-          "cropThreshold": {},
-          "dataLabels": {
-            "align": {},
-            "formatter": function () {},
-            "padding": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            },
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "events": {},
-          "findNearestPointBy": {},
-          "groupPadding": {},
-          "lineWidth": {},
-          "marker": {},
-          "minPointLength": {},
-          "opacity": {},
-          "point": {
-            "events": {}
-          },
-          "pointPadding": {},
-          "pointRange": {},
-          "showCheckbox": {},
-          "softThreshold": {},
-          "startFromThreshold": {},
-          "states": {
-            "hover": {
-              "animation": {
-                "duration": {}
-              },
-              "brightness": {},
-              "halo": {},
-              "lineWidthPlus": {},
-              "marker": {}
-            },
-            "inactive": {
-              "animation": {
-                "duration": {}
-              },
-              "opacity": {}
-            },
-            "normal": {
-              "animation": {}
-            },
-            "select": {
-              "animation": {
-                "duration": {}
-              },
-              "borderColor": {},
-              "color": {}
-            }
-          },
-          "stickyTracking": {},
-          "threshold": {},
-          "tooltip": {
-            "distance": {}
-          },
-          "turboThreshold": {}
-        },
-        "line": {
-          "allowPointSelect": {},
-          "animation": {
-            "duration": {}
-          },
-          "closure_uid_347133726": {},
-          "crisp": {},
-          "cropThreshold": {},
-          "dataLabels": {
-            "align": {},
-            "formatter": function () {},
-            "padding": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            },
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "events": {},
-          "findNearestPointBy": {},
-          "lineWidth": {},
-          "marker": {
-            "closure_uid_347133726": {},
-            "enabledThreshold": {},
-            "lineColor": {},
-            "lineWidth": {},
-            "radius": {},
-            "states": {
-              "closure_uid_347133726": {},
-              "hover": {
-                "animation": {
-                  "closure_uid_347133726": {},
-                  "duration": {}
-                },
-                "closure_uid_347133726": {},
-                "enabled": {},
-                "lineWidthPlus": {},
-                "radiusPlus": {}
-              },
-              "normal": {
-                "animation": {}
-              },
-              "select": {
-                "fillColor": {},
-                "lineColor": {},
-                "lineWidth": {}
-              }
-            }
-          },
-          "opacity": {},
-          "point": {
-            "events": {}
-          },
-          "pointRange": {},
-          "showCheckbox": {},
-          "softThreshold": {},
-          "states": {
-            "hover": {
-              "animation": {
-                "duration": {}
-              },
-              "halo": {
-                "opacity": {},
-                "size": {}
-              },
-              "lineWidthPlus": {},
-              "marker": {}
-            },
-            "inactive": {
-              "animation": {
-                "duration": {}
-              },
-              "opacity": {}
-            },
-            "normal": {
-              "animation": {}
-            },
-            "select": {
-              "animation": {
-                "duration": {}
-              }
-            }
-          },
-          "stickyTracking": {},
-          "turboThreshold": {}
-        },
-        "pie": {
-          "allowPointSelect": {},
-          "animation": {
-            "duration": {}
-          },
-          "borderColor": {},
-          "borderWidth": {},
-          "center": {},
-          "clip": {},
-          "colorByPoint": {},
-          "crisp": {},
-          "cropThreshold": {},
-          "dataLabels": {
-            "align": {},
-            "allowOverlap": {},
-            "connectorPadding": {},
-            "connectorShape": {},
-            "crookDistance": {},
-            "distance": {},
-            "enabled": {},
-            "formatter": function () {},
-            "padding": {},
-            "softConnector": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            },
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "events": {},
-          "fillColor": {},
-          "findNearestPointBy": {},
-          "ignoreHiddenPoint": {},
-          "inactiveOtherPoints": {},
-          "legendType": {},
-          "lineWidth": {},
-          "marker": {},
-          "opacity": {},
-          "point": {
-            "events": {}
-          },
-          "pointRange": {},
-          "showCheckbox": {},
-          "showInLegend": {},
-          "size": {},
-          "slicedOffset": {},
-          "softThreshold": {},
-          "states": {
-            "hover": {
-              "animation": {
-                "duration": {}
-              },
-              "brightness": {},
-              "halo": {
-                "opacity": {},
-                "size": {}
-              },
-              "lineWidthPlus": {},
-              "marker": {}
-            },
-            "inactive": {
-              "animation": {
-                "duration": {}
-              },
-              "opacity": {}
-            },
-            "normal": {
-              "animation": {}
-            },
-            "select": {
-              "animation": {
-                "duration": {}
-              }
-            }
-          },
-          "stickyTracking": {},
-          "tooltip": {
-            "followPointer": {}
-          },
-          "turboThreshold": {}
-        },
-        "scatter": {
-          "allowPointSelect": {},
-          "animation": {
-            "duration": {}
-          },
-          "closure_uid_347133726": {},
-          "crisp": {},
-          "cropThreshold": {},
-          "dataLabels": {
-            "align": {},
-            "formatter": function () {},
-            "padding": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            },
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "events": {},
-          "findNearestPointBy": {},
-          "jitter": {
-            "x": {},
-            "y": {}
-          },
-          "lineWidth": {},
-          "marker": {
-            "closure_uid_347133726": {},
-            "enabled": {},
-            "enabledThreshold": {},
-            "lineColor": {},
-            "lineWidth": {},
-            "radius": {},
-            "states": {
-              "closure_uid_347133726": {},
-              "hover": {
-                "animation": {
-                  "closure_uid_347133726": {},
-                  "duration": {}
-                },
-                "closure_uid_347133726": {},
-                "enabled": {},
-                "lineWidthPlus": {},
-                "radiusPlus": {}
-              },
-              "normal": {
-                "animation": {}
-              },
-              "select": {
-                "fillColor": {},
-                "lineColor": {},
-                "lineWidth": {}
-              }
-            }
-          },
-          "opacity": {},
-          "point": {
-            "events": {}
-          },
-          "pointRange": {},
-          "showCheckbox": {},
-          "softThreshold": {},
-          "states": {
-            "hover": {
-              "animation": {
-                "duration": {}
-              },
-              "halo": {
-                "opacity": {},
-                "size": {}
-              },
-              "lineWidthPlus": {},
-              "marker": {}
-            },
-            "inactive": {
-              "animation": {
-                "duration": {}
-              },
-              "opacity": {}
-            },
-            "normal": {
-              "animation": {}
-            },
-            "select": {
-              "animation": {
-                "duration": {}
-              }
-            }
-          },
-          "stickyTracking": {},
-          "tooltip": {
-            "headerFormat": {},
-            "pointFormat": {}
-          },
-          "turboThreshold": {}
-        },
-        "spline": {
-          "allowPointSelect": {},
-          "animation": {
-            "duration": {}
-          },
-          "closure_uid_347133726": {},
-          "crisp": {},
-          "cropThreshold": {},
-          "dataLabels": {
-            "align": {},
-            "formatter": function () {},
-            "padding": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            },
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "events": {},
-          "findNearestPointBy": {},
-          "lineWidth": {},
-          "marker": {
-            "closure_uid_347133726": {},
-            "enabledThreshold": {},
-            "lineColor": {},
-            "lineWidth": {},
-            "radius": {},
-            "states": {
-              "closure_uid_347133726": {},
-              "hover": {
-                "animation": {
-                  "closure_uid_347133726": {},
-                  "duration": {}
-                },
-                "closure_uid_347133726": {},
-                "enabled": {},
-                "lineWidthPlus": {},
-                "radiusPlus": {}
-              },
-              "normal": {
-                "animation": {}
-              },
-              "select": {
-                "fillColor": {},
-                "lineColor": {},
-                "lineWidth": {}
-              }
-            }
-          },
-          "opacity": {},
-          "point": {
-            "events": {}
-          },
-          "pointRange": {},
-          "showCheckbox": {},
-          "softThreshold": {},
-          "states": {
-            "hover": {
-              "animation": {
-                "duration": {}
-              },
-              "halo": {
-                "opacity": {},
-                "size": {}
-              },
-              "lineWidthPlus": {},
-              "marker": {}
-            },
-            "inactive": {
-              "animation": {
-                "duration": {}
-              },
-              "opacity": {}
-            },
-            "normal": {
-              "animation": {}
-            },
-            "select": {
-              "animation": {
-                "duration": {}
-              }
-            }
-          },
-          "stickyTracking": {},
-          "turboThreshold": {}
-        }
-      },
       "defined": function () {},
       "deg2rad": {},
       "destroyObjectProperties": function () {},
@@ -1927,12 +7328,15 @@ var Highcharts = {
       "doc": {},
       "each": function () {},
       "erase": function () {},
-      "error": function () {},
+      "error": {
+        "messages": {}
+      },
       "extend": function () {},
       "extendClass": function () {},
       "find": function () {},
       "fireEvent": function () {},
       "format": function () {},
+      "getDeferredAnimation": function () {},
       "getMagnitude": function () {},
       "getOptions": function () {},
       "getStyle": function () {},
@@ -2023,6 +7427,7 @@ var Highcharts = {
       },
       "timers": {},
       "uniqueKey": function () {},
+      "useSerialIds": function () {},
       "version": {},
       "win": {
         "Highcharts": {},
@@ -2250,6 +7655,9 @@ var Highcharts = {
           },
           "product": {},
           "productSub": {},
+          "scheduling": {
+            "isInputPending": function () {}
+          },
           "sendBeacon": function () {},
           "userActivation": {
             "hasBeenActive": {},
@@ -2270,8 +7678,10 @@ var Highcharts = {
         },
         "close": function () {},
         "closed": {},
+        "closure_uid_659125373": {},
         "confirm": function () {},
         "createImageBitmap": function () {},
+        "crossOriginIsolated": {},
         "crypto": {
           "getRandomValues": function () {}
         },
@@ -2333,7 +7743,6 @@ var Highcharts = {
             "length": {}
           },
           "assign": function () {},
-          "fragmentDirective": {},
           "hash": {},
           "host": {},
           "hostname": {},
@@ -2548,6 +7957,9 @@ var Highcharts = {
           },
           "product": {},
           "productSub": {},
+          "scheduling": {
+            "isInputPending": function () {}
+          },
           "sendBeacon": function () {},
           "userActivation": {
             "hasBeenActive": {},
@@ -2657,7 +8069,10 @@ var Highcharts = {
         "onsuspend": {},
         "ontimeupdate": {},
         "ontoggle": {},
+        "ontransitioncancel": {},
         "ontransitionend": {},
+        "ontransitionrun": {},
+        "ontransitionstart": {},
         "onunhandledrejection": {},
         "onunload": {},
         "onvolumechange": {},
@@ -2676,6 +8091,7 @@ var Highcharts = {
         "pageXOffset": {},
         "pageYOffset": {},
         "parent": {
+          "0": {},
           "PERSISTENT": {},
           "React": {
             "Children": {
@@ -3183,6 +8599,7 @@ var Highcharts = {
             "appCodeName": {},
             "appName": {},
             "appVersion": {},
+            "closure_uid_659125373": {},
             "connection": {
               "addEventListener": function () {},
               "dispatchEvent": function () {},
@@ -3218,116 +8635,124 @@ var Highcharts = {
             },
             "mimeTypes": {
               "0": {
+                "closure_uid_659125373": {},
                 "description": {},
                 "enabledPlugin": {
                   "0": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "description": {},
                     "enabledPlugin": {},
                     "suffixes": {},
                     "type": {}
                   },
+                  "closure_uid_659125373": {},
                   "description": {},
                   "filename": {},
                   "item": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   },
                   "length": {},
                   "name": {},
                   "namedItem": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   }
                 },
                 "suffixes": {},
                 "type": {}
               },
               "1": {
+                "closure_uid_659125373": {},
                 "description": {},
                 "enabledPlugin": {
                   "0": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "description": {},
                     "enabledPlugin": {},
                     "suffixes": {},
                     "type": {}
                   },
+                  "closure_uid_659125373": {},
                   "description": {},
                   "filename": {},
                   "item": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   },
                   "length": {},
                   "name": {},
                   "namedItem": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   }
                 },
                 "suffixes": {},
                 "type": {}
               },
               "2": {
+                "closure_uid_659125373": {},
                 "description": {},
                 "enabledPlugin": {
                   "0": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "description": {},
                     "enabledPlugin": {},
                     "suffixes": {},
                     "type": {}
                   },
                   "1": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "description": {},
                     "enabledPlugin": {},
                     "suffixes": {},
                     "type": {}
                   },
+                  "closure_uid_659125373": {},
                   "description": {},
                   "filename": {},
                   "item": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   },
                   "length": {},
                   "name": {},
                   "namedItem": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   }
                 },
                 "suffixes": {},
                 "type": {}
               },
               "3": {
+                "closure_uid_659125373": {},
                 "description": {},
                 "enabledPlugin": {
                   "0": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "description": {},
                     "enabledPlugin": {},
                     "suffixes": {},
                     "type": {}
                   },
                   "1": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "description": {},
                     "enabledPlugin": {},
                     "suffixes": {},
                     "type": {}
                   },
-                  "closure_uid_347133726": {},
+                  "closure_uid_659125373": {},
                   "description": {},
                   "filename": {},
                   "item": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   },
                   "length": {},
                   "name": {},
                   "namedItem": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   }
                 },
                 "suffixes": {},
                 "type": {}
               },
+              "closure_uid_659125373": {},
               "item": function () {},
               "length": {},
               "namedItem": function () {}
@@ -3345,16 +8770,16 @@ var Highcharts = {
                   "suffixes": {},
                   "type": {}
                 },
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "description": {},
                 "filename": {},
                 "item": {
-                  "closure_uid_347133726": {}
+                  "closure_uid_659125373": {}
                 },
                 "length": {},
                 "name": {},
                 "namedItem": {
-                  "closure_uid_347133726": {}
+                  "closure_uid_659125373": {}
                 }
               },
               "1": {
@@ -3364,16 +8789,16 @@ var Highcharts = {
                   "suffixes": {},
                   "type": {}
                 },
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "description": {},
                 "filename": {},
                 "item": {
-                  "closure_uid_347133726": {}
+                  "closure_uid_659125373": {}
                 },
                 "length": {},
                 "name": {},
                 "namedItem": {
-                  "closure_uid_347133726": {}
+                  "closure_uid_659125373": {}
                 }
               },
               "2": {
@@ -3389,16 +8814,16 @@ var Highcharts = {
                   "suffixes": {},
                   "type": {}
                 },
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "description": {},
                 "filename": {},
                 "item": {
-                  "closure_uid_347133726": {}
+                  "closure_uid_659125373": {}
                 },
                 "length": {},
                 "name": {},
                 "namedItem": {
-                  "closure_uid_347133726": {}
+                  "closure_uid_659125373": {}
                 }
               },
               "item": function () {},
@@ -3408,6 +8833,9 @@ var Highcharts = {
             },
             "product": {},
             "productSub": {},
+            "scheduling": {
+              "isInputPending": function () {}
+            },
             "sendBeacon": function () {},
             "userActivation": {
               "hasBeenActive": {},
@@ -3428,9 +8856,11 @@ var Highcharts = {
           },
           "close": function () {},
           "closed": {},
+          "closure_uid_659125373": {},
           "confirm": function () {},
           "createImageBitmap": function () {},
           "createReactClass": function () {},
+          "crossOriginIsolated": {},
           "crypto": {
             "getRandomValues": function () {}
           },
@@ -3500,7 +8930,6 @@ var Highcharts = {
               "length": {}
             },
             "assign": function () {},
-            "fragmentDirective": {},
             "hash": {},
             "host": {},
             "hostname": {},
@@ -3528,7 +8957,7 @@ var Highcharts = {
             "appCodeName": {},
             "appName": {},
             "appVersion": {},
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "connection": {
               "addEventListener": function () {},
               "dispatchEvent": function () {},
@@ -3564,124 +8993,124 @@ var Highcharts = {
             },
             "mimeTypes": {
               "0": {
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "description": {},
                 "enabledPlugin": {
                   "0": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "description": {},
                     "enabledPlugin": {},
                     "suffixes": {},
                     "type": {}
                   },
-                  "closure_uid_347133726": {},
+                  "closure_uid_659125373": {},
                   "description": {},
                   "filename": {},
                   "item": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   },
                   "length": {},
                   "name": {},
                   "namedItem": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   }
                 },
                 "suffixes": {},
                 "type": {}
               },
               "1": {
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "description": {},
                 "enabledPlugin": {
                   "0": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "description": {},
                     "enabledPlugin": {},
                     "suffixes": {},
                     "type": {}
                   },
-                  "closure_uid_347133726": {},
+                  "closure_uid_659125373": {},
                   "description": {},
                   "filename": {},
                   "item": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   },
                   "length": {},
                   "name": {},
                   "namedItem": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   }
                 },
                 "suffixes": {},
                 "type": {}
               },
               "2": {
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "description": {},
                 "enabledPlugin": {
                   "0": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "description": {},
                     "enabledPlugin": {},
                     "suffixes": {},
                     "type": {}
                   },
                   "1": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "description": {},
                     "enabledPlugin": {},
                     "suffixes": {},
                     "type": {}
                   },
-                  "closure_uid_347133726": {},
+                  "closure_uid_659125373": {},
                   "description": {},
                   "filename": {},
                   "item": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   },
                   "length": {},
                   "name": {},
                   "namedItem": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   }
                 },
                 "suffixes": {},
                 "type": {}
               },
               "3": {
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "description": {},
                 "enabledPlugin": {
                   "0": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "description": {},
                     "enabledPlugin": {},
                     "suffixes": {},
                     "type": {}
                   },
                   "1": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "description": {},
                     "enabledPlugin": {},
                     "suffixes": {},
                     "type": {}
                   },
-                  "closure_uid_347133726": {},
+                  "closure_uid_659125373": {},
                   "description": {},
                   "filename": {},
                   "item": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   },
                   "length": {},
                   "name": {},
                   "namedItem": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   }
                 },
                 "suffixes": {},
                 "type": {}
               },
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "item": function () {},
               "length": {},
               "namedItem": function () {}
@@ -3699,16 +9128,16 @@ var Highcharts = {
                   "suffixes": {},
                   "type": {}
                 },
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "description": {},
                 "filename": {},
                 "item": {
-                  "closure_uid_347133726": {}
+                  "closure_uid_659125373": {}
                 },
                 "length": {},
                 "name": {},
                 "namedItem": {
-                  "closure_uid_347133726": {}
+                  "closure_uid_659125373": {}
                 }
               },
               "1": {
@@ -3718,16 +9147,16 @@ var Highcharts = {
                   "suffixes": {},
                   "type": {}
                 },
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "description": {},
                 "filename": {},
                 "item": {
-                  "closure_uid_347133726": {}
+                  "closure_uid_659125373": {}
                 },
                 "length": {},
                 "name": {},
                 "namedItem": {
-                  "closure_uid_347133726": {}
+                  "closure_uid_659125373": {}
                 }
               },
               "2": {
@@ -3743,16 +9172,16 @@ var Highcharts = {
                   "suffixes": {},
                   "type": {}
                 },
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "description": {},
                 "filename": {},
                 "item": {
-                  "closure_uid_347133726": {}
+                  "closure_uid_659125373": {}
                 },
                 "length": {},
                 "name": {},
                 "namedItem": {
-                  "closure_uid_347133726": {}
+                  "closure_uid_659125373": {}
                 }
               },
               "item": function () {},
@@ -3762,6 +9191,9 @@ var Highcharts = {
             },
             "product": {},
             "productSub": {},
+            "scheduling": {
+              "isInputPending": function () {}
+            },
             "sendBeacon": function () {},
             "userActivation": {
               "hasBeenActive": {},
@@ -3871,7 +9303,10 @@ var Highcharts = {
           "onsuspend": {},
           "ontimeupdate": {},
           "ontoggle": {},
+          "ontransitioncancel": {},
           "ontransitionend": {},
+          "ontransitionrun": {},
+          "ontransitionstart": {},
           "onunhandledrejection": {},
           "onunload": {},
           "onvolumechange": {},
@@ -3902,6 +9337,7 @@ var Highcharts = {
               "get": function () {},
               "has": function () {},
               "keys": function () {},
+              "size": {},
               "values": function () {}
             },
             "getEntries": function () {},
@@ -4043,8 +9479,10 @@ var Highcharts = {
           },
           "top": {},
           "trustedTypes": {
+            "addEventListener": function () {},
             "createPolicy": function () {},
             "defaultPolicy": {},
+            "dispatchEvent": function () {},
             "emptyHTML": {
               "toString": function () {}
             },
@@ -4056,7 +9494,8 @@ var Highcharts = {
             "getTypeMapping": function () {},
             "isHTML": function () {},
             "isScript": function () {},
-            "isScriptURL": function () {}
+            "isScriptURL": function () {},
+            "removeEventListener": function () {}
           },
           "visualViewport": {
             "addEventListener": function () {},
@@ -4096,5707 +9535,7 @@ var Highcharts = {
             "get": function () {},
             "has": function () {},
             "keys": function () {},
-            "values": function () {}
-          },
-          "getEntries": function () {},
-          "getEntriesByName": function () {},
-          "getEntriesByType": function () {},
-          "mark": function () {},
-          "measure": function () {},
-          "memory": {
-            "jsHeapSizeLimit": {},
-            "totalJSHeapSize": {},
-            "usedJSHeapSize": {}
-          },
-          "navigation": {
-            "TYPE_BACK_FORWARD": {},
-            "TYPE_NAVIGATE": {},
-            "TYPE_RELOAD": {},
-            "TYPE_RESERVED": {},
-            "redirectCount": {},
-            "toJSON": function () {},
-            "type": {}
-          },
-          "now": function () {},
-          "onresourcetimingbufferfull": {},
-          "removeEventListener": function () {},
-          "setResourceTimingBufferSize": function () {},
-          "timeOrigin": {},
-          "timing": {
-            "connectEnd": {},
-            "connectStart": {},
-            "domComplete": {},
-            "domContentLoadedEventEnd": {},
-            "domContentLoadedEventStart": {},
-            "domInteractive": {},
-            "domLoading": {},
-            "domainLookupEnd": {},
-            "domainLookupStart": {},
-            "fetchStart": {},
-            "loadEventEnd": {},
-            "loadEventStart": {},
-            "navigationStart": {},
-            "redirectEnd": {},
-            "redirectStart": {},
-            "requestStart": {},
-            "responseEnd": {},
-            "responseStart": {},
-            "secureConnectionStart": {},
-            "toJSON": function () {},
-            "unloadEventEnd": {},
-            "unloadEventStart": {}
-          },
-          "toJSON": function () {}
-        },
-        "personalbar": {
-          "visible": {}
-        },
-        "postMessage": function () {},
-        "print": function () {},
-        "prompt": function () {},
-        "queueMicrotask": function () {},
-        "releaseEvents": function () {},
-        "removeEventListener": function () {},
-        "requestAnimationFrame": function () {},
-        "requestIdleCallback": function () {},
-        "resizeBy": function () {},
-        "resizeTo": function () {},
-        "screen": {
-          "availHeight": {},
-          "availLeft": {},
-          "availTop": {},
-          "availWidth": {},
-          "colorDepth": {},
-          "height": {},
-          "orientation": {
-            "addEventListener": function () {},
-            "angle": {},
-            "dispatchEvent": function () {},
-            "lock": function () {},
-            "onchange": {},
-            "removeEventListener": function () {},
-            "type": {},
-            "unlock": function () {}
-          },
-          "pixelDepth": {},
-          "width": {}
-        },
-        "screenLeft": {},
-        "screenTop": {},
-        "screenX": {},
-        "screenY": {},
-        "scroll": function () {},
-        "scrollBy": function () {},
-        "scrollTo": function () {},
-        "scrollX": {},
-        "scrollY": {},
-        "scrollbars": {
-          "visible": {}
-        },
-        "self": {},
-        "sessionStorage": {
-          "clear": function () {},
-          "getItem": function () {},
-          "key": function () {},
-          "length": {},
-          "removeItem": function () {},
-          "setItem": function () {}
-        },
-        "setInterval": function () {},
-        "setTimeout": function () {},
-        "speechSynthesis": {
-          "addEventListener": function () {},
-          "cancel": function () {},
-          "dispatchEvent": function () {},
-          "getVoices": function () {},
-          "onvoiceschanged": {},
-          "pause": function () {},
-          "paused": {},
-          "pending": {},
-          "removeEventListener": function () {},
-          "resume": function () {},
-          "speak": function () {},
-          "speaking": {}
-        },
-        "status": {},
-        "statusbar": {
-          "visible": {}
-        },
-        "stop": function () {},
-        "styleMedia": {
-          "matchMedium": function () {},
-          "type": {}
-        },
-        "toolbar": {
-          "visible": {}
-        },
-        "top": {
-          "PERSISTENT": {},
-          "React": {
-            "Children": {
-              "count": function () {},
-              "forEach": function () {},
-              "map": function () {},
-              "only": function () {},
-              "toArray": function () {}
-            },
-            "Component": function () {},
-            "DOM": {
-              "a": {
-                "type": {}
-              },
-              "abbr": {
-                "type": {}
-              },
-              "address": {
-                "type": {}
-              },
-              "area": {
-                "type": {}
-              },
-              "article": {
-                "type": {}
-              },
-              "aside": {
-                "type": {}
-              },
-              "audio": {
-                "type": {}
-              },
-              "b": {
-                "type": {}
-              },
-              "base": {
-                "type": {}
-              },
-              "bdi": {
-                "type": {}
-              },
-              "bdo": {
-                "type": {}
-              },
-              "big": {
-                "type": {}
-              },
-              "blockquote": {
-                "type": {}
-              },
-              "body": {
-                "type": {}
-              },
-              "br": {
-                "type": {}
-              },
-              "button": {
-                "type": {}
-              },
-              "canvas": {
-                "type": {}
-              },
-              "caption": {
-                "type": {}
-              },
-              "circle": {
-                "type": {}
-              },
-              "cite": {
-                "type": {}
-              },
-              "clipPath": {
-                "type": {}
-              },
-              "code": {
-                "type": {}
-              },
-              "col": {
-                "type": {}
-              },
-              "colgroup": {
-                "type": {}
-              },
-              "data": {
-                "type": {}
-              },
-              "datalist": {
-                "type": {}
-              },
-              "dd": {
-                "type": {}
-              },
-              "defs": {
-                "type": {}
-              },
-              "del": {
-                "type": {}
-              },
-              "details": {
-                "type": {}
-              },
-              "dfn": {
-                "type": {}
-              },
-              "dialog": {
-                "type": {}
-              },
-              "div": {
-                "type": {}
-              },
-              "dl": {
-                "type": {}
-              },
-              "dt": {
-                "type": {}
-              },
-              "ellipse": {
-                "type": {}
-              },
-              "em": {
-                "type": {}
-              },
-              "embed": {
-                "type": {}
-              },
-              "fieldset": {
-                "type": {}
-              },
-              "figcaption": {
-                "type": {}
-              },
-              "figure": {
-                "type": {}
-              },
-              "footer": {
-                "type": {}
-              },
-              "form": {
-                "type": {}
-              },
-              "g": {
-                "type": {}
-              },
-              "h1": {
-                "type": {}
-              },
-              "h2": {
-                "type": {}
-              },
-              "h3": {
-                "type": {}
-              },
-              "h4": {
-                "type": {}
-              },
-              "h5": {
-                "type": {}
-              },
-              "h6": {
-                "type": {}
-              },
-              "head": {
-                "type": {}
-              },
-              "header": {
-                "type": {}
-              },
-              "hgroup": {
-                "type": {}
-              },
-              "hr": {
-                "type": {}
-              },
-              "html": {
-                "type": {}
-              },
-              "i": {
-                "type": {}
-              },
-              "iframe": {
-                "type": {}
-              },
-              "image": {
-                "type": {}
-              },
-              "img": {
-                "type": {}
-              },
-              "input": {
-                "type": {}
-              },
-              "ins": {
-                "type": {}
-              },
-              "kbd": {
-                "type": {}
-              },
-              "keygen": {
-                "type": {}
-              },
-              "label": {
-                "type": {}
-              },
-              "legend": {
-                "type": {}
-              },
-              "li": {
-                "type": {}
-              },
-              "line": {
-                "type": {}
-              },
-              "linearGradient": {
-                "type": {}
-              },
-              "link": {
-                "type": {}
-              },
-              "main": {
-                "type": {}
-              },
-              "map": {
-                "type": {}
-              },
-              "mark": {
-                "type": {}
-              },
-              "mask": {
-                "type": {}
-              },
-              "menu": {
-                "type": {}
-              },
-              "menuitem": {
-                "type": {}
-              },
-              "meta": {
-                "type": {}
-              },
-              "meter": {
-                "type": {}
-              },
-              "nav": {
-                "type": {}
-              },
-              "noscript": {
-                "type": {}
-              },
-              "object": {
-                "type": {}
-              },
-              "ol": {
-                "type": {}
-              },
-              "optgroup": {
-                "type": {}
-              },
-              "option": {
-                "type": {}
-              },
-              "output": {
-                "type": {}
-              },
-              "p": {
-                "type": {}
-              },
-              "param": {
-                "type": {}
-              },
-              "path": {
-                "type": {}
-              },
-              "pattern": {
-                "type": {}
-              },
-              "picture": {
-                "type": {}
-              },
-              "polygon": {
-                "type": {}
-              },
-              "polyline": {
-                "type": {}
-              },
-              "pre": {
-                "type": {}
-              },
-              "progress": {
-                "type": {}
-              },
-              "q": {
-                "type": {}
-              },
-              "radialGradient": {
-                "type": {}
-              },
-              "rect": {
-                "type": {}
-              },
-              "rp": {
-                "type": {}
-              },
-              "rt": {
-                "type": {}
-              },
-              "ruby": {
-                "type": {}
-              },
-              "s": {
-                "type": {}
-              },
-              "samp": {
-                "type": {}
-              },
-              "script": {
-                "type": {}
-              },
-              "section": {
-                "type": {}
-              },
-              "select": {
-                "type": {}
-              },
-              "small": {
-                "type": {}
-              },
-              "source": {
-                "type": {}
-              },
-              "span": {
-                "type": {}
-              },
-              "stop": {
-                "type": {}
-              },
-              "strong": {
-                "type": {}
-              },
-              "style": {
-                "type": {}
-              },
-              "sub": {
-                "type": {}
-              },
-              "summary": {
-                "type": {}
-              },
-              "sup": {
-                "type": {}
-              },
-              "svg": {
-                "type": {}
-              },
-              "table": {
-                "type": {}
-              },
-              "tbody": {
-                "type": {}
-              },
-              "td": {
-                "type": {}
-              },
-              "text": {
-                "type": {}
-              },
-              "textarea": {
-                "type": {}
-              },
-              "tfoot": {
-                "type": {}
-              },
-              "th": {
-                "type": {}
-              },
-              "thead": {
-                "type": {}
-              },
-              "time": {
-                "type": {}
-              },
-              "title": {
-                "type": {}
-              },
-              "tr": {
-                "type": {}
-              },
-              "track": {
-                "type": {}
-              },
-              "tspan": {
-                "type": {}
-              },
-              "u": {
-                "type": {}
-              },
-              "ul": {
-                "type": {}
-              },
-              "var": {
-                "type": {}
-              },
-              "video": {
-                "type": {}
-              },
-              "wbr": {
-                "type": {}
-              }
-            },
-            "PropTypes": {
-              "PropTypes": {},
-              "any": {
-                "isRequired": function () {}
-              },
-              "array": {
-                "isRequired": function () {}
-              },
-              "arrayOf": function () {},
-              "bool": {
-                "isRequired": function () {}
-              },
-              "checkPropTypes": function () {},
-              "element": {
-                "isRequired": function () {}
-              },
-              "func": {
-                "isRequired": function () {}
-              },
-              "instanceOf": function () {},
-              "node": {
-                "isRequired": function () {}
-              },
-              "number": {
-                "isRequired": function () {}
-              },
-              "object": {
-                "isRequired": function () {}
-              },
-              "objectOf": function () {},
-              "oneOf": function () {},
-              "oneOfType": function () {},
-              "shape": function () {},
-              "string": {
-                "isRequired": function () {}
-              },
-              "symbol": {
-                "isRequired": function () {}
-              }
-            },
-            "PureComponent": function () {},
-            "__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED": {
-              "ReactCurrentOwner": {
-                "current": {}
-              }
-            },
-            "__spread": function () {},
-            "cloneElement": function () {},
-            "createClass": function () {},
-            "createElement": function () {},
-            "createFactory": function () {},
-            "createMixin": function () {},
-            "isValidElement": function () {},
-            "version": {}
-          },
-          "ReactDOM": {
-            "findDOMNode": function () {},
-            "render": function () {},
-            "unmountComponentAtNode": function () {},
-            "unstable_batchedUpdates": function () {},
-            "unstable_renderSubtreeIntoContainer": function () {},
-            "version": {}
-          },
-          "TEMPORARY": {},
-          "addEventListener": function () {},
-          "alert": function () {},
-          "atob": function () {},
-          "blur": function () {},
-          "btoa": function () {},
-          "cancelAnimationFrame": function () {},
-          "cancelIdleCallback": function () {},
-          "captureEvents": function () {},
-          "chrome": {
-            "app": {
-              "InstallState": {
-                "DISABLED": {},
-                "INSTALLED": {},
-                "NOT_INSTALLED": {}
-              },
-              "RunningState": {
-                "CANNOT_RUN": {},
-                "READY_TO_RUN": {},
-                "RUNNING": {}
-              },
-              "getDetails": function () {},
-              "getIsInstalled": function () {},
-              "installState": function () {},
-              "isInstalled": {},
-              "runningState": function () {}
-            },
-            "csi": function () {},
-            "loadTimes": function () {}
-          },
-          "clearInterval": function () {},
-          "clearTimeout": function () {},
-          "clientInformation": {
-            "appCodeName": {},
-            "appName": {},
-            "appVersion": {},
-            "closure_uid_347133726": {},
-            "connection": {
-              "addEventListener": function () {},
-              "dispatchEvent": function () {},
-              "downlink": {},
-              "effectiveType": {},
-              "onchange": {},
-              "removeEventListener": function () {},
-              "rtt": {},
-              "saveData": {}
-            },
-            "cookieEnabled": {},
-            "doNotTrack": {},
-            "geolocation": {
-              "clearWatch": function () {},
-              "getCurrentPosition": function () {},
-              "watchPosition": function () {}
-            },
-            "getBattery": function () {},
-            "getGamepads": function () {},
-            "hardwareConcurrency": {},
-            "javaEnabled": function () {},
-            "language": {},
-            "languages": {},
-            "maxTouchPoints": {},
-            "mediaCapabilities": {
-              "decodingInfo": function () {}
-            },
-            "mediaSession": {
-              "metadata": {},
-              "playbackState": {},
-              "setActionHandler": function () {},
-              "setPositionState": function () {}
-            },
-            "mimeTypes": {
-              "0": {
-                "closure_uid_347133726": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_347133726": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_347133726": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_347133726": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_347133726": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "1": {
-                "closure_uid_347133726": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_347133726": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_347133726": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_347133726": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_347133726": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "2": {
-                "closure_uid_347133726": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_347133726": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "1": {
-                    "closure_uid_347133726": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_347133726": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_347133726": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_347133726": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "3": {
-                "closure_uid_347133726": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_347133726": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "1": {
-                    "closure_uid_347133726": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_347133726": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_347133726": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_347133726": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "closure_uid_347133726": {},
-              "item": function () {},
-              "length": {},
-              "namedItem": function () {}
-            },
-            "onLine": {},
-            "permissions": {
-              "query": function () {}
-            },
-            "platform": {},
-            "plugins": {
-              "0": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "closure_uid_347133726": {},
-                "description": {},
-                "filename": {},
-                "item": {
-                  "closure_uid_347133726": {}
-                },
-                "length": {},
-                "name": {},
-                "namedItem": {
-                  "closure_uid_347133726": {}
-                }
-              },
-              "1": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "closure_uid_347133726": {},
-                "description": {},
-                "filename": {},
-                "item": {
-                  "closure_uid_347133726": {}
-                },
-                "length": {},
-                "name": {},
-                "namedItem": {
-                  "closure_uid_347133726": {}
-                }
-              },
-              "2": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "1": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "closure_uid_347133726": {},
-                "description": {},
-                "filename": {},
-                "item": {
-                  "closure_uid_347133726": {}
-                },
-                "length": {},
-                "name": {},
-                "namedItem": {
-                  "closure_uid_347133726": {}
-                }
-              },
-              "item": function () {},
-              "length": {},
-              "namedItem": function () {},
-              "refresh": function () {}
-            },
-            "product": {},
-            "productSub": {},
-            "sendBeacon": function () {},
-            "userActivation": {
-              "hasBeenActive": {},
-              "isActive": {}
-            },
-            "userAgent": {},
-            "vendor": {},
-            "vendorSub": {},
-            "vibrate": function () {},
-            "webkitPersistentStorage": {
-              "queryUsageAndQuota": function () {},
-              "requestQuota": function () {}
-            },
-            "webkitTemporaryStorage": {
-              "queryUsageAndQuota": function () {},
-              "requestQuota": function () {}
-            }
-          },
-          "close": function () {},
-          "closed": {},
-          "closure_uid_347133726": {},
-          "confirm": function () {},
-          "createImageBitmap": function () {},
-          "createReactClass": function () {},
-          "crypto": {
-            "getRandomValues": function () {}
-          },
-          "customElements": {
-            "define": function () {},
-            "get": function () {},
-            "upgrade": function () {},
-            "whenDefined": function () {}
-          },
-          "defaultStatus": {},
-          "defaultstatus": {},
-          "devicePixelRatio": {},
-          "dispatchEvent": function () {},
-          "document": {},
-          "external": {
-            "AddSearchProvider": function () {},
-            "IsSearchProviderInstalled": function () {}
-          },
-          "fetch": function () {},
-          "find": function () {},
-          "focus": function () {},
-          "frameElement": {},
-          "frames": {},
-          "getComputedStyle": function () {},
-          "getSelection": function () {},
-          "history": {
-            "back": function () {},
-            "forward": function () {},
-            "go": function () {},
-            "length": {},
-            "pushState": function () {},
-            "replaceState": function () {},
-            "scrollRestoration": {},
-            "state": {}
-          },
-          "indexedDB": {
-            "cmp": function () {},
-            "databases": function () {},
-            "deleteDatabase": function () {},
-            "open": function () {}
-          },
-          "innerHeight": {},
-          "innerWidth": {},
-          "isSecureContext": {},
-          "javascript_externs_generator": {
-            "ui": {
-              "core": {
-                "init": function () {},
-                "re_render": function () {}
-              }
-            }
-          },
-          "js_beautify": function () {},
-          "length": {},
-          "localStorage": {
-            "clear": function () {},
-            "getItem": function () {},
-            "key": function () {},
-            "length": {},
-            "removeItem": function () {},
-            "setItem": function () {}
-          },
-          "location": {
-            "ancestorOrigins": {
-              "contains": function () {},
-              "item": function () {},
-              "length": {}
-            },
-            "assign": function () {},
-            "fragmentDirective": {},
-            "hash": {},
-            "host": {},
-            "hostname": {},
-            "href": {},
-            "origin": {},
-            "pathname": {},
-            "port": {},
-            "protocol": {},
-            "reload": function () {},
-            "replace": function () {},
-            "search": {},
-            "toString": function () {}
-          },
-          "locationbar": {
-            "visible": {}
-          },
-          "matchMedia": function () {},
-          "menubar": {
-            "visible": {}
-          },
-          "moveBy": function () {},
-          "moveTo": function () {},
-          "name": {},
-          "navigator": {
-            "appCodeName": {},
-            "appName": {},
-            "appVersion": {},
-            "closure_uid_347133726": {},
-            "connection": {
-              "addEventListener": function () {},
-              "dispatchEvent": function () {},
-              "downlink": {},
-              "effectiveType": {},
-              "onchange": {},
-              "removeEventListener": function () {},
-              "rtt": {},
-              "saveData": {}
-            },
-            "cookieEnabled": {},
-            "doNotTrack": {},
-            "geolocation": {
-              "clearWatch": function () {},
-              "getCurrentPosition": function () {},
-              "watchPosition": function () {}
-            },
-            "getBattery": function () {},
-            "getGamepads": function () {},
-            "hardwareConcurrency": {},
-            "javaEnabled": function () {},
-            "language": {},
-            "languages": {},
-            "maxTouchPoints": {},
-            "mediaCapabilities": {
-              "decodingInfo": function () {}
-            },
-            "mediaSession": {
-              "metadata": {},
-              "playbackState": {},
-              "setActionHandler": function () {},
-              "setPositionState": function () {}
-            },
-            "mimeTypes": {
-              "0": {
-                "closure_uid_347133726": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_347133726": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_347133726": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_347133726": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_347133726": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "1": {
-                "closure_uid_347133726": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_347133726": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_347133726": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_347133726": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_347133726": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "2": {
-                "closure_uid_347133726": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_347133726": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "1": {
-                    "closure_uid_347133726": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_347133726": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_347133726": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_347133726": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "3": {
-                "closure_uid_347133726": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_347133726": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "1": {
-                    "closure_uid_347133726": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_347133726": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_347133726": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_347133726": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "closure_uid_347133726": {},
-              "item": function () {},
-              "length": {},
-              "namedItem": function () {}
-            },
-            "onLine": {},
-            "permissions": {
-              "query": function () {}
-            },
-            "platform": {},
-            "plugins": {
-              "0": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "closure_uid_347133726": {},
-                "description": {},
-                "filename": {},
-                "item": {
-                  "closure_uid_347133726": {}
-                },
-                "length": {},
-                "name": {},
-                "namedItem": {
-                  "closure_uid_347133726": {}
-                }
-              },
-              "1": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "closure_uid_347133726": {},
-                "description": {},
-                "filename": {},
-                "item": {
-                  "closure_uid_347133726": {}
-                },
-                "length": {},
-                "name": {},
-                "namedItem": {
-                  "closure_uid_347133726": {}
-                }
-              },
-              "2": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "1": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "closure_uid_347133726": {},
-                "description": {},
-                "filename": {},
-                "item": {
-                  "closure_uid_347133726": {}
-                },
-                "length": {},
-                "name": {},
-                "namedItem": {
-                  "closure_uid_347133726": {}
-                }
-              },
-              "item": function () {},
-              "length": {},
-              "namedItem": function () {},
-              "refresh": function () {}
-            },
-            "product": {},
-            "productSub": {},
-            "sendBeacon": function () {},
-            "userActivation": {
-              "hasBeenActive": {},
-              "isActive": {}
-            },
-            "userAgent": {},
-            "vendor": {},
-            "vendorSub": {},
-            "vibrate": function () {},
-            "webkitPersistentStorage": {
-              "queryUsageAndQuota": function () {},
-              "requestQuota": function () {}
-            },
-            "webkitTemporaryStorage": {
-              "queryUsageAndQuota": function () {},
-              "requestQuota": function () {}
-            }
-          },
-          "onabort": {},
-          "onafterprint": {},
-          "onanimationend": {},
-          "onanimationiteration": {},
-          "onanimationstart": {},
-          "onappinstalled": {},
-          "onauxclick": {},
-          "onbeforeinstallprompt": {},
-          "onbeforeprint": {},
-          "onbeforeunload": {},
-          "onblur": {},
-          "oncancel": {},
-          "oncanplay": {},
-          "oncanplaythrough": {},
-          "onchange": {},
-          "onclick": {},
-          "onclose": {},
-          "oncontextmenu": {},
-          "oncuechange": {},
-          "ondblclick": {},
-          "ondrag": {},
-          "ondragend": {},
-          "ondragenter": {},
-          "ondragleave": {},
-          "ondragover": {},
-          "ondragstart": {},
-          "ondrop": {},
-          "ondurationchange": {},
-          "onemptied": {},
-          "onended": {},
-          "onerror": {},
-          "onfocus": {},
-          "onformdata": {},
-          "ongotpointercapture": {},
-          "onhashchange": {},
-          "oninput": {},
-          "oninvalid": {},
-          "onkeydown": {},
-          "onkeypress": {},
-          "onkeyup": {},
-          "onlanguagechange": {},
-          "onload": {},
-          "onloadeddata": {},
-          "onloadedmetadata": {},
-          "onloadstart": {},
-          "onlostpointercapture": {},
-          "onmessage": {},
-          "onmessageerror": {},
-          "onmousedown": {},
-          "onmouseenter": {},
-          "onmouseleave": {},
-          "onmousemove": {},
-          "onmouseout": {},
-          "onmouseover": {},
-          "onmouseup": {},
-          "onmousewheel": {},
-          "onoffline": {},
-          "ononline": {},
-          "onpagehide": {},
-          "onpageshow": {},
-          "onpause": {},
-          "onplay": {},
-          "onplaying": {},
-          "onpointercancel": {},
-          "onpointerdown": {},
-          "onpointerenter": {},
-          "onpointerleave": {},
-          "onpointermove": {},
-          "onpointerout": {},
-          "onpointerover": {},
-          "onpointerrawupdate": {},
-          "onpointerup": {},
-          "onpopstate": {},
-          "onprogress": {},
-          "onratechange": {},
-          "onrejectionhandled": {},
-          "onreset": {},
-          "onresize": {},
-          "onscroll": {},
-          "onsearch": {},
-          "onseeked": {},
-          "onseeking": {},
-          "onselect": {},
-          "onselectionchange": {},
-          "onselectstart": {},
-          "onstalled": {},
-          "onstorage": {},
-          "onsubmit": {},
-          "onsuspend": {},
-          "ontimeupdate": {},
-          "ontoggle": {},
-          "ontransitionend": {},
-          "onunhandledrejection": {},
-          "onunload": {},
-          "onvolumechange": {},
-          "onwaiting": {},
-          "onwebkitanimationend": {},
-          "onwebkitanimationiteration": {},
-          "onwebkitanimationstart": {},
-          "onwebkittransitionend": {},
-          "onwheel": {},
-          "open": function () {},
-          "openDatabase": function () {},
-          "opener": {},
-          "origin": {},
-          "outerHeight": {},
-          "outerWidth": {},
-          "pageXOffset": {},
-          "pageYOffset": {},
-          "parent": {},
-          "performance": {
-            "addEventListener": function () {},
-            "clearMarks": function () {},
-            "clearMeasures": function () {},
-            "clearResourceTimings": function () {},
-            "dispatchEvent": function () {},
-            "eventCounts": {
-              "entries": function () {},
-              "forEach": function () {},
-              "get": function () {},
-              "has": function () {},
-              "keys": function () {},
-              "values": function () {}
-            },
-            "getEntries": function () {},
-            "getEntriesByName": function () {},
-            "getEntriesByType": function () {},
-            "mark": function () {},
-            "measure": function () {},
-            "memory": {
-              "jsHeapSizeLimit": {},
-              "totalJSHeapSize": {},
-              "usedJSHeapSize": {}
-            },
-            "navigation": {
-              "TYPE_BACK_FORWARD": {},
-              "TYPE_NAVIGATE": {},
-              "TYPE_RELOAD": {},
-              "TYPE_RESERVED": {},
-              "redirectCount": {},
-              "toJSON": function () {},
-              "type": {}
-            },
-            "now": function () {},
-            "onresourcetimingbufferfull": {},
-            "removeEventListener": function () {},
-            "setResourceTimingBufferSize": function () {},
-            "timeOrigin": {},
-            "timing": {
-              "connectEnd": {},
-              "connectStart": {},
-              "domComplete": {},
-              "domContentLoadedEventEnd": {},
-              "domContentLoadedEventStart": {},
-              "domInteractive": {},
-              "domLoading": {},
-              "domainLookupEnd": {},
-              "domainLookupStart": {},
-              "fetchStart": {},
-              "loadEventEnd": {},
-              "loadEventStart": {},
-              "navigationStart": {},
-              "redirectEnd": {},
-              "redirectStart": {},
-              "requestStart": {},
-              "responseEnd": {},
-              "responseStart": {},
-              "secureConnectionStart": {},
-              "toJSON": function () {},
-              "unloadEventEnd": {},
-              "unloadEventStart": {}
-            },
-            "toJSON": function () {}
-          },
-          "personalbar": {
-            "visible": {}
-          },
-          "postMessage": function () {},
-          "print": function () {},
-          "prompt": function () {},
-          "queueMicrotask": function () {},
-          "reagent": {
-            "core": {
-              "force_update_all": function () {}
-            }
-          },
-          "releaseEvents": function () {},
-          "removeEventListener": function () {},
-          "requestAnimationFrame": function () {},
-          "requestIdleCallback": function () {},
-          "resizeBy": function () {},
-          "resizeTo": function () {},
-          "screen": {
-            "availHeight": {},
-            "availLeft": {},
-            "availTop": {},
-            "availWidth": {},
-            "colorDepth": {},
-            "height": {},
-            "orientation": {
-              "addEventListener": function () {},
-              "angle": {},
-              "dispatchEvent": function () {},
-              "lock": function () {},
-              "onchange": {},
-              "removeEventListener": function () {},
-              "type": {},
-              "unlock": function () {}
-            },
-            "pixelDepth": {},
-            "width": {}
-          },
-          "screenLeft": {},
-          "screenTop": {},
-          "screenX": {},
-          "screenY": {},
-          "scroll": function () {},
-          "scrollBy": function () {},
-          "scrollTo": function () {},
-          "scrollX": {},
-          "scrollY": {},
-          "scrollbars": {
-            "visible": {}
-          },
-          "self": {},
-          "sessionStorage": {
-            "clear": function () {},
-            "getItem": function () {},
-            "key": function () {},
-            "length": {},
-            "removeItem": function () {},
-            "setItem": function () {}
-          },
-          "setInterval": function () {},
-          "setTimeout": function () {},
-          "speechSynthesis": {
-            "addEventListener": function () {},
-            "cancel": function () {},
-            "dispatchEvent": function () {},
-            "getVoices": function () {},
-            "onvoiceschanged": {},
-            "pause": function () {},
-            "paused": {},
-            "pending": {},
-            "removeEventListener": function () {},
-            "resume": function () {},
-            "speak": function () {},
-            "speaking": {}
-          },
-          "status": {},
-          "statusbar": {
-            "visible": {}
-          },
-          "stop": function () {},
-          "styleMedia": {
-            "matchMedium": function () {},
-            "type": {}
-          },
-          "toolbar": {
-            "visible": {}
-          },
-          "top": {},
-          "trustedTypes": {
-            "createPolicy": function () {},
-            "defaultPolicy": {},
-            "emptyHTML": {
-              "toString": function () {}
-            },
-            "emptyScript": {
-              "toString": function () {}
-            },
-            "getAttributeType": function () {},
-            "getPropertyType": function () {},
-            "getTypeMapping": function () {},
-            "isHTML": function () {},
-            "isScript": function () {},
-            "isScriptURL": function () {}
-          },
-          "visualViewport": {
-            "addEventListener": function () {},
-            "dispatchEvent": function () {},
-            "height": {},
-            "offsetLeft": {},
-            "offsetTop": {},
-            "onresize": {},
-            "onscroll": {},
-            "pageLeft": {},
-            "pageTop": {},
-            "removeEventListener": function () {},
-            "scale": {},
-            "width": {}
-          },
-          "webkitCancelAnimationFrame": function () {},
-          "webkitRequestAnimationFrame": function () {},
-          "webkitRequestFileSystem": function () {},
-          "webkitResolveLocalFileSystemURL": function () {},
-          "webkitStorageInfo": {
-            "PERSISTENT": {},
-            "TEMPORARY": {},
-            "queryUsageAndQuota": function () {},
-            "requestQuota": function () {}
-          },
-          "window": {}
-        },
-        "trustedTypes": {
-          "createPolicy": function () {},
-          "defaultPolicy": {},
-          "emptyHTML": {
-            "toString": function () {}
-          },
-          "emptyScript": {
-            "toString": function () {}
-          },
-          "getAttributeType": function () {},
-          "getPropertyType": function () {},
-          "getTypeMapping": function () {},
-          "isHTML": function () {},
-          "isScript": function () {},
-          "isScriptURL": function () {}
-        },
-        "visualViewport": {
-          "addEventListener": function () {},
-          "dispatchEvent": function () {},
-          "height": {},
-          "offsetLeft": {},
-          "offsetTop": {},
-          "onresize": {},
-          "onscroll": {},
-          "pageLeft": {},
-          "pageTop": {},
-          "removeEventListener": function () {},
-          "scale": {},
-          "width": {}
-        },
-        "webkitCancelAnimationFrame": function () {},
-        "webkitRequestAnimationFrame": function () {},
-        "webkitRequestFileSystem": function () {},
-        "webkitResolveLocalFileSystemURL": function () {},
-        "webkitStorageInfo": {
-          "PERSISTENT": {},
-          "TEMPORARY": {},
-          "queryUsageAndQuota": function () {},
-          "requestQuota": function () {}
-        },
-        "window": {}
-      },
-      "wrap": function () {}
-    },
-    "mixins/centered-series.js": {},
-    "mixins/legend-symbol.js": {
-      "drawLineMarker": function () {},
-      "drawRectangle": function () {}
-    },
-    "modules/overlapping-datalabels.src.js": {},
-    "parts/AreaSeries.js": {},
-    "parts/AreaSplineSeries.js": {},
-    "parts/Axis.js": {
-      "defaultBottomAxisOptions": {
-        "labels": {
-          "autoRotation": {},
-          "x": {}
-        },
-        "margin": {},
-        "title": {
-          "rotation": {}
-        }
-      },
-      "defaultLeftAxisOptions": {
-        "labels": {
-          "x": {}
-        },
-        "title": {
-          "rotation": {}
-        }
-      },
-      "defaultOptions": {
-        "dateTimeLabelFormats": {
-          "day": {
-            "main": {}
-          },
-          "hour": {
-            "main": {},
-            "range": {}
-          },
-          "millisecond": {
-            "main": {},
-            "range": {}
-          },
-          "minute": {
-            "main": {},
-            "range": {}
-          },
-          "month": {
-            "main": {}
-          },
-          "second": {
-            "main": {},
-            "range": {}
-          },
-          "week": {
-            "main": {}
-          },
-          "year": {
-            "main": {}
-          }
-        },
-        "endOnTick": {},
-        "gridLineColor": {},
-        "labels": {
-          "enabled": {},
-          "indentation": {},
-          "style": {
-            "color": {},
-            "cursor": {},
-            "fontSize": {}
-          },
-          "x": {}
-        },
-        "lineColor": {},
-        "lineWidth": {},
-        "maxPadding": {},
-        "minPadding": {},
-        "minorGridLineColor": {},
-        "minorGridLineWidth": {},
-        "minorTickColor": {},
-        "minorTickLength": {},
-        "minorTickPosition": {},
-        "showEmpty": {},
-        "startOfWeek": {},
-        "startOnTick": {},
-        "tickColor": {},
-        "tickLength": {},
-        "tickPixelInterval": {},
-        "tickPosition": {},
-        "tickmarkPlacement": {},
-        "title": {
-          "align": {},
-          "style": {
-            "color": {}
-          }
-        },
-        "type": {}
-      },
-      "defaultRightAxisOptions": {
-        "labels": {
-          "x": {}
-        },
-        "title": {
-          "rotation": {}
-        }
-      },
-      "defaultTopAxisOptions": {
-        "labels": {
-          "autoRotation": {},
-          "x": {}
-        },
-        "margin": {},
-        "title": {
-          "rotation": {}
-        }
-      },
-      "defaultYAxisOptions": {
-        "endOnTick": {},
-        "gridLineWidth": {},
-        "labels": {
-          "x": {}
-        },
-        "lineWidth": {},
-        "maxPadding": {},
-        "minPadding": {},
-        "showLastLabel": {},
-        "stackLabels": {
-          "allowOverlap": {},
-          "crop": {},
-          "enabled": {},
-          "formatter": function () {},
-          "overflow": {},
-          "style": {
-            "color": {},
-            "fontSize": {},
-            "fontWeight": {},
-            "textOutline": {}
-          }
-        },
-        "startOnTick": {},
-        "tickPixelInterval": {},
-        "title": {
-          "rotation": {},
-          "text": {}
-        }
-      },
-      "keepProps": {}
-    },
-    "parts/BarSeries.js": {},
-    "parts/Chart.js": {},
-    "parts/Color.js": {
-      "names": {
-        "black": {},
-        "white": {}
-      },
-      "parse": function () {}
-    },
-    "parts/ColumnSeries.js": {},
-    "parts/DataLabels.js": {},
-    "parts/DateTimeAxis.js": {
-      "AdditionsClass": function () {},
-      "compose": function () {}
-    },
-    "parts/Dynamics.js": {},
-    "parts/Globals.js": {
-      "Axis": {
-        "defaultBottomAxisOptions": {
-          "labels": {
-            "autoRotation": {},
-            "x": {}
-          },
-          "margin": {},
-          "title": {
-            "rotation": {}
-          }
-        },
-        "defaultLeftAxisOptions": {
-          "labels": {
-            "x": {}
-          },
-          "title": {
-            "rotation": {}
-          }
-        },
-        "defaultOptions": {
-          "dateTimeLabelFormats": {
-            "day": {
-              "main": {}
-            },
-            "hour": {
-              "main": {},
-              "range": {}
-            },
-            "millisecond": {
-              "main": {},
-              "range": {}
-            },
-            "minute": {
-              "main": {},
-              "range": {}
-            },
-            "month": {
-              "main": {}
-            },
-            "second": {
-              "main": {},
-              "range": {}
-            },
-            "week": {
-              "main": {}
-            },
-            "year": {
-              "main": {}
-            }
-          },
-          "endOnTick": {},
-          "gridLineColor": {},
-          "labels": {
-            "enabled": {},
-            "indentation": {},
-            "style": {
-              "color": {},
-              "cursor": {},
-              "fontSize": {}
-            },
-            "x": {}
-          },
-          "lineColor": {},
-          "lineWidth": {},
-          "maxPadding": {},
-          "minPadding": {},
-          "minorGridLineColor": {},
-          "minorGridLineWidth": {},
-          "minorTickColor": {},
-          "minorTickLength": {},
-          "minorTickPosition": {},
-          "showEmpty": {},
-          "startOfWeek": {},
-          "startOnTick": {},
-          "tickColor": {},
-          "tickLength": {},
-          "tickPixelInterval": {},
-          "tickPosition": {},
-          "tickmarkPlacement": {},
-          "title": {
-            "align": {},
-            "style": {
-              "color": {}
-            }
-          },
-          "type": {}
-        },
-        "defaultRightAxisOptions": {
-          "labels": {
-            "x": {}
-          },
-          "title": {
-            "rotation": {}
-          }
-        },
-        "defaultTopAxisOptions": {
-          "labels": {
-            "autoRotation": {},
-            "x": {}
-          },
-          "margin": {},
-          "title": {
-            "rotation": {}
-          }
-        },
-        "defaultYAxisOptions": {
-          "endOnTick": {},
-          "gridLineWidth": {},
-          "labels": {
-            "x": {}
-          },
-          "lineWidth": {},
-          "maxPadding": {},
-          "minPadding": {},
-          "showLastLabel": {},
-          "stackLabels": {
-            "allowOverlap": {},
-            "crop": {},
-            "enabled": {},
-            "formatter": function () {},
-            "overflow": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            }
-          },
-          "startOnTick": {},
-          "tickPixelInterval": {},
-          "title": {
-            "rotation": {},
-            "text": {}
-          }
-        },
-        "keepProps": {}
-      },
-      "CenteredSeriesMixin": {
-        "getCenter": function () {},
-        "getStartAndEndRadians": function () {}
-      },
-      "Chart": function () {},
-      "Color": {
-        "names": {
-          "black": {},
-          "white": {}
-        },
-        "parse": function () {}
-      },
-      "Fx": function () {},
-      "Legend": function () {},
-      "LegendSymbolMixin": {
-        "drawLineMarker": function () {},
-        "drawRectangle": function () {}
-      },
-      "PlotLineOrBand": function () {},
-      "Point": function () {},
-      "Pointer": function () {},
-      "Renderer": function () {},
-      "SVGElement": function () {},
-      "SVGRenderer": function () {},
-      "SVG_NS": {},
-      "Series": function () {},
-      "StackItem": function () {},
-      "Tick": function () {},
-      "Time": {
-        "defaultOptions": {
-          "Date": {},
-          "getTimezoneOffset": {},
-          "timezone": {},
-          "timezoneOffset": {},
-          "useUTC": {}
-        }
-      },
-      "Tooltip": function () {},
-      "TrackerMixin": {
-        "drawTrackerGraph": function () {},
-        "drawTrackerPoint": function () {}
-      },
-      "_modules": {},
-      "addEvent": function () {},
-      "animObject": function () {},
-      "animate": function () {},
-      "arrayMax": function () {},
-      "arrayMin": function () {},
-      "attr": function () {},
-      "chart": function () {},
-      "chartCount": {},
-      "charts": {},
-      "cleanRecursively": function () {},
-      "clearTimeout": function () {},
-      "closure_uid_347133726": {},
-      "color": function () {},
-      "correctFloat": function () {},
-      "createElement": function () {},
-      "css": function () {},
-      "dateFormat": function () {},
-      "dateFormats": {},
-      "defaultOptions": {
-        "caption": {
-          "align": {},
-          "margin": {},
-          "text": {},
-          "verticalAlign": {}
-        },
-        "chart": {
-          "backgroundColor": {},
-          "borderColor": {},
-          "borderRadius": {},
-          "colorCount": {},
-          "defaultSeriesType": {},
-          "height": {},
-          "ignoreHiddenSeries": {},
-          "plotBorderColor": {},
-          "resetZoomButton": {
-            "position": {
-              "align": {},
-              "x": {},
-              "y": {}
-            },
-            "theme": {
-              "zIndex": {}
-            }
-          },
-          "spacing": {},
-          "styledMode": {},
-          "width": {}
-        },
-        "closure_uid_347133726": {},
-        "colors": {},
-        "credits": {
-          "enabled": {},
-          "href": {},
-          "position": {
-            "align": {},
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "style": {
-            "color": {},
-            "cursor": {},
-            "fontSize": {}
-          },
-          "text": {}
-        },
-        "global": {},
-        "labels": {
-          "style": {
-            "color": {},
-            "position": {}
-          }
-        },
-        "lang": {
-          "decimalPoint": {},
-          "loading": {},
-          "months": {},
-          "numericSymbols": {},
-          "resetZoom": {},
-          "resetZoomTitle": {},
-          "shortMonths": {},
-          "thousandsSep": {},
-          "weekdays": {}
-        },
-        "legend": {
-          "align": {},
-          "alignColumns": {},
-          "borderColor": {},
-          "borderRadius": {},
-          "enabled": {},
-          "itemCheckboxStyle": {
-            "height": {},
-            "position": {},
-            "width": {}
-          },
-          "itemHiddenStyle": {
-            "color": {}
-          },
-          "itemHoverStyle": {
-            "color": {}
-          },
-          "itemStyle": {
-            "color": {},
-            "cursor": {},
-            "fontSize": {},
-            "fontWeight": {},
-            "textOverflow": {}
-          },
-          "labelFormatter": function () {},
-          "layout": {},
-          "navigation": {
-            "activeColor": {},
-            "inactiveColor": {}
-          },
-          "shadow": {},
-          "squareSymbol": {},
-          "symbolPadding": {},
-          "title": {
-            "style": {
-              "fontWeight": {}
-            }
-          },
-          "verticalAlign": {},
-          "x": {},
-          "y": {}
-        },
-        "loading": {
-          "labelStyle": {
-            "fontWeight": {},
-            "position": {},
-            "top": {}
-          },
-          "style": {
-            "backgroundColor": {},
-            "opacity": {},
-            "position": {},
-            "textAlign": {}
-          }
-        },
-        "plotOptions": {
-          "area": {
-            "allowPointSelect": {},
-            "animation": {
-              "duration": {}
-            },
-            "closure_uid_347133726": {},
-            "crisp": {},
-            "cropThreshold": {},
-            "dataLabels": {
-              "align": {},
-              "formatter": function () {},
-              "padding": {},
-              "style": {
-                "color": {},
-                "fontSize": {},
-                "fontWeight": {},
-                "textOutline": {}
-              },
-              "verticalAlign": {},
-              "x": {},
-              "y": {}
-            },
-            "events": {},
-            "findNearestPointBy": {},
-            "lineWidth": {},
-            "marker": {
-              "closure_uid_347133726": {},
-              "enabledThreshold": {},
-              "lineColor": {},
-              "lineWidth": {},
-              "radius": {},
-              "states": {
-                "closure_uid_347133726": {},
-                "hover": {
-                  "animation": {
-                    "closure_uid_347133726": {},
-                    "duration": {}
-                  },
-                  "closure_uid_347133726": {},
-                  "enabled": {},
-                  "lineWidthPlus": {},
-                  "radiusPlus": {}
-                },
-                "normal": {
-                  "animation": {}
-                },
-                "select": {
-                  "fillColor": {},
-                  "lineColor": {},
-                  "lineWidth": {}
-                }
-              }
-            },
-            "opacity": {},
-            "point": {
-              "events": {}
-            },
-            "pointRange": {},
-            "showCheckbox": {},
-            "softThreshold": {},
-            "states": {
-              "hover": {
-                "animation": {
-                  "duration": {}
-                },
-                "halo": {
-                  "opacity": {},
-                  "size": {}
-                },
-                "lineWidthPlus": {},
-                "marker": {}
-              },
-              "inactive": {
-                "animation": {
-                  "duration": {}
-                },
-                "opacity": {}
-              },
-              "normal": {
-                "animation": {}
-              },
-              "select": {
-                "animation": {
-                  "duration": {}
-                }
-              }
-            },
-            "stickyTracking": {},
-            "threshold": {},
-            "turboThreshold": {}
-          },
-          "areaspline": {
-            "allowPointSelect": {},
-            "animation": {
-              "duration": {}
-            },
-            "closure_uid_347133726": {},
-            "crisp": {},
-            "cropThreshold": {},
-            "dataLabels": {
-              "align": {},
-              "formatter": function () {},
-              "padding": {},
-              "style": {
-                "color": {},
-                "fontSize": {},
-                "fontWeight": {},
-                "textOutline": {}
-              },
-              "verticalAlign": {},
-              "x": {},
-              "y": {}
-            },
-            "events": {},
-            "findNearestPointBy": {},
-            "lineWidth": {},
-            "marker": {
-              "closure_uid_347133726": {},
-              "enabledThreshold": {},
-              "lineColor": {},
-              "lineWidth": {},
-              "radius": {},
-              "states": {
-                "closure_uid_347133726": {},
-                "hover": {
-                  "animation": {
-                    "closure_uid_347133726": {},
-                    "duration": {}
-                  },
-                  "closure_uid_347133726": {},
-                  "enabled": {},
-                  "lineWidthPlus": {},
-                  "radiusPlus": {}
-                },
-                "normal": {
-                  "animation": {}
-                },
-                "select": {
-                  "fillColor": {},
-                  "lineColor": {},
-                  "lineWidth": {}
-                }
-              }
-            },
-            "opacity": {},
-            "point": {
-              "events": {}
-            },
-            "pointRange": {},
-            "showCheckbox": {},
-            "softThreshold": {},
-            "states": {
-              "hover": {
-                "animation": {
-                  "duration": {}
-                },
-                "halo": {
-                  "opacity": {},
-                  "size": {}
-                },
-                "lineWidthPlus": {},
-                "marker": {}
-              },
-              "inactive": {
-                "animation": {
-                  "duration": {}
-                },
-                "opacity": {}
-              },
-              "normal": {
-                "animation": {}
-              },
-              "select": {
-                "animation": {
-                  "duration": {}
-                }
-              }
-            },
-            "stickyTracking": {},
-            "threshold": {},
-            "turboThreshold": {}
-          },
-          "bar": {
-            "allowPointSelect": {},
-            "animation": {
-              "duration": {}
-            },
-            "borderColor": {},
-            "borderRadius": {},
-            "crisp": {},
-            "cropThreshold": {},
-            "dataLabels": {
-              "align": {},
-              "formatter": function () {},
-              "padding": {},
-              "style": {
-                "color": {},
-                "fontSize": {},
-                "fontWeight": {},
-                "textOutline": {}
-              },
-              "verticalAlign": {},
-              "x": {},
-              "y": {}
-            },
-            "events": {},
-            "findNearestPointBy": {},
-            "groupPadding": {},
-            "lineWidth": {},
-            "marker": {},
-            "minPointLength": {},
-            "opacity": {},
-            "point": {
-              "events": {}
-            },
-            "pointPadding": {},
-            "pointRange": {},
-            "showCheckbox": {},
-            "softThreshold": {},
-            "startFromThreshold": {},
-            "states": {
-              "hover": {
-                "animation": {
-                  "duration": {}
-                },
-                "brightness": {},
-                "halo": {},
-                "lineWidthPlus": {},
-                "marker": {}
-              },
-              "inactive": {
-                "animation": {
-                  "duration": {}
-                },
-                "opacity": {}
-              },
-              "normal": {
-                "animation": {}
-              },
-              "select": {
-                "animation": {
-                  "duration": {}
-                },
-                "borderColor": {},
-                "color": {}
-              }
-            },
-            "stickyTracking": {},
-            "threshold": {},
-            "tooltip": {
-              "distance": {}
-            },
-            "turboThreshold": {}
-          },
-          "closure_uid_347133726": {},
-          "column": {
-            "allowPointSelect": {},
-            "animation": {
-              "duration": {}
-            },
-            "borderColor": {},
-            "borderRadius": {},
-            "crisp": {},
-            "cropThreshold": {},
-            "dataLabels": {
-              "align": {},
-              "formatter": function () {},
-              "padding": {},
-              "style": {
-                "color": {},
-                "fontSize": {},
-                "fontWeight": {},
-                "textOutline": {}
-              },
-              "verticalAlign": {},
-              "x": {},
-              "y": {}
-            },
-            "events": {},
-            "findNearestPointBy": {},
-            "groupPadding": {},
-            "lineWidth": {},
-            "marker": {},
-            "minPointLength": {},
-            "opacity": {},
-            "point": {
-              "events": {}
-            },
-            "pointPadding": {},
-            "pointRange": {},
-            "showCheckbox": {},
-            "softThreshold": {},
-            "startFromThreshold": {},
-            "states": {
-              "hover": {
-                "animation": {
-                  "duration": {}
-                },
-                "brightness": {},
-                "halo": {},
-                "lineWidthPlus": {},
-                "marker": {}
-              },
-              "inactive": {
-                "animation": {
-                  "duration": {}
-                },
-                "opacity": {}
-              },
-              "normal": {
-                "animation": {}
-              },
-              "select": {
-                "animation": {
-                  "duration": {}
-                },
-                "borderColor": {},
-                "color": {}
-              }
-            },
-            "stickyTracking": {},
-            "threshold": {},
-            "tooltip": {
-              "distance": {}
-            },
-            "turboThreshold": {}
-          },
-          "line": {
-            "allowPointSelect": {},
-            "animation": {
-              "duration": {}
-            },
-            "closure_uid_347133726": {},
-            "crisp": {},
-            "cropThreshold": {},
-            "dataLabels": {
-              "align": {},
-              "formatter": function () {},
-              "padding": {},
-              "style": {
-                "color": {},
-                "fontSize": {},
-                "fontWeight": {},
-                "textOutline": {}
-              },
-              "verticalAlign": {},
-              "x": {},
-              "y": {}
-            },
-            "events": {},
-            "findNearestPointBy": {},
-            "lineWidth": {},
-            "marker": {
-              "closure_uid_347133726": {},
-              "enabledThreshold": {},
-              "lineColor": {},
-              "lineWidth": {},
-              "radius": {},
-              "states": {
-                "closure_uid_347133726": {},
-                "hover": {
-                  "animation": {
-                    "closure_uid_347133726": {},
-                    "duration": {}
-                  },
-                  "closure_uid_347133726": {},
-                  "enabled": {},
-                  "lineWidthPlus": {},
-                  "radiusPlus": {}
-                },
-                "normal": {
-                  "animation": {}
-                },
-                "select": {
-                  "fillColor": {},
-                  "lineColor": {},
-                  "lineWidth": {}
-                }
-              }
-            },
-            "opacity": {},
-            "point": {
-              "events": {}
-            },
-            "pointRange": {},
-            "showCheckbox": {},
-            "softThreshold": {},
-            "states": {
-              "hover": {
-                "animation": {
-                  "duration": {}
-                },
-                "halo": {
-                  "opacity": {},
-                  "size": {}
-                },
-                "lineWidthPlus": {},
-                "marker": {}
-              },
-              "inactive": {
-                "animation": {
-                  "duration": {}
-                },
-                "opacity": {}
-              },
-              "normal": {
-                "animation": {}
-              },
-              "select": {
-                "animation": {
-                  "duration": {}
-                }
-              }
-            },
-            "stickyTracking": {},
-            "turboThreshold": {}
-          },
-          "pie": {
-            "allowPointSelect": {},
-            "animation": {
-              "duration": {}
-            },
-            "borderColor": {},
-            "borderWidth": {},
-            "center": {},
-            "clip": {},
-            "colorByPoint": {},
-            "crisp": {},
-            "cropThreshold": {},
-            "dataLabels": {
-              "align": {},
-              "allowOverlap": {},
-              "connectorPadding": {},
-              "connectorShape": {},
-              "crookDistance": {},
-              "distance": {},
-              "enabled": {},
-              "formatter": function () {},
-              "padding": {},
-              "softConnector": {},
-              "style": {
-                "color": {},
-                "fontSize": {},
-                "fontWeight": {},
-                "textOutline": {}
-              },
-              "verticalAlign": {},
-              "x": {},
-              "y": {}
-            },
-            "events": {},
-            "fillColor": {},
-            "findNearestPointBy": {},
-            "ignoreHiddenPoint": {},
-            "inactiveOtherPoints": {},
-            "legendType": {},
-            "lineWidth": {},
-            "marker": {},
-            "opacity": {},
-            "point": {
-              "events": {}
-            },
-            "pointRange": {},
-            "showCheckbox": {},
-            "showInLegend": {},
             "size": {},
-            "slicedOffset": {},
-            "softThreshold": {},
-            "states": {
-              "hover": {
-                "animation": {
-                  "duration": {}
-                },
-                "brightness": {},
-                "halo": {
-                  "opacity": {},
-                  "size": {}
-                },
-                "lineWidthPlus": {},
-                "marker": {}
-              },
-              "inactive": {
-                "animation": {
-                  "duration": {}
-                },
-                "opacity": {}
-              },
-              "normal": {
-                "animation": {}
-              },
-              "select": {
-                "animation": {
-                  "duration": {}
-                }
-              }
-            },
-            "stickyTracking": {},
-            "tooltip": {
-              "followPointer": {}
-            },
-            "turboThreshold": {}
-          },
-          "scatter": {
-            "allowPointSelect": {},
-            "animation": {
-              "duration": {}
-            },
-            "closure_uid_347133726": {},
-            "crisp": {},
-            "cropThreshold": {},
-            "dataLabels": {
-              "align": {},
-              "formatter": function () {},
-              "padding": {},
-              "style": {
-                "color": {},
-                "fontSize": {},
-                "fontWeight": {},
-                "textOutline": {}
-              },
-              "verticalAlign": {},
-              "x": {},
-              "y": {}
-            },
-            "events": {},
-            "findNearestPointBy": {},
-            "jitter": {
-              "x": {},
-              "y": {}
-            },
-            "lineWidth": {},
-            "marker": {
-              "closure_uid_347133726": {},
-              "enabled": {},
-              "enabledThreshold": {},
-              "lineColor": {},
-              "lineWidth": {},
-              "radius": {},
-              "states": {
-                "closure_uid_347133726": {},
-                "hover": {
-                  "animation": {
-                    "closure_uid_347133726": {},
-                    "duration": {}
-                  },
-                  "closure_uid_347133726": {},
-                  "enabled": {},
-                  "lineWidthPlus": {},
-                  "radiusPlus": {}
-                },
-                "normal": {
-                  "animation": {}
-                },
-                "select": {
-                  "fillColor": {},
-                  "lineColor": {},
-                  "lineWidth": {}
-                }
-              }
-            },
-            "opacity": {},
-            "point": {
-              "events": {}
-            },
-            "pointRange": {},
-            "showCheckbox": {},
-            "softThreshold": {},
-            "states": {
-              "hover": {
-                "animation": {
-                  "duration": {}
-                },
-                "halo": {
-                  "opacity": {},
-                  "size": {}
-                },
-                "lineWidthPlus": {},
-                "marker": {}
-              },
-              "inactive": {
-                "animation": {
-                  "duration": {}
-                },
-                "opacity": {}
-              },
-              "normal": {
-                "animation": {}
-              },
-              "select": {
-                "animation": {
-                  "duration": {}
-                }
-              }
-            },
-            "stickyTracking": {},
-            "tooltip": {
-              "headerFormat": {},
-              "pointFormat": {}
-            },
-            "turboThreshold": {}
-          },
-          "spline": {
-            "allowPointSelect": {},
-            "animation": {
-              "duration": {}
-            },
-            "closure_uid_347133726": {},
-            "crisp": {},
-            "cropThreshold": {},
-            "dataLabels": {
-              "align": {},
-              "formatter": function () {},
-              "padding": {},
-              "style": {
-                "color": {},
-                "fontSize": {},
-                "fontWeight": {},
-                "textOutline": {}
-              },
-              "verticalAlign": {},
-              "x": {},
-              "y": {}
-            },
-            "events": {},
-            "findNearestPointBy": {},
-            "lineWidth": {},
-            "marker": {
-              "closure_uid_347133726": {},
-              "enabledThreshold": {},
-              "lineColor": {},
-              "lineWidth": {},
-              "radius": {},
-              "states": {
-                "closure_uid_347133726": {},
-                "hover": {
-                  "animation": {
-                    "closure_uid_347133726": {},
-                    "duration": {}
-                  },
-                  "closure_uid_347133726": {},
-                  "enabled": {},
-                  "lineWidthPlus": {},
-                  "radiusPlus": {}
-                },
-                "normal": {
-                  "animation": {}
-                },
-                "select": {
-                  "fillColor": {},
-                  "lineColor": {},
-                  "lineWidth": {}
-                }
-              }
-            },
-            "opacity": {},
-            "point": {
-              "events": {}
-            },
-            "pointRange": {},
-            "showCheckbox": {},
-            "softThreshold": {},
-            "states": {
-              "hover": {
-                "animation": {
-                  "duration": {}
-                },
-                "halo": {
-                  "opacity": {},
-                  "size": {}
-                },
-                "lineWidthPlus": {},
-                "marker": {}
-              },
-              "inactive": {
-                "animation": {
-                  "duration": {}
-                },
-                "opacity": {}
-              },
-              "normal": {
-                "animation": {}
-              },
-              "select": {
-                "animation": {
-                  "duration": {}
-                }
-              }
-            },
-            "stickyTracking": {},
-            "turboThreshold": {}
-          }
-        },
-        "subtitle": {
-          "align": {},
-          "text": {},
-          "widthAdjust": {}
-        },
-        "symbols": {},
-        "time": {
-          "Date": {},
-          "getTimezoneOffset": {},
-          "timezone": {},
-          "timezoneOffset": {},
-          "useUTC": {}
-        },
-        "title": {
-          "align": {},
-          "margin": {},
-          "text": {},
-          "widthAdjust": {}
-        },
-        "tooltip": {
-          "animation": {},
-          "backgroundColor": {},
-          "borderRadius": {},
-          "borderWidth": {},
-          "dateTimeLabelFormats": {
-            "day": {},
-            "hour": {},
-            "millisecond": {},
-            "minute": {},
-            "month": {},
-            "second": {},
-            "week": {},
-            "year": {}
-          },
-          "enabled": {},
-          "footerFormat": {},
-          "headerFormat": {},
-          "padding": {},
-          "pointFormat": {},
-          "shadow": {},
-          "snap": {},
-          "style": {
-            "color": {},
-            "cursor": {},
-            "fontSize": {},
-            "whiteSpace": {}
-          }
-        }
-      },
-      "defaultPlotOptions": {
-        "area": {
-          "allowPointSelect": {},
-          "animation": {
-            "duration": {}
-          },
-          "closure_uid_347133726": {},
-          "crisp": {},
-          "cropThreshold": {},
-          "dataLabels": {
-            "align": {},
-            "formatter": function () {},
-            "padding": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            },
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "events": {},
-          "findNearestPointBy": {},
-          "lineWidth": {},
-          "marker": {
-            "closure_uid_347133726": {},
-            "enabledThreshold": {},
-            "lineColor": {},
-            "lineWidth": {},
-            "radius": {},
-            "states": {
-              "closure_uid_347133726": {},
-              "hover": {
-                "animation": {
-                  "closure_uid_347133726": {},
-                  "duration": {}
-                },
-                "closure_uid_347133726": {},
-                "enabled": {},
-                "lineWidthPlus": {},
-                "radiusPlus": {}
-              },
-              "normal": {
-                "animation": {}
-              },
-              "select": {
-                "fillColor": {},
-                "lineColor": {},
-                "lineWidth": {}
-              }
-            }
-          },
-          "opacity": {},
-          "point": {
-            "events": {}
-          },
-          "pointRange": {},
-          "showCheckbox": {},
-          "softThreshold": {},
-          "states": {
-            "hover": {
-              "animation": {
-                "duration": {}
-              },
-              "halo": {
-                "opacity": {},
-                "size": {}
-              },
-              "lineWidthPlus": {},
-              "marker": {}
-            },
-            "inactive": {
-              "animation": {
-                "duration": {}
-              },
-              "opacity": {}
-            },
-            "normal": {
-              "animation": {}
-            },
-            "select": {
-              "animation": {
-                "duration": {}
-              }
-            }
-          },
-          "stickyTracking": {},
-          "threshold": {},
-          "turboThreshold": {}
-        },
-        "areaspline": {
-          "allowPointSelect": {},
-          "animation": {
-            "duration": {}
-          },
-          "closure_uid_347133726": {},
-          "crisp": {},
-          "cropThreshold": {},
-          "dataLabels": {
-            "align": {},
-            "formatter": function () {},
-            "padding": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            },
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "events": {},
-          "findNearestPointBy": {},
-          "lineWidth": {},
-          "marker": {
-            "closure_uid_347133726": {},
-            "enabledThreshold": {},
-            "lineColor": {},
-            "lineWidth": {},
-            "radius": {},
-            "states": {
-              "closure_uid_347133726": {},
-              "hover": {
-                "animation": {
-                  "closure_uid_347133726": {},
-                  "duration": {}
-                },
-                "closure_uid_347133726": {},
-                "enabled": {},
-                "lineWidthPlus": {},
-                "radiusPlus": {}
-              },
-              "normal": {
-                "animation": {}
-              },
-              "select": {
-                "fillColor": {},
-                "lineColor": {},
-                "lineWidth": {}
-              }
-            }
-          },
-          "opacity": {},
-          "point": {
-            "events": {}
-          },
-          "pointRange": {},
-          "showCheckbox": {},
-          "softThreshold": {},
-          "states": {
-            "hover": {
-              "animation": {
-                "duration": {}
-              },
-              "halo": {
-                "opacity": {},
-                "size": {}
-              },
-              "lineWidthPlus": {},
-              "marker": {}
-            },
-            "inactive": {
-              "animation": {
-                "duration": {}
-              },
-              "opacity": {}
-            },
-            "normal": {
-              "animation": {}
-            },
-            "select": {
-              "animation": {
-                "duration": {}
-              }
-            }
-          },
-          "stickyTracking": {},
-          "threshold": {},
-          "turboThreshold": {}
-        },
-        "bar": {
-          "allowPointSelect": {},
-          "animation": {
-            "duration": {}
-          },
-          "borderColor": {},
-          "borderRadius": {},
-          "crisp": {},
-          "cropThreshold": {},
-          "dataLabels": {
-            "align": {},
-            "formatter": function () {},
-            "padding": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            },
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "events": {},
-          "findNearestPointBy": {},
-          "groupPadding": {},
-          "lineWidth": {},
-          "marker": {},
-          "minPointLength": {},
-          "opacity": {},
-          "point": {
-            "events": {}
-          },
-          "pointPadding": {},
-          "pointRange": {},
-          "showCheckbox": {},
-          "softThreshold": {},
-          "startFromThreshold": {},
-          "states": {
-            "hover": {
-              "animation": {
-                "duration": {}
-              },
-              "brightness": {},
-              "halo": {},
-              "lineWidthPlus": {},
-              "marker": {}
-            },
-            "inactive": {
-              "animation": {
-                "duration": {}
-              },
-              "opacity": {}
-            },
-            "normal": {
-              "animation": {}
-            },
-            "select": {
-              "animation": {
-                "duration": {}
-              },
-              "borderColor": {},
-              "color": {}
-            }
-          },
-          "stickyTracking": {},
-          "threshold": {},
-          "tooltip": {
-            "distance": {}
-          },
-          "turboThreshold": {}
-        },
-        "closure_uid_347133726": {},
-        "column": {
-          "allowPointSelect": {},
-          "animation": {
-            "duration": {}
-          },
-          "borderColor": {},
-          "borderRadius": {},
-          "crisp": {},
-          "cropThreshold": {},
-          "dataLabels": {
-            "align": {},
-            "formatter": function () {},
-            "padding": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            },
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "events": {},
-          "findNearestPointBy": {},
-          "groupPadding": {},
-          "lineWidth": {},
-          "marker": {},
-          "minPointLength": {},
-          "opacity": {},
-          "point": {
-            "events": {}
-          },
-          "pointPadding": {},
-          "pointRange": {},
-          "showCheckbox": {},
-          "softThreshold": {},
-          "startFromThreshold": {},
-          "states": {
-            "hover": {
-              "animation": {
-                "duration": {}
-              },
-              "brightness": {},
-              "halo": {},
-              "lineWidthPlus": {},
-              "marker": {}
-            },
-            "inactive": {
-              "animation": {
-                "duration": {}
-              },
-              "opacity": {}
-            },
-            "normal": {
-              "animation": {}
-            },
-            "select": {
-              "animation": {
-                "duration": {}
-              },
-              "borderColor": {},
-              "color": {}
-            }
-          },
-          "stickyTracking": {},
-          "threshold": {},
-          "tooltip": {
-            "distance": {}
-          },
-          "turboThreshold": {}
-        },
-        "line": {
-          "allowPointSelect": {},
-          "animation": {
-            "duration": {}
-          },
-          "closure_uid_347133726": {},
-          "crisp": {},
-          "cropThreshold": {},
-          "dataLabels": {
-            "align": {},
-            "formatter": function () {},
-            "padding": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            },
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "events": {},
-          "findNearestPointBy": {},
-          "lineWidth": {},
-          "marker": {
-            "closure_uid_347133726": {},
-            "enabledThreshold": {},
-            "lineColor": {},
-            "lineWidth": {},
-            "radius": {},
-            "states": {
-              "closure_uid_347133726": {},
-              "hover": {
-                "animation": {
-                  "closure_uid_347133726": {},
-                  "duration": {}
-                },
-                "closure_uid_347133726": {},
-                "enabled": {},
-                "lineWidthPlus": {},
-                "radiusPlus": {}
-              },
-              "normal": {
-                "animation": {}
-              },
-              "select": {
-                "fillColor": {},
-                "lineColor": {},
-                "lineWidth": {}
-              }
-            }
-          },
-          "opacity": {},
-          "point": {
-            "events": {}
-          },
-          "pointRange": {},
-          "showCheckbox": {},
-          "softThreshold": {},
-          "states": {
-            "hover": {
-              "animation": {
-                "duration": {}
-              },
-              "halo": {
-                "opacity": {},
-                "size": {}
-              },
-              "lineWidthPlus": {},
-              "marker": {}
-            },
-            "inactive": {
-              "animation": {
-                "duration": {}
-              },
-              "opacity": {}
-            },
-            "normal": {
-              "animation": {}
-            },
-            "select": {
-              "animation": {
-                "duration": {}
-              }
-            }
-          },
-          "stickyTracking": {},
-          "turboThreshold": {}
-        },
-        "pie": {
-          "allowPointSelect": {},
-          "animation": {
-            "duration": {}
-          },
-          "borderColor": {},
-          "borderWidth": {},
-          "center": {},
-          "clip": {},
-          "colorByPoint": {},
-          "crisp": {},
-          "cropThreshold": {},
-          "dataLabels": {
-            "align": {},
-            "allowOverlap": {},
-            "connectorPadding": {},
-            "connectorShape": {},
-            "crookDistance": {},
-            "distance": {},
-            "enabled": {},
-            "formatter": function () {},
-            "padding": {},
-            "softConnector": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            },
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "events": {},
-          "fillColor": {},
-          "findNearestPointBy": {},
-          "ignoreHiddenPoint": {},
-          "inactiveOtherPoints": {},
-          "legendType": {},
-          "lineWidth": {},
-          "marker": {},
-          "opacity": {},
-          "point": {
-            "events": {}
-          },
-          "pointRange": {},
-          "showCheckbox": {},
-          "showInLegend": {},
-          "size": {},
-          "slicedOffset": {},
-          "softThreshold": {},
-          "states": {
-            "hover": {
-              "animation": {
-                "duration": {}
-              },
-              "brightness": {},
-              "halo": {
-                "opacity": {},
-                "size": {}
-              },
-              "lineWidthPlus": {},
-              "marker": {}
-            },
-            "inactive": {
-              "animation": {
-                "duration": {}
-              },
-              "opacity": {}
-            },
-            "normal": {
-              "animation": {}
-            },
-            "select": {
-              "animation": {
-                "duration": {}
-              }
-            }
-          },
-          "stickyTracking": {},
-          "tooltip": {
-            "followPointer": {}
-          },
-          "turboThreshold": {}
-        },
-        "scatter": {
-          "allowPointSelect": {},
-          "animation": {
-            "duration": {}
-          },
-          "closure_uid_347133726": {},
-          "crisp": {},
-          "cropThreshold": {},
-          "dataLabels": {
-            "align": {},
-            "formatter": function () {},
-            "padding": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            },
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "events": {},
-          "findNearestPointBy": {},
-          "jitter": {
-            "x": {},
-            "y": {}
-          },
-          "lineWidth": {},
-          "marker": {
-            "closure_uid_347133726": {},
-            "enabled": {},
-            "enabledThreshold": {},
-            "lineColor": {},
-            "lineWidth": {},
-            "radius": {},
-            "states": {
-              "closure_uid_347133726": {},
-              "hover": {
-                "animation": {
-                  "closure_uid_347133726": {},
-                  "duration": {}
-                },
-                "closure_uid_347133726": {},
-                "enabled": {},
-                "lineWidthPlus": {},
-                "radiusPlus": {}
-              },
-              "normal": {
-                "animation": {}
-              },
-              "select": {
-                "fillColor": {},
-                "lineColor": {},
-                "lineWidth": {}
-              }
-            }
-          },
-          "opacity": {},
-          "point": {
-            "events": {}
-          },
-          "pointRange": {},
-          "showCheckbox": {},
-          "softThreshold": {},
-          "states": {
-            "hover": {
-              "animation": {
-                "duration": {}
-              },
-              "halo": {
-                "opacity": {},
-                "size": {}
-              },
-              "lineWidthPlus": {},
-              "marker": {}
-            },
-            "inactive": {
-              "animation": {
-                "duration": {}
-              },
-              "opacity": {}
-            },
-            "normal": {
-              "animation": {}
-            },
-            "select": {
-              "animation": {
-                "duration": {}
-              }
-            }
-          },
-          "stickyTracking": {},
-          "tooltip": {
-            "headerFormat": {},
-            "pointFormat": {}
-          },
-          "turboThreshold": {}
-        },
-        "spline": {
-          "allowPointSelect": {},
-          "animation": {
-            "duration": {}
-          },
-          "closure_uid_347133726": {},
-          "crisp": {},
-          "cropThreshold": {},
-          "dataLabels": {
-            "align": {},
-            "formatter": function () {},
-            "padding": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            },
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "events": {},
-          "findNearestPointBy": {},
-          "lineWidth": {},
-          "marker": {
-            "closure_uid_347133726": {},
-            "enabledThreshold": {},
-            "lineColor": {},
-            "lineWidth": {},
-            "radius": {},
-            "states": {
-              "closure_uid_347133726": {},
-              "hover": {
-                "animation": {
-                  "closure_uid_347133726": {},
-                  "duration": {}
-                },
-                "closure_uid_347133726": {},
-                "enabled": {},
-                "lineWidthPlus": {},
-                "radiusPlus": {}
-              },
-              "normal": {
-                "animation": {}
-              },
-              "select": {
-                "fillColor": {},
-                "lineColor": {},
-                "lineWidth": {}
-              }
-            }
-          },
-          "opacity": {},
-          "point": {
-            "events": {}
-          },
-          "pointRange": {},
-          "showCheckbox": {},
-          "softThreshold": {},
-          "states": {
-            "hover": {
-              "animation": {
-                "duration": {}
-              },
-              "halo": {
-                "opacity": {},
-                "size": {}
-              },
-              "lineWidthPlus": {},
-              "marker": {}
-            },
-            "inactive": {
-              "animation": {
-                "duration": {}
-              },
-              "opacity": {}
-            },
-            "normal": {
-              "animation": {}
-            },
-            "select": {
-              "animation": {
-                "duration": {}
-              }
-            }
-          },
-          "stickyTracking": {},
-          "turboThreshold": {}
-        }
-      },
-      "defined": function () {},
-      "deg2rad": {},
-      "destroyObjectProperties": function () {},
-      "discardElement": function () {},
-      "distribute": function () {},
-      "doc": {},
-      "each": function () {},
-      "erase": function () {},
-      "error": function () {},
-      "extend": function () {},
-      "extendClass": function () {},
-      "find": function () {},
-      "fireEvent": function () {},
-      "format": function () {},
-      "getMagnitude": function () {},
-      "getOptions": function () {},
-      "getStyle": function () {},
-      "grep": function () {},
-      "hasBidiBug": {},
-      "hasTouch": {},
-      "inArray": function () {},
-      "isArray": function () {},
-      "isChrome": {},
-      "isClass": function () {},
-      "isDOMElement": function () {},
-      "isFirefox": {},
-      "isFunction": function () {},
-      "isMS": {},
-      "isNumber": function () {},
-      "isObject": function () {},
-      "isSafari": {},
-      "isString": function () {},
-      "isTouchDevice": {},
-      "isWebKit": {},
-      "keys": function () {},
-      "map": function () {},
-      "marginNames": {},
-      "merge": function () {},
-      "noop": function () {},
-      "normalizeTickInterval": function () {},
-      "numberFormat": function () {},
-      "objectEach": function () {},
-      "offset": function () {},
-      "pInt": function () {},
-      "pad": function () {},
-      "pick": function () {},
-      "product": {},
-      "reduce": function () {},
-      "relativeLength": function () {},
-      "removeEvent": function () {},
-      "seriesType": function () {},
-      "seriesTypes": {
-        "area": function () {},
-        "areaspline": function () {},
-        "bar": function () {},
-        "column": function () {},
-        "line": function () {},
-        "pie": function () {},
-        "scatter": function () {},
-        "spline": function () {}
-      },
-      "setAnimation": function () {},
-      "setOptions": function () {},
-      "some": function () {},
-      "splat": function () {},
-      "stableSort": function () {},
-      "stop": function () {},
-      "svg": {},
-      "symbolSizes": {},
-      "syncTimeout": function () {},
-      "time": {
-        "Date": function () {},
-        "dateFormat": function () {},
-        "get": function () {},
-        "getTimeTicks": function () {},
-        "getTimezoneOffset": function () {},
-        "makeTime": function () {},
-        "options": {
-          "Date": {},
-          "getTimezoneOffset": {},
-          "timezone": {},
-          "timezoneOffset": {},
-          "useUTC": {}
-        },
-        "resolveDTLFormat": function () {},
-        "set": function () {},
-        "timezoneOffset": {},
-        "timezoneOffsetFunction": function () {},
-        "update": function () {},
-        "useUTC": {},
-        "variableTimezone": {}
-      },
-      "timeUnits": {
-        "day": {},
-        "hour": {},
-        "millisecond": {},
-        "minute": {},
-        "month": {},
-        "second": {},
-        "week": {},
-        "year": {}
-      },
-      "timers": {},
-      "uniqueKey": function () {},
-      "version": {},
-      "win": {
-        "Highcharts": {},
-        "PERSISTENT": {},
-        "TEMPORARY": {},
-        "addEventListener": function () {},
-        "alert": function () {},
-        "atob": function () {},
-        "blur": function () {},
-        "btoa": function () {},
-        "cancelAnimationFrame": function () {},
-        "cancelIdleCallback": function () {},
-        "captureEvents": function () {},
-        "chrome": {
-          "app": {
-            "InstallState": {
-              "DISABLED": {},
-              "INSTALLED": {},
-              "NOT_INSTALLED": {}
-            },
-            "RunningState": {
-              "CANNOT_RUN": {},
-              "READY_TO_RUN": {},
-              "RUNNING": {}
-            },
-            "getDetails": function () {},
-            "getIsInstalled": function () {},
-            "installState": function () {},
-            "isInstalled": {},
-            "runningState": function () {}
-          },
-          "csi": function () {},
-          "loadTimes": function () {}
-        },
-        "clearInterval": function () {},
-        "clearTimeout": function () {},
-        "clientInformation": {
-          "appCodeName": {},
-          "appName": {},
-          "appVersion": {},
-          "connection": {
-            "addEventListener": function () {},
-            "dispatchEvent": function () {},
-            "downlink": {},
-            "effectiveType": {},
-            "onchange": {},
-            "removeEventListener": function () {},
-            "rtt": {},
-            "saveData": {}
-          },
-          "cookieEnabled": {},
-          "doNotTrack": {},
-          "geolocation": {
-            "clearWatch": function () {},
-            "getCurrentPosition": function () {},
-            "watchPosition": function () {}
-          },
-          "getBattery": function () {},
-          "getGamepads": function () {},
-          "hardwareConcurrency": {},
-          "javaEnabled": function () {},
-          "language": {},
-          "languages": {},
-          "maxTouchPoints": {},
-          "mediaCapabilities": {
-            "decodingInfo": function () {}
-          },
-          "mediaSession": {
-            "metadata": {},
-            "playbackState": {},
-            "setActionHandler": function () {},
-            "setPositionState": function () {}
-          },
-          "mimeTypes": {
-            "0": {
-              "description": {},
-              "enabledPlugin": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "description": {},
-                "filename": {},
-                "item": function () {},
-                "length": {},
-                "name": {},
-                "namedItem": function () {}
-              },
-              "suffixes": {},
-              "type": {}
-            },
-            "1": {
-              "description": {},
-              "enabledPlugin": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "description": {},
-                "filename": {},
-                "item": function () {},
-                "length": {},
-                "name": {},
-                "namedItem": function () {}
-              },
-              "suffixes": {},
-              "type": {}
-            },
-            "2": {
-              "description": {},
-              "enabledPlugin": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "1": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "description": {},
-                "filename": {},
-                "item": function () {},
-                "length": {},
-                "name": {},
-                "namedItem": function () {}
-              },
-              "suffixes": {},
-              "type": {}
-            },
-            "3": {
-              "description": {},
-              "enabledPlugin": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "1": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "description": {},
-                "filename": {},
-                "item": function () {},
-                "length": {},
-                "name": {},
-                "namedItem": function () {}
-              },
-              "suffixes": {},
-              "type": {}
-            },
-            "item": function () {},
-            "length": {},
-            "namedItem": function () {}
-          },
-          "onLine": {},
-          "permissions": {
-            "query": function () {}
-          },
-          "platform": {},
-          "plugins": {
-            "0": {
-              "0": {
-                "description": {},
-                "enabledPlugin": {},
-                "suffixes": {},
-                "type": {}
-              },
-              "description": {},
-              "filename": {},
-              "item": function () {},
-              "length": {},
-              "name": {},
-              "namedItem": function () {}
-            },
-            "1": {
-              "0": {
-                "description": {},
-                "enabledPlugin": {},
-                "suffixes": {},
-                "type": {}
-              },
-              "description": {},
-              "filename": {},
-              "item": function () {},
-              "length": {},
-              "name": {},
-              "namedItem": function () {}
-            },
-            "2": {
-              "0": {
-                "description": {},
-                "enabledPlugin": {},
-                "suffixes": {},
-                "type": {}
-              },
-              "1": {
-                "description": {},
-                "enabledPlugin": {},
-                "suffixes": {},
-                "type": {}
-              },
-              "description": {},
-              "filename": {},
-              "item": function () {},
-              "length": {},
-              "name": {},
-              "namedItem": function () {}
-            },
-            "item": function () {},
-            "length": {},
-            "namedItem": function () {},
-            "refresh": function () {}
-          },
-          "product": {},
-          "productSub": {},
-          "sendBeacon": function () {},
-          "userActivation": {
-            "hasBeenActive": {},
-            "isActive": {}
-          },
-          "userAgent": {},
-          "vendor": {},
-          "vendorSub": {},
-          "vibrate": function () {},
-          "webkitPersistentStorage": {
-            "queryUsageAndQuota": function () {},
-            "requestQuota": function () {}
-          },
-          "webkitTemporaryStorage": {
-            "queryUsageAndQuota": function () {},
-            "requestQuota": function () {}
-          }
-        },
-        "close": function () {},
-        "closed": {},
-        "closure_uid_347133726": {},
-        "confirm": function () {},
-        "createImageBitmap": function () {},
-        "crypto": {
-          "getRandomValues": function () {}
-        },
-        "customElements": {
-          "define": function () {},
-          "get": function () {},
-          "upgrade": function () {},
-          "whenDefined": function () {}
-        },
-        "defaultStatus": {},
-        "defaultstatus": {},
-        "devicePixelRatio": {},
-        "dispatchEvent": function () {},
-        "document": {},
-        "external": {
-          "AddSearchProvider": function () {},
-          "IsSearchProviderInstalled": function () {}
-        },
-        "fetch": function () {},
-        "find": function () {},
-        "focus": function () {},
-        "frameElement": {},
-        "frames": {},
-        "getComputedStyle": function () {},
-        "getSelection": function () {},
-        "history": {
-          "back": function () {},
-          "forward": function () {},
-          "go": function () {},
-          "length": {},
-          "pushState": function () {},
-          "replaceState": function () {},
-          "scrollRestoration": {},
-          "state": {}
-        },
-        "indexedDB": {
-          "cmp": function () {},
-          "databases": function () {},
-          "deleteDatabase": function () {},
-          "open": function () {}
-        },
-        "innerHeight": {},
-        "innerWidth": {},
-        "isSecureContext": {},
-        "length": {},
-        "localStorage": {
-          "clear": function () {},
-          "getItem": function () {},
-          "key": function () {},
-          "length": {},
-          "removeItem": function () {},
-          "setItem": function () {}
-        },
-        "location": {
-          "ancestorOrigins": {
-            "0": {},
-            "contains": function () {},
-            "item": function () {},
-            "length": {}
-          },
-          "assign": function () {},
-          "fragmentDirective": {},
-          "hash": {},
-          "host": {},
-          "hostname": {},
-          "href": {},
-          "origin": {},
-          "pathname": {},
-          "port": {},
-          "protocol": {},
-          "reload": function () {},
-          "replace": function () {},
-          "search": {},
-          "toString": function () {}
-        },
-        "locationbar": {
-          "visible": {}
-        },
-        "matchMedia": function () {},
-        "menubar": {
-          "visible": {}
-        },
-        "moveBy": function () {},
-        "moveTo": function () {},
-        "name": {},
-        "navigator": {
-          "appCodeName": {},
-          "appName": {},
-          "appVersion": {},
-          "connection": {
-            "addEventListener": function () {},
-            "dispatchEvent": function () {},
-            "downlink": {},
-            "effectiveType": {},
-            "onchange": {},
-            "removeEventListener": function () {},
-            "rtt": {},
-            "saveData": {}
-          },
-          "cookieEnabled": {},
-          "doNotTrack": {},
-          "geolocation": {
-            "clearWatch": function () {},
-            "getCurrentPosition": function () {},
-            "watchPosition": function () {}
-          },
-          "getBattery": function () {},
-          "getGamepads": function () {},
-          "hardwareConcurrency": {},
-          "javaEnabled": function () {},
-          "language": {},
-          "languages": {},
-          "maxTouchPoints": {},
-          "mediaCapabilities": {
-            "decodingInfo": function () {}
-          },
-          "mediaSession": {
-            "metadata": {},
-            "playbackState": {},
-            "setActionHandler": function () {},
-            "setPositionState": function () {}
-          },
-          "mimeTypes": {
-            "0": {
-              "description": {},
-              "enabledPlugin": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "description": {},
-                "filename": {},
-                "item": function () {},
-                "length": {},
-                "name": {},
-                "namedItem": function () {}
-              },
-              "suffixes": {},
-              "type": {}
-            },
-            "1": {
-              "description": {},
-              "enabledPlugin": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "description": {},
-                "filename": {},
-                "item": function () {},
-                "length": {},
-                "name": {},
-                "namedItem": function () {}
-              },
-              "suffixes": {},
-              "type": {}
-            },
-            "2": {
-              "description": {},
-              "enabledPlugin": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "1": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "description": {},
-                "filename": {},
-                "item": function () {},
-                "length": {},
-                "name": {},
-                "namedItem": function () {}
-              },
-              "suffixes": {},
-              "type": {}
-            },
-            "3": {
-              "description": {},
-              "enabledPlugin": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "1": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "description": {},
-                "filename": {},
-                "item": function () {},
-                "length": {},
-                "name": {},
-                "namedItem": function () {}
-              },
-              "suffixes": {},
-              "type": {}
-            },
-            "item": function () {},
-            "length": {},
-            "namedItem": function () {}
-          },
-          "onLine": {},
-          "permissions": {
-            "query": function () {}
-          },
-          "platform": {},
-          "plugins": {
-            "0": {
-              "0": {
-                "description": {},
-                "enabledPlugin": {},
-                "suffixes": {},
-                "type": {}
-              },
-              "description": {},
-              "filename": {},
-              "item": function () {},
-              "length": {},
-              "name": {},
-              "namedItem": function () {}
-            },
-            "1": {
-              "0": {
-                "description": {},
-                "enabledPlugin": {},
-                "suffixes": {},
-                "type": {}
-              },
-              "description": {},
-              "filename": {},
-              "item": function () {},
-              "length": {},
-              "name": {},
-              "namedItem": function () {}
-            },
-            "2": {
-              "0": {
-                "description": {},
-                "enabledPlugin": {},
-                "suffixes": {},
-                "type": {}
-              },
-              "1": {
-                "description": {},
-                "enabledPlugin": {},
-                "suffixes": {},
-                "type": {}
-              },
-              "description": {},
-              "filename": {},
-              "item": function () {},
-              "length": {},
-              "name": {},
-              "namedItem": function () {}
-            },
-            "item": function () {},
-            "length": {},
-            "namedItem": function () {},
-            "refresh": function () {}
-          },
-          "product": {},
-          "productSub": {},
-          "sendBeacon": function () {},
-          "userActivation": {
-            "hasBeenActive": {},
-            "isActive": {}
-          },
-          "userAgent": {},
-          "vendor": {},
-          "vendorSub": {},
-          "vibrate": function () {},
-          "webkitPersistentStorage": {
-            "queryUsageAndQuota": function () {},
-            "requestQuota": function () {}
-          },
-          "webkitTemporaryStorage": {
-            "queryUsageAndQuota": function () {},
-            "requestQuota": function () {}
-          }
-        },
-        "onabort": {},
-        "onafterprint": {},
-        "onanimationend": {},
-        "onanimationiteration": {},
-        "onanimationstart": {},
-        "onappinstalled": {},
-        "onauxclick": {},
-        "onbeforeinstallprompt": {},
-        "onbeforeprint": {},
-        "onbeforeunload": {},
-        "onblur": {},
-        "oncancel": {},
-        "oncanplay": {},
-        "oncanplaythrough": {},
-        "onchange": {},
-        "onclick": {},
-        "onclose": {},
-        "oncontextmenu": {},
-        "oncuechange": {},
-        "ondblclick": {},
-        "ondrag": {},
-        "ondragend": {},
-        "ondragenter": {},
-        "ondragleave": {},
-        "ondragover": {},
-        "ondragstart": {},
-        "ondrop": {},
-        "ondurationchange": {},
-        "onemptied": {},
-        "onended": {},
-        "onerror": {},
-        "onfocus": {},
-        "onformdata": {},
-        "ongotpointercapture": {},
-        "onhashchange": {},
-        "oninput": {},
-        "oninvalid": {},
-        "onkeydown": {},
-        "onkeypress": {},
-        "onkeyup": {},
-        "onlanguagechange": {},
-        "onload": {},
-        "onloadeddata": {},
-        "onloadedmetadata": {},
-        "onloadstart": {},
-        "onlostpointercapture": {},
-        "onmessage": {},
-        "onmessageerror": {},
-        "onmousedown": {},
-        "onmouseenter": {},
-        "onmouseleave": {},
-        "onmousemove": {},
-        "onmouseout": {},
-        "onmouseover": {},
-        "onmouseup": {},
-        "onmousewheel": {},
-        "onoffline": {},
-        "ononline": {},
-        "onpagehide": {},
-        "onpageshow": {},
-        "onpause": {},
-        "onplay": {},
-        "onplaying": {},
-        "onpointercancel": {},
-        "onpointerdown": {},
-        "onpointerenter": {},
-        "onpointerleave": {},
-        "onpointermove": {},
-        "onpointerout": {},
-        "onpointerover": {},
-        "onpointerrawupdate": {},
-        "onpointerup": {},
-        "onpopstate": {},
-        "onprogress": {},
-        "onratechange": {},
-        "onrejectionhandled": {},
-        "onreset": {},
-        "onresize": {},
-        "onscroll": {},
-        "onsearch": {},
-        "onseeked": {},
-        "onseeking": {},
-        "onselect": {},
-        "onselectionchange": {},
-        "onselectstart": {},
-        "onstalled": {},
-        "onstorage": {},
-        "onsubmit": {},
-        "onsuspend": {},
-        "ontimeupdate": {},
-        "ontoggle": {},
-        "ontransitionend": {},
-        "onunhandledrejection": {},
-        "onunload": {},
-        "onvolumechange": {},
-        "onwaiting": {},
-        "onwebkitanimationend": {},
-        "onwebkitanimationiteration": {},
-        "onwebkitanimationstart": {},
-        "onwebkittransitionend": {},
-        "onwheel": {},
-        "open": function () {},
-        "openDatabase": function () {},
-        "opener": {},
-        "origin": {},
-        "outerHeight": {},
-        "outerWidth": {},
-        "pageXOffset": {},
-        "pageYOffset": {},
-        "parent": {
-          "PERSISTENT": {},
-          "React": {
-            "Children": {
-              "count": function () {},
-              "forEach": function () {},
-              "map": function () {},
-              "only": function () {},
-              "toArray": function () {}
-            },
-            "Component": function () {},
-            "DOM": {
-              "a": {
-                "type": {}
-              },
-              "abbr": {
-                "type": {}
-              },
-              "address": {
-                "type": {}
-              },
-              "area": {
-                "type": {}
-              },
-              "article": {
-                "type": {}
-              },
-              "aside": {
-                "type": {}
-              },
-              "audio": {
-                "type": {}
-              },
-              "b": {
-                "type": {}
-              },
-              "base": {
-                "type": {}
-              },
-              "bdi": {
-                "type": {}
-              },
-              "bdo": {
-                "type": {}
-              },
-              "big": {
-                "type": {}
-              },
-              "blockquote": {
-                "type": {}
-              },
-              "body": {
-                "type": {}
-              },
-              "br": {
-                "type": {}
-              },
-              "button": {
-                "type": {}
-              },
-              "canvas": {
-                "type": {}
-              },
-              "caption": {
-                "type": {}
-              },
-              "circle": {
-                "type": {}
-              },
-              "cite": {
-                "type": {}
-              },
-              "clipPath": {
-                "type": {}
-              },
-              "code": {
-                "type": {}
-              },
-              "col": {
-                "type": {}
-              },
-              "colgroup": {
-                "type": {}
-              },
-              "data": {
-                "type": {}
-              },
-              "datalist": {
-                "type": {}
-              },
-              "dd": {
-                "type": {}
-              },
-              "defs": {
-                "type": {}
-              },
-              "del": {
-                "type": {}
-              },
-              "details": {
-                "type": {}
-              },
-              "dfn": {
-                "type": {}
-              },
-              "dialog": {
-                "type": {}
-              },
-              "div": {
-                "type": {}
-              },
-              "dl": {
-                "type": {}
-              },
-              "dt": {
-                "type": {}
-              },
-              "ellipse": {
-                "type": {}
-              },
-              "em": {
-                "type": {}
-              },
-              "embed": {
-                "type": {}
-              },
-              "fieldset": {
-                "type": {}
-              },
-              "figcaption": {
-                "type": {}
-              },
-              "figure": {
-                "type": {}
-              },
-              "footer": {
-                "type": {}
-              },
-              "form": {
-                "type": {}
-              },
-              "g": {
-                "type": {}
-              },
-              "h1": {
-                "type": {}
-              },
-              "h2": {
-                "type": {}
-              },
-              "h3": {
-                "type": {}
-              },
-              "h4": {
-                "type": {}
-              },
-              "h5": {
-                "type": {}
-              },
-              "h6": {
-                "type": {}
-              },
-              "head": {
-                "type": {}
-              },
-              "header": {
-                "type": {}
-              },
-              "hgroup": {
-                "type": {}
-              },
-              "hr": {
-                "type": {}
-              },
-              "html": {
-                "type": {}
-              },
-              "i": {
-                "type": {}
-              },
-              "iframe": {
-                "type": {}
-              },
-              "image": {
-                "type": {}
-              },
-              "img": {
-                "type": {}
-              },
-              "input": {
-                "type": {}
-              },
-              "ins": {
-                "type": {}
-              },
-              "kbd": {
-                "type": {}
-              },
-              "keygen": {
-                "type": {}
-              },
-              "label": {
-                "type": {}
-              },
-              "legend": {
-                "type": {}
-              },
-              "li": {
-                "type": {}
-              },
-              "line": {
-                "type": {}
-              },
-              "linearGradient": {
-                "type": {}
-              },
-              "link": {
-                "type": {}
-              },
-              "main": {
-                "type": {}
-              },
-              "map": {
-                "type": {}
-              },
-              "mark": {
-                "type": {}
-              },
-              "mask": {
-                "type": {}
-              },
-              "menu": {
-                "type": {}
-              },
-              "menuitem": {
-                "type": {}
-              },
-              "meta": {
-                "type": {}
-              },
-              "meter": {
-                "type": {}
-              },
-              "nav": {
-                "type": {}
-              },
-              "noscript": {
-                "type": {}
-              },
-              "object": {
-                "type": {}
-              },
-              "ol": {
-                "type": {}
-              },
-              "optgroup": {
-                "type": {}
-              },
-              "option": {
-                "type": {}
-              },
-              "output": {
-                "type": {}
-              },
-              "p": {
-                "type": {}
-              },
-              "param": {
-                "type": {}
-              },
-              "path": {
-                "type": {}
-              },
-              "pattern": {
-                "type": {}
-              },
-              "picture": {
-                "type": {}
-              },
-              "polygon": {
-                "type": {}
-              },
-              "polyline": {
-                "type": {}
-              },
-              "pre": {
-                "type": {}
-              },
-              "progress": {
-                "type": {}
-              },
-              "q": {
-                "type": {}
-              },
-              "radialGradient": {
-                "type": {}
-              },
-              "rect": {
-                "type": {}
-              },
-              "rp": {
-                "type": {}
-              },
-              "rt": {
-                "type": {}
-              },
-              "ruby": {
-                "type": {}
-              },
-              "s": {
-                "type": {}
-              },
-              "samp": {
-                "type": {}
-              },
-              "script": {
-                "type": {}
-              },
-              "section": {
-                "type": {}
-              },
-              "select": {
-                "type": {}
-              },
-              "small": {
-                "type": {}
-              },
-              "source": {
-                "type": {}
-              },
-              "span": {
-                "type": {}
-              },
-              "stop": {
-                "type": {}
-              },
-              "strong": {
-                "type": {}
-              },
-              "style": {
-                "type": {}
-              },
-              "sub": {
-                "type": {}
-              },
-              "summary": {
-                "type": {}
-              },
-              "sup": {
-                "type": {}
-              },
-              "svg": {
-                "type": {}
-              },
-              "table": {
-                "type": {}
-              },
-              "tbody": {
-                "type": {}
-              },
-              "td": {
-                "type": {}
-              },
-              "text": {
-                "type": {}
-              },
-              "textarea": {
-                "type": {}
-              },
-              "tfoot": {
-                "type": {}
-              },
-              "th": {
-                "type": {}
-              },
-              "thead": {
-                "type": {}
-              },
-              "time": {
-                "type": {}
-              },
-              "title": {
-                "type": {}
-              },
-              "tr": {
-                "type": {}
-              },
-              "track": {
-                "type": {}
-              },
-              "tspan": {
-                "type": {}
-              },
-              "u": {
-                "type": {}
-              },
-              "ul": {
-                "type": {}
-              },
-              "var": {
-                "type": {}
-              },
-              "video": {
-                "type": {}
-              },
-              "wbr": {
-                "type": {}
-              }
-            },
-            "PropTypes": {
-              "PropTypes": {},
-              "any": {
-                "isRequired": function () {}
-              },
-              "array": {
-                "isRequired": function () {}
-              },
-              "arrayOf": function () {},
-              "bool": {
-                "isRequired": function () {}
-              },
-              "checkPropTypes": function () {},
-              "element": {
-                "isRequired": function () {}
-              },
-              "func": {
-                "isRequired": function () {}
-              },
-              "instanceOf": function () {},
-              "node": {
-                "isRequired": function () {}
-              },
-              "number": {
-                "isRequired": function () {}
-              },
-              "object": {
-                "isRequired": function () {}
-              },
-              "objectOf": function () {},
-              "oneOf": function () {},
-              "oneOfType": function () {},
-              "shape": function () {},
-              "string": {
-                "isRequired": function () {}
-              },
-              "symbol": {
-                "isRequired": function () {}
-              }
-            },
-            "PureComponent": function () {},
-            "__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED": {
-              "ReactCurrentOwner": {
-                "current": {}
-              }
-            },
-            "__spread": function () {},
-            "cloneElement": function () {},
-            "createClass": function () {},
-            "createElement": function () {},
-            "createFactory": function () {},
-            "createMixin": function () {},
-            "isValidElement": function () {},
-            "version": {}
-          },
-          "ReactDOM": {
-            "findDOMNode": function () {},
-            "render": function () {},
-            "unmountComponentAtNode": function () {},
-            "unstable_batchedUpdates": function () {},
-            "unstable_renderSubtreeIntoContainer": function () {},
-            "version": {}
-          },
-          "TEMPORARY": {},
-          "addEventListener": function () {},
-          "alert": function () {},
-          "atob": function () {},
-          "blur": function () {},
-          "btoa": function () {},
-          "cancelAnimationFrame": function () {},
-          "cancelIdleCallback": function () {},
-          "captureEvents": function () {},
-          "chrome": {
-            "app": {
-              "InstallState": {
-                "DISABLED": {},
-                "INSTALLED": {},
-                "NOT_INSTALLED": {}
-              },
-              "RunningState": {
-                "CANNOT_RUN": {},
-                "READY_TO_RUN": {},
-                "RUNNING": {}
-              },
-              "getDetails": function () {},
-              "getIsInstalled": function () {},
-              "installState": function () {},
-              "isInstalled": {},
-              "runningState": function () {}
-            },
-            "csi": function () {},
-            "loadTimes": function () {}
-          },
-          "clearInterval": function () {},
-          "clearTimeout": function () {},
-          "clientInformation": {
-            "appCodeName": {},
-            "appName": {},
-            "appVersion": {},
-            "closure_uid_347133726": {},
-            "connection": {
-              "addEventListener": function () {},
-              "dispatchEvent": function () {},
-              "downlink": {},
-              "effectiveType": {},
-              "onchange": {},
-              "removeEventListener": function () {},
-              "rtt": {},
-              "saveData": {}
-            },
-            "cookieEnabled": {},
-            "doNotTrack": {},
-            "geolocation": {
-              "clearWatch": function () {},
-              "getCurrentPosition": function () {},
-              "watchPosition": function () {}
-            },
-            "getBattery": function () {},
-            "getGamepads": function () {},
-            "hardwareConcurrency": {},
-            "javaEnabled": function () {},
-            "language": {},
-            "languages": {},
-            "maxTouchPoints": {},
-            "mediaCapabilities": {
-              "decodingInfo": function () {}
-            },
-            "mediaSession": {
-              "metadata": {},
-              "playbackState": {},
-              "setActionHandler": function () {},
-              "setPositionState": function () {}
-            },
-            "mimeTypes": {
-              "0": {
-                "closure_uid_347133726": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_347133726": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_347133726": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_347133726": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_347133726": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "1": {
-                "closure_uid_347133726": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_347133726": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_347133726": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_347133726": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_347133726": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "2": {
-                "closure_uid_347133726": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_347133726": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "1": {
-                    "closure_uid_347133726": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_347133726": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_347133726": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_347133726": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "3": {
-                "closure_uid_347133726": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_347133726": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "1": {
-                    "closure_uid_347133726": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_347133726": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_347133726": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_347133726": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "closure_uid_347133726": {},
-              "item": function () {},
-              "length": {},
-              "namedItem": function () {}
-            },
-            "onLine": {},
-            "permissions": {
-              "query": function () {}
-            },
-            "platform": {},
-            "plugins": {
-              "0": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "closure_uid_347133726": {},
-                "description": {},
-                "filename": {},
-                "item": {
-                  "closure_uid_347133726": {}
-                },
-                "length": {},
-                "name": {},
-                "namedItem": {
-                  "closure_uid_347133726": {}
-                }
-              },
-              "1": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "closure_uid_347133726": {},
-                "description": {},
-                "filename": {},
-                "item": {
-                  "closure_uid_347133726": {}
-                },
-                "length": {},
-                "name": {},
-                "namedItem": {
-                  "closure_uid_347133726": {}
-                }
-              },
-              "2": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "1": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "closure_uid_347133726": {},
-                "description": {},
-                "filename": {},
-                "item": {
-                  "closure_uid_347133726": {}
-                },
-                "length": {},
-                "name": {},
-                "namedItem": {
-                  "closure_uid_347133726": {}
-                }
-              },
-              "item": function () {},
-              "length": {},
-              "namedItem": function () {},
-              "refresh": function () {}
-            },
-            "product": {},
-            "productSub": {},
-            "sendBeacon": function () {},
-            "userActivation": {
-              "hasBeenActive": {},
-              "isActive": {}
-            },
-            "userAgent": {},
-            "vendor": {},
-            "vendorSub": {},
-            "vibrate": function () {},
-            "webkitPersistentStorage": {
-              "queryUsageAndQuota": function () {},
-              "requestQuota": function () {}
-            },
-            "webkitTemporaryStorage": {
-              "queryUsageAndQuota": function () {},
-              "requestQuota": function () {}
-            }
-          },
-          "close": function () {},
-          "closed": {},
-          "closure_uid_347133726": {},
-          "confirm": function () {},
-          "createImageBitmap": function () {},
-          "createReactClass": function () {},
-          "crypto": {
-            "getRandomValues": function () {}
-          },
-          "customElements": {
-            "define": function () {},
-            "get": function () {},
-            "upgrade": function () {},
-            "whenDefined": function () {}
-          },
-          "defaultStatus": {},
-          "defaultstatus": {},
-          "devicePixelRatio": {},
-          "dispatchEvent": function () {},
-          "document": {},
-          "external": {
-            "AddSearchProvider": function () {},
-            "IsSearchProviderInstalled": function () {}
-          },
-          "fetch": function () {},
-          "find": function () {},
-          "focus": function () {},
-          "frameElement": {},
-          "frames": {},
-          "getComputedStyle": function () {},
-          "getSelection": function () {},
-          "history": {
-            "back": function () {},
-            "forward": function () {},
-            "go": function () {},
-            "length": {},
-            "pushState": function () {},
-            "replaceState": function () {},
-            "scrollRestoration": {},
-            "state": {}
-          },
-          "indexedDB": {
-            "cmp": function () {},
-            "databases": function () {},
-            "deleteDatabase": function () {},
-            "open": function () {}
-          },
-          "innerHeight": {},
-          "innerWidth": {},
-          "isSecureContext": {},
-          "javascript_externs_generator": {
-            "ui": {
-              "core": {
-                "init": function () {},
-                "re_render": function () {}
-              }
-            }
-          },
-          "js_beautify": function () {},
-          "length": {},
-          "localStorage": {
-            "clear": function () {},
-            "getItem": function () {},
-            "key": function () {},
-            "length": {},
-            "removeItem": function () {},
-            "setItem": function () {}
-          },
-          "location": {
-            "ancestorOrigins": {
-              "contains": function () {},
-              "item": function () {},
-              "length": {}
-            },
-            "assign": function () {},
-            "fragmentDirective": {},
-            "hash": {},
-            "host": {},
-            "hostname": {},
-            "href": {},
-            "origin": {},
-            "pathname": {},
-            "port": {},
-            "protocol": {},
-            "reload": function () {},
-            "replace": function () {},
-            "search": {},
-            "toString": function () {}
-          },
-          "locationbar": {
-            "visible": {}
-          },
-          "matchMedia": function () {},
-          "menubar": {
-            "visible": {}
-          },
-          "moveBy": function () {},
-          "moveTo": function () {},
-          "name": {},
-          "navigator": {
-            "appCodeName": {},
-            "appName": {},
-            "appVersion": {},
-            "closure_uid_347133726": {},
-            "connection": {
-              "addEventListener": function () {},
-              "dispatchEvent": function () {},
-              "downlink": {},
-              "effectiveType": {},
-              "onchange": {},
-              "removeEventListener": function () {},
-              "rtt": {},
-              "saveData": {}
-            },
-            "cookieEnabled": {},
-            "doNotTrack": {},
-            "geolocation": {
-              "clearWatch": function () {},
-              "getCurrentPosition": function () {},
-              "watchPosition": function () {}
-            },
-            "getBattery": function () {},
-            "getGamepads": function () {},
-            "hardwareConcurrency": {},
-            "javaEnabled": function () {},
-            "language": {},
-            "languages": {},
-            "maxTouchPoints": {},
-            "mediaCapabilities": {
-              "decodingInfo": function () {}
-            },
-            "mediaSession": {
-              "metadata": {},
-              "playbackState": {},
-              "setActionHandler": function () {},
-              "setPositionState": function () {}
-            },
-            "mimeTypes": {
-              "0": {
-                "closure_uid_347133726": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_347133726": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_347133726": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_347133726": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_347133726": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "1": {
-                "closure_uid_347133726": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_347133726": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_347133726": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_347133726": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_347133726": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "2": {
-                "closure_uid_347133726": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_347133726": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "1": {
-                    "closure_uid_347133726": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_347133726": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_347133726": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_347133726": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "3": {
-                "closure_uid_347133726": {},
-                "description": {},
-                "enabledPlugin": {
-                  "0": {
-                    "closure_uid_347133726": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "1": {
-                    "closure_uid_347133726": {},
-                    "description": {},
-                    "enabledPlugin": {},
-                    "suffixes": {},
-                    "type": {}
-                  },
-                  "closure_uid_347133726": {},
-                  "description": {},
-                  "filename": {},
-                  "item": {
-                    "closure_uid_347133726": {}
-                  },
-                  "length": {},
-                  "name": {},
-                  "namedItem": {
-                    "closure_uid_347133726": {}
-                  }
-                },
-                "suffixes": {},
-                "type": {}
-              },
-              "closure_uid_347133726": {},
-              "item": function () {},
-              "length": {},
-              "namedItem": function () {}
-            },
-            "onLine": {},
-            "permissions": {
-              "query": function () {}
-            },
-            "platform": {},
-            "plugins": {
-              "0": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "closure_uid_347133726": {},
-                "description": {},
-                "filename": {},
-                "item": {
-                  "closure_uid_347133726": {}
-                },
-                "length": {},
-                "name": {},
-                "namedItem": {
-                  "closure_uid_347133726": {}
-                }
-              },
-              "1": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "closure_uid_347133726": {},
-                "description": {},
-                "filename": {},
-                "item": {
-                  "closure_uid_347133726": {}
-                },
-                "length": {},
-                "name": {},
-                "namedItem": {
-                  "closure_uid_347133726": {}
-                }
-              },
-              "2": {
-                "0": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "1": {
-                  "description": {},
-                  "enabledPlugin": {},
-                  "suffixes": {},
-                  "type": {}
-                },
-                "closure_uid_347133726": {},
-                "description": {},
-                "filename": {},
-                "item": {
-                  "closure_uid_347133726": {}
-                },
-                "length": {},
-                "name": {},
-                "namedItem": {
-                  "closure_uid_347133726": {}
-                }
-              },
-              "item": function () {},
-              "length": {},
-              "namedItem": function () {},
-              "refresh": function () {}
-            },
-            "product": {},
-            "productSub": {},
-            "sendBeacon": function () {},
-            "userActivation": {
-              "hasBeenActive": {},
-              "isActive": {}
-            },
-            "userAgent": {},
-            "vendor": {},
-            "vendorSub": {},
-            "vibrate": function () {},
-            "webkitPersistentStorage": {
-              "queryUsageAndQuota": function () {},
-              "requestQuota": function () {}
-            },
-            "webkitTemporaryStorage": {
-              "queryUsageAndQuota": function () {},
-              "requestQuota": function () {}
-            }
-          },
-          "onabort": {},
-          "onafterprint": {},
-          "onanimationend": {},
-          "onanimationiteration": {},
-          "onanimationstart": {},
-          "onappinstalled": {},
-          "onauxclick": {},
-          "onbeforeinstallprompt": {},
-          "onbeforeprint": {},
-          "onbeforeunload": {},
-          "onblur": {},
-          "oncancel": {},
-          "oncanplay": {},
-          "oncanplaythrough": {},
-          "onchange": {},
-          "onclick": {},
-          "onclose": {},
-          "oncontextmenu": {},
-          "oncuechange": {},
-          "ondblclick": {},
-          "ondrag": {},
-          "ondragend": {},
-          "ondragenter": {},
-          "ondragleave": {},
-          "ondragover": {},
-          "ondragstart": {},
-          "ondrop": {},
-          "ondurationchange": {},
-          "onemptied": {},
-          "onended": {},
-          "onerror": {},
-          "onfocus": {},
-          "onformdata": {},
-          "ongotpointercapture": {},
-          "onhashchange": {},
-          "oninput": {},
-          "oninvalid": {},
-          "onkeydown": {},
-          "onkeypress": {},
-          "onkeyup": {},
-          "onlanguagechange": {},
-          "onload": {},
-          "onloadeddata": {},
-          "onloadedmetadata": {},
-          "onloadstart": {},
-          "onlostpointercapture": {},
-          "onmessage": {},
-          "onmessageerror": {},
-          "onmousedown": {},
-          "onmouseenter": {},
-          "onmouseleave": {},
-          "onmousemove": {},
-          "onmouseout": {},
-          "onmouseover": {},
-          "onmouseup": {},
-          "onmousewheel": {},
-          "onoffline": {},
-          "ononline": {},
-          "onpagehide": {},
-          "onpageshow": {},
-          "onpause": {},
-          "onplay": {},
-          "onplaying": {},
-          "onpointercancel": {},
-          "onpointerdown": {},
-          "onpointerenter": {},
-          "onpointerleave": {},
-          "onpointermove": {},
-          "onpointerout": {},
-          "onpointerover": {},
-          "onpointerrawupdate": {},
-          "onpointerup": {},
-          "onpopstate": {},
-          "onprogress": {},
-          "onratechange": {},
-          "onrejectionhandled": {},
-          "onreset": {},
-          "onresize": {},
-          "onscroll": {},
-          "onsearch": {},
-          "onseeked": {},
-          "onseeking": {},
-          "onselect": {},
-          "onselectionchange": {},
-          "onselectstart": {},
-          "onstalled": {},
-          "onstorage": {},
-          "onsubmit": {},
-          "onsuspend": {},
-          "ontimeupdate": {},
-          "ontoggle": {},
-          "ontransitionend": {},
-          "onunhandledrejection": {},
-          "onunload": {},
-          "onvolumechange": {},
-          "onwaiting": {},
-          "onwebkitanimationend": {},
-          "onwebkitanimationiteration": {},
-          "onwebkitanimationstart": {},
-          "onwebkittransitionend": {},
-          "onwheel": {},
-          "open": function () {},
-          "openDatabase": function () {},
-          "opener": {},
-          "origin": {},
-          "outerHeight": {},
-          "outerWidth": {},
-          "pageXOffset": {},
-          "pageYOffset": {},
-          "parent": {},
-          "performance": {
-            "addEventListener": function () {},
-            "clearMarks": function () {},
-            "clearMeasures": function () {},
-            "clearResourceTimings": function () {},
-            "dispatchEvent": function () {},
-            "eventCounts": {
-              "entries": function () {},
-              "forEach": function () {},
-              "get": function () {},
-              "has": function () {},
-              "keys": function () {},
-              "values": function () {}
-            },
-            "getEntries": function () {},
-            "getEntriesByName": function () {},
-            "getEntriesByType": function () {},
-            "mark": function () {},
-            "measure": function () {},
-            "memory": {
-              "jsHeapSizeLimit": {},
-              "totalJSHeapSize": {},
-              "usedJSHeapSize": {}
-            },
-            "navigation": {
-              "TYPE_BACK_FORWARD": {},
-              "TYPE_NAVIGATE": {},
-              "TYPE_RELOAD": {},
-              "TYPE_RESERVED": {},
-              "redirectCount": {},
-              "toJSON": function () {},
-              "type": {}
-            },
-            "now": function () {},
-            "onresourcetimingbufferfull": {},
-            "removeEventListener": function () {},
-            "setResourceTimingBufferSize": function () {},
-            "timeOrigin": {},
-            "timing": {
-              "connectEnd": {},
-              "connectStart": {},
-              "domComplete": {},
-              "domContentLoadedEventEnd": {},
-              "domContentLoadedEventStart": {},
-              "domInteractive": {},
-              "domLoading": {},
-              "domainLookupEnd": {},
-              "domainLookupStart": {},
-              "fetchStart": {},
-              "loadEventEnd": {},
-              "loadEventStart": {},
-              "navigationStart": {},
-              "redirectEnd": {},
-              "redirectStart": {},
-              "requestStart": {},
-              "responseEnd": {},
-              "responseStart": {},
-              "secureConnectionStart": {},
-              "toJSON": function () {},
-              "unloadEventEnd": {},
-              "unloadEventStart": {}
-            },
-            "toJSON": function () {}
-          },
-          "personalbar": {
-            "visible": {}
-          },
-          "postMessage": function () {},
-          "print": function () {},
-          "prompt": function () {},
-          "queueMicrotask": function () {},
-          "reagent": {
-            "core": {
-              "force_update_all": function () {}
-            }
-          },
-          "releaseEvents": function () {},
-          "removeEventListener": function () {},
-          "requestAnimationFrame": function () {},
-          "requestIdleCallback": function () {},
-          "resizeBy": function () {},
-          "resizeTo": function () {},
-          "screen": {
-            "availHeight": {},
-            "availLeft": {},
-            "availTop": {},
-            "availWidth": {},
-            "colorDepth": {},
-            "height": {},
-            "orientation": {
-              "addEventListener": function () {},
-              "angle": {},
-              "dispatchEvent": function () {},
-              "lock": function () {},
-              "onchange": {},
-              "removeEventListener": function () {},
-              "type": {},
-              "unlock": function () {}
-            },
-            "pixelDepth": {},
-            "width": {}
-          },
-          "screenLeft": {},
-          "screenTop": {},
-          "screenX": {},
-          "screenY": {},
-          "scroll": function () {},
-          "scrollBy": function () {},
-          "scrollTo": function () {},
-          "scrollX": {},
-          "scrollY": {},
-          "scrollbars": {
-            "visible": {}
-          },
-          "self": {},
-          "sessionStorage": {
-            "clear": function () {},
-            "getItem": function () {},
-            "key": function () {},
-            "length": {},
-            "removeItem": function () {},
-            "setItem": function () {}
-          },
-          "setInterval": function () {},
-          "setTimeout": function () {},
-          "speechSynthesis": {
-            "addEventListener": function () {},
-            "cancel": function () {},
-            "dispatchEvent": function () {},
-            "getVoices": function () {},
-            "onvoiceschanged": {},
-            "pause": function () {},
-            "paused": {},
-            "pending": {},
-            "removeEventListener": function () {},
-            "resume": function () {},
-            "speak": function () {},
-            "speaking": {}
-          },
-          "status": {},
-          "statusbar": {
-            "visible": {}
-          },
-          "stop": function () {},
-          "styleMedia": {
-            "matchMedium": function () {},
-            "type": {}
-          },
-          "toolbar": {
-            "visible": {}
-          },
-          "top": {},
-          "trustedTypes": {
-            "createPolicy": function () {},
-            "defaultPolicy": {},
-            "emptyHTML": {
-              "toString": function () {}
-            },
-            "emptyScript": {
-              "toString": function () {}
-            },
-            "getAttributeType": function () {},
-            "getPropertyType": function () {},
-            "getTypeMapping": function () {},
-            "isHTML": function () {},
-            "isScript": function () {},
-            "isScriptURL": function () {}
-          },
-          "visualViewport": {
-            "addEventListener": function () {},
-            "dispatchEvent": function () {},
-            "height": {},
-            "offsetLeft": {},
-            "offsetTop": {},
-            "onresize": {},
-            "onscroll": {},
-            "pageLeft": {},
-            "pageTop": {},
-            "removeEventListener": function () {},
-            "scale": {},
-            "width": {}
-          },
-          "webkitCancelAnimationFrame": function () {},
-          "webkitRequestAnimationFrame": function () {},
-          "webkitRequestFileSystem": function () {},
-          "webkitResolveLocalFileSystemURL": function () {},
-          "webkitStorageInfo": {
-            "PERSISTENT": {},
-            "TEMPORARY": {},
-            "queryUsageAndQuota": function () {},
-            "requestQuota": function () {}
-          },
-          "window": {}
-        },
-        "performance": {
-          "addEventListener": function () {},
-          "clearMarks": function () {},
-          "clearMeasures": function () {},
-          "clearResourceTimings": function () {},
-          "dispatchEvent": function () {},
-          "eventCounts": {
-            "entries": function () {},
-            "forEach": function () {},
-            "get": function () {},
-            "has": function () {},
-            "keys": function () {},
             "values": function () {}
           },
           "getEntries": function () {},
@@ -9932,6 +9671,7 @@ var Highcharts = {
           "visible": {}
         },
         "top": {
+          "0": {},
           "PERSISTENT": {},
           "React": {
             "Children": {
@@ -10439,7 +10179,7 @@ var Highcharts = {
             "appCodeName": {},
             "appName": {},
             "appVersion": {},
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "connection": {
               "addEventListener": function () {},
               "dispatchEvent": function () {},
@@ -10475,124 +10215,124 @@ var Highcharts = {
             },
             "mimeTypes": {
               "0": {
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "description": {},
                 "enabledPlugin": {
                   "0": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "description": {},
                     "enabledPlugin": {},
                     "suffixes": {},
                     "type": {}
                   },
-                  "closure_uid_347133726": {},
+                  "closure_uid_659125373": {},
                   "description": {},
                   "filename": {},
                   "item": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   },
                   "length": {},
                   "name": {},
                   "namedItem": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   }
                 },
                 "suffixes": {},
                 "type": {}
               },
               "1": {
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "description": {},
                 "enabledPlugin": {
                   "0": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "description": {},
                     "enabledPlugin": {},
                     "suffixes": {},
                     "type": {}
                   },
-                  "closure_uid_347133726": {},
+                  "closure_uid_659125373": {},
                   "description": {},
                   "filename": {},
                   "item": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   },
                   "length": {},
                   "name": {},
                   "namedItem": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   }
                 },
                 "suffixes": {},
                 "type": {}
               },
               "2": {
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "description": {},
                 "enabledPlugin": {
                   "0": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "description": {},
                     "enabledPlugin": {},
                     "suffixes": {},
                     "type": {}
                   },
                   "1": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "description": {},
                     "enabledPlugin": {},
                     "suffixes": {},
                     "type": {}
                   },
-                  "closure_uid_347133726": {},
+                  "closure_uid_659125373": {},
                   "description": {},
                   "filename": {},
                   "item": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   },
                   "length": {},
                   "name": {},
                   "namedItem": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   }
                 },
                 "suffixes": {},
                 "type": {}
               },
               "3": {
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "description": {},
                 "enabledPlugin": {
                   "0": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "description": {},
                     "enabledPlugin": {},
                     "suffixes": {},
                     "type": {}
                   },
                   "1": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "description": {},
                     "enabledPlugin": {},
                     "suffixes": {},
                     "type": {}
                   },
-                  "closure_uid_347133726": {},
+                  "closure_uid_659125373": {},
                   "description": {},
                   "filename": {},
                   "item": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   },
                   "length": {},
                   "name": {},
                   "namedItem": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   }
                 },
                 "suffixes": {},
                 "type": {}
               },
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "item": function () {},
               "length": {},
               "namedItem": function () {}
@@ -10610,16 +10350,16 @@ var Highcharts = {
                   "suffixes": {},
                   "type": {}
                 },
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "description": {},
                 "filename": {},
                 "item": {
-                  "closure_uid_347133726": {}
+                  "closure_uid_659125373": {}
                 },
                 "length": {},
                 "name": {},
                 "namedItem": {
-                  "closure_uid_347133726": {}
+                  "closure_uid_659125373": {}
                 }
               },
               "1": {
@@ -10629,16 +10369,16 @@ var Highcharts = {
                   "suffixes": {},
                   "type": {}
                 },
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "description": {},
                 "filename": {},
                 "item": {
-                  "closure_uid_347133726": {}
+                  "closure_uid_659125373": {}
                 },
                 "length": {},
                 "name": {},
                 "namedItem": {
-                  "closure_uid_347133726": {}
+                  "closure_uid_659125373": {}
                 }
               },
               "2": {
@@ -10654,16 +10394,16 @@ var Highcharts = {
                   "suffixes": {},
                   "type": {}
                 },
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "description": {},
                 "filename": {},
                 "item": {
-                  "closure_uid_347133726": {}
+                  "closure_uid_659125373": {}
                 },
                 "length": {},
                 "name": {},
                 "namedItem": {
-                  "closure_uid_347133726": {}
+                  "closure_uid_659125373": {}
                 }
               },
               "item": function () {},
@@ -10673,6 +10413,9 @@ var Highcharts = {
             },
             "product": {},
             "productSub": {},
+            "scheduling": {
+              "isInputPending": function () {}
+            },
             "sendBeacon": function () {},
             "userActivation": {
               "hasBeenActive": {},
@@ -10693,10 +10436,11 @@ var Highcharts = {
           },
           "close": function () {},
           "closed": {},
-          "closure_uid_347133726": {},
+          "closure_uid_659125373": {},
           "confirm": function () {},
           "createImageBitmap": function () {},
           "createReactClass": function () {},
+          "crossOriginIsolated": {},
           "crypto": {
             "getRandomValues": function () {}
           },
@@ -10766,7 +10510,6 @@ var Highcharts = {
               "length": {}
             },
             "assign": function () {},
-            "fragmentDirective": {},
             "hash": {},
             "host": {},
             "hostname": {},
@@ -10794,7 +10537,7 @@ var Highcharts = {
             "appCodeName": {},
             "appName": {},
             "appVersion": {},
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "connection": {
               "addEventListener": function () {},
               "dispatchEvent": function () {},
@@ -10830,124 +10573,124 @@ var Highcharts = {
             },
             "mimeTypes": {
               "0": {
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "description": {},
                 "enabledPlugin": {
                   "0": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "description": {},
                     "enabledPlugin": {},
                     "suffixes": {},
                     "type": {}
                   },
-                  "closure_uid_347133726": {},
+                  "closure_uid_659125373": {},
                   "description": {},
                   "filename": {},
                   "item": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   },
                   "length": {},
                   "name": {},
                   "namedItem": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   }
                 },
                 "suffixes": {},
                 "type": {}
               },
               "1": {
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "description": {},
                 "enabledPlugin": {
                   "0": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "description": {},
                     "enabledPlugin": {},
                     "suffixes": {},
                     "type": {}
                   },
-                  "closure_uid_347133726": {},
+                  "closure_uid_659125373": {},
                   "description": {},
                   "filename": {},
                   "item": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   },
                   "length": {},
                   "name": {},
                   "namedItem": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   }
                 },
                 "suffixes": {},
                 "type": {}
               },
               "2": {
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "description": {},
                 "enabledPlugin": {
                   "0": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "description": {},
                     "enabledPlugin": {},
                     "suffixes": {},
                     "type": {}
                   },
                   "1": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "description": {},
                     "enabledPlugin": {},
                     "suffixes": {},
                     "type": {}
                   },
-                  "closure_uid_347133726": {},
+                  "closure_uid_659125373": {},
                   "description": {},
                   "filename": {},
                   "item": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   },
                   "length": {},
                   "name": {},
                   "namedItem": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   }
                 },
                 "suffixes": {},
                 "type": {}
               },
               "3": {
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "description": {},
                 "enabledPlugin": {
                   "0": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "description": {},
                     "enabledPlugin": {},
                     "suffixes": {},
                     "type": {}
                   },
                   "1": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "description": {},
                     "enabledPlugin": {},
                     "suffixes": {},
                     "type": {}
                   },
-                  "closure_uid_347133726": {},
+                  "closure_uid_659125373": {},
                   "description": {},
                   "filename": {},
                   "item": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   },
                   "length": {},
                   "name": {},
                   "namedItem": {
-                    "closure_uid_347133726": {}
+                    "closure_uid_659125373": {}
                   }
                 },
                 "suffixes": {},
                 "type": {}
               },
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "item": function () {},
               "length": {},
               "namedItem": function () {}
@@ -10965,16 +10708,16 @@ var Highcharts = {
                   "suffixes": {},
                   "type": {}
                 },
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "description": {},
                 "filename": {},
                 "item": {
-                  "closure_uid_347133726": {}
+                  "closure_uid_659125373": {}
                 },
                 "length": {},
                 "name": {},
                 "namedItem": {
-                  "closure_uid_347133726": {}
+                  "closure_uid_659125373": {}
                 }
               },
               "1": {
@@ -10984,16 +10727,16 @@ var Highcharts = {
                   "suffixes": {},
                   "type": {}
                 },
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "description": {},
                 "filename": {},
                 "item": {
-                  "closure_uid_347133726": {}
+                  "closure_uid_659125373": {}
                 },
                 "length": {},
                 "name": {},
                 "namedItem": {
-                  "closure_uid_347133726": {}
+                  "closure_uid_659125373": {}
                 }
               },
               "2": {
@@ -11009,16 +10752,16 @@ var Highcharts = {
                   "suffixes": {},
                   "type": {}
                 },
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "description": {},
                 "filename": {},
                 "item": {
-                  "closure_uid_347133726": {}
+                  "closure_uid_659125373": {}
                 },
                 "length": {},
                 "name": {},
                 "namedItem": {
-                  "closure_uid_347133726": {}
+                  "closure_uid_659125373": {}
                 }
               },
               "item": function () {},
@@ -11028,6 +10771,9 @@ var Highcharts = {
             },
             "product": {},
             "productSub": {},
+            "scheduling": {
+              "isInputPending": function () {}
+            },
             "sendBeacon": function () {},
             "userActivation": {
               "hasBeenActive": {},
@@ -11137,7 +10883,10 @@ var Highcharts = {
           "onsuspend": {},
           "ontimeupdate": {},
           "ontoggle": {},
+          "ontransitioncancel": {},
           "ontransitionend": {},
+          "ontransitionrun": {},
+          "ontransitionstart": {},
           "onunhandledrejection": {},
           "onunload": {},
           "onvolumechange": {},
@@ -11168,6 +10917,7 @@ var Highcharts = {
               "get": function () {},
               "has": function () {},
               "keys": function () {},
+              "size": {},
               "values": function () {}
             },
             "getEntries": function () {},
@@ -11309,8 +11059,10 @@ var Highcharts = {
           },
           "top": {},
           "trustedTypes": {
+            "addEventListener": function () {},
             "createPolicy": function () {},
             "defaultPolicy": {},
+            "dispatchEvent": function () {},
             "emptyHTML": {
               "toString": function () {}
             },
@@ -11322,7 +11074,8 @@ var Highcharts = {
             "getTypeMapping": function () {},
             "isHTML": function () {},
             "isScript": function () {},
-            "isScriptURL": function () {}
+            "isScriptURL": function () {},
+            "removeEventListener": function () {}
           },
           "visualViewport": {
             "addEventListener": function () {},
@@ -11351,8 +11104,10 @@ var Highcharts = {
           "window": {}
         },
         "trustedTypes": {
+          "addEventListener": function () {},
           "createPolicy": function () {},
           "defaultPolicy": {},
+          "dispatchEvent": function () {},
           "emptyHTML": {
             "toString": function () {}
           },
@@ -11364,7 +11119,8 @@ var Highcharts = {
           "getTypeMapping": function () {},
           "isHTML": function () {},
           "isScript": function () {},
-          "isScriptURL": function () {}
+          "isScriptURL": function () {},
+          "removeEventListener": function () {}
         },
         "visualViewport": {
           "addEventListener": function () {},
@@ -11392,105 +11148,6 @@ var Highcharts = {
         },
         "window": {}
       },
-      "wrap": function () {}
-    },
-    "parts/Html.js": {},
-    "parts/Interaction.js": {},
-    "parts/Legend.js": function () {},
-    "parts/LogarithmicAxis.js": {
-      "compose": function () {}
-    },
-    "parts/MSPointer.js": function () {},
-    "parts/Options.js": {},
-    "parts/PieSeries.js": {},
-    "parts/PlotLineOrBand.js": function () {},
-    "parts/Point.js": function () {},
-    "parts/Pointer.js": function () {},
-    "parts/Responsive.js": {},
-    "parts/SVGElement.js": function () {},
-    "parts/ScatterSeries.js": {},
-    "parts/ScrollablePlotArea.js": {},
-    "parts/Series.js": {},
-    "parts/SplineSeries.js": {},
-    "parts/Stacking.js": function () {},
-    "parts/StackingAxis.js": {
-      "compose": function () {},
-      "onDestroy": function () {},
-      "onInit": function () {}
-    },
-    "parts/SvgRenderer.js": {},
-    "parts/Tick.js": function () {},
-    "parts/Time.js": {
-      "defaultOptions": {
-        "Date": {},
-        "getTimezoneOffset": {},
-        "timezone": {},
-        "timezoneOffset": {},
-        "useUTC": {}
-      }
-    },
-    "parts/Tooltip.js": function () {},
-    "parts/Utilities.js": {
-      "Fx": function () {},
-      "addEvent": function () {},
-      "animObject": function () {},
-      "animate": function () {},
-      "arrayMax": function () {},
-      "arrayMin": function () {},
-      "attr": function () {},
-      "clamp": function () {},
-      "clearTimeout": function () {},
-      "correctFloat": function () {},
-      "createElement": function () {},
-      "css": function () {},
-      "defined": function () {},
-      "destroyObjectProperties": function () {},
-      "discardElement": function () {},
-      "erase": function () {},
-      "error": function () {},
-      "extend": function () {},
-      "extendClass": function () {},
-      "find": function () {},
-      "fireEvent": function () {},
-      "format": function () {},
-      "getMagnitude": function () {},
-      "getNestedProperty": function () {},
-      "getStyle": function () {},
-      "inArray": function () {},
-      "isArray": function () {},
-      "isClass": function () {},
-      "isDOMElement": function () {},
-      "isFunction": function () {},
-      "isNumber": function () {},
-      "isObject": function () {},
-      "isString": function () {},
-      "merge": function () {},
-      "normalizeTickInterval": function () {},
-      "numberFormat": function () {},
-      "objectEach": function () {},
-      "offset": function () {},
-      "pInt": function () {},
-      "pad": function () {},
-      "pick": function () {},
-      "relativeLength": function () {},
-      "removeEvent": function () {},
-      "seriesType": function () {},
-      "setAnimation": function () {},
-      "splat": function () {},
-      "stableSort": function () {},
-      "stop": function () {},
-      "syncTimeout": function () {},
-      "timeUnits": {
-        "day": {},
-        "hour": {},
-        "millisecond": {},
-        "minute": {},
-        "month": {},
-        "second": {},
-        "week": {},
-        "year": {}
-      },
-      "uniqueKey": function () {},
       "wrap": function () {}
     }
   },
@@ -11541,7 +11198,7 @@ var Highcharts = {
       "styledMode": {},
       "width": {}
     },
-    "closure_uid_347133726": {},
+    "closure_uid_659125373": {},
     "colors": {},
     "credits": {
       "enabled": {},
@@ -11638,11 +11295,13 @@ var Highcharts = {
         "animation": {
           "duration": {}
         },
-        "closure_uid_347133726": {},
+        "closure_uid_659125373": {},
         "crisp": {},
         "cropThreshold": {},
         "dataLabels": {
           "align": {},
+          "animation": {},
+          "defer": {},
           "formatter": function () {},
           "padding": {},
           "style": {
@@ -11659,19 +11318,19 @@ var Highcharts = {
         "findNearestPointBy": {},
         "lineWidth": {},
         "marker": {
-          "closure_uid_347133726": {},
+          "closure_uid_659125373": {},
           "enabledThreshold": {},
           "lineColor": {},
           "lineWidth": {},
           "radius": {},
           "states": {
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "hover": {
               "animation": {
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "duration": {}
               },
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "enabled": {},
               "lineWidthPlus": {},
               "radiusPlus": {}
@@ -11729,11 +11388,13 @@ var Highcharts = {
         "animation": {
           "duration": {}
         },
-        "closure_uid_347133726": {},
+        "closure_uid_659125373": {},
         "crisp": {},
         "cropThreshold": {},
         "dataLabels": {
           "align": {},
+          "animation": {},
+          "defer": {},
           "formatter": function () {},
           "padding": {},
           "style": {
@@ -11750,19 +11411,19 @@ var Highcharts = {
         "findNearestPointBy": {},
         "lineWidth": {},
         "marker": {
-          "closure_uid_347133726": {},
+          "closure_uid_659125373": {},
           "enabledThreshold": {},
           "lineColor": {},
           "lineWidth": {},
           "radius": {},
           "states": {
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "hover": {
               "animation": {
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "duration": {}
               },
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "enabled": {},
               "lineWidthPlus": {},
               "radiusPlus": {}
@@ -11822,10 +11483,13 @@ var Highcharts = {
         },
         "borderColor": {},
         "borderRadius": {},
+        "centerInCategory": {},
         "crisp": {},
         "cropThreshold": {},
         "dataLabels": {
           "align": {},
+          "animation": {},
+          "defer": {},
           "formatter": function () {},
           "padding": {},
           "style": {
@@ -11887,7 +11551,7 @@ var Highcharts = {
         },
         "turboThreshold": {}
       },
-      "closure_uid_347133726": {},
+      "closure_uid_659125373": {},
       "column": {
         "allowPointSelect": {},
         "animation": {
@@ -11895,10 +11559,13 @@ var Highcharts = {
         },
         "borderColor": {},
         "borderRadius": {},
+        "centerInCategory": {},
         "crisp": {},
         "cropThreshold": {},
         "dataLabels": {
           "align": {},
+          "animation": {},
+          "defer": {},
           "formatter": function () {},
           "padding": {},
           "style": {
@@ -11965,11 +11632,13 @@ var Highcharts = {
         "animation": {
           "duration": {}
         },
-        "closure_uid_347133726": {},
+        "closure_uid_659125373": {},
         "crisp": {},
         "cropThreshold": {},
         "dataLabels": {
           "align": {},
+          "animation": {},
+          "defer": {},
           "formatter": function () {},
           "padding": {},
           "style": {
@@ -11986,19 +11655,19 @@ var Highcharts = {
         "findNearestPointBy": {},
         "lineWidth": {},
         "marker": {
-          "closure_uid_347133726": {},
+          "closure_uid_659125373": {},
           "enabledThreshold": {},
           "lineColor": {},
           "lineWidth": {},
           "radius": {},
           "states": {
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "hover": {
               "animation": {
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "duration": {}
               },
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "enabled": {},
               "lineWidthPlus": {},
               "radiusPlus": {}
@@ -12065,9 +11734,11 @@ var Highcharts = {
         "dataLabels": {
           "align": {},
           "allowOverlap": {},
+          "animation": {},
           "connectorPadding": {},
           "connectorShape": {},
           "crookDistance": {},
+          "defer": {},
           "distance": {},
           "enabled": {},
           "formatter": function () {},
@@ -12140,11 +11811,13 @@ var Highcharts = {
         "animation": {
           "duration": {}
         },
-        "closure_uid_347133726": {},
+        "closure_uid_659125373": {},
         "crisp": {},
         "cropThreshold": {},
         "dataLabels": {
           "align": {},
+          "animation": {},
+          "defer": {},
           "formatter": function () {},
           "padding": {},
           "style": {
@@ -12165,20 +11838,20 @@ var Highcharts = {
         },
         "lineWidth": {},
         "marker": {
-          "closure_uid_347133726": {},
+          "closure_uid_659125373": {},
           "enabled": {},
           "enabledThreshold": {},
           "lineColor": {},
           "lineWidth": {},
           "radius": {},
           "states": {
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "hover": {
               "animation": {
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "duration": {}
               },
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "enabled": {},
               "lineWidthPlus": {},
               "radiusPlus": {}
@@ -12239,11 +11912,13 @@ var Highcharts = {
         "animation": {
           "duration": {}
         },
-        "closure_uid_347133726": {},
+        "closure_uid_659125373": {},
         "crisp": {},
         "cropThreshold": {},
         "dataLabels": {
           "align": {},
+          "animation": {},
+          "defer": {},
           "formatter": function () {},
           "padding": {},
           "style": {
@@ -12260,19 +11935,19 @@ var Highcharts = {
         "findNearestPointBy": {},
         "lineWidth": {},
         "marker": {
-          "closure_uid_347133726": {},
+          "closure_uid_659125373": {},
           "enabledThreshold": {},
           "lineColor": {},
           "lineWidth": {},
           "radius": {},
           "states": {
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "hover": {
               "animation": {
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "duration": {}
               },
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "enabled": {},
               "lineWidthPlus": {},
               "radiusPlus": {}
@@ -12374,699 +12049,6 @@ var Highcharts = {
       }
     }
   },
-  "defaultPlotOptions": {
-    "area": {
-      "allowPointSelect": {},
-      "animation": {
-        "duration": {}
-      },
-      "closure_uid_347133726": {},
-      "crisp": {},
-      "cropThreshold": {},
-      "dataLabels": {
-        "align": {},
-        "formatter": function () {},
-        "padding": {},
-        "style": {
-          "color": {},
-          "fontSize": {},
-          "fontWeight": {},
-          "textOutline": {}
-        },
-        "verticalAlign": {},
-        "x": {},
-        "y": {}
-      },
-      "events": {},
-      "findNearestPointBy": {},
-      "lineWidth": {},
-      "marker": {
-        "closure_uid_347133726": {},
-        "enabledThreshold": {},
-        "lineColor": {},
-        "lineWidth": {},
-        "radius": {},
-        "states": {
-          "closure_uid_347133726": {},
-          "hover": {
-            "animation": {
-              "closure_uid_347133726": {},
-              "duration": {}
-            },
-            "closure_uid_347133726": {},
-            "enabled": {},
-            "lineWidthPlus": {},
-            "radiusPlus": {}
-          },
-          "normal": {
-            "animation": {}
-          },
-          "select": {
-            "fillColor": {},
-            "lineColor": {},
-            "lineWidth": {}
-          }
-        }
-      },
-      "opacity": {},
-      "point": {
-        "events": {}
-      },
-      "pointRange": {},
-      "showCheckbox": {},
-      "softThreshold": {},
-      "states": {
-        "hover": {
-          "animation": {
-            "duration": {}
-          },
-          "halo": {
-            "opacity": {},
-            "size": {}
-          },
-          "lineWidthPlus": {},
-          "marker": {}
-        },
-        "inactive": {
-          "animation": {
-            "duration": {}
-          },
-          "opacity": {}
-        },
-        "normal": {
-          "animation": {}
-        },
-        "select": {
-          "animation": {
-            "duration": {}
-          }
-        }
-      },
-      "stickyTracking": {},
-      "threshold": {},
-      "turboThreshold": {}
-    },
-    "areaspline": {
-      "allowPointSelect": {},
-      "animation": {
-        "duration": {}
-      },
-      "closure_uid_347133726": {},
-      "crisp": {},
-      "cropThreshold": {},
-      "dataLabels": {
-        "align": {},
-        "formatter": function () {},
-        "padding": {},
-        "style": {
-          "color": {},
-          "fontSize": {},
-          "fontWeight": {},
-          "textOutline": {}
-        },
-        "verticalAlign": {},
-        "x": {},
-        "y": {}
-      },
-      "events": {},
-      "findNearestPointBy": {},
-      "lineWidth": {},
-      "marker": {
-        "closure_uid_347133726": {},
-        "enabledThreshold": {},
-        "lineColor": {},
-        "lineWidth": {},
-        "radius": {},
-        "states": {
-          "closure_uid_347133726": {},
-          "hover": {
-            "animation": {
-              "closure_uid_347133726": {},
-              "duration": {}
-            },
-            "closure_uid_347133726": {},
-            "enabled": {},
-            "lineWidthPlus": {},
-            "radiusPlus": {}
-          },
-          "normal": {
-            "animation": {}
-          },
-          "select": {
-            "fillColor": {},
-            "lineColor": {},
-            "lineWidth": {}
-          }
-        }
-      },
-      "opacity": {},
-      "point": {
-        "events": {}
-      },
-      "pointRange": {},
-      "showCheckbox": {},
-      "softThreshold": {},
-      "states": {
-        "hover": {
-          "animation": {
-            "duration": {}
-          },
-          "halo": {
-            "opacity": {},
-            "size": {}
-          },
-          "lineWidthPlus": {},
-          "marker": {}
-        },
-        "inactive": {
-          "animation": {
-            "duration": {}
-          },
-          "opacity": {}
-        },
-        "normal": {
-          "animation": {}
-        },
-        "select": {
-          "animation": {
-            "duration": {}
-          }
-        }
-      },
-      "stickyTracking": {},
-      "threshold": {},
-      "turboThreshold": {}
-    },
-    "bar": {
-      "allowPointSelect": {},
-      "animation": {
-        "duration": {}
-      },
-      "borderColor": {},
-      "borderRadius": {},
-      "crisp": {},
-      "cropThreshold": {},
-      "dataLabels": {
-        "align": {},
-        "formatter": function () {},
-        "padding": {},
-        "style": {
-          "color": {},
-          "fontSize": {},
-          "fontWeight": {},
-          "textOutline": {}
-        },
-        "verticalAlign": {},
-        "x": {},
-        "y": {}
-      },
-      "events": {},
-      "findNearestPointBy": {},
-      "groupPadding": {},
-      "lineWidth": {},
-      "marker": {},
-      "minPointLength": {},
-      "opacity": {},
-      "point": {
-        "events": {}
-      },
-      "pointPadding": {},
-      "pointRange": {},
-      "showCheckbox": {},
-      "softThreshold": {},
-      "startFromThreshold": {},
-      "states": {
-        "hover": {
-          "animation": {
-            "duration": {}
-          },
-          "brightness": {},
-          "halo": {},
-          "lineWidthPlus": {},
-          "marker": {}
-        },
-        "inactive": {
-          "animation": {
-            "duration": {}
-          },
-          "opacity": {}
-        },
-        "normal": {
-          "animation": {}
-        },
-        "select": {
-          "animation": {
-            "duration": {}
-          },
-          "borderColor": {},
-          "color": {}
-        }
-      },
-      "stickyTracking": {},
-      "threshold": {},
-      "tooltip": {
-        "distance": {}
-      },
-      "turboThreshold": {}
-    },
-    "closure_uid_347133726": {},
-    "column": {
-      "allowPointSelect": {},
-      "animation": {
-        "duration": {}
-      },
-      "borderColor": {},
-      "borderRadius": {},
-      "crisp": {},
-      "cropThreshold": {},
-      "dataLabels": {
-        "align": {},
-        "formatter": function () {},
-        "padding": {},
-        "style": {
-          "color": {},
-          "fontSize": {},
-          "fontWeight": {},
-          "textOutline": {}
-        },
-        "verticalAlign": {},
-        "x": {},
-        "y": {}
-      },
-      "events": {},
-      "findNearestPointBy": {},
-      "groupPadding": {},
-      "lineWidth": {},
-      "marker": {},
-      "minPointLength": {},
-      "opacity": {},
-      "point": {
-        "events": {}
-      },
-      "pointPadding": {},
-      "pointRange": {},
-      "showCheckbox": {},
-      "softThreshold": {},
-      "startFromThreshold": {},
-      "states": {
-        "hover": {
-          "animation": {
-            "duration": {}
-          },
-          "brightness": {},
-          "halo": {},
-          "lineWidthPlus": {},
-          "marker": {}
-        },
-        "inactive": {
-          "animation": {
-            "duration": {}
-          },
-          "opacity": {}
-        },
-        "normal": {
-          "animation": {}
-        },
-        "select": {
-          "animation": {
-            "duration": {}
-          },
-          "borderColor": {},
-          "color": {}
-        }
-      },
-      "stickyTracking": {},
-      "threshold": {},
-      "tooltip": {
-        "distance": {}
-      },
-      "turboThreshold": {}
-    },
-    "line": {
-      "allowPointSelect": {},
-      "animation": {
-        "duration": {}
-      },
-      "closure_uid_347133726": {},
-      "crisp": {},
-      "cropThreshold": {},
-      "dataLabels": {
-        "align": {},
-        "formatter": function () {},
-        "padding": {},
-        "style": {
-          "color": {},
-          "fontSize": {},
-          "fontWeight": {},
-          "textOutline": {}
-        },
-        "verticalAlign": {},
-        "x": {},
-        "y": {}
-      },
-      "events": {},
-      "findNearestPointBy": {},
-      "lineWidth": {},
-      "marker": {
-        "closure_uid_347133726": {},
-        "enabledThreshold": {},
-        "lineColor": {},
-        "lineWidth": {},
-        "radius": {},
-        "states": {
-          "closure_uid_347133726": {},
-          "hover": {
-            "animation": {
-              "closure_uid_347133726": {},
-              "duration": {}
-            },
-            "closure_uid_347133726": {},
-            "enabled": {},
-            "lineWidthPlus": {},
-            "radiusPlus": {}
-          },
-          "normal": {
-            "animation": {}
-          },
-          "select": {
-            "fillColor": {},
-            "lineColor": {},
-            "lineWidth": {}
-          }
-        }
-      },
-      "opacity": {},
-      "point": {
-        "events": {}
-      },
-      "pointRange": {},
-      "showCheckbox": {},
-      "softThreshold": {},
-      "states": {
-        "hover": {
-          "animation": {
-            "duration": {}
-          },
-          "halo": {
-            "opacity": {},
-            "size": {}
-          },
-          "lineWidthPlus": {},
-          "marker": {}
-        },
-        "inactive": {
-          "animation": {
-            "duration": {}
-          },
-          "opacity": {}
-        },
-        "normal": {
-          "animation": {}
-        },
-        "select": {
-          "animation": {
-            "duration": {}
-          }
-        }
-      },
-      "stickyTracking": {},
-      "turboThreshold": {}
-    },
-    "pie": {
-      "allowPointSelect": {},
-      "animation": {
-        "duration": {}
-      },
-      "borderColor": {},
-      "borderWidth": {},
-      "center": {},
-      "clip": {},
-      "colorByPoint": {},
-      "crisp": {},
-      "cropThreshold": {},
-      "dataLabels": {
-        "align": {},
-        "allowOverlap": {},
-        "connectorPadding": {},
-        "connectorShape": {},
-        "crookDistance": {},
-        "distance": {},
-        "enabled": {},
-        "formatter": function () {},
-        "padding": {},
-        "softConnector": {},
-        "style": {
-          "color": {},
-          "fontSize": {},
-          "fontWeight": {},
-          "textOutline": {}
-        },
-        "verticalAlign": {},
-        "x": {},
-        "y": {}
-      },
-      "events": {},
-      "fillColor": {},
-      "findNearestPointBy": {},
-      "ignoreHiddenPoint": {},
-      "inactiveOtherPoints": {},
-      "legendType": {},
-      "lineWidth": {},
-      "marker": {},
-      "opacity": {},
-      "point": {
-        "events": {}
-      },
-      "pointRange": {},
-      "showCheckbox": {},
-      "showInLegend": {},
-      "size": {},
-      "slicedOffset": {},
-      "softThreshold": {},
-      "states": {
-        "hover": {
-          "animation": {
-            "duration": {}
-          },
-          "brightness": {},
-          "halo": {
-            "opacity": {},
-            "size": {}
-          },
-          "lineWidthPlus": {},
-          "marker": {}
-        },
-        "inactive": {
-          "animation": {
-            "duration": {}
-          },
-          "opacity": {}
-        },
-        "normal": {
-          "animation": {}
-        },
-        "select": {
-          "animation": {
-            "duration": {}
-          }
-        }
-      },
-      "stickyTracking": {},
-      "tooltip": {
-        "followPointer": {}
-      },
-      "turboThreshold": {}
-    },
-    "scatter": {
-      "allowPointSelect": {},
-      "animation": {
-        "duration": {}
-      },
-      "closure_uid_347133726": {},
-      "crisp": {},
-      "cropThreshold": {},
-      "dataLabels": {
-        "align": {},
-        "formatter": function () {},
-        "padding": {},
-        "style": {
-          "color": {},
-          "fontSize": {},
-          "fontWeight": {},
-          "textOutline": {}
-        },
-        "verticalAlign": {},
-        "x": {},
-        "y": {}
-      },
-      "events": {},
-      "findNearestPointBy": {},
-      "jitter": {
-        "x": {},
-        "y": {}
-      },
-      "lineWidth": {},
-      "marker": {
-        "closure_uid_347133726": {},
-        "enabled": {},
-        "enabledThreshold": {},
-        "lineColor": {},
-        "lineWidth": {},
-        "radius": {},
-        "states": {
-          "closure_uid_347133726": {},
-          "hover": {
-            "animation": {
-              "closure_uid_347133726": {},
-              "duration": {}
-            },
-            "closure_uid_347133726": {},
-            "enabled": {},
-            "lineWidthPlus": {},
-            "radiusPlus": {}
-          },
-          "normal": {
-            "animation": {}
-          },
-          "select": {
-            "fillColor": {},
-            "lineColor": {},
-            "lineWidth": {}
-          }
-        }
-      },
-      "opacity": {},
-      "point": {
-        "events": {}
-      },
-      "pointRange": {},
-      "showCheckbox": {},
-      "softThreshold": {},
-      "states": {
-        "hover": {
-          "animation": {
-            "duration": {}
-          },
-          "halo": {
-            "opacity": {},
-            "size": {}
-          },
-          "lineWidthPlus": {},
-          "marker": {}
-        },
-        "inactive": {
-          "animation": {
-            "duration": {}
-          },
-          "opacity": {}
-        },
-        "normal": {
-          "animation": {}
-        },
-        "select": {
-          "animation": {
-            "duration": {}
-          }
-        }
-      },
-      "stickyTracking": {},
-      "tooltip": {
-        "headerFormat": {},
-        "pointFormat": {}
-      },
-      "turboThreshold": {}
-    },
-    "spline": {
-      "allowPointSelect": {},
-      "animation": {
-        "duration": {}
-      },
-      "closure_uid_347133726": {},
-      "crisp": {},
-      "cropThreshold": {},
-      "dataLabels": {
-        "align": {},
-        "formatter": function () {},
-        "padding": {},
-        "style": {
-          "color": {},
-          "fontSize": {},
-          "fontWeight": {},
-          "textOutline": {}
-        },
-        "verticalAlign": {},
-        "x": {},
-        "y": {}
-      },
-      "events": {},
-      "findNearestPointBy": {},
-      "lineWidth": {},
-      "marker": {
-        "closure_uid_347133726": {},
-        "enabledThreshold": {},
-        "lineColor": {},
-        "lineWidth": {},
-        "radius": {},
-        "states": {
-          "closure_uid_347133726": {},
-          "hover": {
-            "animation": {
-              "closure_uid_347133726": {},
-              "duration": {}
-            },
-            "closure_uid_347133726": {},
-            "enabled": {},
-            "lineWidthPlus": {},
-            "radiusPlus": {}
-          },
-          "normal": {
-            "animation": {}
-          },
-          "select": {
-            "fillColor": {},
-            "lineColor": {},
-            "lineWidth": {}
-          }
-        }
-      },
-      "opacity": {},
-      "point": {
-        "events": {}
-      },
-      "pointRange": {},
-      "showCheckbox": {},
-      "softThreshold": {},
-      "states": {
-        "hover": {
-          "animation": {
-            "duration": {}
-          },
-          "halo": {
-            "opacity": {},
-            "size": {}
-          },
-          "lineWidthPlus": {},
-          "marker": {}
-        },
-        "inactive": {
-          "animation": {
-            "duration": {}
-          },
-          "opacity": {}
-        },
-        "normal": {
-          "animation": {}
-        },
-        "select": {
-          "animation": {
-            "duration": {}
-          }
-        }
-      },
-      "stickyTracking": {},
-      "turboThreshold": {}
-    }
-  },
   "defined": function () {},
   "deg2rad": {},
   "destroyObjectProperties": function () {},
@@ -13075,12 +12057,15 @@ var Highcharts = {
   "doc": {},
   "each": function () {},
   "erase": function () {},
-  "error": function () {},
+  "error": {
+    "messages": {}
+  },
   "extend": function () {},
   "extendClass": function () {},
   "find": function () {},
   "fireEvent": function () {},
   "format": function () {},
+  "getDeferredAnimation": function () {},
   "getMagnitude": function () {},
   "getOptions": function () {},
   "getStyle": function () {},
@@ -13171,6 +12156,7 @@ var Highcharts = {
   },
   "timers": {},
   "uniqueKey": function () {},
+  "useSerialIds": function () {},
   "version": {},
   "win": {
     "Highcharts": {
@@ -13291,6 +12277,7 @@ var Highcharts = {
           "showLastLabel": {},
           "stackLabels": {
             "allowOverlap": {},
+            "animation": {},
             "crop": {},
             "enabled": {},
             "formatter": function () {},
@@ -13339,32 +12326,22 @@ var Highcharts = {
       "Series": function () {},
       "StackItem": function () {},
       "Tick": function () {},
-      "Time": {
-        "defaultOptions": {
-          "Date": {},
-          "getTimezoneOffset": {},
-          "timezone": {},
-          "timezoneOffset": {},
-          "useUTC": {}
-        }
-      },
+      "Time": function () {},
       "Tooltip": function () {},
       "TrackerMixin": {
         "drawTrackerGraph": function () {},
         "drawTrackerPoint": function () {}
       },
       "_modules": {
-        "closure_uid_347133726": {},
-        "masters/highcharts.src.js": {},
-        "mixins/centered-series.js": {},
-        "mixins/legend-symbol.js": {
-          "drawLineMarker": function () {},
-          "drawRectangle": function () {}
+        "Core/Animation/AnimationUtilities.js": {
+          "animObject": function () {},
+          "animate": function () {},
+          "getDeferredAnimation": function () {},
+          "setAnimation": function () {},
+          "stop": function () {}
         },
-        "modules/overlapping-datalabels.src.js": {},
-        "parts/AreaSeries.js": {},
-        "parts/AreaSplineSeries.js": {},
-        "parts/Axis.js": {
+        "Core/Animation/Fx.js": function () {},
+        "Core/Axis/Axis.js": {
           "defaultBottomAxisOptions": {
             "labels": {
               "autoRotation": {},
@@ -13481,6 +12458,7 @@ var Highcharts = {
             "showLastLabel": {},
             "stackLabels": {
               "allowOverlap": {},
+              "animation": {},
               "crop": {},
               "enabled": {},
               "formatter": function () {},
@@ -13501,64 +12479,1125 @@ var Highcharts = {
           },
           "keepProps": {}
         },
-        "parts/BarSeries.js": {},
-        "parts/Chart.js": {},
-        "parts/Color.js": {
+        "Core/Axis/DateTimeAxis.js": {
+          "AdditionsClass": function () {},
+          "compose": function () {}
+        },
+        "Core/Axis/LogarithmicAxis.js": {
+          "compose": function () {}
+        },
+        "Core/Axis/PlotLineOrBand.js": function () {},
+        "Core/Axis/StackingAxis.js": {
+          "compose": function () {},
+          "onDestroy": function () {},
+          "onInit": function () {}
+        },
+        "Core/Axis/Tick.js": function () {},
+        "Core/Chart/Chart.js": function () {},
+        "Core/Color/Color.js": {
           "names": {
             "black": {},
             "white": {}
           },
           "parse": function () {}
         },
-        "parts/ColumnSeries.js": {},
-        "parts/DataLabels.js": {},
-        "parts/DateTimeAxis.js": {
-          "AdditionsClass": function () {},
-          "compose": function () {}
-        },
-        "parts/Dynamics.js": {},
-        "parts/Globals.js": {},
-        "parts/Html.js": {},
-        "parts/Interaction.js": {},
-        "parts/Legend.js": function () {},
-        "parts/LogarithmicAxis.js": {
-          "compose": function () {}
-        },
-        "parts/MSPointer.js": function () {},
-        "parts/Options.js": {},
-        "parts/PieSeries.js": {},
-        "parts/PlotLineOrBand.js": function () {},
-        "parts/Point.js": function () {},
-        "parts/Pointer.js": function () {},
-        "parts/Responsive.js": {},
-        "parts/SVGElement.js": function () {},
-        "parts/ScatterSeries.js": {},
-        "parts/ScrollablePlotArea.js": {},
-        "parts/Series.js": {},
-        "parts/SplineSeries.js": {},
-        "parts/Stacking.js": function () {},
-        "parts/StackingAxis.js": {
-          "compose": function () {},
-          "onDestroy": function () {},
-          "onInit": function () {}
-        },
-        "parts/SvgRenderer.js": {},
-        "parts/Tick.js": function () {},
-        "parts/Time.js": {
+        "Core/Dynamics.js": {},
+        "Core/Globals.js": {},
+        "Core/Interaction.js": {},
+        "Core/Legend.js": function () {},
+        "Core/MSPointer.js": function () {},
+        "Core/Options.js": {
+          "closure_uid_659125373": {},
+          "dateFormat": function () {},
           "defaultOptions": {
-            "Date": {},
-            "getTimezoneOffset": {},
-            "timezone": {},
+            "caption": {
+              "align": {},
+              "margin": {},
+              "text": {},
+              "verticalAlign": {}
+            },
+            "chart": {
+              "backgroundColor": {},
+              "borderColor": {},
+              "borderRadius": {},
+              "colorCount": {},
+              "defaultSeriesType": {},
+              "height": {},
+              "ignoreHiddenSeries": {},
+              "plotBorderColor": {},
+              "resetZoomButton": {
+                "position": {
+                  "align": {},
+                  "x": {},
+                  "y": {}
+                },
+                "theme": {
+                  "zIndex": {}
+                }
+              },
+              "spacing": {},
+              "styledMode": {},
+              "width": {}
+            },
+            "closure_uid_659125373": {},
+            "colors": {},
+            "credits": {
+              "enabled": {},
+              "href": {},
+              "position": {
+                "align": {},
+                "verticalAlign": {},
+                "x": {},
+                "y": {}
+              },
+              "style": {
+                "color": {},
+                "cursor": {},
+                "fontSize": {}
+              },
+              "text": {}
+            },
+            "global": {},
+            "labels": {
+              "style": {
+                "color": {},
+                "position": {}
+              }
+            },
+            "lang": {
+              "decimalPoint": {},
+              "loading": {},
+              "months": {},
+              "numericSymbols": {},
+              "resetZoom": {},
+              "resetZoomTitle": {},
+              "shortMonths": {},
+              "thousandsSep": {},
+              "weekdays": {}
+            },
+            "legend": {
+              "align": {},
+              "alignColumns": {},
+              "borderColor": {},
+              "borderRadius": {},
+              "enabled": {},
+              "itemCheckboxStyle": {
+                "height": {},
+                "position": {},
+                "width": {}
+              },
+              "itemHiddenStyle": {
+                "color": {}
+              },
+              "itemHoverStyle": {
+                "color": {}
+              },
+              "itemStyle": {
+                "color": {},
+                "cursor": {},
+                "fontSize": {},
+                "fontWeight": {},
+                "textOverflow": {}
+              },
+              "labelFormatter": function () {},
+              "layout": {},
+              "navigation": {
+                "activeColor": {},
+                "inactiveColor": {}
+              },
+              "shadow": {},
+              "squareSymbol": {},
+              "symbolPadding": {},
+              "title": {
+                "style": {
+                  "fontWeight": {}
+                }
+              },
+              "verticalAlign": {},
+              "x": {},
+              "y": {}
+            },
+            "loading": {
+              "labelStyle": {
+                "fontWeight": {},
+                "position": {},
+                "top": {}
+              },
+              "style": {
+                "backgroundColor": {},
+                "opacity": {},
+                "position": {},
+                "textAlign": {}
+              }
+            },
+            "plotOptions": {
+              "area": {
+                "allowPointSelect": {},
+                "animation": {
+                  "duration": {}
+                },
+                "closure_uid_659125373": {},
+                "crisp": {},
+                "cropThreshold": {},
+                "dataLabels": {
+                  "align": {},
+                  "animation": {
+                    "closure_uid_659125373": {}
+                  },
+                  "defer": {},
+                  "formatter": {
+                    "closure_uid_659125373": {}
+                  },
+                  "padding": {},
+                  "style": {
+                    "closure_uid_659125373": {},
+                    "color": {},
+                    "fontSize": {},
+                    "fontWeight": {},
+                    "textOutline": {}
+                  },
+                  "verticalAlign": {},
+                  "x": {},
+                  "y": {}
+                },
+                "events": {},
+                "findNearestPointBy": {},
+                "lineWidth": {},
+                "marker": {
+                  "closure_uid_659125373": {},
+                  "enabledThreshold": {},
+                  "lineColor": {},
+                  "lineWidth": {},
+                  "radius": {},
+                  "states": {
+                    "closure_uid_659125373": {},
+                    "hover": {
+                      "animation": {
+                        "closure_uid_659125373": {},
+                        "duration": {}
+                      },
+                      "closure_uid_659125373": {},
+                      "enabled": {},
+                      "lineWidthPlus": {},
+                      "radiusPlus": {}
+                    },
+                    "normal": {
+                      "animation": {},
+                      "closure_uid_659125373": {}
+                    },
+                    "select": {
+                      "closure_uid_659125373": {},
+                      "fillColor": {},
+                      "lineColor": {},
+                      "lineWidth": {}
+                    }
+                  }
+                },
+                "opacity": {},
+                "point": {
+                  "events": {
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "pointRange": {},
+                "showCheckbox": {},
+                "softThreshold": {},
+                "states": {
+                  "hover": {
+                    "animation": {
+                      "closure_uid_659125373": {},
+                      "duration": {}
+                    },
+                    "closure_uid_659125373": {},
+                    "halo": {
+                      "closure_uid_659125373": {},
+                      "opacity": {},
+                      "size": {}
+                    },
+                    "lineWidthPlus": {},
+                    "marker": {
+                      "closure_uid_659125373": {}
+                    }
+                  },
+                  "inactive": {
+                    "animation": {
+                      "closure_uid_659125373": {},
+                      "duration": {}
+                    },
+                    "closure_uid_659125373": {},
+                    "opacity": {}
+                  },
+                  "normal": {
+                    "animation": {},
+                    "closure_uid_659125373": {}
+                  },
+                  "select": {
+                    "animation": {
+                      "closure_uid_659125373": {},
+                      "duration": {}
+                    },
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "stickyTracking": {},
+                "threshold": {},
+                "turboThreshold": {}
+              },
+              "areaspline": {
+                "allowPointSelect": {},
+                "animation": {
+                  "duration": {}
+                },
+                "closure_uid_659125373": {},
+                "crisp": {},
+                "cropThreshold": {},
+                "dataLabels": {
+                  "align": {},
+                  "animation": {
+                    "closure_uid_659125373": {}
+                  },
+                  "defer": {},
+                  "formatter": {
+                    "closure_uid_659125373": {}
+                  },
+                  "padding": {},
+                  "style": {
+                    "closure_uid_659125373": {},
+                    "color": {},
+                    "fontSize": {},
+                    "fontWeight": {},
+                    "textOutline": {}
+                  },
+                  "verticalAlign": {},
+                  "x": {},
+                  "y": {}
+                },
+                "events": {},
+                "findNearestPointBy": {},
+                "lineWidth": {},
+                "marker": {
+                  "closure_uid_659125373": {},
+                  "enabledThreshold": {},
+                  "lineColor": {},
+                  "lineWidth": {},
+                  "radius": {},
+                  "states": {
+                    "closure_uid_659125373": {},
+                    "hover": {
+                      "animation": {
+                        "closure_uid_659125373": {},
+                        "duration": {}
+                      },
+                      "closure_uid_659125373": {},
+                      "enabled": {},
+                      "lineWidthPlus": {},
+                      "radiusPlus": {}
+                    },
+                    "normal": {
+                      "animation": {},
+                      "closure_uid_659125373": {}
+                    },
+                    "select": {
+                      "closure_uid_659125373": {},
+                      "fillColor": {},
+                      "lineColor": {},
+                      "lineWidth": {}
+                    }
+                  }
+                },
+                "opacity": {},
+                "point": {
+                  "events": {
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "pointRange": {},
+                "showCheckbox": {},
+                "softThreshold": {},
+                "states": {
+                  "hover": {
+                    "animation": {
+                      "closure_uid_659125373": {},
+                      "duration": {}
+                    },
+                    "closure_uid_659125373": {},
+                    "halo": {
+                      "closure_uid_659125373": {},
+                      "opacity": {},
+                      "size": {}
+                    },
+                    "lineWidthPlus": {},
+                    "marker": {
+                      "closure_uid_659125373": {}
+                    }
+                  },
+                  "inactive": {
+                    "animation": {
+                      "closure_uid_659125373": {},
+                      "duration": {}
+                    },
+                    "closure_uid_659125373": {},
+                    "opacity": {}
+                  },
+                  "normal": {
+                    "animation": {},
+                    "closure_uid_659125373": {}
+                  },
+                  "select": {
+                    "animation": {
+                      "closure_uid_659125373": {},
+                      "duration": {}
+                    },
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "stickyTracking": {},
+                "threshold": {},
+                "turboThreshold": {}
+              },
+              "bar": {
+                "allowPointSelect": {},
+                "animation": {
+                  "duration": {}
+                },
+                "borderColor": {},
+                "borderRadius": {},
+                "centerInCategory": {},
+                "crisp": {},
+                "cropThreshold": {},
+                "dataLabels": {
+                  "align": {},
+                  "animation": {
+                    "closure_uid_659125373": {}
+                  },
+                  "defer": {},
+                  "formatter": {
+                    "closure_uid_659125373": {}
+                  },
+                  "padding": {},
+                  "style": {
+                    "closure_uid_659125373": {},
+                    "color": {},
+                    "fontSize": {},
+                    "fontWeight": {},
+                    "textOutline": {}
+                  },
+                  "verticalAlign": {},
+                  "x": {},
+                  "y": {}
+                },
+                "events": {},
+                "findNearestPointBy": {},
+                "groupPadding": {},
+                "lineWidth": {},
+                "marker": {},
+                "minPointLength": {},
+                "opacity": {},
+                "point": {
+                  "events": {
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "pointPadding": {},
+                "pointRange": {},
+                "showCheckbox": {},
+                "softThreshold": {},
+                "startFromThreshold": {},
+                "states": {
+                  "hover": {
+                    "animation": {
+                      "closure_uid_659125373": {},
+                      "duration": {}
+                    },
+                    "brightness": {},
+                    "closure_uid_659125373": {},
+                    "halo": {},
+                    "lineWidthPlus": {},
+                    "marker": {
+                      "closure_uid_659125373": {}
+                    }
+                  },
+                  "inactive": {
+                    "animation": {
+                      "closure_uid_659125373": {},
+                      "duration": {}
+                    },
+                    "closure_uid_659125373": {},
+                    "opacity": {}
+                  },
+                  "normal": {
+                    "animation": {},
+                    "closure_uid_659125373": {}
+                  },
+                  "select": {
+                    "animation": {
+                      "closure_uid_659125373": {},
+                      "duration": {}
+                    },
+                    "borderColor": {},
+                    "closure_uid_659125373": {},
+                    "color": {}
+                  }
+                },
+                "stickyTracking": {},
+                "threshold": {},
+                "tooltip": {
+                  "distance": {}
+                },
+                "turboThreshold": {}
+              },
+              "closure_uid_659125373": {},
+              "column": {
+                "allowPointSelect": {},
+                "animation": {
+                  "duration": {}
+                },
+                "borderColor": {},
+                "borderRadius": {},
+                "centerInCategory": {},
+                "crisp": {},
+                "cropThreshold": {},
+                "dataLabels": {
+                  "align": {},
+                  "animation": {
+                    "closure_uid_659125373": {}
+                  },
+                  "defer": {},
+                  "formatter": {
+                    "closure_uid_659125373": {}
+                  },
+                  "padding": {},
+                  "style": {
+                    "closure_uid_659125373": {},
+                    "color": {},
+                    "fontSize": {},
+                    "fontWeight": {},
+                    "textOutline": {}
+                  },
+                  "verticalAlign": {},
+                  "x": {},
+                  "y": {}
+                },
+                "events": {},
+                "findNearestPointBy": {},
+                "groupPadding": {},
+                "lineWidth": {},
+                "marker": {},
+                "minPointLength": {},
+                "opacity": {},
+                "point": {
+                  "events": {
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "pointPadding": {},
+                "pointRange": {},
+                "showCheckbox": {},
+                "softThreshold": {},
+                "startFromThreshold": {},
+                "states": {
+                  "hover": {
+                    "animation": {
+                      "closure_uid_659125373": {},
+                      "duration": {}
+                    },
+                    "brightness": {},
+                    "closure_uid_659125373": {},
+                    "halo": {},
+                    "lineWidthPlus": {},
+                    "marker": {
+                      "closure_uid_659125373": {}
+                    }
+                  },
+                  "inactive": {
+                    "animation": {
+                      "closure_uid_659125373": {},
+                      "duration": {}
+                    },
+                    "closure_uid_659125373": {},
+                    "opacity": {}
+                  },
+                  "normal": {
+                    "animation": {},
+                    "closure_uid_659125373": {}
+                  },
+                  "select": {
+                    "animation": {
+                      "closure_uid_659125373": {},
+                      "duration": {}
+                    },
+                    "borderColor": {},
+                    "closure_uid_659125373": {},
+                    "color": {}
+                  }
+                },
+                "stickyTracking": {},
+                "threshold": {},
+                "tooltip": {
+                  "distance": {}
+                },
+                "turboThreshold": {}
+              },
+              "line": {
+                "allowPointSelect": {},
+                "animation": {
+                  "duration": {}
+                },
+                "closure_uid_659125373": {},
+                "crisp": {},
+                "cropThreshold": {},
+                "dataLabels": {
+                  "align": {},
+                  "animation": {
+                    "closure_uid_659125373": {}
+                  },
+                  "defer": {},
+                  "formatter": {
+                    "closure_uid_659125373": {}
+                  },
+                  "padding": {},
+                  "style": {
+                    "closure_uid_659125373": {},
+                    "color": {},
+                    "fontSize": {},
+                    "fontWeight": {},
+                    "textOutline": {}
+                  },
+                  "verticalAlign": {},
+                  "x": {},
+                  "y": {}
+                },
+                "events": {},
+                "findNearestPointBy": {},
+                "lineWidth": {},
+                "marker": {
+                  "closure_uid_659125373": {},
+                  "enabledThreshold": {},
+                  "lineColor": {},
+                  "lineWidth": {},
+                  "radius": {},
+                  "states": {
+                    "closure_uid_659125373": {},
+                    "hover": {
+                      "animation": {
+                        "closure_uid_659125373": {},
+                        "duration": {}
+                      },
+                      "closure_uid_659125373": {},
+                      "enabled": {},
+                      "lineWidthPlus": {},
+                      "radiusPlus": {}
+                    },
+                    "normal": {
+                      "animation": {},
+                      "closure_uid_659125373": {}
+                    },
+                    "select": {
+                      "closure_uid_659125373": {},
+                      "fillColor": {},
+                      "lineColor": {},
+                      "lineWidth": {}
+                    }
+                  }
+                },
+                "opacity": {},
+                "point": {
+                  "events": {
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "pointRange": {},
+                "showCheckbox": {},
+                "softThreshold": {},
+                "states": {
+                  "hover": {
+                    "animation": {
+                      "closure_uid_659125373": {},
+                      "duration": {}
+                    },
+                    "closure_uid_659125373": {},
+                    "halo": {
+                      "closure_uid_659125373": {},
+                      "opacity": {},
+                      "size": {}
+                    },
+                    "lineWidthPlus": {},
+                    "marker": {
+                      "closure_uid_659125373": {}
+                    }
+                  },
+                  "inactive": {
+                    "animation": {
+                      "closure_uid_659125373": {},
+                      "duration": {}
+                    },
+                    "closure_uid_659125373": {},
+                    "opacity": {}
+                  },
+                  "normal": {
+                    "animation": {},
+                    "closure_uid_659125373": {}
+                  },
+                  "select": {
+                    "animation": {
+                      "closure_uid_659125373": {},
+                      "duration": {}
+                    },
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "stickyTracking": {},
+                "turboThreshold": {}
+              },
+              "pie": {
+                "allowPointSelect": {},
+                "animation": {
+                  "duration": {}
+                },
+                "borderColor": {},
+                "borderWidth": {},
+                "center": {},
+                "clip": {},
+                "colorByPoint": {},
+                "crisp": {},
+                "cropThreshold": {},
+                "dataLabels": {
+                  "align": {},
+                  "allowOverlap": {},
+                  "animation": {
+                    "closure_uid_659125373": {}
+                  },
+                  "connectorPadding": {},
+                  "connectorShape": {},
+                  "crookDistance": {},
+                  "defer": {},
+                  "distance": {},
+                  "enabled": {},
+                  "formatter": {
+                    "closure_uid_659125373": {}
+                  },
+                  "padding": {},
+                  "softConnector": {},
+                  "style": {
+                    "closure_uid_659125373": {},
+                    "color": {},
+                    "fontSize": {},
+                    "fontWeight": {},
+                    "textOutline": {}
+                  },
+                  "verticalAlign": {},
+                  "x": {},
+                  "y": {}
+                },
+                "events": {},
+                "fillColor": {},
+                "findNearestPointBy": {},
+                "ignoreHiddenPoint": {},
+                "inactiveOtherPoints": {},
+                "legendType": {},
+                "lineWidth": {},
+                "marker": {},
+                "opacity": {},
+                "point": {
+                  "events": {
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "pointRange": {},
+                "showCheckbox": {},
+                "showInLegend": {},
+                "size": {},
+                "slicedOffset": {},
+                "softThreshold": {},
+                "states": {
+                  "hover": {
+                    "animation": {
+                      "closure_uid_659125373": {},
+                      "duration": {}
+                    },
+                    "brightness": {},
+                    "closure_uid_659125373": {},
+                    "halo": {
+                      "closure_uid_659125373": {},
+                      "opacity": {},
+                      "size": {}
+                    },
+                    "lineWidthPlus": {},
+                    "marker": {
+                      "closure_uid_659125373": {}
+                    }
+                  },
+                  "inactive": {
+                    "animation": {
+                      "closure_uid_659125373": {},
+                      "duration": {}
+                    },
+                    "closure_uid_659125373": {},
+                    "opacity": {}
+                  },
+                  "normal": {
+                    "animation": {},
+                    "closure_uid_659125373": {}
+                  },
+                  "select": {
+                    "animation": {
+                      "closure_uid_659125373": {},
+                      "duration": {}
+                    },
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "stickyTracking": {},
+                "tooltip": {
+                  "followPointer": {}
+                },
+                "turboThreshold": {}
+              },
+              "scatter": {
+                "allowPointSelect": {},
+                "animation": {
+                  "duration": {}
+                },
+                "closure_uid_659125373": {},
+                "crisp": {},
+                "cropThreshold": {},
+                "dataLabels": {
+                  "align": {},
+                  "animation": {
+                    "closure_uid_659125373": {}
+                  },
+                  "defer": {},
+                  "formatter": {
+                    "closure_uid_659125373": {}
+                  },
+                  "padding": {},
+                  "style": {
+                    "closure_uid_659125373": {},
+                    "color": {},
+                    "fontSize": {},
+                    "fontWeight": {},
+                    "textOutline": {}
+                  },
+                  "verticalAlign": {},
+                  "x": {},
+                  "y": {}
+                },
+                "events": {},
+                "findNearestPointBy": {},
+                "jitter": {
+                  "x": {},
+                  "y": {}
+                },
+                "lineWidth": {},
+                "marker": {
+                  "closure_uid_659125373": {},
+                  "enabled": {},
+                  "enabledThreshold": {},
+                  "lineColor": {},
+                  "lineWidth": {},
+                  "radius": {},
+                  "states": {
+                    "closure_uid_659125373": {},
+                    "hover": {
+                      "animation": {
+                        "closure_uid_659125373": {},
+                        "duration": {}
+                      },
+                      "closure_uid_659125373": {},
+                      "enabled": {},
+                      "lineWidthPlus": {},
+                      "radiusPlus": {}
+                    },
+                    "normal": {
+                      "animation": {},
+                      "closure_uid_659125373": {}
+                    },
+                    "select": {
+                      "closure_uid_659125373": {},
+                      "fillColor": {},
+                      "lineColor": {},
+                      "lineWidth": {}
+                    }
+                  }
+                },
+                "opacity": {},
+                "point": {
+                  "events": {
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "pointRange": {},
+                "showCheckbox": {},
+                "softThreshold": {},
+                "states": {
+                  "hover": {
+                    "animation": {
+                      "closure_uid_659125373": {},
+                      "duration": {}
+                    },
+                    "closure_uid_659125373": {},
+                    "halo": {
+                      "closure_uid_659125373": {},
+                      "opacity": {},
+                      "size": {}
+                    },
+                    "lineWidthPlus": {},
+                    "marker": {
+                      "closure_uid_659125373": {}
+                    }
+                  },
+                  "inactive": {
+                    "animation": {
+                      "closure_uid_659125373": {},
+                      "duration": {}
+                    },
+                    "closure_uid_659125373": {},
+                    "opacity": {}
+                  },
+                  "normal": {
+                    "animation": {},
+                    "closure_uid_659125373": {}
+                  },
+                  "select": {
+                    "animation": {
+                      "closure_uid_659125373": {},
+                      "duration": {}
+                    },
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "stickyTracking": {},
+                "tooltip": {
+                  "headerFormat": {},
+                  "pointFormat": {}
+                },
+                "turboThreshold": {}
+              },
+              "spline": {
+                "allowPointSelect": {},
+                "animation": {
+                  "duration": {}
+                },
+                "closure_uid_659125373": {},
+                "crisp": {},
+                "cropThreshold": {},
+                "dataLabels": {
+                  "align": {},
+                  "animation": {
+                    "closure_uid_659125373": {}
+                  },
+                  "defer": {},
+                  "formatter": {
+                    "closure_uid_659125373": {}
+                  },
+                  "padding": {},
+                  "style": {
+                    "closure_uid_659125373": {},
+                    "color": {},
+                    "fontSize": {},
+                    "fontWeight": {},
+                    "textOutline": {}
+                  },
+                  "verticalAlign": {},
+                  "x": {},
+                  "y": {}
+                },
+                "events": {},
+                "findNearestPointBy": {},
+                "lineWidth": {},
+                "marker": {
+                  "closure_uid_659125373": {},
+                  "enabledThreshold": {},
+                  "lineColor": {},
+                  "lineWidth": {},
+                  "radius": {},
+                  "states": {
+                    "closure_uid_659125373": {},
+                    "hover": {
+                      "animation": {
+                        "closure_uid_659125373": {},
+                        "duration": {}
+                      },
+                      "closure_uid_659125373": {},
+                      "enabled": {},
+                      "lineWidthPlus": {},
+                      "radiusPlus": {}
+                    },
+                    "normal": {
+                      "animation": {},
+                      "closure_uid_659125373": {}
+                    },
+                    "select": {
+                      "closure_uid_659125373": {},
+                      "fillColor": {},
+                      "lineColor": {},
+                      "lineWidth": {}
+                    }
+                  }
+                },
+                "opacity": {},
+                "point": {
+                  "events": {
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "pointRange": {},
+                "showCheckbox": {},
+                "softThreshold": {},
+                "states": {
+                  "hover": {
+                    "animation": {
+                      "closure_uid_659125373": {},
+                      "duration": {}
+                    },
+                    "closure_uid_659125373": {},
+                    "halo": {
+                      "closure_uid_659125373": {},
+                      "opacity": {},
+                      "size": {}
+                    },
+                    "lineWidthPlus": {},
+                    "marker": {
+                      "closure_uid_659125373": {}
+                    }
+                  },
+                  "inactive": {
+                    "animation": {
+                      "closure_uid_659125373": {},
+                      "duration": {}
+                    },
+                    "closure_uid_659125373": {},
+                    "opacity": {}
+                  },
+                  "normal": {
+                    "animation": {},
+                    "closure_uid_659125373": {}
+                  },
+                  "select": {
+                    "animation": {
+                      "closure_uid_659125373": {},
+                      "duration": {}
+                    },
+                    "closure_uid_659125373": {}
+                  }
+                },
+                "stickyTracking": {},
+                "turboThreshold": {}
+              }
+            },
+            "subtitle": {
+              "align": {},
+              "text": {},
+              "widthAdjust": {}
+            },
+            "symbols": {},
+            "time": {
+              "Date": {},
+              "getTimezoneOffset": {},
+              "timezone": {},
+              "timezoneOffset": {},
+              "useUTC": {}
+            },
+            "title": {
+              "align": {},
+              "margin": {},
+              "text": {},
+              "widthAdjust": {}
+            },
+            "tooltip": {
+              "animation": {},
+              "backgroundColor": {},
+              "borderRadius": {},
+              "borderWidth": {},
+              "dateTimeLabelFormats": {
+                "day": {},
+                "hour": {},
+                "millisecond": {},
+                "minute": {},
+                "month": {},
+                "second": {},
+                "week": {},
+                "year": {}
+              },
+              "enabled": {},
+              "footerFormat": {},
+              "headerFormat": {},
+              "padding": {},
+              "pointFormat": {},
+              "shadow": {},
+              "snap": {},
+              "style": {
+                "color": {},
+                "cursor": {},
+                "fontSize": {},
+                "whiteSpace": {}
+              }
+            }
+          },
+          "time": {
+            "Date": function () {},
+            "dateFormat": function () {},
+            "get": function () {},
+            "getTimeTicks": function () {},
+            "getTimezoneOffset": function () {},
+            "makeTime": function () {},
+            "options": {
+              "Date": {},
+              "getTimezoneOffset": {},
+              "timezone": {},
+              "timezoneOffset": {},
+              "useUTC": {}
+            },
+            "resolveDTLFormat": function () {},
+            "set": function () {},
             "timezoneOffset": {},
-            "useUTC": {}
+            "timezoneOffsetFunction": function () {},
+            "update": function () {},
+            "useUTC": {},
+            "variableTimezone": {}
           }
         },
-        "parts/Tooltip.js": function () {},
-        "parts/Utilities.js": {
-          "Fx": function () {},
+        "Core/Pointer.js": function () {},
+        "Core/Renderer/HTML/HTMLElement.js": function () {},
+        "Core/Renderer/HTML/HTMLRenderer.js": function () {},
+        "Core/Renderer/SVG/SVGElement.js": function () {},
+        "Core/Renderer/SVG/SVGLabel.js": {
+          "emptyBBox": {
+            "height": {},
+            "width": {},
+            "x": {},
+            "y": {}
+          },
+          "textProps": {}
+        },
+        "Core/Renderer/SVG/SVGRenderer.js": function () {},
+        "Core/Responsive.js": {},
+        "Core/Series/CartesianSeries.js": function () {},
+        "Core/Series/DataLabels.js": {},
+        "Core/Series/Point.js": function () {},
+        "Core/Series/Series.js": {
+          "addSeries": function () {},
+          "cleanRecursively": function () {},
+          "defaultOptions": {
+            "type": {}
+          },
+          "getSeries": function () {},
+          "seriesType": function () {},
+          "seriesTypes": {
+            "area": function () {},
+            "areaspline": function () {},
+            "bar": function () {},
+            "column": function () {},
+            "line": function () {},
+            "pie": function () {},
+            "scatter": function () {},
+            "spline": function () {}
+          }
+        },
+        "Core/Time.js": function () {},
+        "Core/Tooltip.js": function () {},
+        "Core/Utilities.js": {
           "addEvent": function () {},
-          "animObject": function () {},
-          "animate": function () {},
           "arrayMax": function () {},
           "arrayMin": function () {},
           "attr": function () {},
@@ -13571,7 +13610,9 @@ var Highcharts = {
           "destroyObjectProperties": function () {},
           "discardElement": function () {},
           "erase": function () {},
-          "error": function () {},
+          "error": {
+            "messages": {}
+          },
           "extend": function () {},
           "extendClass": function () {},
           "find": function () {},
@@ -13579,6 +13620,7 @@ var Highcharts = {
           "format": function () {},
           "getMagnitude": function () {},
           "getNestedProperty": function () {},
+          "getOptions": function () {},
           "getStyle": function () {},
           "inArray": function () {},
           "isArray": function () {},
@@ -13598,11 +13640,9 @@ var Highcharts = {
           "pick": function () {},
           "relativeLength": function () {},
           "removeEvent": function () {},
-          "seriesType": function () {},
-          "setAnimation": function () {},
+          "setOptions": function () {},
           "splat": function () {},
           "stableSort": function () {},
-          "stop": function () {},
           "syncTimeout": function () {},
           "timeUnits": {
             "day": {},
@@ -13615,8 +13655,30 @@ var Highcharts = {
             "year": {}
           },
           "uniqueKey": function () {},
+          "useSerialIds": function () {},
           "wrap": function () {}
-        }
+        },
+        "Extensions/OverlappingDataLabels.js": {},
+        "Extensions/ScrollablePlotArea.js": {},
+        "Extensions/Stacking.js": function () {},
+        "Mixins/CenteredSeries.js": {
+          "getCenter": function () {},
+          "getStartAndEndRadians": function () {}
+        },
+        "Mixins/LegendSymbol.js": {
+          "drawLineMarker": function () {},
+          "drawRectangle": function () {}
+        },
+        "Series/AreaSeries.js": {},
+        "Series/AreaSplineSeries.js": {},
+        "Series/BarSeries.js": {},
+        "Series/ColumnSeries.js": function () {},
+        "Series/LineSeries.js": function () {},
+        "Series/PieSeries.js": {},
+        "Series/ScatterSeries.js": {},
+        "Series/SplineSeries.js": {},
+        "closure_uid_659125373": {},
+        "masters/highcharts.src.js": {}
       },
       "addEvent": function () {},
       "animObject": function () {},
@@ -13629,7 +13691,7 @@ var Highcharts = {
       "charts": {},
       "cleanRecursively": function () {},
       "clearTimeout": function () {},
-      "closure_uid_347133726": {},
+      "closure_uid_659125373": {},
       "color": function () {},
       "correctFloat": function () {},
       "createElement": function () {},
@@ -13666,7 +13728,7 @@ var Highcharts = {
           "styledMode": {},
           "width": {}
         },
-        "closure_uid_347133726": {},
+        "closure_uid_659125373": {},
         "colors": {},
         "credits": {
           "enabled": {},
@@ -13763,14 +13825,22 @@ var Highcharts = {
             "animation": {
               "duration": {}
             },
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "crisp": {},
             "cropThreshold": {},
             "dataLabels": {
               "align": {},
-              "formatter": function () {},
+              "animation": {
+                "closure_uid_659125373": {}
+              },
+              "closure_uid_659125373": {},
+              "defer": {},
+              "formatter": {
+                "closure_uid_659125373": {}
+              },
               "padding": {},
               "style": {
+                "closure_uid_659125373": {},
                 "color": {},
                 "fontSize": {},
                 "fontWeight": {},
@@ -13784,27 +13854,29 @@ var Highcharts = {
             "findNearestPointBy": {},
             "lineWidth": {},
             "marker": {
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "enabledThreshold": {},
               "lineColor": {},
               "lineWidth": {},
               "radius": {},
               "states": {
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "hover": {
                   "animation": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "duration": {}
                   },
-                  "closure_uid_347133726": {},
+                  "closure_uid_659125373": {},
                   "enabled": {},
                   "lineWidthPlus": {},
                   "radiusPlus": {}
                 },
                 "normal": {
-                  "animation": {}
+                  "animation": {},
+                  "closure_uid_659125373": {}
                 },
                 "select": {
+                  "closure_uid_659125373": {},
                   "fillColor": {},
                   "lineColor": {},
                   "lineWidth": {}
@@ -13813,36 +13885,50 @@ var Highcharts = {
             },
             "opacity": {},
             "point": {
-              "events": {}
+              "closure_uid_659125373": {},
+              "events": {
+                "closure_uid_659125373": {}
+              }
             },
             "pointRange": {},
             "showCheckbox": {},
             "softThreshold": {},
             "states": {
+              "closure_uid_659125373": {},
               "hover": {
                 "animation": {
+                  "closure_uid_659125373": {},
                   "duration": {}
                 },
+                "closure_uid_659125373": {},
                 "halo": {
+                  "closure_uid_659125373": {},
                   "opacity": {},
                   "size": {}
                 },
                 "lineWidthPlus": {},
-                "marker": {}
+                "marker": {
+                  "closure_uid_659125373": {}
+                }
               },
               "inactive": {
                 "animation": {
+                  "closure_uid_659125373": {},
                   "duration": {}
                 },
+                "closure_uid_659125373": {},
                 "opacity": {}
               },
               "normal": {
-                "animation": {}
+                "animation": {},
+                "closure_uid_659125373": {}
               },
               "select": {
                 "animation": {
+                  "closure_uid_659125373": {},
                   "duration": {}
-                }
+                },
+                "closure_uid_659125373": {}
               }
             },
             "stickyTracking": {},
@@ -13854,14 +13940,22 @@ var Highcharts = {
             "animation": {
               "duration": {}
             },
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "crisp": {},
             "cropThreshold": {},
             "dataLabels": {
               "align": {},
-              "formatter": function () {},
+              "animation": {
+                "closure_uid_659125373": {}
+              },
+              "closure_uid_659125373": {},
+              "defer": {},
+              "formatter": {
+                "closure_uid_659125373": {}
+              },
               "padding": {},
               "style": {
+                "closure_uid_659125373": {},
                 "color": {},
                 "fontSize": {},
                 "fontWeight": {},
@@ -13875,27 +13969,29 @@ var Highcharts = {
             "findNearestPointBy": {},
             "lineWidth": {},
             "marker": {
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "enabledThreshold": {},
               "lineColor": {},
               "lineWidth": {},
               "radius": {},
               "states": {
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "hover": {
                   "animation": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "duration": {}
                   },
-                  "closure_uid_347133726": {},
+                  "closure_uid_659125373": {},
                   "enabled": {},
                   "lineWidthPlus": {},
                   "radiusPlus": {}
                 },
                 "normal": {
-                  "animation": {}
+                  "animation": {},
+                  "closure_uid_659125373": {}
                 },
                 "select": {
+                  "closure_uid_659125373": {},
                   "fillColor": {},
                   "lineColor": {},
                   "lineWidth": {}
@@ -13904,36 +14000,50 @@ var Highcharts = {
             },
             "opacity": {},
             "point": {
-              "events": {}
+              "closure_uid_659125373": {},
+              "events": {
+                "closure_uid_659125373": {}
+              }
             },
             "pointRange": {},
             "showCheckbox": {},
             "softThreshold": {},
             "states": {
+              "closure_uid_659125373": {},
               "hover": {
                 "animation": {
+                  "closure_uid_659125373": {},
                   "duration": {}
                 },
+                "closure_uid_659125373": {},
                 "halo": {
+                  "closure_uid_659125373": {},
                   "opacity": {},
                   "size": {}
                 },
                 "lineWidthPlus": {},
-                "marker": {}
+                "marker": {
+                  "closure_uid_659125373": {}
+                }
               },
               "inactive": {
                 "animation": {
+                  "closure_uid_659125373": {},
                   "duration": {}
                 },
+                "closure_uid_659125373": {},
                 "opacity": {}
               },
               "normal": {
-                "animation": {}
+                "animation": {},
+                "closure_uid_659125373": {}
               },
               "select": {
                 "animation": {
+                  "closure_uid_659125373": {},
                   "duration": {}
-                }
+                },
+                "closure_uid_659125373": {}
               }
             },
             "stickyTracking": {},
@@ -13947,13 +14057,23 @@ var Highcharts = {
             },
             "borderColor": {},
             "borderRadius": {},
+            "centerInCategory": {},
+            "closure_uid_659125373": {},
             "crisp": {},
             "cropThreshold": {},
             "dataLabels": {
               "align": {},
-              "formatter": function () {},
+              "animation": {
+                "closure_uid_659125373": {}
+              },
+              "closure_uid_659125373": {},
+              "defer": {},
+              "formatter": {
+                "closure_uid_659125373": {}
+              },
               "padding": {},
               "style": {
+                "closure_uid_659125373": {},
                 "color": {},
                 "fontSize": {},
                 "fontWeight": {},
@@ -13971,7 +14091,10 @@ var Highcharts = {
             "minPointLength": {},
             "opacity": {},
             "point": {
-              "events": {}
+              "closure_uid_659125373": {},
+              "events": {
+                "closure_uid_659125373": {}
+              }
             },
             "pointPadding": {},
             "pointRange": {},
@@ -13979,29 +14102,39 @@ var Highcharts = {
             "softThreshold": {},
             "startFromThreshold": {},
             "states": {
+              "closure_uid_659125373": {},
               "hover": {
                 "animation": {
+                  "closure_uid_659125373": {},
                   "duration": {}
                 },
                 "brightness": {},
+                "closure_uid_659125373": {},
                 "halo": {},
                 "lineWidthPlus": {},
-                "marker": {}
+                "marker": {
+                  "closure_uid_659125373": {}
+                }
               },
               "inactive": {
                 "animation": {
+                  "closure_uid_659125373": {},
                   "duration": {}
                 },
+                "closure_uid_659125373": {},
                 "opacity": {}
               },
               "normal": {
-                "animation": {}
+                "animation": {},
+                "closure_uid_659125373": {}
               },
               "select": {
                 "animation": {
+                  "closure_uid_659125373": {},
                   "duration": {}
                 },
                 "borderColor": {},
+                "closure_uid_659125373": {},
                 "color": {}
               }
             },
@@ -14012,7 +14145,7 @@ var Highcharts = {
             },
             "turboThreshold": {}
           },
-          "closure_uid_347133726": {},
+          "closure_uid_659125373": {},
           "column": {
             "allowPointSelect": {},
             "animation": {
@@ -14020,13 +14153,23 @@ var Highcharts = {
             },
             "borderColor": {},
             "borderRadius": {},
+            "centerInCategory": {},
+            "closure_uid_659125373": {},
             "crisp": {},
             "cropThreshold": {},
             "dataLabels": {
               "align": {},
-              "formatter": function () {},
+              "animation": {
+                "closure_uid_659125373": {}
+              },
+              "closure_uid_659125373": {},
+              "defer": {},
+              "formatter": {
+                "closure_uid_659125373": {}
+              },
               "padding": {},
               "style": {
+                "closure_uid_659125373": {},
                 "color": {},
                 "fontSize": {},
                 "fontWeight": {},
@@ -14044,7 +14187,10 @@ var Highcharts = {
             "minPointLength": {},
             "opacity": {},
             "point": {
-              "events": {}
+              "closure_uid_659125373": {},
+              "events": {
+                "closure_uid_659125373": {}
+              }
             },
             "pointPadding": {},
             "pointRange": {},
@@ -14052,29 +14198,39 @@ var Highcharts = {
             "softThreshold": {},
             "startFromThreshold": {},
             "states": {
+              "closure_uid_659125373": {},
               "hover": {
                 "animation": {
+                  "closure_uid_659125373": {},
                   "duration": {}
                 },
                 "brightness": {},
+                "closure_uid_659125373": {},
                 "halo": {},
                 "lineWidthPlus": {},
-                "marker": {}
+                "marker": {
+                  "closure_uid_659125373": {}
+                }
               },
               "inactive": {
                 "animation": {
+                  "closure_uid_659125373": {},
                   "duration": {}
                 },
+                "closure_uid_659125373": {},
                 "opacity": {}
               },
               "normal": {
-                "animation": {}
+                "animation": {},
+                "closure_uid_659125373": {}
               },
               "select": {
                 "animation": {
+                  "closure_uid_659125373": {},
                   "duration": {}
                 },
                 "borderColor": {},
+                "closure_uid_659125373": {},
                 "color": {}
               }
             },
@@ -14090,14 +14246,22 @@ var Highcharts = {
             "animation": {
               "duration": {}
             },
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "crisp": {},
             "cropThreshold": {},
             "dataLabels": {
               "align": {},
-              "formatter": function () {},
+              "animation": {
+                "closure_uid_659125373": {}
+              },
+              "closure_uid_659125373": {},
+              "defer": {},
+              "formatter": {
+                "closure_uid_659125373": {}
+              },
               "padding": {},
               "style": {
+                "closure_uid_659125373": {},
                 "color": {},
                 "fontSize": {},
                 "fontWeight": {},
@@ -14111,27 +14275,29 @@ var Highcharts = {
             "findNearestPointBy": {},
             "lineWidth": {},
             "marker": {
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "enabledThreshold": {},
               "lineColor": {},
               "lineWidth": {},
               "radius": {},
               "states": {
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "hover": {
                   "animation": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "duration": {}
                   },
-                  "closure_uid_347133726": {},
+                  "closure_uid_659125373": {},
                   "enabled": {},
                   "lineWidthPlus": {},
                   "radiusPlus": {}
                 },
                 "normal": {
-                  "animation": {}
+                  "animation": {},
+                  "closure_uid_659125373": {}
                 },
                 "select": {
+                  "closure_uid_659125373": {},
                   "fillColor": {},
                   "lineColor": {},
                   "lineWidth": {}
@@ -14140,36 +14306,50 @@ var Highcharts = {
             },
             "opacity": {},
             "point": {
-              "events": {}
+              "closure_uid_659125373": {},
+              "events": {
+                "closure_uid_659125373": {}
+              }
             },
             "pointRange": {},
             "showCheckbox": {},
             "softThreshold": {},
             "states": {
+              "closure_uid_659125373": {},
               "hover": {
                 "animation": {
+                  "closure_uid_659125373": {},
                   "duration": {}
                 },
+                "closure_uid_659125373": {},
                 "halo": {
+                  "closure_uid_659125373": {},
                   "opacity": {},
                   "size": {}
                 },
                 "lineWidthPlus": {},
-                "marker": {}
+                "marker": {
+                  "closure_uid_659125373": {}
+                }
               },
               "inactive": {
                 "animation": {
+                  "closure_uid_659125373": {},
                   "duration": {}
                 },
+                "closure_uid_659125373": {},
                 "opacity": {}
               },
               "normal": {
-                "animation": {}
+                "animation": {},
+                "closure_uid_659125373": {}
               },
               "select": {
                 "animation": {
+                  "closure_uid_659125373": {},
                   "duration": {}
-                }
+                },
+                "closure_uid_659125373": {}
               }
             },
             "stickyTracking": {},
@@ -14184,21 +14364,30 @@ var Highcharts = {
             "borderWidth": {},
             "center": {},
             "clip": {},
+            "closure_uid_659125373": {},
             "colorByPoint": {},
             "crisp": {},
             "cropThreshold": {},
             "dataLabels": {
               "align": {},
               "allowOverlap": {},
+              "animation": {
+                "closure_uid_659125373": {}
+              },
+              "closure_uid_659125373": {},
               "connectorPadding": {},
               "connectorShape": {},
               "crookDistance": {},
+              "defer": {},
               "distance": {},
               "enabled": {},
-              "formatter": function () {},
+              "formatter": {
+                "closure_uid_659125373": {}
+              },
               "padding": {},
               "softConnector": {},
               "style": {
+                "closure_uid_659125373": {},
                 "color": {},
                 "fontSize": {},
                 "fontWeight": {},
@@ -14218,7 +14407,10 @@ var Highcharts = {
             "marker": {},
             "opacity": {},
             "point": {
-              "events": {}
+              "closure_uid_659125373": {},
+              "events": {
+                "closure_uid_659125373": {}
+              }
             },
             "pointRange": {},
             "showCheckbox": {},
@@ -14227,31 +14419,42 @@ var Highcharts = {
             "slicedOffset": {},
             "softThreshold": {},
             "states": {
+              "closure_uid_659125373": {},
               "hover": {
                 "animation": {
+                  "closure_uid_659125373": {},
                   "duration": {}
                 },
                 "brightness": {},
+                "closure_uid_659125373": {},
                 "halo": {
+                  "closure_uid_659125373": {},
                   "opacity": {},
                   "size": {}
                 },
                 "lineWidthPlus": {},
-                "marker": {}
+                "marker": {
+                  "closure_uid_659125373": {}
+                }
               },
               "inactive": {
                 "animation": {
+                  "closure_uid_659125373": {},
                   "duration": {}
                 },
+                "closure_uid_659125373": {},
                 "opacity": {}
               },
               "normal": {
-                "animation": {}
+                "animation": {},
+                "closure_uid_659125373": {}
               },
               "select": {
                 "animation": {
+                  "closure_uid_659125373": {},
                   "duration": {}
-                }
+                },
+                "closure_uid_659125373": {}
               }
             },
             "stickyTracking": {},
@@ -14265,14 +14468,22 @@ var Highcharts = {
             "animation": {
               "duration": {}
             },
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "crisp": {},
             "cropThreshold": {},
             "dataLabels": {
               "align": {},
-              "formatter": function () {},
+              "animation": {
+                "closure_uid_659125373": {}
+              },
+              "closure_uid_659125373": {},
+              "defer": {},
+              "formatter": {
+                "closure_uid_659125373": {}
+              },
               "padding": {},
               "style": {
+                "closure_uid_659125373": {},
                 "color": {},
                 "fontSize": {},
                 "fontWeight": {},
@@ -14290,28 +14501,30 @@ var Highcharts = {
             },
             "lineWidth": {},
             "marker": {
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "enabled": {},
               "enabledThreshold": {},
               "lineColor": {},
               "lineWidth": {},
               "radius": {},
               "states": {
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "hover": {
                   "animation": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "duration": {}
                   },
-                  "closure_uid_347133726": {},
+                  "closure_uid_659125373": {},
                   "enabled": {},
                   "lineWidthPlus": {},
                   "radiusPlus": {}
                 },
                 "normal": {
-                  "animation": {}
+                  "animation": {},
+                  "closure_uid_659125373": {}
                 },
                 "select": {
+                  "closure_uid_659125373": {},
                   "fillColor": {},
                   "lineColor": {},
                   "lineWidth": {}
@@ -14320,36 +14533,50 @@ var Highcharts = {
             },
             "opacity": {},
             "point": {
-              "events": {}
+              "closure_uid_659125373": {},
+              "events": {
+                "closure_uid_659125373": {}
+              }
             },
             "pointRange": {},
             "showCheckbox": {},
             "softThreshold": {},
             "states": {
+              "closure_uid_659125373": {},
               "hover": {
                 "animation": {
+                  "closure_uid_659125373": {},
                   "duration": {}
                 },
+                "closure_uid_659125373": {},
                 "halo": {
+                  "closure_uid_659125373": {},
                   "opacity": {},
                   "size": {}
                 },
                 "lineWidthPlus": {},
-                "marker": {}
+                "marker": {
+                  "closure_uid_659125373": {}
+                }
               },
               "inactive": {
                 "animation": {
+                  "closure_uid_659125373": {},
                   "duration": {}
                 },
+                "closure_uid_659125373": {},
                 "opacity": {}
               },
               "normal": {
-                "animation": {}
+                "animation": {},
+                "closure_uid_659125373": {}
               },
               "select": {
                 "animation": {
+                  "closure_uid_659125373": {},
                   "duration": {}
-                }
+                },
+                "closure_uid_659125373": {}
               }
             },
             "stickyTracking": {},
@@ -14364,14 +14591,22 @@ var Highcharts = {
             "animation": {
               "duration": {}
             },
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "crisp": {},
             "cropThreshold": {},
             "dataLabels": {
               "align": {},
-              "formatter": function () {},
+              "animation": {
+                "closure_uid_659125373": {}
+              },
+              "closure_uid_659125373": {},
+              "defer": {},
+              "formatter": {
+                "closure_uid_659125373": {}
+              },
               "padding": {},
               "style": {
+                "closure_uid_659125373": {},
                 "color": {},
                 "fontSize": {},
                 "fontWeight": {},
@@ -14385,27 +14620,29 @@ var Highcharts = {
             "findNearestPointBy": {},
             "lineWidth": {},
             "marker": {
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "enabledThreshold": {},
               "lineColor": {},
               "lineWidth": {},
               "radius": {},
               "states": {
-                "closure_uid_347133726": {},
+                "closure_uid_659125373": {},
                 "hover": {
                   "animation": {
-                    "closure_uid_347133726": {},
+                    "closure_uid_659125373": {},
                     "duration": {}
                   },
-                  "closure_uid_347133726": {},
+                  "closure_uid_659125373": {},
                   "enabled": {},
                   "lineWidthPlus": {},
                   "radiusPlus": {}
                 },
                 "normal": {
-                  "animation": {}
+                  "animation": {},
+                  "closure_uid_659125373": {}
                 },
                 "select": {
+                  "closure_uid_659125373": {},
                   "fillColor": {},
                   "lineColor": {},
                   "lineWidth": {}
@@ -14414,36 +14651,50 @@ var Highcharts = {
             },
             "opacity": {},
             "point": {
-              "events": {}
+              "closure_uid_659125373": {},
+              "events": {
+                "closure_uid_659125373": {}
+              }
             },
             "pointRange": {},
             "showCheckbox": {},
             "softThreshold": {},
             "states": {
+              "closure_uid_659125373": {},
               "hover": {
                 "animation": {
+                  "closure_uid_659125373": {},
                   "duration": {}
                 },
+                "closure_uid_659125373": {},
                 "halo": {
+                  "closure_uid_659125373": {},
                   "opacity": {},
                   "size": {}
                 },
                 "lineWidthPlus": {},
-                "marker": {}
+                "marker": {
+                  "closure_uid_659125373": {}
+                }
               },
               "inactive": {
                 "animation": {
+                  "closure_uid_659125373": {},
                   "duration": {}
                 },
+                "closure_uid_659125373": {},
                 "opacity": {}
               },
               "normal": {
-                "animation": {}
+                "animation": {},
+                "closure_uid_659125373": {}
               },
               "select": {
                 "animation": {
+                  "closure_uid_659125373": {},
                   "duration": {}
-                }
+                },
+                "closure_uid_659125373": {}
               }
             },
             "stickyTracking": {},
@@ -14499,699 +14750,6 @@ var Highcharts = {
           }
         }
       },
-      "defaultPlotOptions": {
-        "area": {
-          "allowPointSelect": {},
-          "animation": {
-            "duration": {}
-          },
-          "closure_uid_347133726": {},
-          "crisp": {},
-          "cropThreshold": {},
-          "dataLabels": {
-            "align": {},
-            "formatter": function () {},
-            "padding": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            },
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "events": {},
-          "findNearestPointBy": {},
-          "lineWidth": {},
-          "marker": {
-            "closure_uid_347133726": {},
-            "enabledThreshold": {},
-            "lineColor": {},
-            "lineWidth": {},
-            "radius": {},
-            "states": {
-              "closure_uid_347133726": {},
-              "hover": {
-                "animation": {
-                  "closure_uid_347133726": {},
-                  "duration": {}
-                },
-                "closure_uid_347133726": {},
-                "enabled": {},
-                "lineWidthPlus": {},
-                "radiusPlus": {}
-              },
-              "normal": {
-                "animation": {}
-              },
-              "select": {
-                "fillColor": {},
-                "lineColor": {},
-                "lineWidth": {}
-              }
-            }
-          },
-          "opacity": {},
-          "point": {
-            "events": {}
-          },
-          "pointRange": {},
-          "showCheckbox": {},
-          "softThreshold": {},
-          "states": {
-            "hover": {
-              "animation": {
-                "duration": {}
-              },
-              "halo": {
-                "opacity": {},
-                "size": {}
-              },
-              "lineWidthPlus": {},
-              "marker": {}
-            },
-            "inactive": {
-              "animation": {
-                "duration": {}
-              },
-              "opacity": {}
-            },
-            "normal": {
-              "animation": {}
-            },
-            "select": {
-              "animation": {
-                "duration": {}
-              }
-            }
-          },
-          "stickyTracking": {},
-          "threshold": {},
-          "turboThreshold": {}
-        },
-        "areaspline": {
-          "allowPointSelect": {},
-          "animation": {
-            "duration": {}
-          },
-          "closure_uid_347133726": {},
-          "crisp": {},
-          "cropThreshold": {},
-          "dataLabels": {
-            "align": {},
-            "formatter": function () {},
-            "padding": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            },
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "events": {},
-          "findNearestPointBy": {},
-          "lineWidth": {},
-          "marker": {
-            "closure_uid_347133726": {},
-            "enabledThreshold": {},
-            "lineColor": {},
-            "lineWidth": {},
-            "radius": {},
-            "states": {
-              "closure_uid_347133726": {},
-              "hover": {
-                "animation": {
-                  "closure_uid_347133726": {},
-                  "duration": {}
-                },
-                "closure_uid_347133726": {},
-                "enabled": {},
-                "lineWidthPlus": {},
-                "radiusPlus": {}
-              },
-              "normal": {
-                "animation": {}
-              },
-              "select": {
-                "fillColor": {},
-                "lineColor": {},
-                "lineWidth": {}
-              }
-            }
-          },
-          "opacity": {},
-          "point": {
-            "events": {}
-          },
-          "pointRange": {},
-          "showCheckbox": {},
-          "softThreshold": {},
-          "states": {
-            "hover": {
-              "animation": {
-                "duration": {}
-              },
-              "halo": {
-                "opacity": {},
-                "size": {}
-              },
-              "lineWidthPlus": {},
-              "marker": {}
-            },
-            "inactive": {
-              "animation": {
-                "duration": {}
-              },
-              "opacity": {}
-            },
-            "normal": {
-              "animation": {}
-            },
-            "select": {
-              "animation": {
-                "duration": {}
-              }
-            }
-          },
-          "stickyTracking": {},
-          "threshold": {},
-          "turboThreshold": {}
-        },
-        "bar": {
-          "allowPointSelect": {},
-          "animation": {
-            "duration": {}
-          },
-          "borderColor": {},
-          "borderRadius": {},
-          "crisp": {},
-          "cropThreshold": {},
-          "dataLabels": {
-            "align": {},
-            "formatter": function () {},
-            "padding": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            },
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "events": {},
-          "findNearestPointBy": {},
-          "groupPadding": {},
-          "lineWidth": {},
-          "marker": {},
-          "minPointLength": {},
-          "opacity": {},
-          "point": {
-            "events": {}
-          },
-          "pointPadding": {},
-          "pointRange": {},
-          "showCheckbox": {},
-          "softThreshold": {},
-          "startFromThreshold": {},
-          "states": {
-            "hover": {
-              "animation": {
-                "duration": {}
-              },
-              "brightness": {},
-              "halo": {},
-              "lineWidthPlus": {},
-              "marker": {}
-            },
-            "inactive": {
-              "animation": {
-                "duration": {}
-              },
-              "opacity": {}
-            },
-            "normal": {
-              "animation": {}
-            },
-            "select": {
-              "animation": {
-                "duration": {}
-              },
-              "borderColor": {},
-              "color": {}
-            }
-          },
-          "stickyTracking": {},
-          "threshold": {},
-          "tooltip": {
-            "distance": {}
-          },
-          "turboThreshold": {}
-        },
-        "closure_uid_347133726": {},
-        "column": {
-          "allowPointSelect": {},
-          "animation": {
-            "duration": {}
-          },
-          "borderColor": {},
-          "borderRadius": {},
-          "crisp": {},
-          "cropThreshold": {},
-          "dataLabels": {
-            "align": {},
-            "formatter": function () {},
-            "padding": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            },
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "events": {},
-          "findNearestPointBy": {},
-          "groupPadding": {},
-          "lineWidth": {},
-          "marker": {},
-          "minPointLength": {},
-          "opacity": {},
-          "point": {
-            "events": {}
-          },
-          "pointPadding": {},
-          "pointRange": {},
-          "showCheckbox": {},
-          "softThreshold": {},
-          "startFromThreshold": {},
-          "states": {
-            "hover": {
-              "animation": {
-                "duration": {}
-              },
-              "brightness": {},
-              "halo": {},
-              "lineWidthPlus": {},
-              "marker": {}
-            },
-            "inactive": {
-              "animation": {
-                "duration": {}
-              },
-              "opacity": {}
-            },
-            "normal": {
-              "animation": {}
-            },
-            "select": {
-              "animation": {
-                "duration": {}
-              },
-              "borderColor": {},
-              "color": {}
-            }
-          },
-          "stickyTracking": {},
-          "threshold": {},
-          "tooltip": {
-            "distance": {}
-          },
-          "turboThreshold": {}
-        },
-        "line": {
-          "allowPointSelect": {},
-          "animation": {
-            "duration": {}
-          },
-          "closure_uid_347133726": {},
-          "crisp": {},
-          "cropThreshold": {},
-          "dataLabels": {
-            "align": {},
-            "formatter": function () {},
-            "padding": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            },
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "events": {},
-          "findNearestPointBy": {},
-          "lineWidth": {},
-          "marker": {
-            "closure_uid_347133726": {},
-            "enabledThreshold": {},
-            "lineColor": {},
-            "lineWidth": {},
-            "radius": {},
-            "states": {
-              "closure_uid_347133726": {},
-              "hover": {
-                "animation": {
-                  "closure_uid_347133726": {},
-                  "duration": {}
-                },
-                "closure_uid_347133726": {},
-                "enabled": {},
-                "lineWidthPlus": {},
-                "radiusPlus": {}
-              },
-              "normal": {
-                "animation": {}
-              },
-              "select": {
-                "fillColor": {},
-                "lineColor": {},
-                "lineWidth": {}
-              }
-            }
-          },
-          "opacity": {},
-          "point": {
-            "events": {}
-          },
-          "pointRange": {},
-          "showCheckbox": {},
-          "softThreshold": {},
-          "states": {
-            "hover": {
-              "animation": {
-                "duration": {}
-              },
-              "halo": {
-                "opacity": {},
-                "size": {}
-              },
-              "lineWidthPlus": {},
-              "marker": {}
-            },
-            "inactive": {
-              "animation": {
-                "duration": {}
-              },
-              "opacity": {}
-            },
-            "normal": {
-              "animation": {}
-            },
-            "select": {
-              "animation": {
-                "duration": {}
-              }
-            }
-          },
-          "stickyTracking": {},
-          "turboThreshold": {}
-        },
-        "pie": {
-          "allowPointSelect": {},
-          "animation": {
-            "duration": {}
-          },
-          "borderColor": {},
-          "borderWidth": {},
-          "center": {},
-          "clip": {},
-          "colorByPoint": {},
-          "crisp": {},
-          "cropThreshold": {},
-          "dataLabels": {
-            "align": {},
-            "allowOverlap": {},
-            "connectorPadding": {},
-            "connectorShape": {},
-            "crookDistance": {},
-            "distance": {},
-            "enabled": {},
-            "formatter": function () {},
-            "padding": {},
-            "softConnector": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            },
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "events": {},
-          "fillColor": {},
-          "findNearestPointBy": {},
-          "ignoreHiddenPoint": {},
-          "inactiveOtherPoints": {},
-          "legendType": {},
-          "lineWidth": {},
-          "marker": {},
-          "opacity": {},
-          "point": {
-            "events": {}
-          },
-          "pointRange": {},
-          "showCheckbox": {},
-          "showInLegend": {},
-          "size": {},
-          "slicedOffset": {},
-          "softThreshold": {},
-          "states": {
-            "hover": {
-              "animation": {
-                "duration": {}
-              },
-              "brightness": {},
-              "halo": {
-                "opacity": {},
-                "size": {}
-              },
-              "lineWidthPlus": {},
-              "marker": {}
-            },
-            "inactive": {
-              "animation": {
-                "duration": {}
-              },
-              "opacity": {}
-            },
-            "normal": {
-              "animation": {}
-            },
-            "select": {
-              "animation": {
-                "duration": {}
-              }
-            }
-          },
-          "stickyTracking": {},
-          "tooltip": {
-            "followPointer": {}
-          },
-          "turboThreshold": {}
-        },
-        "scatter": {
-          "allowPointSelect": {},
-          "animation": {
-            "duration": {}
-          },
-          "closure_uid_347133726": {},
-          "crisp": {},
-          "cropThreshold": {},
-          "dataLabels": {
-            "align": {},
-            "formatter": function () {},
-            "padding": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            },
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "events": {},
-          "findNearestPointBy": {},
-          "jitter": {
-            "x": {},
-            "y": {}
-          },
-          "lineWidth": {},
-          "marker": {
-            "closure_uid_347133726": {},
-            "enabled": {},
-            "enabledThreshold": {},
-            "lineColor": {},
-            "lineWidth": {},
-            "radius": {},
-            "states": {
-              "closure_uid_347133726": {},
-              "hover": {
-                "animation": {
-                  "closure_uid_347133726": {},
-                  "duration": {}
-                },
-                "closure_uid_347133726": {},
-                "enabled": {},
-                "lineWidthPlus": {},
-                "radiusPlus": {}
-              },
-              "normal": {
-                "animation": {}
-              },
-              "select": {
-                "fillColor": {},
-                "lineColor": {},
-                "lineWidth": {}
-              }
-            }
-          },
-          "opacity": {},
-          "point": {
-            "events": {}
-          },
-          "pointRange": {},
-          "showCheckbox": {},
-          "softThreshold": {},
-          "states": {
-            "hover": {
-              "animation": {
-                "duration": {}
-              },
-              "halo": {
-                "opacity": {},
-                "size": {}
-              },
-              "lineWidthPlus": {},
-              "marker": {}
-            },
-            "inactive": {
-              "animation": {
-                "duration": {}
-              },
-              "opacity": {}
-            },
-            "normal": {
-              "animation": {}
-            },
-            "select": {
-              "animation": {
-                "duration": {}
-              }
-            }
-          },
-          "stickyTracking": {},
-          "tooltip": {
-            "headerFormat": {},
-            "pointFormat": {}
-          },
-          "turboThreshold": {}
-        },
-        "spline": {
-          "allowPointSelect": {},
-          "animation": {
-            "duration": {}
-          },
-          "closure_uid_347133726": {},
-          "crisp": {},
-          "cropThreshold": {},
-          "dataLabels": {
-            "align": {},
-            "formatter": function () {},
-            "padding": {},
-            "style": {
-              "color": {},
-              "fontSize": {},
-              "fontWeight": {},
-              "textOutline": {}
-            },
-            "verticalAlign": {},
-            "x": {},
-            "y": {}
-          },
-          "events": {},
-          "findNearestPointBy": {},
-          "lineWidth": {},
-          "marker": {
-            "closure_uid_347133726": {},
-            "enabledThreshold": {},
-            "lineColor": {},
-            "lineWidth": {},
-            "radius": {},
-            "states": {
-              "closure_uid_347133726": {},
-              "hover": {
-                "animation": {
-                  "closure_uid_347133726": {},
-                  "duration": {}
-                },
-                "closure_uid_347133726": {},
-                "enabled": {},
-                "lineWidthPlus": {},
-                "radiusPlus": {}
-              },
-              "normal": {
-                "animation": {}
-              },
-              "select": {
-                "fillColor": {},
-                "lineColor": {},
-                "lineWidth": {}
-              }
-            }
-          },
-          "opacity": {},
-          "point": {
-            "events": {}
-          },
-          "pointRange": {},
-          "showCheckbox": {},
-          "softThreshold": {},
-          "states": {
-            "hover": {
-              "animation": {
-                "duration": {}
-              },
-              "halo": {
-                "opacity": {},
-                "size": {}
-              },
-              "lineWidthPlus": {},
-              "marker": {}
-            },
-            "inactive": {
-              "animation": {
-                "duration": {}
-              },
-              "opacity": {}
-            },
-            "normal": {
-              "animation": {}
-            },
-            "select": {
-              "animation": {
-                "duration": {}
-              }
-            }
-          },
-          "stickyTracking": {},
-          "turboThreshold": {}
-        }
-      },
       "defined": function () {},
       "deg2rad": {},
       "destroyObjectProperties": function () {},
@@ -15200,12 +14758,15 @@ var Highcharts = {
       "doc": {},
       "each": function () {},
       "erase": function () {},
-      "error": function () {},
+      "error": {
+        "messages": {}
+      },
       "extend": function () {},
       "extendClass": function () {},
       "find": function () {},
       "fireEvent": function () {},
       "format": function () {},
+      "getDeferredAnimation": function () {},
       "getMagnitude": function () {},
       "getOptions": function () {},
       "getStyle": function () {},
@@ -15296,6 +14857,7 @@ var Highcharts = {
       },
       "timers": {},
       "uniqueKey": function () {},
+      "useSerialIds": function () {},
       "version": {},
       "win": {},
       "wrap": function () {}
@@ -15524,6 +15086,9 @@ var Highcharts = {
       },
       "product": {},
       "productSub": {},
+      "scheduling": {
+        "isInputPending": function () {}
+      },
       "sendBeacon": function () {},
       "userActivation": {
         "hasBeenActive": {},
@@ -15544,9 +15109,10 @@ var Highcharts = {
     },
     "close": function () {},
     "closed": {},
-    "closure_uid_347133726": {},
+    "closure_uid_659125373": {},
     "confirm": function () {},
     "createImageBitmap": function () {},
+    "crossOriginIsolated": {},
     "crypto": {
       "getRandomValues": function () {}
     },
@@ -15608,7 +15174,6 @@ var Highcharts = {
         "length": {}
       },
       "assign": function () {},
-      "fragmentDirective": {},
       "hash": {},
       "host": {},
       "hostname": {},
@@ -15823,6 +15388,9 @@ var Highcharts = {
       },
       "product": {},
       "productSub": {},
+      "scheduling": {
+        "isInputPending": function () {}
+      },
       "sendBeacon": function () {},
       "userActivation": {
         "hasBeenActive": {},
@@ -15932,7 +15500,10 @@ var Highcharts = {
     "onsuspend": {},
     "ontimeupdate": {},
     "ontoggle": {},
+    "ontransitioncancel": {},
     "ontransitionend": {},
+    "ontransitionrun": {},
+    "ontransitionstart": {},
     "onunhandledrejection": {},
     "onunload": {},
     "onvolumechange": {},
@@ -15951,6 +15522,7 @@ var Highcharts = {
     "pageXOffset": {},
     "pageYOffset": {},
     "parent": {
+      "0": {},
       "PERSISTENT": {},
       "React": {
         "Children": {
@@ -16458,7 +16030,7 @@ var Highcharts = {
         "appCodeName": {},
         "appName": {},
         "appVersion": {},
-        "closure_uid_347133726": {},
+        "closure_uid_659125373": {},
         "connection": {
           "addEventListener": function () {},
           "dispatchEvent": function () {},
@@ -16494,7 +16066,7 @@ var Highcharts = {
         },
         "mimeTypes": {
           "0": {
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "enabledPlugin": {
               "0": {
@@ -16503,23 +16075,23 @@ var Highcharts = {
                 "suffixes": {},
                 "type": {}
               },
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "description": {},
               "filename": {},
               "item": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               },
               "length": {},
               "name": {},
               "namedItem": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               }
             },
             "suffixes": {},
             "type": {}
           },
           "1": {
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "enabledPlugin": {
               "0": {
@@ -16528,23 +16100,23 @@ var Highcharts = {
                 "suffixes": {},
                 "type": {}
               },
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "description": {},
               "filename": {},
               "item": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               },
               "length": {},
               "name": {},
               "namedItem": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               }
             },
             "suffixes": {},
             "type": {}
           },
           "2": {
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "enabledPlugin": {
               "0": {
@@ -16559,23 +16131,23 @@ var Highcharts = {
                 "suffixes": {},
                 "type": {}
               },
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "description": {},
               "filename": {},
               "item": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               },
               "length": {},
               "name": {},
               "namedItem": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               }
             },
             "suffixes": {},
             "type": {}
           },
           "3": {
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "enabledPlugin": {
               "0": {
@@ -16590,22 +16162,22 @@ var Highcharts = {
                 "suffixes": {},
                 "type": {}
               },
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "description": {},
               "filename": {},
               "item": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               },
               "length": {},
               "name": {},
               "namedItem": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               }
             },
             "suffixes": {},
             "type": {}
           },
-          "closure_uid_347133726": {},
+          "closure_uid_659125373": {},
           "item": function () {},
           "length": {},
           "namedItem": function () {}
@@ -16623,16 +16195,16 @@ var Highcharts = {
               "suffixes": {},
               "type": {}
             },
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "filename": {},
             "item": {
-              "closure_uid_347133726": {}
+              "closure_uid_659125373": {}
             },
             "length": {},
             "name": {},
             "namedItem": {
-              "closure_uid_347133726": {}
+              "closure_uid_659125373": {}
             }
           },
           "1": {
@@ -16642,16 +16214,16 @@ var Highcharts = {
               "suffixes": {},
               "type": {}
             },
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "filename": {},
             "item": {
-              "closure_uid_347133726": {}
+              "closure_uid_659125373": {}
             },
             "length": {},
             "name": {},
             "namedItem": {
-              "closure_uid_347133726": {}
+              "closure_uid_659125373": {}
             }
           },
           "2": {
@@ -16667,16 +16239,16 @@ var Highcharts = {
               "suffixes": {},
               "type": {}
             },
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "filename": {},
             "item": {
-              "closure_uid_347133726": {}
+              "closure_uid_659125373": {}
             },
             "length": {},
             "name": {},
             "namedItem": {
-              "closure_uid_347133726": {}
+              "closure_uid_659125373": {}
             }
           },
           "item": function () {},
@@ -16686,6 +16258,9 @@ var Highcharts = {
         },
         "product": {},
         "productSub": {},
+        "scheduling": {
+          "isInputPending": function () {}
+        },
         "sendBeacon": function () {},
         "userActivation": {
           "hasBeenActive": {},
@@ -16706,10 +16281,11 @@ var Highcharts = {
       },
       "close": function () {},
       "closed": {},
-      "closure_uid_347133726": {},
+      "closure_uid_659125373": {},
       "confirm": function () {},
       "createImageBitmap": function () {},
       "createReactClass": function () {},
+      "crossOriginIsolated": {},
       "crypto": {
         "getRandomValues": function () {}
       },
@@ -16779,7 +16355,6 @@ var Highcharts = {
           "length": {}
         },
         "assign": function () {},
-        "fragmentDirective": {},
         "hash": {},
         "host": {},
         "hostname": {},
@@ -16807,7 +16382,7 @@ var Highcharts = {
         "appCodeName": {},
         "appName": {},
         "appVersion": {},
-        "closure_uid_347133726": {},
+        "closure_uid_659125373": {},
         "connection": {
           "addEventListener": function () {},
           "dispatchEvent": function () {},
@@ -16843,7 +16418,7 @@ var Highcharts = {
         },
         "mimeTypes": {
           "0": {
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "enabledPlugin": {
               "0": {
@@ -16852,23 +16427,23 @@ var Highcharts = {
                 "suffixes": {},
                 "type": {}
               },
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "description": {},
               "filename": {},
               "item": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               },
               "length": {},
               "name": {},
               "namedItem": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               }
             },
             "suffixes": {},
             "type": {}
           },
           "1": {
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "enabledPlugin": {
               "0": {
@@ -16877,23 +16452,23 @@ var Highcharts = {
                 "suffixes": {},
                 "type": {}
               },
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "description": {},
               "filename": {},
               "item": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               },
               "length": {},
               "name": {},
               "namedItem": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               }
             },
             "suffixes": {},
             "type": {}
           },
           "2": {
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "enabledPlugin": {
               "0": {
@@ -16908,23 +16483,23 @@ var Highcharts = {
                 "suffixes": {},
                 "type": {}
               },
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "description": {},
               "filename": {},
               "item": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               },
               "length": {},
               "name": {},
               "namedItem": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               }
             },
             "suffixes": {},
             "type": {}
           },
           "3": {
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "enabledPlugin": {
               "0": {
@@ -16939,22 +16514,22 @@ var Highcharts = {
                 "suffixes": {},
                 "type": {}
               },
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "description": {},
               "filename": {},
               "item": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               },
               "length": {},
               "name": {},
               "namedItem": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               }
             },
             "suffixes": {},
             "type": {}
           },
-          "closure_uid_347133726": {},
+          "closure_uid_659125373": {},
           "item": function () {},
           "length": {},
           "namedItem": function () {}
@@ -16972,16 +16547,16 @@ var Highcharts = {
               "suffixes": {},
               "type": {}
             },
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "filename": {},
             "item": {
-              "closure_uid_347133726": {}
+              "closure_uid_659125373": {}
             },
             "length": {},
             "name": {},
             "namedItem": {
-              "closure_uid_347133726": {}
+              "closure_uid_659125373": {}
             }
           },
           "1": {
@@ -16991,16 +16566,16 @@ var Highcharts = {
               "suffixes": {},
               "type": {}
             },
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "filename": {},
             "item": {
-              "closure_uid_347133726": {}
+              "closure_uid_659125373": {}
             },
             "length": {},
             "name": {},
             "namedItem": {
-              "closure_uid_347133726": {}
+              "closure_uid_659125373": {}
             }
           },
           "2": {
@@ -17016,16 +16591,16 @@ var Highcharts = {
               "suffixes": {},
               "type": {}
             },
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "filename": {},
             "item": {
-              "closure_uid_347133726": {}
+              "closure_uid_659125373": {}
             },
             "length": {},
             "name": {},
             "namedItem": {
-              "closure_uid_347133726": {}
+              "closure_uid_659125373": {}
             }
           },
           "item": function () {},
@@ -17035,6 +16610,9 @@ var Highcharts = {
         },
         "product": {},
         "productSub": {},
+        "scheduling": {
+          "isInputPending": function () {}
+        },
         "sendBeacon": function () {},
         "userActivation": {
           "hasBeenActive": {},
@@ -17144,7 +16722,10 @@ var Highcharts = {
       "onsuspend": {},
       "ontimeupdate": {},
       "ontoggle": {},
+      "ontransitioncancel": {},
       "ontransitionend": {},
+      "ontransitionrun": {},
+      "ontransitionstart": {},
       "onunhandledrejection": {},
       "onunload": {},
       "onvolumechange": {},
@@ -17175,6 +16756,7 @@ var Highcharts = {
           "get": function () {},
           "has": function () {},
           "keys": function () {},
+          "size": {},
           "values": function () {}
         },
         "getEntries": function () {},
@@ -17316,8 +16898,10 @@ var Highcharts = {
       },
       "top": {},
       "trustedTypes": {
+        "addEventListener": function () {},
         "createPolicy": function () {},
         "defaultPolicy": {},
+        "dispatchEvent": function () {},
         "emptyHTML": {
           "toString": function () {}
         },
@@ -17329,7 +16913,8 @@ var Highcharts = {
         "getTypeMapping": function () {},
         "isHTML": function () {},
         "isScript": function () {},
-        "isScriptURL": function () {}
+        "isScriptURL": function () {},
+        "removeEventListener": function () {}
       },
       "visualViewport": {
         "addEventListener": function () {},
@@ -17369,6 +16954,7 @@ var Highcharts = {
         "get": function () {},
         "has": function () {},
         "keys": function () {},
+        "size": {},
         "values": function () {}
       },
       "getEntries": function () {},
@@ -17504,6 +17090,7 @@ var Highcharts = {
       "visible": {}
     },
     "top": {
+      "0": {},
       "PERSISTENT": {},
       "React": {
         "Children": {
@@ -18011,7 +17598,7 @@ var Highcharts = {
         "appCodeName": {},
         "appName": {},
         "appVersion": {},
-        "closure_uid_347133726": {},
+        "closure_uid_659125373": {},
         "connection": {
           "addEventListener": function () {},
           "dispatchEvent": function () {},
@@ -18047,7 +17634,7 @@ var Highcharts = {
         },
         "mimeTypes": {
           "0": {
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "enabledPlugin": {
               "0": {
@@ -18056,23 +17643,23 @@ var Highcharts = {
                 "suffixes": {},
                 "type": {}
               },
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "description": {},
               "filename": {},
               "item": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               },
               "length": {},
               "name": {},
               "namedItem": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               }
             },
             "suffixes": {},
             "type": {}
           },
           "1": {
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "enabledPlugin": {
               "0": {
@@ -18081,23 +17668,23 @@ var Highcharts = {
                 "suffixes": {},
                 "type": {}
               },
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "description": {},
               "filename": {},
               "item": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               },
               "length": {},
               "name": {},
               "namedItem": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               }
             },
             "suffixes": {},
             "type": {}
           },
           "2": {
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "enabledPlugin": {
               "0": {
@@ -18112,23 +17699,23 @@ var Highcharts = {
                 "suffixes": {},
                 "type": {}
               },
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "description": {},
               "filename": {},
               "item": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               },
               "length": {},
               "name": {},
               "namedItem": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               }
             },
             "suffixes": {},
             "type": {}
           },
           "3": {
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "enabledPlugin": {
               "0": {
@@ -18143,22 +17730,22 @@ var Highcharts = {
                 "suffixes": {},
                 "type": {}
               },
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "description": {},
               "filename": {},
               "item": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               },
               "length": {},
               "name": {},
               "namedItem": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               }
             },
             "suffixes": {},
             "type": {}
           },
-          "closure_uid_347133726": {},
+          "closure_uid_659125373": {},
           "item": function () {},
           "length": {},
           "namedItem": function () {}
@@ -18176,16 +17763,16 @@ var Highcharts = {
               "suffixes": {},
               "type": {}
             },
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "filename": {},
             "item": {
-              "closure_uid_347133726": {}
+              "closure_uid_659125373": {}
             },
             "length": {},
             "name": {},
             "namedItem": {
-              "closure_uid_347133726": {}
+              "closure_uid_659125373": {}
             }
           },
           "1": {
@@ -18195,16 +17782,16 @@ var Highcharts = {
               "suffixes": {},
               "type": {}
             },
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "filename": {},
             "item": {
-              "closure_uid_347133726": {}
+              "closure_uid_659125373": {}
             },
             "length": {},
             "name": {},
             "namedItem": {
-              "closure_uid_347133726": {}
+              "closure_uid_659125373": {}
             }
           },
           "2": {
@@ -18220,16 +17807,16 @@ var Highcharts = {
               "suffixes": {},
               "type": {}
             },
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "filename": {},
             "item": {
-              "closure_uid_347133726": {}
+              "closure_uid_659125373": {}
             },
             "length": {},
             "name": {},
             "namedItem": {
-              "closure_uid_347133726": {}
+              "closure_uid_659125373": {}
             }
           },
           "item": function () {},
@@ -18239,6 +17826,9 @@ var Highcharts = {
         },
         "product": {},
         "productSub": {},
+        "scheduling": {
+          "isInputPending": function () {}
+        },
         "sendBeacon": function () {},
         "userActivation": {
           "hasBeenActive": {},
@@ -18259,10 +17849,11 @@ var Highcharts = {
       },
       "close": function () {},
       "closed": {},
-      "closure_uid_347133726": {},
+      "closure_uid_659125373": {},
       "confirm": function () {},
       "createImageBitmap": function () {},
       "createReactClass": function () {},
+      "crossOriginIsolated": {},
       "crypto": {
         "getRandomValues": function () {}
       },
@@ -18332,7 +17923,6 @@ var Highcharts = {
           "length": {}
         },
         "assign": function () {},
-        "fragmentDirective": {},
         "hash": {},
         "host": {},
         "hostname": {},
@@ -18360,7 +17950,7 @@ var Highcharts = {
         "appCodeName": {},
         "appName": {},
         "appVersion": {},
-        "closure_uid_347133726": {},
+        "closure_uid_659125373": {},
         "connection": {
           "addEventListener": function () {},
           "dispatchEvent": function () {},
@@ -18396,7 +17986,7 @@ var Highcharts = {
         },
         "mimeTypes": {
           "0": {
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "enabledPlugin": {
               "0": {
@@ -18405,23 +17995,23 @@ var Highcharts = {
                 "suffixes": {},
                 "type": {}
               },
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "description": {},
               "filename": {},
               "item": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               },
               "length": {},
               "name": {},
               "namedItem": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               }
             },
             "suffixes": {},
             "type": {}
           },
           "1": {
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "enabledPlugin": {
               "0": {
@@ -18430,23 +18020,23 @@ var Highcharts = {
                 "suffixes": {},
                 "type": {}
               },
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "description": {},
               "filename": {},
               "item": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               },
               "length": {},
               "name": {},
               "namedItem": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               }
             },
             "suffixes": {},
             "type": {}
           },
           "2": {
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "enabledPlugin": {
               "0": {
@@ -18461,23 +18051,23 @@ var Highcharts = {
                 "suffixes": {},
                 "type": {}
               },
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "description": {},
               "filename": {},
               "item": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               },
               "length": {},
               "name": {},
               "namedItem": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               }
             },
             "suffixes": {},
             "type": {}
           },
           "3": {
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "enabledPlugin": {
               "0": {
@@ -18492,22 +18082,22 @@ var Highcharts = {
                 "suffixes": {},
                 "type": {}
               },
-              "closure_uid_347133726": {},
+              "closure_uid_659125373": {},
               "description": {},
               "filename": {},
               "item": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               },
               "length": {},
               "name": {},
               "namedItem": {
-                "closure_uid_347133726": {}
+                "closure_uid_659125373": {}
               }
             },
             "suffixes": {},
             "type": {}
           },
-          "closure_uid_347133726": {},
+          "closure_uid_659125373": {},
           "item": function () {},
           "length": {},
           "namedItem": function () {}
@@ -18525,16 +18115,16 @@ var Highcharts = {
               "suffixes": {},
               "type": {}
             },
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "filename": {},
             "item": {
-              "closure_uid_347133726": {}
+              "closure_uid_659125373": {}
             },
             "length": {},
             "name": {},
             "namedItem": {
-              "closure_uid_347133726": {}
+              "closure_uid_659125373": {}
             }
           },
           "1": {
@@ -18544,16 +18134,16 @@ var Highcharts = {
               "suffixes": {},
               "type": {}
             },
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "filename": {},
             "item": {
-              "closure_uid_347133726": {}
+              "closure_uid_659125373": {}
             },
             "length": {},
             "name": {},
             "namedItem": {
-              "closure_uid_347133726": {}
+              "closure_uid_659125373": {}
             }
           },
           "2": {
@@ -18569,16 +18159,16 @@ var Highcharts = {
               "suffixes": {},
               "type": {}
             },
-            "closure_uid_347133726": {},
+            "closure_uid_659125373": {},
             "description": {},
             "filename": {},
             "item": {
-              "closure_uid_347133726": {}
+              "closure_uid_659125373": {}
             },
             "length": {},
             "name": {},
             "namedItem": {
-              "closure_uid_347133726": {}
+              "closure_uid_659125373": {}
             }
           },
           "item": function () {},
@@ -18588,6 +18178,9 @@ var Highcharts = {
         },
         "product": {},
         "productSub": {},
+        "scheduling": {
+          "isInputPending": function () {}
+        },
         "sendBeacon": function () {},
         "userActivation": {
           "hasBeenActive": {},
@@ -18697,7 +18290,10 @@ var Highcharts = {
       "onsuspend": {},
       "ontimeupdate": {},
       "ontoggle": {},
+      "ontransitioncancel": {},
       "ontransitionend": {},
+      "ontransitionrun": {},
+      "ontransitionstart": {},
       "onunhandledrejection": {},
       "onunload": {},
       "onvolumechange": {},
@@ -18728,6 +18324,7 @@ var Highcharts = {
           "get": function () {},
           "has": function () {},
           "keys": function () {},
+          "size": {},
           "values": function () {}
         },
         "getEntries": function () {},
@@ -18869,8 +18466,10 @@ var Highcharts = {
       },
       "top": {},
       "trustedTypes": {
+        "addEventListener": function () {},
         "createPolicy": function () {},
         "defaultPolicy": {},
+        "dispatchEvent": function () {},
         "emptyHTML": {
           "toString": function () {}
         },
@@ -18882,7 +18481,8 @@ var Highcharts = {
         "getTypeMapping": function () {},
         "isHTML": function () {},
         "isScript": function () {},
-        "isScriptURL": function () {}
+        "isScriptURL": function () {},
+        "removeEventListener": function () {}
       },
       "visualViewport": {
         "addEventListener": function () {},
@@ -18911,8 +18511,10 @@ var Highcharts = {
       "window": {}
     },
     "trustedTypes": {
+      "addEventListener": function () {},
       "createPolicy": function () {},
       "defaultPolicy": {},
+      "dispatchEvent": function () {},
       "emptyHTML": {
         "toString": function () {}
       },
@@ -18924,7 +18526,8 @@ var Highcharts = {
       "getTypeMapping": function () {},
       "isHTML": function () {},
       "isScript": function () {},
-      "isScriptURL": function () {}
+      "isScriptURL": function () {},
+      "removeEventListener": function () {}
     },
     "visualViewport": {
       "addEventListener": function () {},
@@ -19020,6 +18623,7 @@ Highcharts.Axis.prototype = {
   "unsquish": function () {},
   "update": function () {},
   "updateNames": function () {},
+  "validatePositiveValue": function () {},
   "zoom": function () {}
 };
 Highcharts.Chart.prototype = {
@@ -19182,6 +18786,7 @@ Highcharts.Pointer.prototype = {
   "normalize": function () {},
   "onContainerClick": function () {},
   "onContainerMouseDown": function () {},
+  "onContainerMouseEnter": function () {},
   "onContainerMouseLeave": function () {},
   "onContainerMouseMove": function () {},
   "onContainerTouchMove": function () {},
@@ -19361,7 +18966,6 @@ Highcharts.Series.prototype = {
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getClipBox": function () {},
@@ -19380,6 +18984,7 @@ Highcharts.Series.prototype = {
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -19415,6 +19020,7 @@ Highcharts.Series.prototype = {
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -19484,6 +19090,2992 @@ Highcharts.Tooltip.prototype = {
   "update": function () {},
   "updatePosition": function () {}
 };
+Highcharts._modules["Core/Animation/Fx.js"].prototype = {
+  "dSetter": function () {},
+  "fillSetter": function () {},
+  "initPath": function () {},
+  "run": function () {},
+  "step": function () {},
+  "strokeSetter": function () {},
+  "update": function () {}
+};
+Highcharts._modules["Core/Axis/Axis.js"].prototype = {
+  "addPlotBand": function () {},
+  "addPlotBandOrLine": function () {},
+  "addPlotLine": function () {},
+  "addTitle": function () {},
+  "adjustForMinRange": function () {},
+  "adjustTickAmount": function () {},
+  "alignToOthers": function () {},
+  "autoLabelAlign": function () {},
+  "defaultLabelFormatter": function () {},
+  "destroy": function () {},
+  "drawCrosshair": function () {},
+  "generateTick": function () {},
+  "getClosest": function () {},
+  "getExtremes": function () {},
+  "getKeepProps": function () {},
+  "getLinePath": function () {},
+  "getLinearTickPositions": function () {},
+  "getMinorTickInterval": function () {},
+  "getMinorTickPositions": function () {},
+  "getOffset": function () {},
+  "getPlotBandPath": function () {},
+  "getPlotLinePath": function () {},
+  "getSeriesExtremes": function () {},
+  "getSlotWidth": function () {},
+  "getThreshold": function () {},
+  "getTickAmount": function () {},
+  "getTimeTicks": function () {},
+  "getTitlePosition": function () {},
+  "hasData": function () {},
+  "hasVerticalPanning": function () {},
+  "hideCrosshair": function () {},
+  "init": function () {},
+  "labelMetrics": function () {},
+  "lin2log": function () {},
+  "log2lin": function () {},
+  "minFromRange": function () {},
+  "nameToX": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removePlotBand": function () {},
+  "removePlotBandOrLine": function () {},
+  "removePlotLine": function () {},
+  "render": function () {},
+  "renderLine": function () {},
+  "renderMinorTick": function () {},
+  "renderTick": function () {},
+  "renderUnsquish": function () {},
+  "setAxisSize": function () {},
+  "setAxisTranslation": function () {},
+  "setCategories": function () {},
+  "setExtremes": function () {},
+  "setOptions": function () {},
+  "setScale": function () {},
+  "setTickInterval": function () {},
+  "setTickPositions": function () {},
+  "setTitle": function () {},
+  "tickSize": function () {},
+  "toPixels": function () {},
+  "toValue": function () {},
+  "translate": function () {},
+  "trimTicks": function () {},
+  "unsquish": function () {},
+  "update": function () {},
+  "updateNames": function () {},
+  "validatePositiveValue": function () {},
+  "zoom": function () {}
+};
+Highcharts._modules["Core/Axis/DateTimeAxis.js"].AdditionsClass.prototype = {
+  "normalizeTimeTickInterval": function () {}
+};
+Highcharts._modules["Core/Axis/PlotLineOrBand.js"].prototype = {
+  "destroy": function () {},
+  "getLabelText": function () {},
+  "render": function () {},
+  "renderLabel": function () {}
+};
+Highcharts._modules["Core/Axis/Tick.js"].prototype = {
+  "addLabel": function () {},
+  "createLabel": function () {},
+  "destroy": function () {},
+  "getLabelPosition": function () {},
+  "getLabelSize": function () {},
+  "getMarkPath": function () {},
+  "getPosition": function () {},
+  "handleOverflow": function () {},
+  "moveLabel": function () {},
+  "render": function () {},
+  "renderGridLine": function () {},
+  "renderLabel": function () {},
+  "renderMark": function () {},
+  "replaceMovedLabel": function () {}
+};
+Highcharts._modules["Core/Chart/Chart.js"].prototype = {
+  "addAxis": function () {},
+  "addColorAxis": function () {},
+  "addCredits": function () {},
+  "addSeries": function () {},
+  "applyDescription": function () {},
+  "applyFixed": function () {},
+  "callbacks": function () {},
+  "collectionsWithInit": function () {},
+  "collectionsWithUpdate": function () {},
+  "createAxis": function () {},
+  "currentOptions": function () {},
+  "destroy": function () {},
+  "drawChartBox": function () {},
+  "firstRender": function () {},
+  "get": function () {},
+  "getArgs": function () {},
+  "getAxes": function () {},
+  "getAxisMargins": function () {},
+  "getChartSize": function () {},
+  "getContainer": function () {},
+  "getMargins": function () {},
+  "getSelectedPoints": function () {},
+  "getSelectedSeries": function () {},
+  "getSeriesOrderByLinks": function () {},
+  "getStacks": function () {},
+  "hideLoading": function () {},
+  "hideOverlappingLabels": function () {},
+  "init": function () {},
+  "initSeries": function () {},
+  "isInsidePlot": function () {},
+  "layOutTitles": function () {},
+  "linkSeries": function () {},
+  "matchResponsiveRule": function () {},
+  "moveFixedElements": function () {},
+  "onload": function () {},
+  "orderSeries": function () {},
+  "pan": function () {},
+  "propFromSeries": function () {},
+  "propsRequireDirtyBox": function () {},
+  "propsRequireReflow": function () {},
+  "propsRequireUpdateSeries": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "reflow": function () {},
+  "render": function () {},
+  "renderLabels": function () {},
+  "renderSeries": function () {},
+  "resetMargins": function () {},
+  "setCaption": function () {},
+  "setChartSize": function () {},
+  "setClassName": function () {},
+  "setReflow": function () {},
+  "setResponsive": function () {},
+  "setSeriesData": function () {},
+  "setSize": function () {},
+  "setSubtitle": function () {},
+  "setTitle": function () {},
+  "setUpScrolling": function () {},
+  "showLoading": function () {},
+  "showResetZoom": function () {},
+  "temporaryDisplay": function () {},
+  "update": function () {},
+  "updateContainerScaling": function () {},
+  "zoom": function () {},
+  "zoomOut": function () {}
+};
+Highcharts._modules["Core/Color/Color.js"].prototype = {
+  "brighten": function () {},
+  "get": function () {},
+  "init": function () {},
+  "setOpacity": function () {},
+  "tweenTo": function () {}
+};
+Highcharts._modules["Core/Globals.js"].Axis.prototype = {
+  "addPlotBand": function () {},
+  "addPlotBandOrLine": function () {},
+  "addPlotLine": function () {},
+  "addTitle": function () {},
+  "adjustForMinRange": function () {},
+  "adjustTickAmount": function () {},
+  "alignToOthers": function () {},
+  "autoLabelAlign": function () {},
+  "defaultLabelFormatter": function () {},
+  "destroy": function () {},
+  "drawCrosshair": function () {},
+  "generateTick": function () {},
+  "getClosest": function () {},
+  "getExtremes": function () {},
+  "getKeepProps": function () {},
+  "getLinePath": function () {},
+  "getLinearTickPositions": function () {},
+  "getMinorTickInterval": function () {},
+  "getMinorTickPositions": function () {},
+  "getOffset": function () {},
+  "getPlotBandPath": function () {},
+  "getPlotLinePath": function () {},
+  "getSeriesExtremes": function () {},
+  "getSlotWidth": function () {},
+  "getThreshold": function () {},
+  "getTickAmount": function () {},
+  "getTimeTicks": function () {},
+  "getTitlePosition": function () {},
+  "hasData": function () {},
+  "hasVerticalPanning": function () {},
+  "hideCrosshair": function () {},
+  "init": function () {},
+  "labelMetrics": function () {},
+  "lin2log": function () {},
+  "log2lin": function () {},
+  "minFromRange": function () {},
+  "nameToX": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removePlotBand": function () {},
+  "removePlotBandOrLine": function () {},
+  "removePlotLine": function () {},
+  "render": function () {},
+  "renderLine": function () {},
+  "renderMinorTick": function () {},
+  "renderTick": function () {},
+  "renderUnsquish": function () {},
+  "setAxisSize": function () {},
+  "setAxisTranslation": function () {},
+  "setCategories": function () {},
+  "setExtremes": function () {},
+  "setOptions": function () {},
+  "setScale": function () {},
+  "setTickInterval": function () {},
+  "setTickPositions": function () {},
+  "setTitle": function () {},
+  "tickSize": function () {},
+  "toPixels": function () {},
+  "toValue": function () {},
+  "translate": function () {},
+  "trimTicks": function () {},
+  "unsquish": function () {},
+  "update": function () {},
+  "updateNames": function () {},
+  "validatePositiveValue": function () {},
+  "zoom": function () {}
+};
+Highcharts._modules["Core/Globals.js"].Chart.prototype = {
+  "addAxis": function () {},
+  "addColorAxis": function () {},
+  "addCredits": function () {},
+  "addSeries": function () {},
+  "applyDescription": function () {},
+  "applyFixed": function () {},
+  "callbacks": function () {},
+  "collectionsWithInit": function () {},
+  "collectionsWithUpdate": function () {},
+  "createAxis": function () {},
+  "currentOptions": function () {},
+  "destroy": function () {},
+  "drawChartBox": function () {},
+  "firstRender": function () {},
+  "get": function () {},
+  "getArgs": function () {},
+  "getAxes": function () {},
+  "getAxisMargins": function () {},
+  "getChartSize": function () {},
+  "getContainer": function () {},
+  "getMargins": function () {},
+  "getSelectedPoints": function () {},
+  "getSelectedSeries": function () {},
+  "getSeriesOrderByLinks": function () {},
+  "getStacks": function () {},
+  "hideLoading": function () {},
+  "hideOverlappingLabels": function () {},
+  "init": function () {},
+  "initSeries": function () {},
+  "isInsidePlot": function () {},
+  "layOutTitles": function () {},
+  "linkSeries": function () {},
+  "matchResponsiveRule": function () {},
+  "moveFixedElements": function () {},
+  "onload": function () {},
+  "orderSeries": function () {},
+  "pan": function () {},
+  "propFromSeries": function () {},
+  "propsRequireDirtyBox": function () {},
+  "propsRequireReflow": function () {},
+  "propsRequireUpdateSeries": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "reflow": function () {},
+  "render": function () {},
+  "renderLabels": function () {},
+  "renderSeries": function () {},
+  "resetMargins": function () {},
+  "setCaption": function () {},
+  "setChartSize": function () {},
+  "setClassName": function () {},
+  "setReflow": function () {},
+  "setResponsive": function () {},
+  "setSeriesData": function () {},
+  "setSize": function () {},
+  "setSubtitle": function () {},
+  "setTitle": function () {},
+  "setUpScrolling": function () {},
+  "showLoading": function () {},
+  "showResetZoom": function () {},
+  "temporaryDisplay": function () {},
+  "update": function () {},
+  "updateContainerScaling": function () {},
+  "zoom": function () {},
+  "zoomOut": function () {}
+};
+Highcharts._modules["Core/Globals.js"].Color.prototype = {
+  "brighten": function () {},
+  "get": function () {},
+  "init": function () {},
+  "setOpacity": function () {},
+  "tweenTo": function () {}
+};
+Highcharts._modules["Core/Globals.js"].Fx.prototype = {
+  "dSetter": function () {},
+  "fillSetter": function () {},
+  "initPath": function () {},
+  "run": function () {},
+  "step": function () {},
+  "strokeSetter": function () {},
+  "update": function () {}
+};
+Highcharts._modules["Core/Globals.js"].Legend.prototype = {
+  "adjustMargins": function () {},
+  "align": function () {},
+  "colorizeItem": function () {},
+  "createCheckboxForItem": function () {},
+  "destroy": function () {},
+  "destroyItem": function () {},
+  "getAlignment": function () {},
+  "getAllItems": function () {},
+  "handleOverflow": function () {},
+  "init": function () {},
+  "layoutItem": function () {},
+  "positionCheckboxes": function () {},
+  "positionItem": function () {},
+  "positionItems": function () {},
+  "proximatePositions": function () {},
+  "render": function () {},
+  "renderItem": function () {},
+  "renderTitle": function () {},
+  "scroll": function () {},
+  "setItemEvents": function () {},
+  "setOptions": function () {},
+  "setText": function () {},
+  "update": function () {}
+};
+Highcharts._modules["Core/Globals.js"].PlotLineOrBand.prototype = {
+  "destroy": function () {},
+  "getLabelText": function () {},
+  "render": function () {},
+  "renderLabel": function () {}
+};
+Highcharts._modules["Core/Globals.js"].Point.prototype = {
+  "animateBeforeDestroy": function () {},
+  "applyOptions": function () {},
+  "destroy": function () {},
+  "destroyElements": function () {},
+  "firePointEvent": function () {},
+  "getClassName": function () {},
+  "getGraphicalProps": function () {},
+  "getLabelConfig": function () {},
+  "getNestedProperty": function () {},
+  "getZone": function () {},
+  "haloPath": function () {},
+  "hasNewShapeType": function () {},
+  "importEvents": function () {},
+  "init": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "optionsToObject": function () {},
+  "remove": function () {},
+  "resolveColor": function () {},
+  "select": function () {},
+  "setNestedProperty": function () {},
+  "setState": function () {},
+  "tooltipFormatter": function () {},
+  "update": function () {}
+};
+Highcharts._modules["Core/Globals.js"].Pointer.prototype = {
+  "applyInactiveState": function () {},
+  "destroy": function () {},
+  "drag": function () {},
+  "dragStart": function () {},
+  "drop": function () {},
+  "findNearestKDPoint": function () {},
+  "getChartCoordinatesFromPoint": function () {},
+  "getChartPosition": function () {},
+  "getCoordinates": function () {},
+  "getHoverData": function () {},
+  "getPointFromEvent": function () {},
+  "inClass": function () {},
+  "init": function () {},
+  "normalize": function () {},
+  "onContainerClick": function () {},
+  "onContainerMouseDown": function () {},
+  "onContainerMouseEnter": function () {},
+  "onContainerMouseLeave": function () {},
+  "onContainerMouseMove": function () {},
+  "onContainerTouchMove": function () {},
+  "onContainerTouchStart": function () {},
+  "onDocumentMouseMove": function () {},
+  "onDocumentMouseUp": function () {},
+  "onDocumentTouchEnd": function () {},
+  "onTrackerMouseOut": function () {},
+  "pinch": function () {},
+  "pinchTranslate": function () {},
+  "pinchTranslateDirection": function () {},
+  "reset": function () {},
+  "runPointActions": function () {},
+  "scaleGroups": function () {},
+  "setDOMEvents": function () {},
+  "setHoverChartIndex": function () {},
+  "touch": function () {},
+  "zoomOption": function () {}
+};
+Highcharts._modules["Core/Globals.js"].Renderer.prototype = {
+  "Element": function () {},
+  "SVG_NS": function () {},
+  "arc": function () {},
+  "buildText": function () {},
+  "button": function () {},
+  "circle": function () {},
+  "clipRect": function () {},
+  "createElement": function () {},
+  "crispLine": function () {},
+  "definition": function () {},
+  "destroy": function () {},
+  "draw": function () {},
+  "escapes": function () {},
+  "fontMetrics": function () {},
+  "g": function () {},
+  "getContrast": function () {},
+  "getRadialAttr": function () {},
+  "getStyle": function () {},
+  "getTransformKey": function () {},
+  "html": function () {},
+  "image": function () {},
+  "init": function () {},
+  "isHidden": function () {},
+  "label": function () {},
+  "path": function () {},
+  "pathToSegments": function () {},
+  "rect": function () {},
+  "rotCorr": function () {},
+  "setSize": function () {},
+  "setStyle": function () {},
+  "symbol": function () {},
+  "symbols": function () {},
+  "text": function () {},
+  "truncate": function () {}
+};
+Highcharts._modules["Core/Globals.js"].SVGElement.prototype = {
+  "_defaultGetter": function () {},
+  "_defaultSetter": function () {},
+  "add": function () {},
+  "addClass": function () {},
+  "afterSetters": function () {},
+  "align": function () {},
+  "alignSetter": function () {},
+  "animate": function () {},
+  "applyTextOutline": function () {},
+  "attr": function () {},
+  "clip": function () {},
+  "complexColor": function () {},
+  "crisp": function () {},
+  "css": function () {},
+  "dSetter": function () {},
+  "dashstyleSetter": function () {},
+  "destroy": function () {},
+  "destroyShadows": function () {},
+  "destroyTextPath": function () {},
+  "fadeOut": function () {},
+  "fillSetter": function () {},
+  "getBBox": function () {},
+  "getSpanCorrection": function () {},
+  "getStyle": function () {},
+  "hasClass": function () {},
+  "hide": function () {},
+  "htmlCss": function () {},
+  "htmlGetBBox": function () {},
+  "htmlUpdateTransform": function () {},
+  "init": function () {},
+  "invert": function () {},
+  "matrixSetter": function () {},
+  "on": function () {},
+  "opacitySetter": function () {},
+  "removeClass": function () {},
+  "removeTextOutline": function () {},
+  "rotationOriginXSetter": function () {},
+  "rotationOriginYSetter": function () {},
+  "rotationSetter": function () {},
+  "safeRemoveChild": function () {},
+  "scaleXSetter": function () {},
+  "scaleYSetter": function () {},
+  "setRadialReference": function () {},
+  "setSpanRotation": function () {},
+  "setTextPath": function () {},
+  "shadow": function () {},
+  "show": function () {},
+  "stroke-widthSetter": function () {},
+  "strokeSetter": function () {},
+  "strokeWidth": function () {},
+  "symbolAttr": function () {},
+  "textSetter": function () {},
+  "titleSetter": function () {},
+  "toFront": function () {},
+  "translate": function () {},
+  "translateXSetter": function () {},
+  "translateYSetter": function () {},
+  "updateShadows": function () {},
+  "updateTransform": function () {},
+  "verticalAlignSetter": function () {},
+  "visibilitySetter": function () {},
+  "xGetter": function () {},
+  "yGetter": function () {},
+  "zIndexSetter": function () {}
+};
+Highcharts._modules["Core/Globals.js"].SVGRenderer.prototype = {
+  "Element": function () {},
+  "SVG_NS": function () {},
+  "arc": function () {},
+  "buildText": function () {},
+  "button": function () {},
+  "circle": function () {},
+  "clipRect": function () {},
+  "createElement": function () {},
+  "crispLine": function () {},
+  "definition": function () {},
+  "destroy": function () {},
+  "draw": function () {},
+  "escapes": function () {},
+  "fontMetrics": function () {},
+  "g": function () {},
+  "getContrast": function () {},
+  "getRadialAttr": function () {},
+  "getStyle": function () {},
+  "getTransformKey": function () {},
+  "html": function () {},
+  "image": function () {},
+  "init": function () {},
+  "isHidden": function () {},
+  "label": function () {},
+  "path": function () {},
+  "pathToSegments": function () {},
+  "rect": function () {},
+  "rotCorr": function () {},
+  "setSize": function () {},
+  "setStyle": function () {},
+  "symbol": function () {},
+  "symbols": function () {},
+  "text": function () {},
+  "truncate": function () {}
+};
+Highcharts._modules["Core/Globals.js"].Series.prototype = {
+  "addPoint": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts._modules["Core/Globals.js"].StackItem.prototype = {
+  "destroy": function () {},
+  "getStackBox": function () {},
+  "render": function () {},
+  "setOffset": function () {}
+};
+Highcharts._modules["Core/Globals.js"].Tick.prototype = {
+  "addLabel": function () {},
+  "createLabel": function () {},
+  "destroy": function () {},
+  "getLabelPosition": function () {},
+  "getLabelSize": function () {},
+  "getMarkPath": function () {},
+  "getPosition": function () {},
+  "handleOverflow": function () {},
+  "moveLabel": function () {},
+  "render": function () {},
+  "renderGridLine": function () {},
+  "renderLabel": function () {},
+  "renderMark": function () {},
+  "replaceMovedLabel": function () {}
+};
+Highcharts._modules["Core/Globals.js"].Time.prototype = {
+  "dateFormat": function () {},
+  "get": function () {},
+  "getTimeTicks": function () {},
+  "makeTime": function () {},
+  "resolveDTLFormat": function () {},
+  "set": function () {},
+  "timezoneOffsetFunction": function () {},
+  "update": function () {}
+};
+Highcharts._modules["Core/Globals.js"].Tooltip.prototype = {
+  "applyFilter": function () {},
+  "bodyFormatter": function () {},
+  "cleanSplit": function () {},
+  "defaultFormatter": function () {},
+  "destroy": function () {},
+  "drawTracker": function () {},
+  "getAnchor": function () {},
+  "getDateFormat": function () {},
+  "getLabel": function () {},
+  "getPosition": function () {},
+  "getXDateFormat": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "isStickyOnContact": function () {},
+  "move": function () {},
+  "refresh": function () {},
+  "renderSplit": function () {},
+  "styledModeFormat": function () {},
+  "tooltipFooterHeaderFormatter": function () {},
+  "update": function () {},
+  "updatePosition": function () {}
+};
+Highcharts._modules["Core/Globals.js"].seriesTypes.area.prototype = {
+  "addPoint": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getStackPoints": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "singleStacks": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts._modules["Core/Globals.js"].seriesTypes.areaspline.prototype = {
+  "addPoint": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointSpline": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getStackPoints": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts._modules["Core/Globals.js"].seriesTypes.bar.prototype = {
+  "addPoint": function () {},
+  "adjustForMissingColumns": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "crispCol": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getColumnMetrics": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "inverted": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "negStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "trackerGroups": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts._modules["Core/Globals.js"].seriesTypes.column.prototype = {
+  "addPoint": function () {},
+  "adjustForMissingColumns": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "crispCol": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getColumnMetrics": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "negStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "trackerGroups": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts._modules["Core/Globals.js"].seriesTypes.line.prototype = {
+  "addPoint": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts._modules["Core/Globals.js"].seriesTypes.pie.prototype = {
+  "addPoint": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "dataLabelPositioners": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawEmpty": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getCenter": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getX": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "noSharedTooltip": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "placeDataLabels": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "redrawPoints": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortByAngle": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "trackerGroups": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {},
+  "updateTotals": function () {},
+  "verifyDataLabelOverflow": function () {}
+};
+Highcharts._modules["Core/Globals.js"].seriesTypes.scatter.prototype = {
+  "addPoint": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyJitter": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "noSharedTooltip": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "takeOrdinalPosition": function () {},
+  "trackerGroups": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts._modules["Core/Globals.js"].seriesTypes.spline.prototype = {
+  "addPoint": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointSpline": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts._modules["Core/Globals.js"].win.parent.React.Component.prototype = {
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
+Highcharts._modules["Core/Globals.js"].win.parent.React.PureComponent.prototype = {
+  "constructor": function () {},
+  "forceUpdate": function () {},
+  "isPureReactComponent": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
+Highcharts._modules["Core/Globals.js"].win.top.React.Component.prototype = {
+  "forceUpdate": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
+Highcharts._modules["Core/Globals.js"].win.top.React.PureComponent.prototype = {
+  "constructor": function () {},
+  "forceUpdate": function () {},
+  "isPureReactComponent": function () {},
+  "isReactComponent": function () {},
+  "setState": function () {}
+};
+Highcharts._modules["Core/Legend.js"].prototype = {
+  "adjustMargins": function () {},
+  "align": function () {},
+  "colorizeItem": function () {},
+  "createCheckboxForItem": function () {},
+  "destroy": function () {},
+  "destroyItem": function () {},
+  "getAlignment": function () {},
+  "getAllItems": function () {},
+  "handleOverflow": function () {},
+  "init": function () {},
+  "layoutItem": function () {},
+  "positionCheckboxes": function () {},
+  "positionItem": function () {},
+  "positionItems": function () {},
+  "proximatePositions": function () {},
+  "render": function () {},
+  "renderItem": function () {},
+  "renderTitle": function () {},
+  "scroll": function () {},
+  "setItemEvents": function () {},
+  "setOptions": function () {},
+  "setText": function () {},
+  "update": function () {}
+};
+Highcharts._modules["Core/MSPointer.js"].prototype = {
+  "applyInactiveState": function () {},
+  "batchMSEvents": function () {},
+  "constructor": function () {},
+  "destroy": function () {},
+  "drag": function () {},
+  "dragStart": function () {},
+  "drop": function () {},
+  "findNearestKDPoint": function () {},
+  "getChartCoordinatesFromPoint": function () {},
+  "getChartPosition": function () {},
+  "getCoordinates": function () {},
+  "getHoverData": function () {},
+  "getPointFromEvent": function () {},
+  "inClass": function () {},
+  "init": function () {},
+  "normalize": function () {},
+  "onContainerClick": function () {},
+  "onContainerMouseDown": function () {},
+  "onContainerMouseEnter": function () {},
+  "onContainerMouseLeave": function () {},
+  "onContainerMouseMove": function () {},
+  "onContainerPointerDown": function () {},
+  "onContainerPointerMove": function () {},
+  "onContainerTouchMove": function () {},
+  "onContainerTouchStart": function () {},
+  "onDocumentMouseMove": function () {},
+  "onDocumentMouseUp": function () {},
+  "onDocumentPointerUp": function () {},
+  "onDocumentTouchEnd": function () {},
+  "onTrackerMouseOut": function () {},
+  "pinch": function () {},
+  "pinchTranslate": function () {},
+  "pinchTranslateDirection": function () {},
+  "reset": function () {},
+  "runPointActions": function () {},
+  "scaleGroups": function () {},
+  "setDOMEvents": function () {},
+  "setHoverChartIndex": function () {},
+  "touch": function () {},
+  "zoomOption": function () {}
+};
+Highcharts._modules["Core/Pointer.js"].prototype = {
+  "applyInactiveState": function () {},
+  "destroy": function () {},
+  "drag": function () {},
+  "dragStart": function () {},
+  "drop": function () {},
+  "findNearestKDPoint": function () {},
+  "getChartCoordinatesFromPoint": function () {},
+  "getChartPosition": function () {},
+  "getCoordinates": function () {},
+  "getHoverData": function () {},
+  "getPointFromEvent": function () {},
+  "inClass": function () {},
+  "init": function () {},
+  "normalize": function () {},
+  "onContainerClick": function () {},
+  "onContainerMouseDown": function () {},
+  "onContainerMouseEnter": function () {},
+  "onContainerMouseLeave": function () {},
+  "onContainerMouseMove": function () {},
+  "onContainerTouchMove": function () {},
+  "onContainerTouchStart": function () {},
+  "onDocumentMouseMove": function () {},
+  "onDocumentMouseUp": function () {},
+  "onDocumentTouchEnd": function () {},
+  "onTrackerMouseOut": function () {},
+  "pinch": function () {},
+  "pinchTranslate": function () {},
+  "pinchTranslateDirection": function () {},
+  "reset": function () {},
+  "runPointActions": function () {},
+  "scaleGroups": function () {},
+  "setDOMEvents": function () {},
+  "setHoverChartIndex": function () {},
+  "touch": function () {},
+  "zoomOption": function () {}
+};
+Highcharts._modules["Core/Renderer/HTML/HTMLElement.js"].prototype = {
+  "_defaultGetter": function () {},
+  "_defaultSetter": function () {},
+  "add": function () {},
+  "addClass": function () {},
+  "afterSetters": function () {},
+  "align": function () {},
+  "alignSetter": function () {},
+  "animate": function () {},
+  "applyTextOutline": function () {},
+  "attr": function () {},
+  "clip": function () {},
+  "complexColor": function () {},
+  "crisp": function () {},
+  "css": function () {},
+  "dSetter": function () {},
+  "dashstyleSetter": function () {},
+  "destroy": function () {},
+  "destroyShadows": function () {},
+  "destroyTextPath": function () {},
+  "fadeOut": function () {},
+  "fillSetter": function () {},
+  "getBBox": function () {},
+  "getSpanCorrection": function () {},
+  "getStyle": function () {},
+  "hasClass": function () {},
+  "hide": function () {},
+  "htmlCss": function () {},
+  "htmlGetBBox": function () {},
+  "htmlUpdateTransform": function () {},
+  "init": function () {},
+  "invert": function () {},
+  "matrixSetter": function () {},
+  "on": function () {},
+  "opacitySetter": function () {},
+  "removeClass": function () {},
+  "removeTextOutline": function () {},
+  "rotationOriginXSetter": function () {},
+  "rotationOriginYSetter": function () {},
+  "rotationSetter": function () {},
+  "safeRemoveChild": function () {},
+  "scaleXSetter": function () {},
+  "scaleYSetter": function () {},
+  "setRadialReference": function () {},
+  "setSpanRotation": function () {},
+  "setTextPath": function () {},
+  "shadow": function () {},
+  "show": function () {},
+  "stroke-widthSetter": function () {},
+  "strokeSetter": function () {},
+  "strokeWidth": function () {},
+  "symbolAttr": function () {},
+  "textSetter": function () {},
+  "titleSetter": function () {},
+  "toFront": function () {},
+  "translate": function () {},
+  "translateXSetter": function () {},
+  "translateYSetter": function () {},
+  "updateShadows": function () {},
+  "updateTransform": function () {},
+  "verticalAlignSetter": function () {},
+  "visibilitySetter": function () {},
+  "xGetter": function () {},
+  "yGetter": function () {},
+  "zIndexSetter": function () {}
+};
+Highcharts._modules["Core/Renderer/HTML/HTMLRenderer.js"].prototype = {
+  "Element": function () {},
+  "SVG_NS": function () {},
+  "arc": function () {},
+  "buildText": function () {},
+  "button": function () {},
+  "circle": function () {},
+  "clipRect": function () {},
+  "createElement": function () {},
+  "crispLine": function () {},
+  "definition": function () {},
+  "destroy": function () {},
+  "draw": function () {},
+  "escapes": function () {},
+  "fontMetrics": function () {},
+  "g": function () {},
+  "getContrast": function () {},
+  "getRadialAttr": function () {},
+  "getStyle": function () {},
+  "getTransformKey": function () {},
+  "html": function () {},
+  "image": function () {},
+  "init": function () {},
+  "isHidden": function () {},
+  "label": function () {},
+  "path": function () {},
+  "pathToSegments": function () {},
+  "rect": function () {},
+  "rotCorr": function () {},
+  "setSize": function () {},
+  "setStyle": function () {},
+  "symbol": function () {},
+  "symbols": function () {},
+  "text": function () {},
+  "truncate": function () {}
+};
+Highcharts._modules["Core/Renderer/SVG/SVGElement.js"].prototype = {
+  "_defaultGetter": function () {},
+  "_defaultSetter": function () {},
+  "add": function () {},
+  "addClass": function () {},
+  "afterSetters": function () {},
+  "align": function () {},
+  "alignSetter": function () {},
+  "animate": function () {},
+  "applyTextOutline": function () {},
+  "attr": function () {},
+  "clip": function () {},
+  "complexColor": function () {},
+  "crisp": function () {},
+  "css": function () {},
+  "dSetter": function () {},
+  "dashstyleSetter": function () {},
+  "destroy": function () {},
+  "destroyShadows": function () {},
+  "destroyTextPath": function () {},
+  "fadeOut": function () {},
+  "fillSetter": function () {},
+  "getBBox": function () {},
+  "getSpanCorrection": function () {},
+  "getStyle": function () {},
+  "hasClass": function () {},
+  "hide": function () {},
+  "htmlCss": function () {},
+  "htmlGetBBox": function () {},
+  "htmlUpdateTransform": function () {},
+  "init": function () {},
+  "invert": function () {},
+  "matrixSetter": function () {},
+  "on": function () {},
+  "opacitySetter": function () {},
+  "removeClass": function () {},
+  "removeTextOutline": function () {},
+  "rotationOriginXSetter": function () {},
+  "rotationOriginYSetter": function () {},
+  "rotationSetter": function () {},
+  "safeRemoveChild": function () {},
+  "scaleXSetter": function () {},
+  "scaleYSetter": function () {},
+  "setRadialReference": function () {},
+  "setSpanRotation": function () {},
+  "setTextPath": function () {},
+  "shadow": function () {},
+  "show": function () {},
+  "stroke-widthSetter": function () {},
+  "strokeSetter": function () {},
+  "strokeWidth": function () {},
+  "symbolAttr": function () {},
+  "textSetter": function () {},
+  "titleSetter": function () {},
+  "toFront": function () {},
+  "translate": function () {},
+  "translateXSetter": function () {},
+  "translateYSetter": function () {},
+  "updateShadows": function () {},
+  "updateTransform": function () {},
+  "verticalAlignSetter": function () {},
+  "visibilitySetter": function () {},
+  "xGetter": function () {},
+  "yGetter": function () {},
+  "zIndexSetter": function () {}
+};
+Highcharts._modules["Core/Renderer/SVG/SVGLabel.js"].prototype = {
+  "_defaultGetter": function () {},
+  "_defaultSetter": function () {},
+  "add": function () {},
+  "addClass": function () {},
+  "afterSetters": function () {},
+  "align": function () {},
+  "alignSetter": function () {},
+  "anchorXSetter": function () {},
+  "anchorYSetter": function () {},
+  "animate": function () {},
+  "applyTextOutline": function () {},
+  "attr": function () {},
+  "boxAttr": function () {},
+  "clip": function () {},
+  "complexColor": function () {},
+  "constructor": function () {},
+  "crisp": function () {},
+  "css": function () {},
+  "dSetter": function () {},
+  "dashstyleSetter": function () {},
+  "destroy": function () {},
+  "destroyShadows": function () {},
+  "destroyTextPath": function () {},
+  "fadeOut": function () {},
+  "fillSetter": function () {},
+  "getBBox": function () {},
+  "getCrispAdjust": function () {},
+  "getSpanCorrection": function () {},
+  "getStyle": function () {},
+  "hasClass": function () {},
+  "heightSetter": function () {},
+  "hide": function () {},
+  "htmlCss": function () {},
+  "htmlGetBBox": function () {},
+  "htmlUpdateTransform": function () {},
+  "init": function () {},
+  "invert": function () {},
+  "matrixSetter": function () {},
+  "on": function () {},
+  "onAdd": function () {},
+  "opacitySetter": function () {},
+  "paddingLeftSetter": function () {},
+  "paddingSetter": function () {},
+  "rSetter": function () {},
+  "removeClass": function () {},
+  "removeTextOutline": function () {},
+  "rotationOriginXSetter": function () {},
+  "rotationOriginYSetter": function () {},
+  "rotationSetter": function () {},
+  "safeRemoveChild": function () {},
+  "scaleXSetter": function () {},
+  "scaleYSetter": function () {},
+  "setRadialReference": function () {},
+  "setSpanRotation": function () {},
+  "setTextPath": function () {},
+  "shadow": function () {},
+  "show": function () {},
+  "stroke-widthSetter": function () {},
+  "strokeSetter": function () {},
+  "strokeWidth": function () {},
+  "symbolAttr": function () {},
+  "text-alignSetter": function () {},
+  "textSetter": function () {},
+  "titleSetter": function () {},
+  "toFront": function () {},
+  "translate": function () {},
+  "translateXSetter": function () {},
+  "translateYSetter": function () {},
+  "updateBoxSize": function () {},
+  "updateShadows": function () {},
+  "updateTextPadding": function () {},
+  "updateTransform": function () {},
+  "verticalAlignSetter": function () {},
+  "visibilitySetter": function () {},
+  "widthSetter": function () {},
+  "xGetter": function () {},
+  "xSetter": function () {},
+  "yGetter": function () {},
+  "ySetter": function () {},
+  "zIndexSetter": function () {}
+};
+Highcharts._modules["Core/Renderer/SVG/SVGRenderer.js"].prototype = {
+  "Element": function () {},
+  "SVG_NS": function () {},
+  "arc": function () {},
+  "buildText": function () {},
+  "button": function () {},
+  "circle": function () {},
+  "clipRect": function () {},
+  "createElement": function () {},
+  "crispLine": function () {},
+  "definition": function () {},
+  "destroy": function () {},
+  "draw": function () {},
+  "escapes": function () {},
+  "fontMetrics": function () {},
+  "g": function () {},
+  "getContrast": function () {},
+  "getRadialAttr": function () {},
+  "getStyle": function () {},
+  "getTransformKey": function () {},
+  "html": function () {},
+  "image": function () {},
+  "init": function () {},
+  "isHidden": function () {},
+  "label": function () {},
+  "path": function () {},
+  "pathToSegments": function () {},
+  "rect": function () {},
+  "rotCorr": function () {},
+  "setSize": function () {},
+  "setStyle": function () {},
+  "symbol": function () {},
+  "symbols": function () {},
+  "text": function () {},
+  "truncate": function () {}
+};
+Highcharts._modules["Core/Series/CartesianSeries.js"].prototype = {
+  "addPoint": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts._modules["Core/Series/Point.js"].prototype = {
+  "animateBeforeDestroy": function () {},
+  "applyOptions": function () {},
+  "destroy": function () {},
+  "destroyElements": function () {},
+  "firePointEvent": function () {},
+  "getClassName": function () {},
+  "getGraphicalProps": function () {},
+  "getLabelConfig": function () {},
+  "getNestedProperty": function () {},
+  "getZone": function () {},
+  "haloPath": function () {},
+  "hasNewShapeType": function () {},
+  "importEvents": function () {},
+  "init": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "optionsToObject": function () {},
+  "remove": function () {},
+  "resolveColor": function () {},
+  "select": function () {},
+  "setNestedProperty": function () {},
+  "setState": function () {},
+  "tooltipFormatter": function () {},
+  "update": function () {}
+};
+Highcharts._modules["Core/Series/Series.js"].prototype = {
+  "pointClass": function () {},
+  "update": function () {}
+};
+Highcharts._modules["Core/Series/Series.js"].seriesTypes.area.prototype = {
+  "addPoint": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getStackPoints": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "singleStacks": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts._modules["Core/Series/Series.js"].seriesTypes.areaspline.prototype = {
+  "addPoint": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointSpline": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getStackPoints": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts._modules["Core/Series/Series.js"].seriesTypes.bar.prototype = {
+  "addPoint": function () {},
+  "adjustForMissingColumns": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "crispCol": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getColumnMetrics": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "inverted": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "negStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "trackerGroups": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts._modules["Core/Series/Series.js"].seriesTypes.column.prototype = {
+  "addPoint": function () {},
+  "adjustForMissingColumns": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "crispCol": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getColumnMetrics": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "negStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "trackerGroups": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts._modules["Core/Series/Series.js"].seriesTypes.line.prototype = {
+  "addPoint": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts._modules["Core/Series/Series.js"].seriesTypes.pie.prototype = {
+  "addPoint": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "dataLabelPositioners": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawEmpty": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getCenter": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getX": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "noSharedTooltip": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "placeDataLabels": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "redrawPoints": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortByAngle": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "trackerGroups": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {},
+  "updateTotals": function () {},
+  "verifyDataLabelOverflow": function () {}
+};
+Highcharts._modules["Core/Series/Series.js"].seriesTypes.scatter.prototype = {
+  "addPoint": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyJitter": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "noSharedTooltip": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "takeOrdinalPosition": function () {},
+  "trackerGroups": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts._modules["Core/Series/Series.js"].seriesTypes.spline.prototype = {
+  "addPoint": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointSpline": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts._modules["Core/Time.js"].prototype = {
+  "dateFormat": function () {},
+  "get": function () {},
+  "getTimeTicks": function () {},
+  "makeTime": function () {},
+  "resolveDTLFormat": function () {},
+  "set": function () {},
+  "timezoneOffsetFunction": function () {},
+  "update": function () {}
+};
+Highcharts._modules["Core/Tooltip.js"].prototype = {
+  "applyFilter": function () {},
+  "bodyFormatter": function () {},
+  "cleanSplit": function () {},
+  "defaultFormatter": function () {},
+  "destroy": function () {},
+  "drawTracker": function () {},
+  "getAnchor": function () {},
+  "getDateFormat": function () {},
+  "getLabel": function () {},
+  "getPosition": function () {},
+  "getXDateFormat": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "isStickyOnContact": function () {},
+  "move": function () {},
+  "refresh": function () {},
+  "renderSplit": function () {},
+  "styledModeFormat": function () {},
+  "tooltipFooterHeaderFormatter": function () {},
+  "update": function () {},
+  "updatePosition": function () {}
+};
+Highcharts._modules["Extensions/Stacking.js"].prototype = {
+  "destroy": function () {},
+  "getStackBox": function () {},
+  "render": function () {},
+  "setOffset": function () {}
+};
+Highcharts._modules["Series/ColumnSeries.js"].prototype = {
+  "addPoint": function () {},
+  "adjustForMissingColumns": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "crispCol": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getColumnMetrics": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "negStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "trackerGroups": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts._modules["Series/LineSeries.js"].prototype = {
+  "addPoint": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
 Highcharts._modules["masters/highcharts.src.js"].Axis.prototype = {
   "addPlotBand": function () {},
   "addPlotBandOrLine": function () {},
@@ -19550,6 +22142,7 @@ Highcharts._modules["masters/highcharts.src.js"].Axis.prototype = {
   "unsquish": function () {},
   "update": function () {},
   "updateNames": function () {},
+  "validatePositiveValue": function () {},
   "zoom": function () {}
 };
 Highcharts._modules["masters/highcharts.src.js"].Chart.prototype = {
@@ -19709,6 +22302,7 @@ Highcharts._modules["masters/highcharts.src.js"].Pointer.prototype = {
   "normalize": function () {},
   "onContainerClick": function () {},
   "onContainerMouseDown": function () {},
+  "onContainerMouseEnter": function () {},
   "onContainerMouseLeave": function () {},
   "onContainerMouseMove": function () {},
   "onContainerTouchMove": function () {},
@@ -19888,7 +22482,6 @@ Highcharts._modules["masters/highcharts.src.js"].Series.prototype = {
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getClipBox": function () {},
@@ -19907,6 +22500,7 @@ Highcharts._modules["masters/highcharts.src.js"].Series.prototype = {
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -19942,6 +22536,7 @@ Highcharts._modules["masters/highcharts.src.js"].Series.prototype = {
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -20033,7 +22628,6 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.area.prototype = {
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getClipBox": function () {},
@@ -20053,6 +22647,7 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.area.prototype = {
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -20088,6 +22683,7 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.area.prototype = {
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -20125,7 +22721,6 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.areaspline.prototyp
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getClipBox": function () {},
@@ -20146,6 +22741,7 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.areaspline.prototyp
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -20181,6 +22777,7 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.areaspline.prototyp
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -20197,6 +22794,7 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.areaspline.prototyp
 };
 Highcharts._modules["masters/highcharts.src.js"].seriesTypes.bar.prototype = {
   "addPoint": function () {},
+  "adjustForMissingColumns": function () {},
   "afterAnimate": function () {},
   "alignDataLabel": function () {},
   "animate": function () {},
@@ -20218,7 +22816,6 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.bar.prototype = {
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getClipBox": function () {},
@@ -20238,6 +22835,7 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.bar.prototype = {
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -20275,6 +22873,7 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.bar.prototype = {
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -20292,6 +22891,7 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.bar.prototype = {
 };
 Highcharts._modules["masters/highcharts.src.js"].seriesTypes.column.prototype = {
   "addPoint": function () {},
+  "adjustForMissingColumns": function () {},
   "afterAnimate": function () {},
   "alignDataLabel": function () {},
   "animate": function () {},
@@ -20313,7 +22913,6 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.column.prototype = 
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getClipBox": function () {},
@@ -20333,6 +22932,7 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.column.prototype = 
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -20369,6 +22969,7 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.column.prototype = 
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -20406,7 +23007,6 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.line.prototype = {
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getClipBox": function () {},
@@ -20425,6 +23025,7 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.line.prototype = {
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -20460,6 +23061,7 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.line.prototype = {
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -20498,7 +23100,6 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.pie.prototype = {
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getCenter": function () {},
@@ -20519,6 +23120,7 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.pie.prototype = {
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -20557,6 +23159,7 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.pie.prototype = {
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -20598,7 +23201,6 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.scatter.prototype =
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getClipBox": function () {},
@@ -20617,6 +23219,7 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.scatter.prototype =
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -20653,6 +23256,7 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.scatter.prototype =
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -20691,7 +23295,6 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.spline.prototype = 
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getClipBox": function () {},
@@ -20711,6 +23314,7 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.spline.prototype = 
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -20746,6 +23350,7 @@ Highcharts._modules["masters/highcharts.src.js"].seriesTypes.spline.prototype = 
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -20784,1648 +23389,6 @@ Highcharts._modules["masters/highcharts.src.js"].win.top.React.PureComponent.pro
   "isReactComponent": function () {},
   "setState": function () {}
 };
-Highcharts._modules["parts/Axis.js"].prototype = {
-  "addPlotBand": function () {},
-  "addPlotBandOrLine": function () {},
-  "addPlotLine": function () {},
-  "addTitle": function () {},
-  "adjustForMinRange": function () {},
-  "adjustTickAmount": function () {},
-  "alignToOthers": function () {},
-  "autoLabelAlign": function () {},
-  "defaultLabelFormatter": function () {},
-  "destroy": function () {},
-  "drawCrosshair": function () {},
-  "generateTick": function () {},
-  "getClosest": function () {},
-  "getExtremes": function () {},
-  "getKeepProps": function () {},
-  "getLinePath": function () {},
-  "getLinearTickPositions": function () {},
-  "getMinorTickInterval": function () {},
-  "getMinorTickPositions": function () {},
-  "getOffset": function () {},
-  "getPlotBandPath": function () {},
-  "getPlotLinePath": function () {},
-  "getSeriesExtremes": function () {},
-  "getSlotWidth": function () {},
-  "getThreshold": function () {},
-  "getTickAmount": function () {},
-  "getTimeTicks": function () {},
-  "getTitlePosition": function () {},
-  "hasData": function () {},
-  "hasVerticalPanning": function () {},
-  "hideCrosshair": function () {},
-  "init": function () {},
-  "labelMetrics": function () {},
-  "lin2log": function () {},
-  "log2lin": function () {},
-  "minFromRange": function () {},
-  "nameToX": function () {},
-  "protoEvents": function () {},
-  "redraw": function () {},
-  "remove": function () {},
-  "removePlotBand": function () {},
-  "removePlotBandOrLine": function () {},
-  "removePlotLine": function () {},
-  "render": function () {},
-  "renderLine": function () {},
-  "renderMinorTick": function () {},
-  "renderTick": function () {},
-  "renderUnsquish": function () {},
-  "setAxisSize": function () {},
-  "setAxisTranslation": function () {},
-  "setCategories": function () {},
-  "setExtremes": function () {},
-  "setOptions": function () {},
-  "setScale": function () {},
-  "setTickInterval": function () {},
-  "setTickPositions": function () {},
-  "setTitle": function () {},
-  "tickSize": function () {},
-  "toPixels": function () {},
-  "toValue": function () {},
-  "translate": function () {},
-  "trimTicks": function () {},
-  "unsquish": function () {},
-  "update": function () {},
-  "updateNames": function () {},
-  "zoom": function () {}
-};
-Highcharts._modules["parts/Color.js"].prototype = {
-  "brighten": function () {},
-  "get": function () {},
-  "init": function () {},
-  "setOpacity": function () {},
-  "tweenTo": function () {}
-};
-Highcharts._modules["parts/DateTimeAxis.js"].AdditionsClass.prototype = {
-  "normalizeTimeTickInterval": function () {}
-};
-Highcharts._modules["parts/Globals.js"].Axis.prototype = {
-  "addPlotBand": function () {},
-  "addPlotBandOrLine": function () {},
-  "addPlotLine": function () {},
-  "addTitle": function () {},
-  "adjustForMinRange": function () {},
-  "adjustTickAmount": function () {},
-  "alignToOthers": function () {},
-  "autoLabelAlign": function () {},
-  "defaultLabelFormatter": function () {},
-  "destroy": function () {},
-  "drawCrosshair": function () {},
-  "generateTick": function () {},
-  "getClosest": function () {},
-  "getExtremes": function () {},
-  "getKeepProps": function () {},
-  "getLinePath": function () {},
-  "getLinearTickPositions": function () {},
-  "getMinorTickInterval": function () {},
-  "getMinorTickPositions": function () {},
-  "getOffset": function () {},
-  "getPlotBandPath": function () {},
-  "getPlotLinePath": function () {},
-  "getSeriesExtremes": function () {},
-  "getSlotWidth": function () {},
-  "getThreshold": function () {},
-  "getTickAmount": function () {},
-  "getTimeTicks": function () {},
-  "getTitlePosition": function () {},
-  "hasData": function () {},
-  "hasVerticalPanning": function () {},
-  "hideCrosshair": function () {},
-  "init": function () {},
-  "labelMetrics": function () {},
-  "lin2log": function () {},
-  "log2lin": function () {},
-  "minFromRange": function () {},
-  "nameToX": function () {},
-  "protoEvents": function () {},
-  "redraw": function () {},
-  "remove": function () {},
-  "removePlotBand": function () {},
-  "removePlotBandOrLine": function () {},
-  "removePlotLine": function () {},
-  "render": function () {},
-  "renderLine": function () {},
-  "renderMinorTick": function () {},
-  "renderTick": function () {},
-  "renderUnsquish": function () {},
-  "setAxisSize": function () {},
-  "setAxisTranslation": function () {},
-  "setCategories": function () {},
-  "setExtremes": function () {},
-  "setOptions": function () {},
-  "setScale": function () {},
-  "setTickInterval": function () {},
-  "setTickPositions": function () {},
-  "setTitle": function () {},
-  "tickSize": function () {},
-  "toPixels": function () {},
-  "toValue": function () {},
-  "translate": function () {},
-  "trimTicks": function () {},
-  "unsquish": function () {},
-  "update": function () {},
-  "updateNames": function () {},
-  "zoom": function () {}
-};
-Highcharts._modules["parts/Globals.js"].Chart.prototype = {
-  "addAxis": function () {},
-  "addColorAxis": function () {},
-  "addCredits": function () {},
-  "addSeries": function () {},
-  "applyDescription": function () {},
-  "applyFixed": function () {},
-  "callbacks": function () {},
-  "collectionsWithInit": function () {},
-  "collectionsWithUpdate": function () {},
-  "createAxis": function () {},
-  "currentOptions": function () {},
-  "destroy": function () {},
-  "drawChartBox": function () {},
-  "firstRender": function () {},
-  "get": function () {},
-  "getArgs": function () {},
-  "getAxes": function () {},
-  "getAxisMargins": function () {},
-  "getChartSize": function () {},
-  "getContainer": function () {},
-  "getMargins": function () {},
-  "getSelectedPoints": function () {},
-  "getSelectedSeries": function () {},
-  "getSeriesOrderByLinks": function () {},
-  "getStacks": function () {},
-  "hideLoading": function () {},
-  "hideOverlappingLabels": function () {},
-  "init": function () {},
-  "initSeries": function () {},
-  "isInsidePlot": function () {},
-  "layOutTitles": function () {},
-  "linkSeries": function () {},
-  "matchResponsiveRule": function () {},
-  "moveFixedElements": function () {},
-  "onload": function () {},
-  "orderSeries": function () {},
-  "pan": function () {},
-  "propFromSeries": function () {},
-  "propsRequireDirtyBox": function () {},
-  "propsRequireReflow": function () {},
-  "propsRequireUpdateSeries": function () {},
-  "protoEvents": function () {},
-  "redraw": function () {},
-  "reflow": function () {},
-  "render": function () {},
-  "renderLabels": function () {},
-  "renderSeries": function () {},
-  "resetMargins": function () {},
-  "setCaption": function () {},
-  "setChartSize": function () {},
-  "setClassName": function () {},
-  "setReflow": function () {},
-  "setResponsive": function () {},
-  "setSeriesData": function () {},
-  "setSize": function () {},
-  "setSubtitle": function () {},
-  "setTitle": function () {},
-  "setUpScrolling": function () {},
-  "showLoading": function () {},
-  "showResetZoom": function () {},
-  "temporaryDisplay": function () {},
-  "update": function () {},
-  "updateContainerScaling": function () {},
-  "zoom": function () {},
-  "zoomOut": function () {}
-};
-Highcharts._modules["parts/Globals.js"].Color.prototype = {
-  "brighten": function () {},
-  "get": function () {},
-  "init": function () {},
-  "setOpacity": function () {},
-  "tweenTo": function () {}
-};
-Highcharts._modules["parts/Globals.js"].Fx.prototype = {
-  "dSetter": function () {},
-  "fillSetter": function () {},
-  "initPath": function () {},
-  "run": function () {},
-  "step": function () {},
-  "strokeSetter": function () {},
-  "update": function () {}
-};
-Highcharts._modules["parts/Globals.js"].Legend.prototype = {
-  "adjustMargins": function () {},
-  "align": function () {},
-  "colorizeItem": function () {},
-  "createCheckboxForItem": function () {},
-  "destroy": function () {},
-  "destroyItem": function () {},
-  "getAlignment": function () {},
-  "getAllItems": function () {},
-  "handleOverflow": function () {},
-  "init": function () {},
-  "layoutItem": function () {},
-  "positionCheckboxes": function () {},
-  "positionItem": function () {},
-  "positionItems": function () {},
-  "proximatePositions": function () {},
-  "render": function () {},
-  "renderItem": function () {},
-  "renderTitle": function () {},
-  "scroll": function () {},
-  "setItemEvents": function () {},
-  "setOptions": function () {},
-  "setText": function () {},
-  "update": function () {}
-};
-Highcharts._modules["parts/Globals.js"].PlotLineOrBand.prototype = {
-  "destroy": function () {},
-  "getLabelText": function () {},
-  "render": function () {},
-  "renderLabel": function () {}
-};
-Highcharts._modules["parts/Globals.js"].Point.prototype = {
-  "animateBeforeDestroy": function () {},
-  "applyOptions": function () {},
-  "destroy": function () {},
-  "destroyElements": function () {},
-  "firePointEvent": function () {},
-  "getClassName": function () {},
-  "getGraphicalProps": function () {},
-  "getLabelConfig": function () {},
-  "getNestedProperty": function () {},
-  "getZone": function () {},
-  "haloPath": function () {},
-  "hasNewShapeType": function () {},
-  "importEvents": function () {},
-  "init": function () {},
-  "onMouseOut": function () {},
-  "onMouseOver": function () {},
-  "optionsToObject": function () {},
-  "remove": function () {},
-  "resolveColor": function () {},
-  "select": function () {},
-  "setNestedProperty": function () {},
-  "setState": function () {},
-  "tooltipFormatter": function () {},
-  "update": function () {}
-};
-Highcharts._modules["parts/Globals.js"].Pointer.prototype = {
-  "applyInactiveState": function () {},
-  "destroy": function () {},
-  "drag": function () {},
-  "dragStart": function () {},
-  "drop": function () {},
-  "findNearestKDPoint": function () {},
-  "getChartCoordinatesFromPoint": function () {},
-  "getChartPosition": function () {},
-  "getCoordinates": function () {},
-  "getHoverData": function () {},
-  "getPointFromEvent": function () {},
-  "inClass": function () {},
-  "init": function () {},
-  "normalize": function () {},
-  "onContainerClick": function () {},
-  "onContainerMouseDown": function () {},
-  "onContainerMouseLeave": function () {},
-  "onContainerMouseMove": function () {},
-  "onContainerTouchMove": function () {},
-  "onContainerTouchStart": function () {},
-  "onDocumentMouseMove": function () {},
-  "onDocumentMouseUp": function () {},
-  "onDocumentTouchEnd": function () {},
-  "onTrackerMouseOut": function () {},
-  "pinch": function () {},
-  "pinchTranslate": function () {},
-  "pinchTranslateDirection": function () {},
-  "reset": function () {},
-  "runPointActions": function () {},
-  "scaleGroups": function () {},
-  "setDOMEvents": function () {},
-  "setHoverChartIndex": function () {},
-  "touch": function () {},
-  "zoomOption": function () {}
-};
-Highcharts._modules["parts/Globals.js"].Renderer.prototype = {
-  "Element": function () {},
-  "SVG_NS": function () {},
-  "arc": function () {},
-  "buildText": function () {},
-  "button": function () {},
-  "circle": function () {},
-  "clipRect": function () {},
-  "createElement": function () {},
-  "crispLine": function () {},
-  "definition": function () {},
-  "destroy": function () {},
-  "draw": function () {},
-  "escapes": function () {},
-  "fontMetrics": function () {},
-  "g": function () {},
-  "getContrast": function () {},
-  "getRadialAttr": function () {},
-  "getStyle": function () {},
-  "getTransformKey": function () {},
-  "html": function () {},
-  "image": function () {},
-  "init": function () {},
-  "isHidden": function () {},
-  "label": function () {},
-  "path": function () {},
-  "pathToSegments": function () {},
-  "rect": function () {},
-  "rotCorr": function () {},
-  "setSize": function () {},
-  "setStyle": function () {},
-  "symbol": function () {},
-  "symbols": function () {},
-  "text": function () {},
-  "truncate": function () {}
-};
-Highcharts._modules["parts/Globals.js"].SVGElement.prototype = {
-  "_defaultGetter": function () {},
-  "_defaultSetter": function () {},
-  "add": function () {},
-  "addClass": function () {},
-  "afterSetters": function () {},
-  "align": function () {},
-  "alignSetter": function () {},
-  "animate": function () {},
-  "applyTextOutline": function () {},
-  "attr": function () {},
-  "clip": function () {},
-  "complexColor": function () {},
-  "crisp": function () {},
-  "css": function () {},
-  "dSetter": function () {},
-  "dashstyleSetter": function () {},
-  "destroy": function () {},
-  "destroyShadows": function () {},
-  "destroyTextPath": function () {},
-  "fadeOut": function () {},
-  "fillSetter": function () {},
-  "getBBox": function () {},
-  "getSpanCorrection": function () {},
-  "getStyle": function () {},
-  "hasClass": function () {},
-  "hide": function () {},
-  "htmlCss": function () {},
-  "htmlGetBBox": function () {},
-  "htmlUpdateTransform": function () {},
-  "init": function () {},
-  "invert": function () {},
-  "matrixSetter": function () {},
-  "on": function () {},
-  "opacitySetter": function () {},
-  "removeClass": function () {},
-  "removeTextOutline": function () {},
-  "rotationOriginXSetter": function () {},
-  "rotationOriginYSetter": function () {},
-  "rotationSetter": function () {},
-  "safeRemoveChild": function () {},
-  "scaleXSetter": function () {},
-  "scaleYSetter": function () {},
-  "setRadialReference": function () {},
-  "setSpanRotation": function () {},
-  "setTextPath": function () {},
-  "shadow": function () {},
-  "show": function () {},
-  "stroke-widthSetter": function () {},
-  "strokeSetter": function () {},
-  "strokeWidth": function () {},
-  "symbolAttr": function () {},
-  "textSetter": function () {},
-  "titleSetter": function () {},
-  "toFront": function () {},
-  "translate": function () {},
-  "translateXSetter": function () {},
-  "translateYSetter": function () {},
-  "updateShadows": function () {},
-  "updateTransform": function () {},
-  "verticalAlignSetter": function () {},
-  "visibilitySetter": function () {},
-  "xGetter": function () {},
-  "yGetter": function () {},
-  "zIndexSetter": function () {}
-};
-Highcharts._modules["parts/Globals.js"].SVGRenderer.prototype = {
-  "Element": function () {},
-  "SVG_NS": function () {},
-  "arc": function () {},
-  "buildText": function () {},
-  "button": function () {},
-  "circle": function () {},
-  "clipRect": function () {},
-  "createElement": function () {},
-  "crispLine": function () {},
-  "definition": function () {},
-  "destroy": function () {},
-  "draw": function () {},
-  "escapes": function () {},
-  "fontMetrics": function () {},
-  "g": function () {},
-  "getContrast": function () {},
-  "getRadialAttr": function () {},
-  "getStyle": function () {},
-  "getTransformKey": function () {},
-  "html": function () {},
-  "image": function () {},
-  "init": function () {},
-  "isHidden": function () {},
-  "label": function () {},
-  "path": function () {},
-  "pathToSegments": function () {},
-  "rect": function () {},
-  "rotCorr": function () {},
-  "setSize": function () {},
-  "setStyle": function () {},
-  "symbol": function () {},
-  "symbols": function () {},
-  "text": function () {},
-  "truncate": function () {}
-};
-Highcharts._modules["parts/Globals.js"].Series.prototype = {
-  "addPoint": function () {},
-  "afterAnimate": function () {},
-  "alignDataLabel": function () {},
-  "animate": function () {},
-  "applyExtremes": function () {},
-  "applyZones": function () {},
-  "autoIncrement": function () {},
-  "axisTypes": function () {},
-  "bindAxes": function () {},
-  "buildKDTree": function () {},
-  "coll": function () {},
-  "colorCounter": function () {},
-  "cropData": function () {},
-  "cropShoulder": function () {},
-  "destroy": function () {},
-  "directTouch": function () {},
-  "drawDataLabels": function () {},
-  "drawGraph": function () {},
-  "drawLegendSymbol": function () {},
-  "drawPoints": function () {},
-  "drawTracker": function () {},
-  "eventsToUnbind": function () {},
-  "findPointIndex": function () {},
-  "generatePoints": function () {},
-  "getClipBox": function () {},
-  "getColor": function () {},
-  "getCyclic": function () {},
-  "getExtremes": function () {},
-  "getFirstValidPoint": function () {},
-  "getGraphPath": function () {},
-  "getName": function () {},
-  "getPlotBox": function () {},
-  "getPointsCollection": function () {},
-  "getProcessedData": function () {},
-  "getStackIndicator": function () {},
-  "getSymbol": function () {},
-  "getValidPoints": function () {},
-  "getXExtremes": function () {},
-  "getZonesGraphs": function () {},
-  "hasData": function () {},
-  "hide": function () {},
-  "init": function () {},
-  "insert": function () {},
-  "invertGroups": function () {},
-  "is": function () {},
-  "isCartesian": function () {},
-  "isPointInside": function () {},
-  "justifyDataLabel": function () {},
-  "kdAxisArray": function () {},
-  "markerAttribs": function () {},
-  "modifyStacks": function () {},
-  "onMouseOut": function () {},
-  "onMouseOver": function () {},
-  "parallelArrays": function () {},
-  "percentStacker": function () {},
-  "plotGroup": function () {},
-  "pointAttribs": function () {},
-  "pointClass": function () {},
-  "pointPlacementToXValue": function () {},
-  "processData": function () {},
-  "protoEvents": function () {},
-  "redraw": function () {},
-  "remove": function () {},
-  "removeEvents": function () {},
-  "removePoint": function () {},
-  "render": function () {},
-  "requireSorting": function () {},
-  "searchKDTree": function () {},
-  "searchPoint": function () {},
-  "select": function () {},
-  "setAllPointsToState": function () {},
-  "setClip": function () {},
-  "setData": function () {},
-  "setDataLabelStartPos": function () {},
-  "setDataSortingOptions": function () {},
-  "setName": function () {},
-  "setOptions": function () {},
-  "setStackedPoints": function () {},
-  "setState": function () {},
-  "setVisible": function () {},
-  "show": function () {},
-  "sortData": function () {},
-  "sorted": function () {},
-  "translate": function () {},
-  "type": function () {},
-  "update": function () {},
-  "updateData": function () {},
-  "updateParallelArrays": function () {}
-};
-Highcharts._modules["parts/Globals.js"].StackItem.prototype = {
-  "destroy": function () {},
-  "getStackBox": function () {},
-  "render": function () {},
-  "setOffset": function () {}
-};
-Highcharts._modules["parts/Globals.js"].Tick.prototype = {
-  "addLabel": function () {},
-  "createLabel": function () {},
-  "destroy": function () {},
-  "getLabelPosition": function () {},
-  "getLabelSize": function () {},
-  "getMarkPath": function () {},
-  "getPosition": function () {},
-  "handleOverflow": function () {},
-  "moveLabel": function () {},
-  "render": function () {},
-  "renderGridLine": function () {},
-  "renderLabel": function () {},
-  "renderMark": function () {},
-  "replaceMovedLabel": function () {}
-};
-Highcharts._modules["parts/Globals.js"].Time.prototype = {
-  "dateFormat": function () {},
-  "get": function () {},
-  "getTimeTicks": function () {},
-  "makeTime": function () {},
-  "resolveDTLFormat": function () {},
-  "set": function () {},
-  "timezoneOffsetFunction": function () {},
-  "update": function () {}
-};
-Highcharts._modules["parts/Globals.js"].Tooltip.prototype = {
-  "applyFilter": function () {},
-  "bodyFormatter": function () {},
-  "cleanSplit": function () {},
-  "defaultFormatter": function () {},
-  "destroy": function () {},
-  "drawTracker": function () {},
-  "getAnchor": function () {},
-  "getDateFormat": function () {},
-  "getLabel": function () {},
-  "getPosition": function () {},
-  "getXDateFormat": function () {},
-  "hide": function () {},
-  "init": function () {},
-  "isStickyOnContact": function () {},
-  "move": function () {},
-  "refresh": function () {},
-  "renderSplit": function () {},
-  "styledModeFormat": function () {},
-  "tooltipFooterHeaderFormatter": function () {},
-  "update": function () {},
-  "updatePosition": function () {}
-};
-Highcharts._modules["parts/Globals.js"].seriesTypes.area.prototype = {
-  "addPoint": function () {},
-  "afterAnimate": function () {},
-  "alignDataLabel": function () {},
-  "animate": function () {},
-  "applyExtremes": function () {},
-  "applyZones": function () {},
-  "autoIncrement": function () {},
-  "axisTypes": function () {},
-  "bindAxes": function () {},
-  "buildKDTree": function () {},
-  "coll": function () {},
-  "colorCounter": function () {},
-  "cropData": function () {},
-  "cropShoulder": function () {},
-  "destroy": function () {},
-  "directTouch": function () {},
-  "drawDataLabels": function () {},
-  "drawGraph": function () {},
-  "drawLegendSymbol": function () {},
-  "drawPoints": function () {},
-  "drawTracker": function () {},
-  "eventsToUnbind": function () {},
-  "findPointIndex": function () {},
-  "generatePoints": function () {},
-  "getClipBox": function () {},
-  "getColor": function () {},
-  "getCyclic": function () {},
-  "getExtremes": function () {},
-  "getFirstValidPoint": function () {},
-  "getGraphPath": function () {},
-  "getName": function () {},
-  "getPlotBox": function () {},
-  "getPointsCollection": function () {},
-  "getProcessedData": function () {},
-  "getStackIndicator": function () {},
-  "getStackPoints": function () {},
-  "getSymbol": function () {},
-  "getValidPoints": function () {},
-  "getXExtremes": function () {},
-  "getZonesGraphs": function () {},
-  "hasData": function () {},
-  "hide": function () {},
-  "init": function () {},
-  "insert": function () {},
-  "invertGroups": function () {},
-  "is": function () {},
-  "isCartesian": function () {},
-  "isPointInside": function () {},
-  "justifyDataLabel": function () {},
-  "kdAxisArray": function () {},
-  "markerAttribs": function () {},
-  "modifyStacks": function () {},
-  "onMouseOut": function () {},
-  "onMouseOver": function () {},
-  "parallelArrays": function () {},
-  "percentStacker": function () {},
-  "plotGroup": function () {},
-  "pointAttribs": function () {},
-  "pointClass": function () {},
-  "pointPlacementToXValue": function () {},
-  "processData": function () {},
-  "protoEvents": function () {},
-  "redraw": function () {},
-  "remove": function () {},
-  "removeEvents": function () {},
-  "removePoint": function () {},
-  "render": function () {},
-  "requireSorting": function () {},
-  "searchKDTree": function () {},
-  "searchPoint": function () {},
-  "select": function () {},
-  "setAllPointsToState": function () {},
-  "setClip": function () {},
-  "setData": function () {},
-  "setDataLabelStartPos": function () {},
-  "setDataSortingOptions": function () {},
-  "setName": function () {},
-  "setOptions": function () {},
-  "setStackedPoints": function () {},
-  "setState": function () {},
-  "setVisible": function () {},
-  "show": function () {},
-  "singleStacks": function () {},
-  "sortData": function () {},
-  "sorted": function () {},
-  "translate": function () {},
-  "type": function () {},
-  "update": function () {},
-  "updateData": function () {},
-  "updateParallelArrays": function () {}
-};
-Highcharts._modules["parts/Globals.js"].seriesTypes.areaspline.prototype = {
-  "addPoint": function () {},
-  "afterAnimate": function () {},
-  "alignDataLabel": function () {},
-  "animate": function () {},
-  "applyExtremes": function () {},
-  "applyZones": function () {},
-  "autoIncrement": function () {},
-  "axisTypes": function () {},
-  "bindAxes": function () {},
-  "buildKDTree": function () {},
-  "coll": function () {},
-  "colorCounter": function () {},
-  "cropData": function () {},
-  "cropShoulder": function () {},
-  "destroy": function () {},
-  "directTouch": function () {},
-  "drawDataLabels": function () {},
-  "drawGraph": function () {},
-  "drawLegendSymbol": function () {},
-  "drawPoints": function () {},
-  "drawTracker": function () {},
-  "eventsToUnbind": function () {},
-  "findPointIndex": function () {},
-  "generatePoints": function () {},
-  "getClipBox": function () {},
-  "getColor": function () {},
-  "getCyclic": function () {},
-  "getExtremes": function () {},
-  "getFirstValidPoint": function () {},
-  "getGraphPath": function () {},
-  "getName": function () {},
-  "getPlotBox": function () {},
-  "getPointSpline": function () {},
-  "getPointsCollection": function () {},
-  "getProcessedData": function () {},
-  "getStackIndicator": function () {},
-  "getStackPoints": function () {},
-  "getSymbol": function () {},
-  "getValidPoints": function () {},
-  "getXExtremes": function () {},
-  "getZonesGraphs": function () {},
-  "hasData": function () {},
-  "hide": function () {},
-  "init": function () {},
-  "insert": function () {},
-  "invertGroups": function () {},
-  "is": function () {},
-  "isCartesian": function () {},
-  "isPointInside": function () {},
-  "justifyDataLabel": function () {},
-  "kdAxisArray": function () {},
-  "markerAttribs": function () {},
-  "modifyStacks": function () {},
-  "onMouseOut": function () {},
-  "onMouseOver": function () {},
-  "parallelArrays": function () {},
-  "percentStacker": function () {},
-  "plotGroup": function () {},
-  "pointAttribs": function () {},
-  "pointClass": function () {},
-  "pointPlacementToXValue": function () {},
-  "processData": function () {},
-  "protoEvents": function () {},
-  "redraw": function () {},
-  "remove": function () {},
-  "removeEvents": function () {},
-  "removePoint": function () {},
-  "render": function () {},
-  "requireSorting": function () {},
-  "searchKDTree": function () {},
-  "searchPoint": function () {},
-  "select": function () {},
-  "setAllPointsToState": function () {},
-  "setClip": function () {},
-  "setData": function () {},
-  "setDataLabelStartPos": function () {},
-  "setDataSortingOptions": function () {},
-  "setName": function () {},
-  "setOptions": function () {},
-  "setStackedPoints": function () {},
-  "setState": function () {},
-  "setVisible": function () {},
-  "show": function () {},
-  "sortData": function () {},
-  "sorted": function () {},
-  "translate": function () {},
-  "type": function () {},
-  "update": function () {},
-  "updateData": function () {},
-  "updateParallelArrays": function () {}
-};
-Highcharts._modules["parts/Globals.js"].seriesTypes.bar.prototype = {
-  "addPoint": function () {},
-  "afterAnimate": function () {},
-  "alignDataLabel": function () {},
-  "animate": function () {},
-  "applyExtremes": function () {},
-  "applyZones": function () {},
-  "autoIncrement": function () {},
-  "axisTypes": function () {},
-  "bindAxes": function () {},
-  "buildKDTree": function () {},
-  "coll": function () {},
-  "colorCounter": function () {},
-  "crispCol": function () {},
-  "cropData": function () {},
-  "cropShoulder": function () {},
-  "destroy": function () {},
-  "directTouch": function () {},
-  "drawDataLabels": function () {},
-  "drawGraph": function () {},
-  "drawLegendSymbol": function () {},
-  "drawPoints": function () {},
-  "drawTracker": function () {},
-  "eventsToUnbind": function () {},
-  "findPointIndex": function () {},
-  "generatePoints": function () {},
-  "getClipBox": function () {},
-  "getColor": function () {},
-  "getColumnMetrics": function () {},
-  "getCyclic": function () {},
-  "getExtremes": function () {},
-  "getFirstValidPoint": function () {},
-  "getGraphPath": function () {},
-  "getName": function () {},
-  "getPlotBox": function () {},
-  "getPointsCollection": function () {},
-  "getProcessedData": function () {},
-  "getStackIndicator": function () {},
-  "getSymbol": function () {},
-  "getValidPoints": function () {},
-  "getXExtremes": function () {},
-  "getZonesGraphs": function () {},
-  "hasData": function () {},
-  "hide": function () {},
-  "init": function () {},
-  "insert": function () {},
-  "invertGroups": function () {},
-  "inverted": function () {},
-  "is": function () {},
-  "isCartesian": function () {},
-  "isPointInside": function () {},
-  "justifyDataLabel": function () {},
-  "kdAxisArray": function () {},
-  "markerAttribs": function () {},
-  "modifyStacks": function () {},
-  "negStacks": function () {},
-  "onMouseOut": function () {},
-  "onMouseOver": function () {},
-  "parallelArrays": function () {},
-  "percentStacker": function () {},
-  "plotGroup": function () {},
-  "pointAttribs": function () {},
-  "pointClass": function () {},
-  "pointPlacementToXValue": function () {},
-  "processData": function () {},
-  "protoEvents": function () {},
-  "redraw": function () {},
-  "remove": function () {},
-  "removeEvents": function () {},
-  "removePoint": function () {},
-  "render": function () {},
-  "requireSorting": function () {},
-  "searchKDTree": function () {},
-  "searchPoint": function () {},
-  "select": function () {},
-  "setAllPointsToState": function () {},
-  "setClip": function () {},
-  "setData": function () {},
-  "setDataLabelStartPos": function () {},
-  "setDataSortingOptions": function () {},
-  "setName": function () {},
-  "setOptions": function () {},
-  "setStackedPoints": function () {},
-  "setState": function () {},
-  "setVisible": function () {},
-  "show": function () {},
-  "sortData": function () {},
-  "sorted": function () {},
-  "trackerGroups": function () {},
-  "translate": function () {},
-  "type": function () {},
-  "update": function () {},
-  "updateData": function () {},
-  "updateParallelArrays": function () {}
-};
-Highcharts._modules["parts/Globals.js"].seriesTypes.column.prototype = {
-  "addPoint": function () {},
-  "afterAnimate": function () {},
-  "alignDataLabel": function () {},
-  "animate": function () {},
-  "applyExtremes": function () {},
-  "applyZones": function () {},
-  "autoIncrement": function () {},
-  "axisTypes": function () {},
-  "bindAxes": function () {},
-  "buildKDTree": function () {},
-  "coll": function () {},
-  "colorCounter": function () {},
-  "crispCol": function () {},
-  "cropData": function () {},
-  "cropShoulder": function () {},
-  "destroy": function () {},
-  "directTouch": function () {},
-  "drawDataLabels": function () {},
-  "drawGraph": function () {},
-  "drawLegendSymbol": function () {},
-  "drawPoints": function () {},
-  "drawTracker": function () {},
-  "eventsToUnbind": function () {},
-  "findPointIndex": function () {},
-  "generatePoints": function () {},
-  "getClipBox": function () {},
-  "getColor": function () {},
-  "getColumnMetrics": function () {},
-  "getCyclic": function () {},
-  "getExtremes": function () {},
-  "getFirstValidPoint": function () {},
-  "getGraphPath": function () {},
-  "getName": function () {},
-  "getPlotBox": function () {},
-  "getPointsCollection": function () {},
-  "getProcessedData": function () {},
-  "getStackIndicator": function () {},
-  "getSymbol": function () {},
-  "getValidPoints": function () {},
-  "getXExtremes": function () {},
-  "getZonesGraphs": function () {},
-  "hasData": function () {},
-  "hide": function () {},
-  "init": function () {},
-  "insert": function () {},
-  "invertGroups": function () {},
-  "is": function () {},
-  "isCartesian": function () {},
-  "isPointInside": function () {},
-  "justifyDataLabel": function () {},
-  "kdAxisArray": function () {},
-  "markerAttribs": function () {},
-  "modifyStacks": function () {},
-  "negStacks": function () {},
-  "onMouseOut": function () {},
-  "onMouseOver": function () {},
-  "parallelArrays": function () {},
-  "percentStacker": function () {},
-  "plotGroup": function () {},
-  "pointAttribs": function () {},
-  "pointClass": function () {},
-  "pointPlacementToXValue": function () {},
-  "processData": function () {},
-  "protoEvents": function () {},
-  "redraw": function () {},
-  "remove": function () {},
-  "removeEvents": function () {},
-  "removePoint": function () {},
-  "render": function () {},
-  "requireSorting": function () {},
-  "searchKDTree": function () {},
-  "searchPoint": function () {},
-  "select": function () {},
-  "setAllPointsToState": function () {},
-  "setClip": function () {},
-  "setData": function () {},
-  "setDataLabelStartPos": function () {},
-  "setDataSortingOptions": function () {},
-  "setName": function () {},
-  "setOptions": function () {},
-  "setStackedPoints": function () {},
-  "setState": function () {},
-  "setVisible": function () {},
-  "show": function () {},
-  "sortData": function () {},
-  "sorted": function () {},
-  "trackerGroups": function () {},
-  "translate": function () {},
-  "type": function () {},
-  "update": function () {},
-  "updateData": function () {},
-  "updateParallelArrays": function () {}
-};
-Highcharts._modules["parts/Globals.js"].seriesTypes.line.prototype = {
-  "addPoint": function () {},
-  "afterAnimate": function () {},
-  "alignDataLabel": function () {},
-  "animate": function () {},
-  "applyExtremes": function () {},
-  "applyZones": function () {},
-  "autoIncrement": function () {},
-  "axisTypes": function () {},
-  "bindAxes": function () {},
-  "buildKDTree": function () {},
-  "coll": function () {},
-  "colorCounter": function () {},
-  "cropData": function () {},
-  "cropShoulder": function () {},
-  "destroy": function () {},
-  "directTouch": function () {},
-  "drawDataLabels": function () {},
-  "drawGraph": function () {},
-  "drawLegendSymbol": function () {},
-  "drawPoints": function () {},
-  "drawTracker": function () {},
-  "eventsToUnbind": function () {},
-  "findPointIndex": function () {},
-  "generatePoints": function () {},
-  "getClipBox": function () {},
-  "getColor": function () {},
-  "getCyclic": function () {},
-  "getExtremes": function () {},
-  "getFirstValidPoint": function () {},
-  "getGraphPath": function () {},
-  "getName": function () {},
-  "getPlotBox": function () {},
-  "getPointsCollection": function () {},
-  "getProcessedData": function () {},
-  "getStackIndicator": function () {},
-  "getSymbol": function () {},
-  "getValidPoints": function () {},
-  "getXExtremes": function () {},
-  "getZonesGraphs": function () {},
-  "hasData": function () {},
-  "hide": function () {},
-  "init": function () {},
-  "insert": function () {},
-  "invertGroups": function () {},
-  "is": function () {},
-  "isCartesian": function () {},
-  "isPointInside": function () {},
-  "justifyDataLabel": function () {},
-  "kdAxisArray": function () {},
-  "markerAttribs": function () {},
-  "modifyStacks": function () {},
-  "onMouseOut": function () {},
-  "onMouseOver": function () {},
-  "parallelArrays": function () {},
-  "percentStacker": function () {},
-  "plotGroup": function () {},
-  "pointAttribs": function () {},
-  "pointClass": function () {},
-  "pointPlacementToXValue": function () {},
-  "processData": function () {},
-  "protoEvents": function () {},
-  "redraw": function () {},
-  "remove": function () {},
-  "removeEvents": function () {},
-  "removePoint": function () {},
-  "render": function () {},
-  "requireSorting": function () {},
-  "searchKDTree": function () {},
-  "searchPoint": function () {},
-  "select": function () {},
-  "setAllPointsToState": function () {},
-  "setClip": function () {},
-  "setData": function () {},
-  "setDataLabelStartPos": function () {},
-  "setDataSortingOptions": function () {},
-  "setName": function () {},
-  "setOptions": function () {},
-  "setStackedPoints": function () {},
-  "setState": function () {},
-  "setVisible": function () {},
-  "show": function () {},
-  "sortData": function () {},
-  "sorted": function () {},
-  "translate": function () {},
-  "type": function () {},
-  "update": function () {},
-  "updateData": function () {},
-  "updateParallelArrays": function () {}
-};
-Highcharts._modules["parts/Globals.js"].seriesTypes.pie.prototype = {
-  "addPoint": function () {},
-  "afterAnimate": function () {},
-  "alignDataLabel": function () {},
-  "animate": function () {},
-  "applyExtremes": function () {},
-  "applyZones": function () {},
-  "autoIncrement": function () {},
-  "axisTypes": function () {},
-  "bindAxes": function () {},
-  "buildKDTree": function () {},
-  "coll": function () {},
-  "colorCounter": function () {},
-  "cropData": function () {},
-  "cropShoulder": function () {},
-  "dataLabelPositioners": function () {},
-  "destroy": function () {},
-  "directTouch": function () {},
-  "drawDataLabels": function () {},
-  "drawEmpty": function () {},
-  "drawGraph": function () {},
-  "drawLegendSymbol": function () {},
-  "drawPoints": function () {},
-  "drawTracker": function () {},
-  "eventsToUnbind": function () {},
-  "findPointIndex": function () {},
-  "generatePoints": function () {},
-  "getCenter": function () {},
-  "getClipBox": function () {},
-  "getColor": function () {},
-  "getCyclic": function () {},
-  "getExtremes": function () {},
-  "getFirstValidPoint": function () {},
-  "getGraphPath": function () {},
-  "getName": function () {},
-  "getPlotBox": function () {},
-  "getPointsCollection": function () {},
-  "getProcessedData": function () {},
-  "getStackIndicator": function () {},
-  "getSymbol": function () {},
-  "getValidPoints": function () {},
-  "getX": function () {},
-  "getXExtremes": function () {},
-  "getZonesGraphs": function () {},
-  "hasData": function () {},
-  "hide": function () {},
-  "init": function () {},
-  "insert": function () {},
-  "invertGroups": function () {},
-  "is": function () {},
-  "isCartesian": function () {},
-  "isPointInside": function () {},
-  "justifyDataLabel": function () {},
-  "kdAxisArray": function () {},
-  "markerAttribs": function () {},
-  "modifyStacks": function () {},
-  "noSharedTooltip": function () {},
-  "onMouseOut": function () {},
-  "onMouseOver": function () {},
-  "parallelArrays": function () {},
-  "percentStacker": function () {},
-  "placeDataLabels": function () {},
-  "plotGroup": function () {},
-  "pointAttribs": function () {},
-  "pointClass": function () {},
-  "pointPlacementToXValue": function () {},
-  "processData": function () {},
-  "protoEvents": function () {},
-  "redraw": function () {},
-  "redrawPoints": function () {},
-  "remove": function () {},
-  "removeEvents": function () {},
-  "removePoint": function () {},
-  "render": function () {},
-  "requireSorting": function () {},
-  "searchKDTree": function () {},
-  "searchPoint": function () {},
-  "select": function () {},
-  "setAllPointsToState": function () {},
-  "setClip": function () {},
-  "setData": function () {},
-  "setDataLabelStartPos": function () {},
-  "setDataSortingOptions": function () {},
-  "setName": function () {},
-  "setOptions": function () {},
-  "setStackedPoints": function () {},
-  "setState": function () {},
-  "setVisible": function () {},
-  "show": function () {},
-  "sortByAngle": function () {},
-  "sortData": function () {},
-  "sorted": function () {},
-  "trackerGroups": function () {},
-  "translate": function () {},
-  "type": function () {},
-  "update": function () {},
-  "updateData": function () {},
-  "updateParallelArrays": function () {},
-  "updateTotals": function () {},
-  "verifyDataLabelOverflow": function () {}
-};
-Highcharts._modules["parts/Globals.js"].seriesTypes.scatter.prototype = {
-  "addPoint": function () {},
-  "afterAnimate": function () {},
-  "alignDataLabel": function () {},
-  "animate": function () {},
-  "applyExtremes": function () {},
-  "applyJitter": function () {},
-  "applyZones": function () {},
-  "autoIncrement": function () {},
-  "axisTypes": function () {},
-  "bindAxes": function () {},
-  "buildKDTree": function () {},
-  "coll": function () {},
-  "colorCounter": function () {},
-  "cropData": function () {},
-  "cropShoulder": function () {},
-  "destroy": function () {},
-  "directTouch": function () {},
-  "drawDataLabels": function () {},
-  "drawGraph": function () {},
-  "drawLegendSymbol": function () {},
-  "drawPoints": function () {},
-  "drawTracker": function () {},
-  "eventsToUnbind": function () {},
-  "findPointIndex": function () {},
-  "generatePoints": function () {},
-  "getClipBox": function () {},
-  "getColor": function () {},
-  "getCyclic": function () {},
-  "getExtremes": function () {},
-  "getFirstValidPoint": function () {},
-  "getGraphPath": function () {},
-  "getName": function () {},
-  "getPlotBox": function () {},
-  "getPointsCollection": function () {},
-  "getProcessedData": function () {},
-  "getStackIndicator": function () {},
-  "getSymbol": function () {},
-  "getValidPoints": function () {},
-  "getXExtremes": function () {},
-  "getZonesGraphs": function () {},
-  "hasData": function () {},
-  "hide": function () {},
-  "init": function () {},
-  "insert": function () {},
-  "invertGroups": function () {},
-  "is": function () {},
-  "isCartesian": function () {},
-  "isPointInside": function () {},
-  "justifyDataLabel": function () {},
-  "kdAxisArray": function () {},
-  "markerAttribs": function () {},
-  "modifyStacks": function () {},
-  "noSharedTooltip": function () {},
-  "onMouseOut": function () {},
-  "onMouseOver": function () {},
-  "parallelArrays": function () {},
-  "percentStacker": function () {},
-  "plotGroup": function () {},
-  "pointAttribs": function () {},
-  "pointClass": function () {},
-  "pointPlacementToXValue": function () {},
-  "processData": function () {},
-  "protoEvents": function () {},
-  "redraw": function () {},
-  "remove": function () {},
-  "removeEvents": function () {},
-  "removePoint": function () {},
-  "render": function () {},
-  "requireSorting": function () {},
-  "searchKDTree": function () {},
-  "searchPoint": function () {},
-  "select": function () {},
-  "setAllPointsToState": function () {},
-  "setClip": function () {},
-  "setData": function () {},
-  "setDataLabelStartPos": function () {},
-  "setDataSortingOptions": function () {},
-  "setName": function () {},
-  "setOptions": function () {},
-  "setStackedPoints": function () {},
-  "setState": function () {},
-  "setVisible": function () {},
-  "show": function () {},
-  "sortData": function () {},
-  "sorted": function () {},
-  "takeOrdinalPosition": function () {},
-  "trackerGroups": function () {},
-  "translate": function () {},
-  "type": function () {},
-  "update": function () {},
-  "updateData": function () {},
-  "updateParallelArrays": function () {}
-};
-Highcharts._modules["parts/Globals.js"].seriesTypes.spline.prototype = {
-  "addPoint": function () {},
-  "afterAnimate": function () {},
-  "alignDataLabel": function () {},
-  "animate": function () {},
-  "applyExtremes": function () {},
-  "applyZones": function () {},
-  "autoIncrement": function () {},
-  "axisTypes": function () {},
-  "bindAxes": function () {},
-  "buildKDTree": function () {},
-  "coll": function () {},
-  "colorCounter": function () {},
-  "cropData": function () {},
-  "cropShoulder": function () {},
-  "destroy": function () {},
-  "directTouch": function () {},
-  "drawDataLabels": function () {},
-  "drawGraph": function () {},
-  "drawLegendSymbol": function () {},
-  "drawPoints": function () {},
-  "drawTracker": function () {},
-  "eventsToUnbind": function () {},
-  "findPointIndex": function () {},
-  "generatePoints": function () {},
-  "getClipBox": function () {},
-  "getColor": function () {},
-  "getCyclic": function () {},
-  "getExtremes": function () {},
-  "getFirstValidPoint": function () {},
-  "getGraphPath": function () {},
-  "getName": function () {},
-  "getPlotBox": function () {},
-  "getPointSpline": function () {},
-  "getPointsCollection": function () {},
-  "getProcessedData": function () {},
-  "getStackIndicator": function () {},
-  "getSymbol": function () {},
-  "getValidPoints": function () {},
-  "getXExtremes": function () {},
-  "getZonesGraphs": function () {},
-  "hasData": function () {},
-  "hide": function () {},
-  "init": function () {},
-  "insert": function () {},
-  "invertGroups": function () {},
-  "is": function () {},
-  "isCartesian": function () {},
-  "isPointInside": function () {},
-  "justifyDataLabel": function () {},
-  "kdAxisArray": function () {},
-  "markerAttribs": function () {},
-  "modifyStacks": function () {},
-  "onMouseOut": function () {},
-  "onMouseOver": function () {},
-  "parallelArrays": function () {},
-  "percentStacker": function () {},
-  "plotGroup": function () {},
-  "pointAttribs": function () {},
-  "pointClass": function () {},
-  "pointPlacementToXValue": function () {},
-  "processData": function () {},
-  "protoEvents": function () {},
-  "redraw": function () {},
-  "remove": function () {},
-  "removeEvents": function () {},
-  "removePoint": function () {},
-  "render": function () {},
-  "requireSorting": function () {},
-  "searchKDTree": function () {},
-  "searchPoint": function () {},
-  "select": function () {},
-  "setAllPointsToState": function () {},
-  "setClip": function () {},
-  "setData": function () {},
-  "setDataLabelStartPos": function () {},
-  "setDataSortingOptions": function () {},
-  "setName": function () {},
-  "setOptions": function () {},
-  "setStackedPoints": function () {},
-  "setState": function () {},
-  "setVisible": function () {},
-  "show": function () {},
-  "sortData": function () {},
-  "sorted": function () {},
-  "translate": function () {},
-  "type": function () {},
-  "update": function () {},
-  "updateData": function () {},
-  "updateParallelArrays": function () {}
-};
-Highcharts._modules["parts/Globals.js"].win.parent.React.Component.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-Highcharts._modules["parts/Globals.js"].win.parent.React.PureComponent.prototype = {
-  "constructor": function () {},
-  "forceUpdate": function () {},
-  "isPureReactComponent": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-Highcharts._modules["parts/Globals.js"].win.top.React.Component.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-Highcharts._modules["parts/Globals.js"].win.top.React.PureComponent.prototype = {
-  "constructor": function () {},
-  "forceUpdate": function () {},
-  "isPureReactComponent": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-Highcharts._modules["parts/Legend.js"].prototype = {
-  "adjustMargins": function () {},
-  "align": function () {},
-  "colorizeItem": function () {},
-  "createCheckboxForItem": function () {},
-  "destroy": function () {},
-  "destroyItem": function () {},
-  "getAlignment": function () {},
-  "getAllItems": function () {},
-  "handleOverflow": function () {},
-  "init": function () {},
-  "layoutItem": function () {},
-  "positionCheckboxes": function () {},
-  "positionItem": function () {},
-  "positionItems": function () {},
-  "proximatePositions": function () {},
-  "render": function () {},
-  "renderItem": function () {},
-  "renderTitle": function () {},
-  "scroll": function () {},
-  "setItemEvents": function () {},
-  "setOptions": function () {},
-  "setText": function () {},
-  "update": function () {}
-};
-Highcharts._modules["parts/MSPointer.js"].prototype = {
-  "applyInactiveState": function () {},
-  "batchMSEvents": function () {},
-  "constructor": function () {},
-  "destroy": function () {},
-  "drag": function () {},
-  "dragStart": function () {},
-  "drop": function () {},
-  "findNearestKDPoint": function () {},
-  "getChartCoordinatesFromPoint": function () {},
-  "getChartPosition": function () {},
-  "getCoordinates": function () {},
-  "getHoverData": function () {},
-  "getPointFromEvent": function () {},
-  "inClass": function () {},
-  "init": function () {},
-  "normalize": function () {},
-  "onContainerClick": function () {},
-  "onContainerMouseDown": function () {},
-  "onContainerMouseLeave": function () {},
-  "onContainerMouseMove": function () {},
-  "onContainerPointerDown": function () {},
-  "onContainerPointerMove": function () {},
-  "onContainerTouchMove": function () {},
-  "onContainerTouchStart": function () {},
-  "onDocumentMouseMove": function () {},
-  "onDocumentMouseUp": function () {},
-  "onDocumentPointerUp": function () {},
-  "onDocumentTouchEnd": function () {},
-  "onTrackerMouseOut": function () {},
-  "pinch": function () {},
-  "pinchTranslate": function () {},
-  "pinchTranslateDirection": function () {},
-  "reset": function () {},
-  "runPointActions": function () {},
-  "scaleGroups": function () {},
-  "setDOMEvents": function () {},
-  "setHoverChartIndex": function () {},
-  "touch": function () {},
-  "zoomOption": function () {}
-};
-Highcharts._modules["parts/PlotLineOrBand.js"].prototype = {
-  "destroy": function () {},
-  "getLabelText": function () {},
-  "render": function () {},
-  "renderLabel": function () {}
-};
-Highcharts._modules["parts/Point.js"].prototype = {
-  "animateBeforeDestroy": function () {},
-  "applyOptions": function () {},
-  "destroy": function () {},
-  "destroyElements": function () {},
-  "firePointEvent": function () {},
-  "getClassName": function () {},
-  "getGraphicalProps": function () {},
-  "getLabelConfig": function () {},
-  "getNestedProperty": function () {},
-  "getZone": function () {},
-  "haloPath": function () {},
-  "hasNewShapeType": function () {},
-  "importEvents": function () {},
-  "init": function () {},
-  "onMouseOut": function () {},
-  "onMouseOver": function () {},
-  "optionsToObject": function () {},
-  "remove": function () {},
-  "resolveColor": function () {},
-  "select": function () {},
-  "setNestedProperty": function () {},
-  "setState": function () {},
-  "tooltipFormatter": function () {},
-  "update": function () {}
-};
-Highcharts._modules["parts/Pointer.js"].prototype = {
-  "applyInactiveState": function () {},
-  "destroy": function () {},
-  "drag": function () {},
-  "dragStart": function () {},
-  "drop": function () {},
-  "findNearestKDPoint": function () {},
-  "getChartCoordinatesFromPoint": function () {},
-  "getChartPosition": function () {},
-  "getCoordinates": function () {},
-  "getHoverData": function () {},
-  "getPointFromEvent": function () {},
-  "inClass": function () {},
-  "init": function () {},
-  "normalize": function () {},
-  "onContainerClick": function () {},
-  "onContainerMouseDown": function () {},
-  "onContainerMouseLeave": function () {},
-  "onContainerMouseMove": function () {},
-  "onContainerTouchMove": function () {},
-  "onContainerTouchStart": function () {},
-  "onDocumentMouseMove": function () {},
-  "onDocumentMouseUp": function () {},
-  "onDocumentTouchEnd": function () {},
-  "onTrackerMouseOut": function () {},
-  "pinch": function () {},
-  "pinchTranslate": function () {},
-  "pinchTranslateDirection": function () {},
-  "reset": function () {},
-  "runPointActions": function () {},
-  "scaleGroups": function () {},
-  "setDOMEvents": function () {},
-  "setHoverChartIndex": function () {},
-  "touch": function () {},
-  "zoomOption": function () {}
-};
-Highcharts._modules["parts/SVGElement.js"].prototype = {
-  "_defaultGetter": function () {},
-  "_defaultSetter": function () {},
-  "add": function () {},
-  "addClass": function () {},
-  "afterSetters": function () {},
-  "align": function () {},
-  "alignSetter": function () {},
-  "animate": function () {},
-  "applyTextOutline": function () {},
-  "attr": function () {},
-  "clip": function () {},
-  "complexColor": function () {},
-  "crisp": function () {},
-  "css": function () {},
-  "dSetter": function () {},
-  "dashstyleSetter": function () {},
-  "destroy": function () {},
-  "destroyShadows": function () {},
-  "destroyTextPath": function () {},
-  "fadeOut": function () {},
-  "fillSetter": function () {},
-  "getBBox": function () {},
-  "getSpanCorrection": function () {},
-  "getStyle": function () {},
-  "hasClass": function () {},
-  "hide": function () {},
-  "htmlCss": function () {},
-  "htmlGetBBox": function () {},
-  "htmlUpdateTransform": function () {},
-  "init": function () {},
-  "invert": function () {},
-  "matrixSetter": function () {},
-  "on": function () {},
-  "opacitySetter": function () {},
-  "removeClass": function () {},
-  "removeTextOutline": function () {},
-  "rotationOriginXSetter": function () {},
-  "rotationOriginYSetter": function () {},
-  "rotationSetter": function () {},
-  "safeRemoveChild": function () {},
-  "scaleXSetter": function () {},
-  "scaleYSetter": function () {},
-  "setRadialReference": function () {},
-  "setSpanRotation": function () {},
-  "setTextPath": function () {},
-  "shadow": function () {},
-  "show": function () {},
-  "stroke-widthSetter": function () {},
-  "strokeSetter": function () {},
-  "strokeWidth": function () {},
-  "symbolAttr": function () {},
-  "textSetter": function () {},
-  "titleSetter": function () {},
-  "toFront": function () {},
-  "translate": function () {},
-  "translateXSetter": function () {},
-  "translateYSetter": function () {},
-  "updateShadows": function () {},
-  "updateTransform": function () {},
-  "verticalAlignSetter": function () {},
-  "visibilitySetter": function () {},
-  "xGetter": function () {},
-  "yGetter": function () {},
-  "zIndexSetter": function () {}
-};
-Highcharts._modules["parts/Stacking.js"].prototype = {
-  "destroy": function () {},
-  "getStackBox": function () {},
-  "render": function () {},
-  "setOffset": function () {}
-};
-Highcharts._modules["parts/Tick.js"].prototype = {
-  "addLabel": function () {},
-  "createLabel": function () {},
-  "destroy": function () {},
-  "getLabelPosition": function () {},
-  "getLabelSize": function () {},
-  "getMarkPath": function () {},
-  "getPosition": function () {},
-  "handleOverflow": function () {},
-  "moveLabel": function () {},
-  "render": function () {},
-  "renderGridLine": function () {},
-  "renderLabel": function () {},
-  "renderMark": function () {},
-  "replaceMovedLabel": function () {}
-};
-Highcharts._modules["parts/Time.js"].prototype = {
-  "dateFormat": function () {},
-  "get": function () {},
-  "getTimeTicks": function () {},
-  "makeTime": function () {},
-  "resolveDTLFormat": function () {},
-  "set": function () {},
-  "timezoneOffsetFunction": function () {},
-  "update": function () {}
-};
-Highcharts._modules["parts/Tooltip.js"].prototype = {
-  "applyFilter": function () {},
-  "bodyFormatter": function () {},
-  "cleanSplit": function () {},
-  "defaultFormatter": function () {},
-  "destroy": function () {},
-  "drawTracker": function () {},
-  "getAnchor": function () {},
-  "getDateFormat": function () {},
-  "getLabel": function () {},
-  "getPosition": function () {},
-  "getXDateFormat": function () {},
-  "hide": function () {},
-  "init": function () {},
-  "isStickyOnContact": function () {},
-  "move": function () {},
-  "refresh": function () {},
-  "renderSplit": function () {},
-  "styledModeFormat": function () {},
-  "tooltipFooterHeaderFormatter": function () {},
-  "update": function () {},
-  "updatePosition": function () {}
-};
-Highcharts._modules["parts/Utilities.js"].Fx.prototype = {
-  "dSetter": function () {},
-  "fillSetter": function () {},
-  "initPath": function () {},
-  "run": function () {},
-  "step": function () {},
-  "strokeSetter": function () {},
-  "update": function () {}
-};
 Highcharts.seriesTypes.area.prototype = {
   "addPoint": function () {},
   "afterAnimate": function () {},
@@ -22448,7 +23411,6 @@ Highcharts.seriesTypes.area.prototype = {
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getClipBox": function () {},
@@ -22468,6 +23430,7 @@ Highcharts.seriesTypes.area.prototype = {
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -22503,6 +23466,7 @@ Highcharts.seriesTypes.area.prototype = {
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -22540,7 +23504,6 @@ Highcharts.seriesTypes.areaspline.prototype = {
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getClipBox": function () {},
@@ -22561,6 +23524,7 @@ Highcharts.seriesTypes.areaspline.prototype = {
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -22596,6 +23560,7 @@ Highcharts.seriesTypes.areaspline.prototype = {
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -22612,6 +23577,7 @@ Highcharts.seriesTypes.areaspline.prototype = {
 };
 Highcharts.seriesTypes.bar.prototype = {
   "addPoint": function () {},
+  "adjustForMissingColumns": function () {},
   "afterAnimate": function () {},
   "alignDataLabel": function () {},
   "animate": function () {},
@@ -22633,7 +23599,6 @@ Highcharts.seriesTypes.bar.prototype = {
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getClipBox": function () {},
@@ -22653,6 +23618,7 @@ Highcharts.seriesTypes.bar.prototype = {
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -22690,6 +23656,7 @@ Highcharts.seriesTypes.bar.prototype = {
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -22707,6 +23674,7 @@ Highcharts.seriesTypes.bar.prototype = {
 };
 Highcharts.seriesTypes.column.prototype = {
   "addPoint": function () {},
+  "adjustForMissingColumns": function () {},
   "afterAnimate": function () {},
   "alignDataLabel": function () {},
   "animate": function () {},
@@ -22728,7 +23696,6 @@ Highcharts.seriesTypes.column.prototype = {
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getClipBox": function () {},
@@ -22748,6 +23715,7 @@ Highcharts.seriesTypes.column.prototype = {
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -22784,6 +23752,7 @@ Highcharts.seriesTypes.column.prototype = {
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -22821,7 +23790,6 @@ Highcharts.seriesTypes.line.prototype = {
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getClipBox": function () {},
@@ -22840,6 +23808,7 @@ Highcharts.seriesTypes.line.prototype = {
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -22875,6 +23844,7 @@ Highcharts.seriesTypes.line.prototype = {
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -22913,7 +23883,6 @@ Highcharts.seriesTypes.pie.prototype = {
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getCenter": function () {},
@@ -22934,6 +23903,7 @@ Highcharts.seriesTypes.pie.prototype = {
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -22972,6 +23942,7 @@ Highcharts.seriesTypes.pie.prototype = {
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -23013,7 +23984,6 @@ Highcharts.seriesTypes.scatter.prototype = {
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getClipBox": function () {},
@@ -23032,6 +24002,7 @@ Highcharts.seriesTypes.scatter.prototype = {
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -23068,6 +24039,7 @@ Highcharts.seriesTypes.scatter.prototype = {
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -23106,7 +24078,6 @@ Highcharts.seriesTypes.spline.prototype = {
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getClipBox": function () {},
@@ -23126,6 +24097,7 @@ Highcharts.seriesTypes.spline.prototype = {
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -23161,6 +24133,7 @@ Highcharts.seriesTypes.spline.prototype = {
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -23241,6 +24214,7 @@ Highcharts.win.Highcharts.Axis.prototype = {
   "unsquish": function () {},
   "update": function () {},
   "updateNames": function () {},
+  "validatePositiveValue": function () {},
   "zoom": function () {}
 };
 Highcharts.win.Highcharts.Chart.prototype = {
@@ -23400,6 +24374,7 @@ Highcharts.win.Highcharts.Pointer.prototype = {
   "normalize": function () {},
   "onContainerClick": function () {},
   "onContainerMouseDown": function () {},
+  "onContainerMouseEnter": function () {},
   "onContainerMouseLeave": function () {},
   "onContainerMouseMove": function () {},
   "onContainerTouchMove": function () {},
@@ -23579,7 +24554,6 @@ Highcharts.win.Highcharts.Series.prototype = {
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getClipBox": function () {},
@@ -23598,6 +24572,7 @@ Highcharts.win.Highcharts.Series.prototype = {
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -23633,6 +24608,7 @@ Highcharts.win.Highcharts.Series.prototype = {
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -23702,7 +24678,16 @@ Highcharts.win.Highcharts.Tooltip.prototype = {
   "update": function () {},
   "updatePosition": function () {}
 };
-Highcharts.win.Highcharts._modules["parts/Axis.js"].prototype = {
+Highcharts.win.Highcharts._modules["Core/Animation/Fx.js"].prototype = {
+  "dSetter": function () {},
+  "fillSetter": function () {},
+  "initPath": function () {},
+  "run": function () {},
+  "step": function () {},
+  "strokeSetter": function () {},
+  "update": function () {}
+};
+Highcharts.win.Highcharts._modules["Core/Axis/Axis.js"].prototype = {
   "addPlotBand": function () {},
   "addPlotBandOrLine": function () {},
   "addPlotLine": function () {},
@@ -23768,19 +24753,109 @@ Highcharts.win.Highcharts._modules["parts/Axis.js"].prototype = {
   "unsquish": function () {},
   "update": function () {},
   "updateNames": function () {},
+  "validatePositiveValue": function () {},
   "zoom": function () {}
 };
-Highcharts.win.Highcharts._modules["parts/Color.js"].prototype = {
+Highcharts.win.Highcharts._modules["Core/Axis/DateTimeAxis.js"].AdditionsClass.prototype = {
+  "normalizeTimeTickInterval": function () {}
+};
+Highcharts.win.Highcharts._modules["Core/Axis/PlotLineOrBand.js"].prototype = {
+  "destroy": function () {},
+  "getLabelText": function () {},
+  "render": function () {},
+  "renderLabel": function () {}
+};
+Highcharts.win.Highcharts._modules["Core/Axis/Tick.js"].prototype = {
+  "addLabel": function () {},
+  "createLabel": function () {},
+  "destroy": function () {},
+  "getLabelPosition": function () {},
+  "getLabelSize": function () {},
+  "getMarkPath": function () {},
+  "getPosition": function () {},
+  "handleOverflow": function () {},
+  "moveLabel": function () {},
+  "render": function () {},
+  "renderGridLine": function () {},
+  "renderLabel": function () {},
+  "renderMark": function () {},
+  "replaceMovedLabel": function () {}
+};
+Highcharts.win.Highcharts._modules["Core/Chart/Chart.js"].prototype = {
+  "addAxis": function () {},
+  "addColorAxis": function () {},
+  "addCredits": function () {},
+  "addSeries": function () {},
+  "applyDescription": function () {},
+  "applyFixed": function () {},
+  "callbacks": function () {},
+  "collectionsWithInit": function () {},
+  "collectionsWithUpdate": function () {},
+  "createAxis": function () {},
+  "currentOptions": function () {},
+  "destroy": function () {},
+  "drawChartBox": function () {},
+  "firstRender": function () {},
+  "get": function () {},
+  "getArgs": function () {},
+  "getAxes": function () {},
+  "getAxisMargins": function () {},
+  "getChartSize": function () {},
+  "getContainer": function () {},
+  "getMargins": function () {},
+  "getSelectedPoints": function () {},
+  "getSelectedSeries": function () {},
+  "getSeriesOrderByLinks": function () {},
+  "getStacks": function () {},
+  "hideLoading": function () {},
+  "hideOverlappingLabels": function () {},
+  "init": function () {},
+  "initSeries": function () {},
+  "isInsidePlot": function () {},
+  "layOutTitles": function () {},
+  "linkSeries": function () {},
+  "matchResponsiveRule": function () {},
+  "moveFixedElements": function () {},
+  "onload": function () {},
+  "orderSeries": function () {},
+  "pan": function () {},
+  "propFromSeries": function () {},
+  "propsRequireDirtyBox": function () {},
+  "propsRequireReflow": function () {},
+  "propsRequireUpdateSeries": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "reflow": function () {},
+  "render": function () {},
+  "renderLabels": function () {},
+  "renderSeries": function () {},
+  "resetMargins": function () {},
+  "setCaption": function () {},
+  "setChartSize": function () {},
+  "setClassName": function () {},
+  "setReflow": function () {},
+  "setResponsive": function () {},
+  "setSeriesData": function () {},
+  "setSize": function () {},
+  "setSubtitle": function () {},
+  "setTitle": function () {},
+  "setUpScrolling": function () {},
+  "showLoading": function () {},
+  "showResetZoom": function () {},
+  "temporaryDisplay": function () {},
+  "update": function () {},
+  "updateContainerScaling": function () {},
+  "zoom": function () {},
+  "zoomOut": function () {}
+};
+Highcharts.win.Highcharts._modules["Core/Color/Color.js"].prototype = {
   "brighten": function () {},
   "get": function () {},
   "init": function () {},
   "setOpacity": function () {},
   "tweenTo": function () {}
 };
-Highcharts.win.Highcharts._modules["parts/DateTimeAxis.js"].AdditionsClass.prototype = {
-  "normalizeTimeTickInterval": function () {}
-};
-Highcharts.win.Highcharts._modules["parts/Legend.js"].prototype = {
+Highcharts.win.Highcharts._modules["Core/Legend.js"].prototype = {
   "adjustMargins": function () {},
   "align": function () {},
   "colorizeItem": function () {},
@@ -23805,7 +24880,7 @@ Highcharts.win.Highcharts._modules["parts/Legend.js"].prototype = {
   "setText": function () {},
   "update": function () {}
 };
-Highcharts.win.Highcharts._modules["parts/MSPointer.js"].prototype = {
+Highcharts.win.Highcharts._modules["Core/MSPointer.js"].prototype = {
   "applyInactiveState": function () {},
   "batchMSEvents": function () {},
   "constructor": function () {},
@@ -23824,6 +24899,7 @@ Highcharts.win.Highcharts._modules["parts/MSPointer.js"].prototype = {
   "normalize": function () {},
   "onContainerClick": function () {},
   "onContainerMouseDown": function () {},
+  "onContainerMouseEnter": function () {},
   "onContainerMouseLeave": function () {},
   "onContainerMouseMove": function () {},
   "onContainerPointerDown": function () {},
@@ -23846,39 +24922,7 @@ Highcharts.win.Highcharts._modules["parts/MSPointer.js"].prototype = {
   "touch": function () {},
   "zoomOption": function () {}
 };
-Highcharts.win.Highcharts._modules["parts/PlotLineOrBand.js"].prototype = {
-  "destroy": function () {},
-  "getLabelText": function () {},
-  "render": function () {},
-  "renderLabel": function () {}
-};
-Highcharts.win.Highcharts._modules["parts/Point.js"].prototype = {
-  "animateBeforeDestroy": function () {},
-  "applyOptions": function () {},
-  "destroy": function () {},
-  "destroyElements": function () {},
-  "firePointEvent": function () {},
-  "getClassName": function () {},
-  "getGraphicalProps": function () {},
-  "getLabelConfig": function () {},
-  "getNestedProperty": function () {},
-  "getZone": function () {},
-  "haloPath": function () {},
-  "hasNewShapeType": function () {},
-  "importEvents": function () {},
-  "init": function () {},
-  "onMouseOut": function () {},
-  "onMouseOver": function () {},
-  "optionsToObject": function () {},
-  "remove": function () {},
-  "resolveColor": function () {},
-  "select": function () {},
-  "setNestedProperty": function () {},
-  "setState": function () {},
-  "tooltipFormatter": function () {},
-  "update": function () {}
-};
-Highcharts.win.Highcharts._modules["parts/Pointer.js"].prototype = {
+Highcharts.win.Highcharts._modules["Core/Pointer.js"].prototype = {
   "applyInactiveState": function () {},
   "destroy": function () {},
   "drag": function () {},
@@ -23895,6 +24939,7 @@ Highcharts.win.Highcharts._modules["parts/Pointer.js"].prototype = {
   "normalize": function () {},
   "onContainerClick": function () {},
   "onContainerMouseDown": function () {},
+  "onContainerMouseEnter": function () {},
   "onContainerMouseLeave": function () {},
   "onContainerMouseMove": function () {},
   "onContainerTouchMove": function () {},
@@ -23914,7 +24959,7 @@ Highcharts.win.Highcharts._modules["parts/Pointer.js"].prototype = {
   "touch": function () {},
   "zoomOption": function () {}
 };
-Highcharts.win.Highcharts._modules["parts/SVGElement.js"].prototype = {
+Highcharts.win.Highcharts._modules["Core/Renderer/HTML/HTMLElement.js"].prototype = {
   "_defaultGetter": function () {},
   "_defaultSetter": function () {},
   "add": function () {},
@@ -23980,71 +25025,227 @@ Highcharts.win.Highcharts._modules["parts/SVGElement.js"].prototype = {
   "yGetter": function () {},
   "zIndexSetter": function () {}
 };
-Highcharts.win.Highcharts._modules["parts/Stacking.js"].prototype = {
+Highcharts.win.Highcharts._modules["Core/Renderer/HTML/HTMLRenderer.js"].prototype = {
+  "Element": function () {},
+  "SVG_NS": function () {},
+  "arc": function () {},
+  "buildText": function () {},
+  "button": function () {},
+  "circle": function () {},
+  "clipRect": function () {},
+  "createElement": function () {},
+  "crispLine": function () {},
+  "definition": function () {},
   "destroy": function () {},
-  "getStackBox": function () {},
-  "render": function () {},
-  "setOffset": function () {}
-};
-Highcharts.win.Highcharts._modules["parts/Tick.js"].prototype = {
-  "addLabel": function () {},
-  "createLabel": function () {},
-  "destroy": function () {},
-  "getLabelPosition": function () {},
-  "getLabelSize": function () {},
-  "getMarkPath": function () {},
-  "getPosition": function () {},
-  "handleOverflow": function () {},
-  "moveLabel": function () {},
-  "render": function () {},
-  "renderGridLine": function () {},
-  "renderLabel": function () {},
-  "renderMark": function () {},
-  "replaceMovedLabel": function () {}
-};
-Highcharts.win.Highcharts._modules["parts/Time.js"].prototype = {
-  "dateFormat": function () {},
-  "get": function () {},
-  "getTimeTicks": function () {},
-  "makeTime": function () {},
-  "resolveDTLFormat": function () {},
-  "set": function () {},
-  "timezoneOffsetFunction": function () {},
-  "update": function () {}
-};
-Highcharts.win.Highcharts._modules["parts/Tooltip.js"].prototype = {
-  "applyFilter": function () {},
-  "bodyFormatter": function () {},
-  "cleanSplit": function () {},
-  "defaultFormatter": function () {},
-  "destroy": function () {},
-  "drawTracker": function () {},
-  "getAnchor": function () {},
-  "getDateFormat": function () {},
-  "getLabel": function () {},
-  "getPosition": function () {},
-  "getXDateFormat": function () {},
-  "hide": function () {},
+  "draw": function () {},
+  "escapes": function () {},
+  "fontMetrics": function () {},
+  "g": function () {},
+  "getContrast": function () {},
+  "getRadialAttr": function () {},
+  "getStyle": function () {},
+  "getTransformKey": function () {},
+  "html": function () {},
+  "image": function () {},
   "init": function () {},
-  "isStickyOnContact": function () {},
-  "move": function () {},
-  "refresh": function () {},
-  "renderSplit": function () {},
-  "styledModeFormat": function () {},
-  "tooltipFooterHeaderFormatter": function () {},
-  "update": function () {},
-  "updatePosition": function () {}
+  "isHidden": function () {},
+  "label": function () {},
+  "path": function () {},
+  "pathToSegments": function () {},
+  "rect": function () {},
+  "rotCorr": function () {},
+  "setSize": function () {},
+  "setStyle": function () {},
+  "symbol": function () {},
+  "symbols": function () {},
+  "text": function () {},
+  "truncate": function () {}
 };
-Highcharts.win.Highcharts._modules["parts/Utilities.js"].Fx.prototype = {
+Highcharts.win.Highcharts._modules["Core/Renderer/SVG/SVGElement.js"].prototype = {
+  "_defaultGetter": function () {},
+  "_defaultSetter": function () {},
+  "add": function () {},
+  "addClass": function () {},
+  "afterSetters": function () {},
+  "align": function () {},
+  "alignSetter": function () {},
+  "animate": function () {},
+  "applyTextOutline": function () {},
+  "attr": function () {},
+  "clip": function () {},
+  "complexColor": function () {},
+  "crisp": function () {},
+  "css": function () {},
   "dSetter": function () {},
+  "dashstyleSetter": function () {},
+  "destroy": function () {},
+  "destroyShadows": function () {},
+  "destroyTextPath": function () {},
+  "fadeOut": function () {},
   "fillSetter": function () {},
-  "initPath": function () {},
-  "run": function () {},
-  "step": function () {},
+  "getBBox": function () {},
+  "getSpanCorrection": function () {},
+  "getStyle": function () {},
+  "hasClass": function () {},
+  "hide": function () {},
+  "htmlCss": function () {},
+  "htmlGetBBox": function () {},
+  "htmlUpdateTransform": function () {},
+  "init": function () {},
+  "invert": function () {},
+  "matrixSetter": function () {},
+  "on": function () {},
+  "opacitySetter": function () {},
+  "removeClass": function () {},
+  "removeTextOutline": function () {},
+  "rotationOriginXSetter": function () {},
+  "rotationOriginYSetter": function () {},
+  "rotationSetter": function () {},
+  "safeRemoveChild": function () {},
+  "scaleXSetter": function () {},
+  "scaleYSetter": function () {},
+  "setRadialReference": function () {},
+  "setSpanRotation": function () {},
+  "setTextPath": function () {},
+  "shadow": function () {},
+  "show": function () {},
+  "stroke-widthSetter": function () {},
   "strokeSetter": function () {},
-  "update": function () {}
+  "strokeWidth": function () {},
+  "symbolAttr": function () {},
+  "textSetter": function () {},
+  "titleSetter": function () {},
+  "toFront": function () {},
+  "translate": function () {},
+  "translateXSetter": function () {},
+  "translateYSetter": function () {},
+  "updateShadows": function () {},
+  "updateTransform": function () {},
+  "verticalAlignSetter": function () {},
+  "visibilitySetter": function () {},
+  "xGetter": function () {},
+  "yGetter": function () {},
+  "zIndexSetter": function () {}
 };
-Highcharts.win.Highcharts.seriesTypes.area.prototype = {
+Highcharts.win.Highcharts._modules["Core/Renderer/SVG/SVGLabel.js"].prototype = {
+  "_defaultGetter": function () {},
+  "_defaultSetter": function () {},
+  "add": function () {},
+  "addClass": function () {},
+  "afterSetters": function () {},
+  "align": function () {},
+  "alignSetter": function () {},
+  "anchorXSetter": function () {},
+  "anchorYSetter": function () {},
+  "animate": function () {},
+  "applyTextOutline": function () {},
+  "attr": function () {},
+  "boxAttr": function () {},
+  "clip": function () {},
+  "complexColor": function () {},
+  "constructor": function () {},
+  "crisp": function () {},
+  "css": function () {},
+  "dSetter": function () {},
+  "dashstyleSetter": function () {},
+  "destroy": function () {},
+  "destroyShadows": function () {},
+  "destroyTextPath": function () {},
+  "fadeOut": function () {},
+  "fillSetter": function () {},
+  "getBBox": function () {},
+  "getCrispAdjust": function () {},
+  "getSpanCorrection": function () {},
+  "getStyle": function () {},
+  "hasClass": function () {},
+  "heightSetter": function () {},
+  "hide": function () {},
+  "htmlCss": function () {},
+  "htmlGetBBox": function () {},
+  "htmlUpdateTransform": function () {},
+  "init": function () {},
+  "invert": function () {},
+  "matrixSetter": function () {},
+  "on": function () {},
+  "onAdd": function () {},
+  "opacitySetter": function () {},
+  "paddingLeftSetter": function () {},
+  "paddingSetter": function () {},
+  "rSetter": function () {},
+  "removeClass": function () {},
+  "removeTextOutline": function () {},
+  "rotationOriginXSetter": function () {},
+  "rotationOriginYSetter": function () {},
+  "rotationSetter": function () {},
+  "safeRemoveChild": function () {},
+  "scaleXSetter": function () {},
+  "scaleYSetter": function () {},
+  "setRadialReference": function () {},
+  "setSpanRotation": function () {},
+  "setTextPath": function () {},
+  "shadow": function () {},
+  "show": function () {},
+  "stroke-widthSetter": function () {},
+  "strokeSetter": function () {},
+  "strokeWidth": function () {},
+  "symbolAttr": function () {},
+  "text-alignSetter": function () {},
+  "textSetter": function () {},
+  "titleSetter": function () {},
+  "toFront": function () {},
+  "translate": function () {},
+  "translateXSetter": function () {},
+  "translateYSetter": function () {},
+  "updateBoxSize": function () {},
+  "updateShadows": function () {},
+  "updateTextPadding": function () {},
+  "updateTransform": function () {},
+  "verticalAlignSetter": function () {},
+  "visibilitySetter": function () {},
+  "widthSetter": function () {},
+  "xGetter": function () {},
+  "xSetter": function () {},
+  "yGetter": function () {},
+  "ySetter": function () {},
+  "zIndexSetter": function () {}
+};
+Highcharts.win.Highcharts._modules["Core/Renderer/SVG/SVGRenderer.js"].prototype = {
+  "Element": function () {},
+  "SVG_NS": function () {},
+  "arc": function () {},
+  "buildText": function () {},
+  "button": function () {},
+  "circle": function () {},
+  "clipRect": function () {},
+  "createElement": function () {},
+  "crispLine": function () {},
+  "definition": function () {},
+  "destroy": function () {},
+  "draw": function () {},
+  "escapes": function () {},
+  "fontMetrics": function () {},
+  "g": function () {},
+  "getContrast": function () {},
+  "getRadialAttr": function () {},
+  "getStyle": function () {},
+  "getTransformKey": function () {},
+  "html": function () {},
+  "image": function () {},
+  "init": function () {},
+  "isHidden": function () {},
+  "label": function () {},
+  "path": function () {},
+  "pathToSegments": function () {},
+  "rect": function () {},
+  "rotCorr": function () {},
+  "setSize": function () {},
+  "setStyle": function () {},
+  "symbol": function () {},
+  "symbols": function () {},
+  "text": function () {},
+  "truncate": function () {}
+};
+Highcharts.win.Highcharts._modules["Core/Series/CartesianSeries.js"].prototype = {
   "addPoint": function () {},
   "afterAnimate": function () {},
   "alignDataLabel": function () {},
@@ -24066,7 +25267,6 @@ Highcharts.win.Highcharts.seriesTypes.area.prototype = {
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getClipBox": function () {},
@@ -24080,12 +25280,12 @@ Highcharts.win.Highcharts.seriesTypes.area.prototype = {
   "getPointsCollection": function () {},
   "getProcessedData": function () {},
   "getStackIndicator": function () {},
-  "getStackPoints": function () {},
   "getSymbol": function () {},
   "getValidPoints": function () {},
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -24121,13 +25321,13 @@ Highcharts.win.Highcharts.seriesTypes.area.prototype = {
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
   "setState": function () {},
   "setVisible": function () {},
   "show": function () {},
-  "singleStacks": function () {},
   "sortData": function () {},
   "sorted": function () {},
   "translate": function () {},
@@ -24136,7 +25336,37 @@ Highcharts.win.Highcharts.seriesTypes.area.prototype = {
   "updateData": function () {},
   "updateParallelArrays": function () {}
 };
-Highcharts.win.Highcharts.seriesTypes.areaspline.prototype = {
+Highcharts.win.Highcharts._modules["Core/Series/Point.js"].prototype = {
+  "animateBeforeDestroy": function () {},
+  "applyOptions": function () {},
+  "destroy": function () {},
+  "destroyElements": function () {},
+  "firePointEvent": function () {},
+  "getClassName": function () {},
+  "getGraphicalProps": function () {},
+  "getLabelConfig": function () {},
+  "getNestedProperty": function () {},
+  "getZone": function () {},
+  "haloPath": function () {},
+  "hasNewShapeType": function () {},
+  "importEvents": function () {},
+  "init": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "optionsToObject": function () {},
+  "remove": function () {},
+  "resolveColor": function () {},
+  "select": function () {},
+  "setNestedProperty": function () {},
+  "setState": function () {},
+  "tooltipFormatter": function () {},
+  "update": function () {}
+};
+Highcharts.win.Highcharts._modules["Core/Series/Series.js"].prototype = {
+  "pointClass": function () {},
+  "update": function () {}
+};
+Highcharts.win.Highcharts._modules["Core/Series/Series.js"].seriesTypes.area.prototype = {
   "addPoint": function () {},
   "afterAnimate": function () {},
   "alignDataLabel": function () {},
@@ -24158,7 +25388,99 @@ Highcharts.win.Highcharts.seriesTypes.areaspline.prototype = {
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getStackPoints": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "singleStacks": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts.win.Highcharts._modules["Core/Series/Series.js"].seriesTypes.areaspline.prototype = {
+  "addPoint": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getClipBox": function () {},
@@ -24179,6 +25501,7 @@ Highcharts.win.Highcharts.seriesTypes.areaspline.prototype = {
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -24214,6 +25537,7 @@ Highcharts.win.Highcharts.seriesTypes.areaspline.prototype = {
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -24228,8 +25552,9 @@ Highcharts.win.Highcharts.seriesTypes.areaspline.prototype = {
   "updateData": function () {},
   "updateParallelArrays": function () {}
 };
-Highcharts.win.Highcharts.seriesTypes.bar.prototype = {
+Highcharts.win.Highcharts._modules["Core/Series/Series.js"].seriesTypes.bar.prototype = {
   "addPoint": function () {},
+  "adjustForMissingColumns": function () {},
   "afterAnimate": function () {},
   "alignDataLabel": function () {},
   "animate": function () {},
@@ -24251,7 +25576,6 @@ Highcharts.win.Highcharts.seriesTypes.bar.prototype = {
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getClipBox": function () {},
@@ -24271,6 +25595,7 @@ Highcharts.win.Highcharts.seriesTypes.bar.prototype = {
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -24308,6 +25633,7 @@ Highcharts.win.Highcharts.seriesTypes.bar.prototype = {
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -24323,8 +25649,9 @@ Highcharts.win.Highcharts.seriesTypes.bar.prototype = {
   "updateData": function () {},
   "updateParallelArrays": function () {}
 };
-Highcharts.win.Highcharts.seriesTypes.column.prototype = {
+Highcharts.win.Highcharts._modules["Core/Series/Series.js"].seriesTypes.column.prototype = {
   "addPoint": function () {},
+  "adjustForMissingColumns": function () {},
   "afterAnimate": function () {},
   "alignDataLabel": function () {},
   "animate": function () {},
@@ -24346,7 +25673,6 @@ Highcharts.win.Highcharts.seriesTypes.column.prototype = {
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getClipBox": function () {},
@@ -24366,6 +25692,7 @@ Highcharts.win.Highcharts.seriesTypes.column.prototype = {
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -24402,6 +25729,7 @@ Highcharts.win.Highcharts.seriesTypes.column.prototype = {
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -24417,7 +25745,7 @@ Highcharts.win.Highcharts.seriesTypes.column.prototype = {
   "updateData": function () {},
   "updateParallelArrays": function () {}
 };
-Highcharts.win.Highcharts.seriesTypes.line.prototype = {
+Highcharts.win.Highcharts._modules["Core/Series/Series.js"].seriesTypes.line.prototype = {
   "addPoint": function () {},
   "afterAnimate": function () {},
   "alignDataLabel": function () {},
@@ -24439,7 +25767,6 @@ Highcharts.win.Highcharts.seriesTypes.line.prototype = {
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getClipBox": function () {},
@@ -24458,6 +25785,7 @@ Highcharts.win.Highcharts.seriesTypes.line.prototype = {
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -24493,6 +25821,7 @@ Highcharts.win.Highcharts.seriesTypes.line.prototype = {
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -24507,7 +25836,7 @@ Highcharts.win.Highcharts.seriesTypes.line.prototype = {
   "updateData": function () {},
   "updateParallelArrays": function () {}
 };
-Highcharts.win.Highcharts.seriesTypes.pie.prototype = {
+Highcharts.win.Highcharts._modules["Core/Series/Series.js"].seriesTypes.pie.prototype = {
   "addPoint": function () {},
   "afterAnimate": function () {},
   "alignDataLabel": function () {},
@@ -24531,7 +25860,6 @@ Highcharts.win.Highcharts.seriesTypes.pie.prototype = {
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getCenter": function () {},
@@ -24552,6 +25880,7 @@ Highcharts.win.Highcharts.seriesTypes.pie.prototype = {
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -24590,6 +25919,992 @@ Highcharts.win.Highcharts.seriesTypes.pie.prototype = {
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortByAngle": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "trackerGroups": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {},
+  "updateTotals": function () {},
+  "verifyDataLabelOverflow": function () {}
+};
+Highcharts.win.Highcharts._modules["Core/Series/Series.js"].seriesTypes.scatter.prototype = {
+  "addPoint": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyJitter": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "noSharedTooltip": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "takeOrdinalPosition": function () {},
+  "trackerGroups": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts.win.Highcharts._modules["Core/Series/Series.js"].seriesTypes.spline.prototype = {
+  "addPoint": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointSpline": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts.win.Highcharts._modules["Core/Time.js"].prototype = {
+  "dateFormat": function () {},
+  "get": function () {},
+  "getTimeTicks": function () {},
+  "makeTime": function () {},
+  "resolveDTLFormat": function () {},
+  "set": function () {},
+  "timezoneOffsetFunction": function () {},
+  "update": function () {}
+};
+Highcharts.win.Highcharts._modules["Core/Tooltip.js"].prototype = {
+  "applyFilter": function () {},
+  "bodyFormatter": function () {},
+  "cleanSplit": function () {},
+  "defaultFormatter": function () {},
+  "destroy": function () {},
+  "drawTracker": function () {},
+  "getAnchor": function () {},
+  "getDateFormat": function () {},
+  "getLabel": function () {},
+  "getPosition": function () {},
+  "getXDateFormat": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "isStickyOnContact": function () {},
+  "move": function () {},
+  "refresh": function () {},
+  "renderSplit": function () {},
+  "styledModeFormat": function () {},
+  "tooltipFooterHeaderFormatter": function () {},
+  "update": function () {},
+  "updatePosition": function () {}
+};
+Highcharts.win.Highcharts._modules["Extensions/Stacking.js"].prototype = {
+  "destroy": function () {},
+  "getStackBox": function () {},
+  "render": function () {},
+  "setOffset": function () {}
+};
+Highcharts.win.Highcharts._modules["Series/ColumnSeries.js"].prototype = {
+  "addPoint": function () {},
+  "adjustForMissingColumns": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "crispCol": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getColumnMetrics": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "negStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "trackerGroups": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts.win.Highcharts._modules["Series/LineSeries.js"].prototype = {
+  "addPoint": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts.win.Highcharts.seriesTypes.area.prototype = {
+  "addPoint": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getStackPoints": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "singleStacks": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts.win.Highcharts.seriesTypes.areaspline.prototype = {
+  "addPoint": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointSpline": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getStackPoints": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts.win.Highcharts.seriesTypes.bar.prototype = {
+  "addPoint": function () {},
+  "adjustForMissingColumns": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "crispCol": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getColumnMetrics": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "inverted": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "negStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "trackerGroups": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts.win.Highcharts.seriesTypes.column.prototype = {
+  "addPoint": function () {},
+  "adjustForMissingColumns": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "crispCol": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getColumnMetrics": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "negStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "trackerGroups": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts.win.Highcharts.seriesTypes.line.prototype = {
+  "addPoint": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
+  "setName": function () {},
+  "setOptions": function () {},
+  "setStackedPoints": function () {},
+  "setState": function () {},
+  "setVisible": function () {},
+  "show": function () {},
+  "sortData": function () {},
+  "sorted": function () {},
+  "translate": function () {},
+  "type": function () {},
+  "update": function () {},
+  "updateData": function () {},
+  "updateParallelArrays": function () {}
+};
+Highcharts.win.Highcharts.seriesTypes.pie.prototype = {
+  "addPoint": function () {},
+  "afterAnimate": function () {},
+  "alignDataLabel": function () {},
+  "animate": function () {},
+  "applyExtremes": function () {},
+  "applyZones": function () {},
+  "autoIncrement": function () {},
+  "axisTypes": function () {},
+  "bindAxes": function () {},
+  "buildKDTree": function () {},
+  "coll": function () {},
+  "colorCounter": function () {},
+  "cropData": function () {},
+  "cropShoulder": function () {},
+  "dataLabelPositioners": function () {},
+  "destroy": function () {},
+  "directTouch": function () {},
+  "drawDataLabels": function () {},
+  "drawEmpty": function () {},
+  "drawGraph": function () {},
+  "drawLegendSymbol": function () {},
+  "drawPoints": function () {},
+  "drawTracker": function () {},
+  "findPointIndex": function () {},
+  "generatePoints": function () {},
+  "getCenter": function () {},
+  "getClipBox": function () {},
+  "getColor": function () {},
+  "getCyclic": function () {},
+  "getExtremes": function () {},
+  "getFirstValidPoint": function () {},
+  "getGraphPath": function () {},
+  "getName": function () {},
+  "getPlotBox": function () {},
+  "getPointsCollection": function () {},
+  "getProcessedData": function () {},
+  "getStackIndicator": function () {},
+  "getSymbol": function () {},
+  "getValidPoints": function () {},
+  "getX": function () {},
+  "getXExtremes": function () {},
+  "getZonesGraphs": function () {},
+  "hasData": function () {},
+  "hasOptionChanged": function () {},
+  "hide": function () {},
+  "init": function () {},
+  "insert": function () {},
+  "invertGroups": function () {},
+  "is": function () {},
+  "isCartesian": function () {},
+  "isPointInside": function () {},
+  "justifyDataLabel": function () {},
+  "kdAxisArray": function () {},
+  "markerAttribs": function () {},
+  "modifyStacks": function () {},
+  "noSharedTooltip": function () {},
+  "onMouseOut": function () {},
+  "onMouseOver": function () {},
+  "parallelArrays": function () {},
+  "percentStacker": function () {},
+  "placeDataLabels": function () {},
+  "plotGroup": function () {},
+  "pointAttribs": function () {},
+  "pointClass": function () {},
+  "pointPlacementToXValue": function () {},
+  "processData": function () {},
+  "protoEvents": function () {},
+  "redraw": function () {},
+  "redrawPoints": function () {},
+  "remove": function () {},
+  "removeEvents": function () {},
+  "removePoint": function () {},
+  "render": function () {},
+  "requireSorting": function () {},
+  "searchKDTree": function () {},
+  "searchPoint": function () {},
+  "select": function () {},
+  "setAllPointsToState": function () {},
+  "setClip": function () {},
+  "setData": function () {},
+  "setDataLabelStartPos": function () {},
+  "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -24631,7 +26946,6 @@ Highcharts.win.Highcharts.seriesTypes.scatter.prototype = {
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getClipBox": function () {},
@@ -24650,6 +26964,7 @@ Highcharts.win.Highcharts.seriesTypes.scatter.prototype = {
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -24686,6 +27001,7 @@ Highcharts.win.Highcharts.seriesTypes.scatter.prototype = {
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
@@ -24724,7 +27040,6 @@ Highcharts.win.Highcharts.seriesTypes.spline.prototype = {
   "drawLegendSymbol": function () {},
   "drawPoints": function () {},
   "drawTracker": function () {},
-  "eventsToUnbind": function () {},
   "findPointIndex": function () {},
   "generatePoints": function () {},
   "getClipBox": function () {},
@@ -24744,6 +27059,7 @@ Highcharts.win.Highcharts.seriesTypes.spline.prototype = {
   "getXExtremes": function () {},
   "getZonesGraphs": function () {},
   "hasData": function () {},
+  "hasOptionChanged": function () {},
   "hide": function () {},
   "init": function () {},
   "insert": function () {},
@@ -24779,6 +27095,7 @@ Highcharts.win.Highcharts.seriesTypes.spline.prototype = {
   "setData": function () {},
   "setDataLabelStartPos": function () {},
   "setDataSortingOptions": function () {},
+  "setGroupedPoints": function () {},
   "setName": function () {},
   "setOptions": function () {},
   "setStackedPoints": function () {},
