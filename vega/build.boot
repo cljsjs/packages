@@ -5,7 +5,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "5.9.0")
+  (def +lib-version+ "5.17.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -19,10 +19,10 @@
   (comp
     (download
      :url (format "https://unpkg.com/vega@%s/build/vega.js" +lib-version+)
-     :checksum "3670000978f7b7e0f815187fcd05b2bb")
+     :checksum "EBC6FF295AA41C72E3B8C3A897BBFABD")
     (download
      :url (format "https://unpkg.com/vega@%s/build/vega.min.js" +lib-version+)
-     :checksum "16f8338449da83a0f1d8c79dbf4af042")
+     :checksum "23E3A29E67EF95A6D2D694AE17876259")
     (sift :move {(re-pattern "^vega.js$") "cljsjs/development/vega.inc.js"
                  (re-pattern "^vega.min.js$") "cljsjs/production/vega.min.inc.js"})
     (sift :include #{#"^cljsjs"})
