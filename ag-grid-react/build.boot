@@ -3,7 +3,7 @@
  :dependencies '[[cljsjs/boot-cljsjs "0.10.5" :scope "test"]
                  [cljsjs/react "16.0.0-0" :scope "provided"]
                  [cljsjs/react-dom "16.0.0-0" :scope "provided"]
-                 [cljsjs/ag-grid-community "21.0.1-0"]])
+                 [cljsjs/ag-grid-community "25.0.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -11,10 +11,9 @@
          '[boot.util :refer [dosh]]
          '[clojure.java.io :as io])
 
-(def +lib-version+ "21.0.1")
-(def +lib-checksum+ "58D7CDD5F67F5DC00FC6A05E0F255FB5")
-(def +version+ (str +lib-version+ "-1"))
-(def +lib-folder+ (format "ag-grid-%s/packages/ag-grid-react" +lib-version+))
+(def +lib-version+ "25.0.1")
+(def +version+ (str +lib-version+ "-0"))
+(def +lib-folder+ (format "ag-grid-%s/grid-packages/ag-grid-react" +lib-version+))
 
 (defn- dosh-cmd [& args]
   (apply dosh (if (re-find #"^Windows" (.get (System/getProperties) "os.name"))
@@ -34,7 +33,6 @@
 
 (deftask download-lib []
   (download :url (format "https://github.com/ag-grid/ag-grid/archive/v%s.zip" +lib-version+)
-            :checksum +lib-checksum+
             :unzip true))
 
 (deftask build []
@@ -49,7 +47,7 @@
        (io/file tmp +lib-folder+ "webpack-cljsjs.config.js"))
       (binding [boot.util/*sh-dir* (str (io/file tmp +lib-folder+))]
         (dosh-cmd "npm" "install")
-        (dosh-cmd "npm" "install" "ag-grid-community@19.0.0" "gulp" "webpack@1.15.0")
+        (dosh-cmd "npm" "install" (str "ag-grid-community@" +lib-version+) "gulp" "webpack@1.15.0")
         (dosh-cmd (path (str (io/file tmp +lib-folder+) "/node_modules/.bin/gulp")))
         (dosh-cmd (path (str (io/file tmp +lib-folder+) "/node_modules/.bin/webpack")) "--config" "webpack-cljsjs.config.js"))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
@@ -68,4 +66,5 @@
                          "cljsjs.react.dom"
                          "cljsjs.ag-grid-community"])
    (pom)
-   (jar)))
+   (jar)
+   (validate-checksums)))
