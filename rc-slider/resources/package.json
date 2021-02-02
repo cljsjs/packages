@@ -1,0 +1,23 @@
+{
+    "name": "@cljsjs/rc-slider-bundle",
+    "private": true,
+    "scripts": {
+        "build:dev": "webpack --mode development",
+        "build:prod": "webpack --mode production --output-filename rc-slider.min.inc.js"
+    },
+    "dependencies": {
+        "rc-slider": "9.7.1"
+    },
+       
+    "devDependencies": {
+        "@babel/runtime": "^7.10.1",
+        "classnames": "^2.2.5",
+        "rc-tooltip": "^5.0.1",
+        "rc-util": "^5.0.0",
+        "shallowequal": "^1.1.0",
+        "react": "*",
+        "react-dom": "*",
+        "webpack": "4.43.0",
+        "webpack-command": "0.5.0"
+    }
+}
