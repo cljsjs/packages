@@ -9,7 +9,7 @@
          '[clojure.java.io :as io])
 
 (def +lib-version+ "25.0.1")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 (def +lib-folder+ (format "ag-grid-%s/packages/ag-grid-enterprise" +lib-version+))
 
 (task-options!
@@ -20,18 +20,18 @@
       :scm         {:url "https://github.com/cljsjs/packages"}
       :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
+(def unpkg-url (str "https://unpkg.com/ag-grid-enterprise@" +lib-version+))
+
 (deftask download-lib []
-  (download :url (format "https://github.com/ag-grid/ag-grid/archive/v%s.zip" +lib-version+)
-            :unzip true))
+  (download :url (str unpkg-url "/dist/ag-grid-enterprise.js")))
 
 (deftask package []
   (comp
    (download-lib)
-   (sift :move {#".*dist/ag-grid-enterprise.js" "cljsjs/ag-grid-enterprise/development/ag-grid-enterprise.inc.js"})
+   (sift :move {#"ag-grid-enterprise.js" "cljsjs/ag-grid-enterprise/development/ag-grid-enterprise.inc.js"})
    (sift :include #{#"^cljsjs"})
    (minify :in "cljsjs/ag-grid-enterprise/development/ag-grid-enterprise.inc.js"
-           :out "cljsjs/ag-grid-enterprise/production/ag-grid-enterprise.min.inc.js"
-           :lang :ecmascript5)
+           :out "cljsjs/ag-grid-enterprise/production/ag-grid-enterprise.min.inc.js")
    (deps-cljs :name "cljsjs.ag-grid-enterprise"
               :requires ["cljsjs.ag-grid-community"])
    (pom)
