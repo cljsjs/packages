@@ -9,7 +9,7 @@
          '[clojure.java.io :as io])
 
 (def +lib-version+ "25.0.1")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 (def +lib-folder+ (format "ag-grid-community-%s" +lib-version+))
 
 (defn- dosh-cmd [& args]
@@ -32,10 +32,16 @@
   (download :url (format "https://github.com/ag-grid/ag-grid/archive/v%s.zip" +lib-version+)
             :unzip true))
 
+(def unpkg-url (str "https://unpkg.com/ag-grid-community@" +lib-version+))
+
+(deftask download-js []
+  (download :url (str unpkg-url "/dist/ag-grid-community.js")))
+
 (deftask package []
   (comp
    (download-lib)
-   (sift :move {#".*ag-grid-community/dist/ag-grid-community.js"            "cljsjs/ag-grid-community/development/ag-grid-community.inc.js"
+   (download-js)
+   (sift :move {#"ag-grid-community.js"            "cljsjs/ag-grid-community/development/ag-grid-community.inc.js"
                 #".*ag-grid-community/dist/styles/ag-grid.css"              "cljsjs/ag-grid-community/development/ag-grid.inc.css"
                 #".*dist/styles/compiled-icons.css"                         "cljsjs/ag-grid-community/development/compiled-icons.inc.css"
                 #".*ag-grid-community/dist/styles/ag-theme-balham.css"      "cljsjs/ag-grid-community/development/ag-theme-balham.inc.css"
@@ -48,8 +54,7 @@
                 #".*ag-grid-community/src/styles/(.*)"                      "cljsjs/ag-grid-community/development/styles/$1"})
    (sift :include #{#"^cljsjs"})
    (minify :in "cljsjs/ag-grid-community/development/ag-grid-community.inc.js"
-           :out "cljsjs/ag-grid-community/production/ag-grid-community.min.inc.js"
-           :lang :ecmascript5)
+           :out "cljsjs/ag-grid-community/production/ag-grid-community.min.inc.js")
    (minify :in "cljsjs/ag-grid-community/development/ag-grid.inc.css"
            :out "cljsjs/ag-grid-community/production/ag-grid.min.inc.css")
    (minify :in "cljsjs/ag-grid-community/development/compiled-icons.inc.css"
