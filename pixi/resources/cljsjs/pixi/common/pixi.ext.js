@@ -18,6 +18,9 @@ var PIXI = {
     "_drawCallPool": {},
     "_textureArrayPool": {}
   },
+  "AbstractMultiResource": {
+    "test": function () { }
+  },
   "AbstractRenderer": {
     "EventEmitter": {
       "EventEmitter": function () { },
@@ -32,13 +35,8 @@ var PIXI = {
       "prefixed": {}
     },
     "from": function () { },
-    "fromCanvas": function () { },
-    "fromFrame": function () { },
     "fromFrames": function () { },
-    "fromImage": function () { },
     "fromImages": function () { },
-    "fromSVG": function () { },
-    "fromVideo": function () { },
     "mixin": function () { },
     "prefixed": {}
   },
@@ -49,6 +47,9 @@ var PIXI = {
   "Application": {
     "_plugins": {},
     "registerPlugin": function () { }
+  },
+  "ArrayResource": {
+    "test": function () { }
   },
   "Attribute": {
     "from": function () { }
@@ -125,6 +126,10 @@ var PIXI = {
     "DEPTH": {},
     "STENCIL": {}
   },
+  "BaseImageResource": {
+    "crossOrigin": function () { },
+    "test": function () { }
+  },
   "BasePrepare": function () { },
   "BaseRenderTexture": {
     "EventEmitter": {
@@ -135,9 +140,6 @@ var PIXI = {
     "addToCache": function () { },
     "from": function () { },
     "fromBuffer": function () { },
-    "fromCanvas": function () { },
-    "fromImage": function () { },
-    "fromSVG": function () { },
     "prefixed": {},
     "removeFromCache": function () { }
   },
@@ -150,9 +152,6 @@ var PIXI = {
     "addToCache": function () { },
     "from": function () { },
     "fromBuffer": function () { },
-    "fromCanvas": function () { },
-    "fromImage": function () { },
-    "fromSVG": function () { },
     "prefixed": {},
     "removeFromCache": function () { }
   },
@@ -168,6 +167,7 @@ var PIXI = {
     "_textureArrayPool": {}
   },
   "BatchShaderGenerator": function () { },
+  "BatchSystem": function () { },
   "BatchTextureArray": function () { },
   "BitmapFont": {
     "ALPHA": {},
@@ -200,7 +200,6 @@ var PIXI = {
     },
     "mixin": function () { },
     "prefixed": {},
-    "registerFont": function () { },
     "styleDefaults": {
       "align": {},
       "letterSpacing": {},
@@ -208,9 +207,15 @@ var PIXI = {
       "tint": {}
     }
   },
+  "BlobResource": {
+    "test": function () { }
+  },
   "Bounds": function () { },
   "Buffer": {
     "from": function () { }
+  },
+  "BufferResource": {
+    "test": function () { }
   },
   "CLEAR_MODES": {
     "0": {},
@@ -223,7 +228,20 @@ var PIXI = {
     "NO": {},
     "YES": {}
   },
+  "CanvasResource": {
+    "crossOrigin": function () { },
+    "test": function () { }
+  },
   "Circle": function () { },
+  "CompressedTextureLoader": {
+    "autoDetectExtensions": function () { },
+    "use": function () { }
+  },
+  "CompressedTextureResource": {
+    "_createLevelBuffers": function () { },
+    "_formatToExtension": function () { },
+    "test": function () { }
+  },
   "Container": {
     "EventEmitter": {
       "EventEmitter": function () { },
@@ -232,7 +250,16 @@ var PIXI = {
     "mixin": function () { },
     "prefixed": {}
   },
+  "ContextSystem": function () { },
   "CountLimiter": function () { },
+  "CubeResource": {
+    "SIDES": {},
+    "test": function () { }
+  },
+  "DDSLoader": {
+    "parse": function () { },
+    "use": function () { }
+  },
   "DEG_TO_RAD": {},
   "DRAW_MODES": {
     "0": {},
@@ -286,12 +313,21 @@ var PIXI = {
     "RGB": {},
     "RGBA": {}
   },
+  "FORMATS_TO_COMPONENTS": {
+    "6406": {},
+    "6407": {},
+    "6408": {},
+    "6409": {},
+    "6410": {}
+  },
   "FillStyle": function () { },
   "Filter": {
     "from": function () { }
   },
   "FilterState": function () { },
+  "FilterSystem": function () { },
   "Framebuffer": function () { },
+  "FramebufferSystem": function () { },
   "GC_MODES": {
     "0": {},
     "1": {},
@@ -312,6 +348,7 @@ var PIXI = {
   "Geometry": {
     "merge": function () { }
   },
+  "GeometrySystem": function () { },
   "Graphics": {
     "EventEmitter": {
       "EventEmitter": function () { },
@@ -319,11 +356,11 @@ var PIXI = {
     },
     "_TEMP_POINT": {
       "clone": function () { },
-      "copy": function () { },
       "copyFrom": function () { },
       "copyTo": function () { },
       "equals": function () { },
       "set": function () { },
+      "toString": function () { },
       "x": {},
       "y": {}
     },
@@ -336,6 +373,95 @@ var PIXI = {
     "merge": function () { }
   },
   "IGLUniformData": function () { },
+  "INSTALLED": {},
+  "INTERNAL_FORMATS": {
+    "33776": {},
+    "33777": {},
+    "33778": {},
+    "33779": {},
+    "34798": {},
+    "35840": {},
+    "35841": {},
+    "35842": {},
+    "35843": {},
+    "35916": {},
+    "35917": {},
+    "35918": {},
+    "35919": {},
+    "35986": {},
+    "36196": {},
+    "37488": {},
+    "37489": {},
+    "37490": {},
+    "37491": {},
+    "37492": {},
+    "37493": {},
+    "37494": {},
+    "37495": {},
+    "37496": {},
+    "37497": {},
+    "COMPRESSED_R11_EAC": {},
+    "COMPRESSED_RG11_EAC": {},
+    "COMPRESSED_RGB8_ETC2": {},
+    "COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2": {},
+    "COMPRESSED_RGBA8_ETC2_EAC": {},
+    "COMPRESSED_RGBA_ATC_EXPLICIT_ALPHA_WEBGL": {},
+    "COMPRESSED_RGBA_ATC_INTERPOLATED_ALPHA_WEBGL": {},
+    "COMPRESSED_RGBA_PVRTC_2BPPV1_IMG": {},
+    "COMPRESSED_RGBA_PVRTC_4BPPV1_IMG": {},
+    "COMPRESSED_RGBA_S3TC_DXT1_EXT": {},
+    "COMPRESSED_RGBA_S3TC_DXT3_EXT": {},
+    "COMPRESSED_RGBA_S3TC_DXT5_EXT": {},
+    "COMPRESSED_RGB_ATC_WEBGL": {},
+    "COMPRESSED_RGB_ETC1_WEBGL": {},
+    "COMPRESSED_RGB_PVRTC_2BPPV1_IMG": {},
+    "COMPRESSED_RGB_PVRTC_4BPPV1_IMG": {},
+    "COMPRESSED_RGB_S3TC_DXT1_EXT": {},
+    "COMPRESSED_SIGNED_R11_EAC": {},
+    "COMPRESSED_SIGNED_RG11_EAC": {},
+    "COMPRESSED_SRGB8_ALPHA8_ETC2_EAC": {},
+    "COMPRESSED_SRGB8_ETC2": {},
+    "COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2": {},
+    "COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT": {},
+    "COMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT": {},
+    "COMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT": {},
+    "COMPRESSED_SRGB_S3TC_DXT1_EXT": {}
+  },
+  "INTERNAL_FORMAT_TO_BYTES_PER_PIXEL": {
+    "33776": {},
+    "33777": {},
+    "33778": {},
+    "33779": {},
+    "34798": {},
+    "35840": {},
+    "35841": {},
+    "35842": {},
+    "35843": {},
+    "35916": {},
+    "35917": {},
+    "35918": {},
+    "35919": {},
+    "35986": {},
+    "36196": {},
+    "37488": {},
+    "37489": {},
+    "37490": {},
+    "37491": {},
+    "37492": {},
+    "37493": {},
+    "37494": {},
+    "37495": {},
+    "37496": {},
+    "37497": {}
+  },
+  "ImageBitmapResource": {
+    "crossOrigin": function () { },
+    "test": function () { }
+  },
+  "ImageResource": {
+    "crossOrigin": function () { },
+    "test": function () { }
+  },
   "InteractionData": function () { },
   "InteractionEvent": function () { },
   "InteractionManager": {
@@ -353,6 +479,11 @@ var PIXI = {
       "RIGHT_DOWN": {}
     }
   },
+  "KTXLoader": {
+    "parse": function () { },
+    "use": function () { },
+    "validate": function () { }
+  },
   "LINE_CAP": {
     "BUTT": {},
     "ROUND": {},
@@ -368,7 +499,6 @@ var PIXI = {
     "_defaultAfterMiddleware": {},
     "_defaultBeforeMiddleware": {},
     "_plugins": {},
-    "addPixiMiddleware": function () { },
     "pre": function () { },
     "registerPlugin": function () { },
     "use": function () { }
@@ -424,6 +554,7 @@ var PIXI = {
     },
     "_xhrTypeMap": {
       "bmp": {},
+      "dds": {},
       "fnt": {},
       "gif": {},
       "htm": {},
@@ -431,6 +562,7 @@ var PIXI = {
       "jpeg": {},
       "jpg": {},
       "json": {},
+      "ktx": {},
       "otf": {},
       "png": {},
       "svg": {},
@@ -463,8 +595,10 @@ var PIXI = {
     "0": {},
     "1": {},
     "2": {},
+    "3": {},
     "OFF": {},
     "ON": {},
+    "ON_MANUAL": {},
     "POW2": {}
   },
   "MSAA_QUALITY": {
@@ -478,6 +612,7 @@ var PIXI = {
     "NONE": {}
   },
   "MaskData": function () { },
+  "MaskSystem": function () { },
   "Matrix": function () { },
   "Mesh": {
     "BATCHABLE_SIZE": {},
@@ -530,6 +665,7 @@ var PIXI = {
   "Program": {
     "from": function () { }
   },
+  "ProjectionSystem": function () { },
   "Quad": {
     "merge": function () { }
   },
@@ -554,13 +690,13 @@ var PIXI = {
         "ceil": function () { },
         "clone": function () { },
         "contains": function () { },
-        "copy": function () { },
         "copyFrom": function () { },
         "copyTo": function () { },
         "enlarge": function () { },
         "fit": function () { },
         "height": {},
         "pad": function () { },
+        "toString": function () { },
         "type": {},
         "width": {},
         "x": {},
@@ -570,6 +706,7 @@ var PIXI = {
       "_updateID": {},
       "_uvs": {
         "set": function () { },
+        "toString": function () { },
         "uvsFloat32": {
           "0": {},
           "1": {},
@@ -622,9 +759,6 @@ var PIXI = {
           "addToCache": function () { },
           "from": function () { },
           "fromBuffer": function () { },
-          "fromCanvas": function () { },
-          "fromImage": function () { },
-          "fromSVG": function () { },
           "prefixed": {},
           "removeFromCache": function () { }
         },
@@ -640,7 +774,6 @@ var PIXI = {
         "isPowerOfTwo": {},
         "listenerCount": function () { },
         "listeners": function () { },
-        "loadSource": function () { },
         "mipmap": {},
         "off": function () { },
         "on": function () { },
@@ -682,13 +815,13 @@ var PIXI = {
             "ceil": function () { },
             "clone": function () { },
             "contains": function () { },
-            "copy": function () { },
             "copyFrom": function () { },
             "copyTo": function () { },
             "enlarge": function () { },
             "fit": function () { },
             "height": {},
             "pad": function () { },
+            "toString": function () { },
             "type": {},
             "width": {},
             "x": {},
@@ -698,6 +831,7 @@ var PIXI = {
           "_updateID": {},
           "_uvs": {
             "set": function () { },
+            "toString": function () { },
             "uvsFloat32": {
               "0": {},
               "1": {},
@@ -745,9 +879,6 @@ var PIXI = {
               "addToCache": function () { },
               "from": function () { },
               "fromBuffer": function () { },
-              "fromCanvas": function () { },
-              "fromImage": function () { },
-              "fromSVG": function () { },
               "prefixed": {},
               "removeFromCache": function () { }
             },
@@ -763,7 +894,6 @@ var PIXI = {
             "isPowerOfTwo": {},
             "listenerCount": function () { },
             "listeners": function () { },
-            "loadSource": function () { },
             "mipmap": {},
             "off": function () { },
             "on": function () { },
@@ -851,11 +981,11 @@ var PIXI = {
           "constructor": function () { },
           "defaultAnchor": {
             "clone": function () { },
-            "copy": function () { },
             "copyFrom": function () { },
             "copyTo": function () { },
             "equals": function () { },
             "set": function () { },
+            "toString": function () { },
             "x": {},
             "y": {}
           },
@@ -873,13 +1003,13 @@ var PIXI = {
             "ceil": function () { },
             "clone": function () { },
             "contains": function () { },
-            "copy": function () { },
             "copyFrom": function () { },
             "copyTo": function () { },
             "enlarge": function () { },
             "fit": function () { },
             "height": {},
             "pad": function () { },
+            "toString": function () { },
             "type": {},
             "width": {},
             "x": {},
@@ -897,23 +1027,18 @@ var PIXI = {
         "addToCache": function () { },
         "from": function () { },
         "fromBuffer": function () { },
-        "fromCanvas": function () { },
-        "fromFrame": function () { },
-        "fromImage": function () { },
         "fromLoader": function () { },
-        "fromSVG": function () { },
         "fromURL": function () { },
-        "fromVideo": function () { },
         "prefixed": {},
         "removeFromCache": function () { }
       },
       "defaultAnchor": {
         "clone": function () { },
-        "copy": function () { },
         "copyFrom": function () { },
         "copyTo": function () { },
         "equals": function () { },
         "set": function () { },
+        "toString": function () { },
         "x": {},
         "y": {}
       },
@@ -931,13 +1056,13 @@ var PIXI = {
         "ceil": function () { },
         "clone": function () { },
         "contains": function () { },
-        "copy": function () { },
         "copyFrom": function () { },
         "copyTo": function () { },
         "enlarge": function () { },
         "fit": function () { },
         "height": {},
         "pad": function () { },
+        "toString": function () { },
         "type": {},
         "width": {},
         "x": {},
@@ -963,13 +1088,13 @@ var PIXI = {
         "ceil": function () { },
         "clone": function () { },
         "contains": function () { },
-        "copy": function () { },
         "copyFrom": function () { },
         "copyTo": function () { },
         "enlarge": function () { },
         "fit": function () { },
         "height": {},
         "pad": function () { },
+        "toString": function () { },
         "type": {},
         "width": {},
         "x": {},
@@ -979,6 +1104,7 @@ var PIXI = {
       "_updateID": {},
       "_uvs": {
         "set": function () { },
+        "toString": function () { },
         "uvsFloat32": {
           "0": {},
           "1": {},
@@ -1026,9 +1152,6 @@ var PIXI = {
           "addToCache": function () { },
           "from": function () { },
           "fromBuffer": function () { },
-          "fromCanvas": function () { },
-          "fromImage": function () { },
-          "fromSVG": function () { },
           "prefixed": {},
           "removeFromCache": function () { }
         },
@@ -1044,7 +1167,6 @@ var PIXI = {
         "isPowerOfTwo": {},
         "listenerCount": function () { },
         "listeners": function () { },
-        "loadSource": function () { },
         "mipmap": {},
         "off": function () { },
         "on": function () { },
@@ -1137,13 +1259,13 @@ var PIXI = {
             "ceil": function () { },
             "clone": function () { },
             "contains": function () { },
-            "copy": function () { },
             "copyFrom": function () { },
             "copyTo": function () { },
             "enlarge": function () { },
             "fit": function () { },
             "height": {},
             "pad": function () { },
+            "toString": function () { },
             "type": {},
             "width": {},
             "x": {},
@@ -1153,6 +1275,7 @@ var PIXI = {
           "_updateID": {},
           "_uvs": {
             "set": function () { },
+            "toString": function () { },
             "uvsFloat32": {
               "0": {},
               "1": {},
@@ -1205,9 +1328,6 @@ var PIXI = {
               "addToCache": function () { },
               "from": function () { },
               "fromBuffer": function () { },
-              "fromCanvas": function () { },
-              "fromImage": function () { },
-              "fromSVG": function () { },
               "prefixed": {},
               "removeFromCache": function () { }
             },
@@ -1223,7 +1343,6 @@ var PIXI = {
             "isPowerOfTwo": {},
             "listenerCount": function () { },
             "listeners": function () { },
-            "loadSource": function () { },
             "mipmap": {},
             "off": function () { },
             "on": function () { },
@@ -1255,11 +1374,11 @@ var PIXI = {
           "constructor": function () { },
           "defaultAnchor": {
             "clone": function () { },
-            "copy": function () { },
             "copyFrom": function () { },
             "copyTo": function () { },
             "equals": function () { },
             "set": function () { },
+            "toString": function () { },
             "x": {},
             "y": {}
           },
@@ -1277,13 +1396,13 @@ var PIXI = {
             "ceil": function () { },
             "clone": function () { },
             "contains": function () { },
-            "copy": function () { },
             "copyFrom": function () { },
             "copyTo": function () { },
             "enlarge": function () { },
             "fit": function () { },
             "height": {},
             "pad": function () { },
+            "toString": function () { },
             "type": {},
             "width": {},
             "x": {},
@@ -1306,23 +1425,18 @@ var PIXI = {
         "addToCache": function () { },
         "from": function () { },
         "fromBuffer": function () { },
-        "fromCanvas": function () { },
-        "fromFrame": function () { },
-        "fromImage": function () { },
         "fromLoader": function () { },
-        "fromSVG": function () { },
         "fromURL": function () { },
-        "fromVideo": function () { },
         "prefixed": {},
         "removeFromCache": function () { }
       },
       "defaultAnchor": {
         "clone": function () { },
-        "copy": function () { },
         "copyFrom": function () { },
         "copyTo": function () { },
         "equals": function () { },
         "set": function () { },
+        "toString": function () { },
         "x": {},
         "y": {}
       },
@@ -1340,13 +1454,13 @@ var PIXI = {
         "ceil": function () { },
         "clone": function () { },
         "contains": function () { },
-        "copy": function () { },
         "copyFrom": function () { },
         "copyTo": function () { },
         "enlarge": function () { },
         "fit": function () { },
         "height": {},
         "pad": function () { },
+        "toString": function () { },
         "type": {},
         "width": {},
         "x": {},
@@ -1365,19 +1479,15 @@ var PIXI = {
     "create": function () { },
     "from": function () { },
     "fromBuffer": function () { },
-    "fromCanvas": function () { },
-    "fromFrame": function () { },
-    "fromImage": function () { },
     "fromLoader": function () { },
-    "fromSVG": function () { },
     "fromURL": function () { },
-    "fromVideo": function () { },
     "prefixed": {},
     "removeFromCache": function () { }
   },
   "RenderTexturePool": {
     "SCREEN_KEY": {}
   },
+  "RenderTextureSystem": function () { },
   "Renderer": {
     "EventEmitter": {
       "EventEmitter": function () { },
@@ -1407,6 +1517,9 @@ var PIXI = {
     "prefixed": {},
     "registerPlugin": function () { }
   },
+  "Resource": {
+    "test": function () { }
+  },
   "RopeGeometry": {
     "merge": function () { }
   },
@@ -1430,9 +1543,17 @@ var PIXI = {
     "RECT": {},
     "RREC": {}
   },
+  "SVGResource": {
+    "SVG_SIZE": {},
+    "crossOrigin": function () { },
+    "getSize": function () { },
+    "test": function () { }
+  },
+  "ScissorSystem": function () { },
   "Shader": {
     "from": function () { }
   },
+  "ShaderSystem": function () { },
   "SimpleMesh": {
     "BATCHABLE_SIZE": {},
     "EventEmitter": {
@@ -1466,11 +1587,6 @@ var PIXI = {
       "prefixed": {}
     },
     "from": function () { },
-    "fromCanvas": function () { },
-    "fromFrame": function () { },
-    "fromImage": function () { },
-    "fromSVG": function () { },
-    "fromVideo": function () { },
     "mixin": function () { },
     "prefixed": {}
   },
@@ -1487,6 +1603,11 @@ var PIXI = {
   "State": {
     "for2d": function () { }
   },
+  "StateSystem": {
+    "checkBlendMode": function () { },
+    "checkPolygonOffset": function () { }
+  },
+  "StencilSystem": function () { },
   "System": function () { },
   "TARGETS": {
     "34067": {},
@@ -1530,6 +1651,17 @@ var PIXI = {
     "UNSIGNED_SHORT_5_5_5_1": {},
     "UNSIGNED_SHORT_5_6_5": {}
   },
+  "TYPES_TO_BYTES_PER_COMPONENT": {
+    "36193": {},
+    "5121": {},
+    "5123": {},
+    "5126": {}
+  },
+  "TYPES_TO_BYTES_PER_PIXEL": {
+    "32819": {},
+    "32820": {},
+    "33635": {}
+  },
   "TemporaryDisplayObject": {
     "EventEmitter": {
       "EventEmitter": function () { },
@@ -1544,17 +1676,13 @@ var PIXI = {
       "prefixed": {}
     },
     "from": function () { },
-    "fromCanvas": function () { },
-    "fromFrame": function () { },
-    "fromImage": function () { },
-    "fromSVG": function () { },
-    "fromVideo": function () { },
     "mixin": function () { },
     "prefixed": {}
   },
   "TextMetrics": {
     "BASELINE_MULTIPLIER": {},
     "BASELINE_SYMBOL": {},
+    "HEIGHT_MULTIPLIER": {},
     "METRICS_STRING": {},
     "_breakingSpaces": {},
     "_canvas": {
@@ -1665,13 +1793,13 @@ var PIXI = {
         "ceil": function () { },
         "clone": function () { },
         "contains": function () { },
-        "copy": function () { },
         "copyFrom": function () { },
         "copyTo": function () { },
         "enlarge": function () { },
         "fit": function () { },
         "height": {},
         "pad": function () { },
+        "toString": function () { },
         "type": {},
         "width": {},
         "x": {},
@@ -1681,6 +1809,7 @@ var PIXI = {
       "_updateID": {},
       "_uvs": {
         "set": function () { },
+        "toString": function () { },
         "uvsFloat32": {
           "0": {},
           "1": {},
@@ -1733,9 +1862,6 @@ var PIXI = {
           "addToCache": function () { },
           "from": function () { },
           "fromBuffer": function () { },
-          "fromCanvas": function () { },
-          "fromImage": function () { },
-          "fromSVG": function () { },
           "prefixed": {},
           "removeFromCache": function () { }
         },
@@ -1751,7 +1877,6 @@ var PIXI = {
         "isPowerOfTwo": {},
         "listenerCount": function () { },
         "listeners": function () { },
-        "loadSource": function () { },
         "mipmap": {},
         "off": function () { },
         "on": function () { },
@@ -1783,11 +1908,11 @@ var PIXI = {
       "constructor": function () { },
       "defaultAnchor": {
         "clone": function () { },
-        "copy": function () { },
         "copyFrom": function () { },
         "copyTo": function () { },
         "equals": function () { },
         "set": function () { },
+        "toString": function () { },
         "x": {},
         "y": {}
       },
@@ -1805,13 +1930,13 @@ var PIXI = {
         "ceil": function () { },
         "clone": function () { },
         "contains": function () { },
-        "copy": function () { },
         "copyFrom": function () { },
         "copyTo": function () { },
         "enlarge": function () { },
         "fit": function () { },
         "height": {},
         "pad": function () { },
+        "toString": function () { },
         "type": {},
         "width": {},
         "x": {},
@@ -1837,13 +1962,13 @@ var PIXI = {
         "ceil": function () { },
         "clone": function () { },
         "contains": function () { },
-        "copy": function () { },
         "copyFrom": function () { },
         "copyTo": function () { },
         "enlarge": function () { },
         "fit": function () { },
         "height": {},
         "pad": function () { },
+        "toString": function () { },
         "type": {},
         "width": {},
         "x": {},
@@ -1853,6 +1978,7 @@ var PIXI = {
       "_updateID": {},
       "_uvs": {
         "set": function () { },
+        "toString": function () { },
         "uvsFloat32": {
           "0": {},
           "1": {},
@@ -1900,9 +2026,6 @@ var PIXI = {
           "addToCache": function () { },
           "from": function () { },
           "fromBuffer": function () { },
-          "fromCanvas": function () { },
-          "fromImage": function () { },
-          "fromSVG": function () { },
           "prefixed": {},
           "removeFromCache": function () { }
         },
@@ -1918,7 +2041,6 @@ var PIXI = {
         "isPowerOfTwo": {},
         "listenerCount": function () { },
         "listeners": function () { },
-        "loadSource": function () { },
         "mipmap": {},
         "off": function () { },
         "on": function () { },
@@ -2006,11 +2128,11 @@ var PIXI = {
       "constructor": function () { },
       "defaultAnchor": {
         "clone": function () { },
-        "copy": function () { },
         "copyFrom": function () { },
         "copyTo": function () { },
         "equals": function () { },
         "set": function () { },
+        "toString": function () { },
         "x": {},
         "y": {}
       },
@@ -2028,13 +2150,13 @@ var PIXI = {
         "ceil": function () { },
         "clone": function () { },
         "contains": function () { },
-        "copy": function () { },
         "copyFrom": function () { },
         "copyTo": function () { },
         "enlarge": function () { },
         "fit": function () { },
         "height": {},
         "pad": function () { },
+        "toString": function () { },
         "type": {},
         "width": {},
         "x": {},
@@ -2052,20 +2174,18 @@ var PIXI = {
     "addToCache": function () { },
     "from": function () { },
     "fromBuffer": function () { },
-    "fromCanvas": function () { },
-    "fromFrame": function () { },
-    "fromImage": function () { },
     "fromLoader": function () { },
-    "fromSVG": function () { },
     "fromURL": function () { },
-    "fromVideo": function () { },
     "prefixed": {},
     "removeFromCache": function () { }
   },
+  "TextureGCSystem": function () { },
   "TextureLoader": {
+    "add": function () { },
     "use": function () { }
   },
   "TextureMatrix": function () { },
+  "TextureSystem": function () { },
   "TextureUvs": function () { },
   "Ticker": function () { },
   "TickerPlugin": {
@@ -2078,11 +2198,6 @@ var PIXI = {
       "prefixed": {}
     },
     "from": function () { },
-    "fromCanvas": function () { },
-    "fromFrame": function () { },
-    "fromImage": function () { },
-    "fromSVG": function () { },
-    "fromVideo": function () { },
     "mixin": function () { },
     "prefixed": {}
   },
@@ -2108,7 +2223,6 @@ var PIXI = {
         "b": {},
         "c": {},
         "clone": function () { },
-        "copy": function () { },
         "copyFrom": function () { },
         "copyTo": function () { },
         "d": {},
@@ -2122,6 +2236,7 @@ var PIXI = {
         "set": function () { },
         "setTransform": function () { },
         "toArray": function () { },
+        "toString": function () { },
         "translate": function () { },
         "tx": {},
         "ty": {}
@@ -2132,36 +2247,36 @@ var PIXI = {
         "_y": {},
         "cb": function () { },
         "clone": function () { },
-        "copy": function () { },
         "copyFrom": function () { },
         "copyTo": function () { },
         "equals": function () { },
         "scope": {},
-        "set": function () { }
+        "set": function () { },
+        "toString": function () { }
       },
       "position": {
         "_x": {},
         "_y": {},
         "cb": function () { },
         "clone": function () { },
-        "copy": function () { },
         "copyFrom": function () { },
         "copyTo": function () { },
         "equals": function () { },
         "scope": {},
-        "set": function () { }
+        "set": function () { },
+        "toString": function () { }
       },
       "scale": {
         "_x": {},
         "_y": {},
         "cb": function () { },
         "clone": function () { },
-        "copy": function () { },
         "copyFrom": function () { },
         "copyTo": function () { },
         "equals": function () { },
         "scope": {},
-        "set": function () { }
+        "set": function () { },
+        "toString": function () { }
       },
       "setFromMatrix": function () { },
       "skew": {
@@ -2169,13 +2284,14 @@ var PIXI = {
         "_y": {},
         "cb": function () { },
         "clone": function () { },
-        "copy": function () { },
         "copyFrom": function () { },
         "copyTo": function () { },
         "equals": function () { },
         "scope": {},
-        "set": function () { }
+        "set": function () { },
+        "toString": function () { }
       },
+      "toString": function () { },
       "updateLocalTransform": function () { },
       "updateSkew": function () { },
       "updateTransform": function () { },
@@ -2188,7 +2304,6 @@ var PIXI = {
         "b": {},
         "c": {},
         "clone": function () { },
-        "copy": function () { },
         "copyFrom": function () { },
         "copyTo": function () { },
         "d": {},
@@ -2202,6 +2317,7 @@ var PIXI = {
         "set": function () { },
         "setTransform": function () { },
         "toArray": function () { },
+        "toString": function () { },
         "translate": function () { },
         "tx": {},
         "ty": {}
@@ -2224,6 +2340,16 @@ var PIXI = {
     "from": function () { }
   },
   "VERSION": {},
+  "VideoResource": {
+    "MIME_TYPES": {
+      "m4v": {},
+      "mov": {},
+      "ogv": {}
+    },
+    "TYPES": {},
+    "crossOrigin": function () { },
+    "test": function () { }
+  },
   "ViewableBuffer": {
     "sizeOf": function () { }
   },
@@ -2235,7 +2361,6 @@ var PIXI = {
     "MIRRORED_REPEAT": {},
     "REPEAT": {}
   },
-  "accessibility": {},
   "accessibleTarget": {
     "_accessibleActive": {},
     "_accessibleDiv": {},
@@ -2249,11 +2374,10 @@ var PIXI = {
     "tabIndex": {}
   },
   "autoDetectRenderer": function () { },
+  "autoDetectResource": function () { },
   "checkMaxIfStatementsInShader": function () { },
   "defaultFilterVertex": {},
   "defaultVertex": {},
-  "extract": {},
-  "extras": {},
   "filters": {
     "AlphaFilter": {
       "from": function () { }
@@ -2262,12 +2386,6 @@ var PIXI = {
       "from": function () { }
     },
     "BlurFilterPass": {
-      "from": function () { }
-    },
-    "BlurXFilter": {
-      "from": function () { }
-    },
-    "BlurYFilter": {
       "from": function () { }
     },
     "ColorMatrixFilter": {
@@ -2321,7 +2439,6 @@ var PIXI = {
       "curveLength": function () { },
       "curveTo": function () { }
     },
-    "Star": function () { },
     "buildCircle": {
       "build": function () { },
       "triangulate": function () { }
@@ -2365,7 +2482,6 @@ var PIXI = {
     "vX": function () { },
     "vY": function () { }
   },
-  "interaction": {},
   "interactiveTarget": {
     "_trackedPointers": {},
     "buttonMode": {},
@@ -2410,62 +2526,7 @@ var PIXI = {
       "tablet": {}
     }
   },
-  "loaders": {},
-  "mesh": {},
-  "particles": {},
-  "prepare": {},
-  "resources": {
-    "AbstractMultiResource": {
-      "test": function () { }
-    },
-    "ArrayResource": {
-      "test": function () { }
-    },
-    "BaseImageResource": {
-      "crossOrigin": function () { },
-      "test": function () { }
-    },
-    "BufferResource": {
-      "test": function () { }
-    },
-    "CanvasResource": {
-      "crossOrigin": function () { },
-      "test": function () { }
-    },
-    "CubeResource": {
-      "SIDES": {},
-      "test": function () { }
-    },
-    "INSTALLED": {},
-    "ImageBitmapResource": {
-      "crossOrigin": function () { },
-      "test": function () { }
-    },
-    "ImageResource": {
-      "crossOrigin": function () { },
-      "test": function () { }
-    },
-    "Resource": {
-      "test": function () { }
-    },
-    "SVGResource": {
-      "SVG_SIZE": {},
-      "crossOrigin": function () { },
-      "getSize": function () { },
-      "test": function () { }
-    },
-    "VideoResource": {
-      "MIME_TYPES": {
-        "m4v": {},
-        "mov": {},
-        "ogv": {}
-      },
-      "TYPES": {},
-      "crossOrigin": function () { },
-      "test": function () { }
-    },
-    "autoDetectResource": function () { }
-  },
+  "resources": {},
   "settings": {
     "ANISOTROPIC_LEVEL": {},
     "CAN_UPLOAD_SAME_BUFFER": {},
@@ -2482,12 +2543,13 @@ var PIXI = {
     "RENDER_OPTIONS": {
       "antialias": {},
       "autoDensity": {},
+      "backgroundAlpha": {},
       "backgroundColor": {},
       "clearBeforeRender": {},
       "height": {},
       "legacy": {},
       "preserveDrawingBuffer": {},
-      "transparent": {},
+      "useContextAlpha": {},
       "view": {},
       "width": {}
     },
@@ -2503,28 +2565,8 @@ var PIXI = {
     "UPLOADS_PER_FRAME": {},
     "WRAP_MODE": {}
   },
-  "systems": {
-    "BatchSystem": function () { },
-    "ContextSystem": function () { },
-    "FilterSystem": function () { },
-    "FramebufferSystem": function () { },
-    "GeometrySystem": function () { },
-    "MaskSystem": function () { },
-    "ProjectionSystem": function () { },
-    "RenderTextureSystem": function () { },
-    "ScissorSystem": function () { },
-    "ShaderSystem": function () { },
-    "StateSystem": {
-      "checkBlendMode": function () { },
-      "checkPolygonOffset": function () { }
-    },
-    "StencilSystem": function () { },
-    "TextureGCSystem": function () { },
-    "TextureSystem": function () { }
-  },
-  "ticker": {},
+  "systems": {},
   "uniformParsers": {},
-  "useDeprecated": function () { },
   "utils": {
     "BaseTextureCache": {},
     "CanvasRenderTarget": function () { },
@@ -2590,11 +2632,6 @@ var PIXI = {
     "isPow2": function () { },
     "isWebGLSupported": function () { },
     "log2": function () { },
-    "mixins": {
-      "delayMixin": function () { },
-      "mixin": function () { },
-      "performMixins": function () { }
-    },
     "nextPow2": function () { },
     "premultiplyBlendMode": {},
     "premultiplyRgba": function () { },
@@ -2609,11 +2646,9 @@ var PIXI = {
     "trimCanvas": function () { },
     "uid": function () { },
     "url": {
-      "Url": function () { },
       "format": function () { },
       "parse": function () { },
-      "resolve": function () { },
-      "resolveObject": function () { }
+      "resolve": function () { }
     }
   }
 };
@@ -2635,6 +2670,19 @@ PIXI.AbstractBatchRenderer.prototype = {
   "start": function () { },
   "stop": function () { },
   "updateGeometry": function () { }
+};
+PIXI.AbstractMultiResource.prototype = {
+  "addResourceAt": function () { },
+  "bind": function () { },
+  "constructor": function () { },
+  "destroy": function () { },
+  "dispose": function () { },
+  "initFromArray": function () { },
+  "load": function () { },
+  "resize": function () { },
+  "style": function () { },
+  "unbind": function () { },
+  "update": function () { }
 };
 PIXI.AbstractRenderer.prototype = {
   "addListener": function () { },
@@ -2687,6 +2735,7 @@ PIXI.AnimatedSprite.prototype = {
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
   "_calculateCachedBounds": function () { },
@@ -2700,7 +2749,6 @@ PIXI.AnimatedSprite.prototype = {
   "_render": function () { },
   "_renderCached": function () { },
   "_renderCachedCanvas": function () { },
-  "_renderWebGL": function () { },
   "_trackedPointers": function () { },
   "accessible": function () { },
   "accessibleChildren": function () { },
@@ -2751,9 +2799,7 @@ PIXI.AnimatedSprite.prototype = {
   "removeListener": function () { },
   "render": function () { },
   "renderAdvanced": function () { },
-  "renderAdvancedWebGL": function () { },
   "renderId": function () { },
-  "renderWebGL": function () { },
   "setChildIndex": function () { },
   "setParent": function () { },
   "setTransform": function () { },
@@ -2784,8 +2830,35 @@ PIXI.Application.prototype = {
   "destroy": function () { },
   "render": function () { }
 };
+PIXI.ArrayResource.prototype = {
+  "addBaseTextureAt": function () { },
+  "addResourceAt": function () { },
+  "bind": function () { },
+  "constructor": function () { },
+  "destroy": function () { },
+  "dispose": function () { },
+  "initFromArray": function () { },
+  "load": function () { },
+  "resize": function () { },
+  "style": function () { },
+  "unbind": function () { },
+  "update": function () { },
+  "upload": function () { }
+};
 PIXI.Attribute.prototype = {
   "destroy": function () { }
+};
+PIXI.BaseImageResource.prototype = {
+  "bind": function () { },
+  "constructor": function () { },
+  "destroy": function () { },
+  "dispose": function () { },
+  "load": function () { },
+  "resize": function () { },
+  "style": function () { },
+  "unbind": function () { },
+  "update": function () { },
+  "upload": function () { }
 };
 PIXI.BasePrepare.prototype = {
   "add": function () { },
@@ -2807,7 +2880,6 @@ PIXI.BaseRenderTexture.prototype = {
   "eventNames": function () { },
   "listenerCount": function () { },
   "listeners": function () { },
-  "loadSource": function () { },
   "off": function () { },
   "on": function () { },
   "onError": function () { },
@@ -2845,7 +2917,6 @@ PIXI.BaseTexture.prototype = {
   "eventNames": function () { },
   "listenerCount": function () { },
   "listeners": function () { },
-  "loadSource": function () { },
   "off": function () { },
   "on": function () { },
   "onError": function () { },
@@ -2907,6 +2978,15 @@ PIXI.BatchShaderGenerator.prototype = {
   "generateSampleSrc": function () { },
   "generateShader": function () { }
 };
+PIXI.BatchSystem.prototype = {
+  "boundArray": function () { },
+  "constructor": function () { },
+  "copyBoundTextures": function () { },
+  "destroy": function () { },
+  "flush": function () { },
+  "reset": function () { },
+  "setObjectRenderer": function () { }
+};
 PIXI.BatchTextureArray.prototype = {
   "clear": function () { }
 };
@@ -2918,6 +2998,7 @@ PIXI.BitmapText.prototype = {
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
   "_calculateCachedBounds": function () { },
@@ -2929,9 +3010,7 @@ PIXI.BitmapText.prototype = {
   "_render": function () { },
   "_renderCached": function () { },
   "_renderCachedCanvas": function () { },
-  "_renderWebGL": function () { },
   "_trackedPointers": function () { },
-  "_upgradeStyle": function () { },
   "accessible": function () { },
   "accessibleChildren": function () { },
   "accessibleHint": function () { },
@@ -2975,9 +3054,7 @@ PIXI.BitmapText.prototype = {
   "removeListener": function () { },
   "render": function () { },
   "renderAdvanced": function () { },
-  "renderAdvancedWebGL": function () { },
   "renderId": function () { },
-  "renderWebGL": function () { },
   "setChildIndex": function () { },
   "setParent": function () { },
   "setTransform": function () { },
@@ -3003,6 +3080,19 @@ PIXI.BitmapText.EventEmitter.prototype = {
   "removeAllListeners": function () { },
   "removeListener": function () { }
 };
+PIXI.BlobResource.prototype = {
+  "bind": function () { },
+  "constructor": function () { },
+  "destroy": function () { },
+  "dispose": function () { },
+  "load": function () { },
+  "onBlobLoaded": function () { },
+  "resize": function () { },
+  "style": function () { },
+  "unbind": function () { },
+  "update": function () { },
+  "upload": function () { }
+};
 PIXI.Bounds.prototype = {
   "addBounds": function () { },
   "addBoundsArea": function () { },
@@ -3012,6 +3102,7 @@ PIXI.Bounds.prototype = {
   "addFrameMatrix": function () { },
   "addFramePad": function () { },
   "addPoint": function () { },
+  "addPointMatrix": function () { },
   "addQuad": function () { },
   "addVertexData": function () { },
   "addVertices": function () { },
@@ -3026,16 +3117,55 @@ PIXI.Buffer.prototype = {
   "dispose": function () { },
   "update": function () { }
 };
+PIXI.BufferResource.prototype = {
+  "bind": function () { },
+  "constructor": function () { },
+  "destroy": function () { },
+  "dispose": function () { },
+  "load": function () { },
+  "resize": function () { },
+  "style": function () { },
+  "unbind": function () { },
+  "update": function () { },
+  "upload": function () { }
+};
+PIXI.CanvasResource.prototype = {
+  "bind": function () { },
+  "constructor": function () { },
+  "destroy": function () { },
+  "dispose": function () { },
+  "load": function () { },
+  "resize": function () { },
+  "style": function () { },
+  "unbind": function () { },
+  "update": function () { },
+  "upload": function () { }
+};
 PIXI.Circle.prototype = {
   "clone": function () { },
   "contains": function () { },
-  "getBounds": function () { }
+  "getBounds": function () { },
+  "toString": function () { }
+};
+PIXI.CompressedTextureResource.prototype = {
+  "bind": function () { },
+  "constructor": function () { },
+  "destroy": function () { },
+  "dispose": function () { },
+  "load": function () { },
+  "onBlobLoaded": function () { },
+  "resize": function () { },
+  "style": function () { },
+  "unbind": function () { },
+  "update": function () { },
+  "upload": function () { }
 };
 PIXI.Container.prototype = {
   "_accessibleActive": function () { },
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
   "_calculateCachedBounds": function () { },
@@ -3047,7 +3177,6 @@ PIXI.Container.prototype = {
   "_render": function () { },
   "_renderCached": function () { },
   "_renderCachedCanvas": function () { },
-  "_renderWebGL": function () { },
   "_trackedPointers": function () { },
   "accessible": function () { },
   "accessibleChildren": function () { },
@@ -3092,9 +3221,7 @@ PIXI.Container.prototype = {
   "removeListener": function () { },
   "render": function () { },
   "renderAdvanced": function () { },
-  "renderAdvancedWebGL": function () { },
   "renderId": function () { },
-  "renderWebGL": function () { },
   "setChildIndex": function () { },
   "setParent": function () { },
   "setTransform": function () { },
@@ -3118,15 +3245,44 @@ PIXI.Container.EventEmitter.prototype = {
   "removeAllListeners": function () { },
   "removeListener": function () { }
 };
+PIXI.ContextSystem.prototype = {
+  "constructor": function () { },
+  "contextChange": function () { },
+  "createContext": function () { },
+  "destroy": function () { },
+  "getExtensions": function () { },
+  "handleContextLost": function () { },
+  "handleContextRestored": function () { },
+  "initFromContext": function () { },
+  "initFromOptions": function () { },
+  "postrender": function () { },
+  "validateContext": function () { }
+};
 PIXI.CountLimiter.prototype = {
   "allowedToUpload": function () { },
   "beginFrame": function () { }
+};
+PIXI.CubeResource.prototype = {
+  "addBaseTextureAt": function () { },
+  "addResourceAt": function () { },
+  "bind": function () { },
+  "constructor": function () { },
+  "destroy": function () { },
+  "dispose": function () { },
+  "initFromArray": function () { },
+  "load": function () { },
+  "resize": function () { },
+  "style": function () { },
+  "unbind": function () { },
+  "update": function () { },
+  "upload": function () { }
 };
 PIXI.DisplayObject.prototype = {
   "_accessibleActive": function () { },
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateCachedBounds": function () { },
   "_destroyCachedDisplayObject": function () { },
@@ -3168,7 +3324,6 @@ PIXI.DisplayObject.prototype = {
   "removeAllListeners": function () { },
   "removeListener": function () { },
   "renderId": function () { },
-  "renderWebGL": function () { },
   "setParent": function () { },
   "setTransform": function () { },
   "tabIndex": function () { },
@@ -3192,7 +3347,8 @@ PIXI.DisplayObject.EventEmitter.prototype = {
 PIXI.Ellipse.prototype = {
   "clone": function () { },
   "contains": function () { },
-  "getBounds": function () { }
+  "getBounds": function () { },
+  "toString": function () { }
 };
 PIXI.Extract.prototype = {
   "base64": function () { },
@@ -3215,6 +3371,22 @@ PIXI.Filter.prototype = {
 PIXI.FilterState.prototype = {
   "clear": function () { }
 };
+PIXI.FilterSystem.prototype = {
+  "applyFilter": function () { },
+  "bindAndClear": function () { },
+  "calculateSpriteMatrix": function () { },
+  "constructor": function () { },
+  "destroy": function () { },
+  "emptyPool": function () { },
+  "getFilterTexture": function () { },
+  "getOptimalFilterTexture": function () { },
+  "pop": function () { },
+  "push": function () { },
+  "resize": function () { },
+  "returnFilterTexture": function () { },
+  "roundFrame": function () { },
+  "transformAABB": function () { }
+};
 PIXI.Framebuffer.prototype = {
   "addColorTexture": function () { },
   "addDepthTexture": function () { },
@@ -3223,6 +3395,23 @@ PIXI.Framebuffer.prototype = {
   "enableDepth": function () { },
   "enableStencil": function () { },
   "resize": function () { }
+};
+PIXI.FramebufferSystem.prototype = {
+  "bind": function () { },
+  "blit": function () { },
+  "clear": function () { },
+  "constructor": function () { },
+  "contextChange": function () { },
+  "destroy": function () { },
+  "detectSamples": function () { },
+  "disposeAll": function () { },
+  "disposeFramebuffer": function () { },
+  "forceStencil": function () { },
+  "initFramebuffer": function () { },
+  "reset": function () { },
+  "resizeFramebuffer": function () { },
+  "setViewport": function () { },
+  "updateFramebuffer": function () { }
 };
 PIXI.GLProgram.prototype = {
   "destroy": function () { }
@@ -3239,11 +3428,29 @@ PIXI.Geometry.prototype = {
   "getSize": function () { },
   "interleave": function () { }
 };
+PIXI.GeometrySystem.prototype = {
+  "activateVao": function () { },
+  "bind": function () { },
+  "checkCompatibility": function () { },
+  "constructor": function () { },
+  "contextChange": function () { },
+  "destroy": function () { },
+  "disposeAll": function () { },
+  "disposeBuffer": function () { },
+  "disposeGeometry": function () { },
+  "draw": function () { },
+  "getSignature": function () { },
+  "initGeometryVao": function () { },
+  "reset": function () { },
+  "unbind": function () { },
+  "updateBuffers": function () { }
+};
 PIXI.Graphics.prototype = {
   "_accessibleActive": function () { },
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
   "_calculateCachedBounds": function () { },
@@ -3260,7 +3467,6 @@ PIXI.Graphics.prototype = {
   "_renderCachedCanvas": function () { },
   "_renderDirect": function () { },
   "_renderDrawCallDirect": function () { },
-  "_renderWebGL": function () { },
   "_resolveDirectShader": function () { },
   "_trackedPointers": function () { },
   "accessible": function () { },
@@ -3298,14 +3504,12 @@ PIXI.Graphics.prototype = {
   "drawRect": function () { },
   "drawRoundedRect": function () { },
   "drawShape": function () { },
-  "drawStar": function () { },
   "emit": function () { },
   "enableTempParent": function () { },
   "endFill": function () { },
   "endHole": function () { },
   "eventNames": function () { },
   "finishPoly": function () { },
-  "generateCanvasTexture": function () { },
   "getBounds": function () { },
   "getChildAt": function () { },
   "getChildByName": function () { },
@@ -3335,9 +3539,7 @@ PIXI.Graphics.prototype = {
   "removeListener": function () { },
   "render": function () { },
   "renderAdvanced": function () { },
-  "renderAdvancedWebGL": function () { },
   "renderId": function () { },
-  "renderWebGL": function () { },
   "setChildIndex": function () { },
   "setMatrix": function () { },
   "setParent": function () { },
@@ -3400,6 +3602,31 @@ PIXI.GraphicsGeometry.prototype = {
   "transformPoints": function () { },
   "updateBatches": function () { },
   "validateBatching": function () { }
+};
+PIXI.ImageBitmapResource.prototype = {
+  "bind": function () { },
+  "constructor": function () { },
+  "destroy": function () { },
+  "dispose": function () { },
+  "load": function () { },
+  "resize": function () { },
+  "style": function () { },
+  "unbind": function () { },
+  "update": function () { },
+  "upload": function () { }
+};
+PIXI.ImageResource.prototype = {
+  "bind": function () { },
+  "constructor": function () { },
+  "destroy": function () { },
+  "dispose": function () { },
+  "load": function () { },
+  "process": function () { },
+  "resize": function () { },
+  "style": function () { },
+  "unbind": function () { },
+  "update": function () { },
+  "upload": function () { }
 };
 PIXI.InteractionData.prototype = {
   "copyEvent": function () { },
@@ -3484,9 +3711,6 @@ PIXI.Loader.prototype = {
   "constructor": function () { },
   "destroy": function () { },
   "load": function () { },
-  "off": function () { },
-  "on": function () { },
-  "once": function () { },
   "pre": function () { },
   "reset": function () { },
   "use": function () { }
@@ -3521,12 +3745,21 @@ PIXI.MaskData.prototype = {
   "copyCountersOrReset": function () { },
   "reset": function () { }
 };
+PIXI.MaskSystem.prototype = {
+  "constructor": function () { },
+  "destroy": function () { },
+  "detect": function () { },
+  "pop": function () { },
+  "popSpriteMask": function () { },
+  "push": function () { },
+  "pushSpriteMask": function () { },
+  "setMaskStack": function () { }
+};
 PIXI.Matrix.prototype = {
   "append": function () { },
   "apply": function () { },
   "applyInverse": function () { },
   "clone": function () { },
-  "copy": function () { },
   "copyFrom": function () { },
   "copyTo": function () { },
   "decompose": function () { },
@@ -3539,6 +3772,7 @@ PIXI.Matrix.prototype = {
   "set": function () { },
   "setTransform": function () { },
   "toArray": function () { },
+  "toString": function () { },
   "translate": function () { }
 };
 PIXI.Mesh.prototype = {
@@ -3546,6 +3780,7 @@ PIXI.Mesh.prototype = {
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
   "_calculateCachedBounds": function () { },
@@ -3559,7 +3794,6 @@ PIXI.Mesh.prototype = {
   "_renderCachedCanvas": function () { },
   "_renderDefault": function () { },
   "_renderToBatch": function () { },
-  "_renderWebGL": function () { },
   "_trackedPointers": function () { },
   "accessible": function () { },
   "accessibleChildren": function () { },
@@ -3607,9 +3841,7 @@ PIXI.Mesh.prototype = {
   "removeListener": function () { },
   "render": function () { },
   "renderAdvanced": function () { },
-  "renderAdvancedWebGL": function () { },
   "renderId": function () { },
-  "renderWebGL": function () { },
   "setChildIndex": function () { },
   "setParent": function () { },
   "setTransform": function () { },
@@ -3660,6 +3892,7 @@ PIXI.NineSlicePlane.prototype = {
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
   "_calculateCachedBounds": function () { },
@@ -3675,7 +3908,6 @@ PIXI.NineSlicePlane.prototype = {
   "_renderCachedCanvas": function () { },
   "_renderDefault": function () { },
   "_renderToBatch": function () { },
-  "_renderWebGL": function () { },
   "_trackedPointers": function () { },
   "accessible": function () { },
   "accessibleChildren": function () { },
@@ -3723,9 +3955,7 @@ PIXI.NineSlicePlane.prototype = {
   "removeListener": function () { },
   "render": function () { },
   "renderAdvanced": function () { },
-  "renderAdvancedWebGL": function () { },
   "renderId": function () { },
-  "renderWebGL": function () { },
   "setChildIndex": function () { },
   "setParent": function () { },
   "setTransform": function () { },
@@ -3761,17 +3991,18 @@ PIXI.ObjectRenderer.prototype = {
 };
 PIXI.ObservablePoint.prototype = {
   "clone": function () { },
-  "copy": function () { },
   "copyFrom": function () { },
   "copyTo": function () { },
   "equals": function () { },
-  "set": function () { }
+  "set": function () { },
+  "toString": function () { }
 };
 PIXI.ParticleContainer.prototype = {
   "_accessibleActive": function () { },
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
   "_calculateCachedBounds": function () { },
@@ -3783,7 +4014,6 @@ PIXI.ParticleContainer.prototype = {
   "_render": function () { },
   "_renderCached": function () { },
   "_renderCachedCanvas": function () { },
-  "_renderWebGL": function () { },
   "_trackedPointers": function () { },
   "accessible": function () { },
   "accessibleChildren": function () { },
@@ -3829,9 +4059,7 @@ PIXI.ParticleContainer.prototype = {
   "removeListener": function () { },
   "render": function () { },
   "renderAdvanced": function () { },
-  "renderAdvancedWebGL": function () { },
   "renderId": function () { },
-  "renderWebGL": function () { },
   "setChildIndex": function () { },
   "setParent": function () { },
   "setProperties": function () { },
@@ -3887,15 +4115,16 @@ PIXI.PlaneGeometry.prototype = {
 };
 PIXI.Point.prototype = {
   "clone": function () { },
-  "copy": function () { },
   "copyFrom": function () { },
   "copyTo": function () { },
   "equals": function () { },
-  "set": function () { }
+  "set": function () { },
+  "toString": function () { }
 };
 PIXI.Polygon.prototype = {
   "clone": function () { },
-  "contains": function () { }
+  "contains": function () { },
+  "toString": function () { }
 };
 PIXI.Prepare.prototype = {
   "add": function () { },
@@ -3911,6 +4140,13 @@ PIXI.Program.prototype = {
   "extractData": function () { },
   "getAttributeData": function () { },
   "getUniformData": function () { }
+};
+PIXI.ProjectionSystem.prototype = {
+  "calculateProjection": function () { },
+  "constructor": function () { },
+  "destroy": function () { },
+  "setTransform": function () { },
+  "update": function () { }
 };
 PIXI.Quad.prototype = {
   "addAttribute": function () { },
@@ -3944,12 +4180,12 @@ PIXI.Rectangle.prototype = {
   "ceil": function () { },
   "clone": function () { },
   "contains": function () { },
-  "copy": function () { },
   "copyFrom": function () { },
   "copyTo": function () { },
   "enlarge": function () { },
   "fit": function () { },
-  "pad": function () { }
+  "pad": function () { },
+  "toString": function () { }
 };
 PIXI.RenderTexture.prototype = {
   "addListener": function () { },
@@ -3983,7 +4219,6 @@ PIXI.RenderTexture.EMPTY.baseTexture.constructor.prototype = {
   "eventNames": function () { },
   "listenerCount": function () { },
   "listeners": function () { },
-  "loadSource": function () { },
   "off": function () { },
   "on": function () { },
   "onError": function () { },
@@ -4051,7 +4286,6 @@ PIXI.RenderTexture.EMPTY.constructor.WHITE.baseTexture.constructor.prototype = {
   "eventNames": function () { },
   "listenerCount": function () { },
   "listeners": function () { },
-  "loadSource": function () { },
   "off": function () { },
   "on": function () { },
   "onError": function () { },
@@ -4112,7 +4346,6 @@ PIXI.RenderTexture.WHITE.baseTexture.constructor.prototype = {
   "eventNames": function () { },
   "listenerCount": function () { },
   "listeners": function () { },
-  "loadSource": function () { },
   "off": function () { },
   "on": function () { },
   "onError": function () { },
@@ -4180,7 +4413,6 @@ PIXI.RenderTexture.WHITE.constructor.EMPTY.baseTexture.constructor.prototype = {
   "eventNames": function () { },
   "listenerCount": function () { },
   "listeners": function () { },
-  "loadSource": function () { },
   "off": function () { },
   "on": function () { },
   "onError": function () { },
@@ -4226,6 +4458,14 @@ PIXI.RenderTexturePool.prototype = {
   "returnFilterTexture": function () { },
   "returnTexture": function () { },
   "setScreenSize": function () { }
+};
+PIXI.RenderTextureSystem.prototype = {
+  "bind": function () { },
+  "clear": function () { },
+  "constructor": function () { },
+  "destroy": function () { },
+  "reset": function () { },
+  "resize": function () { }
 };
 PIXI.Renderer.prototype = {
   "addListener": function () { },
@@ -4391,6 +4631,16 @@ PIXI.Renderer.__plugins.tilingSprite.prototype = {
   "start": function () { },
   "stop": function () { }
 };
+PIXI.Resource.prototype = {
+  "bind": function () { },
+  "destroy": function () { },
+  "dispose": function () { },
+  "load": function () { },
+  "resize": function () { },
+  "style": function () { },
+  "unbind": function () { },
+  "update": function () { }
+};
 PIXI.RopeGeometry.prototype = {
   "addAttribute": function () { },
   "addIndex": function () { },
@@ -4409,7 +4659,8 @@ PIXI.RopeGeometry.prototype = {
 };
 PIXI.RoundedRectangle.prototype = {
   "clone": function () { },
-  "contains": function () { }
+  "contains": function () { },
+  "toString": function () { }
 };
 PIXI.Runner.prototype = {
   "add": function () { },
@@ -4420,15 +4671,53 @@ PIXI.Runner.prototype = {
   "remove": function () { },
   "removeAll": function () { }
 };
+PIXI.SVGResource.prototype = {
+  "_loadSvg": function () { },
+  "bind": function () { },
+  "constructor": function () { },
+  "destroy": function () { },
+  "dispose": function () { },
+  "load": function () { },
+  "resize": function () { },
+  "style": function () { },
+  "unbind": function () { },
+  "update": function () { },
+  "upload": function () { }
+};
+PIXI.ScissorSystem.prototype = {
+  "_useCurrent": function () { },
+  "constructor": function () { },
+  "destroy": function () { },
+  "getStackLength": function () { },
+  "pop": function () { },
+  "push": function () { },
+  "setMaskStack": function () { }
+};
 PIXI.Shader.prototype = {
   "checkUniformExists": function () { },
   "destroy": function () { }
+};
+PIXI.ShaderSystem.prototype = {
+  "bind": function () { },
+  "constructor": function () { },
+  "contextChange": function () { },
+  "createSyncGroups": function () { },
+  "destroy": function () { },
+  "generateShader": function () { },
+  "getSignature": function () { },
+  "getglProgram": function () { },
+  "reset": function () { },
+  "setUniforms": function () { },
+  "syncUniformGroup": function () { },
+  "syncUniforms": function () { },
+  "systemCheck": function () { }
 };
 PIXI.SimpleMesh.prototype = {
   "_accessibleActive": function () { },
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
   "_calculateCachedBounds": function () { },
@@ -4442,7 +4731,6 @@ PIXI.SimpleMesh.prototype = {
   "_renderCachedCanvas": function () { },
   "_renderDefault": function () { },
   "_renderToBatch": function () { },
-  "_renderWebGL": function () { },
   "_trackedPointers": function () { },
   "accessible": function () { },
   "accessibleChildren": function () { },
@@ -4490,9 +4778,7 @@ PIXI.SimpleMesh.prototype = {
   "removeListener": function () { },
   "render": function () { },
   "renderAdvanced": function () { },
-  "renderAdvancedWebGL": function () { },
   "renderId": function () { },
-  "renderWebGL": function () { },
   "setChildIndex": function () { },
   "setParent": function () { },
   "setTransform": function () { },
@@ -4521,6 +4807,7 @@ PIXI.SimplePlane.prototype = {
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
   "_calculateCachedBounds": function () { },
@@ -4534,7 +4821,6 @@ PIXI.SimplePlane.prototype = {
   "_renderCachedCanvas": function () { },
   "_renderDefault": function () { },
   "_renderToBatch": function () { },
-  "_renderWebGL": function () { },
   "_trackedPointers": function () { },
   "accessible": function () { },
   "accessibleChildren": function () { },
@@ -4582,9 +4868,7 @@ PIXI.SimplePlane.prototype = {
   "removeListener": function () { },
   "render": function () { },
   "renderAdvanced": function () { },
-  "renderAdvancedWebGL": function () { },
   "renderId": function () { },
-  "renderWebGL": function () { },
   "setChildIndex": function () { },
   "setParent": function () { },
   "setTransform": function () { },
@@ -4614,6 +4898,7 @@ PIXI.SimpleRope.prototype = {
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
   "_calculateCachedBounds": function () { },
@@ -4627,7 +4912,6 @@ PIXI.SimpleRope.prototype = {
   "_renderCachedCanvas": function () { },
   "_renderDefault": function () { },
   "_renderToBatch": function () { },
-  "_renderWebGL": function () { },
   "_trackedPointers": function () { },
   "accessible": function () { },
   "accessibleChildren": function () { },
@@ -4675,9 +4959,7 @@ PIXI.SimpleRope.prototype = {
   "removeListener": function () { },
   "render": function () { },
   "renderAdvanced": function () { },
-  "renderAdvancedWebGL": function () { },
   "renderId": function () { },
-  "renderWebGL": function () { },
   "setChildIndex": function () { },
   "setParent": function () { },
   "setTransform": function () { },
@@ -4706,6 +4988,7 @@ PIXI.Sprite.prototype = {
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
   "_calculateCachedBounds": function () { },
@@ -4719,7 +5002,6 @@ PIXI.Sprite.prototype = {
   "_render": function () { },
   "_renderCached": function () { },
   "_renderCachedCanvas": function () { },
-  "_renderWebGL": function () { },
   "_trackedPointers": function () { },
   "accessible": function () { },
   "accessibleChildren": function () { },
@@ -4767,9 +5049,7 @@ PIXI.Sprite.prototype = {
   "removeListener": function () { },
   "render": function () { },
   "renderAdvanced": function () { },
-  "renderAdvancedWebGL": function () { },
   "renderId": function () { },
-  "renderWebGL": function () { },
   "setChildIndex": function () { },
   "setParent": function () { },
   "setTransform": function () { },
@@ -4808,6 +5088,36 @@ PIXI.Spritesheet.prototype = {
   "destroy": function () { },
   "parse": function () { }
 };
+PIXI.State.prototype = {
+  "toString": function () { }
+};
+PIXI.StateSystem.prototype = {
+  "constructor": function () { },
+  "contextChange": function () { },
+  "destroy": function () { },
+  "forceState": function () { },
+  "reset": function () { },
+  "set": function () { },
+  "setBlend": function () { },
+  "setBlendMode": function () { },
+  "setCullFace": function () { },
+  "setDepthMask": function () { },
+  "setDepthTest": function () { },
+  "setFrontFace": function () { },
+  "setOffset": function () { },
+  "setPolygonOffset": function () { },
+  "updateCheck": function () { }
+};
+PIXI.StencilSystem.prototype = {
+  "_getBitwiseMask": function () { },
+  "_useCurrent": function () { },
+  "constructor": function () { },
+  "destroy": function () { },
+  "getStackLength": function () { },
+  "pop": function () { },
+  "push": function () { },
+  "setMaskStack": function () { }
+};
 PIXI.System.prototype = {
   "destroy": function () { }
 };
@@ -4816,6 +5126,7 @@ PIXI.TemporaryDisplayObject.prototype = {
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateCachedBounds": function () { },
   "_destroyCachedDisplayObject": function () { },
@@ -4857,7 +5168,6 @@ PIXI.TemporaryDisplayObject.prototype = {
   "removeAllListeners": function () { },
   "removeListener": function () { },
   "renderId": function () { },
-  "renderWebGL": function () { },
   "setParent": function () { },
   "setTransform": function () { },
   "tabIndex": function () { },
@@ -4883,6 +5193,7 @@ PIXI.Text.prototype = {
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
   "_calculateCachedBounds": function () { },
@@ -4897,7 +5208,6 @@ PIXI.Text.prototype = {
   "_render": function () { },
   "_renderCached": function () { },
   "_renderCachedCanvas": function () { },
-  "_renderWebGL": function () { },
   "_trackedPointers": function () { },
   "accessible": function () { },
   "accessibleChildren": function () { },
@@ -4946,9 +5256,7 @@ PIXI.Text.prototype = {
   "removeListener": function () { },
   "render": function () { },
   "renderAdvanced": function () { },
-  "renderAdvancedWebGL": function () { },
   "renderId": function () { },
-  "renderWebGL": function () { },
   "setChildIndex": function () { },
   "setParent": function () { },
   "setTransform": function () { },
@@ -5009,7 +5317,6 @@ PIXI.Texture.EMPTY.baseTexture.constructor.prototype = {
   "eventNames": function () { },
   "listenerCount": function () { },
   "listeners": function () { },
-  "loadSource": function () { },
   "off": function () { },
   "on": function () { },
   "onError": function () { },
@@ -5058,7 +5365,6 @@ PIXI.Texture.WHITE.baseTexture.constructor.prototype = {
   "eventNames": function () { },
   "listenerCount": function () { },
   "listeners": function () { },
-  "loadSource": function () { },
   "off": function () { },
   "on": function () { },
   "onError": function () { },
@@ -5096,12 +5402,34 @@ PIXI.Texture.WHITE.baseTexture.resource.constructor.prototype = {
   "update": function () { },
   "upload": function () { }
 };
+PIXI.TextureGCSystem.prototype = {
+  "constructor": function () { },
+  "destroy": function () { },
+  "postrender": function () { },
+  "run": function () { },
+  "unload": function () { }
+};
 PIXI.TextureMatrix.prototype = {
   "multiplyUvs": function () { },
   "update": function () { }
 };
+PIXI.TextureSystem.prototype = {
+  "bind": function () { },
+  "constructor": function () { },
+  "contextChange": function () { },
+  "destroy": function () { },
+  "destroyTexture": function () { },
+  "initTexture": function () { },
+  "initTextureType": function () { },
+  "reset": function () { },
+  "setStyle": function () { },
+  "unbind": function () { },
+  "updateTexture": function () { },
+  "updateTextureStyle": function () { }
+};
 PIXI.TextureUvs.prototype = {
-  "set": function () { }
+  "set": function () { },
+  "toString": function () { }
 };
 PIXI.Ticker.prototype = {
   "_addListener": function () { },
@@ -5121,6 +5449,7 @@ PIXI.TilingSprite.prototype = {
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
   "_calculateCachedBounds": function () { },
@@ -5134,7 +5463,6 @@ PIXI.TilingSprite.prototype = {
   "_render": function () { },
   "_renderCached": function () { },
   "_renderCachedCanvas": function () { },
-  "_renderWebGL": function () { },
   "_trackedPointers": function () { },
   "accessible": function () { },
   "accessibleChildren": function () { },
@@ -5182,9 +5510,7 @@ PIXI.TilingSprite.prototype = {
   "removeListener": function () { },
   "render": function () { },
   "renderAdvanced": function () { },
-  "renderAdvancedWebGL": function () { },
   "renderId": function () { },
-  "renderWebGL": function () { },
   "setChildIndex": function () { },
   "setParent": function () { },
   "setTransform": function () { },
@@ -5223,6 +5549,7 @@ PIXI.TimeLimiter.prototype = {
 PIXI.Transform.prototype = {
   "onChange": function () { },
   "setFromMatrix": function () { },
+  "toString": function () { },
   "updateLocalTransform": function () { },
   "updateSkew": function () { },
   "updateTransform": function () { }
@@ -5230,6 +5557,24 @@ PIXI.Transform.prototype = {
 PIXI.UniformGroup.prototype = {
   "add": function () { },
   "update": function () { }
+};
+PIXI.VideoResource.prototype = {
+  "_isSourcePlaying": function () { },
+  "_isSourceReady": function () { },
+  "_onCanPlay": function () { },
+  "_onError": function () { },
+  "_onPlayStart": function () { },
+  "_onPlayStop": function () { },
+  "bind": function () { },
+  "constructor": function () { },
+  "destroy": function () { },
+  "dispose": function () { },
+  "load": function () { },
+  "resize": function () { },
+  "style": function () { },
+  "unbind": function () { },
+  "update": function () { },
+  "upload": function () { }
 };
 PIXI.ViewableBuffer.prototype = {
   "destroy": function () { },
@@ -5249,18 +5594,6 @@ PIXI.filters.BlurFilter.prototype = {
   "updatePadding": function () { }
 };
 PIXI.filters.BlurFilterPass.prototype = {
-  "apply": function () { },
-  "checkUniformExists": function () { },
-  "constructor": function () { },
-  "destroy": function () { }
-};
-PIXI.filters.BlurXFilter.prototype = {
-  "apply": function () { },
-  "checkUniformExists": function () { },
-  "constructor": function () { },
-  "destroy": function () { }
-};
-PIXI.filters.BlurYFilter.prototype = {
   "apply": function () { },
   "checkUniformExists": function () { },
   "constructor": function () { },
@@ -5319,327 +5652,6 @@ PIXI.graphicsUtils.BatchPart.prototype = {
   "end": function () { },
   "reset": function () { }
 };
-PIXI.graphicsUtils.Star.prototype = {
-  "clone": function () { },
-  "constructor": function () { },
-  "contains": function () { }
-};
-PIXI.resources.AbstractMultiResource.prototype = {
-  "addResourceAt": function () { },
-  "bind": function () { },
-  "constructor": function () { },
-  "destroy": function () { },
-  "dispose": function () { },
-  "initFromArray": function () { },
-  "load": function () { },
-  "resize": function () { },
-  "style": function () { },
-  "unbind": function () { },
-  "update": function () { }
-};
-PIXI.resources.ArrayResource.prototype = {
-  "addBaseTextureAt": function () { },
-  "addResourceAt": function () { },
-  "bind": function () { },
-  "constructor": function () { },
-  "destroy": function () { },
-  "dispose": function () { },
-  "initFromArray": function () { },
-  "load": function () { },
-  "resize": function () { },
-  "style": function () { },
-  "unbind": function () { },
-  "update": function () { },
-  "upload": function () { }
-};
-PIXI.resources.BaseImageResource.prototype = {
-  "bind": function () { },
-  "constructor": function () { },
-  "destroy": function () { },
-  "dispose": function () { },
-  "load": function () { },
-  "resize": function () { },
-  "style": function () { },
-  "unbind": function () { },
-  "update": function () { },
-  "upload": function () { }
-};
-PIXI.resources.BufferResource.prototype = {
-  "bind": function () { },
-  "constructor": function () { },
-  "destroy": function () { },
-  "dispose": function () { },
-  "load": function () { },
-  "resize": function () { },
-  "style": function () { },
-  "unbind": function () { },
-  "update": function () { },
-  "upload": function () { }
-};
-PIXI.resources.CanvasResource.prototype = {
-  "bind": function () { },
-  "constructor": function () { },
-  "destroy": function () { },
-  "dispose": function () { },
-  "load": function () { },
-  "resize": function () { },
-  "style": function () { },
-  "unbind": function () { },
-  "update": function () { },
-  "upload": function () { }
-};
-PIXI.resources.CubeResource.prototype = {
-  "addBaseTextureAt": function () { },
-  "addResourceAt": function () { },
-  "bind": function () { },
-  "constructor": function () { },
-  "destroy": function () { },
-  "dispose": function () { },
-  "initFromArray": function () { },
-  "load": function () { },
-  "resize": function () { },
-  "style": function () { },
-  "unbind": function () { },
-  "update": function () { },
-  "upload": function () { }
-};
-PIXI.resources.ImageBitmapResource.prototype = {
-  "bind": function () { },
-  "constructor": function () { },
-  "destroy": function () { },
-  "dispose": function () { },
-  "load": function () { },
-  "resize": function () { },
-  "style": function () { },
-  "unbind": function () { },
-  "update": function () { },
-  "upload": function () { }
-};
-PIXI.resources.ImageResource.prototype = {
-  "bind": function () { },
-  "constructor": function () { },
-  "destroy": function () { },
-  "dispose": function () { },
-  "load": function () { },
-  "process": function () { },
-  "resize": function () { },
-  "style": function () { },
-  "unbind": function () { },
-  "update": function () { },
-  "upload": function () { }
-};
-PIXI.resources.Resource.prototype = {
-  "bind": function () { },
-  "destroy": function () { },
-  "dispose": function () { },
-  "load": function () { },
-  "resize": function () { },
-  "style": function () { },
-  "unbind": function () { },
-  "update": function () { }
-};
-PIXI.resources.SVGResource.prototype = {
-  "_loadSvg": function () { },
-  "bind": function () { },
-  "constructor": function () { },
-  "destroy": function () { },
-  "dispose": function () { },
-  "load": function () { },
-  "resize": function () { },
-  "style": function () { },
-  "unbind": function () { },
-  "update": function () { },
-  "upload": function () { }
-};
-PIXI.resources.VideoResource.prototype = {
-  "_isSourcePlaying": function () { },
-  "_isSourceReady": function () { },
-  "_onCanPlay": function () { },
-  "_onError": function () { },
-  "_onPlayStart": function () { },
-  "_onPlayStop": function () { },
-  "bind": function () { },
-  "constructor": function () { },
-  "destroy": function () { },
-  "dispose": function () { },
-  "load": function () { },
-  "resize": function () { },
-  "style": function () { },
-  "unbind": function () { },
-  "update": function () { },
-  "upload": function () { }
-};
-PIXI.systems.BatchSystem.prototype = {
-  "boundArray": function () { },
-  "constructor": function () { },
-  "copyBoundTextures": function () { },
-  "destroy": function () { },
-  "flush": function () { },
-  "reset": function () { },
-  "setObjectRenderer": function () { }
-};
-PIXI.systems.ContextSystem.prototype = {
-  "constructor": function () { },
-  "contextChange": function () { },
-  "createContext": function () { },
-  "destroy": function () { },
-  "getExtensions": function () { },
-  "handleContextLost": function () { },
-  "handleContextRestored": function () { },
-  "initFromContext": function () { },
-  "initFromOptions": function () { },
-  "postrender": function () { },
-  "validateContext": function () { }
-};
-PIXI.systems.FilterSystem.prototype = {
-  "applyFilter": function () { },
-  "bindAndClear": function () { },
-  "calculateNormalizedScreenSpaceMatrix": function () { },
-  "calculateScreenSpaceMatrix": function () { },
-  "calculateSpriteMatrix": function () { },
-  "constructor": function () { },
-  "destroy": function () { },
-  "emptyPool": function () { },
-  "getFilterTexture": function () { },
-  "getOptimalFilterTexture": function () { },
-  "getRenderTarget": function () { },
-  "pop": function () { },
-  "push": function () { },
-  "resize": function () { },
-  "returnFilterTexture": function () { },
-  "returnRenderTarget": function () { }
-};
-PIXI.systems.FramebufferSystem.prototype = {
-  "bind": function () { },
-  "blit": function () { },
-  "clear": function () { },
-  "constructor": function () { },
-  "contextChange": function () { },
-  "destroy": function () { },
-  "detectSamples": function () { },
-  "disposeAll": function () { },
-  "disposeFramebuffer": function () { },
-  "forceStencil": function () { },
-  "initFramebuffer": function () { },
-  "reset": function () { },
-  "resizeFramebuffer": function () { },
-  "setViewport": function () { },
-  "updateFramebuffer": function () { }
-};
-PIXI.systems.GeometrySystem.prototype = {
-  "activateVao": function () { },
-  "bind": function () { },
-  "checkCompatibility": function () { },
-  "constructor": function () { },
-  "contextChange": function () { },
-  "destroy": function () { },
-  "disposeAll": function () { },
-  "disposeBuffer": function () { },
-  "disposeGeometry": function () { },
-  "draw": function () { },
-  "getSignature": function () { },
-  "initGeometryVao": function () { },
-  "reset": function () { },
-  "unbind": function () { },
-  "updateBuffers": function () { }
-};
-PIXI.systems.MaskSystem.prototype = {
-  "constructor": function () { },
-  "destroy": function () { },
-  "detect": function () { },
-  "pop": function () { },
-  "popSpriteMask": function () { },
-  "push": function () { },
-  "pushSpriteMask": function () { },
-  "setMaskStack": function () { }
-};
-PIXI.systems.ProjectionSystem.prototype = {
-  "calculateProjection": function () { },
-  "constructor": function () { },
-  "destroy": function () { },
-  "setTransform": function () { },
-  "update": function () { }
-};
-PIXI.systems.RenderTextureSystem.prototype = {
-  "bind": function () { },
-  "clear": function () { },
-  "constructor": function () { },
-  "destroy": function () { },
-  "reset": function () { },
-  "resize": function () { }
-};
-PIXI.systems.ScissorSystem.prototype = {
-  "_useCurrent": function () { },
-  "constructor": function () { },
-  "destroy": function () { },
-  "getStackLength": function () { },
-  "pop": function () { },
-  "push": function () { },
-  "setMaskStack": function () { }
-};
-PIXI.systems.ShaderSystem.prototype = {
-  "bind": function () { },
-  "constructor": function () { },
-  "contextChange": function () { },
-  "createSyncGroups": function () { },
-  "destroy": function () { },
-  "generateShader": function () { },
-  "getSignature": function () { },
-  "getglProgram": function () { },
-  "reset": function () { },
-  "setUniforms": function () { },
-  "syncUniformGroup": function () { },
-  "syncUniforms": function () { },
-  "systemCheck": function () { }
-};
-PIXI.systems.StateSystem.prototype = {
-  "constructor": function () { },
-  "contextChange": function () { },
-  "destroy": function () { },
-  "forceState": function () { },
-  "reset": function () { },
-  "set": function () { },
-  "setBlend": function () { },
-  "setBlendMode": function () { },
-  "setCullFace": function () { },
-  "setDepthTest": function () { },
-  "setFrontFace": function () { },
-  "setOffset": function () { },
-  "setPolygonOffset": function () { },
-  "setState": function () { },
-  "updateCheck": function () { }
-};
-PIXI.systems.StencilSystem.prototype = {
-  "_getBitwiseMask": function () { },
-  "_useCurrent": function () { },
-  "constructor": function () { },
-  "destroy": function () { },
-  "getStackLength": function () { },
-  "pop": function () { },
-  "push": function () { },
-  "setMaskStack": function () { }
-};
-PIXI.systems.TextureGCSystem.prototype = {
-  "constructor": function () { },
-  "destroy": function () { },
-  "postrender": function () { },
-  "run": function () { },
-  "unload": function () { }
-};
-PIXI.systems.TextureSystem.prototype = {
-  "bind": function () { },
-  "constructor": function () { },
-  "contextChange": function () { },
-  "destroy": function () { },
-  "destroyTexture": function () { },
-  "initTexture": function () { },
-  "initTextureType": function () { },
-  "reset": function () { },
-  "setStyle": function () { },
-  "unbind": function () { },
-  "updateTexture": function () { },
-  "updateTextureStyle": function () { }
-};
 PIXI.utils.CanvasRenderTarget.prototype = {
   "clear": function () { },
   "destroy": function () { },
@@ -5656,13 +5668,6 @@ PIXI.utils.EventEmitter.prototype = {
   "once": function () { },
   "removeAllListeners": function () { },
   "removeListener": function () { }
-};
-PIXI.utils.url.Url.prototype = {
-  "format": function () { },
-  "parse": function () { },
-  "parseHost": function () { },
-  "resolve": function () { },
-  "resolveObject": function () { }
 };
 /**********************************************************************
  * End Generated Extern for PIXI
