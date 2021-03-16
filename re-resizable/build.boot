@@ -1,11 +1,13 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.5" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.10.5" :scope "test"]
+                  [cljsjs/react "17.0.1-0"]
+                  [cljsjs/react-dom "17.0.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "6.5.0")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
   pom {:project     'cljsjs/re-resizable
@@ -28,7 +30,8 @@
    (deps-cljs :foreign-libs [{:file #"re-resizable.inc.js"
                               :file-min #"re-resizable.min.inc.js"
                               :provides ["cljsjs.re-resizable"]
-                              :global-exports '{"re-resizable" ReResizable}}]
+                              :global-exports '{"re-resizable" ReResizable}
+                              :requires       ["react" "react-dom"]}]
               :externs [#"re-resizable.ext.js"])
    (pom)
    (jar)

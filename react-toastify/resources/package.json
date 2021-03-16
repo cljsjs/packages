@@ -12,9 +12,9 @@
     "devDependencies": {
         "webpack": "4.43.0",
         "webpack-command": "0.5.0",
-        "@babel/runtime": "^7.4.2",
-         "classnames": "^2.2.6",
         "react": "*",
-        "react-dom": "*"
+        "react-dom": "*",
+        "@babel/runtime": "^7.4.2",
+         "classnames": "^2.2.6"
     }
 }

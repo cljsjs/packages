@@ -2,8 +2,8 @@
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.10.5"  :scope "test"]
                   [cljsjs/boot-cljsjs "0.10.5" :scope "test"]
-                  [cljsjs/react "16.11.0-0"]
-                  [cljsjs/react-dom "16.11.0-0"]])
+                  [cljsjs/react "17.0.1-0"]
+                  [cljsjs/react-dom "17.0.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -12,7 +12,7 @@
          '[boot.util :refer [sh]])
 
 (def +lib-version+ "9.7.1")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/rc-slider
@@ -42,7 +42,8 @@
    (deps-cljs :foreign-libs [{:file #"rc-slider.inc.js"
                               :file-min #"rc-slider.min.inc.js"
                               :provides ["cljsjs.rc-slider"]
-                              :global-exports '{"rc-slider" RcSlider}}]
+                              :global-exports '{"rc-slider" RcSlider}
+                              :requires       ["react" "react-dom"]}]
               :externs [#"rc-slider.ext.js"])
    (pom)
    (jar)

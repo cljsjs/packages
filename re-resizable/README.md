@@ -5,7 +5,7 @@ https://github.com/bokuweb/re-resizable
 
 [](dependency)
 ```clojure
-[cljsjs/re-resizable "6.5.0-0"] ;; latest release
+[cljsjs/re-resizable "6.5.0-1"] ;; latest release
 ```
 [](/dependency)
 
