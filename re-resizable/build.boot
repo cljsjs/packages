@@ -6,8 +6,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "6.5.0")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "6.6.1")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom {:project     'cljsjs/re-resizable
