@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-number-format "3.4.2-0"] ;; latest release
+[cljsjs/react-number-format "4.4.4-0"] ;; latest release
 ```
 [](/dependency)
 

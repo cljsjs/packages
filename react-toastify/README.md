@@ -5,7 +5,7 @@ https://github.com/fkhadra/react-toastify
 
 [](dependency)
 ```clojure
-[cljsjs/react-toastify "6.0.9-0"] ;; latest release
+[cljsjs/react-toastify "7.0.3-1"] ;; latest release
 ```
 [](/dependency)
 
