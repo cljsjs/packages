@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.9.4")
+(def +lib-version+ "3.1.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -24,11 +24,11 @@
 
 (deftask package []
   (comp
-    (download :url (cdn-ver "Chart.js"))
-    (download :url (cdn-ver "Chart.min.js"))
+    (download :url (cdn-ver "chart.js"))
+    (download :url (cdn-ver "chart.min.js"))
     (sift :move
-          {#"Chart.js" "cljsjs/chartjs/development/Chart.inc.js"
-           #"Chart.min.js" "cljsjs/chartjs/production/Chart.min.inc.js"})
+          {#"chart.js" "cljsjs/chartjs/development/chart.inc.js"
+           #"chart.min.js" "cljsjs/chartjs/production/chart.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.chartjs")
     (pom)
