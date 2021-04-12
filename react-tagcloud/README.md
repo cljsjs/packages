@@ -19,7 +19,7 @@ you can require the packaged library like so:
   (:require [react-tagcloud :refer [TagCloud]]))
 
 (defn view []
- [:div "BlueprintJS minimal Test - Click the icon "
+ [:div "Minimal Test "
   ;Define Cloud
   [:> TagCloud
        {:min-size 12
