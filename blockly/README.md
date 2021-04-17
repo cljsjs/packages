@@ -1,10 +1,10 @@
 # cljsjs/blockly
 
-This provides (https://developers.google.com/blockly/)[Blockly], a library for building Scratch-like visual programming languages. It is used by (https://github.com/ParkerICI/blockoid)[Blockoid] which provides a lightweight Clojurescript API.
+This provides [https://developers.google.com/blockly/](Blockly), a library for building Scratch-like visual programming languages. It is used by [https://github.com/ParkerICI/blockoid](Blockoid) which provides a lightweight Clojurescript API.
 
 [](dependency)
 ```clojure
-[cljsjs/blockly "3.20200123.1-0"] ;; latest release
+[cljsjs/blockly "5.20210325.1-0"] ;; latest release
 ```
 [](/dependency)
 
