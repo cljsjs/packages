@@ -6,7 +6,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 ;;; This should track Blockly releases; see https://github.com/google/blockly/releases
-(def +lib-version+ "3.20200123.1")
+(def +lib-version+ "5.20210325.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
