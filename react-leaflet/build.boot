@@ -1,13 +1,13 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.10.5" :scope "test"]
-                  [cljsjs/react "16.8.0-0"]
-                  [cljsjs/react-dom "16.8.0-0"]
-                  [cljsjs/leaflet "1.5.1-0"]])
+                  [cljsjs/react "17.0.1-0"]
+                  [cljsjs/react-dom "17.0.1-0"]
+                  [cljsjs/leaflet "1.7.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.4.0")
+(def +lib-version+ "3.1.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -20,9 +20,9 @@
 
 (deftask package []
   (comp
-    (download :url      (str "https://unpkg.com/react-leaflet@" +lib-version+ "/dist/react-leaflet.js")
+    (download :url      (str "https://unpkg.com/react-leaflet@" +lib-version+ "/umd/react-leaflet.js")
               :target   "cljsjs/react-leaflet/development/react-leaflet.inc.js")
-    (download :url      (str "https://unpkg.com/react-leaflet@" +lib-version+ "/dist/react-leaflet.min.js")
+    (download :url      (str "https://unpkg.com/react-leaflet@" +lib-version+ "/umd/react-leaflet.min.js")
               :target   "cljsjs/react-leaflet/production/react-leaflet.min.inc.js")
     (deps-cljs :provides ["react-leaflet" "cljsjs.react-leaflet"]
                :requires ["leaflet" "react" "react-dom"]
