@@ -706,6 +706,9 @@ var L = {
   "Map": function () {},
   "map": {
     "addLayer": function () {},
+    "boxZoom": {
+     "_onMouseDown" : {},
+    },
     "hasLayer": function () {},
     "eachLayer": function () {},
     "openPopup": function () {},
@@ -740,22 +743,24 @@ var L = {
     "getBoundsZoom": function () {},
     "getSize": function () {},
     "getPixelBounds": function () {},
-      "getPixelOrigin": function () {},
-      "attributionControl": {
-          "setPrefix": function () {},
-      },
-      "dragging": {
-          "disable": function () {},
-      },
-      "scrollWheelZoom": {
-          "disable": function () {},
-      },
-      "touchZoom": {
-          "disable": function () {},
-      },
-      "doubleClickZoom": {
-          "disable": function () {},
-      },
+    "getPixelOrigin": function () {},
+    "attributionControl": {
+     "setPrefix": function () {},
+    },
+    "dragging": {
+     "disable": function () {},
+    },
+    "scrollWheelZoom": {
+     "disable": function () {},
+    },
+    "touchZoom": {
+     "disable": function () {},
+    },
+    "doubleClickZoom": {
+     "disable": function () {},
+    },
+    "zoomIn": function () {},
+    "zoomOut": function () {},
   },
   "TileLayer": function () {},
   "tileLayer": {
