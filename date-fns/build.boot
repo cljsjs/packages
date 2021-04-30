@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "2.20.2")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
   pom  {:project     'cljsjs/date-fns
@@ -27,7 +27,7 @@
    (deps-cljs :foreign-libs [{:file           #"date-fns.inc.js"
                               :file-min       #"date-fns.min.inc.js"
                               :provides       ["date-fns" "cljsjs.date-fns"]
-                              :global-exports '{"date-fns" DateFns}}]
+                              :global-exports '{"date-fns" dateFns}}]
               :externs [#"date-fns.ext.js"])
    (pom)
    (jar)
