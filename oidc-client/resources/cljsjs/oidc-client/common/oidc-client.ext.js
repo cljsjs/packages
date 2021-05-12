@@ -68,7 +68,8 @@ Oidc.MetadataService.prototype = {
   "getRevocationEndpoint": function () {},
   "getSigningKeys": function () {},
   "getTokenEndpoint": function () {},
-  "getUserInfoEndpoint": function () {}
+  "getUserInfoEndpoint": function () {},
+  "resetSigningKeys": function () {}
 };
 Oidc.OidcClient.prototype = {
   "clearStaleState": function () {},
@@ -78,6 +79,9 @@ Oidc.OidcClient.prototype = {
   "processSignoutResponse": function () {},
   "readSigninResponseState": function () {},
   "readSignoutResponseState": function () {}
+};
+Oidc.OidcClientSettings.prototype = {
+  "getEpochTime": function () {}
 };
 Oidc.SessionMonitor.prototype = {
   "_callback": function () {},
@@ -141,9 +145,9 @@ Oidc.WebStorageStateStore.prototype = {
 };
 /**********************************************************************
  * End Generated Extern for Oidc
- /**********************************************************************/
+/**********************************************************************/
 
-// Non genenrated externs
+// Non generated externs
 
 /** @record */
 function UserManagerEvents() {};
