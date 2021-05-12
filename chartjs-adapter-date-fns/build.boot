@@ -10,7 +10,7 @@
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
-  pom {:project 'cljsjs/chartjs-adapter-date-fns
+  pom {:project 'io.github.cljsjs/chartjs-adapter-date-fns
        :version +version+
        :description "This adapter allows the use of date-fns with Chart.js."
        :url "https://github.com/chartjs/chartjs-adapter-date-fns"
