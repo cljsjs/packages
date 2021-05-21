@@ -6,7 +6,7 @@ https://github.com/Esri/esri-leaflet/
 
 [](dependency)
 ```clojure
-[cljsjs/esri-leaflet "2.2.4-0"] ;; latest release
+[cljsjs/esri-leaflet "3.0.1-0"] ;; latest release
 ```
 [](/dependency)
 
