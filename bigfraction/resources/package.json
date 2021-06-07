@@ -21,7 +21,7 @@
     },
     "license": "MIT OR GPL-2.0-or-later",
     "dependencies": {
-        "fraction.js": "^4.0.12"
+        "fraction.js": "4.0.12"
     },
     "devDependencies": {
         "cross-env": "^3.1.4",

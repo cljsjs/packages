@@ -28,6 +28,16 @@
    (build-fraction)
    (replace-content :in "bigfraction.bundle.js"
                     :out "bigfraction.bundle.js"
+                    :match #"Fraction\(\(this\['s'\] \* this\[\"d\"\]\) \*\* BigInt\(-m\), this\[\"n\"\] \*\* BigInt\(-m\)\)"
+                    :value "Fraction(Math.pow((this['s'] * this[\"d\"]), BigInt(-m)), Math.pow(this[\"n\"], BigInt(-m)))")
+
+   (replace-content :in "bigfraction.bundle.js"
+                    :out "bigfraction.bundle.js"
+                    :match #"Fraction\(\(this\['s'\] \* this\[\"n\"\]\) \*\* BigInt\(\+m\), this\[\"d\"\] \*\* BigInt\(\+m\)\)"
+                    :value "Fraction(Math.pow((this['s'] * this[\"n\"]), BigInt(+m)), Math.pow(this[\"d\"], BigInt(+m)))")
+
+   (replace-content :in "bigfraction.bundle.js"
+                    :out "bigfraction.bundle.js"
                     :match #"10 \*\* Math.floor\(1 \+ Math.log10\(p1\)\);"
                     :value "Math.pow(10, Math.floor(1 + Math.log10(p1)));")
 
