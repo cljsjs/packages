@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "4.1.1")
-(def +version+ (str +lib-version+ "-0"))
+(def +lib-version+ "4.0.12")
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  push {:ensure-clean false}
