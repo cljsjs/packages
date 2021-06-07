@@ -13,7 +13,7 @@ for x in *; do
         artifact=${x//_[0-9]*/}
         group=cljsjs
         if grep -q "io.github.cljsjs/$artifact" "$x/build.boot"; then
-            group=io.github.cljsjs
+            group=io/github/cljsjs
         fi
         version=$(grep "def +lib-version+" "$x/build.boot" | grep -o "\".*\"" | head -n1 | cut -d \" -f 2)
         version=$version$(grep "def +version+" "$x/build.boot" | grep -o "\".*\"" | head -n1 | cut -d \" -f 2)
