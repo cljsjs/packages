@@ -1,7 +1,7 @@
 {
     "name": "fraction.js",
     "title": "fraction.js",
-    "version": "4.0.12",
+    "version": "4.1.1",
     "homepage": "http://www.xarg.org/2014/03/rational-numbers-in-javascript/",
     "bugs": "https://github.com/infusion/Fraction.js/issues",
     "description": "A rational number library",
@@ -21,7 +21,7 @@
     },
     "license": "MIT OR GPL-2.0-or-later",
     "dependencies": {
-        "fraction.js": "^4.0.12"
+        "fraction.js": "4.1.1"
     },
     "devDependencies": {
         "cross-env": "^3.1.4",
