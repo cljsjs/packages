@@ -1,1 +1,4 @@
-{}
+{"cljsjs/snabbdom/development/snabbdom.inc.js"
+ "2AAEA96336878D6A985349161B2EE779",
+ "cljsjs/snabbdom/production/snabbdom.min.inc.js"
+ "19DE193941E429C8C876776E1F421DDD"}

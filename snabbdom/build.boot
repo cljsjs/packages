@@ -32,10 +32,10 @@
   (comp
    (download :url (str "https://unpkg.com/snabbdom@" +lib-version+ "/build/snabbdom.cjs.js"))
    (fiddle)
-   (sift :move {#"snabbdom.cjs.js" "cljsjs/snabbdom/development/snabbdom.js"})
+   (sift :move {#"snabbdom.cjs.js" "cljsjs/snabbdom/development/snabbdom.inc.js"})
    (sift :include #{#"^cljsjs" #"^deps.cljs"})
-   (minify :in "cljsjs/snabbdom/development/snabbdom.js"
-           :out "cljsjs/snabbdom/production/snabbdom.min.js")
+   (minify :in "cljsjs/snabbdom/development/snabbdom.inc.js"
+           :out "cljsjs/snabbdom/production/snabbdom.min.inc.js")
    (pom)
    (jar)
    (validate)))
