@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.7.4")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "3.0.3")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/snabbdom
@@ -13,24 +13,29 @@
        :url         "https://github.com/snabbdom/snabbdom"
        :scm         {:url "https://github.com/cljsjs/packages"}})
 
+(require '[clojure.java.io :as io]
+         '[clojure.string :as str])
+
+(defn fiddle []
+  (fn [handler]
+    (fn [file-set]
+      (let [{:keys [dir path]} (get-in file-set [:tree "snabbdom.cjs.js"])
+            filename (str (.getPath dir) "/" path)]
+        (spit filename (-> (io/file filename)
+                           slurp
+                           (str/replace "Object.defineProperty(exports, '__esModule', { value: true });"
+                                        "var snabbdom = {};")
+                           (str/replace "exports" "snabbdom")))
+        (handler file-set)))))
+
 (deftask package []
   (comp
-   (download :url (str "https://github.com/snabbdom/snabbdom/archive/v" +lib-version+ ".zip")
-             :unzip true)
-   (sift :move {#"^snabbdom-([\d\.]*)/dist/snabbdom.js"     "cljsjs/snabbdom/development/snabbdom.inc.js"
-                #"^snabbdom-([\d\.]*)/dist/snabbdom.min.js" "cljsjs/snabbdom/production/snabbdom.min.inc.js"
-                #"^snabbdom-([\d\.]*)/dist/snabbdom-attributes.js"     "cljsjs/snabbdom/development/snabbdom-attributes.inc.js"
-                #"^snabbdom-([\d\.]*)/dist/snabbdom-attributes.min.js" "cljsjs/snabbdom/production/snabbdom-attributes.min.inc.js"
-                #"^snabbdom-([\d\.]*)/dist/snabbdom-class.js"     "cljsjs/snabbdom/development/snabbdom-class.inc.js"
-                #"^snabbdom-([\d\.]*)/dist/snabbdom-class.min.js" "cljsjs/snabbdom/production/snabbdom-class.min.inc.js"
-                #"^snabbdom-([\d\.]*)/dist/snabbdom-eventlisteners.js"     "cljsjs/snabbdom/development/snabbdom-eventlisteners.inc.js"
-                #"^snabbdom-([\d\.]*)/dist/snabbdom-eventlisteners.min.js" "cljsjs/snabbdom/production/snabbdom-eventlisteners.min.inc.js"
-                #"^snabbdom-([\d\.]*)/dist/snabbdom-props.js"     "cljsjs/snabbdom/development/snabbdom-props.inc.js"
-                #"^snabbdom-([\d\.]*)/dist/snabbdom-props.min.js" "cljsjs/snabbdom/production/snabbdom-props.min.inc.js"
-                #"^snabbdom-([\d\.]*)/dist/snabbdom-style.js"     "cljsjs/snabbdom/development/snabbdom-style.inc.js"
-                #"^snabbdom-([\d\.]*)/dist/snabbdom-style.min.js" "cljsjs/snabbdom/production/snabbdom-style.min.inc.js"
-                })
+   (download :url (str "https://unpkg.com/snabbdom@" +lib-version+ "/build/snabbdom.cjs.js"))
+   (fiddle)
+   (sift :move {#"snabbdom.cjs.js" "cljsjs/snabbdom/development/snabbdom.js"})
    (sift :include #{#"^cljsjs" #"^deps.cljs"})
+   (minify :in "cljsjs/snabbdom/development/snabbdom.js"
+           :out "cljsjs/snabbdom/production/snabbdom.min.js")
    (pom)
    (jar)
    (validate)))

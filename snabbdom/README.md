@@ -1,7 +1,7 @@
 # cljsjs/snabbdom
 [](dependency)
 ```clojure
-[cljsjs/snabbdom "0.7.4-1"] ;; latest release
+[cljsjs/snabbdom "3.0.3-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -11,18 +11,13 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require ["snabbdom" :refer [init h]]
-            ["snabbdom/modules/attributes" :as attrs]
-            ["snabbdom/modules/class" :as class]
-            ["snabbdom/modules/eventlisteners" :as el]
-            ["snabbdom/modules/props" :as props]
-            ["snabbdom/modules/style" :as style]))
+  (:require [snabbdom :refer [h init] :as snabbdom]))
 
-(let [patch (init #js [(.-default attrs)
-                       (.-default class)
-                       (.-default el)
-                       (.-default props)
-                       (.-default style)])
+(let [patch (init #js [(.-attributesModule snabbdom)
+                       (.-classModule snabbdom)
+                       (.-eventListenersModule snabbdom)
+                       (.-propsModule snabbdom)
+                       (.-styleModule snabbdom)])
       vdom (h "div" #js {} "Hello World")]
   (patch (.getElementById js/document "root") vdom))
 
