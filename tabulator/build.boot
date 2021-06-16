@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot])
 
-(def +lib-version+ "4.7.2")
+(def +lib-version+ "4.9.3")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
