@@ -9,7 +9,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (task-options!
- pom  {:project     'cljsjs/react-share
+ pom  {:project     'io.github.cljsjs/react-share
        :version     +version+
        :description "A draggable and resizable grid layout with responsive breakpoints, for React."
        :url         "https://github.com/touhonoob/react-share"
