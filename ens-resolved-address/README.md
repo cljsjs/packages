@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[io.github.cljsjs/ens-resolved-address "0.0.31-0"] ;; latest release
+[cljsjs/ens-resolved-address "0.0.31-0"] ;; latest release
 ```
 [](/dependency)
 
