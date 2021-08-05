@@ -102,3 +102,43 @@ var ReactLeaflet = {
 
 // Manual additions
 ReactLeaflet.leafletElement = {};
+
+var ReactLeafletCore = {
+    // Context
+    "LeafletContext": {},
+    "LeafletProvider": {},
+    "useLeafletContext": function () {},
+    // Hook factories
+    "createElementHook": function () {},
+    "createControlHook": function () {},
+    "createDivOverlayHook": function () {},
+    "createLayerHook": function () {},
+    "createPathHook": function () {},
+
+    // Lifecycle hooks
+    "useEventHandlers": function () {},
+    "useLayerLifecycle": function () {},
+    "usePathOptions": function () {},
+
+    // Update functions
+    "updateCircle": function () {},
+    "updateGridLayer": function () {},
+    "updateMediaOverlay": function () {},
+
+    // DOM interactions
+    "addClassName": function () {},
+    "removeClassName": function () {},
+    "updateClassName": function () {},
+
+    // Component factories
+    "createContainerComponent": function () {},
+    "createDivOverlayComponent": function () {},
+    "createLeafComponent": function () {},
+
+    // High-level component factories
+    "createControlComponent": function () {},
+    "createLayerComponent": function () {},
+    "createOverlayComponent": function () {},
+    "createPathComponent": function () {},
+    "createTileLayerComponent": function () {},
+};
