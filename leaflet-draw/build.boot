@@ -1,11 +1,11 @@
 (set-env!
-  :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.5" :scope "test"]
-                  [cljsjs/leaflet "1.2.0-0"]])
+ :resource-paths #{"resources"}
+ :dependencies '[[cljsjs/boot-cljsjs "0.10.5" :scope "test"]
+                 [cljsjs/leaflet "1.7.1-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.4.12")
+(def +lib-version+ "1.0.4")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -15,8 +15,6 @@
         :url         "https://github.com/Leaflet/Leaflet.draw"
         :scm         {:url "https://github.com/cljsjs/packages"}
         :license     {"MIT" "http://opensource.org/licenses/MIT"}})
-
-(require '[clojure.java.io :as io])
 
 (deftask package []
   (comp

@@ -1,719 +1,200 @@
-var L = {
-  "Control": {
-    "Draw": {
-      "extend": function () {},
-      "include": function () {},
-      "mergeOptions": function () {},
-      "addInitHook": function () {},
-      "__super__": {},
-      "Zoom": {
-        "extend": function () {},
-        "include": function () {},
-        "mergeOptions": function () {},
-        "addInitHook": function () {},
-        "__super__": {}
-      },
-      "Attribution": {
-        "extend": function () {},
-        "include": function () {},
-        "mergeOptions": function () {},
-        "addInitHook": function () {},
-        "__super__": {},
-        "Zoom": {
-          "extend": function () {},
-          "include": function () {},
-          "mergeOptions": function () {},
-          "addInitHook": function () {},
-          "__super__": {}
-        }
-      },
-      "Scale": {
-        "extend": function () {},
-        "include": function () {},
-        "mergeOptions": function () {},
-        "addInitHook": function () {},
-        "__super__": {},
-        "Zoom": {
-          "extend": function () {},
-          "include": function () {},
-          "mergeOptions": function () {},
-          "addInitHook": function () {},
-          "__super__": {}
-        },
-        "Attribution": {
-          "extend": function () {},
-          "include": function () {},
-          "mergeOptions": function () {},
-          "addInitHook": function () {},
-          "__super__": {},
-          "Zoom": {
-            "extend": function () {},
-            "include": function () {},
-            "mergeOptions": function () {},
-            "addInitHook": function () {},
-            "__super__": {}
-          }
-        }
-      },
-      "Layers": {
-        "extend": function () {},
-        "include": function () {},
-        "mergeOptions": function () {},
-        "addInitHook": function () {},
-        "__super__": {},
-        "Zoom": {
-          "extend": function () {},
-          "include": function () {},
-          "mergeOptions": function () {},
-          "addInitHook": function () {},
-          "__super__": {}
-        },
-        "Attribution": {
-          "extend": function () {},
-          "include": function () {},
-          "mergeOptions": function () {},
-          "addInitHook": function () {},
-          "__super__": {},
-          "Zoom": {
-            "extend": function () {},
-            "include": function () {},
-            "mergeOptions": function () {},
-            "addInitHook": function () {},
-            "__super__": {}
-          }
-        },
-        "Scale": {
-          "extend": function () {},
-          "include": function () {},
-          "mergeOptions": function () {},
-          "addInitHook": function () {},
-          "__super__": {},
-          "Zoom": {
-            "extend": function () {},
-            "include": function () {},
-            "mergeOptions": function () {},
-            "addInitHook": function () {},
-            "__super__": {}
-          },
-          "Attribution": {
-            "extend": function () {},
-            "include": function () {},
-            "mergeOptions": function () {},
-            "addInitHook": function () {},
-            "__super__": {},
-            "Zoom": {
-              "extend": function () {},
-              "include": function () {},
-              "mergeOptions": function () {},
-              "addInitHook": function () {},
-              "__super__": {}
-            }
-          }
-        }
-      }
-    }
-  },
-  "drawVersion": {},
-  "drawLocal": {},
-  "Draw": {},
-  "SimpleShape": {},
-  "Edit": {},
-  "LatLngUtil": {},
-  "GeometryUtil": {},
-  "Toolbar": {
-    "extend": function () {},
-    "include": function () {},
-    "mergeOptions": function () {},
-    "addInitHook": function () {},
-    "__super__": {}
-  },
-  "Tooltip": {
-    "extend": function () {},
-    "include": function () {},
-    "mergeOptions": function () {},
-    "addInitHook": function () {},
-    "__super__": {}
-  },
-  "DrawToolbar": {
-    "extend": function () {},
-    "include": function () {},
-    "mergeOptions": function () {},
-    "addInitHook": function () {},
-    "__super__": {},
-    "TYPE": {}
-  },
-  "EditToolbar": {
-    "extend": function () {},
-    "include": function () {},
-    "mergeOptions": function () {},
-    "addInitHook": function () {},
-    "__super__": {},
-    "TYPE": {},
-    "Edit": {
-      "extend": function () {},
-      "include": function () {},
-      "mergeOptions": function () {},
-      "addInitHook": function () {},
-      "__super__": {},
-      "MarkerDrag": {
-        "extend": function () {},
-        "include": function () {},
-        "mergeOptions": function () {},
-        "addInitHook": function () {},
-        "__super__": {}
-      },
-      "TYPE": {}
-    },
-    "Delete": {
-      "extend": function () {},
-      "include": function () {},
-      "mergeOptions": function () {},
-      "addInitHook": function () {},
-      "__super__": {},
-      "MarkerDrag": {
-        "extend": function () {},
-        "include": function () {},
-        "mergeOptions": function () {},
-        "addInitHook": function () {},
-        "__super__": {}
-      },
-      "TYPE": {}
-    }
-  }
+L.drawVersion;
+L.Draw.Feature = {
+    "initialize": function () {},
+    "enable": function () {},
+    "disable": function () {},
+    "addHooks": function () {},
+    "removeHooks": function () {},
+    "setOptions": function () {}
 };
-L.Polyline.prototype = {
-  "intersects": function () {},
-  "newLatLngIntersects": function () {},
-  "newPointIntersects": function () {},
-  "_tooFewPointsForIntersection": function () {},
-  "_lineSegmentsIntersectsRange": function () {}
+L.Draw.SimpleShape = {
+    "initialize": function () {},
+    "addHooks": function () {},
+    "removeHooks": function () {},
+    // Inherited from L.Draw.Feature
+    "enable": function () {},
+    "disable": function () {},
+    "setOptions": function () {},
 };
-L.Polygon.prototype = {
-  "intersects": function () {},
-  "newLatLngIntersects": function () {},
-  "newPointIntersects": function () {},
-  "_tooFewPointsForIntersection": function () {},
-  "_lineSegmentsIntersectsRange": function () {},
+L.Draw.Marker = {
+    "initialize": function () {},
+    "addHooks": function () {},
+    "removeHooks": function () {},
+    // Inherited from L.Draw.Feature
+    "enable": function () {},
+    "disable": function () {},
+    "setOptions": function () {}
 };
-L.Rectangle.prototype = {
-  "intersects": function () {},
-  "newLatLngIntersects": function () {},
-  "newPointIntersects": function () {},
-  "_tooFewPointsForIntersection": function () {},
-  "_lineSegmentsIntersectsRange": function () {},
+L.Draw.CircleMarker = {
+    "initialize": function () {},
+    // Inherited from L.Draw.Marker
+    "addHooks": function () {},
+    "removeHooks": function () {},
+    // Inherited from L.Draw.Feature
+    "enable": function () {},
+    "disable": function () {},
+    "setOptions": function () {}
 };
-L.Control.Draw.prototype = {
-  "constructor": function () {},
-  "options": function () {},
-  "initialize": function () {},
-  "onAdd": function () {},
-  "onRemove": function () {},
-  "setDrawingOptions": function () {},
-  "_toolbarEnabled": function () {},
-  "_initHooks": function () {},
-  "callInitHooks": function () {},
-  "getPosition": function () {},
-  "setPosition": function () {},
-  "getContainer": function () {},
-  "addTo": function () {},
-  "removeFrom": function () {},
-  "_refocusOnMap": function () {}
+L.Draw.Circle = {
+    "initialize": function () {},
+    // Inherited from L.Draw.Marker
+    "addHooks": function () {},
+    "removeHooks": function () {},
+    // Inherited from L.Draw.Feature
+    "enable": function () {},
+    "disable": function () {},
+    "setOptions": function () {},
 };
-L.Control.Draw.Zoom.prototype = {
-  "constructor": function () {},
-  "options": function () {},
-  "onAdd": function () {},
-  "onRemove": function () {},
-  "_zoomIn": function () {},
-  "_zoomOut": function () {},
-  "_createButton": function () {},
-  "_updateDisabled": function () {},
-  "_initHooks": function () {},
-  "callInitHooks": function () {},
-  "initialize": function () {},
-  "getPosition": function () {},
-  "setPosition": function () {},
-  "getContainer": function () {},
-  "addTo": function () {},
-  "removeFrom": function () {},
-  "_refocusOnMap": function () {}
+L.Draw.Polyline = {
+    "initialize": function () {},
+    "addHooks": function () {},
+    "removeHooks": function () {},
+    "deleteLastVertex": function () {},
+    "addVertex": function() {},
+    "completeShape": function () {},
+    // Inherited from L.Draw.Feature
+    "enable": function () {},
+    "disable": function () {},
+    "setOptions": function () {}
 };
-L.Control.Draw.Attribution.prototype = {
-  "constructor": function () {},
-  "options": function () {},
-  "initialize": function () {},
-  "onAdd": function () {},
-  "onRemove": function () {},
-  "setPrefix": function () {},
-  "addAttribution": function () {},
-  "removeAttribution": function () {},
-  "_update": function () {},
-  "_onLayerAdd": function () {},
-  "_onLayerRemove": function () {},
-  "_initHooks": function () {},
-  "callInitHooks": function () {},
-  "getPosition": function () {},
-  "setPosition": function () {},
-  "getContainer": function () {},
-  "addTo": function () {},
-  "removeFrom": function () {},
-  "_refocusOnMap": function () {}
+L.Draw.Rectangle = {
+    "initialize": function () {},
+    "disable": function () {},
+    // Inherited from L.Draw.SimpleShape
+    "addHooks": function () {},
+    "removeHooks": function () {},
+    // Inherited from L.Draw.Feature
+    "enable": function () {},
+    "setOptions": function () {}
 };
-L.Control.Draw.Attribution.Zoom.prototype = {
-  "constructor": function () {},
-  "options": function () {},
-  "onAdd": function () {},
-  "onRemove": function () {},
-  "_zoomIn": function () {},
-  "_zoomOut": function () {},
-  "_createButton": function () {},
-  "_updateDisabled": function () {},
-  "_initHooks": function () {},
-  "callInitHooks": function () {},
-  "initialize": function () {},
-  "getPosition": function () {},
-  "setPosition": function () {},
-  "getContainer": function () {},
-  "addTo": function () {},
-  "removeFrom": function () {},
-  "_refocusOnMap": function () {}
+L.Draw.Polygon = {
+    "initialize": function () {},
+    // Inherited from L.Draw.Polyline
+    "addHooks": function () {},
+    "removeHooks": function () {},
+    "deleteLastVertex": function () {},
+    "addVertex": function () {},
+    "completeShape": function () {},
+    // Inherited from L.Draw.Feature
+    "enable": function () {},
+    "disable": function () {},
+    "setOptions": function () {}
 };
-L.Control.Draw.Scale.prototype = {
-  "constructor": function () {},
-  "options": function () {},
-  "onAdd": function () {},
-  "onRemove": function () {},
-  "_addScales": function () {},
-  "_update": function () {},
-  "_updateScales": function () {},
-  "_updateMetric": function () {},
-  "_updateImperial": function () {},
-  "_getScaleWidth": function () {},
-  "_getRoundNum": function () {},
-  "_initHooks": function () {},
-  "callInitHooks": function () {},
-  "initialize": function () {},
-  "getPosition": function () {},
-  "setPosition": function () {},
-  "getContainer": function () {},
-  "addTo": function () {},
-  "removeFrom": function () {},
-  "_refocusOnMap": function () {}
+L.Edit.SimpleShape = {
+    "initialize": function () {},
+    "addHooks": function () {},
+    "removeHooks": function () {},
+    "updateMarkers": function () {}
 };
-L.Control.Draw.Scale.Zoom.prototype = {
-  "constructor": function () {},
-  "options": function () {},
-  "onAdd": function () {},
-  "onRemove": function () {},
-  "_zoomIn": function () {},
-  "_zoomOut": function () {},
-  "_createButton": function () {},
-  "_updateDisabled": function () {},
-  "_initHooks": function () {},
-  "callInitHooks": function () {},
-  "initialize": function () {},
-  "getPosition": function () {},
-  "setPosition": function () {},
-  "getContainer": function () {},
-  "addTo": function () {},
-  "removeFrom": function () {},
-  "_refocusOnMap": function () {}
+L.Edit.Marker = {
+    "initialize": function () {},
+    "addHooks": function () {},
+    "removeHooks": function () {},
 };
-L.Control.Draw.Scale.Attribution.prototype = {
-  "constructor": function () {},
-  "options": function () {},
-  "initialize": function () {},
-  "onAdd": function () {},
-  "onRemove": function () {},
-  "setPrefix": function () {},
-  "addAttribution": function () {},
-  "removeAttribution": function () {},
-  "_update": function () {},
-  "_onLayerAdd": function () {},
-  "_onLayerRemove": function () {},
-  "_initHooks": function () {},
-  "callInitHooks": function () {},
-  "getPosition": function () {},
-  "setPosition": function () {},
-  "getContainer": function () {},
-  "addTo": function () {},
-  "removeFrom": function () {},
-  "_refocusOnMap": function () {}
+L.Edit.CircleMarker = {
+    // Inherited from L.Edit.SimpleShape
+    "initialize": function () {},
+    "addHooks": function () {},
+    "removeHooks": function () {},
+    "updateMarkers": function () {}
 };
-L.Control.Draw.Scale.Attribution.Zoom.prototype = {
-  "constructor": function () {},
-  "options": function () {},
-  "onAdd": function () {},
-  "onRemove": function () {},
-  "_zoomIn": function () {},
-  "_zoomOut": function () {},
-  "_createButton": function () {},
-  "_updateDisabled": function () {},
-  "_initHooks": function () {},
-  "callInitHooks": function () {},
-  "initialize": function () {},
-  "getPosition": function () {},
-  "setPosition": function () {},
-  "getContainer": function () {},
-  "addTo": function () {},
-  "removeFrom": function () {},
-  "_refocusOnMap": function () {}
+L.Edit.Circle = {
+    // Inherited from L.Edit.SimpleShape
+    "initialize": function () {},
+    "addHooks": function () {},
+    "removeHooks": function () {},
+    "updateMarkers": function () {}
 };
-L.Control.Draw.Layers.prototype = {
-  "constructor": function () {},
-  "options": function () {},
-  "initialize": function () {},
-  "onAdd": function () {},
-  "onRemove": function () {},
-  "addBaseLayer": function () {},
-  "addOverlay": function () {},
-  "removeLayer": function () {},
-  "_initLayout": function () {},
-  "_addLayer": function () {},
-  "_update": function () {},
-  "_onLayerChange": function () {},
-  "_createRadioElement": function () {},
-  "_addItem": function () {},
-  "_onInputClick": function () {},
-  "_expand": function () {},
-  "_collapse": function () {},
-  "_initHooks": function () {},
-  "callInitHooks": function () {},
-  "getPosition": function () {},
-  "setPosition": function () {},
-  "getContainer": function () {},
-  "addTo": function () {},
-  "removeFrom": function () {},
-  "_refocusOnMap": function () {}
+L.Edit.Polyline = {
+    "initialize": function () {},
+    "addHooks": function () {},
+    "removeHooks": function () {},
+    "updateMarkers": function () {}
 };
-L.Control.Draw.Layers.Zoom.prototype = {
-  "constructor": function () {},
-  "options": function () {},
-  "onAdd": function () {},
-  "onRemove": function () {},
-  "_zoomIn": function () {},
-  "_zoomOut": function () {},
-  "_createButton": function () {},
-  "_updateDisabled": function () {},
-  "_initHooks": function () {},
-  "callInitHooks": function () {},
-  "initialize": function () {},
-  "getPosition": function () {},
-  "setPosition": function () {},
-  "getContainer": function () {},
-  "addTo": function () {},
-  "removeFrom": function () {},
-  "_refocusOnMap": function () {}
+L.Edit.Rectangle = {
+    // Inherited from L.Edit.SimpleShape
+    "initialize": function () {},
+    "addHooks": function () {},
+    "removeHooks": function () {},
+    "updateMarkers": function () {}
 };
-L.Control.Draw.Layers.Attribution.prototype = {
-  "constructor": function () {},
-  "options": function () {},
-  "initialize": function () {},
-  "onAdd": function () {},
-  "onRemove": function () {},
-  "setPrefix": function () {},
-  "addAttribution": function () {},
-  "removeAttribution": function () {},
-  "_update": function () {},
-  "_onLayerAdd": function () {},
-  "_onLayerRemove": function () {},
-  "_initHooks": function () {},
-  "callInitHooks": function () {},
-  "getPosition": function () {},
-  "setPosition": function () {},
-  "getContainer": function () {},
-  "addTo": function () {},
-  "removeFrom": function () {},
-  "_refocusOnMap": function () {}
+L.EditToolbar.Edit = {
+    "initialize": function () {},
+    "enable": function () {},
+    "disable": function () {},
+    "addHooks": function () {},
+    "removeHooks": function () {},
+    "revertLayers": function () {},
+    "save": function () {}
 };
-L.Control.Draw.Layers.Attribution.Zoom.prototype = {
-  "constructor": function () {},
-  "options": function () {},
-  "onAdd": function () {},
-  "onRemove": function () {},
-  "_zoomIn": function () {},
-  "_zoomOut": function () {},
-  "_createButton": function () {},
-  "_updateDisabled": function () {},
-  "_initHooks": function () {},
-  "callInitHooks": function () {},
-  "initialize": function () {},
-  "getPosition": function () {},
-  "setPosition": function () {},
-  "getContainer": function () {},
-  "addTo": function () {},
-  "removeFrom": function () {},
-  "_refocusOnMap": function () {}
+L.EditToolbar.Delete = {
+    "initialize": function () {},
+    "enable": function () {},
+    "disable": function () {},
+    "addHooks": function () {},
+    "removeHooks": function () {},
+    "revertLayers": function () {},
+    "save": function () {},
+    "removeAllLayers": function () {},
 };
-L.Control.Draw.Layers.Scale.prototype = {
-  "constructor": function () {},
-  "options": function () {},
-  "onAdd": function () {},
-  "onRemove": function () {},
-  "_addScales": function () {},
-  "_update": function () {},
-  "_updateScales": function () {},
-  "_updateMetric": function () {},
-  "_updateImperial": function () {},
-  "_getScaleWidth": function () {},
-  "_getRoundNum": function () {},
-  "_initHooks": function () {},
-  "callInitHooks": function () {},
-  "initialize": function () {},
-  "getPosition": function () {},
-  "setPosition": function () {},
-  "getContainer": function () {},
-  "addTo": function () {},
-  "removeFrom": function () {},
-  "_refocusOnMap": function () {}
+L.GeometryUtil = {
+    "geodesicArea": function () {},
+    "formattedNumber": function () {},
+    "readableArea": function () {},
+    "readableDistance": function () {},
+    "isVersion07x": function () {}
 };
-L.Control.Draw.Layers.Scale.Zoom.prototype = {
-  "constructor": function () {},
-  "options": function () {},
-  "onAdd": function () {},
-  "onRemove": function () {},
-  "_zoomIn": function () {},
-  "_zoomOut": function () {},
-  "_createButton": function () {},
-  "_updateDisabled": function () {},
-  "_initHooks": function () {},
-  "callInitHooks": function () {},
-  "initialize": function () {},
-  "getPosition": function () {},
-  "setPosition": function () {},
-  "getContainer": function () {},
-  "addTo": function () {},
-  "removeFrom": function () {},
-  "_refocusOnMap": function () {}
+L.LatLngUtil = {
+    "cloneLatLngs": function () {},
+    "cloneLatLng": function () {}
 };
-L.Control.Draw.Layers.Scale.Attribution.prototype = {
-  "constructor": function () {},
-  "options": function () {},
-  "initialize": function () {},
-  "onAdd": function () {},
-  "onRemove": function () {},
-  "setPrefix": function () {},
-  "addAttribution": function () {},
-  "removeAttribution": function () {},
-  "_update": function () {},
-  "_onLayerAdd": function () {},
-  "_onLayerRemove": function () {},
-  "_initHooks": function () {},
-  "callInitHooks": function () {},
-  "getPosition": function () {},
-  "setPosition": function () {},
-  "getContainer": function () {},
-  "addTo": function () {},
-  "removeFrom": function () {},
-  "_refocusOnMap": function () {}
+L.LineUtil = {
+    "segmentsIntersect": function () {},
 };
-L.Control.Draw.Layers.Scale.Attribution.Zoom.prototype = {
-  "constructor": function () {},
-  "options": function () {},
-  "onAdd": function () {},
-  "onRemove": function () {},
-  "_zoomIn": function () {},
-  "_zoomOut": function () {},
-  "_createButton": function () {},
-  "_updateDisabled": function () {},
-  "_initHooks": function () {},
-  "callInitHooks": function () {},
-  "initialize": function () {},
-  "getPosition": function () {},
-  "setPosition": function () {},
-  "getContainer": function () {},
-  "addTo": function () {},
-  "removeFrom": function () {},
-  "_refocusOnMap": function () {}
+L.Polygon = {
+    "intersects": function () {}
 };
-L.Toolbar.prototype = {
-  "constructor": function () {},
-  "addEventListener": function () {},
-  "hasEventListeners": function () {},
-  "removeEventListener": function () {},
-  "clearAllEventListeners": function () {},
-  "fireEvent": function () {},
-  "addOneTimeEventListener": function () {},
-  "on": function () {},
-  "off": function () {},
-  "once": function () {},
-  "fire": function () {},
-  "initialize": function () {},
-  "enabled": function () {},
-  "disable": function () {},
-  "addToolbar": function () {},
-  "removeToolbar": function () {},
-  "_initModeHandler": function () {},
-  "_createButton": function () {},
-  "_disposeButton": function () {},
-  "_handlerActivated": function () {},
-  "_handlerDeactivated": function () {},
-  "_createActions": function () {},
-  "_showActionsToolbar": function () {},
-  "_hideActionsToolbar": function () {},
-  "_initHooks": function () {},
-  "callInitHooks": function () {}
+L.Polyline = {
+    "intersects": function () {},
+    "newLatLngIntersects": function () {},
+    "newPointInteresects": function () {}
 };
-L.Tooltip.prototype = {
-  "constructor": function () {},
-  "initialize": function () {},
-  "dispose": function () {},
-  "updateContent": function () {},
-  "updatePosition": function () {},
-  "showAsError": function () {},
-  "removeError": function () {},
-  "_initHooks": function () {},
-  "callInitHooks": function () {}
+L.Map.TouchExtend = {
+    "initialize": function () {},
+    "addHooks": function () {},
+    "removeHooks": function () {},
 };
-L.DrawToolbar.prototype = {
-  "constructor": function () {},
-  "options": function () {},
-  "initialize": function () {},
-  "getModeHandlers": function () {},
-  "getActions": function () {},
-  "setOptions": function () {},
-  "_initHooks": function () {},
-  "callInitHooks": function () {},
-  "addEventListener": function () {},
-  "hasEventListeners": function () {},
-  "removeEventListener": function () {},
-  "clearAllEventListeners": function () {},
-  "fireEvent": function () {},
-  "addOneTimeEventListener": function () {},
-  "on": function () {},
-  "off": function () {},
-  "once": function () {},
-  "fire": function () {},
-  "enabled": function () {},
-  "disable": function () {},
-  "addToolbar": function () {},
-  "removeToolbar": function () {},
-  "_initModeHandler": function () {},
-  "_createButton": function () {},
-  "_disposeButton": function () {},
-  "_handlerActivated": function () {},
-  "_handlerDeactivated": function () {},
-  "_createActions": function () {},
-  "_showActionsToolbar": function () {},
-  "_hideActionsToolbar": function () {}
+L.Control.Draw = {
+    "initialize": function () {},
+    "onAdd": function () {},
+    "onRemove": function () {},
+    "setDrawingOptions": function () {}
 };
-L.EditToolbar.prototype = {
-  "constructor": function () {},
-  "options": function () {},
-  "initialize": function () {},
-  "getModeHandlers": function () {},
-  "getActions": function () {},
-  "addToolbar": function () {},
-  "removeToolbar": function () {},
-  "disable": function () {},
-  "_save": function () {},
-  "_checkDisabled": function () {},
-  "_initHooks": function () {},
-  "callInitHooks": function () {},
-  "addEventListener": function () {},
-  "hasEventListeners": function () {},
-  "removeEventListener": function () {},
-  "clearAllEventListeners": function () {},
-  "fireEvent": function () {},
-  "addOneTimeEventListener": function () {},
-  "on": function () {},
-  "off": function () {},
-  "once": function () {},
-  "fire": function () {},
-  "enabled": function () {},
-  "_initModeHandler": function () {},
-  "_createButton": function () {},
-  "_disposeButton": function () {},
-  "_handlerActivated": function () {},
-  "_handlerDeactivated": function () {},
-  "_createActions": function () {},
-  "_showActionsToolbar": function () {},
-  "_hideActionsToolbar": function () {}
+L.Draw.Tooltip = {
+    "initialize": function () {},
+    "dispose": function () {},
+    "updateContent": function () {},
+    "updatePosition": function () {},
+    "showAsError": function () {},
+    "removeError": function () {}
 };
-L.EditToolbar.Edit.prototype = {
-  "constructor": function () {},
-  "addEventListener": function () {},
-  "hasEventListeners": function () {},
-  "removeEventListener": function () {},
-  "clearAllEventListeners": function () {},
-  "fireEvent": function () {},
-  "addOneTimeEventListener": function () {},
-  "on": function () {},
-  "off": function () {},
-  "once": function () {},
-  "fire": function () {},
-  "initialize": function () {},
-  "enable": function () {},
-  "disable": function () {},
-  "addHooks": function () {},
-  "removeHooks": function () {},
-  "revertLayers": function () {},
-  "save": function () {},
-  "_backupLayer": function () {},
-  "_revertLayer": function () {},
-  "_enableLayerEdit": function () {},
-  "_disableLayerEdit": function () {},
-  "_onMouseMove": function () {},
-  "_hasAvailableLayers": function () {},
-  "_initHooks": function () {},
-  "callInitHooks": function () {},
-  "enabled": function () {}
+L.DrawToolbar = {
+    "initialize": function () {},
+    "getModeHandlers": function () {},
+    "getActions": function () {},
+    "setOptions": function () {}
 };
-L.EditToolbar.Edit.MarkerDrag.prototype = {
-  "constructor": function () {},
-  "initialize": function () {},
-  "addHooks": function () {},
-  "removeHooks": function () {},
-  "moved": function () {},
-  "_onDragStart": function () {},
-  "_onDrag": function () {},
-  "_onDragEnd": function () {},
-  "_initHooks": function () {},
-  "callInitHooks": function () {},
-  "enable": function () {},
-  "disable": function () {},
-  "enabled": function () {}
+L.EditToolbar = {
+    "initialize": function () {},
+    "getModeHandlers": function () {},
+    "getActions": function () {},
+    "addToolbar": function () {},
+    "removeToolbar": function () {},
+    "disable": function () {}
 };
-L.EditToolbar.Delete.prototype = {
-  "constructor": function () {},
-  "addEventListener": function () {},
-  "hasEventListeners": function () {},
-  "removeEventListener": function () {},
-  "clearAllEventListeners": function () {},
-  "fireEvent": function () {},
-  "addOneTimeEventListener": function () {},
-  "on": function () {},
-  "off": function () {},
-  "once": function () {},
-  "fire": function () {},
-  "initialize": function () {},
-  "enable": function () {},
-  "disable": function () {},
-  "addHooks": function () {},
-  "removeHooks": function () {},
-  "revertLayers": function () {},
-  "save": function () {},
-  "_enableLayerDelete": function () {},
-  "_disableLayerDelete": function () {},
-  "_removeLayer": function () {},
-  "_onMouseMove": function () {},
-  "_hasAvailableLayers": function () {},
-  "_initHooks": function () {},
-  "callInitHooks": function () {},
-  "enabled": function () {}
-};
-L.EditToolbar.Delete.MarkerDrag.prototype = {
-  "constructor": function () {},
-  "initialize": function () {},
-  "addHooks": function () {},
-  "removeHooks": function () {},
-  "moved": function () {},
-  "_onDragStart": function () {},
-  "_onDrag": function () {},
-  "_onDragEnd": function () {},
-  "_initHooks": function () {},
-  "callInitHooks": function () {},
-  "enable": function () {},
-  "disable": function () {},
-  "enabled": function () {}
+L.Edit.PolyVerticesEdit = {
+    "initialize": function () {},
+    "addHooks": function () {},
+    "removeHooks": function () {},
+    "updateMarkers": function () {}
 };
