@@ -9,6 +9,9 @@ var Sentry = {
     "Breadcrumbs": {
       "id": {}
     },
+    "Dedupe": {
+      "id": {}
+    },
     "FunctionToString": {
       "id": {}
     },
@@ -65,12 +68,16 @@ var Sentry = {
   "close": function () {},
   "configureScope": function () {},
   "defaultIntegrations": {},
+  "eventFromException": function () {},
+  "eventFromMessage": function () {},
   "flush": function () {},
   "forceLoad": function () {},
   "getCurrentHub": function () {},
   "getHubFromCarrier": function () {},
   "init": function () {},
+  "injectReportDialog": function () {},
   "lastEventId": function () {},
+  "makeMain": function () {},
   "onLoad": function () {},
   "setContext": function () {},
   "setExtra": function () {},
@@ -79,38 +86,50 @@ var Sentry = {
   "setTags": function () {},
   "setUser": function () {},
   "showReportDialog": function () {},
+  "startTransaction": function () {},
   "withScope": function () {},
   "wrap": function () {}
 };
 Sentry.BrowserClient.prototype = {
-  "an": function () {},
+  "Et": function () {},
+  "St": function () {},
+  "bt": function () {},
   "captureEvent": function () {},
   "captureException": function () {},
   "captureMessage": function () {},
+  "captureSession": function () {},
   "close": function () {},
-  "cn": function () {},
   "constructor": function () {},
+  "dt": function () {},
   "flush": function () {},
-  "fn": function () {},
+  "ft": function () {},
   "getDsn": function () {},
   "getIntegration": function () {},
-  "getIntegrations": function () {},
   "getOptions": function () {},
-  "in": function () {},
-  "on": function () {},
+  "gt": function () {},
+  "ht": function () {},
+  "jt": function () {},
+  "kt": function () {},
+  "lt": function () {},
+  "pt": function () {},
+  "setupIntegrations": function () {},
   "showReportDialog": function () {},
-  "sn": function () {},
-  "un": function () {}
+  "vt": function () {},
+  "wt": function () {},
+  "yt": function () {}
 };
 Sentry.Hub.prototype = {
-  "G": function () {},
   "V": function () {},
+  "Y": function () {},
+  "Z": function () {},
   "addBreadcrumb": function () {},
   "bindClient": function () {},
   "captureEvent": function () {},
   "captureException": function () {},
   "captureMessage": function () {},
+  "captureSession": function () {},
   "configureScope": function () {},
+  "endSession": function () {},
   "getClient": function () {},
   "getIntegration": function () {},
   "getScope": function () {},
@@ -127,90 +146,128 @@ Sentry.Hub.prototype = {
   "setTag": function () {},
   "setTags": function () {},
   "setUser": function () {},
+  "startSession": function () {},
   "startSpan": function () {},
+  "startTransaction": function () {},
   "traceHeaders": function () {},
   "withScope": function () {}
 };
 Sentry.Integrations.Breadcrumbs.prototype = {
-  "Fn": function () {},
-  "Hn": function () {},
-  "Ln": function () {},
-  "Pn": function () {},
-  "qn": function () {},
-  "setupOnce": function () {}
+  "addSentryBreadcrumb": function () {},
+  "en": function () {},
+  "in": function () {},
+  "on": function () {},
+  "rn": function () {},
+  "setupOnce": function () {},
+  "un": function () {}
+};
+Sentry.Integrations.Dedupe.prototype = {
+  "Dt": function () {},
+  "dn": function () {},
+  "hn": function () {},
+  "ln": function () {},
+  "pn": function () {},
+  "setupOnce": function () {},
+  "vn": function () {},
+  "yn": function () {}
 };
 Sentry.Integrations.FunctionToString.prototype = {
   "setupOnce": function () {}
 };
 Sentry.Integrations.GlobalHandlers.prototype = {
-  "Dn": function () {},
-  "Nn": function () {},
-  "On": function () {},
-  "Rn": function () {},
-  "Tn": function () {},
-  "setupOnce": function () {}
+  "Gt": function () {},
+  "Kt": function () {},
+  "Qt": function () {},
+  "Vt": function () {},
+  "setupOnce": function () {},
+  "zt": function () {}
 };
 Sentry.Integrations.InboundFilters.prototype = {
-  "bn": function () {},
-  "dn": function () {},
-  "gn": function () {},
-  "ln": function () {},
-  "mn": function () {},
-  "pn": function () {},
-  "setupOnce": function () {},
-  "wn": function () {},
-  "yn": function () {}
+  "At": function () {},
+  "Ct": function () {},
+  "Dt": function () {},
+  "It": function () {},
+  "Mt": function () {},
+  "Nt": function () {},
+  "Rt": function () {},
+  "Tt": function () {},
+  "_mergeOptions": function () {},
+  "setupOnce": function () {}
 };
 Sentry.Integrations.LinkedErrors.prototype = {
-  "Bn": function () {},
-  "Xn": function () {},
+  "an": function () {},
+  "cn": function () {},
   "setupOnce": function () {}
 };
 Sentry.Integrations.TryCatch.prototype = {
-  "An": function () {},
-  "Cn": function () {},
-  "Mn": function () {},
-  "Un": function () {},
-  "setupOnce": function () {}
+  "Yt": function () {},
+  "Zt": function () {},
+  "nn": function () {},
+  "setupOnce": function () {},
+  "tn": function () {}
 };
 Sentry.Integrations.UserAgent.prototype = {
   "setupOnce": function () {}
 };
 Sentry.Scope.prototype = {
-  "L": function () {},
-  "X": function () {},
+  "B": function () {},
+  "J": function () {},
+  "W": function () {},
   "addBreadcrumb": function () {},
   "addEventProcessor": function () {},
   "addScopeListener": function () {},
   "applyToEvent": function () {},
   "clear": function () {},
   "clearBreadcrumbs": function () {},
+  "getRequestSession": function () {},
+  "getSession": function () {},
   "getSpan": function () {},
-  "q": function () {},
+  "getTransaction": function () {},
+  "getUser": function () {},
   "setContext": function () {},
   "setExtra": function () {},
   "setExtras": function () {},
   "setFingerprint": function () {},
   "setLevel": function () {},
+  "setRequestSession": function () {},
+  "setSession": function () {},
   "setSpan": function () {},
   "setTag": function () {},
   "setTags": function () {},
   "setTransaction": function () {},
-  "setUser": function () {}
+  "setTransactionName": function () {},
+  "setUser": function () {},
+  "update": function () {}
 };
 Sentry.Transports.BaseTransport.prototype = {
+  "Ft": function () {},
+  "Ht": function () {},
+  "Pt": function () {},
+  "Xt": function () {},
   "close": function () {},
   "sendEvent": function () {}
 };
 Sentry.Transports.FetchTransport.prototype = {
+  "Ft": function () {},
+  "Ht": function () {},
+  "Jt": function () {},
+  "Pt": function () {},
+  "Xt": function () {},
   "close": function () {},
   "constructor": function () {},
-  "sendEvent": function () {}
+  "sendEvent": function () {},
+  "sendSession": function () {}
 };
 Sentry.Transports.XHRTransport.prototype = {
+  "Ft": function () {},
+  "Ht": function () {},
+  "Jt": function () {},
+  "Pt": function () {},
+  "Xt": function () {},
   "close": function () {},
   "constructor": function () {},
-  "sendEvent": function () {}
+  "sendEvent": function () {},
+  "sendSession": function () {}
 };
 /**********************************************************************
  * End Generated Extern for Sentry
