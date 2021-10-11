@@ -126,6 +126,14 @@ var PIXI = {
     "DEPTH": {},
     "STENCIL": {}
   },
+  "BUFFER_TYPE": {
+    "34962": {},
+    "34963": {},
+    "35345": {},
+    "ARRAY_BUFFER": {},
+    "ELEMENT_ARRAY_BUFFER": {},
+    "UNIFORM_BUFFER": {}
+  },
   "BaseImageResource": {
     "crossOrigin": function () { },
     "test": function () { }
@@ -234,7 +242,36 @@ var PIXI = {
   },
   "Circle": function () { },
   "CompressedTextureLoader": {
-    "autoDetectExtensions": function () { },
+    "add": function () { },
+    "textureExtensions": {
+      "astc": {},
+      "atc": {},
+      "etc": {},
+      "etc1": {},
+      "pvrtc": {},
+      "s3tc": {
+        "COMPRESSED_RGBA_S3TC_DXT1_EXT": {},
+        "COMPRESSED_RGBA_S3TC_DXT3_EXT": {},
+        "COMPRESSED_RGBA_S3TC_DXT5_EXT": {},
+        "COMPRESSED_RGB_S3TC_DXT1_EXT": {}
+      },
+      "s3tc_sRGB": {
+        "COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT": {},
+        "COMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT": {},
+        "COMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT": {},
+        "COMPRESSED_SRGB_S3TC_DXT1_EXT": {}
+      }
+    },
+    "textureFormats": {
+      "COMPRESSED_RGBA_S3TC_DXT1_EXT": {},
+      "COMPRESSED_RGBA_S3TC_DXT3_EXT": {},
+      "COMPRESSED_RGBA_S3TC_DXT5_EXT": {},
+      "COMPRESSED_RGB_S3TC_DXT1_EXT": {},
+      "COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT": {},
+      "COMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT": {},
+      "COMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT": {},
+      "COMPRESSED_SRGB_S3TC_DXT1_EXT": {}
+    },
     "use": function () { }
   },
   "CompressedTextureResource": {
@@ -298,8 +335,14 @@ var PIXI = {
     "arrayPostDivide": function () { }
   },
   "FORMATS": {
+    "33319": {},
+    "33320": {},
     "34041": {},
+    "36244": {},
+    "36248": {},
+    "36249": {},
     "6402": {},
+    "6403": {},
     "6406": {},
     "6407": {},
     "6408": {},
@@ -310,8 +353,14 @@ var PIXI = {
     "DEPTH_STENCIL": {},
     "LUMINANCE": {},
     "LUMINANCE_ALPHA": {},
+    "RED": {},
+    "RED_INTEGER": {},
+    "RG": {},
     "RGB": {},
-    "RGBA": {}
+    "RGBA": {},
+    "RGBA_INTEGER": {},
+    "RGB_INTEGER": {},
+    "RG_INTEGER": {}
   },
   "FORMATS_TO_COMPONENTS": {
     "6406": {},
@@ -360,7 +409,6 @@ var PIXI = {
       "copyTo": function () { },
       "equals": function () { },
       "set": function () { },
-      "toString": function () { },
       "x": {},
       "y": {}
     },
@@ -496,28 +544,39 @@ var PIXI = {
   },
   "LineStyle": function () { },
   "Loader": {
-    "_defaultAfterMiddleware": {},
-    "_defaultBeforeMiddleware": {},
     "_plugins": {},
-    "pre": function () { },
-    "registerPlugin": function () { },
-    "use": function () { }
+    "registerPlugin": function () { }
   },
   "LoaderResource": {
     "EMPTY_GIF": {},
     "LOAD_TYPE": {
+      "1": {},
+      "2": {},
+      "3": {},
+      "4": {},
       "AUDIO": {},
       "IMAGE": {},
       "VIDEO": {},
       "XHR": {}
     },
     "STATUS_FLAGS": {
+      "0": {},
+      "1": {},
+      "2": {},
+      "4": {},
       "COMPLETE": {},
       "DATA_URL": {},
       "LOADING": {},
       "NONE": {}
     },
     "TYPE": {
+      "0": {},
+      "1": {},
+      "2": {},
+      "3": {},
+      "4": {},
+      "5": {},
+      "6": {},
       "AUDIO": {},
       "IMAGE": {},
       "JSON": {},
@@ -696,7 +755,6 @@ var PIXI = {
         "fit": function () { },
         "height": {},
         "pad": function () { },
-        "toString": function () { },
         "type": {},
         "width": {},
         "x": {},
@@ -706,7 +764,6 @@ var PIXI = {
       "_updateID": {},
       "_uvs": {
         "set": function () { },
-        "toString": function () { },
         "uvsFloat32": {
           "0": {},
           "1": {},
@@ -744,7 +801,10 @@ var PIXI = {
         },
         "_eventsCount": {},
         "_glTextures": {},
+        "_mipmap": {},
         "_refreshPOT": function () { },
+        "_scaleMode": {},
+        "_wrapMode": {},
         "addListener": function () { },
         "alphaMode": {},
         "anisotropicLevel": {},
@@ -774,7 +834,6 @@ var PIXI = {
         "isPowerOfTwo": {},
         "listenerCount": function () { },
         "listeners": function () { },
-        "mipmap": {},
         "off": function () { },
         "on": function () { },
         "onError": function () { },
@@ -784,7 +843,6 @@ var PIXI = {
         "removeListener": function () { },
         "resolution": {},
         "resource": {},
-        "scaleMode": {},
         "setRealSize": function () { },
         "setResolution": function () { },
         "setResource": function () { },
@@ -797,8 +855,7 @@ var PIXI = {
         "uid": {},
         "update": function () { },
         "valid": {},
-        "width": {},
-        "wrapMode": {}
+        "width": {}
       },
       "castToBaseTexture": function () { },
       "clone": function () { },
@@ -821,7 +878,6 @@ var PIXI = {
             "fit": function () { },
             "height": {},
             "pad": function () { },
-            "toString": function () { },
             "type": {},
             "width": {},
             "x": {},
@@ -831,7 +887,6 @@ var PIXI = {
           "_updateID": {},
           "_uvs": {
             "set": function () { },
-            "toString": function () { },
             "uvsFloat32": {
               "0": {},
               "1": {},
@@ -864,7 +919,10 @@ var PIXI = {
             },
             "_eventsCount": {},
             "_glTextures": {},
+            "_mipmap": {},
             "_refreshPOT": function () { },
+            "_scaleMode": {},
+            "_wrapMode": {},
             "addListener": function () { },
             "alphaMode": {},
             "anisotropicLevel": {},
@@ -894,7 +952,6 @@ var PIXI = {
             "isPowerOfTwo": {},
             "listenerCount": function () { },
             "listeners": function () { },
-            "mipmap": {},
             "off": function () { },
             "on": function () { },
             "onError": function () { },
@@ -960,7 +1017,6 @@ var PIXI = {
               "update": function () { },
               "upload": function () { }
             },
-            "scaleMode": {},
             "setRealSize": function () { },
             "setResolution": function () { },
             "setResource": function () { },
@@ -973,8 +1029,7 @@ var PIXI = {
             "uid": {},
             "update": function () { },
             "valid": {},
-            "width": {},
-            "wrapMode": {}
+            "width": {}
           },
           "castToBaseTexture": function () { },
           "clone": function () { },
@@ -985,7 +1040,6 @@ var PIXI = {
             "copyTo": function () { },
             "equals": function () { },
             "set": function () { },
-            "toString": function () { },
             "x": {},
             "y": {}
           },
@@ -1009,7 +1063,6 @@ var PIXI = {
             "fit": function () { },
             "height": {},
             "pad": function () { },
-            "toString": function () { },
             "type": {},
             "width": {},
             "x": {},
@@ -1038,7 +1091,6 @@ var PIXI = {
         "copyTo": function () { },
         "equals": function () { },
         "set": function () { },
-        "toString": function () { },
         "x": {},
         "y": {}
       },
@@ -1062,7 +1114,6 @@ var PIXI = {
         "fit": function () { },
         "height": {},
         "pad": function () { },
-        "toString": function () { },
         "type": {},
         "width": {},
         "x": {},
@@ -1094,7 +1145,6 @@ var PIXI = {
         "fit": function () { },
         "height": {},
         "pad": function () { },
-        "toString": function () { },
         "type": {},
         "width": {},
         "x": {},
@@ -1104,7 +1154,6 @@ var PIXI = {
       "_updateID": {},
       "_uvs": {
         "set": function () { },
-        "toString": function () { },
         "uvsFloat32": {
           "0": {},
           "1": {},
@@ -1137,7 +1186,10 @@ var PIXI = {
         },
         "_eventsCount": {},
         "_glTextures": {},
+        "_mipmap": {},
         "_refreshPOT": function () { },
+        "_scaleMode": {},
+        "_wrapMode": {},
         "addListener": function () { },
         "alphaMode": {},
         "anisotropicLevel": {},
@@ -1167,7 +1219,6 @@ var PIXI = {
         "isPowerOfTwo": {},
         "listenerCount": function () { },
         "listeners": function () { },
-        "mipmap": {},
         "off": function () { },
         "on": function () { },
         "onError": function () { },
@@ -1233,7 +1284,6 @@ var PIXI = {
           "update": function () { },
           "upload": function () { }
         },
-        "scaleMode": {},
         "setRealSize": function () { },
         "setResolution": function () { },
         "setResource": function () { },
@@ -1246,8 +1296,7 @@ var PIXI = {
         "uid": {},
         "update": function () { },
         "valid": {},
-        "width": {},
-        "wrapMode": {}
+        "width": {}
       },
       "castToBaseTexture": function () { },
       "clone": function () { },
@@ -1265,7 +1314,6 @@ var PIXI = {
             "fit": function () { },
             "height": {},
             "pad": function () { },
-            "toString": function () { },
             "type": {},
             "width": {},
             "x": {},
@@ -1275,7 +1323,6 @@ var PIXI = {
           "_updateID": {},
           "_uvs": {
             "set": function () { },
-            "toString": function () { },
             "uvsFloat32": {
               "0": {},
               "1": {},
@@ -1313,7 +1360,10 @@ var PIXI = {
             },
             "_eventsCount": {},
             "_glTextures": {},
+            "_mipmap": {},
             "_refreshPOT": function () { },
+            "_scaleMode": {},
+            "_wrapMode": {},
             "addListener": function () { },
             "alphaMode": {},
             "anisotropicLevel": {},
@@ -1343,7 +1393,6 @@ var PIXI = {
             "isPowerOfTwo": {},
             "listenerCount": function () { },
             "listeners": function () { },
-            "mipmap": {},
             "off": function () { },
             "on": function () { },
             "onError": function () { },
@@ -1353,7 +1402,6 @@ var PIXI = {
             "removeListener": function () { },
             "resolution": {},
             "resource": {},
-            "scaleMode": {},
             "setRealSize": function () { },
             "setResolution": function () { },
             "setResource": function () { },
@@ -1366,8 +1414,7 @@ var PIXI = {
             "uid": {},
             "update": function () { },
             "valid": {},
-            "width": {},
-            "wrapMode": {}
+            "width": {}
           },
           "castToBaseTexture": function () { },
           "clone": function () { },
@@ -1378,7 +1425,6 @@ var PIXI = {
             "copyTo": function () { },
             "equals": function () { },
             "set": function () { },
-            "toString": function () { },
             "x": {},
             "y": {}
           },
@@ -1402,7 +1448,6 @@ var PIXI = {
             "fit": function () { },
             "height": {},
             "pad": function () { },
-            "toString": function () { },
             "type": {},
             "width": {},
             "x": {},
@@ -1436,7 +1481,6 @@ var PIXI = {
         "copyTo": function () { },
         "equals": function () { },
         "set": function () { },
-        "toString": function () { },
         "x": {},
         "y": {}
       },
@@ -1460,7 +1504,6 @@ var PIXI = {
         "fit": function () { },
         "height": {},
         "pad": function () { },
-        "toString": function () { },
         "type": {},
         "width": {},
         "x": {},
@@ -1525,6 +1568,14 @@ var PIXI = {
   },
   "RoundedRectangle": function () { },
   "Runner": function () { },
+  "SAMPLER_TYPES": {
+    "0": {},
+    "1": {},
+    "2": {},
+    "FLOAT": {},
+    "INT": {},
+    "UINT": {}
+  },
   "SCALE_MODES": {
     "0": {},
     "1": {},
@@ -1545,6 +1596,7 @@ var PIXI = {
   },
   "SVGResource": {
     "SVG_SIZE": {},
+    "SVG_XML": {},
     "crossOrigin": function () { },
     "getSize": function () { },
     "test": function () { }
@@ -1639,13 +1691,31 @@ var PIXI = {
     "32819": {},
     "32820": {},
     "33635": {},
+    "33640": {},
+    "34042": {},
+    "35899": {},
+    "35902": {},
     "36193": {},
+    "36269": {},
+    "5120": {},
     "5121": {},
+    "5122": {},
     "5123": {},
+    "5124": {},
+    "5125": {},
     "5126": {},
+    "BYTE": {},
     "FLOAT": {},
+    "FLOAT_32_UNSIGNED_INT_24_8_REV": {},
     "HALF_FLOAT": {},
+    "INT": {},
+    "SHORT": {},
     "UNSIGNED_BYTE": {},
+    "UNSIGNED_INT": {},
+    "UNSIGNED_INT_10F_11F_11F_REV": {},
+    "UNSIGNED_INT_24_8": {},
+    "UNSIGNED_INT_2_10_10_10_REV": {},
+    "UNSIGNED_INT_5_9_9_9_REV": {},
     "UNSIGNED_SHORT": {},
     "UNSIGNED_SHORT_4_4_4_4": {},
     "UNSIGNED_SHORT_5_5_5_1": {},
@@ -1677,6 +1747,7 @@ var PIXI = {
     },
     "from": function () { },
     "mixin": function () { },
+    "nextLineHeightBehavior": {},
     "prefixed": {}
   },
   "TextMetrics": {
@@ -1799,7 +1870,6 @@ var PIXI = {
         "fit": function () { },
         "height": {},
         "pad": function () { },
-        "toString": function () { },
         "type": {},
         "width": {},
         "x": {},
@@ -1809,7 +1879,6 @@ var PIXI = {
       "_updateID": {},
       "_uvs": {
         "set": function () { },
-        "toString": function () { },
         "uvsFloat32": {
           "0": {},
           "1": {},
@@ -1847,7 +1916,10 @@ var PIXI = {
         },
         "_eventsCount": {},
         "_glTextures": {},
+        "_mipmap": {},
         "_refreshPOT": function () { },
+        "_scaleMode": {},
+        "_wrapMode": {},
         "addListener": function () { },
         "alphaMode": {},
         "anisotropicLevel": {},
@@ -1877,7 +1949,6 @@ var PIXI = {
         "isPowerOfTwo": {},
         "listenerCount": function () { },
         "listeners": function () { },
-        "mipmap": {},
         "off": function () { },
         "on": function () { },
         "onError": function () { },
@@ -1887,7 +1958,6 @@ var PIXI = {
         "removeListener": function () { },
         "resolution": {},
         "resource": {},
-        "scaleMode": {},
         "setRealSize": function () { },
         "setResolution": function () { },
         "setResource": function () { },
@@ -1900,8 +1970,7 @@ var PIXI = {
         "uid": {},
         "update": function () { },
         "valid": {},
-        "width": {},
-        "wrapMode": {}
+        "width": {}
       },
       "castToBaseTexture": function () { },
       "clone": function () { },
@@ -1912,7 +1981,6 @@ var PIXI = {
         "copyTo": function () { },
         "equals": function () { },
         "set": function () { },
-        "toString": function () { },
         "x": {},
         "y": {}
       },
@@ -1936,7 +2004,6 @@ var PIXI = {
         "fit": function () { },
         "height": {},
         "pad": function () { },
-        "toString": function () { },
         "type": {},
         "width": {},
         "x": {},
@@ -1968,7 +2035,6 @@ var PIXI = {
         "fit": function () { },
         "height": {},
         "pad": function () { },
-        "toString": function () { },
         "type": {},
         "width": {},
         "x": {},
@@ -1978,7 +2044,6 @@ var PIXI = {
       "_updateID": {},
       "_uvs": {
         "set": function () { },
-        "toString": function () { },
         "uvsFloat32": {
           "0": {},
           "1": {},
@@ -2011,7 +2076,10 @@ var PIXI = {
         },
         "_eventsCount": {},
         "_glTextures": {},
+        "_mipmap": {},
         "_refreshPOT": function () { },
+        "_scaleMode": {},
+        "_wrapMode": {},
         "addListener": function () { },
         "alphaMode": {},
         "anisotropicLevel": {},
@@ -2041,7 +2109,6 @@ var PIXI = {
         "isPowerOfTwo": {},
         "listenerCount": function () { },
         "listeners": function () { },
-        "mipmap": {},
         "off": function () { },
         "on": function () { },
         "onError": function () { },
@@ -2107,7 +2174,6 @@ var PIXI = {
           "update": function () { },
           "upload": function () { }
         },
-        "scaleMode": {},
         "setRealSize": function () { },
         "setResolution": function () { },
         "setResource": function () { },
@@ -2120,8 +2186,7 @@ var PIXI = {
         "uid": {},
         "update": function () { },
         "valid": {},
-        "width": {},
-        "wrapMode": {}
+        "width": {}
       },
       "castToBaseTexture": function () { },
       "clone": function () { },
@@ -2132,7 +2197,6 @@ var PIXI = {
         "copyTo": function () { },
         "equals": function () { },
         "set": function () { },
-        "toString": function () { },
         "x": {},
         "y": {}
       },
@@ -2156,7 +2220,6 @@ var PIXI = {
         "fit": function () { },
         "height": {},
         "pad": function () { },
-        "toString": function () { },
         "type": {},
         "width": {},
         "x": {},
@@ -2236,7 +2299,6 @@ var PIXI = {
         "set": function () { },
         "setTransform": function () { },
         "toArray": function () { },
-        "toString": function () { },
         "translate": function () { },
         "tx": {},
         "ty": {}
@@ -2251,8 +2313,7 @@ var PIXI = {
         "copyTo": function () { },
         "equals": function () { },
         "scope": {},
-        "set": function () { },
-        "toString": function () { }
+        "set": function () { }
       },
       "position": {
         "_x": {},
@@ -2263,8 +2324,7 @@ var PIXI = {
         "copyTo": function () { },
         "equals": function () { },
         "scope": {},
-        "set": function () { },
-        "toString": function () { }
+        "set": function () { }
       },
       "scale": {
         "_x": {},
@@ -2275,8 +2335,7 @@ var PIXI = {
         "copyTo": function () { },
         "equals": function () { },
         "scope": {},
-        "set": function () { },
-        "toString": function () { }
+        "set": function () { }
       },
       "setFromMatrix": function () { },
       "skew": {
@@ -2288,10 +2347,8 @@ var PIXI = {
         "copyTo": function () { },
         "equals": function () { },
         "scope": {},
-        "set": function () { },
-        "toString": function () { }
+        "set": function () { }
       },
-      "toString": function () { },
       "updateLocalTransform": function () { },
       "updateSkew": function () { },
       "updateTransform": function () { },
@@ -2317,7 +2374,6 @@ var PIXI = {
         "set": function () { },
         "setTransform": function () { },
         "toArray": function () { },
-        "toString": function () { },
         "translate": function () { },
         "tx": {},
         "ty": {}
@@ -2337,7 +2393,8 @@ var PIXI = {
     "UTILITY": {}
   },
   "UniformGroup": {
-    "from": function () { }
+    "from": function () { },
+    "uboFrom": function () { }
   },
   "VERSION": {},
   "VideoResource": {
@@ -2376,6 +2433,7 @@ var PIXI = {
   "autoDetectRenderer": function () { },
   "autoDetectResource": function () { },
   "checkMaxIfStatementsInShader": function () { },
+  "createUBOElements": function () { },
   "defaultFilterVertex": {},
   "defaultVertex": {},
   "filters": {
@@ -2401,6 +2459,10 @@ var PIXI = {
       "from": function () { }
     }
   },
+  "generateProgram": function () { },
+  "generateUniformBufferSync": function () { },
+  "getTestContext": function () { },
+  "getUBOData": function () { },
   "graphicsUtils": {
     "ArcUtils": {
       "arc": function () { },
@@ -2532,6 +2594,7 @@ var PIXI = {
     "CAN_UPLOAD_SAME_BUFFER": {},
     "CREATE_IMAGE_BITMAP": {},
     "FAIL_IF_MAJOR_PERFORMANCE_CAVEAT": {},
+    "FILTER_MULTISAMPLE": {},
     "FILTER_RESOLUTION": {},
     "GC_MAX_CHECK_COUNT": {},
     "GC_MAX_IDLE": {},
@@ -2735,6 +2798,7 @@ PIXI.AnimatedSprite.prototype = {
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapMultisample": function () { },
   "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
@@ -2980,7 +3044,6 @@ PIXI.BatchShaderGenerator.prototype = {
 };
 PIXI.BatchSystem.prototype = {
   "boundArray": function () { },
-  "constructor": function () { },
   "copyBoundTextures": function () { },
   "destroy": function () { },
   "flush": function () { },
@@ -2998,6 +3061,7 @@ PIXI.BitmapText.prototype = {
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapMultisample": function () { },
   "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
@@ -3144,8 +3208,7 @@ PIXI.CanvasResource.prototype = {
 PIXI.Circle.prototype = {
   "clone": function () { },
   "contains": function () { },
-  "getBounds": function () { },
-  "toString": function () { }
+  "getBounds": function () { }
 };
 PIXI.CompressedTextureResource.prototype = {
   "bind": function () { },
@@ -3165,6 +3228,7 @@ PIXI.Container.prototype = {
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapMultisample": function () { },
   "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
@@ -3246,7 +3310,6 @@ PIXI.Container.EventEmitter.prototype = {
   "removeListener": function () { }
 };
 PIXI.ContextSystem.prototype = {
-  "constructor": function () { },
   "contextChange": function () { },
   "createContext": function () { },
   "destroy": function () { },
@@ -3282,6 +3345,7 @@ PIXI.DisplayObject.prototype = {
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapMultisample": function () { },
   "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateCachedBounds": function () { },
@@ -3347,8 +3411,7 @@ PIXI.DisplayObject.EventEmitter.prototype = {
 PIXI.Ellipse.prototype = {
   "clone": function () { },
   "contains": function () { },
-  "getBounds": function () { },
-  "toString": function () { }
+  "getBounds": function () { }
 };
 PIXI.Extract.prototype = {
   "base64": function () { },
@@ -3375,7 +3438,6 @@ PIXI.FilterSystem.prototype = {
   "applyFilter": function () { },
   "bindAndClear": function () { },
   "calculateSpriteMatrix": function () { },
-  "constructor": function () { },
   "destroy": function () { },
   "emptyPool": function () { },
   "getFilterTexture": function () { },
@@ -3399,8 +3461,8 @@ PIXI.Framebuffer.prototype = {
 PIXI.FramebufferSystem.prototype = {
   "bind": function () { },
   "blit": function () { },
+  "canMultisampleFramebuffer": function () { },
   "clear": function () { },
-  "constructor": function () { },
   "contextChange": function () { },
   "destroy": function () { },
   "detectSamples": function () { },
@@ -3432,11 +3494,9 @@ PIXI.GeometrySystem.prototype = {
   "activateVao": function () { },
   "bind": function () { },
   "checkCompatibility": function () { },
-  "constructor": function () { },
   "contextChange": function () { },
   "destroy": function () { },
   "disposeAll": function () { },
-  "disposeBuffer": function () { },
   "disposeGeometry": function () { },
   "draw": function () { },
   "getSignature": function () { },
@@ -3450,6 +3510,7 @@ PIXI.Graphics.prototype = {
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapMultisample": function () { },
   "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
@@ -3702,13 +3763,13 @@ PIXI.LineStyle.prototype = {
   "reset": function () { }
 };
 PIXI.Loader.prototype = {
+  "_add": function () { },
   "_loadResource": function () { },
   "_onComplete": function () { },
   "_onLoad": function () { },
   "_onStart": function () { },
   "_prepareUrl": function () { },
   "add": function () { },
-  "constructor": function () { },
   "destroy": function () { },
   "load": function () { },
   "pre": function () { },
@@ -3746,7 +3807,6 @@ PIXI.MaskData.prototype = {
   "reset": function () { }
 };
 PIXI.MaskSystem.prototype = {
-  "constructor": function () { },
   "destroy": function () { },
   "detect": function () { },
   "pop": function () { },
@@ -3772,7 +3832,6 @@ PIXI.Matrix.prototype = {
   "set": function () { },
   "setTransform": function () { },
   "toArray": function () { },
-  "toString": function () { },
   "translate": function () { }
 };
 PIXI.Mesh.prototype = {
@@ -3780,6 +3839,7 @@ PIXI.Mesh.prototype = {
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapMultisample": function () { },
   "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
@@ -3892,6 +3952,7 @@ PIXI.NineSlicePlane.prototype = {
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapMultisample": function () { },
   "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
@@ -3994,14 +4055,14 @@ PIXI.ObservablePoint.prototype = {
   "copyFrom": function () { },
   "copyTo": function () { },
   "equals": function () { },
-  "set": function () { },
-  "toString": function () { }
+  "set": function () { }
 };
 PIXI.ParticleContainer.prototype = {
   "_accessibleActive": function () { },
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapMultisample": function () { },
   "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
@@ -4118,13 +4179,11 @@ PIXI.Point.prototype = {
   "copyFrom": function () { },
   "copyTo": function () { },
   "equals": function () { },
-  "set": function () { },
-  "toString": function () { }
+  "set": function () { }
 };
 PIXI.Polygon.prototype = {
   "clone": function () { },
-  "contains": function () { },
-  "toString": function () { }
+  "contains": function () { }
 };
 PIXI.Prepare.prototype = {
   "add": function () { },
@@ -4136,14 +4195,8 @@ PIXI.Prepare.prototype = {
   "tick": function () { },
   "upload": function () { }
 };
-PIXI.Program.prototype = {
-  "extractData": function () { },
-  "getAttributeData": function () { },
-  "getUniformData": function () { }
-};
 PIXI.ProjectionSystem.prototype = {
   "calculateProjection": function () { },
-  "constructor": function () { },
   "destroy": function () { },
   "setTransform": function () { },
   "update": function () { }
@@ -4184,8 +4237,7 @@ PIXI.Rectangle.prototype = {
   "copyTo": function () { },
   "enlarge": function () { },
   "fit": function () { },
-  "pad": function () { },
-  "toString": function () { }
+  "pad": function () { }
 };
 PIXI.RenderTexture.prototype = {
   "addListener": function () { },
@@ -4462,7 +4514,6 @@ PIXI.RenderTexturePool.prototype = {
 PIXI.RenderTextureSystem.prototype = {
   "bind": function () { },
   "clear": function () { },
-  "constructor": function () { },
   "destroy": function () { },
   "reset": function () { },
   "resize": function () { }
@@ -4472,6 +4523,7 @@ PIXI.Renderer.prototype = {
   "addSystem": function () { },
   "clear": function () { },
   "constructor": function () { },
+  "contextChange": function () { },
   "destroy": function () { },
   "emit": function () { },
   "eventNames": function () { },
@@ -4659,8 +4711,7 @@ PIXI.RopeGeometry.prototype = {
 };
 PIXI.RoundedRectangle.prototype = {
   "clone": function () { },
-  "contains": function () { },
-  "toString": function () { }
+  "contains": function () { }
 };
 PIXI.Runner.prototype = {
   "add": function () { },
@@ -4699,15 +4750,16 @@ PIXI.Shader.prototype = {
 };
 PIXI.ShaderSystem.prototype = {
   "bind": function () { },
-  "constructor": function () { },
   "contextChange": function () { },
+  "createSyncBufferGroup": function () { },
   "createSyncGroups": function () { },
   "destroy": function () { },
-  "generateShader": function () { },
+  "generateProgram": function () { },
+  "getGlProgram": function () { },
   "getSignature": function () { },
-  "getglProgram": function () { },
   "reset": function () { },
   "setUniforms": function () { },
+  "syncUniformBufferGroup": function () { },
   "syncUniformGroup": function () { },
   "syncUniforms": function () { },
   "systemCheck": function () { }
@@ -4717,6 +4769,7 @@ PIXI.SimpleMesh.prototype = {
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapMultisample": function () { },
   "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
@@ -4807,6 +4860,7 @@ PIXI.SimplePlane.prototype = {
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapMultisample": function () { },
   "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
@@ -4898,6 +4952,7 @@ PIXI.SimpleRope.prototype = {
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapMultisample": function () { },
   "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
@@ -4988,6 +5043,7 @@ PIXI.Sprite.prototype = {
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapMultisample": function () { },
   "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
@@ -5088,11 +5144,7 @@ PIXI.Spritesheet.prototype = {
   "destroy": function () { },
   "parse": function () { }
 };
-PIXI.State.prototype = {
-  "toString": function () { }
-};
 PIXI.StateSystem.prototype = {
-  "constructor": function () { },
   "contextChange": function () { },
   "destroy": function () { },
   "forceState": function () { },
@@ -5109,7 +5161,6 @@ PIXI.StateSystem.prototype = {
   "updateCheck": function () { }
 };
 PIXI.StencilSystem.prototype = {
-  "_getBitwiseMask": function () { },
   "_useCurrent": function () { },
   "constructor": function () { },
   "destroy": function () { },
@@ -5126,6 +5177,7 @@ PIXI.TemporaryDisplayObject.prototype = {
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapMultisample": function () { },
   "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateCachedBounds": function () { },
@@ -5193,6 +5245,7 @@ PIXI.Text.prototype = {
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapMultisample": function () { },
   "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
@@ -5403,7 +5456,6 @@ PIXI.Texture.WHITE.baseTexture.resource.constructor.prototype = {
   "upload": function () { }
 };
 PIXI.TextureGCSystem.prototype = {
-  "constructor": function () { },
   "destroy": function () { },
   "postrender": function () { },
   "run": function () { },
@@ -5415,10 +5467,10 @@ PIXI.TextureMatrix.prototype = {
 };
 PIXI.TextureSystem.prototype = {
   "bind": function () { },
-  "constructor": function () { },
   "contextChange": function () { },
   "destroy": function () { },
   "destroyTexture": function () { },
+  "ensureSamplerType": function () { },
   "initTexture": function () { },
   "initTextureType": function () { },
   "reset": function () { },
@@ -5428,8 +5480,7 @@ PIXI.TextureSystem.prototype = {
   "updateTextureStyle": function () { }
 };
 PIXI.TextureUvs.prototype = {
-  "set": function () { },
-  "toString": function () { }
+  "set": function () { }
 };
 PIXI.Ticker.prototype = {
   "_addListener": function () { },
@@ -5449,6 +5500,7 @@ PIXI.TilingSprite.prototype = {
   "_accessibleDiv": function () { },
   "_cacheAsBitmap": function () { },
   "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapMultisample": function () { },
   "_cacheAsBitmapResolution": function () { },
   "_cacheData": function () { },
   "_calculateBounds": function () { },
@@ -5549,7 +5601,6 @@ PIXI.TimeLimiter.prototype = {
 PIXI.Transform.prototype = {
   "onChange": function () { },
   "setFromMatrix": function () { },
-  "toString": function () { },
   "updateLocalTransform": function () { },
   "updateSkew": function () { },
   "updateTransform": function () { }
@@ -5626,6 +5677,7 @@ PIXI.filters.ColorMatrixFilter.prototype = {
   "saturate": function () { },
   "sepia": function () { },
   "technicolor": function () { },
+  "tint": function () { },
   "toBGR": function () { },
   "vintage": function () { }
 };
