@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/crypto-js "3.1.9-1-0"] ;; latest release
+[cljsjs/crypto-js "4.1.1-0"] ;; latest release
 ```
 
 Note that there are two dashes in the version since the crypto-js version is "3.1.9-1"
