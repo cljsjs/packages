@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[io.github.cljsjs/indenticon-js "2.3.3-0"] ;; latest release
+[cljsjs/indenticon-js "2.3.3-0"] ;; latest release
 ```
 [](/dependency)
 
