@@ -5,7 +5,6 @@
 var vegaTooltip = {
   "DEFAULT_OPTIONS": {
     "disableDefaultStyle": {},
-    "formatTooltip": function () {},
     "id": {},
     "maxDepth": {},
     "offsetX": {},
@@ -23,9 +22,6 @@ var vegaTooltip = {
   "replacer": function () {},
   "stringify": function () {},
   "version": {}
-};
-vegaTooltip.Handler.prototype = {
-  "tooltipHandler": function () {}
 };
 /**********************************************************************
  * End Generated Extern for vegaTooltip
