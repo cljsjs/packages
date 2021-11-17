@@ -4,14 +4,14 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "1.6.2")
+(def +lib-version+ "1.6.3")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/konami
        :version     +version+
        :description "A quick and silly script for adding the Konami Code easter egg to your site."
-       :url         "http://snaptortoise.github.io/konami-js/"
+       :url         "https://konamijs.mand.is/"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "https://opensource.org/licenses/MIT"}})
 
