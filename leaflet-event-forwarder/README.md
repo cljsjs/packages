@@ -8,7 +8,7 @@ https://github.com/danwild/leaflet-event-forwarder
 
 [](dependency)
 ```clojure
-[io.github.cljsjs/leaflet-event-forwarder "0.0.3-0"] ;; latest release
+[cljsjs/leaflet-event-forwarder "0.0.3-0"] ;; latest release
 ```
 [](/dependency)
 
