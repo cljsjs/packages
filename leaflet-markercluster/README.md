@@ -6,7 +6,7 @@ https://github.com/Leaflet/Leaflet.markercluster
 
 [](dependency)
 ```clojure
-[cljsjs/leaflet-markercluster "1.3.0-0"] ;; latest release
+[cljsjs/leaflet-markercluster "1.5.3-0"] ;; latest release
 ```
 [](/dependency)
 
