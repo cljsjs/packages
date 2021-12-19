@@ -43,3 +43,6 @@ ReactDOMServer.renderToStaticMarkup = function(element) {};
 
 ReactDOMServer.renderToNodeStream = function() {};
 ReactDOMServer.renderToStaticNodeStream = function() {};
+
+// React 18
+ReactDOMServer.renderToPipeableStream = function() {};

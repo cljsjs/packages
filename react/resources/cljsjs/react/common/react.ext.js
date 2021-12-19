@@ -1,5 +1,5 @@
 /**
- * @fileoverview Closure Compiler externs for Facebook React.js 16.9.0
+ * @fileoverview Closure Compiler externs for Facebook React.js
  * @see http://reactjs.org
  * @externs
  */
@@ -1981,3 +1981,14 @@ ReactSharedInternals.ReactCurrentBatchConfig = {};
 
 var ReactErrorInfo = {};
 ReactErrorInfo.componentStack = {};
+
+// 18
+React.useSyncExternalStore = function() {};
+React.useSyncExternalStoreWithSelector = function() {};
+React.useId = function() {};
+React.useInsertionEffect = function() {};
+React.startTransition = function() {};
+React.createRoot = function() {};
+React.SuspenseList = function() {};
+React.useTransition = function() {};
+React.useDeferredValue = function() {};
