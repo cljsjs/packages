@@ -1,9 +1,11 @@
 # cljsjs/p5
 
 [](dependency)
+
 ```clojure
-[cljsjs/p5 "0.9.0-0"] ;; latest release
+[cljsjs/p5 "1.4.0-0"] ;; latest release
 ```
+
 [](/dependency)
 
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
