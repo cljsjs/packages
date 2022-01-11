@@ -1,8 +1,8 @@
 # cljsjs/p5
 
 [](dependency)
-
 ```clojure
+[cljsjs/p5 "1.4.0-0"] ;; latest release
 [cljsjs/p5 "1.4.0-0"] ;; latest release
 ```
 
