@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.0.0-rc.3")
+(def +lib-version+ "2.0.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (def unpkg-dist-url (str "https://unpkg.com/oidc-client-ts@" +lib-version+ "/dist/browser/"))

@@ -1,7 +1,7 @@
 # cljsjs/oidc-client-ts
 
 ```clojure
-[io.github.cljsjs/oidc-client-ts "2.0.0-rc.3-0"] ;; latest release
+[io.github.cljsjs/oidc-client-ts "2.0.1-0"] ;; latest release
 ```
 
 This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
