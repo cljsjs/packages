@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "2.0.1")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (def unpkg-dist-url (str "https://unpkg.com/oidc-client-ts@" +lib-version+ "/dist/browser/"))
 
@@ -21,9 +21,18 @@
   (comp
    (download :url (str unpkg-dist-url "/oidc-client-ts.js"))
    (download :url (str unpkg-dist-url "/oidc-client-ts.min.js"))
-   (sift :move {#"oidc-client-ts.js"    "cljsjs/development/oidc-client-ts.inc.js"
+   (sift :move {#"oidc-client-ts.js"     "cljsjs/development/oidc-client-ts.inc.js"
                 #"oidc-client-ts.min.js" "cljsjs/production/oidc-client-ts.min.inc.js"}
          :include #{#"^cljsjs"})
+   ;; Disable source map
+   (replace-content
+    :in "cljsjs/development/oidc-client-ts.inc.js"
+    :match #"\/\/\# sourceMappingURL=oidc-client-ts\.js\.map"
+    :value "")
+   (replace-content
+    :in "cljsjs/production/oidc-client-ts.min.inc.js"
+    :match #"\/\/\# sourceMappingURL=oidc-client-ts\.min\.js\.map"
+    :value "")
    (deps-cljs :provides ["cljsjs.oidc-client-ts"]
               :global-exports '{cljsjs.oidc-client-ts oidc})
    (pom)
