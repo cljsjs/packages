@@ -4,19 +4,19 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "12.1.5")
+(def +lib-version+ "14.0.1")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom {:project 'cljsjs/twemoji
       :version +version+
       :description "Twitter Emoji for Everyone"
-      :url "http://twitter.github.io/twemoji/"
+      :url "https://twemoji.twitter.com"
       :scm {:url "https://github.com/twitter/twemoji"}
       :license {"MIT license" "https://github.com/twitter/twemoji/blob/gh-pages/LICENSE"}})
 
 (defn download-url [version filename]
-  (format "http://twemoji.maxcdn.com/2/%s?%s" filename version))
+  (format "http://twemoji.maxcdn.com/v/%s/%s" version filename))
 
 (defn twemoji-files [version]
   {:js {:name "twemoji.js"
