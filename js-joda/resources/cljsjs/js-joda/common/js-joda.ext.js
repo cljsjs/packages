@@ -9406,6 +9406,10 @@ JSJoda._.StringBuilder.prototype = {
   "setLength": function () {},
   "toString": function () {}
 };
+JSJoda.ToNativeJsConverter.prototype = {
+  "toDate": function() {},
+  "toEpochMilli": function() {}
+}
 
 /**********************************************************************
  * End Generated Extern for JSJoda
@@ -9609,3 +9613,4 @@ JSJoda.DateTimeFormatter.parsedLeapSecond
 JSJoda.ResolverStyle
 JSJoda.ResolverStyle.values
 JSJoda.ResolverStyle.valueOf
+JSJoda.ToNativeJsConverter
