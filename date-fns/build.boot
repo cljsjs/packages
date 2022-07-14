@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.20.2")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "2.28.0")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom  {:project     'cljsjs/date-fns
