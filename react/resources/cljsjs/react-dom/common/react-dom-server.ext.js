@@ -46,3 +46,4 @@ ReactDOMServer.renderToStaticNodeStream = function() {};
 
 // React 18
 ReactDOMServer.renderToPipeableStream = function() {};
+ReactDOMServer.renderToReadableStream = function() {};
