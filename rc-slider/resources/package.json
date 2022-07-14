@@ -6,7 +6,7 @@
         "build:prod": "webpack --mode production --output-filename rc-slider.min.inc.js"
     },
     "dependencies": {
-        "rc-slider": "9.7.1"
+        "rc-slider": "10.0.1"
     },
        
     "devDependencies": {
