@@ -1,11 +1,11 @@
 (set-env!
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.10.5"  :scope "test"]
-                  [cljsjs/react "15.3.1-0"]])
+                  [cljsjs/react "17.0.2-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "4.4.4")
+(def +lib-version+ "4.9.3")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -23,9 +23,9 @@
 
 (deftask package []
   (comp
-    (download :url (format "https://raw.githubusercontent.com/s-yadav/react-number-format/v%s/dist/react-number-format.js"
+    (download :url (format "https://unpkg.com/react-number-format@%s/dist/react-number-format.js"
                            +lib-version+))
-    (download :url (format "https://raw.githubusercontent.com/s-yadav/react-number-format/v%s/dist/react-number-format.min.js"
+    (download :url (format "https://unpkg.com/react-number-format@%s/dist/react-number-format.min.js"
                            +lib-version+))
 
     (sift :move
