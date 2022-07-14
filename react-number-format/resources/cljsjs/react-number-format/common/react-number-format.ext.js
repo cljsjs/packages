@@ -5,105 +5,61 @@
 var NumberFormat = {
   "defaultProps": {
     "allowEmptyFormatting": {},
+    "allowLeadingZeros": {},
     "allowNegative": {},
     "decimalSeparator": {},
     "displayType": {},
     "fixedDecimalScale": {},
-    "getInputRef": function () {},
-    "isAllowed": function () {},
+    "isAllowed": function () { },
     "isNumericString": {},
-    "onBlur": function () {},
-    "onChange": function () {},
-    "onFocus": function () {},
-    "onKeyDown": function () {},
-    "onMouseUp": function () {},
-    "onValueChange": function () {},
+    "onBlur": function () { },
+    "onChange": function () { },
+    "onFocus": function () { },
+    "onKeyDown": function () { },
+    "onMouseUp": function () { },
+    "onValueChange": function () { },
     "prefix": {},
     "suffix": {},
+    "thousandsGroupStyle": {},
     "type": {}
-  },
-  "propTypes": {
-    "allowEmptyFormatting": {
-      "isRequired": function () {}
-    },
-    "allowNegative": {
-      "isRequired": function () {}
-    },
-    "customInput": {
-      "isRequired": function () {}
-    },
-    "decimalScale": {
-      "isRequired": function () {}
-    },
-    "decimalSeparator": {
-      "isRequired": function () {}
-    },
-    "displayType": {
-      "isRequired": function () {}
-    },
-    "fixedDecimalScale": {
-      "isRequired": function () {}
-    },
-    "format": {
-      "isRequired": function () {}
-    },
-    "getInputRef": {
-      "isRequired": function () {}
-    },
-    "isAllowed": {
-      "isRequired": function () {}
-    },
-    "isNumericString": {
-      "isRequired": function () {}
-    },
-    "mask": {
-      "isRequired": function () {}
-    },
-    "onBlur": {
-      "isRequired": function () {}
-    },
-    "onChange": {
-      "isRequired": function () {}
-    },
-    "onFocus": {
-      "isRequired": function () {}
-    },
-    "onKeyDown": {
-      "isRequired": function () {}
-    },
-    "onMouseUp": {
-      "isRequired": function () {}
-    },
-    "onValueChange": {
-      "isRequired": function () {}
-    },
-    "prefix": {
-      "isRequired": function () {}
-    },
-    "removeFormatting": {
-      "isRequired": function () {}
-    },
-    "renderText": {
-      "isRequired": function () {}
-    },
-    "suffix": {
-      "isRequired": function () {}
-    },
-    "thousandSeparator": {
-      "isRequired": function () {}
-    },
-    "type": {
-      "isRequired": function () {}
-    },
-    "value": {
-      "isRequired": function () {}
-    }
   }
 };
 NumberFormat.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "componentDidMount": function () { },
+  "componentDidUpdate": function () { },
+  "componentWillUnmount": function () { },
+  "constructor": function () { },
+  "correctCaretPosition": function () { },
+  "correctInputValue": function () { },
+  "forceUpdate": function () { },
+  "formatAsNumber": function () { },
+  "formatInput": function () { },
+  "formatNegation": function () { },
+  "formatNumString": function () { },
+  "formatValueProp": function () { },
+  "formatWithPattern": function () { },
+  "getCaretPosition": function () { },
+  "getFloatString": function () { },
+  "getMaskAtIndex": function () { },
+  "getNumberRegex": function () { },
+  "getSeparators": function () { },
+  "getValueObject": function () { },
+  "isCharacterAFormat": function () { },
+  "isReactComponent": function () { },
+  "onBlur": function () { },
+  "onChange": function () { },
+  "onFocus": function () { },
+  "onKeyDown": function () { },
+  "onMouseUp": function () { },
+  "removeFormatting": function () { },
+  "removePatternFormatting": function () { },
+  "removePrefixAndSuffix": function () { },
+  "render": function () { },
+  "setPatchedCaretPosition": function () { },
+  "setState": function () { },
+  "updateValue": function () { },
+  "updateValueIfRequired": function () { },
+  "validateProps": function () { }
 };
 /**********************************************************************
  * End Generated Extern for NumberFormat

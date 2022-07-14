@@ -2,8 +2,8 @@
   :resource-paths #{"resources"}
   :dependencies '[[cljsjs/boot-cljsjs "0.10.5"  :scope "test"]
                   [cljsjs/boot-cljsjs "0.10.5" :scope "test"]
-                  [cljsjs/react "17.0.1-0"]
-                  [cljsjs/react-dom "17.0.1-0"]])
+                  [cljsjs/react "17.0.2-0"]
+                  [cljsjs/react-dom "17.0.2-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
@@ -11,8 +11,8 @@
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]])
 
-(def +lib-version+ "9.7.1")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "10.0.1")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/rc-slider
