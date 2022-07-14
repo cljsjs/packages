@@ -1989,6 +1989,7 @@ React.useId = function() {};
 React.useInsertionEffect = function() {};
 React.startTransition = function() {};
 React.createRoot = function() {};
+React.hydrateRoot = function() {};
 React.SuspenseList = function() {};
 React.useTransition = function() {};
 React.useDeferredValue = function() {};
