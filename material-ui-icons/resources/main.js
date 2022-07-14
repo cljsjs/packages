@@ -1,3 +1,3 @@
 (function () {
-    window["MaterialUIIcons"] = require('@material-ui/icons');
+    window["MaterialUIIcons"] = require('@mui/icons-material');
 })();
