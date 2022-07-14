@@ -154,7 +154,6 @@ var MaterialUI = {
     ClickAwayListener: function () { },
     NoSsr: function () { },
     Popover: function () { },
-    Popper: function () { },
     Portal: function () { },
     useRadioGroup: function () { },
     RootRef: function () { },
