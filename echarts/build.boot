@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "4.8.0")
+(def +lib-version+ "5.3.3")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -21,10 +21,10 @@
 
 (deftask package []
   (comp
-   (download :url (cdn-ver "echarts-en.js"))
-   (download :url (cdn-ver "echarts-en.min.js"))
-   (sift :move {#"echarts-en.js" "cljsjs/echarts/development/echarts.inc.js"
-                #"echarts-en.min.js" "cljsjs/echarts/production/echarts.min.inc.js"})
+   (download :url (cdn-ver "echarts.js"))
+   (download :url (cdn-ver "echarts.min.js"))
+   (sift :move {#"echarts.js" "cljsjs/echarts/development/echarts.inc.js"
+                #"echarts.min.js" "cljsjs/echarts/production/echarts.min.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.echarts")
    (pom)
