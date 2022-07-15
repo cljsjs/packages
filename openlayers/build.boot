@@ -4,8 +4,8 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "4.4.1")
-(def +version+ (str +lib-version+ "-1"))
+(def +lib-version+ "6.14.1")
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
  pom  {:project     'cljsjs/openlayers
@@ -17,16 +17,17 @@
 
 (deftask package []
   (comp
-    (download :url (format "https://github.com/openlayers/openlayers/releases/download/v%s/v%s.zip" +lib-version+ +lib-version+)
-              :checksum "555FEADA2D0767132E278AE030BF3694"
-              :unzip true)
-    (download :url (format "https://github.com/openlayers/openlayers/archive/v%s.zip" +lib-version+)
-              :checksum "89636AA3D173B338F59ADAD9DCD9C0F4"
-              :unzip true)
-    (sift :move {#"^v([\d\.]*)/ol/ol/" "cljsjs/openlayers/development/ol/"
-                 #"^v([\d\.]*)/ol\.ext/" "cljsjs/openlayers/development/ol.ext/"
-                 #"^v([\d\.]*)/css/ol\.css" "cljsjs/openlayers/common/openlayers.inc.css"
-                 #"^openlayers-([\d\.]*)/externs/(.*)\.js" "cljsjs/openlayers/common/$2.ext.js"})
-    (sift :include #{#"^cljsjs/" #"deps.cljs"})
-    (pom)
-    (jar)))
+   (download
+    :url (format "https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v%s/build/ol.min.js" +lib-version+)
+    :target "cljsjs/openlayers/production/openlayers.min.inc.js")
+   (download
+    :url (format "https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v%s/build/ol.js" +lib-version+)
+    :target "cljsjs/openlayers/development/openlayers.inc.js")
+   (download
+    :url (format "https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v%s/css/ol.css" +lib-version+)
+    :target "cljsjs/openlayers/common/openlayers.inc.css")
+   (sift :include #{#"^cljsjs"})
+   (deps-cljs :name "cljsjs.openlayers")
+   (pom)
+   (jar)
+   (validate)))
