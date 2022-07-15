@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/openlayers "4.4.1-1"] ;; latest release
+[cljsjs/openlayers "6.14.1-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -13,7 +13,31 @@ requiring parts of the Closure library itself:
 ```clojure
 (ns application.core
   (:require [goog.dom :as dom]          ; Closure
-            [ol.animation :as anim]))   ; OpenLayers
+            [cljsjs.openlayers]))               ; OpenLayers
+```
+
+Example usage related to: https://openlayers.org/en/latest/examples/accessible.html
+```clojure
+(def ol-map (aget js/ol "Map"))
+(def ol-tile-layer (aget js/ol "layer" "Tile"))
+(def ol-view (aget js/ol "View"))
+(def ol-osm-source (aget js/ol "source" "OSM"))
+
+(defn- test-map []
+  (r/create-class
+   {:component-did-mount
+    (fn []
+      (ol-map.
+       (clj->js {:layers [(ol-tile-layer. #js{:source (ol-osm-source.)})]
+                 :target "map"
+                 :view (ol-view. #js{:center #js[0 0]
+                                     :zoom 2})})))
+
+    :reagent-render
+    (fn []
+      [:div {:style {:width 600
+                     :height 500}}
+       [:div#map.map]])}))
 ```
 
 ## Configuration
