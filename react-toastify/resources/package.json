@@ -7,7 +7,7 @@
     },
     "dependencies": {
          "clsx": "^1.1.1",
-         "react-toastify": "9.0.5"
+         "react-toastify": "9.0.8"
     },
     "devDependencies": {
         "webpack": "4.43.0",

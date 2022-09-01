@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/mousetrap "1.6.3-0"] ;; latest release
+[cljsjs/mousetrap "1.6.5-0"] ;; latest release
 ```
 [](/dependency)
 

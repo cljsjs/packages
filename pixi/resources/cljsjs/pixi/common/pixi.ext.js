@@ -29,7 +29,12 @@ var PIXI = {
     },
     "prefixed": {}
   },
-  "AccessibilityManager": function () { },
+  "AccessibilityManager": {
+    "extension": {
+      "name": {},
+      "type": {}
+    }
+  },
   "AnimatedSprite": {
     "EventEmitter": {
       "EventEmitter": function () { },
@@ -43,6 +48,7 @@ var PIXI = {
   },
   "AppLoaderPlugin": {
     "destroy": function () { },
+    "extension": {},
     "init": function () { }
   },
   "Application": {
@@ -173,7 +179,11 @@ var PIXI = {
   },
   "BatchRenderer": {
     "_drawCallPool": {},
-    "_textureArrayPool": {}
+    "_textureArrayPool": {},
+    "extension": {
+      "name": {},
+      "type": {}
+    }
   },
   "BatchShaderGenerator": function () { },
   "BatchSystem": function () { },
@@ -199,6 +209,7 @@ var PIXI = {
   "BitmapFontLoader": {
     "add": function () { },
     "dirname": function () { },
+    "extension": {},
     "getBaseUrl": function () { },
     "use": function () { }
   },
@@ -220,6 +231,13 @@ var PIXI = {
     "test": function () { }
   },
   "Bounds": function () { },
+  "BrowserAdapter": {
+    "createCanvas": function () { },
+    "fetch": function () { },
+    "getBaseUrl": function () { },
+    "getNavigator": function () { },
+    "getWebGLRenderingContext": function () { }
+  },
   "Buffer": {
     "from": function () { }
   },
@@ -237,12 +255,23 @@ var PIXI = {
     "NO": {},
     "YES": {}
   },
+  "COLOR_MASK_BITS": {
+    "1": {},
+    "2": {},
+    "4": {},
+    "8": {},
+    "ALPHA": {},
+    "BLUE": {},
+    "GREEN": {},
+    "RED": {}
+  },
   "CanvasResource": {
     "crossOrigin": function () { },
     "test": function () { }
   },
   "Circle": function () { },
   "CompressedTextureLoader": {
+    "extension": {},
     "use": function () { }
   },
   "CompressedTextureResource": {
@@ -265,7 +294,7 @@ var PIXI = {
     "test": function () { }
   },
   "DDSLoader": {
-    "parse": function () { },
+    "extension": {},
     "use": function () { }
   },
   "DEG_TO_RAD": {},
@@ -302,8 +331,22 @@ var PIXI = {
     "WEBGL_LEGACY": {}
   },
   "Ellipse": function () { },
+  "ExtensionType": {
+    "Application": {},
+    "CacheParser": {},
+    "CanvasRendererPlugin": {},
+    "DetectionParser": {},
+    "LoadParser": {},
+    "Loader": {},
+    "RendererPlugin": {},
+    "ResolveParser": {}
+  },
   "Extract": {
-    "arrayPostDivide": function () { }
+    "arrayPostDivide": function () { },
+    "extension": {
+      "name": {},
+      "type": {}
+    }
   },
   "FORMATS": {
     "33319": {},
@@ -491,6 +534,10 @@ var PIXI = {
       "EventEmitter": function () { },
       "prefixed": {}
     },
+    "extension": {
+      "name": {},
+      "type": {}
+    },
     "prefixed": {}
   },
   "InteractionTrackingData": {
@@ -502,12 +549,9 @@ var PIXI = {
     }
   },
   "KTXLoader": {
-    "convertFormatToInteger": function () { },
+    "extension": {},
     "loadKeyValueData": {},
-    "parse": function () { },
-    "parseKvData": function () { },
-    "use": function () { },
-    "validate": function () { }
+    "use": function () { }
   },
   "LINE_CAP": {
     "BUTT": {},
@@ -622,6 +666,8 @@ var PIXI = {
     "1": {},
     "2": {},
     "3": {},
+    "4": {},
+    "COLOR": {},
     "NONE": {},
     "SCISSOR": {},
     "SPRITE": {},
@@ -691,13 +737,23 @@ var PIXI = {
     "mixin": function () { },
     "prefixed": {}
   },
-  "ParticleRenderer": function () { },
+  "ParticleRenderer": {
+    "extension": {
+      "name": {},
+      "type": {}
+    }
+  },
   "PlaneGeometry": {
     "merge": function () { }
   },
   "Point": function () { },
   "Polygon": function () { },
-  "Prepare": function () { },
+  "Prepare": {
+    "extension": {
+      "name": {},
+      "type": {}
+    }
+  },
   "Program": {
     "from": function () { }
   },
@@ -742,28 +798,65 @@ var PIXI = {
       "prefixed": {}
     },
     "__plugins": {
-      "accessibility": function () { },
+      "accessibility": {
+        "extension": {
+          "name": {},
+          "type": {}
+        }
+      },
       "batch": {
         "_drawCallPool": {},
-        "_textureArrayPool": {}
+        "_textureArrayPool": {},
+        "extension": {
+          "name": {},
+          "type": {}
+        }
       },
       "extract": {
-        "arrayPostDivide": function () { }
+        "arrayPostDivide": function () { },
+        "extension": {
+          "name": {},
+          "type": {}
+        }
       },
       "interaction": {
         "EventEmitter": {
           "EventEmitter": function () { },
           "prefixed": {}
         },
+        "extension": {
+          "name": {},
+          "type": {}
+        },
         "prefixed": {}
       },
-      "particle": function () { },
-      "prepare": function () { },
-      "tilingSprite": function () { }
+      "particle": {
+        "extension": {
+          "name": {},
+          "type": {}
+        }
+      },
+      "prepare": {
+        "extension": {
+          "name": {},
+          "type": {}
+        }
+      },
+      "tilingSprite": {
+        "extension": {
+          "name": {},
+          "type": {}
+        }
+      }
     },
     "create": function () { },
     "prefixed": {},
     "registerPlugin": function () { }
+  },
+  "ResizePlugin": {
+    "destroy": function () { },
+    "extension": {},
+    "init": function () { }
   },
   "Resource": {
     "test": function () { }
@@ -856,6 +949,7 @@ var PIXI = {
     "BATCH_SIZE": {}
   },
   "SpritesheetLoader": {
+    "extension": {},
     "getResourcePath": function () { },
     "use": function () { }
   },
@@ -960,6 +1054,10 @@ var PIXI = {
     "nextLineHeightBehavior": {},
     "prefixed": {}
   },
+  "TextFormat": {
+    "parse": function () { },
+    "test": function () { }
+  },
   "TextMetrics": {
     "BASELINE_MULTIPLIER": {},
     "BASELINE_SYMBOL": {},
@@ -1001,6 +1099,7 @@ var PIXI = {
   "TextureGCSystem": function () { },
   "TextureLoader": {
     "add": function () { },
+    "extension": {},
     "use": function () { }
   },
   "TextureMatrix": function () { },
@@ -1009,6 +1108,7 @@ var PIXI = {
   "Ticker": function () { },
   "TickerPlugin": {
     "destroy": function () { },
+    "extension": {},
     "init": function () { }
   },
   "TilingSprite": {
@@ -1020,7 +1120,12 @@ var PIXI = {
     "mixin": function () { },
     "prefixed": {}
   },
-  "TilingSpriteRenderer": function () { },
+  "TilingSpriteRenderer": {
+    "extension": {
+      "name": {},
+      "type": {}
+    }
+  },
   "TimeLimiter": function () { },
   "Transform": {
     "IDENTITY": {
@@ -1174,6 +1279,14 @@ var PIXI = {
     "MIRRORED_REPEAT": {},
     "REPEAT": {}
   },
+  "XMLFormat": {
+    "parse": function () { },
+    "test": function () { }
+  },
+  "XMLStringFormat": {
+    "parse": function () { },
+    "test": function () { }
+  },
   "accessibleTarget": {
     "_accessibleActive": {},
     "_accessibleDiv": {},
@@ -1186,12 +1299,33 @@ var PIXI = {
     "renderId": {},
     "tabIndex": {}
   },
+  "autoDetectFormat": function () { },
   "autoDetectRenderer": function () { },
   "autoDetectResource": function () { },
   "checkMaxIfStatementsInShader": function () { },
   "createUBOElements": function () { },
   "defaultFilterVertex": {},
   "defaultVertex": {},
+  "extensions": {
+    "_addHandlers": {
+      "application": function () { },
+      "loader": function () { },
+      "renderer-webgl-plugin": function () { }
+    },
+    "_queue": {
+      "renderer-canvas-plugin": {}
+    },
+    "_removeHandlers": {
+      "application": function () { },
+      "loader": function () { },
+      "renderer-webgl-plugin": function () { }
+    },
+    "add": function () { },
+    "handle": function () { },
+    "handleByList": function () { },
+    "handleByMap": function () { },
+    "remove": function () { }
+  },
   "filters": {
     "AlphaFilter": {
       "from": function () { }
@@ -1344,8 +1478,17 @@ var PIXI = {
       "tablet": {}
     }
   },
+  "parseDDS": function () { },
+  "parseKTX": function () { },
   "resources": {},
   "settings": {
+    "ADAPTER": {
+      "createCanvas": function () { },
+      "fetch": function () { },
+      "getBaseUrl": function () { },
+      "getNavigator": function () { },
+      "getWebGLRenderingContext": function () { }
+    },
     "ANISOTROPIC_LEVEL": {},
     "CAN_UPLOAD_SAME_BUFFER": {},
     "CREATE_IMAGE_BITMAP": {},
@@ -1452,6 +1595,24 @@ var PIXI = {
     "isWebGLSupported": function () { },
     "log2": function () { },
     "nextPow2": function () { },
+    "path": {
+      "basename": function () { },
+      "delimiter": {},
+      "dirname": function () { },
+      "extname": function () { },
+      "getProtocol": function () { },
+      "hasProtocol": function () { },
+      "isAbsolute": function () { },
+      "isDataUrl": function () { },
+      "isUrl": function () { },
+      "join": function () { },
+      "normalize": function () { },
+      "parse": function () { },
+      "rootname": function () { },
+      "sep": {},
+      "toAbsolute": function () { },
+      "toPosix": function () { }
+    },
     "premultiplyBlendMode": {},
     "premultiplyRgba": function () { },
     "premultiplyTint": function () { },
@@ -2570,8 +2731,10 @@ PIXI.MaskSystem.prototype = {
   "destroy": function () { },
   "detect": function () { },
   "pop": function () { },
+  "popColorMask": function () { },
   "popSpriteMask": function () { },
   "push": function () { },
+  "pushColorMask": function () { },
   "pushSpriteMask": function () { },
   "setMaskStack": function () { }
 };
