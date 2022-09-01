@@ -6,7 +6,7 @@
         "build:prod": "browserify main.js -p [ minifyify --no-map ] > mousetrap-plugins.min.inc.js"
     },
     "dependencies": {
-        "mousetrap": "v1.6.3",
+        "mousetrap": "v1.6.5",
         "mousetrap-record": "v1.0.1",
         "mousetrap-pause": "v1.0.0"
     },
