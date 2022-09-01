@@ -16,6 +16,7 @@ var Chart = {
       "borderJoinStyle": {},
       "borderRadius": {},
       "borderWidth": {},
+      "circular": {},
       "offset": {},
       "spacing": {}
     },
@@ -121,6 +122,7 @@ var Chart = {
         "borderJoinStyle": {},
         "borderRadius": {},
         "borderWidth": {},
+        "circular": {},
         "offset": {},
         "spacing": {}
       },
@@ -569,6 +571,8 @@ var Chart = {
     },
     "ScatterController": {
       "defaults": {
+        "dataElementType": {},
+        "datasetElementType": {},
         "fill": {},
         "showLine": {}
       },
@@ -1047,6 +1051,8 @@ var Chart = {
       },
       "scatter": {
         "defaults": {
+          "dataElementType": {},
+          "datasetElementType": {},
           "fill": {},
           "showLine": {}
         },
@@ -1198,8 +1204,7 @@ var Chart = {
           "dataElementType": {},
           "datasetElementType": {},
           "fill": {},
-          "showLine": {},
-          "spanGaps": {}
+          "showLine": {}
         }
       },
       "devicePixelRatio": function () { },
@@ -1213,6 +1218,7 @@ var Chart = {
           "borderJoinStyle": {},
           "borderRadius": {},
           "borderWidth": {},
+          "circular": {},
           "offset": {},
           "spacing": {}
         },
@@ -1614,6 +1620,7 @@ var Chart = {
           "borderJoinStyle": {},
           "borderRadius": {},
           "borderWidth": {},
+          "circular": {},
           "offset": {},
           "spacing": {}
         },
@@ -1705,6 +1712,7 @@ var Chart = {
       "_factorize": function () { },
       "_filterBetween": function () { },
       "_getParentNode": function () { },
+      "_getStartAndCountOfVisiblePoints": function () { },
       "_int16Range": function () { },
       "_isBetween": function () { },
       "_isClickEvent": function () { },
@@ -1722,7 +1730,9 @@ var Chart = {
       "_pointInLine": function () { },
       "_readValueToProps": function () { },
       "_rlookupByKey": function () { },
+      "_scaleRangesChanged": function () { },
       "_setMinAndMaxByKey": function () { },
+      "_splitKey": function () { },
       "_steppedInterpolation": function () { },
       "_steppedLineTo": function () { },
       "_textX": function () { },
@@ -1741,6 +1751,7 @@ var Chart = {
       "defined": function () { },
       "distanceBetweenPoints": function () { },
       "drawPoint": function () { },
+      "drawPointLegend": function () { },
       "each": function () { },
       "easingEffects": {
         "easeInBack": function () { },
@@ -2003,7 +2014,7 @@ var Chart = {
               "scales": {
                 "_index_": {
                   "grid": {
-                    "closure_uid_751454602": {},
+                    "closure_uid_881245887": {},
                     "offset": {}
                   },
                   "offset": {},
@@ -2032,9 +2043,9 @@ var Chart = {
               "plugins": {
                 "tooltip": {
                   "callbacks": {
-                    "closure_uid_751454602": {},
+                    "closure_uid_881245887": {},
                     "title": {
-                      "closure_uid_751454602": {}
+                      "closure_uid_881245887": {}
                     }
                   }
                 }
@@ -2080,23 +2091,23 @@ var Chart = {
               "plugins": {
                 "legend": {
                   "labels": {
-                    "closure_uid_751454602": {},
+                    "closure_uid_881245887": {},
                     "generateLabels": {
-                      "closure_uid_751454602": {}
+                      "closure_uid_881245887": {}
                     }
                   },
                   "onClick": {
-                    "closure_uid_751454602": {}
+                    "closure_uid_881245887": {}
                   }
                 },
                 "tooltip": {
                   "callbacks": {
-                    "closure_uid_751454602": {},
+                    "closure_uid_881245887": {},
                     "label": {
-                      "closure_uid_751454602": {}
+                      "closure_uid_881245887": {}
                     },
                     "title": {
-                      "closure_uid_751454602": {}
+                      "closure_uid_881245887": {}
                     }
                   }
                 }
@@ -2123,7 +2134,7 @@ var Chart = {
             }
           },
           "pie": {
-            "closure_uid_751454602": {},
+            "closure_uid_881245887": {},
             "defaults": {
               "circumference": {},
               "cutout": {},
@@ -2137,32 +2148,32 @@ var Chart = {
             "id": {},
             "overrides": {
               "aspectRatio": {},
-              "closure_uid_751454602": {},
+              "closure_uid_881245887": {},
               "plugins": {
-                "closure_uid_751454602": {},
+                "closure_uid_881245887": {},
                 "legend": {
-                  "closure_uid_751454602": {},
+                  "closure_uid_881245887": {},
                   "labels": {
-                    "closure_uid_751454602": {},
+                    "closure_uid_881245887": {},
                     "generateLabels": {
-                      "closure_uid_751454602": {}
+                      "closure_uid_881245887": {}
                     }
                   },
                   "onClick": {
-                    "closure_uid_751454602": {}
+                    "closure_uid_881245887": {}
                   }
                 },
                 "tooltip": {
                   "callbacks": {
-                    "closure_uid_751454602": {},
+                    "closure_uid_881245887": {},
                     "label": {
-                      "closure_uid_751454602": {}
+                      "closure_uid_881245887": {}
                     },
                     "title": {
-                      "closure_uid_751454602": {}
+                      "closure_uid_881245887": {}
                     }
                   },
-                  "closure_uid_751454602": {}
+                  "closure_uid_881245887": {}
                 }
               }
             }
@@ -2189,23 +2200,23 @@ var Chart = {
               "plugins": {
                 "legend": {
                   "labels": {
-                    "closure_uid_751454602": {},
+                    "closure_uid_881245887": {},
                     "generateLabels": {
-                      "closure_uid_751454602": {}
+                      "closure_uid_881245887": {}
                     }
                   },
                   "onClick": {
-                    "closure_uid_751454602": {}
+                    "closure_uid_881245887": {}
                   }
                 },
                 "tooltip": {
                   "callbacks": {
-                    "closure_uid_751454602": {},
+                    "closure_uid_881245887": {},
                     "label": {
-                      "closure_uid_751454602": {}
+                      "closure_uid_881245887": {}
                     },
                     "title": {
-                      "closure_uid_751454602": {}
+                      "closure_uid_881245887": {}
                     }
                   }
                 }
@@ -2213,16 +2224,16 @@ var Chart = {
               "scales": {
                 "r": {
                   "angleLines": {
-                    "closure_uid_751454602": {},
+                    "closure_uid_881245887": {},
                     "display": {}
                   },
                   "beginAtZero": {},
                   "grid": {
                     "circular": {},
-                    "closure_uid_751454602": {}
+                    "closure_uid_881245887": {}
                   },
                   "pointLabels": {
-                    "closure_uid_751454602": {},
+                    "closure_uid_881245887": {},
                     "display": {}
                   },
                   "startAngle": {},
@@ -2255,6 +2266,8 @@ var Chart = {
           },
           "scatter": {
             "defaults": {
+              "dataElementType": {},
+              "datasetElementType": {},
               "fill": {},
               "showLine": {}
             },
@@ -2266,12 +2279,12 @@ var Chart = {
               "plugins": {
                 "tooltip": {
                   "callbacks": {
-                    "closure_uid_751454602": {},
+                    "closure_uid_881245887": {},
                     "label": {
-                      "closure_uid_751454602": {}
+                      "closure_uid_881245887": {}
                     },
                     "title": {
-                      "closure_uid_751454602": {}
+                      "closure_uid_881245887": {}
                     }
                   }
                 }
@@ -2306,6 +2319,7 @@ var Chart = {
               "borderJoinStyle": {},
               "borderRadius": {},
               "borderWidth": {},
+              "circular": {},
               "offset": {},
               "spacing": {}
             },
@@ -2745,7 +2759,7 @@ var Chart = {
   },
   "DomPlatform": function () { },
   "DoughnutController": {
-    "closure_uid_751454602": {},
+    "closure_uid_881245887": {},
     "defaults": {
       "animation": {
         "animateRotate": {},
@@ -2773,32 +2787,32 @@ var Chart = {
     "id": {},
     "overrides": {
       "aspectRatio": {},
-      "closure_uid_751454602": {},
+      "closure_uid_881245887": {},
       "plugins": {
-        "closure_uid_751454602": {},
+        "closure_uid_881245887": {},
         "legend": {
-          "closure_uid_751454602": {},
+          "closure_uid_881245887": {},
           "labels": {
-            "closure_uid_751454602": {},
+            "closure_uid_881245887": {},
             "generateLabels": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             }
           },
           "onClick": {
-            "closure_uid_751454602": {}
+            "closure_uid_881245887": {}
           }
         },
         "tooltip": {
           "callbacks": {
-            "closure_uid_751454602": {},
+            "closure_uid_881245887": {},
             "label": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             },
             "title": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             }
           },
-          "closure_uid_751454602": {}
+          "closure_uid_881245887": {}
         }
       }
     }
@@ -2935,7 +2949,7 @@ var Chart = {
     "id": {}
   },
   "PieController": {
-    "closure_uid_751454602": {},
+    "closure_uid_881245887": {},
     "defaults": {
       "circumference": {},
       "cutout": {},
@@ -2949,32 +2963,32 @@ var Chart = {
     "id": {},
     "overrides": {
       "aspectRatio": {},
-      "closure_uid_751454602": {},
+      "closure_uid_881245887": {},
       "plugins": {
-        "closure_uid_751454602": {},
+        "closure_uid_881245887": {},
         "legend": {
-          "closure_uid_751454602": {},
+          "closure_uid_881245887": {},
           "labels": {
-            "closure_uid_751454602": {},
+            "closure_uid_881245887": {},
             "generateLabels": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             }
           },
           "onClick": {
-            "closure_uid_751454602": {}
+            "closure_uid_881245887": {}
           }
         },
         "tooltip": {
           "callbacks": {
-            "closure_uid_751454602": {},
+            "closure_uid_881245887": {},
             "label": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             },
             "title": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             }
           },
-          "closure_uid_751454602": {}
+          "closure_uid_881245887": {}
         }
       }
     }
@@ -2996,7 +3010,7 @@ var Chart = {
     "id": {}
   },
   "PolarAreaController": {
-    "closure_uid_751454602": {},
+    "closure_uid_881245887": {},
     "defaults": {
       "animation": {
         "animateRotate": {},
@@ -3015,49 +3029,49 @@ var Chart = {
     "id": {},
     "overrides": {
       "aspectRatio": {},
-      "closure_uid_751454602": {},
+      "closure_uid_881245887": {},
       "plugins": {
-        "closure_uid_751454602": {},
+        "closure_uid_881245887": {},
         "legend": {
-          "closure_uid_751454602": {},
+          "closure_uid_881245887": {},
           "labels": {
-            "closure_uid_751454602": {},
+            "closure_uid_881245887": {},
             "generateLabels": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             }
           },
           "onClick": {
-            "closure_uid_751454602": {}
+            "closure_uid_881245887": {}
           }
         },
         "tooltip": {
           "callbacks": {
-            "closure_uid_751454602": {},
+            "closure_uid_881245887": {},
             "label": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             },
             "title": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             }
           },
-          "closure_uid_751454602": {}
+          "closure_uid_881245887": {}
         }
       },
       "scales": {
-        "closure_uid_751454602": {},
+        "closure_uid_881245887": {},
         "r": {
           "angleLines": {
-            "closure_uid_751454602": {},
+            "closure_uid_881245887": {},
             "display": {}
           },
           "beginAtZero": {},
-          "closure_uid_751454602": {},
+          "closure_uid_881245887": {},
           "grid": {
             "circular": {},
-            "closure_uid_751454602": {}
+            "closure_uid_881245887": {}
           },
           "pointLabels": {
-            "closure_uid_751454602": {},
+            "closure_uid_881245887": {},
             "display": {}
           },
           "startAngle": {},
@@ -3136,30 +3150,32 @@ var Chart = {
     "defaults": {}
   },
   "ScatterController": {
-    "closure_uid_751454602": {},
+    "closure_uid_881245887": {},
     "defaults": {
+      "dataElementType": {},
+      "datasetElementType": {},
       "fill": {},
       "showLine": {}
     },
     "id": {},
     "overrides": {
-      "closure_uid_751454602": {},
+      "closure_uid_881245887": {},
       "interaction": {
         "mode": {}
       },
       "plugins": {
-        "closure_uid_751454602": {},
+        "closure_uid_881245887": {},
         "tooltip": {
           "callbacks": {
-            "closure_uid_751454602": {},
+            "closure_uid_881245887": {},
             "label": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             },
             "title": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             }
           },
-          "closure_uid_751454602": {}
+          "closure_uid_881245887": {}
         }
       },
       "scales": {
@@ -3396,7 +3412,7 @@ var Chart = {
   },
   "controllers": {
     "bar": {
-      "closure_uid_751454602": {},
+      "closure_uid_881245887": {},
       "defaults": {
         "animations": {
           "numbers": {
@@ -3412,12 +3428,12 @@ var Chart = {
       },
       "id": {},
       "overrides": {
-        "closure_uid_751454602": {},
+        "closure_uid_881245887": {},
         "scales": {
           "_index_": {
-            "closure_uid_751454602": {},
+            "closure_uid_881245887": {},
             "grid": {
-              "closure_uid_751454602": {},
+              "closure_uid_881245887": {},
               "offset": {}
             },
             "offset": {},
@@ -3427,12 +3443,12 @@ var Chart = {
             "beginAtZero": {},
             "type": {}
           },
-          "closure_uid_751454602": {}
+          "closure_uid_881245887": {}
         }
       }
     },
     "bubble": {
-      "closure_uid_751454602": {},
+      "closure_uid_881245887": {},
       "defaults": {
         "animations": {
           "numbers": {
@@ -3445,17 +3461,17 @@ var Chart = {
       },
       "id": {},
       "overrides": {
-        "closure_uid_751454602": {},
+        "closure_uid_881245887": {},
         "plugins": {
-          "closure_uid_751454602": {},
+          "closure_uid_881245887": {},
           "tooltip": {
             "callbacks": {
-              "closure_uid_751454602": {},
+              "closure_uid_881245887": {},
               "title": {
-                "closure_uid_751454602": {}
+                "closure_uid_881245887": {}
               }
             },
-            "closure_uid_751454602": {}
+            "closure_uid_881245887": {}
           }
         },
         "scales": {
@@ -3468,9 +3484,9 @@ var Chart = {
         }
       }
     },
-    "closure_uid_751454602": {},
+    "closure_uid_881245887": {},
     "doughnut": {
-      "closure_uid_751454602": {},
+      "closure_uid_881245887": {},
       "defaults": {
         "animation": {
           "animateRotate": {},
@@ -3498,32 +3514,32 @@ var Chart = {
       "id": {},
       "overrides": {
         "aspectRatio": {},
-        "closure_uid_751454602": {},
+        "closure_uid_881245887": {},
         "plugins": {
-          "closure_uid_751454602": {},
+          "closure_uid_881245887": {},
           "legend": {
-            "closure_uid_751454602": {},
+            "closure_uid_881245887": {},
             "labels": {
-              "closure_uid_751454602": {},
+              "closure_uid_881245887": {},
               "generateLabels": {
-                "closure_uid_751454602": {}
+                "closure_uid_881245887": {}
               }
             },
             "onClick": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             }
           },
           "tooltip": {
             "callbacks": {
-              "closure_uid_751454602": {},
+              "closure_uid_881245887": {},
               "label": {
-                "closure_uid_751454602": {}
+                "closure_uid_881245887": {}
               },
               "title": {
-                "closure_uid_751454602": {}
+                "closure_uid_881245887": {}
               }
             },
-            "closure_uid_751454602": {}
+            "closure_uid_881245887": {}
           }
         }
       }
@@ -3548,7 +3564,7 @@ var Chart = {
       }
     },
     "pie": {
-      "closure_uid_751454602": {},
+      "closure_uid_881245887": {},
       "defaults": {
         "circumference": {},
         "cutout": {},
@@ -3562,38 +3578,38 @@ var Chart = {
       "id": {},
       "overrides": {
         "aspectRatio": {},
-        "closure_uid_751454602": {},
+        "closure_uid_881245887": {},
         "plugins": {
-          "closure_uid_751454602": {},
+          "closure_uid_881245887": {},
           "legend": {
-            "closure_uid_751454602": {},
+            "closure_uid_881245887": {},
             "labels": {
-              "closure_uid_751454602": {},
+              "closure_uid_881245887": {},
               "generateLabels": {
-                "closure_uid_751454602": {}
+                "closure_uid_881245887": {}
               }
             },
             "onClick": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             }
           },
           "tooltip": {
             "callbacks": {
-              "closure_uid_751454602": {},
+              "closure_uid_881245887": {},
               "label": {
-                "closure_uid_751454602": {}
+                "closure_uid_881245887": {}
               },
               "title": {
-                "closure_uid_751454602": {}
+                "closure_uid_881245887": {}
               }
             },
-            "closure_uid_751454602": {}
+            "closure_uid_881245887": {}
           }
         }
       }
     },
     "polarArea": {
-      "closure_uid_751454602": {},
+      "closure_uid_881245887": {},
       "defaults": {
         "animation": {
           "animateRotate": {},
@@ -3612,49 +3628,49 @@ var Chart = {
       "id": {},
       "overrides": {
         "aspectRatio": {},
-        "closure_uid_751454602": {},
+        "closure_uid_881245887": {},
         "plugins": {
-          "closure_uid_751454602": {},
+          "closure_uid_881245887": {},
           "legend": {
-            "closure_uid_751454602": {},
+            "closure_uid_881245887": {},
             "labels": {
-              "closure_uid_751454602": {},
+              "closure_uid_881245887": {},
               "generateLabels": {
-                "closure_uid_751454602": {}
+                "closure_uid_881245887": {}
               }
             },
             "onClick": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             }
           },
           "tooltip": {
             "callbacks": {
-              "closure_uid_751454602": {},
+              "closure_uid_881245887": {},
               "label": {
-                "closure_uid_751454602": {}
+                "closure_uid_881245887": {}
               },
               "title": {
-                "closure_uid_751454602": {}
+                "closure_uid_881245887": {}
               }
             },
-            "closure_uid_751454602": {}
+            "closure_uid_881245887": {}
           }
         },
         "scales": {
-          "closure_uid_751454602": {},
+          "closure_uid_881245887": {},
           "r": {
             "angleLines": {
-              "closure_uid_751454602": {},
+              "closure_uid_881245887": {},
               "display": {}
             },
             "beginAtZero": {},
-            "closure_uid_751454602": {},
+            "closure_uid_881245887": {},
             "grid": {
               "circular": {},
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             },
             "pointLabels": {
-              "closure_uid_751454602": {},
+              "closure_uid_881245887": {},
               "display": {}
             },
             "startAngle": {},
@@ -3686,30 +3702,32 @@ var Chart = {
       }
     },
     "scatter": {
-      "closure_uid_751454602": {},
+      "closure_uid_881245887": {},
       "defaults": {
+        "dataElementType": {},
+        "datasetElementType": {},
         "fill": {},
         "showLine": {}
       },
       "id": {},
       "overrides": {
-        "closure_uid_751454602": {},
+        "closure_uid_881245887": {},
         "interaction": {
           "mode": {}
         },
         "plugins": {
-          "closure_uid_751454602": {},
+          "closure_uid_881245887": {},
           "tooltip": {
             "callbacks": {
-              "closure_uid_751454602": {},
+              "closure_uid_881245887": {},
               "label": {
-                "closure_uid_751454602": {}
+                "closure_uid_881245887": {}
               },
               "title": {
-                "closure_uid_751454602": {}
+                "closure_uid_881245887": {}
               }
             },
-            "closure_uid_751454602": {}
+            "closure_uid_881245887": {}
           }
         },
         "scales": {
@@ -3847,8 +3865,7 @@ var Chart = {
         "dataElementType": {},
         "datasetElementType": {},
         "fill": {},
-        "showLine": {},
-        "spanGaps": {}
+        "showLine": {}
       }
     },
     "devicePixelRatio": function () { },
@@ -3862,6 +3879,7 @@ var Chart = {
         "borderJoinStyle": {},
         "borderRadius": {},
         "borderWidth": {},
+        "circular": {},
         "offset": {},
         "spacing": {}
       },
@@ -4263,6 +4281,7 @@ var Chart = {
         "borderJoinStyle": {},
         "borderRadius": {},
         "borderWidth": {},
+        "circular": {},
         "offset": {},
         "spacing": {}
       },
@@ -4354,6 +4373,7 @@ var Chart = {
     "_factorize": function () { },
     "_filterBetween": function () { },
     "_getParentNode": function () { },
+    "_getStartAndCountOfVisiblePoints": function () { },
     "_int16Range": function () { },
     "_isBetween": function () { },
     "_isClickEvent": function () { },
@@ -4371,7 +4391,9 @@ var Chart = {
     "_pointInLine": function () { },
     "_readValueToProps": function () { },
     "_rlookupByKey": function () { },
+    "_scaleRangesChanged": function () { },
     "_setMinAndMaxByKey": function () { },
+    "_splitKey": function () { },
     "_steppedInterpolation": function () { },
     "_steppedLineTo": function () { },
     "_textX": function () { },
@@ -4390,6 +4412,7 @@ var Chart = {
     "defined": function () { },
     "distanceBetweenPoints": function () { },
     "drawPoint": function () { },
+    "drawPointLegend": function () { },
     "each": function () { },
     "easingEffects": {
       "easeInBack": function () { },
@@ -4503,7 +4526,7 @@ var Chart = {
         "tooltip": {
           "callbacks": {
             "title": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             }
           }
         }
@@ -4523,20 +4546,20 @@ var Chart = {
         "legend": {
           "labels": {
             "generateLabels": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             }
           },
           "onClick": {
-            "closure_uid_751454602": {}
+            "closure_uid_881245887": {}
           }
         },
         "tooltip": {
           "callbacks": {
             "label": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             },
             "title": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             }
           }
         }
@@ -4558,20 +4581,20 @@ var Chart = {
         "legend": {
           "labels": {
             "generateLabels": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             }
           },
           "onClick": {
-            "closure_uid_751454602": {}
+            "closure_uid_881245887": {}
           }
         },
         "tooltip": {
           "callbacks": {
             "label": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             },
             "title": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             }
           }
         }
@@ -4583,20 +4606,20 @@ var Chart = {
         "legend": {
           "labels": {
             "generateLabels": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             }
           },
           "onClick": {
-            "closure_uid_751454602": {}
+            "closure_uid_881245887": {}
           }
         },
         "tooltip": {
           "callbacks": {
             "label": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             },
             "title": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             }
           }
         }
@@ -4634,10 +4657,10 @@ var Chart = {
         "tooltip": {
           "callbacks": {
             "label": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             },
             "title": {
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             }
           }
         }
@@ -4661,12 +4684,12 @@ var Chart = {
   "register": function () { },
   "registry": {
     "_typedRegistries": {},
-    "closure_uid_751454602": {},
+    "closure_uid_881245887": {},
     "controllers": {
-      "closure_uid_751454602": {},
+      "closure_uid_881245887": {},
       "items": {
         "bar": {
-          "closure_uid_751454602": {},
+          "closure_uid_881245887": {},
           "defaults": {
             "animations": {
               "numbers": {
@@ -4682,12 +4705,12 @@ var Chart = {
           },
           "id": {},
           "overrides": {
-            "closure_uid_751454602": {},
+            "closure_uid_881245887": {},
             "scales": {
               "_index_": {
-                "closure_uid_751454602": {},
+                "closure_uid_881245887": {},
                 "grid": {
-                  "closure_uid_751454602": {},
+                  "closure_uid_881245887": {},
                   "offset": {}
                 },
                 "offset": {},
@@ -4697,12 +4720,12 @@ var Chart = {
                 "beginAtZero": {},
                 "type": {}
               },
-              "closure_uid_751454602": {}
+              "closure_uid_881245887": {}
             }
           }
         },
         "bubble": {
-          "closure_uid_751454602": {},
+          "closure_uid_881245887": {},
           "defaults": {
             "animations": {
               "numbers": {
@@ -4715,17 +4738,17 @@ var Chart = {
           },
           "id": {},
           "overrides": {
-            "closure_uid_751454602": {},
+            "closure_uid_881245887": {},
             "plugins": {
-              "closure_uid_751454602": {},
+              "closure_uid_881245887": {},
               "tooltip": {
                 "callbacks": {
-                  "closure_uid_751454602": {},
+                  "closure_uid_881245887": {},
                   "title": {
-                    "closure_uid_751454602": {}
+                    "closure_uid_881245887": {}
                   }
                 },
-                "closure_uid_751454602": {}
+                "closure_uid_881245887": {}
               }
             },
             "scales": {
@@ -4738,9 +4761,9 @@ var Chart = {
             }
           }
         },
-        "closure_uid_751454602": {},
+        "closure_uid_881245887": {},
         "doughnut": {
-          "closure_uid_751454602": {},
+          "closure_uid_881245887": {},
           "defaults": {
             "animation": {
               "animateRotate": {},
@@ -4768,32 +4791,32 @@ var Chart = {
           "id": {},
           "overrides": {
             "aspectRatio": {},
-            "closure_uid_751454602": {},
+            "closure_uid_881245887": {},
             "plugins": {
-              "closure_uid_751454602": {},
+              "closure_uid_881245887": {},
               "legend": {
-                "closure_uid_751454602": {},
+                "closure_uid_881245887": {},
                 "labels": {
-                  "closure_uid_751454602": {},
+                  "closure_uid_881245887": {},
                   "generateLabels": {
-                    "closure_uid_751454602": {}
+                    "closure_uid_881245887": {}
                   }
                 },
                 "onClick": {
-                  "closure_uid_751454602": {}
+                  "closure_uid_881245887": {}
                 }
               },
               "tooltip": {
                 "callbacks": {
-                  "closure_uid_751454602": {},
+                  "closure_uid_881245887": {},
                   "label": {
-                    "closure_uid_751454602": {}
+                    "closure_uid_881245887": {}
                   },
                   "title": {
-                    "closure_uid_751454602": {}
+                    "closure_uid_881245887": {}
                   }
                 },
-                "closure_uid_751454602": {}
+                "closure_uid_881245887": {}
               }
             }
           }
@@ -4818,7 +4841,7 @@ var Chart = {
           }
         },
         "pie": {
-          "closure_uid_751454602": {},
+          "closure_uid_881245887": {},
           "defaults": {
             "circumference": {},
             "cutout": {},
@@ -4832,38 +4855,38 @@ var Chart = {
           "id": {},
           "overrides": {
             "aspectRatio": {},
-            "closure_uid_751454602": {},
+            "closure_uid_881245887": {},
             "plugins": {
-              "closure_uid_751454602": {},
+              "closure_uid_881245887": {},
               "legend": {
-                "closure_uid_751454602": {},
+                "closure_uid_881245887": {},
                 "labels": {
-                  "closure_uid_751454602": {},
+                  "closure_uid_881245887": {},
                   "generateLabels": {
-                    "closure_uid_751454602": {}
+                    "closure_uid_881245887": {}
                   }
                 },
                 "onClick": {
-                  "closure_uid_751454602": {}
+                  "closure_uid_881245887": {}
                 }
               },
               "tooltip": {
                 "callbacks": {
-                  "closure_uid_751454602": {},
+                  "closure_uid_881245887": {},
                   "label": {
-                    "closure_uid_751454602": {}
+                    "closure_uid_881245887": {}
                   },
                   "title": {
-                    "closure_uid_751454602": {}
+                    "closure_uid_881245887": {}
                   }
                 },
-                "closure_uid_751454602": {}
+                "closure_uid_881245887": {}
               }
             }
           }
         },
         "polarArea": {
-          "closure_uid_751454602": {},
+          "closure_uid_881245887": {},
           "defaults": {
             "animation": {
               "animateRotate": {},
@@ -4882,49 +4905,49 @@ var Chart = {
           "id": {},
           "overrides": {
             "aspectRatio": {},
-            "closure_uid_751454602": {},
+            "closure_uid_881245887": {},
             "plugins": {
-              "closure_uid_751454602": {},
+              "closure_uid_881245887": {},
               "legend": {
-                "closure_uid_751454602": {},
+                "closure_uid_881245887": {},
                 "labels": {
-                  "closure_uid_751454602": {},
+                  "closure_uid_881245887": {},
                   "generateLabels": {
-                    "closure_uid_751454602": {}
+                    "closure_uid_881245887": {}
                   }
                 },
                 "onClick": {
-                  "closure_uid_751454602": {}
+                  "closure_uid_881245887": {}
                 }
               },
               "tooltip": {
                 "callbacks": {
-                  "closure_uid_751454602": {},
+                  "closure_uid_881245887": {},
                   "label": {
-                    "closure_uid_751454602": {}
+                    "closure_uid_881245887": {}
                   },
                   "title": {
-                    "closure_uid_751454602": {}
+                    "closure_uid_881245887": {}
                   }
                 },
-                "closure_uid_751454602": {}
+                "closure_uid_881245887": {}
               }
             },
             "scales": {
-              "closure_uid_751454602": {},
+              "closure_uid_881245887": {},
               "r": {
                 "angleLines": {
-                  "closure_uid_751454602": {},
+                  "closure_uid_881245887": {},
                   "display": {}
                 },
                 "beginAtZero": {},
-                "closure_uid_751454602": {},
+                "closure_uid_881245887": {},
                 "grid": {
                   "circular": {},
-                  "closure_uid_751454602": {}
+                  "closure_uid_881245887": {}
                 },
                 "pointLabels": {
-                  "closure_uid_751454602": {},
+                  "closure_uid_881245887": {},
                   "display": {}
                 },
                 "startAngle": {},
@@ -4956,30 +4979,32 @@ var Chart = {
           }
         },
         "scatter": {
-          "closure_uid_751454602": {},
+          "closure_uid_881245887": {},
           "defaults": {
+            "dataElementType": {},
+            "datasetElementType": {},
             "fill": {},
             "showLine": {}
           },
           "id": {},
           "overrides": {
-            "closure_uid_751454602": {},
+            "closure_uid_881245887": {},
             "interaction": {
               "mode": {}
             },
             "plugins": {
-              "closure_uid_751454602": {},
+              "closure_uid_881245887": {},
               "tooltip": {
                 "callbacks": {
-                  "closure_uid_751454602": {},
+                  "closure_uid_881245887": {},
                   "label": {
-                    "closure_uid_751454602": {}
+                    "closure_uid_881245887": {}
                   },
                   "title": {
-                    "closure_uid_751454602": {}
+                    "closure_uid_881245887": {}
                   }
                 },
-                "closure_uid_751454602": {}
+                "closure_uid_881245887": {}
               }
             },
             "scales": {
@@ -5012,6 +5037,7 @@ var Chart = {
             "borderJoinStyle": {},
             "borderRadius": {},
             "borderWidth": {},
+            "circular": {},
             "offset": {},
             "spacing": {}
           },
