@@ -1,6 +1,4 @@
-var L = {
-  "esri": function () {}
-};
+L.esri = function () {};
 
 L.esri.prototype = {
   "VERSION": {},
