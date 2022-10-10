@@ -4,7 +4,7 @@ https://github.com/bubkoo/html-to-image/
 
 [](dependency)
 ```clojure
-[cljsjs/html-to-image "1.10.7-0"] ;; latest release
+[io.github.cljsjs/html-to-image "1.10.8-0"] ;; latest release
 ```
 [](/dependency)
 

@@ -1,8 +1,8 @@
-# cljsjs/pixi-legacy
+# io.github.cljsjs/pixi-html-text
 
 [](dependency)
 ```clojure
-[cljsjs/pixi-legacy "6.5.5-0"] ;; latest release
+[io.github.cljsjs/pixi-html-text"3.0.2-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,16 +12,9 @@ you can require and use the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.pixi-legacy))
-
-(def asset-loader js/PIXI.loader)
+  (:require cljsjs.pixi-html-text))
 ```
 
 Externs were generated using https://github.com/jmmk/javascript-externs-generator
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps
-
-**Difference to cljsjs/pixi:**
-
-With version 5 of pixi.js its build-logic has changed. cljsjs/pixi 5.0.0+ only supports WebGL, this dependency supports the canvas variant.
-Look on there explanations for further information: https://medium.com/goodboy-digital/pixijs-v5-lands-5e112d84e510 
