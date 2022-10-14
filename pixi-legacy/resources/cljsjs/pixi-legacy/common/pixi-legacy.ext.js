@@ -512,6 +512,7 @@ var PIXI = {
       "copyTo": function () { },
       "equals": function () { },
       "set": function () { },
+      "toString": function () { },
       "x": {},
       "y": {}
     },
@@ -552,11 +553,13 @@ var PIXI = {
     "37495": {},
     "37496": {},
     "37497": {},
+    "37808": {},
     "COMPRESSED_R11_EAC": {},
     "COMPRESSED_RG11_EAC": {},
     "COMPRESSED_RGB8_ETC2": {},
     "COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2": {},
     "COMPRESSED_RGBA8_ETC2_EAC": {},
+    "COMPRESSED_RGBA_ASTC_4x4_KHR": {},
     "COMPRESSED_RGBA_ATC_EXPLICIT_ALPHA_WEBGL": {},
     "COMPRESSED_RGBA_ATC_INTERPOLATED_ALPHA_WEBGL": {},
     "COMPRESSED_RGBA_PVRTC_2BPPV1_IMG": {},
@@ -604,7 +607,8 @@ var PIXI = {
     "37494": {},
     "37495": {},
     "37496": {},
-    "37497": {}
+    "37497": {},
+    "37808": {}
   },
   "ImageBitmapResource": {
     "crossOrigin": function () { },
@@ -1247,6 +1251,7 @@ var PIXI = {
         "set": function () { },
         "setTransform": function () { },
         "toArray": function () { },
+        "toString": function () { },
         "translate": function () { },
         "tx": {},
         "ty": {}
@@ -1261,7 +1266,8 @@ var PIXI = {
         "copyTo": function () { },
         "equals": function () { },
         "scope": {},
-        "set": function () { }
+        "set": function () { },
+        "toString": function () { }
       },
       "position": {
         "_x": {},
@@ -1272,7 +1278,8 @@ var PIXI = {
         "copyTo": function () { },
         "equals": function () { },
         "scope": {},
-        "set": function () { }
+        "set": function () { },
+        "toString": function () { }
       },
       "scale": {
         "_x": {},
@@ -1283,7 +1290,8 @@ var PIXI = {
         "copyTo": function () { },
         "equals": function () { },
         "scope": {},
-        "set": function () { }
+        "set": function () { },
+        "toString": function () { }
       },
       "setFromMatrix": function () { },
       "skew": {
@@ -1295,8 +1303,10 @@ var PIXI = {
         "copyTo": function () { },
         "equals": function () { },
         "scope": {},
-        "set": function () { }
+        "set": function () { },
+        "toString": function () { }
       },
+      "toString": function () { },
       "updateLocalTransform": function () { },
       "updateSkew": function () { },
       "updateTransform": function () { },
@@ -1322,6 +1332,7 @@ var PIXI = {
         "set": function () { },
         "setTransform": function () { },
         "toArray": function () { },
+        "toString": function () { },
         "translate": function () { },
         "tx": {},
         "ty": {}
@@ -2419,7 +2430,8 @@ PIXI.CanvasSpriteRenderer.prototype = {
 PIXI.Circle.prototype = {
   "clone": function () { },
   "contains": function () { },
-  "getBounds": function () { }
+  "getBounds": function () { },
+  "toString": function () { }
 };
 PIXI.CompressedTextureResource.prototype = {
   "bind": function () { },
@@ -2626,7 +2638,8 @@ PIXI.DisplayObject.EventEmitter.prototype = {
 PIXI.Ellipse.prototype = {
   "clone": function () { },
   "contains": function () { },
-  "getBounds": function () { }
+  "getBounds": function () { },
+  "toString": function () { }
 };
 PIXI.Extract.prototype = {
   "base64": function () { },
@@ -3054,6 +3067,7 @@ PIXI.Matrix.prototype = {
   "set": function () { },
   "setTransform": function () { },
   "toArray": function () { },
+  "toString": function () { },
   "translate": function () { }
 };
 PIXI.Mesh.prototype = {
@@ -3293,7 +3307,8 @@ PIXI.ObservablePoint.prototype = {
   "copyFrom": function () { },
   "copyTo": function () { },
   "equals": function () { },
-  "set": function () { }
+  "set": function () { },
+  "toString": function () { }
 };
 PIXI.ParticleContainer.prototype = {
   "_accessibleActive": function () { },
@@ -3420,11 +3435,13 @@ PIXI.Point.prototype = {
   "copyFrom": function () { },
   "copyTo": function () { },
   "equals": function () { },
-  "set": function () { }
+  "set": function () { },
+  "toString": function () { }
 };
 PIXI.Polygon.prototype = {
   "clone": function () { },
-  "contains": function () { }
+  "contains": function () { },
+  "toString": function () { }
 };
 PIXI.Prepare.prototype = {
   "add": function () { },
@@ -3479,7 +3496,8 @@ PIXI.Rectangle.prototype = {
   "enlarge": function () { },
   "fit": function () { },
   "intersects": function () { },
-  "pad": function () { }
+  "pad": function () { },
+  "toString": function () { }
 };
 PIXI.RenderTexture.prototype = {
   "addListener": function () { },
@@ -3726,7 +3744,8 @@ PIXI.RopeGeometry.prototype = {
 };
 PIXI.RoundedRectangle.prototype = {
   "clone": function () { },
-  "contains": function () { }
+  "contains": function () { },
+  "toString": function () { }
 };
 PIXI.Runner.prototype = {
   "add": function () { },
@@ -4187,6 +4206,9 @@ PIXI.Spritesheet.prototype = {
   "destroy": function () { },
   "parse": function () { }
 };
+PIXI.State.prototype = {
+  "toString": function () { }
+};
 PIXI.StateSystem.prototype = {
   "contextChange": function () { },
   "destroy": function () { },
@@ -4446,7 +4468,8 @@ PIXI.TextureSystem.prototype = {
   "updateTextureStyle": function () { }
 };
 PIXI.TextureUvs.prototype = {
-  "set": function () { }
+  "set": function () { },
+  "toString": function () { }
 };
 PIXI.Ticker.prototype = {
   "_addListener": function () { },
@@ -4572,6 +4595,7 @@ PIXI.TimeLimiter.prototype = {
 PIXI.Transform.prototype = {
   "onChange": function () { },
   "setFromMatrix": function () { },
+  "toString": function () { },
   "updateLocalTransform": function () { },
   "updateSkew": function () { },
   "updateTransform": function () { }
