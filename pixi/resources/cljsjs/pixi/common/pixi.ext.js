@@ -619,6 +619,7 @@ var PIXI = {
       "TEXT": {}
     },
     "_loadTypeMap": {
+      "avif": {},
       "bmp": {},
       "gif": {},
       "jpeg": {},
@@ -637,6 +638,7 @@ var PIXI = {
       "webp": {}
     },
     "_xhrTypeMap": {
+      "avif": {},
       "bmp": {},
       "dds": {},
       "fnt": {},
@@ -3474,6 +3476,7 @@ PIXI.ShaderSystem.prototype = {
   "createSyncBufferGroup": function () { },
   "createSyncGroups": function () { },
   "destroy": function () { },
+  "disposeShader": function () { },
   "generateProgram": function () { },
   "getGlProgram": function () { },
   "getSignature": function () { },
