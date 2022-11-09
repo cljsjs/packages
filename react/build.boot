@@ -5,7 +5,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "18.2.0")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'cljsjs/react
@@ -38,15 +38,20 @@
   (with-files (fn [x] (re-find #"react-dom.*\.ext\.js" (.getName (tmp-file x))))
     (comp
       (download-react "react-dom" "react-dom")
-      (download-react "react-dom" "react-dom-server.browser")
+      ;; Legacy variant also includes renderToString and renderToStaticMarkup
+      (download-react "react-dom" "react-dom-server-legacy.browser")
       (download-react "react-dom" "react-dom-test-utils")
       (deps-cljs :foreign-libs [{:file #"react-dom\.inc\.js"
                                  :file-min #"react-dom\.min\.inc\.js"
-                                 :provides ["react-dom" "cljsjs.react.dom"]
+                                 :provides ["react-dom"
+                                            "react-dom/client"
+                                            "cljsjs.react.dom"]
                                  :requires ["react"]
-                                 :global-exports '{react-dom ReactDOM}}
-                                {:file #"react-dom-server\.browser\.inc\.js"
-                                 :file-min #"react-dom-server\.browser\.min\.inc\.js"
+                                 :global-exports '{react-dom ReactDOM
+                                                   ;; UMD bundle has createRoot and hydrateRoot available on ReactDOM object
+                                                   react-dom/client ReactDOM}}
+                                {:file #"react-dom-server-legacy\.browser\.inc\.js"
+                                 :file-min #"react-dom-server-legacy\.browser\.min\.inc\.js"
                                  :provides ["react-dom/server" "cljsjs.react.dom.server"]
                                  :requires ["react-dom"]
                                  :global-exports '{react-dom/server ReactDOMServer}}

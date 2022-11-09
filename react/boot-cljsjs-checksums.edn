@@ -1,11 +1,11 @@
-{"cljsjs/react-dom/development/react-dom-server.browser.inc.js"
- "D311F676A4EB261FDB51498DC5BB4E09",
+{"cljsjs/react-dom/development/react-dom-server-legacy.browser.inc.js"
+ "7A7792FF60D2694BBF93DD084594E985",
  "cljsjs/react-dom/development/react-dom-test-utils.inc.js"
  "27DC9007103F916A527E66111416CB10",
  "cljsjs/react-dom/development/react-dom.inc.js"
  "8C4A75B04F321D71A781D8757261AB90",
- "cljsjs/react-dom/production/react-dom-server.browser.min.inc.js"
- "E61213975E28B7056FC012E9375277C2",
+ "cljsjs/react-dom/production/react-dom-server-legacy.browser.min.inc.js"
+ "A7581A868C3EB01CC0C13828CE981C45",
  "cljsjs/react-dom/production/react-dom-test-utils.min.inc.js"
  "C1B20BC19715525B45830FD91D39A3E0",
  "cljsjs/react-dom/production/react-dom.min.inc.js"
