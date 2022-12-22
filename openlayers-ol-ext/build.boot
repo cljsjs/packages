@@ -1,11 +1,11 @@
 (set-env!
-  :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.5" :scope "test"]
-                  [cljsjs/openlayers "6.14.1-0"]])
+ :resource-paths #{"resources"}
+ :dependencies '[[cljsjs/boot-cljsjs "0.10.5" :scope "test"]
+                 [cljsjs/openlayers "7.2.2-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "3.2.30")
+(def +lib-version+ "4.0.4")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -26,7 +26,7 @@
     :target "cljsjs/openlayers-ol-ext/development/openlayers-ol-ext.inc.js")
    (download
     :url (format "https://cdn.jsdelivr.net/gh/Viglino/ol-ext@%s/dist/ol-ext.min.css" +lib-version+)
-    :target "cljsjs/openlayers-ol-ext/common/openlayers-ol-ext.inc.css") 
+    :target "cljsjs/openlayers-ol-ext/common/openlayers-ol-ext.inc.css")
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.openlayers-ol-ext"
               :requires ["cljsjs.openlayers"])
