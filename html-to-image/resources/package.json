@@ -6,7 +6,7 @@
         "build:prod": "webpack --mode production --output-filename html-to-image.min.inc.js"
     },
     "dependencies": {
-        "html-to-image": "v1.11.1"
+        "html-to-image": "v1.11.3"
     },
     "devDependencies": {
         "webpack": "4.43.0",
