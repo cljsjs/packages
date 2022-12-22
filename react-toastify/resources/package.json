@@ -6,8 +6,8 @@
         "build:prod": "webpack --mode production --output-filename react-toastify.min.inc.js"
     },
     "dependencies": {
-         "clsx": "^1.1.1",
-         "react-toastify": "9.0.8"
+        "clsx": "^1.1.1",
+        "react-toastify": "9.1.0"
     },
     "devDependencies": {
         "webpack": "4.43.0",
