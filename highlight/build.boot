@@ -1,29 +1,29 @@
 (set-env!
-  :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.5" :scope "test"]])
+ :resource-paths #{"resources"}
+ :dependencies '[[cljsjs/boot-cljsjs "0.10.5" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "11.5.1")
+(def +lib-version+ "11.7.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
-  pom  {:project     'cljsjs/highlight
-        :version     +version+
-        :scm         {:url "https://github.com/cljsjs/packages"}
-        :description "JavaScript syntax highlighter"
-        :url         "https://highlightjs.org/"
-        :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
+ pom  {:project     'cljsjs/highlight
+       :version     +version+
+       :scm         {:url "https://github.com/cljsjs/packages"}
+       :description "JavaScript syntax highlighter"
+       :url         "https://highlightjs.org/"
+       :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
 
 (deftask build-and-move-languages []
- (comp
-  (download :url (format "https://github.com/isagalaev/highlight.js/archive/%s.zip" +lib-version+)
-            :unzip true)
-  (sift :move {#"^highlight\.js-\d*\.\d*.\d*/" ""})
-  (run-commands :commands [["npm" "install"]
-                           ["node" "tools/build.js" "-t" "cdn"]])
-  (sift :move {#"build/languages/(.*)\.min\.js" "cljsjs/production/highlight/$1.min.inc.js"
-               #"build/styles/(.*)\.css" "cljsjs/common/highlight/$1.css"})))
+  (comp
+   (download :url (format "https://github.com/isagalaev/highlight.js/archive/%s.zip" +lib-version+)
+             :unzip true)
+   (sift :move {#"^highlight\.js-\d*\.\d*.\d*/" ""})
+   (run-commands :commands [["npm" "install"]
+                            ["node" "tools/build.js" "-t" "cdn"]])
+   (sift :move {#"build/languages/(.*)\.min\.js" "cljsjs/production/highlight/$1.min.inc.js"
+                #"build/styles/(.*)\.css" "cljsjs/common/highlight/$1.css"})))
 
 (deftask package []
   (comp

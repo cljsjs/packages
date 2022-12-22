@@ -1,21 +1,21 @@
 (set-env!
-  :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.5" :scope "test"]
-                  [cljsjs/react "17.0.2-0"]
-                  [cljsjs/react-dom "17.0.2-0"]])
+ :resource-paths #{"resources"}
+ :dependencies '[[cljsjs/boot-cljsjs "0.10.5" :scope "test"]
+                 [cljsjs/react "17.0.2-0"]
+                 [cljsjs/react-dom "17.0.2-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "9.0.8")
+(def +lib-version+ "9.1.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
-  pom {:project     'cljsjs/react-toastify
-       :version     +version+
-       :description "React notification made easy."
-       :url         "https://github.com/fkhadra/react-toastify"
-       :scm         {:url "https://github.com/cljsjs/packages"}
-       :license     {"MIT" "http://opensource.org/licenses/MIT"}})
+ pom {:project     'cljsjs/react-toastify
+      :version     +version+
+      :description "React notification made easy."
+      :url         "https://github.com/fkhadra/react-toastify"
+      :scm         {:url "https://github.com/cljsjs/packages"}
+      :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (deftask package []
   (comp
