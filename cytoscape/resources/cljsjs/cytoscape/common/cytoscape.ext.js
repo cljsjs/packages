@@ -6,9 +6,11 @@ var cytoscape = {
   "Stylesheet": function () {},
   "stylesheet": function () {},
   "use": function () {},
-  "version": {}
+  "version": {},
+  "warnings": function () {}
 };
 cytoscape.Stylesheet.prototype = {
+  "appendToStyle": function () {},
   "css": function () {},
   "generateStyle": function () {},
   "instanceString": function () {},
@@ -16,6 +18,7 @@ cytoscape.Stylesheet.prototype = {
   "style": function () {}
 };
 cytoscape.stylesheet.prototype = {
+  "appendToStyle": function () {},
   "css": function () {},
   "generateStyle": function () {},
   "instanceString": function () {},
@@ -25,4 +28,3 @@ cytoscape.stylesheet.prototype = {
 /**********************************************************************
  * End Generated Extern for cytoscape
 /**********************************************************************/
-
