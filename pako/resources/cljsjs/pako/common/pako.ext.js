@@ -1,6 +1,6 @@
 
 /**
- * @fileoverview Closure Compiler externs for pako 0.2.6.
+ * @fileoverview Closure Compiler externs for pako 2.0.4.
  * @see https://github.com/nodeca/pako
  * @see http://nodeca.github.io/pako/
  * @externs

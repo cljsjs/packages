@@ -4,7 +4,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "0.2.7")
+(def +lib-version+ "2.0.4")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,9 +18,9 @@
 (deftask package []
   (comp
     (download :url (format "https://raw.githubusercontent.com/nodeca/pako/%s/dist/pako.min.js" +lib-version+)
-              :checksum "880935149cdc811080cf815e175af12a")
+              :checksum "07AE3B6B3B89501942776C01CC7F195A")
     (download :url (format "https://raw.githubusercontent.com/nodeca/pako/%s/dist/pako.js" +lib-version+)
-              :checksum "4bfb3a0fa3ac7831b02cc296666ca4e9")
+              :checksum "CB12C4770AA72A59132194D60ACB97B6")
     (sift :move {#"pako\.js"      "cljsjs/pako/development/pako.inc.js"
                  #"pako\.min\.js" "cljsjs/pako/production/pako.min.inc.js"})
     (sift :include #{#"^cljsjs"})
