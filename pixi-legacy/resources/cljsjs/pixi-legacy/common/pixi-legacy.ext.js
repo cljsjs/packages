@@ -21,11 +21,16 @@ var PIXI = {
       "type": {}
     }
   },
+  "AlphaFilter": {
+    "defaultMultisample": {},
+    "defaultResolution": {}
+  },
   "AnimatedSprite": {
     "EventEmitter": {
       "EventEmitter": function () { },
       "prefixed": {}
     },
+    "defaultSortableChildren": {},
     "prefixed": {}
   },
   "Application": {
@@ -39,6 +44,8 @@ var PIXI = {
       "_isLoading": {},
       "_loader": {
         "_parsers": {},
+        "_parsersValidated": {},
+        "parsers": {},
         "promiseCache": {}
       },
       "_maxConcurrent": {},
@@ -53,12 +60,23 @@ var PIXI = {
     },
     "loader": {
       "_parsers": {},
+      "_parsersValidated": {},
+      "parsers": {},
       "promiseCache": {}
     },
     "resolver": {
       "_assetMap": {},
       "_basePath": {},
+      "_bundleIdConnector": {},
       "_bundles": {},
+      "_createBundleAssetId": function () { },
+      "_defaultBundleIdentifierOptions": {
+        "connector": {},
+        "createBundleAssetId": function () { },
+        "extractAssetIdFromBundle": function () { }
+      },
+      "_defaultSearchParams": {},
+      "_extractAssetIdFromBundle": function () { },
       "_manifest": {},
       "_parsers": {},
       "_preferredOrder": {},
@@ -149,19 +167,36 @@ var PIXI = {
     "UNIFORM_BUFFER": {}
   },
   "BackgroundSystem": {
+    "defaultOptions": {
+      "backgroundAlpha": {},
+      "backgroundColor": {},
+      "clearBeforeRender": {}
+    },
     "extension": {
       "name": {},
       "type": {}
     }
   },
   "BaseImageResource": function () { },
-  "BasePrepare": function () { },
+  "BasePrepare": {
+    "uploadsPerFrame": {}
+  },
   "BaseRenderTexture": {
     "EventEmitter": {
       "EventEmitter": function () { },
       "prefixed": {}
     },
     "_globalBatch": {},
+    "defaultOptions": {
+      "alphaMode": {},
+      "anisotropicLevel": {},
+      "format": {},
+      "mipmap": {},
+      "scaleMode": {},
+      "target": {},
+      "type": {},
+      "wrapMode": {}
+    },
     "prefixed": {}
   },
   "BaseTexture": {
@@ -170,6 +205,16 @@ var PIXI = {
       "prefixed": {}
     },
     "_globalBatch": {},
+    "defaultOptions": {
+      "alphaMode": {},
+      "anisotropicLevel": {},
+      "format": {},
+      "mipmap": {},
+      "scaleMode": {},
+      "target": {},
+      "type": {},
+      "wrapMode": {}
+    },
     "prefixed": {}
   },
   "BatchDrawCall": function () { },
@@ -177,6 +222,7 @@ var PIXI = {
   "BatchRenderer": {
     "_drawCallPool": {},
     "_textureArrayPool": {},
+    "defaultBatchSize": {},
     "extension": {
       "name": {},
       "type": {}
@@ -210,6 +256,7 @@ var PIXI = {
       "EventEmitter": function () { },
       "prefixed": {}
     },
+    "defaultSortableChildren": {},
     "prefixed": {},
     "styleDefaults": {
       "align": {},
@@ -219,11 +266,20 @@ var PIXI = {
     }
   },
   "BlobResource": function () { },
+  "BlurFilter": {
+    "defaultMultisample": {},
+    "defaultResolution": {}
+  },
+  "BlurFilterPass": {
+    "defaultMultisample": {},
+    "defaultResolution": {}
+  },
   "Bounds": function () { },
   "BrowserAdapter": {
     "createCanvas": function () { },
     "fetch": function () { },
     "getBaseUrl": function () { },
+    "getCanvasRenderingContext2D": function () { },
     "getFontFaceSet": function () { },
     "getNavigator": function () { },
     "getWebGLRenderingContext": function () { },
@@ -303,7 +359,8 @@ var PIXI = {
     "extension": {
       "name": {},
       "type": {}
-    }
+    },
+    "uploadsPerFrame": {}
   },
   "CanvasRenderer": {
     "EventEmitter": {
@@ -344,12 +401,23 @@ var PIXI = {
         }
       },
       "_view": {
+        "defaultOptions": {
+          "autoDensity": {},
+          "height": {},
+          "resolution": {},
+          "width": {}
+        },
         "extension": {
           "name": {},
           "type": {}
         }
       },
       "background": {
+        "defaultOptions": {
+          "backgroundAlpha": {},
+          "backgroundColor": {},
+          "clearBeforeRender": {}
+        },
         "extension": {
           "name": {},
           "type": {}
@@ -362,6 +430,12 @@ var PIXI = {
         }
       },
       "events": {
+        "defaultEventFeatures": {
+          "click": {},
+          "globalMove": {},
+          "move": {},
+          "wheel": {}
+        },
         "extension": {
           "name": {},
           "type": {}
@@ -389,9 +463,13 @@ var PIXI = {
         "extension": {
           "name": {},
           "type": {}
-        }
+        },
+        "uploadsPerFrame": {}
       },
       "startup": {
+        "defaultOptions": {
+          "hello": {}
+        },
         "extension": {
           "name": {},
           "type": {}
@@ -418,15 +496,50 @@ var PIXI = {
     }
   },
   "Circle": function () { },
+  "Color": {
+    "HEX_PATTERN": {},
+    "shared": {
+      "_components": {
+        "0": {},
+        "1": {},
+        "2": {},
+        "3": {}
+      },
+      "_int": {},
+      "_value": {}
+    },
+    "temp": {
+      "_components": {
+        "0": {},
+        "1": {},
+        "2": {},
+        "3": {}
+      },
+      "_int": {},
+      "_value": {}
+    }
+  },
+  "ColorMatrixFilter": {
+    "defaultMultisample": {},
+    "defaultResolution": {}
+  },
   "CompressedTextureResource": function () { },
   "Container": {
     "EventEmitter": {
       "EventEmitter": function () { },
       "prefixed": {}
     },
+    "defaultSortableChildren": {},
     "prefixed": {}
   },
   "ContextSystem": {
+    "defaultOptions": {
+      "antialias": {},
+      "context": {},
+      "powerPreference": {},
+      "premultipliedAlpha": {},
+      "preserveDrawingBuffer": {}
+    },
     "extension": {
       "name": {},
       "type": {}
@@ -453,6 +566,10 @@ var PIXI = {
     "TRIANGLE_FAN": {},
     "TRIANGLE_STRIP": {}
   },
+  "DisplacementFilter": {
+    "defaultMultisample": {},
+    "defaultResolution": {}
+  },
   "DisplayObject": {
     "EventEmitter": {
       "EventEmitter": function () { },
@@ -471,6 +588,12 @@ var PIXI = {
   "Ellipse": function () { },
   "EventBoundary": function () { },
   "EventSystem": {
+    "defaultEventFeatures": {
+      "click": {},
+      "globalMove": {},
+      "move": {},
+      "wheel": {}
+    },
     "extension": {
       "name": {},
       "type": {}
@@ -532,20 +655,68 @@ var PIXI = {
     "6409": {},
     "6410": {}
   },
+  "FXAAFilter": {
+    "defaultMultisample": {},
+    "defaultResolution": {}
+  },
   "FederatedDisplayObject": {
+    "_internalEventMode": {},
+    "_internalInteractive": {},
     "addEventListener": function () { },
     "dispatchEvent": function () { },
+    "eventMode": {},
     "hitArea": {},
     "interactive": {},
     "interactiveChildren": {},
+    "isInteractive": function () { },
+    "onclick": {},
+    "onglobalmousemove": {},
+    "onglobalpointermove": {},
+    "onglobaltouchmove": {},
+    "onmousedown": {},
+    "onmouseenter": {},
+    "onmouseleave": {},
+    "onmousemove": {},
+    "onmouseout": {},
+    "onmouseover": {},
+    "onmouseup": {},
+    "onmouseupoutside": {},
+    "onpointercancel": {},
+    "onpointerdown": {},
+    "onpointerenter": {},
+    "onpointerleave": {},
+    "onpointermove": {},
+    "onpointerout": {},
+    "onpointerover": {},
+    "onpointertap": {},
+    "onpointerup": {},
+    "onpointerupoutside": {},
+    "onrightclick": {},
+    "onrightdown": {},
+    "onrightup": {},
+    "onrightupoutside": {},
+    "ontap": {},
+    "ontouchcancel": {},
+    "ontouchend": {},
+    "ontouchendoutside": {},
+    "ontouchmove": {},
+    "ontouchstart": {},
+    "onwheel": {},
     "removeEventListener": function () { }
   },
   "FederatedEvent": function () { },
   "FederatedMouseEvent": function () { },
   "FederatedPointerEvent": function () { },
-  "FederatedWheelEvent": function () { },
+  "FederatedWheelEvent": {
+    "DOM_DELTA_LINE": {},
+    "DOM_DELTA_PAGE": {},
+    "DOM_DELTA_PIXEL": {}
+  },
   "FillStyle": function () { },
-  "Filter": function () { },
+  "Filter": {
+    "defaultMultisample": {},
+    "defaultResolution": {}
+  },
   "FilterState": function () { },
   "FilterSystem": {
     "extension": {
@@ -599,11 +770,94 @@ var PIXI = {
       "x": {},
       "y": {}
     },
+    "curves": {
+      "_segmentsCount": function () { },
+      "adaptive": {},
+      "epsilon": {},
+      "maxLength": {},
+      "maxSegments": {},
+      "minSegments": {}
+    },
+    "defaultSortableChildren": {},
     "prefixed": {}
   },
   "GraphicsData": function () { },
   "GraphicsGeometry": {
     "BATCHABLE_SIZE": {}
+  },
+  "HTMLText": {
+    "EventEmitter": {
+      "EventEmitter": function () { },
+      "prefixed": {}
+    },
+    "defaultAutoResolution": {},
+    "defaultDestroyOptions": {
+      "baseTexture": {},
+      "children": {},
+      "texture": {}
+    },
+    "defaultMaxHeight": {},
+    "defaultMaxWidth": {},
+    "defaultSortableChildren": {},
+    "prefixed": {}
+  },
+  "HTMLTextStyle": {
+    "availableFonts": {},
+    "defaultOptions": {
+      "align": {},
+      "breakWords": {},
+      "dropShadow": {},
+      "dropShadowAlpha": {},
+      "dropShadowAngle": {},
+      "dropShadowBlur": {},
+      "dropShadowColor": {},
+      "dropShadowDistance": {},
+      "fill": {},
+      "fontFamily": {},
+      "fontSize": {},
+      "fontStyle": {},
+      "fontVariant": {},
+      "fontWeight": {},
+      "letterSpacing": {},
+      "lineHeight": {},
+      "padding": {},
+      "stroke": {},
+      "strokeThickness": {},
+      "whiteSpace": {},
+      "wordWrap": {},
+      "wordWrapWidth": {}
+    },
+    "defaultStyle": {
+      "align": {},
+      "breakWords": {},
+      "dropShadow": {},
+      "dropShadowAlpha": {},
+      "dropShadowAngle": {},
+      "dropShadowBlur": {},
+      "dropShadowColor": {},
+      "dropShadowDistance": {},
+      "fill": {},
+      "fillGradientStops": {},
+      "fillGradientType": {},
+      "fontFamily": {},
+      "fontSize": {},
+      "fontStyle": {},
+      "fontVariant": {},
+      "fontWeight": {},
+      "leading": {},
+      "letterSpacing": {},
+      "lineHeight": {},
+      "lineJoin": {},
+      "miterLimit": {},
+      "padding": {},
+      "stroke": {},
+      "strokeThickness": {},
+      "textBaseline": {},
+      "trim": {},
+      "whiteSpace": {},
+      "wordWrap": {},
+      "wordWrapWidth": {}
+    }
   },
   "IGLUniformData": function () { },
   "INSTALLED": {},
@@ -757,6 +1011,8 @@ var PIXI = {
       "EventEmitter": function () { },
       "prefixed": {}
     },
+    "defaultCanvasPadding": {},
+    "defaultSortableChildren": {},
     "prefixed": {}
   },
   "MeshBatchUvs": function () { },
@@ -774,7 +1030,13 @@ var PIXI = {
       "EventEmitter": function () { },
       "prefixed": {}
     },
+    "defaultCanvasPadding": {},
+    "defaultSortableChildren": {},
     "prefixed": {}
+  },
+  "NoiseFilter": {
+    "defaultMultisample": {},
+    "defaultResolution": {}
   },
   "ObjectRenderer": function () { },
   "ObjectRendererSystem": {
@@ -795,6 +1057,7 @@ var PIXI = {
       "EventEmitter": function () { },
       "prefixed": {}
     },
+    "defaultSortableChildren": {},
     "prefixed": {}
   },
   "ParticleRenderer": {
@@ -816,9 +1079,13 @@ var PIXI = {
     "extension": {
       "name": {},
       "type": {}
-    }
+    },
+    "uploadsPerFrame": {}
   },
-  "Program": function () { },
+  "Program": {
+    "defaultFragmentPrecision": {},
+    "defaultVertexPrecision": {}
+  },
   "ProjectionSystem": {
     "extension": {
       "name": {},
@@ -868,6 +1135,7 @@ var PIXI = {
       "batch": {
         "_drawCallPool": {},
         "_textureArrayPool": {},
+        "defaultBatchSize": {},
         "extension": {
           "name": {},
           "type": {}
@@ -900,12 +1168,23 @@ var PIXI = {
         }
       },
       "_view": {
+        "defaultOptions": {
+          "autoDensity": {},
+          "height": {},
+          "resolution": {},
+          "width": {}
+        },
         "extension": {
           "name": {},
           "type": {}
         }
       },
       "background": {
+        "defaultOptions": {
+          "backgroundAlpha": {},
+          "backgroundColor": {},
+          "clearBeforeRender": {}
+        },
         "extension": {
           "name": {},
           "type": {}
@@ -924,12 +1203,25 @@ var PIXI = {
         }
       },
       "context": {
+        "defaultOptions": {
+          "antialias": {},
+          "context": {},
+          "powerPreference": {},
+          "premultipliedAlpha": {},
+          "preserveDrawingBuffer": {}
+        },
         "extension": {
           "name": {},
           "type": {}
         }
       },
       "events": {
+        "defaultEventFeatures": {
+          "click": {},
+          "globalMove": {},
+          "move": {},
+          "wheel": {}
+        },
         "extension": {
           "name": {},
           "type": {}
@@ -975,7 +1267,8 @@ var PIXI = {
         "extension": {
           "name": {},
           "type": {}
-        }
+        },
+        "uploadsPerFrame": {}
       },
       "projection": {
         "extension": {
@@ -1002,6 +1295,9 @@ var PIXI = {
         }
       },
       "startup": {
+        "defaultOptions": {
+          "hello": {}
+        },
         "extension": {
           "name": {},
           "type": {}
@@ -1026,6 +1322,9 @@ var PIXI = {
         }
       },
       "textureGC": {
+        "defaultCheckCountMax": {},
+        "defaultMaxIdle": {},
+        "defaultMode": {},
         "extension": {
           "name": {},
           "type": {}
@@ -1106,6 +1405,8 @@ var PIXI = {
       "EventEmitter": function () { },
       "prefixed": {}
     },
+    "defaultCanvasPadding": {},
+    "defaultSortableChildren": {},
     "prefixed": {}
   },
   "SimplePlane": {
@@ -1114,6 +1415,8 @@ var PIXI = {
       "EventEmitter": function () { },
       "prefixed": {}
     },
+    "defaultCanvasPadding": {},
+    "defaultSortableChildren": {},
     "prefixed": {}
   },
   "SimpleRope": {
@@ -1122,6 +1425,8 @@ var PIXI = {
       "EventEmitter": function () { },
       "prefixed": {}
     },
+    "defaultCanvasPadding": {},
+    "defaultSortableChildren": {},
     "prefixed": {}
   },
   "Sprite": {
@@ -1129,13 +1434,20 @@ var PIXI = {
       "EventEmitter": function () { },
       "prefixed": {}
     },
+    "defaultSortableChildren": {},
     "prefixed": {}
   },
-  "SpriteMaskFilter": function () { },
+  "SpriteMaskFilter": {
+    "defaultMultisample": {},
+    "defaultResolution": {}
+  },
   "Spritesheet": {
     "BATCH_SIZE": {}
   },
   "StartupSystem": {
+    "defaultOptions": {
+      "hello": {}
+    },
     "extension": {
       "name": {},
       "type": {}
@@ -1246,7 +1558,8 @@ var PIXI = {
       "EventEmitter": function () { },
       "prefixed": {}
     },
-    "experimentalLetterSpacing": {},
+    "defaultAutoResolution": {},
+    "defaultSortableChildren": {},
     "prefixed": {}
   },
   "TextFormat": function () { },
@@ -1257,9 +1570,43 @@ var PIXI = {
     "METRICS_STRING": {},
     "_breakingSpaces": {},
     "_fonts": {},
-    "_newlines": {}
+    "_newlines": {},
+    "experimentalLetterSpacing": {},
+    "graphemeSegmenter": function () { }
   },
-  "TextStyle": function () { },
+  "TextStyle": {
+    "defaultStyle": {
+      "align": {},
+      "breakWords": {},
+      "dropShadow": {},
+      "dropShadowAlpha": {},
+      "dropShadowAngle": {},
+      "dropShadowBlur": {},
+      "dropShadowColor": {},
+      "dropShadowDistance": {},
+      "fill": {},
+      "fillGradientStops": {},
+      "fillGradientType": {},
+      "fontFamily": {},
+      "fontSize": {},
+      "fontStyle": {},
+      "fontVariant": {},
+      "fontWeight": {},
+      "leading": {},
+      "letterSpacing": {},
+      "lineHeight": {},
+      "lineJoin": {},
+      "miterLimit": {},
+      "padding": {},
+      "stroke": {},
+      "strokeThickness": {},
+      "textBaseline": {},
+      "trim": {},
+      "whiteSpace": {},
+      "wordWrap": {},
+      "wordWrapWidth": {}
+    }
+  },
   "Texture": {
     "EventEmitter": {
       "EventEmitter": function () { },
@@ -1268,6 +1615,9 @@ var PIXI = {
     "prefixed": {}
   },
   "TextureGCSystem": {
+    "defaultCheckCountMax": {},
+    "defaultMaxIdle": {},
+    "defaultMode": {},
     "extension": {
       "name": {},
       "type": {}
@@ -1281,7 +1631,9 @@ var PIXI = {
     }
   },
   "TextureUvs": function () { },
-  "Ticker": function () { },
+  "Ticker": {
+    "targetFPMS": {}
+  },
   "TickerPlugin": {
     "extension": {}
   },
@@ -1290,6 +1642,7 @@ var PIXI = {
       "EventEmitter": function () { },
       "prefixed": {}
     },
+    "defaultSortableChildren": {},
     "prefixed": {}
   },
   "TilingSpriteRenderer": {
@@ -1366,7 +1719,9 @@ var PIXI = {
     "-50": {},
     "0": {},
     "25": {},
+    "50": {},
     "HIGH": {},
+    "INTERACTION": {},
     "LOW": {},
     "NORMAL": {},
     "UTILITY": {}
@@ -1382,6 +1737,12 @@ var PIXI = {
     "TYPES": {}
   },
   "ViewSystem": {
+    "defaultOptions": {
+      "autoDensity": {},
+      "height": {},
+      "resolution": {},
+      "width": {}
+    },
     "extension": {
       "name": {},
       "type": {}
@@ -1436,9 +1797,18 @@ var PIXI = {
   "checkExtension": function () { },
   "checkMaxIfStatementsInShader": function () { },
   "convertToList": function () { },
+  "copySearchParams": function () { },
   "createStringVariations": function () { },
   "createTexture": function () { },
   "createUBOElements": function () { },
+  "curves": {
+    "_segmentsCount": function () { },
+    "adaptive": {},
+    "epsilon": {},
+    "maxLength": {},
+    "maxSegments": {},
+    "minSegments": {}
+  },
   "defaultFilterVertex": {},
   "defaultVertex": {},
   "detectAvif": {
@@ -1512,13 +1882,34 @@ var PIXI = {
     "remove": function () { }
   },
   "filters": {
-    "AlphaFilter": function () { },
-    "BlurFilter": function () { },
-    "BlurFilterPass": function () { },
-    "ColorMatrixFilter": function () { },
-    "DisplacementFilter": function () { },
-    "FXAAFilter": function () { },
-    "NoiseFilter": function () { }
+    "AlphaFilter": {
+      "defaultMultisample": {},
+      "defaultResolution": {}
+    },
+    "BlurFilter": {
+      "defaultMultisample": {},
+      "defaultResolution": {}
+    },
+    "BlurFilterPass": {
+      "defaultMultisample": {},
+      "defaultResolution": {}
+    },
+    "ColorMatrixFilter": {
+      "defaultMultisample": {},
+      "defaultResolution": {}
+    },
+    "DisplacementFilter": {
+      "defaultMultisample": {},
+      "defaultResolution": {}
+    },
+    "FXAAFilter": {
+      "defaultMultisample": {},
+      "defaultResolution": {}
+    },
+    "NoiseFilter": {
+      "defaultMultisample": {},
+      "defaultResolution": {}
+    }
   },
   "generateProgram": function () { },
   "generateUniformBufferSync": function () { },
@@ -1639,6 +2030,7 @@ var PIXI = {
       "type": {}
     },
     "load": function () { },
+    "name": {},
     "parse": function () { },
     "test": function () { },
     "testParse": function () { },
@@ -1650,6 +2042,7 @@ var PIXI = {
       "type": {}
     },
     "load": function () { },
+    "name": {},
     "test": function () { },
     "unload": function () { }
   },
@@ -1660,6 +2053,7 @@ var PIXI = {
       "type": {}
     },
     "load": function () { },
+    "name": {},
     "test": function () { }
   },
   "loadKTX": {
@@ -1668,6 +2062,7 @@ var PIXI = {
       "type": {}
     },
     "load": function () { },
+    "name": {},
     "test": function () { },
     "unload": function () { }
   },
@@ -1677,6 +2072,7 @@ var PIXI = {
       "type": {}
     },
     "load": function () { },
+    "name": {},
     "parse": function () { },
     "test": function () { },
     "testParse": function () { },
@@ -1684,6 +2080,8 @@ var PIXI = {
   },
   "loadTextures": {
     "config": {
+      "crossOrigin": {},
+      "preferCreateImageBitmap": {},
       "preferWorkers": {}
     },
     "extension": {
@@ -1691,6 +2089,7 @@ var PIXI = {
       "type": {}
     },
     "load": function () { },
+    "name": {},
     "test": function () { },
     "unload": function () { }
   },
@@ -1700,6 +2099,7 @@ var PIXI = {
       "type": {}
     },
     "load": function () { },
+    "name": {},
     "test": function () { }
   },
   "loadWebFont": {
@@ -1708,6 +2108,7 @@ var PIXI = {
       "type": {}
     },
     "load": function () { },
+    "name": {},
     "test": function () { },
     "unload": function () { }
   },
@@ -1728,24 +2129,14 @@ var PIXI = {
       "createCanvas": function () { },
       "fetch": function () { },
       "getBaseUrl": function () { },
+      "getCanvasRenderingContext2D": function () { },
       "getFontFaceSet": function () { },
       "getNavigator": function () { },
       "getWebGLRenderingContext": function () { },
       "parseXML": function () { }
     },
-    "ANISOTROPIC_LEVEL": {},
-    "CAN_UPLOAD_SAME_BUFFER": {},
     "CREATE_IMAGE_BITMAP": {},
     "FAIL_IF_MAJOR_PERFORMANCE_CAVEAT": {},
-    "FILTER_MULTISAMPLE": {},
-    "FILTER_RESOLUTION": {},
-    "GC_MAX_CHECK_COUNT": {},
-    "GC_MAX_IDLE": {},
-    "GC_MODE": {},
-    "MESH_CANVAS_PADDING": {},
-    "MIPMAP_TEXTURES": {},
-    "PRECISION_FRAGMENT": {},
-    "PRECISION_VERTEX": {},
     "PREFER_ENV": {},
     "RENDER_OPTIONS": {
       "antialias": {},
@@ -1753,25 +2144,19 @@ var PIXI = {
       "backgroundAlpha": {},
       "backgroundColor": {},
       "clearBeforeRender": {},
+      "context": {},
       "height": {},
       "hello": {},
-      "legacy": {},
+      "powerPreference": {},
       "premultipliedAlpha": {},
       "preserveDrawingBuffer": {},
-      "view": {},
+      "resolution": {},
       "width": {}
     },
     "RESOLUTION": {},
     "RETINA_PREFIX": {},
     "ROUND_PIXELS": {},
-    "SCALE_MODE": {},
-    "SORTABLE_CHILDREN": {},
-    "SPRITE_BATCH_SIZE": {},
-    "SPRITE_MAX_TEXTURES": {},
-    "STRICT_TEXTURE_CACHE": {},
-    "TARGET_FPMS": {},
-    "UPLOADS_PER_FRAME": {},
-    "WRAP_MODE": {}
+    "STRICT_TEXTURE_CACHE": {}
   },
   "spritesheetAsset": {
     "cache": {
@@ -1785,6 +2170,7 @@ var PIXI = {
         "priority": {},
         "type": {}
       },
+      "name": {},
       "parse": function () { },
       "testParse": function () { },
       "unload": function () { }
@@ -1796,8 +2182,17 @@ var PIXI = {
     }
   },
   "uniformParsers": {},
+  "unsafeEvalSupported": function () { },
   "utils": {
     "BaseTextureCache": {},
+    "BoundingBox": {
+      "EMPTY": {
+        "bottom": {},
+        "left": {},
+        "right": {},
+        "top": {}
+      }
+    },
     "CanvasRenderTarget": function () { },
     "DATA_URI": {},
     "EventEmitter": {
@@ -1819,6 +2214,7 @@ var PIXI = {
       "flatten": function () { }
     },
     "getBufferType": function () { },
+    "getCanvasBoundingBox": function () { },
     "getResolutionOfUrl": function () { },
     "hex2rgb": function () { },
     "hex2string": function () { },
@@ -1912,6 +2308,8 @@ PIXI.AnimatedSprite.prototype = {
   "_getCachedLocalBounds": function () { },
   "_initCachedDisplayObject": function () { },
   "_initCachedDisplayObjectCanvas": function () { },
+  "_internalEventMode": function () { },
+  "_internalInteractive": function () { },
   "_renderCached": function () { },
   "_renderCachedCanvas": function () { },
   "_renderCanvas": function () { },
@@ -1928,18 +2326,53 @@ PIXI.AnimatedSprite.prototype = {
   "dispatchEvent": function () { },
   "displayObjectUpdateTransform": function () { },
   "emit": function () { },
+  "eventMode": function () { },
   "eventNames": function () { },
   "getChildByName": function () { },
   "getGlobalPosition": function () { },
   "hitArea": function () { },
   "interactive": function () { },
   "interactiveChildren": function () { },
+  "isInteractive": function () { },
   "listenerCount": function () { },
   "listeners": function () { },
   "name": function () { },
   "off": function () { },
   "on": function () { },
   "once": function () { },
+  "onclick": function () { },
+  "onglobalmousemove": function () { },
+  "onglobalpointermove": function () { },
+  "onglobaltouchmove": function () { },
+  "onmousedown": function () { },
+  "onmouseenter": function () { },
+  "onmouseleave": function () { },
+  "onmousemove": function () { },
+  "onmouseout": function () { },
+  "onmouseover": function () { },
+  "onmouseup": function () { },
+  "onmouseupoutside": function () { },
+  "onpointercancel": function () { },
+  "onpointerdown": function () { },
+  "onpointerenter": function () { },
+  "onpointerleave": function () { },
+  "onpointermove": function () { },
+  "onpointerout": function () { },
+  "onpointerover": function () { },
+  "onpointertap": function () { },
+  "onpointerup": function () { },
+  "onpointerupoutside": function () { },
+  "onrightclick": function () { },
+  "onrightdown": function () { },
+  "onrightup": function () { },
+  "onrightupoutside": function () { },
+  "ontap": function () { },
+  "ontouchcancel": function () { },
+  "ontouchend": function () { },
+  "ontouchendoutside": function () { },
+  "ontouchmove": function () { },
+  "ontouchstart": function () { },
+  "onwheel": function () { },
   "removeAllListeners": function () { },
   "removeEventListener": function () { },
   "removeListener": function () { },
@@ -2023,6 +2456,8 @@ PIXI.BitmapText.prototype = {
   "_getCachedLocalBounds": function () { },
   "_initCachedDisplayObject": function () { },
   "_initCachedDisplayObjectCanvas": function () { },
+  "_internalEventMode": function () { },
+  "_internalInteractive": function () { },
   "_renderCached": function () { },
   "_renderCachedCanvas": function () { },
   "_renderCanvas": function () { },
@@ -2038,18 +2473,53 @@ PIXI.BitmapText.prototype = {
   "dispatchEvent": function () { },
   "displayObjectUpdateTransform": function () { },
   "emit": function () { },
+  "eventMode": function () { },
   "eventNames": function () { },
   "getChildByName": function () { },
   "getGlobalPosition": function () { },
   "hitArea": function () { },
   "interactive": function () { },
   "interactiveChildren": function () { },
+  "isInteractive": function () { },
   "listenerCount": function () { },
   "listeners": function () { },
   "name": function () { },
   "off": function () { },
   "on": function () { },
   "once": function () { },
+  "onclick": function () { },
+  "onglobalmousemove": function () { },
+  "onglobalpointermove": function () { },
+  "onglobaltouchmove": function () { },
+  "onmousedown": function () { },
+  "onmouseenter": function () { },
+  "onmouseleave": function () { },
+  "onmousemove": function () { },
+  "onmouseout": function () { },
+  "onmouseover": function () { },
+  "onmouseup": function () { },
+  "onmouseupoutside": function () { },
+  "onpointercancel": function () { },
+  "onpointerdown": function () { },
+  "onpointerenter": function () { },
+  "onpointerleave": function () { },
+  "onpointermove": function () { },
+  "onpointerout": function () { },
+  "onpointerover": function () { },
+  "onpointertap": function () { },
+  "onpointerup": function () { },
+  "onpointerupoutside": function () { },
+  "onrightclick": function () { },
+  "onrightdown": function () { },
+  "onrightup": function () { },
+  "onrightupoutside": function () { },
+  "ontap": function () { },
+  "ontouchcancel": function () { },
+  "ontouchend": function () { },
+  "ontouchendoutside": function () { },
+  "ontouchmove": function () { },
+  "ontouchstart": function () { },
+  "onwheel": function () { },
   "removeAllListeners": function () { },
   "removeEventListener": function () { },
   "removeListener": function () { },
@@ -2093,6 +2563,9 @@ PIXI.CanvasRenderer.EventEmitter.prototype = {
   "removeAllListeners": function () { },
   "removeListener": function () { }
 };
+PIXI.ColorMatrixFilter.prototype = {
+  "grayscale": function () { }
+};
 PIXI.Container.prototype = {
   "_accessibleActive": function () { },
   "_accessibleDiv": function () { },
@@ -2106,6 +2579,8 @@ PIXI.Container.prototype = {
   "_getCachedLocalBounds": function () { },
   "_initCachedDisplayObject": function () { },
   "_initCachedDisplayObjectCanvas": function () { },
+  "_internalEventMode": function () { },
+  "_internalInteractive": function () { },
   "_renderCached": function () { },
   "_renderCachedCanvas": function () { },
   "_renderCanvas": function () { },
@@ -2121,18 +2596,53 @@ PIXI.Container.prototype = {
   "dispatchEvent": function () { },
   "displayObjectUpdateTransform": function () { },
   "emit": function () { },
+  "eventMode": function () { },
   "eventNames": function () { },
   "getChildByName": function () { },
   "getGlobalPosition": function () { },
   "hitArea": function () { },
   "interactive": function () { },
   "interactiveChildren": function () { },
+  "isInteractive": function () { },
   "listenerCount": function () { },
   "listeners": function () { },
   "name": function () { },
   "off": function () { },
   "on": function () { },
   "once": function () { },
+  "onclick": function () { },
+  "onglobalmousemove": function () { },
+  "onglobalpointermove": function () { },
+  "onglobaltouchmove": function () { },
+  "onmousedown": function () { },
+  "onmouseenter": function () { },
+  "onmouseleave": function () { },
+  "onmousemove": function () { },
+  "onmouseout": function () { },
+  "onmouseover": function () { },
+  "onmouseup": function () { },
+  "onmouseupoutside": function () { },
+  "onpointercancel": function () { },
+  "onpointerdown": function () { },
+  "onpointerenter": function () { },
+  "onpointerleave": function () { },
+  "onpointermove": function () { },
+  "onpointerout": function () { },
+  "onpointerover": function () { },
+  "onpointertap": function () { },
+  "onpointerup": function () { },
+  "onpointerupoutside": function () { },
+  "onrightclick": function () { },
+  "onrightdown": function () { },
+  "onrightup": function () { },
+  "onrightupoutside": function () { },
+  "ontap": function () { },
+  "ontouchcancel": function () { },
+  "ontouchend": function () { },
+  "ontouchendoutside": function () { },
+  "ontouchmove": function () { },
+  "ontouchstart": function () { },
+  "onwheel": function () { },
   "removeAllListeners": function () { },
   "removeEventListener": function () { },
   "removeListener": function () { },
@@ -2165,6 +2675,8 @@ PIXI.DisplayObject.prototype = {
   "_getCachedLocalBounds": function () { },
   "_initCachedDisplayObject": function () { },
   "_initCachedDisplayObjectCanvas": function () { },
+  "_internalEventMode": function () { },
+  "_internalInteractive": function () { },
   "_renderCached": function () { },
   "_renderCachedCanvas": function () { },
   "accessible": function () { },
@@ -2178,17 +2690,52 @@ PIXI.DisplayObject.prototype = {
   "dispatchEvent": function () { },
   "displayObjectUpdateTransform": function () { },
   "emit": function () { },
+  "eventMode": function () { },
   "eventNames": function () { },
   "getGlobalPosition": function () { },
   "hitArea": function () { },
   "interactive": function () { },
   "interactiveChildren": function () { },
+  "isInteractive": function () { },
   "listenerCount": function () { },
   "listeners": function () { },
   "name": function () { },
   "off": function () { },
   "on": function () { },
   "once": function () { },
+  "onclick": function () { },
+  "onglobalmousemove": function () { },
+  "onglobalpointermove": function () { },
+  "onglobaltouchmove": function () { },
+  "onmousedown": function () { },
+  "onmouseenter": function () { },
+  "onmouseleave": function () { },
+  "onmousemove": function () { },
+  "onmouseout": function () { },
+  "onmouseover": function () { },
+  "onmouseup": function () { },
+  "onmouseupoutside": function () { },
+  "onpointercancel": function () { },
+  "onpointerdown": function () { },
+  "onpointerenter": function () { },
+  "onpointerleave": function () { },
+  "onpointermove": function () { },
+  "onpointerout": function () { },
+  "onpointerover": function () { },
+  "onpointertap": function () { },
+  "onpointerup": function () { },
+  "onpointerupoutside": function () { },
+  "onrightclick": function () { },
+  "onrightdown": function () { },
+  "onrightup": function () { },
+  "onrightupoutside": function () { },
+  "ontap": function () { },
+  "ontouchcancel": function () { },
+  "ontouchend": function () { },
+  "ontouchendoutside": function () { },
+  "ontouchmove": function () { },
+  "ontouchstart": function () { },
+  "onwheel": function () { },
   "removeAllListeners": function () { },
   "removeEventListener": function () { },
   "removeListener": function () { },
@@ -2221,6 +2768,8 @@ PIXI.Graphics.prototype = {
   "_getCachedLocalBounds": function () { },
   "_initCachedDisplayObject": function () { },
   "_initCachedDisplayObjectCanvas": function () { },
+  "_internalEventMode": function () { },
+  "_internalInteractive": function () { },
   "_renderCached": function () { },
   "_renderCachedCanvas": function () { },
   "_renderCanvas": function () { },
@@ -2237,6 +2786,7 @@ PIXI.Graphics.prototype = {
   "dispatchEvent": function () { },
   "displayObjectUpdateTransform": function () { },
   "emit": function () { },
+  "eventMode": function () { },
   "eventNames": function () { },
   "generateCanvasTexture": function () { },
   "getChildByName": function () { },
@@ -2244,12 +2794,46 @@ PIXI.Graphics.prototype = {
   "hitArea": function () { },
   "interactive": function () { },
   "interactiveChildren": function () { },
+  "isInteractive": function () { },
   "listenerCount": function () { },
   "listeners": function () { },
   "name": function () { },
   "off": function () { },
   "on": function () { },
   "once": function () { },
+  "onclick": function () { },
+  "onglobalmousemove": function () { },
+  "onglobalpointermove": function () { },
+  "onglobaltouchmove": function () { },
+  "onmousedown": function () { },
+  "onmouseenter": function () { },
+  "onmouseleave": function () { },
+  "onmousemove": function () { },
+  "onmouseout": function () { },
+  "onmouseover": function () { },
+  "onmouseup": function () { },
+  "onmouseupoutside": function () { },
+  "onpointercancel": function () { },
+  "onpointerdown": function () { },
+  "onpointerenter": function () { },
+  "onpointerleave": function () { },
+  "onpointermove": function () { },
+  "onpointerout": function () { },
+  "onpointerover": function () { },
+  "onpointertap": function () { },
+  "onpointerup": function () { },
+  "onpointerupoutside": function () { },
+  "onrightclick": function () { },
+  "onrightdown": function () { },
+  "onrightup": function () { },
+  "onrightupoutside": function () { },
+  "ontap": function () { },
+  "ontouchcancel": function () { },
+  "ontouchend": function () { },
+  "ontouchendoutside": function () { },
+  "ontouchmove": function () { },
+  "ontouchstart": function () { },
+  "onwheel": function () { },
   "removeAllListeners": function () { },
   "removeEventListener": function () { },
   "removeListener": function () { },
@@ -2258,6 +2842,102 @@ PIXI.Graphics.prototype = {
   "tabIndex": function () { }
 };
 PIXI.Graphics.EventEmitter.prototype = {
+  "addListener": function () { },
+  "emit": function () { },
+  "eventNames": function () { },
+  "listenerCount": function () { },
+  "listeners": function () { },
+  "off": function () { },
+  "on": function () { },
+  "once": function () { },
+  "removeAllListeners": function () { },
+  "removeListener": function () { }
+};
+PIXI.HTMLText.prototype = {
+  "_accessibleActive": function () { },
+  "_accessibleDiv": function () { },
+  "_cacheAsBitmap": function () { },
+  "_cacheAsBitmapDestroy": function () { },
+  "_cacheAsBitmapMultisample": function () { },
+  "_cacheAsBitmapResolution": function () { },
+  "_cacheData": function () { },
+  "_calculateCachedBounds": function () { },
+  "_destroyCachedDisplayObject": function () { },
+  "_getCachedLocalBounds": function () { },
+  "_initCachedDisplayObject": function () { },
+  "_initCachedDisplayObjectCanvas": function () { },
+  "_internalEventMode": function () { },
+  "_internalInteractive": function () { },
+  "_renderCached": function () { },
+  "_renderCachedCanvas": function () { },
+  "_tintedCanvas": function () { },
+  "accessible": function () { },
+  "accessibleChildren": function () { },
+  "accessibleHint": function () { },
+  "accessiblePointerEvents": function () { },
+  "accessibleTitle": function () { },
+  "accessibleType": function () { },
+  "addEventListener": function () { },
+  "addListener": function () { },
+  "containerUpdateTransform": function () { },
+  "dispatchEvent": function () { },
+  "displayObjectUpdateTransform": function () { },
+  "emit": function () { },
+  "eventMode": function () { },
+  "eventNames": function () { },
+  "getChildByName": function () { },
+  "getGlobalPosition": function () { },
+  "hitArea": function () { },
+  "interactive": function () { },
+  "interactiveChildren": function () { },
+  "isInteractive": function () { },
+  "listenerCount": function () { },
+  "listeners": function () { },
+  "name": function () { },
+  "off": function () { },
+  "on": function () { },
+  "once": function () { },
+  "onclick": function () { },
+  "onglobalmousemove": function () { },
+  "onglobalpointermove": function () { },
+  "onglobaltouchmove": function () { },
+  "onmousedown": function () { },
+  "onmouseenter": function () { },
+  "onmouseleave": function () { },
+  "onmousemove": function () { },
+  "onmouseout": function () { },
+  "onmouseover": function () { },
+  "onmouseup": function () { },
+  "onmouseupoutside": function () { },
+  "onpointercancel": function () { },
+  "onpointerdown": function () { },
+  "onpointerenter": function () { },
+  "onpointerleave": function () { },
+  "onpointermove": function () { },
+  "onpointerout": function () { },
+  "onpointerover": function () { },
+  "onpointertap": function () { },
+  "onpointerup": function () { },
+  "onpointerupoutside": function () { },
+  "onrightclick": function () { },
+  "onrightdown": function () { },
+  "onrightup": function () { },
+  "onrightupoutside": function () { },
+  "ontap": function () { },
+  "ontouchcancel": function () { },
+  "ontouchend": function () { },
+  "ontouchendoutside": function () { },
+  "ontouchmove": function () { },
+  "ontouchstart": function () { },
+  "onwheel": function () { },
+  "removeAllListeners": function () { },
+  "removeEventListener": function () { },
+  "removeListener": function () { },
+  "renderCanvas": function () { },
+  "renderId": function () { },
+  "tabIndex": function () { }
+};
+PIXI.HTMLText.EventEmitter.prototype = {
   "addListener": function () { },
   "emit": function () { },
   "eventNames": function () { },
@@ -2285,6 +2965,8 @@ PIXI.Mesh.prototype = {
   "_getCachedLocalBounds": function () { },
   "_initCachedDisplayObject": function () { },
   "_initCachedDisplayObjectCanvas": function () { },
+  "_internalEventMode": function () { },
+  "_internalInteractive": function () { },
   "_renderCached": function () { },
   "_renderCachedCanvas": function () { },
   "_renderCanvas": function () { },
@@ -2301,18 +2983,53 @@ PIXI.Mesh.prototype = {
   "dispatchEvent": function () { },
   "displayObjectUpdateTransform": function () { },
   "emit": function () { },
+  "eventMode": function () { },
   "eventNames": function () { },
   "getChildByName": function () { },
   "getGlobalPosition": function () { },
   "hitArea": function () { },
   "interactive": function () { },
   "interactiveChildren": function () { },
+  "isInteractive": function () { },
   "listenerCount": function () { },
   "listeners": function () { },
   "name": function () { },
   "off": function () { },
   "on": function () { },
   "once": function () { },
+  "onclick": function () { },
+  "onglobalmousemove": function () { },
+  "onglobalpointermove": function () { },
+  "onglobaltouchmove": function () { },
+  "onmousedown": function () { },
+  "onmouseenter": function () { },
+  "onmouseleave": function () { },
+  "onmousemove": function () { },
+  "onmouseout": function () { },
+  "onmouseover": function () { },
+  "onmouseup": function () { },
+  "onmouseupoutside": function () { },
+  "onpointercancel": function () { },
+  "onpointerdown": function () { },
+  "onpointerenter": function () { },
+  "onpointerleave": function () { },
+  "onpointermove": function () { },
+  "onpointerout": function () { },
+  "onpointerover": function () { },
+  "onpointertap": function () { },
+  "onpointerup": function () { },
+  "onpointerupoutside": function () { },
+  "onrightclick": function () { },
+  "onrightdown": function () { },
+  "onrightup": function () { },
+  "onrightupoutside": function () { },
+  "ontap": function () { },
+  "ontouchcancel": function () { },
+  "ontouchend": function () { },
+  "ontouchendoutside": function () { },
+  "ontouchmove": function () { },
+  "ontouchstart": function () { },
+  "onwheel": function () { },
   "removeAllListeners": function () { },
   "removeEventListener": function () { },
   "removeListener": function () { },
@@ -2352,6 +3069,8 @@ PIXI.NineSlicePlane.prototype = {
   "_getCachedLocalBounds": function () { },
   "_initCachedDisplayObject": function () { },
   "_initCachedDisplayObjectCanvas": function () { },
+  "_internalEventMode": function () { },
+  "_internalInteractive": function () { },
   "_renderCached": function () { },
   "_renderCachedCanvas": function () { },
   "_renderCanvas": function () { },
@@ -2368,18 +3087,53 @@ PIXI.NineSlicePlane.prototype = {
   "dispatchEvent": function () { },
   "displayObjectUpdateTransform": function () { },
   "emit": function () { },
+  "eventMode": function () { },
   "eventNames": function () { },
   "getChildByName": function () { },
   "getGlobalPosition": function () { },
   "hitArea": function () { },
   "interactive": function () { },
   "interactiveChildren": function () { },
+  "isInteractive": function () { },
   "listenerCount": function () { },
   "listeners": function () { },
   "name": function () { },
   "off": function () { },
   "on": function () { },
   "once": function () { },
+  "onclick": function () { },
+  "onglobalmousemove": function () { },
+  "onglobalpointermove": function () { },
+  "onglobaltouchmove": function () { },
+  "onmousedown": function () { },
+  "onmouseenter": function () { },
+  "onmouseleave": function () { },
+  "onmousemove": function () { },
+  "onmouseout": function () { },
+  "onmouseover": function () { },
+  "onmouseup": function () { },
+  "onmouseupoutside": function () { },
+  "onpointercancel": function () { },
+  "onpointerdown": function () { },
+  "onpointerenter": function () { },
+  "onpointerleave": function () { },
+  "onpointermove": function () { },
+  "onpointerout": function () { },
+  "onpointerover": function () { },
+  "onpointertap": function () { },
+  "onpointerup": function () { },
+  "onpointerupoutside": function () { },
+  "onrightclick": function () { },
+  "onrightdown": function () { },
+  "onrightup": function () { },
+  "onrightupoutside": function () { },
+  "ontap": function () { },
+  "ontouchcancel": function () { },
+  "ontouchend": function () { },
+  "ontouchendoutside": function () { },
+  "ontouchmove": function () { },
+  "ontouchstart": function () { },
+  "onwheel": function () { },
   "removeAllListeners": function () { },
   "removeEventListener": function () { },
   "removeListener": function () { },
@@ -2412,6 +3166,8 @@ PIXI.ParticleContainer.prototype = {
   "_getCachedLocalBounds": function () { },
   "_initCachedDisplayObject": function () { },
   "_initCachedDisplayObjectCanvas": function () { },
+  "_internalEventMode": function () { },
+  "_internalInteractive": function () { },
   "_renderCached": function () { },
   "_renderCachedCanvas": function () { },
   "_renderCanvas": function () { },
@@ -2427,18 +3183,53 @@ PIXI.ParticleContainer.prototype = {
   "dispatchEvent": function () { },
   "displayObjectUpdateTransform": function () { },
   "emit": function () { },
+  "eventMode": function () { },
   "eventNames": function () { },
   "getChildByName": function () { },
   "getGlobalPosition": function () { },
   "hitArea": function () { },
   "interactive": function () { },
   "interactiveChildren": function () { },
+  "isInteractive": function () { },
   "listenerCount": function () { },
   "listeners": function () { },
   "name": function () { },
   "off": function () { },
   "on": function () { },
   "once": function () { },
+  "onclick": function () { },
+  "onglobalmousemove": function () { },
+  "onglobalpointermove": function () { },
+  "onglobaltouchmove": function () { },
+  "onmousedown": function () { },
+  "onmouseenter": function () { },
+  "onmouseleave": function () { },
+  "onmousemove": function () { },
+  "onmouseout": function () { },
+  "onmouseover": function () { },
+  "onmouseup": function () { },
+  "onmouseupoutside": function () { },
+  "onpointercancel": function () { },
+  "onpointerdown": function () { },
+  "onpointerenter": function () { },
+  "onpointerleave": function () { },
+  "onpointermove": function () { },
+  "onpointerout": function () { },
+  "onpointerover": function () { },
+  "onpointertap": function () { },
+  "onpointerup": function () { },
+  "onpointerupoutside": function () { },
+  "onrightclick": function () { },
+  "onrightdown": function () { },
+  "onrightup": function () { },
+  "onrightupoutside": function () { },
+  "ontap": function () { },
+  "ontouchcancel": function () { },
+  "ontouchend": function () { },
+  "ontouchendoutside": function () { },
+  "ontouchmove": function () { },
+  "ontouchstart": function () { },
+  "onwheel": function () { },
   "removeAllListeners": function () { },
   "removeEventListener": function () { },
   "removeListener": function () { },
@@ -2524,6 +3315,8 @@ PIXI.SimpleMesh.prototype = {
   "_getCachedLocalBounds": function () { },
   "_initCachedDisplayObject": function () { },
   "_initCachedDisplayObjectCanvas": function () { },
+  "_internalEventMode": function () { },
+  "_internalInteractive": function () { },
   "_renderCached": function () { },
   "_renderCachedCanvas": function () { },
   "_renderCanvas": function () { },
@@ -2540,18 +3333,53 @@ PIXI.SimpleMesh.prototype = {
   "dispatchEvent": function () { },
   "displayObjectUpdateTransform": function () { },
   "emit": function () { },
+  "eventMode": function () { },
   "eventNames": function () { },
   "getChildByName": function () { },
   "getGlobalPosition": function () { },
   "hitArea": function () { },
   "interactive": function () { },
   "interactiveChildren": function () { },
+  "isInteractive": function () { },
   "listenerCount": function () { },
   "listeners": function () { },
   "name": function () { },
   "off": function () { },
   "on": function () { },
   "once": function () { },
+  "onclick": function () { },
+  "onglobalmousemove": function () { },
+  "onglobalpointermove": function () { },
+  "onglobaltouchmove": function () { },
+  "onmousedown": function () { },
+  "onmouseenter": function () { },
+  "onmouseleave": function () { },
+  "onmousemove": function () { },
+  "onmouseout": function () { },
+  "onmouseover": function () { },
+  "onmouseup": function () { },
+  "onmouseupoutside": function () { },
+  "onpointercancel": function () { },
+  "onpointerdown": function () { },
+  "onpointerenter": function () { },
+  "onpointerleave": function () { },
+  "onpointermove": function () { },
+  "onpointerout": function () { },
+  "onpointerover": function () { },
+  "onpointertap": function () { },
+  "onpointerup": function () { },
+  "onpointerupoutside": function () { },
+  "onrightclick": function () { },
+  "onrightdown": function () { },
+  "onrightup": function () { },
+  "onrightupoutside": function () { },
+  "ontap": function () { },
+  "ontouchcancel": function () { },
+  "ontouchend": function () { },
+  "ontouchendoutside": function () { },
+  "ontouchmove": function () { },
+  "ontouchstart": function () { },
+  "onwheel": function () { },
   "removeAllListeners": function () { },
   "removeEventListener": function () { },
   "removeListener": function () { },
@@ -2587,6 +3415,8 @@ PIXI.SimplePlane.prototype = {
   "_getCachedLocalBounds": function () { },
   "_initCachedDisplayObject": function () { },
   "_initCachedDisplayObjectCanvas": function () { },
+  "_internalEventMode": function () { },
+  "_internalInteractive": function () { },
   "_renderCached": function () { },
   "_renderCachedCanvas": function () { },
   "_renderCanvas": function () { },
@@ -2603,18 +3433,53 @@ PIXI.SimplePlane.prototype = {
   "dispatchEvent": function () { },
   "displayObjectUpdateTransform": function () { },
   "emit": function () { },
+  "eventMode": function () { },
   "eventNames": function () { },
   "getChildByName": function () { },
   "getGlobalPosition": function () { },
   "hitArea": function () { },
   "interactive": function () { },
   "interactiveChildren": function () { },
+  "isInteractive": function () { },
   "listenerCount": function () { },
   "listeners": function () { },
   "name": function () { },
   "off": function () { },
   "on": function () { },
   "once": function () { },
+  "onclick": function () { },
+  "onglobalmousemove": function () { },
+  "onglobalpointermove": function () { },
+  "onglobaltouchmove": function () { },
+  "onmousedown": function () { },
+  "onmouseenter": function () { },
+  "onmouseleave": function () { },
+  "onmousemove": function () { },
+  "onmouseout": function () { },
+  "onmouseover": function () { },
+  "onmouseup": function () { },
+  "onmouseupoutside": function () { },
+  "onpointercancel": function () { },
+  "onpointerdown": function () { },
+  "onpointerenter": function () { },
+  "onpointerleave": function () { },
+  "onpointermove": function () { },
+  "onpointerout": function () { },
+  "onpointerover": function () { },
+  "onpointertap": function () { },
+  "onpointerup": function () { },
+  "onpointerupoutside": function () { },
+  "onrightclick": function () { },
+  "onrightdown": function () { },
+  "onrightup": function () { },
+  "onrightupoutside": function () { },
+  "ontap": function () { },
+  "ontouchcancel": function () { },
+  "ontouchend": function () { },
+  "ontouchendoutside": function () { },
+  "ontouchmove": function () { },
+  "ontouchstart": function () { },
+  "onwheel": function () { },
   "removeAllListeners": function () { },
   "removeEventListener": function () { },
   "removeListener": function () { },
@@ -2650,6 +3515,8 @@ PIXI.SimpleRope.prototype = {
   "_getCachedLocalBounds": function () { },
   "_initCachedDisplayObject": function () { },
   "_initCachedDisplayObjectCanvas": function () { },
+  "_internalEventMode": function () { },
+  "_internalInteractive": function () { },
   "_renderCached": function () { },
   "_renderCachedCanvas": function () { },
   "_renderCanvas": function () { },
@@ -2666,18 +3533,53 @@ PIXI.SimpleRope.prototype = {
   "dispatchEvent": function () { },
   "displayObjectUpdateTransform": function () { },
   "emit": function () { },
+  "eventMode": function () { },
   "eventNames": function () { },
   "getChildByName": function () { },
   "getGlobalPosition": function () { },
   "hitArea": function () { },
   "interactive": function () { },
   "interactiveChildren": function () { },
+  "isInteractive": function () { },
   "listenerCount": function () { },
   "listeners": function () { },
   "name": function () { },
   "off": function () { },
   "on": function () { },
   "once": function () { },
+  "onclick": function () { },
+  "onglobalmousemove": function () { },
+  "onglobalpointermove": function () { },
+  "onglobaltouchmove": function () { },
+  "onmousedown": function () { },
+  "onmouseenter": function () { },
+  "onmouseleave": function () { },
+  "onmousemove": function () { },
+  "onmouseout": function () { },
+  "onmouseover": function () { },
+  "onmouseup": function () { },
+  "onmouseupoutside": function () { },
+  "onpointercancel": function () { },
+  "onpointerdown": function () { },
+  "onpointerenter": function () { },
+  "onpointerleave": function () { },
+  "onpointermove": function () { },
+  "onpointerout": function () { },
+  "onpointerover": function () { },
+  "onpointertap": function () { },
+  "onpointerup": function () { },
+  "onpointerupoutside": function () { },
+  "onrightclick": function () { },
+  "onrightdown": function () { },
+  "onrightup": function () { },
+  "onrightupoutside": function () { },
+  "ontap": function () { },
+  "ontouchcancel": function () { },
+  "ontouchend": function () { },
+  "ontouchendoutside": function () { },
+  "ontouchmove": function () { },
+  "ontouchstart": function () { },
+  "onwheel": function () { },
   "removeAllListeners": function () { },
   "removeEventListener": function () { },
   "removeListener": function () { },
@@ -2710,6 +3612,8 @@ PIXI.Sprite.prototype = {
   "_getCachedLocalBounds": function () { },
   "_initCachedDisplayObject": function () { },
   "_initCachedDisplayObjectCanvas": function () { },
+  "_internalEventMode": function () { },
+  "_internalInteractive": function () { },
   "_renderCached": function () { },
   "_renderCachedCanvas": function () { },
   "_renderCanvas": function () { },
@@ -2726,18 +3630,53 @@ PIXI.Sprite.prototype = {
   "dispatchEvent": function () { },
   "displayObjectUpdateTransform": function () { },
   "emit": function () { },
+  "eventMode": function () { },
   "eventNames": function () { },
   "getChildByName": function () { },
   "getGlobalPosition": function () { },
   "hitArea": function () { },
   "interactive": function () { },
   "interactiveChildren": function () { },
+  "isInteractive": function () { },
   "listenerCount": function () { },
   "listeners": function () { },
   "name": function () { },
   "off": function () { },
   "on": function () { },
   "once": function () { },
+  "onclick": function () { },
+  "onglobalmousemove": function () { },
+  "onglobalpointermove": function () { },
+  "onglobaltouchmove": function () { },
+  "onmousedown": function () { },
+  "onmouseenter": function () { },
+  "onmouseleave": function () { },
+  "onmousemove": function () { },
+  "onmouseout": function () { },
+  "onmouseover": function () { },
+  "onmouseup": function () { },
+  "onmouseupoutside": function () { },
+  "onpointercancel": function () { },
+  "onpointerdown": function () { },
+  "onpointerenter": function () { },
+  "onpointerleave": function () { },
+  "onpointermove": function () { },
+  "onpointerout": function () { },
+  "onpointerover": function () { },
+  "onpointertap": function () { },
+  "onpointerup": function () { },
+  "onpointerupoutside": function () { },
+  "onrightclick": function () { },
+  "onrightdown": function () { },
+  "onrightup": function () { },
+  "onrightupoutside": function () { },
+  "ontap": function () { },
+  "ontouchcancel": function () { },
+  "ontouchend": function () { },
+  "ontouchendoutside": function () { },
+  "ontouchmove": function () { },
+  "ontouchstart": function () { },
+  "onwheel": function () { },
   "removeAllListeners": function () { },
   "removeEventListener": function () { },
   "removeListener": function () { },
@@ -2794,6 +3733,8 @@ PIXI.TemporaryDisplayObject.prototype = {
   "_getCachedLocalBounds": function () { },
   "_initCachedDisplayObject": function () { },
   "_initCachedDisplayObjectCanvas": function () { },
+  "_internalEventMode": function () { },
+  "_internalInteractive": function () { },
   "_renderCached": function () { },
   "_renderCachedCanvas": function () { },
   "accessible": function () { },
@@ -2807,17 +3748,52 @@ PIXI.TemporaryDisplayObject.prototype = {
   "dispatchEvent": function () { },
   "displayObjectUpdateTransform": function () { },
   "emit": function () { },
+  "eventMode": function () { },
   "eventNames": function () { },
   "getGlobalPosition": function () { },
   "hitArea": function () { },
   "interactive": function () { },
   "interactiveChildren": function () { },
+  "isInteractive": function () { },
   "listenerCount": function () { },
   "listeners": function () { },
   "name": function () { },
   "off": function () { },
   "on": function () { },
   "once": function () { },
+  "onclick": function () { },
+  "onglobalmousemove": function () { },
+  "onglobalpointermove": function () { },
+  "onglobaltouchmove": function () { },
+  "onmousedown": function () { },
+  "onmouseenter": function () { },
+  "onmouseleave": function () { },
+  "onmousemove": function () { },
+  "onmouseout": function () { },
+  "onmouseover": function () { },
+  "onmouseup": function () { },
+  "onmouseupoutside": function () { },
+  "onpointercancel": function () { },
+  "onpointerdown": function () { },
+  "onpointerenter": function () { },
+  "onpointerleave": function () { },
+  "onpointermove": function () { },
+  "onpointerout": function () { },
+  "onpointerover": function () { },
+  "onpointertap": function () { },
+  "onpointerup": function () { },
+  "onpointerupoutside": function () { },
+  "onrightclick": function () { },
+  "onrightdown": function () { },
+  "onrightup": function () { },
+  "onrightupoutside": function () { },
+  "ontap": function () { },
+  "ontouchcancel": function () { },
+  "ontouchend": function () { },
+  "ontouchendoutside": function () { },
+  "ontouchmove": function () { },
+  "ontouchstart": function () { },
+  "onwheel": function () { },
   "removeAllListeners": function () { },
   "removeEventListener": function () { },
   "removeListener": function () { },
@@ -2850,6 +3826,8 @@ PIXI.Text.prototype = {
   "_getCachedLocalBounds": function () { },
   "_initCachedDisplayObject": function () { },
   "_initCachedDisplayObjectCanvas": function () { },
+  "_internalEventMode": function () { },
+  "_internalInteractive": function () { },
   "_renderCached": function () { },
   "_renderCachedCanvas": function () { },
   "_renderCanvas": function () { },
@@ -2866,18 +3844,53 @@ PIXI.Text.prototype = {
   "dispatchEvent": function () { },
   "displayObjectUpdateTransform": function () { },
   "emit": function () { },
+  "eventMode": function () { },
   "eventNames": function () { },
   "getChildByName": function () { },
   "getGlobalPosition": function () { },
   "hitArea": function () { },
   "interactive": function () { },
   "interactiveChildren": function () { },
+  "isInteractive": function () { },
   "listenerCount": function () { },
   "listeners": function () { },
   "name": function () { },
   "off": function () { },
   "on": function () { },
   "once": function () { },
+  "onclick": function () { },
+  "onglobalmousemove": function () { },
+  "onglobalpointermove": function () { },
+  "onglobaltouchmove": function () { },
+  "onmousedown": function () { },
+  "onmouseenter": function () { },
+  "onmouseleave": function () { },
+  "onmousemove": function () { },
+  "onmouseout": function () { },
+  "onmouseover": function () { },
+  "onmouseup": function () { },
+  "onmouseupoutside": function () { },
+  "onpointercancel": function () { },
+  "onpointerdown": function () { },
+  "onpointerenter": function () { },
+  "onpointerleave": function () { },
+  "onpointermove": function () { },
+  "onpointerout": function () { },
+  "onpointerover": function () { },
+  "onpointertap": function () { },
+  "onpointerup": function () { },
+  "onpointerupoutside": function () { },
+  "onrightclick": function () { },
+  "onrightdown": function () { },
+  "onrightup": function () { },
+  "onrightupoutside": function () { },
+  "ontap": function () { },
+  "ontouchcancel": function () { },
+  "ontouchend": function () { },
+  "ontouchendoutside": function () { },
+  "ontouchmove": function () { },
+  "ontouchstart": function () { },
+  "onwheel": function () { },
   "removeAllListeners": function () { },
   "removeEventListener": function () { },
   "removeListener": function () { },
@@ -2936,6 +3949,8 @@ PIXI.TilingSprite.prototype = {
   "_getCachedLocalBounds": function () { },
   "_initCachedDisplayObject": function () { },
   "_initCachedDisplayObjectCanvas": function () { },
+  "_internalEventMode": function () { },
+  "_internalInteractive": function () { },
   "_renderCached": function () { },
   "_renderCachedCanvas": function () { },
   "_renderCanvas": function () { },
@@ -2952,18 +3967,53 @@ PIXI.TilingSprite.prototype = {
   "dispatchEvent": function () { },
   "displayObjectUpdateTransform": function () { },
   "emit": function () { },
+  "eventMode": function () { },
   "eventNames": function () { },
   "getChildByName": function () { },
   "getGlobalPosition": function () { },
   "hitArea": function () { },
   "interactive": function () { },
   "interactiveChildren": function () { },
+  "isInteractive": function () { },
   "listenerCount": function () { },
   "listeners": function () { },
   "name": function () { },
   "off": function () { },
   "on": function () { },
   "once": function () { },
+  "onclick": function () { },
+  "onglobalmousemove": function () { },
+  "onglobalpointermove": function () { },
+  "onglobaltouchmove": function () { },
+  "onmousedown": function () { },
+  "onmouseenter": function () { },
+  "onmouseleave": function () { },
+  "onmousemove": function () { },
+  "onmouseout": function () { },
+  "onmouseover": function () { },
+  "onmouseup": function () { },
+  "onmouseupoutside": function () { },
+  "onpointercancel": function () { },
+  "onpointerdown": function () { },
+  "onpointerenter": function () { },
+  "onpointerleave": function () { },
+  "onpointermove": function () { },
+  "onpointerout": function () { },
+  "onpointerover": function () { },
+  "onpointertap": function () { },
+  "onpointerup": function () { },
+  "onpointerupoutside": function () { },
+  "onrightclick": function () { },
+  "onrightdown": function () { },
+  "onrightup": function () { },
+  "onrightupoutside": function () { },
+  "ontap": function () { },
+  "ontouchcancel": function () { },
+  "ontouchend": function () { },
+  "ontouchendoutside": function () { },
+  "ontouchmove": function () { },
+  "ontouchstart": function () { },
+  "onwheel": function () { },
   "removeAllListeners": function () { },
   "removeEventListener": function () { },
   "removeListener": function () { },
