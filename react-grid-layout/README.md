@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[cljsjs/react-grid-layout "0.17.1-0"] ;; latest release
+[io.github.cljsjs/react-grid-layout "1.3.4-0"] ;; latest release
 ```
 [](/dependency)
 
@@ -12,7 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.react-grid-layout))
+  (:require io.github.cljsjs.react-grid-layout))
 ```
 
 [flibs]: https://clojurescript.org/reference/packaging-foreign-deps

@@ -4,9 +4,17 @@
  * Loaded resources:
  * https://github.com/facebook/react/releases/download/v16.6.0/react.production.min.js
  * https://cdn.jsdelivr.net/npm/highcharts@7.0.3/highcharts.min.js
- * https://cdn.jsdelivr.net/npm/highcharts-react-official@3.0.0/dist/highcharts-react.min.js
+ * https://cdn.jsdelivr.net/npm/highcharts-react-official@3.2.0/dist/highcharts-react.min.js
  **********************************************************************/
 var HighchartsReact = {
+    "HighchartsReact": {
+        "$$typeof": {},
+        "compare": {},
+        "type": {
+            "$$typeof": {},
+            "render": function () {}
+        }
+    },
     "default": {
         "$$typeof": {},
         "compare": {},

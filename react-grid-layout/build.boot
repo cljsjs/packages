@@ -1,4 +1,4 @@
-(def +lib-version+ "0.17.1")
+(def +lib-version+ "1.3.4")
 (def +version+ (str +lib-version+ "-0"))
 
 (set-env!
@@ -9,16 +9,16 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (task-options!
- pom  {:project     'cljsjs/react-grid-layout
+ pom  {:project     'io.github.cljsjs/react-grid-layout
        :version     +version+
        :description "A draggable and resizable grid layout with responsive breakpoints, for React."
-       :url         "https://github.com/STRML/react-grid-layout/"
+       :url         "https://github.com/react-grid-layout/react-grid-layout/"
        :scm         {:url "https://github.com/cljsjs/packages"}
        :license     {"MIT" "http://opensource.org/licenses/MIT"}})
 
 (deftask package []
   (comp
-    (download :url (str "https://github.com/STRML/react-grid-layout/archive/" +lib-version+ ".zip")
+   (download :url (str "https://github.com/react-grid-layout/react-grid-layout/archive/" +lib-version+ ".zip")
               :unzip true)
 
     (sift :move {#"^react-grid-layout-(.*)/dist/react-grid-layout.min.js$" "cljsjs/react-grid-layout/development/react-grid-layout.inc.js"
