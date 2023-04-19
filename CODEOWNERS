@@ -3,17 +3,6 @@
 
 react/           @Deraen
 
-datatables.net/     @taha-k
-mobile-drag-drop/   @taha-k
-
-oidc-client      @tafarij
-
-antd/            @vincentstorme
-
 js-joda/ @henryw374
 js-joda-locale-en-us/ @henryw374
 js-joda-timezone/ @henryw374
-
-konami/ @28
-
-semantic-ui-calendar-react/ @rutledgepaulv
