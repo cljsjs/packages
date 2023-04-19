@@ -2,21 +2,6 @@
 # For these packages, you can ask help from mentioned people.
 
 react/           @Deraen
-react_15/        @Deraen
-leaflet/         @Deraen
-leaflet-fullscreen/ @Deraen
-react-leaflet/   @Deraen
-prop-types/      @Deraen
-react-transition-group/    @Deraen
-react-transition-group_1/  @Deraen
-react-lifecycles-compat/  @Deraen
-material-ui/     @Deraen
-material-ui_0/   @Deraen
-material-ui-icons/ @Deraen
-
-highcharts/        @Miikka
-highstock/         @Miikka
-react-grid-layout/ @Miikka
 
 datatables.net/     @taha-k
 mobile-drag-drop/   @taha-k
