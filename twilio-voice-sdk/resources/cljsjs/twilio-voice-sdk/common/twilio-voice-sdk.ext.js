@@ -47,6 +47,9 @@ var Twilio = {
       "IceGatheringFailed": {},
       "LowBytes": {}
     },
+    "MessageType": {
+      "UserDefinedMessage": {}
+    },
     "State": {
       "Closed": {},
       "Connecting": {},
@@ -263,6 +266,7 @@ Twilio.Call.prototype = {
   "removeAllListeners": function () {},
   "removeListener": function () {},
   "sendDigits": function () {},
+  "sendMessage": function () {},
   "setMaxListeners": function () {},
   "status": function () {}
 };
