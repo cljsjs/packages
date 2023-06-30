@@ -1,19 +1,19 @@
 (set-env!
-  :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.10.5" :scope "test"]])
+ :resource-paths #{"resources"}
+ :dependencies '[[cljsjs/boot-cljsjs "0.10.5" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.29.2")
+(def +lib-version+ "2.30.0")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
-  pom  {:project     'cljsjs/date-fns
-        :version     +version+
-        :description "Modern JavaScript date utility library"
-        :url         "https://github.com/date-fns/date-fns"
-        :license     {"MIT" "https://kossnocorp.mit-license.org"}
-        :scm         {:url "https://github.com/cljsjs/packages"}})
+ pom  {:project     'cljsjs/date-fns
+       :version     +version+
+       :description "Modern JavaScript date utility library"
+       :url         "https://github.com/date-fns/date-fns"
+       :license     {"MIT" "https://kossnocorp.mit-license.org"}
+       :scm         {:url "https://github.com/cljsjs/packages"}})
 
 (deftask package []
   (comp
