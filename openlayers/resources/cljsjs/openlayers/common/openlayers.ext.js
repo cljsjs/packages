@@ -107,6 +107,7 @@ var ol = {
   "array": {
     "ascending": function () { },
     "binarySearch": function () { },
+    "descending": function () { },
     "equals": function () { },
     "extend": function () { },
     "isSorted": function () { },
@@ -263,6 +264,12 @@ var ol = {
       "preventDefault": function () { },
       "stopPropagation": function () { }
     },
+    "SnapEvent": {
+      "SnapEvent": {
+        "preventDefault": function () { },
+        "stopPropagation": function () { }
+      }
+    },
     "Target": function () { },
     "condition": {
       "all": function () { },
@@ -278,6 +285,7 @@ var ol = {
       "never": function () { },
       "noModifierKeys": function () { },
       "penOnly": function () { },
+      "platformModifierKey": function () { },
       "platformModifierKeyOnly": function () { },
       "pointerMove": function () { },
       "primaryAction": function () { },
@@ -751,6 +759,15 @@ var ol = {
     "WORKER_OFFSCREEN_CANVAS": {}
   },
   "interaction": {
+    "DblClickDragZoom": {
+      "ObjectEvent": {
+        "preventDefault": function () { },
+        "stopPropagation": function () { }
+      },
+      "pan": function () { },
+      "unByKey": function () { },
+      "zoomByDelta": function () { }
+    },
     "DoubleClickZoom": {
       "ObjectEvent": {
         "preventDefault": function () { },
@@ -1212,6 +1229,7 @@ var ol = {
     "getUserProjection": function () { },
     "identityTransform": function () { },
     "proj4": {
+      "epsgLookupMapTiler": function () { },
       "fromEPSGCode": function () { },
       "getEPSGLookup": function () { },
       "isRegistered": function () { },
@@ -1268,7 +1286,19 @@ var ol = {
       },
       "LineStringBuilder": function () { },
       "PolygonBuilder": function () { },
-      "TextBuilder": function () { },
+      "TextBuilder": {
+        "TEXT_ALIGN": {
+          "alphabetic": {},
+          "bottom": {},
+          "center": {},
+          "hanging": {},
+          "ideographic": {},
+          "left": {},
+          "middle": {},
+          "right": {},
+          "top": {}
+        }
+      },
       "checkedFonts": {
         "dispatching_": {},
         "disposed": {},
@@ -1312,11 +1342,14 @@ var ol = {
     "getVectorContext": function () { },
     "toContext": function () { },
     "webgl": {
-      "BatchRenderer": function () { },
-      "LineStringBatchRenderer": function () { },
       "MixedGeometryBatch": function () { },
-      "PointBatchRenderer": function () { },
-      "PolygonBatchRenderer": function () { },
+      "VectorStyleRenderer": function () { },
+      "renderinstructions": {
+        "generateLineStringRenderInstructions": function () { },
+        "generatePointRenderInstructions": function () { },
+        "generatePolygonRenderInstructions": function () { },
+        "getCustomAttributesSize": function () { }
+      },
       "utils": {
         "colorDecodeId": function () { },
         "colorEncodeId": function () { },
@@ -1378,8 +1411,11 @@ var ol = {
         },
         "Uniforms": {
           "DEPTH": {},
+          "GLOBAL_ALPHA": {},
+          "PROJECTION_MATRIX": {},
           "RENDER_EXTENT": {},
           "RESOLUTION": {},
+          "SCREEN_TO_WORLD_MATRIX": {},
           "TEXTURE_ORIGIN_X": {},
           "TEXTURE_ORIGIN_Y": {},
           "TEXTURE_PIXEL_HEIGHT": {},
@@ -1390,19 +1426,57 @@ var ol = {
           "TRANSITION_ALPHA": {},
           "ZOOM": {}
         },
+        "getCacheKey": function () { },
+        "newTileRepresentationLookup": function () { },
+        "unByKey": function () { }
+      },
+      "TileLayerBase": {
+        "Uniforms": {
+          "DEPTH": {},
+          "GLOBAL_ALPHA": {},
+          "PROJECTION_MATRIX": {},
+          "RENDER_EXTENT": {},
+          "RESOLUTION": {},
+          "SCREEN_TO_WORLD_MATRIX": {},
+          "TILE_TRANSFORM": {},
+          "TRANSITION_ALPHA": {},
+          "ZOOM": {}
+        },
+        "getCacheKey": function () { },
+        "newTileRepresentationLookup": function () { },
         "unByKey": function () { }
       },
       "VectorLayer": {
+        "Uniforms": {
+          "GLOBAL_ALPHA": {},
+          "HIT_DETECTION": {},
+          "OFFSET_ROTATION_MATRIX": {},
+          "OFFSET_SCALE_MATRIX": {},
+          "PIXEL_RATIO": {},
+          "PROJECTION_MATRIX": {},
+          "RENDER_EXTENT": {},
+          "RESOLUTION": {},
+          "TIME": {},
+          "VIEWPORT_SIZE_PX": {},
+          "ZOOM": {}
+        },
         "unByKey": function () { }
       },
-      "shaders": {
-        "FILL_FRAGMENT_SHADER": {},
-        "FILL_VERTEX_SHADER": {},
-        "POINT_FRAGMENT_SHADER": {},
-        "POINT_VERTEX_SHADER": {},
-        "STROKE_FRAGMENT_SHADER": {},
-        "STROKE_VERTEX_SHADER": {},
-        "packColor": function () { }
+      "VectorTileLayer": {
+        "Uniforms": {
+          "DEPTH": {},
+          "GLOBAL_ALPHA": {},
+          "PROJECTION_MATRIX": {},
+          "RENDER_EXTENT": {},
+          "RESOLUTION": {},
+          "SCREEN_TO_WORLD_MATRIX": {},
+          "TILE_TRANSFORM": {},
+          "TRANSITION_ALPHA": {},
+          "ZOOM": {}
+        },
+        "getCacheKey": function () { },
+        "newTileRepresentationLookup": function () { },
+        "unByKey": function () { }
       }
     }
   },
@@ -1959,7 +2033,15 @@ var ol = {
           "getReturnType": function () { },
           "toGlsl": function () { }
         },
+        "geometry-type": {
+          "getReturnType": function () { },
+          "toGlsl": function () { }
+        },
         "get": {
+          "getReturnType": function () { },
+          "toGlsl": function () { }
+        },
+        "in": {
           "getReturnType": function () { },
           "toGlsl": function () { }
         },
@@ -1984,6 +2066,10 @@ var ol = {
           "toGlsl": function () { }
         },
         "sin": {
+          "getReturnType": function () { },
+          "toGlsl": function () { }
+        },
+        "sqrt": {
           "getReturnType": function () { },
           "toGlsl": function () { }
         },
@@ -2012,6 +2098,7 @@ var ol = {
       "uniformNameForVariable": function () { }
     },
     "flat": {
+      "createDefaultStyle": function () { },
       "toStyle": function () { }
     }
   },
@@ -2081,6 +2168,7 @@ var ol = {
   },
   "webgl": {
     "ARRAY_BUFFER": {},
+    "BaseTileRepresentation": function () { },
     "Buffer": {
       "getArrayClassForType": function () { }
     },
@@ -2096,15 +2184,20 @@ var ol = {
     "STATIC_DRAW": {},
     "STREAM_DRAW": {},
     "ShaderBuilder": {
-      "ShaderBuilder": function () { },
-      "parseLiteralStyle": function () { }
+      "ShaderBuilder": function () { }
     },
+    "TileGeometry": function () { },
     "TileTexture": function () { },
     "UNSIGNED_BYTE": {},
     "UNSIGNED_INT": {},
     "UNSIGNED_SHORT": {},
     "getContext": function () { },
-    "getSupportedExtensions": function () { }
+    "getSupportedExtensions": function () { },
+    "styleparser": {
+      "getSymbolOpacityGlslFunction": function () { },
+      "packColor": function () { },
+      "parseLiteralStyle": function () { }
+    }
   },
   "xml": {
     "OBJECT_PROPERTY_NODE_FACTORY": function () { },
