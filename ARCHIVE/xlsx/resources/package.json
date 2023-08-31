@@ -6,7 +6,7 @@
         "build:prod": "browserify main.js       -p [ minifyify --no-map ] > xlsx.min.inc.js"
     },
     "dependencies": {
-        "xlsx": "0.15.1"
+        "xlsx": "0.18.5"
     },
     "devDependencies": {
         "browserify": "16.1.0",
