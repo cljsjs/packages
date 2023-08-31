@@ -444,7 +444,7 @@ echarts.ChartView.prototype = {
   "updateVisual": function () { }
 };
 echarts.ComponentModel.prototype = {
-  "__is_clz_10": function () { },
+  "__is_clz_2": function () { },
   "_doGet": function () { },
   "clone": function () { },
   "componentIndex": function () { },
@@ -479,7 +479,7 @@ echarts.ComponentModel.prototype = {
   "type": function () { }
 };
 echarts.ComponentModel.$constructor.prototype = {
-  "__is_clz_10": function () { },
+  "__is_clz_2": function () { },
   "_doGet": function () { },
   "clone": function () { },
   "get": function () { },
@@ -577,7 +577,7 @@ echarts.List.prototype = {
   "wrapMethod": function () { }
 };
 echarts.Model.prototype = {
-  "__is_clz_10": function () { },
+  "__is_clz_2": function () { },
   "_doGet": function () { },
   "clone": function () { },
   "get": function () { },
@@ -598,7 +598,7 @@ echarts.Model.prototype = {
   "restoreData": function () { }
 };
 echarts.SeriesModel.prototype = {
-  "__is_clz_10": function () { },
+  "__is_clz_2": function () { },
   "_doGet": function () { },
   "_initSelectedMapFromData": function () { },
   "_innerSelect": function () { },
@@ -669,7 +669,7 @@ echarts.SeriesModel.prototype = {
   "visualStyleAccessPath": function () { }
 };
 echarts.SeriesModel.$constructor.prototype = {
-  "__is_clz_10": function () { },
+  "__is_clz_2": function () { },
   "_doGet": function () { },
   "clone": function () { },
   "get": function () { },
