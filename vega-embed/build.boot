@@ -5,7 +5,7 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-  (def +lib-version+ "6.19.0")
+(def +lib-version+ "6.22.2")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -20,10 +20,10 @@
   (comp
     (download
      :url (format "https://unpkg.com/vega-embed@%s/build/vega-embed.js" +lib-version+)
-     :checksum "9FBE7386F3C7082F563CF19D79FEC76C")
+     :checksum "D735F6082C634C720C9DBD91567255B4")
     (download
      :url (format "https://unpkg.com/vega-embed@%s/build/vega-embed.min.js" +lib-version+)
-     :checksum "16787774859191C83D203476E2AE4322")
+     :checksum "07C4BB957526379B6139857D5228F182")
     (sift :move {#".*vega-embed\.js$"      "cljsjs/development/vega-embed.inc.js"})
     (sift :move {#".*vega-embed\.min\.js$" "cljsjs/production/vega-embed.min.inc.js"})
     (sift :include #{#"^cljsjs"})
