@@ -5,14 +5,14 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "1.8.7")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
   pom  {:project     'cljsjs/react-window
         :version     +version+
         :description "React components for efficiently rendering large lists and tabular data"
         :url         "https://react-window.now.sh/"
-        :license     {"MIT" "https://github.com/bvaughn/react-window/blob/1.8.6/LICENSE.md"}
+        :license     {"MIT" "https://github.com/bvaughn/react-window/blob/1.8.7/LICENSE.md"}
         :scm         {:url "https://github.com/cljsjs/packages"}})
 
 (deftask package []
