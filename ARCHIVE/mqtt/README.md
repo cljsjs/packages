@@ -4,7 +4,7 @@ Provides MQTT.js - a client library for the MQTT protocol, written in JavaScript
 
 [](dependency)
 ```clojure
-[cljsjs/mqtt "2.13.0-0"] ;; latest release
+[cljsjs/mqtt "5.3.4-0"] ;; latest release
 ```
 [](/dependency)
 
