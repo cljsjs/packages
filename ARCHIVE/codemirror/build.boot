@@ -4,9 +4,9 @@
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "5.44.0")
+(def +lib-version+ "5.65.16")
 
-(def +version+ (str +lib-version+ "-1"))
+(def +version+ (str +lib-version+ "-0"))
 
 (task-options!
   pom  {:project     'cljsjs/codemirror
