@@ -4,7 +4,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "2.17.2")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (task-options!
  pom  {:project     'io.github.cljsjs/js-joda-timezone
@@ -22,7 +22,7 @@
              :archive-format "tar")
 
    (sift :move {#"package/dist/js-joda-timezone.js$" "cljsjs/js-joda-timezone/development/js-joda-timezone.inc.js"
-                #"package/dist/js-joda-timezone.min.js$" "cljsjs/js-joda-timezone/production/js-joda-timezone.min.js"}
+                #"package/dist/js-joda-timezone.min.js$" "cljsjs/js-joda-timezone/production/js-joda-timezone.min.inc.js"}
          :include #{#"^cljsjs"})
    (deps-cljs
     :no-externs true
@@ -30,4 +30,5 @@
     :requires ["@js-joda/core"])
    (pom)
    (show :fileset true)
-   (jar)))
+   (jar)
+   (validate)))
