@@ -145,7 +145,21 @@ var L = {
   "Point": function () {},
   "point": function () {},
   "Bounds": function () {},
-  "bounds": function () {},
+  "bounds": {
+    "extend": function () {},
+    "getCenter": function () {},
+    "getBottomLeft": function () {},
+    "getTopRight": function () {},
+    "getTopLeft": function () {},
+    "getBottomRight": function () {},
+    "getSize": function () {},
+    "contains": function () {},
+    "intersects": function () {},
+    "overlaps": function () {},
+    "isValid": function () {},
+    "pad": function () {},
+    "equals": function () {}
+  },
   "Transformation": function () {},
   "DomUtil": {
     "get": function () {},
@@ -772,7 +786,17 @@ var L = {
     "setUrl": function () {},
   },
   "ImageOverlay": function () {},
-  "imageOverlay": function () {},
+  "imageOverlay": {
+    "setOpacity": function () {},
+    "bringToFront": function () {},
+    "bringToBack": function () {},
+    "setUrl": function () {},
+    "setBounds": function () {},
+    "setZIndex": function () {},
+    "getBounds": function () {},
+    "getElement": function () {},
+    "getCenter": function () {}
+  },
   "Icon": {
     "Default": {
       "imagePath": {},
@@ -798,6 +822,21 @@ var L = {
     "togglePopup": function () {},
     "setPopupContent": function () {},
     "toGeoJSON": function () {},
+  },
+  "DivOverlay": function () {},
+  "divOverlay": {
+    "openOn": function () {},
+    "close": function () {},
+    "toggle": function () {},
+    "getLatLng": function () {},
+    "setLatLng": function () {},
+    "getContent": function () {},
+    "setContent": function () {},
+    "getElement": function () {},
+    "update": function () {},
+    "isOpen": function () {},
+    "bringToFront": function () {},
+    "bringToBack": function () {}
   },
   "DivIcon": function () {},
   "divIcon": function () {},
