@@ -2,6 +2,6 @@
 
 [](dependency)
 ```clojure
-[io.github.cljsjs/keycloak-js "20.0.1-0"] ;; latest release
+[io.github.cljsjs/keycloak-js "25.0.6-0"] ;; latest release
 ```
 [](/dependency)
