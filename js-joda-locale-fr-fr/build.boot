@@ -9,7 +9,7 @@
 
 (task-options!
   push {:repo "clojars"}
-  pom  {:project     'cljsjs/js-joda-locale-fr-fr
+  pom  {:project     'io.github.cljsjs/js-joda-locale-fr-fr
         :version     +version+
         :description "prebuilt fr-fr locale addon for js-joda"
         :url         "https://js-joda.github.io/js-joda/js-joda-locale"
