@@ -84,3 +84,5 @@ ReactDOM.createPortal = function() {};
 // Version 18
 ReactDOM.createRoot = function() {};
 ReactDOM.hydrateRoot = function() {};
+
+ReactDOM.Root.unmount = function() {};
