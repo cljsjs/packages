@@ -80,3 +80,7 @@ ReactDOM.unstable_renderSubtreeIntoContainer = function(parentComponent, nextEle
 
 ReactDOM.hydrate = function() {};
 ReactDOM.createPortal = function() {};
+
+// Version 18
+ReactDOM.createRoot = function() {};
+ReactDOM.hydrateRoot = function() {};
