@@ -1991,3 +1991,6 @@ React.startTransition = function() {};
 React.SuspenseList = function() {};
 React.useTransition = function() {};
 React.useDeferredValue = function() {};
+
+// 18.3.1
+React.act = function() {};
